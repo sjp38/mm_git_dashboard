@@ -1,10 +1,6 @@
-baseline: None -> v6.19-rc6-36-g6c790212c588f
+baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-stable: 2 total, 0 (2) series, 0 non-series commits
 - author/reviewer role stat
   - no role, no role : 1 commits
@@ -15,14 +11,6 @@ mm-stable: 2 total, 0 (2) series, 0 non-series commits
     - cd8e95d80bc2 mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION (21/24)
       - Authored by no role player, reviewed by a reviewer
 mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-new: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list

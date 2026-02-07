@@ -1,10 +1,6 @@
-baseline: None -> v6.19-rc6-36-g6c790212c588f
+baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-stable: 3 total, 0 (2) series, 1 non-series commits
 - author/reviewer role stat
   - no role, no role : 1 commits
@@ -14,18 +10,10 @@ mm-stable: 3 total, 0 (2) series, 1 non-series commits
     - 0a096ab7a3a6 mm: introduce generic lazy_mmu helpers (6/14)
       - Authored by no role player, reviewed by no role player
   - 62451ae347b0 mm: fix minor spelling mistakes in comments
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
     - 4984d746c80e mm, swap: check swap table directly for checking cache (15/19)
       - Authored by a maintainer, reviewed by a reviewer
 mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-new: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list

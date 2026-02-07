@@ -1,10 +1,6 @@
-baseline: None -> v6.19-rc6-36-g6c790212c588f
+baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-stable: 44 total, 4 (38) series, 6 non-series commits
 - author/reviewer role stat
   - no role, nobody: 3 commits
@@ -40,11 +36,11 @@ mm-stable: 44 total, 4 (38) series, 6 non-series commits
     - 93552c9a3350 mm: folio_zero_user: cache neighbouring pages (7/8)
       - Authored by no role player, reviewed by no role player
   - 62451ae347b0 mm: fix minor spelling mistakes in comments
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - 241b3a09639c mm: clarify GFP_ATOMIC/GFP_NOWAIT doc-comment
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - a8d933dc3354 mm/vmstat: remove unused node and zone state helpers
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - sereis "arch, mm: consolidate hugetlb early reservation", v3. (29 commits)
     - ba1c86874e25 alpha: introduce arch_zone_limits_init() (0/29)
       - Authored by no role player, reviewed by a maintainer
@@ -82,20 +78,20 @@ mm-stable: 44 total, 4 (38) series, 6 non-series commits
     - 1421758055ca mm: rename CONFIG_MEMORY_BALLOON -> CONFIG_BALLOON (22/24)
       - Authored by no role player, reviewed by a reviewer
   - 5898aa8f9a0b mm: fix OOM killer inaccuracy on large many-core systems
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - sereis "mm/vmscan: add tracepoint and reason for kswapd_failures reset", v4. (2 commits)
     - dc9fe9b7056a mm/vmscan: mitigate spurious kswapd_failures reset from direct reclaim (0/2)
       - Authored by no role player, reviewed by a reviewer
     - a45088376d8a mm/vmscan: add tracepoint and reason for kswapd_failures reset (1/2)
       - Authored by no role player, reviewed by a reviewer
   - 94350fe6cad7 mm/highmem: fix __kmap_to_page() build error
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
     - ed0a826ce302 mm: add WQ_PERCPU to alloc_workqueue users (2/3)
       - Authored by no role player, reviewed by no role player
     - 17fd82c3abe0 mm/vma: add and use vma_assert_stabilised() (9/10)
       - Authored by a reviewer, reviewed by a reviewer
   - 57fdfd64238e mm/pagewalk: use min() to simplify the code
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
     - f1879e8a0c60 mm, swap: never bypass the swap cache even for SWP_SYNCHRONOUS_IO (2/19)
       - Authored by a maintainer, reviewed by a reviewer
     - ab08be8dc96a mm, swap: always try to free swap cache for SWP_SYNCHRONOUS_IO devices (3/19)
@@ -116,19 +112,19 @@ mm-unstable: 20 total, 3 (15) series, 5 non-series commits
   - reviewer, reviewer: 3 commits
 - full commits list
   - 5e38b451e881 mm: refactor vma_map_pages to use vm_insert_pages
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 72255e0ffb45 mm: add SPDX id lines to some mm source files
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
     - cb4a46a3a0a2 mm: convert __HAVE_ARCH_TLB_REMOVE_TABLE to CONFIG_HAVE_ARCH_TLB_REMOVE_TABLE config (6/8)
       - Authored by no role player, reviewed by nobody
     - 9afd82c3ec06 mm: make PT_RECLAIM depends on MMU_GATHER_RCU_TABLE_FREE (7/8)
       - Authored by no role player, reviewed by no role player
   - eb7f18f13395 mm: move pte table reclaim code to memory.c
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - e8f5fd5b7ee2 mm/memory: handle non-split locks correctly in zap_empty_pte_table()
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 1ab83fb651c0 mm: folio_zero_user: open code range computation in folio_zero_user()
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - sereis " Remove XA_ZERO from error recovery of dup_mmap()", v3. (11 commits)
     - a925f95fa951 mm: relocate the page table ceiling and floor definitions (0/11)
       - Authored by a reviewer, reviewed by nobody
@@ -163,15 +159,13 @@ mm-new: 1 total, 0 (0) series, 1 non-series commits
   - no role, maintainer: 1 commits
 - full commits list
   - 6c1e7e622a2f arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
 mm-nonmm-stable: 2 total, 0 (0) series, 2 non-series commits
 - author/reviewer role stat
   - no role, nobody: 2 commits
 - full commits list
   - f34e19c34e4e fork-comment-fix: remove ambiguous question mark in CLONE_CHILD_CLEARTID comment
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 2bbd9e1d14d6 kernel/fork: update obsolete use_mm references to kthread_use_mm
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list

@@ -1,0 +1,21 @@
+baseline: v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-stable: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - maintainer, maintainer: 1 commits
+- full commits list
+  - 64dd89ae01f2 mm/block/fs: remove laptop_mode
+    - Authored by a maintainer, reviewed by a maintainer
+mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, no role : 1 commits
+  - reviewer, nobody: 1 commits
+- full commits list
+  - eb729477b4fb mm/readahead: fix typo in comment
+    - Authored by no role player, reviewed by no role player
+    - 60473dd90030 mm: make vm_area_desc utilise vma_flags_t only (11/13)
+      - Authored by a reviewer, reviewed by nobody
+mm-new: 0 total, 0 (0) series, 0 non-series commits
+mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

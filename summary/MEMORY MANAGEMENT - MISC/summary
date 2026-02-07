@@ -1,8 +1,6 @@
-baseline: None -> v6.19-rc6-36-g6c790212c588f
+baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
 mm-stable: 51 total, 5 (39) series, 12 non-series commits
 - author/reviewer role stat
   - no role, nobody: 3 commits
@@ -25,4 +23,3 @@ mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
 - author/reviewer role stat
   - no role, reviewer: 1 commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat

@@ -1,10 +1,6 @@
-baseline: None -> v6.19-rc6-36-g6c790212c588f
+baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-stable: 13 total, 2 (10) series, 3 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
@@ -20,13 +16,13 @@ mm-stable: 13 total, 2 (10) series, 3 non-series commits
     - 0a096ab7a3a6 mm: introduce generic lazy_mmu helpers (6/14)
       - Authored by no role player, reviewed by no role player
   - 7adc97bc9394 mm/vmscan.c:shrink_folio_list(): save a tabstop
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
     - 055059ed720e memcg: remove mem_cgroup_size() (1/2)
       - Authored by no role player, reviewed by a maintainer
   - 64dd89ae01f2 mm/block/fs: remove laptop_mode
-    - review score: 23
+    - Authored by a maintainer, reviewed by a maintainer
   - 62451ae347b0 mm: fix minor spelling mistakes in comments
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
     - 4267739cabb8 arch, mm: consolidate initialization of SPARSE memory model (23/29)
       - Authored by no role player, reviewed by nobody
   - sereis "memcg: separate private and public ID namespaces". (8 commits)
@@ -52,18 +48,12 @@ mm-unstable: 3 total, 1 (2) series, 1 non-series commits
   - no role, maintainer: 1 commits
 - full commits list
   - 8b298f786ac6 mm/vmscan: use %pe to print error pointers
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - sereis "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
     - b30652512f16 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
       - Authored by no role player, reviewed by a maintainer
     - c12578ea61d6 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
       - Authored by no role player, reviewed by nobody
 mm-new: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list

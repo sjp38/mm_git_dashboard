@@ -1,0 +1,44 @@
+baseline: v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-stable: 0 total, 0 (0) series, 0 non-series commits
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-new: 1 total, 0 (1) series, 0 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 1 commits
+- full commits list
+    - ec4967c2db14 mm: memfd_luo: preserve file seals (1/2)
+      - Authored by no role player, reviewed by nobody
+mm-nonmm-stable: 8 total, 2 (7) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 1 commits
+  - no role, no role : 1 commits
+  - no role, reviewer: 5 commits
+  - reviewer, maintainer: 1 commits
+- full commits list
+  - sereis "kho: ABI headers and Documentation updates". (6 commits)
+    - a7e53bfb4366 kho/abi: luo: make generated documentation more coherent (0/6)
+      - Authored by no role player, reviewed by a reviewer
+    - 32cb2729c956 kho/abi: memfd: make generated documentation more coherent (1/6)
+      - Authored by no role player, reviewed by a reviewer
+    - a6f4e5682802 kho: docs: combine concepts and FDT documentation (2/6)
+      - Authored by no role player, reviewed by a reviewer
+    - 5e1ea1e27b6f kho: introduce KHO FDT ABI header (3/6)
+      - Authored by no role player, reviewed by a reviewer
+    - ac2d8102c4b8 kho: relocate vmalloc preservation structure to KHO ABI header (4/6)
+      - Authored by no role player, reviewed by nobody
+    - dd1e79ef6ca1 kho/abi: add memblock ABI header (5/6)
+      - Authored by no role player, reviewed by a reviewer
+  - 77ce1b4cd08f kho: test: clean up residual memory upon test_kho module unload
+    - Authored by no role player, reviewed by no role player
+  - sereis "kho: clean up page initialization logic", v2. (2 commits)
+    - 840fe43d371f kho: use unsigned long for nr_pages (0/2)
+      - Authored by a reviewer, reviewed by a maintainer
+mm-nonmm-unstable: 2 total, 0 (2) series, 0 non-series commits
+- author/reviewer role stat
+  - maintainer, nobody: 2 commits
+- full commits list
+    - 13c664182c65 liveupdate: luo_flb: Introduce File-Lifecycle-Bound global state (3/5)
+      - Authored by a maintainer, reviewed by nobody
+    - f11f5488d58f tests/liveupdate: add in-kernel liveupdate test (4/5)
+      - Authored by a maintainer, reviewed by nobody

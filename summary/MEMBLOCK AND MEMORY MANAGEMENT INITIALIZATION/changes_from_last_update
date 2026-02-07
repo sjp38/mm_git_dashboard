@@ -5,7 +5,6 @@ mm-hotfixes-stable: 1 -> 1 commits
   - no role, no role : 1 -> 1 commits
 mm-hotfixes-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-- author/reviewer role stat
 mm-stable: 5 -> 5 commits
 - series: 0 (3) -> 0 (3)
 - author/reviewer role stat
@@ -14,14 +13,11 @@ mm-stable: 5 -> 5 commits
   - no role, reviewer: 1 -> 1 commits
 mm-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-- author/reviewer role stat
 mm-new: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-- author/reviewer role stat
 mm-nonmm-stable: 1 -> 1 commits
 - series: 0 (1) -> 0 (1)
 - author/reviewer role stat
   - no role, reviewer: 1 -> 1 commits
 mm-nonmm-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-- author/reviewer role stat

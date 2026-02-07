@@ -1,10 +1,6 @@
-baseline: None -> v6.19-rc6-36-g6c790212c588f
+baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-stable: 13 total, 3 (9) series, 4 non-series commits
 - author/reviewer role stat
   - no role, reviewer: 8 commits
@@ -13,11 +9,11 @@ mm-stable: 13 total, 3 (9) series, 4 non-series commits
   - maintainer, reviewer: 3 commits
 - full commits list
   - 62451ae347b0 mm: fix minor spelling mistakes in comments
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - 9c9828d3ead6 mm, page_alloc, thp: prevent reclaim for __GFP_THISNODE THP allocations
-    - review score: 22
+    - Authored by a maintainer, reviewed by a reviewer
   - 3bb64898f003 page_alloc: allow migration of smaller hugepages during contig_alloc
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - sereis "tweaks for __alloc_pages_slowpath()", v3. (3 commits)
     - 669872181549 mm/page_alloc: ignore the exact initial compaction result (0/3)
       - Authored by a maintainer, reviewed by a reviewer
@@ -33,7 +29,7 @@ mm-stable: 13 total, 3 (9) series, 4 non-series commits
     - e0c1326779cc mm: page_alloc: add alloc_contig_frozen_{range,pages}() (3/6)
       - Authored by no role player, reviewed by a reviewer
   - d468d8f86d80 mm: drop filename from page_alloc.c header comment
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
     - a45088376d8a mm/vmscan: add tracepoint and reason for kswapd_failures reset (1/2)
       - Authored by no role player, reviewed by a reviewer
   - sereis "mm: accelerate gigantic folio allocation". (5 commits)
@@ -42,17 +38,11 @@ mm-stable: 13 total, 3 (9) series, 4 non-series commits
     - 9a8e0c31b312 mm: page_alloc: optimize pfn_range_valid_contig() (1/5)
       - Authored by no role player, reviewed by a reviewer
 mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
 - full commits list
   - 7235a985b812 mm/page_alloc: avoid overcounting bulk alloc in watermark check
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list

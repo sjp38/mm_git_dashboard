@@ -1,0 +1,51 @@
+baseline: v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-stable: 11 total, 3 (9) series, 2 non-series commits
+- author/reviewer role stat
+  - no role, no role : 1 commits
+  - no role, reviewer: 1 commits
+  - no role, maintainer: 2 commits
+  - maintainer, no role : 5 commits
+  - maintainer, maintainer: 2 commits
+- full commits list
+  - sereis "memcg cleanups", v3. (2 commits)
+    - 558605a530e0 memcg: move mem_cgroup_usage memcontrol-v1.c (0/2)
+      - Authored by no role player, reviewed by a maintainer
+    - 055059ed720e memcg: remove mem_cgroup_size() (1/2)
+      - Authored by no role player, reviewed by a maintainer
+  - 16cc8b9396f6 mm: memcontrol: rename mem_cgroup_from_slab_obj()
+    - Authored by a maintainer, reviewed by a maintainer
+  - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - Authored by no role player, reviewed by a reviewer
+  - sereis "memcg: separate private and public ID namespaces". (8 commits)
+    - e77786b4682e memcg: introduce private id API for in-kernel users (0/8)
+      - Authored by a maintainer, reviewed by no role player
+    - 1d89d7fd592e memcg: expose mem_cgroup_ino() and mem_cgroup_get_from_ino() unconditionally (1/8)
+      - Authored by a maintainer, reviewed by no role player
+    - 510e12900298 memcg: mem_cgroup_get_from_ino() returns NULL on error (2/8)
+      - Authored by a maintainer, reviewed by no role player
+    - ea73e3647160 memcg: use cgroup_id() instead of cgroup_ino() for memcg ID (3/8)
+      - Authored by a maintainer, reviewed by no role player
+    - 2202e3a8cb80 memcg: remove unused mem_cgroup_id() and mem_cgroup_from_id() (6/8)
+      - Authored by a maintainer, reviewed by no role player
+    - 95296536eb19 memcg: rename mem_cgroup_ino() to mem_cgroup_id() (7/8)
+      - Authored by a maintainer, reviewed by a maintainer
+  - sereis "Replace wq users and add WQ_PERCPU to alloc_workqueue() users", v2. (3 commits)
+    - 0bcbd7cf6596 mm: replace use of system_unbound_wq with system_dfl_wq (0/3)
+      - Authored by no role player, reviewed by no role player
+mm-unstable: 1 total, 1 (1) series, 0 non-series commits
+- author/reviewer role stat
+  - no role, maintainer: 1 commits
+- full commits list
+  - sereis "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
+    - b30652512f16 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
+      - Authored by no role player, reviewed by a maintainer
+mm-new: 0 total, 0 (0) series, 0 non-series commits
+mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 1 commits
+- full commits list
+    - 61e9210e2392 mm: use ARRAY_END() instead of open-coding it (3/4)
+      - Authored by no role player, reviewed by nobody
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

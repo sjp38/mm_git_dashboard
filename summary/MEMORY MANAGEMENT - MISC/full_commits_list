@@ -1,10 +1,6 @@
-baseline: None -> v6.19-rc6-36-g6c790212c588f
+baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-stable: 51 total, 5 (39) series, 12 non-series commits
 - author/reviewer role stat
   - no role, nobody: 3 commits
@@ -25,13 +21,13 @@ mm-stable: 51 total, 5 (39) series, 12 non-series commits
     - 2584dd7496c5 Docs/admin-guide/mm/damon/usage: update for max_nr_snapshots (9/12)
       - Authored by a maintainer, reviewed by nobody
   - 64dd89ae01f2 mm/block/fs: remove laptop_mode
-    - review score: 23
+    - Authored by a maintainer, reviewed by a maintainer
   - a98ec863fded lib/test_vmalloc.c: minor fixes to test_vmalloc.c
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 62451ae347b0 mm: fix minor spelling mistakes in comments
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - 9e80e66ddaf7 mm, hugetlb: implement movable_gigantic_pages sysctl
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - sereis "selftests/mm: hugetlb cgroup charging: robustness fixes", v3. (3 commits)
     - 8e46adb62fae selftests/mm/write_to_hugetlbfs: parse -s as size_t (0/3)
       - Authored by no role player, reviewed by no role player
@@ -42,19 +38,19 @@ mm-stable: 51 total, 5 (39) series, 12 non-series commits
     - b47beff129c6 selftests/mm: fix va_high_addr_switch.sh return value (None/None)
       - Authored by no role player, reviewed by no role player
   - b1f031e33cb5 selftests/mm: allocate 6 hugepages in va_high_addr_switch.sh
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 7544d7969d84 selftests/mm: remove arm64 nr_hugepages setup for va_high_addr_switch test
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - dd0202a0bd81 selftests/mm: va_high_addr_switch return fail when either test failed
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 6319c4f44234 selftests/mm: fix comment for check_test_requirements
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
     - 4267739cabb8 arch, mm: consolidate initialization of SPARSE memory model (23/29)
       - Authored by no role player, reviewed by nobody
   - 0cc3197bdb7f mm/early_ioremap: print the starting physical address in __early_ioremap()
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 5fd8391cb719 mm/early_ioremap: clean up the use of WARN() for debugging
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
     - 6c08cc64d194 mm: cma: kill cma_pages_valid() (2/6)
       - Authored by no role player, reviewed by no role player
     - e0c1326779cc mm: page_alloc: add alloc_contig_frozen_{range,pages}() (3/6)
@@ -102,7 +98,7 @@ mm-stable: 51 total, 5 (39) series, 12 non-series commits
     - fde8353121aa selftests/mm: report SKIP in pfnmap if a check fails (8/9)
       - Authored by no role player, reviewed by no role player
   - dd2c6ec24fca selftests/mm: remove virtual_address_range test
-    - review score: 11
+    - Authored by a reviewer, reviewed by no role player
   - sereis "Docs/mm/damon: update intro, modules, maintainer profile, and misc". (8 commits)
     - 32d11b320897 Docs/mm/damon/index: simplify the intro (0/8)
       - Authored by a maintainer, reviewed by nobody
@@ -121,7 +117,7 @@ mm-stable: 51 total, 5 (39) series, 12 non-series commits
     - 4c8f08d9939e Docs/mm/damon/maintainer-profile: remove damon-tests/perf suggestion (7/8)
       - Authored by a maintainer, reviewed by nobody
   - 6ce964c02f1c selftests/mm: have the harness run each test category separately
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
 mm-unstable: 6 total, 1 (4) series, 2 non-series commits
 - author/reviewer role stat
   - no role, nobody: 2 commits
@@ -129,9 +125,9 @@ mm-unstable: 6 total, 1 (4) series, 2 non-series commits
   - maintainer, nobody: 3 commits
 - full commits list
   - 23dbffa39aa3 mm/cma: replace snprintf with strscpy in cma_new_area
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 72255e0ffb45 mm: add SPDX id lines to some mm source files
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
     - c12578ea61d6 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
       - Authored by no role player, reviewed by nobody
   - sereis "selftests/mm: add memory failure selftests", v4. (3 commits)
@@ -146,7 +142,7 @@ mm-new: 1 total, 0 (0) series, 1 non-series commits
   - no role, nobody: 1 commits
 - full commits list
   - 1737b521f42f mm/fadvise: validate offset in generic_fadvise
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
 mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
 - author/reviewer role stat
   - no role, reviewer: 1 commits
@@ -154,5 +150,3 @@ mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
     - a6f4e5682802 kho: docs: combine concepts and FDT documentation (2/6)
       - Authored by no role player, reviewed by a reviewer
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list

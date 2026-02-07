@@ -1,10 +1,8 @@
 baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-- author/reviewer role stat
 mm-hotfixes-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-- author/reviewer role stat
 mm-stable: 10 -> 10 commits
 - series: 1 (9) -> 1 (9)
 - author/reviewer role stat
@@ -23,7 +21,5 @@ mm-new: 1 -> 1 commits
   - no role, no role : 1 -> 1 commits
 mm-nonmm-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-- author/reviewer role stat
 mm-nonmm-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-- author/reviewer role stat

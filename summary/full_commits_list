@@ -1,4 +1,4 @@
-baseline: None -> v6.19-rc6-36-g6c790212c588f
+baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 23 total, 2 (5) series, 18 non-series commits
 - author/reviewer role stat
   - no role, nobody: 2 commits
@@ -9,19 +9,19 @@ mm-hotfixes-stable: 23 total, 2 (5) series, 18 non-series commits
   - maintainer, reviewer: 1 commits
 - full commits list
   - 8a1968bd997f mm/shmem, swap: fix race of truncate and swap entry split
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 9b47d4eea3f7 mm/kasan: fix KASAN poisoning in vrealloc()
-    - review score: 22
+    - Authored by a maintainer, reviewed by a reviewer
   - a0f3c0845a4f mm, swap: restore swap_space attr aviod kernel panic
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - a148a2040191 mm/memory-failure: fix missing ->mf_stats count in hugetlb poison
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 057a6f2632c9 mm/memory-failure: teach kill_accessing_process to accept hugetlb tail page pfn
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - d54887e8e144 mailmap: add entry for Viacheslav Bocharov
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - dd9e2f5b38f1 flex_proportions: make fprop_new_period() hardirq safe
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - sereis "mm: memfd_luo hotfixes". (3 commits)
     - 71e2b5eadbad memfd: export alloc_file() (0/3)
       - Authored by no role player, reviewed by no role player
@@ -30,38 +30,38 @@ mm-hotfixes-stable: 23 total, 2 (5) series, 18 non-series commits
     - c657c5dc1360 mm: memfd_luo: restore and free memfd_luo_ser on failure (2/3)
       - Authored by no role player, reviewed by a maintainer
   - e86436ad0ad2 kho: init alloc tags when restoring pages from reserved memory
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 412a32f0e53f kho: kho_preserve_vmalloc(): don't return 0 when ENOMEM
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 870ff19251bf mm/kfence: randomize the freelist on initialization
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - cbbbf7795fc3 mm/mm_init: don't cond_resched() in deferred_init_memmap_chunk() if called from deferred_grow_zone()
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 12b2285bf3d1 mm/zone_device: reinitialize large zone device private folios
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - bd58782995a2 vmcoreinfo: make hwerr_data visible for debugging
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 16459fe7e0ca x86/kfence: fix booting on 32bit non-PAE systems
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - sereis "liveupdate: fixes in error handling". (2 commits)
     - 011d4e52a76c liveupdate: luo_file: do not clear serialized_data on unfreeze (0/2)
       - Authored by no role player, reviewed by no role player
     - f1675db3c7f1 mailmap: update Alexander Mikhalitsyn's emails (1/2)
       - Authored by no role player, reviewed by nobody
   - 2030dddf9545 mm, shmem: prevent infinite loop on truncate race
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - 1a47837bfafe Documentation: document liveupdate cmdline parameter
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - b5cbacd7f86f procfs: avoid fetching build ID while holding VMA lock
-    - review score: 21
+    - Authored by a maintainer, reviewed by no role player
   - ae9fd76c111b mm/memory-failure: reject unsupported non-folio compound page
-    - review score: 21
+    - Authored by a maintainer, reviewed by no role player
 mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
 - full commits list
   - 30ad9060219d mm/hugetlb: restore failed global reservations to subpool
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
 mm-stable: 304 total, 29 (237) series, 67 non-series commits
 - author/reviewer role stat
   - no role, nobody: 28 commits
@@ -76,11 +76,11 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
   - maintainer, maintainer: 17 commits
 - full commits list
   - a03ed8f144e2 mm/vmalloc: clarify why vmap_range_noflush() might sleep
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 817383b34db1 mm/damon/core: fix memory leak of repeat mode damon_call_control objects
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 2a912d440c60 alloc_tag: move memory_allocation_profiling_sysctls into .rodata
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - sereis "Nesting support for lazy MMU mode", v6. (14 commits)
     - 58852f24f956 powerpc/64s: do not re-activate batched TLB flush (0/14)
       - Authored by no role player, reviewed by no role player
@@ -111,9 +111,9 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - ee628d9cc8d5 mm: add basic tests for lazy_mmu (13/14)
       - Authored by no role player, reviewed by no role player
   - bf3480d7d0bc mm/shmem: add mTHP swpout fallback statistics in shmem_writeout()
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - 7adc97bc9394 mm/vmscan.c:shrink_folio_list(): save a tabstop
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - sereis "zram: introduce compressed data writeback", v2. (7 commits)
     - d38fab605c66 zram: introduce compressed data writeback (0/7)
       - Authored by no role player, reviewed by nobody
@@ -130,13 +130,13 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - 0327a862135b zram: consolidate device-attr declarations (6/7)
       - Authored by a maintainer, reviewed by nobody
   - 2e8ff2f51dde zram: use u32 for entry ac_time tracking
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - bde60fe74721 zram: rename internal slot API
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - 4932844eb870 zram: trivial fix of recompress_slot() coding styles
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - 8b05d2d8af81 zram: fixup read_block_state()
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - sereis "mm: folio_zero_user: clear page ranges", v11. (8 commits)
     - 8e38607aa4aa treewide: provide a generic clear_user_page() variant (0/8)
       - Authored by no role player, reviewed by nobody
@@ -155,22 +155,22 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - 93552c9a3350 mm: folio_zero_user: cache neighbouring pages (7/8)
       - Authored by no role player, reviewed by no role player
   - cc05d5d94bda mm/damon/sysfs-schemes: remove outdated TODO in target_nid_store()
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 85aa39197420 mm: zswap: delete unused acomp->is_sleepable
-    - review score: 23
+    - Authored by a maintainer, reviewed by a maintainer
   - sereis "memcg cleanups", v3. (2 commits)
     - 558605a530e0 memcg: move mem_cgroup_usage memcontrol-v1.c (0/2)
       - Authored by no role player, reviewed by a maintainer
     - 055059ed720e memcg: remove mem_cgroup_size() (1/2)
       - Authored by no role player, reviewed by a maintainer
   - 16cc8b9396f6 mm: memcontrol: rename mem_cgroup_from_slab_obj()
-    - review score: 23
+    - Authored by a maintainer, reviewed by a maintainer
   - 6e4930e33329 mm/damon/core: fix wasteful CPU calls by skipping non-existent targets
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 9f5edd785da3 tools/mm/thp_swap_allocator_test: fix small folio alignment
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 8b8017d7c411 tools/mm/slabinfo: fix --partial long option mapping
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - sereis "mm/damon: introduce {,max_}nr_snapshots and tracepoint for damos stats". (12 commits)
     - 4a6ceb7c9744 mm/damon/core: introduce nr_snapshots damos stat (0/12)
       - Authored by a maintainer, reviewed by nobody
@@ -197,37 +197,37 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - 804c26b961da mm/damon/core: add trace point for damos stat per apply interval (11/12)
       - Authored by a maintainer, reviewed by no role player
   - 9082f24bd3b7 mm/damon/stat: deduplicate intervals_goal setup in damon_stat_build_ctx()
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 657a81fe3b41 zram: drop pp_in_progress
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - 64dd89ae01f2 mm/block/fs: remove laptop_mode
-    - review score: 23
+    - Authored by a maintainer, reviewed by a maintainer
   - bd4526e64bcf maple_tree: remove struct maple_alloc
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - a98ec863fded lib/test_vmalloc.c: minor fixes to test_vmalloc.c
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 84355caa271a mm/mm_init: replace simple_strtoul with kstrtobool in set_hashdist
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - a9853ac1c3bc zram: remove KMSG_COMPONENT macro
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 5ec9bb6de493 mm/damon: fix typos in comments
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 62451ae347b0 mm: fix minor spelling mistakes in comments
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - ed60c8e28024 mm/hugetlb_cgroup: fix -Wformat-truncation warning
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 9c9828d3ead6 mm, page_alloc, thp: prevent reclaim for __GFP_THISNODE THP allocations
-    - review score: 22
+    - Authored by a maintainer, reviewed by a reviewer
   - 7969f3059493 mm/gup: remove no longer used gup_fast_undo_dev_pagemap
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 241b3a09639c mm: clarify GFP_ATOMIC/GFP_NOWAIT doc-comment
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - 7db0787000d4 mm: cleanup vma_iter_bulk_alloc
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 9e80e66ddaf7 mm, hugetlb: implement movable_gigantic_pages sysctl
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 3bb64898f003 page_alloc: allow migration of smaller hugepages during contig_alloc
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - sereis "selftests/mm: hugetlb cgroup charging: robustness fixes", v3. (3 commits)
     - 8e46adb62fae selftests/mm/write_to_hugetlbfs: parse -s as size_t (0/3)
       - Authored by no role player, reviewed by no role player
@@ -238,15 +238,15 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - b47beff129c6 selftests/mm: fix va_high_addr_switch.sh return value (None/None)
       - Authored by no role player, reviewed by no role player
   - b1f031e33cb5 selftests/mm: allocate 6 hugepages in va_high_addr_switch.sh
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 7544d7969d84 selftests/mm: remove arm64 nr_hugepages setup for va_high_addr_switch test
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - dd0202a0bd81 selftests/mm: va_high_addr_switch return fail when either test failed
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 6319c4f44234 selftests/mm: fix comment for check_test_requirements
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - a8d933dc3354 mm/vmstat: remove unused node and zone state helpers
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - sereis "mm/damon/tests/core-kunit: extend existing test scenarios", v2. (5 commits)
     - 6c59085fc094 mm/damon/tests/core-kunit: verify the 'age' field in damon_test_split_at() (0/5)
       - Authored by no role player, reviewed by a maintainer
@@ -259,9 +259,9 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - 860996495f98 mm/damon/tests/core-kunit: remove a redundant test case and add a new test case in damos_test_commit_quota_goal() (4/5)
       - Authored by no role player, reviewed by a maintainer
   - 29ec27805f55 mm/oom_kill: remove unnecessary integer promotion in format string
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - f9b74c13b773 mm/mmu_gather: remove @delay_remap of __tlb_remove_page_size()
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - sereis "mm/khugepaged: fix dirty page handling for MADV_COLLAPSE", v5. (2 commits)
     - 5173ae0a068d mm/khugepaged: map dirty/writeback pages failures to EAGAIN (0/2)
       - Authored by no role player, reviewed by a reviewer
@@ -327,7 +327,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - 743758ccf8be Revert "mm/hugetlb: deal with multiple calls to hugetlb_bootmem_alloc" (28/29)
       - Authored by no role player, reviewed by a maintainer
   - 0bec75167d9c memcg-v1: remove folio_memcg_lock() doc reference
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - sereis "mm: clean up anon_vma implementation", v3. (9 commits)
     - 542eda1a8329 mm/rmap: improve anon_vma_clone(), unlink_anon_vmas() comments, add asserts (0/9)
       - Authored by a maintainer, reviewed by a reviewer
@@ -372,17 +372,17 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - 95296536eb19 memcg: rename mem_cgroup_ino() to mem_cgroup_id() (7/8)
       - Authored by a maintainer, reviewed by a maintainer
   - 0be909f114c4 zsmalloc: use actual object size to detect spans
-    - review score: 23
+    - Authored by a maintainer, reviewed by a maintainer
   - 19c4707b535a zsmalloc: simplify read begin/end logic
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 35520a712f99 mm/damon/paddr: initialize 'folio' variables to NULL for clarity
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 0cc3197bdb7f mm/early_ioremap: print the starting physical address in __early_ioremap()
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 5fd8391cb719 mm/early_ioremap: clean up the use of WARN() for debugging
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 5747435e0fd4 mm/vmalloc: prevent RCU stalls in kasan_release_vmalloc_node
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - sereis "mm: hugetlb: allocate frozen gigantic folio", v6. (6 commits)
     - 01152bd2e44d mm: debug_vm_pgtable: add debug_vm_pgtable_free_huge_page() (0/6)
       - Authored by no role player, reviewed by a reviewer
@@ -397,9 +397,9 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - 14f270761d33 mm: hugetlb: allocate frozen pages for gigantic allocation (5/6)
       - Authored by no role player, reviewed by a maintainer
   - d60769075013 vmalloc: export vrealloc_node_align_noprof
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - b19cb086043d mm/kasan/kunit: extend vmalloc OOB tests to cover vrealloc()
-    - review score: 22
+    - Authored by a maintainer, reviewed by a reviewer
   - sereis "mm/damon: advance DAMOS-based LRU sorting". (11 commits)
     - 4835e2871321 mm/damon/core: introduce [in]active memory ratio damos quota goal metric (0/11)
       - Authored by a maintainer, reviewed by nobody
@@ -424,15 +424,15 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - ed581147a417 Docs/admin-guide/mm/damon/lru_sort: document intervals autotuning (10/11)
       - Authored by a maintainer, reviewed by no role player
   - 79ffad20ebc0 mm: kmsan: add tests for high-order page freeing
-    - review score: 21
+    - Authored by a maintainer, reviewed by no role player
   - 737dfe7d9526 mm: kmsan: add test_uninit_page
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - dc2e4982cb01 zsmalloc: introduce SG-list based object read API
-    - review score: 21
+    - Authored by a maintainer, reviewed by no role player
   - 3d702678f57e mm/mempolicy: fix mpol_rebind_nodemask() for MPOL_F_NUMA_BALANCING
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - 832d95b5314e migrate: replace RMP_ flags with TTU_ flags
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - sereis "Support page table check on PowerPC", v18. (18 commits)
     - 9ac4941aceb0 arm64/mm: add addr parameter to __set_ptes_anysz() (0/18)
       - Authored by no role player, reviewed by no role player
@@ -535,24 +535,24 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - c0f609f79921 MAINTAINERS: move memory balloon infrastructure to "MEMORY MANAGEMENT - BALLOON" (23/24)
       - Authored by no role player, reviewed by no role player
   - 6efc548d8a08 zram: rename init_lock to dev_lock
-    - review score: 21
+    - Authored by a maintainer, reviewed by no role player
   - d468d8f86d80 mm: drop filename from page_alloc.c header comment
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 77bcee8d4015 alloc_tag: fix rw permission issue when handling boot parameter
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 5898aa8f9a0b mm: fix OOM killer inaccuracy on large many-core systems
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - sereis "mm/vmscan: add tracepoint and reason for kswapd_failures reset", v4. (2 commits)
     - dc9fe9b7056a mm/vmscan: mitigate spurious kswapd_failures reset from direct reclaim (0/2)
       - Authored by no role player, reviewed by a reviewer
     - a45088376d8a mm/vmscan: add tracepoint and reason for kswapd_failures reset (1/2)
       - Authored by no role player, reviewed by a reviewer
   - 94350fe6cad7 mm/highmem: fix __kmap_to_page() build error
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - a1c655f55444 mm/hugetlb: remove unnecessary if condition
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 824b8c96c421 mm/hugetlb: enforce brace style
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - sereis "Replace wq users and add WQ_PERCPU to alloc_workqueue() users", v2. (3 commits)
     - 0bcbd7cf6596 mm: replace use of system_unbound_wq with system_dfl_wq (0/3)
       - Authored by no role player, reviewed by no role player
@@ -561,7 +561,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - ed0a826ce302 mm: add WQ_PERCPU to alloc_workqueue users (2/3)
       - Authored by no role player, reviewed by no role player
   - 3a64d5b82ecc sparc/mm: export symbols for lazy_mmu_mode KUnit tests
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - sereis "Various mm kselftests improvements/fixes", v3. (9 commits)
     - 4ac76c51709d selftests/mm: default KDIR to build directory (0/9)
       - Authored by no role player, reviewed by nobody
@@ -593,7 +593,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - ae85e5610813 mm: hugetlb_cma: mark hugetlb_cma{_only} as __ro_after_init (4/5)
       - Authored by no role player, reviewed by a maintainer
   - dd2c6ec24fca selftests/mm: remove virtual_address_range test
-    - review score: 11
+    - Authored by a reviewer, reviewed by no role player
   - sereis "selftests/damon: improve leak detection and wss estimation reliability". (5 commits)
     - 94a62284ede0 selftests/damon/sysfs_memcg_path_leak.sh: use kmemleak (0/5)
       - Authored by a maintainer, reviewed by nobody
@@ -623,7 +623,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - cc1db8dff8e7 mm/damon: rename min_sz_region of damon_ctx to min_region_sz (7/8)
       - Authored by a maintainer, reviewed by nobody
   - b94c317903ee mm: update kernel-doc for __swap_cache_clear_shadow()
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - sereis "Docs/mm/damon: update intro, modules, maintainer profile, and misc". (8 commits)
     - 32d11b320897 Docs/mm/damon/index: simplify the intro (0/8)
       - Authored by a maintainer, reviewed by nobody
@@ -663,15 +663,15 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - 17fd82c3abe0 mm/vma: add and use vma_assert_stabilised() (9/10)
       - Authored by a reviewer, reviewed by a reviewer
   - 57fdfd64238e mm/pagewalk: use min() to simplify the code
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 292ded180bfa kasan: remove unnecessary sync argument from start_report()
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 46ba5a01180c hugetlb: increase hugepage reservations when using node-specific "hugepages=" cmdline
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - a4818a8beb15 percpu: add double free check to pcpu_free_area()
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 6ce964c02f1c selftests/mm: have the harness run each test category separately
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - sereis "mm, swap: swap table phase II: unify swapin use", v5. (19 commits)
     - d7cf0d54f210 mm, swap: rename __read_swap_cache_async to swap_cache_alloc_folio (0/19)
       - Authored by a maintainer, reviewed by a maintainer
@@ -725,27 +725,27 @@ mm-unstable: 61 total, 6 (42) series, 19 non-series commits
   - maintainer, maintainer: 6 commits
 - full commits list
   - e77043ea4aa4 mm: zswap: use SG list decompression APIs from zsmalloc
-    - review score: 23
+    - Authored by a maintainer, reviewed by a maintainer
   - 23dbffa39aa3 mm/cma: replace snprintf with strscpy in cma_new_area
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 41140634e528 mm/damon: unify address range representation with damon_addr_range
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 5e38b451e881 mm: refactor vma_map_pages to use vm_insert_pages
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - b4321ccaa24c mm: khugepaged: fix NR_FILE_PAGES and NR_SHMEM in collapse_file()
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - eb729477b4fb mm/readahead: fix typo in comment
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 8b298f786ac6 mm/vmscan: use %pe to print error pointers
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 9185f15f69a6 mm/zswap: use %pe to print error pointers
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 72255e0ffb45 mm: add SPDX id lines to some mm source files
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - fa1ad05daf12 zsmalloc: make common caches global
-    - review score: 21
+    - Authored by a maintainer, reviewed by no role player
   - f25b6ab9f7f0 mm/damon/stat: remove __read_mostly from memory_idle_ms_percentiles
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - sereis "enable PT_RECLAIM on more 64-bit architectures", v4. (8 commits)
     - ebd47c21ef0d mm: change mm/pt_reclaim.c to use asm/tlb.h instead of asm-generic/tlb.h (0/8)
       - Authored by no role player, reviewed by no role player
@@ -764,11 +764,11 @@ mm-unstable: 61 total, 6 (42) series, 19 non-series commits
     - 9afd82c3ec06 mm: make PT_RECLAIM depends on MMU_GATHER_RCU_TABLE_FREE (7/8)
       - Authored by no role player, reviewed by no role player
   - eb7f18f13395 mm: move pte table reclaim code to memory.c
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - e8f5fd5b7ee2 mm/memory: handle non-split locks correctly in zap_empty_pte_table()
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 1ab83fb651c0 mm: folio_zero_user: open code range computation in folio_zero_user()
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - sereis " Remove XA_ZERO from error recovery of dup_mmap()", v3. (11 commits)
     - a925f95fa951 mm: relocate the page table ceiling and floor definitions (0/11)
       - Authored by a reviewer, reviewed by nobody
@@ -825,11 +825,11 @@ mm-unstable: 61 total, 6 (42) series, 19 non-series commits
     - f669daec3cbb tools/testing/vma: separate VMA userland tests into separate files (12/13)
       - Authored by a maintainer, reviewed by nobody
   - ea45b06a9dc8 tools/testing/vma: separate out vma_internal.h into logical headers
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - 9ae484649835 tools-testing-vma-separate-out-vma_internalh-into-logical-headers-fix
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - 7b06a77aa04a tools/testing/vma: add VMA userland tests for VMA flag functions
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - sereis "support batch checking of references and unmapping for large folios", v5. (5 commits)
     - 29e97ca578b2 mm: rmap: support batched checks of the references for large folios (0/5)
       - Authored by no role player, reviewed by a reviewer
@@ -842,9 +842,9 @@ mm-unstable: 61 total, 6 (42) series, 19 non-series commits
     - f7cab0809eef arm64-mm-implement-the-architecture-specific-clear_flush_young_ptes-fix (4/5)
       - Authored by no role player, reviewed by nobody
   - 7e12e01bdeb2 mm: rmap: support batched unmapping for file large folios
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - 972589fc11eb mm: rmap: skip batched unmapping for UFFD vmas
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - sereis "selftests/mm: add memory failure selftests", v4. (3 commits)
     - cf2929c618fe selftests/mm: add memory failure anonymous page test (0/3)
       - Authored by a maintainer, reviewed by nobody
@@ -928,34 +928,34 @@ mm-new: 46 total, 3 (34) series, 12 non-series commits
     - bc2855740a69 maple_tree: remove maple big node and subtree structs (29/30)
       - Authored by a maintainer, reviewed by nobody
   - 409d23aedffa maple_tree: pass maple copy node to mas_wmb_replace()
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - fdceba18633b maple_tree: don't pass end to mas_wr_append()
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - b0275e84c8ae maple_tree: clean up mas_wr_node_store()
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - f138bda35361 maple_tree: update mas_next[_range] docs
-    - review score: 10
+    - Authored by a reviewer, reviewed by nobody
   - sereis "mm: memfd_luo: preserve file seals". (2 commits)
     - db3ae1dfd359 memfd: export memfd_{add,get}_seals() (0/2)
       - Authored by no role player, reviewed by no role player
     - ec4967c2db14 mm: memfd_luo: preserve file seals (1/2)
       - Authored by no role player, reviewed by nobody
   - 7235a985b812 mm/page_alloc: avoid overcounting bulk alloc in watermark check
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 6c1e7e622a2f arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 1737b521f42f mm/fadvise: validate offset in generic_fadvise
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 89a88e60cc0e mm: numa_memblks: identify the accurate NUMA ID of CFMW
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 051667a04f8a mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 8c9780c0b256 mm/shrinker: fix refcount leak in shrink_slab_memcg()
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - e35277d481b5 mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared thp
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - a1a876489abc fs: hugetlb: simplify remove_inode_hugepages() return type
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
 mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
 - author/reviewer role stat
   - no role, nobody: 27 commits
@@ -969,32 +969,32 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
   - maintainer, reviewer: 1 commits
 - full commits list
   - 0319227099df oid_registry: allow arbitrary size OIDs
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - b11052be3ea7 crash_dump: constify struct configfs_item_operations and configfs_group_operations
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - sereis "ocfs2: give ocfs2 the ability to reclaim suballocator free bg", v6. (2 commits)
     - 4a54331616b3 ocfs2: give ocfs2 the ability to reclaim suballocator free bg (0/2)
       - Authored by no role player, reviewed by a maintainer
     - fd4d53bde912 ocfs2: detect released suballocator BG for fh_to_[dentry|parent] (1/2)
       - Authored by no role player, reviewed by a maintainer
   - 9677a51abd86 ocfs2: constify struct configfs_item_operations and configfs_group_operations
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 688dab01c3bb ocfs2: validate i_refcount_loc when refcount flag is set
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 1524af3685b3 ocfs2: validate inline data i_size during inode read
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - d3cd8de2e17e ocfs2: adjust ocfs2_xa_remove_entry() to match UBSAN boundary checks
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 4e9f69c06215 ocfs2: add validate function for slot map blocks
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - e0b0f2834c9b ocfs2: fix oob in __ocfs2_find_path
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 29300f929eb1 ocfs2: annotate more flexible array members with __counted_by_le()
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 6dcd539f062d lib/tests: convert test_uuid module to KUnit
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 24c776355f40 kernel.h: drop hex.h and update all hex.h users
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - sereis "Add ARRAY_END(), and use it to fix off-by-one bugs", v6. (4 commits)
     - 436debc9cad8 array_size.h: add ARRAY_END() (0/4)
       - Authored by no role player, reviewed by nobody
@@ -1010,11 +1010,11 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - b5bfcc1ffe51 kernel/crash: handle multi-page vmcoreinfo in crash kernel copy (1/2)
       - Authored by no role player, reviewed by no role player
   - e700f5d15607 watchdog: softlockup: panic when lockup duration exceeds N thresholds
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - b8f690f6d1d9 fat: remove unused parameter
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 7c5b0f6a9ff5 .editorconfig: respect .editorconfig settings from parent directories
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - sereis "kallsyms: Prevent invalid access when showing module buildid", v3. (7 commits)
     - 426295ef18c5 kallsyms: clean up @namebuf initialization in kallsyms_lookup_buildid() (0/7)
       - Authored by no role player, reviewed by no role player
@@ -1031,23 +1031,23 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - 3b07086444f8 kallsyms: prevent module removal when printing module name and buildid (6/7)
       - Authored by no role player, reviewed by no role player
   - f34e19c34e4e fork-comment-fix: remove ambiguous question mark in CLONE_CHILD_CLEARTID comment
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - c243413740b3 kfifo: fix kmalloc_array_node() argument order
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 0e7fd23f9293 editorconfig: add rst extension
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - d30aca3eeffc lib/tests: convert test_min_heap module to KUnit
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 1965bbb8f3c7 ipc/shm: uapi: remove dependency on libc
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - ad533a740c7c resource: provide 0args DEFINE_RES variant for unset resource desc
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 1921044eebf1 lib/kstrtox: fix kstrtobool() docstring to mention enabled/disabled
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 998be0a4dbca liveupdate: separate memfd support into LIVEUPDATE_MEMFD
-    - review score: 22
+    - Authored by a maintainer, reviewed by a reviewer
   - e896c44aecfb types: drop definition of __EXPORTED_HEADERS__
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - sereis "Address page fault in ima_restore_measurement_list()", v3. (3 commits)
     - 10d1c75ed438 ima: verify the previous kernel's IMA buffer lies in addressable RAM (0/3)
       - Authored by no role player, reviewed by a maintainer
@@ -1056,7 +1056,7 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - c5489d04337b x86/kexec: add a sanity check on previous kernel's ima kexec buffer (2/3)
       - Authored by no role player, reviewed by no role player
   - 77983f611fa6 ocfs2: adjust function name reference
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - sereis "kho: ABI headers and Documentation updates". (6 commits)
     - a7e53bfb4366 kho/abi: luo: make generated documentation more coherent (0/6)
       - Authored by no role player, reviewed by a reviewer
@@ -1071,31 +1071,31 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - dd1e79ef6ca1 kho/abi: add memblock ABI header (5/6)
       - Authored by no role player, reviewed by a reviewer
   - dbac35bee8fc lib/Kconfig.debug: fix BOOTPARAM_HUNG_TASK_PANIC comment
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - c62e7e6444cd ocfs2: add check for free bits before allocation in ocfs2_move_extent()
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 2bbd9e1d14d6 kernel/fork: update obsolete use_mm references to kthread_use_mm
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 105ddfb2d2b3 rust: task: restrict Task::group_leader() to current
-    - review score: 12
+    - Authored by a reviewer, reviewed by a reviewer
   - bf45794244ca lib/glob: convert selftest to KUnit
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 77ce1b4cd08f kho: test: clean up residual memory upon test_kho module unload
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 25929dae28f5 kho: remove duplicate header file references
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 8cafcb881364 fat: avoid parent link count underflow in rmdir
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - e8eef69a99f1 once: don't use a work queue to reset sleepable static key
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 5e65b5ca7d4e tsacct: skip all kernel threads
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 4cc67b048459 linux/log2.h: reduce instruction count for is_power_of_2()
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - a906f3ae4423 init/main.c: check if rdinit was explicitly set before printing warning
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 499f86de4f8c init/main: read bootconfig header with get_unaligned_le32()
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - sereis "Align atomic storage", v7. (4 commits)
     - 3bb83c910971 bpf: explicitly align bpf_res_spin_lock (0/4)
       - Authored by no role player, reviewed by a maintainer
@@ -1106,20 +1106,20 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - 9a229ae249e0 atomic: add option for weaker alignment check (3/4)
       - Authored by no role player, reviewed by nobody
   - 89802ca36c96 lib/group_cpus: make group CPU cluster aware
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 08e8f1ef3df2 kernel-chktaint: add reporting for tainted modules
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 6ca9de3600f4 kho: print which scratch buffer failed to be reserved
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 931d5c36c736 checkpatch: add an invalid patch separator test
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - sereis "kho: clean up page initialization logic", v2. (2 commits)
     - 840fe43d371f kho: use unsigned long for nr_pages (0/2)
       - Authored by a reviewer, reviewed by a maintainer
     - 8f1081892d62 kho: simplify page initialization in kho_restore_page() (1/2)
       - Authored by a reviewer, reviewed by a maintainer
   - e8d899d30134 compiler-clang.h: require LLVM 19.1.0 or higher for __typeof_unqual__
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - sereis "Unload linux/kernel.h", v5. (6 commits)
     - f2e0abdc88ce kernel.h: drop STACK_MAGIC macro (0/6)
       - Authored by no role player, reviewed by no role player
@@ -1134,25 +1134,25 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - bec261fec6d4 tracing: move tracing declarations from kernel.h to a dedicated header (5/6)
       - Authored by no role player, reviewed by no role player
   - cc20650a0963 scripts/bloat-o-meter: ignore __noinstr_text_start
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 503efe850c74 delayacct: add timestamp of delay max
-    - review score: 20
+    - Authored by a maintainer, reviewed by nobody
   - 666183dcdd9a rapidio: replace rio_free_net() with kfree() in rio_scan_alloc_net()
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 5138c936c2c8 ocfs2: fix reflink preserve cleanup issue
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 480e1d5c64bb kexec: derive purgatory entry from symbol
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 8924336531e2 ipc: don't audit capability check in ipc_permissions()
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 0895a000e4ff ucount: check for CAP_SYS_RESOURCE using ns_capable_noaudit()
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - b50634c5e84a kho: cleanup error handling in kho_populate()
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - 96a54b8ffc8c crash_dump: fix dm_crypt keys locking and ref leak
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 427b2535f513 kho: skip memoryless NUMA nodes when reserving scratch areas
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - sereis "don't abuse task_struct.group_leader", v2. (7 commits)
     - 33caa19f4b31 android/binder: don't abuse current->group_leader (0/7)
       - Authored by no role player, reviewed by a maintainer
@@ -1169,7 +1169,7 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - f3951e93d4fe netclassid: use thread_group_leader(p) in update_classid_task() (6/7)
       - Authored by no role player, reviewed by nobody
   - 2e171ab29f91 panic: add panic_force_cpu= parameter to redirect panic to a specific CPU
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
 mm-nonmm-unstable: 17 total, 1 (5) series, 12 non-series commits
 - author/reviewer role stat
   - no role, nobody: 6 commits
@@ -1179,7 +1179,7 @@ mm-nonmm-unstable: 17 total, 1 (5) series, 12 non-series commits
   - maintainer, nobody: 3 commits
 - full commits list
   - d268088d0794 delayacct: fix uapi timespec64 definition
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - sereis "list private v2 & luo flb", v9. (5 commits)
     - c8c062bfb8e6 list: add primitives for private list manipulations (0/5)
       - Authored by no role player, reviewed by nobody
@@ -1192,24 +1192,24 @@ mm-nonmm-unstable: 17 total, 1 (5) series, 12 non-series commits
     - f11f5488d58f tests/liveupdate: add in-kernel liveupdate test (4/5)
       - Authored by a maintainer, reviewed by nobody
   - e6ffe7ff674f kho: fix doc for kho_restore_pages()
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
   - 41fc4bd40b69 kcsan, compiler_types: avoid duplicate type issues in BPF Type Format
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - a61d425673b6 watchdog/softlockup: fix sample ring index wrap in need_counting_irqs()
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 84d4d403c3df procfs: fix missing RCU protection when reading real_parent in do_task_stat()
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 3091c41d133d watchdog/hardlockup: simplify perf event probe and remove per-cpu dependency
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 0e916a75e62e lib/random32: convert selftest to KUnit
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
   - 7a10a24e06f4 selftests/memfd: use IPC semaphore instead of SIGSTOP/SIGCONT
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - b216fbd2ead1 objpool: fix the overestimation of object pooling metadata size
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - a1171d2a123d scripts/gdb: implement x86_page_ops in mm.py
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - 074790326541 kho: fix missing early_memunmap() call in kho_populate()
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
   - bf6b90deca26 kho: remove unnecessary WARN_ON(err) in kho_populate()
-    - review score: 0
+    - Authored by no role player, reviewed by nobody

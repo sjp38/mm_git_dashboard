@@ -1,28 +1,18 @@
-baseline: None -> v6.19-rc6-36-g6c790212c588f
+baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-stable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, no role : 1 commits
 - full commits list
   - 7969f3059493 mm/gup: remove no longer used gup_fast_undo_dev_pagemap
-    - review score: 1
+    - Authored by no role player, reviewed by no role player
 mm-unstable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
 - full commits list
   - 72255e0ffb45 mm: add SPDX id lines to some mm source files
-    - review score: 0
+    - Authored by no role player, reviewed by nobody
 mm-new: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list

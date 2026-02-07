@@ -1,0 +1,60 @@
+baseline: v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 1 commits
+- full commits list
+  - 30ad9060219d mm/hugetlb: restore failed global reservations to subpool
+    - Authored by no role player, reviewed by nobody
+mm-stable: 14 total, 0 (9) series, 5 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 2 commits
+  - no role, no role : 5 commits
+  - no role, reviewer: 1 commits
+  - no role, maintainer: 6 commits
+- full commits list
+  - ed60c8e28024 mm/hugetlb_cgroup: fix -Wformat-truncation warning
+    - Authored by no role player, reviewed by a maintainer
+  - 9e80e66ddaf7 mm, hugetlb: implement movable_gigantic_pages sysctl
+    - Authored by no role player, reviewed by no role player
+    - 9fac145b6d3f mm, arch: consolidate hugetlb CMA reservation (26/29)
+      - Authored by no role player, reviewed by nobody
+    - 7a9c0bf0aec6 mm/hugetlb: drop hugetlb_cma_check() (27/29)
+      - Authored by no role player, reviewed by a maintainer
+    - 743758ccf8be Revert "mm/hugetlb: deal with multiple calls to hugetlb_bootmem_alloc" (28/29)
+      - Authored by no role player, reviewed by a maintainer
+    - e0c1326779cc mm: page_alloc: add alloc_contig_frozen_{range,pages}() (3/6)
+      - Authored by no role player, reviewed by a reviewer
+    - 9bda131c6093 mm: cma: add cma_alloc_frozen{_compound}() (4/6)
+      - Authored by no role player, reviewed by no role player
+    - 14f270761d33 mm: hugetlb: allocate frozen pages for gigantic allocation (5/6)
+      - Authored by no role player, reviewed by a maintainer
+  - a1c655f55444 mm/hugetlb: remove unnecessary if condition
+    - Authored by no role player, reviewed by no role player
+  - 824b8c96c421 mm/hugetlb: enforce brace style
+    - Authored by no role player, reviewed by no role player
+    - 5a74b9f1dc3d mm: hugetlb: optimize replace_free_hugepage_folios() (2/5)
+      - Authored by no role player, reviewed by nobody
+    - d925730734e9 mm: hugetlb_cma: optimize hugetlb_cma_alloc_frozen_folio() (3/5)
+      - Authored by no role player, reviewed by no role player
+    - ae85e5610813 mm: hugetlb_cma: mark hugetlb_cma{_only} as __ro_after_init (4/5)
+      - Authored by no role player, reviewed by a maintainer
+  - 46ba5a01180c hugetlb: increase hugepage reservations when using node-specific "hugepages=" cmdline
+    - Authored by no role player, reviewed by a maintainer
+mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 1 commits
+  - maintainer, nobody: 1 commits
+- full commits list
+  - 72255e0ffb45 mm: add SPDX id lines to some mm source files
+    - Authored by no role player, reviewed by nobody
+    - 840c27aa84bf mm: update hugetlbfs to use VMA flags on mmap_prepare (5/13)
+      - Authored by a maintainer, reviewed by nobody
+mm-new: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, maintainer: 1 commits
+- full commits list
+  - a1a876489abc fs: hugetlb: simplify remove_inode_hugepages() return type
+    - Authored by no role player, reviewed by a maintainer
+mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

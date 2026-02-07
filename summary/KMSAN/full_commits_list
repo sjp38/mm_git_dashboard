@@ -1,0 +1,21 @@
+baseline: v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-stable: 2 total, 0 (0) series, 2 non-series commits
+- author/reviewer role stat
+  - maintainer, nobody: 1 commits
+  - maintainer, no role : 1 commits
+- full commits list
+  - 79ffad20ebc0 mm: kmsan: add tests for high-order page freeing
+    - Authored by a maintainer, reviewed by no role player
+  - 737dfe7d9526 mm: kmsan: add test_uninit_page
+    - Authored by a maintainer, reviewed by nobody
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-new: 0 total, 0 (0) series, 0 non-series commits
+mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
+- author/reviewer role stat
+  - no role, maintainer: 1 commits
+- full commits list
+    - 8118f197b7b7 mm: fix benign off-by-one bugs (1/4)
+      - Authored by no role player, reviewed by a maintainer
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

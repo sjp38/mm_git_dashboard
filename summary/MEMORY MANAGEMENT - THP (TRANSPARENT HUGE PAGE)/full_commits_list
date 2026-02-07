@@ -1,10 +1,6 @@
-baseline: None -> v6.19-rc6-36-g6c790212c588f
+baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-stable: 8 total, 2 (7) series, 1 non-series commits
 - author/reviewer role stat
   - no role, reviewer: 7 commits
@@ -16,7 +12,7 @@ mm-stable: 8 total, 2 (7) series, 1 non-series commits
     - 398556570e32 mm/khugepaged: retry with sync writeback for MADV_COLLAPSE (1/2)
       - Authored by no role player, reviewed by a reviewer
   - 832d95b5314e migrate: replace RMP_ flags with TTU_ flags
-    - review score: 3
+    - Authored by no role player, reviewed by a maintainer
   - sereis "mm/khugepaged: cleanups and scan limit fix", v3. (4 commits)
     - 7832e4d583ee mm/khugepaged: remove unnecessary goto 'skip' label (0/4)
       - Authored by no role player, reviewed by a reviewer
@@ -34,15 +30,9 @@ mm-unstable: 2 total, 0 (1) series, 1 non-series commits
   - reviewer, nobody: 1 commits
 - full commits list
   - b4321ccaa24c mm: khugepaged: fix NR_FILE_PAGES and NR_SHMEM in collapse_file()
-    - review score: 2
+    - Authored by no role player, reviewed by a reviewer
     - 8f9b31641c92 mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
       - Authored by a reviewer, reviewed by nobody
 mm-new: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- author/reviewer role stat
-- full commits list
