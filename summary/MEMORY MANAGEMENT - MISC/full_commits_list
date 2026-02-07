@@ -1,8 +1,10 @@
 baseline: None -> v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-stable: 51 total, 5 (39) series, 12 non-series commits
 - author/reviewer role stat
   - no role, nobody: 3 commits
@@ -13,6 +15,7 @@ mm-stable: 51 total, 5 (39) series, 12 non-series commits
   - maintainer, nobody: 12 commits
   - maintainer, no role : 4 commits
   - maintainer, maintainer: 1 commits
+- full commits list
     - ee7f5d193358 Docs/mm/damon/design: update for nr_snapshots damos stat (2/12)
       - Authored by a maintainer, reviewed by nobody
     - 0b43f89e2d9a Docs/admin-guide/mm/damon/usage: update for nr_snapshots damos stat (3/12)
@@ -124,6 +127,7 @@ mm-unstable: 6 total, 1 (4) series, 2 non-series commits
   - no role, nobody: 2 commits
   - no role, maintainer: 1 commits
   - maintainer, nobody: 3 commits
+- full commits list
   - 23dbffa39aa3 mm/cma: replace snprintf with strscpy in cma_new_area
     - review score: 3
   - 72255e0ffb45 mm: add SPDX id lines to some mm source files
@@ -140,12 +144,15 @@ mm-unstable: 6 total, 1 (4) series, 2 non-series commits
 mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
+- full commits list
   - 1737b521f42f mm/fadvise: validate offset in generic_fadvise
     - review score: 0
 mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
 - author/reviewer role stat
   - no role, reviewer: 1 commits
+- full commits list
     - a6f4e5682802 kho: docs: combine concepts and FDT documentation (2/6)
       - Authored by no role player, reviewed by a reviewer
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list

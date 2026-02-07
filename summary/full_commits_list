@@ -7,6 +7,7 @@ mm-hotfixes-stable: 23 total, 2 (5) series, 18 non-series commits
   - no role, maintainer: 8 commits
   - maintainer, no role : 2 commits
   - maintainer, reviewer: 1 commits
+- full commits list
   - 8a1968bd997f mm/shmem, swap: fix race of truncate and swap entry split
     - review score: 1
   - 9b47d4eea3f7 mm/kasan: fix KASAN poisoning in vrealloc()
@@ -58,6 +59,7 @@ mm-hotfixes-stable: 23 total, 2 (5) series, 18 non-series commits
 mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
+- full commits list
   - 30ad9060219d mm/hugetlb: restore failed global reservations to subpool
     - review score: 0
 mm-stable: 304 total, 29 (237) series, 67 non-series commits
@@ -72,6 +74,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
   - maintainer, no role : 15 commits
   - maintainer, reviewer: 22 commits
   - maintainer, maintainer: 17 commits
+- full commits list
   - a03ed8f144e2 mm/vmalloc: clarify why vmap_range_noflush() might sleep
     - review score: 1
   - 817383b34db1 mm/damon/core: fix memory leak of repeat mode damon_call_control objects
@@ -720,6 +723,7 @@ mm-unstable: 61 total, 6 (42) series, 19 non-series commits
   - maintainer, nobody: 11 commits
   - maintainer, no role : 1 commits
   - maintainer, maintainer: 6 commits
+- full commits list
   - e77043ea4aa4 mm: zswap: use SG list decompression APIs from zsmalloc
     - review score: 23
   - 23dbffa39aa3 mm/cma: replace snprintf with strscpy in cma_new_area
@@ -856,6 +860,7 @@ mm-new: 46 total, 3 (34) series, 12 non-series commits
   - no role, maintainer: 3 commits
   - reviewer, nobody: 1 commits
   - maintainer, nobody: 33 commits
+- full commits list
   - sereis "KSM: Optimizations for rmap_walk_ksm". (2 commits)
     - 8ac4804f5268 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
       - Authored by no role player, reviewed by nobody
@@ -962,6 +967,7 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
   - maintainer, nobody: 3 commits
   - maintainer, no role : 1 commits
   - maintainer, reviewer: 1 commits
+- full commits list
   - 0319227099df oid_registry: allow arbitrary size OIDs
     - review score: 0
   - b11052be3ea7 crash_dump: constify struct configfs_item_operations and configfs_group_operations
@@ -1171,6 +1177,7 @@ mm-nonmm-unstable: 17 total, 1 (5) series, 12 non-series commits
   - no role, reviewer: 1 commits
   - no role, maintainer: 1 commits
   - maintainer, nobody: 3 commits
+- full commits list
   - d268088d0794 delayacct: fix uapi timespec64 definition
     - review score: 0
   - sereis "list private v2 & luo flb", v9. (5 commits)

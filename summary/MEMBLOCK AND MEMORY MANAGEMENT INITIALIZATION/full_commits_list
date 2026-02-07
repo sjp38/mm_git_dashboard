@@ -2,15 +2,18 @@ baseline: None -> v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, no role : 1 commits
+- full commits list
   - cbbbf7795fc3 mm/mm_init: don't cond_resched() in deferred_init_memmap_chunk() if called from deferred_grow_zone()
     - review score: 1
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-stable: 5 total, 0 (3) series, 2 non-series commits
 - author/reviewer role stat
   - no role, nobody: 3 commits
   - no role, no role : 1 commits
   - no role, reviewer: 1 commits
+- full commits list
   - 84355caa271a mm/mm_init: replace simple_strtoul with kstrtobool in set_hashdist
     - review score: 1
   - 62451ae347b0 mm: fix minor spelling mistakes in comments
@@ -23,12 +26,16 @@ mm-stable: 5 total, 0 (3) series, 2 non-series commits
       - Authored by no role player, reviewed by nobody
 mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
 - author/reviewer role stat
   - no role, reviewer: 1 commits
+- full commits list
     - dd1e79ef6ca1 kho/abi: add memblock ABI header (5/6)
       - Authored by no role player, reviewed by a reviewer
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list

@@ -1,0 +1,56 @@
+baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 13 -> 13 commits
+- series: 1 (3) -> 1 (3)
+- author/reviewer role stat
+  - no role, no role : 4 -> 4 commits
+  - no role, reviewer: 1 -> 1 commits
+  - no role, maintainer: 6 -> 6 commits
+  - maintainer, no role : 1 -> 1 commits
+  - maintainer, reviewer: 1 -> 1 commits
+mm-hotfixes-unstable: 1 -> 1 commits
+- series: 0 (0) -> 0 (0)
+- author/reviewer role stat
+  - no role, nobody: 1 -> 1 commits
+mm-stable: 182 -> 182 commits
+- series: 17 (134) -> 17 (134)
+- author/reviewer role stat
+  - no role, nobody: 7 -> 7 commits
+  - no role, no role : 38 -> 38 commits
+  - no role, reviewer: 24 -> 24 commits
+  - no role, maintainer: 37 -> 37 commits
+  - reviewer, no role : 1 -> 1 commits
+  - reviewer, reviewer: 5 -> 5 commits
+  - maintainer, nobody: 23 -> 23 commits
+  - maintainer, no role : 10 -> 10 commits
+  - maintainer, reviewer: 22 -> 22 commits
+  - maintainer, maintainer: 15 -> 15 commits
+mm-unstable: 41 -> 41 commits
+- series: 4 (25) -> 4 (25)
+- author/reviewer role stat
+  - no role, nobody: 5 -> 5 commits
+  - no role, no role : 7 -> 7 commits
+  - no role, reviewer: 3 -> 3 commits
+  - no role, maintainer: 6 -> 6 commits
+  - reviewer, nobody: 5 -> 5 commits
+  - reviewer, no role : 1 -> 1 commits
+  - reviewer, reviewer: 3 -> 3 commits
+  - maintainer, nobody: 4 -> 4 commits
+  - maintainer, no role : 1 -> 1 commits
+  - maintainer, maintainer: 6 -> 6 commits
+mm-new: 11 -> 11 commits
+- series: 2 (4) -> 2 (4)
+- author/reviewer role stat
+  - no role, nobody: 5 -> 5 commits
+  - no role, no role : 3 -> 3 commits
+  - no role, reviewer: 1 -> 1 commits
+  - no role, maintainer: 2 -> 2 commits
+mm-nonmm-stable: 4 -> 4 commits
+- series: 0 (3) -> 0 (3)
+- author/reviewer role stat
+  - no role, nobody: 1 -> 1 commits
+  - no role, reviewer: 1 -> 1 commits
+  - no role, maintainer: 1 -> 1 commits
+  - maintainer, reviewer: 1 -> 1 commits
+mm-nonmm-unstable: 0 -> 0 commits
+- series: 0 (0) -> 0 (0)
+- author/reviewer role stat

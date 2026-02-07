@@ -1,0 +1,69 @@
+baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 23 -> 23 commits
+- series: 2 (5) -> 2 (5)
+- author/reviewer role stat
+  - no role, nobody: 2 -> 2 commits
+  - no role, no role : 9 -> 9 commits
+  - no role, reviewer: 1 -> 1 commits
+  - no role, maintainer: 8 -> 8 commits
+  - maintainer, no role : 2 -> 2 commits
+  - maintainer, reviewer: 1 -> 1 commits
+mm-hotfixes-unstable: 1 -> 1 commits
+- series: 0 (0) -> 0 (0)
+- author/reviewer role stat
+  - no role, nobody: 1 -> 1 commits
+mm-stable: 304 -> 304 commits
+- series: 29 (237) -> 29 (237)
+- author/reviewer role stat
+  - no role, nobody: 28 -> 28 commits
+  - no role, no role : 76 -> 76 commits
+  - no role, reviewer: 27 -> 27 commits
+  - no role, maintainer: 57 -> 57 commits
+  - reviewer, no role : 2 -> 2 commits
+  - reviewer, reviewer: 5 -> 5 commits
+  - maintainer, nobody: 55 -> 55 commits
+  - maintainer, no role : 15 -> 15 commits
+  - maintainer, reviewer: 22 -> 22 commits
+  - maintainer, maintainer: 17 -> 17 commits
+mm-unstable: 61 -> 61 commits
+- series: 6 (42) -> 6 (42)
+- author/reviewer role stat
+  - no role, nobody: 11 -> 11 commits
+  - no role, no role : 11 -> 11 commits
+  - no role, reviewer: 3 -> 3 commits
+  - no role, maintainer: 6 -> 6 commits
+  - reviewer, nobody: 8 -> 8 commits
+  - reviewer, no role : 1 -> 1 commits
+  - reviewer, reviewer: 3 -> 3 commits
+  - maintainer, nobody: 11 -> 11 commits
+  - maintainer, no role : 1 -> 1 commits
+  - maintainer, maintainer: 6 -> 6 commits
+mm-new: 46 -> 46 commits
+- series: 3 (34) -> 3 (34)
+- author/reviewer role stat
+  - no role, nobody: 5 -> 5 commits
+  - no role, no role : 3 -> 3 commits
+  - no role, reviewer: 1 -> 1 commits
+  - no role, maintainer: 3 -> 3 commits
+  - reviewer, nobody: 1 -> 1 commits
+  - maintainer, nobody: 33 -> 33 commits
+mm-nonmm-stable: 96 -> 96 commits
+- series: 10 (43) -> 10 (43)
+- author/reviewer role stat
+  - no role, nobody: 27 -> 27 commits
+  - no role, no role : 28 -> 28 commits
+  - no role, reviewer: 5 -> 5 commits
+  - no role, maintainer: 28 -> 28 commits
+  - reviewer, reviewer: 1 -> 1 commits
+  - reviewer, maintainer: 2 -> 2 commits
+  - maintainer, nobody: 3 -> 3 commits
+  - maintainer, no role : 1 -> 1 commits
+  - maintainer, reviewer: 1 -> 1 commits
+mm-nonmm-unstable: 17 -> 17 commits
+- series: 1 (5) -> 1 (5)
+- author/reviewer role stat
+  - no role, nobody: 6 -> 6 commits
+  - no role, no role : 6 -> 6 commits
+  - no role, reviewer: 1 -> 1 commits
+  - no role, maintainer: 1 -> 1 commits
+  - maintainer, nobody: 3 -> 3 commits

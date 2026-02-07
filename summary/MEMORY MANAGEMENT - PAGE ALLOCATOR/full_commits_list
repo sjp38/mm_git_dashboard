@@ -1,14 +1,17 @@
 baseline: None -> v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-stable: 13 total, 3 (9) series, 4 non-series commits
 - author/reviewer role stat
   - no role, reviewer: 8 commits
   - no role, maintainer: 1 commits
   - reviewer, reviewer: 1 commits
   - maintainer, reviewer: 3 commits
+- full commits list
   - 62451ae347b0 mm: fix minor spelling mistakes in comments
     - review score: 2
   - 9c9828d3ead6 mm, page_alloc, thp: prevent reclaim for __GFP_THISNODE THP allocations
@@ -40,12 +43,16 @@ mm-stable: 13 total, 3 (9) series, 4 non-series commits
       - Authored by no role player, reviewed by a reviewer
 mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
+- full commits list
   - 7235a985b812 mm/page_alloc: avoid overcounting bulk alloc in watermark check
     - review score: 0
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list

@@ -6,6 +6,7 @@ mm-hotfixes-stable: 13 total, 1 (3) series, 10 non-series commits
   - no role, maintainer: 6 commits
   - maintainer, no role : 1 commits
   - maintainer, reviewer: 1 commits
+- full commits list
   - 8a1968bd997f mm/shmem, swap: fix race of truncate and swap entry split
     - review score: 1
   - 9b47d4eea3f7 mm/kasan: fix KASAN poisoning in vrealloc()
@@ -36,6 +37,7 @@ mm-hotfixes-stable: 13 total, 1 (3) series, 10 non-series commits
 mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
+- full commits list
   - 30ad9060219d mm/hugetlb: restore failed global reservations to subpool
     - review score: 0
 mm-stable: 182 total, 17 (134) series, 48 non-series commits
@@ -50,6 +52,7 @@ mm-stable: 182 total, 17 (134) series, 48 non-series commits
   - maintainer, no role : 10 commits
   - maintainer, reviewer: 22 commits
   - maintainer, maintainer: 15 commits
+- full commits list
   - a03ed8f144e2 mm/vmalloc: clarify why vmap_range_noflush() might sleep
     - review score: 1
   - 817383b34db1 mm/damon/core: fix memory leak of repeat mode damon_call_control objects
@@ -443,6 +446,7 @@ mm-unstable: 41 total, 4 (25) series, 16 non-series commits
   - maintainer, nobody: 4 commits
   - maintainer, no role : 1 commits
   - maintainer, maintainer: 6 commits
+- full commits list
   - e77043ea4aa4 mm: zswap: use SG list decompression APIs from zsmalloc
     - review score: 23
   - 23dbffa39aa3 mm/cma: replace snprintf with strscpy in cma_new_area
@@ -535,6 +539,7 @@ mm-new: 11 total, 2 (4) series, 7 non-series commits
   - no role, no role : 3 commits
   - no role, reviewer: 1 commits
   - no role, maintainer: 2 commits
+- full commits list
   - sereis "KSM: Optimizations for rmap_walk_ksm". (2 commits)
     - 8ac4804f5268 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
       - Authored by no role player, reviewed by nobody
@@ -565,6 +570,7 @@ mm-nonmm-stable: 4 total, 0 (3) series, 1 non-series commits
   - no role, reviewer: 1 commits
   - no role, maintainer: 1 commits
   - maintainer, reviewer: 1 commits
+- full commits list
     - 8118f197b7b7 mm: fix benign off-by-one bugs (1/4)
       - Authored by no role player, reviewed by a maintainer
     - 61e9210e2392 mm: use ARRAY_END() instead of open-coding it (3/4)
@@ -575,3 +581,4 @@ mm-nonmm-stable: 4 total, 0 (3) series, 1 non-series commits
       - Authored by no role player, reviewed by a reviewer
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list

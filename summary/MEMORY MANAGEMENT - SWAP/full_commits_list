@@ -2,10 +2,12 @@ baseline: None -> v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, maintainer: 1 commits
+- full commits list
   - a0f3c0845a4f mm, swap: restore swap_space attr aviod kernel panic
     - review score: 3
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-stable: 18 total, 1 (16) series, 2 non-series commits
 - author/reviewer role stat
   - no role, reviewer: 1 commits
@@ -13,6 +15,7 @@ mm-stable: 18 total, 1 (16) series, 2 non-series commits
   - reviewer, reviewer: 1 commits
   - maintainer, reviewer: 13 commits
   - maintainer, maintainer: 2 commits
+- full commits list
   - 62451ae347b0 mm: fix minor spelling mistakes in comments
     - review score: 2
   - b94c317903ee mm: update kernel-doc for __swap_cache_clear_shadow()
@@ -52,9 +55,13 @@ mm-stable: 18 total, 1 (16) series, 2 non-series commits
       - Authored by a maintainer, reviewed by a reviewer
 mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list

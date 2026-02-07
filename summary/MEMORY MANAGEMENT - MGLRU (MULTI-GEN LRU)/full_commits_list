@@ -1,8 +1,10 @@
 baseline: None -> v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-stable: 13 total, 2 (10) series, 3 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
@@ -14,6 +16,7 @@ mm-stable: 13 total, 2 (10) series, 3 non-series commits
   - maintainer, no role : 1 commits
   - maintainer, reviewer: 1 commits
   - maintainer, maintainer: 2 commits
+- full commits list
     - 0a096ab7a3a6 mm: introduce generic lazy_mmu helpers (6/14)
       - Authored by no role player, reviewed by no role player
   - 7adc97bc9394 mm/vmscan.c:shrink_folio_list(): save a tabstop
@@ -47,6 +50,7 @@ mm-unstable: 3 total, 1 (2) series, 1 non-series commits
   - no role, nobody: 1 commits
   - no role, no role : 1 commits
   - no role, maintainer: 1 commits
+- full commits list
   - 8b298f786ac6 mm/vmscan: use %pe to print error pointers
     - review score: 1
   - sereis "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
@@ -56,7 +60,10 @@ mm-unstable: 3 total, 1 (2) series, 1 non-series commits
       - Authored by no role player, reviewed by nobody
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list

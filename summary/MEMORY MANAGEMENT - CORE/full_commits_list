@@ -1,8 +1,10 @@
 baseline: None -> v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
 mm-stable: 44 total, 4 (38) series, 6 non-series commits
 - author/reviewer role stat
   - no role, nobody: 3 commits
@@ -11,6 +13,7 @@ mm-stable: 44 total, 4 (38) series, 6 non-series commits
   - no role, maintainer: 5 commits
   - reviewer, reviewer: 4 commits
   - maintainer, reviewer: 2 commits
+- full commits list
     - f2be745071ff mm: clarify lazy_mmu sleeping constraints (4/14)
       - Authored by no role player, reviewed by no role player
     - 7303ecbfe4f4 mm: introduce CONFIG_ARCH_HAS_LAZY_MMU_MODE (5/14)
@@ -111,6 +114,7 @@ mm-unstable: 20 total, 3 (15) series, 5 non-series commits
   - reviewer, nobody: 8 commits
   - reviewer, no role : 1 commits
   - reviewer, reviewer: 3 commits
+- full commits list
   - 5e38b451e881 mm: refactor vma_map_pages to use vm_insert_pages
     - review score: 1
   - 72255e0ffb45 mm: add SPDX id lines to some mm source files
@@ -157,14 +161,17 @@ mm-unstable: 20 total, 3 (15) series, 5 non-series commits
 mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, maintainer: 1 commits
+- full commits list
   - 6c1e7e622a2f arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
     - review score: 3
 mm-nonmm-stable: 2 total, 0 (0) series, 2 non-series commits
 - author/reviewer role stat
   - no role, nobody: 2 commits
+- full commits list
   - f34e19c34e4e fork-comment-fix: remove ambiguous question mark in CLONE_CHILD_CLEARTID comment
     - review score: 0
   - 2bbd9e1d14d6 kernel/fork: update obsolete use_mm references to kthread_use_mm
     - review score: 0
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - author/reviewer role stat
+- full commits list
