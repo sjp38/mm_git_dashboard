@@ -1,0 +1,21 @@
+baseline: None -> v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-new: 2 total, 1 (2) series, 0 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 2 commits
+  - sereis "KSM: Optimizations for rmap_walk_ksm". (2 commits)
+    - 8ac4804f5268 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
+      - Authored by no role player, reviewed by nobody
+    - 5cc2fea51f42 ksm: optimize rmap_walk_ksm by passing a suitable addressrange (1/2)
+      - Authored by no role player, reviewed by nobody
+mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat

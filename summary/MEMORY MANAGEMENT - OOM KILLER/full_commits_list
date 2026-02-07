@@ -1,0 +1,21 @@
+baseline: None -> v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-stable: 2 total, 0 (0) series, 2 non-series commits
+- author/reviewer role stat
+  - no role, reviewer: 1 commits
+  - no role, maintainer: 1 commits
+  - 29ec27805f55 mm/oom_kill: remove unnecessary integer promotion in format string
+    - review score: 3
+  - 5898aa8f9a0b mm: fix OOM killer inaccuracy on large many-core systems
+    - review score: 2
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-new: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat

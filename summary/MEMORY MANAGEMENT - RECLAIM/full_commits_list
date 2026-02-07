@@ -1,0 +1,59 @@
+baseline: None -> v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-stable: 12 total, 2 (9) series, 3 non-series commits
+- author/reviewer role stat
+  - no role, no role : 1 commits
+  - no role, reviewer: 4 commits
+  - no role, maintainer: 1 commits
+  - reviewer, no role : 1 commits
+  - maintainer, nobody: 1 commits
+  - maintainer, no role : 1 commits
+  - maintainer, reviewer: 1 commits
+  - maintainer, maintainer: 2 commits
+    - 0a096ab7a3a6 mm: introduce generic lazy_mmu helpers (6/14)
+      - Authored by no role player, reviewed by no role player
+  - 7adc97bc9394 mm/vmscan.c:shrink_folio_list(): save a tabstop
+    - review score: 20
+    - 055059ed720e memcg: remove mem_cgroup_size() (1/2)
+      - Authored by no role player, reviewed by a maintainer
+  - 64dd89ae01f2 mm/block/fs: remove laptop_mode
+    - review score: 23
+  - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - review score: 2
+  - sereis "memcg: separate private and public ID namespaces". (8 commits)
+    - e77786b4682e memcg: introduce private id API for in-kernel users (0/8)
+      - Authored by a maintainer, reviewed by no role player
+    - 20ccbd89afe4 mm/vmscan: use cgroup ID instead of private memcg ID in lru_gen interface (5/8)
+      - Authored by a reviewer, reviewed by no role player
+    - 95296536eb19 memcg: rename mem_cgroup_ino() to mem_cgroup_id() (7/8)
+      - Authored by a maintainer, reviewed by a maintainer
+    - a3db9e136ce1 mm/vmscan: drop inclusion of balloon_compaction.h (18/24)
+      - Authored by no role player, reviewed by a reviewer
+  - sereis "mm/vmscan: add tracepoint and reason for kswapd_failures reset", v4. (2 commits)
+    - dc9fe9b7056a mm/vmscan: mitigate spurious kswapd_failures reset from direct reclaim (0/2)
+      - Authored by no role player, reviewed by a reviewer
+    - a45088376d8a mm/vmscan: add tracepoint and reason for kswapd_failures reset (1/2)
+      - Authored by no role player, reviewed by a reviewer
+    - 2732acda82c9 mm, swap: use swap cache as the swap in synchronize layer (11/19)
+      - Authored by a maintainer, reviewed by a reviewer
+mm-unstable: 3 total, 1 (2) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 1 commits
+  - no role, no role : 1 commits
+  - no role, maintainer: 1 commits
+  - 8b298f786ac6 mm/vmscan: use %pe to print error pointers
+    - review score: 1
+  - sereis "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
+    - b30652512f16 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
+      - Authored by no role player, reviewed by a maintainer
+    - c12578ea61d6 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
+      - Authored by no role player, reviewed by nobody
+mm-new: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat

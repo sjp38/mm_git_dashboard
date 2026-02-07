@@ -1,0 +1,151 @@
+baseline: None -> v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-stable: 51 total, 5 (39) series, 12 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 3 commits
+  - no role, no role : 21 commits
+  - no role, reviewer: 7 commits
+  - no role, maintainer: 2 commits
+  - reviewer, no role : 1 commits
+  - maintainer, nobody: 12 commits
+  - maintainer, no role : 4 commits
+  - maintainer, maintainer: 1 commits
+    - ee7f5d193358 Docs/mm/damon/design: update for nr_snapshots damos stat (2/12)
+      - Authored by a maintainer, reviewed by nobody
+    - 0b43f89e2d9a Docs/admin-guide/mm/damon/usage: update for nr_snapshots damos stat (3/12)
+      - Authored by a maintainer, reviewed by nobody
+    - 64aa87f03da9 Docs/mm/damon/design: update for max_nr_snapshots (8/12)
+      - Authored by a maintainer, reviewed by nobody
+    - 2584dd7496c5 Docs/admin-guide/mm/damon/usage: update for max_nr_snapshots (9/12)
+      - Authored by a maintainer, reviewed by nobody
+  - 64dd89ae01f2 mm/block/fs: remove laptop_mode
+    - review score: 23
+  - a98ec863fded lib/test_vmalloc.c: minor fixes to test_vmalloc.c
+    - review score: 3
+  - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - review score: 2
+  - 9e80e66ddaf7 mm, hugetlb: implement movable_gigantic_pages sysctl
+    - review score: 1
+  - sereis "selftests/mm: hugetlb cgroup charging: robustness fixes", v3. (3 commits)
+    - 8e46adb62fae selftests/mm/write_to_hugetlbfs: parse -s as size_t (0/3)
+      - Authored by no role player, reviewed by no role player
+    - 1aa1dd9cc595 selftests/mm/charge_reserved_hugetlb: drop mount size for hugetlbfs (1/3)
+      - Authored by no role player, reviewed by no role player
+    - b618876f2e70 selftests/mm/charge_reserved_hugetlb.sh: add waits with timeout helper (2/3)
+      - Authored by no role player, reviewed by no role player
+    - b47beff129c6 selftests/mm: fix va_high_addr_switch.sh return value (None/None)
+      - Authored by no role player, reviewed by no role player
+  - b1f031e33cb5 selftests/mm: allocate 6 hugepages in va_high_addr_switch.sh
+    - review score: 1
+  - 7544d7969d84 selftests/mm: remove arm64 nr_hugepages setup for va_high_addr_switch test
+    - review score: 1
+  - dd0202a0bd81 selftests/mm: va_high_addr_switch return fail when either test failed
+    - review score: 1
+  - 6319c4f44234 selftests/mm: fix comment for check_test_requirements
+    - review score: 1
+    - 4267739cabb8 arch, mm: consolidate initialization of SPARSE memory model (23/29)
+      - Authored by no role player, reviewed by nobody
+  - 0cc3197bdb7f mm/early_ioremap: print the starting physical address in __early_ioremap()
+    - review score: 3
+  - 5fd8391cb719 mm/early_ioremap: clean up the use of WARN() for debugging
+    - review score: 1
+    - 6c08cc64d194 mm: cma: kill cma_pages_valid() (2/6)
+      - Authored by no role player, reviewed by no role player
+    - e0c1326779cc mm: page_alloc: add alloc_contig_frozen_{range,pages}() (3/6)
+      - Authored by no role player, reviewed by a reviewer
+    - 9bda131c6093 mm: cma: add cma_alloc_frozen{_compound}() (4/6)
+      - Authored by no role player, reviewed by no role player
+    - 5022134c1b49 Docs/mm/damon/design: document DAMOS_QUOTA_[IN]ACTIVE_MEM_BP (2/11)
+      - Authored by a maintainer, reviewed by no role player
+    - b36aefb866a1 Docs/admin-guide/mm/damon/lru_sort: document filter_young_pages (6/11)
+      - Authored by a maintainer, reviewed by no role player
+    - cdfca22d15ca Docs/admin-guide/mm/damon/lru_sort: document active_mem_bp parameter (8/11)
+      - Authored by a maintainer, reviewed by no role player
+    - ed581147a417 Docs/admin-guide/mm/damon/lru_sort: document intervals autotuning (10/11)
+      - Authored by a maintainer, reviewed by no role player
+    - 386781df63cb mm: use nodes_and() return value to simplify client code (1/3)
+      - Authored by no role player, reviewed by a reviewer
+    - cd8e95d80bc2 mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION (21/24)
+      - Authored by no role player, reviewed by a reviewer
+    - a45088376d8a mm/vmscan: add tracepoint and reason for kswapd_failures reset (1/2)
+      - Authored by no role player, reviewed by a reviewer
+  - sereis "Replace wq users and add WQ_PERCPU to alloc_workqueue() users", v2. (3 commits)
+    - 0bcbd7cf6596 mm: replace use of system_unbound_wq with system_dfl_wq (0/3)
+      - Authored by no role player, reviewed by no role player
+    - 73b2162126ff mm: replace use of system_wq with system_percpu_wq (1/3)
+      - Authored by no role player, reviewed by no role player
+    - ed0a826ce302 mm: add WQ_PERCPU to alloc_workqueue users (2/3)
+      - Authored by no role player, reviewed by no role player
+  - sereis "Various mm kselftests improvements/fixes", v3. (9 commits)
+    - 4ac76c51709d selftests/mm: default KDIR to build directory (0/9)
+      - Authored by no role player, reviewed by nobody
+    - 1821be740d2e selftests/mm: remove flaky header check (1/9)
+      - Authored by no role player, reviewed by no role player
+    - 7f532d19c8be selftests/mm: pass down full CC and CFLAGS to check_config.sh (2/9)
+      - Authored by no role player, reviewed by no role player
+    - bce1dabd310e selftests/mm: fix usage of FORCE_READ() in cow tests (3/9)
+      - Authored by no role player, reviewed by no role player
+    - 20d3fac43608 selftests/mm: check that FORCE_READ() succeeded (4/9)
+      - Authored by no role player, reviewed by nobody
+    - dd2b4e04c098 selftests/mm: introduce helper to read every page (5/9)
+      - Authored by no role player, reviewed by a reviewer
+    - 7e938f00b003 selftests/mm: fix faulting-in code in pagemap_ioctl test (6/9)
+      - Authored by no role player, reviewed by no role player
+    - 148e5879532f selftests/mm: fix exit code in pagemap_ioctl (7/9)
+      - Authored by no role player, reviewed by no role player
+    - fde8353121aa selftests/mm: report SKIP in pfnmap if a check fails (8/9)
+      - Authored by no role player, reviewed by no role player
+  - dd2c6ec24fca selftests/mm: remove virtual_address_range test
+    - review score: 11
+  - sereis "Docs/mm/damon: update intro, modules, maintainer profile, and misc". (8 commits)
+    - 32d11b320897 Docs/mm/damon/index: simplify the intro (0/8)
+      - Authored by a maintainer, reviewed by nobody
+    - feb6241209b7 Docs/mm/damon/design: link repology instead of Fedora package (1/8)
+      - Authored by a maintainer, reviewed by nobody
+    - 63464f5b8507 Docs/mm/damon/design: document DAMON sample modules (2/8)
+      - Authored by a maintainer, reviewed by nobody
+    - 83cefa8d7e7a Docs/mm/damon/design: add reference to DAMON_STAT usage (3/8)
+      - Authored by a maintainer, reviewed by nobody
+    - e7df7a0bfc90 Docs/admin-guide/mm/damon/usage: introduce DAMON modules at the beginning (4/8)
+      - Authored by a maintainer, reviewed by nobody
+    - 652fd06d20da Docs/admin-guide/mm/damon/usage: update stats update process for refresh_ms (5/8)
+      - Authored by a maintainer, reviewed by nobody
+    - b71e496f815a Docs/mm/damon/maintainer-profile: fix wrong MAITNAINERS section name (6/8)
+      - Authored by a maintainer, reviewed by nobody
+    - 4c8f08d9939e Docs/mm/damon/maintainer-profile: remove damon-tests/perf suggestion (7/8)
+      - Authored by a maintainer, reviewed by nobody
+  - 6ce964c02f1c selftests/mm: have the harness run each test category separately
+    - review score: 2
+mm-unstable: 6 total, 1 (4) series, 2 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 2 commits
+  - no role, maintainer: 1 commits
+  - maintainer, nobody: 3 commits
+  - 23dbffa39aa3 mm/cma: replace snprintf with strscpy in cma_new_area
+    - review score: 3
+  - 72255e0ffb45 mm: add SPDX id lines to some mm source files
+    - review score: 0
+    - c12578ea61d6 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
+      - Authored by no role player, reviewed by nobody
+  - sereis "selftests/mm: add memory failure selftests", v4. (3 commits)
+    - cf2929c618fe selftests/mm: add memory failure anonymous page test (0/3)
+      - Authored by a maintainer, reviewed by nobody
+    - df061aec2425 selftests/mm: add memory failure clean pagecache test (1/3)
+      - Authored by a maintainer, reviewed by nobody
+    - 5813eaaa73be selftests/mm: add memory failure dirty pagecache test (2/3)
+      - Authored by a maintainer, reviewed by nobody
+mm-new: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 1 commits
+  - 1737b521f42f mm/fadvise: validate offset in generic_fadvise
+    - review score: 0
+mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
+- author/reviewer role stat
+  - no role, reviewer: 1 commits
+    - a6f4e5682802 kho: docs: combine concepts and FDT documentation (2/6)
+      - Authored by no role player, reviewed by a reviewer
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat

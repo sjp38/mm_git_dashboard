@@ -1,0 +1,60 @@
+baseline: None -> v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, maintainer: 1 commits
+  - a0f3c0845a4f mm, swap: restore swap_space attr aviod kernel panic
+    - review score: 3
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-stable: 18 total, 1 (16) series, 2 non-series commits
+- author/reviewer role stat
+  - no role, reviewer: 1 commits
+  - no role, maintainer: 1 commits
+  - reviewer, reviewer: 1 commits
+  - maintainer, reviewer: 13 commits
+  - maintainer, maintainer: 2 commits
+  - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - review score: 2
+  - b94c317903ee mm: update kernel-doc for __swap_cache_clear_shadow()
+    - review score: 3
+  - sereis "mm, swap: swap table phase II: unify swapin use", v5. (19 commits)
+    - d7cf0d54f210 mm, swap: rename __read_swap_cache_async to swap_cache_alloc_folio (0/19)
+      - Authored by a maintainer, reviewed by a maintainer
+    - 84eedc747b53 mm, swap: split swap cache preparation loop into a standalone helper (1/19)
+      - Authored by a maintainer, reviewed by a maintainer
+    - f1879e8a0c60 mm, swap: never bypass the swap cache even for SWP_SYNCHRONOUS_IO (2/19)
+      - Authored by a maintainer, reviewed by a reviewer
+    - c246d236b18b mm/shmem: never bypass the swap cache for SWP_SYNCHRONOUS_IO (6/19)
+      - Authored by a maintainer, reviewed by a reviewer
+    - bc617c990eae mm/shmem, swap: remove SWAP_MAP_SHMEM (7/19)
+      - Authored by a reviewer, reviewed by a reviewer
+    - f7ad377a9222 mm, swap: swap entry of a bad slot should not be considered as swapped out (8/19)
+      - Authored by a maintainer, reviewed by a reviewer
+    - cda2504c51eb mm, swap: consolidate cluster reclaim and usability check (9/19)
+      - Authored by a maintainer, reviewed by a reviewer
+    - 78d6a12dd91a mm, swap: split locked entry duplicating into a standalone helper (10/19)
+      - Authored by a maintainer, reviewed by a reviewer
+    - 2732acda82c9 mm, swap: use swap cache as the swap in synchronize layer (11/19)
+      - Authored by a maintainer, reviewed by a reviewer
+    - de85024b3483 mm, swap: remove workaround for unsynchronized swap map cache state (12/19)
+      - Authored by a maintainer, reviewed by a reviewer
+    - 36976159140b mm, swap: cleanup swap entry management workflow (13/19)
+      - Authored by a maintainer, reviewed by a reviewer
+    - 270f095179ff mm, swap: add folio to swap cache directly on allocation (14/19)
+      - Authored by a maintainer, reviewed by a reviewer
+    - 4984d746c80e mm, swap: check swap table directly for checking cache (15/19)
+      - Authored by a maintainer, reviewed by a reviewer
+    - e1c5c6be3ca7 mm, swap: clean up and improve swap entries freeing (16/19)
+      - Authored by a maintainer, reviewed by a reviewer
+    - d3852f9692b8 mm, swap: drop the SWAP_HAS_CACHE flag (17/19)
+      - Authored by a maintainer, reviewed by a reviewer
+    - 50c7f34c5c74 mm, swap: remove no longer needed _swap_info_get (18/19)
+      - Authored by a maintainer, reviewed by a reviewer
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-new: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat

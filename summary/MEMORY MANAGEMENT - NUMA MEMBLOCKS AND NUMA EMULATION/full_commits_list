@@ -1,0 +1,21 @@
+baseline: None -> v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-stable: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, reviewer: 1 commits
+  - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - review score: 2
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-new: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, no role : 1 commits
+  - 89a88e60cc0e mm: numa_memblks: identify the accurate NUMA ID of CFMW
+    - review score: 1
+mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat

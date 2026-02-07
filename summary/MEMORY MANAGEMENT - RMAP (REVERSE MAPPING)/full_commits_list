@@ -1,0 +1,54 @@
+baseline: None -> v6.19-rc6-36-g6c790212c588f
+mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-stable: 10 total, 1 (9) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, maintainer: 1 commits
+  - reviewer, reviewer: 2 commits
+  - maintainer, nobody: 1 commits
+  - maintainer, reviewer: 6 commits
+  - sereis "mm: clean up anon_vma implementation", v3. (9 commits)
+    - 542eda1a8329 mm/rmap: improve anon_vma_clone(), unlink_anon_vmas() comments, add asserts (0/9)
+      - Authored by a maintainer, reviewed by a reviewer
+    - 91901a441fa1 mm/rmap: eliminate partial anon_vma tear-down in anon_vma_fork() (1/9)
+      - Authored by a maintainer, reviewed by nobody
+    - 69e945845585 mm/rmap: skip unfaulted VMAs on anon_vma clone, unlink (2/9)
+      - Authored by a maintainer, reviewed by a reviewer
+    - 535f6b8df17d mm/rmap: remove unnecessary root lock dance in anon_vma clone, unmap (3/9)
+      - Authored by a maintainer, reviewed by a reviewer
+    - 53eb797ffc3a mm/rmap: remove anon_vma_merge() function (4/9)
+      - Authored by a maintainer, reviewed by a reviewer
+    - 7549e3d20f1a mm/rmap: make anon_vma functions internal (5/9)
+      - Authored by a reviewer, reviewed by a reviewer
+    - bfc2b13b05a1 mm/rmap: allocate anon_vma_chain objects unlocked when possible (7/9)
+      - Authored by a maintainer, reviewed by a reviewer
+    - d17f02417a33 mm/rmap: separate out fork-only logic on anon_vma_clone() (8/9)
+      - Authored by a reviewer, reviewed by a reviewer
+  - 832d95b5314e migrate: replace RMP_ flags with TTU_ flags
+    - review score: 3
+    - 36976159140b mm, swap: cleanup swap entry management workflow (13/19)
+      - Authored by a maintainer, reviewed by a reviewer
+mm-unstable: 4 total, 1 (1) series, 3 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 2 commits
+  - no role, reviewer: 2 commits
+  - 72255e0ffb45 mm: add SPDX id lines to some mm source files
+    - review score: 0
+  - sereis "support batch checking of references and unmapping for large folios", v5. (5 commits)
+    - 29e97ca578b2 mm: rmap: support batched checks of the references for large folios (0/5)
+      - Authored by no role player, reviewed by a reviewer
+  - 7e12e01bdeb2 mm: rmap: support batched unmapping for file large folios
+    - review score: 2
+  - 972589fc11eb mm: rmap: skip batched unmapping for UFFD vmas
+    - review score: 0
+mm-new: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, no role : 1 commits
+  - e35277d481b5 mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared thp
+    - review score: 1
+mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- author/reviewer role stat
