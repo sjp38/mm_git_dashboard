@@ -7,7 +7,7 @@ mm-new: 2 total, 1 (2) series, 0 non-series commits
 - author/reviewer role stat
   - no role, nobody: 2 commits
 - full commits list
-  - sereis "KSM: Optimizations for rmap_walk_ksm". (2 commits)
+  - series "KSM: Optimizations for rmap_walk_ksm". (2 commits)
     - 8ac4804f5268 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
       - Authored by no role player, reviewed by nobody
     - 5cc2fea51f42 ksm: optimize rmap_walk_ksm by passing a suitable addressrange (1/2)

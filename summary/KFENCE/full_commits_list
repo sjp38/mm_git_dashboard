@@ -13,7 +13,7 @@ mm-stable: 1 total, 1 (1) series, 0 non-series commits
 - author/reviewer role stat
   - no role, no role : 1 commits
 - full commits list
-  - sereis "Replace wq users and add WQ_PERCPU to alloc_workqueue() users", v2. (3 commits)
+  - series "Replace wq users and add WQ_PERCPU to alloc_workqueue() users", v2. (3 commits)
     - 0bcbd7cf6596 mm: replace use of system_unbound_wq with system_dfl_wq (0/3)
       - Authored by no role player, reviewed by no role player
 mm-unstable: 0 total, 0 (0) series, 0 non-series commits

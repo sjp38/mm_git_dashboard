@@ -8,7 +8,7 @@ mm-stable: 10 total, 1 (9) series, 1 non-series commits
   - maintainer, nobody: 1 commits
   - maintainer, reviewer: 6 commits
 - full commits list
-  - sereis "mm: clean up anon_vma implementation", v3. (9 commits)
+  - series "mm: clean up anon_vma implementation", v3. (9 commits)
     - 542eda1a8329 mm/rmap: improve anon_vma_clone(), unlink_anon_vmas() comments, add asserts (0/9)
       - Authored by a maintainer, reviewed by a reviewer
     - 91901a441fa1 mm/rmap: eliminate partial anon_vma tear-down in anon_vma_fork() (1/9)
@@ -36,7 +36,7 @@ mm-unstable: 4 total, 1 (1) series, 3 non-series commits
 - full commits list
   - 72255e0ffb45 mm: add SPDX id lines to some mm source files
     - Authored by no role player, reviewed by nobody
-  - sereis "support batch checking of references and unmapping for large folios", v5. (5 commits)
+  - series "support batch checking of references and unmapping for large folios", v5. (5 commits)
     - 29e97ca578b2 mm: rmap: support batched checks of the references for large folios (0/5)
       - Authored by no role player, reviewed by a reviewer
   - 7e12e01bdeb2 mm: rmap: support batched unmapping for file large folios

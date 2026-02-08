@@ -10,7 +10,7 @@ mm-stable: 4 total, 1 (2) series, 2 non-series commits
     - Authored by a maintainer, reviewed by a maintainer
   - 0be909f114c4 zsmalloc: use actual object size to detect spans
     - Authored by a maintainer, reviewed by a maintainer
-  - sereis "mm, swap: swap table phase II: unify swapin use", v5. (19 commits)
+  - series "mm, swap: swap table phase II: unify swapin use", v5. (19 commits)
     - d7cf0d54f210 mm, swap: rename __read_swap_cache_async to swap_cache_alloc_folio (0/19)
       - Authored by a maintainer, reviewed by a maintainer
     - de85024b3483 mm, swap: remove workaround for unsynchronized swap map cache state (12/19)

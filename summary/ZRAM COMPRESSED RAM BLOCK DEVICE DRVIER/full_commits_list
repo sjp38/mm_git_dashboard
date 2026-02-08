@@ -9,7 +9,7 @@ mm-stable: 15 total, 1 (7) series, 8 non-series commits
   - maintainer, no role : 1 commits
   - maintainer, maintainer: 1 commits
 - full commits list
-  - sereis "zram: introduce compressed data writeback", v2. (7 commits)
+  - series "zram: introduce compressed data writeback", v2. (7 commits)
     - d38fab605c66 zram: introduce compressed data writeback (0/7)
       - Authored by no role player, reviewed by nobody
     - 4c1d61389e8e zram: introduce writeback_compressed device attribute (1/7)

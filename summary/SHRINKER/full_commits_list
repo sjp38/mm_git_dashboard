@@ -8,7 +8,7 @@ mm-stable: 5 total, 1 (4) series, 1 non-series commits
 - full commits list
   - 16cc8b9396f6 mm: memcontrol: rename mem_cgroup_from_slab_obj()
     - Authored by a maintainer, reviewed by a maintainer
-  - sereis "memcg: separate private and public ID namespaces". (8 commits)
+  - series "memcg: separate private and public ID namespaces". (8 commits)
     - e77786b4682e memcg: introduce private id API for in-kernel users (0/8)
       - Authored by a maintainer, reviewed by no role player
     - 510e12900298 memcg: mem_cgroup_get_from_ino() returns NULL on error (2/8)

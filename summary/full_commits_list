@@ -22,7 +22,7 @@ mm-hotfixes-stable: 23 total, 2 (5) series, 18 non-series commits
     - Authored by no role player, reviewed by no role player
   - dd9e2f5b38f1 flex_proportions: make fprop_new_period() hardirq safe
     - Authored by no role player, reviewed by no role player
-  - sereis "mm: memfd_luo hotfixes". (3 commits)
+  - series "mm: memfd_luo hotfixes". (3 commits)
     - 71e2b5eadbad memfd: export alloc_file() (0/3)
       - Authored by no role player, reviewed by no role player
     - 02e117b8ca58 mm: memfd_luo: use memfd_alloc_file() instead of shmem_file_setup() (1/3)
@@ -43,7 +43,7 @@ mm-hotfixes-stable: 23 total, 2 (5) series, 18 non-series commits
     - Authored by no role player, reviewed by no role player
   - 16459fe7e0ca x86/kfence: fix booting on 32bit non-PAE systems
     - Authored by no role player, reviewed by nobody
-  - sereis "liveupdate: fixes in error handling". (2 commits)
+  - series "liveupdate: fixes in error handling". (2 commits)
     - 011d4e52a76c liveupdate: luo_file: do not clear serialized_data on unfreeze (0/2)
       - Authored by no role player, reviewed by no role player
     - f1675db3c7f1 mailmap: update Alexander Mikhalitsyn's emails (1/2)
@@ -81,7 +81,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by a maintainer
   - 2a912d440c60 alloc_tag: move memory_allocation_profiling_sysctls into .rodata
     - Authored by no role player, reviewed by a maintainer
-  - sereis "Nesting support for lazy MMU mode", v6. (14 commits)
+  - series "Nesting support for lazy MMU mode", v6. (14 commits)
     - 58852f24f956 powerpc/64s: do not re-activate batched TLB flush (0/14)
       - Authored by no role player, reviewed by no role player
     - 66bdd779d344 x86/xen: simplify flush_lazy_mmu() (1/14)
@@ -114,7 +114,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by a reviewer
   - 7adc97bc9394 mm/vmscan.c:shrink_folio_list(): save a tabstop
     - Authored by a maintainer, reviewed by nobody
-  - sereis "zram: introduce compressed data writeback", v2. (7 commits)
+  - series "zram: introduce compressed data writeback", v2. (7 commits)
     - d38fab605c66 zram: introduce compressed data writeback (0/7)
       - Authored by no role player, reviewed by nobody
     - 4c1d61389e8e zram: introduce writeback_compressed device attribute (1/7)
@@ -137,7 +137,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by a maintainer, reviewed by nobody
   - 8b05d2d8af81 zram: fixup read_block_state()
     - Authored by a maintainer, reviewed by nobody
-  - sereis "mm: folio_zero_user: clear page ranges", v11. (8 commits)
+  - series "mm: folio_zero_user: clear page ranges", v11. (8 commits)
     - 8e38607aa4aa treewide: provide a generic clear_user_page() variant (0/8)
       - Authored by no role player, reviewed by nobody
     - 62a9f5a85b98 mm: introduce clear_pages() and clear_user_pages() (1/8)
@@ -158,7 +158,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by a maintainer
   - 85aa39197420 mm: zswap: delete unused acomp->is_sleepable
     - Authored by a maintainer, reviewed by a maintainer
-  - sereis "memcg cleanups", v3. (2 commits)
+  - series "memcg cleanups", v3. (2 commits)
     - 558605a530e0 memcg: move mem_cgroup_usage memcontrol-v1.c (0/2)
       - Authored by no role player, reviewed by a maintainer
     - 055059ed720e memcg: remove mem_cgroup_size() (1/2)
@@ -171,7 +171,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by a maintainer
   - 8b8017d7c411 tools/mm/slabinfo: fix --partial long option mapping
     - Authored by no role player, reviewed by no role player
-  - sereis "mm/damon: introduce {,max_}nr_snapshots and tracepoint for damos stats". (12 commits)
+  - series "mm/damon: introduce {,max_}nr_snapshots and tracepoint for damos stats". (12 commits)
     - 4a6ceb7c9744 mm/damon/core: introduce nr_snapshots damos stat (0/12)
       - Authored by a maintainer, reviewed by nobody
     - 83a741b97425 mm/damon/sysfs-schemes: introduce nr_snapshots damos stat file (1/12)
@@ -228,7 +228,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by no role player
   - 3bb64898f003 page_alloc: allow migration of smaller hugepages during contig_alloc
     - Authored by no role player, reviewed by a reviewer
-  - sereis "selftests/mm: hugetlb cgroup charging: robustness fixes", v3. (3 commits)
+  - series "selftests/mm: hugetlb cgroup charging: robustness fixes", v3. (3 commits)
     - 8e46adb62fae selftests/mm/write_to_hugetlbfs: parse -s as size_t (0/3)
       - Authored by no role player, reviewed by no role player
     - 1aa1dd9cc595 selftests/mm/charge_reserved_hugetlb: drop mount size for hugetlbfs (1/3)
@@ -247,7 +247,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by no role player
   - a8d933dc3354 mm/vmstat: remove unused node and zone state helpers
     - Authored by no role player, reviewed by a reviewer
-  - sereis "mm/damon/tests/core-kunit: extend existing test scenarios", v2. (5 commits)
+  - series "mm/damon/tests/core-kunit: extend existing test scenarios", v2. (5 commits)
     - 6c59085fc094 mm/damon/tests/core-kunit: verify the 'age' field in damon_test_split_at() (0/5)
       - Authored by no role player, reviewed by a maintainer
     - 738dae96b2fb mm/damon/tests/core-kunit: verify the 'age' and 'nr_accesses_bp' fields in damon_test_merge_two() (1/5)
@@ -262,12 +262,12 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by a maintainer
   - f9b74c13b773 mm/mmu_gather: remove @delay_remap of __tlb_remove_page_size()
     - Authored by no role player, reviewed by a maintainer
-  - sereis "mm/khugepaged: fix dirty page handling for MADV_COLLAPSE", v5. (2 commits)
+  - series "mm/khugepaged: fix dirty page handling for MADV_COLLAPSE", v5. (2 commits)
     - 5173ae0a068d mm/khugepaged: map dirty/writeback pages failures to EAGAIN (0/2)
       - Authored by no role player, reviewed by a reviewer
     - 398556570e32 mm/khugepaged: retry with sync writeback for MADV_COLLAPSE (1/2)
       - Authored by no role player, reviewed by a reviewer
-  - sereis "arch, mm: consolidate hugetlb early reservation", v3. (29 commits)
+  - series "arch, mm: consolidate hugetlb early reservation", v3. (29 commits)
     - ba1c86874e25 alpha: introduce arch_zone_limits_init() (0/29)
       - Authored by no role player, reviewed by a maintainer
     - 7988e8518904 arc: introduce arch_zone_limits_init() (1/29)
@@ -328,7 +328,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
       - Authored by no role player, reviewed by a maintainer
   - 0bec75167d9c memcg-v1: remove folio_memcg_lock() doc reference
     - Authored by no role player, reviewed by no role player
-  - sereis "mm: clean up anon_vma implementation", v3. (9 commits)
+  - series "mm: clean up anon_vma implementation", v3. (9 commits)
     - 542eda1a8329 mm/rmap: improve anon_vma_clone(), unlink_anon_vmas() comments, add asserts (0/9)
       - Authored by a maintainer, reviewed by a reviewer
     - 91901a441fa1 mm/rmap: eliminate partial anon_vma tear-down in anon_vma_fork() (1/9)
@@ -347,14 +347,14 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
       - Authored by a maintainer, reviewed by a reviewer
     - d17f02417a33 mm/rmap: separate out fork-only logic on anon_vma_clone() (8/9)
       - Authored by a reviewer, reviewed by a reviewer
-  - sereis "tweaks for __alloc_pages_slowpath()", v3. (3 commits)
+  - series "tweaks for __alloc_pages_slowpath()", v3. (3 commits)
     - 669872181549 mm/page_alloc: ignore the exact initial compaction result (0/3)
       - Authored by a maintainer, reviewed by a reviewer
     - 53a9b4646f67 mm/page_alloc: refactor the initial compaction handling (1/3)
       - Authored by a reviewer, reviewed by a reviewer
     - 2c4c3e29897d mm/page_alloc: simplify __alloc_pages_slowpath() flow (2/3)
       - Authored by a maintainer, reviewed by a reviewer
-  - sereis "memcg: separate private and public ID namespaces". (8 commits)
+  - series "memcg: separate private and public ID namespaces". (8 commits)
     - e77786b4682e memcg: introduce private id API for in-kernel users (0/8)
       - Authored by a maintainer, reviewed by no role player
     - 1d89d7fd592e memcg: expose mem_cgroup_ino() and mem_cgroup_get_from_ino() unconditionally (1/8)
@@ -383,7 +383,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by no role player
   - 5747435e0fd4 mm/vmalloc: prevent RCU stalls in kasan_release_vmalloc_node
     - Authored by no role player, reviewed by no role player
-  - sereis "mm: hugetlb: allocate frozen gigantic folio", v6. (6 commits)
+  - series "mm: hugetlb: allocate frozen gigantic folio", v6. (6 commits)
     - 01152bd2e44d mm: debug_vm_pgtable: add debug_vm_pgtable_free_huge_page() (0/6)
       - Authored by no role player, reviewed by a reviewer
     - a9deb800b89e mm: page_alloc: add __split_page() (1/6)
@@ -400,7 +400,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by no role player
   - b19cb086043d mm/kasan/kunit: extend vmalloc OOB tests to cover vrealloc()
     - Authored by a maintainer, reviewed by a reviewer
-  - sereis "mm/damon: advance DAMOS-based LRU sorting". (11 commits)
+  - series "mm/damon: advance DAMOS-based LRU sorting". (11 commits)
     - 4835e2871321 mm/damon/core: introduce [in]active memory ratio damos quota goal metric (0/11)
       - Authored by a maintainer, reviewed by nobody
     - fbec8a1e4fa4 mm/damon/sysfs-schemes: support DAMOS_QUOTA_[IN]ACTIVE_MEM_BP (1/11)
@@ -433,7 +433,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by a reviewer
   - 832d95b5314e migrate: replace RMP_ flags with TTU_ flags
     - Authored by no role player, reviewed by a maintainer
-  - sereis "Support page table check on PowerPC", v18. (18 commits)
+  - series "Support page table check on PowerPC", v18. (18 commits)
     - 9ac4941aceb0 arm64/mm: add addr parameter to __set_ptes_anysz() (0/18)
       - Authored by no role player, reviewed by no role player
     - ee329c29fde8 arm64/mm: add addr parameter to __ptep_get_and_clear_anysz() (1/18)
@@ -458,14 +458,14 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
       - Authored by no role player, reviewed by a maintainer
     - 641d47d4c963 powerpc/mm: support page table check (11/18)
       - Authored by no role player, reviewed by a maintainer
-  - sereis "nodemask: align nodes_and{,not} with underlying bitmap ops". (3 commits)
+  - series "nodemask: align nodes_and{,not} with underlying bitmap ops". (3 commits)
     - cbc064e708b6 nodemask: propagate boolean for nodes_and{,not} (0/3)
       - Authored by no role player, reviewed by no role player
     - 386781df63cb mm: use nodes_and() return value to simplify client code (1/3)
       - Authored by no role player, reviewed by a reviewer
     - 291487b753b1 cgroup: use nodes_and() output where appropriate (2/3)
       - Authored by no role player, reviewed by a maintainer
-  - sereis "mm/damon: hide kdamond and kdamond_lock from API callers". (5 commits)
+  - series "mm/damon: hide kdamond and kdamond_lock from API callers". (5 commits)
     - 4262c5323697 mm/damon/core: implement damon_kdamond_pid() (0/5)
       - Authored by a maintainer, reviewed by nobody
     - f54b51ce3197 mm/damon/sysfs: use damon_kdamond_pid() (1/5)
@@ -476,7 +476,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
       - Authored by a maintainer, reviewed by nobody
     - 6fe0e6d599a6 mm/damon: hide kdamond and kdamond_lock of damon_ctx (4/5)
       - Authored by a maintainer, reviewed by nobody
-  - sereis "mm/khugepaged: cleanups and scan limit fix", v3. (4 commits)
+  - series "mm/khugepaged: cleanups and scan limit fix", v3. (4 commits)
     - 7832e4d583ee mm/khugepaged: remove unnecessary goto 'skip' label (0/4)
       - Authored by no role player, reviewed by a reviewer
     - 3ab981c1fca0 mm/khugepaged: change collapse_pte_mapped_thp() to return void (1/4)
@@ -485,7 +485,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
       - Authored by no role player, reviewed by a reviewer
     - 9c284c91b08e mm/khugepaged: make khugepaged_collapse_control static (3/4)
       - Authored by no role player, reviewed by a reviewer
-  - sereis "mm: balloon infrastructure cleanups", v3. (24 commits)
+  - series "mm: balloon infrastructure cleanups", v3. (24 commits)
     - 6e31add91a10 vmw_balloon: adjust BALLOON_DEFLATE when deflating while migrating (0/24)
       - Authored by no role player, reviewed by no role player
     - d2346b09c515 vmw_balloon: remove vmballoon_compaction_init() (1/24)
@@ -542,7 +542,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by a maintainer
   - 5898aa8f9a0b mm: fix OOM killer inaccuracy on large many-core systems
     - Authored by no role player, reviewed by a reviewer
-  - sereis "mm/vmscan: add tracepoint and reason for kswapd_failures reset", v4. (2 commits)
+  - series "mm/vmscan: add tracepoint and reason for kswapd_failures reset", v4. (2 commits)
     - dc9fe9b7056a mm/vmscan: mitigate spurious kswapd_failures reset from direct reclaim (0/2)
       - Authored by no role player, reviewed by a reviewer
     - a45088376d8a mm/vmscan: add tracepoint and reason for kswapd_failures reset (1/2)
@@ -553,7 +553,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by no role player
   - 824b8c96c421 mm/hugetlb: enforce brace style
     - Authored by no role player, reviewed by no role player
-  - sereis "Replace wq users and add WQ_PERCPU to alloc_workqueue() users", v2. (3 commits)
+  - series "Replace wq users and add WQ_PERCPU to alloc_workqueue() users", v2. (3 commits)
     - 0bcbd7cf6596 mm: replace use of system_unbound_wq with system_dfl_wq (0/3)
       - Authored by no role player, reviewed by no role player
     - 73b2162126ff mm: replace use of system_wq with system_percpu_wq (1/3)
@@ -562,7 +562,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
       - Authored by no role player, reviewed by no role player
   - 3a64d5b82ecc sparc/mm: export symbols for lazy_mmu_mode KUnit tests
     - Authored by no role player, reviewed by a maintainer
-  - sereis "Various mm kselftests improvements/fixes", v3. (9 commits)
+  - series "Various mm kselftests improvements/fixes", v3. (9 commits)
     - 4ac76c51709d selftests/mm: default KDIR to build directory (0/9)
       - Authored by no role player, reviewed by nobody
     - 1821be740d2e selftests/mm: remove flaky header check (1/9)
@@ -581,7 +581,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
       - Authored by no role player, reviewed by no role player
     - fde8353121aa selftests/mm: report SKIP in pfnmap if a check fails (8/9)
       - Authored by no role player, reviewed by no role player
-  - sereis "mm: accelerate gigantic folio allocation". (5 commits)
+  - series "mm: accelerate gigantic folio allocation". (5 commits)
     - c83109e95c9d mm: page_isolation: introduce page_is_unmovable() (0/5)
       - Authored by no role player, reviewed by a reviewer
     - 9a8e0c31b312 mm: page_alloc: optimize pfn_range_valid_contig() (1/5)
@@ -594,7 +594,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
       - Authored by no role player, reviewed by a maintainer
   - dd2c6ec24fca selftests/mm: remove virtual_address_range test
     - Authored by a reviewer, reviewed by no role player
-  - sereis "selftests/damon: improve leak detection and wss estimation reliability". (5 commits)
+  - series "selftests/damon: improve leak detection and wss estimation reliability". (5 commits)
     - 94a62284ede0 selftests/damon/sysfs_memcg_path_leak.sh: use kmemleak (0/5)
       - Authored by a maintainer, reviewed by nobody
     - 891d206e27dc selftests/damon/wss_estimation: test for up to 160 MiB working set size (1/5)
@@ -605,7 +605,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
       - Authored by a maintainer, reviewed by nobody
     - 6f06f86a6f21 selftests/damon/wss_estimation: deduplicate failed samples output (4/5)
       - Authored by a maintainer, reviewed by nobody
-  - sereis "mm/damon: cleanup kdamond, damon_call(), damos filter and DAMON_MIN_REGION". (8 commits)
+  - series "mm/damon: cleanup kdamond, damon_call(), damos filter and DAMON_MIN_REGION". (8 commits)
     - 50962b16c0d6 mm/damon: remove damon_operations->cleanup() (0/8)
       - Authored by a maintainer, reviewed by nobody
     - 1736047a4e96 mm/damon/core: cleanup targets and regions at once on kdamond termination (1/8)
@@ -624,7 +624,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
       - Authored by a maintainer, reviewed by nobody
   - b94c317903ee mm: update kernel-doc for __swap_cache_clear_shadow()
     - Authored by no role player, reviewed by a maintainer
-  - sereis "Docs/mm/damon: update intro, modules, maintainer profile, and misc". (8 commits)
+  - series "Docs/mm/damon: update intro, modules, maintainer profile, and misc". (8 commits)
     - 32d11b320897 Docs/mm/damon/index: simplify the intro (0/8)
       - Authored by a maintainer, reviewed by nobody
     - feb6241209b7 Docs/mm/damon/design: link repology instead of Fedora package (1/8)
@@ -641,7 +641,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
       - Authored by a maintainer, reviewed by nobody
     - 4c8f08d9939e Docs/mm/damon/maintainer-profile: remove damon-tests/perf suggestion (7/8)
       - Authored by a maintainer, reviewed by nobody
-  - sereis "mm: add and use vma_assert_stabilised() helper", v4. (10 commits)
+  - series "mm: add and use vma_assert_stabilised() helper", v4. (10 commits)
     - 25faccd69977 mm/vma: rename VMA_LOCK_OFFSET to VM_REFCNT_EXCLUDE_READERS_FLAG (0/10)
       - Authored by a maintainer, reviewed by a maintainer
     - ef4c0cea1e15 mm/vma: document possible vma->vm_refcnt values and reference comment (1/10)
@@ -672,7 +672,7 @@ mm-stable: 304 total, 29 (237) series, 67 non-series commits
     - Authored by no role player, reviewed by nobody
   - 6ce964c02f1c selftests/mm: have the harness run each test category separately
     - Authored by no role player, reviewed by a reviewer
-  - sereis "mm, swap: swap table phase II: unify swapin use", v5. (19 commits)
+  - series "mm, swap: swap table phase II: unify swapin use", v5. (19 commits)
     - d7cf0d54f210 mm, swap: rename __read_swap_cache_async to swap_cache_alloc_folio (0/19)
       - Authored by a maintainer, reviewed by a maintainer
     - 84eedc747b53 mm, swap: split swap cache preparation loop into a standalone helper (1/19)
@@ -746,7 +746,7 @@ mm-unstable: 61 total, 6 (42) series, 19 non-series commits
     - Authored by a maintainer, reviewed by no role player
   - f25b6ab9f7f0 mm/damon/stat: remove __read_mostly from memory_idle_ms_percentiles
     - Authored by no role player, reviewed by a maintainer
-  - sereis "enable PT_RECLAIM on more 64-bit architectures", v4. (8 commits)
+  - series "enable PT_RECLAIM on more 64-bit architectures", v4. (8 commits)
     - ebd47c21ef0d mm: change mm/pt_reclaim.c to use asm/tlb.h instead of asm-generic/tlb.h (0/8)
       - Authored by no role player, reviewed by no role player
     - 8e5938f8a7db alpha: mm: enable MMU_GATHER_RCU_TABLE_FREE (1/8)
@@ -769,7 +769,7 @@ mm-unstable: 61 total, 6 (42) series, 19 non-series commits
     - Authored by no role player, reviewed by no role player
   - 1ab83fb651c0 mm: folio_zero_user: open code range computation in folio_zero_user()
     - Authored by no role player, reviewed by nobody
-  - sereis " Remove XA_ZERO from error recovery of dup_mmap()", v3. (11 commits)
+  - series " Remove XA_ZERO from error recovery of dup_mmap()", v3. (11 commits)
     - a925f95fa951 mm: relocate the page table ceiling and floor definitions (0/11)
       - Authored by a reviewer, reviewed by nobody
     - 76a01d4a7daa mm/mmap: move exit_mmap() trace point (1/11)
@@ -792,12 +792,12 @@ mm-unstable: 61 total, 6 (42) series, 19 non-series commits
       - Authored by a maintainer, reviewed by nobody
     - 65af55a34094 mm: use unmap_desc struct for freeing page tables (10/11)
       - Authored by a reviewer, reviewed by a reviewer
-  - sereis "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
+  - series "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
     - b30652512f16 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
       - Authored by no role player, reviewed by a maintainer
     - c12578ea61d6 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
       - Authored by no role player, reviewed by nobody
-  - sereis "mm: add bitmap VMA flag helpers and convert all mmap_prepare to use them", v2. (13 commits)
+  - series "mm: add bitmap VMA flag helpers and convert all mmap_prepare to use them", v2. (13 commits)
     - 7774c56f7f2f mm/vma: remove __private sparse decoration from vma_flags_t (0/13)
       - Authored by a reviewer, reviewed by nobody
     - 8f9b31641c92 mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
@@ -830,7 +830,7 @@ mm-unstable: 61 total, 6 (42) series, 19 non-series commits
     - Authored by a maintainer, reviewed by nobody
   - 7b06a77aa04a tools/testing/vma: add VMA userland tests for VMA flag functions
     - Authored by a maintainer, reviewed by nobody
-  - sereis "support batch checking of references and unmapping for large folios", v5. (5 commits)
+  - series "support batch checking of references and unmapping for large folios", v5. (5 commits)
     - 29e97ca578b2 mm: rmap: support batched checks of the references for large folios (0/5)
       - Authored by no role player, reviewed by a reviewer
     - 77df95a90583 arm64: mm: factor out the address and ptep alignment into a new helper (1/5)
@@ -845,7 +845,7 @@ mm-unstable: 61 total, 6 (42) series, 19 non-series commits
     - Authored by no role player, reviewed by a reviewer
   - 972589fc11eb mm: rmap: skip batched unmapping for UFFD vmas
     - Authored by no role player, reviewed by nobody
-  - sereis "selftests/mm: add memory failure selftests", v4. (3 commits)
+  - series "selftests/mm: add memory failure selftests", v4. (3 commits)
     - cf2929c618fe selftests/mm: add memory failure anonymous page test (0/3)
       - Authored by a maintainer, reviewed by nobody
     - df061aec2425 selftests/mm: add memory failure clean pagecache test (1/3)
@@ -861,12 +861,12 @@ mm-new: 46 total, 3 (34) series, 12 non-series commits
   - reviewer, nobody: 1 commits
   - maintainer, nobody: 33 commits
 - full commits list
-  - sereis "KSM: Optimizations for rmap_walk_ksm". (2 commits)
+  - series "KSM: Optimizations for rmap_walk_ksm". (2 commits)
     - 8ac4804f5268 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
       - Authored by no role player, reviewed by nobody
     - 5cc2fea51f42 ksm: optimize rmap_walk_ksm by passing a suitable addressrange (1/2)
       - Authored by no role player, reviewed by nobody
-  - sereis "maple_tree: Replace big node with maple copy", v3. (30 commits)
+  - series "maple_tree: Replace big node with maple copy", v3. (30 commits)
     - 9335b9e95cbb maple_tree: fix mas_dup_alloc() sparse warning (0/30)
       - Authored by a maintainer, reviewed by nobody
     - f0a65ccda8a3 maple_tree: move mas_spanning_rebalance loop to function (1/30)
@@ -935,7 +935,7 @@ mm-new: 46 total, 3 (34) series, 12 non-series commits
     - Authored by a maintainer, reviewed by nobody
   - f138bda35361 maple_tree: update mas_next[_range] docs
     - Authored by a reviewer, reviewed by nobody
-  - sereis "mm: memfd_luo: preserve file seals". (2 commits)
+  - series "mm: memfd_luo: preserve file seals". (2 commits)
     - db3ae1dfd359 memfd: export memfd_{add,get}_seals() (0/2)
       - Authored by no role player, reviewed by no role player
     - ec4967c2db14 mm: memfd_luo: preserve file seals (1/2)
@@ -972,7 +972,7 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - Authored by no role player, reviewed by nobody
   - b11052be3ea7 crash_dump: constify struct configfs_item_operations and configfs_group_operations
     - Authored by no role player, reviewed by no role player
-  - sereis "ocfs2: give ocfs2 the ability to reclaim suballocator free bg", v6. (2 commits)
+  - series "ocfs2: give ocfs2 the ability to reclaim suballocator free bg", v6. (2 commits)
     - 4a54331616b3 ocfs2: give ocfs2 the ability to reclaim suballocator free bg (0/2)
       - Authored by no role player, reviewed by a maintainer
     - fd4d53bde912 ocfs2: detect released suballocator BG for fh_to_[dentry|parent] (1/2)
@@ -995,7 +995,7 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - Authored by no role player, reviewed by a maintainer
   - 24c776355f40 kernel.h: drop hex.h and update all hex.h users
     - Authored by no role player, reviewed by no role player
-  - sereis "Add ARRAY_END(), and use it to fix off-by-one bugs", v6. (4 commits)
+  - series "Add ARRAY_END(), and use it to fix off-by-one bugs", v6. (4 commits)
     - 436debc9cad8 array_size.h: add ARRAY_END() (0/4)
       - Authored by no role player, reviewed by nobody
     - 8118f197b7b7 mm: fix benign off-by-one bugs (1/4)
@@ -1004,7 +1004,7 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
       - Authored by no role player, reviewed by nobody
     - 61e9210e2392 mm: use ARRAY_END() instead of open-coding it (3/4)
       - Authored by no role player, reviewed by nobody
-  - sereis "vmcoreinfo: support VMCOREINFO_BYTES larger than PAGE_SIZE". (2 commits)
+  - series "vmcoreinfo: support VMCOREINFO_BYTES larger than PAGE_SIZE". (2 commits)
     - 76103d1b268e kernel: vmcoreinfo: allocate vmcoreinfo_data based on VMCOREINFO_BYTES (0/2)
       - Authored by no role player, reviewed by no role player
     - b5bfcc1ffe51 kernel/crash: handle multi-page vmcoreinfo in crash kernel copy (1/2)
@@ -1015,7 +1015,7 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - Authored by no role player, reviewed by a maintainer
   - 7c5b0f6a9ff5 .editorconfig: respect .editorconfig settings from parent directories
     - Authored by no role player, reviewed by nobody
-  - sereis "kallsyms: Prevent invalid access when showing module buildid", v3. (7 commits)
+  - series "kallsyms: Prevent invalid access when showing module buildid", v3. (7 commits)
     - 426295ef18c5 kallsyms: clean up @namebuf initialization in kallsyms_lookup_buildid() (0/7)
       - Authored by no role player, reviewed by no role player
     - fda024fb6476 kallsyms: clean up modname and modbuildid initialization in kallsyms_lookup_buildid() (1/7)
@@ -1048,7 +1048,7 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - Authored by a maintainer, reviewed by a reviewer
   - e896c44aecfb types: drop definition of __EXPORTED_HEADERS__
     - Authored by no role player, reviewed by nobody
-  - sereis "Address page fault in ima_restore_measurement_list()", v3. (3 commits)
+  - series "Address page fault in ima_restore_measurement_list()", v3. (3 commits)
     - 10d1c75ed438 ima: verify the previous kernel's IMA buffer lies in addressable RAM (0/3)
       - Authored by no role player, reviewed by a maintainer
     - 4d02233235ed of/kexec: refactor ima_get_kexec_buffer() to use ima_validate_range() (1/3)
@@ -1057,7 +1057,7 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
       - Authored by no role player, reviewed by no role player
   - 77983f611fa6 ocfs2: adjust function name reference
     - Authored by no role player, reviewed by a maintainer
-  - sereis "kho: ABI headers and Documentation updates". (6 commits)
+  - series "kho: ABI headers and Documentation updates". (6 commits)
     - a7e53bfb4366 kho/abi: luo: make generated documentation more coherent (0/6)
       - Authored by no role player, reviewed by a reviewer
     - 32cb2729c956 kho/abi: memfd: make generated documentation more coherent (1/6)
@@ -1096,7 +1096,7 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - Authored by no role player, reviewed by nobody
   - 499f86de4f8c init/main: read bootconfig header with get_unaligned_le32()
     - Authored by no role player, reviewed by nobody
-  - sereis "Align atomic storage", v7. (4 commits)
+  - series "Align atomic storage", v7. (4 commits)
     - 3bb83c910971 bpf: explicitly align bpf_res_spin_lock (0/4)
       - Authored by no role player, reviewed by a maintainer
     - e428b013d9df atomic: specify alignment for atomic_t and atomic64_t (1/4)
@@ -1113,14 +1113,14 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - Authored by no role player, reviewed by no role player
   - 931d5c36c736 checkpatch: add an invalid patch separator test
     - Authored by a maintainer, reviewed by nobody
-  - sereis "kho: clean up page initialization logic", v2. (2 commits)
+  - series "kho: clean up page initialization logic", v2. (2 commits)
     - 840fe43d371f kho: use unsigned long for nr_pages (0/2)
       - Authored by a reviewer, reviewed by a maintainer
     - 8f1081892d62 kho: simplify page initialization in kho_restore_page() (1/2)
       - Authored by a reviewer, reviewed by a maintainer
   - e8d899d30134 compiler-clang.h: require LLVM 19.1.0 or higher for __typeof_unqual__
     - Authored by a maintainer, reviewed by nobody
-  - sereis "Unload linux/kernel.h", v5. (6 commits)
+  - series "Unload linux/kernel.h", v5. (6 commits)
     - f2e0abdc88ce kernel.h: drop STACK_MAGIC macro (0/6)
       - Authored by no role player, reviewed by no role player
     - 25b66674b103 moduleparam: include required headers explicitly (1/6)
@@ -1153,7 +1153,7 @@ mm-nonmm-stable: 96 total, 10 (43) series, 53 non-series commits
     - Authored by no role player, reviewed by nobody
   - 427b2535f513 kho: skip memoryless NUMA nodes when reserving scratch areas
     - Authored by no role player, reviewed by a maintainer
-  - sereis "don't abuse task_struct.group_leader", v2. (7 commits)
+  - series "don't abuse task_struct.group_leader", v2. (7 commits)
     - 33caa19f4b31 android/binder: don't abuse current->group_leader (0/7)
       - Authored by no role player, reviewed by a maintainer
     - a170919d1b67 android/binder: use same_thread_group(proc->tsk, current) in binder_mmap() (1/7)
@@ -1180,7 +1180,7 @@ mm-nonmm-unstable: 17 total, 1 (5) series, 12 non-series commits
 - full commits list
   - d268088d0794 delayacct: fix uapi timespec64 definition
     - Authored by no role player, reviewed by nobody
-  - sereis "list private v2 & luo flb", v9. (5 commits)
+  - series "list private v2 & luo flb", v9. (5 commits)
     - c8c062bfb8e6 list: add primitives for private list manipulations (0/5)
       - Authored by no role player, reviewed by nobody
     - 9a15c1bb763a list: add kunit test for private list primitives (1/5)

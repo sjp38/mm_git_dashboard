@@ -26,7 +26,7 @@ mm-unstable: 20 total, 1 (17) series, 3 non-series commits
   - maintainer, nobody: 7 commits
   - maintainer, maintainer: 5 commits
 - full commits list
-  - sereis " Remove XA_ZERO from error recovery of dup_mmap()", v3. (11 commits)
+  - series " Remove XA_ZERO from error recovery of dup_mmap()", v3. (11 commits)
     - a925f95fa951 mm: relocate the page table ceiling and floor definitions (0/11)
       - Authored by a reviewer, reviewed by nobody
     - 76a01d4a7daa mm/mmap: move exit_mmap() trace point (1/11)
