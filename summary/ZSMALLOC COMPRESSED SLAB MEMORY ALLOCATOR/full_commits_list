@@ -1,11 +1,11 @@
 baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-stable: 4 total, 0 (0) series, 4 non-series commits
+mm-stable: 5 total, 0 (0) series, 5 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
   - no role, reviewer: 1 commits
-  - maintainer, no role : 1 commits
+  - maintainer, no role : 2 commits
   - maintainer, maintainer: 1 commits
 - full commits list
   - 62451ae347b0 mm: fix minor spelling mistakes in comments
@@ -16,12 +16,9 @@ mm-stable: 4 total, 0 (0) series, 4 non-series commits
     - Authored by no role player, reviewed by nobody
   - dc2e4982cb01 zsmalloc: introduce SG-list based object read API
     - Authored by a maintainer, reviewed by no role player
-mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-- author/reviewer role stat
-  - maintainer, no role : 1 commits
-- full commits list
-  - fa1ad05daf12 zsmalloc: make common caches global
+  - 3881b00a2cea zsmalloc: make common caches global
     - Authored by a maintainer, reviewed by no role player
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,10 +1,11 @@
 baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-stable: 4 total, 1 (2) series, 2 non-series commits
+mm-stable: 6 total, 1 (2) series, 4 non-series commits
 - author/reviewer role stat
+  - no role, maintainer: 1 commits
   - maintainer, reviewer: 1 commits
-  - maintainer, maintainer: 3 commits
+  - maintainer, maintainer: 4 commits
 - full commits list
   - 85aa39197420 mm: zswap: delete unused acomp->is_sleepable
     - Authored by a maintainer, reviewed by a maintainer
@@ -15,15 +16,11 @@ mm-stable: 4 total, 1 (2) series, 2 non-series commits
       - Authored by a maintainer, reviewed by a maintainer
     - de85024b3483 mm, swap: remove workaround for unsynchronized swap map cache state (12/19)
       - Authored by a maintainer, reviewed by a reviewer
-mm-unstable: 2 total, 0 (0) series, 2 non-series commits
-- author/reviewer role stat
-  - no role, maintainer: 1 commits
-  - maintainer, maintainer: 1 commits
-- full commits list
-  - e77043ea4aa4 mm: zswap: use SG list decompression APIs from zsmalloc
+  - e2c3b6b21c77 mm: zswap: use SG list decompression APIs from zsmalloc
     - Authored by a maintainer, reviewed by a maintainer
-  - 9185f15f69a6 mm/zswap: use %pe to print error pointers
+  - c69ca4e992e3 mm/zswap: use %pe to print error pointers
     - Authored by no role player, reviewed by a maintainer
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

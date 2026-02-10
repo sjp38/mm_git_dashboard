@@ -3,14 +3,16 @@ mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 mm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-new: 2 total, 1 (2) series, 0 non-series commits
+mm-new: 3 total, 1 (2) series, 1 non-series commits
 - author/reviewer role stat
-  - no role, nobody: 2 commits
+  - no role, nobody: 3 commits
 - full commits list
   - series "KSM: Optimizations for rmap_walk_ksm". (2 commits)
-    - 8ac4804f5268 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
+    - 2f7dc072e019 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
       - Authored by no role player, reviewed by nobody
-    - 5cc2fea51f42 ksm: optimize rmap_walk_ksm by passing a suitable addressrange (1/2)
+    - 0191da6aa3c8 ksm: optimize rmap_walk_ksm by passing a suitable address range (1/2)
       - Authored by no role player, reviewed by nobody
+  - 102c13d4436c ksm: initialize rmap values directly and make them const
+    - Authored by no role player, reviewed by nobody
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

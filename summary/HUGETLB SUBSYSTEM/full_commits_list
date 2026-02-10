@@ -4,11 +4,11 @@ mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
 - full commits list
-  - 30ad9060219d mm/hugetlb: restore failed global reservations to subpool
+  - caf7732efd0b mm/hugetlb: restore failed global reservations to subpool
     - Authored by no role player, reviewed by nobody
-mm-stable: 14 total, 0 (9) series, 5 non-series commits
+mm-stable: 15 total, 0 (9) series, 6 non-series commits
 - author/reviewer role stat
-  - no role, nobody: 2 commits
+  - no role, nobody: 3 commits
   - no role, no role : 5 commits
   - no role, reviewer: 1 commits
   - no role, maintainer: 6 commits
@@ -41,20 +41,19 @@ mm-stable: 14 total, 0 (9) series, 5 non-series commits
       - Authored by no role player, reviewed by a maintainer
   - 46ba5a01180c hugetlb: increase hugepage reservations when using node-specific "hugepages=" cmdline
     - Authored by no role player, reviewed by a maintainer
-mm-unstable: 2 total, 0 (1) series, 1 non-series commits
-- author/reviewer role stat
-  - no role, nobody: 1 commits
-  - maintainer, nobody: 1 commits
-- full commits list
-  - 72255e0ffb45 mm: add SPDX id lines to some mm source files
+  - ef24e0aa078f mm: add SPDX id lines to some mm source files
     - Authored by no role player, reviewed by nobody
-    - 840c27aa84bf mm: update hugetlbfs to use VMA flags on mmap_prepare (5/13)
-      - Authored by a maintainer, reviewed by nobody
+mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+- author/reviewer role stat
+  - maintainer, maintainer: 1 commits
+- full commits list
+    - 843c3089c3d5 mm: update hugetlbfs to use VMA flags on mmap_prepare (5/13)
+      - Authored by a maintainer, reviewed by a maintainer
 mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, maintainer: 1 commits
 - full commits list
-  - a1a876489abc fs: hugetlb: simplify remove_inode_hugepages() return type
+  - 8a662d538e51 fs: hugetlb: simplify remove_inode_hugepages() return type
     - Authored by no role player, reviewed by a maintainer
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

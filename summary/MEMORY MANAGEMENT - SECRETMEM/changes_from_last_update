@@ -8,7 +8,14 @@ mm-stable: 0 -> 0 commits
 mm-unstable: 1 -> 1 commits
 - series: 0 (1) -> 0 (1)
 - author/reviewer role stat
-  - reviewer, nobody: 1 -> 1 commits
+  - reviewer, nobody: 0 -> 1 commits
+  - reviewer, reviewer: 1 -> 0 commits
+- changed commits
+  - a3919486fc47 mm: update secretmem to use VMA flags on mmap_prepare
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
 mm-new: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-nonmm-stable: 0 -> 0 commits

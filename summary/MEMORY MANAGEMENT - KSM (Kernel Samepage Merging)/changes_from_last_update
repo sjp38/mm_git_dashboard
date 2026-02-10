@@ -7,10 +7,15 @@ mm-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-mm-new: 2 -> 2 commits
+mm-new: 2 -> 3 commits
 - series: 1 (2) -> 1 (2)
 - author/reviewer role stat
-  - no role, nobody: 2 -> 2 commits
+  - no role, nobody: 3 -> 2 commits
+- new commits
+  - 0191da6aa3c8 ksm: optimize rmap_walk_ksm by passing a suitable address range
+  - 102c13d4436c ksm: initialize rmap values directly and make them const
+- dropped commits
+  - 5cc2fea51f42 ksm: optimize rmap_walk_ksm by passing a suitable addressrange
 mm-nonmm-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-nonmm-unstable: 0 -> 0 commits

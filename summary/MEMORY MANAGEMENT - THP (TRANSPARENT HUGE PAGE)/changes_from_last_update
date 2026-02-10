@@ -3,16 +3,27 @@ mm-hotfixes-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-hotfixes-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-mm-stable: 8 -> 8 commits
+mm-stable: 8 -> 9 commits
 - series: 2 (7) -> 2 (7)
 - author/reviewer role stat
-  - no role, reviewer: 7 -> 7 commits
+  - no role, reviewer: 8 -> 7 commits
   - no role, maintainer: 1 -> 1 commits
-mm-unstable: 2 -> 2 commits
+- changed commits
+  - 4188b2592ff6 mm: khugepaged: fix NR_FILE_PAGES and NR_SHMEM in collapse_file()
+    - branch: mm-unstable -> mm-stable
+mm-unstable: 2 -> 1 commits
 - series: 0 (1) -> 0 (1)
 - author/reviewer role stat
-  - no role, reviewer: 1 -> 1 commits
-  - reviewer, nobody: 1 -> 1 commits
+  - no role, reviewer: 0 -> 1 commits
+  - reviewer, nobody: 0 -> 1 commits
+  - reviewer, reviewer: 1 -> 0 commits
+- changed commits
+  - d7cf7b966974 mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag()
+    - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
 mm-new: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-nonmm-stable: 0 -> 0 commits

@@ -4,10 +4,10 @@ mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 mm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-unstable: 1 total, 0 (1) series, 0 non-series commits
 - author/reviewer role stat
-  - reviewer, nobody: 1 commits
+  - reviewer, reviewer: 1 commits
 - full commits list
-    - a83a5f31361d mm: update secretmem to use VMA flags on mmap_prepare (6/13)
-      - Authored by a reviewer, reviewed by nobody
+    - a3919486fc47 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
+      - Authored by a reviewer, reviewed by a reviewer
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

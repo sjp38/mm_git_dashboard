@@ -1,26 +1,97 @@
 baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-mm-hotfixes-unstable: 0 -> 0 commits
+mm-hotfixes-unstable: 0 -> 1 commits
 - series: 0 (0) -> 0 (0)
-mm-stable: 44 -> 44 commits
-- series: 4 (38) -> 4 (38)
 - author/reviewer role stat
-  - no role, nobody: 3 -> 3 commits
-  - no role, no role : 18 -> 18 commits
+  - no role, reviewer: 1 -> 0 commits
+- new commits
+  - 81c99743c379 mm: fix a hmm_range_fault() livelock / starvation problem
+mm-stable: 44 -> 50 commits
+- series: 4 (38) -> 4 (40)
+- author/reviewer role stat
+  - no role, nobody: 4 -> 3 commits
+  - no role, no role : 23 -> 18 commits
   - no role, reviewer: 12 -> 12 commits
   - no role, maintainer: 5 -> 5 commits
   - reviewer, reviewer: 4 -> 4 commits
   - maintainer, reviewer: 2 -> 2 commits
-mm-unstable: 20 -> 20 commits
-- series: 3 (15) -> 3 (15)
+- changed commits
+  - cc5cbf37ceac mm: refactor vma_map_pages to use vm_insert_pages
+    - branch: mm-unstable -> mm-stable
+  - ef24e0aa078f mm: add SPDX id lines to some mm source files
+    - branch: mm-unstable -> mm-stable
+  - 086498aed3f6 mm: convert __HAVE_ARCH_TLB_REMOVE_TABLE to CONFIG_HAVE_ARCH_TLB_REMOVE_TABLE config
+    - branch: mm-unstable -> mm-stable
+    - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+    - added "Acked-by: Andreas Larsson <andreas@gaisler.com>		[sparc]"
+    - added "Tested-by: Andreas Larsson <andreas@gaisler.com>	[sparc, UP&SMP]"
+    - dropped "Cc: David Hildenbrand (Red Hat) <david@kernel.org>"
+    - dropped "Cc: Andreas Larsson <andreas@gaisler.com>"
+  - 9c8c02df3f87 mm: make PT_RECLAIM depends on MMU_GATHER_RCU_TABLE_FREE
+    - branch: mm-unstable -> mm-stable
+  - 4c640eb4181c mm: move pte table reclaim code to memory.c
+    - branch: mm-unstable -> mm-stable
+  - fb4ddf208511 mm/memory: handle non-split locks correctly in zap_empty_pte_table()
+    - branch: mm-unstable -> mm-stable
+mm-unstable: 20 -> 14 commits
+- series: 3 (15) -> 3 (13)
 - author/reviewer role stat
-  - no role, nobody: 3 -> 3 commits
-  - no role, no role : 4 -> 4 commits
+  - no role, nobody: 0 -> 3 commits
+  - no role, no role : 1 -> 4 commits
   - no role, reviewer: 1 -> 1 commits
-  - reviewer, nobody: 8 -> 8 commits
+  - reviewer, nobody: 2 -> 8 commits
   - reviewer, no role : 1 -> 1 commits
-  - reviewer, reviewer: 3 -> 3 commits
+  - reviewer, reviewer: 9 -> 3 commits
+- changed commits
+  - 86b077386edf mm: folio_zero_user: open code range computation in folio_zero_user()
+    - added "[ankur.a.arora@oracle.com: remove unneeded cast, per David]"
+    - added "Link: https://lkml.kernel.org/r/20260206223801.2617497-1-ankur.a.arora@oracle.com"
+    - added "Link: : https://lkml.kernel.org/r/20260206223801.2617497-1-ankur.a.arora@oracle.com"
+    - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+    - dropped "Cc: David Hildenbrand <david@kernel.org>"
+  - f5af1c654812 mm/vma: remove __private sparse decoration from vma_flags_t
+    - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - d7cf7b966974 mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag()
+    - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - d71c1ad58ecd mm: add mk_vma_flags() bitmap flag macro helper
+    - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - 6f8ed8b697b1 mm: add basic VMA flag operation helper functions
+    - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - a3919486fc47 mm: update secretmem to use VMA flags on mmap_prepare
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - fb07d042b871 mm: update all remaining mmap_prepare users to use vma_flags_t
+    - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+  - 9cf2153ccbaf mm: make vm_area_desc utilise vma_flags_t only
+    - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - 5b7cd2536d7b mm: rmap: support batched checks of the references for large folios
+    - added "Link: https://lkml.kernel.org/r/12132694536834262062d1fb304f8f8a064b6750.1770645603.git.baolin.wang@linux.alibaba.com"
+    - added "Link: https://lkml.kernel.org/r/cover.1770645603.git.baolin.wang@linux.alibaba.com"
+    - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+    - dropped "Link: https://lkml.kernel.org/r/cover.1766631066.git.baolin.wang@linux.alibaba.com"
+    - dropped "Link: https://lkml.kernel.org/r/18b3eb9c730d16756e5d23c7be22efe2f6219911.1766631066.git.baolin.wang@linux.alibaba.com"
+    - dropped "Cc: David Hildenbrand (Red Hat) <david@kernel.org>"
+    - dropped "Cc: Dev Jain <dev.jain@arm.com>"
 mm-new: 1 -> 1 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat

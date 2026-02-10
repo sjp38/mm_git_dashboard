@@ -7,14 +7,15 @@ mm-new: 1 total, 0 (1) series, 0 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
 - full commits list
-    - ec4967c2db14 mm: memfd_luo: preserve file seals (1/2)
+    - 0d47f9bd19b0 mm: memfd_luo: preserve file seals (1/2)
       - Authored by no role player, reviewed by nobody
-mm-nonmm-stable: 8 total, 2 (7) series, 1 non-series commits
+mm-nonmm-stable: 10 total, 2 (9) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
   - no role, no role : 1 commits
   - no role, reviewer: 5 commits
   - reviewer, maintainer: 1 commits
+  - maintainer, nobody: 2 commits
 - full commits list
   - series "kho: ABI headers and Documentation updates". (6 commits)
     - a7e53bfb4366 kho/abi: luo: make generated documentation more coherent (0/6)
@@ -34,11 +35,8 @@ mm-nonmm-stable: 8 total, 2 (7) series, 1 non-series commits
   - series "kho: clean up page initialization logic", v2. (2 commits)
     - 840fe43d371f kho: use unsigned long for nr_pages (0/2)
       - Authored by a reviewer, reviewed by a maintainer
-mm-nonmm-unstable: 2 total, 0 (2) series, 0 non-series commits
-- author/reviewer role stat
-  - maintainer, nobody: 2 commits
-- full commits list
-    - 13c664182c65 liveupdate: luo_flb: Introduce File-Lifecycle-Bound global state (3/5)
+    - cab056f2aae7 liveupdate: luo_flb: introduce File-Lifecycle-Bound global state (3/5)
       - Authored by a maintainer, reviewed by nobody
-    - f11f5488d58f tests/liveupdate: add in-kernel liveupdate test (4/5)
+    - f653ff7af969 tests/liveupdate: add in-kernel liveupdate test (4/5)
       - Authored by a maintainer, reviewed by nobody
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

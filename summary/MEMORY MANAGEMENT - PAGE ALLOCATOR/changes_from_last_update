@@ -1,8 +1,12 @@
 baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-mm-hotfixes-unstable: 0 -> 0 commits
+mm-hotfixes-unstable: 0 -> 1 commits
 - series: 0 (0) -> 0 (0)
+- author/reviewer role stat
+  - no role, maintainer: 1 -> 0 commits
+- new commits
+  - a7604af66230 mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK
 mm-stable: 13 -> 13 commits
 - series: 3 (9) -> 3 (9)
 - author/reviewer role stat
@@ -10,8 +14,12 @@ mm-stable: 13 -> 13 commits
   - no role, maintainer: 1 -> 1 commits
   - reviewer, reviewer: 1 -> 1 commits
   - maintainer, reviewer: 3 -> 3 commits
-mm-unstable: 0 -> 0 commits
+mm-unstable: 0 -> 1 commits
 - series: 0 (0) -> 0 (0)
+- author/reviewer role stat
+  - no role, maintainer: 1 -> 0 commits
+- new commits
+  - 60260df6dd93 mm/page_alloc: clear page->private in free_pages_prepare()
 mm-new: 1 -> 1 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat

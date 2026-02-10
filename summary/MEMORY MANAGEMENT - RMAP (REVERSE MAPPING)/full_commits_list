@@ -1,8 +1,9 @@
 baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-stable: 10 total, 1 (9) series, 1 non-series commits
+mm-stable: 11 total, 1 (9) series, 2 non-series commits
 - author/reviewer role stat
+  - no role, nobody: 1 commits
   - no role, maintainer: 1 commits
   - reviewer, reviewer: 2 commits
   - maintainer, nobody: 1 commits
@@ -29,25 +30,22 @@ mm-stable: 10 total, 1 (9) series, 1 non-series commits
     - Authored by no role player, reviewed by a maintainer
     - 36976159140b mm, swap: cleanup swap entry management workflow (13/19)
       - Authored by a maintainer, reviewed by a reviewer
-mm-unstable: 4 total, 1 (1) series, 3 non-series commits
+  - ef24e0aa078f mm: add SPDX id lines to some mm source files
+    - Authored by no role player, reviewed by nobody
+mm-unstable: 2 total, 1 (2) series, 0 non-series commits
 - author/reviewer role stat
-  - no role, nobody: 2 commits
   - no role, reviewer: 2 commits
 - full commits list
-  - 72255e0ffb45 mm: add SPDX id lines to some mm source files
-    - Authored by no role player, reviewed by nobody
-  - series "support batch checking of references and unmapping for large folios", v5. (5 commits)
-    - 29e97ca578b2 mm: rmap: support batched checks of the references for large folios (0/5)
+  - series "support batch checking of references and unmapping for large folios", v6. (5 commits)
+    - 5b7cd2536d7b mm: rmap: support batched checks of the references for large folios (0/5)
       - Authored by no role player, reviewed by a reviewer
-  - 7e12e01bdeb2 mm: rmap: support batched unmapping for file large folios
-    - Authored by no role player, reviewed by a reviewer
-  - 972589fc11eb mm: rmap: skip batched unmapping for UFFD vmas
-    - Authored by no role player, reviewed by nobody
+    - 17c057a0dcc1 mm: rmap: support batched unmapping for file large folios (4/5)
+      - Authored by no role player, reviewed by a reviewer
 mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, no role : 1 commits
 - full commits list
-  - e35277d481b5 mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared thp
+  - 37a4cae6521b mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared thp
     - Authored by no role player, reviewed by no role player
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

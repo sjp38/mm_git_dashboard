@@ -14,10 +14,77 @@ mm-stable: 5 -> 5 commits
 mm-unstable: 20 -> 20 commits
 - series: 1 (17) -> 1 (17)
 - author/reviewer role stat
-  - reviewer, nobody: 5 -> 5 commits
-  - reviewer, reviewer: 3 -> 3 commits
-  - maintainer, nobody: 7 -> 7 commits
-  - maintainer, maintainer: 5 -> 5 commits
+  - reviewer, nobody: 2 -> 5 commits
+  - reviewer, reviewer: 6 -> 3 commits
+  - maintainer, nobody: 3 -> 7 commits
+  - maintainer, maintainer: 9 -> 5 commits
+- changed commits
+  - 6f8ed8b697b1 mm: add basic VMA flag operation helper functions
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - 843c3089c3d5 mm: update hugetlbfs to use VMA flags on mmap_prepare
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - a3919486fc47 mm: update secretmem to use VMA flags on mmap_prepare
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - 2939e08b2bd4 mm-update-secretmem-to-use-vma-flags-on-mmap_prepare-fix
+    - added "Cc: Barry Song <baohua@kernel.org>"
+    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+    - added "Cc: Dev Jain <dev.jain@arm.com>"
+    - added "Cc: Jason Gunthorpe <jgg@nvidia.com>"
+    - added "Cc: Zi Yan <ziy@nvidia.com>"
+    - added "Cc: David Hildenbrand <david@kernel.org>"
+    - added "Cc: Damien Le Moal <dlemoal@kernel.org>"
+    - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+    - added "Cc: Liam Howlett <liam.howlett@oracle.com>"
+    - added "Cc: Jarkko Sakkinen <jarkko@kernel.org>"
+    - added "Cc: Vlastimil Babka <vbabka@suse.cz>"
+    - added "Cc: Yury Norov <ynorov@nvidia.com>"
+    - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+    - added "Cc: "Darrick J. Wong" <djwong@kernel.org>"
+  - 9cf2153ccbaf mm: make vm_area_desc utilise vma_flags_t only
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - 75854dd8ee6f tools/testing/vma: separate VMA userland tests into separate files
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - 3dbc20969331 tools/testing/vma: separate out vma_internal.h into logical headers
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - a267d0c813c2 tools-testing-vma-separate-out-vma_internalh-into-logical-headers-fix
+    - added "Cc: Barry Song <baohua@kernel.org>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+    - added "Cc: Dev Jain <dev.jain@arm.com>"
+    - added "Cc: Jason Gunthorpe <jgg@nvidia.com>"
+    - added "Cc: Zi Yan <ziy@nvidia.com>"
+    - added "Cc: David Hildenbrand <david@kernel.org>"
+    - added "Cc: Damien Le Moal <dlemoal@kernel.org>"
+    - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+    - added "Cc: Liam Howlett <liam.howlett@oracle.com>"
+    - added "Cc: Jarkko Sakkinen <jarkko@kernel.org>"
+    - added "Cc: Vlastimil Babka <vbabka@suse.cz>"
+    - added "Cc: Yury Norov <ynorov@nvidia.com>"
+    - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+    - added "Cc: "Darrick J. Wong" <djwong@kernel.org>"
+  - 206a8819ecc8 tools/testing/vma: add VMA userland tests for VMA flag functions
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
 mm-new: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-nonmm-stable: 0 -> 0 commits

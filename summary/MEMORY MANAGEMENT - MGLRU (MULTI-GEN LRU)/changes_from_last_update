@@ -3,11 +3,11 @@ mm-hotfixes-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-hotfixes-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-mm-stable: 13 -> 13 commits
+mm-stable: 13 -> 14 commits
 - series: 2 (10) -> 2 (10)
 - author/reviewer role stat
   - no role, nobody: 1 -> 1 commits
-  - no role, no role : 1 -> 1 commits
+  - no role, no role : 2 -> 1 commits
   - no role, reviewer: 4 -> 4 commits
   - no role, maintainer: 1 -> 1 commits
   - reviewer, no role : 1 -> 1 commits
@@ -15,12 +15,21 @@ mm-stable: 13 -> 13 commits
   - maintainer, no role : 1 -> 1 commits
   - maintainer, reviewer: 1 -> 1 commits
   - maintainer, maintainer: 2 -> 2 commits
-mm-unstable: 3 -> 3 commits
+- changed commits
+  - 4a8eabc6e4c7 mm/vmscan: use %pe to print error pointers
+    - branch: mm-unstable -> mm-stable
+mm-unstable: 3 -> 2 commits
 - series: 1 (2) -> 1 (2)
 - author/reviewer role stat
-  - no role, nobody: 1 -> 1 commits
-  - no role, no role : 1 -> 1 commits
+  - no role, nobody: 0 -> 1 commits
+  - no role, no role : 0 -> 1 commits
+  - no role, reviewer: 1 -> 0 commits
   - no role, maintainer: 1 -> 1 commits
+- changed commits
+  - 87dc8b8490d3 mm/vmscan: select the closest preferred node in demote_folio_list()
+    - added "[akpm@linux-foundation.org: fix comment typo, per Shakeel]"
+    - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+    - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
 mm-new: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-nonmm-stable: 0 -> 0 commits

@@ -12,7 +12,7 @@ mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, no role : 1 commits
 - full commits list
-  - 89a88e60cc0e mm: numa_memblks: identify the accurate NUMA ID of CFMW
+  - 34aa3ee313c2 mm: numa_memblks: identify the accurate NUMA ID of CFMW
     - Authored by no role player, reviewed by no role player
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

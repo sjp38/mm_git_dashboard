@@ -22,7 +22,7 @@ mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, reviewer: 1 commits
 - full commits list
-  - 8c9780c0b256 mm/shrinker: fix refcount leak in shrink_slab_memcg()
+  - 417ac032ea36 mm/shrinker: fix refcount leak in shrink_slab_memcg()
     - Authored by no role player, reviewed by a reviewer
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

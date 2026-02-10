@@ -1,10 +1,15 @@
 baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-stable: 44 total, 4 (38) series, 6 non-series commits
+mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
-  - no role, nobody: 3 commits
-  - no role, no role : 18 commits
+  - no role, reviewer: 1 commits
+- full commits list
+  - 81c99743c379 mm: fix a hmm_range_fault() livelock / starvation problem
+    - Authored by no role player, reviewed by a reviewer
+mm-stable: 50 total, 4 (40) series, 10 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 4 commits
+  - no role, no role : 23 commits
   - no role, reviewer: 12 commits
   - no role, maintainer: 5 commits
   - reviewer, reviewer: 4 commits
@@ -102,63 +107,62 @@ mm-stable: 44 total, 4 (38) series, 6 non-series commits
       - Authored by no role player, reviewed by no role player
     - 36976159140b mm, swap: cleanup swap entry management workflow (13/19)
       - Authored by a maintainer, reviewed by a reviewer
-mm-unstable: 20 total, 3 (15) series, 5 non-series commits
-- author/reviewer role stat
-  - no role, nobody: 3 commits
-  - no role, no role : 4 commits
-  - no role, reviewer: 1 commits
-  - reviewer, nobody: 8 commits
-  - reviewer, no role : 1 commits
-  - reviewer, reviewer: 3 commits
-- full commits list
-  - 5e38b451e881 mm: refactor vma_map_pages to use vm_insert_pages
+  - cc5cbf37ceac mm: refactor vma_map_pages to use vm_insert_pages
     - Authored by no role player, reviewed by no role player
-  - 72255e0ffb45 mm: add SPDX id lines to some mm source files
+  - ef24e0aa078f mm: add SPDX id lines to some mm source files
     - Authored by no role player, reviewed by nobody
-    - cb4a46a3a0a2 mm: convert __HAVE_ARCH_TLB_REMOVE_TABLE to CONFIG_HAVE_ARCH_TLB_REMOVE_TABLE config (6/8)
-      - Authored by no role player, reviewed by nobody
-    - 9afd82c3ec06 mm: make PT_RECLAIM depends on MMU_GATHER_RCU_TABLE_FREE (7/8)
+    - 086498aed3f6 mm: convert __HAVE_ARCH_TLB_REMOVE_TABLE to CONFIG_HAVE_ARCH_TLB_REMOVE_TABLE config (6/8)
       - Authored by no role player, reviewed by no role player
-  - eb7f18f13395 mm: move pte table reclaim code to memory.c
+    - 9c8c02df3f87 mm: make PT_RECLAIM depends on MMU_GATHER_RCU_TABLE_FREE (7/8)
+      - Authored by no role player, reviewed by no role player
+  - 4c640eb4181c mm: move pte table reclaim code to memory.c
     - Authored by no role player, reviewed by no role player
-  - e8f5fd5b7ee2 mm/memory: handle non-split locks correctly in zap_empty_pte_table()
+  - fb4ddf208511 mm/memory: handle non-split locks correctly in zap_empty_pte_table()
     - Authored by no role player, reviewed by no role player
-  - 1ab83fb651c0 mm: folio_zero_user: open code range computation in folio_zero_user()
-    - Authored by no role player, reviewed by nobody
+mm-unstable: 14 total, 3 (13) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, no role : 1 commits
+  - no role, reviewer: 1 commits
+  - reviewer, nobody: 2 commits
+  - reviewer, no role : 1 commits
+  - reviewer, reviewer: 9 commits
+- full commits list
+  - 86b077386edf mm: folio_zero_user: open code range computation in folio_zero_user()
+    - Authored by no role player, reviewed by no role player
   - series " Remove XA_ZERO from error recovery of dup_mmap()", v3. (11 commits)
-    - a925f95fa951 mm: relocate the page table ceiling and floor definitions (0/11)
+    - e2d8312a91b8 mm: relocate the page table ceiling and floor definitions (0/11)
       - Authored by a reviewer, reviewed by nobody
-    - eb8922813574 mm/memory: add tree limit to free_pgtables() (4/11)
+    - feab452400cb mm/memory: add tree limit to free_pgtables() (4/11)
       - Authored by a reviewer, reviewed by a reviewer
-    - 4c16753d5e2e mm: change dup_mmap() recovery (6/11)
+    - 65b4687d0d0f mm: change dup_mmap() recovery (6/11)
       - Authored by a reviewer, reviewed by a reviewer
-    - 08caab13738c mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes() (8/11)
+    - 900db9d23e5b mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes() (8/11)
       - Authored by a reviewer, reviewed by nobody
-    - 65af55a34094 mm: use unmap_desc struct for freeing page tables (10/11)
+    - c93fa7f0aea2 mm: use unmap_desc struct for freeing page tables (10/11)
       - Authored by a reviewer, reviewed by a reviewer
   - series "mm: add bitmap VMA flag helpers and convert all mmap_prepare to use them", v2. (13 commits)
-    - 7774c56f7f2f mm/vma: remove __private sparse decoration from vma_flags_t (0/13)
-      - Authored by a reviewer, reviewed by nobody
-    - 8f9b31641c92 mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
-      - Authored by a reviewer, reviewed by nobody
-    - 6070b2c9ceea mm: add mk_vma_flags() bitmap flag macro helper (2/13)
-      - Authored by a reviewer, reviewed by nobody
-    - e3713cc21137 mm: add basic VMA flag operation helper functions (4/13)
-      - Authored by a reviewer, reviewed by nobody
-    - a83a5f31361d mm: update secretmem to use VMA flags on mmap_prepare (6/13)
-      - Authored by a reviewer, reviewed by nobody
-    - a7c1414d1313 mm: update all remaining mmap_prepare users to use vma_flags_t (10/13)
+    - f5af1c654812 mm/vma: remove __private sparse decoration from vma_flags_t (0/13)
+      - Authored by a reviewer, reviewed by a reviewer
+    - d7cf7b966974 mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
+      - Authored by a reviewer, reviewed by a reviewer
+    - d71c1ad58ecd mm: add mk_vma_flags() bitmap flag macro helper (2/13)
+      - Authored by a reviewer, reviewed by a reviewer
+    - 6f8ed8b697b1 mm: add basic VMA flag operation helper functions (4/13)
+      - Authored by a reviewer, reviewed by a reviewer
+    - a3919486fc47 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
+      - Authored by a reviewer, reviewed by a reviewer
+    - fb07d042b871 mm: update all remaining mmap_prepare users to use vma_flags_t (10/13)
       - Authored by a reviewer, reviewed by no role player
-    - 60473dd90030 mm: make vm_area_desc utilise vma_flags_t only (11/13)
-      - Authored by a reviewer, reviewed by nobody
-  - series "support batch checking of references and unmapping for large folios", v5. (5 commits)
-    - 29e97ca578b2 mm: rmap: support batched checks of the references for large folios (0/5)
+    - 9cf2153ccbaf mm: make vm_area_desc utilise vma_flags_t only (11/13)
+      - Authored by a reviewer, reviewed by a reviewer
+  - series "support batch checking of references and unmapping for large folios", v6. (5 commits)
+    - 5b7cd2536d7b mm: rmap: support batched checks of the references for large folios (0/5)
       - Authored by no role player, reviewed by a reviewer
 mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, maintainer: 1 commits
 - full commits list
-  - 6c1e7e622a2f arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
+  - a12aad09dd52 arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
     - Authored by no role player, reviewed by a maintainer
 mm-nonmm-stable: 2 total, 0 (0) series, 2 non-series commits
 - author/reviewer role stat

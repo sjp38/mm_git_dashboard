@@ -1,9 +1,9 @@
 baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-stable: 8 total, 2 (7) series, 1 non-series commits
+mm-stable: 9 total, 2 (7) series, 2 non-series commits
 - author/reviewer role stat
-  - no role, reviewer: 7 commits
+  - no role, reviewer: 8 commits
   - no role, maintainer: 1 commits
 - full commits list
   - series "mm/khugepaged: fix dirty page handling for MADV_COLLAPSE", v5. (2 commits)
@@ -24,15 +24,14 @@ mm-stable: 8 total, 2 (7) series, 1 non-series commits
       - Authored by no role player, reviewed by a reviewer
     - dd2b4e04c098 selftests/mm: introduce helper to read every page (5/9)
       - Authored by no role player, reviewed by a reviewer
-mm-unstable: 2 total, 0 (1) series, 1 non-series commits
-- author/reviewer role stat
-  - no role, reviewer: 1 commits
-  - reviewer, nobody: 1 commits
-- full commits list
-  - b4321ccaa24c mm: khugepaged: fix NR_FILE_PAGES and NR_SHMEM in collapse_file()
+  - 4188b2592ff6 mm: khugepaged: fix NR_FILE_PAGES and NR_SHMEM in collapse_file()
     - Authored by no role player, reviewed by a reviewer
-    - 8f9b31641c92 mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
-      - Authored by a reviewer, reviewed by nobody
+mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+- author/reviewer role stat
+  - reviewer, reviewer: 1 commits
+- full commits list
+    - d7cf7b966974 mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
+      - Authored by a reviewer, reviewed by a reviewer
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -5,18 +5,28 @@ mm-hotfixes-unstable: 1 -> 1 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat
   - no role, nobody: 1 -> 1 commits
-mm-stable: 14 -> 14 commits
+mm-stable: 14 -> 15 commits
 - series: 0 (9) -> 0 (9)
 - author/reviewer role stat
-  - no role, nobody: 2 -> 2 commits
+  - no role, nobody: 3 -> 2 commits
   - no role, no role : 5 -> 5 commits
   - no role, reviewer: 1 -> 1 commits
   - no role, maintainer: 6 -> 6 commits
-mm-unstable: 2 -> 2 commits
+- changed commits
+  - ef24e0aa078f mm: add SPDX id lines to some mm source files
+    - branch: mm-unstable -> mm-stable
+mm-unstable: 2 -> 1 commits
 - series: 0 (1) -> 0 (1)
 - author/reviewer role stat
-  - no role, nobody: 1 -> 1 commits
-  - maintainer, nobody: 1 -> 1 commits
+  - no role, nobody: 0 -> 1 commits
+  - maintainer, nobody: 0 -> 1 commits
+  - maintainer, maintainer: 1 -> 0 commits
+- changed commits
+  - 843c3089c3d5 mm: update hugetlbfs to use VMA flags on mmap_prepare
+    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
+    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+    - added "Cc: Chris Mason <clm@fb.com>"
+    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
 mm-new: 1 -> 1 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat
