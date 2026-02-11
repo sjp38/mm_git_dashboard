@@ -13,15 +13,7 @@ mm-stable: 4 -> 4 commits
 mm-unstable: 1 -> 1 commits
 - series: 0 (1) -> 0 (1)
 - author/reviewer role stat
-  - reviewer, nobody: 0 -> 1 commits
-  - reviewer, reviewer: 1 -> 0 commits
-- changed commits
-  - d7cf7b966974 mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag()
-    - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
-    - added "Cc: Chris Mason <clm@fb.com>"
-    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+  - reviewer, reviewer: 1 -> 1 commits
 mm-new: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-nonmm-stable: 0 -> 0 commits

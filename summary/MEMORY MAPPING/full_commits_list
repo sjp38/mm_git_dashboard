@@ -27,45 +27,45 @@ mm-unstable: 20 total, 1 (17) series, 3 non-series commits
   - maintainer, maintainer: 9 commits
 - full commits list
   - series " Remove XA_ZERO from error recovery of dup_mmap()", v3. (11 commits)
-    - e2d8312a91b8 mm: relocate the page table ceiling and floor definitions (0/11)
+    - dfe2a3aa3331 mm: relocate the page table ceiling and floor definitions (0/11)
       - Authored by a reviewer, reviewed by nobody
-    - d7a3558a631d mm/mmap: move exit_mmap() trace point (1/11)
+    - b90c14d14ec5 mm/mmap: move exit_mmap() trace point (1/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - 87870dca8102 mm/mmap: abstract vma clean up from exit_mmap() (2/11)
+    - ac5017686ad3 mm/mmap: abstract vma clean up from exit_mmap() (2/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - eafde447a31f mm/vma: add limits to unmap_region() for vmas (3/11)
+    - f984335d44dd mm/vma: add limits to unmap_region() for vmas (3/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - feab452400cb mm/memory: add tree limit to free_pgtables() (4/11)
+    - 704572b89fa9 mm/memory: add tree limit to free_pgtables() (4/11)
       - Authored by a reviewer, reviewed by a reviewer
-    - d3c52d511204 mm/vma: add page table limit to unmap_region() (5/11)
+    - 4734aa9228cd mm/vma: add page table limit to unmap_region() (5/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - 65b4687d0d0f mm: change dup_mmap() recovery (6/11)
+    - 3efc33e4087a mm: change dup_mmap() recovery (6/11)
       - Authored by a reviewer, reviewed by a reviewer
-    - 987f5b7404eb mm: introduce unmap_desc struct to reduce function arguments (7/11)
+    - 3e3eb832cf43 mm: introduce unmap_desc struct to reduce function arguments (7/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - 900db9d23e5b mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes() (8/11)
+    - 4b964f6b0f63 mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes() (8/11)
       - Authored by a reviewer, reviewed by nobody
-    - bd85723eb945 mm/vma: use unmap_region() in vms_clear_ptes() (9/11)
+    - 5bc922aeffa7 mm/vma: use unmap_region() in vms_clear_ptes() (9/11)
       - Authored by a maintainer, reviewed by nobody
-    - c93fa7f0aea2 mm: use unmap_desc struct for freeing page tables (10/11)
+    - c33268c56a7a mm: use unmap_desc struct for freeing page tables (10/11)
       - Authored by a reviewer, reviewed by a reviewer
-    - 6f8ed8b697b1 mm: add basic VMA flag operation helper functions (4/13)
+    - 34bc3caceb6f mm: add basic VMA flag operation helper functions (4/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - 843c3089c3d5 mm: update hugetlbfs to use VMA flags on mmap_prepare (5/13)
+    - 0919731ffbe4 mm: update hugetlbfs to use VMA flags on mmap_prepare (5/13)
       - Authored by a maintainer, reviewed by a maintainer
-    - a3919486fc47 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
+    - 29d95d451cd8 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - 2939e08b2bd4 mm-update-secretmem-to-use-vma-flags-on-mmap_prepare-fix (7/13)
+    - 5ee021ec43df mm-update-secretmem-to-use-vma-flags-on-mmap_prepare-fix (7/13)
       - Authored by a maintainer, reviewed by nobody
-    - 9cf2153ccbaf mm: make vm_area_desc utilise vma_flags_t only (11/13)
+    - 1503a0f75fe2 mm: make vm_area_desc utilise vma_flags_t only (11/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - 75854dd8ee6f tools/testing/vma: separate VMA userland tests into separate files (12/13)
+    - ece965d98705 tools/testing/vma: separate VMA userland tests into separate files (12/13)
       - Authored by a maintainer, reviewed by a maintainer
-  - 3dbc20969331 tools/testing/vma: separate out vma_internal.h into logical headers
+  - 40d0872b93c6 tools/testing/vma: separate out vma_internal.h into logical headers
     - Authored by a maintainer, reviewed by a maintainer
-  - a267d0c813c2 tools-testing-vma-separate-out-vma_internalh-into-logical-headers-fix
+  - 7c4a9b9bd9eb tools-testing-vma-separate-out-vma_internalh-into-logical-headers-fix
     - Authored by a maintainer, reviewed by nobody
-  - 206a8819ecc8 tools/testing/vma: add VMA userland tests for VMA flag functions
+  - bee2c9f074cd tools/testing/vma: add VMA userland tests for VMA flag functions
     - Authored by a maintainer, reviewed by a maintainer
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

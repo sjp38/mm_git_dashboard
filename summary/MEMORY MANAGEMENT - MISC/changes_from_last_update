@@ -3,34 +3,22 @@ mm-hotfixes-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-hotfixes-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-mm-stable: 51 -> 53 commits
+mm-stable: 53 -> 53 commits
 - series: 5 (39) -> 5 (39)
 - author/reviewer role stat
-  - no role, nobody: 4 -> 3 commits
+  - no role, nobody: 4 -> 4 commits
   - no role, no role : 21 -> 21 commits
   - no role, reviewer: 7 -> 7 commits
-  - no role, maintainer: 3 -> 2 commits
+  - no role, maintainer: 3 -> 3 commits
   - reviewer, no role : 1 -> 1 commits
   - maintainer, nobody: 12 -> 12 commits
   - maintainer, no role : 4 -> 4 commits
   - maintainer, maintainer: 1 -> 1 commits
-- changed commits
-  - ad789a85b163 mm/cma: replace snprintf with strscpy in cma_new_area
-    - branch: mm-unstable -> mm-stable
-  - ef24e0aa078f mm: add SPDX id lines to some mm source files
-    - branch: mm-unstable -> mm-stable
-mm-unstable: 6 -> 4 commits
+mm-unstable: 4 -> 4 commits
 - series: 1 (4) -> 1 (4)
 - author/reviewer role stat
-  - no role, nobody: 0 -> 2 commits
-  - no role, reviewer: 1 -> 0 commits
-  - no role, maintainer: 0 -> 1 commits
+  - no role, reviewer: 1 -> 1 commits
   - maintainer, nobody: 3 -> 3 commits
-- changed commits
-  - 87dc8b8490d3 mm/vmscan: select the closest preferred node in demote_folio_list()
-    - added "[akpm@linux-foundation.org: fix comment typo, per Shakeel]"
-    - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-    - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
 mm-new: 1 -> 1 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat

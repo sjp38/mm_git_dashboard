@@ -11,22 +11,13 @@ mm-new: 1 -> 1 commits
 - series: 0 (1) -> 0 (1)
 - author/reviewer role stat
   - no role, nobody: 1 -> 1 commits
-mm-nonmm-stable: 8 -> 10 commits
-- series: 2 (7) -> 2 (9)
+mm-nonmm-stable: 10 -> 10 commits
+- series: 2 (9) -> 2 (9)
 - author/reviewer role stat
   - no role, nobody: 1 -> 1 commits
   - no role, no role : 1 -> 1 commits
   - no role, reviewer: 5 -> 5 commits
   - reviewer, maintainer: 1 -> 1 commits
-  - maintainer, nobody: 2 -> 0 commits
-- new commits
-  - cab056f2aae7 liveupdate: luo_flb: introduce File-Lifecycle-Bound global state
-- changed commits
-  - f653ff7af969 tests/liveupdate: add in-kernel liveupdate test
-    - branch: mm-nonmm-unstable -> mm-nonmm-stable
-mm-nonmm-unstable: 2 -> 0 commits
-- series: 0 (2) -> 0 (0)
-- author/reviewer role stat
-  - maintainer, nobody: 0 -> 2 commits
-- dropped commits
-  - 13c664182c65 liveupdate: luo_flb: Introduce File-Lifecycle-Bound global state
+  - maintainer, nobody: 2 -> 2 commits
+mm-nonmm-unstable: 0 -> 0 commits
+- series: 0 (0) -> 0 (0)

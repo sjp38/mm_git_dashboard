@@ -4,7 +4,7 @@ mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, maintainer: 1 commits
 - full commits list
-  - a7604af66230 mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK
+  - 25911da68b07 mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK
     - Authored by no role player, reviewed by a maintainer
 mm-stable: 13 total, 3 (9) series, 4 non-series commits
 - author/reviewer role stat
@@ -46,13 +46,13 @@ mm-unstable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, maintainer: 1 commits
 - full commits list
-  - 60260df6dd93 mm/page_alloc: clear page->private in free_pages_prepare()
+  - ad92386d5deb mm/page_alloc: clear page->private in free_pages_prepare()
     - Authored by no role player, reviewed by a maintainer
 mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
 - full commits list
-  - a6e12eb4d70e mm/page_alloc: avoid overcounting bulk alloc in watermark check
+  - c10629a9dcae mm/page_alloc: avoid overcounting bulk alloc in watermark check
     - Authored by no role player, reviewed by nobody
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

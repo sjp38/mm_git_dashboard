@@ -39,7 +39,7 @@ mm-unstable: 1 total, 1 (1) series, 0 non-series commits
   - no role, maintainer: 1 commits
 - full commits list
   - series "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
-    - 2dadf2fff70f mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
+    - 54d41a0d25c5 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
       - Authored by no role player, reviewed by a maintainer
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits

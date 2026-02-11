@@ -7,169 +7,48 @@ mm-hotfixes-stable: 13 -> 13 commits
   - no role, maintainer: 6 -> 6 commits
   - maintainer, no role : 1 -> 1 commits
   - maintainer, reviewer: 1 -> 1 commits
-mm-hotfixes-unstable: 1 -> 3 commits
+mm-hotfixes-unstable: 3 -> 3 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat
   - no role, nobody: 1 -> 1 commits
+  - no role, no role : 0 -> 1 commits
   - no role, reviewer: 1 -> 0 commits
-  - no role, maintainer: 1 -> 0 commits
+  - no role, maintainer: 1 -> 1 commits
 - new commits
-  - a7604af66230 mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK
+  - c11ac904ec01 mm: Fix a hmm_range_fault() livelock / starvation problem
+- dropped commits
   - 81c99743c379 mm: fix a hmm_range_fault() livelock / starvation problem
-mm-stable: 182 -> 198 commits
-- series: 17 (134) -> 18 (137)
+mm-stable: 198 -> 198 commits
+- series: 18 (137) -> 18 (137)
 - author/reviewer role stat
-  - no role, nobody: 8 -> 7 commits
-  - no role, no role : 46 -> 38 commits
-  - no role, reviewer: 25 -> 24 commits
-  - no role, maintainer: 41 -> 37 commits
+  - no role, nobody: 8 -> 8 commits
+  - no role, no role : 46 -> 46 commits
+  - no role, reviewer: 25 -> 25 commits
+  - no role, maintainer: 41 -> 41 commits
   - reviewer, no role : 1 -> 1 commits
   - reviewer, reviewer: 5 -> 5 commits
   - maintainer, nobody: 23 -> 23 commits
-  - maintainer, no role : 11 -> 10 commits
+  - maintainer, no role : 11 -> 11 commits
   - maintainer, reviewer: 22 -> 22 commits
-  - maintainer, maintainer: 16 -> 15 commits
-- changed commits
-  - e2c3b6b21c77 mm: zswap: use SG list decompression APIs from zsmalloc
-    - branch: mm-unstable -> mm-stable
-  - ad789a85b163 mm/cma: replace snprintf with strscpy in cma_new_area
-    - branch: mm-unstable -> mm-stable
-  - 9a2791e748e5 mm/damon: unify address range representation with damon_addr_range
-    - branch: mm-unstable -> mm-stable
-  - cc5cbf37ceac mm: refactor vma_map_pages to use vm_insert_pages
-    - branch: mm-unstable -> mm-stable
-  - 4188b2592ff6 mm: khugepaged: fix NR_FILE_PAGES and NR_SHMEM in collapse_file()
-    - branch: mm-unstable -> mm-stable
-  - ad1e0c44a415 mm/readahead: fix typo in comment
-    - branch: mm-unstable -> mm-stable
-  - 4a8eabc6e4c7 mm/vmscan: use %pe to print error pointers
-    - branch: mm-unstable -> mm-stable
-  - c69ca4e992e3 mm/zswap: use %pe to print error pointers
-    - branch: mm-unstable -> mm-stable
-  - ef24e0aa078f mm: add SPDX id lines to some mm source files
-    - branch: mm-unstable -> mm-stable
-  - 3881b00a2cea zsmalloc: make common caches global
-    - branch: mm-unstable -> mm-stable
-  - 06f5ff36e418 mm/damon/stat: remove __read_mostly from memory_idle_ms_percentiles
-    - branch: mm-unstable -> mm-stable
-  - d8b65654b16f mm: change mm/pt_reclaim.c to use asm/tlb.h instead of asm-generic/tlb.h
-    - branch: mm-unstable -> mm-stable
-  - 086498aed3f6 mm: convert __HAVE_ARCH_TLB_REMOVE_TABLE to CONFIG_HAVE_ARCH_TLB_REMOVE_TABLE config
-    - branch: mm-unstable -> mm-stable
-    - added "Acked-by: Andreas Larsson <andreas@gaisler.com>		[sparc]"
-    - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-    - added "Tested-by: Andreas Larsson <andreas@gaisler.com>	[sparc, UP&SMP]"
-    - dropped "Cc: David Hildenbrand (Red Hat) <david@kernel.org>"
-    - dropped "Cc: Andreas Larsson <andreas@gaisler.com>"
-  - 9c8c02df3f87 mm: make PT_RECLAIM depends on MMU_GATHER_RCU_TABLE_FREE
-    - branch: mm-unstable -> mm-stable
-  - 4c640eb4181c mm: move pte table reclaim code to memory.c
-    - branch: mm-unstable -> mm-stable
-  - fb4ddf208511 mm/memory: handle non-split locks correctly in zap_empty_pte_table()
-    - branch: mm-unstable -> mm-stable
-mm-unstable: 41 -> 25 commits
-- series: 4 (25) -> 3 (23)
+  - maintainer, maintainer: 16 -> 16 commits
+mm-unstable: 25 -> 25 commits
+- series: 3 (23) -> 3 (23)
 - author/reviewer role stat
-  - no role, nobody: 0 -> 5 commits
-  - no role, no role : 1 -> 7 commits
+  - no role, no role : 1 -> 1 commits
   - no role, reviewer: 3 -> 3 commits
-  - no role, maintainer: 3 -> 6 commits
-  - reviewer, nobody: 2 -> 5 commits
+  - no role, maintainer: 3 -> 3 commits
+  - reviewer, nobody: 2 -> 2 commits
   - reviewer, no role : 1 -> 1 commits
-  - reviewer, reviewer: 6 -> 3 commits
-  - maintainer, nobody: 3 -> 4 commits
-  - maintainer, no role : 0 -> 1 commits
+  - reviewer, reviewer: 6 -> 6 commits
+  - maintainer, nobody: 3 -> 3 commits
   - maintainer, maintainer: 6 -> 6 commits
-- new commits
-  - 60260df6dd93 mm/page_alloc: clear page->private in free_pages_prepare()
-- changed commits
-  - 87dc8b8490d3 mm/vmscan: select the closest preferred node in demote_folio_list()
-    - added "[akpm@linux-foundation.org: fix comment typo, per Shakeel]"
-    - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-    - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-  - 86b077386edf mm: folio_zero_user: open code range computation in folio_zero_user()
-    - added "[ankur.a.arora@oracle.com: remove unneeded cast, per David]"
-    - added "Link: https://lkml.kernel.org/r/20260206223801.2617497-1-ankur.a.arora@oracle.com"
-    - added "Link: : https://lkml.kernel.org/r/20260206223801.2617497-1-ankur.a.arora@oracle.com"
-    - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-    - dropped "Cc: David Hildenbrand <david@kernel.org>"
-  - d7cf7b966974 mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag()
-    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
-    - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-    - added "Cc: Chris Mason <clm@fb.com>"
-    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
-  - 843c3089c3d5 mm: update hugetlbfs to use VMA flags on mmap_prepare
-    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
-    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-    - added "Cc: Chris Mason <clm@fb.com>"
-    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
-  - a3919486fc47 mm: update secretmem to use VMA flags on mmap_prepare
-    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
-    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-    - added "Cc: Chris Mason <clm@fb.com>"
-    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
-  - 2939e08b2bd4 mm-update-secretmem-to-use-vma-flags-on-mmap_prepare-fix
-    - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-    - added "Cc: Vlastimil Babka <vbabka@suse.cz>"
-    - added "Cc: David Hildenbrand <david@kernel.org>"
-    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-    - added "Cc: Barry Song <baohua@kernel.org>"
-    - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-    - added "Cc: Jarkko Sakkinen <jarkko@kernel.org>"
-    - added "Cc: Yury Norov <ynorov@nvidia.com>"
-    - added "Cc: Zi Yan <ziy@nvidia.com>"
-    - added "Cc: Dev Jain <dev.jain@arm.com>"
-    - added "Cc: Liam Howlett <liam.howlett@oracle.com>"
-    - added "Cc: Jason Gunthorpe <jgg@nvidia.com>"
-    - added "Cc: Damien Le Moal <dlemoal@kernel.org>"
-    - added "Cc: "Darrick J. Wong" <djwong@kernel.org>"
-  - ea6f605a4057 mm: update shmem_[kernel]_file_*() functions to use vma_flags_t
-    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
-    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-    - added "Cc: Chris Mason <clm@fb.com>"
-    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
-  - 1cae3d9fb44b mm-update-shmem__file_-functions-to-use-vma_flags_t-fix
-    - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-    - added "Cc: Chris Mason <clm@fb.com>"
-  - fb07d042b871 mm: update all remaining mmap_prepare users to use vma_flags_t
-    - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
-    - added "Cc: Chris Mason <clm@fb.com>"
-  - 9cf2153ccbaf mm: make vm_area_desc utilise vma_flags_t only
-    - added "Reviewed-by: Liam R. Howlett <Liam.Howlett@oracle.com>"
-    - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-    - added "Cc: Chris Mason <clm@fb.com>"
-    - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
-  - 5b7cd2536d7b mm: rmap: support batched checks of the references for large folios
-    - added "Link: https://lkml.kernel.org/r/cover.1770645603.git.baolin.wang@linux.alibaba.com"
-    - added "Link: https://lkml.kernel.org/r/12132694536834262062d1fb304f8f8a064b6750.1770645603.git.baolin.wang@linux.alibaba.com"
-    - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-    - dropped "Link: https://lkml.kernel.org/r/cover.1766631066.git.baolin.wang@linux.alibaba.com"
-    - dropped "Link: https://lkml.kernel.org/r/18b3eb9c730d16756e5d23c7be22efe2f6219911.1766631066.git.baolin.wang@linux.alibaba.com"
-    - dropped "Cc: David Hildenbrand (Red Hat) <david@kernel.org>"
-    - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-  - 17c057a0dcc1 mm: rmap: support batched unmapping for file large folios
-    - added "[1] https://lore.kernel.org/all/20250214093015.51024-4-21cnbao@gmail.com/T/#u"
-    - added "Link: https://lkml.kernel.org/r/b53a16f67c93a3fe65e78092069ad135edf00eff.1770645603.git.baolin.wang@linux.alibaba.com"
-    - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-    - dropped "Link: https://lore.kernel.org/all/20250214093015.51024-4-21cnbao@gmail.com/T/#u [1]"
-    - dropped "Link: https://lkml.kernel.org/r/142919ac14d3cf70cba370808d85debe089df7b4.1766631066.git.baolin.wang@linux.alibaba.com"
-    - dropped "Cc: David Hildenbrand (Red Hat) <david@kernel.org>"
-    - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-- dropped commits
-  - 972589fc11eb mm: rmap: skip batched unmapping for UFFD vmas
-mm-new: 11 -> 12 commits
+mm-new: 12 -> 12 commits
 - series: 2 (4) -> 2 (4)
 - author/reviewer role stat
-  - no role, nobody: 6 -> 5 commits
+  - no role, nobody: 6 -> 6 commits
   - no role, no role : 3 -> 3 commits
   - no role, reviewer: 1 -> 1 commits
   - no role, maintainer: 2 -> 2 commits
-- new commits
-  - 0191da6aa3c8 ksm: optimize rmap_walk_ksm by passing a suitable address range
-  - 102c13d4436c ksm: initialize rmap values directly and make them const
-- dropped commits
-  - 5cc2fea51f42 ksm: optimize rmap_walk_ksm by passing a suitable addressrange
 mm-nonmm-stable: 4 -> 4 commits
 - series: 0 (3) -> 0 (3)
 - author/reviewer role stat

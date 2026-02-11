@@ -7,7 +7,7 @@ mm-new: 1 total, 0 (1) series, 0 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
 - full commits list
-    - 0d47f9bd19b0 mm: memfd_luo: preserve file seals (1/2)
+    - 8fa1875abfe0 mm: memfd_luo: preserve file seals (1/2)
       - Authored by no role player, reviewed by nobody
 mm-nonmm-stable: 10 total, 2 (9) series, 1 non-series commits
 - author/reviewer role stat

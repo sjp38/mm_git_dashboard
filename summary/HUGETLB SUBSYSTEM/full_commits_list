@@ -4,7 +4,7 @@ mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
 - full commits list
-  - caf7732efd0b mm/hugetlb: restore failed global reservations to subpool
+  - e8046ef4b8eb mm/hugetlb: restore failed global reservations to subpool
     - Authored by no role player, reviewed by nobody
 mm-stable: 15 total, 0 (9) series, 6 non-series commits
 - author/reviewer role stat
@@ -47,13 +47,13 @@ mm-unstable: 1 total, 0 (1) series, 0 non-series commits
 - author/reviewer role stat
   - maintainer, maintainer: 1 commits
 - full commits list
-    - 843c3089c3d5 mm: update hugetlbfs to use VMA flags on mmap_prepare (5/13)
+    - 0919731ffbe4 mm: update hugetlbfs to use VMA flags on mmap_prepare (5/13)
       - Authored by a maintainer, reviewed by a maintainer
 mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, maintainer: 1 commits
 - full commits list
-  - 8a662d538e51 fs: hugetlb: simplify remove_inode_hugepages() return type
+  - af41d136f793 fs: hugetlb: simplify remove_inode_hugepages() return type
     - Authored by no role player, reviewed by a maintainer
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

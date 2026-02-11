@@ -37,15 +37,15 @@ mm-unstable: 2 total, 1 (2) series, 0 non-series commits
   - no role, reviewer: 2 commits
 - full commits list
   - series "support batch checking of references and unmapping for large folios", v6. (5 commits)
-    - 5b7cd2536d7b mm: rmap: support batched checks of the references for large folios (0/5)
+    - 37720010b489 mm: rmap: support batched checks of the references for large folios (0/5)
       - Authored by no role player, reviewed by a reviewer
-    - 17c057a0dcc1 mm: rmap: support batched unmapping for file large folios (4/5)
+    - 610208d8b001 mm: rmap: support batched unmapping for file large folios (4/5)
       - Authored by no role player, reviewed by a reviewer
 mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, no role : 1 commits
 - full commits list
-  - 37a4cae6521b mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared thp
+  - 8aef3088bfd4 mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared thp
     - Authored by no role player, reviewed by no role player
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
