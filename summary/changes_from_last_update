@@ -11,9 +11,22 @@ mm-hotfixes-stable: 23 -> 23 commits
 mm-hotfixes-unstable: 4 -> 4 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat
-  - no role, nobody: 2 -> 2 commits
-  - no role, no role : 1 -> 1 commits
+  - no role, nobody: 2 -> 0 commits
+  - no role, no role : 1 -> 2 commits
+  - no role, reviewer: 0 -> 1 commits
   - no role, maintainer: 1 -> 1 commits
+- new commits
+  - fddcf9645611 mm: fix a hmm_range_fault() livelock / starvation problem
+- changed commits
+  - 5a403d9f5eda mm/hugetlb: restore failed global reservations to subpool
+    - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
+  - 326f7120cb42 procfs: fix possible double mmput() in do_procmap_query()
+    - added "Tested-by: Thomas Gleixner <tglx@kernel.org>"
+    - added "Reviewed-by: Shakeel Butt <shakeel.butt@linux.dev>"
+    - added "Closes: https://lkml.kernel.org/r/CAFD3drOJANTZPuyiqMdqpiRwOKnHwv5QgMNZghCDr-WxdiHvMg@mail.gmail.com"
+    - dropped "CLoses: https://lkml.kernel.org/r/CAFD3drOJANTZPuyiqMdqpiRwOKnHwv5QgMNZghCDr-WxdiHvMg@mail.gmail.com"
+- dropped commits
+  - c11ac904ec01 mm: Fix a hmm_range_fault() livelock / starvation problem
 mm-stable: 325 -> 325 commits
 - series: 30 (245) -> 30 (245)
 - author/reviewer role stat
@@ -27,17 +40,23 @@ mm-stable: 325 -> 325 commits
   - maintainer, no role : 16 -> 16 commits
   - maintainer, reviewer: 22 -> 22 commits
   - maintainer, maintainer: 18 -> 18 commits
-mm-unstable: 39 -> 39 commits
+mm-unstable: 39 -> 40 commits
 - series: 5 (34) -> 5 (34)
 - author/reviewer role stat
   - no role, no role : 5 -> 5 commits
   - no role, reviewer: 3 -> 3 commits
   - no role, maintainer: 3 -> 3 commits
-  - reviewer, nobody: 2 -> 2 commits
+  - reviewer, nobody: 2 -> 3 commits
   - reviewer, no role : 1 -> 1 commits
   - reviewer, reviewer: 9 -> 9 commits
   - maintainer, nobody: 7 -> 7 commits
   - maintainer, maintainer: 9 -> 9 commits
+- new commits
+  - 3efa162b1521 mm: fix up unmap desc use on exit_mmap()
+- changed commits
+  - 395ef0d05f62 mm: use unmap_desc struct for freeing page tables
+    - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+    - dropped "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
 mm-new: 47 -> 47 commits
 - series: 3 (34) -> 3 (34)
 - author/reviewer role stat

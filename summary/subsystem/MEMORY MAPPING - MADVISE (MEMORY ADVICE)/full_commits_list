@@ -20,7 +20,7 @@ mm-unstable: 1 total, 0 (1) series, 0 non-series commits
 - author/reviewer role stat
   - reviewer, reviewer: 1 commits
 - full commits list
-    - 1e2c7e572712 mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
+    - dc9aea06619a mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
       - Authored by a reviewer, reviewed by a reviewer
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

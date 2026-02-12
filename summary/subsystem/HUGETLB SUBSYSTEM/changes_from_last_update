@@ -4,7 +4,11 @@ mm-hotfixes-stable: 0 -> 0 commits
 mm-hotfixes-unstable: 1 -> 1 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat
-  - no role, nobody: 1 -> 1 commits
+  - no role, nobody: 1 -> 0 commits
+  - no role, no role : 0 -> 1 commits
+- changed commits
+  - 5a403d9f5eda mm/hugetlb: restore failed global reservations to subpool
+    - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
 mm-stable: 15 -> 15 commits
 - series: 0 (9) -> 0 (9)
 - author/reviewer role stat

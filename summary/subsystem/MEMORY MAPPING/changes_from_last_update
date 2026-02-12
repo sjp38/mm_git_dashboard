@@ -11,13 +11,19 @@ mm-stable: 5 -> 5 commits
   - no role, maintainer: 1 -> 1 commits
   - reviewer, reviewer: 1 -> 1 commits
   - maintainer, reviewer: 1 -> 1 commits
-mm-unstable: 20 -> 20 commits
+mm-unstable: 20 -> 21 commits
 - series: 1 (17) -> 1 (17)
 - author/reviewer role stat
-  - reviewer, nobody: 2 -> 2 commits
+  - reviewer, nobody: 2 -> 3 commits
   - reviewer, reviewer: 6 -> 6 commits
   - maintainer, nobody: 3 -> 3 commits
   - maintainer, maintainer: 9 -> 9 commits
+- new commits
+  - 3efa162b1521 mm: fix up unmap desc use on exit_mmap()
+- changed commits
+  - 395ef0d05f62 mm: use unmap_desc struct for freeing page tables
+    - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+    - dropped "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
 mm-new: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-nonmm-stable: 0 -> 0 commits

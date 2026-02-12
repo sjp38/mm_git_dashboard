@@ -4,7 +4,12 @@ mm-hotfixes-stable: 0 -> 0 commits
 mm-hotfixes-unstable: 1 -> 1 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat
-  - no role, no role : 1 -> 1 commits
+  - no role, no role : 1 -> 0 commits
+  - no role, reviewer: 0 -> 1 commits
+- new commits
+  - fddcf9645611 mm: fix a hmm_range_fault() livelock / starvation problem
+- dropped commits
+  - c11ac904ec01 mm: Fix a hmm_range_fault() livelock / starvation problem
 mm-stable: 2 -> 2 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat
