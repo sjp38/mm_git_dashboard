@@ -1,25 +1,30 @@
 baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f
-mm-hotfixes-stable: 0 -> 0 commits
-- series: 0 (0) -> 0 (0)
-mm-hotfixes-unstable: 1 -> 1 commits
+mm-hotfixes-stable: 0 -> 1 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat
-  - no role, nobody: 1 -> 0 commits
   - no role, no role : 0 -> 1 commits
 - changed commits
-  - 5a403d9f5eda mm/hugetlb: restore failed global reservations to subpool
-    - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
-mm-stable: 15 -> 15 commits
-- series: 0 (9) -> 0 (9)
+  - 1d3f9bb4c8af mm/hugetlb: restore failed global reservations to subpool
+    - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+mm-hotfixes-unstable: 1 -> 0 commits
+- series: 0 (0) -> 0 (0)
+- author/reviewer role stat
+  - no role, no role : 1 -> 0 commits
+mm-stable: 15 -> 16 commits
+- series: 0 (9) -> 0 (10)
 - author/reviewer role stat
   - no role, nobody: 3 -> 3 commits
   - no role, no role : 5 -> 5 commits
   - no role, reviewer: 1 -> 1 commits
   - no role, maintainer: 6 -> 6 commits
-mm-unstable: 1 -> 1 commits
-- series: 0 (1) -> 0 (1)
+  - maintainer, maintainer: 0 -> 1 commits
+- changed commits
+  - 097e8db5e22b mm: update hugetlbfs to use VMA flags on mmap_prepare
+    - branch: mm-unstable -> mm-stable
+mm-unstable: 1 -> 0 commits
+- series: 0 (1) -> 0 (0)
 - author/reviewer role stat
-  - maintainer, maintainer: 1 -> 1 commits
+  - maintainer, maintainer: 1 -> 0 commits
 mm-new: 1 -> 1 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat

@@ -1,13 +1,13 @@
 baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-stable: 0 total, 0 (0) series, 0 non-series commits
-mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+mm-stable: 1 total, 0 (1) series, 0 non-series commits
 - author/reviewer role stat
   - reviewer, reviewer: 1 commits
 - full commits list
-    - 12370b753e04 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
+    - fd3196ee9ca1 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
       - Authored by a reviewer, reviewed by a reviewer
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

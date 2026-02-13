@@ -1,12 +1,12 @@
 baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-stable: 14 total, 2 (10) series, 4 non-series commits
+mm-stable: 16 total, 3 (12) series, 4 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
   - no role, no role : 2 commits
-  - no role, reviewer: 4 commits
-  - no role, maintainer: 1 commits
+  - no role, reviewer: 5 commits
+  - no role, maintainer: 2 commits
   - reviewer, no role : 1 commits
   - maintainer, nobody: 1 commits
   - maintainer, no role : 1 commits
@@ -43,16 +43,12 @@ mm-stable: 14 total, 2 (10) series, 4 non-series commits
       - Authored by a maintainer, reviewed by a reviewer
   - 4a8eabc6e4c7 mm/vmscan: use %pe to print error pointers
     - Authored by no role player, reviewed by no role player
-mm-unstable: 2 total, 1 (2) series, 0 non-series commits
-- author/reviewer role stat
-  - no role, reviewer: 1 commits
-  - no role, maintainer: 1 commits
-- full commits list
   - series "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
-    - a9a68d3aba31 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
+    - 1aceed565ff1 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
       - Authored by no role player, reviewed by a maintainer
-    - 7984bb5df115 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
+    - 7ec9ecf217f8 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
       - Authored by no role player, reviewed by a reviewer
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

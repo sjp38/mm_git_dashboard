@@ -1,18 +1,15 @@
 baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
-- author/reviewer role stat
-  - no role, reviewer: 1 commits
-- full commits list
-  - fddcf9645611 mm: fix a hmm_range_fault() livelock / starvation problem
-    - Authored by no role player, reviewed by a reviewer
-mm-stable: 50 total, 4 (40) series, 10 non-series commits
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-stable: 64 total, 7 (53) series, 11 non-series commits
 - author/reviewer role stat
   - no role, nobody: 4 commits
-  - no role, no role : 23 commits
-  - no role, reviewer: 12 commits
+  - no role, no role : 24 commits
+  - no role, reviewer: 13 commits
   - no role, maintainer: 5 commits
-  - reviewer, reviewer: 4 commits
+  - reviewer, nobody: 2 commits
+  - reviewer, no role : 1 commits
+  - reviewer, reviewer: 13 commits
   - maintainer, reviewer: 2 commits
 - full commits list
     - f2be745071ff mm: clarify lazy_mmu sleeping constraints (4/14)
@@ -119,52 +116,43 @@ mm-stable: 50 total, 4 (40) series, 10 non-series commits
     - Authored by no role player, reviewed by no role player
   - fb4ddf208511 mm/memory: handle non-split locks correctly in zap_empty_pte_table()
     - Authored by no role player, reviewed by no role player
-mm-unstable: 15 total, 3 (13) series, 2 non-series commits
-- author/reviewer role stat
-  - no role, no role : 1 commits
-  - no role, reviewer: 1 commits
-  - reviewer, nobody: 3 commits
-  - reviewer, no role : 1 commits
-  - reviewer, reviewer: 9 commits
-- full commits list
-  - cac2d3468c1c mm: folio_zero_user: open code range computation in folio_zero_user()
+  - 3f54ef56fd45 mm: folio_zero_user: open code range computation in folio_zero_user()
     - Authored by no role player, reviewed by no role player
   - series " Remove XA_ZERO from error recovery of dup_mmap()", v3. (11 commits)
-    - aa78cdf1d54a mm: relocate the page table ceiling and floor definitions (0/11)
+    - bed76bec3111 mm: relocate the page table ceiling and floor definitions (0/11)
       - Authored by a reviewer, reviewed by nobody
-    - f794797ef8ba mm/memory: add tree limit to free_pgtables() (4/11)
+    - eda8c5e77622 mm/memory: add tree limit to free_pgtables() (4/11)
       - Authored by a reviewer, reviewed by a reviewer
-    - 0ddcf0077188 mm: change dup_mmap() recovery (6/11)
+    - 43873af772f8 mm: change dup_mmap() recovery (6/11)
       - Authored by a reviewer, reviewed by a reviewer
-    - 0b02ea24f9c3 mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes() (8/11)
+    - 0df5a8d3948d mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes() (8/11)
       - Authored by a reviewer, reviewed by nobody
-    - 395ef0d05f62 mm: use unmap_desc struct for freeing page tables (10/11)
+    - a8700d42b0af mm: use unmap_desc struct for freeing page tables (10/11)
       - Authored by a reviewer, reviewed by a reviewer
-  - 3efa162b1521 mm: fix up unmap desc use on exit_mmap()
-    - Authored by a reviewer, reviewed by nobody
   - series "mm: add bitmap VMA flag helpers and convert all mmap_prepare to use them", v2. (13 commits)
-    - c66cc799aa73 mm/vma: remove __private sparse decoration from vma_flags_t (0/13)
+    - a30de4c6b79a mm/vma: remove __private sparse decoration from vma_flags_t (0/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - dc9aea06619a mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
+    - e388d31257ed mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - 1e5428e950bb mm: add mk_vma_flags() bitmap flag macro helper (2/13)
+    - 1c628004e0de mm: add mk_vma_flags() bitmap flag macro helper (2/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - 7698964a68e4 mm: add basic VMA flag operation helper functions (4/13)
+    - bae0ba7c7c0a mm: add basic VMA flag operation helper functions (4/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - 12370b753e04 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
+    - fd3196ee9ca1 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - a1104d4bcd09 mm: update all remaining mmap_prepare users to use vma_flags_t (10/13)
+    - 5bd2c0650a90 mm: update all remaining mmap_prepare users to use vma_flags_t (8/13)
       - Authored by a reviewer, reviewed by no role player
-    - 7dfd0dc67521 mm: make vm_area_desc utilise vma_flags_t only (11/13)
+    - 53f1d9364451 mm: make vm_area_desc utilise vma_flags_t only (9/13)
       - Authored by a reviewer, reviewed by a reviewer
   - series "support batch checking of references and unmapping for large folios", v6. (5 commits)
-    - 4511640f454e mm: rmap: support batched checks of the references for large folios (0/5)
+    - 52e054f71840 mm: rmap: support batched checks of the references for large folios (0/5)
       - Authored by no role player, reviewed by a reviewer
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, maintainer: 1 commits
 - full commits list
-  - 2c79b953f405 arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
+  - f2767228da7c arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
     - Authored by no role player, reviewed by a maintainer
 mm-nonmm-stable: 2 total, 0 (0) series, 2 non-series commits
 - author/reviewer role stat

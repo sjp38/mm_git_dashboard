@@ -1,11 +1,6 @@
 baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
-- author/reviewer role stat
-  - no role, reviewer: 1 commits
-- full commits list
-  - fddcf9645611 mm: fix a hmm_range_fault() livelock / starvation problem
-    - Authored by no role player, reviewed by a reviewer
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 mm-stable: 6 total, 0 (3) series, 3 non-series commits
 - author/reviewer role stat
   - no role, no role : 1 commits
@@ -25,6 +20,11 @@ mm-stable: 6 total, 0 (3) series, 3 non-series commits
     - cd8e95d80bc2 mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION (21/24)
       - Authored by no role player, reviewed by a reviewer
 mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-new: 0 total, 0 (0) series, 0 non-series commits
+mm-new: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, reviewer: 1 commits
+- full commits list
+  - 8bd8fc656a09 mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()
+    - Authored by no role player, reviewed by a reviewer
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

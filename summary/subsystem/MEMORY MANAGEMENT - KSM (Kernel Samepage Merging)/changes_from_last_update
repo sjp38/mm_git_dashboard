@@ -7,10 +7,26 @@ mm-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-mm-new: 3 -> 3 commits
+mm-new: 3 -> 2 commits
 - series: 1 (2) -> 1 (2)
 - author/reviewer role stat
-  - no role, nobody: 3 -> 3 commits
+  - no role, nobody: 3 -> 0 commits
+  - no role, no role : 0 -> 2 commits
+- changed commits
+  - 45c36c6daae7 ksm: initialize the addr only once in rmap_walk_ksm
+    - added "Link: https://lkml.kernel.org/r/20260212192820223O_r2NQzSEPG_C56cs-z4l@zte.com.cn"
+    - added "Link: https://lkml.kernel.org/r/20260212192932941MSsJEAyoRW4YdLBN7_myn@zte.com.cn"
+    - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+    - dropped "Link: https://lkml.kernel.org/r/20260112215522600q2jPW2Un_1HGohr1lVXJ3@zte.com.cn"
+    - dropped "Cc: David Hildenbrand <david@kernel.org>"
+  - 235fdb72c7c8 ksm: optimize rmap_walk_ksm by passing a suitable address range
+    - added "Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn"
+    - added "Signed-off-by: Wang Yaxin <wang.yaxin@zte.com.cn>"
+    - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+    - dropped "Link: https://lkml.kernel.org/r/20260112220143497dgs9w3S7sfdTUNRbflDtb@zte.com.cn"
+    - dropped "Cc: David Hildenbrand <david@kernel.org>"
+- dropped commits
+  - 1b3e762bf16d ksm: initialize rmap values directly and make them const
 mm-nonmm-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-nonmm-unstable: 0 -> 0 commits

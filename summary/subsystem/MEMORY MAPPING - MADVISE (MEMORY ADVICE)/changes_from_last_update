@@ -3,17 +3,20 @@ mm-hotfixes-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-hotfixes-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-mm-stable: 4 -> 4 commits
-- series: 0 (3) -> 0 (3)
+mm-stable: 4 -> 5 commits
+- series: 0 (3) -> 0 (4)
 - author/reviewer role stat
   - no role, no role : 1 -> 1 commits
   - no role, reviewer: 1 -> 1 commits
-  - reviewer, reviewer: 1 -> 1 commits
+  - reviewer, reviewer: 1 -> 2 commits
   - maintainer, reviewer: 1 -> 1 commits
-mm-unstable: 1 -> 1 commits
-- series: 0 (1) -> 0 (1)
+- changed commits
+  - e388d31257ed mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag()
+    - branch: mm-unstable -> mm-stable
+mm-unstable: 1 -> 0 commits
+- series: 0 (1) -> 0 (0)
 - author/reviewer role stat
-  - reviewer, reviewer: 1 -> 1 commits
+  - reviewer, reviewer: 1 -> 0 commits
 mm-new: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-nonmm-stable: 0 -> 0 commits

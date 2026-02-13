@@ -5,7 +5,12 @@ mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
 - full commits list
   - 9b47d4eea3f7 mm/kasan: fix KASAN poisoning in vrealloc()
     - Authored by a maintainer, reviewed by a reviewer
-mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 1 commits
+- full commits list
+  - 39a7efa0282b mm: allow __GFP_RETRY_MAYFAIL in vmalloc
+    - Authored by no role player, reviewed by nobody
 mm-stable: 5 total, 0 (1) series, 4 non-series commits
 - author/reviewer role stat
   - no role, no role : 4 commits

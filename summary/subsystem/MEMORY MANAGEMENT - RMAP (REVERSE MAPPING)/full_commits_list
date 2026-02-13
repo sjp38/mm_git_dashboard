@@ -1,9 +1,10 @@
 baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-stable: 11 total, 1 (9) series, 2 non-series commits
+mm-stable: 13 total, 2 (11) series, 2 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
+  - no role, reviewer: 2 commits
   - no role, maintainer: 1 commits
   - reviewer, reviewer: 2 commits
   - maintainer, nobody: 1 commits
@@ -32,20 +33,12 @@ mm-stable: 11 total, 1 (9) series, 2 non-series commits
       - Authored by a maintainer, reviewed by a reviewer
   - ef24e0aa078f mm: add SPDX id lines to some mm source files
     - Authored by no role player, reviewed by nobody
-mm-unstable: 2 total, 1 (2) series, 0 non-series commits
-- author/reviewer role stat
-  - no role, reviewer: 2 commits
-- full commits list
   - series "support batch checking of references and unmapping for large folios", v6. (5 commits)
-    - 4511640f454e mm: rmap: support batched checks of the references for large folios (0/5)
+    - 52e054f71840 mm: rmap: support batched checks of the references for large folios (0/5)
       - Authored by no role player, reviewed by a reviewer
-    - ea85267dbfd5 mm: rmap: support batched unmapping for file large folios (4/5)
+    - a67fe41e214f mm: rmap: support batched unmapping for file large folios (4/5)
       - Authored by no role player, reviewed by a reviewer
-mm-new: 1 total, 0 (0) series, 1 non-series commits
-- author/reviewer role stat
-  - no role, no role : 1 commits
-- full commits list
-  - d26e5e462d7a mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared thp
-    - Authored by no role player, reviewed by no role player
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-new: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

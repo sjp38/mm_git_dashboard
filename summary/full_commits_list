@@ -1,10 +1,10 @@
 baseline: v6.19-rc6-36-g6c790212c588f
-mm-hotfixes-stable: 23 total, 2 (5) series, 18 non-series commits
+mm-hotfixes-stable: 26 total, 2 (5) series, 21 non-series commits
 - author/reviewer role stat
   - no role, nobody: 2 commits
-  - no role, no role : 9 commits
+  - no role, no role : 11 commits
   - no role, reviewer: 1 commits
-  - no role, maintainer: 8 commits
+  - no role, maintainer: 9 commits
   - maintainer, no role : 2 commits
   - maintainer, reviewer: 1 commits
 - full commits list
@@ -56,32 +56,31 @@ mm-hotfixes-stable: 23 total, 2 (5) series, 18 non-series commits
     - Authored by a maintainer, reviewed by no role player
   - ae9fd76c111b mm/memory-failure: reject unsupported non-folio compound page
     - Authored by a maintainer, reviewed by no role player
-mm-hotfixes-unstable: 4 total, 0 (0) series, 4 non-series commits
-- author/reviewer role stat
-  - no role, no role : 2 commits
-  - no role, reviewer: 1 commits
-  - no role, maintainer: 1 commits
-- full commits list
-  - 5a403d9f5eda mm/hugetlb: restore failed global reservations to subpool
+  - 1d3f9bb4c8af mm/hugetlb: restore failed global reservations to subpool
     - Authored by no role player, reviewed by no role player
-  - e9594a74ab49 mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK
+  - 338ad1e84d15 mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK
     - Authored by no role player, reviewed by a maintainer
-  - fddcf9645611 mm: fix a hmm_range_fault() livelock / starvation problem
-    - Authored by no role player, reviewed by a reviewer
-  - 326f7120cb42 procfs: fix possible double mmput() in do_procmap_query()
+  - 61dc9f776705 procfs: fix possible double mmput() in do_procmap_query()
     - Authored by no role player, reviewed by no role player
-mm-stable: 325 total, 30 (245) series, 80 non-series commits
+mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 1 commits
+- full commits list
+  - 39a7efa0282b mm: allow __GFP_RETRY_MAYFAIL in vmalloc
+    - Authored by no role player, reviewed by nobody
+mm-stable: 361 total, 35 (279) series, 82 non-series commits
 - author/reviewer role stat
   - no role, nobody: 33 commits
-  - no role, no role : 85 commits
-  - no role, reviewer: 28 commits
-  - no role, maintainer: 61 commits
-  - reviewer, no role : 2 commits
-  - reviewer, reviewer: 5 commits
-  - maintainer, nobody: 55 commits
+  - no role, no role : 90 commits
+  - no role, reviewer: 31 commits
+  - no role, maintainer: 64 commits
+  - reviewer, nobody: 2 commits
+  - reviewer, no role : 3 commits
+  - reviewer, reviewer: 14 commits
+  - maintainer, nobody: 59 commits
   - maintainer, no role : 16 commits
   - maintainer, reviewer: 22 commits
-  - maintainer, maintainer: 18 commits
+  - maintainer, maintainer: 27 commits
 - full commits list
   - a03ed8f144e2 mm/vmalloc: clarify why vmap_range_noflush() might sleep
     - Authored by no role player, reviewed by no role player
@@ -762,214 +761,185 @@ mm-stable: 325 total, 30 (245) series, 80 non-series commits
     - Authored by no role player, reviewed by no role player
   - fb4ddf208511 mm/memory: handle non-split locks correctly in zap_empty_pte_table()
     - Authored by no role player, reviewed by no role player
-mm-unstable: 40 total, 5 (34) series, 6 non-series commits
-- author/reviewer role stat
-  - no role, no role : 5 commits
-  - no role, reviewer: 3 commits
-  - no role, maintainer: 3 commits
-  - reviewer, nobody: 3 commits
-  - reviewer, no role : 1 commits
-  - reviewer, reviewer: 9 commits
-  - maintainer, nobody: 7 commits
-  - maintainer, maintainer: 9 commits
-- full commits list
   - series "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
-    - a9a68d3aba31 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
+    - 1aceed565ff1 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
       - Authored by no role player, reviewed by a maintainer
-    - 7984bb5df115 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
+    - 7ec9ecf217f8 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
       - Authored by no role player, reviewed by a reviewer
-  - cac2d3468c1c mm: folio_zero_user: open code range computation in folio_zero_user()
+  - 3f54ef56fd45 mm: folio_zero_user: open code range computation in folio_zero_user()
     - Authored by no role player, reviewed by no role player
   - series " Remove XA_ZERO from error recovery of dup_mmap()", v3. (11 commits)
-    - aa78cdf1d54a mm: relocate the page table ceiling and floor definitions (0/11)
+    - bed76bec3111 mm: relocate the page table ceiling and floor definitions (0/11)
       - Authored by a reviewer, reviewed by nobody
-    - f171f68da4e6 mm/mmap: move exit_mmap() trace point (1/11)
+    - 95725acc3cd8 mm/mmap: move exit_mmap() trace point (1/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - a6f75fe7e667 mm/mmap: abstract vma clean up from exit_mmap() (2/11)
+    - d6d13e2ad81a mm/mmap: abstract vma clean up from exit_mmap() (2/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - 3668f106043c mm/vma: add limits to unmap_region() for vmas (3/11)
+    - 23bd03a9a204 mm/vma: add limits to unmap_region() for vmas (3/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - f794797ef8ba mm/memory: add tree limit to free_pgtables() (4/11)
+    - eda8c5e77622 mm/memory: add tree limit to free_pgtables() (4/11)
       - Authored by a reviewer, reviewed by a reviewer
-    - 673ced6c3175 mm/vma: add page table limit to unmap_region() (5/11)
+    - 243de0c0dc04 mm/vma: add page table limit to unmap_region() (5/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - 0ddcf0077188 mm: change dup_mmap() recovery (6/11)
+    - 43873af772f8 mm: change dup_mmap() recovery (6/11)
       - Authored by a reviewer, reviewed by a reviewer
-    - a3e4676bf01c mm: introduce unmap_desc struct to reduce function arguments (7/11)
+    - 5b6626a76a81 mm: introduce unmap_desc struct to reduce function arguments (7/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - 0b02ea24f9c3 mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes() (8/11)
+    - 0df5a8d3948d mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes() (8/11)
       - Authored by a reviewer, reviewed by nobody
-    - 1a26ff70648e mm/vma: use unmap_region() in vms_clear_ptes() (9/11)
+    - 2314fe9ba5e6 mm/vma: use unmap_region() in vms_clear_ptes() (9/11)
       - Authored by a maintainer, reviewed by nobody
-    - 395ef0d05f62 mm: use unmap_desc struct for freeing page tables (10/11)
+    - a8700d42b0af mm: use unmap_desc struct for freeing page tables (10/11)
       - Authored by a reviewer, reviewed by a reviewer
-  - 3efa162b1521 mm: fix up unmap desc use on exit_mmap()
-    - Authored by a reviewer, reviewed by nobody
   - series "mm: add bitmap VMA flag helpers and convert all mmap_prepare to use them", v2. (13 commits)
-    - c66cc799aa73 mm/vma: remove __private sparse decoration from vma_flags_t (0/13)
+    - a30de4c6b79a mm/vma: remove __private sparse decoration from vma_flags_t (0/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - dc9aea06619a mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
+    - e388d31257ed mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - 1e5428e950bb mm: add mk_vma_flags() bitmap flag macro helper (2/13)
+    - 1c628004e0de mm: add mk_vma_flags() bitmap flag macro helper (2/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - e5ff3183d106 tools: bitmap: add missing bitmap_[subset(), andnot()] (3/13)
+    - 21c8a5bae7bd tools: bitmap: add missing bitmap_[subset(), andnot()] (3/13)
       - Authored by no role player, reviewed by no role player
-    - 7698964a68e4 mm: add basic VMA flag operation helper functions (4/13)
+    - bae0ba7c7c0a mm: add basic VMA flag operation helper functions (4/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - cc5c859f9fa0 mm: update hugetlbfs to use VMA flags on mmap_prepare (5/13)
+    - 097e8db5e22b mm: update hugetlbfs to use VMA flags on mmap_prepare (5/13)
       - Authored by a maintainer, reviewed by a maintainer
-    - 12370b753e04 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
+    - fd3196ee9ca1 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - d2930c88aad5 mm-update-secretmem-to-use-vma-flags-on-mmap_prepare-fix (7/13)
-      - Authored by a maintainer, reviewed by nobody
-    - e5ffcbb1a911 mm: update shmem_[kernel]_file_*() functions to use vma_flags_t (8/13)
+    - 590d356aa433 mm: update shmem_[kernel]_file_*() functions to use vma_flags_t (7/13)
       - Authored by no role player, reviewed by a maintainer
-    - 1ffc82916942 mm-update-shmem__file_-functions-to-use-vma_flags_t-fix (9/13)
-      - Authored by a maintainer, reviewed by nobody
-    - a1104d4bcd09 mm: update all remaining mmap_prepare users to use vma_flags_t (10/13)
+    - 5bd2c0650a90 mm: update all remaining mmap_prepare users to use vma_flags_t (8/13)
       - Authored by a reviewer, reviewed by no role player
-    - 7dfd0dc67521 mm: make vm_area_desc utilise vma_flags_t only (11/13)
+    - 53f1d9364451 mm: make vm_area_desc utilise vma_flags_t only (9/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - 307767a3f46f tools/testing/vma: separate VMA userland tests into separate files (12/13)
+    - 6aacab308a5d tools/testing/vma: separate VMA userland tests into separate files (10/13)
       - Authored by a maintainer, reviewed by a maintainer
-  - 3a8227d09e5a tools/testing/vma: separate out vma_internal.h into logical headers
-    - Authored by a maintainer, reviewed by a maintainer
-  - 3f950de6c941 tools-testing-vma-separate-out-vma_internalh-into-logical-headers-fix
-    - Authored by a maintainer, reviewed by nobody
-  - a2dfcabaf84c tools/testing/vma: add VMA userland tests for VMA flag functions
-    - Authored by a maintainer, reviewed by a maintainer
+    - a1f0dacaaba1 tools/testing/vma: separate out vma_internal.h into logical headers (11/13)
+      - Authored by a maintainer, reviewed by a maintainer
+    - f615cc92641a tools/testing/vma: add VMA userland tests for VMA flag functions (12/13)
+      - Authored by a maintainer, reviewed by a maintainer
   - series "support batch checking of references and unmapping for large folios", v6. (5 commits)
-    - 4511640f454e mm: rmap: support batched checks of the references for large folios (0/5)
+    - 52e054f71840 mm: rmap: support batched checks of the references for large folios (0/5)
       - Authored by no role player, reviewed by a reviewer
-    - 4f8810622d23 arm64: mm: factor out the address and ptep alignment into a new helper (1/5)
+    - 67d59bddfc26 arm64: mm: factor out the address and ptep alignment into a new helper (1/5)
       - Authored by no role player, reviewed by no role player
-    - e24c5a88c58d arm64: mm: support batch clearing of the young flag for large folios (2/5)
+    - 6f0e1142173a arm64: mm: support batch clearing of the young flag for large folios (2/5)
       - Authored by no role player, reviewed by no role player
-    - 6479561f001a arm64: mm: implement the architecture-specific clear_flush_young_ptes() (3/5)
+    - 07f440c23a19 arm64: mm: implement the architecture-specific clear_flush_young_ptes() (3/5)
       - Authored by no role player, reviewed by no role player
-    - ea85267dbfd5 mm: rmap: support batched unmapping for file large folios (4/5)
+    - a67fe41e214f mm: rmap: support batched unmapping for file large folios (4/5)
       - Authored by no role player, reviewed by a reviewer
   - series "selftests/mm: add memory failure selftests", v4. (3 commits)
-    - 0f9e91453387 selftests/mm: add memory failure anonymous page test (0/3)
+    - ff4ef2fbd101 selftests/mm: add memory failure anonymous page test (0/3)
       - Authored by a maintainer, reviewed by nobody
-    - fc10eed0e7da selftests/mm: add memory failure clean pagecache test (1/3)
+    - 12e8a2fae372 selftests/mm: add memory failure clean pagecache test (1/3)
       - Authored by a maintainer, reviewed by nobody
-    - 63c0db714293 selftests/mm: add memory failure dirty pagecache test (2/3)
+    - d51b5076c746 selftests/mm: add memory failure dirty pagecache test (2/3)
       - Authored by a maintainer, reviewed by nobody
-  - 3651bc97781c mm/page_alloc: clear page->private in free_pages_prepare()
+  - ac1ea219590c mm/page_alloc: clear page->private in free_pages_prepare()
     - Authored by no role player, reviewed by a maintainer
-mm-new: 47 total, 3 (34) series, 13 non-series commits
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-new: 43 total, 2 (32) series, 11 non-series commits
 - author/reviewer role stat
-  - no role, nobody: 6 commits
-  - no role, no role : 3 commits
-  - no role, reviewer: 1 commits
-  - no role, maintainer: 3 commits
-  - reviewer, nobody: 1 commits
+  - no role, no role : 4 commits
+  - no role, reviewer: 2 commits
+  - no role, maintainer: 4 commits
   - maintainer, nobody: 33 commits
 - full commits list
-  - series "KSM: Optimizations for rmap_walk_ksm". (2 commits)
-    - 4276b28c23fd ksm: initialize the addr only once in rmap_walk_ksm (0/2)
-      - Authored by no role player, reviewed by nobody
-    - 1f55345ae9cc ksm: optimize rmap_walk_ksm by passing a suitable address range (1/2)
-      - Authored by no role player, reviewed by nobody
-  - 1b3e762bf16d ksm: initialize rmap values directly and make them const
-    - Authored by no role player, reviewed by nobody
-  - series "maple_tree: Replace big node with maple copy", v3. (30 commits)
-    - 634c9cdd0cd6 maple_tree: fix mas_dup_alloc() sparse warning (0/30)
-      - Authored by a maintainer, reviewed by nobody
-    - e2c791ed3b29 maple_tree: move mas_spanning_rebalance loop to function (1/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 47bf407e0bea maple_tree: extract use of big node from mas_wr_spanning_store() (2/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 5236e90820ef maple_tree: remove unnecessary assignment of orig_l index (3/30)
-      - Authored by a maintainer, reviewed by nobody
-    - ae1d0b83756d maple_tree: inline mas_spanning_rebalance() into mas_wr_spanning_rebalance() (4/30)
-      - Authored by a maintainer, reviewed by nobody
-    - d1e28ae73c0f maple_tree: make ma_wr_states reliable for reuse in spanning store (5/30)
-      - Authored by a maintainer, reviewed by nobody
-    - e69de067155a maple_tree: remove l_wr_mas from mas_wr_spanning_rebalance (6/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 9d611f99a892 maple_tree: don't pass through height in mas_wr_spanning_store (7/30)
-      - Authored by a maintainer, reviewed by nobody
-    - f2e4ba978471 maple_tree: move maple_subtree_state from mas_wr_spanning_store to mas_wr_spanning_rebalance (8/30)
-      - Authored by a maintainer, reviewed by nobody
-    - e2556431e25f maple_tree: correct right ma_wr_state end pivot in mas_wr_spanning_store() (9/30)
-      - Authored by a maintainer, reviewed by nobody
-    - a1240b9881df maple_tree: introduce maple_copy node and use it in mas_spanning_rebalance() (10/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 93a74525be1b maple_tree: testing update for spanning store (11/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 580d12a52454 maple_tree: inline mas_spanning_rebalance_loop() into mas_wr_spanning_rebalance() (12/30)
-      - Authored by a maintainer, reviewed by nobody
-    - a6fc537f61d3 maple_tree: change initial big node setup in mas_wr_spanning_rebalance() (13/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 23e256aa6715 maple_tree: introduce ma_leaf_max_gap() (14/30)
-      - Authored by a maintainer, reviewed by nobody
-    - ce1130776db3 maple_tree: add gap support, slot and pivot sizes for maple copy (15/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 35d0a51eb0e4 maple_tree: start using maple copy node for destination (16/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 6cc493cb16c6 maple_tree-start-using-maple-copy-node-for-destination-checkpatch-fixes (17/30)
-      - Authored by a maintainer, reviewed by nobody
-    - ce62d9956206 maple_tree: inline mas_wr_spanning_rebalance() (18/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 4ca177a8b959 maple_tree: remove unnecessary return statements (19/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 632d53e2d09a maple_tree: separate wr_split_store and wr_rebalance store type code path (20/30)
-      - Authored by a maintainer, reviewed by nobody
-    - c8b28f1deaef maple_tree: add cp_is_new_root() helper (21/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 8df37b31289e maple_tree-add-cp_is_new_root-helper-fix (22/30)
-      - Authored by a maintainer, reviewed by nobody
-    - edf96d00622a maple_tree-add-cp_is_new_root-helper-fix-fix (23/30)
-      - Authored by a maintainer, reviewed by nobody
-    - c09ecfa8d78f maple_tree: use maple copy node for mas_wr_rebalance() operation (24/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 3f97f28e4139 maple_tree: add test for rebalance calculation off-by-one (25/30)
-      - Authored by a maintainer, reviewed by nobody
-    - a966d7aa31ca maple_tree: add copy_tree_location() helper (26/30)
-      - Authored by a maintainer, reviewed by nobody
-    - 5c1612da2226 maple_tree: add cp_converged() helper (27/30)
-      - Authored by a maintainer, reviewed by nobody
-    - ae38519a91d7 maple_tree: use maple copy node for mas_wr_split() (28/30)
-      - Authored by a maintainer, reviewed by nobody
-    - e17955c8cae7 maple_tree: remove maple big node and subtree structs (29/30)
-      - Authored by a maintainer, reviewed by nobody
-  - b51d3cf65393 maple_tree: pass maple copy node to mas_wmb_replace()
-    - Authored by a maintainer, reviewed by nobody
-  - f925ba43e751 maple_tree: don't pass end to mas_wr_append()
-    - Authored by a maintainer, reviewed by nobody
-  - 7044259448ed maple_tree: clean up mas_wr_node_store()
-    - Authored by a maintainer, reviewed by nobody
-  - 2c6ad7c6a208 maple_tree: update mas_next[_range] docs
-    - Authored by a reviewer, reviewed by nobody
-  - series "mm: memfd_luo: preserve file seals". (2 commits)
-    - d069a7b551c9 memfd: export memfd_{add,get}_seals() (0/2)
-      - Authored by no role player, reviewed by no role player
-    - 1ff0c50e3366 mm: memfd_luo: preserve file seals (1/2)
-      - Authored by no role player, reviewed by nobody
-  - 1c62d9c52c8b mm/page_alloc: avoid overcounting bulk alloc in watermark check
-    - Authored by no role player, reviewed by nobody
-  - 2c79b953f405 arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
-    - Authored by no role player, reviewed by a maintainer
-  - 80ee89794754 mm/fadvise: validate offset in generic_fadvise
-    - Authored by no role player, reviewed by nobody
-  - f2bd00795053 mm: numa_memblks: identify the accurate NUMA ID of CFMW
-    - Authored by no role player, reviewed by no role player
-  - 4c8c820d0ff0 mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold
-    - Authored by no role player, reviewed by a maintainer
-  - 4dbf1170fd6e mm/shrinker: fix refcount leak in shrink_slab_memcg()
+  - 8bd8fc656a09 mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()
     - Authored by no role player, reviewed by a reviewer
-  - d26e5e462d7a mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared thp
-    - Authored by no role player, reviewed by no role player
-  - e71fe8c3e21e fs: hugetlb: simplify remove_inode_hugepages() return type
+  - f0f462c67256 mm/page_alloc: avoid overcounting bulk alloc in watermark check
     - Authored by no role player, reviewed by a maintainer
-mm-nonmm-stable: 107 total, 11 (48) series, 59 non-series commits
+  - f4d1bad21bd2 mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold
+    - Authored by no role player, reviewed by a maintainer
+  - 7b9fa028f92c mm/shrinker: fix refcount leak in shrink_slab_memcg()
+    - Authored by no role player, reviewed by a reviewer
+  - b204da4b23c3 fs: hugetlb: simplify remove_inode_hugepages() return type
+    - Authored by no role player, reviewed by a maintainer
+  - 10b0b18a14c3 mm: numa_memblks: identify the accurate NUMA ID of CFMW
+    - Authored by no role player, reviewed by no role player
+  - series "KSM: Optimizations for rmap_walk_ksm", v3. (2 commits)
+    - 45c36c6daae7 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
+      - Authored by no role player, reviewed by no role player
+    - 235fdb72c7c8 ksm: optimize rmap_walk_ksm by passing a suitable address range (1/2)
+      - Authored by no role player, reviewed by no role player
+  - 2f760f1e1dc3 mm/fadvise: validate offset in generic_fadvise
+    - Authored by no role player, reviewed by no role player
+  - series "maple_tree: Replace big node with maple copy", v3. (30 commits)
+    - b6ee0a6df09a maple_tree: fix mas_dup_alloc() sparse warning (0/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 73fab477a29c maple_tree: move mas_spanning_rebalance loop to function (1/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 74de31f78306 maple_tree: extract use of big node from mas_wr_spanning_store() (2/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 38f85add19f8 maple_tree: remove unnecessary assignment of orig_l index (3/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 53c1e9a4d001 maple_tree: inline mas_spanning_rebalance() into mas_wr_spanning_rebalance() (4/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 5136356659df maple_tree: make ma_wr_states reliable for reuse in spanning store (5/30)
+      - Authored by a maintainer, reviewed by nobody
+    - d367b940e78b maple_tree: remove l_wr_mas from mas_wr_spanning_rebalance (6/30)
+      - Authored by a maintainer, reviewed by nobody
+    - b27fe9670b37 maple_tree: don't pass through height in mas_wr_spanning_store (7/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 8408bab039d7 maple_tree: move maple_subtree_state from mas_wr_spanning_store to mas_wr_spanning_rebalance (8/30)
+      - Authored by a maintainer, reviewed by nobody
+    - d9498d446289 maple_tree: correct right ma_wr_state end pivot in mas_wr_spanning_store() (9/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 28ecb5877b8c maple_tree: introduce maple_copy node and use it in mas_spanning_rebalance() (10/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 93a97131c64d maple_tree: testing update for spanning store (11/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 67ea710cdf63 maple_tree: inline mas_spanning_rebalance_loop() into mas_wr_spanning_rebalance() (12/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 9de69cf08507 maple_tree: change initial big node setup in mas_wr_spanning_rebalance() (13/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 3dd47aa15f2f maple_tree: introduce ma_leaf_max_gap() (14/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 164f7af2e4c1 maple_tree: add gap support, slot and pivot sizes for maple copy (15/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 2f2a2ffdae40 maple_tree: start using maple copy node for destination (16/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 2cd63e0bd0a6 maple_tree-start-using-maple-copy-node-for-destination-checkpatch-fixes (17/30)
+      - Authored by a maintainer, reviewed by nobody
+    - a3b52ed174e7 maple_tree: inline mas_wr_spanning_rebalance() (18/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 0e6d2ce9ab4b maple_tree: remove unnecessary return statements (19/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 93a58aed8b8c maple_tree: separate wr_split_store and wr_rebalance store type code path (20/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 44d4dc04247f maple_tree: add cp_is_new_root() helper (21/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 42c8abbff161 maple_tree-add-cp_is_new_root-helper-fix (22/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 7d21d3f06e7a maple_tree-add-cp_is_new_root-helper-fix-fix (23/30)
+      - Authored by a maintainer, reviewed by nobody
+    - dec31bba21e4 maple_tree: use maple copy node for mas_wr_rebalance() operation (24/30)
+      - Authored by a maintainer, reviewed by nobody
+    - a157b8540182 maple_tree: add test for rebalance calculation off-by-one (25/30)
+      - Authored by a maintainer, reviewed by nobody
+    - c57b22530877 maple_tree: add copy_tree_location() helper (26/30)
+      - Authored by a maintainer, reviewed by nobody
+    - a164ac2117d2 maple_tree: add cp_converged() helper (27/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 0754bdbae60b maple_tree: use maple copy node for mas_wr_split() (28/30)
+      - Authored by a maintainer, reviewed by nobody
+    - 36083b8a0efc maple_tree: remove maple big node and subtree structs (29/30)
+      - Authored by a maintainer, reviewed by nobody
+  - 08584d052a63 maple_tree: pass maple copy node to mas_wmb_replace()
+    - Authored by a maintainer, reviewed by nobody
+  - 85ca96b0920d maple_tree: don't pass end to mas_wr_append()
+    - Authored by a maintainer, reviewed by nobody
+  - 90c726c4892d maple_tree: clean up mas_wr_node_store()
+    - Authored by a maintainer, reviewed by nobody
+  - f2767228da7c arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
+    - Authored by no role player, reviewed by a maintainer
+mm-nonmm-stable: 114 total, 12 (50) series, 64 non-series commits
 - author/reviewer role stat
-  - no role, nobody: 29 commits
+  - no role, nobody: 33 commits
   - no role, no role : 33 commits
-  - no role, reviewer: 6 commits
-  - no role, maintainer: 28 commits
+  - no role, reviewer: 7 commits
+  - no role, maintainer: 30 commits
   - reviewer, reviewer: 1 commits
   - reviewer, maintainer: 2 commits
   - maintainer, nobody: 6 commits
@@ -1201,26 +1171,19 @@ mm-nonmm-stable: 107 total, 11 (48) series, 59 non-series commits
     - Authored by no role player, reviewed by no role player
   - 0dddf20b4fd4 watchdog/hardlockup: simplify perf event probe and remove per-cpu dependency
     - Authored by no role player, reviewed by no role player
-mm-nonmm-unstable: 8 total, 0 (0) series, 8 non-series commits
-- author/reviewer role stat
-  - no role, nobody: 4 commits
-  - no role, no role : 1 commits
-  - no role, reviewer: 1 commits
-  - no role, maintainer: 2 commits
-- full commits list
-  - ffbb14b49355 delayacct: fix build regression on accounting tool
+  - 9333980c230f delayacct: fix build regression on accounting tool
     - Authored by no role player, reviewed by nobody
-  - eff017885eb0 lib/random32: convert selftest to KUnit
-    - Authored by no role player, reviewed by no role player
-  - 0b782dbc8871 selftests/memfd: use IPC semaphore instead of SIGSTOP/SIGCONT
+  - b24335521de9 selftests/memfd: use IPC semaphore instead of SIGSTOP/SIGCONT
     - Authored by no role player, reviewed by nobody
-  - fd7a78920554 objpool: fix the overestimation of object pooling metadata size
+  - 5ed4b6b37c64 objpool: fix the overestimation of object pooling metadata size
     - Authored by no role player, reviewed by a maintainer
-  - 533066727c66 scripts/gdb: implement x86_page_ops in mm.py
+  - 55f8b4518d14 scripts/gdb: implement x86_page_ops in mm.py
     - Authored by no role player, reviewed by nobody
-  - cd9c1248275a kho: fix missing early_memunmap() call in kho_populate()
-    - Authored by no role player, reviewed by a reviewer
-  - bc6f6466f7a2 kho: remove unnecessary WARN_ON(err) in kho_populate()
-    - Authored by no role player, reviewed by a maintainer
-  - eddff1bec4d2 lib/group_cpus: handle const qualifier from clusters allocation type
+  - series "two fixes in kho_populate()", v3. (2 commits)
+    - 34df6c4734db kho: fix missing early_memunmap() call in kho_populate() (0/2)
+      - Authored by no role player, reviewed by a reviewer
+    - f7a553b813f8 kho: remove unnecessary WARN_ON(err) in kho_populate() (1/2)
+      - Authored by no role player, reviewed by a maintainer
+  - 90627a1e08e6 lib/group_cpus: handle const qualifier from clusters allocation type
     - Authored by no role player, reviewed by nobody
+mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

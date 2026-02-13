@@ -1,11 +1,11 @@
 baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-stable: 11 total, 3 (9) series, 2 non-series commits
+mm-stable: 12 total, 4 (10) series, 2 non-series commits
 - author/reviewer role stat
   - no role, no role : 1 commits
   - no role, reviewer: 1 commits
-  - no role, maintainer: 2 commits
+  - no role, maintainer: 3 commits
   - maintainer, no role : 5 commits
   - maintainer, maintainer: 2 commits
 - full commits list
@@ -34,13 +34,10 @@ mm-stable: 11 total, 3 (9) series, 2 non-series commits
   - series "Replace wq users and add WQ_PERCPU to alloc_workqueue() users", v2. (3 commits)
     - 0bcbd7cf6596 mm: replace use of system_unbound_wq with system_dfl_wq (0/3)
       - Authored by no role player, reviewed by no role player
-mm-unstable: 1 total, 1 (1) series, 0 non-series commits
-- author/reviewer role stat
-  - no role, maintainer: 1 commits
-- full commits list
   - series "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
-    - a9a68d3aba31 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
+    - 1aceed565ff1 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
       - Authored by no role player, reviewed by a maintainer
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
 - author/reviewer role stat

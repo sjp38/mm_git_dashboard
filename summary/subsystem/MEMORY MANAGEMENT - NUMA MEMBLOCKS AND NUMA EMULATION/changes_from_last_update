@@ -13,6 +13,17 @@ mm-new: 1 -> 1 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat
   - no role, no role : 1 -> 1 commits
+- changed commits
+  - 10b0b18a14c3 mm: numa_memblks: identify the accurate NUMA ID of CFMW
+    - added "Link: https://lkml.kernel.org/r/20260211103320.2064211-2-cuichao1753@phytium.com.cn"
+    - added "Reviewed-by: Gregory Price <gourry@gourry.net>"
+    - added "Reviewed-by: Dan Williams <dan.j.williams@intel.com>"
+    - added "Cc: <stable@vger.kernel.org>"
+    - added "Cc: David Hildenbrand <david@kernel.org>"
+    - dropped "Link: https://lkml.kernel.org/r/20260106031042.1606729-2-cuichao1753@phytium.com.cn"
+    - dropped "Cc: Dan Williams <dan.j.williams@intel.com>"
+    - dropped "Cc: Joanthan Cameron <Jonathan.Cameron@huawei.com>"
+    - dropped "Cc: Gregory Price <gourry@gourry.net>"
 mm-nonmm-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-nonmm-unstable: 0 -> 0 commits

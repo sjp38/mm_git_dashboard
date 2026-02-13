@@ -1,10 +1,11 @@
 baseline: v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-stable: 9 total, 2 (7) series, 2 non-series commits
+mm-stable: 10 total, 2 (8) series, 2 non-series commits
 - author/reviewer role stat
   - no role, reviewer: 8 commits
   - no role, maintainer: 1 commits
+  - reviewer, reviewer: 1 commits
 - full commits list
   - series "mm/khugepaged: fix dirty page handling for MADV_COLLAPSE", v5. (2 commits)
     - 5173ae0a068d mm/khugepaged: map dirty/writeback pages failures to EAGAIN (0/2)
@@ -26,12 +27,9 @@ mm-stable: 9 total, 2 (7) series, 2 non-series commits
       - Authored by no role player, reviewed by a reviewer
   - 4188b2592ff6 mm: khugepaged: fix NR_FILE_PAGES and NR_SHMEM in collapse_file()
     - Authored by no role player, reviewed by a reviewer
-mm-unstable: 1 total, 0 (1) series, 0 non-series commits
-- author/reviewer role stat
-  - reviewer, reviewer: 1 commits
-- full commits list
-    - dc9aea06619a mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
+    - e388d31257ed mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
       - Authored by a reviewer, reviewed by a reviewer
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 mm-new: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,15 +1,15 @@
 baseline: v6.19-rc6-36-g6c790212c588f
-mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, maintainer: 1 commits
 - full commits list
-  - e9594a74ab49 mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK
+  - 338ad1e84d15 mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK
     - Authored by no role player, reviewed by a maintainer
-mm-stable: 13 total, 3 (9) series, 4 non-series commits
+mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-stable: 14 total, 3 (9) series, 5 non-series commits
 - author/reviewer role stat
   - no role, reviewer: 8 commits
-  - no role, maintainer: 1 commits
+  - no role, maintainer: 2 commits
   - reviewer, reviewer: 1 commits
   - maintainer, reviewer: 3 commits
 - full commits list
@@ -42,17 +42,14 @@ mm-stable: 13 total, 3 (9) series, 4 non-series commits
       - Authored by no role player, reviewed by a reviewer
     - 9a8e0c31b312 mm: page_alloc: optimize pfn_range_valid_contig() (1/5)
       - Authored by no role player, reviewed by a reviewer
-mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - ac1ea219590c mm/page_alloc: clear page->private in free_pages_prepare()
+    - Authored by no role player, reviewed by a maintainer
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, maintainer: 1 commits
 - full commits list
-  - 3651bc97781c mm/page_alloc: clear page->private in free_pages_prepare()
+  - f0f462c67256 mm/page_alloc: avoid overcounting bulk alloc in watermark check
     - Authored by no role player, reviewed by a maintainer
-mm-new: 1 total, 0 (0) series, 1 non-series commits
-- author/reviewer role stat
-  - no role, nobody: 1 commits
-- full commits list
-  - 1c62d9c52c8b mm/page_alloc: avoid overcounting bulk alloc in watermark check
-    - Authored by no role player, reviewed by nobody
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

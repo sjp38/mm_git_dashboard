@@ -1,38 +1,66 @@
 baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f
 mm-hotfixes-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-mm-hotfixes-unstable: 1 -> 1 commits
+mm-hotfixes-unstable: 1 -> 0 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat
-  - no role, no role : 1 -> 0 commits
-  - no role, reviewer: 0 -> 1 commits
-- new commits
-  - fddcf9645611 mm: fix a hmm_range_fault() livelock / starvation problem
+  - no role, reviewer: 1 -> 0 commits
 - dropped commits
-  - c11ac904ec01 mm: Fix a hmm_range_fault() livelock / starvation problem
-mm-stable: 50 -> 50 commits
-- series: 4 (40) -> 4 (40)
+  - fddcf9645611 mm: fix a hmm_range_fault() livelock / starvation problem
+mm-stable: 50 -> 64 commits
+- series: 4 (40) -> 7 (53)
 - author/reviewer role stat
   - no role, nobody: 4 -> 4 commits
-  - no role, no role : 23 -> 23 commits
-  - no role, reviewer: 12 -> 12 commits
+  - no role, no role : 23 -> 24 commits
+  - no role, reviewer: 12 -> 13 commits
   - no role, maintainer: 5 -> 5 commits
-  - reviewer, reviewer: 4 -> 4 commits
+  - reviewer, nobody: 0 -> 2 commits
+  - reviewer, no role : 0 -> 1 commits
+  - reviewer, reviewer: 4 -> 13 commits
   - maintainer, reviewer: 2 -> 2 commits
-mm-unstable: 14 -> 15 commits
-- series: 3 (13) -> 3 (13)
-- author/reviewer role stat
-  - no role, no role : 1 -> 1 commits
-  - no role, reviewer: 1 -> 1 commits
-  - reviewer, nobody: 2 -> 3 commits
-  - reviewer, no role : 1 -> 1 commits
-  - reviewer, reviewer: 9 -> 9 commits
-- new commits
-  - 3efa162b1521 mm: fix up unmap desc use on exit_mmap()
 - changed commits
-  - 395ef0d05f62 mm: use unmap_desc struct for freeing page tables
-    - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-    - dropped "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+  - 3f54ef56fd45 mm: folio_zero_user: open code range computation in folio_zero_user()
+    - branch: mm-unstable -> mm-stable
+  - bed76bec3111 mm: relocate the page table ceiling and floor definitions
+    - branch: mm-unstable -> mm-stable
+  - eda8c5e77622 mm/memory: add tree limit to free_pgtables()
+    - branch: mm-unstable -> mm-stable
+  - 43873af772f8 mm: change dup_mmap() recovery
+    - branch: mm-unstable -> mm-stable
+  - 0df5a8d3948d mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes()
+    - branch: mm-unstable -> mm-stable
+  - a8700d42b0af mm: use unmap_desc struct for freeing page tables
+    - branch: mm-unstable -> mm-stable
+    - added "[Liam.Howlett@oracle.com: fix up unmap desc use on exit_mmap()]"
+    - added "Link: : https://lkml.kernel.org/r/20260210214214.364856-1-Liam.Howlett@oracle.com"
+  - a30de4c6b79a mm/vma: remove __private sparse decoration from vma_flags_t
+    - branch: mm-unstable -> mm-stable
+  - e388d31257ed mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag()
+    - branch: mm-unstable -> mm-stable
+  - 1c628004e0de mm: add mk_vma_flags() bitmap flag macro helper
+    - branch: mm-unstable -> mm-stable
+  - bae0ba7c7c0a mm: add basic VMA flag operation helper functions
+    - branch: mm-unstable -> mm-stable
+  - fd3196ee9ca1 mm: update secretmem to use VMA flags on mmap_prepare
+    - branch: mm-unstable -> mm-stable
+    - added "[lorenzo.stoakes@oracle.com: fix check_brk_limits(), per Chris]"
+    - added "Link: : https://lkml.kernel.org/r/3aab9ab1-74b4-405e-9efb-08fc2500c06e@lucifer.local"
+  - 5bd2c0650a90 mm: update all remaining mmap_prepare users to use vma_flags_t
+    - branch: mm-unstable -> mm-stable
+  - 53f1d9364451 mm: make vm_area_desc utilise vma_flags_t only
+    - branch: mm-unstable -> mm-stable
+  - 52e054f71840 mm: rmap: support batched checks of the references for large folios
+    - branch: mm-unstable -> mm-stable
+mm-unstable: 15 -> 0 commits
+- series: 3 (13) -> 0 (0)
+- author/reviewer role stat
+  - no role, no role : 1 -> 0 commits
+  - no role, reviewer: 1 -> 0 commits
+  - reviewer, nobody: 3 -> 0 commits
+  - reviewer, no role : 1 -> 0 commits
+  - reviewer, reviewer: 9 -> 0 commits
+- dropped commits
+  - 3efa162b1521 mm: fix up unmap desc use on exit_mmap()
 mm-new: 1 -> 1 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat

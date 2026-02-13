@@ -1,9 +1,9 @@
 baseline: v6.19-rc6-36-g6c790212c588f
-mm-hotfixes-stable: 13 total, 1 (3) series, 10 non-series commits
+mm-hotfixes-stable: 15 total, 1 (3) series, 12 non-series commits
 - author/reviewer role stat
-  - no role, no role : 4 commits
+  - no role, no role : 5 commits
   - no role, reviewer: 1 commits
-  - no role, maintainer: 6 commits
+  - no role, maintainer: 7 commits
   - maintainer, no role : 1 commits
   - maintainer, reviewer: 1 commits
 - full commits list
@@ -34,30 +34,29 @@ mm-hotfixes-stable: 13 total, 1 (3) series, 10 non-series commits
     - Authored by no role player, reviewed by a reviewer
   - ae9fd76c111b mm/memory-failure: reject unsupported non-folio compound page
     - Authored by a maintainer, reviewed by no role player
-mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
-- author/reviewer role stat
-  - no role, no role : 1 commits
-  - no role, reviewer: 1 commits
-  - no role, maintainer: 1 commits
-- full commits list
-  - 5a403d9f5eda mm/hugetlb: restore failed global reservations to subpool
+  - 1d3f9bb4c8af mm/hugetlb: restore failed global reservations to subpool
     - Authored by no role player, reviewed by no role player
-  - e9594a74ab49 mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK
+  - 338ad1e84d15 mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK
     - Authored by no role player, reviewed by a maintainer
-  - fddcf9645611 mm: fix a hmm_range_fault() livelock / starvation problem
-    - Authored by no role player, reviewed by a reviewer
-mm-stable: 198 total, 18 (137) series, 61 non-series commits
+mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - no role, nobody: 1 commits
+- full commits list
+  - 39a7efa0282b mm: allow __GFP_RETRY_MAYFAIL in vmalloc
+    - Authored by no role player, reviewed by nobody
+mm-stable: 221 total, 21 (158) series, 63 non-series commits
 - author/reviewer role stat
   - no role, nobody: 8 commits
-  - no role, no role : 46 commits
-  - no role, reviewer: 25 commits
-  - no role, maintainer: 41 commits
-  - reviewer, no role : 1 commits
-  - reviewer, reviewer: 5 commits
-  - maintainer, nobody: 23 commits
+  - no role, no role : 47 commits
+  - no role, reviewer: 28 commits
+  - no role, maintainer: 44 commits
+  - reviewer, nobody: 2 commits
+  - reviewer, no role : 2 commits
+  - reviewer, reviewer: 11 commits
+  - maintainer, nobody: 24 commits
   - maintainer, no role : 11 commits
   - maintainer, reviewer: 22 commits
-  - maintainer, maintainer: 16 commits
+  - maintainer, maintainer: 22 commits
 - full commits list
   - a03ed8f144e2 mm/vmalloc: clarify why vmap_range_noflush() might sleep
     - Authored by no role player, reviewed by no role player
@@ -473,105 +472,81 @@ mm-stable: 198 total, 18 (137) series, 61 non-series commits
     - Authored by no role player, reviewed by no role player
   - fb4ddf208511 mm/memory: handle non-split locks correctly in zap_empty_pte_table()
     - Authored by no role player, reviewed by no role player
-mm-unstable: 26 total, 3 (23) series, 3 non-series commits
-- author/reviewer role stat
-  - no role, no role : 1 commits
-  - no role, reviewer: 3 commits
-  - no role, maintainer: 3 commits
-  - reviewer, nobody: 3 commits
-  - reviewer, no role : 1 commits
-  - reviewer, reviewer: 6 commits
-  - maintainer, nobody: 3 commits
-  - maintainer, maintainer: 6 commits
-- full commits list
   - series "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
-    - a9a68d3aba31 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
+    - 1aceed565ff1 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
       - Authored by no role player, reviewed by a maintainer
-    - 7984bb5df115 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
+    - 7ec9ecf217f8 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
       - Authored by no role player, reviewed by a reviewer
-  - cac2d3468c1c mm: folio_zero_user: open code range computation in folio_zero_user()
+  - 3f54ef56fd45 mm: folio_zero_user: open code range computation in folio_zero_user()
     - Authored by no role player, reviewed by no role player
   - series " Remove XA_ZERO from error recovery of dup_mmap()", v3. (11 commits)
-    - aa78cdf1d54a mm: relocate the page table ceiling and floor definitions (0/11)
+    - bed76bec3111 mm: relocate the page table ceiling and floor definitions (0/11)
       - Authored by a reviewer, reviewed by nobody
-    - f171f68da4e6 mm/mmap: move exit_mmap() trace point (1/11)
+    - 95725acc3cd8 mm/mmap: move exit_mmap() trace point (1/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - a6f75fe7e667 mm/mmap: abstract vma clean up from exit_mmap() (2/11)
+    - d6d13e2ad81a mm/mmap: abstract vma clean up from exit_mmap() (2/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - 3668f106043c mm/vma: add limits to unmap_region() for vmas (3/11)
+    - 23bd03a9a204 mm/vma: add limits to unmap_region() for vmas (3/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - f794797ef8ba mm/memory: add tree limit to free_pgtables() (4/11)
+    - eda8c5e77622 mm/memory: add tree limit to free_pgtables() (4/11)
       - Authored by a reviewer, reviewed by a reviewer
-    - 673ced6c3175 mm/vma: add page table limit to unmap_region() (5/11)
+    - 243de0c0dc04 mm/vma: add page table limit to unmap_region() (5/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - 0ddcf0077188 mm: change dup_mmap() recovery (6/11)
+    - 43873af772f8 mm: change dup_mmap() recovery (6/11)
       - Authored by a reviewer, reviewed by a reviewer
-    - a3e4676bf01c mm: introduce unmap_desc struct to reduce function arguments (7/11)
+    - 5b6626a76a81 mm: introduce unmap_desc struct to reduce function arguments (7/11)
       - Authored by a maintainer, reviewed by a maintainer
-    - 0b02ea24f9c3 mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes() (8/11)
+    - 0df5a8d3948d mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes() (8/11)
       - Authored by a reviewer, reviewed by nobody
-    - 1a26ff70648e mm/vma: use unmap_region() in vms_clear_ptes() (9/11)
+    - 2314fe9ba5e6 mm/vma: use unmap_region() in vms_clear_ptes() (9/11)
       - Authored by a maintainer, reviewed by nobody
-    - 395ef0d05f62 mm: use unmap_desc struct for freeing page tables (10/11)
+    - a8700d42b0af mm: use unmap_desc struct for freeing page tables (10/11)
       - Authored by a reviewer, reviewed by a reviewer
-  - 3efa162b1521 mm: fix up unmap desc use on exit_mmap()
-    - Authored by a reviewer, reviewed by nobody
-    - dc9aea06619a mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
+    - e388d31257ed mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - cc5c859f9fa0 mm: update hugetlbfs to use VMA flags on mmap_prepare (5/13)
+    - 097e8db5e22b mm: update hugetlbfs to use VMA flags on mmap_prepare (5/13)
       - Authored by a maintainer, reviewed by a maintainer
-    - 12370b753e04 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
+    - fd3196ee9ca1 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
       - Authored by a reviewer, reviewed by a reviewer
-    - d2930c88aad5 mm-update-secretmem-to-use-vma-flags-on-mmap_prepare-fix (7/13)
-      - Authored by a maintainer, reviewed by nobody
-    - e5ffcbb1a911 mm: update shmem_[kernel]_file_*() functions to use vma_flags_t (8/13)
+    - 590d356aa433 mm: update shmem_[kernel]_file_*() functions to use vma_flags_t (7/13)
       - Authored by no role player, reviewed by a maintainer
-    - 1ffc82916942 mm-update-shmem__file_-functions-to-use-vma_flags_t-fix (9/13)
-      - Authored by a maintainer, reviewed by nobody
-    - a1104d4bcd09 mm: update all remaining mmap_prepare users to use vma_flags_t (10/13)
+    - 5bd2c0650a90 mm: update all remaining mmap_prepare users to use vma_flags_t (8/13)
       - Authored by a reviewer, reviewed by no role player
-    - 7dfd0dc67521 mm: make vm_area_desc utilise vma_flags_t only (11/13)
+    - 53f1d9364451 mm: make vm_area_desc utilise vma_flags_t only (9/13)
       - Authored by a reviewer, reviewed by a reviewer
   - series "support batch checking of references and unmapping for large folios", v6. (5 commits)
-    - 4511640f454e mm: rmap: support batched checks of the references for large folios (0/5)
+    - 52e054f71840 mm: rmap: support batched checks of the references for large folios (0/5)
       - Authored by no role player, reviewed by a reviewer
-    - ea85267dbfd5 mm: rmap: support batched unmapping for file large folios (4/5)
+    - a67fe41e214f mm: rmap: support batched unmapping for file large folios (4/5)
       - Authored by no role player, reviewed by a reviewer
-  - 3651bc97781c mm/page_alloc: clear page->private in free_pages_prepare()
+  - ac1ea219590c mm/page_alloc: clear page->private in free_pages_prepare()
     - Authored by no role player, reviewed by a maintainer
-mm-new: 12 total, 2 (4) series, 8 non-series commits
+mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-new: 9 total, 1 (2) series, 7 non-series commits
 - author/reviewer role stat
-  - no role, nobody: 6 commits
-  - no role, no role : 3 commits
-  - no role, reviewer: 1 commits
-  - no role, maintainer: 2 commits
+  - no role, no role : 4 commits
+  - no role, reviewer: 2 commits
+  - no role, maintainer: 3 commits
 - full commits list
-  - series "KSM: Optimizations for rmap_walk_ksm". (2 commits)
-    - 4276b28c23fd ksm: initialize the addr only once in rmap_walk_ksm (0/2)
-      - Authored by no role player, reviewed by nobody
-    - 1f55345ae9cc ksm: optimize rmap_walk_ksm by passing a suitable address range (1/2)
-      - Authored by no role player, reviewed by nobody
-  - 1b3e762bf16d ksm: initialize rmap values directly and make them const
-    - Authored by no role player, reviewed by nobody
-  - series "mm: memfd_luo: preserve file seals". (2 commits)
-    - d069a7b551c9 memfd: export memfd_{add,get}_seals() (0/2)
-      - Authored by no role player, reviewed by no role player
-    - 1ff0c50e3366 mm: memfd_luo: preserve file seals (1/2)
-      - Authored by no role player, reviewed by nobody
-  - 1c62d9c52c8b mm/page_alloc: avoid overcounting bulk alloc in watermark check
-    - Authored by no role player, reviewed by nobody
-  - 2c79b953f405 arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
-    - Authored by no role player, reviewed by a maintainer
-  - 80ee89794754 mm/fadvise: validate offset in generic_fadvise
-    - Authored by no role player, reviewed by nobody
-  - f2bd00795053 mm: numa_memblks: identify the accurate NUMA ID of CFMW
-    - Authored by no role player, reviewed by no role player
-  - 4c8c820d0ff0 mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold
-    - Authored by no role player, reviewed by a maintainer
-  - 4dbf1170fd6e mm/shrinker: fix refcount leak in shrink_slab_memcg()
+  - 8bd8fc656a09 mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()
     - Authored by no role player, reviewed by a reviewer
-  - d26e5e462d7a mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared thp
+  - f0f462c67256 mm/page_alloc: avoid overcounting bulk alloc in watermark check
+    - Authored by no role player, reviewed by a maintainer
+  - f4d1bad21bd2 mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold
+    - Authored by no role player, reviewed by a maintainer
+  - 7b9fa028f92c mm/shrinker: fix refcount leak in shrink_slab_memcg()
+    - Authored by no role player, reviewed by a reviewer
+  - 10b0b18a14c3 mm: numa_memblks: identify the accurate NUMA ID of CFMW
     - Authored by no role player, reviewed by no role player
+  - series "KSM: Optimizations for rmap_walk_ksm", v3. (2 commits)
+    - 45c36c6daae7 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
+      - Authored by no role player, reviewed by no role player
+    - 235fdb72c7c8 ksm: optimize rmap_walk_ksm by passing a suitable address range (1/2)
+      - Authored by no role player, reviewed by no role player
+  - 2f760f1e1dc3 mm/fadvise: validate offset in generic_fadvise
+    - Authored by no role player, reviewed by no role player
+  - f2767228da7c arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
+    - Authored by no role player, reviewed by a maintainer
 mm-nonmm-stable: 4 total, 0 (3) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
