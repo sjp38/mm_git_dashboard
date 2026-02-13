@@ -7,12 +7,8 @@ mm-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-mm-new: 1 -> 0 commits
-- series: 0 (1) -> 0 (0)
-- author/reviewer role stat
-  - no role, nobody: 1 -> 0 commits
-- dropped commits
-  - 1ff0c50e3366 mm: memfd_luo: preserve file seals
+mm-new: 0 -> 0 commits
+- series: 0 (0) -> 0 (0)
 mm-nonmm-stable: 10 -> 10 commits
 - series: 2 (9) -> 2 (9)
 - author/reviewer role stat
