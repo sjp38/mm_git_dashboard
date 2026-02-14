@@ -21,7 +21,7 @@ the patch, based on `MAINTAINERS` file.  Reviewers of a given patch are
 identified using `Reviewed-by:` and `Acked-by:` tags of the patch.  Hence,
 below 12 categories exist:
 
-    Author        Review
+    Author        Reviewer
     ------------------------
     no-role       nobody
     no-role       no-role
