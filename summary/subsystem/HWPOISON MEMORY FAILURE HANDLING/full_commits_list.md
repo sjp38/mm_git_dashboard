@@ -1,0 +1,39 @@
+- baseline: v6.19-rc6-36-g6c790212c588f
+- mm-hotfixes-stable: 3 total, 0 (0) series, 3 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 2 commits
+    - maintainer, no role : 1 commits
+  - full commits list
+    - a148a2040191 mm/memory-failure: fix missing ->mf_stats count in hugetlb poison
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260120232234.3462258-1-jane.chu@oracle.com
+    - 057a6f2632c9 mm/memory-failure: teach kill_accessing_process to accept hugetlb tail page pfn
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260120232234.3462258-2-jane.chu@oracle.com
+    - ae9fd76c111b mm/memory-failure: reject unsupported non-folio compound page
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260205075328.523211-1-linmiaohe@huawei.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-stable: 4 total, 1 (3) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+    - maintainer, nobody: 3 commits
+  - full commits list
+    - 62451ae347b0 mm: fix minor spelling mistakes in comments
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
+    - series "selftests/mm: add memory failure selftests", v4. (3 commits)
+      - ff4ef2fbd101 selftests/mm: add memory failure anonymous page test (0/3)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260206031639.2707102-1-linmiaohe@huawei.com
+        - Link: https://lkml.kernel.org/r/20260206031639.2707102-2-linmiaohe@huawei.com
+      - 12e8a2fae372 selftests/mm: add memory failure clean pagecache test (1/3)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260206031639.2707102-3-linmiaohe@huawei.com
+      - d51b5076c746 selftests/mm: add memory failure dirty pagecache test (2/3)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260206031639.2707102-4-linmiaohe@huawei.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

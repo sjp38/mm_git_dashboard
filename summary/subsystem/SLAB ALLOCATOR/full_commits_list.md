@@ -1,0 +1,15 @@
+- baseline: v6.19-rc6-36-g6c790212c588f
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-stable: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+      - ed0a826ce302 mm: add WQ_PERCPU to alloc_workqueue users (2/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/all/20250221112003.1dSuoGyc@linutronix.de/
+        - Link: https://lkml.kernel.org/r/20260113114630.152942-4-marco.crivellari@suse.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

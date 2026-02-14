@@ -1,0 +1,64 @@
+- baseline: v6.19-rc6-36-g6c790212c588f
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-stable: 15 total, 1 (7) series, 8 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, maintainer: 1 commits
+    - maintainer, nobody: 10 commits
+    - maintainer, no role : 1 commits
+    - maintainer, maintainer: 1 commits
+  - full commits list
+    - series "zram: introduce compressed data writeback", v2. (7 commits)
+      - d38fab605c66 zram: introduce compressed data writeback (0/7)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20251201094754.4149975-1-senozhatsky@chromium.org
+        - Link: https://lkml.kernel.org/r/20251201094754.4149975-2-senozhatsky@chromium.org
+      - 4c1d61389e8e zram: introduce writeback_compressed device attribute (1/7)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20251201094754.4149975-3-senozhatsky@chromium.org
+      - 2502673aed6c zram: document writeback_batch_size (2/7)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20251201094754.4149975-4-senozhatsky@chromium.org
+      - 910bbb441c00 zram: move bd_stat to writeback section (3/7)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20251201094754.4149975-5-senozhatsky@chromium.org
+      - 7ad688c0cdc4 zram: rename zram_free_page() (4/7)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20251201094754.4149975-6-senozhatsky@chromium.org
+      - 0d38260c2a11 zram: switch to guard() for init_lock (5/7)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20251201094754.4149975-7-senozhatsky@chromium.org
+      - 0327a862135b zram: consolidate device-attr declarations (6/7)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20251201094754.4149975-8-senozhatsky@chromium.org
+    - 2e8ff2f51dde zram: use u32 for entry ac_time tracking
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/d7c0b48450c70eeb5fd8acd6ecd23593f30dbf1f.1765775954.git.senozhatsky@chromium.org
+    - bde60fe74721 zram: rename internal slot API
+      - Authored by a maintainer, reviewed by nobody
+      - Link: : https://lkml.kernel.org/r/20260115031922.3813659-1-senozhatsky@chromium.org
+      - Link: https://lkml.kernel.org/r/775a0b1a0ace5caf1f05965d8bc637c1192820fa.1765775954.git.senozhatsky@chromium.org
+    - 4932844eb870 zram: trivial fix of recompress_slot() coding styles
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/ff3254847dbdc6fbd2e3fed53c572a261d60b7b6.1765775954.git.senozhatsky@chromium.org
+    - 8b05d2d8af81 zram: fixup read_block_state()
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260115033031.3818977-1-senozhatsky@chromium.org
+    - 657a81fe3b41 zram: drop pp_in_progress
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20251216071342.687993-1-senozhatsky@chromium.org
+    - a9853ac1c3bc zram: remove KMSG_COMPONENT macro
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20251126143602.2207435-1-hca@linux.ibm.com
+      - Link: https://lwn.net/Articles/292650/ [1]
+    - 0be909f114c4 zsmalloc: use actual object size to detect spans
+      - Authored by a maintainer, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260107052145.3586917-1-senozhatsky@chromium.org
+    - 6efc548d8a08 zram: rename init_lock to dev_lock
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260115080807.3957860-1-senozhatsky@chromium.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

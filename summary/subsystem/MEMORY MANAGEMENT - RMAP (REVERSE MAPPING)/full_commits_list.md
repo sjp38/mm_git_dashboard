@@ -1,0 +1,61 @@
+- baseline: v6.19-rc6-36-g6c790212c588f
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-stable: 13 total, 2 (11) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, reviewer: 2 commits
+    - no role, maintainer: 1 commits
+    - reviewer, reviewer: 2 commits
+    - maintainer, nobody: 1 commits
+    - maintainer, reviewer: 6 commits
+  - full commits list
+    - series "mm: clean up anon_vma implementation", v3. (9 commits)
+      - 542eda1a8329 mm/rmap: improve anon_vma_clone(), unlink_anon_vmas() comments, add asserts (0/9)
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/cover.1768746221.git.lorenzo.stoakes@oracle.com
+        - Link: https://lkml.kernel.org/r/8644e89369be0cc89d7ac57443dff9e822803c91.1768746221.git.lorenzo.stoakes@oracle.com
+      - 91901a441fa1 mm/rmap: eliminate partial anon_vma tear-down in anon_vma_fork() (1/9)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/9923da5f8b095dd1e8d677692dcaf95859de0ef5.1768746221.git.lorenzo.stoakes@oracle.com
+      - 69e945845585 mm/rmap: skip unfaulted VMAs on anon_vma clone, unlink (2/9)
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/085a25f7528e1c8c687276e9b856e88dc8f105ca.1768746221.git.lorenzo.stoakes@oracle.com
+      - 535f6b8df17d mm/rmap: remove unnecessary root lock dance in anon_vma clone, unmap (3/9)
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/838030d2f0772b99fa99ff4b4fd571353f14a1a9.1768746221.git.lorenzo.stoakes@oracle.com
+      - 53eb797ffc3a mm/rmap: remove anon_vma_merge() function (4/9)
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/56bbe45e309f7af197b1c4f94a9a0c8931ff2d29.1768746221.git.lorenzo.stoakes@oracle.com
+      - 7549e3d20f1a mm/rmap: make anon_vma functions internal (5/9)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/79ec933c3a9c8bf1f64dab253bbfdae8a01cb921.1768746221.git.lorenzo.stoakes@oracle.com
+      - bfc2b13b05a1 mm/rmap: allocate anon_vma_chain objects unlocked when possible (7/9)
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/624bf1ac0bde4871fcfca2c8c8e294b6d8f7ae7b.1768746221.git.lorenzo.stoakes@oracle.com
+      - d17f02417a33 mm/rmap: separate out fork-only logic on anon_vma_clone() (8/9)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/cf7da7a2d973cdc72a1b80dd9a73260519e8fa9f.1768746221.git.lorenzo.stoakes@oracle.com
+    - 832d95b5314e migrate: replace RMP_ flags with TTU_ flags
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260109041345.3863089-3-willy@infradead.org
+      - 36976159140b mm, swap: cleanup swap entry management workflow (13/19)
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: : https://lkml.kernel.org/r/CAMgjq7AUz10uETVm8ozDWcB3XohkOqf0i33KGrAquvEVvfp5cg@mail.gmail.com
+        - Link: : https://lkml.kernel.org/r/aXxkANcET3l2Xu6J@KASONG-MC4
+        - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-14-8862a265a033@tencent.com
+    - ef24e0aa078f mm: add SPDX id lines to some mm source files
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260204213101.1754183-1-tim.bird@sony.com
+    - series "support batch checking of references and unmapping for large folios", v6. (5 commits)
+      - 52e054f71840 mm: rmap: support batched checks of the references for large folios (0/5)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/cover.1770645603.git.baolin.wang@linux.alibaba.com
+        - Link: https://lkml.kernel.org/r/12132694536834262062d1fb304f8f8a064b6750.1770645603.git.baolin.wang@linux.alibaba.com
+      - a67fe41e214f mm: rmap: support batched unmapping for file large folios (4/5)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/b53a16f67c93a3fe65e78092069ad135edf00eff.1770645603.git.baolin.wang@linux.alibaba.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

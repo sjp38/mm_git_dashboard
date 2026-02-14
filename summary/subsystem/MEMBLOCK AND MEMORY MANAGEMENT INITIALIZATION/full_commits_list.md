@@ -1,0 +1,42 @@
+- baseline: v6.19-rc6-36-g6c790212c588f
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - cbbbf7795fc3 mm/mm_init: don't cond_resched() in deferred_init_memmap_chunk() if called from deferred_grow_zone()
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260122184343.546627-1-longman@redhat.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-stable: 5 total, 0 (3) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 3 commits
+    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+    - 84355caa271a mm/mm_init: replace simple_strtoul with kstrtobool in set_hashdist
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20251217110214.50807-1-thorsten.blum@linux.dev
+    - 62451ae347b0 mm: fix minor spelling mistakes in comments
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
+      - d49004c5f0c1 arch, mm: consolidate initialization of nodes, zones and memory map (22/29)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260111082105.290734-24-rppt@kernel.org
+      - 4267739cabb8 arch, mm: consolidate initialization of SPARSE memory model (23/29)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260111082105.290734-25-rppt@kernel.org
+      - 9fac145b6d3f mm, arch: consolidate hugetlb CMA reservation (26/29)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260111082105.290734-28-rppt@kernel.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+      - dd1e79ef6ca1 kho/abi: add memblock ABI header (5/6)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: : https://lkml.kernel.org/r/20260107090438.22901-1-lukas.bulwahn@redhat.com
+        - Link: : https://lkml.kernel.org/r/aW_M-HYZzx5SkbnZ@kernel.org
+        - Link: https://lkml.kernel.org/r/20260105165839.285270-7-rppt@kernel.org
+- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

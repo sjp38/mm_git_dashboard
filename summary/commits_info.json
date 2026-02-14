@@ -2553,7 +2553,7 @@
         ],
         "mm-hotfixes-unstable": [
             {
-                "hash": "24151fa13d5536cc235cb6c9feaccc16a6e3989a",
+                "hash": "694b4d40c2ca90cd3dba213f50e7ac9f7da9a730",
                 "author": "Mikulas Patocka <mpatocka@redhat.com>",
                 "subject": "mm: allow __GFP_RETRY_MAYFAIL in vmalloc",
                 "tags": {
@@ -2641,7 +2641,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "99d98970b46185363191408918a6f670ea10f6d5",
+                "hash": "a3df88bd753c3b1b9a66b2c8d902b9b07f1235f9",
                 "author": "Alexander Potapenko <glider@google.com>",
                 "subject": "mm/kfence: disable KFENCE upon KASAN HW tags enablement",
                 "tags": {
@@ -48841,7 +48841,7 @@
         "mm-unstable": [],
         "mm-new": [
             {
-                "hash": "68453f7d5800434e237c33032c06d68e41c56f3f",
+                "hash": "4336c2b91943cc6589afe03a10df3f7c353eecfd",
                 "author": "Davidlohr Bueso <dave@stgolabs.net>",
                 "subject": "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()",
                 "tags": {
@@ -48955,7 +48955,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "aa591fe2c7c0c1f41ab5631d6f14e9731d7ec966",
+                "hash": "19b5acbe19ec1a1eacaabe9b24546aeb2c30399e",
                 "author": "Shengming Hu <hu.shengming@zte.com.cn>",
                 "subject": "mm/page_alloc: avoid overcounting bulk alloc in watermark check",
                 "tags": {
@@ -49059,7 +49059,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "6af7efd0d79dae1db4729435f94e6a98e372d775",
+                "hash": "1d7b4932bdbac2db36e851d54b9f2dea2fb4da48",
                 "author": "qinyu <qin.yuA@h3c.com>",
                 "subject": "mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold",
                 "tags": {
@@ -49142,7 +49142,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "307559d8999b9ab2df062fb52d86ee4d43a30ace",
+                "hash": "a14e5c5357f45fc40157c1cda9aab3cb6d1c9954",
                 "author": "Altan Hacigumus <ahacigu.linux@gmail.com>",
                 "subject": "mm/shrinker: fix refcount leak in shrink_slab_memcg()",
                 "tags": {
@@ -49236,7 +49236,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "6147057c5cbc3b17fd746f0d1c5ba20096e7f3b4",
+                "hash": "00ac51053f09d5e17cb25004545879f26b0346a7",
                 "author": "Jiaqi Yan <jiaqiyan@google.com>",
                 "subject": "fs: hugetlb: simplify remove_inode_hugepages() return type",
                 "tags": {
@@ -49317,7 +49317,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "f93823b92224bb6562dc20b8402385d261743c30",
+                "hash": "71a49224614323cf9f4f69595d524e680f220cb0",
                 "author": "xu xin <xu.xin16@zte.com.cn>",
                 "subject": "ksm: initialize the addr only once in rmap_walk_ksm",
                 "tags": {
@@ -49409,7 +49409,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "9ddd57d00ba1f7ca5e4bf9146b0fba7096734e5d",
+                "hash": "3958e2e5a65b57eeeef8bf28bf1f8f1434403819",
                 "author": "xu xin <xu.xin16@zte.com.cn>",
                 "subject": "ksm: optimize rmap_walk_ksm by passing a suitable address range",
                 "tags": {
@@ -49503,7 +49503,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "5337276cf4106257436c964d77e7b15354dc9a0c",
+                "hash": "b42ab05defcf1be23cdb3ea77bd23c950698f47f",
                 "author": "Kevin Lourenco <klourencodev@gmail.com>",
                 "subject": "mm/fadvise: validate offset in generic_fadvise",
                 "tags": {
@@ -49622,7 +49622,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "7907b8db532059daa801f0eb08269cf640111f07",
+                "hash": "4f23562e06f1de5aedefcd10d9fa3c058a5380c3",
                 "author": "Cui Chao <cuichao1753@phytium.com.cn>",
                 "subject": "mm: numa_memblks: identify the accurate NUMA ID of CFMW",
                 "tags": {
@@ -49710,7 +49710,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "7432348f2c174eac3f2c9af0cfbb01eca9960224",
+                "hash": "9e62a9b5aa083412ef82f097d34a2ce36b44b5e8",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: fix mas_dup_alloc() sparse warning",
                 "tags": {
@@ -49802,7 +49802,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "b6da243004fbface2dd888ed8418a8b306a6fa2c",
+                "hash": "d55ea8e6af45566e4ce8d4474bafbb270e6f1715",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: move mas_spanning_rebalance loop to function",
                 "tags": {
@@ -49893,7 +49893,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "b73d570028e1e2a1d0b8d0f1653416a955f75fee",
+                "hash": "aca507a70a4700a276bb52a1eb33160f38d8b070",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: extract use of big node from mas_wr_spanning_store()",
                 "tags": {
@@ -49984,7 +49984,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "e6ab53011fd585543f335529e4ed0cab6c0c987f",
+                "hash": "fa6781ec3d01ed7eb516f818f93f1ff82ced6a4a",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: remove unnecessary assignment of orig_l index",
                 "tags": {
@@ -50075,7 +50075,7 @@
                 "patch_series_idx": 3
             },
             {
-                "hash": "6ff999b8ebc4b74279e3f66732ac240dc9114fc1",
+                "hash": "06527aab5dcc80f07adaad4d42100f7c6551d759",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: inline mas_spanning_rebalance() into mas_wr_spanning_rebalance()",
                 "tags": {
@@ -50166,7 +50166,7 @@
                 "patch_series_idx": 4
             },
             {
-                "hash": "619423067b39cd96321b84245c2ba3dc3080910c",
+                "hash": "dc80ed1f213798a779f164f12dd64621076b814d",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: make ma_wr_states reliable for reuse in spanning store",
                 "tags": {
@@ -50257,7 +50257,7 @@
                 "patch_series_idx": 5
             },
             {
-                "hash": "9501a2e268cd5a2f11e2c157187953c22406a98d",
+                "hash": "676fd025586ae9875c303e044bea0a1052707137",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: remove l_wr_mas from mas_wr_spanning_rebalance",
                 "tags": {
@@ -50348,7 +50348,7 @@
                 "patch_series_idx": 6
             },
             {
-                "hash": "f058217ae018fe81306c09b4c7caf79985c0026d",
+                "hash": "3dc718f3342398d8936626fccdbea64b98eaecbc",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: don't pass through height in mas_wr_spanning_store",
                 "tags": {
@@ -50439,7 +50439,7 @@
                 "patch_series_idx": 7
             },
             {
-                "hash": "2b4370442023f22b7d42db0070d663ed2e2b1829",
+                "hash": "da76382784ffee762a54ed6a72fed2f0c0d50ae4",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: move maple_subtree_state from mas_wr_spanning_store to mas_wr_spanning_rebalance",
                 "tags": {
@@ -50530,7 +50530,7 @@
                 "patch_series_idx": 8
             },
             {
-                "hash": "b7eb3d503d8ae47f5d8fae1443c81eb791bb0497",
+                "hash": "04f791031efa4b01904f50f8dae9dffb8b7f5de6",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: correct right ma_wr_state end pivot in mas_wr_spanning_store()",
                 "tags": {
@@ -50621,7 +50621,7 @@
                 "patch_series_idx": 9
             },
             {
-                "hash": "302fba00aa393e48e65ae9d3809ac0366b75c9a2",
+                "hash": "ef0413a488e5137f91ca90e6a20c0f5b19934753",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: introduce maple_copy node and use it in mas_spanning_rebalance()",
                 "tags": {
@@ -50712,7 +50712,7 @@
                 "patch_series_idx": 10
             },
             {
-                "hash": "95e354974d313a24879e102b101c6b7ce70c2615",
+                "hash": "44bc7d1536623c1d5bb3405bb79e6bccf68b66f7",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: testing update for spanning store",
                 "tags": {
@@ -50788,7 +50788,7 @@
                 "patch_series_idx": 11
             },
             {
-                "hash": "113db79d43a04f82e72305c198f1f43053c88b2b",
+                "hash": "9504cf18a7138a0c6ca764267ab6146925778dfd",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: inline mas_spanning_rebalance_loop() into mas_wr_spanning_rebalance()",
                 "tags": {
@@ -50879,7 +50879,7 @@
                 "patch_series_idx": 12
             },
             {
-                "hash": "9d9551d2a0c788335f6b7e79c06641d0fdc285bc",
+                "hash": "c436a02a28f997742e5fda43f2112afd02aa6aa7",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: change initial big node setup in mas_wr_spanning_rebalance()",
                 "tags": {
@@ -50970,7 +50970,7 @@
                 "patch_series_idx": 13
             },
             {
-                "hash": "099e137c2807c852444b44655a350b53a0ff09c3",
+                "hash": "2e543e583a7d9b698296666c264a6613821ddfb3",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: introduce ma_leaf_max_gap()",
                 "tags": {
@@ -51061,7 +51061,7 @@
                 "patch_series_idx": 14
             },
             {
-                "hash": "f6371474247526dbfc30716e1a3ff65f148ea13c",
+                "hash": "48f8c77dd9db4efa0f1fd7b5dbdd65ef0ba2b3e5",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: add gap support, slot and pivot sizes for maple copy",
                 "tags": {
@@ -51152,7 +51152,7 @@
                 "patch_series_idx": 15
             },
             {
-                "hash": "37301378aa63bcb1861c13d049e08cbd6de3207b",
+                "hash": "4dcac4d7179f5cfcc0b0c54cf2c8b20b5b7e0d67",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: start using maple copy node for destination",
                 "tags": {
@@ -51243,7 +51243,7 @@
                 "patch_series_idx": 16
             },
             {
-                "hash": "50e32f14ed83cc6bc7f5162492a1363a10cc7c8f",
+                "hash": "164d895362469b0c01a5f8dae89a5a8f259753c0",
                 "author": "Andrew Morton <akpm@linux-foundation.org>",
                 "subject": "maple_tree-start-using-maple-copy-node-for-destination-checkpatch-fixes",
                 "tags": {
@@ -51320,7 +51320,7 @@
                 "patch_series_idx": 17
             },
             {
-                "hash": "0122c91f005d4458d899e4e25e96874d34eae426",
+                "hash": "cd5c699fe26cdc57948739dfb234606649eb9456",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: inline mas_wr_spanning_rebalance()",
                 "tags": {
@@ -51411,7 +51411,7 @@
                 "patch_series_idx": 18
             },
             {
-                "hash": "f63724869c5ef93a164306b8ab2b7a634ed13342",
+                "hash": "ac083298376ec5763c3ed82cdc0a44762c20b6c3",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: remove unnecessary return statements",
                 "tags": {
@@ -51502,7 +51502,7 @@
                 "patch_series_idx": 19
             },
             {
-                "hash": "4c9a78e4475e75658c7cf95d29b32293eba02569",
+                "hash": "a3bd91cbbbf0926957332dc8e1e01b43667b6640",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: separate wr_split_store and wr_rebalance store type code path",
                 "tags": {
@@ -51593,7 +51593,7 @@
                 "patch_series_idx": 20
             },
             {
-                "hash": "988dfe9d2f218afaf492d1237a77750558026756",
+                "hash": "f1266361dc21332d9cbba8e233b1d844bd73172a",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: add cp_is_new_root() helper",
                 "tags": {
@@ -51684,7 +51684,7 @@
                 "patch_series_idx": 21
             },
             {
-                "hash": "148d5ee83586b8dda8c0362d99cfe1702e49da43",
+                "hash": "1a2c3c92b91e5027e4a1a3c54bb63beeac21620c",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree-add-cp_is_new_root-helper-fix",
                 "tags": {
@@ -51765,7 +51765,7 @@
                 "patch_series_idx": 22
             },
             {
-                "hash": "b6cdfaafd9735118cb9096d4e2882f7cf4f77b2e",
+                "hash": "f04c21a17432063cef1cd70cc1b41a03a0d6cc60",
                 "author": "Andrew Morton <akpm@linux-foundation.org>",
                 "subject": "maple_tree-add-cp_is_new_root-helper-fix-fix",
                 "tags": {
@@ -51846,7 +51846,7 @@
                 "patch_series_idx": 23
             },
             {
-                "hash": "f1b68dc50402f68e063ddec6a0d2b1c92c3527a6",
+                "hash": "dd62afcc04c3e0543382d5c501db399eb3c5da24",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: use maple copy node for mas_wr_rebalance() operation",
                 "tags": {
@@ -51937,7 +51937,7 @@
                 "patch_series_idx": 24
             },
             {
-                "hash": "57a6c833cf1d1aed927bd197753309660b3eea68",
+                "hash": "da32519a7a4f94be0d8776280bbeac1ca08ad9a2",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: add test for rebalance calculation off-by-one",
                 "tags": {
@@ -52013,7 +52013,7 @@
                 "patch_series_idx": 25
             },
             {
-                "hash": "c2d075020a85fbce07059310e4d7af50fa2f4800",
+                "hash": "860091e8c5c6ce585354345cb4af8bee492cf96e",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: add copy_tree_location() helper",
                 "tags": {
@@ -52104,7 +52104,7 @@
                 "patch_series_idx": 26
             },
             {
-                "hash": "3143f88d4d765c3893b0f7c224cc0dd7f7de57aa",
+                "hash": "e40b4ed89dd55b1a6f6af1e58e8626f7c9e42988",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: add cp_converged() helper",
                 "tags": {
@@ -52195,7 +52195,7 @@
                 "patch_series_idx": 27
             },
             {
-                "hash": "24708d4b5b7961dfc03fb5f952ebfbf079879161",
+                "hash": "f22eef5098b761a041e89b5200e9e186a105db30",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: use maple copy node for mas_wr_split()",
                 "tags": {
@@ -52286,7 +52286,7 @@
                 "patch_series_idx": 28
             },
             {
-                "hash": "b0f565ff0d8ca73272a3262afac59c35fc5c57cf",
+                "hash": "ffa3fbe1f561a885b96ef0d08875eee7a2df384d",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: remove maple big node and subtree structs",
                 "tags": {
@@ -52377,7 +52377,7 @@
                 "patch_series_idx": 29
             },
             {
-                "hash": "e5de1d17378b4228575f599ad543d6e081228ecc",
+                "hash": "0d49bfb782b28afa6d9dc5dd189efb58be777ef6",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: pass maple copy node to mas_wmb_replace()",
                 "tags": {
@@ -52468,7 +52468,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "70c4d4f6e61ee435c07b9462b2f6913d431c6e88",
+                "hash": "8e99610a82a0db2c39517d3cef2c5a33d66105a9",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: don't pass end to mas_wr_append()",
                 "tags": {
@@ -52559,7 +52559,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "8ae172e52a1a53f34e9e115d84513e857e84342f",
+                "hash": "25d885e5461ce9070d6c1c0d0c26b5d09dd504c8",
                 "author": "Liam R. Howlett <Liam.Howlett@oracle.com>",
                 "subject": "maple_tree: clean up mas_wr_node_store()",
                 "tags": {
@@ -52650,7 +52650,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "a2bfc98bb0cb53b7cd34480592628c40ffa21f37",
+                "hash": "00d807578c501085acb814c80b5ec4380ee44abe",
                 "author": "Jinjiang Tu <tujinjiang@huawei.com>",
                 "subject": "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys",
                 "tags": {
@@ -52805,7 +52805,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "9d9e7b581ef08d6774a243cae8df1a5efb231d76",
+                "hash": "7ebfada2c85b092479835198528ad85e5b83b9d6",
                 "author": "Arnd Bergmann <arnd@arndb.de>",
                 "subject": "mm/vmscan: avoid false-positive -Wuninitialized warning",
                 "tags": {
@@ -64815,6 +64815,94 @@
                 "patch_series_idx": null
             }
         ],
-        "mm-nonmm-unstable": []
+        "mm-nonmm-unstable": [
+            {
+                "hash": "f88534a6e7afcfe6ad5f93b86f6e64d5d4d23709",
+                "author": "Andrew Morton <akpm@linux-foundation.org>",
+                "subject": "drivers/input/misc/pf1550-onkey.c: fix build with CONFIG_PM_SLEEP=n",
+                "tags": {
+                    "Cc:": [
+                        "Samuel Kayode <samuel.kayode@savoirfairelinux.com>",
+                        "Dmitry Torokhov <dmitry.torokhov@gmail.com>",
+                        "Frank Li <Frank.Li@nxp.com>",
+                        "Sean Nyekjaer <sean@geanix.com>"
+                    ],
+                    "Signed-off-by:": [
+                        "Andrew Morton <akpm@linux-foundation.org>"
+                    ]
+                },
+                "subsys_info_map": {
+                    "INPUT (KEYBOARD, MOUSE, JOYSTICK, TOUCHSCREEN) DRIVERS": {
+                        "name": "INPUT (KEYBOARD, MOUSE, JOYSTICK, TOUCHSCREEN) DRIVERS",
+                        "maintainer": [
+                            "Dmitry Torokhov <dmitry.torokhov@gmail.com>"
+                        ],
+                        "list": [
+                            "linux-input@vger.kernel.org"
+                        ],
+                        "status": [
+                            "Maintained"
+                        ],
+                        "files": [
+                            "Documentation/devicetree/bindings/input/",
+                            "Documentation/devicetree/bindings/serio/",
+                            "Documentation/input/",
+                            "drivers/input/",
+                            "include/dt-bindings/input/",
+                            "include/linux/gameport.h",
+                            "include/linux/i8042.h",
+                            "include/linux/input.h",
+                            "include/linux/input/",
+                            "include/linux/libps2.h",
+                            "include/linux/serio.h",
+                            "include/uapi/linux/gameport.h",
+                            "include/uapi/linux/input-event-codes.h",
+                            "include/uapi/linux/input.h",
+                            "include/uapi/linux/serio.h",
+                            "include/uapi/linux/uinput.h"
+                        ]
+                    },
+                    "NXP PF1550 PMIC MFD DRIVER": {
+                        "name": "NXP PF1550 PMIC MFD DRIVER",
+                        "maintainer": [
+                            "Samuel Kayode <samkay014@gmail.com>"
+                        ],
+                        "list": [
+                            "imx@lists.linux.dev"
+                        ],
+                        "status": [
+                            "Maintained"
+                        ],
+                        "files": [
+                            "Documentation/devicetree/bindings/mfd/nxp,pf1550.yaml",
+                            "drivers/input/misc/pf1550-onkey.c",
+                            "drivers/mfd/pf1550.c",
+                            "drivers/power/supply/pf1550-charger.c",
+                            "drivers/regulator/pf1550-regulator.c",
+                            "include/linux/mfd/pf1550.h"
+                        ]
+                    },
+                    "THE REST": {
+                        "name": "THE REST",
+                        "maintainer": [
+                            "Linus Torvalds <torvalds@linux-foundation.org>"
+                        ],
+                        "list": [
+                            "linux-kernel@vger.kernel.org"
+                        ],
+                        "status": [
+                            "Buried alive in reporters"
+                        ],
+                        "files": [
+                            "*",
+                            "*/"
+                        ]
+                    }
+                },
+                "patch_series": null,
+                "patch_series_sz": null,
+                "patch_series_idx": null
+            }
+        ]
     }
 }
