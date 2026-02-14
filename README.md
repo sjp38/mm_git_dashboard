@@ -18,7 +18,25 @@ Review Status
 The review status is defined based on who authored and who reviewed the given
 patch.  The author/reviewers are identified using roles of the subsystems for
 the patch, based on `MAINTAINERS` file.  Reviewers of a given patch are
-identified using `Reviewed-by:` and `Acked-by:` tags of the patch.
+identified using `Reviewed-by:` and `Acked-by:` tags of the patch.  Hence,
+below 12 categories exist:
+
+    Author        Review
+    ------------------------
+    no-role       nobody
+    no-role       no-role
+    no-role       reviewer
+    no-role       maintainer
+
+    reviewer      nobody
+    reviewer      no-role
+    reviewer      reviewer
+    reviewer      maintainer
+
+    maintainer    nobody
+    maintainer    no-role
+    maintainer    reviewer
+    maintainer    maintainer
 
 Data Structure
 ==============
