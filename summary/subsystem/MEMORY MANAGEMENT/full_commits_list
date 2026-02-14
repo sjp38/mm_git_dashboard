@@ -38,12 +38,15 @@ mm-hotfixes-stable: 15 total, 1 (3) series, 12 non-series commits
     - Authored by no role player, reviewed by no role player
   - 338ad1e84d15 mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK
     - Authored by no role player, reviewed by a maintainer
-mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
+  - maintainer, maintainer: 1 commits
 - full commits list
-  - 39a7efa0282b mm: allow __GFP_RETRY_MAYFAIL in vmalloc
+  - 24151fa13d55 mm: allow __GFP_RETRY_MAYFAIL in vmalloc
     - Authored by no role player, reviewed by nobody
+  - 99d98970b461 mm/kfence: disable KFENCE upon KASAN HW tags enablement
+    - Authored by a maintainer, reviewed by a maintainer
 mm-stable: 221 total, 21 (158) series, 63 non-series commits
 - author/reviewer role stat
   - no role, nobody: 8 commits
@@ -522,31 +525,34 @@ mm-stable: 221 total, 21 (158) series, 63 non-series commits
   - ac1ea219590c mm/page_alloc: clear page->private in free_pages_prepare()
     - Authored by no role player, reviewed by a maintainer
 mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-mm-new: 9 total, 1 (2) series, 7 non-series commits
+mm-new: 10 total, 1 (2) series, 8 non-series commits
 - author/reviewer role stat
+  - no role, nobody: 1 commits
   - no role, no role : 4 commits
   - no role, reviewer: 2 commits
   - no role, maintainer: 3 commits
 - full commits list
-  - 8bd8fc656a09 mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()
+  - 68453f7d5800 mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()
     - Authored by no role player, reviewed by a reviewer
-  - f0f462c67256 mm/page_alloc: avoid overcounting bulk alloc in watermark check
+  - aa591fe2c7c0 mm/page_alloc: avoid overcounting bulk alloc in watermark check
     - Authored by no role player, reviewed by a maintainer
-  - f4d1bad21bd2 mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold
+  - 6af7efd0d79d mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold
     - Authored by no role player, reviewed by a maintainer
-  - 7b9fa028f92c mm/shrinker: fix refcount leak in shrink_slab_memcg()
+  - 307559d8999b mm/shrinker: fix refcount leak in shrink_slab_memcg()
     - Authored by no role player, reviewed by a reviewer
-  - 10b0b18a14c3 mm: numa_memblks: identify the accurate NUMA ID of CFMW
-    - Authored by no role player, reviewed by no role player
   - series "KSM: Optimizations for rmap_walk_ksm", v3. (2 commits)
-    - 45c36c6daae7 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
+    - f93823b92224 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
       - Authored by no role player, reviewed by no role player
-    - 235fdb72c7c8 ksm: optimize rmap_walk_ksm by passing a suitable address range (1/2)
+    - 9ddd57d00ba1 ksm: optimize rmap_walk_ksm by passing a suitable address range (1/2)
       - Authored by no role player, reviewed by no role player
-  - 2f760f1e1dc3 mm/fadvise: validate offset in generic_fadvise
+  - 5337276cf410 mm/fadvise: validate offset in generic_fadvise
     - Authored by no role player, reviewed by no role player
-  - f2767228da7c arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
+  - 7907b8db5320 mm: numa_memblks: identify the accurate NUMA ID of CFMW
+    - Authored by no role player, reviewed by no role player
+  - a2bfc98bb0cb arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
     - Authored by no role player, reviewed by a maintainer
+  - 9d9e7b581ef0 mm/vmscan: avoid false-positive -Wuninitialized warning
+    - Authored by no role player, reviewed by nobody
 mm-nonmm-stable: 4 total, 0 (3) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits

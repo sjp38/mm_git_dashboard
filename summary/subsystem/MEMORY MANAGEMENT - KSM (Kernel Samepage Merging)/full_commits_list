@@ -8,9 +8,9 @@ mm-new: 2 total, 1 (2) series, 0 non-series commits
   - no role, no role : 2 commits
 - full commits list
   - series "KSM: Optimizations for rmap_walk_ksm", v3. (2 commits)
-    - 45c36c6daae7 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
+    - f93823b92224 ksm: initialize the addr only once in rmap_walk_ksm (0/2)
       - Authored by no role player, reviewed by no role player
-    - 235fdb72c7c8 ksm: optimize rmap_walk_ksm by passing a suitable address range (1/2)
+    - 9ddd57d00ba1 ksm: optimize rmap_walk_ksm by passing a suitable address range (1/2)
       - Authored by no role player, reviewed by no role player
 mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

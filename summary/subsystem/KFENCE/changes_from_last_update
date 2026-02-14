@@ -4,8 +4,12 @@ mm-hotfixes-stable: 2 -> 2 commits
 - author/reviewer role stat
   - no role, nobody: 1 -> 1 commits
   - no role, maintainer: 1 -> 1 commits
-mm-hotfixes-unstable: 0 -> 0 commits
+mm-hotfixes-unstable: 0 -> 1 commits
 - series: 0 (0) -> 0 (0)
+- author/reviewer role stat
+  - maintainer, maintainer: 0 -> 1 commits
+- new commits
+  - 99d98970b461 mm/kfence: disable KFENCE upon KASAN HW tags enablement
 mm-stable: 1 -> 1 commits
 - series: 1 (1) -> 1 (1)
 - author/reviewer role stat

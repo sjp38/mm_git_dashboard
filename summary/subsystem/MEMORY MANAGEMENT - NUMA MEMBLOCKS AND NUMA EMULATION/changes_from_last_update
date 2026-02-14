@@ -13,6 +13,9 @@ mm-new: 1 -> 1 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat
   - no role, no role : 1 -> 1 commits
+- changed commits
+  - 7907b8db5320 mm: numa_memblks: identify the accurate NUMA ID of CFMW
+    - added "Link: https://lkml.kernel.org/r/20260213060347.2389818-2-cuichao1753@phytium.com.cn"
 mm-nonmm-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-nonmm-unstable: 0 -> 0 commits

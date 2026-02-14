@@ -7,10 +7,13 @@ mm-hotfixes-stable: 15 -> 15 commits
   - no role, maintainer: 7 -> 7 commits
   - maintainer, no role : 1 -> 1 commits
   - maintainer, reviewer: 1 -> 1 commits
-mm-hotfixes-unstable: 1 -> 1 commits
+mm-hotfixes-unstable: 1 -> 2 commits
 - series: 0 (0) -> 0 (0)
 - author/reviewer role stat
   - no role, nobody: 1 -> 1 commits
+  - maintainer, maintainer: 0 -> 1 commits
+- new commits
+  - 99d98970b461 mm/kfence: disable KFENCE upon KASAN HW tags enablement
 mm-stable: 221 -> 221 commits
 - series: 21 (158) -> 21 (158)
 - author/reviewer role stat
@@ -27,12 +30,18 @@ mm-stable: 221 -> 221 commits
   - maintainer, maintainer: 22 -> 22 commits
 mm-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-mm-new: 9 -> 9 commits
+mm-new: 9 -> 10 commits
 - series: 1 (2) -> 1 (2)
 - author/reviewer role stat
+  - no role, nobody: 0 -> 1 commits
   - no role, no role : 4 -> 4 commits
   - no role, reviewer: 2 -> 2 commits
   - no role, maintainer: 3 -> 3 commits
+- new commits
+  - 9d9e7b581ef0 mm/vmscan: avoid false-positive -Wuninitialized warning
+- changed commits
+  - 7907b8db5320 mm: numa_memblks: identify the accurate NUMA ID of CFMW
+    - added "Link: https://lkml.kernel.org/r/20260213060347.2389818-2-cuichao1753@phytium.com.cn"
 mm-nonmm-stable: 4 -> 4 commits
 - series: 0 (3) -> 0 (3)
 - author/reviewer role stat

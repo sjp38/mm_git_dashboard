@@ -9,7 +9,7 @@ mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, nobody: 1 commits
 - full commits list
-  - 39a7efa0282b mm: allow __GFP_RETRY_MAYFAIL in vmalloc
+  - 24151fa13d55 mm: allow __GFP_RETRY_MAYFAIL in vmalloc
     - Authored by no role player, reviewed by nobody
 mm-stable: 5 total, 0 (1) series, 4 non-series commits
 - author/reviewer role stat

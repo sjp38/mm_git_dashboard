@@ -8,7 +8,12 @@ mm-hotfixes-stable: 2 total, 0 (0) series, 2 non-series commits
     - Authored by no role player, reviewed by a maintainer
   - 16459fe7e0ca x86/kfence: fix booting on 32bit non-PAE systems
     - Authored by no role player, reviewed by nobody
-mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- author/reviewer role stat
+  - maintainer, maintainer: 1 commits
+- full commits list
+  - 99d98970b461 mm/kfence: disable KFENCE upon KASAN HW tags enablement
+    - Authored by a maintainer, reviewed by a maintainer
 mm-stable: 1 total, 1 (1) series, 0 non-series commits
 - author/reviewer role stat
   - no role, no role : 1 commits

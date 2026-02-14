@@ -136,7 +136,7 @@ mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, no role : 1 commits
 - full commits list
-  - 2f760f1e1dc3 mm/fadvise: validate offset in generic_fadvise
+  - 5337276cf410 mm/fadvise: validate offset in generic_fadvise
     - Authored by no role player, reviewed by no role player
 mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
 - author/reviewer role stat

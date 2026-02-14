@@ -152,7 +152,7 @@ mm-new: 1 total, 0 (0) series, 1 non-series commits
 - author/reviewer role stat
   - no role, maintainer: 1 commits
 - full commits list
-  - f2767228da7c arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
+  - a2bfc98bb0cb arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys
     - Authored by no role player, reviewed by a maintainer
 mm-nonmm-stable: 2 total, 0 (0) series, 2 non-series commits
 - author/reviewer role stat

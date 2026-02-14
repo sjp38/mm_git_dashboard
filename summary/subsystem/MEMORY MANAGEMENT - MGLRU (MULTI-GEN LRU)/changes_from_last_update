@@ -17,8 +17,12 @@ mm-stable: 16 -> 16 commits
   - maintainer, maintainer: 2 -> 2 commits
 mm-unstable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
-mm-new: 0 -> 0 commits
+mm-new: 0 -> 1 commits
 - series: 0 (0) -> 0 (0)
+- author/reviewer role stat
+  - no role, nobody: 0 -> 1 commits
+- new commits
+  - 9d9e7b581ef0 mm/vmscan: avoid false-positive -Wuninitialized warning
 mm-nonmm-stable: 0 -> 0 commits
 - series: 0 (0) -> 0 (0)
 mm-nonmm-unstable: 0 -> 0 commits
