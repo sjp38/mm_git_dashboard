@@ -7,23 +7,23 @@
     - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 0a096ab7a3a6 mm: introduce generic lazy_mmu helpers (6/14)
+      - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers" (6/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-    - 3d702678f57e mm/mempolicy: fix mpol_rebind_nodemask() for MPOL_F_NUMA_BALANCING
+    - 3d702678f57e "mm/mempolicy: fix mpol_rebind_nodemask() for MPOL_F_NUMA_BALANCING"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260120011018.1256654-1-tujinjiang@huawei.com
       - Link: https://lkml.kernel.org/r/20251223110523.1161421-1-tujinjiang@huawei.com
-    - 832d95b5314e migrate: replace RMP_ flags with TTU_ flags
+    - 832d95b5314e "migrate: replace RMP_ flags with TTU_ flags"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260109041345.3863089-3-willy@infradead.org
-      - 386781df63cb mm: use nodes_and() return value to simplify client code (1/3)
+      - 386781df63cb "mm: use nodes_and() return value to simplify client code" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260114172217.861204-3-ynorov@nvidia.com
-      - cd8e95d80bc2 mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION (21/24)
+      - cd8e95d80bc2 "mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION" (21/24)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260119230133.3551867-23-david@kernel.org
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
@@ -31,7 +31,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 4336c2b91943 mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()
+    - 468fab49961c "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

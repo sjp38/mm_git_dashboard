@@ -12,78 +12,78 @@
     - maintainer, reviewer: 1 commits
     - maintainer, maintainer: 9 commits
   - full commits list
-      - 0a096ab7a3a6 mm: introduce generic lazy_mmu helpers (6/14)
+      - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers" (6/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-    - 7db0787000d4 mm: cleanup vma_iter_bulk_alloc
+    - 7db0787000d4 "mm: cleanup vma_iter_bulk_alloc"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20251106110929.3522073-1-guanwentao@uniontech.com
-      - 53eb797ffc3a mm/rmap: remove anon_vma_merge() function (4/9)
+      - 53eb797ffc3a "mm/rmap: remove anon_vma_merge() function" (4/9)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/56bbe45e309f7af197b1c4f94a9a0c8931ff2d29.1768746221.git.lorenzo.stoakes@oracle.com
-      - d17f02417a33 mm/rmap: separate out fork-only logic on anon_vma_clone() (8/9)
+      - d17f02417a33 "mm/rmap: separate out fork-only logic on anon_vma_clone()" (8/9)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/cf7da7a2d973cdc72a1b80dd9a73260519e8fa9f.1768746221.git.lorenzo.stoakes@oracle.com
     - series " Remove XA_ZERO from error recovery of dup_mmap()", v3. (11 commits)
-      - bed76bec3111 mm: relocate the page table ceiling and floor definitions (0/11)
+      - bed76bec3111 "mm: relocate the page table ceiling and floor definitions" (0/11)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260121164946.2093480-1-Liam.Howlett@oracle.com
         - Link: https://lkml.kernel.org/r/20260121164946.2093480-2-Liam.Howlett@oracle.com
-      - 95725acc3cd8 mm/mmap: move exit_mmap() trace point (1/11)
+      - 95725acc3cd8 "mm/mmap: move exit_mmap() trace point" (1/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260121164946.2093480-3-Liam.Howlett@oracle.com
-      - d6d13e2ad81a mm/mmap: abstract vma clean up from exit_mmap() (2/11)
+      - d6d13e2ad81a "mm/mmap: abstract vma clean up from exit_mmap()" (2/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260121164946.2093480-4-Liam.Howlett@oracle.com
-      - 23bd03a9a204 mm/vma: add limits to unmap_region() for vmas (3/11)
+      - 23bd03a9a204 "mm/vma: add limits to unmap_region() for vmas" (3/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260121164946.2093480-5-Liam.Howlett@oracle.com
-      - eda8c5e77622 mm/memory: add tree limit to free_pgtables() (4/11)
+      - eda8c5e77622 "mm/memory: add tree limit to free_pgtables()" (4/11)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260121164946.2093480-6-Liam.Howlett@oracle.com
-      - 243de0c0dc04 mm/vma: add page table limit to unmap_region() (5/11)
+      - 243de0c0dc04 "mm/vma: add page table limit to unmap_region()" (5/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260121164946.2093480-7-Liam.Howlett@oracle.com
-      - 43873af772f8 mm: change dup_mmap() recovery (6/11)
+      - 43873af772f8 "mm: change dup_mmap() recovery" (6/11)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260121164946.2093480-8-Liam.Howlett@oracle.com
-      - 5b6626a76a81 mm: introduce unmap_desc struct to reduce function arguments (7/11)
+      - 5b6626a76a81 "mm: introduce unmap_desc struct to reduce function arguments" (7/11)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260121164946.2093480-9-Liam.Howlett@oracle.com
-      - 0df5a8d3948d mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes() (8/11)
+      - 0df5a8d3948d "mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes()" (8/11)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260121164946.2093480-10-Liam.Howlett@oracle.com
-      - 2314fe9ba5e6 mm/vma: use unmap_region() in vms_clear_ptes() (9/11)
+      - 2314fe9ba5e6 "mm/vma: use unmap_region() in vms_clear_ptes()" (9/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260121164946.2093480-11-Liam.Howlett@oracle.com
-      - a8700d42b0af mm: use unmap_desc struct for freeing page tables (10/11)
+      - a8700d42b0af "mm: use unmap_desc struct for freeing page tables" (10/11)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: : https://lkml.kernel.org/r/20260210214214.364856-1-Liam.Howlett@oracle.com
         - Link: https://lkml.kernel.org/r/20260121164946.2093480-12-Liam.Howlett@oracle.com
-      - bae0ba7c7c0a mm: add basic VMA flag operation helper functions (4/13)
+      - bae0ba7c7c0a "mm: add basic VMA flag operation helper functions" (4/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/885d4897d67a6a57c0b07fa182a7055ad752df11.1769097829.git.lorenzo.stoakes@oracle.com
-      - 097e8db5e22b mm: update hugetlbfs to use VMA flags on mmap_prepare (5/13)
+      - 097e8db5e22b "mm: update hugetlbfs to use VMA flags on mmap_prepare" (5/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/9226bec80c9aa3447cc2b83354f733841dba8a50.1769097829.git.lorenzo.stoakes@oracle.com
-      - fd3196ee9ca1 mm: update secretmem to use VMA flags on mmap_prepare (6/13)
+      - fd3196ee9ca1 "mm: update secretmem to use VMA flags on mmap_prepare" (6/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: : https://lkml.kernel.org/r/3aab9ab1-74b4-405e-9efb-08fc2500c06e@lucifer.local
         - Link: https://lkml.kernel.org/r/a243a09b0a5d0581e963d696de1735f61f5b2075.1769097829.git.lorenzo.stoakes@oracle.com
-      - 53f1d9364451 mm: make vm_area_desc utilise vma_flags_t only (9/13)
+      - 53f1d9364451 "mm: make vm_area_desc utilise vma_flags_t only" (9/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/fd2a2938b246b4505321954062b1caba7acfc77a.1769097829.git.lorenzo.stoakes@oracle.com
-      - 6aacab308a5d tools/testing/vma: separate VMA userland tests into separate files (10/13)
+      - 6aacab308a5d "tools/testing/vma: separate VMA userland tests into separate files" (10/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/a0455ccfe4fdcd1c962c64f76304f612e5662a4e.1769097829.git.lorenzo.stoakes@oracle.com
-      - a1f0dacaaba1 tools/testing/vma: separate out vma_internal.h into logical headers (11/13)
+      - a1f0dacaaba1 "tools/testing/vma: separate out vma_internal.h into logical headers" (11/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lkml.kernel.org/r/1e032732-61c3-485c-9aa7-6a09016fefc1@lucifer.local
         - Link: https://lkml.kernel.org/r/dd57baf5b5986cb96a167150ac712cbe804b63ee.1769097829.git.lorenzo.stoakes@oracle.com
-      - f615cc92641a tools/testing/vma: add VMA userland tests for VMA flag functions (12/13)
+      - f615cc92641a "tools/testing/vma: add VMA userland tests for VMA flag functions" (12/13)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/7fe6afe9c8c61e4d3cfc9a2d50a5d24da8528e68.1769097829.git.lorenzo.stoakes@oracle.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits

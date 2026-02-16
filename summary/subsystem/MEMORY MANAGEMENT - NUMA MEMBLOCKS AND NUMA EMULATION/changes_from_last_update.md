@@ -8,9 +8,13 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
+    - 4f23562e06f1 "mm: numa_memblks: identify the accurate NUMA ID of CFMW"
+      - Link: https://lkml.kernel.org/r/20260213060347.2389818-2-cuichao1753@phytium.com.cn
+      - Link: https://lkml.kernel.org/r/20260211103320.2064211-2-cuichao1753@phytium.com.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

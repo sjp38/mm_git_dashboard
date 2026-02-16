@@ -26,13 +26,17 @@
     - maintainer, maintainer: 27 -> 27 commits (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 44 -> 44 commits (no change)
+- mm-new: 44 -> 43 commits
   - series: 2 (32) -> 2 (32) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
+    - no role, no role : 4 -> 3 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 33 -> 33 commits (no change)
+  - dropped commits
+    - 4f23562e06f1 "mm: numa_memblks: identify the accurate NUMA ID of CFMW"
+      - Link: https://lkml.kernel.org/r/20260213060347.2389818-2-cuichao1753@phytium.com.cn
+      - Link: https://lkml.kernel.org/r/20260211103320.2064211-2-cuichao1753@phytium.com.cn
 - mm-nonmm-stable: 114 -> 114 commits (no change)
   - series: 12 (50) -> 12 (50) (no change)
     - no role, nobody: 33 -> 33 commits (no change)
@@ -44,8 +48,8 @@
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 0 -> 1 commits
+- mm-nonmm-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - f88534a6e7af drivers/input/misc/pf1550-onkey.c: fix build with CONFIG_PM_SLEEP=n
+    - no role, nobody: 1 -> 0 commits
+  - dropped commits
+    - f88534a6e7af "drivers/input/misc/pf1550-onkey.c: fix build with CONFIG_PM_SLEEP=n"

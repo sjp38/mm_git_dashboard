@@ -10,49 +10,49 @@
     - maintainer, maintainer: 2 commits
   - full commits list
     - series "memcg cleanups", v3. (2 commits)
-      - 558605a530e0 memcg: move mem_cgroup_usage memcontrol-v1.c (0/2)
+      - 558605a530e0 "memcg: move mem_cgroup_usage memcontrol-v1.c" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20251211013019.2080004-1-chenridong@huaweicloud.com
         - Link: https://lkml.kernel.org/r/20251211013019.2080004-2-chenridong@huaweicloud.com
-      - 055059ed720e memcg: remove mem_cgroup_size() (1/2)
+      - 055059ed720e "memcg: remove mem_cgroup_size()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20251211013019.2080004-3-chenridong@huaweicloud.com
-    - 16cc8b9396f6 mm: memcontrol: rename mem_cgroup_from_slab_obj()
+    - 16cc8b9396f6 "mm: memcontrol: rename mem_cgroup_from_slab_obj()"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lore.kernel.org/linux-mm/20251113161424.GB3465062@cmpxchg.org/
       - Link: https://lkml.kernel.org/r/20251210154301.720133-1-hannes@cmpxchg.org
-    - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
     - series "memcg: separate private and public ID namespaces". (8 commits)
-      - e77786b4682e memcg: introduce private id API for in-kernel users (0/8)
+      - e77786b4682e "memcg: introduce private id API for in-kernel users" (0/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251225232116.294540-1-shakeel.butt@linux.dev
         - Link: https://lkml.kernel.org/r/20251225232116.294540-2-shakeel.butt@linux.dev
-      - 1d89d7fd592e memcg: expose mem_cgroup_ino() and mem_cgroup_get_from_ino() unconditionally (1/8)
+      - 1d89d7fd592e "memcg: expose mem_cgroup_ino() and mem_cgroup_get_from_ino() unconditionally" (1/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251225232116.294540-3-shakeel.butt@linux.dev
-      - 510e12900298 memcg: mem_cgroup_get_from_ino() returns NULL on error (2/8)
+      - 510e12900298 "memcg: mem_cgroup_get_from_ino() returns NULL on error" (2/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251225232116.294540-4-shakeel.butt@linux.dev
-      - ea73e3647160 memcg: use cgroup_id() instead of cgroup_ino() for memcg ID (3/8)
+      - ea73e3647160 "memcg: use cgroup_id() instead of cgroup_ino() for memcg ID" (3/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251225232116.294540-5-shakeel.butt@linux.dev
-      - 2202e3a8cb80 memcg: remove unused mem_cgroup_id() and mem_cgroup_from_id() (6/8)
+      - 2202e3a8cb80 "memcg: remove unused mem_cgroup_id() and mem_cgroup_from_id()" (6/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251225232116.294540-8-shakeel.butt@linux.dev
-      - 95296536eb19 memcg: rename mem_cgroup_ino() to mem_cgroup_id() (7/8)
+      - 95296536eb19 "memcg: rename mem_cgroup_ino() to mem_cgroup_id()" (7/8)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lkml.kernel.org/r/flkqanhyettp5uq22bjwg37rtmnpeg3mghznsylxcxxgaafpl4@nov2x7tagma7
         - Link: https://lkml.kernel.org/r/20251225232116.294540-9-shakeel.butt@linux.dev
     - series "Replace wq users and add WQ_PERCPU to alloc_workqueue() users", v2. (3 commits)
-      - 0bcbd7cf6596 mm: replace use of system_unbound_wq with system_dfl_wq (0/3)
+      - 0bcbd7cf6596 "mm: replace use of system_unbound_wq with system_dfl_wq" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260113114630.152942-1-marco.crivellari@suse.com
         - Link: https://lore.kernel.org/all/20250221112003.1dSuoGyc@linutronix.de/
         - Link: https://lkml.kernel.org/r/20260113114630.152942-2-marco.crivellari@suse.com
     - series "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
-      - 1aceed565ff1 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
+      - 1aceed565ff1 "mm/vmscan: fix demotion targets checks in reclaim/demotion" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260114205305.2869796-1-bingjiao@google.com
         - Link: https://lkml.kernel.org/r/20260114205305.2869796-2-bingjiao@google.com
@@ -62,7 +62,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-      - 61e9210e2392 mm: use ARRAY_END() instead of open-coding it (3/4)
+      - 61e9210e2392 "mm: use ARRAY_END() instead of open-coding it" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/2335917d123891fec074ab1b3acfb517cf14b5a7.1765449750.git.alx@kernel.org
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

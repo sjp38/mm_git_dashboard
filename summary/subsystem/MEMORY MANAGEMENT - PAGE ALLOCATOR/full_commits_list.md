@@ -3,7 +3,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 338ad1e84d15 mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK
+    - 338ad1e84d15 "mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260209062639.16577-1-harry.yoo@oracle.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
@@ -14,52 +14,52 @@
     - reviewer, reviewer: 1 commits
     - maintainer, reviewer: 3 commits
   - full commits list
-    - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-    - 9c9828d3ead6 mm, page_alloc, thp: prevent reclaim for __GFP_THISNODE THP allocations
+    - 9c9828d3ead6 "mm, page_alloc, thp: prevent reclaim for __GFP_THISNODE THP allocations"
       - Authored by a maintainer, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251219-costly-noretry-thisnode-fix-v1-1-e1085a4a0c34@suse.cz
-    - 3bb64898f003 page_alloc: allow migration of smaller hugepages during contig_alloc
+    - 3bb64898f003 "page_alloc: allow migration of smaller hugepages during contig_alloc"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251221124656.2362540-1-gourry@gourry.net
       - Link: https://lore.kernel.org/linux-mm/6fe3562d-49b2-4975-aa86-e139c535ad00@redhat.com/
     - series "tweaks for __alloc_pages_slowpath()", v3. (3 commits)
-      - 669872181549 mm/page_alloc: ignore the exact initial compaction result (0/3)
+      - 669872181549 "mm/page_alloc: ignore the exact initial compaction result" (0/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260106-thp-thisnode-tweak-v3-0-f5d67c21a193@suse.cz
         - Link: https://lkml.kernel.org/r/20260106-thp-thisnode-tweak-v3-1-f5d67c21a193@suse.cz
-      - 53a9b4646f67 mm/page_alloc: refactor the initial compaction handling (1/3)
+      - 53a9b4646f67 "mm/page_alloc: refactor the initial compaction handling" (1/3)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260106-thp-thisnode-tweak-v3-2-f5d67c21a193@suse.cz
-      - 2c4c3e29897d mm/page_alloc: simplify __alloc_pages_slowpath() flow (2/3)
+      - 2c4c3e29897d "mm/page_alloc: simplify __alloc_pages_slowpath() flow" (2/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260106-thp-thisnode-tweak-v3-3-f5d67c21a193@suse.cz
     - series "mm: hugetlb: allocate frozen gigantic folio", v6. (6 commits)
-      - 01152bd2e44d mm: debug_vm_pgtable: add debug_vm_pgtable_free_huge_page() (0/6)
+      - 01152bd2e44d "mm: debug_vm_pgtable: add debug_vm_pgtable_free_huge_page()" (0/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260109093136.1491549-2-wangkefeng.wang@huawei.com
-      - a9deb800b89e mm: page_alloc: add __split_page() (1/6)
+      - a9deb800b89e "mm: page_alloc: add __split_page()" (1/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260109093136.1491549-3-wangkefeng.wang@huawei.com
-      - e0c1326779cc mm: page_alloc: add alloc_contig_frozen_{range,pages}() (3/6)
+      - e0c1326779cc "mm: page_alloc: add alloc_contig_frozen_{range,pages}()" (3/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260109093136.1491549-5-wangkefeng.wang@huawei.com
-    - d468d8f86d80 mm: drop filename from page_alloc.c header comment
+    - d468d8f86d80 "mm: drop filename from page_alloc.c header comment"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260115193100.116109-1-manish1588@gmail.com
-      - a45088376d8a mm/vmscan: add tracepoint and reason for kswapd_failures reset (1/2)
+      - a45088376d8a "mm/vmscan: add tracepoint and reason for kswapd_failures reset" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260120024402.387576-3-jiayuan.chen@linux.dev
     - series "mm: accelerate gigantic folio allocation". (5 commits)
-      - c83109e95c9d mm: page_isolation: introduce page_is_unmovable() (0/5)
+      - c83109e95c9d "mm: page_isolation: introduce page_is_unmovable()" (0/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260112150954.1802953-1-wangkefeng.wang@huawei.com
         - Link: https://lkml.kernel.org/r/20260112150954.1802953-2-wangkefeng.wang@huawei.com
-      - 9a8e0c31b312 mm: page_alloc: optimize pfn_range_valid_contig() (1/5)
+      - 9a8e0c31b312 "mm: page_alloc: optimize pfn_range_valid_contig()" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260112150954.1802953-3-wangkefeng.wang@huawei.com
-    - ac1ea219590c mm/page_alloc: clear page->private in free_pages_prepare()
+    - ac1ea219590c "mm/page_alloc: clear page->private in free_pages_prepare()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260207173615.146159-1-mikhail.v.gavrilov@gmail.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
@@ -67,7 +67,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 19b5acbe19ec mm/page_alloc: avoid overcounting bulk alloc in watermark check
+    - 92c10176c3b4 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

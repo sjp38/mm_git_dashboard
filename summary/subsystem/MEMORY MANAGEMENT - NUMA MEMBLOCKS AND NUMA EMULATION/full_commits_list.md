@@ -5,17 +5,10 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-    - 4f23562e06f1 mm: numa_memblks: identify the accurate NUMA ID of CFMW
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260213060347.2389818-2-cuichao1753@phytium.com.cn
-      - Link: https://lkml.kernel.org/r/20260211103320.2064211-2-cuichao1753@phytium.com.cn
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

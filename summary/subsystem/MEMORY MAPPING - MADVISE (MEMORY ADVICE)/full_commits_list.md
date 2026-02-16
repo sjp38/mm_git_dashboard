@@ -8,21 +8,21 @@
     - reviewer, reviewer: 2 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-      - 0a096ab7a3a6 mm: introduce generic lazy_mmu helpers (6/14)
+      - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers" (6/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-      - 17fd82c3abe0 mm/vma: add and use vma_assert_stabilised() (9/10)
+      - 17fd82c3abe0 "mm/vma: add and use vma_assert_stabilised()" (9/10)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/6c9e64bb2b56ddb6f806fde9237f8a00cb3a776b.1769198904.git.lorenzo.stoakes@oracle.com
-      - 36976159140b mm, swap: cleanup swap entry management workflow (13/19)
+      - 36976159140b "mm, swap: cleanup swap entry management workflow" (13/19)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: : https://lkml.kernel.org/r/CAMgjq7AUz10uETVm8ozDWcB3XohkOqf0i33KGrAquvEVvfp5cg@mail.gmail.com
         - Link: : https://lkml.kernel.org/r/aXxkANcET3l2Xu6J@KASONG-MC4
         - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-14-8862a265a033@tencent.com
-      - e388d31257ed mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag() (1/13)
+      - e388d31257ed "mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag()" (1/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/033dcf12e819dee5064582bced9b12ea346d1607.1769097829.git.lorenzo.stoakes@oracle.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits

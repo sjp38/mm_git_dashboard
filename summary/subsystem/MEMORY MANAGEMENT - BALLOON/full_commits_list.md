@@ -6,10 +6,10 @@
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 25b48b4cdf91 mm: rename balloon_compaction.(c|h) to balloon.(c|h) (19/24)
+      - 25b48b4cdf91 "mm: rename balloon_compaction.(c|h) to balloon.(c|h)" (19/24)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260119230133.3551867-21-david@kernel.org
-      - cd8e95d80bc2 mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION (21/24)
+      - cd8e95d80bc2 "mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION" (21/24)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260119230133.3551867-23-david@kernel.org
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits

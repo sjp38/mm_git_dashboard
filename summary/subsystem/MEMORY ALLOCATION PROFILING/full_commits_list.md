@@ -5,10 +5,10 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - 2a912d440c60 alloc_tag: move memory_allocation_profiling_sysctls into .rodata
+    - 2a912d440c60 "alloc_tag: move memory_allocation_profiling_sysctls into .rodata"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20251215-jag-alloc_tag_const-v1-1-35ea56a1ce13@kernel.org
-    - 77bcee8d4015 alloc_tag: fix rw permission issue when handling boot parameter
+    - 77bcee8d4015 "alloc_tag: fix rw permission issue when handling boot parameter"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260115031536.164254-1-ranxiaokai627@163.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits

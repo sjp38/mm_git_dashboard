@@ -6,10 +6,10 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 29ec27805f55 mm/oom_kill: remove unnecessary integer promotion in format string
+    - 29ec27805f55 "mm/oom_kill: remove unnecessary integer promotion in format string"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20251228154456.2386-1-kdipendra88@gmail.com
-    - 5898aa8f9a0b mm: fix OOM killer inaccuracy on large many-core systems
+    - 5898aa8f9a0b "mm: fix OOM killer inaccuracy on large many-core systems"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260114143642.47333-1-mathieu.desnoyers@efficios.com
       - Link: https://lore.kernel.org/lkml/20250331223516.7810-2-sweettea-kernel@dorminy.me/ # [1]

@@ -3,7 +3,7 @@
   - author/reviewer role stat
     - maintainer, reviewer: 1 commits
   - full commits list
-    - 9b47d4eea3f7 mm/kasan: fix KASAN poisoning in vrealloc()
+    - 9b47d4eea3f7 "mm/kasan: fix KASAN poisoning in vrealloc()"
       - Authored by a maintainer, reviewed by a reviewer
       - Link: : https://lkml.kernel.org/r/20260119144509.32767-1-ryabinin.a.a@gmail.com
       - Link: https://lkml.kernel.org/r/20260113191516.31015-1-ryabinin.a.a@gmail.com
@@ -14,14 +14,14 @@
     - no role, maintainer: 1 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-      - 0a096ab7a3a6 mm: introduce generic lazy_mmu helpers (6/14)
+      - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers" (6/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - b19cb086043d mm/kasan/kunit: extend vmalloc OOB tests to cover vrealloc()
+    - b19cb086043d "mm/kasan/kunit: extend vmalloc OOB tests to cover vrealloc()"
       - Authored by a maintainer, reviewed by a reviewer
       - Link: : https://lkml.kernel.org/r/20260116132822.22227-1-ryabinin.a.a@gmail.com
       - Link: https://lkml.kernel.org/r/20260113191516.31015-2-ryabinin.a.a@gmail.com
-    - 292ded180bfa kasan: remove unnecessary sync argument from start_report()
+    - 292ded180bfa "kasan: remove unnecessary sync argument from start_report()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260122041556.341868-1-maninder1.s@samsung.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits

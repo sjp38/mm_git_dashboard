@@ -12,189 +12,189 @@
     - maintainer, no role : 4 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-      - ee7f5d193358 Docs/mm/damon/design: update for nr_snapshots damos stat (2/12)
+      - ee7f5d193358 "Docs/mm/damon/design: update for nr_snapshots damos stat" (2/12)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20251216080128.42991-4-sj@kernel.org
-      - 0b43f89e2d9a Docs/admin-guide/mm/damon/usage: update for nr_snapshots damos stat (3/12)
+      - 0b43f89e2d9a "Docs/admin-guide/mm/damon/usage: update for nr_snapshots damos stat" (3/12)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20251216080128.42991-5-sj@kernel.org
-      - 64aa87f03da9 Docs/mm/damon/design: update for max_nr_snapshots (8/12)
+      - 64aa87f03da9 "Docs/mm/damon/design: update for max_nr_snapshots" (8/12)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20251216080128.42991-10-sj@kernel.org
-      - 2584dd7496c5 Docs/admin-guide/mm/damon/usage: update for max_nr_snapshots (9/12)
+      - 2584dd7496c5 "Docs/admin-guide/mm/damon/usage: update for max_nr_snapshots" (9/12)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20251216080128.42991-11-sj@kernel.org
-    - 64dd89ae01f2 mm/block/fs: remove laptop_mode
+    - 64dd89ae01f2 "mm/block/fs: remove laptop_mode"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20251216185201.GH905277@cmpxchg.org
-    - a98ec863fded lib/test_vmalloc.c: minor fixes to test_vmalloc.c
+    - a98ec863fded "lib/test_vmalloc.c: minor fixes to test_vmalloc.c"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20251201181848.1216197-1-audra@redhat.com
-    - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-    - 9e80e66ddaf7 mm, hugetlb: implement movable_gigantic_pages sysctl
+    - 9e80e66ddaf7 "mm, hugetlb: implement movable_gigantic_pages sysctl"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20251221125603.2364174-1-gourry@gourry.net
       - Link: https://lore.kernel.org/all/20180201193132.Hk7vI_xaU%25akpm@linux-foundation.org/
     - series "selftests/mm: hugetlb cgroup charging: robustness fixes", v3. (3 commits)
-      - 8e46adb62fae selftests/mm/write_to_hugetlbfs: parse -s as size_t (0/3)
+      - 8e46adb62fae "selftests/mm/write_to_hugetlbfs: parse -s as size_t" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251221122639.3168038-1-liwang@redhat.com
         - Link: https://lkml.kernel.org/r/20251221122639.3168038-2-liwang@redhat.com
-      - 1aa1dd9cc595 selftests/mm/charge_reserved_hugetlb: drop mount size for hugetlbfs (1/3)
+      - 1aa1dd9cc595 "selftests/mm/charge_reserved_hugetlb: drop mount size for hugetlbfs" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251221122639.3168038-3-liwang@redhat.com
-      - b618876f2e70 selftests/mm/charge_reserved_hugetlb.sh: add waits with timeout helper (2/3)
+      - b618876f2e70 "selftests/mm/charge_reserved_hugetlb.sh: add waits with timeout helper" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251221122639.3168038-4-liwang@redhat.com
-      - b47beff129c6 selftests/mm: fix va_high_addr_switch.sh return value (None/None)
+      - b47beff129c6 "selftests/mm: fix va_high_addr_switch.sh return value" (None/None)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251221040025.3159990-1-chuhu@redhat.com
-    - b1f031e33cb5 selftests/mm: allocate 6 hugepages in va_high_addr_switch.sh
+    - b1f031e33cb5 "selftests/mm: allocate 6 hugepages in va_high_addr_switch.sh"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20251221040025.3159990-2-chuhu@redhat.com
-    - 7544d7969d84 selftests/mm: remove arm64 nr_hugepages setup for va_high_addr_switch test
+    - 7544d7969d84 "selftests/mm: remove arm64 nr_hugepages setup for va_high_addr_switch test"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20251221040025.3159990-3-chuhu@redhat.com
-    - dd0202a0bd81 selftests/mm: va_high_addr_switch return fail when either test failed
+    - dd0202a0bd81 "selftests/mm: va_high_addr_switch return fail when either test failed"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20251221040025.3159990-4-chuhu@redhat.com
-    - 6319c4f44234 selftests/mm: fix comment for check_test_requirements
+    - 6319c4f44234 "selftests/mm: fix comment for check_test_requirements"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20251221040025.3159990-5-chuhu@redhat.com
-      - 4267739cabb8 arch, mm: consolidate initialization of SPARSE memory model (23/29)
+      - 4267739cabb8 "arch, mm: consolidate initialization of SPARSE memory model" (23/29)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260111082105.290734-25-rppt@kernel.org
-    - 0cc3197bdb7f mm/early_ioremap: print the starting physical address in __early_ioremap()
+    - 0cc3197bdb7f "mm/early_ioremap: print the starting physical address in __early_ioremap()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/aa2d44c34f44c31b50285b7592ed4fd78d6f59ba.1767965415.git.houwenlong.hwl@antgroup.com
-    - 5fd8391cb719 mm/early_ioremap: clean up the use of WARN() for debugging
+    - 5fd8391cb719 "mm/early_ioremap: clean up the use of WARN() for debugging"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/d4470531ce0c03fd80f9a1be7e8d8ae1bc60fcd1.1768220636.git.houwenlong.hwl@antgroup.com
-      - 6c08cc64d194 mm: cma: kill cma_pages_valid() (2/6)
+      - 6c08cc64d194 "mm: cma: kill cma_pages_valid()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260109093136.1491549-4-wangkefeng.wang@huawei.com
-      - e0c1326779cc mm: page_alloc: add alloc_contig_frozen_{range,pages}() (3/6)
+      - e0c1326779cc "mm: page_alloc: add alloc_contig_frozen_{range,pages}()" (3/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260109093136.1491549-5-wangkefeng.wang@huawei.com
-      - 9bda131c6093 mm: cma: add cma_alloc_frozen{_compound}() (4/6)
+      - 9bda131c6093 "mm: cma: add cma_alloc_frozen{_compound}()" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260109093136.1491549-6-wangkefeng.wang@huawei.com
-      - 5022134c1b49 Docs/mm/damon/design: document DAMOS_QUOTA_[IN]ACTIVE_MEM_BP (2/11)
+      - 5022134c1b49 "Docs/mm/damon/design: document DAMOS_QUOTA_[IN]ACTIVE_MEM_BP" (2/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260113152717.70459-4-sj@kernel.org
-      - b36aefb866a1 Docs/admin-guide/mm/damon/lru_sort: document filter_young_pages (6/11)
+      - b36aefb866a1 "Docs/admin-guide/mm/damon/lru_sort: document filter_young_pages" (6/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260113152717.70459-8-sj@kernel.org
-      - cdfca22d15ca Docs/admin-guide/mm/damon/lru_sort: document active_mem_bp parameter (8/11)
+      - cdfca22d15ca "Docs/admin-guide/mm/damon/lru_sort: document active_mem_bp parameter" (8/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260113152717.70459-10-sj@kernel.org
-      - ed581147a417 Docs/admin-guide/mm/damon/lru_sort: document intervals autotuning (10/11)
+      - ed581147a417 "Docs/admin-guide/mm/damon/lru_sort: document intervals autotuning" (10/11)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260113152717.70459-12-sj@kernel.org
-      - 386781df63cb mm: use nodes_and() return value to simplify client code (1/3)
+      - 386781df63cb "mm: use nodes_and() return value to simplify client code" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260114172217.861204-3-ynorov@nvidia.com
-      - cd8e95d80bc2 mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION (21/24)
+      - cd8e95d80bc2 "mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION" (21/24)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260119230133.3551867-23-david@kernel.org
-      - a45088376d8a mm/vmscan: add tracepoint and reason for kswapd_failures reset (1/2)
+      - a45088376d8a "mm/vmscan: add tracepoint and reason for kswapd_failures reset" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260120024402.387576-3-jiayuan.chen@linux.dev
     - series "Replace wq users and add WQ_PERCPU to alloc_workqueue() users", v2. (3 commits)
-      - 0bcbd7cf6596 mm: replace use of system_unbound_wq with system_dfl_wq (0/3)
+      - 0bcbd7cf6596 "mm: replace use of system_unbound_wq with system_dfl_wq" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260113114630.152942-1-marco.crivellari@suse.com
         - Link: https://lore.kernel.org/all/20250221112003.1dSuoGyc@linutronix.de/
         - Link: https://lkml.kernel.org/r/20260113114630.152942-2-marco.crivellari@suse.com
-      - 73b2162126ff mm: replace use of system_wq with system_percpu_wq (1/3)
+      - 73b2162126ff "mm: replace use of system_wq with system_percpu_wq" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/all/20250221112003.1dSuoGyc@linutronix.de/
         - Link: https://lkml.kernel.org/r/20260113114630.152942-3-marco.crivellari@suse.com
-      - ed0a826ce302 mm: add WQ_PERCPU to alloc_workqueue users (2/3)
+      - ed0a826ce302 "mm: add WQ_PERCPU to alloc_workqueue users" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/all/20250221112003.1dSuoGyc@linutronix.de/
         - Link: https://lkml.kernel.org/r/20260113114630.152942-4-marco.crivellari@suse.com
     - series "Various mm kselftests improvements/fixes", v3. (9 commits)
-      - 4ac76c51709d selftests/mm: default KDIR to build directory (0/9)
+      - 4ac76c51709d "selftests/mm: default KDIR to build directory" (0/9)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260122170224.4056513-1-kevin.brodsky@arm.com
         - Link: https://lkml.kernel.org/r/20260122170224.4056513-2-kevin.brodsky@arm.com
-      - 1821be740d2e selftests/mm: remove flaky header check (1/9)
+      - 1821be740d2e "selftests/mm: remove flaky header check" (1/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260122170224.4056513-3-kevin.brodsky@arm.com
-      - 7f532d19c8be selftests/mm: pass down full CC and CFLAGS to check_config.sh (2/9)
+      - 7f532d19c8be "selftests/mm: pass down full CC and CFLAGS to check_config.sh" (2/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260122170224.4056513-4-kevin.brodsky@arm.com
-      - bce1dabd310e selftests/mm: fix usage of FORCE_READ() in cow tests (3/9)
+      - bce1dabd310e "selftests/mm: fix usage of FORCE_READ() in cow tests" (3/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260122170224.4056513-5-kevin.brodsky@arm.com
-      - 20d3fac43608 selftests/mm: check that FORCE_READ() succeeded (4/9)
+      - 20d3fac43608 "selftests/mm: check that FORCE_READ() succeeded" (4/9)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260122170224.4056513-6-kevin.brodsky@arm.com
-      - dd2b4e04c098 selftests/mm: introduce helper to read every page (5/9)
+      - dd2b4e04c098 "selftests/mm: introduce helper to read every page" (5/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260122170224.4056513-7-kevin.brodsky@arm.com
-      - 7e938f00b003 selftests/mm: fix faulting-in code in pagemap_ioctl test (6/9)
+      - 7e938f00b003 "selftests/mm: fix faulting-in code in pagemap_ioctl test" (6/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260122170224.4056513-8-kevin.brodsky@arm.com
-      - 148e5879532f selftests/mm: fix exit code in pagemap_ioctl (7/9)
+      - 148e5879532f "selftests/mm: fix exit code in pagemap_ioctl" (7/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260122170224.4056513-9-kevin.brodsky@arm.com
-      - fde8353121aa selftests/mm: report SKIP in pfnmap if a check fails (8/9)
+      - fde8353121aa "selftests/mm: report SKIP in pfnmap if a check fails" (8/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260122170224.4056513-10-kevin.brodsky@arm.com
-    - dd2c6ec24fca selftests/mm: remove virtual_address_range test
+    - dd2c6ec24fca "selftests/mm: remove virtual_address_range test"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260116132053.857887-1-lorenzo.stoakes@oracle.com
     - series "Docs/mm/damon: update intro, modules, maintainer profile, and misc". (8 commits)
-      - 32d11b320897 Docs/mm/damon/index: simplify the intro (0/8)
+      - 32d11b320897 "Docs/mm/damon/index: simplify the intro" (0/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260118180305.70023-1-sj@kernel.org
         - Link: https://lkml.kernel.org/r/20260118180305.70023-2-sj@kernel.org
-      - feb6241209b7 Docs/mm/damon/design: link repology instead of Fedora package (1/8)
+      - feb6241209b7 "Docs/mm/damon/design: link repology instead of Fedora package" (1/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260118180305.70023-3-sj@kernel.org
-      - 63464f5b8507 Docs/mm/damon/design: document DAMON sample modules (2/8)
+      - 63464f5b8507 "Docs/mm/damon/design: document DAMON sample modules" (2/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260118180305.70023-4-sj@kernel.org
-      - 83cefa8d7e7a Docs/mm/damon/design: add reference to DAMON_STAT usage (3/8)
+      - 83cefa8d7e7a "Docs/mm/damon/design: add reference to DAMON_STAT usage" (3/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260118180305.70023-5-sj@kernel.org
-      - e7df7a0bfc90 Docs/admin-guide/mm/damon/usage: introduce DAMON modules at the beginning (4/8)
+      - e7df7a0bfc90 "Docs/admin-guide/mm/damon/usage: introduce DAMON modules at the beginning" (4/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260118180305.70023-6-sj@kernel.org
-      - 652fd06d20da Docs/admin-guide/mm/damon/usage: update stats update process for refresh_ms (5/8)
+      - 652fd06d20da "Docs/admin-guide/mm/damon/usage: update stats update process for refresh_ms" (5/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260118180305.70023-7-sj@kernel.org
-      - b71e496f815a Docs/mm/damon/maintainer-profile: fix wrong MAITNAINERS section name (6/8)
+      - b71e496f815a "Docs/mm/damon/maintainer-profile: fix wrong MAITNAINERS section name" (6/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260118180305.70023-8-sj@kernel.org
-      - 4c8f08d9939e Docs/mm/damon/maintainer-profile: remove damon-tests/perf suggestion (7/8)
+      - 4c8f08d9939e "Docs/mm/damon/maintainer-profile: remove damon-tests/perf suggestion" (7/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260118180305.70023-9-sj@kernel.org
-    - 6ce964c02f1c selftests/mm: have the harness run each test category separately
+    - 6ce964c02f1c "selftests/mm: have the harness run each test category separately"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260123-selftests-mm-run-suites-separately-v2-1-3e934edacbfa@kernel.org
-    - ad789a85b163 mm/cma: replace snprintf with strscpy in cma_new_area
+    - ad789a85b163 "mm/cma: replace snprintf with strscpy in cma_new_area"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260126174516.236968-1-thorsten.blum@linux.dev
-    - ef24e0aa078f mm: add SPDX id lines to some mm source files
+    - ef24e0aa078f "mm: add SPDX id lines to some mm source files"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260204213101.1754183-1-tim.bird@sony.com
-      - 7ec9ecf217f8 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
+      - 7ec9ecf217f8 "mm/vmscan: select the closest preferred node in demote_folio_list()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260114205305.2869796-3-bingjiao@google.com
     - series "selftests/mm: add memory failure selftests", v4. (3 commits)
-      - ff4ef2fbd101 selftests/mm: add memory failure anonymous page test (0/3)
+      - ff4ef2fbd101 "selftests/mm: add memory failure anonymous page test" (0/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260206031639.2707102-1-linmiaohe@huawei.com
         - Link: https://lkml.kernel.org/r/20260206031639.2707102-2-linmiaohe@huawei.com
-      - 12e8a2fae372 selftests/mm: add memory failure clean pagecache test (1/3)
+      - 12e8a2fae372 "selftests/mm: add memory failure clean pagecache test" (1/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260206031639.2707102-3-linmiaohe@huawei.com
-      - d51b5076c746 selftests/mm: add memory failure dirty pagecache test (2/3)
+      - d51b5076c746 "selftests/mm: add memory failure dirty pagecache test" (2/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260206031639.2707102-4-linmiaohe@huawei.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
@@ -202,7 +202,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - b42ab05defcf mm/fadvise: validate offset in generic_fadvise
+    - 6b9ff3732d61 "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
@@ -210,7 +210,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - a6f4e5682802 kho: docs: combine concepts and FDT documentation (2/6)
+      - a6f4e5682802 "kho: docs: combine concepts and FDT documentation" (2/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: : https://lkml.kernel.org/r/aV4bnHlBXGpT_FMc@kernel.org
         - Link: https://lkml.kernel.org/r/20260105165839.285270-4-rppt@kernel.org

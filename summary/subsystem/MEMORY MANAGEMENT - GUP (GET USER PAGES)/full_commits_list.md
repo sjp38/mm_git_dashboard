@@ -6,10 +6,10 @@
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-    - 7969f3059493 mm/gup: remove no longer used gup_fast_undo_dev_pagemap
+    - 7969f3059493 "mm/gup: remove no longer used gup_fast_undo_dev_pagemap"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20251219-gup-cleanup-v1-1-348a70d9eecb@tencent.com
-    - ef24e0aa078f mm: add SPDX id lines to some mm source files
+    - ef24e0aa078f "mm: add SPDX id lines to some mm source files"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260204213101.1754183-1-tim.bird@sony.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits

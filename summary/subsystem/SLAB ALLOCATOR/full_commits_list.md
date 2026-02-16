@@ -5,7 +5,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - ed0a826ce302 mm: add WQ_PERCPU to alloc_workqueue users (2/3)
+      - ed0a826ce302 "mm: add WQ_PERCPU to alloc_workqueue users" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/all/20250221112003.1dSuoGyc@linutronix.de/
         - Link: https://lkml.kernel.org/r/20260113114630.152942-4-marco.crivellari@suse.com

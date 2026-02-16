@@ -8,20 +8,20 @@
     - maintainer, no role : 2 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-    - 0be909f114c4 zsmalloc: use actual object size to detect spans
+    - 0be909f114c4 "zsmalloc: use actual object size to detect spans"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260107052145.3586917-1-senozhatsky@chromium.org
-    - 19c4707b535a zsmalloc: simplify read begin/end logic
+    - 19c4707b535a "zsmalloc: simplify read begin/end logic"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260107052145.3586917-2-senozhatsky@chromium.org
-    - dc2e4982cb01 zsmalloc: introduce SG-list based object read API
+    - dc2e4982cb01 "zsmalloc: introduce SG-list based object read API"
       - Authored by a maintainer, reviewed by no role player
       - Link: : https://lkml.kernel.org/r/20260117024900.792237-1-senozhatsky@chromium.org
       - Link: https://lkml.kernel.org/r/20260113034645.2729998-1-senozhatsky@chromium.org
-    - 3881b00a2cea zsmalloc: make common caches global
+    - 3881b00a2cea "zsmalloc: make common caches global"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260117025406.799428-1-senozhatsky@chromium.org
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits

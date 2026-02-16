@@ -13,59 +13,59 @@
     - maintainer, reviewer: 1 commits
     - maintainer, maintainer: 2 commits
   - full commits list
-      - 0a096ab7a3a6 mm: introduce generic lazy_mmu helpers (6/14)
+      - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers" (6/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - 7adc97bc9394 mm/vmscan.c:shrink_folio_list(): save a tabstop
+    - 7adc97bc9394 "mm/vmscan.c:shrink_folio_list(): save a tabstop"
       - Authored by a maintainer, reviewed by nobody
-      - 055059ed720e memcg: remove mem_cgroup_size() (1/2)
+      - 055059ed720e "memcg: remove mem_cgroup_size()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20251211013019.2080004-3-chenridong@huaweicloud.com
-    - 64dd89ae01f2 mm/block/fs: remove laptop_mode
+    - 64dd89ae01f2 "mm/block/fs: remove laptop_mode"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20251216185201.GH905277@cmpxchg.org
-    - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-      - 4267739cabb8 arch, mm: consolidate initialization of SPARSE memory model (23/29)
+      - 4267739cabb8 "arch, mm: consolidate initialization of SPARSE memory model" (23/29)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260111082105.290734-25-rppt@kernel.org
     - series "memcg: separate private and public ID namespaces". (8 commits)
-      - e77786b4682e memcg: introduce private id API for in-kernel users (0/8)
+      - e77786b4682e "memcg: introduce private id API for in-kernel users" (0/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251225232116.294540-1-shakeel.butt@linux.dev
         - Link: https://lkml.kernel.org/r/20251225232116.294540-2-shakeel.butt@linux.dev
-      - 20ccbd89afe4 mm/vmscan: use cgroup ID instead of private memcg ID in lru_gen interface (5/8)
+      - 20ccbd89afe4 "mm/vmscan: use cgroup ID instead of private memcg ID in lru_gen interface" (5/8)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251225232116.294540-7-shakeel.butt@linux.dev
-      - 95296536eb19 memcg: rename mem_cgroup_ino() to mem_cgroup_id() (7/8)
+      - 95296536eb19 "memcg: rename mem_cgroup_ino() to mem_cgroup_id()" (7/8)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lkml.kernel.org/r/flkqanhyettp5uq22bjwg37rtmnpeg3mghznsylxcxxgaafpl4@nov2x7tagma7
         - Link: https://lkml.kernel.org/r/20251225232116.294540-9-shakeel.butt@linux.dev
-      - a3db9e136ce1 mm/vmscan: drop inclusion of balloon_compaction.h (18/24)
+      - a3db9e136ce1 "mm/vmscan: drop inclusion of balloon_compaction.h" (18/24)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260119230133.3551867-20-david@kernel.org
     - series "mm/vmscan: add tracepoint and reason for kswapd_failures reset", v4. (2 commits)
-      - dc9fe9b7056a mm/vmscan: mitigate spurious kswapd_failures reset from direct reclaim (0/2)
+      - dc9fe9b7056a "mm/vmscan: mitigate spurious kswapd_failures reset from direct reclaim" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260120024402.387576-1-jiayuan.chen@linux.dev
         - Link: https://lkml.kernel.org/r/20260120024402.387576-2-jiayuan.chen@linux.dev
-      - a45088376d8a mm/vmscan: add tracepoint and reason for kswapd_failures reset (1/2)
+      - a45088376d8a "mm/vmscan: add tracepoint and reason for kswapd_failures reset" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260120024402.387576-3-jiayuan.chen@linux.dev
-      - 2732acda82c9 mm, swap: use swap cache as the swap in synchronize layer (11/19)
+      - 2732acda82c9 "mm, swap: use swap cache as the swap in synchronize layer" (11/19)
         - Authored by a maintainer, reviewed by a reviewer
         - Link:  https://lkml.kernel.org/r/CAMgjq7CGUnzOVG7uSaYjzw9wD7w2dSKOHprJfaEp4CcGLgE3iw@mail.gmail.com
         - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-12-8862a265a033@tencent.com
-    - 4a8eabc6e4c7 mm/vmscan: use %pe to print error pointers
+    - 4a8eabc6e4c7 "mm/vmscan: use %pe to print error pointers"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/80a6643657a60e75ddf48b4869b3e7fdc101f855.1770230135.git.chandna.sahil@gmail.com
     - series "mm/vmscan: fix demotion targets checks in reclaim/demotion", v9. (2 commits)
-      - 1aceed565ff1 mm/vmscan: fix demotion targets checks in reclaim/demotion (0/2)
+      - 1aceed565ff1 "mm/vmscan: fix demotion targets checks in reclaim/demotion" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260114205305.2869796-1-bingjiao@google.com
         - Link: https://lkml.kernel.org/r/20260114205305.2869796-2-bingjiao@google.com
-      - 7ec9ecf217f8 mm/vmscan: select the closest preferred node in demote_folio_list() (1/2)
+      - 7ec9ecf217f8 "mm/vmscan: select the closest preferred node in demote_folio_list()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260114205305.2869796-3-bingjiao@google.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
@@ -73,7 +73,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 7ebfada2c85b mm/vmscan: avoid false-positive -Wuninitialized warning
+    - 776250964cba "mm/vmscan: avoid false-positive -Wuninitialized warning"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260213123902.3466040-1-arnd@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

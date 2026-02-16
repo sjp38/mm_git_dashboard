@@ -25,12 +25,16 @@
     - maintainer, maintainer: 22 -> 22 commits (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 10 -> 10 commits (no change)
+- mm-new: 10 -> 9 commits
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
+    - no role, no role : 4 -> 3 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
+  - dropped commits
+    - 4f23562e06f1 "mm: numa_memblks: identify the accurate NUMA ID of CFMW"
+      - Link: https://lkml.kernel.org/r/20260213060347.2389818-2-cuichao1753@phytium.com.cn
+      - Link: https://lkml.kernel.org/r/20260211103320.2064211-2-cuichao1753@phytium.com.cn
 - mm-nonmm-stable: 4 -> 4 commits (no change)
   - series: 0 (3) -> 0 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

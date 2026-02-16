@@ -7,13 +7,13 @@
     - reviewer, reviewer: 1 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - 64dd89ae01f2 mm/block/fs: remove laptop_mode
+    - 64dd89ae01f2 "mm/block/fs: remove laptop_mode"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20251216185201.GH905277@cmpxchg.org
-    - ad1e0c44a415 mm/readahead: fix typo in comment
+    - ad1e0c44a415 "mm/readahead: fix typo in comment"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260127152535.321951-1-cheng20011202@gmail.com
-      - 53f1d9364451 mm: make vm_area_desc utilise vma_flags_t only (9/13)
+      - 53f1d9364451 "mm: make vm_area_desc utilise vma_flags_t only" (9/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/fd2a2938b246b4505321954062b1caba7acfc77a.1769097829.git.lorenzo.stoakes@oracle.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits

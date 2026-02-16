@@ -7,13 +7,13 @@
     - no role, reviewer: 1 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-      - 0a096ab7a3a6 mm: introduce generic lazy_mmu helpers (6/14)
+      - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers" (6/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - 62451ae347b0 mm: fix minor spelling mistakes in comments
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-      - 4984d746c80e mm, swap: check swap table directly for checking cache (15/19)
+      - 4984d746c80e "mm, swap: check swap table directly for checking cache" (15/19)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-16-8862a265a033@tencent.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits

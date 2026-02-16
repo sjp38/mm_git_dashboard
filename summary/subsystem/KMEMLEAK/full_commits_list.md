@@ -8,7 +8,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-      - 61e9210e2392 mm: use ARRAY_END() instead of open-coding it (3/4)
+      - 61e9210e2392 "mm: use ARRAY_END() instead of open-coding it" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/2335917d123891fec074ab1b3acfb517cf14b5a7.1765449750.git.alx@kernel.org
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
