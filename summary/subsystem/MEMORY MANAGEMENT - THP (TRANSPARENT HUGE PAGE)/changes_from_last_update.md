@@ -1,8 +1,14 @@
 - baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - a450413f240c "mm: thp: deny THP for files on anonymous inodes"
+      - Link: https://syzkaller.appspot.com/bug?extid=33a04338019ac7e43a44
+      - Link: https://lore.kernel.org/linux-mm/CAEvNRgHegcz3ro35ixkDw39ES8=U6rs6S7iP0gkR9enr7HoGtA@mail.gmail.com
+      - Link: https://lkml.kernel.org/r/20260214001535.435626-1-kartikey406@gmail.com
 - mm-stable: 10 -> 10 commits (no change)
   - series: 2 (8) -> 2 (8) (no change)
     - no role, reviewer: 8 -> 8 commits (no change)

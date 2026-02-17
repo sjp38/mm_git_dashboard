@@ -6,7 +6,13 @@
     - 338ad1e84d15 "mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260209062639.16577-1-harry.yoo@oracle.com
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - 51c856e796f3 "mm: change vma_alloc_folio_noprof() macro to inline function"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
 - mm-stable: 14 total, 3 (9) series, 5 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 8 commits
@@ -67,7 +73,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 92c10176c3b4 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+    - 73fd3fb2b1fb "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

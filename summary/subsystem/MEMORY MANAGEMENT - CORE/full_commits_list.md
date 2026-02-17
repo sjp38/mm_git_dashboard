@@ -1,6 +1,12 @@
 - baseline: v6.19-rc6-36-g6c790212c588f
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - 51c856e796f3 "mm: change vma_alloc_folio_noprof() macro to inline function"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
 - mm-stable: 64 total, 7 (53) series, 11 non-series commits
   - author/reviewer role stat
     - no role, nobody: 4 commits
@@ -235,7 +241,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 28624e10eac6 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
+    - 22d5fb2ff084 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260130073807.99474-1-tujinjiang@huawei.com
 - mm-nonmm-stable: 2 total, 0 (0) series, 2 non-series commits

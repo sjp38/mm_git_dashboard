@@ -77,7 +77,14 @@
       - 50c7f34c5c74 "mm, swap: remove no longer needed _swap_info_get" (18/19)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-19-8862a265a033@tencent.com
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - maintainer, nobody: 1 commits
+  - full commits list
+    - d9982f38eb6e "mm, swap: speed up hibernation allocation and writeout"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260216-hibernate-perf-v4-1-1ba9f0bf1ec9@tencent.com
+      - Link: https://lore.kernel.org/linux-mm/8b4bdcfa-ce3f-4e23-839f-31367df7c18f@gmx.de/ [1]
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

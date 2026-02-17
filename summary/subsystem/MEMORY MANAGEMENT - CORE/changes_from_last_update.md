@@ -1,8 +1,12 @@
 - baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 51c856e796f3 "mm: change vma_alloc_folio_noprof() macro to inline function"
+      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
 - mm-stable: 64 -> 64 commits (no change)
   - series: 7 (53) -> 7 (53) (no change)
     - no role, nobody: 4 -> 4 commits (no change)

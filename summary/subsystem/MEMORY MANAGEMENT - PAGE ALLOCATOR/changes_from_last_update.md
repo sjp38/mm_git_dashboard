@@ -2,8 +2,12 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 51c856e796f3 "mm: change vma_alloc_folio_noprof() macro to inline function"
+      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
 - mm-stable: 14 -> 14 commits (no change)
   - series: 3 (9) -> 3 (9) (no change)
     - no role, reviewer: 8 -> 8 commits (no change)

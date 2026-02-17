@@ -91,17 +91,27 @@
     - 61dc9f776705 "procfs: fix possible double mmput() in do_procmap_query()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260210192738.3041609-1-andrii@kernel.org
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 4 total, 0 (0) series, 4 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - a5d02420e6e4 "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
+    - 97137bcb4ba1 "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/ff48283b-be21-7f9a-d616-e303a4a1ebe6@redhat.com
-    - 84989c1a84a8 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
+    - c78325ebdf51 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260213095410.1862978-1-glider@google.com
+    - 51c856e796f3 "mm: change vma_alloc_folio_noprof() macro to inline function"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
+    - a450413f240c "mm: thp: deny THP for files on anonymous inodes"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://syzkaller.appspot.com/bug?extid=33a04338019ac7e43a44
+      - Link: https://lore.kernel.org/linux-mm/CAEvNRgHegcz3ro35ixkDw39ES8=U6rs6S7iP0gkR9enr7HoGtA@mail.gmail.com
+      - Link: https://lkml.kernel.org/r/20260214001535.435626-1-kartikey406@gmail.com
 - mm-stable: 361 total, 35 (279) series, 82 non-series commits
   - author/reviewer role stat
     - no role, nobody: 33 commits
@@ -1308,7 +1318,14 @@
     - ac1ea219590c "mm/page_alloc: clear page->private in free_pages_prepare()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260207173615.146159-1-mikhail.v.gavrilov@gmail.com
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - maintainer, nobody: 1 commits
+  - full commits list
+    - d9982f38eb6e "mm, swap: speed up hibernation allocation and writeout"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260216-hibernate-perf-v4-1-1ba9f0bf1ec9@tencent.com
+      - Link: https://lore.kernel.org/linux-mm/8b4bdcfa-ce3f-4e23-839f-31367df7c18f@gmx.de/ [1]
 - mm-new: 43 total, 2 (32) series, 11 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
@@ -1317,138 +1334,138 @@
     - no role, maintainer: 4 commits
     - maintainer, nobody: 33 commits
   - full commits list
-    - 468fab49961c "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+    - ff54a1d49060 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
-    - 92c10176c3b4 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+    - 73fd3fb2b1fb "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-    - f05d45033846 "mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold"
+    - b2c1d4c7570d "mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260203095400.2465255-1-qin.yuA@h3c.com
-    - 964761a87655 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
+    - 9ae100b00e6b "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
       - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com
-    - c70ae09e6b2a "fs: hugetlb: simplify remove_inode_hugepages() return type"
+    - ee606b128cfa "fs: hugetlb: simplify remove_inode_hugepages() return type"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260204214741.3161520-1-jiaqiyan@google.com
       - Link: https://lore.kernel.org/all/20220914221810.95771-10-mike.kravetz@oracle.com [1]
     - series "KSM: Optimizations for rmap_walk_ksm", v3. (2 commits)
-      - 362f2613969f "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
+      - fec5086405c6 "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212192820223O_r2NQzSEPG_C56cs-z4l@zte.com.cn
         - Link: https://lkml.kernel.org/r/20260212192932941MSsJEAyoRW4YdLBN7_myn@zte.com.cn
-      - 75c51138635b "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
+      - 31c257bf539c "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
-    - 6b9ff3732d61 "mm/fadvise: validate offset in generic_fadvise"
+    - 1983b1489c02 "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
     - series "maple_tree: Replace big node with maple copy", v3. (30 commits)
-      - 499313d558aa "maple_tree: fix mas_dup_alloc() sparse warning" (0/30)
+      - 864a8df980c8 "maple_tree: fix mas_dup_alloc() sparse warning" (0/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-1-Liam.Howlett@oracle.com
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-2-Liam.Howlett@oracle.com
-      - be7de22940b4 "maple_tree: move mas_spanning_rebalance loop to function" (1/30)
+      - 821fbc10e2c8 "maple_tree: move mas_spanning_rebalance loop to function" (1/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-3-Liam.Howlett@oracle.com
-      - 5b41d1d8e4e9 "maple_tree: extract use of big node from mas_wr_spanning_store()" (2/30)
+      - 54e94b6acdf5 "maple_tree: extract use of big node from mas_wr_spanning_store()" (2/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-4-Liam.Howlett@oracle.com
-      - 12dd89f8b56c "maple_tree: remove unnecessary assignment of orig_l index" (3/30)
+      - bc3acfae4bf7 "maple_tree: remove unnecessary assignment of orig_l index" (3/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-5-Liam.Howlett@oracle.com
-      - dc5b4b533648 "maple_tree: inline mas_spanning_rebalance() into mas_wr_spanning_rebalance()" (4/30)
+      - 168387e7d736 "maple_tree: inline mas_spanning_rebalance() into mas_wr_spanning_rebalance()" (4/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-6-Liam.Howlett@oracle.com
-      - 6691de712cd4 "maple_tree: make ma_wr_states reliable for reuse in spanning store" (5/30)
+      - 4a3bd8a6dd39 "maple_tree: make ma_wr_states reliable for reuse in spanning store" (5/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-7-Liam.Howlett@oracle.com
-      - 489d463ecff3 "maple_tree: remove l_wr_mas from mas_wr_spanning_rebalance" (6/30)
+      - 72e19eba7610 "maple_tree: remove l_wr_mas from mas_wr_spanning_rebalance" (6/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-8-Liam.Howlett@oracle.com
-      - 7b2e13eec0c2 "maple_tree: don't pass through height in mas_wr_spanning_store" (7/30)
+      - c01ab71a7c0f "maple_tree: don't pass through height in mas_wr_spanning_store" (7/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-9-Liam.Howlett@oracle.com
-      - 3acab1de19e7 "maple_tree: move maple_subtree_state from mas_wr_spanning_store to mas_wr_spanning_rebalance" (8/30)
+      - 6f7966dfe468 "maple_tree: move maple_subtree_state from mas_wr_spanning_store to mas_wr_spanning_rebalance" (8/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-10-Liam.Howlett@oracle.com
-      - dc9c7cfc083a "maple_tree: correct right ma_wr_state end pivot in mas_wr_spanning_store()" (9/30)
+      - 5a0c57aa5cce "maple_tree: correct right ma_wr_state end pivot in mas_wr_spanning_store()" (9/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-11-Liam.Howlett@oracle.com
-      - 55b1aed117b8 "maple_tree: introduce maple_copy node and use it in mas_spanning_rebalance()" (10/30)
+      - 72d79f5c8dc3 "maple_tree: introduce maple_copy node and use it in mas_spanning_rebalance()" (10/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-12-Liam.Howlett@oracle.com
-      - b279be1ba383 "maple_tree: testing update for spanning store" (11/30)
+      - bb8ca9509d7a "maple_tree: testing update for spanning store" (11/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-13-Liam.Howlett@oracle.com
-      - 65fb33e4d153 "maple_tree: inline mas_spanning_rebalance_loop() into mas_wr_spanning_rebalance()" (12/30)
+      - c67e5663ab96 "maple_tree: inline mas_spanning_rebalance_loop() into mas_wr_spanning_rebalance()" (12/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-14-Liam.Howlett@oracle.com
-      - 6b71ffca2e0e "maple_tree: change initial big node setup in mas_wr_spanning_rebalance()" (13/30)
+      - ac53ffd277fb "maple_tree: change initial big node setup in mas_wr_spanning_rebalance()" (13/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-15-Liam.Howlett@oracle.com
-      - 326dd6da268a "maple_tree: introduce ma_leaf_max_gap()" (14/30)
+      - db264867013e "maple_tree: introduce ma_leaf_max_gap()" (14/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-16-Liam.Howlett@oracle.com
-      - cb536e5f0f3c "maple_tree: add gap support, slot and pivot sizes for maple copy" (15/30)
+      - d879a0545520 "maple_tree: add gap support, slot and pivot sizes for maple copy" (15/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-17-Liam.Howlett@oracle.com
-      - 542961ef8101 "maple_tree: start using maple copy node for destination" (16/30)
+      - 8a90e3605952 "maple_tree: start using maple copy node for destination" (16/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-18-Liam.Howlett@oracle.com
-      - 814013cbd286 "maple_tree-start-using-maple-copy-node-for-destination-checkpatch-fixes" (17/30)
+      - cba2512c69db "maple_tree-start-using-maple-copy-node-for-destination-checkpatch-fixes" (17/30)
         - Authored by a maintainer, reviewed by nobody
-      - ae4f305591ff "maple_tree: inline mas_wr_spanning_rebalance()" (18/30)
+      - 7262f2a0b35d "maple_tree: inline mas_wr_spanning_rebalance()" (18/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-19-Liam.Howlett@oracle.com
-      - 51080dff0f54 "maple_tree: remove unnecessary return statements" (19/30)
+      - 87af310e251e "maple_tree: remove unnecessary return statements" (19/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-20-Liam.Howlett@oracle.com
-      - d067e59c3136 "maple_tree: separate wr_split_store and wr_rebalance store type code path" (20/30)
+      - bfdf37c559d3 "maple_tree: separate wr_split_store and wr_rebalance store type code path" (20/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-21-Liam.Howlett@oracle.com
-      - be1fe726d2e0 "maple_tree: add cp_is_new_root() helper" (21/30)
+      - 802cf09010ca "maple_tree: add cp_is_new_root() helper" (21/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-22-Liam.Howlett@oracle.com
-      - 4ab71d96497b "maple_tree-add-cp_is_new_root-helper-fix" (22/30)
+      - fa8607e3324c "maple_tree-add-cp_is_new_root-helper-fix" (22/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/malwmirqnpuxqkqrobcmzfkmmxipoyzwfs2nwc5fbpxlt2r2ej@wchmjtaljvw3
-      - de8b04130213 "maple_tree-add-cp_is_new_root-helper-fix-fix" (23/30)
+      - 7f56741439b5 "maple_tree-add-cp_is_new_root-helper-fix-fix" (23/30)
         - Authored by a maintainer, reviewed by nobody
-      - ff17d0f83d5e "maple_tree: use maple copy node for mas_wr_rebalance() operation" (24/30)
+      - a40b9cb60c73 "maple_tree: use maple copy node for mas_wr_rebalance() operation" (24/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-23-Liam.Howlett@oracle.com
-      - 13bbac9df0f4 "maple_tree: add test for rebalance calculation off-by-one" (25/30)
+      - 87f1ec71d56b "maple_tree: add test for rebalance calculation off-by-one" (25/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-24-Liam.Howlett@oracle.com
-      - 03525a9a8821 "maple_tree: add copy_tree_location() helper" (26/30)
+      - 0233191e8bf5 "maple_tree: add copy_tree_location() helper" (26/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-25-Liam.Howlett@oracle.com
-      - ac7f7ac92a2e "maple_tree: add cp_converged() helper" (27/30)
+      - d9718f9d7d51 "maple_tree: add cp_converged() helper" (27/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-26-Liam.Howlett@oracle.com
-      - d26b36fa57ed "maple_tree: use maple copy node for mas_wr_split()" (28/30)
+      - f0f37ac1ecee "maple_tree: use maple copy node for mas_wr_split()" (28/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-27-Liam.Howlett@oracle.com
-      - b7cc820570af "maple_tree: remove maple big node and subtree structs" (29/30)
+      - 36bfeeae87f0 "maple_tree: remove maple big node and subtree structs" (29/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-28-Liam.Howlett@oracle.com
-    - 86b980c8468d "maple_tree: pass maple copy node to mas_wmb_replace()"
+    - fe6f8a623c12 "maple_tree: pass maple copy node to mas_wmb_replace()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260130205935.2559335-29-Liam.Howlett@oracle.com
-    - 5931c96bd1ce "maple_tree: don't pass end to mas_wr_append()"
+    - 5be688cf0af7 "maple_tree: don't pass end to mas_wr_append()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260130205935.2559335-30-Liam.Howlett@oracle.com
-    - ebd32ff9eeba "maple_tree: clean up mas_wr_node_store()"
+    - 9d4a450dde50 "maple_tree: clean up mas_wr_node_store()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260130205935.2559335-31-Liam.Howlett@oracle.com
-    - 28624e10eac6 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
+    - 22d5fb2ff084 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260130073807.99474-1-tujinjiang@huawei.com
-    - 776250964cba "mm/vmscan: avoid false-positive -Wuninitialized warning"
+    - b08472d036a3 "mm/vmscan: avoid false-positive -Wuninitialized warning"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260213123902.3466040-1-arnd@kernel.org
 - mm-nonmm-stable: 114 total, 12 (50) series, 64 non-series commits
@@ -1849,4 +1866,14 @@
     - 90627a1e08e6 "lib/group_cpus: handle const qualifier from clusters allocation type"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260206222010.work.349-kees@kernel.org
-- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+  - full commits list
+    - 3a82be32faaf "liveupdate: luo_file: remember retrieve() status"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260216132221.987987-1-pratyush@kernel.org
+    - f1783e139543 "proc: array: drop stale FIXME about RCU in task_sig()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260215124511.14227-1-jaime.saguillo@gmail.com

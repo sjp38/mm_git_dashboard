@@ -55,17 +55,23 @@
     - 338ad1e84d15 "mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260209062639.16577-1-harry.yoo@oracle.com
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, maintainer: 1 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - a5d02420e6e4 "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
+    - 97137bcb4ba1 "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/ff48283b-be21-7f9a-d616-e303a4a1ebe6@redhat.com
-    - 84989c1a84a8 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
+    - c78325ebdf51 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260213095410.1862978-1-glider@google.com
+    - a450413f240c "mm: thp: deny THP for files on anonymous inodes"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://syzkaller.appspot.com/bug?extid=33a04338019ac7e43a44
+      - Link: https://lore.kernel.org/linux-mm/CAEvNRgHegcz3ro35ixkDw39ES8=U6rs6S7iP0gkR9enr7HoGtA@mail.gmail.com
+      - Link: https://lkml.kernel.org/r/20260214001535.435626-1-kartikey406@gmail.com
 - mm-stable: 221 total, 21 (158) series, 63 non-series commits
   - author/reviewer role stat
     - no role, nobody: 8 commits
@@ -821,7 +827,14 @@
     - ac1ea219590c "mm/page_alloc: clear page->private in free_pages_prepare()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260207173615.146159-1-mikhail.v.gavrilov@gmail.com
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - maintainer, nobody: 1 commits
+  - full commits list
+    - d9982f38eb6e "mm, swap: speed up hibernation allocation and writeout"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260216-hibernate-perf-v4-1-1ba9f0bf1ec9@tencent.com
+      - Link: https://lore.kernel.org/linux-mm/8b4bdcfa-ce3f-4e23-839f-31367df7c18f@gmx.de/ [1]
 - mm-new: 9 total, 1 (2) series, 7 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
@@ -829,35 +842,35 @@
     - no role, reviewer: 2 commits
     - no role, maintainer: 3 commits
   - full commits list
-    - 468fab49961c "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+    - ff54a1d49060 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
-    - 92c10176c3b4 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+    - 73fd3fb2b1fb "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-    - f05d45033846 "mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold"
+    - b2c1d4c7570d "mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260203095400.2465255-1-qin.yuA@h3c.com
-    - 964761a87655 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
+    - 9ae100b00e6b "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
       - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com
     - series "KSM: Optimizations for rmap_walk_ksm", v3. (2 commits)
-      - 362f2613969f "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
+      - fec5086405c6 "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212192820223O_r2NQzSEPG_C56cs-z4l@zte.com.cn
         - Link: https://lkml.kernel.org/r/20260212192932941MSsJEAyoRW4YdLBN7_myn@zte.com.cn
-      - 75c51138635b "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
+      - 31c257bf539c "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
-    - 6b9ff3732d61 "mm/fadvise: validate offset in generic_fadvise"
+    - 1983b1489c02 "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - 28624e10eac6 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
+    - 22d5fb2ff084 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260130073807.99474-1-tujinjiang@huawei.com
-    - 776250964cba "mm/vmscan: avoid false-positive -Wuninitialized warning"
+    - b08472d036a3 "mm/vmscan: avoid false-positive -Wuninitialized warning"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260213123902.3466040-1-arnd@kernel.org
 - mm-nonmm-stable: 4 total, 0 (3) series, 1 non-series commits
@@ -881,4 +894,10 @@
         - Link: : https://lkml.kernel.org/r/20260107090438.22901-1-lukas.bulwahn@redhat.com
         - Link: : https://lkml.kernel.org/r/aW_M-HYZzx5SkbnZ@kernel.org
         - Link: https://lkml.kernel.org/r/20260105165839.285270-7-rppt@kernel.org
-- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - 3a82be32faaf "liveupdate: luo_file: remember retrieve() status"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260216132221.987987-1-pratyush@kernel.org
