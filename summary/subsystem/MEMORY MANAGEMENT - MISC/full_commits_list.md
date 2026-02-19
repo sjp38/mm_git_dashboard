@@ -202,7 +202,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 1983b1489c02 "mm/fadvise: validate offset in generic_fadvise"
+    - 5c9da24ecb77 "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com

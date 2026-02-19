@@ -11,13 +11,9 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, reviewer: 13 -> 13 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 0 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - d9982f38eb6e "mm, swap: speed up hibernation allocation and writeout"
-      - Link: https://lkml.kernel.org/r/20260216-hibernate-perf-v4-1-1ba9f0bf1ec9@tencent.com
-      - Link: https://lore.kernel.org/linux-mm/8b4bdcfa-ce3f-4e23-839f-31367df7c18f@gmx.de/ [1]
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

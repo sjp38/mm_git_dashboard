@@ -8,11 +8,11 @@
     - no role, no role : 2 commits
   - full commits list
     - series "KSM: Optimizations for rmap_walk_ksm", v3. (2 commits)
-      - fec5086405c6 "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
+      - 5774594f992d "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212192820223O_r2NQzSEPG_C56cs-z4l@zte.com.cn
         - Link: https://lkml.kernel.org/r/20260212192932941MSsJEAyoRW4YdLBN7_myn@zte.com.cn
-      - 31c257bf539c "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
+      - 15b6b5befb55 "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

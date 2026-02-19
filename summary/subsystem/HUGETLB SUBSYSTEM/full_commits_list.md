@@ -70,7 +70,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - ee606b128cfa "fs: hugetlb: simplify remove_inode_hugepages() return type"
+    - ddabbcf687bc "fs: hugetlb: simplify remove_inode_hugepages() return type"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260204214741.3161520-1-jiaqiyan@google.com
       - Link: https://lore.kernel.org/all/20220914221810.95771-10-mike.kravetz@oracle.com [1]

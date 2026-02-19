@@ -4,18 +4,18 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 51c856e796f3 "mm: change vma_alloc_folio_noprof() macro to inline function"
+    - 34f9832677e4 "mm: change vma_alloc_folio_noprof() macro to inline function"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
 - mm-stable: 64 total, 7 (53) series, 11 non-series commits
   - author/reviewer role stat
     - no role, nobody: 4 commits
-    - no role, no role : 24 commits
-    - no role, reviewer: 13 commits
+    - no role, no role : 26 commits
+    - no role, reviewer: 12 commits
     - no role, maintainer: 5 commits
     - reviewer, nobody: 2 commits
     - reviewer, no role : 1 commits
-    - reviewer, reviewer: 13 commits
+    - reviewer, reviewer: 12 commits
     - maintainer, reviewer: 2 commits
   - full commits list
       - f2be745071ff "mm: clarify lazy_mmu sleeping constraints" (4/14)
@@ -63,11 +63,11 @@
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
     - 241b3a09639c "mm: clarify GFP_ATOMIC/GFP_NOWAIT doc-comment"
-      - Authored by no role player, reviewed by a reviewer
+      - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/all/d912480a-5229-4efe-9336-b31acded30f5@suse.cz/
       - Link: https://lkml.kernel.org/r/20251219-b4-gfp_atomic-comment-v2-1-4c4ce274c2b6@google.com
     - a8d933dc3354 "mm/vmstat: remove unused node and zone state helpers"
-      - Authored by no role player, reviewed by a reviewer
+      - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20251225210213.2553-1-richard.weiyang@gmail.com
     - series "arch, mm: consolidate hugetlb early reservation", v3. (29 commits)
       - ba1c86874e25 "alpha: introduce arch_zone_limits_init()" (0/29)
@@ -87,7 +87,7 @@
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/cf7da7a2d973cdc72a1b80dd9a73260519e8fa9f.1768746221.git.lorenzo.stoakes@oracle.com
       - 53a9b4646f67 "mm/page_alloc: refactor the initial compaction handling" (1/3)
-        - Authored by a reviewer, reviewed by a reviewer
+        - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260106-thp-thisnode-tweak-v3-2-f5d67c21a193@suse.cz
     - series "mm: hugetlb: allocate frozen gigantic folio", v6. (6 commits)
       - 01152bd2e44d "mm: debug_vm_pgtable: add debug_vm_pgtable_free_huge_page()" (0/6)
@@ -241,7 +241,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 22d5fb2ff084 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
+    - 52d021e281c8 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260130073807.99474-1-tujinjiang@huawei.com
 - mm-nonmm-stable: 2 total, 0 (0) series, 2 non-series commits

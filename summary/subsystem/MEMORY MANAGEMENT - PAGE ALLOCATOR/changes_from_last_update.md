@@ -1,24 +1,23 @@
 - baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - 51c856e796f3 "mm: change vma_alloc_folio_noprof() macro to inline function"
-      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
+    - no role, maintainer: 1 -> 0 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 14 -> 14 commits (no change)
   - series: 3 (9) -> 3 (9) (no change)
-    - no role, reviewer: 8 -> 8 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 3 -> 3 commits (no change)
+    - no role, reviewer: 8 -> 13 commits
+    - no role, maintainer: 2 -> 1 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - maintainer, reviewer: 3 -> 0 commits
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

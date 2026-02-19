@@ -3,49 +3,44 @@
   - series: 2 (5) -> 2 (5) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 11 -> 11 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 9 -> 9 commits (no change)
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 9 -> 8 commits
     - maintainer, no role : 2 -> 2 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 2 -> 4 commits
+- mm-hotfixes-unstable: 4 -> 6 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
+    - no role, nobody: 1 -> 2 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - 51c856e796f3 "mm: change vma_alloc_folio_noprof() macro to inline function"
-      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
-    - a450413f240c "mm: thp: deny THP for files on anonymous inodes"
-      - Link: https://syzkaller.appspot.com/bug?extid=33a04338019ac7e43a44
-      - Link: https://lore.kernel.org/linux-mm/CAEvNRgHegcz3ro35ixkDw39ES8=U6rs6S7iP0gkR9enr7HoGtA@mail.gmail.com
-      - Link: https://lkml.kernel.org/r/20260214001535.435626-1-kartikey406@gmail.com
+    - 1324fc53de23 "MAINTAINERS, mailmap: update e-mail address for Vlastimil Babka"
+      - Link: https://lkml.kernel.org/r/20260217102151.10425-2-vbabka@kernel.org
+    - 407585ee90bd "Squashfs: check metadata block offset is within range"
+      - Link: https://lkml.kernel.org/r/20260217050955.138351-1-phillip@squashfs.org.uk
 - mm-stable: 361 -> 361 commits (no change)
   - series: 35 (279) -> 35 (279) (no change)
     - no role, nobody: 33 -> 33 commits (no change)
-    - no role, no role : 90 -> 90 commits (no change)
-    - no role, reviewer: 31 -> 31 commits (no change)
-    - no role, maintainer: 64 -> 64 commits (no change)
+    - no role, no role : 90 -> 92 commits
+    - no role, reviewer: 31 -> 34 commits
+    - no role, maintainer: 64 -> 63 commits
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
-    - reviewer, reviewer: 14 -> 14 commits (no change)
+    - reviewer, reviewer: 14 -> 13 commits
     - maintainer, nobody: 59 -> 59 commits (no change)
     - maintainer, no role : 16 -> 16 commits (no change)
-    - maintainer, reviewer: 22 -> 22 commits (no change)
+    - maintainer, reviewer: 22 -> 19 commits
     - maintainer, maintainer: 27 -> 27 commits (no change)
-- mm-unstable: 0 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - d9982f38eb6e "mm, swap: speed up hibernation allocation and writeout"
-      - Link: https://lkml.kernel.org/r/20260216-hibernate-perf-v4-1-1ba9f0bf1ec9@tencent.com
-      - Link: https://lore.kernel.org/linux-mm/8b4bdcfa-ce3f-4e23-839f-31367df7c18f@gmx.de/ [1]
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-new: 43 -> 43 commits (no change)
   - series: 2 (32) -> 2 (32) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+    - no role, no role : 3 -> 4 commits
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
+    - no role, maintainer: 4 -> 3 commits
     - maintainer, nobody: 33 -> 33 commits (no change)
 - mm-nonmm-stable: 114 -> 114 commits (no change)
   - series: 12 (50) -> 12 (50) (no change)
@@ -58,12 +53,10 @@
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 0 -> 2 commits
+- mm-nonmm-unstable: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 1 commits
-  - new commits
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+  - dropped commits
     - 3a82be32faaf "liveupdate: luo_file: remember retrieve() status"
       - Link: https://lkml.kernel.org/r/20260216132221.987987-1-pratyush@kernel.org
-    - f1783e139543 "proc: array: drop stale FIXME about RCU in task_sig()"
-      - Link: https://lkml.kernel.org/r/20260215124511.14227-1-jaime.saguillo@gmail.com

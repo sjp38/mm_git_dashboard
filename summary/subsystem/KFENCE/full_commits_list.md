@@ -14,7 +14,7 @@
   - author/reviewer role stat
     - maintainer, maintainer: 1 commits
   - full commits list
-    - c78325ebdf51 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
+    - 1d9b358dc017 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260213095410.1862978-1-glider@google.com
 - mm-stable: 1 total, 1 (1) series, 0 non-series commits
