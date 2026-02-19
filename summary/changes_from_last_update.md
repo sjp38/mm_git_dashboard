@@ -3,34 +3,29 @@
   - series: 2 (5) -> 2 (5) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 11 -> 11 commits (no change)
-    - no role, reviewer: 1 -> 2 commits
-    - no role, maintainer: 9 -> 8 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 4 -> 6 commits
+- mm-hotfixes-unstable: 6 -> 6 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 1324fc53de23 "MAINTAINERS, mailmap: update e-mail address for Vlastimil Babka"
-      - Link: https://lkml.kernel.org/r/20260217102151.10425-2-vbabka@kernel.org
-    - 407585ee90bd "Squashfs: check metadata block offset is within range"
-      - Link: https://lkml.kernel.org/r/20260217050955.138351-1-phillip@squashfs.org.uk
 - mm-stable: 361 -> 361 commits (no change)
   - series: 35 (279) -> 35 (279) (no change)
     - no role, nobody: 33 -> 33 commits (no change)
-    - no role, no role : 90 -> 92 commits
-    - no role, reviewer: 31 -> 34 commits
-    - no role, maintainer: 64 -> 63 commits
+    - no role, no role : 92 -> 92 commits (no change)
+    - no role, reviewer: 34 -> 34 commits (no change)
+    - no role, maintainer: 63 -> 63 commits (no change)
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
-    - reviewer, reviewer: 14 -> 13 commits
+    - reviewer, reviewer: 13 -> 13 commits (no change)
     - maintainer, nobody: 59 -> 59 commits (no change)
     - maintainer, no role : 16 -> 16 commits (no change)
-    - maintainer, reviewer: 22 -> 19 commits
+    - maintainer, reviewer: 19 -> 19 commits (no change)
     - maintainer, maintainer: 27 -> 27 commits (no change)
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
@@ -38,9 +33,9 @@
 - mm-new: 43 -> 43 commits (no change)
   - series: 2 (32) -> 2 (32) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 4 commits
+    - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 4 -> 3 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, nobody: 33 -> 33 commits (no change)
 - mm-nonmm-stable: 114 -> 114 commits (no change)
   - series: 12 (50) -> 12 (50) (no change)
@@ -53,10 +48,6 @@
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 2 -> 1 commits
+- mm-nonmm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
     - no role, no role : 1 -> 1 commits (no change)
-  - dropped commits
-    - 3a82be32faaf "liveupdate: luo_file: remember retrieve() status"
-      - Link: https://lkml.kernel.org/r/20260216132221.987987-1-pratyush@kernel.org

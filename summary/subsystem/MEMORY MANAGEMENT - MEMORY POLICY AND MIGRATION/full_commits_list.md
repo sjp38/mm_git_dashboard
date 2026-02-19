@@ -31,7 +31,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 033599f10d1b "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+    - 8feb48724bee "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

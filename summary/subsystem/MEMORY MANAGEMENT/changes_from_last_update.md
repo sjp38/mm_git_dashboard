@@ -2,8 +2,8 @@
 - mm-hotfixes-stable: 15 -> 15 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 1 -> 2 commits
-    - no role, maintainer: 7 -> 6 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 3 -> 3 commits (no change)
@@ -14,15 +14,15 @@
 - mm-stable: 221 -> 221 commits (no change)
   - series: 21 (158) -> 21 (158) (no change)
     - no role, nobody: 8 -> 8 commits (no change)
-    - no role, no role : 47 -> 48 commits
-    - no role, reviewer: 28 -> 32 commits
-    - no role, maintainer: 44 -> 43 commits
+    - no role, no role : 48 -> 48 commits (no change)
+    - no role, reviewer: 32 -> 32 commits (no change)
+    - no role, maintainer: 43 -> 43 commits (no change)
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
-    - reviewer, reviewer: 11 -> 10 commits
+    - reviewer, reviewer: 10 -> 10 commits (no change)
     - maintainer, nobody: 24 -> 24 commits (no change)
     - maintainer, no role : 11 -> 11 commits (no change)
-    - maintainer, reviewer: 22 -> 19 commits
+    - maintainer, reviewer: 19 -> 19 commits (no change)
     - maintainer, maintainer: 22 -> 22 commits (no change)
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
@@ -30,18 +30,14 @@
 - mm-new: 9 -> 9 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 4 commits
+    - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 2 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 4 -> 4 commits (no change)
   - series: 0 (3) -> 0 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 1 -> 0 commits
+- mm-nonmm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-  - dropped commits
-    - 3a82be32faaf "liveupdate: luo_file: remember retrieve() status"
-      - Link: https://lkml.kernel.org/r/20260216132221.987987-1-pratyush@kernel.org

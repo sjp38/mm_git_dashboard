@@ -69,7 +69,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 671c6f2998dc "mm/vmscan: avoid false-positive -Wuninitialized warning"
+    - adbd51a03f6e "mm/vmscan: avoid false-positive -Wuninitialized warning"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260213123902.3466040-1-arnd@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -11,7 +11,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - d2413fade97d "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
+    - cf4ba700221c "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/ff48283b-be21-7f9a-d616-e303a4a1ebe6@redhat.com
 - mm-stable: 5 total, 0 (1) series, 4 non-series commits

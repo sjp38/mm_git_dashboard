@@ -61,13 +61,13 @@
     - no role, maintainer: 1 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - d2413fade97d "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
+    - cf4ba700221c "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/ff48283b-be21-7f9a-d616-e303a4a1ebe6@redhat.com
-    - 1d9b358dc017 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
+    - fe9125b580dc "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260213095410.1862978-1-glider@google.com
-    - e18d4480d31b "mm: thp: deny THP for files on anonymous inodes"
+    - fa938e13db9a "mm: thp: deny THP for files on anonymous inodes"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://syzkaller.appspot.com/bug?extid=33a04338019ac7e43a44
       - Link: https://lore.kernel.org/linux-mm/CAEvNRgHegcz3ro35ixkDw39ES8=U6rs6S7iP0gkR9enr7HoGtA@mail.gmail.com
@@ -831,7 +831,7 @@
   - author/reviewer role stat
     - maintainer, nobody: 1 commits
   - full commits list
-    - 1be6272c6a7a "mm, swap: speed up hibernation allocation and writeout"
+    - ea9cdc934f6b "mm, swap: speed up hibernation allocation and writeout"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260216-hibernate-perf-v4-1-1ba9f0bf1ec9@tencent.com
       - Link: https://lore.kernel.org/linux-mm/8b4bdcfa-ce3f-4e23-839f-31367df7c18f@gmx.de/ [1]
@@ -842,35 +842,35 @@
     - no role, reviewer: 2 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 033599f10d1b "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+    - 8feb48724bee "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
-    - 4afdacb43fc4 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+    - 8d3bda735f47 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-    - 0253798d20a6 "mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold"
+    - 1ee1be7061ee "mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260203095400.2465255-1-qin.yuA@h3c.com
-    - 4dce9f9d4f75 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
+    - 4c6ddb6629bb "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
       - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com
     - series "KSM: Optimizations for rmap_walk_ksm", v3. (2 commits)
-      - 5774594f992d "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
+      - 4cdd9ac56db8 "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212192820223O_r2NQzSEPG_C56cs-z4l@zte.com.cn
         - Link: https://lkml.kernel.org/r/20260212192932941MSsJEAyoRW4YdLBN7_myn@zte.com.cn
-      - 15b6b5befb55 "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
+      - 4cd597b0ee16 "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
-    - 5c9da24ecb77 "mm/fadvise: validate offset in generic_fadvise"
+    - aaac46a15c38 "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - 52d021e281c8 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
+    - cb6a9998697e "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260130073807.99474-1-tujinjiang@huawei.com
-    - 671c6f2998dc "mm/vmscan: avoid false-positive -Wuninitialized warning"
+    - adbd51a03f6e "mm/vmscan: avoid false-positive -Wuninitialized warning"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260213123902.3466040-1-arnd@kernel.org
 - mm-nonmm-stable: 4 total, 0 (3) series, 1 non-series commits

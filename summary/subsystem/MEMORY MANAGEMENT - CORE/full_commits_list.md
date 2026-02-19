@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 34f9832677e4 "mm: change vma_alloc_folio_noprof() macro to inline function"
+    - c8e57a0def5d "mm: change vma_alloc_folio_noprof() macro to inline function"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
 - mm-stable: 64 total, 7 (53) series, 11 non-series commits
@@ -241,7 +241,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 52d021e281c8 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
+    - cb6a9998697e "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260130073807.99474-1-tujinjiang@huawei.com
 - mm-nonmm-stable: 2 total, 0 (0) series, 2 non-series commits

@@ -10,7 +10,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 34f9832677e4 "mm: change vma_alloc_folio_noprof() macro to inline function"
+    - c8e57a0def5d "mm: change vma_alloc_folio_noprof() macro to inline function"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
 - mm-stable: 14 total, 3 (9) series, 5 non-series commits
@@ -71,7 +71,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 4afdacb43fc4 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+    - 8d3bda735f47 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
