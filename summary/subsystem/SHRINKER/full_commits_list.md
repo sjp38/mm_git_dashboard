@@ -1,36 +1,13 @@
-- baseline: v6.19-rc6-36-g6c790212c588f
+- baseline: v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 5 total, 1 (4) series, 1 non-series commits
-  - author/reviewer role stat
-    - maintainer, no role : 3 commits
-    - maintainer, maintainer: 2 commits
-  - full commits list
-    - 16cc8b9396f6 "mm: memcontrol: rename mem_cgroup_from_slab_obj()"
-      - Authored by a maintainer, reviewed by a maintainer
-      - Link: https://lore.kernel.org/linux-mm/20251113161424.GB3465062@cmpxchg.org/
-      - Link: https://lkml.kernel.org/r/20251210154301.720133-1-hannes@cmpxchg.org
-    - series "memcg: separate private and public ID namespaces". (8 commits)
-      - e77786b4682e "memcg: introduce private id API for in-kernel users" (0/8)
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20251225232116.294540-1-shakeel.butt@linux.dev
-        - Link: https://lkml.kernel.org/r/20251225232116.294540-2-shakeel.butt@linux.dev
-      - 510e12900298 "memcg: mem_cgroup_get_from_ino() returns NULL on error" (2/8)
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20251225232116.294540-4-shakeel.butt@linux.dev
-      - ea73e3647160 "memcg: use cgroup_id() instead of cgroup_ino() for memcg ID" (3/8)
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20251225232116.294540-5-shakeel.butt@linux.dev
-      - 95296536eb19 "memcg: rename mem_cgroup_ino() to mem_cgroup_id()" (7/8)
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: : https://lkml.kernel.org/r/flkqanhyettp5uq22bjwg37rtmnpeg3mghznsylxcxxgaafpl4@nov2x7tagma7
-        - Link: https://lkml.kernel.org/r/20251225232116.294540-9-shakeel.butt@linux.dev
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 4c6ddb6629bb "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
+    - dc5b64bef3a2 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
       - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com

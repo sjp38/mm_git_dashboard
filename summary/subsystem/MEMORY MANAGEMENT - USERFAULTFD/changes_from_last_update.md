@@ -1,13 +1,20 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 3 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-stable: 3 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - maintainer, reviewer: 1 -> 0 commits
+  - dropped commits
+    - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers"
+      - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
+      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
+    - 4984d746c80e "mm, swap: check swap table directly for checking cache"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-16-8862a265a033@tencent.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

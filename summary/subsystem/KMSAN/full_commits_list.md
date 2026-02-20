@@ -1,25 +1,8 @@
-- baseline: v6.19-rc6-36-g6c790212c588f
+- baseline: v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - maintainer, nobody: 1 commits
-    - maintainer, no role : 1 commits
-  - full commits list
-    - 79ffad20ebc0 "mm: kmsan: add tests for high-order page freeing"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://lore.kernel.org/all/20260104134348.3544298-1-ryan.roberts@arm.com/
-      - Link: https://lkml.kernel.org/r/20260113091151.4035013-1-glider@google.com
-    - 737dfe7d9526 "mm: kmsan: add test_uninit_page"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260113091151.4035013-2-glider@google.com
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-      - 8118f197b7b7 "mm: fix benign off-by-one bugs" (1/4)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/9c38dd009c17b0219889c7089d9bdde5aaf28a8e.1765449750.git.alx@kernel.org
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

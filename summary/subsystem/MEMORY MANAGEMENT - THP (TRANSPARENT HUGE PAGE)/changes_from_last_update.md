@@ -1,14 +1,37 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 10 -> 10 commits (no change)
-  - series: 2 (8) -> 2 (8) (no change)
-    - no role, reviewer: 8 -> 8 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-stable: 10 -> 0 commits
+  - series: 2 (8) -> 0 (0)
+    - no role, reviewer: 8 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+  - dropped commits
+    - 5173ae0a068d "mm/khugepaged: map dirty/writeback pages failures to EAGAIN"
+      - Link: https://lkml.kernel.org/r/20260118190939.8986-2-shivankg@amd.com
+      - Link: https://lkml.kernel.org/r/20260118190939.8986-4-shivankg@amd.com
+    - 398556570e32 "mm/khugepaged: retry with sync writeback for MADV_COLLAPSE"
+      - Link: https://lkml.kernel.org/r/20260118190939.8986-7-shivankg@amd.com
+    - 832d95b5314e "migrate: replace RMP_ flags with TTU_ flags"
+      - Link: https://lkml.kernel.org/r/20260109041345.3863089-3-willy@infradead.org
+    - 7832e4d583ee "mm/khugepaged: remove unnecessary goto 'skip' label"
+      - Link: https://lkml.kernel.org/r/20260118192253.9263-4-shivankg@amd.com
+      - Link: https://lkml.kernel.org/r/20260118192253.9263-6-shivankg@amd.com
+    - 3ab981c1fca0 "mm/khugepaged: change collapse_pte_mapped_thp() to return void"
+      - Link: https://lkml.kernel.org/r/20260118192253.9263-10-shivankg@amd.com
+    - 40bd4ff09068 "mm/khugepaged: use enum scan_result for result variables and return types"
+      - Link: https://lkml.kernel.org/r/20260118192253.9263-12-shivankg@amd.com
+    - 9c284c91b08e "mm/khugepaged: make khugepaged_collapse_control static"
+      - Link: https://lkml.kernel.org/r/20260118192253.9263-14-shivankg@amd.com
+    - dd2b4e04c098 "selftests/mm: introduce helper to read every page"
+      - Link: https://lkml.kernel.org/r/20260122170224.4056513-7-kevin.brodsky@arm.com
+    - 4188b2592ff6 "mm: khugepaged: fix NR_FILE_PAGES and NR_SHMEM in collapse_file()"
+      - Link: https://lkml.kernel.org/r/20260130042925.2797946-1-shakeel.butt@linux.dev
+    - e388d31257ed "mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag()"
+      - Link: https://lkml.kernel.org/r/033dcf12e819dee5064582bced9b12ea346d1607.1769097829.git.lorenzo.stoakes@oracle.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

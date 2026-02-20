@@ -1,11 +1,26 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 7 -> 7 commits (no change)
-  - series: 0 (7) -> 0 (7) (no change)
-    - no role, maintainer: 7 -> 7 commits (no change)
+- mm-stable: 7 -> 0 commits
+  - series: 0 (7) -> 0 (0)
+    - no role, maintainer: 7 -> 0 commits
+  - dropped commits
+    - c4a0c5ff85b7 "mm/page_table_check: reinstate address parameter in [__]page_table_check_pud[s]_set()"
+      - Link: https://lkml.kernel.org/r/20251219-pgtable_check_v18rebase-v18-3-755bc151a50b@linux.ibm.com
+    - 6e2d8f9fc4ed "mm/page_table_check: reinstate address parameter in [__]page_table_check_pmd[s]_set()"
+      - Link: https://lkml.kernel.org/r/20251219-pgtable_check_v18rebase-v18-4-755bc151a50b@linux.ibm.com
+    - 0a5ae4483177 "mm/page_table_check: provide addr parameter to page_table_check_ptes_set()"
+      - Link: https://lkml.kernel.org/r/20251219-pgtable_check_v18rebase-v18-5-755bc151a50b@linux.ibm.com
+    - 2e6ac078ce5d "mm/page_table_check: reinstate address parameter in [__]page_table_check_pud_clear()"
+      - Link: https://lkml.kernel.org/r/20251219-pgtable_check_v18rebase-v18-6-755bc151a50b@linux.ibm.com
+    - 649ec9e3d03c "mm/page_table_check: reinstate address parameter in [__]page_table_check_pmd_clear()"
+      - Link: https://lkml.kernel.org/r/20251219-pgtable_check_v18rebase-v18-7-755bc151a50b@linux.ibm.com
+    - d7b4b67eb6b3 "mm/page_table_check: reinstate address parameter in [__]page_table_check_pte_clear()"
+      - Link: https://lkml.kernel.org/r/20251219-pgtable_check_v18rebase-v18-8-755bc151a50b@linux.ibm.com
+    - d79f9c9cf703 "mm: provide address parameter to p{te,md,ud}_user_accessible_page()"
+      - Link: https://lkml.kernel.org/r/20251219-pgtable_check_v18rebase-v18-9-755bc151a50b@linux.ibm.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

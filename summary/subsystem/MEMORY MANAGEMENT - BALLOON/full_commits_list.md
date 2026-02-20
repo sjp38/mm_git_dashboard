@@ -1,17 +1,7 @@
-- baseline: v6.19-rc6-36-g6c790212c588f
+- baseline: v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 2 total, 0 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
-  - full commits list
-      - 25b48b4cdf91 "mm: rename balloon_compaction.(c|h) to balloon.(c|h)" (19/24)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260119230133.3551867-21-david@kernel.org
-      - cd8e95d80bc2 "mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION" (21/24)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260119230133.3551867-23-david@kernel.org
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

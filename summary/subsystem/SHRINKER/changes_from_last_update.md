@@ -1,12 +1,26 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 5 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
-    - maintainer, no role : 3 -> 3 commits (no change)
-    - maintainer, maintainer: 2 -> 2 commits (no change)
+- mm-stable: 5 -> 0 commits
+  - series: 1 (4) -> 0 (0)
+    - maintainer, no role : 3 -> 0 commits
+    - maintainer, maintainer: 2 -> 0 commits
+  - dropped commits
+    - 16cc8b9396f6 "mm: memcontrol: rename mem_cgroup_from_slab_obj()"
+      - Link: https://lore.kernel.org/linux-mm/20251113161424.GB3465062@cmpxchg.org/
+      - Link: https://lkml.kernel.org/r/20251210154301.720133-1-hannes@cmpxchg.org
+    - e77786b4682e "memcg: introduce private id API for in-kernel users"
+      - Link: https://lkml.kernel.org/r/20251225232116.294540-1-shakeel.butt@linux.dev
+      - Link: https://lkml.kernel.org/r/20251225232116.294540-2-shakeel.butt@linux.dev
+    - 510e12900298 "memcg: mem_cgroup_get_from_ino() returns NULL on error"
+      - Link: https://lkml.kernel.org/r/20251225232116.294540-4-shakeel.butt@linux.dev
+    - ea73e3647160 "memcg: use cgroup_id() instead of cgroup_ino() for memcg ID"
+      - Link: https://lkml.kernel.org/r/20251225232116.294540-5-shakeel.butt@linux.dev
+    - 95296536eb19 "memcg: rename mem_cgroup_ino() to mem_cgroup_id()"
+      - Link: : https://lkml.kernel.org/r/flkqanhyettp5uq22bjwg37rtmnpeg3mghznsylxcxxgaafpl4@nov2x7tagma7
+      - Link: https://lkml.kernel.org/r/20251225232116.294540-9-shakeel.butt@linux.dev
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 1 -> 1 commits (no change)

@@ -1,14 +1,49 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+  - dropped commits
+    - 338ad1e84d15 "mm/page_alloc: skip debug_check_no_{obj,locks}_freed with FPI_TRYLOCK"
+      - Link: https://lkml.kernel.org/r/20260209062639.16577-1-harry.yoo@oracle.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-stable: 14 -> 14 commits (no change)
-  - series: 3 (9) -> 3 (9) (no change)
-    - no role, reviewer: 13 -> 13 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 14 -> 0 commits
+  - series: 3 (9) -> 0 (0)
+    - no role, reviewer: 13 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
+      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
+    - 9c9828d3ead6 "mm, page_alloc, thp: prevent reclaim for __GFP_THISNODE THP allocations"
+      - Link: https://lkml.kernel.org/r/20251219-costly-noretry-thisnode-fix-v1-1-e1085a4a0c34@suse.cz
+    - 3bb64898f003 "page_alloc: allow migration of smaller hugepages during contig_alloc"
+      - Link: https://lkml.kernel.org/r/20251221124656.2362540-1-gourry@gourry.net
+      - Link: https://lore.kernel.org/linux-mm/6fe3562d-49b2-4975-aa86-e139c535ad00@redhat.com/
+    - 669872181549 "mm/page_alloc: ignore the exact initial compaction result"
+      - Link: https://lkml.kernel.org/r/20260106-thp-thisnode-tweak-v3-0-f5d67c21a193@suse.cz
+      - Link: https://lkml.kernel.org/r/20260106-thp-thisnode-tweak-v3-1-f5d67c21a193@suse.cz
+    - 53a9b4646f67 "mm/page_alloc: refactor the initial compaction handling"
+      - Link: https://lkml.kernel.org/r/20260106-thp-thisnode-tweak-v3-2-f5d67c21a193@suse.cz
+    - 2c4c3e29897d "mm/page_alloc: simplify __alloc_pages_slowpath() flow"
+      - Link: https://lkml.kernel.org/r/20260106-thp-thisnode-tweak-v3-3-f5d67c21a193@suse.cz
+    - 01152bd2e44d "mm: debug_vm_pgtable: add debug_vm_pgtable_free_huge_page()"
+      - Link: https://lkml.kernel.org/r/20260109093136.1491549-2-wangkefeng.wang@huawei.com
+    - a9deb800b89e "mm: page_alloc: add __split_page()"
+      - Link: https://lkml.kernel.org/r/20260109093136.1491549-3-wangkefeng.wang@huawei.com
+    - e0c1326779cc "mm: page_alloc: add alloc_contig_frozen_{range,pages}()"
+      - Link: https://lkml.kernel.org/r/20260109093136.1491549-5-wangkefeng.wang@huawei.com
+    - d468d8f86d80 "mm: drop filename from page_alloc.c header comment"
+      - Link: https://lkml.kernel.org/r/20260115193100.116109-1-manish1588@gmail.com
+    - a45088376d8a "mm/vmscan: add tracepoint and reason for kswapd_failures reset"
+      - Link: https://lkml.kernel.org/r/20260120024402.387576-3-jiayuan.chen@linux.dev
+    - c83109e95c9d "mm: page_isolation: introduce page_is_unmovable()"
+      - Link: https://lkml.kernel.org/r/20260112150954.1802953-1-wangkefeng.wang@huawei.com
+      - Link: https://lkml.kernel.org/r/20260112150954.1802953-2-wangkefeng.wang@huawei.com
+    - 9a8e0c31b312 "mm: page_alloc: optimize pfn_range_valid_contig()"
+      - Link: https://lkml.kernel.org/r/20260112150954.1802953-3-wangkefeng.wang@huawei.com
+    - ac1ea219590c "mm/page_alloc: clear page->private in free_pages_prepare()"
+      - Link: https://lkml.kernel.org/r/20260207173615.146159-1-mikhail.v.gavrilov@gmail.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 1 -> 1 commits (no change)

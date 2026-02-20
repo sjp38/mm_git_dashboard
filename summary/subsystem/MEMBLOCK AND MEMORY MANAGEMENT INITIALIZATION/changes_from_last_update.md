@@ -1,20 +1,39 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
+    - cbbbf7795fc3 "mm/mm_init: don't cond_resched() in deferred_init_memmap_chunk() if called from deferred_grow_zone()"
+      - Link: https://lkml.kernel.org/r/20260122184343.546627-1-longman@redhat.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 5 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-stable: 5 -> 0 commits
+  - series: 0 (3) -> 0 (0)
+    - no role, nobody: 3 -> 0 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+  - dropped commits
+    - 84355caa271a "mm/mm_init: replace simple_strtoul with kstrtobool in set_hashdist"
+      - Link: https://lkml.kernel.org/r/20251217110214.50807-1-thorsten.blum@linux.dev
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
+      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
+    - d49004c5f0c1 "arch, mm: consolidate initialization of nodes, zones and memory map"
+      - Link: https://lkml.kernel.org/r/20260111082105.290734-24-rppt@kernel.org
+    - 4267739cabb8 "arch, mm: consolidate initialization of SPARSE memory model"
+      - Link: https://lkml.kernel.org/r/20260111082105.290734-25-rppt@kernel.org
+    - 9fac145b6d3f "mm, arch: consolidate hugetlb CMA reservation"
+      - Link: https://lkml.kernel.org/r/20260111082105.290734-28-rppt@kernel.org
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-stable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-nonmm-stable: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, reviewer: 1 -> 0 commits
+  - dropped commits
+    - dd1e79ef6ca1 "kho/abi: add memblock ABI header"
+      - Link: : https://lkml.kernel.org/r/20260107090438.22901-1-lukas.bulwahn@redhat.com
+      - Link: : https://lkml.kernel.org/r/aW_M-HYZzx5SkbnZ@kernel.org
+      - Link: https://lkml.kernel.org/r/20260105165839.285270-7-rppt@kernel.org
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

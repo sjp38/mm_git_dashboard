@@ -1,13 +1,27 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 6 -> 6 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 6 -> 0 commits
+  - series: 0 (3) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 4 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers"
+      - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
+      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
+    - 3d702678f57e "mm/mempolicy: fix mpol_rebind_nodemask() for MPOL_F_NUMA_BALANCING"
+      - Link: https://lkml.kernel.org/r/20260120011018.1256654-1-tujinjiang@huawei.com
+      - Link: https://lkml.kernel.org/r/20251223110523.1161421-1-tujinjiang@huawei.com
+    - 832d95b5314e "migrate: replace RMP_ flags with TTU_ flags"
+      - Link: https://lkml.kernel.org/r/20260109041345.3863089-3-willy@infradead.org
+    - 386781df63cb "mm: use nodes_and() return value to simplify client code"
+      - Link: https://lkml.kernel.org/r/20260114172217.861204-3-ynorov@nvidia.com
+    - cd8e95d80bc2 "mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION"
+      - Link: https://lkml.kernel.org/r/20260119230133.3551867-23-david@kernel.org
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 1 -> 1 commits (no change)

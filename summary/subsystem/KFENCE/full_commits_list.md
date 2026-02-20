@@ -1,39 +1,14 @@
-- baseline: v6.19-rc6-36-g6c790212c588f
-- mm-hotfixes-stable: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 870ff19251bf "mm/kfence: randomize the freelist on initialization"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260120161510.3289089-1-pimyn@google.com
-    - 16459fe7e0ca "x86/kfence: fix booting on 32bit non-PAE systems"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260126211046.2096622-1-andrew.cooper3@citrix.com
+- baseline: v6.19-11773-g8bf22c33e7a17
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - maintainer, maintainer: 1 commits
   - full commits list
-    - fe9125b580dc "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
+    - accfdc005db8 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260213095410.1862978-1-glider@google.com
-- mm-stable: 1 total, 1 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-    - series "Replace wq users and add WQ_PERCPU to alloc_workqueue() users", v2. (3 commits)
-      - 0bcbd7cf6596 "mm: replace use of system_unbound_wq with system_dfl_wq" (0/3)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260113114630.152942-1-marco.crivellari@suse.com
-        - Link: https://lore.kernel.org/all/20250221112003.1dSuoGyc@linutronix.de/
-        - Link: https://lkml.kernel.org/r/20260113114630.152942-2-marco.crivellari@suse.com
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-stable: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-      - 8118f197b7b7 "mm: fix benign off-by-one bugs" (1/4)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/9c38dd009c17b0219889c7089d9bdde5aaf28a8e.1765449750.git.alx@kernel.org
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

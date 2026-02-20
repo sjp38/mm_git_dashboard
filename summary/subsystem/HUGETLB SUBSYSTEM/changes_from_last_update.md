@@ -1,16 +1,54 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
+    - 1d3f9bb4c8af "mm/hugetlb: restore failed global reservations to subpool"
+      - Link: https://lkml.kernel.org/r/20260116204037.2270096-1-joshua.hahnjy@gmail.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 16 -> 16 commits (no change)
-  - series: 0 (10) -> 0 (10) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 6 -> 6 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 16 -> 0 commits
+  - series: 0 (10) -> 0 (0)
+    - no role, nobody: 3 -> 0 commits
+    - no role, no role : 5 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 6 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - ed60c8e28024 "mm/hugetlb_cgroup: fix -Wformat-truncation warning"
+      - Link: https://lkml.kernel.org/r/20251222072359.3626182-1-xiujianfeng@huaweicloud.com
+    - 9e80e66ddaf7 "mm, hugetlb: implement movable_gigantic_pages sysctl"
+      - Link: https://lkml.kernel.org/r/20251221125603.2364174-1-gourry@gourry.net
+      - Link: https://lore.kernel.org/all/20180201193132.Hk7vI_xaU%25akpm@linux-foundation.org/
+    - 9fac145b6d3f "mm, arch: consolidate hugetlb CMA reservation"
+      - Link: https://lkml.kernel.org/r/20260111082105.290734-28-rppt@kernel.org
+    - 7a9c0bf0aec6 "mm/hugetlb: drop hugetlb_cma_check()"
+      - Link: https://lkml.kernel.org/r/20260111082105.290734-29-rppt@kernel.org
+    - 743758ccf8be "Revert "mm/hugetlb: deal with multiple calls to hugetlb_bootmem_alloc""
+      - Link: https://lkml.kernel.org/r/20260111082105.290734-30-rppt@kernel.org
+    - e0c1326779cc "mm: page_alloc: add alloc_contig_frozen_{range,pages}()"
+      - Link: https://lkml.kernel.org/r/20260109093136.1491549-5-wangkefeng.wang@huawei.com
+    - 9bda131c6093 "mm: cma: add cma_alloc_frozen{_compound}()"
+      - Link: https://lkml.kernel.org/r/20260109093136.1491549-6-wangkefeng.wang@huawei.com
+    - 14f270761d33 "mm: hugetlb: allocate frozen pages for gigantic allocation"
+      - Link: https://lkml.kernel.org/r/20260109093136.1491549-7-wangkefeng.wang@huawei.com
+    - a1c655f55444 "mm/hugetlb: remove unnecessary if condition"
+      - Link: https://lkml.kernel.org/r/20260116192717.1600049-1-joshua.hahnjy@gmail.com
+    - 824b8c96c421 "mm/hugetlb: enforce brace style"
+      - Link: https://lkml.kernel.org/r/20260116192717.1600049-2-joshua.hahnjy@gmail.com
+    - 5a74b9f1dc3d "mm: hugetlb: optimize replace_free_hugepage_folios()"
+      - Link: : https://lkml.kernel.org/r/20260114135512.2159799-1-wangkefeng.wang@huawei.com
+      - Link: https://lkml.kernel.org/r/20260112150954.1802953-4-wangkefeng.wang@huawei.com
+    - d925730734e9 "mm: hugetlb_cma: optimize hugetlb_cma_alloc_frozen_folio()"
+      - Link: https://lkml.kernel.org/r/20260112150954.1802953-5-wangkefeng.wang@huawei.com
+    - ae85e5610813 "mm: hugetlb_cma: mark hugetlb_cma{_only} as __ro_after_init"
+      - Link: https://lkml.kernel.org/r/20260112150954.1802953-6-wangkefeng.wang@huawei.com
+    - 46ba5a01180c "hugetlb: increase hugepage reservations when using node-specific "hugepages=" cmdline"
+      - Link: https://lkml.kernel.org/r/20260122035002.79958-1-lizhe.67@bytedance.com
+    - ef24e0aa078f "mm: add SPDX id lines to some mm source files"
+      - Link: https://lkml.kernel.org/r/20260204213101.1754183-1-tim.bird@sony.com
+    - 097e8db5e22b "mm: update hugetlbfs to use VMA flags on mmap_prepare"
+      - Link: https://lkml.kernel.org/r/9226bec80c9aa3447cc2b83354f733841dba8a50.1769097829.git.lorenzo.stoakes@oracle.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 1 -> 1 commits (no change)

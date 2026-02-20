@@ -1,11 +1,16 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 2 commits (no change)
+- mm-stable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 0 commits
+  - dropped commits
+    - 2a912d440c60 "alloc_tag: move memory_allocation_profiling_sysctls into .rodata"
+      - Link: https://lkml.kernel.org/r/20251215-jag-alloc_tag_const-v1-1-35ea56a1ce13@kernel.org
+    - 77bcee8d4015 "alloc_tag: fix rw permission issue when handling boot parameter"
+      - Link: https://lkml.kernel.org/r/20260115031536.164254-1-ranxiaokai627@163.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

@@ -1,13 +1,30 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 6 -> 6 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 4 -> 4 commits (no change)
+- mm-stable: 6 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, reviewer: 1 -> 0 commits
+    - maintainer, maintainer: 4 -> 0 commits
+  - dropped commits
+    - 85aa39197420 "mm: zswap: delete unused acomp->is_sleepable"
+      - Link: https://lkml.kernel.org/r/20251211025645.820517-1-hannes@cmpxchg.org
+    - 0be909f114c4 "zsmalloc: use actual object size to detect spans"
+      - Link: https://lkml.kernel.org/r/20260107052145.3586917-1-senozhatsky@chromium.org
+    - d7cf0d54f210 "mm, swap: rename __read_swap_cache_async to swap_cache_alloc_folio"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-0-8862a265a033@tencent.com
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-1-8862a265a033@tencent.com
+      - Link: https://lore.kernel.org/linux-mm/CAMgjq7D5qoFEK9Omvd5_Zqs6M+TEoG03+2i_mhuP5CQPSOPrmQ@mail.gmail.com/ [1]
+      - Link: https://lore.kernel.org/linux-mm/20240326185032.72159-1-ryncsn@gmail.com/ [2]
+      - Link: https://lore.kernel.org/linux-mm/20250514201729.48420-1-ryncsn@gmail.com/ [3]
+    - de85024b3483 "mm, swap: remove workaround for unsynchronized swap map cache state"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-13-8862a265a033@tencent.com
+    - e2c3b6b21c77 "mm: zswap: use SG list decompression APIs from zsmalloc"
+      - Link: https://lkml.kernel.org/r/20260121013615.2906368-1-yosry.ahmed@linux.dev
+    - c69ca4e992e3 "mm/zswap: use %pe to print error pointers"
+      - Link: https://lkml.kernel.org/r/581a26f22fb4c6ce04aeb7ee0d703fe64454ac7f.1770230135.git.chandna.sahil@gmail.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

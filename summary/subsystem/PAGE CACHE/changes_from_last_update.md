@@ -1,13 +1,20 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 3 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 3 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 64dd89ae01f2 "mm/block/fs: remove laptop_mode"
+      - Link: https://lkml.kernel.org/r/20251216185201.GH905277@cmpxchg.org
+    - ad1e0c44a415 "mm/readahead: fix typo in comment"
+      - Link: https://lkml.kernel.org/r/20260127152535.321951-1-cheng20011202@gmail.com
+    - 53f1d9364451 "mm: make vm_area_desc utilise vma_flags_t only"
+      - Link: https://lkml.kernel.org/r/fd2a2938b246b4505321954062b1caba7acfc77a.1769097829.git.lorenzo.stoakes@oracle.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

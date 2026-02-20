@@ -1,16 +1,63 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - a0f3c0845a4f "mm, swap: restore swap_space attr aviod kernel panic"
+      - Link: https://lkml.kernel.org/r/20260116062535.306453-2-robin.kuo@mediatek.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 18 -> 18 commits (no change)
-  - series: 1 (16) -> 1 (16) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 13 -> 13 commits (no change)
-    - maintainer, maintainer: 2 -> 2 commits (no change)
+- mm-stable: 18 -> 0 commits
+  - series: 1 (16) -> 0 (0)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - maintainer, reviewer: 13 -> 0 commits
+    - maintainer, maintainer: 2 -> 0 commits
+  - dropped commits
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
+      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
+    - b94c317903ee "mm: update kernel-doc for __swap_cache_clear_shadow()"
+      - Link: https://lkml.kernel.org/r/20260117101428.113154-1-maainnewkin59@gmail.com
+    - d7cf0d54f210 "mm, swap: rename __read_swap_cache_async to swap_cache_alloc_folio"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-0-8862a265a033@tencent.com
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-1-8862a265a033@tencent.com
+      - Link: https://lore.kernel.org/linux-mm/CAMgjq7D5qoFEK9Omvd5_Zqs6M+TEoG03+2i_mhuP5CQPSOPrmQ@mail.gmail.com/ [1]
+      - Link: https://lore.kernel.org/linux-mm/20240326185032.72159-1-ryncsn@gmail.com/ [2]
+      - Link: https://lore.kernel.org/linux-mm/20250514201729.48420-1-ryncsn@gmail.com/ [3]
+    - 84eedc747b53 "mm, swap: split swap cache preparation loop into a standalone helper"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-2-8862a265a033@tencent.com
+    - f1879e8a0c60 "mm, swap: never bypass the swap cache even for SWP_SYNCHRONOUS_IO"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-3-8862a265a033@tencent.com
+    - c246d236b18b "mm/shmem: never bypass the swap cache for SWP_SYNCHRONOUS_IO"
+      - Link: https://lkml.kernel.org/r/20251219195751.61328-1-ryncsn@gmail.com
+    - bc617c990eae "mm/shmem, swap: remove SWAP_MAP_SHMEM"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-8-8862a265a033@tencent.com
+    - f7ad377a9222 "mm, swap: swap entry of a bad slot should not be considered as swapped out"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-9-8862a265a033@tencent.com
+    - cda2504c51eb "mm, swap: consolidate cluster reclaim and usability check"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-10-8862a265a033@tencent.com
+    - 78d6a12dd91a "mm, swap: split locked entry duplicating into a standalone helper"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-11-8862a265a033@tencent.com
+    - 2732acda82c9 "mm, swap: use swap cache as the swap in synchronize layer"
+      - Link:  https://lkml.kernel.org/r/CAMgjq7CGUnzOVG7uSaYjzw9wD7w2dSKOHprJfaEp4CcGLgE3iw@mail.gmail.com
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-12-8862a265a033@tencent.com
+    - de85024b3483 "mm, swap: remove workaround for unsynchronized swap map cache state"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-13-8862a265a033@tencent.com
+    - 36976159140b "mm, swap: cleanup swap entry management workflow"
+      - Link: : https://lkml.kernel.org/r/CAMgjq7AUz10uETVm8ozDWcB3XohkOqf0i33KGrAquvEVvfp5cg@mail.gmail.com
+      - Link: : https://lkml.kernel.org/r/aXxkANcET3l2Xu6J@KASONG-MC4
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-14-8862a265a033@tencent.com
+    - 270f095179ff "mm, swap: add folio to swap cache directly on allocation"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-15-8862a265a033@tencent.com
+    - 4984d746c80e "mm, swap: check swap table directly for checking cache"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-16-8862a265a033@tencent.com
+    - e1c5c6be3ca7 "mm, swap: clean up and improve swap entries freeing"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-17-8862a265a033@tencent.com
+    - d3852f9692b8 "mm, swap: drop the SWAP_HAS_CACHE flag"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-18-8862a265a033@tencent.com
+    - 50c7f34c5c74 "mm, swap: remove no longer needed _swap_info_get"
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-19-8862a265a033@tencent.com
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)

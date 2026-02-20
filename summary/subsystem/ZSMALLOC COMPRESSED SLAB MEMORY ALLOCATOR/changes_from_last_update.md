@@ -1,14 +1,26 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 5 commits (no change)
+- mm-stable: 5 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, no role : 2 -> 2 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - maintainer, no role : 2 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
+      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
+    - 0be909f114c4 "zsmalloc: use actual object size to detect spans"
+      - Link: https://lkml.kernel.org/r/20260107052145.3586917-1-senozhatsky@chromium.org
+    - 19c4707b535a "zsmalloc: simplify read begin/end logic"
+      - Link: https://lkml.kernel.org/r/20260107052145.3586917-2-senozhatsky@chromium.org
+    - dc2e4982cb01 "zsmalloc: introduce SG-list based object read API"
+      - Link: : https://lkml.kernel.org/r/20260117024900.792237-1-senozhatsky@chromium.org
+      - Link: https://lkml.kernel.org/r/20260113034645.2729998-1-senozhatsky@chromium.org
+    - 3881b00a2cea "zsmalloc: make common caches global"
+      - Link: https://lkml.kernel.org/r/20260117025406.799428-1-senozhatsky@chromium.org
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

@@ -1,40 +1,13 @@
-- baseline: v6.19-rc6-36-g6c790212c588f
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - maintainer, reviewer: 1 commits
-  - full commits list
-    - 9b47d4eea3f7 "mm/kasan: fix KASAN poisoning in vrealloc()"
-      - Authored by a maintainer, reviewed by a reviewer
-      - Link: : https://lkml.kernel.org/r/20260119144509.32767-1-ryabinin.a.a@gmail.com
-      - Link: https://lkml.kernel.org/r/20260113191516.31015-1-ryabinin.a.a@gmail.com
+- baseline: v6.19-11773-g8bf22c33e7a17
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - cf4ba700221c "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
+    - 39058324b281 "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/ff48283b-be21-7f9a-d616-e303a4a1ebe6@redhat.com
-- mm-stable: 5 total, 0 (1) series, 4 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 4 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - a03ed8f144e2 "mm/vmalloc: clarify why vmap_range_noflush() might sleep"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20251215-b4-vmalloc-might_alloc-v3-1-92dd8e406868@google.com
-      - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers" (6/14)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - a98ec863fded "lib/test_vmalloc.c: minor fixes to test_vmalloc.c"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20251201181848.1216197-1-audra@redhat.com
-    - 5747435e0fd4 "mm/vmalloc: prevent RCU stalls in kasan_release_vmalloc_node"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260112103612.627247-1-kartikey406@gmail.com
-      - Link: https://lore.kernel.org/all/20260112084723.622910-1-kartikey406@gmail.com/T/ [v1]
-    - d60769075013 "vmalloc: export vrealloc_node_align_noprof"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260107-export-vrealloc_node_align_noprof-v1-1-a581bec13054@google.com
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

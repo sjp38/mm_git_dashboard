@@ -1,16 +1,47 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-rc6-36-g6c790212c588f (no change)
+- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 13 -> 13 commits (no change)
-  - series: 2 (11) -> 2 (11) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 6 -> 6 commits (no change)
+- mm-stable: 13 -> 0 commits
+  - series: 2 (11) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 2 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, reviewer: 2 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, reviewer: 6 -> 0 commits
+  - dropped commits
+    - 542eda1a8329 "mm/rmap: improve anon_vma_clone(), unlink_anon_vmas() comments, add asserts"
+      - Link: https://lkml.kernel.org/r/cover.1768746221.git.lorenzo.stoakes@oracle.com
+      - Link: https://lkml.kernel.org/r/8644e89369be0cc89d7ac57443dff9e822803c91.1768746221.git.lorenzo.stoakes@oracle.com
+    - 91901a441fa1 "mm/rmap: eliminate partial anon_vma tear-down in anon_vma_fork()"
+      - Link: https://lkml.kernel.org/r/9923da5f8b095dd1e8d677692dcaf95859de0ef5.1768746221.git.lorenzo.stoakes@oracle.com
+    - 69e945845585 "mm/rmap: skip unfaulted VMAs on anon_vma clone, unlink"
+      - Link: https://lkml.kernel.org/r/085a25f7528e1c8c687276e9b856e88dc8f105ca.1768746221.git.lorenzo.stoakes@oracle.com
+    - 535f6b8df17d "mm/rmap: remove unnecessary root lock dance in anon_vma clone, unmap"
+      - Link: https://lkml.kernel.org/r/838030d2f0772b99fa99ff4b4fd571353f14a1a9.1768746221.git.lorenzo.stoakes@oracle.com
+    - 53eb797ffc3a "mm/rmap: remove anon_vma_merge() function"
+      - Link: https://lkml.kernel.org/r/56bbe45e309f7af197b1c4f94a9a0c8931ff2d29.1768746221.git.lorenzo.stoakes@oracle.com
+    - 7549e3d20f1a "mm/rmap: make anon_vma functions internal"
+      - Link: https://lkml.kernel.org/r/79ec933c3a9c8bf1f64dab253bbfdae8a01cb921.1768746221.git.lorenzo.stoakes@oracle.com
+    - bfc2b13b05a1 "mm/rmap: allocate anon_vma_chain objects unlocked when possible"
+      - Link: https://lkml.kernel.org/r/624bf1ac0bde4871fcfca2c8c8e294b6d8f7ae7b.1768746221.git.lorenzo.stoakes@oracle.com
+    - d17f02417a33 "mm/rmap: separate out fork-only logic on anon_vma_clone()"
+      - Link: https://lkml.kernel.org/r/cf7da7a2d973cdc72a1b80dd9a73260519e8fa9f.1768746221.git.lorenzo.stoakes@oracle.com
+    - 832d95b5314e "migrate: replace RMP_ flags with TTU_ flags"
+      - Link: https://lkml.kernel.org/r/20260109041345.3863089-3-willy@infradead.org
+    - 36976159140b "mm, swap: cleanup swap entry management workflow"
+      - Link: : https://lkml.kernel.org/r/CAMgjq7AUz10uETVm8ozDWcB3XohkOqf0i33KGrAquvEVvfp5cg@mail.gmail.com
+      - Link: : https://lkml.kernel.org/r/aXxkANcET3l2Xu6J@KASONG-MC4
+      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-14-8862a265a033@tencent.com
+    - ef24e0aa078f "mm: add SPDX id lines to some mm source files"
+      - Link: https://lkml.kernel.org/r/20260204213101.1754183-1-tim.bird@sony.com
+    - 52e054f71840 "mm: rmap: support batched checks of the references for large folios"
+      - Link: https://lkml.kernel.org/r/cover.1770645603.git.baolin.wang@linux.alibaba.com
+      - Link: https://lkml.kernel.org/r/12132694536834262062d1fb304f8f8a064b6750.1770645603.git.baolin.wang@linux.alibaba.com
+    - a67fe41e214f "mm: rmap: support batched unmapping for file large folios"
+      - Link: https://lkml.kernel.org/r/b53a16f67c93a3fe65e78092069ad135edf00eff.1770645603.git.baolin.wang@linux.alibaba.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
