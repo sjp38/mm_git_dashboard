@@ -1,60 +1,29 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 12 -> 0 commits
-  - series: 4 (10) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 3 -> 0 commits
-    - maintainer, no role : 5 -> 0 commits
-    - maintainer, maintainer: 2 -> 0 commits
-  - dropped commits
-    - 558605a530e0 "memcg: move mem_cgroup_usage memcontrol-v1.c"
-      - Link: https://lkml.kernel.org/r/20251211013019.2080004-1-chenridong@huaweicloud.com
-      - Link: https://lkml.kernel.org/r/20251211013019.2080004-2-chenridong@huaweicloud.com
-    - 055059ed720e "memcg: remove mem_cgroup_size()"
-      - Link: https://lkml.kernel.org/r/20251211013019.2080004-3-chenridong@huaweicloud.com
-    - 16cc8b9396f6 "mm: memcontrol: rename mem_cgroup_from_slab_obj()"
-      - Link: https://lore.kernel.org/linux-mm/20251113161424.GB3465062@cmpxchg.org/
-      - Link: https://lkml.kernel.org/r/20251210154301.720133-1-hannes@cmpxchg.org
-    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
-      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-    - e77786b4682e "memcg: introduce private id API for in-kernel users"
-      - Link: https://lkml.kernel.org/r/20251225232116.294540-1-shakeel.butt@linux.dev
-      - Link: https://lkml.kernel.org/r/20251225232116.294540-2-shakeel.butt@linux.dev
-    - 1d89d7fd592e "memcg: expose mem_cgroup_ino() and mem_cgroup_get_from_ino() unconditionally"
-      - Link: https://lkml.kernel.org/r/20251225232116.294540-3-shakeel.butt@linux.dev
-    - 510e12900298 "memcg: mem_cgroup_get_from_ino() returns NULL on error"
-      - Link: https://lkml.kernel.org/r/20251225232116.294540-4-shakeel.butt@linux.dev
-    - ea73e3647160 "memcg: use cgroup_id() instead of cgroup_ino() for memcg ID"
-      - Link: https://lkml.kernel.org/r/20251225232116.294540-5-shakeel.butt@linux.dev
-    - 2202e3a8cb80 "memcg: remove unused mem_cgroup_id() and mem_cgroup_from_id()"
-      - Link: https://lkml.kernel.org/r/20251225232116.294540-8-shakeel.butt@linux.dev
-    - 95296536eb19 "memcg: rename mem_cgroup_ino() to mem_cgroup_id()"
-      - Link: : https://lkml.kernel.org/r/flkqanhyettp5uq22bjwg37rtmnpeg3mghznsylxcxxgaafpl4@nov2x7tagma7
-      - Link: https://lkml.kernel.org/r/20251225232116.294540-9-shakeel.butt@linux.dev
-    - 0bcbd7cf6596 "mm: replace use of system_unbound_wq with system_dfl_wq"
-      - Link: https://lkml.kernel.org/r/20260113114630.152942-1-marco.crivellari@suse.com
-      - Link: https://lore.kernel.org/all/20250221112003.1dSuoGyc@linutronix.de/
-      - Link: https://lkml.kernel.org/r/20260113114630.152942-2-marco.crivellari@suse.com
-    - 1aceed565ff1 "mm/vmscan: fix demotion targets checks in reclaim/demotion"
-      - Link: https://lkml.kernel.org/r/20260114205305.2869796-1-bingjiao@google.com
-      - Link: https://lkml.kernel.org/r/20260114205305.2869796-2-bingjiao@google.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+- mm-new: 1 -> 5 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, maintainer: 1 -> 4 commits
+    - maintainer, maintainer: 0 -> 1 commits
   - new commits
-    - 78a988a0c7d9 "mm, memcg: optimize stat output for 11% sys time reduction"
-      - Link: https://lkml.kernel.org/r/20260123150108.43443-2-wujianyue000@gmail.com
-- mm-nonmm-stable: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-  - dropped commits
-    - 61e9210e2392 "mm: use ARRAY_END() instead of open-coding it"
-      - Link: https://lkml.kernel.org/r/2335917d123891fec074ab1b3acfb517cf14b5a7.1765449750.git.alx@kernel.org
+    - 5be9ee7c5471 "mm: move pgscan, pgsteal, pgrefill to node stats"
+      - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
+    - 650bc046f2a6 "memcg: consolidate private id refcount get/put helpers"
+      - Link: https://lkml.kernel.org/r/20260213-memcg-privid-v1-1-d8cb7afcf831@tencent.com
+    - series "mm: zswap: add per-memcg stat for incompressible pages", v3. (2)
+      - 749decad9675 "mm: zswap: add per-memcg stat for incompressible pages (0/2)"
+        - Link: https://lkml.kernel.org/r/20260213071827.5688-1-jiayuan.chen@linux.dev
+        - Link: https://lkml.kernel.org/r/20260213071827.5688-2-jiayuan.chen@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/CAF8kJuONDFj4NAksaR4j_WyDbNwNGYLmTe-o76rqU17La=nkOw@mail.gmail.com/ [1]
+    - d62ca4690455 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+      - Link: https://lkml.kernel.org/r/20260220191035.3703800-2-hannes@cmpxchg.org
+- mm-nonmm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

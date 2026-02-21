@@ -1,73 +1,18 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 23 -> 0 commits
-  - series: 1 (21) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, nobody: 2 -> 0 commits
-    - reviewer, reviewer: 7 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, reviewer: 1 -> 0 commits
-    - maintainer, maintainer: 9 -> 0 commits
-  - dropped commits
-    - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers"
-      - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
-      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-    - 7db0787000d4 "mm: cleanup vma_iter_bulk_alloc"
-      - Link: https://lkml.kernel.org/r/20251106110929.3522073-1-guanwentao@uniontech.com
-    - 53eb797ffc3a "mm/rmap: remove anon_vma_merge() function"
-      - Link: https://lkml.kernel.org/r/56bbe45e309f7af197b1c4f94a9a0c8931ff2d29.1768746221.git.lorenzo.stoakes@oracle.com
-    - d17f02417a33 "mm/rmap: separate out fork-only logic on anon_vma_clone()"
-      - Link: https://lkml.kernel.org/r/cf7da7a2d973cdc72a1b80dd9a73260519e8fa9f.1768746221.git.lorenzo.stoakes@oracle.com
-    - bed76bec3111 "mm: relocate the page table ceiling and floor definitions"
-      - Link: https://lkml.kernel.org/r/20260121164946.2093480-1-Liam.Howlett@oracle.com
-      - Link: https://lkml.kernel.org/r/20260121164946.2093480-2-Liam.Howlett@oracle.com
-    - 95725acc3cd8 "mm/mmap: move exit_mmap() trace point"
-      - Link: https://lkml.kernel.org/r/20260121164946.2093480-3-Liam.Howlett@oracle.com
-    - d6d13e2ad81a "mm/mmap: abstract vma clean up from exit_mmap()"
-      - Link: https://lkml.kernel.org/r/20260121164946.2093480-4-Liam.Howlett@oracle.com
-    - 23bd03a9a204 "mm/vma: add limits to unmap_region() for vmas"
-      - Link: https://lkml.kernel.org/r/20260121164946.2093480-5-Liam.Howlett@oracle.com
-    - eda8c5e77622 "mm/memory: add tree limit to free_pgtables()"
-      - Link: https://lkml.kernel.org/r/20260121164946.2093480-6-Liam.Howlett@oracle.com
-    - 243de0c0dc04 "mm/vma: add page table limit to unmap_region()"
-      - Link: https://lkml.kernel.org/r/20260121164946.2093480-7-Liam.Howlett@oracle.com
-    - 43873af772f8 "mm: change dup_mmap() recovery"
-      - Link: https://lkml.kernel.org/r/20260121164946.2093480-8-Liam.Howlett@oracle.com
-    - 5b6626a76a81 "mm: introduce unmap_desc struct to reduce function arguments"
-      - Link: https://lkml.kernel.org/r/20260121164946.2093480-9-Liam.Howlett@oracle.com
-    - 0df5a8d3948d "mm/vma: use unmap_desc in exit_mmap() and vms_clear_ptes()"
-      - Link: https://lkml.kernel.org/r/20260121164946.2093480-10-Liam.Howlett@oracle.com
-    - 2314fe9ba5e6 "mm/vma: use unmap_region() in vms_clear_ptes()"
-      - Link: https://lkml.kernel.org/r/20260121164946.2093480-11-Liam.Howlett@oracle.com
-    - a8700d42b0af "mm: use unmap_desc struct for freeing page tables"
-      - Link: : https://lkml.kernel.org/r/20260210214214.364856-1-Liam.Howlett@oracle.com
-      - Link: https://lkml.kernel.org/r/20260121164946.2093480-12-Liam.Howlett@oracle.com
-    - bae0ba7c7c0a "mm: add basic VMA flag operation helper functions"
-      - Link: https://lkml.kernel.org/r/885d4897d67a6a57c0b07fa182a7055ad752df11.1769097829.git.lorenzo.stoakes@oracle.com
-    - 097e8db5e22b "mm: update hugetlbfs to use VMA flags on mmap_prepare"
-      - Link: https://lkml.kernel.org/r/9226bec80c9aa3447cc2b83354f733841dba8a50.1769097829.git.lorenzo.stoakes@oracle.com
-    - fd3196ee9ca1 "mm: update secretmem to use VMA flags on mmap_prepare"
-      - Link: : https://lkml.kernel.org/r/3aab9ab1-74b4-405e-9efb-08fc2500c06e@lucifer.local
-      - Link: https://lkml.kernel.org/r/a243a09b0a5d0581e963d696de1735f61f5b2075.1769097829.git.lorenzo.stoakes@oracle.com
-    - 53f1d9364451 "mm: make vm_area_desc utilise vma_flags_t only"
-      - Link: https://lkml.kernel.org/r/fd2a2938b246b4505321954062b1caba7acfc77a.1769097829.git.lorenzo.stoakes@oracle.com
-    - 6aacab308a5d "tools/testing/vma: separate VMA userland tests into separate files"
-      - Link: https://lkml.kernel.org/r/a0455ccfe4fdcd1c962c64f76304f612e5662a4e.1769097829.git.lorenzo.stoakes@oracle.com
-    - a1f0dacaaba1 "tools/testing/vma: separate out vma_internal.h into logical headers"
-      - Link: : https://lkml.kernel.org/r/1e032732-61c3-485c-9aa7-6a09016fefc1@lucifer.local
-      - Link: https://lkml.kernel.org/r/dd57baf5b5986cb96a167150ac712cbe804b63ee.1769097829.git.lorenzo.stoakes@oracle.com
-    - f615cc92641a "tools/testing/vma: add VMA userland tests for VMA flag functions"
-      - Link: https://lkml.kernel.org/r/7fe6afe9c8c61e4d3cfc9a2d50a5d24da8528e68.1769097829.git.lorenzo.stoakes@oracle.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 92c65c0a40ea "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
+      - Link: https://lkml.kernel.org/r/20260219063506.545148-1-sgsu.park@samsung.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -6,10 +6,55 @@
   - author/reviewer role stat
     - maintainer, nobody: 1 commits
   - full commits list
-    - 1aeb295e16f9 "mm, swap: speed up hibernation allocation and writeout"
+    - 702dcc7f8090 "mm, swap: speed up hibernation allocation and writeout"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260216-hibernate-perf-v4-1-1ba9f0bf1ec9@tencent.com
       - Link: https://lore.kernel.org/linux-mm/8b4bdcfa-ce3f-4e23-839f-31367df7c18f@gmx.de/ [1]
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 13 total, 1 (12) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+    - maintainer, maintainer: 12 commits
+  - full commits list
+    - series "mm, swap: swap table phase III: remove swap_map", v3. (12 commits)
+      - dd2777df28ee "mm, swap: protect si->swap_file properly and use as a mount indicator" (0/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-0-f4e34be021a7@tencent.com
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-1-f4e34be021a7@tencent.com
+      - 94ed78728173 "mm, swap: clean up swapon process and locking" (1/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-2-f4e34be021a7@tencent.com
+      - ab3dc13bf380 "mm, swap: remove redundant arguments and locking for enabling a device" (2/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-3-f4e34be021a7@tencent.com
+      - f299c9751a12 "mm, swap: consolidate bad slots setup and make it more robust" (3/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-4-f4e34be021a7@tencent.com
+      - dd73a6bd599d "mm/workingset: leave highest bits empty for anon shadow" (4/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-5-f4e34be021a7@tencent.com
+      - 02d315b3d1af "mm, swap: implement helpers for reserving data in the swap table" (5/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-6-f4e34be021a7@tencent.com
+      - 5da081d1b981 "mm, swap: mark bad slots in swap table directly" (6/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-7-f4e34be021a7@tencent.com
+      - 6dd84ea1fb29 "mm, swap: simplify swap table sanity range check" (7/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-8-f4e34be021a7@tencent.com
+      - d490f42cbd01 "mm, swap: use the swap table to track the swap count" (8/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-9-f4e34be021a7@tencent.com
+      - 6cec20c08132 "mm-swap-use-the-swap-table-to-track-the-swap-count-fix" (9/12)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/aZWuLZi-vYi3vAWe@KASONG-MC4
+      - c639f8f8d654 "mm, swap: no need to truncate the scan border" (10/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-10-f4e34be021a7@tencent.com
+      - 78b6cbcd16bc "mm, swap: simplify checking if a folio is swapped" (11/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-11-f4e34be021a7@tencent.com
+    - 7a8ef70fa6d5 "mm, swap: no need to clear the shadow explicitly"
+      - Authored by a maintainer, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-12-f4e34be021a7@tencent.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

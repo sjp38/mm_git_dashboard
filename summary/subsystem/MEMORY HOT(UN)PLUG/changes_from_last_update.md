@@ -1,28 +1,19 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - 12b2285bf3d1 "mm/zone_device: reinitialize large zone device private folios"
-      - Link: https://lkml.kernel.org/r/20260116111325.1736137-2-francois.dugast@intel.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
-  - dropped commits
-    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
-      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-    - 9e80e66ddaf7 "mm, hugetlb: implement movable_gigantic_pages sysctl"
-      - Link: https://lkml.kernel.org/r/20251221125603.2364174-1-gourry@gourry.net
-      - Link: https://lore.kernel.org/all/20180201193132.Hk7vI_xaU%25akpm@linux-foundation.org/
-    - cd8e95d80bc2 "mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION"
-      - Link: https://lkml.kernel.org/r/20260119230133.3551867-23-david@kernel.org
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - f101b98a4843 "mm: name the anonymous MMOP enum as enum mmop"
+      - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
+      - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

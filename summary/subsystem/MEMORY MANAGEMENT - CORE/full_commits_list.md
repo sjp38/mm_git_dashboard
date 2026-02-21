@@ -4,17 +4,71 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 219885836a3c "mm: change vma_alloc_folio_noprof() macro to inline function"
+    - 2dd01972072d "mm: change vma_alloc_folio_noprof() macro to inline function"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 14 total, 1 (5) series, 9 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 1 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 5 commits
+    - no role, reviewer: 2 commits
+    - no role, maintainer: 4 commits
+    - reviewer, nobody: 1 commits
+    - maintainer, maintainer: 1 commits
   - full commits list
-    - 0e138a626a38 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
+    - 5be9ee7c5471 "mm: move pgscan, pgsteal, pgrefill to node stats"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
+    - 9d685430c07b "mm: fix typo in the comment of mod_zone_state()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260219234407.3261196-1-mssola@mssola.com
+      - d490f42cbd01 "mm, swap: use the swap table to track the swap count" (8/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-9-f4e34be021a7@tencent.com
+    - 9efebef35b2c "mm: improve RSS counter approximation accuracy for proc interfaces"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/lkml/20250331223516.7810-2-sweettea-kernel@dorminy.me/ # [1]
+      - Link: https://lkml.kernel.org/r/20260217161006.1105611-4-mathieu.desnoyers@efficios.com
+    - bb7f90605d3b "mm: vmalloc: streamline vmalloc memory accounting"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260220191035.3703800-1-hannes@cmpxchg.org
+    - f101b98a4843 "mm: name the anonymous MMOP enum as enum mmop"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
+      - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
+    - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
+      - cee93729fdf4 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
+        - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
+      - 1ea3a4aec459 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
+      - 24ea0a15e262 "arch, mm: consolidate empty_zero_page" (2/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
+      - 4b51fdd3e352 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
+    - 1b2b982cb394 "mm: make ref_unless functions unless_zero only"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260206133328.426921-1-gladyshev.ilya1@h-partners.com
+    - dc29564804a7 "mm/mmu_notifiers: use hlist_for_each_entry_srcu() for SRCU list traversal"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260204080937.2472-1-lirongqing@baidu.com
+    - 5554f67ea46e "mm: convert vmemmap_p?d_populate() to static functions"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260201063532.44807-3-pilgrimtao@gmail.com
+    - 87cb1b04004a "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260130073807.99474-1-tujinjiang@huawei.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - 639351b2007b "unshare: fix nsproxy leak in ksys_unshare() on set_cred_ucounts() failure"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260213193959.2556730-1-mge@meta.com

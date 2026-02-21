@@ -1,26 +1,10 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, reviewer: 1 -> 0 commits
-  - dropped commits
-    - 9b47d4eea3f7 "mm/kasan: fix KASAN poisoning in vrealloc()"
-      - Link: : https://lkml.kernel.org/r/20260119144509.32767-1-ryabinin.a.a@gmail.com
-      - Link: https://lkml.kernel.org/r/20260113191516.31015-1-ryabinin.a.a@gmail.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, reviewer: 1 -> 0 commits
-  - dropped commits
-    - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers"
-      - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - b19cb086043d "mm/kasan/kunit: extend vmalloc OOB tests to cover vrealloc()"
-      - Link: : https://lkml.kernel.org/r/20260116132822.22227-1-ryabinin.a.a@gmail.com
-      - Link: https://lkml.kernel.org/r/20260113191516.31015-2-ryabinin.a.a@gmail.com
-    - 292ded180bfa "kasan: remove unnecessary sync argument from start_report()"
-      - Link: https://lkml.kernel.org/r/20260122041556.341868-1-maninder1.s@samsung.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

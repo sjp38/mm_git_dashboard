@@ -4,11 +4,21 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 39058324b281 "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
+    - 874ad9b8d6dd "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/ff48283b-be21-7f9a-d616-e303a4a1ebe6@redhat.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - maintainer, maintainer: 1 commits
+  - full commits list
+    - bb7f90605d3b "mm: vmalloc: streamline vmalloc memory accounting"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260220191035.3703800-1-hannes@cmpxchg.org
+    - d62ca4690455 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+      - Authored by a maintainer, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260220191035.3703800-2-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

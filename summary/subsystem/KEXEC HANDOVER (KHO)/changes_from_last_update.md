@@ -1,4 +1,4 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -7,41 +7,22 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm: memfd_luo: preserve file seals", v2. (2)
+      - ee8480ac30e9 "mm: memfd_luo: preserve file seals (1/2)"
+        - Link: https://lkml.kernel.org/r/20260216185946.1215770-3-pratyush@kernel.org
+- mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-stable: 10 -> 0 commits
-  - series: 2 (9) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 5 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
-    - maintainer, nobody: 2 -> 0 commits
-  - dropped commits
-    - a7e53bfb4366 "kho/abi: luo: make generated documentation more coherent"
-      - Link: https://lkml.kernel.org/r/20260105165839.285270-1-rppt@kernel.org
-      - Link: https://lkml.kernel.org/r/20260105165839.285270-2-rppt@kernel.org
-    - 32cb2729c956 "kho/abi: memfd: make generated documentation more coherent"
-      - Link: https://lkml.kernel.org/r/20260105165839.285270-3-rppt@kernel.org
-    - a6f4e5682802 "kho: docs: combine concepts and FDT documentation"
-      - Link: : https://lkml.kernel.org/r/aV4bnHlBXGpT_FMc@kernel.org
-      - Link: https://lkml.kernel.org/r/20260105165839.285270-4-rppt@kernel.org
-    - 5e1ea1e27b6f "kho: introduce KHO FDT ABI header"
-      - Link: https://lkml.kernel.org/r/20260105165839.285270-5-rppt@kernel.org
-    - ac2d8102c4b8 "kho: relocate vmalloc preservation structure to KHO ABI header"
-      - Link: : https://lkml.kernel.org/r/aW_Mqp6HcqLwQImS@kernel.org
-      - Link: https://lkml.kernel.org/r/20260105165839.285270-6-rppt@kernel.org
-    - dd1e79ef6ca1 "kho/abi: add memblock ABI header"
-      - Link: : https://lkml.kernel.org/r/20260107090438.22901-1-lukas.bulwahn@redhat.com
-      - Link: : https://lkml.kernel.org/r/aW_M-HYZzx5SkbnZ@kernel.org
-      - Link: https://lkml.kernel.org/r/20260105165839.285270-7-rppt@kernel.org
-    - 77ce1b4cd08f "kho: test: clean up residual memory upon test_kho module unload"
-      - Link: https://lkml.kernel.org/r/20260107022427.4114424-1-longwei27@huawei.com
-    - 840fe43d371f "kho: use unsigned long for nr_pages"
-      - Link: https://lkml.kernel.org/r/20260116112217.915803-1-pratyush@kernel.org
-      - Link: https://lkml.kernel.org/r/20260116112217.915803-2-pratyush@kernel.org
-    - cab056f2aae7 "liveupdate: luo_flb: introduce File-Lifecycle-Bound global state"
-      - Link: https://lkml.kernel.org/r/20251218155752.3045808-5-pasha.tatashin@soleen.com
-    - f653ff7af969 "tests/liveupdate: add in-kernel liveupdate test"
-      - Link: https://lkml.kernel.org/r/20251218155752.3045808-6-pasha.tatashin@soleen.com
-- mm-nonmm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-nonmm-unstable: 0 -> 2 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, maintainer: 0 -> 2 commits
+  - new commits
+    - series "Make KHO Stateless", v9. (2)
+      - 0dfbae48e1f5 "kho: adopt radix tree for preserved memory tracking (0/2)"
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
+      - 43d7d378d4eb "kho: remove finalize state and clients (1/2)"
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com

@@ -1,32 +1,24 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 6 -> 0 commits
-  - series: 0 (3) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 4 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers"
-      - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
-      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-    - 3d702678f57e "mm/mempolicy: fix mpol_rebind_nodemask() for MPOL_F_NUMA_BALANCING"
-      - Link: https://lkml.kernel.org/r/20260120011018.1256654-1-tujinjiang@huawei.com
-      - Link: https://lkml.kernel.org/r/20251223110523.1161421-1-tujinjiang@huawei.com
-    - 832d95b5314e "migrate: replace RMP_ flags with TTU_ flags"
-      - Link: https://lkml.kernel.org/r/20260109041345.3863089-3-willy@infradead.org
-    - 386781df63cb "mm: use nodes_and() return value to simplify client code"
-      - Link: https://lkml.kernel.org/r/20260114172217.861204-3-ynorov@nvidia.com
-    - cd8e95d80bc2 "mm: rename CONFIG_BALLOON_COMPACTION to CONFIG_BALLOON_MIGRATION"
-      - Link: https://lkml.kernel.org/r/20260119230133.3551867-23-david@kernel.org
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-new: 1 -> 2 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, reviewer: 1 -> 2 commits
+  - new commits
+    - series "arch, mm: consolidate empty_zero_page", v3. (4)
+      - 1ea3a4aec459 "mm: rename my_zero_pfn() to zero_pfn() (1/4)"
+        - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
+  - changed commits
+    - 45f5e62c8478 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

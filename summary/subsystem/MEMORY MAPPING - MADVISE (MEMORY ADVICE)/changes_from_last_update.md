@@ -1,27 +1,10 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 0 commits
-  - series: 0 (4) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - reviewer, reviewer: 2 -> 0 commits
-    - maintainer, reviewer: 1 -> 0 commits
-  - dropped commits
-    - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers"
-      - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
-      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-    - 17fd82c3abe0 "mm/vma: add and use vma_assert_stabilised()"
-      - Link: https://lkml.kernel.org/r/6c9e64bb2b56ddb6f806fde9237f8a00cb3a776b.1769198904.git.lorenzo.stoakes@oracle.com
-    - 36976159140b "mm, swap: cleanup swap entry management workflow"
-      - Link: : https://lkml.kernel.org/r/CAMgjq7AUz10uETVm8ozDWcB3XohkOqf0i33KGrAquvEVvfp5cg@mail.gmail.com
-      - Link: : https://lkml.kernel.org/r/aXxkANcET3l2Xu6J@KASONG-MC4
-      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-14-8862a265a033@tencent.com
-    - e388d31257ed "mm: rename vma_flag_test/set_atomic() to vma_test/set_atomic_flag()"
-      - Link: https://lkml.kernel.org/r/033dcf12e819dee5064582bced9b12ea346d1607.1769097829.git.lorenzo.stoakes@oracle.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

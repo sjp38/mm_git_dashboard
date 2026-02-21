@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - dc5b64bef3a2 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
+    - a70c6de6677c "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
       - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com

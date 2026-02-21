@@ -1,35 +1,18 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
-- mm-hotfixes-stable: 3 -> 0 commits
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 0 commits
-    - maintainer, no role : 1 -> 0 commits
-  - dropped commits
-    - a148a2040191 "mm/memory-failure: fix missing ->mf_stats count in hugetlb poison"
-      - Link: https://lkml.kernel.org/r/20260120232234.3462258-1-jane.chu@oracle.com
-    - 057a6f2632c9 "mm/memory-failure: teach kill_accessing_process to accept hugetlb tail page pfn"
-      - Link: https://lkml.kernel.org/r/20260120232234.3462258-2-jane.chu@oracle.com
-    - ae9fd76c111b "mm/memory-failure: reject unsupported non-folio compound page"
-      - Link: https://lkml.kernel.org/r/20260205075328.523211-1-linmiaohe@huawei.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
-    - maintainer, nobody: 3 -> 0 commits
-  - dropped commits
-    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
-      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-    - ff4ef2fbd101 "selftests/mm: add memory failure anonymous page test"
-      - Link: https://lkml.kernel.org/r/20260206031639.2707102-1-linmiaohe@huawei.com
-      - Link: https://lkml.kernel.org/r/20260206031639.2707102-2-linmiaohe@huawei.com
-    - 12e8a2fae372 "selftests/mm: add memory failure clean pagecache test"
-      - Link: https://lkml.kernel.org/r/20260206031639.2707102-3-linmiaohe@huawei.com
-    - d51b5076c746 "selftests/mm: add memory failure dirty pagecache test"
-      - Link: https://lkml.kernel.org/r/20260206031639.2707102-4-linmiaohe@huawei.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 858f16cb762f "selftests/mm: remove duplicate include of unistd.h"
+      - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

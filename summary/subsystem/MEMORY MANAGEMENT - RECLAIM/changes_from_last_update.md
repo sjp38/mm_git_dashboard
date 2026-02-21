@@ -1,58 +1,26 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 15 -> 0 commits
-  - series: 3 (11) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
-    - no role, reviewer: 5 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
-    - reviewer, no role : 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, no role : 1 -> 0 commits
-    - maintainer, reviewer: 1 -> 0 commits
-    - maintainer, maintainer: 2 -> 0 commits
-  - dropped commits
-    - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers"
-      - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - 7adc97bc9394 "mm/vmscan.c:shrink_folio_list(): save a tabstop"
-    - 055059ed720e "memcg: remove mem_cgroup_size()"
-      - Link: https://lkml.kernel.org/r/20251211013019.2080004-3-chenridong@huaweicloud.com
-    - 64dd89ae01f2 "mm/block/fs: remove laptop_mode"
-      - Link: https://lkml.kernel.org/r/20251216185201.GH905277@cmpxchg.org
-    - 62451ae347b0 "mm: fix minor spelling mistakes in comments"
-      - Link: https://lkml.kernel.org/r/20251218150906.25042-1-klourencodev@gmail.com
-    - e77786b4682e "memcg: introduce private id API for in-kernel users"
-      - Link: https://lkml.kernel.org/r/20251225232116.294540-1-shakeel.butt@linux.dev
-      - Link: https://lkml.kernel.org/r/20251225232116.294540-2-shakeel.butt@linux.dev
-    - 20ccbd89afe4 "mm/vmscan: use cgroup ID instead of private memcg ID in lru_gen interface"
-      - Link: https://lkml.kernel.org/r/20251225232116.294540-7-shakeel.butt@linux.dev
-    - 95296536eb19 "memcg: rename mem_cgroup_ino() to mem_cgroup_id()"
-      - Link: : https://lkml.kernel.org/r/flkqanhyettp5uq22bjwg37rtmnpeg3mghznsylxcxxgaafpl4@nov2x7tagma7
-      - Link: https://lkml.kernel.org/r/20251225232116.294540-9-shakeel.butt@linux.dev
-    - a3db9e136ce1 "mm/vmscan: drop inclusion of balloon_compaction.h"
-      - Link: https://lkml.kernel.org/r/20260119230133.3551867-20-david@kernel.org
-    - dc9fe9b7056a "mm/vmscan: mitigate spurious kswapd_failures reset from direct reclaim"
-      - Link: https://lkml.kernel.org/r/20260120024402.387576-1-jiayuan.chen@linux.dev
-      - Link: https://lkml.kernel.org/r/20260120024402.387576-2-jiayuan.chen@linux.dev
-    - a45088376d8a "mm/vmscan: add tracepoint and reason for kswapd_failures reset"
-      - Link: https://lkml.kernel.org/r/20260120024402.387576-3-jiayuan.chen@linux.dev
-    - 2732acda82c9 "mm, swap: use swap cache as the swap in synchronize layer"
-      - Link:  https://lkml.kernel.org/r/CAMgjq7CGUnzOVG7uSaYjzw9wD7w2dSKOHprJfaEp4CcGLgE3iw@mail.gmail.com
-      - Link: https://lkml.kernel.org/r/20251220-swap-table-p2-v5-12-8862a265a033@tencent.com
-    - 4a8eabc6e4c7 "mm/vmscan: use %pe to print error pointers"
-      - Link: https://lkml.kernel.org/r/80a6643657a60e75ddf48b4869b3e7fdc101f855.1770230135.git.chandna.sahil@gmail.com
-    - 1aceed565ff1 "mm/vmscan: fix demotion targets checks in reclaim/demotion"
-      - Link: https://lkml.kernel.org/r/20260114205305.2869796-1-bingjiao@google.com
-      - Link: https://lkml.kernel.org/r/20260114205305.2869796-2-bingjiao@google.com
-    - 7ec9ecf217f8 "mm/vmscan: select the closest preferred node in demote_folio_list()"
-      - Link: https://lkml.kernel.org/r/20260114205305.2869796-3-bingjiao@google.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 1 -> 4 commits
+  - series: 0 (0) -> 0 (1)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, maintainer: 0 -> 1 commits
+  - new commits
+    - 5be9ee7c5471 "mm: move pgscan, pgsteal, pgrefill to node stats"
+      - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
+    - series "mm, swap: swap table phase III: remove swap_map", v3. (12)
+      - dd73a6bd599d "mm/workingset: leave highest bits empty for anon shadow (4/12)"
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-5-f4e34be021a7@tencent.com
+    - 8ef4ff6b3879 "mm: remove '!root_reclaim' checking in should_abort_scan()"
+      - Link: https://lkml.kernel.org/r/20260212032111.408865-1-zhaoyang.huang@unisoc.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

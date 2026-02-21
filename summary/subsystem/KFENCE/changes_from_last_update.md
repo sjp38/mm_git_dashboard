@@ -1,33 +1,20 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
-- mm-hotfixes-stable: 2 -> 0 commits
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 870ff19251bf "mm/kfence: randomize the freelist on initialization"
-      - Link: https://lkml.kernel.org/r/20260120161510.3289089-1-pimyn@google.com
-    - 16459fe7e0ca "x86/kfence: fix booting on 32bit non-PAE systems"
-      - Link: https://lkml.kernel.org/r/20260126211046.2096622-1-andrew.cooper3@citrix.com
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - maintainer, nobody: 0 -> 1 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 1 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - 0bcbd7cf6596 "mm: replace use of system_unbound_wq with system_dfl_wq"
-      - Link: https://lkml.kernel.org/r/20260113114630.152942-1-marco.crivellari@suse.com
-      - Link: https://lore.kernel.org/all/20250221112003.1dSuoGyc@linutronix.de/
-      - Link: https://lkml.kernel.org/r/20260113114630.152942-2-marco.crivellari@suse.com
+  - new commits
+    - a02c188b7225 "mm/kfence: fix KASAN hardware tag faults during late enablement"
+      - Link: https://lkml.kernel.org/r/20260220144940.2779209-1-glider@google.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-stable: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 8118f197b7b7 "mm: fix benign off-by-one bugs"
-      - Link: https://lkml.kernel.org/r/9c38dd009c17b0219889c7089d9bdde5aaf28a8e.1765449750.git.alx@kernel.org
+- mm-nonmm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

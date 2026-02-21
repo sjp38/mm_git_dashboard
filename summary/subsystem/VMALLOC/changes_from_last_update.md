@@ -1,34 +1,22 @@
-- baseline: v6.19-rc6-36-g6c790212c588f -> v6.19-11773-g8bf22c33e7a17
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, reviewer: 1 -> 0 commits
-  - dropped commits
-    - 9b47d4eea3f7 "mm/kasan: fix KASAN poisoning in vrealloc()"
-      - Link: : https://lkml.kernel.org/r/20260119144509.32767-1-ryabinin.a.a@gmail.com
-      - Link: https://lkml.kernel.org/r/20260113191516.31015-1-ryabinin.a.a@gmail.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 5 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 4 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - a03ed8f144e2 "mm/vmalloc: clarify why vmap_range_noflush() might sleep"
-      - Link: https://lkml.kernel.org/r/20251215-b4-vmalloc-might_alloc-v3-1-92dd8e406868@google.com
-    - 0a096ab7a3a6 "mm: introduce generic lazy_mmu helpers"
-      - Link: https://lkml.kernel.org/r/20251215150323.2218608-8-kevin.brodsky@arm.com
-    - a98ec863fded "lib/test_vmalloc.c: minor fixes to test_vmalloc.c"
-      - Link: https://lkml.kernel.org/r/20251201181848.1216197-1-audra@redhat.com
-    - 5747435e0fd4 "mm/vmalloc: prevent RCU stalls in kasan_release_vmalloc_node"
-      - Link: https://lkml.kernel.org/r/20260112103612.627247-1-kartikey406@gmail.com
-      - Link: https://lore.kernel.org/all/20260112084723.622910-1-kartikey406@gmail.com/T/ [v1]
-    - d60769075013 "vmalloc: export vrealloc_node_align_noprof"
-      - Link: https://lkml.kernel.org/r/20260107-export-vrealloc_node_align_noprof-v1-1-a581bec13054@google.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+    - maintainer, maintainer: 0 -> 1 commits
+  - new commits
+    - bb7f90605d3b "mm: vmalloc: streamline vmalloc memory accounting"
+      - Link: https://lkml.kernel.org/r/20260220191035.3703800-1-hannes@cmpxchg.org
+    - d62ca4690455 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+      - Link: https://lkml.kernel.org/r/20260220191035.3703800-2-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
