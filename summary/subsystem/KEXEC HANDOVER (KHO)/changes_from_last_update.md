@@ -1,28 +1,23 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (1)
     - no role, nobody: 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "mm: memfd_luo: preserve file seals", v2. (2)
-      - ee8480ac30e9 "mm: memfd_luo: preserve file seals (1/2)"
+      - 72409c2c1b97 "mm: memfd_luo: preserve file seals (1/2)"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260216185946.1215770-3-pratyush@kernel.org
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, maintainer: 0 -> 2 commits
-  - new commits
-    - series "Make KHO Stateless", v9. (2)
-      - 0dfbae48e1f5 "kho: adopt radix tree for preserved memory tracking (0/2)"
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
-      - 43d7d378d4eb "kho: remove finalize state and clients (1/2)"
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+- mm-nonmm-unstable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)

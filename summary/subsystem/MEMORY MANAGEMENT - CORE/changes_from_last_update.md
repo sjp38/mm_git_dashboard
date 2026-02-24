@@ -1,4 +1,4 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -6,53 +6,81 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 14 commits
+- mm-unstable: 0 -> 13 commits
   - series: 0 (0) -> 1 (5)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 5 commits
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 0 -> 4 commits
     - no role, reviewer: 0 -> 2 commits
-    - no role, maintainer: 1 -> 4 commits
+    - no role, maintainer: 0 -> 3 commits
     - reviewer, nobody: 0 -> 1 commits
     - maintainer, maintainer: 0 -> 1 commits
   - new commits
-    - 5be9ee7c5471 "mm: move pgscan, pgsteal, pgrefill to node stats"
+    - d501d4b5628d "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
+      - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
+  - changed commits
+    - c3f575a4c3b7 "mm: move pgscan, pgsteal, pgrefill to node stats"
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
       - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
-    - 9d685430c07b "mm: fix typo in the comment of mod_zone_state()"
+    - b7f4087c4a83 "mm: fix typo in the comment of mod_zone_state()"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260219234407.3261196-1-mssola@mssola.com
     - series "mm, swap: swap table phase III: remove swap_map", v3. (12)
-      - d490f42cbd01 "mm, swap: use the swap table to track the swap count (8/12)"
+      - ec992faf9548 "mm, swap: use the swap table to track the swap count (8/12)"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-9-f4e34be021a7@tencent.com
-    - 9efebef35b2c "mm: improve RSS counter approximation accuracy for proc interfaces"
+    - 57b97b4ee02c "mm: improve RSS counter approximation accuracy for proc interfaces"
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/lkml/20250331223516.7810-2-sweettea-kernel@dorminy.me/ # [1]
       - Link: https://lkml.kernel.org/r/20260217161006.1105611-4-mathieu.desnoyers@efficios.com
-    - bb7f90605d3b "mm: vmalloc: streamline vmalloc memory accounting"
-      - Link: https://lkml.kernel.org/r/20260220191035.3703800-1-hannes@cmpxchg.org
-    - f101b98a4843 "mm: name the anonymous MMOP enum as enum mmop"
+    - c78a77a9531a "mm: name the anonymous MMOP enum as enum mmop"
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
     - series "arch, mm: consolidate empty_zero_page", v3. (4)
-      - cee93729fdf4 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn() (0/4)"
+      - 8889b5577021 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn() (0/4)"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 1ea3a4aec459 "mm: rename my_zero_pfn() to zero_pfn() (1/4)"
+      - 77b1fafbf96b "mm: rename my_zero_pfn() to zero_pfn() (1/4)"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 24ea0a15e262 "arch, mm: consolidate empty_zero_page (2/4)"
+      - 6c77202608d0 "arch, mm: consolidate empty_zero_page (2/4)"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - 4b51fdd3e352 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE() (3/4)"
+      - 5a79f44b654d "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE() (3/4)"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-    - 1b2b982cb394 "mm: make ref_unless functions unless_zero only"
+    - 038ea162f3af "mm: make ref_unless functions unless_zero only"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260206133328.426921-1-gladyshev.ilya1@h-partners.com
-    - dc29564804a7 "mm/mmu_notifiers: use hlist_for_each_entry_srcu() for SRCU list traversal"
+    - 27cdc5679b8e "mm/mmu_notifiers: use hlist_for_each_entry_srcu() for SRCU list traversal"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260204080937.2472-1-lirongqing@baidu.com
-    - 5554f67ea46e "mm: convert vmemmap_p?d_populate() to static functions"
+    - 8a365510cf05 "mm: convert vmemmap_p?d_populate() to static functions"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260201063532.44807-3-pilgrimtao@gmail.com
+- mm-new: 14 -> 2 commits
+  - series: 1 (5) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 5 -> 1 commits
+    - no role, reviewer: 2 -> 0 commits
+    - no role, maintainer: 4 -> 1 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - changed commits
+    - 40e65d4bf80b "mm: vmalloc: streamline vmalloc memory accounting"
+      - added "Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org"
+      - added "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
+      - dropped "Link: https://lkml.kernel.org/r/20260220191035.3703800-1-hannes@cmpxchg.org"
+      - dropped "Cc: Uladzislau Rezki <urezki@gmail.com>"
+      - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 0 -> 1 commits
+- mm-nonmm-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 2 commits
   - new commits
-    - 639351b2007b "unshare: fix nsproxy leak in ksys_unshare() on set_cred_ucounts() failure"
-      - Link: https://lkml.kernel.org/r/20260213193959.2556730-1-mge@meta.com
+    - eb3fc4c75a6a "fork: replace simple_strtoul with kstrtoul in coredump_filter_setup"
+      - Link: https://lkml.kernel.org/r/20251215142152.4082-2-thorsten.blum@linux.dev

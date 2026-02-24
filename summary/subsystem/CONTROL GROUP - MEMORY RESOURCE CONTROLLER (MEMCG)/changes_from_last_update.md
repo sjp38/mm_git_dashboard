@@ -1,28 +1,43 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 5 commits
+- mm-unstable: 0 -> 4 commits
   - series: 0 (0) -> 1 (1)
-    - no role, maintainer: 1 -> 4 commits
-    - maintainer, maintainer: 0 -> 1 commits
-  - new commits
-    - 5be9ee7c5471 "mm: move pgscan, pgsteal, pgrefill to node stats"
+    - no role, maintainer: 0 -> 4 commits
+  - changed commits
+    - 4ef04f427702 "mm, memcg: optimize stat output for 11% sys time reduction"
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260123150108.43443-2-wujianyue000@gmail.com
+    - c3f575a4c3b7 "mm: move pgscan, pgsteal, pgrefill to node stats"
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
       - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
-    - 650bc046f2a6 "memcg: consolidate private id refcount get/put helpers"
+    - 4dcccd15d074 "memcg: consolidate private id refcount get/put helpers"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260213-memcg-privid-v1-1-d8cb7afcf831@tencent.com
     - series "mm: zswap: add per-memcg stat for incompressible pages", v3. (2)
-      - 749decad9675 "mm: zswap: add per-memcg stat for incompressible pages (0/2)"
+      - c708b2465fe3 "mm: zswap: add per-memcg stat for incompressible pages (0/2)"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260213071827.5688-1-jiayuan.chen@linux.dev
         - Link: https://lkml.kernel.org/r/20260213071827.5688-2-jiayuan.chen@linux.dev
         - Link: https://lore.kernel.org/linux-mm/CAF8kJuONDFj4NAksaR4j_WyDbNwNGYLmTe-o76rqU17La=nkOw@mail.gmail.com/ [1]
-    - d62ca4690455 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
-      - Link: https://lkml.kernel.org/r/20260220191035.3703800-2-hannes@cmpxchg.org
+- mm-new: 5 -> 1 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, maintainer: 4 -> 0 commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - 47772e0a26ee "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+      - added "Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org"
+      - added "Reviewed-by: Uladzislau Rezki (Sony) <urezki@gmail.com>"
+      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Link: https://lkml.kernel.org/r/20260220191035.3703800-2-hannes@cmpxchg.org"
+      - dropped "Cc: Uladzislau Rezki <urezki@gmail.com>"
+      - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

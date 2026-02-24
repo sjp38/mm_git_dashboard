@@ -1,21 +1,24 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 2 commits
+- mm-unstable: 0 -> 2 commits
   - series: 0 (0) -> 1 (2)
     - no role, maintainer: 0 -> 2 commits
-  - new commits
+  - changed commits
     - series "mm/kmemleak: Improve scan_should_stop() implementation". (2)
-      - ac211c8633fd "mm/kmemleak: remove unreachable return statement in scan_should_stop() (0/2)"
+      - 9db300e51ce1 "mm/kmemleak: remove unreachable return statement in scan_should_stop() (0/2)"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260130093729.2045858-2-zhongqiu.han@oss.qualcomm.com
-      - ddcefa3b7fcf "mm/kmemleak: use PF_KTHREAD flag to detect kernel threads (1/2)"
+      - c13a301e1229 "mm/kmemleak: use PF_KTHREAD flag to detect kernel threads (1/2)"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260130093729.2045858-3-zhongqiu.han@oss.qualcomm.com
+- mm-new: 2 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, maintainer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,4 +1,4 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v6.19-11773-g8bf22c33e7a17 (no change)
+- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -6,17 +6,28 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 0 -> 2 commits
+- mm-unstable: 0 -> 5 commits
+  - series: 0 (0) -> 1 (4)
+    - no role, reviewer: 0 -> 5 commits
   - new commits
+    - series "Improve khugepaged scan logic", v8. (4)
+      - c45f9d3ad2cc "mm: khugepaged: add trace_mm_khugepaged_scan event (0/4)"
+        - Link: https://lkml.kernel.org/r/20260221093918.1456187-2-vernon2gm@gmail.com
+      - 28e31b1e07b5 "mm: khugepaged: refine scan progress number (1/4)"
+        - Link: https://lkml.kernel.org/r/20260221093918.1456187-3-vernon2gm@gmail.com
+      - 80f6f56d9fea "mm: khugepaged: skip lazy-free folios (3/4)"
+        - Link: https://lkml.kernel.org/r/20260221093918.1456187-5-vernon2gm@gmail.com
+  - changed commits
     - series "arch, mm: consolidate empty_zero_page", v3. (4)
-      - 1ea3a4aec459 "mm: rename my_zero_pfn() to zero_pfn() (1/4)"
+      - 77b1fafbf96b "mm: rename my_zero_pfn() to zero_pfn() (1/4)"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-    - 179b502b8915 "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
+    - 74741f1f87dc "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260207081613.588598-6-vernon2gm@gmail.com
+- mm-new: 2 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, reviewer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

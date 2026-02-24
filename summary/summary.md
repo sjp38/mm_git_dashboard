@@ -1,30 +1,34 @@
-- baseline: v6.19-11773-g8bf22c33e7a17
+- baseline: v7.0-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 10 total, 0 (0) series, 10 non-series commits
+- mm-hotfixes-unstable: 15 total, 1 (2) series, 13 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 2 commits
+    - no role, nobody: 5 commits
+    - no role, no role : 4 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
     - maintainer, nobody: 3 commits
     - maintainer, maintainer: 1 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - maintainer, nobody: 1 commits
-- mm-new: 91 total, 8 (57) series, 34 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 8 commits
-    - no role, no role : 13 commits
-    - no role, reviewer: 6 commits
-    - no role, maintainer: 16 commits
-    - reviewer, nobody: 1 commits
-    - maintainer, nobody: 34 commits
-    - maintainer, maintainer: 13 commits
-- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 23 total, 3 (11) series, 12 non-series commits
+- mm-unstable: 94 total, 9 (61) series, 33 non-series commits
   - author/reviewer role stat
     - no role, nobody: 9 commits
+    - no role, no role : 13 commits
+    - no role, reviewer: 9 commits
+    - no role, maintainer: 15 commits
+    - reviewer, nobody: 1 commits
+    - maintainer, nobody: 35 commits
+    - maintainer, maintainer: 12 commits
+- mm-new: 7 total, 1 (3) series, 4 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 3 commits
+    - no role, no role : 1 commits
+    - no role, maintainer: 1 commits
+    - maintainer, nobody: 1 commits
+    - maintainer, maintainer: 1 commits
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 29 total, 3 (11) series, 18 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 14 commits
     - no role, no role : 10 commits
-    - no role, maintainer: 3 commits
+    - no role, maintainer: 4 commits
     - maintainer, nobody: 1 commits
