@@ -1,394 +1,145 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
+- mm-hotfixes-stable: 0 -> 12 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 10 -> 15 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, nobody: 2 -> 5 commits
-    - no role, no role : 2 -> 4 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 3 -> 3 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 7dd859e3fb0b "mm: fix NULL NODE_DATA dereference for memoryless nodes on boot"
-      - Link: https://lkml.kernel.org/r/20260222115702.3659-1-ming.lei@redhat.com
-    - 3c0cda2b0dda "mailmap: add entry for Daniele Alessandrelli"
-      - Link: https://lkml.kernel.org/r/20260223170905.278956-1-daniele.alessandrelli@intel.com
-    - a51c6f1008e4 "MAINTAINERS: update Yosry Ahmed's email address"
-      - Link: https://lkml.kernel.org/r/20260223160027.122307-1-yosry@kernel.org
-    - series "mm: memfd_luo: fixes for folio flag preservation". (2)
-      - 76ec99cfed40 "mm: memfd_luo: always make all folios uptodate (0/2)"
-        - Link: https://lkml.kernel.org/r/20260223173931.2221759-2-pratyush@kernel.org
-      - b6eb2bd40c1b "mm: memfd_luo: always dirty all folios (1/2)"
-        - Link: https://lkml.kernel.org/r/20260223173931.2221759-3-pratyush@kernel.org
+    - no role, nobody: 0 -> 3 commits
+    - no role, no role : 0 -> 3 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 3 commits
+    - maintainer, maintainer: 0 -> 1 commits
   - changed commits
-    - bf16641da830 "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
-      - added "Acked-by: SeongJae Park <sj@kernel.org>"
-      - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
-      - dropped "Cc: Christoph Hellwig <hch@infradead.org>"
-      - dropped "Cc: SeongJae Park <sj@kernel.org>"
-      - Link: https://lkml.kernel.org/r/ff48283b-be21-7f9a-d616-e303a4a1ebe6@redhat.com
+    - 09833d99db36 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260213095410.1862978-1-glider@google.com
+    - eb9549346f75 "mm: change vma_alloc_folio_noprof() macro to inline function"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
+    - dd085fe9a8eb "mm: thp: deny THP for files on anonymous inodes"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://syzkaller.appspot.com/bug?extid=33a04338019ac7e43a44
+      - Link: https://lore.kernel.org/linux-mm/CAEvNRgHegcz3ro35ixkDw39ES8=U6rs6S7iP0gkR9enr7HoGtA@mail.gmail.com
+      - Link: https://lkml.kernel.org/r/20260214001535.435626-1-kartikey406@gmail.com
+    - f85b1c6af5bc "liveupdate: luo_file: remember retrieve() status"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260216132221.987987-1-pratyush@kernel.org
+    - 319d0bff22f3 "MAINTAINERS, mailmap: update e-mail address for Vlastimil Babka"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260217102151.10425-2-vbabka@kernel.org
+    - fdb24a820a58 "Squashfs: check metadata block offset is within range"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260217050955.138351-1-phillip@squashfs.org.uk
+    - c80f46ac228b "mm/damon/core: disallow non-power of two min_region_sz"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260214214124.87689-1-sj@kernel.org
+    - d155aab90fff "mm/kfence: fix KASAN hardware tag faults during late enablement"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260220144940.2779209-1-glider@google.com
+    - 079c24d56902 "mm/tracing: rss_stat: ensure curr is false from kthread context"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260219233708.1971199-1-kaleshsingh@google.com
+      - Link: https://perfetto.dev/ [1]
+    - a4ab97e34bb6 "mm: fix NULL NODE_DATA dereference for memoryless nodes on boot"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260222115702.3659-1-ming.lei@redhat.com
+    - 37a012c5c10c "mailmap: add entry for Daniele Alessandrelli"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260223170905.278956-1-daniele.alessandrelli@intel.com
+    - 410aed670cdd "MAINTAINERS: update Yosry Ahmed's email address"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260223160027.122307-1-yosry@kernel.org
+- mm-hotfixes-unstable: 15 -> 4 commits
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 5 -> 2 commits
+    - no role, no role : 4 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 3 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - new commits
+    - 5350f05fd613 "mm/damon/core: clear walk_control on inactive context in damos_walk()"
+      - Link: https://lkml.kernel.org/r/20260224011102.56033-1-sj@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 94 commits
-  - series: 0 (0) -> 9 (61)
-    - no role, nobody: 0 -> 9 commits
-    - no role, no role : 0 -> 13 commits
-    - no role, reviewer: 0 -> 9 commits
-    - no role, maintainer: 0 -> 15 commits
-    - reviewer, nobody: 0 -> 1 commits
-    - maintainer, nobody: 1 -> 35 commits
-    - maintainer, maintainer: 0 -> 12 commits
+- mm-unstable: 94 -> 98 commits
+  - series: 9 (61) -> 10 (63)
+    - no role, nobody: 9 -> 9 commits (no change)
+    - no role, no role : 13 -> 13 commits (no change)
+    - no role, reviewer: 9 -> 9 commits (no change)
+    - no role, maintainer: 15 -> 18 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 35 -> 36 commits
+    - maintainer, maintainer: 12 -> 12 commits (no change)
   - new commits
+    - 4ac6dd7136f0 "mm-centralizefix-comments-about-compound_mapcount-in-new-sync_with_folio_pmd_zap-fix"
+    - 4af4c9ef3c41 "mm/hugetlb_vmemmap: update outdated comment"
+      - Link: https://lkml.kernel.org/r/20260224022840.1936-1-kexinsun@smail.nju.edu.cn
+  - changed commits
+    - 87dfc0161403 "kho: move alloc tag init to kho_init_{folio,pages}()"
+      - branch: mm-nonmm-unstable -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260213085914.2778107-1-pratyush@kernel.org
+    - series "Make KHO Stateless", v9. (2)
+      - 33f0d33fb32d "kho: adopt radix tree for preserved memory tracking (0/2)"
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
+      - 957a3fab8811 "kho: remove finalize state and clients (1/2)"
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+  - dropped commits
     - 851f76d07c7d "mm/mmu_gather: define RCU version tlb_remove_table_one() in CONFIG_MMU_GATHER_RCU_TABLE_FREE"
       - Link: https://lkml.kernel.org/r/20260222004512.839-1-richard.weiyang@gmail.com
-    - series "Improve khugepaged scan logic", v8. (4)
-      - c45f9d3ad2cc "mm: khugepaged: add trace_mm_khugepaged_scan event (0/4)"
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-2-vernon2gm@gmail.com
-      - 28e31b1e07b5 "mm: khugepaged: refine scan progress number (1/4)"
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-3-vernon2gm@gmail.com
-      - 2e713dee5cd1 "mm: add folio_test_lazyfree helper (2/4)"
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-4-vernon2gm@gmail.com
-      - 80f6f56d9fea "mm: khugepaged: skip lazy-free folios (3/4)"
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-5-vernon2gm@gmail.com
-    - d501d4b5628d "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
-      - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
-  - changed commits
-    - 1de80c790c97 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
-    - bca5e3bf39fe "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-    - 53b6e7c3090e "mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260203095400.2465255-1-qin.yuA@h3c.com
-    - 43a8d4703d55 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
-      - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com
-    - 40c6116a6230 "fs: hugetlb: simplify remove_inode_hugepages() return type"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260204214741.3161520-1-jiaqiyan@google.com
-      - Link: https://lore.kernel.org/all/20220914221810.95771-10-mike.kravetz@oracle.com [1]
-    - series "KSM: Optimizations for rmap_walk_ksm", v3. (2)
-      - 06e7403b1c57 "ksm: initialize the addr only once in rmap_walk_ksm (0/2)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260212192820223O_r2NQzSEPG_C56cs-z4l@zte.com.cn
-        - Link: https://lkml.kernel.org/r/20260212192932941MSsJEAyoRW4YdLBN7_myn@zte.com.cn
-      - bc2d607ffb2d "ksm: optimize rmap_walk_ksm by passing a suitable address range (1/2)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
-    - ce1d1f360254 "mm/fadvise: validate offset in generic_fadvise"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
-      - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - series "maple_tree: Replace big node with maple copy", v3. (30)
-      - 00aebbfce81c "maple_tree: fix mas_dup_alloc() sparse warning (0/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-1-Liam.Howlett@oracle.com
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-2-Liam.Howlett@oracle.com
-      - 88f391d916b8 "maple_tree: move mas_spanning_rebalance loop to function (1/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-3-Liam.Howlett@oracle.com
-      - 3dee67f3f6bd "maple_tree: extract use of big node from mas_wr_spanning_store() (2/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-4-Liam.Howlett@oracle.com
-      - 3f2ead922bbb "maple_tree: remove unnecessary assignment of orig_l index (3/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-5-Liam.Howlett@oracle.com
-      - 2e3b23c584a8 "maple_tree: inline mas_spanning_rebalance() into mas_wr_spanning_rebalance() (4/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-6-Liam.Howlett@oracle.com
-      - f690dfb4c130 "maple_tree: make ma_wr_states reliable for reuse in spanning store (5/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-7-Liam.Howlett@oracle.com
-      - 75fe986506a3 "maple_tree: remove l_wr_mas from mas_wr_spanning_rebalance (6/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-8-Liam.Howlett@oracle.com
-      - 390cb8f9b552 "maple_tree: don't pass through height in mas_wr_spanning_store (7/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-9-Liam.Howlett@oracle.com
-      - ce625e9b5a9d "maple_tree: move maple_subtree_state from mas_wr_spanning_store to mas_wr_spanning_rebalance (8/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-10-Liam.Howlett@oracle.com
-      - f196706ee0cb "maple_tree: correct right ma_wr_state end pivot in mas_wr_spanning_store() (9/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-11-Liam.Howlett@oracle.com
-      - 891c903286c3 "maple_tree: introduce maple_copy node and use it in mas_spanning_rebalance() (10/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-12-Liam.Howlett@oracle.com
-      - 6dbf4c3f3b60 "maple_tree: testing update for spanning store (11/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-13-Liam.Howlett@oracle.com
-      - 4580435f2168 "maple_tree: inline mas_spanning_rebalance_loop() into mas_wr_spanning_rebalance() (12/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-14-Liam.Howlett@oracle.com
-      - f3713692bb0b "maple_tree: change initial big node setup in mas_wr_spanning_rebalance() (13/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-15-Liam.Howlett@oracle.com
-      - 4dcd0e206d6d "maple_tree: introduce ma_leaf_max_gap() (14/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-16-Liam.Howlett@oracle.com
-      - 28b8331d67dc "maple_tree: add gap support, slot and pivot sizes for maple copy (15/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-17-Liam.Howlett@oracle.com
-      - eae46e3a57ba "maple_tree: start using maple copy node for destination (16/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-18-Liam.Howlett@oracle.com
-      - c9e19bb0b146 "maple_tree-start-using-maple-copy-node-for-destination-checkpatch-fixes (17/30)"
-        - branch: mm-new -> mm-unstable
-      - 068164169265 "maple_tree: inline mas_wr_spanning_rebalance() (18/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-19-Liam.Howlett@oracle.com
-      - 3c4d377b7c2e "maple_tree: remove unnecessary return statements (19/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-20-Liam.Howlett@oracle.com
-      - 35c802798729 "maple_tree: separate wr_split_store and wr_rebalance store type code path (20/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-21-Liam.Howlett@oracle.com
-      - 86feaceac7b4 "maple_tree: add cp_is_new_root() helper (21/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-22-Liam.Howlett@oracle.com
-      - 66f5c96529b7 "maple_tree-add-cp_is_new_root-helper-fix (22/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/malwmirqnpuxqkqrobcmzfkmmxipoyzwfs2nwc5fbpxlt2r2ej@wchmjtaljvw3
-      - be5cee682afa "maple_tree-add-cp_is_new_root-helper-fix-fix (23/30)"
-        - branch: mm-new -> mm-unstable
-      - 3fb194d0f011 "maple_tree: use maple copy node for mas_wr_rebalance() operation (24/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-23-Liam.Howlett@oracle.com
-      - 12591796dfde "maple_tree: add test for rebalance calculation off-by-one (25/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-24-Liam.Howlett@oracle.com
-      - 491fdb943cd8 "maple_tree: add copy_tree_location() helper (26/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-25-Liam.Howlett@oracle.com
-      - 454318be684b "maple_tree: add cp_converged() helper (27/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-26-Liam.Howlett@oracle.com
-      - afc973974c3f "maple_tree: use maple copy node for mas_wr_split() (28/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-27-Liam.Howlett@oracle.com
-      - 08dea66446ad "maple_tree: remove maple big node and subtree structs (29/30)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130205935.2559335-28-Liam.Howlett@oracle.com
-    - 96280c445c1c "maple_tree: pass maple copy node to mas_wmb_replace()"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260130205935.2559335-29-Liam.Howlett@oracle.com
-    - 48420e4842b6 "maple_tree: don't pass end to mas_wr_append()"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260130205935.2559335-30-Liam.Howlett@oracle.com
-    - 910936fba206 "maple_tree: clean up mas_wr_node_store()"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260130205935.2559335-31-Liam.Howlett@oracle.com
-    - 4ef04f427702 "mm, memcg: optimize stat output for 11% sys time reduction"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260123150108.43443-2-wujianyue000@gmail.com
-    - 61421a847fcd "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260219063506.545148-1-sgsu.park@samsung.com
-    - 76e13d60fc92 "selftests/mm: fix soft-dirty kselftest supported check"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260218184210.206466-1-audra@redhat.com
-    - a00631669b3a "selftests/mm: skip migration tests if NUMA is unavailable"
-      - branch: mm-new -> mm-unstable
-      - added "Fixes: 0c2d08728470 ("mm: add selftests for migration entries")"
-      - dropped "Fixes: 0c2d08728470b ("mm: add selftests for migration entries")"
-      - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
-    - c3f575a4c3b7 "mm: move pgscan, pgsteal, pgrefill to node stats"
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
-    - b7f4087c4a83 "mm: fix typo in the comment of mod_zone_state()"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260219234407.3261196-1-mssola@mssola.com
-    - series "mm, swap: swap table phase III: remove swap_map", v3. (12)
-      - d6a0a28d4b6d "mm, swap: protect si->swap_file properly and use as a mount indicator (0/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-0-f4e34be021a7@tencent.com
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-1-f4e34be021a7@tencent.com
-      - 9db8cc33e5ac "mm, swap: clean up swapon process and locking (1/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-2-f4e34be021a7@tencent.com
-      - 67160ec45fbb "mm, swap: remove redundant arguments and locking for enabling a device (2/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-3-f4e34be021a7@tencent.com
-      - 22986f7f1ea0 "mm, swap: consolidate bad slots setup and make it more robust (3/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-4-f4e34be021a7@tencent.com
-      - a0f6c3e56ad4 "mm/workingset: leave highest bits empty for anon shadow (4/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-5-f4e34be021a7@tencent.com
-      - 76435aef337e "mm, swap: implement helpers for reserving data in the swap table (5/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-6-f4e34be021a7@tencent.com
-      - 5d5e87f4ba7e "mm, swap: mark bad slots in swap table directly (6/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-7-f4e34be021a7@tencent.com
-      - d0d9070ce063 "mm, swap: simplify swap table sanity range check (7/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-8-f4e34be021a7@tencent.com
-      - ec992faf9548 "mm, swap: use the swap table to track the swap count (8/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-9-f4e34be021a7@tencent.com
-      - 6544b063b955 "mm-swap-use-the-swap-table-to-track-the-swap-count-fix (9/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/aZWuLZi-vYi3vAWe@KASONG-MC4
-      - afaa152bdcf4 "mm, swap: no need to truncate the scan border (10/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-10-f4e34be021a7@tencent.com
-      - 9ef0e8fff8a2 "mm, swap: simplify checking if a folio is swapped (11/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-11-f4e34be021a7@tencent.com
-    - 9591adbe17c7 "mm, swap: no need to clear the shadow explicitly"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-12-f4e34be021a7@tencent.com
-    - series "Improve proc RSS accuracy", v17. (3)
-      - 2594472c15d5 "lib: introduce hierarchical per-cpu counters (0/3)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260217161006.1105611-1-mathieu.desnoyers@efficios.com
-        - Link: https://lore.kernel.org/lkml/20250331223516.7810-2-sweettea-kernel@dorminy.me/ [1]
-        - Link: https://lkml.kernel.org/r/20260217161006.1105611-2-mathieu.desnoyers@efficios.com
-      - 8afa34b294ce "lib-introduce-hierarchical-per-cpu-counters-fix (1/3)"
-        - branch: mm-new -> mm-unstable
-      - cc5a4cf9b77d "lib: test hierarchical per-cpu counters (2/3)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260217161006.1105611-3-mathieu.desnoyers@efficios.com
-    - 57b97b4ee02c "mm: improve RSS counter approximation accuracy for proc interfaces"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/lkml/20250331223516.7810-2-sweettea-kernel@dorminy.me/ # [1]
-      - Link: https://lkml.kernel.org/r/20260217161006.1105611-4-mathieu.desnoyers@efficios.com
-    - series "mm: memfd_luo: preserve file seals", v2. (2)
-      - 13f2c213cbce "memfd: export memfd_{add,get}_seals() (0/2)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260216185946.1215770-1-pratyush@kernel.org
-        - Link: https://lkml.kernel.org/r/20260216185946.1215770-2-pratyush@kernel.org
-      - 72409c2c1b97 "mm: memfd_luo: preserve file seals (1/2)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260216185946.1215770-3-pratyush@kernel.org
-    - 1dc463a54f13 "mm/damon: remove unused target param of get_scheme_score()"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260213145032.1740407-1-gutierrez.asier@huawei-partners.com
-    - 4dcccd15d074 "memcg: consolidate private id refcount get/put helpers"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260213-memcg-privid-v1-1-d8cb7afcf831@tencent.com
-    - series "mm: zswap: add per-memcg stat for incompressible pages", v3. (2)
-      - c708b2465fe3 "mm: zswap: add per-memcg stat for incompressible pages (0/2)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260213071827.5688-1-jiayuan.chen@linux.dev
-        - Link: https://lkml.kernel.org/r/20260213071827.5688-2-jiayuan.chen@linux.dev
-        - Link: https://lore.kernel.org/linux-mm/CAF8kJuONDFj4NAksaR4j_WyDbNwNGYLmTe-o76rqU17La=nkOw@mail.gmail.com/ [1]
-      - c44ffebf38b9 "selftests/cgroup: add test for zswap incompressible pages (1/2)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260213071827.5688-3-jiayuan.chen@linux.dev
-    - 160f46e7f920 "mm: remove '!root_reclaim' checking in should_abort_scan()"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260212032111.408865-1-zhaoyang.huang@unisoc.com
-    - c78a77a9531a "mm: name the anonymous MMOP enum as enum mmop"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
-      - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
-    - 4669fb1c3259 "mm/shmem: remove unnecessary restrain unmask of swap gfp flags"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260211-shmem-swap-gfp-v1-1-e9781099a861@tencent.com
-    - series "arch, mm: consolidate empty_zero_page", v3. (4)
-      - 8889b5577021 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn() (0/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 77b1fafbf96b "mm: rename my_zero_pfn() to zero_pfn() (1/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 6c77202608d0 "arch, mm: consolidate empty_zero_page (2/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - 5a79f44b654d "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE() (3/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-    - e276b2190514 "selftests/mm: remove duplicate include of unistd.h"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
-    - 74741f1f87dc "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260207081613.588598-6-vernon2gm@gmail.com
-    - 038ea162f3af "mm: make ref_unless functions unless_zero only"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260206133328.426921-1-gladyshev.ilya1@h-partners.com
-    - 27cdc5679b8e "mm/mmu_notifiers: use hlist_for_each_entry_srcu() for SRCU list traversal"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260204080937.2472-1-lirongqing@baidu.com
-    - dc036fbd1a31 "mm/page_idle.c: remove redundant mmu notifier in aging code"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
-    - a499b92a4d6e "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260202-zswap-syncio-cleanup-v1-1-86bb24a64521@tencent.com
-    - b03569c1eaa6 "sparc: use vmemmap_populate_hugepages for vmemmap_populate"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260201063532.44807-2-pilgrimtao@gmail.com
-    - 8a365510cf05 "mm: convert vmemmap_p?d_populate() to static functions"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260201063532.44807-3-pilgrimtao@gmail.com
-    - series "mm/kmemleak: Improve scan_should_stop() implementation". (2)
-      - 9db300e51ce1 "mm/kmemleak: remove unreachable return statement in scan_should_stop() (0/2)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130093729.2045858-2-zhongqiu.han@oss.qualcomm.com
-      - c13a301e1229 "mm/kmemleak: use PF_KTHREAD flag to detect kernel threads (1/2)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260130093729.2045858-3-zhongqiu.han@oss.qualcomm.com
-- mm-new: 91 -> 7 commits
-  - series: 8 (57) -> 1 (3)
-    - no role, nobody: 8 -> 3 commits
-    - no role, no role : 13 -> 1 commits
-    - no role, reviewer: 6 -> 0 commits
-    - no role, maintainer: 16 -> 1 commits
-    - reviewer, nobody: 1 -> 0 commits
-    - maintainer, nobody: 34 -> 1 commits
-    - maintainer, maintainer: 13 -> 1 commits
+- mm-new: 7 -> 9 commits
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, nobody: 3 -> 2 commits
+    - no role, no role : 1 -> 2 commits
+    - no role, reviewer: 0 -> 2 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, no role : 0 -> 1 commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
+    - 18d2e8531bfa "mm/mmu_gather: replace IPI with synchronize_rcu() when batch allocation fails"
+      - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [1]
+      - Link: https://lore.kernel.org/linux-mm/20260202150957.GD1282955@noisy.programming.kicks-ass.net/
+      - Link: https://lore.kernel.org/linux-mm/dfdfeac9-5cd5-46fc-a5c1-9ccf9bd3502a@intel.com/
+      - Link: https://lore.kernel.org/linux-mm/bc489455-bb18-44dc-8518-ae75abda6bec@kernel.org/
+      - Link: https://lkml.kernel.org/r/20260224142101.20500-1-lance.yang@linux.dev
+    - df67d0ffeca7 "mm: introduce a new page type for page pool in page type"
+      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
+  - changed commits
+    - 6cfd1536a057 "mm: vmalloc: streamline vmalloc memory accounting"
+      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
+      - added "Reviewed-by: Uladzislau Rezki (Sony) <urezki@gmail.com>"
+      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
+      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+      - dropped "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
+      - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
+    - 8e5b1d2d6606 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
+      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
+      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+      - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
     - series "mm: vmscan: add PID and cgroup ID to vmscan tracepoints", v7. (3)
-      - 84ef9c26f7d6 "tracing: add __event_in_*irq() helpers (0/3)"
+      - f8ade75c5853 "tracing: add __event_in_*irq() helpers (0/3)"
+        - added "Reviewed-by: Shakeel Butt <shakeel.butt@linux.dev>"
+        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
         - Link: https://lkml.kernel.org/r/20260223171544.4750-1-tballasi@linux.microsoft.com
         - Link: https://lore.kernel.org/all/20251229132942.31a2b583@gandalf.local.home/
         - Link: https://lkml.kernel.org/r/20260223171544.4750-2-tballasi@linux.microsoft.com
-      - ebe433020729 "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
+      - 7a61975a2850 "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
+        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
         - Link: https://lkml.kernel.org/r/20260223171544.4750-3-tballasi@linux.microsoft.com
-      - 2e28a3d5b23c "mm: vmscan: add PIDs to vmscan tracepoints (2/3)"
-        - Link: https://lkml.kernel.org/r/20260223171544.4750-4-tballasi@linux.microsoft.com
-  - changed commits
-    - 40e65d4bf80b "mm: vmalloc: streamline vmalloc memory accounting"
-      - added "Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org"
-      - added "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - dropped "Link: https://lkml.kernel.org/r/20260220191035.3703800-1-hannes@cmpxchg.org"
-      - dropped "Cc: Uladzislau Rezki <urezki@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-    - 47772e0a26ee "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
-      - added "Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org"
-      - added "Reviewed-by: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Link: https://lkml.kernel.org/r/20260220191035.3703800-2-hannes@cmpxchg.org"
-      - dropped "Cc: Uladzislau Rezki <urezki@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 23 -> 29 commits
-  - series: 3 (11) -> 3 (11) (no change)
-    - no role, nobody: 9 -> 14 commits
+- mm-nonmm-unstable: 29 -> 27 commits
+  - series: 3 (11) -> 2 (9)
+    - no role, nobody: 14 -> 14 commits (no change)
     - no role, no role : 10 -> 10 commits (no change)
-    - no role, maintainer: 3 -> 4 commits
+    - no role, maintainer: 4 -> 2 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
   - new commits
-    - 35d463e7cda3 "kernel/panic: allocate taint string buffer dynamically"
-      - Link: https://lkml.kernel.org/r/20260222140804.22225-1-rioo.tsukatsukii@gmail.com
-    - 91938d899dc2 "kernel/panic: mark init_taint_buf as __initdata and panic instead of warning in alloc_taint_buf()"
-      - Link: https://lkml.kernel.org/r/20260223035914.4033-1-rioo.tsukatsukii@gmail.com
-    - 11c602617822 "exit: kill unnecessary thread_group_leader() checks in exit_notify() and do_notify_parent()"
-      - Link: https://lkml.kernel.org/r/aZsfeegKZPZZszJh@redhat.com
-    - 6863885e86b0 "do_notify_parent: sanitize the valid_signal() checks"
-      - Link: https://lkml.kernel.org/r/aZsfg0Y055yuAvsq@redhat.com
-    - 0379d59e23ee "complete_signal: kill always-true "core_state || !SIGNAL_GROUP_EXIT" check"
-      - Link: https://lkml.kernel.org/r/aZsfkDhnqJ4s1oTs@redhat.com
-    - eb3fc4c75a6a "fork: replace simple_strtoul with kstrtoul in coredump_filter_setup"
-      - Link: https://lkml.kernel.org/r/20251215142152.4082-2-thorsten.blum@linux.dev
+    - e3c13395d2fe "fork: zero vmap stack using clear_pages() instead of memset()"
+      - Link: https://lkml.kernel.org/r/20260224-mm-fork-clear-pages-v1-1-184c65a72d49@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/dpnwsp7dl4535rd7qmszanw6u5an2p74uxfex4dh53frpb7pu3@2bnjjavjrepe/
+      - Link: https://lore.kernel.org/20240311164638.2015063-7-pasha.tatashin@soleen.com

@@ -2,24 +2,22 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-  - full commits list
-      - 72409c2c1b97 "mm: memfd_luo: preserve file seals" (1/2)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260216185946.1215770-3-pratyush@kernel.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 2 total, 1 (2) series, 0 non-series commits
-  - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
+      - 7f5dc3d4ec23 "mm: memfd_luo: preserve file seals" (1/2)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260216185946.1215770-3-pratyush@kernel.org
     - series "Make KHO Stateless", v9. (2 commits)
-      - 729df2d429d5 "kho: adopt radix tree for preserved memory tracking" (0/2)
+      - 33f0d33fb32d "kho: adopt radix tree for preserved memory tracking" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
-      - 33225fd1b715 "kho: remove finalize state and clients" (1/2)
+      - 957a3fab8811 "kho: remove finalize state and clients" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

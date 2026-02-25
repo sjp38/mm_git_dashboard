@@ -1,33 +1,23 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - dd085fe9a8eb "mm: thp: deny THP for files on anonymous inodes"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://syzkaller.appspot.com/bug?extid=33a04338019ac7e43a44
+      - Link: https://lore.kernel.org/linux-mm/CAEvNRgHegcz3ro35ixkDw39ES8=U6rs6S7iP0gkR9enr7HoGtA@mail.gmail.com
+      - Link: https://lkml.kernel.org/r/20260214001535.435626-1-kartikey406@gmail.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 5 commits
-  - series: 0 (0) -> 1 (4)
-    - no role, reviewer: 0 -> 5 commits
-  - new commits
-    - series "Improve khugepaged scan logic", v8. (4)
-      - c45f9d3ad2cc "mm: khugepaged: add trace_mm_khugepaged_scan event (0/4)"
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-2-vernon2gm@gmail.com
-      - 28e31b1e07b5 "mm: khugepaged: refine scan progress number (1/4)"
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-3-vernon2gm@gmail.com
-      - 80f6f56d9fea "mm: khugepaged: skip lazy-free folios (3/4)"
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-5-vernon2gm@gmail.com
-  - changed commits
-    - series "arch, mm: consolidate empty_zero_page", v3. (4)
-      - 77b1fafbf96b "mm: rename my_zero_pfn() to zero_pfn() (1/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-    - 74741f1f87dc "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260207081613.588598-6-vernon2gm@gmail.com
-- mm-new: 2 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, reviewer: 2 -> 0 commits
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

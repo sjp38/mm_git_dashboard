@@ -1,8 +1,10 @@
-v7.0-rc1-109-gd501d4b5628db
+v7.0-rc1-114-g957a3fab8811b
 mm-vmalloc-streamline-vmalloc-memory-accounting.patch
 mm-memcontrol-switch-to-native-NR_VMALLOC-vmstat-cou.patch
 tracing-add-__event_in_-irq-helpers.patch
 mm-vmscan-add-cgroup-IDs-to-vmscan-tracepoints.patch
 mm-vmscan-add-PIDs-to-vmscan-tracepoints.patch
+mm-mmu_gather-replace-IPI-with-synchronize_rcu-when-.patch
+mm-introduce-a-new-page-type-for-page-pool-in-page-t.patch
 arm64-mm-fix-pass-user-prot-to-ioremap_prot-in-gener.patch
 mm-vmscan-avoid-false-positive-Wuninitialized-warnin.patch

@@ -1,20 +1,15 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
+- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - changed commits
-    - 61421a847fcd "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260219063506.545148-1-sgsu.park@samsung.com
-- mm-new: 1 -> 0 commits
+    - no role, nobody: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

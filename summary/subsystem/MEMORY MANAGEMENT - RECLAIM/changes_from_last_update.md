@@ -1,41 +1,24 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
+- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 4 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 2 commits
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 1 commits
-  - new commits
-    - series "Improve khugepaged scan logic", v8. (4)
-      - 2e713dee5cd1 "mm: add folio_test_lazyfree helper (2/4)"
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-4-vernon2gm@gmail.com
-  - changed commits
-    - c3f575a4c3b7 "mm: move pgscan, pgsteal, pgrefill to node stats"
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
-    - series "mm, swap: swap table phase III: remove swap_map", v3. (12)
-      - a0f6c3e56ad4 "mm/workingset: leave highest bits empty for anon shadow (4/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-5-f4e34be021a7@tencent.com
-    - 160f46e7f920 "mm: remove '!root_reclaim' checking in should_abort_scan()"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260212032111.408865-1-zhaoyang.huang@unisoc.com
-- mm-new: 4 -> 2 commits
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
-  - new commits
+    - no role, nobody: 2 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
     - series "mm: vmscan: add PID and cgroup ID to vmscan tracepoints", v7. (3)
-      - ebe433020729 "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
+      - 7a61975a2850 "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
+        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
         - Link: https://lkml.kernel.org/r/20260223171544.4750-3-tballasi@linux.microsoft.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

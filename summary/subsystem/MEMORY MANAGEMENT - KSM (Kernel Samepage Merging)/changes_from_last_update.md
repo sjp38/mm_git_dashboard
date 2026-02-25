@@ -1,25 +1,15 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
+- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, no role : 0 -> 2 commits
-  - changed commits
-    - series "KSM: Optimizations for rmap_walk_ksm", v3. (2)
-      - 06e7403b1c57 "ksm: initialize the addr only once in rmap_walk_ksm (0/2)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260212192820223O_r2NQzSEPG_C56cs-z4l@zte.com.cn
-        - Link: https://lkml.kernel.org/r/20260212192932941MSsJEAyoRW4YdLBN7_myn@zte.com.cn
-      - bc2d607ffb2d "ksm: optimize rmap_walk_ksm by passing a suitable address range (1/2)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

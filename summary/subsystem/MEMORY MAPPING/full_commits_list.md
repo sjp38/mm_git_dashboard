@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 61421a847fcd "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
+    - 62423a49931a "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260219063506.545148-1-sgsu.park@samsung.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

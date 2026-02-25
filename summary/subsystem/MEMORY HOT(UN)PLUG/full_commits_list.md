@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - c78a77a9531a "mm: name the anonymous MMOP enum as enum mmop"
+    - 9021fb41097f "mm: name the anonymous MMOP enum as enum mmop"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net

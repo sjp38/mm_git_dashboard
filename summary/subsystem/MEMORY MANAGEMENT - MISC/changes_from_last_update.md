@@ -1,41 +1,24 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
+- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 5 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 3 commits
-    - no role, maintainer: 0 -> 1 commits
+- mm-unstable: 5 -> 6 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
   - changed commits
-    - ce1d1f360254 "mm/fadvise: validate offset in generic_fadvise"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
-      - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - 76e13d60fc92 "selftests/mm: fix soft-dirty kselftest supported check"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260218184210.206466-1-audra@redhat.com
-    - a00631669b3a "selftests/mm: skip migration tests if NUMA is unavailable"
-      - branch: mm-new -> mm-unstable
-      - added "Fixes: 0c2d08728470 ("mm: add selftests for migration entries")"
-      - dropped "Fixes: 0c2d08728470b ("mm: add selftests for migration entries")"
-      - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
-    - e276b2190514 "selftests/mm: remove duplicate include of unistd.h"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
-    - dc036fbd1a31 "mm/page_idle.c: remove redundant mmu notifier in aging code"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
-- mm-new: 5 -> 0 commits
+    - series "Make KHO Stateless", v9. (2)
+      - 957a3fab8811 "kho: remove finalize state and clients (1/2)"
+        - branch: mm-nonmm-unstable -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 3 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-nonmm-unstable: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, maintainer: 1 -> 0 commits

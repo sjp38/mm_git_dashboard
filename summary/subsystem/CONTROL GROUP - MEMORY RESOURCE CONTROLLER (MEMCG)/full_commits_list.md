@@ -6,17 +6,17 @@
   - author/reviewer role stat
     - no role, maintainer: 4 commits
   - full commits list
-    - 4ef04f427702 "mm, memcg: optimize stat output for 11% sys time reduction"
+    - ced90f1319bb "mm, memcg: optimize stat output for 11% sys time reduction"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260123150108.43443-2-wujianyue000@gmail.com
-    - c3f575a4c3b7 "mm: move pgscan, pgsteal, pgrefill to node stats"
+    - 0e1026f2d326 "mm: move pgscan, pgsteal, pgrefill to node stats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
-    - 4dcccd15d074 "memcg: consolidate private id refcount get/put helpers"
+    - 7b155d693ad6 "memcg: consolidate private id refcount get/put helpers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260213-memcg-privid-v1-1-d8cb7afcf831@tencent.com
     - series "mm: zswap: add per-memcg stat for incompressible pages", v3. (2 commits)
-      - c708b2465fe3 "mm: zswap: add per-memcg stat for incompressible pages" (0/2)
+      - fc0efad40258 "mm: zswap: add per-memcg stat for incompressible pages" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260213071827.5688-1-jiayuan.chen@linux.dev
         - Link: https://lkml.kernel.org/r/20260213071827.5688-2-jiayuan.chen@linux.dev
@@ -25,7 +25,7 @@
   - author/reviewer role stat
     - maintainer, maintainer: 1 commits
   - full commits list
-    - 47772e0a26ee "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+    - 8e5b1d2d6606 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

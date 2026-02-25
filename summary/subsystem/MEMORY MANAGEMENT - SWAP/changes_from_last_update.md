@@ -1,61 +1,17 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
+- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 14 commits
-  - series: 0 (0) -> 1 (12)
-    - no role, maintainer: 0 -> 1 commits
+- mm-unstable: 14 -> 14 commits (no change)
+  - series: 1 (12) -> 1 (12) (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 0 -> 12 commits
-  - changed commits
-    - series "mm, swap: swap table phase III: remove swap_map", v3. (12)
-      - d6a0a28d4b6d "mm, swap: protect si->swap_file properly and use as a mount indicator (0/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-0-f4e34be021a7@tencent.com
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-1-f4e34be021a7@tencent.com
-      - 9db8cc33e5ac "mm, swap: clean up swapon process and locking (1/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-2-f4e34be021a7@tencent.com
-      - 67160ec45fbb "mm, swap: remove redundant arguments and locking for enabling a device (2/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-3-f4e34be021a7@tencent.com
-      - 22986f7f1ea0 "mm, swap: consolidate bad slots setup and make it more robust (3/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-4-f4e34be021a7@tencent.com
-      - a0f6c3e56ad4 "mm/workingset: leave highest bits empty for anon shadow (4/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-5-f4e34be021a7@tencent.com
-      - 76435aef337e "mm, swap: implement helpers for reserving data in the swap table (5/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-6-f4e34be021a7@tencent.com
-      - 5d5e87f4ba7e "mm, swap: mark bad slots in swap table directly (6/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-7-f4e34be021a7@tencent.com
-      - d0d9070ce063 "mm, swap: simplify swap table sanity range check (7/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-8-f4e34be021a7@tencent.com
-      - ec992faf9548 "mm, swap: use the swap table to track the swap count (8/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-9-f4e34be021a7@tencent.com
-      - 6544b063b955 "mm-swap-use-the-swap-table-to-track-the-swap-count-fix (9/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/aZWuLZi-vYi3vAWe@KASONG-MC4
-      - afaa152bdcf4 "mm, swap: no need to truncate the scan border (10/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-10-f4e34be021a7@tencent.com
-      - 9ef0e8fff8a2 "mm, swap: simplify checking if a folio is swapped (11/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-11-f4e34be021a7@tencent.com
-    - 9591adbe17c7 "mm, swap: no need to clear the shadow explicitly"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-12-f4e34be021a7@tencent.com
-- mm-new: 13 -> 0 commits
-  - series: 1 (12) -> 0 (0)
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, maintainer: 12 -> 0 commits
+    - maintainer, maintainer: 12 -> 12 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

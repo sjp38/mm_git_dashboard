@@ -6,10 +6,10 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - 1de80c790c97 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+    - 0db1b3a671f4 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
-      - 77b1fafbf96b "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - e8cd42f516b3 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,24 +1,30 @@
 - baseline: v7.0-rc1
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-stable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 49bc9250a160 "mm: change vma_alloc_folio_noprof() macro to inline function"
+    - eb9549346f75 "mm: change vma_alloc_folio_noprof() macro to inline function"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
-    - 6ed485e14517 "mm/kfence: fix KASAN hardware tag faults during late enablement"
+    - d155aab90fff "mm/kfence: fix KASAN hardware tag faults during late enablement"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260220144940.2779209-1-glider@google.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - bca5e3bf39fe "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+    - 7822efd295ef "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - df67d0ffeca7 "mm: introduce a new page type for page pool in page type"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

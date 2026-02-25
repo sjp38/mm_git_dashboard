@@ -8,49 +8,49 @@
     - maintainer, nobody: 1 commits
     - maintainer, maintainer: 12 commits
   - full commits list
-    - 1a4cf03ef4ee "mm, swap: speed up hibernation allocation and writeout"
+    - 3d386e07971f "mm, swap: speed up hibernation allocation and writeout"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260216-hibernate-perf-v4-1-1ba9f0bf1ec9@tencent.com
       - Link: https://lore.kernel.org/linux-mm/8b4bdcfa-ce3f-4e23-839f-31367df7c18f@gmx.de/ [1]
     - series "mm, swap: swap table phase III: remove swap_map", v3. (12 commits)
-      - d6a0a28d4b6d "mm, swap: protect si->swap_file properly and use as a mount indicator" (0/12)
+      - 521e7d92d651 "mm, swap: protect si->swap_file properly and use as a mount indicator" (0/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-0-f4e34be021a7@tencent.com
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-1-f4e34be021a7@tencent.com
-      - 9db8cc33e5ac "mm, swap: clean up swapon process and locking" (1/12)
+      - 197fae1bc68d "mm, swap: clean up swapon process and locking" (1/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-2-f4e34be021a7@tencent.com
-      - 67160ec45fbb "mm, swap: remove redundant arguments and locking for enabling a device" (2/12)
+      - a1a8b57ded3c "mm, swap: remove redundant arguments and locking for enabling a device" (2/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-3-f4e34be021a7@tencent.com
-      - 22986f7f1ea0 "mm, swap: consolidate bad slots setup and make it more robust" (3/12)
+      - aeaad8765833 "mm, swap: consolidate bad slots setup and make it more robust" (3/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-4-f4e34be021a7@tencent.com
-      - a0f6c3e56ad4 "mm/workingset: leave highest bits empty for anon shadow" (4/12)
+      - 93ee286cd0d0 "mm/workingset: leave highest bits empty for anon shadow" (4/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-5-f4e34be021a7@tencent.com
-      - 76435aef337e "mm, swap: implement helpers for reserving data in the swap table" (5/12)
+      - 2f43dd99a17a "mm, swap: implement helpers for reserving data in the swap table" (5/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-6-f4e34be021a7@tencent.com
-      - 5d5e87f4ba7e "mm, swap: mark bad slots in swap table directly" (6/12)
+      - a81cbcaeef15 "mm, swap: mark bad slots in swap table directly" (6/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-7-f4e34be021a7@tencent.com
-      - d0d9070ce063 "mm, swap: simplify swap table sanity range check" (7/12)
+      - 205a622145c3 "mm, swap: simplify swap table sanity range check" (7/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-8-f4e34be021a7@tencent.com
-      - ec992faf9548 "mm, swap: use the swap table to track the swap count" (8/12)
+      - 4c273a4c4d83 "mm, swap: use the swap table to track the swap count" (8/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-9-f4e34be021a7@tencent.com
-      - 6544b063b955 "mm-swap-use-the-swap-table-to-track-the-swap-count-fix" (9/12)
+      - 5cbe1d92580e "mm-swap-use-the-swap-table-to-track-the-swap-count-fix" (9/12)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/aZWuLZi-vYi3vAWe@KASONG-MC4
-      - afaa152bdcf4 "mm, swap: no need to truncate the scan border" (10/12)
+      - d320013d9daf "mm, swap: no need to truncate the scan border" (10/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-10-f4e34be021a7@tencent.com
-      - 9ef0e8fff8a2 "mm, swap: simplify checking if a folio is swapped" (11/12)
+      - 4f839e8caf81 "mm, swap: simplify checking if a folio is swapped" (11/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-11-f4e34be021a7@tencent.com
-    - 9591adbe17c7 "mm, swap: no need to clear the shadow explicitly"
+    - 6635295d6b90 "mm, swap: no need to clear the shadow explicitly"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-12-f4e34be021a7@tencent.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

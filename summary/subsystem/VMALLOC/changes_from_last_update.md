@@ -1,17 +1,9 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
+- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - bf16641da830 "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
-      - added "Acked-by: SeongJae Park <sj@kernel.org>"
-      - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
-      - dropped "Cc: Christoph Hellwig <hch@infradead.org>"
-      - dropped "Cc: SeongJae Park <sj@kernel.org>"
-      - Link: https://lkml.kernel.org/r/ff48283b-be21-7f9a-d616-e303a4a1ebe6@redhat.com
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
@@ -21,18 +13,17 @@
     - no role, no role : 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - 40e65d4bf80b "mm: vmalloc: streamline vmalloc memory accounting"
-      - added "Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org"
-      - added "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - dropped "Link: https://lkml.kernel.org/r/20260220191035.3703800-1-hannes@cmpxchg.org"
-      - dropped "Cc: Uladzislau Rezki <urezki@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-    - 47772e0a26ee "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
-      - added "Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org"
+    - 6cfd1536a057 "mm: vmalloc: streamline vmalloc memory accounting"
+      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
+      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
       - added "Reviewed-by: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Link: https://lkml.kernel.org/r/20260220191035.3703800-2-hannes@cmpxchg.org"
-      - dropped "Cc: Uladzislau Rezki <urezki@gmail.com>"
+      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+      - dropped "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
+      - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
+    - 8e5b1d2d6606 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
+      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
+      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

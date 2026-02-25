@@ -1,84 +1,97 @@
 - baseline: v7.0-rc1
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 49bc9250a160 "mm: change vma_alloc_folio_noprof() macro to inline function"
+    - eb9549346f75 "mm: change vma_alloc_folio_noprof() macro to inline function"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 13 total, 1 (5) series, 8 non-series commits
+- mm-unstable: 14 total, 1 (5) series, 9 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 4 commits
     - no role, reviewer: 2 commits
     - no role, maintainer: 3 commits
     - reviewer, nobody: 1 commits
+    - maintainer, nobody: 1 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - c3f575a4c3b7 "mm: move pgscan, pgsteal, pgrefill to node stats"
+    - 0e1026f2d326 "mm: move pgscan, pgsteal, pgrefill to node stats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
-    - b7f4087c4a83 "mm: fix typo in the comment of mod_zone_state()"
+    - 746c4e08eee1 "mm: fix typo in the comment of mod_zone_state()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260219234407.3261196-1-mssola@mssola.com
-      - ec992faf9548 "mm, swap: use the swap table to track the swap count" (8/12)
+      - 4c273a4c4d83 "mm, swap: use the swap table to track the swap count" (8/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-9-f4e34be021a7@tencent.com
-    - 57b97b4ee02c "mm: improve RSS counter approximation accuracy for proc interfaces"
+    - 0acac6604c1c "mm: improve RSS counter approximation accuracy for proc interfaces"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/lkml/20250331223516.7810-2-sweettea-kernel@dorminy.me/ # [1]
       - Link: https://lkml.kernel.org/r/20260217161006.1105611-4-mathieu.desnoyers@efficios.com
-    - c78a77a9531a "mm: name the anonymous MMOP enum as enum mmop"
+    - 9021fb41097f "mm: name the anonymous MMOP enum as enum mmop"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
-      - 8889b5577021 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
+      - 6c6664b9eff0 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 77b1fafbf96b "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - e8cd42f516b3 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 6c77202608d0 "arch, mm: consolidate empty_zero_page" (2/4)
+      - d38cc9457dd2 "arch, mm: consolidate empty_zero_page" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - 5a79f44b654d "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
+      - 94f63170057f "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-    - 038ea162f3af "mm: make ref_unless functions unless_zero only"
+    - b13e7bfe52ca "mm: make ref_unless functions unless_zero only"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260206133328.426921-1-gladyshev.ilya1@h-partners.com
-    - 27cdc5679b8e "mm/mmu_notifiers: use hlist_for_each_entry_srcu() for SRCU list traversal"
+    - d7c61889ea1b "mm/mmu_notifiers: use hlist_for_each_entry_srcu() for SRCU list traversal"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260204080937.2472-1-lirongqing@baidu.com
-    - 8a365510cf05 "mm: convert vmemmap_p?d_populate() to static functions"
+    - adcb470fde80 "mm: convert vmemmap_p?d_populate() to static functions"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260201063532.44807-3-pilgrimtao@gmail.com
-    - d501d4b5628d "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
+    - 9e6301b1f386 "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
+    - 4ac6dd7136f0 "mm-centralizefix-comments-about-compound_mapcount-in-new-sync_with_folio_pmd_zap-fix"
+      - Authored by a maintainer, reviewed by nobody
+- mm-new: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 40e65d4bf80b "mm: vmalloc: streamline vmalloc memory accounting"
+    - 6cfd1536a057 "mm: vmalloc: streamline vmalloc memory accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-    - 9de2f56afb25 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
+    - df67d0ffeca7 "mm: introduce a new page type for page pool in page type"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
+    - 4bb58747a381 "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260130073807.99474-1-tujinjiang@huawei.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-nonmm-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 2efdae604271 "unshare: fix nsproxy leak in ksys_unshare() on set_cred_ucounts() failure"
+    - 7d661899c3c9 "unshare: fix nsproxy leak in ksys_unshare() on set_cred_ucounts() failure"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260213193959.2556730-1-mge@meta.com
-    - eb3fc4c75a6a "fork: replace simple_strtoul with kstrtoul in coredump_filter_setup"
+    - 1b4705a67d60 "fork: replace simple_strtoul with kstrtoul in coredump_filter_setup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20251215142152.4082-2-thorsten.blum@linux.dev
+    - e3c13395d2fe "fork: zero vmap stack using clear_pages() instead of memset()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260224-mm-fork-clear-pages-v1-1-184c65a72d49@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/dpnwsp7dl4535rd7qmszanw6u5an2p74uxfex4dh53frpb7pu3@2bnjjavjrepe/
+      - Link: https://lore.kernel.org/20240311164638.2015063-7-pasha.tatashin@soleen.com

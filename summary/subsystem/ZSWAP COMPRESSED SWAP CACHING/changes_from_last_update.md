@@ -1,24 +1,15 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
+- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 2 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, maintainer: 0 -> 2 commits
-  - changed commits
-    - series "mm: zswap: add per-memcg stat for incompressible pages", v3. (2)
-      - c44ffebf38b9 "selftests/cgroup: add test for zswap incompressible pages (1/2)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260213071827.5688-3-jiayuan.chen@linux.dev
-    - a499b92a4d6e "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260202-zswap-syncio-cleanup-v1-1-86bb24a64521@tencent.com
-- mm-new: 2 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, maintainer: 2 -> 0 commits
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

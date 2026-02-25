@@ -1,12 +1,12 @@
 - baseline: v7.0-rc1
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 7dd859e3fb0b "mm: fix NULL NODE_DATA dereference for memoryless nodes on boot"
+    - a4ab97e34bb6 "mm: fix NULL NODE_DATA dereference for memoryless nodes on boot"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260222115702.3659-1-ming.lei@redhat.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 4 total, 1 (4) series, 0 non-series commits
   - author/reviewer role stat
@@ -14,17 +14,17 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
-      - 8889b5577021 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
+      - 6c6664b9eff0 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 77b1fafbf96b "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - e8cd42f516b3 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 6c77202608d0 "arch, mm: consolidate empty_zero_page" (2/4)
+      - d38cc9457dd2 "arch, mm: consolidate empty_zero_page" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - 5a79f44b654d "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
+      - 94f63170057f "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -2,34 +2,31 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 5 total, 0 (0) series, 5 non-series commits
+- mm-unstable: 6 total, 0 (1) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 3 commits
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 2 commits
   - full commits list
-    - ce1d1f360254 "mm/fadvise: validate offset in generic_fadvise"
+    - 6e11f88bb3d9 "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - 76e13d60fc92 "selftests/mm: fix soft-dirty kselftest supported check"
+    - 4ab8e7a06bf4 "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260218184210.206466-1-audra@redhat.com
-    - a00631669b3a "selftests/mm: skip migration tests if NUMA is unavailable"
+    - fdabd7ad612a "selftests/mm: skip migration tests if NUMA is unavailable"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
-    - e276b2190514 "selftests/mm: remove duplicate include of unistd.h"
+    - a87b6ba3403e "selftests/mm: remove duplicate include of unistd.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
-    - dc036fbd1a31 "mm/page_idle.c: remove redundant mmu notifier in aging code"
+    - 8dc1efbd8c97 "mm/page_idle.c: remove redundant mmu notifier in aging code"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-      - 33225fd1b715 "kho: remove finalize state and clients" (1/2)
+      - 957a3fab8811 "kho: remove finalize state and clients" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

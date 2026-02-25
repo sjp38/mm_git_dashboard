@@ -1,37 +1,22 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 0 -> 1 commits
-  - new commits
-    - 7dd859e3fb0b "mm: fix NULL NODE_DATA dereference for memoryless nodes on boot"
+  - changed commits
+    - a4ab97e34bb6 "mm: fix NULL NODE_DATA dereference for memoryless nodes on boot"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
       - Link: https://lkml.kernel.org/r/20260222115702.3659-1-ming.lei@redhat.com
+- mm-hotfixes-unstable: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 4 commits
-  - series: 0 (0) -> 1 (4)
-    - no role, reviewer: 0 -> 2 commits
-    - no role, maintainer: 0 -> 2 commits
-  - changed commits
-    - series "arch, mm: consolidate empty_zero_page", v3. (4)
-      - 8889b5577021 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn() (0/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 77b1fafbf96b "mm: rename my_zero_pfn() to zero_pfn() (1/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 6c77202608d0 "arch, mm: consolidate empty_zero_page (2/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - 5a79f44b654d "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE() (3/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-- mm-new: 4 -> 0 commits
-  - series: 1 (4) -> 0 (0)
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

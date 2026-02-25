@@ -1,22 +1,30 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
+- mm-hotfixes-stable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - changed commits
+    - eb9549346f75 "mm: change vma_alloc_folio_noprof() macro to inline function"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
+    - d155aab90fff "mm/kfence: fix KASAN hardware tag faults during late enablement"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260220144940.2779209-1-glider@google.com
+- mm-hotfixes-unstable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - bca5e3bf39fe "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-- mm-new: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - df67d0ffeca7 "mm: introduce a new page type for page pool in page type"
+      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

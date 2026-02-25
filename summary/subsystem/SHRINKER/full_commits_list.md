@@ -6,16 +6,16 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 43a8d4703d55 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
+    - 039403823572 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
       - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
   - full commits list
-      - ebe433020729 "mm: vmscan: add cgroup IDs to vmscan tracepoints" (1/3)
-        - Authored by no role player, reviewed by nobody
+      - 7a61975a2850 "mm: vmscan: add cgroup IDs to vmscan tracepoints" (1/3)
+        - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260223171544.4750-3-tballasi@linux.microsoft.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

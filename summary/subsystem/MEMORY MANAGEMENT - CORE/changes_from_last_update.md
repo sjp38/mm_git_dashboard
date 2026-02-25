@@ -1,86 +1,51 @@
-- baseline: v6.19-11773-g8bf22c33e7a17 -> v7.0-rc1
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - eb9549346f75 "mm: change vma_alloc_folio_noprof() macro to inline function"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 13 commits
-  - series: 0 (0) -> 1 (5)
-    - no role, nobody: 0 -> 2 commits
-    - no role, no role : 0 -> 4 commits
-    - no role, reviewer: 0 -> 2 commits
-    - no role, maintainer: 0 -> 3 commits
-    - reviewer, nobody: 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 1 commits
+- mm-unstable: 13 -> 14 commits
+  - series: 1 (5) -> 1 (5) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - reviewer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - d501d4b5628d "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
-      - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
+    - 4ac6dd7136f0 "mm-centralizefix-comments-about-compound_mapcount-in-new-sync_with_folio_pmd_zap-fix"
+- mm-new: 2 -> 3 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - df67d0ffeca7 "mm: introduce a new page type for page pool in page type"
+      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
   - changed commits
-    - c3f575a4c3b7 "mm: move pgscan, pgsteal, pgrefill to node stats"
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
-    - b7f4087c4a83 "mm: fix typo in the comment of mod_zone_state()"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260219234407.3261196-1-mssola@mssola.com
-    - series "mm, swap: swap table phase III: remove swap_map", v3. (12)
-      - ec992faf9548 "mm, swap: use the swap table to track the swap count (8/12)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-9-f4e34be021a7@tencent.com
-    - 57b97b4ee02c "mm: improve RSS counter approximation accuracy for proc interfaces"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/lkml/20250331223516.7810-2-sweettea-kernel@dorminy.me/ # [1]
-      - Link: https://lkml.kernel.org/r/20260217161006.1105611-4-mathieu.desnoyers@efficios.com
-    - c78a77a9531a "mm: name the anonymous MMOP enum as enum mmop"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
-      - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
-    - series "arch, mm: consolidate empty_zero_page", v3. (4)
-      - 8889b5577021 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn() (0/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 77b1fafbf96b "mm: rename my_zero_pfn() to zero_pfn() (1/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 6c77202608d0 "arch, mm: consolidate empty_zero_page (2/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - 5a79f44b654d "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE() (3/4)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-    - 038ea162f3af "mm: make ref_unless functions unless_zero only"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260206133328.426921-1-gladyshev.ilya1@h-partners.com
-    - 27cdc5679b8e "mm/mmu_notifiers: use hlist_for_each_entry_srcu() for SRCU list traversal"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260204080937.2472-1-lirongqing@baidu.com
-    - 8a365510cf05 "mm: convert vmemmap_p?d_populate() to static functions"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260201063532.44807-3-pilgrimtao@gmail.com
-- mm-new: 14 -> 2 commits
-  - series: 1 (5) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 5 -> 1 commits
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 4 -> 1 commits
-    - reviewer, nobody: 1 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
-  - changed commits
-    - 40e65d4bf80b "mm: vmalloc: streamline vmalloc memory accounting"
-      - added "Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org"
-      - added "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - dropped "Link: https://lkml.kernel.org/r/20260220191035.3703800-1-hannes@cmpxchg.org"
-      - dropped "Cc: Uladzislau Rezki <urezki@gmail.com>"
+    - 6cfd1536a057 "mm: vmalloc: streamline vmalloc memory accounting"
+      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
+      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
+      - added "Reviewed-by: Uladzislau Rezki (Sony) <urezki@gmail.com>"
+      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+      - dropped "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 1 -> 2 commits
+- mm-nonmm-unstable: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 2 commits
+    - no role, nobody: 0 -> 1 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
   - new commits
-    - eb3fc4c75a6a "fork: replace simple_strtoul with kstrtoul in coredump_filter_setup"
-      - Link: https://lkml.kernel.org/r/20251215142152.4082-2-thorsten.blum@linux.dev
+    - e3c13395d2fe "fork: zero vmap stack using clear_pages() instead of memset()"
+      - Link: https://lkml.kernel.org/r/20260224-mm-fork-clear-pages-v1-1-184c65a72d49@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/dpnwsp7dl4535rd7qmszanw6u5an2p74uxfex4dh53frpb7pu3@2bnjjavjrepe/
+      - Link: https://lore.kernel.org/20240311164638.2015063-7-pasha.tatashin@soleen.com
