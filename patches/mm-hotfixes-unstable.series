@@ -3,3 +3,6 @@ mm-allow-__GFP_RETRY_MAYFAIL-in-vmalloc.patch
 mm-memfd_luo-always-make-all-folios-uptodate.patch
 mm-memfd_luo-always-dirty-all-folios.patch
 mm-damon-core-clear-walk_control-on-inactive-context.patch
+mm-cma-move-put_page_testzero-out-of-VM_WARN_ON-in-c.patch
+Revert-ptdesc-remove-references-to-folios-from-__pag.patch
+tools-testing-fix-testing-vma-and-testing-radix-tree.patch

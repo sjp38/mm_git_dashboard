@@ -5,21 +5,55 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
+- mm-unstable: 4 -> 5 commits
+  - series: 0 (2) -> 0 (3)
     - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
   - changed commits
     - series "mm: vmscan: add PID and cgroup ID to vmscan tracepoints", v7. (3)
-      - 7a61975a2850 "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+      - 6a543e5d7c8b "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260223171544.4750-3-tballasi@linux.microsoft.com
+- mm-new: 2 -> 15 commits
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 2 commits
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 0 -> 6 commits
+    - reviewer, no role : 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 3 commits
+  - new commits
+    - 24a2a96fa959 "mm: workingset: use folio_lruvec() in workingset_refault()"
+      - Link: https://lkml.kernel.org/r/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772005110.git.zhengqi.arch@bytedance.com
+    - 926374d0e3ce "mm: rename unlock_page_lruvec_irq and its variants"
+      - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
+    - 5eec06d4e00b "mm: vmscan: prepare for the refactoring the move_folios_to_lru()"
+      - Link: https://lkml.kernel.org/r/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772005110.git.zhengqi.arch@bytedance.com
+    - 9e3122f6ff1f "mm: vmscan: refactor move_folios_to_lru()"
+      - Link: https://lkml.kernel.org/r/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772005110.git.zhengqi.arch@bytedance.com
+    - cfd8fa90ce57 "mm: mglru: prevent memory cgroup release in mglru"
+      - Link: https://lkml.kernel.org/r/9d887662a9d39c425742dd8468e3123316bccfe3.1772005110.git.zhengqi.arch@bytedance.com
+    - 985f6b1d9f83 "mm: workingset: prevent memory cgroup release in lru_gen_eviction()"
+      - Link: https://lkml.kernel.org/r/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772005110.git.zhengqi.arch@bytedance.com
+    - 22e6d23c71ba "mm: workingset: prevent lruvec release in workingset_refault()"
+      - Link: https://lkml.kernel.org/r/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772005110.git.zhengqi.arch@bytedance.com
+    - dd511e65b984 "mm: workingset: prevent lruvec release in workingset_activation()"
+      - Link: https://lkml.kernel.org/r/c6130476affbba0a7d309a887c3df11e0167990b.1772005110.git.zhengqi.arch@bytedance.com
+    - 76b9fa5c09e1 "mm: do not open-code lruvec lock"
+      - Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772005110.git.zhengqi.arch@bytedance.com
+    - 868acb6d8e57 "mm: vmscan: prepare for reparenting traditional LRU folios"
+      - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772005110.git.zhengqi.arch@bytedance.com
+    - 697f2483cd96 "mm: vmscan: prepare for reparenting MGLRU folios"
+      - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772005110.git.zhengqi.arch@bytedance.com
+    - af7321b12be0 "mm: workingset: use lruvec_lru_size() to get the number of lru pages"
+      - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772005110.git.zhengqi.arch@bytedance.com
+    - e269c8c1d782 "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers"
+      - Link: https://lkml.kernel.org/r/9a0b6ba87112b2bf038ab65c47b6f16311b829cb.1772005110.git.zhengqi.arch@bytedance.com
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - c649a1cb337d "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

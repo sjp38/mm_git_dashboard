@@ -7,8 +7,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, nobody: 0 -> 2 commits
+  - new commits
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - c649a1cb337d "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+      - 799ffaf2e1d1 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

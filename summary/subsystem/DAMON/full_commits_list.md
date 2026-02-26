@@ -10,7 +10,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 5350f05fd613 "mm/damon/core: clear walk_control on inactive context in damos_walk()"
+    - 58fed8f2439e "mm/damon/core: clear walk_control on inactive context in damos_walk()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260224011102.56033-1-sj@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -18,10 +18,10 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - e233685c8f2b "mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold"
+    - 4c160e872099 "mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260203095400.2465255-1-qin.yuA@h3c.com
-    - 64ac72a62fbf "mm/damon: remove unused target param of get_scheme_score()"
+    - ac167e31d8d4 "mm/damon: remove unused target param of get_scheme_score()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260213145032.1740407-1-gutierrez.asier@huawei-partners.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

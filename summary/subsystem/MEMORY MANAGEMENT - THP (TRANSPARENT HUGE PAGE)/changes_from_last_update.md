@@ -1,23 +1,23 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - dd085fe9a8eb "mm: thp: deny THP for files on anonymous inodes"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://syzkaller.appspot.com/bug?extid=33a04338019ac7e43a44
-      - Link: https://lore.kernel.org/linux-mm/CAEvNRgHegcz3ro35ixkDw39ES8=U6rs6S7iP0gkR9enr7HoGtA@mail.gmail.com
-      - Link: https://lkml.kernel.org/r/20260214001535.435626-1-kartikey406@gmail.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 5 -> 5 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 926374d0e3ce "mm: rename unlock_page_lruvec_irq and its variants"
+      - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
+    - ec767776d405 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()"
+      - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772005110.git.zhengqi.arch@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

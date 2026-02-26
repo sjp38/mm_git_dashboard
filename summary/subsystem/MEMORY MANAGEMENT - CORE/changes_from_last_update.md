@@ -1,51 +1,61 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - eb9549346f75 "mm: change vma_alloc_folio_noprof() macro to inline function"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 4560bfdf9fdc "Revert "ptdesc: remove references to folios from __pagetable_ctor() and pagetable_dtor()""
+      - Link: https://lkml.kernel.org/r/20260225002434.2953895-1-axelrasmussen@google.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 14 commits
+- mm-unstable: 14 -> 15 commits
   - series: 1 (5) -> 1 (5) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
+    - no role, no role : 4 -> 5 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 4ac6dd7136f0 "mm-centralizefix-comments-about-compound_mapcount-in-new-sync_with_folio_pmd_zap-fix"
-- mm-new: 2 -> 3 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - df67d0ffeca7 "mm: introduce a new page type for page pool in page type"
-      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
   - changed commits
-    - 6cfd1536a057 "mm: vmalloc: streamline vmalloc memory accounting"
-      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
-      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Reviewed-by: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - dropped "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
+    - 27c8231a6f77 "mm: vmalloc: streamline vmalloc memory accounting"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
+- mm-new: 3 -> 8 commits
+  - series: 0 (0) -> 2 (5)
+    - no role, nobody: 0 -> 3 commits
+    - no role, no role : 1 -> 2 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, no role : 0 -> 1 commits
+  - new commits
+    - series "mm: arch/shstk: Common shadow stack mapping helper and VM_NOHUGEPAGE", v2. (5)
+      - 11e913fe0f95 "mm: introduce vm_mmap_shadow_stack() as a helper for VM_SHADOW_STACK mappings (0/5)"
+        - Link: https://lkml.kernel.org/r/20260225161404.3157851-1-catalin.marinas@arm.com
+        - Link: https://lkml.kernel.org/r/20260225161404.3157851-2-catalin.marinas@arm.com
+      - aa3df08e3ae6 "mm: do not map the shadow stack as THP (4/5)"
+        - Link: https://lkml.kernel.org/r/20260225161404.3157851-6-catalin.marinas@arm.com
+    - 697f2483cd96 "mm: vmscan: prepare for reparenting MGLRU folios"
+      - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772005110.git.zhengqi.arch@bytedance.com
+    - series "Fix KASAN support for KHO restored vmalloc regions". (2)
+      - 115c0eaa3e36 "mm/vmalloc: export clear_vm_uninitialized_flag() (0/2)"
+        - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
+        - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - c649a1cb337d "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+      - 799ffaf2e1d1 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
+  - changed commits
+    - 8125e7b9292d "mm: introduce a new page type for page pool in page type"
+      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 2 -> 3 commits
+- mm-nonmm-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - new commits
-    - e3c13395d2fe "fork: zero vmap stack using clear_pages() instead of memset()"
-      - Link: https://lkml.kernel.org/r/20260224-mm-fork-clear-pages-v1-1-184c65a72d49@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/dpnwsp7dl4535rd7qmszanw6u5an2p74uxfex4dh53frpb7pu3@2bnjjavjrepe/
-      - Link: https://lore.kernel.org/20240311164638.2015063-7-pasha.tatashin@soleen.com

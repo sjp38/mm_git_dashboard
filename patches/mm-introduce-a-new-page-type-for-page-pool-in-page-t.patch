@@ -35,6 +35,7 @@ Acked-by: David Hildenbrand <david@redhat.com>
 Acked-by: Zi Yan <ziy@nvidia.com>
 Acked-by: Vlastimil Babka <vbabka@suse.cz>
 Reviewed-by: Toke Høiland-Jørgensen <toke@redhat.com>
+Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>
 Cc: Alexei Starovoitov <ast@kernel.org>
 Cc: Andrew Lunn <andrew+netdev@lunn.ch>
 Cc: Baolin Wang <baolin.wang@linux.alibaba.com>
@@ -58,7 +59,6 @@ Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>
 Cc: Mark Bloch <mbloch@nvidia.com>
 Cc: Matthew Wilcox (Oracle) <willy@infradead.org>
 Cc: Michal Hocko <mhocko@suse.com>
-Cc: Mike Rapoport <rppt@kernel.org>
 Cc: Mina Almasry <almasrymina@google.com>
 Cc: Paolo Abeni <pabeni@redhat.com>
 Cc: Saeed Mahameed <saeedm@nvidia.com>
@@ -95,10 +95,10 @@ index 80f9fc10877ad..7d90d2485c787 100644
  				 */
  				page_pool_recycle_direct(pp_page_to_nmdesc(page)->pp,
 diff --git a/include/linux/mm.h b/include/linux/mm.h
-index 13336340612e2..0db764b3d6b84 100644
+index 83b5b5f506f33..3016c86ef2174 100644
 --- a/include/linux/mm.h
 +++ b/include/linux/mm.h
-@@ -4824,10 +4824,9 @@ int arch_lock_shadow_stack_status(struct task_struct *t, unsigned long status);
+@@ -4819,10 +4819,9 @@ int arch_lock_shadow_stack_status(struct task_struct *t, unsigned long status);
   * DMA mapping IDs for page_pool
   *
   * When DMA-mapping a page, page_pool allocates an ID (from an xarray) and
@@ -112,7 +112,7 @@ index 13336340612e2..0db764b3d6b84 100644
   * mistake a valid kernel pointer with any of the values we write into this
   * field.
   *
-@@ -4862,26 +4861,6 @@ int arch_lock_shadow_stack_status(struct task_struct *t, unsigned long status);
+@@ -4857,26 +4856,6 @@ int arch_lock_shadow_stack_status(struct task_struct *t, unsigned long status);
  #define PP_DMA_INDEX_MASK GENMASK(PP_DMA_INDEX_BITS + PP_DMA_INDEX_SHIFT - 1, \
  				  PP_DMA_INDEX_SHIFT)
  

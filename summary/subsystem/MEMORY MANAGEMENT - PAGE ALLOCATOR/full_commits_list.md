@@ -16,15 +16,26 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 7822efd295ef "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+    - 15e99ca5f889 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 4 total, 0 (1) series, 3 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, reviewer: 1 commits
+    - no role, maintainer: 2 commits
   - full commits list
-    - df67d0ffeca7 "mm: introduce a new page type for page pool in page type"
+    - 8125e7b9292d "mm: introduce a new page type for page pool in page type"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
+    - 926374d0e3ce "mm: rename unlock_page_lruvec_irq and its variants"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
+    - b0328fa09ec9 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772005110.git.zhengqi.arch@bytedance.com
+      - c649a1cb337d "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

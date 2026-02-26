@@ -5,23 +5,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 3 commits
-  - series: 0 (1) -> 1 (3)
+- mm-unstable: 3 -> 3 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 2 commits
-  - changed commits
-    - series "Make KHO Stateless", v9. (2)
-      - 33f0d33fb32d "kho: adopt radix tree for preserved memory tracking (0/2)"
-        - branch: mm-nonmm-unstable -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
-      - 957a3fab8811 "kho: remove finalize state and clients (1/2)"
-        - branch: mm-nonmm-unstable -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+    - no role, maintainer: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, maintainer: 2 -> 0 commits
+- mm-nonmm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)

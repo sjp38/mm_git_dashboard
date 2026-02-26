@@ -1,18 +1,10 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - changed commits
-    - c80f46ac228b "mm/damon/core: disallow non-power of two min_region_sz"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260214214124.87689-1-sj@kernel.org
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
-    - 5350f05fd613 "mm/damon/core: clear walk_control on inactive context in damos_walk()"
-      - Link: https://lkml.kernel.org/r/20260224011102.56033-1-sj@kernel.org
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)

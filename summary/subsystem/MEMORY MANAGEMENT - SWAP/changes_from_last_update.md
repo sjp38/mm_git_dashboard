@@ -10,8 +10,34 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 12 -> 12 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 9 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 0 -> 2 commits
+    - no role, maintainer: 0 -> 3 commits
+    - reviewer, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - new commits
+    - 926374d0e3ce "mm: rename unlock_page_lruvec_irq and its variants"
+      - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
+    - 39579114eb7c "mm: page_io: prevent memory cgroup release in page_io module"
+      - Link: https://lkml.kernel.org/r/7c3708358412fb02c482d0985feb5e9513a863ef.1772005110.git.zhengqi.arch@bytedance.com
+    - b36847e52810 "mm: swap: prevent lruvec release in lru_gen_clear_refs()"
+      - Link: https://lkml.kernel.org/r/986cd26227191a48a7c34a2a15812d361f4ebd53.1772005110.git.zhengqi.arch@bytedance.com
+    - b0328fa09ec9 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock"
+      - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772005110.git.zhengqi.arch@bytedance.com
+    - 868acb6d8e57 "mm: vmscan: prepare for reparenting traditional LRU folios"
+      - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772005110.git.zhengqi.arch@bytedance.com
+    - af7321b12be0 "mm: workingset: use lruvec_lru_size() to get the number of lru pages"
+      - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772005110.git.zhengqi.arch@bytedance.com
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - 2bb36e545f9c "mm: remove stray references to struct pagevec (0/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-0-716868cc2d11@columbia.edu
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-1-716868cc2d11@columbia.edu
+      - c649a1cb337d "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+      - 799ffaf2e1d1 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

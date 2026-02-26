@@ -1,145 +1,211 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 12 commits
+- mm-hotfixes-stable: 12 -> 12 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 3 commits
-    - no role, no role : 0 -> 3 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, nobody: 0 -> 3 commits
-    - maintainer, maintainer: 0 -> 1 commits
-  - changed commits
-    - 09833d99db36 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260213095410.1862978-1-glider@google.com
-    - eb9549346f75 "mm: change vma_alloc_folio_noprof() macro to inline function"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
-    - dd085fe9a8eb "mm: thp: deny THP for files on anonymous inodes"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://syzkaller.appspot.com/bug?extid=33a04338019ac7e43a44
-      - Link: https://lore.kernel.org/linux-mm/CAEvNRgHegcz3ro35ixkDw39ES8=U6rs6S7iP0gkR9enr7HoGtA@mail.gmail.com
-      - Link: https://lkml.kernel.org/r/20260214001535.435626-1-kartikey406@gmail.com
-    - f85b1c6af5bc "liveupdate: luo_file: remember retrieve() status"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260216132221.987987-1-pratyush@kernel.org
-    - 319d0bff22f3 "MAINTAINERS, mailmap: update e-mail address for Vlastimil Babka"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260217102151.10425-2-vbabka@kernel.org
-    - fdb24a820a58 "Squashfs: check metadata block offset is within range"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260217050955.138351-1-phillip@squashfs.org.uk
-    - c80f46ac228b "mm/damon/core: disallow non-power of two min_region_sz"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260214214124.87689-1-sj@kernel.org
-    - d155aab90fff "mm/kfence: fix KASAN hardware tag faults during late enablement"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260220144940.2779209-1-glider@google.com
-    - 079c24d56902 "mm/tracing: rss_stat: ensure curr is false from kthread context"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260219233708.1971199-1-kaleshsingh@google.com
-      - Link: https://perfetto.dev/ [1]
-    - a4ab97e34bb6 "mm: fix NULL NODE_DATA dereference for memoryless nodes on boot"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260222115702.3659-1-ming.lei@redhat.com
-    - 37a012c5c10c "mailmap: add entry for Daniele Alessandrelli"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260223170905.278956-1-daniele.alessandrelli@intel.com
-    - 410aed670cdd "MAINTAINERS: update Yosry Ahmed's email address"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260223160027.122307-1-yosry@kernel.org
-- mm-hotfixes-unstable: 15 -> 4 commits
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 5 -> 2 commits
-    - no role, no role : 4 -> 1 commits
-    - no role, reviewer: 1 -> 0 commits
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 3 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
+    - maintainer, nobody: 3 -> 3 commits (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 4 -> 7 commits
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 1 -> 5 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - 5350f05fd613 "mm/damon/core: clear walk_control on inactive context in damos_walk()"
-      - Link: https://lkml.kernel.org/r/20260224011102.56033-1-sj@kernel.org
+    - a0eeaa334ec7 "mm/cma: move put_page_testzero() out of VM_WARN_ON in cma_release()"
+      - Link: https://lkml.kernel.org/r/20260225031231.2352011-1-ziy@nvidia.com
+    - 4560bfdf9fdc "Revert "ptdesc: remove references to folios from __pagetable_ctor() and pagetable_dtor()""
+      - Link: https://lkml.kernel.org/r/20260225002434.2953895-1-axelrasmussen@google.com
+    - cf43ebb678aa "tools/testing: fix testing/vma and testing/radix-tree build"
+      - Link: https://lkml.kernel.org/r/20260225233111.2760752-1-rppt@kernel.org
+  - changed commits
+    - series "mm: memfd_luo: fixes for folio flag preservation". (2)
+      - 814166a27384 "mm: memfd_luo: always make all folios uptodate (0/2)"
+        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260223173931.2221759-2-pratyush@kernel.org
+      - b1a7faa7a434 "mm: memfd_luo: always dirty all folios (1/2)"
+        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260223173931.2221759-3-pratyush@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 94 -> 98 commits
-  - series: 9 (61) -> 10 (63)
-    - no role, nobody: 9 -> 9 commits (no change)
-    - no role, no role : 13 -> 13 commits (no change)
-    - no role, reviewer: 9 -> 9 commits (no change)
-    - no role, maintainer: 15 -> 18 commits
+- mm-unstable: 98 -> 104 commits
+  - series: 10 (63) -> 11 (66)
+    - no role, nobody: 9 -> 10 commits
+    - no role, no role : 13 -> 15 commits
+    - no role, reviewer: 9 -> 10 commits
+    - no role, maintainer: 18 -> 18 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 35 -> 36 commits
-    - maintainer, maintainer: 12 -> 12 commits (no change)
-  - new commits
-    - 4ac6dd7136f0 "mm-centralizefix-comments-about-compound_mapcount-in-new-sync_with_folio_pmd_zap-fix"
-    - 4af4c9ef3c41 "mm/hugetlb_vmemmap: update outdated comment"
-      - Link: https://lkml.kernel.org/r/20260224022840.1936-1-kexinsun@smail.nju.edu.cn
-  - changed commits
-    - 87dfc0161403 "kho: move alloc tag init to kho_init_{folio,pages}()"
-      - branch: mm-nonmm-unstable -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260213085914.2778107-1-pratyush@kernel.org
-    - series "Make KHO Stateless", v9. (2)
-      - 33f0d33fb32d "kho: adopt radix tree for preserved memory tracking (0/2)"
-        - branch: mm-nonmm-unstable -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
-      - 957a3fab8811 "kho: remove finalize state and clients (1/2)"
-        - branch: mm-nonmm-unstable -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-  - dropped commits
-    - 851f76d07c7d "mm/mmu_gather: define RCU version tlb_remove_table_one() in CONFIG_MMU_GATHER_RCU_TABLE_FREE"
-      - Link: https://lkml.kernel.org/r/20260222004512.839-1-richard.weiyang@gmail.com
-- mm-new: 7 -> 9 commits
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, nobody: 3 -> 2 commits
-    - no role, no role : 1 -> 2 commits
-    - no role, reviewer: 0 -> 2 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, nobody: 36 -> 36 commits (no change)
     - maintainer, no role : 0 -> 1 commits
-    - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 18d2e8531bfa "mm/mmu_gather: replace IPI with synchronize_rcu() when batch allocation fails"
+    - maintainer, maintainer: 12 -> 13 commits
+  - changed commits
+    - 27c8231a6f77 "mm: vmalloc: streamline vmalloc memory accounting"
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
+    - 6091e96c2cbf "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
+    - series "mm: vmscan: add PID and cgroup ID to vmscan tracepoints", v7. (3)
+      - 380792a78a29 "tracing: add __event_in_*irq() helpers (0/3)"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260223171544.4750-1-tballasi@linux.microsoft.com
+        - Link: https://lore.kernel.org/all/20251229132942.31a2b583@gandalf.local.home/
+        - Link: https://lkml.kernel.org/r/20260223171544.4750-2-tballasi@linux.microsoft.com
+      - 6a543e5d7c8b "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260223171544.4750-3-tballasi@linux.microsoft.com
+      - a236ef8ddb95 "mm: vmscan: add PIDs to vmscan tracepoints (2/3)"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260223171544.4750-4-tballasi@linux.microsoft.com
+    - c2607c3ff48e "mm/mmu_gather: replace IPI with synchronize_rcu() when batch allocation fails"
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [1]
       - Link: https://lore.kernel.org/linux-mm/20260202150957.GD1282955@noisy.programming.kicks-ass.net/
       - Link: https://lore.kernel.org/linux-mm/dfdfeac9-5cd5-46fc-a5c1-9ccf9bd3502a@intel.com/
       - Link: https://lore.kernel.org/linux-mm/bc489455-bb18-44dc-8518-ae75abda6bec@kernel.org/
       - Link: https://lkml.kernel.org/r/20260224142101.20500-1-lance.yang@linux.dev
-    - df67d0ffeca7 "mm: introduce a new page type for page pool in page type"
-      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
+- mm-new: 9 -> 50 commits
+  - series: 1 (3) -> 5 (14)
+    - no role, nobody: 2 -> 8 commits
+    - no role, no role : 2 -> 10 commits
+    - no role, reviewer: 2 -> 4 commits
+    - no role, maintainer: 1 -> 20 commits
+    - reviewer, no role : 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 3 commits
+    - maintainer, nobody: 0 -> 2 commits
+    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 0 commits
+  - new commits
+    - da1b3853dac8 "mm: Do not allocate shrinker info with cgroup.memory=nokmem"
+      - Link: https://lkml.kernel.org/r/20260225-cgroup-ml-nokmem-shrinker-v1-1-d703899bdda4@suse.com
+    - series "mm: arch/shstk: Common shadow stack mapping helper and VM_NOHUGEPAGE", v2. (5)
+      - 11e913fe0f95 "mm: introduce vm_mmap_shadow_stack() as a helper for VM_SHADOW_STACK mappings (0/5)"
+        - Link: https://lkml.kernel.org/r/20260225161404.3157851-1-catalin.marinas@arm.com
+        - Link: https://lkml.kernel.org/r/20260225161404.3157851-2-catalin.marinas@arm.com
+      - 61defb9e27f4 "arm64: gcs: use the new common vm_mmap_shadow_stack() helper (1/5)"
+        - Link: https://lkml.kernel.org/r/20260225161404.3157851-3-catalin.marinas@arm.com
+      - e93d397107eb "riscv: shstk: use the new common vm_mmap_shadow_stack() helper (2/5)"
+        - Link: https://lkml.kernel.org/r/20260225161404.3157851-4-catalin.marinas@arm.com
+      - 1c6afeca1ff2 "x86: shstk: use the new common vm_mmap_shadow_stack() helper (3/5)"
+        - Link: https://lkml.kernel.org/r/20260225161404.3157851-5-catalin.marinas@arm.com
+      - aa3df08e3ae6 "mm: do not map the shadow stack as THP (4/5)"
+        - Link: https://lkml.kernel.org/r/20260225161404.3157851-6-catalin.marinas@arm.com
+    - series "kho: add support for deferred struct page init", v5. (2)
+      - b36b52d8d27b "kho: fix deferred init of kho scratch (0/2)"
+        - Link: https://lkml.kernel.org/r/20260225153955.1006649-1-mclapinski@google.com
+        - Link: https://lkml.kernel.org/r/20260225153955.1006649-2-mclapinski@google.com
+      - 418ffd01ba5c "kho: make preserved pages compatible with deferred struct page init (1/2)"
+        - Link: https://lkml.kernel.org/r/20260225153955.1006649-3-mclapinski@google.com
+    - 39f59d374f50 "kfence: add kfence.fault parameter"
+      - Link: https://lkml.kernel.org/r/20260225203639.3159463-1-elver@google.com
+    - series "Eliminate Dying Memory Cgroup", v5. (None)
+      - 33327651c131 "mm: memcontrol: remove dead code of checking parent memory cgroup (None/None)"
+        - Link: https://lkml.kernel.org/r/cover.1772005110.git.zhengqi.arch@bytedance.com
+        - Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772005110.git.zhengqi.arch@bytedance.com
+        - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
+        - Link: https://lwn.net/Articles/895431/ [2]
+        - Link: https://github.com/systemd/systemd/pull/36827 [3]
+    - 24a2a96fa959 "mm: workingset: use folio_lruvec() in workingset_refault()"
+      - Link: https://lkml.kernel.org/r/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772005110.git.zhengqi.arch@bytedance.com
+    - 926374d0e3ce "mm: rename unlock_page_lruvec_irq and its variants"
+      - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
+    - 5eec06d4e00b "mm: vmscan: prepare for the refactoring the move_folios_to_lru()"
+      - Link: https://lkml.kernel.org/r/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772005110.git.zhengqi.arch@bytedance.com
+    - 9e3122f6ff1f "mm: vmscan: refactor move_folios_to_lru()"
+      - Link: https://lkml.kernel.org/r/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772005110.git.zhengqi.arch@bytedance.com
+    - ff56f1fd9beb "mm: memcontrol: allocate object cgroup for non-kmem case"
+      - Link: https://lkml.kernel.org/r/b77274aa8e3f37c419bedf4782943fd5885dda82.1772005110.git.zhengqi.arch@bytedance.com
+    - 088c111e914e "mm: memcontrol: return root object cgroup for root memory cgroup"
+      - Link: https://lkml.kernel.org/r/e9c3f40ba7681d9753372d4ee2ac7a0216848b95.1772005110.git.zhengqi.arch@bytedance.com
+    - b6b30b277198 "mm: memcontrol: prevent memory cgroup release in get_mem_cgroup_from_folio()"
+      - Link: https://lkml.kernel.org/r/a5a64c6173a566bd21534606aeaaa9220cb1366d.1772005110.git.zhengqi.arch@bytedance.com
+    - b72afb22f41d "buffer: prevent memory cgroup release in folio_alloc_buffers()"
+      - Link: https://lkml.kernel.org/r/d6d48fdcf329c549373ac0a1c80fd9f38067e34e.1772005110.git.zhengqi.arch@bytedance.com
+    - 062c08a0b2bc "writeback: prevent memory cgroup release in writeback module"
+      - Link: https://lkml.kernel.org/r/645f99bc344575417f67def3744f975596df2793.1772005110.git.zhengqi.arch@bytedance.com
+    - b61161530a8e "mm: memcontrol: prevent memory cgroup release in count_memcg_folio_events()"
+      - Link: https://lkml.kernel.org/r/dea6aa0389367f7fd6b715c8837a2cf7506bd889.1772005110.git.zhengqi.arch@bytedance.com
+    - 39579114eb7c "mm: page_io: prevent memory cgroup release in page_io module"
+      - Link: https://lkml.kernel.org/r/7c3708358412fb02c482d0985feb5e9513a863ef.1772005110.git.zhengqi.arch@bytedance.com
+    - 5d7aa35af187 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()"
+      - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772005110.git.zhengqi.arch@bytedance.com
+    - cfd8fa90ce57 "mm: mglru: prevent memory cgroup release in mglru"
+      - Link: https://lkml.kernel.org/r/9d887662a9d39c425742dd8468e3123316bccfe3.1772005110.git.zhengqi.arch@bytedance.com
+    - 51944b14205d "mm: memcontrol: prevent memory cgroup release in mem_cgroup_swap_full()"
+      - Link: https://lkml.kernel.org/r/21d1abab7342615745ea4c18a88237335ab44d13.1772005110.git.zhengqi.arch@bytedance.com
+    - 985f6b1d9f83 "mm: workingset: prevent memory cgroup release in lru_gen_eviction()"
+      - Link: https://lkml.kernel.org/r/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772005110.git.zhengqi.arch@bytedance.com
+    - ec767776d405 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()"
+      - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772005110.git.zhengqi.arch@bytedance.com
+    - 7c009e0451a6 "mm: zswap: prevent memory cgroup release in zswap_compress()"
+      - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772005110.git.zhengqi.arch@bytedance.com
+    - 22e6d23c71ba "mm: workingset: prevent lruvec release in workingset_refault()"
+      - Link: https://lkml.kernel.org/r/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772005110.git.zhengqi.arch@bytedance.com
+    - 7e0bb403e87f "mm: zswap: prevent lruvec release in zswap_folio_swapin()"
+      - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772005110.git.zhengqi.arch@bytedance.com
+    - b36847e52810 "mm: swap: prevent lruvec release in lru_gen_clear_refs()"
+      - Link: https://lkml.kernel.org/r/986cd26227191a48a7c34a2a15812d361f4ebd53.1772005110.git.zhengqi.arch@bytedance.com
+    - dd511e65b984 "mm: workingset: prevent lruvec release in workingset_activation()"
+      - Link: https://lkml.kernel.org/r/c6130476affbba0a7d309a887c3df11e0167990b.1772005110.git.zhengqi.arch@bytedance.com
+    - 76b9fa5c09e1 "mm: do not open-code lruvec lock"
+      - Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772005110.git.zhengqi.arch@bytedance.com
+    - b0328fa09ec9 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock"
+      - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772005110.git.zhengqi.arch@bytedance.com
+    - 868acb6d8e57 "mm: vmscan: prepare for reparenting traditional LRU folios"
+      - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772005110.git.zhengqi.arch@bytedance.com
+    - 697f2483cd96 "mm: vmscan: prepare for reparenting MGLRU folios"
+      - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772005110.git.zhengqi.arch@bytedance.com
+    - 12e1169a56a9 "mm: memcontrol: refactor memcg_reparent_objcgs()"
+      - Link: https://lkml.kernel.org/r/2e5696db1993e593a51004c1dacedbc261689629.1772005110.git.zhengqi.arch@bytedance.com
+    - af7321b12be0 "mm: workingset: use lruvec_lru_size() to get the number of lru pages"
+      - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772005110.git.zhengqi.arch@bytedance.com
+    - a4cbeb895a82 "mm: memcontrol: prepare for reparenting non-hierarchical stats"
+      - Link: https://lkml.kernel.org/r/ef13e5974343b37ae2a0e28aff03ea2d033cb888.1772005110.git.zhengqi.arch@bytedance.com
+    - 26efeb4b95c8 "mm: memcontrol: convert objcg to be per-memcg per-node type"
+      - Link: https://lkml.kernel.org/r/20260225094456.74145-1-qi.zheng@linux.dev
+    - a42a7ecdb37a "mm: memcontrol: eliminate the problem of dying memory cgroup for LRU folios"
+      - Link: https://lkml.kernel.org/r/ff5a945386f168faa877901d569296592cdaadc3.1772005110.git.zhengqi.arch@bytedance.com
+    - e269c8c1d782 "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers"
+      - Link: https://lkml.kernel.org/r/9a0b6ba87112b2bf038ab65c47b6f16311b829cb.1772005110.git.zhengqi.arch@bytedance.com
+    - series "Fix KASAN support for KHO restored vmalloc regions". (2)
+      - 115c0eaa3e36 "mm/vmalloc: export clear_vm_uninitialized_flag() (0/2)"
+        - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
+        - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
+      - af603d090d85 "kho: fix KASAN support for restored vmalloc regions (1/2)"
+        - Link: https://lkml.kernel.org/r/20260225223857.1714801-3-pasha.tatashin@soleen.com
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - 2bb36e545f9c "mm: remove stray references to struct pagevec (0/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-0-716868cc2d11@columbia.edu
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-1-716868cc2d11@columbia.edu
+      - 4ec371d029a6 "fs: remove unncessary pagevec.h includes (1/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-2-716868cc2d11@columbia.edu
+      - c649a1cb337d "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+      - 799ffaf2e1d1 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
   - changed commits
-    - 6cfd1536a057 "mm: vmalloc: streamline vmalloc memory accounting"
-      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Reviewed-by: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
-      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - dropped "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-    - 8e5b1d2d6606 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
-      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
-      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
-    - series "mm: vmscan: add PID and cgroup ID to vmscan tracepoints", v7. (3)
-      - f8ade75c5853 "tracing: add __event_in_*irq() helpers (0/3)"
-        - added "Reviewed-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lkml.kernel.org/r/20260223171544.4750-1-tballasi@linux.microsoft.com
-        - Link: https://lore.kernel.org/all/20251229132942.31a2b583@gandalf.local.home/
-        - Link: https://lkml.kernel.org/r/20260223171544.4750-2-tballasi@linux.microsoft.com
-      - 7a61975a2850 "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lkml.kernel.org/r/20260223171544.4750-3-tballasi@linux.microsoft.com
+    - 8125e7b9292d "mm: introduce a new page type for page pool in page type"
+      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 29 -> 27 commits
-  - series: 3 (11) -> 2 (9)
-    - no role, nobody: 14 -> 14 commits (no change)
+- mm-nonmm-unstable: 27 -> 30 commits
+  - series: 2 (9) -> 2 (9) (no change)
+    - no role, nobody: 14 -> 17 commits
     - no role, no role : 10 -> 10 commits (no change)
-    - no role, maintainer: 4 -> 2 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
   - new commits
-    - e3c13395d2fe "fork: zero vmap stack using clear_pages() instead of memset()"
-      - Link: https://lkml.kernel.org/r/20260224-mm-fork-clear-pages-v1-1-184c65a72d49@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/dpnwsp7dl4535rd7qmszanw6u5an2p74uxfex4dh53frpb7pu3@2bnjjavjrepe/
-      - Link: https://lore.kernel.org/20240311164638.2015063-7-pasha.tatashin@soleen.com
+    - d3e073f72022 "crash_dump/dm-crypt: don't print in arch-specific code"
+      - Link: https://lkml.kernel.org/r/20260225060347.718905-2-coxu@redhat.com
+    - b6c939bfced0 "crash: align the declaration of crash_load_dm_crypt_keys with CONFIG_CRASH_DM_CRYPT"
+      - Link: https://lkml.kernel.org/r/20260225060347.718905-3-coxu@redhat.com
+    - 583c797f9638 "arm64,ppc64le/kdump: pass dm-crypt keys to kdump kernel"
+      - Link: https://lkml.kernel.org/r/20260225060347.718905-4-coxu@redhat.com
+      - Link: https://lore.kernel.org/all/20250502011246.99238-1-coxu@redhat.com/ [1]
+      - Link: https://github.com/devicetree-org/dt-schema/pull/181 [2]

@@ -8,51 +8,87 @@
     - maintainer, nobody: 1 commits
     - maintainer, maintainer: 12 commits
   - full commits list
-    - 3d386e07971f "mm, swap: speed up hibernation allocation and writeout"
+    - bcfd74d7529e "mm, swap: speed up hibernation allocation and writeout"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260216-hibernate-perf-v4-1-1ba9f0bf1ec9@tencent.com
       - Link: https://lore.kernel.org/linux-mm/8b4bdcfa-ce3f-4e23-839f-31367df7c18f@gmx.de/ [1]
     - series "mm, swap: swap table phase III: remove swap_map", v3. (12 commits)
-      - 521e7d92d651 "mm, swap: protect si->swap_file properly and use as a mount indicator" (0/12)
+      - 460d3f12bdb3 "mm, swap: protect si->swap_file properly and use as a mount indicator" (0/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-0-f4e34be021a7@tencent.com
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-1-f4e34be021a7@tencent.com
-      - 197fae1bc68d "mm, swap: clean up swapon process and locking" (1/12)
+      - 8af86ac6bd17 "mm, swap: clean up swapon process and locking" (1/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-2-f4e34be021a7@tencent.com
-      - a1a8b57ded3c "mm, swap: remove redundant arguments and locking for enabling a device" (2/12)
+      - d64f03d0b385 "mm, swap: remove redundant arguments and locking for enabling a device" (2/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-3-f4e34be021a7@tencent.com
-      - aeaad8765833 "mm, swap: consolidate bad slots setup and make it more robust" (3/12)
+      - 3608b688db88 "mm, swap: consolidate bad slots setup and make it more robust" (3/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-4-f4e34be021a7@tencent.com
-      - 93ee286cd0d0 "mm/workingset: leave highest bits empty for anon shadow" (4/12)
+      - 4777494fd3b0 "mm/workingset: leave highest bits empty for anon shadow" (4/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-5-f4e34be021a7@tencent.com
-      - 2f43dd99a17a "mm, swap: implement helpers for reserving data in the swap table" (5/12)
+      - d3951336f1d1 "mm, swap: implement helpers for reserving data in the swap table" (5/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-6-f4e34be021a7@tencent.com
-      - a81cbcaeef15 "mm, swap: mark bad slots in swap table directly" (6/12)
+      - c0d8f4d540e7 "mm, swap: mark bad slots in swap table directly" (6/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-7-f4e34be021a7@tencent.com
-      - 205a622145c3 "mm, swap: simplify swap table sanity range check" (7/12)
+      - 252a8a5d5be6 "mm, swap: simplify swap table sanity range check" (7/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-8-f4e34be021a7@tencent.com
-      - 4c273a4c4d83 "mm, swap: use the swap table to track the swap count" (8/12)
+      - 7577d1853d11 "mm, swap: use the swap table to track the swap count" (8/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-9-f4e34be021a7@tencent.com
-      - 5cbe1d92580e "mm-swap-use-the-swap-table-to-track-the-swap-count-fix" (9/12)
+      - 3dcf84459d24 "mm-swap-use-the-swap-table-to-track-the-swap-count-fix" (9/12)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/aZWuLZi-vYi3vAWe@KASONG-MC4
-      - d320013d9daf "mm, swap: no need to truncate the scan border" (10/12)
+      - 56bd6a61ab6e "mm, swap: no need to truncate the scan border" (10/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-10-f4e34be021a7@tencent.com
-      - 4f839e8caf81 "mm, swap: simplify checking if a folio is swapped" (11/12)
+      - 962280622bdc "mm, swap: simplify checking if a folio is swapped" (11/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-11-f4e34be021a7@tencent.com
-    - 6635295d6b90 "mm, swap: no need to clear the shadow explicitly"
+    - 938f026cc786 "mm, swap: no need to clear the shadow explicitly"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-12-f4e34be021a7@tencent.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 9 total, 1 (3) series, 6 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 2 commits
+    - no role, maintainer: 3 commits
+    - reviewer, reviewer: 1 commits
+    - reviewer, maintainer: 1 commits
+  - full commits list
+    - 926374d0e3ce "mm: rename unlock_page_lruvec_irq and its variants"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
+    - 39579114eb7c "mm: page_io: prevent memory cgroup release in page_io module"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/7c3708358412fb02c482d0985feb5e9513a863ef.1772005110.git.zhengqi.arch@bytedance.com
+    - b36847e52810 "mm: swap: prevent lruvec release in lru_gen_clear_refs()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/986cd26227191a48a7c34a2a15812d361f4ebd53.1772005110.git.zhengqi.arch@bytedance.com
+    - b0328fa09ec9 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772005110.git.zhengqi.arch@bytedance.com
+    - 868acb6d8e57 "mm: vmscan: prepare for reparenting traditional LRU folios"
+      - Authored by a reviewer, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772005110.git.zhengqi.arch@bytedance.com
+    - af7321b12be0 "mm: workingset: use lruvec_lru_size() to get the number of lru pages"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772005110.git.zhengqi.arch@bytedance.com
+    - series "mm: Remove stray references to pagevec", v2. (4 commits)
+      - 2bb36e545f9c "mm: remove stray references to struct pagevec" (0/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-0-716868cc2d11@columbia.edu
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-1-716868cc2d11@columbia.edu
+      - c649a1cb337d "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+      - 799ffaf2e1d1 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE" (3/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

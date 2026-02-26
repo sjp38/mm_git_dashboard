@@ -1,25 +1,20 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 2 commits
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 1 commits
-  - changed commits
-    - 09833d99db36 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260213095410.1862978-1-glider@google.com
-    - d155aab90fff "mm/kfence: fix KASAN hardware tag faults during late enablement"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260220144940.2779209-1-glider@google.com
-- mm-hotfixes-unstable: 2 -> 0 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 39f59d374f50 "kfence: add kfence.fault parameter"
+      - Link: https://lkml.kernel.org/r/20260225203639.3159463-1-elver@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

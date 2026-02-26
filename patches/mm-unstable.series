@@ -1,4 +1,4 @@
-v7.0-rc1-16-g5350f05fd6139
+v7.0-rc1-19-gcf43ebb678aa1
 mm-swap-speed-up-hibernation-allocation-and-writeout.patch
 mm-migrate_device-remove-dead-migration-entry-check-.patch
 mm-page_alloc-avoid-overcounting-bulk-alloc-in-water.patch
@@ -97,3 +97,9 @@ mm-hugetlb_vmemmap-update-outdated-comment.patch
 kho-move-alloc-tag-init-to-kho_init_-folio-pages.patch
 kho-adopt-radix-tree-for-preserved-memory-tracking.patch
 kho-remove-finalize-state-and-clients.patch
+mm-vmalloc-streamline-vmalloc-memory-accounting.patch
+mm-memcontrol-switch-to-native-NR_VMALLOC-vmstat-cou.patch
+tracing-add-__event_in_-irq-helpers.patch
+mm-vmscan-add-cgroup-IDs-to-vmscan-tracepoints.patch
+mm-vmscan-add-PIDs-to-vmscan-tracepoints.patch
+mm-mmu_gather-replace-IPI-with-synchronize_rcu-when-.patch

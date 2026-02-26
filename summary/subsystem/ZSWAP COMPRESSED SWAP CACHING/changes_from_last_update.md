@@ -8,8 +8,14 @@
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 2 commits
+  - new commits
+    - 7c009e0451a6 "mm: zswap: prevent memory cgroup release in zswap_compress()"
+      - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772005110.git.zhengqi.arch@bytedance.com
+    - 7e0bb403e87f "mm: zswap: prevent lruvec release in zswap_folio_swapin()"
+      - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772005110.git.zhengqi.arch@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -5,18 +5,57 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
+- mm-unstable: 4 -> 5 commits
   - series: 1 (1) -> 1 (1) (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 0 -> 1 commits
   - changed commits
-    - 8e5b1d2d6606 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
-      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
-      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+    - 6091e96c2cbf "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
+- mm-new: 1 -> 15 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, nobody: 0 -> 4 commits
+    - no role, maintainer: 0 -> 10 commits
+    - reviewer, maintainer: 0 -> 1 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - new commits
+    - series "Eliminate Dying Memory Cgroup", v5. (None)
+      - 33327651c131 "mm: memcontrol: remove dead code of checking parent memory cgroup (None/None)"
+        - Link: https://lkml.kernel.org/r/cover.1772005110.git.zhengqi.arch@bytedance.com
+        - Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772005110.git.zhengqi.arch@bytedance.com
+        - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
+        - Link: https://lwn.net/Articles/895431/ [2]
+        - Link: https://github.com/systemd/systemd/pull/36827 [3]
+    - 926374d0e3ce "mm: rename unlock_page_lruvec_irq and its variants"
+      - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
+    - ff56f1fd9beb "mm: memcontrol: allocate object cgroup for non-kmem case"
+      - Link: https://lkml.kernel.org/r/b77274aa8e3f37c419bedf4782943fd5885dda82.1772005110.git.zhengqi.arch@bytedance.com
+    - 088c111e914e "mm: memcontrol: return root object cgroup for root memory cgroup"
+      - Link: https://lkml.kernel.org/r/e9c3f40ba7681d9753372d4ee2ac7a0216848b95.1772005110.git.zhengqi.arch@bytedance.com
+    - b6b30b277198 "mm: memcontrol: prevent memory cgroup release in get_mem_cgroup_from_folio()"
+      - Link: https://lkml.kernel.org/r/a5a64c6173a566bd21534606aeaaa9220cb1366d.1772005110.git.zhengqi.arch@bytedance.com
+    - 062c08a0b2bc "writeback: prevent memory cgroup release in writeback module"
+      - Link: https://lkml.kernel.org/r/645f99bc344575417f67def3744f975596df2793.1772005110.git.zhengqi.arch@bytedance.com
+    - b61161530a8e "mm: memcontrol: prevent memory cgroup release in count_memcg_folio_events()"
+      - Link: https://lkml.kernel.org/r/dea6aa0389367f7fd6b715c8837a2cf7506bd889.1772005110.git.zhengqi.arch@bytedance.com
+    - 51944b14205d "mm: memcontrol: prevent memory cgroup release in mem_cgroup_swap_full()"
+      - Link: https://lkml.kernel.org/r/21d1abab7342615745ea4c18a88237335ab44d13.1772005110.git.zhengqi.arch@bytedance.com
+    - 76b9fa5c09e1 "mm: do not open-code lruvec lock"
+      - Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772005110.git.zhengqi.arch@bytedance.com
+    - b0328fa09ec9 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock"
+      - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772005110.git.zhengqi.arch@bytedance.com
+    - 12e1169a56a9 "mm: memcontrol: refactor memcg_reparent_objcgs()"
+      - Link: https://lkml.kernel.org/r/2e5696db1993e593a51004c1dacedbc261689629.1772005110.git.zhengqi.arch@bytedance.com
+    - a4cbeb895a82 "mm: memcontrol: prepare for reparenting non-hierarchical stats"
+      - Link: https://lkml.kernel.org/r/ef13e5974343b37ae2a0e28aff03ea2d033cb888.1772005110.git.zhengqi.arch@bytedance.com
+    - 26efeb4b95c8 "mm: memcontrol: convert objcg to be per-memcg per-node type"
+      - Link: https://lkml.kernel.org/r/20260225094456.74145-1-qi.zheng@linux.dev
+    - a42a7ecdb37a "mm: memcontrol: eliminate the problem of dying memory cgroup for LRU folios"
+      - Link: https://lkml.kernel.org/r/ff5a945386f168faa877901d569296592cdaadc3.1772005110.git.zhengqi.arch@bytedance.com
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - c649a1cb337d "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

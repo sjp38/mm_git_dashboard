@@ -1,22 +1,23 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - a4ab97e34bb6 "mm: fix NULL NODE_DATA dereference for memoryless nodes on boot"
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260222115702.3659-1-ming.lei@redhat.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 4 -> 4 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - series "kho: add support for deferred struct page init", v5. (2)
+      - b36b52d8d27b "kho: fix deferred init of kho scratch (0/2)"
+        - Link: https://lkml.kernel.org/r/20260225153955.1006649-1-mclapinski@google.com
+        - Link: https://lkml.kernel.org/r/20260225153955.1006649-2-mclapinski@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

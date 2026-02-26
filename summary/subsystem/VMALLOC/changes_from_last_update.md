@@ -6,25 +6,27 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+    - maintainer, maintainer: 0 -> 1 commits
   - changed commits
-    - 6cfd1536a057 "mm: vmalloc: streamline vmalloc memory accounting"
-      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
-      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Reviewed-by: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - dropped "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
+    - 27c8231a6f77 "mm: vmalloc: streamline vmalloc memory accounting"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-    - 8e5b1d2d6606 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
-      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
-      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
-      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+    - 6091e96c2cbf "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
+- mm-new: 2 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - new commits
+    - series "Fix KASAN support for KHO restored vmalloc regions". (2)
+      - 115c0eaa3e36 "mm/vmalloc: export clear_vm_uninitialized_flag() (0/2)"
+        - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
+        - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

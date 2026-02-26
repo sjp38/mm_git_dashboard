@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - e8cd42f516b3 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - aa1d2e177057 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
