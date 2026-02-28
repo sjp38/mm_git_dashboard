@@ -10,9 +10,11 @@ MANAGEMENT - CORE.
 
 Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
 Signed-off-by: Tal Zussman <tz2294@columbia.edu>
+Acked-by: David Hildenbrand (Arm) <david@kernel.org>
+Reviewed-by: Jan Kara <jack@suse.cz>
+Acked-by: Zi Yan <ziy@nvidia.com>
 Cc: Chris Li <chrisl@kernel.org>
 Cc: Christian Brauner <brauner@kernel.org>
-Cc: David Hildenbrand (Arm) <david@kernel.org>
 Cc: Matthew Wilcox (Oracle) <willy@infradead.org>
 Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
 ---
@@ -57,7 +59,7 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
  rename include/linux/{pagevec.h => folio_batch.h} (95%)
 
 diff --git a/MAINTAINERS b/MAINTAINERS
-index e4572a36afd29..f50421e65cb15 100644
+index 8fb7b70dfb475..4753c8924964f 100644
 --- a/MAINTAINERS
 +++ b/MAINTAINERS
 @@ -16664,6 +16664,7 @@ L:	linux-mm@kvack.org
@@ -437,7 +439,7 @@ index 8e7dc2c6ee738..ad9ded39609cb 100644
  #include <linux/shmem_fs.h>
  
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index aab5cc32d0fd3..ce2772219deee 100644
+index 60cdfb0b8794a..53d9515f96139 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
 @@ -34,7 +34,7 @@

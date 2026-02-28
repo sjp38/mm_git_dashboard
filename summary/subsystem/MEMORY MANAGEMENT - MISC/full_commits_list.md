@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - a0eeaa334ec7 "mm/cma: move put_page_testzero() out of VM_WARN_ON in cma_release()"
+    - 9884ae17e236 "mm/cma: move put_page_testzero() out of VM_WARN_ON in cma_release()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260225031231.2352011-1-ziy@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -14,25 +14,31 @@
     - no role, no role : 3 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 126e59076c61 "mm/fadvise: validate offset in generic_fadvise"
+    - e2654fe75877 "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - 8dc3d536d7ee "selftests/mm: fix soft-dirty kselftest supported check"
+    - 592941d00fe5 "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260218184210.206466-1-audra@redhat.com
-    - 5cfdf7752823 "selftests/mm: skip migration tests if NUMA is unavailable"
+    - bd4f5f7b6a96 "selftests/mm: skip migration tests if NUMA is unavailable"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
-    - 22237ae5197e "selftests/mm: remove duplicate include of unistd.h"
+    - b46ffee6249a "selftests/mm: remove duplicate include of unistd.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
-    - 3bc9904d5848 "mm/page_idle.c: remove redundant mmu notifier in aging code"
+    - 1494a7f175de "mm/page_idle.c: remove redundant mmu notifier in aging code"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
-      - ef5327102f80 "kho: remove finalize state and clients" (1/2)
+      - d3d97967397f "kho: remove finalize state and clients" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - d3f1c779ce90 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/aaBWG4fajXXbjpVN@chrisdown.name
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -5,64 +5,47 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 6 commits
-  - series: 0 (2) -> 0 (3)
-    - no role, no role : 2 -> 3 commits
-    - no role, reviewer: 0 -> 1 commits
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 27c8231a6f77 "mm: vmalloc: streamline vmalloc memory accounting"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-    - series "mm: vmscan: add PID and cgroup ID to vmscan tracepoints", v7. (3)
-      - 6a543e5d7c8b "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260223171544.4750-3-tballasi@linux.microsoft.com
-- mm-new: 3 -> 18 commits
-  - series: 0 (1) -> 0 (2)
-    - no role, nobody: 1 -> 3 commits
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 2 commits
-    - no role, maintainer: 0 -> 7 commits
-    - reviewer, no role : 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 1 commits
-    - reviewer, maintainer: 0 -> 3 commits
+- mm-new: 18 -> 21 commits
+  - series: 0 (2) -> 0 (4)
+    - no role, nobody: 3 -> 1 commits
+    - no role, no role : 1 -> 3 commits
+    - no role, reviewer: 2 -> 4 commits
+    - no role, maintainer: 7 -> 7 commits (no change)
+    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 3 -> 3 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - 24a2a96fa959 "mm: workingset: use folio_lruvec() in workingset_refault()"
-      - Link: https://lkml.kernel.org/r/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772005110.git.zhengqi.arch@bytedance.com
-    - 926374d0e3ce "mm: rename unlock_page_lruvec_irq and its variants"
-      - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
-    - 5eec06d4e00b "mm: vmscan: prepare for the refactoring the move_folios_to_lru()"
-      - Link: https://lkml.kernel.org/r/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772005110.git.zhengqi.arch@bytedance.com
-    - 9e3122f6ff1f "mm: vmscan: refactor move_folios_to_lru()"
-      - Link: https://lkml.kernel.org/r/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772005110.git.zhengqi.arch@bytedance.com
-    - cfd8fa90ce57 "mm: mglru: prevent memory cgroup release in mglru"
-      - Link: https://lkml.kernel.org/r/9d887662a9d39c425742dd8468e3123316bccfe3.1772005110.git.zhengqi.arch@bytedance.com
-    - 985f6b1d9f83 "mm: workingset: prevent memory cgroup release in lru_gen_eviction()"
-      - Link: https://lkml.kernel.org/r/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772005110.git.zhengqi.arch@bytedance.com
-    - 22e6d23c71ba "mm: workingset: prevent lruvec release in workingset_refault()"
-      - Link: https://lkml.kernel.org/r/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772005110.git.zhengqi.arch@bytedance.com
-    - b36847e52810 "mm: swap: prevent lruvec release in lru_gen_clear_refs()"
-      - Link: https://lkml.kernel.org/r/986cd26227191a48a7c34a2a15812d361f4ebd53.1772005110.git.zhengqi.arch@bytedance.com
-    - dd511e65b984 "mm: workingset: prevent lruvec release in workingset_activation()"
-      - Link: https://lkml.kernel.org/r/c6130476affbba0a7d309a887c3df11e0167990b.1772005110.git.zhengqi.arch@bytedance.com
-    - 76b9fa5c09e1 "mm: do not open-code lruvec lock"
-      - Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772005110.git.zhengqi.arch@bytedance.com
-    - b0328fa09ec9 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock"
-      - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772005110.git.zhengqi.arch@bytedance.com
-    - 868acb6d8e57 "mm: vmscan: prepare for reparenting traditional LRU folios"
-      - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772005110.git.zhengqi.arch@bytedance.com
-    - 697f2483cd96 "mm: vmscan: prepare for reparenting MGLRU folios"
-      - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772005110.git.zhengqi.arch@bytedance.com
-    - af7321b12be0 "mm: workingset: use lruvec_lru_size() to get the number of lru pages"
-      - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772005110.git.zhengqi.arch@bytedance.com
-    - e269c8c1d782 "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers"
-      - Link: https://lkml.kernel.org/r/9a0b6ba87112b2bf038ab65c47b6f16311b829cb.1772005110.git.zhengqi.arch@bytedance.com
+    - series "mm: zone lock tracepoint instrumentation", v3. (5)
+      - 80e2ebedecfc "mm: convert zone lock users to wrappers (1/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/e5324d64361f86d930d940a5b49235f7996efe53.1772129168.git.d@ilvokhin.com
+      - 4da95c1ce59a "mm-convert-zone-lock-users-to-wrappers-fix-fix (3/5)"
+        - Authored by a maintainer, reviewed by nobody
+    - c83dbee14fc4 "mm: rename zone->lock to zone->_lock"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/1221b8e7fa9f5694f3c4e411f01581b5aba9bc63.1772129168.git.d@ilvokhin.com
+  - changed commits
     - series "mm: Remove stray references to pagevec", v2. (4)
-      - c649a1cb337d "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+      - 82831caf6486 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 799ffaf2e1d1 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
+      - 29a29ccbe316 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

@@ -7,10 +7,10 @@
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-      - d03c86cbaaf9 "mm: add folio_test_lazyfree helper" (2/4)
+      - 36cdb61c4788 "mm: add folio_test_lazyfree helper" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-4-vernon2gm@gmail.com
-    - 57557288a25b "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
+    - 7a5a5f6fbf5a "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

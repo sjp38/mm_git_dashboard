@@ -2,57 +2,94 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 4560bfdf9fdc "Revert "ptdesc: remove references to folios from __pagetable_ctor() and pagetable_dtor()""
-      - Link: https://lkml.kernel.org/r/20260225002434.2953895-1-axelrasmussen@google.com
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 15 commits
-  - series: 1 (5) -> 1 (5) (no change)
+- mm-unstable: 15 -> 17 commits
+  - series: 1 (5) -> 2 (7)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 4 -> 5 commits
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, no role : 5 -> 7 commits
+    - no role, reviewer: 2 -> 3 commits
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - 27c8231a6f77 "mm: vmalloc: streamline vmalloc memory accounting"
+    - 0a8a9198a887 "mm: introduce a new page type for page pool in page type"
+      - Authored by no role player, reviewed by a reviewer
       - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-- mm-new: 3 -> 8 commits
-  - series: 0 (0) -> 2 (5)
-    - no role, nobody: 0 -> 3 commits
-    - no role, no role : 1 -> 2 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 0 -> 1 commits
-  - new commits
+      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
     - series "mm: arch/shstk: Common shadow stack mapping helper and VM_NOHUGEPAGE", v2. (5)
-      - 11e913fe0f95 "mm: introduce vm_mmap_shadow_stack() as a helper for VM_SHADOW_STACK mappings (0/5)"
+      - a43e24869d3e "mm: introduce vm_mmap_shadow_stack() as a helper for VM_SHADOW_STACK mappings (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260225161404.3157851-1-catalin.marinas@arm.com
         - Link: https://lkml.kernel.org/r/20260225161404.3157851-2-catalin.marinas@arm.com
-      - aa3df08e3ae6 "mm: do not map the shadow stack as THP (4/5)"
+      - e3e92e8d1897 "mm: do not map the shadow stack as THP (4/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260225161404.3157851-6-catalin.marinas@arm.com
-    - 697f2483cd96 "mm: vmscan: prepare for reparenting MGLRU folios"
-      - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772005110.git.zhengqi.arch@bytedance.com
+  - dropped commits
+    - 4628a513d3d7 "mm: improve RSS counter approximation accuracy for proc interfaces"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/lkml/20250331223516.7810-2-sweettea-kernel@dorminy.me/ # [1]
+      - Link: https://lkml.kernel.org/r/20260217161006.1105611-4-mathieu.desnoyers@efficios.com
+- mm-new: 8 -> 12 commits
+  - series: 2 (5) -> 2 (6)
+    - no role, nobody: 3 -> 1 commits
+    - no role, no role : 2 -> 4 commits
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 3 commits
+  - new commits
+    - series "mm: zone lock tracepoint instrumentation", v3. (5)
+      - e4d7bb6da650 "mm: introduce zone lock wrappers (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/cover.1772129168.git.d@ilvokhin.com
+        - Link: https://lkml.kernel.org/r/5bcc39cd3a227944d0fbe75ff86cdac92b38d4ca.1772129168.git.d@ilvokhin.com
+      - 80e2ebedecfc "mm: convert zone lock users to wrappers (1/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/e5324d64361f86d930d940a5b49235f7996efe53.1772129168.git.d@ilvokhin.com
+      - 4da95c1ce59a "mm-convert-zone-lock-users-to-wrappers-fix-fix (3/5)"
+        - Authored by a maintainer, reviewed by nobody
+    - c83dbee14fc4 "mm: rename zone->lock to zone->_lock"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/1221b8e7fa9f5694f3c4e411f01581b5aba9bc63.1772129168.git.d@ilvokhin.com
+    - bb193d06227d "mm: add tracepoints for zone lock"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/378089dd269249d3d7981fe10eb8b49ad551d353.1772129168.git.d@ilvokhin.com
+    - 7ed520293a48 "mm-add-tracepoints-for-zone-lock-fix"
+      - Authored by a maintainer, reviewed by nobody
+    - 712eb5ded081 "mm-add-tracepoints-for-zone-lock-fix-fix"
+      - Authored by a maintainer, reviewed by nobody
+  - changed commits
     - series "Fix KASAN support for KHO restored vmalloc regions". (2)
-      - 115c0eaa3e36 "mm/vmalloc: export clear_vm_uninitialized_flag() (0/2)"
+      - 9573299a0a69 "mm/vmalloc: export clear_vm_uninitialized_flag() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
+        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
         - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
         - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
     - series "mm: Remove stray references to pagevec", v2. (4)
-      - c649a1cb337d "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+      - 82831caf6486 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 799ffaf2e1d1 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
+      - 29a29ccbe316 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
-  - changed commits
-    - 8125e7b9292d "mm: introduce a new page type for page pool in page type"
-      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 3 -> 3 commits (no change)

@@ -16,6 +16,7 @@ point to an vector of object cgroups.
 Link: https://lkml.kernel.org/r/ff5a945386f168faa877901d569296592cdaadc3.1772005110.git.zhengqi.arch@bytedance.com
 Signed-off-by: Muchun Song <songmuchun@bytedance.com>
 Signed-off-by: Qi Zheng <zhengqi.arch@bytedance.com>
+Acked-by: Shakeel Butt <shakeel.butt@linux.dev>
 Cc: Allen Pais <apais@linux.microsoft.com>
 Cc: Axel Rasmussen <axelrasmussen@google.com>
 Cc: Baoquan He <bhe@redhat.com>
@@ -35,7 +36,6 @@ Cc: Michal Koutný <mkoutny@suse.com>
 Cc: Muchun Song <muchun.song@linux.dev>
 Cc: Nhat Pham <nphamcs@gmail.com>
 Cc: Roman Gushchin <roman.gushchin@linux.dev>
-Cc: Shakeel Butt <shakeel.butt@linux.dev>
 Cc: Tejun Heo <tj@kernel.org>
 Cc: Usama Arif <usamaarif642@gmail.com>
 Cc: Wei Xu <weixugc@google.com>
@@ -238,7 +238,7 @@ index 51fb4406f45cf..427cc45c3c369 100644
  
  /*
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index 648c0672eba03..aab5cc32d0fd3 100644
+index f0f77752fa2af..60cdfb0b8794a 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
 @@ -247,13 +247,17 @@ static inline void reparent_state_local(struct mem_cgroup *memcg, struct mem_cgr

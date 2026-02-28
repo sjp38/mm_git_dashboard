@@ -6,18 +6,27 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
+- mm-unstable: 4 -> 5 commits
+  - series: 1 (4) -> 2 (5)
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, no role : 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "kho: add support for deferred struct page init", v5. (2)
-      - b36b52d8d27b "kho: fix deferred init of kho scratch (0/2)"
+      - 4a9b64aa136f "kho: fix deferred init of kho scratch (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260225153955.1006649-1-mclapinski@google.com
         - Link: https://lkml.kernel.org/r/20260225153955.1006649-2-mclapinski@google.com
+- mm-new: 1 -> 1 commits (no change)
+  - series: 1 (1) -> 0 (1)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm: zone lock tracepoint instrumentation", v3. (5)
+      - 80e2ebedecfc "mm: convert zone lock users to wrappers (1/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/e5324d64361f86d930d940a5b49235f7996efe53.1772129168.git.d@ilvokhin.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

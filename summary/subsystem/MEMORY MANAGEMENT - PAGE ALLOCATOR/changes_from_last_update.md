@@ -7,27 +7,51 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-new: 1 -> 4 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 2 commits
-  - new commits
-    - 926374d0e3ce "mm: rename unlock_page_lruvec_irq and its variants"
-      - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
-    - b0328fa09ec9 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock"
-      - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772005110.git.zhengqi.arch@bytedance.com
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - c649a1cb337d "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+    - no role, reviewer: 0 -> 1 commits
   - changed commits
-    - 8125e7b9292d "mm: introduce a new page type for page pool in page type"
-      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+    - 0a8a9198a887 "mm: introduce a new page type for page pool in page type"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
       - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
+- mm-new: 4 -> 8 commits
+  - series: 0 (1) -> 1 (5)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 2 commits
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "Allow order zero pages in page reporting". (3)
+      - d6cc61cfd4c2 "mm/page_reporting: allow zero page_reporting_order (0/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260226070125.3732265-1-yuvraj.sakshith@oss.qualcomm.com
+        - Link: https://lkml.kernel.org/r/20260226070125.3732265-2-yuvraj.sakshith@oss.qualcomm.com
+    - series "mm: zone lock tracepoint instrumentation", v3. (5)
+      - 80e2ebedecfc "mm: convert zone lock users to wrappers (1/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/e5324d64361f86d930d940a5b49235f7996efe53.1772129168.git.d@ilvokhin.com
+      - 717c79bec086 "mm-convert-zone-lock-users-to-wrappers-fix (2/5)"
+        - Authored by a maintainer, reviewed by nobody
+      - 91f74f3f770b "mm: convert compaction to zone lock wrappers (4/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/01729baf359e4c6612aead53f1fcb644f782d1de.1772129168.git.d@ilvokhin.com
+    - c83dbee14fc4 "mm: rename zone->lock to zone->_lock"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/1221b8e7fa9f5694f3c4e411f01581b5aba9bc63.1772129168.git.d@ilvokhin.com
+  - changed commits
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - 82831caf6486 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

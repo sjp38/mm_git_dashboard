@@ -6,17 +6,17 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - 58c330184288 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+    - 271fecc8923c "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
-      - aa1d2e177057 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 9a4c0265569c "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 5d7aa35af187 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()"
+    - 9de1d497e297 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772005110.git.zhengqi.arch@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

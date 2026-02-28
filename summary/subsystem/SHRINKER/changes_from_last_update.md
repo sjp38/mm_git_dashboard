@@ -5,28 +5,21 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 2 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 1 -> 2 commits
-  - changed commits
-    - series "mm: vmscan: add PID and cgroup ID to vmscan tracepoints", v7. (3)
-      - 6a543e5d7c8b "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260223171544.4750-3-tballasi@linux.microsoft.com
-- mm-new: 1 -> 2 commits
-  - series: 0 (1) -> 1 (1)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+- mm-unstable: 2 -> 3 commits
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 2 -> 3 commits
   - new commits
-    - da1b3853dac8 "mm: Do not allocate shrinker info with cgroup.memory=nokmem"
+    - 6d2450c31670 "mm: do not allocate shrinker info with cgroup.memory=nokmem"
+      - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260225-cgroup-ml-nokmem-shrinker-v1-1-d703899bdda4@suse.com
-    - series "Eliminate Dying Memory Cgroup", v5. (None)
-      - 33327651c131 "mm: memcontrol: remove dead code of checking parent memory cgroup (None/None)"
-        - Link: https://lkml.kernel.org/r/cover.1772005110.git.zhengqi.arch@bytedance.com
-        - Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772005110.git.zhengqi.arch@bytedance.com
-        - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
-        - Link: https://lwn.net/Articles/895431/ [2]
-        - Link: https://github.com/systemd/systemd/pull/36827 [3]
+- mm-new: 2 -> 1 commits
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - dropped commits
+    - da1b3853dac8 "mm: Do not allocate shrinker info with cgroup.memory=nokmem"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260225-cgroup-ml-nokmem-shrinker-v1-1-d703899bdda4@suse.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

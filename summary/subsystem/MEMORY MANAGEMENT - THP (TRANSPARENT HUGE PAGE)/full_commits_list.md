@@ -10,35 +10,40 @@
       - Link: https://lkml.kernel.org/r/20260214001535.435626-1-kartikey406@gmail.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 5 total, 1 (4) series, 1 non-series commits
+- mm-unstable: 6 total, 1 (4) series, 2 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, reviewer: 5 commits
   - full commits list
-      - aa1d2e177057 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 9a4c0265569c "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-    - d84fbbe60373 "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
+    - 960e13ecfbb2 "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260207081613.588598-6-vernon2gm@gmail.com
     - series "Improve khugepaged scan logic", v8. (4 commits)
-      - af0f8f79f3af "mm: khugepaged: add trace_mm_khugepaged_scan event" (0/4)
+      - 3e3b03d73b24 "mm: khugepaged: add trace_mm_khugepaged_scan event" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-2-vernon2gm@gmail.com
-      - 96d5866242ef "mm: khugepaged: refine scan progress number" (1/4)
+      - 138f27b8702f "mm: khugepaged: refine scan progress number" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-3-vernon2gm@gmail.com
-      - 7332f49de6b1 "mm: khugepaged: skip lazy-free folios" (3/4)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-5-vernon2gm@gmail.com
+      - cf0fec585819 "mm-khugepaged-refine-scan-progress-number-fix" (2/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/hbftflvdmnranprul4zkq3d2iymqm7ta2a7fwiphggsmt36gt7@bihvv5jg2ko5
+        - Link: https://lore.kernel.org/linux-mm/zdvzmoop5xswqcyiwmvvrdfianm4ccs3gryfecwbm4bhuh7ebo@7an4huwgbuwo [1]
+    - deda25f0eeda "mm: khugepaged: skip lazy-free folios"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260221093918.1456187-5-vernon2gm@gmail.com
 - mm-new: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 926374d0e3ce "mm: rename unlock_page_lruvec_irq and its variants"
+    - 64f937b8aa96 "mm: rename unlock_page_lruvec_irq and its variants"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
-    - ec767776d405 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()"
+    - 6d1e5146b6d6 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772005110.git.zhengqi.arch@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -121,7 +121,7 @@ index 6e88288e90d82..9a015258a2ffe 100644
  {
  	return true;
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index f3977ec7bc61c..ac5178f281b1d 100644
+index 7c03cdd4b03f2..02a264591d5ea 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
 @@ -84,6 +84,8 @@ EXPORT_SYMBOL(memory_cgrp_subsys);

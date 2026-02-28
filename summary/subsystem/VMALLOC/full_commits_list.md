@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - f3d03d5499bf "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
+    - b19383b57c81 "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/ff48283b-be21-7f9a-d616-e303a4a1ebe6@redhat.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -13,19 +13,19 @@
     - no role, no role : 1 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - 27c8231a6f77 "mm: vmalloc: streamline vmalloc memory accounting"
+    - f28825b42984 "mm: vmalloc: streamline vmalloc memory accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-    - 6091e96c2cbf "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+    - e14c1472a9aa "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
 - mm-new: 1 total, 1 (1) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
   - full commits list
     - series "Fix KASAN support for KHO restored vmalloc regions". (2 commits)
-      - 115c0eaa3e36 "mm/vmalloc: export clear_vm_uninitialized_flag()" (0/2)
-        - Authored by no role player, reviewed by nobody
+      - 9573299a0a69 "mm/vmalloc: export clear_vm_uninitialized_flag()" (0/2)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
         - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

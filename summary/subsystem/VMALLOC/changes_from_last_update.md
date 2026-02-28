@@ -6,25 +6,20 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 2 commits
+- mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-new: 1 -> 1 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, nobody: 1 -> 0 commits
     - no role, no role : 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 1 commits
   - changed commits
-    - 27c8231a6f77 "mm: vmalloc: streamline vmalloc memory accounting"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-    - 6091e96c2cbf "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
-- mm-new: 2 -> 1 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 1 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
-  - new commits
     - series "Fix KASAN support for KHO restored vmalloc regions". (2)
-      - 115c0eaa3e36 "mm/vmalloc: export clear_vm_uninitialized_flag() (0/2)"
+      - 9573299a0a69 "mm/vmalloc: export clear_vm_uninitialized_flag() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
+        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
         - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
         - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -40,6 +40,7 @@ this end, this commit makes the following preparations:
 
 Link: https://lkml.kernel.org/r/ef13e5974343b37ae2a0e28aff03ea2d033cb888.1772005110.git.zhengqi.arch@bytedance.com
 Signed-off-by: Qi Zheng <zhengqi.arch@bytedance.com>
+Acked-by: Shakeel Butt <shakeel.butt@linux.dev>
 Cc: Allen Pais <apais@linux.microsoft.com>
 Cc: Axel Rasmussen <axelrasmussen@google.com>
 Cc: Baoquan He <bhe@redhat.com>
@@ -60,7 +61,6 @@ Cc: Muchun Song <muchun.song@linux.dev>
 Cc: Muchun Song <songmuchun@bytedance.com>
 Cc: Nhat Pham <nphamcs@gmail.com>
 Cc: Roman Gushchin <roman.gushchin@linux.dev>
-Cc: Shakeel Butt <shakeel.butt@linux.dev>
 Cc: Tejun Heo <tj@kernel.org>
 Cc: Usama Arif <usamaarif642@gmail.com>
 Cc: Wei Xu <weixugc@google.com>
@@ -167,7 +167,7 @@ index 4041b5027a94b..d1db1f883f066 100644
  void memcg1_account_kmem(struct mem_cgroup *memcg, int nr_pages);
  static inline bool memcg1_tcpmem_active(struct mem_cgroup *memcg)
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index 93681b84b538c..d82dbfcc28057 100644
+index 154f2568a436b..204fe9f2f5b24 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
 @@ -226,6 +226,26 @@ static inline struct obj_cgroup *__memcg_reparent_objcgs(struct mem_cgroup *memc

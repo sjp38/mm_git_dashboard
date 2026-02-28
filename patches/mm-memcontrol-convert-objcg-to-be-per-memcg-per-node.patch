@@ -11,6 +11,7 @@ holding too many lru locks at once.
 
 Link: https://lkml.kernel.org/r/20260225094456.74145-1-qi.zheng@linux.dev
 Signed-off-by: Qi Zheng <zhengqi.arch@bytedance.com>
+Acked-by: Shakeel Butt <shakeel.butt@linux.dev>
 Cc: Allen Pais <apais@linux.microsoft.com>
 Cc: Axel Rasmussen <axelrasmussen@google.com>
 Cc: Baoquan He <bhe@redhat.com>
@@ -26,7 +27,6 @@ Cc: Michal Hocko <mhocko@kernel.org>
 Cc: Michal Koutný <mkoutny@suse.com>
 Cc: Muchun Song <muchun.song@linux.dev>
 Cc: Roman Gushchin <roman.gushchin@linux.dev>
-Cc: Shakeel Butt <shakeel.butt@linux.dev>
 Cc: Tejun Heo <tj@kernel.org>
 Cc: Usama Arif <usamaarif642@gmail.com>
 Cc: Wei Xu <weixugc@google.com>
@@ -120,7 +120,7 @@ index 074ad4ef3d813..caa42b28df72d 100644
  #endif
  
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index d82dbfcc28057..648c0672eba03 100644
+index 204fe9f2f5b24..f0f77752fa2af 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
 @@ -84,8 +84,6 @@ EXPORT_SYMBOL(memory_cgrp_subsys);

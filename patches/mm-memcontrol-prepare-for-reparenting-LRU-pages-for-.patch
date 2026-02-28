@@ -265,7 +265,7 @@ index c3e338aaa0ffb..3648ce22c8072 100644
  			 * Try get exclusive access under lock. If marked for
  			 * skip, the scan is aborted unless the current context
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index 8a76b4b9cdec4..03625ce3624fa 100644
+index ee02e4369a815..b75ee69765803 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
 @@ -1207,23 +1207,6 @@ void mem_cgroup_scan_tasks(struct mem_cgroup *memcg,
