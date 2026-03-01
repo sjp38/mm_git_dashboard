@@ -5,29 +5,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 2 -> 0 commits
+- mm-unstable: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
     - no role, no role : 0 -> 1 commits
     - no role, reviewer: 0 -> 1 commits
   - changed commits
     - series "mm: Remove stray references to pagevec", v2. (4)
-      - 82831caf6486 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+      - e1949e7512b5 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - added "Reviewed-by: Jan Kara <jack@suse.cz>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 29a29ccbe316 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
+      - d74e8675a5ea "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - added "Reviewed-by: Jan Kara <jack@suse.cz>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
+- mm-new: 2 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

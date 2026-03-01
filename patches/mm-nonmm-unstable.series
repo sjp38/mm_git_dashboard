@@ -1,4 +1,4 @@
-mm-hotfixes-stable-2026-02-26-14-14-10-ge002d4b70d364
+mm-hotfixes-stable-2026-02-26-14-14-12-ge07d8d00c8446
 proc-array-drop-stale-FIXME-about-RCU-in-task_sig.patch
 proc-fix-pointer-error-dereference.patch
 Squashfs-check-xz-dictionary-size-isn-t-zero.patch
@@ -54,3 +54,11 @@ async_xor-use-xor_gen.patch
 btrfs-use-xor_gen.patch
 xor-pass-the-entire-operation-to-the-low-level-ops.patch
 xor-use-static_call-for-xor_gen.patch
+selftests-filesystems-assume-that-TIOCGPTPEER-is-def.patch
+crash_dump-remove-redundant-less-than-zero-check.patch
+crash_dump-fix-typo-in-function-name-read_key_from_u.patch
+pid-make-sub-init-creation-retryable.patch
+pid-document-the-PIDNS_ADDING-checks-in-alloc_pid-an.patch
+lib-glob-add-missing-SPDX-License-Identifier.patch
+selftests-fchmodat2-clean-up-temporary-files-and-dir.patch
+selftests-fchmodat2-use-ksft_finished.patch

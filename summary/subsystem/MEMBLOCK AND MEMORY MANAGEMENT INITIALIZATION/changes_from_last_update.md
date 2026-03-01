@@ -6,27 +6,34 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 5 commits
-  - series: 1 (4) -> 2 (5)
-    - no role, no role : 0 -> 1 commits
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 2 (5) -> 2 (5) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - series "kho: add support for deferred struct page init", v5. (2)
-      - 4a9b64aa136f "kho: fix deferred init of kho scratch (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260225153955.1006649-1-mclapinski@google.com
-        - Link: https://lkml.kernel.org/r/20260225153955.1006649-2-mclapinski@google.com
-- mm-new: 1 -> 1 commits (no change)
-  - series: 1 (1) -> 0 (1)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 0 -> 1 commits
+- mm-new: 1 -> 2 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
   - new commits
-    - series "mm: zone lock tracepoint instrumentation", v3. (5)
-      - 80e2ebedecfc "mm: convert zone lock users to wrappers (1/5)"
+    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
+      - ed6b6b352cc2 "mm: change the interface of prep_compound_tail() (1/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
+  - changed commits
+    - series "mm: zone lock tracepoint instrumentation", v4. (5)
+      - eefb08cbbd56 "mm: convert zone lock users to wrappers (1/5)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/e5324d64361f86d930d940a5b49235f7996efe53.1772129168.git.d@ilvokhin.com
+        - added "Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
+        - added "Cc: Len Brown <lenb@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/e5324d64361f86d930d940a5b49235f7996efe53.1772129168.git.d@ilvokhin.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Ben Cheatham <benjamin.cheatham@amd.com>"
+        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -2,24 +2,28 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - reviewer, nobody: 0 -> 1 commits
+  - new commits
+    - bbcd0cfe6376 "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260228010614.2536430-1-ziy@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 6 commits
+- mm-unstable: 6 -> 6 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-  - new commits
-    - series "Improve khugepaged scan logic", v8. (4)
-      - cf0fec585819 "mm-khugepaged-refine-scan-progress-number-fix (2/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/hbftflvdmnranprul4zkq3d2iymqm7ta2a7fwiphggsmt36gt7@bihvv5jg2ko5
-        - Link: https://lore.kernel.org/linux-mm/zdvzmoop5xswqcyiwmvvrdfianm4ccs3gryfecwbm4bhuh7ebo@7an4huwgbuwo [1]
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 2 -> 3 commits
+  - series: 0 (0) -> 0 (2)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 0 -> 1 commits
+  - new commits
+    - 81296c7f83c1 "khugepaged: remove redundant index check for pmd-folios"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260227143501.1488110-1-dev.jain@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -6,22 +6,20 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-unstable: 2 -> 3 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, no role : 1 -> 2 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
   - changed commits
     - series "Fix KASAN support for KHO restored vmalloc regions". (2)
-      - 9573299a0a69 "mm/vmalloc: export clear_vm_uninitialized_flag() (0/2)"
+      - 215f0b1797f6 "mm/vmalloc: export clear_vm_uninitialized_flag() (0/2)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
-        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
         - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
+- mm-new: 1 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

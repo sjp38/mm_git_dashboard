@@ -95,7 +95,7 @@ index 80f9fc10877ad..7d90d2485c787 100644
  				 */
  				page_pool_recycle_direct(pp_page_to_nmdesc(page)->pp,
 diff --git a/include/linux/mm.h b/include/linux/mm.h
-index b1e5caa537930..4dfcd86a0f9cf 100644
+index fc4f2152d85d8..6f196d2b550fc 100644
 --- a/include/linux/mm.h
 +++ b/include/linux/mm.h
 @@ -4810,10 +4810,9 @@ int arch_lock_shadow_stack_status(struct task_struct *t, unsigned long status);
@@ -140,7 +140,7 @@ index b1e5caa537930..4dfcd86a0f9cf 100644
  #define PAGE_SNAPSHOT_PG_BUDDY (1 << 1)
  #define PAGE_SNAPSHOT_PG_IDLE  (1 << 2)
 diff --git a/include/linux/page-flags.h b/include/linux/page-flags.h
-index 0426cac91c0bb..30c4eb24e4edf 100644
+index 415e9f2ef616b..db73f1ff6b613 100644
 --- a/include/linux/page-flags.h
 +++ b/include/linux/page-flags.h
 @@ -939,6 +939,7 @@ enum pagetype {

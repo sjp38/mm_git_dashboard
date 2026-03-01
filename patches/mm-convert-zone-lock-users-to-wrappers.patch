@@ -1,5 +1,5 @@
 From: Dmitry Ilvokhin <d@ilvokhin.com>
-Date: Thu, 26 Feb 2026 18:26:19 +0000
+Date: Fri, 27 Feb 2026 16:00:24 +0000
 Subject: [PATCH] mm: convert zone lock users to wrappers
 
 Replace direct zone lock acquire/release operations with the newly
@@ -12,14 +12,16 @@ The compaction path is left unchanged for now and will be handled
 separately in the following patch due to additional non-trivial
 modifications.
 
-Link: https://lkml.kernel.org/r/e5324d64361f86d930d940a5b49235f7996efe53.1772129168.git.d@ilvokhin.com
+Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
 Signed-off-by: Dmitry Ilvokhin <d@ilvokhin.com>
 Acked-by: Shakeel Butt <shakeel.butt@linux.dev>
+Reviewed-by: SeongJae Park <sj@kernel.org>
+Acked-by: David Hildenbrand (Arm) <david@kernel.org>
+Acked-by: Zi Yan <ziy@nvidia.com>
 Cc: Axel Rasmussen <axelrasmussen@google.com>
-Cc: Ben Cheatham <benjamin.cheatham@amd.com>
 Cc: Brendan Jackman <jackmanb@google.com>
-Cc: David Hildenbrand <david@kernel.org>
 Cc: Johannes Weiner <hannes@cmpxchg.org>
+Cc: Len Brown <lenb@kernel.org>
 Cc: Liam Howlett <liam.howlett@oracle.com>
 Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>
 Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>
@@ -33,29 +35,60 @@ Cc: Suren Baghdasaryan <surenb@google.com>
 Cc: Vlastimil Babka <vbabka@suse.cz>
 Cc: Wei Xu <weixugc@google.com>
 Cc: Yuanchu Xie <yuanchu@google.com>
-Cc: Zi Yan <ziy@nvidia.com>
 Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
 ---
- mm/compaction.c     | 25 +++++++++-------
- mm/memory_hotplug.c |  9 +++---
- mm/mm_init.c        |  3 +-
- mm/page_alloc.c     | 73 +++++++++++++++++++++++----------------------
- mm/page_isolation.c | 19 ++++++------
- mm/page_reporting.c | 13 ++++----
- mm/show_mem.c       |  5 ++--
- mm/vmscan.c         |  5 ++--
- mm/vmstat.c         |  9 +++---
- 9 files changed, 86 insertions(+), 75 deletions(-)
+ kernel/power/snapshot.c |  5 +--
+ mm/compaction.c         | 25 +++++++-------
+ mm/memory_hotplug.c     |  9 ++---
+ mm/mm_init.c            |  3 +-
+ mm/page_alloc.c         | 73 +++++++++++++++++++++--------------------
+ mm/page_isolation.c     | 19 ++++++-----
+ mm/page_reporting.c     | 13 ++++----
+ mm/show_mem.c           |  5 +--
+ mm/shuffle.c            |  9 ++---
+ mm/vmscan.c             |  5 +--
+ mm/vmstat.c             |  9 ++---
+ 11 files changed, 94 insertions(+), 81 deletions(-)
 
+diff --git a/kernel/power/snapshot.c b/kernel/power/snapshot.c
+index 6e1321837c668..7dcccf378cc2f 100644
+--- a/kernel/power/snapshot.c
++++ b/kernel/power/snapshot.c
+@@ -13,6 +13,7 @@
+ #include <linux/version.h>
+ #include <linux/module.h>
+ #include <linux/mm.h>
++#include <linux/mmzone_lock.h>
+ #include <linux/suspend.h>
+ #include <linux/delay.h>
+ #include <linux/bitops.h>
+@@ -1251,7 +1252,7 @@ static void mark_free_pages(struct zone *zone)
+ 	if (zone_is_empty(zone))
+ 		return;
+ 
+-	spin_lock_irqsave(&zone->lock, flags);
++	zone_lock_irqsave(zone, flags);
+ 
+ 	max_zone_pfn = zone_end_pfn(zone);
+ 	for_each_valid_pfn(pfn, zone->zone_start_pfn, max_zone_pfn) {
+@@ -1284,7 +1285,7 @@ static void mark_free_pages(struct zone *zone)
+ 			}
+ 		}
+ 	}
+-	spin_unlock_irqrestore(&zone->lock, flags);
++	zone_unlock_irqrestore(zone, flags);
+ }
+ 
+ #ifdef CONFIG_HIGHMEM
 diff --git a/mm/compaction.c b/mm/compaction.c
-index 3648ce22c8072..e9ea3cf3f74df 100644
+index 3648ce22c8072..fc026712cb0cb 100644
 --- a/mm/compaction.c
 +++ b/mm/compaction.c
 @@ -24,6 +24,7 @@
  #include <linux/page_owner.h>
  #include <linux/psi.h>
  #include <linux/cpuset.h>
-+#include <linux/zone_lock.h>
++#include <linux/mmzone_lock.h>
  #include "internal.h"
  
  #ifdef CONFIG_COMPACTION
@@ -135,14 +168,14 @@ index 3648ce22c8072..e9ea3cf3f74df 100644
  
  	cc->total_migrate_scanned += nr_scanned;
 diff --git a/mm/memory_hotplug.c b/mm/memory_hotplug.c
-index a602310bdf33d..00042d413bbfc 100644
+index a602310bdf33d..86d3faf504537 100644
 --- a/mm/memory_hotplug.c
 +++ b/mm/memory_hotplug.c
 @@ -36,6 +36,7 @@
  #include <linux/rmap.h>
  #include <linux/module.h>
  #include <linux/node.h>
-+#include <linux/zone_lock.h>
++#include <linux/mmzone_lock.h>
  
  #include <asm/tlbflush.h>
  
@@ -171,14 +204,14 @@ index a602310bdf33d..00042d413bbfc 100644
  	lru_cache_enable();
  	zone_pcp_enable(zone);
 diff --git a/mm/mm_init.c b/mm/mm_init.c
-index f903747ca854d..f68d32990393c 100644
+index 5b261f86ba6f3..cec7bb758bdd1 100644
 --- a/mm/mm_init.c
 +++ b/mm/mm_init.c
 @@ -32,6 +32,7 @@
  #include <linux/vmstat.h>
  #include <linux/kexec_handover.h>
  #include <linux/hugetlb.h>
-+#include <linux/zone_lock.h>
++#include <linux/mmzone_lock.h>
  #include "internal.h"
  #include "slab.h"
  #include "shuffle.h"
@@ -192,14 +225,14 @@ index f903747ca854d..f68d32990393c 100644
  	zone_pcp_init(zone);
  }
 diff --git a/mm/page_alloc.c b/mm/page_alloc.c
-index 460e481cc37ec..d1b04e2e5872f 100644
+index 827065f15d654..344582ffa7ae3 100644
 --- a/mm/page_alloc.c
 +++ b/mm/page_alloc.c
 @@ -54,6 +54,7 @@
  #include <linux/delayacct.h>
  #include <linux/cacheinfo.h>
  #include <linux/pgalloc_tag.h>
-+#include <linux/zone_lock.h>
++#include <linux/mmzone_lock.h>
  #include <asm/div64.h>
  #include "internal.h"
  #include "shuffle.h"
@@ -489,14 +522,14 @@ index 460e481cc37ec..d1b04e2e5872f 100644
  	return true;
  }
 diff --git a/mm/page_isolation.c b/mm/page_isolation.c
-index c48ff5c002449..56a272f38b667 100644
+index c48ff5c002449..91a0836bf1b76 100644
 --- a/mm/page_isolation.c
 +++ b/mm/page_isolation.c
 @@ -10,6 +10,7 @@
  #include <linux/hugetlb.h>
  #include <linux/page_owner.h>
  #include <linux/migrate.h>
-+#include <linux/zone_lock.h>
++#include <linux/mmzone_lock.h>
  #include "internal.h"
  
  #define CREATE_TRACE_POINTS
@@ -568,17 +601,17 @@ index c48ff5c002449..56a272f38b667 100644
  	ret = pfn < end_pfn ? -EBUSY : 0;
  
 diff --git a/mm/page_reporting.c b/mm/page_reporting.c
-index c02874174ddae..b0df83b780ea4 100644
+index c02874174ddae..fd10685175388 100644
 --- a/mm/page_reporting.c
 +++ b/mm/page_reporting.c
-@@ -7,6 +7,7 @@
- #include <linux/module.h>
- #include <linux/delay.h>
- #include <linux/scatterlist.h>
-+#include <linux/zone_lock.h>
- 
- #include "page_reporting.h"
- #include "internal.h"
+@@ -1,6 +1,7 @@
+ // SPDX-License-Identifier: GPL-2.0
+ #include <linux/mm.h>
+ #include <linux/mmzone.h>
++#include <linux/mmzone_lock.h>
+ #include <linux/page_reporting.h>
+ #include <linux/gfp.h>
+ #include <linux/export.h>
 @@ -161,7 +162,7 @@ page_reporting_cycle(struct page_reporting_dev_info *prdev, struct zone *zone,
  	if (list_empty(list))
  		return err;
@@ -628,17 +661,17 @@ index c02874174ddae..b0df83b780ea4 100644
  
  	return err;
 diff --git a/mm/show_mem.c b/mm/show_mem.c
-index 24078ac3e6bca..245beca127afb 100644
+index 24078ac3e6bca..d7d1b6cd6442d 100644
 --- a/mm/show_mem.c
 +++ b/mm/show_mem.c
-@@ -14,6 +14,7 @@
+@@ -12,6 +12,7 @@
+ #include <linux/hugetlb.h>
+ #include <linux/mm.h>
  #include <linux/mmzone.h>
++#include <linux/mmzone_lock.h>
  #include <linux/swap.h>
  #include <linux/vmstat.h>
-+#include <linux/zone_lock.h>
  
- #include "internal.h"
- #include "swap.h"
 @@ -363,7 +364,7 @@ static void show_free_areas(unsigned int filter, nodemask_t *nodemask, int max_z
  		show_node(zone);
  		printk(KERN_CONT "%s: ", zone->name);
@@ -657,15 +690,52 @@ index 24078ac3e6bca..245beca127afb 100644
  		for (order = 0; order < NR_PAGE_ORDERS; order++) {
  			printk(KERN_CONT "%lu*%lukB ",
  			       nr[order], K(1UL) << order);
+diff --git a/mm/shuffle.c b/mm/shuffle.c
+index fb1393b8b3a9d..5f6ae3c528427 100644
+--- a/mm/shuffle.c
++++ b/mm/shuffle.c
+@@ -4,6 +4,7 @@
+ #include <linux/mm.h>
+ #include <linux/init.h>
+ #include <linux/mmzone.h>
++#include <linux/mmzone_lock.h>
+ #include <linux/random.h>
+ #include <linux/moduleparam.h>
+ #include "internal.h"
+@@ -85,7 +86,7 @@ void __meminit __shuffle_zone(struct zone *z)
+ 	const int order = SHUFFLE_ORDER;
+ 	const int order_pages = 1 << order;
+ 
+-	spin_lock_irqsave(&z->lock, flags);
++	zone_lock_irqsave(z, flags);
+ 	start_pfn = ALIGN(start_pfn, order_pages);
+ 	for (i = start_pfn; i < end_pfn; i += order_pages) {
+ 		unsigned long j;
+@@ -138,12 +139,12 @@ void __meminit __shuffle_zone(struct zone *z)
+ 
+ 		/* take it easy on the zone lock */
+ 		if ((i % (100 * order_pages)) == 0) {
+-			spin_unlock_irqrestore(&z->lock, flags);
++			zone_unlock_irqrestore(z, flags);
+ 			cond_resched();
+-			spin_lock_irqsave(&z->lock, flags);
++			zone_lock_irqsave(z, flags);
+ 		}
+ 	}
+-	spin_unlock_irqrestore(&z->lock, flags);
++	zone_unlock_irqrestore(z, flags);
+ }
+ 
+ /*
 diff --git a/mm/vmscan.c b/mm/vmscan.c
-index b3edf0c3be170..cfcf488b61441 100644
+index b3edf0c3be170..2257c266c6fee 100644
 --- a/mm/vmscan.c
 +++ b/mm/vmscan.c
 @@ -58,6 +58,7 @@
  #include <linux/random.h>
  #include <linux/mmu_notifier.h>
  #include <linux/parser.h>
-+#include <linux/zone_lock.h>
++#include <linux/mmzone_lock.h>
  
  #include <asm/tlbflush.h>
  #include <asm/div64.h>
@@ -682,14 +752,14 @@ index b3edf0c3be170..cfcf488b61441 100644
  
  		/*
 diff --git a/mm/vmstat.c b/mm/vmstat.c
-index 2370c6fb1fcd6..345869f1b19f6 100644
+index 2370c6fb1fcd6..b33097ab9bc81 100644
 --- a/mm/vmstat.c
 +++ b/mm/vmstat.c
 @@ -28,6 +28,7 @@
  #include <linux/mm_inline.h>
  #include <linux/page_owner.h>
  #include <linux/sched/isolation.h>
-+#include <linux/zone_lock.h>
++#include <linux/mmzone_lock.h>
  
  #include "internal.h"
  

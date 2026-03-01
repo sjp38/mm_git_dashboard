@@ -71,7 +71,7 @@ index 5630c7dca1f3d..7e980ea49d8d6 100644
  		    cmdline_len + MAX_ELFCOREHDR_STR_LEN + MAX_DMCRYPTKEYS_STR_LEN >
  			    header->cmdline_size) {
 diff --git a/kernel/crash_dump_dm_crypt.c b/kernel/crash_dump_dm_crypt.c
-index 1f4067fbdb943..2f7b42b096736 100644
+index a20d4097744ae..097f72e32c5ef 100644
 --- a/kernel/crash_dump_dm_crypt.c
 +++ b/kernel/crash_dump_dm_crypt.c
 @@ -414,14 +414,16 @@ int crash_load_dm_crypt_keys(struct kimage *image)

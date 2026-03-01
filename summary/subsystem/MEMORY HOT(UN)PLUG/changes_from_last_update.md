@@ -8,14 +8,23 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - series "mm: zone lock tracepoint instrumentation", v3. (5)
-      - 80e2ebedecfc "mm: convert zone lock users to wrappers (1/5)"
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: zone lock tracepoint instrumentation", v4. (5)
+      - eefb08cbbd56 "mm: convert zone lock users to wrappers (1/5)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/e5324d64361f86d930d940a5b49235f7996efe53.1772129168.git.d@ilvokhin.com
+        - added "Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com"
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
+        - added "Cc: Len Brown <lenb@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/e5324d64361f86d930d940a5b49235f7996efe53.1772129168.git.d@ilvokhin.com"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Ben Cheatham <benjamin.cheatham@amd.com>"
+        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

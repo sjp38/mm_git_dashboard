@@ -15,30 +15,34 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
-      - 071b7a1c3c1c "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
+      - 46666cd98ab8 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 9a4c0265569c "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - f259d3225e47 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - c228380463e7 "arch, mm: consolidate empty_zero_page" (2/4)
+      - 9b4cde4b82f0 "arch, mm: consolidate empty_zero_page" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - b5c102119d27 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
+      - 78e9effad5f4 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
     - series "kho: add support for deferred struct page init", v5. (2 commits)
-      - 4a9b64aa136f "kho: fix deferred init of kho scratch" (0/2)
+      - d77cd198f813 "kho: fix deferred init of kho scratch" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225153955.1006649-1-mclapinski@google.com
         - Link: https://lkml.kernel.org/r/20260225153955.1006649-2-mclapinski@google.com
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
+- mm-new: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-      - 80e2ebedecfc "mm: convert zone lock users to wrappers" (1/5)
+      - ed6b6b352cc2 "mm: change the interface of prep_compound_tail()" (1/17)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
+      - eefb08cbbd56 "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/e5324d64361f86d930d940a5b49235f7996efe53.1772129168.git.d@ilvokhin.com
+        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

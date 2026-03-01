@@ -28,7 +28,7 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
  2 files changed, 5 insertions(+), 12 deletions(-)
 
 diff --git a/include/linux/mm.h b/include/linux/mm.h
-index e7dc3a115bd8b..b1e5caa537930 100644
+index abb4963c1f064..fc4f2152d85d8 100644
 --- a/include/linux/mm.h
 +++ b/include/linux/mm.h
 @@ -4486,13 +4486,6 @@ unsigned long section_map_size(void);

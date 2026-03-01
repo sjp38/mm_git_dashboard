@@ -1,49 +1,44 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - e002d4b70d36 "memcg: fix slab accounting in refill_obj_stock() trylock path"
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - 9f07f5d4cea8 "memcg: fix slab accounting in refill_obj_stock() trylock path"
       - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
       - Link: https://lkml.kernel.org/r/20260226115145.62903-1-hao.li@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
+- mm-unstable: 5 -> 6 commits
+  - series: 1 (1) -> 1 (2)
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 15 -> 15 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 4 -> 0 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 10 -> 13 commits
-    - reviewer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - b7c10cb20c05 "mm: memcontrol: prepare for reparenting non-hierarchical stats"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lkml.kernel.org/r/ef13e5974343b37ae2a0e28aff03ea2d033cb888.1772005110.git.zhengqi.arch@bytedance.com
-    - 4239ed2dddc7 "mm: memcontrol: convert objcg to be per-memcg per-node type"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lkml.kernel.org/r/20260225094456.74145-1-qi.zheng@linux.dev
-    - 636ffb5b28a9 "mm: memcontrol: eliminate the problem of dying memory cgroup for LRU folios"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lkml.kernel.org/r/ff5a945386f168faa877901d569296592cdaadc3.1772005110.git.zhengqi.arch@bytedance.com
     - series "mm: Remove stray references to pagevec", v2. (4)
-      - 82831caf6486 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+      - e1949e7512b5 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - added "Reviewed-by: Jan Kara <jack@suse.cz>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+- mm-new: 15 -> 15 commits (no change)
+  - series: 1 (2) -> 1 (15)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 13 -> 14 commits
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - series "Eliminate Dying Memory Cgroup", v5. (32)
+      - 5848e3666212 "mm-memcontrol-prepare-for-reparenting-non-hierarchical-stats-update (29/32)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260228072556.31793-1-qi.zheng@linux.dev
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v5. (32)
+      - 1a6fb3c7e49b "mm: memcontrol: prepare for reparenting non-hierarchical stats (28/32)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
+        - Link: https://lkml.kernel.org/r/ef13e5974343b37ae2a0e28aff03ea2d033cb888.1772005110.git.zhengqi.arch@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

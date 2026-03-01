@@ -1,24 +1,41 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, maintainer: 0 -> 1 commits
-  - new commits
-    - 888cdeeada32 "zram: rename writeback_compressed device attr"
-      - Authored by a maintainer, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260226025429.1042083-1-senozhatsky@chromium.org
+    - maintainer, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - 21c9e03e4229 "zram: use statically allocated compression algorithm names"
-      - Authored by no role player, reviewed by nobody
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - d8a865f49f11 "zram: use statically allocated compression algorithm names"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Sergey Senozhatsky <senozhatsky@chromium.org>"
+      - dropped "Cc: Sergey Senozhatsky <senozhatsky@chromium.org>"
       - Link: https://lkml.kernel.org/r/5bb2e9318d124dbcb2b743dcdce6a950@honor.com
+- mm-new: 1 -> 5 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - maintainer, nobody: 0 -> 5 commits
+  - new commits
+    - 855744163c6a "zram: do not autocorrect bad recompression parameters"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/8a5d53d19a8dbd51d7d81d153676895163e0735e.1772180459.git.senozhatsky@chromium.org
+    - 343349fbe7f8 "zram: drop ->num_active_comps"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/eb7cd3ca578320be9aff13e71298fc36e110af41.1772180459.git.senozhatsky@chromium.org
+    - 52d400ce9514 "zram: recompression priority param should override algo"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/831636c74ca6d72317de02d96585cc6833d082e6.1772180459.git.senozhatsky@chromium.org
+    - 0635228c7d4f "zram: update recompression documentation"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/0d9bdbb19a4a1511e8c73d1e91227c47912a8009.1772180459.git.senozhatsky@chromium.org
+    - 7772a059b4ef "zram: remove chained recompression"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/cf100b13afb62641d7f3bc10fd77068833f56af0.1772180459.git.senozhatsky@chromium.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

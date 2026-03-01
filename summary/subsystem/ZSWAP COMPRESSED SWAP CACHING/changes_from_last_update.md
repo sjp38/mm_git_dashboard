@@ -9,7 +9,7 @@
   - series: 0 (1) -> 0 (1) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
 - mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+  - series: 0 (0) -> 0 (2)
     - no role, maintainer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

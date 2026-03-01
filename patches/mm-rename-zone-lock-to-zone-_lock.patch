@@ -1,5 +1,5 @@
 From: Dmitry Ilvokhin <d@ilvokhin.com>
-Date: Thu, 26 Feb 2026 18:26:21 +0000
+Date: Fri, 27 Feb 2026 16:00:26 +0000
 Subject: [PATCH] mm: rename zone->lock to zone->_lock
 
 This intentionally breaks direct users of zone->lock at compile time so
@@ -9,15 +9,17 @@ spin_lock(&zone->lock) and bypass the wrappers and tracing infrastructure.
 
 No functional change intended.
 
-Link: https://lkml.kernel.org/r/1221b8e7fa9f5694f3c4e411f01581b5aba9bc63.1772129168.git.d@ilvokhin.com
+Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
 Signed-off-by: Dmitry Ilvokhin <d@ilvokhin.com>
 Suggested-by: Andrew Morton <akpm@linux-foundation.org>
 Acked-by: Shakeel Butt <shakeel.butt@linux.dev>
+Acked-by: SeongJae Park <sj@kernel.org>
+Acked-by: David Hildenbrand (Arm) <david@kernel.org>
+Acked-by: Zi Yan <ziy@nvidia.com>
 Cc: Axel Rasmussen <axelrasmussen@google.com>
-Cc: Ben Cheatham <benjamin.cheatham@amd.com>
 Cc: Brendan Jackman <jackmanb@google.com>
-Cc: David Hildenbrand <david@kernel.org>
 Cc: Johannes Weiner <hannes@cmpxchg.org>
+Cc: Len Brown <lenb@kernel.org>
 Cc: Liam Howlett <liam.howlett@oracle.com>
 Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>
 Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>
@@ -31,23 +33,22 @@ Cc: Suren Baghdasaryan <surenb@google.com>
 Cc: Vlastimil Babka <vbabka@suse.cz>
 Cc: Wei Xu <weixugc@google.com>
 Cc: Yuanchu Xie <yuanchu@google.com>
-Cc: Zi Yan <ziy@nvidia.com>
 Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
 ---
- include/linux/mmzone.h    |  7 +++++--
- include/linux/zone_lock.h | 12 ++++++------
- mm/compaction.c           |  4 ++--
- mm/internal.h             |  2 +-
- mm/page_alloc.c           | 16 ++++++++--------
- mm/page_isolation.c       |  4 ++--
- mm/page_owner.c           |  2 +-
+ include/linux/mmzone.h      |  7 +++++--
+ include/linux/mmzone_lock.h | 12 ++++++------
+ mm/compaction.c             |  4 ++--
+ mm/internal.h               |  2 +-
+ mm/page_alloc.c             | 16 ++++++++--------
+ mm/page_isolation.c         |  4 ++--
+ mm/page_owner.c             |  2 +-
  7 files changed, 25 insertions(+), 22 deletions(-)
 
 diff --git a/include/linux/mmzone.h b/include/linux/mmzone.h
-index bc11ce4f2021c..3e2f9c953ad49 100644
+index 7dbf0b58b9261..cccadda20847f 100644
 --- a/include/linux/mmzone.h
 +++ b/include/linux/mmzone.h
-@@ -1040,8 +1040,11 @@ struct zone {
+@@ -1094,8 +1094,11 @@ struct zone {
  	/* zone flags, see below */
  	unsigned long		flags;
  
@@ -61,10 +62,10 @@ index bc11ce4f2021c..3e2f9c953ad49 100644
  
  	/* Pages to be freed when next trylock succeeds */
  	struct llist_head	trylock_free_pages;
-diff --git a/include/linux/zone_lock.h b/include/linux/zone_lock.h
-index c531e26280e69..5ce1aa38d5009 100644
---- a/include/linux/zone_lock.h
-+++ b/include/linux/zone_lock.h
+diff --git a/include/linux/mmzone_lock.h b/include/linux/mmzone_lock.h
+index a1cfba8408d63..62e34d500078f 100644
+--- a/include/linux/mmzone_lock.h
++++ b/include/linux/mmzone_lock.h
 @@ -7,32 +7,32 @@
  
  static inline void zone_lock_init(struct zone *zone)
@@ -103,17 +104,17 @@ index c531e26280e69..5ce1aa38d5009 100644
 +	spin_unlock_irq(&zone->_lock);
  }
  
- #endif /* _LINUX_ZONE_LOCK_H */
+ #endif /* _LINUX_MMZONE_LOCK_H */
 diff --git a/mm/compaction.c b/mm/compaction.c
-index 0cb76da1bbc7e..f10ff4c81ae6c 100644
+index 97ae6028d377b..143ead2cb10ae 100644
 --- a/mm/compaction.c
 +++ b/mm/compaction.c
 @@ -506,7 +506,7 @@ static bool test_and_set_skip(struct compact_control *cc, struct page *page)
  static bool compact_zone_lock_irqsave(struct zone *zone,
  				      unsigned long *flags,
  				      struct compact_control *cc)
--__acquires(&zone->lock)
-+__acquires(&zone->_lock)
+-	__acquires(&zone->lock)
++	__acquires(&zone->_lock)
  {
  	/* Track if the lock is contended in async mode */
  	if (cc->mode == MIGRATE_ASYNC && !cc->contended) {
@@ -127,7 +128,7 @@ index 0cb76da1bbc7e..f10ff4c81ae6c 100644
  		 * pageblock, so it's not worth to check order for valid range.
  		 */
 diff --git a/mm/internal.h b/mm/internal.h
-index 2daa6a744172e..f4d95e2ab7992 100644
+index 84167b0570c96..861a65a2399a2 100644
 --- a/mm/internal.h
 +++ b/mm/internal.h
 @@ -729,7 +729,7 @@ static inline unsigned int buddy_order(struct page *page)
@@ -140,7 +141,7 @@ index 2daa6a744172e..f4d95e2ab7992 100644
   * For recording page's order, we use page_private(page).
   */
 diff --git a/mm/page_alloc.c b/mm/page_alloc.c
-index d1b04e2e5872f..2d2e9eea077f5 100644
+index 344582ffa7ae3..65e702fade615 100644
 --- a/mm/page_alloc.c
 +++ b/mm/page_alloc.c
 @@ -815,7 +815,7 @@ compaction_capture(struct capture_control *capc, struct page *page,
@@ -216,7 +217,7 @@ index d1b04e2e5872f..2d2e9eea077f5 100644
  	page = get_page_from_freelist(alloc_gfp, order, alloc_flags, &ac);
  
 diff --git a/mm/page_isolation.c b/mm/page_isolation.c
-index 56a272f38b667..78b58dae2015e 100644
+index 91a0836bf1b76..cf731370e7a79 100644
 --- a/mm/page_isolation.c
 +++ b/mm/page_isolation.c
 @@ -212,7 +212,7 @@ static int set_migratetype_isolate(struct page *page, enum pb_isolate_mode mode,

@@ -5,21 +5,12 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 3 commits
+- mm-unstable: 3 -> 3 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, reviewer: 2 -> 3 commits
-  - new commits
-    - 6d2450c31670 "mm: do not allocate shrinker info with cgroup.memory=nokmem"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260225-cgroup-ml-nokmem-shrinker-v1-1-d703899bdda4@suse.com
-- mm-new: 2 -> 1 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
+- mm-new: 1 -> 1 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
-    - no role, reviewer: 1 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-  - dropped commits
-    - da1b3853dac8 "mm: Do not allocate shrinker info with cgroup.memory=nokmem"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260225-cgroup-ml-nokmem-shrinker-v1-1-d703899bdda4@suse.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

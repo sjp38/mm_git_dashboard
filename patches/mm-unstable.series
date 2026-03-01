@@ -1,4 +1,4 @@
-mm-hotfixes-stable-2026-02-26-14-14-10-ge002d4b70d364
+mm-hotfixes-stable-2026-02-26-14-14-12-ge07d8d00c8446
 mm-swap-speed-up-hibernation-allocation-and-writeout.patch
 mm-migrate_device-remove-dead-migration-entry-check-.patch
 mm-page_alloc-avoid-overcounting-bulk-alloc-in-water.patch
@@ -75,7 +75,6 @@ arch-mm-consolidate-empty_zero_page.patch
 mm-cache-struct-page-for-empty_zero_page-and-return-.patch
 selftests-mm-remove-duplicate-include-of-unistd.h.patch
 mm-khugepaged-set-to-next-mm-direct-when-mm-has-MMF_.patch
-mm-make-ref_unless-functions-unless_zero-only.patch
 mm-mmu_notifiers-use-hlist_for_each_entry_srcu-for-S.patch
 mm-page_idle.c-remove-redundant-mmu-notifier-in-agin.patch
 mm-zswap-remove-SWP_SYNCHRONOUS_IO-swapcache-bypass-.patch
@@ -90,7 +89,6 @@ mm-add-folio_test_lazyfree-helper.patch
 mm-khugepaged-skip-lazy-free-folios.patch
 mm-centralize-fix-comments-about-compound_mapcount-i.patch
 mm-centralizefix-comments-about-compound_mapcount-in.patch
-mm-hugetlb_vmemmap-update-outdated-comment.patch
 kho-move-alloc-tag-init-to-kho_init_-folio-pages.patch
 kho-adopt-radix-tree-for-preserved-memory-tracking.patch
 kho-remove-finalize-state-and-clients.patch
@@ -111,3 +109,17 @@ mm-do-not-map-the-shadow-stack-as-THP.patch
 kho-fix-deferred-init-of-kho-scratch.patch
 kho-make-preserved-pages-compatible-with-deferred-st.patch
 kfence-add-kfence.fault-parameter.patch
+lib-introduce-hierarchical-per-cpu-counters.patch
+lib-test-hierarchical-per-cpu-counters.patch
+mm-improve-RSS-counter-approximation-accuracy-for-pr.patch
+mm-vmalloc-export-clear_vm_uninitialized_flag.patch
+kho-fix-KASAN-support-for-restored-vmalloc-regions.patch
+mm-remove-stray-references-to-struct-pagevec.patch
+fs-remove-unncessary-pagevec.h-includes.patch
+folio_batch-rename-pagevec.h-to-folio_batch.h.patch
+folio_batch-rename-PAGEVEC_SIZE-to-FOLIO_BATCH_SIZE.patch
+selftests-mm-add-UFFDIO_MOVE-huge-zeropage-PMD-regre.patch
+zram-use-statically-allocated-compression-algorithm-.patch
+mm-page_reporting-allow-zero-page_reporting_order.patch
+hv_balloon-change-default-page-reporting-order.patch
+virtio_balloon-set-pr_dev.order-to-new-default.patch

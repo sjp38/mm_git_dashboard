@@ -162,7 +162,7 @@ index a0187d6163df4..b2aacf846c8b7 100644
  #include <linux/slab.h>
  #include <linux/sizes.h>
 diff --git a/fs/buffer.c b/fs/buffer.c
-index 343c97eab9e57..bbe42edad59dc 100644
+index 22b43642ba574..f3122160ee2d6 100644
 --- a/fs/buffer.c
 +++ b/fs/buffer.c
 @@ -45,7 +45,7 @@
@@ -439,7 +439,7 @@ index 8e7dc2c6ee738..ad9ded39609cb 100644
  #include <linux/shmem_fs.h>
  
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index 60cdfb0b8794a..53d9515f96139 100644
+index dcaf218facc0d..77bd98004578f 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
 @@ -34,7 +34,7 @@
@@ -452,7 +452,7 @@ index 60cdfb0b8794a..53d9515f96139 100644
  #include <linux/smp.h>
  #include <linux/page-flags.h>
 diff --git a/mm/mlock.c b/mm/mlock.c
-index 66740e16679c3..c980630afd0d7 100644
+index 2f699c3497a57..1a92d16f36847 100644
 --- a/mm/mlock.c
 +++ b/mm/mlock.c
 @@ -13,7 +13,7 @@
@@ -504,7 +504,7 @@ index cfed6c3ff853a..149fdb0511706 100644
  #include <linux/falloc.h>
  #include <linux/splice.h>
 diff --git a/mm/swap.c b/mm/swap.c
-index e255be6a0f34f..f6e7dac5b828c 100644
+index bb19ccbece464..2e517ede6561d 100644
 --- a/mm/swap.c
 +++ b/mm/swap.c
 @@ -20,7 +20,7 @@
@@ -543,7 +543,7 @@ index 12467c1bd711e..df0b7a7e6aff9 100644
  #include <linux/shmem_fs.h>
  #include <linux/rmap.h>
 diff --git a/mm/vmscan.c b/mm/vmscan.c
-index 764c5ddbeca98..b3edf0c3be170 100644
+index de62225b381a1..3f64a09f415cf 100644
 --- a/mm/vmscan.c
 +++ b/mm/vmscan.c
 @@ -44,7 +44,7 @@
