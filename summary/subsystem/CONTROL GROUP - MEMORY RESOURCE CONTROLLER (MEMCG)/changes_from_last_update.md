@@ -4,41 +4,17 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 9f07f5d4cea8 "memcg: fix slab accounting in refill_obj_stock() trylock path"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - Link: https://lkml.kernel.org/r/20260226115145.62903-1-hao.li@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 6 commits
-  - series: 1 (1) -> 1 (2)
-    - no role, reviewer: 0 -> 1 commits
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - e1949e7512b5 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
 - mm-new: 15 -> 15 commits (no change)
-  - series: 1 (2) -> 1 (15)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 13 -> 14 commits
+  - series: 1 (15) -> 1 (15) (no change)
+    - no role, maintainer: 14 -> 14 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "Eliminate Dying Memory Cgroup", v5. (32)
-      - 5848e3666212 "mm-memcontrol-prepare-for-reparenting-non-hierarchical-stats-update (29/32)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260228072556.31793-1-qi.zheng@linux.dev
-  - changed commits
-    - series "Eliminate Dying Memory Cgroup", v5. (32)
-      - 1a6fb3c7e49b "mm: memcontrol: prepare for reparenting non-hierarchical stats (28/32)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - Link: https://lkml.kernel.org/r/ef13e5974343b37ae2a0e28aff03ea2d033cb888.1772005110.git.zhengqi.arch@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

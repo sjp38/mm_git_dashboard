@@ -5,221 +5,44 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 7 -> 8 commits
+- mm-hotfixes-unstable: 8 -> 8 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 4 -> 5 commits
+    - no role, no role : 5 -> 5 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
-  - new commits
-    - bbcd0cfe6376 "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260228010614.2536430-1-ziy@nvidia.com
-  - changed commits
-    - 0c9bd266dee8 "mm/hugetlb.c: use __pa() instead of virt_to_phys() in early bootmem alloc code"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - Link: https://lkml.kernel.org/r/b4a7d2c6c4c1dd81dddc904fc21f01303290a4b8.1772107852.git.riteshh@linux.ibm.com
-    - 9f07f5d4cea8 "memcg: fix slab accounting in refill_obj_stock() trylock path"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - Link: https://lkml.kernel.org/r/20260226115145.62903-1-hao.li@linux.dev
+    - reviewer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 62 -> 65 commits
-  - series: 9 (31) -> 11 (35)
-    - no role, nobody: 5 -> 6 commits
-    - no role, no role : 16 -> 18 commits
-    - no role, reviewer: 12 -> 13 commits
-    - no role, maintainer: 13 -> 12 commits
+- mm-unstable: 65 -> 65 commits (no change)
+  - series: 11 (35) -> 11 (35) (no change)
+    - no role, nobody: 6 -> 6 commits (no change)
+    - no role, no role : 18 -> 18 commits (no change)
+    - no role, reviewer: 13 -> 13 commits (no change)
+    - no role, maintainer: 12 -> 12 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, maintainer: 13 -> 13 commits (no change)
-  - changed commits
-    - series "Fix KASAN support for KHO restored vmalloc regions". (2)
-      - 215f0b1797f6 "mm/vmalloc: export clear_vm_uninitialized_flag() (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
-        - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - e1949e7512b5 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - d74e8675a5ea "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
-    - series "Allow order zero pages in page reporting". (3)
-      - eda3b4812fef "mm/page_reporting: allow zero page_reporting_order (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260226070125.3732265-1-yuvraj.sakshith@oss.qualcomm.com
-        - Link: https://lkml.kernel.org/r/20260226070125.3732265-2-yuvraj.sakshith@oss.qualcomm.com
-  - dropped commits
-    - 65400e20a311 "mm/hugetlb_vmemmap: update outdated comment"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260224022840.1936-1-kexinsun@smail.nju.edu.cn
-- mm-new: 43 -> 61 commits
-  - series: 3 (8) -> 4 (53)
-    - no role, nobody: 3 -> 7 commits
-    - no role, no role : 8 -> 11 commits
-    - no role, reviewer: 4 -> 6 commits
-    - no role, maintainer: 20 -> 26 commits
+- mm-new: 61 -> 64 commits
+  - series: 4 (53) -> 5 (56)
+    - no role, nobody: 7 -> 7 commits (no change)
+    - no role, no role : 11 -> 11 commits (no change)
+    - no role, reviewer: 6 -> 6 commits (no change)
+    - no role, maintainer: 26 -> 26 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 2 commits
+    - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 3 -> 5 commits
+    - maintainer, nobody: 5 -> 8 commits
   - new commits
-    - series "Eliminate Dying Memory Cgroup", v5. (32)
-      - 5848e3666212 "mm-memcontrol-prepare-for-reparenting-non-hierarchical-stats-update (29/32)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260228072556.31793-1-qi.zheng@linux.dev
-    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
-      - ed6b6b352cc2 "mm: change the interface of prep_compound_tail() (1/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - d11e397f39cc "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - 0a073751c24e "mm: rework compound_head() for power-of-2 sizeof(struct page) (6/17)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-8-kas@kernel.org
-      - 78afd3007d9c "mm/sparse: check memmap alignment for compound_info_has_mask() (7/17)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-9-kas@kernel.org
-      - 402aaf14c0ea "mm/hugetlb: defer vmemmap population for bootmem hugepages (8/17)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-10-kas@kernel.org
-      - 9913115a7c2c "mm/hugetlb: refactor code around vmemmap_walk (9/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-11-kas@kernel.org
-      - 5780313b634f "mm/hugetlb: remove fake head pages (11/17)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-13-kas@kernel.org
-      - d8e591481a7f "hugetlb: remove VMEMMAP_SYNCHRONIZE_RCU (13/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-15-kas@kernel.org
-      - c1d3423b8818 "mm/hugetlb: remove hugetlb_optimize_vmemmap_key static key (14/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-16-kas@kernel.org
-    - ce103654c5ac "mm/slab: use compound_head() in page_slab()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260227194302.274384-19-kas@kernel.org
-    - series "mm/damon/core: improve DAMOS quota efficiency for core layer filters". (2)
-      - 9303bf4d5e89 "mm/damon/core: set quota-score histogram with core filters (0/2)"
+    - series "mm/page_alloc: pcp locking cleanup". (3)
+      - fc690eab30da "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n (0/3)"
         - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260227170623.95384-1-sj@kernel.org
-        - Link: https://lkml.kernel.org/r/20260227170623.95384-2-sj@kernel.org
-      - 4a317676a6df "mm/damon/core: do non-safe region walk on kdamond_apply_schemes() (1/2)"
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-0-f7e22e603447@kernel.org
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-1-f7e22e603447@kernel.org
+        - Link: https://lore.kernel.org/all/d762c46b-36f0-471a-b5b4-23c8cf5628ae@suse.cz/ [1]
+      - e95980c13a88 "mm/page_alloc: remove IRQ saving/restoring from pcp locking (1/3)"
         - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260227170623.95384-3-sj@kernel.org
-    - 81296c7f83c1 "khugepaged: remove redundant index check for pmd-folios"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260227143501.1488110-1-dev.jain@arm.com
-    - 883de573cd6b "mm/pagewalk: drop FW_MIGRATION"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260227212952.190691-1-david@kernel.org
-    - series "support batched checking of the young flag for MGLRU", v2. (6)
-      - b1f981cf6105 "mm: use inline helper functions instead of ugly macros (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/cover.1772185080.git.baolin.wang@linux.alibaba.com
-        - Link: https://lkml.kernel.org/r/4ffb2946062b9452be53d6b2fa3e359ba6446a93.1772185080.git.baolin.wang@linux.alibaba.com
-        - Link: https://lore.kernel.org/all/cover.1770645603.git.baolin.wang@linux.alibaba.com/ [1]
-      - d7ce0529e5d7 "mm: rename ptep/pmdp_clear_young_notify() to ptep/pmdp_test_and_clear_young_notify() (1/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/283d103c5131e32879bd847263c93b768df64d15.1772185080.git.baolin.wang@linux.alibaba.com
-      - 1b7ae80f79aa "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced() (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/6562be8c92e07f0a69c8ffd4016d1b1e55198af6.1772185080.git.baolin.wang@linux.alibaba.com
-        - Link: https://lore.kernel.org/all/16fb7985-ec0f-4b56-91e7-404c5114f899@kernel.org/ [1]
-      - 7bb528f89c00 "mm: add a batched helper to clear the young flag for large folios (3/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/589d743f4e048dc749002a7e1a1aec5d511c406b.1772185080.git.baolin.wang@linux.alibaba.com
-      - 09ef67340351 "mm: support batched checking of the young flag for MGLRU (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/f84233f95f209d59c3bc9c72a757af09337f0d40.1772185080.git.baolin.wang@linux.alibaba.com
-    - 1b66c528ac49 "mm/debug_vm_pgtable: replace WRITE_ONCE() with pxd_clear()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260227061204.2215395-1-anshuman.khandual@arm.com
-    - 288e22e280af "mm/kasan: fix double free for kasan pXds"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/2f9135c7866c6e0d06e960993b8a5674a9ebc7ec.1771938394.git.ritesh.list@gmail.com
-    - series "mm/damon: strictly respect min_nr_regions". (3)
-      - 322abf1b1edb "mm/damon/core: split regions for min_nr_regions (0/3)"
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-2-f7e22e603447@kernel.org
+      - 633c6a8880b2 "mm/page_alloc: remove pcpu_spin_* wrappers (2/3)"
         - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260228222831.7232-1-sj@kernel.org
-        - Link: https://lkml.kernel.org/r/20260228222831.7232-2-sj@kernel.org
-        - Link: https://lore.kernel.org/CAC5umyjmJE9SBqjbetZZecpY54bHpn2AvCGNv3aF6J=1cfoPXQ@mail.gmail.com [1]
-      - 5a8e8d49ee93 "mm/damon/vaddr: do not split regions for min_nr_regions (1/3)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260228222831.7232-3-sj@kernel.org
-      - 6547b855782f "mm/damon/test/core-kunit: add damon_apply_min_nr_regions() test (2/3)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260228222831.7232-4-sj@kernel.org
-  - changed commits
-    - series "Eliminate Dying Memory Cgroup", v5. (32)
-      - 1a6fb3c7e49b "mm: memcontrol: prepare for reparenting non-hierarchical stats (28/32)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - Link: https://lkml.kernel.org/r/ef13e5974343b37ae2a0e28aff03ea2d033cb888.1772005110.git.zhengqi.arch@bytedance.com
-    - series "mm: zone lock tracepoint instrumentation", v4. (5)
-      - eefb08cbbd56 "mm: convert zone lock users to wrappers (1/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-        - added "Cc: Len Brown <lenb@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/e5324d64361f86d930d940a5b49235f7996efe53.1772129168.git.d@ilvokhin.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Ben Cheatham <benjamin.cheatham@amd.com>"
-        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - 3671a7289f1a "mm: convert compaction to zone lock wrappers (2/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/3a09e46f52cf9f709b0725bc2b648cc5212843b2.1772206930.git.d@ilvokhin.com"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-        - added "Cc: Len Brown <lenb@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/01729baf359e4c6612aead53f1fcb644f782d1de.1772129168.git.d@ilvokhin.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Ben Cheatham <benjamin.cheatham@amd.com>"
-        - Link: https://lkml.kernel.org/r/3a09e46f52cf9f709b0725bc2b648cc5212843b2.1772206930.git.d@ilvokhin.com
-      - 419417a3d101 "mm: rename zone->lock to zone->_lock (3/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - added "Acked-by: SeongJae Park <sj@kernel.org>"
-        - added "Cc: Len Brown <lenb@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/1221b8e7fa9f5694f3c4e411f01581b5aba9bc63.1772129168.git.d@ilvokhin.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Ben Cheatham <benjamin.cheatham@amd.com>"
-        - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
-      - 7467f6242e01 "mm: add tracepoints for zone lock (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/ae145fe890f028409f727b4921904b547346fa0b.1772206930.git.d@ilvokhin.com"
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - added "Cc: Len Brown <lenb@kernel.org>"
-        - added "Cc: SeongJae Park <sj@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/378089dd269249d3d7981fe10eb8b49ad551d353.1772129168.git.d@ilvokhin.com"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Ben Cheatham <benjamin.cheatham@amd.com>"
-        - Link: https://lkml.kernel.org/r/ae145fe890f028409f727b4921904b547346fa0b.1772206930.git.d@ilvokhin.com
-  - dropped commits
-    - series "mm: zone lock tracepoint instrumentation", v3. (5)
-      - 717c79bec086 "mm-convert-zone-lock-users-to-wrappers-fix (2/5)"
-        - Authored by a maintainer, reviewed by nobody
-    - 7ed520293a48 "mm-add-tracepoints-for-zone-lock-fix"
-      - Authored by a maintainer, reviewed by nobody
-    - 712eb5ded081 "mm-add-tracepoints-for-zone-lock-fix-fix"
-      - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-3-f7e22e603447@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

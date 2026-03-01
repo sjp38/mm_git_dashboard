@@ -6,14 +6,14 @@
   - author/reviewer role stat
     - no role, reviewer: 3 commits
   - full commits list
-    - 019ae836e0b7 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
+    - 83aff45fb336 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
       - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com
-      - 72187ea7f6e8 "mm: vmscan: add cgroup IDs to vmscan tracepoints" (1/3)
+      - 010d55c90b19 "mm: vmscan: add cgroup IDs to vmscan tracepoints" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260223171544.4750-3-tballasi@linux.microsoft.com
-    - d1c54c3f06c2 "mm: do not allocate shrinker info with cgroup.memory=nokmem"
+    - 96c2936b36c6 "mm: do not allocate shrinker info with cgroup.memory=nokmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260225-cgroup-ml-nokmem-shrinker-v1-1-d703899bdda4@suse.com
 - mm-new: 1 total, 1 (1) series, 0 non-series commits
@@ -21,7 +21,7 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "Eliminate Dying Memory Cgroup", v5. (32 commits)
-      - a1c508d53e15 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/32)
+      - 8cd7ec288f60 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/32)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/cover.1772005110.git.zhengqi.arch@bytedance.com
         - Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772005110.git.zhengqi.arch@bytedance.com

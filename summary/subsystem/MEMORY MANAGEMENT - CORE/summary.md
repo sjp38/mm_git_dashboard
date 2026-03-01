@@ -15,10 +15,10 @@
     - reviewer, nobody: 1 commits
     - maintainer, nobody: 1 commits
     - maintainer, maintainer: 1 commits
-- mm-new: 20 total, 3 (17) series, 3 non-series commits
+- mm-new: 21 total, 3 (17) series, 4 non-series commits
   - author/reviewer role stat
     - no role, nobody: 6 commits
-    - no role, no role : 7 commits
+    - no role, no role : 8 commits
     - no role, reviewer: 3 commits
     - no role, maintainer: 3 commits
     - reviewer, no role : 1 commits

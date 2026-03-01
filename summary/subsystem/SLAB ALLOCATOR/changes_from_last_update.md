@@ -7,21 +7,10 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 3 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 2 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
-      - d11e397f39cc "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - 0a073751c24e "mm: rework compound_head() for power-of-2 sizeof(struct page) (6/17)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-8-kas@kernel.org
-    - ce103654c5ac "mm/slab: use compound_head() in page_slab()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260227194302.274384-19-kas@kernel.org
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

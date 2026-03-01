@@ -3,61 +3,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 0c9bd266dee8 "mm/hugetlb.c: use __pa() instead of virt_to_phys() in early bootmem alloc code"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - Link: https://lkml.kernel.org/r/b4a7d2c6c4c1dd81dddc904fc21f01303290a4b8.1772107852.git.riteshh@linux.ibm.com
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 2 -> 1 commits
-  - changed commits
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - e1949e7512b5 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-  - dropped commits
-    - 65400e20a311 "mm/hugetlb_vmemmap: update outdated comment"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260224022840.1936-1-kexinsun@smail.nju.edu.cn
-- mm-new: 1 -> 8 commits
-  - series: 0 (1) -> 0 (8)
-    - no role, nobody: 0 -> 2 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 0 -> 6 commits
-  - new commits
-    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
-      - ed6b6b352cc2 "mm: change the interface of prep_compound_tail() (1/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - d11e397f39cc "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - 402aaf14c0ea "mm/hugetlb: defer vmemmap population for bootmem hugepages (8/17)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-10-kas@kernel.org
-      - 9913115a7c2c "mm/hugetlb: refactor code around vmemmap_walk (9/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-11-kas@kernel.org
-      - 5780313b634f "mm/hugetlb: remove fake head pages (11/17)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-13-kas@kernel.org
-      - d8e591481a7f "hugetlb: remove VMEMMAP_SYNCHRONIZE_RCU (13/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-15-kas@kernel.org
-      - c1d3423b8818 "mm/hugetlb: remove hugetlb_optimize_vmemmap_key static key (14/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-16-kas@kernel.org
-      - 3e9d3a1b927f "hugetlb: update vmemmap_dedup.rst (16/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-new: 8 -> 8 commits (no change)
+  - series: 0 (8) -> 0 (8) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, maintainer: 6 -> 6 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

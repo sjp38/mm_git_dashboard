@@ -7,80 +7,29 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 4 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, nobody: 0 -> 1 commits
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 2 commits
-  - changed commits
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - e1949e7512b5 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-    - series "Allow order zero pages in page reporting". (3)
-      - eda3b4812fef "mm/page_reporting: allow zero page_reporting_order (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260226070125.3732265-1-yuvraj.sakshith@oss.qualcomm.com
-        - Link: https://lkml.kernel.org/r/20260226070125.3732265-2-yuvraj.sakshith@oss.qualcomm.com
-- mm-new: 8 -> 7 commits
-  - series: 1 (5) -> 0 (7)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 2 -> 0 commits
-    - no role, reviewer: 2 -> 3 commits
-    - no role, maintainer: 2 -> 4 commits
-    - maintainer, nobody: 1 -> 0 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+- mm-new: 7 -> 10 commits
+  - series: 0 (7) -> 1 (10)
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - maintainer, nobody: 0 -> 3 commits
   - new commits
-    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
-      - ed6b6b352cc2 "mm: change the interface of prep_compound_tail() (1/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - d11e397f39cc "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-  - changed commits
-    - series "mm: zone lock tracepoint instrumentation", v4. (5)
-      - eefb08cbbd56 "mm: convert zone lock users to wrappers (1/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com"
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-        - added "Cc: Len Brown <lenb@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/e5324d64361f86d930d940a5b49235f7996efe53.1772129168.git.d@ilvokhin.com"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Ben Cheatham <benjamin.cheatham@amd.com>"
-        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - 3671a7289f1a "mm: convert compaction to zone lock wrappers (2/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/3a09e46f52cf9f709b0725bc2b648cc5212843b2.1772206930.git.d@ilvokhin.com"
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-        - added "Cc: Len Brown <lenb@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/01729baf359e4c6612aead53f1fcb644f782d1de.1772129168.git.d@ilvokhin.com"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Ben Cheatham <benjamin.cheatham@amd.com>"
-        - Link: https://lkml.kernel.org/r/3a09e46f52cf9f709b0725bc2b648cc5212843b2.1772206930.git.d@ilvokhin.com
-      - 419417a3d101 "mm: rename zone->lock to zone->_lock (3/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com"
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - added "Acked-by: SeongJae Park <sj@kernel.org>"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Len Brown <lenb@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/1221b8e7fa9f5694f3c4e411f01581b5aba9bc63.1772129168.git.d@ilvokhin.com"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Ben Cheatham <benjamin.cheatham@amd.com>"
-        - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
-  - dropped commits
-    - series "mm: zone lock tracepoint instrumentation", v3. (5)
-      - 717c79bec086 "mm-convert-zone-lock-users-to-wrappers-fix (2/5)"
+    - series "mm/page_alloc: pcp locking cleanup". (3)
+      - fc690eab30da "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n (0/3)"
         - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-0-f7e22e603447@kernel.org
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-1-f7e22e603447@kernel.org
+        - Link: https://lore.kernel.org/all/d762c46b-36f0-471a-b5b4-23c8cf5628ae@suse.cz/ [1]
+      - e95980c13a88 "mm/page_alloc: remove IRQ saving/restoring from pcp locking (1/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-2-f7e22e603447@kernel.org
+      - 633c6a8880b2 "mm/page_alloc: remove pcpu_spin_* wrappers (2/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-3-f7e22e603447@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

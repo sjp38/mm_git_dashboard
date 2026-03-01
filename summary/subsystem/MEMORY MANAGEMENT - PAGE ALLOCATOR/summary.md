@@ -10,9 +10,10 @@
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
     - no role, reviewer: 2 commits
-- mm-new: 7 total, 0 (7) series, 0 non-series commits
+- mm-new: 10 total, 1 (10) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 3 commits
     - no role, maintainer: 4 commits
+    - maintainer, nobody: 3 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
