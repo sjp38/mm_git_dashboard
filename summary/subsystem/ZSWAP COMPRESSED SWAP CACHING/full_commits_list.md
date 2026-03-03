@@ -2,25 +2,22 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+- mm-unstable: 4 total, 0 (3) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 4 commits
   - full commits list
-      - a677d77100d1 "selftests/cgroup: add test for zswap incompressible pages" (1/2)
+      - 480df2461f3d "selftests/cgroup: add test for zswap incompressible pages" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260213071827.5688-3-jiayuan.chen@linux.dev
-    - 2744cdacf65b "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
+    - e6329f8c91a7 "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260202-zswap-syncio-cleanup-v1-1-86bb24a64521@tencent.com
-- mm-new: 2 total, 0 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 2 commits
-  - full commits list
-      - 859c6e303c85 "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/32)
+      - da49ceab5857 "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/32)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772005110.git.zhengqi.arch@bytedance.com
-      - 9c7a51c8f99c "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/32)
+      - 258b9e6518e4 "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/32)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772005110.git.zhengqi.arch@bytedance.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -8,52 +8,56 @@
       - Link: https://syzkaller.appspot.com/bug?extid=33a04338019ac7e43a44
       - Link: https://lore.kernel.org/linux-mm/CAEvNRgHegcz3ro35ixkDw39ES8=U6rs6S7iP0gkR9enr7HoGtA@mail.gmail.com
       - Link: https://lkml.kernel.org/r/20260214001535.435626-1-kartikey406@gmail.com
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - reviewer, nobody: 1 commits
+    - maintainer, nobody: 1 commits
   - full commits list
-    - 01fd7a81cbbb "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
+    - 48f6db0efd3f "mm/huge_memory: fix memory corruption on huge zero page move"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260302170619.867056-1-lorenzo.stoakes@oracle.com
+    - 1d6262e10d85 "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
       - Authored by a reviewer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260228010614.2536430-1-ziy@nvidia.com
+      - Link: https://lkml.kernel.org/r/20260302203159.3208341-1-ziy@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 6 total, 1 (4) series, 2 non-series commits
+- mm-unstable: 8 total, 1 (6) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, no role : 1 commits
     - no role, reviewer: 5 commits
+    - no role, maintainer: 1 commits
   - full commits list
-      - 3b7e1a46d200 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 92a0b237d5c4 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-    - c28f7845abde "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
+    - ad4d2bed4844 "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260207081613.588598-6-vernon2gm@gmail.com
     - series "Improve khugepaged scan logic", v8. (4 commits)
-      - 0e28234b838a "mm: khugepaged: add trace_mm_khugepaged_scan event" (0/4)
+      - 4b1e67f664fa "mm: khugepaged: add trace_mm_khugepaged_scan event" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-2-vernon2gm@gmail.com
-      - 623c217895de "mm: khugepaged: refine scan progress number" (1/4)
+      - 0fb00ba44945 "mm: khugepaged: refine scan progress number" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-3-vernon2gm@gmail.com
-      - 63d295020413 "mm-khugepaged-refine-scan-progress-number-fix" (2/4)
+      - da042e7eefee "mm-khugepaged-refine-scan-progress-number-fix" (2/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/hbftflvdmnranprul4zkq3d2iymqm7ta2a7fwiphggsmt36gt7@bihvv5jg2ko5
         - Link: https://lore.kernel.org/linux-mm/zdvzmoop5xswqcyiwmvvrdfianm4ccs3gryfecwbm4bhuh7ebo@7an4huwgbuwo [1]
-    - 4a33d935c762 "mm: khugepaged: skip lazy-free folios"
+    - 6e29852f9262 "mm: khugepaged: skip lazy-free folios"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260221093918.1456187-5-vernon2gm@gmail.com
-- mm-new: 3 total, 0 (2) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
-    - reviewer, reviewer: 1 commits
-  - full commits list
-      - 560406bb9e5d "mm: rename unlock_page_lruvec_irq and its variants" (2/32)
+      - f0c38a2d2723 "mm: rename unlock_page_lruvec_irq and its variants" (2/32)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
-      - 529775531a6f "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/32)
+      - 9073d1556bcd "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/32)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772005110.git.zhengqi.arch@bytedance.com
-    - 304b4104925c "khugepaged: remove redundant index check for pmd-folios"
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - reviewer, reviewer: 1 commits
+  - full commits list
+    - 72629de41a0c "khugepaged: remove redundant index check for pmd-folios"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260227143501.1488110-1-dev.jain@arm.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

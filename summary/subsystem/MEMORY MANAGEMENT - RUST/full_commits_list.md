@@ -3,6 +3,18 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 3 total, 0 (3) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 3 commits
+  - full commits list
+      - 0d225609d51c "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
+      - a099fd911c72 "fixup: mm/memory: remove zap_details parameter from zap_page_range_single()" (2/16)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/8a27e9ac-2025-4724-a46d-0a7c90894ba7@kernel.org
+      - e2effcd0ff9f "mm: rename zap_page_range_single() to zap_vma_range()" (14/16)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

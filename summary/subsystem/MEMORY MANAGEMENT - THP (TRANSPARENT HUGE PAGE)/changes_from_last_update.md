@@ -2,19 +2,42 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 48f6db0efd3f "mm/huge_memory: fix memory corruption on huge zero page move"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260302170619.867056-1-lorenzo.stoakes@oracle.com
+  - changed commits
+    - 1d6262e10d85 "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
+      - Authored by a reviewer, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260302203159.3208341-1-ziy@nvidia.com"
+      - dropped "Link: https://lkml.kernel.org/r/20260228010614.2536430-1-ziy@nvidia.com"
+      - Link: https://lkml.kernel.org/r/20260302203159.3208341-1-ziy@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
+- mm-unstable: 6 -> 8 commits
+  - series: 1 (4) -> 1 (6)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 5 -> 5 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v5. (32)
+      - f0c38a2d2723 "mm: rename unlock_page_lruvec_irq and its variants (2/32)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
+      - 9073d1556bcd "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}() (16/32)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772005110.git.zhengqi.arch@bytedance.com
+- mm-new: 3 -> 1 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

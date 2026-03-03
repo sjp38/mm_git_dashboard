@@ -12,64 +12,65 @@
       - Link: https://lkml.kernel.org/r/20260220144940.2779209-1-glider@google.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 4 total, 1 (2) series, 2 non-series commits
+- mm-unstable: 6 total, 1 (4) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
     - no role, reviewer: 2 commits
+    - no role, maintainer: 2 commits
   - full commits list
-    - 24ce3efcbf23 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+    - 3cacae6a047d "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-    - f80d00210d1d "mm: introduce a new page type for page pool in page type"
+    - b93ddce3795b "mm: introduce a new page type for page pool in page type"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
-      - 8d915d31a54d "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 11a6a08afd03 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
     - series "Allow order zero pages in page reporting". (3 commits)
-      - 5f75eaf8fa73 "mm/page_reporting: allow zero page_reporting_order" (0/3)
+      - 585be0427a23 "mm/page_reporting: allow zero page_reporting_order" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260226070125.3732265-1-yuvraj.sakshith@oss.qualcomm.com
         - Link: https://lkml.kernel.org/r/20260226070125.3732265-2-yuvraj.sakshith@oss.qualcomm.com
-- mm-new: 10 total, 1 (10) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 3 commits
-    - no role, maintainer: 4 commits
-    - maintainer, nobody: 3 commits
-  - full commits list
-      - 560406bb9e5d "mm: rename unlock_page_lruvec_irq and its variants" (2/32)
+      - f0c38a2d2723 "mm: rename unlock_page_lruvec_irq and its variants" (2/32)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
-      - f4e2bfeb374b "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/32)
+      - 4acae8a4da8d "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/32)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772005110.git.zhengqi.arch@bytedance.com
-      - ed25dcbfb45b "mm: change the interface of prep_compound_tail()" (1/17)
+- mm-new: 8 total, 1 (8) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 2 commits
+    - maintainer, reviewer: 3 commits
+  - full commits list
+      - f6563c4ecf77 "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - e3ed5913c3ad "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - e9f5280711ff "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - d1fab89a9750 "mm: convert zone lock users to wrappers" (1/5)
+      - 8094f814b0a8 "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - 8e3b23f2a77c "mm: convert compaction to zone lock wrappers" (2/5)
+      - 5c7aaa205a7e "mm: convert compaction to zone lock wrappers" (2/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/3a09e46f52cf9f709b0725bc2b648cc5212843b2.1772206930.git.d@ilvokhin.com
-      - 9287f8a50ea1 "mm: rename zone->lock to zone->_lock" (3/5)
+      - 40433d069331 "mm: rename zone->lock to zone->_lock" (3/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
     - series "mm/page_alloc: pcp locking cleanup". (3 commits)
-      - fc690eab30da "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n" (0/3)
-        - Authored by a maintainer, reviewed by nobody
+      - fd2eaff673bc "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n" (0/3)
+        - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-0-f7e22e603447@kernel.org
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-1-f7e22e603447@kernel.org
         - Link: https://lore.kernel.org/all/d762c46b-36f0-471a-b5b4-23c8cf5628ae@suse.cz/ [1]
-      - e95980c13a88 "mm/page_alloc: remove IRQ saving/restoring from pcp locking" (1/3)
-        - Authored by a maintainer, reviewed by nobody
+      - eae5fcf25019 "mm/page_alloc: remove IRQ saving/restoring from pcp locking" (1/3)
+        - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-2-f7e22e603447@kernel.org
-      - 633c6a8880b2 "mm/page_alloc: remove pcpu_spin_* wrappers" (2/3)
-        - Authored by a maintainer, reviewed by nobody
+      - 3167b84e43fc "mm/page_alloc: remove pcpu_spin_* wrappers" (2/3)
+        - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-3-f7e22e603447@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

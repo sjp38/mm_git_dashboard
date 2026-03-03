@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 8b76182aad91 "mm/hugetlb.c: use __pa() instead of virt_to_phys() in early bootmem alloc code"
+    - 5f3a63f818e0 "mm/hugetlb.c: use __pa() instead of virt_to_phys() in early bootmem alloc code"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/b4a7d2c6c4c1dd81dddc904fc21f01303290a4b8.1772107852.git.riteshh@linux.ibm.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -13,41 +13,44 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - ad1cebaf4fa5 "fs: hugetlb: simplify remove_inode_hugepages() return type"
+    - 3dcf39f5848f "fs: hugetlb: simplify remove_inode_hugepages() return type"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260204214741.3161520-1-jiaqiyan@google.com
       - Link: https://lore.kernel.org/all/20220914221810.95771-10-mike.kravetz@oracle.com [1]
-      - 8d915d31a54d "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 11a6a08afd03 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-- mm-new: 8 total, 0 (8) series, 0 non-series commits
+- mm-new: 9 total, 0 (8) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 3 commits
     - no role, maintainer: 6 commits
   - full commits list
-      - ed25dcbfb45b "mm: change the interface of prep_compound_tail()" (1/17)
+      - f6563c4ecf77 "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - e3ed5913c3ad "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - e9f5280711ff "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - 11b7a0f37e17 "mm/hugetlb: defer vmemmap population for bootmem hugepages" (8/17)
+      - cccac8f94e0a "mm/hugetlb: defer vmemmap population for bootmem hugepages" (8/17)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227194302.274384-10-kas@kernel.org
-      - 410e44af17fe "mm/hugetlb: refactor code around vmemmap_walk" (9/17)
+      - a732fcc07068 "mm/hugetlb: refactor code around vmemmap_walk" (9/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-11-kas@kernel.org
-      - c3a15a2e267a "mm/hugetlb: remove fake head pages" (11/17)
+      - ae48c6b2df20 "mm/hugetlb: remove fake head pages" (11/17)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227194302.274384-13-kas@kernel.org
-      - c588bbe66fed "hugetlb: remove VMEMMAP_SYNCHRONIZE_RCU" (13/17)
+      - 6775e11ce14b "hugetlb: remove VMEMMAP_SYNCHRONIZE_RCU" (13/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-15-kas@kernel.org
-      - 1d06eaa4eb5e "mm/hugetlb: remove hugetlb_optimize_vmemmap_key static key" (14/17)
+      - 39a56107886b "mm/hugetlb: remove hugetlb_optimize_vmemmap_key static key" (14/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-16-kas@kernel.org
-      - 853d48ced94f "hugetlb: update vmemmap_dedup.rst" (16/17)
+      - 18a108712f48 "hugetlb: update vmemmap_dedup.rst" (16/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
+    - 5606425604eb "Documentation: fix a hugetlbfs reservation statement"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

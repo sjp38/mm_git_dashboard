@@ -2,30 +2,124 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
+  - new commits
+    - 39d005e8f89a "mm/mmu_notifier: clean up mmu_notifier.h kernel-doc"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260302005222.3470783-1-rdunlap@infradead.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 20 -> 20 commits (no change)
-  - series: 3 (11) -> 3 (11) (no change)
+- mm-unstable: 20 -> 21 commits
+  - series: 3 (11) -> 3 (12)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, no role : 0 -> 1 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 20 -> 21 commits
-  - series: 3 (17) -> 3 (17) (no change)
-    - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 7 -> 8 commits
-    - no role, reviewer: 3 -> 3 commits (no change)
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v5. (32)
+      - 2e7bfbe903ee "mm: vmscan: prepare for reparenting MGLRU folios (25/32)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772005110.git.zhengqi.arch@bytedance.com
+- mm-new: 21 -> 35 commits
+  - series: 3 (17) -> 3 (29)
+    - no role, nobody: 6 -> 19 commits
+    - no role, no role : 8 -> 7 commits
+    - no role, reviewer: 3 -> 5 commits
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 0 commits
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - d42f3219ac2a "mm: make ref_unless functions unless_zero only"
+    - series "mm: zone lock tracepoint instrumentation", v4. (5)
+      - bfdc6ccd6d59 "mm-convert-zone-lock-users-to-wrappers-fix-fix (4/5)"
+        - Authored by a maintainer, reviewed by nobody
+    - series "mm: cleanups around unmapping / zapping". (16)
+      - 0d225609d51c "mm/memory: remove "zap_details" parameter from zap_page_range_single() (1/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
+      - bc2e52d41343 "mm/memory: inline unmap_mapping_range_vma() into unmap_mapping_range_tree() (3/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-4-david@kernel.org
+      - 0aa17fa577c7 "mm/memory: simplify calculation in unmap_mapping_range_tree() (4/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-5-david@kernel.org
+      - c1ffdad29214 "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping() (6/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-7-david@kernel.org
+      - b9a9490fece1 "mm/memory: rename unmap_single_vma() to __zap_vma_range() (7/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-8-david@kernel.org
+      - 6912668f50a0 "mm/memory: move adjusting of address range to unmap_vmas() (8/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-9-david@kernel.org
+      - 943dc076627f "mm/memory: convert details->even_cows into details->skip_cows (9/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-10-david@kernel.org
+      - 7e089d45fa80 "mm/memory: use __zap_vma_range() in zap_vma_for_reaping() (10/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-11-david@kernel.org
+      - d526e5553b32 "mm/memory: inline unmap_page_range() into __zap_vma_range() (11/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-12-david@kernel.org
+      - 0c5bc2067641 "mm: rename zap_vma_pages() to zap_vma() (12/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-13-david@kernel.org
+      - 88d872e2a474 "mm: rename zap_page_range_single_batched() to zap_vma_range_batched() (13/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-14-david@kernel.org
+      - e2effcd0ff9f "mm: rename zap_page_range_single() to zap_vma_range() (14/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
+      - 87f44b472517 "mm: rename zap_vma_ptes() to zap_special_vma_range() (15/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-16-david@kernel.org
+    - d0ef9d50836b "mm/memory: support VM_MIXEDMAP in zap_special_vma_range()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260227200848.114019-17-david@kernel.org
+      - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
+  - changed commits
+    - series "mm: zone lock tracepoint instrumentation", v4. (5)
+      - 9ba14a4fc51c "mm: introduce zone lock wrappers (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+        - Link: https://lkml.kernel.org/r/cover.1772206930.git.d@ilvokhin.com
+        - Link: https://lkml.kernel.org/r/849dee9c47df1e6fba97c9933af0d5a08b8e15d3.1772206930.git.d@ilvokhin.com
+      - 8094f814b0a8 "mm: convert zone lock users to wrappers (1/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
+      - 40433d069331 "mm: rename zone->lock to zone->_lock (3/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+        - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
+    - 647360ee1fb9 "mm: add tracepoints for zone lock"
       - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+      - Link: https://lkml.kernel.org/r/ae145fe890f028409f727b4921904b547346fa0b.1772206930.git.d@ilvokhin.com
+    - series "support batched checking of the young flag for MGLRU", v2. (6)
+      - dce82353fe6e "mm: rename ptep/pmdp_clear_young_notify() to ptep/pmdp_test_and_clear_young_notify() (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/283d103c5131e32879bd847263c93b768df64d15.1772185080.git.baolin.wang@linux.alibaba.com
+    - 72da0cff708c "mm: replace READ_ONCE() in pud_trans_unstable()"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+      - Link: https://lkml.kernel.org/r/20260227040300.2091901-1-anshuman.khandual@arm.com
+    - 80e1c683c52f "mm: make ref_unless functions unless_zero only"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
       - Link: https://lkml.kernel.org/r/a0c89b49d38c671a0bdd35069d15ee13e08314d2.1772370066.git.gladyshev.ilya1@h-partners.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

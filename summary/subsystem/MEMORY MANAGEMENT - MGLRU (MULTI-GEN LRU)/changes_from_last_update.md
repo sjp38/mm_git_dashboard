@@ -5,21 +5,108 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 0 (5) -> 0 (5) (no change)
-    - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 8 -> 23 commits
+  - series: 0 (5) -> 0 (19)
+    - no role, no role : 4 -> 5 commits
+    - no role, reviewer: 2 -> 4 commits
+    - no role, maintainer: 1 -> 8 commits
+    - reviewer, no role : 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 3 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 23 -> 23 commits (no change)
-  - series: 1 (21) -> 1 (21) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v5. (32)
+      - 45b71cc4ec83 "mm: workingset: use folio_lruvec() in workingset_refault() (1/32)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772005110.git.zhengqi.arch@bytedance.com
+      - f0c38a2d2723 "mm: rename unlock_page_lruvec_irq and its variants (2/32)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
+      - e4e9a15e08b1 "mm: vmscan: prepare for the refactoring the move_folios_to_lru() (3/32)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772005110.git.zhengqi.arch@bytedance.com
+      - 931c5051ee57 "mm: vmscan: refactor move_folios_to_lru() (4/32)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772005110.git.zhengqi.arch@bytedance.com
+      - 197221c39a03 "mm: mglru: prevent memory cgroup release in mglru (13/32)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/9d887662a9d39c425742dd8468e3123316bccfe3.1772005110.git.zhengqi.arch@bytedance.com
+      - 1d50eccf46de "mm: workingset: prevent memory cgroup release in lru_gen_eviction() (15/32)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772005110.git.zhengqi.arch@bytedance.com
+      - 0fe6424134cc "mm: workingset: prevent lruvec release in workingset_refault() (18/32)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772005110.git.zhengqi.arch@bytedance.com
+      - ac6be60260be "mm: swap: prevent lruvec release in lru_gen_clear_refs() (20/32)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/986cd26227191a48a7c34a2a15812d361f4ebd53.1772005110.git.zhengqi.arch@bytedance.com
+      - 5b414815205d "mm: workingset: prevent lruvec release in workingset_activation() (21/32)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/c6130476affbba0a7d309a887c3df11e0167990b.1772005110.git.zhengqi.arch@bytedance.com
+      - 00c8dcd038c6 "mm: do not open-code lruvec lock (22/32)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772005110.git.zhengqi.arch@bytedance.com
+      - 4acae8a4da8d "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock (23/32)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772005110.git.zhengqi.arch@bytedance.com
+      - 2493cabcdec1 "mm: vmscan: prepare for reparenting traditional LRU folios (24/32)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772005110.git.zhengqi.arch@bytedance.com
+      - 2e7bfbe903ee "mm: vmscan: prepare for reparenting MGLRU folios (25/32)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772005110.git.zhengqi.arch@bytedance.com
+      - 6e05b5703906 "mm: workingset: use lruvec_lru_size() to get the number of lru pages (27/32)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772005110.git.zhengqi.arch@bytedance.com
+    - 144f1ca3f040 "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/9a0b6ba87112b2bf038ab65c47b6f16311b829cb.1772005110.git.zhengqi.arch@bytedance.com
+- mm-new: 23 -> 9 commits
+  - series: 1 (21) -> 1 (8)
+    - no role, nobody: 4 -> 3 commits
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 7 -> 7 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 3 -> 3 commits (no change)
+    - no role, reviewer: 5 -> 3 commits
+    - no role, maintainer: 7 -> 0 commits
+    - reviewer, no role : 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 3 -> 0 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm: zone lock tracepoint instrumentation", v4. (5)
+      - bfdc6ccd6d59 "mm-convert-zone-lock-users-to-wrappers-fix-fix (4/5)"
+        - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - series "mm: zone lock tracepoint instrumentation", v4. (5)
+      - 8094f814b0a8 "mm: convert zone lock users to wrappers (1/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
+      - 40433d069331 "mm: rename zone->lock to zone->_lock (3/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+        - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
+    - series "support batched checking of the young flag for MGLRU", v2. (6)
+      - dce82353fe6e "mm: rename ptep/pmdp_clear_young_notify() to ptep/pmdp_test_and_clear_young_notify() (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/283d103c5131e32879bd847263c93b768df64d15.1772185080.git.baolin.wang@linux.alibaba.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
