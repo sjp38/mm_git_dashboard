@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - bd02cfa0edc3 "mm/cma: move put_page_testzero() out of VM_WARN_ON in cma_release()"
+    - 5d40c5738090 "mm/cma: move put_page_testzero() out of VM_WARN_ON in cma_release()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260225031231.2352011-1-ziy@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -14,26 +14,26 @@
     - no role, no role : 3 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 70049b9ec8bd "mm/fadvise: validate offset in generic_fadvise"
+    - 5018dc9778d4 "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - dc3405518a7c "selftests/mm: fix soft-dirty kselftest supported check"
+    - 24722feb7269 "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260218184210.206466-1-audra@redhat.com
-    - c52939fc8e4e "selftests/mm: skip migration tests if NUMA is unavailable"
+    - 9fea67636f6b "selftests/mm: skip migration tests if NUMA is unavailable"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
-    - dc5e736fcd16 "selftests/mm: remove duplicate include of unistd.h"
+    - a5bb72b9ea98 "selftests/mm: remove duplicate include of unistd.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
-    - 3561cafda80e "mm/page_idle.c: remove redundant mmu notifier in aging code"
+    - 3e0ed8ed0e68 "mm/page_idle.c: remove redundant mmu notifier in aging code"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
-      - aa039ba1621f "kho: remove finalize state and clients" (1/2)
+      - 409116fd01ce "kho: remove finalize state and clients" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-    - e51b94505f64 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+    - a65ad4633bf6 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aaBWG4fajXXbjpVN@chrisdown.name
 - mm-new: 3 total, 0 (2) series, 1 non-series commits
@@ -41,13 +41,13 @@
     - no role, nobody: 1 commits
     - no role, maintainer: 2 commits
   - full commits list
-      - e9f5280711ff "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - 5ae5ff786190 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - 18a108712f48 "hugetlb: update vmemmap_dedup.rst" (16/17)
+      - 6d7b5f775607 "hugetlb: update vmemmap_dedup.rst" (16/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
-    - 5606425604eb "Documentation: fix a hugetlbfs reservation statement"
+    - 0dd11d54db0e "Documentation: fix a hugetlbfs reservation statement"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

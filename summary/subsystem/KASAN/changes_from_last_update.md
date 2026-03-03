@@ -9,14 +9,7 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - 2f7830cdf23b "mm/kasan: fix double free for kasan pXds"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Alexander Potapenko <glider@google.com>"
-      - dropped "Cc: Alexander Potapenko <glider@google.com>"
-      - Link: https://lkml.kernel.org/r/2f9135c7866c6e0d06e960993b8a5674a9ebc7ec.1771938394.git.ritesh.list@gmail.com
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

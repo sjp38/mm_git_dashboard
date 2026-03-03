@@ -13,10 +13,10 @@
     - reviewer, nobody: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 48f6db0efd3f "mm/huge_memory: fix memory corruption on huge zero page move"
+    - 4d5f4e09f166 "mm/huge_memory: fix memory corruption on huge zero page move"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302170619.867056-1-lorenzo.stoakes@oracle.com
-    - 1d6262e10d85 "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
+    - 9b70173e37f4 "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302203159.3208341-1-ziy@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -27,37 +27,37 @@
     - no role, reviewer: 5 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 92a0b237d5c4 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - a24a791195a4 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-    - ad4d2bed4844 "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
+    - 6233103bfee4 "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260207081613.588598-6-vernon2gm@gmail.com
     - series "Improve khugepaged scan logic", v8. (4 commits)
-      - 4b1e67f664fa "mm: khugepaged: add trace_mm_khugepaged_scan event" (0/4)
+      - f5a07120bd8d "mm: khugepaged: add trace_mm_khugepaged_scan event" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-2-vernon2gm@gmail.com
-      - 0fb00ba44945 "mm: khugepaged: refine scan progress number" (1/4)
+      - 512e41cac1ed "mm: khugepaged: refine scan progress number" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-3-vernon2gm@gmail.com
-      - da042e7eefee "mm-khugepaged-refine-scan-progress-number-fix" (2/4)
+      - d3448e878cf4 "mm-khugepaged-refine-scan-progress-number-fix" (2/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/hbftflvdmnranprul4zkq3d2iymqm7ta2a7fwiphggsmt36gt7@bihvv5jg2ko5
         - Link: https://lore.kernel.org/linux-mm/zdvzmoop5xswqcyiwmvvrdfianm4ccs3gryfecwbm4bhuh7ebo@7an4huwgbuwo [1]
-    - 6e29852f9262 "mm: khugepaged: skip lazy-free folios"
+    - 94256fa2c1e7 "mm: khugepaged: skip lazy-free folios"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260221093918.1456187-5-vernon2gm@gmail.com
-      - f0c38a2d2723 "mm: rename unlock_page_lruvec_irq and its variants" (2/32)
+      - 69f0cdc966e6 "mm: rename unlock_page_lruvec_irq and its variants" (2/32)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
-      - 9073d1556bcd "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/32)
+      - 472fa12391bc "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/32)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772005110.git.zhengqi.arch@bytedance.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 72629de41a0c "khugepaged: remove redundant index check for pmd-folios"
+    - 6740e80c39d1 "khugepaged: remove redundant index check for pmd-folios"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260227143501.1488110-1-dev.jain@arm.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

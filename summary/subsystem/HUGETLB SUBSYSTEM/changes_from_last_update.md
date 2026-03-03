@@ -10,14 +10,10 @@
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 8 -> 9 commits
+- mm-new: 9 -> 9 commits (no change)
   - series: 0 (8) -> 0 (8) (no change)
-    - no role, nobody: 2 -> 3 commits
+    - no role, nobody: 3 -> 3 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
-  - new commits
-    - 5606425604eb "Documentation: fix a hugetlbfs reservation statement"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

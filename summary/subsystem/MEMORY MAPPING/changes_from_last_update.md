@@ -5,26 +5,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 3 commits
-  - series: 0 (1) -> 0 (2)
+- mm-unstable: 3 -> 3 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "Eliminate Dying Memory Cgroup", v5. (32)
-      - f0c38a2d2723 "mm: rename unlock_page_lruvec_irq and its variants (2/32)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, maintainer: 1 -> 0 commits
-  - new commits
-    - series "mm: cleanups around unmapping / zapping". (16)
-      - 0aa17fa577c7 "mm/memory: simplify calculation in unmap_mapping_range_tree() (4/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260227200848.114019-5-david@kernel.org
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

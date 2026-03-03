@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 2f7830cdf23b "mm/kasan: fix double free for kasan pXds"
+    - b478b49b45da "mm/kasan: fix double free for kasan pXds"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/2f9135c7866c6e0d06e960993b8a5674a9ebc7ec.1771938394.git.ritesh.list@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

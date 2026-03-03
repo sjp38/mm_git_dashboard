@@ -5,22 +5,11 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 4 commits
-  - series: 0 (1) -> 0 (3)
-    - no role, maintainer: 2 -> 4 commits
-  - changed commits
-    - series "Eliminate Dying Memory Cgroup", v5. (32)
-      - da49ceab5857 "mm: zswap: prevent memory cgroup release in zswap_compress() (17/32)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772005110.git.zhengqi.arch@bytedance.com
-      - 258b9e6518e4 "mm: zswap: prevent lruvec release in zswap_folio_swapin() (19/32)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772005110.git.zhengqi.arch@bytedance.com
-- mm-new: 2 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, maintainer: 2 -> 0 commits
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

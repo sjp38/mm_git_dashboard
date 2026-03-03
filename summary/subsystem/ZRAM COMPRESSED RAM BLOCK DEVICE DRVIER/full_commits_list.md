@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - maintainer, maintainer: 1 commits
   - full commits list
-    - cd0aa1cd120d "zram: rename writeback_compressed device attr"
+    - f50c6ce7bf30 "zram: rename writeback_compressed device attr"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260226025429.1042083-1-senozhatsky@chromium.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -12,26 +12,26 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - a199166a29bd "zram: use statically allocated compression algorithm names"
+    - 9da914af637d "zram: use statically allocated compression algorithm names"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/5bb2e9318d124dbcb2b743dcdce6a950@honor.com
 - mm-new: 5 total, 0 (0) series, 5 non-series commits
   - author/reviewer role stat
     - maintainer, nobody: 5 commits
   - full commits list
-    - a37b8b794668 "zram: do not autocorrect bad recompression parameters"
+    - 8de28775ec47 "zram: do not autocorrect bad recompression parameters"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/8a5d53d19a8dbd51d7d81d153676895163e0735e.1772180459.git.senozhatsky@chromium.org
-    - ab3ef94e84a9 "zram: drop ->num_active_comps"
+    - ed7285a2b5ba "zram: drop ->num_active_comps"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/eb7cd3ca578320be9aff13e71298fc36e110af41.1772180459.git.senozhatsky@chromium.org
-    - c795c1ef191a "zram: recompression priority param should override algo"
+    - e7574b9475b7 "zram: recompression priority param should override algo"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/831636c74ca6d72317de02d96585cc6833d082e6.1772180459.git.senozhatsky@chromium.org
-    - c5f2ade5a861 "zram: update recompression documentation"
+    - f01c8374c301 "zram: update recompression documentation"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/0d9bdbb19a4a1511e8c73d1e91227c47912a8009.1772180459.git.senozhatsky@chromium.org
-    - 045482864dad "zram: remove chained recompression"
+    - e537fcf8cacd "zram: remove chained recompression"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/cf100b13afb62641d7f3bc10fd77068833f56af0.1772180459.git.senozhatsky@chromium.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
