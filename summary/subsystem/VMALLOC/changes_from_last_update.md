@@ -14,6 +14,12 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - 628121372634 "mm/vmalloc: fix incorrect size reporting on allocation failure"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
+      - dropped "Cc: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
+      - Link: https://lkml.kernel.org/r/20260302114740.2668450-1-urezki@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

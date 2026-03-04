@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 5d40c5738090 "mm/cma: move put_page_testzero() out of VM_WARN_ON in cma_release()"
+    - d943ad5d5254 "mm/cma: move put_page_testzero() out of VM_WARN_ON in cma_release()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260225031231.2352011-1-ziy@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -14,40 +14,43 @@
     - no role, no role : 3 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 5018dc9778d4 "mm/fadvise: validate offset in generic_fadvise"
+    - af8bf9c9610e "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - 24722feb7269 "selftests/mm: fix soft-dirty kselftest supported check"
+    - 985ba70049f1 "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260218184210.206466-1-audra@redhat.com
-    - 9fea67636f6b "selftests/mm: skip migration tests if NUMA is unavailable"
+    - add564b72e14 "selftests/mm: skip migration tests if NUMA is unavailable"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
-    - a5bb72b9ea98 "selftests/mm: remove duplicate include of unistd.h"
+    - 149959e34bb1 "selftests/mm: remove duplicate include of unistd.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
-    - 3e0ed8ed0e68 "mm/page_idle.c: remove redundant mmu notifier in aging code"
+    - eda908bd12aa "mm/page_idle.c: remove redundant mmu notifier in aging code"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
-      - 409116fd01ce "kho: remove finalize state and clients" (1/2)
+      - 1b7002ea1d1a "kho: remove finalize state and clients" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-    - a65ad4633bf6 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+    - 3b18c5191a47 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aaBWG4fajXXbjpVN@chrisdown.name
-- mm-new: 3 total, 0 (2) series, 1 non-series commits
+- mm-new: 4 total, 0 (2) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, maintainer: 2 commits
   - full commits list
-      - 5ae5ff786190 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - cd78f7ef3cf5 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - 6d7b5f775607 "hugetlb: update vmemmap_dedup.rst" (16/17)
+      - c81bdfd0e468 "hugetlb: update vmemmap_dedup.rst" (16/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
-    - 0dd11d54db0e "Documentation: fix a hugetlbfs reservation statement"
+    - 853f87378a86 "mm: fix remaining zone->lock references"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
+    - e82a8714deda "Documentation: fix a hugetlbfs reservation statement"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

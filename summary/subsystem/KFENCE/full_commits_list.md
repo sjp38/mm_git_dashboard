@@ -14,10 +14,10 @@
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - maintainer, nobody: 1 commits
+    - maintainer, maintainer: 1 commits
   - full commits list
-    - 4da7aaa4c955 "kfence: add kfence.fault parameter"
-      - Authored by a maintainer, reviewed by nobody
+    - a15a725933ec "kfence: add kfence.fault parameter"
+      - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260225203639.3159463-1-elver@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -10,8 +10,15 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 5 -> 5 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+  - series: 0 (0) -> 1 (5)
     - maintainer, nobody: 5 -> 5 commits (no change)
+  - changed commits
+    - series "zram: various cleanups". (5)
+      - 86a99c85c0e5 "zram: do not autocorrect bad recompression parameters (0/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - added "Link: https://lkml.kernel.org/r/bg7ivz7ajiuzdbpv3h6hbptxgmqk5fhwakw4rzk4sz3bczky5a@rde3y352n5ej"
+        - Link: https://lkml.kernel.org/r/bg7ivz7ajiuzdbpv3h6hbptxgmqk5fhwakw4rzk4sz3bczky5a@rde3y352n5ej
+        - Link: https://lkml.kernel.org/r/8a5d53d19a8dbd51d7d81d153676895163e0735e.1772180459.git.senozhatsky@chromium.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

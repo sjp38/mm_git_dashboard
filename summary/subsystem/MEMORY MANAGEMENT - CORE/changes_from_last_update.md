@@ -20,8 +20,8 @@
 - mm-new: 35 -> 35 commits (no change)
   - series: 3 (29) -> 3 (29) (no change)
     - no role, nobody: 19 -> 19 commits (no change)
-    - no role, no role : 7 -> 7 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, no role : 7 -> 9 commits
+    - no role, reviewer: 5 -> 3 commits
     - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

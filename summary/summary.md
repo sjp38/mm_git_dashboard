@@ -3,46 +3,47 @@
   - author/reviewer role stat
     - no role, nobody: 3 commits
     - no role, no role : 3 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
+    - no role, reviewer: 2 commits
     - maintainer, nobody: 3 commits
     - maintainer, maintainer: 1 commits
-- mm-hotfixes-unstable: 18 total, 1 (2) series, 16 non-series commits
+- mm-hotfixes-unstable: 21 total, 1 (2) series, 19 non-series commits
   - author/reviewer role stat
     - no role, nobody: 3 commits
-    - no role, no role : 10 commits
+    - no role, no role : 13 commits
     - no role, maintainer: 2 commits
     - reviewer, nobody: 1 commits
-    - maintainer, nobody: 1 commits
+    - reviewer, reviewer: 1 commits
     - maintainer, maintainer: 1 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 156 total, 17 (114) series, 42 non-series commits
+- mm-unstable: 153 total, 16 (111) series, 42 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 14 commits
-    - no role, no role : 28 commits
+    - no role, nobody: 12 commits
+    - no role, no role : 27 commits
     - no role, reviewer: 16 commits
     - no role, maintainer: 40 commits
     - reviewer, nobody: 1 commits
     - reviewer, no role : 1 commits
     - reviewer, reviewer: 1 commits
     - reviewer, maintainer: 3 commits
-    - maintainer, nobody: 36 commits
+    - maintainer, nobody: 35 commits
     - maintainer, no role : 3 commits
-    - maintainer, maintainer: 13 commits
-- mm-new: 76 total, 8 (57) series, 19 non-series commits
+    - maintainer, maintainer: 14 commits
+- mm-new: 86 total, 10 (67) series, 19 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 27 commits
-    - no role, no role : 15 commits
-    - no role, reviewer: 7 commits
-    - no role, maintainer: 9 commits
+    - no role, nobody: 28 commits
+    - no role, no role : 24 commits
+    - no role, reviewer: 5 commits
+    - no role, maintainer: 10 commits
     - reviewer, reviewer: 1 commits
-    - maintainer, nobody: 11 commits
+    - maintainer, nobody: 12 commits
     - maintainer, reviewer: 3 commits
     - maintainer, maintainer: 3 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 73 total, 7 (44) series, 29 non-series commits
+- mm-nonmm-unstable: 77 total, 8 (47) series, 30 non-series commits
   - author/reviewer role stat
     - no role, nobody: 45 commits
     - no role, no role : 18 commits
+    - no role, reviewer: 3 commits
     - no role, maintainer: 9 commits
+    - reviewer, reviewer: 1 commits
     - maintainer, nobody: 1 commits

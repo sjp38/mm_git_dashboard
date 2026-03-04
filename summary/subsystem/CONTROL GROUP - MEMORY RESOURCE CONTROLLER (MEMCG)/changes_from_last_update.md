@@ -6,20 +6,62 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 21 -> 20 commits
+- mm-unstable: 20 -> 20 commits (no change)
   - series: 2 (17) -> 2 (17) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 18 -> 17 commits
+    - no role, maintainer: 17 -> 17 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - dropped commits
-    - 5e3842dbab41 "mm, memcg: optimize stat output for 11% sys time reduction"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260123150108.43443-2-wujianyue000@gmail.com
 - mm-new: 5 -> 5 commits (no change)
   - series: 1 (5) -> 1 (5) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
+  - changed commits
+    - series ": memcg: obj stock and slab stat caching cleanups". (5)
+      - 808d9fc80a8a "mm: memcg: factor out trylock_stock() and unlock_stock() (0/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
+        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+        - dropped "Cc: Hao Li <hao.li@linux.dev>"
+        - Link: https://lkml.kernel.org/r/20260302195305.620713-1-hannes@cmpxchg.org
+        - Link: https://lkml.kernel.org/r/20260302195305.620713-2-hannes@cmpxchg.org
+      - 620c8e48a54d "mm: memcg: simplify objcg charge size and stock remainder math (1/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
+        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+        - dropped "Cc: Hao Li <hao.li@linux.dev>"
+        - Link: https://lkml.kernel.org/r/20260302195305.620713-3-hannes@cmpxchg.org
+      - 3fbf563dc175 "mm: memcontrol: split out __obj_cgroup_charge() (2/5)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
+        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+        - dropped "Cc: Hao Li <hao.li@linux.dev>"
+        - Link: https://lkml.kernel.org/r/20260302195305.620713-4-hannes@cmpxchg.org
+      - a951f97f051a "mm: memcontrol: use __account_obj_stock() in the !locked path (3/5)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
+        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+        - dropped "Cc: Hao Li <hao.li@linux.dev>"
+        - Link: https://lkml.kernel.org/r/20260302195305.620713-5-hannes@cmpxchg.org
+      - 29ced4c647e0 "mm: memcg: separate slab stat accounting from objcg charge cache (4/5)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
+        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
+        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+        - dropped "Cc: Hao Li <hao.li@linux.dev>"
+        - Link: https://lkml.kernel.org/r/20260302195305.620713-6-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

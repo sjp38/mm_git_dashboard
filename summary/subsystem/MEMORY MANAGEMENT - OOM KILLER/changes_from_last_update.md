@@ -7,9 +7,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 2 commits (no change)
+- mm-new: 2 -> 3 commits
   - series: 0 (2) -> 0 (2) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - ab3c730107cb "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260303102600.105255-1-maninder1.s@samsung.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

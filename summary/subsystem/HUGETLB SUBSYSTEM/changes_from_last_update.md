@@ -14,6 +14,12 @@
   - series: 0 (8) -> 0 (8) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
+  - changed commits
+    - e82a8714deda "Documentation: fix a hugetlbfs reservation statement"
+      - Authored by no role player, reviewed by nobody
+      - added "Fixes: 70bc0dc578b3 ("Documentation: vm, add hugetlbfs reservation overview")"
+      - dropped "Fixes: 70bc0dc578b3f ("Documentation: vm, add hugetlbfs reservation overview")"
+      - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

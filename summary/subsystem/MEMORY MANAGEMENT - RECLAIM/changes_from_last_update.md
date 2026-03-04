@@ -14,11 +14,15 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 4 -> 4 commits (no change)
+- mm-new: 4 -> 5 commits
   - series: 0 (3) -> 0 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 2 -> 2 commits (no change)
+  - new commits
+    - 64dc7395369b "mm/vmscan: fix unintended mtc->nmask mutation in alloc_demote_folio()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260303052519.109244-1-bingjiao@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

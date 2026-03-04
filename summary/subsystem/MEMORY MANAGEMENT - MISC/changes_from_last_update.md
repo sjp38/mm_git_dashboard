@@ -11,10 +11,20 @@
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
+- mm-new: 3 -> 4 commits
   - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, maintainer: 2 -> 2 commits (no change)
+  - new commits
+    - 853f87378a86 "mm: fix remaining zone->lock references"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
+  - changed commits
+    - e82a8714deda "Documentation: fix a hugetlbfs reservation statement"
+      - Authored by no role player, reviewed by nobody
+      - added "Fixes: 70bc0dc578b3 ("Documentation: vm, add hugetlbfs reservation overview")"
+      - dropped "Fixes: 70bc0dc578b3f ("Documentation: vm, add hugetlbfs reservation overview")"
+      - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
