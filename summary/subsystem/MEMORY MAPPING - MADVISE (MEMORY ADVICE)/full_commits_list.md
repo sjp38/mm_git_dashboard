@@ -8,21 +8,21 @@
     - no role, nobody: 5 commits
   - full commits list
     - series "mm: cleanups around unmapping / zapping". (16 commits)
-      - 29108ca89658 "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
+      - 4a4eedde13b7 "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227200848.114019-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260227200848.114019-2-david@kernel.org
         - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
-      - 1c061c18f2c9 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
+      - f9ed288f8b3b "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
-      - dd1f79504c08 "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
+      - d15fc52b7e43 "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227200848.114019-10-david@kernel.org
-      - cdd7394b2f97 "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (13/16)
+      - 754add9f61ae "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (13/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227200848.114019-14-david@kernel.org
-      - 71c1acb96974 "mm: rename zap_page_range_single() to zap_vma_range()" (14/16)
+      - a4bdf399bc2e "mm: rename zap_page_range_single() to zap_vma_range()" (14/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

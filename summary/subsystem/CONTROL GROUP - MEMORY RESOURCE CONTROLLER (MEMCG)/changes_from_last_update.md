@@ -1,9 +1,15 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - dccd5ee2625d "memcg: fix slab accounting in refill_obj_stock() trylock path"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260226115145.62903-1-hao.li@linux.dev
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 20 -> 20 commits (no change)
@@ -18,49 +24,10 @@
     - maintainer, maintainer: 3 -> 3 commits (no change)
   - changed commits
     - series ": memcg: obj stock and slab stat caching cleanups". (5)
-      - 808d9fc80a8a "mm: memcg: factor out trylock_stock() and unlock_stock() (0/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
-        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-        - dropped "Cc: Hao Li <hao.li@linux.dev>"
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-1-hannes@cmpxchg.org
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-2-hannes@cmpxchg.org
-      - 620c8e48a54d "mm: memcg: simplify objcg charge size and stock remainder math (1/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
-        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-        - dropped "Cc: Hao Li <hao.li@linux.dev>"
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-3-hannes@cmpxchg.org
-      - 3fbf563dc175 "mm: memcontrol: split out __obj_cgroup_charge() (2/5)"
+      - a0cbcee97512 "mm: memcg: separate slab stat accounting from objcg charge cache (4/5)"
         - Authored by a maintainer, reviewed by a maintainer
-        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
+        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-        - dropped "Cc: Hao Li <hao.li@linux.dev>"
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-4-hannes@cmpxchg.org
-      - a951f97f051a "mm: memcontrol: use __account_obj_stock() in the !locked path (3/5)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
-        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-        - dropped "Cc: Hao Li <hao.li@linux.dev>"
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-5-hannes@cmpxchg.org
-      - 29ced4c647e0 "mm: memcg: separate slab stat accounting from objcg charge cache (4/5)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
-        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
-        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-        - dropped "Cc: Hao Li <hao.li@linux.dev>"
         - Link: https://lkml.kernel.org/r/20260302195305.620713-6-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

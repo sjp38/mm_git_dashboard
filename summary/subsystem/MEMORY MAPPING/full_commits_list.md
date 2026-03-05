@@ -8,20 +8,20 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 8cda6945a152 "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
+    - 7b4e7b2b5b84 "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260219063506.545148-1-sgsu.park@samsung.com
-      - 7f7f56ae6316 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 1bd5409caa89 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - df18fd070045 "mm: rename unlock_page_lruvec_irq and its variants" (2/32)
+      - 4d14d88c3f32 "mm: rename unlock_page_lruvec_irq and its variants" (2/32)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-      - 6d4fd6cd3ac3 "mm/memory: simplify calculation in unmap_mapping_range_tree()" (4/16)
+      - 96f7e0608d26 "mm/memory: simplify calculation in unmap_mapping_range_tree()" (4/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227200848.114019-5-david@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

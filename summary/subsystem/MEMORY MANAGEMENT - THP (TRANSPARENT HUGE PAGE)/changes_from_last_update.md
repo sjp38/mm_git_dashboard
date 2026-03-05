@@ -1,36 +1,25 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- mm-hotfixes-stable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 1 -> 0 commits
-- mm-hotfixes-unstable: 2 -> 3 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-    - reviewer, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 0 -> 1 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
+  - changed commits
+    - 577a1f495fd7 "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - added "[ziy@nvidia.com: move comment, per David]"
+      - added "Link: : https://lkml.kernel.org/r/5C9FA053-A4C6-4615-BE05-74E47A6462B3@nvidia.com"
+      - Link: : https://lkml.kernel.org/r/5C9FA053-A4C6-4615-BE05-74E47A6462B3@nvidia.com
+      - Link: https://lkml.kernel.org/r/20260302203159.3208341-1-ziy@nvidia.com
+- mm-hotfixes-unstable: 3 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+  - dropped commits
     - 2f9d642922c7 "mm-huge_memory-fix-a-folio_split-race-condition-with-folio_try_get-fix"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/5C9FA053-A4C6-4615-BE05-74E47A6462B3@nvidia.com
-    - 8a50e3dcbf0e "mm/huge_memory: fix use of NULL folio in move_pages_huge_pmd()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/a1e787dd-b911-474d-8570-f37685357d86@lucifer.local
-  - changed commits
-    - 8449482cd4b1 "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
-      - Authored by a reviewer, reviewed by a reviewer
-      - added "Fixes: 00527733d0dc ("mm/huge_memory: add two new (not yet used) functions for folio_split()")"
-      - added "Reviewed-by: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-      - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Fixes: 00527733d0dc8 ("mm/huge_memory: add two new (not yet used) functions for folio_split()")"
-      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - Link: https://lkml.kernel.org/r/20260302203159.3208341-1-ziy@nvidia.com
-  - dropped commits
-    - 4d5f4e09f166 "mm/huge_memory: fix memory corruption on huge zero page move"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260302170619.867056-1-lorenzo.stoakes@oracle.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)
@@ -43,12 +32,9 @@
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - f9f5b7185d3f "khugepaged: remove redundant index check for pmd-folios"
+    - f5212d791f11 "khugepaged: remove redundant index check for pmd-folios"
       - Authored by a reviewer, reviewed by a reviewer
-      - added "Reviewed-by: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
       - Link: https://lkml.kernel.org/r/20260227143501.1488110-1-dev.jain@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

@@ -7,13 +7,13 @@
   - author/reviewer role stat
     - no role, nobody: 3 commits
   - full commits list
-      - 1c061c18f2c9 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
+      - f9ed288f8b3b "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
-      - fb75156d6f5a "fixup: mm/memory: remove zap_details parameter from zap_page_range_single()" (2/16)
+      - f46b3f5048f9 "fixup: mm/memory: remove zap_details parameter from zap_page_range_single()" (2/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/8a27e9ac-2025-4724-a46d-0a7c90894ba7@kernel.org
-      - 71c1acb96974 "mm: rename zap_page_range_single() to zap_vma_range()" (14/16)
+      - a4bdf399bc2e "mm: rename zap_page_range_single() to zap_vma_range()" (14/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

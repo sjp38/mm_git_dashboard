@@ -18,19 +18,19 @@
     - no role, reviewer: 2 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - cec4650dcea6 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+    - 2b4828348ba4 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-    - 8090a58396d0 "mm: introduce a new page type for page pool in page type"
+    - 8dfddd506740 "mm: introduce a new page type for page pool in page type"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
-      - 7f7f56ae6316 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 1bd5409caa89 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - df18fd070045 "mm: rename unlock_page_lruvec_irq and its variants" (2/32)
+      - 4d14d88c3f32 "mm: rename unlock_page_lruvec_irq and its variants" (2/32)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
-      - ee0d33736413 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/32)
+      - 19ac16e1ed79 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/32)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772005110.git.zhengqi.arch@bytedance.com
 - mm-new: 11 total, 2 (10) series, 1 non-series commits
@@ -41,41 +41,41 @@
     - maintainer, nobody: 1 commits
     - maintainer, reviewer: 3 commits
   - full commits list
-      - 027a252813db "mm: change the interface of prep_compound_tail()" (1/17)
+      - 6b897902a1f8 "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - cd78f7ef3cf5 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - aa2ee58cfc6a "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - 7a65e6849331 "mm: convert zone lock users to wrappers" (1/5)
+      - e9c87a8a493e "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - 74a873e082bc "mm: convert compaction to zone lock wrappers" (2/5)
+      - ff3c76e39ca3 "mm: convert compaction to zone lock wrappers" (2/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/3a09e46f52cf9f709b0725bc2b648cc5212843b2.1772206930.git.d@ilvokhin.com
-      - ac01dd4c99b9 "mm: rename zone->lock to zone->_lock" (3/5)
+      - ced02ec4c89a "mm: rename zone->lock to zone->_lock" (3/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
     - series "mm/page_alloc: pcp locking cleanup". (3 commits)
-      - 27282f721c1f "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n" (0/3)
+      - 7a9f66d5217a "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n" (0/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-0-f7e22e603447@kernel.org
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-1-f7e22e603447@kernel.org
         - Link: https://lore.kernel.org/all/d762c46b-36f0-471a-b5b4-23c8cf5628ae@suse.cz/ [1]
-      - 1ed31f6ff5a9 "mm/page_alloc: remove IRQ saving/restoring from pcp locking" (1/3)
+      - af26e34df4e2 "mm/page_alloc: remove IRQ saving/restoring from pcp locking" (1/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-2-f7e22e603447@kernel.org
-      - 1b3533418fd7 "mm/page_alloc: remove pcpu_spin_* wrappers" (2/3)
+      - 57329a03474d "mm/page_alloc: remove pcpu_spin_* wrappers" (2/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-3-f7e22e603447@kernel.org
     - series "Allow order zero pages in page reporting", v4. (5 commits)
-      - 1f4425421b97 "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED" (0/5)
+      - a6b43fd478b3 "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-1-yuvraj.sakshith@oss.qualcomm.com
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-2-yuvraj.sakshith@oss.qualcomm.com
-      - d1bd362bc6d9 "mm-page_reporting-add-page_reporting_order_unspecified-fix" (1/5)
+      - cfd1242c5f9b "mm-page_reporting-add-page_reporting_order_unspecified-fix" (1/5)
         - Authored by a maintainer, reviewed by nobody
-    - ef28b7232520 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED"
+    - 990e07d79d71 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260303113032.3008371-6-yuvraj.sakshith@oss.qualcomm.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

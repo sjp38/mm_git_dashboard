@@ -1,10 +1,20 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- mm-hotfixes-stable: 1 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 2 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+  - changed commits
+    - 2d28ed588f8d "Revert "ptdesc: remove references to folios from __pagetable_ctor() and pagetable_dtor()""
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260225002434.2953895-1-axelrasmussen@google.com
+    - 599b4e290c87 "mm/mmu_notifier: clean up mmu_notifier.h kernel-doc"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260302005222.3470783-1-rdunlap@infradead.org
+- mm-hotfixes-unstable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 21 -> 21 commits (no change)
@@ -17,13 +27,24 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 35 -> 35 commits (no change)
+- mm-new: 35 -> 34 commits
   - series: 3 (29) -> 3 (29) (no change)
-    - no role, nobody: 19 -> 19 commits (no change)
-    - no role, no role : 7 -> 9 commits
-    - no role, reviewer: 5 -> 3 commits
-    - no role, maintainer: 3 -> 3 commits (no change)
+    - no role, nobody: 19 -> 18 commits
+    - no role, no role : 9 -> 10 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 3 -> 2 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: cleanups around unmapping / zapping". (16)
+      - 9b6011bb0a35 "mm: rename zap_vma_ptes() to zap_special_vma_range() (15/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Leon Romanovsky <leon@kernel.org>	[drivers/infiniband]"
+        - dropped "Cc: Leon Romanovsky <leon@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-16-david@kernel.org
+  - dropped commits
+    - ed99ec7f9c9f "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260130073807.99474-1-tujinjiang@huawei.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 4 -> 4 commits (no change)

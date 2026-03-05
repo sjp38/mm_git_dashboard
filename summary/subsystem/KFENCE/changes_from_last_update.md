@@ -9,14 +9,7 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, maintainer: 0 -> 1 commits
-  - changed commits
-    - a15a725933ec "kfence: add kfence.fault parameter"
-      - Authored by a maintainer, reviewed by a maintainer
-      - added "Reviewed-by: Alexander Potapenko <glider@google.com>"
-      - dropped "Cc: Alexander Potapenko <glider@google.com>"
-      - Link: https://lkml.kernel.org/r/20260225203639.3159463-1-elver@google.com
+    - maintainer, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

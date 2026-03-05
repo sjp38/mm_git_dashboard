@@ -1,9 +1,15 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - f4355d6bb39f "mm/cma: move put_page_testzero() out of VM_WARN_ON in cma_release()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260225031231.2352011-1-ziy@nvidia.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 7 -> 7 commits (no change)
@@ -11,20 +17,10 @@
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 3 -> 4 commits
+- mm-new: 4 -> 4 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - new commits
-    - 853f87378a86 "mm: fix remaining zone->lock references"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
-  - changed commits
-    - e82a8714deda "Documentation: fix a hugetlbfs reservation statement"
-      - Authored by no role player, reviewed by nobody
-      - added "Fixes: 70bc0dc578b3 ("Documentation: vm, add hugetlbfs reservation overview")"
-      - dropped "Fixes: 70bc0dc578b3f ("Documentation: vm, add hugetlbfs reservation overview")"
-      - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

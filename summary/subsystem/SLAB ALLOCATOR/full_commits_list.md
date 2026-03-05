@@ -8,13 +8,13 @@
     - no role, no role : 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - cd78f7ef3cf5 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - aa2ee58cfc6a "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - db8f445d92ac "mm: rework compound_head() for power-of-2 sizeof(struct page)" (6/17)
+      - a5f987391c65 "mm: rework compound_head() for power-of-2 sizeof(struct page)" (6/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-8-kas@kernel.org
-    - cc808ae34ca4 "mm/slab: use compound_head() in page_slab()"
+    - ff35bf14ea27 "mm/slab: use compound_head() in page_slab()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260227194302.274384-19-kas@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

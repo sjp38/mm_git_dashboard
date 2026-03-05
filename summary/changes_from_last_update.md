@@ -1,219 +1,148 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 12 -> 12 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 1 -> 2 commits
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, nobody: 3 -> 3 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 18 -> 21 commits
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 10 -> 13 commits
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
+- mm-hotfixes-stable: 12 -> 27 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, nobody: 3 -> 4 commits
+    - no role, no role : 3 -> 13 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 0 -> 2 commits
     - reviewer, reviewer: 0 -> 1 commits
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
+    - maintainer, nobody: 3 -> 3 commits (no change)
+    - maintainer, maintainer: 1 -> 2 commits
+  - changed commits
+    - series "mm: memfd_luo: fixes for folio flag preservation". (2)
+      - 50d7b4332f27 "mm: memfd_luo: always make all folios uptodate (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lkml.kernel.org/r/20260223173931.2221759-2-pratyush@kernel.org
+      - 7e04bf1f3315 "mm: memfd_luo: always dirty all folios (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lkml.kernel.org/r/20260223173931.2221759-3-pratyush@kernel.org
+    - d210fdcac9c0 "mm/damon/core: clear walk_control on inactive context in damos_walk()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260224011102.56033-1-sj@kernel.org
+    - f4355d6bb39f "mm/cma: move put_page_testzero() out of VM_WARN_ON in cma_release()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260225031231.2352011-1-ziy@nvidia.com
+    - 2d28ed588f8d "Revert "ptdesc: remove references to folios from __pagetable_ctor() and pagetable_dtor()""
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260225002434.2953895-1-axelrasmussen@google.com
+    - 5548dd7fa845 "tools/testing: fix testing/vma and testing/radix-tree build"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260225233111.2760752-1-rppt@kernel.org
+    - ba4c3698e696 "zram: rename writeback_compressed device attr"
+      - Authored by a maintainer, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260226025429.1042083-1-senozhatsky@chromium.org
+    - a1e59fc6ee4e "mm/hugetlb.c: use __pa() instead of virt_to_phys() in early bootmem alloc code"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/b4a7d2c6c4c1dd81dddc904fc21f01303290a4b8.1772107852.git.riteshh@linux.ibm.com
+    - dccd5ee2625d "memcg: fix slab accounting in refill_obj_stock() trylock path"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260226115145.62903-1-hao.li@linux.dev
+    - 06de173b1385 "MAINTAINERS: add RELAY entry"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260301020902.56476-1-kerneljasonxing@gmail.com
+    - 431b04f0084d "MAINTAINERS: add co-maintainer and reviewer for SLAB ALLOCATOR"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260302101345.36713-2-vbabka@kernel.org
+    - 577a1f495fd7 "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - added "[ziy@nvidia.com: move comment, per David]"
+      - added "Link: : https://lkml.kernel.org/r/5C9FA053-A4C6-4615-BE05-74E47A6462B3@nvidia.com"
+      - Link: : https://lkml.kernel.org/r/5C9FA053-A4C6-4615-BE05-74E47A6462B3@nvidia.com
+      - Link: https://lkml.kernel.org/r/20260302203159.3208341-1-ziy@nvidia.com
+    - 7392f8e4ea63 "uaccess: correct kernel-doc parameter format"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - added "Reviewed-by: Andrew Morton <akpm@linux-foundation.org>"
+      - Link: https://lkml.kernel.org/r/20260302005229.3471955-1-rdunlap@infradead.org
+    - 599b4e290c87 "mm/mmu_notifier: clean up mmu_notifier.h kernel-doc"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260302005222.3470783-1-rdunlap@infradead.org
+    - b12bbe35c7c1 "MAINTAINERS, mailmap: update email address for Lorenzo Stoakes"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260303195025.1170895-1-ljs@kernel.org
+- mm-hotfixes-unstable: 21 -> 5 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 3 -> 1 commits
+    - no role, no role : 13 -> 4 commits
+    - no role, maintainer: 2 -> 0 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - dropped commits
     - 2f9d642922c7 "mm-huge_memory-fix-a-folio_split-race-condition-with-folio_try_get-fix"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/5C9FA053-A4C6-4615-BE05-74E47A6462B3@nvidia.com
-    - c486c8d8ad5d "MAINTAINERS, mailmap: update email address for Lorenzo Stoakes"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260303195025.1170895-1-ljs@kernel.org
-    - 8a50e3dcbf0e "mm/huge_memory: fix use of NULL folio in move_pages_huge_pmd()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/a1e787dd-b911-474d-8570-f37685357d86@lucifer.local
-    - 0652ee2efabd "mm/rmap: fix incorrect pte restoration for lazyfree folios"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260303061528.2429162-1-dev.jain@arm.com
-  - changed commits
-    - 8449482cd4b1 "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
-      - Authored by a reviewer, reviewed by a reviewer
-      - added "Fixes: 00527733d0dc ("mm/huge_memory: add two new (not yet used) functions for folio_split()")"
-      - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
-      - added "Reviewed-by: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Fixes: 00527733d0dc8 ("mm/huge_memory: add two new (not yet used) functions for folio_split()")"
-      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - Link: https://lkml.kernel.org/r/20260302203159.3208341-1-ziy@nvidia.com
-    - 809be96adc2b "build_bug.h: correct function parameters names in kernel-doc"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260302005144.3467019-1-rdunlap@infradead.org
-  - dropped commits
-    - 4d5f4e09f166 "mm/huge_memory: fix memory corruption on huge zero page move"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260302170619.867056-1-lorenzo.stoakes@oracle.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 156 -> 153 commits
-  - series: 17 (114) -> 16 (111)
-    - no role, nobody: 14 -> 12 commits
-    - no role, no role : 28 -> 27 commits
+- mm-unstable: 153 -> 153 commits (no change)
+  - series: 16 (111) -> 16 (111) (no change)
+    - no role, nobody: 12 -> 12 commits (no change)
+    - no role, no role : 27 -> 27 commits (no change)
     - no role, reviewer: 16 -> 16 commits (no change)
     - no role, maintainer: 40 -> 40 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 36 -> 35 commits
+    - maintainer, nobody: 35 -> 35 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-    - maintainer, maintainer: 13 -> 14 commits
-  - changed commits
-    - a15a725933ec "kfence: add kfence.fault parameter"
-      - Authored by a maintainer, reviewed by a maintainer
-      - added "Reviewed-by: Alexander Potapenko <glider@google.com>"
-      - dropped "Cc: Alexander Potapenko <glider@google.com>"
-      - Link: https://lkml.kernel.org/r/20260225203639.3159463-1-elver@google.com
-  - dropped commits
-    - series "Allow order zero pages in page reporting". (3)
-      - 1784d41eb1e0 "mm/page_reporting: allow zero page_reporting_order (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260226070125.3732265-1-yuvraj.sakshith@oss.qualcomm.com
-        - Link: https://lkml.kernel.org/r/20260226070125.3732265-2-yuvraj.sakshith@oss.qualcomm.com
-      - 44c713af5441 "hv_balloon: change default page reporting order (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260226070125.3732265-3-yuvraj.sakshith@oss.qualcomm.com
-      - a2cc78381eab "virtio_balloon: set pr_dev.order to new default (2/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260226070125.3732265-4-yuvraj.sakshith@oss.qualcomm.com
-- mm-new: 76 -> 86 commits
-  - series: 8 (57) -> 10 (67)
-    - no role, nobody: 27 -> 28 commits
-    - no role, no role : 15 -> 24 commits
-    - no role, reviewer: 7 -> 5 commits
-    - no role, maintainer: 9 -> 10 commits
+    - maintainer, maintainer: 14 -> 14 commits (no change)
+- mm-new: 86 -> 85 commits
+  - series: 10 (67) -> 10 (67) (no change)
+    - no role, nobody: 28 -> 27 commits
+    - no role, no role : 24 -> 25 commits
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, maintainer: 10 -> 9 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 11 -> 12 commits
+    - maintainer, nobody: 12 -> 12 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-  - new commits
-    - 853f87378a86 "mm: fix remaining zone->lock references"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
-    - 2894b94fbe16 "kasan: docs: SLUB is the only remaining slab implementation"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260303120416.62580-1-david@kernel.org
-    - series "Allow order zero pages in page reporting", v4. (5)
-      - 1f4425421b97 "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-1-yuvraj.sakshith@oss.qualcomm.com
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-2-yuvraj.sakshith@oss.qualcomm.com
-      - d1bd362bc6d9 "mm-page_reporting-add-page_reporting_order_unspecified-fix (1/5)"
-        - Authored by a maintainer, reviewed by nobody
-      - 076db0c103ae "virtio_balloon: set unspecified page reporting order (2/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-3-yuvraj.sakshith@oss.qualcomm.com
-      - 690daba4c81b "hv_balloon: set unspecified page reporting order (3/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-4-yuvraj.sakshith@oss.qualcomm.com
-      - bfdc3ae2ff52 "mm/page_reporting: change PAGE_REPORTING_ORDER_UNSPECIFIED to -1 (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-5-yuvraj.sakshith@oss.qualcomm.com
-    - ef28b7232520 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260303113032.3008371-6-yuvraj.sakshith@oss.qualcomm.com
-    - ab3c730107cb "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260303102600.105255-1-maninder1.s@samsung.com
-    - 64dc7395369b "mm/vmscan: fix unintended mtc->nmask mutation in alloc_demote_folio()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260303052519.109244-1-bingjiao@google.com
   - changed commits
-    - f9f5b7185d3f "khugepaged: remove redundant index check for pmd-folios"
+    - f5212d791f11 "khugepaged: remove redundant index check for pmd-folios"
       - Authored by a reviewer, reviewed by a reviewer
-      - added "Reviewed-by: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
       - Link: https://lkml.kernel.org/r/20260227143501.1488110-1-dev.jain@arm.com
-    - series "zram: various cleanups". (5)
-      - 86a99c85c0e5 "zram: do not autocorrect bad recompression parameters (0/5)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/bg7ivz7ajiuzdbpv3h6hbptxgmqk5fhwakw4rzk4sz3bczky5a@rde3y352n5ej"
-        - Link: https://lkml.kernel.org/r/bg7ivz7ajiuzdbpv3h6hbptxgmqk5fhwakw4rzk4sz3bczky5a@rde3y352n5ej
-        - Link: https://lkml.kernel.org/r/8a5d53d19a8dbd51d7d81d153676895163e0735e.1772180459.git.senozhatsky@chromium.org
     - series ": memcg: obj stock and slab stat caching cleanups". (5)
-      - 808d9fc80a8a "mm: memcg: factor out trylock_stock() and unlock_stock() (0/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
-        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-        - dropped "Cc: Hao Li <hao.li@linux.dev>"
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-1-hannes@cmpxchg.org
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-2-hannes@cmpxchg.org
-      - 620c8e48a54d "mm: memcg: simplify objcg charge size and stock remainder math (1/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
-        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-        - dropped "Cc: Hao Li <hao.li@linux.dev>"
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-3-hannes@cmpxchg.org
-      - 3fbf563dc175 "mm: memcontrol: split out __obj_cgroup_charge() (2/5)"
+      - a0cbcee97512 "mm: memcg: separate slab stat accounting from objcg charge cache (4/5)"
         - Authored by a maintainer, reviewed by a maintainer
-        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
+        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-        - dropped "Cc: Hao Li <hao.li@linux.dev>"
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-4-hannes@cmpxchg.org
-      - a951f97f051a "mm: memcontrol: use __account_obj_stock() in the !locked path (3/5)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
-        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-        - dropped "Cc: Hao Li <hao.li@linux.dev>"
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-5-hannes@cmpxchg.org
-      - 29ced4c647e0 "mm: memcg: separate slab stat accounting from objcg charge cache (4/5)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Acked-by: Roman Gushchin <roman.gushchin@linux.dev>"
-        - added "Reviewed-by: Hao Li <hao.li@linux.dev>"
-        - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-        - dropped "Cc: Hao Li <hao.li@linux.dev>"
         - Link: https://lkml.kernel.org/r/20260302195305.620713-6-hannes@cmpxchg.org
-    - e82a8714deda "Documentation: fix a hugetlbfs reservation statement"
-      - Authored by no role player, reviewed by nobody
-      - added "Fixes: 70bc0dc578b3 ("Documentation: vm, add hugetlbfs reservation overview")"
-      - dropped "Fixes: 70bc0dc578b3f ("Documentation: vm, add hugetlbfs reservation overview")"
-      - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
-    - 628121372634 "mm/vmalloc: fix incorrect size reporting on allocation failure"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
-      - dropped "Cc: Vishal Moola (Oracle) <vishal.moola@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260302114740.2668450-1-urezki@gmail.com
+    - series "mm: cleanups around unmapping / zapping". (16)
+      - 9b6011bb0a35 "mm: rename zap_vma_ptes() to zap_special_vma_range() (15/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Leon Romanovsky <leon@kernel.org>	[drivers/infiniband]"
+        - dropped "Cc: Leon Romanovsky <leon@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-16-david@kernel.org
+  - dropped commits
+    - ed99ec7f9c9f "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260130073807.99474-1-tujinjiang@huawei.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 73 -> 77 commits
-  - series: 7 (44) -> 8 (47)
+- mm-nonmm-unstable: 77 -> 78 commits
+  - series: 8 (47) -> 8 (47) (no change)
     - no role, nobody: 45 -> 45 commits (no change)
-    - no role, no role : 18 -> 18 commits (no change)
-    - no role, reviewer: 0 -> 3 commits
+    - no role, no role : 18 -> 19 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
-    - reviewer, reviewer: 0 -> 1 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
   - new commits
-    - series "hung_task: Provide runtime reset interface for hung task detector", v9. (3)
-      - 356187e7dd9b "hung_task: refactor detection logic and atomicise detection count (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260303203031.4097316-1-atomlin@atomlin.com
-        - Link: https://lkml.kernel.org/r/20260303203031.4097316-2-atomlin@atomlin.com
-      - eb77e1f20497 "hung_task: enable runtime reset of hung_task_detect_count (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260303203031.4097316-3-atomlin@atomlin.com
-      - 3ac7b4218a6c "hung_task: increment the global counter immediately (2/3)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260303203031.4097316-4-atomlin@atomlin.com
-    - 09c4ad73ba08 "hung_task: explicitly report I/O wait state in log output"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260303221324.4106917-1-atomlin@atomlin.com
+    - 80f640f3bb4d "scripts/gdb/symbols: handle module path parameters"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260304110642.2020614-2-benjamin@sipsolutions.net

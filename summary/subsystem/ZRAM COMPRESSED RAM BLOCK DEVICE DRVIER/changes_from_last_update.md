@@ -1,24 +1,23 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 0 -> 1 commits
+  - changed commits
+    - ba4c3698e696 "zram: rename writeback_compressed device attr"
+      - Authored by a maintainer, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260226025429.1042083-1-senozhatsky@chromium.org
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 5 -> 5 commits (no change)
-  - series: 0 (0) -> 1 (5)
+  - series: 1 (5) -> 1 (5) (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
-  - changed commits
-    - series "zram: various cleanups". (5)
-      - 86a99c85c0e5 "zram: do not autocorrect bad recompression parameters (0/5)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/bg7ivz7ajiuzdbpv3h6hbptxgmqk5fhwakw4rzk4sz3bczky5a@rde3y352n5ej"
-        - Link: https://lkml.kernel.org/r/bg7ivz7ajiuzdbpv3h6hbptxgmqk5fhwakw4rzk4sz3bczky5a@rde3y352n5ej
-        - Link: https://lkml.kernel.org/r/8a5d53d19a8dbd51d7d81d153676895163e0735e.1772180459.git.senozhatsky@chromium.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

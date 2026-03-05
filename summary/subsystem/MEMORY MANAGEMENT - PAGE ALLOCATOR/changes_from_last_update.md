@@ -7,36 +7,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 5 commits
-  - series: 1 (4) -> 0 (3)
-    - no role, nobody: 1 -> 0 commits
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - dropped commits
-    - series "Allow order zero pages in page reporting". (3)
-      - 1784d41eb1e0 "mm/page_reporting: allow zero page_reporting_order (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260226070125.3732265-1-yuvraj.sakshith@oss.qualcomm.com
-        - Link: https://lkml.kernel.org/r/20260226070125.3732265-2-yuvraj.sakshith@oss.qualcomm.com
-- mm-new: 8 -> 11 commits
-  - series: 1 (8) -> 2 (10)
-    - no role, no role : 0 -> 2 commits
+- mm-new: 11 -> 11 commits (no change)
+  - series: 2 (10) -> 2 (10) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
-  - new commits
-    - series "Allow order zero pages in page reporting", v4. (5)
-      - 1f4425421b97 "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-1-yuvraj.sakshith@oss.qualcomm.com
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-2-yuvraj.sakshith@oss.qualcomm.com
-      - d1bd362bc6d9 "mm-page_reporting-add-page_reporting_order_unspecified-fix (1/5)"
-        - Authored by a maintainer, reviewed by nobody
-    - ef28b7232520 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260303113032.3008371-6-yuvraj.sakshith@oss.qualcomm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

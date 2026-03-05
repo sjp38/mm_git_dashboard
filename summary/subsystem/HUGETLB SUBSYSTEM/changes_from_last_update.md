@@ -1,9 +1,15 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - a1e59fc6ee4e "mm/hugetlb.c: use __pa() instead of virt_to_phys() in early bootmem alloc code"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/b4a7d2c6c4c1dd81dddc904fc21f01303290a4b8.1772107852.git.riteshh@linux.ibm.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)
@@ -14,12 +20,6 @@
   - series: 0 (8) -> 0 (8) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
-  - changed commits
-    - e82a8714deda "Documentation: fix a hugetlbfs reservation statement"
-      - Authored by no role player, reviewed by nobody
-      - added "Fixes: 70bc0dc578b3 ("Documentation: vm, add hugetlbfs reservation overview")"
-      - dropped "Fixes: 70bc0dc578b3f ("Documentation: vm, add hugetlbfs reservation overview")"
-      - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
