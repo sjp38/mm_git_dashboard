@@ -1,23 +1,22 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, maintainer: 0 -> 1 commits
-  - changed commits
-    - ba4c3698e696 "zram: rename writeback_compressed device attr"
-      - Authored by a maintainer, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260226025429.1042083-1-senozhatsky@chromium.org
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 5 -> 5 commits (no change)
+- mm-new: 5 -> 6 commits
   - series: 1 (5) -> 1 (5) (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
+    - maintainer, no role : 0 -> 1 commits
+  - new commits
+    - a305e6e71f4f "zram: use GFP_KERNEL for post-processing slot allocation"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260305021619.617481-1-senozhatsky@chromium.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,50 +1,174 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 3 commits
+- mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 2d28ed588f8d "Revert "ptdesc: remove references to folios from __pagetable_ctor() and pagetable_dtor()""
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260225002434.2953895-1-axelrasmussen@google.com
-    - 599b4e290c87 "mm/mmu_notifier: clean up mmu_notifier.h kernel-doc"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260302005222.3470783-1-rdunlap@infradead.org
-- mm-hotfixes-unstable: 2 -> 0 commits
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 21 -> 21 commits (no change)
-  - series: 3 (12) -> 3 (12) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 8 -> 8 commits (no change)
+- mm-unstable: 21 -> 45 commits
+  - series: 3 (12) -> 4 (32)
+    - no role, nobody: 2 -> 18 commits
+    - no role, no role : 8 -> 15 commits
     - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+    - no role, maintainer: 3 -> 5 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 0 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 35 -> 34 commits
-  - series: 3 (29) -> 3 (29) (no change)
-    - no role, nobody: 19 -> 18 commits
-    - no role, no role : 9 -> 10 commits
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 3 -> 2 commits
-    - maintainer, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: cleanups around unmapping / zapping". (16)
-      - 9b6011bb0a35 "mm: rename zap_vma_ptes() to zap_special_vma_range() (15/16)"
+    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
+      - 21f1a28497d4 "mm: move MAX_FOLIO_ORDER definition to mmzone.h (0/17)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Leon Romanovsky <leon@kernel.org>	[drivers/infiniband]"
-        - dropped "Cc: Leon Romanovsky <leon@kernel.org>"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-1-kas@kernel.org
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-2-kas@kernel.org
+      - e40e5dee8264 "mm: change the interface of prep_compound_tail() (1/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
+      - d002cb0e607c "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
+      - 969ed05fa751 "riscv/mm: align vmemmap to maximal folio size (4/17)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-6-kas@kernel.org
+      - c60d92b0f875 "mm: rework compound_head() for power-of-2 sizeof(struct page) (6/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-8-kas@kernel.org
+      - 2cb3e7545a85 "mm/sparse: check memmap alignment for compound_info_has_mask() (7/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-9-kas@kernel.org
+      - 7d36c794a228 "mm/hugetlb: defer vmemmap population for bootmem hugepages (8/17)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-10-kas@kernel.org
+      - b394a1e74d8c "mm/hugetlb: remove fake head pages (11/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-13-kas@kernel.org
+    - a49e84ecc231 "mm/pagewalk: drop FW_MIGRATION"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260227212952.190691-1-david@kernel.org
+    - 867847588206 "mm: replace READ_ONCE() in pud_trans_unstable()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260227040300.2091901-1-anshuman.khandual@arm.com
+    - 053325a78703 "mm: make ref_unless functions unless_zero only"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/a0c89b49d38c671a0bdd35069d15ee13e08314d2.1772370066.git.gladyshev.ilya1@h-partners.com
+    - series "mm: cleanups around unmapping / zapping". (16)
+      - 7a18780d3054 "mm/memory: remove "zap_details" parameter from zap_page_range_single() (1/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
+      - c30a62a98be2 "mm/memory: inline unmap_mapping_range_vma() into unmap_mapping_range_tree() (3/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-4-david@kernel.org
+      - 57b418330834 "mm/memory: simplify calculation in unmap_mapping_range_tree() (4/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-5-david@kernel.org
+      - 1a0a6e78b425 "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping() (6/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-7-david@kernel.org
+      - 45817a793f43 "mm/memory: rename unmap_single_vma() to __zap_vma_range() (7/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-8-david@kernel.org
+      - d2e9276ffea5 "mm/memory: move adjusting of address range to unmap_vmas() (8/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-9-david@kernel.org
+      - b83979ae5966 "mm/memory: convert details->even_cows into details->skip_cows (9/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-10-david@kernel.org
+      - 01ccd1fddb38 "mm/memory: use __zap_vma_range() in zap_vma_for_reaping() (10/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-11-david@kernel.org
+      - 7139bdf58096 "mm/memory: inline unmap_page_range() into __zap_vma_range() (11/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-12-david@kernel.org
+      - af3c32476074 "mm: rename zap_vma_pages() to zap_vma() (12/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-13-david@kernel.org
+      - 31a819bd6383 "mm: rename zap_page_range_single_batched() to zap_vma_range_batched() (13/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-14-david@kernel.org
+      - 3c9b6aa5c911 "mm: rename zap_page_range_single() to zap_vma_range() (14/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
+      - 8dac5cd675a1 "mm: rename zap_vma_ptes() to zap_special_vma_range() (15/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260227200848.114019-16-david@kernel.org
-  - dropped commits
-    - ed99ec7f9c9f "arm64: mm: fix pass user prot to ioremap_prot in generic_access_phys"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260130073807.99474-1-tujinjiang@huawei.com
+    - 77c2f1e7f862 "mm/memory: support VM_MIXEDMAP in zap_special_vma_range()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260227200848.114019-17-david@kernel.org
+      - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
+- mm-new: 34 -> 16 commits
+  - series: 3 (29) -> 3 (14)
+    - no role, nobody: 18 -> 4 commits
+    - no role, no role : 10 -> 7 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 2 -> 0 commits
+    - reviewer, no role : 0 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
+  - new commits
+    - 27680757fa3d "mm: documentation: standardize on "zone lock" terminology"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
+    - series "mm: vma flag tweaks". (6)
+      - 9db195a8d539 "mm: rename VMA flag helpers to be more readable (0/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
+      - 87079eb381b2 "mm: add vma_desc_test_all() and use it (1/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/568c8f8d6a84ff64014f997517cba7a629f7eed6.1772704455.git.ljs@kernel.org
+      - 545d66306130 "mm: always inline __mk_vma_flags() and invoked functions (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/241f49c52074d436edbb9c6a6662a8dc142a8f43.1772704455.git.ljs@kernel.org
+      - 9ab73cd25458 "mm: reintroduce vma_flags_test() as a singular flag test (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
+      - 5309830d750e "mm: reintroduce vma_desc_test() as a singular flag test (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - 58c20f7d7291 "mm: vmscan: prepare for reparenting MGLRU folios (25/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - added "Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com"
+        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
+        - added "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772005110.git.zhengqi.arch@bytedance.com"
+        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
+        - dropped "Cc: Tejun Heo <tj@kernel.org>"
+        - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 4 -> 4 commits (no change)

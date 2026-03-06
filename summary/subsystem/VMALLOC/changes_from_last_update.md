@@ -6,14 +6,24 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 3 commits (no change)
+- mm-unstable: 3 -> 5 commits
   - series: 1 (1) -> 1 (1) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 2 -> 3 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
+  - changed commits
+    - e9c66deeb110 "mm/vmalloc: fix incorrect size reporting on allocation failure"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260302114740.2668450-1-urezki@gmail.com
+    - ece4a6124783 "vmalloc: support __GFP_RETRY_MAYFAIL and __GFP_NORETRY"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260302114740.2668450-2-urezki@gmail.com
+- mm-new: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

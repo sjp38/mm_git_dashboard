@@ -4,25 +4,49 @@
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 3 total, 0 (2) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
   - full commits list
-    - 7b4e7b2b5b84 "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
+    - 8ec951b69bdd "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260219063506.545148-1-sgsu.park@samsung.com
-      - 1bd5409caa89 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 86d20b7ada83 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 4d14d88c3f32 "mm: rename unlock_page_lruvec_irq and its variants" (2/32)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-      - 96f7e0608d26 "mm/memory: simplify calculation in unmap_mapping_range_tree()" (4/16)
+      - 57b418330834 "mm/memory: simplify calculation in unmap_mapping_range_tree()" (4/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227200848.114019-5-david@kernel.org
+- mm-new: 8 total, 1 (7) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 3 commits
+    - no role, no role : 4 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+      - d9a3f0f8e6f3 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
+    - series "mm: vma flag tweaks". (6 commits)
+      - 9db195a8d539 "mm: rename VMA flag helpers to be more readable" (0/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
+      - 87079eb381b2 "mm: add vma_desc_test_all() and use it" (1/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/568c8f8d6a84ff64014f997517cba7a629f7eed6.1772704455.git.ljs@kernel.org
+      - 545d66306130 "mm: always inline __mk_vma_flags() and invoked functions" (2/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/241f49c52074d436edbb9c6a6662a8dc142a8f43.1772704455.git.ljs@kernel.org
+      - 9ab73cd25458 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
+      - 5309830d750e "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
+      - af73b4895f11 "tools/testing/vma: add test for vma_flags_test(), vma_desc_test()" (5/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/376a39eb9e134d2c8ab10e32720dd292970b080a.1772704455.git.ljs@kernel.org
+    - 8a98c5542a52 "tools-testing-vma-add-test-for-vma_flags_test-vma_desc_test-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/f6f396d2-1ba2-426f-b756-d8cc5985cc7c@lucifer.local
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

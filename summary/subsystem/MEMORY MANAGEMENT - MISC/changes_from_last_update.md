@@ -1,26 +1,38 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - f4355d6bb39f "mm/cma: move put_page_testzero() out of VM_WARN_ON in cma_release()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260225031231.2352011-1-ziy@nvidia.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 7 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+- mm-unstable: 7 -> 10 commits
+  - series: 0 (1) -> 0 (3)
+    - no role, nobody: 2 -> 3 commits
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 4 -> 4 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
+    - no role, maintainer: 2 -> 4 commits
+  - changed commits
+    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
+      - d002cb0e607c "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
+      - c430bae296ce "hugetlb: update vmemmap_dedup.rst (16/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
+    - 68645b7b84a2 "Documentation: fix a hugetlbfs reservation statement"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
+- mm-new: 4 -> 2 commits
+  - series: 0 (2) -> 0 (0)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 0 commits
+  - new commits
+    - 27680757fa3d "mm: documentation: standardize on "zone lock" terminology"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

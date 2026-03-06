@@ -5,12 +5,33 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
+- mm-unstable: 4 -> 3 commits
+  - series: 1 (2) -> 0 (1)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 0 commits
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - 04e52ce2b692 "mm: memcontrol: remove dead code of checking parent memory cgroup (0/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-new
+        - added "Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772711148.git.zhengqi.arch@bytedance.com"
+        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
+        - added "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
+        - added "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772005110.git.zhengqi.arch@bytedance.com"
+        - dropped "Link: https://lkml.kernel.org/r/cover.1772005110.git.zhengqi.arch@bytedance.com"
+        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
+        - dropped "Cc: Tejun Heo <tj@kernel.org>"
+        - Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772711148.git.zhengqi.arch@bytedance.com
+        - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
+        - Link: https://lwn.net/Articles/895431/ [2]
+        - Link: https://github.com/systemd/systemd/pull/36827 [3]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

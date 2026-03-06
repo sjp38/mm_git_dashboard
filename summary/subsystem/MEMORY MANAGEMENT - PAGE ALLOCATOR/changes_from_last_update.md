@@ -7,18 +7,79 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
+- mm-unstable: 5 -> 8 commits
+  - series: 0 (3) -> 1 (6)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 11 -> 11 commits (no change)
-  - series: 2 (10) -> 2 (10) (no change)
+    - maintainer, reviewer: 0 -> 3 commits
+  - changed commits
+    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
+      - e40e5dee8264 "mm: change the interface of prep_compound_tail() (1/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
+      - d002cb0e607c "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
+    - series "mm/page_alloc: pcp locking cleanup". (3)
+      - 63c5c2cd83bf "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n (0/3)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-0-f7e22e603447@kernel.org
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-1-f7e22e603447@kernel.org
+        - Link: https://lore.kernel.org/all/d762c46b-36f0-471a-b5b4-23c8cf5628ae@suse.cz/ [1]
+      - a78fd49d529f "mm/page_alloc: remove IRQ saving/restoring from pcp locking (1/3)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-2-f7e22e603447@kernel.org
+      - 1161bb0242ea "mm/page_alloc: remove pcpu_spin_* wrappers (2/3)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-3-f7e22e603447@kernel.org
+- mm-new: 11 -> 9 commits
+  - series: 2 (10) -> 1 (7)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 3 -> 3 commits (no change)
+    - maintainer, reviewer: 3 -> 0 commits
+  - new commits
+    - 27680757fa3d "mm: documentation: standardize on "zone lock" terminology"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - d9a3f0f8e6f3 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-new
+        - added "Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com"
+        - added "Cc: Michal Hocko <mhocko@suse.com>"
+        - added "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
+        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com"
+        - dropped "Cc: Tejun Heo <tj@kernel.org>"
+        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
+        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
+      - 630af429affa "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock (23/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-new
+        - added "Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com"
+        - added "Cc: Michal Hocko <mhocko@suse.com>"
+        - added "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
+        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772005110.git.zhengqi.arch@bytedance.com"
+        - dropped "Cc: Tejun Heo <tj@kernel.org>"
+        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
+        - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

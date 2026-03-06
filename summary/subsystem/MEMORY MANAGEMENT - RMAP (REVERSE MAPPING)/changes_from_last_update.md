@@ -1,9 +1,13 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
+  - new commits
+    - 8357eb228327 "mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared THP"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260305015006.27343-1-richard.weiyang@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)

@@ -1,41 +1,60 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 2 commits
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-  - changed commits
-    - 577a1f495fd7 "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - added "[ziy@nvidia.com: move comment, per David]"
-      - added "Link: : https://lkml.kernel.org/r/5C9FA053-A4C6-4615-BE05-74E47A6462B3@nvidia.com"
-      - Link: : https://lkml.kernel.org/r/5C9FA053-A4C6-4615-BE05-74E47A6462B3@nvidia.com
-      - Link: https://lkml.kernel.org/r/20260302203159.3208341-1-ziy@nvidia.com
-- mm-hotfixes-unstable: 3 -> 1 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
-  - dropped commits
-    - 2f9d642922c7 "mm-huge_memory-fix-a-folio_split-race-condition-with-folio_try_get-fix"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/5C9FA053-A4C6-4615-BE05-74E47A6462B3@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 1 (6) -> 1 (6) (no change)
+- mm-unstable: 8 -> 7 commits
+  - series: 1 (6) -> 1 (4)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, reviewer: 0 -> 1 commits
   - changed commits
-    - f5212d791f11 "khugepaged: remove redundant index check for pmd-folios"
+    - cb69cf098a58 "khugepaged: remove redundant index check for pmd-folios"
       - Authored by a reviewer, reviewed by a reviewer
-      - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260227143501.1488110-1-dev.jain@arm.com
+- mm-new: 1 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, reviewer: 1 -> 0 commits
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - d9a3f0f8e6f3 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-new
+        - added "Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com"
+        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
+        - added "Cc: Michal Hocko <mhocko@suse.com>"
+        - added "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
+        - dropped "Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com"
+        - dropped "Cc: Tejun Heo <tj@kernel.org>"
+        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
+        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
+      - 1f5b053eb4d8 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}() (16/33)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - added "Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com"
+        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
+        - added "Cc: Michal Hocko <mhocko@suse.com>"
+        - added "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
+        - dropped "Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772005110.git.zhengqi.arch@bytedance.com"
+        - dropped "Cc: Tejun Heo <tj@kernel.org>"
+        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
+        - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -5,11 +5,22 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+- mm-unstable: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, nobody: 0 -> 2 commits
+  - changed commits
+    - series "mm: cleanups around unmapping / zapping". (16)
+      - 41fa3d384b40 "mm/oom_kill: use MMU_NOTIFY_CLEAR in __oom_reap_task_mm() (5/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-6-david@kernel.org
+      - 1a0a6e78b425 "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping() (6/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-7-david@kernel.org
+- mm-new: 3 -> 1 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

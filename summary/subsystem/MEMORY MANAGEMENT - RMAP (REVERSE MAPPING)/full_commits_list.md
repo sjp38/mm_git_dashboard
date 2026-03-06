@@ -1,22 +1,25 @@
 - baseline: v7.0-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, no role : 2 commits
   - full commits list
-    - 8bbbbdbc52e6 "mm/rmap: fix incorrect pte restoration for lazyfree folios"
+    - 9abdee96ffda "mm/rmap: fix incorrect pte restoration for lazyfree folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260303061528.2429162-1-dev.jain@arm.com
+    - 8357eb228327 "mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared THP"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260305015006.27343-1-richard.weiyang@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-      - 1bed9025afa8 "mm: add folio_test_lazyfree helper" (3/4)
+      - f137112bf589 "mm: add folio_test_lazyfree helper" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-4-vernon2gm@gmail.com
-    - b53389b29450 "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
+    - 7791390e3178 "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
 - mm-new: 2 total, 0 (2) series, 0 non-series commits
@@ -24,11 +27,11 @@
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - df964452c7e7 "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced()" (2/6)
+      - 1112d5cfcd43 "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/6562be8c92e07f0a69c8ffd4016d1b1e55198af6.1772185080.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/all/16fb7985-ec0f-4b56-91e7-404c5114f899@kernel.org/ [1]
-      - 9d5cb956efcc "mm: support batched checking of the young flag for MGLRU" (4/6)
+      - d394e1dc431d "mm: support batched checking of the young flag for MGLRU" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/f84233f95f209d59c3bc9c72a757af09337f0d40.1772185080.git.baolin.wang@linux.alibaba.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

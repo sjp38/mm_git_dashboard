@@ -8,49 +8,62 @@
       - Link: https://lkml.kernel.org/r/b4a7d2c6c4c1dd81dddc904fc21f01303290a4b8.1772107852.git.riteshh@linux.ibm.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+- mm-unstable: 11 total, 0 (9) series, 2 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 1 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 7 commits
   - full commits list
-    - b4c58de4d094 "fs: hugetlb: simplify remove_inode_hugepages() return type"
+    - 4bf98a12a71e "fs: hugetlb: simplify remove_inode_hugepages() return type"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260204214741.3161520-1-jiaqiyan@google.com
       - Link: https://lore.kernel.org/all/20220914221810.95771-10-mike.kravetz@oracle.com [1]
-      - 1bd5409caa89 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 86d20b7ada83 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-- mm-new: 9 total, 0 (8) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, maintainer: 6 commits
-  - full commits list
-      - 6b897902a1f8 "mm: change the interface of prep_compound_tail()" (1/17)
+      - e40e5dee8264 "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - aa2ee58cfc6a "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - d002cb0e607c "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - e9421ddeb2a7 "mm/hugetlb: defer vmemmap population for bootmem hugepages" (8/17)
+      - 7d36c794a228 "mm/hugetlb: defer vmemmap population for bootmem hugepages" (8/17)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227194302.274384-10-kas@kernel.org
-      - 34c7a935f035 "mm/hugetlb: refactor code around vmemmap_walk" (9/17)
+      - b2e17e35df75 "mm/hugetlb: refactor code around vmemmap_walk" (9/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-11-kas@kernel.org
-      - 9f938e511392 "mm/hugetlb: remove fake head pages" (11/17)
-        - Authored by no role player, reviewed by nobody
+      - b394a1e74d8c "mm/hugetlb: remove fake head pages" (11/17)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-13-kas@kernel.org
-      - d55fa3c2fc83 "hugetlb: remove VMEMMAP_SYNCHRONIZE_RCU" (13/17)
+      - 9d3f0acd4cce "hugetlb: remove VMEMMAP_SYNCHRONIZE_RCU" (13/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-15-kas@kernel.org
-      - 2548917fd8ce "mm/hugetlb: remove hugetlb_optimize_vmemmap_key static key" (14/17)
+      - 411fe26bc21e "mm/hugetlb: remove hugetlb_optimize_vmemmap_key static key" (14/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-16-kas@kernel.org
-      - b84044c3d6c7 "hugetlb: update vmemmap_dedup.rst" (16/17)
+      - c430bae296ce "hugetlb: update vmemmap_dedup.rst" (16/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
-    - 7012d2807469 "Documentation: fix a hugetlbfs reservation statement"
+    - 68645b7b84a2 "Documentation: fix a hugetlbfs reservation statement"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
+- mm-new: 3 total, 1 (3) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 2 commits
+  - full commits list
+    - series "mm: vma flag tweaks". (6 commits)
+      - 9db195a8d539 "mm: rename VMA flag helpers to be more readable" (0/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
+      - 9ab73cd25458 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
+      - 5309830d750e "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

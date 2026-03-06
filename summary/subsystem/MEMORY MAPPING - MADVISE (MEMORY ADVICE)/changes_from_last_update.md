@@ -5,11 +5,36 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 5 -> 5 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
-    - no role, nobody: 5 -> 5 commits (no change)
+- mm-unstable: 0 -> 5 commits
+  - series: 0 (0) -> 1 (5)
+    - no role, nobody: 0 -> 5 commits
+  - changed commits
+    - series "mm: cleanups around unmapping / zapping". (16)
+      - acd06ca32271 "mm/madvise: drop range checks in madvise_free_single_vma() (0/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-1-david@kernel.org
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-2-david@kernel.org
+        - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
+      - 7a18780d3054 "mm/memory: remove "zap_details" parameter from zap_page_range_single() (1/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
+      - b83979ae5966 "mm/memory: convert details->even_cows into details->skip_cows (9/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-10-david@kernel.org
+      - 31a819bd6383 "mm: rename zap_page_range_single_batched() to zap_vma_range_batched() (13/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-14-david@kernel.org
+      - 3c9b6aa5c911 "mm: rename zap_page_range_single() to zap_vma_range() (14/16)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
+- mm-new: 5 -> 0 commits
+  - series: 1 (5) -> 0 (0)
+    - no role, nobody: 5 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

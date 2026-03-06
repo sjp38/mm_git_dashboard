@@ -8,50 +8,52 @@
       - Link: https://lkml.kernel.org/r/20260225031231.2352011-1-ziy@nvidia.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 7 total, 0 (1) series, 6 non-series commits
+- mm-unstable: 10 total, 0 (3) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 3 commits
     - no role, no role : 3 commits
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 4 commits
   - full commits list
-    - b53fd3685b38 "mm/fadvise: validate offset in generic_fadvise"
+    - 163a6e460e70 "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - 1d078c05f5d6 "selftests/mm: fix soft-dirty kselftest supported check"
+    - cea6de96c9ab "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260218184210.206466-1-audra@redhat.com
-    - 9071c1d94983 "selftests/mm: skip migration tests if NUMA is unavailable"
+    - 9d895d84c70a "selftests/mm: skip migration tests if NUMA is unavailable"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
-    - ed916b66279c "selftests/mm: remove duplicate include of unistd.h"
+    - 9e7bbaf1b889 "selftests/mm: remove duplicate include of unistd.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
-    - dc0501521ec4 "mm/page_idle.c: remove redundant mmu notifier in aging code"
+    - 389334291a2d "mm/page_idle.c: remove redundant mmu notifier in aging code"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
-      - 1a8d5863b4b8 "kho: remove finalize state and clients" (1/2)
+      - 68e83abf36a9 "kho: remove finalize state and clients" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-    - 248575e9350c "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+    - 7c6b225cc81e "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aaBWG4fajXXbjpVN@chrisdown.name
-- mm-new: 4 total, 0 (2) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, maintainer: 2 commits
-  - full commits list
-      - aa2ee58cfc6a "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - d002cb0e607c "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - b84044c3d6c7 "hugetlb: update vmemmap_dedup.rst" (16/17)
+      - c430bae296ce "hugetlb: update vmemmap_dedup.rst" (16/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
-    - 805ee8241ec4 "mm: fix remaining zone->lock references"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
-    - 7012d2807469 "Documentation: fix a hugetlbfs reservation statement"
+    - 68645b7b84a2 "Documentation: fix a hugetlbfs reservation statement"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+  - full commits list
+    - 53ebd6486125 "mm: fix remaining zone->lock references"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
+    - 27680757fa3d "mm: documentation: standardize on "zone lock" terminology"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
