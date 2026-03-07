@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - fed35c0ecf95 "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
+    - 1adb6290cecf "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/ff48283b-be21-7f9a-d616-e303a4a1ebe6@redhat.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -14,21 +14,21 @@
     - no role, no role : 3 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - a658606a23d3 "mm: vmalloc: streamline vmalloc memory accounting"
+    - e8dc7281f7a6 "mm: vmalloc: streamline vmalloc memory accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-    - a2a0112fa3ea "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+    - 5b1f82c3c1e7 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
     - series "Fix KASAN support for KHO restored vmalloc regions". (2 commits)
-      - 9ce600093931 "mm/vmalloc: export clear_vm_uninitialized_flag()" (0/2)
+      - 0114e56a15a2 "mm/vmalloc: export clear_vm_uninitialized_flag()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
         - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
-    - e9c66deeb110 "mm/vmalloc: fix incorrect size reporting on allocation failure"
+    - 734e69df6d8a "mm/vmalloc: fix incorrect size reporting on allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260302114740.2668450-1-urezki@gmail.com
-    - ece4a6124783 "vmalloc: support __GFP_RETRY_MAYFAIL and __GFP_NORETRY"
+    - 7631fffd99d4 "vmalloc: support __GFP_RETRY_MAYFAIL and __GFP_NORETRY"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302114740.2668450-2-urezki@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

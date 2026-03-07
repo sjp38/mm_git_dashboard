@@ -12,7 +12,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 06f05c301e81 "zram: use statically allocated compression algorithm names"
+    - 3c796c9a6c5a "zram: use statically allocated compression algorithm names"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/5bb2e9318d124dbcb2b743dcdce6a950@honor.com
 - mm-new: 6 total, 1 (5) series, 1 non-series commits
@@ -21,23 +21,23 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "zram: various cleanups". (5 commits)
-      - a1ff1e19d5c2 "zram: do not autocorrect bad recompression parameters" (0/5)
+      - c089f7952354 "zram: do not autocorrect bad recompression parameters" (0/5)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/bg7ivz7ajiuzdbpv3h6hbptxgmqk5fhwakw4rzk4sz3bczky5a@rde3y352n5ej
         - Link: https://lkml.kernel.org/r/8a5d53d19a8dbd51d7d81d153676895163e0735e.1772180459.git.senozhatsky@chromium.org
-      - 030de4e096a9 "zram: drop ->num_active_comps" (1/5)
+      - 415ebde759d9 "zram: drop ->num_active_comps" (1/5)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/eb7cd3ca578320be9aff13e71298fc36e110af41.1772180459.git.senozhatsky@chromium.org
-      - b3cd8c70b161 "zram: recompression priority param should override algo" (2/5)
+      - 3695c5fb8b5f "zram: recompression priority param should override algo" (2/5)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/831636c74ca6d72317de02d96585cc6833d082e6.1772180459.git.senozhatsky@chromium.org
-      - 75b7daca2a2c "zram: update recompression documentation" (3/5)
+      - 39fc94f6c02b "zram: update recompression documentation" (3/5)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/0d9bdbb19a4a1511e8c73d1e91227c47912a8009.1772180459.git.senozhatsky@chromium.org
-      - 9786852ccff0 "zram: remove chained recompression" (4/5)
+      - 982d87bb0b1a "zram: remove chained recompression" (4/5)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/cf100b13afb62641d7f3bc10fd77068833f56af0.1772180459.git.senozhatsky@chromium.org
-    - a305e6e71f4f "zram: use GFP_KERNEL for post-processing slot allocation"
+    - 76543ef13f68 "zram: use GFP_KERNEL for post-processing slot allocation"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260305021619.617481-1-senozhatsky@chromium.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

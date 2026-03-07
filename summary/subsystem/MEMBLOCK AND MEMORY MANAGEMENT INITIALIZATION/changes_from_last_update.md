@@ -6,21 +6,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 6 commits
-  - series: 2 (5) -> 2 (6)
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 2 (6) -> 2 (6) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 2 -> 3 commits
-  - changed commits
-    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
-      - e40e5dee8264 "mm: change the interface of prep_compound_tail() (1/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-- mm-new: 2 -> 1 commits
-  - series: 0 (2) -> 0 (1)
+    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

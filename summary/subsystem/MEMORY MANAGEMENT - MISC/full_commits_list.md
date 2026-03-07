@@ -14,45 +14,45 @@
     - no role, no role : 3 commits
     - no role, maintainer: 4 commits
   - full commits list
-    - 163a6e460e70 "mm/fadvise: validate offset in generic_fadvise"
+    - 2b9cc0448964 "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - cea6de96c9ab "selftests/mm: fix soft-dirty kselftest supported check"
+    - 68b67876863d "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260218184210.206466-1-audra@redhat.com
-    - 9d895d84c70a "selftests/mm: skip migration tests if NUMA is unavailable"
+    - bafd0ef59fbb "selftests/mm: skip migration tests if NUMA is unavailable"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
-    - 9e7bbaf1b889 "selftests/mm: remove duplicate include of unistd.h"
+    - 4531af89cc81 "selftests/mm: remove duplicate include of unistd.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
-    - 389334291a2d "mm/page_idle.c: remove redundant mmu notifier in aging code"
+    - 4f44ef3e753f "mm/page_idle.c: remove redundant mmu notifier in aging code"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
-      - 68e83abf36a9 "kho: remove finalize state and clients" (1/2)
+      - 47d18eba06b7 "kho: remove finalize state and clients" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-    - 7c6b225cc81e "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+    - b1039e4cde4e "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aaBWG4fajXXbjpVN@chrisdown.name
-      - d002cb0e607c "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - 0da1db297075 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - c430bae296ce "hugetlb: update vmemmap_dedup.rst" (16/17)
+      - a0785fe33fce "hugetlb: update vmemmap_dedup.rst" (16/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
-    - 68645b7b84a2 "Documentation: fix a hugetlbfs reservation statement"
+    - 36a3682597ec "Documentation: fix a hugetlbfs reservation statement"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
 - mm-new: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
   - full commits list
-    - 53ebd6486125 "mm: fix remaining zone->lock references"
+    - 6be883970457 "mm: fix remaining zone->lock references"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
-    - 27680757fa3d "mm: documentation: standardize on "zone lock" terminology"
+    - f02d3ec406b7 "mm: documentation: standardize on "zone lock" terminology"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

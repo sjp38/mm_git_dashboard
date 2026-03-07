@@ -9,14 +9,10 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 5 -> 6 commits
+- mm-new: 6 -> 6 commits (no change)
   - series: 1 (5) -> 1 (5) (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
-    - maintainer, no role : 0 -> 1 commits
-  - new commits
-    - a305e6e71f4f "zram: use GFP_KERNEL for post-processing slot allocation"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260305021619.617481-1-senozhatsky@chromium.org
+    - maintainer, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

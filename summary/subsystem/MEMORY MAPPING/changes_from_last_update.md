@@ -7,60 +7,30 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 3 -> 3 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
   - changed commits
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - f3b07c34ec81 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
     - series "mm: cleanups around unmapping / zapping". (16)
-      - 57b418330834 "mm/memory: simplify calculation in unmap_mapping_range_tree() (4/16)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
+      - dd8edaa71b1b "mm/memory: simplify calculation in unmap_mapping_range_tree() (4/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
         - Link: https://lkml.kernel.org/r/20260227200848.114019-5-david@kernel.org
-- mm-new: 1 -> 8 commits
-  - series: 0 (1) -> 1 (7)
-    - no role, nobody: 1 -> 3 commits
-    - no role, no role : 0 -> 4 commits
-    - no role, maintainer: 0 -> 1 commits
+- mm-new: 8 -> 9 commits
+  - series: 1 (7) -> 1 (7) (no change)
+    - no role, nobody: 3 -> 4 commits
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - series "mm: vma flag tweaks". (6)
-      - 9db195a8d539 "mm: rename VMA flag helpers to be more readable (0/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - 87079eb381b2 "mm: add vma_desc_test_all() and use it (1/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/568c8f8d6a84ff64014f997517cba7a629f7eed6.1772704455.git.ljs@kernel.org
-      - 545d66306130 "mm: always inline __mk_vma_flags() and invoked functions (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/241f49c52074d436edbb9c6a6662a8dc142a8f43.1772704455.git.ljs@kernel.org
-      - 9ab73cd25458 "mm: reintroduce vma_flags_test() as a singular flag test (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - 5309830d750e "mm: reintroduce vma_desc_test() as a singular flag test (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
-      - af73b4895f11 "tools/testing/vma: add test for vma_flags_test(), vma_desc_test() (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/376a39eb9e134d2c8ab10e32720dd292970b080a.1772704455.git.ljs@kernel.org
-    - 8a98c5542a52 "tools-testing-vma-add-test-for-vma_flags_test-vma_desc_test-fix"
+    - 6c41b23d5f57 "mm: prevent droppable mappings from being locked"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/f6f396d2-1ba2-426f-b756-d8cc5985cc7c@lucifer.local
-  - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - d9a3f0f8e6f3 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
+      - Link: https://lkml.kernel.org/r/20260306204550.8405-1-anthony.yznaga@oracle.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

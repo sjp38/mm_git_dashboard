@@ -15,32 +15,32 @@
     - no role, maintainer: 3 commits
   - full commits list
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
-      - 8b55ec369578 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
+      - ad6b1943f5ce "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - d30b5b637e72 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 8ff950f4d8d3 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - fcfca5f39bd1 "arch, mm: consolidate empty_zero_page" (2/4)
+      - 1d5cd5bb757b "arch, mm: consolidate empty_zero_page" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - 8e23c1ed8065 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
+      - f9d7ba5c0fa4 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
     - series "kho: add support for deferred struct page init", v5. (2 commits)
-      - ab0834e7f69f "kho: fix deferred init of kho scratch" (0/2)
+      - 1bf152efe508 "kho: fix deferred init of kho scratch" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225153955.1006649-1-mclapinski@google.com
         - Link: https://lkml.kernel.org/r/20260225153955.1006649-2-mclapinski@google.com
-      - e40e5dee8264 "mm: change the interface of prep_compound_tail()" (1/17)
+      - 9fb6b1bb82d5 "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 7cbd87ba7358 "mm: convert zone lock users to wrappers" (1/5)
+      - 0b392de7b853 "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

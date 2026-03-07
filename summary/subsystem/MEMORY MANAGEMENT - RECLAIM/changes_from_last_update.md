@@ -5,208 +5,41 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 19 -> 6 commits
-  - series: 0 (16) -> 0 (4)
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 0 (4) -> 0 (4) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 4 -> 2 commits
-    - no role, maintainer: 7 -> 1 commits
-    - reviewer, no role : 1 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
-    - reviewer, maintainer: 3 -> 0 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 5 -> 18 commits
-  - series: 0 (3) -> 0 (16)
+  - changed commits
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - f3b07c34ec81 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+- mm-new: 18 -> 18 commits (no change)
+  - series: 0 (16) -> 0 (16) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 2 -> 4 commits
-    - no role, maintainer: 0 -> 6 commits
-    - reviewer, no role : 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 1 commits
-    - reviewer, maintainer: 0 -> 3 commits
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, maintainer: 6 -> 6 commits (no change)
+    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 3 -> 3 commits (no change)
   - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 5da0ee9f62b9 "mm: workingset: use folio_lruvec() in workingset_refault() (1/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772711148.git.zhengqi.arch@bytedance.com
-      - d9a3f0f8e6f3 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - bbebe0226636 "mm: vmscan: prepare for the refactoring the move_folios_to_lru() (3/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772711148.git.zhengqi.arch@bytedance.com
-      - 9587aa7ca123 "mm: vmscan: refactor move_folios_to_lru() (4/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772711148.git.zhengqi.arch@bytedance.com
-      - 8e5c18caa117 "mm: mglru: prevent memory cgroup release in mglru (13/33)"
+    - series "support batched checking of the young flag for MGLRU", v3. (6)
+      - 949d9655f389 "mm: rename ptep/pmdp_clear_young_notify() to ptep/pmdp_test_and_clear_young_notify() (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/b3454077ce88745e6f88386b1763721746884565.1772778858.git.baolin.wang@linux.alibaba.com"
+        - dropped "Link: https://lkml.kernel.org/r/283d103c5131e32879bd847263c93b768df64d15.1772185080.git.baolin.wang@linux.alibaba.com"
+        - Link: https://lkml.kernel.org/r/b3454077ce88745e6f88386b1763721746884565.1772778858.git.baolin.wang@linux.alibaba.com
+      - b14812c2311b "mm: support batched checking of the young flag for MGLRU (4/6)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/9d887662a9d39c425742dd8468e3123316bccfe3.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/9d887662a9d39c425742dd8468e3123316bccfe3.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/9d887662a9d39c425742dd8468e3123316bccfe3.1772711148.git.zhengqi.arch@bytedance.com
-      - a930db7944b8 "mm: workingset: prevent memory cgroup release in lru_gen_eviction() (15/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772711148.git.zhengqi.arch@bytedance.com
-      - 172df812684f "mm: workingset: prevent lruvec release in workingset_refault() (18/33)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772711148.git.zhengqi.arch@bytedance.com
-      - 11e2de8e53f8 "mm: workingset: prevent lruvec release in workingset_activation() (21/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/c6130476affbba0a7d309a887c3df11e0167990b.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/c6130476affbba0a7d309a887c3df11e0167990b.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/c6130476affbba0a7d309a887c3df11e0167990b.1772711148.git.zhengqi.arch@bytedance.com
-      - 77ab9864014b "mm: do not open-code lruvec lock (22/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772711148.git.zhengqi.arch@bytedance.com
-      - f20f36e872e3 "mm: vmscan: prepare for reparenting traditional LRU folios (24/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
-      - 58c20f7d7291 "mm: vmscan: prepare for reparenting MGLRU folios (25/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-      - ff220fed2a26 "mm: workingset: use lruvec_lru_size() to get the number of lru pages (27/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
-      - 767f4db7a6eb "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers (32/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/2c90fc006d9d730331a3caeef96f7e5dabe2036d.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/9a0b6ba87112b2bf038ab65c47b6f16311b829cb.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/2c90fc006d9d730331a3caeef96f7e5dabe2036d.1772711148.git.zhengqi.arch@bytedance.com
+        - added "Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/f84233f95f209d59c3bc9c72a757af09337f0d40.1772185080.git.baolin.wang@linux.alibaba.com"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

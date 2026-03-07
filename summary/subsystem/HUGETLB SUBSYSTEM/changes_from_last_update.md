@@ -2,73 +2,37 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - cd9119a9480d "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260306140332.171078-1-jianhuizzzzz@gmail.com
+      - Link: https://lkml.kernel.org/r/tencent_F70AFD1D8067E3D2409764BC1A199DA6AF0A@qq.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 11 commits
-  - series: 0 (1) -> 0 (9)
-    - no role, nobody: 0 -> 2 commits
-    - no role, no role : 0 -> 1 commits
+- mm-unstable: 11 -> 11 commits (no change)
+  - series: 0 (9) -> 0 (9) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 7 commits
+    - no role, maintainer: 7 -> 7 commits (no change)
   - changed commits
-    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
-      - e40e5dee8264 "mm: change the interface of prep_compound_tail() (1/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - d002cb0e607c "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - 7d36c794a228 "mm/hugetlb: defer vmemmap population for bootmem hugepages (8/17)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-10-kas@kernel.org
-      - b2e17e35df75 "mm/hugetlb: refactor code around vmemmap_walk (9/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-11-kas@kernel.org
-      - b394a1e74d8c "mm/hugetlb: remove fake head pages (11/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-13-kas@kernel.org
-      - 9d3f0acd4cce "hugetlb: remove VMEMMAP_SYNCHRONIZE_RCU (13/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-15-kas@kernel.org
-      - 411fe26bc21e "mm/hugetlb: remove hugetlb_optimize_vmemmap_key static key (14/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-16-kas@kernel.org
-      - c430bae296ce "hugetlb: update vmemmap_dedup.rst (16/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
-    - 68645b7b84a2 "Documentation: fix a hugetlbfs reservation statement"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
-- mm-new: 9 -> 3 commits
-  - series: 0 (8) -> 1 (3)
-    - no role, nobody: 3 -> 1 commits
-    - no role, no role : 0 -> 2 commits
-    - no role, maintainer: 6 -> 0 commits
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - f3b07c34ec81 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+- mm-new: 3 -> 4 commits
+  - series: 1 (3) -> 1 (4)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
   - new commits
-    - series "mm: vma flag tweaks". (6)
-      - 9db195a8d539 "mm: rename VMA flag helpers to be more readable (0/6)"
+    - series " mm, kvm: allow uffd support in guest_memfd", v2. (15)
+      - bbddeeffd8c2 "userfaultfd: introduce vm_uffd_ops (6/15)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - 9ab73cd25458 "mm: reintroduce vma_flags_test() as a singular flag test (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - 5309830d750e "mm: reintroduce vma_desc_test() as a singular flag test (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

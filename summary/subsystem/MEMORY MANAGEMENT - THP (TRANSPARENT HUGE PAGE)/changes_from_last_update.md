@@ -8,53 +8,15 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 7 commits
-  - series: 1 (6) -> 1 (4)
+- mm-unstable: 7 -> 7 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, reviewer: 0 -> 1 commits
-  - changed commits
-    - cb69cf098a58 "khugepaged: remove redundant index check for pmd-folios"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260227143501.1488110-1-dev.jain@arm.com
-- mm-new: 1 -> 2 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, reviewer: 1 -> 0 commits
-  - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - d9a3f0f8e6f3 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - dropped "Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 1f5b053eb4d8 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}() (16/33)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - dropped "Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

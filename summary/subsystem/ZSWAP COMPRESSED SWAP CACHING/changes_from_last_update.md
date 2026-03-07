@@ -5,42 +5,12 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 2 commits
-  - series: 0 (3) -> 0 (1)
-    - no role, maintainer: 4 -> 2 commits
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, maintainer: 0 -> 2 commits
-  - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 82cde00b976a "mm: zswap: prevent memory cgroup release in zswap_compress() (17/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - dropped "Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com
-      - 62fff588fd43 "mm: zswap: prevent lruvec release in zswap_folio_swapin() (19/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com"
-        - added "Cc: Liam Howlett <Liam.Howlett@oracle.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - dropped "Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772005110.git.zhengqi.arch@bytedance.com"
-        - dropped "Cc: Tejun Heo <tj@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-        - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

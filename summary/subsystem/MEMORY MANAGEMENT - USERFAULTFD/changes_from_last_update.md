@@ -1,15 +1,64 @@
 - baseline: v7.0-rc1 -> v7.0-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - cd9119a9480d "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260306140332.171078-1-jianhuizzzzz@gmail.com
+      - Link: https://lkml.kernel.org/r/tencent_F70AFD1D8067E3D2409764BC1A199DA6AF0A@qq.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 12 commits
+  - series: 0 (0) -> 1 (12)
+    - no role, nobody: 0 -> 9 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+    - reviewer, nobody: 0 -> 1 commits
+  - new commits
+    - series " mm, kvm: allow uffd support in guest_memfd", v2. (15)
+      - f259ac2baa11 "userfaultfd: introduce mfill_copy_folio_locked() helper (0/15)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-1-rppt@kernel.org
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-2-rppt@kernel.org
+      - 33199a43dda2 "userfaultfd: introduce struct mfill_state (1/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-3-rppt@kernel.org
+      - 79ca068ae670 "userfaultfd: introduce mfill_get_pmd() helper (2/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-4-rppt@kernel.org
+      - 2e5d8796e0a6 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma() (3/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-5-rppt@kernel.org
+      - 91990bc3c3d5 "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy() (4/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
+      - 4f2c2d70e8db "userfaultfd: move vma_can_userfault out of line (5/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-7-rppt@kernel.org
+      - bbddeeffd8c2 "userfaultfd: introduce vm_uffd_ops (6/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
+      - e75f37ba9c49 "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE (7/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-9-rppt@kernel.org
+      - 951924f57afa "userfaultfd: introduce vm_uffd_ops->alloc_folio() (8/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-10-rppt@kernel.org
+      - e2127bbe602f "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops (9/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-11-rppt@kernel.org
+      - 61d6f53d8df6 "userfaultfd: mfill_atomic(): remove retry logic (10/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-12-rppt@kernel.org
+      - 8e4826c6e5dd "mm: generalize handling of userfaults in __do_fault() (11/15)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-13-rppt@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
