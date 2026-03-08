@@ -2,22 +2,20 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
+- mm-unstable: 3 total, 0 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
-  - full commits list
-      - 6947f433922e "mm/oom_kill: use MMU_NOTIFY_CLEAR in __oom_reap_task_mm()" (5/16)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260227200848.114019-6-david@kernel.org
-      - 90bc79854a0e "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping()" (6/16)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260227200848.114019-7-david@kernel.org
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - a2f0e76d9dcc "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
+      - ee9bce868ea2 "mm/oom_kill: use MMU_NOTIFY_CLEAR in __oom_reap_task_mm()" (5/16)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-6-david@kernel.org
+      - 5ed0e140aa84 "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping()" (6/16)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-7-david@kernel.org
+    - fe90e5858ff5 "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260303102600.105255-1-maninder1.s@samsung.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

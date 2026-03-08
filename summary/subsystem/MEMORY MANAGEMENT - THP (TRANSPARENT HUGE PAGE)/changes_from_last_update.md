@@ -8,15 +8,43 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 7 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
+- mm-unstable: 7 -> 9 commits
+  - series: 1 (4) -> 1 (6)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - 13c991535650 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
+      - 545878fa9135 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}() (16/33)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
+- mm-new: 2 -> 4 commits
+  - series: 0 (2) -> 1 (4)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 3 commits
+    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v3. (4)
+      - b784c114186a "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-0-a45d2c8f3685@debian.org
+        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-1-a45d2c8f3685@debian.org
+      - e597ce16e9d7 "mm: huge_memory: refactor anon_enabled_store() with change_anon_orders() (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-2-a45d2c8f3685@debian.org
+      - e3f1cf3456be "mm: huge_memory: refactor enabled_store() with change_enabled() (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-3-a45d2c8f3685@debian.org
+      - 3908bc3f29e4 "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-4-a45d2c8f3685@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

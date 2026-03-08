@@ -6,13 +6,41 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 1 -> 6 commits
+  - series: 0 (0) -> 1 (5)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 6 -> 6 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
-    - maintainer, nobody: 5 -> 5 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 5 commits
+  - changed commits
+    - series "zram: various cleanups". (5)
+      - 54d631d0d686 "zram: do not autocorrect bad recompression parameters (0/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/bg7ivz7ajiuzdbpv3h6hbptxgmqk5fhwakw4rzk4sz3bczky5a@rde3y352n5ej
+        - Link: https://lkml.kernel.org/r/8a5d53d19a8dbd51d7d81d153676895163e0735e.1772180459.git.senozhatsky@chromium.org
+      - 97dd24299d67 "zram: drop ->num_active_comps (1/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/eb7cd3ca578320be9aff13e71298fc36e110af41.1772180459.git.senozhatsky@chromium.org
+      - b5849d16373d "zram: recompression priority param should override algo (2/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/831636c74ca6d72317de02d96585cc6833d082e6.1772180459.git.senozhatsky@chromium.org
+      - 2f44c6a279ae "zram: update recompression documentation (3/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/0d9bdbb19a4a1511e8c73d1e91227c47912a8009.1772180459.git.senozhatsky@chromium.org
+      - fee45019e057 "zram: remove chained recompression (4/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/cf100b13afb62641d7f3bc10fd77068833f56af0.1772180459.git.senozhatsky@chromium.org
+- mm-new: 6 -> 0 commits
+  - series: 1 (5) -> 0 (0)
+    - maintainer, nobody: 5 -> 0 commits
+    - maintainer, no role : 1 -> 0 commits
+  - dropped commits
+    - 76543ef13f68 "zram: use GFP_KERNEL for post-processing slot allocation"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260305021619.617481-1-senozhatsky@chromium.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

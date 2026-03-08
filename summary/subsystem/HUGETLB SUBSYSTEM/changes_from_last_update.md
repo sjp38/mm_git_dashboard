@@ -2,37 +2,40 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 2 commits
   - new commits
-    - cd9119a9480d "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+    - dc91ac7672a7 "mm-userfaultfd-fix-hugetlb-fault-mutex-hash-calculation-v2"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260306140332.171078-1-jianhuizzzzz@gmail.com
-      - Link: https://lkml.kernel.org/r/tencent_F70AFD1D8067E3D2409764BC1A199DA6AF0A@qq.com
+      - Link: https://lkml.kernel.org/r/20260307143542.179953-1-jianhuizzzzz@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 11 commits (no change)
-  - series: 0 (9) -> 0 (9) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-unstable: 11 -> 14 commits
+  - series: 0 (9) -> 1 (12)
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 1 -> 3 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
   - changed commits
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - f3b07c34ec81 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-- mm-new: 3 -> 4 commits
-  - series: 1 (3) -> 1 (4)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 2 -> 2 commits (no change)
-  - new commits
-    - series " mm, kvm: allow uffd support in guest_memfd", v2. (15)
-      - bbddeeffd8c2 "userfaultfd: introduce vm_uffd_ops (6/15)"
+    - series "mm: vma flag tweaks". (6)
+      - 1ada6bd762b3 "mm: rename VMA flag helpers to be more readable (0/6)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
+      - 3d453e06df26 "mm: reintroduce vma_flags_test() as a singular flag test (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
+      - 8a6e6e68b119 "mm: reintroduce vma_desc_test() as a singular flag test (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
+- mm-new: 4 -> 1 commits
+  - series: 1 (4) -> 0 (1)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

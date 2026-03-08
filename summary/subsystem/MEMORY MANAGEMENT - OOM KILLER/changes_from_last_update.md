@@ -5,25 +5,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
+- mm-unstable: 2 -> 3 commits
   - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 0 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - series "mm: cleanups around unmapping / zapping". (16)
-      - 6947f433922e "mm/oom_kill: use MMU_NOTIFY_CLEAR in __oom_reap_task_mm() (5/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/20260227200848.114019-6-david@kernel.org
-      - 90bc79854a0e "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping() (6/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/20260227200848.114019-7-david@kernel.org
-- mm-new: 1 -> 1 commits (no change)
+    - fe90e5858ff5 "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260303102600.105255-1-maninder1.s@samsung.com
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
