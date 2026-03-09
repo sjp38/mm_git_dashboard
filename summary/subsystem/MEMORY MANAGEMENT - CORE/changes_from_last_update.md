@@ -7,110 +7,69 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 45 -> 61 commits
-  - series: 4 (32) -> 7 (46)
-    - no role, nobody: 5 -> 9 commits
-    - no role, no role : 28 -> 35 commits
-    - no role, reviewer: 4 -> 7 commits
+- mm-unstable: 61 -> 61 commits (no change)
+  - series: 7 (46) -> 7 (46) (no change)
+    - no role, nobody: 9 -> 9 commits (no change)
+    - no role, no role : 35 -> 35 commits (no change)
+    - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 0 -> 1 commits
-    - maintainer, nobody: 1 -> 2 commits
+    - reviewer, no role : 1 -> 1 commits (no change)
+    - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 772b6b0f3942 "mm: vmscan: prepare for reparenting MGLRU folios (25/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-    - series "mm: zone lock tracepoint instrumentation", v4. (5)
-      - acc54fbd61ab "mm: introduce zone lock wrappers (0/5)"
+    - series "mm: cleanups around unmapping / zapping". (16)
+      - ea8b06137fe9 "mm/memory: remove "zap_details" parameter from zap_page_range_single() (1/16)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/cover.1772206930.git.d@ilvokhin.com
-        - Link: https://lkml.kernel.org/r/849dee9c47df1e6fba97c9933af0d5a08b8e15d3.1772206930.git.d@ilvokhin.com
-      - 7ea223f7f9e8 "mm: convert zone lock users to wrappers (1/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - afe9feb74dec "mm: rename zone->lock to zone->_lock (3/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
-      - caea0264ef0e "mm-convert-zone-lock-users-to-wrappers-fix-fix (4/5)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-    - 8a1752f8db84 "mm: documentation: standardize on "zone lock" terminology"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
-    - 08d755297768 "mm: add tracepoints for zone lock"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/ae145fe890f028409f727b4921904b547346fa0b.1772206930.git.d@ilvokhin.com
-    - series "support batched checking of the young flag for MGLRU", v3. (6)
-      - c90919c91531 "mm: use inline helper functions instead of ugly macros (0/6)"
+        - added "Acked-by: Puranjay Mohan <puranjay@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
+      - 9f3e7e143f22 "mm: rename zap_page_range_single() to zap_vma_range() (14/16)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/cover.1772778858.git.baolin.wang@linux.alibaba.com
-        - Link: https://lkml.kernel.org/r/ea14af84e7967ccebb25082c28a8669d6da8fe57.1772778858.git.baolin.wang@linux.alibaba.com
-        - Link: https://lore.kernel.org/all/cover.1770645603.git.baolin.wang@linux.alibaba.com/ [1]
-      - 9d76495ee583 "mm: rename ptep/pmdp_clear_young_notify() to ptep/pmdp_test_and_clear_young_notify() (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/b3454077ce88745e6f88386b1763721746884565.1772778858.git.baolin.wang@linux.alibaba.com
-      - 0cc7808fef0a "mm: add a batched helper to clear the young flag for large folios (3/6)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/23ec671bfcc06cd24ee0fbff8e329402742274a0.1772778858.git.baolin.wang@linux.alibaba.com
-      - dbedac71b0b6 "mm: support batched checking of the young flag for MGLRU (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com
-    - series "mm: vma flag tweaks". (6)
-      - 1ada6bd762b3 "mm: rename VMA flag helpers to be more readable (0/6)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - 0e3a4407ddf2 "mm: add vma_desc_test_all() and use it (1/6)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/568c8f8d6a84ff64014f997517cba7a629f7eed6.1772704455.git.ljs@kernel.org
-      - 0123b45acfb9 "mm: always inline __mk_vma_flags() and invoked functions (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/241f49c52074d436edbb9c6a6662a8dc142a8f43.1772704455.git.ljs@kernel.org
-      - 3d453e06df26 "mm: reintroduce vma_flags_test() as a singular flag test (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - 8a6e6e68b119 "mm: reintroduce vma_desc_test() as a singular flag test (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
-- mm-new: 19 -> 4 commits
-  - series: 3 (16) -> 1 (3)
-    - no role, nobody: 6 -> 2 commits
-    - no role, no role : 7 -> 1 commits
-    - no role, reviewer: 3 -> 0 commits
+        - added "Acked-by: Puranjay Mohan <puranjay@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
+- mm-new: 4 -> 7 commits
+  - series: 1 (3) -> 2 (5)
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 1 -> 3 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
   - new commits
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v3. (4)
-      - b784c114186a "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
+    - 16bb517d5159 "mm: optimize the implementation of WARN_ON_ONCE_GFP()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260309153811.40958-1-qq570070308@gmail.com
+    - ef298633823e "mm/debug: optimize once judgment with clang"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260309153405.20130-1-qq570070308@gmail.com
+    - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4)
+      - e72c1a3512b6 "mm: move vma_kernel_pagesize() from hugetlb to mm.h (0/4)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-0-a45d2c8f3685@debian.org
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-1-a45d2c8f3685@debian.org
+        - Link: https://lkml.kernel.org/r/20260309151901.123947-1-david@kernel.org
+        - Link: https://lkml.kernel.org/r/20260309151901.123947-2-david@kernel.org
+      - 9bfb896cc646 "mm: move vma_mmu_pagesize() from hugetlb to vma.c (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
+  - changed commits
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v4. (4)
+      - b94f904b6ee3 "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-0-926b9840083e@debian.org"
+        - added "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-1-926b9840083e@debian.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-1-a45d2c8f3685@debian.org"
+        - dropped "Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-0-a45d2c8f3685@debian.org"
+        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-0-926b9840083e@debian.org
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-1-926b9840083e@debian.org
+  - dropped commits
+    - 6927cb4845e7 "mm: prevent droppable mappings from being locked"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260306204550.8405-1-anthony.yznaga@oracle.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 4 -> 5 commits
+- mm-nonmm-unstable: 5 -> 5 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - new commits
-    - a33ec6a2df88 "kernel/fork: validate exit_signal in clone() syscall"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260307064202.353405-1-kartikey406@gmail.com

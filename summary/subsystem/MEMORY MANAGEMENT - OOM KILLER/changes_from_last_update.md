@@ -5,18 +5,12 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 3 commits
+- mm-unstable: 3 -> 3 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - fe90e5858ff5 "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260303102600.105255-1-maninder1.s@samsung.com
-- mm-new: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

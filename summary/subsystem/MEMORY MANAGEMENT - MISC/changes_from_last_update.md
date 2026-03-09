@@ -6,38 +6,38 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 12 commits
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, nobody: 3 -> 5 commits
+- mm-unstable: 12 -> 12 commits (no change)
+  - series: 0 (3) -> 0 (2)
+    - no role, nobody: 5 -> 5 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
   - changed commits
-    - ca662860c64c "mm: fix remaining zone->lock references"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
-    - 8a1752f8db84 "mm: documentation: standardize on "zone lock" terminology"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
-- mm-new: 2 -> 4 commits
-  - series: 0 (0) -> 0 (4)
-    - no role, nobody: 2 -> 0 commits
-    - maintainer, nobody: 0 -> 4 commits
+    - 06fdba4e948d "kho: remove finalize state and clients"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Cc: Ran Xiaokai <ran.xiaokai@zte.com.cn>"
+      - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+- mm-new: 4 -> 5 commits
+  - series: 0 (4) -> 0 (4) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - maintainer, nobody: 4 -> 1 commits
+    - maintainer, no role : 0 -> 3 commits
   - new commits
-    - series "mm/damon: test and document power-of-2 min_region_sz requirement". (2)
-      - 6a13c682f074 "Docs/mm/damon/design: document the power-of-two limitation for addr_unit (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260307194222.202075-3-sj@kernel.org
+    - 74429d811704 "selftests/mm: add THP sysfs interface test"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260309-thp_selftest_v2-v1-1-a00cef41da44@debian.org
+  - changed commits
     - series "mm/damon: improve/fixup/update ratio calculation, test and documentation". (7)
-      - 7eea768693d8 "Docs/admin-guide/mm/damn/lru_sort: fix intervals autotune parameter name (4/7)"
-        - Authored by a maintainer, reviewed by nobody
+      - fcc6bf588c10 "Docs/admin-guide/mm/damn/lru_sort: fix intervals autotune parameter name (4/7)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Acked-by: wang lian <lianux.mm@gmail.com>"
         - Link: https://lkml.kernel.org/r/20260307195356.203753-6-sj@kernel.org
-      - 6e41aa485acb "Docs/mm/damon/maintainer-profile: use flexible review cadence (5/7)"
-        - Authored by a maintainer, reviewed by nobody
+      - 99f66f67303d "Docs/mm/damon/maintainer-profile: use flexible review cadence (5/7)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Acked-by: wang lian <lianux.mm@gmail.com>"
         - Link: https://lkml.kernel.org/r/20260307195356.203753-7-sj@kernel.org
-      - 11625b62bb9e "Docs/mm/damon/index: fix typo: autoamted -> automated (6/7)"
-        - Authored by a maintainer, reviewed by nobody
+      - ce09499cee98 "Docs/mm/damon/index: fix typo: autoamted -> automated (6/7)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Acked-by: wang lian <lianux.mm@gmail.com>"
         - Link: https://lkml.kernel.org/r/20260307195356.203753-8-sj@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

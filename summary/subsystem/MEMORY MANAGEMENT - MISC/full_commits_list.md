@@ -8,64 +8,69 @@
       - Link: https://lkml.kernel.org/r/20260225031231.2352011-1-ziy@nvidia.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 12 total, 0 (3) series, 9 non-series commits
+- mm-unstable: 12 total, 0 (2) series, 10 non-series commits
   - author/reviewer role stat
     - no role, nobody: 5 commits
     - no role, no role : 3 commits
     - no role, maintainer: 4 commits
   - full commits list
-    - 5156a455ef0b "mm/fadvise: validate offset in generic_fadvise"
+    - faa0f7872ad3 "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - 5b9767903e0f "selftests/mm: fix soft-dirty kselftest supported check"
+    - d5444ce43f90 "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260218184210.206466-1-audra@redhat.com
-    - 55c68c99483e "selftests/mm: skip migration tests if NUMA is unavailable"
+    - 16f5d6f5dbe6 "selftests/mm: skip migration tests if NUMA is unavailable"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
-    - 0ca169348236 "selftests/mm: remove duplicate include of unistd.h"
+    - a2ba2089145d "selftests/mm: remove duplicate include of unistd.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
-    - 805936631b5c "mm/page_idle.c: remove redundant mmu notifier in aging code"
+    - 8557d2cc12d8 "mm/page_idle.c: remove redundant mmu notifier in aging code"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
-      - e76f03b002c5 "kho: remove finalize state and clients" (1/2)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-    - 10129762c60c "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+    - 06fdba4e948d "kho: remove finalize state and clients"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+    - 6f61081a2151 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aaBWG4fajXXbjpVN@chrisdown.name
-      - 6d03dc5b6513 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - ed0f8b345467 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - 5a1c5ccd0147 "hugetlb: update vmemmap_dedup.rst" (16/17)
+      - 3c6fa35c287a "hugetlb: update vmemmap_dedup.rst" (16/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
-    - a105ce136290 "Documentation: fix a hugetlbfs reservation statement"
+    - 96a6df7d1728 "Documentation: fix a hugetlbfs reservation statement"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
-    - ca662860c64c "mm: fix remaining zone->lock references"
+    - bbaf5806f130 "mm: fix remaining zone->lock references"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
-    - 8a1752f8db84 "mm: documentation: standardize on "zone lock" terminology"
+    - 31c50bdf31c7 "mm: documentation: standardize on "zone lock" terminology"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
-- mm-new: 4 total, 0 (4) series, 0 non-series commits
+- mm-new: 5 total, 0 (4) series, 1 non-series commits
   - author/reviewer role stat
-    - maintainer, nobody: 4 commits
+    - no role, nobody: 1 commits
+    - maintainer, nobody: 1 commits
+    - maintainer, no role : 3 commits
   - full commits list
-      - 6a13c682f074 "Docs/mm/damon/design: document the power-of-two limitation for addr_unit" (1/2)
+      - 4a13726de82b "Docs/mm/damon/design: document the power-of-two limitation for addr_unit" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260307194222.202075-3-sj@kernel.org
-      - 7eea768693d8 "Docs/admin-guide/mm/damn/lru_sort: fix intervals autotune parameter name" (4/7)
-        - Authored by a maintainer, reviewed by nobody
+      - fcc6bf588c10 "Docs/admin-guide/mm/damn/lru_sort: fix intervals autotune parameter name" (4/7)
+        - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-6-sj@kernel.org
-      - 6e41aa485acb "Docs/mm/damon/maintainer-profile: use flexible review cadence" (5/7)
-        - Authored by a maintainer, reviewed by nobody
+      - 99f66f67303d "Docs/mm/damon/maintainer-profile: use flexible review cadence" (5/7)
+        - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-7-sj@kernel.org
-      - 11625b62bb9e "Docs/mm/damon/index: fix typo: autoamted -> automated" (6/7)
-        - Authored by a maintainer, reviewed by nobody
+      - ce09499cee98 "Docs/mm/damon/index: fix typo: autoamted -> automated" (6/7)
+        - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-8-sj@kernel.org
+    - 74429d811704 "selftests/mm: add THP sysfs interface test"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260309-thp_selftest_v2-v1-1-a00cef41da44@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -5,19 +5,11 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, nobody: 0 -> 1 commits
-  - changed commits
-    - series "mm: vma flag tweaks". (6)
-      - 1ada6bd762b3 "mm: rename VMA flag helpers to be more readable (0/6)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-- mm-new: 1 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
+- mm-unstable: 1 -> 1 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -8,43 +8,54 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 9 commits
-  - series: 1 (4) -> 1 (6)
+- mm-unstable: 9 -> 9 commits (no change)
+  - series: 1 (6) -> 1 (6) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-new: 4 -> 4 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 3 -> 4 commits
   - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 13c991535650 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 545878fa9135 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}() (16/33)"
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v4. (4)
+      - b94f904b6ee3 "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
-- mm-new: 2 -> 4 commits
-  - series: 0 (2) -> 1 (4)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 1 -> 3 commits
-    - no role, maintainer: 1 -> 0 commits
-  - new commits
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v3. (4)
-      - b784c114186a "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
+        - added "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-0-926b9840083e@debian.org"
+        - added "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-1-926b9840083e@debian.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-1-a45d2c8f3685@debian.org"
+        - dropped "Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-0-a45d2c8f3685@debian.org"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-0-926b9840083e@debian.org
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-1-926b9840083e@debian.org
+      - 854d00ffef5b "mm: huge_memory: refactor anon_enabled_store() with change_anon_orders() (1/4)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-0-a45d2c8f3685@debian.org
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-1-a45d2c8f3685@debian.org
-      - e597ce16e9d7 "mm: huge_memory: refactor anon_enabled_store() with change_anon_orders() (1/4)"
+        - added "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-2-926b9840083e@debian.org"
+        - dropped "Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-2-a45d2c8f3685@debian.org"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-2-926b9840083e@debian.org
+      - 8b9103a888a0 "mm: huge_memory: refactor enabled_store() with change_enabled() (2/4)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-2-a45d2c8f3685@debian.org
-      - e3f1cf3456be "mm: huge_memory: refactor enabled_store() with change_enabled() (2/4)"
+        - added "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-3-926b9840083e@debian.org"
+        - dropped "Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-3-a45d2c8f3685@debian.org"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-3-926b9840083e@debian.org
+      - 1b9449d9d94d "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-3-a45d2c8f3685@debian.org
-      - 3908bc3f29e4 "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-4-a45d2c8f3685@debian.org
+        - added "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-4-926b9840083e@debian.org"
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-4-a45d2c8f3685@debian.org"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-4-926b9840083e@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

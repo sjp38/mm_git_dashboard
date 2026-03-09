@@ -17,7 +17,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 8a72a012a973 "mm/huge_memory: fix use of NULL folio in move_pages_huge_pmd()"
+    - 00e9158ce89f "mm/huge_memory: fix use of NULL folio in move_pages_huge_pmd()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/a1e787dd-b911-474d-8570-f37685357d86@lucifer.local
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -29,53 +29,52 @@
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-      - e588cd00860b "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - f1a26365c127 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-    - 489ee30b7441 "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
+    - c0bb2bd260c7 "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260207081613.588598-6-vernon2gm@gmail.com
     - series "Improve khugepaged scan logic", v8. (4 commits)
-      - b52fbcb3c42d "mm: khugepaged: add trace_mm_khugepaged_scan event" (0/4)
+      - 1b84f640442a "mm: khugepaged: add trace_mm_khugepaged_scan event" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-2-vernon2gm@gmail.com
-      - 80a878ae811c "mm: khugepaged: refine scan progress number" (1/4)
+      - 89a833b88de0 "mm: khugepaged: refine scan progress number" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-3-vernon2gm@gmail.com
-      - 7b3134e71f35 "mm-khugepaged-refine-scan-progress-number-fix" (2/4)
+      - a318cf868a28 "mm-khugepaged-refine-scan-progress-number-fix" (2/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/hbftflvdmnranprul4zkq3d2iymqm7ta2a7fwiphggsmt36gt7@bihvv5jg2ko5
         - Link: https://lore.kernel.org/linux-mm/zdvzmoop5xswqcyiwmvvrdfianm4ccs3gryfecwbm4bhuh7ebo@7an4huwgbuwo [1]
-    - 7a52d867588f "mm: khugepaged: skip lazy-free folios"
+    - 9e253bd1f390 "mm: khugepaged: skip lazy-free folios"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260221093918.1456187-5-vernon2gm@gmail.com
-    - a22066893807 "khugepaged: remove redundant index check for pmd-folios"
+    - 653b6b341acd "khugepaged: remove redundant index check for pmd-folios"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260227143501.1488110-1-dev.jain@arm.com
-      - 13c991535650 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 873a27b136db "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 545878fa9135 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
+      - b130ef472533 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
 - mm-new: 4 total, 1 (4) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 3 commits
+    - no role, no role : 4 commits
   - full commits list
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v3. (4 commits)
-      - b784c114186a "mm: khugepaged: export set_recommended_min_free_kbytes()" (0/4)
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v4. (4 commits)
+      - b94f904b6ee3 "mm: khugepaged: export set_recommended_min_free_kbytes()" (0/4)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-0-a45d2c8f3685@debian.org
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-1-a45d2c8f3685@debian.org
-      - e597ce16e9d7 "mm: huge_memory: refactor anon_enabled_store() with change_anon_orders()" (1/4)
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-0-926b9840083e@debian.org
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-1-926b9840083e@debian.org
+      - 854d00ffef5b "mm: huge_memory: refactor anon_enabled_store() with change_anon_orders()" (1/4)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-2-a45d2c8f3685@debian.org
-      - e3f1cf3456be "mm: huge_memory: refactor enabled_store() with change_enabled()" (2/4)
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-2-926b9840083e@debian.org
+      - 8b9103a888a0 "mm: huge_memory: refactor enabled_store() with change_enabled()" (2/4)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-3-a45d2c8f3685@debian.org
-      - 3908bc3f29e4 "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-4-a45d2c8f3685@debian.org
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-3-926b9840083e@debian.org
+      - 1b9449d9d94d "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-4-926b9840083e@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

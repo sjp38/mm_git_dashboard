@@ -2,40 +2,40 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
-  - new commits
-    - dc91ac7672a7 "mm-userfaultfd-fix-hugetlb-fault-mutex-hash-calculation-v2"
+    - no role, nobody: 2 -> 2 commits (no change)
+  - changed commits
+    - 40881d2c63ae "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260307143542.179953-1-jianhuizzzzz@gmail.com
+      - added "Link: https://lkml.kernel.org/r/20260309033053.220012-1-jianhuizzzzz@gmail.com"
+      - added "Fixes: a08c7193e4f1 ("mm/filemap: remove hugetlb special casing in filemap.c")"
+      - added "Cc: Hugh Dickins <hughd@google.com>"
+      - dropped "Fixes: 60d4d2d2b40e ("userfaultfd: hugetlbfs: add __mcopy_atomic_hugetlb for huge page UFFDIO_COPY")"
+      - Link: https://lkml.kernel.org/r/20260309033053.220012-1-jianhuizzzzz@gmail.com
+      - Link: https://lkml.kernel.org/r/20260306140332.171078-1-jianhuizzzzz@gmail.com
+      - Link: https://lkml.kernel.org/r/tencent_F70AFD1D8067E3D2409764BC1A199DA6AF0A@qq.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 14 commits
-  - series: 0 (9) -> 1 (12)
-    - no role, nobody: 2 -> 3 commits
-    - no role, no role : 1 -> 3 commits
+- mm-unstable: 14 -> 14 commits (no change)
+  - series: 1 (12) -> 1 (12) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-  - changed commits
-    - series "mm: vma flag tweaks". (6)
-      - 1ada6bd762b3 "mm: rename VMA flag helpers to be more readable (0/6)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - 3d453e06df26 "mm: reintroduce vma_flags_test() as a singular flag test (3/6)"
+- mm-new: 1 -> 3 commits
+  - series: 0 (1) -> 1 (3)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 2 commits
+  - new commits
+    - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4)
+      - e72c1a3512b6 "mm: move vma_kernel_pagesize() from hugetlb to mm.h (0/4)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - 8a6e6e68b119 "mm: reintroduce vma_desc_test() as a singular flag test (4/6)"
+        - Link: https://lkml.kernel.org/r/20260309151901.123947-1-david@kernel.org
+        - Link: https://lkml.kernel.org/r/20260309151901.123947-2-david@kernel.org
+      - 9bfb896cc646 "mm: move vma_mmu_pagesize() from hugetlb to vma.c (1/4)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
-- mm-new: 4 -> 1 commits
-  - series: 1 (4) -> 0 (1)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 2 -> 0 commits
+        - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

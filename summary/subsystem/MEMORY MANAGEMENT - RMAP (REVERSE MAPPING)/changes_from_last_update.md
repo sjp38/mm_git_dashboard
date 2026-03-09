@@ -6,25 +6,13 @@
     - no role, no role : 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 4 commits
-  - series: 0 (1) -> 0 (3)
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "support batched checking of the young flag for MGLRU", v3. (6)
-      - 37febaf4c88b "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced() (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/64d6fb2a33f7101e1d4aca2c9052e0758b76d492.1772778858.git.baolin.wang@linux.alibaba.com
-      - dbedac71b0b6 "mm: support batched checking of the young flag for MGLRU (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com
-- mm-new: 2 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

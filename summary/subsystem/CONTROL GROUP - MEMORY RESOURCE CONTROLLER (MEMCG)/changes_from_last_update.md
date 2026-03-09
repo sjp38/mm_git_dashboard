@@ -6,106 +6,34 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 25 commits
-  - series: 1 (2) -> 3 (22)
-    - no role, nobody: 0 -> 1 commits
+- mm-unstable: 25 -> 27 commits
+  - series: 3 (22) -> 3 (23)
+    - no role, nobody: 1 -> 2 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 18 commits
-    - reviewer, maintainer: 0 -> 1 commits
-    - maintainer, maintainer: 1 -> 4 commits
+    - no role, maintainer: 18 -> 18 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, maintainer: 4 -> 4 commits (no change)
+  - new commits
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - cbea3eb9db77 "mm-memcontrol-convert-objcg-to-be-per-memcg-per-node-type-fix (31/33)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260309112939.31937-1-qi.zheng@linux.dev
+      - de84403d414c "mm-memcontrol-convert-objcg-to-be-per-memcg-per-node-type-fix-fix (32/33)"
+        - Authored by a maintainer, reviewed by nobody
   - changed commits
     - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 1028f91e2f4f "mm: memcontrol: remove dead code of checking parent memory cgroup (0/33)"
+      - 9c09f8b5dfce "mm: memcontrol: convert objcg to be per-memcg per-node type (30/33)"
         - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772711148.git.zhengqi.arch@bytedance.com
-        - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
-        - Link: https://lwn.net/Articles/895431/ [2]
-        - Link: https://github.com/systemd/systemd/pull/36827 [3]
-      - 13c991535650 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 745f94f37f78 "mm: memcontrol: allocate object cgroup for non-kmem case (5/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/b77274aa8e3f37c419bedf4782943fd5885dda82.1772711148.git.zhengqi.arch@bytedance.com
-      - ec6946785534 "mm: memcontrol: return root object cgroup for root memory cgroup (6/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/e9c3f40ba7681d9753372d4ee2ac7a0216848b95.1772711148.git.zhengqi.arch@bytedance.com
-      - 0dac6cca049c "mm: memcontrol: prevent memory cgroup release in get_mem_cgroup_from_folio() (7/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/a5a64c6173a566bd21534606aeaaa9220cb1366d.1772711148.git.zhengqi.arch@bytedance.com
-      - bd91ab3025de "writeback: prevent memory cgroup release in writeback module (9/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/645f99bc344575417f67def3744f975596df2793.1772711148.git.zhengqi.arch@bytedance.com
-      - 631e44fd94aa "mm: memcontrol: prevent memory cgroup release in count_memcg_folio_events() (10/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/dea6aa0389367f7fd6b715c8837a2cf7506bd889.1772711148.git.zhengqi.arch@bytedance.com
-      - dfc13f19432f "mm: memcontrol: prevent memory cgroup release in mem_cgroup_swap_full() (14/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/21d1abab7342615745ea4c18a88237335ab44d13.1772711148.git.zhengqi.arch@bytedance.com
-      - b3b77f895fc1 "mm: do not open-code lruvec lock (22/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772711148.git.zhengqi.arch@bytedance.com
-      - 4dfb46b0f5ee "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock (23/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-      - 32fa89fa3706 "mm: memcontrol: refactor memcg_reparent_objcgs() (26/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/2e5696db1993e593a51004c1dacedbc261689629.1772711148.git.zhengqi.arch@bytedance.com
-      - dfd399846f26 "mm: memcontrol: refactor mod_memcg_state() and mod_memcg_lruvec_state() (28/33)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/7f8bd3aacec2270b9453428fc8585cca9f10751e.1772711148.git.zhengqi.arch@bytedance.com
-      - 875fd08a0500 "mm: memcontrol: prepare for reparenting non-hierarchical stats (29/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/e862995c45a7101a541284b6ebee5e5c32c89066.1772711148.git.zhengqi.arch@bytedance.com
-      - 077dfe649f4e "mm: memcontrol: convert objcg to be per-memcg per-node type (30/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
         - Link: https://lkml.kernel.org/r/56c04b1c5d54f75ccdc12896df6c1ca35403ecc3.1772711148.git.zhengqi.arch@bytedance.com
-      - 8a51b5170927 "mm: memcontrol: eliminate the problem of dying memory cgroup for LRU folios (31/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/80cb7af198dc6f2173fe616d1207a4c315ece141.1772711148.git.zhengqi.arch@bytedance.com
-    - series ": memcg: obj stock and slab stat caching cleanups". (5)
-      - 99d695422ba4 "mm: memcg: factor out trylock_stock() and unlock_stock() (0/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-1-hannes@cmpxchg.org
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-2-hannes@cmpxchg.org
-      - ab9d8228fac8 "mm: memcg: simplify objcg charge size and stock remainder math (1/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-3-hannes@cmpxchg.org
-      - 2c798ce4d23c "mm: memcontrol: split out __obj_cgroup_charge() (2/5)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-4-hannes@cmpxchg.org
-      - 5719114d2ec9 "mm: memcontrol: use __account_obj_stock() in the !locked path (3/5)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-5-hannes@cmpxchg.org
-      - 29b0962072e3 "mm: memcg: separate slab stat accounting from objcg charge cache (4/5)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-6-hannes@cmpxchg.org
-- mm-new: 20 -> 0 commits
-  - series: 2 (20) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 15 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
-    - maintainer, maintainer: 3 -> 0 commits
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - be7a4c6cdefc "selftest: memcg: skip memcg_sock test if address family not supported"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260309160205.651754-1-longman@redhat.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

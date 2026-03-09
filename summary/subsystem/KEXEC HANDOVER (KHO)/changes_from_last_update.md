@@ -6,9 +6,20 @@
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 3 -> 3 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
+  - series: 1 (3) -> 1 (2)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
+  - changed commits
+    - series "Make KHO Stateless", v9. (2)
+      - 8d105ed0a480 "kho: adopt radix tree for preserved memory tracking (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Ran Xiaokai <ran.xiaokai@zte.com.cn>"
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
+    - 06fdba4e948d "kho: remove finalize state and clients"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Cc: Ran Xiaokai <ran.xiaokai@zte.com.cn>"
+      - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

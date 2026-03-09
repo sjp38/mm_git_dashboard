@@ -7,21 +7,21 @@
     - no role, no role : 5 commits
   - full commits list
     - series "mm: cleanups around unmapping / zapping". (16 commits)
-      - bd6ea8ebb6d3 "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
+      - ad4d6ef8ad1a "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260227200848.114019-2-david@kernel.org
         - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
-      - ada21616c8b9 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
+      - ea8b06137fe9 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
-      - 1329fa2dd5de "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
+      - 9888934b3d7d "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-10-david@kernel.org
-      - c8b642ce4112 "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (13/16)
+      - 55b8b4656a7c "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (13/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-14-david@kernel.org
-      - d352a60cd0f7 "mm: rename zap_page_range_single() to zap_vma_range()" (14/16)
+      - 9f3e7e143f22 "mm: rename zap_page_range_single() to zap_vma_range()" (14/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

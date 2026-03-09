@@ -7,66 +7,30 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 17 commits
-  - series: 1 (6) -> 2 (13)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 1 -> 3 commits
-    - no role, reviewer: 2 -> 5 commits
-    - no role, maintainer: 2 -> 4 commits
-    - maintainer, nobody: 0 -> 1 commits
-    - maintainer, reviewer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 13c991535650 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 4dfb46b0f5ee "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock (23/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-    - series "mm: zone lock tracepoint instrumentation", v4. (5)
-      - 7ea223f7f9e8 "mm: convert zone lock users to wrappers (1/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - 7092e4f09ac6 "mm: convert compaction to zone lock wrappers (2/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/3a09e46f52cf9f709b0725bc2b648cc5212843b2.1772206930.git.d@ilvokhin.com
-      - afe9feb74dec "mm: rename zone->lock to zone->_lock (3/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
-    - 8a1752f8db84 "mm: documentation: standardize on "zone lock" terminology"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
-    - series "Allow order zero pages in page reporting", v4. (5)
-      - 5a984206f705 "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-1-yuvraj.sakshith@oss.qualcomm.com
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-2-yuvraj.sakshith@oss.qualcomm.com
-      - f09b617012ac "mm-page_reporting-add-page_reporting_order_unspecified-fix (1/5)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-    - e5ae3404c2a7 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260303113032.3008371-6-yuvraj.sakshith@oss.qualcomm.com
-- mm-new: 9 -> 1 commits
-  - series: 1 (7) -> 0 (1)
+- mm-unstable: 17 -> 17 commits (no change)
+  - series: 2 (13) -> 2 (13) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 0 commits
-    - no role, reviewer: 3 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v3. (4)
-      - 3908bc3f29e4 "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-4-a45d2c8f3685@debian.org
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, reviewer: 3 -> 3 commits (no change)
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v4. (4)
+      - 1b9449d9d94d "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-4-926b9840083e@debian.org"
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-4-a45d2c8f3685@debian.org"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-4-926b9840083e@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

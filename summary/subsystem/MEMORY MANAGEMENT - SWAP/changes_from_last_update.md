@@ -5,47 +5,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 17 -> 23 commits
-  - series: 2 (15) -> 2 (21)
-    - no role, no role : 1 -> 3 commits
+- mm-unstable: 23 -> 23 commits (no change)
+  - series: 2 (21) -> 2 (21) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 4 commits
-    - reviewer, reviewer: 0 -> 1 commits
-    - reviewer, maintainer: 0 -> 1 commits
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 12 -> 12 commits (no change)
-  - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 13c991535650 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 226f05f45fab "mm: page_io: prevent memory cgroup release in page_io module (11/33)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/7c3708358412fb02c482d0985feb5e9513a863ef.1772711148.git.zhengqi.arch@bytedance.com
-      - f32e159e5e3b "mm: swap: prevent lruvec release in lru_gen_clear_refs() (20/33)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/986cd26227191a48a7c34a2a15812d361f4ebd53.1772711148.git.zhengqi.arch@bytedance.com
-      - 4dfb46b0f5ee "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock (23/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-      - 1a6ea18d1d98 "mm: vmscan: prepare for reparenting traditional LRU folios (24/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
-      - dcff1407ae8c "mm: workingset: use lruvec_lru_size() to get the number of lru pages (27/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
-- mm-new: 6 -> 0 commits
-  - series: 0 (6) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
