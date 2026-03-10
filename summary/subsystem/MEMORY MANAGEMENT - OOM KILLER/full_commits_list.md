@@ -1,4 +1,4 @@
-- baseline: v7.0-rc1
+- baseline: v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,13 +7,13 @@
     - no role, no role : 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 22517d339901 "mm/oom_kill: use MMU_NOTIFY_CLEAR in __oom_reap_task_mm()" (5/16)
+      - af73ad8d5377 "mm/oom_kill: use MMU_NOTIFY_CLEAR in __oom_reap_task_mm()" (5/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-6-david@kernel.org
-      - 8b8d9d60ce6e "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping()" (6/16)
+      - f8a53281e5c6 "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping()" (6/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-7-david@kernel.org
-    - c3b32f759a56 "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
+    - f2e075291c2d "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260303102600.105255-1-maninder1.s@samsung.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,4 +1,4 @@
-- baseline: v7.0-rc1
+- baseline: v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,15 +7,15 @@
     - no role, nobody: 1 commits
     - no role, maintainer: 2 commits
   - full commits list
-      - bd02e6fbdd80 "mm: memfd_luo: preserve file seals" (1/2)
+      - 864fab4451ff "mm: memfd_luo: preserve file seals" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260216185946.1215770-3-pratyush@kernel.org
     - series "Make KHO Stateless", v9. (2 commits)
-      - 8d105ed0a480 "kho: adopt radix tree for preserved memory tracking" (0/2)
+      - afdf75aaf453 "kho: adopt radix tree for preserved memory tracking" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
-    - 06fdba4e948d "kho: remove finalize state and clients"
+    - fe2041f91682 "kho: remove finalize state and clients"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

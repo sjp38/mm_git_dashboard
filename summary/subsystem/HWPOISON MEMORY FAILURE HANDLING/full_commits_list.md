@@ -1,4 +1,4 @@
-- baseline: v7.0-rc1
+- baseline: v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - a2ba2089145d "selftests/mm: remove duplicate include of unistd.h"
+    - 7fd58f787292 "selftests/mm: remove duplicate include of unistd.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

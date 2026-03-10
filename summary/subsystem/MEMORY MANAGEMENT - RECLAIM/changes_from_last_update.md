@@ -1,4 +1,4 @@
-- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
+- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -6,7 +6,7 @@
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 23 -> 23 commits (no change)
-  - series: 0 (20) -> 0 (19)
+  - series: 0 (19) -> 0 (19) (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)

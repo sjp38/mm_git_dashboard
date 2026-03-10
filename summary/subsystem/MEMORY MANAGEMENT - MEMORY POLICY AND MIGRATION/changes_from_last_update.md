@@ -1,32 +1,25 @@
-- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
+- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 4 commits
+- mm-unstable: 4 -> 3 commits
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 3 commits
-  - changed commits
-    - 9c9ac245e338 "mm/migrate_device: document folio_get requirement before frozen PMD split"
+    - no role, reviewer: 3 -> 2 commits
+  - dropped commits
+    - 93d1ddeb1f12 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
       - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev"
-      - added "Reviewed-by: Nico Pache <npache@redhat.com>"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Link: https://lkml.kernel.org/r/20260306104409.3915811-1-usama.arif@linux.dev"
-      - dropped "Cc: Nico Pache <npache@redhat.com>"
-      - dropped "Cc: Rik van Riel <riel@surriel.com>"
-      - dropped "Cc: Mika Penttilä <mpenttil@redhat.com>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
-- mm-new: 1 -> 0 commits
+      - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 786e00736d16 "mm: migrate: requeue destination folio on deferred split queue"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260310105419.3256755-1-usama.arif@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

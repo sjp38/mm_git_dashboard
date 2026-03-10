@@ -1,4 +1,4 @@
-- baseline: v7.0-rc1
+- baseline: v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -9,47 +9,51 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 9b5e397b5a2e "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
+    - a13e3b92bd27 "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260219063506.545148-1-sgsu.park@samsung.com
-      - 642b6ab6c345 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 8cbab2499540 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 7bfc43c13f65 "mm/memory: simplify calculation in unmap_mapping_range_tree()" (4/16)
+      - c4f0b81c1514 "mm/memory: simplify calculation in unmap_mapping_range_tree()" (4/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-5-david@kernel.org
-      - 873a27b136db "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 4275f76eb5a3 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
     - series "mm: vma flag tweaks". (6 commits)
-      - 6b2c79a33bdd "mm: rename VMA flag helpers to be more readable" (0/6)
+      - 9197b7b1421e "mm: rename VMA flag helpers to be more readable" (0/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - c4588f0e6792 "mm: add vma_desc_test_all() and use it" (1/6)
+      - baa3326ad9f6 "mm: add vma_desc_test_all() and use it" (1/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/568c8f8d6a84ff64014f997517cba7a629f7eed6.1772704455.git.ljs@kernel.org
-      - b0a90584c713 "mm: always inline __mk_vma_flags() and invoked functions" (2/6)
+      - 31e3fb487890 "mm: always inline __mk_vma_flags() and invoked functions" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/241f49c52074d436edbb9c6a6662a8dc142a8f43.1772704455.git.ljs@kernel.org
-      - 3ed7c5fe8d79 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
+      - 6556577abfe6 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - ed564a23e43b "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
+      - eb345d49e876 "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
-      - 74cad1075aba "tools/testing/vma: add test for vma_flags_test(), vma_desc_test()" (5/6)
+      - 1a9cc1b54b24 "tools/testing/vma: add test for vma_flags_test(), vma_desc_test()" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/376a39eb9e134d2c8ab10e32720dd292970b080a.1772704455.git.ljs@kernel.org
-    - 6cb57abe23d4 "tools-testing-vma-add-test-for-vma_flags_test-vma_desc_test-fix"
+    - 3079616539d2 "tools-testing-vma-add-test-for-vma_flags_test-vma_desc_test-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/f6f396d2-1ba2-426f-b756-d8cc5985cc7c@lucifer.local
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
+- mm-new: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-      - 9bfb896cc646 "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
+      - 8849d636bd3b "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
+    - 20430fcf299c "mm: prevent droppable mappings from being locked"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260310155821.17869-1-anthony.yznaga@oracle.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

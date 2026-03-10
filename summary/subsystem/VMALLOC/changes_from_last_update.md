@@ -1,4 +1,4 @@
-- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
+- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)

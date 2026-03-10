@@ -1,22 +1,12 @@
-- baseline: v7.0-rc1
-- mm-hotfixes-stable: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - maintainer, nobody: 1 commits
-    - maintainer, maintainer: 1 commits
-  - full commits list
-    - 09833d99db36 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
-      - Authored by a maintainer, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260213095410.1862978-1-glider@google.com
-    - d155aab90fff "mm/kfence: fix KASAN hardware tag faults during late enablement"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260220144940.2779209-1-glider@google.com
+- baseline: v7.0-rc3-16-gb4f0dd314b39e
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - maintainer, maintainer: 1 commits
   - full commits list
-    - 750aa89661c9 "kfence: add kfence.fault parameter"
+    - 545ae5131825 "kfence: add kfence.fault parameter"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260225203639.3159463-1-elver@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

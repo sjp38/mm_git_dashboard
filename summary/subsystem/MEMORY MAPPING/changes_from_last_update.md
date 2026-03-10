@@ -1,4 +1,4 @@
-- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
+- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -11,22 +11,14 @@
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 0 -> 1 commits
+- mm-new: 1 -> 2 commits
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
   - new commits
-    - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4)
-      - 9bfb896cc646 "mm: move vma_mmu_pagesize() from hugetlb to vma.c (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
-  - dropped commits
-    - 6927cb4845e7 "mm: prevent droppable mappings from being locked"
+    - 20430fcf299c "mm: prevent droppable mappings from being locked"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260306204550.8405-1-anthony.yznaga@oracle.com
-    - 84cd8de2b92a "mm-prevent-droppable-mappings-from-being-locked-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/dae49547-48d9-4abd-9fb1-05250fcd7d23@oracle.com
+      - Link: https://lkml.kernel.org/r/20260310155821.17869-1-anthony.yznaga@oracle.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

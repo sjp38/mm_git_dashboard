@@ -1,39 +1,40 @@
-- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - dccd5ee2625d "memcg: fix slab accounting in refill_obj_stock() trylock path"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260226115145.62903-1-hao.li@linux.dev
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 25 -> 27 commits
-  - series: 3 (22) -> 3 (23)
-    - no role, nobody: 1 -> 2 commits
+- mm-unstable: 27 -> 27 commits (no change)
+  - series: 3 (23) -> 3 (23) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 18 -> 18 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 4 -> 4 commits (no change)
+- mm-new: 1 -> 2 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
   - new commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - cbea3eb9db77 "mm-memcontrol-convert-objcg-to-be-per-memcg-per-node-type-fix (31/33)"
+    - series "selftests/mm: fix failures and robustness improvements". (13)
+      - dfe5d2b2eef0 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes (12/13)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260309112939.31937-1-qi.zheng@linux.dev
-      - de84403d414c "mm-memcontrol-convert-objcg-to-be-per-memcg-per-node-type-fix-fix (32/33)"
-        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/97f1fc6020b1d63d1d73de6edd1525d91e4f7123.1773134177.git.sayalip@linux.ibm.com
   - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 9c09f8b5dfce "mm: memcontrol: convert objcg to be per-memcg per-node type (30/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Usama Arif <usama.arif@linux.dev>"
-        - Link: https://lkml.kernel.org/r/56c04b1c5d54f75ccdc12896df6c1ca35403ecc3.1772711148.git.zhengqi.arch@bytedance.com
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - be7a4c6cdefc "selftest: memcg: skip memcg_sock test if address family not supported"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260309160205.651754-1-longman@redhat.com
+    - 1029f2cf309c "selftest: memcg: skip memcg_sock test if address family not supported"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://lkml.kernel.org/r/20260310143936.720592-1-longman@redhat.com"
+      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Link: https://lkml.kernel.org/r/20260309160205.651754-1-longman@redhat.com"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+      - Link: https://lkml.kernel.org/r/20260310143936.720592-1-longman@redhat.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

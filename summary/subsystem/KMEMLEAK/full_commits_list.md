@@ -1,4 +1,4 @@
-- baseline: v7.0-rc1
+- baseline: v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,10 +7,10 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm/kmemleak: Improve scan_should_stop() implementation". (2 commits)
-      - 83fd63be1455 "mm/kmemleak: remove unreachable return statement in scan_should_stop()" (0/2)
+      - d8d99085aff2 "mm/kmemleak: remove unreachable return statement in scan_should_stop()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260130093729.2045858-2-zhongqiu.han@oss.qualcomm.com
-      - ffd01c973d7c "mm/kmemleak: use PF_KTHREAD flag to detect kernel threads" (1/2)
+      - c36d670faa56 "mm/kmemleak: use PF_KTHREAD flag to detect kernel threads" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260130093729.2045858-3-zhongqiu.han@oss.qualcomm.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

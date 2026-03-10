@@ -1,8 +1,15 @@
-- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 2 -> 2 commits (no change)
+- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
+- mm-hotfixes-stable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
+  - dropped commits
+    - eb9549346f75 "mm: change vma_alloc_folio_noprof() macro to inline function"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
+    - d155aab90fff "mm/kfence: fix KASAN hardware tag faults during late enablement"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260220144940.2779209-1-glider@google.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
@@ -16,21 +23,20 @@
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
   - changed commits
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v4. (4)
-      - 1b9449d9d94d "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-4-926b9840083e@debian.org"
-        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260307-thp_logs-v3-4-a45d2c8f3685@debian.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-4-926b9840083e@debian.org
+    - f543926f9d0c "mm: ratelimit min_free_kbytes adjustment messages"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-4-686099175bf6@debian.org"
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - added "Acked-by: Zi Yan <ziy@nvidia.com"
+      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-4-926b9840083e@debian.org"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-4-686099175bf6@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

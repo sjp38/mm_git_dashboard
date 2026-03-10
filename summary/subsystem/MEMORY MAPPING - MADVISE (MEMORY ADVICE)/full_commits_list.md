@@ -1,4 +1,4 @@
-- baseline: v7.0-rc1
+- baseline: v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,21 +7,21 @@
     - no role, no role : 5 commits
   - full commits list
     - series "mm: cleanups around unmapping / zapping". (16 commits)
-      - ad4d6ef8ad1a "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
+      - 9e2b3cfa44f0 "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260227200848.114019-2-david@kernel.org
         - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
-      - ea8b06137fe9 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
+      - abebf975ffb5 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
-      - 9888934b3d7d "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
+      - 83f0d165e03d "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-10-david@kernel.org
-      - 55b8b4656a7c "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (13/16)
+      - 3c659b1e6122 "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (13/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-14-david@kernel.org
-      - 9f3e7e143f22 "mm: rename zap_page_range_single() to zap_vma_range()" (14/16)
+      - 43c903ce2266 "mm: rename zap_page_range_single() to zap_vma_range()" (14/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

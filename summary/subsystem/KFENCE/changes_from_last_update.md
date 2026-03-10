@@ -1,8 +1,15 @@
-- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 2 -> 2 commits (no change)
+- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
+- mm-hotfixes-stable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 09833d99db36 "mm/kfence: disable KFENCE upon KASAN HW tags enablement"
+      - Authored by a maintainer, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260213095410.1862978-1-glider@google.com
+    - d155aab90fff "mm/kfence: fix KASAN hardware tag faults during late enablement"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260220144940.2779209-1-glider@google.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)

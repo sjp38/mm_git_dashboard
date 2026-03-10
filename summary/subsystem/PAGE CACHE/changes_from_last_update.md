@@ -1,17 +1,24 @@
-- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
+- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 3 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
+- mm-unstable: 3 -> 4 commits
+  - series: 0 (3) -> 0 (4)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - series " mm, kvm: allow uffd support in guest_memfd", v2. (15)
+      - 83f131e867e1 "KVM: guest_memfd: implement userfaultfd operations (12/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-14-rppt@kernel.org
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

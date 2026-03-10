@@ -1,18 +1,14 @@
-- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
+- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 5 commits
+- mm-unstable: 5 -> 5 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, reviewer: 3 -> 4 commits
+    - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 24d8a9b3f1ee "mm-do-not-allocate-shrinker-info-with-cgroupmemory=nokmem-v2"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260309-cgroup-ml-nokmem-shrinker-v2-1-3e7a7eefb6c9@suse.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

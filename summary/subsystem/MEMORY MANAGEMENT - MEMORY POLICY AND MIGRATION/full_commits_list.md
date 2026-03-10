@@ -1,24 +1,27 @@
-- baseline: v7.0-rc1
+- baseline: v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 4 total, 0 (2) series, 2 non-series commits
+- mm-unstable: 3 total, 0 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
-    - no role, reviewer: 3 commits
+    - no role, reviewer: 2 commits
   - full commits list
-    - 93d1ddeb1f12 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
-      - f1a26365c127 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - d9979e765e41 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 9b8fb8e7a7ec "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+      - 4e1dbab3eff8 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-    - 9c9ac245e338 "mm/migrate_device: document folio_get requirement before frozen PMD split"
+    - 11989afe5d9c "mm/migrate_device: document folio_get requirement before frozen PMD split"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - 786e00736d16 "mm: migrate: requeue destination folio on deferred split queue"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260310105419.3256755-1-usama.arif@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

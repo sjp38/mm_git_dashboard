@@ -1,15 +1,5 @@
-- baseline: v7.0-rc1
-- mm-hotfixes-stable: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-    - maintainer, nobody: 1 commits
-  - full commits list
-    - eb9549346f75 "mm: change vma_alloc_folio_noprof() macro to inline function"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
-    - d155aab90fff "mm/kfence: fix KASAN hardware tag faults during late enablement"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260220144940.2779209-1-glider@google.com
+- baseline: v7.0-rc3-16-gb4f0dd314b39e
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 17 total, 2 (13) series, 4 non-series commits
@@ -21,67 +11,67 @@
     - maintainer, nobody: 1 commits
     - maintainer, reviewer: 3 commits
   - full commits list
-    - c1886c20dd3f "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+    - f8982d577098 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-    - 23e1987dcaef "mm: introduce a new page type for page pool in page type"
+    - d7cac3223cb6 "mm: introduce a new page type for page pool in page type"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
-      - 642b6ab6c345 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 8cbab2499540 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 2dcca3da58f1 "mm: change the interface of prep_compound_tail()" (1/17)
+      - 2028e8cfe87a "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - ed0f8b345467 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - 0c00981ba467 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
     - series "mm/page_alloc: pcp locking cleanup". (3 commits)
-      - 1cc751f74574 "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n" (0/3)
+      - da5ab718d8c1 "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n" (0/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-0-f7e22e603447@kernel.org
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-1-f7e22e603447@kernel.org
         - Link: https://lore.kernel.org/all/d762c46b-36f0-471a-b5b4-23c8cf5628ae@suse.cz/ [1]
-      - 322e08fb9aeb "mm/page_alloc: remove IRQ saving/restoring from pcp locking" (1/3)
+      - 6a30c1f570c2 "mm/page_alloc: remove IRQ saving/restoring from pcp locking" (1/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-2-f7e22e603447@kernel.org
-      - c9927c32f25c "mm/page_alloc: remove pcpu_spin_* wrappers" (2/3)
+      - 75dd747e015b "mm/page_alloc: remove pcpu_spin_* wrappers" (2/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-3-f7e22e603447@kernel.org
-      - 873a27b136db "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 4275f76eb5a3 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 119c113e766d "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - 05cc87d084b9 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-      - 1f6324c0abe5 "mm: convert zone lock users to wrappers" (1/5)
+      - 50d42306bd12 "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - df863480a58d "mm: convert compaction to zone lock wrappers" (2/5)
+      - 064fd3803697 "mm: convert compaction to zone lock wrappers" (2/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/3a09e46f52cf9f709b0725bc2b648cc5212843b2.1772206930.git.d@ilvokhin.com
-      - 3647781330c3 "mm: rename zone->lock to zone->_lock" (3/5)
+      - 2b08e4defc01 "mm: rename zone->lock to zone->_lock" (3/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
-    - 31c50bdf31c7 "mm: documentation: standardize on "zone lock" terminology"
+    - 199f06e20711 "mm: documentation: standardize on "zone lock" terminology"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
     - series "Allow order zero pages in page reporting", v4. (5 commits)
-      - e36745d97f21 "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED" (0/5)
+      - ba5ba42ebc3d "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-1-yuvraj.sakshith@oss.qualcomm.com
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-2-yuvraj.sakshith@oss.qualcomm.com
-      - b960e619483c "mm-page_reporting-add-page_reporting_order_unspecified-fix" (1/5)
+      - badc826f0dcb "mm-page_reporting-add-page_reporting_order_unspecified-fix" (1/5)
         - Authored by a maintainer, reviewed by nobody
-    - d111f1a9d782 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED"
+    - 5807c03d8883 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260303113032.3008371-6-yuvraj.sakshith@oss.qualcomm.com
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
   - full commits list
-      - 1b9449d9d94d "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-4-926b9840083e@debian.org
+    - f543926f9d0c "mm: ratelimit min_free_kbytes adjustment messages"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-4-686099175bf6@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

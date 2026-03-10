@@ -1,41 +1,58 @@
-- baseline: v7.0-rc1 -> v7.0-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
+    - a1e59fc6ee4e "mm/hugetlb.c: use __pa() instead of virt_to_phys() in early bootmem alloc code"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/b4a7d2c6c4c1dd81dddc904fc21f01303290a4b8.1772107852.git.riteshh@linux.ibm.com
+- mm-hotfixes-unstable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-  - changed commits
-    - 40881d2c63ae "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+    - no role, nobody: 2 -> 0 commits
+  - dropped commits
+    - f789a0e56b2f "mm-userfaultfd-fix-hugetlb-fault-mutex-hash-calculation-v2"
       - Authored by no role player, reviewed by nobody
-      - added "Link: https://lkml.kernel.org/r/20260309033053.220012-1-jianhuizzzzz@gmail.com"
-      - added "Fixes: a08c7193e4f1 ("mm/filemap: remove hugetlb special casing in filemap.c")"
-      - added "Cc: Hugh Dickins <hughd@google.com>"
-      - dropped "Fixes: 60d4d2d2b40e ("userfaultfd: hugetlbfs: add __mcopy_atomic_hugetlb for huge page UFFDIO_COPY")"
-      - Link: https://lkml.kernel.org/r/20260309033053.220012-1-jianhuizzzzz@gmail.com
-      - Link: https://lkml.kernel.org/r/20260306140332.171078-1-jianhuizzzzz@gmail.com
-      - Link: https://lkml.kernel.org/r/tencent_F70AFD1D8067E3D2409764BC1A199DA6AF0A@qq.com
+      - Link: https://lkml.kernel.org/r/20260307143542.179953-1-jianhuizzzzz@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 14 commits (no change)
-  - series: 1 (12) -> 1 (12) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
+- mm-unstable: 14 -> 15 commits
+  - series: 1 (12) -> 1 (13)
+    - no role, nobody: 3 -> 4 commits
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-- mm-new: 1 -> 3 commits
-  - series: 0 (1) -> 1 (3)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 2 commits
+  - changed commits
+    - series " mm, kvm: allow uffd support in guest_memfd", v2. (15)
+      - e74ea9f8ee0f "userfaultfd: introduce vm_uffd_ops (6/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
+- mm-new: 3 -> 4 commits
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
   - new commits
-    - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4)
-      - e72c1a3512b6 "mm: move vma_kernel_pagesize() from hugetlb to mm.h (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-1-david@kernel.org
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-2-david@kernel.org
-      - 9bfb896cc646 "mm: move vma_mmu_pagesize() from hugetlb to vma.c (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
+    - series "selftests/mm: fix failures and robustness improvements". (13)
+      - dfe5d2b2eef0 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes (12/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/97f1fc6020b1d63d1d73de6edd1525d91e4f7123.1773134177.git.sayalip@linux.ibm.com
+  - changed commits
+    - 462383b19f49 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-new
+      - added "Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com"
+      - added "Cc: SeongJae Park <sj@kernel.org>"
+      - added "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
+      - added "Cc: Sidhartha Kumar <sidhartha.kumar@oracle.com>"
+      - dropped "Link: https://lkml.kernel.org/r/tencent_F70AFD1D8067E3D2409764BC1A199DA6AF0A@qq.com"
+      - dropped "Link: https://lkml.kernel.org/r/20260309033053.220012-1-jianhuizzzzz@gmail.com"
+      - dropped "Link: https://lkml.kernel.org/r/20260306140332.171078-1-jianhuizzzzz@gmail.com"
+      - dropped "Cc: Hillf Danton <hillf.zj@alibaba-inc.com>"
+      - dropped "Cc: Pavel Emelyanov <xemul@parallels.com>"
+      - dropped "Cc: "Dr. David Alan Gilbert" <dgilbert@redhat.com>"
+      - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@redhat.com>"
+      - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

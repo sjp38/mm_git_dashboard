@@ -1,11 +1,5 @@
-- baseline: v7.0-rc1
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-    - a4ab97e34bb6 "mm: fix NULL NODE_DATA dereference for memoryless nodes on boot"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260222115702.3659-1-ming.lei@redhat.com
+- baseline: v7.0-rc3-16-gb4f0dd314b39e
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 7 total, 2 (7) series, 0 non-series commits
@@ -15,28 +9,28 @@
     - no role, maintainer: 3 commits
   - full commits list
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
-      - c5d4fcf035a7 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
+      - b63762a1292d "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - f1a26365c127 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - d9979e765e41 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - ad0d0c1a8d2f "arch, mm: consolidate empty_zero_page" (2/4)
+      - 168142e00e0f "arch, mm: consolidate empty_zero_page" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - 990678eb374b "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
+      - d643685581c8 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
     - series "kho: add support for deferred struct page init", v5. (2 commits)
-      - 30781a8591ec "kho: fix deferred init of kho scratch" (0/2)
+      - d7176a010afc "kho: fix deferred init of kho scratch" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225153955.1006649-1-mclapinski@google.com
         - Link: https://lkml.kernel.org/r/20260225153955.1006649-2-mclapinski@google.com
-      - 2dcca3da58f1 "mm: change the interface of prep_compound_tail()" (1/17)
+      - 2028e8cfe87a "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - 1f6324c0abe5 "mm: convert zone lock users to wrappers" (1/5)
+      - 50d42306bd12 "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

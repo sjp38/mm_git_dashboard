@@ -1,27 +1,25 @@
-- baseline: v7.0-rc1
+- baseline: v7.0-rc3-16-gb4f0dd314b39e
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 3 total, 0 (3) series, 0 non-series commits
+- mm-unstable: 4 total, 0 (4) series, 0 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 2 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 642b6ab6c345 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 8cbab2499540 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 40f3db745968 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE" (3/4)
+      - 46c68cfb39ce "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
-      - c9733a101f13 "mm: rename zap_vma_pages() to zap_vma()" (12/16)
+      - a828404642ba "mm: rename zap_vma_pages() to zap_vma()" (12/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-13-david@kernel.org
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-      - a50ca0f63449 "KVM: guest_memfd: implement userfaultfd operations" (12/15)
+      - 83f131e867e1 "KVM: guest_memfd: implement userfaultfd operations" (12/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-14-rppt@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
