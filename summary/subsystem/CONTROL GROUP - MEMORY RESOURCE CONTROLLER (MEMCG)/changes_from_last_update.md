@@ -1,40 +1,38 @@
-- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - dccd5ee2625d "memcg: fix slab accounting in refill_obj_stock() trylock path"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260226115145.62903-1-hao.li@linux.dev
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 27 -> 27 commits (no change)
-  - series: 3 (23) -> 3 (23) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+- mm-unstable: 27 -> 29 commits
+  - series: 3 (23) -> 3 (24)
+    - no role, nobody: 2 -> 3 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 18 -> 18 commits (no change)
+    - no role, maintainer: 18 -> 19 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 4 -> 4 commits (no change)
-- mm-new: 1 -> 2 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - series "selftests/mm: fix failures and robustness improvements". (13)
-      - dfe5d2b2eef0 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes (12/13)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/97f1fc6020b1d63d1d73de6edd1525d91e4f7123.1773134177.git.sayalip@linux.ibm.com
   - changed commits
-    - 1029f2cf309c "selftest: memcg: skip memcg_sock test if address family not supported"
+    - series "selftests/mm: fix failures and robustness improvements", v2. (13)
+      - 0406906bd699 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes (11/13)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com"
+        - dropped "Link: https://lkml.kernel.org/r/97f1fc6020b1d63d1d73de6edd1525d91e4f7123.1773134177.git.sayalip@linux.ibm.com"
+        - dropped "Cc: Muhammad Usama Anjum <usama.anjum@collabora.com>"
+        - Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com
+    - da45d80f422c "selftest: memcg: skip memcg_sock test if address family not supported"
       - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://lkml.kernel.org/r/20260310143936.720592-1-longman@redhat.com"
-      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Link: https://lkml.kernel.org/r/20260309160205.651754-1-longman@redhat.com"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lkml.kernel.org/r/20260310143936.720592-1-longman@redhat.com
+      - branch: mm-new -> mm-unstable
+      - added "Link: https://lkml.kernel.org/r/20260311200526.885899-1-longman@redhat.com"
+      - added "Acked-by: Michal Koutný <mkoutny@suse.com>"
+      - dropped "Link: https://lkml.kernel.org/r/20260310143936.720592-1-longman@redhat.com"
+      - Link: https://lkml.kernel.org/r/20260311200526.885899-1-longman@redhat.com
+- mm-new: 2 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

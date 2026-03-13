@@ -1,26 +1,36 @@
-- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
+- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 23 -> 23 commits (no change)
+- mm-unstable: 23 -> 26 commits
   - series: 2 (21) -> 2 (21) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
+    - no role, maintainer: 4 -> 7 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 12 -> 12 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
   - new commits
-    - e1faee24cfd6 "mm/swap: strengthen locking assertions and invariants in cluster allocation"
-      - Authored by no role player, reviewed by a reviewer
+    - b72f72fab2ac "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v4"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260311022241.177801-1-hui.zhu@linux.dev
+    - 554de7097c0e "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v5"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260312023024.903143-1-hui.zhu@linux.dev
+  - changed commits
+    - b120d4954bbc "mm/swap: strengthen locking assertions and invariants in cluster allocation"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Chris Li <chrisl@kernel.org>"
+      - dropped "Cc: Chris Li <chrisl@kernel.org>"
       - Link: https://lkml.kernel.org/r/20260310015657.42395-1-hui.zhu@linux.dev
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

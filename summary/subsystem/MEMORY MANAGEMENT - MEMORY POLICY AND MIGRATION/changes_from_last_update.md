@@ -1,25 +1,39 @@
-- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
+- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 3 commits
+- mm-unstable: 3 -> 4 commits
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 3 -> 2 commits
-  - dropped commits
-    - 93d1ddeb1f12 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+    - no role, reviewer: 2 -> 3 commits
+  - changed commits
+    - 3d74edc58a49 "mm/migrate_device: document folio_get requirement before frozen PMD split"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
+      - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
+      - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
+    - 4832f6a9ae9a "mm: migrate: requeue destination folio on deferred split queue"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev"
+      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Acked-by: SeongJae Park <sj@kernel.org>"
+      - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
+      - dropped "Link: https://lkml.kernel.org/r/20260310105419.3256755-1-usama.arif@linux.dev"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (1)
+    - no role, reviewer: 1 -> 0 commits
+    - reviewer, reviewer: 0 -> 1 commits
   - new commits
-    - 786e00736d16 "mm: migrate: requeue destination folio on deferred split queue"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260310105419.3256755-1-usama.arif@linux.dev
+    - series "mm: khugepaged cleanups and mTHP prerequisites", v3. (5)
+      - a570aaea223c "mm: introduce is_pmd_order helper (1/5)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

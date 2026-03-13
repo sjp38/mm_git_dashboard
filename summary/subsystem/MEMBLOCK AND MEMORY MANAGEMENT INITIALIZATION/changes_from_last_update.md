@@ -1,20 +1,29 @@
-- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - a4ab97e34bb6 "mm: fix NULL NODE_DATA dereference for memoryless nodes on boot"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260222115702.3659-1-ming.lei@redhat.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 7 -> 7 commits (no change)
   - series: 2 (7) -> 2 (7) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
+  - changed commits
+    - series "kho: add support for deferred struct page init", v6. (2)
+      - 7fa3fb1ee3b8 "kho: fix deferred init of kho scratch (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lkml.kernel.org/r/20260311125539.4123672-2-mclapinski@google.com"
+        - added "Link: https://lkml.kernel.org/r/20260311125539.4123672-1-mclapinski@google.com"
+        - added "Cc: Samiullah Khawaja <skhawaja@google.com>"
+        - added "Cc: Mike Rapoport <rppt@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260225153955.1006649-1-mclapinski@google.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260225153955.1006649-2-mclapinski@google.com"
+        - dropped "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260311125539.4123672-1-mclapinski@google.com
+        - Link: https://lkml.kernel.org/r/20260311125539.4123672-2-mclapinski@google.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

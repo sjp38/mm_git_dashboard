@@ -1,93 +1,101 @@
-- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
-- mm-hotfixes-stable: 2 -> 1 commits
+- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 1 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
-  - changed commits
-    - fae654083bfa "mm/huge_memory: fix use of NULL folio in move_pages_huge_pmd()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/a1e787dd-b911-474d-8570-f37685357d86@lucifer.local
-  - dropped commits
-    - dd085fe9a8eb "mm: thp: deny THP for files on anonymous inodes"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://syzkaller.appspot.com/bug?extid=33a04338019ac7e43a44
-      - Link: https://lore.kernel.org/linux-mm/CAEvNRgHegcz3ro35ixkDw39ES8=U6rs6S7iP0gkR9enr7HoGtA@mail.gmail.com
-      - Link: https://lkml.kernel.org/r/20260214001535.435626-1-kartikey406@gmail.com
-    - 577a1f495fd7 "mm/huge_memory: fix a folio_split() race condition with folio_try_get()"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: : https://lkml.kernel.org/r/5C9FA053-A4C6-4615-BE05-74E47A6462B3@nvidia.com
-      - Link: https://lkml.kernel.org/r/20260302203159.3208341-1-ziy@nvidia.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 9 -> 9 commits (no change)
-  - series: 1 (6) -> 1 (6) (no change)
+- mm-unstable: 9 -> 14 commits
+  - series: 1 (6) -> 2 (11)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, no role : 1 -> 2 commits
+    - no role, reviewer: 5 -> 9 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 4 -> 6 commits
-  - series: 1 (4) -> 1 (5)
-    - no role, no role : 4 -> 0 commits
-    - no role, reviewer: 0 -> 5 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - series "selftests/mm: fix failures and robustness improvements". (13)
-      - a46719115c35 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test (4/13)"
+  - changed commits
+    - series "selftests/mm: fix failures and robustness improvements", v2. (13)
+      - 6c57d76e5cd9 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test (3/13)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/4284688bbec0901d25f88ee1b55c7495fa26b125.1773134177.git.sayalip@linux.ibm.com
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lkml.kernel.org/r/94c18dd26cf88f10b4b496cb3de08d81439a8909.1773305677.git.sayalip@linux.ibm.com"
+        - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/4284688bbec0901d25f88ee1b55c7495fa26b125.1773134177.git.sayalip@linux.ibm.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Muhammad Usama Anjum <usama.anjum@collabora.com>"
+        - Link: https://lkml.kernel.org/r/94c18dd26cf88f10b4b496cb3de08d81439a8909.1773305677.git.sayalip@linux.ibm.com
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v6. (4)
+      - fbde36cc8d40 "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-0-421e30d881e0@debian.org"
+        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-1-421e30d881e0@debian.org"
+        - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-1-686099175bf6@debian.org"
+        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-0-686099175bf6@debian.org"
+        - dropped "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-0-421e30d881e0@debian.org
+        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-1-421e30d881e0@debian.org
+      - e4acf76be125 "mm: huge_memory: refactor anon_enabled_store() with change_anon_orders() (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-2-421e30d881e0@debian.org"
+        - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
+        - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-2-686099175bf6@debian.org"
+        - dropped "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-2-421e30d881e0@debian.org
+      - f3404ae99da2 "mm: huge_memory: refactor enabled_store() with change_enabled() (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-3-421e30d881e0@debian.org"
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
+        - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-3-686099175bf6@debian.org"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-3-421e30d881e0@debian.org
+      - 3b86cd7c76c7 "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-4-421e30d881e0@debian.org"
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
+        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-4-686099175bf6@debian.org"
+        - dropped "Acked-by: Zi Yan <ziy@nvidia.com"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-4-421e30d881e0@debian.org
+- mm-new: 6 -> 4 commits
+  - series: 1 (5) -> 0 (4)
+    - no role, reviewer: 5 -> 0 commits
+    - reviewer, no role : 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 3 commits
+    - maintainer, nobody: 1 -> 0 commits
+  - new commits
+    - series "mm: khugepaged cleanups and mTHP prerequisites", v3. (5)
+      - a570aaea223c "mm: introduce is_pmd_order helper (1/5)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
+      - 389e729383d7 "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1 (2/5)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260311211315.450947-4-npache@redhat.com
+      - aef0c27700d3 "mm/khugepaged: rename hpage_collapse_* to collapse_* (3/5)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260311211315.450947-5-npache@redhat.com
+      - 263896b7d94c "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd() (4/5)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260311211315.450947-6-npache@redhat.com
+  - dropped commits
     - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v5. (4)
       - 3bd6c195df3b "mm-huge_memory-refactor-enabled_store-with-change_enabled-checkpatch-fixes (3/4)"
         - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v5. (4)
-      - 0ee1580947c1 "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-0-686099175bf6@debian.org"
-        - added "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-1-686099175bf6@debian.org"
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Breno Leitao <leitao@debian.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-1-926b9840083e@debian.org"
-        - dropped "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-0-926b9840083e@debian.org"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-0-686099175bf6@debian.org
-        - Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-1-686099175bf6@debian.org
-      - 5a45f7da45fa "mm: huge_memory: refactor anon_enabled_store() with change_anon_orders() (1/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-2-686099175bf6@debian.org"
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-2-926b9840083e@debian.org"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-2-686099175bf6@debian.org
-      - 63c1d4dd8381 "mm: huge_memory: refactor enabled_store() with change_enabled() (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-3-686099175bf6@debian.org"
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-3-926b9840083e@debian.org"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-3-686099175bf6@debian.org
-    - f543926f9d0c "mm: ratelimit min_free_kbytes adjustment messages"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-4-686099175bf6@debian.org"
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - added "Acked-by: Zi Yan <ziy@nvidia.com"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-4-926b9840083e@debian.org"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-4-686099175bf6@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

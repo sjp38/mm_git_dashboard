@@ -6,16 +6,16 @@
   - author/reviewer role stat
     - no role, maintainer: 4 commits
   - full commits list
-      - 8ca76a1fb812 "selftests/cgroup: add test for zswap incompressible pages" (1/2)
+      - 36d5497fbf0b "selftests/cgroup: add test for zswap incompressible pages" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260213071827.5688-3-jiayuan.chen@linux.dev
-    - 26b13bcf782a "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
+    - e244e8fd7117 "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260202-zswap-syncio-cleanup-v1-1-86bb24a64521@tencent.com
-      - e339e5da1bba "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
+      - 495e3a92a939 "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com
-      - bc4fc6a1334a "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
+      - 6ee795e313be "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

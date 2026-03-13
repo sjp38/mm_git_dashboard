@@ -1,90 +1,28 @@
-- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
+- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 0 commits
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 13 commits
-  - series: 0 (1) -> 1 (13)
-    - no role, nobody: 0 -> 9 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 1 -> 2 commits
-    - reviewer, nobody: 0 -> 1 commits
-  - changed commits
+- mm-unstable: 13 -> 14 commits
+  - series: 1 (13) -> 1 (14)
+    - no role, nobody: 9 -> 10 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - reviewer, nobody: 1 -> 1 commits (no change)
+  - new commits
     - series " mm, kvm: allow uffd support in guest_memfd", v2. (15)
-      - c9e3a325da0a "userfaultfd: introduce mfill_copy_folio_locked() helper (0/15)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-1-rppt@kernel.org
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-2-rppt@kernel.org
-      - e73e437b877a "userfaultfd: introduce struct mfill_state (1/15)"
+      - 981034b7a625 "userfaultfd: allow registration of WP_ASYNC for any VMA (7/15)"
         - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-3-rppt@kernel.org
-      - e9baa97e0e28 "userfaultfd: introduce mfill_get_pmd() helper (2/15)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-4-rppt@kernel.org
-      - b9bff90297af "userfaultfd: introduce mfill_get_vma() and mfill_put_vma() (3/15)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-5-rppt@kernel.org
-      - a32d6e7a9fae "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy() (4/15)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
-      - a25116e5c827 "userfaultfd: move vma_can_userfault out of line (5/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-7-rppt@kernel.org
-      - e74ea9f8ee0f "userfaultfd: introduce vm_uffd_ops (6/15)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
-      - e542398bc2ec "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE (7/15)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-9-rppt@kernel.org
-      - 12fd207b1b52 "userfaultfd: introduce vm_uffd_ops->alloc_folio() (8/15)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-10-rppt@kernel.org
-      - f629018887e2 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops (9/15)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-11-rppt@kernel.org
-      - 25df1755485c "userfaultfd: mfill_atomic(): remove retry logic (10/15)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-12-rppt@kernel.org
-      - d240ce94e1eb "mm: generalize handling of userfaults in __do_fault() (11/15)"
-        - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-13-rppt@kernel.org
-- mm-new: 12 -> 1 commits
-  - series: 1 (12) -> 0 (0)
-    - no role, nobody: 9 -> 1 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - reviewer, nobody: 1 -> 0 commits
+        - Link: https://lkml.kernel.org/r/abG5HFV8yoEHOFkh@kernel.org
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - 462383b19f49 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+    - c2e9220f964b "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
       - Authored by no role player, reviewed by nobody
-      - branch: mm-hotfixes-unstable -> mm-new
-      - added "Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com"
-      - added "Cc: SeongJae Park <sj@kernel.org>"
-      - added "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-      - added "Cc: Sidhartha Kumar <sidhartha.kumar@oracle.com>"
-      - dropped "Link: https://lkml.kernel.org/r/20260309033053.220012-1-jianhuizzzzz@gmail.com"
-      - dropped "Link: https://lkml.kernel.org/r/20260306140332.171078-1-jianhuizzzzz@gmail.com"
-      - dropped "Link: https://lkml.kernel.org/r/tencent_F70AFD1D8067E3D2409764BC1A199DA6AF0A@qq.com"
-      - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - dropped "Cc: "Dr. David Alan Gilbert" <dgilbert@redhat.com>"
-      - dropped "Cc: David Hildenbrand <david@redhat.com>"
-      - dropped "Cc: Hillf Danton <hillf.zj@alibaba-inc.com>"
-      - dropped "Cc: Pavel Emelyanov <xemul@parallels.com>"
+      - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
       - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

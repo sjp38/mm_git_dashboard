@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - maintainer, maintainer: 1 commits
   - full commits list
-    - 545ae5131825 "kfence: add kfence.fault parameter"
+    - 73736b6c895b "kfence: add kfence.fault parameter"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260225203639.3159463-1-elver@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,66 +1,117 @@
-- baseline: v7.0-rc1 -> v7.0-rc3-16-gb4f0dd314b39e
-- mm-hotfixes-stable: 3 -> 0 commits
+- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-  - dropped commits
-    - eb9549346f75 "mm: change vma_alloc_folio_noprof() macro to inline function"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260216121751.2378374-1-arnd@kernel.org
-    - 2d28ed588f8d "Revert "ptdesc: remove references to folios from __pagetable_ctor() and pagetable_dtor()""
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260225002434.2953895-1-axelrasmussen@google.com
-    - 599b4e290c87 "mm/mmu_notifier: clean up mmu_notifier.h kernel-doc"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260302005222.3470783-1-rdunlap@infradead.org
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 61 -> 63 commits
-  - series: 7 (46) -> 7 (48)
-    - no role, nobody: 9 -> 10 commits
-    - no role, no role : 35 -> 35 commits (no change)
-    - no role, reviewer: 7 -> 7 commits (no change)
+- mm-unstable: 63 -> 70 commits
+  - series: 7 (48) -> 9 (51)
+    - no role, nobody: 10 -> 13 commits
+    - no role, no role : 35 -> 37 commits
+    - no role, reviewer: 7 -> 9 commits
     - no role, maintainer: 5 -> 5 commits (no change)
-    - reviewer, nobody: 1 -> 2 commits
+    - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series " mm, kvm: allow uffd support in guest_memfd", v2. (15)
-      - e74ea9f8ee0f "userfaultfd: introduce vm_uffd_ops (6/15)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
-      - d240ce94e1eb "mm: generalize handling of userfaults in __do_fault() (11/15)"
-        - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-13-rppt@kernel.org
-- mm-new: 7 -> 6 commits
-  - series: 2 (5) -> 2 (3)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 3 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
-    - reviewer, nobody: 1 -> 0 commits
   - new commits
-    - 20430fcf299c "mm: prevent droppable mappings from being locked"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260310155821.17869-1-anthony.yznaga@oracle.com
+    - series "mm: cleanups around unmapping / zapping". (16)
+      - d499e4af4d4d "mm-memory-inline-unmap_page_range-into-__zap_vma_range-fix (12/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/f7732d1c-0e85-4a14-948a-912c417018b5@kernel.org
   - changed commits
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v5. (4)
-      - 0ee1580947c1 "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
+    - ad13fad4e272 "mm/debug: optimize once judgment with clang"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260309153405.20130-1-qq570070308@gmail.com
+    - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4)
+      - 65e7a380446e "mm: move vma_kernel_pagesize() from hugetlb to mm.h (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260309151901.123947-1-david@kernel.org
+        - Link: https://lkml.kernel.org/r/20260309151901.123947-2-david@kernel.org
+      - 538c719e017d "mm: move vma_mmu_pagesize() from hugetlb to vma.c (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
+    - 602a59b9080f "mm: prevent droppable mappings from being locked"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+      - added "Tested-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+      - Link: https://lkml.kernel.org/r/20260310155821.17869-1-anthony.yznaga@oracle.com
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v6. (4)
+      - fbde36cc8d40 "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-0-686099175bf6@debian.org"
-        - added "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-1-686099175bf6@debian.org"
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - added "Cc: Breno Leitao <leitao@debian.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-0-926b9840083e@debian.org"
-        - dropped "Link: https://lkml.kernel.org/r/20260309-thp_logs-v4-1-926b9840083e@debian.org"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-0-686099175bf6@debian.org
-        - Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-1-686099175bf6@debian.org
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-1-421e30d881e0@debian.org"
+        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-0-421e30d881e0@debian.org"
+        - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-1-686099175bf6@debian.org"
+        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-0-686099175bf6@debian.org"
+        - dropped "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-0-421e30d881e0@debian.org
+        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-1-421e30d881e0@debian.org
+    - a0c29517462e "mm: optimize the implementation of WARN_ON_ONCE_GFP()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260309153811.40958-1-qq570070308@gmail.com
+- mm-new: 6 -> 11 commits
+  - series: 2 (3) -> 2 (9)
+    - no role, nobody: 3 -> 7 commits
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+    - reviewer, reviewer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 2 commits
+  - new commits
+    - series "mm: improve map count checks". (3)
+      - 65d606f0bacd "mm: abstract reading sysctl_max_map_count, and READ_ONCE() (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/0715259eb37cbdfde4f9e5db92a20ec7110a1ce5.1773249037.git.ljs@kernel.org
+    - series "mm: khugepaged cleanups and mTHP prerequisites", v3. (5)
+      - 4e73f065ca28 "mm: consolidate anonymous folio PTE mapping into helpers (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260311211315.450947-1-npache@redhat.com
+        - Link: https://lkml.kernel.org/r/20260311211315.450947-2-npache@redhat.com
+        - Link: https://lore.kernel.org/all/20260122192841.128719-1-npache@redhat.com/ [1]
+        - Link: https://lore.kernel.org/all/7334b702-f6a0-4ccf-8ac6-8426a90d1846@kernel.org/ [2]
+        - Link: https://lore.kernel.org/all/25723c0f-c702-44ad-93e9-1056313680cd@kernel.org/ [3]
+        - Link: https://lore.kernel.org/all/81ff9caa-50f2-4951-8d82-2c8dcdf3db91@kernel.org/ [4]
+      - a570aaea223c "mm: introduce is_pmd_order helper (1/5)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
+    - series "mm: expand mmap_prepare functionality and usage". (15)
+      - 98b542c270bd "mm: various small mmap_prepare cleanups (0/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/cover.1773346620.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/56372fe273f775b26675a04652c1229e14680741.1773346620.git.ljs@kernel.org
+      - 0c128c16d8ca "mm-various-small-mmap_prepare-cleanups-fix (1/15)"
+        - Authored by a maintainer, reviewed by nobody
+      - f0701e0aff0e "mm: document vm_operations_struct->open the same as close() (3/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/52a7b9a003ea51521ab3c0baf30337a7800a3af7.1773346620.git.ljs@kernel.org
+      - ad68be55c386 "mm: add vm_ops->mapped hook (4/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/0e0fe47852e6009f662b1fa42f836447b8d1283a.1773346620.git.ljs@kernel.org
+      - 4497bb545a22 "mm: add mmap_action_simple_ioremap() (6/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/461328bd1e62a2be79f4ae9a392c96f62ea35081.1773346620.git.ljs@kernel.org
+      - dc432df2e73b "mm: allow handling of stacked mmap_prepare hooks in more drivers (12/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/d10f5b604ce0ed65dc7d4e49cdf4070b1260a192.1773346620.git.ljs@kernel.org
+    - 32619dc7258f "mm: add mmap_action_map_kernel_pages[_full]()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/21d8899bb1f4db61203072fb3a56a6c98a61e23d.1773346620.git.ljs@kernel.org
+    - 593fab843afb "mm-add-mmap_action_map_kernel_pages-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 5 -> 5 commits (no change)
