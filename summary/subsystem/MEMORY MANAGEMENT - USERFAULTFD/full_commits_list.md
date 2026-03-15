@@ -2,63 +2,60 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 14 total, 1 (14) series, 0 non-series commits
+- mm-unstable: 15 total, 1 (14) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 10 commits
+    - no role, nobody: 11 commits
     - no role, no role : 1 commits
     - no role, reviewer: 2 commits
     - reviewer, nobody: 1 commits
   - full commits list
-      - ad8bd6a391a0 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 28fbf423398d "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
     - series " mm, kvm: allow uffd support in guest_memfd", v2. (15 commits)
-      - 5473c1ee6462 "userfaultfd: introduce mfill_copy_folio_locked() helper" (0/15)
+      - 8bcfde6f2b13 "userfaultfd: introduce mfill_copy_folio_locked() helper" (0/15)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-2-rppt@kernel.org
-      - 63a0fa3f5dd1 "userfaultfd: introduce struct mfill_state" (1/15)
+      - 471884fefc54 "userfaultfd: introduce struct mfill_state" (1/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-3-rppt@kernel.org
-      - 6834ac468ad0 "userfaultfd: introduce mfill_get_pmd() helper" (2/15)
+      - fc404fecbeae "userfaultfd: introduce mfill_get_pmd() helper" (2/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-4-rppt@kernel.org
-      - 7d4d4de3ac3e "userfaultfd: introduce mfill_get_vma() and mfill_put_vma()" (3/15)
+      - 5e3694dafea8 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma()" (3/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-5-rppt@kernel.org
-      - 8efca86efc0f "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()" (4/15)
+      - 4c8438861d4f "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()" (4/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
-      - 8558d1a404b8 "userfaultfd: move vma_can_userfault out of line" (5/15)
+      - d3fad9ccf7a9 "userfaultfd: move vma_can_userfault out of line" (5/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-7-rppt@kernel.org
-      - 52b7ee1715b8 "userfaultfd: introduce vm_uffd_ops" (6/15)
+      - 2af557b10c67 "userfaultfd: introduce vm_uffd_ops" (6/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
-      - 981034b7a625 "userfaultfd: allow registration of WP_ASYNC for any VMA" (7/15)
+      - 08ee69a1f70f "userfaultfd: allow registration of WP_ASYNC for any VMA" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/abG5HFV8yoEHOFkh@kernel.org
-      - b136e4621cdd "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE" (8/15)
+      - 55864cb25ccf "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE" (8/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-9-rppt@kernel.org
-      - 92048e309857 "userfaultfd: introduce vm_uffd_ops->alloc_folio()" (9/15)
+      - 74e778e31086 "userfaultfd: introduce vm_uffd_ops->alloc_folio()" (9/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-10-rppt@kernel.org
-      - c5bd5d760a56 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops" (10/15)
+      - 81a0336a9347 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops" (10/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-11-rppt@kernel.org
-      - e7a2214bde5f "userfaultfd: mfill_atomic(): remove retry logic" (11/15)
+      - 95229d6fbdc8 "userfaultfd: mfill_atomic(): remove retry logic" (11/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-12-rppt@kernel.org
-      - c03a0e8dbed2 "mm: generalize handling of userfaults in __do_fault()" (12/15)
+      - 5f00a091d770 "mm: generalize handling of userfaults in __do_fault()" (12/15)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-13-rppt@kernel.org
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-    - c2e9220f964b "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+    - 9be4edabd765 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

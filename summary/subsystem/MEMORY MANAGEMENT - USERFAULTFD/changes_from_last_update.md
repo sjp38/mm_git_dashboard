@@ -5,25 +5,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 14 commits
-  - series: 1 (13) -> 1 (14)
-    - no role, nobody: 9 -> 10 commits
+- mm-unstable: 14 -> 15 commits
+  - series: 1 (14) -> 1 (14) (no change)
+    - no role, nobody: 10 -> 11 commits
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - series " mm, kvm: allow uffd support in guest_memfd", v2. (15)
-      - 981034b7a625 "userfaultfd: allow registration of WP_ASYNC for any VMA (7/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/abG5HFV8yoEHOFkh@kernel.org
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - c2e9220f964b "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+    - 9be4edabd765 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
       - Authored by no role player, reviewed by nobody
-      - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

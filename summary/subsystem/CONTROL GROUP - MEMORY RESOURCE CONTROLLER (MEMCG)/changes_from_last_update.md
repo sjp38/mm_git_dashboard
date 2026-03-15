@@ -5,34 +5,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 27 -> 29 commits
-  - series: 3 (23) -> 3 (24)
-    - no role, nobody: 2 -> 3 commits
+- mm-unstable: 29 -> 29 commits (no change)
+  - series: 3 (24) -> 3 (24) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 18 -> 19 commits
+    - no role, maintainer: 19 -> 19 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 4 -> 4 commits (no change)
-  - changed commits
-    - series "selftests/mm: fix failures and robustness improvements", v2. (13)
-      - 0406906bd699 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes (11/13)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com"
-        - dropped "Link: https://lkml.kernel.org/r/97f1fc6020b1d63d1d73de6edd1525d91e4f7123.1773134177.git.sayalip@linux.ibm.com"
-        - dropped "Cc: Muhammad Usama Anjum <usama.anjum@collabora.com>"
-        - Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com
-    - da45d80f422c "selftest: memcg: skip memcg_sock test if address family not supported"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - added "Link: https://lkml.kernel.org/r/20260311200526.885899-1-longman@redhat.com"
-      - added "Acked-by: Michal Koutný <mkoutny@suse.com>"
-      - dropped "Link: https://lkml.kernel.org/r/20260310143936.720592-1-longman@redhat.com"
-      - Link: https://lkml.kernel.org/r/20260311200526.885899-1-longman@redhat.com
-- mm-new: 2 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -5,67 +5,37 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 13 commits
-  - series: 1 (9) -> 1 (10)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 5 -> 6 commits
-    - no role, reviewer: 1 -> 2 commits
+- mm-unstable: 13 -> 17 commits
+  - series: 1 (10) -> 2 (14)
+    - no role, nobody: 4 -> 7 commits
+    - no role, no role : 6 -> 6 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4)
-      - 538c719e017d "mm: move vma_mmu_pagesize() from hugetlb to vma.c (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
-    - 602a59b9080f "mm: prevent droppable mappings from being locked"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-      - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - added "Tested-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - added "Cc: <stable@vger.kernel.org>"
-      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-      - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260310155821.17869-1-anthony.yznaga@oracle.com
-- mm-new: 2 -> 9 commits
-  - series: 0 (1) -> 2 (8)
-    - no role, nobody: 1 -> 8 commits
-    - no role, no role : 1 -> 0 commits
     - reviewer, reviewer: 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "mm: improve map count checks". (3)
-      - c2f9cca30822 "mm/mremap: correct invalid map count check (0/3)"
+      - 1bbc76910ef4 "mm/mremap: correct invalid map count check (0/3)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/cover.1773249037.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/73e218c67dcd197c5331840fb011e2c17155bfb0.1773249037.git.ljs@kernel.org
-      - 65d606f0bacd "mm: abstract reading sysctl_max_map_count, and READ_ONCE() (1/3)"
+      - 2c82143570a3 "mm: abstract reading sysctl_max_map_count, and READ_ONCE() (1/3)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/0715259eb37cbdfde4f9e5db92a20ec7110a1ce5.1773249037.git.ljs@kernel.org
-      - c79b72076caf "mm/mremap: check map count under mmap write lock and abstract (2/3)"
+      - 370f86fc0d0d "mm/mremap: check map count under mmap write lock and abstract (2/3)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/18be0b48eaa8e8804eb745974ee729c3ade0c687.1773249037.git.ljs@kernel.org
     - series "mm: khugepaged cleanups and mTHP prerequisites", v3. (5)
-      - aef0c27700d3 "mm/khugepaged: rename hpage_collapse_* to collapse_* (3/5)"
+      - 543bc519a01d "mm/khugepaged: rename hpage_collapse_* to collapse_* (3/5)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260311211315.450947-5-npache@redhat.com
-    - series "mm: expand mmap_prepare functionality and usage". (15)
-      - 98b542c270bd "mm: various small mmap_prepare cleanups (0/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/cover.1773346620.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/56372fe273f775b26675a04652c1229e14680741.1773346620.git.ljs@kernel.org
-      - ad68be55c386 "mm: add vm_ops->mapped hook (4/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/0e0fe47852e6009f662b1fa42f836447b8d1283a.1773346620.git.ljs@kernel.org
-      - 4497bb545a22 "mm: add mmap_action_simple_ioremap() (6/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/461328bd1e62a2be79f4ae9a392c96f62ea35081.1773346620.git.ljs@kernel.org
-      - dc432df2e73b "mm: allow handling of stacked mmap_prepare hooks in more drivers (12/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/d10f5b604ce0ed65dc7d4e49cdf4070b1260a192.1773346620.git.ljs@kernel.org
-    - 32619dc7258f "mm: add mmap_action_map_kernel_pages[_full]()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/21d8899bb1f4db61203072fb3a56a6c98a61e23d.1773346620.git.ljs@kernel.org
+- mm-new: 9 -> 5 commits
+  - series: 2 (8) -> 1 (4)
+    - no role, nobody: 8 -> 5 commits
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

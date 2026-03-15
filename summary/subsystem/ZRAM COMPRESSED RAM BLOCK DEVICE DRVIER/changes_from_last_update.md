@@ -5,83 +5,19 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 7 commits
-  - series: 1 (5) -> 1 (6)
+- mm-unstable: 7 -> 7 commits (no change)
+  - series: 1 (6) -> 1 (6) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
-    - maintainer, no role : 0 -> 1 commits
-  - new commits
-    - series "zram: recompression cleanups and tweaks", v2. (6)
-      - 48d34054dbfb "zram: unify and harden algo/priority params handling (5/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-7-senozhatsky@chromium.org
-  - changed commits
-    - series "zram: recompression cleanups and tweaks", v2. (6)
-      - 1988051333d0 "zram: do not permit params change after init (0/6)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lkml.kernel.org/r/20260311084312.1766036-1-senozhatsky@chromium.org"
-        - added "Link: https://lkml.kernel.org/r/20260311084312.1766036-2-senozhatsky@chromium.org"
-        - added "Fixes: 4eac932103a5 ("zram: introduce algorithm_params device attribute")"
-        - added "Acked-by: Brian Geffon <bgeffon@google.com>"
-        - dropped "Link: https://lkml.kernel.org/r/20260310060407.1133800-1-senozhatsky@chromium.org"
-        - dropped "Fixes: 4eac932103a5d ("zram: introduce algorithm_params device attribute")"
-        - dropped "Cc: Brian Geffon <bgeffon@google.com>"
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-1-senozhatsky@chromium.org
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-2-senozhatsky@chromium.org
-      - 5c6a5031c915 "zram: do not autocorrect bad recompression parameters (1/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/20260311084312.1766036-3-senozhatsky@chromium.org"
-        - added "Cc: gao xu <gaoxu2@honor.com>"
-        - dropped "Link: https://lkml.kernel.org/r/bg7ivz7ajiuzdbpv3h6hbptxgmqk5fhwakw4rzk4sz3bczky5a@rde3y352n5ej"
-        - dropped "Link: https://lkml.kernel.org/r/8a5d53d19a8dbd51d7d81d153676895163e0735e.1772180459.git.senozhatsky@chromium.org"
-        - dropped "Cc: Shuah Khan <skhan@linuxfoundation.org>"
-        - dropped "Cc: Philipp Reisner <philipp.reisner@linbit.com>"
-        - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
-        - dropped "Cc: Lars Ellenberg <lars.ellenberg@linbit.com>"
-        - dropped "Cc: "Christoph Böhmwalder" <christoph.boehmwalder@linbit.com>"
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-3-senozhatsky@chromium.org
-      - 05110d1d828d "zram: drop ->num_active_comps (2/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/20260311084312.1766036-4-senozhatsky@chromium.org"
-        - added "Cc: gao xu <gaoxu2@honor.com>"
-        - dropped "Link: https://lkml.kernel.org/r/eb7cd3ca578320be9aff13e71298fc36e110af41.1772180459.git.senozhatsky@chromium.org"
-        - dropped "Cc: Shuah Khan <skhan@linuxfoundation.org>"
-        - dropped "Cc: Philipp Reisner <philipp.reisner@linbit.com>"
-        - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
-        - dropped "Cc: Lars Ellenberg <lars.ellenberg@linbit.com>"
-        - dropped "Cc: "Christoph Böhmwalder" <christoph.boehmwalder@linbit.com>"
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-4-senozhatsky@chromium.org
-      - 6756ea39bcd4 "zram: update recompression documentation (3/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/20260311084312.1766036-5-senozhatsky@chromium.org"
-        - added "Cc: gao xu <gaoxu2@honor.com>"
-        - dropped "Link: https://lkml.kernel.org/r/0d9bdbb19a4a1511e8c73d1e91227c47912a8009.1772180459.git.senozhatsky@chromium.org"
-        - dropped "Cc: Shuah Khan <skhan@linuxfoundation.org>"
-        - dropped "Cc: Philipp Reisner <philipp.reisner@linbit.com>"
-        - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
-        - dropped "Cc: Lars Ellenberg <lars.ellenberg@linbit.com>"
-        - dropped "Cc: "Christoph Böhmwalder" <christoph.boehmwalder@linbit.com>"
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-5-senozhatsky@chromium.org
-      - 54c8c302f42f "zram: remove chained recompression (4/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/20260311084312.1766036-6-senozhatsky@chromium.org"
-        - added "Cc: gao xu <gaoxu2@honor.com>"
-        - dropped "Link: https://lkml.kernel.org/r/cf100b13afb62641d7f3bc10fd77068833f56af0.1772180459.git.senozhatsky@chromium.org"
-        - dropped "Cc: Shuah Khan <skhan@linuxfoundation.org>"
-        - dropped "Cc: Philipp Reisner <philipp.reisner@linbit.com>"
-        - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
-        - dropped "Cc: Lars Ellenberg <lars.ellenberg@linbit.com>"
-        - dropped "Cc: "Christoph Böhmwalder" <christoph.boehmwalder@linbit.com>"
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-6-senozhatsky@chromium.org
-  - dropped commits
-    - series "zram: various cleanups". (5)
-      - a0cf565e3086 "zram: recompression priority param should override algo (2/5)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/831636c74ca6d72317de02d96585cc6833d082e6.1772180459.git.senozhatsky@chromium.org
-- mm-new: 1 -> 0 commits
+    - maintainer, no role : 1 -> 1 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 099c996479b8 "zram: optimize LZ4 dictionary compression performance"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/698181478c9c4b10aa21b4a847bdc706@honor.com
+      - Link: https://github.com/lz4/lz4?tab=readme-ov-file [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -5,9 +5,9 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 23 -> 24 commits
+- mm-unstable: 24 -> 24 commits (no change)
   - series: 0 (19) -> 0 (19) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
@@ -15,14 +15,8 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 18ea2379c67f "mm/vmscan: avoid false-positive -Wuninitialized warning"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260213123902.3466040-1-arnd@kernel.org
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

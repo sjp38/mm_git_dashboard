@@ -5,32 +5,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 23 -> 26 commits
+- mm-unstable: 26 -> 26 commits (no change)
   - series: 2 (21) -> 2 (21) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 4 -> 7 commits
+    - no role, maintainer: 7 -> 7 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 12 -> 12 commits (no change)
-  - new commits
-    - b72f72fab2ac "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v4"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260311022241.177801-1-hui.zhu@linux.dev
-    - 554de7097c0e "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v5"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260312023024.903143-1-hui.zhu@linux.dev
-  - changed commits
-    - b120d4954bbc "mm/swap: strengthen locking assertions and invariants in cluster allocation"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: Chris Li <chrisl@kernel.org>"
-      - dropped "Cc: Chris Li <chrisl@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260310015657.42395-1-hui.zhu@linux.dev
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

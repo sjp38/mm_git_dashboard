@@ -5,40 +5,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 15 -> 18 commits
-  - series: 1 (13) -> 2 (16)
-    - no role, nobody: 4 -> 5 commits
-    - no role, no role : 3 -> 5 commits
+- mm-unstable: 18 -> 19 commits
+  - series: 2 (16) -> 2 (16) (no change)
+    - no role, nobody: 5 -> 6 commits
+    - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
   - changed commits
-    - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4)
-      - 65e7a380446e "mm: move vma_kernel_pagesize() from hugetlb to mm.h (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-1-david@kernel.org
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-2-david@kernel.org
-      - 538c719e017d "mm: move vma_mmu_pagesize() from hugetlb to vma.c (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
-    - series "selftests/mm: fix failures and robustness improvements", v2. (13)
-      - 0406906bd699 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes (11/13)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com"
-        - dropped "Link: https://lkml.kernel.org/r/97f1fc6020b1d63d1d73de6edd1525d91e4f7123.1773134177.git.sayalip@linux.ibm.com"
-        - dropped "Cc: Muhammad Usama Anjum <usama.anjum@collabora.com>"
-        - Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com
-- mm-new: 4 -> 1 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 2 -> 0 commits
-  - changed commits
-    - c2e9220f964b "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+    - 9be4edabd765 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
       - Authored by no role player, reviewed by nobody
-      - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

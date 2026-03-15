@@ -1,13 +1,8 @@
 - baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 0 commits
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - 657cdcd731ab "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/ff48283b-be21-7f9a-d616-e303a4a1ebe6@redhat.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 5 -> 5 commits (no change)

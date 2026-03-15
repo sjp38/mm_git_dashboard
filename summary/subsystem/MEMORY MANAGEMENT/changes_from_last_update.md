@@ -2,265 +2,122 @@
 - mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-- mm-hotfixes-unstable: 1 -> 0 commits
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - 657cdcd731ab "mm: allow __GFP_RETRY_MAYFAIL in vmalloc"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/ff48283b-be21-7f9a-d616-e303a4a1ebe6@redhat.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 191 -> 211 commits
-  - series: 24 (144) -> 27 (156)
-    - no role, nobody: 24 -> 29 commits
-    - no role, no role : 54 -> 56 commits
-    - no role, reviewer: 22 -> 27 commits
-    - no role, maintainer: 38 -> 41 commits
+- mm-unstable: 211 -> 226 commits
+  - series: 27 (156) -> 30 (169)
+    - no role, nobody: 29 -> 33 commits
+    - no role, no role : 56 -> 57 commits
+    - no role, reviewer: 27 -> 27 commits (no change)
+    - no role, maintainer: 41 -> 41 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - reviewer, reviewer: 2 -> 6 commits
     - reviewer, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 23 -> 28 commits
+    - maintainer, nobody: 28 -> 34 commits
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 17 -> 17 commits (no change)
   - new commits
-    - series "mm: cleanups around unmapping / zapping". (16)
-      - d499e4af4d4d "mm-memory-inline-unmap_page_range-into-__zap_vma_range-fix (12/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/f7732d1c-0e85-4a14-948a-912c417018b5@kernel.org
-    - series " mm, kvm: allow uffd support in guest_memfd", v2. (15)
-      - 981034b7a625 "userfaultfd: allow registration of WP_ASYNC for any VMA (7/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/abG5HFV8yoEHOFkh@kernel.org
-    - b72f72fab2ac "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v4"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260311022241.177801-1-hui.zhu@linux.dev
-    - 554de7097c0e "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v5"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260312023024.903143-1-hui.zhu@linux.dev
+    - series "mm/damon: support addr_unit on default monitoring targets for modules". (5)
+      - 046bd9023a96 "mm/damon/core: fix wrong damon_set_regions() argument (3/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260314001854.79623-1-sj@kernel.org
   - changed commits
-    - series "kho: add support for deferred struct page init", v6. (2)
-      - 7fa3fb1ee3b8 "kho: fix deferred init of kho scratch (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/20260311125539.4123672-2-mclapinski@google.com"
-        - added "Link: https://lkml.kernel.org/r/20260311125539.4123672-1-mclapinski@google.com"
-        - added "Cc: Samiullah Khawaja <skhawaja@google.com>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260225153955.1006649-2-mclapinski@google.com"
-        - dropped "Link: https://lkml.kernel.org/r/20260225153955.1006649-1-mclapinski@google.com"
-        - dropped "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260311125539.4123672-1-mclapinski@google.com
-        - Link: https://lkml.kernel.org/r/20260311125539.4123672-2-mclapinski@google.com
-    - 3d74edc58a49 "mm/migrate_device: document folio_get requirement before frozen PMD split"
+    - ac04c982b784 "mm: migrate: requeue destination folio on deferred split queue"
       - Authored by no role player, reviewed by a reviewer
       - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
-    - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4)
-      - 65e7a380446e "mm: move vma_kernel_pagesize() from hugetlb to mm.h (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-1-david@kernel.org
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-2-david@kernel.org
-      - 538c719e017d "mm: move vma_mmu_pagesize() from hugetlb to vma.c (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
-    - 18ea2379c67f "mm/vmscan: avoid false-positive -Wuninitialized warning"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260213123902.3466040-1-arnd@kernel.org
-    - 602a59b9080f "mm: prevent droppable mappings from being locked"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-      - added "Tested-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - added "Cc: <stable@vger.kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-      - Link: https://lkml.kernel.org/r/20260310155821.17869-1-anthony.yznaga@oracle.com
-    - b120d4954bbc "mm/swap: strengthen locking assertions and invariants in cluster allocation"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: Chris Li <chrisl@kernel.org>"
-      - dropped "Cc: Chris Li <chrisl@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260310015657.42395-1-hui.zhu@linux.dev
-    - series "mm/damon: support multiple goal-based quota tuning algorithms". (11)
-      - bbb1df061bb7 "mm/damon/core: introduce damos_quota_goal_tuner (0/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260310010529.91162-2-sj@kernel.org
-        - Link: https://lore.kernel.org/CALa+Y17__d=ZsM1yX+MXx0ozVdsXnFqF4p0g+kATEitrWyZFfg@mail.gmail.com [1]
-        - Link: https://lore.kernel.org/20260204022537.814-1-yunjeong.mun@sk.com [2]
-      - ff28b3bb65c3 "mm/damon/core: allow quota goals set zero effective size quota (1/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260310010529.91162-3-sj@kernel.org
-      - 6b6d05c42456 "mm/damon/core: introduce DAMOS_QUOTA_GOAL_TUNER_TEMPORAL (2/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260310010529.91162-4-sj@kernel.org
-      - 9f34a49968f6 "mm/damon/sysfs-schemes: implement quotas->goal_tuner file (3/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260310010529.91162-5-sj@kernel.org
-      - 7bef04fc654e "mm/damon/tests/core-kunit: test goal_tuner commit (7/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260310010529.91162-9-sj@kernel.org
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v6. (4)
-      - fbde36cc8d40 "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-1-421e30d881e0@debian.org"
-        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-0-421e30d881e0@debian.org"
-        - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
-        - added "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-1-686099175bf6@debian.org"
-        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-0-686099175bf6@debian.org"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Cc: Breno Leitao <leitao@debian.org>"
-        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-0-421e30d881e0@debian.org
-        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-1-421e30d881e0@debian.org
-      - e4acf76be125 "mm: huge_memory: refactor anon_enabled_store() with change_anon_orders() (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-2-421e30d881e0@debian.org"
-        - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
-        - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
-        - added "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-2-686099175bf6@debian.org"
-        - dropped "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-2-421e30d881e0@debian.org
-      - f3404ae99da2 "mm: huge_memory: refactor enabled_store() with change_enabled() (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-3-421e30d881e0@debian.org"
-        - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-3-686099175bf6@debian.org"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-3-421e30d881e0@debian.org
-      - 3b86cd7c76c7 "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-4-421e30d881e0@debian.org"
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
-        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-4-686099175bf6@debian.org"
-        - dropped "Acked-by: Zi Yan <ziy@nvidia.com"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-4-421e30d881e0@debian.org
-    - a0c29517462e "mm: optimize the implementation of WARN_ON_ONCE_GFP()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260309153811.40958-1-qq570070308@gmail.com
-    - 4832f6a9ae9a "mm: migrate: requeue destination folio on deferred split queue"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev"
-      - added "Acked-by: SeongJae Park <sj@kernel.org>"
-      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
-      - dropped "Link: https://lkml.kernel.org/r/20260310105419.3256755-1-usama.arif@linux.dev"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Cc: Wei Yang <richard.weiyang@gmail.com>"
       - Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev
-- mm-new: 18 -> 20 commits
-  - series: 3 (11) -> 4 (18)
-    - no role, nobody: 4 -> 9 commits
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 6 -> 0 commits
-    - reviewer, no role : 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 3 commits
-    - maintainer, nobody: 6 -> 6 commits (no change)
-  - new commits
+    - 9be4edabd765 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
     - series "mm: improve map count checks". (3)
-      - c2f9cca30822 "mm/mremap: correct invalid map count check (0/3)"
+      - 1bbc76910ef4 "mm/mremap: correct invalid map count check (0/3)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/cover.1773249037.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/73e218c67dcd197c5331840fb011e2c17155bfb0.1773249037.git.ljs@kernel.org
-      - 65d606f0bacd "mm: abstract reading sysctl_max_map_count, and READ_ONCE() (1/3)"
+      - 2c82143570a3 "mm: abstract reading sysctl_max_map_count, and READ_ONCE() (1/3)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/0715259eb37cbdfde4f9e5db92a20ec7110a1ce5.1773249037.git.ljs@kernel.org
-      - c79b72076caf "mm/mremap: check map count under mmap write lock and abstract (2/3)"
+      - 370f86fc0d0d "mm/mremap: check map count under mmap write lock and abstract (2/3)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/18be0b48eaa8e8804eb745974ee729c3ade0c687.1773249037.git.ljs@kernel.org
     - series "mm/damon: support addr_unit on default monitoring targets for modules". (5)
-      - f062f8650608 "mm/damon/core: fix wrong end address assignment on walk_system_ram() (0/5)"
+      - 342c26d008de "mm/damon/core: fix wrong end address assignment on walk_system_ram() (0/5)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260311052927.93921-1-sj@kernel.org
         - Link: https://lkml.kernel.org/r/20260311052927.93921-2-sj@kernel.org
         - Link: https://lore.kernel.org/20260131015643.79158-1-sj@kernel.org [1]
-      - df434afda1af "mm/damon/core: support addr_unit on damon_find_biggest_system_ram() (1/5)"
+      - 16f853d205f0 "mm/damon/core: support addr_unit on damon_find_biggest_system_ram() (1/5)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260311052927.93921-3-sj@kernel.org
-      - 02fcd3582dae "mm/damon/core: receive addr_unit on damon_set_region_biggest_system_ram_default() (2/5)"
+      - 74e8f130e609 "mm/damon/core: receive addr_unit on damon_set_region_biggest_system_ram_default() (2/5)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260311052927.93921-4-sj@kernel.org
-      - d41e57cd0ccd "mm/damon/reclaim: respect addr_unit on default monitoring region setup (3/5)"
+      - 30558e76ce1a "mm/damon/reclaim: respect addr_unit on default monitoring region setup (4/5)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260311052927.93921-5-sj@kernel.org
-      - 1f4fec396026 "mm/damon/lru_sort: respect addr_unit on default monitoring region setup (4/5)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311052927.93921-6-sj@kernel.org
+    - b448c4d27664 "mm/damon/lru_sort: respect addr_unit on default monitoring region setup"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260311052927.93921-6-sj@kernel.org
     - series "mm: khugepaged cleanups and mTHP prerequisites", v3. (5)
-      - 4e73f065ca28 "mm: consolidate anonymous folio PTE mapping into helpers (0/5)"
+      - 0b750e1097cc "mm: consolidate anonymous folio PTE mapping into helpers (0/5)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260311211315.450947-1-npache@redhat.com
         - Link: https://lkml.kernel.org/r/20260311211315.450947-2-npache@redhat.com
         - Link: https://lore.kernel.org/all/20260122192841.128719-1-npache@redhat.com/ [1]
         - Link: https://lore.kernel.org/all/7334b702-f6a0-4ccf-8ac6-8426a90d1846@kernel.org/ [2]
         - Link: https://lore.kernel.org/all/25723c0f-c702-44ad-93e9-1056313680cd@kernel.org/ [3]
         - Link: https://lore.kernel.org/all/81ff9caa-50f2-4951-8d82-2c8dcdf3db91@kernel.org/ [4]
-      - a570aaea223c "mm: introduce is_pmd_order helper (1/5)"
+      - 7384bb20c49a "mm: introduce is_pmd_order helper (1/5)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
-      - 389e729383d7 "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1 (2/5)"
+      - 74b2645bb45a "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1 (2/5)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260311211315.450947-4-npache@redhat.com
-      - aef0c27700d3 "mm/khugepaged: rename hpage_collapse_* to collapse_* (3/5)"
+      - 543bc519a01d "mm/khugepaged: rename hpage_collapse_* to collapse_* (3/5)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260311211315.450947-5-npache@redhat.com
-      - 263896b7d94c "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd() (4/5)"
-        - Authored by a reviewer, reviewed by no role player
+      - 3f4f1faa3354 "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd() (4/5)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
         - Link: https://lkml.kernel.org/r/20260311211315.450947-6-npache@redhat.com
-    - series "mm: expand mmap_prepare functionality and usage". (15)
-      - 98b542c270bd "mm: various small mmap_prepare cleanups (0/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/cover.1773346620.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/56372fe273f775b26675a04652c1229e14680741.1773346620.git.ljs@kernel.org
-      - 0c128c16d8ca "mm-various-small-mmap_prepare-cleanups-fix (1/15)"
-        - Authored by a maintainer, reviewed by nobody
-      - ad68be55c386 "mm: add vm_ops->mapped hook (4/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/0e0fe47852e6009f662b1fa42f836447b8d1283a.1773346620.git.ljs@kernel.org
-      - 4497bb545a22 "mm: add mmap_action_simple_ioremap() (6/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/461328bd1e62a2be79f4ae9a392c96f62ea35081.1773346620.git.ljs@kernel.org
-      - dc432df2e73b "mm: allow handling of stacked mmap_prepare hooks in more drivers (12/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/d10f5b604ce0ed65dc7d4e49cdf4070b1260a192.1773346620.git.ljs@kernel.org
-    - 32619dc7258f "mm: add mmap_action_map_kernel_pages[_full]()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/21d8899bb1f4db61203072fb3a56a6c98a61e23d.1773346620.git.ljs@kernel.org
-  - changed commits
-    - c2e9220f964b "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
-      - Authored by no role player, reviewed by nobody
-      - dropped "Cc: Mike Kravetz <mike.kravetz@oracle.com>"
-      - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
-  - dropped commits
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v5. (4)
-      - 3bd6c195df3b "mm-huge_memory-refactor-enabled_store-with-change_enabled-checkpatch-fixes (3/4)"
-        - Authored by a maintainer, reviewed by nobody
+- mm-new: 20 -> 8 commits
+  - series: 4 (18) -> 2 (7)
+    - no role, nobody: 9 -> 5 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, no role : 1 -> 0 commits
+    - reviewer, reviewer: 3 -> 0 commits
+    - maintainer, nobody: 6 -> 1 commits
+  - new commits
+    - series "zswap pool per-CPU acomp_ctx simplifications". (2)
+      - af82022e498d "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260314051632.17931-1-kanchanapsridhar2026@gmail.com
+        - Link: https://lkml.kernel.org/r/20260314051632.17931-2-kanchanapsridhar2026@gmail.com
+        - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677 [1]
+      - c5a81ff6071b "mm: zswap: consistently use IS_ERR_OR_NULL() to check acomp_ctx resources (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260314051632.17931-3-kanchanapsridhar2026@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

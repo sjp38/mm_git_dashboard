@@ -5,23 +5,10 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 4 commits
-  - series: 1 (2) -> 2 (3)
-    - no role, nobody: 1 -> 2 commits
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 2 (3) -> 2 (3) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - series "kho: add support for deferred struct page init", v6. (2)
-      - 7fa3fb1ee3b8 "kho: fix deferred init of kho scratch (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/20260311125539.4123672-2-mclapinski@google.com"
-        - added "Link: https://lkml.kernel.org/r/20260311125539.4123672-1-mclapinski@google.com"
-        - added "Cc: Samiullah Khawaja <skhawaja@google.com>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260225153955.1006649-1-mclapinski@google.com"
-        - dropped "Link: https://lkml.kernel.org/r/20260225153955.1006649-2-mclapinski@google.com"
-        - dropped "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260311125539.4123672-1-mclapinski@google.com
-        - Link: https://lkml.kernel.org/r/20260311125539.4123672-2-mclapinski@google.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

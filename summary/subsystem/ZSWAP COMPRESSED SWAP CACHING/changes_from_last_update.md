@@ -8,8 +8,20 @@
 - mm-unstable: 4 -> 4 commits (no change)
   - series: 0 (3) -> 0 (3) (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "zswap pool per-CPU acomp_ctx simplifications". (2)
+      - af82022e498d "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260314051632.17931-1-kanchanapsridhar2026@gmail.com
+        - Link: https://lkml.kernel.org/r/20260314051632.17931-2-kanchanapsridhar2026@gmail.com
+        - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677 [1]
+      - c5a81ff6071b "mm: zswap: consistently use IS_ERR_OR_NULL() to check acomp_ctx resources (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260314051632.17931-3-kanchanapsridhar2026@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

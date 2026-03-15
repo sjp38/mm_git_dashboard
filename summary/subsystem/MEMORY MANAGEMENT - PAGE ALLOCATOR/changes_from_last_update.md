@@ -5,35 +5,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 17 -> 18 commits
-  - series: 2 (13) -> 2 (14)
+- mm-unstable: 18 -> 19 commits
+  - series: 2 (14) -> 2 (15)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 5 -> 6 commits
+    - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
+    - reviewer, reviewer: 0 -> 1 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
   - changed commits
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v6. (4)
-      - 3b86cd7c76c7 "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-4-421e30d881e0@debian.org"
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
-        - dropped "Link: https://lkml.kernel.org/r/20260310-thp_logs-v5-4-686099175bf6@debian.org"
-        - dropped "Acked-by: Zi Yan <ziy@nvidia.com"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-4-421e30d881e0@debian.org
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 1 -> 0 commits
-    - reviewer, reviewer: 0 -> 1 commits
-  - new commits
     - series "mm: khugepaged cleanups and mTHP prerequisites", v3. (5)
-      - a570aaea223c "mm: introduce is_pmd_order helper (1/5)"
+      - 7384bb20c49a "mm: introduce is_pmd_order helper (1/5)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

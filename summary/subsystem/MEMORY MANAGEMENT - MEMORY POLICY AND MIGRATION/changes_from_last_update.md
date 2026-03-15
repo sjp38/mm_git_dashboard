@@ -5,35 +5,25 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 4 commits
-  - series: 0 (2) -> 0 (2) (no change)
+- mm-unstable: 4 -> 5 commits
+  - series: 0 (2) -> 0 (3)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 3 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - reviewer, reviewer: 0 -> 1 commits
   - changed commits
-    - 3d74edc58a49 "mm/migrate_device: document folio_get requirement before frozen PMD split"
+    - ac04c982b784 "mm: migrate: requeue destination folio on deferred split queue"
       - Authored by no role player, reviewed by a reviewer
       - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
-    - 4832f6a9ae9a "mm: migrate: requeue destination folio on deferred split queue"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev"
-      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Acked-by: SeongJae Park <sj@kernel.org>"
-      - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
-      - dropped "Link: https://lkml.kernel.org/r/20260310105419.3256755-1-usama.arif@linux.dev"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Cc: Wei Yang <richard.weiyang@gmail.com>"
       - Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 1 -> 0 commits
-    - reviewer, reviewer: 0 -> 1 commits
-  - new commits
     - series "mm: khugepaged cleanups and mTHP prerequisites", v3. (5)
-      - a570aaea223c "mm: introduce is_pmd_order helper (1/5)"
+      - 7384bb20c49a "mm: introduce is_pmd_order helper (1/5)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
