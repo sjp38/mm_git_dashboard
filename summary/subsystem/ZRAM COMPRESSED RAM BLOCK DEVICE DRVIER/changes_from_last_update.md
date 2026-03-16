@@ -5,19 +5,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 7 commits (no change)
+- mm-unstable: 7 -> 9 commits
   - series: 1 (6) -> 1 (6) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
     - maintainer, nobody: 5 -> 5 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - maintainer, no role : 1 -> 2 commits
   - new commits
-    - 099c996479b8 "zram: optimize LZ4 dictionary compression performance"
+    - baa6ff8ea1ff "zram: propagate read_from_bdev_async() errors"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260316015354.114465-1-senozhatsky@chromium.org
+  - changed commits
+    - 97ce5ab4b1cc "zram: optimize LZ4 dictionary compression performance"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/698181478c9c4b10aa21b4a847bdc706@honor.com
       - Link: https://github.com/lz4/lz4?tab=readme-ov-file [1]
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

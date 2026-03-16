@@ -5,24 +5,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 18 -> 19 commits
-  - series: 2 (14) -> 2 (15)
+- mm-unstable: 19 -> 19 commits (no change)
+  - series: 2 (15) -> 2 (15) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, reviewer: 0 -> 1 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "mm: khugepaged cleanups and mTHP prerequisites", v3. (5)
-      - 7384bb20c49a "mm: introduce is_pmd_order helper (1/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - reviewer, reviewer: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

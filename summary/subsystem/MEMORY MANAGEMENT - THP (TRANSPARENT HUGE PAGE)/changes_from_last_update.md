@@ -6,37 +6,33 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 18 commits
-  - series: 2 (11) -> 2 (15)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 18 -> 19 commits
+  - series: 2 (15) -> 2 (15) (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 5 commits
+    - reviewer, reviewer: 5 -> 5 commits (no change)
+  - new commits
+    - f76ac094ce01 "mm-khugepaged-skip-lazy-free-folios-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/i4uowkt4h2ev47obm5h2vtd4zbk6fyw5g364up7kkjn2vmcikq@auepvqethj5r
   - changed commits
     - series "mm: khugepaged cleanups and mTHP prerequisites", v3. (5)
-      - 7384bb20c49a "mm: introduce is_pmd_order helper (1/5)"
+      - bf2124710a6b "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1 (2/5)"
         - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
-      - 74b2645bb45a "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1 (2/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
         - Link: https://lkml.kernel.org/r/20260311211315.450947-4-npache@redhat.com
-      - 543bc519a01d "mm/khugepaged: rename hpage_collapse_* to collapse_* (3/5)"
+      - 57320f3976b3 "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd() (4/5)"
         - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260311211315.450947-5-npache@redhat.com
-      - 3f4f1faa3354 "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd() (4/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
         - Link: https://lkml.kernel.org/r/20260311211315.450947-6-npache@redhat.com
-- mm-new: 4 -> 0 commits
-  - series: 0 (4) -> 0 (0)
-    - reviewer, no role : 1 -> 0 commits
-    - reviewer, reviewer: 3 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -8,70 +8,73 @@
       - Link: https://lkml.kernel.org/r/a1e787dd-b911-474d-8570-f37685357d86@lucifer.local
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 18 total, 2 (15) series, 3 non-series commits
+- mm-unstable: 19 total, 2 (15) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 2 commits
     - no role, reviewer: 9 commits
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 5 commits
   - full commits list
-      - 28fbf423398d "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - d3a930f6b204 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-    - 43932701f821 "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
+    - 4ab77960dcef "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260207081613.588598-6-vernon2gm@gmail.com
     - series "Improve khugepaged scan logic", v8. (4 commits)
-      - 3c5d23333d2a "mm: khugepaged: add trace_mm_khugepaged_scan event" (0/4)
+      - a65560fd39ac "mm: khugepaged: add trace_mm_khugepaged_scan event" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-2-vernon2gm@gmail.com
-      - cc5fe25e7bb8 "mm: khugepaged: refine scan progress number" (1/4)
+      - 18cd2f7fcaf5 "mm: khugepaged: refine scan progress number" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-3-vernon2gm@gmail.com
-      - 43a9717b1fc2 "mm-khugepaged-refine-scan-progress-number-fix" (2/4)
+      - 7228f45761b5 "mm-khugepaged-refine-scan-progress-number-fix" (2/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/hbftflvdmnranprul4zkq3d2iymqm7ta2a7fwiphggsmt36gt7@bihvv5jg2ko5
         - Link: https://lore.kernel.org/linux-mm/zdvzmoop5xswqcyiwmvvrdfianm4ccs3gryfecwbm4bhuh7ebo@7an4huwgbuwo [1]
-    - 19d27c606778 "mm: khugepaged: skip lazy-free folios"
+    - 93e2fe5b7b69 "mm: khugepaged: skip lazy-free folios"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260221093918.1456187-5-vernon2gm@gmail.com
-    - 1b1376c5c6c4 "khugepaged: remove redundant index check for pmd-folios"
+    - f76ac094ce01 "mm-khugepaged-skip-lazy-free-folios-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/i4uowkt4h2ev47obm5h2vtd4zbk6fyw5g364up7kkjn2vmcikq@auepvqethj5r
+    - 7f2232756c19 "khugepaged: remove redundant index check for pmd-folios"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260227143501.1488110-1-dev.jain@arm.com
-      - 06d781d4513a "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 52907ecd7f17 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - bc70045e283f "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
+      - b335d00a778f "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
-      - bf6af9588d31 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (3/13)
+      - 055aa9210c5b "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (3/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/94c18dd26cf88f10b4b496cb3de08d81439a8909.1773305677.git.sayalip@linux.ibm.com
     - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v6. (4 commits)
-      - 30e6ea1659d0 "mm: khugepaged: export set_recommended_min_free_kbytes()" (0/4)
+      - 2d5dd665949c "mm: khugepaged: export set_recommended_min_free_kbytes()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-0-421e30d881e0@debian.org
         - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-1-421e30d881e0@debian.org
-      - 522dfb4ba71f "mm: huge_memory: refactor anon_enabled_store() with change_anon_orders()" (1/4)
+      - b0a67e69cee6 "mm: huge_memory: refactor anon_enabled_store() with change_anon_orders()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-2-421e30d881e0@debian.org
-      - b4c15f12bf6f "mm: huge_memory: refactor enabled_store() with change_enabled()" (2/4)
+      - 62660284f439 "mm: huge_memory: refactor enabled_store() with change_enabled()" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-3-421e30d881e0@debian.org
-      - 1df288fc7869 "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
+      - d6e2f2aaf870 "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-4-421e30d881e0@debian.org
-      - 7384bb20c49a "mm: introduce is_pmd_order helper" (1/5)
+      - 16534bd87636 "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
-      - 74b2645bb45a "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1" (2/5)
+      - bf2124710a6b "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1" (2/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-4-npache@redhat.com
-      - 543bc519a01d "mm/khugepaged: rename hpage_collapse_* to collapse_*" (3/5)
+      - 6eae8a4243ab "mm/khugepaged: rename hpage_collapse_* to collapse_*" (3/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-5-npache@redhat.com
-      - 3f4f1faa3354 "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd()" (4/5)
+      - 57320f3976b3 "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd()" (4/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-6-npache@redhat.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

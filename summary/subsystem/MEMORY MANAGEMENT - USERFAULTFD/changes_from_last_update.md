@@ -5,20 +5,28 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 15 commits
-  - series: 1 (14) -> 1 (14) (no change)
-    - no role, nobody: 10 -> 11 commits
+- mm-unstable: 15 -> 17 commits
+  - series: 1 (14) -> 1 (16)
+    - no role, nobody: 11 -> 13 commits
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - 9be4edabd765 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
-- mm-new: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
+  - new commits
+    - series "mm, kvm: allow uffd support in guest_memfd", v2. (15)
+      - 9d9fb0ee84b9 "userfaultfd-introduce-struct-mfill_state-fix (2/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
+      - 6bb292005568 "userfaultfd: fix lock leak in mfill_get_vma() (6/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v2. (23)
+      - fe94e86be734 "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t (21/23)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/0737c1b5e3b3688ec3839058b95203c9e7622de9.1773665966.git.ljs@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

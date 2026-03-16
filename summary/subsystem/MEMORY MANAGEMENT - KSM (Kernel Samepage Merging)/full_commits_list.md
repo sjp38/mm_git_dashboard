@@ -7,13 +7,19 @@
     - no role, no role : 2 commits
   - full commits list
     - series "KSM: Optimizations for rmap_walk_ksm", v3. (2 commits)
-      - 95e6a10ae3f1 "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
+      - d5a4688864f0 "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212192820223O_r2NQzSEPG_C56cs-z4l@zte.com.cn
         - Link: https://lkml.kernel.org/r/20260212192932941MSsJEAyoRW4YdLBN7_myn@zte.com.cn
-      - 99a960c5c74b "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
+      - 89f810ba822e "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+      - e5d2df776788 "mm: convert do_brk_flags() to use vma_flags_t" (16/23)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/063af0422d99bee0195589aa63f8f44edaf409fa.1773665966.git.ljs@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

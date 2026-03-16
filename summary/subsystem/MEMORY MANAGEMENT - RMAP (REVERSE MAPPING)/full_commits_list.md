@@ -17,16 +17,16 @@
     - no role, no role : 2 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 4e41bbf8a15d "mm: add folio_test_lazyfree helper" (3/4)
+      - 2eea2a6dea0c "mm: add folio_test_lazyfree helper" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-4-vernon2gm@gmail.com
-    - ee9ea87307fd "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
+    - 2aba8b2539d9 "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
-      - 396fafe142c6 "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced()" (2/6)
+      - 126261eafdb7 "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/64d6fb2a33f7101e1d4aca2c9052e0758b76d492.1772778858.git.baolin.wang@linux.alibaba.com
-      - 45814501b0d3 "mm: support batched checking of the young flag for MGLRU" (4/6)
+      - 3d3851870e6a "mm: support batched checking of the young flag for MGLRU" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

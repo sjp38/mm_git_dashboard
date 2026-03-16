@@ -5,11 +5,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 7 commits (no change)
-  - series: 2 (7) -> 2 (7) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 7 -> 6 commits
+  - series: 2 (7) -> 1 (6)
+    - no role, nobody: 1 -> 0 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
+  - dropped commits
+    - series "kho: add support for deferred struct page init", v6. (2)
+      - 4a78467ffb53 "kho: fix deferred init of kho scratch (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260311125539.4123672-1-mclapinski@google.com
+        - Link: https://lkml.kernel.org/r/20260311125539.4123672-2-mclapinski@google.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

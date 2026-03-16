@@ -5,20 +5,53 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 18 -> 19 commits
+- mm-unstable: 19 -> 20 commits
   - series: 2 (16) -> 2 (16) (no change)
-    - no role, nobody: 5 -> 6 commits
-    - no role, no role : 5 -> 5 commits (no change)
+    - no role, nobody: 6 -> 5 commits
+    - no role, no role : 5 -> 6 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 7 -> 7 commits (no change)
+    - no role, maintainer: 7 -> 8 commits
   - changed commits
-    - 9be4edabd765 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
-- mm-new: 1 -> 0 commits
+    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
+      - 97e0029b046f "mm/hugetlb: defer vmemmap population for bootmem hugepages (8/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (arm) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-10-kas@kernel.org
+      - 126fd65ef8e2 "mm/hugetlb: remove fake head pages (11/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (arm) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-13-kas@kernel.org
+    - 253e3d3680a7 "hugetlb: update vmemmap_dedup.rst"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org"
+      - dropped "Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org"
+      - dropped "Cc: Albert Ou <aou@eecs.berkeley.edu>"
+      - dropped "Cc: Alexandre Ghiti <alex@ghiti.fr>"
+      - dropped "Cc: Baoquan He <bhe@redhat.com>"
+      - dropped "Cc: Christoph Lameter <cl@gentwo.org>"
+      - dropped "Cc: David Rientjes <rientjes@google.com>"
+      - dropped "Cc: Frank van der Linden <fvdl@google.com>"
+      - dropped "Cc: Harry Yoo <harry.yoo@oracle.com>"
+      - dropped "Cc: Huacai Chen <chenhuacai@kernel.org>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
+      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+      - dropped "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
+      - dropped "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
+      - dropped "Cc: Paul Walmsley <paul.walmsley@sifive.com>"
+      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+      - dropped "Cc: Usama Arif <usamaarif642@gmail.com>"
+      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+      - dropped "Cc: WANG Xuerui <kernel@xen0n.name>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,23 +7,29 @@
     - no role, no role : 5 commits
   - full commits list
     - series "mm: cleanups around unmapping / zapping". (16 commits)
-      - 6e71d4d416e6 "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
+      - 5731f379478c "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260227200848.114019-2-david@kernel.org
         - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
-      - 3a3ecb6db859 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
+      - f81c3a86a6f5 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
-      - 19d61d75e966 "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
+      - 30a47f1f3363 "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-10-david@kernel.org
-      - 33c5b8b865f0 "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (14/16)
+      - f3eb7b25397f "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (14/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-14-david@kernel.org
-      - 1f40a7b60535 "mm: rename zap_page_range_single() to zap_vma_range()" (15/16)
+      - 581d1f45ff7a "mm: rename zap_page_range_single() to zap_vma_range()" (15/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+      - fe94e86be734 "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t" (21/23)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/0737c1b5e3b3688ec3839058b95203c9e7622de9.1773665966.git.ljs@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
