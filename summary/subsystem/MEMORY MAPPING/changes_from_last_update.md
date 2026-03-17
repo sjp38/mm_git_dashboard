@@ -12,125 +12,24 @@
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 5 -> 28 commits
-  - series: 1 (4) -> 2 (28)
-    - no role, nobody: 5 -> 28 commits
-  - new commits
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v2. (23)
-      - d8f5cbf4ff1c "mm/vma: add vma_flags_empty(), vma_flags_and(), vma_flags_diff_pair() (0/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/cover.1773665966.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/ede9b0f8a2e2dc72e7fbc1a0ddbeb513364c28a2.1773665966.git.ljs@kernel.org
-      - f6058ebddb5f "tools/testing/vma: add unit tests flag empty, diff_pair, and[_mask] (1/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/1d789fcc7dba9f93ec844aa87a48b13451dba211.1773665966.git.ljs@kernel.org
-      - 843cffc56bc1 "mm/vma: add further vma_flags_t unions (2/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/a37030f2eefc90147e84f9273e325cc289cb9e1d.1773665966.git.ljs@kernel.org
-      - 04a564a9fcaf "tools/testing/vma: convert bulk of test code to vma_flags_t (3/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/54d2f092b55e29e53916862faa191854b441d8e9.1773665966.git.ljs@kernel.org
-      - 775a271cc18e "mm/vma: use new VMA flags for sticky flags logic (4/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/005cac3e37830a33f473edc780a5dae5e00a3845.1773665966.git.ljs@kernel.org
-      - c241e0acfb45 "tools/testing/vma: fix VMA flag tests (5/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/42b963d3229ed39a758f1bea218fd274a7cd3811.1773665966.git.ljs@kernel.org
-      - 9e78b0d06d14 "mm/vma: add append_vma_flags() helper (6/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/756b9c46ee23e00c2fe64d453ff61dd3b98aa3fc.1773665966.git.ljs@kernel.org
-      - b53a58917d5c "tools/testing/vma: add simple test for append_vma_flags() (7/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/8253a553f354e6ef9b1ddea4831c0033e64eb796.1773665966.git.ljs@kernel.org
-      - aa2d88714067 "mm: unexport vm_brk_flags() and eliminate vm_flags parameter (8/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/ba7d1eae0208551c05f4a2015133b926d6650484.1773665966.git.ljs@kernel.org
-      - 1a9fe8cdb2b1 "mm/vma: introduce vma_flags_same[_mask/_pair]() (9/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/393378bdcbb49141304d5eff7b8dad2966b73c30.1773665966.git.ljs@kernel.org
-      - 08fedd3b220e "mm/vma: introduce [vma_flags,legacy]_to_[legacy,vma_flags]() helpers (10/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/19cfb4297cb691dc16c75e9e6a24f6564743407e.1773665966.git.ljs@kernel.org
-      - 9af69c5a506a "tools/testing/vma: test that legacy flag helpers work correctly (11/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/4f1956b7e1e15293f75bffb5eda3d967a1da6f5d.1773665966.git.ljs@kernel.org
-      - 078dd9b10bdd "mm/vma: introduce vma_test[_any[_mask]](), and make inlining consistent (12/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/8aeaf08d153c3c3196855fdc9ddbacccf673ef82.1773665966.git.ljs@kernel.org
-      - 6c2dbe264eaf "tools/testing/vma: update VMA flag tests to test vma_test[_any_mask]() (13/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/ecd6e0134c4495310d6914b8177e99886e17d22f.1773665966.git.ljs@kernel.org
-      - 7e013dc02a23 "mm: introduce vma_flags_count() and vma[_flags]_test_single_mask() (14/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/96e7481026067766bfd7f2d4e395dd89ce845ab2.1773665966.git.ljs@kernel.org
-      - 7bcb1cf314ea "tools/testing/vma: test vma_flags_count,vma[_flags]_test_single_mask (15/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/140b9b77da1ef463f969cbeb2b5fb25627301cd6.1773665966.git.ljs@kernel.org
-      - e5d2df776788 "mm: convert do_brk_flags() to use vma_flags_t (16/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/063af0422d99bee0195589aa63f8f44edaf409fa.1773665966.git.ljs@kernel.org
-      - 2c488434f1be "mm/vma: introduce vma_clear_flags[_mask]() (18/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/397c67b154a4868e19db9be1012e976148901de2.1773665966.git.ljs@kernel.org
-      - c5c6ff19ccce "tools/testing/vma: update VMA tests to test vma_clear_flags[_mask]() (19/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/65bc0bbd98698f4dc68c046e6f867274b1497d8a.1773665966.git.ljs@kernel.org
-      - 0c98a8cb13e6 "mm/vma: convert as much as we can in mm/vma.c to vma_flags_t (20/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/4d938877d17158a74858af98a6e5bf5d93292fc1.1773665966.git.ljs@kernel.org
-      - fe94e86be734 "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t (21/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/0737c1b5e3b3688ec3839058b95203c9e7622de9.1773665966.git.ljs@kernel.org
-      - 9061573225c9 "mm/vma: convert __mmap_region() to use vma_flags_t (22/23)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/0dfdae451f825437e042db9b434a7d509dce6841.1773665966.git.ljs@kernel.org
+- mm-new: 28 -> 28 commits (no change)
+  - series: 2 (28) -> 2 (28) (no change)
+    - no role, nobody: 28 -> 26 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
   - changed commits
+    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v2. (23)
+      - 4145ac7131b6 "mm: convert do_brk_flags() to use vma_flags_t (16/23)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Paul Moore <paul@paul-moore.com>	[SELinux]"
+        - dropped "Cc: Paul Moore <paul@paul-moore.com>"
+        - Link: https://lkml.kernel.org/r/063af0422d99bee0195589aa63f8f44edaf409fa.1773665966.git.ljs@kernel.org
     - series "mm: expand mmap_prepare functionality and usage", v2. (16)
-      - db7032c87e24 "mm: various small mmap_prepare cleanups (0/16)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/cover.1773695307.git.ljs@kernel.org"
-        - added "Link: https://lkml.kernel.org/r/afcb42b88acac93c6437b0dbbc71bba0b0e7429e.1773695307.git.ljs@kernel.org"
-        - added "Cc: "Liam R. Howlett" <Liam.Howlett@oracle.com>"
-        - dropped "Link: https://lkml.kernel.org/r/cover.1773346620.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/56372fe273f775b26675a04652c1229e14680741.1773346620.git.ljs@kernel.org"
-        - dropped "Cc: Alexander Viro <viro@zeniv.linux.org.uk>"
-        - Link: https://lkml.kernel.org/r/cover.1773695307.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/afcb42b88acac93c6437b0dbbc71bba0b0e7429e.1773695307.git.ljs@kernel.org
-      - 431a1bba8772 "mm: document vm_operations_struct->open the same as close() (2/16)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/3cec125f9eaf9dc44e638a56c76d12c58684af87.1773695307.git.ljs@kernel.org"
-        - added "Cc: Al Viro <viro@zeniv.linux.org.uk>"
-        - dropped "Link: https://lkml.kernel.org/r/52a7b9a003ea51521ab3c0baf30337a7800a3af7.1773346620.git.ljs@kernel.org"
-        - dropped "Cc: Alexander Viro <viro@zeniv.linux.org.uk>"
-        - Link: https://lkml.kernel.org/r/3cec125f9eaf9dc44e638a56c76d12c58684af87.1773695307.git.ljs@kernel.org
-      - 520d78625805 "mm: add vm_ops->mapped hook (3/16)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/700b3a31185c1b4255c8410c7724ffd123488467.1773695307.git.ljs@kernel.org"
-        - added "Cc: Al Viro <viro@zeniv.linux.org.uk>"
-        - dropped "Link: https://lkml.kernel.org/r/0e0fe47852e6009f662b1fa42f836447b8d1283a.1773346620.git.ljs@kernel.org"
-        - dropped "Cc: Alexander Viro <viro@zeniv.linux.org.uk>"
-        - Link: https://lkml.kernel.org/r/700b3a31185c1b4255c8410c7724ffd123488467.1773695307.git.ljs@kernel.org
-      - 466578d528dc "mm: add mmap_action_simple_ioremap() (5/16)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/1e58aaf3cdb61cc317d890c12c9a558dfc206913.1773695307.git.ljs@kernel.org"
-        - added "Cc: Al Viro <viro@zeniv.linux.org.uk>"
-        - dropped "Link: https://lkml.kernel.org/r/461328bd1e62a2be79f4ae9a392c96f62ea35081.1773346620.git.ljs@kernel.org"
-        - dropped "Cc: Alexander Viro <viro@zeniv.linux.org.uk>"
+      - 6758616ae023 "mm: add mmap_action_simple_ioremap() (5/16)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
         - Link: https://lkml.kernel.org/r/1e58aaf3cdb61cc317d890c12c9a558dfc206913.1773695307.git.ljs@kernel.org
-      - 04869eb021e5 "mm: allow handling of stacked mmap_prepare hooks in more drivers (11/16)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/72750af6906fd96fb6f18e83ac3e694cf357a2c1.1773695307.git.ljs@kernel.org"
-        - added "Cc: Al Viro <viro@zeniv.linux.org.uk>"
-        - dropped "Link: https://lkml.kernel.org/r/d10f5b604ce0ed65dc7d4e49cdf4070b1260a192.1773346620.git.ljs@kernel.org"
-        - dropped "Cc: Alexander Viro <viro@zeniv.linux.org.uk>"
-        - Link: https://lkml.kernel.org/r/72750af6906fd96fb6f18e83ac3e694cf357a2c1.1773695307.git.ljs@kernel.org
-      - ed040af090c0 "mm: add mmap_action_map_kernel_pages[_full]() (14/16)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/8e28e4b63bae67bfa1a59ccbac9dc6db1442d75d.1773695307.git.ljs@kernel.org"
-        - added "Cc: Al Viro <viro@zeniv.linux.org.uk>"
-        - dropped "Link: https://lkml.kernel.org/r/21d8899bb1f4db61203072fb3a56a6c98a61e23d.1773346620.git.ljs@kernel.org"
-        - dropped "Cc: Alexander Viro <viro@zeniv.linux.org.uk>"
-        - Link: https://lkml.kernel.org/r/8e28e4b63bae67bfa1a59ccbac9dc6db1442d75d.1773695307.git.ljs@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

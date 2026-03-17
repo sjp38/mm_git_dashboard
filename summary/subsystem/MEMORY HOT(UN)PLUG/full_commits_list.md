@@ -7,11 +7,11 @@
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - c571e06668a0 "mm: name the anonymous MMOP enum as enum mmop"
+    - b50bfb046419 "mm: name the anonymous MMOP enum as enum mmop"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
-      - aab70851aab5 "mm: convert zone lock users to wrappers" (1/5)
+      - 300c27f8cb2d "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

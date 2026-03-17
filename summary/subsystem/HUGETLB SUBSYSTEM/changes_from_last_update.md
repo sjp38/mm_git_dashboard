@@ -5,25 +5,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 19 -> 20 commits
+- mm-unstable: 20 -> 20 commits (no change)
   - series: 2 (16) -> 2 (16) (no change)
-    - no role, nobody: 6 -> 5 commits
-    - no role, no role : 5 -> 6 commits
+    - no role, nobody: 5 -> 5 commits (no change)
+    - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 7 -> 8 commits
+    - no role, maintainer: 8 -> 8 commits (no change)
   - changed commits
-    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
-      - 97e0029b046f "mm/hugetlb: defer vmemmap population for bootmem hugepages (8/17)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (arm) <david@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-10-kas@kernel.org
-      - 126fd65ef8e2 "mm/hugetlb: remove fake head pages (11/17)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (arm) <david@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-13-kas@kernel.org
-    - 253e3d3680a7 "hugetlb: update vmemmap_dedup.rst"
+    - a9589aa11acc "hugetlb: update vmemmap_dedup.rst"
       - Authored by no role player, reviewed by a maintainer
       - added "Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org"
       - dropped "Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org"

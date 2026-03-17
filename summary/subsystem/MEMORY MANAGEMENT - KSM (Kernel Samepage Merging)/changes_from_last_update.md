@@ -8,13 +8,16 @@
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+  - changed commits
     - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v2. (23)
-      - e5d2df776788 "mm: convert do_brk_flags() to use vma_flags_t (16/23)"
-        - Authored by no role player, reviewed by nobody
+      - 4145ac7131b6 "mm: convert do_brk_flags() to use vma_flags_t (16/23)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Paul Moore <paul@paul-moore.com>	[SELinux]"
+        - dropped "Cc: Paul Moore <paul@paul-moore.com>"
         - Link: https://lkml.kernel.org/r/063af0422d99bee0195589aa63f8f44edaf409fa.1773665966.git.ljs@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

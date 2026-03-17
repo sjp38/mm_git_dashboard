@@ -1,12 +1,13 @@
 - baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 1c020b5ed58b "mm/zswap: add missing kunmap_local()"
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - 1fdff9413628 "mm/zswap: add missing kunmap_local()"
       - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
       - Link: https://lkml.kernel.org/r/20260316140122.339697-1-ljs@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
