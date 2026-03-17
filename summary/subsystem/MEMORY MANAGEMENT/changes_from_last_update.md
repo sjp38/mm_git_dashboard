@@ -1,59 +1,126 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
-- mm-hotfixes-stable: 3 -> 3 commits (no change)
+- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc4-25-gf0caa1d49cc07
+- mm-hotfixes-stable: 3 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+    - no role, no role : 3 -> 0 commits
+  - dropped commits
+    - fae654083bfa "mm/huge_memory: fix use of NULL folio in move_pages_huge_pmd()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/a1e787dd-b911-474d-8570-f37685357d86@lucifer.local
+    - 29f40594a281 "mm/rmap: fix incorrect pte restoration for lazyfree folios"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260303061528.2429162-1-dev.jain@arm.com
+    - 939080834fef "mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared THP"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260305015006.27343-1-richard.weiyang@gmail.com
+- mm-hotfixes-unstable: 2 -> 6 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 2 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 2 commits
   - new commits
-    - bea64c09cf05 "mm/damon/stat: monitor all System RAM resources"
+    - 08287e8d75ed "mm-zswap-add-missing-kunmap_local-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/13e09a99-181f-45ac-a18d-057faf94bccb@lucifer.local
+      - Link: https://docs.kernel.org/core-api/cachetlb.html [0]
+    - 2fd3dc1c261a "mm/damon/stat: return error if monitoring target region is invalid"
       - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260316235118.873-1-sj@kernel.org
-  - changed commits
-    - 1fdff9413628 "mm/zswap: add missing kunmap_local()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260316140122.339697-1-ljs@kernel.org
+      - Link: https://lkml.kernel.org/r/20260317053631.87907-1-sj@kernel.org
+    - 20e07f679c15 "mm/pagewalk: fix race between concurrent split and refault"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260317-pagewalk-check-pmd-refault-v1-1-f699a010f2b3@akamai.com
+    - e387a51dcebc "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/1cf1ac59018fc647a87b0dad605d4056a71c14e4.1773739704.git.baolin.wang@linux.alibaba.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 228 -> 229 commits
+- mm-unstable: 229 -> 230 commits
   - series: 29 (169) -> 29 (169) (no change)
     - no role, nobody: 34 -> 34 commits (no change)
     - no role, no role : 58 -> 58 commits (no change)
-    - no role, reviewer: 27 -> 28 commits
+    - no role, reviewer: 28 -> 28 commits (no change)
     - no role, maintainer: 41 -> 41 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 6 -> 6 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 34 -> 34 commits (no change)
+    - maintainer, nobody: 34 -> 35 commits
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 17 -> 17 commits (no change)
   - new commits
-    - 33b59319a210 "mm-introduce-a-new-page-type-for-page-pool-in-page-type-v5"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260316223113.20097-1-byungchul@sk.com
-- mm-new: 16 -> 16 commits (no change)
-  - series: 2 (16) -> 2 (16) (no change)
-    - no role, nobody: 14 -> 12 commits
-    - no role, no role : 1 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v2. (23)
-      - 4145ac7131b6 "mm: convert do_brk_flags() to use vma_flags_t (16/23)"
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4)
+      - c886f667de1b "mm: huge_memory: refactor anon_enabled_store() with set_anon_enabled_mode() (1/4)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Paul Moore <paul@paul-moore.com>	[SELinux]"
-        - dropped "Cc: Paul Moore <paul@paul-moore.com>"
-        - Link: https://lkml.kernel.org/r/063af0422d99bee0195589aa63f8f44edaf409fa.1773665966.git.ljs@kernel.org
-    - series "mm: expand mmap_prepare functionality and usage", v2. (16)
-      - 6758616ae023 "mm: add mmap_action_simple_ioremap() (5/16)"
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-2-31eb98fa5a8b@debian.org
+      - 93659a46adab "mm: huge_memory: refactor enabled_store() with set_global_enabled_mode() (2/4)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - Link: https://lkml.kernel.org/r/1e58aaf3cdb61cc317d890c12c9a558dfc206913.1773695307.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-3-31eb98fa5a8b@debian.org
+    - series "mm/damon: support addr_unit on default monitoring targets for modules". (5)
+      - 180c73bbada3 "mm/damon/core: verify found biggest system ram (2/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260317144725.88524-1-sj@kernel.org
+  - changed commits
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4)
+      - 748b53227ea4 "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-1-31eb98fa5a8b@debian.org"
+        - added "Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-0-31eb98fa5a8b@debian.org"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-1-421e30d881e0@debian.org"
+        - dropped "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-0-421e30d881e0@debian.org"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-0-31eb98fa5a8b@debian.org
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-1-31eb98fa5a8b@debian.org
+      - d39e793e2ace "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-4-421e30d881e0@debian.org"
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org
+  - dropped commits
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v6. (4)
+      - a7c293fd984a "mm: huge_memory: refactor anon_enabled_store() with change_anon_orders() (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-2-421e30d881e0@debian.org
+      - 93af8cfeaaba "mm: huge_memory: refactor enabled_store() with change_enabled() (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-3-421e30d881e0@debian.org
+- mm-new: 16 -> 17 commits
+  - series: 2 (16) -> 2 (17)
+    - no role, nobody: 12 -> 15 commits
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - series "zswap pool per-CPU acomp_ctx simplifications". (2)
+      - 43ba1650bc78 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead() (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260314051632.17931-1-kanchanapsridhar2026@gmail.com
+        - Link: https://lkml.kernel.org/r/20260317014802.27591-2-kanchanapsridhar2026@gmail.com
+        - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677 [1]
+    - series "kho: add support for deferred struct page init", v7. (3)
+      - 4903abf1903e "kho: fix deferred init of kho scratch (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260317141534.815634-3-mclapinski@google.com
+  - changed commits
+    - series "zswap pool per-CPU acomp_ctx simplifications". (2)
+      - a22fa9f22cf6 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lkml.kernel.org/r/20260317014802.27591-3-kanchanapsridhar2026@gmail.com"
+        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
+        - added "Cc: Yosry Ahmed <yosry.ahmed@linux.dev>"
+        - dropped "Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677 [1]"
+        - dropped "Link: https://lkml.kernel.org/r/20260314051632.17931-2-kanchanapsridhar2026@gmail.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260314051632.17931-1-kanchanapsridhar2026@gmail.com"
+        - dropped "Acked-by: Yosry Ahmed <yosry.ahmed@linux.dev>"
+        - Link: https://lkml.kernel.org/r/20260317014802.27591-3-kanchanapsridhar2026@gmail.com
+  - dropped commits
+    - series "zswap pool per-CPU acomp_ctx simplifications". (2)
+      - 9a4793c61f6f "mm: zswap: consistently use IS_ERR_OR_NULL() to check acomp_ctx resources (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260314051632.17931-3-kanchanapsridhar2026@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

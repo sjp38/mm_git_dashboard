@@ -1,7 +1,11 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc4-25-gf0caa1d49cc07
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
+    - fae654083bfa "mm/huge_memory: fix use of NULL folio in move_pages_huge_pmd()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/a1e787dd-b911-474d-8570-f37685357d86@lucifer.local
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
@@ -13,6 +17,41 @@
     - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
+  - new commits
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4)
+      - c886f667de1b "mm: huge_memory: refactor anon_enabled_store() with set_anon_enabled_mode() (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-2-31eb98fa5a8b@debian.org
+      - 93659a46adab "mm: huge_memory: refactor enabled_store() with set_global_enabled_mode() (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-3-31eb98fa5a8b@debian.org
+  - changed commits
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4)
+      - 748b53227ea4 "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-0-31eb98fa5a8b@debian.org"
+        - added "Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-1-31eb98fa5a8b@debian.org"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-0-421e30d881e0@debian.org"
+        - dropped "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-1-421e30d881e0@debian.org"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-0-31eb98fa5a8b@debian.org
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-1-31eb98fa5a8b@debian.org
+      - d39e793e2ace "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-4-421e30d881e0@debian.org"
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org
+  - dropped commits
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v6. (4)
+      - a7c293fd984a "mm: huge_memory: refactor anon_enabled_store() with change_anon_orders() (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-2-421e30d881e0@debian.org
+      - 93af8cfeaaba "mm: huge_memory: refactor enabled_store() with change_enabled() (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-3-421e30d881e0@debian.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

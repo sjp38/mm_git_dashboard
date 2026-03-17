@@ -1,4 +1,4 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e
+- baseline: v7.0-rc4-25-gf0caa1d49cc07
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,17 +7,25 @@
     - no role, nobody: 1 commits
     - no role, maintainer: 2 commits
   - full commits list
-      - 1563a1c9b89c "mm: memfd_luo: preserve file seals" (1/2)
+      - aa1cecdece6a "mm: memfd_luo: preserve file seals" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260216185946.1215770-3-pratyush@kernel.org
     - series "Make KHO Stateless", v9. (2 commits)
-      - 9a8fbbc71cc3 "kho: adopt radix tree for preserved memory tracking" (0/2)
+      - ee6599e0515d "kho: adopt radix tree for preserved memory tracking" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
-    - 3a477bbb76c3 "kho: remove finalize state and clients"
+    - 42a6e8ffcf07 "kho: remove finalize state and clients"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 1 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - series "kho: add support for deferred struct page init", v7. (3 commits)
+      - 0306cb984b04 "kho: make kho_scratch_overlap usable outside debugging" (0/3)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260317141534.815634-1-mclapinski@google.com
+        - Link: https://lkml.kernel.org/r/20260317141534.815634-2-mclapinski@google.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

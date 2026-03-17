@@ -1,4 +1,4 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
+- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc4-25-gf0caa1d49cc07
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -14,22 +14,9 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
 - mm-new: 28 -> 28 commits (no change)
   - series: 2 (28) -> 2 (28) (no change)
-    - no role, nobody: 28 -> 26 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v2. (23)
-      - 4145ac7131b6 "mm: convert do_brk_flags() to use vma_flags_t (16/23)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Paul Moore <paul@paul-moore.com>	[SELinux]"
-        - dropped "Cc: Paul Moore <paul@paul-moore.com>"
-        - Link: https://lkml.kernel.org/r/063af0422d99bee0195589aa63f8f44edaf409fa.1773665966.git.ljs@kernel.org
-    - series "mm: expand mmap_prepare functionality and usage", v2. (16)
-      - 6758616ae023 "mm: add mmap_action_simple_ioremap() (5/16)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - Link: https://lkml.kernel.org/r/1e58aaf3cdb61cc317d890c12c9a558dfc206913.1773695307.git.ljs@kernel.org
+    - no role, nobody: 26 -> 26 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

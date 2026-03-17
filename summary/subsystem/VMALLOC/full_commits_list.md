@@ -1,4 +1,4 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e
+- baseline: v7.0-rc4-25-gf0caa1d49cc07
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -8,21 +8,21 @@
     - no role, no role : 3 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - 772c88b8fab5 "mm: vmalloc: streamline vmalloc memory accounting"
+    - f56abc57af90 "mm: vmalloc: streamline vmalloc memory accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-    - 9615cff0665a "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+    - 41a71011248b "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
     - series "Fix KASAN support for KHO restored vmalloc regions". (2 commits)
-      - cf7098ca61d9 "mm/vmalloc: export clear_vm_uninitialized_flag()" (0/2)
+      - 2b99bca5b0b0 "mm/vmalloc: export clear_vm_uninitialized_flag()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
         - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
-    - fd43370a27ff "mm/vmalloc: fix incorrect size reporting on allocation failure"
+    - f18f2c2524f9 "mm/vmalloc: fix incorrect size reporting on allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260302114740.2668450-1-urezki@gmail.com
-    - c10d6ba2ae67 "vmalloc: support __GFP_RETRY_MAYFAIL and __GFP_NORETRY"
+    - 7ebcb3765e4b "vmalloc: support __GFP_RETRY_MAYFAIL and __GFP_NORETRY"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302114740.2668450-2-urezki@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

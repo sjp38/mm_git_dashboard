@@ -1,14 +1,15 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
+- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc4-25-gf0caa1d49cc07
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 1fdff9413628 "mm/zswap: add missing kunmap_local()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260316140122.339697-1-ljs@kernel.org
+  - new commits
+    - 08287e8d75ed "mm-zswap-add-missing-kunmap_local-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/13e09a99-181f-45ac-a18d-057faf94bccb@lucifer.local
+      - Link: https://docs.kernel.org/core-api/cachetlb.html [0]
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 4 -> 4 commits (no change)
@@ -16,8 +17,33 @@
     - no role, maintainer: 4 -> 4 commits (no change)
 - mm-new: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - series "zswap pool per-CPU acomp_ctx simplifications". (2)
+      - 43ba1650bc78 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead() (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260314051632.17931-1-kanchanapsridhar2026@gmail.com
+        - Link: https://lkml.kernel.org/r/20260317014802.27591-2-kanchanapsridhar2026@gmail.com
+        - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677 [1]
+  - changed commits
+    - series "zswap pool per-CPU acomp_ctx simplifications". (2)
+      - a22fa9f22cf6 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lkml.kernel.org/r/20260317014802.27591-3-kanchanapsridhar2026@gmail.com"
+        - added "Cc: Yosry Ahmed <yosry.ahmed@linux.dev>"
+        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
+        - dropped "Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677 [1]"
+        - dropped "Link: https://lkml.kernel.org/r/20260314051632.17931-2-kanchanapsridhar2026@gmail.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260314051632.17931-1-kanchanapsridhar2026@gmail.com"
+        - dropped "Acked-by: Yosry Ahmed <yosry.ahmed@linux.dev>"
+        - Link: https://lkml.kernel.org/r/20260317014802.27591-3-kanchanapsridhar2026@gmail.com
+  - dropped commits
+    - series "zswap pool per-CPU acomp_ctx simplifications". (2)
+      - 9a4793c61f6f "mm: zswap: consistently use IS_ERR_OR_NULL() to check acomp_ctx resources (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260314051632.17931-3-kanchanapsridhar2026@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

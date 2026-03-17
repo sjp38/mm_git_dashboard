@@ -1,8 +1,13 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc3-16-gb4f0dd314b39e (no change)
+- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc4-25-gf0caa1d49cc07
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 20e07f679c15 "mm/pagewalk: fix race between concurrent split and refault"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260317-pagewalk-check-pmd-refault-v1-1-f699a010f2b3@akamai.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 73 -> 73 commits (no change)
@@ -16,28 +21,36 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4)
+      - 748b53227ea4 "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-1-31eb98fa5a8b@debian.org"
+        - added "Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-0-31eb98fa5a8b@debian.org"
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-1-421e30d881e0@debian.org"
+        - dropped "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-0-421e30d881e0@debian.org"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-0-31eb98fa5a8b@debian.org
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-1-31eb98fa5a8b@debian.org
 - mm-new: 19 -> 19 commits (no change)
   - series: 2 (19) -> 2 (19) (no change)
-    - no role, nobody: 19 -> 17 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v2. (23)
-      - 4145ac7131b6 "mm: convert do_brk_flags() to use vma_flags_t (16/23)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Paul Moore <paul@paul-moore.com>	[SELinux]"
-        - dropped "Cc: Paul Moore <paul@paul-moore.com>"
-        - Link: https://lkml.kernel.org/r/063af0422d99bee0195589aa63f8f44edaf409fa.1773665966.git.ljs@kernel.org
-    - series "mm: expand mmap_prepare functionality and usage", v2. (16)
-      - 6758616ae023 "mm: add mmap_action_simple_ioremap() (5/16)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - Link: https://lkml.kernel.org/r/1e58aaf3cdb61cc317d890c12c9a558dfc206913.1773695307.git.ljs@kernel.org
+    - no role, nobody: 17 -> 17 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 5 -> 5 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 1 -> 2 commits
     - no role, maintainer: 2 -> 2 commits (no change)
+  - changed commits
+    - 9b2ec1e6dbca "kernel/fork: validate exit_signal in kernel_clone()"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Oleg Nesterov <oleg@redhat.com>"
+      - dropped "Cc: Oleg Nesterov <oleg@redhat.com>"
+      - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
+      - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
+      - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]

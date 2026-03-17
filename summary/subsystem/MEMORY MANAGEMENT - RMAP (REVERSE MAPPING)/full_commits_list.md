@@ -1,14 +1,5 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e
-- mm-hotfixes-stable: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-  - full commits list
-    - 29f40594a281 "mm/rmap: fix incorrect pte restoration for lazyfree folios"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260303061528.2429162-1-dev.jain@arm.com
-    - 939080834fef "mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared THP"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260305015006.27343-1-richard.weiyang@gmail.com
+- baseline: v7.0-rc4-25-gf0caa1d49cc07
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 4 total, 0 (3) series, 1 non-series commits
@@ -17,16 +8,16 @@
     - no role, no role : 2 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - a7da4414700f "mm: add folio_test_lazyfree helper" (3/4)
+      - 1fba633a5239 "mm: add folio_test_lazyfree helper" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-4-vernon2gm@gmail.com
-    - f08ff26b0b07 "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
+    - ec428a5bbf12 "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
-      - aa2e5f078267 "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced()" (2/6)
+      - 7910a6091e8e "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/64d6fb2a33f7101e1d4aca2c9052e0758b76d492.1772778858.git.baolin.wang@linux.alibaba.com
-      - 04723aa89a10 "mm: support batched checking of the young flag for MGLRU" (4/6)
+      - 82879c6d64e4 "mm: support batched checking of the young flag for MGLRU" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

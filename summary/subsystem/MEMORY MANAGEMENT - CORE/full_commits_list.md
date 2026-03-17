@@ -1,6 +1,12 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e
+- baseline: v7.0-rc4-25-gf0caa1d49cc07
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 20e07f679c15 "mm/pagewalk: fix race between concurrent split and refault"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260317-pagewalk-check-pmd-refault-v1-1-f699a010f2b3@akamai.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 73 total, 10 (53) series, 20 non-series commits
   - author/reviewer role stat
@@ -14,241 +20,241 @@
     - maintainer, nobody: 2 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - ebf937f0cb02 "mm: move pgscan, pgsteal, pgrefill to node stats"
+    - 758c534f00ae "mm: move pgscan, pgsteal, pgrefill to node stats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
-    - 56b45eb2e4cf "mm: fix typo in the comment of mod_zone_state()"
+    - 73b86cf0980c "mm: fix typo in the comment of mod_zone_state()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260219234407.3261196-1-mssola@mssola.com
-      - 7a98f281e35e "mm, swap: use the swap table to track the swap count" (8/12)
+      - d4c81b0d7631 "mm, swap: use the swap table to track the swap count" (8/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-9-f4e34be021a7@tencent.com
-    - b50bfb046419 "mm: name the anonymous MMOP enum as enum mmop"
+    - 17240814673c "mm: name the anonymous MMOP enum as enum mmop"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
-      - fad69762399d "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
+      - 20ac4537a92c "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - e7790412481e "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 2304d00e4674 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 4993ed1bbb26 "arch, mm: consolidate empty_zero_page" (2/4)
+      - 1bb442fdbe0a "arch, mm: consolidate empty_zero_page" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - e510364912a3 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
+      - 20d2213df7f8 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-    - 25f0e78f9a33 "mm/mmu_notifiers: use hlist_for_each_entry_srcu() for SRCU list traversal"
+    - 420a1d365b00 "mm/mmu_notifiers: use hlist_for_each_entry_srcu() for SRCU list traversal"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260204080937.2472-1-lirongqing@baidu.com
-    - cffcf87d123e "mm: convert vmemmap_p?d_populate() to static functions"
+    - f362637c4f73 "mm: convert vmemmap_p?d_populate() to static functions"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260201063532.44807-3-pilgrimtao@gmail.com
-    - f08ff26b0b07 "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
+    - ec428a5bbf12 "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
-    - 0efb57010884 "mm-centralizefix-comments-about-compound_mapcount-in-new-sync_with_folio_pmd_zap-fix"
+    - febf045dc8dc "mm-centralizefix-comments-about-compound_mapcount-in-new-sync_with_folio_pmd_zap-fix"
       - Authored by a maintainer, reviewed by nobody
-    - 772c88b8fab5 "mm: vmalloc: streamline vmalloc memory accounting"
+    - f56abc57af90 "mm: vmalloc: streamline vmalloc memory accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
     - series "mm: arch/shstk: Common shadow stack mapping helper and VM_NOHUGEPAGE", v2. (5 commits)
-      - 68a5c652bff1 "mm: introduce vm_mmap_shadow_stack() as a helper for VM_SHADOW_STACK mappings" (0/5)
+      - 3db6c79f9c6f "mm: introduce vm_mmap_shadow_stack() as a helper for VM_SHADOW_STACK mappings" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225161404.3157851-1-catalin.marinas@arm.com
         - Link: https://lkml.kernel.org/r/20260225161404.3157851-2-catalin.marinas@arm.com
-      - 404fa96ec2ba "mm: do not map the shadow stack as THP" (4/5)
+      - 36b1e0d3fb4a "mm: do not map the shadow stack as THP" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225161404.3157851-6-catalin.marinas@arm.com
-    - 7a44ab6eecd0 "mm: improve RSS counter approximation accuracy for proc interfaces"
+    - 96945021cf07 "mm: improve RSS counter approximation accuracy for proc interfaces"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/lkml/20250331223516.7810-2-sweettea-kernel@dorminy.me/ # [1]
       - Link: https://lkml.kernel.org/r/20260227153730.1556542-4-mathieu.desnoyers@efficios.com
     - series "Fix KASAN support for KHO restored vmalloc regions". (2 commits)
-      - cf7098ca61d9 "mm/vmalloc: export clear_vm_uninitialized_flag()" (0/2)
+      - 2b99bca5b0b0 "mm/vmalloc: export clear_vm_uninitialized_flag()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
         - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
-      - bc60e1d792df "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - b5a11cc774d0 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - bc86f3753f4b "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE" (3/4)
+      - 5896ff0bdf07 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
     - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17 commits)
-      - 68af74c3f483 "mm: move MAX_FOLIO_ORDER definition to mmzone.h" (0/17)
+      - b978edc44d83 "mm: move MAX_FOLIO_ORDER definition to mmzone.h" (0/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-1-kas@kernel.org
         - Link: https://lkml.kernel.org/r/20260227194302.274384-2-kas@kernel.org
-      - 9f12860a2e4a "mm: change the interface of prep_compound_tail()" (1/17)
+      - 3df2fa9540ef "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - 169b094be120 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - b0e3ec727487 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - 97386a837434 "riscv/mm: align vmemmap to maximal folio size" (4/17)
+      - 9b33e83253ea "riscv/mm: align vmemmap to maximal folio size" (4/17)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227194302.274384-6-kas@kernel.org
-      - 9d029bf08b7e "mm: rework compound_head() for power-of-2 sizeof(struct page)" (6/17)
+      - 8ccff34d28d3 "mm: rework compound_head() for power-of-2 sizeof(struct page)" (6/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-8-kas@kernel.org
-      - 5a93c0663bae "mm/sparse: check memmap alignment for compound_info_has_mask()" (7/17)
+      - 3928d247995d "mm/sparse: check memmap alignment for compound_info_has_mask()" (7/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-9-kas@kernel.org
-      - fc316b19037d "mm/hugetlb: defer vmemmap population for bootmem hugepages" (8/17)
+      - baddbf0af8e5 "mm/hugetlb: defer vmemmap population for bootmem hugepages" (8/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-10-kas@kernel.org
-      - 1e2b8ee6e6fe "mm/hugetlb: remove fake head pages" (11/17)
+      - 29b5e5d11c34 "mm/hugetlb: remove fake head pages" (11/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-13-kas@kernel.org
-    - f8c37077962b "mm/pagewalk: drop FW_MIGRATION"
+    - 070f729c4023 "mm/pagewalk: drop FW_MIGRATION"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260227212952.190691-1-david@kernel.org
-    - 45e9bc4462d7 "mm: replace READ_ONCE() in pud_trans_unstable()"
+    - 42a69786df48 "mm: replace READ_ONCE() in pud_trans_unstable()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260227040300.2091901-1-anshuman.khandual@arm.com
-    - d76e4e74a74a "mm: make ref_unless functions unless_zero only"
+    - c680423831c6 "mm: make ref_unless functions unless_zero only"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/a0c89b49d38c671a0bdd35069d15ee13e08314d2.1772370066.git.gladyshev.ilya1@h-partners.com
-      - ad5f7a870998 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
+      - 069e6f5a6d65 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
-      - 5a7c51e48926 "mm/memory: inline unmap_mapping_range_vma() into unmap_mapping_range_tree()" (3/16)
+      - 946a6c9e90f5 "mm/memory: inline unmap_mapping_range_vma() into unmap_mapping_range_tree()" (3/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-4-david@kernel.org
-      - 5bfd0b956e94 "mm/memory: simplify calculation in unmap_mapping_range_tree()" (4/16)
+      - 6ffa83ff031a "mm/memory: simplify calculation in unmap_mapping_range_tree()" (4/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-5-david@kernel.org
-      - 82959cb235c3 "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping()" (6/16)
+      - 81c5be8b6800 "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping()" (6/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-7-david@kernel.org
-      - 0170dd4664e6 "mm/memory: rename unmap_single_vma() to __zap_vma_range()" (7/16)
+      - 75392a40cf33 "mm/memory: rename unmap_single_vma() to __zap_vma_range()" (7/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-8-david@kernel.org
-      - a154b873d8fd "mm/memory: move adjusting of address range to unmap_vmas()" (8/16)
+      - 563799667c2f "mm/memory: move adjusting of address range to unmap_vmas()" (8/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-9-david@kernel.org
-      - 43ec1b6b2b06 "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
+      - 2994d1d3fd95 "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-10-david@kernel.org
-      - 3448d83a212b "mm/memory: use __zap_vma_range() in zap_vma_for_reaping()" (10/16)
+      - 8cf2333f1c03 "mm/memory: use __zap_vma_range() in zap_vma_for_reaping()" (10/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-11-david@kernel.org
-      - 8c787d1a2135 "mm/memory: inline unmap_page_range() into __zap_vma_range()" (11/16)
+      - 14e93cca81e2 "mm/memory: inline unmap_page_range() into __zap_vma_range()" (11/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-12-david@kernel.org
-      - b0424ee1d421 "mm-memory-inline-unmap_page_range-into-__zap_vma_range-fix" (12/16)
+      - 2c2461d2bec4 "mm-memory-inline-unmap_page_range-into-__zap_vma_range-fix" (12/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/f7732d1c-0e85-4a14-948a-912c417018b5@kernel.org
-      - 1eee12776bfa "mm: rename zap_vma_pages() to zap_vma()" (13/16)
+      - c2a65d260729 "mm: rename zap_vma_pages() to zap_vma()" (13/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-13-david@kernel.org
-      - f067ceaaa853 "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (14/16)
+      - 7416ca328b1a "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (14/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-14-david@kernel.org
-      - 1c76dfb9f1d7 "mm: rename zap_page_range_single() to zap_vma_range()" (15/16)
+      - d061c7d44da3 "mm: rename zap_page_range_single() to zap_vma_range()" (15/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
-    - 669937de0ad6 "mm: rename zap_vma_ptes() to zap_special_vma_range()"
+    - 6664631bf896 "mm: rename zap_vma_ptes() to zap_special_vma_range()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260227200848.114019-16-david@kernel.org
-    - 83f87ce8aade "mm/memory: support VM_MIXEDMAP in zap_special_vma_range()"
+    - 10674a66bc14 "mm/memory: support VM_MIXEDMAP in zap_special_vma_range()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260227200848.114019-17-david@kernel.org
       - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
-      - 9b700ecdf6d3 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - 8ad351377205 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
     - series "support batched checking of the young flag for MGLRU", v3. (6 commits)
-      - e03f803e1315 "mm: use inline helper functions instead of ugly macros" (0/6)
+      - 49fe3e1c18a6 "mm: use inline helper functions instead of ugly macros" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cover.1772778858.git.baolin.wang@linux.alibaba.com
         - Link: https://lkml.kernel.org/r/ea14af84e7967ccebb25082c28a8669d6da8fe57.1772778858.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/all/cover.1770645603.git.baolin.wang@linux.alibaba.com/ [1]
-      - d1d61b664661 "mm: rename ptep/pmdp_clear_young_notify() to ptep/pmdp_test_and_clear_young_notify()" (1/6)
+      - 2b5340df9b5a "mm: rename ptep/pmdp_clear_young_notify() to ptep/pmdp_test_and_clear_young_notify()" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/b3454077ce88745e6f88386b1763721746884565.1772778858.git.baolin.wang@linux.alibaba.com
-      - 8ce948050450 "mm: add a batched helper to clear the young flag for large folios" (3/6)
+      - 44e3de31e349 "mm: add a batched helper to clear the young flag for large folios" (3/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/23ec671bfcc06cd24ee0fbff8e329402742274a0.1772778858.git.baolin.wang@linux.alibaba.com
-      - 04723aa89a10 "mm: support batched checking of the young flag for MGLRU" (4/6)
+      - 82879c6d64e4 "mm: support batched checking of the young flag for MGLRU" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com
     - series "mm: vma flag tweaks". (6 commits)
-      - 449db8b8c93e "mm: rename VMA flag helpers to be more readable" (0/6)
+      - edbe9bc396ff "mm: rename VMA flag helpers to be more readable" (0/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - 19db9a829664 "mm: add vma_desc_test_all() and use it" (1/6)
+      - 24200dc6b8b6 "mm: add vma_desc_test_all() and use it" (1/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/568c8f8d6a84ff64014f997517cba7a629f7eed6.1772704455.git.ljs@kernel.org
-      - 09d71deed691 "mm: always inline __mk_vma_flags() and invoked functions" (2/6)
+      - 19d37d766ab2 "mm: always inline __mk_vma_flags() and invoked functions" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/241f49c52074d436edbb9c6a6662a8dc142a8f43.1772704455.git.ljs@kernel.org
-      - 1f218b25b956 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
+      - 3ce786a8044c "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - a6120d4f93a3 "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
+      - 16f9ec9c108b "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
-    - 9e337e703fc3 "mm: introduce a new page type for page pool in page type"
+    - 16ca91bdc520 "mm: introduce a new page type for page pool in page type"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
     - series "mm: zone lock tracepoint instrumentation", v4. (5 commits)
-      - d80991114d0d "mm: introduce zone lock wrappers" (0/5)
+      - d1bd27d3b9bb "mm: introduce zone lock wrappers" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cover.1772206930.git.d@ilvokhin.com
         - Link: https://lkml.kernel.org/r/849dee9c47df1e6fba97c9933af0d5a08b8e15d3.1772206930.git.d@ilvokhin.com
-      - 300c27f8cb2d "mm: convert zone lock users to wrappers" (1/5)
+      - db7b275ca8bc "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - 6b1ad2f990db "mm: rename zone->lock to zone->_lock" (3/5)
+      - de71671f67ea "mm: rename zone->lock to zone->_lock" (3/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
-      - aebb92e1d565 "mm-convert-zone-lock-users-to-wrappers-fix-fix" (4/5)
+      - 9c778ea06d01 "mm-convert-zone-lock-users-to-wrappers-fix-fix" (4/5)
         - Authored by a maintainer, reviewed by nobody
-    - 8b1525c29476 "mm: documentation: standardize on "zone lock" terminology"
+    - 0ba39b37f7f6 "mm: documentation: standardize on "zone lock" terminology"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
-    - adcf40d46e63 "mm: add tracepoints for zone lock"
+    - 18610635f5ab "mm: add tracepoints for zone lock"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/ae145fe890f028409f727b4921904b547346fa0b.1772206930.git.d@ilvokhin.com
-      - ec720c12ef26 "userfaultfd: introduce vm_uffd_ops" (8/15)
+      - e06c3eae661e "userfaultfd: introduce vm_uffd_ops" (8/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
-      - 3886f1f105b5 "mm: generalize handling of userfaults in __do_fault()" (14/15)
+      - f40224f21be2 "mm: generalize handling of userfaults in __do_fault()" (14/15)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-13-rppt@kernel.org
-    - 5f80632c8729 "mm/debug: optimize once judgment with clang"
+    - 6ac1a276b1fa "mm/debug: optimize once judgment with clang"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260309153405.20130-1-qq570070308@gmail.com
     - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4 commits)
-      - 0324781d7993 "mm: move vma_kernel_pagesize() from hugetlb to mm.h" (0/4)
+      - e8b38685ecd8 "mm: move vma_kernel_pagesize() from hugetlb to mm.h" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260309151901.123947-2-david@kernel.org
-      - 24573caa2ba3 "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
+      - 7e0d9da5a2ef "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
-    - 30d1fa669f9a "mm: prevent droppable mappings from being locked"
+    - 469844d257a5 "mm: prevent droppable mappings from being locked"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260310155821.17869-1-anthony.yznaga@oracle.com
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v6. (4 commits)
-      - e2d7a3945d46 "mm: khugepaged: export set_recommended_min_free_kbytes()" (0/4)
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4 commits)
+      - 748b53227ea4 "mm: khugepaged: export set_recommended_min_free_kbytes()" (0/4)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-0-421e30d881e0@debian.org
-        - Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-1-421e30d881e0@debian.org
-    - 1f54ae6bb879 "mm: optimize the implementation of WARN_ON_ONCE_GFP()"
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-0-31eb98fa5a8b@debian.org
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-1-31eb98fa5a8b@debian.org
+    - 350daf84aa51 "mm: optimize the implementation of WARN_ON_ONCE_GFP()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260309153811.40958-1-qq570070308@gmail.com
-      - 41d7d6b07c17 "mm: abstract reading sysctl_max_map_count, and READ_ONCE()" (1/3)
+      - 33b10712eb5f "mm: abstract reading sysctl_max_map_count, and READ_ONCE()" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/0715259eb37cbdfde4f9e5db92a20ec7110a1ce5.1773249037.git.ljs@kernel.org
     - series "mm: khugepaged cleanups and mTHP prerequisites", v3. (5 commits)
-      - f62b48d32f6d "mm: consolidate anonymous folio PTE mapping into helpers" (0/5)
+      - f962d363e88c "mm: consolidate anonymous folio PTE mapping into helpers" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260311211315.450947-1-npache@redhat.com
         - Link: https://lkml.kernel.org/r/20260311211315.450947-2-npache@redhat.com
@@ -256,7 +262,7 @@
         - Link: https://lore.kernel.org/all/7334b702-f6a0-4ccf-8ac6-8426a90d1846@kernel.org/ [2]
         - Link: https://lore.kernel.org/all/25723c0f-c702-44ad-93e9-1056313680cd@kernel.org/ [3]
         - Link: https://lore.kernel.org/all/81ff9caa-50f2-4951-8d82-2c8dcdf3db91@kernel.org/ [4]
-      - c5e545cbd1de "mm: introduce is_pmd_order helper" (1/5)
+      - 0f28a23692ba "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
 - mm-new: 19 total, 2 (19) series, 0 non-series commits
@@ -266,89 +272,89 @@
     - no role, reviewer: 1 commits
   - full commits list
     - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v2. (23 commits)
-      - 7fbe3a4ddb2c "mm/vma: add vma_flags_empty(), vma_flags_and(), vma_flags_diff_pair()" (0/23)
+      - 9995b35c519d "mm/vma: add vma_flags_empty(), vma_flags_and(), vma_flags_diff_pair()" (0/23)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/cover.1773665966.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/ede9b0f8a2e2dc72e7fbc1a0ddbeb513364c28a2.1773665966.git.ljs@kernel.org
-      - 7f0f7021323d "mm/vma: use new VMA flags for sticky flags logic" (4/23)
+      - 2ce50aef15cf "mm/vma: use new VMA flags for sticky flags logic" (4/23)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/005cac3e37830a33f473edc780a5dae5e00a3845.1773665966.git.ljs@kernel.org
-      - aae677e29839 "mm/vma: add append_vma_flags() helper" (6/23)
+      - 35699a09304d "mm/vma: add append_vma_flags() helper" (6/23)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/756b9c46ee23e00c2fe64d453ff61dd3b98aa3fc.1773665966.git.ljs@kernel.org
-      - 3961f0d3938a "mm: unexport vm_brk_flags() and eliminate vm_flags parameter" (8/23)
+      - 2c48f24a86d0 "mm: unexport vm_brk_flags() and eliminate vm_flags parameter" (8/23)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/ba7d1eae0208551c05f4a2015133b926d6650484.1773665966.git.ljs@kernel.org
-      - 177d14bf6377 "mm/vma: introduce vma_flags_same[_mask/_pair]()" (9/23)
+      - 3cca6b514998 "mm/vma: introduce vma_flags_same[_mask/_pair]()" (9/23)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/393378bdcbb49141304d5eff7b8dad2966b73c30.1773665966.git.ljs@kernel.org
-      - 2b41de36ec73 "mm/vma: introduce vma_test[_any[_mask]](), and make inlining consistent" (12/23)
+      - e4b010b10c4f "mm/vma: introduce vma_test[_any[_mask]](), and make inlining consistent" (12/23)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/8aeaf08d153c3c3196855fdc9ddbacccf673ef82.1773665966.git.ljs@kernel.org
-      - ad83bb45ef44 "mm: introduce vma_flags_count() and vma[_flags]_test_single_mask()" (14/23)
+      - 0895e7d43986 "mm: introduce vma_flags_count() and vma[_flags]_test_single_mask()" (14/23)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/96e7481026067766bfd7f2d4e395dd89ce845ab2.1773665966.git.ljs@kernel.org
-      - 4145ac7131b6 "mm: convert do_brk_flags() to use vma_flags_t" (16/23)
+      - a93482be1632 "mm: convert do_brk_flags() to use vma_flags_t" (16/23)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/063af0422d99bee0195589aa63f8f44edaf409fa.1773665966.git.ljs@kernel.org
-      - fd9d26e89d4f "mm: update vma_supports_mlock() to use new VMA flags" (17/23)
+      - cec6f1ebda67 "mm: update vma_supports_mlock() to use new VMA flags" (17/23)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/2f82b5b93599e89b391ee4672928cefdfd2fb2f8.1773665966.git.ljs@kernel.org
-      - 84af4aecf41f "mm/vma: introduce vma_clear_flags[_mask]()" (18/23)
+      - eff20ef7c427 "mm/vma: introduce vma_clear_flags[_mask]()" (18/23)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/397c67b154a4868e19db9be1012e976148901de2.1773665966.git.ljs@kernel.org
-      - b612c139b55a "mm/vma: convert as much as we can in mm/vma.c to vma_flags_t" (20/23)
+      - e2a51895432b "mm/vma: convert as much as we can in mm/vma.c to vma_flags_t" (20/23)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/4d938877d17158a74858af98a6e5bf5d93292fc1.1773665966.git.ljs@kernel.org
-      - a62ba7c4d29e "mm/vma: convert __mmap_region() to use vma_flags_t" (22/23)
+      - e1a6f9085cc7 "mm/vma: convert __mmap_region() to use vma_flags_t" (22/23)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/0dfdae451f825437e042db9b434a7d509dce6841.1773665966.git.ljs@kernel.org
     - series "mm: expand mmap_prepare functionality and usage", v2. (16 commits)
-      - a705f7ae8050 "mm: various small mmap_prepare cleanups" (0/16)
+      - 67f7c09b99fc "mm: various small mmap_prepare cleanups" (0/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/cover.1773695307.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/afcb42b88acac93c6437b0dbbc71bba0b0e7429e.1773695307.git.ljs@kernel.org
-      - d9a2d76f0d67 "mm: document vm_operations_struct->open the same as close()" (2/16)
+      - 4b236ca35324 "mm: document vm_operations_struct->open the same as close()" (2/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/3cec125f9eaf9dc44e638a56c76d12c58684af87.1773695307.git.ljs@kernel.org
-      - 7f413c20b651 "mm: add vm_ops->mapped hook" (3/16)
+      - 3e47b9748691 "mm: add vm_ops->mapped hook" (3/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/700b3a31185c1b4255c8410c7724ffd123488467.1773695307.git.ljs@kernel.org
-      - 6758616ae023 "mm: add mmap_action_simple_ioremap()" (5/16)
+      - 8d0dd83341ef "mm: add mmap_action_simple_ioremap()" (5/16)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/1e58aaf3cdb61cc317d890c12c9a558dfc206913.1773695307.git.ljs@kernel.org
-      - b9daa158b3a6 "mm: allow handling of stacked mmap_prepare hooks in more drivers" (11/16)
+      - 5519fbc3f21d "mm: allow handling of stacked mmap_prepare hooks in more drivers" (11/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/72750af6906fd96fb6f18e83ac3e694cf357a2c1.1773695307.git.ljs@kernel.org
-      - c1f35b2dfb48 "mm: add mmap_action_map_kernel_pages[_full]()" (14/16)
+      - 43b4c9bd15ae "mm: add mmap_action_map_kernel_pages[_full]()" (14/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/8e28e4b63bae67bfa1a59ccbac9dc6db1442d75d.1773695307.git.ljs@kernel.org
-      - f66402ccaf08 "mm: on remap assert that input range within the proposed VMA" (15/16)
+      - e89846a71118 "mm: on remap assert that input range within the proposed VMA" (15/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/4e152e7b8e1a93baf0777628eef9409d031cf8f6.1773695307.git.ljs@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 5 total, 0 (1) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 1 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 2 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 7c94bc229469 "unshare: fix nsproxy leak in ksys_unshare() on set_cred_ucounts() failure"
+    - e0cb752db6d3 "unshare: fix nsproxy leak in ksys_unshare() on set_cred_ucounts() failure"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260213193959.2556730-1-mge@meta.com
-    - c964b92ceb52 "fork: replace simple_strtoul with kstrtoul in coredump_filter_setup"
+    - 60d137332432 "fork: replace simple_strtoul with kstrtoul in coredump_filter_setup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20251215142152.4082-2-thorsten.blum@linux.dev
-    - a3fadace3593 "fork: zero vmap stack using clear_pages() instead of memset()"
+    - 20399f358138 "fork: zero vmap stack using clear_pages() instead of memset()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260224-mm-fork-clear-pages-v1-1-184c65a72d49@kernel.org
       - Link: https://lore.kernel.org/linux-mm/dpnwsp7dl4535rd7qmszanw6u5an2p74uxfex4dh53frpb7pu3@2bnjjavjrepe/
       - Link: https://lore.kernel.org/20240311164638.2015063-7-pasha.tatashin@soleen.com
-      - 82da307763c3 "pid: document the PIDNS_ADDING checks in alloc_pid() and copy_process()" (1/2)
+      - 98c46b80230b "pid: document the PIDNS_ADDING checks in alloc_pid() and copy_process()" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/aaGIRElc78U4Er42@redhat.com
-    - 2ee79ed98c51 "kernel/fork: validate exit_signal in kernel_clone()"
-      - Authored by no role player, reviewed by nobody
+    - 9b2ec1e6dbca "kernel/fork: validate exit_signal in kernel_clone()"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
       - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
       - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]

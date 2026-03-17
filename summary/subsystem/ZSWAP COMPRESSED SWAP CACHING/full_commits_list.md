@@ -1,42 +1,46 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e
+- baseline: v7.0-rc4-25-gf0caa1d49cc07
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 1fdff9413628 "mm/zswap: add missing kunmap_local()"
+    - 8d6e0cdd568c "mm/zswap: add missing kunmap_local()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260316140122.339697-1-ljs@kernel.org
+    - 08287e8d75ed "mm-zswap-add-missing-kunmap_local-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/13e09a99-181f-45ac-a18d-057faf94bccb@lucifer.local
+      - Link: https://docs.kernel.org/core-api/cachetlb.html [0]
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 4 total, 0 (3) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 4 commits
   - full commits list
-      - bcc08a66b97c "selftests/cgroup: add test for zswap incompressible pages" (1/2)
+      - edb3fb38879c "selftests/cgroup: add test for zswap incompressible pages" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260213071827.5688-3-jiayuan.chen@linux.dev
-    - 611b33968e31 "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
+    - c15162e792ad "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260202-zswap-syncio-cleanup-v1-1-86bb24a64521@tencent.com
-      - c9a48e199273 "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
+      - 2c393c2e4e82 "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com
-      - dc408b802bfd "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
+      - 32bc006dbc7a "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com
 - mm-new: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
+    - no role, nobody: 2 commits
   - full commits list
     - series "zswap pool per-CPU acomp_ctx simplifications". (2 commits)
-      - 48ba8385cfe4 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (0/2)
-        - Authored by no role player, reviewed by no role player
+      - 43ba1650bc78 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead()" (0/2)
+        - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260314051632.17931-1-kanchanapsridhar2026@gmail.com
-        - Link: https://lkml.kernel.org/r/20260314051632.17931-2-kanchanapsridhar2026@gmail.com
+        - Link: https://lkml.kernel.org/r/20260317014802.27591-2-kanchanapsridhar2026@gmail.com
         - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677 [1]
-      - 9a4793c61f6f "mm: zswap: consistently use IS_ERR_OR_NULL() to check acomp_ctx resources" (1/2)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260314051632.17931-3-kanchanapsridhar2026@gmail.com
+      - a22fa9f22cf6 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (1/2)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260317014802.27591-3-kanchanapsridhar2026@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
