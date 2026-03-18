@@ -1,4 +1,4 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc4-25-gf0caa1d49cc07
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -14,7 +14,7 @@
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
   - changed commits
-    - 183c92900bfb "hugetlb: update vmemmap_dedup.rst"
+    - e8118c7a47a4 "hugetlb: update vmemmap_dedup.rst"
       - Authored by no role player, reviewed by a maintainer
       - added "Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org"
       - dropped "Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org"
@@ -41,10 +41,6 @@
       - dropped "Cc: WANG Xuerui <kernel@xen0n.name>"
       - dropped "Cc: Zi Yan <ziy@nvidia.com>"
       - Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
-    - cb7178d74d26 "selftests/mm: fix soft-dirty kselftest supported check"
-      - Authored by no role player, reviewed by nobody
-      - added "Fixes: 600bca580579 ("selftests/mm: check that PAGEMAP_SCAN returns correct categories")"
-      - Link: https://lkml.kernel.org/r/20260218184210.206466-1-audra@redhat.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)

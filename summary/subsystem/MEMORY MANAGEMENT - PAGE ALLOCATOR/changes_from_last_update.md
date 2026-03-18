@@ -1,4 +1,4 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc4-25-gf0caa1d49cc07
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -14,18 +14,10 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4)
-      - d39e793e2ace "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-4-421e30d881e0@debian.org"
-        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+  - dropped commits
     - series "kho: add support for deferred struct page init", v7. (3)
       - 4903abf1903e "kho: fix deferred init of kho scratch (1/3)"
         - Authored by no role player, reviewed by nobody

@@ -8,19 +8,19 @@
     - no role, reviewer: 3 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-      - 2304d00e4674 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 872749d6f808 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - a14fddcf0948 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+      - ab3f18071746 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-    - d73c0f37663f "mm/migrate_device: document folio_get requirement before frozen PMD split"
+    - 114850db4d85 "mm/migrate_device: document folio_get requirement before frozen PMD split"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
-    - 91d532789643 "mm: migrate: requeue destination folio on deferred split queue"
+    - b124df979ec7 "mm: migrate: requeue destination folio on deferred split queue"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev
-      - 0f28a23692ba "mm: introduce is_pmd_order helper" (1/5)
+      - c7046dee48fa "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,13 +1,9 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc4-25-gf0caa1d49cc07
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 20e07f679c15 "mm/pagewalk: fix race between concurrent split and refault"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260317-pagewalk-check-pmd-refault-v1-1-f699a010f2b3@akamai.com
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 73 -> 73 commits (no change)
@@ -21,19 +17,6 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4)
-      - 748b53227ea4 "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-1-31eb98fa5a8b@debian.org"
-        - added "Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-0-31eb98fa5a8b@debian.org"
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-1-421e30d881e0@debian.org"
-        - dropped "Link: https://lkml.kernel.org/r/20260311-thp_logs-v6-0-421e30d881e0@debian.org"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-0-31eb98fa5a8b@debian.org
-        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-1-31eb98fa5a8b@debian.org
 - mm-new: 19 -> 19 commits (no change)
   - series: 2 (19) -> 2 (19) (no change)
     - no role, nobody: 17 -> 17 commits (no change)
@@ -43,14 +26,6 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 5 -> 5 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 1 -> 2 commits
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - 9b2ec1e6dbca "kernel/fork: validate exit_signal in kernel_clone()"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Oleg Nesterov <oleg@redhat.com>"
-      - dropped "Cc: Oleg Nesterov <oleg@redhat.com>"
-      - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
-      - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
-      - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]

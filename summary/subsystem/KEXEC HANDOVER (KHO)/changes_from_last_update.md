@@ -1,4 +1,4 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc4-25-gf0caa1d49cc07
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -9,10 +9,10 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
+- mm-new: 1 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+  - dropped commits
     - series "kho: add support for deferred struct page init", v7. (3)
       - 0306cb984b04 "kho: make kho_scratch_overlap usable outside debugging (0/3)"
         - Authored by no role player, reviewed by nobody

@@ -1,14 +1,6 @@
-- baseline: v7.0-rc3-16-gb4f0dd314b39e -> v7.0-rc4-25-gf0caa1d49cc07
-- mm-hotfixes-stable: 2 -> 0 commits
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 0 commits
-  - dropped commits
-    - 29f40594a281 "mm/rmap: fix incorrect pte restoration for lazyfree folios"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260303061528.2429162-1-dev.jain@arm.com
-    - 939080834fef "mm/huge_memory: fix early failure try_to_migrate() when split huge pmd for shared THP"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260305015006.27343-1-richard.weiyang@gmail.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)

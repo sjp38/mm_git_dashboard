@@ -8,31 +8,25 @@
     - no role, maintainer: 3 commits
   - full commits list
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
-      - 20ac4537a92c "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
+      - 0b12bbb247c9 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 2304d00e4674 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 872749d6f808 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 1bb442fdbe0a "arch, mm: consolidate empty_zero_page" (2/4)
+      - da2e3b16e3a4 "arch, mm: consolidate empty_zero_page" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - 20d2213df7f8 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
+      - cda48a7dcf8a "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-      - 3df2fa9540ef "mm: change the interface of prep_compound_tail()" (1/17)
+      - c517d5f16581 "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - db7b275ca8bc "mm: convert zone lock users to wrappers" (1/5)
+      - 9b0295b80418 "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-      - 4903abf1903e "kho: fix deferred init of kho scratch" (1/3)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260317141534.815634-3-mclapinski@google.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
