@@ -6,8 +6,8 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 3 commits
-    - no role, reviewer: 7 commits
-    - no role, maintainer: 4 commits
+    - no role, reviewer: 6 commits
+    - no role, maintainer: 5 commits
     - reviewer, reviewer: 1 commits
     - maintainer, nobody: 1 commits
     - maintainer, reviewer: 3 commits

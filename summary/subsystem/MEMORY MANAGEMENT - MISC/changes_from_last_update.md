@@ -7,14 +7,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 34 -> 34 commits (no change)
   - series: 2 (20) -> 2 (20) (no change)
-    - no role, nobody: 7 -> 7 commits (no change)
+    - no role, nobody: 7 -> 6 commits
     - no role, no role : 14 -> 14 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 6 -> 6 commits (no change)
+    - no role, maintainer: 6 -> 7 commits
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
   - changed commits
-    - e8118c7a47a4 "hugetlb: update vmemmap_dedup.rst"
+    - 6253d92afa21 "hugetlb: update vmemmap_dedup.rst"
       - Authored by no role player, reviewed by a maintainer
       - added "Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org"
       - dropped "Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org"
@@ -41,9 +41,63 @@
       - dropped "Cc: WANG Xuerui <kernel@xen0n.name>"
       - dropped "Cc: Zi Yan <ziy@nvidia.com>"
       - Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+    - f0bd57d13180 "Docs/mm/damon: document exclusivity of special-purpose modules"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260315162945.80994-1-sj@kernel.org
+      - Link: https://lore.kernel.org/damon/20260314002119.79742-1-sj@kernel.org/T/#t [1]
+- mm-new: 1 -> 9 commits
+  - series: 0 (0) -> 1 (6)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 3 commits
+    - no role, reviewer: 0 -> 4 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 826e835fe01e "Docs/mm/damon/design: document DAMON actions when TRANSPARENT_HUGEPAGE is off"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260318035349.88715-1-sj@kernel.org
+      - Link: https://lore.kernel.org/66131775-180b-4b9f-b7ce-61a3e077b6e6@huawei-partners.com/ [1]
+    - 0a03b56105c3 "selftests/mm: add folio_split() and filemap_get_entry() race test"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
+      - Link: https://github.com/dfinity/thp-madv-remove-test [2]
+      - Link: https://lkml.kernel.org/r/20260319190409.294523-1-ziy@nvidia.com
+    - series "selftests/mm: skip several tests when thp is not available", v4. (5)
+      - 223355f8d01c "selftests/mm/guard-regions: skip collapse test when thp not enabled (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260319160656.1480279-1-chuhu@redhat.com
+        - Link: https://lkml.kernel.org/r/20260319160656.1480279-2-chuhu@redhat.com
+      - c7648f22ac6c "selftests/mm: soft-dirty: skip two tests when thp is not available (1/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260319160656.1480279-3-chuhu@redhat.com
+      - af39937bd001 "selftests/mm: move write_file helper to vm_util (2/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260319160656.1480279-4-chuhu@redhat.com
+      - 5baf75c0e6da "selftests/mm: split_huge_page_test: skip the test when thp is not available (3/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260319160656.1480279-5-chuhu@redhat.com
+      - 248b90e4964c "selftests/mm: transhuge_stress: skip the test when thp not available (4/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260319160656.1480279-6-chuhu@redhat.com
+    - series "mm: remove CONFIG_ARCH_ENABLE_MEMORY_HOTREMOVE and cleanup CONFIG_MIGRATION". (2)
+      - b3c3dc1b3299 "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
+  - changed commits
+    - 077a45da3143 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-new
+      - added "Link: https://lkml.kernel.org/r/abongwF3X0G8xY1I@chrisdown.name"
+      - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - added "Cc: Liam Howlett <liam.howlett@oracle.com>"
+      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/aaBWG4fajXXbjpVN@chrisdown.name"
+      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Cc: "Liam R. Howlett" <Liam.Howlett@oracle.com>"
+      - Link: https://lkml.kernel.org/r/abongwF3X0G8xY1I@chrisdown.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

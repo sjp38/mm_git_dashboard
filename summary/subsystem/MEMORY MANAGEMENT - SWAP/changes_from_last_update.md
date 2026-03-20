@@ -5,15 +5,19 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 26 -> 26 commits (no change)
+- mm-unstable: 26 -> 27 commits
   - series: 2 (21) -> 2 (21) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+    - no role, no role : 3 -> 4 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 12 -> 12 commits (no change)
+  - new commits
+    - a12ff2f1b547 "mm/swapfile: remove duplicate include of swap_table.h"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260318043849.399266-1-nichen@iscas.ac.cn
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

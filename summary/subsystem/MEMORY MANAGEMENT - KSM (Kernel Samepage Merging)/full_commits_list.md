@@ -2,24 +2,21 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
+- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
+    - no role, no role : 3 commits
   - full commits list
     - series "KSM: Optimizations for rmap_walk_ksm", v3. (2 commits)
-      - 905ad8c327d7 "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
+      - 9a0a86069e9c "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212192820223O_r2NQzSEPG_C56cs-z4l@zte.com.cn
         - Link: https://lkml.kernel.org/r/20260212192932941MSsJEAyoRW4YdLBN7_myn@zte.com.cn
-      - f1e04062adee "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
+      - ee100156d490 "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-      - 129dfb76e7eb "mm: convert do_brk_flags() to use vma_flags_t" (16/23)
+      - 6ad34ceba0e2 "mm: convert do_brk_flags() to use vma_flags_t" (16/23)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/063af0422d99bee0195589aa63f8f44edaf409fa.1773665966.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/981ed1afcd19115432e61778e7d226a36f8f5c2b.1773846935.git.ljs@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

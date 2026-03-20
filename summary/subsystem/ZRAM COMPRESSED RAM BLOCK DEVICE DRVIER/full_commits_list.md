@@ -1,49 +1,52 @@
 - baseline: v7.0-rc4-25-gf0caa1d49cc07
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - maintainer, maintainer: 1 commits
+  - full commits list
+    - 6d8566726a09 "zram: do not slot_free() written-back slots"
+      - Authored by a maintainer, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260319034912.1894770-1-senozhatsky@chromium.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 9 total, 1 (6) series, 3 non-series commits
+- mm-unstable: 10 total, 1 (6) series, 4 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 2 commits
     - maintainer, nobody: 5 commits
-    - maintainer, no role : 2 commits
+    - maintainer, no role : 3 commits
   - full commits list
-    - 95299748510d "zram: use statically allocated compression algorithm names"
+    - 8aa019f807f3 "zram: use statically allocated compression algorithm names"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/5bb2e9318d124dbcb2b743dcdce6a950@honor.com
     - series "zram: recompression cleanups and tweaks", v2. (6 commits)
-      - c3ae636f8116 "zram: do not permit params change after init" (0/6)
+      - 3c8a73127d19 "zram: do not permit params change after init" (0/6)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-1-senozhatsky@chromium.org
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-2-senozhatsky@chromium.org
-      - d74d53596181 "zram: do not autocorrect bad recompression parameters" (1/6)
+      - 77d94cf4c082 "zram: do not autocorrect bad recompression parameters" (1/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-3-senozhatsky@chromium.org
-      - d7d18f349523 "zram: drop ->num_active_comps" (2/6)
+      - 3e5c790b98f5 "zram: drop ->num_active_comps" (2/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-4-senozhatsky@chromium.org
-      - b4b02b0aaafe "zram: update recompression documentation" (3/6)
+      - 382d0f602e40 "zram: update recompression documentation" (3/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-5-senozhatsky@chromium.org
-      - 78ba261ae593 "zram: remove chained recompression" (4/6)
+      - f4531d15787f "zram: remove chained recompression" (4/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-6-senozhatsky@chromium.org
-      - 7969bce1825a "zram: unify and harden algo/priority params handling" (5/6)
+      - cd2d37c542d2 "zram: unify and harden algo/priority params handling" (5/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-7-senozhatsky@chromium.org
-    - 2f375c71e567 "zram: optimize LZ4 dictionary compression performance"
+    - cff81f992b19 "zram: optimize LZ4 dictionary compression performance"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/698181478c9c4b10aa21b4a847bdc706@honor.com
       - Link: https://github.com/lz4/lz4?tab=readme-ov-file [1]
-    - e990e94fd801 "zram: propagate read_from_bdev_async() errors"
+    - 9253e1bd85f7 "zram: propagate read_from_bdev_async() errors"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260316015354.114465-1-senozhatsky@chromium.org
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - maintainer, nobody: 1 commits
-  - full commits list
-    - 39849a557385 "zram: change scan_slots to return void"
-      - Authored by a maintainer, reviewed by nobody
+    - 0c9fc7a9ee5c "zram: change scan_slots to return void"
+      - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260317032349.753645-1-senozhatsky@chromium.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

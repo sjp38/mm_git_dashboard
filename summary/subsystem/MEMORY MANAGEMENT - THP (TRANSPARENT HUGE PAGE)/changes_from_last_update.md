@@ -12,8 +12,57 @@
     - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 13 commits
+  - series: 0 (0) -> 1 (13)
+    - no role, nobody: 0 -> 7 commits
+    - no role, reviewer: 0 -> 5 commits
+    - maintainer, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: switch THP shrinker to list_lru", v3. (7)
+      - 74289ca71d66 "mm: switch deferred split shrinker to list_lru (6/7)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
+    - series "selftests/mm: skip several tests when thp is not available", v4. (5)
+      - af39937bd001 "selftests/mm: move write_file helper to vm_util (2/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260319160656.1480279-4-chuhu@redhat.com
+      - 5baf75c0e6da "selftests/mm: split_huge_page_test: skip the test when thp is not available (3/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260319160656.1480279-5-chuhu@redhat.com
+      - 248b90e4964c "selftests/mm: transhuge_stress: skip the test when thp not available (4/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260319160656.1480279-6-chuhu@redhat.com
+    - series "mm/huge_memory: refactor zap_huge_pmd()", v2. (9)
+      - 4ad30b93afb9 "mm/huge_memory: simplify vma_is_specal_huge() (0/9)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/cover.1773924928.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/613669b1b2082d34f5632907003ae3874eff2ed9.1773924928.git.ljs@kernel.org
+        - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/ [0]
+      - a3b7763cbb14 "mm/huge: avoid big else branch in zap_huge_pmd() (1/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/f641f0c9256d54b2266b60caa0538799ea881144.1773924928.git.ljs@kernel.org
+      - 2fdbe433a9ab "mm/huge_memory: have zap_huge_pmd return a boolean, add kdoc (2/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/8bb854291383ff4713427e6d903d6d79435eb153.1773924928.git.ljs@kernel.org
+      - edd447b7f864 "mm/huge_memory: handle buggy PMD entry in zap_huge_pmd() (3/9)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/1ec18767b106a1ee1ed6e33e332c3ad5531dc636.1773924928.git.ljs@kernel.org
+        - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/ [1]
+      - e666bbf788ee "mm/huge_memory: add a common exit path to zap_huge_pmd() (4/9)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/f5d3d47da1bc1607fc01604c0e803c3248d8a1fb.1773924928.git.ljs@kernel.org
+      - 84e7255385c2 "mm/huge_memory: remove unnecessary VM_BUG_ON_PAGE() (5/9)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/3fcbddfbfd0408364fad4548be83455a59d17f79.1773924928.git.ljs@kernel.org
+      - e883ee8e3250 "mm/huge_memory: deduplicate zap deposited table call (6/9)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/29fa4129cd560681c67433b4c344b2c9a027d1b4.1773924928.git.ljs@kernel.org
+      - d82a8fa3e0dc "mm/huge_memory: deduplicate zap_huge_pmd() further by tracking state (7/9)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/440f68edcb597c28918d89b0be279d498561c89a.1773924928.git.ljs@kernel.org
+      - 13f23c1b68a4 "mm/huge_memory: have zap_huge_pmd() use vm_normal_folio_pmd() (8/9)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/d2bfe24c36ab1cc28f3dd6bea2835fd895c1ae4e.1773924928.git.ljs@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

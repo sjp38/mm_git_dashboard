@@ -9,14 +9,25 @@
   - series: 1 (6) -> 1 (6) (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-  - dropped commits
-    - series "kho: add support for deferred struct page init", v7. (3)
-      - 4903abf1903e "kho: fix deferred init of kho scratch (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260317141534.815634-3-mclapinski@google.com
+- mm-new: 0 -> 4 commits
+  - series: 0 (0) -> 0 (4)
+    - no role, no role : 0 -> 3 commits
+    - maintainer, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14)
+      - d00fbf764d7e "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP (5/14)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260317165652.99114-7-david@kernel.org
+      - 3be8d89b24e4 "mm/bootmem_info: avoid using sparse_decode_mem_map() (6/14)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260317165652.99114-8-david@kernel.org
+      - 68e96bc7f91d "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c (9/14)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260317165652.99114-11-david@kernel.org
+    - series "mm: switch THP shrinker to list_lru", v3. (7)
+      - 74289ca71d66 "mm: switch deferred split shrinker to list_lru (6/7)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

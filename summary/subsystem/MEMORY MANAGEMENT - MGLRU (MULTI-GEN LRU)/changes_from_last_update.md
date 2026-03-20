@@ -16,8 +16,35 @@
     - reviewer, maintainer: 3 -> 3 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+  - changed commits
+    - 362668524746 "mm: remove '!root_reclaim' checking in should_abort_scan()"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lkml.kernel.org/r/20260318011558.1696310-1-zhaoyang.huang@unisoc.com"
+      - Link: https://lkml.kernel.org/r/20260318011558.1696310-1-zhaoyang.huang@unisoc.com
+      - Link: https://lkml.kernel.org/r/20260212032111.408865-1-zhaoyang.huang@unisoc.com
+- mm-new: 0 -> 5 commits
+  - series: 0 (0) -> 0 (4)
+    - no role, no role : 0 -> 3 commits
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14)
+      - 68e96bc7f91d "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c (9/14)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260317165652.99114-11-david@kernel.org
+      - 65d4cd3fde95 "mm/sparse: move sparse_init_one_section() to internal.h (11/14)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260317165652.99114-13-david@kernel.org
+      - 5ce8ac511e64 "mm/sparse: move memory hotplug bits to sparse-vmemmap.c (13/14)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260317165652.99114-15-david@kernel.org
+    - series "mm: switch THP shrinker to list_lru", v3. (7)
+      - 74289ca71d66 "mm: switch deferred split shrinker to list_lru (6/7)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
+    - dc5e2c85d569 "mm/mglru: fix cgroup OOM during MGLRU state switching"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260319-b4-switch-mglru-v2-v5-1-8898491e5f17@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

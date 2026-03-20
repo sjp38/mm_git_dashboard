@@ -2,162 +2,157 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 17 total, 2 (14) series, 3 non-series commits
+- mm-unstable: 45 total, 4 (42) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 7 commits
-    - no role, no role : 6 commits
-    - no role, reviewer: 2 commits
+    - no role, nobody: 25 commits
+    - no role, no role : 14 commits
+    - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 9783b5f8a8b3 "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
+    - e7a58d18e4de "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260219063506.545148-1-sgsu.park@samsung.com
-      - 03dc93adf5ac "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 592e7cbbb819 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - d55fb08eeb4e "mm/memory: simplify calculation in unmap_mapping_range_tree()" (4/16)
+      - 6356614bd272 "mm/memory: simplify calculation in unmap_mapping_range_tree()" (4/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-5-david@kernel.org
-      - 184262cb3754 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 3acd3dd75814 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
     - series "mm: vma flag tweaks". (6 commits)
-      - 35f616354932 "mm: rename VMA flag helpers to be more readable" (0/6)
+      - f8f6b8c9fcc4 "mm: rename VMA flag helpers to be more readable" (0/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - 9395a1c8a3c6 "mm: add vma_desc_test_all() and use it" (1/6)
+      - 14f59967dff0 "mm: add vma_desc_test_all() and use it" (1/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/568c8f8d6a84ff64014f997517cba7a629f7eed6.1772704455.git.ljs@kernel.org
-      - d4d6b0199bd5 "mm: always inline __mk_vma_flags() and invoked functions" (2/6)
+      - 0bc29df5bcb5 "mm: always inline __mk_vma_flags() and invoked functions" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/241f49c52074d436edbb9c6a6662a8dc142a8f43.1772704455.git.ljs@kernel.org
-      - 1e3f218892ac "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
+      - 83ca2183c7a0 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - c624132a0680 "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
+      - 6b24cac15a79 "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
-      - 840fe2369f3c "tools/testing/vma: add test for vma_flags_test(), vma_desc_test()" (5/6)
+      - 27f08becf9e0 "tools/testing/vma: add test for vma_flags_test(), vma_desc_test()" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/376a39eb9e134d2c8ab10e32720dd292970b080a.1772704455.git.ljs@kernel.org
-    - c7646f1f1e57 "tools-testing-vma-add-test-for-vma_flags_test-vma_desc_test-fix"
+    - 7cb7e56c3e1c "tools-testing-vma-add-test-for-vma_flags_test-vma_desc_test-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/f6f396d2-1ba2-426f-b756-d8cc5985cc7c@lucifer.local
-      - 4e5372441f35 "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
+      - 03164ba75076 "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
-    - 945328749b3f "mm: prevent droppable mappings from being locked"
+    - 26e86f007b36 "mm: prevent droppable mappings from being locked"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260310155821.17869-1-anthony.yznaga@oracle.com
     - series "mm: improve map count checks". (3 commits)
-      - 569d3b3769f8 "mm/mremap: correct invalid map count check" (0/3)
+      - cc9eabd8e85e "mm/mremap: correct invalid map count check" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/cover.1773249037.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/73e218c67dcd197c5331840fb011e2c17155bfb0.1773249037.git.ljs@kernel.org
-      - adde9df07bd6 "mm: abstract reading sysctl_max_map_count, and READ_ONCE()" (1/3)
+      - 8f4c1464c8c3 "mm: abstract reading sysctl_max_map_count, and READ_ONCE()" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/0715259eb37cbdfde4f9e5db92a20ec7110a1ce5.1773249037.git.ljs@kernel.org
-      - 2049fe57f822 "mm/mremap: check map count under mmap write lock and abstract" (2/3)
+      - cd358853e511 "mm/mremap: check map count under mmap write lock and abstract" (2/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/18be0b48eaa8e8804eb745974ee729c3ade0c687.1773249037.git.ljs@kernel.org
-      - 587b43cb5923 "mm/khugepaged: rename hpage_collapse_* to collapse_*" (3/5)
+      - 29e15a419537 "mm/khugepaged: rename hpage_collapse_* to collapse_*" (3/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-5-npache@redhat.com
-- mm-new: 28 total, 2 (28) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 26 commits
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
-  - full commits list
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v2. (23 commits)
-      - ef2e2cd213b9 "mm/vma: add vma_flags_empty(), vma_flags_and(), vma_flags_diff_pair()" (0/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/cover.1773665966.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/ede9b0f8a2e2dc72e7fbc1a0ddbeb513364c28a2.1773665966.git.ljs@kernel.org
-      - a11daf9b875d "tools/testing/vma: add unit tests flag empty, diff_pair, and[_mask]" (1/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/1d789fcc7dba9f93ec844aa87a48b13451dba211.1773665966.git.ljs@kernel.org
-      - 529620a65512 "mm/vma: add further vma_flags_t unions" (2/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/a37030f2eefc90147e84f9273e325cc289cb9e1d.1773665966.git.ljs@kernel.org
-      - 93297c1daa40 "tools/testing/vma: convert bulk of test code to vma_flags_t" (3/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/54d2f092b55e29e53916862faa191854b441d8e9.1773665966.git.ljs@kernel.org
-      - a3d5dda94d93 "mm/vma: use new VMA flags for sticky flags logic" (4/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/005cac3e37830a33f473edc780a5dae5e00a3845.1773665966.git.ljs@kernel.org
-      - db1cb180b925 "tools/testing/vma: fix VMA flag tests" (5/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/42b963d3229ed39a758f1bea218fd274a7cd3811.1773665966.git.ljs@kernel.org
-      - c279276b7483 "mm/vma: add append_vma_flags() helper" (6/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/756b9c46ee23e00c2fe64d453ff61dd3b98aa3fc.1773665966.git.ljs@kernel.org
-      - c8ffc058c73f "tools/testing/vma: add simple test for append_vma_flags()" (7/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/8253a553f354e6ef9b1ddea4831c0033e64eb796.1773665966.git.ljs@kernel.org
-      - bb385d2eb943 "mm: unexport vm_brk_flags() and eliminate vm_flags parameter" (8/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/ba7d1eae0208551c05f4a2015133b926d6650484.1773665966.git.ljs@kernel.org
-      - 95ed1f0cfe2d "mm/vma: introduce vma_flags_same[_mask/_pair]()" (9/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/393378bdcbb49141304d5eff7b8dad2966b73c30.1773665966.git.ljs@kernel.org
-      - 2487295185eb "mm/vma: introduce [vma_flags,legacy]_to_[legacy,vma_flags]() helpers" (10/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/19cfb4297cb691dc16c75e9e6a24f6564743407e.1773665966.git.ljs@kernel.org
-      - f640d8a933e7 "tools/testing/vma: test that legacy flag helpers work correctly" (11/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/4f1956b7e1e15293f75bffb5eda3d967a1da6f5d.1773665966.git.ljs@kernel.org
-      - 4e9577db4541 "mm/vma: introduce vma_test[_any[_mask]](), and make inlining consistent" (12/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/8aeaf08d153c3c3196855fdc9ddbacccf673ef82.1773665966.git.ljs@kernel.org
-      - 3ce97b51c455 "tools/testing/vma: update VMA flag tests to test vma_test[_any_mask]()" (13/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/ecd6e0134c4495310d6914b8177e99886e17d22f.1773665966.git.ljs@kernel.org
-      - 8736ee44fbda "mm: introduce vma_flags_count() and vma[_flags]_test_single_mask()" (14/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/96e7481026067766bfd7f2d4e395dd89ce845ab2.1773665966.git.ljs@kernel.org
-      - d5b77f7712a0 "tools/testing/vma: test vma_flags_count,vma[_flags]_test_single_mask" (15/23)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/140b9b77da1ef463f969cbeb2b5fb25627301cd6.1773665966.git.ljs@kernel.org
-      - 129dfb76e7eb "mm: convert do_brk_flags() to use vma_flags_t" (16/23)
+    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v3. (23 commits)
+      - fc428eb0c31d "mm/vma: add vma_flags_empty(), vma_flags_and(), vma_flags_diff_pair()" (0/23)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/063af0422d99bee0195589aa63f8f44edaf409fa.1773665966.git.ljs@kernel.org
-      - 8ce4f2ada84e "mm/vma: introduce vma_clear_flags[_mask]()" (18/23)
+        - Link: https://lkml.kernel.org/r/cover.1773846935.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/ca9062b3d08ae38bc149e98eb146c44c8a113b7d.1773846935.git.ljs@kernel.org
+      - 00c28aa97cf8 "tools/testing/vma: add unit tests flag empty, diff_pair, and[_mask]" (1/23)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/397c67b154a4868e19db9be1012e976148901de2.1773665966.git.ljs@kernel.org
-      - aa7c2084e475 "tools/testing/vma: update VMA tests to test vma_clear_flags[_mask]()" (19/23)
+        - Link: https://lkml.kernel.org/r/038076638f6e828fa286cd5d19653506f56da8b4.1773846935.git.ljs@kernel.org
+      - 9e37ec7dbaaa "mm/vma: add further vma_flags_t unions" (2/23)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/6a2c2cfa2e0c1582647c39eb427f2aa53357e97e.1773846935.git.ljs@kernel.org
+      - 869b1d112d5c "tools/testing/vma: convert bulk of test code to vma_flags_t" (3/23)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/65bc0bbd98698f4dc68c046e6f867274b1497d8a.1773665966.git.ljs@kernel.org
-      - b7afbe846817 "mm/vma: convert as much as we can in mm/vma.c to vma_flags_t" (20/23)
+        - Link: https://lkml.kernel.org/r/d9a0b78797aff39609d83078ac0743e6a6938011.1773846935.git.ljs@kernel.org
+      - bbc8b69c67b4 "mm/vma: use new VMA flags for sticky flags logic" (4/23)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/fd4276d39055290061f87e9fded20b6a6b712975.1773846935.git.ljs@kernel.org
+      - e28a78b63afd "tools/testing/vma: fix VMA flag tests" (5/23)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/4d938877d17158a74858af98a6e5bf5d93292fc1.1773665966.git.ljs@kernel.org
-      - 67d7cce4c174 "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t" (21/23)
+        - Link: https://lkml.kernel.org/r/d2050c8d8d7ef7ef118267031df73bb5c747df3e.1773846935.git.ljs@kernel.org
+      - 18f9a5fd6735 "mm/vma: add append_vma_flags() helper" (6/23)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/868641e2dbf62e3e04108a0b8092df25c250e3b9.1773846935.git.ljs@kernel.org
+      - 8307a4a544c7 "tools/testing/vma: add simple test for append_vma_flags()" (7/23)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/0737c1b5e3b3688ec3839058b95203c9e7622de9.1773665966.git.ljs@kernel.org
-      - 3d17a8f57305 "mm/vma: convert __mmap_region() to use vma_flags_t" (22/23)
+        - Link: https://lkml.kernel.org/r/45960c2380b7dd30571fa7e082a16da016a7f53e.1773846935.git.ljs@kernel.org
+      - f05db583789a "mm: unexport vm_brk_flags() and eliminate vm_flags parameter" (8/23)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/297c7690f17257ba11a7b8c94fe54709a64d89fb.1773846935.git.ljs@kernel.org
+      - 0c77604b3a1e "mm/vma: introduce vma_flags_same[_mask/_pair]()" (9/23)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/028d03f1b980b7f65fcc556db2e97224c06af1a6.1773846935.git.ljs@kernel.org
+      - c041cb24e690 "mm/vma: introduce [vma_flags,legacy]_to_[legacy,vma_flags]() helpers" (10/23)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/4fdffd05ee7fabe2dc313850a4300bf184beba69.1773846935.git.ljs@kernel.org
+      - d1f0f604c86a "tools/testing/vma: test that legacy flag helpers work correctly" (11/23)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/0dfdae451f825437e042db9b434a7d509dce6841.1773665966.git.ljs@kernel.org
-    - series "mm: expand mmap_prepare functionality and usage", v2. (16 commits)
-      - ae0171196f7a "mm: various small mmap_prepare cleanups" (0/16)
+        - Link: https://lkml.kernel.org/r/4bbead202fcd419239913a61de769b209aa298fd.1773846935.git.ljs@kernel.org
+      - cb9053888af0 "mm/vma: introduce vma_test[_any[_mask]](), and make inlining consistent" (12/23)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/cover.1773695307.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/afcb42b88acac93c6437b0dbbc71bba0b0e7429e.1773695307.git.ljs@kernel.org
-      - bcdf371b0e2f "mm: document vm_operations_struct->open the same as close()" (2/16)
+        - Link: https://lkml.kernel.org/r/7ea63af87bd35f20b204a14ad4912592e02b15a6.1773846935.git.ljs@kernel.org
+      - 35570026ceda "tools/testing/vma: update VMA flag tests to test vma_test[_any_mask]()" (13/23)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/3cec125f9eaf9dc44e638a56c76d12c58684af87.1773695307.git.ljs@kernel.org
-      - 9a6a92d35197 "mm: add vm_ops->mapped hook" (3/16)
+        - Link: https://lkml.kernel.org/r/7dfbb4e8b24808b7e94470717a560a52130907bf.1773846935.git.ljs@kernel.org
+      - 9676b207b068 "mm: introduce vma_flags_count() and vma[_flags]_test_single_mask()" (14/23)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/700b3a31185c1b4255c8410c7724ffd123488467.1773695307.git.ljs@kernel.org
-      - bd80617db7b6 "mm: add mmap_action_simple_ioremap()" (5/16)
+        - Link: https://lkml.kernel.org/r/02a6b26542ab70d60175e0125cff5fd00073c7ae.1773846935.git.ljs@kernel.org
+      - 91bd3a1b2dbe "tools/testing/vma: test vma_flags_count,vma[_flags]_test_single_mask" (15/23)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/3ed8fb69ba554dd3c765a74fd66991e05cf87509.1773846935.git.ljs@kernel.org
+      - 6ad34ceba0e2 "mm: convert do_brk_flags() to use vma_flags_t" (16/23)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/981ed1afcd19115432e61778e7d226a36f8f5c2b.1773846935.git.ljs@kernel.org
+      - d94080c8c605 "mm/vma: introduce vma_clear_flags[_mask]()" (18/23)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/b2edda6f00c10ef63013257f282cf155fb371b06.1773846935.git.ljs@kernel.org
+      - 5838c6d621ca "tools/testing/vma: update VMA tests to test vma_clear_flags[_mask]()" (19/23)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/c2f83d5711753f5b0a6d9a69819f9207a997d728.1773846935.git.ljs@kernel.org
+      - 70743d1ea26a "mm/vma: convert as much as we can in mm/vma.c to vma_flags_t" (20/23)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/44a952b98d68fc231ab231de6de04b077866bab8.1773846935.git.ljs@kernel.org
+      - 4f6394b1370e "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t" (21/23)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/98a004bf89227ea9abaef5fef06ea7e584f77bcf.1773846935.git.ljs@kernel.org
+      - d07ff8b3b024 "mm/vma: convert __mmap_region() to use vma_flags_t" (22/23)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/c587f5ed177fd4f62b66cb8d5321fa56eeb6a69a.1773846935.git.ljs@kernel.org
+    - series "mm: expand mmap_prepare functionality and usage", v3. (16 commits)
+      - 4a748a18046a "mm: various small mmap_prepare cleanups" (0/16)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/498a579bfbcbb8b0e4a9c39243b4454347f03a46.1773944114.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/498a579bfbcbb8b0e4a9c39243b4454347f03a46.1773944114.git.ljs@kernel.org
+      - fab059bc79ba "mm: document vm_operations_struct->open the same as close()" (2/16)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/808919eaae0b682ec631301b3c06d85c62ba428d.1773944114.git.ljs@kernel.org
+      - 04b10d609926 "mm: add vm_ops->mapped hook" (3/16)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/a97366fa6f22a0ca1340cfd2b0d4df87c80ac80a.1773944114.git.ljs@kernel.org
+      - b259118a5772 "mm: add mmap_action_simple_ioremap()" (5/16)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/1e58aaf3cdb61cc317d890c12c9a558dfc206913.1773695307.git.ljs@kernel.org
-      - 60b187cbbc23 "mm: allow handling of stacked mmap_prepare hooks in more drivers" (11/16)
+        - Link: https://lkml.kernel.org/r/cd8492e65adc48ab75596293c821efd21fea1283.1773944114.git.ljs@kernel.org
+      - c07f76d5e088 "mm: allow handling of stacked mmap_prepare hooks in more drivers" (11/16)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/72750af6906fd96fb6f18e83ac3e694cf357a2c1.1773695307.git.ljs@kernel.org
-      - 7eed4936f21b "mm: add mmap_action_map_kernel_pages[_full]()" (14/16)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/8e28e4b63bae67bfa1a59ccbac9dc6db1442d75d.1773695307.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/05b4d97d6248777a827f17445760b460cd293cb4.1773944114.git.ljs@kernel.org
+      - 65f6f7b8ee22 "mm: add mmap_action_map_kernel_pages[_full]()" (14/16)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/54ff3670662e10a66ce0c1a13c0ae93b99a5f201.1773944114.git.ljs@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

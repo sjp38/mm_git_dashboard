@@ -9,15 +9,8 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 1 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-  - dropped commits
-    - series "kho: add support for deferred struct page init", v7. (3)
-      - 0306cb984b04 "kho: make kho_scratch_overlap usable outside debugging (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260317141534.815634-1-mclapinski@google.com
-        - Link: https://lkml.kernel.org/r/20260317141534.815634-2-mclapinski@google.com
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

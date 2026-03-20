@@ -9,19 +9,20 @@
   - series: 2 (15) -> 2 (15) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 7 -> 7 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
+    - no role, reviewer: 7 -> 6 commits
+    - no role, maintainer: 4 -> 5 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-  - dropped commits
-    - series "kho: add support for deferred struct page init", v7. (3)
-      - 4903abf1903e "kho: fix deferred init of kho scratch (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260317141534.815634-3-mclapinski@google.com
+  - changed commits
+    - 6049868155fa "mm: introduce a new page type for page pool in page type"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Jakub Kicinski <kuba@kernel.org>"
+      - dropped "Cc: Jakub Kacinski <kuba@kernel.org>"
+      - dropped "Cc: Jakub Kicinski <kuba@kernel.org>"
+      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

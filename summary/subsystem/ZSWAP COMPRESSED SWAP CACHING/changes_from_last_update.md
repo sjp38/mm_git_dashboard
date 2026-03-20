@@ -1,18 +1,47 @@
 - baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - 5a9ec632c723 "mm/zswap: add missing kunmap_local()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "[ljs@kernel.org: add flush_dcache_folio() after the kunmap_local() call]"
+      - added "Link: : https://lkml.kernel.org/r/13e09a99-181f-45ac-a18d-057faf94bccb@lucifer.local"
+      - added "Link: https://docs.kernel.org/core-api/cachetlb.html [0]"
+      - added "Acked-by: Nhat Pham <nphamcs@gmail.com>"
+      - dropped "Cc: Nhat Pham <nphamcs@gmail.com>"
+      - Link: : https://lkml.kernel.org/r/13e09a99-181f-45ac-a18d-057faf94bccb@lucifer.local
+      - Link: https://lkml.kernel.org/r/20260316140122.339697-1-ljs@kernel.org
+      - Link: https://docs.kernel.org/core-api/cachetlb.html [0]
+  - dropped commits
+    - d5907c8aa552 "mm-zswap-add-missing-kunmap_local-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/13e09a99-181f-45ac-a18d-057faf94bccb@lucifer.local
+      - Link: https://docs.kernel.org/core-api/cachetlb.html [0]
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
+- mm-unstable: 4 -> 6 commits
+  - series: 0 (3) -> 1 (5)
+    - no role, nobody: 0 -> 2 commits
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+  - changed commits
+    - series "zswap pool per-CPU acomp_ctx simplifications". (2)
+      - d6971577b040 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead() (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260314051632.17931-1-kanchanapsridhar2026@gmail.com
+        - Link: https://lkml.kernel.org/r/20260317014802.27591-2-kanchanapsridhar2026@gmail.com
+        - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677 [1]
+      - 7120be3b0fd1 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260317014802.27591-3-kanchanapsridhar2026@gmail.com
+- mm-new: 2 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

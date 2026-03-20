@@ -12,7 +12,7 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
   - changed commits
-    - e8118c7a47a4 "hugetlb: update vmemmap_dedup.rst"
+    - 6253d92afa21 "hugetlb: update vmemmap_dedup.rst"
       - Authored by no role player, reviewed by a maintainer
       - added "Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org"
       - dropped "Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org"
@@ -39,8 +39,13 @@
       - dropped "Cc: WANG Xuerui <kernel@xen0n.name>"
       - dropped "Cc: Zi Yan <ziy@nvidia.com>"
       - Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - a2767d041701 "mm/hugetlb: fix memory offline failure due to hwpoisoned file hugetlb"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260318020711.3596947-1-tujinjiang@huawei.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
