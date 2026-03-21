@@ -8,24 +8,24 @@
     - no role, no role : 5 commits
   - full commits list
     - series "mm: cleanups around unmapping / zapping". (16 commits)
-      - d02263f3bbf2 "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
+      - 79816f8b537e "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260227200848.114019-2-david@kernel.org
         - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
-      - 0f099198511d "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
+      - ae67af3e5dca "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
-      - 15a13add10d2 "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
+      - d7796ce83115 "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-10-david@kernel.org
-      - 8b8d01bc88cf "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (14/16)
+      - 3b339b9cdaaf "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (14/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-14-david@kernel.org
-      - d85342763445 "mm: rename zap_page_range_single() to zap_vma_range()" (15/16)
+      - 25756232147b "mm: rename zap_page_range_single() to zap_vma_range()" (15/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
-      - 6d3014e5f75f "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t" (22/25)
+      - ca9d2b9b09a3 "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t" (22/25)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/51afbb2b8c3681003cc7926647e37335d793836e.1774034900.git.ljs@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

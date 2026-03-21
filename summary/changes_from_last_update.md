@@ -1,57 +1,51 @@
 - baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 13 -> 14 commits
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-hotfixes-unstable: 14 -> 17 commits
+  - series: 0 (0) -> 1 (3)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 5 -> 6 commits
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, no role : 6 -> 6 commits (no change)
+    - no role, maintainer: 2 -> 5 commits
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - 33167c72235d "lib/bug.c: shut up format attribute warning for clang as well"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260320211528.2474389-1-arnd@kernel.org
+    - series "mm/damon/sysfs: fix memory leak and NULL dereference issues", v4. (3)
+      - c3deba0c4b3c "mm/damon/sysfs: fix param_ctx leak on damon_sysfs_new_test_ctx() failure (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260321175427.86000-1-sj@kernel.org
+        - Link: https://lkml.kernel.org/r/20260321175427.86000-2-sj@kernel.org
+      - 497010db1361 "mm/damon/sysfs: check contexts->nr before accessing contexts_arr[0] (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260321175427.86000-3-sj@kernel.org
+      - 19f4f2f8d68a "mm/damon/sysfs: check contexts->nr in repeat_call_fn (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://patch.msgid.link/20260320163559.178101-3-objecting@objecting.org
+        - Link: https://lkml.kernel.org/r/20260321175427.86000-4-sj@kernel.org
+        - Link: https://github.com/damonitor/damo [1]
+  - changed commits
+    - f20df44c21ea "mm/swap: fix swap cache memcg accounting"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Chris Li <chrisl@kernel.org>"
+      - dropped "Cc: Chris Li <chrisl@kernel.org>"
+      - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 436 -> 436 commits (no change)
-  - series: 44 (331) -> 43 (333)
-    - no role, nobody: 73 -> 77 commits
-    - no role, no role : 136 -> 132 commits
+  - series: 43 (333) -> 43 (333) (no change)
+    - no role, nobody: 77 -> 77 commits (no change)
+    - no role, no role : 132 -> 132 commits (no change)
     - no role, reviewer: 32 -> 32 commits (no change)
     - no role, maintainer: 59 -> 59 commits (no change)
-    - reviewer, nobody: 2 -> 1 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 6 -> 6 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 90 -> 91 commits
+    - maintainer, nobody: 91 -> 91 commits (no change)
     - maintainer, no role : 13 -> 13 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 17 -> 17 commits (no change)
-  - new commits
-    - series "mm: expand mmap_prepare functionality and usage", v4. (21)
-      - 77882f8516ea "mm: avoid deadlock when holding rmap on mmap_prepare error (3/21)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/d44248be9da68258b07c2c59d4e73485ee0ca943.1774045440.git.ljs@kernel.org
-      - 806e3f068233 "mm: switch the rmap lock held option off in compat layer (4/21)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/dda74230d26a1fcd79a3efab61fa4101dd1cac64.1774045440.git.ljs@kernel.org
-      - 246f3aa4a845 "mm/vma: remove superfluous map->hold_file_rmap_lock (5/21)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/42c3fbb701e361a17193ecda0d2dabcc326288a5.1774045440.git.ljs@kernel.org
-      - c8c227a40224 "mm: have mmap_action_complete() handle the rmap lock and unmap (6/21)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/8d1ee8ebd3542d006a47e8382fb80cf5b57ecf10.1774045440.git.ljs@kernel.org
-      - af120aeeae0b "fs: afs: revert mmap_prepare() change (8/21)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/08804c94e39d9102a3a8fbd12385e8aa079ba1d3.1774045440.git.ljs@kernel.org
-      - b30ca4c2c147 "fs: afs: restore mmap_prepare implementation (9/21)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/ad9a94350a9c7d2bdab79fc397ef0f64d3412d71.1774045440.git.ljs@kernel.org
-    - fcd5d03dd3a9 "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
-      - Authored by a maintainer, reviewed by nobody
   - changed commits
-    - 6546df92f436 "hugetlb: update vmemmap_dedup.rst"
+    - 8586048ec844 "hugetlb: update vmemmap_dedup.rst"
       - Authored by no role player, reviewed by a maintainer
       - added "Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org"
       - dropped "Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org"
@@ -78,140 +72,95 @@
       - dropped "Cc: WANG Xuerui <kernel@xen0n.name>"
       - dropped "Cc: Zi Yan <ziy@nvidia.com>"
       - Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
-    - series "mm: expand mmap_prepare functionality and usage", v4. (21)
-      - 7dae301e2132 "mm: various small mmap_prepare cleanups (0/21)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/cover.1774045440.git.ljs@kernel.org"
-        - added "Link: https://lkml.kernel.org/r/99f408e4694f44ab12bdc55fe0bd9685d3bd1117.1774045440.git.ljs@kernel.org"
-        - added "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/498a579bfbcbb8b0e4a9c39243b4454347f03a46.1773944114.git.ljs@kernel.org"
-        - dropped "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/cover.1774045440.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/99f408e4694f44ab12bdc55fe0bd9685d3bd1117.1774045440.git.ljs@kernel.org
-      - f52bf31e5b03 "mm: add documentation for the mmap_prepare file operation callback (1/21)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/3aebf918c213fa2aecf00a31a444119b5bdd7801.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/172ef809d9976b067bba4cd9d2b78410c6c6d03d.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/3aebf918c213fa2aecf00a31a444119b5bdd7801.1774045440.git.ljs@kernel.org
-      - 784114d506b1 "mm: document vm_operations_struct->open the same as close() (2/21)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/7d0ca833c12014320f0fa00f816f95e6e10076f2.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/808919eaae0b682ec631301b3c06d85c62ba428d.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/7d0ca833c12014320f0fa00f816f95e6e10076f2.1774045440.git.ljs@kernel.org
-      - b69a19e5fb71 "mm: add vm_ops->mapped hook (7/21)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/4c5e98297eb0aae9565c564e1c296a112702f144.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/a97366fa6f22a0ca1340cfd2b0d4df87c80ac80a.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/4c5e98297eb0aae9565c564e1c296a112702f144.1774045440.git.ljs@kernel.org
-      - 7916cc3149d9 "mm: add mmap_action_simple_ioremap() (10/21)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/a08ef1c4542202684da63bb37f459d5dbbeddd91.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/cd8492e65adc48ab75596293c821efd21fea1283.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/a08ef1c4542202684da63bb37f459d5dbbeddd91.1774045440.git.ljs@kernel.org
-      - 7cf21d0f4c91 "misc: open-dice: replace deprecated mmap hook with mmap_prepare (11/21)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/5a83ab00195dc8d0609fa6cc525493010ac4ead1.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/eca64f8c12ea145c9667ab7059ce16c50d919b44.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/5a83ab00195dc8d0609fa6cc525493010ac4ead1.1774045440.git.ljs@kernel.org
-      - 7d8062509f6f "hpet: replace deprecated mmap hook with mmap_prepare (12/21)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/094c5fcfb2459a4f6d791b1fb852b01e252a44d4.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/aad6e8903eb4a8949f658eaf57a55a09a104c6f6.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/094c5fcfb2459a4f6d791b1fb852b01e252a44d4.1774045440.git.ljs@kernel.org
-      - 853b98b18a7b "mtdchar: replace deprecated mmap hook with mmap_prepare, clean up (13/21)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lkml.kernel.org/r/d036855c21962c58ace0eb24ecd6d973d77424fe.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/d439d6941f4b1a3f598e6a6a95630d215152961f.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/d036855c21962c58ace0eb24ecd6d973d77424fe.1774045440.git.ljs@kernel.org
-      - 7392e533b30b "stm: replace deprecated mmap hook with mmap_prepare (14/21)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/9f3d559a264a83cf45518fcf35cc7ef1d7dfd500.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/f549353e1705dd885de4041e8facf18866c7f7bd.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/9f3d559a264a83cf45518fcf35cc7ef1d7dfd500.1774045440.git.ljs@kernel.org
-      - e0b4d9be3465 "staging: vme_user: replace deprecated mmap hook with mmap_prepare (15/21)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/08ecc1e1d319564fd49b9e9012f994edaff921db.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/3cd88c01d1bc8179e98c41c4da0f190d3300b86a.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/08ecc1e1d319564fd49b9e9012f994edaff921db.1774045440.git.ljs@kernel.org
-      - 8bf0e715d1c5 "mm: allow handling of stacked mmap_prepare hooks in more drivers (16/21)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/24aac3019dd34740e788d169fccbe3c62781e648.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/05b4d97d6248777a827f17445760b460cd293cb4.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/24aac3019dd34740e788d169fccbe3c62781e648.1774045440.git.ljs@kernel.org
-      - 43306a58eb73 "drivers: hv: vmbus: replace deprecated mmap hook with mmap_prepare (17/21)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/05467cb62267d750e5c770147517d4df0246cda6.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/e300a15e0576ee4b51a519b51bcac7e4a0871442.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/05467cb62267d750e5c770147517d4df0246cda6.1774045440.git.ljs@kernel.org
-      - 69300ab9340c "uio: replace deprecated mmap hook with mmap_prepare in uio_info (18/21)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/157583e4477705b496896c7acd4ac88a937b8fa6.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/22866c41d2886554517f6ebd93b321ad068c8abe.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/157583e4477705b496896c7acd4ac88a937b8fa6.1774045440.git.ljs@kernel.org
-      - 6b562cab2445 "mm: add mmap_action_map_kernel_pages[_full]() (19/21)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/926ac961690d856e67ec847bee2370ab3c6b9046.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/54ff3670662e10a66ce0c1a13c0ae93b99a5f201.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/926ac961690d856e67ec847bee2370ab3c6b9046.1774045440.git.ljs@kernel.org
-      - dc929b991fea "mm: on remap assert that input range within the proposed VMA (20/21)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/0fc1092f4b74f3f673a58e4e3942dc83f336dd85.1774045440.git.ljs@kernel.org"
-        - dropped "Link: https://lkml.kernel.org/r/a2b328f5b9bc902368b18c5b1678a0adb8693516.1773944114.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/0fc1092f4b74f3f673a58e4e3942dc83f336dd85.1774045440.git.ljs@kernel.org
-  - dropped commits
-    - series "Improve proc RSS accuracy", v18. (3)
-      - 1748864d835f "lib: introduce hierarchical per-cpu counters (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260227153730.1556542-1-mathieu.desnoyers@efficios.com
-        - Link: https://lore.kernel.org/lkml/20250331223516.7810-2-sweettea-kernel@dorminy.me/ # [1]
-        - Link: https://lkml.kernel.org/r/20260227153730.1556542-2-mathieu.desnoyers@efficios.com
-      - 142aac3fafc7 "lib: fix compare_delta parameter order in percpu_counter_tree (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260316143805.36805-1-devnexen@gmail.com
-        - Link: https://lkml.kernel.org/r/20260313175424.132735-1-devnexen@gmail.com
-      - 911ef7dea7d5 "lib: test hierarchical per-cpu counters (2/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260227153730.1556542-3-mathieu.desnoyers@efficios.com
-    - a8205f9bcd87 "lib: add kunit boundary tests for percpu_counter_tree comparisons"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260316143805.36805-2-devnexen@gmail.com
-    - 83f7b5628eca "lib: skip percpu_counter_tree boundary kunit tests on single-CPU"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260317153915.43559-1-devnexen@gmail.com
-    - 323028306264 "mm: improve RSS counter approximation accuracy for proc interfaces"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/lkml/20250331223516.7810-2-sweettea-kernel@dorminy.me/ # [1]
-      - Link: https://lkml.kernel.org/r/20260227153730.1556542-4-mathieu.desnoyers@efficios.com
-    - series "mm: expand mmap_prepare functionality and usage", v3. (16)
-      - e9d35d7beb73 "fs: afs: correctly drop reference count on mapping failure (4/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/018cd0d8b2dae44de6d3952527e754e52ef02da8.1773944114.git.ljs@kernel.org
-- mm-new: 40 -> 40 commits (no change)
-  - series: 5 (30) -> 5 (30) (no change)
-    - no role, nobody: 13 -> 13 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
-    - no role, reviewer: 9 -> 9 commits (no change)
-    - no role, maintainer: 8 -> 8 commits (no change)
+- mm-new: 40 -> 51 commits
+  - series: 5 (30) -> 6 (36)
+    - no role, nobody: 13 -> 14 commits
+    - no role, no role : 9 -> 15 commits
+    - no role, reviewer: 9 -> 12 commits
+    - no role, maintainer: 8 -> 9 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 98bd980d4f29 "mm/zsmalloc: copy KMSAN metadata in zs_page_migrate()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260321132912.93434-1-syoshida@redhat.com
+    - 766b33dbd095 "mm: mark early-init static variables with __meminitdata"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
+    - cb2ce3c77faf "mm: vmalloc: update outdated comment for renamed vread()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260321105820.7134-1-kexinsun@smail.nju.edu.cn
+    - 6ad664d3574c "mm: update outdated comments for removed scan_swap_map_slots()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260321105814.7053-1-kexinsun@smail.nju.edu.cn
+    - series "change young flag check functions to return bool", v2. (6)
+      - 1d1364a402e3 "mm: change to return bool for ptep_test_and_clear_young() (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/cover.1774075004.git.baolin.wang@linux.alibaba.com
+        - Link: https://lkml.kernel.org/r/57e70efa9703d43959aa645246ea3cbdba14fa17.1774075004.git.baolin.wang@linux.alibaba.com
+      - 5e650bbb7d82 "mm: change to return bool for ptep_clear_flush_young()/clear_flush_young_ptes() (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/24af5144b96103631594501f77d4525f2475c1be.1774075004.git.baolin.wang@linux.alibaba.com
+      - ba8e6f7a9fb2 "mm: change to return bool for pmdp_test_and_clear_young() (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/f1d31307a13365d3d0fed5809727dcc2dd59631b.1774075004.git.baolin.wang@linux.alibaba.com
+      - 50133e5c268b "mm: change to return bool for pmdp_clear_flush_young() (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/a668b9a974c0d675e7a41f6973bcbe3336e8b373.1774075004.git.baolin.wang@linux.alibaba.com
+      - 2734c925e262 "mm: change to return bool for pudp_test_and_clear_young() (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/2c56fe52c1bf9404145274d7e91d4a65060f6c7c.1774075004.git.baolin.wang@linux.alibaba.com
+      - 032702f224da "mm: change to return bool for the MMU notifier's young flag check (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/a9ad3fe938002d87358e7bfca264f753ab602561.1774075004.git.baolin.wang@linux.alibaba.com
+    - f0805cc2d979 "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260320173426.1831267-1-fvdl@google.com
+      - Link: https://lore.kernel.org/all/20231122013925.1507-1-justinjiang@vivo.com/ [1]
+  - changed commits
+    - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13)
+      - 56100a06a60a "mm/huge_memory: deduplicate zap deposited table call (6/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lkml.kernel.org/r/71f576a1fbcd27a86322d12caa937bcdacf75407.1774029655.git.ljs@kernel.org
+      - 0de669ef6ec8 "mm/huge_memory: use mm instead of tlb->mm (8/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lkml.kernel.org/r/98104cde87e4b2aabeb16f236b8731591594457f.1774029655.git.ljs@kernel.org
+      - 2477aa09dd0b "mm/huge_memory: separate out the folio part of zap_huge_pmd() (9/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lkml.kernel.org/r/6c4db67952f5529da4db102a6149b9050b5dda4e.1774029655.git.ljs@kernel.org
+    - e5a26b7a01a0 "mm/memcontrol: fix reclaim_options leak in try_charge_memcg()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://lkml.kernel.org/r/20260321033500.2558070-1-bingjiao@google.com"
+      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
+      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Link: https://lkml.kernel.org/r/20260318221957.2979346-1-bingjiao@google.com"
+      - dropped "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - Link: https://lkml.kernel.org/r/20260321033500.2558070-1-bingjiao@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 117 -> 120 commits
-  - series: 12 (60) -> 13 (62)
-    - no role, nobody: 60 -> 61 commits
+- mm-nonmm-unstable: 120 -> 120 commits (no change)
+  - series: 13 (62) -> 13 (62) (no change)
+    - no role, nobody: 61 -> 61 commits (no change)
     - no role, no role : 26 -> 26 commits (no change)
-    - no role, reviewer: 4 -> 5 commits
+    - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 24 -> 24 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 2 commits
+    - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
     - series "lib/list_sort: Clean up list_sort() scheduling workarounds", v3. (2)
-      - 03a865d791f7 "ubifs: remove unnecessary cond_resched() from list_sort() compare (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260320180938.1827148-1-visitorckw@gmail.com
-        - Link: https://lkml.kernel.org/r/20260320180938.1827148-2-visitorckw@gmail.com
+      - c7be08509672 "lib/list_sort: remove dummy cmp() calls to speed up merge_final() (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260320180938.1827148-3-visitorckw@gmail.com
+  - dropped commits
+    - series "lib/list_sort: Clean up list_sort() scheduling workarounds", v3. (2)
       - 054f1979adeb "lib/list_sort: Remove dummy cmp() calls to speed up merge_final() (1/2)"
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260320180938.1827148-3-visitorckw@gmail.com
-    - a2463a7a71dc "lib-list_sort-remove-dummy-cmp-calls-to-speed-up-merge_final-fix"
-      - Authored by a maintainer, reviewed by nobody

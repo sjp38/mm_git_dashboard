@@ -5,19 +5,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 36 -> 37 commits
+- mm-unstable: 37 -> 37 commits (no change)
   - series: 2 (20) -> 2 (20) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 15 -> 15 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
-    - maintainer, nobody: 3 -> 4 commits
+    - maintainer, nobody: 4 -> 4 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-  - new commits
-    - fcd5d03dd3a9 "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
-      - Authored by a maintainer, reviewed by nobody
   - changed commits
-    - 6546df92f436 "hugetlb: update vmemmap_dedup.rst"
+    - 8586048ec844 "hugetlb: update vmemmap_dedup.rst"
       - Authored by no role player, reviewed by a maintainer
       - added "Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org"
       - dropped "Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org"

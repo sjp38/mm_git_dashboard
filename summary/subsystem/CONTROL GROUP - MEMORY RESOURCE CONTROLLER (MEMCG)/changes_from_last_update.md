@@ -18,6 +18,17 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - e5a26b7a01a0 "mm/memcontrol: fix reclaim_options leak in try_charge_memcg()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://lkml.kernel.org/r/20260321033500.2558070-1-bingjiao@google.com"
+      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
+      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Link: https://lkml.kernel.org/r/20260318221957.2979346-1-bingjiao@google.com"
+      - dropped "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
+      - Link: https://lkml.kernel.org/r/20260321033500.2558070-1-bingjiao@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

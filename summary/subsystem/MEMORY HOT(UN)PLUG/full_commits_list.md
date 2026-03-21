@@ -7,22 +7,22 @@
     - no role, no role : 4 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 927433c4e216 "mm: name the anonymous MMOP enum as enum mmop"
+    - eb3afd066cd4 "mm: name the anonymous MMOP enum as enum mmop"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
-      - 49de23d0ec9b "mm: convert zone lock users to wrappers" (1/5)
+      - 0b962b126998 "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
     - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14 commits)
-      - dec94c389f60 "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
+      - e8044b174a31 "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260317165652.99114-2-david@kernel.org
-      - d51ff49bf935 "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
+      - b38235cfd06c "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-5-david@kernel.org
-      - 8e1cb0e6d953 "mm/sparse: remove sparse_decode_mem_map()" (7/14)
+      - 4379c770edb0 "mm/sparse: remove sparse_decode_mem_map()" (7/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-9-david@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
