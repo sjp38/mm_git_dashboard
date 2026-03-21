@@ -13,18 +13,15 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 4 -> 4 commits (no change)
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 1 commits
+- mm-new: 2 -> 3 commits
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - series "mm: switch THP shrinker to list_lru", v3. (7)
-      - 74289ca71d66 "mm: switch deferred split shrinker to list_lru (6/7)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
-    - 4d28be4f968d "mm/memcontrol: fix reclaim_options leak in try_charge_memcg()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260318221957.2979346-1-bingjiao@google.com
+    - 688f3d9a90ca "mm/memcontrol: batch memcg charging in __memcg_slab_post_alloc_hook"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260320020745.833792-1-hui.zhu@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

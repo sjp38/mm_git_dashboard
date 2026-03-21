@@ -5,24 +5,33 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 17 -> 18 commits
-  - series: 1 (16) -> 1 (17)
-    - no role, nobody: 13 -> 14 commits
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-unstable: 18 -> 18 commits (no change)
+  - series: 1 (17) -> 1 (17) (no change)
+    - no role, nobody: 14 -> 13 commits
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v3. (23)
-      - 4f6394b1370e "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t (21/23)"
+    - series "mm, kvm: allow uffd support in guest_memfd", v2. (15)
+      - bd3d371ab7f6 "userfaultfd: introduce mfill_copy_folio_locked() helper (0/15)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-1-rppt@kernel.org
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-2-rppt@kernel.org
+      - 6d645cde9fe5 "userfaultfd: introduce struct mfill_state (1/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-3-rppt@kernel.org
+    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v4. (25)
+      - 868628e26d42 "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t (22/25)"
         - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lkml.kernel.org/r/98a004bf89227ea9abaef5fef06ea7e584f77bcf.1773846935.git.ljs@kernel.org"
-        - added "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/0737c1b5e3b3688ec3839058b95203c9e7622de9.1773665966.git.ljs@kernel.org"
-        - Link: https://lkml.kernel.org/r/98a004bf89227ea9abaef5fef06ea7e584f77bcf.1773846935.git.ljs@kernel.org
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
+        - added "Link: https://lkml.kernel.org/r/51afbb2b8c3681003cc7926647e37335d793836e.1774034900.git.ljs@kernel.org"
+        - dropped "Link: https://lkml.kernel.org/r/98a004bf89227ea9abaef5fef06ea7e584f77bcf.1773846935.git.ljs@kernel.org"
+        - Link: https://lkml.kernel.org/r/51afbb2b8c3681003cc7926647e37335d793836e.1774034900.git.ljs@kernel.org
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

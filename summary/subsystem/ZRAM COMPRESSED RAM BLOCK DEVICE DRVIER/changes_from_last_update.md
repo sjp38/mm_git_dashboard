@@ -1,29 +1,24 @@
 - baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, maintainer: 0 -> 1 commits
-  - new commits
-    - 6d8566726a09 "zram: do not slot_free() written-back slots"
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - 580d7974fb24 "zram: do not slot_free() written-back slots"
       - Authored by a maintainer, reviewed by a maintainer
+      - added "Link: https://lkml.kernel.org/r/20260320023143.2372879-1-senozhatsky@chromium.org"
+      - Link: https://lkml.kernel.org/r/20260320023143.2372879-1-senozhatsky@chromium.org
       - Link: https://lkml.kernel.org/r/20260319034912.1894770-1-senozhatsky@chromium.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 9 -> 10 commits
+- mm-unstable: 10 -> 10 commits (no change)
   - series: 1 (6) -> 1 (6) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
-    - maintainer, no role : 2 -> 3 commits
-  - changed commits
-    - 0c9fc7a9ee5c "zram: change scan_slots to return void"
-      - Authored by a maintainer, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260317032349.753645-1-senozhatsky@chromium.org
-- mm-new: 1 -> 0 commits
+    - maintainer, no role : 3 -> 3 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

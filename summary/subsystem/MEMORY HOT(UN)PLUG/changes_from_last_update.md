@@ -5,25 +5,28 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-unstable: 2 -> 5 commits
+  - series: 0 (1) -> 1 (4)
+    - no role, no role : 1 -> 4 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 3 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, no role : 0 -> 3 commits
-  - new commits
+  - changed commits
     - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14)
-      - 19019599a4b5 "mm/memory_hotplug: remove for_each_valid_pfn() usage (0/14)"
+      - bfaf0f5cb8ee "mm/memory_hotplug: remove for_each_valid_pfn() usage (0/14)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260317165652.99114-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260317165652.99114-2-david@kernel.org
-      - 828a8dd78e88 "mm/memory_hotplug: simplify check_pfn_span() (3/14)"
+      - b105e055f6e4 "mm/memory_hotplug: simplify check_pfn_span() (3/14)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260317165652.99114-5-david@kernel.org
-      - ef62d3e39846 "mm/sparse: remove sparse_decode_mem_map() (7/14)"
+      - 42a7d66f96ad "mm/sparse: remove sparse_decode_mem_map() (7/14)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260317165652.99114-9-david@kernel.org
+- mm-new: 3 -> 0 commits
+  - series: 1 (3) -> 0 (0)
+    - no role, no role : 3 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

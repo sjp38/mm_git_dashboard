@@ -12,51 +12,99 @@
     - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
-- mm-new: 0 -> 13 commits
-  - series: 0 (0) -> 1 (13)
-    - no role, nobody: 0 -> 7 commits
-    - no role, reviewer: 0 -> 5 commits
-    - maintainer, maintainer: 0 -> 1 commits
+- mm-new: 13 -> 16 commits
+  - series: 1 (13) -> 1 (16)
+    - no role, nobody: 7 -> 7 commits (no change)
+    - no role, reviewer: 5 -> 8 commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - series "mm: switch THP shrinker to list_lru", v3. (7)
-      - 74289ca71d66 "mm: switch deferred split shrinker to list_lru (6/7)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
-    - series "selftests/mm: skip several tests when thp is not available", v4. (5)
-      - af39937bd001 "selftests/mm: move write_file helper to vm_util (2/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-4-chuhu@redhat.com
-      - 5baf75c0e6da "selftests/mm: split_huge_page_test: skip the test when thp is not available (3/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-5-chuhu@redhat.com
-      - 248b90e4964c "selftests/mm: transhuge_stress: skip the test when thp not available (4/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-6-chuhu@redhat.com
-    - series "mm/huge_memory: refactor zap_huge_pmd()", v2. (9)
-      - 4ad30b93afb9 "mm/huge_memory: simplify vma_is_specal_huge() (0/9)"
+    - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13)
+      - 378e9b7d1cb1 "mm/huge_memory: remove unnecessary sanity checks (7/13)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/cover.1773924928.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/613669b1b2082d34f5632907003ae3874eff2ed9.1773924928.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/0c4c5ab247c90f80cf44718e8124b217d6a22544.1774029655.git.ljs@kernel.org
+      - 6f8ac8da6f5d "mm/huge_memory: use mm instead of tlb->mm (8/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/98104cde87e4b2aabeb16f236b8731591594457f.1774029655.git.ljs@kernel.org
+      - df44914058f6 "mm/huge_memory: separate out the folio part of zap_huge_pmd() (9/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/6c4db67952f5529da4db102a6149b9050b5dda4e.1774029655.git.ljs@kernel.org
+      - 8b97635721d0 "mm/huge_memory: add and use normal_or_softleaf_folio_pmd() (11/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/c2be872d64ef9573b80727d9ab5446cf002f17b5.1774029655.git.ljs@kernel.org
+      - b84293e69b4b "mm/huge_memory: add and use has_deposited_pgtable() (12/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/f9db59ca90937e39913d50ecb4f662e2bad17bbb.1774029655.git.ljs@kernel.org
+  - changed commits
+    - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13)
+      - 23e6f76e96e1 "mm/huge_memory: simplify vma_is_specal_huge() (0/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lkml.kernel.org/r/cover.1774029655.git.ljs@kernel.org"
+        - added "Link: https://lkml.kernel.org/r/d2b65883dc4895f197c4b4a69fbf27a063463412.1774029655.git.ljs@kernel.org"
+        - dropped "Link: https://lkml.kernel.org/r/613669b1b2082d34f5632907003ae3874eff2ed9.1773924928.git.ljs@kernel.org"
+        - dropped "Link: https://lkml.kernel.org/r/cover.1773924928.git.ljs@kernel.org"
+        - dropped "Cc: Kiryl Shutsemau <kirill@shutemov.name>"
+        - Link: https://lkml.kernel.org/r/cover.1774029655.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/d2b65883dc4895f197c4b4a69fbf27a063463412.1774029655.git.ljs@kernel.org
         - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/ [0]
-      - a3b7763cbb14 "mm/huge: avoid big else branch in zap_huge_pmd() (1/9)"
+      - d2bbeb4013d6 "mm/huge: avoid big else branch in zap_huge_pmd() (1/13)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/f641f0c9256d54b2266b60caa0538799ea881144.1773924928.git.ljs@kernel.org
-      - 2fdbe433a9ab "mm/huge_memory: have zap_huge_pmd return a boolean, add kdoc (2/9)"
+        - added "Link: https://lkml.kernel.org/r/6b4d5efdbf5554b8fe788f677d0b50f355eec999.1774029655.git.ljs@kernel.org"
+        - added "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/f641f0c9256d54b2266b60caa0538799ea881144.1773924928.git.ljs@kernel.org"
+        - dropped "Cc: Kiryl Shutsemau <kirill@shutemov.name>"
+        - dropped "Cc: David Hildenbrand (ARM) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/6b4d5efdbf5554b8fe788f677d0b50f355eec999.1774029655.git.ljs@kernel.org
+      - 1f0744bb58cc "mm/huge_memory: have zap_huge_pmd return a boolean, add kdoc (2/13)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/8bb854291383ff4713427e6d903d6d79435eb153.1773924928.git.ljs@kernel.org
-      - edd447b7f864 "mm/huge_memory: handle buggy PMD entry in zap_huge_pmd() (3/9)"
+        - added "Link: https://lkml.kernel.org/r/132274566cd49d2960a2294c36dd2450593dfc55.1774029655.git.ljs@kernel.org"
+        - added "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/8bb854291383ff4713427e6d903d6d79435eb153.1773924928.git.ljs@kernel.org"
+        - dropped "Cc: Kiryl Shutsemau <kirill@shutemov.name>"
+        - dropped "Cc: David Hildenbrand (ARM) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/132274566cd49d2960a2294c36dd2450593dfc55.1774029655.git.ljs@kernel.org
+      - dcc15d468e2a "mm/huge_memory: handle buggy PMD entry in zap_huge_pmd() (3/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/"
+        - added "Link: https://lkml.kernel.org/r/fcf1f6de84a2ace188b6bf103fa15dde695f1ed8.1774029655.git.ljs@kernel.org"
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/1ec18767b106a1ee1ed6e33e332c3ad5531dc636.1773924928.git.ljs@kernel.org"
+        - dropped "Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/ [1]"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Kiryl Shutsemau <kirill@shutemov.name>"
+        - dropped "Cc: David Hildenbrand (ARM) <david@kernel.org>"
+        - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/
+        - Link: https://lkml.kernel.org/r/fcf1f6de84a2ace188b6bf103fa15dde695f1ed8.1774029655.git.ljs@kernel.org
+      - e133f4da2d8a "mm/huge_memory: add a common exit path to zap_huge_pmd() (4/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/6b281d8ed972dff0e89bdcbdd810c96c7ae8c9dc.1774029655.git.ljs@kernel.org"
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/f5d3d47da1bc1607fc01604c0e803c3248d8a1fb.1773924928.git.ljs@kernel.org"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Kiryl Shutsemau <kirill@shutemov.name>"
+        - dropped "Cc: David Hildenbrand (ARM) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/6b281d8ed972dff0e89bdcbdd810c96c7ae8c9dc.1774029655.git.ljs@kernel.org
+      - 3d7d9142ad84 "mm/huge_memory: remove unnecessary VM_BUG_ON_PAGE() (5/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/f3fa8eb4634ccb2e78209f570cc1a769a02ce93e.1774029655.git.ljs@kernel.org"
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/3fcbddfbfd0408364fad4548be83455a59d17f79.1773924928.git.ljs@kernel.org"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Kiryl Shutsemau <kirill@shutemov.name>"
+        - dropped "Cc: David Hildenbrand (ARM) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/f3fa8eb4634ccb2e78209f570cc1a769a02ce93e.1774029655.git.ljs@kernel.org
+      - 4a9644b29631 "mm/huge_memory: deduplicate zap deposited table call (6/13)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/1ec18767b106a1ee1ed6e33e332c3ad5531dc636.1773924928.git.ljs@kernel.org
-        - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/ [1]
-      - e666bbf788ee "mm/huge_memory: add a common exit path to zap_huge_pmd() (4/9)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/f5d3d47da1bc1607fc01604c0e803c3248d8a1fb.1773924928.git.ljs@kernel.org
-      - 84e7255385c2 "mm/huge_memory: remove unnecessary VM_BUG_ON_PAGE() (5/9)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/3fcbddfbfd0408364fad4548be83455a59d17f79.1773924928.git.ljs@kernel.org
-      - e883ee8e3250 "mm/huge_memory: deduplicate zap deposited table call (6/9)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/29fa4129cd560681c67433b4c344b2c9a027d1b4.1773924928.git.ljs@kernel.org
+        - added "Link: https://lkml.kernel.org/r/71f576a1fbcd27a86322d12caa937bcdacf75407.1774029655.git.ljs@kernel.org"
+        - added "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/29fa4129cd560681c67433b4c344b2c9a027d1b4.1773924928.git.ljs@kernel.org"
+        - dropped "Cc: Kiryl Shutsemau <kirill@shutemov.name>"
+        - dropped "Cc: David Hildenbrand (ARM) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/71f576a1fbcd27a86322d12caa937bcdacf75407.1774029655.git.ljs@kernel.org
+  - dropped commits
+    - series "mm/huge_memory: refactor zap_huge_pmd()", v2. (9)
       - d82a8fa3e0dc "mm/huge_memory: deduplicate zap_huge_pmd() further by tracking state (7/9)"
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/440f68edcb597c28918d89b0be279d498561c89a.1773924928.git.ljs@kernel.org

@@ -5,29 +5,29 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 1 (6) -> 1 (6) (no change)
+- mm-unstable: 6 -> 9 commits
+  - series: 1 (6) -> 1 (9)
+    - no role, no role : 0 -> 3 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 4 commits
-  - series: 0 (0) -> 0 (4)
-    - no role, no role : 0 -> 3 commits
-    - maintainer, maintainer: 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14)
-      - d00fbf764d7e "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP (5/14)"
+      - c6a4cccd60b2 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP (5/14)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260317165652.99114-7-david@kernel.org
-      - 3be8d89b24e4 "mm/bootmem_info: avoid using sparse_decode_mem_map() (6/14)"
+      - 2b8c2108f4b7 "mm/bootmem_info: avoid using sparse_decode_mem_map() (6/14)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260317165652.99114-8-david@kernel.org
-      - 68e96bc7f91d "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c (9/14)"
+      - c6eb2d43e99c "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c (9/14)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260317165652.99114-11-david@kernel.org
-    - series "mm: switch THP shrinker to list_lru", v3. (7)
-      - 74289ca71d66 "mm: switch deferred split shrinker to list_lru (6/7)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
+- mm-new: 4 -> 1 commits
+  - series: 0 (4) -> 0 (1)
+    - no role, no role : 3 -> 0 commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

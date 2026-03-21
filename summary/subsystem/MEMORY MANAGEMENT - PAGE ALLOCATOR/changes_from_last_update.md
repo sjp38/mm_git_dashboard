@@ -9,17 +9,16 @@
   - series: 2 (15) -> 2 (15) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 7 -> 6 commits
-    - no role, maintainer: 4 -> 5 commits
+    - no role, reviewer: 6 -> 6 commits (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
   - changed commits
-    - 6049868155fa "mm: introduce a new page type for page pool in page type"
+    - bbdf111c21d8 "mm: introduce a new page type for page pool in page type"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Jakub Kicinski <kuba@kernel.org>"
-      - dropped "Cc: Jakub Kacinski <kuba@kernel.org>"
-      - dropped "Cc: Jakub Kicinski <kuba@kernel.org>"
+      - added "Acked-by: Jesper Dangaard Brouer <hawk@kernel.org>"
+      - dropped "Cc: Jesper Dangaard Brouer <hawk@kernel.org>"
       - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
