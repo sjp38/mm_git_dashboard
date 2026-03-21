@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - b29367ec265b "zsmalloc: return -EBUSY for zspage migration lock contention"
+    - e926c08b943e "zsmalloc: return -EBUSY for zspage migration lock contention"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260319065924.69337-1-hui.zhu@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

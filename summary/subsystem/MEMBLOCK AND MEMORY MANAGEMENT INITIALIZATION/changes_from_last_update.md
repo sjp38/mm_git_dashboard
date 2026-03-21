@@ -5,28 +5,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 9 commits
-  - series: 1 (6) -> 1 (9)
-    - no role, no role : 0 -> 3 commits
+- mm-unstable: 9 -> 9 commits (no change)
+  - series: 1 (9) -> 1 (9) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14)
-      - c6a4cccd60b2 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP (5/14)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260317165652.99114-7-david@kernel.org
-      - 2b8c2108f4b7 "mm/bootmem_info: avoid using sparse_decode_mem_map() (6/14)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260317165652.99114-8-david@kernel.org
-      - c6eb2d43e99c "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c (9/14)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260317165652.99114-11-david@kernel.org
-- mm-new: 4 -> 1 commits
-  - series: 0 (4) -> 0 (1)
-    - no role, no role : 3 -> 0 commits
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

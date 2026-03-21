@@ -5,10 +5,10 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 33 -> 36 commits
-  - series: 1 (27) -> 1 (30)
+- mm-unstable: 36 -> 36 commits (no change)
+  - series: 1 (30) -> 1 (30) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 9 -> 12 commits
+    - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
@@ -16,23 +16,8 @@
     - reviewer, maintainer: 3 -> 3 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14)
-      - c6eb2d43e99c "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c (9/14)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260317165652.99114-11-david@kernel.org
-      - 190a3dd4e7de "mm/sparse: move sparse_init_one_section() to internal.h (11/14)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260317165652.99114-13-david@kernel.org
-      - 28edd9c5a25c "mm/sparse: move memory hotplug bits to sparse-vmemmap.c (13/14)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260317165652.99114-15-david@kernel.org
-- mm-new: 5 -> 2 commits
-  - series: 0 (4) -> 0 (1)
-    - no role, no role : 3 -> 0 commits
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

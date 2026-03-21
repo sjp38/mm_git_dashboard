@@ -8,21 +8,21 @@
     - no role, no role : 3 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - 039b7fd2ac9f "mm: vmalloc: streamline vmalloc memory accounting"
+    - b2b2e592f45c "mm: vmalloc: streamline vmalloc memory accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-    - 257391141eac "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+    - 335a26c8c0f7 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
     - series "Fix KASAN support for KHO restored vmalloc regions". (2 commits)
-      - ed26536ea08c "mm/vmalloc: export clear_vm_uninitialized_flag()" (0/2)
+      - bf5d818edb9b "mm/vmalloc: export clear_vm_uninitialized_flag()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
         - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
-    - e72a511718cd "mm/vmalloc: fix incorrect size reporting on allocation failure"
+    - b70650a79ac0 "mm/vmalloc: fix incorrect size reporting on allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260302114740.2668450-1-urezki@gmail.com
-    - 768374a0213f "vmalloc: support __GFP_RETRY_MAYFAIL and __GFP_NORETRY"
+    - 9b864063d873 "vmalloc: support __GFP_RETRY_MAYFAIL and __GFP_NORETRY"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302114740.2668450-2-urezki@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

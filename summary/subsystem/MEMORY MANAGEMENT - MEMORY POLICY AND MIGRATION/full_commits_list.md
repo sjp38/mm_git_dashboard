@@ -8,26 +8,26 @@
     - no role, reviewer: 3 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-      - 5e8120f97722 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 43c8705650e7 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 79f9616a26c4 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+      - d3a6f8f432ad "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-    - 0a8e35650c14 "mm/migrate_device: document folio_get requirement before frozen PMD split"
+    - 0fb08e934a00 "mm/migrate_device: document folio_get requirement before frozen PMD split"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
-    - 0f0c1efdc9f1 "mm: migrate: requeue destination folio on deferred split queue"
+    - cdac00dfbcf3 "mm: migrate: requeue destination folio on deferred split queue"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev
-      - a1ac3eb661ec "mm: introduce is_pmd_order helper" (1/5)
+      - 4a27cc2dfa74 "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 090f062b502d "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
+      - a9a23c667318 "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

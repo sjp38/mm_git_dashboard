@@ -5,16 +5,19 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 34 -> 36 commits
+- mm-unstable: 36 -> 37 commits
   - series: 2 (20) -> 2 (20) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 14 -> 15 commits
+    - no role, no role : 15 -> 15 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 7 -> 8 commits
-    - maintainer, nobody: 3 -> 3 commits (no change)
+    - no role, maintainer: 8 -> 8 commits (no change)
+    - maintainer, nobody: 3 -> 4 commits
     - maintainer, no role : 3 -> 3 commits (no change)
+  - new commits
+    - fcd5d03dd3a9 "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
+      - Authored by a maintainer, reviewed by nobody
   - changed commits
-    - 61759f668937 "hugetlb: update vmemmap_dedup.rst"
+    - 6546df92f436 "hugetlb: update vmemmap_dedup.rst"
       - Authored by no role player, reviewed by a maintainer
       - added "Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org"
       - dropped "Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org"
@@ -41,45 +44,12 @@
       - dropped "Cc: WANG Xuerui <kernel@xen0n.name>"
       - dropped "Cc: Zi Yan <ziy@nvidia.com>"
       - Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
-    - 7455cb357794 "selftests/mm: fix soft-dirty kselftest supported check"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lkml.kernel.org/r/20260320184010.759461-2-audra@redhat.com"
-      - added "Cc: Muhammad Usama Anjum <usama.anjum@collabora.com>"
-      - added "Cc: Colin Ian King <colin.i.king@gmail.com>"
-      - added "Cc: "Liam R. Howlett" <Liam.Howlett@oracle.com>"
-      - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - added "Cc: Andrei Vagin <avagin@google.com>"
-      - dropped "Link: https://lkml.kernel.org/r/20260218184210.206466-1-audra@redhat.com"
-      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-      - Link: https://lkml.kernel.org/r/20260320184010.759461-2-audra@redhat.com
-    - 6fa1bf6b010d "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/abongwF3X0G8xY1I@chrisdown.name
-    - 65911ebd150e "Docs/mm/damon/design: document DAMON actions when TRANSPARENT_HUGEPAGE is off"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260318035349.88715-1-sj@kernel.org
-      - Link: https://lore.kernel.org/66131775-180b-4b9f-b7ce-61a3e077b6e6@huawei-partners.com/ [1]
-- mm-new: 9 -> 10 commits
+- mm-new: 10 -> 10 commits (no change)
   - series: 1 (6) -> 1 (6) (no change)
-    - no role, nobody: 1 -> 3 commits
-    - no role, no role : 3 -> 2 commits
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 513df94dd7ae "selftests-mm-add-folio_split-and-filemap_get_entry-race-test-v4"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
-      - Link: https://github.com/dfinity/thp-madv-remove-test [2]
-      - Link: https://lkml.kernel.org/r/20260320142219.375118-1-ziy@nvidia.com
-    - cd48f0cc7971 "selftests-mm-add-folio_split-and-filemap_get_entry-race-test-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/D60C0C65-11E3-4060-9295-B67F90E9D774@nvidia.com
-    - a44ce7309545 "Docs/mm/damon: document min_nr_regions constraint and rationale"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260320052428.213230-1-aethernet65535@gmail.com
-      - Link: https://lore.kernel.org/damon/20260319151528.86490-1-sj@kernel.org/T/#t [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

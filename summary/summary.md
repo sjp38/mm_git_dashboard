@@ -1,24 +1,24 @@
 - baseline: v7.0-rc4-25-gf0caa1d49cc07
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 13 total, 0 (0) series, 13 non-series commits
+- mm-hotfixes-unstable: 14 total, 0 (0) series, 14 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, no role : 5 commits
+    - no role, no role : 6 commits
     - no role, maintainer: 2 commits
     - maintainer, nobody: 3 commits
     - maintainer, maintainer: 1 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 436 total, 44 (331) series, 105 non-series commits
+- mm-unstable: 436 total, 43 (333) series, 103 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 73 commits
-    - no role, no role : 136 commits
+    - no role, nobody: 77 commits
+    - no role, no role : 132 commits
     - no role, reviewer: 32 commits
     - no role, maintainer: 59 commits
-    - reviewer, nobody: 2 commits
+    - reviewer, nobody: 1 commits
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 6 commits
     - reviewer, maintainer: 3 commits
-    - maintainer, nobody: 90 commits
+    - maintainer, nobody: 91 commits
     - maintainer, no role : 13 commits
     - maintainer, reviewer: 3 commits
     - maintainer, maintainer: 17 commits
@@ -30,12 +30,12 @@
     - no role, maintainer: 8 commits
     - maintainer, maintainer: 1 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 117 total, 12 (60) series, 57 non-series commits
+- mm-nonmm-unstable: 120 total, 13 (62) series, 58 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 60 commits
+    - no role, nobody: 61 commits
     - no role, no role : 26 commits
-    - no role, reviewer: 4 commits
+    - no role, reviewer: 5 commits
     - no role, maintainer: 24 commits
     - reviewer, reviewer: 1 commits
-    - maintainer, nobody: 1 commits
+    - maintainer, nobody: 2 commits
     - maintainer, no role : 1 commits

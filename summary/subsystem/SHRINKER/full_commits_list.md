@@ -7,21 +7,21 @@
     - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 7c477415ec1d "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
+    - fbf59abbf4fb "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
       - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com
-      - 780f794c84e7 "mm: vmscan: add cgroup IDs to vmscan tracepoints" (1/3)
+      - bf42361ff775 "mm: vmscan: add cgroup IDs to vmscan tracepoints" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316160908.42727-3-tballasi@linux.microsoft.com
-    - 479fe4e9112c "mm: do not allocate shrinker info with cgroup.memory=nokmem"
+    - f1dcfd17aefa "mm: do not allocate shrinker info with cgroup.memory=nokmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260225-cgroup-ml-nokmem-shrinker-v1-1-d703899bdda4@suse.com
-    - 5f29f6680823 "mm-do-not-allocate-shrinker-info-with-cgroupmemory=nokmem-v2"
+    - bf48ea593465 "mm-do-not-allocate-shrinker-info-with-cgroupmemory=nokmem-v2"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260309-cgroup-ml-nokmem-shrinker-v2-1-3e7a7eefb6c9@suse.com
     - series "Eliminate Dying Memory Cgroup", v6. (33 commits)
-      - 2c4b6c7dec91 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
+      - bf4014640be1 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772711148.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
@@ -32,23 +32,23 @@
     - no role, no role : 6 commits
   - full commits list
     - series "mm: switch THP shrinker to list_lru", v3. (7 commits)
-      - e5122b50528e "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (0/7)
+      - 2fca33c30e85 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-1-hannes@cmpxchg.org
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-2-hannes@cmpxchg.org
-      - 540b399f9b45 "mm: list_lru: deduplicate unlock_list_lru()" (1/7)
+      - 4dd7a7c01fb8 "mm: list_lru: deduplicate unlock_list_lru()" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-3-hannes@cmpxchg.org
-      - 93e5f50e9642 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (2/7)
+      - 79e56b3f8385 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-4-hannes@cmpxchg.org
-      - 92fc55aff3e7 "mm: list_lru: deduplicate lock_list_lru()" (3/7)
+      - 4ab03439013a "mm: list_lru: deduplicate lock_list_lru()" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-5-hannes@cmpxchg.org
-      - 02bcff929943 "mm: list_lru: introduce caller locking for additions and deletions" (4/7)
+      - 645079f3ccb5 "mm: list_lru: introduce caller locking for additions and deletions" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-6-hannes@cmpxchg.org
-      - 67b7eabc3a9e "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (5/7)
+      - 424ecb7e9eb5 "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-7-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
