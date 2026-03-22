@@ -7,24 +7,30 @@
     - no role, no role : 4 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - eb3afd066cd4 "mm: name the anonymous MMOP enum as enum mmop"
+    - 8e7320d08446 "mm: name the anonymous MMOP enum as enum mmop"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
-      - 0b962b126998 "mm: convert zone lock users to wrappers" (1/5)
+      - f3a5cca55a48 "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
     - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14 commits)
-      - e8044b174a31 "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
+      - 6234b38020b4 "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260317165652.99114-2-david@kernel.org
-      - b38235cfd06c "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
+      - b6c0652f9a7c "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-5-david@kernel.org
-      - 4379c770edb0 "mm/sparse: remove sparse_decode_mem_map()" (7/14)
+      - 0f4207fa4c1c "mm/sparse: remove sparse_decode_mem_map()" (7/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-9-david@kernel.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - c51ea78c5466 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260321105704.6093-1-kexinsun@smail.nju.edu.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

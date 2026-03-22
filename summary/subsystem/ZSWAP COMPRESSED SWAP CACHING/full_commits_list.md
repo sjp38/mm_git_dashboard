@@ -1,39 +1,39 @@
 - baseline: v7.0-rc4-25-gf0caa1d49cc07
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 5f4cd245ab71 "mm/zswap: add missing kunmap_local()"
+    - 5510a3675a81 "mm/zswap: add missing kunmap_local()"
       - Authored by no role player, reviewed by a maintainer
       - Link: : https://lkml.kernel.org/r/13e09a99-181f-45ac-a18d-057faf94bccb@lucifer.local
       - Link: https://lkml.kernel.org/r/20260316140122.339697-1-ljs@kernel.org
       - Link: https://docs.kernel.org/core-api/cachetlb.html [0]
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 6 total, 1 (5) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, maintainer: 4 commits
   - full commits list
-      - aeab28776c40 "selftests/cgroup: add test for zswap incompressible pages" (1/2)
+      - 98d42df7ad3c "selftests/cgroup: add test for zswap incompressible pages" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260213071827.5688-3-jiayuan.chen@linux.dev
-    - 63ae3e1d294c "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
+    - 9592d0b9f772 "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260202-zswap-syncio-cleanup-v1-1-86bb24a64521@tencent.com
-      - 10066a3a890b "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
+      - 7bcf23d0a671 "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com
-      - 890deecb10ee "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
+      - e0d502d635f0 "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com
     - series "zswap pool per-CPU acomp_ctx simplifications". (2 commits)
-      - c0c0e771cbcd "mm: zswap: remove redundant checks in zswap_cpu_comp_dead()" (0/2)
+      - 2a1e4ffd3d73 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead()" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260314051632.17931-1-kanchanapsridhar2026@gmail.com
         - Link: https://lkml.kernel.org/r/20260317014802.27591-2-kanchanapsridhar2026@gmail.com
         - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677 [1]
-      - edeca7e35cad "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (1/2)
+      - 2cf850e36b59 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260317014802.27591-3-kanchanapsridhar2026@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

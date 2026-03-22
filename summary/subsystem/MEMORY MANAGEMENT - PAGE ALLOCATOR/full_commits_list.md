@@ -12,75 +12,75 @@
     - maintainer, nobody: 1 commits
     - maintainer, reviewer: 3 commits
   - full commits list
-    - 9c68ba80f55d "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+    - 41a6ecd6d5e1 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-      - 0dc09b1f3b0b "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 08710bd4818a "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 2235e7e6144d "mm: change the interface of prep_compound_tail()" (1/17)
+      - 834ac8c6c23e "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - fe4e25bb8bd7 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - c1e2648dd5ed "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
     - series "mm/page_alloc: pcp locking cleanup". (3 commits)
-      - 2451f511976c "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n" (0/3)
+      - 639b6d6c23b9 "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n" (0/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-0-f7e22e603447@kernel.org
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-1-f7e22e603447@kernel.org
         - Link: https://lore.kernel.org/all/d762c46b-36f0-471a-b5b4-23c8cf5628ae@suse.cz/ [1]
-      - cf66a30f4f70 "mm/page_alloc: remove IRQ saving/restoring from pcp locking" (1/3)
+      - 3469a540bdff "mm/page_alloc: remove IRQ saving/restoring from pcp locking" (1/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-2-f7e22e603447@kernel.org
-      - eb779eacd029 "mm/page_alloc: remove pcpu_spin_* wrappers" (2/3)
+      - ea14abb5ddef "mm/page_alloc: remove pcpu_spin_* wrappers" (2/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-3-f7e22e603447@kernel.org
-      - 16a1f74b2574 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - b136c36701c0 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 02225123014f "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - 59850a18081b "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
     - series "Allow order zero pages in page reporting", v4. (5 commits)
-      - 135499280eaa "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED" (0/5)
+      - 651cfebd8efc "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-1-yuvraj.sakshith@oss.qualcomm.com
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-2-yuvraj.sakshith@oss.qualcomm.com
-      - c07292b16ace "mm-page_reporting-add-page_reporting_order_unspecified-fix" (1/5)
+      - 74d0f5b89ff8 "mm-page_reporting-add-page_reporting_order_unspecified-fix" (1/5)
         - Authored by a maintainer, reviewed by nobody
-    - 45d1abd74539 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED"
+    - 62a5dea2177b "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260303113032.3008371-6-yuvraj.sakshith@oss.qualcomm.com
-    - a7bfe690bd02 "mm: introduce a new page type for page pool in page type"
+    - fc482f3dcb81 "mm: introduce a new page type for page pool in page type"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
-    - f86ca51d5c4a "mm-introduce-a-new-page-type-for-page-pool-in-page-type-v5"
+    - 640924d6f094 "mm-introduce-a-new-page-type-for-page-pool-in-page-type-v5"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260316223113.20097-1-byungchul@sk.com
-      - 0b962b126998 "mm: convert zone lock users to wrappers" (1/5)
+      - f3a5cca55a48 "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - c5731fbd14e9 "mm: convert compaction to zone lock wrappers" (2/5)
+      - d25572a88feb "mm: convert compaction to zone lock wrappers" (2/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/3a09e46f52cf9f709b0725bc2b648cc5212843b2.1772206930.git.d@ilvokhin.com
-      - ca08634cc8ab "mm: rename zone->lock to zone->_lock" (3/5)
+      - 19acc0ff31c0 "mm: rename zone->lock to zone->_lock" (3/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
-    - 0f4ab22f5d9c "mm: documentation: standardize on "zone lock" terminology"
+    - 198ee33063ae "mm: documentation: standardize on "zone lock" terminology"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
-      - 715e0058f905 "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
+      - 940d37ab1f98 "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org
-      - 6983dfa0636b "mm: introduce is_pmd_order helper" (1/5)
+      - 07de3db13e96 "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - f0805cc2d979 "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
+    - 4547db2ac8eb "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260320173426.1831267-1-fvdl@google.com
       - Link: https://lore.kernel.org/all/20231122013925.1507-1-justinjiang@vivo.com/ [1]

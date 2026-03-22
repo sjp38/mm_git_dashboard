@@ -1,31 +1,45 @@
 - baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 4 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 8 -> 11 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 2 -> 5 commits
-    - maintainer, nobody: 3 -> 3 commits (no change)
-  - new commits
-    - series "mm/damon/sysfs: fix memory leak and NULL dereference issues", v4. (3)
-      - c3deba0c4b3c "mm/damon/sysfs: fix param_ctx leak on damon_sysfs_new_test_ctx() failure (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260321175427.86000-1-sj@kernel.org
-        - Link: https://lkml.kernel.org/r/20260321175427.86000-2-sj@kernel.org
-      - 497010db1361 "mm/damon/sysfs: check contexts->nr before accessing contexts_arr[0] (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260321175427.86000-3-sj@kernel.org
-      - 19f4f2f8d68a "mm/damon/sysfs: check contexts->nr in repeat_call_fn (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://patch.msgid.link/20260320163559.178101-3-objecting@objecting.org
-        - Link: https://lkml.kernel.org/r/20260321175427.86000-4-sj@kernel.org
-        - Link: https://github.com/damonitor/damo [1]
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 2 commits
   - changed commits
-    - f20df44c21ea "mm/swap: fix swap cache memcg accounting"
+    - 3a206a8649f8 "mm/rmap: clear vma->anon_vma on error"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260318122632.63404-1-ljs@kernel.org
+    - 26f775a054c3 "mm/damon/core: avoid use of half-online-committed context"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - added "[sj@kernel.org: let kdamond_call() with cancel regardless of maybe_corrupted]"
+      - added "Link: : https://sashiko.dev/#/patchset/20260319145218.86197-1-sj%40kernel.org"
+      - added "Link: : https://lkml.kernel.org/r/20260320031553.2479-1-sj@kernel.org"
+      - Link: : https://lkml.kernel.org/r/20260320031553.2479-1-sj@kernel.org
+      - Link: : https://sashiko.dev/#/patchset/20260319145218.86197-1-sj%40kernel.org
+      - Link: https://lkml.kernel.org/r/20260319145218.86197-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260319043309.97966-1-sj@kernel.org [1]
+    - 5510a3675a81 "mm/zswap: add missing kunmap_local()"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Chris Li <chrisl@kernel.org>"
-      - dropped "Cc: Chris Li <chrisl@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: : https://lkml.kernel.org/r/13e09a99-181f-45ac-a18d-057faf94bccb@lucifer.local
+      - Link: https://lkml.kernel.org/r/20260316140122.339697-1-ljs@kernel.org
+      - Link: https://docs.kernel.org/core-api/cachetlb.html [0]
+    - b4fc8fab13f7 "mm/damon/stat: monitor all System RAM resources"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: : https://lkml.kernel.org/r/20260317053631.87907-1-sj@kernel.org
+      - Link: https://lkml.kernel.org/r/20260316235118.873-1-sj@kernel.org
+- mm-hotfixes-unstable: 11 -> 6 commits
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, no role : 3 -> 2 commits
+    - no role, maintainer: 5 -> 4 commits
+    - maintainer, nobody: 3 -> 0 commits
+  - dropped commits
+    - 9cdca4d7f004 "mm/damon/core: let kdamond_call() with cancel regardless of maybe_corrupted"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260320031553.2479-1-sj@kernel.org
+      - Link: https://sashiko.dev/#/patchset/20260319145218.86197-1-sj%40kernel.org [1]
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 266 -> 266 commits (no change)
@@ -42,67 +56,13 @@
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 17 -> 17 commits (no change)
-- mm-new: 30 -> 38 commits
-  - series: 4 (24) -> 4 (27)
-    - no role, nobody: 9 -> 10 commits
-    - no role, no role : 7 -> 10 commits
-    - no role, reviewer: 6 -> 9 commits
-    - no role, maintainer: 7 -> 8 commits
+- mm-new: 38 -> 38 commits (no change)
+  - series: 4 (27) -> 4 (27) (no change)
+    - no role, nobody: 10 -> 10 commits (no change)
+    - no role, no role : 10 -> 10 commits (no change)
+    - no role, reviewer: 9 -> 9 commits (no change)
+    - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 98bd980d4f29 "mm/zsmalloc: copy KMSAN metadata in zs_page_migrate()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260321132912.93434-1-syoshida@redhat.com
-    - 766b33dbd095 "mm: mark early-init static variables with __meminitdata"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
-    - cb2ce3c77faf "mm: vmalloc: update outdated comment for renamed vread()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260321105820.7134-1-kexinsun@smail.nju.edu.cn
-    - 6ad664d3574c "mm: update outdated comments for removed scan_swap_map_slots()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260321105814.7053-1-kexinsun@smail.nju.edu.cn
-    - series "change young flag check functions to return bool", v2. (6)
-      - 5e650bbb7d82 "mm: change to return bool for ptep_clear_flush_young()/clear_flush_young_ptes() (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/24af5144b96103631594501f77d4525f2475c1be.1774075004.git.baolin.wang@linux.alibaba.com
-      - 50133e5c268b "mm: change to return bool for pmdp_clear_flush_young() (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/a668b9a974c0d675e7a41f6973bcbe3336e8b373.1774075004.git.baolin.wang@linux.alibaba.com
-      - 032702f224da "mm: change to return bool for the MMU notifier's young flag check (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/a9ad3fe938002d87358e7bfca264f753ab602561.1774075004.git.baolin.wang@linux.alibaba.com
-    - f0805cc2d979 "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260320173426.1831267-1-fvdl@google.com
-      - Link: https://lore.kernel.org/all/20231122013925.1507-1-justinjiang@vivo.com/ [1]
-  - changed commits
-    - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13)
-      - 56100a06a60a "mm/huge_memory: deduplicate zap deposited table call (6/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lkml.kernel.org/r/71f576a1fbcd27a86322d12caa937bcdacf75407.1774029655.git.ljs@kernel.org
-      - 0de669ef6ec8 "mm/huge_memory: use mm instead of tlb->mm (8/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lkml.kernel.org/r/98104cde87e4b2aabeb16f236b8731591594457f.1774029655.git.ljs@kernel.org
-      - 2477aa09dd0b "mm/huge_memory: separate out the folio part of zap_huge_pmd() (9/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lkml.kernel.org/r/6c4db67952f5529da4db102a6149b9050b5dda4e.1774029655.git.ljs@kernel.org
-    - e5a26b7a01a0 "mm/memcontrol: fix reclaim_options leak in try_charge_memcg()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://lkml.kernel.org/r/20260321033500.2558070-1-bingjiao@google.com"
-      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Link: https://lkml.kernel.org/r/20260318221957.2979346-1-bingjiao@google.com"
-      - dropped "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260321033500.2558070-1-bingjiao@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

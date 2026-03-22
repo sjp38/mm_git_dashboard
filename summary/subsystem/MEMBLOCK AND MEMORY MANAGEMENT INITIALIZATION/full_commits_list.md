@@ -9,32 +9,32 @@
     - no role, maintainer: 3 commits
   - full commits list
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
-      - 36cf5b002ec7 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
+      - 9d2e240d5005 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 4e0773f7c128 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 3a9c842ddba3 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 4ee8a73be0b8 "arch, mm: consolidate empty_zero_page" (2/4)
+      - e2e429662cf1 "arch, mm: consolidate empty_zero_page" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - 636fcf0084fc "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
+      - ddaf8934ab94 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-      - 2235e7e6144d "mm: change the interface of prep_compound_tail()" (1/17)
+      - 834ac8c6c23e "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - 0b962b126998 "mm: convert zone lock users to wrappers" (1/5)
+      - f3a5cca55a48 "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - eb96542eccd5 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (5/14)
+      - 7c3df5de6953 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (5/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-7-david@kernel.org
-      - 219bb44053f5 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (6/14)
+      - a31e1815b283 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (6/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-8-david@kernel.org
-      - ea987f3c2a62 "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (9/14)
+      - 6224d7d98738 "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (9/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-11-david@kernel.org
 - mm-new: 2 total, 0 (1) series, 1 non-series commits
@@ -42,10 +42,10 @@
     - no role, maintainer: 1 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-      - af9d4134e65e "mm: switch deferred split shrinker to list_lru" (6/7)
+      - 4ae091c6566e "mm: switch deferred split shrinker to list_lru" (6/7)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
-    - 766b33dbd095 "mm: mark early-init static variables with __meminitdata"
+    - bd36a98dffa2 "mm: mark early-init static variables with __meminitdata"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
