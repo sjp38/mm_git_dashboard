@@ -8,13 +8,9 @@
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - fcb446375f67 "mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260323-kmemleak_report-v1-1-ba2cdd9c11b9@debian.org
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

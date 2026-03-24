@@ -1,85 +1,27 @@
 - baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 4 commits
+- mm-hotfixes-unstable: 4 -> 4 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 2 -> 3 commits
-  - new commits
-    - 0afb91a024b7 "mm-huge_memory-fix-folio-isnt-locked-in-softleaf_to_folio-v4"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260321075214.3305564-1-tujinjiang@huawei.com
-    - 4162d83bbf0d "mm/memory: fix PMD/PUD checks in follow_pfnmap_start()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260323-follow_pfnmap_fix-v1-1-5b0ec10872b3@kernel.org
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 3 -> 3 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 105 -> 111 commits
-  - series: 12 (86) -> 14 (91)
-    - no role, nobody: 21 -> 22 commits
-    - no role, no role : 61 -> 64 commits
-    - no role, reviewer: 11 -> 12 commits
+- mm-unstable: 111 -> 111 commits (no change)
+  - series: 14 (91) -> 14 (91) (no change)
+    - no role, nobody: 22 -> 22 commits (no change)
+    - no role, no role : 64 -> 64 commits (no change)
+    - no role, reviewer: 12 -> 12 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-    - maintainer, maintainer: 1 -> 2 commits
-  - new commits
-    - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14)
-      - 41df40fbd8b3 "mm-sparse-move-sparse_init_one_section-to-internalh-fix (12/14)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/6b04c1a1-74e7-42e8-8523-a40802e5dacc@kernel.org
-  - changed commits
-    - 9b8b7b78ece8 "mm: introduce a new page type for page pool in page type"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Ilias Apalodimas <ilias.apalodimas@linaro.org>"
-      - dropped "Cc: Ilias Apalodimas <ilias.apalodimas@linaro.org>"
-      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v4. (25)
-      - 04fecc808feb "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t (22/25)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/51afbb2b8c3681003cc7926647e37335d793836e.1774034900.git.ljs@kernel.org
-      - 0de7067ce25e "mm/vma: convert __mmap_region() to use vma_flags_t (23/25)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/1fc33a404c962f02da778da100387cc19bd62153.1774034900.git.ljs@kernel.org
-    - series "mm: switch THP shrinker to list_lru", v3. (7)
-      - 083966e6d060 "mm: switch deferred split shrinker to list_lru (6/7)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
-    - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13)
-      - 36c807824e93 "mm/huge_memory: simplify vma_is_specal_huge() (0/13)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/cover.1774029655.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/d2b65883dc4895f197c4b4a69fbf27a063463412.1774029655.git.ljs@kernel.org
-        - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/ [0]
-      - bef927672e42 "mm: add softleaf_is_valid_pmd_entry(), pmd_to_softleaf_folio() (10/13)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/b677592596274fa3fd701890497948e4b0e07cec.1774029655.git.ljs@kernel.org
-    - series "mm: remove CONFIG_ARCH_ENABLE_MEMORY_HOTREMOVE and cleanup CONFIG_MIGRATION". (2)
-      - 49e62c316ddc "mm: remove CONFIG_ARCH_ENABLE_MEMORY_HOTREMOVE (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-0-42270124966f@kernel.org
-        - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-1-42270124966f@kernel.org
-      - cfdd2c1763bb "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
-- mm-new: 11 -> 6 commits
-  - series: 3 (10) -> 1 (5)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 6 -> 5 commits
-    - no role, reviewer: 1 -> 0 commits
+    - maintainer, maintainer: 2 -> 2 commits (no change)
+- mm-new: 6 -> 6 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
+    - no role, no role : 5 -> 5 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 6 -> 6 commits (no change)

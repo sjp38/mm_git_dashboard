@@ -7,17 +7,10 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 18 -> 18 commits (no change)
   - series: 1 (17) -> 1 (17) (no change)
-    - no role, nobody: 13 -> 12 commits
-    - no role, no role : 2 -> 3 commits
+    - no role, nobody: 12 -> 12 commits (no change)
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v4. (25)
-      - 04fecc808feb "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t (22/25)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/51afbb2b8c3681003cc7926647e37335d793836e.1774034900.git.ljs@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

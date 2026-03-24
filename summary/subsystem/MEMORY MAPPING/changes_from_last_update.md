@@ -7,27 +7,11 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 50 -> 50 commits (no change)
   - series: 4 (47) -> 4 (47) (no change)
-    - no role, nobody: 25 -> 22 commits
-    - no role, no role : 19 -> 22 commits
+    - no role, nobody: 22 -> 22 commits (no change)
+    - no role, no role : 22 -> 22 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v4. (25)
-      - 04fecc808feb "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t (22/25)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/51afbb2b8c3681003cc7926647e37335d793836e.1774034900.git.ljs@kernel.org
-      - 0de7067ce25e "mm/vma: convert __mmap_region() to use vma_flags_t (23/25)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/1fc33a404c962f02da778da100387cc19bd62153.1774034900.git.ljs@kernel.org
-      - 20666bd66475 "mm: simplify VMA flag tests of excluded flags (24/25)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/d395c5dd837a9864f5efcec42175910afbe3ce73.1774034900.git.ljs@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

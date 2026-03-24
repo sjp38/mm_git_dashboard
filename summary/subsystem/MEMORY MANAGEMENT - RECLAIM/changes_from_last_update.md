@@ -17,18 +17,8 @@
     - maintainer, maintainer: 1 -> 1 commits (no change)
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - bb9fb04f3b21 "mm: update outdated comments for removed scan_swap_map_slots()"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260321105814.7053-1-kexinsun@smail.nju.edu.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

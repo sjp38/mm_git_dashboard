@@ -5,41 +5,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 11 commits
-  - series: 1 (2) -> 2 (8)
-    - no role, no role : 0 -> 6 commits
+- mm-unstable: 11 -> 11 commits (no change)
+  - series: 2 (8) -> 2 (8) (no change)
+    - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: switch THP shrinker to list_lru", v3. (7)
-      - 9134a286c8d4 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty (0/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-1-hannes@cmpxchg.org
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-2-hannes@cmpxchg.org
-      - 6dabbc39c543 "mm: list_lru: deduplicate unlock_list_lru() (1/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-3-hannes@cmpxchg.org
-      - 08afafa98122 "mm: list_lru: move list dead check to lock_list_lru_of_memcg() (2/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-4-hannes@cmpxchg.org
-      - d1c55b43d62b "mm: list_lru: deduplicate lock_list_lru() (3/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-5-hannes@cmpxchg.org
-      - dffd7dbaddd9 "mm: list_lru: introduce caller locking for additions and deletions (4/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-6-hannes@cmpxchg.org
-      - 5e7acd3c5efa "mm: list_lru: introduce folio_memcg_list_lru_alloc() (5/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-7-hannes@cmpxchg.org
-- mm-new: 6 -> 0 commits
-  - series: 1 (6) -> 0 (0)
-    - no role, no role : 6 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

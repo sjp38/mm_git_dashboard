@@ -5,33 +5,19 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 29 -> 32 commits
-  - series: 3 (24) -> 3 (25)
-    - no role, nobody: 3 -> 4 commits
-    - no role, no role : 0 -> 1 commits
+- mm-unstable: 32 -> 32 commits (no change)
+  - series: 3 (25) -> 3 (25) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 19 -> 19 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 4 -> 5 commits
-  - new commits
-    - 5c919d9d30c7 "mm/memcontrol: fix obj_cgroup leak in mem_cgroup_css_online() error path"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260322193631.45457-1-devnexen@gmail.com
-    - 898ed785925e "mm-memcontrol-convert-objcg-to-be-per-memcg-per-node-type-fix-fix-fix-2-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260323063007.7783-1-devnexen@gmail.com
-  - changed commits
-    - series "mm: switch THP shrinker to list_lru", v3. (7)
-      - 083966e6d060 "mm: switch deferred split shrinker to list_lru (6/7)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
-- mm-new: 3 -> 2 commits
-  - series: 0 (1) -> 0 (0)
+    - maintainer, maintainer: 5 -> 5 commits (no change)
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
