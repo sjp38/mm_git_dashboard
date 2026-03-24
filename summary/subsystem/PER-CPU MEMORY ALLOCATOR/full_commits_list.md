@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - efab550d8ba6 "mm/percpu-internal.h: optimise pcpu_chunk_struct to save memory"
+    - 872c0341ac40 "mm/percpu-internal.h: optimise pcpu_chunk_struct to save memory"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260305073043.571691-1-zenghongling@kylinos.cn
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

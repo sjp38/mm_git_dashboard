@@ -5,15 +5,32 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 9 -> 9 commits (no change)
-  - series: 1 (9) -> 1 (9) (no change)
+- mm-unstable: 9 -> 10 commits
+  - series: 1 (9) -> 1 (10)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
+    - maintainer, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v3. (7)
+      - 083966e6d060 "mm: switch deferred split shrinker to list_lru (6/7)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
+- mm-new: 2 -> 3 commits
+  - series: 0 (1) -> 1 (2)
+    - no role, no role : 0 -> 2 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 0 commits
+  - new commits
+    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
+      - 2b6f1936ba1f "kho: add size parameter to kho_add_subtree() (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
+        - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
+      - 6fbb1d84c2af "kho: persist blob size in KHO FDT (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

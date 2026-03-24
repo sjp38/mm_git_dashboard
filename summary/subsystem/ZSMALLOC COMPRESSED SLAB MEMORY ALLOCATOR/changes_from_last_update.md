@@ -5,12 +5,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 2 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 4ada8d3190ba "zsmalloc: return -EBUSY for zspage migration lock contention"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260319065924.69337-1-hui.zhu@linux.dev
+- mm-new: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

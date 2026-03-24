@@ -5,7 +5,7 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 36 -> 36 commits (no change)
+- mm-unstable: 36 -> 37 commits
   - series: 1 (30) -> 1 (30) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 12 -> 12 commits (no change)
@@ -15,12 +15,32 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 2 commits
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v3. (7)
+      - 083966e6d060 "mm: switch deferred split shrinker to list_lru (6/7)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
 - mm-new: 3 -> 3 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 2 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 0 commits
+  - new commits
+    - aadeda0189ef "mm: remove unused page_is_file_lru() function"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260323090305.798057-1-ye.liu@linux.dev
+  - changed commits
+    - bb9fb04f3b21 "mm: update outdated comments for removed scan_swap_map_slots()"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lkml.kernel.org/r/20260321105814.7053-1-kexinsun@smail.nju.edu.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

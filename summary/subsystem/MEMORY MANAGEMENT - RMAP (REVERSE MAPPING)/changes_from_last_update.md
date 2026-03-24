@@ -1,15 +1,9 @@
 - baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 3a206a8649f8 "mm/rmap: clear vma->anon_vma on error"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260318122632.63404-1-ljs@kernel.org
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 4 -> 4 commits (no change)

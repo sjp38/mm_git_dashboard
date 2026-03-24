@@ -5,18 +5,109 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 19 -> 19 commits (no change)
-  - series: 2 (15) -> 2 (15) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+- mm-unstable: 19 -> 37 commits
+  - series: 2 (15) -> 3 (31)
+    - no role, nobody: 2 -> 8 commits
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 9 -> 9 commits (no change)
+    - no role, reviewer: 9 -> 20 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
-- mm-new: 16 -> 16 commits (no change)
-  - series: 1 (16) -> 1 (16) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, reviewer: 11 -> 11 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13)
+      - 5d32df80f300 "mm-huge_memory-add-and-use-normal_or_softleaf_folio_pmd-fix (12/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/d0cc6161-77a4-42ba-a411-96c23c78df1b@lucifer.local
+    - 7d94864b8781 "mm-huge_memory-add-and-use-has_deposited_pgtable-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/0a917f80-902f-49b0-a75f-1bbaf23d7f94@lucifer.local
+  - changed commits
+    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4)
+      - c5cc717d5190 "mm: huge_memory: refactor anon_enabled_store() with set_anon_enabled_mode() (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-2-31eb98fa5a8b@debian.org
+      - 86c7ccdab7ed "mm: huge_memory: refactor enabled_store() with set_global_enabled_mode() (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-3-31eb98fa5a8b@debian.org
+    - series "mm: switch THP shrinker to list_lru", v3. (7)
+      - 083966e6d060 "mm: switch deferred split shrinker to list_lru (6/7)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
+    - series "selftests/mm: skip several tests when thp is not available", v4. (5)
+      - b9325aeb5cae "selftests/mm: move write_file helper to vm_util (2/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260319160656.1480279-4-chuhu@redhat.com
+      - 9a1761059a67 "selftests/mm: split_huge_page_test: skip the test when thp is not available (3/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260319160656.1480279-5-chuhu@redhat.com
+      - 9aa99b88d44e "selftests/mm: transhuge_stress: skip the test when thp not available (4/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260319160656.1480279-6-chuhu@redhat.com
+    - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13)
+      - 36c807824e93 "mm/huge_memory: simplify vma_is_specal_huge() (0/13)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/cover.1774029655.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/d2b65883dc4895f197c4b4a69fbf27a063463412.1774029655.git.ljs@kernel.org
+        - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/ [0]
+      - 5c43621928df "mm/huge: avoid big else branch in zap_huge_pmd() (1/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/6b4d5efdbf5554b8fe788f677d0b50f355eec999.1774029655.git.ljs@kernel.org
+      - 5aa86535ec51 "mm/huge_memory: have zap_huge_pmd return a boolean, add kdoc (2/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/132274566cd49d2960a2294c36dd2450593dfc55.1774029655.git.ljs@kernel.org
+      - 287b7c6f89e8 "mm/huge_memory: handle buggy PMD entry in zap_huge_pmd() (3/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/
+        - Link: https://lkml.kernel.org/r/fcf1f6de84a2ace188b6bf103fa15dde695f1ed8.1774029655.git.ljs@kernel.org
+      - 0e7c51a19ecd "mm/huge_memory: add a common exit path to zap_huge_pmd() (4/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/6b281d8ed972dff0e89bdcbdd810c96c7ae8c9dc.1774029655.git.ljs@kernel.org
+      - aabdaaf5cda9 "mm/huge_memory: remove unnecessary VM_BUG_ON_PAGE() (5/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/f3fa8eb4634ccb2e78209f570cc1a769a02ce93e.1774029655.git.ljs@kernel.org
+      - 59b2dfcc6a3c "mm/huge_memory: deduplicate zap deposited table call (6/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/71f576a1fbcd27a86322d12caa937bcdacf75407.1774029655.git.ljs@kernel.org
+      - 69b23787e2c7 "mm/huge_memory: remove unnecessary sanity checks (7/13)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/0c4c5ab247c90f80cf44718e8124b217d6a22544.1774029655.git.ljs@kernel.org
+      - 1708a3766527 "mm/huge_memory: use mm instead of tlb->mm (8/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/98104cde87e4b2aabeb16f236b8731591594457f.1774029655.git.ljs@kernel.org
+      - 2f948721587a "mm/huge_memory: separate out the folio part of zap_huge_pmd() (9/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/6c4db67952f5529da4db102a6149b9050b5dda4e.1774029655.git.ljs@kernel.org
+      - 69e8bcbe6b6b "mm/huge_memory: add and use normal_or_softleaf_folio_pmd() (11/13)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/c2be872d64ef9573b80727d9ab5446cf002f17b5.1774029655.git.ljs@kernel.org
+    - 0c17b1945ba8 "mm/huge_memory: add and use has_deposited_pgtable()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/f9db59ca90937e39913d50ecb4f662e2bad17bbb.1774029655.git.ljs@kernel.org
+- mm-new: 16 -> 0 commits
+  - series: 1 (16) -> 0 (0)
+    - no role, nobody: 4 -> 0 commits
+    - no role, reviewer: 11 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,17 +1,9 @@
 - baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 5510a3675a81 "mm/zswap: add missing kunmap_local()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: : https://lkml.kernel.org/r/13e09a99-181f-45ac-a18d-057faf94bccb@lucifer.local
-      - Link: https://lkml.kernel.org/r/20260316140122.339697-1-ljs@kernel.org
-      - Link: https://docs.kernel.org/core-api/cachetlb.html [0]
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 6 -> 6 commits (no change)

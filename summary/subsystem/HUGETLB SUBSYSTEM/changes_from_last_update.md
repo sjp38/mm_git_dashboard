@@ -1,8 +1,13 @@
 - baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 59ff42732503 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 21 -> 21 commits (no change)
@@ -12,7 +17,7 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
   - changed commits
-    - 9779c6c9ee2d "hugetlb: update vmemmap_dedup.rst"
+    - 8940c0866286 "hugetlb: update vmemmap_dedup.rst"
       - Authored by no role player, reviewed by a maintainer
       - added "Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org"
       - dropped "Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org"

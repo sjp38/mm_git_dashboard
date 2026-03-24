@@ -2,54 +2,52 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 5 total, 1 (2) series, 3 non-series commits
+- mm-unstable: 11 total, 2 (8) series, 3 non-series commits
   - author/reviewer role stat
+    - no role, no role : 6 commits
     - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 11287fbb26a5 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
+    - a17a41646c0c "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
       - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com
-      - 4c5264fa9259 "mm: vmscan: add cgroup IDs to vmscan tracepoints" (1/3)
+      - 6345bedbcee3 "mm: vmscan: add cgroup IDs to vmscan tracepoints" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316160908.42727-3-tballasi@linux.microsoft.com
-    - e5b38417f9e7 "mm: do not allocate shrinker info with cgroup.memory=nokmem"
+    - 99a3c8376641 "mm: do not allocate shrinker info with cgroup.memory=nokmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260225-cgroup-ml-nokmem-shrinker-v1-1-d703899bdda4@suse.com
-    - a511292079dd "mm-do-not-allocate-shrinker-info-with-cgroupmemory=nokmem-v2"
+    - a2461703c4c7 "mm-do-not-allocate-shrinker-info-with-cgroupmemory=nokmem-v2"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260309-cgroup-ml-nokmem-shrinker-v2-1-3e7a7eefb6c9@suse.com
     - series "Eliminate Dying Memory Cgroup", v6. (33 commits)
-      - d19f17d2052a "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
+      - 83f8e515bfc9 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772711148.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
         - Link: https://lwn.net/Articles/895431/ [2]
         - Link: https://github.com/systemd/systemd/pull/36827 [3]
-- mm-new: 6 total, 1 (6) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 6 commits
-  - full commits list
     - series "mm: switch THP shrinker to list_lru", v3. (7 commits)
-      - 0412e5c65ff1 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (0/7)
+      - 9134a286c8d4 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-1-hannes@cmpxchg.org
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-2-hannes@cmpxchg.org
-      - e78f45e919a1 "mm: list_lru: deduplicate unlock_list_lru()" (1/7)
+      - 6dabbc39c543 "mm: list_lru: deduplicate unlock_list_lru()" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-3-hannes@cmpxchg.org
-      - 63a5dca8d804 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (2/7)
+      - 08afafa98122 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-4-hannes@cmpxchg.org
-      - 167ebadbff90 "mm: list_lru: deduplicate lock_list_lru()" (3/7)
+      - d1c55b43d62b "mm: list_lru: deduplicate lock_list_lru()" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-5-hannes@cmpxchg.org
-      - 12743da16af2 "mm: list_lru: introduce caller locking for additions and deletions" (4/7)
+      - dffd7dbaddd9 "mm: list_lru: introduce caller locking for additions and deletions" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-6-hannes@cmpxchg.org
-      - c0c3531db329 "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (5/7)
+      - 5e7acd3c5efa "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-7-hannes@cmpxchg.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

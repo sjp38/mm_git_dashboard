@@ -2,51 +2,60 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 9 total, 1 (9) series, 0 non-series commits
+- mm-unstable: 10 total, 1 (10) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
     - no role, reviewer: 3 commits
     - no role, maintainer: 3 commits
+    - maintainer, maintainer: 1 commits
   - full commits list
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
-      - 9d2e240d5005 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
+      - 3f67391066b7 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 3a9c842ddba3 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 924df52b49d1 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - e2e429662cf1 "arch, mm: consolidate empty_zero_page" (2/4)
+      - 015a3b56221a "arch, mm: consolidate empty_zero_page" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - ddaf8934ab94 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
+      - e50d5ef57fb7 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-      - 834ac8c6c23e "mm: change the interface of prep_compound_tail()" (1/17)
+      - 49ad8395d37d "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - f3a5cca55a48 "mm: convert zone lock users to wrappers" (1/5)
+      - 97a3c99aeeaa "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - 7c3df5de6953 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (5/14)
+      - 9443c2e0cdc7 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (5/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-7-david@kernel.org
-      - a31e1815b283 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (6/14)
+      - ece1fb8b4463 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (6/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-8-david@kernel.org
-      - 6224d7d98738 "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (9/14)
+      - 14911817f088 "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (9/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-11-david@kernel.org
-- mm-new: 2 total, 0 (1) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-    - maintainer, maintainer: 1 commits
-  - full commits list
-      - 4ae091c6566e "mm: switch deferred split shrinker to list_lru" (6/7)
+      - 083966e6d060 "mm: switch deferred split shrinker to list_lru" (6/7)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
-    - bd36a98dffa2 "mm: mark early-init static variables with __meminitdata"
+- mm-new: 3 total, 1 (2) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+    - 1691101530e2 "mm: mark early-init static variables with __meminitdata"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
+    - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
+      - 2b6f1936ba1f "kho: add size parameter to kho_add_subtree()" (0/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
+        - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
+      - 6fbb1d84c2af "kho: persist blob size in KHO FDT" (2/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

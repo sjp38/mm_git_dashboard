@@ -15,9 +15,29 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 12 -> 12 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-new: 1 -> 3 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+    - reviewer, nobody: 0 -> 2 commits
+  - new commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - 5726b60a1e2b "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device (0/8)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260323160822.1409904-1-youngjun.park@lge.com
+        - Link: https://lkml.kernel.org/r/20260323160822.1409904-2-youngjun.park@lge.com
+      - db8d28137cdf "mm/swap: remove redundant swap device reference in alloc/free (1/8)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260323160822.1409904-3-youngjun.park@lge.com
+  - changed commits
+    - bb9fb04f3b21 "mm: update outdated comments for removed scan_swap_map_slots()"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+      - Link: https://lkml.kernel.org/r/20260321105814.7053-1-kexinsun@smail.nju.edu.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

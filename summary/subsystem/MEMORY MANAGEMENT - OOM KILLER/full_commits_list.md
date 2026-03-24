@@ -7,13 +7,13 @@
     - no role, no role : 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - b66cd922a75f "mm/oom_kill: use MMU_NOTIFY_CLEAR in __oom_reap_task_mm()" (5/16)
+      - 7f6db2c3136b "mm/oom_kill: use MMU_NOTIFY_CLEAR in __oom_reap_task_mm()" (5/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-6-david@kernel.org
-      - 3858c2d2efe4 "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping()" (6/16)
+      - 56f89b8cebd1 "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping()" (6/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-7-david@kernel.org
-    - d177ad5e6030 "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
+    - 8d1a12bfb5e8 "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260303102600.105255-1-maninder1.s@samsung.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

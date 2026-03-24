@@ -7,14 +7,14 @@
     - no role, no role : 3 commits
   - full commits list
     - series "KSM: Optimizations for rmap_walk_ksm", v3. (2 commits)
-      - 792e666372bd "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
+      - 1f4adff8ec52 "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212192820223O_r2NQzSEPG_C56cs-z4l@zte.com.cn
         - Link: https://lkml.kernel.org/r/20260212192932941MSsJEAyoRW4YdLBN7_myn@zte.com.cn
-      - e91be28e7820 "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
+      - 6bd86a815c9b "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
-      - eaa3a3d4ab7c "mm: convert do_brk_flags() to use vma_flags_t" (16/25)
+      - 8f7aad1036c1 "mm: convert do_brk_flags() to use vma_flags_t" (16/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/d02e3e45d9a33d7904b149f5604904089fd640ae.1774034900.git.ljs@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
