@@ -1,1255 +1,1218 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07
-- mm-hotfixes-stable: 6 total, 0 (0) series, 6 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
-    - maintainer, nobody: 2 commits
-    - maintainer, maintainer: 1 commits
-  - full commits list
-    - 3a206a8649f8 "mm/rmap: clear vma->anon_vma on error"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260318122632.63404-1-ljs@kernel.org
-    - 26f775a054c3 "mm/damon/core: avoid use of half-online-committed context"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: : https://lkml.kernel.org/r/20260320031553.2479-1-sj@kernel.org
-      - Link: : https://sashiko.dev/#/patchset/20260319145218.86197-1-sj%40kernel.org
-      - Link: https://lkml.kernel.org/r/20260319145218.86197-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260319043309.97966-1-sj@kernel.org [1]
-    - b0377ee80429 "zram: do not slot_free() written-back slots"
-      - Authored by a maintainer, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260320023143.2372879-1-senozhatsky@chromium.org
-      - Link: https://lkml.kernel.org/r/20260319034912.1894770-1-senozhatsky@chromium.org
-    - 38dfd294e24c "mailmap: update email address for Muhammad Usama Anjum"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260310171757.3970390-1-usama.anjum@arm.com
-    - 631c1111501f "mm/zswap: add missing kunmap_local()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: : https://lkml.kernel.org/r/13e09a99-181f-45ac-a18d-057faf94bccb@lucifer.local
-      - Link: https://lkml.kernel.org/r/20260316140122.339697-1-ljs@kernel.org
-      - Link: https://docs.kernel.org/core-api/cachetlb.html [0]
-    - 84481e705ab0 "mm/damon/stat: monitor all System RAM resources"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: : https://lkml.kernel.org/r/20260317053631.87907-1-sj@kernel.org
-      - Link: https://lkml.kernel.org/r/20260316235118.873-1-sj@kernel.org
+- baseline: v7.0-rc5-46-g24f9515de8778
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 12 total, 1 (3) series, 9 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 4 commits
-    - no role, no role : 4 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 6 commits
     - no role, maintainer: 4 commits
   - full commits list
-    - 5d423c6c4941 "mm/pagewalk: fix race between concurrent split and refault"
+    - 734aea7b8718 "mm/pagewalk: fix race between concurrent split and refault"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260317-pagewalk-check-pmd-refault-v1-1-f699a010f2b3@akamai.com
-    - dbcad97d642f "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
+    - 348791ccec31 "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/1cf1ac59018fc647a87b0dad605d4056a71c14e4.1773739704.git.baolin.wang@linux.alibaba.com
-    - 192d3ad81b98 "mm/huge_memory: fix folio isn't locked in softleaf_to_folio()"
+    - 0bd43b4ad55e "mm/huge_memory: fix folio isn't locked in softleaf_to_folio()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260319012541.4158561-1-tujinjiang@huawei.com
-    - 0afb91a024b7 "mm-huge_memory-fix-folio-isnt-locked-in-softleaf_to_folio-v4"
+    - 8e454ad21c4c "mm-huge_memory-fix-folio-isnt-locked-in-softleaf_to_folio-v4"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260321075214.3305564-1-tujinjiang@huawei.com
-    - 12ac269de0e2 "MAINTAINERS, mailmap: update email address for Harry Yoo"
+    - edcc6a85e75f "MAINTAINERS, mailmap: update email address for Harry Yoo"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260320125925.2259998-1-harry@kernel.org
-    - 4afe6d203e46 "mm/swap: fix swap cache memcg accounting"
+    - f26972b9d39e "mm/swap: fix swap cache memcg accounting"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
     - series "mm/damon/sysfs: fix memory leak and NULL dereference issues", v4. (3 commits)
-      - 70a66be42ee8 "mm/damon/sysfs: fix param_ctx leak on damon_sysfs_new_test_ctx() failure" (0/3)
+      - 4924a3fe301b "mm/damon/sysfs: fix param_ctx leak on damon_sysfs_new_test_ctx() failure" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260321175427.86000-1-sj@kernel.org
         - Link: https://lkml.kernel.org/r/20260321175427.86000-2-sj@kernel.org
-      - 9714b98ea67e "mm/damon/sysfs: check contexts->nr before accessing contexts_arr[0]" (1/3)
+      - 05da93cef83a "mm/damon/sysfs: check contexts->nr before accessing contexts_arr[0]" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260321175427.86000-3-sj@kernel.org
-      - b090b59693d7 "mm/damon/sysfs: check contexts->nr in repeat_call_fn" (2/3)
+      - e20c07929b10 "mm/damon/sysfs: check contexts->nr in repeat_call_fn" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://patch.msgid.link/20260320163559.178101-3-objecting@objecting.org
         - Link: https://lkml.kernel.org/r/20260321175427.86000-4-sj@kernel.org
         - Link: https://github.com/damonitor/damo [1]
-    - 59ff42732503 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - db743885d1f2 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260322052120.14021-1-devnexen@gmail.com
-    - 4162d83bbf0d "mm/memory: fix PMD/PUD checks in follow_pfnmap_start()"
-      - Authored by no role player, reviewed by nobody
+    - 22fea7619569 "mm/memory: fix PMD/PUD checks in follow_pfnmap_start()"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260323-follow_pfnmap_fix-v1-1-5b0ec10872b3@kernel.org
-    - aad03535b064 "bug: avoid format attribute warning for clang as well"
-      - Authored by no role player, reviewed by nobody
+    - 01e23a6f6e5b "bug: avoid format attribute warning for clang as well"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260323205534.1284284-1-arnd@kernel.org
       - Link: https://lore.kernel.org/all/20251208141618.2805983-1-andriy.shevchenko@linux.intel.com/T/#u
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 473 total, 47 (360) series, 113 non-series commits
+- mm-stable: 140 total, 17 (99) series, 41 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 87 commits
-    - no role, no role : 145 commits
-    - no role, reviewer: 44 commits
-    - no role, maintainer: 60 commits
-    - reviewer, nobody: 1 commits
-    - reviewer, no role : 2 commits
-    - reviewer, reviewer: 6 commits
-    - reviewer, maintainer: 3 commits
-    - maintainer, nobody: 91 commits
-    - maintainer, no role : 13 commits
+    - no role, nobody: 11 commits
+    - no role, no role : 35 commits
+    - no role, reviewer: 13 commits
+    - no role, maintainer: 24 commits
+    - reviewer, reviewer: 1 commits
+    - maintainer, nobody: 36 commits
+    - maintainer, no role : 3 commits
     - maintainer, reviewer: 3 commits
-    - maintainer, maintainer: 18 commits
+    - maintainer, maintainer: 14 commits
   - full commits list
-    - ca4ea6aabf5a "mm, swap: speed up hibernation allocation and writeout"
+    - 396f57b57200 "mm, swap: speed up hibernation allocation and writeout"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260216-hibernate-perf-v4-1-1ba9f0bf1ec9@tencent.com
       - Link: https://lore.kernel.org/linux-mm/8b4bdcfa-ce3f-4e23-839f-31367df7c18f@gmx.de/ [1]
-    - f7726a08cc2a "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+    - 7e74dd031620 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-    - ec901d3461fe "mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold"
+    - b8a4b0883818 "mm/damon/ops-common: remove redudnant mmu notifier call in pmdp mkold"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260203095400.2465255-1-qin.yuA@h3c.com
-    - a17a41646c0c "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
+    - 260d70819c37 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
       - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com
-    - ae0de48f17d1 "fs: hugetlb: simplify remove_inode_hugepages() return type"
+    - 34ca46cc6fc9 "fs: hugetlb: simplify remove_inode_hugepages() return type"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260204214741.3161520-1-jiaqiyan@google.com
       - Link: https://lore.kernel.org/all/20220914221810.95771-10-mike.kravetz@oracle.com [1]
     - series "KSM: Optimizations for rmap_walk_ksm", v3. (2 commits)
-      - 1f4adff8ec52 "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
+      - b9014c5c9a35 "ksm: initialize the addr only once in rmap_walk_ksm" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212192820223O_r2NQzSEPG_C56cs-z4l@zte.com.cn
         - Link: https://lkml.kernel.org/r/20260212192932941MSsJEAyoRW4YdLBN7_myn@zte.com.cn
-      - 6bd86a815c9b "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
+      - 82ef5197e946 "ksm: optimize rmap_walk_ksm by passing a suitable address range" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
-    - 4aa4946c4a7a "mm/fadvise: validate offset in generic_fadvise"
+    - e4719825490d "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
     - series "maple_tree: Replace big node with maple copy", v3. (30 commits)
-      - 428cafffa44c "maple_tree: fix mas_dup_alloc() sparse warning" (0/30)
+      - b82605fe23c3 "maple_tree: fix mas_dup_alloc() sparse warning" (0/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-1-Liam.Howlett@oracle.com
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-2-Liam.Howlett@oracle.com
-      - e5bec853318a "maple_tree: move mas_spanning_rebalance loop to function" (1/30)
+      - b88a39f1679f "maple_tree: move mas_spanning_rebalance loop to function" (1/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-3-Liam.Howlett@oracle.com
-      - 69a7dc1ff24f "maple_tree: extract use of big node from mas_wr_spanning_store()" (2/30)
+      - 70af2ce9708f "maple_tree: extract use of big node from mas_wr_spanning_store()" (2/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-4-Liam.Howlett@oracle.com
-      - c674e87f27ac "maple_tree: remove unnecessary assignment of orig_l index" (3/30)
+      - 52596bc01a1d "maple_tree: remove unnecessary assignment of orig_l index" (3/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-5-Liam.Howlett@oracle.com
-      - 028a4acf3b1a "maple_tree: inline mas_spanning_rebalance() into mas_wr_spanning_rebalance()" (4/30)
+      - cee185b01608 "maple_tree: inline mas_spanning_rebalance() into mas_wr_spanning_rebalance()" (4/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-6-Liam.Howlett@oracle.com
-      - 43090cceef74 "maple_tree: make ma_wr_states reliable for reuse in spanning store" (5/30)
+      - 1f11317e7886 "maple_tree: make ma_wr_states reliable for reuse in spanning store" (5/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-7-Liam.Howlett@oracle.com
-      - 5783a7cac51b "maple_tree: remove l_wr_mas from mas_wr_spanning_rebalance" (6/30)
+      - a4867b729694 "maple_tree: remove l_wr_mas from mas_wr_spanning_rebalance" (6/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-8-Liam.Howlett@oracle.com
-      - 360b8b393ec7 "maple_tree: don't pass through height in mas_wr_spanning_store" (7/30)
+      - cb37d4ab4859 "maple_tree: don't pass through height in mas_wr_spanning_store" (7/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-9-Liam.Howlett@oracle.com
-      - 696738b87f6a "maple_tree: move maple_subtree_state from mas_wr_spanning_store to mas_wr_spanning_rebalance" (8/30)
+      - bb262fb2817b "maple_tree: move maple_subtree_state from mas_wr_spanning_store to mas_wr_spanning_rebalance" (8/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-10-Liam.Howlett@oracle.com
-      - 870b39b9c68a "maple_tree: correct right ma_wr_state end pivot in mas_wr_spanning_store()" (9/30)
+      - c2f3fbf90c88 "maple_tree: correct right ma_wr_state end pivot in mas_wr_spanning_store()" (9/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-11-Liam.Howlett@oracle.com
-      - a3abbaf036f4 "maple_tree: introduce maple_copy node and use it in mas_spanning_rebalance()" (10/30)
+      - 106e0dfe2a0a "maple_tree: introduce maple_copy node and use it in mas_spanning_rebalance()" (10/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-12-Liam.Howlett@oracle.com
-      - ff22780f0b91 "maple_tree: testing update for spanning store" (11/30)
+      - 491f8f2c8b2b "maple_tree: testing update for spanning store" (11/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-13-Liam.Howlett@oracle.com
-      - cae81ff0f233 "maple_tree: inline mas_spanning_rebalance_loop() into mas_wr_spanning_rebalance()" (12/30)
+      - fa1b058e5487 "maple_tree: inline mas_spanning_rebalance_loop() into mas_wr_spanning_rebalance()" (12/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-14-Liam.Howlett@oracle.com
-      - 7d34b34834c1 "maple_tree: change initial big node setup in mas_wr_spanning_rebalance()" (13/30)
+      - 00f2a5018b02 "maple_tree: change initial big node setup in mas_wr_spanning_rebalance()" (13/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-15-Liam.Howlett@oracle.com
-      - 74ac6171ab14 "maple_tree: introduce ma_leaf_max_gap()" (14/30)
+      - 41d86f7e5c4b "maple_tree: introduce ma_leaf_max_gap()" (14/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-16-Liam.Howlett@oracle.com
-      - a4ec850288de "maple_tree: add gap support, slot and pivot sizes for maple copy" (15/30)
+      - 8d6893d36bfb "maple_tree: add gap support, slot and pivot sizes for maple copy" (15/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-17-Liam.Howlett@oracle.com
-      - d7e2e1640c65 "maple_tree: start using maple copy node for destination" (16/30)
+      - 4757b90a6dda "maple_tree: start using maple copy node for destination" (16/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-18-Liam.Howlett@oracle.com
-      - 0f7533748b38 "maple_tree-start-using-maple-copy-node-for-destination-checkpatch-fixes" (17/30)
-        - Authored by a maintainer, reviewed by nobody
-      - 9ba7fa71c05b "maple_tree: inline mas_wr_spanning_rebalance()" (18/30)
+      - 5c98787eb6bf "maple_tree: inline mas_wr_spanning_rebalance()" (17/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-19-Liam.Howlett@oracle.com
-      - 76609c137c38 "maple_tree: remove unnecessary return statements" (19/30)
+      - 28780f8b3de7 "maple_tree: remove unnecessary return statements" (18/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-20-Liam.Howlett@oracle.com
-      - a309ac3f690d "maple_tree: separate wr_split_store and wr_rebalance store type code path" (20/30)
+      - 366334c7bfbc "maple_tree: separate wr_split_store and wr_rebalance store type code path" (19/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-21-Liam.Howlett@oracle.com
-      - a3c81e9c7875 "maple_tree: add cp_is_new_root() helper" (21/30)
+      - 4074b9e67492 "maple_tree: add cp_is_new_root() helper" (20/30)
         - Authored by a maintainer, reviewed by nobody
+        - Link: : https://lkml.kernel.org/r/malwmirqnpuxqkqrobcmzfkmmxipoyzwfs2nwc5fbpxlt2r2ej@wchmjtaljvw3
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-22-Liam.Howlett@oracle.com
-      - 167e0272ab6e "maple_tree-add-cp_is_new_root-helper-fix" (22/30)
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/malwmirqnpuxqkqrobcmzfkmmxipoyzwfs2nwc5fbpxlt2r2ej@wchmjtaljvw3
-      - 746a7255258e "maple_tree-add-cp_is_new_root-helper-fix-fix" (23/30)
-        - Authored by a maintainer, reviewed by nobody
-      - 79d9468a96cf "maple_tree: use maple copy node for mas_wr_rebalance() operation" (24/30)
+      - 2498fa5328c9 "maple_tree: use maple copy node for mas_wr_rebalance() operation" (21/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-23-Liam.Howlett@oracle.com
-      - ff28014f32b5 "maple_tree: add test for rebalance calculation off-by-one" (25/30)
+      - 37ea8e0708ff "maple_tree: add test for rebalance calculation off-by-one" (22/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-24-Liam.Howlett@oracle.com
-      - fd2f9af8d277 "maple_tree: add copy_tree_location() helper" (26/30)
+      - c7e24252a65f "maple_tree: add copy_tree_location() helper" (23/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-25-Liam.Howlett@oracle.com
-      - 2a1756ff605d "maple_tree: add cp_converged() helper" (27/30)
+      - 360adaea95a8 "maple_tree: add cp_converged() helper" (24/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-26-Liam.Howlett@oracle.com
-      - b21cd0043de5 "maple_tree: use maple copy node for mas_wr_split()" (28/30)
+      - 3538823bd9bf "maple_tree: use maple copy node for mas_wr_split()" (25/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-27-Liam.Howlett@oracle.com
-      - abcdcf12075e "maple_tree: remove maple big node and subtree structs" (29/30)
+      - 93e375b91d92 "maple_tree: remove maple big node and subtree structs" (26/30)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260130205935.2559335-28-Liam.Howlett@oracle.com
-    - d96279e5da96 "maple_tree: pass maple copy node to mas_wmb_replace()"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260130205935.2559335-29-Liam.Howlett@oracle.com
-    - d00ffb6c1d9f "maple_tree: don't pass end to mas_wr_append()"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260130205935.2559335-30-Liam.Howlett@oracle.com
-    - 4c6b6b1a6570 "maple_tree: clean up mas_wr_node_store()"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260130205935.2559335-31-Liam.Howlett@oracle.com
-    - 858f7d1b7a93 "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
+      - 9effa0fdf56c "maple_tree: pass maple copy node to mas_wmb_replace()" (27/30)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260130205935.2559335-29-Liam.Howlett@oracle.com
+      - 5dc11bf8eeb8 "maple_tree: don't pass end to mas_wr_append()" (28/30)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260130205935.2559335-30-Liam.Howlett@oracle.com
+      - ad141f071e12 "maple_tree: clean up mas_wr_node_store()" (29/30)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260130205935.2559335-31-Liam.Howlett@oracle.com
+    - a7f7d224048e "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260219063506.545148-1-sgsu.park@samsung.com
-    - eee4cf2fac12 "selftests/mm: skip migration tests if NUMA is unavailable"
+    - b64550b43730 "selftests/mm: skip migration tests if NUMA is unavailable"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
-    - dfdc44789455 "mm: move pgscan, pgsteal, pgrefill to node stats"
+    - ab21a3cdec9d "mm: move pgscan, pgsteal, pgrefill to node stats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
-    - 0f13b50a58ad "mm: fix typo in the comment of mod_zone_state()"
+    - 75ea4d9776cc "mm: fix typo in the comment of mod_zone_state()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260219234407.3261196-1-mssola@mssola.com
     - series "mm, swap: swap table phase III: remove swap_map", v3. (12 commits)
-      - 5692944f6167 "mm, swap: protect si->swap_file properly and use as a mount indicator" (0/12)
+      - f819f659ae6e "mm, swap: protect si->swap_file properly and use as a mount indicator" (0/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-0-f4e34be021a7@tencent.com
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-1-f4e34be021a7@tencent.com
-      - 750776d1ad45 "mm, swap: clean up swapon process and locking" (1/12)
+      - f289af799a32 "mm, swap: clean up swapon process and locking" (1/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-2-f4e34be021a7@tencent.com
-      - ed5c8e5ab507 "mm, swap: remove redundant arguments and locking for enabling a device" (2/12)
+      - 27cd2cbd50fa "mm, swap: remove redundant arguments and locking for enabling a device" (2/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-3-f4e34be021a7@tencent.com
-      - d17575d40a4e "mm, swap: consolidate bad slots setup and make it more robust" (3/12)
+      - 08d9b25afeae "mm, swap: consolidate bad slots setup and make it more robust" (3/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-4-f4e34be021a7@tencent.com
-      - 925f5c4954e7 "mm/workingset: leave highest bits empty for anon shadow" (4/12)
+      - ce725346f8c1 "mm/workingset: leave highest bits empty for anon shadow" (4/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-5-f4e34be021a7@tencent.com
-      - fc8dc014db8b "mm, swap: implement helpers for reserving data in the swap table" (5/12)
+      - 068742130988 "mm, swap: implement helpers for reserving data in the swap table" (5/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-6-f4e34be021a7@tencent.com
-      - 6f407ee2ec2f "mm, swap: mark bad slots in swap table directly" (6/12)
+      - b5c878c8d0f8 "mm, swap: mark bad slots in swap table directly" (6/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-7-f4e34be021a7@tencent.com
-      - ef40adc8695c "mm, swap: simplify swap table sanity range check" (7/12)
+      - 7ef58bc66a12 "mm, swap: simplify swap table sanity range check" (7/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-8-f4e34be021a7@tencent.com
-      - 2ad58c01a861 "mm, swap: use the swap table to track the swap count" (8/12)
+      - c425fef8d182 "mm, swap: use the swap table to track the swap count" (8/12)
         - Authored by a maintainer, reviewed by a maintainer
+        - Link: : https://lkml.kernel.org/r/aZWuLZi-vYi3vAWe@KASONG-MC4
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-9-f4e34be021a7@tencent.com
-      - 5304c1de9bd5 "mm-swap-use-the-swap-table-to-track-the-swap-count-fix" (9/12)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/aZWuLZi-vYi3vAWe@KASONG-MC4
-      - 6eec3ce22a9f "mm, swap: no need to truncate the scan border" (10/12)
+      - 9a4b5be8e757 "mm, swap: no need to truncate the scan border" (9/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-10-f4e34be021a7@tencent.com
-      - d99326afc795 "mm, swap: simplify checking if a folio is swapped" (11/12)
+      - 8b7ff65bfa05 "mm, swap: simplify checking if a folio is swapped" (10/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-11-f4e34be021a7@tencent.com
-    - f81effe9b7cf "mm, swap: no need to clear the shadow explicitly"
-      - Authored by a maintainer, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-12-f4e34be021a7@tencent.com
+      - fb5d3850b6ba "mm, swap: no need to clear the shadow explicitly" (11/12)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-12-f4e34be021a7@tencent.com
     - series "mm: memfd_luo: preserve file seals", v2. (2 commits)
-      - 3ca8d7432a64 "memfd: export memfd_{add,get}_seals()" (0/2)
+      - 81b451c7c5de "memfd: export memfd_{add,get}_seals()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260216185946.1215770-1-pratyush@kernel.org
         - Link: https://lkml.kernel.org/r/20260216185946.1215770-2-pratyush@kernel.org
-      - 79b3077a7618 "mm: memfd_luo: preserve file seals" (1/2)
+      - 0be2dbd3f96c "mm: memfd_luo: preserve file seals" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260216185946.1215770-3-pratyush@kernel.org
-    - b42658d94a1b "mm/damon: remove unused target param of get_scheme_score()"
+    - e5c1ab5cf844 "mm/damon: remove unused target param of get_scheme_score()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260213145032.1740407-1-gutierrez.asier@huawei-partners.com
-    - e7cd4642fe14 "memcg: consolidate private id refcount get/put helpers"
+    - 5405c463ea6f "memcg: consolidate private id refcount get/put helpers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260213-memcg-privid-v1-1-d8cb7afcf831@tencent.com
     - series "mm: zswap: add per-memcg stat for incompressible pages", v3. (2 commits)
-      - d35a17517082 "mm: zswap: add per-memcg stat for incompressible pages" (0/2)
+      - b0af0be46d6e "mm: zswap: add per-memcg stat for incompressible pages" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260213071827.5688-1-jiayuan.chen@linux.dev
         - Link: https://lkml.kernel.org/r/20260213071827.5688-2-jiayuan.chen@linux.dev
         - Link: https://lore.kernel.org/linux-mm/CAF8kJuONDFj4NAksaR4j_WyDbNwNGYLmTe-o76rqU17La=nkOw@mail.gmail.com/ [1]
-      - 7a979123fe56 "selftests/cgroup: add test for zswap incompressible pages" (1/2)
+      - 4bacefeebd48 "selftests/cgroup: add test for zswap incompressible pages" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260213071827.5688-3-jiayuan.chen@linux.dev
-    - 93b40470c135 "mm: name the anonymous MMOP enum as enum mmop"
+    - 99d9279b365b "mm: name the anonymous MMOP enum as enum mmop"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
-    - f5dc4666bad9 "mm/shmem: remove unnecessary restrain unmask of swap gfp flags"
+    - f956fab049f0 "mm/shmem: remove unnecessary restrain unmask of swap gfp flags"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260211-shmem-swap-gfp-v1-1-e9781099a861@tencent.com
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
-      - 3f67391066b7 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
+      - 00bbd7634b1d "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 924df52b49d1 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 88df087cf58a "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 015a3b56221a "arch, mm: consolidate empty_zero_page" (2/4)
+      - 440d8ea43580 "arch, mm: consolidate empty_zero_page" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - e50d5ef57fb7 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
+      - 222db0ef2658 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-    - c93fcc32e8f0 "selftests/mm: remove duplicate include of unistd.h"
+    - e1c4e1dfdeaa "selftests/mm: remove duplicate include of unistd.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
-    - 03b9ceae4487 "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
+    - f6e2aa5699c2 "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260207081613.588598-6-vernon2gm@gmail.com
-    - 3c88e2de6ee1 "mm/mmu_notifiers: use hlist_for_each_entry_srcu() for SRCU list traversal"
+    - 987361756367 "mm/mmu_notifiers: use hlist_for_each_entry_srcu() for SRCU list traversal"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260204080937.2472-1-lirongqing@baidu.com
-    - 3adfd1fcac01 "mm/page_idle.c: remove redundant mmu notifier in aging code"
+    - 34428d10b562 "mm/page_idle.c: remove redundant mmu notifier in aging code"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
-    - c4d189385a85 "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
+    - b303f6864e3e "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260202-zswap-syncio-cleanup-v1-1-86bb24a64521@tencent.com
-    - 5a55e5994a5f "mm: convert vmemmap_p?d_populate() to static functions"
-      - Authored by no role player, reviewed by nobody
+    - e504282091c8 "mm: convert vmemmap_p?d_populate() to static functions"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260201063532.44807-3-pilgrimtao@gmail.com
     - series "mm/kmemleak: Improve scan_should_stop() implementation". (2 commits)
-      - eb27fd28e04e "mm/kmemleak: remove unreachable return statement in scan_should_stop()" (0/2)
+      - 92927fb1a91f "mm/kmemleak: remove unreachable return statement in scan_should_stop()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260130093729.2045858-2-zhongqiu.han@oss.qualcomm.com
-      - 61230aebad65 "mm/kmemleak: use PF_KTHREAD flag to detect kernel threads" (1/2)
+      - fd3c8d655818 "mm/kmemleak: use PF_KTHREAD flag to detect kernel threads" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260130093729.2045858-3-zhongqiu.han@oss.qualcomm.com
     - series "Improve khugepaged scan logic", v8. (4 commits)
-      - 696c3ce4f7df "mm: khugepaged: add trace_mm_khugepaged_scan event" (0/4)
+      - 00e3252b4244 "mm: khugepaged: add trace_mm_khugepaged_scan event" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-2-vernon2gm@gmail.com
-      - cfd867b1252e "mm: khugepaged: refine scan progress number" (1/4)
+      - a8c3d80a3d77 "mm: khugepaged: refine scan progress number" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-3-vernon2gm@gmail.com
-      - eeeb83f9828d "mm-khugepaged-refine-scan-progress-number-fix" (2/4)
+      - dae4e778f764 "mm-khugepaged-refine-scan-progress-number-fix" (2/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/hbftflvdmnranprul4zkq3d2iymqm7ta2a7fwiphggsmt36gt7@bihvv5jg2ko5
         - Link: https://lore.kernel.org/linux-mm/zdvzmoop5xswqcyiwmvvrdfianm4ccs3gryfecwbm4bhuh7ebo@7an4huwgbuwo [1]
-      - 57c144cdccc3 "mm: add folio_test_lazyfree helper" (3/4)
+      - 600399fe1d0b "mm: add folio_test_lazyfree helper" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-4-vernon2gm@gmail.com
-    - 398d8ee2fbe0 "mm: khugepaged: skip lazy-free folios"
+    - 73ba0ce41a0b "mm: khugepaged: skip lazy-free folios"
       - Authored by no role player, reviewed by a reviewer
+      - Link: : https://lkml.kernel.org/r/i4uowkt4h2ev47obm5h2vtd4zbk6fyw5g364up7kkjn2vmcikq@auepvqethj5r
       - Link: https://lkml.kernel.org/r/20260221093918.1456187-5-vernon2gm@gmail.com
-    - 8e5d7fe14e90 "mm-khugepaged-skip-lazy-free-folios-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/i4uowkt4h2ev47obm5h2vtd4zbk6fyw5g364up7kkjn2vmcikq@auepvqethj5r
-    - f4b29440afff "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
+    - 41a46587b444 "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
-    - 009df1f93c71 "mm-centralizefix-comments-about-compound_mapcount-in-new-sync_with_folio_pmd_zap-fix"
-      - Authored by a maintainer, reviewed by nobody
-    - 134f17e34d03 "kho: move alloc tag init to kho_init_{folio,pages}()"
+    - 1ec757189fef "kho: move alloc tag init to kho_init_{folio,pages}()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260213085914.2778107-1-pratyush@kernel.org
     - series "Make KHO Stateless", v9. (2 commits)
-      - ea50dda2e7ae "kho: adopt radix tree for preserved memory tracking" (0/2)
+      - 471965029da6 "kho: adopt radix tree for preserved memory tracking" (0/2)
         - Authored by no role player, reviewed by a maintainer
+        - Link: : https://lkml.kernel.org/r/20260309033530.244508-1-ranxiaokai627@163.com
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
-      - 36f9dd709896 "kho: fix child node parsing for debugfs in/sub_fdts" (1/2)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260309033530.244508-1-ranxiaokai627@163.com
-    - 18c1174edc47 "kho: remove finalize state and clients"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-    - 0d26ad38958c "mm: vmalloc: streamline vmalloc memory accounting"
+      - e3fa354c6d4c "kho: remove finalize state and clients" (1/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+    - 48a47312b3c9 "mm: vmalloc: streamline vmalloc memory accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
-    - 3c5dd9b51c70 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+    - 775a76edd63c "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
     - series "mm: vmscan: add PID and cgroup ID to vmscan tracepoints", v8. (3 commits)
-      - cff8aeadbb6c "tracing: add __event_in_*irq() helpers" (0/3)
+      - 2872383cbe7b "tracing: add __event_in_*irq() helpers" (0/3)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316160908.42727-1-tballasi@linux.microsoft.com
         - Link: https://lore.kernel.org/all/20251229132942.31a2b583@gandalf.local.home/
         - Link: https://lkml.kernel.org/r/20260316160908.42727-2-tballasi@linux.microsoft.com
-      - 6345bedbcee3 "mm: vmscan: add cgroup IDs to vmscan tracepoints" (1/3)
+      - e1b6625e0bdd "mm: vmscan: add cgroup IDs to vmscan tracepoints" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316160908.42727-3-tballasi@linux.microsoft.com
-      - 5db71d367339 "mm: vmscan: add PIDs to vmscan tracepoints" (2/3)
+      - 28bc1517916d "mm: vmscan: add PIDs to vmscan tracepoints" (2/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260316160908.42727-4-tballasi@linux.microsoft.com
-    - 903cce67f2f3 "mm/mmu_gather: replace IPI with synchronize_rcu() when batch allocation fails"
+    - d96b74901493 "mm/mmu_gather: replace IPI with synchronize_rcu() when batch allocation fails"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [1]
       - Link: https://lore.kernel.org/linux-mm/20260202150957.GD1282955@noisy.programming.kicks-ass.net/
       - Link: https://lore.kernel.org/linux-mm/dfdfeac9-5cd5-46fc-a5c1-9ccf9bd3502a@intel.com/
       - Link: https://lore.kernel.org/linux-mm/bc489455-bb18-44dc-8518-ae75abda6bec@kernel.org/
       - Link: https://lkml.kernel.org/r/20260224142101.20500-1-lance.yang@linux.dev
-    - d6aa3f8064f6 "MAINTAINERS: add Youngjun Park as reviewer for SWAP"
+    - a359be981379 "MAINTAINERS: add Youngjun Park as reviewer for SWAP"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260226010739.3773838-1-youngjun.park@lge.com
-    - 99a3c8376641 "mm: do not allocate shrinker info with cgroup.memory=nokmem"
+    - 015680e90a05 "mm: do not allocate shrinker info with cgroup.memory=nokmem"
       - Authored by no role player, reviewed by a reviewer
+      - Link: : https://lkml.kernel.org/r/20260309-cgroup-ml-nokmem-shrinker-v2-1-3e7a7eefb6c9@suse.com
       - Link: https://lkml.kernel.org/r/20260225-cgroup-ml-nokmem-shrinker-v1-1-d703899bdda4@suse.com
-    - a2461703c4c7 "mm-do-not-allocate-shrinker-info-with-cgroupmemory=nokmem-v2"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260309-cgroup-ml-nokmem-shrinker-v2-1-3e7a7eefb6c9@suse.com
     - series "mm: arch/shstk: Common shadow stack mapping helper and VM_NOHUGEPAGE", v2. (5 commits)
-      - e72633ddfc9a "mm: introduce vm_mmap_shadow_stack() as a helper for VM_SHADOW_STACK mappings" (0/5)
+      - fda96d04e6f9 "mm: introduce vm_mmap_shadow_stack() as a helper for VM_SHADOW_STACK mappings" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225161404.3157851-1-catalin.marinas@arm.com
         - Link: https://lkml.kernel.org/r/20260225161404.3157851-2-catalin.marinas@arm.com
-      - 62ca9d91f214 "arm64: gcs: use the new common vm_mmap_shadow_stack() helper" (1/5)
+      - d64899326a74 "arm64: gcs: use the new common vm_mmap_shadow_stack() helper" (1/5)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225161404.3157851-3-catalin.marinas@arm.com
-      - 8260d740036e "riscv: shstk: use the new common vm_mmap_shadow_stack() helper" (2/5)
+      - 25a4badc5a08 "riscv: shstk: use the new common vm_mmap_shadow_stack() helper" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225161404.3157851-4-catalin.marinas@arm.com
-      - 661af1cb873c "x86: shstk: use the new common vm_mmap_shadow_stack() helper" (3/5)
+      - 82489cd10a95 "x86: shstk: use the new common vm_mmap_shadow_stack() helper" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225161404.3157851-5-catalin.marinas@arm.com
-      - 81a3474fa843 "mm: do not map the shadow stack as THP" (4/5)
+      - 8c8bb3bc85bc "mm: do not map the shadow stack as THP" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225161404.3157851-6-catalin.marinas@arm.com
-    - f75e994b3cc4 "kfence: add kfence.fault parameter"
+    - d02319bfa7a0 "kfence: add kfence.fault parameter"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260225203639.3159463-1-elver@google.com
     - series "Fix KASAN support for KHO restored vmalloc regions". (2 commits)
-      - a4262a9340b9 "mm/vmalloc: export clear_vm_uninitialized_flag()" (0/2)
+      - 23f6a28887fc "mm/vmalloc: export clear_vm_uninitialized_flag()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
         - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
-      - a4625d89ccc1 "kho: fix KASAN support for restored vmalloc regions" (1/2)
+      - ca4379c9dff2 "kho: fix KASAN support for restored vmalloc regions" (1/2)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225223857.1714801-3-pasha.tatashin@soleen.com
     - series "mm: Remove stray references to pagevec", v2. (4 commits)
-      - 68b0e21e0911 "mm: remove stray references to struct pagevec" (0/4)
+      - a8dd5c567078 "mm: remove stray references to struct pagevec" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-0-716868cc2d11@columbia.edu
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-1-716868cc2d11@columbia.edu
-      - 5a18fb8803fe "fs: remove unncessary pagevec.h includes" (1/4)
+      - 4548fd23a87b "fs: remove unncessary pagevec.h includes" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-2-716868cc2d11@columbia.edu
-      - fac6ba058712 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 8066a7c76e81 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 57f1389e3b09 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE" (3/4)
+      - 3d8178d61a16 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
-    - b6440b48064b "zram: use statically allocated compression algorithm names"
+    - b408f7ae820f "zram: use statically allocated compression algorithm names"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/5bb2e9318d124dbcb2b743dcdce6a950@honor.com
     - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17 commits)
-      - 777e1e48e728 "mm: move MAX_FOLIO_ORDER definition to mmzone.h" (0/17)
+      - 657369a5effc "mm: move MAX_FOLIO_ORDER definition to mmzone.h" (0/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-1-kas@kernel.org
         - Link: https://lkml.kernel.org/r/20260227194302.274384-2-kas@kernel.org
-      - 49ad8395d37d "mm: change the interface of prep_compound_tail()" (1/17)
+      - 72144096978d "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - 07398b51cfb7 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - 74778f4636e3 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - 62fb843f8f90 "mm: move set/clear_compound_head() next to compound_head()" (3/17)
+      - 454b4a933744 "mm: move set/clear_compound_head() next to compound_head()" (3/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-5-kas@kernel.org
-      - ee8da9b73328 "riscv/mm: align vmemmap to maximal folio size" (4/17)
+      - d1bf6d9f51fe "riscv/mm: align vmemmap to maximal folio size" (4/17)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227194302.274384-6-kas@kernel.org
-      - 0df41e30cb3e "LoongArch/mm: align vmemmap to maximal folio size" (5/17)
+      - 98527a624d2b "LoongArch/mm: align vmemmap to maximal folio size" (5/17)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227194302.274384-7-kas@kernel.org
-      - 2dcf49cb022b "mm: rework compound_head() for power-of-2 sizeof(struct page)" (6/17)
+      - d90c0823d0ee "mm: rework compound_head() for power-of-2 sizeof(struct page)" (6/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-8-kas@kernel.org
-      - 46e27619dfc1 "mm/sparse: check memmap alignment for compound_info_has_mask()" (7/17)
+      - 51c066665aaa "mm/sparse: check memmap alignment for compound_info_has_mask()" (7/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-9-kas@kernel.org
-      - 42598a55c96c "mm/hugetlb: defer vmemmap population for bootmem hugepages" (8/17)
+      - 7e7cf6b914b5 "mm/hugetlb: defer vmemmap population for bootmem hugepages" (8/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-10-kas@kernel.org
-      - d165c43de68d "mm/hugetlb: refactor code around vmemmap_walk" (9/17)
+      - 579abd853974 "mm/hugetlb: refactor code around vmemmap_walk" (9/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-11-kas@kernel.org
-      - ab27dce26d30 "x86/vdso: undefine CONFIG_HUGETLB_PAGE_OPTIMIZE_VMEMMAP for vdso32" (10/17)
+      - dac21cc565d0 "x86/vdso: undefine CONFIG_HUGETLB_PAGE_OPTIMIZE_VMEMMAP for vdso32" (10/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-12-kas@kernel.org
-      - 3f2a22668654 "mm/hugetlb: remove fake head pages" (11/17)
+      - 538d11e43111 "mm/hugetlb: remove fake head pages" (11/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-13-kas@kernel.org
-      - d350b8492cb8 "mm: drop fake head checks" (12/17)
+      - a59aa17fbc23 "mm: drop fake head checks" (12/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-14-kas@kernel.org
-      - f0ddc7f34ab5 "hugetlb: remove VMEMMAP_SYNCHRONIZE_RCU" (13/17)
+      - 6264656ff34d "hugetlb: remove VMEMMAP_SYNCHRONIZE_RCU" (13/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-15-kas@kernel.org
-      - 460646c798b9 "mm/hugetlb: remove hugetlb_optimize_vmemmap_key static key" (14/17)
+      - bcb2b3fd08e3 "mm/hugetlb: remove hugetlb_optimize_vmemmap_key static key" (14/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-16-kas@kernel.org
-      - 5c9a76f34b65 "mm: remove the branch from compound_head()" (15/17)
+      - 730c59e76226 "mm: remove the branch from compound_head()" (15/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-17-kas@kernel.org
-      - b9f78ba2801a "hugetlb: update vmemmap_dedup.rst" (16/17)
+      - fff3d25091ee "hugetlb: update vmemmap_dedup.rst" (16/17)
         - Authored by no role player, reviewed by a maintainer
+        - Link: : https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
         - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
-    - 8940c0866286 "hugetlb: update vmemmap_dedup.rst"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
-    - 63aa0eb1e4dd "mm/slab: use compound_head() in page_slab()"
+    - cd33f9af9c79 "mm/slab: use compound_head() in page_slab()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260227194302.274384-19-kas@kernel.org
     - series "mm/damon/core: improve DAMOS quota efficiency for core layer filters". (2 commits)
-      - c9553f53292f "mm/damon/core: set quota-score histogram with core filters" (0/2)
+      - ea4880b857a5 "mm/damon/core: set quota-score histogram with core filters" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227170623.95384-1-sj@kernel.org
         - Link: https://lkml.kernel.org/r/20260227170623.95384-2-sj@kernel.org
-      - 09129d0c52b4 "mm/damon/core: do non-safe region walk on kdamond_apply_schemes()" (1/2)
+      - a6ffc2bcfbbc "mm/damon/core: do non-safe region walk on kdamond_apply_schemes()" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260227170623.95384-3-sj@kernel.org
-    - 26d3aa2b421e "khugepaged: remove redundant index check for pmd-folios"
+    - 2c29d7c5b2d4 "khugepaged: remove redundant index check for pmd-folios"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260227143501.1488110-1-dev.jain@arm.com
-    - 5763bf171763 "mm/pagewalk: drop FW_MIGRATION"
+    - 439e175e6f4f "mm/pagewalk: drop FW_MIGRATION"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260227212952.190691-1-david@kernel.org
-    - ef3c5bf7f6b5 "mm/debug_vm_pgtable: replace WRITE_ONCE() with pxd_clear()"
+    - c3e9bc74f679 "mm/debug_vm_pgtable: replace WRITE_ONCE() with pxd_clear()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260227061204.2215395-1-anshuman.khandual@arm.com
-    - 955ff88dba23 "mm: replace READ_ONCE() in pud_trans_unstable()"
+    - 669288b5a3c9 "mm: replace READ_ONCE() in pud_trans_unstable()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260227040300.2091901-1-anshuman.khandual@arm.com
-    - 3d1b4d95e912 "mm/kasan: fix double free for kasan pXds"
+    - 85b8cf501628 "mm/kasan: fix double free for kasan pXds"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/2f9135c7866c6e0d06e960993b8a5674a9ebc7ec.1771938394.git.ritesh.list@gmail.com
     - series "mm/damon: strictly respect min_nr_regions". (3 commits)
-      - bd9fcae4328d "mm/damon/core: split regions for min_nr_regions" (0/3)
+      - 5f33289bdf36 "mm/damon/core: split regions for min_nr_regions" (0/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260228222831.7232-1-sj@kernel.org
         - Link: https://lkml.kernel.org/r/20260228222831.7232-2-sj@kernel.org
         - Link: https://lore.kernel.org/CAC5umyjmJE9SBqjbetZZecpY54bHpn2AvCGNv3aF6J=1cfoPXQ@mail.gmail.com [1]
-      - 6f60c9a2fbe4 "mm/damon/vaddr: do not split regions for min_nr_regions" (1/3)
+      - aef1e3ed7015 "mm/damon/vaddr: do not split regions for min_nr_regions" (1/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260228222831.7232-3-sj@kernel.org
-      - ef65711b4b80 "mm/damon/test/core-kunit: add damon_apply_min_nr_regions() test" (2/3)
+      - 9e2d0414f72b "mm/damon/test/core-kunit: add damon_apply_min_nr_regions() test" (2/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260228222831.7232-4-sj@kernel.org
     - series "mm/page_alloc: pcp locking cleanup". (3 commits)
-      - ab757d11b7e8 "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n" (0/3)
+      - 63accfdabd95 "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n" (0/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-0-f7e22e603447@kernel.org
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-1-f7e22e603447@kernel.org
         - Link: https://lore.kernel.org/all/d762c46b-36f0-471a-b5b4-23c8cf5628ae@suse.cz/ [1]
-      - cc8f49933154 "mm/page_alloc: remove IRQ saving/restoring from pcp locking" (1/3)
+      - 586ded9cfbed "mm/page_alloc: remove IRQ saving/restoring from pcp locking" (1/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-2-f7e22e603447@kernel.org
-      - 3a6b894362cc "mm/page_alloc: remove pcpu_spin_* wrappers" (2/3)
+      - ed82d11651db "mm/page_alloc: remove pcpu_spin_* wrappers" (2/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-3-f7e22e603447@kernel.org
-    - a8c150ade9b7 "mm: make ref_unless functions unless_zero only"
+    - 1d305d1c050f "mm: make ref_unless functions unless_zero only"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/a0c89b49d38c671a0bdd35069d15ee13e08314d2.1772370066.git.gladyshev.ilya1@h-partners.com
-    - ee5baed8b256 "Documentation: fix a hugetlbfs reservation statement"
+    - 126670e2ece1 "Documentation: fix a hugetlbfs reservation statement"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
-    - 3590c3397ee6 "mm/vmalloc: fix incorrect size reporting on allocation failure"
+    - b6d65b5341fd "mm/vmalloc: fix incorrect size reporting on allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260302114740.2668450-1-urezki@gmail.com
-    - b714427f52b0 "vmalloc: support __GFP_RETRY_MAYFAIL and __GFP_NORETRY"
+    - 916754ebc5b0 "vmalloc: support __GFP_RETRY_MAYFAIL and __GFP_NORETRY"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302114740.2668450-2-urezki@gmail.com
+    - e393ce79b3cf "kasan: docs: SLUB is the only remaining slab implementation"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260303120416.62580-1-david@kernel.org
+- mm-unstable: 327 total, 29 (256) series, 71 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 69 commits
+    - no role, no role : 115 commits
+    - no role, reviewer: 30 commits
+    - no role, maintainer: 35 commits
+    - reviewer, nobody: 2 commits
+    - reviewer, no role : 2 commits
+    - reviewer, reviewer: 5 commits
+    - reviewer, maintainer: 3 commits
+    - maintainer, nobody: 52 commits
+    - maintainer, no role : 10 commits
+    - maintainer, maintainer: 4 commits
+  - full commits list
     - series "mm: cleanups around unmapping / zapping". (16 commits)
-      - a181fc1722f7 "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
+      - a52d6128e4b2 "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260227200848.114019-2-david@kernel.org
         - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
-      - 82ae8c9aa797 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
+      - 7a7cf4c5268d "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
-      - 081de1f6ae9d "fixup: mm/memory: remove zap_details parameter from zap_page_range_single()" (2/16)
+      - aedc4f2831fe "fixup: mm/memory: remove zap_details parameter from zap_page_range_single()" (2/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/8a27e9ac-2025-4724-a46d-0a7c90894ba7@kernel.org
-      - b844acdadc0e "mm/memory: inline unmap_mapping_range_vma() into unmap_mapping_range_tree()" (3/16)
+      - a2cfc815f358 "mm/memory: inline unmap_mapping_range_vma() into unmap_mapping_range_tree()" (3/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-4-david@kernel.org
-      - 5bcdee7d70b2 "mm/memory: simplify calculation in unmap_mapping_range_tree()" (4/16)
+      - 0f8d0a8c8225 "mm/memory: simplify calculation in unmap_mapping_range_tree()" (4/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-5-david@kernel.org
-      - 7f6db2c3136b "mm/oom_kill: use MMU_NOTIFY_CLEAR in __oom_reap_task_mm()" (5/16)
+      - 83492de90475 "mm/oom_kill: use MMU_NOTIFY_CLEAR in __oom_reap_task_mm()" (5/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-6-david@kernel.org
-      - 56f89b8cebd1 "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping()" (6/16)
+      - ab79de4276ff "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping()" (6/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-7-david@kernel.org
-      - ef4b1d032e53 "mm/memory: rename unmap_single_vma() to __zap_vma_range()" (7/16)
+      - 50f80f8c24a8 "mm/memory: rename unmap_single_vma() to __zap_vma_range()" (7/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-8-david@kernel.org
-      - 28ada04673da "mm/memory: move adjusting of address range to unmap_vmas()" (8/16)
+      - 3d2bc4a16a49 "mm/memory: move adjusting of address range to unmap_vmas()" (8/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-9-david@kernel.org
-      - 597024084402 "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
+      - 019ab5ad46eb "mm/memory: convert details->even_cows into details->skip_cows" (9/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-10-david@kernel.org
-      - 06a01007b228 "mm/memory: use __zap_vma_range() in zap_vma_for_reaping()" (10/16)
+      - 8a96cb5f7d3e "mm/memory: use __zap_vma_range() in zap_vma_for_reaping()" (10/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-11-david@kernel.org
-      - 576fdf035b4b "mm/memory: inline unmap_page_range() into __zap_vma_range()" (11/16)
+      - 8dce3d75d67d "mm/memory: inline unmap_page_range() into __zap_vma_range()" (11/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-12-david@kernel.org
-      - a5411e0a5179 "mm-memory-inline-unmap_page_range-into-__zap_vma_range-fix" (12/16)
+      - c5870fe76a0f "mm-memory-inline-unmap_page_range-into-__zap_vma_range-fix" (12/16)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/f7732d1c-0e85-4a14-948a-912c417018b5@kernel.org
-      - b8a0cf74d72b "mm: rename zap_vma_pages() to zap_vma()" (13/16)
+      - 3c8b3620fb70 "mm: rename zap_vma_pages() to zap_vma()" (13/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-13-david@kernel.org
-      - 1acc3b14ceea "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (14/16)
+      - ec35efbedf60 "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (14/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-14-david@kernel.org
-      - 289585833033 "mm: rename zap_page_range_single() to zap_vma_range()" (15/16)
+      - d0e773ea0c4f "mm: rename zap_page_range_single() to zap_vma_range()" (15/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
-    - 448d76dfa8a9 "mm-rename-zap_page_range_single-to-zap_vma_range-fix"
+    - 4b080b8ddab7 "mm-rename-zap_page_range_single-to-zap_vma_range-fix"
       - Authored by no role player, reviewed by nobody
-    - 8af1789d8d45 "mm: rename zap_vma_ptes() to zap_special_vma_range()"
+    - 29d6db662047 "mm: rename zap_vma_ptes() to zap_special_vma_range()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260227200848.114019-16-david@kernel.org
-    - 946a91400163 "mm/memory: support VM_MIXEDMAP in zap_special_vma_range()"
+    - d7fe55e8e1e4 "mm/memory: support VM_MIXEDMAP in zap_special_vma_range()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260227200848.114019-17-david@kernel.org
       - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
-    - 6042b1ca2fb6 "kasan: docs: SLUB is the only remaining slab implementation"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260303120416.62580-1-david@kernel.org
     - series "Eliminate Dying Memory Cgroup", v6. (33 commits)
-      - 83f8e515bfc9 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
+      - 74debd746c71 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772711148.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
         - Link: https://lwn.net/Articles/895431/ [2]
         - Link: https://github.com/systemd/systemd/pull/36827 [3]
-      - 89a1b999c0cb "mm: workingset: use folio_lruvec() in workingset_refault()" (1/33)
+      - e76a40795764 "mm: workingset: use folio_lruvec() in workingset_refault()" (1/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772711148.git.zhengqi.arch@bytedance.com
-      - df966fb936e7 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - e2e8a186fd33 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 275514e46680 "mm: vmscan: prepare for the refactoring the move_folios_to_lru()" (3/33)
+      - f3aec2ea1384 "mm: vmscan: prepare for the refactoring the move_folios_to_lru()" (3/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772711148.git.zhengqi.arch@bytedance.com
-      - f19232f0528b "mm: vmscan: refactor move_folios_to_lru()" (4/33)
+      - 632a282cbc8c "mm: vmscan: refactor move_folios_to_lru()" (4/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772711148.git.zhengqi.arch@bytedance.com
-      - d514bfdcc1e0 "mm: memcontrol: allocate object cgroup for non-kmem case" (5/33)
+      - 0bdbffaf52ed "mm: memcontrol: allocate object cgroup for non-kmem case" (5/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/b77274aa8e3f37c419bedf4782943fd5885dda82.1772711148.git.zhengqi.arch@bytedance.com
-      - 9d99cec77e2f "mm: memcontrol: return root object cgroup for root memory cgroup" (6/33)
+      - 0872187bd3d8 "mm: memcontrol: return root object cgroup for root memory cgroup" (6/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/e9c3f40ba7681d9753372d4ee2ac7a0216848b95.1772711148.git.zhengqi.arch@bytedance.com
-      - ffb9593bcdd1 "mm: memcontrol: prevent memory cgroup release in get_mem_cgroup_from_folio()" (7/33)
+      - 8919576e8d39 "mm: memcontrol: prevent memory cgroup release in get_mem_cgroup_from_folio()" (7/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/a5a64c6173a566bd21534606aeaaa9220cb1366d.1772711148.git.zhengqi.arch@bytedance.com
-      - a756d362e05f "buffer: prevent memory cgroup release in folio_alloc_buffers()" (8/33)
+      - ef5413c5d5c9 "buffer: prevent memory cgroup release in folio_alloc_buffers()" (8/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/d6d48fdcf329c549373ac0a1c80fd9f38067e34e.1772711148.git.zhengqi.arch@bytedance.com
-      - f40f6c936172 "writeback: prevent memory cgroup release in writeback module" (9/33)
+      - 601bfa4f1784 "writeback: prevent memory cgroup release in writeback module" (9/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/645f99bc344575417f67def3744f975596df2793.1772711148.git.zhengqi.arch@bytedance.com
-      - 3eddce0a7f7e "mm: memcontrol: prevent memory cgroup release in count_memcg_folio_events()" (10/33)
+      - 614446af1565 "mm: memcontrol: prevent memory cgroup release in count_memcg_folio_events()" (10/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/dea6aa0389367f7fd6b715c8837a2cf7506bd889.1772711148.git.zhengqi.arch@bytedance.com
-      - d4cf0dd7a6c6 "mm: page_io: prevent memory cgroup release in page_io module" (11/33)
+      - 3cf56d9481f9 "mm: page_io: prevent memory cgroup release in page_io module" (11/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/7c3708358412fb02c482d0985feb5e9513a863ef.1772711148.git.zhengqi.arch@bytedance.com
-      - edd2a5854fc2 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+      - 2be8700a4b79 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-      - 54e81b91c5e4 "mm: mglru: prevent memory cgroup release in mglru" (13/33)
+      - 15ca5cf72185 "mm: mglru: prevent memory cgroup release in mglru" (13/33)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/9d887662a9d39c425742dd8468e3123316bccfe3.1772711148.git.zhengqi.arch@bytedance.com
-      - a5f3e5f54693 "mm: memcontrol: prevent memory cgroup release in mem_cgroup_swap_full()" (14/33)
+      - 98bbb6f748c1 "mm: memcontrol: prevent memory cgroup release in mem_cgroup_swap_full()" (14/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/21d1abab7342615745ea4c18a88237335ab44d13.1772711148.git.zhengqi.arch@bytedance.com
-      - 46692033d20d "mm: workingset: prevent memory cgroup release in lru_gen_eviction()" (15/33)
+      - c9fde61fb91c "mm: workingset: prevent memory cgroup release in lru_gen_eviction()" (15/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772711148.git.zhengqi.arch@bytedance.com
-      - a2eccf4bf33c "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
+      - aabf763925be "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
-      - 616e836cf55b "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
+      - eb29ff5367dc "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com
-      - 0d00560070b2 "mm: workingset: prevent lruvec release in workingset_refault()" (18/33)
+      - f87841c7f81c "mm: workingset: prevent lruvec release in workingset_refault()" (18/33)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772711148.git.zhengqi.arch@bytedance.com
-      - 4f4676cc4161 "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
+      - a799df290421 "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com
-      - 91cc72a5b9c5 "mm: swap: prevent lruvec release in lru_gen_clear_refs()" (20/33)
+      - 6340f7e516f9 "mm: swap: prevent lruvec release in lru_gen_clear_refs()" (20/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/986cd26227191a48a7c34a2a15812d361f4ebd53.1772711148.git.zhengqi.arch@bytedance.com
-      - 7ccc1c8f76b3 "mm: workingset: prevent lruvec release in workingset_activation()" (21/33)
+      - a8451ef1b97a "mm: workingset: prevent lruvec release in workingset_activation()" (21/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/c6130476affbba0a7d309a887c3df11e0167990b.1772711148.git.zhengqi.arch@bytedance.com
-      - aaca6f1f7667 "mm: do not open-code lruvec lock" (22/33)
+      - b94335162cdb "mm: do not open-code lruvec lock" (22/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772711148.git.zhengqi.arch@bytedance.com
-      - 3b41fa68d999 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - cece9e9af84d "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-      - e30ccf82a660 "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
+      - f1ee59493246 "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
-      - dde27575ec78 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - 3a4bfeb68f43 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-      - 65d0380ad839 "mm: memcontrol: refactor memcg_reparent_objcgs()" (26/33)
+      - 70863fbcf89d "fix: mm: vmscan: prepare for reparenting MGLRU folios" (26/33)
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
+      - a9328c515b03 "mm: memcontrol: refactor memcg_reparent_objcgs()" (27/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/2e5696db1993e593a51004c1dacedbc261689629.1772711148.git.zhengqi.arch@bytedance.com
-      - a1b55e56815f "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
+      - c17a403fe406 "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (28/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
-      - 0d72b62e2959 "mm: memcontrol: refactor mod_memcg_state() and mod_memcg_lruvec_state()" (28/33)
+      - 92fafc2c0740 "mm: memcontrol: refactor mod_memcg_state() and mod_memcg_lruvec_state()" (29/33)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/7f8bd3aacec2270b9453428fc8585cca9f10751e.1772711148.git.zhengqi.arch@bytedance.com
-      - 7e32312a9729 "mm: memcontrol: prepare for reparenting non-hierarchical stats" (29/33)
+      - 2f6b7fa17dc6 "mm: memcontrol: prepare for reparenting non-hierarchical stats" (30/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/e862995c45a7101a541284b6ebee5e5c32c89066.1772711148.git.zhengqi.arch@bytedance.com
-      - fa4208350057 "mm: memcontrol: convert objcg to be per-memcg per-node type" (30/33)
+      - c8f898118e8b "mm: memcontrol: convert objcg to be per-memcg per-node type" (31/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/56c04b1c5d54f75ccdc12896df6c1ca35403ecc3.1772711148.git.zhengqi.arch@bytedance.com
-      - 7425beb50e85 "mm-memcontrol-convert-objcg-to-be-per-memcg-per-node-type-fix" (31/33)
+      - 0f06aac1086c "mm-memcontrol-convert-objcg-to-be-per-memcg-per-node-type-fix" (32/33)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260309112939.31937-1-qi.zheng@linux.dev
-      - 64f95760a056 "mm-memcontrol-convert-objcg-to-be-per-memcg-per-node-type-fix-fix" (32/33)
-        - Authored by a maintainer, reviewed by nobody
-    - 5c919d9d30c7 "mm/memcontrol: fix obj_cgroup leak in mem_cgroup_css_online() error path"
+    - d93df7941ec8 "mm-memcontrol-convert-objcg-to-be-per-memcg-per-node-type-fix-fix"
+      - Authored by a maintainer, reviewed by nobody
+    - ea060edff018 "mm/memcontrol: fix obj_cgroup leak in mem_cgroup_css_online() error path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260322193631.45457-1-devnexen@gmail.com
-    - 898ed785925e "mm-memcontrol-convert-objcg-to-be-per-memcg-per-node-type-fix-fix-fix-2-fix"
+    - f4a29eeaa9a4 "mm-memcontrol-convert-objcg-to-be-per-memcg-per-node-type-fix-fix-fix-2-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260323063007.7783-1-devnexen@gmail.com
-    - 33e9e9f86e5d "mm: memcontrol: eliminate the problem of dying memory cgroup for LRU folios"
+    - 9025c50b2d18 "mm: memcontrol: eliminate the problem of dying memory cgroup for LRU folios"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/80cb7af198dc6f2173fe616d1207a4c315ece141.1772711148.git.zhengqi.arch@bytedance.com
-    - 8e584bdf8d9a "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers"
+    - 185d557b00de "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/2c90fc006d9d730331a3caeef96f7e5dabe2036d.1772711148.git.zhengqi.arch@bytedance.com
     - series "support batched checking of the young flag for MGLRU", v3. (6 commits)
-      - 759d77950984 "mm: use inline helper functions instead of ugly macros" (0/6)
+      - 980b2c243ebb "mm: use inline helper functions instead of ugly macros" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cover.1772778858.git.baolin.wang@linux.alibaba.com
         - Link: https://lkml.kernel.org/r/ea14af84e7967ccebb25082c28a8669d6da8fe57.1772778858.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/all/cover.1770645603.git.baolin.wang@linux.alibaba.com/ [1]
-      - 128c9cafe067 "mm: rename ptep/pmdp_clear_young_notify() to ptep/pmdp_test_and_clear_young_notify()" (1/6)
+      - a645b8433a44 "mm: rename ptep/pmdp_clear_young_notify() to ptep/pmdp_test_and_clear_young_notify()" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/b3454077ce88745e6f88386b1763721746884565.1772778858.git.baolin.wang@linux.alibaba.com
-      - 102fee16e05d "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced()" (2/6)
+      - b37df871b6a2 "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/64d6fb2a33f7101e1d4aca2c9052e0758b76d492.1772778858.git.baolin.wang@linux.alibaba.com
-      - 86d5d0bea62d "mm: add a batched helper to clear the young flag for large folios" (3/6)
+      - 38cb5c679728 "mm: add a batched helper to clear the young flag for large folios" (3/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/23ec671bfcc06cd24ee0fbff8e329402742274a0.1772778858.git.baolin.wang@linux.alibaba.com
-      - 6bdc66c03372 "mm: support batched checking of the young flag for MGLRU" (4/6)
+      - 9ee88b517287 "mm: support batched checking of the young flag for MGLRU" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com
-      - 2af610e38f61 "arm64: mm: implement the architecture-specific test_and_clear_young_ptes()" (5/6)
+      - 576cf6865748 "arm64: mm: implement the architecture-specific test_and_clear_young_ptes()" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/7f891d42a720cc2e57862f3b79e4f774404f313c.1772778858.git.baolin.wang@linux.alibaba.com
-    - series ": memcg: obj stock and slab stat caching cleanups". (5 commits)
-      - a085d392d736 "mm: memcg: factor out trylock_stock() and unlock_stock()" (0/5)
+    - series "memcg: obj stock and slab stat caching cleanups". (5 commits)
+      - ae0f9436243e "mm: memcg: factor out trylock_stock() and unlock_stock()" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260302195305.620713-1-hannes@cmpxchg.org
         - Link: https://lkml.kernel.org/r/20260302195305.620713-2-hannes@cmpxchg.org
-      - 5b53c52608d4 "mm: memcg: simplify objcg charge size and stock remainder math" (1/5)
+      - 7e2b100ad4b7 "mm: memcg: simplify objcg charge size and stock remainder math" (1/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260302195305.620713-3-hannes@cmpxchg.org
-      - d992eaa49553 "mm: memcontrol: split out __obj_cgroup_charge()" (2/5)
+      - a54ba3daefe0 "mm: memcontrol: split out __obj_cgroup_charge()" (2/5)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260302195305.620713-4-hannes@cmpxchg.org
-      - 511eca708fab "mm: memcontrol: use __account_obj_stock() in the !locked path" (3/5)
+      - 31ed9df95895 "mm: memcontrol: use __account_obj_stock() in the !locked path" (3/5)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260302195305.620713-5-hannes@cmpxchg.org
-      - e3f8ec40da5b "mm: memcg: separate slab stat accounting from objcg charge cache" (4/5)
+      - 64fddde4a980 "mm: memcg: separate slab stat accounting from objcg charge cache" (4/5)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260302195305.620713-6-hannes@cmpxchg.org
     - series "Allow order zero pages in page reporting", v4. (5 commits)
-      - 7935e2eb95f6 "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED" (0/5)
+      - a96d3f19185b "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-1-yuvraj.sakshith@oss.qualcomm.com
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-2-yuvraj.sakshith@oss.qualcomm.com
-      - edca4e93bf85 "mm-page_reporting-add-page_reporting_order_unspecified-fix" (1/5)
+      - ee50099cf5ee "mm-page_reporting-add-page_reporting_order_unspecified-fix" (1/5)
         - Authored by a maintainer, reviewed by nobody
-      - 1ac593aa305e "virtio_balloon: set unspecified page reporting order" (2/5)
+      - 2a8426b9e672 "virtio_balloon: set unspecified page reporting order" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-3-yuvraj.sakshith@oss.qualcomm.com
-      - a8100d10f9a9 "hv_balloon: set unspecified page reporting order" (3/5)
+      - 62fe65c37851 "hv_balloon: set unspecified page reporting order" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-4-yuvraj.sakshith@oss.qualcomm.com
-      - 950f638c430e "mm/page_reporting: change PAGE_REPORTING_ORDER_UNSPECIFIED to -1" (4/5)
+      - 6b9ef9f2f283 "mm/page_reporting: change PAGE_REPORTING_ORDER_UNSPECIFIED to -1" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-5-yuvraj.sakshith@oss.qualcomm.com
-    - e8ba601e5125 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED"
+    - 72bb167c43a8 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260303113032.3008371-6-yuvraj.sakshith@oss.qualcomm.com
-    - 8d1a12bfb5e8 "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
+    - ec6048b8edd5 "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260303102600.105255-1-maninder1.s@samsung.com
-    - d5b9591a4c8d "mm/vmscan: fix unintended mtc->nmask mutation in alloc_demote_folio()"
+    - 4e45ca7f6384 "mm/vmscan: fix unintended mtc->nmask mutation in alloc_demote_folio()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260303052519.109244-1-bingjiao@google.com
-    - 673a12bcfcd6 "kasan: fix bug type classification for SW_TAGS mode"
+    - fe8a29a0bfae "kasan: fix bug type classification for SW_TAGS mode"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260305185659.20807-1-ryabinin.a.a@gmail.com
     - series "mm: vma flag tweaks". (6 commits)
-      - 1d255f8743c2 "mm: rename VMA flag helpers to be more readable" (0/6)
+      - 659f38ab47d6 "mm: rename VMA flag helpers to be more readable" (0/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - ede7fb61952d "mm: add vma_desc_test_all() and use it" (1/6)
+      - fd59c731e5ee "mm: add vma_desc_test_all() and use it" (1/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/568c8f8d6a84ff64014f997517cba7a629f7eed6.1772704455.git.ljs@kernel.org
-      - 5f1e7d5c6a48 "mm: always inline __mk_vma_flags() and invoked functions" (2/6)
+      - 49c729e1ebda "mm: always inline __mk_vma_flags() and invoked functions" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/241f49c52074d436edbb9c6a6662a8dc142a8f43.1772704455.git.ljs@kernel.org
-      - 684d6508ed61 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
+      - d15b34bf33f8 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - 6d80e55b7a11 "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
+      - a9a2b37da2ad "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
-      - d0e1c64e0918 "tools/testing/vma: add test for vma_flags_test(), vma_desc_test()" (5/6)
+      - 1697641c0c7c "tools/testing/vma: add test for vma_flags_test(), vma_desc_test()" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/376a39eb9e134d2c8ab10e32720dd292970b080a.1772704455.git.ljs@kernel.org
-    - ead5fc36e5c4 "tools-testing-vma-add-test-for-vma_flags_test-vma_desc_test-fix"
+    - 21a1c0441833 "tools-testing-vma-add-test-for-vma_flags_test-vma_desc_test-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/f6f396d2-1ba2-426f-b756-d8cc5985cc7c@lucifer.local
-    - e2f40c04c385 "MAINTAINERS: add mm-related procfs files to MM sections"
+    - 993d748d6317 "MAINTAINERS: add mm-related procfs files to MM sections"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260305-maintainers-proc-v1-1-d6d09b3db3b6@kernel.org
-    - 467bc4146ced "selftests/mm: fix soft-dirty kselftest supported check"
+    - 23c7c143411f "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260320184010.759461-2-audra@redhat.com
-    - 2202f425b6cc "mm: remove '!root_reclaim' checking in should_abort_scan()"
+    - 90e219c7f901 "mm: remove '!root_reclaim' checking in should_abort_scan()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260318011558.1696310-1-zhaoyang.huang@unisoc.com
       - Link: https://lkml.kernel.org/r/20260212032111.408865-1-zhaoyang.huang@unisoc.com
-    - b7d3631b097d "sparc: use vmemmap_populate_hugepages for vmemmap_populate"
+    - cca38609bfaa "sparc: use vmemmap_populate_hugepages for vmemmap_populate"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260201063532.44807-2-pilgrimtao@gmail.com
-    - 9b8b7b78ece8 "mm: introduce a new page type for page pool in page type"
+    - 3a5644b2c6e7 "mm: introduce a new page type for page pool in page type"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
-    - 387deaee9fe2 "mm-introduce-a-new-page-type-for-page-pool-in-page-type-v5"
+    - 8c05a5e67864 "mm-introduce-a-new-page-type-for-page-pool-in-page-type-v5"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260316223113.20097-1-byungchul@sk.com
     - series "mm: zone lock tracepoint instrumentation", v4. (5 commits)
-      - 89c04f131233 "mm: introduce zone lock wrappers" (0/5)
+      - 29fbcf2e0202 "mm: introduce zone lock wrappers" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cover.1772206930.git.d@ilvokhin.com
         - Link: https://lkml.kernel.org/r/849dee9c47df1e6fba97c9933af0d5a08b8e15d3.1772206930.git.d@ilvokhin.com
-      - 97a3c99aeeaa "mm: convert zone lock users to wrappers" (1/5)
+      - 90ecede30c2b "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - 80789a28ac38 "mm: convert compaction to zone lock wrappers" (2/5)
+      - 9ffbfd830468 "mm: convert compaction to zone lock wrappers" (2/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/3a09e46f52cf9f709b0725bc2b648cc5212843b2.1772206930.git.d@ilvokhin.com
-      - 60b1b94ab7ab "mm: rename zone->lock to zone->_lock" (3/5)
+      - 8d8ad3ac390d "mm: rename zone->lock to zone->_lock" (3/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
-      - a9ba7e097905 "mm-convert-zone-lock-users-to-wrappers-fix-fix" (4/5)
+      - d4b7132b278f "mm-convert-zone-lock-users-to-wrappers-fix-fix" (4/5)
         - Authored by a maintainer, reviewed by nobody
-    - fc17cb6d5d1a "mm: fix remaining zone->lock references"
+    - f677274b8931 "mm: fix remaining zone->lock references"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
-    - 54ee873dbdf6 "mm: documentation: standardize on "zone lock" terminology"
+    - 144a91a549b6 "mm: documentation: standardize on "zone lock" terminology"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
-    - ee8da66d8372 "mm: add tracepoints for zone lock"
+    - 8e1ee6539f19 "mm: add tracepoints for zone lock"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/ae145fe890f028409f727b4921904b547346fa0b.1772206930.git.d@ilvokhin.com
-    - 872c0341ac40 "mm/percpu-internal.h: optimise pcpu_chunk_struct to save memory"
+    - 9fdd08a4adab "mm/percpu-internal.h: optimise pcpu_chunk_struct to save memory"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260305073043.571691-1-zenghongling@kylinos.cn
-    - 889e33948aec "ubsan: turn off kmsan inside of ubsan instrumentation"
+    - 850eb13b2269 "ubsan: turn off kmsan inside of ubsan instrumentation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260306150613.350029-1-arnd@kernel.org
-    - 14d0b87fcf0e "mm/migrate_device: document folio_get requirement before frozen PMD split"
+    - 7e6326af3ce6 "mm/migrate_device: document folio_get requirement before frozen PMD split"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
-    - dd693a931448 "lib/maple_tree: fix swapped arguments in mas_safe_pivot() call"
+    - 194027f67b3f "lib/maple_tree: fix swapped arguments in mas_safe_pivot() call"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260306225849.2824409-1-objecting@objecting.org
       - Link: https://lkml.kernel.org/r/20260306223219.2824040-1-objecting@objecting.org
       - Link: https://lkml.kernel.org/r/20260306200820.2819999-1-objecting@objecting.org
     - series "mm, kvm: allow uffd support in guest_memfd", v2. (15 commits)
-      - fe3e25ada34f "userfaultfd: introduce mfill_copy_folio_locked() helper" (0/15)
+      - f09cd134b282 "userfaultfd: introduce mfill_copy_folio_locked() helper" (0/15)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-2-rppt@kernel.org
-      - 8bbefc73945b "userfaultfd: introduce struct mfill_state" (1/15)
+      - 03dcab509261 "userfaultfd: introduce struct mfill_state" (1/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-3-rppt@kernel.org
-      - 37bfbb6d9af7 "userfaultfd-introduce-struct-mfill_state-fix" (2/15)
+      - fbb7150ee55a "userfaultfd-introduce-struct-mfill_state-fix" (2/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
-      - 26305cac6405 "userfaultfd: introduce mfill_get_pmd() helper" (3/15)
+      - 4cf32505afbd "userfaultfd: introduce mfill_get_pmd() helper" (3/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-4-rppt@kernel.org
-      - c5efb972cfc1 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma()" (4/15)
+      - 864dafb7904e "userfaultfd: introduce mfill_get_vma() and mfill_put_vma()" (4/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-5-rppt@kernel.org
-      - 30d73c85dd41 "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()" (5/15)
+      - 9318f1fe13bb "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()" (5/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
-      - 6630ab1b1654 "userfaultfd: fix lock leak in mfill_get_vma()" (6/15)
+      - b36b94e4271f "userfaultfd: fix lock leak in mfill_get_vma()" (6/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
-      - b864758991ad "userfaultfd: move vma_can_userfault out of line" (7/15)
+      - 56aa681f52c3 "userfaultfd: move vma_can_userfault out of line" (7/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-7-rppt@kernel.org
-      - 0f519ec1be87 "userfaultfd: introduce vm_uffd_ops" (8/15)
+      - 943ed2075183 "userfaultfd: introduce vm_uffd_ops" (8/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
-      - 7cdf49f835a3 "userfaultfd: allow registration of WP_ASYNC for any VMA" (9/15)
+      - f5325501b960 "userfaultfd: allow registration of WP_ASYNC for any VMA" (9/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/abG5HFV8yoEHOFkh@kernel.org
-      - 59162db0da89 "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE" (10/15)
+      - d99b531c2e57 "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE" (10/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-9-rppt@kernel.org
-      - 37fbd6977958 "userfaultfd: introduce vm_uffd_ops->alloc_folio()" (11/15)
+      - 04e90a199704 "userfaultfd: introduce vm_uffd_ops->alloc_folio()" (11/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-10-rppt@kernel.org
-      - 8f07a725cf64 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops" (12/15)
+      - 9e60cbdd7e24 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops" (12/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-11-rppt@kernel.org
-      - f7f1af0670af "userfaultfd: mfill_atomic(): remove retry logic" (13/15)
+      - 397b9f2dedff "userfaultfd: mfill_atomic(): remove retry logic" (13/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-12-rppt@kernel.org
-      - f05225d74dff "mm: generalize handling of userfaults in __do_fault()" (14/15)
+      - 62a95501641f "mm: generalize handling of userfaults in __do_fault()" (14/15)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-13-rppt@kernel.org
-    - a0b5b8c172e8 "KVM: guest_memfd: implement userfaultfd operations"
+    - 561f648e4a3d "KVM: guest_memfd: implement userfaultfd operations"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260306171815.3160826-14-rppt@kernel.org
-    - dcfb55faeb90 "KVM: selftests: test userfaultfd minor for guest_memfd"
+    - e69737a0a206 "KVM: selftests: test userfaultfd minor for guest_memfd"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260306171815.3160826-15-rppt@kernel.org
-    - d6403a4cefda "KVM: selftests: test userfaultfd missing for guest_memfd"
+    - 960cd5634e4d "KVM: selftests: test userfaultfd missing for guest_memfd"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260306171815.3160826-16-rppt@kernel.org
     - series "mm/damon: add optional debugging-purpose sanity checks". (10 commits)
-      - db1aee60254b "mm/damon: add CONFIG_DAMON_DEBUG_SANITY" (0/10)
+      - 315c1012060c "mm/damon: add CONFIG_DAMON_DEBUG_SANITY" (0/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306152914.86303-1-sj@kernel.org
         - Link: https://lkml.kernel.org/r/20260306152914.86303-2-sj@kernel.org
         - Link: https://lore.kernel.org/20251231070029.79682-1-sj@kernel.org [1]
         - Link: https://github.com/damonitor/damon-tests/commit/a80fbee55e272f151b4e5809ee85898aea33e6ff [2]
-      - eb3774d93c22 "mm/damon/core: add damon_new_region() debug_sanity check" (1/10)
+      - b08263c79e0f "mm/damon/core: add damon_new_region() debug_sanity check" (1/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306152914.86303-3-sj@kernel.org
-      - b19acb84da4e "mm/damon/core: add damon_del_region() debug_sanity check" (2/10)
+      - afcc2d92bee6 "mm/damon/core: add damon_del_region() debug_sanity check" (2/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306152914.86303-4-sj@kernel.org
-      - 10096b9191ff "mm/damon/core: add damon_nr_regions() debug_sanity check" (3/10)
+      - b30deab2dac2 "mm/damon/core: add damon_nr_regions() debug_sanity check" (3/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306152914.86303-5-sj@kernel.org
-      - 8c132c6f7c5a "mm/damon/core: add damon_merge_two_regions() debug_sanity check" (4/10)
+      - b930f6c6060a "mm/damon/core: add damon_merge_two_regions() debug_sanity check" (4/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306152914.86303-6-sj@kernel.org
-      - c53c9c52f642 "mm/damon/core: add damon_merge_regions_of() debug_sanity check" (5/10)
+      - 4379dac8e6f7 "mm/damon/core: add damon_merge_regions_of() debug_sanity check" (5/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306152914.86303-7-sj@kernel.org
-      - 3c777e190365 "mm/damon/core: add damon_split_region_at() debug_sanity check" (6/10)
+      - 8d3a0a044c79 "mm/damon/core: add damon_split_region_at() debug_sanity check" (6/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306152914.86303-8-sj@kernel.org
-      - 305e2803753c "mm/damon/core: add damon_reset_aggregated() debug_sanity check" (7/10)
+      - ca8727b68258 "mm/damon/core: add damon_reset_aggregated() debug_sanity check" (7/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306152914.86303-9-sj@kernel.org
-      - a53b3b179103 "mm/damon/tests/.kunitconifg: enable DAMON_DEBUG_SANITY" (8/10)
+      - e2d2f3ccca70 "mm/damon/tests/.kunitconifg: enable DAMON_DEBUG_SANITY" (8/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306152914.86303-10-sj@kernel.org
-      - 445e09e3dd54 "selftests/damon/config: enable DAMON_DEBUG_SANITY" (9/10)
+      - fdc11e9901e3 "selftests/damon/config: enable DAMON_DEBUG_SANITY" (9/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306152914.86303-11-sj@kernel.org
     - series "mm/damon: test and document power-of-2 min_region_sz requirement". (2 commits)
-      - 89587108cffc "mm/damon/tests/core-kunit: add a test for damon_commit_ctx()" (0/2)
+      - a715f65aa73e "mm/damon/tests/core-kunit: add a test for damon_commit_ctx()" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260307194222.202075-2-sj@kernel.org
-      - cb27e5131e91 "Docs/mm/damon/design: document the power-of-two limitation for addr_unit" (1/2)
+      - 7d6a761f92c2 "Docs/mm/damon/design: document the power-of-two limitation for addr_unit" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260307194222.202075-3-sj@kernel.org
     - series "mm/damon/core: make passed_sample_intervals comparisons overflow-safe". (3 commits)
-      - b61054ef3ab0 "mm/damon/core: remove damos_set_next_apply_sis() duplicates" (0/3)
+      - b3c7261d8141 "mm/damon/core: remove damos_set_next_apply_sis() duplicates" (0/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260307194915.203169-2-sj@kernel.org
-      - 1fa91f1472ba "mm/damon/core: use time_before() for next_apply_sis" (1/3)
+      - 67c1db93427c "mm/damon/core: use time_before() for next_apply_sis" (1/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260307194915.203169-3-sj@kernel.org
-      - cc4ea3d55c49 "mm/damon/core: use time_after_eq() in kdamond_fn()" (2/3)
+      - 83f6b8f81573 "mm/damon/core: use time_after_eq() in kdamond_fn()" (2/3)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260307194915.203169-4-sj@kernel.org
     - series "mm/damon: improve/fixup/update ratio calculation, test and documentation". (7 commits)
-      - 6394158062c8 "mm/damon/core: use mult_frac()" (0/7)
+      - 3ea7546e42d1 "mm/damon/core: use mult_frac()" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-1-sj@kernel.org
         - Link: https://lkml.kernel.org/r/20260307195356.203753-2-sj@kernel.org
-      - 00358c4db966 "mm/damon/tests/core-kunit: add a test for damon_is_last_region()" (1/7)
+      - 0840e6abf4d6 "mm/damon/tests/core-kunit: add a test for damon_is_last_region()" (1/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-3-sj@kernel.org
         - Link: https://lore.kernel.org/20260114152049.99727-1-sj@kernel.org/ [1]
-      - a8925702b13d "mm/damon/core: clarify damon_set_attrs() usages" (2/7)
+      - 6dba02291f0d "mm/damon/core: clarify damon_set_attrs() usages" (2/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-4-sj@kernel.org
-      - 8472585ba733 "mm/damon: document non-zero length damon_region assumption" (3/7)
+      - f45c930b53f0 "mm/damon: document non-zero length damon_region assumption" (3/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-5-sj@kernel.org
         - Link: https://lore.kernel.org/20251231070029.79682-1-sj@kernel.org/ [1]
-      - 2383f2a16963 "Docs/admin-guide/mm/damn/lru_sort: fix intervals autotune parameter name" (4/7)
+      - b4ee7d190504 "Docs/admin-guide/mm/damn/lru_sort: fix intervals autotune parameter name" (4/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-6-sj@kernel.org
-      - bdb318816963 "Docs/mm/damon/maintainer-profile: use flexible review cadence" (5/7)
+      - a535b0e25ffa "Docs/mm/damon/maintainer-profile: use flexible review cadence" (5/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-7-sj@kernel.org
-      - eec6178afed6 "Docs/mm/damon/index: fix typo: autoamted -> automated" (6/7)
+      - 5dc29dd7b280 "Docs/mm/damon/index: fix typo: autoamted -> automated" (6/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-8-sj@kernel.org
-    - f819ee254091 "docs: mm: fix typo in numa_memory_policy.rst"
+    - 73236f964616 "docs: mm: fix typo in numa_memory_policy.rst"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260310151837.5888-1-akinobu.mita@gmail.com
-    - dc44ac1c39d0 "mm/debug: optimize once judgment with clang"
+    - 7561b7ba0d63 "mm/debug: optimize once judgment with clang"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260309153405.20130-1-qq570070308@gmail.com
     - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4 commits)
-      - 2e7f95029f89 "mm: move vma_kernel_pagesize() from hugetlb to mm.h" (0/4)
+      - 3789e575879a "mm: move vma_kernel_pagesize() from hugetlb to mm.h" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260309151901.123947-2-david@kernel.org
-      - d0ecafb7c3c6 "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
+      - 6aa8fdbb3df2 "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
-      - 94c75372de18 "KVM: remove hugetlb.h inclusion" (2/4)
+      - f4e92cfa0149 "KVM: remove hugetlb.h inclusion" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-4-david@kernel.org
-      - f5b88b31ae49 "KVM: PPC: remove hugetlb.h inclusion" (3/4)
+      - 99090f7eaf05 "KVM: PPC: remove hugetlb.h inclusion" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-5-david@kernel.org
-    - de4dd2384679 "kho: make sure preservations do not span multiple NUMA nodes"
+    - 661f631d779e "kho: make sure preservations do not span multiple NUMA nodes"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260309123410.382308-1-pratyush@kernel.org
-    - 01285e998af3 "kho: drop restriction on maximum page order"
+    - 21b9d78620c9 "kho: drop restriction on maximum page order"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260309123410.382308-2-pratyush@kernel.org
     - series "selftests/mm: fix failures and robustness improvements", v2. (13 commits)
-      - 5ddbbca96035 "selftests/mm: fix hugetlb pathname construction in charge_reserved_hugetlb.sh" (0/13)
+      - 3819ca7f9174 "selftests/mm: fix hugetlb pathname construction in charge_reserved_hugetlb.sh" (0/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cover.1773305677.git.sayalip@linux.ibm.com
         - Link: https://lkml.kernel.org/r/3b34767f2cb705c8de0f085a85bd21bdf6998ca6.1773305677.git.sayalip@linux.ibm.com
-      - 5d8e388172ea "selftests/mm: fix hugetlb pathname construction in hugetlb_reparenting_test.sh" (1/13)
+      - 8477da149b4d "selftests/mm: fix hugetlb pathname construction in hugetlb_reparenting_test.sh" (1/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/3ab5781190ea0a6bffda2683b2ca221e0c7f6280.1773305677.git.sayalip@linux.ibm.com
-      - 202085d232f1 "selftest/mm: fix cgroup task placement and tolerance in hugetlb_reparenting_test.sh" (2/13)
+      - ec8feda22927 "selftest/mm: fix cgroup task placement and tolerance in hugetlb_reparenting_test.sh" (2/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/3b5b4275fed509e13567bba7471a9130bbfa6841.1773305677.git.sayalip@linux.ibm.com
-      - f69eb216ac33 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (3/13)
+      - 6cecec2ee930 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (3/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/94c18dd26cf88f10b4b496cb3de08d81439a8909.1773305677.git.sayalip@linux.ibm.com
-      - 04e382a2df94 "selftest/mm: adjust hugepage-mremap test size for large huge pages" (4/13)
+      - 1f228cc3f10a "selftest/mm: adjust hugepage-mremap test size for large huge pages" (4/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0ea624c4bf022425b50c50cf8f5e3023106db9c1.1773305677.git.sayalip@linux.ibm.com
-      - dae243ebdb4a "selftest/mm: register existing mapping with userfaultfd in hugepage-mremap" (5/13)
+      - 2882ce3193cf "selftest/mm: register existing mapping with userfaultfd in hugepage-mremap" (5/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/da7ec96ee85ccfdb9bec704c6dd534b419212f94.1773305677.git.sayalip@linux.ibm.com
-      - b3e28ccb5ab5 "selftests/mm: ensure destination is hugetlb-backed in hugepage-mremap" (6/13)
+      - 043258d67374 "selftests/mm: ensure destination is hugetlb-backed in hugepage-mremap" (6/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/a9e12dcb25b9be4f146063669b1eb3ff9b776c23.1773305677.git.sayalip@linux.ibm.com
-      - 88975bc596eb "selftests/mm: skip uffd-wp-mremap if UFFD write-protect is unsupported" (7/13)
+      - 89e547f79449 "selftests/mm: skip uffd-wp-mremap if UFFD write-protect is unsupported" (7/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/ed23ff57a80881c9d087d22709862af40addf49b.1773305678.git.sayalip@linux.ibm.com
-      - 6905f37d1dc5 "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero" (8/13)
+      - c6c892b8d8d6 "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero" (8/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/2516cad1d9dcbe613619a1006aed1991302c9bee.1773305678.git.sayalip@linux.ibm.com
-      - d73bcf027779 "selftests/mm: fix double increment in linked list cleanup in compaction_test" (9/13)
+      - e6491054db98 "selftests/mm: fix double increment in linked list cleanup in compaction_test" (9/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/27390ade4251d1f7f6b846bd5836fa79dbf285df.1773305678.git.sayalip@linux.ibm.com
-      - 7fbccc1e4087 "selftests/mm: move hwpoison setup into run_test() and silence modprobe output for memory-failure category" (10/13)
+      - c87df0002c3d "selftests/mm: move hwpoison setup into run_test() and silence modprobe output for memory-failure category" (10/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/35a44ccc4d1587255e8f920b22e983f74c024f2e.1773305678.git.sayalip@linux.ibm.com
-      - 87d05b733894 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes" (11/13)
+      - 5af6351c82e5 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes" (11/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com
     - series "selftests/mm: fix failures and robustness improvements". (13 commits)
-      - 2efa15d60363 "selftests/mm: restore default nr_hugepages value during cleanup in charge_reserved_hugetlb.sh" (0/13)
+      - ad9e2b2e0cca "selftests/mm: restore default nr_hugepages value during cleanup in charge_reserved_hugetlb.sh" (0/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cover.1773134177.git.sayalip@linux.ibm.com
         - Link: https://lkml.kernel.org/r/aef8d9c1c6fb2b80af90543be21e15030e720733.1773134177.git.sayalip@linux.ibm.com
     - series "zram: recompression cleanups and tweaks", v2. (6 commits)
-      - fe3e13ee859f "zram: do not permit params change after init" (0/6)
+      - 71da203ac102 "zram: do not permit params change after init" (0/6)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-1-senozhatsky@chromium.org
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-2-senozhatsky@chromium.org
-      - 6e926b6ab136 "zram: do not autocorrect bad recompression parameters" (1/6)
+      - 5509d18d303e "zram: do not autocorrect bad recompression parameters" (1/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-3-senozhatsky@chromium.org
-      - 9af026eb9235 "zram: drop ->num_active_comps" (2/6)
+      - 1809a705df40 "zram: drop ->num_active_comps" (2/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-4-senozhatsky@chromium.org
-      - 3e215b22d20e "zram: update recompression documentation" (3/6)
+      - 6bd4901b4a76 "zram: update recompression documentation" (3/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-5-senozhatsky@chromium.org
-      - 923661dc7bb2 "zram: remove chained recompression" (4/6)
+      - d503c8420a8f "zram: remove chained recompression" (4/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-6-senozhatsky@chromium.org
-      - eb73dc9f5d79 "zram: unify and harden algo/priority params handling" (5/6)
+      - 6bfa3e6675b5 "zram: unify and harden algo/priority params handling" (5/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-7-senozhatsky@chromium.org
-    - 1955ae84ffcb "mm/vmscan: avoid false-positive -Wuninitialized warning"
+    - fde0e55248fd "mm/vmscan: avoid false-positive -Wuninitialized warning"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260213123902.3466040-1-arnd@kernel.org
-    - 3db4b8ebdedc "mm: prevent droppable mappings from being locked"
+    - e57d39036852 "mm: prevent droppable mappings from being locked"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260310155821.17869-1-anthony.yznaga@oracle.com
-    - 2f3190949293 "selftests/mm: verify droppable mappings cannot be locked"
+    - fefd42739c84 "selftests/mm: verify droppable mappings cannot be locked"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260310155821.17869-2-anthony.yznaga@oracle.com
-    - 3be56dd3541e "mm/swap: strengthen locking assertions and invariants in cluster allocation"
+    - e1907885dd45 "mm/swap: strengthen locking assertions and invariants in cluster allocation"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260310015657.42395-1-hui.zhu@linux.dev
-    - c50e10343f08 "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v4"
+    - 49822bc0beb1 "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v4"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260311022241.177801-1-hui.zhu@linux.dev
-    - b5fcbf850939 "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v5"
+    - 0b8be1699f14 "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v5"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260312023024.903143-1-hui.zhu@linux.dev
     - series "mm/damon: support multiple goal-based quota tuning algorithms". (11 commits)
-      - 815d9b68567a "mm/damon/core: introduce damos_quota_goal_tuner" (0/11)
+      - 9d8b2bda89b9 "mm/damon/core: introduce damos_quota_goal_tuner" (0/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-2-sj@kernel.org
         - Link: https://lore.kernel.org/CALa+Y17__d=ZsM1yX+MXx0ozVdsXnFqF4p0g+kATEitrWyZFfg@mail.gmail.com [1]
         - Link: https://lore.kernel.org/20260204022537.814-1-yunjeong.mun@sk.com [2]
-      - f11826709cfb "mm/damon/core: allow quota goals set zero effective size quota" (1/11)
+      - d386e3b785d7 "mm/damon/core: allow quota goals set zero effective size quota" (1/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-3-sj@kernel.org
-      - ebc2853cc5d2 "mm/damon/core: introduce DAMOS_QUOTA_GOAL_TUNER_TEMPORAL" (2/11)
+      - 539cc0c372ae "mm/damon/core: introduce DAMOS_QUOTA_GOAL_TUNER_TEMPORAL" (2/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-4-sj@kernel.org
-      - dfd77b21ac36 "mm/damon/sysfs-schemes: implement quotas->goal_tuner file" (3/11)
+      - b713ed3b7750 "mm/damon/sysfs-schemes: implement quotas->goal_tuner file" (3/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-5-sj@kernel.org
-      - 6a1fd930bbfd "Docs/mm/damon/design: document the goal-based quota tuner selections" (4/11)
+      - 66cb4aa69f5a "Docs/mm/damon/design: document the goal-based quota tuner selections" (4/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-6-sj@kernel.org
-      - f0f386c117ed "Docs/admin-guide/mm/damon/usage: document goal_tuner sysfs file" (5/11)
+      - 18da2088d476 "Docs/admin-guide/mm/damon/usage: document goal_tuner sysfs file" (5/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-7-sj@kernel.org
-      - f4064c5129f8 "Docs/ABI/damon: update for goal_tuner" (6/11)
+      - 743708f0b82c "Docs/ABI/damon: update for goal_tuner" (6/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-8-sj@kernel.org
-      - a267325c16af "mm/damon/tests/core-kunit: test goal_tuner commit" (7/11)
+      - 3be1bb0c8a61 "mm/damon/tests/core-kunit: test goal_tuner commit" (7/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-9-sj@kernel.org
-      - 70c7c807db46 "selftests/damon/_damon_sysfs: support goal_tuner setup" (8/11)
+      - 35eca603ce52 "selftests/damon/_damon_sysfs: support goal_tuner setup" (8/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-10-sj@kernel.org
-      - 6bb8c6f3144e "selftests/damon/drgn_dump_damon_status: support quota goal_tuner dumping" (9/11)
+      - c474230c4f09 "selftests/damon/drgn_dump_damon_status: support quota goal_tuner dumping" (9/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-11-sj@kernel.org
-      - 618f7a4ad762 "selftests/damon/sysfs.py: test goal_tuner commit" (10/11)
+      - b610bb19d2b3 "selftests/damon/sysfs.py: test goal_tuner commit" (10/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-12-sj@kernel.org
     - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4 commits)
-      - cb6b817333e1 "mm: khugepaged: export set_recommended_min_free_kbytes()" (0/4)
+      - 4286e74b6866 "mm: khugepaged: export set_recommended_min_free_kbytes()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-0-31eb98fa5a8b@debian.org
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-1-31eb98fa5a8b@debian.org
-      - c5cc717d5190 "mm: huge_memory: refactor anon_enabled_store() with set_anon_enabled_mode()" (1/4)
+      - 9777a3181d18 "mm: huge_memory: refactor anon_enabled_store() with set_anon_enabled_mode()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-2-31eb98fa5a8b@debian.org
-      - 86c7ccdab7ed "mm: huge_memory: refactor enabled_store() with set_global_enabled_mode()" (2/4)
+      - f27acf3c891c "mm: huge_memory: refactor enabled_store() with set_global_enabled_mode()" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-3-31eb98fa5a8b@debian.org
-      - cec37d1330cc "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
+      - 97a5641826e5 "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org
-    - b2ef8ab8dda7 "selftests/mm: pagemap_ioctl: remove hungarian notation"
+    - b53d8808d007 "selftests/mm: pagemap_ioctl: remove hungarian notation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260311180737.3767545-1-rppt@kernel.org
-    - cade87428691 "selftest: memcg: skip memcg_sock test if address family not supported"
+    - dfa71c0e73d8 "selftest: memcg: skip memcg_sock test if address family not supported"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260311200526.885899-1-longman@redhat.com
-    - b67dbfa4e28c "mm: optimize the implementation of WARN_ON_ONCE_GFP()"
+    - 9dc8fc6a60a4 "mm: optimize the implementation of WARN_ON_ONCE_GFP()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260309153811.40958-1-qq570070308@gmail.com
-    - 441dbf4f0a9c "mm: migrate: requeue destination folio on deferred split queue"
+    - 99600bbd07c0 "mm: migrate: requeue destination folio on deferred split queue"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev
-    - 6d2db585ddf7 "kasan: update outdated comment"
+    - 8bb32deb3ec4 "kasan: update outdated comment"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260312053812.1365-1-kexinsun@smail.nju.edu.cn
-    - b6985fcd44d4 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+    - 57dc537792b5 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
     - series "mm: improve map count checks". (3 commits)
-      - 75ea82d7d6b5 "mm/mremap: correct invalid map count check" (0/3)
+      - 50e45bfd6b40 "mm/mremap: correct invalid map count check" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/cover.1773249037.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/73e218c67dcd197c5331840fb011e2c17155bfb0.1773249037.git.ljs@kernel.org
-      - aba19bf23c6c "mm: abstract reading sysctl_max_map_count, and READ_ONCE()" (1/3)
+      - cbe1d87f4bd3 "mm: abstract reading sysctl_max_map_count, and READ_ONCE()" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/0715259eb37cbdfde4f9e5db92a20ec7110a1ce5.1773249037.git.ljs@kernel.org
-      - 0fab45c7ffe7 "mm/mremap: check map count under mmap write lock and abstract" (2/3)
+      - aca285cd89dd "mm/mremap: check map count under mmap write lock and abstract" (2/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/18be0b48eaa8e8804eb745974ee729c3ade0c687.1773249037.git.ljs@kernel.org
     - series "mm/damon: support addr_unit on default monitoring targets for modules". (5 commits)
-      - d842f6f9c617 "mm/damon/core: fix wrong end address assignment on walk_system_ram()" (0/5)
+      - 49f76a84c0d4 "mm/damon/core: fix wrong end address assignment on walk_system_ram()" (0/5)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311052927.93921-1-sj@kernel.org
         - Link: https://lkml.kernel.org/r/20260311052927.93921-2-sj@kernel.org
         - Link: https://lore.kernel.org/20260131015643.79158-1-sj@kernel.org [1]
-      - 26e2c30fd0b2 "mm/damon/core: support addr_unit on damon_find_biggest_system_ram()" (1/5)
+      - 45ae9db0f0a3 "mm/damon/core: support addr_unit on damon_find_biggest_system_ram()" (1/5)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311052927.93921-3-sj@kernel.org
-      - d393c2e52f49 "mm/damon/core: verify found biggest system ram" (2/5)
+      - 61ccc0827c94 "mm/damon/core: verify found biggest system ram" (2/5)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260317144725.88524-1-sj@kernel.org
-      - 8781eaf84bed "mm/damon/core: receive addr_unit on damon_set_region_biggest_system_ram_default()" (3/5)
+      - 279ff3eafc3b "mm/damon/core: receive addr_unit on damon_set_region_biggest_system_ram_default()" (3/5)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311052927.93921-4-sj@kernel.org
-      - 45095eae13d5 "mm/damon/core: fix wrong damon_set_regions() argument" (4/5)
+      - 0e04a3ba5a40 "mm/damon/core: fix wrong damon_set_regions() argument" (4/5)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260314001854.79623-1-sj@kernel.org
-    - 7ea60acd6aad "mm/damon/reclaim: respect addr_unit on default monitoring region setup"
+    - c531ec30bc2e "mm/damon/reclaim: respect addr_unit on default monitoring region setup"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260311052927.93921-5-sj@kernel.org
-    - 740b7db27cdb "mm/damon/lru_sort: respect addr_unit on default monitoring region setup"
+    - 4bdeb417ede9 "mm/damon/lru_sort: respect addr_unit on default monitoring region setup"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260311052927.93921-6-sj@kernel.org
     - series "mm: khugepaged cleanups and mTHP prerequisites", v3. (5 commits)
-      - 7f71e690f3c6 "mm: consolidate anonymous folio PTE mapping into helpers" (0/5)
+      - 2c85180cdb09 "mm: consolidate anonymous folio PTE mapping into helpers" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260311211315.450947-1-npache@redhat.com
         - Link: https://lkml.kernel.org/r/20260311211315.450947-2-npache@redhat.com
@@ -1257,905 +1220,942 @@
         - Link: https://lore.kernel.org/all/7334b702-f6a0-4ccf-8ac6-8426a90d1846@kernel.org/ [2]
         - Link: https://lore.kernel.org/all/25723c0f-c702-44ad-93e9-1056313680cd@kernel.org/ [3]
         - Link: https://lore.kernel.org/all/81ff9caa-50f2-4951-8d82-2c8dcdf3db91@kernel.org/ [4]
-      - 9d4de58657ed "mm: introduce is_pmd_order helper" (1/5)
+      - 7838249f2255 "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
-      - 13996ac3d932 "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1" (2/5)
+      - 7dcc704fb1f0 "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1" (2/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-4-npache@redhat.com
-      - 8fd920870925 "mm/khugepaged: rename hpage_collapse_* to collapse_*" (3/5)
+      - 9dd98c9cabb8 "mm/khugepaged: rename hpage_collapse_* to collapse_*" (3/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-5-npache@redhat.com
-      - 1eea77cd57c3 "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd()" (4/5)
+      - e34c4ea5a7cb "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd()" (4/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-6-npache@redhat.com
-    - a414131cb87b "zram: optimize LZ4 dictionary compression performance"
+    - 0893de8af443 "zram: optimize LZ4 dictionary compression performance"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/698181478c9c4b10aa21b4a847bdc706@honor.com
       - Link: https://github.com/lz4/lz4?tab=readme-ov-file [1]
-    - f85f618e3e21 "zram: propagate read_from_bdev_async() errors"
+    - 84e1c3e4f7f9 "zram: propagate read_from_bdev_async() errors"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260316015354.114465-1-senozhatsky@chromium.org
     - series "zswap pool per-CPU acomp_ctx simplifications". (2 commits)
-      - 6a2ce6d6ef49 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead()" (0/2)
+      - 1994f3e4fbe8 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead()" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260314051632.17931-1-kanchanapsridhar2026@gmail.com
         - Link: https://lkml.kernel.org/r/20260317014802.27591-2-kanchanapsridhar2026@gmail.com
         - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677 [1]
-      - 33617dd8ab37 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (1/2)
+      - 1debf41a0429 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260317014802.27591-3-kanchanapsridhar2026@gmail.com
     - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v4. (25 commits)
-      - b4694a36b8f0 "mm/vma: add vma_flags_empty(), vma_flags_and(), vma_flags_diff_pair()" (0/25)
+      - 93b7efbf3ead "mm/vma: add vma_flags_empty(), vma_flags_and(), vma_flags_diff_pair()" (0/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cover.1774034900.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/53ab55b7da91425775e42c03177498ad6de88ef4.1774034900.git.ljs@kernel.org
-      - c6a515537b50 "tools/testing/vma: add unit tests flag empty, diff_pair, and[_mask]" (1/25)
+      - 6d958256cc12 "tools/testing/vma: add unit tests flag empty, diff_pair, and[_mask]" (1/25)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/471ce7ceb1d32e5fc9c0660966b9eacdf899b4d1.1774034900.git.ljs@kernel.org
-      - 6c4d3fd661a1 "mm/vma: add further vma_flags_t unions" (2/25)
+      - c16f1806a991 "mm/vma: add further vma_flags_t unions" (2/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/d507d542c089ba132e9da53f2ff7f80ca117c3b4.1774034900.git.ljs@kernel.org
-      - eac8e96553ca "tools/testing/vma: convert bulk of test code to vma_flags_t" (3/25)
+      - 11525a015fcd "tools/testing/vma: convert bulk of test code to vma_flags_t" (3/25)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/df90efe29300bd899989f695be4ae3adc901a828.1774034900.git.ljs@kernel.org
-      - 3bd537138283 "mm/vma: use new VMA flags for sticky flags logic" (4/25)
+      - 4d934aefb4fc "mm/vma: use new VMA flags for sticky flags logic" (4/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/369574f06360ffa44707047e3b58eb4897345fba.1774034900.git.ljs@kernel.org
-      - df1014a0e5b3 "tools/testing/vma: fix VMA flag tests" (5/25)
+      - 7e1efbc42cce "tools/testing/vma: fix VMA flag tests" (5/25)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/b19c63af3d5efdfe712bf5d5f89368a5360a60f7.1774034900.git.ljs@kernel.org
-      - 86cec289eb30 "mm/vma: add append_vma_flags() helper" (6/25)
+      - c2421c1aaa12 "mm/vma: add append_vma_flags() helper" (6/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/9f928cd4688270002f2c0c3777fcc9b49cc7a8ea.1774034900.git.ljs@kernel.org
-      - af44760e59a1 "tools/testing/vma: add simple test for append_vma_flags()" (7/25)
+      - 94b2e63156ef "tools/testing/vma: add simple test for append_vma_flags()" (7/25)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/eebd946c5325ad7fae93027245a562eb1aeb68a2.1774034900.git.ljs@kernel.org
-      - 2fc2fda1ebc5 "mm: unexport vm_brk_flags() and eliminate vm_flags parameter" (8/25)
+      - 3ab99bb9ce71 "mm: unexport vm_brk_flags() and eliminate vm_flags parameter" (8/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/7bada48ddf3f9dbd3e6c4fc50ec2f4de97706f52.1774034900.git.ljs@kernel.org
-      - 6a64e48b56cc "mm/vma: introduce vma_flags_same[_mask/_pair]()" (9/25)
+      - 0e44097a4447 "mm/vma: introduce vma_flags_same[_mask/_pair]()" (9/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/4f764bf619e77205837c7c819b62139ef6337ca3.1774034900.git.ljs@kernel.org
-      - cb875f3adcac "mm/vma: introduce [vma_flags,legacy]_to_[legacy,vma_flags]() helpers" (10/25)
+      - 8bf748c81a6d "mm/vma: introduce [vma_flags,legacy]_to_[legacy,vma_flags]() helpers" (10/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/d3569470dbb3ae79134ca7c3eb3fc4df7086e874.1774034900.git.ljs@kernel.org
-      - 55f4f2a36aa8 "tools/testing/vma: test that legacy flag helpers work correctly" (11/25)
+      - e106cd43b9ff "tools/testing/vma: test that legacy flag helpers work correctly" (11/25)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/3374e50053adb65818fde948ae3488e1e29ae8b1.1774034900.git.ljs@kernel.org
-      - b1d1f093bd46 "mm/vma: introduce vma_test[_any[_mask]](), and make inlining consistent" (12/25)
+      - 9921e2f2d769 "mm/vma: introduce vma_test[_any[_mask]](), and make inlining consistent" (12/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/be1d71f08307d747a82232cbd8664a88c0f41419.1774034900.git.ljs@kernel.org
-      - 4901e6f69759 "tools/testing/vma: update VMA flag tests to test vma_test[_any_mask]()" (13/25)
+      - 75717fcc16ad "tools/testing/vma: update VMA flag tests to test vma_test[_any_mask]()" (13/25)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/dea3e97c6c3dd86f1a3f1a0703241b03f6e3a33f.1774034900.git.ljs@kernel.org
-      - bd6add4fad94 "mm: introduce vma_flags_count() and vma[_flags]_test_single_mask()" (14/25)
+      - 40e07bd4eea2 "mm: introduce vma_flags_count() and vma[_flags]_test_single_mask()" (14/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cd778dd02b9f2a01eb54d25a49dea8ec2ddf7753.1774034900.git.ljs@kernel.org
-      - 3ec08ff68951 "tools/testing/vma: test vma_flags_count,vma[_flags]_test_single_mask" (15/25)
+      - 2f148a620308 "tools/testing/vma: test vma_flags_count,vma[_flags]_test_single_mask" (15/25)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/4af95d559cd2af0ba3388de1e1386b9f94c0e009.1774034900.git.ljs@kernel.org
-      - 8f7aad1036c1 "mm: convert do_brk_flags() to use vma_flags_t" (16/25)
+      - ebd3908685cb "mm: convert do_brk_flags() to use vma_flags_t" (16/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/d02e3e45d9a33d7904b149f5604904089fd640ae.1774034900.git.ljs@kernel.org
-      - bd61a436edf1 "mm: update vma_supports_mlock() to use new VMA flags" (17/25)
+      - f66e9cc55e6f "mm: update vma_supports_mlock() to use new VMA flags" (17/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/49cc166dbafe0a81abc4581a9f5c84630b02fcb8.1774034900.git.ljs@kernel.org
-      - 239668eaaee5 "mm/vma: introduce vma_clear_flags[_mask]()" (18/25)
+      - 8dadd4cf4a75 "mm/vma: introduce vma_clear_flags[_mask]()" (18/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/9bd15da35c2c90e7441265adf01b5c2d3b5c6d41.1774034900.git.ljs@kernel.org
-      - 1b4c9805f6a1 "tools/testing/vma: update VMA tests to test vma_clear_flags[_mask]()" (19/25)
+      - 5aaf77b2a51a "tools/testing/vma: update VMA tests to test vma_clear_flags[_mask]()" (19/25)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/f5da681d3c33039dd4a838188385796eb8d58373.1774034900.git.ljs@kernel.org
-      - 2245718875c4 "mm/vma: convert as much as we can in mm/vma.c to vma_flags_t" (20/25)
+      - 7ea2d4dfafba "mm/vma: convert as much as we can in mm/vma.c to vma_flags_t" (20/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/5fdeaf8af9a12c2a5d68497495f52fa627d05a5b.1774034900.git.ljs@kernel.org
-      - c5433d398616 "tools: bitmap: add missing bitmap_copy() implementation" (21/25)
+      - e22eb0650559 "tools: bitmap: add missing bitmap_copy() implementation" (21/25)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/4dcb2fb959137e9fe58a23e21cebcea97de41a1f.1774034900.git.ljs@kernel.org
-      - 04fecc808feb "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t" (22/25)
+      - c93181905c66 "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t" (22/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/51afbb2b8c3681003cc7926647e37335d793836e.1774034900.git.ljs@kernel.org
-      - 0de7067ce25e "mm/vma: convert __mmap_region() to use vma_flags_t" (23/25)
+      - b4f50b2144fd "mm/vma: convert __mmap_region() to use vma_flags_t" (23/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/1fc33a404c962f02da778da100387cc19bd62153.1774034900.git.ljs@kernel.org
-      - 20666bd66475 "mm: simplify VMA flag tests of excluded flags" (24/25)
+      - cad5ba35ba6b "mm: simplify VMA flag tests of excluded flags" (24/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/d395c5dd837a9864f5efcec42175910afbe3ce73.1774034900.git.ljs@kernel.org
-    - c33436456345 "Docs/mm/damon: document exclusivity of special-purpose modules"
+    - ee985e74bcc8 "Docs/mm/damon: document exclusivity of special-purpose modules"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260315162945.80994-1-sj@kernel.org
       - Link: https://lore.kernel.org/damon/20260314002119.79742-1-sj@kernel.org/T/#t [1]
     - series "mm: expand mmap_prepare functionality and usage", v4. (21 commits)
-      - f26351976476 "mm: various small mmap_prepare cleanups" (0/21)
-        - Authored by no role player, reviewed by nobody
+      - eaec9852efe3 "mm: various small mmap_prepare cleanups" (0/21)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cover.1774045440.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/99f408e4694f44ab12bdc55fe0bd9685d3bd1117.1774045440.git.ljs@kernel.org
-      - b2ffaf8322e8 "mm: add documentation for the mmap_prepare file operation callback" (1/21)
+      - 8435411d5458 "mm: add documentation for the mmap_prepare file operation callback" (1/21)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/3aebf918c213fa2aecf00a31a444119b5bdd7801.1774045440.git.ljs@kernel.org
-      - 11cb3c70d98f "mm: document vm_operations_struct->open the same as close()" (2/21)
+      - 1642fd3d2fb6 "mm: document vm_operations_struct->open the same as close()" (2/21)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/7d0ca833c12014320f0fa00f816f95e6e10076f2.1774045440.git.ljs@kernel.org
-      - cbf7910b2fcf "mm: avoid deadlock when holding rmap on mmap_prepare error" (3/21)
-        - Authored by no role player, reviewed by nobody
+      - f8c71d64510c "mm: avoid deadlock when holding rmap on mmap_prepare error" (3/21)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/d44248be9da68258b07c2c59d4e73485ee0ca943.1774045440.git.ljs@kernel.org
-      - 4c14cdde3cda "mm: switch the rmap lock held option off in compat layer" (4/21)
-        - Authored by no role player, reviewed by nobody
+      - e38bdd9fbe84 "mm: switch the rmap lock held option off in compat layer" (4/21)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/dda74230d26a1fcd79a3efab61fa4101dd1cac64.1774045440.git.ljs@kernel.org
-      - 31321a6125b6 "mm/vma: remove superfluous map->hold_file_rmap_lock" (5/21)
-        - Authored by no role player, reviewed by nobody
+      - 7b1be563a816 "mm-switch-the-rmap-lock-held-option-off-in-compat-layer-fix" (5/21)
+        - Authored by a maintainer, reviewed by nobody
+      - e463db587cb8 "mm/vma: remove superfluous map->hold_file_rmap_lock" (6/21)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/42c3fbb701e361a17193ecda0d2dabcc326288a5.1774045440.git.ljs@kernel.org
-      - d8884b37640d "mm: have mmap_action_complete() handle the rmap lock and unmap" (6/21)
-        - Authored by no role player, reviewed by nobody
+      - 2ab6c10e22ba "mm: have mmap_action_complete() handle the rmap lock and unmap" (7/21)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/8d1ee8ebd3542d006a47e8382fb80cf5b57ecf10.1774045440.git.ljs@kernel.org
-      - e542c6cd01cf "mm: add vm_ops->mapped hook" (7/21)
-        - Authored by no role player, reviewed by nobody
+      - e40abaebf477 "mm: add vm_ops->mapped hook" (8/21)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/4c5e98297eb0aae9565c564e1c296a112702f144.1774045440.git.ljs@kernel.org
-      - 7271dd1de664 "fs: afs: revert mmap_prepare() change" (8/21)
+      - 5318811fcbc3 "fs: afs: revert mmap_prepare() change" (9/21)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/08804c94e39d9102a3a8fbd12385e8aa079ba1d3.1774045440.git.ljs@kernel.org
-      - 85c617753718 "fs: afs: restore mmap_prepare implementation" (9/21)
+      - 1a2f2ae61ee0 "fs: afs: restore mmap_prepare implementation" (10/21)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/ad9a94350a9c7d2bdab79fc397ef0f64d3412d71.1774045440.git.ljs@kernel.org
-      - ccca3bcd7993 "mm: add mmap_action_simple_ioremap()" (10/21)
+      - fa60935c1216 "mm: add mmap_action_simple_ioremap()" (11/21)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/a08ef1c4542202684da63bb37f459d5dbbeddd91.1774045440.git.ljs@kernel.org
-      - c9bf26626f88 "misc: open-dice: replace deprecated mmap hook with mmap_prepare" (11/21)
+      - 1c3613300d96 "misc: open-dice: replace deprecated mmap hook with mmap_prepare" (12/21)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/5a83ab00195dc8d0609fa6cc525493010ac4ead1.1774045440.git.ljs@kernel.org
-      - bb4f41ee87e7 "hpet: replace deprecated mmap hook with mmap_prepare" (12/21)
+      - 8297e6091faf "hpet: replace deprecated mmap hook with mmap_prepare" (13/21)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/094c5fcfb2459a4f6d791b1fb852b01e252a44d4.1774045440.git.ljs@kernel.org
-      - 83eb48543ea1 "mtdchar: replace deprecated mmap hook with mmap_prepare, clean up" (13/21)
+      - d5c4216e4fd5 "mtdchar: replace deprecated mmap hook with mmap_prepare, clean up" (14/21)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/d036855c21962c58ace0eb24ecd6d973d77424fe.1774045440.git.ljs@kernel.org
-      - 89cf91bc7ac5 "stm: replace deprecated mmap hook with mmap_prepare" (14/21)
+      - 5da1a0bfc360 "stm: replace deprecated mmap hook with mmap_prepare" (15/21)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/9f3d559a264a83cf45518fcf35cc7ef1d7dfd500.1774045440.git.ljs@kernel.org
-      - 840432db8f2f "staging: vme_user: replace deprecated mmap hook with mmap_prepare" (15/21)
+      - f982ece3bdad "staging: vme_user: replace deprecated mmap hook with mmap_prepare" (16/21)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/08ecc1e1d319564fd49b9e9012f994edaff921db.1774045440.git.ljs@kernel.org
-      - b15a66eb2918 "mm: allow handling of stacked mmap_prepare hooks in more drivers" (16/21)
+      - 474e29b95298 "mm: allow handling of stacked mmap_prepare hooks in more drivers" (17/21)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/24aac3019dd34740e788d169fccbe3c62781e648.1774045440.git.ljs@kernel.org
-      - e209e4e052c4 "drivers: hv: vmbus: replace deprecated mmap hook with mmap_prepare" (17/21)
+      - 5701544d05dd "drivers: hv: vmbus: replace deprecated mmap hook with mmap_prepare" (18/21)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/05467cb62267d750e5c770147517d4df0246cda6.1774045440.git.ljs@kernel.org
-      - 4027a465df9f "uio: replace deprecated mmap hook with mmap_prepare in uio_info" (18/21)
+      - 929af2de0037 "uio: replace deprecated mmap hook with mmap_prepare in uio_info" (19/21)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/157583e4477705b496896c7acd4ac88a937b8fa6.1774045440.git.ljs@kernel.org
-      - 81a31cafd699 "mm: add mmap_action_map_kernel_pages[_full]()" (19/21)
+      - 05140d394e61 "mm: add mmap_action_map_kernel_pages[_full]()" (20/21)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/926ac961690d856e67ec847bee2370ab3c6b9046.1774045440.git.ljs@kernel.org
-      - e78f56ec5aad "mm: on remap assert that input range within the proposed VMA" (20/21)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/0fc1092f4b74f3f673a58e4e3942dc83f336dd85.1774045440.git.ljs@kernel.org
-    - 2c2aa417178e "zram: change scan_slots to return void"
+    - b5d3b17b6a95 "mm: on remap assert that input range within the proposed VMA"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/0fc1092f4b74f3f673a58e4e3942dc83f336dd85.1774045440.git.ljs@kernel.org
+    - 05aefaf1313c "zram: change scan_slots to return void"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260317032349.753645-1-senozhatsky@chromium.org
     - series "liveupdate: Fix module unloading and unregister API", v2. (8 commits)
-      - eb5a0074d1a0 "liveupdate: protect file handler list with rwsem" (0/8)
+      - dc4a2aeb3071 "liveupdate: protect file handler list with rwsem" (0/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260318141637.1870220-11-pasha.tatashin@soleen.com
         - Link: https://lore.kernel.org/all/20260303210733.GG972761@nvidia.com [1]
-      - 1cb9f2afa49f "liveupdate: protect FLB lists with rwsem" (1/8)
+      - ba1ad4132b3c "liveupdate: protect FLB lists with rwsem" (1/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260318141637.1870220-12-pasha.tatashin@soleen.com
-      - 578da62d83d7 "liveupdate: remove file handler module refcounting" (2/8)
+      - b21ff3526b18 "liveupdate: remove file handler module refcounting" (2/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260318141637.1870220-13-pasha.tatashin@soleen.com
-      - 9ec930dd392b "liveupdate: defer FLB module refcounting to active sessions" (3/8)
+      - 7281fdd959bd "liveupdate: defer FLB module refcounting to active sessions" (3/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260318141637.1870220-14-pasha.tatashin@soleen.com
-      - e71ce88668fa "liveupdate: remove luo_session_quiesce()" (4/8)
+      - 2166f4a346ae "liveupdate: remove luo_session_quiesce()" (4/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260318141637.1870220-15-pasha.tatashin@soleen.com
-      - ceab8ad5aeeb "liveupdate: auto unregister FLBs on file handler unregistration" (5/8)
+      - b1577d9f3fa4 "liveupdate: auto unregister FLBs on file handler unregistration" (5/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260318141637.1870220-16-pasha.tatashin@soleen.com
-      - f45e26a68da4 "liveupdate: remove liveupdate_test_unregister()" (6/8)
+      - 69f9dc8a8f33 "liveupdate: remove liveupdate_test_unregister()" (6/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260318141637.1870220-17-pasha.tatashin@soleen.com
-      - 0f6d100e2a73 "liveupdate: make unregister functions return void" (7/8)
+      - 715053bb1105 "liveupdate: make unregister functions return void" (7/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260318141637.1870220-18-pasha.tatashin@soleen.com
-    - 5a23e3df1434 "mm/swapfile: remove duplicate include of swap_table.h"
+    - 584d7f59af5c "mm/swapfile: remove duplicate include of swap_table.h"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260318043849.399266-1-nichen@iscas.ac.cn
-    - 616764e523f6 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+    - d5539020236c "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/abongwF3X0G8xY1I@chrisdown.name
-    - d96bc655dff9 "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
+    - 17a1cd125d23 "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
       - Authored by a maintainer, reviewed by nobody
-    - 7e18b8a54e4b "Docs/mm/damon/design: document DAMON actions when TRANSPARENT_HUGEPAGE is off"
+    - b0b396440048 "Docs/mm/damon/design: document DAMON actions when TRANSPARENT_HUGEPAGE is off"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260318035349.88715-1-sj@kernel.org
       - Link: https://lore.kernel.org/66131775-180b-4b9f-b7ce-61a3e077b6e6@huawei-partners.com/ [1]
-    - f76c0e7420df "mm/hugetlb: fix memory offline failure due to hwpoisoned file hugetlb"
+    - 7c9c2e066754 "mm/hugetlb: fix memory offline failure due to hwpoisoned file hugetlb"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260318020711.3596947-1-tujinjiang@huawei.com
     - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14 commits)
-      - bab7812e55c4 "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
+      - e8231ae335c8 "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260317165652.99114-2-david@kernel.org
-      - 77b4e43ef734 "mm/sparse: remove WARN_ONs from (online|offline)_mem_sections()" (1/14)
+      - 9203a0898070 "mm/sparse: remove WARN_ONs from (online|offline)_mem_sections()" (1/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-3-david@kernel.org
-      - 21b31b3b9f9b "mm/Kconfig: make CONFIG_MEMORY_HOTPLUG depend on CONFIG_SPARSEMEM_VMEMMAP" (2/14)
+      - 09306166cedf "mm/Kconfig: make CONFIG_MEMORY_HOTPLUG depend on CONFIG_SPARSEMEM_VMEMMAP" (2/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-4-david@kernel.org
-      - b689dd39d91c "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
+      - e2ac79d3714f "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-5-david@kernel.org
-      - d042121e79eb "mm/sparse: remove !CONFIG_SPARSEMEM_VMEMMAP leftovers for CONFIG_MEMORY_HOTPLUG" (4/14)
+      - a963f6d716e9 "mm/sparse: remove !CONFIG_SPARSEMEM_VMEMMAP leftovers for CONFIG_MEMORY_HOTPLUG" (4/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-6-david@kernel.org
-      - 9443c2e0cdc7 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (5/14)
+      - 756ad4f7e563 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (5/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-7-david@kernel.org
-      - ece1fb8b4463 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (6/14)
+      - b0b8737bc338 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (6/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-8-david@kernel.org
-      - 635d20cb5687 "mm/sparse: remove sparse_decode_mem_map()" (7/14)
+      - 21a1950eb2ce "mm/sparse: remove sparse_decode_mem_map()" (7/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-9-david@kernel.org
-      - 0c7ead7e7154 "mm/sparse: remove CONFIG_MEMORY_HOTPLUG-specific usemap allocation handling" (8/14)
+      - 9eb5ed109f73 "mm/sparse: remove CONFIG_MEMORY_HOTPLUG-specific usemap allocation handling" (8/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-10-david@kernel.org
-      - 14911817f088 "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (9/14)
+      - 291b333e6d39 "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (9/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-11-david@kernel.org
-      - 81f68dfd2ba0 "mm/sparse: drop set_section_nid() from sparse_add_section()" (10/14)
+      - e228ff307800 "mm/sparse: drop set_section_nid() from sparse_add_section()" (10/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-12-david@kernel.org
-      - dbef2de062bf "mm/sparse: move sparse_init_one_section() to internal.h" (11/14)
+      - a083cdae263d "mm/sparse: move sparse_init_one_section() to internal.h" (11/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-13-david@kernel.org
-      - 41df40fbd8b3 "mm-sparse-move-sparse_init_one_section-to-internalh-fix" (12/14)
+      - 4a9789b08310 "mm-sparse-move-sparse_init_one_section-to-internalh-fix" (12/14)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/6b04c1a1-74e7-42e8-8523-a40802e5dacc@kernel.org
-      - e6b6244d37d9 "mm/sparse: move __section_mark_present() to internal.h" (13/14)
+      - 15cf181d0b78 "mm/sparse: move __section_mark_present() to internal.h" (13/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-14-david@kernel.org
-    - a7ac026234bc "mm/sparse: move memory hotplug bits to sparse-vmemmap.c"
+    - d0782c2618a5 "mm/sparse: move memory hotplug bits to sparse-vmemmap.c"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260317165652.99114-15-david@kernel.org
     - series "mm: switch THP shrinker to list_lru", v3. (7 commits)
-      - 9134a286c8d4 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (0/7)
+      - ff735d532023 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-1-hannes@cmpxchg.org
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-2-hannes@cmpxchg.org
-      - 6dabbc39c543 "mm: list_lru: deduplicate unlock_list_lru()" (1/7)
+      - 8f65ef3e4460 "mm: list_lru: deduplicate unlock_list_lru()" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-3-hannes@cmpxchg.org
-      - 08afafa98122 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (2/7)
+      - 652062e30898 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-4-hannes@cmpxchg.org
-      - d1c55b43d62b "mm: list_lru: deduplicate lock_list_lru()" (3/7)
+      - 0c7d9899d34d "mm: list_lru: deduplicate lock_list_lru()" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-5-hannes@cmpxchg.org
-      - dffd7dbaddd9 "mm: list_lru: introduce caller locking for additions and deletions" (4/7)
+      - 6d4bc232bfd1 "mm: list_lru: introduce caller locking for additions and deletions" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-6-hannes@cmpxchg.org
-      - 5e7acd3c5efa "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (5/7)
+      - 70e698fffa1c "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-7-hannes@cmpxchg.org
-      - 083966e6d060 "mm: switch deferred split shrinker to list_lru" (6/7)
+      - 413e0e8de72c "mm: switch deferred split shrinker to list_lru" (6/7)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
-    - e47c4bfa315b "selftests/mm: add folio_split() and filemap_get_entry() race test"
+    - 66054be4653a "selftests/mm: add folio_split() and filemap_get_entry() race test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
       - Link: https://github.com/dfinity/thp-madv-remove-test [2]
       - Link: https://lkml.kernel.org/r/20260319190409.294523-1-ziy@nvidia.com
-    - e6d820397dbf "selftests-mm-add-folio_split-and-filemap_get_entry-race-test-v4"
+    - 63032cba914e "selftests-mm-add-folio_split-and-filemap_get_entry-race-test-v4"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
       - Link: https://github.com/dfinity/thp-madv-remove-test [2]
       - Link: https://lkml.kernel.org/r/20260320142219.375118-1-ziy@nvidia.com
-    - 8c77959d61e6 "selftests-mm-add-folio_split-and-filemap_get_entry-race-test-fix"
+    - 43263f07999c "selftests-mm-add-folio_split-and-filemap_get_entry-race-test-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/D60C0C65-11E3-4060-9295-B67F90E9D774@nvidia.com
-    - b72efe6a9b87 "selftests/mm: fix sashiko complains on folio_split_race_test"
+    - 8e50bfbc89e3 "selftests/mm: fix sashiko complains on folio_split_race_test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/B0985749-939D-4256-B9B9-C54C0734CF72@nvidia.com
-    - series "selftests/mm: skip several tests when thp is not available", v4. (5 commits)
-      - 27a038862cc8 "selftests/mm/guard-regions: skip collapse test when thp not enabled" (0/5)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-1-chuhu@redhat.com
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-2-chuhu@redhat.com
-      - 6c462db4c28c "selftests/mm: soft-dirty: skip two tests when thp is not available" (1/5)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-3-chuhu@redhat.com
-      - b9325aeb5cae "selftests/mm: move write_file helper to vm_util" (2/5)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-4-chuhu@redhat.com
-      - 9a1761059a67 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (3/5)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-5-chuhu@redhat.com
-      - 9aa99b88d44e "selftests/mm: transhuge_stress: skip the test when thp not available" (4/5)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-6-chuhu@redhat.com
+    - 77e01eff099e "selftests/mm/guard-regions: skip collapse test when thp not enabled"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-1-chuhu@redhat.com
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-2-chuhu@redhat.com
+    - ab9097d61e63 "selftests/mm: soft-dirty: skip two tests when thp is not available"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-3-chuhu@redhat.com
+    - e328fc6868d7 "selftests/mm: move write_file helper to vm_util"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-4-chuhu@redhat.com
+    - ceb482e3f20d "selftests/mm/vm_util: robust write_file()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-5-chuhu@redhat.com
+    - e797b3670307 "selftests/mm: split_huge_page_test: skip the test when thp is not available"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-6-chuhu@redhat.com
+    - a06b1bb3a357 "selftests/mm: transhuge_stress: skip the test when thp not available"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-7-chuhu@redhat.com
     - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13 commits)
-      - 36c807824e93 "mm/huge_memory: simplify vma_is_specal_huge()" (0/13)
+      - 6d1defda424e "mm/huge_memory: simplify vma_is_specal_huge()" (0/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/cover.1774029655.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/d2b65883dc4895f197c4b4a69fbf27a063463412.1774029655.git.ljs@kernel.org
         - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/ [0]
-      - 5c43621928df "mm/huge: avoid big else branch in zap_huge_pmd()" (1/13)
+      - 5eca70bf04ae "mm/huge: avoid big else branch in zap_huge_pmd()" (1/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/6b4d5efdbf5554b8fe788f677d0b50f355eec999.1774029655.git.ljs@kernel.org
-      - 5aa86535ec51 "mm/huge_memory: have zap_huge_pmd return a boolean, add kdoc" (2/13)
+      - 83bb89f73311 "mm/huge_memory: have zap_huge_pmd return a boolean, add kdoc" (2/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/132274566cd49d2960a2294c36dd2450593dfc55.1774029655.git.ljs@kernel.org
-      - 287b7c6f89e8 "mm/huge_memory: handle buggy PMD entry in zap_huge_pmd()" (3/13)
+      - 75224ad1cb92 "mm/huge_memory: handle buggy PMD entry in zap_huge_pmd()" (3/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/
         - Link: https://lkml.kernel.org/r/fcf1f6de84a2ace188b6bf103fa15dde695f1ed8.1774029655.git.ljs@kernel.org
-      - 0e7c51a19ecd "mm/huge_memory: add a common exit path to zap_huge_pmd()" (4/13)
+      - d299993c09bc "mm/huge_memory: add a common exit path to zap_huge_pmd()" (4/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/6b281d8ed972dff0e89bdcbdd810c96c7ae8c9dc.1774029655.git.ljs@kernel.org
-      - aabdaaf5cda9 "mm/huge_memory: remove unnecessary VM_BUG_ON_PAGE()" (5/13)
+      - 4ff2e9fa65b9 "mm/huge_memory: remove unnecessary VM_BUG_ON_PAGE()" (5/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/f3fa8eb4634ccb2e78209f570cc1a769a02ce93e.1774029655.git.ljs@kernel.org
-      - 59b2dfcc6a3c "mm/huge_memory: deduplicate zap deposited table call" (6/13)
+      - df8dc52dce73 "mm/huge_memory: deduplicate zap deposited table call" (6/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/71f576a1fbcd27a86322d12caa937bcdacf75407.1774029655.git.ljs@kernel.org
-      - 69b23787e2c7 "mm/huge_memory: remove unnecessary sanity checks" (7/13)
+      - e26c19e55f74 "mm/huge_memory: remove unnecessary sanity checks" (7/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/0c4c5ab247c90f80cf44718e8124b217d6a22544.1774029655.git.ljs@kernel.org
-      - 1708a3766527 "mm/huge_memory: use mm instead of tlb->mm" (8/13)
+      - 30704486b0d4 "mm/huge_memory: use mm instead of tlb->mm" (8/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/98104cde87e4b2aabeb16f236b8731591594457f.1774029655.git.ljs@kernel.org
-      - 2f948721587a "mm/huge_memory: separate out the folio part of zap_huge_pmd()" (9/13)
+      - 4a3d13047928 "mm/huge_memory: separate out the folio part of zap_huge_pmd()" (9/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/6c4db67952f5529da4db102a6149b9050b5dda4e.1774029655.git.ljs@kernel.org
-      - bef927672e42 "mm: add softleaf_is_valid_pmd_entry(), pmd_to_softleaf_folio()" (10/13)
+      - 7d57aa9e4f88 "mm: add softleaf_is_valid_pmd_entry(), pmd_to_softleaf_folio()" (10/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/b677592596274fa3fd701890497948e4b0e07cec.1774029655.git.ljs@kernel.org
-      - 69e8bcbe6b6b "mm/huge_memory: add and use normal_or_softleaf_folio_pmd()" (11/13)
+      - cc8f08329d81 "mm/huge_memory: add and use normal_or_softleaf_folio_pmd()" (11/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/c2be872d64ef9573b80727d9ab5446cf002f17b5.1774029655.git.ljs@kernel.org
-      - 5d32df80f300 "mm-huge_memory-add-and-use-normal_or_softleaf_folio_pmd-fix" (12/13)
+      - 3c121054efe6 "mm-huge_memory-add-and-use-normal_or_softleaf_folio_pmd-fix" (12/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/d0cc6161-77a4-42ba-a411-96c23c78df1b@lucifer.local
-    - 0c17b1945ba8 "mm/huge_memory: add and use has_deposited_pgtable()"
+    - 8398e10dffe9 "mm/huge_memory: add and use has_deposited_pgtable()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/f9db59ca90937e39913d50ecb4f662e2bad17bbb.1774029655.git.ljs@kernel.org
-    - 7d94864b8781 "mm-huge_memory-add-and-use-has_deposited_pgtable-fix"
+    - a36cd775e3de "mm-huge_memory-add-and-use-has_deposited_pgtable-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/0a917f80-902f-49b0-a75f-1bbaf23d7f94@lucifer.local
     - series "mm: remove CONFIG_ARCH_ENABLE_MEMORY_HOTREMOVE and cleanup CONFIG_MIGRATION". (2 commits)
-      - 49e62c316ddc "mm: remove CONFIG_ARCH_ENABLE_MEMORY_HOTREMOVE" (0/2)
+      - 721f16ad5065 "mm: remove CONFIG_ARCH_ENABLE_MEMORY_HOTREMOVE" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-0-42270124966f@kernel.org
         - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-1-42270124966f@kernel.org
-      - cfdd2c1763bb "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
+      - a9ddfa1d97d1 "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
-    - 4ada8d3190ba "zsmalloc: return -EBUSY for zspage migration lock contention"
+    - 230cf3329b64 "zsmalloc: return -EBUSY for zspage migration lock contention"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260319065924.69337-1-hui.zhu@linux.dev
-- mm-new: 33 total, 4 (18) series, 15 non-series commits
+- mm-new: 38 total, 6 (21) series, 17 non-series commits
   - author/reviewer role stat
     - no role, nobody: 8 commits
-    - no role, no role : 13 commits
+    - no role, no role : 14 commits
     - no role, reviewer: 2 commits
     - no role, maintainer: 8 commits
-    - reviewer, nobody: 2 commits
+    - reviewer, nobody: 1 commits
+    - reviewer, no role : 2 commits
+    - reviewer, maintainer: 1 commits
+    - maintainer, no role : 2 commits
   - full commits list
-    - 62b16f29698c "mm/mglru: fix cgroup OOM during MGLRU state switching"
+    - aaf9a7804d2a "mm/mglru: fix cgroup OOM during MGLRU state switching"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260319-b4-switch-mglru-v2-v5-1-8898491e5f17@gmail.com
-    - 62c1223958e3 "mm/memcontrol: batch memcg charging in __memcg_slab_post_alloc_hook"
+    - 72ddcb962307 "mm/memcontrol: batch memcg charging in __memcg_slab_post_alloc_hook"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260320020745.833792-1-hui.zhu@linux.dev
-    - be6ef9583690 "mm/damon/core: document damos_commit_dests() failure semantics"
+    - 16ff7db59d8a "mm/damon/core: document damos_commit_dests() failure semantics"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260320143648.91673-1-sj@kernel.org
       - Link: https://lore.kernel.org/20260318214939.36100-1-objecting@objecting.org [1]
-    - 03e0ece143d7 "Docs/mm/damon: document min_nr_regions constraint and rationale"
+    - 118266da68ba "Docs/mm/damon: document min_nr_regions constraint and rationale"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260320052428.213230-1-aethernet65535@gmail.com
       - Link: https://lore.kernel.org/damon/20260319151528.86490-1-sj@kernel.org/T/#t [1]
-    - 9bedcb7cdeec "mm/execmem: make the populate and alloc atomic"
+    - 5ecbbafb09b3 "mm/execmem: make the populate and alloc atomic"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260320075723.779985-1-hmazur@google.com
-    - 10795bce0d7d "mm/zsmalloc: copy KMSAN metadata in zs_page_migrate()"
+    - 42f3fa442d67 "mm/zsmalloc: copy KMSAN metadata in zs_page_migrate()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260321132912.93434-1-syoshida@redhat.com
-    - 1691101530e2 "mm: mark early-init static variables with __meminitdata"
+    - 51bbffd95782 "mm: mark early-init static variables with __meminitdata"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
-    - ba5f9c8abdb6 "mm: vmalloc: update outdated comment for renamed vread()"
+    - 528b2c30ed1f "mm: vmalloc: update outdated comment for renamed vread()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260321105820.7134-1-kexinsun@smail.nju.edu.cn
-    - bb9fb04f3b21 "mm: update outdated comments for removed scan_swap_map_slots()"
+    - e929dbe4daf6 "mm: update outdated comments for removed scan_swap_map_slots()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260321105814.7053-1-kexinsun@smail.nju.edu.cn
     - series "change young flag check functions to return bool", v2. (6 commits)
-      - 7ed4e0a4756a "mm: change to return bool for ptep_test_and_clear_young()" (0/6)
+      - b08b5b9894fb "mm: change to return bool for ptep_test_and_clear_young()" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cover.1774075004.git.baolin.wang@linux.alibaba.com
         - Link: https://lkml.kernel.org/r/57e70efa9703d43959aa645246ea3cbdba14fa17.1774075004.git.baolin.wang@linux.alibaba.com
-      - 62b078f74bd7 "mm: change to return bool for ptep_clear_flush_young()/clear_flush_young_ptes()" (1/6)
+      - 85326b81a7e1 "mm: change to return bool for ptep_clear_flush_young()/clear_flush_young_ptes()" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/24af5144b96103631594501f77d4525f2475c1be.1774075004.git.baolin.wang@linux.alibaba.com
-      - 239e1b7f9cc5 "mm: change to return bool for pmdp_test_and_clear_young()" (2/6)
+      - 4028cdd5ebea "mm: change to return bool for pmdp_test_and_clear_young()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/f1d31307a13365d3d0fed5809727dcc2dd59631b.1774075004.git.baolin.wang@linux.alibaba.com
-      - de5dc4d8f645 "mm: change to return bool for pmdp_clear_flush_young()" (3/6)
+      - 31d6dc2ac1aa "mm: change to return bool for pmdp_clear_flush_young()" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/a668b9a974c0d675e7a41f6973bcbe3336e8b373.1774075004.git.baolin.wang@linux.alibaba.com
-      - 3eab9e7baf15 "mm: change to return bool for pudp_test_and_clear_young()" (4/6)
+      - 8d6609f54c8b "mm: change to return bool for pudp_test_and_clear_young()" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/2c56fe52c1bf9404145274d7e91d4a65060f6c7c.1774075004.git.baolin.wang@linux.alibaba.com
-      - 96dfd7b504c2 "mm: change to return bool for the MMU notifier's young flag check" (5/6)
+      - 3a847d75d648 "mm: change to return bool for the MMU notifier's young flag check" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/a9ad3fe938002d87358e7bfca264f753ab602561.1774075004.git.baolin.wang@linux.alibaba.com
-    - 91bf54f703c6 "mm/memcontrol: fix reclaim_options leak in try_charge_memcg()"
+    - 6e62c60d70d0 "mm/memcontrol: fix reclaim_options leak in try_charge_memcg()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260321033500.2558070-1-bingjiao@google.com
-    - c5abfa85e539 "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
+    - 83cfc6122540 "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260320173426.1831267-1-fvdl@google.com
       - Link: https://lore.kernel.org/all/20231122013925.1507-1-justinjiang@vivo.com/ [1]
-    - c303241bf405 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
+    - b355f82e7349 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260321105704.6093-1-kexinsun@smail.nju.edu.cn
-    - aadeda0189ef "mm: remove unused page_is_file_lru() function"
+    - c8321e6fc1fb "mm: remove unused page_is_file_lru() function"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260323090305.798057-1-ye.liu@linux.dev
-    - 18695ef3009b "memory tiering: do not allow promotion if NUMA_BALANCING_MEMORY_TIERING is disabled"
+    - a04457d1d425 "memory tiering: do not allow promotion if NUMA_BALANCING_MEMORY_TIERING is disabled"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260323094849.3903-1-donettom@linux.ibm.com
-    - fcb446375f67 "mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option"
-      - Authored by no role player, reviewed by nobody
+    - 33c9cb02adb5 "mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260323-kmemleak_report-v1-1-ba2cdd9c11b9@debian.org
     - series "Modify memfd_luo code", v2. (4 commits)
-      - d764896f5f11 "mm/memfd: use folio_nr_pages() for shmem inode accounting" (0/4)
+      - 983c07327013 "mm/memfd: use folio_nr_pages() for shmem inode accounting" (0/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lkml.kernel.org/r/20260323110747.193569-2-duanchenghao@kylinos.cn
-      - da3b732f99ce "mm/memfd_luo: optimize shmem_recalc_inode calls in retrieve path" (1/4)
+      - f6dacef2c450 "mm/memfd_luo: optimize shmem_recalc_inode calls in retrieve path" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260323110747.193569-3-duanchenghao@kylinos.cn
-      - c75ead91f0ec "mm/memfd_luo: remove unnecessary memset in zero-size memfd path" (2/4)
+      - 576d2c6ec0b9 "mm/memfd_luo: remove unnecessary memset in zero-size memfd path" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260323110747.193569-4-duanchenghao@kylinos.cn
-      - 48f1dc552bb2 "mm/memfd_luo: use i_size_write() to set inode size during retrieve" (3/4)
+      - b525d14df18c "mm/memfd_luo: use i_size_write() to set inode size during retrieve" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260323110747.193569-5-duanchenghao@kylinos.cn
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - 5726b60a1e2b "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - c3a9f0db9353 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-2-youngjun.park@lge.com
-      - db8d28137cdf "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
-        - Authored by a reviewer, reviewed by nobody
+      - 0920af5dacbb "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+        - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-3-youngjun.park@lge.com
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - 2b6f1936ba1f "kho: add size parameter to kho_add_subtree()" (0/6)
+      - 118248f19c15 "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - fc5bdc0b85b4 "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
+      - fa5dc78dffda "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-2-ed6dcd951988@debian.org
-      - 6fbb1d84c2af "kho: persist blob size in KHO FDT" (2/6)
+      - ea5a7e2b03d1 "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
-      - 801f72189ac0 "kho: fix kho_in_debugfs_init() to handle non-FDT blobs" (3/6)
+      - be968d6047b3 "kho: fix kho_in_debugfs_init() to handle non-FDT blobs" (3/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-4-ed6dcd951988@debian.org
-      - e7a756b62cb0 "kho: kexec-metadata: track previous kernel chain" (4/6)
+      - cd3555078c78 "kho: kexec-metadata: track previous kernel chain" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-5-ed6dcd951988@debian.org
-      - 02b045682c74 "kho: document kexec-metadata tracking feature" (5/6)
+      - ba142e85d657 "kho: document kexec-metadata tracking feature" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-6-ed6dcd951988@debian.org
+      - a1037d597f11 "liveupdate: prevent double management of files" (None/None)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260323203145.148057-1-pasha.tatashin@soleen.com
+        - Link: https://lkml.kernel.org/r/20260323203145.148057-2-pasha.tatashin@soleen.com
+        - Link: https://lore.kernel.org/all/20260129212510.967611-1-dmatlack@google.com [1]
+        - Link: https://lore.kernel.org/all/20260203220948.2176157-1-skhawaja@google.com [2]
+    - b49032068735 "selftests: liveupdate: add test for double preservation"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260323203145.148057-3-pasha.tatashin@soleen.com
+    - 8d19548f0425 "mm/page_io: fix PSWPIN undercount for large folios in sio_read_complete()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260323231315.240137-1-devnexen@gmail.com
+    - series "mm/mprotect: micro-optimization work", v2. (2 commits)
+      - 8a88a813d8dd "mm/mprotect: move softleaf code out of the main function" (0/2)
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260324154342.156640-1-pfalcato@suse.de
+        - Link: https://lkml.kernel.org/r/20260324154342.156640-2-pfalcato@suse.de
+        - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
+        - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
+      - 9915fc698c85 "mm/mprotect: special-case small folios when applying write permissions" (1/2)
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260324154342.156640-3-pfalcato@suse.de
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 121 total, 13 (62) series, 59 non-series commits
+- mm-nonmm-unstable: 123 total, 14 (64) series, 59 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 61 commits
-    - no role, no role : 27 commits
+    - no role, nobody: 60 commits
+    - no role, no role : 30 commits
     - no role, reviewer: 5 commits
     - no role, maintainer: 24 commits
     - reviewer, reviewer: 1 commits
     - maintainer, nobody: 2 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - bb28de20752e "proc: array: drop stale FIXME about RCU in task_sig()"
+    - 80ecd6a4cd75 "proc: array: drop stale FIXME about RCU in task_sig()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260215124511.14227-1-jaime.saguillo@gmail.com
-    - 606ac27e36c0 "Squashfs: check xz dictionary size isn't zero"
+    - 869bc74dde5c "Squashfs: check xz dictionary size isn't zero"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260217231537.206436-1-phillip@squashfs.org.uk
-    - 6af17ed2ddee "scripts/spelling.txt: add "binded||bound""
+    - d8eae62105a1 "scripts/spelling.txt: add "binded||bound""
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260214140854.42247-1-gnoack3000@gmail.com
-    - 2f00307700cd "unshare: fix nsproxy leak in ksys_unshare() on set_cred_ucounts() failure"
+    - d4457ed401f3 "unshare: fix nsproxy leak in ksys_unshare() on set_cred_ucounts() failure"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260213193959.2556730-1-mge@meta.com
-    - b4f5758b5e83 "scripts/bloat-o-meter: rename file arguments to match output"
+    - 578031fbeb8f "scripts/bloat-o-meter: rename file arguments to match output"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260212213941.3984330-1-vkoskiv@gmail.com
-    - 786378bc7e71 "kernel/panic: increase buffer size for verbose taint logging"
+    - 152a40b8e6d6 "kernel/panic: increase buffer size for verbose taint logging"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260220151500.13585-1-rioo.tsukatsukii@gmail.com
-    - 3652a187d3ff "kernel-panic-increase-buffer-size-for-verbose-taint-logging-fix"
+    - 33fc31e44547 "kernel-panic-increase-buffer-size-for-verbose-taint-logging-fix"
       - Authored by no role player, reviewed by nobody
-    - ac77d3da3eff "kernel/panic: allocate taint string buffer dynamically"
+    - e1d12035d96c "kernel/panic: allocate taint string buffer dynamically"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260222140804.22225-1-rioo.tsukatsukii@gmail.com
-    - 1a79fcef657f "kernel/panic: mark init_taint_buf as __initdata and panic instead of warning in alloc_taint_buf()"
+    - 6a6ad4ee02b0 "kernel/panic: mark init_taint_buf as __initdata and panic instead of warning in alloc_taint_buf()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260223035914.4033-1-rioo.tsukatsukii@gmail.com
     - series "lib and lib/cmdline enhancements", v8. (5 commits)
-      - 0001dc69c1db "lib: fix _parse_integer_limit() to handle overflow" (0/5)
+      - c1cc62cc35f5 "lib: fix _parse_integer_limit() to handle overflow" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212164413.889625-1-dmantipov@yandex.ru
         - Link: https://lkml.kernel.org/r/20260212164413.889625-2-dmantipov@yandex.ru
-      - 6f11020feff5 "lib: fix memparse() to handle overflow" (1/5)
+      - 8863ef69c8e2 "lib: fix memparse() to handle overflow" (1/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212164413.889625-3-dmantipov@yandex.ru
-      - 1d2eecf079cf "lib: add more string to 64-bit integer conversion overflow tests" (2/5)
+      - 062ae5d97c8f "lib: add more string to 64-bit integer conversion overflow tests" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212164413.889625-4-dmantipov@yandex.ru
-      - a18bfc58e822 "lib/cmdline_kunit: add test case for memparse()" (3/5)
+      - 7d72af40bfa1 "lib/cmdline_kunit: add test case for memparse()" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212164413.889625-5-dmantipov@yandex.ru
-      - ad29b2f762c2 "lib/cmdline: adjust a few comments to fix kernel-doc -Wreturn warnings" (4/5)
+      - 7dbe3951abf9 "lib/cmdline: adjust a few comments to fix kernel-doc -Wreturn warnings" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260212164413.889625-6-dmantipov@yandex.ru
-    - bf128874c9bc "scripts/spelling.txt: sort alphabetically"
+    - ad369b00071b "scripts/spelling.txt: sort alphabetically"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260212144005.45052-1-pvorel@suse.cz
-    - da6b126714a8 "scripts/spelling.txt: add "exaclty" typo"
+    - c44107c81be9 "scripts/spelling.txt: add "exaclty" typo"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260212144005.45052-2-pvorel@suse.cz
-    - be483949a793 "selftests/ipc: skip msgque test when MSG_COPY is unsupported"
+    - ddd9637806d2 "selftests/ipc: skip msgque test when MSG_COPY is unsupported"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260210135359.178636-1-jouyeol8739@gmail.com
-    - 202ae620b00a "exit: kill unnecessary thread_group_leader() checks in exit_notify() and do_notify_parent()"
+    - 55b0c51f29a6 "exit: kill unnecessary thread_group_leader() checks in exit_notify() and do_notify_parent()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aZsfeegKZPZZszJh@redhat.com
-    - e60f692b6bed "complete_signal: kill always-true "core_state || !SIGNAL_GROUP_EXIT" check"
+    - a0b4ba8166c9 "complete_signal: kill always-true "core_state || !SIGNAL_GROUP_EXIT" check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aZsfkDhnqJ4s1oTs@redhat.com
-    - c6e7fc57aaa0 "fork: replace simple_strtoul with kstrtoul in coredump_filter_setup"
+    - 604a04b20e7b "fork: replace simple_strtoul with kstrtoul in coredump_filter_setup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20251215142152.4082-2-thorsten.blum@linux.dev
-    - 1d97f4617143 "fork: zero vmap stack using clear_pages() instead of memset()"
+    - 03dcc971f96a "fork: zero vmap stack using clear_pages() instead of memset()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260224-mm-fork-clear-pages-v1-1-184c65a72d49@kernel.org
       - Link: https://lore.kernel.org/linux-mm/dpnwsp7dl4535rd7qmszanw6u5an2p74uxfex4dh53frpb7pu3@2bnjjavjrepe/
       - Link: https://lore.kernel.org/20240311164638.2015063-7-pasha.tatashin@soleen.com
     - series "kdump: Enable LUKS-encrypted dump target support in ARM64 and PowerPC", v5. (3 commits)
-      - cc698e343966 "crash_dump/dm-crypt: don't print in arch-specific code" (0/3)
+      - 6c76bcd9523c "crash_dump/dm-crypt: don't print in arch-specific code" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260225060347.718905-1-coxu@redhat.com
         - Link: https://lkml.kernel.org/r/20260225060347.718905-2-coxu@redhat.com
         - Link: https://lore.kernel.org/all/20250502011246.99238-1-coxu@redhat.com/ [1]
         - Link: https://github.com/devicetree-org/dt-schema/pull/181 [2]
-      - b0a88353410b "crash: align the declaration of crash_load_dm_crypt_keys with CONFIG_CRASH_DM_CRYPT" (1/3)
+      - ebb7a1a6b429 "crash: align the declaration of crash_load_dm_crypt_keys with CONFIG_CRASH_DM_CRYPT" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260225060347.718905-3-coxu@redhat.com
-      - 552292c66f7a "arm64,ppc64le/kdump: pass dm-crypt keys to kdump kernel" (2/3)
+      - ae0b1d5eeb4a "arm64,ppc64le/kdump: pass dm-crypt keys to kdump kernel" (2/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260225060347.718905-4-coxu@redhat.com
         - Link: https://lore.kernel.org/all/20250502011246.99238-1-coxu@redhat.com/ [1]
         - Link: https://github.com/devicetree-org/dt-schema/pull/181 [2]
-    - 9894b2419e39 "crash_dump: remove redundant less-than-zero check"
+    - 70baea5d0fcc "crash_dump: remove redundant less-than-zero check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260228085136.861971-2-thorsten.blum@linux.dev
-    - 7958c5289940 "crash_dump: fix typo in function name read_key_from_user_keying"
+    - 07c0c1a1c4eb "crash_dump: fix typo in function name read_key_from_user_keying"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260227230422.859423-1-thorsten.blum@linux.dev
     - series "pid: make sub-init creation retryable". (2 commits)
-      - 960ed7818782 "pid: make sub-init creation retryable" (0/2)
+      - 5622eb5edcb7 "pid: make sub-init creation retryable" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/aaGHu3ixbw9Y7kFj@redhat.com
         - Link: https://lkml.kernel.org/r/aaGIHa7vGdwhEc_D@redhat.com
-      - ec476ea1f7e9 "pid: document the PIDNS_ADDING checks in alloc_pid() and copy_process()" (1/2)
+      - 39b0687658b6 "pid: document the PIDNS_ADDING checks in alloc_pid() and copy_process()" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/aaGIRElc78U4Er42@redhat.com
-    - d5e7231d0c32 "lib: glob: add missing SPDX-License-Identifier"
+    - e3e47eefbfc3 "lib: glob: add missing SPDX-License-Identifier"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260228195300.2468310-1-objecting@objecting.org
     - series "selftests/fchmodat2: Error handling and general", v4. (2 commits)
-      - 61e3e70f60c8 "selftests/fchmodat2: clean up temporary files and directories" (0/2)
+      - 8a220951a5c5 "selftests/fchmodat2: clean up temporary files and directories" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260226-selftests-fchmodat2-v4-0-a6419435f2e8@kernel.org
         - Link: https://lkml.kernel.org/r/20260226-selftests-fchmodat2-v4-1-a6419435f2e8@kernel.org
-      - fc9114d2a4b2 "selftests/fchmodat2: use ksft_finished()" (1/2)
+      - c175110f4c50 "selftests/fchmodat2: use ksft_finished()" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260226-selftests-fchmodat2-v4-2-a6419435f2e8@kernel.org
-    - 5f26917cff37 "lib: glob: fix grammar and replace non-inclusive terminology"
+    - 4285f830f9d4 "lib: glob: fix grammar and replace non-inclusive terminology"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260301154553.2592681-1-objecting@objecting.org
-    - c04cd09f5124 "lib: glob: add explicit include for export.h"
+    - 0cc80f3ba5c0 "lib: glob: add explicit include for export.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260301152143.2572137-1-objecting@objecting.org
-    - 163fc62fa212 "lib: glob: replace bitwise OR with logical operation on boolean"
+    - dc384684285b "lib: glob: replace bitwise OR with logical operation on boolean"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260301152143.2572137-2-objecting@objecting.org
-    - e410d58c7050 "lib/glob: clean up "bool abuse" in pointer arithmetic"
+    - a28f5b99278b "lib/glob: clean up "bool abuse" in pointer arithmetic"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260301203845.2617217-1-objecting@objecting.org
-    - 0b0552a877b9 "crash_dump: use sysfs_emit in sysfs show functions"
+    - ff54a52f39a1 "crash_dump: use sysfs_emit in sysfs show functions"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260301125106.911980-2-thorsten.blum@linux.dev
-    - cc7e7b4373dd "get_maintainer: add ** glob pattern support"
+    - d76317e37d90 "get_maintainer: add ** glob pattern support"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260302103822.77343-1-teknoraver@meta.com
-    - 430ae51c8a3f "ocfs2: fix deadlock when creating quota file"
+    - 78d8362b5b8e "ocfs2: fix deadlock when creating quota file"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260302061707.7092-1-heming.zhao@suse.com
     - series "lib: polynomial: Move to math/ and clean up", v2. (3 commits)
-      - b55755a04c5d "lib: polynomial: move to math/ subfolder" (0/3)
+      - 7ef75ddfde2f "lib: polynomial: move to math/ subfolder" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260302092831.2267785-2-andriy.shevchenko@linux.intel.com
-      - e2a1e3386cc7 "lib: math: polynomial: don't use 'proxy' headers" (1/3)
+      - fb13e87066eb "lib: math: polynomial: don't use 'proxy' headers" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260302092831.2267785-3-andriy.shevchenko@linux.intel.com
-      - b8b92e1e07df "lib: math: polynomial: remove link to non-exist file and fix spelling" (2/3)
+      - 2ac9a824879e "lib: math: polynomial: remove link to non-exist file and fix spelling" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260302092831.2267785-4-andriy.shevchenko@linux.intel.com
-    - b6374bba218d "mailmap: update Guru Das Srinagesh's email address"
+    - 87a7b56cf276 "mailmap: update Guru Das Srinagesh's email address"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260301-gds-mailmap-update-2-v1-1-5691415be73c@gurudas.dev
-    - series "cleanup the RAID5 XOR library", v2. (27 commits)
-      - cd3351be7d02 "xor: assert that xor_blocks is not from preemptible user context" (0/27)
+    - series "cleanup the RAID5 XOR library", v3. (26 commits)
+      - d70ccf0106ba "xor: assert that xor_blocks is not from preemptible user context" (0/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-1-hch@lst.de
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-2-hch@lst.de
-      - d7a8a514d1dc "arm/xor: remove in_interrupt() handling" (1/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-1-hch@lst.de
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-2-hch@lst.de
+      - cae915815ae5 "arm/xor: remove in_interrupt() handling" (1/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-3-hch@lst.de
-      - a100ec1c11ce "um/xor: cleanup xor.h" (2/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-3-hch@lst.de
+      - 59203c065fa1 "um/xor: cleanup xor.h" (2/26)
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-4-hch@lst.de
-      - d43037e0ecdd "xor: move to lib/raid/" (3/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-4-hch@lst.de
+      - 8c4514dfb21f "xor: move to lib/raid/" (3/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-5-hch@lst.de
-      - 3cbb3ee97298 "xor: small cleanups" (4/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-5-hch@lst.de
+      - ab23032e9a5e "xor: small cleanups" (4/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-6-hch@lst.de
-      - a4ef289a47f4 "xor: cleanup registration and probing" (5/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-6-hch@lst.de
+      - 12489cfdcf8c "xor: cleanup registration and probing" (5/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-7-hch@lst.de
-      - 84bf8837f058 "xor: split xor.h" (6/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-7-hch@lst.de
+      - 4632649a2179 "xor: split xor.h" (6/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-8-hch@lst.de
-      - a2a177afd5b1 "xor: remove macro abuse for XOR implementation registrations" (7/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-8-hch@lst.de
+      - d05529d6f93e "xor: remove macro abuse for XOR implementation registrations" (7/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-9-hch@lst.de
-      - a73b5ca0c035 "xor: move generic implementations out of asm-generic/xor.h" (8/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-9-hch@lst.de
+      - 883a702cbdeb "xor: move generic implementations out of asm-generic/xor.h" (8/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-10-hch@lst.de
-      - b1eeb0ad094a "alpha: move the XOR code to lib/raid/" (9/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-10-hch@lst.de
+      - a56536ed126b "alpha: move the XOR code to lib/raid/" (9/26)
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-11-hch@lst.de
-      - 872554fecbf1 "arm: move the XOR code to lib/raid/" (10/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-11-hch@lst.de
+      - ef9fe3d45073 "arm: move the XOR code to lib/raid/" (10/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-12-hch@lst.de
-      - 66f92b2415cc "arm64: move the XOR code to lib/raid/" (11/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-12-hch@lst.de
+      - d669fbe9641d "arm64: move the XOR code to lib/raid/" (11/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-13-hch@lst.de
-      - 010c13734c64 "loongarch: move the XOR code to lib/raid/" (12/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-13-hch@lst.de
+      - 65af5ce840bb "loongarch: move the XOR code to lib/raid/" (12/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-14-hch@lst.de
-      - fdbc4960e719 "powerpc: move the XOR code to lib/raid/" (13/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-14-hch@lst.de
+      - 9ee4c1f6f1a2 "powerpc: move the XOR code to lib/raid/" (13/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-15-hch@lst.de
-      - 4e250418fc4b "riscv: move the XOR code to lib/raid/" (14/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-15-hch@lst.de
+      - 213ed29795ec "riscv: move the XOR code to lib/raid/" (14/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-16-hch@lst.de
-      - 6e524875d32c "sparc: move the XOR code to lib/raid/" (15/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-16-hch@lst.de
+      - d60c723fecc2 "sparc: move the XOR code to lib/raid/" (15/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-17-hch@lst.de
-      - 2efe8394b7d8 "s390: move the XOR code to lib/raid/" (16/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-17-hch@lst.de
+      - 0231f00c8474 "s390: move the XOR code to lib/raid/" (16/26)
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-18-hch@lst.de
-      - b84908d96c10 "x86: move the XOR code to lib/raid/" (17/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-18-hch@lst.de
+      - 613a7ef56266 "x86: move the XOR code to lib/raid/" (17/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-19-hch@lst.de
-      - 155bd2bef869 "xor: avoid indirect calls for arm64-optimized ops" (18/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-19-hch@lst.de
+      - 0cf3a93cb1ae "xor: avoid indirect calls for arm64-optimized ops" (18/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-20-hch@lst.de
-      - 45130df103c1 "xor: make xor.ko self-contained in lib/raid/" (19/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-20-hch@lst.de
+      - e696840faeb7 "xor: make xor.ko self-contained in lib/raid/" (19/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-21-hch@lst.de
-      - 6cd2bdc77532 "xor: add a better public API" (20/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-21-hch@lst.de
+      - 513d18bb87e2 "xor: add a better public API" (20/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-22-hch@lst.de
-      - f22cbd03f92b "async_xor: use xor_gen" (21/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-22-hch@lst.de
+      - 1246ed369a07 "async_xor: use xor_gen" (21/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-23-hch@lst.de
-      - 56e33b74d146 "btrfs: use xor_gen" (22/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-23-hch@lst.de
+      - d2902679c827 "btrfs: use xor_gen" (22/26)
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-24-hch@lst.de
-      - 17fd9317d762 "xor: pass the entire operation to the low-level ops" (23/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-24-hch@lst.de
+      - aaa6ac29f03c "xor: pass the entire operation to the low-level ops" (23/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-25-hch@lst.de
-      - 9cd82fd171db "xor: use static_call for xor_gen" (24/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-25-hch@lst.de
+      - be43e41c3516 "xor: use static_call for xor_gen" (24/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-26-hch@lst.de
-      - 8ca54a04caf3 "random: factor out a __limit_random_u32_below helper" (25/27)
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-26-hch@lst.de
+      - f44b9c7b975f "xor: add a kunit test case" (25/26)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-27-hch@lst.de
-      - 2b33f1e99a1e "xor: add a kunit test case" (26/27)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260311070416.972667-28-hch@lst.de
+        - Link: https://lkml.kernel.org/r/20260324062211.3216301-27-hch@lst.de
     - series "hung_task: Provide runtime reset interface for hung task detector", v9. (3 commits)
-      - a7e67497adb1 "hung_task: refactor detection logic and atomicise detection count" (0/3)
+      - 73ba9578133e "hung_task: refactor detection logic and atomicise detection count" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260303203031.4097316-1-atomlin@atomlin.com
         - Link: https://lkml.kernel.org/r/20260303203031.4097316-2-atomlin@atomlin.com
-      - 0bc7269b33b6 "hung_task: enable runtime reset of hung_task_detect_count" (1/3)
+      - 101ef5249fb7 "hung_task: enable runtime reset of hung_task_detect_count" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260303203031.4097316-3-atomlin@atomlin.com
-      - 275d27b45c4f "hung_task: increment the global counter immediately" (2/3)
+      - aa06e9d6007f "hung_task: increment the global counter immediately" (2/3)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260303203031.4097316-4-atomlin@atomlin.com
-    - 621914884ade "hung_task: explicitly report I/O wait state in log output"
+    - 338d128f9b11 "hung_task: explicitly report I/O wait state in log output"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260303221324.4106917-1-atomlin@atomlin.com
-    - ea7482fe756e "scripts/gdb/symbols: handle module path parameters"
+    - 6cd88b31ee6c "scripts/gdb/symbols: handle module path parameters"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260304110642.2020614-2-benjamin@sipsolutions.net
-    - f2080a88efde "lib/uuid: fix typo "reversion" to "revision" in comment"
+    - dc98ac518584 "lib/uuid: fix typo "reversion" to "revision" in comment"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260306161250.2811500-1-objecting@objecting.org
-    - 8abc4e707204 "lib/inflate: fix memory leak in inflate_fixed() on inflate_codes() failure"
+    - 55ab8c19d025 "lib/inflate: fix memory leak in inflate_fixed() on inflate_codes() failure"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260306161612.2811703-1-objecting@objecting.org
-    - 486aab04f253 "lib/inflate: fix memory leak in inflate_dynamic() on inflate_codes() failure"
+    - 674f5d3781ad "lib/inflate: fix memory leak in inflate_dynamic() on inflate_codes() failure"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260306161647.2811874-1-objecting@objecting.org
-    - 391e9534e931 "lib/inflate: fix grammar in comment: "variable" to "variables""
+    - ceb65670fc68 "lib/inflate: fix grammar in comment: "variable" to "variables""
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260306161707.2812005-1-objecting@objecting.org
-    - 2466b6adc617 "lib/inflate: fix typo "This results" to "The results" in comment"
+    - d22627f5d80e "lib/inflate: fix typo "This results" to "The results" in comment"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260306161732.2812132-1-objecting@objecting.org
-    - f7c68f39b44a "lib/bug: fix inconsistent capitalization in BUG message"
+    - 2c0c5af1bec2 "lib/bug: fix inconsistent capitalization in BUG message"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260306162327.2815553-1-objecting@objecting.org
-    - 69cf61950d91 "lib/bug: remove unnecessary variable initializations"
+    - 636a1f3b5004 "lib/bug: remove unnecessary variable initializations"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260306162418.2815979-1-objecting@objecting.org
-    - 99db049181bc "lib/idr: fix ida_find_first_range() missing IDs across chunk boundaries"
+    - c3e462777266 "lib/idr: fix ida_find_first_range() missing IDs across chunk boundaries"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260306203047.2821852-1-objecting@objecting.org
-    - 7186aa32bada "ocfs2: fix possible deadlock between unlink and dio_end_io_write"
+    - f7f9c08f1db4 "ocfs2: fix possible deadlock between unlink and dio_end_io_write"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260306032211.1016452-1-joseph.qi@linux.alibaba.com
-    - 340500db5800 "lib: decompress_bunzip2: fix 32-bit shift undefined behavior"
+    - ffcb2c598ae8 "lib: decompress_bunzip2: fix 32-bit shift undefined behavior"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260308165012.2872633-1-objecting@objecting.org
     - series "tools/getdelays: use the static UAPI headers from tools/include/uapi". (2 commits)
-      - d20b8ba33ebd "tools headers UAPI: sync linux/taskstats.h" (0/2)
+      - edfa358dc15b "tools headers UAPI: sync linux/taskstats.h" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260307-accounting-taskstats-h-v1-0-0b75915c6ce5@weissschuh.net
         - Link: https://lkml.kernel.org/r/20260307-accounting-taskstats-h-v1-1-0b75915c6ce5@weissschuh.net
-      - 0b43efab6758 "tools/getdelays: use the static UAPI headers from tools/include/uapi" (1/2)
+      - e40c46fdc311 "tools/getdelays: use the static UAPI headers from tools/include/uapi" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260307-accounting-taskstats-h-v1-2-0b75915c6ce5@weissschuh.net
-    - 4778b17f88d0 "ocfs2: remove redundant error code assignment"
+    - 458c2ecad3cc "ocfs2: remove redundant error code assignment"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260307234809.88421-1-a.velichayshiy@ispras.ru
-    - d2115d7cf413 "lib/ts_bm: fix integer overflow in pattern length calculation"
+    - d778fd395ee3 "lib/ts_bm: fix integer overflow in pattern length calculation"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260308202028.2889285-1-objecting@objecting.org
-    - 9afa84fcbe57 "lib/ts_kmp: fix integer overflow in pattern length calculation"
+    - 947f7d11a454 "lib/ts_kmp: fix integer overflow in pattern length calculation"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260308202028.2889285-2-objecting@objecting.org
-    - 0a6bc0ace690 "selftests: fix ARCH normalization to handle command-line argument"
+    - 3766a0005196 "selftests: fix ARCH normalization to handle command-line argument"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260309205145.572778-1-aleksey.oladko@virtuozzo.com
-    - 039771016249 "decode_stacktrace: decode caller address"
+    - ce42989b9f1b "decode_stacktrace: decode caller address"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/177275821652.1557019.18367881408364381866.stgit@mhiramat.tok.corp.google.com
-    - fd91914cb098 "decode_stacktrace-decode-caller-address-checkpatch-fixes"
+    - eeb4806772e6 "decode_stacktrace-decode-caller-address-checkpatch-fixes"
       - Authored by no role player, reviewed by nobody
-    - 3727a70222ca "debugobjects: allow to configure the amount of pre-allocated objects"
+    - b1d045077c15 "debugobjects: allow to configure the amount of pre-allocated objects"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/70f06193b3c3581802710ebcef74671e50c4c979.1772035270.git.bblock@linux.ibm.com
-    - f2cde4b91095 "checkpatch: add support for Assisted-by tag"
+    - 3411e214f3c9 "checkpatch: add support for Assisted-by tag"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260311215818.518930-1-sashal@kernel.org
-    - 2b4232e83fbd "lib/glob: initialize back_str to silence uninitialized variable warning"
+    - 5b6db8578002 "lib/glob: initialize back_str to silence uninitialized variable warning"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260312215249.50165-1-objecting@objecting.org
-    - 60b024cd97f2 "CREDITS: simplify the end-of-file alphabetical order comment"
+    - f112fe6ca1a1 "CREDITS: simplify the end-of-file alphabetical order comment"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260312011741.846664-2-hisamshar@gmail.com
-    - f35c5ffbf039 "kernel/crash: remove inclusion of crypto/sha1.h"
+    - fd41b38f48c0 "kernel/crash: remove inclusion of crypto/sha1.h"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260314204243.45001-1-ebiggers@kernel.org
-    - 4279469a9db7 "kernel/kexec: remove inclusion of crypto/hash.h"
+    - 4a25bf9cf288 "kernel/kexec: remove inclusion of crypto/hash.h"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260314204144.44884-1-ebiggers@kernel.org
     - series "watchdog/hardlockup: Improvements to hardlockup", v2. (5 commits)
-      - c0e5a6d0d608 "watchdog: return early in watchdog_hardlockup_check()" (0/5)
+      - fa69415b110a "watchdog: return early in watchdog_hardlockup_check()" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260312-hardlockup-watchdog-fixes-v2-0-45bd8a0cc7ed@google.com
         - Link: https://lkml.kernel.org/r/20260312-hardlockup-watchdog-fixes-v2-1-45bd8a0cc7ed@google.com
-      - a4a66139f0a9 "watchdog: update saved interrupts during check" (1/5)
+      - e0f394d21337 "watchdog: update saved interrupts during check" (1/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260312-hardlockup-watchdog-fixes-v2-2-45bd8a0cc7ed@google.com
-      - d4b719e58a6d "doc: watchdog: Clarify hardlockup detection timing" (2/5)
+      - cfcb06071e77 "doc: watchdog: Clarify hardlockup detection timing" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260312-hardlockup-watchdog-fixes-v2-3-45bd8a0cc7ed@google.com
-      - 3e3b7297d1fb "watchdog/hardlockup: improve buddy system detection timeliness" (3/5)
+      - 6b25b44c1c44 "watchdog/hardlockup: improve buddy system detection timeliness" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260312-hardlockup-watchdog-fixes-v2-4-45bd8a0cc7ed@google.com
-      - c4f6dbba8581 "doc: watchdog: document buddy detector" (4/5)
+      - 499e60ca03a8 "doc: watchdog: document buddy detector" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260312-hardlockup-watchdog-fixes-v2-5-45bd8a0cc7ed@google.com
-    - a8c005ef9f75 "doc: watchdog: futher improvements"
+    - 9511f87526ee "doc: watchdog: futher improvements"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/acF3tXBxSr0KOP9b@pathway.suse.cz
-    - dfe44323ec70 "kernel/fork: validate exit_signal in kernel_clone()"
+    - d69be7d912ba "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
       - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
       - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
-    - 31c42f6666e5 "kernel-fork-validate-exit_signal-in-kernel_clone-fix"
+    - d4a94fd2459a "kernel-fork-validate-exit_signal-in-kernel_clone-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com
-    - f2fa0b54daa8 "lib/tests: extend cmdline KUnit with next_arg() tests"
+    - 5e5b273d8183 "lib/tests: extend cmdline KUnit with next_arg() tests"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260316101227.15807-1-shuvampandey1@gmail.com
-    - a4dbb07e7a4b "lib/tests: extend cmdline next_arg() coverage with mixed tokens"
+    - 6c5bd6743fa1 "lib/tests: extend cmdline next_arg() coverage with mixed tokens"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260316211249.88601-1-shuvampandey1@gmail.com
-    - 7e6c45172767 "do_notify_parent: sanitize the valid_signal() checks"
+    - 1189c9314b54 "do_notify_parent: sanitize the valid_signal() checks"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/abld-ilvMEZ7VgMw@redhat.com
-    - 005840829384 "scripts/decodecode: return 0 on success"
+    - b753a51daefd "scripts/decodecode: return 0 on success"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260318150545.2809311-1-derkling@google.com
     - series "lib/bch: fix undefined behavior from signed left-shifts". (2 commits)
-      - 6dcecb043ac5 "lib/bch: fix signed left-shift undefined behavior" (0/2)
+      - ea56c10a2550 "lib/bch: fix signed left-shift undefined behavior" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260318074806.16527-2-objecting@objecting.org
-      - b3dc5c6dfcbc "lib/bch: fix signed shift overflow in build_mod8_tables" (1/2)
+      - 9db710374842 "lib/bch: fix signed shift overflow in build_mod8_tables" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260318074806.16527-3-objecting@objecting.org
     - series "ocfs2/dlm: fix two bugs in dlm_match_regions()". (2 commits)
-      - b210cae1317e "ocfs2/dlm: validate qr_numregions in dlm_match_regions()" (0/2)
+      - eef3c2ad8f25 "ocfs2/dlm: validate qr_numregions in dlm_match_regions()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/SYBPR01MB7881A334D02ACEE5E0645801AF7BA@SYBPR01MB7881.ausprd01.prod.outlook.com
         - Link: https://lkml.kernel.org/r/SYBPR01MB788166F524AD04E262E174BEAF7BA@SYBPR01MB7881.ausprd01.prod.outlook.com
-      - ff40dbc40c1d "ocfs2/dlm: fix off-by-one in dlm_match_regions() region comparison" (1/2)
+      - b9b4ce4e865a "ocfs2/dlm: fix off-by-one in dlm_match_regions() region comparison" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/SYBPR01MB78813DA26B50EC5E01F00566AF7BA@SYBPR01MB7881.ausprd01.prod.outlook.com
     - series "kallsyms: embed source file:line info in kernel stack traces", v4. (4 commits)
-      - d76891f446da "kallsyms: embed source file:line info in kernel stack traces" (0/4)
+      - e9e629ccd2af "kallsyms: embed source file:line info in kernel stack traces" (0/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260322131543.971079-1-sashal@kernel.org
         - Link: https://lkml.kernel.org/r/20260322131543.971079-2-sashal@kernel.org
-      - 92fb8499ec4b "kallsyms: extend lineinfo to loadable modules" (1/4)
+      - cf1547142955 "kallsyms: extend lineinfo to loadable modules" (1/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260322131543.971079-3-sashal@kernel.org
-      - 729ce7d37945 "kallsyms: delta-compress lineinfo tables for ~2.7x size reduction" (2/4)
+      - c641c9f4eac0 "kallsyms: delta-compress lineinfo tables for ~2.7x size reduction" (2/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260322131543.971079-4-sashal@kernel.org
-      - ac54929347bd "kallsyms: add KUnit tests for lineinfo feature" (3/4)
+      - 7797788a6fc0 "kallsyms: add KUnit tests for lineinfo feature" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260322131543.971079-5-sashal@kernel.org
     - series "lib/list_sort: Clean up list_sort() scheduling workarounds", v3. (2 commits)
-      - 29ea6534ee96 "ubifs: remove unnecessary cond_resched() from list_sort() compare" (0/2)
+      - 1efc8a0287d1 "ubifs: remove unnecessary cond_resched() from list_sort() compare" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260320180938.1827148-1-visitorckw@gmail.com
         - Link: https://lkml.kernel.org/r/20260320180938.1827148-2-visitorckw@gmail.com
-      - 19b83ab07e51 "lib/list_sort: remove dummy cmp() calls to speed up merge_final()" (1/2)
+      - 48e756f010b1 "lib/list_sort: remove dummy cmp() calls to speed up merge_final()" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260320180938.1827148-3-visitorckw@gmail.com
-    - 5d52decfc868 "lib-list_sort-remove-dummy-cmp-calls-to-speed-up-merge_final-fix"
+    - 3305b04ba511 "lib-list_sort-remove-dummy-cmp-calls-to-speed-up-merge_final-fix"
       - Authored by a maintainer, reviewed by nobody
+    - series "Fix length calculation bug in extract_kvec_to_sg". (3 commits)
+      - 7005ede25465 "lib: kunit_iov_iter: improve error detection" (0/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260323212350.807118-1-lk@c--e.de
+        - Link: https://lkml.kernel.org/r/20260323212350.807118-2-lk@c--e.de
+      - 07a62d175e0b "lib: kunit_iov_iter: add tests for extract_iter_to_sg" (1/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260323212350.807118-3-lk@c--e.de
+      - 1dbacb933d18 "lib: fix length calculation in extract_kvec_to_sg" (2/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260323212350.807118-4-lk@c--e.de

@@ -1,86 +1,88 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 59ff42732503 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - db743885d1f2 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260322052120.14021-1-devnexen@gmail.com
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 21 total, 2 (16) series, 5 non-series commits
+- mm-stable: 11 total, 0 (9) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 6 commits
-    - no role, no role : 6 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 2 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 8 commits
+    - no role, maintainer: 7 commits
   - full commits list
-    - ae0de48f17d1 "fs: hugetlb: simplify remove_inode_hugepages() return type"
+    - 34ca46cc6fc9 "fs: hugetlb: simplify remove_inode_hugepages() return type"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260204214741.3161520-1-jiaqiyan@google.com
       - Link: https://lore.kernel.org/all/20220914221810.95771-10-mike.kravetz@oracle.com [1]
-      - fac6ba058712 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 8066a7c76e81 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 49ad8395d37d "mm: change the interface of prep_compound_tail()" (1/17)
+      - 72144096978d "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - 07398b51cfb7 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - 74778f4636e3 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - 42598a55c96c "mm/hugetlb: defer vmemmap population for bootmem hugepages" (8/17)
+      - 7e7cf6b914b5 "mm/hugetlb: defer vmemmap population for bootmem hugepages" (8/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-10-kas@kernel.org
-      - d165c43de68d "mm/hugetlb: refactor code around vmemmap_walk" (9/17)
+      - 579abd853974 "mm/hugetlb: refactor code around vmemmap_walk" (9/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-11-kas@kernel.org
-      - 3f2a22668654 "mm/hugetlb: remove fake head pages" (11/17)
+      - 538d11e43111 "mm/hugetlb: remove fake head pages" (11/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227194302.274384-13-kas@kernel.org
-      - f0ddc7f34ab5 "hugetlb: remove VMEMMAP_SYNCHRONIZE_RCU" (13/17)
+      - 6264656ff34d "hugetlb: remove VMEMMAP_SYNCHRONIZE_RCU" (13/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-15-kas@kernel.org
-      - 460646c798b9 "mm/hugetlb: remove hugetlb_optimize_vmemmap_key static key" (14/17)
+      - bcb2b3fd08e3 "mm/hugetlb: remove hugetlb_optimize_vmemmap_key static key" (14/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-16-kas@kernel.org
-      - b9f78ba2801a "hugetlb: update vmemmap_dedup.rst" (16/17)
+      - fff3d25091ee "hugetlb: update vmemmap_dedup.rst" (16/17)
         - Authored by no role player, reviewed by a maintainer
+        - Link: : https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
         - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
-    - 8940c0866286 "hugetlb: update vmemmap_dedup.rst"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
-    - ee5baed8b256 "Documentation: fix a hugetlbfs reservation statement"
+    - 126670e2ece1 "Documentation: fix a hugetlbfs reservation statement"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
+- mm-unstable: 9 total, 2 (7) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 5 commits
+    - no role, no role : 4 commits
+  - full commits list
     - series "mm: vma flag tweaks". (6 commits)
-      - 1d255f8743c2 "mm: rename VMA flag helpers to be more readable" (0/6)
+      - 659f38ab47d6 "mm: rename VMA flag helpers to be more readable" (0/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - 684d6508ed61 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
+      - d15b34bf33f8 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - 6d80e55b7a11 "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
+      - a9a2b37da2ad "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
-      - 0f519ec1be87 "userfaultfd: introduce vm_uffd_ops" (8/15)
+      - 943ed2075183 "userfaultfd: introduce vm_uffd_ops" (8/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
     - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4 commits)
-      - 2e7f95029f89 "mm: move vma_kernel_pagesize() from hugetlb to mm.h" (0/4)
+      - 3789e575879a "mm: move vma_kernel_pagesize() from hugetlb to mm.h" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260309151901.123947-2-david@kernel.org
-      - d0ecafb7c3c6 "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
+      - 6aa8fdbb3df2 "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
-      - 87d05b733894 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes" (11/13)
+      - 5af6351c82e5 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes" (11/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com
-    - b6985fcd44d4 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+    - 57dc537792b5 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
-    - f76c0e7420df "mm/hugetlb: fix memory offline failure due to hwpoisoned file hugetlb"
+    - 7c9c2e066754 "mm/hugetlb: fix memory offline failure due to hwpoisoned file hugetlb"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260318020711.3596947-1-tujinjiang@huawei.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,29 +1,32 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 6 total, 0 (4) series, 2 non-series commits
+- mm-stable: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 4 commits
-    - reviewer, reviewer: 1 commits
+    - no role, reviewer: 1 commits
   - full commits list
-      - 924df52b49d1 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 88df087cf58a "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - edd2a5854fc2 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+- mm-unstable: 5 total, 0 (3) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - no role, reviewer: 3 commits
+    - reviewer, reviewer: 1 commits
+  - full commits list
+      - 2be8700a4b79 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-    - 14d0b87fcf0e "mm/migrate_device: document folio_get requirement before frozen PMD split"
+    - 7e6326af3ce6 "mm/migrate_device: document folio_get requirement before frozen PMD split"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
-    - 441dbf4f0a9c "mm: migrate: requeue destination folio on deferred split queue"
+    - 99600bbd07c0 "mm: migrate: requeue destination folio on deferred split queue"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev
-      - 9d4de58657ed "mm: introduce is_pmd_order helper" (1/5)
+      - 7838249f2255 "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
-      - cfdd2c1763bb "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
+      - a9ddfa1d97d1 "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

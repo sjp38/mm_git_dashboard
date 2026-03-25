@@ -1,14 +1,25 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
+- mm-stable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 3 commits (no change)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - 85b8cf501628 "mm/kasan: fix double free for kasan pXds"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/2f9135c7866c6e0d06e960993b8a5674a9ebc7ec.1771938394.git.ritesh.list@gmail.com
+    - e393ce79b3cf "kasan: docs: SLUB is the only remaining slab implementation"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260303120416.62580-1-david@kernel.org
+- mm-unstable: 3 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

@@ -1,43 +1,44 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 3 total, 1 (2) series, 1 non-series commits
+- mm-stable: 3 total, 1 (3) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, maintainer: 2 commits
   - full commits list
-      - 79b3077a7618 "mm: memfd_luo: preserve file seals" (1/2)
+      - 0be2dbd3f96c "mm: memfd_luo: preserve file seals" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260216185946.1215770-3-pratyush@kernel.org
     - series "Make KHO Stateless", v9. (2 commits)
-      - ea50dda2e7ae "kho: adopt radix tree for preserved memory tracking" (0/2)
+      - 471965029da6 "kho: adopt radix tree for preserved memory tracking" (0/2)
         - Authored by no role player, reviewed by a maintainer
+        - Link: : https://lkml.kernel.org/r/20260309033530.244508-1-ranxiaokai627@163.com
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
-    - 18c1174edc47 "kho: remove finalize state and clients"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+      - e3fa354c6d4c "kho: remove finalize state and clients" (1/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 5 total, 1 (5) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
     - no role, reviewer: 2 commits
   - full commits list
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - 2b6f1936ba1f "kho: add size parameter to kho_add_subtree()" (0/6)
+      - 118248f19c15 "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - fc5bdc0b85b4 "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
+      - fa5dc78dffda "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-2-ed6dcd951988@debian.org
-      - 6fbb1d84c2af "kho: persist blob size in KHO FDT" (2/6)
+      - ea5a7e2b03d1 "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
-      - e7a756b62cb0 "kho: kexec-metadata: track previous kernel chain" (4/6)
+      - cd3555078c78 "kho: kexec-metadata: track previous kernel chain" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-5-ed6dcd951988@debian.org
-      - 02b045682c74 "kho: document kexec-metadata tracking feature" (5/6)
+      - ba142e85d657 "kho: document kexec-metadata tracking feature" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-6-ed6dcd951988@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

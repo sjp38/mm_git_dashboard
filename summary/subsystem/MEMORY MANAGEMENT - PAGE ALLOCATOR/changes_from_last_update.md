@@ -1,19 +1,57 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 20 -> 20 commits (no change)
-  - series: 2 (15) -> 2 (15) (no change)
+- mm-stable: 0 -> 7 commits
+  - series: 0 (0) -> 1 (6)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 2 commits
+    - maintainer, reviewer: 0 -> 3 commits
+  - changed commits
+    - 7e74dd031620 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - 8066a7c76e81 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
+      - 72144096978d "mm: change the interface of prep_compound_tail() (1/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
+      - 74778f4636e3 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
+    - series "mm/page_alloc: pcp locking cleanup". (3)
+      - 63accfdabd95 "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n (0/3)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-0-f7e22e603447@kernel.org
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-1-f7e22e603447@kernel.org
+        - Link: https://lore.kernel.org/all/d762c46b-36f0-471a-b5b4-23c8cf5628ae@suse.cz/ [1]
+      - 586ded9cfbed "mm/page_alloc: remove IRQ saving/restoring from pcp locking (1/3)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-2-f7e22e603447@kernel.org
+      - ed82d11651db "mm/page_alloc: remove pcpu_spin_* wrappers (2/3)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-3-f7e22e603447@kernel.org
+- mm-unstable: 20 -> 13 commits
+  - series: 2 (15) -> 1 (9)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 6 -> 6 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
+    - no role, no role : 3 -> 2 commits
+    - no role, reviewer: 6 -> 5 commits
+    - no role, maintainer: 5 -> 3 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 3 -> 3 commits (no change)
+    - maintainer, reviewer: 3 -> 0 commits
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)

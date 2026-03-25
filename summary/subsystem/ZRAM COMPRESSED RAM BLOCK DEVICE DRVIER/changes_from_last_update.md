@@ -1,14 +1,25 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - b0377ee80429 "zram: do not slot_free() written-back slots"
+      - Authored by a maintainer, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260320023143.2372879-1-senozhatsky@chromium.org
+      - Link: https://lkml.kernel.org/r/20260319034912.1894770-1-senozhatsky@chromium.org
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
+- mm-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 10 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - b408f7ae820f "zram: use statically allocated compression algorithm names"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/5bb2e9318d124dbcb2b743dcdce6a950@honor.com
+- mm-unstable: 10 -> 9 commits
   - series: 1 (6) -> 1 (6) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 1 commits
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
 - mm-new: 0 -> 0 commits (no change)

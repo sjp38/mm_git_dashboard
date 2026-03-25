@@ -1,35 +1,38 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 5 total, 1 (4) series, 1 non-series commits
+- mm-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 4 commits
-    - no role, reviewer: 1 commits
+    - no role, no role : 1 commits
   - full commits list
-    - 93b40470c135 "mm: name the anonymous MMOP enum as enum mmop"
+    - 99d9279b365b "mm: name the anonymous MMOP enum as enum mmop"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
-      - 97a3c99aeeaa "mm: convert zone lock users to wrappers" (1/5)
+- mm-unstable: 4 total, 1 (4) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 3 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+      - 90ecede30c2b "mm: convert zone lock users to wrappers" (1/5)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
     - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14 commits)
-      - bab7812e55c4 "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
+      - e8231ae335c8 "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260317165652.99114-2-david@kernel.org
-      - b689dd39d91c "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
+      - e2ac79d3714f "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-5-david@kernel.org
-      - 635d20cb5687 "mm/sparse: remove sparse_decode_mem_map()" (7/14)
+      - 21a1950eb2ce "mm/sparse: remove sparse_decode_mem_map()" (7/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-9-david@kernel.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - c303241bf405 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
+    - b355f82e7349 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260321105704.6093-1-kexinsun@smail.nju.edu.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

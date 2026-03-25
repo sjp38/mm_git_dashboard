@@ -1,29 +1,32 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - dbcad97d642f "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
+    - 348791ccec31 "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/1cf1ac59018fc647a87b0dad605d4056a71c14e4.1773739704.git.baolin.wang@linux.alibaba.com
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 4 total, 0 (3) series, 1 non-series commits
+- mm-stable: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 2 commits
+    - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - fac6ba058712 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 8066a7c76e81 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 57f1389e3b09 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE" (3/4)
+      - 3d8178d61a16 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
-      - b8a0cf74d72b "mm: rename zap_vma_pages() to zap_vma()" (13/16)
+- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+  - full commits list
+      - 3c8b3620fb70 "mm: rename zap_vma_pages() to zap_vma()" (13/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-13-david@kernel.org
-    - a0b5b8c172e8 "KVM: guest_memfd: implement userfaultfd operations"
+    - 561f648e4a3d "KVM: guest_memfd: implement userfaultfd operations"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260306171815.3160826-14-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

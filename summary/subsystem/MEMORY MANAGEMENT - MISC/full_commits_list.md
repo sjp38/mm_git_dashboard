@@ -1,167 +1,172 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 47 total, 3 (26) series, 21 non-series commits
+- mm-stable: 8 total, 0 (3) series, 5 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 10 commits
-    - no role, no role : 17 commits
-    - no role, reviewer: 5 commits
-    - no role, maintainer: 8 commits
-    - maintainer, nobody: 4 commits
-    - maintainer, no role : 3 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 3 commits
+    - no role, maintainer: 4 commits
   - full commits list
-    - 4aa4946c4a7a "mm/fadvise: validate offset in generic_fadvise"
+    - e4719825490d "mm/fadvise: validate offset in generic_fadvise"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
       - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - eee4cf2fac12 "selftests/mm: skip migration tests if NUMA is unavailable"
+    - b64550b43730 "selftests/mm: skip migration tests if NUMA is unavailable"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
-    - c93fcc32e8f0 "selftests/mm: remove duplicate include of unistd.h"
+    - e1c4e1dfdeaa "selftests/mm: remove duplicate include of unistd.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
-    - 3adfd1fcac01 "mm/page_idle.c: remove redundant mmu notifier in aging code"
+    - 34428d10b562 "mm/page_idle.c: remove redundant mmu notifier in aging code"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
-    - 18c1174edc47 "kho: remove finalize state and clients"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-      - 07398b51cfb7 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
+      - e3fa354c6d4c "kho: remove finalize state and clients" (1/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+      - 74778f4636e3 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info'" (2/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - b9f78ba2801a "hugetlb: update vmemmap_dedup.rst" (16/17)
+      - fff3d25091ee "hugetlb: update vmemmap_dedup.rst" (16/17)
         - Authored by no role player, reviewed by a maintainer
+        - Link: : https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
         - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
-    - 8940c0866286 "hugetlb: update vmemmap_dedup.rst"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
-    - ee5baed8b256 "Documentation: fix a hugetlbfs reservation statement"
+    - 126670e2ece1 "Documentation: fix a hugetlbfs reservation statement"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
-    - 467bc4146ced "selftests/mm: fix soft-dirty kselftest supported check"
+- mm-unstable: 39 total, 2 (19) series, 20 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 10 commits
+    - no role, no role : 14 commits
+    - no role, reviewer: 5 commits
+    - no role, maintainer: 3 commits
+    - maintainer, nobody: 4 commits
+    - maintainer, no role : 3 commits
+  - full commits list
+    - 23c7c143411f "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260320184010.759461-2-audra@redhat.com
-    - fc17cb6d5d1a "mm: fix remaining zone->lock references"
+    - f677274b8931 "mm: fix remaining zone->lock references"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
-    - 54ee873dbdf6 "mm: documentation: standardize on "zone lock" terminology"
+    - 144a91a549b6 "mm: documentation: standardize on "zone lock" terminology"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
-      - cb27e5131e91 "Docs/mm/damon/design: document the power-of-two limitation for addr_unit" (1/2)
+      - 7d6a761f92c2 "Docs/mm/damon/design: document the power-of-two limitation for addr_unit" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260307194222.202075-3-sj@kernel.org
-      - 2383f2a16963 "Docs/admin-guide/mm/damn/lru_sort: fix intervals autotune parameter name" (4/7)
+      - b4ee7d190504 "Docs/admin-guide/mm/damn/lru_sort: fix intervals autotune parameter name" (4/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-6-sj@kernel.org
-      - bdb318816963 "Docs/mm/damon/maintainer-profile: use flexible review cadence" (5/7)
+      - a535b0e25ffa "Docs/mm/damon/maintainer-profile: use flexible review cadence" (5/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-7-sj@kernel.org
-      - eec6178afed6 "Docs/mm/damon/index: fix typo: autoamted -> automated" (6/7)
+      - 5dc29dd7b280 "Docs/mm/damon/index: fix typo: autoamted -> automated" (6/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260307195356.203753-8-sj@kernel.org
-    - f819ee254091 "docs: mm: fix typo in numa_memory_policy.rst"
+    - 73236f964616 "docs: mm: fix typo in numa_memory_policy.rst"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260310151837.5888-1-akinobu.mita@gmail.com
     - series "selftests/mm: fix failures and robustness improvements", v2. (13 commits)
-      - 5ddbbca96035 "selftests/mm: fix hugetlb pathname construction in charge_reserved_hugetlb.sh" (0/13)
+      - 3819ca7f9174 "selftests/mm: fix hugetlb pathname construction in charge_reserved_hugetlb.sh" (0/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cover.1773305677.git.sayalip@linux.ibm.com
         - Link: https://lkml.kernel.org/r/3b34767f2cb705c8de0f085a85bd21bdf6998ca6.1773305677.git.sayalip@linux.ibm.com
-      - 5d8e388172ea "selftests/mm: fix hugetlb pathname construction in hugetlb_reparenting_test.sh" (1/13)
+      - 8477da149b4d "selftests/mm: fix hugetlb pathname construction in hugetlb_reparenting_test.sh" (1/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/3ab5781190ea0a6bffda2683b2ca221e0c7f6280.1773305677.git.sayalip@linux.ibm.com
-      - 202085d232f1 "selftest/mm: fix cgroup task placement and tolerance in hugetlb_reparenting_test.sh" (2/13)
+      - ec8feda22927 "selftest/mm: fix cgroup task placement and tolerance in hugetlb_reparenting_test.sh" (2/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/3b5b4275fed509e13567bba7471a9130bbfa6841.1773305677.git.sayalip@linux.ibm.com
-      - f69eb216ac33 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (3/13)
+      - 6cecec2ee930 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (3/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/94c18dd26cf88f10b4b496cb3de08d81439a8909.1773305677.git.sayalip@linux.ibm.com
-      - 04e382a2df94 "selftest/mm: adjust hugepage-mremap test size for large huge pages" (4/13)
+      - 1f228cc3f10a "selftest/mm: adjust hugepage-mremap test size for large huge pages" (4/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0ea624c4bf022425b50c50cf8f5e3023106db9c1.1773305677.git.sayalip@linux.ibm.com
-      - dae243ebdb4a "selftest/mm: register existing mapping with userfaultfd in hugepage-mremap" (5/13)
+      - 2882ce3193cf "selftest/mm: register existing mapping with userfaultfd in hugepage-mremap" (5/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/da7ec96ee85ccfdb9bec704c6dd534b419212f94.1773305677.git.sayalip@linux.ibm.com
-      - b3e28ccb5ab5 "selftests/mm: ensure destination is hugetlb-backed in hugepage-mremap" (6/13)
+      - 043258d67374 "selftests/mm: ensure destination is hugetlb-backed in hugepage-mremap" (6/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/a9e12dcb25b9be4f146063669b1eb3ff9b776c23.1773305677.git.sayalip@linux.ibm.com
-      - 88975bc596eb "selftests/mm: skip uffd-wp-mremap if UFFD write-protect is unsupported" (7/13)
+      - 89e547f79449 "selftests/mm: skip uffd-wp-mremap if UFFD write-protect is unsupported" (7/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/ed23ff57a80881c9d087d22709862af40addf49b.1773305678.git.sayalip@linux.ibm.com
-      - 6905f37d1dc5 "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero" (8/13)
+      - c6c892b8d8d6 "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero" (8/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/2516cad1d9dcbe613619a1006aed1991302c9bee.1773305678.git.sayalip@linux.ibm.com
-      - d73bcf027779 "selftests/mm: fix double increment in linked list cleanup in compaction_test" (9/13)
+      - e6491054db98 "selftests/mm: fix double increment in linked list cleanup in compaction_test" (9/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/27390ade4251d1f7f6b846bd5836fa79dbf285df.1773305678.git.sayalip@linux.ibm.com
-      - 7fbccc1e4087 "selftests/mm: move hwpoison setup into run_test() and silence modprobe output for memory-failure category" (10/13)
+      - c87df0002c3d "selftests/mm: move hwpoison setup into run_test() and silence modprobe output for memory-failure category" (10/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/35a44ccc4d1587255e8f920b22e983f74c024f2e.1773305678.git.sayalip@linux.ibm.com
     - series "selftests/mm: fix failures and robustness improvements". (13 commits)
-      - 2efa15d60363 "selftests/mm: restore default nr_hugepages value during cleanup in charge_reserved_hugetlb.sh" (0/13)
+      - ad9e2b2e0cca "selftests/mm: restore default nr_hugepages value during cleanup in charge_reserved_hugetlb.sh" (0/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cover.1773134177.git.sayalip@linux.ibm.com
         - Link: https://lkml.kernel.org/r/aef8d9c1c6fb2b80af90543be21e15030e720733.1773134177.git.sayalip@linux.ibm.com
-    - 2f3190949293 "selftests/mm: verify droppable mappings cannot be locked"
+    - fefd42739c84 "selftests/mm: verify droppable mappings cannot be locked"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260310155821.17869-2-anthony.yznaga@oracle.com
-      - 6a1fd930bbfd "Docs/mm/damon/design: document the goal-based quota tuner selections" (4/11)
+      - 66cb4aa69f5a "Docs/mm/damon/design: document the goal-based quota tuner selections" (4/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-6-sj@kernel.org
-      - f0f386c117ed "Docs/admin-guide/mm/damon/usage: document goal_tuner sysfs file" (5/11)
+      - 18da2088d476 "Docs/admin-guide/mm/damon/usage: document goal_tuner sysfs file" (5/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-7-sj@kernel.org
-    - b2ef8ab8dda7 "selftests/mm: pagemap_ioctl: remove hungarian notation"
+    - b53d8808d007 "selftests/mm: pagemap_ioctl: remove hungarian notation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260311180737.3767545-1-rppt@kernel.org
-    - c33436456345 "Docs/mm/damon: document exclusivity of special-purpose modules"
+    - ee985e74bcc8 "Docs/mm/damon: document exclusivity of special-purpose modules"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260315162945.80994-1-sj@kernel.org
       - Link: https://lore.kernel.org/damon/20260314002119.79742-1-sj@kernel.org/T/#t [1]
-    - 616764e523f6 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+    - d5539020236c "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/abongwF3X0G8xY1I@chrisdown.name
-    - d96bc655dff9 "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
+    - 17a1cd125d23 "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
       - Authored by a maintainer, reviewed by nobody
-    - 7e18b8a54e4b "Docs/mm/damon/design: document DAMON actions when TRANSPARENT_HUGEPAGE is off"
+    - b0b396440048 "Docs/mm/damon/design: document DAMON actions when TRANSPARENT_HUGEPAGE is off"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260318035349.88715-1-sj@kernel.org
       - Link: https://lore.kernel.org/66131775-180b-4b9f-b7ce-61a3e077b6e6@huawei-partners.com/ [1]
-    - e47c4bfa315b "selftests/mm: add folio_split() and filemap_get_entry() race test"
+    - 66054be4653a "selftests/mm: add folio_split() and filemap_get_entry() race test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
       - Link: https://github.com/dfinity/thp-madv-remove-test [2]
       - Link: https://lkml.kernel.org/r/20260319190409.294523-1-ziy@nvidia.com
-    - e6d820397dbf "selftests-mm-add-folio_split-and-filemap_get_entry-race-test-v4"
+    - 63032cba914e "selftests-mm-add-folio_split-and-filemap_get_entry-race-test-v4"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
       - Link: https://github.com/dfinity/thp-madv-remove-test [2]
       - Link: https://lkml.kernel.org/r/20260320142219.375118-1-ziy@nvidia.com
-    - 8c77959d61e6 "selftests-mm-add-folio_split-and-filemap_get_entry-race-test-fix"
+    - 43263f07999c "selftests-mm-add-folio_split-and-filemap_get_entry-race-test-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/D60C0C65-11E3-4060-9295-B67F90E9D774@nvidia.com
-    - b72efe6a9b87 "selftests/mm: fix sashiko complains on folio_split_race_test"
+    - 8e50bfbc89e3 "selftests/mm: fix sashiko complains on folio_split_race_test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/B0985749-939D-4256-B9B9-C54C0734CF72@nvidia.com
-    - series "selftests/mm: skip several tests when thp is not available", v4. (5 commits)
-      - 27a038862cc8 "selftests/mm/guard-regions: skip collapse test when thp not enabled" (0/5)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-1-chuhu@redhat.com
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-2-chuhu@redhat.com
-      - 6c462db4c28c "selftests/mm: soft-dirty: skip two tests when thp is not available" (1/5)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-3-chuhu@redhat.com
-      - b9325aeb5cae "selftests/mm: move write_file helper to vm_util" (2/5)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-4-chuhu@redhat.com
-      - 9a1761059a67 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (3/5)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-5-chuhu@redhat.com
-      - 9aa99b88d44e "selftests/mm: transhuge_stress: skip the test when thp not available" (4/5)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260319160656.1480279-6-chuhu@redhat.com
-      - cfdd2c1763bb "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
+    - 77e01eff099e "selftests/mm/guard-regions: skip collapse test when thp not enabled"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-1-chuhu@redhat.com
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-2-chuhu@redhat.com
+    - ab9097d61e63 "selftests/mm: soft-dirty: skip two tests when thp is not available"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-3-chuhu@redhat.com
+    - e328fc6868d7 "selftests/mm: move write_file helper to vm_util"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-4-chuhu@redhat.com
+    - ceb482e3f20d "selftests/mm/vm_util: robust write_file()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-5-chuhu@redhat.com
+    - e797b3670307 "selftests/mm: split_huge_page_test: skip the test when thp is not available"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-6-chuhu@redhat.com
+    - a06b1bb3a357 "selftests/mm: transhuge_stress: skip the test when thp not available"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260324013316.2590422-7-chuhu@redhat.com
+      - a9ddfa1d97d1 "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
 - mm-new: 3 total, 0 (2) series, 1 non-series commits
@@ -169,14 +174,14 @@
     - no role, reviewer: 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 03e0ece143d7 "Docs/mm/damon: document min_nr_regions constraint and rationale"
+    - 118266da68ba "Docs/mm/damon: document min_nr_regions constraint and rationale"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260320052428.213230-1-aethernet65535@gmail.com
       - Link: https://lore.kernel.org/damon/20260319151528.86490-1-sj@kernel.org/T/#t [1]
-      - fc5bdc0b85b4 "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
+      - fa5dc78dffda "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-2-ed6dcd951988@debian.org
-      - 02b045682c74 "kho: document kexec-metadata tracking feature" (5/6)
+      - ba142e85d657 "kho: document kexec-metadata tracking feature" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-6-ed6dcd951988@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

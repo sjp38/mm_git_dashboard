@@ -1,15 +1,71 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 11 commits (no change)
-  - series: 2 (8) -> 2 (8) (no change)
+- mm-stable: 0 -> 3 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, reviewer: 0 -> 3 commits
+  - changed commits
+    - 260d70819c37 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
+      - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com
+    - series "mm: vmscan: add PID and cgroup ID to vmscan tracepoints", v8. (3)
+      - e1b6625e0bdd "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260316160908.42727-3-tballasi@linux.microsoft.com
+    - 015680e90a05 "mm: do not allocate shrinker info with cgroup.memory=nokmem"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - added "[mkoutny@suse.com: update comment, per Qi Zheng]"
+      - added "Link: : https://lkml.kernel.org/r/20260309-cgroup-ml-nokmem-shrinker-v2-1-3e7a7eefb6c9@suse.com"
+      - Link: : https://lkml.kernel.org/r/20260309-cgroup-ml-nokmem-shrinker-v2-1-3e7a7eefb6c9@suse.com
+      - Link: https://lkml.kernel.org/r/20260225-cgroup-ml-nokmem-shrinker-v1-1-d703899bdda4@suse.com
+- mm-unstable: 11 -> 7 commits
+  - series: 2 (8) -> 2 (7)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, reviewer: 4 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v3. (7)
+      - ff735d532023 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty (0/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-1-hannes@cmpxchg.org
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-2-hannes@cmpxchg.org
+      - 8f65ef3e4460 "mm: list_lru: deduplicate unlock_list_lru() (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-3-hannes@cmpxchg.org
+      - 652062e30898 "mm: list_lru: move list dead check to lock_list_lru_of_memcg() (2/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-4-hannes@cmpxchg.org
+      - 0c7d9899d34d "mm: list_lru: deduplicate lock_list_lru() (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-5-hannes@cmpxchg.org
+      - 6d4bc232bfd1 "mm: list_lru: introduce caller locking for additions and deletions (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-6-hannes@cmpxchg.org
+      - 70e698fffa1c "mm: list_lru: introduce folio_memcg_list_lru_alloc() (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-7-hannes@cmpxchg.org
+  - dropped commits
+    - a2461703c4c7 "mm-do-not-allocate-shrinker-info-with-cgroupmemory=nokmem-v2"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260309-cgroup-ml-nokmem-shrinker-v2-1-3e7a7eefb6c9@suse.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

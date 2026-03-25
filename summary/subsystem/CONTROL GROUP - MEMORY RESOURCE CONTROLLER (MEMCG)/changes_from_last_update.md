@@ -1,19 +1,47 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 32 -> 32 commits (no change)
-  - series: 3 (25) -> 3 (25) (no change)
+- mm-stable: 0 -> 5 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 3 commits
+    - maintainer, maintainer: 0 -> 1 commits
+  - changed commits
+    - ab21a3cdec9d "mm: move pgscan, pgsteal, pgrefill to node stats"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
+    - 5405c463ea6f "memcg: consolidate private id refcount get/put helpers"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260213-memcg-privid-v1-1-d8cb7afcf831@tencent.com
+    - series "mm: zswap: add per-memcg stat for incompressible pages", v3. (2)
+      - b0af0be46d6e "mm: zswap: add per-memcg stat for incompressible pages (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260213071827.5688-1-jiayuan.chen@linux.dev
+        - Link: https://lkml.kernel.org/r/20260213071827.5688-2-jiayuan.chen@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/CAF8kJuONDFj4NAksaR4j_WyDbNwNGYLmTe-o76rqU17La=nkOw@mail.gmail.com/ [1]
+    - 775a76edd63c "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+      - Authored by a maintainer, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - 8066a7c76e81 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+- mm-unstable: 32 -> 27 commits
+  - series: 3 (25) -> 2 (22)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 19 -> 19 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 19 -> 16 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 5 -> 5 commits (no change)
+    - maintainer, maintainer: 5 -> 4 commits
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

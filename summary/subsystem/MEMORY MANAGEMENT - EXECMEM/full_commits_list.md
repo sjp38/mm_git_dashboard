@@ -1,4 +1,4 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 9bedcb7cdeec "mm/execmem: make the populate and alloc atomic"
+    - 5ecbbafb09b3 "mm/execmem: make the populate and alloc atomic"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260320075723.779985-1-hmazur@google.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

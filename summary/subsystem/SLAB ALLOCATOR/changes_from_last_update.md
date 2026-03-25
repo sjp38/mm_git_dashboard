@@ -1,14 +1,30 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 3 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 0 -> 3 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, no role : 0 -> 2 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
+      - 74778f4636e3 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
+      - d90c0823d0ee "mm: rework compound_head() for power-of-2 sizeof(struct page) (6/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-8-kas@kernel.org
+    - cd33f9af9c79 "mm/slab: use compound_head() in page_slab()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260227194302.274384-19-kas@kernel.org
+- mm-unstable: 3 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 2 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

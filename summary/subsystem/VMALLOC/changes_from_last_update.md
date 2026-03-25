@@ -1,15 +1,41 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 0 -> 5 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 3 commits
+    - maintainer, maintainer: 0 -> 1 commits
+  - changed commits
+    - 48a47312b3c9 "mm: vmalloc: streamline vmalloc memory accounting"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
+    - 775a76edd63c "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+      - Authored by a maintainer, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
+    - series "Fix KASAN support for KHO restored vmalloc regions". (2)
+      - 23f6a28887fc "mm/vmalloc: export clear_vm_uninitialized_flag() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
+        - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
+    - b6d65b5341fd "mm/vmalloc: fix incorrect size reporting on allocation failure"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260302114740.2668450-1-urezki@gmail.com
+    - 916754ebc5b0 "vmalloc: support __GFP_RETRY_MAYFAIL and __GFP_NORETRY"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260302114740.2668450-2-urezki@gmail.com
+- mm-unstable: 5 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 3 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

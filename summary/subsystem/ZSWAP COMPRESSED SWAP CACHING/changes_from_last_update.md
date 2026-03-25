@@ -1,15 +1,32 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 631c1111501f "mm/zswap: add missing kunmap_local()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: : https://lkml.kernel.org/r/13e09a99-181f-45ac-a18d-057faf94bccb@lucifer.local
+      - Link: https://lkml.kernel.org/r/20260316140122.339697-1-ljs@kernel.org
+      - Link: https://docs.kernel.org/core-api/cachetlb.html [0]
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
+- mm-stable: 0 -> 2 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, maintainer: 0 -> 2 commits
+  - changed commits
+    - series "mm: zswap: add per-memcg stat for incompressible pages", v3. (2)
+      - 4bacefeebd48 "selftests/cgroup: add test for zswap incompressible pages (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260213071827.5688-3-jiayuan.chen@linux.dev
+    - b303f6864e3e "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260202-zswap-syncio-cleanup-v1-1-86bb24a64521@tencent.com
+- mm-unstable: 6 -> 4 commits
+  - series: 1 (5) -> 1 (4)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
+    - no role, maintainer: 4 -> 2 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

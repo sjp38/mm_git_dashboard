@@ -1,45 +1,72 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc4-25-gf0caa1d49cc07 (no change)
+- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 21 -> 21 commits (no change)
-  - series: 2 (16) -> 2 (16) (no change)
-    - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 8 -> 8 commits (no change)
+- mm-stable: 0 -> 11 commits
+  - series: 0 (0) -> 0 (9)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 2 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 7 commits
   - changed commits
-    - 8940c0866286 "hugetlb: update vmemmap_dedup.rst"
+    - 34ca46cc6fc9 "fs: hugetlb: simplify remove_inode_hugepages() return type"
       - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org"
-      - dropped "Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org"
-      - dropped "Cc: Albert Ou <aou@eecs.berkeley.edu>"
-      - dropped "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-      - dropped "Cc: Baoquan He <bhe@redhat.com>"
-      - dropped "Cc: Christoph Lameter <cl@gentwo.org>"
-      - dropped "Cc: David Rientjes <rientjes@google.com>"
-      - dropped "Cc: Frank van der Linden <fvdl@google.com>"
-      - dropped "Cc: Harry Yoo <harry.yoo@oracle.com>"
-      - dropped "Cc: Huacai Chen <chenhuacai@kernel.org>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
-      - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-      - dropped "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
-      - dropped "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
-      - dropped "Cc: Paul Walmsley <paul.walmsley@sifive.com>"
-      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - dropped "Cc: Usama Arif <usamaarif642@gmail.com>"
-      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-      - dropped "Cc: WANG Xuerui <kernel@xen0n.name>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260204214741.3161520-1-jiaqiyan@google.com
+      - Link: https://lore.kernel.org/all/20220914221810.95771-10-mike.kravetz@oracle.com [1]
+    - series "mm: Remove stray references to pagevec", v2. (4)
+      - 8066a7c76e81 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
+      - 72144096978d "mm: change the interface of prep_compound_tail() (1/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
+      - 74778f4636e3 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
+      - 7e7cf6b914b5 "mm/hugetlb: defer vmemmap population for bootmem hugepages (8/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-10-kas@kernel.org
+      - 579abd853974 "mm/hugetlb: refactor code around vmemmap_walk (9/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-11-kas@kernel.org
+      - 538d11e43111 "mm/hugetlb: remove fake head pages (11/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-13-kas@kernel.org
+      - 6264656ff34d "hugetlb: remove VMEMMAP_SYNCHRONIZE_RCU (13/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-15-kas@kernel.org
+      - bcb2b3fd08e3 "mm/hugetlb: remove hugetlb_optimize_vmemmap_key static key (14/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-16-kas@kernel.org
+      - fff3d25091ee "hugetlb: update vmemmap_dedup.rst (16/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - added "[kas@kernel.org: update vmemmap_dedup.rst]"
+        - added "Link: : https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org"
+        - Link: : https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
+    - 126670e2ece1 "Documentation: fix a hugetlbfs reservation statement"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
+- mm-unstable: 21 -> 9 commits
+  - series: 2 (16) -> 2 (7)
+    - no role, nobody: 6 -> 5 commits
+    - no role, no role : 6 -> 4 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 8 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
