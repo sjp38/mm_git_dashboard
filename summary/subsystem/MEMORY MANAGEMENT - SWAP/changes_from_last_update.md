@@ -1,120 +1,28 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 16 commits
-  - series: 0 (0) -> 2 (15)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, nobody: 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 12 commits
-  - changed commits
-    - 396f57b57200 "mm, swap: speed up hibernation allocation and writeout"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260216-hibernate-perf-v4-1-1ba9f0bf1ec9@tencent.com
-      - Link: https://lore.kernel.org/linux-mm/8b4bdcfa-ce3f-4e23-839f-31367df7c18f@gmx.de/ [1]
-    - series "mm, swap: swap table phase III: remove swap_map", v3. (12)
-      - f819f659ae6e "mm, swap: protect si->swap_file properly and use as a mount indicator (0/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-0-f4e34be021a7@tencent.com
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-1-f4e34be021a7@tencent.com
-      - f289af799a32 "mm, swap: clean up swapon process and locking (1/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-2-f4e34be021a7@tencent.com
-      - 27cd2cbd50fa "mm, swap: remove redundant arguments and locking for enabling a device (2/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-3-f4e34be021a7@tencent.com
-      - 08d9b25afeae "mm, swap: consolidate bad slots setup and make it more robust (3/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-4-f4e34be021a7@tencent.com
-      - ce725346f8c1 "mm/workingset: leave highest bits empty for anon shadow (4/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-5-f4e34be021a7@tencent.com
-      - 068742130988 "mm, swap: implement helpers for reserving data in the swap table (5/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-6-f4e34be021a7@tencent.com
-      - b5c878c8d0f8 "mm, swap: mark bad slots in swap table directly (6/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-7-f4e34be021a7@tencent.com
-      - 7ef58bc66a12 "mm, swap: simplify swap table sanity range check (7/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-8-f4e34be021a7@tencent.com
-      - c425fef8d182 "mm, swap: use the swap table to track the swap count (8/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - added "[ryncsn@gmail.com: fix build]"
-        - added "Link: : https://lkml.kernel.org/r/aZWuLZi-vYi3vAWe@KASONG-MC4"
-        - Link: : https://lkml.kernel.org/r/aZWuLZi-vYi3vAWe@KASONG-MC4
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-9-f4e34be021a7@tencent.com
-      - 9a4b5be8e757 "mm, swap: no need to truncate the scan border (9/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-10-f4e34be021a7@tencent.com
-      - 8b7ff65bfa05 "mm, swap: simplify checking if a folio is swapped (10/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-11-f4e34be021a7@tencent.com
-      - fb5d3850b6ba "mm, swap: no need to clear the shadow explicitly (11/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-12-f4e34be021a7@tencent.com
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - a8dd5c567078 "mm: remove stray references to struct pagevec (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-0-716868cc2d11@columbia.edu
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-1-716868cc2d11@columbia.edu
-      - 8066a7c76e81 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 3d8178d61a16 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
-- mm-unstable: 27 -> 10 commits
-  - series: 2 (21) -> 0 (6)
-    - no role, no role : 4 -> 3 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 7 -> 5 commits
+- mm-stable: 16 -> 16 commits (no change)
+  - series: 2 (15) -> 2 (15) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 12 -> 12 commits (no change)
+- mm-unstable: 10 -> 10 commits (no change)
+  - series: 0 (6) -> 0 (6) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, maintainer: 12 -> 0 commits
-  - dropped commits
-    - series "mm, swap: swap table phase III: remove swap_map", v3. (12)
-      - 5304c1de9bd5 "mm-swap-use-the-swap-table-to-track-the-swap-count-fix (9/12)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/aZWuLZi-vYi3vAWe@KASONG-MC4
-- mm-new: 3 -> 4 commits
+- mm-new: 4 -> 4 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - reviewer, nobody: 2 -> 1 commits
-    - reviewer, maintainer: 0 -> 1 commits
-  - new commits
-    - 8d19548f0425 "mm/page_io: fix PSWPIN undercount for large folios in sio_read_complete()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260323231315.240137-1-devnexen@gmail.com
-  - changed commits
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - 0920af5dacbb "mm/swap: remove redundant swap device reference in alloc/free (1/8)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Kairui Song <kasong@tencent.com>"
-        - Link: https://lkml.kernel.org/r/20260323160822.1409904-3-youngjun.park@lge.com
+    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

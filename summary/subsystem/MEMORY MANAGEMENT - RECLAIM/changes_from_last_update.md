@@ -1,55 +1,41 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 5 commits
-  - series: 0 (0) -> 0 (4)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 0 -> 2 commits
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 1 commits
-  - changed commits
-    - ab21a3cdec9d "mm: move pgscan, pgsteal, pgrefill to node stats"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
-    - series "mm, swap: swap table phase III: remove swap_map", v3. (12)
-      - ce725346f8c1 "mm/workingset: leave highest bits empty for anon shadow (4/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-5-f4e34be021a7@tencent.com
-    - series "Improve khugepaged scan logic", v8. (4)
-      - 600399fe1d0b "mm: add folio_test_lazyfree helper (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-4-vernon2gm@gmail.com
-    - series "mm: vmscan: add PID and cgroup ID to vmscan tracepoints", v8. (3)
-      - e1b6625e0bdd "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260316160908.42727-3-tballasi@linux.microsoft.com
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - 8066a7c76e81 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-- mm-unstable: 24 -> 20 commits
-  - series: 0 (19) -> 0 (16)
+- mm-stable: 5 -> 5 commits (no change)
+  - series: 0 (4) -> 0 (4) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 20 -> 18 commits
+  - series: 0 (16) -> 0 (15)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 3 commits
-    - no role, reviewer: 6 -> 4 commits
-    - no role, maintainer: 7 -> 6 commits
-    - reviewer, nobody: 0 -> 1 commits
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 4 -> 3 commits
+    - no role, maintainer: 6 -> 6 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-    - maintainer, maintainer: 1 -> 0 commits
-  - new commits
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - 40d3d712f102 "mm: vmscan: prepare for reparenting MGLRU folios (25/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "[zhengqi.arch@bytedance.com: use list_splice_tail_init() to reparent child folios]"
+        - added "Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev"
+        - Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
+        - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
+  - dropped commits
     - series "Eliminate Dying Memory Cgroup", v6. (33)
       - 70863fbcf89d "fix: mm: vmscan: prepare for reparenting MGLRU folios (26/33)"
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
+    - series "mm: zone lock tracepoint instrumentation", v4. (5)
+      - 90ecede30c2b "mm: convert zone lock users to wrappers (1/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)

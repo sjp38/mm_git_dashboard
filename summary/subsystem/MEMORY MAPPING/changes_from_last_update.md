@@ -1,75 +1,34 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 2 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - a7f7d224048e "mm/pkeys: remove unused tsk parameter from arch_set_user_pkey_access()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260219063506.545148-1-sgsu.park@samsung.com
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - 8066a7c76e81 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-- mm-unstable: 50 -> 48 commits
-  - series: 4 (47) -> 4 (46)
-    - no role, nobody: 22 -> 15 commits
-    - no role, no role : 22 -> 28 commits
-    - no role, reviewer: 4 -> 3 commits
+- mm-stable: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 48 -> 47 commits
+  - series: 4 (46) -> 4 (46) (no change)
+    - no role, nobody: 15 -> 14 commits
+    - no role, no role : 28 -> 28 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: expand mmap_prepare functionality and usage", v4. (21)
-      - eaec9852efe3 "mm: various small mmap_prepare cleanups (0/21)"
+    - series "mm: vma flag tweaks". (6)
+      - 06e26715844b "tools/testing/vma: add test for vma_flags_test(), vma_desc_test() (5/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/cover.1774045440.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/99f408e4694f44ab12bdc55fe0bd9685d3bd1117.1774045440.git.ljs@kernel.org
-      - f8c71d64510c "mm: avoid deadlock when holding rmap on mmap_prepare error (3/21)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/d44248be9da68258b07c2c59d4e73485ee0ca943.1774045440.git.ljs@kernel.org
-      - e38bdd9fbe84 "mm: switch the rmap lock held option off in compat layer (4/21)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/dda74230d26a1fcd79a3efab61fa4101dd1cac64.1774045440.git.ljs@kernel.org
-      - e463db587cb8 "mm/vma: remove superfluous map->hold_file_rmap_lock (6/21)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/42c3fbb701e361a17193ecda0d2dabcc326288a5.1774045440.git.ljs@kernel.org
-      - 2ab6c10e22ba "mm: have mmap_action_complete() handle the rmap lock and unmap (7/21)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/8d1ee8ebd3542d006a47e8382fb80cf5b57ecf10.1774045440.git.ljs@kernel.org
-      - e40abaebf477 "mm: add vm_ops->mapped hook (8/21)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/4c5e98297eb0aae9565c564e1c296a112702f144.1774045440.git.ljs@kernel.org
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - reviewer, no role : 0 -> 2 commits
-  - new commits
-    - series "mm/mprotect: micro-optimization work", v2. (2)
-      - 8a88a813d8dd "mm/mprotect: move softleaf code out of the main function (0/2)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260324154342.156640-1-pfalcato@suse.de
-        - Link: https://lkml.kernel.org/r/20260324154342.156640-2-pfalcato@suse.de
-        - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
-        - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
-      - 9915fc698c85 "mm/mprotect: special-case small folios when applying write permissions (1/2)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260324154342.156640-3-pfalcato@suse.de
+        - added "[ljs@kernel.org: test_vma_flags_test(): use struct initializer, per David]"
+        - added "Link: : https://lkml.kernel.org/r/f6f396d2-1ba2-426f-b756-d8cc5985cc7c@lucifer.local"
+        - Link: : https://lkml.kernel.org/r/f6f396d2-1ba2-426f-b756-d8cc5985cc7c@lucifer.local
+        - Link: https://lkml.kernel.org/r/376a39eb9e134d2c8ab10e32720dd292970b080a.1772704455.git.ljs@kernel.org
+  - dropped commits
+    - 21a1c0441833 "tools-testing-vma-add-test-for-vma_flags_test-vma_desc_test-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/f6f396d2-1ba2-426f-b756-d8cc5985cc7c@lucifer.local
+- mm-new: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - reviewer, no role : 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

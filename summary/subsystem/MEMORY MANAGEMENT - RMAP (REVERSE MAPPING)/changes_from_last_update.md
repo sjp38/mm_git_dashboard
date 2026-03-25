@@ -1,32 +1,15 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - 3a206a8649f8 "mm/rmap: clear vma->anon_vma on error"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260318122632.63404-1-ljs@kernel.org
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 2 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - series "Improve khugepaged scan logic", v8. (4)
-      - 600399fe1d0b "mm: add folio_test_lazyfree helper (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-4-vernon2gm@gmail.com
-    - 41a46587b444 "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - added "[akpm@linux-foundation.org: update comment per Matthew and David]"
-      - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
-- mm-unstable: 4 -> 2 commits
-  - series: 0 (3) -> 0 (2)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 2 -> 1 commits
+- mm-stable: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

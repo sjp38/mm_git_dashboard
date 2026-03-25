@@ -1,57 +1,46 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 7 commits
-  - series: 0 (0) -> 1 (6)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 2 commits
-    - maintainer, reviewer: 0 -> 3 commits
-  - changed commits
-    - 7e74dd031620 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - 8066a7c76e81 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
-      - 72144096978d "mm: change the interface of prep_compound_tail() (1/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - 74778f4636e3 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-    - series "mm/page_alloc: pcp locking cleanup". (3)
-      - 63accfdabd95 "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n (0/3)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-0-f7e22e603447@kernel.org
-        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-1-f7e22e603447@kernel.org
-        - Link: https://lore.kernel.org/all/d762c46b-36f0-471a-b5b4-23c8cf5628ae@suse.cz/ [1]
-      - 586ded9cfbed "mm/page_alloc: remove IRQ saving/restoring from pcp locking (1/3)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-2-f7e22e603447@kernel.org
-      - ed82d11651db "mm/page_alloc: remove pcpu_spin_* wrappers (2/3)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-3-f7e22e603447@kernel.org
-- mm-unstable: 20 -> 13 commits
-  - series: 2 (15) -> 1 (9)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 2 commits
-    - no role, reviewer: 6 -> 5 commits
-    - no role, maintainer: 5 -> 3 commits
+- mm-stable: 7 -> 7 commits (no change)
+  - series: 1 (6) -> 1 (6) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - maintainer, reviewer: 3 -> 3 commits (no change)
+- mm-unstable: 13 -> 8 commits
+  - series: 1 (9) -> 1 (6)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 5 -> 2 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 3 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
+  - changed commits
+    - series "Allow order zero pages in page reporting", v4. (5)
+      - 2b18e50fd7e9 "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - added "[akpm@linux-foundation.org: tweak whitespace, per David]"
+        - Link: https://lkml.kernel.org/r/20260303113032.3008371-1-yuvraj.sakshith@oss.qualcomm.com
+        - Link: https://lkml.kernel.org/r/20260303113032.3008371-2-yuvraj.sakshith@oss.qualcomm.com
+  - dropped commits
+    - series "Allow order zero pages in page reporting", v4. (5)
+      - ee50099cf5ee "mm-page_reporting-add-page_reporting_order_unspecified-fix (1/5)"
+        - Authored by a maintainer, reviewed by nobody
+    - series "mm: zone lock tracepoint instrumentation", v4. (5)
+      - 90ecede30c2b "mm: convert zone lock users to wrappers (1/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
+      - 9ffbfd830468 "mm: convert compaction to zone lock wrappers (2/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/3a09e46f52cf9f709b0725bc2b648cc5212843b2.1772206930.git.d@ilvokhin.com
+      - 8d8ad3ac390d "mm: rename zone->lock to zone->_lock (3/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
+    - 144a91a549b6 "mm: documentation: standardize on "zone lock" terminology"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)

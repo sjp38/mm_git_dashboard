@@ -1,21 +1,20 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 1 commits
+- mm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 99d9279b365b "mm: name the anonymous MMOP enum as enum mmop"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
-      - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
-- mm-unstable: 5 -> 4 commits
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, no role : 4 -> 3 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-unstable: 4 -> 3 commits
+  - series: 1 (4) -> 1 (3)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+  - dropped commits
+    - series "mm: zone lock tracepoint instrumentation", v4. (5)
+      - 90ecede30c2b "mm: convert zone lock users to wrappers (1/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

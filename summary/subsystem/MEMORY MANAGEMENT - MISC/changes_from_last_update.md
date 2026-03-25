@@ -1,107 +1,37 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 8 commits
-  - series: 0 (0) -> 0 (3)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 3 commits
-    - no role, maintainer: 0 -> 4 commits
-  - changed commits
-    - e4719825490d "mm/fadvise: validate offset in generic_fadvise"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
-      - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
-    - b64550b43730 "selftests/mm: skip migration tests if NUMA is unavailable"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
-    - e1c4e1dfdeaa "selftests/mm: remove duplicate include of unistd.h"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
-    - 34428d10b562 "mm/page_idle.c: remove redundant mmu notifier in aging code"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
-    - series "Make KHO Stateless", v9. (2)
-      - e3fa354c6d4c "kho: remove finalize state and clients (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
-      - 74778f4636e3 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-      - fff3d25091ee "hugetlb: update vmemmap_dedup.rst (16/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - added "[kas@kernel.org: update vmemmap_dedup.rst]"
-        - added "Link: : https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org"
-        - Link: : https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
-    - 126670e2ece1 "Documentation: fix a hugetlbfs reservation statement"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
-- mm-unstable: 47 -> 39 commits
-  - series: 3 (26) -> 2 (19)
-    - no role, nobody: 10 -> 10 commits (no change)
-    - no role, no role : 17 -> 14 commits
+- mm-stable: 8 -> 8 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-unstable: 39 -> 38 commits
+  - series: 2 (19) -> 2 (20)
+    - no role, nobody: 10 -> 8 commits
+    - no role, no role : 14 -> 14 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 8 -> 3 commits
-    - maintainer, nobody: 4 -> 4 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - maintainer, nobody: 4 -> 5 commits
     - maintainer, no role : 3 -> 3 commits (no change)
   - new commits
-    - ceb482e3f20d "selftests/mm/vm_util: robust write_file()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260324013316.2590422-5-chuhu@redhat.com
+    - series "selftests/mm: fix failures and robustness improvements", v2. (13)
+      - 492941282ad9 "selftests-mm-skip-uffd-wp-mremap-if-uffd-write-protect-is-unsupported-fix (8/13)"
+        - Authored by a maintainer, reviewed by nobody
   - changed commits
-    - 77e01eff099e "selftests/mm/guard-regions: skip collapse test when thp not enabled"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lkml.kernel.org/r/20260324013316.2590422-2-chuhu@redhat.com"
-      - added "Link: https://lkml.kernel.org/r/20260324013316.2590422-1-chuhu@redhat.com"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - added "Cc: Mike Rapoport <rppt@kernel.org>"
-      - added "Cc: "Liam R. Howlett" <Liam.Howlett@oracle.com>"
-      - dropped "Link: https://lkml.kernel.org/r/20260319160656.1480279-1-chuhu@redhat.com"
-      - dropped "Link: https://lkml.kernel.org/r/20260319160656.1480279-2-chuhu@redhat.com"
-      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-      - Link: https://lkml.kernel.org/r/20260324013316.2590422-1-chuhu@redhat.com
-      - Link: https://lkml.kernel.org/r/20260324013316.2590422-2-chuhu@redhat.com
-    - ab9097d61e63 "selftests/mm: soft-dirty: skip two tests when thp is not available"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lkml.kernel.org/r/20260324013316.2590422-3-chuhu@redhat.com"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Link: https://lkml.kernel.org/r/20260319160656.1480279-3-chuhu@redhat.com"
-      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-      - Link: https://lkml.kernel.org/r/20260324013316.2590422-3-chuhu@redhat.com
-    - e328fc6868d7 "selftests/mm: move write_file helper to vm_util"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lkml.kernel.org/r/20260324013316.2590422-4-chuhu@redhat.com"
-      - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Link: https://lkml.kernel.org/r/20260319160656.1480279-4-chuhu@redhat.com"
-      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-      - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260324013316.2590422-4-chuhu@redhat.com
-    - e797b3670307 "selftests/mm: split_huge_page_test: skip the test when thp is not available"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lkml.kernel.org/r/20260324013316.2590422-6-chuhu@redhat.com"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Link: https://lkml.kernel.org/r/20260319160656.1480279-5-chuhu@redhat.com"
-      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-      - Link: https://lkml.kernel.org/r/20260324013316.2590422-6-chuhu@redhat.com
-    - a06b1bb3a357 "selftests/mm: transhuge_stress: skip the test when thp not available"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lkml.kernel.org/r/20260324013316.2590422-7-chuhu@redhat.com"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Link: https://lkml.kernel.org/r/20260319160656.1480279-6-chuhu@redhat.com"
-      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-      - Link: https://lkml.kernel.org/r/20260324013316.2590422-7-chuhu@redhat.com
+    - 65696bf65d5a "selftests/mm: fix soft-dirty kselftest supported check"
+      - Authored by no role player, reviewed by nobody
+      - dropped "Cc: "Liam R. Howlett" <Liam.Howlett@oracle.com>"
+      - Link: https://lkml.kernel.org/r/20260320184010.759461-2-audra@redhat.com
+  - dropped commits
+    - f677274b8931 "mm: fix remaining zone->lock references"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
+    - 144a91a549b6 "mm: documentation: standardize on "zone lock" terminology"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
 - mm-new: 3 -> 3 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)

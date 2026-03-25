@@ -16,7 +16,7 @@
   - author/reviewer role stat
     - maintainer, nobody: 1 commits
   - full commits list
-    - fe8a29a0bfae "kasan: fix bug type classification for SW_TAGS mode"
+    - 913c3bc72623 "kasan: fix bug type classification for SW_TAGS mode"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260305185659.20807-1-ryabinin.a.a@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

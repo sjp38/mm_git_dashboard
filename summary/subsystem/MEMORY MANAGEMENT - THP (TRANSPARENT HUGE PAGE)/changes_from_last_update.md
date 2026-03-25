@@ -1,84 +1,21 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 7 commits
-  - series: 0 (0) -> 1 (4)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 0 -> 5 commits
-    - reviewer, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "arch, mm: consolidate empty_zero_page", v3. (4)
-      - 88df087cf58a "mm: rename my_zero_pfn() to zero_pfn() (1/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-    - f6e2aa5699c2 "mm: khugepaged: set to next mm direct when mm has MMF_DISABLE_THP_COMPLETELY"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260207081613.588598-6-vernon2gm@gmail.com
-    - series "Improve khugepaged scan logic", v8. (4)
-      - 00e3252b4244 "mm: khugepaged: add trace_mm_khugepaged_scan event (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-2-vernon2gm@gmail.com
-      - a8c3d80a3d77 "mm: khugepaged: refine scan progress number (1/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-3-vernon2gm@gmail.com
-      - dae4e778f764 "mm-khugepaged-refine-scan-progress-number-fix (2/4)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/hbftflvdmnranprul4zkq3d2iymqm7ta2a7fwiphggsmt36gt7@bihvv5jg2ko5
-        - Link: https://lore.kernel.org/linux-mm/zdvzmoop5xswqcyiwmvvrdfianm4ccs3gryfecwbm4bhuh7ebo@7an4huwgbuwo [1]
-    - 73ba0ce41a0b "mm: khugepaged: skip lazy-free folios"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - added "[vernon2gm@gmail.com: add comment about VM_DROPPABLE in code, make it clearer]"
-      - added "Link: : https://lkml.kernel.org/r/i4uowkt4h2ev47obm5h2vtd4zbk6fyw5g364up7kkjn2vmcikq@auepvqethj5r"
-      - Link: : https://lkml.kernel.org/r/i4uowkt4h2ev47obm5h2vtd4zbk6fyw5g364up7kkjn2vmcikq@auepvqethj5r
-      - Link: https://lkml.kernel.org/r/20260221093918.1456187-5-vernon2gm@gmail.com
-    - 2c29d7c5b2d4 "khugepaged: remove redundant index check for pmd-folios"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260227143501.1488110-1-dev.jain@arm.com
-- mm-unstable: 37 -> 29 commits
-  - series: 3 (31) -> 2 (24)
-    - no role, nobody: 8 -> 6 commits
+- mm-stable: 7 -> 7 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 29 -> 29 commits (no change)
+  - series: 2 (24) -> 2 (24) (no change)
+    - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 20 -> 15 commits
+    - no role, reviewer: 15 -> 15 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 5 -> 4 commits
+    - reviewer, reviewer: 4 -> 4 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - e328fc6868d7 "selftests/mm: move write_file helper to vm_util"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lkml.kernel.org/r/20260324013316.2590422-4-chuhu@redhat.com"
-      - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Link: https://lkml.kernel.org/r/20260319160656.1480279-4-chuhu@redhat.com"
-      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-      - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260324013316.2590422-4-chuhu@redhat.com
-    - e797b3670307 "selftests/mm: split_huge_page_test: skip the test when thp is not available"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lkml.kernel.org/r/20260324013316.2590422-6-chuhu@redhat.com"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Link: https://lkml.kernel.org/r/20260319160656.1480279-5-chuhu@redhat.com"
-      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-      - Link: https://lkml.kernel.org/r/20260324013316.2590422-6-chuhu@redhat.com
-    - a06b1bb3a357 "selftests/mm: transhuge_stress: skip the test when thp not available"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lkml.kernel.org/r/20260324013316.2590422-7-chuhu@redhat.com"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Link: https://lkml.kernel.org/r/20260319160656.1480279-6-chuhu@redhat.com"
-      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-      - Link: https://lkml.kernel.org/r/20260324013316.2590422-7-chuhu@redhat.com
-  - dropped commits
-    - 8e5d7fe14e90 "mm-khugepaged-skip-lazy-free-folios-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/i4uowkt4h2ev47obm5h2vtd4zbk6fyw5g364up7kkjn2vmcikq@auepvqethj5r
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

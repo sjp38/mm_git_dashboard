@@ -29,7 +29,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 528b2c30ed1f "mm: vmalloc: update outdated comment for renamed vread()"
+    - 7bcb0248ec36 "mm: vmalloc: update outdated comment for renamed vread()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260321105820.7134-1-kexinsun@smail.nju.edu.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

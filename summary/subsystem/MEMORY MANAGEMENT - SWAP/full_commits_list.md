@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - f26972b9d39e "mm/swap: fix swap cache memcg accounting"
+    - cc5ac37e8746 "mm/swap: fix swap cache memcg accounting"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
 - mm-stable: 16 total, 2 (15) series, 1 non-series commits
@@ -76,34 +76,34 @@
     - reviewer, reviewer: 1 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-      - e2e8a186fd33 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - cbf718346c9c "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 3cf56d9481f9 "mm: page_io: prevent memory cgroup release in page_io module" (11/33)
+      - bc7c91d0f565 "mm: page_io: prevent memory cgroup release in page_io module" (11/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/7c3708358412fb02c482d0985feb5e9513a863ef.1772711148.git.zhengqi.arch@bytedance.com
-      - 6340f7e516f9 "mm: swap: prevent lruvec release in lru_gen_clear_refs()" (20/33)
+      - 0c5cb0816123 "mm: swap: prevent lruvec release in lru_gen_clear_refs()" (20/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/986cd26227191a48a7c34a2a15812d361f4ebd53.1772711148.git.zhengqi.arch@bytedance.com
-      - cece9e9af84d "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - 96265f701064 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-      - f1ee59493246 "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
+      - 3f68c0900a55 "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
-      - c17a403fe406 "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (28/33)
+      - ceed0f386bb9 "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
-    - e1907885dd45 "mm/swap: strengthen locking assertions and invariants in cluster allocation"
+    - 32d1083a4146 "mm/swap: strengthen locking assertions and invariants in cluster allocation"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260310015657.42395-1-hui.zhu@linux.dev
-    - 49822bc0beb1 "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v4"
+    - 41702988f2d4 "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v4"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260311022241.177801-1-hui.zhu@linux.dev
-    - 0b8be1699f14 "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v5"
+    - 2908471aa869 "mm-swap-strengthen-locking-assertions-and-invariants-in-cluster-allocation-v5"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260312023024.903143-1-hui.zhu@linux.dev
-    - 584d7f59af5c "mm/swapfile: remove duplicate include of swap_table.h"
+    - 2b31535a9f55 "mm/swapfile: remove duplicate include of swap_table.h"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260318043849.399266-1-nichen@iscas.ac.cn
 - mm-new: 4 total, 1 (2) series, 2 non-series commits
@@ -113,18 +113,18 @@
     - reviewer, nobody: 1 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-    - e929dbe4daf6 "mm: update outdated comments for removed scan_swap_map_slots()"
+    - dbb93cd97e03 "mm: update outdated comments for removed scan_swap_map_slots()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260321105814.7053-1-kexinsun@smail.nju.edu.cn
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - c3a9f0db9353 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - c564a45bc283 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-2-youngjun.park@lge.com
-      - 0920af5dacbb "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - f43c7bd95203 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-3-youngjun.park@lge.com
-    - 8d19548f0425 "mm/page_io: fix PSWPIN undercount for large folios in sio_read_complete()"
+    - 22ec586d2b7b "mm/page_io: fix PSWPIN undercount for large folios in sio_read_complete()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260323231315.240137-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

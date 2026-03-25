@@ -1,42 +1,22 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 5 commits
-  - series: 0 (0) -> 1 (5)
-    - no role, reviewer: 0 -> 2 commits
-    - no role, maintainer: 0 -> 3 commits
-  - changed commits
-    - series "arch, mm: consolidate empty_zero_page", v3. (4)
-      - 00bbd7634b1d "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn() (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 88df087cf58a "mm: rename my_zero_pfn() to zero_pfn() (1/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 440d8ea43580 "arch, mm: consolidate empty_zero_page (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - 222db0ef2658 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE() (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
-      - 72144096978d "mm: change the interface of prep_compound_tail() (1/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-- mm-unstable: 10 -> 5 commits
-  - series: 1 (10) -> 0 (5)
+- mm-stable: 5 -> 5 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-unstable: 5 -> 4 commits
+  - series: 0 (5) -> 0 (4)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 3 -> 1 commits
-    - no role, maintainer: 3 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - dropped commits
+    - series "mm: zone lock tracepoint instrumentation", v4. (5)
+      - 90ecede30c2b "mm: convert zone lock users to wrappers (1/5)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
 - mm-new: 3 -> 3 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)

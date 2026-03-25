@@ -32,60 +32,44 @@
       - ed82d11651db "mm/page_alloc: remove pcpu_spin_* wrappers" (2/3)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-3-f7e22e603447@kernel.org
-- mm-unstable: 13 total, 1 (9) series, 4 non-series commits
+- mm-unstable: 8 total, 1 (6) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
     - no role, no role : 2 commits
-    - no role, reviewer: 5 commits
+    - no role, reviewer: 2 commits
     - no role, maintainer: 3 commits
     - reviewer, reviewer: 1 commits
-    - maintainer, nobody: 1 commits
   - full commits list
-      - e2e8a186fd33 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - cbf718346c9c "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - cece9e9af84d "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - 96265f701064 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
     - series "Allow order zero pages in page reporting", v4. (5 commits)
-      - a96d3f19185b "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED" (0/5)
+      - 2b18e50fd7e9 "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-1-yuvraj.sakshith@oss.qualcomm.com
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-2-yuvraj.sakshith@oss.qualcomm.com
-      - ee50099cf5ee "mm-page_reporting-add-page_reporting_order_unspecified-fix" (1/5)
-        - Authored by a maintainer, reviewed by nobody
-    - 72bb167c43a8 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260303113032.3008371-6-yuvraj.sakshith@oss.qualcomm.com
-    - 3a5644b2c6e7 "mm: introduce a new page type for page pool in page type"
+      - dbfd27437293 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED" (4/5)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260303113032.3008371-6-yuvraj.sakshith@oss.qualcomm.com
+    - be1a24dc7b5b "mm: introduce a new page type for page pool in page type"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
-    - 8c05a5e67864 "mm-introduce-a-new-page-type-for-page-pool-in-page-type-v5"
+    - 7dd5a9d1f965 "mm-introduce-a-new-page-type-for-page-pool-in-page-type-v5"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260316223113.20097-1-byungchul@sk.com
-      - 90ecede30c2b "mm: convert zone lock users to wrappers" (1/5)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
-      - 9ffbfd830468 "mm: convert compaction to zone lock wrappers" (2/5)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/3a09e46f52cf9f709b0725bc2b648cc5212843b2.1772206930.git.d@ilvokhin.com
-      - 8d8ad3ac390d "mm: rename zone->lock to zone->_lock" (3/5)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/d61500c5784c64e971f4d328c57639303c475f81.1772206930.git.d@ilvokhin.com
-    - 144a91a549b6 "mm: documentation: standardize on "zone lock" terminology"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
-      - 97a5641826e5 "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
+      - 28b63c61186f "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org
-      - 7838249f2255 "mm: introduce is_pmd_order helper" (1/5)
+      - 2fc26115ed77 "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 83cfc6122540 "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
+    - 8d9b71afd4c4 "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260320173426.1831267-1-fvdl@google.com
       - Link: https://lore.kernel.org/all/20231122013925.1507-1-justinjiang@vivo.com/ [1]

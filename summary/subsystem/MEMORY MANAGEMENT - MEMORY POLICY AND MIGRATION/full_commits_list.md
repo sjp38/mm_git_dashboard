@@ -14,19 +14,19 @@
     - no role, reviewer: 3 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-      - 2be8700a4b79 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+      - 2088cb84015a "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-    - 7e6326af3ce6 "mm/migrate_device: document folio_get requirement before frozen PMD split"
+    - 30b58cd49bd7 "mm/migrate_device: document folio_get requirement before frozen PMD split"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
-    - 99600bbd07c0 "mm: migrate: requeue destination folio on deferred split queue"
+    - ff5a88606c66 "mm: migrate: requeue destination folio on deferred split queue"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev
-      - 7838249f2255 "mm: introduce is_pmd_order helper" (1/5)
+      - 2fc26115ed77 "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
-      - a9ddfa1d97d1 "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
+      - 8c608d5853a2 "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

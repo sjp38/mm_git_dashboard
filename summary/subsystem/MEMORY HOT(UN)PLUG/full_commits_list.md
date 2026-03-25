@@ -9,30 +9,26 @@
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
-- mm-unstable: 4 total, 1 (4) series, 0 non-series commits
+- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
-    - no role, reviewer: 1 commits
   - full commits list
-      - 90ecede30c2b "mm: convert zone lock users to wrappers" (1/5)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
     - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14 commits)
-      - e8231ae335c8 "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
+      - bcb5d031ab7b "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260317165652.99114-2-david@kernel.org
-      - e2ac79d3714f "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
+      - b24c62cd8bb6 "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-5-david@kernel.org
-      - 21a1950eb2ce "mm/sparse: remove sparse_decode_mem_map()" (7/14)
+      - d2f6e455f26f "mm/sparse: remove sparse_decode_mem_map()" (7/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-9-david@kernel.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - b355f82e7349 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
+    - 21332cdce05b "drivers/base/memory: fix stale reference to memory_block_add_nid()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260321105704.6093-1-kexinsun@smail.nju.edu.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

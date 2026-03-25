@@ -1,37 +1,16 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, maintainer: 0 -> 2 commits
-  - changed commits
-    - series "mm/kmemleak: Improve scan_should_stop() implementation". (2)
-      - 92927fb1a91f "mm/kmemleak: remove unreachable return statement in scan_should_stop() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260130093729.2045858-2-zhongqiu.han@oss.qualcomm.com
-      - fd3c8d655818 "mm/kmemleak: use PF_KTHREAD flag to detect kernel threads (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260130093729.2045858-3-zhongqiu.han@oss.qualcomm.com
-- mm-unstable: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, maintainer: 2 -> 0 commits
+- mm-stable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 33c9cb02adb5 "mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - added "Acked-by: SeongJae Park <sj@kernel.org>"
-      - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260323-kmemleak_report-v1-1-ba2cdd9c11b9@debian.org
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

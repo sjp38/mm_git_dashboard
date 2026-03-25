@@ -15,33 +15,33 @@
     - maintainer, no role : 3 commits
   - full commits list
     - series "zram: recompression cleanups and tweaks", v2. (6 commits)
-      - 71da203ac102 "zram: do not permit params change after init" (0/6)
+      - 5681b52e72e4 "zram: do not permit params change after init" (0/6)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-1-senozhatsky@chromium.org
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-2-senozhatsky@chromium.org
-      - 5509d18d303e "zram: do not autocorrect bad recompression parameters" (1/6)
+      - 24741dcbf047 "zram: do not autocorrect bad recompression parameters" (1/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-3-senozhatsky@chromium.org
-      - 1809a705df40 "zram: drop ->num_active_comps" (2/6)
+      - 3a1148a6e904 "zram: drop ->num_active_comps" (2/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-4-senozhatsky@chromium.org
-      - 6bd4901b4a76 "zram: update recompression documentation" (3/6)
+      - 4459d1cb2f17 "zram: update recompression documentation" (3/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-5-senozhatsky@chromium.org
-      - d503c8420a8f "zram: remove chained recompression" (4/6)
+      - 7211ba75e4f4 "zram: remove chained recompression" (4/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-6-senozhatsky@chromium.org
-      - 6bfa3e6675b5 "zram: unify and harden algo/priority params handling" (5/6)
+      - a8d0035332e9 "zram: unify and harden algo/priority params handling" (5/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-7-senozhatsky@chromium.org
-    - 0893de8af443 "zram: optimize LZ4 dictionary compression performance"
+    - f9ec36f1b35a "zram: optimize LZ4 dictionary compression performance"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/698181478c9c4b10aa21b4a847bdc706@honor.com
       - Link: https://github.com/lz4/lz4?tab=readme-ov-file [1]
-    - 84e1c3e4f7f9 "zram: propagate read_from_bdev_async() errors"
+    - 3210b4509c9e "zram: propagate read_from_bdev_async() errors"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260316015354.114465-1-senozhatsky@chromium.org
-    - 05aefaf1313c "zram: change scan_slots to return void"
+    - 19c0473b2ed3 "zram: change scan_slots to return void"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260317032349.753645-1-senozhatsky@chromium.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

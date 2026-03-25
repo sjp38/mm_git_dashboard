@@ -1,36 +1,14 @@
-- baseline: v7.0-rc4-25-gf0caa1d49cc07 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 3 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, nobody: 0 -> 1 commits
-    - no role, maintainer: 0 -> 2 commits
-  - changed commits
-    - series "mm: memfd_luo: preserve file seals", v2. (2)
-      - 0be2dbd3f96c "mm: memfd_luo: preserve file seals (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260216185946.1215770-3-pratyush@kernel.org
-    - series "Make KHO Stateless", v9. (2)
-      - 471965029da6 "kho: adopt radix tree for preserved memory tracking (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - added "[ran.xiaokai@zte.com.cn: fix child node parsing for debugfs in/sub_fdts]"
-        - added "Link: : https://lkml.kernel.org/r/20260309033530.244508-1-ranxiaokai627@163.com"
-        - added "Signed-off-by: Ran Xiaokai <ran.xiaokai@zte.com.cn>"
-        - Link: : https://lkml.kernel.org/r/20260309033530.244508-1-ranxiaokai627@163.com
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
-      - e3fa354c6d4c "kho: remove finalize state and clients (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-- mm-unstable: 3 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
+- mm-stable: 3 -> 3 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 5 -> 5 commits (no change)
   - series: 1 (5) -> 1 (5) (no change)
     - no role, no role : 3 -> 3 commits (no change)
