@@ -7,7 +7,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - series "mm: vma flag tweaks". (6)
+      - f6e7d5dac40f "mm: rename VMA flag helpers to be more readable (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

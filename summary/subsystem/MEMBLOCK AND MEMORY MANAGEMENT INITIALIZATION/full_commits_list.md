@@ -20,7 +20,7 @@
       - 222db0ef2658 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-      - 72144096978d "mm: change the interface of prep_compound_tail()" (1/17)
+      - b5e84b870804 "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
 - mm-unstable: 4 total, 0 (4) series, 0 non-series commits
@@ -28,16 +28,16 @@
     - no role, no role : 3 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-      - 1980b83105c9 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (5/14)
+      - 26eb35c8736c "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (5/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-7-david@kernel.org
-      - e4e0560c0414 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (6/14)
+      - 34bb734ce5ad "mm/bootmem_info: avoid using sparse_decode_mem_map()" (6/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-8-david@kernel.org
-      - 069615f27743 "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (9/14)
+      - 018184ad022f "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (9/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-11-david@kernel.org
-      - ad24333f125d "mm: switch deferred split shrinker to list_lru" (6/7)
+      - 4ea77173cf12 "mm: switch deferred split shrinker to list_lru" (6/7)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
 - mm-new: 3 total, 1 (2) series, 1 non-series commits
@@ -45,15 +45,15 @@
     - no role, no role : 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - ebab098b3d34 "mm: mark early-init static variables with __meminitdata"
+    - 607801c4d71c "mm: mark early-init static variables with __meminitdata"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - 7e40e4d34790 "kho: add size parameter to kho_add_subtree()" (0/6)
+      - ed3c793390ef "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - 7cdbbb54ec2a "kho: persist blob size in KHO FDT" (2/6)
+      - dd82f649d9c8 "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

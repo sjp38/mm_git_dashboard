@@ -7,16 +7,10 @@
   - series: 1 (5) -> 1 (5) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-- mm-unstable: 5 -> 4 commits
-  - series: 0 (5) -> 0 (4)
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 0 (4) -> 0 (4) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - dropped commits
-    - series "mm: zone lock tracepoint instrumentation", v4. (5)
-      - 90ecede30c2b "mm: convert zone lock users to wrappers (1/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
 - mm-new: 3 -> 3 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)

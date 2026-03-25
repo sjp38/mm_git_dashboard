@@ -7,25 +7,39 @@
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 48 -> 47 commits
+- mm-unstable: 47 -> 47 commits (no change)
   - series: 4 (46) -> 4 (46) (no change)
-    - no role, nobody: 15 -> 14 commits
-    - no role, no role : 28 -> 28 commits (no change)
+    - no role, nobody: 14 -> 11 commits
+    - no role, no role : 28 -> 31 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
   - changed commits
     - series "mm: vma flag tweaks". (6)
-      - 06e26715844b "tools/testing/vma: add test for vma_flags_test(), vma_desc_test() (5/6)"
+      - f6e7d5dac40f "mm: rename VMA flag helpers to be more readable (0/6)"
         - Authored by no role player, reviewed by no role player
-        - added "[ljs@kernel.org: test_vma_flags_test(): use struct initializer, per David]"
-        - added "Link: : https://lkml.kernel.org/r/f6f396d2-1ba2-426f-b756-d8cc5985cc7c@lucifer.local"
-        - Link: : https://lkml.kernel.org/r/f6f396d2-1ba2-426f-b756-d8cc5985cc7c@lucifer.local
-        - Link: https://lkml.kernel.org/r/376a39eb9e134d2c8ab10e32720dd292970b080a.1772704455.git.ljs@kernel.org
-  - dropped commits
-    - 21a1c0441833 "tools-testing-vma-add-test-for-vma_flags_test-vma_desc_test-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/f6f396d2-1ba2-426f-b756-d8cc5985cc7c@lucifer.local
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
+      - 8d2c5af145a1 "mm: add vma_desc_test_all() and use it (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lkml.kernel.org/r/568c8f8d6a84ff64014f997517cba7a629f7eed6.1772704455.git.ljs@kernel.org
+    - series "mm: expand mmap_prepare functionality and usage", v4. (21)
+      - eeebad5b5a66 "mm: add mmap_action_simple_ioremap() (11/21)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lkml.kernel.org/r/a08ef1c4542202684da63bb37f459d5dbbeddd91.1774045440.git.ljs@kernel.org
+      - c1baaeee8fba "mm: allow handling of stacked mmap_prepare hooks in more drivers (17/21)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lkml.kernel.org/r/24aac3019dd34740e788d169fccbe3c62781e648.1774045440.git.ljs@kernel.org
 - mm-new: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - reviewer, no role : 2 -> 2 commits (no change)

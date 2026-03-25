@@ -10,7 +10,14 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - e185b69e9414 "mm/zsmalloc: copy KMSAN metadata in zs_page_migrate()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Sergey Senozhatsky <senozhatsky@chromium.org>"
+      - dropped "Cc: Sergey Senozhatsky <senozhatsky@chromium.org>"
+      - Link: https://lkml.kernel.org/r/20260321132912.93434-1-syoshida@redhat.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

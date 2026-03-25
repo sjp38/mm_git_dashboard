@@ -8,10 +8,17 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-unstable: 17 -> 17 commits (no change)
   - series: 1 (16) -> 1 (16) (no change)
-    - no role, nobody: 12 -> 12 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+    - no role, nobody: 12 -> 11 commits
+    - no role, no role : 3 -> 4 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - a0a5e90b49f0 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: SeongJae Park <sj@kernel.org>"
+      - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

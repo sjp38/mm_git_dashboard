@@ -5,27 +5,9 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 2 commits
-  - series: 0 (3) -> 0 (2)
-    - no role, nobody: 1 -> 0 commits
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm: cleanups around unmapping / zapping". (16)
-      - 6e5a22355c85 "mm/memory: remove "zap_details" parameter from zap_page_range_single() (1/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "[david@kernel.org: format on a single line]"
-        - added "Link: : https://lkml.kernel.org/r/8a27e9ac-2025-4724-a46d-0a7c90894ba7@kernel.org"
-        - Link: : https://lkml.kernel.org/r/8a27e9ac-2025-4724-a46d-0a7c90894ba7@kernel.org
-        - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
-      - 6ea603f2e94d "mm: rename zap_page_range_single() to zap_vma_range() (13/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "[akpm@linux-foundation.org: fix rustfmtcheck]"
-        - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
-  - dropped commits
-    - series "mm: cleanups around unmapping / zapping". (16)
-      - aedc4f2831fe "fixup: mm/memory: remove zap_details parameter from zap_page_range_single() (2/16)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/8a27e9ac-2025-4724-a46d-0a7c90894ba7@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

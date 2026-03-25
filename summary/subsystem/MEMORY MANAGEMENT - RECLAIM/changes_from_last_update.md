@@ -9,33 +9,15 @@
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 20 -> 18 commits
-  - series: 0 (16) -> 0 (15)
+- mm-unstable: 18 -> 18 commits (no change)
+  - series: 0 (15) -> 0 (15) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 4 -> 3 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 40d3d712f102 "mm: vmscan: prepare for reparenting MGLRU folios (25/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "[zhengqi.arch@bytedance.com: use list_splice_tail_init() to reparent child folios]"
-        - added "Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev"
-        - Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
-        - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-  - dropped commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 70863fbcf89d "fix: mm: vmscan: prepare for reparenting MGLRU folios (26/33)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
-    - series "mm: zone lock tracepoint instrumentation", v4. (5)
-      - 90ecede30c2b "mm: convert zone lock users to wrappers (1/5)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/d26a43ebed2f0f1edb9cfe4fbed16dd31c7a069c.1772206930.git.d@ilvokhin.com
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)

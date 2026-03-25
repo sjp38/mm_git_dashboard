@@ -8,30 +8,14 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-unstable: 39 -> 38 commits
-  - series: 2 (19) -> 2 (20)
-    - no role, nobody: 10 -> 8 commits
+- mm-unstable: 38 -> 38 commits (no change)
+  - series: 2 (20) -> 2 (20) (no change)
+    - no role, nobody: 8 -> 8 commits (no change)
     - no role, no role : 14 -> 14 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 4 -> 5 commits
+    - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-  - new commits
-    - series "selftests/mm: fix failures and robustness improvements", v2. (13)
-      - 492941282ad9 "selftests-mm-skip-uffd-wp-mremap-if-uffd-write-protect-is-unsupported-fix (8/13)"
-        - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - 65696bf65d5a "selftests/mm: fix soft-dirty kselftest supported check"
-      - Authored by no role player, reviewed by nobody
-      - dropped "Cc: "Liam R. Howlett" <Liam.Howlett@oracle.com>"
-      - Link: https://lkml.kernel.org/r/20260320184010.759461-2-audra@redhat.com
-  - dropped commits
-    - f677274b8931 "mm: fix remaining zone->lock references"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/aabvc4Xhc9qBfaG7@shell.ilvokhin.com
-    - 144a91a549b6 "mm: documentation: standardize on "zone lock" terminology"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/aanSnywUXTVPaYUj@shell.ilvokhin.com
 - mm-new: 3 -> 3 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)

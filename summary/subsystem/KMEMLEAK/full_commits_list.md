@@ -6,10 +6,10 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm/kmemleak: Improve scan_should_stop() implementation". (2 commits)
-      - 92927fb1a91f "mm/kmemleak: remove unreachable return statement in scan_should_stop()" (0/2)
+      - 1e76e8ebab95 "mm/kmemleak: remove unreachable return statement in scan_should_stop()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260130093729.2045858-2-zhongqiu.han@oss.qualcomm.com
-      - fd3c8d655818 "mm/kmemleak: use PF_KTHREAD flag to detect kernel threads" (1/2)
+      - 31a49d88e01b "mm/kmemleak: use PF_KTHREAD flag to detect kernel threads" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260130093729.2045858-3-zhongqiu.han@oss.qualcomm.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
@@ -17,7 +17,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 8adbaf27f72c "mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option"
+    - de59e6c0a85f "mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260323-kmemleak_report-v1-1-ba2cdd9c11b9@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -6,17 +6,17 @@
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 85b8cf501628 "mm/kasan: fix double free for kasan pXds"
+    - 396a5a5ba41a "mm/kasan: fix double free for kasan pXds"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/2f9135c7866c6e0d06e960993b8a5674a9ebc7ec.1771938394.git.ritesh.list@gmail.com
-    - e393ce79b3cf "kasan: docs: SLUB is the only remaining slab implementation"
+    - a144a10e4f41 "kasan: docs: SLUB is the only remaining slab implementation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260303120416.62580-1-david@kernel.org
 - mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - maintainer, nobody: 1 commits
   - full commits list
-    - 913c3bc72623 "kasan: fix bug type classification for SW_TAGS mode"
+    - 3583111c78a9 "kasan: fix bug type classification for SW_TAGS mode"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260305185659.20807-1-ryabinin.a.a@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

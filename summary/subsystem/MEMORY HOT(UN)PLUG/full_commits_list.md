@@ -14,21 +14,21 @@
     - no role, no role : 3 commits
   - full commits list
     - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14 commits)
-      - bcb5d031ab7b "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
+      - ba3456f9f48a "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260317165652.99114-2-david@kernel.org
-      - b24c62cd8bb6 "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
+      - 7a26d32a7c81 "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-5-david@kernel.org
-      - d2f6e455f26f "mm/sparse: remove sparse_decode_mem_map()" (7/14)
+      - a3aa60c196f1 "mm/sparse: remove sparse_decode_mem_map()" (7/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317165652.99114-9-david@kernel.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 21332cdce05b "drivers/base/memory: fix stale reference to memory_block_add_nid()"
+    - 28a63ab77222 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260321105704.6093-1-kexinsun@smail.nju.edu.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
