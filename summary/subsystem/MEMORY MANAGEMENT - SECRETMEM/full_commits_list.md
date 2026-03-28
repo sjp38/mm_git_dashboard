@@ -1,14 +1,14 @@
-- baseline: v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 1 total, 1 (1) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
   - full commits list
     - series "mm: vma flag tweaks". (6 commits)
-      - f6e7d5dac40f "mm: rename VMA flag helpers to be more readable" (0/6)
-        - Authored by no role player, reviewed by no role player
+      - c736e63ff4c5 "mm: rename VMA flag helpers to be more readable" (0/6)
+        - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

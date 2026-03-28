@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 1 total, 0 (0) series, 1 non-series commits
@@ -9,27 +9,28 @@
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
-- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 3 commits
-  - full commits list
-    - series "mm: memory hot(un)plug and SPARSEMEM cleanups". (14 commits)
-      - ba3456f9f48a "mm/memory_hotplug: remove for_each_valid_pfn() usage" (0/14)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260317165652.99114-1-david@kernel.org
-        - Link: https://lkml.kernel.org/r/20260317165652.99114-2-david@kernel.org
-      - 7a26d32a7c81 "mm/memory_hotplug: simplify check_pfn_span()" (3/14)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260317165652.99114-5-david@kernel.org
-      - a3aa60c196f1 "mm/sparse: remove sparse_decode_mem_map()" (7/14)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260317165652.99114-9-david@kernel.org
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-unstable: 5 total, 1 (4) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, no role : 4 commits
   - full commits list
-    - 28a63ab77222 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
+    - series "mm: memory hot(un)plug and SPARSEMEM cleanups", v2. (15 commits)
+      - 84dfac107c5f "mm/memory_hotplug: fix possible race in scan_movable_pages()" (0/15)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-0-096addc8800d@kernel.org
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-1-096addc8800d@kernel.org
+      - 96805483796c "mm/memory_hotplug: remove for_each_valid_pfn() usage" (1/15)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-2-096addc8800d@kernel.org
+      - 8ec28629ac39 "mm/memory_hotplug: simplify check_pfn_span()" (4/15)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-5-096addc8800d@kernel.org
+      - 56351c596da0 "mm/sparse: remove sparse_decode_mem_map()" (8/15)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-9-096addc8800d@kernel.org
+    - 183fad046c37 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260321105704.6093-1-kexinsun@smail.nju.edu.cn
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

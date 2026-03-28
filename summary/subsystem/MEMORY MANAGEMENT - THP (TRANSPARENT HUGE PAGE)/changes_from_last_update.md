@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -16,6 +16,52 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: khugepaged cleanups and mTHP prerequisites", v4. (5)
+      - 68d93c00474f "mm: introduce is_pmd_order helper (1/5)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com"
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com
+      - cf9433a7dee5 "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1 (2/5)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260325114022.444081-4-npache@redhat.com"
+        - added "Suggested-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - added "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - dropped "Link: https://lkml.kernel.org/r/20260311211315.450947-4-npache@redhat.com"
+        - Link: https://lkml.kernel.org/r/20260325114022.444081-4-npache@redhat.com
+      - 30d4fa4a7c3a "mm/khugepaged: rename hpage_collapse_* to collapse_* (3/5)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260325114022.444081-5-npache@redhat.com"
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260311211315.450947-5-npache@redhat.com"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260325114022.444081-5-npache@redhat.com
+      - 1098bfa5f2b9 "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd() (4/5)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260325114022.444081-6-npache@redhat.com"
+        - added "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - dropped "Link: https://lkml.kernel.org/r/20260311211315.450947-6-npache@redhat.com"
+        - Link: https://lkml.kernel.org/r/20260325114022.444081-6-npache@redhat.com
+    - series "selftests/mm: fix failures and robustness improvements", v2. (13)
+      - 1bf9f105a2e1 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test (3/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/94c18dd26cf88f10b4b496cb3de08d81439a8909.1773305677.git.sayalip@linux.ibm.com
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - 636882288084 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
+      - c4128133fedc "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}() (16/33)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -43,7 +43,7 @@ Cc: "Darrick J. Wong" <djwong@kernel.org>
 Cc: Dave Chinner <dchinner@redhat.com>
 Cc: David Howells <dhowells@redhat.com>
 Cc: Hannes Reinecke <hare@suse.de>
-Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>
+Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>
 Cc: Luis Chamberalin <mcgrof@kernel.org>
 Cc: Matthew Wilcox (Oracle) <willy@infradead.org>
 Cc: Pankaj Raghav <p.raghav@samsung.com>
@@ -54,7 +54,7 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
  1 file changed, 8 insertions(+), 3 deletions(-)
 
 diff --git a/mm/filemap.c b/mm/filemap.c
-index 406cef06b684a..3c1e785542dde 100644
+index 406cef06b684..3c1e785542dd 100644
 --- a/mm/filemap.c
 +++ b/mm/filemap.c
 @@ -3883,14 +3883,19 @@ vm_fault_t filemap_map_pages(struct vm_fault *vmf,

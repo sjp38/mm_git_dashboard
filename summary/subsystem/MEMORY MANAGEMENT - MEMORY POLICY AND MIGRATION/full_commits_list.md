@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 1 total, 0 (1) series, 0 non-series commits
@@ -14,21 +14,21 @@
     - no role, reviewer: 3 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-      - 81fa6ccca375 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-    - bf04a66f2f5e "mm/migrate_device: document folio_get requirement before frozen PMD split"
+    - 98a36f5681d8 "mm/migrate_device: document folio_get requirement before frozen PMD split"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
-    - 8f51bc4ae912 "mm: migrate: requeue destination folio on deferred split queue"
+    - eb66e15c9488 "mm: migrate: requeue destination folio on deferred split queue"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev
-      - dfe370b3d803 "mm: introduce is_pmd_order helper" (1/5)
+      - 68d93c00474f "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
-      - 3c145d74d314 "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
+        - Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com
+      - 9a3201633963 "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
+      - 696ce44117df "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

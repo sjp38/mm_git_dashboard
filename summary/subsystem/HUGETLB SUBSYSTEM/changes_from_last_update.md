@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -12,22 +12,47 @@
     - no role, maintainer: 7 -> 7 commits (no change)
 - mm-unstable: 9 -> 9 commits (no change)
   - series: 2 (7) -> 2 (7) (no change)
-    - no role, nobody: 5 -> 3 commits
-    - no role, no role : 4 -> 6 commits
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 6 -> 3 commits
+    - no role, reviewer: 0 -> 3 commits
   - changed commits
     - series "mm: vma flag tweaks". (6)
-      - f6e7d5dac40f "mm: rename VMA flag helpers to be more readable (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - c736e63ff4c5 "mm: rename VMA flag helpers to be more readable (0/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
         - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-    - a0a5e90b49f0 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+      - 9bca05782fa2 "mm: reintroduce vma_flags_test() as a singular flag test (3/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
+      - 16cbc2f963b6 "mm: reintroduce vma_desc_test() as a singular flag test (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
+    - 379f4c5b1b57 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
       - Authored by no role player, reviewed by no role player
-      - added "Acked-by: SeongJae Park <sj@kernel.org>"
-      - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - added "Cc: Jane Chu <jane.chu@oracle.com>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
       - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
+    - series "selftests/mm: fix failures and robustness improvements", v2. (13)
+      - 2d8647004666 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes (12/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com
+    - series "mm, kvm: allow uffd support in guest_memfd", v2. (15)
+      - 40882ef6a104 "userfaultfd: introduce vm_uffd_ops (6/15)"
+        - Authored by no role player, reviewed by nobody
+        - added "[rppt@kernel.org: allow registration of WP_ASYNC for any VMA]"
+        - added "Link: : https://lkml.kernel.org/r/abG5HFV8yoEHOFkh@kernel.org"
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: : https://lkml.kernel.org/r/abG5HFV8yoEHOFkh@kernel.org
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

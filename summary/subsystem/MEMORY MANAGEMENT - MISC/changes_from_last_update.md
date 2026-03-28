@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -8,18 +8,117 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-unstable: 38 -> 38 commits (no change)
+- mm-unstable: 38 -> 35 commits
   - series: 2 (20) -> 2 (20) (no change)
-    - no role, nobody: 8 -> 8 commits (no change)
+    - no role, nobody: 8 -> 4 commits
     - no role, no role : 14 -> 14 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+    - no role, maintainer: 3 -> 4 commits
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
+  - changed commits
+    - series "selftests/mm: fix failures and robustness improvements". (13)
+      - 63cc294213fa "selftests/mm: restore default nr_hugepages value during cleanup in charge_reserved_hugetlb.sh (0/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/cover.1773134177.git.sayalip@linux.ibm.com
+        - Link: https://lkml.kernel.org/r/aef8d9c1c6fb2b80af90543be21e15030e720733.1773134177.git.sayalip@linux.ibm.com
+    - 63fa67446618 "Docs/mm/damon: document min_nr_regions constraint and rationale"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260320052428.213230-1-aethernet65535@gmail.com
+      - Link: https://lore.kernel.org/damon/20260319151528.86490-1-sj@kernel.org/T/#t [1]
+    - 16bfb0497c19 "selftests/mm: add folio_split() and filemap_get_entry() race test"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260323163717.184107-1-ziy@nvidia.com"
+      - added "Co-developed-by: Bas van Dijk <bas@dfinity.org>"
+      - added "Co-developed-by: Adam Bratschi-Kaye <adam.bratschikaye@dfinity.org>"
+      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - added "Cc: Michal Hocko <mhocko@suse.com>"
+      - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+      - added "Cc: Shuah Khan <shuah@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260319190409.294523-1-ziy@nvidia.com"
+      - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
+      - Link: https://github.com/dfinity/thp-madv-remove-test [2]
+      - Link: https://lkml.kernel.org/r/20260323163717.184107-1-ziy@nvidia.com
+    - series "selftests/mm: fix failures and robustness improvements", v2. (13)
+      - 993c6a1eefc4 "selftests/mm: fix hugetlb pathname construction in charge_reserved_hugetlb.sh (0/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/cover.1773305677.git.sayalip@linux.ibm.com
+        - Link: https://lkml.kernel.org/r/3b34767f2cb705c8de0f085a85bd21bdf6998ca6.1773305677.git.sayalip@linux.ibm.com
+      - 8d5c19842ded "selftests/mm: fix hugetlb pathname construction in hugetlb_reparenting_test.sh (1/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/3ab5781190ea0a6bffda2683b2ca221e0c7f6280.1773305677.git.sayalip@linux.ibm.com
+      - 32eaabd4393c "selftest/mm: fix cgroup task placement and tolerance in hugetlb_reparenting_test.sh (2/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/3b5b4275fed509e13567bba7471a9130bbfa6841.1773305677.git.sayalip@linux.ibm.com
+      - 1bf9f105a2e1 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test (3/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/94c18dd26cf88f10b4b496cb3de08d81439a8909.1773305677.git.sayalip@linux.ibm.com
+      - e2c91fdfc172 "selftest/mm: adjust hugepage-mremap test size for large huge pages (4/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/0ea624c4bf022425b50c50cf8f5e3023106db9c1.1773305677.git.sayalip@linux.ibm.com
+      - 41d99c42c28d "selftest/mm: register existing mapping with userfaultfd in hugepage-mremap (5/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/da7ec96ee85ccfdb9bec704c6dd534b419212f94.1773305677.git.sayalip@linux.ibm.com
+      - 81c17a480614 "selftests/mm: ensure destination is hugetlb-backed in hugepage-mremap (6/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/a9e12dcb25b9be4f146063669b1eb3ff9b776c23.1773305677.git.sayalip@linux.ibm.com
+      - 83ca01ff9467 "selftests/mm: skip uffd-wp-mremap if UFFD write-protect is unsupported (7/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/ed23ff57a80881c9d087d22709862af40addf49b.1773305678.git.sayalip@linux.ibm.com
+      - fb98377c439d "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero (9/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/2516cad1d9dcbe613619a1006aed1991302c9bee.1773305678.git.sayalip@linux.ibm.com
+      - d0db138f4638 "selftests/mm: fix double increment in linked list cleanup in compaction_test (10/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/27390ade4251d1f7f6b846bd5836fa79dbf285df.1773305678.git.sayalip@linux.ibm.com
+      - 8848a6629fe3 "selftests/mm: move hwpoison setup into run_test() and silence modprobe output for memory-failure category (11/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
+        - Link: https://lkml.kernel.org/r/35a44ccc4d1587255e8f920b22e983f74c024f2e.1773305678.git.sayalip@linux.ibm.com
+  - dropped commits
+    - 621ae83221ea "selftests/mm: fix soft-dirty kselftest supported check"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260320184010.759461-2-audra@redhat.com
+    - 9e528bd25283 "selftests-mm-add-folio_split-and-filemap_get_entry-race-test-v4"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
+      - Link: https://github.com/dfinity/thp-madv-remove-test [2]
+      - Link: https://lkml.kernel.org/r/20260320142219.375118-1-ziy@nvidia.com
+    - e0cf4a97af1a "selftests-mm-add-folio_split-and-filemap_get_entry-race-test-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/D60C0C65-11E3-4060-9295-B67F90E9D774@nvidia.com
+    - 7aeb1ad8a7a7 "selftests/mm: fix sashiko complains on folio_split_race_test"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/B0985749-939D-4256-B9B9-C54C0734CF72@nvidia.com
+- mm-new: 3 -> 2 commits
   - series: 0 (2) -> 0 (2) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

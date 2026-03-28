@@ -27,7 +27,7 @@ Cc: Johannes Weiner <hannes@cmpxchg.org>
 Cc: Kamalesh Babulal <kamalesh.babulal@oracle.com>
 Cc: Lance Yang <lance.yang@linux.dev>
 Cc: Liam Howlett <Liam.Howlett@oracle.com>
-Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>
+Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>
 Cc: Michal Hocko <mhocko@suse.com>
 Cc: Michal Koutný <mkoutny@suse.com>
 Cc: Mike Rapoport <rppt@kernel.org>
@@ -48,7 +48,7 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
  1 file changed, 31 insertions(+), 19 deletions(-)
 
 diff --git a/mm/memcontrol.c b/mm/memcontrol.c
-index c7ce92a31b1c4..3277e8021b1f0 100644
+index 4d9672831b8e..b5eba95c3a21 100644
 --- a/mm/memcontrol.c
 +++ b/mm/memcontrol.c
 @@ -717,21 +717,12 @@ static int memcg_state_val_in_pages(int idx, int val)

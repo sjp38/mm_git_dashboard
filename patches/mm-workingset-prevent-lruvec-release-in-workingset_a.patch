@@ -33,7 +33,7 @@ Cc: Imran Khan <imran.f.khan@oracle.com>
 Cc: Kamalesh Babulal <kamalesh.babulal@oracle.com>
 Cc: Lance Yang <lance.yang@linux.dev>
 Cc: Liam Howlett <Liam.Howlett@oracle.com>
-Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>
+Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>
 Cc: Michal Hocko <mhocko@suse.com>
 Cc: Michal Koutný <mkoutny@suse.com>
 Cc: Mike Rapoport <rppt@kernel.org>
@@ -53,7 +53,7 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
  1 file changed, 4 insertions(+), 1 deletion(-)
 
 diff --git a/mm/workingset.c b/mm/workingset.c
-index 2de2a355f0f86..95d722a452e1c 100644
+index 2de2a355f0f8..95d722a452e1 100644
 --- a/mm/workingset.c
 +++ b/mm/workingset.c
 @@ -603,8 +603,11 @@ void workingset_activation(struct folio *folio)

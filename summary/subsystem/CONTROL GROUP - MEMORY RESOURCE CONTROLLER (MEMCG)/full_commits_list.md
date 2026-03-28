@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 5 total, 1 (2) series, 3 non-series commits
@@ -25,101 +25,97 @@
       - 49dbb708af10 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-- mm-unstable: 23 total, 2 (22) series, 1 non-series commits
+- mm-unstable: 25 total, 2 (22) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, maintainer: 16 commits
+    - no role, nobody: 3 commits
+    - no role, maintainer: 17 commits
     - reviewer, maintainer: 1 commits
     - maintainer, maintainer: 4 commits
   - full commits list
+    - series "memcg: obj stock and slab stat caching cleanups". (5 commits)
+      - c91fb37e8376 "mm: memcg: factor out trylock_stock() and unlock_stock()" (0/5)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260302195305.620713-1-hannes@cmpxchg.org
+        - Link: https://lkml.kernel.org/r/20260302195305.620713-2-hannes@cmpxchg.org
+      - 6547805d38e4 "mm: memcg: simplify objcg charge size and stock remainder math" (1/5)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260302195305.620713-3-hannes@cmpxchg.org
+      - c0827721de81 "mm: memcontrol: split out __obj_cgroup_charge()" (2/5)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260302195305.620713-4-hannes@cmpxchg.org
+      - aaf4e169cef0 "mm: memcontrol: use __account_obj_stock() in the !locked path" (3/5)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260302195305.620713-5-hannes@cmpxchg.org
+      - 78dd4804419d "mm: memcg: separate slab stat accounting from objcg charge cache" (4/5)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260302195305.620713-6-hannes@cmpxchg.org
+    - c47262183bbb "selftest: memcg: skip memcg_sock test if address family not supported"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260311200526.885899-1-longman@redhat.com
+    - 26d7dbab3898 "mm/memcontrol: batch memcg charging in __memcg_slab_post_alloc_hook"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260320020745.833792-1-hui.zhu@linux.dev
+    - dd623f920e4e "mm/memcontrol: fix reclaim_options leak in try_charge_memcg()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260321033500.2558070-1-bingjiao@google.com
+      - 2d8647004666 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes" (12/13)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com
     - series "Eliminate Dying Memory Cgroup", v6. (33 commits)
-      - fb6560bf705c "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
+      - 19b7eac42316 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772711148.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
         - Link: https://lwn.net/Articles/895431/ [2]
         - Link: https://github.com/systemd/systemd/pull/36827 [3]
-      - 2a0ace47d124 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 636882288084 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 93101ccced5b "mm: memcontrol: allocate object cgroup for non-kmem case" (5/33)
+      - 1f8880810ccd "mm: memcontrol: allocate object cgroup for non-kmem case" (5/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/b77274aa8e3f37c419bedf4782943fd5885dda82.1772711148.git.zhengqi.arch@bytedance.com
-      - 0d32c74e7d07 "mm: memcontrol: return root object cgroup for root memory cgroup" (6/33)
+      - 9cb1ae5ab319 "mm: memcontrol: return root object cgroup for root memory cgroup" (6/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/e9c3f40ba7681d9753372d4ee2ac7a0216848b95.1772711148.git.zhengqi.arch@bytedance.com
-      - b561fe5a8b81 "mm: memcontrol: prevent memory cgroup release in get_mem_cgroup_from_folio()" (7/33)
+      - 14209f7a2037 "mm: memcontrol: prevent memory cgroup release in get_mem_cgroup_from_folio()" (7/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/a5a64c6173a566bd21534606aeaaa9220cb1366d.1772711148.git.zhengqi.arch@bytedance.com
-      - 100b4d16f913 "writeback: prevent memory cgroup release in writeback module" (9/33)
+      - 25eaf6cd3d31 "writeback: prevent memory cgroup release in writeback module" (9/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/645f99bc344575417f67def3744f975596df2793.1772711148.git.zhengqi.arch@bytedance.com
-      - a76d607d8955 "mm: memcontrol: prevent memory cgroup release in count_memcg_folio_events()" (10/33)
+      - 1cccbdc279c8 "mm: memcontrol: prevent memory cgroup release in count_memcg_folio_events()" (10/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/dea6aa0389367f7fd6b715c8837a2cf7506bd889.1772711148.git.zhengqi.arch@bytedance.com
-      - bf5af8991ded "mm: memcontrol: prevent memory cgroup release in mem_cgroup_swap_full()" (14/33)
+      - 0778d0d77201 "mm: memcontrol: prevent memory cgroup release in mem_cgroup_swap_full()" (14/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/21d1abab7342615745ea4c18a88237335ab44d13.1772711148.git.zhengqi.arch@bytedance.com
-      - 646eedca8536 "mm: do not open-code lruvec lock" (22/33)
+      - 991fbb13bad9 "mm: do not open-code lruvec lock" (22/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772711148.git.zhengqi.arch@bytedance.com
-      - b2a00acccf10 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - 826aa99aa902 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-      - af4a8c60e475 "mm: memcontrol: refactor memcg_reparent_objcgs()" (26/33)
+      - 6e6d55249e1b "mm: memcontrol: refactor memcg_reparent_objcgs()" (26/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/2e5696db1993e593a51004c1dacedbc261689629.1772711148.git.zhengqi.arch@bytedance.com
-      - 16461deb3f54 "mm: memcontrol: refactor mod_memcg_state() and mod_memcg_lruvec_state()" (28/33)
+      - e0e421d1880d "mm: memcontrol: refactor mod_memcg_state() and mod_memcg_lruvec_state()" (28/33)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/7f8bd3aacec2270b9453428fc8585cca9f10751e.1772711148.git.zhengqi.arch@bytedance.com
-      - bfeb66833b59 "mm: memcontrol: prepare for reparenting non-hierarchical stats" (29/33)
+      - a04d9b5097dd "mm: memcontrol: prepare for reparenting non-hierarchical stats" (29/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/e862995c45a7101a541284b6ebee5e5c32c89066.1772711148.git.zhengqi.arch@bytedance.com
-      - dfebed6cb9a3 "mm: memcontrol: convert objcg to be per-memcg per-node type" (30/33)
+      - d2ab06ccf306 "mm: memcontrol: convert objcg to be per-memcg per-node type" (30/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: : https://lkml.kernel.org/r/20260309112939.31937-1-qi.zheng@linux.dev
         - Link: : https://lkml.kernel.org/r/20260322193631.45457-1-devnexen@gmail.com
         - Link: : https://lkml.kernel.org/r/20260323063007.7783-1-devnexen@gmail.com
         - Link: https://lkml.kernel.org/r/56c04b1c5d54f75ccdc12896df6c1ca35403ecc3.1772711148.git.zhengqi.arch@bytedance.com
-      - 39befaf6673c "mm: memcontrol: eliminate the problem of dying memory cgroup for LRU folios" (31/33)
+      - fdfbfc3fc2d2 "mm: memcontrol: eliminate the problem of dying memory cgroup for LRU folios" (31/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/80cb7af198dc6f2173fe616d1207a4c315ece141.1772711148.git.zhengqi.arch@bytedance.com
-    - series "memcg: obj stock and slab stat caching cleanups". (5 commits)
-      - bc0ddd19947b "mm: memcg: factor out trylock_stock() and unlock_stock()" (0/5)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-1-hannes@cmpxchg.org
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-2-hannes@cmpxchg.org
-      - a7fbd62522b1 "mm: memcg: simplify objcg charge size and stock remainder math" (1/5)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-3-hannes@cmpxchg.org
-      - 8095a7495fd8 "mm: memcontrol: split out __obj_cgroup_charge()" (2/5)
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-4-hannes@cmpxchg.org
-      - 2c3b65345ce1 "mm: memcontrol: use __account_obj_stock() in the !locked path" (3/5)
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-5-hannes@cmpxchg.org
-      - 7778623ac200 "mm: memcg: separate slab stat accounting from objcg charge cache" (4/5)
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-6-hannes@cmpxchg.org
-      - 02549263c8ba "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes" (12/13)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com
-    - 571879a34920 "selftest: memcg: skip memcg_sock test if address family not supported"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260311200526.885899-1-longman@redhat.com
-      - 4ea77173cf12 "mm: switch deferred split shrinker to list_lru" (6/7)
+      - b0f512f6e36c "mm: switch deferred split shrinker to list_lru" (6/7)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 7fbd1444033e "mm/memcontrol: batch memcg charging in __memcg_slab_post_alloc_hook"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260320020745.833792-1-hui.zhu@linux.dev
-    - 306d43a51f04 "mm/memcontrol: fix reclaim_options leak in try_charge_memcg()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260321033500.2558070-1-bingjiao@google.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

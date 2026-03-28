@@ -1,10 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 0e42997c6c11 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - 12bd47531927 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 11 total, 0 (9) series, 2 non-series commits
@@ -52,39 +52,41 @@
 - mm-unstable: 9 total, 2 (7) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 3 commits
-    - no role, no role : 6 commits
+    - no role, no role : 3 commits
+    - no role, reviewer: 3 commits
   - full commits list
     - series "mm: vma flag tweaks". (6 commits)
-      - f6e7d5dac40f "mm: rename VMA flag helpers to be more readable" (0/6)
-        - Authored by no role player, reviewed by no role player
+      - c736e63ff4c5 "mm: rename VMA flag helpers to be more readable" (0/6)
+        - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - db45dd7a899c "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
-        - Authored by no role player, reviewed by no role player
+      - 9bca05782fa2 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
+        - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - bb5d75b3a947 "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
-        - Authored by no role player, reviewed by no role player
+      - 16cbc2f963b6 "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
+        - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
-      - 4f754b57fcd0 "userfaultfd: introduce vm_uffd_ops" (8/15)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
     - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4 commits)
-      - 67863a980741 "mm: move vma_kernel_pagesize() from hugetlb to mm.h" (0/4)
+      - a5204c1d3a17 "mm: move vma_kernel_pagesize() from hugetlb to mm.h" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260309151901.123947-2-david@kernel.org
-      - 12873809cbe3 "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
+      - 4f378628efee "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
-      - 02549263c8ba "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes" (12/13)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com
-    - a0a5e90b49f0 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+    - 379f4c5b1b57 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
-    - 506a9b65ea5c "mm/hugetlb: fix memory offline failure due to hwpoisoned file hugetlb"
+    - 3ef21f595917 "mm/hugetlb: fix memory offline failure due to hwpoisoned file hugetlb"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260318020711.3596947-1-tujinjiang@huawei.com
+      - 2d8647004666 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes" (12/13)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com
+      - 40882ef6a104 "userfaultfd: introduce vm_uffd_ops" (6/15)
+        - Authored by no role player, reviewed by nobody
+        - Link: : https://lkml.kernel.org/r/abG5HFV8yoEHOFkh@kernel.org
+        - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

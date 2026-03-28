@@ -30,7 +30,7 @@ Cc: David Hildenbrand <david@kernel.org>
 Cc: Dev Jain <dev.jain@arm.com>
 Cc: Johannes Weiner <hannes@cmpxchg.org>
 Cc: Liam Howlett <liam.howlett@oracle.com>
-Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>
+Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>
 Cc: Miaohe Lin <linmiaohe@huawei.com>
 Cc: Michal Hocko <mhocko@kernel.org>
 Cc: "Michal Koutný" <mkoutny@suse.com>
@@ -47,7 +47,7 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
  1 file changed, 12 insertions(+), 2 deletions(-)
 
 diff --git a/tools/testing/selftests/mm/hugetlb_reparenting_test.sh b/tools/testing/selftests/mm/hugetlb_reparenting_test.sh
-index 0dd31892ff679..073a71fa36b4f 100755
+index 0dd31892ff67..073a71fa36b4 100755
 --- a/tools/testing/selftests/mm/hugetlb_reparenting_test.sh
 +++ b/tools/testing/selftests/mm/hugetlb_reparenting_test.sh
 @@ -46,6 +46,13 @@ function get_machine_hugepage_size() {

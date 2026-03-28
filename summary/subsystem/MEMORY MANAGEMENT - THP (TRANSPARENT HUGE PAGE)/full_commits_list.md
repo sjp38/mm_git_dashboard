@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 7 total, 1 (4) series, 3 non-series commits
@@ -40,99 +40,99 @@
     - reviewer, reviewer: 4 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-      - 2a0ace47d124 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 9d3f10bb2daf "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
-      - 854cb411f011 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (3/13)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/94c18dd26cf88f10b4b496cb3de08d81439a8909.1773305677.git.sayalip@linux.ibm.com
     - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4 commits)
-      - d507373fd0fe "mm: khugepaged: export set_recommended_min_free_kbytes()" (0/4)
+      - 09da36b46b63 "mm: khugepaged: export set_recommended_min_free_kbytes()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-0-31eb98fa5a8b@debian.org
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-1-31eb98fa5a8b@debian.org
-      - 615a7f25ef8d "mm: huge_memory: refactor anon_enabled_store() with set_anon_enabled_mode()" (1/4)
+      - 2fa56449c2f5 "mm: huge_memory: refactor anon_enabled_store() with set_anon_enabled_mode()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-2-31eb98fa5a8b@debian.org
-      - 20b943e2f1a6 "mm: huge_memory: refactor enabled_store() with set_global_enabled_mode()" (2/4)
+      - 2cdf98ed3860 "mm: huge_memory: refactor enabled_store() with set_global_enabled_mode()" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-3-31eb98fa5a8b@debian.org
-      - 7421fcab81d7 "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
+      - ffe9d3cd273e "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org
-      - dfe370b3d803 "mm: introduce is_pmd_order helper" (1/5)
+      - 68d93c00474f "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com
-      - 991450204693 "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1" (2/5)
+        - Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com
+      - cf9433a7dee5 "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1" (2/5)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260311211315.450947-4-npache@redhat.com
-      - c5fb0bea5c8c "mm/khugepaged: rename hpage_collapse_* to collapse_*" (3/5)
+        - Link: https://lkml.kernel.org/r/20260325114022.444081-4-npache@redhat.com
+      - 30d4fa4a7c3a "mm/khugepaged: rename hpage_collapse_* to collapse_*" (3/5)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260311211315.450947-5-npache@redhat.com
-      - 51f2f2ba7fb9 "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd()" (4/5)
+        - Link: https://lkml.kernel.org/r/20260325114022.444081-5-npache@redhat.com
+      - 1098bfa5f2b9 "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd()" (4/5)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260311211315.450947-6-npache@redhat.com
-      - 4ea77173cf12 "mm: switch deferred split shrinker to list_lru" (6/7)
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
-    - e6b1926bdaa9 "selftests/mm: move write_file helper to vm_util"
+        - Link: https://lkml.kernel.org/r/20260325114022.444081-6-npache@redhat.com
+    - 69e05c38f42f "selftests/mm: move write_file helper to vm_util"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260324013316.2590422-4-chuhu@redhat.com
-    - 47b8d74ea845 "selftests/mm: split_huge_page_test: skip the test when thp is not available"
+    - e3ba19a8562a "selftests/mm: split_huge_page_test: skip the test when thp is not available"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260324013316.2590422-6-chuhu@redhat.com
-    - e257715ffca8 "selftests/mm: transhuge_stress: skip the test when thp not available"
+    - 102e1b71ebc4 "selftests/mm: transhuge_stress: skip the test when thp not available"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260324013316.2590422-7-chuhu@redhat.com
     - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13 commits)
-      - 4e4ecbfea36c "mm/huge_memory: simplify vma_is_specal_huge()" (0/13)
+      - c0205525dbe5 "mm/huge_memory: simplify vma_is_specal_huge()" (0/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/cover.1774029655.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/d2b65883dc4895f197c4b4a69fbf27a063463412.1774029655.git.ljs@kernel.org
         - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/ [0]
-      - 957338c01824 "mm/huge: avoid big else branch in zap_huge_pmd()" (1/13)
+      - 500f7f2632b5 "mm/huge: avoid big else branch in zap_huge_pmd()" (1/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/6b4d5efdbf5554b8fe788f677d0b50f355eec999.1774029655.git.ljs@kernel.org
-      - 36f674231049 "mm/huge_memory: have zap_huge_pmd return a boolean, add kdoc" (2/13)
+      - 37ffdb44f571 "mm/huge_memory: have zap_huge_pmd return a boolean, add kdoc" (2/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/132274566cd49d2960a2294c36dd2450593dfc55.1774029655.git.ljs@kernel.org
-      - 951a621225d4 "mm/huge_memory: handle buggy PMD entry in zap_huge_pmd()" (3/13)
+      - 1fc1a2517d04 "mm/huge_memory: handle buggy PMD entry in zap_huge_pmd()" (3/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/
         - Link: https://lkml.kernel.org/r/fcf1f6de84a2ace188b6bf103fa15dde695f1ed8.1774029655.git.ljs@kernel.org
-      - 21fe79bdb67d "mm/huge_memory: add a common exit path to zap_huge_pmd()" (4/13)
+      - 324f154ad3c7 "mm/huge_memory: add a common exit path to zap_huge_pmd()" (4/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/6b281d8ed972dff0e89bdcbdd810c96c7ae8c9dc.1774029655.git.ljs@kernel.org
-      - a0597f798761 "mm/huge_memory: remove unnecessary VM_BUG_ON_PAGE()" (5/13)
+      - 9fb63fd4101a "mm/huge_memory: remove unnecessary VM_BUG_ON_PAGE()" (5/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/f3fa8eb4634ccb2e78209f570cc1a769a02ce93e.1774029655.git.ljs@kernel.org
-      - df6b1773161b "mm/huge_memory: deduplicate zap deposited table call" (6/13)
+      - 89d61febc8bd "mm/huge_memory: deduplicate zap deposited table call" (6/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/71f576a1fbcd27a86322d12caa937bcdacf75407.1774029655.git.ljs@kernel.org
-      - bcfbff6326f4 "mm/huge_memory: remove unnecessary sanity checks" (7/13)
+      - 55e8bb3d644e "mm/huge_memory: remove unnecessary sanity checks" (7/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/0c4c5ab247c90f80cf44718e8124b217d6a22544.1774029655.git.ljs@kernel.org
-      - eacd7a190cb1 "mm/huge_memory: use mm instead of tlb->mm" (8/13)
+      - cec1704e9068 "mm/huge_memory: use mm instead of tlb->mm" (8/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/98104cde87e4b2aabeb16f236b8731591594457f.1774029655.git.ljs@kernel.org
-      - cd400155962f "mm/huge_memory: separate out the folio part of zap_huge_pmd()" (9/13)
+      - 88b84f91d6cd "mm/huge_memory: separate out the folio part of zap_huge_pmd()" (9/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/6c4db67952f5529da4db102a6149b9050b5dda4e.1774029655.git.ljs@kernel.org
-      - f9808b53ca35 "mm/huge_memory: add and use normal_or_softleaf_folio_pmd()" (11/13)
+      - 29df27e9105a "mm/huge_memory: add and use normal_or_softleaf_folio_pmd()" (11/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/c2be872d64ef9573b80727d9ab5446cf002f17b5.1774029655.git.ljs@kernel.org
-      - 94da04d510e0 "mm-huge_memory-add-and-use-normal_or_softleaf_folio_pmd-fix" (12/13)
+      - 7b562f2e4091 "mm-huge_memory-add-and-use-normal_or_softleaf_folio_pmd-fix" (12/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/d0cc6161-77a4-42ba-a411-96c23c78df1b@lucifer.local
-    - 24ccaaa83942 "mm/huge_memory: add and use has_deposited_pgtable()"
+    - 643a10f878fe "mm/huge_memory: add and use has_deposited_pgtable()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/f9db59ca90937e39913d50ecb4f662e2bad17bbb.1774029655.git.ljs@kernel.org
-    - cdcd8bf7edfc "mm-huge_memory-add-and-use-has_deposited_pgtable-fix"
+    - 7ef638ad93a9 "mm-huge_memory-add-and-use-has_deposited_pgtable-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/0a917f80-902f-49b0-a75f-1bbaf23d7f94@lucifer.local
+      - 1bf9f105a2e1 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (3/13)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/94c18dd26cf88f10b4b496cb3de08d81439a8909.1773305677.git.sayalip@linux.ibm.com
+      - 636882288084 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
+      - c4128133fedc "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
+      - b0f512f6e36c "mm: switch deferred split shrinker to list_lru" (6/7)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

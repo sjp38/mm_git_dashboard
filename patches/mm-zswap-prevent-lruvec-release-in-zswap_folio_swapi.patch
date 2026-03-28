@@ -33,7 +33,7 @@ Cc: Imran Khan <imran.f.khan@oracle.com>
 Cc: Kamalesh Babulal <kamalesh.babulal@oracle.com>
 Cc: Lance Yang <lance.yang@linux.dev>
 Cc: Liam Howlett <Liam.Howlett@oracle.com>
-Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>
+Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>
 Cc: Michal Hocko <mhocko@suse.com>
 Cc: Michal Koutný <mkoutny@suse.com>
 Cc: Mike Rapoport <rppt@kernel.org>
@@ -52,10 +52,10 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
  1 file changed, 2 insertions(+)
 
 diff --git a/mm/zswap.c b/mm/zswap.c
-index a1c883c68ef6b..4f2e652e8ad32 100644
+index f4d16f763c2c..4b5149173b0e 100644
 --- a/mm/zswap.c
 +++ b/mm/zswap.c
-@@ -664,8 +664,10 @@ void zswap_folio_swapin(struct folio *folio)
+@@ -710,8 +710,10 @@ void zswap_folio_swapin(struct folio *folio)
  	struct lruvec *lruvec;
  
  	if (folio) {

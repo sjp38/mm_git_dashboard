@@ -34,7 +34,7 @@ Cc: Imran Khan <imran.f.khan@oracle.com>
 Cc: Kamalesh Babulal <kamalesh.babulal@oracle.com>
 Cc: Lance Yang <lance.yang@linux.dev>
 Cc: Liam Howlett <Liam.Howlett@oracle.com>
-Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>
+Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>
 Cc: Michal Hocko <mhocko@suse.com>
 Cc: Michal Koutný <mkoutny@suse.com>
 Cc: Mike Rapoport <rppt@kernel.org>
@@ -54,7 +54,7 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
  1 file changed, 2 insertions(+)
 
 diff --git a/mm/migrate.c b/mm/migrate.c
-index 6cc654858da65..27e6103037c29 100644
+index 4241eb6eca00..05cb408846f2 100644
 --- a/mm/migrate.c
 +++ b/mm/migrate.c
 @@ -672,6 +672,7 @@ static int __folio_migrate_mapping(struct address_space *mapping,

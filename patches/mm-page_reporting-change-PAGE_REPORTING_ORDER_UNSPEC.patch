@@ -27,7 +27,7 @@ Cc: Johannes Weiner <hannes@cmpxchg.org>
 Cc: K. Y. Srinivasan <kys@microsoft.com>
 Cc: Liam Howlett <liam.howlett@oracle.com>
 Cc: Long Li <longli@microsoft.com>
-Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>
+Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>
 Cc: Michal Hocko <mhocko@suse.com>
 Cc: Mike Rapoport <rppt@kernel.org>
 Cc: Suren Baghdasaryan <surenb@google.com>
@@ -41,7 +41,7 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/include/linux/page_reporting.h b/include/linux/page_reporting.h
-index d1886c6572859..9d4ca5c218a0f 100644
+index d1886c657285..9d4ca5c218a0 100644
 --- a/include/linux/page_reporting.h
 +++ b/include/linux/page_reporting.h
 @@ -7,7 +7,7 @@

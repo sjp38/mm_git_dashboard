@@ -29,7 +29,7 @@ Acked-by: David Hildenbrand (Arm) <david@kernel.org>
 Cc: Dev Jain <dev.jain@arm.com>
 Cc: Johannes Weiner <hannes@cmpxchg.org>
 Cc: Liam Howlett <liam.howlett@oracle.com>
-Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>
+Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>
 Cc: Miaohe Lin <linmiaohe@huawei.com>
 Cc: Michal Hocko <mhocko@kernel.org>
 Cc: "Michal Koutný" <mkoutny@suse.com>
@@ -46,7 +46,7 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
  1 file changed, 3 deletions(-)
 
 diff --git a/tools/testing/selftests/mm/compaction_test.c b/tools/testing/selftests/mm/compaction_test.c
-index 30209c40b6977..f73930706bd06 100644
+index 30209c40b697..f73930706bd0 100644
 --- a/tools/testing/selftests/mm/compaction_test.c
 +++ b/tools/testing/selftests/mm/compaction_test.c
 @@ -263,9 +263,6 @@ int main(int argc, char **argv)
