@@ -1,124 +1,33 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de877 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 5 -> 5 commits (no change)
   - series: 0 (4) -> 0 (4) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 2 -> 3 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 0 -> 1 commits
-    - maintainer, maintainer: 1 -> 0 commits
-- mm-unstable: 18 -> 19 commits
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 19 -> 19 commits (no change)
   - series: 0 (15) -> 0 (15) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 3 -> 4 commits
-    - no role, reviewer: 3 -> 4 commits
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "support batched checking of the young flag for MGLRU", v3. (6)
-      - 4bdc9caf0463 "mm: rename ptep/pmdp_clear_young_notify() to ptep/pmdp_test_and_clear_young_notify() (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/b3454077ce88745e6f88386b1763721746884565.1772778858.git.baolin.wang@linux.alibaba.com
-      - 474774fcb95c "mm: support batched checking of the young flag for MGLRU (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com
-    - 78e1c771b38c "mm/vmscan: fix unintended mtc->nmask mutation in alloc_demote_folio()"
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "liveupdate: prevent double preservation", v4. (4)
+      - 6ee0bea53436 "mm: vmscan: fix dirty folios throttling on cgroup v1 for MGLRU (3/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/3445af0f09e8ca945492e052e82594f8c4f2e2f6.1774606060.git.baolin.wang@linux.alibaba.com
+    - e4b3c4494ae8 "mm/vmscan: prevent MGLRU reclaim from pinning address space"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - dropped "Reviewed-by: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-      - Link: https://lkml.kernel.org/r/20260303052519.109244-1-bingjiao@google.com
-    - 25f77f52c80a "mm/mglru: fix cgroup OOM during MGLRU state switching"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260319-b4-switch-mglru-v2-v5-1-8898491e5f17@gmail.com
-    - 6623872f89e1 "mm: update outdated comments for removed scan_swap_map_slots()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260321105814.7053-1-kexinsun@smail.nju.edu.cn
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - c042f83c715d "mm: workingset: use folio_lruvec() in workingset_refault() (1/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772711148.git.zhengqi.arch@bytedance.com
-      - 636882288084 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 7ca0e36a53a1 "mm: vmscan: prepare for the refactoring the move_folios_to_lru() (3/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772711148.git.zhengqi.arch@bytedance.com
-      - b18b7e56da12 "mm: vmscan: refactor move_folios_to_lru() (4/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772711148.git.zhengqi.arch@bytedance.com
-      - 75d7d20078cc "mm: mglru: prevent memory cgroup release in mglru (13/33)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/9d887662a9d39c425742dd8468e3123316bccfe3.1772711148.git.zhengqi.arch@bytedance.com
-      - 30af7b4d258a "mm: workingset: prevent memory cgroup release in lru_gen_eviction() (15/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772711148.git.zhengqi.arch@bytedance.com
-      - 421f1bd5c7e8 "mm: workingset: prevent lruvec release in workingset_refault() (18/33)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772711148.git.zhengqi.arch@bytedance.com
-      - bffdec87b212 "mm: workingset: prevent lruvec release in workingset_activation() (21/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/c6130476affbba0a7d309a887c3df11e0167990b.1772711148.git.zhengqi.arch@bytedance.com
-      - 991fbb13bad9 "mm: do not open-code lruvec lock (22/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772711148.git.zhengqi.arch@bytedance.com
-      - f441889c9a8a "mm: vmscan: prepare for reparenting traditional LRU folios (24/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
-      - 1a153c4adfa7 "mm: vmscan: prepare for reparenting MGLRU folios (25/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
-        - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-      - a7310317d765 "mm: workingset: use lruvec_lru_size() to get the number of lru pages (27/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
-      - f2f98247d4f7 "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers (32/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/2c90fc006d9d730331a3caeef96f7e5dabe2036d.1772711148.git.zhengqi.arch@bytedance.com
-  - dropped commits
-    - 4499da940b96 "mm/vmscan: avoid false-positive -Wuninitialized warning"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260213123902.3466040-1-arnd@kernel.org
-- mm-new: 2 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+      - Link: https://lkml.kernel.org/r/20260322070843.941997-1-surenb@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

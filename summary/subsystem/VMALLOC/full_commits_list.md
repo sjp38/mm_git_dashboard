@@ -27,10 +27,10 @@
       - Link: https://lkml.kernel.org/r/20260302114740.2668450-2-urezki@gmail.com
 - mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 1e049af7f0d0 "mm: vmalloc: update outdated comment for renamed vread()"
-      - Authored by no role player, reviewed by nobody
+    - 3826c32d0e4c "mm: vmalloc: update outdated comment for renamed vread()"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260321105820.7134-1-kexinsun@smail.nju.edu.cn
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

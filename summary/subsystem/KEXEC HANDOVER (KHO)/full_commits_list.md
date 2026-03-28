@@ -18,28 +18,28 @@
       - c12ef5a2e231 "kho: remove finalize state and clients" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 5 total, 1 (5) series, 0 non-series commits
+- mm-unstable: 5 total, 1 (5) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
     - no role, reviewer: 2 commits
   - full commits list
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - bd8f1800d1f2 "kho: add size parameter to kho_add_subtree()" (0/6)
+      - dfa79ef4b4e2 "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - 753a72f20e02 "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
+      - 86ec7a57dc77 "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-2-ed6dcd951988@debian.org
-      - 592db4453082 "kho: persist blob size in KHO FDT" (2/6)
+      - e575104fbc08 "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
-      - ae7b05ef6def "kho: kexec-metadata: track previous kernel chain" (4/6)
+      - dd921fe0c395 "kho: kexec-metadata: track previous kernel chain" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-5-ed6dcd951988@debian.org
-      - 59a21cb77e74 "kho: document kexec-metadata tracking feature" (5/6)
+      - cc9946a199d1 "kho: document kexec-metadata tracking feature" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-6-ed6dcd951988@debian.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

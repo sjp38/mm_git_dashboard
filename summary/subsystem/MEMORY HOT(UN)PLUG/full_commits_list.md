@@ -11,25 +11,24 @@
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
 - mm-unstable: 5 total, 1 (4) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 4 commits
+    - no role, no role : 5 commits
   - full commits list
     - series "mm: memory hot(un)plug and SPARSEMEM cleanups", v2. (15 commits)
-      - 84dfac107c5f "mm/memory_hotplug: fix possible race in scan_movable_pages()" (0/15)
+      - c316c7d82f9b "mm/memory_hotplug: fix possible race in scan_movable_pages()" (0/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-0-096addc8800d@kernel.org
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-1-096addc8800d@kernel.org
-      - 96805483796c "mm/memory_hotplug: remove for_each_valid_pfn() usage" (1/15)
+      - fdc90be82789 "mm/memory_hotplug: remove for_each_valid_pfn() usage" (1/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-2-096addc8800d@kernel.org
-      - 8ec28629ac39 "mm/memory_hotplug: simplify check_pfn_span()" (4/15)
+      - baa6f887884b "mm/memory_hotplug: simplify check_pfn_span()" (4/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-5-096addc8800d@kernel.org
-      - 56351c596da0 "mm/sparse: remove sparse_decode_mem_map()" (8/15)
+      - cf44ac4643de "mm/sparse: remove sparse_decode_mem_map()" (8/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-9-096addc8800d@kernel.org
-    - 183fad046c37 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
-      - Authored by no role player, reviewed by nobody
+    - 0894fe0b0c27 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260321105704.6093-1-kexinsun@smail.nju.edu.cn
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

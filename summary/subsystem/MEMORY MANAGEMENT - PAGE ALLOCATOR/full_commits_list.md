@@ -40,35 +40,41 @@
     - reviewer, reviewer: 1 commits
   - full commits list
     - series "Allow order zero pages in page reporting", v4. (5 commits)
-      - d005851a679c "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED" (0/5)
+      - c309cc73da9d "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-1-yuvraj.sakshith@oss.qualcomm.com
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-2-yuvraj.sakshith@oss.qualcomm.com
-      - 5ccf980789b6 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED" (4/5)
+      - 0d6633f8d2a2 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260303113032.3008371-6-yuvraj.sakshith@oss.qualcomm.com
-    - 9141b8971557 "mm: introduce a new page type for page pool in page type"
+    - 5cb0f73c3ea4 "mm: introduce a new page type for page pool in page type"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
-    - 6db29b33ac7a "mm-introduce-a-new-page-type-for-page-pool-in-page-type-v5"
+    - ef1ad9102344 "mm-introduce-a-new-page-type-for-page-pool-in-page-type-v5"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260316223113.20097-1-byungchul@sk.com
-      - ffe9d3cd273e "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
+      - 430ee7064fc1 "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org
-      - 68d93c00474f "mm: introduce is_pmd_order helper" (1/5)
+      - d43fc2617d9b "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com
-    - b64c24085710 "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
+    - aa05abb320b4 "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260320173426.1831267-1-fvdl@google.com
       - Link: https://lore.kernel.org/all/20231122013925.1507-1-justinjiang@vivo.com/ [1]
-      - 636882288084 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 54178d92201e "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 826aa99aa902 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - 122d54b9412e "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - a0c619b7ad3e "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260327080623.123212-1-hao.ge@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

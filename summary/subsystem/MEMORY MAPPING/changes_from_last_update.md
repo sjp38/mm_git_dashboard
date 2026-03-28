@@ -1,75 +1,81 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de877
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de877 (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 2697dd8ae721 "mm/mseal: update VMA end correctly on merge"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 47 -> 47 commits (no change)
-  - series: 4 (46) -> 4 (46) (no change)
-    - no role, nobody: 11 -> 11 commits (no change)
-    - no role, no role : 31 -> 25 commits
-    - no role, reviewer: 3 -> 9 commits
+- mm-unstable: 47 -> 49 commits
+  - series: 4 (46) -> 5 (48)
+    - no role, nobody: 11 -> 8 commits
+    - no role, no role : 25 -> 25 commits (no change)
+    - no role, reviewer: 9 -> 12 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, no role : 0 -> 2 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: vma flag tweaks". (6)
-      - c736e63ff4c5 "mm: rename VMA flag helpers to be more readable (0/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - e4dbb1fe6e8e "mm: add vma_desc_test_all() and use it (1/6)"
+    - series "mm: improve map count checks". (3)
+      - f04f61c5f51a "mm/mremap: correct invalid map count check (0/3)"
         - Authored by no role player, reviewed by a reviewer
         - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
         - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lkml.kernel.org/r/568c8f8d6a84ff64014f997517cba7a629f7eed6.1772704455.git.ljs@kernel.org
-      - 3247a4ebb3a6 "mm: always inline __mk_vma_flags() and invoked functions (2/6)"
+        - Link: https://lkml.kernel.org/r/cover.1773249037.git.ljs@kernel.org
+        - Link: https://lkml.kernel.org/r/73e218c67dcd197c5331840fb011e2c17155bfb0.1773249037.git.ljs@kernel.org
+      - 2c33132e8665 "mm: abstract reading sysctl_max_map_count, and READ_ONCE() (1/3)"
         - Authored by no role player, reviewed by a reviewer
         - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
         - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lkml.kernel.org/r/241f49c52074d436edbb9c6a6662a8dc142a8f43.1772704455.git.ljs@kernel.org
-      - 9bca05782fa2 "mm: reintroduce vma_flags_test() as a singular flag test (3/6)"
+        - Link: https://lkml.kernel.org/r/0715259eb37cbdfde4f9e5db92a20ec7110a1ce5.1773249037.git.ljs@kernel.org
+      - 7a6d2dfb46b2 "mm/mremap: check map count under mmap write lock and abstract (2/3)"
         - Authored by no role player, reviewed by a reviewer
         - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
         - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - 16cbc2f963b6 "mm: reintroduce vma_desc_test() as a singular flag test (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
-      - 866afbd61399 "tools/testing/vma: add test for vma_flags_test(), vma_desc_test() (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - Link: : https://lkml.kernel.org/r/f6f396d2-1ba2-426f-b756-d8cc5985cc7c@lucifer.local
-        - Link: https://lkml.kernel.org/r/376a39eb9e134d2c8ab10e32720dd292970b080a.1772704455.git.ljs@kernel.org
-    - series "mm: khugepaged cleanups and mTHP prerequisites", v4. (5)
-      - 30d4fa4a7c3a "mm/khugepaged: rename hpage_collapse_* to collapse_* (3/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260325114022.444081-5-npache@redhat.com"
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260311211315.450947-5-npache@redhat.com"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260325114022.444081-5-npache@redhat.com
+        - Link: https://lkml.kernel.org/r/18be0b48eaa8e8804eb745974ee729c3ade0c687.1773249037.git.ljs@kernel.org
     - series "mm: expand mmap_prepare functionality and usage", v4. (21)
-      - 6fc943dd5e01 "mm: add mmap_action_map_kernel_pages[_full]() (20/21)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/926ac961690d856e67ec847bee2370ab3c6b9046.1774045440.git.ljs@kernel.org
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 636882288084 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
+      - 1e836ab74bcb "mm: switch the rmap lock held option off in compat layer (4/21)"
+        - Authored by no role player, reviewed by no role player
+        - added "[akpm@linux-foundation.org: fix comment typo, per Vlastimil]"
+        - Link: https://lkml.kernel.org/r/dda74230d26a1fcd79a3efab61fa4101dd1cac64.1774045440.git.ljs@kernel.org
+    - series "mm/mprotect: micro-optimization work", v2. (2)
+      - 1a733ad37a07 "mm/mprotect: move softleaf code out of the main function (0/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260324154342.156640-1-pfalcato@suse.de
+        - Link: https://lkml.kernel.org/r/20260324154342.156640-2-pfalcato@suse.de
+        - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
+        - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
+      - 21c1f7bba8aa "mm/mprotect: special-case small folios when applying write permissions (1/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260324154342.156640-3-pfalcato@suse.de
+- mm-new: 2 -> 4 commits
+  - series: 1 (2) -> 1 (4)
+    - no role, nobody: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, nobody: 0 -> 2 commits
+    - reviewer, no role : 2 -> 0 commits
+  - new commits
+    - series "Use killable vma write locking in most places", v6. (6)
+      - 80bee22b7efc "mm/vma: cleanup error handling path in vma_expand() (0/6)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-- mm-new: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - reviewer, no role : 2 -> 2 commits (no change)
+        - Link: https://lkml.kernel.org/r/20260327205457.604224-1-surenb@google.com
+        - Link: https://lkml.kernel.org/r/20260327205457.604224-2-surenb@google.com
+      - 047c6fb5040d "mm: use vma_start_write_killable() in mm syscalls (1/6)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
+      - ebbd8e083523 "mm/vma: use vma_start_write_killable() in vma operations (3/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260327205457.604224-5-surenb@google.com
+      - e8c16a15a7e7 "mm: use vma_start_write_killable() in process_vma_walk_lock() (4/6)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260327205457.604224-6-surenb@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

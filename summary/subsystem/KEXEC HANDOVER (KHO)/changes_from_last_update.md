@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de877 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -7,12 +7,37 @@
   - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 5 -> 5 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+- mm-unstable: 0 -> 5 commits
+  - series: 0 (0) -> 1 (5)
+    - no role, no role : 0 -> 3 commits
+    - no role, reviewer: 0 -> 2 commits
+  - changed commits
+    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
+      - dfa79ef4b4e2 "kho: add size parameter to kho_add_subtree() (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
+        - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
+      - 86ec7a57dc77 "kho: rename fdt parameter to blob in kho_add/remove_subtree() (1/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260316-kho-v9-2-ed6dcd951988@debian.org
+      - e575104fbc08 "kho: persist blob size in KHO FDT (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
+      - dd921fe0c395 "kho: kexec-metadata: track previous kernel chain (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260316-kho-v9-5-ed6dcd951988@debian.org
+      - cc9946a199d1 "kho: document kexec-metadata tracking feature (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260316-kho-v9-6-ed6dcd951988@debian.org
+- mm-new: 5 -> 0 commits
+  - series: 1 (5) -> 0 (0)
+    - no role, no role : 3 -> 0 commits
+    - no role, reviewer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -6,10 +6,10 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - bed313f00143 "zsmalloc: return -EBUSY for zspage migration lock contention"
+    - f874315f9615 "zsmalloc: return -EBUSY for zspage migration lock contention"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260319065924.69337-1-hui.zhu@linux.dev
-    - 72b2c021fb4a "mm/zsmalloc: copy KMSAN metadata in zs_page_migrate()"
+    - 74d80b0d5009 "mm/zsmalloc: copy KMSAN metadata in zs_page_migrate()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260321132912.93434-1-syoshida@redhat.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

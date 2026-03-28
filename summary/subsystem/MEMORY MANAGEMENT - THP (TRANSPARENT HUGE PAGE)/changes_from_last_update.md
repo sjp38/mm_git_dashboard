@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de877 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -8,62 +8,48 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 29 -> 29 commits (no change)
-  - series: 2 (24) -> 2 (24) (no change)
-    - no role, nobody: 6 -> 6 commits (no change)
+- mm-unstable: 29 -> 26 commits
+  - series: 2 (24) -> 2 (25)
+    - no role, nobody: 6 -> 4 commits
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 15 -> 15 commits (no change)
+    - no role, reviewer: 15 -> 14 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: khugepaged cleanups and mTHP prerequisites", v4. (5)
-      - 68d93c00474f "mm: introduce is_pmd_order helper (1/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com"
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260311211315.450947-3-npache@redhat.com"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com
-      - cf9433a7dee5 "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1 (2/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260325114022.444081-4-npache@redhat.com"
-        - added "Suggested-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - added "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - dropped "Link: https://lkml.kernel.org/r/20260311211315.450947-4-npache@redhat.com"
-        - Link: https://lkml.kernel.org/r/20260325114022.444081-4-npache@redhat.com
-      - 30d4fa4a7c3a "mm/khugepaged: rename hpage_collapse_* to collapse_* (3/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260325114022.444081-5-npache@redhat.com"
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260311211315.450947-5-npache@redhat.com"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260325114022.444081-5-npache@redhat.com
-      - 1098bfa5f2b9 "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd() (4/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260325114022.444081-6-npache@redhat.com"
-        - added "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - dropped "Link: https://lkml.kernel.org/r/20260311211315.450947-6-npache@redhat.com"
-        - Link: https://lkml.kernel.org/r/20260325114022.444081-6-npache@redhat.com
+    - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13)
+      - 009efacad500 "mm/huge_memory: add and use normal_or_softleaf_folio_pmd() (11/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "[ljs@kernel.org: avoid bisection hazard]"
+        - added "Link: : https://lkml.kernel.org/r/d0cc6161-77a4-42ba-a411-96c23c78df1b@lucifer.local"
+        - Link: : https://lkml.kernel.org/r/d0cc6161-77a4-42ba-a411-96c23c78df1b@lucifer.local
+        - Link: https://lkml.kernel.org/r/c2be872d64ef9573b80727d9ab5446cf002f17b5.1774029655.git.ljs@kernel.org
+      - 458dd04ffa1a "mm/huge_memory: add and use has_deposited_pgtable() (12/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "[ljs@kernel.org: fix folio_put()-before-recheck issue, per Sashiko]"
+        - added "Link: : https://lkml.kernel.org/r/0a917f80-902f-49b0-a75f-1bbaf23d7f94@lucifer.local"
+        - Link: : https://lkml.kernel.org/r/0a917f80-902f-49b0-a75f-1bbaf23d7f94@lucifer.local
+        - Link: https://lkml.kernel.org/r/f9db59ca90937e39913d50ecb4f662e2bad17bbb.1774029655.git.ljs@kernel.org
+  - dropped commits
+    - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13)
+      - 7b562f2e4091 "mm-huge_memory-add-and-use-normal_or_softleaf_folio_pmd-fix (12/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/d0cc6161-77a4-42ba-a411-96c23c78df1b@lucifer.local
+    - 7ef638ad93a9 "mm-huge_memory-add-and-use-has_deposited_pgtable-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/0a917f80-902f-49b0-a75f-1bbaf23d7f94@lucifer.local
     - series "selftests/mm: fix failures and robustness improvements", v2. (13)
       - 1bf9f105a2e1 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test (3/13)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
         - Link: https://lkml.kernel.org/r/94c18dd26cf88f10b4b496cb3de08d81439a8909.1773305677.git.sayalip@linux.ibm.com
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 636882288084 "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - c4128133fedc "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}() (16/33)"
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - series "Use killable vma write locking in most places", v6. (6)
+      - 7dd74910a05e "mm/khugepaged: use vma_start_write_killable() in collapse_huge_page() (2/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <lorenzo.stoakes@oracle.com>"
-        - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+        - Link: https://lkml.kernel.org/r/20260327205457.604224-4-surenb@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

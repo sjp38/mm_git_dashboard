@@ -7,27 +7,33 @@
     - no role, no role : 6 commits
   - full commits list
     - series "mm: cleanups around unmapping / zapping". (16 commits)
-      - edf5b9015423 "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
+      - 4477cc8763d8 "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260227200848.114019-2-david@kernel.org
         - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
-      - d726e0958248 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
+      - 811d79e80624 "mm/memory: remove "zap_details" parameter from zap_page_range_single()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: : https://lkml.kernel.org/r/8a27e9ac-2025-4724-a46d-0a7c90894ba7@kernel.org
         - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
-      - 2f97c5d65671 "mm/memory: convert details->even_cows into details->skip_cows" (8/16)
+      - 92ccbbf44bc2 "mm/memory: convert details->even_cows into details->skip_cows" (8/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-10-david@kernel.org
-      - 44a7e50ccf7c "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (12/16)
+      - 21e6fdc8f3be "mm: rename zap_page_range_single_batched() to zap_vma_range_batched()" (12/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-14-david@kernel.org
-      - f0b2b2df0635 "mm: rename zap_page_range_single() to zap_vma_range()" (13/16)
+      - adc30e51fbb1 "mm: rename zap_page_range_single() to zap_vma_range()" (13/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
-      - 55a0e6bc531c "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t" (22/25)
+      - 375c756b429b "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t" (22/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/51afbb2b8c3681003cc7926647e37335d793836e.1774034900.git.ljs@kernel.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, nobody: 1 commits
+  - full commits list
+      - 047c6fb5040d "mm: use vma_start_write_killable() in mm syscalls" (1/6)
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

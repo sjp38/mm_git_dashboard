@@ -1,50 +1,45 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de877
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 4 commits
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - 4236bece4584 "mm/damon/sysfs: dealloc repeat_call_control if damon_call() fails"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260327003224.55752-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260320020630.962-1-sj@kernel.org [1]
+- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de877 (no change)
+- mm-hotfixes-stable: 0 -> 3 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, maintainer: 0 -> 3 commits
+  - changed commits
+    - series "mm/damon/sysfs: fix memory leak and NULL dereference issues", v4. (3)
+      - 7fe000eb3290 "mm/damon/sysfs: fix param_ctx leak on damon_sysfs_new_test_ctx() failure (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lkml.kernel.org/r/20260321175427.86000-1-sj@kernel.org
+        - Link: https://lkml.kernel.org/r/20260321175427.86000-2-sj@kernel.org
+      - 1bfe9fb5ed26 "mm/damon/sysfs: check contexts->nr before accessing contexts_arr[0] (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lkml.kernel.org/r/20260321175427.86000-3-sj@kernel.org
+      - 6557004a8b59 "mm/damon/sysfs: check contexts->nr in repeat_call_fn (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://patch.msgid.link/20260320163559.178101-3-objecting@objecting.org
+        - Link: https://lkml.kernel.org/r/20260321175427.86000-4-sj@kernel.org
+        - Link: https://github.com/damonitor/damo [1]
+- mm-hotfixes-unstable: 4 -> 1 commits
+  - series: 1 (3) -> 0 (0)
+    - no role, maintainer: 3 -> 0 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 7 -> 7 commits (no change)
   - series: 2 (5) -> 2 (5) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
-- mm-unstable: 42 -> 43 commits
+- mm-unstable: 43 -> 43 commits (no change)
   - series: 6 (38) -> 6 (38) (no change)
-    - no role, maintainer: 2 -> 4 commits
-    - maintainer, nobody: 33 -> 32 commits
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - maintainer, nobody: 32 -> 32 commits (no change)
     - maintainer, no role : 7 -> 7 commits (no change)
   - changed commits
-    - series "mm/damon: support addr_unit on default monitoring targets for modules". (5)
-      - 8a8bd9062b2b "mm/damon/core: support addr_unit on damon_find_biggest_system_ram() (1/5)"
-        - Authored by a maintainer, reviewed by nobody
-        - added "[sj@kernel.org: verify found biggest system ram]"
-        - added "Link: : https://lkml.kernel.org/r/20260317144725.88524-1-sj@kernel.org"
-        - Link: : https://lkml.kernel.org/r/20260317144725.88524-1-sj@kernel.org
-        - Link: https://lkml.kernel.org/r/20260311052927.93921-3-sj@kernel.org
-    - 6d5d70634bba "mm/damon/core: document damos_commit_dests() failure semantics"
+    - cfcd1ec2d1c2 "mm/damon/core: document damos_commit_dests() failure semantics"
       - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
+      - dropped "Cc: Andrew Morton <akpm@linux-foundation.org>"
       - Link: https://lkml.kernel.org/r/20260320143648.91673-1-sj@kernel.org
       - Link: https://lore.kernel.org/20260318214939.36100-1-objecting@objecting.org [1]
-    - 63fa67446618 "Docs/mm/damon: document min_nr_regions constraint and rationale"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260320052428.213230-1-aethernet65535@gmail.com
-      - Link: https://lore.kernel.org/damon/20260319151528.86490-1-sj@kernel.org/T/#t [1]
-  - dropped commits
-    - series "mm/damon: support addr_unit on default monitoring targets for modules". (5)
-      - 7fde8911fa7c "mm/damon/core: verify found biggest system ram (2/5)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260317144725.88524-1-sj@kernel.org
-- mm-new: 2 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

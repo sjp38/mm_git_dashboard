@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 12bd47531927 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - e83f18e00916 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 11 total, 0 (9) series, 2 non-series commits
@@ -49,41 +49,38 @@
     - 6f4acc7daaf4 "Documentation: fix a hugetlbfs reservation statement"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
-- mm-unstable: 9 total, 2 (7) series, 2 non-series commits
+- mm-unstable: 8 total, 2 (6) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
+    - no role, nobody: 2 commits
     - no role, no role : 3 commits
     - no role, reviewer: 3 commits
   - full commits list
     - series "mm: vma flag tweaks". (6 commits)
-      - c736e63ff4c5 "mm: rename VMA flag helpers to be more readable" (0/6)
+      - af894fd9f3cf "mm: rename VMA flag helpers to be more readable" (0/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - 9bca05782fa2 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
+      - e5b5cd14e339 "mm: reintroduce vma_flags_test() as a singular flag test" (3/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - 16cbc2f963b6 "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
+      - 3aa883f39c32 "mm: reintroduce vma_desc_test() as a singular flag test" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
     - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4 commits)
-      - a5204c1d3a17 "mm: move vma_kernel_pagesize() from hugetlb to mm.h" (0/4)
+      - 89e375a2c7c1 "mm: move vma_kernel_pagesize() from hugetlb to mm.h" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-1-david@kernel.org
         - Link: https://lkml.kernel.org/r/20260309151901.123947-2-david@kernel.org
-      - 4f378628efee "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
+      - c7c1f713edca "mm: move vma_mmu_pagesize() from hugetlb to vma.c" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
-    - 379f4c5b1b57 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+    - 8ef8fb6cf393 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
-    - 3ef21f595917 "mm/hugetlb: fix memory offline failure due to hwpoisoned file hugetlb"
+    - 5cde05f5c657 "mm/hugetlb: fix memory offline failure due to hwpoisoned file hugetlb"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260318020711.3596947-1-tujinjiang@huawei.com
-      - 2d8647004666 "selftests/cgroup: extend test_hugetlb_memcg.c to support all huge page sizes" (12/13)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/e4e655c7d7c4e24b90d51530157d024854bff1cb.1773305678.git.sayalip@linux.ibm.com
-      - 40882ef6a104 "userfaultfd: introduce vm_uffd_ops" (6/15)
+      - 6d49b16baf13 "userfaultfd: introduce vm_uffd_ops" (6/15)
         - Authored by no role player, reviewed by nobody
         - Link: : https://lkml.kernel.org/r/abG5HFV8yoEHOFkh@kernel.org
         - Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org

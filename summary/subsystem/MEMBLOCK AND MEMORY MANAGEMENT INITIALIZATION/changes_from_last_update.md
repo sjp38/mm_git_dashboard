@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de877 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -7,39 +7,25 @@
   - series: 1 (5) -> 1 (5) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-- mm-unstable: 4 -> 5 commits
-  - series: 0 (4) -> 0 (4) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+- mm-unstable: 5 -> 7 commits
+  - series: 0 (4) -> 1 (6)
+    - no role, no role : 3 -> 5 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: memory hot(un)plug and SPARSEMEM cleanups", v2. (15)
-      - dc824c3e0721 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP (6/15)"
+    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
+      - dfa79ef4b4e2 "kho: add size parameter to kho_add_subtree() (0/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-7-096addc8800d@kernel.org"
-        - added "Cc: Sidhartha Kumar <sidhartha.kumar@oracle.com>"
-        - dropped "Link: https://lkml.kernel.org/r/20260317165652.99114-7-david@kernel.org"
-        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-7-096addc8800d@kernel.org
-      - 5eb6cfb5ed76 "mm/bootmem_info: avoid using sparse_decode_mem_map() (7/15)"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
+        - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
+      - e575104fbc08 "kho: persist blob size in KHO FDT (2/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-8-096addc8800d@kernel.org"
-        - added "Cc: Sidhartha Kumar <sidhartha.kumar@oracle.com>"
-        - dropped "Link: https://lkml.kernel.org/r/20260317165652.99114-8-david@kernel.org"
-        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-8-096addc8800d@kernel.org
-      - de157e02b78a "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c (10/15)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-11-096addc8800d@kernel.org"
-        - added "Cc: Sidhartha Kumar <sidhartha.kumar@oracle.com>"
-        - dropped "Link: https://lkml.kernel.org/r/20260317165652.99114-11-david@kernel.org"
-        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-11-096addc8800d@kernel.org
-    - e321d073b091 "mm: mark early-init static variables with __meminitdata"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
-- mm-new: 3 -> 2 commits
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
+- mm-new: 2 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, no role : 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

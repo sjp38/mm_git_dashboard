@@ -17,7 +17,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - e664a0edb0ee "mm: convert do_brk_flags() to use vma_flags_t" (16/25)
+      - ba70114b63e1 "mm: convert do_brk_flags() to use vma_flags_t" (16/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/d02e3e45d9a33d7904b149f5604904089fd640ae.1774034900.git.ljs@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
