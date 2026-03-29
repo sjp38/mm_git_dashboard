@@ -3,13 +3,19 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 1 commits (no change)
+- mm-stable: 1 -> 2 commits
   - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 14 -> 14 commits (no change)
+  - changed commits
+    - 609e88c7236a "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
+- mm-unstable: 14 -> 13 commits
   - series: 1 (13) -> 1 (13) (no change)
     - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 7 -> 7 commits (no change)
+    - no role, no role : 7 -> 6 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)

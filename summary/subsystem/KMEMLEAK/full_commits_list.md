@@ -16,7 +16,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - d929e5cf8abf "mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option"
+    - 329294b45d0e "mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260323-kmemleak_report-v1-1-ba2cdd9c11b9@debian.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,35 +1,32 @@
 - baseline: v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 1 total, 0 (0) series, 1 non-series commits
+- mm-stable: 6 total, 1 (4) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, no role : 6 commits
   - full commits list
     - 99d9279b365b "mm: name the anonymous MMOP enum as enum mmop"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
       - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
-- mm-unstable: 5 total, 1 (4) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 5 commits
-  - full commits list
     - series "mm: memory hot(un)plug and SPARSEMEM cleanups", v2. (15 commits)
-      - c316c7d82f9b "mm/memory_hotplug: fix possible race in scan_movable_pages()" (0/15)
+      - 88b73f7bd41a "mm/memory_hotplug: fix possible race in scan_movable_pages()" (0/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-0-096addc8800d@kernel.org
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-1-096addc8800d@kernel.org
-      - fdc90be82789 "mm/memory_hotplug: remove for_each_valid_pfn() usage" (1/15)
+      - 917591f9a434 "mm/memory_hotplug: remove for_each_valid_pfn() usage" (1/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-2-096addc8800d@kernel.org
-      - baa6f887884b "mm/memory_hotplug: simplify check_pfn_span()" (4/15)
+      - 6963643bc73d "mm/memory_hotplug: simplify check_pfn_span()" (4/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-5-096addc8800d@kernel.org
-      - cf44ac4643de "mm/sparse: remove sparse_decode_mem_map()" (8/15)
+      - e7db0b58bda9 "mm/sparse: remove sparse_decode_mem_map()" (8/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-9-096addc8800d@kernel.org
-    - 0894fe0b0c27 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
+    - a7e85f3bba3b "drivers/base/memory: fix stale reference to memory_block_add_nid()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260321105704.6093-1-kexinsun@smail.nju.edu.cn
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

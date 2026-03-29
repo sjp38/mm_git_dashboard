@@ -3,19 +3,40 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 1 (6) -> 1 (6) (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - reviewer, nobody: 0 -> 1 commits
-  - new commits
-    - series "Use killable vma write locking in most places", v6. (6)
-      - 047c6fb5040d "mm: use vma_start_write_killable() in mm syscalls (1/6)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
+- mm-stable: 0 -> 5 commits
+  - series: 0 (0) -> 1 (5)
+    - no role, no role : 0 -> 5 commits
+  - changed commits
+    - series "mm: cleanups around unmapping / zapping". (16)
+      - 089025bbf3a0 "mm/madvise: drop range checks in madvise_free_single_vma() (0/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-1-david@kernel.org
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-2-david@kernel.org
+        - Link: https://lore.kernel.org/r/aYSKyr7StGpGKNqW@google.com [1]
+      - 7d199bb9b281 "mm/memory: remove "zap_details" parameter from zap_page_range_single() (1/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: : https://lkml.kernel.org/r/8a27e9ac-2025-4724-a46d-0a7c90894ba7@kernel.org
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
+      - 2a1cdc5b9da1 "mm/memory: convert details->even_cows into details->skip_cows (8/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-10-david@kernel.org
+      - 41cb32abeaad "mm: rename zap_page_range_single_batched() to zap_vma_range_batched() (12/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-14-david@kernel.org
+      - fb6122323fca "mm: rename zap_page_range_single() to zap_vma_range() (13/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
+- mm-unstable: 6 -> 1 commits
+  - series: 1 (6) -> 0 (1)
+    - no role, no role : 6 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - reviewer, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - a0c619b7ad3e "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
+    - 8bee7b4b574f "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260327080623.123212-1-hao.ge@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -3,19 +3,35 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 4 -> 5 commits
+- mm-stable: 1 -> 6 commits
+  - series: 0 (0) -> 1 (4)
+    - no role, no role : 1 -> 6 commits
   - changed commits
-    - 0894fe0b0c27 "drivers/base/memory: fix stale reference to memory_block_add_nid()"
+    - series "mm: memory hot(un)plug and SPARSEMEM cleanups", v2. (15)
+      - 88b73f7bd41a "mm/memory_hotplug: fix possible race in scan_movable_pages() (0/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-0-096addc8800d@kernel.org
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-1-096addc8800d@kernel.org
+      - 917591f9a434 "mm/memory_hotplug: remove for_each_valid_pfn() usage (1/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-2-096addc8800d@kernel.org
+      - 6963643bc73d "mm/memory_hotplug: simplify check_pfn_span() (4/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-5-096addc8800d@kernel.org
+      - e7db0b58bda9 "mm/sparse: remove sparse_decode_mem_map() (8/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-9-096addc8800d@kernel.org
+    - a7e85f3bba3b "drivers/base/memory: fix stale reference to memory_block_add_nid()"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Reviewed by: Donet Tom <donettom@linux.ibm.com>"
+      - branch: mm-unstable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260321105704.6093-1-kexinsun@smail.nju.edu.cn
+- mm-unstable: 5 -> 0 commits
+  - series: 1 (4) -> 0 (0)
+    - no role, no role : 5 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

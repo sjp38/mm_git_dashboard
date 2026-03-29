@@ -11,31 +11,31 @@
     - no role, no role : 2 commits
     - no role, maintainer: 2 commits
     - maintainer, nobody: 1 commits
-- mm-stable: 139 total, 17 (99) series, 40 non-series commits
+- mm-stable: 300 total, 36 (220) series, 80 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 11 commits
-    - no role, no role : 33 commits
-    - no role, reviewer: 15 commits
-    - no role, maintainer: 23 commits
-    - reviewer, reviewer: 1 commits
-    - reviewer, maintainer: 1 commits
-    - maintainer, nobody: 36 commits
-    - maintainer, no role : 3 commits
-    - maintainer, reviewer: 3 commits
-    - maintainer, maintainer: 13 commits
-- mm-unstable: 307 total, 31 (256) series, 51 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 32 commits
-    - no role, no role : 127 commits
-    - no role, reviewer: 39 commits
-    - no role, maintainer: 41 commits
-    - reviewer, nobody: 2 commits
-    - reviewer, no role : 4 commits
+    - no role, nobody: 12 commits
+    - no role, no role : 100 commits
+    - no role, reviewer: 33 commits
+    - no role, maintainer: 42 commits
+    - reviewer, no role : 1 commits
     - reviewer, reviewer: 5 commits
+    - reviewer, maintainer: 1 commits
+    - maintainer, nobody: 74 commits
+    - maintainer, no role : 13 commits
+    - maintainer, reviewer: 3 commits
+    - maintainer, maintainer: 16 commits
+- mm-unstable: 145 total, 12 (135) series, 10 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 26 commits
+    - no role, no role : 63 commits
+    - no role, reviewer: 22 commits
+    - no role, maintainer: 22 commits
+    - reviewer, nobody: 2 commits
+    - reviewer, no role : 3 commits
+    - reviewer, reviewer: 1 commits
     - reviewer, maintainer: 4 commits
-    - maintainer, nobody: 39 commits
-    - maintainer, no role : 10 commits
-    - maintainer, maintainer: 4 commits
+    - maintainer, nobody: 1 commits
+    - maintainer, maintainer: 1 commits
 - mm-new: 31 total, 3 (20) series, 11 non-series commits
   - author/reviewer role stat
     - no role, nobody: 6 commits

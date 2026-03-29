@@ -3,29 +3,36 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 5 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
+- mm-stable: 5 -> 9 commits
+  - series: 1 (5) -> 1 (8)
+    - no role, no role : 0 -> 3 commits
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-- mm-unstable: 5 -> 7 commits
-  - series: 0 (4) -> 1 (6)
-    - no role, no role : 3 -> 5 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 3 -> 4 commits
   - changed commits
-    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
-      - dfa79ef4b4e2 "kho: add size parameter to kho_add_subtree() (0/6)"
+    - series "mm: memory hot(un)plug and SPARSEMEM cleanups", v2. (15)
+      - f7556ef6da94 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP (6/15)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
-        - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - e575104fbc08 "kho: persist blob size in KHO FDT (2/6)"
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-7-096addc8800d@kernel.org
+      - 968130af1695 "mm/bootmem_info: avoid using sparse_decode_mem_map() (7/15)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-8-096addc8800d@kernel.org
+      - d1bebf23909c "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c (10/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-11-096addc8800d@kernel.org
+    - 0e628b43ee07 "mm: mark early-init static variables with __meminitdata"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
+- mm-unstable: 7 -> 3 commits
+  - series: 1 (6) -> 1 (3)
+    - no role, no role : 5 -> 2 commits
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

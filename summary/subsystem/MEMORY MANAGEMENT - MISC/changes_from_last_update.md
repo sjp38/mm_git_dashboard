@@ -3,89 +3,90 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 8 -> 8 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
-- mm-unstable: 35 -> 24 commits
-  - series: 2 (20) -> 1 (15)
-    - no role, nobody: 4 -> 2 commits
-    - no role, no role : 14 -> 5 commits
-    - no role, reviewer: 5 -> 6 commits
-    - no role, maintainer: 4 -> 4 commits (no change)
-    - maintainer, nobody: 5 -> 4 commits
-    - maintainer, no role : 3 -> 3 commits (no change)
-  - new commits
-    - series "selftests/mm: skip several tests when thp is not available", v6. (6)
-      - 80c0edf0c609 "selftests-mm-vm_util-robust-write_file-fix (4/6)"
-        - Authored by a maintainer, reviewed by nobody
+- mm-stable: 8 -> 22 commits
+  - series: 0 (3) -> 0 (10)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 3 -> 5 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 4 -> 8 commits
+    - maintainer, nobody: 0 -> 3 commits
+    - maintainer, no role : 0 -> 3 commits
   - changed commits
-    - series "selftests/mm: skip several tests when thp is not available", v6. (6)
-      - 57534e797fd2 "selftests/mm/guard-regions: skip collapse test when thp not enabled (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: "Liam R. Howlett" <Liam.Howlett@oracle.com>"
-        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260324013316.2590422-1-chuhu@redhat.com
-        - Link: https://lkml.kernel.org/r/20260324013316.2590422-2-chuhu@redhat.com
-    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
-      - 86ec7a57dc77 "kho: rename fdt parameter to blob in kho_add/remove_subtree() (1/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260316-kho-v9-2-ed6dcd951988@debian.org
-      - cc9946a199d1 "kho: document kexec-metadata tracking feature (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/20260316-kho-v9-6-ed6dcd951988@debian.org
-  - dropped commits
-    - series "selftests/mm: fix failures and robustness improvements". (13)
-      - 63cc294213fa "selftests/mm: restore default nr_hugepages value during cleanup in charge_reserved_hugetlb.sh (0/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/cover.1773134177.git.sayalip@linux.ibm.com
-        - Link: https://lkml.kernel.org/r/aef8d9c1c6fb2b80af90543be21e15030e720733.1773134177.git.sayalip@linux.ibm.com
-    - 9652b82ca963 "selftests-mm-add-uffdio_move-huge-zeropage-pmd-regression-test-fix"
-      - Authored by a maintainer, reviewed by nobody
-    - series "selftests/mm: fix failures and robustness improvements", v2. (13)
-      - 993c6a1eefc4 "selftests/mm: fix hugetlb pathname construction in charge_reserved_hugetlb.sh (0/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/cover.1773305677.git.sayalip@linux.ibm.com
-        - Link: https://lkml.kernel.org/r/3b34767f2cb705c8de0f085a85bd21bdf6998ca6.1773305677.git.sayalip@linux.ibm.com
-      - 8d5c19842ded "selftests/mm: fix hugetlb pathname construction in hugetlb_reparenting_test.sh (1/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/3ab5781190ea0a6bffda2683b2ca221e0c7f6280.1773305677.git.sayalip@linux.ibm.com
-      - 32eaabd4393c "selftest/mm: fix cgroup task placement and tolerance in hugetlb_reparenting_test.sh (2/13)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/3b5b4275fed509e13567bba7471a9130bbfa6841.1773305677.git.sayalip@linux.ibm.com
-      - 1bf9f105a2e1 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test (3/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/94c18dd26cf88f10b4b496cb3de08d81439a8909.1773305677.git.sayalip@linux.ibm.com
-      - e2c91fdfc172 "selftest/mm: adjust hugepage-mremap test size for large huge pages (4/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/0ea624c4bf022425b50c50cf8f5e3023106db9c1.1773305677.git.sayalip@linux.ibm.com
-      - 41d99c42c28d "selftest/mm: register existing mapping with userfaultfd in hugepage-mremap (5/13)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/da7ec96ee85ccfdb9bec704c6dd534b419212f94.1773305677.git.sayalip@linux.ibm.com
-      - 81c17a480614 "selftests/mm: ensure destination is hugetlb-backed in hugepage-mremap (6/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/a9e12dcb25b9be4f146063669b1eb3ff9b776c23.1773305677.git.sayalip@linux.ibm.com
-      - 83ca01ff9467 "selftests/mm: skip uffd-wp-mremap if UFFD write-protect is unsupported (7/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/ed23ff57a80881c9d087d22709862af40addf49b.1773305678.git.sayalip@linux.ibm.com
-      - 7425968b3c73 "selftests-mm-skip-uffd-wp-mremap-if-uffd-write-protect-is-unsupported-fix (8/13)"
+    - series "mm/damon: test and document power-of-2 min_region_sz requirement". (2)
+      - 35862263efcb "Docs/mm/damon/design: document the power-of-two limitation for addr_unit (1/2)"
         - Authored by a maintainer, reviewed by nobody
-      - fb98377c439d "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero (9/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/2516cad1d9dcbe613619a1006aed1991302c9bee.1773305678.git.sayalip@linux.ibm.com
-      - d0db138f4638 "selftests/mm: fix double increment in linked list cleanup in compaction_test (10/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/27390ade4251d1f7f6b846bd5836fa79dbf285df.1773305678.git.sayalip@linux.ibm.com
-      - 8848a6629fe3 "selftests/mm: move hwpoison setup into run_test() and silence modprobe output for memory-failure category (11/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/35a44ccc4d1587255e8f920b22e983f74c024f2e.1773305678.git.sayalip@linux.ibm.com
-- mm-new: 2 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, reviewer: 2 -> 0 commits
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260307194222.202075-3-sj@kernel.org
+    - series "mm/damon: improve/fixup/update ratio calculation, test and documentation". (7)
+      - 798a6c72ebed "Docs/admin-guide/mm/damn/lru_sort: fix intervals autotune parameter name (4/7)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260307195356.203753-6-sj@kernel.org
+      - a79c1bb29d20 "Docs/mm/damon/maintainer-profile: use flexible review cadence (5/7)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260307195356.203753-7-sj@kernel.org
+      - 68e3929b2789 "Docs/mm/damon/index: fix typo: autoamted -> automated (6/7)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260307195356.203753-8-sj@kernel.org
+    - 8dbc67c2d4b2 "docs: mm: fix typo in numa_memory_policy.rst"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260310151837.5888-1-akinobu.mita@gmail.com
+    - 6235dbcce97f "selftests/mm: verify droppable mappings cannot be locked"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260310155821.17869-2-anthony.yznaga@oracle.com
+    - series "mm/damon: support multiple goal-based quota tuning algorithms". (11)
+      - 868bd070428e "Docs/mm/damon/design: document the goal-based quota tuner selections (4/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260310010529.91162-6-sj@kernel.org
+      - c90100ed7ed4 "Docs/admin-guide/mm/damon/usage: document goal_tuner sysfs file (5/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260310010529.91162-7-sj@kernel.org
+    - 75af4a7b19c2 "selftests/mm: pagemap_ioctl: remove hungarian notation"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260311180737.3767545-1-rppt@kernel.org
+    - 999be0959f89 "Docs/mm/damon: document exclusivity of special-purpose modules"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260315162945.80994-1-sj@kernel.org
+      - Link: https://lore.kernel.org/damon/20260314002119.79742-1-sj@kernel.org/T/#t [1]
+    - c0ac84ea5543 "Docs/mm/damon/design: document DAMON actions when TRANSPARENT_HUGEPAGE is off"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260318035349.88715-1-sj@kernel.org
+      - Link: https://lore.kernel.org/66131775-180b-4b9f-b7ce-61a3e077b6e6@huawei-partners.com/ [1]
+    - series "mm: remove CONFIG_ARCH_ENABLE_MEMORY_HOTREMOVE and cleanup CONFIG_MIGRATION". (2)
+      - 6509e734cc5d "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
+    - cfb3a14c057e "Docs/mm/damon: document min_nr_regions constraint and rationale"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260320052428.213230-1-aethernet65535@gmail.com
+      - Link: https://lore.kernel.org/damon/20260319151528.86490-1-sj@kernel.org/T/#t [1]
+    - bc2e0d3bf965 "selftests/mm: add folio_split() and filemap_get_entry() race test"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
+      - Link: https://github.com/dfinity/thp-madv-remove-test [2]
+      - Link: https://lkml.kernel.org/r/20260323163717.184107-1-ziy@nvidia.com
+- mm-unstable: 24 -> 10 commits
+  - series: 1 (15) -> 1 (8)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 5 -> 3 commits
+    - no role, reviewer: 6 -> 5 commits
+    - no role, maintainer: 4 -> 0 commits
+    - maintainer, nobody: 4 -> 1 commits
+    - maintainer, no role : 3 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,10 +1,11 @@
 - baseline: v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 5 total, 1 (5) series, 0 non-series commits
+- mm-stable: 9 total, 1 (8) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, no role : 3 commits
     - no role, reviewer: 2 commits
-    - no role, maintainer: 3 commits
+    - no role, maintainer: 4 commits
   - full commits list
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
       - 00bbd7634b1d "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
@@ -23,33 +24,32 @@
       - b5e84b870804 "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-- mm-unstable: 7 total, 1 (6) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 5 commits
-    - no role, maintainer: 1 commits
-    - maintainer, maintainer: 1 commits
-  - full commits list
-      - e02c913b6fa4 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (6/15)
+      - f7556ef6da94 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-7-096addc8800d@kernel.org
-      - 6d559ca5b0e5 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (7/15)
+      - 968130af1695 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (7/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-8-096addc8800d@kernel.org
-      - d5dc00118a0e "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (10/15)
+      - d1bebf23909c "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (10/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-11-096addc8800d@kernel.org
-    - aeee4b33315f "mm: mark early-init static variables with __meminitdata"
+    - 0e628b43ee07 "mm: mark early-init static variables with __meminitdata"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
-      - 9e431f45bc88 "mm: switch deferred split shrinker to list_lru" (6/7)
+- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+    - maintainer, maintainer: 1 commits
+  - full commits list
+      - 4648235ac00d "mm: switch deferred split shrinker to list_lru" (6/7)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - dfa79ef4b4e2 "kho: add size parameter to kho_add_subtree()" (0/6)
+      - 7b17ca8f95cb "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - e575104fbc08 "kho: persist blob size in KHO FDT" (2/6)
+      - 536c818925b0 "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
