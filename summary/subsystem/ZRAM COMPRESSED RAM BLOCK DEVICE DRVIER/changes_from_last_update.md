@@ -3,56 +3,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 10 commits
-  - series: 0 (0) -> 1 (6)
-    - no role, maintainer: 1 -> 2 commits
-    - maintainer, nobody: 0 -> 5 commits
-    - maintainer, no role : 0 -> 3 commits
-  - changed commits
-    - series "zram: recompression cleanups and tweaks", v2. (6)
-      - 5331373bfebd "zram: do not permit params change after init (0/6)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-1-senozhatsky@chromium.org
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-2-senozhatsky@chromium.org
-      - 3578bb37f7d1 "zram: do not autocorrect bad recompression parameters (1/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-3-senozhatsky@chromium.org
-      - e2b717936d1a "zram: drop ->num_active_comps (2/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-4-senozhatsky@chromium.org
-      - 82cf28313ce7 "zram: update recompression documentation (3/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-5-senozhatsky@chromium.org
-      - 4fd453f16446 "zram: remove chained recompression (4/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-6-senozhatsky@chromium.org
-      - fc2093641448 "zram: unify and harden algo/priority params handling (5/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260311084312.1766036-7-senozhatsky@chromium.org
-    - 34beb65c5f20 "zram: optimize LZ4 dictionary compression performance"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/698181478c9c4b10aa21b4a847bdc706@honor.com
-      - Link: https://github.com/lz4/lz4?tab=readme-ov-file [1]
-    - 06158b74b902 "zram: propagate read_from_bdev_async() errors"
-      - Authored by a maintainer, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260316015354.114465-1-senozhatsky@chromium.org
-    - 26196dd69307 "zram: change scan_slots to return void"
-      - Authored by a maintainer, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260317032349.753645-1-senozhatsky@chromium.org
-- mm-unstable: 9 -> 0 commits
-  - series: 1 (6) -> 0 (0)
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, nobody: 5 -> 0 commits
-    - maintainer, no role : 3 -> 0 commits
+- mm-stable: 10 -> 10 commits (no change)
+  - series: 1 (6) -> 1 (6) (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - maintainer, nobody: 5 -> 5 commits (no change)
+    - maintainer, no role : 3 -> 3 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

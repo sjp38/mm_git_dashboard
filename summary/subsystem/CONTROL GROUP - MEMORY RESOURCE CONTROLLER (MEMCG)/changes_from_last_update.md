@@ -3,49 +3,41 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 12 commits
-  - series: 1 (2) -> 2 (7)
+- mm-stable: 12 -> 12 commits (no change)
+  - series: 2 (7) -> 2 (7) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 7 commits
-    - maintainer, maintainer: 1 -> 4 commits
-  - changed commits
-    - series "memcg: obj stock and slab stat caching cleanups". (5)
-      - f038390d775f "mm: memcg: factor out trylock_stock() and unlock_stock() (0/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-1-hannes@cmpxchg.org
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-2-hannes@cmpxchg.org
-      - 352bb2e89115 "mm: memcg: simplify objcg charge size and stock remainder math (1/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-3-hannes@cmpxchg.org
-      - 9d9cb6b1d906 "mm: memcontrol: split out __obj_cgroup_charge() (2/5)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-4-hannes@cmpxchg.org
-      - ee5806e178c0 "mm: memcontrol: use __account_obj_stock() in the !locked path (3/5)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-5-hannes@cmpxchg.org
-      - 57b56d7d9be2 "mm: memcg: separate slab stat accounting from objcg charge cache (4/5)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260302195305.620713-6-hannes@cmpxchg.org
-    - 3b1b7025ef53 "selftest: memcg: skip memcg_sock test if address family not supported"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260311200526.885899-1-longman@redhat.com
-    - a6ac709fe861 "mm/memcontrol: fix reclaim_options leak in try_charge_memcg()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260321033500.2558070-1-bingjiao@google.com
-- mm-unstable: 27 -> 20 commits
-  - series: 3 (24) -> 2 (19)
+    - no role, maintainer: 7 -> 7 commits (no change)
+    - maintainer, maintainer: 4 -> 4 commits (no change)
+- mm-unstable: 20 -> 19 commits
+  - series: 2 (19) -> 2 (18)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 17 -> 13 commits
+    - no role, maintainer: 13 -> 13 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 4 -> 1 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - changed commits
+    - series "fix unexpected type conversions and potential overflows", v3. (3)
+      - b34db1e3c6f0 "mm: memcontrol: correct the type of stats_updates to unsigned long (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - dropped "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+        - Link: https://lkml.kernel.org/r/cover.1774604356.git.zhengqi.arch@bytedance.com
+        - Link: https://lkml.kernel.org/r/a5b0b468e7b4fe5f26c50e36d5d016f16d92f98f.1774604356.git.zhengqi.arch@bytedance.com
+        - Link: https://lore.kernel.org/all/acDxaEgnqPI-Z4be@hyeyoo/ [1]
+      - a1294ced156f "mm: memcontrol: change val type to long in __mod_memcg_{lruvec_}state() (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - Link: https://lkml.kernel.org/r/70a9440e49c464b4dca88bcabc6b491bd335c9f0.1774604356.git.zhengqi.arch@bytedance.com
+      - 7bb02dbc8786 "mm: memcontrol: correct the nr_pages parameter type of mem_cgroup_update_lru_size() (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - dropped "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+        - Link: https://lkml.kernel.org/r/fd4140de44fa0a3978e4e2426731187fe8625f0b.1774604356.git.zhengqi.arch@bytedance.com
+  - dropped commits
+    - series "mm: switch THP shrinker to list_lru", v3. (7)
+      - 4648235ac00d "mm: switch deferred split shrinker to list_lru (6/7)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

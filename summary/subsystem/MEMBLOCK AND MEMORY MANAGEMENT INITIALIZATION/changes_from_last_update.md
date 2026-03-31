@@ -3,34 +3,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 9 commits
-  - series: 1 (5) -> 1 (8)
-    - no role, no role : 0 -> 3 commits
+- mm-stable: 9 -> 9 commits (no change)
+  - series: 1 (8) -> 1 (8) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 4 commits
-  - changed commits
-    - series "mm: memory hot(un)plug and SPARSEMEM cleanups", v2. (15)
-      - f7556ef6da94 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP (6/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-7-096addc8800d@kernel.org
-      - 968130af1695 "mm/bootmem_info: avoid using sparse_decode_mem_map() (7/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-8-096addc8800d@kernel.org
-      - d1bebf23909c "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c (10/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-11-096addc8800d@kernel.org
-    - 0e628b43ee07 "mm: mark early-init static variables with __meminitdata"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
-- mm-unstable: 7 -> 3 commits
-  - series: 1 (6) -> 1 (3)
-    - no role, no role : 5 -> 2 commits
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-unstable: 3 -> 2 commits
+  - series: 1 (3) -> 1 (2)
+    - no role, no role : 2 -> 2 commits (no change)
+    - maintainer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - series "mm: switch THP shrinker to list_lru", v3. (7)
+      - 4648235ac00d "mm: switch deferred split shrinker to list_lru (6/7)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

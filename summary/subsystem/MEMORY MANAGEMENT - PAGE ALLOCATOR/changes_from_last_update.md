@@ -3,60 +3,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 7 -> 13 commits
-  - series: 1 (6) -> 2 (10)
-    - no role, no role : 1 -> 4 commits
-    - no role, reviewer: 1 -> 2 commits
-    - no role, maintainer: 2 -> 3 commits
-    - reviewer, reviewer: 0 -> 1 commits
+- mm-stable: 13 -> 13 commits (no change)
+  - series: 2 (10) -> 2 (10) (no change)
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
+- mm-unstable: 2 -> 3 commits
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, maintainer: 2 -> 3 commits
   - changed commits
-    - series "Allow order zero pages in page reporting", v4. (5)
-      - 04d8735e77d4 "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-1-yuvraj.sakshith@oss.qualcomm.com
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-2-yuvraj.sakshith@oss.qualcomm.com
-      - 4906c50dc7b3 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-6-yuvraj.sakshith@oss.qualcomm.com
-    - 59c12c2bfbc0 "mm: introduce a new page type for page pool in page type"
+    - b327fb0ed018 "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
       - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - added "[byungchul@sk.com: gate the sanity check, per Johannes]"
-      - added "Link: : https://lkml.kernel.org/r/20260316223113.20097-1-byungchul@sk.com"
-      - dropped "Cc: Daniel Borkman <daniel@iogearbox.net>"
-      - Link: : https://lkml.kernel.org/r/20260316223113.20097-1-byungchul@sk.com
-      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4)
-      - 6626eb3ce3ad "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org
-    - series "mm: khugepaged cleanups and mTHP prerequisites", v4. (5)
-      - 992b5e1f9240 "mm: introduce is_pmd_order helper (1/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com
-    - 20ca3e61929f "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260320173426.1831267-1-fvdl@google.com
-      - Link: https://lore.kernel.org/all/20231122013925.1507-1-justinjiang@vivo.com/ [1]
-- mm-unstable: 9 -> 2 commits
-  - series: 1 (6) -> 0 (2)
-    - no role, no role : 3 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 3 -> 2 commits
-    - reviewer, reviewer: 1 -> 0 commits
-  - dropped commits
-    - ef1ad9102344 "mm-introduce-a-new-page-type-for-page-pool-in-page-type-v5"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260316223113.20097-1-byungchul@sk.com
-- mm-new: 1 -> 1 commits (no change)
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260327080623.123212-1-hao.ge@linux.dev
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -3,90 +3,149 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 8 -> 22 commits
-  - series: 0 (3) -> 0 (10)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 3 -> 5 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 4 -> 8 commits
-    - maintainer, nobody: 0 -> 3 commits
-    - maintainer, no role : 0 -> 3 commits
-  - changed commits
-    - series "mm/damon: test and document power-of-2 min_region_sz requirement". (2)
-      - 35862263efcb "Docs/mm/damon/design: document the power-of-two limitation for addr_unit (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260307194222.202075-3-sj@kernel.org
-    - series "mm/damon: improve/fixup/update ratio calculation, test and documentation". (7)
-      - 798a6c72ebed "Docs/admin-guide/mm/damn/lru_sort: fix intervals autotune parameter name (4/7)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260307195356.203753-6-sj@kernel.org
-      - a79c1bb29d20 "Docs/mm/damon/maintainer-profile: use flexible review cadence (5/7)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260307195356.203753-7-sj@kernel.org
-      - 68e3929b2789 "Docs/mm/damon/index: fix typo: autoamted -> automated (6/7)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260307195356.203753-8-sj@kernel.org
-    - 8dbc67c2d4b2 "docs: mm: fix typo in numa_memory_policy.rst"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260310151837.5888-1-akinobu.mita@gmail.com
-    - 6235dbcce97f "selftests/mm: verify droppable mappings cannot be locked"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260310155821.17869-2-anthony.yznaga@oracle.com
-    - series "mm/damon: support multiple goal-based quota tuning algorithms". (11)
-      - 868bd070428e "Docs/mm/damon/design: document the goal-based quota tuner selections (4/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260310010529.91162-6-sj@kernel.org
-      - c90100ed7ed4 "Docs/admin-guide/mm/damon/usage: document goal_tuner sysfs file (5/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260310010529.91162-7-sj@kernel.org
-    - 75af4a7b19c2 "selftests/mm: pagemap_ioctl: remove hungarian notation"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260311180737.3767545-1-rppt@kernel.org
-    - 999be0959f89 "Docs/mm/damon: document exclusivity of special-purpose modules"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260315162945.80994-1-sj@kernel.org
-      - Link: https://lore.kernel.org/damon/20260314002119.79742-1-sj@kernel.org/T/#t [1]
-    - c0ac84ea5543 "Docs/mm/damon/design: document DAMON actions when TRANSPARENT_HUGEPAGE is off"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260318035349.88715-1-sj@kernel.org
-      - Link: https://lore.kernel.org/66131775-180b-4b9f-b7ce-61a3e077b6e6@huawei-partners.com/ [1]
-    - series "mm: remove CONFIG_ARCH_ENABLE_MEMORY_HOTREMOVE and cleanup CONFIG_MIGRATION". (2)
-      - 6509e734cc5d "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
-    - cfb3a14c057e "Docs/mm/damon: document min_nr_regions constraint and rationale"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260320052428.213230-1-aethernet65535@gmail.com
-      - Link: https://lore.kernel.org/damon/20260319151528.86490-1-sj@kernel.org/T/#t [1]
-    - bc2e0d3bf965 "selftests/mm: add folio_split() and filemap_get_entry() race test"
+- mm-stable: 22 -> 22 commits (no change)
+  - series: 0 (10) -> 0 (10) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 8 -> 8 commits (no change)
+    - maintainer, nobody: 3 -> 3 commits (no change)
+    - maintainer, no role : 3 -> 3 commits (no change)
+- mm-unstable: 10 -> 13 commits
+  - series: 1 (8) -> 1 (8) (no change)
+    - no role, nobody: 1 -> 5 commits
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+  - new commits
+    - 7b2c3d892967 "selftests/mm: respect build verbosity settings for 32/64-bit targets"
       - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
-      - Link: https://github.com/dfinity/thp-madv-remove-test [2]
-      - Link: https://lkml.kernel.org/r/20260323163717.184107-1-ziy@nvidia.com
-- mm-unstable: 24 -> 10 commits
-  - series: 1 (15) -> 1 (8)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 5 -> 3 commits
-    - no role, reviewer: 6 -> 5 commits
-    - no role, maintainer: 4 -> 0 commits
-    - maintainer, nobody: 4 -> 1 commits
-    - maintainer, no role : 3 -> 0 commits
-- mm-new: 0 -> 0 commits (no change)
+      - Link: https://lkml.kernel.org/r/20260331040156.119158-1-liwang@redhat.com
+    - eccd4b43e9d6 "selftests/mm: serialize local_config generation for parallel builds"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260331040156.119158-2-liwang@redhat.com
+    - c8f0665880ea "selftests/lib.mk: set PWD from CURDIR to avoid wrong extmod path"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260331040156.119158-3-liwang@redhat.com
+    - 24e341657c28 "selftests/mm: fix cow/gup_longterm link failures when liburing flags are missing"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260331040156.119158-4-liwang@redhat.com
+  - changed commits
+    - series "selftests/mm: skip several tests when thp is not available", v7. (7)
+      - e25248ae815f "selftests/mm/guard-regions: skip collapse test when thp not enabled (0/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260330151503.670415-1-chuhu@redhat.com"
+        - added "Link: https://lkml.kernel.org/r/20260330151503.670415-2-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260324013316.2590422-1-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260324013316.2590422-2-chuhu@redhat.com"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: Nico Pache <npache@redhat.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lkml.kernel.org/r/20260330151503.670415-1-chuhu@redhat.com
+        - Link: https://lkml.kernel.org/r/20260330151503.670415-2-chuhu@redhat.com
+      - 741aeded0424 "selftests/mm: soft-dirty: skip two tests when thp is not available (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260330151503.670415-3-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260324013316.2590422-3-chuhu@redhat.com"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: Nico Pache <npache@redhat.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lkml.kernel.org/r/20260330151503.670415-3-chuhu@redhat.com
+      - aa64af4fc658 "selftests/mm: move write_file helper to vm_util (2/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260330151503.670415-4-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260324013316.2590422-4-chuhu@redhat.com"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: Nico Pache <npache@redhat.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lkml.kernel.org/r/20260330151503.670415-4-chuhu@redhat.com
+      - f2249de582c3 "selftests/mm/vm_util: robust write_file() (4/7)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lkml.kernel.org/r/20260330151503.670415-6-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260324013316.2590422-5-chuhu@redhat.com"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Nico Pache <npache@redhat.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260330151503.670415-6-chuhu@redhat.com
+      - fd4d5ae42c17 "selftests/mm: split_huge_page_test: skip the test when thp is not available (5/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260330151503.670415-7-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260324013316.2590422-6-chuhu@redhat.com"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: Nico Pache <npache@redhat.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lkml.kernel.org/r/20260330151503.670415-7-chuhu@redhat.com
+      - 703f3789e0c7 "selftests/mm: transhuge_stress: skip the test when thp not available (6/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260330151503.670415-8-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260324013316.2590422-7-chuhu@redhat.com"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: Nico Pache <npache@redhat.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lkml.kernel.org/r/20260330151503.670415-8-chuhu@redhat.com
+  - dropped commits
+    - series "selftests/mm: skip several tests when thp is not available", v6. (6)
+      - 3eecfc6d0b4e "selftests-mm-vm_util-robust-write_file-fix (4/6)"
+        - Authored by a maintainer, reviewed by nobody
+- mm-new: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - fc127b77592e "selftests/mm: add merge test for partial msealed range"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260330135011.107036-1-ljs@kernel.org
+    - 54c9d0359b18 "selftests-mm-add-merge-test-for-partial-msealed-range-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

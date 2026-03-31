@@ -6,10 +6,31 @@
 - mm-stable: 3 -> 3 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-- mm-unstable: 7 -> 7 commits (no change)
-  - series: 2 (7) -> 2 (7) (no change)
-    - no role, no role : 6 -> 6 commits (no change)
+- mm-unstable: 7 -> 1 commits
+  - series: 2 (7) -> 1 (1)
+    - no role, no role : 6 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - dropped commits
+    - series "mm: switch THP shrinker to list_lru", v3. (7)
+      - 5cc7946e0421 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty (0/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-1-hannes@cmpxchg.org
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-2-hannes@cmpxchg.org
+      - 225f644be3b2 "mm: list_lru: deduplicate unlock_list_lru() (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-3-hannes@cmpxchg.org
+      - 7aaee5e98e89 "mm: list_lru: move list dead check to lock_list_lru_of_memcg() (2/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-4-hannes@cmpxchg.org
+      - fed6ac1fece7 "mm: list_lru: deduplicate lock_list_lru() (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-5-hannes@cmpxchg.org
+      - d2d9b0e9c325 "mm: list_lru: introduce caller locking for additions and deletions (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-6-hannes@cmpxchg.org
+      - a92264cdd36d "mm: list_lru: introduce folio_memcg_list_lru_alloc() (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-7-hannes@cmpxchg.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

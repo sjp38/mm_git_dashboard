@@ -4,38 +4,31 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 16 -> 19 commits
+- mm-stable: 19 -> 19 commits (no change)
   - series: 2 (15) -> 2 (15) (no change)
-    - no role, no role : 1 -> 3 commits
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 2 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 11 -> 11 commits (no change)
-  - changed commits
-    - bd7c4f455f2c "mm/swap: strengthen locking assertions and invariants in cluster allocation"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: : https://lkml.kernel.org/r/20260311022241.177801-1-hui.zhu@linux.dev
-      - Link: : https://lkml.kernel.org/r/20260312023024.903143-1-hui.zhu@linux.dev
-      - Link: https://lkml.kernel.org/r/20260310015657.42395-1-hui.zhu@linux.dev
-    - 86a4887eef5f "mm/swapfile: remove duplicate include of swap_table.h"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260318043849.399266-1-nichen@iscas.ac.cn
-    - 30dc0ffdf2a7 "mm: update outdated comments for removed scan_swap_map_slots()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260321105814.7053-1-kexinsun@smail.nju.edu.cn
-- mm-unstable: 12 -> 9 commits
+- mm-unstable: 9 -> 9 commits (no change)
   - series: 1 (8) -> 1 (8) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 2 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
+  - changed commits
+    - 4bfd6073417a "mm/page_io: fix PSWPIN undercount for large folios in sio_read_complete()"
+      - Authored by no role player, reviewed by nobody
+      - added "Fixes: a1a0dfd56f97 ("mm: handle THP in swap_*page_fs()")"
+      - added "Cc: <stable@vger.kernel.org>"
+      - added "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Fixes: 6a8c068774ad ("mm/page_io: use a folio in sio_read_complete()")"
+      - Link: https://lkml.kernel.org/r/20260323231315.240137-1-devnexen@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

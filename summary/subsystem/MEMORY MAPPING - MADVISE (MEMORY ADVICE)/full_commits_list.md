@@ -1,9 +1,9 @@
 - baseline: v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 5 total, 1 (5) series, 0 non-series commits
+- mm-stable: 6 total, 1 (6) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 5 commits
+    - no role, no role : 6 commits
   - full commits list
     - series "mm: cleanups around unmapping / zapping". (16 commits)
       - 089025bbf3a0 "mm/madvise: drop range checks in madvise_free_single_vma()" (0/16)
@@ -24,19 +24,16 @@
       - fb6122323fca "mm: rename zap_page_range_single() to zap_vma_range()" (13/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-      - a4bbc106fa91 "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t" (22/25)
+      - de600864e1d6 "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t" (22/25)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/51afbb2b8c3681003cc7926647e37335d793836e.1774034900.git.ljs@kernel.org
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
+- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - reviewer, nobody: 1 commits
   - full commits list
-      - d3efb1e0ad6b "mm: use vma_start_write_killable() in mm syscalls" (1/6)
+      - 98d67add8b00 "mm: use vma_start_write_killable() in mm syscalls" (1/6)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

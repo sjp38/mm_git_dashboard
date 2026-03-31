@@ -4,46 +4,32 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 11 -> 17 commits
-  - series: 0 (9) -> 2 (14)
+- mm-stable: 17 -> 17 commits (no change)
+  - series: 2 (14) -> 2 (14) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 5 commits
-    - no role, reviewer: 1 -> 4 commits
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
+- mm-unstable: 2 -> 1 commits
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 2 -> 1 commits
   - changed commits
-    - series "mm: vma flag tweaks". (6)
-      - 85ed42942b73 "mm: rename VMA flag helpers to be more readable (0/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
-      - aa8a820919d4 "mm: reintroduce vma_flags_test() as a singular flag test (3/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/f33f8d7f16c3f3d286a1dc2cba12c23683073134.1772704455.git.ljs@kernel.org
-      - 7908964a3cbc "mm: reintroduce vma_desc_test() as a singular flag test (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/3a65ca23defb05060333f0586428fe279a484564.1772704455.git.ljs@kernel.org
-    - series "mm: move vma_(kernel|mmu)_pagesize() out of hugetlb.c", v2. (4)
-      - d0d1f742bdb6 "mm: move vma_kernel_pagesize() from hugetlb to mm.h (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-1-david@kernel.org
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-2-david@kernel.org
-      - b440a7c8544f "mm: move vma_mmu_pagesize() from hugetlb to vma.c (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260309151901.123947-3-david@kernel.org
-    - 609e88c7236a "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
-- mm-unstable: 8 -> 2 commits
-  - series: 2 (6) -> 0 (1)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 3 -> 0 commits
-    - no role, reviewer: 3 -> 0 commits
+    - series "mm, kvm: allow uffd support in guest_memfd", v3. (15)
+      - f13dc5cb3a86 "userfaultfd: introduce vm_uffd_ops (6/15)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lkml.kernel.org/r/20260330101116.1117699-8-rppt@kernel.org"
+        - added "Cc: Harry Yoo <harry.yoo@oracle.com>"
+        - added "Cc: Andrei Vagin <avagin@google.com>"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org"
+        - dropped "Link: : https://lkml.kernel.org/r/abG5HFV8yoEHOFkh@kernel.org"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "[rppt@kernel.org: allow registration of WP_ASYNC for any VMA]"
+        - Link: https://lkml.kernel.org/r/20260330101116.1117699-8-rppt@kernel.org
+  - dropped commits
+    - bca08876e72e "mm/hugetlb: fix memory offline failure due to hwpoisoned file hugetlb"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260318020711.3596947-1-tujinjiang@huawei.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

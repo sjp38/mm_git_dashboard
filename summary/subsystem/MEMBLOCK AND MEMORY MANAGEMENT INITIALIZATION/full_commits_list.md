@@ -36,20 +36,16 @@
     - 0e628b43ee07 "mm: mark early-init static variables with __meminitdata"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
-- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
+- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
-    - maintainer, maintainer: 1 commits
   - full commits list
-      - 4648235ac00d "mm: switch deferred split shrinker to list_lru" (6/7)
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - 7b17ca8f95cb "kho: add size parameter to kho_add_subtree()" (0/6)
+      - 2d3e232e6e95 "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - 536c818925b0 "kho: persist blob size in KHO FDT" (2/6)
+      - 9074a25f549f "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

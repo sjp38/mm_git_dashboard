@@ -4,16 +4,16 @@
     - no role, no role : 2 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 4 commits
-- mm-hotfixes-unstable: 4 total, 0 (0) series, 4 non-series commits
+- mm-hotfixes-unstable: 5 total, 0 (0) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 2 commits
+    - no role, no role : 3 commits
     - maintainer, nobody: 1 commits
-- mm-stable: 192 total, 29 (141) series, 51 non-series commits
+- mm-stable: 223 total, 31 (172) series, 51 non-series commits
   - author/reviewer role stat
     - no role, nobody: 6 commits
-    - no role, no role : 71 commits
-    - no role, reviewer: 29 commits
+    - no role, no role : 90 commits
+    - no role, reviewer: 41 commits
     - no role, maintainer: 27 commits
     - reviewer, reviewer: 5 commits
     - reviewer, maintainer: 1 commits
@@ -21,23 +21,19 @@
     - maintainer, no role : 3 commits
     - maintainer, reviewer: 3 commits
     - maintainer, maintainer: 16 commits
-- mm-unstable: 98 total, 10 (93) series, 5 non-series commits
+- mm-unstable: 75 total, 7 (60) series, 15 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 12 commits
-    - no role, no role : 39 commits
-    - no role, reviewer: 16 commits
-    - no role, maintainer: 20 commits
-    - reviewer, nobody: 2 commits
+    - no role, nobody: 15 commits
+    - no role, no role : 17 commits
+    - no role, reviewer: 4 commits
+    - no role, maintainer: 26 commits
+    - reviewer, nobody: 4 commits
     - reviewer, no role : 3 commits
     - reviewer, reviewer: 1 commits
     - reviewer, maintainer: 4 commits
-    - maintainer, maintainer: 1 commits
-- mm-new: 17 total, 1 (7) series, 10 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 5 commits
-    - no role, no role : 3 commits
-    - no role, maintainer: 6 commits
-    - reviewer, nobody: 2 commits
     - maintainer, nobody: 1 commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

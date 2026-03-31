@@ -3,125 +3,136 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 7 -> 15 commits
-  - series: 1 (4) -> 2 (12)
+- mm-stable: 15 -> 27 commits
+  - series: 2 (12) -> 3 (24)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 5 -> 8 commits
-    - reviewer, reviewer: 1 -> 5 commits
-  - changed commits
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4)
-      - 1afbb6ef53f2 "mm: khugepaged: export set_recommended_min_free_kbytes() (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-0-31eb98fa5a8b@debian.org
-        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-1-31eb98fa5a8b@debian.org
-      - 239c4438d3ae "mm: huge_memory: refactor anon_enabled_store() with set_anon_enabled_mode() (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-2-31eb98fa5a8b@debian.org
-      - 0218f974ef53 "mm: huge_memory: refactor enabled_store() with set_global_enabled_mode() (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-3-31eb98fa5a8b@debian.org
-      - 6626eb3ce3ad "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org
-    - series "mm: khugepaged cleanups and mTHP prerequisites", v4. (5)
-      - 992b5e1f9240 "mm: introduce is_pmd_order helper (1/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com
-      - 594c6d4347c0 "mm/khugepaged: define KHUGEPAGED_MAX_PTES_LIMIT as HPAGE_PMD_NR - 1 (2/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260325114022.444081-4-npache@redhat.com
-      - 55c18256b2f5 "mm/khugepaged: rename hpage_collapse_* to collapse_* (3/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260325114022.444081-5-npache@redhat.com
-      - 330f3758a3bc "mm/khugepaged: unify khugepaged and madv_collapse with collapse_single_pmd() (4/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260325114022.444081-6-npache@redhat.com
-- mm-unstable: 26 -> 18 commits
-  - series: 2 (25) -> 1 (17)
-    - no role, nobody: 4 -> 0 commits
-    - no role, no role : 2 -> 4 commits
-    - no role, reviewer: 14 -> 12 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 4 -> 0 commits
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 4 commits
+    - no role, reviewer: 8 -> 17 commits
+    - reviewer, reviewer: 5 -> 5 commits (no change)
   - changed commits
     - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13)
-      - 2ff6a253ca94 "mm/huge_memory: simplify vma_is_specal_huge() (0/13)"
+      - e8d52a327ace "mm/huge_memory: simplify vma_is_specal_huge() (0/13)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - branch: mm-unstable -> mm-stable
         - Link: https://lkml.kernel.org/r/cover.1774029655.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/d2b65883dc4895f197c4b4a69fbf27a063463412.1774029655.git.ljs@kernel.org
         - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/ [0]
-      - 3e03df46d25c "mm/huge: avoid big else branch in zap_huge_pmd() (1/13)"
+      - f906c5e25902 "mm/huge: avoid big else branch in zap_huge_pmd() (1/13)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - branch: mm-unstable -> mm-stable
         - Link: https://lkml.kernel.org/r/6b4d5efdbf5554b8fe788f677d0b50f355eec999.1774029655.git.ljs@kernel.org
-      - 4a5b52f0dafa "mm/huge_memory: have zap_huge_pmd return a boolean, add kdoc (2/13)"
+      - adb566c65e7c "mm/huge_memory: have zap_huge_pmd return a boolean, add kdoc (2/13)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - branch: mm-unstable -> mm-stable
         - Link: https://lkml.kernel.org/r/132274566cd49d2960a2294c36dd2450593dfc55.1774029655.git.ljs@kernel.org
-      - 99284596e7fd "mm/huge_memory: handle buggy PMD entry in zap_huge_pmd() (3/13)"
+      - 5ca07f9a9411 "mm/huge_memory: handle buggy PMD entry in zap_huge_pmd() (3/13)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/
         - Link: https://lkml.kernel.org/r/fcf1f6de84a2ace188b6bf103fa15dde695f1ed8.1774029655.git.ljs@kernel.org
-      - 022ea252cf69 "mm/huge_memory: add a common exit path to zap_huge_pmd() (4/13)"
+      - 360023dc0e1f "mm/huge_memory: add a common exit path to zap_huge_pmd() (4/13)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - branch: mm-unstable -> mm-stable
         - Link: https://lkml.kernel.org/r/6b281d8ed972dff0e89bdcbdd810c96c7ae8c9dc.1774029655.git.ljs@kernel.org
-      - 8d9069fdcf1a "mm/huge_memory: remove unnecessary VM_BUG_ON_PAGE() (5/13)"
+      - f50ae554d3d3 "mm/huge_memory: remove unnecessary VM_BUG_ON_PAGE() (5/13)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - branch: mm-unstable -> mm-stable
         - Link: https://lkml.kernel.org/r/f3fa8eb4634ccb2e78209f570cc1a769a02ce93e.1774029655.git.ljs@kernel.org
-      - 4fea42e416fe "mm/huge_memory: deduplicate zap deposited table call (6/13)"
+      - c0a0f843c81d "mm/huge_memory: deduplicate zap deposited table call (6/13)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - branch: mm-unstable -> mm-stable
         - Link: https://lkml.kernel.org/r/71f576a1fbcd27a86322d12caa937bcdacf75407.1774029655.git.ljs@kernel.org
-      - 1c68391dec4a "mm/huge_memory: remove unnecessary sanity checks (7/13)"
+      - c13dd0d29247 "mm/huge_memory: remove unnecessary sanity checks (7/13)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - branch: mm-unstable -> mm-stable
         - Link: https://lkml.kernel.org/r/0c4c5ab247c90f80cf44718e8124b217d6a22544.1774029655.git.ljs@kernel.org
-      - 4a4550db6212 "mm/huge_memory: use mm instead of tlb->mm (8/13)"
+      - c8a88ff552f3 "mm/huge_memory: use mm instead of tlb->mm (8/13)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - branch: mm-unstable -> mm-stable
         - Link: https://lkml.kernel.org/r/98104cde87e4b2aabeb16f236b8731591594457f.1774029655.git.ljs@kernel.org
-      - 99aea5837d6e "mm/huge_memory: separate out the folio part of zap_huge_pmd() (9/13)"
+      - 13cfcae8c07c "mm/huge_memory: separate out the folio part of zap_huge_pmd() (9/13)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+        - branch: mm-unstable -> mm-stable
         - Link: https://lkml.kernel.org/r/6c4db67952f5529da4db102a6149b9050b5dda4e.1774029655.git.ljs@kernel.org
-      - c0cf01223c39 "mm/huge_memory: add and use normal_or_softleaf_folio_pmd() (11/13)"
+      - 10a3f047fc38 "mm/huge_memory: add and use normal_or_softleaf_folio_pmd() (11/13)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - branch: mm-unstable -> mm-stable
         - Link: : https://lkml.kernel.org/r/d0cc6161-77a4-42ba-a411-96c23c78df1b@lucifer.local
         - Link: https://lkml.kernel.org/r/c2be872d64ef9573b80727d9ab5446cf002f17b5.1774029655.git.ljs@kernel.org
-      - c742ba9a59af "mm/huge_memory: add and use has_deposited_pgtable() (12/13)"
+      - 1ee41801bc34 "mm/huge_memory: add and use has_deposited_pgtable() (12/13)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - branch: mm-unstable -> mm-stable
         - Link: : https://lkml.kernel.org/r/0a917f80-902f-49b0-a75f-1bbaf23d7f94@lucifer.local
         - Link: https://lkml.kernel.org/r/f9db59ca90937e39913d50ecb4f662e2bad17bbb.1774029655.git.ljs@kernel.org
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-unstable: 18 -> 6 commits
+  - series: 1 (17) -> 0 (6)
+    - no role, no role : 4 -> 2 commits
+    - no role, reviewer: 12 -> 3 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 0 commits
+  - changed commits
+    - series "Use killable vma write locking in most places", v6. (6)
+      - ecaf2ebf5030 "mm/khugepaged: use vma_start_write_killable() in collapse_huge_page() (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260327205457.604224-4-surenb@google.com
+    - series "selftests/mm: skip several tests when thp is not available", v7. (7)
+      - aa64af4fc658 "selftests/mm: move write_file helper to vm_util (2/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260330151503.670415-4-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260324013316.2590422-4-chuhu@redhat.com"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Nico Pache <npache@redhat.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - Link: https://lkml.kernel.org/r/20260330151503.670415-4-chuhu@redhat.com
+      - fd4d5ae42c17 "selftests/mm: split_huge_page_test: skip the test when thp is not available (5/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260330151503.670415-7-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260324013316.2590422-6-chuhu@redhat.com"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Nico Pache <npache@redhat.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - Link: https://lkml.kernel.org/r/20260330151503.670415-7-chuhu@redhat.com
+      - 703f3789e0c7 "selftests/mm: transhuge_stress: skip the test when thp not available (6/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260330151503.670415-8-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260324013316.2590422-7-chuhu@redhat.com"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Nico Pache <npache@redhat.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - Link: https://lkml.kernel.org/r/20260330151503.670415-8-chuhu@redhat.com
+  - dropped commits
+    - series "mm: switch THP shrinker to list_lru", v3. (7)
+      - 4648235ac00d "mm: switch deferred split shrinker to list_lru (6/7)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

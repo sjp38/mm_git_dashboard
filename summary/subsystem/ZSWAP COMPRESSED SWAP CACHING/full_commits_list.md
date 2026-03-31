@@ -11,24 +11,14 @@
     - b303f6864e3e "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260202-zswap-syncio-cleanup-v1-1-86bb24a64521@tencent.com
-- mm-unstable: 4 total, 1 (4) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - series "zswap pool per-CPU acomp_ctx simplifications". (2 commits)
-      - 4aaf239f0db4 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead()" (0/2)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260314051632.17931-1-kanchanapsridhar2026@gmail.com
-        - Link: https://lkml.kernel.org/r/20260317014802.27591-2-kanchanapsridhar2026@gmail.com
-        - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677 [1]
-      - 3719f13b703f "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (1/2)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260317014802.27591-3-kanchanapsridhar2026@gmail.com
-      - 8b489a0b02c3 "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
+      - 50a3f6d759d6 "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com
-      - fdcec1336bb8 "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
+      - f12044124b37 "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

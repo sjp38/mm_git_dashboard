@@ -3,37 +3,27 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 5 commits
+- mm-stable: 5 -> 5 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 3 commits
   - series: 0 (1) -> 0 (3)
-    - no role, reviewer: 1 -> 4 commits
-    - reviewer, reviewer: 0 -> 1 commits
-  - changed commits
-    - c1a2de4064aa "mm/migrate_device: document folio_get requirement before frozen PMD split"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
-    - 8a8ca142a488 "mm: migrate: requeue destination folio on deferred split queue"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev
-    - series "mm: khugepaged cleanups and mTHP prerequisites", v4. (5)
-      - 992b5e1f9240 "mm: introduce is_pmd_order helper (1/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com
-    - series "mm: remove CONFIG_ARCH_ENABLE_MEMORY_HOTREMOVE and cleanup CONFIG_MIGRATION". (2)
-      - 6509e734cc5d "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
-- mm-unstable: 5 -> 1 commits
-  - series: 0 (3) -> 0 (1)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 3 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - reviewer, nobody: 2 -> 2 commits (no change)
+    - reviewer, nobody: 0 -> 2 commits
+  - changed commits
+    - series "Use killable vma write locking in most places", v6. (6)
+      - 98d67add8b00 "mm: use vma_start_write_killable() in mm syscalls (1/6)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
+      - 4a0a1afcc888 "mm: use vma_start_write_killable() in process_vma_walk_lock() (4/6)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260327205457.604224-6-surenb@google.com
+- mm-new: 2 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - reviewer, nobody: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
