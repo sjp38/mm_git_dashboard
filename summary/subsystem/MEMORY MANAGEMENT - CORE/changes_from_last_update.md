@@ -4,38 +4,44 @@
     - no role, no role : 3 -> 3 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 101 -> 101 commits (no change)
+- mm-stable: 101 -> 104 commits
   - series: 14 (89) -> 14 (89) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 69 -> 69 commits (no change)
+    - no role, no role : 69 -> 72 commits
     - no role, reviewer: 19 -> 19 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 5 -> 4 commits
-  - series: 0 (5) -> 0 (3)
-    - no role, nobody: 1 -> 2 commits
-    - reviewer, nobody: 3 -> 1 commits
+  - changed commits
+    - 982ad7c0d9bb "mm/huge_memory: fix folio isn't locked in softleaf_to_folio()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-stable -> mm-stable
+      - Link: : https://lkml.kernel.org/r/20260321075214.3305564-1-tujinjiang@huawei.com
+      - Link: https://lkml.kernel.org/r/20260319012541.4158561-1-tujinjiang@huawei.com
+    - 76005c2a000e "mm/memory: fix PMD/PUD checks in follow_pfnmap_start()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-stable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260323-follow_pfnmap_fix-v1-1-5b0ec10872b3@kernel.org
+    - 4a2ef276329e "mm/pagewalk: fix race between concurrent split and refault"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-stable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260325-pagewalk-check-pmd-refault-v2-1-707bff33bc60@akamai.com
+- mm-unstable: 4 -> 3 commits
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, nobody: 2 -> 1 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-  - new commits
+  - dropped commits
     - 28208ad9dae4 "mm/sparse: fix BUILD_BUG_ON check for section map alignment"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260331113023.2068075-1-songmuchun@bytedance.com
-  - dropped commits
-    - series "Use killable vma write locking in most places", v6. (6)
-      - 98d67add8b00 "mm: use vma_start_write_killable() in mm syscalls (1/6)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
-      - 4a0a1afcc888 "mm: use vma_start_write_killable() in process_vma_walk_lock() (4/6)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-6-surenb@google.com
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 2 commits
   - new commits
-    - ef222121d2de "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+    - be35f663b117 "mm/vmstat: spread vmstat_update requeue across the stat interval"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
+      - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 4 -> 4 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

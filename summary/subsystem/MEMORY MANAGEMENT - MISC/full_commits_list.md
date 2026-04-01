@@ -1,10 +1,10 @@
 - baseline: v7.0-rc5-46-g24f9515de877
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 22 total, 0 (10) series, 12 non-series commits
+- mm-stable: 21 total, 0 (10) series, 11 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, no role : 5 commits
+    - no role, no role : 4 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 8 commits
     - maintainer, nobody: 3 commits
@@ -51,34 +51,31 @@
     - 8dbc67c2d4b2 "docs: mm: fix typo in numa_memory_policy.rst"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260310151837.5888-1-akinobu.mita@gmail.com
-    - 6235dbcce97f "selftests/mm: verify droppable mappings cannot be locked"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260310155821.17869-2-anthony.yznaga@oracle.com
-      - 868bd070428e "Docs/mm/damon/design: document the goal-based quota tuner selections" (4/11)
+      - 1a3324e82312 "Docs/mm/damon/design: document the goal-based quota tuner selections" (4/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-6-sj@kernel.org
-      - c90100ed7ed4 "Docs/admin-guide/mm/damon/usage: document goal_tuner sysfs file" (5/11)
+      - f7bc28d13905 "Docs/admin-guide/mm/damon/usage: document goal_tuner sysfs file" (5/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260310010529.91162-7-sj@kernel.org
-    - 75af4a7b19c2 "selftests/mm: pagemap_ioctl: remove hungarian notation"
+    - 5d8f2d068321 "selftests/mm: pagemap_ioctl: remove hungarian notation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260311180737.3767545-1-rppt@kernel.org
-    - 999be0959f89 "Docs/mm/damon: document exclusivity of special-purpose modules"
+    - a8a3a34e025d "Docs/mm/damon: document exclusivity of special-purpose modules"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260315162945.80994-1-sj@kernel.org
       - Link: https://lore.kernel.org/damon/20260314002119.79742-1-sj@kernel.org/T/#t [1]
-    - c0ac84ea5543 "Docs/mm/damon/design: document DAMON actions when TRANSPARENT_HUGEPAGE is off"
+    - 1d810dbcbb13 "Docs/mm/damon/design: document DAMON actions when TRANSPARENT_HUGEPAGE is off"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260318035349.88715-1-sj@kernel.org
       - Link: https://lore.kernel.org/66131775-180b-4b9f-b7ce-61a3e077b6e6@huawei-partners.com/ [1]
-      - 6509e734cc5d "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
+      - 82d718179539 "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
-    - cfb3a14c057e "Docs/mm/damon: document min_nr_regions constraint and rationale"
+    - 731b412d53fe "Docs/mm/damon: document min_nr_regions constraint and rationale"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260320052428.213230-1-aethernet65535@gmail.com
       - Link: https://lore.kernel.org/damon/20260319151528.86490-1-sj@kernel.org/T/#t [1]
-    - bc2e0d3bf965 "selftests/mm: add folio_split() and filemap_get_entry() race test"
+    - dd35fd975dcc "selftests/mm: add folio_split() and filemap_get_entry() race test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
       - Link: https://github.com/dfinity/thp-madv-remove-test [2]
@@ -90,64 +87,58 @@
     - no role, reviewer: 5 commits
     - maintainer, nobody: 2 commits
   - full commits list
-    - 0e29de041cc8 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+    - cb10b022911e "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/abongwF3X0G8xY1I@chrisdown.name
-      - 0e59c28739ea "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
+      - ca8b68a372db "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-2-ed6dcd951988@debian.org
-      - e024c172f0b6 "kho: document kexec-metadata tracking feature" (5/6)
+      - fce00b92289b "kho: document kexec-metadata tracking feature" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-6-ed6dcd951988@debian.org
     - series "selftests/mm: skip several tests when thp is not available", v7. (7 commits)
-      - 3986badbc061 "selftests/mm/guard-regions: skip collapse test when thp not enabled" (0/7)
+      - a3d43e00e716 "selftests/mm/guard-regions: skip collapse test when thp not enabled" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260330151503.670415-1-chuhu@redhat.com
         - Link: https://lkml.kernel.org/r/20260330151503.670415-2-chuhu@redhat.com
-      - c54b1d3f6bee "selftests/mm: soft-dirty: skip two tests when thp is not available" (1/7)
+      - e6cb40a17391 "selftests/mm: soft-dirty: skip two tests when thp is not available" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260330151503.670415-3-chuhu@redhat.com
-      - 0cb412ded450 "selftests/mm: move write_file helper to vm_util" (2/7)
+      - 91080d921d84 "selftests/mm: move write_file helper to vm_util" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260330151503.670415-4-chuhu@redhat.com
-      - 08839b331cbe "selftests/mm/vm_util: robust write_file()" (4/7)
+      - 0bd61fd61016 "selftests/mm/vm_util: robust write_file()" (4/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260330151503.670415-6-chuhu@redhat.com
-      - 0a7b3ff50eaa "selftests/mm: split_huge_page_test: skip the test when thp is not available" (5/7)
+      - 5d3ebe22e6d4 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (5/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260330151503.670415-7-chuhu@redhat.com
-      - e32ec7174e33 "selftests/mm: transhuge_stress: skip the test when thp not available" (6/7)
+      - 4d7570016bcf "selftests/mm: transhuge_stress: skip the test when thp not available" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260330151503.670415-8-chuhu@redhat.com
     - series "Docs/admin-guide/mm/damon: warn commit_inputs vs other params race". (2 commits)
-      - 3257d29b6061 "Docs/admin-guide/mm/damon/reclaim: warn commit_inputs vs param updates race" (0/2)
+      - 927549713db2 "Docs/admin-guide/mm/damon/reclaim: warn commit_inputs vs param updates race" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260329153052.46657-2-sj@kernel.org
         - Link: https://lore.kernel.org/20260319161620.189392-3-objecting@objecting.org [1]
         - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [3]
-      - 6a12b096e9bb "Docs/admin-guide/mm/damon/lru_sort: warn commit_inputs vs param updates race" (1/2)
+      - 985c66267c4a "Docs/admin-guide/mm/damon/lru_sort: warn commit_inputs vs param updates race" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260329153052.46657-3-sj@kernel.org
         - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [1]
-- mm-new: 5 total, 0 (1) series, 4 non-series commits
+- mm-new: 3 total, 0 (1) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 1 commits
     - no role, no role : 2 commits
-    - maintainer, nobody: 1 commits
   - full commits list
-    - e33a741dcbf5 "tools/testing/selftests: add merge test for partial msealed range"
+    - 3067a913f40a "tools/testing/selftests: add merge test for partial msealed range"
       - Authored by no role player, reviewed by nobody
       - Link: : https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
       - Link: https://lkml.kernel.org/r/20260331073627.50010-1-ljs@kernel.org
-    - 7aa336005996 "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
-    - 44ea61ed98cc "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
+    - eab48f45cbfb "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260330125307.98581-1-liwang@redhat.com
-    - eb98b0eb95a0 "selftests-mm-skip-hugetlb_dio-tests-when-dio-alignment-is-incompatible-checkpatch-fixes"
-      - Authored by a maintainer, reviewed by nobody
-      - 49399c8cbdbf "selftests/mm: hmm-tests: don't hardcode THP size to 2MB" (1/3)
+      - Link: https://lkml.kernel.org/r/20260401090520.24018-1-liwang@redhat.com
+      - e9436b4eea83 "selftests/mm: hmm-tests: don't hardcode THP size to 2MB" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260331063445.3551404-3-apopple@nvidia.com
         - Link: https://lore.kernel.org/linux-mm/8bd0396a-8997-4d2e-a13f-5aac033083d7@linux.dev/

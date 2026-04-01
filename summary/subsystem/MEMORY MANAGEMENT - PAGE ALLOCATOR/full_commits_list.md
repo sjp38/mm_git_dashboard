@@ -45,13 +45,13 @@
       - Authored by no role player, reviewed by a maintainer
       - Link: : https://lkml.kernel.org/r/20260316223113.20097-1-byungchul@sk.com
       - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
-      - 6626eb3ce3ad "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
+      - 26f502e08c19 "mm: ratelimit min_free_kbytes adjustment messages" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org
-      - 992b5e1f9240 "mm: introduce is_pmd_order helper" (1/5)
+      - b161486d47ef "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com
-    - 20ca3e61929f "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
+    - 68374c501678 "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260320173426.1831267-1-fvdl@google.com
       - Link: https://lore.kernel.org/all/20231122013925.1507-1-justinjiang@vivo.com/ [1]
@@ -59,13 +59,13 @@
   - author/reviewer role stat
     - no role, maintainer: 3 commits
   - full commits list
-      - 7a15a28e4efe "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - a3b29cbc5676 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - b4100b25c864 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - b14881ee9575 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-    - e628264f30a0 "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
+    - 420100665001 "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260331081312.123719-1-hao.ge@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

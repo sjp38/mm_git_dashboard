@@ -9,20 +9,18 @@
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 17 -> 17 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 0 (6) -> 0 (5)
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 3 -> 4 commits
+- mm-unstable: 6 -> 7 commits
+  - series: 0 (5) -> 0 (5) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 0 -> 1 commits
   - new commits
-    - 29d79726d88f "mm/khugepaged: fix issue with tracking lock"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/7760c811-e100-4d40-9217-0813c28314be@lucifer.local
-  - dropped commits
-    - series "Use killable vma write locking in most places", v6. (6)
-      - ecaf2ebf5030 "mm/khugepaged: use vma_start_write_killable() in collapse_huge_page() (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-4-surenb@google.com
+    - 6b3155c15059 "mm: fix deferred split queue races during migration"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
+      - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
+      - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

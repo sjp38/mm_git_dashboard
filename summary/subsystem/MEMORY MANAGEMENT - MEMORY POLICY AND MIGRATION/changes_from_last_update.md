@@ -7,24 +7,25 @@
   - series: 0 (3) -> 0 (3) (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 3 -> 2 commits
-  - series: 0 (3) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
+- mm-unstable: 2 -> 3 commits
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 0 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - reviewer, nobody: 2 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 1 commits
   - new commits
-    - d873dd7a326a "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
-      - Authored by no role player, reviewed by nobody
+    - 6b3155c15059 "mm: fix deferred split queue races during migration"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
+      - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
+      - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
+  - changed commits
+    - a31ffc4ab7be "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Joshua Hahn <joshua.hahnjy@gmail.com>"
+      - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
       - Link: https://lkml.kernel.org/r/20260401005702.7096-1-liu.yun@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
-  - dropped commits
-    - series "Use killable vma write locking in most places", v6. (6)
-      - 98d67add8b00 "mm: use vma_start_write_killable() in mm syscalls (1/6)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
-      - 4a0a1afcc888 "mm: use vma_start_write_killable() in process_vma_walk_lock() (4/6)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-6-surenb@google.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

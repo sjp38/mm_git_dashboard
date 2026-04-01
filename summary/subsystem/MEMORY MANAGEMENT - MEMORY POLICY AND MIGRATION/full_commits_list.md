@@ -12,25 +12,31 @@
     - c1a2de4064aa "mm/migrate_device: document folio_get requirement before frozen PMD split"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260309212502.3922825-1-usama.arif@linux.dev
-    - 8a8ca142a488 "mm: migrate: requeue destination folio on deferred split queue"
+    - 786f8626921c "mm: migrate: requeue destination folio on deferred split queue"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260312104723.1351321-1-usama.arif@linux.dev
-      - 992b5e1f9240 "mm: introduce is_pmd_order helper" (1/5)
+      - b161486d47ef "mm: introduce is_pmd_order helper" (1/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com
-      - 6509e734cc5d "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
+      - 82d718179539 "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
-- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
     - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
+    - reviewer, reviewer: 1 commits
   - full commits list
-      - 5229235d6cfa "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+    - 6b3155c15059 "mm: fix deferred split queue races during migration"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
+      - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
+      - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
+      - 1fb98cf03e8f "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-    - d873dd7a326a "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
-      - Authored by no role player, reviewed by nobody
+    - a31ffc4ab7be "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+      - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260401005702.7096-1-liu.yun@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

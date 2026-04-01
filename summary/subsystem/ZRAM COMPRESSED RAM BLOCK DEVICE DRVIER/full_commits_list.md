@@ -30,14 +30,14 @@
       - fc2093641448 "zram: unify and harden algo/priority params handling" (5/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260311084312.1766036-7-senozhatsky@chromium.org
-    - 34beb65c5f20 "zram: optimize LZ4 dictionary compression performance"
+    - aafa569edb41 "zram: optimize LZ4 dictionary compression performance"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/698181478c9c4b10aa21b4a847bdc706@honor.com
       - Link: https://github.com/lz4/lz4?tab=readme-ov-file [1]
-    - 06158b74b902 "zram: propagate read_from_bdev_async() errors"
+    - 1207420afea8 "zram: propagate read_from_bdev_async() errors"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260316015354.114465-1-senozhatsky@chromium.org
-    - 26196dd69307 "zram: change scan_slots to return void"
+    - 0476d2e93477 "zram: change scan_slots to return void"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260317032349.753645-1-senozhatsky@chromium.org
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
@@ -45,7 +45,7 @@
   - author/reviewer role stat
     - maintainer, no role : 1 commits
   - full commits list
-    - 92ff685c2975 "zram: do not forget to endio for partial discard requests"
+    - 0310cbed6598 "zram: do not forget to endio for partial discard requests"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260331074255.777019-1-senozhatsky@chromium.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

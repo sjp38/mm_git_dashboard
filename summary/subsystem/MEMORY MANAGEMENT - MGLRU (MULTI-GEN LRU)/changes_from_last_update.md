@@ -10,16 +10,23 @@
     - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 18 -> 19 commits
+- mm-unstable: 19 -> 18 commits
   - series: 0 (16) -> 0 (16) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 0 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-  - new commits
+  - changed commits
+    - series "liveupdate: prevent double preservation", v4. (4)
+      - 6f3fa4ba6b2b "mm: vmscan: fix dirty folios throttling on cgroup v1 for MGLRU (3/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+        - Link: https://lkml.kernel.org/r/3445af0f09e8ca945492e052e82594f8c4f2e2f6.1774606060.git.baolin.wang@linux.alibaba.com
+  - dropped commits
     - 28208ad9dae4 "mm/sparse: fix BUILD_BUG_ON check for section map alignment"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260331113023.2068075-1-songmuchun@bytedance.com

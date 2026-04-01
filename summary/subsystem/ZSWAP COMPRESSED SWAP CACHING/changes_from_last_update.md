@@ -6,18 +6,9 @@
 - mm-stable: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 2 -> 4 commits
-  - series: 0 (2) -> 1 (4)
-    - no role, maintainer: 2 -> 4 commits
-  - new commits
-    - series "zswap pool per-CPU acomp_ctx simplifications", v3. (2)
-      - 54f9960def3e "mm: zswap: remove redundant checks in zswap_cpu_comp_dead() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260331183351.29844-2-kanchanapsridhar2026@gmail.com
-        - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677
-      - ca4efa4df874 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260331183351.29844-3-kanchanapsridhar2026@gmail.com
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

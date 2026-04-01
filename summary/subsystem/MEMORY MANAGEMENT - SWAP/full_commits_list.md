@@ -7,11 +7,11 @@
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 19 total, 2 (15) series, 4 non-series commits
+- mm-stable: 20 total, 2 (15) series, 5 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 3 commits
     - reviewer, maintainer: 1 commits
     - maintainer, nobody: 1 commits
     - maintainer, maintainer: 11 commits
@@ -70,20 +70,22 @@
       - 2a8c59379837 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
-    - bd7c4f455f2c "mm/swap: strengthen locking assertions and invariants in cluster allocation"
+    - b5d53b653664 "mm/swap: strengthen locking assertions and invariants in cluster allocation"
       - Authored by no role player, reviewed by a maintainer
       - Link: : https://lkml.kernel.org/r/20260311022241.177801-1-hui.zhu@linux.dev
       - Link: : https://lkml.kernel.org/r/20260312023024.903143-1-hui.zhu@linux.dev
       - Link: https://lkml.kernel.org/r/20260310015657.42395-1-hui.zhu@linux.dev
-    - 86a4887eef5f "mm/swapfile: remove duplicate include of swap_table.h"
+    - cbbca4a4c3fe "mm/swapfile: remove duplicate include of swap_table.h"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260318043849.399266-1-nichen@iscas.ac.cn
-    - 30dc0ffdf2a7 "mm: update outdated comments for removed scan_swap_map_slots()"
+    - 5c26592ef93e "mm: update outdated comments for removed scan_swap_map_slots()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260321105814.7053-1-kexinsun@smail.nju.edu.cn
-- mm-unstable: 9 total, 1 (8) series, 1 non-series commits
+    - e57a8520f286 "mm/swap: fix swap cache memcg accounting"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
+- mm-unstable: 8 total, 1 (8) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 2 commits
@@ -91,35 +93,32 @@
     - reviewer, reviewer: 1 commits
     - reviewer, maintainer: 2 commits
   - full commits list
-      - 7a15a28e4efe "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - a3b29cbc5676 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - bceea817f144 "mm: page_io: prevent memory cgroup release in page_io module" (11/33)
+      - 4c47d7496273 "mm: page_io: prevent memory cgroup release in page_io module" (11/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/7c3708358412fb02c482d0985feb5e9513a863ef.1772711148.git.zhengqi.arch@bytedance.com
-      - 0596496352c9 "mm: swap: prevent lruvec release in lru_gen_clear_refs()" (20/33)
+      - 8190c789ec3f "mm: swap: prevent lruvec release in lru_gen_clear_refs()" (20/33)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/986cd26227191a48a7c34a2a15812d361f4ebd53.1772711148.git.zhengqi.arch@bytedance.com
-      - b4100b25c864 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - b14881ee9575 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-      - f051aeef3f75 "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
+      - c5d0913db103 "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
-      - 5000b7048028 "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
+      - 2414bf001f4a "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - e561e8a6b3f3 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - 333d888a1270 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-2-youngjun.park@lge.com
-      - 1450f1bb2a42 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - 208585723955 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-3-youngjun.park@lge.com
-    - aece7d74ebf6 "mm/page_io: fix PSWPIN undercount for large folios in sio_read_complete()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260323231315.240137-1-devnexen@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

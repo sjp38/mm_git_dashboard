@@ -6,14 +6,8 @@
 - mm-stable: 6 -> 6 commits (no change)
   - series: 1 (6) -> 1 (6) (no change)
     - no role, no role : 6 -> 6 commits (no change)
-- mm-unstable: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - reviewer, nobody: 1 -> 0 commits
-  - dropped commits
-    - series "Use killable vma write locking in most places", v6. (6)
-      - 98d67add8b00 "mm: use vma_start_write_killable() in mm syscalls (1/6)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

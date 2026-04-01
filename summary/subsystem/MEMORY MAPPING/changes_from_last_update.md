@@ -2,58 +2,37 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 4d4a0707039c "mm/vma: fix memory leak in __mmap_region()"
+    - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - 43e388bbe075 "mm/vma: fix memory leak in __mmap_region()"
       - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
       - Link: https://lkml.kernel.org/r/20260331180811.1333348-1-rhkrqnwk98@gmail.com
-- mm-stable: 48 -> 48 commits (no change)
+- mm-stable: 48 -> 49 commits
   - series: 4 (46) -> 4 (46) (no change)
     - no role, nobody: 9 -> 9 commits (no change)
     - no role, no role : 25 -> 25 commits (no change)
-    - no role, reviewer: 13 -> 13 commits (no change)
+    - no role, reviewer: 13 -> 14 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 7 -> 3 commits
-  - series: 2 (7) -> 1 (3)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 2 -> 1 commits
-    - reviewer, nobody: 2 -> 0 commits
+  - changed commits
+    - 103f7c4ae06a "mm/mseal: update VMA end correctly on merge"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-stable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
+- mm-unstable: 3 -> 3 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
-  - dropped commits
-    - series "Use killable vma write locking in most places", v6. (6)
-      - 59c3b197d358 "mm/vma: cleanup error handling path in vma_expand() (0/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-1-surenb@google.com
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-2-surenb@google.com
-      - 98d67add8b00 "mm: use vma_start_write_killable() in mm syscalls (1/6)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
-      - 2d41fc461b2b "mm/vma: use vma_start_write_killable() in vma operations (3/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-5-surenb@google.com
-      - 4a0a1afcc888 "mm: use vma_start_write_killable() in process_vma_walk_lock() (4/6)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-6-surenb@google.com
-- mm-new: 2 -> 2 commits (no change)
+- mm-new: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
-    - e33a741dcbf5 "tools/testing/selftests: add merge test for partial msealed range"
-      - Authored by no role player, reviewed by nobody
-      - Link: : https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
-      - Link: https://lkml.kernel.org/r/20260331073627.50010-1-ljs@kernel.org
+    - no role, nobody: 2 -> 1 commits
+  - dropped commits
     - 7aa336005996 "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
-  - dropped commits
-    - fc127b77592e "selftests/mm: add merge test for partial msealed range"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260330135011.107036-1-ljs@kernel.org
-    - 54c9d0359b18 "selftests-mm-add-merge-test-for-partial-msealed-range-fix"
-      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -24,16 +24,16 @@
       - b5e84b870804 "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - f7556ef6da94 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (6/15)
+      - 84180ddccdf6 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-7-096addc8800d@kernel.org
-      - 968130af1695 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (7/15)
+      - c43fa36e1bb3 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (7/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-8-096addc8800d@kernel.org
-      - d1bebf23909c "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (10/15)
+      - 63d8284105d5 "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (10/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-11-096addc8800d@kernel.org
-    - 0e628b43ee07 "mm: mark early-init static variables with __meminitdata"
+    - c829623f99fe "mm: mark early-init static variables with __meminitdata"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
 - mm-unstable: 2 total, 1 (2) series, 0 non-series commits
@@ -41,11 +41,11 @@
     - no role, no role : 2 commits
   - full commits list
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - 3e172a0cfc50 "kho: add size parameter to kho_add_subtree()" (0/6)
+      - 3164f6e5d4c8 "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - 7a5115436a47 "kho: persist blob size in KHO FDT" (2/6)
+      - 221208299d3c "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -4,42 +4,96 @@
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-hotfixes-unstable: 5 -> 6 commits
+- mm-hotfixes-unstable: 6 -> 6 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 4 commits
+    - no role, no role : 4 -> 4 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - 4d4a0707039c "mm/vma: fix memory leak in __mmap_region()"
+  - changed commits
+    - 43e388bbe075 "mm/vma: fix memory leak in __mmap_region()"
       - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
       - Link: https://lkml.kernel.org/r/20260331180811.1333348-1-rhkrqnwk98@gmail.com
-- mm-stable: 223 -> 223 commits (no change)
-  - series: 31 (172) -> 31 (172) (no change)
+- mm-stable: 223 -> 230 commits
+  - series: 31 (172) -> 32 (175)
     - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 90 -> 90 commits (no change)
-    - no role, reviewer: 41 -> 41 commits (no change)
-    - no role, maintainer: 27 -> 27 commits (no change)
+    - no role, no role : 90 -> 92 commits
+    - no role, reviewer: 41 -> 42 commits
+    - no role, maintainer: 27 -> 31 commits
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 31 -> 31 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 16 -> 16 commits (no change)
-- mm-unstable: 75 -> 83 commits
-  - series: 7 (60) -> 9 (61)
-    - no role, nobody: 15 -> 16 commits
-    - no role, no role : 17 -> 17 commits (no change)
-    - no role, reviewer: 4 -> 5 commits
-    - no role, maintainer: 26 -> 28 commits
-    - reviewer, nobody: 4 -> 2 commits
-    - reviewer, no role : 3 -> 3 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 4 -> 4 commits (no change)
-    - maintainer, nobody: 1 -> 7 commits
-  - new commits
-    - 29d79726d88f "mm/khugepaged: fix issue with tracking lock"
+  - changed commits
+    - e57a8520f286 "mm/swap: fix swap cache memcg accounting"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-stable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
+    - series "mm/damon/sysfs: fix memory leak and NULL dereference issues", v4. (3)
+      - be0d38762a44 "mm/damon/sysfs: fix param_ctx leak on damon_sysfs_new_test_ctx() failure (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-hotfixes-stable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260321175427.86000-1-sj@kernel.org
+        - Link: https://lkml.kernel.org/r/20260321175427.86000-2-sj@kernel.org
+      - ebeda8d94fda "mm/damon/sysfs: check contexts->nr before accessing contexts_arr[0] (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-hotfixes-stable -> mm-stable
+        - Link: https://lkml.kernel.org/r/20260321175427.86000-3-sj@kernel.org
+      - 34657eef2918 "mm/damon/sysfs: check contexts->nr in repeat_call_fn (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-hotfixes-stable -> mm-stable
+        - Link: https://patch.msgid.link/20260320163559.178101-3-objecting@objecting.org
+        - Link: https://lkml.kernel.org/r/20260321175427.86000-4-sj@kernel.org
+        - Link: https://github.com/damonitor/damo [1]
+    - 76005c2a000e "mm/memory: fix PMD/PUD checks in follow_pfnmap_start()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-stable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260323-follow_pfnmap_fix-v1-1-5b0ec10872b3@kernel.org
+    - 4a2ef276329e "mm/pagewalk: fix race between concurrent split and refault"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-stable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260325-pagewalk-check-pmd-refault-v2-1-707bff33bc60@akamai.com
+    - 103f7c4ae06a "mm/mseal: update VMA end correctly on merge"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/7760c811-e100-4d40-9217-0813c28314be@lucifer.local
+      - branch: mm-hotfixes-stable -> mm-stable
+      - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
+- mm-unstable: 83 -> 80 commits
+  - series: 9 (61) -> 9 (60)
+    - no role, nobody: 16 -> 12 commits
+    - no role, no role : 17 -> 17 commits (no change)
+    - no role, reviewer: 5 -> 6 commits
+    - no role, maintainer: 28 -> 28 commits (no change)
+    - reviewer, nobody: 2 -> 2 commits (no change)
+    - reviewer, no role : 3 -> 3 commits (no change)
+    - reviewer, reviewer: 1 -> 2 commits
+    - reviewer, maintainer: 4 -> 4 commits (no change)
+    - maintainer, nobody: 7 -> 6 commits
+  - new commits
+    - 6b3155c15059 "mm: fix deferred split queue races during migration"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
+      - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
+      - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
+  - changed commits
+    - series "liveupdate: prevent double preservation", v4. (4)
+      - 6f3fa4ba6b2b "mm: vmscan: fix dirty folios throttling on cgroup v1 for MGLRU (3/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+        - Link: https://lkml.kernel.org/r/3445af0f09e8ca945492e052e82594f8c4f2e2f6.1774606060.git.baolin.wang@linux.alibaba.com
+    - a31ffc4ab7be "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Joshua Hahn <joshua.hahnjy@gmail.com>"
+      - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
+      - Link: https://lkml.kernel.org/r/20260401005702.7096-1-liu.yun@linux.dev
+      - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
+  - dropped commits
+    - aece7d74ebf6 "mm/page_io: fix PSWPIN undercount for large folios in sio_read_complete()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260323231315.240137-1-devnexen@gmail.com
     - series "mm, kvm: allow uffd support in guest_memfd", v3. (15)
       - 38cd9fca6f6b "mm/userfaultfd: detect VMA replacement after copy retry in mfill_copy_folio_retry() (10/15)"
         - Authored by no role player, reviewed by nobody
@@ -49,83 +103,19 @@
     - 28208ad9dae4 "mm/sparse: fix BUILD_BUG_ON check for section map alignment"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260331113023.2068075-1-songmuchun@bytedance.com
-    - series "zswap pool per-CPU acomp_ctx simplifications", v3. (2)
-      - 54f9960def3e "mm: zswap: remove redundant checks in zswap_cpu_comp_dead() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260331183351.29844-2-kanchanapsridhar2026@gmail.com
-        - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677
-      - ca4efa4df874 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260331183351.29844-3-kanchanapsridhar2026@gmail.com
-    - series "mm/damon/core: fix damon_call()/damos_walk() vs kdmond exit race". (None)
-      - d652489f0a9b "mm/damon/core: fix damon_call() vs kdamond_fn() exit race (0/None)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327233319.3528-1-sj@kernel.org
-        - Link: https://lkml.kernel.org/r/20260327233319.3528-2-sj@kernel.org
-        - Link: https://lore.kernel.org/20260325141956.87144-1-sj@kernel.org [1]
-    - 600dae248624 "mm/damon/core: fix damos_walk() vs kdamond_fn() exit race"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260327233319.3528-3-sj@kernel.org
-      - Link: https://lore.kernel.org/20260325141956.87144-1-sj@kernel.org [1]
-    - 2d62f483a73a "mm/damon/stat: fix memory leak on damon_start() failure in damon_stat_start()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260331101553.88422-1-liu.yun@linux.dev
-    - series "mm/damon/core: validate damos_quota_goal->nid". (None)
-      - 9d6ffcc1e354 "mm/damon/core: validate damos_quota_goal->nid for node_mem_{used,free}_bp (None/None)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260329043902.46163-2-sj@kernel.org
-        - Link: https://lore.kernel.org/20260325073034.140353-1-objecting@objecting.org [1]
-        - Link: https://lore.kernel.org/20260327040924.68553-1-sj@kernel.org [2]
-    - dee0e2449f38 "mm/damon/core: validate damos_quota_goal->nid for node_memcg_{used,free}_bp"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260329043902.46163-3-sj@kernel.org
-    - 267457333c21 "mm/damon/core: use time_in_range_open() for damos quota window start"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260329152306.45796-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260324040722.57944-1-sj@kernel.org [1]
-    - d873dd7a326a "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260401005702.7096-1-liu.yun@linux.dev
-      - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
-  - changed commits
-    - series "mm, kvm: allow uffd support in guest_memfd", v3. (15)
-      - 02e8624b5355 "userfaultfd: introduce mfill_establish_pmd() helper (2/15)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Harry Yoo (Oracle) <harry@kernel.org>"
-        - dropped "Cc: Harry Yoo <harry.yoo@oracle.com>"
-        - Link: https://lkml.kernel.org/r/20260330101116.1117699-4-rppt@kernel.org
-    - e628264f30a0 "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://lkml.kernel.org/r/20260331081312.123719-1-hao.ge@linux.dev"
-      - added "Cc: Kent Overstreet <kent.overstreet@linux.dev>"
-      - dropped "Link: https://lkml.kernel.org/r/20260327080623.123212-1-hao.ge@linux.dev"
-      - Link: https://lkml.kernel.org/r/20260331081312.123719-1-hao.ge@linux.dev
-  - dropped commits
-    - series "Use killable vma write locking in most places", v6. (6)
-      - 59c3b197d358 "mm/vma: cleanup error handling path in vma_expand() (0/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-1-surenb@google.com
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-2-surenb@google.com
-      - 98d67add8b00 "mm: use vma_start_write_killable() in mm syscalls (1/6)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
-      - ecaf2ebf5030 "mm/khugepaged: use vma_start_write_killable() in collapse_huge_page() (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-4-surenb@google.com
-      - 2d41fc461b2b "mm/vma: use vma_start_write_killable() in vma operations (3/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-5-surenb@google.com
-      - 4a0a1afcc888 "mm: use vma_start_write_killable() in process_vma_walk_lock() (4/6)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-6-surenb@google.com
-- mm-new: 1 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 2 commits
   - new commits
-    - ef222121d2de "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+    - be35f663b117 "mm/vmstat: spread vmstat_update requeue across the stat interval"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
+      - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
+  - dropped commits
+    - f82c84a905e3 "mm/vmalloc: use dedicated unbound workqueue for vmap purge/drain"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260330175824.2777270-1-urezki@gmail.com
+      - Link: https://lore.kernel.org/all/20260319074307.2325-1-lirongqing@baidu.com/
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -3,72 +3,47 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 22 -> 22 commits (no change)
+- mm-stable: 22 -> 21 commits
   - series: 0 (10) -> 0 (10) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 5 -> 5 commits (no change)
+    - no role, no role : 5 -> 4 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-unstable: 13 -> 11 commits
-  - series: 1 (8) -> 2 (10)
-    - no role, nobody: 5 -> 1 commits
+  - dropped commits
+    - 6235dbcce97f "selftests/mm: verify droppable mappings cannot be locked"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260310155821.17869-2-anthony.yznaga@oracle.com
+- mm-unstable: 11 -> 11 commits (no change)
+  - series: 2 (10) -> 2 (10) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 0 -> 2 commits
-  - new commits
-    - series "Docs/admin-guide/mm/damon: warn commit_inputs vs other params race". (2)
-      - 3257d29b6061 "Docs/admin-guide/mm/damon/reclaim: warn commit_inputs vs param updates race (0/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260329153052.46657-2-sj@kernel.org
-        - Link: https://lore.kernel.org/20260319161620.189392-3-objecting@objecting.org [1]
-        - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [3]
-      - 6a12b096e9bb "Docs/admin-guide/mm/damon/lru_sort: warn commit_inputs vs param updates race (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260329153052.46657-3-sj@kernel.org
-        - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [1]
+    - maintainer, nobody: 2 -> 2 commits (no change)
+- mm-new: 5 -> 3 commits
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+  - changed commits
+    - eab48f45cbfb "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lkml.kernel.org/r/20260401090520.24018-1-liwang@redhat.com"
+      - added "Cc: Michal Hocko <mhocko@suse.com>"
+      - added "Cc: Shuah Khan <shuah@kernel.org>"
+      - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+      - added "Cc: Liam Howlett <liam.howlett@oracle.com>"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330125307.98581-1-liwang@redhat.com"
+      - Link: https://lkml.kernel.org/r/20260401090520.24018-1-liwang@redhat.com
   - dropped commits
-    - 7b2c3d892967 "selftests/mm: respect build verbosity settings for 32/64-bit targets"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260331040156.119158-1-liwang@redhat.com
-    - eccd4b43e9d6 "selftests/mm: serialize local_config generation for parallel builds"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260331040156.119158-2-liwang@redhat.com
-    - c8f0665880ea "selftests/lib.mk: set PWD from CURDIR to avoid wrong extmod path"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260331040156.119158-3-liwang@redhat.com
-    - 24e341657c28 "selftests/mm: fix cow/gup_longterm link failures when liburing flags are missing"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260331040156.119158-4-liwang@redhat.com
-- mm-new: 2 -> 5 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 0 -> 2 commits
-    - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - e33a741dcbf5 "tools/testing/selftests: add merge test for partial msealed range"
-      - Authored by no role player, reviewed by nobody
-      - Link: : https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
-      - Link: https://lkml.kernel.org/r/20260331073627.50010-1-ljs@kernel.org
     - 7aa336005996 "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
-    - 44ea61ed98cc "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260330125307.98581-1-liwang@redhat.com
     - eb98b0eb95a0 "selftests-mm-skip-hugetlb_dio-tests-when-dio-alignment-is-incompatible-checkpatch-fixes"
-      - Authored by a maintainer, reviewed by nobody
-    - series "Minor hmm_test fixes and cleanups". (3)
-      - 49399c8cbdbf "selftests/mm: hmm-tests: don't hardcode THP size to 2MB (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260331063445.3551404-3-apopple@nvidia.com
-        - Link: https://lore.kernel.org/linux-mm/8bd0396a-8997-4d2e-a13f-5aac033083d7@linux.dev/
-  - dropped commits
-    - fc127b77592e "selftests/mm: add merge test for partial msealed range"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260330135011.107036-1-ljs@kernel.org
-    - 54c9d0359b18 "selftests-mm-add-merge-test-for-partial-msealed-range-fix"
       - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

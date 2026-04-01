@@ -19,7 +19,7 @@
       - dc120a406c0c "mm: support batched checking of the young flag for MGLRU" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com
-    - 76aa5be01ec5 "mm/mglru: fix cgroup OOM during MGLRU state switching"
+    - a744312fa833 "mm/mglru: fix cgroup OOM during MGLRU state switching"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260319-b4-switch-mglru-v2-v5-1-8898491e5f17@gmail.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits

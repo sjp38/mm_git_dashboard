@@ -7,27 +7,20 @@
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 12 -> 14 commits
-  - series: 1 (12) -> 1 (14)
-    - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 5 -> 6 commits
+- mm-unstable: 14 -> 12 commits
+  - series: 1 (14) -> 1 (12)
+    - no role, nobody: 5 -> 4 commits
+    - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
+    - maintainer, nobody: 1 -> 0 commits
+  - dropped commits
     - series "mm, kvm: allow uffd support in guest_memfd", v3. (15)
       - 38cd9fca6f6b "mm/userfaultfd: detect VMA replacement after copy retry in mfill_copy_folio_retry() (10/15)"
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260331134158.622084-1-devnexen@gmail.com
       - 85066bbbdab7 "shmem-userfaultfd-implement-shmem-uffd-operations-using-vm_uffd_ops-fix-fix (11/15)"
         - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - series "mm, kvm: allow uffd support in guest_memfd", v3. (15)
-      - 02e8624b5355 "userfaultfd: introduce mfill_establish_pmd() helper (2/15)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Harry Yoo (Oracle) <harry@kernel.org>"
-        - dropped "Cc: Harry Yoo <harry.yoo@oracle.com>"
-        - Link: https://lkml.kernel.org/r/20260330101116.1117699-4-rppt@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
