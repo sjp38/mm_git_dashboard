@@ -3,18 +3,11 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 3 commits
-  - series: 1 (2) -> 1 (3)
-    - no role, no role : 2 -> 3 commits
-  - changed commits
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v4. (25)
-      - c82df3f5f5ae "mm: convert do_brk_flags() to use vma_flags_t (16/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/d02e3e45d9a33d7904b149f5604904089fd640ae.1774034900.git.ljs@kernel.org
-- mm-unstable: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
+- mm-stable: 3 -> 3 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

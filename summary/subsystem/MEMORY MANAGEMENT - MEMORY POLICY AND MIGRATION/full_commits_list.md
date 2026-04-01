@@ -21,20 +21,18 @@
       - 6509e734cc5d "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
-- mm-unstable: 3 total, 0 (3) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 1 commits
-    - reviewer, nobody: 2 commits
   - full commits list
-      - eeb02a1b8a14 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+      - 5229235d6cfa "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-      - 98d67add8b00 "mm: use vma_start_write_killable() in mm syscalls" (1/6)
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
-      - 4a0a1afcc888 "mm: use vma_start_write_killable() in process_vma_walk_lock()" (4/6)
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-6-surenb@google.com
+    - d873dd7a326a "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260401005702.7096-1-liu.yun@linux.dev
+      - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -364,29 +364,32 @@
       - 1ea2783347ee "mm: add softleaf_is_valid_pmd_entry(), pmd_to_softleaf_folio()" (10/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/b677592596274fa3fd701890497948e4b0e07cec.1774029655.git.ljs@kernel.org
-- mm-unstable: 5 total, 0 (5) series, 0 non-series commits
+- mm-unstable: 4 total, 0 (3) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - reviewer, nobody: 3 commits
+    - no role, nobody: 2 commits
+    - reviewer, nobody: 1 commits
     - reviewer, no role : 1 commits
   - full commits list
-      - 6e66c331f22f "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - 92949a527225 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
         - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-      - 98d67add8b00 "mm: use vma_start_write_killable() in mm syscalls" (1/6)
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
-      - 4a0a1afcc888 "mm: use vma_start_write_killable() in process_vma_walk_lock()" (4/6)
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-6-surenb@google.com
-      - f13dc5cb3a86 "userfaultfd: introduce vm_uffd_ops" (6/15)
+      - 44c15c511132 "userfaultfd: introduce vm_uffd_ops" (6/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260330101116.1117699-8-rppt@kernel.org
-      - fc9fd0d3b358 "mm: generalize handling of userfaults in __do_fault()" (11/15)
+      - 99e8b0257212 "mm: generalize handling of userfaults in __do_fault()" (13/15)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260330101116.1117699-13-rppt@kernel.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+    - 28208ad9dae4 "mm/sparse: fix BUILD_BUG_ON check for section map alignment"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260331113023.2068075-1-songmuchun@bytedance.com
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - ef222121d2de "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 4 total, 0 (1) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
@@ -412,11 +415,11 @@
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-    - 1035c2e3f8b7 "kernel/fork: validate exit_signal in kernel_clone()"
+    - 1ffdc69f894a "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
       - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
       - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
-    - 6b128c859d76 "kernel-fork-validate-exit_signal-in-kernel_clone-fix"
+    - 54f95470198f "kernel-fork-validate-exit_signal-in-kernel_clone-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com

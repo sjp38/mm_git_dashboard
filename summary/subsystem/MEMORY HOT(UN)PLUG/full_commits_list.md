@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 53930026f170 "mm/memory_hotplug: maintain N_NORMAL_MEMORY during hotplug"
+    - 5f8d7bf3db2b "mm/memory_hotplug: maintain N_NORMAL_MEMORY during hotplug"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260330035941.518186-1-hao.li@linux.dev
 - mm-stable: 6 total, 1 (4) series, 2 non-series commits

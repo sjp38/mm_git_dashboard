@@ -7,23 +7,26 @@
   - series: 0 (3) -> 0 (3) (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 1 -> 3 commits
-  - series: 0 (1) -> 0 (3)
+- mm-unstable: 3 -> 2 commits
+  - series: 0 (3) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - reviewer, nobody: 0 -> 2 commits
-  - changed commits
+    - reviewer, nobody: 2 -> 0 commits
+  - new commits
+    - d873dd7a326a "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260401005702.7096-1-liu.yun@linux.dev
+      - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
+  - dropped commits
     - series "Use killable vma write locking in most places", v6. (6)
       - 98d67add8b00 "mm: use vma_start_write_killable() in mm syscalls (1/6)"
         - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
       - 4a0a1afcc888 "mm: use vma_start_write_killable() in process_vma_walk_lock() (4/6)"
         - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260327205457.604224-6-surenb@google.com
-- mm-new: 2 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - reviewer, nobody: 2 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -12,14 +12,9 @@
     - maintainer, maintainer: 1 -> 1 commits (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - ff02b14f414c "mm/vmalloc: use dedicated unbound workqueue for vmap purge/drain"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260330175824.2777270-1-urezki@gmail.com
-      - Link: https://lore.kernel.org/all/20260319074307.2325-1-lirongqing@baidu.com/
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

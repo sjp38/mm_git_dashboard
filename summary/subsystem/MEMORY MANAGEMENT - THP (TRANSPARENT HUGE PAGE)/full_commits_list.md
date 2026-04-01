@@ -100,28 +100,28 @@
         - Authored by no role player, reviewed by no role player
         - Link: : https://lkml.kernel.org/r/0a917f80-902f-49b0-a75f-1bbaf23d7f94@lucifer.local
         - Link: https://lkml.kernel.org/r/f9db59ca90937e39913d50ecb4f662e2bad17bbb.1774029655.git.ljs@kernel.org
-- mm-unstable: 6 total, 0 (6) series, 0 non-series commits
+- mm-unstable: 6 total, 0 (5) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, reviewer: 3 commits
+    - no role, no role : 1 commits
+    - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 9d97c89afd21 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+    - 29d79726d88f "mm/khugepaged: fix issue with tracking lock"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/7760c811-e100-4d40-9217-0813c28314be@lucifer.local
+      - 7a15a28e4efe "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 8eb093564c4f "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
+      - d260a5f60326 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
-      - ecaf2ebf5030 "mm/khugepaged: use vma_start_write_killable() in collapse_huge_page()" (2/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260327205457.604224-4-surenb@google.com
-      - aa64af4fc658 "selftests/mm: move write_file helper to vm_util" (2/7)
+      - 0cb412ded450 "selftests/mm: move write_file helper to vm_util" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260330151503.670415-4-chuhu@redhat.com
-      - fd4d5ae42c17 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (5/7)
+      - 0a7b3ff50eaa "selftests/mm: split_huge_page_test: skip the test when thp is not available" (5/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260330151503.670415-7-chuhu@redhat.com
-      - 703f3789e0c7 "selftests/mm: transhuge_stress: skip the test when thp not available" (6/7)
+      - e32ec7174e33 "selftests/mm: transhuge_stress: skip the test when thp not available" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260330151503.670415-8-chuhu@redhat.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

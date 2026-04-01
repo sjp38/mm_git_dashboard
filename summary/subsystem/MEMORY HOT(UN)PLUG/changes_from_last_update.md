@@ -1,13 +1,9 @@
 - baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de877 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 53930026f170 "mm/memory_hotplug: maintain N_NORMAL_MEMORY during hotplug"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260330035941.518186-1-hao.li@linux.dev
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 6 -> 6 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, no role : 6 -> 6 commits (no change)

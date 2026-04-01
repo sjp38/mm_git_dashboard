@@ -10,34 +10,21 @@
     - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 17 -> 18 commits
+- mm-unstable: 18 -> 19 commits
   - series: 0 (16) -> 0 (16) (no change)
-    - no role, no role : 1 -> 2 commits
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 7 -> 8 commits
+    - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-    - maintainer, maintainer: 1 -> 0 commits
-  - changed commits
-    - series "liveupdate: prevent double preservation", v4. (4)
-      - 9f421d11d688 "mm: vmscan: fix dirty folios throttling on cgroup v1 for MGLRU (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lkml.kernel.org/r/3445af0f09e8ca945492e052e82594f8c4f2e2f6.1774606060.git.baolin.wang@linux.alibaba.com
-    - 2491bef123b5 "mm/vmscan: prevent MGLRU reclaim from pinning address space"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260322070843.941997-1-surenb@google.com
-  - dropped commits
-    - series "mm: switch THP shrinker to list_lru", v3. (7)
-      - 4648235ac00d "mm: switch deferred split shrinker to list_lru (6/7)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
-- mm-new: 2 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - 28208ad9dae4 "mm/sparse: fix BUILD_BUG_ON check for section map alignment"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260331113023.2068075-1-songmuchun@bytedance.com
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

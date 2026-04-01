@@ -3,28 +3,19 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 6 commits
-  - series: 1 (5) -> 1 (6)
-    - no role, no role : 5 -> 6 commits
-  - changed commits
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v4. (25)
-      - de600864e1d6 "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t (22/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/51afbb2b8c3681003cc7926647e37335d793836e.1774034900.git.ljs@kernel.org
-- mm-unstable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 0 commits
-    - reviewer, nobody: 0 -> 1 commits
-  - changed commits
+- mm-stable: 6 -> 6 commits (no change)
+  - series: 1 (6) -> 1 (6) (no change)
+    - no role, no role : 6 -> 6 commits (no change)
+- mm-unstable: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - reviewer, nobody: 1 -> 0 commits
+  - dropped commits
     - series "Use killable vma write locking in most places", v6. (6)
       - 98d67add8b00 "mm: use vma_start_write_killable() in mm syscalls (1/6)"
         - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - reviewer, nobody: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

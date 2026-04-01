@@ -10,26 +10,9 @@
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 2 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 2 -> 1 commits
-  - changed commits
-    - series "mm, kvm: allow uffd support in guest_memfd", v3. (15)
-      - f13dc5cb3a86 "userfaultfd: introduce vm_uffd_ops (6/15)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/20260330101116.1117699-8-rppt@kernel.org"
-        - added "Cc: Harry Yoo <harry.yoo@oracle.com>"
-        - added "Cc: Andrei Vagin <avagin@google.com>"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org"
-        - dropped "Link: : https://lkml.kernel.org/r/abG5HFV8yoEHOFkh@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "[rppt@kernel.org: allow registration of WP_ASYNC for any VMA]"
-        - Link: https://lkml.kernel.org/r/20260330101116.1117699-8-rppt@kernel.org
-  - dropped commits
-    - bca08876e72e "mm/hugetlb: fix memory offline failure due to hwpoisoned file hugetlb"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260318020711.3596947-1-tujinjiang@huawei.com
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

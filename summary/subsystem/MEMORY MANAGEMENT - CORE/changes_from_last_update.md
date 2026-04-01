@@ -4,169 +4,38 @@
     - no role, no role : 3 -> 3 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 76 -> 101 commits
-  - series: 11 (64) -> 14 (89)
+- mm-stable: 101 -> 101 commits (no change)
+  - series: 14 (89) -> 14 (89) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 49 -> 69 commits
-    - no role, reviewer: 14 -> 19 commits
+    - no role, no role : 69 -> 69 commits (no change)
+    - no role, reviewer: 19 -> 19 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v4. (25)
-      - b4b3ebc95d0b "mm/vma: add vma_flags_empty(), vma_flags_and(), vma_flags_diff_pair() (0/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/cover.1774034900.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/53ab55b7da91425775e42c03177498ad6de88ef4.1774034900.git.ljs@kernel.org
-      - 1768f1100338 "mm/vma: use new VMA flags for sticky flags logic (4/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/369574f06360ffa44707047e3b58eb4897345fba.1774034900.git.ljs@kernel.org
-      - 727379605d71 "mm/vma: add append_vma_flags() helper (6/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/9f928cd4688270002f2c0c3777fcc9b49cc7a8ea.1774034900.git.ljs@kernel.org
-      - 40c6472b37b5 "mm: unexport vm_brk_flags() and eliminate vm_flags parameter (8/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/7bada48ddf3f9dbd3e6c4fc50ec2f4de97706f52.1774034900.git.ljs@kernel.org
-      - 62d9bbe26c33 "mm/vma: introduce vma_flags_same[_mask/_pair]() (9/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/4f764bf619e77205837c7c819b62139ef6337ca3.1774034900.git.ljs@kernel.org
-      - 0ea1d71902c8 "mm/vma: introduce vma_test[_any[_mask]](), and make inlining consistent (12/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/be1d71f08307d747a82232cbd8664a88c0f41419.1774034900.git.ljs@kernel.org
-      - c0afe9d17ca9 "mm: introduce vma_flags_count() and vma[_flags]_test_single_mask() (14/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/cd778dd02b9f2a01eb54d25a49dea8ec2ddf7753.1774034900.git.ljs@kernel.org
-      - c82df3f5f5ae "mm: convert do_brk_flags() to use vma_flags_t (16/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/d02e3e45d9a33d7904b149f5604904089fd640ae.1774034900.git.ljs@kernel.org
-      - 3a0f409641c4 "mm: update vma_supports_mlock() to use new VMA flags (17/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/49cc166dbafe0a81abc4581a9f5c84630b02fcb8.1774034900.git.ljs@kernel.org
-      - 36654889a3e7 "mm/vma: introduce vma_clear_flags[_mask]() (18/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/9bd15da35c2c90e7441265adf01b5c2d3b5c6d41.1774034900.git.ljs@kernel.org
-      - 4db41c1a3243 "mm/vma: convert as much as we can in mm/vma.c to vma_flags_t (20/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/5fdeaf8af9a12c2a5d68497495f52fa627d05a5b.1774034900.git.ljs@kernel.org
-      - de600864e1d6 "mm/vma: convert vma_modify_flags[_uffd]() to use vma_flags_t (22/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/51afbb2b8c3681003cc7926647e37335d793836e.1774034900.git.ljs@kernel.org
-      - df97d2efdb96 "mm/vma: convert __mmap_region() to use vma_flags_t (23/25)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/1fc33a404c962f02da778da100387cc19bd62153.1774034900.git.ljs@kernel.org
-    - series "mm: expand mmap_prepare functionality and usage", v4. (21)
-      - b8f97fd54293 "mm: various small mmap_prepare cleanups (0/21)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/cover.1774045440.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/99f408e4694f44ab12bdc55fe0bd9685d3bd1117.1774045440.git.ljs@kernel.org
-      - c60d5b713033 "mm: document vm_operations_struct->open the same as close() (2/21)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/7d0ca833c12014320f0fa00f816f95e6e10076f2.1774045440.git.ljs@kernel.org
-      - 9ea9b799d74b "mm: avoid deadlock when holding rmap on mmap_prepare error (3/21)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/d44248be9da68258b07c2c59d4e73485ee0ca943.1774045440.git.ljs@kernel.org
-      - 5e3b3df43290 "mm: switch the rmap lock held option off in compat layer (4/21)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/dda74230d26a1fcd79a3efab61fa4101dd1cac64.1774045440.git.ljs@kernel.org
-      - 9b6d2ba87cc2 "mm: have mmap_action_complete() handle the rmap lock and unmap (6/21)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/8d1ee8ebd3542d006a47e8382fb80cf5b57ecf10.1774045440.git.ljs@kernel.org
-      - b950ba2a37c2 "mm: add vm_ops->mapped hook (7/21)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/4c5e98297eb0aae9565c564e1c296a112702f144.1774045440.git.ljs@kernel.org
-      - 4ee467ff032c "mm: add mmap_action_simple_ioremap() (10/21)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/a08ef1c4542202684da63bb37f459d5dbbeddd91.1774045440.git.ljs@kernel.org
-      - 5272ecf1fffc "mm: allow handling of stacked mmap_prepare hooks in more drivers (16/21)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/24aac3019dd34740e788d169fccbe3c62781e648.1774045440.git.ljs@kernel.org
-      - 2165f6568f03 "mm: add mmap_action_map_kernel_pages[_full]() (19/21)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/926ac961690d856e67ec847bee2370ab3c6b9046.1774045440.git.ljs@kernel.org
-      - 0a3c1b9157cf "mm: on remap assert that input range within the proposed VMA (20/21)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/0fc1092f4b74f3f673a58e4e3942dc83f336dd85.1774045440.git.ljs@kernel.org
-    - series "mm/huge_memory: refactor zap_huge_pmd()", v3. (13)
-      - e8d52a327ace "mm/huge_memory: simplify vma_is_specal_huge() (0/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/cover.1774029655.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/d2b65883dc4895f197c4b4a69fbf27a063463412.1774029655.git.ljs@kernel.org
-        - Link: https://lore.kernel.org/all/6b3d7ad7-49e1-407a-903d-3103704160d8@lucifer.local/ [0]
-      - 1ea2783347ee "mm: add softleaf_is_valid_pmd_entry(), pmd_to_softleaf_folio() (10/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lkml.kernel.org/r/b677592596274fa3fd701890497948e4b0e07cec.1774029655.git.ljs@kernel.org
-- mm-unstable: 29 -> 5 commits
-  - series: 3 (29) -> 0 (5)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 20 -> 0 commits
-    - no role, reviewer: 5 -> 0 commits
-    - reviewer, nobody: 1 -> 3 commits
+- mm-unstable: 5 -> 4 commits
+  - series: 0 (5) -> 0 (3)
+    - no role, nobody: 1 -> 2 commits
+    - reviewer, nobody: 3 -> 1 commits
     - reviewer, no role : 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 0 commits
-  - changed commits
+  - new commits
+    - 28208ad9dae4 "mm/sparse: fix BUILD_BUG_ON check for section map alignment"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260331113023.2068075-1-songmuchun@bytedance.com
+  - dropped commits
     - series "Use killable vma write locking in most places", v6. (6)
       - 98d67add8b00 "mm: use vma_start_write_killable() in mm syscalls (1/6)"
         - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260327205457.604224-3-surenb@google.com
       - 4a0a1afcc888 "mm: use vma_start_write_killable() in process_vma_walk_lock() (4/6)"
         - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
         - Link: https://lkml.kernel.org/r/20260327205457.604224-6-surenb@google.com
-    - series "mm, kvm: allow uffd support in guest_memfd", v3. (15)
-      - f13dc5cb3a86 "userfaultfd: introduce vm_uffd_ops (6/15)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/20260330101116.1117699-8-rppt@kernel.org"
-        - added "Cc: Andrei Vagin <avagin@google.com>"
-        - added "Cc: Harry Yoo <harry.yoo@oracle.com>"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260306171815.3160826-8-rppt@kernel.org"
-        - dropped "Link: : https://lkml.kernel.org/r/abG5HFV8yoEHOFkh@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "[rppt@kernel.org: allow registration of WP_ASYNC for any VMA]"
-        - Link: https://lkml.kernel.org/r/20260330101116.1117699-8-rppt@kernel.org
-      - fc9fd0d3b358 "mm: generalize handling of userfaults in __do_fault() (11/15)"
-        - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lkml.kernel.org/r/20260330101116.1117699-13-rppt@kernel.org"
-        - added "Cc: Andrei Vagin <avagin@google.com>"
-        - added "Cc: Harry Yoo <harry.yoo@oracle.com>"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260306171815.3160826-13-rppt@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260330101116.1117699-13-rppt@kernel.org
-  - dropped commits
-    - series "mm: switch THP shrinker to list_lru", v3. (7)
-      - 4648235ac00d "mm: switch deferred split shrinker to list_lru (6/7)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
-- mm-new: 2 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - reviewer, nobody: 2 -> 0 commits
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - ef222121d2de "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 4 -> 4 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

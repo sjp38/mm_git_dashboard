@@ -59,15 +59,15 @@
   - author/reviewer role stat
     - no role, maintainer: 3 commits
   - full commits list
-      - 9d97c89afd21 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 7a15a28e4efe "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - ab35962ba82f "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - b4100b25c864 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-    - b327fb0ed018 "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
+    - e628264f30a0 "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260327080623.123212-1-hao.ge@linux.dev
+      - Link: https://lkml.kernel.org/r/20260331081312.123719-1-hao.ge@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -83,62 +83,73 @@
       - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
       - Link: https://github.com/dfinity/thp-madv-remove-test [2]
       - Link: https://lkml.kernel.org/r/20260323163717.184107-1-ziy@nvidia.com
-- mm-unstable: 13 total, 1 (8) series, 5 non-series commits
+- mm-unstable: 11 total, 2 (10) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 5 commits
+    - no role, nobody: 1 commits
     - no role, no role : 3 commits
     - no role, reviewer: 5 commits
+    - maintainer, nobody: 2 commits
   - full commits list
-    - 84c131a0a7f6 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+    - 0e29de041cc8 "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/abongwF3X0G8xY1I@chrisdown.name
-      - 592a6a0a4709 "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
+      - 0e59c28739ea "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-2-ed6dcd951988@debian.org
-      - c7a417717beb "kho: document kexec-metadata tracking feature" (5/6)
+      - e024c172f0b6 "kho: document kexec-metadata tracking feature" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-6-ed6dcd951988@debian.org
     - series "selftests/mm: skip several tests when thp is not available", v7. (7 commits)
-      - e25248ae815f "selftests/mm/guard-regions: skip collapse test when thp not enabled" (0/7)
+      - 3986badbc061 "selftests/mm/guard-regions: skip collapse test when thp not enabled" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260330151503.670415-1-chuhu@redhat.com
         - Link: https://lkml.kernel.org/r/20260330151503.670415-2-chuhu@redhat.com
-      - 741aeded0424 "selftests/mm: soft-dirty: skip two tests when thp is not available" (1/7)
+      - c54b1d3f6bee "selftests/mm: soft-dirty: skip two tests when thp is not available" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260330151503.670415-3-chuhu@redhat.com
-      - aa64af4fc658 "selftests/mm: move write_file helper to vm_util" (2/7)
+      - 0cb412ded450 "selftests/mm: move write_file helper to vm_util" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260330151503.670415-4-chuhu@redhat.com
-      - f2249de582c3 "selftests/mm/vm_util: robust write_file()" (4/7)
+      - 08839b331cbe "selftests/mm/vm_util: robust write_file()" (4/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260330151503.670415-6-chuhu@redhat.com
-      - fd4d5ae42c17 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (5/7)
+      - 0a7b3ff50eaa "selftests/mm: split_huge_page_test: skip the test when thp is not available" (5/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260330151503.670415-7-chuhu@redhat.com
-      - 703f3789e0c7 "selftests/mm: transhuge_stress: skip the test when thp not available" (6/7)
+      - e32ec7174e33 "selftests/mm: transhuge_stress: skip the test when thp not available" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260330151503.670415-8-chuhu@redhat.com
-    - 7b2c3d892967 "selftests/mm: respect build verbosity settings for 32/64-bit targets"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260331040156.119158-1-liwang@redhat.com
-    - eccd4b43e9d6 "selftests/mm: serialize local_config generation for parallel builds"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260331040156.119158-2-liwang@redhat.com
-    - c8f0665880ea "selftests/lib.mk: set PWD from CURDIR to avoid wrong extmod path"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260331040156.119158-3-liwang@redhat.com
-    - 24e341657c28 "selftests/mm: fix cow/gup_longterm link failures when liburing flags are missing"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260331040156.119158-4-liwang@redhat.com
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
+    - series "Docs/admin-guide/mm/damon: warn commit_inputs vs other params race". (2 commits)
+      - 3257d29b6061 "Docs/admin-guide/mm/damon/reclaim: warn commit_inputs vs param updates race" (0/2)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260329153052.46657-2-sj@kernel.org
+        - Link: https://lore.kernel.org/20260319161620.189392-3-objecting@objecting.org [1]
+        - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [3]
+      - 6a12b096e9bb "Docs/admin-guide/mm/damon/lru_sort: warn commit_inputs vs param updates race" (1/2)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260329153052.46657-3-sj@kernel.org
+        - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [1]
+- mm-new: 5 total, 0 (1) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 2 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - fc127b77592e "selftests/mm: add merge test for partial msealed range"
+    - e33a741dcbf5 "tools/testing/selftests: add merge test for partial msealed range"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260330135011.107036-1-ljs@kernel.org
-    - 54c9d0359b18 "selftests-mm-add-merge-test-for-partial-msealed-range-fix"
+      - Link: : https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
+      - Link: https://lkml.kernel.org/r/20260331073627.50010-1-ljs@kernel.org
+    - 7aa336005996 "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
+    - 44ea61ed98cc "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260330125307.98581-1-liwang@redhat.com
+    - eb98b0eb95a0 "selftests-mm-skip-hugetlb_dio-tests-when-dio-alignment-is-incompatible-checkpatch-fixes"
       - Authored by a maintainer, reviewed by nobody
+      - 49399c8cbdbf "selftests/mm: hmm-tests: don't hardcode THP size to 2MB" (1/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260331063445.3551404-3-apopple@nvidia.com
+        - Link: https://lore.kernel.org/linux-mm/8bd0396a-8997-4d2e-a13f-5aac033083d7@linux.dev/
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

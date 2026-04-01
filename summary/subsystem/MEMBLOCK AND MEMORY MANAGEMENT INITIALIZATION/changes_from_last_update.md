@@ -8,15 +8,9 @@
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-unstable: 3 -> 2 commits
-  - series: 1 (3) -> 1 (2)
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - maintainer, maintainer: 1 -> 0 commits
-  - dropped commits
-    - series "mm: switch THP shrinker to list_lru", v3. (7)
-      - 4648235ac00d "mm: switch deferred split shrinker to list_lru (6/7)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260318200352.1039011-8-hannes@cmpxchg.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
