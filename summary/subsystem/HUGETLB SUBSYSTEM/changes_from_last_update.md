@@ -11,15 +11,8 @@
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
 - mm-unstable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (0)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - 5e5d455134cf "userfaultfd: introduce vm_uffd_ops"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org"
-      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
-      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-8-rppt@kernel.org"
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

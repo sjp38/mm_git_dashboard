@@ -381,30 +381,30 @@
     - reviewer, nobody: 1 commits
     - reviewer, no role : 1 commits
   - full commits list
-      - 2db2feba92ee "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - 4994815a5803 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
         - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-    - d152a67ae8b6 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+    - e68e62f5d36b "mm/sparse: fix preinited section_mem_map clobbering on failure path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
-    - 5e5d455134cf "userfaultfd: introduce vm_uffd_ops"
+    - 46a4df12621f "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
-    - 8d341fd61834 "mm: generalize handling of userfaults in __do_fault()"
+    - c12245feaf47 "mm: generalize handling of userfaults in __do_fault()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
+- mm-new: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 4d2f23ed129b "mm/vmstat: spread vmstat_update requeue across the stat interval"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
-    - a8dd3b0fad4a "mm/sparse: fix comment for section map alignment"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
+      - cb0d26a180b1 "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
+      - 4681e0408c55 "mm/sparse: fix comment for section map alignment" (4/8)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 4 total, 0 (1) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
@@ -430,11 +430,11 @@
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-    - 8aabaa96a480 "kernel/fork: validate exit_signal in kernel_clone()"
+    - 47b43bc0b209 "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
       - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
       - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
-    - 9e4f0be584f7 "kernel-fork-validate-exit_signal-in-kernel_clone-fix"
+    - 2ff43c8de63c "kernel-fork-validate-exit_signal-in-kernel_clone-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com

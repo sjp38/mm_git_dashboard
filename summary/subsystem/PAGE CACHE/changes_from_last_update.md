@@ -9,16 +9,9 @@
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (0)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 50cd2b70a937 "KVM: guest_memfd: implement userfaultfd operations"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-14-rppt@kernel.org"
-      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
-      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-14-rppt@kernel.org"
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-14-rppt@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

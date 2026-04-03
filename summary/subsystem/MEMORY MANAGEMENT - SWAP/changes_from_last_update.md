@@ -17,22 +17,17 @@
       - Authored by no role player, reviewed by a maintainer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 1 (8) -> 0 (6)
-    - no role, no role : 1 -> 2 commits
+- mm-unstable: 8 -> 9 commits
+  - series: 0 (6) -> 1 (8)
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 2 -> 2 commits (no change)
+    - reviewer, maintainer: 2 -> 3 commits
   - new commits
-    - 27de7cb0c2f6 "mm/page_io: use sio->len for PSWPIN accounting in sio_read_complete()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260402061408.36119-1-devnexen@gmail.com
-  - dropped commits
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - 333d888a1270 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device (0/8)"
-        - Authored by a reviewer, reviewed by nobody
+      - 43ab166c3a06 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device (0/8)"
+        - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-2-youngjun.park@lge.com
 - mm-new: 0 -> 0 commits (no change)

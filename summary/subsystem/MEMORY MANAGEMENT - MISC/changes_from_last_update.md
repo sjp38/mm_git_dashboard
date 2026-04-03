@@ -11,81 +11,23 @@
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-unstable: 11 -> 13 commits
-  - series: 2 (10) -> 2 (11)
+- mm-unstable: 13 -> 13 commits (no change)
+  - series: 2 (11) -> 2 (11) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 5 commits
+    - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
   - changed commits
-    - 2149bb4f5e22 "tools/testing/selftests: add merge test for partial msealed range"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: : https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
-      - Link: https://lkml.kernel.org/r/20260331073627.50010-1-ljs@kernel.org
-    - 5fab509ded02 "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260401090520.24018-1-liwang@redhat.com
     - series "Minor hmm_test fixes and cleanups". (3)
-      - 1fd63328c88d "selftests/mm: hmm-tests: don't hardcode THP size to 2MB (1/3)"
+      - d58c9d66f26b "selftests/mm: hmm-tests: don't hardcode THP size to 2MB (1/3)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Cc: Matthew Brost <matthew.brost@intel.com>"
+        - added "Cc: <stable@vger,kernel.org>"
         - Link: https://lkml.kernel.org/r/20260331063445.3551404-3-apopple@nvidia.com
         - Link: https://lore.kernel.org/linux-mm/8bd0396a-8997-4d2e-a13f-5aac033083d7@linux.dev/
-    - series "selftests/mm: skip several tests when thp is not available", v8. (6)
-      - d87e1dfd6d9d "selftests/mm/guard-regions: skip collapse test when thp not enabled (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-2-chuhu@redhat.com"
-        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-1-chuhu@redhat.com"
-        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-1-chuhu@redhat.com"
-        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-2-chuhu@redhat.com"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-1-chuhu@redhat.com
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-2-chuhu@redhat.com
-      - bc78b5487e8e "selftests/mm: soft-dirty: skip two tests when thp is not available (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-3-chuhu@redhat.com"
-        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-3-chuhu@redhat.com"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-3-chuhu@redhat.com
-      - 82a779a71016 "selftests/mm: move write_file helper to vm_util (2/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com"
-        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-4-chuhu@redhat.com"
-        - dropped "Cc: Li Wang <liwang@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com
-      - 92e70158c215 "selftests/mm/vm_util: robust write_file() (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-5-chuhu@redhat.com"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-6-chuhu@redhat.com"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: Li Wang <liwang@redhat.com>"
-        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-5-chuhu@redhat.com
-      - 760d26269641 "selftests/mm: split_huge_page_test: skip the test when thp is not available (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com"
-        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-7-chuhu@redhat.com"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com
-      - 78d89a66d621 "selftests/mm: transhuge_stress: skip the test when thp not available (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com"
-        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-8-chuhu@redhat.com"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com
-  - dropped commits
-    - cb10b022911e "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/abongwF3X0G8xY1I@chrisdown.name
-- mm-new: 3 -> 1 commits
-  - series: 0 (1) -> 0 (0)
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (1)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 0 commits
-  - new commits
-    - 3371340c1000 "selftests/mm: verify droppable mappings cannot be locked"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260402003417.438037-3-anthony.yznaga@oracle.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

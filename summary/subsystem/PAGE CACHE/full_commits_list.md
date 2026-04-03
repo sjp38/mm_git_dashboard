@@ -4,10 +4,10 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-    - 0461b154dd2a "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
+    - 4fa56b129c80 "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/1cf1ac59018fc647a87b0dad605d4056a71c14e4.1773739704.git.baolin.wang@linux.alibaba.com
-    - d198402b2657 "mm: reinstate unconditional writeback start in balance_dirty_pages()"
+    - bb27147aaccc "mm: reinstate unconditional writeback start in balance_dirty_pages()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260326215127.3857682-2-joannelkoong@gmail.com
 - mm-stable: 3 total, 0 (3) series, 0 non-series commits
@@ -29,10 +29,10 @@
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-    - 114b06d8c624 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - c3461e77d14b "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260326234629.840938-2-joannelkoong@gmail.com
-    - 50cd2b70a937 "KVM: guest_memfd: implement userfaultfd operations"
+    - 0882d8611dce "KVM: guest_memfd: implement userfaultfd operations"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-14-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

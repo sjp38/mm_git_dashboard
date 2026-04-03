@@ -11,20 +11,12 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-unstable: 16 -> 16 commits (no change)
   - series: 0 (14) -> 0 (14) (no change)
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 2 -> 3 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-  - changed commits
-    - cc262c3f93f9 "mm: remove '!root_reclaim' checking in should_abort_scan()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - added "Acked-by: Qi Zheng <qi.zheng@linux.dev>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lkml.kernel.org/r/20260318011558.1696310-1-zhaoyang.huang@unisoc.com
-      - Link: https://lkml.kernel.org/r/20260212032111.408865-1-zhaoyang.huang@unisoc.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

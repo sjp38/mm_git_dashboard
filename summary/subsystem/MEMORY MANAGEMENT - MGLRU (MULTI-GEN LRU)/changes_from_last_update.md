@@ -12,27 +12,15 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-unstable: 18 -> 18 commits (no change)
   - series: 0 (16) -> 0 (16) (no change)
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 3 -> 4 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-  - changed commits
-    - cc262c3f93f9 "mm: remove '!root_reclaim' checking in should_abort_scan()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Qi Zheng <qi.zheng@linux.dev>"
-      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lkml.kernel.org/r/20260318011558.1696310-1-zhaoyang.huang@unisoc.com
-      - Link: https://lkml.kernel.org/r/20260212032111.408865-1-zhaoyang.huang@unisoc.com
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - a8dd3b0fad4a "mm/sparse: fix comment for section map alignment"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (1)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
