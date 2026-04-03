@@ -10,7 +10,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 43e388bbe075 "mm/vma: fix memory leak in __mmap_region()"
+    - 157a59697eec "mm/vma: fix memory leak in __mmap_region()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260331180811.1333348-1-rhkrqnwk98@gmail.com
 - mm-stable: 49 total, 4 (46) series, 3 non-series commits
@@ -176,32 +176,34 @@
       - 955066b5cd52 "mm: add mmap_action_map_kernel_pages[_full]()" (19/21)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/926ac961690d856e67ec847bee2370ab3c6b9046.1774045440.git.ljs@kernel.org
-- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
+- mm-unstable: 5 total, 1 (3) series, 2 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
     - no role, maintainer: 1 commits
     - reviewer, no role : 2 commits
   - full commits list
-      - a3b29cbc5676 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 11da11b7b871 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-    - series "mm/mprotect: micro-optimization work", v2. (2 commits)
-      - 0ec7c157d81b "mm/mprotect: move softleaf code out of the main function" (0/2)
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260324154342.156640-1-pfalcato@suse.de
-        - Link: https://lkml.kernel.org/r/20260324154342.156640-2-pfalcato@suse.de
-        - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
-        - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
-        - Link: https://lkml.kernel.org/r/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]
-      - 6f58ef9f7c29 "mm/mprotect: special-case small folios when applying write permissions" (1/2)
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260324154342.156640-3-pfalcato@suse.de
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-    - 3067a913f40a "tools/testing/selftests: add merge test for partial msealed range"
+    - 2149bb4f5e22 "tools/testing/selftests: add merge test for partial msealed range"
       - Authored by no role player, reviewed by nobody
       - Link: : https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
       - Link: https://lkml.kernel.org/r/20260331073627.50010-1-ljs@kernel.org
+    - series "mm/mprotect: micro-optimization work", v3. (2 commits)
+      - b5729097e365 "mm/mprotect: move softleaf code out of the main function" (0/2)
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260402141628.3367596-1-pfalcato@suse.de
+        - Link: https://lkml.kernel.org/r/20260402141628.3367596-2-pfalcato@suse.de
+        - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
+        - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
+        - Link: https://lkml.kernel.org/r/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]
+      - 9bb9c47c5d34 "mm/mprotect: special-case small folios when applying permissions" (1/2)
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260402141628.3367596-3-pfalcato@suse.de
+    - 077646ca5562 "mm: fix mmap errno value when MAP_DROPPABLE is not supported"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260402003417.438037-2-anthony.yznaga@oracle.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -374,32 +374,37 @@
       - ad95490535da "mm: add softleaf_is_valid_pmd_entry(), pmd_to_softleaf_folio()" (10/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/b677592596274fa3fd701890497948e4b0e07cec.1774029655.git.ljs@kernel.org
-- mm-unstable: 3 total, 0 (3) series, 0 non-series commits
+- mm-unstable: 4 total, 0 (1) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, no role : 1 commits
     - reviewer, nobody: 1 commits
     - reviewer, no role : 1 commits
   - full commits list
-      - 35680902338d "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - 2db2feba92ee "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
         - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-      - ad641c2faf28 "userfaultfd: introduce vm_uffd_ops" (6/15)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260330101116.1117699-8-rppt@kernel.org
-      - d0a6c93a6b43 "mm: generalize handling of userfaults in __do_fault()" (11/15)
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260330101116.1117699-13-rppt@kernel.org
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-  - full commits list
-    - 9a98767252d2 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+    - d152a67ae8b6 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
-    - be35f663b117 "mm/vmstat: spread vmstat_update requeue across the stat interval"
-      - Authored by no role player, reviewed by no role player
+    - 5e5d455134cf "userfaultfd: introduce vm_uffd_ops"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
+    - 8d341fd61834 "mm: generalize handling of userfaults in __do_fault()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+    - 4d2f23ed129b "mm/vmstat: spread vmstat_update requeue across the stat interval"
+      - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
+    - a8dd3b0fad4a "mm/sparse: fix comment for section map alignment"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 4 total, 0 (1) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
@@ -425,11 +430,11 @@
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-    - 112036656f7f "kernel/fork: validate exit_signal in kernel_clone()"
+    - 8aabaa96a480 "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
       - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
       - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
-    - 89d0fa120ff9 "kernel-fork-validate-exit_signal-in-kernel_clone-fix"
+    - 9e4f0be584f7 "kernel-fork-validate-exit_signal-in-kernel_clone-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com

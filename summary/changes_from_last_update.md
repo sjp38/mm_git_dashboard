@@ -5,24 +5,31 @@
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-hotfixes-unstable: 9 -> 9 commits (no change)
+- mm-hotfixes-unstable: 9 -> 10 commits
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 2 commits
+  - new commits
+    - 2b9c6f786a66 "mm/damon/stat: deallocate damon_call() failure leaking damon_ctx"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260402134418.74121-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260401012428.86694-1-sj@kernel.org [1]
   - changed commits
-    - 43e388bbe075 "mm/vma: fix memory leak in __mmap_region()"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260331180811.1333348-1-rhkrqnwk98@gmail.com
-- mm-stable: 359 -> 368 commits
-  - series: 39 (279) -> 40 (282)
-    - no role, nobody: 21 -> 22 commits
-    - no role, no role : 136 -> 139 commits
-    - no role, reviewer: 46 -> 47 commits
-    - no role, maintainer: 43 -> 47 commits
+    - series "liveupdate: fix incoming error handling and teardown paths", v2. (2)
+      - 63177705f250 "liveupdate: propagate file deserialization failures (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
+        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260325044608.8407-1-leotimmins1974@gmail.com
+        - Link: https://lkml.kernel.org/r/20260325044608.8407-2-leotimmins1974@gmail.com
+- mm-stable: 368 -> 368 commits (no change)
+  - series: 40 (282) -> 40 (282) (no change)
+    - no role, nobody: 22 -> 22 commits (no change)
+    - no role, no role : 139 -> 139 commits (no change)
+    - no role, reviewer: 47 -> 47 commits (no change)
+    - no role, maintainer: 47 -> 47 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
@@ -77,93 +84,329 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-  - dropped commits
-    - 6235dbcce97f "selftests/mm: verify droppable mappings cannot be locked"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260310155821.17869-2-anthony.yznaga@oracle.com
-- mm-unstable: 115 -> 112 commits
-  - series: 13 (88) -> 13 (89)
-    - no role, nobody: 22 -> 18 commits
-    - no role, no role : 23 -> 23 commits (no change)
-    - no role, reviewer: 10 -> 11 commits
-    - no role, maintainer: 29 -> 29 commits (no change)
-    - reviewer, nobody: 2 -> 2 commits (no change)
+- mm-unstable: 112 -> 114 commits
+  - series: 13 (89) -> 13 (79)
+    - no role, nobody: 18 -> 10 commits
+    - no role, no role : 23 -> 29 commits
+    - no role, reviewer: 11 -> 12 commits
+    - no role, maintainer: 29 -> 32 commits
+    - reviewer, nobody: 2 -> 1 commits
     - reviewer, no role : 3 -> 3 commits (no change)
-    - reviewer, reviewer: 1 -> 2 commits
+    - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
-    - maintainer, nobody: 14 -> 13 commits
-    - maintainer, no role : 6 -> 6 commits (no change)
+    - maintainer, nobody: 13 -> 12 commits
+    - maintainer, no role : 6 -> 8 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - new commits
-    - 6b3155c15059 "mm: fix deferred split queue races during migration"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
-      - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
-      - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
+    - series "mm/mprotect: micro-optimization work", v3. (2)
+      - 9bb9c47c5d34 "mm/mprotect: special-case small folios when applying permissions (1/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260402141628.3367596-3-pfalcato@suse.de
+    - 077646ca5562 "mm: fix mmap errno value when MAP_DROPPABLE is not supported"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260402003417.438037-2-anthony.yznaga@oracle.com
+    - 27de7cb0c2f6 "mm/page_io: use sio->len for PSWPIN accounting in sio_read_complete()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260402061408.36119-1-devnexen@gmail.com
   - changed commits
-    - series "liveupdate: prevent double preservation", v4. (4)
-      - 6f3fa4ba6b2b "mm: vmscan: fix dirty folios throttling on cgroup v1 for MGLRU (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lkml.kernel.org/r/3445af0f09e8ca945492e052e82594f8c4f2e2f6.1774606060.git.baolin.wang@linux.alibaba.com
-    - a31ffc4ab7be "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+    - series "liveupdate: Fix module unloading and unregister API", v3. (10)
+      - b70ff9921940 "liveupdate: defer FLB module refcounting to active sessions (4/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
+        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260327033335.696621-6-pasha.tatashin@soleen.com
+      - feeaf3ab7b6d "liveupdate: remove luo_session_quiesce() (5/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
+        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260327033335.696621-7-pasha.tatashin@soleen.com
+    - 0d245b7d99f9 "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
       - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Joshua Hahn <joshua.hahnjy@gmail.com>"
-      - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
+      - added "Reviewed by: Donet Tom <donettom@linux.ibm.com>"
+      - dropped "Cc: Donet Tom <donettom@linux.ibm.com>"
       - Link: https://lkml.kernel.org/r/20260401005702.7096-1-liu.yun@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
-  - dropped commits
-    - aece7d74ebf6 "mm/page_io: fix PSWPIN undercount for large folios in sio_read_complete()"
+    - 2149bb4f5e22 "tools/testing/selftests: add merge test for partial msealed range"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260323231315.240137-1-devnexen@gmail.com
-    - series "mm, kvm: allow uffd support in guest_memfd", v3. (15)
-      - 38cd9fca6f6b "mm/userfaultfd: detect VMA replacement after copy retry in mfill_copy_folio_retry() (10/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260331134158.622084-1-devnexen@gmail.com
-      - 85066bbbdab7 "shmem-userfaultfd-implement-shmem-uffd-operations-using-vm_uffd_ops-fix-fix (11/15)"
-        - Authored by a maintainer, reviewed by nobody
-    - 28208ad9dae4 "mm/sparse: fix BUILD_BUG_ON check for section map alignment"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260331113023.2068075-1-songmuchun@bytedance.com
-- mm-new: 10 -> 8 commits
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, nobody: 3 -> 1 commits
-    - no role, no role : 5 -> 6 commits
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - be35f663b117 "mm/vmstat: spread vmstat_update requeue across the stat interval"
+      - branch: mm-new -> mm-unstable
+      - Link: : https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
+      - Link: https://lkml.kernel.org/r/20260331073627.50010-1-ljs@kernel.org
+    - 5fab509ded02 "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
-  - changed commits
-    - eab48f45cbfb "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lkml.kernel.org/r/20260401090520.24018-1-liwang@redhat.com"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - added "Cc: Michal Hocko <mhocko@suse.com>"
-      - added "Cc: Liam Howlett <liam.howlett@oracle.com>"
-      - added "Cc: Mike Rapoport <rppt@kernel.org>"
-      - added "Cc: Shuah Khan <shuah@kernel.org>"
-      - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-      - dropped "Link: https://lkml.kernel.org/r/20260330125307.98581-1-liwang@redhat.com"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260401090520.24018-1-liwang@redhat.com
-    - 0310cbed6598 "zram: do not forget to endio for partial discard requests"
+    - series "Minor hmm_test fixes and cleanups". (3)
+      - f6e90f27527d "lib: test_hmm: evict device pages on file close to avoid use-after-free (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260331063445.3551404-1-apopple@nvidia.com
+        - Link: https://lkml.kernel.org/r/20260331063445.3551404-2-apopple@nvidia.com
+      - 1fd63328c88d "selftests/mm: hmm-tests: don't hardcode THP size to 2MB (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260331063445.3551404-3-apopple@nvidia.com
+        - Link: https://lore.kernel.org/linux-mm/8bd0396a-8997-4d2e-a13f-5aac033083d7@linux.dev/
+      - 8465a297844b "lib: test_hmm: implement a device release method (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lkml.kernel.org/r/20260331063445.3551404-4-apopple@nvidia.com
+    - 26119b1a8b9b "zram: do not forget to endio for partial discard requests"
       - Authored by a maintainer, reviewed by no role player
-      - added "Fixes: 0120dd6e4e20 ("zram: make zram_bio_discard more self-contained")"
-      - dropped "Fixes: 0120dd6e4e202 ("zram: make zram_bio_discard more self-contained")"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260331074255.777019-1-senozhatsky@chromium.org
+    - d152a67ae8b6 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed by: Donet Tom <donettom@linux.ibm.com>"
+      - dropped "Cc: Donet Tom <donettom@linux.ibm.com>"
+      - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
+    - 18ec70b9a245 "mm/memfd: use folio_nr_pages() for shmem inode accounting"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
+      - added "Reviewed-by: Pasha Tatashin <pasha.tatashin@soleen.com>"
+      - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+      - dropped "Cc: Pasha Tatashin <pasha.tatashin@soleen.com>"
+      - Link: https://lkml.kernel.org/r/20260326084727.118437-1-duanchenghao@kylinos.cn
+      - Link: https://lkml.kernel.org/r/20260326084727.118437-2-duanchenghao@kylinos.cn
+    - d1b6ce4c7dd8 "mm/memfd_luo: optimize shmem_recalc_inode calls in retrieve path"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
+      - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+      - Link: https://lkml.kernel.org/r/20260326084727.118437-3-duanchenghao@kylinos.cn
+    - 0db4c99fc203 "mm/memfd_luo: fix physical address conversion in put_folios cleanup"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Fixes: b3749f174d68 ("mm: memfd_luo: allow preserving memfd")"
+      - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
+      - added "Reviewed-by: Pasha Tatashin <pasha.tatashin@soleen.com>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+      - dropped "Cc: Pasha Tatashin <pasha.tatashin@soleen.com>"
+      - Link: https://lkml.kernel.org/r/20260326084727.118437-6-duanchenghao@kylinos.cn
+    - 4cb28ec74592 "mm/memfd_luo: remove folio from page cache when accounting fails"
+      - Authored by no role player, reviewed by a maintainer
+      - added "[pratyush@kernel.org: changelog alterations]"
+      - added "Link: : https://lkml.kernel.org/r/2vxzzf3lfujq.fsf@kernel.org"
+      - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
+      - added "Reviewed-by: Pasha Tatashin <pasha.tatashin@soleen.com>"
+      - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+      - dropped "Cc: Pasha Tatashin <pasha.tatashin@soleen.com>"
+      - Link: : https://lkml.kernel.org/r/2vxzzf3lfujq.fsf@kernel.org
+      - Link: https://lkml.kernel.org/r/20260326084727.118437-7-duanchenghao@kylinos.cn
+    - cc262c3f93f9 "mm: remove '!root_reclaim' checking in should_abort_scan()"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - added "Acked-by: Qi Zheng <qi.zheng@linux.dev>"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+      - Link: https://lkml.kernel.org/r/20260318011558.1696310-1-zhaoyang.huang@unisoc.com
+      - Link: https://lkml.kernel.org/r/20260212032111.408865-1-zhaoyang.huang@unisoc.com
+    - series "mm/mprotect: micro-optimization work", v3. (2)
+      - b5729097e365 "mm/mprotect: move softleaf code out of the main function (0/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260402141628.3367596-1-pfalcato@suse.de"
+        - added "Link: https://lkml.kernel.org/r/20260402141628.3367596-2-pfalcato@suse.de"
+        - dropped "Link: https://lkml.kernel.org/r/20260324154342.156640-1-pfalcato@suse.de"
+        - dropped "Link: https://lkml.kernel.org/r/20260324154342.156640-2-pfalcato@suse.de"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260402141628.3367596-1-pfalcato@suse.de
+        - Link: https://lkml.kernel.org/r/20260402141628.3367596-2-pfalcato@suse.de
+        - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
+        - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
+        - Link: https://lkml.kernel.org/r/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]
+    - series "mm, kvm: allow uffd support in guest_memfd", v4. (4)
+      - b7565c8ded9c "userfaultfd: introduce mfill_copy_folio_locked() helper (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-1-rppt@kernel.org"
+        - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-2-rppt@kernel.org"
+        - added "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Harry Yoo <harry.yoo@oracle.com>"
+        - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-1-rppt@kernel.org"
+        - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-2-rppt@kernel.org"
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-1-rppt@kernel.org
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-2-rppt@kernel.org
+      - 8c9e2ee49c28 "userfaultfd: introduce struct mfill_state (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org"
+        - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-3-rppt@kernel.org"
+        - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
+      - 709b3f9ee8ad "userfaultfd: introduce mfill_establish_pmd() helper (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-4-rppt@kernel.org"
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - added "Cc: Harry Yoo <harry.yoo@oracle.com>"
+        - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-4-rppt@kernel.org"
+        - dropped "Acked-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-4-rppt@kernel.org
+      - e2d3cd7e8b30 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma() (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org"
+        - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-5-rppt@kernel.org"
+        - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
+    - fe0b9dbb5112 "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-6-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-6-rppt@kernel.org"
+      - Link: : https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
+      - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-6-rppt@kernel.org
+    - 70c2ff8a395f "userfaultfd: move vma_can_userfault out of line"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-7-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-7-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-7-rppt@kernel.org
+    - 5e5d455134cf "userfaultfd: introduce vm_uffd_ops"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-8-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
+    - 2dfd911f62c2 "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-9-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-9-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-9-rppt@kernel.org
+    - d5da16999b15 "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-10-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-10-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-10-rppt@kernel.org
+    - 0bf04a29e956 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-11-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-11-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-11-rppt@kernel.org
+    - 1140a70e6a51 "userfaultfd: mfill_atomic(): remove retry logic"
+      - Authored by no role player, reviewed by nobody
+      - added "[rppt@kernel.org: remove safety measure of not returning ENOENT from _copy]"
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-12-rppt@kernel.org"
+      - added "Link: : https://lkml.kernel.org/r/ac5zcDUY8CFHr6Lw@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-12-rppt@kernel.org"
+      - Link: : https://lkml.kernel.org/r/ac5zcDUY8CFHr6Lw@kernel.org
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-12-rppt@kernel.org
+    - 8d341fd61834 "mm: generalize handling of userfaults in __do_fault()"
+      - Authored by a reviewer, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-13-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org
+    - 50cd2b70a937 "KVM: guest_memfd: implement userfaultfd operations"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-14-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-14-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-14-rppt@kernel.org
+    - 4c527e51902e "KVM: selftests: test userfaultfd minor for guest_memfd"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-15-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-15-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-15-rppt@kernel.org
+    - 4e8883f95247 "KVM: selftests: test userfaultfd missing for guest_memfd"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-16-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-16-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-16-rppt@kernel.org
+    - series "selftests/mm: skip several tests when thp is not available", v8. (6)
+      - d87e1dfd6d9d "selftests/mm/guard-regions: skip collapse test when thp not enabled (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-2-chuhu@redhat.com"
+        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-1-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-1-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-2-chuhu@redhat.com"
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-1-chuhu@redhat.com
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-2-chuhu@redhat.com
+      - bc78b5487e8e "selftests/mm: soft-dirty: skip two tests when thp is not available (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-3-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-3-chuhu@redhat.com"
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-3-chuhu@redhat.com
+      - 82a779a71016 "selftests/mm: move write_file helper to vm_util (2/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-4-chuhu@redhat.com"
+        - dropped "Cc: Li Wang <liwang@redhat.com>"
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com
+      - 92e70158c215 "selftests/mm/vm_util: robust write_file() (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-5-chuhu@redhat.com"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-6-chuhu@redhat.com"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: Li Wang <liwang@redhat.com>"
+        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-5-chuhu@redhat.com
+      - 760d26269641 "selftests/mm: split_huge_page_test: skip the test when thp is not available (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-7-chuhu@redhat.com"
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com
+      - 78d89a66d621 "selftests/mm: transhuge_stress: skip the test when thp not available (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-8-chuhu@redhat.com"
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com
   - dropped commits
-    - f82c84a905e3 "mm/vmalloc: use dedicated unbound workqueue for vmap purge/drain"
+    - cb10b022911e "selftests/mm: add UFFDIO_MOVE huge zeropage PMD regression test"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/abongwF3X0G8xY1I@chrisdown.name
+    - da31b614371e "mm/percpu-internal.h: optimise pcpu_chunk_struct to save memory"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260330175824.2777270-1-urezki@gmail.com
-      - Link: https://lore.kernel.org/all/20260319074307.2325-1-lirongqing@baidu.com/
-    - 7aa336005996 "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
+      - Link: https://lkml.kernel.org/r/20260305073043.571691-1-zenghongling@kylinos.cn
+    - 94ba49be35b9 "mm/memcontrol: batch memcg charging in __memcg_slab_post_alloc_hook"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
-    - eb98b0eb95a0 "selftests-mm-skip-hugetlb_dio-tests-when-dio-alignment-is-incompatible-checkpatch-fixes"
-      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260320020745.833792-1-hui.zhu@linux.dev
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - 333d888a1270 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device (0/8)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260323160822.1409904-1-youngjun.park@lge.com
+        - Link: https://lkml.kernel.org/r/20260323160822.1409904-2-youngjun.park@lge.com
+    - series "mm/mprotect: micro-optimization work", v2. (2)
+      - 6f58ef9f7c29 "mm/mprotect: special-case small folios when applying write permissions (1/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260324154342.156640-3-pfalcato@suse.de
+    - 7a1f8c2076be "memory tiering: do not allow promotion if NUMA_BALANCING_MEMORY_TIERING is disabled"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260323094849.3903-1-donettom@linux.ibm.com
+    - 24eaf86c9bce "mm/memfd_luo: fix integer overflow in memfd_luo_preserve_folios"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260326084727.118437-8-duanchenghao@kylinos.cn
+    - series "selftests/mm: skip several tests when thp is not available", v7. (7)
+      - 9438d520c9b0 "selftests: ksft_exit_fail_perror: support printf style arguments (3/7)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260330151503.670415-5-chuhu@redhat.com
+- mm-new: 8 -> 3 commits
+  - series: 1 (3) -> 0 (0)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 6 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+    - maintainer, no role : 1 -> 0 commits
+  - new commits
+    - 3371340c1000 "selftests/mm: verify droppable mappings cannot be locked"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260402003417.438037-3-anthony.yznaga@oracle.com
+    - a8dd3b0fad4a "mm/sparse: fix comment for section map alignment"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
+  - changed commits
+    - 4d2f23ed129b "mm/vmstat: spread vmstat_update requeue across the stat interval"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - added "Cc: Dmitry Ilvokhin <d@ilvokhin.com>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 70 -> 70 commits (no change)
   - series: 8 (21) -> 8 (21) (no change)
     - no role, nobody: 19 -> 19 commits (no change)
@@ -172,19 +415,42 @@
     - no role, maintainer: 24 -> 24 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 57 -> 60 commits
+- mm-nonmm-unstable: 60 -> 61 commits
   - series: 6 (46) -> 6 (46) (no change)
-    - no role, nobody: 17 -> 18 commits
-    - no role, no role : 31 -> 31 commits (no change)
-    - no role, maintainer: 8 -> 10 commits
+    - no role, nobody: 18 -> 15 commits
+    - no role, no role : 31 -> 33 commits
+    - no role, maintainer: 10 -> 12 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
   - new commits
-    - f650c5c46625 ".get_maintainer.ignore: add Askar"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260401074619.988459-1-safinaskar@gmail.com
-    - 1d24cdb0097f "lib/hexdump: print_hex_dump_bytes() calls print_hex_dump_debug()"
+    - 103870232593 "ocfs2: fix use-after-free in ocfs2_fault() when VM_FAULT_RETRY"
       - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260402040234.92432-1-tejas.bharambe@outlook.com
+  - changed commits
+    - series "kdump: Enable LUKS-encrypted dump target support in ARM64 and PowerPC", v5. (3)
+      - 53fbcb254a0d "crash_dump/dm-crypt: don't print in arch-specific code (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Baoquan He <bhe@redhat.com>"
+        - dropped "Cc: Baoquan he <bhe@redhat.com>"
+        - Link: https://lkml.kernel.org/r/20260225060347.718905-1-coxu@redhat.com
+        - Link: https://lkml.kernel.org/r/20260225060347.718905-2-coxu@redhat.com
+        - Link: https://lore.kernel.org/all/20250502011246.99238-1-coxu@redhat.com/ [1]
+        - Link: https://github.com/devicetree-org/dt-schema/pull/181 [2]
+      - af83320df1c9 "crash: align the declaration of crash_load_dm_crypt_keys with CONFIG_CRASH_DM_CRYPT (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Baoquan He <bhe@redhat.com>"
+        - dropped "Cc: Baoquan he <bhe@redhat.com>"
+        - Link: https://lkml.kernel.org/r/20260225060347.718905-3-coxu@redhat.com
+      - a5f531f4fc7b "arm64,ppc64le/kdump: pass dm-crypt keys to kdump kernel (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Rob Herring (Arm) <robh@kernel.org>"
+        - added "Reviewed-by: Sourabh Jain <sourabhjain@linux.ibm.com>"
+        - dropped "Cc: Rob Herring <robh@kernel.org>"
+        - dropped "Cc: Sourabh Jain <sourabhjain@linux.ibm.com>"
+        - Link: https://lkml.kernel.org/r/20260225060347.718905-4-coxu@redhat.com
+        - Link: https://lore.kernel.org/all/20250502011246.99238-1-coxu@redhat.com/ [1]
+        - Link: https://github.com/devicetree-org/dt-schema/pull/181 [2]
+    - 31d59460c4e8 "lib/hexdump: print_hex_dump_bytes() calls print_hex_dump_debug()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Fixes: 091cb0994edd ("lib/hexdump: make print_hex_dump_bytes() a nop on !DEBUG builds")"
+      - dropped "Fixes: 091cb0994edd20d6 ("lib/hexdump: make print_hex_dump_bytes() a nop on !DEBUG builds")"
       - Link: https://lkml.kernel.org/r/3d5c3069fd9102ecaf81d044b750cd613eb72a08.1774970392.git.geert+renesas@glider.be
-    - 4f1bc5741d4e "ocfs2: handle invalid dinode in ocfs2_group_extend"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260401092303.3709187-1-gality369@gmail.com

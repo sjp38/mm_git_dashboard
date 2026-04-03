@@ -5,34 +5,59 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 43e388bbe075 "mm/vma: fix memory leak in __mmap_region()"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260331180811.1333348-1-rhkrqnwk98@gmail.com
-- mm-stable: 48 -> 49 commits
+- mm-stable: 49 -> 49 commits (no change)
   - series: 4 (46) -> 4 (46) (no change)
     - no role, nobody: 9 -> 9 commits (no change)
     - no role, no role : 25 -> 25 commits (no change)
-    - no role, reviewer: 13 -> 14 commits
+    - no role, reviewer: 14 -> 14 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
   - changed commits
     - 103f7c4ae06a "mm/mseal: update VMA end correctly on merge"
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 3 -> 3 commits (no change)
+- mm-unstable: 3 -> 5 commits
   - series: 1 (3) -> 1 (3) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
-- mm-new: 2 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 1 commits
-  - dropped commits
-    - 7aa336005996 "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
+  - new commits
+    - series "mm/mprotect: micro-optimization work", v3. (2)
+      - 9bb9c47c5d34 "mm/mprotect: special-case small folios when applying permissions (1/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260402141628.3367596-3-pfalcato@suse.de
+    - 077646ca5562 "mm: fix mmap errno value when MAP_DROPPABLE is not supported"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260402003417.438037-2-anthony.yznaga@oracle.com
+  - changed commits
+    - 2149bb4f5e22 "tools/testing/selftests: add merge test for partial msealed range"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
+      - branch: mm-new -> mm-unstable
+      - Link: : https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
+      - Link: https://lkml.kernel.org/r/20260331073627.50010-1-ljs@kernel.org
+    - series "mm/mprotect: micro-optimization work", v3. (2)
+      - b5729097e365 "mm/mprotect: move softleaf code out of the main function (0/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260402141628.3367596-1-pfalcato@suse.de"
+        - added "Link: https://lkml.kernel.org/r/20260402141628.3367596-2-pfalcato@suse.de"
+        - dropped "Link: https://lkml.kernel.org/r/20260324154342.156640-1-pfalcato@suse.de"
+        - dropped "Link: https://lkml.kernel.org/r/20260324154342.156640-2-pfalcato@suse.de"
+        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260402141628.3367596-1-pfalcato@suse.de
+        - Link: https://lkml.kernel.org/r/20260402141628.3367596-2-pfalcato@suse.de
+        - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
+        - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
+        - Link: https://lkml.kernel.org/r/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]
+  - dropped commits
+    - series "mm/mprotect: micro-optimization work", v2. (2)
+      - 6f58ef9f7c29 "mm/mprotect: special-case small folios when applying write permissions (1/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260324154342.156640-3-pfalcato@suse.de
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

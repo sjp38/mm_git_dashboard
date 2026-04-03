@@ -9,18 +9,30 @@
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 17 -> 17 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
-- mm-unstable: 6 -> 7 commits
+- mm-unstable: 7 -> 7 commits (no change)
   - series: 0 (5) -> 0 (5) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-  - new commits
-    - 6b3155c15059 "mm: fix deferred split queue races during migration"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
-      - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
-      - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "selftests/mm: skip several tests when thp is not available", v8. (6)
+      - 82a779a71016 "selftests/mm: move write_file helper to vm_util (2/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-4-chuhu@redhat.com"
+        - dropped "Cc: Li Wang <liwang@redhat.com>"
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com
+      - 760d26269641 "selftests/mm: split_huge_page_test: skip the test when thp is not available (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-7-chuhu@redhat.com"
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com
+      - 78d89a66d621 "selftests/mm: transhuge_stress: skip the test when thp not available (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260330151503.670415-8-chuhu@redhat.com"
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

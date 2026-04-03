@@ -7,20 +7,99 @@
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 14 -> 12 commits
-  - series: 1 (14) -> 1 (12)
-    - no role, nobody: 5 -> 4 commits
+- mm-unstable: 12 -> 12 commits (no change)
+  - series: 1 (12) -> 1 (4)
+    - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-  - dropped commits
-    - series "mm, kvm: allow uffd support in guest_memfd", v3. (15)
-      - 38cd9fca6f6b "mm/userfaultfd: detect VMA replacement after copy retry in mfill_copy_folio_retry() (10/15)"
+  - changed commits
+    - series "mm, kvm: allow uffd support in guest_memfd", v4. (4)
+      - b7565c8ded9c "userfaultfd: introduce mfill_copy_folio_locked() helper (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-2-rppt@kernel.org"
+        - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-1-rppt@kernel.org"
+        - added "Cc: Harry Yoo <harry.yoo@oracle.com>"
+        - added "Cc: Mike Rapoport <rppt@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-1-rppt@kernel.org"
+        - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-2-rppt@kernel.org"
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-1-rppt@kernel.org
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-2-rppt@kernel.org
+      - 8c9e2ee49c28 "userfaultfd: introduce struct mfill_state (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org"
+        - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-3-rppt@kernel.org"
+        - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
+      - 709b3f9ee8ad "userfaultfd: introduce mfill_establish_pmd() helper (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-4-rppt@kernel.org"
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - added "Cc: Harry Yoo <harry.yoo@oracle.com>"
+        - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-4-rppt@kernel.org"
+        - dropped "Acked-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-4-rppt@kernel.org
+      - e2d3cd7e8b30 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma() (3/4)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260331134158.622084-1-devnexen@gmail.com
-      - 85066bbbdab7 "shmem-userfaultfd-implement-shmem-uffd-operations-using-vm_uffd_ops-fix-fix (11/15)"
-        - Authored by a maintainer, reviewed by nobody
+        - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org"
+        - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-5-rppt@kernel.org"
+        - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
+    - fe0b9dbb5112 "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-6-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-6-rppt@kernel.org"
+      - Link: : https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
+      - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-6-rppt@kernel.org
+    - 70c2ff8a395f "userfaultfd: move vma_can_userfault out of line"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-7-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-7-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-7-rppt@kernel.org
+    - 5e5d455134cf "userfaultfd: introduce vm_uffd_ops"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-8-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
+    - 2dfd911f62c2 "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-9-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-9-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-9-rppt@kernel.org
+    - d5da16999b15 "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-10-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-10-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-10-rppt@kernel.org
+    - 0bf04a29e956 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-11-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-11-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-11-rppt@kernel.org
+    - 1140a70e6a51 "userfaultfd: mfill_atomic(): remove retry logic"
+      - Authored by no role player, reviewed by nobody
+      - added "[rppt@kernel.org: remove safety measure of not returning ENOENT from _copy]"
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-12-rppt@kernel.org"
+      - added "Link: : https://lkml.kernel.org/r/ac5zcDUY8CFHr6Lw@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-12-rppt@kernel.org"
+      - Link: : https://lkml.kernel.org/r/ac5zcDUY8CFHr6Lw@kernel.org
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-12-rppt@kernel.org
+    - 8d341fd61834 "mm: generalize handling of userfaults in __do_fault()"
+      - Authored by a reviewer, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-13-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

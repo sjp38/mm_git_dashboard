@@ -8,12 +8,16 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
     - maintainer, maintainer: 4 -> 4 commits (no change)
-- mm-unstable: 19 -> 19 commits (no change)
+- mm-unstable: 19 -> 18 commits
   - series: 2 (18) -> 2 (18) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 1 commits
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 13 -> 13 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
+  - dropped commits
+    - 94ba49be35b9 "mm/memcontrol: batch memcg charging in __memcg_slab_post_alloc_hook"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260320020745.833792-1-hui.zhu@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

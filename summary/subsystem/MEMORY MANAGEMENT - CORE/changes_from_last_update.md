@@ -4,10 +4,10 @@
     - no role, no role : 3 -> 3 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 101 -> 104 commits
+- mm-stable: 104 -> 104 commits (no change)
   - series: 14 (89) -> 14 (89) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 69 -> 72 commits
+    - no role, no role : 72 -> 72 commits (no change)
     - no role, reviewer: 19 -> 19 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
@@ -26,21 +26,45 @@
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260325-pagewalk-check-pmd-refault-v2-1-707bff33bc60@akamai.com
-- mm-unstable: 4 -> 3 commits
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, nobody: 2 -> 1 commits
+- mm-unstable: 3 -> 4 commits
+  - series: 0 (3) -> 0 (1)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-  - dropped commits
-    - 28208ad9dae4 "mm/sparse: fix BUILD_BUG_ON check for section map alignment"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260331113023.2068075-1-songmuchun@bytedance.com
-- mm-new: 1 -> 2 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 2 commits
-  - new commits
-    - be35f663b117 "mm/vmstat: spread vmstat_update requeue across the stat interval"
+  - changed commits
+    - d152a67ae8b6 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed by: Donet Tom <donettom@linux.ibm.com>"
+      - dropped "Cc: Donet Tom <donettom@linux.ibm.com>"
+      - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
+    - 5e5d455134cf "userfaultfd: introduce vm_uffd_ops"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-8-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
+    - 8d341fd61834 "mm: generalize handling of userfaults in __do_fault()"
+      - Authored by a reviewer, reviewed by nobody
+      - added "Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org"
+      - added "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Link: https://lkml.kernel.org/r/20260330101116.1117699-13-rppt@kernel.org"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - a8dd3b0fad4a "mm/sparse: fix comment for section map alignment"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
+  - changed commits
+    - 4d2f23ed129b "mm/vmstat: spread vmstat_update requeue across the stat interval"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - added "Cc: Dmitry Ilvokhin <d@ilvokhin.com>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
       - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 4 -> 4 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)

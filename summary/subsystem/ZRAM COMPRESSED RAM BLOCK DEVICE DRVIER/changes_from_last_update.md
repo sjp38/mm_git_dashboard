@@ -8,17 +8,17 @@
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, no role : 0 -> 1 commits
   - changed commits
-    - 0310cbed6598 "zram: do not forget to endio for partial discard requests"
+    - 26119b1a8b9b "zram: do not forget to endio for partial discard requests"
       - Authored by a maintainer, reviewed by no role player
-      - added "Fixes: 0120dd6e4e20 ("zram: make zram_bio_discard more self-contained")"
-      - dropped "Fixes: 0120dd6e4e202 ("zram: make zram_bio_discard more self-contained")"
+      - branch: mm-new -> mm-unstable
       - Link: https://lkml.kernel.org/r/20260331074255.777019-1-senozhatsky@chromium.org
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - maintainer, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
