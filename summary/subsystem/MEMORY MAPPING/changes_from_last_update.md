@@ -16,12 +16,29 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
+- mm-unstable: 5 -> 6 commits
+  - series: 1 (3) -> 2 (4)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, nobody: 0 -> 1 commits
     - reviewer, no role : 2 -> 2 commits (no change)
+  - new commits
+    - 3932ad960bba "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/ac_mCIUQWRAbuH8F@kernel.org
+  - changed commits
+    - series "fix MAP_DROPPABLE not supported errno". (2)
+      - 303422dd6b84 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com"
+        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com"
+        - added "Acked-by: David Hildenbrand <david@kernel.org>"
+        - added "Reported-by: Mark Brown <broonie@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260402003417.438037-2-anthony.yznaga@oracle.com"
+        - dropped "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
+        - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

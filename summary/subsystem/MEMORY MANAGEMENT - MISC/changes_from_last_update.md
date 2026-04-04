@@ -11,23 +11,29 @@
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-unstable: 13 -> 13 commits (no change)
-  - series: 2 (11) -> 2 (11) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 13 -> 15 commits
+  - series: 2 (11) -> 2 (12)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
+    - reviewer, nobody: 0 -> 1 commits
     - maintainer, nobody: 2 -> 2 commits (no change)
+  - new commits
+    - 3932ad960bba "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/ac_mCIUQWRAbuH8F@kernel.org
   - changed commits
-    - series "Minor hmm_test fixes and cleanups". (3)
-      - d58c9d66f26b "selftests/mm: hmm-tests: don't hardcode THP size to 2MB (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Matthew Brost <matthew.brost@intel.com>"
-        - added "Cc: <stable@vger,kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260331063445.3551404-3-apopple@nvidia.com
-        - Link: https://lore.kernel.org/linux-mm/8bd0396a-8997-4d2e-a13f-5aac033083d7@linux.dev/
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - series "fix MAP_DROPPABLE not supported errno". (2)
+      - 011599ed8a68 "selftests/mm: verify droppable mappings cannot be locked (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com"
+        - added "Cc: Mark Brown <broonie@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260402003417.438037-3-anthony.yznaga@oracle.com"
+        - Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

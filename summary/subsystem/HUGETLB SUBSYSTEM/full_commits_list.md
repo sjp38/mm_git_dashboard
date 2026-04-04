@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - b96645d6da96 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - efd6cf4a6fb2 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 17 total, 2 (14) series, 3 non-series commits
@@ -75,7 +75,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 46a4df12621f "userfaultfd: introduce vm_uffd_ops"
+    - 1edf22dfeb47 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

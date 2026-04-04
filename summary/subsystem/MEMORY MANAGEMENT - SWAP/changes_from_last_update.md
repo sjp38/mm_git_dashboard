@@ -17,19 +17,13 @@
       - Authored by no role player, reviewed by a maintainer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
-- mm-unstable: 8 -> 9 commits
-  - series: 0 (6) -> 1 (8)
+- mm-unstable: 9 -> 9 commits (no change)
+  - series: 1 (8) -> 1 (8) (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 2 -> 3 commits
-  - new commits
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - 43ab166c3a06 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device (0/8)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260323160822.1409904-1-youngjun.park@lge.com
-        - Link: https://lkml.kernel.org/r/20260323160822.1409904-2-youngjun.park@lge.com
+    - reviewer, maintainer: 3 -> 3 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

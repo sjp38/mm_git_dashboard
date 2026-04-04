@@ -54,25 +54,50 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 79 -> 80 commits
-  - series: 8 (50) -> 9 (52)
-    - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 19 -> 19 commits (no change)
+- mm-unstable: 80 -> 78 commits
+  - series: 9 (52) -> 10 (53)
+    - no role, nobody: 6 -> 4 commits
+    - no role, no role : 19 -> 20 commits
     - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 31 -> 31 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-    - reviewer, maintainer: 4 -> 5 commits
+    - reviewer, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
-  - new commits
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - 43ab166c3a06 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device (0/8)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260323160822.1409904-1-youngjun.park@lge.com
-        - Link: https://lkml.kernel.org/r/20260323160822.1409904-2-youngjun.park@lge.com
+  - changed commits
+    - series "mm, kvm: allow uffd support in guest_memfd", v4. (4)
+      - d52c08972df0 "userfaultfd: introduce struct mfill_state (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
+      - 89ad7ed60896 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma() (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - dropped "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
+    - series "fix MAP_DROPPABLE not supported errno". (2)
+      - 303422dd6b84 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com"
+        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com"
+        - added "Acked-by: David Hildenbrand <david@kernel.org>"
+        - added "Reported-by: Mark Brown <broonie@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260402003417.438037-2-anthony.yznaga@oracle.com"
+        - dropped "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
+        - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
+  - dropped commits
+    - c12245feaf47 "mm: generalize handling of userfaults in __do_fault()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org
+    - 0882d8611dce "KVM: guest_memfd: implement userfaultfd operations"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-14-rppt@kernel.org
 - mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (1)
+  - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

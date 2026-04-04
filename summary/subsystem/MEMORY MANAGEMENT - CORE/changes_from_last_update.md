@@ -26,14 +26,18 @@
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260325-pagewalk-check-pmd-refault-v2-1-707bff33bc60@akamai.com
-- mm-unstable: 4 -> 4 commits (no change)
+- mm-unstable: 4 -> 3 commits
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
     - reviewer, no role : 1 -> 1 commits (no change)
+  - dropped commits
+    - c12245feaf47 "mm: generalize handling of userfaults in __do_fault()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org
 - mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (2)
+  - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 4 -> 4 commits (no change)
@@ -41,7 +45,21 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-nonmm-unstable: 2 -> 2 commits (no change)
+- mm-nonmm-unstable: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
     - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - 621b2bbe55c9 "kernel/fork: validate exit_signal in kernel_clone()"
+      - Authored by no role player, reviewed by no role player
+      - added "[oleg@redhat.com: the comment above kernel_clone() should be updated]"
+      - added "Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com"
+      - added "Signed-off-by: Oleg Nesterov <oleg@redhat.com>"
+      - Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com
+      - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
+      - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
+      - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
+  - dropped commits
+    - 2ff43c8de63c "kernel-fork-validate-exit_signal-in-kernel_clone-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com

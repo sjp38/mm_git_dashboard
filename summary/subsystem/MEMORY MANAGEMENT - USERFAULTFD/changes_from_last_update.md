@@ -7,12 +7,29 @@
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 12 -> 12 commits (no change)
+- mm-unstable: 12 -> 11 commits
   - series: 1 (4) -> 1 (4) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
+    - no role, nobody: 4 -> 3 commits
+    - no role, no role : 6 -> 7 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
+  - changed commits
+    - series "mm, kvm: allow uffd support in guest_memfd", v4. (4)
+      - d52c08972df0 "userfaultfd: introduce struct mfill_state (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
+      - 89ad7ed60896 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma() (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - dropped "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
+  - dropped commits
+    - c12245feaf47 "mm: generalize handling of userfaults in __do_fault()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

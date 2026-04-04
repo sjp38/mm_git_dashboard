@@ -5,16 +5,25 @@
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-hotfixes-unstable: 10 -> 11 commits
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 11 -> 9 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 2 -> 1 commits
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 2 -> 3 commits
-  - new commits
-    - 3fd692d4f6e4 "ocfs2: fix out-of-bounds write in ocfs2_write_end_inline"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260403063830.3662739-1-joseph.qi@linux.alibaba.com
+    - no role, maintainer: 2 -> 1 commits
+    - maintainer, nobody: 3 -> 3 commits (no change)
+  - changed commits
+    - 879ff89f4f75 "liveupdate: propagate file deserialization failures"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Cc: <stable@vger.kernel.org>"
+      - Link: https://lkml.kernel.org/r/20260325044608.8407-1-leotimmins1974@gmail.com
+      - Link: https://lkml.kernel.org/r/20260325044608.8407-2-leotimmins1974@gmail.com
+  - dropped commits
+    - series "liveupdate: fix incoming error handling and teardown paths", v2. (2)
+      - 85527f484053 "liveupdate: initialize incoming FLB state before finish (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260325044608.8407-3-leotimmins1974@gmail.com
+    - 26ccda28ad1d "liveupdate-initialize-incoming-flb-state-before-finish-fix"
+      - Authored by no role player, reviewed by nobody
 - mm-stable: 368 -> 368 commits (no change)
   - series: 40 (282) -> 40 (282) (no change)
     - no role, nobody: 22 -> 22 commits (no change)
@@ -75,236 +84,199 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 114 -> 115 commits
-  - series: 13 (79) -> 14 (81)
-    - no role, nobody: 10 -> 10 commits (no change)
-    - no role, no role : 29 -> 29 commits (no change)
+- mm-unstable: 115 -> 113 commits
+  - series: 14 (81) -> 15 (83)
+    - no role, nobody: 10 -> 7 commits
+    - no role, no role : 29 -> 30 commits
     - no role, reviewer: 12 -> 12 commits (no change)
     - no role, maintainer: 32 -> 32 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-    - reviewer, maintainer: 4 -> 5 commits
-    - maintainer, nobody: 12 -> 12 commits (no change)
-    - maintainer, no role : 8 -> 8 commits (no change)
+    - reviewer, maintainer: 5 -> 5 commits (no change)
+    - maintainer, nobody: 12 -> 8 commits
+    - maintainer, no role : 8 -> 12 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - new commits
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - 43ab166c3a06 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device (0/8)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260323160822.1409904-1-youngjun.park@lge.com
-        - Link: https://lkml.kernel.org/r/20260323160822.1409904-2-youngjun.park@lge.com
+    - 3932ad960bba "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/ac_mCIUQWRAbuH8F@kernel.org
   - changed commits
-    - series "Minor hmm_test fixes and cleanups". (3)
-      - 50efc672993a "lib: test_hmm: evict device pages on file close to avoid use-after-free (0/3)"
+    - series "liveupdate: Fix module unloading and unregister API", v3. (10)
+      - ab4a64d238fe "liveupdate: auto unregister FLBs on file handler unregistration (6/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
+        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260327033335.696621-8-pasha.tatashin@soleen.com
+      - ce31f6cb2726 "liveupdate: remove liveupdate_test_unregister() (7/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
+        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260327033335.696621-9-pasha.tatashin@soleen.com
+      - f855f51a4519 "liveupdate: make unregister functions return void (8/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
+        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260327033335.696621-10-pasha.tatashin@soleen.com
+      - 5bdce6416eaa "liveupdate: defer file handler module refcounting to active sessions (9/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
+        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260327033335.696621-11-pasha.tatashin@soleen.com
+    - series "mm, kvm: allow uffd support in guest_memfd", v4. (4)
+      - d52c08972df0 "userfaultfd: introduce struct mfill_state (1/4)"
         - Authored by no role player, reviewed by no role player
-        - added "Cc: Matthew Brost <matthew.brost@intel.com>"
-        - Link: https://lkml.kernel.org/r/20260331063445.3551404-1-apopple@nvidia.com
-        - Link: https://lkml.kernel.org/r/20260331063445.3551404-2-apopple@nvidia.com
-      - d58c9d66f26b "selftests/mm: hmm-tests: don't hardcode THP size to 2MB (1/3)"
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
+      - 89ad7ed60896 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma() (3/4)"
         - Authored by no role player, reviewed by no role player
-        - added "Cc: <stable@vger,kernel.org>"
-        - added "Cc: Matthew Brost <matthew.brost@intel.com>"
-        - Link: https://lkml.kernel.org/r/20260331063445.3551404-3-apopple@nvidia.com
-        - Link: https://lore.kernel.org/linux-mm/8bd0396a-8997-4d2e-a13f-5aac033083d7@linux.dev/
-      - f559ed80474c "lib: test_hmm: implement a device release method (2/3)"
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - dropped "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
+    - series "fix MAP_DROPPABLE not supported errno". (2)
+      - 303422dd6b84 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Balbir Singh <balbirs@nvidia.com>"
-        - added "Cc: Matthew Brost <matthew.brost@intel.com>"
-        - dropped "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
-        - Link: https://lkml.kernel.org/r/20260331063445.3551404-4-apopple@nvidia.com
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (0) -> 0 (3)
-    - no role, nobody: 1 -> 1 commits (no change)
+        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com"
+        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com"
+        - added "Acked-by: David Hildenbrand <david@kernel.org>"
+        - added "Reported-by: Mark Brown <broonie@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260402003417.438037-2-anthony.yznaga@oracle.com"
+        - dropped "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
+        - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
+      - 011599ed8a68 "selftests/mm: verify droppable mappings cannot be locked (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com"
+        - added "Cc: Mark Brown <broonie@kernel.org>"
+        - dropped "Link: https://lkml.kernel.org/r/20260402003417.438037-3-anthony.yznaga@oracle.com"
+        - Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com
+  - dropped commits
+    - c12245feaf47 "mm: generalize handling of userfaults in __do_fault()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org
+    - 0882d8611dce "KVM: guest_memfd: implement userfaultfd operations"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-14-rppt@kernel.org
+    - 066853fc01ed "KVM: selftests: test userfaultfd minor for guest_memfd"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-15-rppt@kernel.org
+    - 72334237ff5d "KVM: selftests: test userfaultfd missing for guest_memfd"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-16-rppt@kernel.org
+- mm-new: 3 -> 2 commits
+  - series: 0 (3) -> 0 (2)
+    - no role, nobody: 1 -> 0 commits
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-nonmm-stable: 70 -> 108 commits
-  - series: 8 (21) -> 12 (58)
-    - no role, nobody: 19 -> 25 commits
-    - no role, no role : 21 -> 47 commits
+- mm-nonmm-stable: 108 -> 108 commits (no change)
+  - series: 12 (58) -> 12 (58) (no change)
+    - no role, nobody: 25 -> 25 commits (no change)
+    - no role, no role : 47 -> 47 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 24 -> 30 commits
+    - no role, maintainer: 30 -> 30 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "cleanup the RAID5 XOR library", v4. (27)
-      - d8593b8f9354 "xor: assert that xor_blocks is not call from interrupt context (0/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-1-hch@lst.de
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-2-hch@lst.de
-      - b7ca705758b9 "arm/xor: remove in_interrupt() handling (1/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-3-hch@lst.de
-      - 675a0dd596e7 "arm64/xor: fix conflicting attributes for xor_block_template (2/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-4-hch@lst.de
-      - 3ea16a98518a "um/xor: cleanup xor.h (3/27)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-5-hch@lst.de
-      - 9e229025e247 "xor: move to lib/raid/ (4/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-6-hch@lst.de
-      - 7c6e6b2b48e8 "xor: small cleanups (5/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-7-hch@lst.de
-      - 0471415f3fd6 "xor: cleanup registration and probing (6/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-8-hch@lst.de
-      - 54e20be48fd4 "xor: split xor.h (7/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-9-hch@lst.de
-      - 35ebc4de1059 "xor: remove macro abuse for XOR implementation registrations (8/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-10-hch@lst.de
-      - c46928fdcfa0 "xor: move generic implementations out of asm-generic/xor.h (9/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-11-hch@lst.de
-      - 503793b1340e "alpha: move the XOR code to lib/raid/ (10/27)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-12-hch@lst.de
-      - 0d64a24ec0c0 "arm: move the XOR code to lib/raid/ (11/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-13-hch@lst.de
-      - 3786f2ad0095 "arm64: move the XOR code to lib/raid/ (12/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-14-hch@lst.de
-      - 033bee3e4963 "loongarch: move the XOR code to lib/raid/ (13/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-15-hch@lst.de
-      - 3f276cece4dd "powerpc: move the XOR code to lib/raid/ (14/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-16-hch@lst.de
-      - 5265d55b2146 "riscv: move the XOR code to lib/raid/ (15/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-17-hch@lst.de
-      - 7f96362396ee "sparc: move the XOR code to lib/raid/ (16/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-18-hch@lst.de
-      - 95c104cc5571 "s390: move the XOR code to lib/raid/ (17/27)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-19-hch@lst.de
-      - 77fd47e57a09 "x86: move the XOR code to lib/raid/ (18/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-20-hch@lst.de
-      - 352ebd066b62 "xor: avoid indirect calls for arm64-optimized ops (19/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-21-hch@lst.de
-      - e20043b4765c "xor: make xor.ko self-contained in lib/raid/ (20/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-22-hch@lst.de
-      - e420f0a88b24 "xor: add a better public API (21/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link:  https://lkml.kernel.org/r/20260327061704.3707577-24-hch@lst.de
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-23-hch@lst.de
-      - 7c12c32b9f73 "async_xor: use xor_gen (22/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-25-hch@lst.de
-      - 0f629e7283ad "btrfs: use xor_gen (23/27)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-26-hch@lst.de
-      - 80dcf0a7832a "xor: pass the entire operation to the low-level ops (24/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-27-hch@lst.de
-      - a21921dd02d3 "xor: use static_call for xor_gen (25/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-28-hch@lst.de
-      - af53e85ef797 "xor: add a kunit test case (26/27)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260327061704.3707577-29-hch@lst.de
-    - series "lib/list_sort: Clean up list_sort() scheduling workarounds", v3. (2)
-      - 237213776d0f "ubifs: remove unnecessary cond_resched() from list_sort() compare (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260320180938.1827148-1-visitorckw@gmail.com
-        - Link: https://lkml.kernel.org/r/20260320180938.1827148-2-visitorckw@gmail.com
-      - 86bda539fbcf "lib/list_sort: remove dummy cmp() calls to speed up merge_final() (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - added "[akpm@linux-foundation.org: remove now-unused local]"
-        - Link: https://lkml.kernel.org/r/20260320180938.1827148-3-visitorckw@gmail.com
-    - series "Fix bugs in extract_iter_to_sg()", v3. (5)
-      - 07b7d66e65d9 "lib/scatterlist: fix length calculations in extract_kvec_to_sg (0/5)"
+- mm-nonmm-unstable: 22 -> 27 commits
+  - series: 2 (9) -> 3 (14)
+    - no role, nobody: 9 -> 9 commits (no change)
+    - no role, no role : 7 -> 7 commits (no change)
+    - no role, maintainer: 6 -> 7 commits
+    - maintainer, nobody: 0 -> 4 commits
+  - new commits
+    - series "lib and lib/cmdline enhancements", v9. (6)
+      - 06dd418ac54c "riscv: export symbols needed for riscv32 EFI stub (5/6)"
         - Authored by no role player, reviewed by nobody
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260326214905.818170-1-lk@c--e.de
-        - Link: https://lkml.kernel.org/r/20260326214905.818170-2-lk@c--e.de
-      - 118cf3f55975 "lib/scatterlist: fix temp buffer in extract_user_to_sg() (1/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260326214905.818170-3-lk@c--e.de
-      - 0b49c7d0ae69 "lib: kunit_iov_iter: fix memory leaks (2/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260326214905.818170-4-lk@c--e.de
-      - 7278aa840b69 "lib: kunit_iov_iter: improve error detection (3/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260326214905.818170-5-lk@c--e.de
-      - 0913b7554726 "lib: kunit_iov_iter: add tests for extract_iter_to_sg (4/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260326214905.818170-6-lk@c--e.de
-    - d01684a2f0f8 "lib: parser: fix match_wildcard to correctly handle trailing stars"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lkml.kernel.org/r/20260326020630.4139520-1-inseob@google.com
-    - series "kdump: Enable LUKS-encrypted dump target support in ARM64 and PowerPC", v5. (3)
-      - 03738dd159db "crash_dump/dm-crypt: don't print in arch-specific code (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260225060347.718905-1-coxu@redhat.com
-        - Link: https://lkml.kernel.org/r/20260225060347.718905-2-coxu@redhat.com
-        - Link: https://lore.kernel.org/all/20250502011246.99238-1-coxu@redhat.com/ [1]
-        - Link: https://github.com/devicetree-org/dt-schema/pull/181 [2]
-      - fe74eb289163 "crash: align the declaration of crash_load_dm_crypt_keys with CONFIG_CRASH_DM_CRYPT (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260225060347.718905-3-coxu@redhat.com
-      - e3a84be1ec2f "arm64,ppc64le/kdump: pass dm-crypt keys to kdump kernel (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lkml.kernel.org/r/20260225060347.718905-4-coxu@redhat.com
-        - Link: https://lore.kernel.org/all/20250502011246.99238-1-coxu@redhat.com/ [1]
-        - Link: https://github.com/devicetree-org/dt-schema/pull/181 [2]
-- mm-nonmm-unstable: 61 -> 22 commits
-  - series: 6 (46) -> 2 (9)
-    - no role, nobody: 15 -> 9 commits
-    - no role, no role : 33 -> 7 commits
-    - no role, maintainer: 12 -> 6 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - changed commits
-    - e7f6ec9e2170 "ocfs2: fix use-after-free in ocfs2_fault() when VM_FAULT_RETRY"
+        - Link: https://lkml.kernel.org/r/20260403103338.1122415-7-dmantipov@yandex.ru
+    - series "ocfs2: consolidate extent list validation into block read callbacks". (4)
+      - c974091fa51f "ocfs2: validate dx_root extent list fields during block read (0/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260403090803.3860971-1-joseph.qi@linux.alibaba.com
+        - Link: https://lkml.kernel.org/r/20260403090803.3860971-2-joseph.qi@linux.alibaba.com
+      - 49e3f76f924a "ocfs2: remove empty extent list check in ocfs2_dx_dir_lookup_rec() (1/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260403090803.3860971-3-joseph.qi@linux.alibaba.com
+      - 89650c52fc4f "ocfs2: validate extent block list fields during block read (2/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260403090803.3860971-4-joseph.qi@linux.alibaba.com
+      - 8d66f2faae5f "ocfs2: remove redundant l_next_free_rec check in __ocfs2_find_path() (3/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260403090803.3860971-5-joseph.qi@linux.alibaba.com
+    - a3a24ba58d50 "ocfs2: split transactions in dio completion to avoid credit exhaustion"
       - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://lkml.kernel.org/r/20260403035333.136824-1-tejas.bharambe@outlook.com"
-      - Link: https://lkml.kernel.org/r/20260403035333.136824-1-tejas.bharambe@outlook.com
-      - Link: https://lkml.kernel.org/r/20260402040234.92432-1-tejas.bharambe@outlook.com
+      - Link: https://lkml.kernel.org/r/20260402134328.27334-2-heming.zhao@suse.com
+  - changed commits
+    - series "lib and lib/cmdline enhancements", v9. (6)
+      - 984a7a1d4645 "lib: fix _parse_integer_limit() to handle overflow (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260403103338.1122415-1-dmantipov@yandex.ru"
+        - added "Link: https://lkml.kernel.org/r/20260403103338.1122415-2-dmantipov@yandex.ru"
+        - added "Cc: Paul Walmsley <pjw@kernel.org>"
+        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
+        - added "Cc: Nathan Chancellor <nathan@kernel.org>"
+        - added "Cc: Ard Biesheuvel <ardb@kernel.org>"
+        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
+        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
+        - dropped "Link: https://lkml.kernel.org/r/20260212164413.889625-1-dmantipov@yandex.ru"
+        - dropped "Link: https://lkml.kernel.org/r/20260212164413.889625-2-dmantipov@yandex.ru"
+        - Link: https://lkml.kernel.org/r/20260403103338.1122415-1-dmantipov@yandex.ru
+        - Link: https://lkml.kernel.org/r/20260403103338.1122415-2-dmantipov@yandex.ru
+      - 6ef03cf8010e "lib: fix memparse() to handle overflow (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260403103338.1122415-3-dmantipov@yandex.ru"
+        - added "Cc: Paul Walmsley <pjw@kernel.org>"
+        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
+        - added "Cc: Nathan Chancellor <nathan@kernel.org>"
+        - added "Cc: Ard Biesheuvel <ardb@kernel.org>"
+        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
+        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
+        - dropped "Link: https://lkml.kernel.org/r/20260212164413.889625-3-dmantipov@yandex.ru"
+        - Link: https://lkml.kernel.org/r/20260403103338.1122415-3-dmantipov@yandex.ru
+      - 931fd93e3ec8 "lib: add more string to 64-bit integer conversion overflow tests (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260403103338.1122415-4-dmantipov@yandex.ru"
+        - added "Cc: Paul Walmsley <pjw@kernel.org>"
+        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
+        - added "Cc: Nathan Chancellor <nathan@kernel.org>"
+        - added "Cc: Ard Biesheuvel <ardb@kernel.org>"
+        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
+        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
+        - dropped "Link: https://lkml.kernel.org/r/20260212164413.889625-4-dmantipov@yandex.ru"
+        - Link: https://lkml.kernel.org/r/20260403103338.1122415-4-dmantipov@yandex.ru
+      - 328a00d8a226 "lib/cmdline_kunit: add test case for memparse() (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260403103338.1122415-5-dmantipov@yandex.ru"
+        - added "Cc: Paul Walmsley <pjw@kernel.org>"
+        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
+        - added "Cc: Nathan Chancellor <nathan@kernel.org>"
+        - added "Cc: Ard Biesheuvel <ardb@kernel.org>"
+        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
+        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
+        - dropped "Link: https://lkml.kernel.org/r/20260212164413.889625-5-dmantipov@yandex.ru"
+        - Link: https://lkml.kernel.org/r/20260403103338.1122415-5-dmantipov@yandex.ru
+      - c6c4ae4d98b7 "lib/cmdline: adjust a few comments to fix kernel-doc -Wreturn warnings (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lkml.kernel.org/r/20260403103338.1122415-6-dmantipov@yandex.ru"
+        - added "Cc: Paul Walmsley <pjw@kernel.org>"
+        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
+        - added "Cc: Nathan Chancellor <nathan@kernel.org>"
+        - added "Cc: Ard Biesheuvel <ardb@kernel.org>"
+        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
+        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
+        - dropped "Link: https://lkml.kernel.org/r/20260212164413.889625-6-dmantipov@yandex.ru"
+        - Link: https://lkml.kernel.org/r/20260403103338.1122415-6-dmantipov@yandex.ru
+    - 621b2bbe55c9 "kernel/fork: validate exit_signal in kernel_clone()"
+      - Authored by no role player, reviewed by no role player
+      - added "[oleg@redhat.com: the comment above kernel_clone() should be updated]"
+      - added "Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com"
+      - added "Signed-off-by: Oleg Nesterov <oleg@redhat.com>"
+      - Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com
+      - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
+      - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
+      - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
   - dropped commits
-    - 27b254d9b299 "lib-list_sort-remove-dummy-cmp-calls-to-speed-up-merge_final-fix"
-      - Authored by a maintainer, reviewed by nobody
+    - 2ff43c8de63c "kernel-fork-validate-exit_signal-in-kernel_clone-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com
