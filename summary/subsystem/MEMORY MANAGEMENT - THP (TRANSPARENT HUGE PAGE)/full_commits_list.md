@@ -1,12 +1,12 @@
-- baseline: v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 27 total, 3 (24) series, 3 non-series commits
+- mm-stable: 29 total, 3 (24) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 4 commits
-    - no role, reviewer: 17 commits
-    - reviewer, reviewer: 5 commits
+    - no role, reviewer: 18 commits
+    - reviewer, reviewer: 6 commits
   - full commits list
       - 88df087cf58a "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
@@ -100,34 +100,33 @@
         - Authored by no role player, reviewed by no role player
         - Link: : https://lkml.kernel.org/r/0a917f80-902f-49b0-a75f-1bbaf23d7f94@lucifer.local
         - Link: https://lkml.kernel.org/r/f9db59ca90937e39913d50ecb4f662e2bad17bbb.1774029655.git.ljs@kernel.org
-- mm-unstable: 7 total, 0 (5) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 4 commits
-    - no role, maintainer: 1 commits
-    - reviewer, reviewer: 1 commits
-  - full commits list
-    - 82764a9c6a48 "mm/khugepaged: fix issue with tracking lock"
+    - 1d64296521cb "mm/khugepaged: fix issue with tracking lock"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/7760c811-e100-4d40-9217-0813c28314be@lucifer.local
-    - 45d12d7abb84 "mm: fix deferred split queue races during migration"
+    - 40267f42d6b4 "mm: fix deferred split queue races during migration"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
       - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
       - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
-      - c4b8bbef5e5c "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+- mm-unstable: 5 total, 0 (5) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+      - 1b0971d28f38 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 94e093259ccc "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
+      - 2dcc29659ca1 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
-      - c24a5ca17dad "selftests/mm: move write_file helper to vm_util" (2/6)
+      - d13447e8b60b "selftests/mm: move write_file helper to vm_util" (2/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com
-      - 6df06130bc8f "selftests/mm: split_huge_page_test: skip the test when thp is not available" (4/6)
+      - b59d1e5a6f68 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com
-      - 06cad1ccab68 "selftests/mm: transhuge_stress: skip the test when thp not available" (5/6)
+      - 57bfcb2c1864 "selftests/mm: transhuge_stress: skip the test when thp not available" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 13 total, 2 (10) series, 3 non-series commits
@@ -59,13 +59,13 @@
   - author/reviewer role stat
     - no role, maintainer: 3 commits
   - full commits list
-      - c4b8bbef5e5c "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 1b0971d28f38 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 45b16008889a "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - 6d844171e253 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-    - b437abd21644 "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
+    - 13aed7db18dd "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260331081312.123719-1-hao.ge@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

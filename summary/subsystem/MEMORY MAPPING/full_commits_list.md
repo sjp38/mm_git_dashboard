@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
@@ -10,7 +10,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 24ca637bd3f5 "mm/vma: fix memory leak in __mmap_region()"
+    - 9050424a6a47 "mm/vma: fix memory leak in __mmap_region()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260331180811.1333348-1-rhkrqnwk98@gmail.com
 - mm-stable: 49 total, 4 (46) series, 3 non-series commits
@@ -184,29 +184,29 @@
     - reviewer, nobody: 1 commits
     - reviewer, no role : 2 commits
   - full commits list
-      - c4b8bbef5e5c "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 1b0971d28f38 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-    - 8eadd422ba04 "tools/testing/selftests: add merge test for partial msealed range"
+    - d82a637d261a "tools/testing/selftests: add merge test for partial msealed range"
       - Authored by no role player, reviewed by nobody
       - Link: : https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
       - Link: https://lkml.kernel.org/r/20260331073627.50010-1-ljs@kernel.org
-    - 3932ad960bba "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
+    - fcc6cea631e3 "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/ac_mCIUQWRAbuH8F@kernel.org
     - series "mm/mprotect: micro-optimization work", v3. (2 commits)
-      - f2d6e1525948 "mm/mprotect: move softleaf code out of the main function" (0/2)
+      - fd0014ace6c6 "mm/mprotect: move softleaf code out of the main function" (0/2)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260402141628.3367596-1-pfalcato@suse.de
         - Link: https://lkml.kernel.org/r/20260402141628.3367596-2-pfalcato@suse.de
         - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
         - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
         - Link: https://lkml.kernel.org/r/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]
-      - 9adcf3b0d32b "mm/mprotect: special-case small folios when applying permissions" (1/2)
+      - d9da2b1c4c37 "mm/mprotect: special-case small folios when applying permissions" (1/2)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260402141628.3367596-3-pfalcato@suse.de
     - series "fix MAP_DROPPABLE not supported errno". (2 commits)
-      - 303422dd6b84 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
+      - 70da57ae2225 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
         - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com

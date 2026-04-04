@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 2 total, 0 (1) series, 1 non-series commits
@@ -15,18 +15,18 @@
   - author/reviewer role stat
     - no role, maintainer: 4 commits
   - full commits list
-      - f520054c66bf "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
+      - f956794130b2 "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com
-      - 3710a5e92e20 "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
+      - 97c91bb5204d "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com
     - series "zswap pool per-CPU acomp_ctx simplifications", v3. (2 commits)
-      - 4c0bda03b157 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead()" (0/2)
+      - 806cd27905bb "mm: zswap: remove redundant checks in zswap_cpu_comp_dead()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260331183351.29844-2-kanchanapsridhar2026@gmail.com
         - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677
-      - 9af3b55ecc96 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (1/2)
+      - 16ecb967080b "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260331183351.29844-3-kanchanapsridhar2026@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

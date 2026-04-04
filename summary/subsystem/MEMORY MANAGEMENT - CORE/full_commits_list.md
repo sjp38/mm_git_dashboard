@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
@@ -374,33 +374,32 @@
       - ad95490535da "mm: add softleaf_is_valid_pmd_entry(), pmd_to_softleaf_folio()" (10/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/b677592596274fa3fd701890497948e4b0e07cec.1774029655.git.ljs@kernel.org
-- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
+- mm-unstable: 4 total, 0 (1) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 1 commits
+    - no role, no role : 2 commits
     - reviewer, no role : 1 commits
   - full commits list
-      - 0e490eefbb78 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - 44c4920498ee "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
         - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-    - 6f5087f4d9d8 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+    - db1ea523e992 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
-    - 1edf22dfeb47 "userfaultfd: introduce vm_uffd_ops"
+    - 7d2346688c69 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
-- mm-new: 2 total, 0 (2) series, 0 non-series commits
+    - fdd3f5c769d2 "mm/sparse: fix comment for section map alignment"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 303e92e93656 "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
+      - b47b4fa4c232 "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
-      - c88437e89d76 "mm/sparse: fix comment for section map alignment" (3/8)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 4 total, 0 (1) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
@@ -425,7 +424,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 621b2bbe55c9 "kernel/fork: validate exit_signal in kernel_clone()"
+    - 685e0ac049f3 "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by no role player
       - Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com
       - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com

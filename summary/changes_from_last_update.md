@@ -1,37 +1,24 @@
-- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de877 (no change)
+- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 10 -> 10 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-hotfixes-unstable: 11 -> 9 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 2 -> 1 commits
+- mm-hotfixes-unstable: 9 -> 9 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, maintainer: 2 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-  - changed commits
-    - 879ff89f4f75 "liveupdate: propagate file deserialization failures"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Cc: <stable@vger.kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260325044608.8407-1-leotimmins1974@gmail.com
-      - Link: https://lkml.kernel.org/r/20260325044608.8407-2-leotimmins1974@gmail.com
-  - dropped commits
-    - series "liveupdate: fix incoming error handling and teardown paths", v2. (2)
-      - 85527f484053 "liveupdate: initialize incoming FLB state before finish (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260325044608.8407-3-leotimmins1974@gmail.com
-    - 26ccda28ad1d "liveupdate-initialize-incoming-flb-state-before-finish-fix"
-      - Authored by no role player, reviewed by nobody
-- mm-stable: 368 -> 368 commits (no change)
+- mm-stable: 368 -> 370 commits
   - series: 40 (282) -> 40 (282) (no change)
     - no role, nobody: 22 -> 22 commits (no change)
     - no role, no role : 139 -> 139 commits (no change)
-    - no role, reviewer: 47 -> 47 commits (no change)
+    - no role, reviewer: 47 -> 48 commits
     - no role, maintainer: 47 -> 47 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 5 -> 5 commits (no change)
+    - reviewer, reviewer: 5 -> 6 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 74 -> 74 commits (no change)
     - maintainer, no role : 13 -> 13 commits (no change)
@@ -84,92 +71,68 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 115 -> 113 commits
-  - series: 14 (81) -> 15 (83)
-    - no role, nobody: 10 -> 7 commits
-    - no role, no role : 29 -> 30 commits
-    - no role, reviewer: 12 -> 12 commits (no change)
-    - no role, maintainer: 32 -> 32 commits (no change)
+    - 1d64296521cb "mm/khugepaged: fix issue with tracking lock"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/7760c811-e100-4d40-9217-0813c28314be@lucifer.local
+    - 40267f42d6b4 "mm: fix deferred split queue races during migration"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
+      - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
+      - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
+- mm-unstable: 113 -> 112 commits
+  - series: 15 (83) -> 15 (83) (no change)
+    - no role, nobody: 7 -> 6 commits
+    - no role, no role : 30 -> 31 commits
+    - no role, reviewer: 12 -> 11 commits
+    - no role, maintainer: 32 -> 33 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - reviewer, reviewer: 2 -> 1 commits
     - reviewer, maintainer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 12 -> 8 commits
-    - maintainer, no role : 8 -> 12 commits
+    - maintainer, nobody: 8 -> 7 commits
+    - maintainer, no role : 12 -> 13 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - 3932ad960bba "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/ac_mCIUQWRAbuH8F@kernel.org
   - changed commits
-    - series "liveupdate: Fix module unloading and unregister API", v3. (10)
-      - ab4a64d238fe "liveupdate: auto unregister FLBs on file handler unregistration (6/10)"
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - 259cd4d8d465 "mm: memcontrol: refactor mod_memcg_state() and mod_memcg_lruvec_state() (28/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+        - Link: https://lkml.kernel.org/r/7f8bd3aacec2270b9453428fc8585cca9f10751e.1772711148.git.zhengqi.arch@bytedance.com
+    - series "liveupdate: prevent double preservation", v4. (4)
+      - 28a684b1ccf3 "liveupdate: prevent double management of files (0/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Cc: Christian Brauner <brauner@kernel.org> "
+        - Link: https://lkml.kernel.org/r/20260326163943.574070-1-pasha.tatashin@soleen.com
+        - Link: https://lkml.kernel.org/r/20260326163943.574070-2-pasha.tatashin@soleen.com
+        - Link: https://lore.kernel.org/all/20260129212510.967611-1-dmatlack@google.com [1]
+        - Link: https://lore.kernel.org/all/20260203220948.2176157-1-skhawaja@google.com [2]
+      - e0a56513f191 "memfd: implement get_id for memfd_luo (1/4)"
         - Authored by a maintainer, reviewed by no role player
         - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
+        - added "Cc: Christian Brauner <brauner@kernel.org> "
         - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260327033335.696621-8-pasha.tatashin@soleen.com
-      - ce31f6cb2726 "liveupdate: remove liveupdate_test_unregister() (7/10)"
+        - Link: https://lkml.kernel.org/r/20260326163943.574070-3-pasha.tatashin@soleen.com
+      - 22e782161c0f "selftests: liveupdate: add test for double preservation (2/4)"
         - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
-        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260327033335.696621-9-pasha.tatashin@soleen.com
-      - f855f51a4519 "liveupdate: make unregister functions return void (8/10)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
-        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260327033335.696621-10-pasha.tatashin@soleen.com
-      - 5bdce6416eaa "liveupdate: defer file handler module refcounting to active sessions (9/10)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
-        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260327033335.696621-11-pasha.tatashin@soleen.com
-    - series "mm, kvm: allow uffd support in guest_memfd", v4. (4)
-      - d52c08972df0 "userfaultfd: introduce struct mfill_state (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
-        - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
-      - 89ad7ed60896 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma() (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
-        - dropped "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
+        - added "Cc: Christian Brauner <brauner@kernel.org> "
+        - Link: https://lkml.kernel.org/r/20260326163943.574070-4-pasha.tatashin@soleen.com
+    - fdd3f5c769d2 "mm/sparse: fix comment for section map alignment"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
     - series "fix MAP_DROPPABLE not supported errno". (2)
-      - 303422dd6b84 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
+      - 70da57ae2225 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com"
-        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com"
-        - added "Acked-by: David Hildenbrand <david@kernel.org>"
-        - added "Reported-by: Mark Brown <broonie@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260402003417.438037-2-anthony.yznaga@oracle.com"
-        - dropped "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
         - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
         - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
-      - 011599ed8a68 "selftests/mm: verify droppable mappings cannot be locked (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com"
-        - added "Cc: Mark Brown <broonie@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260402003417.438037-3-anthony.yznaga@oracle.com"
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com
-  - dropped commits
-    - c12245feaf47 "mm: generalize handling of userfaults in __do_fault()"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org
-    - 0882d8611dce "KVM: guest_memfd: implement userfaultfd operations"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-14-rppt@kernel.org
-    - 066853fc01ed "KVM: selftests: test userfaultfd minor for guest_memfd"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-15-rppt@kernel.org
-    - 72334237ff5d "KVM: selftests: test userfaultfd missing for guest_memfd"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-16-rppt@kernel.org
-- mm-new: 3 -> 2 commits
-  - series: 0 (3) -> 0 (2)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-new: 2 -> 1 commits
+  - series: 0 (2) -> 0 (1)
+    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 108 -> 108 commits (no change)
   - series: 12 (58) -> 12 (58) (no change)
@@ -179,104 +142,9 @@
     - no role, maintainer: 30 -> 30 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 22 -> 27 commits
-  - series: 2 (9) -> 3 (14)
+- mm-nonmm-unstable: 27 -> 27 commits (no change)
+  - series: 3 (14) -> 3 (14) (no change)
     - no role, nobody: 9 -> 9 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
-    - no role, maintainer: 6 -> 7 commits
-    - maintainer, nobody: 0 -> 4 commits
-  - new commits
-    - series "lib and lib/cmdline enhancements", v9. (6)
-      - 06dd418ac54c "riscv: export symbols needed for riscv32 EFI stub (5/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260403103338.1122415-7-dmantipov@yandex.ru
-    - series "ocfs2: consolidate extent list validation into block read callbacks". (4)
-      - c974091fa51f "ocfs2: validate dx_root extent list fields during block read (0/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260403090803.3860971-1-joseph.qi@linux.alibaba.com
-        - Link: https://lkml.kernel.org/r/20260403090803.3860971-2-joseph.qi@linux.alibaba.com
-      - 49e3f76f924a "ocfs2: remove empty extent list check in ocfs2_dx_dir_lookup_rec() (1/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260403090803.3860971-3-joseph.qi@linux.alibaba.com
-      - 89650c52fc4f "ocfs2: validate extent block list fields during block read (2/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260403090803.3860971-4-joseph.qi@linux.alibaba.com
-      - 8d66f2faae5f "ocfs2: remove redundant l_next_free_rec check in __ocfs2_find_path() (3/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260403090803.3860971-5-joseph.qi@linux.alibaba.com
-    - a3a24ba58d50 "ocfs2: split transactions in dio completion to avoid credit exhaustion"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260402134328.27334-2-heming.zhao@suse.com
-  - changed commits
-    - series "lib and lib/cmdline enhancements", v9. (6)
-      - 984a7a1d4645 "lib: fix _parse_integer_limit() to handle overflow (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260403103338.1122415-1-dmantipov@yandex.ru"
-        - added "Link: https://lkml.kernel.org/r/20260403103338.1122415-2-dmantipov@yandex.ru"
-        - added "Cc: Paul Walmsley <pjw@kernel.org>"
-        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
-        - added "Cc: Nathan Chancellor <nathan@kernel.org>"
-        - added "Cc: Ard Biesheuvel <ardb@kernel.org>"
-        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
-        - dropped "Link: https://lkml.kernel.org/r/20260212164413.889625-1-dmantipov@yandex.ru"
-        - dropped "Link: https://lkml.kernel.org/r/20260212164413.889625-2-dmantipov@yandex.ru"
-        - Link: https://lkml.kernel.org/r/20260403103338.1122415-1-dmantipov@yandex.ru
-        - Link: https://lkml.kernel.org/r/20260403103338.1122415-2-dmantipov@yandex.ru
-      - 6ef03cf8010e "lib: fix memparse() to handle overflow (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260403103338.1122415-3-dmantipov@yandex.ru"
-        - added "Cc: Paul Walmsley <pjw@kernel.org>"
-        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
-        - added "Cc: Nathan Chancellor <nathan@kernel.org>"
-        - added "Cc: Ard Biesheuvel <ardb@kernel.org>"
-        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
-        - dropped "Link: https://lkml.kernel.org/r/20260212164413.889625-3-dmantipov@yandex.ru"
-        - Link: https://lkml.kernel.org/r/20260403103338.1122415-3-dmantipov@yandex.ru
-      - 931fd93e3ec8 "lib: add more string to 64-bit integer conversion overflow tests (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260403103338.1122415-4-dmantipov@yandex.ru"
-        - added "Cc: Paul Walmsley <pjw@kernel.org>"
-        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
-        - added "Cc: Nathan Chancellor <nathan@kernel.org>"
-        - added "Cc: Ard Biesheuvel <ardb@kernel.org>"
-        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
-        - dropped "Link: https://lkml.kernel.org/r/20260212164413.889625-4-dmantipov@yandex.ru"
-        - Link: https://lkml.kernel.org/r/20260403103338.1122415-4-dmantipov@yandex.ru
-      - 328a00d8a226 "lib/cmdline_kunit: add test case for memparse() (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260403103338.1122415-5-dmantipov@yandex.ru"
-        - added "Cc: Paul Walmsley <pjw@kernel.org>"
-        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
-        - added "Cc: Nathan Chancellor <nathan@kernel.org>"
-        - added "Cc: Ard Biesheuvel <ardb@kernel.org>"
-        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
-        - dropped "Link: https://lkml.kernel.org/r/20260212164413.889625-5-dmantipov@yandex.ru"
-        - Link: https://lkml.kernel.org/r/20260403103338.1122415-5-dmantipov@yandex.ru
-      - c6c4ae4d98b7 "lib/cmdline: adjust a few comments to fix kernel-doc -Wreturn warnings (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260403103338.1122415-6-dmantipov@yandex.ru"
-        - added "Cc: Paul Walmsley <pjw@kernel.org>"
-        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
-        - added "Cc: Nathan Chancellor <nathan@kernel.org>"
-        - added "Cc: Ard Biesheuvel <ardb@kernel.org>"
-        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
-        - dropped "Link: https://lkml.kernel.org/r/20260212164413.889625-6-dmantipov@yandex.ru"
-        - Link: https://lkml.kernel.org/r/20260403103338.1122415-6-dmantipov@yandex.ru
-    - 621b2bbe55c9 "kernel/fork: validate exit_signal in kernel_clone()"
-      - Authored by no role player, reviewed by no role player
-      - added "[oleg@redhat.com: the comment above kernel_clone() should be updated]"
-      - added "Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com"
-      - added "Signed-off-by: Oleg Nesterov <oleg@redhat.com>"
-      - Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com
-      - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
-      - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
-      - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
-  - dropped commits
-    - 2ff43c8de63c "kernel-fork-validate-exit_signal-in-kernel_clone-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com
+    - no role, maintainer: 7 -> 7 commits (no change)
+    - maintainer, nobody: 4 -> 4 commits (no change)

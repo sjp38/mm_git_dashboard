@@ -1,10 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 5 total, 0 (3) series, 2 non-series commits
+- mm-stable: 6 total, 0 (3) series, 3 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 4 commits
-    - reviewer, reviewer: 1 commits
+    - reviewer, reviewer: 2 commits
   - full commits list
       - 88df087cf58a "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
@@ -21,21 +21,20 @@
       - 82d718179539 "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
-- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
-    - reviewer, reviewer: 1 commits
-  - full commits list
-    - 45d12d7abb84 "mm: fix deferred split queue races during migration"
+    - 40267f42d6b4 "mm: fix deferred split queue races during migration"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
       - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
       - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
-      - 3be9d7f57d5f "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+      - 58ac2eece965 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-    - 974d4f0638f8 "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+    - a9e95104f044 "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260401005702.7096-1-liu.yun@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev

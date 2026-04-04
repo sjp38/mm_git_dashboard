@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de877 (no change)
+- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
@@ -8,14 +8,9 @@
   - series: 0 (3) -> 0 (3) (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 2 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
     - no role, no role : 1 -> 1 commits (no change)
-  - dropped commits
-    - 0882d8611dce "KVM: guest_memfd: implement userfaultfd operations"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-14-rppt@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

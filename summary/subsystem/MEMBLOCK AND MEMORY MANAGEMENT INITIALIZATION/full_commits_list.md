@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 9 total, 1 (8) series, 1 non-series commits
@@ -41,11 +41,11 @@
     - no role, no role : 2 commits
   - full commits list
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - 21de361337cf "kho: add size parameter to kho_add_subtree()" (0/6)
+      - d63a621422be "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - c8b4d22daaf7 "kho: persist blob size in KHO FDT" (2/6)
+      - 8f8c0e01ee7f "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

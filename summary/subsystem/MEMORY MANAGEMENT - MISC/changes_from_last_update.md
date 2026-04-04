@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de877 (no change)
+- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -11,29 +11,15 @@
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-unstable: 13 -> 15 commits
-  - series: 2 (11) -> 2 (12)
-    - no role, nobody: 1 -> 2 commits
+- mm-unstable: 15 -> 15 commits (no change)
+  - series: 2 (12) -> 2 (12) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-  - new commits
-    - 3932ad960bba "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/ac_mCIUQWRAbuH8F@kernel.org
-  - changed commits
-    - series "fix MAP_DROPPABLE not supported errno". (2)
-      - 011599ed8a68 "selftests/mm: verify droppable mappings cannot be locked (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com"
-        - added "Cc: Mark Brown <broonie@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260402003417.438037-3-anthony.yznaga@oracle.com"
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,10 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - e4855c818417 "mm/memory_hotplug: maintain N_NORMAL_MEMORY during hotplug"
+    - 2d6b2dff4ac9 "mm/memory_hotplug: maintain N_NORMAL_MEMORY during hotplug"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260330035941.518186-1-hao.li@linux.dev
 - mm-stable: 6 total, 1 (4) series, 2 non-series commits

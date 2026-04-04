@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de877 (no change)
+- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 7 -> 7 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 2 -> 2 commits (no change)
@@ -9,13 +9,13 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-stable: 230 -> 230 commits (no change)
+- mm-stable: 230 -> 232 commits
   - series: 32 (175) -> 32 (175) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 92 -> 92 commits (no change)
-    - no role, reviewer: 42 -> 42 commits (no change)
+    - no role, reviewer: 42 -> 43 commits
     - no role, maintainer: 31 -> 31 commits (no change)
-    - reviewer, reviewer: 5 -> 5 commits (no change)
+    - reviewer, reviewer: 5 -> 6 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 31 -> 31 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
@@ -54,48 +54,48 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 80 -> 78 commits
-  - series: 9 (52) -> 10 (53)
-    - no role, nobody: 6 -> 4 commits
-    - no role, no role : 19 -> 20 commits
-    - no role, reviewer: 7 -> 7 commits (no change)
-    - no role, maintainer: 31 -> 31 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
+    - 1d64296521cb "mm/khugepaged: fix issue with tracking lock"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/7760c811-e100-4d40-9217-0813c28314be@lucifer.local
+    - 40267f42d6b4 "mm: fix deferred split queue races during migration"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
+      - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
+      - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
+- mm-unstable: 78 -> 76 commits
+  - series: 10 (53) -> 10 (53) (no change)
+    - no role, nobody: 4 -> 3 commits
+    - no role, no role : 20 -> 20 commits (no change)
+    - no role, reviewer: 7 -> 6 commits
+    - no role, maintainer: 31 -> 32 commits
     - reviewer, no role : 3 -> 3 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - reviewer, reviewer: 2 -> 1 commits
     - reviewer, maintainer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 6 -> 6 commits (no change)
+    - maintainer, nobody: 6 -> 5 commits
+    - maintainer, no role : 0 -> 1 commits
   - changed commits
-    - series "mm, kvm: allow uffd support in guest_memfd", v4. (4)
-      - d52c08972df0 "userfaultfd: introduce struct mfill_state (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
-        - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
-      - 89ad7ed60896 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma() (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
-        - dropped "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - 259cd4d8d465 "mm: memcontrol: refactor mod_memcg_state() and mod_memcg_lruvec_state() (28/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+        - Link: https://lkml.kernel.org/r/7f8bd3aacec2270b9453428fc8585cca9f10751e.1772711148.git.zhengqi.arch@bytedance.com
+    - series "liveupdate: prevent double preservation", v4. (4)
+      - e0a56513f191 "memfd: implement get_id for memfd_luo (1/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
+        - added "Cc: Christian Brauner <brauner@kernel.org> "
+        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260326163943.574070-3-pasha.tatashin@soleen.com
     - series "fix MAP_DROPPABLE not supported errno". (2)
-      - 303422dd6b84 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
+      - 70da57ae2225 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com"
-        - added "Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com"
-        - added "Acked-by: David Hildenbrand <david@kernel.org>"
-        - added "Reported-by: Mark Brown <broonie@kernel.org>"
-        - dropped "Link: https://lkml.kernel.org/r/20260402003417.438037-2-anthony.yznaga@oracle.com"
-        - dropped "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
         - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
         - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
-  - dropped commits
-    - c12245feaf47 "mm: generalize handling of userfaults in __do_fault()"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-13-rppt@kernel.org
-    - 0882d8611dce "KVM: guest_memfd: implement userfaultfd operations"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-14-rppt@kernel.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

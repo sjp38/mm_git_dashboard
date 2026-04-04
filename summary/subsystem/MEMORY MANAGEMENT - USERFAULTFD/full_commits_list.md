@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 3 total, 0 (2) series, 1 non-series commits
@@ -22,42 +22,42 @@
     - no role, reviewer: 1 commits
   - full commits list
     - series "mm, kvm: allow uffd support in guest_memfd", v4. (4 commits)
-      - f7c3ca8a19ae "userfaultfd: introduce mfill_copy_folio_locked() helper" (0/4)
+      - 742a0253037b "userfaultfd: introduce mfill_copy_folio_locked() helper" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-2-rppt@kernel.org
-      - d52c08972df0 "userfaultfd: introduce struct mfill_state" (1/4)
+      - fc0bab247fb6 "userfaultfd: introduce struct mfill_state" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
-      - 03be013e955a "userfaultfd: introduce mfill_establish_pmd() helper" (2/4)
+      - 69c391a5e91a "userfaultfd: introduce mfill_establish_pmd() helper" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-4-rppt@kernel.org
-      - 89ad7ed60896 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma()" (3/4)
+      - c699300f9a98 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma()" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
-    - 2b3becdc8879 "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
+    - b8b0bab1e2d4 "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
       - Authored by no role player, reviewed by nobody
       - Link: : https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
       - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-6-rppt@kernel.org
-    - c218e5dd592e "userfaultfd: move vma_can_userfault out of line"
+    - 6d66d6d7d5e9 "userfaultfd: move vma_can_userfault out of line"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-7-rppt@kernel.org
-    - 1edf22dfeb47 "userfaultfd: introduce vm_uffd_ops"
+    - 7d2346688c69 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
-    - e264613abebb "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
+    - eb767b242177 "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-9-rppt@kernel.org
-    - 88c64a0c099a "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
+    - ff10afe862c1 "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-10-rppt@kernel.org
-    - e16f7360e447 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
+    - 694dadbd7994 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-11-rppt@kernel.org
-    - 4a3848c5db71 "userfaultfd: mfill_atomic(): remove retry logic"
+    - ba9ab641c55e "userfaultfd: mfill_atomic(): remove retry logic"
       - Authored by no role player, reviewed by nobody
       - Link: : https://lkml.kernel.org/r/ac5zcDUY8CFHr6Lw@kernel.org
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-12-rppt@kernel.org

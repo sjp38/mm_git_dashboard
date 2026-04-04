@@ -1,20 +1,31 @@
-- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de877 (no change)
+- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 27 -> 27 commits (no change)
+- mm-stable: 27 -> 29 commits
   - series: 3 (24) -> 3 (24) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 17 -> 17 commits (no change)
-    - reviewer, reviewer: 5 -> 5 commits (no change)
-- mm-unstable: 7 -> 7 commits (no change)
+    - no role, reviewer: 17 -> 18 commits
+    - reviewer, reviewer: 5 -> 6 commits
+  - changed commits
+    - 1d64296521cb "mm/khugepaged: fix issue with tracking lock"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lkml.kernel.org/r/7760c811-e100-4d40-9217-0813c28314be@lucifer.local
+    - 40267f42d6b4 "mm: fix deferred split queue races during migration"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
+      - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
+      - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
+- mm-unstable: 7 -> 5 commits
   - series: 0 (5) -> 0 (5) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, reviewer: 4 -> 3 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

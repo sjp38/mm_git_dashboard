@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877
+- baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 10 total, 1 (6) series, 4 non-series commits
@@ -44,7 +44,7 @@
   - author/reviewer role stat
     - maintainer, no role : 1 commits
   - full commits list
-    - 274d0aa10d34 "zram: do not forget to endio for partial discard requests"
+    - 23d7e5df8ada "zram: do not forget to endio for partial discard requests"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260331074255.777019-1-senozhatsky@chromium.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
