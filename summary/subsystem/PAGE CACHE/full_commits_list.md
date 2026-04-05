@@ -4,10 +4,10 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-    - d2a64a30bf59 "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
+    - 8cc37861d4dd "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/1cf1ac59018fc647a87b0dad605d4056a71c14e4.1773739704.git.baolin.wang@linux.alibaba.com
-    - 6fa32cd7606b "mm: reinstate unconditional writeback start in balance_dirty_pages()"
+    - 14a30bba1ae2 "mm: reinstate unconditional writeback start in balance_dirty_pages()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260326215127.3857682-2-joannelkoong@gmail.com
 - mm-stable: 3 total, 0 (3) series, 0 non-series commits
@@ -15,20 +15,20 @@
     - no role, no role : 2 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 49dbb708af10 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 4e1d77a8f382 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 2a8c59379837 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE" (3/4)
+      - 511f04aac469 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
-      - 98660a66b095 "mm: rename zap_vma_pages() to zap_vma()" (11/16)
+      - 32bc7fe4a6f4 "mm: rename zap_vma_pages() to zap_vma()" (11/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260227200848.114019-13-david@kernel.org
 - mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 822ecc7f0c7d "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - 8a051bc84ec4 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260326234629.840938-2-joannelkoong@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

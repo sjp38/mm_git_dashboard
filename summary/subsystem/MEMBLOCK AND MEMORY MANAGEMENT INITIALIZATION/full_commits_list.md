@@ -8,32 +8,32 @@
     - no role, maintainer: 4 commits
   - full commits list
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
-      - 00bbd7634b1d "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
+      - 652d12bc74a0 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-2-rppt@kernel.org
-      - 88df087cf58a "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
+      - 9a1d0c738b45 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-3-rppt@kernel.org
-      - 440d8ea43580 "arch, mm: consolidate empty_zero_page" (2/4)
+      - 6215d9f4470f "arch, mm: consolidate empty_zero_page" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-4-rppt@kernel.org
-      - 222db0ef2658 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
+      - 26513781d1b3 "mm: cache struct page for empty_zero_page and return it from ZERO_PAGE()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260211103141.3215197-5-rppt@kernel.org
-      - b5e84b870804 "mm: change the interface of prep_compound_tail()" (1/17)
+      - f0369fb13619 "mm: change the interface of prep_compound_tail()" (1/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - 84180ddccdf6 "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (6/15)
+      - 41293414433a "mm/bootmem_info: remove handling for !CONFIG_SPARSEMEM_VMEMMAP" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-7-096addc8800d@kernel.org
-      - c43fa36e1bb3 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (7/15)
+      - 7f8e592bb327 "mm/bootmem_info: avoid using sparse_decode_mem_map()" (7/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-8-096addc8800d@kernel.org
-      - 63d8284105d5 "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (10/15)
+      - fead6dcff83b "mm: prepare to move subsection_map_init() to mm/sparse-vmemmap.c" (10/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-11-096addc8800d@kernel.org
-    - c829623f99fe "mm: mark early-init static variables with __meminitdata"
+    - c4a9439a5a37 "mm: mark early-init static variables with __meminitdata"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
 - mm-unstable: 2 total, 1 (2) series, 0 non-series commits
@@ -41,11 +41,11 @@
     - no role, no role : 2 commits
   - full commits list
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - d63a621422be "kho: add size parameter to kho_add_subtree()" (0/6)
+      - 1493e84a411b "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - 8f8c0e01ee7f "kho: persist blob size in KHO FDT" (2/6)
+      - c798a46a25c1 "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

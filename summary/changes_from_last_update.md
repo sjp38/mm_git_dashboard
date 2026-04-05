@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 10 -> 10 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
@@ -11,128 +11,100 @@
     - no role, no role : 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-stable: 368 -> 370 commits
-  - series: 40 (282) -> 40 (282) (no change)
+- mm-stable: 370 -> 369 commits
+  - series: 40 (282) -> 39 (280)
     - no role, nobody: 22 -> 22 commits (no change)
-    - no role, no role : 139 -> 139 commits (no change)
-    - no role, reviewer: 47 -> 48 commits
+    - no role, no role : 139 -> 138 commits
+    - no role, reviewer: 48 -> 48 commits (no change)
     - no role, maintainer: 47 -> 47 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 5 -> 6 commits
+    - reviewer, reviewer: 6 -> 6 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 74 -> 74 commits (no change)
     - maintainer, no role : 13 -> 13 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 16 -> 16 commits (no change)
   - changed commits
-    - 982ad7c0d9bb "mm/huge_memory: fix folio isn't locked in softleaf_to_folio()"
+    - 4ff07459db88 "mm/huge_memory: fix folio isn't locked in softleaf_to_folio()"
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: : https://lkml.kernel.org/r/20260321075214.3305564-1-tujinjiang@huawei.com
       - Link: https://lkml.kernel.org/r/20260319012541.4158561-1-tujinjiang@huawei.com
-    - c6eb0be297bf "MAINTAINERS, mailmap: update email address for Harry Yoo"
+    - 9594f05e31e8 "MAINTAINERS, mailmap: update email address for Harry Yoo"
       - Authored by no role player, reviewed by nobody
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260320125925.2259998-1-harry@kernel.org
-    - e57a8520f286 "mm/swap: fix swap cache memcg accounting"
+    - 9acbe135588e "mm/swap: fix swap cache memcg accounting"
       - Authored by no role player, reviewed by a maintainer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
     - series "mm/damon/sysfs: fix memory leak and NULL dereference issues", v4. (3)
-      - be0d38762a44 "mm/damon/sysfs: fix param_ctx leak on damon_sysfs_new_test_ctx() failure (0/3)"
+      - eb1074ece72f "mm/damon/sysfs: fix param_ctx leak on damon_sysfs_new_test_ctx() failure (0/3)"
         - Authored by no role player, reviewed by a maintainer
         - branch: mm-hotfixes-stable -> mm-stable
         - Link: https://lkml.kernel.org/r/20260321175427.86000-1-sj@kernel.org
         - Link: https://lkml.kernel.org/r/20260321175427.86000-2-sj@kernel.org
-      - ebeda8d94fda "mm/damon/sysfs: check contexts->nr before accessing contexts_arr[0] (1/3)"
+      - a12479ed43b3 "mm/damon/sysfs: check contexts->nr before accessing contexts_arr[0] (1/3)"
         - Authored by no role player, reviewed by a maintainer
         - branch: mm-hotfixes-stable -> mm-stable
         - Link: https://lkml.kernel.org/r/20260321175427.86000-3-sj@kernel.org
-      - 34657eef2918 "mm/damon/sysfs: check contexts->nr in repeat_call_fn (2/3)"
+      - d0bde8e2f3d2 "mm/damon/sysfs: check contexts->nr in repeat_call_fn (2/3)"
         - Authored by no role player, reviewed by a maintainer
         - branch: mm-hotfixes-stable -> mm-stable
         - Link: https://patch.msgid.link/20260320163559.178101-3-objecting@objecting.org
         - Link: https://lkml.kernel.org/r/20260321175427.86000-4-sj@kernel.org
         - Link: https://github.com/damonitor/damo [1]
-    - 76005c2a000e "mm/memory: fix PMD/PUD checks in follow_pfnmap_start()"
+    - 26e7888a0c89 "mm/memory: fix PMD/PUD checks in follow_pfnmap_start()"
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260323-follow_pfnmap_fix-v1-1-5b0ec10872b3@kernel.org
-    - 4a2ef276329e "mm/pagewalk: fix race between concurrent split and refault"
+    - 9b25a6e3d243 "mm/pagewalk: fix race between concurrent split and refault"
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260325-pagewalk-check-pmd-refault-v2-1-707bff33bc60@akamai.com
-    - c957ee8c72e4 "bug: avoid format attribute warning for clang as well"
+    - d2fd4225d8de "bug: avoid format attribute warning for clang as well"
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260323205534.1284284-1-arnd@kernel.org
       - Link: https://lore.kernel.org/all/20251208141618.2805983-1-andriy.shevchenko@linux.intel.com/T/#u
-    - 103f7c4ae06a "mm/mseal: update VMA end correctly on merge"
+    - 5ac9c7c2efd0 "mm/mseal: update VMA end correctly on merge"
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-    - 1d64296521cb "mm/khugepaged: fix issue with tracking lock"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/7760c811-e100-4d40-9217-0813c28314be@lucifer.local
-    - 40267f42d6b4 "mm: fix deferred split queue races during migration"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
-      - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
-      - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
-- mm-unstable: 113 -> 112 commits
-  - series: 15 (83) -> 15 (83) (no change)
-    - no role, nobody: 7 -> 6 commits
-    - no role, no role : 30 -> 31 commits
-    - no role, reviewer: 12 -> 11 commits
-    - no role, maintainer: 32 -> 33 commits
+- mm-unstable: 112 -> 113 commits
+  - series: 15 (83) -> 15 (84)
+    - no role, nobody: 6 -> 6 commits (no change)
+    - no role, no role : 31 -> 32 commits
+    - no role, reviewer: 11 -> 11 commits (no change)
+    - no role, maintainer: 33 -> 33 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
-    - reviewer, reviewer: 2 -> 1 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 8 -> 7 commits
-    - maintainer, no role : 12 -> 13 commits
+    - maintainer, nobody: 7 -> 7 commits (no change)
+    - maintainer, no role : 13 -> 13 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 259cd4d8d465 "mm: memcontrol: refactor mod_memcg_state() and mod_memcg_lruvec_state() (28/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lkml.kernel.org/r/7f8bd3aacec2270b9453428fc8585cca9f10751e.1772711148.git.zhengqi.arch@bytedance.com
-    - series "liveupdate: prevent double preservation", v4. (4)
-      - 28a684b1ccf3 "liveupdate: prevent double management of files (0/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Cc: Christian Brauner <brauner@kernel.org> "
-        - Link: https://lkml.kernel.org/r/20260326163943.574070-1-pasha.tatashin@soleen.com
-        - Link: https://lkml.kernel.org/r/20260326163943.574070-2-pasha.tatashin@soleen.com
-        - Link: https://lore.kernel.org/all/20260129212510.967611-1-dmatlack@google.com [1]
-        - Link: https://lore.kernel.org/all/20260203220948.2176157-1-skhawaja@google.com [2]
-      - e0a56513f191 "memfd: implement get_id for memfd_luo (1/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
-        - added "Cc: Christian Brauner <brauner@kernel.org> "
-        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260326163943.574070-3-pasha.tatashin@soleen.com
-      - 22e782161c0f "selftests: liveupdate: add test for double preservation (2/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Cc: Christian Brauner <brauner@kernel.org> "
-        - Link: https://lkml.kernel.org/r/20260326163943.574070-4-pasha.tatashin@soleen.com
-    - fdd3f5c769d2 "mm/sparse: fix comment for section map alignment"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
-    - series "fix MAP_DROPPABLE not supported errno". (2)
-      - 70da57ae2225 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
+    - series "Minor hmm_test fixes and cleanups". (3)
+      - f2ae9e4e8010 "lib: test_hmm: evict device pages on file close to avoid use-after-free (0/3)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
-- mm-new: 2 -> 1 commits
-  - series: 0 (2) -> 0 (1)
-    - no role, no role : 1 -> 0 commits
+        - added "Tested-by: Zenghui Yu <zenghui.yu@linux.dev>"
+        - Link: https://lkml.kernel.org/r/20260331063445.3551404-1-apopple@nvidia.com
+        - Link: https://lkml.kernel.org/r/20260331063445.3551404-2-apopple@nvidia.com
+      - 08433158b06e "lib: test_hmm: implement a device release method (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Tested-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
+        - dropped "Cc: Zenghui Yu <zenghui.yu@linux.dev>"
+        - Link: https://lkml.kernel.org/r/20260331063445.3551404-4-apopple@nvidia.com
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - 9a5c21a0791f "ksm: optimize rmap_walk_ksm by passing a suitable address range (2/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-stable -> mm-unstable
+        - added "Cc: Michel Lespinasse <michel@lespinasse.org>"
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 108 -> 108 commits (no change)
   - series: 12 (58) -> 12 (58) (no change)

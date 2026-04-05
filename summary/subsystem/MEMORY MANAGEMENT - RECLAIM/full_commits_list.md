@@ -8,34 +8,34 @@
     - no role, maintainer: 1 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-    - ab21a3cdec9d "mm: move pgscan, pgsteal, pgrefill to node stats"
+    - e4f4fc7aa8b7 "mm: move pgscan, pgsteal, pgrefill to node stats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260219235846.161910-1-jp.kobryn@linux.dev
-      - ce725346f8c1 "mm/workingset: leave highest bits empty for anon shadow" (4/12)
+      - f3d652b06043 "mm/workingset: leave highest bits empty for anon shadow" (4/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260218-swap-table-p3-v3-5-f4e34be021a7@tencent.com
-      - 1b45202e3145 "mm: add folio_test_lazyfree helper" (3/4)
+      - 6cc153f90b7c "mm: add folio_test_lazyfree helper" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-4-vernon2gm@gmail.com
-      - f9504d82d9d5 "mm: vmscan: add cgroup IDs to vmscan tracepoints" (1/3)
+      - 874a0a566ede "mm: vmscan: add cgroup IDs to vmscan tracepoints" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316160908.42727-3-tballasi@linux.microsoft.com
-      - 49dbb708af10 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
+      - 4e1d77a8f382 "folio_batch: rename pagevec.h to folio_batch.h" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - c6a08ebb39d4 "mm: rename ptep/pmdp_clear_young_notify() to ptep/pmdp_test_and_clear_young_notify()" (1/6)
+      - 37fb436ff673 "mm: rename ptep/pmdp_clear_young_notify() to ptep/pmdp_test_and_clear_young_notify()" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/b3454077ce88745e6f88386b1763721746884565.1772778858.git.baolin.wang@linux.alibaba.com
-      - dc120a406c0c "mm: support batched checking of the young flag for MGLRU" (4/6)
+      - 56e5b60b2114 "mm: support batched checking of the young flag for MGLRU" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com
-    - f294ccc33f05 "mm/vmscan: fix unintended mtc->nmask mutation in alloc_demote_folio()"
+    - d9f74cfb5a9b "mm/vmscan: fix unintended mtc->nmask mutation in alloc_demote_folio()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260303052519.109244-1-bingjiao@google.com
-    - a744312fa833 "mm/mglru: fix cgroup OOM during MGLRU state switching"
+    - a6a8c087dce0 "mm/mglru: fix cgroup OOM during MGLRU state switching"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260319-b4-switch-mglru-v2-v5-1-8898491e5f17@gmail.com
-    - 5c26592ef93e "mm: update outdated comments for removed scan_swap_map_slots()"
+    - f2a48f8fb564 "mm: update outdated comments for removed scan_swap_map_slots()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260321105814.7053-1-kexinsun@smail.nju.edu.cn
 - mm-unstable: 16 total, 0 (14) series, 2 non-series commits
@@ -47,53 +47,53 @@
     - reviewer, reviewer: 1 commits
     - reviewer, maintainer: 3 commits
   - full commits list
-      - 4e92ccc28b11 "mm: workingset: use folio_lruvec() in workingset_refault()" (1/33)
+      - 987ebd4afbc3 "mm: workingset: use folio_lruvec() in workingset_refault()" (1/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772711148.git.zhengqi.arch@bytedance.com
-      - 1b0971d28f38 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 9fd551659844 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - cd869903b40a "mm: vmscan: prepare for the refactoring the move_folios_to_lru()" (3/33)
+      - 79b57c09ef5f "mm: vmscan: prepare for the refactoring the move_folios_to_lru()" (3/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772711148.git.zhengqi.arch@bytedance.com
-      - 8415217f41fb "mm: vmscan: refactor move_folios_to_lru()" (4/33)
+      - e48ec7e81ab0 "mm: vmscan: refactor move_folios_to_lru()" (4/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772711148.git.zhengqi.arch@bytedance.com
-      - 17cc48798d53 "mm: mglru: prevent memory cgroup release in mglru" (13/33)
+      - 1e21be25de1b "mm: mglru: prevent memory cgroup release in mglru" (13/33)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/9d887662a9d39c425742dd8468e3123316bccfe3.1772711148.git.zhengqi.arch@bytedance.com
-      - 2f431158f38e "mm: workingset: prevent memory cgroup release in lru_gen_eviction()" (15/33)
+      - f7c841b93681 "mm: workingset: prevent memory cgroup release in lru_gen_eviction()" (15/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772711148.git.zhengqi.arch@bytedance.com
-      - 2fd38de6af89 "mm: workingset: prevent lruvec release in workingset_refault()" (18/33)
+      - c315681fd314 "mm: workingset: prevent lruvec release in workingset_refault()" (18/33)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772711148.git.zhengqi.arch@bytedance.com
-      - 8eb91760fbbc "mm: workingset: prevent lruvec release in workingset_activation()" (21/33)
+      - 296f88d2348a "mm: workingset: prevent lruvec release in workingset_activation()" (21/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/c6130476affbba0a7d309a887c3df11e0167990b.1772711148.git.zhengqi.arch@bytedance.com
-      - 52397251233c "mm: do not open-code lruvec lock" (22/33)
+      - 40175f8d6d8c "mm: do not open-code lruvec lock" (22/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772711148.git.zhengqi.arch@bytedance.com
-      - 9139c3ed357f "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
+      - e20fabe85c68 "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
-      - 44c4920498ee "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - bd14f497a00b "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
         - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-      - 4b43eb2a7be6 "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
+      - aaf675264cfc "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
-      - e029ab519e09 "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers" (32/33)
+      - c76667991df6 "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers" (32/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/2c90fc006d9d730331a3caeef96f7e5dabe2036d.1772711148.git.zhengqi.arch@bytedance.com
-      - 42217c456c5c "mm: vmscan: fix dirty folios throttling on cgroup v1 for MGLRU" (3/4)
+      - 5be352f251cd "mm: vmscan: fix dirty folios throttling on cgroup v1 for MGLRU" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/3445af0f09e8ca945492e052e82594f8c4f2e2f6.1774606060.git.baolin.wang@linux.alibaba.com
-    - b5f5742a1bb1 "mm/vmscan: prevent MGLRU reclaim from pinning address space"
+    - f707911b9e84 "mm/vmscan: prevent MGLRU reclaim from pinning address space"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260322070843.941997-1-surenb@google.com
-    - 256123ee6fec "mm: remove '!root_reclaim' checking in should_abort_scan()"
+    - 8a4a64cf8c35 "mm: remove '!root_reclaim' checking in should_abort_scan()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260318011558.1696310-1-zhaoyang.huang@unisoc.com
       - Link: https://lkml.kernel.org/r/20260212032111.408865-1-zhaoyang.huang@unisoc.com

@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 3 -> 3 commits (no change)
@@ -13,32 +13,26 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - 982ad7c0d9bb "mm/huge_memory: fix folio isn't locked in softleaf_to_folio()"
+    - 4ff07459db88 "mm/huge_memory: fix folio isn't locked in softleaf_to_folio()"
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: : https://lkml.kernel.org/r/20260321075214.3305564-1-tujinjiang@huawei.com
       - Link: https://lkml.kernel.org/r/20260319012541.4158561-1-tujinjiang@huawei.com
-    - 76005c2a000e "mm/memory: fix PMD/PUD checks in follow_pfnmap_start()"
+    - 26e7888a0c89 "mm/memory: fix PMD/PUD checks in follow_pfnmap_start()"
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260323-follow_pfnmap_fix-v1-1-5b0ec10872b3@kernel.org
-    - 4a2ef276329e "mm/pagewalk: fix race between concurrent split and refault"
+    - 9b25a6e3d243 "mm/pagewalk: fix race between concurrent split and refault"
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260325-pagewalk-check-pmd-refault-v2-1-707bff33bc60@akamai.com
-- mm-unstable: 3 -> 4 commits
+- mm-unstable: 4 -> 4 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - fdd3f5c769d2 "mm/sparse: fix comment for section map alignment"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
-- mm-new: 2 -> 1 commits
-  - series: 0 (2) -> 0 (1)
-    - no role, no role : 1 -> 0 commits
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 4 -> 4 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)

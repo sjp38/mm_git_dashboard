@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
@@ -12,7 +12,7 @@
     - no role, reviewer: 14 -> 14 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - 103f7c4ae06a "mm/mseal: update VMA end correctly on merge"
+    - 5ac9c7c2efd0 "mm/mseal: update VMA end correctly on merge"
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
@@ -23,14 +23,6 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
-  - changed commits
-    - series "fix MAP_DROPPABLE not supported errno". (2)
-      - 70da57ae2225 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

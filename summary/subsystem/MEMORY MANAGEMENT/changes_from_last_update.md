@@ -1,4 +1,4 @@
-- baseline: v7.0-rc5-46-g24f9515de877 -> v7.0-rc5-46-g24f9515de8778
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 7 -> 7 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 2 -> 2 commits (no change)
@@ -9,93 +9,70 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-stable: 230 -> 232 commits
-  - series: 32 (175) -> 32 (175) (no change)
+- mm-stable: 232 -> 231 commits
+  - series: 32 (175) -> 31 (173)
     - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 92 -> 92 commits (no change)
-    - no role, reviewer: 42 -> 43 commits
+    - no role, no role : 92 -> 91 commits
+    - no role, reviewer: 43 -> 43 commits (no change)
     - no role, maintainer: 31 -> 31 commits (no change)
-    - reviewer, reviewer: 5 -> 6 commits
+    - reviewer, reviewer: 6 -> 6 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 31 -> 31 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 16 -> 16 commits (no change)
   - changed commits
-    - e57a8520f286 "mm/swap: fix swap cache memcg accounting"
+    - 9acbe135588e "mm/swap: fix swap cache memcg accounting"
       - Authored by no role player, reviewed by a maintainer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
     - series "mm/damon/sysfs: fix memory leak and NULL dereference issues", v4. (3)
-      - be0d38762a44 "mm/damon/sysfs: fix param_ctx leak on damon_sysfs_new_test_ctx() failure (0/3)"
+      - eb1074ece72f "mm/damon/sysfs: fix param_ctx leak on damon_sysfs_new_test_ctx() failure (0/3)"
         - Authored by no role player, reviewed by a maintainer
         - branch: mm-hotfixes-stable -> mm-stable
         - Link: https://lkml.kernel.org/r/20260321175427.86000-1-sj@kernel.org
         - Link: https://lkml.kernel.org/r/20260321175427.86000-2-sj@kernel.org
-      - ebeda8d94fda "mm/damon/sysfs: check contexts->nr before accessing contexts_arr[0] (1/3)"
+      - a12479ed43b3 "mm/damon/sysfs: check contexts->nr before accessing contexts_arr[0] (1/3)"
         - Authored by no role player, reviewed by a maintainer
         - branch: mm-hotfixes-stable -> mm-stable
         - Link: https://lkml.kernel.org/r/20260321175427.86000-3-sj@kernel.org
-      - 34657eef2918 "mm/damon/sysfs: check contexts->nr in repeat_call_fn (2/3)"
+      - d0bde8e2f3d2 "mm/damon/sysfs: check contexts->nr in repeat_call_fn (2/3)"
         - Authored by no role player, reviewed by a maintainer
         - branch: mm-hotfixes-stable -> mm-stable
         - Link: https://patch.msgid.link/20260320163559.178101-3-objecting@objecting.org
         - Link: https://lkml.kernel.org/r/20260321175427.86000-4-sj@kernel.org
         - Link: https://github.com/damonitor/damo [1]
-    - 76005c2a000e "mm/memory: fix PMD/PUD checks in follow_pfnmap_start()"
+    - 26e7888a0c89 "mm/memory: fix PMD/PUD checks in follow_pfnmap_start()"
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260323-follow_pfnmap_fix-v1-1-5b0ec10872b3@kernel.org
-    - 4a2ef276329e "mm/pagewalk: fix race between concurrent split and refault"
+    - 9b25a6e3d243 "mm/pagewalk: fix race between concurrent split and refault"
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260325-pagewalk-check-pmd-refault-v2-1-707bff33bc60@akamai.com
-    - 103f7c4ae06a "mm/mseal: update VMA end correctly on merge"
+    - 5ac9c7c2efd0 "mm/mseal: update VMA end correctly on merge"
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-    - 1d64296521cb "mm/khugepaged: fix issue with tracking lock"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lkml.kernel.org/r/7760c811-e100-4d40-9217-0813c28314be@lucifer.local
-    - 40267f42d6b4 "mm: fix deferred split queue races during migration"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
-      - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
-      - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
-- mm-unstable: 78 -> 76 commits
-  - series: 10 (53) -> 10 (53) (no change)
-    - no role, nobody: 4 -> 3 commits
-    - no role, no role : 20 -> 20 commits (no change)
-    - no role, reviewer: 7 -> 6 commits
-    - no role, maintainer: 31 -> 32 commits
+- mm-unstable: 76 -> 77 commits
+  - series: 10 (53) -> 10 (54)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 20 -> 21 commits
+    - no role, reviewer: 6 -> 6 commits (no change)
+    - no role, maintainer: 32 -> 32 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
-    - reviewer, reviewer: 2 -> 1 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 6 -> 5 commits
-    - maintainer, no role : 0 -> 1 commits
+    - maintainer, nobody: 5 -> 5 commits (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 259cd4d8d465 "mm: memcontrol: refactor mod_memcg_state() and mod_memcg_lruvec_state() (28/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lkml.kernel.org/r/7f8bd3aacec2270b9453428fc8585cca9f10751e.1772711148.git.zhengqi.arch@bytedance.com
-    - series "liveupdate: prevent double preservation", v4. (4)
-      - e0a56513f191 "memfd: implement get_id for memfd_luo (1/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Pratyush Yadav (Google) <pratyush@kernel.org>"
-        - added "Cc: Christian Brauner <brauner@kernel.org> "
-        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260326163943.574070-3-pasha.tatashin@soleen.com
-    - series "fix MAP_DROPPABLE not supported errno". (2)
-      - 70da57ae2225 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - 9a5c21a0791f "ksm: optimize rmap_walk_ksm by passing a suitable address range (2/8)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
+        - branch: mm-stable -> mm-unstable
+        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - added "Cc: Michel Lespinasse <michel@lespinasse.org>"
+        - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

@@ -7,19 +7,19 @@
     - no role, no role : 1 commits
     - no role, reviewer: 3 commits
   - full commits list
-      - 1b45202e3145 "mm: add folio_test_lazyfree helper" (3/4)
+      - 6cc153f90b7c "mm: add folio_test_lazyfree helper" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260221093918.1456187-4-vernon2gm@gmail.com
-    - 6844657644ab "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
+    - 514c2fe9927e "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
-      - 9dcefc3ce0b5 "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced()" (2/6)
+      - 83ec1286b173 "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/64d6fb2a33f7101e1d4aca2c9052e0758b76d492.1772778858.git.baolin.wang@linux.alibaba.com
-      - dc120a406c0c "mm: support batched checking of the young flag for MGLRU" (4/6)
+      - 56e5b60b2114 "mm: support batched checking of the young flag for MGLRU" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com
-    - a744312fa833 "mm/mglru: fix cgroup OOM during MGLRU state switching"
+    - a6a8c087dce0 "mm/mglru: fix cgroup OOM during MGLRU state switching"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260319-b4-switch-mglru-v2-v5-1-8898491e5f17@gmail.com
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits

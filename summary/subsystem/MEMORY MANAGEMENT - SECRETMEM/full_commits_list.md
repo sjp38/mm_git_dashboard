@@ -6,7 +6,7 @@
     - no role, reviewer: 1 commits
   - full commits list
     - series "mm: vma flag tweaks". (6 commits)
-      - 85ed42942b73 "mm: rename VMA flag helpers to be more readable" (0/6)
+      - e650bb30ca53 "mm: rename VMA flag helpers to be more readable" (0/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
         - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
