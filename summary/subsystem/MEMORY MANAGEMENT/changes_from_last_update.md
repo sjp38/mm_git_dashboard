@@ -1,18 +1,46 @@
 - baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
-- mm-hotfixes-stable: 7 -> 7 commits (no change)
+- mm-hotfixes-stable: 7 -> 13 commits
   - series: 1 (3) -> 1 (3) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 6 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-hotfixes-unstable: 7 -> 7 commits (no change)
+    - maintainer, nobody: 0 -> 2 commits
+  - changed commits
+    - f58df566524e "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/1cf1ac59018fc647a87b0dad605d4056a71c14e4.1773739704.git.baolin.wang@linux.alibaba.com
+    - cece9dc61daa "mm: reinstate unconditional writeback start in balance_dirty_pages()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260326215127.3857682-2-joannelkoong@gmail.com
+    - 0199390a6b92 "mm/damon/sysfs: dealloc repeat_call_control if damon_call() fails"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260327003224.55752-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260320020630.962-1-sj@kernel.org [1]
+    - 2ecbe06abf9b "mm/memory_hotplug: maintain N_NORMAL_MEMORY during hotplug"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260330035941.518186-1-hao.li@linux.dev
+    - 894f99eb535e "mm/vma: fix memory leak in __mmap_region()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260331180811.1333348-1-rhkrqnwk98@gmail.com
+    - 4c04c6b47c36 "mm/damon/stat: deallocate damon_call() failure leaking damon_ctx"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lkml.kernel.org/r/20260402134418.74121-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260401012428.86694-1-sj@kernel.org [1]
+- mm-hotfixes-unstable: 7 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
-    - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-stable: 232 -> 231 commits
-  - series: 32 (175) -> 31 (173)
+    - no role, no role : 4 -> 0 commits
+    - maintainer, nobody: 2 -> 0 commits
+- mm-stable: 231 -> 231 commits (no change)
+  - series: 31 (173) -> 31 (173) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 92 -> 91 commits
+    - no role, no role : 91 -> 91 commits (no change)
     - no role, reviewer: 43 -> 43 commits (no change)
     - no role, maintainer: 31 -> 31 commits (no change)
     - reviewer, reviewer: 6 -> 6 commits (no change)
@@ -54,11 +82,11 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 76 -> 77 commits
-  - series: 10 (53) -> 10 (54)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 20 -> 21 commits
-    - no role, reviewer: 6 -> 6 commits (no change)
+- mm-unstable: 77 -> 77 commits (no change)
+  - series: 10 (54) -> 10 (54) (no change)
+    - no role, nobody: 3 -> 2 commits
+    - no role, no role : 21 -> 21 commits (no change)
+    - no role, reviewer: 6 -> 7 commits
     - no role, maintainer: 32 -> 32 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
@@ -66,13 +94,21 @@
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - 9a5c21a0791f "ksm: optimize rmap_walk_ksm by passing a suitable address range (2/8)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-stable -> mm-unstable
-        - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - added "Cc: Michel Lespinasse <michel@lespinasse.org>"
-        - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
+    - 7be926e7bb9c "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+      - dropped "Cc: Harry Yoo <harry.yoo@oracle.com>"
+      - dropped "Cc: Harry Yoo (Oracle) <harry@kernel.org>"
+      - Link: : https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
+      - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-6-rppt@kernel.org
+    - series "fix MAP_DROPPABLE not supported errno". (2)
+      - 9d4a6aaacc6c "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
+        - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

@@ -17,47 +17,47 @@
         - Link: https://lkml.kernel.org/r/51afbb2b8c3681003cc7926647e37335d793836e.1774034900.git.ljs@kernel.org
 - mm-unstable: 11 total, 1 (4) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, no role : 7 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 8 commits
     - no role, reviewer: 1 commits
   - full commits list
     - series "mm, kvm: allow uffd support in guest_memfd", v4. (4 commits)
-      - aa7295e3ab2d "userfaultfd: introduce mfill_copy_folio_locked() helper" (0/4)
+      - fb057c99e08f "userfaultfd: introduce mfill_copy_folio_locked() helper" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-2-rppt@kernel.org
-      - 93596271e4fe "userfaultfd: introduce struct mfill_state" (1/4)
+      - 8599372b3ba2 "userfaultfd: introduce struct mfill_state" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
-      - b0ec9d3a1aca "userfaultfd: introduce mfill_establish_pmd() helper" (2/4)
+      - 77f26339f55a "userfaultfd: introduce mfill_establish_pmd() helper" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-4-rppt@kernel.org
-      - ee9af3228908 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma()" (3/4)
+      - 03dd6787c636 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma()" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
-    - 44ec36c185c2 "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
-      - Authored by no role player, reviewed by nobody
+    - 7be926e7bb9c "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
+      - Authored by no role player, reviewed by no role player
       - Link: : https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
       - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-6-rppt@kernel.org
-    - ea010c5615f3 "userfaultfd: move vma_can_userfault out of line"
+    - a8d929f3ec9d "userfaultfd: move vma_can_userfault out of line"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-7-rppt@kernel.org
-    - 3a86a4f09102 "userfaultfd: introduce vm_uffd_ops"
+    - 694fc0bd3ca5 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
-    - 96dd76e4ca9d "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
+    - 533a8e5a6a71 "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-9-rppt@kernel.org
-    - 29f0051283a5 "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
+    - 9eaadeacddb5 "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-10-rppt@kernel.org
-    - 5c3c7bc00d72 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
+    - fedf8accd23f "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-11-rppt@kernel.org
-    - 33e284b6ee74 "userfaultfd: mfill_atomic(): remove retry logic"
+    - 277417086891 "userfaultfd: mfill_atomic(): remove retry logic"
       - Authored by no role player, reviewed by nobody
       - Link: : https://lkml.kernel.org/r/ac5zcDUY8CFHr6Lw@kernel.org
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-12-rppt@kernel.org

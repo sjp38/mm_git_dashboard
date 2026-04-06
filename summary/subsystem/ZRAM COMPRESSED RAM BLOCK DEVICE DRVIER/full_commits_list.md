@@ -44,7 +44,7 @@
   - author/reviewer role stat
     - maintainer, no role : 1 commits
   - full commits list
-    - 6695d4f29ce7 "zram: do not forget to endio for partial discard requests"
+    - d89c88b79066 "zram: do not forget to endio for partial discard requests"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260331074255.777019-1-senozhatsky@chromium.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
