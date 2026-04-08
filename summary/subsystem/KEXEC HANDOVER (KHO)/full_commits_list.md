@@ -24,20 +24,20 @@
     - no role, reviewer: 2 commits
   - full commits list
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - 74669e6dc56f "kho: add size parameter to kho_add_subtree()" (0/6)
+      - c4b9e68e5a21 "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - 94ee2e2a217c "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
+      - 1362c1635351 "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-2-ed6dcd951988@debian.org
-      - bdcd0d92c194 "kho: persist blob size in KHO FDT" (2/6)
+      - f433784c7889 "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
-      - 00fa7d6a462f "kho: kexec-metadata: track previous kernel chain" (4/6)
+      - 047117e78331 "kho: kexec-metadata: track previous kernel chain" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-5-ed6dcd951988@debian.org
-      - d21b662691ab "kho: document kexec-metadata tracking feature" (5/6)
+      - c646f0513cdb "kho: document kexec-metadata tracking feature" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-6-ed6dcd951988@debian.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

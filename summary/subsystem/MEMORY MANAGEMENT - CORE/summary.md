@@ -26,4 +26,4 @@
     - no role, maintainer: 2 commits
 - mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits

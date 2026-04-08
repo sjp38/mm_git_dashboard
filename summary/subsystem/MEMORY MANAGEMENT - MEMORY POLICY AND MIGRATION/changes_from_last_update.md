@@ -1,8 +1,13 @@
 - baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - reviewer, reviewer: 0 -> 1 commits
+  - new commits
+    - 869fff6de9b9 "mm/mempolicy: fix weighted interleave auto sysfs name"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260407141415.3080960-1-joshua.hahnjy@gmail.com
 - mm-stable: 6 -> 6 commits (no change)
   - series: 0 (3) -> 0 (3) (no change)
     - no role, reviewer: 4 -> 4 commits (no change)

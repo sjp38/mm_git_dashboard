@@ -8,9 +8,14 @@
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-unstable: 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 4db2bd83a661 "zram: reject unrecognized type= values in recompress_store()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260407153027.42425-1-astellman@stellman-greene.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

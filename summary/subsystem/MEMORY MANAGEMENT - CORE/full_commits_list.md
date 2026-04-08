@@ -380,24 +380,24 @@
     - no role, no role : 2 commits
     - reviewer, no role : 1 commits
   - full commits list
-      - 7c9ca8b05a8c "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - 9fa445014f68 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
         - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-    - 31bc3cf3272d "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+    - 6daa48df62e7 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
-    - 694fc0bd3ca5 "userfaultfd: introduce vm_uffd_ops"
+    - fe19807229d5 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
-    - 7aa3fc342e6c "mm/sparse: fix comment for section map alignment"
+    - f243028ae837 "mm/sparse: fix comment for section map alignment"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 96881c429af1 "mm/vmstat: spread vmstat_update requeue across the stat interval" (3/8)
+      - 0d90551ea699 "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 4 total, 0 (1) series, 3 non-series commits
@@ -422,10 +422,10 @@
       - Link: https://lore.kernel.org/20240311164638.2015063-7-pasha.tatashin@soleen.com
 - mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
   - full commits list
-    - e2cd286d6a1e "kernel/fork: validate exit_signal in kernel_clone()"
-      - Authored by no role player, reviewed by no role player
+    - 9ec63a864be9 "kernel/fork: validate exit_signal in kernel_clone()"
+      - Authored by no role player, reviewed by a reviewer
       - Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com
       - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
       - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]

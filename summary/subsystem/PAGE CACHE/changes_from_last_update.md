@@ -1,19 +1,9 @@
 - baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
-- mm-hotfixes-stable: 0 -> 2 commits
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 2 commits
-  - changed commits
-    - f58df566524e "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/1cf1ac59018fc647a87b0dad605d4056a71c14e4.1773739704.git.baolin.wang@linux.alibaba.com
-    - cece9dc61daa "mm: reinstate unconditional writeback start in balance_dirty_pages()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260326215127.3857682-2-joannelkoong@gmail.com
-- mm-hotfixes-unstable: 2 -> 0 commits
+    - no role, no role : 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 0 commits
 - mm-stable: 3 -> 3 commits (no change)
   - series: 0 (3) -> 0 (3) (no change)
     - no role, no role : 2 -> 2 commits (no change)

@@ -1,16 +1,10 @@
 - baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
-- mm-hotfixes-stable: 1 -> 2 commits
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 894f99eb535e "mm/vma: fix memory leak in __mmap_region()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lkml.kernel.org/r/20260331180811.1333348-1-rhkrqnwk98@gmail.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-stable: 49 -> 49 commits (no change)
   - series: 4 (46) -> 4 (46) (no change)
     - no role, nobody: 9 -> 9 commits (no change)
@@ -25,17 +19,31 @@
 - mm-unstable: 6 -> 6 commits (no change)
   - series: 2 (4) -> 2 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
   - changed commits
+    - series "mm/mprotect: micro-optimization work", v3. (2)
+      - 09381c039322 "mm/mprotect: move softleaf code out of the main function (0/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Davidlohr Bueso <dave@stgolabs.net>"
+        - Link: https://lkml.kernel.org/r/20260402141628.3367596-1-pfalcato@suse.de
+        - Link: https://lkml.kernel.org/r/20260402141628.3367596-2-pfalcato@suse.de
+        - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
+        - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
+        - Link: https://lkml.kernel.org/r/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]
+      - cd9bfaf8c143 "mm/mprotect: special-case small folios when applying permissions (1/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Davidlohr Bueso <dave@stgolabs.net>"
+        - Link: https://lkml.kernel.org/r/20260402141628.3367596-3-pfalcato@suse.de
     - series "fix MAP_DROPPABLE not supported errno". (2)
-      - 9d4a6aaacc6c "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
+      - 69fc91fee227 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
         - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
         - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
 - mm-new: 0 -> 0 commits (no change)
