@@ -10,15 +10,6 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - 046f68ed35f5 "mm/mempolicy: fix weighted interleave auto sysfs name"
-      - Authored by a reviewer, reviewed by a reviewer
-      - added "Reviewed-by: Rakie Kim <rakie.kim@sk.com>"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lkml.kernel.org/r/20260407141415.3080960-1-joshua.hahnjy@gmail.com
 - mm-stable: 231 -> 231 commits (no change)
   - series: 31 (173) -> 31 (173) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
@@ -64,20 +55,94 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 76 -> 76 commits (no change)
+- mm-unstable: 76 -> 80 commits
   - series: 10 (53) -> 10 (53) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 20 -> 20 commits (no change)
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 20 -> 22 commits
     - no role, reviewer: 7 -> 7 commits (no change)
-    - no role, maintainer: 32 -> 32 commits (no change)
+    - no role, maintainer: 32 -> 33 commits
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 9bba8d92fcbb "userfaultfd-introduce-vm_uffd_ops-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/adffgfM5ANxtPIEF@kernel.org
+    - e466654e03f9 "mm/userfaultfd: detect VMA type change after copy retry in mfill_copy_folio_retry()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260409120653.290386-1-devnexen@gmail.com
+    - 918af551606d "mm/hugetlb: fix early boot crash on parameters without '=' separator"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260409105437.108686-4-thorsten.blum@linux.dev
+    - 04975fb3babb "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
+  - changed commits
+    - series "mm, kvm: allow uffd support in guest_memfd", v4. (4)
+      - 8aed1999bbdc "userfaultfd: introduce mfill_copy_folio_locked() helper (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: David Carlier <devnexen@gmail.com>"
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-1-rppt@kernel.org
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-2-rppt@kernel.org
+      - 7a9b96ffacde "userfaultfd: introduce struct mfill_state (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: David Carlier <devnexen@gmail.com>"
+        - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
+      - fbb8513a228e "userfaultfd: introduce mfill_establish_pmd() helper (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: David Carlier <devnexen@gmail.com>"
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-4-rppt@kernel.org
+      - eb8755fdb69a "userfaultfd: introduce mfill_get_vma() and mfill_put_vma() (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: David Carlier <devnexen@gmail.com>"
+        - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
+        - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
+    - 09a2b6017e63 "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
+      - Authored by no role player, reviewed by no role player
+      - added "Cc: Harry Yoo <harry.yoo@oracle.com>"
+      - added "Cc: David Carlier <devnexen@gmail.com>"
+      - Link: : https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
+      - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-6-rppt@kernel.org
+    - e2ea70f7b486 "userfaultfd: move vma_can_userfault out of line"
+      - Authored by no role player, reviewed by no role player
+      - added "Cc: David Carlier <devnexen@gmail.com>"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-7-rppt@kernel.org
+    - 6874796c7ec5 "userfaultfd: introduce vm_uffd_ops"
+      - Authored by no role player, reviewed by nobody
+      - added "Cc: Tal Zussman <tz2294@columbia.edu>"
+      - added "Cc: David Carlier <devnexen@gmail.com>"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
+    - 71f92f0fb39b "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
+      - Authored by no role player, reviewed by no role player
+      - added "Cc: David Carlier <devnexen@gmail.com>"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-9-rppt@kernel.org
+    - 520c0ca8a81e "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
+      - Authored by no role player, reviewed by no role player
+      - added "Cc: David Carlier <devnexen@gmail.com>"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-10-rppt@kernel.org
+    - c7535945390f "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
+      - Authored by no role player, reviewed by no role player
+      - added "Cc: David Carlier <devnexen@gmail.com>"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-11-rppt@kernel.org
+    - 82a95219b93a "userfaultfd: mfill_atomic(): remove retry logic"
+      - Authored by no role player, reviewed by nobody
+      - added "Cc: David Carlier <devnexen@gmail.com>"
+      - Link: : https://lkml.kernel.org/r/ac5zcDUY8CFHr6Lw@kernel.org
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-12-rppt@kernel.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - d0b7382f0c56 "mm/vmstat: spread vmstat_update requeue across the stat interval (2/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Dmitry Ilvokhin <d@ilvokhin.com>"
+        - dropped "Cc: Dmitry Ilvokhin <d@ilvokhin.com>"
+        - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

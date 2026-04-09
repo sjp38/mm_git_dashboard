@@ -14,6 +14,20 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "selftests/mm: skip several tests when thp is not available", v8. (6)
+      - 0d88467945b6 "selftests/mm: move write_file helper to vm_util (2/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: Nico Pache <npache@redhat.com>"
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com
+      - 2a8aeee27338 "selftests/mm: split_huge_page_test: skip the test when thp is not available (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: Nico Pache <npache@redhat.com>"
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com
+      - efc8b4abba21 "selftests/mm: transhuge_stress: skip the test when thp not available (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: Nico Pache <npache@redhat.com>"
+        - Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

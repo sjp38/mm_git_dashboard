@@ -8,7 +8,7 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
 - mm-unstable: 5 -> 5 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
+  - series: 1 (5) -> 1 (4)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)

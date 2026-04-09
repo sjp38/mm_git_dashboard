@@ -26,14 +26,31 @@
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260325-pagewalk-check-pmd-refault-v2-1-707bff33bc60@akamai.com
-- mm-unstable: 4 -> 4 commits (no change)
+- mm-unstable: 4 -> 5 commits
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 3 commits
     - reviewer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 04975fb3babb "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
+  - changed commits
+    - 6874796c7ec5 "userfaultfd: introduce vm_uffd_ops"
+      - Authored by no role player, reviewed by nobody
+      - added "Cc: David Carlier <devnexen@gmail.com>"
+      - added "Cc: Tal Zussman <tz2294@columbia.edu>"
+      - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - d0b7382f0c56 "mm/vmstat: spread vmstat_update requeue across the stat interval (2/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Dmitry Ilvokhin <d@ilvokhin.com>"
+        - dropped "Cc: Dmitry Ilvokhin <d@ilvokhin.com>"
+        - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 4 -> 4 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
