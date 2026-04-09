@@ -1,12 +1,17 @@
 - baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-  - new commits
-    - 869fff6de9b9 "mm/mempolicy: fix weighted interleave auto sysfs name"
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 046f68ed35f5 "mm/mempolicy: fix weighted interleave auto sysfs name"
       - Authored by a reviewer, reviewed by a reviewer
+      - added "Reviewed-by: Rakie Kim <rakie.kim@sk.com>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lkml.kernel.org/r/20260407141415.3080960-1-joshua.hahnjy@gmail.com
 - mm-stable: 6 -> 6 commits (no change)
   - series: 0 (3) -> 0 (3) (no change)

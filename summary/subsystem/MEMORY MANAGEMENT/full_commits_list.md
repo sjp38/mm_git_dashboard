@@ -57,14 +57,14 @@
     - reviewer, reviewer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 869fff6de9b9 "mm/mempolicy: fix weighted interleave auto sysfs name"
+    - 046f68ed35f5 "mm/mempolicy: fix weighted interleave auto sysfs name"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260407141415.3080960-1-joshua.hahnjy@gmail.com
-    - ca3fefe345ae "mm/damon/core: disallow time-quota setting zero esz"
+    - 0d8afbfa01bf "mm/damon/core: disallow time-quota setting zero esz"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260407003153.79589-1-sj@kernel.org
       - Link: https://lore.kernel.org/20260405192504.110014-1-sj@kernel.org [1]
-    - 619d98d5b887 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - 1072677ba0a7 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 231 total, 31 (173) series, 58 non-series commits
@@ -886,281 +886,281 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "Eliminate Dying Memory Cgroup", v6. (33 commits)
-      - 5192f2f484d0 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
+      - 35a840317814 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772711148.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
         - Link: https://lwn.net/Articles/895431/ [2]
         - Link: https://github.com/systemd/systemd/pull/36827 [3]
-      - 78f755c99a79 "mm: workingset: use folio_lruvec() in workingset_refault()" (1/33)
+      - 74fcfe038302 "mm: workingset: use folio_lruvec() in workingset_refault()" (1/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772711148.git.zhengqi.arch@bytedance.com
-      - dc68258e4190 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 2490457afd9a "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 354b7a82b2ad "mm: vmscan: prepare for the refactoring the move_folios_to_lru()" (3/33)
+      - 75ab978fa375 "mm: vmscan: prepare for the refactoring the move_folios_to_lru()" (3/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772711148.git.zhengqi.arch@bytedance.com
-      - 7e5f5bc014df "mm: vmscan: refactor move_folios_to_lru()" (4/33)
+      - 4831f9659a3a "mm: vmscan: refactor move_folios_to_lru()" (4/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772711148.git.zhengqi.arch@bytedance.com
-      - 5e45b98e9a58 "mm: memcontrol: allocate object cgroup for non-kmem case" (5/33)
+      - 09a861cf7218 "mm: memcontrol: allocate object cgroup for non-kmem case" (5/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/b77274aa8e3f37c419bedf4782943fd5885dda82.1772711148.git.zhengqi.arch@bytedance.com
-      - 6e5d632f9a12 "mm: memcontrol: return root object cgroup for root memory cgroup" (6/33)
+      - c562fea685a4 "mm: memcontrol: return root object cgroup for root memory cgroup" (6/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/e9c3f40ba7681d9753372d4ee2ac7a0216848b95.1772711148.git.zhengqi.arch@bytedance.com
-      - 0e38ab76db21 "mm: memcontrol: prevent memory cgroup release in get_mem_cgroup_from_folio()" (7/33)
+      - 8552a419a76c "mm: memcontrol: prevent memory cgroup release in get_mem_cgroup_from_folio()" (7/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/a5a64c6173a566bd21534606aeaaa9220cb1366d.1772711148.git.zhengqi.arch@bytedance.com
-      - 9def7a47d992 "writeback: prevent memory cgroup release in writeback module" (9/33)
+      - d3e14c375771 "writeback: prevent memory cgroup release in writeback module" (9/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/645f99bc344575417f67def3744f975596df2793.1772711148.git.zhengqi.arch@bytedance.com
-      - 058fc2bfca5a "mm: page_io: prevent memory cgroup release in page_io module" (11/33)
+      - 2b1759ab6267 "mm: page_io: prevent memory cgroup release in page_io module" (11/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/7c3708358412fb02c482d0985feb5e9513a863ef.1772711148.git.zhengqi.arch@bytedance.com
-      - db7d1dc6e4f9 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+      - 6c6052259269 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-      - 9c8e8d8a75e8 "mm: mglru: prevent memory cgroup release in mglru" (13/33)
+      - a01618bf5a6b "mm: mglru: prevent memory cgroup release in mglru" (13/33)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/9d887662a9d39c425742dd8468e3123316bccfe3.1772711148.git.zhengqi.arch@bytedance.com
-      - 646a432d553f "mm: memcontrol: prevent memory cgroup release in mem_cgroup_swap_full()" (14/33)
+      - 0f3778f53592 "mm: memcontrol: prevent memory cgroup release in mem_cgroup_swap_full()" (14/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/21d1abab7342615745ea4c18a88237335ab44d13.1772711148.git.zhengqi.arch@bytedance.com
-      - 3e7fe75451e7 "mm: workingset: prevent memory cgroup release in lru_gen_eviction()" (15/33)
+      - c9695b2ee99b "mm: workingset: prevent memory cgroup release in lru_gen_eviction()" (15/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772711148.git.zhengqi.arch@bytedance.com
-      - 52c5e982601f "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
+      - 8fb5657830dc "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
-      - f4fd7599d67e "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
+      - 59a45dafe2e5 "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com
-      - aa0d7d9f331d "mm: workingset: prevent lruvec release in workingset_refault()" (18/33)
+      - 30014c3edc3a "mm: workingset: prevent lruvec release in workingset_refault()" (18/33)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772711148.git.zhengqi.arch@bytedance.com
-      - 5b198643fd4a "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
+      - b302b4bf9aee "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com
-      - b1562c728cbd "mm: swap: prevent lruvec release in lru_gen_clear_refs()" (20/33)
+      - 4406d9876cc0 "mm: swap: prevent lruvec release in lru_gen_clear_refs()" (20/33)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/986cd26227191a48a7c34a2a15812d361f4ebd53.1772711148.git.zhengqi.arch@bytedance.com
-      - ff72c739bcf7 "mm: workingset: prevent lruvec release in workingset_activation()" (21/33)
+      - 0bc626bdf885 "mm: workingset: prevent lruvec release in workingset_activation()" (21/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/c6130476affbba0a7d309a887c3df11e0167990b.1772711148.git.zhengqi.arch@bytedance.com
-      - d428077094ea "mm: do not open-code lruvec lock" (22/33)
+      - abcac03b06f8 "mm: do not open-code lruvec lock" (22/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772711148.git.zhengqi.arch@bytedance.com
-      - 9939da57ac47 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - 383513e7061a "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-      - 62aa42c2d886 "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
+      - ec519f8f7f2b "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
-      - 9fa445014f68 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - a2d99492dc2d "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
         - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-      - 9d3e79b2161e "mm: memcontrol: refactor memcg_reparent_objcgs()" (26/33)
+      - eaa3d6320df2 "mm: memcontrol: refactor memcg_reparent_objcgs()" (26/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/2e5696db1993e593a51004c1dacedbc261689629.1772711148.git.zhengqi.arch@bytedance.com
-      - 534109e75805 "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
+      - d9fbd9f504eb "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
-      - 06366ed85dfd "mm: memcontrol: refactor mod_memcg_state() and mod_memcg_lruvec_state()" (28/33)
+      - a05a9f9f7186 "mm: memcontrol: refactor mod_memcg_state() and mod_memcg_lruvec_state()" (28/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/7f8bd3aacec2270b9453428fc8585cca9f10751e.1772711148.git.zhengqi.arch@bytedance.com
-      - 6b5023cc1792 "mm: memcontrol: prepare for reparenting non-hierarchical stats" (29/33)
+      - 977495dc2b06 "mm: memcontrol: prepare for reparenting non-hierarchical stats" (29/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/e862995c45a7101a541284b6ebee5e5c32c89066.1772711148.git.zhengqi.arch@bytedance.com
-      - 4746d5965580 "mm: memcontrol: convert objcg to be per-memcg per-node type" (30/33)
+      - 40a2be1a1dbb "mm: memcontrol: convert objcg to be per-memcg per-node type" (30/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: : https://lkml.kernel.org/r/20260309112939.31937-1-qi.zheng@linux.dev
         - Link: : https://lkml.kernel.org/r/20260322193631.45457-1-devnexen@gmail.com
         - Link: : https://lkml.kernel.org/r/20260323063007.7783-1-devnexen@gmail.com
         - Link: https://lkml.kernel.org/r/56c04b1c5d54f75ccdc12896df6c1ca35403ecc3.1772711148.git.zhengqi.arch@bytedance.com
-      - ec0d698e5f5d "mm: memcontrol: eliminate the problem of dying memory cgroup for LRU folios" (31/33)
+      - 9ea98ecdefcd "mm: memcontrol: eliminate the problem of dying memory cgroup for LRU folios" (31/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/80cb7af198dc6f2173fe616d1207a4c315ece141.1772711148.git.zhengqi.arch@bytedance.com
-      - b80ce03333a0 "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers" (32/33)
+      - 6461e081a0ff "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers" (32/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/2c90fc006d9d730331a3caeef96f7e5dabe2036d.1772711148.git.zhengqi.arch@bytedance.com
     - series "fix unexpected type conversions and potential overflows", v3. (3 commits)
-      - 68ef401f0b16 "mm: memcontrol: correct the type of stats_updates to unsigned long" (0/3)
+      - b5e23d777ea1 "mm: memcontrol: correct the type of stats_updates to unsigned long" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/cover.1774604356.git.zhengqi.arch@bytedance.com
         - Link: https://lkml.kernel.org/r/a5b0b468e7b4fe5f26c50e36d5d016f16d92f98f.1774604356.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/all/acDxaEgnqPI-Z4be@hyeyoo/ [1]
-      - ec8bf06d4ce9 "mm: memcontrol: change val type to long in __mod_memcg_{lruvec_}state()" (1/3)
+      - 9757f1e180d3 "mm: memcontrol: change val type to long in __mod_memcg_{lruvec_}state()" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/70a9440e49c464b4dca88bcabc6b491bd335c9f0.1774604356.git.zhengqi.arch@bytedance.com
-      - 20f7280a64d6 "mm: memcontrol: correct the nr_pages parameter type of mem_cgroup_update_lru_size()" (2/3)
+      - b3e41bcdc49f "mm: memcontrol: correct the nr_pages parameter type of mem_cgroup_update_lru_size()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/fd4140de44fa0a3978e4e2426731187fe8625f0b.1774604356.git.zhengqi.arch@bytedance.com
-    - 451eba86af4e "mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option"
+    - d28c9bf64ad6 "mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260323-kmemleak_report-v1-1-ba2cdd9c11b9@debian.org
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - c4b9e68e5a21 "kho: add size parameter to kho_add_subtree()" (0/6)
+      - e570594ac962 "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - f433784c7889 "kho: persist blob size in KHO FDT" (2/6)
+      - 64ac5dd5faf0 "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
-    - 37c62e27ee8b "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - af44e2491386 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260326234629.840938-2-joannelkoong@gmail.com
-      - 9b356faa431a "memfd: implement get_id for memfd_luo" (1/4)
+      - 75ada53fbeac "memfd: implement get_id for memfd_luo" (1/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260326163943.574070-3-pasha.tatashin@soleen.com
-      - bff35598f316 "mm: vmscan: fix dirty folios throttling on cgroup v1 for MGLRU" (3/4)
+      - c15ccec39500 "mm: vmscan: fix dirty folios throttling on cgroup v1 for MGLRU" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/3445af0f09e8ca945492e052e82594f8c4f2e2f6.1774606060.git.baolin.wang@linux.alibaba.com
-    - 4e66ed42b757 "mm/vmscan: prevent MGLRU reclaim from pinning address space"
+    - e9a712eef892 "mm/vmscan: prevent MGLRU reclaim from pinning address space"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260322070843.941997-1-surenb@google.com
-    - 5f1da8fbeb2a "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
+    - ca8ea9afac52 "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260331081312.123719-1-hao.ge@linux.dev
     - series "zswap pool per-CPU acomp_ctx simplifications", v3. (2 commits)
-      - 61b1cce887b7 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead()" (0/2)
+      - 9c564d3fe5c4 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260331183351.29844-2-kanchanapsridhar2026@gmail.com
         - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677
-      - bca9907a0381 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (1/2)
+      - f632a281623b "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260331183351.29844-3-kanchanapsridhar2026@gmail.com
     - series "mm/damon/core: fix damon_call()/damos_walk() vs kdmond exit race". (2 commits)
-      - f7d995bd6e5b "mm/damon/core: fix damon_call() vs kdamond_fn() exit race" (0/2)
+      - a84f1dd200d2 "mm/damon/core: fix damon_call() vs kdamond_fn() exit race" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260327233319.3528-1-sj@kernel.org
         - Link: https://lkml.kernel.org/r/20260327233319.3528-2-sj@kernel.org
         - Link: https://lore.kernel.org/20260325141956.87144-1-sj@kernel.org [1]
-      - 965f102ca4bb "mm/damon/core: fix damos_walk() vs kdamond_fn() exit race" (1/2)
+      - 81fdf413bee4 "mm/damon/core: fix damos_walk() vs kdamond_fn() exit race" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260327233319.3528-3-sj@kernel.org
         - Link: https://lore.kernel.org/20260325141956.87144-1-sj@kernel.org [1]
-    - dab63c62a33f "mm/damon/stat: fix memory leak on damon_start() failure in damon_stat_start()"
+    - 5c3209146eb7 "mm/damon/stat: fix memory leak on damon_start() failure in damon_stat_start()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260331101553.88422-1-liu.yun@linux.dev
     - series "mm/damon/core: validate damos_quota_goal->nid". (2 commits)
-      - fa6376df2f54 "mm/damon/core: validate damos_quota_goal->nid for node_mem_{used,free}_bp" (0/2)
+      - 34dc2717d450 "mm/damon/core: validate damos_quota_goal->nid for node_mem_{used,free}_bp" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260329043902.46163-2-sj@kernel.org
         - Link: https://lore.kernel.org/20260325073034.140353-1-objecting@objecting.org [1]
         - Link: https://lore.kernel.org/20260327040924.68553-1-sj@kernel.org [2]
-      - 21aba0c3b3b5 "mm/damon/core: validate damos_quota_goal->nid for node_memcg_{used,free}_bp" (1/2)
+      - 6f1ebe39a755 "mm/damon/core: validate damos_quota_goal->nid for node_memcg_{used,free}_bp" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260329043902.46163-3-sj@kernel.org
-    - 7ec01eee7e4f "mm/damon/core: use time_in_range_open() for damos quota window start"
+    - 90100fbbb9fc "mm/damon/core: use time_in_range_open() for damos quota window start"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260329152306.45796-1-sj@kernel.org
       - Link: https://lore.kernel.org/20260324040722.57944-1-sj@kernel.org [1]
-    - fb860f2250df "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+    - fe940ee2a16f "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260401005702.7096-1-liu.yun@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
-    - 6daa48df62e7 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+    - 5b15a4184e5b "mm/sparse: fix preinited section_mem_map clobbering on failure path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
-    - a24ac9f901e1 "mm/memfd: use folio_nr_pages() for shmem inode accounting"
+    - 6ba1a87cef93 "mm/memfd: use folio_nr_pages() for shmem inode accounting"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260326084727.118437-1-duanchenghao@kylinos.cn
       - Link: https://lkml.kernel.org/r/20260326084727.118437-2-duanchenghao@kylinos.cn
-    - ab1c9d298643 "mm/memfd_luo: optimize shmem_recalc_inode calls in retrieve path"
+    - 8d9db494594b "mm/memfd_luo: optimize shmem_recalc_inode calls in retrieve path"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260326084727.118437-3-duanchenghao@kylinos.cn
-    - 65039a91cd28 "mm/memfd_luo: remove unnecessary memset in zero-size memfd path"
+    - 316407d91e05 "mm/memfd_luo: remove unnecessary memset in zero-size memfd path"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260326084727.118437-4-duanchenghao@kylinos.cn
-    - 5a08bf5d1b30 "mm/memfd_luo: use i_size_write() to set inode size during retrieve"
+    - 5542b1273ef0 "mm/memfd_luo: use i_size_write() to set inode size during retrieve"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260326084727.118437-5-duanchenghao@kylinos.cn
-    - 02da02a20db5 "mm/memfd_luo: fix physical address conversion in put_folios cleanup"
+    - 4fe5a2808f84 "mm/memfd_luo: fix physical address conversion in put_folios cleanup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260326084727.118437-6-duanchenghao@kylinos.cn
-    - d96fbf43be34 "mm/memfd_luo: remove folio from page cache when accounting fails"
+    - 3730d672824b "mm/memfd_luo: remove folio from page cache when accounting fails"
       - Authored by no role player, reviewed by a maintainer
       - Link: : https://lkml.kernel.org/r/2vxzzf3lfujq.fsf@kernel.org
       - Link: https://lkml.kernel.org/r/20260326084727.118437-7-duanchenghao@kylinos.cn
     - series "mm, kvm: allow uffd support in guest_memfd", v4. (4 commits)
-      - eb21f7e293b5 "userfaultfd: introduce mfill_copy_folio_locked() helper" (0/4)
+      - 24b25e25a413 "userfaultfd: introduce mfill_copy_folio_locked() helper" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-1-rppt@kernel.org
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-2-rppt@kernel.org
-      - 6c0a04946268 "userfaultfd: introduce struct mfill_state" (1/4)
+      - aa9ba930624f "userfaultfd: introduce struct mfill_state" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
-      - 6e0b093a1cd8 "userfaultfd: introduce mfill_establish_pmd() helper" (2/4)
+      - 97679d060629 "userfaultfd: introduce mfill_establish_pmd() helper" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-4-rppt@kernel.org
-      - 401dd80809c2 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma()" (3/4)
+      - a44e5e5b44e1 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma()" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
         - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
-    - 911b4e801a34 "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
+    - 21d0ab5148bc "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
       - Authored by no role player, reviewed by no role player
       - Link: : https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
       - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-6-rppt@kernel.org
-    - ea6b7eae8bbe "userfaultfd: move vma_can_userfault out of line"
+    - ecd627cc71db "userfaultfd: move vma_can_userfault out of line"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-7-rppt@kernel.org
-    - fe19807229d5 "userfaultfd: introduce vm_uffd_ops"
+    - 4e5d50efb739 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
-    - 5a75729709d6 "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
+    - 81ebc8dcbfd3 "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-9-rppt@kernel.org
-    - c24fc8f0dbf8 "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
+    - 2d5ca963d644 "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-10-rppt@kernel.org
-    - f88498c78ce5 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
+    - 3e9994e7fac2 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-11-rppt@kernel.org
-    - e58dd0c699ab "userfaultfd: mfill_atomic(): remove retry logic"
+    - 4974a6aaa768 "userfaultfd: mfill_atomic(): remove retry logic"
       - Authored by no role player, reviewed by nobody
       - Link: : https://lkml.kernel.org/r/ac5zcDUY8CFHr6Lw@kernel.org
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-12-rppt@kernel.org
-    - ffccb96decd5 "mm/page_io: use sio->len for PSWPIN accounting in sio_read_complete()"
+    - e75bc9fed214 "mm/page_io: use sio->len for PSWPIN accounting in sio_read_complete()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402061408.36119-1-devnexen@gmail.com
-    - d50ab96ac061 "mm: remove '!root_reclaim' checking in should_abort_scan()"
+    - deb828896f52 "mm: remove '!root_reclaim' checking in should_abort_scan()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260318011558.1696310-1-zhaoyang.huang@unisoc.com
       - Link: https://lkml.kernel.org/r/20260212032111.408865-1-zhaoyang.huang@unisoc.com
     - series "mm/mprotect: micro-optimization work", v3. (2 commits)
-      - 09381c039322 "mm/mprotect: move softleaf code out of the main function" (0/2)
+      - 24dcc892c851 "mm/mprotect: move softleaf code out of the main function" (0/2)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260402141628.3367596-1-pfalcato@suse.de
         - Link: https://lkml.kernel.org/r/20260402141628.3367596-2-pfalcato@suse.de
         - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
         - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
         - Link: https://lkml.kernel.org/r/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]
-      - cd9bfaf8c143 "mm/mprotect: special-case small folios when applying permissions" (1/2)
+      - d5f830d9e1cc "mm/mprotect: special-case small folios when applying permissions" (1/2)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260402141628.3367596-3-pfalcato@suse.de
     - series "fix MAP_DROPPABLE not supported errno". (2 commits)
-      - 69fc91fee227 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
+      - 5fc5c134e1f5 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
         - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - 3a80f4ba8a39 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - 9c4b213b6a41 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-2-youngjun.park@lge.com
-      - 1a2fbbe3653f "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - f246f745d10b "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260323160822.1409904-3-youngjun.park@lge.com
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 0d90551ea699 "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
+      - 06a6cfb92448 "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

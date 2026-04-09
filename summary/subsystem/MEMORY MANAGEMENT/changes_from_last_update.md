@@ -5,19 +5,20 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 1 -> 3 commits
+- mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - 869fff6de9b9 "mm/mempolicy: fix weighted interleave auto sysfs name"
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - 046f68ed35f5 "mm/mempolicy: fix weighted interleave auto sysfs name"
       - Authored by a reviewer, reviewed by a reviewer
+      - added "Reviewed-by: Rakie Kim <rakie.kim@sk.com>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
       - Link: https://lkml.kernel.org/r/20260407141415.3080960-1-joshua.hahnjy@gmail.com
-    - ca3fefe345ae "mm/damon/core: disallow time-quota setting zero esz"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260407003153.79589-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260405192504.110014-1-sj@kernel.org [1]
 - mm-stable: 231 -> 231 commits (no change)
   - series: 31 (173) -> 31 (173) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
@@ -63,10 +64,10 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 77 -> 76 commits
-  - series: 10 (54) -> 10 (53)
+- mm-unstable: 76 -> 76 commits (no change)
+  - series: 10 (53) -> 10 (53) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 21 -> 20 commits
+    - no role, no role : 20 -> 20 commits (no change)
     - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 32 -> 32 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
@@ -74,40 +75,6 @@
     - reviewer, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - d50ab96ac061 "mm: remove '!root_reclaim' checking in should_abort_scan()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-      - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-      - Link: https://lkml.kernel.org/r/20260318011558.1696310-1-zhaoyang.huang@unisoc.com
-      - Link: https://lkml.kernel.org/r/20260212032111.408865-1-zhaoyang.huang@unisoc.com
-    - series "mm/mprotect: micro-optimization work", v3. (2)
-      - 09381c039322 "mm/mprotect: move softleaf code out of the main function (0/2)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Davidlohr Bueso <dave@stgolabs.net>"
-        - Link: https://lkml.kernel.org/r/20260402141628.3367596-1-pfalcato@suse.de
-        - Link: https://lkml.kernel.org/r/20260402141628.3367596-2-pfalcato@suse.de
-        - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
-        - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
-        - Link: https://lkml.kernel.org/r/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]
-      - cd9bfaf8c143 "mm/mprotect: special-case small folios when applying permissions (1/2)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Davidlohr Bueso <dave@stgolabs.net>"
-        - Link: https://lkml.kernel.org/r/20260402141628.3367596-3-pfalcato@suse.de
-    - series "fix MAP_DROPPABLE not supported errno". (2)
-      - 69fc91fee227 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
-  - dropped commits
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - 3fa44141e0bb "ksm: optimize rmap_walk_ksm by passing a suitable address range (2/8)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

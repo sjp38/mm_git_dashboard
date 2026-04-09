@@ -41,14 +41,4 @@
     - no role, maintainer: 2 -> 2 commits (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - 9ec63a864be9 "kernel/fork: validate exit_signal in kernel_clone()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com
-      - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
-      - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
-      - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
+    - no role, reviewer: 1 -> 1 commits (no change)

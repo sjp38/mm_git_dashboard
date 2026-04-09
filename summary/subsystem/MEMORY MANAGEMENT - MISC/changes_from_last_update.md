@@ -14,16 +14,10 @@
 - mm-unstable: 15 -> 15 commits (no change)
   - series: 2 (12) -> 2 (12) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 5 -> 4 commits
-    - no role, reviewer: 5 -> 6 commits
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, reviewer: 6 -> 6 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-  - changed commits
-    - series "selftests/mm: skip several tests when thp is not available", v8. (6)
-      - 5a21dc4f764a "selftests/mm/vm_util: robust write_file() (3/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-5-chuhu@redhat.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

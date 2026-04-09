@@ -114,19 +114,19 @@
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - dc68258e4190 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 2490457afd9a "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 52c5e982601f "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
+      - 8fb5657830dc "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
-      - ecbf7d502dd4 "selftests/mm: move write_file helper to vm_util" (2/6)
+      - b237f45b2aba "selftests/mm: move write_file helper to vm_util" (2/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com
-      - 8bd714b15f9b "selftests/mm: split_huge_page_test: skip the test when thp is not available" (4/6)
+      - b35c57ae2b24 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com
-      - b38e736b3e98 "selftests/mm: transhuge_stress: skip the test when thp not available" (5/6)
+      - a74cc3cd9224 "selftests/mm: transhuge_stress: skip the test when thp not available" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 869fff6de9b9 "mm/mempolicy: fix weighted interleave auto sysfs name"
+    - 046f68ed35f5 "mm/mempolicy: fix weighted interleave auto sysfs name"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260407141415.3080960-1-joshua.hahnjy@gmail.com
 - mm-stable: 6 total, 0 (3) series, 3 non-series commits
@@ -37,10 +37,10 @@
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - db7d1dc6e4f9 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+      - 6c6052259269 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-    - fb860f2250df "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+    - fe940ee2a16f "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260401005702.7096-1-liu.yun@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev

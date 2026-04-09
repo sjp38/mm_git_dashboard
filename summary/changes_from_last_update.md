@@ -6,19 +6,20 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-hotfixes-unstable: 1 -> 3 commits
+- mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - 869fff6de9b9 "mm/mempolicy: fix weighted interleave auto sysfs name"
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - 046f68ed35f5 "mm/mempolicy: fix weighted interleave auto sysfs name"
       - Authored by a reviewer, reviewed by a reviewer
+      - added "Reviewed-by: Rakie Kim <rakie.kim@sk.com>"
+      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lkml.kernel.org/r/20260407141415.3080960-1-joshua.hahnjy@gmail.com
-    - ca3fefe345ae "mm/damon/core: disallow time-quota setting zero esz"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260407003153.79589-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260405192504.110014-1-sj@kernel.org [1]
 - mm-stable: 369 -> 369 commits (no change)
   - series: 39 (280) -> 39 (280) (no change)
     - no role, nobody: 22 -> 22 commits (no change)
@@ -79,12 +80,12 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 113 -> 115 commits
-  - series: 15 (84) -> 15 (83)
-    - no role, nobody: 5 -> 6 commits
-    - no role, no role : 32 -> 31 commits
-    - no role, reviewer: 12 -> 13 commits
-    - no role, maintainer: 33 -> 34 commits
+- mm-unstable: 115 -> 116 commits
+  - series: 15 (83) -> 15 (83) (no change)
+    - no role, nobody: 6 -> 7 commits
+    - no role, no role : 31 -> 31 commits (no change)
+    - no role, reviewer: 13 -> 13 commits (no change)
+    - no role, maintainer: 34 -> 34 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
@@ -93,60 +94,8 @@
     - maintainer, no role : 13 -> 13 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - new commits
-    - a92d72aa4ed0 "docs: proc: document ProtectionKey in smaps"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260407125133.564182-1-kevin.brodsky@arm.com
-    - 8b3a7c2242b3 "docs-proc-document-protectionkey-in-smaps-fix"
+    - 53d8fc034ec4 "docs-proc-document-protectionkey-in-smaps-fix-fix"
       - Authored by no role player, reviewed by nobody
-    - 4db2bd83a661 "zram: reject unrecognized type= values in recompress_store()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260407153027.42425-1-astellman@stellman-greene.com
-  - changed commits
-    - series "Minor hmm_test fixes and cleanups". (3)
-      - 9c1d8129e75a "lib: test_hmm: evict device pages on file close to avoid use-after-free (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Cc: <stable@vger,kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260331063445.3551404-1-apopple@nvidia.com
-        - Link: https://lkml.kernel.org/r/20260331063445.3551404-2-apopple@nvidia.com
-    - series "selftests/mm: skip several tests when thp is not available", v8. (6)
-      - 5a21dc4f764a "selftests/mm/vm_util: robust write_file() (3/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-5-chuhu@redhat.com
-    - d50ab96ac061 "mm: remove '!root_reclaim' checking in should_abort_scan()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260318011558.1696310-1-zhaoyang.huang@unisoc.com
-      - Link: https://lkml.kernel.org/r/20260212032111.408865-1-zhaoyang.huang@unisoc.com
-    - series "mm/mprotect: micro-optimization work", v3. (2)
-      - 09381c039322 "mm/mprotect: move softleaf code out of the main function (0/2)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Davidlohr Bueso <dave@stgolabs.net>"
-        - Link: https://lkml.kernel.org/r/20260402141628.3367596-1-pfalcato@suse.de
-        - Link: https://lkml.kernel.org/r/20260402141628.3367596-2-pfalcato@suse.de
-        - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
-        - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
-        - Link: https://lkml.kernel.org/r/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]
-      - cd9bfaf8c143 "mm/mprotect: special-case small folios when applying permissions (1/2)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Davidlohr Bueso <dave@stgolabs.net>"
-        - Link: https://lkml.kernel.org/r/20260402141628.3367596-3-pfalcato@suse.de
-    - series "fix MAP_DROPPABLE not supported errno". (2)
-      - 69fc91fee227 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com
-  - dropped commits
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - 3fa44141e0bb "ksm: optimize rmap_walk_ksm by passing a suitable address range (2/8)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260212193045556CbzCX8p9gDu73tQ2nvHEI@zte.com.cn
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
@@ -158,50 +107,17 @@
     - no role, maintainer: 30 -> 30 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 27 -> 27 commits (no change)
+- mm-nonmm-unstable: 27 -> 29 commits
   - series: 3 (14) -> 3 (14) (no change)
-    - no role, nobody: 9 -> 9 commits (no change)
-    - no role, no role : 7 -> 6 commits
-    - no role, reviewer: 0 -> 1 commits
+    - no role, nobody: 9 -> 10 commits
+    - no role, no role : 6 -> 7 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-    - maintainer, nobody: 4 -> 0 commits
-    - maintainer, no role : 0 -> 4 commits
+    - maintainer, no role : 4 -> 4 commits (no change)
   - new commits
-    - 9045b0d4acef "ocfs2: use get_random_u32() where appropriate"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260405154720.4732-1-devnexen@gmail.com
-  - changed commits
-    - series "ocfs2: consolidate extent list validation into block read callbacks". (4)
-      - 413903cedc0a "ocfs2: validate dx_root extent list fields during block read (0/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Heming Zhao <heming.zhao@suse.com>"
-        - dropped "Cc: Heming Zhao <heming.zhao@suse.com>"
-        - Link: https://lkml.kernel.org/r/20260403090803.3860971-1-joseph.qi@linux.alibaba.com
-        - Link: https://lkml.kernel.org/r/20260403090803.3860971-2-joseph.qi@linux.alibaba.com
-      - 4dd28099c26c "ocfs2: remove empty extent list check in ocfs2_dx_dir_lookup_rec() (1/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Heming Zhao <heming.zhao@suse.com>"
-        - dropped "Cc: Heming Zhao <heming.zhao@suse.com>"
-        - Link: https://lkml.kernel.org/r/20260403090803.3860971-3-joseph.qi@linux.alibaba.com
-      - f5fbaec656d3 "ocfs2: validate extent block list fields during block read (2/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Heming Zhao <heming.zhao@suse.com>"
-        - dropped "Cc: Heming Zhao <heming.zhao@suse.com>"
-        - Link: https://lkml.kernel.org/r/20260403090803.3860971-4-joseph.qi@linux.alibaba.com
-      - f6f14625dd7b "ocfs2: remove redundant l_next_free_rec check in __ocfs2_find_path() (3/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Heming Zhao <heming.zhao@suse.com>"
-        - dropped "Cc: Heming Zhao <heming.zhao@suse.com>"
-        - Link: https://lkml.kernel.org/r/20260403090803.3860971-5-joseph.qi@linux.alibaba.com
-    - 9ec63a864be9 "kernel/fork: validate exit_signal in kernel_clone()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com
-      - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com
-      - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
-      - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
-  - dropped commits
-    - bf96df381daa "lib/hexdump: print_hex_dump_bytes() calls print_hex_dump_debug()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/3d5c3069fd9102ecaf81d044b750cd613eb72a08.1774970392.git.geert+renesas@glider.be
+    - 7fa5733d8d21 "Update Sean's email address"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260407164722.211610-1-sean.anderson@linux.dev
+    - cd80855a797e "doc: watchdog: fix typos etc"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260408213523.2707947-1-rdunlap@infradead.org
