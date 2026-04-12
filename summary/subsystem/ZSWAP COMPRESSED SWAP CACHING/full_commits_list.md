@@ -15,18 +15,18 @@
   - author/reviewer role stat
     - no role, maintainer: 4 commits
   - full commits list
-      - 9b0d325e1f8b "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
+      - 865f8a4fd322 "mm: zswap: prevent memory cgroup release in zswap_compress()" (17/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com
-      - 2e60306b890f "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
+      - e873b7c8fb2a "mm: zswap: prevent lruvec release in zswap_folio_swapin()" (19/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com
     - series "zswap pool per-CPU acomp_ctx simplifications", v3. (2 commits)
-      - 2a546f93f072 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead()" (0/2)
+      - b3dddfbc201f "mm: zswap: remove redundant checks in zswap_cpu_comp_dead()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260331183351.29844-2-kanchanapsridhar2026@gmail.com
         - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677
-      - 0f6d50207dde "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (1/2)
+      - f12cef77f4c2 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260331183351.29844-3-kanchanapsridhar2026@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

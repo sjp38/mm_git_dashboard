@@ -11,40 +11,24 @@
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-unstable: 15 -> 15 commits (no change)
-  - series: 2 (12) -> 2 (11)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
+- mm-unstable: 15 -> 16 commits
+  - series: 2 (11) -> 2 (11) (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 4 -> 6 commits
     - no role, reviewer: 6 -> 6 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
+  - new commits
+    - 77ac92c9e9c6 "selftests: mm: skip charge_reserved_hugetlb without killall"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260410044139.67480-1-create0818@163.com
   - changed commits
-    - series "selftests/mm: skip several tests when thp is not available", v8. (6)
-      - c220318e2f9d "selftests/mm/guard-regions: skip collapse test when thp not enabled (0/6)"
+    - series "fix MAP_DROPPABLE not supported errno". (2)
+      - eef398b0a438 "selftests/mm: verify droppable mappings cannot be locked (1/2)"
         - Authored by no role player, reviewed by no role player
-        - added "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-1-chuhu@redhat.com
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-2-chuhu@redhat.com
-      - e2cb8f1d2968 "selftests/mm: soft-dirty: skip two tests when thp is not available (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-3-chuhu@redhat.com
-      - 0d88467945b6 "selftests/mm: move write_file helper to vm_util (2/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com
-      - c31a5fe26f17 "selftests/mm/vm_util: robust write_file() (3/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-5-chuhu@redhat.com
-      - 2a8aeee27338 "selftests/mm: split_huge_page_test: skip the test when thp is not available (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com
-      - efc8b4abba21 "selftests/mm: transhuge_stress: skip the test when thp not available (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

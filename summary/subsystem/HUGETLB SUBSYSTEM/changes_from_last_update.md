@@ -10,20 +10,10 @@
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 1 -> 2 commits
+- mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 918af551606d "mm/hugetlb: fix early boot crash on parameters without '=' separator"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260409105437.108686-4-thorsten.blum@linux.dev
-  - changed commits
-    - 6874796c7ec5 "userfaultfd: introduce vm_uffd_ops"
-      - Authored by no role player, reviewed by nobody
-      - added "Cc: Tal Zussman <tz2294@columbia.edu>"
-      - added "Cc: David Carlier <devnexen@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

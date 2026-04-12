@@ -377,30 +377,31 @@
 - mm-unstable: 5 total, 0 (1) series, 4 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 3 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 1 commits
     - reviewer, no role : 1 commits
   - full commits list
-      - d7ebc10655c6 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - 0002b5b34a6a "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
         - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-    - 97adf0b572e5 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+    - 190f8e9a7a3b "mm/sparse: fix preinited section_mem_map clobbering on failure path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
-    - 6874796c7ec5 "userfaultfd: introduce vm_uffd_ops"
+    - 1dee62a58136 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
-    - 437cf9ef0707 "mm/sparse: fix comment for section map alignment"
+    - e86b75cf0149 "mm/sparse: fix comment for section map alignment"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
-    - 04975fb3babb "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
-      - Authored by no role player, reviewed by no role player
+    - a09ff4997211 "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
+      - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - d0b7382f0c56 "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
+      - aac7426620d2 "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 4 total, 0 (1) series, 3 non-series commits
@@ -427,7 +428,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - b9240fd0302d "kernel/fork: validate exit_signal in kernel_clone()"
+    - 439a10f61093 "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by a reviewer
       - Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com
       - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com

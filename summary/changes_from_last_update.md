@@ -6,11 +6,22 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-hotfixes-unstable: 3 -> 3 commits (no change)
+- mm-hotfixes-unstable: 3 -> 6 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 0 -> 2 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
+  - new commits
+    - ea1aaf69f380 "device-dax: Fix refcount leak in __devm_create_dev_dax() error path"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260412070010.2402830-1-lgs201920130244@gmail.com
+    - c2b0c2070428 "mm/zone_device: do not touch device folio after calling ->folio_free()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260410230346.4009855-1-matthew.brost@intel.com
+    - e5b5aa548874 "userfaultfd: preserve write protection across UFFDIO_MOVE"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260409152822.1073083-1-gourry@gourry.net
 - mm-stable: 369 -> 369 commits (no change)
   - series: 39 (280) -> 39 (280) (no change)
     - no role, nobody: 22 -> 22 commits (no change)
@@ -71,12 +82,12 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 116 -> 122 commits
+- mm-unstable: 122 -> 123 commits
   - series: 15 (83) -> 15 (83) (no change)
-    - no role, nobody: 7 -> 8 commits
-    - no role, no role : 31 -> 34 commits
-    - no role, reviewer: 13 -> 14 commits
-    - no role, maintainer: 34 -> 35 commits
+    - no role, nobody: 8 -> 7 commits
+    - no role, no role : 34 -> 35 commits
+    - no role, reviewer: 14 -> 15 commits
+    - no role, maintainer: 35 -> 35 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
@@ -85,116 +96,33 @@
     - maintainer, no role : 13 -> 13 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - new commits
-    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
-      - 23cccfb1b8ee "kho: call kho_kexec_metadata_init() for both boot paths (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/all/20260309-kho-v8-5-c3abcf4ac750@debian.org/ [1]
-        - Link: https://lkml.kernel.org/r/20260409-kho_fix_merge_issue-v1-1-710c84ceaa85@debian.org
-    - 9bba8d92fcbb "userfaultfd-introduce-vm_uffd_ops-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/adffgfM5ANxtPIEF@kernel.org
+    - 9dd5912292a1 "kho: fix error handling in kho_add_subtree()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260407-kho_fix_send-v1-1-b21977feb960@debian.org
+    - 77ac92c9e9c6 "selftests: mm: skip charge_reserved_hugetlb without killall"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260410044139.67480-1-create0818@163.com
+  - changed commits
+    - a09ff4997211 "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Dmitry Ilvokhin <d@ilvokhin.com>"
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - Link: https://lkml.kernel.org/r/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
+    - series "fix MAP_DROPPABLE not supported errno". (2)
+      - eef398b0a438 "selftests/mm: verify droppable mappings cannot be locked (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com
+  - dropped commits
     - e466654e03f9 "mm/userfaultfd: detect VMA type change after copy retry in mfill_copy_folio_retry()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260409120653.290386-1-devnexen@gmail.com
-    - 918af551606d "mm/hugetlb: fix early boot crash on parameters without '=' separator"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260409105437.108686-4-thorsten.blum@linux.dev
-    - 04975fb3babb "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
-    - 2b8bb05081f0 "userfaultfd: allow registration of ranges below mmap_min_addr"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260409103345.15044-1-komlomal@gmail.com
-  - changed commits
-    - series "mm, kvm: allow uffd support in guest_memfd", v4. (4)
-      - 8aed1999bbdc "userfaultfd: introduce mfill_copy_folio_locked() helper (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: David Carlier <devnexen@gmail.com>"
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-1-rppt@kernel.org
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-2-rppt@kernel.org
-      - 7a9b96ffacde "userfaultfd: introduce struct mfill_state (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: David Carlier <devnexen@gmail.com>"
-        - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
-      - fbb8513a228e "userfaultfd: introduce mfill_establish_pmd() helper (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: David Carlier <devnexen@gmail.com>"
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-4-rppt@kernel.org
-      - eb8755fdb69a "userfaultfd: introduce mfill_get_vma() and mfill_put_vma() (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: David Carlier <devnexen@gmail.com>"
-        - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
-    - 09a2b6017e63 "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
-      - Authored by no role player, reviewed by no role player
-      - added "Cc: Harry Yoo <harry.yoo@oracle.com>"
-      - added "Cc: David Carlier <devnexen@gmail.com>"
-      - Link: : https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
-      - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-6-rppt@kernel.org
-    - e2ea70f7b486 "userfaultfd: move vma_can_userfault out of line"
-      - Authored by no role player, reviewed by no role player
-      - added "Cc: David Carlier <devnexen@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-7-rppt@kernel.org
-    - 6874796c7ec5 "userfaultfd: introduce vm_uffd_ops"
-      - Authored by no role player, reviewed by nobody
-      - added "Cc: Tal Zussman <tz2294@columbia.edu>"
-      - added "Cc: David Carlier <devnexen@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
-    - 71f92f0fb39b "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
-      - Authored by no role player, reviewed by no role player
-      - added "Cc: David Carlier <devnexen@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-9-rppt@kernel.org
-    - 520c0ca8a81e "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
-      - Authored by no role player, reviewed by no role player
-      - added "Cc: David Carlier <devnexen@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-10-rppt@kernel.org
-    - c7535945390f "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
-      - Authored by no role player, reviewed by no role player
-      - added "Cc: David Carlier <devnexen@gmail.com>"
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-11-rppt@kernel.org
-    - 82a95219b93a "userfaultfd: mfill_atomic(): remove retry logic"
-      - Authored by no role player, reviewed by nobody
-      - added "Cc: David Carlier <devnexen@gmail.com>"
-      - Link: : https://lkml.kernel.org/r/ac5zcDUY8CFHr6Lw@kernel.org
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-12-rppt@kernel.org
-    - series "selftests/mm: skip several tests when thp is not available", v8. (6)
-      - c220318e2f9d "selftests/mm/guard-regions: skip collapse test when thp not enabled (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-1-chuhu@redhat.com
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-2-chuhu@redhat.com
-      - e2cb8f1d2968 "selftests/mm: soft-dirty: skip two tests when thp is not available (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-3-chuhu@redhat.com
-      - 0d88467945b6 "selftests/mm: move write_file helper to vm_util (2/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com
-      - c31a5fe26f17 "selftests/mm/vm_util: robust write_file() (3/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-5-chuhu@redhat.com
-      - 2a8aeee27338 "selftests/mm: split_huge_page_test: skip the test when thp is not available (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com
-      - efc8b4abba21 "selftests/mm: transhuge_stress: skip the test when thp not available (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - d0b7382f0c56 "mm/vmstat: spread vmstat_update requeue across the stat interval (2/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Dmitry Ilvokhin <d@ilvokhin.com>"
-        - dropped "Cc: Dmitry Ilvokhin <d@ilvokhin.com>"
-        - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 108 -> 108 commits (no change)
   - series: 12 (58) -> 12 (58) (no change)
     - no role, nobody: 25 -> 25 commits (no change)
@@ -203,10 +131,28 @@
     - no role, maintainer: 30 -> 30 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 29 -> 29 commits (no change)
+- mm-nonmm-unstable: 29 -> 32 commits
   - series: 3 (14) -> 3 (14) (no change)
     - no role, nobody: 10 -> 10 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 7 -> 7 commits (no change)
+    - no role, maintainer: 7 -> 10 commits
     - maintainer, no role : 4 -> 4 commits (no change)
+  - new commits
+    - c1d41b0cfa38 "ocfs2: fix listxattr handling when the buffer is full"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260410040339.3837162-1-gality369@gmail.com
+    - 66cb04b4a6bc "ocfs2: validate bg_bits during freefrag scan"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260410034220.3825769-1-gality369@gmail.com
+    - f2370e084ead "ocfs2: validate group add input before caching"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260410020209.3786348-1-gality369@gmail.com
+  - changed commits
+    - 8c048ea154bc "ocfs2: fix use-after-free in ocfs2_fault() when VM_FAULT_RETRY"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://lkml.kernel.org/r/20260410083816.34951-1-tejas.bharambe@outlook.com"
+      - added "Fixes: 614a9e849ca6 ("ocfs2: Remove FILE_IO from masklog.")"
+      - dropped "Link: https://lkml.kernel.org/r/20260402040234.92432-1-tejas.bharambe@outlook.com"
+      - dropped "Link: https://lkml.kernel.org/r/20260403035333.136824-1-tejas.bharambe@outlook.com"
+      - Link: https://lkml.kernel.org/r/20260410083816.34951-1-tejas.bharambe@outlook.com
