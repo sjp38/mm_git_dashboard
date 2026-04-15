@@ -13,7 +13,7 @@
   - author/reviewer role stat
     - maintainer, nobody: 1 commits
   - full commits list
-    - eb08f1c8d666 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+    - c216cac5311c "mm: call ->free_folio() directly in folio_unmap_invalidate()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260413184314.3419945-1-willy@infradead.org
 - mm-stable: 3 total, 0 (3) series, 0 non-series commits
@@ -34,7 +34,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - ee3c729b0927 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - 783b08ec05d3 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260326234629.840938-2-joannelkoong@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

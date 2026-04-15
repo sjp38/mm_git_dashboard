@@ -10,16 +10,28 @@
     - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 19 -> 19 commits (no change)
+- mm-unstable: 19 -> 20 commits
   - series: 0 (16) -> 0 (16) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+  - new commits
+    - 1c9a77657441 "mm/vmscan: avoid false-positive -Wuninitialized warning"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/all/CAJHvVcjtFW86o5FoQC8MMEXCHAC0FviggaQsd5EmiCHP+1fBpg@mail.gmail.com/
+      - Link: https://lkml.kernel.org/r/20260414065206.3236176-1-arnd@kernel.org
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - 7173ce0016c7 "mm/sparse: fix race on mem_section->usage in pfn walkers (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260415022326.53218-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

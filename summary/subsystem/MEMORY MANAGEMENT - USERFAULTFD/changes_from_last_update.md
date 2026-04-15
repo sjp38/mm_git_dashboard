@@ -1,9 +1,13 @@
 - baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
+    - 4d4bbf7cc436 "userfaultfd: preserve write protection across UFFDIO_MOVE"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260409152822.1073083-1-gourry@gourry.net
 - mm-stable: 3 -> 3 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)

@@ -2,13 +2,9 @@
 - mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - eb08f1c8d666 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260413184314.3419945-1-willy@infradead.org
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 104 -> 104 commits (no change)
   - series: 14 (89) -> 14 (89) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
@@ -31,19 +27,21 @@
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260325-pagewalk-check-pmd-refault-v2-1-707bff33bc60@akamai.com
-- mm-unstable: 5 -> 6 commits
+- mm-unstable: 6 -> 6 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 2 commits
-  - new commits
-    - 80fad3d1715e "mm/vma: remove __vma_check_mmap_hook()"
-      - Authored by a reviewer, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260413105713.92625-1-ljs@kernel.org
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
+    - reviewer, no role : 2 -> 2 commits (no change)
+- mm-new: 1 -> 2 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, nobody: 0 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - 7173ce0016c7 "mm/sparse: fix race on mem_section->usage in pfn walkers (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260415022326.53218-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 4 -> 4 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

@@ -1,12 +1,14 @@
 - baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - cc672e7f33a8 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
+    - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - ce2c4888246d "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
       - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
       - Link: https://lkml.kernel.org/r/20260413-blkcg-v1-1-35b72622d16c@debian.org
 - mm-stable: 21 -> 21 commits (no change)
   - series: 0 (10) -> 0 (10) (no change)
@@ -20,8 +22,8 @@
   - series: 2 (11) -> 2 (11) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 6 -> 4 commits
-    - no role, maintainer: 0 -> 2 commits
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)

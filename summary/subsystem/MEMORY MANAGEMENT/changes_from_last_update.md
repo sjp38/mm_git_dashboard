@@ -5,22 +5,26 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 5 -> 8 commits
+- mm-hotfixes-unstable: 8 -> 7 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 4 commits
+    - no role, no role : 4 -> 3 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 2 commits
-  - new commits
-    - cc672e7f33a8 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
+    - maintainer, nobody: 2 -> 2 commits (no change)
+  - changed commits
+    - c22eabbc883d "mm/zone_device: do not touch device folio after calling ->folio_free()"
       - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Alistair Popple <apopple@nvidia.com>"
+      - Link: https://lkml.kernel.org/r/20260410230346.4009855-1-matthew.brost@intel.com
+    - ce2c4888246d "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
       - Link: https://lkml.kernel.org/r/20260413-blkcg-v1-1-35b72622d16c@debian.org
-    - eb08f1c8d666 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260413184314.3419945-1-willy@infradead.org
-    - 9b418f3455f3 "mm/vmalloc: take vmap_purge_lock in shrinker"
+  - dropped commits
+    - 4d4bbf7cc436 "userfaultfd: preserve write protection across UFFDIO_MOVE"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260413192646.14683-1-urezki@gmail.com
+      - Link: https://lkml.kernel.org/r/20260409152822.1073083-1-gourry@gourry.net
 - mm-stable: 231 -> 231 commits (no change)
   - series: 31 (173) -> 31 (173) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
@@ -66,27 +70,31 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 79 -> 81 commits
+- mm-unstable: 81 -> 82 commits
   - series: 10 (53) -> 10 (53) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, nobody: 3 -> 4 commits
     - no role, no role : 20 -> 20 commits (no change)
-    - no role, reviewer: 8 -> 9 commits
+    - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 33 -> 33 commits (no change)
-    - reviewer, no role : 3 -> 4 commits
+    - reviewer, no role : 4 -> 4 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - 80fad3d1715e "mm/vma: remove __vma_check_mmap_hook()"
-      - Authored by a reviewer, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260413105713.92625-1-ljs@kernel.org
-    - 14039d284c01 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
+    - 1c9a77657441 "mm/vmscan: avoid false-positive -Wuninitialized warning"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/all/CAJHvVcjtFW86o5FoQC8MMEXCHAC0FviggaQsd5EmiCHP+1fBpg@mail.gmail.com/
+      - Link: https://lkml.kernel.org/r/20260414065206.3236176-1-arnd@kernel.org
+- mm-new: 1 -> 2 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, nobody: 0 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - 7173ce0016c7 "mm/sparse: fix race on mem_section->usage in pfn walkers (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260415022326.53218-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

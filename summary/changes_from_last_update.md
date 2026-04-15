@@ -6,33 +6,36 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-hotfixes-unstable: 6 -> 9 commits
+- mm-hotfixes-unstable: 9 -> 8 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 2 -> 4 commits
+    - no role, no role : 4 -> 3 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 2 commits
-  - new commits
-    - cc672e7f33a8 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
+    - maintainer, nobody: 2 -> 2 commits (no change)
+  - changed commits
+    - c22eabbc883d "mm/zone_device: do not touch device folio after calling ->folio_free()"
       - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Alistair Popple <apopple@nvidia.com>"
+      - Link: https://lkml.kernel.org/r/20260410230346.4009855-1-matthew.brost@intel.com
+    - ce2c4888246d "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
       - Link: https://lkml.kernel.org/r/20260413-blkcg-v1-1-35b72622d16c@debian.org
-    - eb08f1c8d666 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260413184314.3419945-1-willy@infradead.org
-    - 9b418f3455f3 "mm/vmalloc: take vmap_purge_lock in shrinker"
+  - dropped commits
+    - 4d4bbf7cc436 "userfaultfd: preserve write protection across UFFDIO_MOVE"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260413192646.14683-1-urezki@gmail.com
+      - Link: https://lkml.kernel.org/r/20260409152822.1073083-1-gourry@gourry.net
 - mm-stable: 369 -> 369 commits (no change)
   - series: 39 (280) -> 39 (280) (no change)
     - no role, nobody: 22 -> 22 commits (no change)
     - no role, no role : 138 -> 138 commits (no change)
     - no role, reviewer: 48 -> 48 commits (no change)
     - no role, maintainer: 47 -> 47 commits (no change)
-    - reviewer, no role : 1 -> 0 commits
     - reviewer, reviewer: 6 -> 6 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 74 -> 74 commits (no change)
-    - maintainer, no role : 13 -> 14 commits
+    - maintainer, no role : 14 -> 14 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 16 -> 16 commits (no change)
   - changed commits
@@ -82,56 +85,131 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 123 -> 129 commits
-  - series: 15 (83) -> 16 (86)
-    - no role, nobody: 7 -> 7 commits (no change)
-    - no role, no role : 35 -> 39 commits
-    - no role, reviewer: 15 -> 13 commits
-    - no role, maintainer: 35 -> 38 commits
+- mm-unstable: 129 -> 131 commits
+  - series: 16 (86) -> 16 (86) (no change)
+    - no role, nobody: 7 -> 8 commits
+    - no role, no role : 39 -> 40 commits
+    - no role, reviewer: 13 -> 13 commits (no change)
+    - no role, maintainer: 38 -> 38 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 3 -> 4 commits
+    - reviewer, no role : 4 -> 4 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 7 -> 7 commits (no change)
     - maintainer, no role : 13 -> 13 commits (no change)
-    - maintainer, reviewer: 1 -> 0 commits
-    - maintainer, maintainer: 0 -> 1 commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - 80fad3d1715e "mm/vma: remove __vma_check_mmap_hook()"
-      - Authored by a reviewer, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260413105713.92625-1-ljs@kernel.org
-    - 14039d284c01 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
-    - d1de7472a462 "MAINTAINERS: update kexec/kdump maintainers entries"
+    - c93f2cca516b "MAINTAINERS: update Dave's kdump reviewer email address"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260413121146.49215-1-pasha.tatashin@soleen.com
-    - series "MAINTAINERS: update KHO and LIVE UPDATE entries". (3)
-      - a99423890df1 "MAINTAINERS: update KHO and LIVE UPDATE maintainers (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260414121752.1912847-1-pratyush@kernel.org
-        - Link: https://lkml.kernel.org/r/20260414121752.1912847-2-pratyush@kernel.org
-      - caa8140722c7 "MAINTAINERS: drop include/linux/kho/abi/ from KHO (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260414121752.1912847-3-pratyush@kernel.org
-      - 8276e0883d8a "MAINTAINERS: drop include/linux/liveupdate from LIVE UPDATE (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260414121752.1912847-4-pratyush@kernel.org
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
+      - Link: https://lkml.kernel.org/r/ad8GFhh3SI1wb7IC@darkstar.users.ipa.redhat.com
+    - 1c9a77657441 "mm/vmscan: avoid false-positive -Wuninitialized warning"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/all/CAJHvVcjtFW86o5FoQC8MMEXCHAC0FviggaQsd5EmiCHP+1fBpg@mail.gmail.com/
+      - Link: https://lkml.kernel.org/r/20260414065206.3236176-1-arnd@kernel.org
+- mm-new: 1 -> 2 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, nobody: 0 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-nonmm-stable: 108 -> 108 commits (no change)
-  - series: 12 (58) -> 12 (58) (no change)
-    - no role, nobody: 25 -> 25 commits (no change)
-    - no role, no role : 47 -> 47 commits (no change)
+  - new commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - 7173ce0016c7 "mm/sparse: fix race on mem_section->usage in pfn walkers (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260415022326.53218-1-songmuchun@bytedance.com
+- mm-nonmm-stable: 108 -> 127 commits
+  - series: 12 (58) -> 13 (62)
+    - no role, nobody: 25 -> 29 commits
+    - no role, no role : 47 -> 48 commits
     - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 30 -> 30 commits (no change)
+    - no role, maintainer: 30 -> 40 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 32 -> 32 commits (no change)
-  - series: 3 (14) -> 3 (14) (no change)
-    - no role, nobody: 10 -> 10 commits (no change)
-    - no role, no role : 7 -> 7 commits (no change)
+    - maintainer, no role : 1 -> 5 commits
+  - new commits
+    - fb9907939b01 "update Sean's email address"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260407164722.211610-1-sean.anderson@linux.dev
+  - changed commits
+    - 5686459423d0 "ocfs2/heartbeat: fix slot mapping rollback leaks on error paths"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/20260330153428.19586-1-yufan.chen@linux.dev
+    - 16c4f0211aaa "taskstats: set version in TGID exit notifications"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/ba83d934e59edd431b693607de573eb9ca059309.1774810498.git.cyyzero16@gmail.com
+    - cc82b3dcc6a8 "tools/accounting: handle truncated taskstats netlink messages"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/520308bb4cbbaf8dc2c7296b5f60f11e12fb30a5.1774810498.git.cyyzero16@gmail.com
+    - f758440d3d82 "checkpatch: exclude forward declarations of const structs"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/20260331181509.1258693-1-tknelms@google.com
+    - 6110d18e208c "ocfs2: validate bg_list extent bounds in discontig groups"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/20260401021622.3560952-1-gality369@gmail.com
+    - 496649d23db6 ".get_maintainer.ignore: add Askar"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/20260401074619.988459-1-safinaskar@gmail.com
+    - 4a1c0ddc6e7b "ocfs2: handle invalid dinode in ocfs2_group_extend"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/20260401092303.3709187-1-gality369@gmail.com
+    - 7de554cabf16 "ocfs2: fix use-after-free in ocfs2_fault() when VM_FAULT_RETRY"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/20260410083816.34951-1-tejas.bharambe@outlook.com
+    - series "ocfs2: consolidate extent list validation into block read callbacks". (4)
+      - 775c17386a6f "ocfs2: validate dx_root extent list fields during block read (0/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lkml.kernel.org/r/20260403090803.3860971-1-joseph.qi@linux.alibaba.com
+        - Link: https://lkml.kernel.org/r/20260403090803.3860971-2-joseph.qi@linux.alibaba.com
+      - 4ae9cca37e32 "ocfs2: remove empty extent list check in ocfs2_dx_dir_lookup_rec() (1/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lkml.kernel.org/r/20260403090803.3860971-3-joseph.qi@linux.alibaba.com
+      - af5e456c0b19 "ocfs2: validate extent block list fields during block read (2/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lkml.kernel.org/r/20260403090803.3860971-4-joseph.qi@linux.alibaba.com
+      - 510a75028707 "ocfs2: remove redundant l_next_free_rec check in __ocfs2_find_path() (3/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lkml.kernel.org/r/20260403090803.3860971-5-joseph.qi@linux.alibaba.com
+    - d647c5b2fbf8 "ocfs2: split transactions in dio completion to avoid credit exhaustion"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/20260402134328.27334-2-heming.zhao@suse.com
+    - 6c9340a2ff2b "ocfs2: use get_random_u32() where appropriate"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/20260405154720.4732-1-devnexen@gmail.com
+    - 5cc6421aaad3 "doc: watchdog: fix typos etc"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/20260408213523.2707947-1-rdunlap@infradead.org
+    - d12f558e6200 "ocfs2: fix listxattr handling when the buffer is full"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/20260410040339.3837162-1-gality369@gmail.com
+    - 8f687eeed3da "ocfs2: validate bg_bits during freefrag scan"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/20260410034220.3825769-1-gality369@gmail.com
+    - 70b672833f40 "ocfs2: validate group add input before caching"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lkml.kernel.org/r/20260410020209.3786348-1-gality369@gmail.com
+- mm-nonmm-unstable: 32 -> 13 commits
+  - series: 3 (14) -> 2 (10)
+    - no role, nobody: 10 -> 6 commits
+    - no role, no role : 7 -> 6 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 10 -> 10 commits (no change)
-    - maintainer, no role : 4 -> 4 commits (no change)
+    - no role, maintainer: 10 -> 0 commits
+    - maintainer, no role : 4 -> 0 commits
+  - dropped commits
+    - 2e149aa0449e "Update Sean's email address"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260407164722.211610-1-sean.anderson@linux.dev

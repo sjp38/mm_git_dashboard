@@ -17,7 +17,7 @@
   - author/reviewer role stat
     - maintainer, nobody: 1 commits
   - full commits list
-    - eb08f1c8d666 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+    - c216cac5311c "mm: call ->free_folio() directly in folio_unmap_invalidate()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260413184314.3419945-1-willy@infradead.org
 - mm-stable: 104 total, 14 (89) series, 15 non-series commits
@@ -387,30 +387,34 @@
     - no role, reviewer: 1 commits
     - reviewer, no role : 2 commits
   - full commits list
-    - 80fad3d1715e "mm/vma: remove __vma_check_mmap_hook()"
+    - e59984facff4 "mm/vma: remove __vma_check_mmap_hook()"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260413105713.92625-1-ljs@kernel.org
-      - a5aa9efa96d6 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - bf54e6e0e059 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev
         - Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-    - e4764cb5cf24 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+    - bbad56286319 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com
-    - 3e88d814fcfc "userfaultfd: introduce vm_uffd_ops"
+    - 9792c20d3964 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
-    - 7c57cfe5ef4d "mm/sparse: fix comment for section map alignment"
+    - 9e7304a6c8e2 "mm/sparse: fix comment for section map alignment"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com
-    - bc203f426d49 "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
+    - 8d196734dfb5 "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
+- mm-new: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - e8ecd50770bf "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
+      - 7173ce0016c7 "mm/sparse: fix race on mem_section->usage in pfn walkers" (2/8)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260415022326.53218-1-songmuchun@bytedance.com
+      - 99cf00bb6451 "mm/vmstat: spread vmstat_update requeue across the stat interval" (3/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 4 total, 0 (1) series, 3 non-series commits
@@ -437,7 +441,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 5faeb146c111 "kernel/fork: validate exit_signal in kernel_clone()"
+    - 35bac77fdaa5 "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by a reviewer
       - Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com
       - Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com

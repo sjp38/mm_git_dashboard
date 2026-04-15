@@ -2,13 +2,9 @@
 - mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - eb08f1c8d666 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260413184314.3419945-1-willy@infradead.org
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 3 -> 3 commits (no change)
   - series: 0 (3) -> 0 (3) (no change)
     - no role, no role : 2 -> 2 commits (no change)

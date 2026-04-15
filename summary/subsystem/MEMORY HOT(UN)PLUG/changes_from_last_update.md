@@ -5,13 +5,24 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - c22eabbc883d "mm/zone_device: do not touch device folio after calling ->folio_free()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Alistair Popple <apopple@nvidia.com>"
+      - Link: https://lkml.kernel.org/r/20260410230346.4009855-1-matthew.brost@intel.com
 - mm-stable: 6 -> 6 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, no role : 6 -> 6 commits (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - 7173ce0016c7 "mm/sparse: fix race on mem_section->usage in pfn walkers (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260415022326.53218-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
