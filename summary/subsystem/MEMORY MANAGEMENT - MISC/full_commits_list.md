@@ -1,6 +1,12 @@
 - baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - cc672e7f33a8 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260413-blkcg-v1-1-35b72622d16c@debian.org
 - mm-stable: 21 total, 0 (10) series, 11 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
@@ -84,64 +90,65 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 6 commits
-    - no role, reviewer: 6 commits
+    - no role, reviewer: 4 commits
+    - no role, maintainer: 2 commits
     - reviewer, nobody: 1 commits
     - maintainer, nobody: 2 commits
   - full commits list
-      - d32fe6e25f96 "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
-        - Authored by no role player, reviewed by a reviewer
+      - c7a1ff64d63f "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
+        - Authored by no role player, reviewed by a maintainer
         - Link: https://lkml.kernel.org/r/20260316-kho-v9-2-ed6dcd951988@debian.org
-    - 5d6b168c207d "kho: document kexec-metadata tracking feature"
-      - Authored by no role player, reviewed by a reviewer
+    - 342e0d1b3c52 "kho: document kexec-metadata tracking feature"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260316-kho-v9-6-ed6dcd951988@debian.org
     - series "Docs/admin-guide/mm/damon: warn commit_inputs vs other params race". (2 commits)
-      - 53c133d40939 "Docs/admin-guide/mm/damon/reclaim: warn commit_inputs vs param updates race" (0/2)
+      - 5a622a30cd04 "Docs/admin-guide/mm/damon/reclaim: warn commit_inputs vs param updates race" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260329153052.46657-2-sj@kernel.org
         - Link: https://lore.kernel.org/20260319161620.189392-3-objecting@objecting.org [1]
         - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [3]
-      - 98e464ea119b "Docs/admin-guide/mm/damon/lru_sort: warn commit_inputs vs param updates race" (1/2)
+      - 7635960d44e5 "Docs/admin-guide/mm/damon/lru_sort: warn commit_inputs vs param updates race" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lkml.kernel.org/r/20260329153052.46657-3-sj@kernel.org
         - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [1]
-    - acec43c201a2 "tools/testing/selftests: add merge test for partial msealed range"
+    - 79d26d4d68ab "tools/testing/selftests: add merge test for partial msealed range"
       - Authored by no role player, reviewed by nobody
       - Link: : https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
       - Link: https://lkml.kernel.org/r/20260331073627.50010-1-ljs@kernel.org
-    - a2508d2a549e "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
+    - 9d14b557a9f0 "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/ac_mCIUQWRAbuH8F@kernel.org
-    - b1c203e305ab "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
+    - 951ac5997312 "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260401090520.24018-1-liwang@redhat.com
-      - 68beb9029117 "selftests/mm: hmm-tests: don't hardcode THP size to 2MB" (1/3)
+      - 1a6e0e43b0f4 "selftests/mm: hmm-tests: don't hardcode THP size to 2MB" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260331063445.3551404-3-apopple@nvidia.com
         - Link: https://lore.kernel.org/linux-mm/8bd0396a-8997-4d2e-a13f-5aac033083d7@linux.dev/
     - series "selftests/mm: skip several tests when thp is not available", v8. (6 commits)
-      - 9d671194b012 "selftests/mm/guard-regions: skip collapse test when thp not enabled" (0/6)
+      - 6d74744da8c4 "selftests/mm/guard-regions: skip collapse test when thp not enabled" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-1-chuhu@redhat.com
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-2-chuhu@redhat.com
-      - 9dffb5d91ff8 "selftests/mm: soft-dirty: skip two tests when thp is not available" (1/6)
+      - d856ef81e258 "selftests/mm: soft-dirty: skip two tests when thp is not available" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-3-chuhu@redhat.com
-      - 84a30a9b5e5d "selftests/mm: move write_file helper to vm_util" (2/6)
+      - eb8b15e1f4b5 "selftests/mm: move write_file helper to vm_util" (2/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com
-      - 12336f7aebc2 "selftests/mm/vm_util: robust write_file()" (3/6)
+      - c350d336665b "selftests/mm/vm_util: robust write_file()" (3/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-5-chuhu@redhat.com
-      - a59f9c7ba0a7 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (4/6)
+      - 36116457bc23 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com
-      - a730ebba354d "selftests/mm: transhuge_stress: skip the test when thp not available" (5/6)
+      - be6e050f4fe4 "selftests/mm: transhuge_stress: skip the test when thp not available" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com
-    - 77ac92c9e9c6 "selftests: mm: skip charge_reserved_hugetlb without killall"
+    - e331867386bf "selftests: mm: skip charge_reserved_hugetlb without killall"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260410044139.67480-1-create0818@163.com
-      - eef398b0a438 "selftests/mm: verify droppable mappings cannot be locked" (1/2)
+      - 945faab69408 "selftests/mm: verify droppable mappings cannot be locked" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

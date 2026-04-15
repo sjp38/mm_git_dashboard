@@ -5,19 +5,22 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 3 -> 5 commits
+- mm-hotfixes-unstable: 5 -> 8 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 2 commits
+    - no role, no role : 2 -> 4 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 2 commits
   - new commits
-    - c2b0c2070428 "mm/zone_device: do not touch device folio after calling ->folio_free()"
+    - cc672e7f33a8 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260410230346.4009855-1-matthew.brost@intel.com
-    - e5b5aa548874 "userfaultfd: preserve write protection across UFFDIO_MOVE"
+      - Link: https://lkml.kernel.org/r/20260413-blkcg-v1-1-35b72622d16c@debian.org
+    - eb08f1c8d666 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260413184314.3419945-1-willy@infradead.org
+    - 9b418f3455f3 "mm/vmalloc: take vmap_purge_lock in shrinker"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260409152822.1073083-1-gourry@gourry.net
+      - Link: https://lkml.kernel.org/r/20260413192646.14683-1-urezki@gmail.com
 - mm-stable: 231 -> 231 commits (no change)
   - series: 31 (173) -> 31 (173) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
@@ -63,29 +66,24 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 80 -> 79 commits
+- mm-unstable: 79 -> 81 commits
   - series: 10 (53) -> 10 (53) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 22 -> 20 commits
-    - no role, reviewer: 7 -> 8 commits
+    - no role, no role : 20 -> 20 commits (no change)
+    - no role, reviewer: 8 -> 9 commits
     - no role, maintainer: 33 -> 33 commits (no change)
-    - reviewer, no role : 3 -> 3 commits (no change)
+    - reviewer, no role : 3 -> 4 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - a09ff4997211 "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
+  - new commits
+    - 80fad3d1715e "mm/vma: remove __vma_check_mmap_hook()"
+      - Authored by a reviewer, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260413105713.92625-1-ljs@kernel.org
+    - 14039d284c01 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
       - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Dmitry Ilvokhin <d@ilvokhin.com>"
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - Link: https://lkml.kernel.org/r/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
-  - dropped commits
-    - e466654e03f9 "mm/userfaultfd: detect VMA type change after copy retry in mfill_copy_folio_retry()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260409120653.290386-1-devnexen@gmail.com
+      - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

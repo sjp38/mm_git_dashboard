@@ -2,8 +2,13 @@
 - mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - eb08f1c8d666 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260413184314.3419945-1-willy@infradead.org
 - mm-stable: 104 -> 104 commits (no change)
   - series: 14 (89) -> 14 (89) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
@@ -26,20 +31,16 @@
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260325-pagewalk-check-pmd-refault-v2-1-707bff33bc60@akamai.com
-- mm-unstable: 5 -> 5 commits (no change)
+- mm-unstable: 5 -> 6 commits
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
-    - reviewer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - a09ff4997211 "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Dmitry Ilvokhin <d@ilvokhin.com>"
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - Link: https://lkml.kernel.org/r/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 2 commits
+  - new commits
+    - 80fad3d1715e "mm/vma: remove __vma_check_mmap_hook()"
+      - Authored by a reviewer, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260413105713.92625-1-ljs@kernel.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

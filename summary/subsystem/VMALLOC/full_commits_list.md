@@ -1,6 +1,12 @@
 - baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 9b418f3455f3 "mm/vmalloc: take vmap_purge_lock in shrinker"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260413192646.14683-1-urezki@gmail.com
 - mm-stable: 6 total, 1 (1) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits

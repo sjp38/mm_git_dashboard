@@ -6,33 +6,33 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-hotfixes-unstable: 3 -> 6 commits
+- mm-hotfixes-unstable: 6 -> 9 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 0 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 4 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 2 commits
   - new commits
-    - ea1aaf69f380 "device-dax: Fix refcount leak in __devm_create_dev_dax() error path"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260412070010.2402830-1-lgs201920130244@gmail.com
-    - c2b0c2070428 "mm/zone_device: do not touch device folio after calling ->folio_free()"
+    - cc672e7f33a8 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260410230346.4009855-1-matthew.brost@intel.com
-    - e5b5aa548874 "userfaultfd: preserve write protection across UFFDIO_MOVE"
+      - Link: https://lkml.kernel.org/r/20260413-blkcg-v1-1-35b72622d16c@debian.org
+    - eb08f1c8d666 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260413184314.3419945-1-willy@infradead.org
+    - 9b418f3455f3 "mm/vmalloc: take vmap_purge_lock in shrinker"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260409152822.1073083-1-gourry@gourry.net
+      - Link: https://lkml.kernel.org/r/20260413192646.14683-1-urezki@gmail.com
 - mm-stable: 369 -> 369 commits (no change)
   - series: 39 (280) -> 39 (280) (no change)
     - no role, nobody: 22 -> 22 commits (no change)
     - no role, no role : 138 -> 138 commits (no change)
     - no role, reviewer: 48 -> 48 commits (no change)
     - no role, maintainer: 47 -> 47 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 0 commits
     - reviewer, reviewer: 6 -> 6 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 74 -> 74 commits (no change)
-    - maintainer, no role : 13 -> 13 commits (no change)
+    - maintainer, no role : 13 -> 14 commits
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 16 -> 16 commits (no change)
   - changed commits
@@ -82,44 +82,41 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 122 -> 123 commits
-  - series: 15 (83) -> 15 (83) (no change)
-    - no role, nobody: 8 -> 7 commits
-    - no role, no role : 34 -> 35 commits
-    - no role, reviewer: 14 -> 15 commits
-    - no role, maintainer: 35 -> 35 commits (no change)
+- mm-unstable: 123 -> 129 commits
+  - series: 15 (83) -> 16 (86)
+    - no role, nobody: 7 -> 7 commits (no change)
+    - no role, no role : 35 -> 39 commits
+    - no role, reviewer: 15 -> 13 commits
+    - no role, maintainer: 35 -> 38 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 3 -> 3 commits (no change)
+    - reviewer, no role : 3 -> 4 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 7 -> 7 commits (no change)
     - maintainer, no role : 13 -> 13 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+    - maintainer, reviewer: 1 -> 0 commits
+    - maintainer, maintainer: 0 -> 1 commits
   - new commits
-    - 9dd5912292a1 "kho: fix error handling in kho_add_subtree()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260407-kho_fix_send-v1-1-b21977feb960@debian.org
-    - 77ac92c9e9c6 "selftests: mm: skip charge_reserved_hugetlb without killall"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260410044139.67480-1-create0818@163.com
-  - changed commits
-    - a09ff4997211 "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
+    - 80fad3d1715e "mm/vma: remove __vma_check_mmap_hook()"
+      - Authored by a reviewer, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260413105713.92625-1-ljs@kernel.org
+    - 14039d284c01 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
       - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Dmitry Ilvokhin <d@ilvokhin.com>"
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - Link: https://lkml.kernel.org/r/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
-    - series "fix MAP_DROPPABLE not supported errno". (2)
-      - eef398b0a438 "selftests/mm: verify droppable mappings cannot be locked (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com
-  - dropped commits
-    - e466654e03f9 "mm/userfaultfd: detect VMA type change after copy retry in mfill_copy_folio_retry()"
+      - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
+    - d1de7472a462 "MAINTAINERS: update kexec/kdump maintainers entries"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260409120653.290386-1-devnexen@gmail.com
+      - Link: https://lkml.kernel.org/r/20260413121146.49215-1-pasha.tatashin@soleen.com
+    - series "MAINTAINERS: update KHO and LIVE UPDATE entries". (3)
+      - a99423890df1 "MAINTAINERS: update KHO and LIVE UPDATE maintainers (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260414121752.1912847-1-pratyush@kernel.org
+        - Link: https://lkml.kernel.org/r/20260414121752.1912847-2-pratyush@kernel.org
+      - caa8140722c7 "MAINTAINERS: drop include/linux/kho/abi/ from KHO (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260414121752.1912847-3-pratyush@kernel.org
+      - 8276e0883d8a "MAINTAINERS: drop include/linux/liveupdate from LIVE UPDATE (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260414121752.1912847-4-pratyush@kernel.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
@@ -131,28 +128,10 @@
     - no role, maintainer: 30 -> 30 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 29 -> 32 commits
+- mm-nonmm-unstable: 32 -> 32 commits (no change)
   - series: 3 (14) -> 3 (14) (no change)
     - no role, nobody: 10 -> 10 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 7 -> 10 commits
+    - no role, maintainer: 10 -> 10 commits (no change)
     - maintainer, no role : 4 -> 4 commits (no change)
-  - new commits
-    - c1d41b0cfa38 "ocfs2: fix listxattr handling when the buffer is full"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260410040339.3837162-1-gality369@gmail.com
-    - 66cb04b4a6bc "ocfs2: validate bg_bits during freefrag scan"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260410034220.3825769-1-gality369@gmail.com
-    - f2370e084ead "ocfs2: validate group add input before caching"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260410020209.3786348-1-gality369@gmail.com
-  - changed commits
-    - 8c048ea154bc "ocfs2: fix use-after-free in ocfs2_fault() when VM_FAULT_RETRY"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://lkml.kernel.org/r/20260410083816.34951-1-tejas.bharambe@outlook.com"
-      - added "Fixes: 614a9e849ca6 ("ocfs2: Remove FILE_IO from masklog.")"
-      - dropped "Link: https://lkml.kernel.org/r/20260402040234.92432-1-tejas.bharambe@outlook.com"
-      - dropped "Link: https://lkml.kernel.org/r/20260403035333.136824-1-tejas.bharambe@outlook.com"
-      - Link: https://lkml.kernel.org/r/20260410083816.34951-1-tejas.bharambe@outlook.com

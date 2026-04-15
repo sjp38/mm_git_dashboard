@@ -1,26 +1,18 @@
 - baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - e5b5aa548874 "userfaultfd: preserve write protection across UFFDIO_MOVE"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260409152822.1073083-1-gourry@gourry.net
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 3 -> 3 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 14 -> 13 commits
+- mm-unstable: 13 -> 13 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 10 -> 9 commits
+    - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - dropped commits
-    - e466654e03f9 "mm/userfaultfd: detect VMA type change after copy retry in mfill_copy_folio_retry()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260409120653.290386-1-devnexen@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

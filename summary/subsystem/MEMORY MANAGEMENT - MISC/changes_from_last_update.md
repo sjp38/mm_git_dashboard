@@ -1,8 +1,13 @@
 - baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - cc672e7f33a8 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260413-blkcg-v1-1-35b72622d16c@debian.org
 - mm-stable: 21 -> 21 commits (no change)
   - series: 0 (10) -> 0 (10) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
@@ -11,24 +16,14 @@
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-unstable: 15 -> 16 commits
+- mm-unstable: 16 -> 16 commits (no change)
   - series: 2 (11) -> 2 (11) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 4 -> 6 commits
-    - no role, reviewer: 6 -> 6 commits (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 6 -> 6 commits (no change)
+    - no role, reviewer: 6 -> 4 commits
+    - no role, maintainer: 0 -> 2 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-  - new commits
-    - 77ac92c9e9c6 "selftests: mm: skip charge_reserved_hugetlb without killall"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260410044139.67480-1-create0818@163.com
-  - changed commits
-    - series "fix MAP_DROPPABLE not supported errno". (2)
-      - eef398b0a438 "selftests/mm: verify droppable mappings cannot be locked (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

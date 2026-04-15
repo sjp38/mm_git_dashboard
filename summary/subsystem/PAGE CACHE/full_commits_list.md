@@ -9,7 +9,13 @@
     - cece9dc61daa "mm: reinstate unconditional writeback start in balance_dirty_pages()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260326215127.3857682-2-joannelkoong@gmail.com
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - maintainer, nobody: 1 commits
+  - full commits list
+    - eb08f1c8d666 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260413184314.3419945-1-willy@infradead.org
 - mm-stable: 3 total, 0 (3) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
@@ -28,7 +34,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 9bd8b197ab22 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - ee3c729b0927 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260326234629.840938-2-joannelkoong@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
