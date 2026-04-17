@@ -22,51 +22,51 @@
     - no role, reviewer: 1 commits
   - full commits list
     - series "mm, kvm: allow uffd support in guest_memfd", v4. (4 commits)
-      - 4d7f1aea0a4d "userfaultfd: introduce mfill_copy_folio_locked() helper" (0/4)
+      - fb4de71f4748 "userfaultfd: introduce mfill_copy_folio_locked() helper" (0/4)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-1-rppt@kernel.org
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-2-rppt@kernel.org
-      - 734d348240de "userfaultfd: introduce struct mfill_state" (1/4)
+        - Link: https://lore.kernel.org/20260402041156.1377214-1-rppt@kernel.org
+        - Link: https://lore.kernel.org/20260402041156.1377214-2-rppt@kernel.org
+      - 6a138443d038 "userfaultfd: introduce struct mfill_state" (1/4)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/abehBY7QakYF9bK4@hyeyoo
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-3-rppt@kernel.org
-      - 7d3d93e65942 "userfaultfd: introduce mfill_establish_pmd() helper" (2/4)
+        - Link: https://lore.kernel.org/abehBY7QakYF9bK4@hyeyoo
+        - Link: https://lore.kernel.org/20260402041156.1377214-3-rppt@kernel.org
+      - 2bd0fde8e9a1 "userfaultfd: introduce mfill_establish_pmd() helper" (2/4)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-4-rppt@kernel.org
-      - cccd341f98d9 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma()" (3/4)
+        - Link: https://lore.kernel.org/20260402041156.1377214-4-rppt@kernel.org
+      - 231eb99a5f0a "userfaultfd: introduce mfill_get_vma() and mfill_put_vma()" (3/4)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
-        - Link: https://lkml.kernel.org/r/20260402041156.1377214-5-rppt@kernel.org
-    - 331fb60cf200 "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
+        - Link: https://lore.kernel.org/20260316173829.1126728-1-avagin@google.com
+        - Link: https://lore.kernel.org/20260402041156.1377214-5-rppt@kernel.org
+    - 6ee846a516eb "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
       - Authored by no role player, reviewed by no role player
-      - Link: : https://lkml.kernel.org/r/20260316173829.1126728-1-avagin@google.com
-      - Link: https://lkml.kernel.org/r/20260306171815.3160826-6-rppt@kernel.org
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-6-rppt@kernel.org
-    - 88f62490e884 "userfaultfd: move vma_can_userfault out of line"
+      - Link: : https://lore.kernel.org/20260316173829.1126728-1-avagin@google.com
+      - Link: https://lore.kernel.org/20260306171815.3160826-6-rppt@kernel.org
+      - Link: https://lore.kernel.org/20260402041156.1377214-6-rppt@kernel.org
+    - e45043fade04 "userfaultfd: move vma_can_userfault out of line"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-7-rppt@kernel.org
-    - 9792c20d3964 "userfaultfd: introduce vm_uffd_ops"
+      - Link: https://lore.kernel.org/20260402041156.1377214-7-rppt@kernel.org
+    - 20bb75c94131 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
-    - faafcc968052 "userfaultfd-introduce-vm_uffd_ops-fix"
+      - Link: https://lore.kernel.org/20260402041156.1377214-8-rppt@kernel.org
+    - 59b48f8ce0ab "userfaultfd-introduce-vm_uffd_ops-fix"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/adffgfM5ANxtPIEF@kernel.org
-    - 3be3a6d136ca "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
+      - Link: https://lore.kernel.org/adffgfM5ANxtPIEF@kernel.org
+    - f1e0b26ae62d "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-9-rppt@kernel.org
-    - df3de43e998b "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
+      - Link: https://lore.kernel.org/20260402041156.1377214-9-rppt@kernel.org
+    - 199f14ec1cfc "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-10-rppt@kernel.org
-    - 56250959d84a "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
+      - Link: https://lore.kernel.org/20260402041156.1377214-10-rppt@kernel.org
+    - 4d908db2cd6f "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-11-rppt@kernel.org
-    - 46a39e420989 "userfaultfd: mfill_atomic(): remove retry logic"
+      - Link: https://lore.kernel.org/20260402041156.1377214-11-rppt@kernel.org
+    - 24729bee1b5f "userfaultfd: mfill_atomic(): remove retry logic"
       - Authored by no role player, reviewed by nobody
-      - Link: : https://lkml.kernel.org/r/ac5zcDUY8CFHr6Lw@kernel.org
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-12-rppt@kernel.org
-    - f3575b5ab06c "userfaultfd: allow registration of ranges below mmap_min_addr"
+      - Link: : https://lore.kernel.org/ac5zcDUY8CFHr6Lw@kernel.org
+      - Link: https://lore.kernel.org/20260402041156.1377214-12-rppt@kernel.org
+    - 81187e195cbb "userfaultfd: allow registration of ranges below mmap_min_addr"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260409103345.15044-1-komlomal@gmail.com
+      - Link: https://lore.kernel.org/20260409103345.15044-1-komlomal@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

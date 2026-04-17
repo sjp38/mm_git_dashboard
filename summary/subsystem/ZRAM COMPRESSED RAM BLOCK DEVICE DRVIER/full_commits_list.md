@@ -45,12 +45,12 @@
     - no role, maintainer: 1 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - 390a7975fec4 "zram: do not forget to endio for partial discard requests"
+    - be362efb51d4 "zram: do not forget to endio for partial discard requests"
       - Authored by a maintainer, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260331074255.777019-1-senozhatsky@chromium.org
-    - e1aa012743d4 "zram: reject unrecognized type= values in recompress_store()"
+      - Link: https://lore.kernel.org/20260331074255.777019-1-senozhatsky@chromium.org
+    - 57292f2c7d8f "zram: reject unrecognized type= values in recompress_store()"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260407153027.42425-1-astellman@stellman-greene.com
+      - Link: https://lore.kernel.org/20260407153027.42425-1-astellman@stellman-greene.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

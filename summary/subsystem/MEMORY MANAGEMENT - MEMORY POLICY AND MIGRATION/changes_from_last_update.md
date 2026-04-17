@@ -4,6 +4,12 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - b9a26c7b69c5 "mm/mempolicy: fix weighted interleave auto sysfs name"
+      - Authored by a reviewer, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260407141415.3080960-1-joshua.hahnjy@gmail.com"
+      - dropped "Link: https://lkml.kernel.org/r/20260407141415.3080960-1-joshua.hahnjy@gmail.com"
+      - Link: https://lore.kernel.org/20260407141415.3080960-1-joshua.hahnjy@gmail.com
 - mm-stable: 6 -> 6 commits (no change)
   - series: 0 (3) -> 0 (3) (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
@@ -12,6 +18,24 @@
   - series: 0 (1) -> 0 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - 41c8f6810137 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping() (12/33)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com"
+        - dropped "Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com"
+        - Link: https://lore.kernel.org/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
+    - 3cd3237e021e "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260401005702.7096-1-liu.yun@linux.dev"
+      - dropped "Link: https://lkml.kernel.org/r/20260401005702.7096-1-liu.yun@linux.dev"
+      - Link: https://lore.kernel.org/20260401005702.7096-1-liu.yun@linux.dev
+      - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
+    - ccc1de5b28ca "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260212014611.416695-1-dave@stgolabs.net"
+      - dropped "Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net"
+      - Link: https://lore.kernel.org/20260212014611.416695-1-dave@stgolabs.net
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

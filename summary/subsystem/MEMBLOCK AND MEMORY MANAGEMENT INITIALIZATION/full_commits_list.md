@@ -41,13 +41,13 @@
     - no role, no role : 2 commits
   - full commits list
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - fad128ad51f3 "kho: add size parameter to kho_add_subtree()" (0/6)
+      - 787fdadec884 "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn
-        - Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - 25c359d18837 "kho: persist blob size in KHO FDT" (2/6)
+        - Link: https://lore.kernel.org/20260323110747.193569-1-duanchenghao@kylinos.cn
+        - Link: https://lore.kernel.org/20260316-kho-v9-1-ed6dcd951988@debian.org
+      - ea8004fe7a81 "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org
+        - Link: https://lore.kernel.org/20260316-kho-v9-3-ed6dcd951988@debian.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

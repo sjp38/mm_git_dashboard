@@ -4,9 +4,9 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 8092c8944752 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - ecb31cf542ff "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260322052120.14021-1-devnexen@gmail.com
+      - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 17 total, 2 (14) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
@@ -76,12 +76,12 @@
     - no role, nobody: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 9792c20d3964 "userfaultfd: introduce vm_uffd_ops"
+    - 20bb75c94131 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org
-    - dd0af8ea1075 "mm/hugetlb: fix early boot crash on parameters without '=' separator"
+      - Link: https://lore.kernel.org/20260402041156.1377214-8-rppt@kernel.org
+    - 588e444093ee "mm/hugetlb: fix early boot crash on parameters without '=' separator"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260409105437.108686-4-thorsten.blum@linux.dev
+      - Link: https://lore.kernel.org/20260409105437.108686-4-thorsten.blum@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

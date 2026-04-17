@@ -4,9 +4,9 @@
   - author/reviewer role stat
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 9d76db37508b "mm/mempolicy: fix weighted interleave auto sysfs name"
+    - b9a26c7b69c5 "mm/mempolicy: fix weighted interleave auto sysfs name"
       - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260407141415.3080960-1-joshua.hahnjy@gmail.com
+      - Link: https://lore.kernel.org/20260407141415.3080960-1-joshua.hahnjy@gmail.com
 - mm-stable: 6 total, 0 (3) series, 3 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 4 commits
@@ -37,16 +37,16 @@
     - no role, no role : 1 commits
     - no role, reviewer: 2 commits
   - full commits list
-      - 8bb09f7fe54b "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+      - 41c8f6810137 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-    - 5a7ff345ade9 "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+        - Link: https://lore.kernel.org/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
+    - 3cd3237e021e "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260401005702.7096-1-liu.yun@linux.dev
+      - Link: https://lore.kernel.org/20260401005702.7096-1-liu.yun@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
-    - 4565d7b645bd "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+    - ccc1de5b28ca "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260212014611.416695-1-dave@stgolabs.net
+      - Link: https://lore.kernel.org/20260212014611.416695-1-dave@stgolabs.net
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

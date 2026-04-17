@@ -5,11 +5,17 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - b9a834cad327 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+      - Authored by a maintainer, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20260413184314.3419945-1-willy@infradead.org"
+      - dropped "Link: https://lkml.kernel.org/r/20260413184314.3419945-1-willy@infradead.org"
+      - Link: https://lore.kernel.org/20260413184314.3419945-1-willy@infradead.org
 - mm-stable: 104 -> 104 commits (no change)
   - series: 14 (89) -> 14 (89) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 72 -> 72 commits (no change)
-    - no role, reviewer: 19 -> 19 commits (no change)
+    - no role, no role : 72 -> 71 commits
+    - no role, reviewer: 19 -> 20 commits
     - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
@@ -33,15 +39,57 @@
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
-- mm-new: 1 -> 2 commits
-  - series: 0 (1) -> 0 (2)
-    - no role, nobody: 0 -> 1 commits
+  - changed commits
+    - 1a0e1312ba7c "mm/vma: remove __vma_check_mmap_hook()"
+      - Authored by a reviewer, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260413105713.92625-1-ljs@kernel.org"
+      - dropped "Link: https://lkml.kernel.org/r/20260413105713.92625-1-ljs@kernel.org"
+      - Link: https://lore.kernel.org/20260413105713.92625-1-ljs@kernel.org
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - df21bebc9583 "mm: vmscan: prepare for reparenting MGLRU folios (25/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Link: https://lore.kernel.org/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com"
+        - added "Link: : https://lore.kernel.org/20260324114937.28569-1-qi.zheng@linux.dev"
+        - dropped "Link: https://lkml.kernel.org/r/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com"
+        - dropped "Link: : https://lkml.kernel.org/r/20260324114937.28569-1-qi.zheng@linux.dev"
+        - Link: : https://lore.kernel.org/20260324114937.28569-1-qi.zheng@linux.dev
+        - Link: https://lore.kernel.org/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
+    - 884a3feff391 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260331113724.2080833-1-songmuchun@bytedance.com"
+      - dropped "Link: https://lkml.kernel.org/r/20260331113724.2080833-1-songmuchun@bytedance.com"
+      - Link: https://lore.kernel.org/20260331113724.2080833-1-songmuchun@bytedance.com
+    - 20bb75c94131 "userfaultfd: introduce vm_uffd_ops"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20260402041156.1377214-8-rppt@kernel.org"
+      - dropped "Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org"
+      - Link: https://lore.kernel.org/20260402041156.1377214-8-rppt@kernel.org
+    - 6cca3a7088bf "mm/sparse: fix comment for section map alignment"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260402102320.3617578-1-songmuchun@bytedance.com"
+      - dropped "Link: https://lkml.kernel.org/r/20260402102320.3617578-1-songmuchun@bytedance.com"
+      - Link: https://lore.kernel.org/20260402102320.3617578-1-songmuchun@bytedance.com
+    - ca8ab0e0a7ab "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org"
+      - dropped "Link: https://lkml.kernel.org/r/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org"
+      - Link: https://lore.kernel.org/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - new commits
+  - changed commits
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - 7173ce0016c7 "mm/sparse: fix race on mem_section->usage in pfn walkers (2/8)"
+      - 8568f268a518 "mm/sparse: fix race on mem_section->usage in pfn walkers (2/8)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260415022326.53218-1-songmuchun@bytedance.com
+        - added "Link: https://lore.kernel.org/20260415022326.53218-1-songmuchun@bytedance.com"
+        - dropped "Link: https://lkml.kernel.org/r/20260415022326.53218-1-songmuchun@bytedance.com"
+        - Link: https://lore.kernel.org/20260415022326.53218-1-songmuchun@bytedance.com
+      - f05735e5e7a9 "mm/vmstat: spread vmstat_update requeue across the stat interval (3/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org"
+        - dropped "Link: https://lkml.kernel.org/r/20260401-vmstat-v1-1-b68ce4a35055@debian.org"
+        - Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 4 -> 4 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
@@ -50,3 +98,14 @@
 - mm-nonmm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 7f4751577786 "kernel/fork: validate exit_signal in kernel_clone()"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com"
+      - added "Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com"
+      - dropped "Link: : https://lkml.kernel.org/r/abwvgU17W8wuW2-J@redhat.com"
+      - dropped "Link: https://lkml.kernel.org/r/20260316151956.563558-1-kartikey406@gmail.com"
+      - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
+      - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com
+      - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
+      - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]

@@ -114,21 +114,21 @@
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - e7ee265639e9 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 439ec03e431d "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 28dcf0abb937 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
+        - Link: https://lore.kernel.org/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
+      - f264fe7b20ad "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
-      - 6e48812da751 "selftests/mm: move write_file helper to vm_util" (2/6)
+        - Link: https://lore.kernel.org/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
+      - ee542dcaa006 "selftests/mm: move write_file helper to vm_util" (2/6)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com
-      - 7e2be8ef6b32 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (4/6)
+        - Link: https://lore.kernel.org/20260402014543.1671131-4-chuhu@redhat.com
+      - 1f31aa93bafe "selftests/mm: split_huge_page_test: skip the test when thp is not available" (4/6)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com
-      - 0688cfd4711e "selftests/mm: transhuge_stress: skip the test when thp not available" (5/6)
+        - Link: https://lore.kernel.org/20260402014543.1671131-6-chuhu@redhat.com
+      - 996d78be61f9 "selftests/mm: transhuge_stress: skip the test when thp not available" (5/6)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com
+        - Link: https://lore.kernel.org/20260402014543.1671131-7-chuhu@redhat.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

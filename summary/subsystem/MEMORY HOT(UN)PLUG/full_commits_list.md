@@ -10,9 +10,9 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - c22eabbc883d "mm/zone_device: do not touch device folio after calling ->folio_free()"
+    - 5ca5e5962f7e "mm/zone_device: do not touch device folio after calling ->folio_free()"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260410230346.4009855-1-matthew.brost@intel.com
+      - Link: https://lore.kernel.org/20260410230346.4009855-1-matthew.brost@intel.com
 - mm-stable: 6 total, 1 (4) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 6 commits
@@ -43,8 +43,8 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-      - 7173ce0016c7 "mm/sparse: fix race on mem_section->usage in pfn walkers" (2/8)
+      - 8568f268a518 "mm/sparse: fix race on mem_section->usage in pfn walkers" (2/8)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260415022326.53218-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260415022326.53218-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

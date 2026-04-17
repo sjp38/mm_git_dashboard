@@ -4,9 +4,9 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - ce2c4888246d "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
+    - 99d1bd257ecc "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260413-blkcg-v1-1-35b72622d16c@debian.org
+      - Link: https://lore.kernel.org/20260413-blkcg-v1-1-35b72622d16c@debian.org
 - mm-stable: 21 total, 0 (10) series, 11 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
@@ -95,62 +95,62 @@
     - reviewer, nobody: 1 commits
     - maintainer, nobody: 2 commits
   - full commits list
-      - 167662fc5537 "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
+      - 90be5bb4266c "kho: rename fdt parameter to blob in kho_add/remove_subtree()" (1/6)
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260316-kho-v9-2-ed6dcd951988@debian.org
-    - 56a688be1c11 "kho: document kexec-metadata tracking feature"
+        - Link: https://lore.kernel.org/20260316-kho-v9-2-ed6dcd951988@debian.org
+    - 26fc2c514af4 "kho: document kexec-metadata tracking feature"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260316-kho-v9-6-ed6dcd951988@debian.org
+      - Link: https://lore.kernel.org/20260316-kho-v9-6-ed6dcd951988@debian.org
     - series "Docs/admin-guide/mm/damon: warn commit_inputs vs other params race". (2 commits)
-      - 1eb00030ea66 "Docs/admin-guide/mm/damon/reclaim: warn commit_inputs vs param updates race" (0/2)
+      - 5c36461de004 "Docs/admin-guide/mm/damon/reclaim: warn commit_inputs vs param updates race" (0/2)
         - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260329153052.46657-2-sj@kernel.org
+        - Link: https://lore.kernel.org/20260329153052.46657-2-sj@kernel.org
         - Link: https://lore.kernel.org/20260319161620.189392-3-objecting@objecting.org [1]
         - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [3]
-      - dc4e92988b3b "Docs/admin-guide/mm/damon/lru_sort: warn commit_inputs vs param updates race" (1/2)
+      - 0e5254ce8b43 "Docs/admin-guide/mm/damon/lru_sort: warn commit_inputs vs param updates race" (1/2)
         - Authored by a maintainer, reviewed by nobody
-        - Link: https://lkml.kernel.org/r/20260329153052.46657-3-sj@kernel.org
+        - Link: https://lore.kernel.org/20260329153052.46657-3-sj@kernel.org
         - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [1]
-    - 1073b8ac517e "tools/testing/selftests: add merge test for partial msealed range"
+    - d4b3ca01a0d1 "tools/testing/selftests: add merge test for partial msealed range"
       - Authored by no role player, reviewed by nobody
-      - Link: : https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
-      - Link: https://lkml.kernel.org/r/20260331073627.50010-1-ljs@kernel.org
-    - c4af6113bd74 "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
+      - Link: : https://lore.kernel.org/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
+      - Link: https://lore.kernel.org/20260331073627.50010-1-ljs@kernel.org
+    - 1b0eea26d18c "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
       - Authored by a reviewer, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/ac_mCIUQWRAbuH8F@kernel.org
-    - 126b1d7dbfa0 "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
+      - Link: https://lore.kernel.org/ac_mCIUQWRAbuH8F@kernel.org
+    - 7cfc9fe5a757 "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260401090520.24018-1-liwang@redhat.com
-      - d911846c2431 "selftests/mm: hmm-tests: don't hardcode THP size to 2MB" (1/3)
+      - Link: https://lore.kernel.org/20260401090520.24018-1-liwang@redhat.com
+      - 67b5e3603f69 "selftests/mm: hmm-tests: don't hardcode THP size to 2MB" (1/3)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260331063445.3551404-3-apopple@nvidia.com
+        - Link: https://lore.kernel.org/20260331063445.3551404-3-apopple@nvidia.com
         - Link: https://lore.kernel.org/linux-mm/8bd0396a-8997-4d2e-a13f-5aac033083d7@linux.dev/
     - series "selftests/mm: skip several tests when thp is not available", v8. (6 commits)
-      - 7675a6ab722b "selftests/mm/guard-regions: skip collapse test when thp not enabled" (0/6)
+      - a03c4000cb59 "selftests/mm/guard-regions: skip collapse test when thp not enabled" (0/6)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-1-chuhu@redhat.com
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-2-chuhu@redhat.com
-      - 7168e62e9765 "selftests/mm: soft-dirty: skip two tests when thp is not available" (1/6)
+        - Link: https://lore.kernel.org/20260402014543.1671131-1-chuhu@redhat.com
+        - Link: https://lore.kernel.org/20260402014543.1671131-2-chuhu@redhat.com
+      - 4e0ccb486c16 "selftests/mm: soft-dirty: skip two tests when thp is not available" (1/6)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-3-chuhu@redhat.com
-      - 6e48812da751 "selftests/mm: move write_file helper to vm_util" (2/6)
+        - Link: https://lore.kernel.org/20260402014543.1671131-3-chuhu@redhat.com
+      - ee542dcaa006 "selftests/mm: move write_file helper to vm_util" (2/6)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-4-chuhu@redhat.com
-      - 3cdaae808413 "selftests/mm/vm_util: robust write_file()" (3/6)
+        - Link: https://lore.kernel.org/20260402014543.1671131-4-chuhu@redhat.com
+      - 854cbcf4f945 "selftests/mm/vm_util: robust write_file()" (3/6)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-5-chuhu@redhat.com
-      - 7e2be8ef6b32 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (4/6)
+        - Link: https://lore.kernel.org/20260402014543.1671131-5-chuhu@redhat.com
+      - 1f31aa93bafe "selftests/mm: split_huge_page_test: skip the test when thp is not available" (4/6)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-6-chuhu@redhat.com
-      - 0688cfd4711e "selftests/mm: transhuge_stress: skip the test when thp not available" (5/6)
+        - Link: https://lore.kernel.org/20260402014543.1671131-6-chuhu@redhat.com
+      - 996d78be61f9 "selftests/mm: transhuge_stress: skip the test when thp not available" (5/6)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260402014543.1671131-7-chuhu@redhat.com
-    - 3c28a48a9179 "selftests: mm: skip charge_reserved_hugetlb without killall"
+        - Link: https://lore.kernel.org/20260402014543.1671131-7-chuhu@redhat.com
+    - 3e32402dee56 "selftests: mm: skip charge_reserved_hugetlb without killall"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260410044139.67480-1-create0818@163.com
-      - f52aa31ddbdd "selftests/mm: verify droppable mappings cannot be locked" (1/2)
+      - Link: https://lore.kernel.org/20260410044139.67480-1-create0818@163.com
+      - 049194569c5d "selftests/mm: verify droppable mappings cannot be locked" (1/2)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260402235933.10588-3-anthony.yznaga@oracle.com
+        - Link: https://lore.kernel.org/20260402235933.10588-3-anthony.yznaga@oracle.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

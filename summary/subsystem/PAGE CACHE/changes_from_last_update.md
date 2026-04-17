@@ -1,17 +1,31 @@
 - baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
 - mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - b9a834cad327 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+      - Authored by a maintainer, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20260413184314.3419945-1-willy@infradead.org"
+      - dropped "Link: https://lkml.kernel.org/r/20260413184314.3419945-1-willy@infradead.org"
+      - Link: https://lore.kernel.org/20260413184314.3419945-1-willy@infradead.org
 - mm-stable: 3 -> 3 commits (no change)
   - series: 0 (3) -> 0 (3) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 1 -> 2 commits
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - 09fa5afed486 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com"
+      - dropped "Link: https://lkml.kernel.org/r/20260326234629.840938-2-joannelkoong@gmail.com"
+      - Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
