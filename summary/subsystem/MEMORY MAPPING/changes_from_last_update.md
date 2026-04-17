@@ -16,61 +16,27 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 6 -> 6 commits (no change)
+- mm-unstable: 6 -> 5 commits
   - series: 2 (4) -> 2 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
     - reviewer, no role : 2 -> 2 commits (no change)
   - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - 439ec03e431d "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com"
-        - dropped "Link: https://lkml.kernel.org/r/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com"
-        - Link: https://lore.kernel.org/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-    - d4b3ca01a0d1 "tools/testing/selftests: add merge test for partial msealed range"
+    - 23d86d2d4d36 "tools/testing/selftests: add merge test for partial msealed range"
       - Authored by no role player, reviewed by nobody
-      - added "Link: : https://lore.kernel.org/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local"
-      - added "Link: https://lore.kernel.org/20260331073627.50010-1-ljs@kernel.org"
-      - dropped "Link: : https://lkml.kernel.org/r/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local"
-      - dropped "Link: https://lkml.kernel.org/r/20260331073627.50010-1-ljs@kernel.org"
+      - added "[rppt@kernel.org: fix inclusions, to fix handle_uprobe_upon_merged_vma()]"
+      - added "Link: : https://lore.kernel.org/ac_mCIUQWRAbuH8F@kernel.org"
+      - added "Signed-off-by: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: : https://lore.kernel.org/ac_mCIUQWRAbuH8F@kernel.org
       - Link: : https://lore.kernel.org/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
       - Link: https://lore.kernel.org/20260331073627.50010-1-ljs@kernel.org
+  - dropped commits
     - 1b0eea26d18c "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
       - Authored by a reviewer, reviewed by nobody
-      - added "Link: https://lore.kernel.org/ac_mCIUQWRAbuH8F@kernel.org"
-      - dropped "Link: https://lkml.kernel.org/r/ac_mCIUQWRAbuH8F@kernel.org"
       - Link: https://lore.kernel.org/ac_mCIUQWRAbuH8F@kernel.org
-    - series "mm/mprotect: micro-optimization work", v3. (2)
-      - ec6d820781d8 "mm/mprotect: move softleaf code out of the main function (0/2)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]"
-        - added "Link: https://lore.kernel.org/20260402141628.3367596-1-pfalcato@suse.de"
-        - added "Link: https://lore.kernel.org/20260402141628.3367596-2-pfalcato@suse.de"
-        - dropped "Link: https://lkml.kernel.org/r/20260402141628.3367596-2-pfalcato@suse.de"
-        - dropped "Link: https://lkml.kernel.org/r/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]"
-        - dropped "Link: https://lkml.kernel.org/r/20260402141628.3367596-1-pfalcato@suse.de"
-        - Link: https://lore.kernel.org/20260402141628.3367596-1-pfalcato@suse.de
-        - Link: https://lore.kernel.org/20260402141628.3367596-2-pfalcato@suse.de
-        - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
-        - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
-        - Link: https://lore.kernel.org/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]
-      - 736ba8c9f979 "mm/mprotect: special-case small folios when applying permissions (1/2)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260402141628.3367596-3-pfalcato@suse.de"
-        - dropped "Link: https://lkml.kernel.org/r/20260402141628.3367596-3-pfalcato@suse.de"
-        - Link: https://lore.kernel.org/20260402141628.3367596-3-pfalcato@suse.de
-    - series "fix MAP_DROPPABLE not supported errno". (2)
-      - c5f176a368f4 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260402235933.10588-2-anthony.yznaga@oracle.com"
-        - added "Link: https://lore.kernel.org/20260402235933.10588-1-anthony.yznaga@oracle.com"
-        - dropped "Link: https://lkml.kernel.org/r/20260402235933.10588-1-anthony.yznaga@oracle.com"
-        - dropped "Link: https://lkml.kernel.org/r/20260402235933.10588-2-anthony.yznaga@oracle.com"
-        - Link: https://lore.kernel.org/20260402235933.10588-1-anthony.yznaga@oracle.com
-        - Link: https://lore.kernel.org/20260402235933.10588-2-anthony.yznaga@oracle.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

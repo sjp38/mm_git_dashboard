@@ -48,57 +48,57 @@
     - reviewer, reviewer: 1 commits
     - reviewer, maintainer: 3 commits
   - full commits list
-      - fb0a0aad7c11 "mm: workingset: use folio_lruvec() in workingset_refault()" (1/33)
+      - 9dca8bdd7166 "mm: workingset: use folio_lruvec() in workingset_refault()" (1/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772711148.git.zhengqi.arch@bytedance.com
-      - 439ec03e431d "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 3468218c6439 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 0c724cb8e305 "mm: vmscan: prepare for the refactoring the move_folios_to_lru()" (3/33)
+      - 2af73003c0f3 "mm: vmscan: prepare for the refactoring the move_folios_to_lru()" (3/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772711148.git.zhengqi.arch@bytedance.com
-      - 58a83baebadb "mm: vmscan: refactor move_folios_to_lru()" (4/33)
+      - 8dbe277ca5d6 "mm: vmscan: refactor move_folios_to_lru()" (4/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772711148.git.zhengqi.arch@bytedance.com
-      - 82bf4b534ef4 "mm: mglru: prevent memory cgroup release in mglru" (13/33)
+      - 393a1d89d733 "mm: mglru: prevent memory cgroup release in mglru" (13/33)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/9d887662a9d39c425742dd8468e3123316bccfe3.1772711148.git.zhengqi.arch@bytedance.com
-      - 031d4fb9cc1f "mm: workingset: prevent memory cgroup release in lru_gen_eviction()" (15/33)
+      - 03b2472504cd "mm: workingset: prevent memory cgroup release in lru_gen_eviction()" (15/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772711148.git.zhengqi.arch@bytedance.com
-      - 7dd535ba82bb "mm: workingset: prevent lruvec release in workingset_refault()" (18/33)
+      - 46abb76c145b "mm: workingset: prevent lruvec release in workingset_refault()" (18/33)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772711148.git.zhengqi.arch@bytedance.com
-      - 4866ed020d15 "mm: workingset: prevent lruvec release in workingset_activation()" (21/33)
+      - 36985f7982ec "mm: workingset: prevent lruvec release in workingset_activation()" (21/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/c6130476affbba0a7d309a887c3df11e0167990b.1772711148.git.zhengqi.arch@bytedance.com
-      - ea10c06567a3 "mm: do not open-code lruvec lock" (22/33)
+      - 3780a537aab2 "mm: do not open-code lruvec lock" (22/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772711148.git.zhengqi.arch@bytedance.com
-      - 0cd6a2145d9c "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
+      - 99bfa5571772 "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
-      - df21bebc9583 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - d85c7e9626a3 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lore.kernel.org/20260324114937.28569-1-qi.zheng@linux.dev
         - Link: https://lore.kernel.org/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-      - 268fe3c66bb1 "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
+      - 70a15b58111c "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
-      - 69ff29bb7b1f "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers" (32/33)
+      - d9f96d81196f "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers" (32/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/2c90fc006d9d730331a3caeef96f7e5dabe2036d.1772711148.git.zhengqi.arch@bytedance.com
-      - 77fb6ef6f01e "mm: vmscan: fix dirty folios throttling on cgroup v1 for MGLRU" (3/4)
+      - 124e95293bbf "mm: vmscan: fix dirty folios throttling on cgroup v1 for MGLRU" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/3445af0f09e8ca945492e052e82594f8c4f2e2f6.1774606060.git.baolin.wang@linux.alibaba.com
-    - 8d5fff99cfbf "mm/vmscan: prevent MGLRU reclaim from pinning address space"
+    - 7cc45290921d "mm/vmscan: prevent MGLRU reclaim from pinning address space"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260322070843.941997-1-surenb@google.com
-    - 10874aed77d1 "mm: remove '!root_reclaim' checking in should_abort_scan()"
+    - bef5785f9860 "mm: remove '!root_reclaim' checking in should_abort_scan()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260318011558.1696310-1-zhaoyang.huang@unisoc.com
       - Link: https://lore.kernel.org/20260212032111.408865-1-zhaoyang.huang@unisoc.com
-    - f810de83a164 "mm/vmscan: avoid false-positive -Wuninitialized warning"
+    - 5046d9af77ef "mm/vmscan: avoid false-positive -Wuninitialized warning"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/all/CAJHvVcjtFW86o5FoQC8MMEXCHAC0FviggaQsd5EmiCHP+1fBpg@mail.gmail.com/
       - Link: https://lore.kernel.org/20260414065206.3236176-1-arnd@kernel.org

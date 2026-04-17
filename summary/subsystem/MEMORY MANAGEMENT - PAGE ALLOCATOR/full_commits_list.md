@@ -59,13 +59,13 @@
   - author/reviewer role stat
     - no role, maintainer: 3 commits
   - full commits list
-      - 439ec03e431d "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 3468218c6439 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 84381b22caa8 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - 1196396d48b4 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-    - cc7e7c1dbab7 "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
+    - 5b359d1d517a "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260331081312.123719-1-hao.ge@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

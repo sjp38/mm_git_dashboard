@@ -5,9 +5,9 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
     - no role, reviewer: 1 commits
-- mm-unstable: 13 total, 1 (4) series, 9 non-series commits
+- mm-unstable: 12 total, 1 (4) series, 8 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
+    - no role, nobody: 2 commits
     - no role, no role : 9 commits
     - no role, reviewer: 1 commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

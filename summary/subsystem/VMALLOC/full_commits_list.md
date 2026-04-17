@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 7c41c1c63956 "mm/vmalloc: take vmap_purge_lock in shrinker"
+    - 20d37200ac25 "mm/vmalloc: take vmap_purge_lock in shrinker"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260413192646.14683-1-urezki@gmail.com
 - mm-stable: 6 total, 1 (1) series, 5 non-series commits

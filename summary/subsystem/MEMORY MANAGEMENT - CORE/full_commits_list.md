@@ -17,7 +17,7 @@
   - author/reviewer role stat
     - maintainer, nobody: 1 commits
   - full commits list
-    - b9a834cad327 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+    - aba5a549c29f "mm: call ->free_folio() directly in folio_unmap_invalidate()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260413184314.3419945-1-willy@infradead.org
 - mm-stable: 104 total, 14 (89) series, 15 non-series commits
@@ -387,23 +387,24 @@
     - no role, reviewer: 1 commits
     - reviewer, no role : 2 commits
   - full commits list
-    - 1a0e1312ba7c "mm/vma: remove __vma_check_mmap_hook()"
+    - 7f7832c7fa0c "mm/vma: remove __vma_check_mmap_hook()"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260413105713.92625-1-ljs@kernel.org
-      - df21bebc9583 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
+      - d85c7e9626a3 "mm: vmscan: prepare for reparenting MGLRU folios" (25/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lore.kernel.org/20260324114937.28569-1-qi.zheng@linux.dev
         - Link: https://lore.kernel.org/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
-    - 884a3feff391 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+    - e40a08820b9c "mm/sparse: fix preinited section_mem_map clobbering on failure path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260331113724.2080833-1-songmuchun@bytedance.com
-    - 20bb75c94131 "userfaultfd: introduce vm_uffd_ops"
+    - 582e9723de31 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
+      - Link: : https://lore.kernel.org/adffgfM5ANxtPIEF@kernel.org
       - Link: https://lore.kernel.org/20260402041156.1377214-8-rppt@kernel.org
-    - 6cca3a7088bf "mm/sparse: fix comment for section map alignment"
+    - 9306c682099f "mm/sparse: fix comment for section map alignment"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260402102320.3617578-1-songmuchun@bytedance.com
-    - ca8ab0e0a7ab "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
+    - 1d9ec319990c "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
 - mm-new: 2 total, 0 (2) series, 0 non-series commits
@@ -411,10 +412,10 @@
     - no role, nobody: 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 8568f268a518 "mm/sparse: fix race on mem_section->usage in pfn walkers" (2/8)
+      - f3080787ad36 "mm/sparse: fix race on mem_section->usage in pfn walkers" (2/8)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260415022326.53218-1-songmuchun@bytedance.com
-      - f05735e5e7a9 "mm/vmstat: spread vmstat_update requeue across the stat interval" (3/8)
+      - ee03ca7d1cb1 "mm/vmstat: spread vmstat_update requeue across the stat interval" (3/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 4 total, 0 (1) series, 3 non-series commits
@@ -441,7 +442,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 7f4751577786 "kernel/fork: validate exit_signal in kernel_clone()"
+    - a2af6ebaec35 "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by a reviewer
       - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
       - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com

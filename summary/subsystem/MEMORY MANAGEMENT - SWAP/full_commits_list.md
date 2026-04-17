@@ -92,33 +92,33 @@
     - reviewer, reviewer: 1 commits
     - reviewer, maintainer: 3 commits
   - full commits list
-      - 439ec03e431d "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - 3468218c6439 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 3ff4c21e284a "mm: page_io: prevent memory cgroup release in page_io module" (11/33)
+      - b00cf682dfa1 "mm: page_io: prevent memory cgroup release in page_io module" (11/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/7c3708358412fb02c482d0985feb5e9513a863ef.1772711148.git.zhengqi.arch@bytedance.com
-      - 7373ca02303e "mm: swap: prevent lruvec release in lru_gen_clear_refs()" (20/33)
+      - b4cae6f743a8 "mm: swap: prevent lruvec release in lru_gen_clear_refs()" (20/33)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/986cd26227191a48a7c34a2a15812d361f4ebd53.1772711148.git.zhengqi.arch@bytedance.com
-      - 84381b22caa8 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - 1196396d48b4 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-      - 0cd6a2145d9c "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
+      - 99bfa5571772 "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
-      - 268fe3c66bb1 "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
+      - 70a15b58111c "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
-    - 203bcfd44ca8 "mm/page_io: use sio->len for PSWPIN accounting in sio_read_complete()"
+    - 766d58cae5d0 "mm/page_io: use sio->len for PSWPIN accounting in sio_read_complete()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260402061408.36119-1-devnexen@gmail.com
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - 2d341c20d0fd "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - 526f14c05a7f "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - db2a1695b2b6 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - cdc8248bc14a "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

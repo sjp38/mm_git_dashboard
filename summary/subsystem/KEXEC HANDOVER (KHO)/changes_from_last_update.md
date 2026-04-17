@@ -8,39 +8,31 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
 - mm-unstable: 5 -> 5 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+  - series: 1 (4) -> 1 (5)
+    - no role, no role : 3 -> 0 commits
+    - no role, maintainer: 2 -> 5 commits
   - changed commits
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
-      - 787fdadec884 "kho: add size parameter to kho_add_subtree() (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260316-kho-v9-1-ed6dcd951988@debian.org"
-        - added "Link: https://lore.kernel.org/20260323110747.193569-1-duanchenghao@kylinos.cn"
-        - dropped "Link: https://lkml.kernel.org/r/20260316-kho-v9-1-ed6dcd951988@debian.org"
-        - dropped "Link: https://lkml.kernel.org/r/20260323110747.193569-1-duanchenghao@kylinos.cn"
+      - c16e9d6e19cb "kho: add size parameter to kho_add_subtree() (0/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
         - Link: https://lore.kernel.org/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lore.kernel.org/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - 90be5bb4266c "kho: rename fdt parameter to blob in kho_add/remove_subtree() (1/6)"
+      - dfa729fb514d "kho: persist blob size in KHO FDT (2/6)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260316-kho-v9-2-ed6dcd951988@debian.org"
-        - dropped "Link: https://lkml.kernel.org/r/20260316-kho-v9-2-ed6dcd951988@debian.org"
-        - Link: https://lore.kernel.org/20260316-kho-v9-2-ed6dcd951988@debian.org
-      - ea8004fe7a81 "kho: persist blob size in KHO FDT (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260316-kho-v9-3-ed6dcd951988@debian.org"
-        - dropped "Link: https://lkml.kernel.org/r/20260316-kho-v9-3-ed6dcd951988@debian.org"
+        - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
+        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
         - Link: https://lore.kernel.org/20260316-kho-v9-3-ed6dcd951988@debian.org
-      - 787e9af77c20 "kho: kexec-metadata: track previous kernel chain (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260316-kho-v9-5-ed6dcd951988@debian.org"
-        - dropped "Link: https://lkml.kernel.org/r/20260316-kho-v9-5-ed6dcd951988@debian.org"
+      - 95ce39a461f2 "kho: kexec-metadata: track previous kernel chain (4/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "[leitao@debian.org: call kho_kexec_metadata_init() for both boot paths]"
+        - added "Link: : https://lore.kernel.org/20260409-kho_fix_merge_issue-v1-1-710c84ceaa85@debian.org"
+        - added "Link: : https://lore.kernel.org/all/20260309-kho-v8-5-c3abcf4ac750@debian.org/ [1]"
+        - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
+        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - Link: : https://lore.kernel.org/all/20260309-kho-v8-5-c3abcf4ac750@debian.org/ [1]
+        - Link: : https://lore.kernel.org/20260409-kho_fix_merge_issue-v1-1-710c84ceaa85@debian.org
         - Link: https://lore.kernel.org/20260316-kho-v9-5-ed6dcd951988@debian.org
-    - 26fc2c514af4 "kho: document kexec-metadata tracking feature"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://lore.kernel.org/20260316-kho-v9-6-ed6dcd951988@debian.org"
-      - dropped "Link: https://lkml.kernel.org/r/20260316-kho-v9-6-ed6dcd951988@debian.org"
-      - Link: https://lore.kernel.org/20260316-kho-v9-6-ed6dcd951988@debian.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -4,12 +4,6 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - ecb31cf542ff "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com"
-      - dropped "Link: https://lkml.kernel.org/r/20260322052120.14021-1-devnexen@gmail.com"
-      - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 17 -> 17 commits (no change)
   - series: 2 (14) -> 2 (14) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
@@ -21,16 +15,12 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - 20bb75c94131 "userfaultfd: introduce vm_uffd_ops"
+    - 582e9723de31 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260402041156.1377214-8-rppt@kernel.org"
-      - dropped "Link: https://lkml.kernel.org/r/20260402041156.1377214-8-rppt@kernel.org"
+      - added "[rppt@kernel.org: relocate VM_DROPPABLE test, per Tal]"
+      - added "Link: : https://lore.kernel.org/adffgfM5ANxtPIEF@kernel.org"
+      - Link: : https://lore.kernel.org/adffgfM5ANxtPIEF@kernel.org
       - Link: https://lore.kernel.org/20260402041156.1377214-8-rppt@kernel.org
-    - 588e444093ee "mm/hugetlb: fix early boot crash on parameters without '=' separator"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://lore.kernel.org/20260409105437.108686-4-thorsten.blum@linux.dev"
-      - dropped "Link: https://lkml.kernel.org/r/20260409105437.108686-4-thorsten.blum@linux.dev"
-      - Link: https://lore.kernel.org/20260409105437.108686-4-thorsten.blum@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

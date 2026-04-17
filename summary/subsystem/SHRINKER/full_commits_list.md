@@ -21,7 +21,7 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "Eliminate Dying Memory Cgroup", v6. (33 commits)
-      - 8da407c5965e "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
+      - 523ac8e20006 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772711148.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
