@@ -4,14 +4,30 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-stable: 6 -> 6 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
+- mm-stable: 6 -> 9 commits
+  - series: 0 (3) -> 0 (4)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 4 -> 6 commits
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 3 -> 3 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - 53050890802e "mm: migrate: prevent memory cgroup release in folio_migrate_mapping() (12/33)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
+    - 6fae274ce0e3 "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260401005702.7096-1-liu.yun@linux.dev
+      - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
+    - 57294a97bdd1 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260212014611.416695-1-dave@stgolabs.net
+- mm-unstable: 3 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 2 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

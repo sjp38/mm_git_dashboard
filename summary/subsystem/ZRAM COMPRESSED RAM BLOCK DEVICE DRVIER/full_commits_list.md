@@ -1,11 +1,11 @@
 - baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 10 total, 1 (6) series, 4 non-series commits
+- mm-stable: 12 total, 1 (6) series, 6 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 3 commits
     - maintainer, nobody: 5 commits
-    - maintainer, no role : 3 commits
+    - maintainer, no role : 4 commits
   - full commits list
     - c09fb53d293a "zram: use statically allocated compression algorithm names"
       - Authored by no role player, reviewed by a maintainer
@@ -40,17 +40,13 @@
     - cba82993308d "zram: change scan_slots to return void"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260317032349.753645-1-senozhatsky@chromium.org
-- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-    - maintainer, no role : 1 commits
-  - full commits list
-    - 18f48870a7fe "zram: do not forget to endio for partial discard requests"
+    - e3668b371329 "zram: do not forget to endio for partial discard requests"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260331074255.777019-1-senozhatsky@chromium.org
-    - ee57526a455e "zram: reject unrecognized type= values in recompress_store()"
+    - 2f529e73d720 "zram: reject unrecognized type= values in recompress_store()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260407153027.42425-1-astellman@stellman-greene.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

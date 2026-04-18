@@ -7,12 +7,13 @@
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 20 total, 2 (15) series, 5 non-series commits
+- mm-stable: 27 total, 2 (21) series, 6 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, reviewer: 2 commits
-    - no role, maintainer: 3 commits
-    - reviewer, maintainer: 1 commits
+    - no role, no role : 4 commits
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 5 commits
+    - reviewer, reviewer: 1 commits
+    - reviewer, maintainer: 2 commits
     - maintainer, nobody: 1 commits
     - maintainer, maintainer: 11 commits
   - full commits list
@@ -84,41 +85,37 @@
     - 9acbe135588e "mm/swap: fix swap cache memcg accounting"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
-- mm-unstable: 9 total, 1 (8) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 2 commits
-    - reviewer, reviewer: 1 commits
-    - reviewer, maintainer: 3 commits
-  - full commits list
-      - 3468218c6439 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - db128b2c6b7d "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - b00cf682dfa1 "mm: page_io: prevent memory cgroup release in page_io module" (11/33)
+      - 1f6f80c2dbb4 "mm: page_io: prevent memory cgroup release in page_io module" (11/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/7c3708358412fb02c482d0985feb5e9513a863ef.1772711148.git.zhengqi.arch@bytedance.com
-      - b4cae6f743a8 "mm: swap: prevent lruvec release in lru_gen_clear_refs()" (20/33)
+      - 74e225ffaac7 "mm: swap: prevent lruvec release in lru_gen_clear_refs()" (20/33)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/986cd26227191a48a7c34a2a15812d361f4ebd53.1772711148.git.zhengqi.arch@bytedance.com
-      - 1196396d48b4 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
+      - 31b54a5e8916 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock" (23/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-      - 99bfa5571772 "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
+      - 07a6e9a2c199 "mm: vmscan: prepare for reparenting traditional LRU folios" (24/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
-      - 70a15b58111c "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
+      - 7404bd37cfbe "mm: workingset: use lruvec_lru_size() to get the number of lru pages" (27/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
-    - 766d58cae5d0 "mm/page_io: use sio->len for PSWPIN accounting in sio_read_complete()"
+    - df620ec4d4d7 "mm/page_io: use sio->len for PSWPIN accounting in sio_read_complete()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260402061408.36119-1-devnexen@gmail.com
+- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, maintainer: 2 commits
+  - full commits list
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - 526f14c05a7f "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - f62db8dbf628 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - cdc8248bc14a "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - 306afb4fc253 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

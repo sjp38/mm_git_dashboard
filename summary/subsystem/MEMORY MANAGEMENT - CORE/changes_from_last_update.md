@@ -5,12 +5,13 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-stable: 104 -> 104 commits (no change)
-  - series: 14 (89) -> 14 (89) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 71 -> 71 commits (no change)
-    - no role, reviewer: 20 -> 20 commits (no change)
+- mm-stable: 104 -> 110 commits
+  - series: 14 (89) -> 14 (90)
+    - no role, nobody: 3 -> 4 commits
+    - no role, no role : 71 -> 73 commits
+    - no role, reviewer: 20 -> 21 commits
     - no role, maintainer: 8 -> 8 commits (no change)
+    - reviewer, no role : 0 -> 2 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - changed commits
@@ -27,23 +28,48 @@
       - Authored by no role player, reviewed by no role player
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260325-pagewalk-check-pmd-refault-v2-1-707bff33bc60@akamai.com
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, no role : 2 -> 2 commits (no change)
-  - changed commits
-    - 582e9723de31 "userfaultfd: introduce vm_uffd_ops"
+    - 3d3544a6c996 "mm/vma: remove __vma_check_mmap_hook()"
+      - Authored by a reviewer, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260413105713.92625-1-ljs@kernel.org
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - f304652609ea "mm: vmscan: prepare for reparenting MGLRU folios (25/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: : https://lore.kernel.org/20260324114937.28569-1-qi.zheng@linux.dev
+        - Link: https://lore.kernel.org/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
+    - 7cf6d940f403 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260331113724.2080833-1-songmuchun@bytedance.com
+    - 0f48947c4232 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
-      - added "[rppt@kernel.org: relocate VM_DROPPABLE test, per Tal]"
-      - added "Link: : https://lore.kernel.org/adffgfM5ANxtPIEF@kernel.org"
+      - branch: mm-unstable -> mm-stable
       - Link: : https://lore.kernel.org/adffgfM5ANxtPIEF@kernel.org
       - Link: https://lore.kernel.org/20260402041156.1377214-8-rppt@kernel.org
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - 77c368f057e1 "mm/sparse: fix comment for section map alignment"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260402102320.3617578-1-songmuchun@bytedance.com
+    - 2b19bf05719b "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
+- mm-unstable: 6 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - reviewer, no role : 2 -> 0 commits
+- mm-new: 2 -> 1 commits
+  - series: 0 (2) -> 0 (1)
+    - no role, nobody: 1 -> 0 commits
     - no role, reviewer: 1 -> 1 commits (no change)
+  - dropped commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - f3080787ad36 "mm/sparse: fix race on mem_section->usage in pfn walkers (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260415022326.53218-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 4 -> 4 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

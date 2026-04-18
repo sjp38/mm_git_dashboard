@@ -3,15 +3,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 10 -> 10 commits (no change)
+- mm-stable: 10 -> 12 commits
   - series: 1 (6) -> 1 (6) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 3 commits
     - maintainer, nobody: 5 -> 5 commits (no change)
-    - maintainer, no role : 3 -> 3 commits (no change)
-- mm-unstable: 2 -> 2 commits (no change)
+    - maintainer, no role : 3 -> 4 commits
+  - changed commits
+    - e3668b371329 "zram: do not forget to endio for partial discard requests"
+      - Authored by a maintainer, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260331074255.777019-1-senozhatsky@chromium.org
+    - 2f529e73d720 "zram: reject unrecognized type= values in recompress_store()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260407153027.42425-1-astellman@stellman-greene.com
+- mm-unstable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, no role : 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

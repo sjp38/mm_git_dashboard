@@ -4,36 +4,89 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-stable: 21 -> 21 commits (no change)
-  - series: 0 (10) -> 0 (10) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 8 -> 8 commits (no change)
-    - maintainer, nobody: 3 -> 3 commits (no change)
+- mm-stable: 21 -> 35 commits
+  - series: 0 (10) -> 2 (21)
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 4 -> 9 commits
+    - no role, reviewer: 1 -> 5 commits
+    - no role, maintainer: 8 -> 10 commits
+    - maintainer, nobody: 3 -> 5 commits
     - maintainer, no role : 3 -> 3 commits (no change)
-- mm-unstable: 16 -> 15 commits
-  - series: 2 (11) -> 2 (12)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
-    - maintainer, nobody: 2 -> 2 commits (no change)
   - changed commits
-    - 23d86d2d4d36 "tools/testing/selftests: add merge test for partial msealed range"
+    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
+      - 4916ae386760 "kho: rename fdt parameter to blob in kho_add/remove_subtree() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260316-kho-v9-2-ed6dcd951988@debian.org
+      - e524feaad546 "kho: document kexec-metadata tracking feature (5/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260316-kho-v9-6-ed6dcd951988@debian.org
+    - series "Docs/admin-guide/mm/damon: warn commit_inputs vs other params race". (2)
+      - 0beba407d458 "Docs/admin-guide/mm/damon/reclaim: warn commit_inputs vs param updates race (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260329153052.46657-2-sj@kernel.org
+        - Link: https://lore.kernel.org/20260319161620.189392-3-objecting@objecting.org [1]
+        - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [3]
+      - 0c13ed77dd2b "Docs/admin-guide/mm/damon/lru_sort: warn commit_inputs vs param updates race (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260329153052.46657-3-sj@kernel.org
+        - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [1]
+    - 84f4928446e6 "tools/testing/selftests: add merge test for partial msealed range"
       - Authored by no role player, reviewed by nobody
-      - added "[rppt@kernel.org: fix inclusions, to fix handle_uprobe_upon_merged_vma()]"
-      - added "Link: : https://lore.kernel.org/ac_mCIUQWRAbuH8F@kernel.org"
-      - added "Signed-off-by: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - branch: mm-unstable -> mm-stable
       - Link: : https://lore.kernel.org/ac_mCIUQWRAbuH8F@kernel.org
       - Link: : https://lore.kernel.org/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
       - Link: https://lore.kernel.org/20260331073627.50010-1-ljs@kernel.org
-  - dropped commits
-    - 1b0eea26d18c "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/ac_mCIUQWRAbuH8F@kernel.org
+    - 047a6d494033 "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260401090520.24018-1-liwang@redhat.com
+    - series "Minor hmm_test fixes and cleanups". (3)
+      - f9d7975c52c0 "selftests/mm: hmm-tests: don't hardcode THP size to 2MB (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260331063445.3551404-3-apopple@nvidia.com
+        - Link: https://lore.kernel.org/linux-mm/8bd0396a-8997-4d2e-a13f-5aac033083d7@linux.dev/
+    - series "selftests/mm: skip several tests when thp is not available", v8. (6)
+      - fb0fca46b9b4 "selftests/mm/guard-regions: skip collapse test when thp not enabled (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402014543.1671131-1-chuhu@redhat.com
+        - Link: https://lore.kernel.org/20260402014543.1671131-2-chuhu@redhat.com
+      - 929d5fbf1a00 "selftests/mm: soft-dirty: skip two tests when thp is not available (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402014543.1671131-3-chuhu@redhat.com
+      - 710d2f307945 "selftests/mm: move write_file helper to vm_util (2/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402014543.1671131-4-chuhu@redhat.com
+      - a784a3a39cc5 "selftests/mm/vm_util: robust write_file() (3/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402014543.1671131-5-chuhu@redhat.com
+      - dad4964a34c2 "selftests/mm: split_huge_page_test: skip the test when thp is not available (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402014543.1671131-6-chuhu@redhat.com
+      - cfe9a446f519 "selftests/mm: transhuge_stress: skip the test when thp not available (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402014543.1671131-7-chuhu@redhat.com
+    - d432e8847f58 "selftests: mm: skip charge_reserved_hugetlb without killall"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260410044139.67480-1-create0818@163.com
+- mm-unstable: 15 -> 1 commits
+  - series: 2 (12) -> 0 (1)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 6 -> 1 commits
+    - no role, reviewer: 4 -> 0 commits
+    - no role, maintainer: 2 -> 0 commits
+    - maintainer, nobody: 2 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

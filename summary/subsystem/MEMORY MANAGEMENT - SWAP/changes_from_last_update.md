@@ -4,12 +4,13 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 20 -> 20 commits (no change)
-  - series: 2 (15) -> 2 (15) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 20 -> 27 commits
+  - series: 2 (15) -> 2 (21)
+    - no role, no role : 2 -> 4 commits
+    - no role, reviewer: 2 -> 3 commits
+    - no role, maintainer: 3 -> 5 commits
+    - reviewer, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 1 -> 2 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 11 -> 11 commits (no change)
   - changed commits
@@ -17,13 +18,42 @@
       - Authored by no role player, reviewed by a maintainer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260320050601.1833108-1-alex@ghiti.fr
-- mm-unstable: 9 -> 9 commits (no change)
-  - series: 1 (8) -> 1 (8) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 3 -> 3 commits (no change)
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - db128b2c6b7d "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
+      - 1f6f80c2dbb4 "mm: page_io: prevent memory cgroup release in page_io module (11/33)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/7c3708358412fb02c482d0985feb5e9513a863ef.1772711148.git.zhengqi.arch@bytedance.com
+      - 74e225ffaac7 "mm: swap: prevent lruvec release in lru_gen_clear_refs() (20/33)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/986cd26227191a48a7c34a2a15812d361f4ebd53.1772711148.git.zhengqi.arch@bytedance.com
+      - 31b54a5e8916 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock (23/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
+      - 07a6e9a2c199 "mm: vmscan: prepare for reparenting traditional LRU folios (24/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
+      - 7404bd37cfbe "mm: workingset: use lruvec_lru_size() to get the number of lru pages (27/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
+    - df620ec4d4d7 "mm/page_io: use sio->len for PSWPIN accounting in sio_read_complete()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260402061408.36119-1-devnexen@gmail.com
+- mm-unstable: 9 -> 2 commits
+  - series: 1 (8) -> 1 (2)
+    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 2 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 3 -> 2 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

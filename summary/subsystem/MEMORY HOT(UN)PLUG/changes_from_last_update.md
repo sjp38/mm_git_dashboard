@@ -10,9 +10,14 @@
     - no role, no role : 6 -> 6 commits (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+  - dropped commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - f3080787ad36 "mm/sparse: fix race on mem_section->usage in pfn walkers (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260415022326.53218-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

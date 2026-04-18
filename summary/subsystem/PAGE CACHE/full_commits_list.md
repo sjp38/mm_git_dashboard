@@ -14,7 +14,7 @@
   - author/reviewer role stat
     - maintainer, nobody: 1 commits
   - full commits list
-    - aba5a549c29f "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+    - b1a7b0ad5c48 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260413184314.3419945-1-willy@infradead.org
 - mm-stable: 3 total, 0 (3) series, 0 non-series commits
@@ -35,7 +35,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 21b656cbbe76 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - d3c31c7ab9d8 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

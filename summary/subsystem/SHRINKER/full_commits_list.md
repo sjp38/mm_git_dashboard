@@ -1,9 +1,10 @@
 - baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 3 total, 0 (1) series, 2 non-series commits
+- mm-stable: 4 total, 1 (2) series, 2 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 3 commits
+    - no role, maintainer: 1 commits
   - full commits list
     - 260d70819c37 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
       - Authored by no role player, reviewed by a reviewer
@@ -16,17 +17,14 @@
       - Authored by no role player, reviewed by a reviewer
       - Link: : https://lkml.kernel.org/r/20260309-cgroup-ml-nokmem-shrinker-v2-1-3e7a7eefb6c9@suse.com
       - Link: https://lkml.kernel.org/r/20260225-cgroup-ml-nokmem-shrinker-v1-1-d703899bdda4@suse.com
-- mm-unstable: 1 total, 1 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
     - series "Eliminate Dying Memory Cgroup", v6. (33 commits)
-      - 523ac8e20006 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
+      - f95fcd7f2808 "mm: memcontrol: remove dead code of checking parent memory cgroup" (0/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772711148.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
         - Link: https://lwn.net/Articles/895431/ [2]
         - Link: https://github.com/systemd/systemd/pull/36827 [3]
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -12,18 +12,19 @@
     - no role, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-stable: 369 -> 369 commits (no change)
-  - series: 39 (280) -> 39 (280) (no change)
-    - no role, nobody: 22 -> 22 commits (no change)
-    - no role, no role : 137 -> 137 commits (no change)
-    - no role, reviewer: 49 -> 49 commits (no change)
-    - no role, maintainer: 47 -> 47 commits (no change)
-    - reviewer, reviewer: 6 -> 6 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 74 -> 74 commits (no change)
-    - maintainer, no role : 14 -> 14 commits (no change)
+- mm-stable: 369 -> 490 commits
+  - series: 39 (280) -> 53 (362)
+    - no role, nobody: 22 -> 26 commits
+    - no role, no role : 137 -> 172 commits
+    - no role, reviewer: 49 -> 61 commits
+    - no role, maintainer: 47 -> 88 commits
+    - reviewer, no role : 0 -> 4 commits
+    - reviewer, reviewer: 6 -> 7 commits
+    - reviewer, maintainer: 1 -> 4 commits
+    - maintainer, nobody: 74 -> 81 commits
+    - maintainer, no role : 14 -> 27 commits
     - maintainer, reviewer: 3 -> 3 commits (no change)
-    - maintainer, maintainer: 16 -> 16 commits (no change)
+    - maintainer, maintainer: 16 -> 17 commits
   - changed commits
     - 4ff07459db88 "mm/huge_memory: fix folio isn't locked in softleaf_to_folio()"
       - Authored by no role player, reviewed by no role player
@@ -71,99 +72,573 @@
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-hotfixes-stable -> mm-stable
       - Link: https://lkml.kernel.org/r/20260327173104.322405-1-ljs@kernel.org
-- mm-unstable: 134 -> 128 commits
-  - series: 16 (86) -> 16 (86) (no change)
-    - no role, nobody: 9 -> 4 commits
-    - no role, no role : 40 -> 36 commits
-    - no role, reviewer: 14 -> 14 commits (no change)
-    - no role, maintainer: 38 -> 42 commits
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, no role : 4 -> 4 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 7 -> 7 commits (no change)
-    - maintainer, no role : 14 -> 14 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
-      - c16e9d6e19cb "kho: add size parameter to kho_add_subtree() (0/6)"
+    - 3d3544a6c996 "mm/vma: remove __vma_check_mmap_hook()"
+      - Authored by a reviewer, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260413105713.92625-1-ljs@kernel.org
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - f95fcd7f2808 "mm: memcontrol: remove dead code of checking parent memory cgroup (0/33)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772711148.git.zhengqi.arch@bytedance.com
+        - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
+        - Link: https://lwn.net/Articles/895431/ [2]
+        - Link: https://github.com/systemd/systemd/pull/36827 [3]
+      - 2b33c342f7d4 "mm: workingset: use folio_lruvec() in workingset_refault() (1/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/11bd2fbbf082f4f7972a1113ca42a61fbe2876a9.1772711148.git.zhengqi.arch@bytedance.com
+      - db128b2c6b7d "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
+      - 676496738b7e "mm: vmscan: prepare for the refactoring the move_folios_to_lru() (3/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/b3a202f1787b0857bb6cbe059fffb8edefaf67b7.1772711148.git.zhengqi.arch@bytedance.com
+      - a760b64ee088 "mm: vmscan: refactor move_folios_to_lru() (4/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/6f1dac88b61e2e3cb7a3e90bacdf06b654acfc15.1772711148.git.zhengqi.arch@bytedance.com
+      - aa01ec1325e2 "mm: memcontrol: allocate object cgroup for non-kmem case (5/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/b77274aa8e3f37c419bedf4782943fd5885dda82.1772711148.git.zhengqi.arch@bytedance.com
+      - d5aa8c1d136e "mm: memcontrol: return root object cgroup for root memory cgroup (6/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/e9c3f40ba7681d9753372d4ee2ac7a0216848b95.1772711148.git.zhengqi.arch@bytedance.com
+      - af86590786d7 "mm: memcontrol: prevent memory cgroup release in get_mem_cgroup_from_folio() (7/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/a5a64c6173a566bd21534606aeaaa9220cb1366d.1772711148.git.zhengqi.arch@bytedance.com
+      - d10adce2c1a8 "buffer: prevent memory cgroup release in folio_alloc_buffers() (8/33)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/d6d48fdcf329c549373ac0a1c80fd9f38067e34e.1772711148.git.zhengqi.arch@bytedance.com
+      - 49717c7bd6b8 "writeback: prevent memory cgroup release in writeback module (9/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/645f99bc344575417f67def3744f975596df2793.1772711148.git.zhengqi.arch@bytedance.com
+      - f995da5341c1 "mm: memcontrol: prevent memory cgroup release in count_memcg_folio_events() (10/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/dea6aa0389367f7fd6b715c8837a2cf7506bd889.1772711148.git.zhengqi.arch@bytedance.com
+      - 1f6f80c2dbb4 "mm: page_io: prevent memory cgroup release in page_io module (11/33)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/7c3708358412fb02c482d0985feb5e9513a863ef.1772711148.git.zhengqi.arch@bytedance.com
+      - 53050890802e "mm: migrate: prevent memory cgroup release in folio_migrate_mapping() (12/33)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
+      - c29f90a2dac1 "mm: mglru: prevent memory cgroup release in mglru (13/33)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/9d887662a9d39c425742dd8468e3123316bccfe3.1772711148.git.zhengqi.arch@bytedance.com
+      - c863aded26d1 "mm: memcontrol: prevent memory cgroup release in mem_cgroup_swap_full() (14/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/21d1abab7342615745ea4c18a88237335ab44d13.1772711148.git.zhengqi.arch@bytedance.com
+      - b3ca98297cd9 "mm: workingset: prevent memory cgroup release in lru_gen_eviction() (15/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/f37e8ae2d84ddc690813d834cd75735d52d1bc78.1772711148.git.zhengqi.arch@bytedance.com
+      - 681d325b23dc "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}() (16/33)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
+      - cf4d6ad54ba1 "mm: zswap: prevent memory cgroup release in zswap_compress() (17/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com
+      - fe132152c885 "mm: workingset: prevent lruvec release in workingset_refault() (18/33)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/e3a8c19a9b18422b43213f6c89c451c5b6ca1577.1772711148.git.zhengqi.arch@bytedance.com
+      - d5ddaf4341f7 "mm: zswap: prevent lruvec release in zswap_folio_swapin() (19/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com
+      - 74e225ffaac7 "mm: swap: prevent lruvec release in lru_gen_clear_refs() (20/33)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/986cd26227191a48a7c34a2a15812d361f4ebd53.1772711148.git.zhengqi.arch@bytedance.com
+      - 507382970b6a "mm: workingset: prevent lruvec release in workingset_activation() (21/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/c6130476affbba0a7d309a887c3df11e0167990b.1772711148.git.zhengqi.arch@bytedance.com
+      - d14f87858178 "mm: do not open-code lruvec lock (22/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/2d0bafe7564e17ece46dfd58197af22ce57017dc.1772711148.git.zhengqi.arch@bytedance.com
+      - 31b54a5e8916 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock (23/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
+      - 07a6e9a2c199 "mm: vmscan: prepare for reparenting traditional LRU folios (24/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/a92d217a9fc82bd0c401210204a095caaf615b1c.1772711148.git.zhengqi.arch@bytedance.com
+      - f304652609ea "mm: vmscan: prepare for reparenting MGLRU folios (25/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: : https://lore.kernel.org/20260324114937.28569-1-qi.zheng@linux.dev
+        - Link: https://lore.kernel.org/e75050354cdbc42221a04f7cf133292b61105548.1772711148.git.zhengqi.arch@bytedance.com
+      - 131adcc774bb "mm: memcontrol: refactor memcg_reparent_objcgs() (26/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/2e5696db1993e593a51004c1dacedbc261689629.1772711148.git.zhengqi.arch@bytedance.com
+      - 7404bd37cfbe "mm: workingset: use lruvec_lru_size() to get the number of lru pages (27/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/b1d448c667a8fb377c3390d9aba43bdb7e4d5739.1772711148.git.zhengqi.arch@bytedance.com
+      - 5371e350fda7 "mm: memcontrol: refactor mod_memcg_state() and mod_memcg_lruvec_state() (28/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/7f8bd3aacec2270b9453428fc8585cca9f10751e.1772711148.git.zhengqi.arch@bytedance.com
+      - 8285917d6f38 "mm: memcontrol: prepare for reparenting non-hierarchical stats (29/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/e862995c45a7101a541284b6ebee5e5c32c89066.1772711148.git.zhengqi.arch@bytedance.com
+      - 01b9da291c49 "mm: memcontrol: convert objcg to be per-memcg per-node type (30/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: : https://lore.kernel.org/20260309112939.31937-1-qi.zheng@linux.dev
+        - Link: : https://lore.kernel.org/20260322193631.45457-1-devnexen@gmail.com
+        - Link: : https://lore.kernel.org/20260323063007.7783-1-devnexen@gmail.com
+        - Link: https://lore.kernel.org/56c04b1c5d54f75ccdc12896df6c1ca35403ecc3.1772711148.git.zhengqi.arch@bytedance.com
+      - f1cf8d2f36dc "mm: memcontrol: eliminate the problem of dying memory cgroup for LRU folios (31/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/80cb7af198dc6f2173fe616d1207a4c315ece141.1772711148.git.zhengqi.arch@bytedance.com
+      - 0a98e1396342 "mm: lru: add VM_WARN_ON_ONCE_FOLIO to lru maintenance helpers (32/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/2c90fc006d9d730331a3caeef96f7e5dabe2036d.1772711148.git.zhengqi.arch@bytedance.com
+    - series "fix unexpected type conversions and potential overflows", v3. (3)
+      - 616795d7db00 "mm: memcontrol: correct the type of stats_updates to unsigned long (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/cover.1774604356.git.zhengqi.arch@bytedance.com
+        - Link: https://lore.kernel.org/a5b0b468e7b4fe5f26c50e36d5d016f16d92f98f.1774604356.git.zhengqi.arch@bytedance.com
+        - Link: https://lore.kernel.org/all/acDxaEgnqPI-Z4be@hyeyoo/ [1]
+      - 85358bad68f5 "mm: memcontrol: change val type to long in __mod_memcg_{lruvec_}state() (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/70a9440e49c464b4dca88bcabc6b491bd335c9f0.1774604356.git.zhengqi.arch@bytedance.com
+      - 1c514a2c6e4c "mm: memcontrol: correct the nr_pages parameter type of mem_cgroup_update_lru_size() (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/fd4140de44fa0a3978e4e2426731187fe8625f0b.1774604356.git.zhengqi.arch@bytedance.com
+    - 34c45804ae05 "MAINTAINERS: update MGLRU entry to reflect current status"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260326185629.355476-1-ljs@kernel.org
+    - e9d973ef18b0 "mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260323-kmemleak_report-v1-1-ba2cdd9c11b9@debian.org
+    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
+      - d9e4142e7635 "kho: add size parameter to kho_add_subtree() (0/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lore.kernel.org/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - dfa729fb514d "kho: persist blob size in KHO FDT (2/6)"
+      - 4916ae386760 "kho: rename fdt parameter to blob in kho_add/remove_subtree() (1/6)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
-        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260316-kho-v9-2-ed6dcd951988@debian.org
+      - 85e41392820f "kho: persist blob size in KHO FDT (2/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/20260316-kho-v9-3-ed6dcd951988@debian.org
-      - fe78dada494b "kho: fix kho_in_debugfs_init() to handle non-FDT blobs (3/6)"
+      - 062dd306d99c "kho: fix kho_in_debugfs_init() to handle non-FDT blobs (3/6)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
-        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/20260316-kho-v9-4-ed6dcd951988@debian.org
-      - 95ce39a461f2 "kho: kexec-metadata: track previous kernel chain (4/6)"
+      - 76aa46b9e404 "kho: kexec-metadata: track previous kernel chain (4/6)"
         - Authored by no role player, reviewed by a maintainer
-        - added "[leitao@debian.org: call kho_kexec_metadata_init() for both boot paths]"
-        - added "Link: : https://lore.kernel.org/20260409-kho_fix_merge_issue-v1-1-710c84ceaa85@debian.org"
-        - added "Link: : https://lore.kernel.org/all/20260309-kho-v8-5-c3abcf4ac750@debian.org/ [1]"
-        - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
-        - dropped "Cc: Pratyush Yadav <pratyush@kernel.org>"
+        - branch: mm-unstable -> mm-stable
         - Link: : https://lore.kernel.org/all/20260309-kho-v8-5-c3abcf4ac750@debian.org/ [1]
         - Link: : https://lore.kernel.org/20260409-kho_fix_merge_issue-v1-1-710c84ceaa85@debian.org
         - Link: https://lore.kernel.org/20260316-kho-v9-5-ed6dcd951988@debian.org
-    - 23d86d2d4d36 "tools/testing/selftests: add merge test for partial msealed range"
+      - e524feaad546 "kho: document kexec-metadata tracking feature (5/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260316-kho-v9-6-ed6dcd951988@debian.org
+    - series "liveupdate: prevent double preservation", v4. (4)
+      - 00d0b372374f "liveupdate: prevent double management of files (0/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260326163943.574070-1-pasha.tatashin@soleen.com
+        - Link: https://lore.kernel.org/20260326163943.574070-2-pasha.tatashin@soleen.com
+        - Link: https://lore.kernel.org/all/20260129212510.967611-1-dmatlack@google.com [1]
+        - Link: https://lore.kernel.org/all/20260203220948.2176157-1-skhawaja@google.com [2]
+      - bc3a5763f466 "memfd: implement get_id for memfd_luo (1/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260326163943.574070-3-pasha.tatashin@soleen.com
+      - e3e613a33e65 "selftests: liveupdate: add test for double preservation (2/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260326163943.574070-4-pasha.tatashin@soleen.com
+      - 13b6b6209104 "mm: vmscan: fix dirty folios throttling on cgroup v1 for MGLRU (3/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/3445af0f09e8ca945492e052e82594f8c4f2e2f6.1774606060.git.baolin.wang@linux.alibaba.com
+    - series "liveupdate: Fix module unloading and unregister API", v3. (10)
+      - 277f4e5e398b "liveupdate: safely print untrusted strings (0/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260327033335.696621-1-pasha.tatashin@soleen.com
+        - Link: https://lore.kernel.org/20260327033335.696621-2-pasha.tatashin@soleen.com
+      - 38fb71ace230 "liveupdate: synchronize lazy initialization of FLB private state (1/10)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260327033335.696621-3-pasha.tatashin@soleen.com
+      - 9e1e18584548 "liveupdate: protect file handler list with rwsem (2/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260327033335.696621-4-pasha.tatashin@soleen.com
+      - 6b2b22f7c8cf "liveupdate: protect FLB lists with luo_register_rwlock (3/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260327033335.696621-5-pasha.tatashin@soleen.com
+      - 76be9983df33 "liveupdate: defer FLB module refcounting to active sessions (4/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260327033335.696621-6-pasha.tatashin@soleen.com
+      - 118c39082420 "liveupdate: remove luo_session_quiesce() (5/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260327033335.696621-7-pasha.tatashin@soleen.com
+      - 5ee1c7d6414a "liveupdate: auto unregister FLBs on file handler unregistration (6/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260327033335.696621-8-pasha.tatashin@soleen.com
+      - 074488008d6e "liveupdate: remove liveupdate_test_unregister() (7/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260327033335.696621-9-pasha.tatashin@soleen.com
+      - 2ab7207e7ec6 "liveupdate: make unregister functions return void (8/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260327033335.696621-10-pasha.tatashin@soleen.com
+      - 68750e820bc4 "liveupdate: defer file handler module refcounting to active sessions (9/10)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260327033335.696621-11-pasha.tatashin@soleen.com
+    - d14514c66cb9 "mm/vmscan: prevent MGLRU reclaim from pinning address space"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260322070843.941997-1-surenb@google.com
+    - 6b1842775a46 "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260331081312.123719-1-hao.ge@linux.dev
+    - series "zswap pool per-CPU acomp_ctx simplifications", v3. (2)
+      - 1556478e9e86 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead() (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260331183351.29844-2-kanchanapsridhar2026@gmail.com
+        - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677
+      - ef3c0f6cb798 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260331183351.29844-3-kanchanapsridhar2026@gmail.com
+    - series "mm/damon/core: fix damon_call()/damos_walk() vs kdmond exit race". (2)
+      - 55da81663b96 "mm/damon/core: fix damon_call() vs kdamond_fn() exit race (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260327233319.3528-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260327233319.3528-2-sj@kernel.org
+        - Link: https://lore.kernel.org/20260325141956.87144-1-sj@kernel.org [1]
+      - 33c3f6c2b48c "mm/damon/core: fix damos_walk() vs kdamond_fn() exit race (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260327233319.3528-3-sj@kernel.org
+        - Link: https://lore.kernel.org/20260325141956.87144-1-sj@kernel.org [1]
+    - e04ed278d25b "mm/damon/stat: fix memory leak on damon_start() failure in damon_stat_start()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260331101553.88422-1-liu.yun@linux.dev
+    - series "mm/damon/core: validate damos_quota_goal->nid". (2)
+      - 40250b2dded0 "mm/damon/core: validate damos_quota_goal->nid for node_mem_{used,free}_bp (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260329043902.46163-2-sj@kernel.org
+        - Link: https://lore.kernel.org/20260325073034.140353-1-objecting@objecting.org [1]
+        - Link: https://lore.kernel.org/20260327040924.68553-1-sj@kernel.org [2]
+      - a34dac6482e5 "mm/damon/core: validate damos_quota_goal->nid for node_memcg_{used,free}_bp (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260329043902.46163-3-sj@kernel.org
+    - 049a57421dd6 "mm/damon/core: use time_in_range_open() for damos quota window start"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260329152306.45796-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260324040722.57944-1-sj@kernel.org [1]
+    - series "Docs/admin-guide/mm/damon: warn commit_inputs vs other params race". (2)
+      - 0beba407d458 "Docs/admin-guide/mm/damon/reclaim: warn commit_inputs vs param updates race (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260329153052.46657-2-sj@kernel.org
+        - Link: https://lore.kernel.org/20260319161620.189392-3-objecting@objecting.org [1]
+        - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [3]
+      - 0c13ed77dd2b "Docs/admin-guide/mm/damon/lru_sort: warn commit_inputs vs param updates race (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260329153052.46657-3-sj@kernel.org
+        - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [1]
+    - 6fae274ce0e3 "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260401005702.7096-1-liu.yun@linux.dev
+      - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
+    - 84f4928446e6 "tools/testing/selftests: add merge test for partial msealed range"
       - Authored by no role player, reviewed by nobody
-      - added "[rppt@kernel.org: fix inclusions, to fix handle_uprobe_upon_merged_vma()]"
-      - added "Link: : https://lore.kernel.org/ac_mCIUQWRAbuH8F@kernel.org"
-      - added "Signed-off-by: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - branch: mm-unstable -> mm-stable
       - Link: : https://lore.kernel.org/ac_mCIUQWRAbuH8F@kernel.org
       - Link: : https://lore.kernel.org/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
       - Link: https://lore.kernel.org/20260331073627.50010-1-ljs@kernel.org
-    - 582e9723de31 "userfaultfd: introduce vm_uffd_ops"
+    - 047a6d494033 "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260401090520.24018-1-liwang@redhat.com
+    - series "Minor hmm_test fixes and cleanups". (3)
+      - 744dd97752ef "lib: test_hmm: evict device pages on file close to avoid use-after-free (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260331063445.3551404-1-apopple@nvidia.com
+        - Link: https://lore.kernel.org/20260331063445.3551404-2-apopple@nvidia.com
+      - f9d7975c52c0 "selftests/mm: hmm-tests: don't hardcode THP size to 2MB (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260331063445.3551404-3-apopple@nvidia.com
+        - Link: https://lore.kernel.org/linux-mm/8bd0396a-8997-4d2e-a13f-5aac033083d7@linux.dev/
+      - af69016dab96 "lib: test_hmm: implement a device release method (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260331063445.3551404-4-apopple@nvidia.com
+    - e3668b371329 "zram: do not forget to endio for partial discard requests"
+      - Authored by a maintainer, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260331074255.777019-1-senozhatsky@chromium.org
+    - 7cf6d940f403 "mm/sparse: fix preinited section_mem_map clobbering on failure path"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260331113724.2080833-1-songmuchun@bytedance.com
+    - ed2a29dc6dcf "mm/memfd: use folio_nr_pages() for shmem inode accounting"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260326084727.118437-1-duanchenghao@kylinos.cn
+      - Link: https://lore.kernel.org/20260326084727.118437-2-duanchenghao@kylinos.cn
+    - 502d3c2ad8f0 "mm/memfd_luo: optimize shmem_recalc_inode calls in retrieve path"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260326084727.118437-3-duanchenghao@kylinos.cn
+    - 4aa6424f37b5 "mm/memfd_luo: remove unnecessary memset in zero-size memfd path"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260326084727.118437-4-duanchenghao@kylinos.cn
+    - 32f6cec5e751 "mm/memfd_luo: use i_size_write() to set inode size during retrieve"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260326084727.118437-5-duanchenghao@kylinos.cn
+    - 3538f90ab89a "mm/memfd_luo: fix physical address conversion in put_folios cleanup"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260326084727.118437-6-duanchenghao@kylinos.cn
+    - dc44f32fde25 "mm/memfd_luo: remove folio from page cache when accounting fails"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: : https://lore.kernel.org/2vxzzf3lfujq.fsf@kernel.org
+      - Link: https://lore.kernel.org/20260326084727.118437-7-duanchenghao@kylinos.cn
+    - series "mm, kvm: allow uffd support in guest_memfd", v4. (4)
+      - c0620487fc33 "userfaultfd: introduce mfill_copy_folio_locked() helper (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402041156.1377214-1-rppt@kernel.org
+        - Link: https://lore.kernel.org/20260402041156.1377214-2-rppt@kernel.org
+      - db0062d2c035 "userfaultfd: introduce struct mfill_state (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/abehBY7QakYF9bK4@hyeyoo
+        - Link: https://lore.kernel.org/20260402041156.1377214-3-rppt@kernel.org
+      - e2e0b826d374 "userfaultfd: introduce mfill_establish_pmd() helper (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402041156.1377214-4-rppt@kernel.org
+      - b8c03b7f4558 "userfaultfd: introduce mfill_get_vma() and mfill_put_vma() (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260316173829.1126728-1-avagin@google.com
+        - Link: https://lore.kernel.org/20260402041156.1377214-5-rppt@kernel.org
+    - f5f035a72423 "userfaultfd: retry copying with locks dropped in mfill_atomic_pte_copy()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: : https://lore.kernel.org/20260316173829.1126728-1-avagin@google.com
+      - Link: https://lore.kernel.org/20260306171815.3160826-6-rppt@kernel.org
+      - Link: https://lore.kernel.org/20260402041156.1377214-6-rppt@kernel.org
+    - a5bb8669872b "userfaultfd: move vma_can_userfault out of line"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260402041156.1377214-7-rppt@kernel.org
+    - 0f48947c4232 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
-      - added "[rppt@kernel.org: relocate VM_DROPPABLE test, per Tal]"
-      - added "Link: : https://lore.kernel.org/adffgfM5ANxtPIEF@kernel.org"
+      - branch: mm-unstable -> mm-stable
       - Link: : https://lore.kernel.org/adffgfM5ANxtPIEF@kernel.org
       - Link: https://lore.kernel.org/20260402041156.1377214-8-rppt@kernel.org
-    - 1f6ee065bcff "docs: proc: document ProtectionKey in smaps"
+    - dfc4d771820a "shmem, userfaultfd: use a VMA callback to handle UFFDIO_CONTINUE"
       - Authored by no role player, reviewed by no role player
-      - added "[akpm@linux-foundation.org: s/hardware/CPU/]"
-      - added "[akpm@linux-foundation.org: s/system/hardware/, per review discussion]"
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260402041156.1377214-9-rppt@kernel.org
+    - ad9ac3081332 "userfaultfd: introduce vm_uffd_ops->alloc_folio()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260402041156.1377214-10-rppt@kernel.org
+    - f74991b4e383 "shmem, userfaultfd: implement shmem uffd operations using vm_uffd_ops"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260402041156.1377214-11-rppt@kernel.org
+    - 6ab703034f14 "userfaultfd: mfill_atomic(): remove retry logic"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: : https://lore.kernel.org/ac5zcDUY8CFHr6Lw@kernel.org
+      - Link: https://lore.kernel.org/20260402041156.1377214-12-rppt@kernel.org
+    - series "selftests/mm: skip several tests when thp is not available", v8. (6)
+      - fb0fca46b9b4 "selftests/mm/guard-regions: skip collapse test when thp not enabled (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402014543.1671131-1-chuhu@redhat.com
+        - Link: https://lore.kernel.org/20260402014543.1671131-2-chuhu@redhat.com
+      - 929d5fbf1a00 "selftests/mm: soft-dirty: skip two tests when thp is not available (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402014543.1671131-3-chuhu@redhat.com
+      - 710d2f307945 "selftests/mm: move write_file helper to vm_util (2/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402014543.1671131-4-chuhu@redhat.com
+      - a784a3a39cc5 "selftests/mm/vm_util: robust write_file() (3/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402014543.1671131-5-chuhu@redhat.com
+      - dad4964a34c2 "selftests/mm: split_huge_page_test: skip the test when thp is not available (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402014543.1671131-6-chuhu@redhat.com
+      - cfe9a446f519 "selftests/mm: transhuge_stress: skip the test when thp not available (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402014543.1671131-7-chuhu@redhat.com
+    - df620ec4d4d7 "mm/page_io: use sio->len for PSWPIN accounting in sio_read_complete()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260402061408.36119-1-devnexen@gmail.com
+    - 77c368f057e1 "mm/sparse: fix comment for section map alignment"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260402102320.3617578-1-songmuchun@bytedance.com
+    - 19999e479c2a "mm: remove '!root_reclaim' checking in should_abort_scan()"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260318011558.1696310-1-zhaoyang.huang@unisoc.com
+      - Link: https://lore.kernel.org/20260212032111.408865-1-zhaoyang.huang@unisoc.com
+    - series "mm/mprotect: micro-optimization work", v3. (2)
+      - 3bc181c14363 "mm/mprotect: move softleaf code out of the main function (0/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402141628.3367596-1-pfalcato@suse.de
+        - Link: https://lore.kernel.org/20260402141628.3367596-2-pfalcato@suse.de
+        - Link: https://lore.kernel.org/all/aY8-XuFZ7zCvXulB@luyang-thinkpadp1gen7.toromso.csb/
+        - Link: https://gist.github.com/heatd/1450d273005aba91fa5744f44dfcd933 [0]
+        - Link: https://lore.kernel.org/CAL2CeBxT4jtJ+LxYb6=BNxNMGinpgD_HYH5gGxOP-45Q2OncqQ@mail.gmail.com [1]
+      - 89e613bc0b2d "mm/mprotect: special-case small folios when applying permissions (1/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260402141628.3367596-3-pfalcato@suse.de
+    - 9a8ea3c1cb25 "docs: proc: document ProtectionKey in smaps"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
       - Link: https://lore.kernel.org/20260407125133.564182-1-kevin.brodsky@arm.com
-    - 365f0006418b "MAINTAINERS: add page cache reviewer"
-      - Authored by no role player, reviewed by no role player
-      - added "[akpm@linux-foundation.org: add linux-mm@kvack.org]"
-      - Link: https://lore.kernel.org/20260415174039.13016-2-jack@suse.cz
-    - e90b6becdbcb "kho: fix error handling in kho_add_subtree()"
+    - 2f529e73d720 "zram: reject unrecognized type= values in recompress_store()"
       - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://lore.kernel.org/20260410-kho_fix_send-v2-1-1b4debf7ee08@debian.org"
-      - added "Reviewed-by: Pratyush Yadav <pratyush@kernel.org>"
-      - added "Cc: <stable@vger.kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260407-kho_fix_send-v1-1-b21977feb960@debian.org"
-      - Link: https://lore.kernel.org/20260410-kho_fix_send-v2-1-1b4debf7ee08@debian.org
-  - dropped commits
-    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
-      - 10e38047ffe6 "kho: call kho_kexec_metadata_init() for both boot paths (5/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/all/20260309-kho-v8-5-c3abcf4ac750@debian.org/ [1]
-        - Link: https://lore.kernel.org/20260409-kho_fix_merge_issue-v1-1-710c84ceaa85@debian.org
-    - 1b0eea26d18c "tools-testing-selftests-add-merge-test-for-partial-msealed-range-fix"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/ac_mCIUQWRAbuH8F@kernel.org
-    - 59b48f8ce0ab "userfaultfd-introduce-vm_uffd_ops-fix"
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260407153027.42425-1-astellman@stellman-greene.com
+    - c45b354911d0 "mm/hugetlb: fix early boot crash on parameters without '=' separator"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260409105437.108686-4-thorsten.blum@linux.dev
+    - 2b19bf05719b "mm/vmstat: fix vmstat_shepherd double-scheduling vmstat_update"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260409-vmstat-v2-1-e9d9a6db08ad@debian.org
+    - 161ce69c2c89 "userfaultfd: allow registration of ranges below mmap_min_addr"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260409103345.15044-1-komlomal@gmail.com
+    - d432e8847f58 "selftests: mm: skip charge_reserved_hugetlb without killall"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260410044139.67480-1-create0818@163.com
+    - 57294a97bdd1 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260212014611.416695-1-dave@stgolabs.net
+    - 60087b49f8e7 "MAINTAINERS: update kexec/kdump maintainers entries"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260413121146.49215-1-pasha.tatashin@soleen.com
+    - series "MAINTAINERS: update KHO and LIVE UPDATE entries". (3)
+      - 320c7234d1d1 "MAINTAINERS: update KHO and LIVE UPDATE maintainers (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260414121752.1912847-1-pratyush@kernel.org
+        - Link: https://lore.kernel.org/20260414121752.1912847-2-pratyush@kernel.org
+      - de61e40bcbb8 "MAINTAINERS: drop include/linux/kho/abi/ from KHO (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260414121752.1912847-3-pratyush@kernel.org
+      - b5a9ac2bb0e4 "MAINTAINERS: drop include/linux/liveupdate from LIVE UPDATE (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260414121752.1912847-4-pratyush@kernel.org
+    - e86ffbe7dfdd "MAINTAINERS: update Dave's kdump reviewer email address"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/ad8GFhh3SI1wb7IC@darkstar.users.ipa.redhat.com
+    - 3de705a43a46 "mm/vmscan: avoid false-positive -Wuninitialized warning"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/adffgfM5ANxtPIEF@kernel.org
-    - 66b6bbf8a436 "docs-proc-document-protectionkey-in-smaps-fix"
-      - Authored by no role player, reviewed by nobody
-    - 861563c8cad4 "docs-proc-document-protectionkey-in-smaps-fix-fix"
-      - Authored by no role player, reviewed by nobody
-    - 009beaf39645 "maintainers-add-page-cache-reviewer-fix"
-      - Authored by no role player, reviewed by nobody
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/all/CAJHvVcjtFW86o5FoQC8MMEXCHAC0FviggaQsd5EmiCHP+1fBpg@mail.gmail.com/
+      - Link: https://lore.kernel.org/20260414065206.3236176-1-arnd@kernel.org
+    - 0b5e8d799907 "MAINTAINERS: add page cache reviewer"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260415174039.13016-2-jack@suse.cz
+- mm-unstable: 128 -> 7 commits
+  - series: 16 (86) -> 2 (4)
+    - no role, nobody: 4 -> 0 commits
+    - no role, no role : 36 -> 1 commits
+    - no role, reviewer: 14 -> 2 commits
+    - no role, maintainer: 42 -> 1 commits
+    - reviewer, no role : 4 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 5 -> 2 commits
+    - maintainer, nobody: 7 -> 0 commits
+    - maintainer, no role : 14 -> 1 commits
+    - maintainer, maintainer: 1 -> 0 commits
+- mm-new: 2 -> 1 commits
+  - series: 0 (2) -> 0 (1)
+    - no role, nobody: 1 -> 0 commits
     - no role, reviewer: 1 -> 1 commits (no change)
+  - dropped commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - f3080787ad36 "mm/sparse: fix race on mem_section->usage in pfn walkers (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260415022326.53218-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 127 -> 127 commits (no change)
   - series: 13 (62) -> 13 (62) (no change)
     - no role, nobody: 29 -> 29 commits (no change)

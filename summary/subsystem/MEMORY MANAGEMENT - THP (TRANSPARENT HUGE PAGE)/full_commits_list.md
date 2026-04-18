@@ -1,11 +1,12 @@
 - baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 29 total, 3 (24) series, 5 non-series commits
+- mm-stable: 34 total, 3 (29) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 4 commits
-    - no role, reviewer: 18 commits
+    - no role, no role : 5 commits
+    - no role, reviewer: 21 commits
+    - no role, maintainer: 1 commits
     - reviewer, reviewer: 6 commits
   - full commits list
       - 9a1d0c738b45 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
@@ -108,27 +109,22 @@
       - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
       - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
       - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
-- mm-unstable: 5 total, 0 (5) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 3 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-      - 3468218c6439 "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
+      - db128b2c6b7d "mm: rename unlock_page_lruvec_irq and its variants" (2/33)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - d588c8547f25 "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
+      - 681d325b23dc "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}()" (16/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
-      - 5e19c50ad741 "selftests/mm: move write_file helper to vm_util" (2/6)
+      - 710d2f307945 "selftests/mm: move write_file helper to vm_util" (2/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260402014543.1671131-4-chuhu@redhat.com
-      - 58451aaac7e6 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (4/6)
+      - dad4964a34c2 "selftests/mm: split_huge_page_test: skip the test when thp is not available" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260402014543.1671131-6-chuhu@redhat.com
-      - 271843f41f1b "selftests/mm: transhuge_stress: skip the test when thp not available" (5/6)
+      - cfe9a446f519 "selftests/mm: transhuge_stress: skip the test when thp not available" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260402014543.1671131-7-chuhu@redhat.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

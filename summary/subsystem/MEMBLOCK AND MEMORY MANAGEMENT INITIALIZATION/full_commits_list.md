@@ -1,11 +1,11 @@
 - baseline: v7.0-rc5-46-g24f9515de8778
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 9 total, 1 (8) series, 1 non-series commits
+- mm-stable: 11 total, 2 (10) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
     - no role, reviewer: 2 commits
-    - no role, maintainer: 4 commits
+    - no role, maintainer: 6 commits
   - full commits list
     - series "arch, mm: consolidate empty_zero_page", v3. (4 commits)
       - 652d12bc74a0 "mm: don't special case !MMU for is_zero_pfn() and my_zero_pfn()" (0/4)
@@ -36,18 +36,15 @@
     - c4a9439a5a37 "mm: mark early-init static variables with __meminitdata"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lkml.kernel.org/r/20260321120847.8159-1-pilgrimtao@gmail.com
-- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 2 commits
-  - full commits list
     - series "kho: history: track previous kernel version and kexec boot count", v9. (6 commits)
-      - c16e9d6e19cb "kho: add size parameter to kho_add_subtree()" (0/6)
+      - d9e4142e7635 "kho: add size parameter to kho_add_subtree()" (0/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323110747.193569-1-duanchenghao@kylinos.cn
         - Link: https://lore.kernel.org/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - dfa729fb514d "kho: persist blob size in KHO FDT" (2/6)
+      - 85e41392820f "kho: persist blob size in KHO FDT" (2/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260316-kho-v9-3-ed6dcd951988@debian.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

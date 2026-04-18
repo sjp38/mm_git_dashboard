@@ -4,12 +4,13 @@
   - author/reviewer role stat
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 3a9772b38f07 "mm/mempolicy: fix weighted interleave auto sysfs name"
+    - 68797911a711 "mm/mempolicy: fix weighted interleave auto sysfs name"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260407141415.3080960-1-joshua.hahnjy@gmail.com
-- mm-stable: 6 total, 0 (3) series, 3 non-series commits
+- mm-stable: 9 total, 0 (4) series, 5 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 4 commits
+    - no role, no role : 1 commits
+    - no role, reviewer: 6 commits
     - reviewer, reviewer: 2 commits
   - full commits list
       - 9a1d0c738b45 "mm: rename my_zero_pfn() to zero_pfn()" (1/4)
@@ -32,21 +33,17 @@
       - Link: : https://lkml.kernel.org/r/FB71A764-0F10-4E5A-B4A0-BA4C7F138408@nvidia.com
       - Link: https://syzkaller.appspot.com/bug?extid=a7067a757858ac8eb085
       - Link: https://lkml.kernel.org/r/20260401131032.13011-1-lance.yang@linux.dev
-- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 2 commits
-  - full commits list
-      - 2af7ff0191a5 "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
+      - 53050890802e "mm: migrate: prevent memory cgroup release in folio_migrate_mapping()" (12/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/0f156c2f1188f256855617953f8305f43e066065.1772711148.git.zhengqi.arch@bytedance.com
-    - 5e4c7abe71c8 "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
+    - 6fae274ce0e3 "mm/mempolicy: fix memory leaks in weighted_interleave_auto_store()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260401005702.7096-1-liu.yun@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260331100740.84906-1-liu.yun@linux.dev
-    - 669f7ccf8410 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
+    - 57294a97bdd1 "mm/migrate_device: remove dead migration entry check in migrate_vma_collect_huge_pmd()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260212014611.416695-1-dave@stgolabs.net
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

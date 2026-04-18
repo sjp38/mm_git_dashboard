@@ -3,12 +3,32 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-stable: 2 -> 6 commits
+  - series: 0 (1) -> 1 (5)
+    - no role, maintainer: 2 -> 6 commits
+  - changed commits
+    - series "Eliminate Dying Memory Cgroup", v6. (33)
+      - cf4d6ad54ba1 "mm: zswap: prevent memory cgroup release in zswap_compress() (17/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com
+      - d5ddaf4341f7 "mm: zswap: prevent lruvec release in zswap_folio_swapin() (19/33)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com
+    - series "zswap pool per-CPU acomp_ctx simplifications", v3. (2)
+      - 1556478e9e86 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead() (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260331183351.29844-2-kanchanapsridhar2026@gmail.com
+        - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677
+      - ef3c0f6cb798 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260331183351.29844-3-kanchanapsridhar2026@gmail.com
+- mm-unstable: 4 -> 0 commits
+  - series: 1 (4) -> 0 (0)
+    - no role, maintainer: 4 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

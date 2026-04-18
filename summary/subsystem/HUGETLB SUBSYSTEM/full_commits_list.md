@@ -4,15 +4,15 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 66f78d954d32 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - aeb0f81866b7 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
-- mm-stable: 17 total, 2 (14) series, 3 non-series commits
+- mm-stable: 19 total, 2 (14) series, 5 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 5 commits
     - no role, reviewer: 4 commits
-    - no role, maintainer: 7 commits
+    - no role, maintainer: 8 commits
   - full commits list
     - 34ca46cc6fc9 "fs: hugetlb: simplify remove_inode_hugepages() return type"
       - Authored by no role player, reviewed by a maintainer
@@ -71,18 +71,14 @@
     - 0217c7fb4de4 "mm/userfaultfd: fix hugetlb fault mutex hash calculation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260310110526.335749-1-jianhuizzzzz@gmail.com
-- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 582e9723de31 "userfaultfd: introduce vm_uffd_ops"
+    - 0f48947c4232 "userfaultfd: introduce vm_uffd_ops"
       - Authored by no role player, reviewed by nobody
       - Link: : https://lore.kernel.org/adffgfM5ANxtPIEF@kernel.org
       - Link: https://lore.kernel.org/20260402041156.1377214-8-rppt@kernel.org
-    - 3cca6b7cb177 "mm/hugetlb: fix early boot crash on parameters without '=' separator"
+    - c45b354911d0 "mm/hugetlb: fix early boot crash on parameters without '=' separator"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260409105437.108686-4-thorsten.blum@linux.dev
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

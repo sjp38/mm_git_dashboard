@@ -12,33 +12,28 @@
     - no role, no role : 3 commits
     - reviewer, reviewer: 1 commits
     - maintainer, nobody: 3 commits
-- mm-stable: 369 total, 39 (280) series, 89 non-series commits
+- mm-stable: 490 total, 53 (362) series, 128 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 22 commits
-    - no role, no role : 137 commits
-    - no role, reviewer: 49 commits
-    - no role, maintainer: 47 commits
-    - reviewer, reviewer: 6 commits
-    - reviewer, maintainer: 1 commits
-    - maintainer, nobody: 74 commits
-    - maintainer, no role : 14 commits
-    - maintainer, reviewer: 3 commits
-    - maintainer, maintainer: 16 commits
-- mm-unstable: 128 total, 16 (86) series, 42 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 4 commits
-    - no role, no role : 36 commits
-    - no role, reviewer: 14 commits
-    - no role, maintainer: 42 commits
+    - no role, nobody: 26 commits
+    - no role, no role : 172 commits
+    - no role, reviewer: 61 commits
+    - no role, maintainer: 88 commits
     - reviewer, no role : 4 commits
-    - reviewer, reviewer: 1 commits
-    - reviewer, maintainer: 5 commits
-    - maintainer, nobody: 7 commits
-    - maintainer, no role : 14 commits
-    - maintainer, maintainer: 1 commits
-- mm-new: 2 total, 0 (2) series, 0 non-series commits
+    - reviewer, reviewer: 7 commits
+    - reviewer, maintainer: 4 commits
+    - maintainer, nobody: 81 commits
+    - maintainer, no role : 27 commits
+    - maintainer, reviewer: 3 commits
+    - maintainer, maintainer: 17 commits
+- mm-unstable: 7 total, 2 (4) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+    - no role, reviewer: 2 commits
+    - no role, maintainer: 1 commits
+    - reviewer, maintainer: 2 commits
+    - maintainer, no role : 1 commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
     - no role, reviewer: 1 commits
 - mm-nonmm-stable: 127 total, 13 (62) series, 65 non-series commits
   - author/reviewer role stat
