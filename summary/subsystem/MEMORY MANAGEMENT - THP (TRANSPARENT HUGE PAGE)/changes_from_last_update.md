@@ -3,41 +3,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 29 -> 34 commits
-  - series: 3 (24) -> 3 (29)
+- mm-stable: 34 -> 34 commits (no change)
+  - series: 3 (29) -> 3 (29) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 5 commits
-    - no role, reviewer: 18 -> 21 commits
-    - no role, maintainer: 0 -> 1 commits
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 21 -> 21 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 6 -> 6 commits (no change)
-  - changed commits
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - db128b2c6b7d "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 681d325b23dc "mm: thp: prevent memory cgroup release in folio_split_queue_lock{_irqsave}() (16/33)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/ca2957c0df1126b2c71b40c738018fd5255525a6.1772711148.git.zhengqi.arch@bytedance.com
-    - series "selftests/mm: skip several tests when thp is not available", v8. (6)
-      - 710d2f307945 "selftests/mm: move write_file helper to vm_util (2/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260402014543.1671131-4-chuhu@redhat.com
-      - dad4964a34c2 "selftests/mm: split_huge_page_test: skip the test when thp is not available (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260402014543.1671131-6-chuhu@redhat.com
-      - cfe9a446f519 "selftests/mm: transhuge_stress: skip the test when thp not available (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260402014543.1671131-7-chuhu@redhat.com
-- mm-unstable: 5 -> 0 commits
-  - series: 0 (5) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 3 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

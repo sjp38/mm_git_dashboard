@@ -1,12 +1,12 @@
 - baseline: v7.0-rc5-46-g24f9515de8778
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 68797911a711 "mm/mempolicy: fix weighted interleave auto sysfs name"
+    - 8fedac321fb0 "mm/mempolicy: fix weighted interleave auto sysfs name"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260407141415.3080960-1-joshua.hahnjy@gmail.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 9 total, 0 (4) series, 5 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits

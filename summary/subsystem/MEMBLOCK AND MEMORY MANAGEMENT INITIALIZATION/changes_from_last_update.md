@@ -3,25 +3,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 9 -> 11 commits
-  - series: 1 (8) -> 2 (10)
+- mm-stable: 11 -> 11 commits (no change)
+  - series: 2 (10) -> 2 (10) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 4 -> 6 commits
-  - changed commits
-    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
-      - d9e4142e7635 "kho: add size parameter to kho_add_subtree() (0/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260323110747.193569-1-duanchenghao@kylinos.cn
-        - Link: https://lore.kernel.org/20260316-kho-v9-1-ed6dcd951988@debian.org
-      - 85e41392820f "kho: persist blob size in KHO FDT (2/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260316-kho-v9-3-ed6dcd951988@debian.org
-- mm-unstable: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, maintainer: 2 -> 0 commits
+    - no role, maintainer: 6 -> 6 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

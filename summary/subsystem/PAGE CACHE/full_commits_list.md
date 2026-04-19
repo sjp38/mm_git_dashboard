@@ -1,8 +1,9 @@
 - baseline: v7.0-rc5-46-g24f9515de8778
-- mm-hotfixes-stable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-stable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
+    - maintainer, nobody: 1 commits
   - full commits list
     - f58df566524e "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
       - Authored by no role player, reviewed by no role player
@@ -10,13 +11,10 @@
     - cece9dc61daa "mm: reinstate unconditional writeback start in balance_dirty_pages()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lkml.kernel.org/r/20260326215127.3857682-2-joannelkoong@gmail.com
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - maintainer, nobody: 1 commits
-  - full commits list
-    - b1a7b0ad5c48 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+    - 615d9bb2ccad "mm: call ->free_folio() directly in folio_unmap_invalidate()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260413184314.3419945-1-willy@infradead.org
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 3 total, 0 (3) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
@@ -35,7 +33,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - d3c31c7ab9d8 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - cad242a7f021 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

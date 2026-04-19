@@ -1,11 +1,12 @@
 - baseline: v7.0-rc5-46-g24f9515de8778
-- mm-hotfixes-stable: 18 total, 1 (3) series, 15 non-series commits
+- mm-hotfixes-stable: 25 total, 1 (3) series, 22 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 7 commits
+    - no role, no role : 10 commits
     - no role, reviewer: 2 commits
     - no role, maintainer: 5 commits
-    - maintainer, nobody: 3 commits
+    - reviewer, reviewer: 1 commits
+    - maintainer, nobody: 6 commits
   - full commits list
     - 4c5e7f0fcd59 "mm/huge_memory: fix folio isn't locked in softleaf_to_folio()"
       - Authored by no role player, reviewed by no role player
@@ -70,40 +71,37 @@
     - 7bc5da4842be "ocfs2: fix out-of-bounds write in ocfs2_write_end_inline"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260403063830.3662739-1-joseph.qi@linux.alibaba.com
-- mm-hotfixes-unstable: 9 total, 0 (0) series, 9 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 3 commits
-    - reviewer, reviewer: 1 commits
-    - maintainer, nobody: 3 commits
-  - full commits list
-    - 68797911a711 "mm/mempolicy: fix weighted interleave auto sysfs name"
+    - 8fedac321fb0 "mm/mempolicy: fix weighted interleave auto sysfs name"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260407141415.3080960-1-joshua.hahnjy@gmail.com
-    - 754e86f8576f "mm/damon/core: disallow time-quota setting zero esz"
+    - 8bbde987c2b8 "mm/damon/core: disallow time-quota setting zero esz"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260407003153.79589-1-sj@kernel.org
       - Link: https://lore.kernel.org/20260405192504.110014-1-sj@kernel.org [1]
-    - 2afc9ad16a4d "device-dax: fix refcount leak in __devm_create_dev_dax() error path"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260412070010.2402830-1-lgs201920130244@gmail.com
-    - b654d2ec1342 "mm/zone_device: do not touch device folio after calling ->folio_free()"
+    - 399289849560 "mm/zone_device: do not touch device folio after calling ->folio_free()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260410230346.4009855-1-matthew.brost@intel.com
-    - fa6f3f894aa1 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
+    - 8f5857be99f1 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260413-blkcg-v1-1-35b72622d16c@debian.org
-    - b1a7b0ad5c48 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+    - 615d9bb2ccad "mm: call ->free_folio() directly in folio_unmap_invalidate()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260413184314.3419945-1-willy@infradead.org
-    - 3647d860ee73 "mm/vmalloc: take vmap_purge_lock in shrinker"
+    - ec05f51f1e65 "mm/vmalloc: take vmap_purge_lock in shrinker"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260413192646.14683-1-urezki@gmail.com
-    - 310de339072d "mm/damon/core: disallow non-power of two min_region_sz on damon_start()"
+    - 95093e5cb4c5 "mm/damon/core: disallow non-power of two min_region_sz on damon_start()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260411213638.77768-1-sj@kernel.org
       - Link: https://lore.kernel.org/20260403155530.64647-1-sj@kernel.org [1]
-    - aeb0f81866b7 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+  - full commits list
+    - e814324a90b4 "device-dax: fix refcount leak in __devm_create_dev_dax() error path"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260412070010.2402830-1-lgs201920130244@gmail.com
+    - 5635b3481c12 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 490 total, 53 (362) series, 128 non-series commits
@@ -1791,36 +1789,36 @@
     - reviewer, maintainer: 2 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - 564f44423389 "liveupdate: fix return value on session allocation failure"
+    - 03eea4e29522 "liveupdate: fix return value on session allocation failure"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260415193738.515491-1-pasha.tatashin@soleen.com
-    - f65505eeccb5 "kho: fix error handling in kho_add_subtree()"
+    - 380ba4b81f45 "kho: fix error handling in kho_add_subtree()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260410-kho_fix_send-v2-1-1b4debf7ee08@debian.org
-    - d3c31c7ab9d8 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - cad242a7f021 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com
     - series "fix MAP_DROPPABLE not supported errno". (2 commits)
-      - f6fd0c5fb915 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
+      - f7358b8efea8 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260402235933.10588-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260402235933.10588-2-anthony.yznaga@oracle.com
-      - 9234317dbf6a "selftests/mm: verify droppable mappings cannot be locked" (1/2)
+      - 22cf02755bb9 "selftests/mm: verify droppable mappings cannot be locked" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260402235933.10588-3-anthony.yznaga@oracle.com
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - f62db8dbf628 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - fdfb088c1807 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - 306afb4fc253 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - 4569c01e84d4 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 0b2795f6e3d8 "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
+      - f4279f87cd6c "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 127 total, 13 (62) series, 65 non-series commits
@@ -2250,50 +2248,50 @@
     - no role, no role : 6 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 4c7233272c03 "kernel/fork: validate exit_signal in kernel_clone()"
+    - 6c0185b70084 "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by a reviewer
       - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
       - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com
       - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
       - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
     - series "kallsyms: embed source file:line info in kernel stack traces", v4. (4 commits)
-      - f5165bfd8c27 "kallsyms: embed source file:line info in kernel stack traces" (0/4)
+      - 0c36828b0674 "kallsyms: embed source file:line info in kernel stack traces" (0/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260322131543.971079-1-sashal@kernel.org
         - Link: https://lore.kernel.org/20260322131543.971079-2-sashal@kernel.org
-      - c38f09dfe311 "kallsyms: extend lineinfo to loadable modules" (1/4)
+      - e2ed027a354a "kallsyms: extend lineinfo to loadable modules" (1/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260322131543.971079-3-sashal@kernel.org
-      - d72f7ad32d9f "kallsyms: delta-compress lineinfo tables for ~2.7x size reduction" (2/4)
+      - 6a3478407b07 "kallsyms: delta-compress lineinfo tables for ~2.7x size reduction" (2/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260322131543.971079-4-sashal@kernel.org
-      - 6c2b74bebe0d "kallsyms: add KUnit tests for lineinfo feature" (3/4)
+      - aa11281508d1 "kallsyms: add KUnit tests for lineinfo feature" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260322131543.971079-5-sashal@kernel.org
-    - de52c01f24b3 "lib/idr: fix ida_find_first_range() missing IDs across chunk boundaries"
+    - 7a8c99a19946 "lib/idr: fix ida_find_first_range() missing IDs across chunk boundaries"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260306203047.2821852-1-objecting@objecting.org
     - series "lib and lib/cmdline enhancements", v9. (6 commits)
-      - f37a31180626 "lib: fix _parse_integer_limit() to handle overflow" (0/6)
+      - c8b79656cdf0 "lib: fix _parse_integer_limit() to handle overflow" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260403103338.1122415-1-dmantipov@yandex.ru
         - Link: https://lore.kernel.org/20260403103338.1122415-2-dmantipov@yandex.ru
-      - 7fe33d105a89 "lib: fix memparse() to handle overflow" (1/6)
+      - 7f448f913d6f "lib: fix memparse() to handle overflow" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260403103338.1122415-3-dmantipov@yandex.ru
-      - edea0a3603e8 "lib: add more string to 64-bit integer conversion overflow tests" (2/6)
+      - 762307e4501a "lib: add more string to 64-bit integer conversion overflow tests" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260403103338.1122415-4-dmantipov@yandex.ru
-      - 70f3f0d0061a "lib/cmdline_kunit: add test case for memparse()" (3/6)
+      - 3ca47a34e7a9 "lib/cmdline_kunit: add test case for memparse()" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260403103338.1122415-5-dmantipov@yandex.ru
-      - 99bd36c4e59d "lib/cmdline: adjust a few comments to fix kernel-doc -Wreturn warnings" (4/6)
+      - 653d95b50a69 "lib/cmdline: adjust a few comments to fix kernel-doc -Wreturn warnings" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260403103338.1122415-6-dmantipov@yandex.ru
-      - 8d25453ed3ae "riscv: export symbols needed for riscv32 EFI stub" (5/6)
+      - d73c049b27fd "riscv: export symbols needed for riscv32 EFI stub" (5/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260403103338.1122415-7-dmantipov@yandex.ru
-    - 200440c07423 "lib/tests: extend cmdline KUnit with next_arg() tests"
+    - 08ced603610a "lib/tests: extend cmdline KUnit with next_arg() tests"
       - Authored by no role player, reviewed by no role player
       - Link: : https://lore.kernel.org/20260316211249.88601-1-shuvampandey1@gmail.com
       - Link: https://lore.kernel.org/20260316101227.15807-1-shuvampandey1@gmail.com

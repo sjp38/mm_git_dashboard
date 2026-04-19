@@ -4,26 +4,14 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 17 -> 19 commits
+- mm-stable: 19 -> 19 commits (no change)
   - series: 2 (14) -> 2 (14) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 7 -> 8 commits
-  - changed commits
-    - 0f48947c4232 "userfaultfd: introduce vm_uffd_ops"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: : https://lore.kernel.org/adffgfM5ANxtPIEF@kernel.org
-      - Link: https://lore.kernel.org/20260402041156.1377214-8-rppt@kernel.org
-    - c45b354911d0 "mm/hugetlb: fix early boot crash on parameters without '=' separator"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260409105437.108686-4-thorsten.blum@linux.dev
-- mm-unstable: 2 -> 0 commits
+    - no role, maintainer: 8 -> 8 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -1,7 +1,8 @@
 - baseline: v7.0-rc5-46-g24f9515de8778
-- mm-hotfixes-stable: 3 total, 0 (0) series, 3 non-series commits
+- mm-hotfixes-stable: 4 total, 0 (0) series, 4 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
+    - maintainer, nobody: 1 commits
   - full commits list
     - 4c5e7f0fcd59 "mm/huge_memory: fix folio isn't locked in softleaf_to_folio()"
       - Authored by no role player, reviewed by no role player
@@ -13,13 +14,10 @@
     - 3b89863c3fa4 "mm/pagewalk: fix race between concurrent split and refault"
       - Authored by no role player, reviewed by no role player
       - Link: https://lkml.kernel.org/r/20260325-pagewalk-check-pmd-refault-v2-1-707bff33bc60@akamai.com
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - maintainer, nobody: 1 commits
-  - full commits list
-    - b1a7b0ad5c48 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+    - 615d9bb2ccad "mm: call ->free_folio() directly in folio_unmap_invalidate()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260413184314.3419945-1-willy@infradead.org
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 110 total, 14 (90) series, 20 non-series commits
   - author/reviewer role stat
     - no role, nobody: 4 commits
@@ -406,7 +404,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 0b2795f6e3d8 "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
+      - f4279f87cd6c "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 4 total, 0 (1) series, 3 non-series commits
@@ -433,7 +431,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 4c7233272c03 "kernel/fork: validate exit_signal in kernel_clone()"
+    - 6c0185b70084 "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by a reviewer
       - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
       - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com

@@ -1,12 +1,12 @@
 - baseline: v7.0-rc5-46-g24f9515de8778
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - fa6f3f894aa1 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
+    - 8f5857be99f1 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260413-blkcg-v1-1-35b72622d16c@debian.org
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 35 total, 2 (21) series, 14 non-series commits
   - author/reviewer role stat
     - no role, nobody: 3 commits
@@ -141,7 +141,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - 9234317dbf6a "selftests/mm: verify droppable mappings cannot be locked" (1/2)
+      - 22cf02755bb9 "selftests/mm: verify droppable mappings cannot be locked" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260402235933.10588-3-anthony.yznaga@oracle.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

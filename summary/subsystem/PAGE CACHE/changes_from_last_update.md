@@ -1,11 +1,17 @@
 - baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
-- mm-hotfixes-stable: 2 -> 2 commits (no change)
+- mm-hotfixes-stable: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - changed commits
+    - 615d9bb2ccad "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260413184314.3419945-1-willy@infradead.org
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
 - mm-stable: 3 -> 3 commits (no change)
   - series: 0 (3) -> 0 (3) (no change)
     - no role, no role : 1 -> 1 commits (no change)

@@ -1,10 +1,11 @@
 - baseline: v7.0-rc5-46-g24f9515de8778
-- mm-hotfixes-stable: 13 total, 1 (3) series, 10 non-series commits
+- mm-hotfixes-stable: 20 total, 1 (3) series, 17 non-series commits
   - author/reviewer role stat
-    - no role, no role : 5 commits
+    - no role, no role : 8 commits
     - no role, reviewer: 2 commits
     - no role, maintainer: 4 commits
-    - maintainer, nobody: 2 commits
+    - reviewer, reviewer: 1 commits
+    - maintainer, nobody: 5 commits
   - full commits list
     - 9e0d0ddfbc0e "mm/swap: fix swap cache memcg accounting"
       - Authored by no role player, reviewed by a maintainer
@@ -51,37 +52,34 @@
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lkml.kernel.org/r/20260402134418.74121-1-sj@kernel.org
       - Link: https://lore.kernel.org/20260401012428.86694-1-sj@kernel.org [1]
-- mm-hotfixes-unstable: 8 total, 0 (0) series, 8 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 3 commits
-    - reviewer, reviewer: 1 commits
-    - maintainer, nobody: 3 commits
-  - full commits list
-    - 68797911a711 "mm/mempolicy: fix weighted interleave auto sysfs name"
+    - 8fedac321fb0 "mm/mempolicy: fix weighted interleave auto sysfs name"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260407141415.3080960-1-joshua.hahnjy@gmail.com
-    - 754e86f8576f "mm/damon/core: disallow time-quota setting zero esz"
+    - 8bbde987c2b8 "mm/damon/core: disallow time-quota setting zero esz"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260407003153.79589-1-sj@kernel.org
       - Link: https://lore.kernel.org/20260405192504.110014-1-sj@kernel.org [1]
-    - b654d2ec1342 "mm/zone_device: do not touch device folio after calling ->folio_free()"
+    - 399289849560 "mm/zone_device: do not touch device folio after calling ->folio_free()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260410230346.4009855-1-matthew.brost@intel.com
-    - fa6f3f894aa1 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
+    - 8f5857be99f1 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260413-blkcg-v1-1-35b72622d16c@debian.org
-    - b1a7b0ad5c48 "mm: call ->free_folio() directly in folio_unmap_invalidate()"
+    - 615d9bb2ccad "mm: call ->free_folio() directly in folio_unmap_invalidate()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260413184314.3419945-1-willy@infradead.org
-    - 3647d860ee73 "mm/vmalloc: take vmap_purge_lock in shrinker"
+    - ec05f51f1e65 "mm/vmalloc: take vmap_purge_lock in shrinker"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260413192646.14683-1-urezki@gmail.com
-    - 310de339072d "mm/damon/core: disallow non-power of two min_region_sz on damon_start()"
+    - 95093e5cb4c5 "mm/damon/core: disallow non-power of two min_region_sz on damon_start()"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260411213638.77768-1-sj@kernel.org
       - Link: https://lore.kernel.org/20260403155530.64647-1-sj@kernel.org [1]
-    - aeb0f81866b7 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - 5635b3481c12 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 308 total, 39 (223) series, 85 non-series commits
@@ -1168,27 +1166,27 @@
     - no role, reviewer: 2 commits
     - reviewer, maintainer: 2 commits
   - full commits list
-    - d3c31c7ab9d8 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - cad242a7f021 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com
     - series "fix MAP_DROPPABLE not supported errno". (2 commits)
-      - f6fd0c5fb915 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
+      - f7358b8efea8 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260402235933.10588-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260402235933.10588-2-anthony.yznaga@oracle.com
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - f62db8dbf628 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - fdfb088c1807 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - 306afb4fc253 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - 4569c01e84d4 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 0b2795f6e3d8 "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
+      - f4279f87cd6c "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
