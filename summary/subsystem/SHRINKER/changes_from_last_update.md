@@ -1,32 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, reviewer: 3 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 260d70819c37 "mm/shrinker: fix refcount leak in shrink_slab_memcg()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260204033553.50039-1-ahacigu.linux@gmail.com
-      - Link: : https://lore.kernel.org/r/20260203073757.135088-1-ahacigu.linux@gmail.com
-    - series "mm: vmscan: add PID and cgroup ID to vmscan tracepoints", v8. (3)
-      - 874a0a566ede "mm: vmscan: add cgroup IDs to vmscan tracepoints (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260316160908.42727-3-tballasi@linux.microsoft.com
-    - 03375203e1da "mm: do not allocate shrinker info with cgroup.memory=nokmem"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: : https://lkml.kernel.org/r/20260309-cgroup-ml-nokmem-shrinker-v2-1-3e7a7eefb6c9@suse.com
-      - Link: https://lkml.kernel.org/r/20260225-cgroup-ml-nokmem-shrinker-v1-1-d703899bdda4@suse.com
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - f95fcd7f2808 "mm: memcontrol: remove dead code of checking parent memory cgroup (0/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/f4481291bf8c6561dd8949045b5a1ed4008a6b63.1772711148.git.zhengqi.arch@bytedance.com
-        - Link: https://lore.kernel.org/linux-mm/Z6OkXXYDorPrBvEQ@hm-sls2/ [1]
-        - Link: https://lwn.net/Articles/895431/ [2]
-        - Link: https://github.com/systemd/systemd/pull/36827 [3]
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

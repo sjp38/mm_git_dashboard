@@ -1,17 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
-  - dropped commits
-    - series "mm: vma flag tweaks". (6)
-      - e650bb30ca53 "mm: rename VMA flag helpers to be more readable (0/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/cover.1772704455.git.ljs@kernel.org
-        - Link: https://lkml.kernel.org/r/0f9cb3c511c478344fac0b3b3b0300bb95be95e9.1772704455.git.ljs@kernel.org
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

@@ -1,23 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - series "mm: cleanups around unmapping / zapping". (16)
-      - f52f202ddebb "mm/oom_kill: use MMU_NOTIFY_CLEAR in __oom_reap_task_mm() (4/16)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260227200848.114019-6-david@kernel.org
-      - ba25127a8f0c "mm/oom_kill: factor out zapping of VMA into zap_vma_for_reaping() (5/16)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260227200848.114019-7-david@kernel.org
-    - 909632714f68 "mm/oom_kill.c: simpilfy rcu call with guard(rcu)"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260303102600.105255-1-maninder1.s@samsung.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

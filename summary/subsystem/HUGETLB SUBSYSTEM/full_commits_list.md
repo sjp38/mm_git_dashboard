@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 61f1d4b98263 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - b741ffdef49f "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits

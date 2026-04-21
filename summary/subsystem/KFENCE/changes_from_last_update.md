@@ -1,15 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 0 commits
+- mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, maintainer: 1 -> 0 commits
-  - dropped commits
-    - da735962d05c "kfence: add kfence.fault parameter"
-      - Authored by a maintainer, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260225203639.3159463-1-elver@google.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

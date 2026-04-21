@@ -1,34 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 6 -> 0 commits
-  - series: 1 (5) -> 0 (0)
-    - no role, maintainer: 6 -> 0 commits
-  - dropped commits
-    - series "mm: zswap: add per-memcg stat for incompressible pages", v3. (2)
-      - 4e89004eebc5 "selftests/cgroup: add test for zswap incompressible pages (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260213071827.5688-3-jiayuan.chen@linux.dev
-    - ae1a645def13 "mm/zswap: remove SWP_SYNCHRONOUS_IO swapcache bypass workaround"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lkml.kernel.org/r/20260202-zswap-syncio-cleanup-v1-1-86bb24a64521@tencent.com
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - cf4d6ad54ba1 "mm: zswap: prevent memory cgroup release in zswap_compress() (17/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/340f315050fb8a67caaf01b4836d4f38a41cf1a8.1772711148.git.zhengqi.arch@bytedance.com
-      - d5ddaf4341f7 "mm: zswap: prevent lruvec release in zswap_folio_swapin() (19/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/02b3f76ee8d1132f69ac5baaedce38fb82b09a48.1772711148.git.zhengqi.arch@bytedance.com
-    - series "zswap pool per-CPU acomp_ctx simplifications", v3. (2)
-      - 1556478e9e86 "mm: zswap: remove redundant checks in zswap_cpu_comp_dead() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260331183351.29844-2-kanchanapsridhar2026@gmail.com
-        - Link: https://patchwork.kernel.org/project/linux-mm/list/?series=1046677
-      - ef3c0f6cb798 "mm: zswap: tie per-CPU acomp_ctx lifetime to the pool (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260331183351.29844-3-kanchanapsridhar2026@gmail.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

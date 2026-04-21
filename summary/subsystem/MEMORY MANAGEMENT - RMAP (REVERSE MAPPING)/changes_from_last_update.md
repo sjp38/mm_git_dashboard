@@ -1,31 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 0 commits
-  - series: 0 (3) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 3 -> 0 commits
-  - dropped commits
-    - series "Improve khugepaged scan logic", v8. (4)
-      - 6cc153f90b7c "mm: add folio_test_lazyfree helper (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260221093918.1456187-4-vernon2gm@gmail.com
-    - 514c2fe9927e "mm: centralize+fix comments about compound_mapcount() in new sync_with_folio_pmd_zap()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lkml.kernel.org/r/20260223163920.287720-1-david@kernel.org
-    - series "support batched checking of the young flag for MGLRU", v3. (6)
-      - 83ec1286b173 "mm: rmap: add a ZONE_DEVICE folio warning in folio_referenced() (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/64d6fb2a33f7101e1d4aca2c9052e0758b76d492.1772778858.git.baolin.wang@linux.alibaba.com
-      - 56e5b60b2114 "mm: support batched checking of the young flag for MGLRU (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/378f4acf7d07410aa7c2e4b49d56bb165918eb34.1772778858.git.baolin.wang@linux.alibaba.com
-    - a6a8c087dce0 "mm/mglru: fix cgroup OOM during MGLRU state switching"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260319-b4-switch-mglru-v2-v5-1-8898491e5f17@gmail.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

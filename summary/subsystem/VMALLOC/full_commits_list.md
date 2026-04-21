@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 044864b5a9f6 "vmalloc: fix buffer overflow in vrealloc_node_align()"
+    - b91b8a607aaf "vmalloc: fix buffer overflow in vrealloc_node_align()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260420114805.3572606-2-elver@google.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits

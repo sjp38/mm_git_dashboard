@@ -1,22 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, maintainer: 3 -> 0 commits
-  - dropped commits
-    - series "mm/kmemleak: Improve scan_should_stop() implementation". (2)
-      - fc9ef2978d44 "mm/kmemleak: remove unreachable return statement in scan_should_stop() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260130093729.2045858-2-zhongqiu.han@oss.qualcomm.com
-      - c2d9196541fa "mm/kmemleak: use PF_KTHREAD flag to detect kernel threads (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260130093729.2045858-3-zhongqiu.han@oss.qualcomm.com
-    - e9d973ef18b0 "mm: kmemleak: add CONFIG_DEBUG_KMEMLEAK_VERBOSE build option"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260323-kmemleak_report-v1-1-ba2cdd9c11b9@debian.org
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

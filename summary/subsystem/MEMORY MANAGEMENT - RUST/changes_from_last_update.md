@@ -1,20 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
-  - dropped commits
-    - series "mm: cleanups around unmapping / zapping". (16)
-      - de008c9ba568 "mm/memory: remove "zap_details" parameter from zap_page_range_single() (1/16)"
-        - Authored by no role player, reviewed by no role player
-        - Link: : https://lkml.kernel.org/r/8a27e9ac-2025-4724-a46d-0a7c90894ba7@kernel.org
-        - Link: https://lkml.kernel.org/r/20260227200848.114019-3-david@kernel.org
-      - 0326440c3545 "mm: rename zap_page_range_single() to zap_vma_range() (13/16)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260227200848.114019-15-david@kernel.org
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

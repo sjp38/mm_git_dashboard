@@ -1,20 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
-  - dropped commits
-    - 318d87b8fa73 "ksm: initialize the addr only once in rmap_walk_ksm"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260212192820223O_r2NQzSEPG_C56cs-z4l@zte.com.cn
-      - Link: https://lkml.kernel.org/r/20260212192932941MSsJEAyoRW4YdLBN7_myn@zte.com.cn
-    - series "mm/vma: convert vm_flags_t to vma_flags_t in vma code", v4. (25)
-      - 3a6455d56bd7 "mm: convert do_brk_flags() to use vma_flags_t (16/25)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/d02e3e45d9a33d7904b149f5604904089fd640ae.1774034900.git.ljs@kernel.org
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

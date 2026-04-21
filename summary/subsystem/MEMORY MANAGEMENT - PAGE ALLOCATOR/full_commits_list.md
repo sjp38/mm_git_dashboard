@@ -1,6 +1,12 @@
 - baseline: v7.0-11901-ga5d1079c28a5b
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - 99e63a49650c "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260420-zerotags-v1-1-3edc93e95bb4@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

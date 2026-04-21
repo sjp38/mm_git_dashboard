@@ -1,18 +1,21 @@
 - baseline: v7.0-11901-ga5d1079c28a5b
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
+- mm-hotfixes-unstable: 4 total, 0 (0) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 044864b5a9f6 "vmalloc: fix buffer overflow in vrealloc_node_align()"
+    - b91b8a607aaf "vmalloc: fix buffer overflow in vrealloc_node_align()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260420114805.3572606-2-elver@google.com
-    - ae6d5d1c4599 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - 2e17489f9c4a "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com
-    - 61f1d4b98263 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - 99e63a49650c "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260420-zerotags-v1-1-3edc93e95bb4@kernel.org
+    - b741ffdef49f "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -22,23 +25,23 @@
     - reviewer, maintainer: 2 commits
   - full commits list
     - series "fix MAP_DROPPABLE not supported errno". (2 commits)
-      - be78181f76bc "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
+      - d9e138274821 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260402235933.10588-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260402235933.10588-2-anthony.yznaga@oracle.com
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - 171095c206b1 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - 212f7f48a760 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - f1541b40cd42 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - 4adae5800447 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 90f88d13d60c "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
+      - c42d1a51775f "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

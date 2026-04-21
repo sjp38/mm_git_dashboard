@@ -1,16 +1,10 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
-  - dropped commits
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - 4e1d77a8f382 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

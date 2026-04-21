@@ -1,46 +1,13 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
-- mm-hotfixes-stable: 3 -> 0 commits
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - dropped commits
-    - f58df566524e "mm: filemap: fix nr_pages calculation overflow in filemap_map_pages()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/1cf1ac59018fc647a87b0dad605d4056a71c14e4.1773739704.git.baolin.wang@linux.alibaba.com
-    - cece9dc61daa "mm: reinstate unconditional writeback start in balance_dirty_pages()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lkml.kernel.org/r/20260326215127.3857682-2-joannelkoong@gmail.com
-    - 615d9bb2ccad "mm: call ->free_folio() directly in folio_unmap_invalidate()"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260413184314.3419945-1-willy@infradead.org
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - ae6d5d1c4599 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com
-- mm-stable: 3 -> 0 commits
-  - series: 0 (3) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
-  - dropped commits
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - 4e1d77a8f382 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-      - 511f04aac469 "folio_batch: rename PAGEVEC_SIZE to FOLIO_BATCH_SIZE (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-4-716868cc2d11@columbia.edu
-    - series "mm: cleanups around unmapping / zapping". (16)
-      - 32bc7fe4a6f4 "mm: rename zap_vma_pages() to zap_vma() (11/16)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260227200848.114019-13-david@kernel.org
-- mm-unstable: 1 -> 0 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

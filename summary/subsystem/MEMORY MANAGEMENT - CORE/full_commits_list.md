@@ -1,13 +1,19 @@
 - baseline: v7.0-11901-ga5d1079c28a5b
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - 99e63a49650c "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260420-zerotags-v1-1-3edc93e95bb4@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 90f88d13d60c "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
+      - c42d1a51775f "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -15,7 +21,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - b2e589650810 "kernel/fork: validate exit_signal in kernel_clone()"
+    - 5b63df59742d "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by a reviewer
       - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
       - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com

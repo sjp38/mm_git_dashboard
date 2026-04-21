@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - a6885a2e8b18 "selftests/mm: verify droppable mappings cannot be locked" (1/2)
+      - 8c3a3f152266 "selftests/mm: verify droppable mappings cannot be locked" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260402235933.10588-3-anthony.yznaga@oracle.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

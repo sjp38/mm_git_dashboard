@@ -1,76 +1,15 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 16 -> 0 commits
-  - series: 2 (12) -> 0 (0)
-    - no role, no role : 4 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 6 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
-    - maintainer, reviewer: 3 -> 0 commits
-  - dropped commits
-    - 7e74dd031620 "mm/page_alloc: avoid overcounting bulk alloc in watermark check"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/tencent_F36C5B5FB4DED98C79D9BDEE1210CD338C06@qq.com
-    - series "mm: Remove stray references to pagevec", v2. (4)
-      - 4e1d77a8f382 "folio_batch: rename pagevec.h to folio_batch.h (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260225-pagevec_cleanup-v2-3-716868cc2d11@columbia.edu
-    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
-      - f0369fb13619 "mm: change the interface of prep_compound_tail() (1/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-3-kas@kernel.org
-      - d50569612c29 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
-    - series "mm/page_alloc: pcp locking cleanup". (3)
-      - a373f371166d "mm/page_alloc: effectively disable pcp with CONFIG_SMP=n (0/3)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-0-f7e22e603447@kernel.org
-        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-1-f7e22e603447@kernel.org
-        - Link: https://lore.kernel.org/all/d762c46b-36f0-471a-b5b4-23c8cf5628ae@suse.cz/ [1]
-      - 0a2c52a9a2f5 "mm/page_alloc: remove IRQ saving/restoring from pcp locking (1/3)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-2-f7e22e603447@kernel.org
-      - e9c01915ae2b "mm/page_alloc: remove pcpu_spin_* wrappers (2/3)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260227-b4-pcp-locking-cleanup-v1-3-f7e22e603447@kernel.org
-    - series "Allow order zero pages in page reporting", v4. (5)
-      - 417607de1f4e "mm/page_reporting: add PAGE_REPORTING_ORDER_UNSPECIFIED (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-1-yuvraj.sakshith@oss.qualcomm.com
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-2-yuvraj.sakshith@oss.qualcomm.com
-      - 4a34e46eb5e9 "mm/page_reporting: change page_reporting_order to PAGE_REPORTING_ORDER_UNSPECIFIED (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lkml.kernel.org/r/20260303113032.3008371-6-yuvraj.sakshith@oss.qualcomm.com
-    - db359fccf212 "mm: introduce a new page type for page pool in page type"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: : https://lkml.kernel.org/r/20260316223113.20097-1-byungchul@sk.com
-      - Link: https://lkml.kernel.org/r/20260224051347.19621-1-byungchul@sk.com
-    - series "mm: thp: reduce unnecessary start_stop_khugepaged()", v7. (4)
-      - 3203a8706e81 "mm: ratelimit min_free_kbytes adjustment messages (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260317-thp_logs-v7-4-31eb98fa5a8b@debian.org
-    - series "mm: khugepaged cleanups and mTHP prerequisites", v4. (5)
-      - b90c453d2664 "mm: introduce is_pmd_order helper (1/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lkml.kernel.org/r/20260325114022.444081-3-npache@redhat.com
-    - b480cbb07102 "mm/page_alloc: don't increase highatomic reserve after pcp alloc"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lkml.kernel.org/r/20260320173426.1831267-1-fvdl@google.com
-      - Link: https://lore.kernel.org/all/20231122013925.1507-1-justinjiang@vivo.com/ [1]
-    - series "Eliminate Dying Memory Cgroup", v6. (33)
-      - db128b2c6b7d "mm: rename unlock_page_lruvec_irq and its variants (2/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/4e5e05271a250df4d1812e1832be65636a78c957.1772711148.git.zhengqi.arch@bytedance.com
-      - 31b54a5e8916 "mm: memcontrol: prepare for reparenting LRU pages for lruvec lock (23/33)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/23f22cbb1419f277a3483018b32158ae2b86c666.1772711148.git.zhengqi.arch@bytedance.com
-    - 6b1842775a46 "mm/alloc_tag: clear codetag for pages allocated before page_ext initialization"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260331081312.123719-1-hao.ge@linux.dev
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 99e63a49650c "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260420-zerotags-v1-1-3edc93e95bb4@kernel.org
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
