@@ -1,22 +1,46 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - ec05f51f1e65 "mm/vmalloc: take vmap_purge_lock in shrinker"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260413192646.14683-1-urezki@gmail.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 0 commits
-- mm-stable: 6 -> 6 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+  - dropped commits
+    - ec05f51f1e65 "mm/vmalloc: take vmap_purge_lock in shrinker"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260413192646.14683-1-urezki@gmail.com
+- mm-hotfixes-unstable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 044864b5a9f6 "vmalloc: fix buffer overflow in vrealloc_node_align()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260420114805.3572606-2-elver@google.com
+- mm-stable: 6 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - b9ec0ed90706 "mm: vmalloc: streamline vmalloc memory accounting"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lkml.kernel.org/r/20260223160147.3792777-1-hannes@cmpxchg.org
+    - c466412c73c3 "mm: memcontrol: switch to native NR_VMALLOC vmstat counter"
+      - Authored by a maintainer, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260223160147.3792777-2-hannes@cmpxchg.org
+    - series "Fix KASAN support for KHO restored vmalloc regions". (2)
+      - ec106365394d "mm/vmalloc: export clear_vm_uninitialized_flag() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260225220223.1695350-1-pasha.tatashin@soleen.com
+        - Link: https://lkml.kernel.org/r/20260225223857.1714801-2-pasha.tatashin@soleen.com
+    - 0edd78cd4d40 "mm/vmalloc: fix incorrect size reporting on allocation failure"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260302114740.2668450-1-urezki@gmail.com
+    - 3caedb3b99ea "vmalloc: support __GFP_RETRY_MAYFAIL and __GFP_NORETRY"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260302114740.2668450-2-urezki@gmail.com
+    - 3cb0dc0d0eab "mm: vmalloc: update outdated comment for renamed vread()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260321105820.7134-1-kexinsun@smail.nju.edu.cn
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

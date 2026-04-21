@@ -1,12 +1,45 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 8 -> 8 commits (no change)
-  - series: 2 (8) -> 2 (8) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 7 -> 7 commits (no change)
+- mm-stable: 8 -> 0 commits
+  - series: 2 (8) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 7 -> 0 commits
+  - dropped commits
+    - series "mm: memfd_luo: preserve file seals", v2. (2)
+      - 8a552d68a86e "mm: memfd_luo: preserve file seals (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260216185946.1215770-3-pratyush@kernel.org
+    - series "Make KHO Stateless", v9. (2)
+      - 3f2ad90060f6 "kho: adopt radix tree for preserved memory tracking (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: : https://lkml.kernel.org/r/20260309033530.244508-1-ranxiaokai627@163.com
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-1-jasonmiu@google.com
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-2-jasonmiu@google.com
+      - 6b0dd42d7681 "kho: remove finalize state and clients (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
+      - d9e4142e7635 "kho: add size parameter to kho_add_subtree() (0/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260323110747.193569-1-duanchenghao@kylinos.cn
+        - Link: https://lore.kernel.org/20260316-kho-v9-1-ed6dcd951988@debian.org
+      - 4916ae386760 "kho: rename fdt parameter to blob in kho_add/remove_subtree() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260316-kho-v9-2-ed6dcd951988@debian.org
+      - 85e41392820f "kho: persist blob size in KHO FDT (2/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260316-kho-v9-3-ed6dcd951988@debian.org
+      - 76aa46b9e404 "kho: kexec-metadata: track previous kernel chain (4/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: : https://lore.kernel.org/all/20260309-kho-v8-5-c3abcf4ac750@debian.org/ [1]
+        - Link: : https://lore.kernel.org/20260409-kho_fix_merge_issue-v1-1-710c84ceaa85@debian.org
+        - Link: https://lore.kernel.org/20260316-kho-v9-5-ed6dcd951988@debian.org
+      - e524feaad546 "kho: document kexec-metadata tracking feature (5/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260316-kho-v9-6-ed6dcd951988@debian.org
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

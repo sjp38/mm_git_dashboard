@@ -1,18 +1,41 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
-- mm-hotfixes-stable: 1 -> 2 commits
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- mm-hotfixes-stable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 2 commits
-  - changed commits
+    - no role, no role : 2 -> 0 commits
+  - dropped commits
+    - 2ecbe06abf9b "mm/memory_hotplug: maintain N_NORMAL_MEMORY during hotplug"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260330035941.518186-1-hao.li@linux.dev
     - 399289849560 "mm/zone_device: do not touch device folio after calling ->folio_free()"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
       - Link: https://lore.kernel.org/20260410230346.4009855-1-matthew.brost@intel.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-- mm-stable: 6 -> 6 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, no role : 6 -> 6 commits (no change)
+- mm-stable: 6 -> 0 commits
+  - series: 1 (4) -> 0 (0)
+    - no role, no role : 6 -> 0 commits
+  - dropped commits
+    - c5c48345135f "mm: name the anonymous MMOP enum as enum mmop"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/linux-mm/3424eba7-523b-4351-abd0-3a888a3e5e61@kernel.org/
+      - Link: https://lkml.kernel.org/r/20260211215447.2194189-1-gourry@gourry.net
+    - series "mm: memory hot(un)plug and SPARSEMEM cleanups", v2. (15)
+      - 89e69c7d187e "mm/memory_hotplug: fix possible race in scan_movable_pages() (0/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-0-096addc8800d@kernel.org
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-1-096addc8800d@kernel.org
+      - 9d80de66a046 "mm/memory_hotplug: remove for_each_valid_pfn() usage (1/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-2-096addc8800d@kernel.org
+      - 62257a5fb987 "mm/memory_hotplug: simplify check_pfn_span() (4/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-5-096addc8800d@kernel.org
+      - 22688ade3b54 "mm/sparse: remove sparse_decode_mem_map() (8/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260320-sparsemem_cleanups-v2-9-096addc8800d@kernel.org
+    - 3f74e30d857b "drivers/base/memory: fix stale reference to memory_block_add_nid()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260321105704.6093-1-kexinsun@smail.nju.edu.cn
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

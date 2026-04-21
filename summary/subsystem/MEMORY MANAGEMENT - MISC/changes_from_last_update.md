@@ -1,23 +1,151 @@
-- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-rc5-46-g24f9515de8778 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 8f5857be99f1 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260413-blkcg-v1-1-35b72622d16c@debian.org
-- mm-hotfixes-unstable: 1 -> 0 commits
+- baseline: v7.0-rc5-46-g24f9515de8778 -> v7.0-11901-ga5d1079c28a5b
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 0 commits
-- mm-stable: 35 -> 35 commits (no change)
-  - series: 2 (21) -> 2 (21) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 10 -> 10 commits (no change)
-    - maintainer, nobody: 5 -> 5 commits (no change)
-    - maintainer, no role : 3 -> 3 commits (no change)
+  - dropped commits
+    - 8f5857be99f1 "mm: blk-cgroup: fix use-after-free in cgwb_release_workfn()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260413-blkcg-v1-1-35b72622d16c@debian.org
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-stable: 35 -> 0 commits
+  - series: 2 (21) -> 0 (0)
+    - no role, nobody: 3 -> 0 commits
+    - no role, no role : 9 -> 0 commits
+    - no role, reviewer: 5 -> 0 commits
+    - no role, maintainer: 10 -> 0 commits
+    - maintainer, nobody: 5 -> 0 commits
+    - maintainer, no role : 3 -> 0 commits
+  - dropped commits
+    - 0fd66c343ce7 "mm/fadvise: validate offset in generic_fadvise"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260208135738.18992-1-klourencodev@gmail.com
+      - Link: https://lkml.kernel.org/r/20251222141817.13335-1-klourencodev@gmail.com
+    - 54218f10dfbe "selftests/mm: skip migration tests if NUMA is unavailable"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260218163941.13499-1-anishm7030@gmail.com
+    - 15c578d0dc99 "selftests/mm: remove duplicate include of unistd.h"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260211064311.2981726-1-nichen@iscas.ac.cn
+    - 1c7b8d8a51cc "mm/page_idle.c: remove redundant mmu notifier in aging code"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260203102649.2486836-1-qin.yuA@h3c.com
+    - series "Make KHO Stateless", v9. (2)
+      - 6b0dd42d7681 "kho: remove finalize state and clients (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260206021428.3386442-3-jasonmiu@google.com
+    - series "mm: Eliminate fake head pages from vmemmap optimization", v7. (17)
+      - d50569612c29 "mm: rename the 'compound_head' field in the 'struct page' to 'compound_info' (2/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-4-kas@kernel.org
+      - fed8676ca2b0 "hugetlb: update vmemmap_dedup.rst (16/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: : https://lkml.kernel.org/r/20260302105630.303492-1-kas@kernel.org
+        - Link: https://lkml.kernel.org/r/20260227194302.274384-18-kas@kernel.org
+    - 7a197d346a44 "Documentation: fix a hugetlbfs reservation statement"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lkml.kernel.org/r/20260302201015.1824798-1-jane.chu@oracle.com
+    - series "mm/damon: test and document power-of-2 min_region_sz requirement". (2)
+      - bfb1523cde1b "Docs/mm/damon/design: document the power-of-two limitation for addr_unit (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260307194222.202075-3-sj@kernel.org
+    - series "mm/damon: improve/fixup/update ratio calculation, test and documentation". (7)
+      - d7f00084f686 "Docs/admin-guide/mm/damn/lru_sort: fix intervals autotune parameter name (4/7)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260307195356.203753-6-sj@kernel.org
+      - 20675fc8c022 "Docs/mm/damon/maintainer-profile: use flexible review cadence (5/7)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260307195356.203753-7-sj@kernel.org
+      - a4e82de81fe5 "Docs/mm/damon/index: fix typo: autoamted -> automated (6/7)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lkml.kernel.org/r/20260307195356.203753-8-sj@kernel.org
+    - 1eba4c9599fa "docs: mm: fix typo in numa_memory_policy.rst"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260310151837.5888-1-akinobu.mita@gmail.com
+    - series "mm/damon: support multiple goal-based quota tuning algorithms". (11)
+      - 5a242f9daf29 "Docs/mm/damon/design: document the goal-based quota tuner selections (4/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260310010529.91162-6-sj@kernel.org
+      - d9cfe515d36e "Docs/admin-guide/mm/damon/usage: document goal_tuner sysfs file (5/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lkml.kernel.org/r/20260310010529.91162-7-sj@kernel.org
+    - f08f610ea00b "selftests/mm: pagemap_ioctl: remove hungarian notation"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lkml.kernel.org/r/20260311180737.3767545-1-rppt@kernel.org
+    - 4bdbddb4e482 "Docs/mm/damon: document exclusivity of special-purpose modules"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260315162945.80994-1-sj@kernel.org
+      - Link: https://lore.kernel.org/damon/20260314002119.79742-1-sj@kernel.org/T/#t [1]
+    - 01494f713ee3 "Docs/mm/damon/design: document DAMON actions when TRANSPARENT_HUGEPAGE is off"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260318035349.88715-1-sj@kernel.org
+      - Link: https://lore.kernel.org/66131775-180b-4b9f-b7ce-61a3e077b6e6@huawei-partners.com/ [1]
+    - series "mm: remove CONFIG_ARCH_ENABLE_MEMORY_HOTREMOVE and cleanup CONFIG_MIGRATION". (2)
+      - 6ebf98d71f9b "mm: introduce CONFIG_NUMA_MIGRATION and simplify CONFIG_MIGRATION (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lkml.kernel.org/r/20260319-config_migration-v1-2-42270124966f@kernel.org
+    - 6f1e1823875f "Docs/mm/damon: document min_nr_regions constraint and rationale"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lkml.kernel.org/r/20260320052428.213230-1-aethernet65535@gmail.com
+      - Link: https://lore.kernel.org/damon/20260319151528.86490-1-sj@kernel.org/T/#t [1]
+    - 224f12926150 "selftests/mm: add folio_split() and filemap_get_entry() race test"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/all/CAKNNEtw5_kZomhkugedKMPOG-sxs5Q5OLumWJdiWXv+C9Yct0w@mail.gmail.com/ [1]
+      - Link: https://github.com/dfinity/thp-madv-remove-test [2]
+      - Link: https://lkml.kernel.org/r/20260323163717.184107-1-ziy@nvidia.com
+    - series "kho: history: track previous kernel version and kexec boot count", v9. (6)
+      - 4916ae386760 "kho: rename fdt parameter to blob in kho_add/remove_subtree() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260316-kho-v9-2-ed6dcd951988@debian.org
+      - e524feaad546 "kho: document kexec-metadata tracking feature (5/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260316-kho-v9-6-ed6dcd951988@debian.org
+    - series "Docs/admin-guide/mm/damon: warn commit_inputs vs other params race". (2)
+      - 0beba407d458 "Docs/admin-guide/mm/damon/reclaim: warn commit_inputs vs param updates race (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260329153052.46657-2-sj@kernel.org
+        - Link: https://lore.kernel.org/20260319161620.189392-3-objecting@objecting.org [1]
+        - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [3]
+      - 0c13ed77dd2b "Docs/admin-guide/mm/damon/lru_sort: warn commit_inputs vs param updates race (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260329153052.46657-3-sj@kernel.org
+        - Link: https://lore.kernel.org/20260319161620.189392-2-objecting@objecting.org [1]
+    - 84f4928446e6 "tools/testing/selftests: add merge test for partial msealed range"
+      - Authored by no role player, reviewed by nobody
+      - Link: : https://lore.kernel.org/ac_mCIUQWRAbuH8F@kernel.org
+      - Link: : https://lore.kernel.org/1c9c922d-5cb5-4cff-9273-b737cdb57ca1@lucifer.local
+      - Link: https://lore.kernel.org/20260331073627.50010-1-ljs@kernel.org
+    - 047a6d494033 "selftests/mm: skip hugetlb_dio tests when DIO alignment is incompatible"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260401090520.24018-1-liwang@redhat.com
+    - series "Minor hmm_test fixes and cleanups". (3)
+      - f9d7975c52c0 "selftests/mm: hmm-tests: don't hardcode THP size to 2MB (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260331063445.3551404-3-apopple@nvidia.com
+        - Link: https://lore.kernel.org/linux-mm/8bd0396a-8997-4d2e-a13f-5aac033083d7@linux.dev/
+    - series "selftests/mm: skip several tests when thp is not available", v8. (6)
+      - fb0fca46b9b4 "selftests/mm/guard-regions: skip collapse test when thp not enabled (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260402014543.1671131-1-chuhu@redhat.com
+        - Link: https://lore.kernel.org/20260402014543.1671131-2-chuhu@redhat.com
+      - 929d5fbf1a00 "selftests/mm: soft-dirty: skip two tests when thp is not available (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260402014543.1671131-3-chuhu@redhat.com
+      - 710d2f307945 "selftests/mm: move write_file helper to vm_util (2/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260402014543.1671131-4-chuhu@redhat.com
+      - a784a3a39cc5 "selftests/mm/vm_util: robust write_file() (3/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260402014543.1671131-5-chuhu@redhat.com
+      - dad4964a34c2 "selftests/mm: split_huge_page_test: skip the test when thp is not available (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260402014543.1671131-6-chuhu@redhat.com
+      - cfe9a446f519 "selftests/mm: transhuge_stress: skip the test when thp not available (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260402014543.1671131-7-chuhu@redhat.com
+    - d432e8847f58 "selftests: mm: skip charge_reserved_hugetlb without killall"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260410044139.67480-1-create0818@163.com
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
