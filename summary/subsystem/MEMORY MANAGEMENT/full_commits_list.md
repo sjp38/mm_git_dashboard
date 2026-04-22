@@ -2,20 +2,21 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 4 total, 0 (0) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 1 commits
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
+    - reviewer, nobody: 1 commits
   - full commits list
-    - b91b8a607aaf "vmalloc: fix buffer overflow in vrealloc_node_align()"
+    - f02bfe86dc59 "vmalloc: fix buffer overflow in vrealloc_node_align()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260420114805.3572606-2-elver@google.com
-    - 2e17489f9c4a "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - 83e7df6cfbb3 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com
-    - 99e63a49650c "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260420-zerotags-v1-1-3edc93e95bb4@kernel.org
-    - b741ffdef49f "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - 89b57fb5dfb9 "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
+    - 3e816bf44738 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -25,23 +26,27 @@
     - reviewer, maintainer: 2 commits
   - full commits list
     - series "fix MAP_DROPPABLE not supported errno". (2 commits)
-      - d9e138274821 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
+      - 99fd72a30050 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260402235933.10588-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260402235933.10588-2-anthony.yznaga@oracle.com
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - 212f7f48a760 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - 11a3a1ca3bb7 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - 4adae5800447 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - 2bcc13c29c71 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
+- mm-new: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - c42d1a51775f "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
+      - fb47616c6107 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free" (2/8)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
+      - c9183ec6e2e3 "mm/vmstat: spread vmstat_update requeue across the stat interval" (3/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

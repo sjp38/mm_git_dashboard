@@ -2,37 +2,38 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 9 total, 0 (0) series, 9 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 5 commits
+    - no role, nobody: 4 commits
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
+    - reviewer, nobody: 1 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - b91b8a607aaf "vmalloc: fix buffer overflow in vrealloc_node_align()"
+    - f02bfe86dc59 "vmalloc: fix buffer overflow in vrealloc_node_align()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260420114805.3572606-2-elver@google.com
-    - b6336420be1a "mailmap: update entry for Dan Carpenter"
+    - 77b37c599d48 "mailmap: update entry for Dan Carpenter"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/ab2d502542c24491c191a76494717c340afb9a9b.1776691831.git.error27@gmail.com
-    - 4666e8e3279f "liveupdate: fix return value on session allocation failure"
+    - 4ec083c34758 "liveupdate: fix return value on session allocation failure"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260415193738.515491-1-pasha.tatashin@soleen.com
-    - 3287cbee3ecd "kho: fix error handling in kho_add_subtree()"
+    - dc62864dfc27 "kho: fix error handling in kho_add_subtree()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260410-kho_fix_send-v2-1-1b4debf7ee08@debian.org
-    - 2e17489f9c4a "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - 83e7df6cfbb3 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com
-    - 99e63a49650c "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260420-zerotags-v1-1-3edc93e95bb4@kernel.org
-    - 87c749e38e00 "lib: kunit_iov_iter: fix test fail on powerpc"
+    - 89b57fb5dfb9 "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
+    - ccb52422c4f9 "lib: kunit_iov_iter: fix test fail on powerpc"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260421070707.992873-1-lk@c--e.de
-    - 023acb6ce56e "device-dax: fix refcount leak in __devm_create_dev_dax() error path"
+    - 34d4ddbb44c0 "device-dax: fix refcount leak in __devm_create_dev_dax() error path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260412070010.2402830-1-lgs201920130244@gmail.com
-    - b741ffdef49f "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - 3e816bf44738 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -43,26 +44,30 @@
     - reviewer, maintainer: 2 commits
   - full commits list
     - series "fix MAP_DROPPABLE not supported errno". (2 commits)
-      - d9e138274821 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
+      - 99fd72a30050 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260402235933.10588-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260402235933.10588-2-anthony.yznaga@oracle.com
-      - 8c3a3f152266 "selftests/mm: verify droppable mappings cannot be locked" (1/2)
+      - c6451465c8fc "selftests/mm: verify droppable mappings cannot be locked" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260402235933.10588-3-anthony.yznaga@oracle.com
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - 212f7f48a760 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - 11a3a1ca3bb7 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - 4adae5800447 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - 2bcc13c29c71 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
+- mm-new: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - c42d1a51775f "mm/vmstat: spread vmstat_update requeue across the stat interval" (2/8)
+      - fb47616c6107 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free" (2/8)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
+      - c9183ec6e2e3 "mm/vmstat: spread vmstat_update requeue across the stat interval" (3/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -72,50 +77,50 @@
     - no role, no role : 6 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 5b63df59742d "kernel/fork: validate exit_signal in kernel_clone()"
+    - 6a4ccbd4f68d "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by a reviewer
       - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
       - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com
       - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
       - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
     - series "kallsyms: embed source file:line info in kernel stack traces", v4. (4 commits)
-      - af1ba36a62e8 "kallsyms: embed source file:line info in kernel stack traces" (0/4)
+      - 40bb23ea5c89 "kallsyms: embed source file:line info in kernel stack traces" (0/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260322131543.971079-1-sashal@kernel.org
         - Link: https://lore.kernel.org/20260322131543.971079-2-sashal@kernel.org
-      - d7ce5ae77ce5 "kallsyms: extend lineinfo to loadable modules" (1/4)
+      - 6fe9a3920a62 "kallsyms: extend lineinfo to loadable modules" (1/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260322131543.971079-3-sashal@kernel.org
-      - 472c0b66c88c "kallsyms: delta-compress lineinfo tables for ~2.7x size reduction" (2/4)
+      - daf19111ed04 "kallsyms: delta-compress lineinfo tables for ~2.7x size reduction" (2/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260322131543.971079-4-sashal@kernel.org
-      - 69c6e869b30e "kallsyms: add KUnit tests for lineinfo feature" (3/4)
+      - 082ab9491824 "kallsyms: add KUnit tests for lineinfo feature" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260322131543.971079-5-sashal@kernel.org
-    - 7420dc721630 "lib/idr: fix ida_find_first_range() missing IDs across chunk boundaries"
+    - fdb42359a9c9 "lib/idr: fix ida_find_first_range() missing IDs across chunk boundaries"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260306203047.2821852-1-objecting@objecting.org
     - series "lib and lib/cmdline enhancements", v9. (6 commits)
-      - ea1c997b0498 "lib: fix _parse_integer_limit() to handle overflow" (0/6)
+      - a55ab95e4fbe "lib: fix _parse_integer_limit() to handle overflow" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260403103338.1122415-1-dmantipov@yandex.ru
         - Link: https://lore.kernel.org/20260403103338.1122415-2-dmantipov@yandex.ru
-      - 4913f453be57 "lib: fix memparse() to handle overflow" (1/6)
+      - f8398e5b9c00 "lib: fix memparse() to handle overflow" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260403103338.1122415-3-dmantipov@yandex.ru
-      - 4e833d837a65 "lib: add more string to 64-bit integer conversion overflow tests" (2/6)
+      - cec755069270 "lib: add more string to 64-bit integer conversion overflow tests" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260403103338.1122415-4-dmantipov@yandex.ru
-      - 5898c80f5d57 "lib/cmdline_kunit: add test case for memparse()" (3/6)
+      - 0794faaaf959 "lib/cmdline_kunit: add test case for memparse()" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260403103338.1122415-5-dmantipov@yandex.ru
-      - 0aac27719d72 "lib/cmdline: adjust a few comments to fix kernel-doc -Wreturn warnings" (4/6)
+      - 9ffede906378 "lib/cmdline: adjust a few comments to fix kernel-doc -Wreturn warnings" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260403103338.1122415-6-dmantipov@yandex.ru
-      - 52c2bce35796 "riscv: export symbols needed for riscv32 EFI stub" (5/6)
+      - 676661f82e8c "riscv: export symbols needed for riscv32 EFI stub" (5/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260403103338.1122415-7-dmantipov@yandex.ru
-    - 5aceb1850cce "lib/tests: extend cmdline KUnit with next_arg() tests"
+    - 1ec262e9052e "lib/tests: extend cmdline KUnit with next_arg() tests"
       - Authored by no role player, reviewed by no role player
       - Link: : https://lore.kernel.org/20260316211249.88601-1-shuvampandey1@gmail.com
       - Link: https://lore.kernel.org/20260316101227.15807-1-shuvampandey1@gmail.com

@@ -1,13 +1,19 @@
 - baseline: v7.0-11901-ga5d1079c28a5b
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - reviewer, nobody: 1 commits
+  - full commits list
+    - 89b57fb5dfb9 "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 1 total, 1 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
     - series "fix MAP_DROPPABLE not supported errno". (2 commits)
-      - d9e138274821 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
+      - 99fd72a30050 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260402235933.10588-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260402235933.10588-2-anthony.yznaga@oracle.com

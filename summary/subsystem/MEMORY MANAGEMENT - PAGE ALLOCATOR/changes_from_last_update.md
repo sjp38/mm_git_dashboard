@@ -1,19 +1,26 @@
 - baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - 99e63a49650c "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260420-zerotags-v1-1-3edc93e95bb4@kernel.org
+    - no role, nobody: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
+  - changed commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - fb47616c6107 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-hotfixes-unstable -> mm-new
+        - added "Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org"
+        - added "Cc: Mark Brown <broonie@kernel.org>"
+        - added "Cc: Dev Jain <dev.jain@arm.com>"
+        - dropped "Link: https://lore.kernel.org/20260420-zerotags-v1-1-3edc93e95bb4@kernel.org"
+        - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

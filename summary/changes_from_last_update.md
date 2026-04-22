@@ -1,19 +1,22 @@
 - baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 7 -> 9 commits
+- mm-hotfixes-unstable: 9 -> 9 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 3 -> 5 commits
+    - no role, nobody: 5 -> 4 commits
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, nobody: 0 -> 1 commits
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - 99e63a49650c "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+    - 89b57fb5dfb9 "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
+  - changed commits
+    - ccb52422c4f9 "lib: kunit_iov_iter: fix test fail on powerpc"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260420-zerotags-v1-1-3edc93e95bb4@kernel.org
-    - 87c749e38e00 "lib: kunit_iov_iter: fix test fail on powerpc"
-      - Authored by no role player, reviewed by nobody
+      - added "Tested-by: Josh Law <joshlaw48@gmail.com>"
       - Link: https://lore.kernel.org/20260421070707.992873-1-lk@c--e.de
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
@@ -22,9 +25,20 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
+- mm-new: 1 -> 2 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, nobody: 0 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - fb47616c6107 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-hotfixes-unstable -> mm-new
+        - added "Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org"
+        - added "Cc: Mark Brown <broonie@kernel.org>"
+        - added "Cc: Dev Jain <dev.jain@arm.com>"
+        - dropped "Link: https://lore.kernel.org/20260420-zerotags-v1-1-3edc93e95bb4@kernel.org"
+        - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 13 -> 13 commits (no change)
