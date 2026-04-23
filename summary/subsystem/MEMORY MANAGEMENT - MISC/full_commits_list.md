@@ -6,9 +6,31 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - c6451465c8fc "selftests/mm: verify droppable mappings cannot be locked" (1/2)
+      - 85a5d3d85615 "selftests/mm: verify droppable mappings cannot be locked" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260402235933.10588-3-anthony.yznaga@oracle.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 5 total, 1 (5) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+    - reviewer, nobody: 1 commits
+    - reviewer, reviewer: 2 commits
+  - full commits list
+    - series "selftests/mm: clean up build output and verbosity", v3. (2 commits)
+      - fe9f4790c37c "selftests/mm: respect build verbosity settings for 32/64-bit targets" (0/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260422080446.26020-1-wangli.ahau@gmail.com
+        - Link: https://lore.kernel.org/20260422080446.26020-2-wangli.ahau@gmail.com
+      - 59e90d0acd53 "selftests/mm: suppress compiler error in liburing check" (1/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260422080446.26020-3-wangli.ahau@gmail.com
+      - 26f8bf6378e9 "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260419185750.260784-3-npache@redhat.com
+      - 8513634ec4d0 "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260419185750.260784-8-npache@redhat.com
+      - 4ea1c002384c "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260419185750.260784-14-npache@redhat.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

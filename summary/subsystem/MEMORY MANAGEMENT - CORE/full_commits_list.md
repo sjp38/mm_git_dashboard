@@ -1,31 +1,50 @@
 - baseline: v7.0-11901-ga5d1079c28a5b
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
+    - no role, maintainer: 1 commits
     - reviewer, nobody: 1 commits
+    - maintainer, nobody: 1 commits
   - full commits list
-    - 89b57fb5dfb9 "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
+    - 51b5c6333049 "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
+    - 694e5d358f48 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
+    - 13fdb1736e1a "mm-page_alloc-fix-initialization-of-tags-of-the-huge-zero-folio-with-init_on_free-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 2 total, 0 (2) series, 0 non-series commits
+- mm-new: 5 total, 1 (2) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, reviewer: 1 commits
+    - no role, no role : 1 commits
+    - no role, reviewer: 4 commits
   - full commits list
-      - fb47616c6107 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free" (2/8)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
-      - c9183ec6e2e3 "mm/vmstat: spread vmstat_update requeue across the stat interval" (3/8)
+    - a17a1415271c "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
+    - b7c086571302 "mm: convert vmemmap_p?d_populate() to static functions"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260423101441.7089-1-kaitao.cheng@linux.dev
+    - series "mm: Free contiguous order-0 pages efficiently", v6. (3 commits)
+      - ef2fe031b104 "mm/page_alloc: optimize free_contig_range()" (0/3)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org
+        - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
+        - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
+        - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
+      - 593fb156d0b4 "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
+    - 277a7fae172b "mm/vmstat: spread vmstat_update requeue across the stat interval"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 6a4ccbd4f68d "kernel/fork: validate exit_signal in kernel_clone()"
+    - 4bf080eda16a "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by a reviewer
       - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
       - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com

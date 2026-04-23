@@ -7,8 +7,59 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 14 commits
+  - series: 0 (0) -> 1 (13)
+    - no role, no role : 0 -> 1 commits
+    - reviewer, nobody: 0 -> 4 commits
+    - reviewer, no role : 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 3 commits
+    - reviewer, maintainer: 0 -> 5 commits
+  - new commits
+    - a411869ff563 "mm/huge_memory: Fix outdated comment about freeing subpages in __folio_split"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260423034917.8234-1-baohua@kernel.org
+    - series "khugepaged: mTHP support", v16. (13)
+      - 6b93258a0fef "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support (0/13)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260419185750.260784-1-npache@redhat.com
+        - Link: https://lore.kernel.org/20260419185750.260784-2-npache@redhat.com
+      - 26f8bf6378e9 "mm/khugepaged: generalize alloc_charge_folio() (1/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260419185750.260784-3-npache@redhat.com
+      - acefe78ad6e9 "mm/khugepaged: rework max_ptes_* handling with helper functions (2/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260419185750.260784-4-npache@redhat.com
+      - 636a15872b20 "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support (3/13)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260419185750.260784-5-npache@redhat.com
+      - fab4c8981a17 "mm/khugepaged: generalize collapse_huge_page for mTHP collapse (4/13)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260419185750.260784-6-npache@redhat.com
+      - 1aa12122b4c4 "mm/khugepaged: skip collapsing mTHP to smaller orders (5/13)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260419185750.260784-7-npache@redhat.com
+        - Link: https://lore.kernel.org/lkml/20241216165105.56185-11-dev.jain@arm.com/ [1]
+      - 8513634ec4d0 "mm/khugepaged: add per-order mTHP collapse failure statistics (6/13)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260419185750.260784-8-npache@redhat.com
+      - 2d45a080e71a "mm/khugepaged: improve tracepoints for mTHP orders (7/13)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260419185750.260784-9-npache@redhat.com
+      - da78ccf2527c "mm/khugepaged: introduce collapse_allowable_orders helper function (8/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com
+      - 304116ead728 "mm/khugepaged: Introduce mTHP collapse support (9/13)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260419185750.260784-11-npache@redhat.com
+      - 213e218b17cb "mm/khugepaged: avoid unnecessary mTHP collapse attempts (10/13)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260419185750.260784-12-npache@redhat.com
+      - 59c42489949a "mm/khugepaged: run khugepaged for all orders (11/13)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260419185750.260784-13-npache@redhat.com
+      - 4ea1c002384c "Documentation: mm: update the admin guide for mTHP collapse (12/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260419185750.260784-14-npache@redhat.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

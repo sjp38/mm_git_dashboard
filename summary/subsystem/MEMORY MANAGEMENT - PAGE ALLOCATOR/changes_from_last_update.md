@@ -1,26 +1,44 @@
 - baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 0 commits
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 694e5d358f48 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-hotfixes-unstable
+      - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
+      - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
+      - added "Cc: Liam Howlett <liam@infradead.org>"
+      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+      - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
+      - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+      - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-  - changed commits
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - fb47616c6107 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free (2/8)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-hotfixes-unstable -> mm-new
-        - added "Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org"
-        - added "Cc: Mark Brown <broonie@kernel.org>"
-        - added "Cc: Dev Jain <dev.jain@arm.com>"
-        - dropped "Link: https://lore.kernel.org/20260420-zerotags-v1-1-3edc93e95bb4@kernel.org"
-        - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
+- mm-new: 1 -> 4 commits
+  - series: 0 (1) -> 1 (3)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 0 -> 4 commits
+  - new commits
+    - a17a1415271c "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
+    - series "mm: Free contiguous order-0 pages efficiently", v6. (3)
+      - ef2fe031b104 "mm/page_alloc: optimize free_contig_range() (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
+        - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
+        - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
+      - 593fb156d0b4 "vmalloc: optimize vfree with free_pages_bulk() (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
+      - 8aa8d119b0d4 "mm/page_alloc: optimize __free_contig_frozen_range() (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260401101634.2868165-4-usama.anjum@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - reviewer, nobody: 1 commits
   - full commits list
-    - 89b57fb5dfb9 "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
+    - 51b5c6333049 "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -13,10 +13,16 @@
     - no role, reviewer: 1 commits
   - full commits list
     - series "fix MAP_DROPPABLE not supported errno". (2 commits)
-      - 99fd72a30050 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
+      - 60b7bb4bda42 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260402235933.10588-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260402235933.10588-2-anthony.yznaga@oracle.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, reviewer: 1 commits
+  - full commits list
+      - da78ccf2527c "mm/khugepaged: introduce collapse_allowable_orders helper function" (8/13)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

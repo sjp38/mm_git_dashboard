@@ -8,8 +8,13 @@
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 2a01060494de "mm/lruvec: preemptively free dead folios during lru_add drain"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260423164307.29805-1-jp.kobryn@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
