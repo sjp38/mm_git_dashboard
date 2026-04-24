@@ -8,10 +8,22 @@
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
   - new commits
+    - 937273b142b7 "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260418120233.7162-1-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
+      - Link: https://lore.kernel.org/lkml/20160606022724.GA26227@yexl-desktop/ [2]
+      - Link: https://lore.kernel.org/lkml/20210120173612.20913-1-will@kernel.org/ [3]
+    - b55a2249b750 "mm/page_io: rename swap_iocb fields for clarity"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260402072650.48811-1-devnexen@gmail.com
+  - dropped commits
     - 2a01060494de "mm/lruvec: preemptively free dead folios during lru_add drain"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260423164307.29805-1-jp.kobryn@linux.dev

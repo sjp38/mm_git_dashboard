@@ -6,17 +6,28 @@
     - reviewer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 1 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - reviewer, reviewer: 0 -> 1 commits
-  - new commits
-    - series "khugepaged: mTHP support", v16. (13)
-      - da78ccf2527c "mm/khugepaged: introduce collapse_allowable_orders helper function (8/13)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com
+- mm-unstable: 1 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, reviewer: 1 -> 0 commits
+- mm-new: 1 -> 2 commits
+  - series: 0 (1) -> 1 (2)
+    - no role, reviewer: 0 -> 1 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "fix MAP_DROPPABLE not supported errno", v4. (3)
+      - ca92fe62cd2b "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-new
+        - added "Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com"
+        - added "Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Link: https://lore.kernel.org/20260402235933.10588-2-anthony.yznaga@oracle.com"
+        - dropped "Link: https://lore.kernel.org/20260402235933.10588-1-anthony.yznaga@oracle.com"
+        - dropped "Acked-by: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
+        - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

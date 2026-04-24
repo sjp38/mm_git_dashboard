@@ -3,6 +3,27 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 5 total, 1 (3) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, maintainer: 3 commits
+  - full commits list
+    - series "mm/memory-failure: add panic option for unrecoverable pages", v5. (4 commits)
+      - 5e8e08693d36 "mm/memory-failure: report MF_MSG_KERNEL for reserved pages" (0/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260424-ecc_panic-v5-0-a35f4b50425c@debian.org
+        - Link: https://lore.kernel.org/20260424-ecc_panic-v5-1-a35f4b50425c@debian.org
+      - 4c615cd06a05 "mm/memory-failure: add panic option for unrecoverable pages" (1/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260424-ecc_panic-v5-2-a35f4b50425c@debian.org
+      - 62a5fee9d866 "selftests/mm: regression test for panic_on_unrecoverable_memory_failure" (3/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260424-ecc_panic-v5-4-a35f4b50425c@debian.org
+    - 973b8adc39e1 "mm/memory-failure: use bool for forcekill state"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260410074740.2524718-1-ye.liu@linux.dev
+    - 1044e94f9831 "mm/memory-failure: replace magic number 3 with GET_PAGE_MAX_RETRY_NUM"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260402064946.1124250-1-18810879172@163.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

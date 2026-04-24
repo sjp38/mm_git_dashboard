@@ -4,11 +4,27 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - c073cc16d9ce "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - f47fc45d9080 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 3 total, 1 (3) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, nobody: 1 commits
+    - reviewer, reviewer: 1 commits
+    - reviewer, maintainer: 1 commits
+  - full commits list
+    - series "Remove read-only THP support for FSes without large folio support", v4. (12 commits)
+      - 23d94d17fc75 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/12)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260424024915.28758-1-ziy@nvidia.com
+        - Link: https://lore.kernel.org/20260424024915.28758-2-ziy@nvidia.com
+      - 1137b8d2684e "mm: fs: remove filemap_nr_thps*() functions and their users" (5/12)
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260424024915.28758-7-ziy@nvidia.com
+      - 6e34c7c55423 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/12)
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260424024915.28758-10-ziy@nvidia.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

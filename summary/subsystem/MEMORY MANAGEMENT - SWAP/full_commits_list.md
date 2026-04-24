@@ -7,19 +7,26 @@
     - reviewer, maintainer: 2 commits
   - full commits list
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - 90f824499acf "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - 5d002d0e49fe "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - a22b29c0b1a2 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - 94039de91824 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, nobody: 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 2a01060494de "mm/lruvec: preemptively free dead folios during lru_add drain"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260423164307.29805-1-jp.kobryn@linux.dev
+    - 937273b142b7 "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260418120233.7162-1-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
+      - Link: https://lore.kernel.org/lkml/20160606022724.GA26227@yexl-desktop/ [2]
+      - Link: https://lore.kernel.org/lkml/20210120173612.20913-1-will@kernel.org/ [3]
+    - b55a2249b750 "mm/page_io: rename swap_iocb fields for clarity"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260402072650.48811-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

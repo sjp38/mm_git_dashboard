@@ -1,36 +1,58 @@
 - baseline: v7.0-11901-ga5d1079c28a5b
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - 85a5d3d85615 "selftests/mm: verify droppable mappings cannot be locked" (1/2)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260402235933.10588-3-anthony.yznaga@oracle.com
-- mm-new: 5 total, 1 (5) series, 0 non-series commits
+    - d0aad55be346 "selftests/mm: specify requirement for PROC_MEM_ALWAYS_FORCE=y"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260416-selftests-mm-proc-mem-always-force-v1-1-3f5865153c67@kernel.org
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 11 total, 1 (10) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
-    - reviewer, nobody: 1 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 5 commits
+    - reviewer, nobody: 2 commits
     - reviewer, reviewer: 2 commits
+    - maintainer, nobody: 1 commits
   - full commits list
     - series "selftests/mm: clean up build output and verbosity", v3. (2 commits)
-      - fe9f4790c37c "selftests/mm: respect build verbosity settings for 32/64-bit targets" (0/2)
+      - c98b4aa13f8a "selftests/mm: respect build verbosity settings for 32/64-bit targets" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260422080446.26020-1-wangli.ahau@gmail.com
         - Link: https://lore.kernel.org/20260422080446.26020-2-wangli.ahau@gmail.com
-      - 59e90d0acd53 "selftests/mm: suppress compiler error in liburing check" (1/2)
+      - 417f4dfb5fab "selftests/mm: suppress compiler error in liburing check" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260422080446.26020-3-wangli.ahau@gmail.com
-      - 26f8bf6378e9 "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
+      - 921d2ba31f14 "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-3-npache@redhat.com
-      - 8513634ec4d0 "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
+      - 97a49e9609da "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260419185750.260784-8-npache@redhat.com
-      - 4ea1c002384c "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
+      - 2cac22e06113 "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-14-npache@redhat.com
+      - 4dec35be4c3a "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged" (10/12)
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260424024915.28758-12-ziy@nvidia.com
+      - c0e19b3f8a15 "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions" (11/12)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260424024915.28758-13-ziy@nvidia.com
+      - 62a5fee9d866 "selftests/mm: regression test for panic_on_unrecoverable_memory_failure" (3/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260424-ecc_panic-v5-4-a35f4b50425c@debian.org
+      - 86055cdc2834 "selftests/mm: verify droppable mappings cannot be locked" (1/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com
+      - d3c404bac3a5 "selftests/mm: run the MAP_DROPPABLE selftest" (2/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260416033939.49981-4-anthony.yznaga@oracle.com
+    - 806029fe3981 "Docs/mm/damon/maintainer-profile: add AI review usage guideline"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260412211932.89038-1-sj@kernel.org
+      - Link: https://github.com/sashiko-dev/sashiko/commit/ad9f4a98f958 [1]
+      - Link: https://github.com/sashiko-dev/sashiko/commit/b554c7b6e733 [2]
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

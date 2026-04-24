@@ -1,37 +1,60 @@
 - baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - d0aad55be346 "selftests/mm: specify requirement for PROC_MEM_ALWAYS_FORCE=y"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260416-selftests-mm-proc-mem-always-force-v1-1-3f5865153c67@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-- mm-new: 0 -> 5 commits
-  - series: 0 (0) -> 1 (5)
-    - no role, no role : 0 -> 2 commits
-    - reviewer, nobody: 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 2 commits
+- mm-unstable: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+- mm-new: 5 -> 11 commits
+  - series: 1 (5) -> 1 (10)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 2 -> 5 commits
+    - reviewer, nobody: 1 -> 2 commits
+    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - series "selftests/mm: clean up build output and verbosity", v3. (2)
-      - fe9f4790c37c "selftests/mm: respect build verbosity settings for 32/64-bit targets (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260422080446.26020-1-wangli.ahau@gmail.com
-        - Link: https://lore.kernel.org/20260422080446.26020-2-wangli.ahau@gmail.com
-      - 59e90d0acd53 "selftests/mm: suppress compiler error in liburing check (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260422080446.26020-3-wangli.ahau@gmail.com
-    - series "khugepaged: mTHP support", v16. (13)
-      - 26f8bf6378e9 "mm/khugepaged: generalize alloc_charge_folio() (1/13)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260419185750.260784-3-npache@redhat.com
-      - 8513634ec4d0 "mm/khugepaged: add per-order mTHP collapse failure statistics (6/13)"
+    - series "Remove read-only THP support for FSes without large folio support", v4. (12)
+      - 4dec35be4c3a "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged (10/12)"
         - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260419185750.260784-8-npache@redhat.com
-      - 4ea1c002384c "Documentation: mm: update the admin guide for mTHP collapse (12/13)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260419185750.260784-14-npache@redhat.com
+        - Link: https://lore.kernel.org/20260424024915.28758-12-ziy@nvidia.com
+      - c0e19b3f8a15 "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260424024915.28758-13-ziy@nvidia.com
+    - series "mm/memory-failure: add panic option for unrecoverable pages", v5. (4)
+      - 62a5fee9d866 "selftests/mm: regression test for panic_on_unrecoverable_memory_failure (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260424-ecc_panic-v5-4-a35f4b50425c@debian.org
+    - series "fix MAP_DROPPABLE not supported errno", v4. (3)
+      - d3c404bac3a5 "selftests/mm: run the MAP_DROPPABLE selftest (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260416033939.49981-4-anthony.yznaga@oracle.com
+    - 806029fe3981 "Docs/mm/damon/maintainer-profile: add AI review usage guideline"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260412211932.89038-1-sj@kernel.org
+      - Link: https://github.com/sashiko-dev/sashiko/commit/ad9f4a98f958 [1]
+      - Link: https://github.com/sashiko-dev/sashiko/commit/b554c7b6e733 [2]
+  - changed commits
+    - series "fix MAP_DROPPABLE not supported errno", v4. (3)
+      - 86055cdc2834 "selftests/mm: verify droppable mappings cannot be locked (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - added "Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com"
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - added "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260402235933.10588-3-anthony.yznaga@oracle.com"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

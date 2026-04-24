@@ -8,8 +8,23 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 3 commits
+  - series: 0 (0) -> 1 (3)
+    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - new commits
+    - series "Remove read-only THP support for FSes without large folio support", v4. (12)
+      - 23d94d17fc75 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/12)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260424024915.28758-1-ziy@nvidia.com
+        - Link: https://lore.kernel.org/20260424024915.28758-2-ziy@nvidia.com
+      - 1137b8d2684e "mm: fs: remove filemap_nr_thps*() functions and their users (5/12)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260424024915.28758-7-ziy@nvidia.com
+      - 6e34c7c55423 "mm/truncate: use folio_split() in truncate_inode_partial_folio() (8/12)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260424024915.28758-10-ziy@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

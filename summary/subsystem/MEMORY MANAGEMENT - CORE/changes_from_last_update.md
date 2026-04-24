@@ -1,52 +1,48 @@
 - baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 3 commits
+- mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - 13fdb1736e1a "mm-page_alloc-fix-initialization-of-tags-of-the-huge-zero-folio-with-init_on_free-fix"
-      - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - 694e5d358f48 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-hotfixes-unstable
-      - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
-      - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
-      - added "Cc: Liam Howlett <liam@infradead.org>"
-      - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-      - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-      - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 5 commits
-  - series: 0 (2) -> 1 (2)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 1 -> 4 commits
+- mm-new: 5 -> 11 commits
+  - series: 1 (2) -> 1 (3)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 4 commits
+    - no role, reviewer: 4 -> 5 commits
+    - no role, maintainer: 0 -> 1 commits
   - new commits
-    - a17a1415271c "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
-    - b7c086571302 "mm: convert vmemmap_p?d_populate() to static functions"
+    - 393b65213b2c "mm/memory: update stale locking comments for fault handlers"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260424092217.263648-1-adi.sharma@zohomail.in
+    - series "Remove read-only THP support for FSes without large folio support", v4. (12)
+      - e81a770c1ad9 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option (4/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260424024915.28758-6-ziy@nvidia.com
+    - bde3edbc3a2d "mm/sparse: remove unnecessary NULL check before allocating mem_section"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260423101441.7089-1-kaitao.cheng@linux.dev
-    - series "mm: Free contiguous order-0 pages efficiently", v6. (3)
-      - ef2fe031b104 "mm/page_alloc: optimize free_contig_range() (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
-      - 593fb156d0b4 "vmalloc: optimize vfree with free_pages_bulk() (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
+      - Link: https://lore.kernel.org/20260419144225.2875654-1-ekffu200098@gmail.com
+    - 7c27bf4af20d "mm/sparse: remove sparse buffer pre-allocation mechanism"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260410092419.2446420-1-songmuchun@bytedance.com
+    - 6e1a70e4a481 "mm/vmpressure: skip socket pressure for costly order reclaim"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260406195014.112521-1-jp.kobryn@linux.dev
+    - a82b929595c6 "mm/thp: dead code cleanup in Kconfig"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260331070730.33915-1-julianbraha@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 1 -> 1 commits (no change)
+- mm-nonmm-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 80354eddf7e6 "treewide: fix indentation and whitespace in Kconfig files"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260407053945.14116-1-linux.amoon@gmail.com
