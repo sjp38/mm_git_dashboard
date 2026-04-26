@@ -10,17 +10,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 11 -> 10 commits
-  - series: 1 (3) -> 1 (2)
+- mm-new: 10 -> 13 commits
+  - series: 1 (2) -> 2 (5)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 3 commits
+    - no role, no role : 3 -> 5 commits
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - dropped commits
-    - series "Remove read-only THP support for FSes without large folio support", v4. (12)
-      - e81a770c1ad9 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option (4/12)"
+    - no role, maintainer: 1 -> 2 commits
+  - new commits
+    - series "mm: Fix vmemmap optimization accounting and initialization", v7. (6)
+      - ba2088724e3a "mm/sparse-vmemmap: fix vmemmap accounting underflow (0/6)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260424024915.28758-6-ziy@nvidia.com
+        - Link: https://lore.kernel.org/20260426092640.375967-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260426092640.375967-2-songmuchun@bytedance.com
+      - 323da073f695 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths (2/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260426092640.375967-4-songmuchun@bytedance.com
+      - 066c73e3c87a "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260426092640.375967-5-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)

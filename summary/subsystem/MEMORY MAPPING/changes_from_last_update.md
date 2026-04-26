@@ -8,10 +8,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
+- mm-new: 2 -> 3 commits
+  - series: 1 (2) -> 2 (3)
     - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3)
+      - f973474bfee3 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

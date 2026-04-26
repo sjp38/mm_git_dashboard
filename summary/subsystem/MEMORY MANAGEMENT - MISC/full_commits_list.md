@@ -4,49 +4,55 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - f9ef8a89a8e1 "selftests/mm: specify requirement for PROC_MEM_ALWAYS_FORCE=y"
+    - b787ca9f0f2c "selftests/mm: specify requirement for PROC_MEM_ALWAYS_FORCE=y"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260416-selftests-mm-proc-mem-always-force-v1-1-3f5865153c67@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 9 total, 1 (8) series, 1 non-series commits
+- mm-new: 11 total, 1 (8) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 4 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 5 commits
     - reviewer, nobody: 1 commits
     - reviewer, reviewer: 2 commits
     - maintainer, nobody: 1 commits
   - full commits list
     - series "selftests/mm: clean up build output and verbosity", v3. (2 commits)
-      - 5cb2c5a54fec "selftests/mm: respect build verbosity settings for 32/64-bit targets" (0/2)
+      - fc115b5aabc5 "selftests/mm: respect build verbosity settings for 32/64-bit targets" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260422080446.26020-1-wangli.ahau@gmail.com
         - Link: https://lore.kernel.org/20260422080446.26020-2-wangli.ahau@gmail.com
-      - 1ae64d6a9d10 "selftests/mm: suppress compiler error in liburing check" (1/2)
+      - 660bcabf384c "selftests/mm: suppress compiler error in liburing check" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260422080446.26020-3-wangli.ahau@gmail.com
-      - 96ca52290d43 "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
+      - 673cfa619942 "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-3-npache@redhat.com
-      - 4a6f2f585d04 "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
+      - 0a06c6ddd2ae "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260419185750.260784-8-npache@redhat.com
-      - baf7ea4c7a48 "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
+      - d20c144a62ed "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-14-npache@redhat.com
-      - 17bbe6fe7f64 "selftests/mm: regression test for panic_on_unrecoverable_memory_failure" (3/4)
+      - fdcd567c9e25 "selftests/mm: regression test for panic_on_unrecoverable_memory_failure" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260424-ecc_panic-v5-4-a35f4b50425c@debian.org
-      - be4f3f0751ad "selftests/mm: verify droppable mappings cannot be locked" (1/3)
+      - a805b3a41799 "selftests/mm: verify droppable mappings cannot be locked" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com
-      - 12a7ccda487f "selftests/mm: run the MAP_DROPPABLE selftest" (2/3)
+      - aa4b7eba47c5 "selftests/mm: run the MAP_DROPPABLE selftest" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260416033939.49981-4-anthony.yznaga@oracle.com
-    - 336b92749f59 "Docs/mm/damon/maintainer-profile: add AI review usage guideline"
+    - fe682959764a "Docs/mm/damon/maintainer-profile: add AI review usage guideline"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260412211932.89038-1-sj@kernel.org
       - Link: https://github.com/sashiko-dev/sashiko/commit/ad9f4a98f958 [1]
       - Link: https://github.com/sashiko-dev/sashiko/commit/b554c7b6e733 [2]
+    - d2d16fc49550 "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/tencent_98F3571EF9236437E5165F5C08CF258A9E08@qq.com
+    - 42aab724f1e3 "selftests/mm: simplify byte pattern checking in mremap_test"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260415044509.579428-1-dev.jain@arm.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

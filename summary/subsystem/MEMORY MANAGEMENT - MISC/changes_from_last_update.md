@@ -8,21 +8,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 11 -> 9 commits
-  - series: 1 (10) -> 1 (8)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 5 -> 4 commits
-    - reviewer, nobody: 2 -> 1 commits
+- mm-new: 9 -> 11 commits
+  - series: 1 (8) -> 1 (8) (no change)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 4 -> 5 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - dropped commits
-    - series "Remove read-only THP support for FSes without large folio support", v4. (12)
-      - 4dec35be4c3a "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged (10/12)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260424024915.28758-12-ziy@nvidia.com
-      - c0e19b3f8a15 "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions (11/12)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260424024915.28758-13-ziy@nvidia.com
+  - new commits
+    - d2d16fc49550 "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/tencent_98F3571EF9236437E5165F5C08CF258A9E08@qq.com
+    - 42aab724f1e3 "selftests/mm: simplify byte pattern checking in mremap_test"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260415044509.579428-1-dev.jain@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

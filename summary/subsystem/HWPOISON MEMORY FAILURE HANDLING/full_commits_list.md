@@ -9,20 +9,20 @@
     - no role, maintainer: 3 commits
   - full commits list
     - series "mm/memory-failure: add panic option for unrecoverable pages", v5. (4 commits)
-      - 8a54b415e119 "mm/memory-failure: report MF_MSG_KERNEL for reserved pages" (0/4)
+      - 0866085d9f71 "mm/memory-failure: report MF_MSG_KERNEL for reserved pages" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424-ecc_panic-v5-0-a35f4b50425c@debian.org
         - Link: https://lore.kernel.org/20260424-ecc_panic-v5-1-a35f4b50425c@debian.org
-      - 3a5eea5c30a8 "mm/memory-failure: add panic option for unrecoverable pages" (1/4)
+      - 1f0fa642ae8f "mm/memory-failure: add panic option for unrecoverable pages" (1/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260424-ecc_panic-v5-2-a35f4b50425c@debian.org
-      - 17bbe6fe7f64 "selftests/mm: regression test for panic_on_unrecoverable_memory_failure" (3/4)
+      - fdcd567c9e25 "selftests/mm: regression test for panic_on_unrecoverable_memory_failure" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260424-ecc_panic-v5-4-a35f4b50425c@debian.org
-    - 92d989772b0b "mm/memory-failure: use bool for forcekill state"
+    - 22cf4c185e97 "mm/memory-failure: use bool for forcekill state"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260410074740.2524718-1-ye.liu@linux.dev
-    - ef372bcd5172 "mm/memory-failure: replace magic number 3 with GET_PAGE_MAX_RETRY_NUM"
+    - 13a73363debb "mm/memory-failure: replace magic number 3 with GET_PAGE_MAX_RETRY_NUM"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260402064946.1124250-1-18810879172@163.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

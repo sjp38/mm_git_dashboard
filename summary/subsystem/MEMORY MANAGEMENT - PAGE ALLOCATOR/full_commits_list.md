@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - d7d009ae5177 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+    - 9a9508d0468c "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -17,44 +17,44 @@
     - reviewer, reviewer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 8462a95d709e "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+    - bd0c5e1e54ec "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
     - series "mm: Free contiguous order-0 pages efficiently", v6. (3 commits)
-      - c1a835df4fa1 "mm/page_alloc: optimize free_contig_range()" (0/3)
+      - 594babd83a47 "mm/page_alloc: optimize free_contig_range()" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
         - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
         - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
-      - 16d513b21af0 "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
+      - d409c15fb2e2 "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
-      - 7af4d67f90f5 "mm/page_alloc: optimize __free_contig_frozen_range()" (2/3)
+      - e54df5c749bb "mm/page_alloc: optimize __free_contig_frozen_range()" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-4-usama.anjum@arm.com
     - series "mm/page_owner: add filter infrastructure for print_mode and NUMA filtering", v2. (3 commits)
-      - a0ab98b367ab "mm/page_owner: add filter infrastructure" (0/3)
+      - a54eff93f518 "mm/page_owner: add filter infrastructure" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260419155540.376847-1-zhen.ni@easystack.cn
         - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-2-zhen.ni@easystack.cn/
         - Link: https://lore.kernel.org/20260419155540.376847-2-zhen.ni@easystack.cn
-      - 4bdcb5efbdc5 "mm/page_owner: add print_mode filter" (1/3)
+      - 0832d54afe96 "mm/page_owner: add print_mode filter" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-3-zhen.ni@easystack.cn/
         - Link: https://lore.kernel.org/20260419155540.376847-3-zhen.ni@easystack.cn
-      - 0fad95f19871 "mm/page_owner: add NUMA node filter with nodelist support" (2/3)
+      - 84ade80dabc0 "mm/page_owner: add NUMA node filter with nodelist support" (2/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-4-zhen.ni@easystack.cn/
         - Link: https://lore.kernel.org/20260419155540.376847-4-zhen.ni@easystack.cn
-    - 7c755d6b682a "mm-page_owner-add-numa-node-filter-with-nodelist-support-fix"
+    - 6de843d133d2 "mm-page_owner-add-numa-node-filter-with-nodelist-support-fix"
       - Authored by a maintainer, reviewed by nobody
-    - 76c3e407386e "mm/page_owner: fix %pGp format specifier argument type"
+    - 03c880f10ebd "mm/page_owner: fix %pGp format specifier argument type"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260414075813.3425968-1-zhen.ni@easystack.cn
-    - b1dd4bec8d53 "mm/page_alloc: cleanup flag vars in alloc_pages_bulk_noprof()"
+    - 3159aea84b9d "mm/page_alloc: cleanup flag vars in alloc_pages_bulk_noprof()"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260331-b4-prepare_alloc_pages-flags-v1-1-ea2416def698@google.com
-    - 5e89421040cf "mm, page_alloc: reintroduce page allocation stall warning"
+    - 0febb8e2fd85 "mm, page_alloc: reintroduce page allocation stall warning"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/371c86c8-1d47-bd70-b74c-769842718b1f@google.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

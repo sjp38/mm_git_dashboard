@@ -4,23 +4,29 @@
   - author/reviewer role stat
     - reviewer, nobody: 1 commits
   - full commits list
-    - 74f6255e81c6 "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
+    - b4ddffd156ed "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 2 total, 1 (2) series, 0 non-series commits
+- mm-new: 3 total, 2 (3) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-      - 17060a7e2c26 "mm/khugepaged: introduce collapse_allowable_orders helper function" (8/13)
+      - b17a9c0e8bc3 "mm/khugepaged: introduce collapse_allowable_orders helper function" (8/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com
     - series "fix MAP_DROPPABLE not supported errno", v4. (3 commits)
-      - 4382cc6d4fdf "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
+      - 4f928377c3ac "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
+    - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3 commits)
+      - f973474bfee3 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,138 +1,163 @@
 - baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 24 -> 26 commits
+- mm-hotfixes-unstable: 26 -> 30 commits
   - series: 2 (5) -> 2 (5) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, nobody: 4 -> 6 commits
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 5 commits
+    - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 7 -> 7 commits (no change)
+    - maintainer, nobody: 7 -> 9 commits
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - 122cbc0c8a41 "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
+    - 13b0a2df3255 "mm/memory_hotplug: fix memory block reference leak on remove"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260426144447.817722-1-songmuchun@bytedance.com
+    - 5dc350abff76 "drivers/base/memory: fix memory block reference leak in poison accounting"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260426144447.817722-2-songmuchun@bytedance.com
+    - 4f2248750f35 "mm/damon/sysfs-schemes: call missing mem_cgroup_iter_break()"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260426173625.86521-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260423004148.74722-1-sj@kernel.org [1]
+    - efd9943b4773 "mm/damon: fix damos_stat tracepoint format for sz_applied"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260426193119.88095-1-sj@kernel.org
+  - changed commits
+    - 12c593082fd8 "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
       - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Balbir Singh <balbirs@nvidia.com>"
+      - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
       - Link: https://lore.kernel.org/20260425133537.17463-1-nueralspacetech@gmail.com
-    - 98a26a8e2ccd "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260425134453.23769-1-nueralspacetech@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 105 -> 100 commits
-  - series: 12 (80) -> 12 (71)
-    - no role, nobody: 13 -> 17 commits
-    - no role, no role : 20 -> 17 commits
-    - no role, reviewer: 11 -> 13 commits
-    - no role, maintainer: 22 -> 22 commits (no change)
-    - reviewer, nobody: 6 -> 4 commits
-    - reviewer, no role : 3 -> 2 commits
-    - reviewer, reviewer: 22 -> 18 commits
-    - reviewer, maintainer: 6 -> 5 commits
+- mm-new: 100 -> 98 commits
+  - series: 12 (71) -> 13 (66)
+    - no role, nobody: 17 -> 15 commits
+    - no role, no role : 17 -> 20 commits
+    - no role, reviewer: 13 -> 13 commits (no change)
+    - no role, maintainer: 22 -> 19 commits
+    - reviewer, nobody: 4 -> 4 commits (no change)
+    - reviewer, no role : 2 -> 2 commits (no change)
+    - reviewer, reviewer: 18 -> 18 commits (no change)
+    - reviewer, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
   - new commits
-    - 42b893b2a62a "mm/lruvec: preemptively free dead folios during lru_add drain"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260425053417.351146-1-jp.kobryn@linux.dev
-    - 70d1bb829e5c "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
+    - 6ca5fd045d0f "include-asm-generic-fixmaph-reimplement-nasty-macros-in-c-fix"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
-    - series "treewide: fixup gfp_t printks", v2. (3)
-      - 980e11d680b4 "drm/managed: use special gfp_t format specifier (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260326-gfp64-v2-0-d916021cecdf@google.com
-        - Link: https://lore.kernel.org/20260326-gfp64-v2-1-d916021cecdf@google.com
-      - 6a12e63c5121 "mm/kfence: use special gfp_t format specifier (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260326-gfp64-v2-3-d916021cecdf@google.com
-      - d8e1f6d73324 "net/rds: use special gfp_t format specifier (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260326-gfp64-v2-4-d916021cecdf@google.com
-    - 513f2fc976eb "dax/kmem: account for partial discontiguous resource upon removal"
+    - d2d16fc49550 "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/tencent_98F3571EF9236437E5165F5C08CF258A9E08@qq.com
+    - 42aab724f1e3 "selftests/mm: simplify byte pattern checking in mremap_test"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260223201516.1517657-1-dave@stgolabs.net
-    - a94ab6f1b421 "include/asm-generic/fixmap.h: reimplement nasty macros in C"
-      - Authored by no role player, reviewed by nobody
-  - changed commits
-    - 97816939d5e5 "mm/huge_memory: fix outdated comment about freeing subpages in __folio_split"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/20260423034917.8234-1-baohua@kernel.org
-  - dropped commits
-    - series "Remove read-only THP support for FSes without large folio support", v4. (12)
-      - 23d94d17fc75 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/12)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424024915.28758-1-ziy@nvidia.com
-        - Link: https://lore.kernel.org/20260424024915.28758-2-ziy@nvidia.com
-      - 87b9fa49b344 "mm/khugepaged: add folio dirty check after try_to_unmap() (1/12)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260424024915.28758-3-ziy@nvidia.com
-      - db09dc8ff68e "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled() (2/12)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424024915.28758-4-ziy@nvidia.com
-      - e5285b699654 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled() (3/12)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424024915.28758-5-ziy@nvidia.com
-      - e81a770c1ad9 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option (4/12)"
+      - Link: https://lore.kernel.org/20260415044509.579428-1-dev.jain@arm.com
+    - series "mm: Fix vmemmap optimization accounting and initialization", v7. (6)
+      - ba2088724e3a "mm/sparse-vmemmap: fix vmemmap accounting underflow (0/6)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260424024915.28758-6-ziy@nvidia.com
-      - 1137b8d2684e "mm: fs: remove filemap_nr_thps*() functions and their users (5/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260424024915.28758-7-ziy@nvidia.com
-      - a36f76e30e73 "fs: remove nr_thps from struct address_space (6/12)"
+        - Link: https://lore.kernel.org/20260426092640.375967-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260426092640.375967-2-songmuchun@bytedance.com
+      - 4293e5a8e85b "mm/memory_hotplug: fix incorrect altmap passing in error path (1/6)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260424024915.28758-8-ziy@nvidia.com
-      - 71fbf91976ca "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS (7/12)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424024915.28758-9-ziy@nvidia.com
-      - 6e34c7c55423 "mm/truncate: use folio_split() in truncate_inode_partial_folio() (8/12)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260424024915.28758-10-ziy@nvidia.com
-      - ce03280bad0b "fs/btrfs: remove a comment referring to READ_ONLY_THP_FOR_FS (9/12)"
+        - Link: https://lore.kernel.org/20260426092640.375967-3-songmuchun@bytedance.com
+      - 323da073f695 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths (2/6)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260424024915.28758-11-ziy@nvidia.com
-      - 4dec35be4c3a "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged (10/12)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260424024915.28758-12-ziy@nvidia.com
-      - c0e19b3f8a15 "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions (11/12)"
+        - Link: https://lore.kernel.org/20260426092640.375967-4-songmuchun@bytedance.com
+      - 066c73e3c87a "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization (3/6)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260424024915.28758-13-ziy@nvidia.com
+        - Link: https://lore.kernel.org/20260426092640.375967-5-songmuchun@bytedance.com
+      - 33437261d3dd "mm/mm_init: fix pageblock migratetype for ZONE_DEVICE compound pages (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260426092640.375967-6-songmuchun@bytedance.com
+      - c8d605f222cb "mm/mm_init: fix uninitialized struct pages for ZONE_DEVICE (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260426092640.375967-7-songmuchun@bytedance.com
+    - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3)
+      - f973474bfee3 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
+      - ebcaadd8cf18 "selftests/proc: ensure the test is performed at the right page boundary (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260426062718.1238437-3-surenb@google.com
+      - 10e9f06efaa7 "selftests/proc: add /proc/pid/smaps tearing tests (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260426062718.1238437-4-surenb@google.com
+  - changed commits
+    - 1f14fa06f34c "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+      - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 33 -> 40 commits
-  - series: 4 (14) -> 6 (19)
-    - no role, nobody: 13 -> 17 commits
-    - no role, no role : 12 -> 12 commits (no change)
+- mm-nonmm-unstable: 40 -> 54 commits
+  - series: 6 (19) -> 7 (33)
+    - no role, nobody: 17 -> 20 commits
+    - no role, no role : 12 -> 17 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 6 -> 9 commits
+    - no role, maintainer: 9 -> 15 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - series "lib/base64: decode fixes", v2. (2)
-      - 6dbb48daba4b "lib/base64: validate before writing in decode tail path (0/2)"
+  - changed commits
+    - series "barrier: Add smp_cond_load_{relaxed,acquire}_timeout()", v11. (14)
+      - 6ec0fe3e9248 "asm-generic: barrier: add smp_cond_load_relaxed_timeout() (0/14)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-1-ankur.a.arora@oracle.com
+        - Link: https://lore.kernel.org/20260408122538.3610871-2-ankur.a.arora@oracle.com
+        - Link: https://lore.kernel.org/lkml/c6f3c8d3f1f2e89a9dc7ae22482973b5a51b08cb.camel@amazon.com/ [1]
+      - a1d18f092b9c "arm64: barrier: support smp_cond_load_relaxed_timeout() (1/14)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260324223210.47676-1-objecting@objecting.org
-        - Link: https://lore.kernel.org/20260324223210.47676-2-objecting@objecting.org
-      - 6917283eb77b "lib/base64: fix copy-pasted @padding doc in base64_decode() (1/2)"
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-3-ankur.a.arora@oracle.com
+      - 8c7088013bd3 "arm64/delay: move some constants out to a separate header (2/14)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260324223210.47676-3-objecting@objecting.org
-    - a75030f1c780 "lib: split codetag_lock_module_list()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260324214226.3684605-1-bvanassche@acm.org
-    - 941d98281915 "coredump: add core_pattern specifier for si_code"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/ablsdmLsMKm0z5wt@NH27D9T0LF
-    - series "selftests/filelock: Make output more kselftestish", v4. (3)
-      - 800196ba1685 "kselftest/filelock: use ksft_perror() (0/3)"
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-4-ankur.a.arora@oracle.com
+      - d8ab7df06159 "arm64: support WFET in smp_cond_load_relaxed_timeout() (3/14)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-5-ankur.a.arora@oracle.com
+      - c43b70c7892b "arm64: rqspinlock: remove private copy of smp_cond_load_acquire_timewait() (4/14)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-6-ankur.a.arora@oracle.com
+      - bc5bcf0d8276 "asm-generic: barrier: add smp_cond_load_acquire_timeout() (5/14)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-7-ankur.a.arora@oracle.com
+      - 012744602e07 "atomic: add atomic_cond_read_*_timeout() (6/14)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-8-ankur.a.arora@oracle.com
+      - a8240988495b "locking/atomic: scripts: build atomic_long_cond_read_*_timeout() (7/14)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-9-ankur.a.arora@oracle.com
+      - 0c9be0c3b4cb "bpf/rqspinlock: switch check_timeout() to a clock interface (8/14)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-10-ankur.a.arora@oracle.com
+      - 45f43c57b083 "bpf/rqspinlock: use smp_cond_load_acquire_timeout() (9/14)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-11-ankur.a.arora@oracle.com
+      - 10cc6b95e609 "sched: add need-resched timed wait interface (10/14)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260226-selftest-filelock-ktap-v4-0-db8ae192ff42@kernel.org
-        - Link: https://lore.kernel.org/20260226-selftest-filelock-ktap-v4-1-db8ae192ff42@kernel.org
-      - 5bef02e456a0 "kselftest/filelock: report each test in oftlocks separately (1/3)"
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-12-ankur.a.arora@oracle.com
+      - a42dfdea5062 "cpuidle/poll_state: wait for need-resched via tif_need_resched_relaxed_wait() (11/14)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-13-ankur.a.arora@oracle.com
+      - b264e18f09f4 "kunit: enable testing smp_cond_load_relaxed_timeout() (12/14)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260226-selftest-filelock-ktap-v4-2-db8ae192ff42@kernel.org
-      - cb315c2caa67 "kselftest/filelock: add a .gitignore file (2/3)"
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-14-ankur.a.arora@oracle.com
+      - d9516d301e4a "kunit: add tests for smp_cond_load_relaxed_timeout() (13/14)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260226-selftest-filelock-ktap-v4-3-db8ae192ff42@kernel.org
+        - branch: mm-new -> mm-nonmm-unstable
+        - Link: https://lore.kernel.org/20260408122538.3610871-15-ankur.a.arora@oracle.com

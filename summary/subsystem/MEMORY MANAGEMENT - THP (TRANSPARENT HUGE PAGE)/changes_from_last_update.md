@@ -7,48 +7,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 25 -> 17 commits
-  - series: 3 (23) -> 2 (15)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 0 -> 1 commits
+- mm-new: 17 -> 17 commits (no change)
+  - series: 2 (15) -> 2 (15) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, nobody: 6 -> 4 commits
-    - reviewer, no role : 2 -> 1 commits
-    - reviewer, reviewer: 7 -> 3 commits
-    - reviewer, maintainer: 6 -> 5 commits
-  - changed commits
-    - 97816939d5e5 "mm/huge_memory: fix outdated comment about freeing subpages in __folio_split"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/20260423034917.8234-1-baohua@kernel.org
-  - dropped commits
-    - series "Remove read-only THP support for FSes without large folio support", v4. (12)
-      - 23d94d17fc75 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/12)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424024915.28758-1-ziy@nvidia.com
-        - Link: https://lore.kernel.org/20260424024915.28758-2-ziy@nvidia.com
-      - 87b9fa49b344 "mm/khugepaged: add folio dirty check after try_to_unmap() (1/12)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260424024915.28758-3-ziy@nvidia.com
-      - db09dc8ff68e "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled() (2/12)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424024915.28758-4-ziy@nvidia.com
-      - e5285b699654 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled() (3/12)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424024915.28758-5-ziy@nvidia.com
-      - 1137b8d2684e "mm: fs: remove filemap_nr_thps*() functions and their users (5/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260424024915.28758-7-ziy@nvidia.com
-      - 71fbf91976ca "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS (7/12)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424024915.28758-9-ziy@nvidia.com
-      - 6e34c7c55423 "mm/truncate: use folio_split() in truncate_inode_partial_folio() (8/12)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260424024915.28758-10-ziy@nvidia.com
-      - 4dec35be4c3a "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged (10/12)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260424024915.28758-12-ziy@nvidia.com
+    - reviewer, nobody: 4 -> 4 commits (no change)
+    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, reviewer: 3 -> 3 commits (no change)
+    - reviewer, maintainer: 5 -> 5 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

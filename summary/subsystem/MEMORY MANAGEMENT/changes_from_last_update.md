@@ -1,81 +1,74 @@
 - baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 12 -> 14 commits
+- mm-hotfixes-unstable: 14 -> 16 commits
   - series: 2 (5) -> 2 (5) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 4 commits
+    - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 5 -> 5 commits (no change)
+    - maintainer, nobody: 5 -> 6 commits
   - new commits
-    - 122cbc0c8a41 "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
+    - 13b0a2df3255 "mm/memory_hotplug: fix memory block reference leak on remove"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260426144447.817722-1-songmuchun@bytedance.com
+    - 4f2248750f35 "mm/damon/sysfs-schemes: call missing mem_cgroup_iter_break()"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260426173625.86521-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260423004148.74722-1-sj@kernel.org [1]
+  - changed commits
+    - 12c593082fd8 "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
       - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Balbir Singh <balbirs@nvidia.com>"
+      - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
       - Link: https://lore.kernel.org/20260425133537.17463-1-nueralspacetech@gmail.com
-    - 98a26a8e2ccd "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260425134453.23769-1-nueralspacetech@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 70 -> 65 commits
-  - series: 9 (46) -> 8 (39)
-    - no role, nobody: 7 -> 9 commits
-    - no role, no role : 8 -> 6 commits
-    - no role, reviewer: 11 -> 13 commits
-    - no role, maintainer: 8 -> 8 commits (no change)
-    - reviewer, nobody: 5 -> 4 commits
-    - reviewer, no role : 3 -> 2 commits
-    - reviewer, reviewer: 21 -> 17 commits
-    - reviewer, maintainer: 6 -> 5 commits
+- mm-new: 65 -> 72 commits
+  - series: 8 (39) -> 9 (45)
+    - no role, nobody: 9 -> 9 commits (no change)
+    - no role, no role : 6 -> 11 commits
+    - no role, reviewer: 13 -> 13 commits (no change)
+    - no role, maintainer: 8 -> 10 commits
+    - reviewer, nobody: 4 -> 4 commits (no change)
+    - reviewer, no role : 2 -> 2 commits (no change)
+    - reviewer, reviewer: 17 -> 17 commits (no change)
+    - reviewer, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
   - new commits
-    - 42b893b2a62a "mm/lruvec: preemptively free dead folios during lru_add drain"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260425053417.351146-1-jp.kobryn@linux.dev
-    - 70d1bb829e5c "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
+    - d2d16fc49550 "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
-    - series "treewide: fixup gfp_t printks", v2. (3)
-      - 6a12e63c5121 "mm/kfence: use special gfp_t format specifier (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260326-gfp64-v2-3-d916021cecdf@google.com
-  - changed commits
-    - 97816939d5e5 "mm/huge_memory: fix outdated comment about freeing subpages in __folio_split"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/20260423034917.8234-1-baohua@kernel.org
-  - dropped commits
-    - series "Remove read-only THP support for FSes without large folio support", v4. (12)
-      - 23d94d17fc75 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/12)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424024915.28758-1-ziy@nvidia.com
-        - Link: https://lore.kernel.org/20260424024915.28758-2-ziy@nvidia.com
-      - 87b9fa49b344 "mm/khugepaged: add folio dirty check after try_to_unmap() (1/12)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260424024915.28758-3-ziy@nvidia.com
-      - db09dc8ff68e "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled() (2/12)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424024915.28758-4-ziy@nvidia.com
-      - e5285b699654 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled() (3/12)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424024915.28758-5-ziy@nvidia.com
-      - e81a770c1ad9 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option (4/12)"
+      - Link: https://lore.kernel.org/tencent_98F3571EF9236437E5165F5C08CF258A9E08@qq.com
+    - series "mm: Fix vmemmap optimization accounting and initialization", v7. (6)
+      - ba2088724e3a "mm/sparse-vmemmap: fix vmemmap accounting underflow (0/6)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260424024915.28758-6-ziy@nvidia.com
-      - 1137b8d2684e "mm: fs: remove filemap_nr_thps*() functions and their users (5/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260424024915.28758-7-ziy@nvidia.com
-      - 71fbf91976ca "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS (7/12)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424024915.28758-9-ziy@nvidia.com
-      - 6e34c7c55423 "mm/truncate: use folio_split() in truncate_inode_partial_folio() (8/12)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260424024915.28758-10-ziy@nvidia.com
+        - Link: https://lore.kernel.org/20260426092640.375967-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260426092640.375967-2-songmuchun@bytedance.com
+      - 4293e5a8e85b "mm/memory_hotplug: fix incorrect altmap passing in error path (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260426092640.375967-3-songmuchun@bytedance.com
+      - 323da073f695 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths (2/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260426092640.375967-4-songmuchun@bytedance.com
+      - 066c73e3c87a "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260426092640.375967-5-songmuchun@bytedance.com
+      - 33437261d3dd "mm/mm_init: fix pageblock migratetype for ZONE_DEVICE compound pages (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260426092640.375967-6-songmuchun@bytedance.com
+      - c8d605f222cb "mm/mm_init: fix uninitialized struct pages for ZONE_DEVICE (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260426092640.375967-7-songmuchun@bytedance.com
+  - changed commits
+    - 1f14fa06f34c "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+      - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)
