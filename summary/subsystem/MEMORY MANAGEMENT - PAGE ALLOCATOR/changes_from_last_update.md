@@ -8,39 +8,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 4 -> 11 commits
-  - series: 1 (3) -> 2 (6)
-    - no role, nobody: 0 -> 3 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 4 -> 5 commits
-    - reviewer, reviewer: 0 -> 1 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - series "mm/page_owner: add filter infrastructure for print_mode and NUMA filtering", v2. (3)
-      - 1a80aa278269 "mm/page_owner: add filter infrastructure (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260419155540.376847-1-zhen.ni@easystack.cn
-        - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-2-zhen.ni@easystack.cn/
-        - Link: https://lore.kernel.org/20260419155540.376847-2-zhen.ni@easystack.cn
-      - d433082cfa75 "mm/page_owner: add print_mode filter (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-3-zhen.ni@easystack.cn/
-        - Link: https://lore.kernel.org/20260419155540.376847-3-zhen.ni@easystack.cn
-      - 146f659fc9c9 "mm/page_owner: add NUMA node filter with nodelist support (2/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-4-zhen.ni@easystack.cn/
-        - Link: https://lore.kernel.org/20260419155540.376847-4-zhen.ni@easystack.cn
-    - 3f0d19e6ecd9 "mm-page_owner-add-numa-node-filter-with-nodelist-support-fix"
-      - Authored by a maintainer, reviewed by nobody
-    - d9f62ebb663e "mm/page_owner: fix %pGp format specifier argument type"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260414075813.3425968-1-zhen.ni@easystack.cn
-    - 1a43249b2978 "mm/page_alloc: cleanup flag vars in alloc_pages_bulk_noprof()"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260331-b4-prepare_alloc_pages-flags-v1-1-ea2416def698@google.com
-    - e947b48257ca "mm, page_alloc: reintroduce page allocation stall warning"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/371c86c8-1d47-bd70-b74c-769842718b1f@google.com
+- mm-new: 11 -> 11 commits (no change)
+  - series: 2 (6) -> 2 (6) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

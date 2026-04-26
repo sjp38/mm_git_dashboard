@@ -8,12 +8,12 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 3 commits
-  - series: 0 (0) -> 1 (3)
-    - reviewer, nobody: 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 1 commits
-    - reviewer, maintainer: 0 -> 1 commits
-  - new commits
+- mm-new: 3 -> 0 commits
+  - series: 1 (3) -> 0 (0)
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 1 -> 0 commits
+  - dropped commits
     - series "Remove read-only THP support for FSes without large folio support", v4. (12)
       - 23d94d17fc75 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/12)"
         - Authored by a reviewer, reviewed by a reviewer

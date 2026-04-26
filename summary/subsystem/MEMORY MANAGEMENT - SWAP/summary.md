@@ -5,9 +5,10 @@
 - mm-unstable: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
     - reviewer, maintainer: 2 commits
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
+- mm-new: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

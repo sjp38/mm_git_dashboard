@@ -8,26 +8,26 @@
     - no role, maintainer: 7 commits
   - full commits list
     - series "selftests/cgroup: improve zswap tests robustness and support large page sizes", v7. (8 commits)
-      - 7ec90a0b6a59 "selftests/cgroup: skip test_zswap if zswap is globally disabled" (0/8)
+      - d58dac0596da "selftests/cgroup: skip test_zswap if zswap is globally disabled" (0/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-1-li.wang@linux.dev
         - Link: https://lore.kernel.org/20260424040059.12940-2-li.wang@linux.dev
-      - fbe8d11ae03c "selftests/cgroup: avoid OOM in test_swapin_nozswap" (1/8)
+      - fa142d41dc64 "selftests/cgroup: avoid OOM in test_swapin_nozswap" (1/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-3-li.wang@linux.dev
-      - e9d6f0415978 "selftests/cgroup: use runtime page size for zswpin check" (2/8)
+      - 3b072138e9e8 "selftests/cgroup: use runtime page size for zswpin check" (2/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-4-li.wang@linux.dev
-      - 4fba60c714c7 "selftests/cgroup: replace hardcoded page size values in test_zswap" (4/8)
+      - ce9ee1082301 "selftests/cgroup: replace hardcoded page size values in test_zswap" (4/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-6-li.wang@linux.dev
-      - 0432daee00a7 "selftest/cgroup: fix zswap test_no_invasive_cgroup_shrink on large pagesize system" (5/8)
+      - f45e4dbe8785 "selftest/cgroup: fix zswap test_no_invasive_cgroup_shrink on large pagesize system" (5/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-7-li.wang@linux.dev
-      - 661aece0f6e9 "selftest/cgroup: fix zswap attempt_writeback() on 64K pagesize system" (6/8)
+      - b4faa949df45 "selftest/cgroup: fix zswap attempt_writeback() on 64K pagesize system" (6/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-8-li.wang@linux.dev
-      - 656223824ca2 "selftests/cgroup: test_zswap: wait for asynchronous writeback" (7/8)
+      - 2feab9b113ea "selftests/cgroup: test_zswap: wait for asynchronous writeback" (7/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-9-li.wang@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

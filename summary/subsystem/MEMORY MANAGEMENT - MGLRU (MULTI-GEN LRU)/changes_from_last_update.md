@@ -7,38 +7,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 16 -> 18 commits
+- mm-new: 18 -> 19 commits
   - series: 1 (14) -> 1 (14) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 0 -> 2 commits
-    - no role, maintainer: 0 -> 1 commits
+    - no role, reviewer: 2 -> 3 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 14 -> 14 commits (no change)
   - new commits
-    - 937273b142b7 "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260418120233.7162-1-baohua@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
-      - Link: https://lore.kernel.org/lkml/20160606022724.GA26227@yexl-desktop/ [2]
-      - Link: https://lore.kernel.org/lkml/20210120173612.20913-1-will@kernel.org/ [3]
-    - 6df4abd50806 "mm/vmscan: fix typos in comments"
+    - 42b893b2a62a "mm/lruvec: preemptively free dead folios during lru_add drain"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260416062302.727468-1-gxxa03070307@gmail.com
-    - 6e1a70e4a481 "mm/vmpressure: skip socket pressure for costly order reclaim"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260406195014.112521-1-jp.kobryn@linux.dev
-  - changed commits
-    - 2d784ef758ab "mm/vmscan: add balance_pgdat begin/end tracepoints"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/20260424031418.174597-1-b.suvonov@sjtu.edu.cn"
-      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lore.kernel.org/20260424031418.174597-1-b.suvonov@sjtu.edu.cn
-      - Link: https://lore.kernel.org/20260423103753.546582-1-b.suvonov@sjtu.edu.cn
-  - dropped commits
-    - 2a01060494de "mm/lruvec: preemptively free dead folios during lru_add drain"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260423164307.29805-1-jp.kobryn@linux.dev
+      - Link: https://lore.kernel.org/20260425053417.351146-1-jp.kobryn@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,22 +7,22 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 14 -> 25 commits
-  - series: 1 (13) -> 3 (23)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 3 commits
-    - reviewer, nobody: 4 -> 6 commits
-    - reviewer, no role : 1 -> 2 commits
-    - reviewer, reviewer: 3 -> 7 commits
-    - reviewer, maintainer: 5 -> 6 commits
-  - new commits
-    - dbb16f5e8baa "mm/huge_memory: fix outdated comment about freeing subpages in __folio_split"
-      - Authored by no role player, reviewed by no role player
+- mm-new: 25 -> 17 commits
+  - series: 3 (23) -> 2 (15)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - reviewer, nobody: 6 -> 4 commits
+    - reviewer, no role : 2 -> 1 commits
+    - reviewer, reviewer: 7 -> 3 commits
+    - reviewer, maintainer: 6 -> 5 commits
+  - changed commits
+    - 97816939d5e5 "mm/huge_memory: fix outdated comment about freeing subpages in __folio_split"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
       - Link: https://lore.kernel.org/20260423034917.8234-1-baohua@kernel.org
-    - series "khugepaged: mTHP support", v16. (13)
-      - 883ac07ebeba "mm/khugepaged: introduce mTHP collapse support (9/13)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260419185750.260784-11-npache@redhat.com
+  - dropped commits
     - series "Remove read-only THP support for FSes without large folio support", v4. (12)
       - 23d94d17fc75 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/12)"
         - Authored by a reviewer, reviewed by a reviewer
@@ -49,25 +49,6 @@
       - 4dec35be4c3a "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged (10/12)"
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260424024915.28758-12-ziy@nvidia.com
-    - 1aec5981a4b5 "mm/khugepaged: use ALIGN helpers for PMD alignment"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260409014323.2385982-1-ye.liu@linux.dev
-    - series "mm: huge_memory: clean up defrag sysfs with shared", v2. (2)
-      - f2e335900c21 "mm: huge_memory: use sysfs_match_string() in defrag_store() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260408-thp_defrag-v2-0-bc544c1bde4e@debian.org
-        - Link: https://lore.kernel.org/20260408-thp_defrag-v2-1-bc544c1bde4e@debian.org
-      - 59ce742fe60d "mm: huge_memory: refactor defrag_show() to use defrag_flags[] (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260408-thp_defrag-v2-2-bc544c1bde4e@debian.org
-  - dropped commits
-    - a411869ff563 "mm/huge_memory: Fix outdated comment about freeing subpages in __folio_split"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260423034917.8234-1-baohua@kernel.org
-    - series "khugepaged: mTHP support", v16. (13)
-      - 304116ead728 "mm/khugepaged: Introduce mTHP collapse support (9/13)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260419185750.260784-11-npache@redhat.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

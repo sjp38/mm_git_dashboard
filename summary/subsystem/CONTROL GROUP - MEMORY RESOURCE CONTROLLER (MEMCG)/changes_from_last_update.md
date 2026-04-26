@@ -7,14 +7,9 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - series "selftests/cgroup: improve zswap tests robustness and support large page sizes", v7. (8)
-      - b8cbcdbdf3c7 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util (3/8)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
