@@ -1,73 +1,80 @@
-- baseline: v7.0-11901-ga5d1079c28a5b
+- baseline: v7.1-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 17 total, 1 (14) series, 3 non-series commits
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - 5c71a93b2fb1 "mm/vmscan: add balance_pgdat begin/end tracepoints"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260424031418.174597-1-b.suvonov@sjtu.edu.cn
+      - Link: https://lore.kernel.org/20260423103753.546582-1-b.suvonov@sjtu.edu.cn
+- mm-new: 17 total, 1 (15) series, 2 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 2 commits
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 14 commits
   - full commits list
-    - 3448146b24f7 "mm/vmscan: add balance_pgdat begin/end tracepoints"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260424031418.174597-1-b.suvonov@sjtu.edu.cn
-      - Link: https://lore.kernel.org/20260423103753.546582-1-b.suvonov@sjtu.edu.cn
-    - series "mm/mglru: improve reclaim loop and dirty folio", v6. (14 commits)
-      - f9890d47d01e "mm/mglru: consolidate common code for retrieving evictable size" (0/14)
+    - series "mm/mglru: improve reclaim loop and dirty folio", v7. (15 commits)
+      - de3bed25eadd "mm/mglru: consolidate common code for retrieving evictable size" (0/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-0-a57622d770c3@tencent.com
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-1-a57622d770c3@tencent.com
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-1-02fabb92dc43@tencent.com
         - Link: https://lore.kernel.org/linux-mm/CAMgjq7BoekNjg-Ra3C8M7=8=75su38w=HD782T5E_cxyeCeH_g@mail.gmail.com/ [1]
         - Link: https://github.com/brianfrankcooper/YCSB/blob/master/workloads/workloadb [2]
         - Link: https://lore.kernel.org/all/20221220214923.1229538-1-yuzhao@google.com/ [3]
         - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [4]
         - Link: https://lore.kernel.org/linux-mm/acgNCzRDVmSbXrOE@KASONG-MC4/ [5]
         - Link: https://lore.kernel.org/linux-mm/20260417025123.2971253-1-wxy2009nrrr@163.com/ [6]
-      - 0807a9c34e7f "mm/mglru: rename variables related to aging and rotation" (1/14)
+      - 04ad5bb125ca "mm/mglru: rename variables related to aging and rotation" (1/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-2-a57622d770c3@tencent.com
-      - 9b0ec6a8abb8 "mm/mglru: relocate the LRU scan batch limit to callers" (2/14)
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-2-02fabb92dc43@tencent.com
+      - 439401e31310 "mm/mglru: relocate the LRU scan batch limit to callers" (2/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-3-a57622d770c3@tencent.com
-      - 423f11978ef2 "mm/mglru: restructure the reclaim loop" (3/14)
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-3-02fabb92dc43@tencent.com
+      - 7ee16a007fb0 "mm/mglru: restructure the reclaim loop" (3/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-4-a57622d770c3@tencent.com
-      - 469d606e4791 "mm/mglru: scan and count the exact number of folios" (4/14)
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-4-02fabb92dc43@tencent.com
+      - ce1023f71c77 "mm/mglru: scan and count the exact number of folios" (4/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-5-a57622d770c3@tencent.com
-      - 7c96016c46eb "mm/mglru: use a smaller batch for reclaim" (5/14)
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-5-02fabb92dc43@tencent.com
+      - 077ec860100a "mm/mglru: avoid reclaim type fall back when isolation makes no progress" (5/15)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/linux-mm/CAGsJ_4zjdOYEtuO6gNjABm7NDxW0skzBFNRNee-k2D6VwsYEQA@mail.gmail.com/ [1]
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-6-02fabb92dc43@tencent.com
+      - bc18e6479e72 "mm/mglru: use a smaller batch for reclaim" (6/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-6-a57622d770c3@tencent.com
-      - 73f3ad0eee26 "mm/mglru: don't abort scan immediately right after aging" (6/14)
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-7-02fabb92dc43@tencent.com
+      - e0a42b5a8b84 "mm/mglru: don't abort scan immediately right after aging" (7/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-7-a57622d770c3@tencent.com
-      - df87a2bfe975 "mm/mglru: remove redundant swap constrained check upon isolation" (7/14)
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-8-02fabb92dc43@tencent.com
+      - cbece5131629 "mm/mglru: remove redundant swap constrained check upon isolation" (8/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-8-a57622d770c3@tencent.com
-      - e16b016d5392 "mm/mglru: use the common routine for dirty/writeback reactivation" (8/14)
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-9-02fabb92dc43@tencent.com
+      - c8a8dc489a38 "mm/mglru: use the common routine for dirty/writeback reactivation" (9/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-9-a57622d770c3@tencent.com
-      - 965f53d2fa4e "mm/mglru: simplify and improve dirty writeback handling" (9/14)
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-10-02fabb92dc43@tencent.com
+      - 5f175f51e3c5 "mm/mglru: simplify and improve dirty writeback handling" (10/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-10-a57622d770c3@tencent.com
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-11-02fabb92dc43@tencent.com
         - Link: https://lore.kernel.org/linux-mm/20241026115714.1437435-1-jingxiangzeng.cas@gmail.com/ [1]
-      - 2b75bc211c8f "mm/mglru: remove no longer used reclaim argument for folio protection" (10/14)
+      - ad77aded6688 "mm/mglru: remove no longer used reclaim argument for folio protection" (11/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-11-a57622d770c3@tencent.com
-      - a63b2b78eb9b "mm/vmscan: remove sc->file_taken" (11/14)
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-12-02fabb92dc43@tencent.com
+      - dffb883a5e95 "mm/vmscan: remove sc->file_taken" (12/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-12-a57622d770c3@tencent.com
-      - af304fc2ac4e "mm/vmscan: remove sc->unqueued_dirty" (12/14)
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-13-02fabb92dc43@tencent.com
+      - 9e955ea1f234 "mm/vmscan: remove sc->unqueued_dirty" (13/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-13-a57622d770c3@tencent.com
-      - ef8ce65b4684 "mm/vmscan: unify writeback reclaim statistic and throttling" (13/14)
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-14-02fabb92dc43@tencent.com
+      - 2dcddf794986 "mm/vmscan: unify writeback reclaim statistic and throttling" (14/15)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260424-mglru-reclaim-v6-14-a57622d770c3@tencent.com
-    - 3c4934cfe103 "mm/vmscan: fix typos in comments"
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-15-02fabb92dc43@tencent.com
+    - 0e4ebd02d571 "mm/vmscan: fix typos in comments"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260416062302.727468-1-gxxa03070307@gmail.com
-    - b2669fcc7a22 "mm/vmpressure: skip socket pressure for costly order reclaim"
+    - ee95c59a7a73 "mm/vmpressure: skip socket pressure for costly order reclaim"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260406195014.112521-1-jp.kobryn@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

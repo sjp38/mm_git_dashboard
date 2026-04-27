@@ -1,58 +1,77 @@
-- baseline: v7.0-11901-ga5d1079c28a5b
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- baseline: v7.1-rc1
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - a3907a3169d0 "selftests/mm: specify requirement for PROC_MEM_ALWAYS_FORCE=y"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260416-selftests-mm-proc-mem-always-force-v1-1-3f5865153c67@kernel.org
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - b787ca9f0f2c "selftests/mm: specify requirement for PROC_MEM_ALWAYS_FORCE=y"
+    - c6874b6d2299 "selftests/mm: run_vmtests.sh: fix destructive tests invocation"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260416-selftests-mm-proc-mem-always-force-v1-1-3f5865153c67@kernel.org
+      - Link: https://lore.kernel.org/214fd9e4-5398-4c26-859e-c982c2e277c3@redhat.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 11 total, 1 (8) series, 3 non-series commits
+- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 5 commits
-    - reviewer, nobody: 1 commits
-    - reviewer, reviewer: 2 commits
-    - maintainer, nobody: 1 commits
+    - no role, no role : 2 commits
   - full commits list
     - series "selftests/mm: clean up build output and verbosity", v3. (2 commits)
-      - fc115b5aabc5 "selftests/mm: respect build verbosity settings for 32/64-bit targets" (0/2)
+      - 87dee0d9f24e "selftests/mm: respect build verbosity settings for 32/64-bit targets" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260422080446.26020-1-wangli.ahau@gmail.com
         - Link: https://lore.kernel.org/20260422080446.26020-2-wangli.ahau@gmail.com
-      - 660bcabf384c "selftests/mm: suppress compiler error in liburing check" (1/2)
+      - 4076133d82a7 "selftests/mm: suppress compiler error in liburing check" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260422080446.26020-3-wangli.ahau@gmail.com
-      - 673cfa619942 "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
+- mm-new: 12 total, 0 (9) series, 3 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 4 commits
+    - reviewer, nobody: 1 commits
+    - reviewer, reviewer: 2 commits
+    - maintainer, nobody: 3 commits
+  - full commits list
+      - 1cfc7472d1f4 "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-3-npache@redhat.com
-      - 0a06c6ddd2ae "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
+      - 8719a3aa9d9d "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260419185750.260784-8-npache@redhat.com
-      - d20c144a62ed "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
+      - 2a6ae3571160 "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-14-npache@redhat.com
-      - fdcd567c9e25 "selftests/mm: regression test for panic_on_unrecoverable_memory_failure" (3/4)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260424-ecc_panic-v5-4-a35f4b50425c@debian.org
-      - a805b3a41799 "selftests/mm: verify droppable mappings cannot be locked" (1/3)
+      - 446137e25c21 "selftests/mm: verify droppable mappings cannot be locked" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com
-      - aa4b7eba47c5 "selftests/mm: run the MAP_DROPPABLE selftest" (2/3)
+      - f4d2962a1676 "selftests/mm: run the MAP_DROPPABLE selftest" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260416033939.49981-4-anthony.yznaga@oracle.com
-    - fe682959764a "Docs/mm/damon/maintainer-profile: add AI review usage guideline"
+    - 2ec0aa8dfcf8 "Docs/mm/damon/maintainer-profile: add AI review usage guideline"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260412211932.89038-1-sj@kernel.org
       - Link: https://github.com/sashiko-dev/sashiko/commit/ad9f4a98f958 [1]
       - Link: https://github.com/sashiko-dev/sashiko/commit/b554c7b6e733 [2]
-    - d2d16fc49550 "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/tencent_98F3571EF9236437E5165F5C08CF258A9E08@qq.com
-    - 42aab724f1e3 "selftests/mm: simplify byte pattern checking in mremap_test"
+    - fc3047666021 "selftests/mm: simplify byte pattern checking in mremap_test"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260415044509.579428-1-dev.jain@arm.com
+      - 870b1d1c11a4 "Docs/admin-guide/mm/damon: fix 'parametrs' typo" (1/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260426231619.107231-3-sj@kernel.org
+      - ce4a082b04d2 "mm/damon: support MADV_COLLAPSE via DAMOS_COLLAPSE scheme action" (3/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260426231619.107231-5-sj@kernel.org
+        - Link: https://lore.kernel.org/damon/20260313000816.79933-1-sj@kernel.org/ [1]
+    - 88b3745659c3 "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/tencent_BB588C2CDED859A873093DAF28B2CC1F7B0A@qq.com
+      - 9af957983ab2 "Docs/mm/damon/design: update for context pause/resume feature" (2/10)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260427151231.113429-4-sj@kernel.org
+      - 0f7a2d48ca8e "Docs/admin-guide/mm/damon/usage: update for pause file" (3/10)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260427151231.113429-5-sj@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

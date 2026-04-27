@@ -1,14 +1,21 @@
-- baseline: v7.0-11901-ga5d1079c28a5b
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- baseline: v7.1-rc1
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 22d594f243bb "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+    - 0437906841d0 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - 8cb21736f356 "mm: limit filemap_fault readahead to VMA boundaries"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260427030148.653228-1-fmayle@google.com
+      - Link: https://lore.kernel.org/all/ivnv2crd3et76p2nx7oszuqhzzah756oecn5yuykzqfkqzoygw@yvnlkhjjssoz/ [1]
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

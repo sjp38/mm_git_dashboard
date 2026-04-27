@@ -1,33 +1,66 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 3 commits (no change)
+    - reviewer, nobody: 0 -> 1 commits
+  - changed commits
+    - 619eab23e1ce "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
+      - Authored by a reviewer, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
+- mm-hotfixes-unstable: 3 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 10 -> 13 commits
-  - series: 1 (2) -> 2 (5)
+- mm-unstable: 0 -> 4 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 3 commits
+  - changed commits
+    - 4fb7adf930bc "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
+    - 6df686b1f85a "mm: convert vmemmap_p?d_populate() to static functions"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Oscar Salvador <osalvador@suse.de>"
+      - Link: https://lore.kernel.org/20260423101441.7089-1-kaitao.cheng@linux.dev
+    - series "mm: Free contiguous order-0 pages efficiently", v6. (3)
+      - c67412e03699 "mm/page_alloc: optimize free_contig_range() (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
+        - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
+        - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
+      - 463fa362c6c5 "vmalloc: optimize vfree with free_pages_bulk() (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
+- mm-new: 13 -> 9 commits
+  - series: 2 (5) -> 1 (4)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 5 commits
-    - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 1 -> 2 commits
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 5 -> 1 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
   - new commits
+    - series "mm: remove page_mapped()". (3)
+      - cf2ce684e1f1 "mm: remove page_mapped() (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260427-page_mapped-v1-3-e89c3592c74c@kernel.org
+  - changed commits
     - series "mm: Fix vmemmap optimization accounting and initialization", v7. (6)
-      - ba2088724e3a "mm/sparse-vmemmap: fix vmemmap accounting underflow (0/6)"
+      - 2e212ac4b892 "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization (3/6)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260426092640.375967-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260426092640.375967-2-songmuchun@bytedance.com
-      - 323da073f695 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths (2/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260426092640.375967-4-songmuchun@bytedance.com
-      - 066c73e3c87a "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization (3/6)"
-        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
         - Link: https://lore.kernel.org/20260426092640.375967-5-songmuchun@bytedance.com
+  - dropped commits
+    - 4f7b2cc1ad87 "mm/vmstat: spread vmstat_update requeue across the stat interval"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260401-vmstat-v1-1-b68ce4a35055@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)

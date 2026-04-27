@@ -1,32 +1,30 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 2 commits
-  - new commits
-    - 13b0a2df3255 "mm/memory_hotplug: fix memory block reference leak on remove"
-      - Authored by no role player, reviewed by nobody
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 1d88fc8a6807 "mm/memory_hotplug: fix memory block reference leak on remove"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Oscar Salvador <osalvador@suse.de>"
+      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
       - Link: https://lore.kernel.org/20260426144447.817722-1-songmuchun@bytedance.com
-    - 5dc350abff76 "drivers/base/memory: fix memory block reference leak in poison accounting"
-      - Authored by no role player, reviewed by nobody
+    - 7e5cd1be095d "drivers/base/memory: fix memory block reference leak in poison accounting"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Miaohe Lin <linmiaohe@huawei.com>"
+      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
       - Link: https://lore.kernel.org/20260426144447.817722-2-songmuchun@bytedance.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - series "mm: Fix vmemmap optimization accounting and initialization", v7. (6)
-      - 4293e5a8e85b "mm/memory_hotplug: fix incorrect altmap passing in error path (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260426092640.375967-3-songmuchun@bytedance.com
-      - 323da073f695 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths (2/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260426092640.375967-4-songmuchun@bytedance.com
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

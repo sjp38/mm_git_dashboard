@@ -1,22 +1,19 @@
-- baseline: v7.0-11901-ga5d1079c28a5b
+- baseline: v7.1-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 12c593082fd8 "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
+    - fda706796e20 "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260425133537.17463-1-nueralspacetech@gmail.com
-    - 8d4fbc82c14d "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260425134453.23769-1-nueralspacetech@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 62b440943391 "mm/migrate_device: cleanup up PMD Checks and warnings"
+    - e0367ca4b78c "mm/migrate_device: cleanup up PMD Checks and warnings"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260419174747.10701-1-nueralspacetech@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

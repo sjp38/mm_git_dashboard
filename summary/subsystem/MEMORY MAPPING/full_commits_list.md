@@ -1,12 +1,12 @@
-- baseline: v7.0-11901-ga5d1079c28a5b
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- baseline: v7.1-rc1
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - reviewer, nobody: 1 commits
   - full commits list
-    - b4ddffd156ed "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
+    - 619eab23e1ce "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 3 total, 2 (3) series, 0 non-series commits
@@ -15,16 +15,16 @@
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-      - b17a9c0e8bc3 "mm/khugepaged: introduce collapse_allowable_orders helper function" (8/13)
+      - b6841fda2880 "mm/khugepaged: introduce collapse_allowable_orders helper function" (8/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com
     - series "fix MAP_DROPPABLE not supported errno", v4. (3 commits)
-      - 4f928377c3ac "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
+      - 1b980a30f61c "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
     - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3 commits)
-      - f973474bfee3 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
+      - 4d6057559d9d "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
         - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com

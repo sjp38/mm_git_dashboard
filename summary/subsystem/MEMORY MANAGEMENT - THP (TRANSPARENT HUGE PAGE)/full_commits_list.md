@@ -1,71 +1,73 @@
-- baseline: v7.0-11901-ga5d1079c28a5b
+- baseline: v7.1-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 17 total, 2 (15) series, 2 non-series commits
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
+  - full commits list
+    - 40199b7febaf "mm/huge_memory: fix outdated comment about freeing subpages in __folio_split"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260423034917.8234-1-baohua@kernel.org
+- mm-new: 16 total, 2 (15) series, 1 non-series commits
+  - author/reviewer role stat
     - no role, maintainer: 3 commits
     - reviewer, nobody: 4 commits
     - reviewer, no role : 1 commits
     - reviewer, reviewer: 3 commits
     - reviewer, maintainer: 5 commits
   - full commits list
-    - baf316986659 "mm/huge_memory: fix outdated comment about freeing subpages in __folio_split"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260423034917.8234-1-baohua@kernel.org
     - series "khugepaged: mTHP support", v16. (13 commits)
-      - f099ae291be2 "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support" (0/13)
+      - b5d0ec6a4cc2 "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support" (0/13)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260419185750.260784-1-npache@redhat.com
         - Link: https://lore.kernel.org/20260419185750.260784-2-npache@redhat.com
-      - 673cfa619942 "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
+      - 1cfc7472d1f4 "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-3-npache@redhat.com
-      - 31407e915665 "mm/khugepaged: rework max_ptes_* handling with helper functions" (2/13)
+      - b3840b9e1750 "mm/khugepaged: rework max_ptes_* handling with helper functions" (2/13)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260419185750.260784-4-npache@redhat.com
-      - baeb67e62fbb "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support" (3/13)
+      - 5b77578e63bc "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support" (3/13)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260419185750.260784-5-npache@redhat.com
-      - 3a084084a75c "mm/khugepaged: generalize collapse_huge_page for mTHP collapse" (4/13)
+      - e275a67d9e4f "mm/khugepaged: generalize collapse_huge_page for mTHP collapse" (4/13)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260419185750.260784-6-npache@redhat.com
-      - 5b4b7d29a915 "mm/khugepaged: skip collapsing mTHP to smaller orders" (5/13)
+      - a56e1b885ceb "mm/khugepaged: skip collapsing mTHP to smaller orders" (5/13)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260419185750.260784-7-npache@redhat.com
         - Link: https://lore.kernel.org/lkml/20241216165105.56185-11-dev.jain@arm.com/ [1]
-      - 0a06c6ddd2ae "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
+      - 8719a3aa9d9d "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260419185750.260784-8-npache@redhat.com
-      - 8ca77c033cf7 "mm/khugepaged: improve tracepoints for mTHP orders" (7/13)
+      - 8c9024480fbf "mm/khugepaged: improve tracepoints for mTHP orders" (7/13)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260419185750.260784-9-npache@redhat.com
-      - b17a9c0e8bc3 "mm/khugepaged: introduce collapse_allowable_orders helper function" (8/13)
+      - b6841fda2880 "mm/khugepaged: introduce collapse_allowable_orders helper function" (8/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com
-      - 944a5fe63fd0 "mm/khugepaged: introduce mTHP collapse support" (9/13)
+      - 6a8be1cc2060 "mm/khugepaged: introduce mTHP collapse support" (9/13)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260419185750.260784-11-npache@redhat.com
-      - c21033789f64 "mm/khugepaged: avoid unnecessary mTHP collapse attempts" (10/13)
+      - 298b48637182 "mm/khugepaged: avoid unnecessary mTHP collapse attempts" (10/13)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260419185750.260784-12-npache@redhat.com
-      - aba3e46a9adb "mm/khugepaged: run khugepaged for all orders" (11/13)
+      - 91048b3c069f "mm/khugepaged: run khugepaged for all orders" (11/13)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260419185750.260784-13-npache@redhat.com
-      - d20c144a62ed "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
+      - 2a6ae3571160 "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-14-npache@redhat.com
-    - 1f8d0f6d130b "mm/khugepaged: use ALIGN helpers for PMD alignment"
+    - bc91498876bc "mm/khugepaged: use ALIGN helpers for PMD alignment"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260409014323.2385982-1-ye.liu@linux.dev
     - series "mm: huge_memory: clean up defrag sysfs with shared", v2. (2 commits)
-      - 0a857d0064f5 "mm: huge_memory: use sysfs_match_string() in defrag_store()" (0/2)
+      - ed23b445f5a0 "mm: huge_memory: use sysfs_match_string() in defrag_store()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260408-thp_defrag-v2-0-bc544c1bde4e@debian.org
         - Link: https://lore.kernel.org/20260408-thp_defrag-v2-1-bc544c1bde4e@debian.org
-      - eb06d4063e2a "mm: huge_memory: refactor defrag_show() to use defrag_flags[]" (1/2)
+      - 1dc0e3200149 "mm: huge_memory: refactor defrag_show() to use defrag_flags[]" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260408-thp_defrag-v2-2-bc544c1bde4e@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

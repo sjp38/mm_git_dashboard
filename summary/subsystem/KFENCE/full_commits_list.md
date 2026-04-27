@@ -1,4 +1,4 @@
-- baseline: v7.0-11901-ga5d1079c28a5b
+- baseline: v7.1-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-      - 7c4cf08003a1 "mm/kfence: use special gfp_t format specifier" (1/3)
+      - 206591cb1653 "mm/kfence: use special gfp_t format specifier" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260326-gfp64-v2-3-d916021cecdf@google.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

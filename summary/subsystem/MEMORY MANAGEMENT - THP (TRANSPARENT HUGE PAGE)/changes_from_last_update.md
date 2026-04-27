@@ -1,15 +1,21 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 17 -> 17 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - 40199b7febaf "mm/huge_memory: fix outdated comment about freeing subpages in __folio_split"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260423034917.8234-1-baohua@kernel.org
+- mm-new: 17 -> 16 commits
   - series: 2 (15) -> 2 (15) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 4 -> 4 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)

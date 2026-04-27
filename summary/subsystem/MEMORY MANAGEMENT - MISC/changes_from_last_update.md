@@ -1,27 +1,71 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - a3907a3169d0 "selftests/mm: specify requirement for PROC_MEM_ALWAYS_FORCE=y"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260416-selftests-mm-proc-mem-always-force-v1-1-3f5865153c67@kernel.org
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
+  - new commits
+    - c6874b6d2299 "selftests/mm: run_vmtests.sh: fix destructive tests invocation"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/214fd9e4-5398-4c26-859e-c982c2e277c3@redhat.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 9 -> 11 commits
-  - series: 1 (8) -> 1 (8) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 4 -> 5 commits
+- mm-unstable: 0 -> 2 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, no role : 0 -> 2 commits
+  - changed commits
+    - series "selftests/mm: clean up build output and verbosity", v3. (2)
+      - 87dee0d9f24e "selftests/mm: respect build verbosity settings for 32/64-bit targets (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260422080446.26020-1-wangli.ahau@gmail.com
+        - Link: https://lore.kernel.org/20260422080446.26020-2-wangli.ahau@gmail.com
+      - 4076133d82a7 "selftests/mm: suppress compiler error in liburing check (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260422080446.26020-3-wangli.ahau@gmail.com
+- mm-new: 11 -> 12 commits
+  - series: 1 (8) -> 0 (9)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 5 -> 4 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 3 commits
   - new commits
-    - d2d16fc49550 "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/tencent_98F3571EF9236437E5165F5C08CF258A9E08@qq.com
-    - 42aab724f1e3 "selftests/mm: simplify byte pattern checking in mremap_test"
+    - series "mm/damon: repost non-hotfix reviewed patches in damon/next tree", v2. (4)
+      - 870b1d1c11a4 "Docs/admin-guide/mm/damon: fix 'parametrs' typo (1/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260426231619.107231-3-sj@kernel.org
+      - ce4a082b04d2 "mm/damon: support MADV_COLLAPSE via DAMOS_COLLAPSE scheme action (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260426231619.107231-5-sj@kernel.org
+        - Link: https://lore.kernel.org/damon/20260313000816.79933-1-sj@kernel.org/ [1]
+    - series "mm/damon: let DAMON be paused and resumed", v2. (10)
+      - 9af957983ab2 "Docs/mm/damon/design: update for context pause/resume feature (2/10)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260427151231.113429-4-sj@kernel.org
+      - 0f7a2d48ca8e "Docs/admin-guide/mm/damon/usage: update for pause file (3/10)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260427151231.113429-5-sj@kernel.org
+  - changed commits
+    - 88b3745659c3 "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260415044509.579428-1-dev.jain@arm.com
+      - added "Link: https://lore.kernel.org/tencent_BB588C2CDED859A873093DAF28B2CC1F7B0A@qq.com"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/tencent_98F3571EF9236437E5165F5C08CF258A9E08@qq.com"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/tencent_BB588C2CDED859A873093DAF28B2CC1F7B0A@qq.com
+  - dropped commits
+    - series "mm/memory-failure: add panic option for unrecoverable pages", v5. (4)
+      - fdcd567c9e25 "selftests/mm: regression test for panic_on_unrecoverable_memory_failure (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260424-ecc_panic-v5-4-a35f4b50425c@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

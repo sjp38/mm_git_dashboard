@@ -1,4 +1,4 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -6,13 +6,34 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 11 -> 11 commits (no change)
-  - series: 2 (6) -> 2 (6) (no change)
+- mm-unstable: 0 -> 4 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, reviewer: 0 -> 4 commits
+  - changed commits
+    - 4fb7adf930bc "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
+    - series "mm: Free contiguous order-0 pages efficiently", v6. (3)
+      - c67412e03699 "mm/page_alloc: optimize free_contig_range() (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
+        - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
+        - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
+      - 463fa362c6c5 "vmalloc: optimize vfree with free_pages_bulk() (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
+      - d1622a1688c1 "mm/page_alloc: optimize __free_contig_frozen_range() (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260401101634.2868165-4-usama.anjum@arm.com
+- mm-new: 11 -> 7 commits
+  - series: 2 (6) -> 1 (3)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, reviewer: 5 -> 1 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

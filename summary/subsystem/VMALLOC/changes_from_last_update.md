@@ -1,16 +1,29 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.0-11901-ga5d1079c28a5b (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 82d1f01292d3 "vmalloc: fix buffer overflow in vrealloc_node_align()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260420114805.3572606-2-elver@google.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - series "mm: Free contiguous order-0 pages efficiently", v6. (3)
+      - 463fa362c6c5 "vmalloc: optimize vfree with free_pages_bulk() (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
