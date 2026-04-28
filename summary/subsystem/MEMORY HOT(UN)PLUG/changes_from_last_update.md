@@ -1,22 +1,35 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
+- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
+- mm-hotfixes-unstable: 2 -> 3 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 3 commits
+  - new commits
+    - series "mm: Fix memory block leaks and locking", v2. (3)
+      - ae43ee5b9bbc "drivers/base/memory: fix locking for poison accounting lookup (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260428085219.1316047-4-songmuchun@bytedance.com
   - changed commits
-    - 1d88fc8a6807 "mm/memory_hotplug: fix memory block reference leak on remove"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Oscar Salvador <osalvador@suse.de>"
-      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
-      - Link: https://lore.kernel.org/20260426144447.817722-1-songmuchun@bytedance.com
-    - 7e5cd1be095d "drivers/base/memory: fix memory block reference leak in poison accounting"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Miaohe Lin <linmiaohe@huawei.com>"
-      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-      - Link: https://lore.kernel.org/20260426144447.817722-2-songmuchun@bytedance.com
+    - series "mm: Fix memory block leaks and locking", v2. (3)
+      - 41f4434d3790 "mm/memory_hotplug: fix memory block reference leak on remove (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260428085219.1316047-2-songmuchun@bytedance.com"
+        - added "Link: https://lore.kernel.org/20260428085219.1316047-1-songmuchun@bytedance.com"
+        - added "Cc: "Rafael J. Wysocki" <rafael@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260426144447.817722-1-songmuchun@bytedance.com"
+        - dropped "Cc: "Rafael J . Wysocki" <rafael@kernel.org>"
+        - Link: https://lore.kernel.org/20260428085219.1316047-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260428085219.1316047-2-songmuchun@bytedance.com
+      - 9c1b164f9edf "drivers/base/memory: fix memory block reference leak in poison accounting (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260428085219.1316047-3-songmuchun@bytedance.com"
+        - added "Acked-by: Oscar Salvador <osalvador@suse.de>"
+        - added "Cc: "Rafael J. Wysocki" <rafael@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260426144447.817722-2-songmuchun@bytedance.com"
+        - dropped "Cc: "Rafael J . Wysocki" <rafael@kernel.org>"
+        - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
+        - Link: https://lore.kernel.org/20260428085219.1316047-3-songmuchun@bytedance.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
@@ -25,6 +38,24 @@
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: Fix vmemmap optimization accounting and initialization", v8. (6)
+      - 422c73f5d285 "mm/memory_hotplug: fix incorrect altmap passing in error path (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com"
+        - added "Acked-by: Liam R. Howlett <liam@infradead.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260426092640.375967-3-songmuchun@bytedance.com"
+        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com
+      - 6332c06601e4 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths (2/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com"
+        - added "Acked-by: Liam R. Howlett <liam@infradead.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260426092640.375967-4-songmuchun@bytedance.com"
+        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

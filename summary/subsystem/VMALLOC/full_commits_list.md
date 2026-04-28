@@ -12,7 +12,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 463fa362c6c5 "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
+      - e0477d4d46ef "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

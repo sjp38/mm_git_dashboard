@@ -1,4 +1,4 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
+- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -9,15 +9,12 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
   - changed commits
-    - 88b3745659c3 "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
+    - 052fc60de05d "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
       - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/tencent_BB588C2CDED859A873093DAF28B2CC1F7B0A@qq.com"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/tencent_98F3571EF9236437E5165F5C08CF258A9E08@qq.com"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
+      - dropped "Cc: SeongJae Park <sj@kernel.org>"
       - Link: https://lore.kernel.org/tencent_BB588C2CDED859A873093DAF28B2CC1F7B0A@qq.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

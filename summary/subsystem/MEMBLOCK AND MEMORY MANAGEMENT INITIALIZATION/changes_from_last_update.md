@@ -1,4 +1,4 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
+- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -10,6 +10,24 @@
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm: Fix vmemmap optimization accounting and initialization", v8. (6)
+      - b20dccb6e0be "mm/mm_init: fix pageblock migratetype for ZONE_DEVICE compound pages (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260428081855.1249045-6-songmuchun@bytedance.com"
+        - added "Acked-by: Liam R. Howlett <liam@infradead.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260426092640.375967-6-songmuchun@bytedance.com"
+        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260428081855.1249045-6-songmuchun@bytedance.com
+      - c09ed73aed8c "mm/mm_init: fix uninitialized struct pages for ZONE_DEVICE (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260428081855.1249045-7-songmuchun@bytedance.com"
+        - added "Acked-by: Liam R. Howlett <liam@infradead.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260426092640.375967-7-songmuchun@bytedance.com"
+        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260428081855.1249045-7-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

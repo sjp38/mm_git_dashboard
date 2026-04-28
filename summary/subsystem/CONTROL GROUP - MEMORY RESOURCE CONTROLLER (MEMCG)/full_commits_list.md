@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - f364f98405ab "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
+      - f8882870b854 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

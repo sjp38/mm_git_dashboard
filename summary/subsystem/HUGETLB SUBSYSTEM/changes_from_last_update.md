@@ -1,16 +1,10 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
-- mm-hotfixes-stable: 0 -> 1 commits
+- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 8f5ce56b7630 "mm/hugetlb_cma: round up per_node before logging it"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260422143353.852257-1-ekffu200098@gmail.com
-- mm-hotfixes-unstable: 2 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)

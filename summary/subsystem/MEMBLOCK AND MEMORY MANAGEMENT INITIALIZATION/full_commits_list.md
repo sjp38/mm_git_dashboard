@@ -7,11 +7,11 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-      - 89b7de5eb2b0 "mm/mm_init: fix pageblock migratetype for ZONE_DEVICE compound pages" (4/6)
+      - b20dccb6e0be "mm/mm_init: fix pageblock migratetype for ZONE_DEVICE compound pages" (4/6)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260426092640.375967-6-songmuchun@bytedance.com
-      - f540d22575be "mm/mm_init: fix uninitialized struct pages for ZONE_DEVICE" (5/6)
+        - Link: https://lore.kernel.org/20260428081855.1249045-6-songmuchun@bytedance.com
+      - c09ed73aed8c "mm/mm_init: fix uninitialized struct pages for ZONE_DEVICE" (5/6)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260426092640.375967-7-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260428081855.1249045-7-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

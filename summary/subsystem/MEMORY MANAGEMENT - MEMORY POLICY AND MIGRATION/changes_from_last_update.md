@@ -1,26 +1,20 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
+- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 1 commits
-  - changed commits
-    - fda706796e20 "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260425133537.17463-1-nueralspacetech@gmail.com
-  - dropped commits
-    - 8d4fbc82c14d "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260425134453.23769-1-nueralspacetech@gmail.com
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 2 commits
+  - new commits
+    - 0167e41ed124 "mm/migrate: rename PAGE_ migration flags to FOLIO_"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260324190706.964555-4-shivankg@amd.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -8,23 +8,25 @@
       - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 3 total, 2 (3) series, 0 non-series commits
+- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, reviewer: 1 commits
+  - full commits list
+      - 05a326c2886c "mm/khugepaged: introduce collapse_allowable_orders helper function" (8/13)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com
+- mm-new: 2 total, 2 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
-    - reviewer, reviewer: 1 commits
   - full commits list
-      - b6841fda2880 "mm/khugepaged: introduce collapse_allowable_orders helper function" (8/13)
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com
     - series "fix MAP_DROPPABLE not supported errno", v4. (3 commits)
-      - 1b980a30f61c "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
+      - 27a1dbf612b9 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
     - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3 commits)
-      - 4d6057559d9d "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
+      - 9e226b8e7ad9 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
         - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com

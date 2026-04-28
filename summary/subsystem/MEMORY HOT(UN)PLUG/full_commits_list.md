@@ -1,16 +1,20 @@
 - baseline: v7.1-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 3 total, 1 (3) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 3 commits
   - full commits list
-    - 1d88fc8a6807 "mm/memory_hotplug: fix memory block reference leak on remove"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260426144447.817722-1-songmuchun@bytedance.com
-    - 7e5cd1be095d "drivers/base/memory: fix memory block reference leak in poison accounting"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260426144447.817722-2-songmuchun@bytedance.com
+    - series "mm: Fix memory block leaks and locking", v2. (3 commits)
+      - 41f4434d3790 "mm/memory_hotplug: fix memory block reference leak on remove" (0/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260428085219.1316047-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260428085219.1316047-2-songmuchun@bytedance.com
+      - 9c1b164f9edf "drivers/base/memory: fix memory block reference leak in poison accounting" (1/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260428085219.1316047-3-songmuchun@bytedance.com
+      - ae43ee5b9bbc "drivers/base/memory: fix locking for poison accounting lookup" (2/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260428085219.1316047-4-songmuchun@bytedance.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 2 total, 0 (2) series, 0 non-series commits
@@ -18,11 +22,11 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 20ded2187485 "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
+      - 422c73f5d285 "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260426092640.375967-3-songmuchun@bytedance.com
-      - 1baaa0b4b384 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
+        - Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com
+      - 6332c06601e4 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260426092640.375967-4-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

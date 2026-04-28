@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - cf2ce684e1f1 "mm: remove page_mapped()" (2/3)
+      - b3816f2b96b8 "mm: remove page_mapped()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260427-page_mapped-v1-3-e89c3592c74c@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

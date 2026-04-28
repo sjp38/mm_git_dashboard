@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-      - 206591cb1653 "mm/kfence: use special gfp_t format specifier" (1/3)
+      - 0fe6461ea3ff "mm/kfence: use special gfp_t format specifier" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260326-gfp64-v2-3-d916021cecdf@google.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

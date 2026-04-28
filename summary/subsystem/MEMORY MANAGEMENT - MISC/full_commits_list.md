@@ -10,68 +10,85 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - c6874b6d2299 "selftests/mm: run_vmtests.sh: fix destructive tests invocation"
+    - 29399237b437 "selftests/mm: run_vmtests.sh: fix destructive tests invocation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/214fd9e4-5398-4c26-859e-c982c2e277c3@redhat.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
+- mm-unstable: 5 total, 1 (5) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
+    - reviewer, nobody: 1 commits
+    - reviewer, reviewer: 2 commits
   - full commits list
     - series "selftests/mm: clean up build output and verbosity", v3. (2 commits)
-      - 87dee0d9f24e "selftests/mm: respect build verbosity settings for 32/64-bit targets" (0/2)
+      - f4219171b506 "selftests/mm: respect build verbosity settings for 32/64-bit targets" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260422080446.26020-1-wangli.ahau@gmail.com
         - Link: https://lore.kernel.org/20260422080446.26020-2-wangli.ahau@gmail.com
-      - 4076133d82a7 "selftests/mm: suppress compiler error in liburing check" (1/2)
+      - 2ff57e4f7fbb "selftests/mm: suppress compiler error in liburing check" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260422080446.26020-3-wangli.ahau@gmail.com
-- mm-new: 12 total, 0 (9) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 4 commits
-    - reviewer, nobody: 1 commits
-    - reviewer, reviewer: 2 commits
-    - maintainer, nobody: 3 commits
-  - full commits list
-      - 1cfc7472d1f4 "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
+      - 76616e08596b "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-3-npache@redhat.com
-      - 8719a3aa9d9d "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
+      - 426b9d35fc2d "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260419185750.260784-8-npache@redhat.com
-      - 2a6ae3571160 "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
+      - f9b94d282b15 "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-14-npache@redhat.com
-      - 446137e25c21 "selftests/mm: verify droppable mappings cannot be locked" (1/3)
+- mm-new: 14 total, 0 (9) series, 5 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 5 commits
+    - no role, maintainer: 2 commits
+    - reviewer, nobody: 1 commits
+    - maintainer, nobody: 5 commits
+  - full commits list
+      - f451f0b47e2a "mm/page_owner: document page_owner filter features" (3/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428071112.1420380-5-zhen.ni@easystack.cn
+      - 7db0358ae06c "selftests/mm: verify droppable mappings cannot be locked" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com
-      - f4d2962a1676 "selftests/mm: run the MAP_DROPPABLE selftest" (2/3)
+      - 953a6aa77c9c "selftests/mm: run the MAP_DROPPABLE selftest" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260416033939.49981-4-anthony.yznaga@oracle.com
-    - 2ec0aa8dfcf8 "Docs/mm/damon/maintainer-profile: add AI review usage guideline"
+    - 746fc7fc3507 "Docs/mm/damon/maintainer-profile: add AI review usage guideline"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260412211932.89038-1-sj@kernel.org
       - Link: https://github.com/sashiko-dev/sashiko/commit/ad9f4a98f958 [1]
       - Link: https://github.com/sashiko-dev/sashiko/commit/b554c7b6e733 [2]
-    - fc3047666021 "selftests/mm: simplify byte pattern checking in mremap_test"
+    - e054cd56aba3 "selftests/mm: simplify byte pattern checking in mremap_test"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260415044509.579428-1-dev.jain@arm.com
-      - 870b1d1c11a4 "Docs/admin-guide/mm/damon: fix 'parametrs' typo" (1/4)
-        - Authored by no role player, reviewed by nobody
+      - 341e3221fadc "Docs/admin-guide/mm/damon: fix 'parametrs' typo" (1/4)
+        - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426231619.107231-3-sj@kernel.org
-      - ce4a082b04d2 "mm/damon: support MADV_COLLAPSE via DAMOS_COLLAPSE scheme action" (3/4)
-        - Authored by no role player, reviewed by nobody
+      - 399de5493863 "mm/damon: support MADV_COLLAPSE via DAMOS_COLLAPSE scheme action" (3/4)
+        - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426231619.107231-5-sj@kernel.org
         - Link: https://lore.kernel.org/damon/20260313000816.79933-1-sj@kernel.org/ [1]
-    - 88b3745659c3 "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
+    - 052fc60de05d "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_BB588C2CDED859A873093DAF28B2CC1F7B0A@qq.com
-      - 9af957983ab2 "Docs/mm/damon/design: update for context pause/resume feature" (2/10)
+      - 9a48dc3758c0 "Docs/mm/damon/design: update for context pause/resume feature" (2/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260427151231.113429-4-sj@kernel.org
-      - 0f7a2d48ca8e "Docs/admin-guide/mm/damon/usage: update for pause file" (3/10)
+      - e10e9ca4f7c9 "Docs/admin-guide/mm/damon/usage: update for pause file" (3/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260427151231.113429-5-sj@kernel.org
+      - d451ba0407a0 "Docs/mm/damon/design: document fail_charge_{num,denom}" (4/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-6-sj@kernel.org
+      - 4cd7674f2016 "Docs/admin-guide/mm/damon/usage: document fail_charge_{num,denom} files" (5/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-7-sj@kernel.org
+    - dedab48ed715 "selftests/mm: khugepaged: initialize file contents via mmap"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260428133138.88802-1-agarwal.vineet2006@gmail.com
+    - 52dc268726a7 "flush dirty folio so that drop_caches can work"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/0FA813EA-5EFA-482F-B8BF-FE65D4169C44@nvidia.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

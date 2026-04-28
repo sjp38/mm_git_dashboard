@@ -1,24 +1,25 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
-- mm-hotfixes-stable: 0 -> 1 commits
+- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, nobody: 0 -> 1 commits
-  - changed commits
-    - 619eab23e1ce "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
-      - Authored by a reviewer, reviewed by nobody
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, nobody: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 2 (3) -> 2 (3) (no change)
+- mm-unstable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - reviewer, reviewer: 0 -> 1 commits
+  - changed commits
+    - series "khugepaged: mTHP support", v16. (13)
+      - 05a326c2886c "mm/khugepaged: introduce collapse_allowable_orders helper function (8/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com
+- mm-new: 3 -> 2 commits
+  - series: 2 (3) -> 2 (2)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

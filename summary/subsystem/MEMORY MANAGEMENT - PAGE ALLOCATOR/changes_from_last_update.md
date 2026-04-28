@@ -1,4 +1,4 @@
-- baseline: v7.0-11901-ga5d1079c28a5b -> v7.1-rc1
+- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -6,36 +6,45 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 4 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, reviewer: 0 -> 4 commits
-  - changed commits
-    - 4fb7adf930bc "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
-    - series "mm: Free contiguous order-0 pages efficiently", v6. (3)
-      - c67412e03699 "mm/page_alloc: optimize free_contig_range() (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
-      - 463fa362c6c5 "vmalloc: optimize vfree with free_pages_bulk() (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
-      - d1622a1688c1 "mm/page_alloc: optimize __free_contig_frozen_range() (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260401101634.2868165-4-usama.anjum@arm.com
-- mm-new: 11 -> 7 commits
-  - series: 2 (6) -> 1 (3)
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
+- mm-new: 7 -> 6 commits
+  - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 5 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+  - changed commits
+    - series "mm/page_owner: add filter infrastructure for print_mode and NUMA filtering", v3. (4)
+      - 4bc503fd1442 "mm/page_owner: add filter infrastructure (0/4)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260428071112.1420380-1-zhen.ni@easystack.cn"
+        - added "Link: https://lore.kernel.org/20260428071112.1420380-2-zhen.ni@easystack.cn"
+        - added "Cc: Zhen Ni <zhen.ni@easystack.cn>"
+        - dropped "Link: https://lore.kernel.org/20260419155540.376847-1-zhen.ni@easystack.cn"
+        - dropped "Link: https://lore.kernel.org/20260419155540.376847-2-zhen.ni@easystack.cn"
+        - Link: https://lore.kernel.org/20260428071112.1420380-1-zhen.ni@easystack.cn
+        - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-2-zhen.ni@easystack.cn/
+        - Link: https://lore.kernel.org/20260428071112.1420380-2-zhen.ni@easystack.cn
+      - 626deba9a757 "mm/page_owner: add print_mode filter (1/4)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260428071112.1420380-3-zhen.ni@easystack.cn"
+        - dropped "Link: https://lore.kernel.org/20260419155540.376847-3-zhen.ni@easystack.cn"
+        - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-3-zhen.ni@easystack.cn/
+        - Link: https://lore.kernel.org/20260428071112.1420380-3-zhen.ni@easystack.cn
+      - 7a160d6940cc "mm/page_owner: add NUMA node filter with nodelist support (2/4)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260428071112.1420380-4-zhen.ni@easystack.cn"
+        - added "Link: https://lore.kernel.org/linux-mm/20260419155540.376847-4-zhen.ni@easystack.cn/"
+        - dropped "Link: https://lore.kernel.org/20260419155540.376847-4-zhen.ni@easystack.cn"
+        - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-4-zhen.ni@easystack.cn/
+        - Link: https://lore.kernel.org/linux-mm/20260419155540.376847-4-zhen.ni@easystack.cn/
+        - Link: https://lore.kernel.org/20260428071112.1420380-4-zhen.ni@easystack.cn
+  - dropped commits
+    - 4c91e569de8b "mm-page_owner-add-numa-node-filter-with-nodelist-support-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
