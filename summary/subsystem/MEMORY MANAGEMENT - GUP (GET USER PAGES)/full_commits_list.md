@@ -7,10 +7,10 @@
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-    - 7ffebbe93941 "mm/gup: cleanup pgtable entry accessors"
+    - 2f00863bc55e "mm/gup: cleanup pgtable entry accessors"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260421051754.1691221-1-agordeev@linux.ibm.com
-    - eacc93a55c97 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 6aaf6b10f437 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

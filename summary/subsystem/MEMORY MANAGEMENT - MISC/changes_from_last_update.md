@@ -5,74 +5,20 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 29399237b437 "selftests/mm: run_vmtests.sh: fix destructive tests invocation"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-      - Link: https://lore.kernel.org/214fd9e4-5398-4c26-859e-c982c2e277c3@redhat.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 5 commits
-  - series: 1 (2) -> 1 (5)
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 2 commits
-  - changed commits
-    - series "khugepaged: mTHP support", v16. (13)
-      - 76616e08596b "mm/khugepaged: generalize alloc_charge_folio() (1/13)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260419185750.260784-3-npache@redhat.com
-      - 426b9d35fc2d "mm/khugepaged: add per-order mTHP collapse failure statistics (6/13)"
-        - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260419185750.260784-8-npache@redhat.com
-      - f9b94d282b15 "Documentation: mm: update the admin guide for mTHP collapse (12/13)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260419185750.260784-14-npache@redhat.com
-- mm-new: 12 -> 14 commits
-  - series: 0 (9) -> 0 (9) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 4 -> 5 commits
-    - no role, maintainer: 0 -> 2 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 2 -> 0 commits
-    - maintainer, nobody: 3 -> 5 commits
-  - new commits
-    - series "mm/page_owner: add filter infrastructure for print_mode and NUMA filtering", v3. (4)
-      - f451f0b47e2a "mm/page_owner: document page_owner filter features (3/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428071112.1420380-5-zhen.ni@easystack.cn
-    - series "mm/damon: introduce DAMOS failed region quota charge ratio". (11)
-      - d451ba0407a0 "Docs/mm/damon/design: document fail_charge_{num,denom} (4/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-6-sj@kernel.org
-      - 4cd7674f2016 "Docs/admin-guide/mm/damon/usage: document fail_charge_{num,denom} files (5/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-7-sj@kernel.org
-    - dedab48ed715 "selftests/mm: khugepaged: initialize file contents via mmap"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260428133138.88802-1-agarwal.vineet2006@gmail.com
-    - 52dc268726a7 "flush dirty folio so that drop_caches can work"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/0FA813EA-5EFA-482F-B8BF-FE65D4169C44@nvidia.com
-  - changed commits
-    - series "mm/damon: repost non-hotfix reviewed patches in damon/next tree", v2. (4)
-      - 341e3221fadc "Docs/admin-guide/mm/damon: fix 'parametrs' typo (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-        - Link: https://lore.kernel.org/20260426231619.107231-3-sj@kernel.org
-      - 399de5493863 "mm/damon: support MADV_COLLAPSE via DAMOS_COLLAPSE scheme action (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-        - Link: https://lore.kernel.org/20260426231619.107231-5-sj@kernel.org
-        - Link: https://lore.kernel.org/damon/20260313000816.79933-1-sj@kernel.org/ [1]
-    - 052fc60de05d "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-      - dropped "Cc: SeongJae Park <sj@kernel.org>"
-      - Link: https://lore.kernel.org/tencent_BB588C2CDED859A873093DAF28B2CC1F7B0A@qq.com
+    - reviewer, reviewer: 2 -> 2 commits (no change)
+- mm-new: 14 -> 14 commits (no change)
+  - series: 0 (9) -> 0 (9) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - reviewer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 5 -> 5 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

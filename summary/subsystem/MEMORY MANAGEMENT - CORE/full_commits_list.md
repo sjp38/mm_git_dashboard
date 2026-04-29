@@ -11,10 +11,10 @@
     - no role, maintainer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 5ee7d83dfcd2 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+    - 269189d9ef26 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
-    - 01a3ed81ca08 "mm-page_alloc-fix-initialization-of-tags-of-the-huge-zero-folio-with-init_on_free-fix"
+    - b9e71c94f56f "mm-page_alloc-fix-initialization-of-tags-of-the-huge-zero-folio-with-init_on_free-fix"
       - Authored by a maintainer, reviewed by nobody
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 5 total, 1 (2) series, 3 non-series commits
@@ -22,22 +22,22 @@
     - no role, no role : 2 commits
     - no role, reviewer: 3 commits
   - full commits list
-    - f09a078211da "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+    - 8d75bb0d2cf2 "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
-    - bcd63116dc02 "mm: convert vmemmap_p?d_populate() to static functions"
+    - fc95ee75bc06 "mm: convert vmemmap_p?d_populate() to static functions"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260423101441.7089-1-kaitao.cheng@linux.dev
     - series "mm: Free contiguous order-0 pages efficiently", v6. (3 commits)
-      - 6c351e7f62bd "mm/page_alloc: optimize free_contig_range()" (0/3)
+      - 98c9353b2220 "mm/page_alloc: optimize free_contig_range()" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
         - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
         - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
-      - e0477d4d46ef "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
+      - 7c75b792b323 "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
-    - 98640f0dede1 "mm/memory: update stale locking comments for fault handlers"
+    - 467cf3e2d83b "mm/memory: update stale locking comments for fault handlers"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260424092217.263648-1-adi.sharma@zohomail.in
 - mm-new: 8 total, 1 (4) series, 4 non-series commits
@@ -46,30 +46,30 @@
     - no role, reviewer: 3 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 8c069ca45cc2 "mm/sparse: remove unnecessary NULL check before allocating mem_section"
+    - 396f513706fb "mm/sparse: remove unnecessary NULL check before allocating mem_section"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260419144225.2875654-1-ekffu200098@gmail.com
-    - f01fd97dedeb "mm/sparse: remove sparse buffer pre-allocation mechanism"
+    - c1810c06531f "mm/sparse: remove sparse buffer pre-allocation mechanism"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260410092419.2446420-1-songmuchun@bytedance.com
-    - ef8b1cbae0a9 "mm/vmpressure: skip socket pressure for costly order reclaim"
+    - e4ab8f72215c "mm/vmpressure: skip socket pressure for costly order reclaim"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260406195014.112521-1-jp.kobryn@linux.dev
-    - f928204dcd4e "mm/thp: dead code cleanup in Kconfig"
+    - 53baccb1ee34 "mm/thp: dead code cleanup in Kconfig"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260331070730.33915-1-julianbraha@gmail.com
     - series "mm: Fix vmemmap optimization accounting and initialization", v8. (6 commits)
-      - 81c540b6674b "mm/sparse-vmemmap: fix vmemmap accounting underflow" (0/6)
+      - 8fc162e74df4 "mm/sparse-vmemmap: fix vmemmap accounting underflow" (0/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428081855.1249045-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260428081855.1249045-2-songmuchun@bytedance.com
-      - 6332c06601e4 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
+      - 74d0ccfa150c "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
-      - 688590f51ae3 "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization" (3/6)
+      - eea02bc1a789 "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization" (3/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428081855.1249045-5-songmuchun@bytedance.com
-      - b3816f2b96b8 "mm: remove page_mapped()" (2/3)
+      - 072f8c3ffaab "mm: remove page_mapped()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260427-page_mapped-v1-3-e89c3592c74c@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -78,10 +78,10 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 66be8e734d6a "treewide: fix indentation and whitespace in Kconfig files"
+    - 5489f3389719 "treewide: fix indentation and whitespace in Kconfig files"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260407053945.14116-1-linux.amoon@gmail.com
-    - fff1fe644311 "kernel/fork: validate exit_signal in kernel_clone()"
+    - e2ba3cf3ca73 "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by a reviewer
       - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
       - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com

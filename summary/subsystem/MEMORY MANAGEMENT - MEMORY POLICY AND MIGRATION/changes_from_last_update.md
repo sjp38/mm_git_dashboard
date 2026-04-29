@@ -8,13 +8,9 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 2 commits
-  - new commits
-    - 0167e41ed124 "mm/migrate: rename PAGE_ migration flags to FOLIO_"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260324190706.964555-4-shivankg@amd.com
+    - no role, reviewer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

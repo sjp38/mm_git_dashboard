@@ -8,52 +8,15 @@
     - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 5 commits
+- mm-unstable: 5 -> 5 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 1 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-  - changed commits
-    - 98640f0dede1 "mm/memory: update stale locking comments for fault handlers"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260424092217.263648-1-adi.sharma@zohomail.in
-- mm-new: 9 -> 8 commits
+- mm-new: 8 -> 8 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 5 -> 3 commits
-    - no role, reviewer: 1 -> 3 commits
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm: Fix vmemmap optimization accounting and initialization", v8. (6)
-      - 81c540b6674b "mm/sparse-vmemmap: fix vmemmap accounting underflow (0/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260428081855.1249045-2-songmuchun@bytedance.com"
-        - added "Link: https://lore.kernel.org/20260428081855.1249045-1-songmuchun@bytedance.com"
-        - added "Acked-by: Liam R. Howlett <liam@infradead.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260426092640.375967-1-songmuchun@bytedance.com"
-        - dropped "Link: https://lore.kernel.org/20260426092640.375967-2-songmuchun@bytedance.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260428081855.1249045-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260428081855.1249045-2-songmuchun@bytedance.com
-      - 6332c06601e4 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths (2/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com"
-        - added "Acked-by: Liam R. Howlett <liam@infradead.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260426092640.375967-4-songmuchun@bytedance.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
-      - 688590f51ae3 "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization (3/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260428081855.1249045-5-songmuchun@bytedance.com"
-        - added "Acked-by: Liam R. Howlett <liam@infradead.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260426092640.375967-5-songmuchun@bytedance.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260428081855.1249045-5-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)
