@@ -5,14 +5,14 @@
     - no role, maintainer: 3 commits
   - full commits list
     - series "mm: Fix memory block leaks and locking", v2. (3 commits)
-      - 6bbb545983c4 "mm/memory_hotplug: fix memory block reference leak on remove" (0/3)
+      - 4d5c7a23d2b7 "mm/memory_hotplug: fix memory block reference leak on remove" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428085219.1316047-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260428085219.1316047-2-songmuchun@bytedance.com
-      - 54fdec2b4aea "drivers/base/memory: fix memory block reference leak in poison accounting" (1/3)
+      - 54ca8110a5d1 "drivers/base/memory: fix memory block reference leak in poison accounting" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428085219.1316047-3-songmuchun@bytedance.com
-      - c6931b22972d "drivers/base/memory: fix locking for poison accounting lookup" (2/3)
+      - eb1a3cffaa57 "drivers/base/memory: fix locking for poison accounting lookup" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428085219.1316047-4-songmuchun@bytedance.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -22,10 +22,10 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 12a428dd3c02 "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
+      - cfa7d34fd526 "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com
-      - 74d0ccfa150c "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
+      - c1564329246d "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

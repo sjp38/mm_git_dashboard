@@ -12,11 +12,24 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-- mm-new: 8 -> 8 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+- mm-new: 8 -> 11 commits
+  - series: 1 (4) -> 2 (7)
+    - no role, no role : 3 -> 6 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
+  - new commits
+    - series "kasan: hw_tags: Disable tagging for stack and page-tables", v4. (3)
+      - 3a0d9e95e52d "vmalloc: add __GFP_SKIP_KASAN support (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260429102704.680174-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260429102704.680174-2-dev.jain@arm.com
+      - 99e09acd9b4b "kasan: skip HW tagging for all kernel thread stacks (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260429102704.680174-3-dev.jain@arm.com
+    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
+      - 26bf255d76fe "mm: remove READ_ONLY_THP_FOR_FS Kconfig option (4/14)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260429153538.727855-1-ziy@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)

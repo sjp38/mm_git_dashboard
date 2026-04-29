@@ -8,42 +8,307 @@
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 18 -> 18 commits (no change)
-  - series: 2 (5) -> 2 (5) (no change)
+- mm-hotfixes-unstable: 18 -> 16 commits
+  - series: 2 (5) -> 1 (3)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 5 -> 5 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 4 -> 4 commits (no change)
+    - no role, no role : 5 -> 3 commits
+    - no role, maintainer: 5 -> 6 commits
+    - maintainer, nobody: 4 -> 3 commits
+  - new commits
+    - b68a3d266af2 "mm: memcontrol: fix rcu unbalance in get_non_dying_memcg_end()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260429073105.44472-1-qi.zheng@linux.dev
+  - changed commits
+    - series "mm: Fix memory block leaks and locking", v2. (3)
+      - 4d5c7a23d2b7 "mm/memory_hotplug: fix memory block reference leak on remove (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260428085219.1316047-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260428085219.1316047-2-songmuchun@bytedance.com
+      - 54ca8110a5d1 "drivers/base/memory: fix memory block reference leak in poison accounting (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260428085219.1316047-3-songmuchun@bytedance.com
+      - eb1a3cffaa57 "drivers/base/memory: fix locking for poison accounting lookup (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Miaohe Lin <linmiaohe@huawei.com>"
+        - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
+        - Link: https://lore.kernel.org/20260428085219.1316047-4-songmuchun@bytedance.com
+  - dropped commits
+    - 6319dbc17e9f "mm/damon/core: make charge_addr_from aware of end-address exclusivity"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260428042942.118230-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260428032324.115663-1-sj@kernel.org [1]
+    - series "MAINTAINERS: update KEXEC, KDUMP and LIVE UPDATE". (2)
+      - 2d754a520e59 "MAINTAINERS: add tree for KDUMP and KEXEC (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260428124833.1903302-1-rppt@kernel.org
+        - Link: https://lore.kernel.org/20260428124833.1903302-2-rppt@kernel.org
+      - 3f2fbe403647 "MAINTAINERS: add kexec@ list to LIVE UPDATE ENTRY (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260428124833.1903302-3-rppt@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 45 -> 45 commits (no change)
-  - series: 6 (37) -> 6 (37) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+- mm-unstable: 45 -> 43 commits
+  - series: 6 (37) -> 5 (35)
+    - no role, nobody: 2 -> 0 commits
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 7 -> 7 commits (no change)
     - reviewer, nobody: 4 -> 4 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 17 -> 17 commits (no change)
     - reviewer, maintainer: 7 -> 7 commits (no change)
-- mm-new: 84 -> 84 commits (no change)
-  - series: 12 (59) -> 12 (59) (no change)
-    - no role, nobody: 7 -> 7 commits (no change)
-    - no role, no role : 18 -> 18 commits (no change)
-    - no role, reviewer: 12 -> 12 commits (no change)
+  - changed commits
+    - d4f06b4d5c21 "mm/gup: cleanup pgtable entry accessors"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260421051754.1691221-1-agordeev@linux.ibm.com
+- mm-new: 84 -> 104 commits
+  - series: 12 (59) -> 15 (78)
+    - no role, nobody: 7 -> 6 commits
+    - no role, no role : 18 -> 24 commits
+    - no role, reviewer: 12 -> 20 commits
     - no role, maintainer: 23 -> 23 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 22 -> 22 commits (no change)
+    - reviewer, nobody: 1 -> 5 commits
+    - reviewer, reviewer: 1 -> 5 commits
+    - reviewer, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 22 -> 20 commits
+  - new commits
+    - 78c22ab4ad70 "include/asm-generic/fixmap.h: reimplement nasty macros in C"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/ae92kz3LeyaFBvKw@rli9-mobl
+    - 7615ee99ad2e "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
+    - series "kasan: hw_tags: Disable tagging for stack and page-tables", v4. (3)
+      - 3a0d9e95e52d "vmalloc: add __GFP_SKIP_KASAN support (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260429102704.680174-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260429102704.680174-2-dev.jain@arm.com
+      - 99e09acd9b4b "kasan: skip HW tagging for all kernel thread stacks (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260429102704.680174-3-dev.jain@arm.com
+      - e4e748550e66 "mm: skip KASAN tagging for page-allocated page tables (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260429102704.680174-4-dev.jain@arm.com
+    - series "mm/damon/reclaim,lru_sort: monitor all system rams by default". (7)
+      - db2c40f79bba "mm/damon: introduce damon_set_region_system_rams_default() (0/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429041232.90257-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260429041232.90257-2-sj@kernel.org
+      - 4abb30686ee6 "mm/damon/reclaim: cover all system rams (1/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429041232.90257-3-sj@kernel.org
+      - 5b464842d727 "mm/damon/lru_sort: cover all system rams (2/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429041232.90257-4-sj@kernel.org
+      - 33ae878da352 "mm/damon/core: remove damon_set_region_biggest_system_ram_default() (3/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429041232.90257-5-sj@kernel.org
+      - 21836a00d92c "mm/damon/stat: use damon_set_region_system_rams_default() (4/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429041232.90257-6-sj@kernel.org
+      - f4f158895640 "Docs/admin-guide/mm/damon/reclaim: update for entire memory monitoring (5/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429041232.90257-7-sj@kernel.org
+      - ec0ce0721ba2 "Docs/admin-guide/mm/damon/lru_sort: update for entire memory monitoring (6/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429041232.90257-8-sj@kernel.org
+    - a81a18c3c1cf "mm/khugepaged: return -EAGAIN for SCAN_PAGE_HAS_PRIVATE in MADV_COLLAPSE"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260429140434.439456-1-agarwal.vineet2006@gmail.com
+    - series "mm/damon/sysfs: document filters/ directory as deprecated". (2)
+      - 165fbdf8bf46 "Docs/admin-guide/mm/damon/usage: mark scheme filters sysfs dir as deprecated (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429150309.82282-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260429150309.82282-2-sj@kernel.org
+      - 699ff470d10d "Docs/ABI/damon: mark schemes/<S>/filters/ deprecated (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429150309.82282-3-sj@kernel.org
+    - series "mm: use spinlock guards for zone lock", v3. (8)
+      - c44fd738ebf1 "mm: use zone lock guard in reserve_highatomic_pageblock() (0/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/cover.1777462630.git.d@ilvokhin.com
+        - Link: https://lore.kernel.org/3657e1144e2ffc1ca0eb57d57d89bfec4073d8c6.1777462630.git.d@ilvokhin.com
+        - Link: https://lore.kernel.org/all/20260309164516.GE606826@noisy.programming.kicks-ass.net/ [1]
+        - Link: https://lore.kernel.org/all/afC5C6fylF4AsITV@shell.ilvokhin.com/ [2]
+        - Link: https://lore.kernel.org/all/20260427165037.205337-1-d@ilvokhin.com/ [3]
+      - c48359f10f66 "mm: use zone lock guard in unset_migratetype_isolate() (1/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/815c0905ea77828ed32bf56ff0a6d3c6548eb3a2.1777462630.git.d@ilvokhin.com
+      - fa740a3b780f "mm: use zone lock guard in unreserve_highatomic_pageblock() (2/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/69db814cd178915cb5615334a29304678f960963.1777462630.git.d@ilvokhin.com
+      - 6140e03b1513 "mm: use zone lock guard in set_migratetype_isolate() (3/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/6883351ad7f74d20875fff30e0e3214a089cea97.1777462630.git.d@ilvokhin.com
+      - b5eb646c6d4d "mm: use zone lock guard in take_page_off_buddy() (4/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/a981721632a981f148c63e3f7df3d1116a0c3f6d.1777462630.git.d@ilvokhin.com
+      - 936d4367bbd8 "mm: use zone lock guard in put_page_back_buddy() (5/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/b0fceedca37139da36aa626ac72eb9840b641021.1777462630.git.d@ilvokhin.com
+      - 1e78cabb2eba "mm: use zone lock guard in free_pcppages_bulk() (6/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/aafc2d660057a91eb40417f8ff4645b0a8c525e2.1777462630.git.d@ilvokhin.com
+      - 08adbbc8fa90 "mm: use zone lock guard in __offline_isolated_pages() (7/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/13149be4f8151e18eb5f1eb4f3241ab3cffb373e.1777462630.git.d@ilvokhin.com
+    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
+      - 69f4275e66ff "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260429152924.727124-1-ziy@nvidia.com
+        - Link: https://lore.kernel.org/20260429152924.727124-2-ziy@nvidia.com
+        - Link: https://lore.kernel.org/all/20260323190644.1714379-1-ziy@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/20260327014255.2058916-1-ziy@nvidia.com/ [2]
+        - Link: https://lore.kernel.org/all/20260413192030.3275825-1-ziy@nvidia.com/ [3]
+        - Link: https://lore.kernel.org/all/20260418024429.4055056-1-ziy@nvidia.com/ [4]
+        - Link: https://lore.kernel.org/all/20260424024915.28758-1-ziy@nvidia.com/ [5]
+      - 820d00883d92 "mm/khugepaged: add folio dirty check after try_to_unmap() (1/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260429152924.727124-3-ziy@nvidia.com
+      - 942e1be02298 "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled() (2/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429152924.727124-4-ziy@nvidia.com
+      - 55f3f3b316fd "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled() (3/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260429152924.727124-5-ziy@nvidia.com
+      - 26bf255d76fe "mm: remove READ_ONLY_THP_FOR_FS Kconfig option (4/14)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260429153538.727855-1-ziy@nvidia.com
+      - 9fc6b5549b38 "mm: fs: remove filemap_nr_thps*() functions and their users (5/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260429153538.727855-2-ziy@nvidia.com
+      - 5064dc4949a0 "fs: remove nr_thps from struct address_space (6/14)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260429153538.727855-3-ziy@nvidia.com
+      - fbda4b27ac2b "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS (7/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260429153538.727855-4-ziy@nvidia.com
+      - c5fb79bc17c9 "mm/truncate: use folio_split() in truncate_inode_partial_folio() (8/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429153538.727855-5-ziy@nvidia.com
+      - 349f1aeda493 "fs/btrfs: remove a comment referring to READ_ONLY_THP_FOR_FS (9/14)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260429153538.727855-6-ziy@nvidia.com
+      - 22199305be4a "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged (10/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429153538.727855-7-ziy@nvidia.com
+      - 1474f6f20f30 "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions (11/14)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260429153538.727855-8-ziy@nvidia.com
+      - a9ee1fc56749 "mm/khugepaged: enable clean pagecache folio collapse for writable files (12/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429153538.727855-9-ziy@nvidia.com
+      - 0587fb0c820d "selftests/mm: add writable-file collapse tests for khugepaged (13/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429153538.727855-10-ziy@nvidia.com
+  - changed commits
+    - series "skip redundant sync IPIs when TLB flush sent them", v10. (2)
+      - 4428ba6f5da5 "mm/mmu_gather: prepare to skip redundant sync IPIs (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260424062528.71951-1-lance.yang@linux.dev
+        - Link: https://lore.kernel.org/20260424062528.71951-2-lance.yang@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [1]
+        - Link: https://lore.kernel.org/linux-mm/6a364356-5fea-4a6c-b959-ba3b22ce9c88@kernel.org/ [2]
+        - Link: https://lore.kernel.org/linux-mm/2cb4503d-3a3f-4f6c-8038-7b3d1c74b3c2@kernel.org/ [3]
+        - Link: https://lore.kernel.org/linux-mm/bbfdf226-4660-4949-b17b-0d209ee4ef8c@kernel.org/ [4]
+        - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [5]
+        - Link: https://lore.kernel.org/linux-mm/6a364356-5fea-4a6c-b959-ba3b22ce9c88@kernel.org/ [6]
+        - Link: https://lore.kernel.org/linux-mm/2cb4503d-3a3f-4f6c-8038-7b3d1c74b3c2@kernel.org/ [7]
+      - 5674b41ff5f4 "x86/tlb: skip redundant sync IPIs for native TLB flush (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260424062528.71951-3-lance.yang@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/20260302145652.GH1395266@noisy.programming.kicks-ass.net/ [1]
+        - Link: https://lore.kernel.org/linux-mm/f856051b-10c7-4d65-9dbe-6b1677af74bd@intel.com/ [2]
+        - Link: https://lore.kernel.org/linux-mm/bbfdf226-4660-4949-b17b-0d209ee4ef8c@kernel.org/ [3]
+    - da83d0cd2954 "selftests/mm: khugepaged: initialize file contents via mmap"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260429115816.98824-1-agarwal.vineet2006@gmail.com"
+      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+      - added "Tested-by: Zi Yan <ziy@nvidia.com>"
+      - dropped "Link: https://lore.kernel.org/20260428133138.88802-1-agarwal.vineet2006@gmail.com"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - Link: https://lore.kernel.org/20260429115816.98824-1-agarwal.vineet2006@gmail.com
+  - dropped commits
+    - series "mm/page_owner: add filter infrastructure for print_mode and NUMA filtering", v3. (4)
+      - 638f73e96aed "mm/page_owner: add filter infrastructure (0/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428071112.1420380-1-zhen.ni@easystack.cn
+        - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-2-zhen.ni@easystack.cn/
+        - Link: https://lore.kernel.org/20260428071112.1420380-2-zhen.ni@easystack.cn
+      - 19bf2fe2c4bc "mm/page_owner: add print_mode filter (1/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-3-zhen.ni@easystack.cn/
+        - Link: https://lore.kernel.org/20260428071112.1420380-3-zhen.ni@easystack.cn
+      - 6c5ae488b9db "mm/page_owner: add NUMA node filter with nodelist support (2/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-4-zhen.ni@easystack.cn/
+        - Link: https://lore.kernel.org/linux-mm/20260419155540.376847-4-zhen.ni@easystack.cn/
+        - Link: https://lore.kernel.org/20260428071112.1420380-4-zhen.ni@easystack.cn
+      - 1690abe81d8e "mm/page_owner: document page_owner filter features (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428071112.1420380-5-zhen.ni@easystack.cn
+    - 0937263c7a11 "mm/damon: add node_eligible_mem_bp goal metric"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260428030520.701-1-ravis.opensrc@gmail.com
+    - series "mm/filemap: tighten mmap_miss hit accounting", v3. (2)
+      - b18247dfc40f "mm/filemap: count only the faulting address as a mmap hit (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/tencent_AA501E9A238337BD167E5C2ACF948A1AF308@qq.com
+        - Link: https://lore.kernel.org/tencent_756F151FE66F3D80479A6F982C0AB8569F09@qq.com
+      - 2f3e7e5fd93c "mm/filemap: do not count FAULT_FLAG_TRIED retries as mmap hits (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/tencent_22E6B8849EC1141FE7773C64467E6F1E2C09@qq.com
+    - series "mm/damon: introduce DAMOS failed region quota charge ratio". (11)
+      - 4308acc0421f "mm/damon/core: handle <min_region_sz remaining quota as empty (0/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260428013402.115171-2-sj@kernel.org
+      - 40245c9db920 "mm/damon/core: merge regions after applying DAMOS schemes (1/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-3-sj@kernel.org
+      - b90c7a4a597f "mm/damon/core: introduce failed region quota charge ratio (2/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-4-sj@kernel.org
+      - c38820f12b31 "mm/damon/sysfs-schemes: implement fail_charge_{num,denom} files (3/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-5-sj@kernel.org
+      - 0e49f8a81075 "Docs/mm/damon/design: document fail_charge_{num,denom} (4/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-6-sj@kernel.org
+      - 3f9f7c69b369 "Docs/admin-guide/mm/damon/usage: document fail_charge_{num,denom} files (5/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-7-sj@kernel.org
+      - c35731a7d167 "Docs/ABI/damon: document fail_charge_{num,denom} (6/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-8-sj@kernel.org
+      - c702a963b897 "mm/damon/tests/core-kunit: test fail_charge_{num,denom} committing (7/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-9-sj@kernel.org
+      - ede1e25fa4dc "selftests/damon/_damon_sysfs: support failed region quota charge ratio (8/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-10-sj@kernel.org
+      - 2574290bbfc0 "selftests/damon/drgn_dump_damon_status: support failed region quota charge ratio (9/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-11-sj@kernel.org
+      - f17ca5bf2878 "selftests/damon/sysfs.py: test failed region quota charge ratio (10/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-12-sj@kernel.org
+    - 2a9da9088164 "flush dirty folio so that drop_caches can work"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/0FA813EA-5EFA-482F-B8BF-FE65D4169C44@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 53 -> 52 commits
+- mm-nonmm-unstable: 52 -> 52 commits (no change)
   - series: 7 (32) -> 7 (32) (no change)
-    - no role, nobody: 19 -> 18 commits
+    - no role, nobody: 18 -> 18 commits (no change)
     - no role, no role : 17 -> 17 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 15 -> 15 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - dropped commits
-    - dd4bbc6d8e3a "include/asm-generic/fixmap.h: reimplement nasty macros in C"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/ae92kz3LeyaFBvKw@rli9-mobl

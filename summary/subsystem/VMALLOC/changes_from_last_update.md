@@ -9,8 +9,15 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - series "kasan: hw_tags: Disable tagging for stack and page-tables", v4. (3)
+      - 3a0d9e95e52d "vmalloc: add __GFP_SKIP_KASAN support (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260429102704.680174-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260429102704.680174-2-dev.jain@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

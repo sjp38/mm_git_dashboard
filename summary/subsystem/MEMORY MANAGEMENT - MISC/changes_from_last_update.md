@@ -12,13 +12,61 @@
     - no role, no role : 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-new: 14 -> 14 commits (no change)
-  - series: 0 (9) -> 0 (9) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-new: 14 -> 16 commits
+  - series: 0 (9) -> 1 (12)
+    - no role, nobody: 1 -> 0 commits
     - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 5 -> 5 commits (no change)
+    - reviewer, nobody: 1 -> 2 commits
+    - maintainer, nobody: 5 -> 6 commits
+  - new commits
+    - series "mm/damon/reclaim,lru_sort: monitor all system rams by default". (7)
+      - f4f158895640 "Docs/admin-guide/mm/damon/reclaim: update for entire memory monitoring (5/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429041232.90257-7-sj@kernel.org
+      - ec0ce0721ba2 "Docs/admin-guide/mm/damon/lru_sort: update for entire memory monitoring (6/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429041232.90257-8-sj@kernel.org
+    - series "mm/damon/sysfs: document filters/ directory as deprecated". (2)
+      - 165fbdf8bf46 "Docs/admin-guide/mm/damon/usage: mark scheme filters sysfs dir as deprecated (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429150309.82282-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260429150309.82282-2-sj@kernel.org
+    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
+      - 22199305be4a "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged (10/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429153538.727855-7-ziy@nvidia.com
+      - 1474f6f20f30 "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions (11/14)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260429153538.727855-8-ziy@nvidia.com
+      - 0587fb0c820d "selftests/mm: add writable-file collapse tests for khugepaged (13/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429153538.727855-10-ziy@nvidia.com
+  - changed commits
+    - da83d0cd2954 "selftests/mm: khugepaged: initialize file contents via mmap"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260429115816.98824-1-agarwal.vineet2006@gmail.com"
+      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+      - added "Tested-by: Zi Yan <ziy@nvidia.com>"
+      - dropped "Link: https://lore.kernel.org/20260428133138.88802-1-agarwal.vineet2006@gmail.com"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - Link: https://lore.kernel.org/20260429115816.98824-1-agarwal.vineet2006@gmail.com
+  - dropped commits
+    - series "mm/page_owner: add filter infrastructure for print_mode and NUMA filtering", v3. (4)
+      - 1690abe81d8e "mm/page_owner: document page_owner filter features (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428071112.1420380-5-zhen.ni@easystack.cn
+    - series "mm/damon: introduce DAMOS failed region quota charge ratio". (11)
+      - 0e49f8a81075 "Docs/mm/damon/design: document fail_charge_{num,denom} (4/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-6-sj@kernel.org
+      - 3f9f7c69b369 "Docs/admin-guide/mm/damon/usage: document fail_charge_{num,denom} files (5/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428013402.115171-7-sj@kernel.org
+    - 2a9da9088164 "flush dirty folio so that drop_caches can work"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/0FA813EA-5EFA-482F-B8BF-FE65D4169C44@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

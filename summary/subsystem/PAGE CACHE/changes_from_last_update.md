@@ -8,9 +8,38 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+- mm-new: 3 -> 4 commits
+  - series: 1 (2) -> 1 (3)
+    - no role, reviewer: 3 -> 1 commits
+    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - new commits
+    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
+      - 69f4275e66ff "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260429152924.727124-1-ziy@nvidia.com
+        - Link: https://lore.kernel.org/20260429152924.727124-2-ziy@nvidia.com
+        - Link: https://lore.kernel.org/all/20260323190644.1714379-1-ziy@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/20260327014255.2058916-1-ziy@nvidia.com/ [2]
+        - Link: https://lore.kernel.org/all/20260413192030.3275825-1-ziy@nvidia.com/ [3]
+        - Link: https://lore.kernel.org/all/20260418024429.4055056-1-ziy@nvidia.com/ [4]
+        - Link: https://lore.kernel.org/all/20260424024915.28758-1-ziy@nvidia.com/ [5]
+      - 9fc6b5549b38 "mm: fs: remove filemap_nr_thps*() functions and their users (5/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260429153538.727855-2-ziy@nvidia.com
+      - c5fb79bc17c9 "mm/truncate: use folio_split() in truncate_inode_partial_folio() (8/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260429153538.727855-5-ziy@nvidia.com
+  - dropped commits
+    - series "mm/filemap: tighten mmap_miss hit accounting", v3. (2)
+      - b18247dfc40f "mm/filemap: count only the faulting address as a mmap hit (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/tencent_AA501E9A238337BD167E5C2ACF948A1AF308@qq.com
+        - Link: https://lore.kernel.org/tencent_756F151FE66F3D80479A6F982C0AB8569F09@qq.com
+      - 2f3e7e5fd93c "mm/filemap: do not count FAULT_FLAG_TRIED retries as mmap hits (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/tencent_22E6B8849EC1141FE7773C64467E6F1E2C09@qq.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

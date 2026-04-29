@@ -9,12 +9,58 @@
 - mm-unstable: 4 -> 4 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
-- mm-new: 6 -> 6 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
+- mm-new: 6 -> 11 commits
+  - series: 1 (3) -> 1 (8)
+    - no role, nobody: 3 -> 0 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 9 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm: use spinlock guards for zone lock", v3. (8)
+      - c44fd738ebf1 "mm: use zone lock guard in reserve_highatomic_pageblock() (0/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/cover.1777462630.git.d@ilvokhin.com
+        - Link: https://lore.kernel.org/3657e1144e2ffc1ca0eb57d57d89bfec4073d8c6.1777462630.git.d@ilvokhin.com
+        - Link: https://lore.kernel.org/all/20260309164516.GE606826@noisy.programming.kicks-ass.net/ [1]
+        - Link: https://lore.kernel.org/all/afC5C6fylF4AsITV@shell.ilvokhin.com/ [2]
+        - Link: https://lore.kernel.org/all/20260427165037.205337-1-d@ilvokhin.com/ [3]
+      - c48359f10f66 "mm: use zone lock guard in unset_migratetype_isolate() (1/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/815c0905ea77828ed32bf56ff0a6d3c6548eb3a2.1777462630.git.d@ilvokhin.com
+      - fa740a3b780f "mm: use zone lock guard in unreserve_highatomic_pageblock() (2/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/69db814cd178915cb5615334a29304678f960963.1777462630.git.d@ilvokhin.com
+      - 6140e03b1513 "mm: use zone lock guard in set_migratetype_isolate() (3/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/6883351ad7f74d20875fff30e0e3214a089cea97.1777462630.git.d@ilvokhin.com
+      - b5eb646c6d4d "mm: use zone lock guard in take_page_off_buddy() (4/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/a981721632a981f148c63e3f7df3d1116a0c3f6d.1777462630.git.d@ilvokhin.com
+      - 936d4367bbd8 "mm: use zone lock guard in put_page_back_buddy() (5/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/b0fceedca37139da36aa626ac72eb9840b641021.1777462630.git.d@ilvokhin.com
+      - 1e78cabb2eba "mm: use zone lock guard in free_pcppages_bulk() (6/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/aafc2d660057a91eb40417f8ff4645b0a8c525e2.1777462630.git.d@ilvokhin.com
+      - 08adbbc8fa90 "mm: use zone lock guard in __offline_isolated_pages() (7/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/13149be4f8151e18eb5f1eb4f3241ab3cffb373e.1777462630.git.d@ilvokhin.com
+  - dropped commits
+    - series "mm/page_owner: add filter infrastructure for print_mode and NUMA filtering", v3. (4)
+      - 638f73e96aed "mm/page_owner: add filter infrastructure (0/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260428071112.1420380-1-zhen.ni@easystack.cn
+        - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-2-zhen.ni@easystack.cn/
+        - Link: https://lore.kernel.org/20260428071112.1420380-2-zhen.ni@easystack.cn
+      - 19bf2fe2c4bc "mm/page_owner: add print_mode filter (1/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-3-zhen.ni@easystack.cn/
+        - Link: https://lore.kernel.org/20260428071112.1420380-3-zhen.ni@easystack.cn
+      - 6c5ae488b9db "mm/page_owner: add NUMA node filter with nodelist support (2/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/linux-mm/20260417154638.22370-4-zhen.ni@easystack.cn/
+        - Link: https://lore.kernel.org/linux-mm/20260419155540.376847-4-zhen.ni@easystack.cn/
+        - Link: https://lore.kernel.org/20260428071112.1420380-4-zhen.ni@easystack.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

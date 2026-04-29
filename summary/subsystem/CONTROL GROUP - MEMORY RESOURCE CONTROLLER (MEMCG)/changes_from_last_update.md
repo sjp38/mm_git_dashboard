@@ -1,15 +1,25 @@
 - baseline: v7.1-rc1 -> v7.1-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - b68a3d266af2 "mm: memcontrol: fix rcu unbalance in get_non_dying_memcg_end()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260429073105.44472-1-qi.zheng@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
+- mm-new: 1 -> 2 commits
   - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 7615ee99ad2e "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
