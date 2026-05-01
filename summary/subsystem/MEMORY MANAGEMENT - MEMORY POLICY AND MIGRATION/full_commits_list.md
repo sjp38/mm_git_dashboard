@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - c7b402a43139 "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
+    - d8fc8b9f3ceb "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260425133537.17463-1-nueralspacetech@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -13,10 +13,10 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - facadfde575b "mm/migrate_device: cleanup up PMD Checks and warnings"
+    - be7aa0f88fd5 "mm/migrate_device: cleanup up PMD Checks and warnings"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260419174747.10701-1-nueralspacetech@gmail.com
-    - 195c4bf14bec "mm/migrate: rename PAGE_ migration flags to FOLIO_"
+    - 57de8d736b65 "mm/migrate: rename PAGE_ migration flags to FOLIO_"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260324190706.964555-4-shivankg@amd.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

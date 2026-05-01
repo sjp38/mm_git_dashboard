@@ -1,35 +1,38 @@
 - baseline: v7.1-rc1
-- mm-hotfixes-stable: 19 total, 2 (5) series, 14 non-series commits
+- mm-hotfixes-stable: 20 total, 2 (5) series, 15 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 6 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 3 commits
     - reviewer, nobody: 1 commits
     - maintainer, nobody: 6 commits
     - maintainer, no role : 1 commits
-- mm-hotfixes-unstable: 16 total, 1 (3) series, 13 non-series commits
+- mm-hotfixes-unstable: 18 total, 2 (4) series, 14 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 4 commits
-    - no role, no role : 3 commits
-    - no role, maintainer: 6 commits
+    - no role, nobody: 5 commits
+    - no role, no role : 6 commits
+    - no role, maintainer: 4 commits
     - maintainer, nobody: 3 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 43 total, 5 (35) series, 8 non-series commits
+- mm-unstable: 57 total, 6 (46) series, 11 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 6 commits
     - no role, reviewer: 7 commits
+    - no role, maintainer: 1 commits
     - reviewer, nobody: 4 commits
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 17 commits
     - reviewer, maintainer: 7 commits
-- mm-new: 104 total, 15 (78) series, 26 non-series commits
+    - maintainer, nobody: 12 commits
+- mm-new: 108 total, 16 (80) series, 28 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 6 commits
-    - no role, no role : 24 commits
-    - no role, reviewer: 20 commits
-    - no role, maintainer: 23 commits
-    - reviewer, nobody: 5 commits
+    - no role, nobody: 5 commits
+    - no role, no role : 25 commits
+    - no role, reviewer: 22 commits
+    - no role, maintainer: 24 commits
+    - reviewer, nobody: 6 commits
     - reviewer, reviewer: 5 commits
     - reviewer, maintainer: 1 commits
     - maintainer, nobody: 20 commits

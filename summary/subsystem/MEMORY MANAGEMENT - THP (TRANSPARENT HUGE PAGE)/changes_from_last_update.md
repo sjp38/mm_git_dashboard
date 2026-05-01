@@ -12,68 +12,18 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 5 -> 5 commits (no change)
-- mm-new: 5 -> 15 commits
-  - series: 1 (2) -> 2 (12)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 0 -> 2 commits
+- mm-new: 15 -> 16 commits
+  - series: 2 (12) -> 2 (12) (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, nobody: 1 -> 5 commits
-    - reviewer, reviewer: 0 -> 4 commits
-    - reviewer, maintainer: 0 -> 1 commits
+    - reviewer, nobody: 5 -> 6 commits
+    - reviewer, reviewer: 4 -> 4 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - a81a18c3c1cf "mm/khugepaged: return -EAGAIN for SCAN_PAGE_HAS_PRIVATE in MADV_COLLAPSE"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260429140434.439456-1-agarwal.vineet2006@gmail.com
     - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
-      - 69f4275e66ff "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260429152924.727124-1-ziy@nvidia.com
-        - Link: https://lore.kernel.org/20260429152924.727124-2-ziy@nvidia.com
-        - Link: https://lore.kernel.org/all/20260323190644.1714379-1-ziy@nvidia.com/ [1]
-        - Link: https://lore.kernel.org/all/20260327014255.2058916-1-ziy@nvidia.com/ [2]
-        - Link: https://lore.kernel.org/all/20260413192030.3275825-1-ziy@nvidia.com/ [3]
-        - Link: https://lore.kernel.org/all/20260418024429.4055056-1-ziy@nvidia.com/ [4]
-        - Link: https://lore.kernel.org/all/20260424024915.28758-1-ziy@nvidia.com/ [5]
-      - 820d00883d92 "mm/khugepaged: add folio dirty check after try_to_unmap() (1/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260429152924.727124-3-ziy@nvidia.com
-      - 942e1be02298 "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled() (2/14)"
+      - 9226a39a07e8 "selftests/mm: khugepaged perror fixup (11/14)"
         - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260429152924.727124-4-ziy@nvidia.com
-      - 55f3f3b316fd "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled() (3/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260429152924.727124-5-ziy@nvidia.com
-      - 9fc6b5549b38 "mm: fs: remove filemap_nr_thps*() functions and their users (5/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260429153538.727855-2-ziy@nvidia.com
-      - fbda4b27ac2b "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS (7/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260429153538.727855-4-ziy@nvidia.com
-      - c5fb79bc17c9 "mm/truncate: use folio_split() in truncate_inode_partial_folio() (8/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260429153538.727855-5-ziy@nvidia.com
-      - 22199305be4a "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged (10/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260429153538.727855-7-ziy@nvidia.com
-      - a9ee1fc56749 "mm/khugepaged: enable clean pagecache folio collapse for writable files (12/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260429153538.727855-9-ziy@nvidia.com
-      - 0587fb0c820d "selftests/mm: add writable-file collapse tests for khugepaged (13/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260429153538.727855-10-ziy@nvidia.com
-  - changed commits
-    - da83d0cd2954 "selftests/mm: khugepaged: initialize file contents via mmap"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/20260429115816.98824-1-agarwal.vineet2006@gmail.com"
-      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-      - added "Tested-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Link: https://lore.kernel.org/20260428133138.88802-1-agarwal.vineet2006@gmail.com"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/20260429115816.98824-1-agarwal.vineet2006@gmail.com
-  - dropped commits
-    - 2a9da9088164 "flush dirty folio so that drop_caches can work"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/0FA813EA-5EFA-482F-B8BF-FE65D4169C44@nvidia.com
+        - Link: https://lore.kernel.org/3BFC4C26-1C97-40AA-B4B7-7472B9768565@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

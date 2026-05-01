@@ -1,20 +1,17 @@
 - baseline: v7.1-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 3 total, 1 (3) series, 0 non-series commits
+- mm-hotfixes-unstable: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 3 commits
+    - no role, maintainer: 2 commits
   - full commits list
-    - series "mm: Fix memory block leaks and locking", v2. (3 commits)
-      - 4d5c7a23d2b7 "mm/memory_hotplug: fix memory block reference leak on remove" (0/3)
+    - series "mm: Fix memory block leaks and locking", v2. (2 commits)
+      - 0415d5f56ff3 "mm/memory_hotplug: fix memory block reference leak on remove" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428085219.1316047-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260428085219.1316047-2-songmuchun@bytedance.com
-      - 54ca8110a5d1 "drivers/base/memory: fix memory block reference leak in poison accounting" (1/3)
+      - e92729d2072b "drivers/base/memory: fix memory block reference leak in poison accounting" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428085219.1316047-3-songmuchun@bytedance.com
-      - eb1a3cffaa57 "drivers/base/memory: fix locking for poison accounting lookup" (2/3)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260428085219.1316047-4-songmuchun@bytedance.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 2 total, 0 (2) series, 0 non-series commits
@@ -22,10 +19,10 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - cfa7d34fd526 "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
+      - 561ec4cd70eb "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com
-      - c1564329246d "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
+      - 939efc5821e2 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

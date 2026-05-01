@@ -10,7 +10,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - e18db9ba4af6 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - 2db922e99116 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -19,7 +19,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - b255b4be14e2 "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
+    - 57b636cbc6c4 "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

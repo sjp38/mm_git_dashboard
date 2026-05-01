@@ -1,26 +1,13 @@
 - baseline: v7.1-rc1 -> v7.1-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 3 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-  - changed commits
+- mm-hotfixes-unstable: 3 -> 2 commits
+  - series: 1 (3) -> 1 (2)
+    - no role, maintainer: 3 -> 2 commits
+  - dropped commits
     - series "mm: Fix memory block leaks and locking", v2. (3)
-      - 4d5c7a23d2b7 "mm/memory_hotplug: fix memory block reference leak on remove (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260428085219.1316047-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260428085219.1316047-2-songmuchun@bytedance.com
-      - 54ca8110a5d1 "drivers/base/memory: fix memory block reference leak in poison accounting (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260428085219.1316047-3-songmuchun@bytedance.com
       - eb1a3cffaa57 "drivers/base/memory: fix locking for poison accounting lookup (2/3)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Miaohe Lin <linmiaohe@huawei.com>"
-        - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
         - Link: https://lore.kernel.org/20260428085219.1316047-4-songmuchun@bytedance.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
