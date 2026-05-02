@@ -12,18 +12,13 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 5 -> 5 commits (no change)
-- mm-new: 15 -> 16 commits
-  - series: 2 (12) -> 2 (12) (no change)
+- mm-new: 16 -> 16 commits (no change)
+  - series: 2 (12) -> 2 (13)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, nobody: 5 -> 6 commits
+    - reviewer, nobody: 6 -> 6 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
-      - 9226a39a07e8 "selftests/mm: khugepaged perror fixup (11/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/3BFC4C26-1C97-40AA-B4B7-7472B9768565@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

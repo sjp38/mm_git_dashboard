@@ -6,111 +6,118 @@
     - a3907a3169d0 "selftests/mm: specify requirement for PROC_MEM_ALWAYS_FORCE=y"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260416-selftests-mm-proc-mem-always-force-v1-1-3f5865153c67@kernel.org
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-    - 5170ef2848a9 "selftests/mm: run_vmtests.sh: fix destructive tests invocation"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/214fd9e4-5398-4c26-859e-c982c2e277c3@redhat.com
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 8 total, 1 (7) series, 1 non-series commits
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 2 commits
+    - no role, no role : 1 commits
+  - full commits list
+    - dd875898aec8 "selftests/mm: run_vmtests.sh: fix destructive tests invocation"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/214fd9e4-5398-4c26-859e-c982c2e277c3@redhat.com
+    - 2c3f61f11809 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 10 total, 1 (9) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 4 commits
     - reviewer, nobody: 1 commits
     - reviewer, reviewer: 2 commits
     - maintainer, nobody: 2 commits
   - full commits list
     - series "selftests/mm: clean up build output and verbosity", v3. (2 commits)
-      - 9a68a3d98c9b "selftests/mm: respect build verbosity settings for 32/64-bit targets" (0/2)
+      - 7fad435c1dcd "selftests/mm: respect build verbosity settings for 32/64-bit targets" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260422080446.26020-1-wangli.ahau@gmail.com
         - Link: https://lore.kernel.org/20260422080446.26020-2-wangli.ahau@gmail.com
-      - d6e4674b04cd "selftests/mm: suppress compiler error in liburing check" (1/2)
+      - 761fb29264ae "selftests/mm: suppress compiler error in liburing check" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260422080446.26020-3-wangli.ahau@gmail.com
-      - 694f28e5eb9a "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
+      - 55d6885344a4 "mm/khugepaged: generalize alloc_charge_folio()" (1/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-3-npache@redhat.com
-      - fc4d5ae7266e "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
+      - 58116b7b2c97 "mm/khugepaged: add per-order mTHP collapse failure statistics" (6/13)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260419185750.260784-8-npache@redhat.com
-      - b8d5074cd6af "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
+      - 2793f267cbe7 "Documentation: mm: update the admin guide for mTHP collapse" (12/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260419185750.260784-14-npache@redhat.com
-      - 20f69ed3eba2 "Docs/mm/damon/design: document fail_charge_{num,denom}" (4/11)
+      - e1e7560170e5 "Docs/mm/damon/design: document fail_charge_{num,denom}" (4/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260428013402.115171-6-sj@kernel.org
-      - 83f6350f2884 "Docs/admin-guide/mm/damon/usage: document fail_charge_{num,denom} files" (5/11)
+      - 03562b081606 "Docs/admin-guide/mm/damon/usage: document fail_charge_{num,denom} files" (5/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260428013402.115171-7-sj@kernel.org
-    - 62512c2c6252 "mm/page_owner: document page_owner filter features"
+    - cb3cf206a9a6 "mm/page_owner: document page_owner filter features"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260428071112.1420380-5-zhen.ni@easystack.cn
-- mm-new: 17 total, 1 (12) series, 5 non-series commits
+      - 268cefa58676 "selftests/mm: verify droppable mappings cannot be locked" (1/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com
+      - a67d9cc489ad "selftests/mm: run the MAP_DROPPABLE selftest" (2/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260416033939.49981-4-anthony.yznaga@oracle.com
+- mm-new: 16 total, 1 (12) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, no role : 5 commits
+    - no role, no role : 3 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 2 commits
     - reviewer, nobody: 3 commits
-    - maintainer, nobody: 6 commits
+    - maintainer, nobody: 7 commits
   - full commits list
-      - 18a7b7afc827 "selftests/mm: verify droppable mappings cannot be locked" (1/3)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com
-      - e6763144515a "selftests/mm: run the MAP_DROPPABLE selftest" (2/3)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260416033939.49981-4-anthony.yznaga@oracle.com
-    - 59dc03713c0b "Docs/mm/damon/maintainer-profile: add AI review usage guideline"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260412211932.89038-1-sj@kernel.org
-      - Link: https://github.com/sashiko-dev/sashiko/commit/ad9f4a98f958 [1]
-      - Link: https://github.com/sashiko-dev/sashiko/commit/b554c7b6e733 [2]
-    - 2e180b6ca244 "selftests/mm: simplify byte pattern checking in mremap_test"
+      - f1ec489d253c "Docs/mm/damon/maintainer-profile: add AI review usage guideline" (2/8)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260412211932.89038-1-sj@kernel.org
+        - Link: https://github.com/sashiko-dev/sashiko/commit/ad9f4a98f958 [1]
+        - Link: https://github.com/sashiko-dev/sashiko/commit/b554c7b6e733 [2]
+    - a0fafbbbdae6 "selftests/mm: simplify byte pattern checking in mremap_test"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260415044509.579428-1-dev.jain@arm.com
-      - 6e5cf7347b3e "Docs/admin-guide/mm/damon: fix 'parametrs' typo" (1/4)
+      - b8f1a0480ddc "Docs/admin-guide/mm/damon: fix 'parametrs' typo" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426231619.107231-3-sj@kernel.org
-      - 87bdb1ab1aa1 "mm/damon: support MADV_COLLAPSE via DAMOS_COLLAPSE scheme action" (3/4)
+      - 18318d66ae57 "mm/damon: support MADV_COLLAPSE via DAMOS_COLLAPSE scheme action" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426231619.107231-5-sj@kernel.org
         - Link: https://lore.kernel.org/damon/20260313000816.79933-1-sj@kernel.org/ [1]
-    - 761c875b1791 "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
+    - e34f8467c758 "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_BB588C2CDED859A873093DAF28B2CC1F7B0A@qq.com
-      - 6d018ff027c2 "Docs/mm/damon/design: update for context pause/resume feature" (2/10)
+      - 8e3ca87ca026 "Docs/mm/damon/design: update for context pause/resume feature" (2/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260427151231.113429-4-sj@kernel.org
-      - 1f554e30a3a9 "Docs/admin-guide/mm/damon/usage: update for pause file" (3/10)
+      - 75152542649c "Docs/admin-guide/mm/damon/usage: update for pause file" (3/10)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260427151231.113429-5-sj@kernel.org
-      - e07f264eb07f "Docs/admin-guide/mm/damon/reclaim: update for entire memory monitoring" (5/7)
+      - 3281ddea6c76 "Docs/admin-guide/mm/damon/reclaim: update for entire memory monitoring" (5/7)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260429041232.90257-7-sj@kernel.org
-      - 1cd5a8dafe1d "Docs/admin-guide/mm/damon/lru_sort: update for entire memory monitoring" (6/7)
+      - 4879c7204f2d "Docs/admin-guide/mm/damon/lru_sort: update for entire memory monitoring" (6/7)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260429041232.90257-8-sj@kernel.org
-    - cc0c01bdb1cf "selftests/mm: khugepaged: initialize file contents via mmap"
+    - 55532d873648 "selftests/mm: khugepaged: initialize file contents via mmap"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260429115816.98824-1-agarwal.vineet2006@gmail.com
     - series "mm/damon/sysfs: document filters/ directory as deprecated". (2 commits)
-      - a62fe6beb41c "Docs/admin-guide/mm/damon/usage: mark scheme filters sysfs dir as deprecated" (0/2)
+      - 847c56a30159 "Docs/admin-guide/mm/damon/usage: mark scheme filters sysfs dir as deprecated" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260429150309.82282-1-sj@kernel.org
         - Link: https://lore.kernel.org/20260429150309.82282-2-sj@kernel.org
-      - 87cab3761dfc "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged" (10/14)
+      - 0cfd9cafc53f "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged" (10/14)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260429153538.727855-7-ziy@nvidia.com
-      - 9226a39a07e8 "selftests/mm: khugepaged perror fixup" (11/14)
+      - 94caf81cab14 "selftests/mm: khugepaged perror fixup" (11/14)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/3BFC4C26-1C97-40AA-B4B7-7472B9768565@nvidia.com
-      - 1d018e8fcbe1 "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions" (12/14)
+      - 081a47b4d2d5 "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions" (12/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260429153538.727855-8-ziy@nvidia.com
-    - b412619f306e "selftests/mm: add writable-file collapse tests for khugepaged"
+    - e80b338316f9 "selftests/mm: add writable-file collapse tests for khugepaged"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20260429153538.727855-10-ziy@nvidia.com
+      - 5a5630c6cad8 "Docs/admin-guide/mm/damon/reclaim: update for autotune_monitoring_intervals" (1/2)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260501011740.81988-3-sj@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -5,14 +5,30 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
+- mm-unstable: 2 -> 3 commits
   - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 0 -> 1 commits
     - reviewer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
+  - changed commits
+    - 6c6749377239 "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260418120233.7162-1-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
+      - Link: https://lore.kernel.org/lkml/20160606022724.GA26227@yexl-desktop/ [2]
+      - Link: https://lore.kernel.org/lkml/20210120173612.20913-1-will@kernel.org/ [3]
+- mm-new: 3 -> 4 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 83785d5d80a0 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
+    - 4272f8035313 "mm-swap-pm-hibernate-atomically-replace-hibernation-pin-checkpatch-fixes"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,141 +1,169 @@
 - baseline: v7.1-rc1 -> v7.1-rc1 (no change)
-- mm-hotfixes-stable: 19 -> 20 commits
+- mm-hotfixes-stable: 20 -> 20 commits (no change)
   - series: 2 (5) -> 2 (5) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 3 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 99ebc509eef5 "mm: memcontrol: fix rcu unbalance in get_non_dying_memcg_end()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260429073105.44472-1-qi.zheng@linux.dev
-- mm-hotfixes-unstable: 16 -> 18 commits
-  - series: 1 (3) -> 2 (4)
-    - no role, nobody: 4 -> 5 commits
-    - no role, no role : 3 -> 6 commits
-    - no role, maintainer: 6 -> 4 commits
+- mm-hotfixes-unstable: 18 -> 20 commits
+  - series: 2 (4) -> 2 (4) (no change)
+    - no role, nobody: 5 -> 6 commits
+    - no role, no role : 6 -> 7 commits
+    - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
   - new commits
-    - series "MAINTAINERS: update KEXEC, KDUMP and LIVE UPDATE". (2)
-      - f05036254743 "MAINTAINERS: add tree for KDUMP and KEXEC (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260428124833.1903302-1-rppt@kernel.org
-        - Link: https://lore.kernel.org/20260428124833.1903302-2-rppt@kernel.org
-      - b1dbafd86a68 "MAINTAINERS: add kexec@ list to LIVE UPDATE ENTRY (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260428124833.1903302-3-rppt@kernel.org
-    - 73e5321d146c "mm: fix __vm_normal_page() to handle missing support for pmd_special()/pud_special()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260430-pmd_special-v1-1-dbcbcfd72c20@kernel.org
-    - fbaf63e5c5e1 "ipc/shm: serialize orphan cleanup with shm_nattch updates"
+    - 2c3f61f11809 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
       - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
+    - 198bbb1824e8 "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260501115122.23288-1-nueralspacetech@gmail.com
+  - changed commits
+    - 6a75087f7ed9 "ipc/shm: serialize orphan cleanup with shm_nattch updates"
+      - Authored by no role player, reviewed by nobody
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: <stable@kernel.org>"
       - Link: https://lore.kernel.org/9d97cc1031de2d0bace0edf3a668818aa2f4eca6.1777410234.git.zylzyl2333@gmail.com
-  - dropped commits
-    - series "mm: Fix memory block leaks and locking", v2. (3)
-      - eb1a3cffaa57 "drivers/base/memory: fix locking for poison accounting lookup (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260428085219.1316047-4-songmuchun@bytedance.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 43 -> 57 commits
-  - series: 5 (35) -> 6 (46)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 7 -> 7 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+- mm-unstable: 57 -> 75 commits
+  - series: 6 (46) -> 9 (59)
+    - no role, nobody: 1 -> 3 commits
+    - no role, no role : 6 -> 12 commits
+    - no role, reviewer: 7 -> 10 commits
+    - no role, maintainer: 1 -> 8 commits
     - reviewer, nobody: 4 -> 4 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 17 -> 17 commits (no change)
     - reviewer, maintainer: 7 -> 7 commits (no change)
-    - maintainer, nobody: 0 -> 12 commits
-  - new commits
-    - 09d764c10b07 "mm/damon/core: make charge_addr_from aware of end-address exclusivity"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260428042942.118230-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260428032324.115663-1-sj@kernel.org [1]
-    - 8698b493cc53 "mm/damon: add node_eligible_mem_bp goal metric"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260428030520.701-1-ravis.opensrc@gmail.com
-    - series "mm/damon: introduce DAMOS failed region quota charge ratio". (11)
-      - 0aec6a60d545 "mm/damon/core: handle <min_region_sz remaining quota as empty (0/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260428013402.115171-2-sj@kernel.org
-      - 6d8c29eb87ed "mm/damon/core: merge regions after applying DAMOS schemes (1/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-3-sj@kernel.org
-      - 8140a8ab1f17 "mm/damon/core: introduce failed region quota charge ratio (2/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-4-sj@kernel.org
-      - 76d4cdddb681 "mm/damon/sysfs-schemes: implement fail_charge_{num,denom} files (3/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-5-sj@kernel.org
-      - 20f69ed3eba2 "Docs/mm/damon/design: document fail_charge_{num,denom} (4/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-6-sj@kernel.org
-      - 83f6350f2884 "Docs/admin-guide/mm/damon/usage: document fail_charge_{num,denom} files (5/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-7-sj@kernel.org
-      - 86ee9b6e1d90 "Docs/ABI/damon: document fail_charge_{num,denom} (6/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-8-sj@kernel.org
-      - 30e1d289c869 "mm/damon/tests/core-kunit: test fail_charge_{num,denom} committing (7/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-9-sj@kernel.org
-      - 2f5a5a25dad3 "selftests/damon/_damon_sysfs: support failed region quota charge ratio (8/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-10-sj@kernel.org
-      - ac3b272aa53b "selftests/damon/drgn_dump_damon_status: support failed region quota charge ratio (9/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-11-sj@kernel.org
-      - 4912a87d487b "selftests/damon/sysfs.py: test failed region quota charge ratio (10/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-12-sj@kernel.org
-    - 62512c2c6252 "mm/page_owner: document page_owner filter features"
+    - maintainer, nobody: 12 -> 12 commits (no change)
+  - changed commits
+    - series "skip redundant sync IPIs when TLB flush sent them", v10. (2)
+      - 4be5f40d8b25 "mm/mmu_gather: prepare to skip redundant sync IPIs (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260424062528.71951-1-lance.yang@linux.dev
+        - Link: https://lore.kernel.org/20260424062528.71951-2-lance.yang@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [1]
+        - Link: https://lore.kernel.org/linux-mm/6a364356-5fea-4a6c-b959-ba3b22ce9c88@kernel.org/ [2]
+        - Link: https://lore.kernel.org/linux-mm/2cb4503d-3a3f-4f6c-8038-7b3d1c74b3c2@kernel.org/ [3]
+        - Link: https://lore.kernel.org/linux-mm/bbfdf226-4660-4949-b17b-0d209ee4ef8c@kernel.org/ [4]
+        - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [5]
+        - Link: https://lore.kernel.org/linux-mm/6a364356-5fea-4a6c-b959-ba3b22ce9c88@kernel.org/ [6]
+        - Link: https://lore.kernel.org/linux-mm/2cb4503d-3a3f-4f6c-8038-7b3d1c74b3c2@kernel.org/ [7]
+      - 71118426cd28 "x86/tlb: skip redundant sync IPIs for native TLB flush (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260424062528.71951-3-lance.yang@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/20260302145652.GH1395266@noisy.programming.kicks-ass.net/ [1]
+        - Link: https://lore.kernel.org/linux-mm/f856051b-10c7-4d65-9dbe-6b1677af74bd@intel.com/ [2]
+        - Link: https://lore.kernel.org/linux-mm/bbfdf226-4660-4949-b17b-0d209ee4ef8c@kernel.org/ [3]
+    - series "selftests/cgroup: improve zswap tests robustness and support large page sizes", v7. (8)
+      - 882fba380d1f "selftests/cgroup: skip test_zswap if zswap is globally disabled (0/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260424040059.12940-1-li.wang@linux.dev
+        - Link: https://lore.kernel.org/20260424040059.12940-2-li.wang@linux.dev
+      - 686aa81a3234 "selftests/cgroup: avoid OOM in test_swapin_nozswap (1/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260424040059.12940-3-li.wang@linux.dev
+      - 25105d63c37a "selftests/cgroup: use runtime page size for zswpin check (2/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260424040059.12940-4-li.wang@linux.dev
+      - f0e25572fa36 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util (3/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
+      - 9927b8274654 "selftests/cgroup: replace hardcoded page size values in test_zswap (4/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260424040059.12940-6-li.wang@linux.dev
+      - 0bfbffbcbcf6 "selftest/cgroup: fix zswap test_no_invasive_cgroup_shrink on large pagesize system (5/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260424040059.12940-7-li.wang@linux.dev
+      - 4cdf2f17da02 "selftest/cgroup: fix zswap attempt_writeback() on 64K pagesize system (6/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260424040059.12940-8-li.wang@linux.dev
+      - 56d37b390d8e "selftests/cgroup: test_zswap: wait for asynchronous writeback (7/8)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260424040059.12940-9-li.wang@linux.dev
+    - 0b76945cac07 "mm/migrate_device: cleanup up PMD Checks and warnings"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260419174747.10701-1-nueralspacetech@gmail.com
+    - 569bd7806f39 "mm/sparse: remove unnecessary NULL check before allocating mem_section"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260419144225.2875654-1-ekffu200098@gmail.com
+    - 6c6749377239 "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260428071112.1420380-5-zhen.ni@easystack.cn
-- mm-new: 104 -> 108 commits
-  - series: 15 (78) -> 16 (80)
-    - no role, nobody: 6 -> 5 commits
-    - no role, no role : 24 -> 25 commits
-    - no role, reviewer: 20 -> 22 commits
-    - no role, maintainer: 23 -> 24 commits
-    - reviewer, nobody: 5 -> 6 commits
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260418120233.7162-1-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
+      - Link: https://lore.kernel.org/lkml/20160606022724.GA26227@yexl-desktop/ [2]
+      - Link: https://lore.kernel.org/lkml/20210120173612.20913-1-will@kernel.org/ [3]
+    - ca3ee3ce70bf "mm/vmscan: fix typos in comments"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260416062302.727468-1-gxxa03070307@gmail.com
+    - series "fix MAP_DROPPABLE not supported errno", v4. (3)
+      - 42e56355b9d3 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
+        - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
+      - 268cefa58676 "selftests/mm: verify droppable mappings cannot be locked (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com
+      - a67d9cc489ad "selftests/mm: run the MAP_DROPPABLE selftest (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260416033939.49981-4-anthony.yznaga@oracle.com
+    - 086343bc1a25 "mm/page_owner: fix %pGp format specifier argument type"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260414075813.3425968-1-zhen.ni@easystack.cn
+- mm-new: 108 -> 96 commits
+  - series: 16 (80) -> 15 (74)
+    - no role, nobody: 5 -> 4 commits
+    - no role, no role : 25 -> 21 commits
+    - no role, reviewer: 22 -> 19 commits
+    - no role, maintainer: 24 -> 17 commits
+    - reviewer, nobody: 6 -> 6 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 20 -> 20 commits (no change)
+    - maintainer, nobody: 20 -> 23 commits
   - new commits
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
-      - 9226a39a07e8 "selftests/mm: khugepaged perror fixup (11/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/3BFC4C26-1C97-40AA-B4B7-7472B9768565@nvidia.com
-    - series "mm/filemap: tighten mmap_miss hit accounting", v3. (2)
-      - fa051f786db1 "mm/filemap: count only the faulting address as a mmap hit (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/tencent_AA501E9A238337BD167E5C2ACF948A1AF308@qq.com
-        - Link: https://lore.kernel.org/tencent_756F151FE66F3D80479A6F982C0AB8569F09@qq.com
-      - 4cb44f3e5330 "mm/filemap: do not count FAULT_FLAG_TRIED retries as mmap hits (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/tencent_22E6B8849EC1141FE7773C64467E6F1E2C09@qq.com
-    - ee1440e4568f "mm: process_mrelease: introduce PROCESS_MRELEASE_REAP_KILL flag"
+    - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (None)
+      - b0b1f380abce "selftests/cgroup: fix hardcoded page size in test_percpu_basic (None/None)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
+        - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
+    - 2e47c2fc27a5 "selftests/cgroup: include slab in test_percpu_basic memory check"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260429211359.3829683-1-minchan@kernel.org
-  - changed commits
-    - 57de8d736b65 "mm/migrate: rename PAGE_ migration flags to FOLIO_"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Huang Ying <ying.huang@linux.alibaba.com>"
-      - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
-      - Link: https://lore.kernel.org/20260324190706.964555-4-shivankg@amd.com
-    - 6bf56b117f3f "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
+      - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
+    - series "mm/damon/reclaim: support monitoring intervals auto-tuning". (2)
+      - 07889a6e327b "mm/damon/reclaim: add autotune_monitoring_intervals parameter (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260501011740.81988-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260501011740.81988-2-sj@kernel.org
+      - 5a5630c6cad8 "Docs/admin-guide/mm/damon/reclaim: update for autotune_monitoring_intervals (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260501011740.81988-3-sj@kernel.org
+    - 83785d5d80a0 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
+    - 4272f8035313 "mm-swap-pm-hibernate-atomically-replace-hibernation-pin-checkpatch-fixes"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 52 -> 52 commits (no change)

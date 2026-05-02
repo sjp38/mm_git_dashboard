@@ -6,12 +6,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
+- mm-unstable: 1 -> 2 commits
+  - series: 0 (1) -> 1 (2)
+    - no role, reviewer: 0 -> 1 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 2 (2) -> 2 (2) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "fix MAP_DROPPABLE not supported errno", v4. (3)
+      - 42e56355b9d3 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
+        - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
+- mm-new: 2 -> 1 commits
+  - series: 2 (2) -> 1 (1)
+    - no role, reviewer: 1 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

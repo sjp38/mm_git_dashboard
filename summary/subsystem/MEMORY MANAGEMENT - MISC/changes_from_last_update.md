@@ -2,41 +2,45 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 2c3f61f11809 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 8 commits
-  - series: 1 (5) -> 1 (7)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 2 -> 2 commits (no change)
+- mm-unstable: 8 -> 10 commits
+  - series: 1 (7) -> 1 (9)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 4 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 0 -> 2 commits
-  - new commits
-    - series "mm/damon: introduce DAMOS failed region quota charge ratio". (11)
-      - 20f69ed3eba2 "Docs/mm/damon/design: document fail_charge_{num,denom} (4/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-6-sj@kernel.org
-      - 83f6350f2884 "Docs/admin-guide/mm/damon/usage: document fail_charge_{num,denom} files (5/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260428013402.115171-7-sj@kernel.org
-    - 62512c2c6252 "mm/page_owner: document page_owner filter features"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260428071112.1420380-5-zhen.ni@easystack.cn
-- mm-new: 16 -> 17 commits
+    - maintainer, nobody: 2 -> 2 commits (no change)
+  - changed commits
+    - series "fix MAP_DROPPABLE not supported errno", v4. (3)
+      - 268cefa58676 "selftests/mm: verify droppable mappings cannot be locked (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com
+      - a67d9cc489ad "selftests/mm: run the MAP_DROPPABLE selftest (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260416033939.49981-4-anthony.yznaga@oracle.com
+- mm-new: 17 -> 16 commits
   - series: 1 (12) -> 1 (12) (no change)
-    - no role, no role : 5 -> 5 commits (no change)
+    - no role, no role : 5 -> 3 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 2 -> 3 commits
-    - maintainer, nobody: 6 -> 6 commits (no change)
+    - reviewer, nobody: 3 -> 3 commits (no change)
+    - maintainer, nobody: 6 -> 7 commits
   - new commits
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
-      - 9226a39a07e8 "selftests/mm: khugepaged perror fixup (11/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/3BFC4C26-1C97-40AA-B4B7-7472B9768565@nvidia.com
+    - series "mm/damon/reclaim: support monitoring intervals auto-tuning". (2)
+      - 5a5630c6cad8 "Docs/admin-guide/mm/damon/reclaim: update for autotune_monitoring_intervals (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260501011740.81988-3-sj@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

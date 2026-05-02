@@ -2,24 +2,30 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 2 -> 3 commits
+- mm-hotfixes-unstable: 3 -> 4 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
   - new commits
-    - 73e5321d146c "mm: fix __vm_normal_page() to handle missing support for pmd_special()/pud_special()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260430-pmd_special-v1-1-dbcbcfd72c20@kernel.org
+    - 2c3f61f11809 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
+- mm-unstable: 5 -> 6 commits
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 3 commits
     - no role, reviewer: 3 -> 3 commits (no change)
-- mm-new: 11 -> 11 commits (no change)
-  - series: 2 (7) -> 2 (7) (no change)
-    - no role, no role : 6 -> 6 commits (no change)
+  - changed commits
+    - 569bd7806f39 "mm/sparse: remove unnecessary NULL check before allocating mem_section"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260419144225.2875654-1-ekffu200098@gmail.com
+- mm-new: 11 -> 10 commits
+  - series: 2 (7) -> 2 (8)
+    - no role, no role : 6 -> 5 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

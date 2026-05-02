@@ -1,14 +1,9 @@
 - baseline: v7.1-rc1 -> v7.1-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 2 commits
-  - series: 1 (3) -> 1 (2)
-    - no role, maintainer: 3 -> 2 commits
-  - dropped commits
-    - series "mm: Fix memory block leaks and locking", v2. (3)
-      - eb1a3cffaa57 "drivers/base/memory: fix locking for poison accounting lookup (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260428085219.1316047-4-songmuchun@bytedance.com
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)

@@ -6,85 +6,89 @@
     - 619eab23e1ce "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
-- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
+- mm-hotfixes-unstable: 4 total, 0 (0) series, 4 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 3a814d601091 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+    - 93e4b8fcdc50 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
-    - 14fb38b7dd90 "mm-page_alloc-fix-initialization-of-tags-of-the-huge-zero-folio-with-init_on_free-fix"
+    - 611211e19490 "mm-page_alloc-fix-initialization-of-tags-of-the-huge-zero-folio-with-init_on_free-fix"
       - Authored by a maintainer, reviewed by nobody
-    - 73e5321d146c "mm: fix __vm_normal_page() to handle missing support for pmd_special()/pud_special()"
+    - ac76cef821f0 "mm: fix __vm_normal_page() to handle missing support for pmd_special()/pud_special()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260430-pmd_special-v1-1-dbcbcfd72c20@kernel.org
+    - 2c3f61f11809 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 5 total, 1 (2) series, 3 non-series commits
+- mm-unstable: 6 total, 1 (2) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
+    - no role, no role : 3 commits
     - no role, reviewer: 3 commits
   - full commits list
-    - 1175a6596f79 "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+    - af52224d8f5e "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
-    - 88fa5cffdda9 "mm: convert vmemmap_p?d_populate() to static functions"
+    - 5239e014217d "mm: convert vmemmap_p?d_populate() to static functions"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260423101441.7089-1-kaitao.cheng@linux.dev
     - series "mm: Free contiguous order-0 pages efficiently", v6. (3 commits)
-      - 70ffa928298d "mm/page_alloc: optimize free_contig_range()" (0/3)
+      - cf00ac088ba6 "mm/page_alloc: optimize free_contig_range()" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
         - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
         - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
-      - 8213089137ce "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
+      - 9a9f319617ee "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
-    - ff3a1e9a2fca "mm/memory: update stale locking comments for fault handlers"
+    - 0d714a017f9a "mm/memory: update stale locking comments for fault handlers"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260424092217.263648-1-adi.sharma@zohomail.in
-- mm-new: 11 total, 2 (7) series, 4 non-series commits
+    - 569bd7806f39 "mm/sparse: remove unnecessary NULL check before allocating mem_section"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260419144225.2875654-1-ekffu200098@gmail.com
+- mm-new: 10 total, 2 (8) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 6 commits
+    - no role, no role : 5 commits
     - no role, reviewer: 3 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 73803bd2b7da "mm/sparse: remove unnecessary NULL check before allocating mem_section"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260419144225.2875654-1-ekffu200098@gmail.com
-    - 695981b4a545 "mm/sparse: remove sparse buffer pre-allocation mechanism"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260410092419.2446420-1-songmuchun@bytedance.com
-    - f05e8254d1e9 "mm/vmpressure: skip socket pressure for costly order reclaim"
+      - 3219968a21aa "mm/sparse: remove sparse buffer pre-allocation mechanism" (3/8)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260410092419.2446420-1-songmuchun@bytedance.com
+    - cd8b14c96290 "mm/vmpressure: skip socket pressure for costly order reclaim"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260406195014.112521-1-jp.kobryn@linux.dev
-    - 5236c740b479 "mm/thp: dead code cleanup in Kconfig"
+    - fcbba52676e3 "mm/thp: dead code cleanup in Kconfig"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260331070730.33915-1-julianbraha@gmail.com
     - series "mm: Fix vmemmap optimization accounting and initialization", v8. (6 commits)
-      - fb51a885c256 "mm/sparse-vmemmap: fix vmemmap accounting underflow" (0/6)
+      - beb3b725cce3 "mm/sparse-vmemmap: fix vmemmap accounting underflow" (0/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428081855.1249045-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260428081855.1249045-2-songmuchun@bytedance.com
-      - 939efc5821e2 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
+      - 9f8cc6af80c4 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
-      - 58d346d52324 "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization" (3/6)
+      - 6ebc0e51175b "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization" (3/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428081855.1249045-5-songmuchun@bytedance.com
-      - b6711747c704 "mm: remove page_mapped()" (2/3)
+      - 3be2e01728ee "mm: remove page_mapped()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260427-page_mapped-v1-3-e89c3592c74c@kernel.org
     - series "kasan: hw_tags: Disable tagging for stack and page-tables", v4. (3 commits)
-      - 6af79db07abe "vmalloc: add __GFP_SKIP_KASAN support" (0/3)
+      - a19803b3600b "vmalloc: add __GFP_SKIP_KASAN support" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260429102704.680174-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260429102704.680174-2-dev.jain@arm.com
-      - 1189257192f7 "kasan: skip HW tagging for all kernel thread stacks" (1/3)
+      - d7a5cb6fd76e "kasan: skip HW tagging for all kernel thread stacks" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260429102704.680174-3-dev.jain@arm.com
-      - 1920014c9790 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
+      - 43bb805bf550 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260429153538.727855-1-ziy@nvidia.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -93,10 +97,10 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 1f55f5668c35 "treewide: fix indentation and whitespace in Kconfig files"
+    - 3dc1211c7c36 "treewide: fix indentation and whitespace in Kconfig files"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260407053945.14116-1-linux.amoon@gmail.com
-    - 5f7958016e8d "kernel/fork: validate exit_signal in kernel_clone()"
+    - a8d01bf5ea06 "kernel/fork: validate exit_signal in kernel_clone()"
       - Authored by no role player, reviewed by a reviewer
       - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
       - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com
