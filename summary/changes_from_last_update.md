@@ -8,168 +8,55 @@
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 18 -> 20 commits
+- mm-hotfixes-unstable: 20 -> 20 commits (no change)
   - series: 2 (4) -> 2 (4) (no change)
-    - no role, nobody: 5 -> 6 commits
-    - no role, no role : 6 -> 7 commits
+    - no role, nobody: 6 -> 6 commits (no change)
+    - no role, no role : 7 -> 7 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-  - new commits
-    - 2c3f61f11809 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
-    - 198bbb1824e8 "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260501115122.23288-1-nueralspacetech@gmail.com
   - changed commits
-    - 6a75087f7ed9 "ipc/shm: serialize orphan cleanup with shm_nattch updates"
+    - 5e7cf94307db "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
       - Authored by no role player, reviewed by nobody
-      - added "Cc: <stable@vger.kernel.org>"
-      - dropped "Cc: <stable@kernel.org>"
-      - Link: https://lore.kernel.org/9d97cc1031de2d0bace0edf3a668818aa2f4eca6.1777410234.git.zylzyl2333@gmail.com
+      - added "Fixes: 999dad824c39 ("mm/shmem: persist uffd-wp bit across zapping for file-backed")"
+      - dropped "Fixes: 999dad824c39e ("mm/shmem: persist uffd-wp bit across zapping for file-backed")"
+      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 57 -> 75 commits
-  - series: 6 (46) -> 9 (59)
-    - no role, nobody: 1 -> 3 commits
-    - no role, no role : 6 -> 12 commits
-    - no role, reviewer: 7 -> 10 commits
-    - no role, maintainer: 1 -> 8 commits
+- mm-unstable: 75 -> 75 commits (no change)
+  - series: 9 (59) -> 9 (59) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 12 -> 12 commits (no change)
+    - no role, reviewer: 10 -> 10 commits (no change)
+    - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, nobody: 4 -> 4 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 17 -> 17 commits (no change)
     - reviewer, maintainer: 7 -> 7 commits (no change)
     - maintainer, nobody: 12 -> 12 commits (no change)
-  - changed commits
-    - series "skip redundant sync IPIs when TLB flush sent them", v10. (2)
-      - 4be5f40d8b25 "mm/mmu_gather: prepare to skip redundant sync IPIs (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260424062528.71951-1-lance.yang@linux.dev
-        - Link: https://lore.kernel.org/20260424062528.71951-2-lance.yang@linux.dev
-        - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [1]
-        - Link: https://lore.kernel.org/linux-mm/6a364356-5fea-4a6c-b959-ba3b22ce9c88@kernel.org/ [2]
-        - Link: https://lore.kernel.org/linux-mm/2cb4503d-3a3f-4f6c-8038-7b3d1c74b3c2@kernel.org/ [3]
-        - Link: https://lore.kernel.org/linux-mm/bbfdf226-4660-4949-b17b-0d209ee4ef8c@kernel.org/ [4]
-        - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [5]
-        - Link: https://lore.kernel.org/linux-mm/6a364356-5fea-4a6c-b959-ba3b22ce9c88@kernel.org/ [6]
-        - Link: https://lore.kernel.org/linux-mm/2cb4503d-3a3f-4f6c-8038-7b3d1c74b3c2@kernel.org/ [7]
-      - 71118426cd28 "x86/tlb: skip redundant sync IPIs for native TLB flush (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260424062528.71951-3-lance.yang@linux.dev
-        - Link: https://lore.kernel.org/linux-mm/20260302145652.GH1395266@noisy.programming.kicks-ass.net/ [1]
-        - Link: https://lore.kernel.org/linux-mm/f856051b-10c7-4d65-9dbe-6b1677af74bd@intel.com/ [2]
-        - Link: https://lore.kernel.org/linux-mm/bbfdf226-4660-4949-b17b-0d209ee4ef8c@kernel.org/ [3]
-    - series "selftests/cgroup: improve zswap tests robustness and support large page sizes", v7. (8)
-      - 882fba380d1f "selftests/cgroup: skip test_zswap if zswap is globally disabled (0/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260424040059.12940-1-li.wang@linux.dev
-        - Link: https://lore.kernel.org/20260424040059.12940-2-li.wang@linux.dev
-      - 686aa81a3234 "selftests/cgroup: avoid OOM in test_swapin_nozswap (1/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260424040059.12940-3-li.wang@linux.dev
-      - 25105d63c37a "selftests/cgroup: use runtime page size for zswpin check (2/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260424040059.12940-4-li.wang@linux.dev
-      - f0e25572fa36 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util (3/8)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
-      - 9927b8274654 "selftests/cgroup: replace hardcoded page size values in test_zswap (4/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260424040059.12940-6-li.wang@linux.dev
-      - 0bfbffbcbcf6 "selftest/cgroup: fix zswap test_no_invasive_cgroup_shrink on large pagesize system (5/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260424040059.12940-7-li.wang@linux.dev
-      - 4cdf2f17da02 "selftest/cgroup: fix zswap attempt_writeback() on 64K pagesize system (6/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260424040059.12940-8-li.wang@linux.dev
-      - 56d37b390d8e "selftests/cgroup: test_zswap: wait for asynchronous writeback (7/8)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260424040059.12940-9-li.wang@linux.dev
-    - 0b76945cac07 "mm/migrate_device: cleanup up PMD Checks and warnings"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260419174747.10701-1-nueralspacetech@gmail.com
-    - 569bd7806f39 "mm/sparse: remove unnecessary NULL check before allocating mem_section"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260419144225.2875654-1-ekffu200098@gmail.com
-    - 6c6749377239 "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260418120233.7162-1-baohua@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
-      - Link: https://lore.kernel.org/lkml/20160606022724.GA26227@yexl-desktop/ [2]
-      - Link: https://lore.kernel.org/lkml/20210120173612.20913-1-will@kernel.org/ [3]
-    - ca3ee3ce70bf "mm/vmscan: fix typos in comments"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260416062302.727468-1-gxxa03070307@gmail.com
-    - series "fix MAP_DROPPABLE not supported errno", v4. (3)
-      - 42e56355b9d3 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
-        - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
-      - 268cefa58676 "selftests/mm: verify droppable mappings cannot be locked (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com
-      - a67d9cc489ad "selftests/mm: run the MAP_DROPPABLE selftest (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260416033939.49981-4-anthony.yznaga@oracle.com
-    - 086343bc1a25 "mm/page_owner: fix %pGp format specifier argument type"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260414075813.3425968-1-zhen.ni@easystack.cn
-- mm-new: 108 -> 96 commits
-  - series: 16 (80) -> 15 (74)
-    - no role, nobody: 5 -> 4 commits
-    - no role, no role : 25 -> 21 commits
-    - no role, reviewer: 22 -> 19 commits
-    - no role, maintainer: 24 -> 17 commits
+- mm-new: 96 -> 95 commits
+  - series: 15 (74) -> 15 (75)
+    - no role, nobody: 4 -> 3 commits
+    - no role, no role : 21 -> 21 commits (no change)
+    - no role, reviewer: 19 -> 19 commits (no change)
+    - no role, maintainer: 17 -> 17 commits (no change)
     - reviewer, nobody: 6 -> 6 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 20 -> 23 commits
-  - new commits
-    - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (None)
-      - b0b1f380abce "selftests/cgroup: fix hardcoded page size in test_percpu_basic (None/None)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
-        - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
-    - 2e47c2fc27a5 "selftests/cgroup: include slab in test_percpu_basic memory check"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
-    - series "mm/damon/reclaim: support monitoring intervals auto-tuning". (2)
-      - 07889a6e327b "mm/damon/reclaim: add autotune_monitoring_intervals parameter (0/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260501011740.81988-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260501011740.81988-2-sj@kernel.org
-      - 5a5630c6cad8 "Docs/admin-guide/mm/damon/reclaim: update for autotune_monitoring_intervals (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260501011740.81988-3-sj@kernel.org
-    - 83785d5d80a0 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - maintainer, nobody: 23 -> 23 commits (no change)
+  - dropped commits
+    - 953067753ae1 "include/asm-generic/fixmap.h: reimplement nasty macros in C"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
-    - 4272f8035313 "mm-swap-pm-hibernate-atomically-replace-hibernation-pin-checkpatch-fixes"
-      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/ae92kz3LeyaFBvKw@rli9-mobl
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 52 -> 52 commits (no change)
+- mm-nonmm-unstable: 52 -> 53 commits
   - series: 7 (32) -> 7 (32) (no change)
     - no role, nobody: 18 -> 18 commits (no change)
     - no role, no role : 17 -> 17 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 15 -> 15 commits (no change)
+    - no role, maintainer: 15 -> 16 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
+  - new commits
+    - 0088f11aa53f "kcov: refactor common handle ID into kcov_common_handle_id"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260430-kcov-refactor-common-handle-v1-1-23a0c7a0ba38@google.com

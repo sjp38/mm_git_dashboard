@@ -13,7 +13,7 @@
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 5 -> 5 commits (no change)
 - mm-new: 16 -> 16 commits (no change)
-  - series: 2 (12) -> 2 (13)
+  - series: 2 (13) -> 2 (13) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 6 -> 6 commits (no change)

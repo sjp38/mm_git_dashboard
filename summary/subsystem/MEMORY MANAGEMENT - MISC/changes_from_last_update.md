@@ -2,45 +2,32 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-  - new commits
-    - 2c3f61f11809 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
+  - changed commits
+    - 5e7cf94307db "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
       - Authored by no role player, reviewed by nobody
+      - added "Fixes: 999dad824c39 ("mm/shmem: persist uffd-wp bit across zapping for file-backed")"
+      - dropped "Fixes: 999dad824c39e ("mm/shmem: persist uffd-wp bit across zapping for file-backed")"
       - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 10 commits
-  - series: 1 (7) -> 1 (9)
+- mm-unstable: 10 -> 10 commits (no change)
+  - series: 1 (9) -> 1 (9) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 4 commits
+    - no role, no role : 4 -> 4 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-  - changed commits
-    - series "fix MAP_DROPPABLE not supported errno", v4. (3)
-      - 268cefa58676 "selftests/mm: verify droppable mappings cannot be locked (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com
-      - a67d9cc489ad "selftests/mm: run the MAP_DROPPABLE selftest (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260416033939.49981-4-anthony.yznaga@oracle.com
-- mm-new: 17 -> 16 commits
+- mm-new: 16 -> 16 commits (no change)
   - series: 1 (12) -> 1 (12) (no change)
-    - no role, no role : 5 -> 3 commits
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 3 -> 3 commits (no change)
-    - maintainer, nobody: 6 -> 7 commits
-  - new commits
-    - series "mm/damon/reclaim: support monitoring intervals auto-tuning". (2)
-      - 5a5630c6cad8 "Docs/admin-guide/mm/damon/reclaim: update for autotune_monitoring_intervals (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260501011740.81988-3-sj@kernel.org
+    - maintainer, nobody: 7 -> 7 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

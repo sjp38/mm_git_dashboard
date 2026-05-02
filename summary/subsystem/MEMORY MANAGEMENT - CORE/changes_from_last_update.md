@@ -2,30 +2,27 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 3 -> 4 commits
+- mm-hotfixes-unstable: 4 -> 4 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - 2c3f61f11809 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
+  - changed commits
+    - 5e7cf94307db "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
       - Authored by no role player, reviewed by nobody
+      - added "Fixes: 999dad824c39 ("mm/shmem: persist uffd-wp bit across zapping for file-backed")"
+      - dropped "Fixes: 999dad824c39e ("mm/shmem: persist uffd-wp bit across zapping for file-backed")"
       - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 6 commits
+- mm-unstable: 6 -> 6 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 2 -> 3 commits
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-  - changed commits
-    - 569bd7806f39 "mm/sparse: remove unnecessary NULL check before allocating mem_section"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260419144225.2875654-1-ekffu200098@gmail.com
-- mm-new: 11 -> 10 commits
-  - series: 2 (7) -> 2 (8)
-    - no role, no role : 6 -> 5 commits
+- mm-new: 10 -> 10 commits (no change)
+  - series: 2 (8) -> 2 (8) (no change)
+    - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

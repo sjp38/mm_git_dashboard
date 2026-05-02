@@ -6,18 +6,12 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 5 commits
+- mm-unstable: 5 -> 5 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
-  - changed commits
-    - 086343bc1a25 "mm/page_owner: fix %pGp format specifier argument type"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260414075813.3425968-1-zhen.ni@easystack.cn
-- mm-new: 11 -> 10 commits
+- mm-new: 10 -> 10 commits (no change)
   - series: 1 (8) -> 1 (8) (no change)
-    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 9 -> 9 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

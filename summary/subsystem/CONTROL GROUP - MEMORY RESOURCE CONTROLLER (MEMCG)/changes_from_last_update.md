@@ -6,28 +6,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - series "selftests/cgroup: improve zswap tests robustness and support large page sizes", v7. (8)
-      - f0e25572fa36 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util (3/8)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
-- mm-new: 2 -> 3 commits
-  - series: 0 (1) -> 1 (1)
-    - no role, no role : 1 -> 2 commits
+- mm-unstable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-new: 3 -> 3 commits (no change)
+  - series: 1 (1) -> 1 (2)
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (None)
-      - b0b1f380abce "selftests/cgroup: fix hardcoded page size in test_percpu_basic (None/None)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
-        - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
-    - 2e47c2fc27a5 "selftests/cgroup: include slab in test_percpu_basic memory check"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

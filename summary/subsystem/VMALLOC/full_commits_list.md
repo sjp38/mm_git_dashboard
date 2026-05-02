@@ -12,7 +12,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 9a9f319617ee "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
+      - b17803d4edfe "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
 - mm-new: 1 total, 1 (1) series, 0 non-series commits
@@ -20,7 +20,7 @@
     - no role, no role : 1 commits
   - full commits list
     - series "kasan: hw_tags: Disable tagging for stack and page-tables", v4. (3 commits)
-      - a19803b3600b "vmalloc: add __GFP_SKIP_KASAN support" (0/3)
+      - f52102f8c0e7 "vmalloc: add __GFP_SKIP_KASAN support" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260429102704.680174-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260429102704.680174-2-dev.jain@arm.com

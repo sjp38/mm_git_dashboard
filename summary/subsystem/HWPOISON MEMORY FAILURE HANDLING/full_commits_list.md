@@ -7,10 +7,10 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-      - ba374ad4b31d "mm/memory-failure: use bool for forcekill state" (4/8)
+      - 535b5816639f "mm/memory-failure: use bool for forcekill state" (4/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260410074740.2524718-1-ye.liu@linux.dev
-    - 92b638119a42 "mm/memory-failure: replace magic number 3 with GET_PAGE_MAX_RETRY_NUM"
+    - 93e6418b3b73 "mm/memory-failure: replace magic number 3 with GET_PAGE_MAX_RETRY_NUM"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260402064946.1124250-1-18810879172@163.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

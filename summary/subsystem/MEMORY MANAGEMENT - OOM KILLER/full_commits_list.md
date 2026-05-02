@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - b7ec2996bad6 "mm: process_mrelease: introduce PROCESS_MRELEASE_REAP_KILL flag"
+    - 49ee1e22624b "mm: process_mrelease: introduce PROCESS_MRELEASE_REAP_KILL flag"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260429211359.3829683-1-minchan@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

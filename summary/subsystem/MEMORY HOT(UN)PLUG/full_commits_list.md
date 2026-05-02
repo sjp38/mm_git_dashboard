@@ -5,11 +5,11 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm: Fix memory block leaks and locking", v2. (2 commits)
-      - d2811d0c48f4 "mm/memory_hotplug: fix memory block reference leak on remove" (0/2)
+      - dcf6d7b071ad "mm/memory_hotplug: fix memory block reference leak on remove" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428085219.1316047-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260428085219.1316047-2-songmuchun@bytedance.com
-      - 1fefd874622f "drivers/base/memory: fix memory block reference leak in poison accounting" (1/2)
+      - fd58466c39c8 "drivers/base/memory: fix memory block reference leak in poison accounting" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428085219.1316047-3-songmuchun@bytedance.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -19,10 +19,10 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 028ccbcfd450 "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
+      - 446902f11e41 "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com
-      - 9f8cc6af80c4 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
+      - f80fbff15aab "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

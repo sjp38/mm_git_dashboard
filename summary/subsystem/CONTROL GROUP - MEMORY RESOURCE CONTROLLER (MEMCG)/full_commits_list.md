@@ -12,23 +12,24 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - f0e25572fa36 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
+      - 5e8cd5b471c3 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
-- mm-new: 3 total, 1 (1) series, 2 non-series commits
+- mm-new: 3 total, 1 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - e67fe7a757af "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
+    - a7fb3fd232b7 "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
-      - b0b1f380abce "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (None/None)
+    - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (2 commits)
+      - 398a53c5076e "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
         - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
-    - 2e47c2fc27a5 "selftests/cgroup: include slab in test_percpu_basic memory check"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
+      - f8415c02a504 "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

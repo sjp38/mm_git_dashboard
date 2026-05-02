@@ -6,94 +6,41 @@
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
-- mm-hotfixes-unstable: 6 -> 8 commits
+- mm-hotfixes-unstable: 8 -> 8 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 1 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - 2c3f61f11809 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
+  - changed commits
+    - 5e7cf94307db "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
       - Authored by no role player, reviewed by nobody
+      - added "Fixes: 999dad824c39 ("mm/shmem: persist uffd-wp bit across zapping for file-backed")"
+      - dropped "Fixes: 999dad824c39e ("mm/shmem: persist uffd-wp bit across zapping for file-backed")"
       - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
-    - 198bbb1824e8 "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260501115122.23288-1-nueralspacetech@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 47 -> 54 commits
-  - series: 5 (37) -> 7 (39)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 4 -> 7 commits
-    - no role, reviewer: 7 -> 10 commits
+- mm-unstable: 54 -> 54 commits (no change)
+  - series: 7 (39) -> 7 (39) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 7 -> 7 commits (no change)
+    - no role, reviewer: 10 -> 10 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, nobody: 4 -> 4 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 16 -> 16 commits (no change)
     - reviewer, maintainer: 7 -> 7 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
-  - changed commits
-    - series "skip redundant sync IPIs when TLB flush sent them", v10. (2)
-      - 4be5f40d8b25 "mm/mmu_gather: prepare to skip redundant sync IPIs (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260424062528.71951-1-lance.yang@linux.dev
-        - Link: https://lore.kernel.org/20260424062528.71951-2-lance.yang@linux.dev
-        - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [1]
-        - Link: https://lore.kernel.org/linux-mm/6a364356-5fea-4a6c-b959-ba3b22ce9c88@kernel.org/ [2]
-        - Link: https://lore.kernel.org/linux-mm/2cb4503d-3a3f-4f6c-8038-7b3d1c74b3c2@kernel.org/ [3]
-        - Link: https://lore.kernel.org/linux-mm/bbfdf226-4660-4949-b17b-0d209ee4ef8c@kernel.org/ [4]
-        - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [5]
-        - Link: https://lore.kernel.org/linux-mm/6a364356-5fea-4a6c-b959-ba3b22ce9c88@kernel.org/ [6]
-        - Link: https://lore.kernel.org/linux-mm/2cb4503d-3a3f-4f6c-8038-7b3d1c74b3c2@kernel.org/ [7]
-    - 0b76945cac07 "mm/migrate_device: cleanup up PMD Checks and warnings"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260419174747.10701-1-nueralspacetech@gmail.com
-    - 569bd7806f39 "mm/sparse: remove unnecessary NULL check before allocating mem_section"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260419144225.2875654-1-ekffu200098@gmail.com
-    - 6c6749377239 "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260418120233.7162-1-baohua@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
-      - Link: https://lore.kernel.org/lkml/20160606022724.GA26227@yexl-desktop/ [2]
-      - Link: https://lore.kernel.org/lkml/20210120173612.20913-1-will@kernel.org/ [3]
-    - ca3ee3ce70bf "mm/vmscan: fix typos in comments"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260416062302.727468-1-gxxa03070307@gmail.com
-    - series "fix MAP_DROPPABLE not supported errno", v4. (3)
-      - 42e56355b9d3 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
-        - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
-    - 086343bc1a25 "mm/page_owner: fix %pGp format specifier argument type"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260414075813.3425968-1-zhen.ni@easystack.cn
-- mm-new: 65 -> 60 commits
-  - series: 11 (43) -> 10 (45)
+- mm-new: 60 -> 60 commits (no change)
+  - series: 10 (45) -> 10 (45) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 12 -> 9 commits
-    - no role, reviewer: 21 -> 18 commits
+    - no role, no role : 9 -> 9 commits (no change)
+    - no role, reviewer: 18 -> 18 commits (no change)
     - no role, maintainer: 13 -> 13 commits (no change)
     - reviewer, nobody: 3 -> 3 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 8 -> 9 commits
-  - new commits
-    - series "mm/damon/reclaim: support monitoring intervals auto-tuning". (2)
-      - 07889a6e327b "mm/damon/reclaim: add autotune_monitoring_intervals parameter (0/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260501011740.81988-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260501011740.81988-2-sj@kernel.org
-    - 83785d5d80a0 "mm/swap, PM: hibernate: atomically replace hibernation pin"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
+    - maintainer, nobody: 9 -> 9 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)
