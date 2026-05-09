@@ -8,28 +8,25 @@
       - Link: https://lore.kernel.org/20260429073105.44472-1-qi.zheng@linux.dev
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+- mm-unstable: 4 total, 1 (3) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-      - 5e8cd5b471c3 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
-- mm-new: 3 total, 1 (2) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
+    - no role, no role : 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - a7fb3fd232b7 "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
+      - 72533e28eeb3 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
+    - c3915d02469c "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
     - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (2 commits)
-      - 398a53c5076e "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
+      - 89a6ab14912b "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
         - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
-      - f8415c02a504 "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
+      - fa2d38a200e7 "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -8,27 +8,27 @@
       - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
+- mm-unstable: 2 total, 2 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
-    - reviewer, reviewer: 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-      - b59ea0a1797e "mm/khugepaged: introduce collapse_allowable_orders helper function" (8/13)
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com
     - series "fix MAP_DROPPABLE not supported errno", v4. (3 commits)
-      - 8200aa7e54ff "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
+      - 67194eb197ad "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
-- mm-new: 1 total, 1 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
     - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3 commits)
-      - 1c44820137fe "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
+      - 61fa8865eeda "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
         - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, reviewer: 1 commits
+  - full commits list
+      - d5a743ce07f0 "mm/khugepaged: introduce collapse_allowable_orders helper function" (8/13)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

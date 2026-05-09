@@ -8,21 +8,19 @@
       - Link: https://lore.kernel.org/20260420114805.3572606-2-elver@google.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-  - full commits list
-      - b17803d4edfe "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
-- mm-new: 1 total, 1 (1) series, 0 non-series commits
+- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
   - full commits list
+      - 6b206c8e7337 "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
     - series "kasan: hw_tags: Disable tagging for stack and page-tables", v4. (3 commits)
-      - f52102f8c0e7 "vmalloc: add __GFP_SKIP_KASAN support" (0/3)
+      - 1adaaa204b07 "vmalloc: add __GFP_SKIP_KASAN support" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260429102704.680174-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260429102704.680174-2-dev.jain@arm.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

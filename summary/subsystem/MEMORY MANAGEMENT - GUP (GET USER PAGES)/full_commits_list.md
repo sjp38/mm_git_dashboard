@@ -6,10 +6,10 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-    - 902f5d1dd011 "mm/gup: cleanup pgtable entry accessors"
+    - 46c15eebc474 "mm/gup: cleanup pgtable entry accessors"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260421051754.1691221-1-agordeev@linux.ibm.com
-    - b510b5c016da "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - e407c1040a46 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

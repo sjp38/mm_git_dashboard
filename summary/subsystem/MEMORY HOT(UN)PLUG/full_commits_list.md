@@ -5,25 +5,25 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm: Fix memory block leaks and locking", v2. (2 commits)
-      - dcf6d7b071ad "mm/memory_hotplug: fix memory block reference leak on remove" (0/2)
+      - dd812ba2fc69 "mm/memory_hotplug: fix memory block reference leak on remove" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428085219.1316047-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260428085219.1316047-2-songmuchun@bytedance.com
-      - fd58466c39c8 "drivers/base/memory: fix memory block reference leak in poison accounting" (1/2)
+      - bf6f64889d57 "drivers/base/memory: fix memory block reference leak in poison accounting" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428085219.1316047-3-songmuchun@bytedance.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 2 total, 0 (2) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 446902f11e41 "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
+      - 4b0860cd587d "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com
-      - f80fbff15aab "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
+      - 1cd9f7886996 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

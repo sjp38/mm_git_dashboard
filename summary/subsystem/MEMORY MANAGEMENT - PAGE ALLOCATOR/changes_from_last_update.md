@@ -6,14 +6,66 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
+- mm-unstable: 5 -> 15 commits
+  - series: 1 (3) -> 2 (11)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
-- mm-new: 10 -> 10 commits (no change)
-  - series: 1 (8) -> 1 (8) (no change)
-    - no role, reviewer: 9 -> 9 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 4 -> 13 commits
+    - reviewer, reviewer: 0 -> 1 commits
+  - changed commits
+    - 5add1ca9d408 "mm/page_alloc: cleanup flag vars in alloc_pages_bulk_noprof()"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260331-b4-prepare_alloc_pages-flags-v1-1-ea2416def698@google.com
+    - 34c52b5d0391 "mm, page_alloc: reintroduce page allocation stall warning"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/371c86c8-1d47-bd70-b74c-769842718b1f@google.com
+    - series "mm: use spinlock guards for zone lock", v3. (8)
+      - e1de24415960 "mm: use zone lock guard in reserve_highatomic_pageblock() (0/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/cover.1777462630.git.d@ilvokhin.com
+        - Link: https://lore.kernel.org/3657e1144e2ffc1ca0eb57d57d89bfec4073d8c6.1777462630.git.d@ilvokhin.com
+        - Link: https://lore.kernel.org/all/20260309164516.GE606826@noisy.programming.kicks-ass.net/ [1]
+        - Link: https://lore.kernel.org/all/afC5C6fylF4AsITV@shell.ilvokhin.com/ [2]
+        - Link: https://lore.kernel.org/all/20260427165037.205337-1-d@ilvokhin.com/ [3]
+      - f59155d008ce "mm: use zone lock guard in unset_migratetype_isolate() (1/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/815c0905ea77828ed32bf56ff0a6d3c6548eb3a2.1777462630.git.d@ilvokhin.com
+      - 956cacb5732f "mm: use zone lock guard in unreserve_highatomic_pageblock() (2/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/69db814cd178915cb5615334a29304678f960963.1777462630.git.d@ilvokhin.com
+      - ad4eef43f041 "mm: use zone lock guard in set_migratetype_isolate() (3/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/6883351ad7f74d20875fff30e0e3214a089cea97.1777462630.git.d@ilvokhin.com
+      - d0470a7ca435 "mm: use zone lock guard in take_page_off_buddy() (4/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/a981721632a981f148c63e3f7df3d1116a0c3f6d.1777462630.git.d@ilvokhin.com
+      - e42d0ace77f6 "mm: use zone lock guard in put_page_back_buddy() (5/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/b0fceedca37139da36aa626ac72eb9840b641021.1777462630.git.d@ilvokhin.com
+      - 9fcbfade4105 "mm: use zone lock guard in free_pcppages_bulk() (6/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/aafc2d660057a91eb40417f8ff4645b0a8c525e2.1777462630.git.d@ilvokhin.com
+      - 455d3d14ed3a "mm: use zone lock guard in __offline_isolated_pages() (7/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/13149be4f8151e18eb5f1eb4f3241ab3cffb373e.1777462630.git.d@ilvokhin.com
+- mm-new: 10 -> 1 commits
+  - series: 1 (8) -> 0 (0)
+    - no role, nobody: 0 -> 1 commits
+    - no role, reviewer: 9 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+  - new commits
+    - 62004f891295 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

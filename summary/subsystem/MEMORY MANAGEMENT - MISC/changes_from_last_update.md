@@ -4,30 +4,123 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 2 commits
   - changed commits
-    - 5e7cf94307db "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
-      - Authored by no role player, reviewed by nobody
-      - added "Fixes: 999dad824c39 ("mm/shmem: persist uffd-wp bit across zapping for file-backed")"
-      - dropped "Fixes: 999dad824c39e ("mm/shmem: persist uffd-wp bit across zapping for file-backed")"
+    - d093b1577239 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
       - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 10 commits (no change)
-  - series: 1 (9) -> 1 (9) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-new: 16 -> 16 commits (no change)
-  - series: 1 (12) -> 1 (12) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 3 -> 3 commits (no change)
-    - maintainer, nobody: 7 -> 7 commits (no change)
+- mm-unstable: 10 -> 19 commits
+  - series: 1 (9) -> 2 (15)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 4 -> 6 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 2 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, reviewer: 2 -> 0 commits
+    - maintainer, nobody: 2 -> 10 commits
+  - new commits
+    - series "mm/damon/stat: add kdamond_pid parameter". (2)
+      - 45ad5f8fd788 "Docs/admin-guide/mm/damon/stat: document kdamond_pid parameter (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260502020505.80822-3-sj@kernel.org
+  - changed commits
+    - d4e103359b95 "Docs/mm/damon/maintainer-profile: add AI review usage guideline"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260412211932.89038-1-sj@kernel.org
+      - Link: https://github.com/sashiko-dev/sashiko/commit/ad9f4a98f958 [1]
+      - Link: https://github.com/sashiko-dev/sashiko/commit/b554c7b6e733 [2]
+    - df81e0c83cc1 "selftests/mm: simplify byte pattern checking in mremap_test"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260415044509.579428-1-dev.jain@arm.com
+    - series "mm/damon: repost non-hotfix reviewed patches in damon/next tree", v2. (4)
+      - e2ff83cc7819 "Docs/admin-guide/mm/damon: fix 'parametrs' typo (1/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260426231619.107231-3-sj@kernel.org
+      - faee748caddc "mm/damon: support MADV_COLLAPSE via DAMOS_COLLAPSE scheme action (3/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260426231619.107231-5-sj@kernel.org
+        - Link: https://lore.kernel.org/damon/20260313000816.79933-1-sj@kernel.org/ [1]
+    - 1c8994760a4a "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/tencent_BB588C2CDED859A873093DAF28B2CC1F7B0A@qq.com
+    - series "mm/damon: let DAMON be paused and resumed", v2. (10)
+      - 9e1989d77425 "Docs/mm/damon/design: update for context pause/resume feature (2/10)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260427151231.113429-4-sj@kernel.org
+      - eb9b72642d72 "Docs/admin-guide/mm/damon/usage: update for pause file (3/10)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260427151231.113429-5-sj@kernel.org
+    - series "mm/damon/reclaim,lru_sort: monitor all system rams by default". (7)
+      - deda82ca7573 "Docs/admin-guide/mm/damon/reclaim: update for entire memory monitoring (5/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260429041232.90257-7-sj@kernel.org
+      - beb08fbe1b6d "Docs/admin-guide/mm/damon/lru_sort: update for entire memory monitoring (6/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260429041232.90257-8-sj@kernel.org
+    - b3a51ab6315c "selftests/mm: khugepaged: initialize file contents via mmap"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260429115816.98824-1-agarwal.vineet2006@gmail.com
+    - series "mm/damon/sysfs: document filters/ directory as deprecated". (2)
+      - c4c28a5d4dbc "Docs/admin-guide/mm/damon/usage: mark scheme filters sysfs dir as deprecated (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260429150309.82282-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260429150309.82282-2-sj@kernel.org
+    - series "mm/damon/reclaim: support monitoring intervals auto-tuning". (2)
+      - 7b46530528b5 "Docs/admin-guide/mm/damon/reclaim: update for autotune_monitoring_intervals (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260501011740.81988-3-sj@kernel.org
+  - dropped commits
+    - a4213f1dd263 "mm/page_owner: document page_owner filter features"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260428071112.1420380-5-zhen.ni@easystack.cn
+- mm-new: 16 -> 9 commits
+  - series: 1 (12) -> 0 (7)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 3 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 2 -> 0 commits
+    - reviewer, nobody: 3 -> 4 commits
+    - reviewer, reviewer: 0 -> 2 commits
+    - maintainer, nobody: 7 -> 0 commits
+  - new commits
+    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
+      - 25212fcd6349 "fix run_vmtests.sh to only print SKIP when khugepaged is selected (13/14)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/E44ED51F-D250-442D-A89F-B90A671D53ED@nvidia.com
+    - series "mm/kmemleak: dedupe verbose scan output", v3. (2)
+      - 87b2da0ca5b9 "selftests/mm: add kmemleak verbose dedup test (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260506-kmemleak_dedup-v3-2-2d36aafc34da@debian.org
+  - changed commits
+    - series "khugepaged: mTHP support", v16. (13)
+      - acd97ef8e67d "mm/khugepaged: generalize alloc_charge_folio() (1/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260419185750.260784-3-npache@redhat.com
+      - 593e1bf90f6d "mm/khugepaged: add per-order mTHP collapse failure statistics (6/13)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260419185750.260784-8-npache@redhat.com
+      - c16a80281f91 "Documentation: mm: update the admin guide for mTHP collapse (12/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260419185750.260784-14-npache@redhat.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

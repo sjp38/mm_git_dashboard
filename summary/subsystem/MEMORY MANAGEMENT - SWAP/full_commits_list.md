@@ -2,42 +2,45 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 3 total, 1 (2) series, 1 non-series commits
+- mm-unstable: 7 total, 1 (4) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
     - reviewer, maintainer: 2 commits
+    - maintainer, nobody: 1 commits
   - full commits list
-    - 30ac4e50382e "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
+    - 1ce06d2f36b4 "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260418120233.7162-1-baohua@kernel.org
       - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
       - Link: https://lore.kernel.org/lkml/20160606022724.GA26227@yexl-desktop/ [2]
       - Link: https://lore.kernel.org/lkml/20210120173612.20913-1-will@kernel.org/ [3]
+    - a0650c8383e7 "mm/page_io: rename swap_iocb fields for clarity"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260402072650.48811-1-devnexen@gmail.com
+    - 742295a20988 "mm/lruvec: preemptively free dead folios during lru_add drain"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260425053417.351146-1-jp.kobryn@linux.dev
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - b7ed500adbcc "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - 65f923c8e23e "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - 879332d322ed "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - 89b1597b8821 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
-- mm-new: 4 total, 0 (0) series, 4 non-series commits
+      - 0d3949828cca "mm/swap, PM: hibernate: atomically replace hibernation pin" (2/8)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
+      - e9dd96806dbc "mm-swap-pm-hibernate-atomically-replace-hibernation-pin-checkpatch-fixes" (3/8)
+        - Authored by a maintainer, reviewed by nobody
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
-    - maintainer, nobody: 1 commits
   - full commits list
-    - 37c648bdda74 "mm/page_io: rename swap_iocb fields for clarity"
+    - 0299d9a74544 "mm/swap: add cond_resched() in swap_reclaim_full_clusters to prevent softlockup"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260402072650.48811-1-devnexen@gmail.com
-    - a84ebd014caa "mm/lruvec: preemptively free dead folios during lru_add drain"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260425053417.351146-1-jp.kobryn@linux.dev
-    - 9360eed36c63 "mm/swap, PM: hibernate: atomically replace hibernation pin"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
-    - 312ca1abefe5 "mm-swap-pm-hibernate-atomically-replace-hibernation-pin-checkpatch-fixes"
-      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260506130919.2298807-1-kerayhuang@tencent.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

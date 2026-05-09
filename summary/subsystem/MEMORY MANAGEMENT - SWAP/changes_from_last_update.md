@@ -5,16 +5,40 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 3 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 3 -> 7 commits
+  - series: 1 (2) -> 1 (4)
+    - no role, nobody: 1 -> 2 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
     - reviewer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 4 -> 4 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - changed commits
+    - a0650c8383e7 "mm/page_io: rename swap_iocb fields for clarity"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260402072650.48811-1-devnexen@gmail.com
+    - 742295a20988 "mm/lruvec: preemptively free dead folios during lru_add drain"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260425053417.351146-1-jp.kobryn@linux.dev
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - 0d3949828cca "mm/swap, PM: hibernate: atomically replace hibernation pin (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
+      - e9dd96806dbc "mm-swap-pm-hibernate-atomically-replace-hibernation-pin-checkpatch-fixes (3/8)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+- mm-new: 4 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+  - new commits
+    - 0299d9a74544 "mm/swap: add cond_resched() in swap_reclaim_full_clusters to prevent softlockup"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260506130919.2298807-1-kerayhuang@tencent.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

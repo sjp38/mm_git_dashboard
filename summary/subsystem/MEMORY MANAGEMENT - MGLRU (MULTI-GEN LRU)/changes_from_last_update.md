@@ -5,15 +5,25 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 18 -> 18 commits (no change)
+- mm-unstable: 18 -> 20 commits
   - series: 1 (15) -> 1 (15) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, reviewer: 3 -> 4 commits
+    - no role, maintainer: 0 -> 1 commits
     - reviewer, reviewer: 14 -> 14 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
+  - changed commits
+    - 074b37d12375 "mm/vmpressure: skip socket pressure for costly order reclaim"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260406195014.112521-1-jp.kobryn@linux.dev
+    - 742295a20988 "mm/lruvec: preemptively free dead folios during lru_add drain"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260425053417.351146-1-jp.kobryn@linux.dev
+- mm-new: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

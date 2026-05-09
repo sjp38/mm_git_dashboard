@@ -4,72 +4,75 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 538e64fbbe5b "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+    - 99f5ca827bb2 "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 5 total, 1 (3) series, 2 non-series commits
+- mm-unstable: 15 total, 2 (11) series, 4 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
-    - no role, reviewer: 4 commits
+    - no role, reviewer: 13 commits
+    - reviewer, reviewer: 1 commits
   - full commits list
-    - a5d0437feb33 "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+    - 57ce802a824a "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
     - series "mm: Free contiguous order-0 pages efficiently", v6. (3 commits)
-      - 7a788a6ac837 "mm/page_alloc: optimize free_contig_range()" (0/3)
+      - 7ae0a5bfbb5d "mm/page_alloc: optimize free_contig_range()" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
         - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
         - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
-      - b17803d4edfe "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
+      - 6b206c8e7337 "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
-      - 2ea030b4f35e "mm/page_alloc: optimize __free_contig_frozen_range()" (2/3)
+      - 051958858b81 "mm/page_alloc: optimize __free_contig_frozen_range()" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-4-usama.anjum@arm.com
-    - e4ad81721e97 "mm/page_owner: fix %pGp format specifier argument type"
+    - 8d96398127db "mm/page_owner: fix %pGp format specifier argument type"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260414075813.3425968-1-zhen.ni@easystack.cn
-- mm-new: 10 total, 1 (8) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 9 commits
-    - reviewer, reviewer: 1 commits
-  - full commits list
-    - 142328406690 "mm/page_alloc: cleanup flag vars in alloc_pages_bulk_noprof()"
+    - 5add1ca9d408 "mm/page_alloc: cleanup flag vars in alloc_pages_bulk_noprof()"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260331-b4-prepare_alloc_pages-flags-v1-1-ea2416def698@google.com
-    - d59413c4c8b1 "mm, page_alloc: reintroduce page allocation stall warning"
+    - 34c52b5d0391 "mm, page_alloc: reintroduce page allocation stall warning"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/371c86c8-1d47-bd70-b74c-769842718b1f@google.com
     - series "mm: use spinlock guards for zone lock", v3. (8 commits)
-      - 04e85f44e54c "mm: use zone lock guard in reserve_highatomic_pageblock()" (0/8)
+      - e1de24415960 "mm: use zone lock guard in reserve_highatomic_pageblock()" (0/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/cover.1777462630.git.d@ilvokhin.com
         - Link: https://lore.kernel.org/3657e1144e2ffc1ca0eb57d57d89bfec4073d8c6.1777462630.git.d@ilvokhin.com
         - Link: https://lore.kernel.org/all/20260309164516.GE606826@noisy.programming.kicks-ass.net/ [1]
         - Link: https://lore.kernel.org/all/afC5C6fylF4AsITV@shell.ilvokhin.com/ [2]
         - Link: https://lore.kernel.org/all/20260427165037.205337-1-d@ilvokhin.com/ [3]
-      - dd8c85432977 "mm: use zone lock guard in unset_migratetype_isolate()" (1/8)
+      - f59155d008ce "mm: use zone lock guard in unset_migratetype_isolate()" (1/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/815c0905ea77828ed32bf56ff0a6d3c6548eb3a2.1777462630.git.d@ilvokhin.com
-      - a872d494654b "mm: use zone lock guard in unreserve_highatomic_pageblock()" (2/8)
+      - 956cacb5732f "mm: use zone lock guard in unreserve_highatomic_pageblock()" (2/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/69db814cd178915cb5615334a29304678f960963.1777462630.git.d@ilvokhin.com
-      - 876a840bf849 "mm: use zone lock guard in set_migratetype_isolate()" (3/8)
+      - ad4eef43f041 "mm: use zone lock guard in set_migratetype_isolate()" (3/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/6883351ad7f74d20875fff30e0e3214a089cea97.1777462630.git.d@ilvokhin.com
-      - 527a0720a1d0 "mm: use zone lock guard in take_page_off_buddy()" (4/8)
+      - d0470a7ca435 "mm: use zone lock guard in take_page_off_buddy()" (4/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/a981721632a981f148c63e3f7df3d1116a0c3f6d.1777462630.git.d@ilvokhin.com
-      - 9ad3c9a6f980 "mm: use zone lock guard in put_page_back_buddy()" (5/8)
+      - e42d0ace77f6 "mm: use zone lock guard in put_page_back_buddy()" (5/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/b0fceedca37139da36aa626ac72eb9840b641021.1777462630.git.d@ilvokhin.com
-      - 6f8a6f8d2c5d "mm: use zone lock guard in free_pcppages_bulk()" (6/8)
+      - 9fcbfade4105 "mm: use zone lock guard in free_pcppages_bulk()" (6/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/aafc2d660057a91eb40417f8ff4645b0a8c525e2.1777462630.git.d@ilvokhin.com
-      - 0838bf422560 "mm: use zone lock guard in __offline_isolated_pages()" (7/8)
+      - 455d3d14ed3a "mm: use zone lock guard in __offline_isolated_pages()" (7/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/13149be4f8151e18eb5f1eb4f3241ab3cffb373e.1777462630.git.d@ilvokhin.com
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - 62004f891295 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
