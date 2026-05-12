@@ -5,10 +5,10 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 53ca174322f0 "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
+    - 884ed86a04f7 "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260425133537.17463-1-nueralspacetech@gmail.com
-    - d017da2bb6fb "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
+    - 8bc5d3c2725d "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260501115122.23288-1-nueralspacetech@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -16,10 +16,10 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - 50485f220327 "mm/migrate_device: cleanup up PMD Checks and warnings"
+    - 9ffd451819ca "mm/migrate_device: cleanup up PMD Checks and warnings"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260419174747.10701-1-nueralspacetech@gmail.com
-    - 331f87d737d5 "mm/migrate: rename PAGE_ migration flags to FOLIO_"
+    - c740f8746993 "mm/migrate: rename PAGE_ migration flags to FOLIO_"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260324190706.964555-4-shivankg@amd.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

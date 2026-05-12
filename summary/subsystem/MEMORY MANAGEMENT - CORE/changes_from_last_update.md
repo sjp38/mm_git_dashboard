@@ -4,86 +4,20 @@
     - reviewer, nobody: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 4 -> 4 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - 46644b93177a "mm: fix __vm_normal_page() to handle missing support for pmd_special()/pud_special()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - added "Reviewed-by: Oscar Salvador <osalvador@suse.de>"
-      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20260430-pmd_special-v1-1-dbcbcfd72c20@kernel.org
-    - d093b1577239 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
-      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 15 commits
-  - series: 1 (2) -> 3 (8)
-    - no role, no role : 3 -> 7 commits
-    - no role, reviewer: 3 -> 6 commits
-    - no role, maintainer: 0 -> 2 commits
-  - changed commits
-    - 40b2e223a036 "mm/sparse: remove sparse buffer pre-allocation mechanism"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260410092419.2446420-1-songmuchun@bytedance.com
-    - 074b37d12375 "mm/vmpressure: skip socket pressure for costly order reclaim"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260406195014.112521-1-jp.kobryn@linux.dev
-    - 4693be551a13 "mm/thp: dead code cleanup in Kconfig"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260331070730.33915-1-julianbraha@gmail.com
-    - series "mm: Fix vmemmap optimization accounting and initialization", v8. (6)
-      - c4a3f9e384a1 "mm/sparse-vmemmap: fix vmemmap accounting underflow (0/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260428081855.1249045-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260428081855.1249045-2-songmuchun@bytedance.com
-      - 1cd9f7886996 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths (2/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
-      - 29de0d70eef9 "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization (3/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260428081855.1249045-5-songmuchun@bytedance.com
-    - series "mm: remove page_mapped()". (3)
-      - 2cc123bc1c26 "mm: remove page_mapped() (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260427-page_mapped-v1-3-e89c3592c74c@kernel.org
-    - series "kasan: hw_tags: Disable tagging for stack and page-tables", v4. (3)
-      - 1adaaa204b07 "vmalloc: add __GFP_SKIP_KASAN support (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260429102704.680174-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260429102704.680174-2-dev.jain@arm.com
-      - 2ca158e23fbb "kasan: skip HW tagging for all kernel thread stacks (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260429102704.680174-3-dev.jain@arm.com
-- mm-new: 10 -> 1 commits
-  - series: 2 (8) -> 0 (1)
-    - no role, no role : 5 -> 1 commits
-    - no role, reviewer: 3 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
-  - changed commits
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
-      - 68bb1fc961d8 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option (5/14)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - added "Reviewed-by: Nico Pache <npache@redhat.com>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260429153538.727855-1-ziy@nvidia.com
+- mm-unstable: 15 -> 15 commits (no change)
+  - series: 3 (8) -> 3 (8) (no change)
+    - no role, no role : 7 -> 7 commits (no change)
+    - no role, reviewer: 6 -> 6 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)

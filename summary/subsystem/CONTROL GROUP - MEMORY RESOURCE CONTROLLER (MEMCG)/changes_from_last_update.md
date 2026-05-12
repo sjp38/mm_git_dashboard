@@ -6,31 +6,12 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 4 commits
-  - series: 0 (1) -> 1 (3)
-    - no role, no role : 1 -> 3 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - c3915d02469c "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
-    - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (2)
-      - 89a6ab14912b "selftests/cgroup: fix hardcoded page size in test_percpu_basic (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Sayali Patil <sayalip@linux.ibm.com>"
-        - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
-        - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
-      - fa2d38a200e7 "selftests/cgroup: include slab in test_percpu_basic memory check (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Cc: Sayali Patil <sayalip@linux.ibm.com>"
-        - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
-- mm-new: 3 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

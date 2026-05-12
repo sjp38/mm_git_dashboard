@@ -13,18 +13,18 @@
     - no role, no role : 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 72533e28eeb3 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
+      - aa9a6c33ad30 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
-    - c3915d02469c "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
+    - 78077adf5d58 "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
     - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (2 commits)
-      - 89a6ab14912b "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
+      - f4490c374c18 "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
         - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
-      - fa2d38a200e7 "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
+      - 59ef70d96e7a "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

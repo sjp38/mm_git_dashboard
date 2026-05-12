@@ -7,17 +7,20 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 03269dbf52f8 "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
-- mm-new: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, no role : 0 -> 2 commits
+  - new commits
+    - series "make MM selftests more CI friendly", v4. (55)
+      - a79468718eab "selftests/mm: merge map_hugetlb into hugepage-mmap (5/55)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
+      - a9885e9ddf1f "selftests/mm: rename hugepage-* tests to hugetlb-* (6/55)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

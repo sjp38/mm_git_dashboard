@@ -7,27 +7,12 @@
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 2 (2)
+  - series: 2 (2) -> 2 (2) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
     - reviewer, reviewer: 1 -> 0 commits
-  - changed commits
-    - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3)
-      - 61fa8865eeda "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
-- mm-new: 1 -> 1 commits (no change)
-  - series: 1 (1) -> 0 (1)
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "khugepaged: mTHP support", v16. (13)
-      - d5a743ce07f0 "mm/khugepaged: introduce collapse_allowable_orders helper function (8/13)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-new
-        - Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
