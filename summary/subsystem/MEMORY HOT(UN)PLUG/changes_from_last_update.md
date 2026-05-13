@@ -10,13 +10,14 @@
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 2 commits
   - new commits
-    - 30424114b17d "mm/memory_hotplug: factor out altmap freeing checks"
+    - 18fafd0ead37 "drivers/base/memory: make memory block get/put explicit"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260511084307.1827127-1-songmuchun@bytedance.com
+      - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
+      - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

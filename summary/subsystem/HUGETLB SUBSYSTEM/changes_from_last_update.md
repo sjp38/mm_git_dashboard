@@ -2,25 +2,27 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 50c9dc813cee "Revert "mm/hugetlbfs: update hugetlbfs to use mmap_prepare""
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260512160643.266960-1-ljs@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 2 commits
+- mm-new: 2 -> 3 commits
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
   - new commits
-    - series "make MM selftests more CI friendly", v4. (55)
-      - a79468718eab "selftests/mm: merge map_hugetlb into hugepage-mmap (5/55)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - a9885e9ddf1f "selftests/mm: rename hugepage-* tests to hugetlb-* (6/55)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
+    - 2c3f46871723 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

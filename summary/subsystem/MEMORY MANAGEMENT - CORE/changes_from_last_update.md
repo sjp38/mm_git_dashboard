@@ -10,14 +10,35 @@
     - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 15 -> 15 commits (no change)
-  - series: 3 (8) -> 3 (8) (no change)
-    - no role, no role : 7 -> 7 commits (no change)
-    - no role, reviewer: 6 -> 6 commits (no change)
+- mm-unstable: 15 -> 17 commits
+  - series: 3 (8) -> 3 (9)
+    - no role, no role : 7 -> 8 commits
+    - no role, reviewer: 6 -> 7 commits
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+  - new commits
+    - a81d2e424ee5 "mm-page_alloc-replace-kernel_init_pages-with-batch-page-clearing-v4"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260504063942.553438-1-hsalunke@amd.com
+  - changed commits
+    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
+      - 1d927d1307d5 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option (5/14)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260429153538.727855-1-ziy@nvidia.com
+- mm-new: 1 -> 2 commits
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
+      - 87f4e4be3caf "powerpc/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (7/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-8-3fb0be6fc688@kernel.org
+    - 18fafd0ead37 "drivers/base/memory: make memory block get/put explicit"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
+      - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)

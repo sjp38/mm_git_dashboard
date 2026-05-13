@@ -8,23 +8,9 @@
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-- mm-new: 0 -> 4 commits
-  - series: 0 (0) -> 0 (4)
-    - no role, nobody: 0 -> 4 commits
-  - new commits
-    - series "make MM selftests more CI friendly", v4. (55)
-      - 9e3b9c28578e "selftests/mm: move HugeTLB helpers to hugepage_settings (23/55)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260511162840.375890-25-rppt@kernel.org
-      - 53ee403c3cd4 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size (24/55)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260511162840.375890-26-rppt@kernel.org
-      - 3884297663c1 "selftests/mm: gup_longterm: add setup of HugeTLB pages (32/55)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260511162840.375890-34-rppt@kernel.org
-      - 56607370e17e "selftests/mm: gup_test: add setup of HugeTLB pages (33/55)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260511162840.375890-35-rppt@kernel.org
+- mm-new: 4 -> 4 commits (no change)
+  - series: 0 (4) -> 0 (4) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

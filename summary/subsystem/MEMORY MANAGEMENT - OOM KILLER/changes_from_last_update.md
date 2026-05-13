@@ -5,11 +5,21 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+    - no role, no role : 1 -> 0 commits
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - def36547cd98 "mm: process_mrelease: introduce PROCESS_MRELEASE_REAP_KILL flag"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-new
+      - added "Link: https://lore.kernel.org/20260511214226.937793-1-minchan@kernel.org"
+      - dropped "Link: https://lore.kernel.org/20260429211359.3829683-1-minchan@kernel.org"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: David Rientjes <rientjes@google.com>"
+      - Link: https://lore.kernel.org/20260511214226.937793-1-minchan@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

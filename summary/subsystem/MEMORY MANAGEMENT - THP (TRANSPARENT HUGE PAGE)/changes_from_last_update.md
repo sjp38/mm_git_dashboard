@@ -5,158 +5,161 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
+- mm-unstable: 6 -> 31 commits
+  - series: 1 (2) -> 3 (25)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-- mm-new: 24 -> 29 commits
-  - series: 2 (22) -> 2 (27)
-    - no role, nobody: 0 -> 4 commits
-    - reviewer, nobody: 8 -> 9 commits
-    - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 9 -> 9 commits (no change)
-    - reviewer, maintainer: 6 -> 6 commits (no change)
-  - new commits
-    - series "khugepaged: mTHP support", v17. (14)
-      - bb420b678092 "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped (4/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260511185817.686831-6-npache@redhat.com
-      - 891652af1772 "mm/khugepaged: Introduce mTHP collapse support (10/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260511185817.686831-12-npache@redhat.com
-    - series "make MM selftests more CI friendly", v4. (55)
-      - c349a1270e82 "selftests/mm: khugepaged: group tests in an array (12/55)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260511162840.375890-14-rppt@kernel.org
-      - fcb0107bd5dc "selftests/mm: khugepaged: use kselftest framework (13/55)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260511162840.375890-15-rppt@kernel.org
-      - fbfc42fe7a54 "selftests/mm: add atexit() and signal handlers to thp_settings (21/55)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260511162840.375890-23-rppt@kernel.org
-      - b27628f33a86 "selftests/mm: rename thp_settings.[ch] to hugepage_settings.[ch] (22/55)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260511162840.375890-24-rppt@kernel.org
+    - reviewer, nobody: 0 -> 7 commits
+    - reviewer, no role : 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 11 commits
+    - reviewer, maintainer: 0 -> 6 commits
   - changed commits
     - series "khugepaged: mTHP support", v17. (14)
-      - db184a12921f "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support (0/14)"
+      - fb395b678982 "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support (0/14)"
         - Authored by a reviewer, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260511185817.686831-2-npache@redhat.com"
-        - added "Link: https://lore.kernel.org/20260511185817.686831-1-npache@redhat.com"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-2-npache@redhat.com"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-1-npache@redhat.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260511185817.686831-1-npache@redhat.com
         - Link: https://lore.kernel.org/20260511185817.686831-2-npache@redhat.com
-      - 202dea488c16 "mm/khugepaged: generalize alloc_charge_folio() (1/14)"
+      - b91f2c6fc400 "mm/khugepaged: generalize alloc_charge_folio() (1/14)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260511185817.686831-3-npache@redhat.com"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-3-npache@redhat.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260511185817.686831-3-npache@redhat.com
-      - fc6b8aa69eac "mm/khugepaged: rework max_ptes_* handling with helper functions (2/14)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260511185817.686831-4-npache@redhat.com"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-4-npache@redhat.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+      - eeaef3e9901d "mm/khugepaged: rework max_ptes_* handling with helper functions (2/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20260511185817.686831-4-npache@redhat.com
-      - 602842abb64f "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support (3/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lore.kernel.org/all/e46ab3ab-a3d7-4fb7-9970-d0704bd5d05a@arm.com [1]"
-        - added "Link: https://lore.kernel.org/20260511185817.686831-5-npache@redhat.com"
-        - added "Link: https://lore.kernel.org/all/37375ace-5601-4d6c-9dac-d1c8268698e9@redhat.com [2]"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-5-npache@redhat.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+      - 6ea00c5db590 "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support (3/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20260511185817.686831-5-npache@redhat.com
         - Link: https://lore.kernel.org/all/e46ab3ab-a3d7-4fb7-9970-d0704bd5d05a@arm.com [1]
         - Link: https://lore.kernel.org/all/37375ace-5601-4d6c-9dac-d1c8268698e9@redhat.com [2]
-      - 20b470e8358e "mm/khugepaged: generalize collapse_huge_page for mTHP collapse (5/14)"
+      - 9df3a9885770 "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped (4/14)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260511185817.686831-6-npache@redhat.com
+      - 67e65bf1ee8b "mm/khugepaged: generalize collapse_huge_page for mTHP collapse (5/14)"
         - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260511185817.686831-7-npache@redhat.com"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-6-npache@redhat.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260511185817.686831-7-npache@redhat.com
-      - f4787136eb58 "mm/khugepaged: skip collapsing mTHP to smaller orders (6/14)"
+      - e0ad5738f2b7 "mm/khugepaged: skip collapsing mTHP to smaller orders (6/14)"
         - Authored by a reviewer, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260511185817.686831-8-npache@redhat.com"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-7-npache@redhat.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260511185817.686831-8-npache@redhat.com
         - Link: https://lore.kernel.org/lkml/20241216165105.56185-11-dev.jain@arm.com/ [1]
-      - 7d0b48b40d0a "mm/khugepaged: add per-order mTHP collapse failure statistics (7/14)"
+      - 18ef3345c77f "mm/khugepaged: add per-order mTHP collapse failure statistics (7/14)"
         - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260511185817.686831-9-npache@redhat.com"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-8-npache@redhat.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260511185817.686831-9-npache@redhat.com
-      - 94734d069f73 "mm/khugepaged: improve tracepoints for mTHP orders (8/14)"
+      - d6a8a2911476 "mm/khugepaged: improve tracepoints for mTHP orders (8/14)"
         - Authored by a reviewer, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260511185817.686831-10-npache@redhat.com"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-9-npache@redhat.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260511185817.686831-10-npache@redhat.com
-      - 30bc244f3874 "mm/khugepaged: introduce collapse_allowable_orders helper function (9/14)"
+      - dc10e2121105 "mm/khugepaged: introduce collapse_allowable_orders helper function (9/14)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260511185817.686831-11-npache@redhat.com"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - added "Cc: David Hildenbrand <david@kernel.org>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-10-npache@redhat.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260511185817.686831-11-npache@redhat.com
-      - 2f19442c974f "mm/khugepaged: avoid unnecessary mTHP collapse attempts (11/14)"
+      - c453f81e1549 "mm/khugepaged: Introduce mTHP collapse support (10/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260511185817.686831-12-npache@redhat.com
+      - accf58f3f36c "mm/khugepaged: avoid unnecessary mTHP collapse attempts (11/14)"
         - Authored by a reviewer, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260511185817.686831-13-npache@redhat.com"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-12-npache@redhat.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260511185817.686831-13-npache@redhat.com
-      - d0c251fcb75d "mm/khugepaged: run khugepaged for all orders (12/14)"
+      - fa2c77f4b294 "mm/khugepaged: run khugepaged for all orders (12/14)"
         - Authored by a reviewer, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260511185817.686831-14-npache@redhat.com"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-13-npache@redhat.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260511185817.686831-14-npache@redhat.com
-      - a235ce2e33b2 "Documentation: mm: update the admin guide for mTHP collapse (13/14)"
+      - cc92a0713df6 "Documentation: mm: update the admin guide for mTHP collapse (13/14)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260511185817.686831-15-npache@redhat.com"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260419185750.260784-14-npache@redhat.com"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260511185817.686831-15-npache@redhat.com
     - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
-      - 94d3154b1ec8 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled() (4/14)"
+      - abae4fdf864d "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/14)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Nico Pache <npache@redhat.com>"
+        - dropped "Cc: Nico Pache <npache@redhat.com>"
+        - Link: https://lore.kernel.org/20260429152924.727124-1-ziy@nvidia.com
+        - Link: https://lore.kernel.org/20260429152924.727124-2-ziy@nvidia.com
+        - Link: https://lore.kernel.org/all/20260323190644.1714379-1-ziy@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/20260327014255.2058916-1-ziy@nvidia.com/ [2]
+        - Link: https://lore.kernel.org/all/20260413192030.3275825-1-ziy@nvidia.com/ [3]
+        - Link: https://lore.kernel.org/all/20260418024429.4055056-1-ziy@nvidia.com/ [4]
+        - Link: https://lore.kernel.org/all/20260424024915.28758-1-ziy@nvidia.com/ [5]
+      - 5d79cf137ed7 "mm/khugepaged: add folio dirty check after try_to_unmap() (2/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Nico Pache <npache@redhat.com>"
+        - dropped "Cc: Nico Pache <npache@redhat.com>"
+        - Link: https://lore.kernel.org/20260429152924.727124-3-ziy@nvidia.com
+      - 9102fc7f6807 "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled() (3/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Nico Pache <npache@redhat.com>"
+        - dropped "Cc: Nico Pache <npache@redhat.com>"
+        - Link: https://lore.kernel.org/20260429152924.727124-4-ziy@nvidia.com
+      - e9b43d91fc50 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled() (4/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260429152924.727124-5-ziy@nvidia.com
-  - dropped commits
-    - series "khugepaged: mTHP support", v16. (13)
-      - 1dfc255c1d4a "mm/khugepaged: introduce mTHP collapse support (9/13)"
+      - 7bd2e9c58936 "mm: fs: remove filemap_nr_thps*() functions and their users (6/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260429153538.727855-2-ziy@nvidia.com
+      - ea1c1aa1aa43 "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS (8/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260429153538.727855-4-ziy@nvidia.com
+      - 4e64779218da "mm/truncate: use folio_split() in truncate_inode_partial_folio() (9/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260429153538.727855-5-ziy@nvidia.com
+      - d65cf345ead7 "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged (11/14)"
         - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260419185750.260784-11-npache@redhat.com
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260429153538.727855-7-ziy@nvidia.com
+      - 43d709c3200f "selftests/mm: khugepaged perror fixup (12/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/3BFC4C26-1C97-40AA-B4B7-7472B9768565@nvidia.com
+    - 404c27295eac "mm/khugepaged: enable clean pagecache folio collapse for writable files"
+      - Authored by a reviewer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260429153538.727855-9-ziy@nvidia.com
+    - 8d062b837bdf "selftests/mm: add writable-file collapse tests for khugepaged"
+      - Authored by a reviewer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260429153538.727855-10-ziy@nvidia.com
+- mm-new: 29 -> 8 commits
+  - series: 2 (27) -> 0 (5)
+    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, nobody: 9 -> 1 commits
+    - reviewer, no role : 1 -> 0 commits
+    - reviewer, reviewer: 9 -> 0 commits
+    - reviewer, maintainer: 6 -> 0 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "make MM selftests more CI friendly", v4. (55)
+      - 01200b18b256 "selftests-mm-khugepaged-use-ksefltest-framework-fix (14/55)"
+        - Authored by a reviewer, reviewed by nobody
+    - 5e352abadcde "selftests/mm: check file initialization writes in split_huge_page_test"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260512074924.27721-1-agarwal.vineet2006@gmail.com
+    - 3c5495bebe33 "selftests-mm-check-file-initialization-writes-in-split_huge_page_test-fix"
+      - Authored by a maintainer, reviewed by nobody
+    - 5fdad177b16f "mm/khugepaged: fix inconsistent MMF_VM_HUGEPAGE flag due to allocation failure order"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260511025408.54035-1-ye.liu@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
