@@ -1,4 +1,4 @@
-- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
+- baseline: v7.1-rc1 -> v7.1-rc3
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -7,13 +7,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 2 commits
   - new commits
-    - 21377bfe4239 "mm/shrinker: avoid out-of-bounds read in set_shrinker_bit()"
+    - c2f0405f0100 "mm/shrinker: simplify shrinker_memcg_alloc() using guard()"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260510183700.102475-1-devnexen@gmail.com
+      - Link: https://lore.kernel.org/20260513075214.2655710-1-18810879172@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

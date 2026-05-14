@@ -1,25 +1,19 @@
-- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
+- baseline: v7.1-rc1 -> v7.1-rc3
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - def36547cd98 "mm: process_mrelease: introduce PROCESS_MRELEASE_REAP_KILL flag"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-new
-      - added "Link: https://lore.kernel.org/20260511214226.937793-1-minchan@kernel.org"
-      - dropped "Link: https://lore.kernel.org/20260429211359.3829683-1-minchan@kernel.org"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: David Rientjes <rientjes@google.com>"
-      - Link: https://lore.kernel.org/20260511214226.937793-1-minchan@kernel.org
+    - no role, no role : 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 61e3370a4f3a "mm-process_mrelease-introduce-process_mrelease_reap_kill-flag-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,4 +1,4 @@
-- baseline: v7.1-rc1
+- baseline: v7.1-rc3
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,7 +7,7 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm/kmemleak: dedupe verbose scan output", v3. (2 commits)
-      - 2366fd6dfdb6 "mm/kmemleak: dedupe verbose scan output by allocation backtrace" (0/2)
+      - aba4ffe4d3be "mm/kmemleak: dedupe verbose scan output by allocation backtrace" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260506-kmemleak_dedup-v3-0-2d36aafc34da@debian.org
         - Link: https://lore.kernel.org/20260506-kmemleak_dedup-v3-1-2d36aafc34da@debian.org

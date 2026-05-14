@@ -1,14 +1,16 @@
-- baseline: v7.1-rc1
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- baseline: v7.1-rc3
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 8fe04b1b7fa6 "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
+    - 63451de16e0a "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260425133537.17463-1-nueralspacetech@gmail.com
-    - 7f6340ed0455 "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 285375688389 "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260501115122.23288-1-nueralspacetech@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -16,10 +18,10 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - bd339264a176 "mm/migrate_device: cleanup up PMD Checks and warnings"
+    - 32a1cb1d2603 "mm/migrate_device: cleanup up PMD Checks and warnings"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260419174747.10701-1-nueralspacetech@gmail.com
-    - 66d8bc459dfa "mm/migrate: rename PAGE_ migration flags to FOLIO_"
+    - 257fbe51f7fc "mm/migrate: rename PAGE_ migration flags to FOLIO_"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260324190706.964555-4-shivankg@amd.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

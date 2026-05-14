@@ -1,25 +1,24 @@
-- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
+- baseline: v7.1-rc1 -> v7.1-rc3
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 8 commits
+- mm-unstable: 8 -> 8 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 2 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - b9f3ab6279e2 "mm/swap: add cond_resched() in swap_reclaim_full_clusters to prevent softlockup"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260506130919.2298807-1-kerayhuang@tencent.com
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - e4fa38488dc0 "mm, swap: avoid leaving unused extend table after alloc race"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260513-swap-extend-table-fix-v1-1-a71dea851fb3@tencent.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

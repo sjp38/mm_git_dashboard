@@ -1,12 +1,13 @@
-- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
+- baseline: v7.1-rc1 -> v7.1-rc3
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 5a36b2c1f94f "zram: fix use-after-free in zram_writeback_endio"
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - aec154d71f61 "zram: fix use-after-free in zram_writeback_endio"
       - Authored by no role player, reviewed by a maintainer
+      - added "Cc: wang wei <a929244872@163.com>"
       - Link: https://lore.kernel.org/20260512074918.2606208-1-richardycc@google.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

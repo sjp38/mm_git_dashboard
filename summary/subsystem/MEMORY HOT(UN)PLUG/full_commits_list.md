@@ -1,39 +1,39 @@
-- baseline: v7.1-rc1
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 1 (2) series, 0 non-series commits
+- baseline: v7.1-rc3
+- mm-hotfixes-stable: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm: Fix memory block leaks and locking", v2. (2 commits)
-      - 85f3a120ed7c "mm/memory_hotplug: fix memory block reference leak on remove" (0/2)
+      - 93866f55f7e2 "mm/memory_hotplug: fix memory block reference leak on remove" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428085219.1316047-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260428085219.1316047-2-songmuchun@bytedance.com
-      - 2afa39585f2e "drivers/base/memory: fix memory block reference leak in poison accounting" (1/2)
+      - 03a2cc1756a0 "drivers/base/memory: fix memory block reference leak in poison accounting" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428085219.1316047-3-songmuchun@bytedance.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
+- mm-unstable: 3 total, 0 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-      - 56f765d7651b "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com
-      - 36c3439a700f "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - 4062d7bae68f "mm/memory_hotplug: factor out altmap freeing checks"
+      - e281efce18de "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com
+      - 61db7930dc11 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
+    - 2c4905a61e30 "mm/memory_hotplug: factor out altmap freeing checks"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260511084307.1827127-1-songmuchun@bytedance.com
-    - 18fafd0ead37 "drivers/base/memory: make memory block get/put explicit"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
-      - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+      - 0b232bad3e5f "drivers/base/memory: make memory block get/put explicit" (4/8)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
+        - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

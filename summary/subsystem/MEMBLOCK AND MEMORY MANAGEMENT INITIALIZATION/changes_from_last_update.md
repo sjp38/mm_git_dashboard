@@ -1,33 +1,48 @@
-- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
+- baseline: v7.1-rc1 -> v7.1-rc3
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-- mm-new: 0 -> 5 commits
-  - series: 0 (0) -> 0 (5)
-    - no role, no role : 0 -> 5 commits
-  - new commits
+- mm-unstable: 2 -> 7 commits
+  - series: 0 (2) -> 0 (7)
+    - no role, no role : 2 -> 7 commits
+  - changed commits
     - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
-      - 48f2de2e48d2 "mm/bootmem_info: drop initialization of page->lru (1/8)"
+      - 53c36735a60e "mm/bootmem_info: drop initialization of page->lru (1/8)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-2-3fb0be6fc688@kernel.org
-      - 161ecd67cde9 "mm/bootmem_info: stop using PG_private (2/8)"
+      - 5f4ce50c687d "mm/bootmem_info: stop using PG_private (2/8)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-3-3fb0be6fc688@kernel.org
-      - 86173e8efdd3 "mm/bootmem_info: remove call to kmemleak_free_part_phys() (3/8)"
+      - 34621bed3967 "mm/bootmem_info: remove call to kmemleak_free_part_phys() (3/8)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-4-3fb0be6fc688@kernel.org
-      - fa2b72f3b1c6 "mm/bootmem_info: stop marking the pgdat as NODE_INFO (4/8)"
+      - e8c687fd961f "mm/bootmem_info: stop marking the pgdat as NODE_INFO (4/8)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-5-3fb0be6fc688@kernel.org
-      - 617ee84acec9 "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO (5/8)"
+      - 0facbb0d8c6c "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO (5/8)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-6-3fb0be6fc688@kernel.org
+- mm-new: 5 -> 0 commits
+  - series: 0 (5) -> 0 (0)
+    - no role, no role : 5 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

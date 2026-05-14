@@ -1,12 +1,6 @@
-- baseline: v7.1-rc1
+- baseline: v7.1-rc3
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-    - a8cf78f0d776 "zsmalloc: zero-initialize zspage memory to prevent KMSAN uninit reads"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260511213658.25273-1-contact.kartikn@gmail.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

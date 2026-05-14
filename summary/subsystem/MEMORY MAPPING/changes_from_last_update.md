@@ -1,7 +1,11 @@
-- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc1 -> v7.1-rc3
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
+  - dropped commits
+    - 619eab23e1ce "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
@@ -10,13 +14,9 @@
   - series: 2 (2) -> 2 (2) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 177b45244abf "mm/mseal: use min/max in mseal_apply"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260503115915.18680-3-thorsten.blum@linux.dev
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

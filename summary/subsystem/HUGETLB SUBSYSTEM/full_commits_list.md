@@ -1,42 +1,39 @@
-- baseline: v7.1-rc1
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 8f5ce56b7630 "mm/hugetlb_cma: round up per_node before logging it"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260422143353.852257-1-ekffu200098@gmail.com
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- baseline: v7.1-rc3
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 2 commits
   - full commits list
-    - d53e0196857f "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
+    - b06c623bba59 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
-    - 50c9dc813cee "Revert "mm/hugetlbfs: update hugetlbfs to use mmap_prepare""
+    - 9c36e28afcf7 "Revert "mm/hugetlbfs: update hugetlbfs to use mmap_prepare""
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260512160643.266960-1-ljs@kernel.org
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - bcb4845efbfe "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
+    - 2bb8fe16f7bf "mm/hugetlb: avoid false positive lockdep assertion"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
-- mm-new: 3 total, 0 (2) series, 1 non-series commits
+      - Link: https://lore.kernel.org/20260513085658.45264-1-ljs@kernel.org
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 3 total, 0 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 15657c0e7f3b "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
+    - c7c03faa6df4 "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
+      - a3537b01bdf5 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - 7cdc5ae7e0c0 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
+      - 74b280afacd5 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
-    - 2c3f46871723 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - cbd7b985bb10 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

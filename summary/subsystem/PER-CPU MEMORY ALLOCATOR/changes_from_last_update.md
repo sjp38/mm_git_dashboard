@@ -1,4 +1,4 @@
-- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
+- baseline: v7.1-rc1 -> v7.1-rc3
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -7,17 +7,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 2 commits
-  - new commits
-    - eee269e8d76c "mm/percpu-internal.h: optimise pcpu_chunk struct to save memory"
-      - Authored by no role player, reviewed by nobody
+    - no role, nobody: 2 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - e392ef72a530 "mm/percpu-internal.h: optimise pcpu_chunk struct to save memory"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Dennis Zhou <dennis@kernel.org>"
+      - dropped "Cc: Dennis Zhou <dennis@kernel.org>"
       - Link: https://lore.kernel.org/20260511070309.44044-1-zenghongling@kylinos.cn
-    - c1312709216b "percpu: introduce struct pcpu_region"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/all/aegQgyf3KuIZMK9x@palisades.local/
-      - Link: https://lore.kernel.org/20260510072149.1279887-3-joonwonkang@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

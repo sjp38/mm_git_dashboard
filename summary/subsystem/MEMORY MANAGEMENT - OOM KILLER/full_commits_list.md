@@ -1,14 +1,17 @@
-- baseline: v7.1-rc1
+- baseline: v7.1-rc3
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
+    - maintainer, nobody: 1 commits
   - full commits list
-    - def36547cd98 "mm: process_mrelease: introduce PROCESS_MRELEASE_REAP_KILL flag"
+    - 18b984123d03 "mm: process_mrelease: introduce PROCESS_MRELEASE_REAP_KILL flag"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260511214226.937793-1-minchan@kernel.org
+    - 61e3370a4f3a "mm-process_mrelease-introduce-process_mrelease_reap_kill-flag-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

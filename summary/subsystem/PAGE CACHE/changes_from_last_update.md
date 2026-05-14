@@ -1,67 +1,34 @@
-- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc1 -> v7.1-rc3
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+  - dropped commits
+    - 0437906841d0 "mm: start background writeback based on per-wb threshold for strictlimit BDIs"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260326234629.840938-2-joannelkoong@gmail.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 7 commits
-  - series: 1 (2) -> 2 (6)
-    - no role, nobody: 0 -> 1 commits
+- mm-unstable: 7 -> 7 commits (no change)
+  - series: 2 (6) -> 2 (6) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - reviewer, reviewer: 0 -> 2 commits
-    - reviewer, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "mm/filemap: tighten mmap_miss hit accounting", v3. (2)
-      - 87ad61c70de1 "mm/filemap: count only the faulting address as a mmap hit (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Vishal Moola <vishal.moola@gmail.com>"
-        - Link: https://lore.kernel.org/tencent_AA501E9A238337BD167E5C2ACF948A1AF308@qq.com
-        - Link: https://lore.kernel.org/tencent_756F151FE66F3D80479A6F982C0AB8569F09@qq.com
-      - 296dcccd5f56 "mm/filemap: do not count FAULT_FLAG_TRIED retries as mmap hits (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Vishal Moola <vishal.moola@gmail.com>"
-        - Link: https://lore.kernel.org/tencent_22E6B8849EC1141FE7773C64467E6F1E2C09@qq.com
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
-      - abae4fdf864d "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Nico Pache <npache@redhat.com>"
-        - dropped "Cc: Nico Pache <npache@redhat.com>"
-        - Link: https://lore.kernel.org/20260429152924.727124-1-ziy@nvidia.com
-        - Link: https://lore.kernel.org/20260429152924.727124-2-ziy@nvidia.com
-        - Link: https://lore.kernel.org/all/20260323190644.1714379-1-ziy@nvidia.com/ [1]
-        - Link: https://lore.kernel.org/all/20260327014255.2058916-1-ziy@nvidia.com/ [2]
-        - Link: https://lore.kernel.org/all/20260413192030.3275825-1-ziy@nvidia.com/ [3]
-        - Link: https://lore.kernel.org/all/20260418024429.4055056-1-ziy@nvidia.com/ [4]
-        - Link: https://lore.kernel.org/all/20260424024915.28758-1-ziy@nvidia.com/ [5]
-      - 5d71f5d1bc2e "fix mapping_pmd_folio_support() to represent its exact meaning (1/14)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/73AB53AB-6EAA-4077-AFCA-90929F20D17A@nvidia.com
-      - 7bd2e9c58936 "mm: fs: remove filemap_nr_thps*() functions and their users (6/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260429153538.727855-2-ziy@nvidia.com
-      - 4e64779218da "mm/truncate: use folio_split() in truncate_inode_partial_folio() (9/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260429153538.727855-5-ziy@nvidia.com
-- mm-new: 4 -> 2 commits
-  - series: 1 (4) -> 1 (2)
-    - no role, nobody: 1 -> 2 commits
-    - reviewer, reviewer: 2 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
+    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-new: 2 -> 4 commits
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, reviewer: 0 -> 2 commits
   - new commits
-    - series "mm: document read_pages and simplify usage". (2)
-      - 249e27297427 "mm/readahead: add kerneldoc for read_pages (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/all/20260501061146.6e61392d125cf1847d7cc181@linux-foundation.org/ [1]
-        - Link: https://lore.kernel.org/20260512203154.754075-2-fmayle@google.com
-      - 70fb6f0a4611 "mm/readahead: simplify page_cache_ra_unbounded loop counter reset (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260512203154.754075-3-fmayle@google.com
+    - 2ac3a373dc90 "mm/readahead: no PG_readahead on EOF"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3921-L3939 [2]
+      - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3721-L3722 [3]
+      - Link: https://lore.kernel.org/20260508181237.670645-1-fmayle@google.com
+    - 0cec77cfd531 "mm/filemap: fix page_cache_prev_miss() when no hole is found"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260512-prev_miss_fix-v2-1-4af8e5c1ae62@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

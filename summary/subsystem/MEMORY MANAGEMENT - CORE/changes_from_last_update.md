@@ -1,44 +1,61 @@
-- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc1 -> v7.1-rc3
+- mm-hotfixes-stable: 1 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 4 -> 4 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 15 -> 17 commits
-  - series: 3 (8) -> 3 (9)
-    - no role, no role : 7 -> 8 commits
-    - no role, reviewer: 6 -> 7 commits
-    - no role, maintainer: 2 -> 2 commits (no change)
-  - new commits
-    - a81d2e424ee5 "mm-page_alloc-replace-kernel_init_pages-with-batch-page-clearing-v4"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260504063942.553438-1-hsalunke@amd.com
-  - changed commits
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
-      - 1d927d1307d5 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option (5/14)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260429153538.727855-1-ziy@nvidia.com
-- mm-new: 1 -> 2 commits
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
-      - 87f4e4be3caf "powerpc/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (7/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-8-3fb0be6fc688@kernel.org
-    - 18fafd0ead37 "drivers/base/memory: make memory block get/put explicit"
+    - reviewer, nobody: 1 -> 0 commits
+  - changed commits
+    - 6a288a4ddb4a "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
-      - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - added "[akpm@linux-foundation.org: s/__GPF_ZERO/__GFP_ZERO/, per David]"
+      - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
+    - c0c6ccd9828c "mm: fix __vm_normal_page() to handle missing support for pmd_special()/pud_special()"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260430-pmd_special-v1-1-dbcbcfd72c20@kernel.org
+    - be3f38d05cc5 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
+  - dropped commits
+    - 619eab23e1ce "mm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260421102150.189982-1-ljs@kernel.org
+- mm-hotfixes-unstable: 4 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
+  - dropped commits
+    - d509b9eefd45 "mm-page_alloc-fix-initialization-of-tags-of-the-huge-zero-folio-with-init_on_free-fix"
+      - Authored by a maintainer, reviewed by nobody
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 17 -> 18 commits
+  - series: 3 (9) -> 3 (10)
+    - no role, no role : 8 -> 8 commits (no change)
+    - no role, reviewer: 7 -> 8 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
+      - 73a2779d8ee6 "powerpc/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (7/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-8-3fb0be6fc688@kernel.org
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 592ebf65b60d "mm/mmu_notifier: fix a begin vs. start typo in the invalidate range comment"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260513163546.1176742-1-seanjc@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)

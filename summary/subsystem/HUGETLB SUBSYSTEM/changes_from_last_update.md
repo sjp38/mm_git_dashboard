@@ -1,28 +1,45 @@
-- baseline: v7.1-rc1 -> v7.1-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc1 -> v7.1-rc3
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 8f5ce56b7630 "mm/hugetlb_cma: round up per_node before logging it"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260422143353.852257-1-ekffu200098@gmail.com
+- mm-hotfixes-unstable: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 2 commits
   - new commits
-    - 50c9dc813cee "Revert "mm/hugetlbfs: update hugetlbfs to use mmap_prepare""
+    - 2bb8fe16f7bf "mm/hugetlb: avoid false positive lockdep assertion"
       - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260513085658.45264-1-ljs@kernel.org
+  - changed commits
+    - 9c36e28afcf7 "Revert "mm/hugetlbfs: update hugetlbfs to use mmap_prepare""
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Oscar Salvador <osalvador@suse.de>"
+      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
       - Link: https://lore.kernel.org/20260512160643.266960-1-ljs@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 1 -> 3 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, no role : 0 -> 2 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 3 commits
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 2c3f46871723 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
+  - changed commits
+    - series "make MM selftests more CI friendly", v4. (55)
+      - a3537b01bdf5 "selftests/mm: merge map_hugetlb into hugepage-mmap (5/55)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
+      - 74b280afacd5 "selftests/mm: rename hugepage-* tests to hugetlb-* (6/55)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
+- mm-new: 3 -> 1 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 2 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
