@@ -1,35 +1,16 @@
-- baseline: v7.1-rc1 -> v7.1-rc3
+- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 6 commits
-  - series: 0 (0) -> 0 (4)
-    - no role, nobody: 0 -> 4 commits
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 0 (4) -> 0 (4) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-  - changed commits
-    - series "make MM selftests more CI friendly", v4. (55)
-      - ea245548fe7b "selftests/mm: move HugeTLB helpers to hugepage_settings (24/55)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260511162840.375890-25-rppt@kernel.org
-      - d1cc008d217b "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size (25/55)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260511162840.375890-26-rppt@kernel.org
-      - 95063e37a65b "selftests/mm: gup_longterm: add setup of HugeTLB pages (33/55)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260511162840.375890-34-rppt@kernel.org
-      - 46096eb60a3b "selftests/mm: gup_test: add setup of HugeTLB pages (34/55)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260511162840.375890-35-rppt@kernel.org
-- mm-new: 4 -> 0 commits
-  - series: 0 (4) -> 0 (0)
-    - no role, nobody: 4 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

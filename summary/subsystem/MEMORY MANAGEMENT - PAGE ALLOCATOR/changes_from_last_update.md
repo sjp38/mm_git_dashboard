@@ -1,16 +1,14 @@
-- baseline: v7.1-rc1 -> v7.1-rc3
-- mm-hotfixes-stable: 0 -> 1 commits
+- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 6a288a4ddb4a "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+  - new commits
+    - 66ed6eb45ddd "Revert "mm: introduce a new page type for page pool in page type""
       - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - added "[akpm@linux-foundation.org: s/__GPF_ZERO/__GFP_ZERO/, per David]"
-      - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
-- mm-hotfixes-unstable: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
+      - Link: https://lore.kernel.org/20260515034701.17027-1-byungchul@sk.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 17 -> 17 commits (no change)
@@ -19,8 +17,25 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 14 -> 14 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 4 commits
+  - series: 0 (0) -> 0 (3)
+    - reviewer, no role : 0 -> 3 commits
+    - reviewer, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
+      - 49e4f7c73752 "mm/page_alloc: don't overload migratetype in find_suitable_fallback() (1/4)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-2-dacdf5402be8@google.com
+      - 2b15b9f066f2 "mm: rejig pageblock mask definitions (2/4)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-3-dacdf5402be8@google.com
+      - 1ed23e4f606e "mm/page_alloc: remove ifdefs from pindex helpers (3/4)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-4-dacdf5402be8@google.com
+    - 93d147fd0a7d "mm/page_alloc: drop a misleading __always_inline"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/all/20260517-b4-drop-always-inline-v1-1-97b90930e8b8@google.com/
+      - Link: https://lore.kernel.org/all/016c8bef-57ef-44ef-bf60-86dbfd368dcd@kernel.org/
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

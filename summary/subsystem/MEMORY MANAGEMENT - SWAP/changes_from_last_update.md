@@ -1,24 +1,88 @@
-- baseline: v7.1-rc1 -> v7.1-rc3
+- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+- mm-unstable: 8 -> 6 commits
+  - series: 1 (4) -> 0 (0)
+    - no role, nobody: 2 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - reviewer, maintainer: 2 -> 0 commits
+    - maintainer, nobody: 1 -> 2 commits
   - new commits
-    - e4fa38488dc0 "mm, swap: avoid leaving unused extend table after alloc race"
+    - c5f78c333fcf "mm-swap-avoid-leaving-unused-extend-table-after-alloc-race-v2"
       - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260515-swap-extend-table-fix-v2-1-833d72ad53e5@tencent.com
+  - changed commits
+    - 209743df95c1 "mm, swap: avoid leaving unused extend table after alloc race"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260513-swap-extend-table-fix-v1-1-a71dea851fb3@tencent.com
+- mm-new: 1 -> 16 commits
+  - series: 0 (0) -> 2 (15)
+    - no role, nobody: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 4 commits
+    - maintainer, nobody: 1 -> 4 commits
+    - maintainer, maintainer: 0 -> 7 commits
+  - new commits
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - 76d88156e79f "mm, swap: simplify swap cache allocation helper (0/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-0-88ae43e064c7@tencent.com
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-1-88ae43e064c7@tencent.com
+      - f1cebe4e682a "mm, swap: move common swap cache operations into standalone helpers (1/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-2-88ae43e064c7@tencent.com
+      - e07981e3195e "mm, swap: add support for stable large allocation in swap cache directly (3/12)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-4-88ae43e064c7@tencent.com
+      - 84e2ede62dc4 "mm, swap: unify large folio allocation (4/12)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-5-88ae43e064c7@tencent.com
+      - 832f2ff036ed "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers (5/12)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
+      - 76ac54cc9e15 "mm, swap: support flexible batch freeing of slots in different memcgs (6/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-7-88ae43e064c7@tencent.com
+      - be8b84f33993 "mm, swap: delay and unify memcg lookup and charging for swapin (7/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
+      - 0913707b8147 "mm, swap: consolidate cluster allocation helpers (8/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-9-88ae43e064c7@tencent.com
+      - dc1675a14ba7 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
+      - 783643acd9c5 "mm/memcg: remove no longer used swap cgroup array (10/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
+      - a0c9f31136cf "mm, swap: merge zeromap into swap table (11/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-12-88ae43e064c7@tencent.com
+    - 83908ea161ff "mm-swap-merge-zeromap-into-swap-table-fix"
+      - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
+      - 4e38f3ba9ae5 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device (0/8)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
+        - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
+      - 807203894173 "mm/swap: remove redundant swap device reference in alloc/free (1/8)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
+      - c88aa7e6957c "mm/swap, PM: hibernate: atomically replace hibernation pin (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
+      - a277a07d19bf "mm-swap-pm-hibernate-atomically-replace-hibernation-pin-checkpatch-fixes (3/8)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-new
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,48 +1,45 @@
-- baseline: v7.1-rc1 -> v7.1-rc3
+- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 7 commits
-  - series: 0 (2) -> 0 (7)
-    - no role, no role : 2 -> 7 commits
+- mm-unstable: 7 -> 7 commits (no change)
+  - series: 0 (7) -> 0 (7) (no change)
+    - no role, no role : 7 -> 7 commits (no change)
   - changed commits
     - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
-      - 53c36735a60e "mm/bootmem_info: drop initialization of page->lru (1/8)"
+      - eab0bc535934 "mm/bootmem_info: drop initialization of page->lru (1/8)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-2-3fb0be6fc688@kernel.org
-      - 5f4ce50c687d "mm/bootmem_info: stop using PG_private (2/8)"
+      - 9e7e0e712fdd "mm/bootmem_info: stop using PG_private (2/8)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-3-3fb0be6fc688@kernel.org
-      - 34621bed3967 "mm/bootmem_info: remove call to kmemleak_free_part_phys() (3/8)"
+      - 0904449ca939 "mm/bootmem_info: remove call to kmemleak_free_part_phys() (3/8)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-4-3fb0be6fc688@kernel.org
-      - e8c687fd961f "mm/bootmem_info: stop marking the pgdat as NODE_INFO (4/8)"
+      - f8f91df8d33c "mm/bootmem_info: stop marking the pgdat as NODE_INFO (4/8)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-5-3fb0be6fc688@kernel.org
-      - 0facbb0d8c6c "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO (5/8)"
+      - 9a3f716372f8 "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO (5/8)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-6-3fb0be6fc688@kernel.org
-- mm-new: 5 -> 0 commits
-  - series: 0 (5) -> 0 (0)
-    - no role, no role : 5 -> 0 commits
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
+      - 2a7a954494a0 "mm: introduce for_each_free_list() (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
+        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
+        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

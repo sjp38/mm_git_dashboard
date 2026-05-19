@@ -1,13 +1,13 @@
-- baseline: v7.1-rc1 -> v7.1-rc3
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - 82d1f01292d3 "vmalloc: fix buffer overflow in vrealloc_node_align()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260420114805.3572606-2-elver@google.com
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 750374a1d2af "mm/vmalloc: do not trigger BUG() on BH disabled context"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260515153009.2296191-1-urezki@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)

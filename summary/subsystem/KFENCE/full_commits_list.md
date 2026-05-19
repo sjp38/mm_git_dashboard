@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-      - 4f94b3313538 "mm/kfence: use special gfp_t format specifier" (1/3)
+      - 07d602b099dd "mm/kfence: use special gfp_t format specifier" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260326-gfp64-v2-3-d916021cecdf@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
@@ -15,6 +15,6 @@
   - author/reviewer role stat
     - maintainer, nobody: 1 commits
   - full commits list
-    - 8a9da0232007 "kfence: fix KASAN HW tags bypass via runtime sample_interval change"
+    - 277b0171bc8c "kfence: fix KASAN HW tags bypass via runtime sample_interval change"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260507095237.741017-1-glider@google.com

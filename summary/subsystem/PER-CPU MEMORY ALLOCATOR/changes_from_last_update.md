@@ -1,22 +1,32 @@
-- baseline: v7.1-rc1 -> v7.1-rc3
+- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 1 commits
+    - no role, nobody: 0 -> 1 commits
     - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - e392ef72a530 "mm/percpu-internal.h: optimise pcpu_chunk struct to save memory"
+    - 19666c222c80 "mm/percpu-internal.h: optimise pcpu_chunk struct to save memory"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Dennis Zhou <dennis@kernel.org>"
-      - dropped "Cc: Dennis Zhou <dennis@kernel.org>"
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260511070309.44044-1-zenghongling@kylinos.cn
+    - 4b09ce51dd74 "percpu: introduce struct pcpu_region"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - added "Link: https://lore.kernel.org/20260513085117.1024175-3-joonwonkang@google.com"
+      - dropped "Link: https://lore.kernel.org/20260510072149.1279887-3-joonwonkang@google.com"
+      - dropped "Cc: <dodam@google.com>"
+      - dropped "Cc: Christoph Lameter <cl@linux.com>"
+      - Link: https://lore.kernel.org/all/aegQgyf3KuIZMK9x@palisades.local/
+      - Link: https://lore.kernel.org/20260513085117.1024175-3-joonwonkang@google.com
+- mm-new: 2 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
