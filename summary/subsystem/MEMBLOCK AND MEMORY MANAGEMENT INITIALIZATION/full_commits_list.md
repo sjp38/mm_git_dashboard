@@ -1,41 +1,38 @@
-- baseline: v7.1-rc3
+- baseline: v7.1-rc4-93-g27fa82620cbaa
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 7 total, 0 (7) series, 0 non-series commits
+- mm-unstable: 8 total, 1 (8) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 7 commits
+    - no role, no role : 8 commits
   - full commits list
-      - b5eba23519b4 "mm/mm_init: fix pageblock migratetype for ZONE_DEVICE compound pages" (4/6)
+      - 84eac4e30ee4 "mm/mm_init: fix pageblock migratetype for ZONE_DEVICE compound pages" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260428081855.1249045-6-songmuchun@bytedance.com
-      - a07e82d83c1e "mm/mm_init: fix uninitialized struct pages for ZONE_DEVICE" (5/6)
+      - 18cda16e0846 "mm/mm_init: fix uninitialized struct pages for ZONE_DEVICE" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260428081855.1249045-7-songmuchun@bytedance.com
-      - eab0bc535934 "mm/bootmem_info: drop initialization of page->lru" (1/8)
+      - 89f26b3a66dc "mm/bootmem_info: drop initialization of page->lru" (1/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-2-3fb0be6fc688@kernel.org
-      - 9e7e0e712fdd "mm/bootmem_info: stop using PG_private" (2/8)
+      - 309aeac21e5a "mm/bootmem_info: stop using PG_private" (2/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-3-3fb0be6fc688@kernel.org
-      - 0904449ca939 "mm/bootmem_info: remove call to kmemleak_free_part_phys()" (3/8)
+      - 2dea3f7e0162 "mm/bootmem_info: remove call to kmemleak_free_part_phys()" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-4-3fb0be6fc688@kernel.org
-      - f8f91df8d33c "mm/bootmem_info: stop marking the pgdat as NODE_INFO" (4/8)
+      - b650341a6864 "mm/bootmem_info: stop marking the pgdat as NODE_INFO" (4/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-5-3fb0be6fc688@kernel.org
-      - 9a3f716372f8 "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO" (5/8)
+      - 327214acc1a4 "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO" (5/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-6-3fb0be6fc688@kernel.org
-- mm-new: 1 total, 1 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
     - series "mm: misc cleanups from __GFP_UNMAPPED series". (4 commits)
-      - 2a7a954494a0 "mm: introduce for_each_free_list()" (0/4)
+      - 049c111acc4e "mm: introduce for_each_free_list()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
         - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

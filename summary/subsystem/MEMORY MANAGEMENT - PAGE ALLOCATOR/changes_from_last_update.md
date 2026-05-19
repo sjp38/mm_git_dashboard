@@ -1,41 +1,62 @@
-- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
+- mm-hotfixes-stable: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 6a288a4ddb4a "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 66ed6eb45ddd "Revert "mm: introduce a new page type for page pool in page type""
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260515034701.17027-1-byungchul@sk.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 17 -> 17 commits (no change)
-  - series: 2 (11) -> 2 (11) (no change)
+- mm-unstable: 17 -> 22 commits
+  - series: 2 (11) -> 2 (14)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 14 -> 14 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 4 commits
-  - series: 0 (0) -> 0 (3)
+    - reviewer, nobody: 0 -> 1 commits
     - reviewer, no role : 0 -> 3 commits
-    - reviewer, reviewer: 0 -> 1 commits
+    - reviewer, reviewer: 1 -> 2 commits
   - new commits
+    - e9add7501ad3 "mm/page_alloc: document that alloc_pages_nolock() uses RCU"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260519-nolock-rcu-comment-v1-1-4a630c8794e5@google.com
+  - changed commits
+    - c0e63eed09d2 "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
     - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
-      - 49e4f7c73752 "mm/page_alloc: don't overload migratetype in find_suitable_fallback() (1/4)"
+      - a7660584dffc "mm/page_alloc: don't overload migratetype in find_suitable_fallback() (1/4)"
         - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-2-dacdf5402be8@google.com
-      - 2b15b9f066f2 "mm: rejig pageblock mask definitions (2/4)"
+      - 378bacda1406 "mm: rejig pageblock mask definitions (2/4)"
         - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-3-dacdf5402be8@google.com
-      - 1ed23e4f606e "mm/page_alloc: remove ifdefs from pindex helpers (3/4)"
+      - 36131712995b "mm/page_alloc: remove ifdefs from pindex helpers (3/4)"
         - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-4-dacdf5402be8@google.com
-    - 93d147fd0a7d "mm/page_alloc: drop a misleading __always_inline"
+    - e4a7843dd964 "mm/page_alloc: drop a misleading __always_inline"
       - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
       - Link: https://lore.kernel.org/all/20260517-b4-drop-always-inline-v1-1-97b90930e8b8@google.com/
       - Link: https://lore.kernel.org/all/016c8bef-57ef-44ef-bf60-86dbfd368dcd@kernel.org/
+- mm-new: 4 -> 1 commits
+  - series: 0 (3) -> 0 (0)
+    - no role, reviewer: 0 -> 1 commits
+    - reviewer, no role : 3 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+  - new commits
+    - a6be932d89e8 "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260518163736.173910-1-d@ilvokhin.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

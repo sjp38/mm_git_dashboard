@@ -1,126 +1,35 @@
-- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
+- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 38 -> 39 commits
-  - series: 3 (30) -> 3 (31)
+- mm-unstable: 39 -> 39 commits (no change)
+  - series: 3 (31) -> 3 (31) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 3 -> 5 commits
-    - reviewer, nobody: 8 -> 5 commits
-    - reviewer, no role : 1 -> 2 commits
-    - reviewer, reviewer: 11 -> 12 commits
+    - no role, maintainer: 5 -> 5 commits (no change)
+    - reviewer, nobody: 5 -> 5 commits (no change)
+    - reviewer, no role : 2 -> 2 commits (no change)
+    - reviewer, reviewer: 12 -> 12 commits (no change)
     - reviewer, maintainer: 6 -> 6 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - series "khugepaged: mTHP support", v17. (14)
-      - b5bb3bbd3db0 "mm/khugepaged: generalize collapse_huge_page for mTHP collapse (5/14)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
-        - dropped "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - dropped "Cc: Usama Arif <usama.arif@linux.dev>"
-        - Link: https://lore.kernel.org/20260511185817.686831-7-npache@redhat.com
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14)
-      - cb648590717e "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com"
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/all/20260418024429.4055056-1-ziy@nvidia.com/ [4]"
-        - dropped "Link: https://lore.kernel.org/20260429152924.727124-2-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/all/20260323190644.1714379-1-ziy@nvidia.com/ [1]"
-        - dropped "Link: https://lore.kernel.org/20260429152924.727124-1-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/all/20260327014255.2058916-1-ziy@nvidia.com/ [2]"
-        - dropped "Link: https://lore.kernel.org/all/20260424024915.28758-1-ziy@nvidia.com/ [5]"
-        - dropped "Link: https://lore.kernel.org/all/20260413192030.3275825-1-ziy@nvidia.com/ [3]"
-        - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
-        - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
-      - 77ae5ace40ba "mm/khugepaged: add folio dirty check after try_to_unmap() (1/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-3-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429152924.727124-3-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-3-ziy@nvidia.com
-      - 6da4fb78c192 "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled() (2/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-4-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429152924.727124-4-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-4-ziy@nvidia.com
-      - 1699e5e67d25 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled() (3/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-5-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429152924.727124-5-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-5-ziy@nvidia.com
-      - bf5340560db8 "mm: fs: remove filemap_nr_thps*() functions and their users (5/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429153538.727855-2-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
-      - 63d24491a79d "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS (7/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-9-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429153538.727855-4-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-9-ziy@nvidia.com
-      - 84662d2bd8c8 "mm/truncate: use folio_split() in truncate_inode_partial_folio() (8/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429153538.727855-5-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
-      - 4bfa59d6de5d "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged (10/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-12-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429153538.727855-7-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-12-ziy@nvidia.com
-      - c9c406975e3e "mm/khugepaged: enable clean pagecache folio collapse for writable files (12/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-14-ziy@nvidia.com"
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20260429153538.727855-9-ziy@nvidia.com"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260517135416.1434539-14-ziy@nvidia.com
-      - dadb0bf3705b "selftests/mm: add writable-file collapse tests for khugepaged (13/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-15-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429153538.727855-10-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-15-ziy@nvidia.com
-    - series "make MM selftests more CI friendly", v4. (55)
-      - c44cad4f5c3c "selftests/mm: khugepaged: use kselftest framework (13/55)"
-        - Authored by no role player, reviewed by nobody
-        - added "[ziy@nvidia.com: update for "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6]"
-        - added "https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com m"
-        - Link: https://lore.kernel.org/20260511162840.375890-15-rppt@kernel.org
-    - 0ce7e96428cc "selftests/mm: check file initialization writes in split_huge_page_test"
-      - Authored by no role player, reviewed by no role player
-      - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
-      - Link: https://lore.kernel.org/20260512074924.27721-1-agarwal.vineet2006@gmail.com
-    - ff114e6192c0 "mm/khugepaged: fix inconsistent MMF_VM_HUGEPAGE flag due to allocation failure order"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260511025408.54035-1-ye.liu@linux.dev
-    - 85e46d803d88 "mm/khugepaged: avoid underflow in madvise_collapse for sub-PMD MADV_COLLAPSE"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260513055428.1664898-1-chenwandun@lixiang.com
-  - dropped commits
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
-      - 13cb57cd5af3 "selftests/mm: khugepaged perror fixup (12/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/3BFC4C26-1C97-40AA-B4B7-7472B9768565@nvidia.com
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (2)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 2 -> 0 commits
-    - reviewer, maintainer: 0 -> 1 commits
   - new commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 8b92b82513d6 "mm/huge_memory: move THP gfp limit helper into header (2/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-3-88ae43e064c7@tencent.com
-      - 832f2ff036ed "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers (5/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
+    - series "khugepaged: mTHP support", v17. (14)
+      - e96a3bc6085d "mm/khugepaged: introduce mTHP collapse support (10/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260511185817.686831-12-npache@redhat.com
+  - dropped commits
+    - series "khugepaged: mTHP support", v17. (14)
+      - 4a971b88f6f6 "mm/khugepaged: Introduce mTHP collapse support (10/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260511185817.686831-12-npache@redhat.com
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

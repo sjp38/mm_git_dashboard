@@ -1,90 +1,63 @@
-- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
-- mm-hotfixes-stable: 3 -> 3 commits (no change)
+- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
+- mm-hotfixes-stable: 3 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 6a288a4ddb4a "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
+    - c0c6ccd9828c "mm: fix __vm_normal_page() to handle missing support for pmd_special()/pud_special()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260430-pmd_special-v1-1-dbcbcfd72c20@kernel.org
+    - be3f38d05cc5 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 2 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 66ed6eb45ddd "Revert "mm: introduce a new page type for page pool in page type""
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260515034701.17027-1-byungchul@sk.com
-  - changed commits
-    - 109fa24a174f "kernel/fork: validate exit_signal in kernel_clone()"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-nonmm-unstable -> mm-hotfixes-unstable
-      - added "Cc: Tetsuo Handa <penguin-kernel@I-love.SAKURA.ne.jp>"
-      - added "Cc: Liam Howlett <liam@infradead.org>"
-      - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
-      - dropped "Cc: "Liam R. Howlett" <Liam.Howlett@oracle.com>"
-      - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
-      - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com
-      - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
-      - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 18 -> 20 commits
-  - series: 3 (10) -> 3 (10) (no change)
-    - no role, no role : 8 -> 9 commits
-    - no role, reviewer: 8 -> 8 commits (no change)
-    - no role, maintainer: 2 -> 3 commits
-  - changed commits
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14)
-      - 305ec0e18b74 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option (4/14)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429153538.727855-1-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
-      - 32e246e08235 "powerpc/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (7/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-8-3fb0be6fc688@kernel.org
-    - 80a3a1c022df "drivers/base/memory: make memory block get/put explicit"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
-      - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
-    - cb509c8beb1f "mm/mmu_notifier: fix a begin vs. start typo in the invalidate range comment"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260513163546.1176742-1-seanjc@google.com
-- mm-new: 2 -> 6 commits
-  - series: 0 (1) -> 1 (6)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
+- mm-unstable: 20 -> 22 commits
+  - series: 3 (10) -> 4 (12)
+    - no role, no role : 9 -> 9 commits (no change)
+    - no role, reviewer: 8 -> 9 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, no role : 0 -> 1 commits
-    - maintainer, nobody: 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 3 commits
-  - new commits
+  - changed commits
+    - c0e63eed09d2 "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
+    - 92b33cf336b5 "mm/mmu_notifier: fix a begin vs. start typo in the invalidate range comment"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260513163546.1176742-1-seanjc@google.com
     - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
-      - 2a7a954494a0 "mm: introduce for_each_free_list() (0/4)"
+      - 049c111acc4e "mm: introduce for_each_free_list() (0/4)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
         - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
-      - 49e4f7c73752 "mm/page_alloc: don't overload migratetype in find_suitable_fallback() (1/4)"
+      - a7660584dffc "mm/page_alloc: don't overload migratetype in find_suitable_fallback() (1/4)"
         - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-2-dacdf5402be8@google.com
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 84e2ede62dc4 "mm, swap: unify large folio allocation (4/12)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-5-88ae43e064c7@tencent.com
-      - be8b84f33993 "mm, swap: delay and unify memcg lookup and charging for swapin (7/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - 783643acd9c5 "mm/memcg: remove no longer used swap cgroup array (10/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
-      - a0c9f31136cf "mm, swap: merge zeromap into swap table (11/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-12-88ae43e064c7@tencent.com
+- mm-new: 6 -> 4 commits
+  - series: 1 (6) -> 0 (3)
+    - no role, no role : 1 -> 0 commits
+    - reviewer, no role : 1 -> 0 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 3 -> 3 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 2 -> 1 commits
+- mm-nonmm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)

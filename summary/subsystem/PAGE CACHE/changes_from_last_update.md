@@ -1,66 +1,24 @@
-- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
+- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 9 commits
-  - series: 2 (6) -> 3 (7)
-    - no role, nobody: 1 -> 2 commits
-    - no role, reviewer: 3 -> 4 commits
+- mm-unstable: 9 -> 10 commits
+  - series: 3 (7) -> 3 (7) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, reviewer: 4 -> 5 commits
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14)
-      - cb648590717e "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com"
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/all/20260327014255.2058916-1-ziy@nvidia.com/ [2]"
-        - dropped "Link: https://lore.kernel.org/20260429152924.727124-1-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429152924.727124-2-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/all/20260413192030.3275825-1-ziy@nvidia.com/ [3]"
-        - dropped "Link: https://lore.kernel.org/all/20260424024915.28758-1-ziy@nvidia.com/ [5]"
-        - dropped "Link: https://lore.kernel.org/all/20260418024429.4055056-1-ziy@nvidia.com/ [4]"
-        - dropped "Link: https://lore.kernel.org/all/20260323190644.1714379-1-ziy@nvidia.com/ [1]"
-        - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
-        - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
-      - bf5340560db8 "mm: fs: remove filemap_nr_thps*() functions and their users (5/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429153538.727855-2-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
-      - 84662d2bd8c8 "mm/truncate: use folio_split() in truncate_inode_partial_folio() (8/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429153538.727855-5-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
-    - series "mm: document read_pages and simplify usage". (2)
-      - 083dc27e5eae "mm/readahead: add kerneldoc for read_pages (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/all/20260501061146.6e61392d125cf1847d7cc181@linux-foundation.org/ [1]
-        - Link: https://lore.kernel.org/20260512203154.754075-2-fmayle@google.com
-      - 09b8043eba4c "mm/readahead: simplify page_cache_ra_unbounded loop counter reset (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260512203154.754075-3-fmayle@google.com
-    - 63a3638831cb "mm/readahead: no PG_readahead on EOF"
+    - 743a77f0769d "mm/filemap: fix page_cache_prev_miss() when no hole is found"
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-new -> mm-unstable
-      - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3921-L3939 [2]
-      - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3721-L3722 [3]
-      - Link: https://lore.kernel.org/20260508181237.670645-1-fmayle@google.com
-  - dropped commits
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
-      - 8231c8f01d9d "fix mapping_pmd_folio_support() to represent its exact meaning (1/14)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/73AB53AB-6EAA-4077-AFCA-90929F20D17A@nvidia.com
-- mm-new: 4 -> 1 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
-    - no role, reviewer: 2 -> 1 commits
+      - Link: https://lore.kernel.org/20260512-prev_miss_fix-v2-1-4af8e5c1ae62@columbia.edu
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

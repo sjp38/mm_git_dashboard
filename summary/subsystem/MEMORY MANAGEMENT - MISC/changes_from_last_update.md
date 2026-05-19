@@ -1,86 +1,31 @@
-- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
-- mm-hotfixes-stable: 2 -> 2 commits (no change)
+- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
+- mm-hotfixes-stable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 0 commits
+  - dropped commits
+    - 3432cbb291aa "selftests/mm: run_vmtests.sh: fix destructive tests invocation"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/214fd9e4-5398-4c26-859e-c982c2e277c3@redhat.com
+    - be3f38d05cc5 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 87 -> 87 commits (no change)
   - series: 3 (77) -> 3 (77) (no change)
-    - no role, nobody: 35 -> 34 commits
-    - no role, no role : 30 -> 31 commits
-    - no role, reviewer: 2 -> 3 commits
+    - no role, nobody: 34 -> 34 commits (no change)
+    - no role, no role : 31 -> 31 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 5 -> 4 commits
+    - reviewer, nobody: 4 -> 4 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - maintainer, nobody: 11 -> 11 commits (no change)
-  - changed commits
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14)
-      - 4bfa59d6de5d "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged (10/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-12-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429153538.727855-7-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-12-ziy@nvidia.com
-      - 830242b4b504 "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions (11/14)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-13-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429153538.727855-8-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-13-ziy@nvidia.com
-      - dadb0bf3705b "selftests/mm: add writable-file collapse tests for khugepaged (13/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260517135416.1434539-15-ziy@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260429153538.727855-10-ziy@nvidia.com"
-        - Link: https://lore.kernel.org/20260517135416.1434539-15-ziy@nvidia.com
-    - series "make MM selftests more CI friendly", v4. (55)
-      - c44cad4f5c3c "selftests/mm: khugepaged: use kselftest framework (13/55)"
-        - Authored by no role player, reviewed by nobody
-        - added "[ziy@nvidia.com: update for "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6]"
-        - added "https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com m"
-        - Link: https://lore.kernel.org/20260511162840.375890-15-rppt@kernel.org
-    - 0ce7e96428cc "selftests/mm: check file initialization writes in split_huge_page_test"
-      - Authored by no role player, reviewed by no role player
-      - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
-      - Link: https://lore.kernel.org/20260512074924.27721-1-agarwal.vineet2006@gmail.com
-    - 55690cd20e4d "selftests/mm: ksm-functional-tests: fix partial write handling"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260504081638.683223-1-agarwal.vineet2006@gmail.com
-    - ffe64def0071 "selftests/mm: fix incorrect mmap() error handling with NULL instead of MAP_FAILED"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260513025223.592766-1-lihongfu@kylinos.cn
-  - dropped commits
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v5. (14)
-      - 13cb57cd5af3 "selftests/mm: khugepaged perror fixup (12/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/3BFC4C26-1C97-40AA-B4B7-7472B9768565@nvidia.com
-      - 032b77fde77d "fix run_vmtests.sh to only print SKIP when khugepaged is selected (13/14)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/E44ED51F-D250-442D-A89F-B90A671D53ED@nvidia.com
-- mm-new: 2 -> 5 commits
-  - series: 0 (0) -> 0 (4)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, nobody: 0 -> 4 commits
-  - new commits
-    - e1b6ed13bde2 "docs/mm: fix typo in process_addrs.rst"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260517103640.45444-1-ssh1326@icloud.com
-    - series "mm/damon: introduce data attributes monitoring". (28)
-      - 148343437132 "Docs/mm/damon/design: document data attributes monitoring (19/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260518234119.97569-21-sj@kernel.org
-      - ca691fcd7579 "Docs/admin-guide/mm/damon/usage: document data attributes monitoring (20/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260518234119.97569-22-sj@kernel.org
-      - 1f03d0611c65 "Docs/mm/damon/design: update for memcg damon filter (26/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260518234119.97569-28-sj@kernel.org
-      - 1b61daefed89 "Docs/admin-guide/mm/damon/usage: update for memcg damon filter (27/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260518234119.97569-29-sj@kernel.org
+- mm-new: 5 -> 5 commits (no change)
+  - series: 0 (4) -> 0 (4) (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 4 -> 4 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

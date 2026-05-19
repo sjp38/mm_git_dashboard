@@ -1,12 +1,18 @@
-- baseline: v7.1-rc3
+- baseline: v7.1-rc4-93-g27fa82620cbaa
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - 21499ae1b175 "userfaultfd: snapshot VMA state across UFFDIO_COPY retry"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260519052516.3315196-1-rppt@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 2807a3bf5b57 "userfaultfd: ensure mremap_userfaultfd_fail() releases mmap_changing"
+    - c21e08f505ac "userfaultfd: ensure mremap_userfaultfd_fail() releases mmap_changing"
       - Authored by no role player, reviewed by no role player
       - Link: https://sashiko.dev/#/patchset/20260430113512.115938-1-rppt@kernel.org
       - Link: https://lore.kernel.org/20260513081416.495963-1-rppt@kernel.org

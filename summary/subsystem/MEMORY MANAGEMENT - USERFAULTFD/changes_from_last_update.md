@@ -1,22 +1,20 @@
-- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
+- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 21499ae1b175 "userfaultfd: snapshot VMA state across UFFDIO_COPY retry"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260519052516.3315196-1-rppt@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 2807a3bf5b57 "userfaultfd: ensure mremap_userfaultfd_fail() releases mmap_changing"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://sashiko.dev/#/patchset/20260430113512.115938-1-rppt@kernel.org
-      - Link: https://lore.kernel.org/20260513081416.495963-1-rppt@kernel.org
-- mm-new: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

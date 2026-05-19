@@ -1,4 +1,4 @@
-- baseline: v7.1-rc3
+- baseline: v7.1-rc4-93-g27fa82620cbaa
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,22 +7,22 @@
     - no role, nobody: 4 commits
     - no role, no role : 2 commits
   - full commits list
-    - 66f689e9cda7 "mm/gup: cleanup pgtable entry accessors"
+    - 548b4a8b24e2 "mm/gup: cleanup pgtable entry accessors"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260421051754.1691221-1-agordeev@linux.ibm.com
-    - edd7db9e25e2 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - a9f40ae16c33 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
-      - e7bfd9bff7f5 "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
+      - 485d1a76d54b "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-25-rppt@kernel.org
-      - 76ad29146bfa "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
+      - 95aee83f8d72 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-26-rppt@kernel.org
-      - 60aef7e618dc "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
+      - 886fd31761b3 "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-34-rppt@kernel.org
-      - 878618cebd31 "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
+      - e77f284dda89 "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-35-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

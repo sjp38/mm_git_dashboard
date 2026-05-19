@@ -1,4 +1,4 @@
-- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
+- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -8,13 +8,13 @@
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 2 commits
   - new commits
-    - fce292aa31d9 "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
+    - 3359621fec30 "mm/memory-failure: use zone_pcp_disable() for poison handling"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260515020144.164941-1-ye.liu@linux.dev
+      - Link: https://lore.kernel.org/20260514085754.84097-1-kaitao.cheng@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

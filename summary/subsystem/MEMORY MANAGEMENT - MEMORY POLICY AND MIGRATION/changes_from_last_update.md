@@ -1,10 +1,20 @@
-- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 63451de16e0a "mm/migrate_device: fix spinlock leak in migrate_vma_insert_huge_pmd_page"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260425133537.17463-1-nueralspacetech@gmail.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - ac10a0d7b73c "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Huang Ying <ying.huang@linux.alibaba.com>"
+      - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
+      - Link: https://lore.kernel.org/20260501115122.23288-1-nueralspacetech@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)

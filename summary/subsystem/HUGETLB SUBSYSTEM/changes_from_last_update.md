@@ -1,28 +1,25 @@
-- baseline: v7.1-rc3 -> v7.1-rc3 (no change)
+- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 4 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 1 commits
-  - dropped commits
-    - 2bb8fe16f7bf "mm/hugetlb: avoid false positive lockdep assertion"
+    - no role, nobody: 1 -> 2 commits
+    - no role, maintainer: 1 -> 2 commits
+  - new commits
+    - f049a97c1e40 "mm/hugetlb: avoid false positive lockdep assertion"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260513085658.45264-1-ljs@kernel.org
+    - abd2c27f2cd9 "mm-hugetlb-avoid-false-positive-lockdep-assertion-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/agWZsPGYid08uU6O@lucifer
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 4 commits
+- mm-unstable: 4 -> 4 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 2 commits
-  - changed commits
-    - 4d33b7a0c04b "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
-- mm-new: 1 -> 0 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
