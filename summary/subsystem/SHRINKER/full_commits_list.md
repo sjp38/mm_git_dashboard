@@ -6,10 +6,10 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - 167fbb516b49 "mm/shrinker: avoid out-of-bounds read in set_shrinker_bit()"
+    - fb117523ebb4 "mm/shrinker: avoid out-of-bounds read in set_shrinker_bit()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260510183700.102475-1-devnexen@gmail.com
-    - b4a5b96dc4fb "mm/shrinker: simplify shrinker_memcg_alloc() using guard()"
+    - 074c34b6014a "mm/shrinker: simplify shrinker_memcg_alloc() using guard()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260513075214.2655710-1-18810879172@163.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

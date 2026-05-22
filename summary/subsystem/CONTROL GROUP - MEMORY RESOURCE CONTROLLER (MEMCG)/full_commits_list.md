@@ -1,53 +1,54 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
-    - maintainer, no role : 1 commits
+    - maintainer, no role : 2 commits
   - full commits list
-    - 8856db215328 "mm: memcontrol: propagate NMI slab stats to memcg vmstats"
+    - 5b5335a1b7cb "mm: memcontrol: propagate NMI slab stats to memcg vmstats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260518082830.599102-1-alex@ghiti.fr
-    - 0704985ba4fa "memcg: cache obj_stock by memcg, not by objcg pointer"
+    - 83cf612e39fc "memcg: cache obj_stock by memcg, not by objcg pointer"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260518222827.110696-1-shakeel.butt@linux.dev
       - Link: https://lore.kernel.org/19693be6-7132-446e-b3fc-b7e9f56e5949@linux.dev/ [1]
+    - 40c244753110 "memcg: use round-robin victim selection in refill_stock"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 4 total, 1 (3) series, 1 non-series commits
+- mm-unstable: 8 total, 1 (7) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
     - no role, maintainer: 1 commits
-  - full commits list
-      - 87a3ee6c46b5 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
-    - f0ba8e990a75 "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
-    - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (2 commits)
-      - 29b902b0746b "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
-        - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
-      - 702c6e008e7b "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
-- mm-new: 4 total, 0 (4) series, 0 non-series commits
-  - author/reviewer role stat
     - reviewer, maintainer: 2 commits
     - maintainer, maintainer: 2 commits
   - full commits list
-      - 52f211a2de44 "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
+      - fc0fede878cf "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
+    - 50985f6d199b "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
+    - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (2 commits)
+      - f22a04fee849 "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
+        - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
+      - 4f67fb9b93d4 "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
+      - 5b7e82b3a839 "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - 1ce80c5afb02 "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
+      - b75e023fb3b9 "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - 759e429fbc68 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
+      - 7364cb55c2d8 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-      - a13f04e82c72 "mm/memcg: remove no longer used swap cgroup array" (11/12)
+      - cbd7445dda3c "mm/memcg: remove no longer used swap cgroup array" (11/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

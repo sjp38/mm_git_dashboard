@@ -1,31 +1,112 @@
-- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
-- mm-hotfixes-stable: 2 -> 0 commits
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 0 commits
-  - dropped commits
-    - 3432cbb291aa "selftests/mm: run_vmtests.sh: fix destructive tests invocation"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/214fd9e4-5398-4c26-859e-c982c2e277c3@redhat.com
-    - be3f38d05cc5 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 6c796de51b73 "mm/cma_debug: fix invalid accesses for inactive CMA areas"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260520061025.3971821-1-songmuchun@bytedance.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 87 -> 87 commits (no change)
-  - series: 3 (77) -> 3 (77) (no change)
+- mm-unstable: 87 -> 95 commits
+  - series: 3 (77) -> 3 (83)
     - no role, nobody: 34 -> 34 commits (no change)
     - no role, no role : 31 -> 31 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, reviewer: 3 -> 4 commits
+    - no role, maintainer: 2 -> 5 commits
     - reviewer, nobody: 4 -> 4 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 11 -> 11 commits (no change)
-- mm-new: 5 -> 5 commits (no change)
-  - series: 0 (4) -> 0 (4) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 4 -> 4 commits (no change)
+    - maintainer, nobody: 11 -> 15 commits
+  - new commits
+    - 29f308cfcd34 "Documentation/admin-guide/mm: fix typos in transhuge.rst"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260520051751.74396-1-leon.hwang@linux.dev
+    - series "mm/damon: documentation and comment fixes". (3)
+      - a721e0bb4e98 "Docs/mm/damon/design: fix three typos (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260520012104.93602-3-sj@kernel.org
+      - 686099898049 "Docs/{ABI,admin-guide}/damon: fix various typoes (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260520012104.93602-4-sj@kernel.org
+  - changed commits
+    - 834233e34077 "docs/mm: fix typo in process_addrs.rst"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260517103640.45444-1-ssh1326@icloud.com
+    - series "mm/damon: introduce data attributes monitoring". (28)
+      - 7df1094abd9c "Docs/mm/damon/design: document data attributes monitoring (19/28)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260518234119.97569-21-sj@kernel.org
+      - c1c9008d1a7f "Docs/admin-guide/mm/damon/usage: document data attributes monitoring (20/28)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260518234119.97569-22-sj@kernel.org
+      - 238667f0a054 "Docs/mm/damon/design: update for memcg damon filter (26/28)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260518234119.97569-28-sj@kernel.org
+      - 6d9e89dd16aa "Docs/admin-guide/mm/damon/usage: update for memcg damon filter (27/28)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260518234119.97569-29-sj@kernel.org
+- mm-new: 5 -> 15 commits
+  - series: 0 (4) -> 1 (13)
+    - no role, nobody: 0 -> 5 commits
+    - no role, no role : 0 -> 7 commits
+    - no role, reviewer: 0 -> 3 commits
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, nobody: 4 -> 0 commits
+  - new commits
+    - series "selftests/mm: fix failures and robustness improvements", v7. (13)
+      - 66994e25feae "selftests/mm: restore default nr_hugepages value via exit trap in charge_reserved_hugetlb.sh (0/13)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/cover.1779296493.git.sayalip@linux.ibm.com
+        - Link: https://lore.kernel.org/5b8fbb29cd6ceffe6752e0af104f60cec072aa10.1779296493.git.sayalip@linux.ibm.com
+      - df67fb19a5be "selftests/mm: fix hugetlb pathname construction in charge_reserved_hugetlb.sh (1/13)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/04b6b49e4a2acf46319f627caf82b09e6dc1ad7f.1779296493.git.sayalip@linux.ibm.com
+      - 828bde4ca1b5 "selftests/mm: restore default nr_hugepages value via exit trap in hugetlb_reparenting_test.sh (2/13)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/29db637c3c6ba6c168f6b33f59f059a0b39c35c8.1779296493.git.sayalip@linux.ibm.com
+      - 5c028cd99d88 "selftests/mm: fix hugetlb pathname construction in hugetlb_reparenting_test.sh (3/13)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/837ce751965c93f74c95d89587debf1e93281364.1779296493.git.sayalip@linux.ibm.com
+      - 9d4a3acf7fc2 "selftests/mm: fix cgroup task placement and drop memory.current checks in hugetlb_reparenting_test.sh (4/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/fb57491ba83cb0a499c72922e1579b61bee514db.1779296493.git.sayalip@linux.ibm.com
+      - 67032026a36f "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test (5/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/33e1bc10753fe82d1217613d8cd496020778cf2b.1779296493.git.sayalip@linux.ibm.com
+      - 1f07737efac9 "selftests/mm: free dynamically allocated PMD-sized buffers in split_huge_page_test (6/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/060c673b376bbeeed2b1fb1d48a825e846654191.1779296493.git.sayalip@linux.ibm.com
+      - 85e4cce8ff32 "selftest/mm: register existing mapping with userfaultfd in hugetlb-mremap (7/13)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/13845da872ed174316173e8996dbb5f181994017.1779296493.git.sayalip@linux.ibm.com
+      - 6048a674ecbe "selftests/mm: ensure destination is hugetlb-backed in hugetlb-mremap (8/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/367644df45c65098f23e3945c6a80f4b8a8964a6.1779296493.git.sayalip@linux.ibm.com
+      - c27000b3cd1f "selftests/mm: skip uffd-wp-mremap if UFFD write-protect is unsupported (9/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/c3c5af76d71d5f4446f773f4de94882efc33ebe4.1779296493.git.sayalip@linux.ibm.com
+      - 9148a02be20c "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero (10/13)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/0707e9a0f1b3dd904c4a069b91db317f9c160faa.1779296493.git.sayalip@linux.ibm.com
+      - afb528c7692d "selftests/mm: use ksft_exit_skip() instead of KSFT_SKIP in uffd-stress (11/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com
+      - b5924a35b58b "selftests/mm: move hwpoison setup into run_test() and silence modprobe output for memory-failure category (12/13)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/93441f34f7ef5add47d1a130d03daa79e21b5050.1779296493.git.sayalip@linux.ibm.com
+    - b251e1569996 "selftests/mm: clarify alternate unmapping in compaction_test"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/da5e0a8d5152e54152c0d2f456aac2fac35af291.1779296493.git.sayalip@linux.ibm.com
+    - 0a8aeebce501 "selftests/mm/split_huge_page_test.c: close fd on write error"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260520020336.28914-1-richard.weiyang@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,31 +1,44 @@
-- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, no role : 0 -> 1 commits
-  - changed commits
-    - 8856db215328 "mm: memcontrol: propagate NMI slab stats to memcg vmstats"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
-      - Link: https://lore.kernel.org/20260518082830.599102-1-alex@ghiti.fr
-    - 0704985ba4fa "memcg: cache obj_stock by memcg, not by objcg pointer"
+    - maintainer, no role : 1 -> 2 commits
+  - new commits
+    - 40c244753110 "memcg: use round-robin victim selection in refill_stock"
       - Authored by a maintainer, reviewed by no role player
-      - added "Acked-by: Qi Zheng <qi.zheng@linux.dev>"
-      - Link: https://lore.kernel.org/20260518222827.110696-1-shakeel.butt@linux.dev
-      - Link: https://lore.kernel.org/19693be6-7132-446e-b3fc-b7e9f56e5949@linux.dev/ [1]
+      - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
+- mm-unstable: 4 -> 8 commits
+  - series: 1 (3) -> 1 (7)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 4 -> 4 commits (no change)
-  - series: 0 (4) -> 0 (4) (no change)
-    - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, maintainer: 2 -> 2 commits (no change)
+    - reviewer, maintainer: 0 -> 2 commits
+    - maintainer, maintainer: 0 -> 2 commits
+  - changed commits
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - 5b7e82b3a839 "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers (5/12)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
+      - b75e023fb3b9 "mm, swap: delay and unify memcg lookup and charging for swapin (7/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
+      - 7364cb55c2d8 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
+      - cbd7445dda3c "mm/memcg: remove no longer used swap cgroup array (11/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
+- mm-new: 4 -> 0 commits
+  - series: 0 (4) -> 0 (0)
+    - reviewer, maintainer: 2 -> 0 commits
+    - maintainer, maintainer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

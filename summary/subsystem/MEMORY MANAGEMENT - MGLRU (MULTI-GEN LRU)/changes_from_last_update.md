@@ -1,29 +1,31 @@
-- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 20 -> 21 commits
-  - series: 1 (15) -> 2 (16)
+- mm-unstable: 21 -> 23 commits
+  - series: 2 (16) -> 2 (18)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 14 -> 14 commits (no change)
+    - reviewer, maintainer: 0 -> 2 commits
   - changed commits
-    - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
-      - 049c111acc4e "mm: introduce for_each_free_list() (0/4)"
-        - Authored by no role player, reviewed by no role player
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - 5b7e82b3a839 "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers (5/12)"
+        - Authored by a reviewer, reviewed by a maintainer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
-        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
-- mm-new: 3 -> 2 commits
-  - series: 1 (3) -> 0 (2)
-    - no role, no role : 1 -> 0 commits
-    - reviewer, maintainer: 2 -> 2 commits (no change)
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
+      - 7364cb55c2d8 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
+- mm-new: 2 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - reviewer, maintainer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

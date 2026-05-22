@@ -1,17 +1,18 @@
-- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 4 commits
+- mm-hotfixes-unstable: 4 -> 4 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, maintainer: 1 -> 2 commits
+    - no role, nobody: 2 -> 1 commits
+    - no role, maintainer: 2 -> 3 commits
   - new commits
-    - f049a97c1e40 "mm/hugetlb: avoid false positive lockdep assertion"
+    - c08f1844825b "mm/hugetlb: restore reservation on error in hugetlb folio copy paths"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260513085658.45264-1-ljs@kernel.org
-    - abd2c27f2cd9 "mm-hugetlb-avoid-false-positive-lockdep-assertion-fix"
+      - Link: https://lore.kernel.org/20260520044912.6751-1-devnexen@gmail.com
+  - dropped commits
+    - 270157aef0d1 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/agWZsPGYid08uU6O@lucifer
+      - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 4 -> 4 commits (no change)

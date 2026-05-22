@@ -1,30 +1,32 @@
-- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 8 commits
-  - series: 0 (7) -> 1 (8)
-    - no role, no role : 7 -> 8 commits
+- mm-unstable: 8 -> 8 commits (no change)
+  - series: 1 (8) -> 1 (8) (no change)
+    - no role, no role : 8 -> 8 commits (no change)
   - changed commits
     - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
-      - 309aeac21e5a "mm/bootmem_info: stop using PG_private (2/8)"
+      - 678eae410ce4 "mm/bootmem_info: remove call to kmemleak_free_part_phys() (3/8)"
+        - Authored by no role player, reviewed by no role player
+        - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-4-3fb0be6fc688@kernel.org
+      - f60b662bd0a7 "mm/bootmem_info: stop marking the pgdat as NODE_INFO (4/8)"
         - Authored by no role player, reviewed by no role player
         - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
         - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-3-3fb0be6fc688@kernel.org
-    - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
-      - 049c111acc4e "mm: introduce for_each_free_list() (0/4)"
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-5-3fb0be6fc688@kernel.org
+      - b942078bda9b "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO (5/8)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
-        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
-- mm-new: 1 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-6-3fb0be6fc688@kernel.org
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

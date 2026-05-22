@@ -1,61 +1,48 @@
-- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
-- mm-hotfixes-stable: 3 -> 0 commits
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 6a288a4ddb4a "mm/page_alloc: fix initialization of tags of the huge zero folio with init_on_free"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260421-zerotags-v2-1-05cb1035482e@kernel.org
-    - c0c6ccd9828c "mm: fix __vm_normal_page() to handle missing support for pmd_special()/pud_special()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260430-pmd_special-v1-1-dbcbcfd72c20@kernel.org
-    - be3f38d05cc5 "mm/memory: fix spurious warning when unmapping device-private/exclusive pages"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260501065116.2057242-1-apopple@nvidia.com
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 20 -> 22 commits
-  - series: 3 (10) -> 4 (12)
+- mm-unstable: 22 -> 26 commits
+  - series: 4 (12) -> 4 (15)
     - no role, no role : 9 -> 9 commits (no change)
-    - no role, reviewer: 8 -> 9 commits
+    - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, no role : 0 -> 1 commits
+    - reviewer, no role : 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, maintainer: 0 -> 3 commits
   - changed commits
-    - c0e63eed09d2 "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
-    - 92b33cf336b5 "mm/mmu_notifier: fix a begin vs. start typo in the invalidate range comment"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20260513163546.1176742-1-seanjc@google.com
-    - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
-      - 049c111acc4e "mm: introduce for_each_free_list() (0/4)"
-        - Authored by no role player, reviewed by no role player
+    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
+      - 0d808e9d6212 "powerpc/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (7/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-8-3fb0be6fc688@kernel.org
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - a635a26df7df "mm, swap: unify large folio allocation (4/12)"
+        - Authored by a maintainer, reviewed by nobody
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
-        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
-      - a7660584dffc "mm/page_alloc: don't overload migratetype in find_suitable_fallback() (1/4)"
-        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-5-88ae43e064c7@tencent.com
+      - b75e023fb3b9 "mm, swap: delay and unify memcg lookup and charging for swapin (7/12)"
+        - Authored by a maintainer, reviewed by a maintainer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-2-dacdf5402be8@google.com
-- mm-new: 6 -> 4 commits
-  - series: 1 (6) -> 0 (3)
-    - no role, no role : 1 -> 0 commits
-    - reviewer, no role : 1 -> 0 commits
-    - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 3 -> 3 commits (no change)
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
+      - cbd7445dda3c "mm/memcg: remove no longer used swap cgroup array (11/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
+    - 7f48dcff9c8b "mm, swap: merge zeromap into swap table"
+      - Authored by a maintainer, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-12-88ae43e064c7@tencent.com
+- mm-new: 4 -> 0 commits
+  - series: 0 (3) -> 0 (0)
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, maintainer: 3 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

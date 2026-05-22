@@ -1,37 +1,22 @@
-- baseline: v7.1-rc3 -> v7.1-rc4-93-g27fa82620cbaa
-- mm-hotfixes-stable: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, maintainer: 2 -> 0 commits
-  - dropped commits
-    - series "mm: Fix memory block leaks and locking", v2. (2)
-      - 93866f55f7e2 "mm/memory_hotplug: fix memory block reference leak on remove (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260428085219.1316047-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260428085219.1316047-2-songmuchun@bytedance.com
-      - 03a2cc1756a0 "drivers/base/memory: fix memory block reference leak in poison accounting (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260428085219.1316047-3-songmuchun@bytedance.com
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
+- mm-unstable: 4 -> 5 commits
   - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
     - no role, maintainer: 3 -> 3 commits (no change)
   - changed commits
-    - series "mm: Fix vmemmap optimization accounting and initialization", v8. (6)
-      - ba040a823fab "mm/memory_hotplug: fix incorrect altmap passing in error path (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Georgi Djakov <georgi.djakov@oss.qualcomm.com>"
-        - Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 065d1bc2e6d0 "drivers/base/memory: set mem->altmap after successful device registration"
+    - bea202d90251 "drivers/base/memory: set mem->altmap after successful device registration"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260514092657.3057141-1-georgi.djakov@oss.qualcomm.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
