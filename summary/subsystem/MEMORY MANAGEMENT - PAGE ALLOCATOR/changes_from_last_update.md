@@ -1,9 +1,15 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 54cf41c969da "Revert "mm: introduce a new page type for page pool in page type""
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260515034701.17027-1-byungchul@sk.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 22 -> 22 commits (no change)
@@ -11,30 +17,12 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 14 -> 14 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, no role : 3 -> 4 commits
+    - reviewer, no role : 4 -> 4 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-  - changed commits
-    - aba7e1c4cfd5 "mm/page_alloc: document that alloc_pages_nolock() uses RCU"
-      - Authored by a reviewer, reviewed by no role player
-      - added "Suggested-by: Junaid Shahid <junaids@google.com>"
-      - added "Acked-by: Harry Yoo (Oracle) <harry@kernel.org>"
-      - dropped "Suggested-by: Junaid Shahid <jackmanb@google.com>"
-      - Link: https://lore.kernel.org/20260519-nolock-rcu-comment-v1-1-4a630c8794e5@google.com
-- mm-new: 1 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - e668912ef83f "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260519200851.141955-1-jp.kobryn@linux.dev
-  - changed commits
-    - aecd5ec5a315 "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/20260520122228.201550-1-d@ilvokhin.com"
-      - dropped "Link: https://lore.kernel.org/20260518163736.173910-1-d@ilvokhin.com"
-      - Link: https://lore.kernel.org/20260520122228.201550-1-d@ilvokhin.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

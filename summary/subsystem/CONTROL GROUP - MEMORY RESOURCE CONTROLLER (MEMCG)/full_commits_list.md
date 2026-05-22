@@ -1,18 +1,20 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
-    - maintainer, no role : 2 commits
   - full commits list
-    - 5b5335a1b7cb "mm: memcontrol: propagate NMI slab stats to memcg vmstats"
+    - e16f17a9c5af "mm: memcontrol: propagate NMI slab stats to memcg vmstats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260518082830.599102-1-alex@ghiti.fr
-    - 83cf612e39fc "memcg: cache obj_stock by memcg, not by objcg pointer"
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - maintainer, no role : 2 commits
+  - full commits list
+    - f13ef6358a76 "memcg: cache obj_stock by memcg, not by objcg pointer"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260518222827.110696-1-shakeel.butt@linux.dev
       - Link: https://lore.kernel.org/19693be6-7132-446e-b3fc-b7e9f56e5949@linux.dev/ [1]
-    - 40c244753110 "memcg: use round-robin victim selection in refill_stock"
+    - d9e44d2314e7 "memcg: use round-robin victim selection in refill_stock"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -23,30 +25,30 @@
     - reviewer, maintainer: 2 commits
     - maintainer, maintainer: 2 commits
   - full commits list
-      - fc0fede878cf "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
+      - 482fee8e5c0e "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
-    - 50985f6d199b "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
+    - 784792212ef3 "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
     - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (2 commits)
-      - f22a04fee849 "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
+      - e66da745bb81 "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
         - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
-      - 4f67fb9b93d4 "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
+      - d6579f10ec7f "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
-      - 5b7e82b3a839 "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
+      - fd986dc12fbc "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - b75e023fb3b9 "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
+      - 5b14c6928f0d "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - 7364cb55c2d8 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
+      - d08767ecf489 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-      - cbd7445dda3c "mm/memcg: remove no longer used swap cgroup array" (11/12)
+      - 12e8a543de5d "mm/memcg: remove no longer used swap cgroup array" (11/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

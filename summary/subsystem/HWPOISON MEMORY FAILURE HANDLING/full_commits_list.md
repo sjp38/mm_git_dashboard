@@ -6,16 +6,16 @@
   - author/reviewer role stat
     - no role, maintainer: 4 commits
   - full commits list
-    - 6f17dd5c4dd9 "mm/memory-failure: use bool for forcekill state"
+    - 184c2348ebdd "mm/memory-failure: use bool for forcekill state"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260410074740.2524718-1-ye.liu@linux.dev
-    - de5c6ad7bba3 "mm/memory-failure: replace magic number 3 with GET_PAGE_MAX_RETRY_NUM"
+    - cf0587d44867 "mm/memory-failure: replace magic number 3 with GET_PAGE_MAX_RETRY_NUM"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260402064946.1124250-1-18810879172@163.com
-    - 85230a62afa9 "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
+    - d17c2868228e "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260515020144.164941-1-ye.liu@linux.dev
-    - 163a718a47ce "mm/memory-failure: use zone_pcp_disable() for poison handling"
+    - cc70809c8644 "mm/memory-failure: use zone_pcp_disable() for poison handling"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260514085754.84097-1-kaitao.cheng@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -8,16 +8,16 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "fix MAP_DROPPABLE not supported errno", v4. (3 commits)
-      - 6a7daf3d2aee "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
+      - 704349b8be70 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
     - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3 commits)
-      - ee1bcdf22429 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
+      - fa784dd86d48 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
         - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
-    - 9d24d185c09d "mm/mseal: use min/max in mseal_apply"
+    - a77196086834 "mm/mseal: use min/max in mseal_apply"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503115915.18680-3-thorsten.blum@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

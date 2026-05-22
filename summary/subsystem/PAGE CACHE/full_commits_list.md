@@ -9,43 +9,43 @@
     - reviewer, reviewer: 2 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-    - 5c31db39c5ff "mm: limit filemap_fault readahead to VMA boundaries"
+    - 9a5fcb4418ff "mm: limit filemap_fault readahead to VMA boundaries"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260427030148.653228-1-fmayle@google.com
       - Link: https://lore.kernel.org/all/ivnv2crd3et76p2nx7oszuqhzzah756oecn5yuykzqfkqzoygw@yvnlkhjjssoz/ [1]
     - series "mm/filemap: tighten mmap_miss hit accounting", v3. (2 commits)
-      - 10a64be92898 "mm/filemap: count only the faulting address as a mmap hit" (0/2)
+      - e079923f75f7 "mm/filemap: count only the faulting address as a mmap hit" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/tencent_AA501E9A238337BD167E5C2ACF948A1AF308@qq.com
         - Link: https://lore.kernel.org/tencent_756F151FE66F3D80479A6F982C0AB8569F09@qq.com
-      - 46b7cc089690 "mm/filemap: do not count FAULT_FLAG_TRIED retries as mmap hits" (1/2)
+      - eaf8284c7082 "mm/filemap: do not count FAULT_FLAG_TRIED retries as mmap hits" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/tencent_22E6B8849EC1141FE7773C64467E6F1E2C09@qq.com
     - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14 commits)
-      - 950953666346 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
+      - 444a219cf592 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
         - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
-      - 2de4cbacac17 "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
+      - 32f77ef93df7 "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
-      - d18d781ad17b "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
+      - 362f845a47d5 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
     - series "mm: document read_pages and simplify usage". (2 commits)
-      - 70a9bce7fa90 "mm/readahead: add kerneldoc for read_pages" (0/2)
+      - e752844f2294 "mm/readahead: add kerneldoc for read_pages" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/all/20260501061146.6e61392d125cf1847d7cc181@linux-foundation.org/ [1]
         - Link: https://lore.kernel.org/20260512203154.754075-2-fmayle@google.com
-      - 5c4a7cf4388d "mm/readahead: simplify page_cache_ra_unbounded loop counter reset" (1/2)
+      - f83232054c51 "mm/readahead: simplify page_cache_ra_unbounded loop counter reset" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260512203154.754075-3-fmayle@google.com
-    - cb3ac0a51e11 "mm/readahead: no PG_readahead on EOF"
+    - 0968305f02bb "mm/readahead: no PG_readahead on EOF"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3921-L3939 [2]
       - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3721-L3722 [3]
       - Link: https://lore.kernel.org/20260508181237.670645-1-fmayle@google.com
-    - 9829c3d7e6b9 "mm/filemap: fix page_cache_prev_miss() when no hole is found"
+    - b90a12ebf395 "mm/filemap: fix page_cache_prev_miss() when no hole is found"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260512-prev_miss_fix-v2-1-4af8e5c1ae62@columbia.edu
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

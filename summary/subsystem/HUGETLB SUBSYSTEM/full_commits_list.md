@@ -1,20 +1,23 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 4 total, 0 (0) series, 4 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, maintainer: 3 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - b1254709069c "Revert "mm/hugetlbfs: update hugetlbfs to use mmap_prepare""
+    - 83f9efcce93f "Revert "mm/hugetlbfs: update hugetlbfs to use mmap_prepare""
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260512160643.266960-1-ljs@kernel.org
-    - 6743a3eaa245 "mm/hugetlb: avoid false positive lockdep assertion"
+- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, maintainer: 2 commits
+  - full commits list
+    - 452f3565fdf7 "mm/hugetlb: avoid false positive lockdep assertion"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260513085658.45264-1-ljs@kernel.org
-    - dc3a4b9d7955 "mm-hugetlb-avoid-false-positive-lockdep-assertion-fix"
+    - b7cef037b31e "mm-hugetlb-avoid-false-positive-lockdep-assertion-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/agWZsPGYid08uU6O@lucifer
-    - c08f1844825b "mm/hugetlb: restore reservation on error in hugetlb folio copy paths"
+    - 6c8cb505a563 "mm/hugetlb: restore reservation on error in hugetlb folio copy paths"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260520044912.6751-1-devnexen@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -23,16 +26,16 @@
     - no role, no role : 2 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 8d1fa03a237c "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
+    - 9ce7140c2774 "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
-      - 372c28544d11 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
+      - 1f36a39b0226 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - 5f1b9b553038 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
+      - 33cb5124afea "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
-    - 11cefc8e2f92 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
+    - ee87610b7278 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

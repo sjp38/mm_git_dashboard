@@ -1,44 +1,26 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 3 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - e16f17a9c5af "mm: memcontrol: propagate NMI slab stats to memcg vmstats"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260518082830.599102-1-alex@ghiti.fr
+- mm-hotfixes-unstable: 3 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 2 commits
-  - new commits
-    - 40c244753110 "memcg: use round-robin victim selection in refill_stock"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, no role : 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 8 commits
-  - series: 1 (3) -> 1 (7)
+- mm-unstable: 8 -> 8 commits (no change)
+  - series: 1 (7) -> 1 (7) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 0 -> 2 commits
-    - maintainer, maintainer: 0 -> 2 commits
-  - changed commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 5b7e82b3a839 "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers (5/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - b75e023fb3b9 "mm, swap: delay and unify memcg lookup and charging for swapin (7/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - 7364cb55c2d8 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-      - cbd7445dda3c "mm/memcg: remove no longer used swap cgroup array (11/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
-- mm-new: 4 -> 0 commits
-  - series: 0 (4) -> 0 (0)
-    - reviewer, maintainer: 2 -> 0 commits
-    - maintainer, maintainer: 2 -> 0 commits
+    - reviewer, maintainer: 2 -> 2 commits (no change)
+    - maintainer, maintainer: 2 -> 2 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -5,46 +5,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 39 -> 42 commits
-  - series: 3 (31) -> 3 (33)
+- mm-unstable: 42 -> 42 commits (no change)
+  - series: 3 (33) -> 3 (33) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 3 -> 5 commits
+    - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, nobody: 5 -> 5 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 12 -> 12 commits (no change)
-    - reviewer, maintainer: 6 -> 7 commits
+    - reviewer, maintainer: 7 -> 7 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - 29f308cfcd34 "Documentation/admin-guide/mm: fix typos in transhuge.rst"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260520051751.74396-1-leon.hwang@linux.dev
-  - changed commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - c2ae240065b2 "mm/huge_memory: move THP gfp limit helper into header (2/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-3-88ae43e064c7@tencent.com
-      - 5b7e82b3a839 "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers (5/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-- mm-new: 2 -> 3 commits
+- mm-new: 3 -> 3 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
-    - no role, reviewer: 1 -> 3 commits
-    - reviewer, maintainer: 1 -> 0 commits
-  - new commits
-    - series "selftests/mm: fix failures and robustness improvements", v7. (13)
-      - 67032026a36f "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test (5/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/33e1bc10753fe82d1217613d8cd496020778cf2b.1779296493.git.sayalip@linux.ibm.com
-      - 1f07737efac9 "selftests/mm: free dynamically allocated PMD-sized buffers in split_huge_page_test (6/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/060c673b376bbeeed2b1fb1d48a825e846654191.1779296493.git.sayalip@linux.ibm.com
-    - 0a8aeebce501 "selftests/mm/split_huge_page_test.c: close fd on write error"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260520020336.28914-1-richard.weiyang@gmail.com
+    - no role, reviewer: 3 -> 3 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

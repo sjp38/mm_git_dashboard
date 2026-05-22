@@ -1,298 +1,69 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 8 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 14 -> 16 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 4 -> 3 commits
-    - no role, no role : 3 -> 4 commits
-    - no role, maintainer: 5 -> 6 commits
-    - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 2 commits
-  - new commits
-    - 40c244753110 "memcg: use round-robin victim selection in refill_stock"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
-    - 6c796de51b73 "mm/cma_debug: fix invalid accesses for inactive CMA areas"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260520061025.3971821-1-songmuchun@bytedance.com
-    - c08f1844825b "mm/hugetlb: restore reservation on error in hugetlb folio copy paths"
+    - no role, no role : 0 -> 3 commits
+    - no role, maintainer: 0 -> 4 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - changed commits
+    - 83f9efcce93f "Revert "mm/hugetlbfs: update hugetlbfs to use mmap_prepare""
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260520044912.6751-1-devnexen@gmail.com
-  - dropped commits
-    - 270157aef0d1 "mm/hugetlb: restore reservation on error in hugetlb_mfill_atomic_pte() resubmission path"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260322052120.14021-1-devnexen@gmail.com
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260512160643.266960-1-ljs@kernel.org
+    - 3b041514cb6e "memfd: deny writeable mappings when implying SEAL_WRITE"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260505133922.797635-1-pratyush@kernel.org
+    - 3f8968e9cbf9 "mm/rmap: initialize nr_pages to 1 at loop start in try_to_unmap_one"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260518063656.3721056-1-dev.jain@arm.com
+    - 441f92f7d386 "mm/damon/sysfs-schemes: delete tried region in regions_rmdirs()"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260518152559.93038-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260513011920.119183-1-sj@kernel.org [1]
+    - e16f17a9c5af "mm: memcontrol: propagate NMI slab stats to memcg vmstats"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260518082830.599102-1-alex@ghiti.fr
+    - 2c6f81d58741 "mm/migrate_device: fix pgtable leak in migrate_vma_insert_huge_pmd_page"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260501115122.23288-1-nueralspacetech@gmail.com
+    - 04aa71da5f35 "mm/vmalloc: do not trigger BUG() on BH disabled context"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260515153009.2296191-1-urezki@gmail.com
+    - 54cf41c969da "Revert "mm: introduce a new page type for page pool in page type""
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260515034701.17027-1-byungchul@sk.com
+- mm-hotfixes-unstable: 16 -> 8 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 4 -> 1 commits
+    - no role, maintainer: 6 -> 2 commits
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, no role : 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 157 -> 204 commits
-  - series: 23 (102) -> 27 (142)
-    - no role, nobody: 8 -> 9 commits
-    - no role, no role : 25 -> 29 commits
-    - no role, reviewer: 34 -> 37 commits
-    - no role, maintainer: 30 -> 34 commits
-    - reviewer, nobody: 3 -> 2 commits
-    - reviewer, no role : 6 -> 7 commits
+- mm-unstable: 204 -> 204 commits (no change)
+  - series: 27 (142) -> 27 (142) (no change)
+    - no role, nobody: 9 -> 9 commits (no change)
+    - no role, no role : 29 -> 29 commits (no change)
+    - no role, reviewer: 37 -> 37 commits (no change)
+    - no role, maintainer: 34 -> 34 commits (no change)
+    - reviewer, nobody: 2 -> 2 commits (no change)
+    - reviewer, no role : 7 -> 7 commits (no change)
     - reviewer, reviewer: 27 -> 27 commits (no change)
-    - reviewer, maintainer: 6 -> 8 commits
-    - maintainer, nobody: 18 -> 44 commits
-    - maintainer, maintainer: 0 -> 7 commits
-  - new commits
-    - 726584a20e8a "mm-swap-merge-zeromap-into-swap-table-fix-2"
-      - Authored by a maintainer, reviewed by nobody
-    - series "mm/damon: documentation and comment fixes". (3)
-      - 3cbe8f7ca720 "mm/damon/core: clarify next_intervals_tune_sis update path (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260520012104.93602-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260520012104.93602-2-sj@kernel.org
-  - changed commits
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
-      - 678eae410ce4 "mm/bootmem_info: remove call to kmemleak_free_part_phys() (3/8)"
-        - Authored by no role player, reviewed by no role player
-        - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-4-3fb0be6fc688@kernel.org
-      - f60b662bd0a7 "mm/bootmem_info: stop marking the pgdat as NODE_INFO (4/8)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-5-3fb0be6fc688@kernel.org
-      - b942078bda9b "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO (5/8)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-6-3fb0be6fc688@kernel.org
-      - 0d808e9d6212 "powerpc/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (7/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-8-3fb0be6fc688@kernel.org
-    - aba7e1c4cfd5 "mm/page_alloc: document that alloc_pages_nolock() uses RCU"
-      - Authored by a reviewer, reviewed by no role player
-      - added "Suggested-by: Junaid Shahid <junaids@google.com>"
-      - added "Acked-by: Harry Yoo (Oracle) <harry@kernel.org>"
-      - dropped "Suggested-by: Junaid Shahid <jackmanb@google.com>"
-      - Link: https://lore.kernel.org/20260519-nolock-rcu-comment-v1-1-4a630c8794e5@google.com
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 19cc3d5a2e95 "mm, swap: simplify swap cache allocation helper (0/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-0-88ae43e064c7@tencent.com
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-1-88ae43e064c7@tencent.com
-      - 0374928ee80c "mm, swap: move common swap cache operations into standalone helpers (1/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-2-88ae43e064c7@tencent.com
-      - c2ae240065b2 "mm/huge_memory: move THP gfp limit helper into header (2/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-3-88ae43e064c7@tencent.com
-      - c95edb6704de "mm, swap: add support for stable large allocation in swap cache directly (3/12)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-4-88ae43e064c7@tencent.com
-      - a635a26df7df "mm, swap: unify large folio allocation (4/12)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-5-88ae43e064c7@tencent.com
-      - 5b7e82b3a839 "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers (5/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - 0812f1b1f3f4 "mm, swap: support flexible batch freeing of slots in different memcgs (6/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-7-88ae43e064c7@tencent.com
-      - b75e023fb3b9 "mm, swap: delay and unify memcg lookup and charging for swapin (7/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - f59212af7663 "mm, swap: consolidate cluster allocation helpers (8/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-9-88ae43e064c7@tencent.com
-      - 7364cb55c2d8 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-      - 25ea23a7f3a2 "mm-memcg-swap-store-cgroup-id-in-cluster-table-directly-fix (10/12)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-      - cbd7445dda3c "mm/memcg: remove no longer used swap cgroup array (11/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
-    - 7f48dcff9c8b "mm, swap: merge zeromap into swap table"
-      - Authored by a maintainer, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-12-88ae43e064c7@tencent.com
-    - 06acb25e276b "mm-swap-merge-zeromap-into-swap-table-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Cc: Muchun Song <muchun.song@linux.dev>"
-      - added "Cc: Youngjun Park <youngjun.park@lge.com>"
-      - added "Cc: Zi Yan <ziy@nvidia.com>"
-      - added "Cc: Barry Song <baohua@kernel.org>"
-      - added "Cc: Chengming Zhou <chengming.zhou@linux.dev>"
-      - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
-      - added "Cc: Baoquan He <bhe@redhat.com>"
-      - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - added "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - added "Cc: David Hildenbrand <david@kernel.org>"
-      - added "Cc: Hugh Dickins <hughd@google.com>"
-      - added "Cc: Nhat Pham <nphamcs@gmail.com>"
-      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - added "Cc: Chris Li <chrisl@kernel.org>"
-    - 80d7ed530a25 "kasan/test: only do kmalloc_double_kzfree for generic mode"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260517071713.353579-1-wsw9603@163.com
-    - 85230a62afa9 "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260515020144.164941-1-ye.liu@linux.dev
-    - series "mm/damon: introduce data attributes monitoring". (28)
-      - cdd5bfb4f33f "mm/damon/core: embed damon_probe objects in damon_ctx (1/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-3-sj@kernel.org
-      - f26466fe8928 "mm/damon/core: introduce damon_filter (2/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-4-sj@kernel.org
-      - 098ace4120df "mm/damon/core: commit probes (3/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-5-sj@kernel.org
-      - 27c66d5ef6c7 "mm/damon/core: introduce damon_region->probe_hits (4/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-6-sj@kernel.org
-      - a3de1d65fff5 "mm/damon/core: do data attributes monitoring (6/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-8-sj@kernel.org
-      - f30e1a27bc32 "mm/damon/paddr: support data attributes monitoring (7/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-9-sj@kernel.org
-      - 673b282492b5 "mm/damon/sysfs: implement probes dir (8/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-10-sj@kernel.org
-      - e9a0d5f92f02 "mm/damon/sysfs: implement probe dir (9/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-11-sj@kernel.org
-      - ba4a4ef789d7 "mm/damon/sysfs: implement filters directory (10/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-12-sj@kernel.org
-      - 0704a8cefdfa "mm/damon/sysfs: implement filter dir (11/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-13-sj@kernel.org
-      - e3bdf3c67e37 "mm/damon/sysfs: implement filter dir files (12/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-14-sj@kernel.org
-      - f09ee5d4f03d "mm/damon/sysfs: setup probes on DAMON core API parameters (13/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-15-sj@kernel.org
-      - 1762bc6b704f "mm/damon/sysfs-schemes: implement tried_regions/<r>/probes/ (14/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-16-sj@kernel.org
-      - 7408c97ee787 "mm/damon/sysfs-schemes: implement probe dir (15/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-17-sj@kernel.org
-      - 0255ece9df1d "mm/damon/sysfs-schemes: implement probe/hits file (16/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-18-sj@kernel.org
-      - 3f52ebdfa1f9 "mm/damon: trace probe_hits (17/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-19-sj@kernel.org
-      - 0d7cc8eb38e6 "mm/damon/core: introduce DAMON_FILTER_TYPE_MEMCG (21/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-23-sj@kernel.org
-      - b55f11cb1b07 "mm/damon/paddr: support DAMON_FILTER_TYPE_MEMCG (22/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-24-sj@kernel.org
-      - 0db0e9a873fa "mm/damon/sysfs: add filters/<F>/path file (23/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-25-sj@kernel.org
-      - 9b7b2a2b1f87 "mm/damon/sysfs-schemes: move memcg_path_to_id() to sysfs-common (24/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-26-sj@kernel.org
-      - 161738b9e670 "mm/damon/sysfs: setup damon_filter->memcg_id from path (25/28)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260518234119.97569-27-sj@kernel.org
-    - series "mm/vmalloc: free unused pages on vrealloc() shrink", v14. (5)
-      - cda84b390835 "mm/vmalloc: extract vm_area_free_pages() helper from vfree() (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-0-70b96ee3e9c9@zohomail.in
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-1-70b96ee3e9c9@zohomail.in
-        - Link: https://lore.kernel.org/all/20260216-binder-shrink-vec-v3-v6-0-ece8e8593e53@zohomail.in/ [1]
-      - bf29fdccd01c "mm/vmalloc: use physical page count for vrealloc() grow-in-place check (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-2-70b96ee3e9c9@zohomail.in
-      - 2b48c026e7f7 "mm/vmalloc: use physical page count in vread_iter() for VM_ALLOC areas (2/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-3-70b96ee3e9c9@zohomail.in
-      - 45fc94655b94 "mm/vmalloc: free unused pages on vrealloc() shrink (3/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-4-70b96ee3e9c9@zohomail.in
-    - series "refactors thpsize_shmem_enabled_store() and thpsize_shmem_enabled_show()", v3. (2)
-      - b1f06824ffa6 "mm: shmem: refactor thpsize_shmem_enabled_store() with sysfs_match_string() (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260518123238.56344-1-ranxiaokai627@163.com
-        - Link: https://lore.kernel.org/20260518123238.56344-2-ranxiaokai627@163.com
-      - 8e66ffd7f118 "mm: shmem: refactor thpsize_shmem_enabled_show() with helper arrays (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260518123238.56344-3-ranxiaokai627@163.com
-    - 163a718a47ce "mm/memory-failure: use zone_pcp_disable() for poison handling"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260514085754.84097-1-kaitao.cheng@linux.dev
-    - 909d8bf8d25e "mm/damon/vaddr: attempt per-vma lock during page table walk"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260512151523.2092638-1-wangkefeng.wang@huawei.com
-- mm-new: 49 -> 4 commits
-  - series: 4 (42) -> 1 (3)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 4 -> 0 commits
-    - no role, reviewer: 4 -> 1 commits
-    - no role, maintainer: 3 -> 0 commits
-    - reviewer, maintainer: 4 -> 2 commits
-    - maintainer, nobody: 25 -> 0 commits
-    - maintainer, maintainer: 7 -> 0 commits
-  - changed commits
-    - aecd5ec5a315 "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/20260520122228.201550-1-d@ilvokhin.com"
-      - dropped "Link: https://lore.kernel.org/20260518163736.173910-1-d@ilvokhin.com"
-      - Link: https://lore.kernel.org/20260520122228.201550-1-d@ilvokhin.com
+    - reviewer, maintainer: 8 -> 8 commits (no change)
+    - maintainer, nobody: 44 -> 44 commits (no change)
+    - maintainer, maintainer: 7 -> 7 commits (no change)
+- mm-new: 4 -> 4 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)

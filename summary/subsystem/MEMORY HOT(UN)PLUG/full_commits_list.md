@@ -7,20 +7,20 @@
     - no role, no role : 2 commits
     - no role, maintainer: 3 commits
   - full commits list
-      - c7bd415a6615 "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
+      - ddfeedf27c90 "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com
-      - 53517263eb29 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
+      - c0defeccc630 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
-    - 348bf00a24a0 "mm/memory_hotplug: factor out altmap freeing checks"
+    - 002fc98357fa "mm/memory_hotplug: factor out altmap freeing checks"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260511084307.1827127-1-songmuchun@bytedance.com
-    - c09d372bffbf "drivers/base/memory: make memory block get/put explicit"
+    - ce0bd1c5ab01 "drivers/base/memory: make memory block get/put explicit"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
       - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
-    - bea202d90251 "drivers/base/memory: set mem->altmap after successful device registration"
+    - cdea8271c58e "drivers/base/memory: set mem->altmap after successful device registration"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260514092657.3057141-1-georgi.djakov@oss.qualcomm.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
