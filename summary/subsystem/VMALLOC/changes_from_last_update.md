@@ -1,15 +1,9 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 04aa71da5f35 "mm/vmalloc: do not trigger BUG() on BH disabled context"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260515153009.2296191-1-urezki@gmail.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 7 -> 7 commits (no change)

@@ -1,15 +1,9 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 54cf41c969da "Revert "mm: introduce a new page type for page pool in page type""
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260515034701.17027-1-byungchul@sk.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 22 -> 22 commits (no change)
@@ -19,6 +13,14 @@
     - no role, reviewer: 14 -> 14 commits (no change)
     - reviewer, no role : 4 -> 4 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
+  - changed commits
+    - 135dd3234452 "mm/page_alloc: drop a misleading __always_inline"
+      - Authored by a reviewer, reviewed by a reviewer
+      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - added "Reviewed-by: Vishal Moola <vishal.moola@gmail.com>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - Link: https://lore.kernel.org/all/20260517-b4-drop-always-inline-v1-1-97b90930e8b8@google.com/
+      - Link: https://lore.kernel.org/all/016c8bef-57ef-44ef-bf60-86dbfd368dcd@kernel.org/
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

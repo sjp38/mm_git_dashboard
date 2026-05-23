@@ -1,15 +1,9 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - bf62f69574b1 "zram: fix use-after-free in zram_writeback_endio"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260512074918.2606208-1-richardycc@google.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)

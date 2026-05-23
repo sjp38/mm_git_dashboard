@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 9183a83aa7e0 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+    - c164f198f6c5 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
@@ -15,6 +15,6 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - de9f8f33c2c5 "lib: split codetag_lock_module_list()"
+    - 55f5691a71fb "lib: split codetag_lock_module_list()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260324214226.3684605-1-bvanassche@acm.org

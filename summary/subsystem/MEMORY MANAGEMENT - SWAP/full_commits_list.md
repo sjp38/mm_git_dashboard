@@ -11,67 +11,67 @@
     - maintainer, nobody: 7 commits
     - maintainer, maintainer: 7 commits
   - full commits list
-    - fe5116eea92e "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
+    - cefdb2ec21a9 "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260418120233.7162-1-baohua@kernel.org
       - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
       - Link: https://lore.kernel.org/lkml/20160606022724.GA26227@yexl-desktop/ [2]
       - Link: https://lore.kernel.org/lkml/20210120173612.20913-1-will@kernel.org/ [3]
-    - e50febc6ab86 "mm/page_io: rename swap_iocb fields for clarity"
+    - 698a42726fc4 "mm/page_io: rename swap_iocb fields for clarity"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260402072650.48811-1-devnexen@gmail.com
-    - f33e53dde860 "mm/lruvec: preemptively free dead folios during lru_add drain"
+    - cb501feae19c "mm/lruvec: preemptively free dead folios during lru_add drain"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260425053417.351146-1-jp.kobryn@linux.dev
-    - 9be188093db8 "mm/swap: add cond_resched() in swap_reclaim_full_clusters to prevent softlockup"
+    - 856bb9f09533 "mm/swap: add cond_resched() in swap_reclaim_full_clusters to prevent softlockup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260506130919.2298807-1-kerayhuang@tencent.com
-    - 39c74099299d "mm, swap: avoid leaving unused extend table after alloc race"
+    - 95cc4835984b "mm, swap: avoid leaving unused extend table after alloc race"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260513-swap-extend-table-fix-v1-1-a71dea851fb3@tencent.com
-    - 2c50a323e1d4 "mm-swap-avoid-leaving-unused-extend-table-after-alloc-race-v2"
+    - 87de8b2be7ec "mm-swap-avoid-leaving-unused-extend-table-after-alloc-race-v2"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260515-swap-extend-table-fix-v2-1-833d72ad53e5@tencent.com
     - series "mm, swap: swap table phase IV: unify allocation", v5. (12 commits)
-      - fa7eb81af741 "mm, swap: simplify swap cache allocation helper" (0/12)
+      - 7a3ffd37d84c "mm, swap: simplify swap cache allocation helper" (0/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-0-88ae43e064c7@tencent.com
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-1-88ae43e064c7@tencent.com
-      - 3c4b52b9108a "mm, swap: move common swap cache operations into standalone helpers" (1/12)
+      - ae26a7733dd2 "mm, swap: move common swap cache operations into standalone helpers" (1/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-2-88ae43e064c7@tencent.com
-      - 6627d8165482 "mm, swap: add support for stable large allocation in swap cache directly" (3/12)
+      - f0c13f063e58 "mm, swap: add support for stable large allocation in swap cache directly" (3/12)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-4-88ae43e064c7@tencent.com
-      - f8943fcc096e "mm, swap: unify large folio allocation" (4/12)
+      - 66bb3d2ce58a "mm, swap: unify large folio allocation" (4/12)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-5-88ae43e064c7@tencent.com
-      - fd986dc12fbc "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
+      - 352fcbdb336f "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - 81f4fac8ee32 "mm, swap: support flexible batch freeing of slots in different memcgs" (6/12)
+      - 18b9aac13483 "mm, swap: support flexible batch freeing of slots in different memcgs" (6/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-7-88ae43e064c7@tencent.com
-      - 5b14c6928f0d "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
+      - 239866e3fffe "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - 714e3a1d9178 "mm, swap: consolidate cluster allocation helpers" (8/12)
+      - f980ea19ab84 "mm, swap: consolidate cluster allocation helpers" (8/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-9-88ae43e064c7@tencent.com
-      - d08767ecf489 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
+      - d35c175d14e8 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-      - c83a31fecadb "mm-memcg-swap-store-cgroup-id-in-cluster-table-directly-fix" (10/12)
+      - b8cc19c91f00 "mm-memcg-swap-store-cgroup-id-in-cluster-table-directly-fix" (10/12)
         - Authored by a maintainer, reviewed by nobody
-      - 12e8a543de5d "mm/memcg: remove no longer used swap cgroup array" (11/12)
+      - a8d3ea941fe9 "mm/memcg: remove no longer used swap cgroup array" (11/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
-    - 72d6c9407438 "mm, swap: merge zeromap into swap table"
+    - 06a0a5dc1d8e "mm, swap: merge zeromap into swap table"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-12-88ae43e064c7@tencent.com
-    - 00724f47e525 "mm-swap-merge-zeromap-into-swap-table-fix"
+    - ea635f26fe1a "mm-swap-merge-zeromap-into-swap-table-fix"
       - Authored by a maintainer, reviewed by nobody
-    - 02aff80cdd25 "mm-swap-merge-zeromap-into-swap-table-fix-2"
+    - 81144e80da4e "mm-swap-merge-zeromap-into-swap-table-fix-2"
       - Authored by a maintainer, reviewed by nobody
 - mm-new: 4 total, 1 (4) series, 0 non-series commits
   - author/reviewer role stat
@@ -80,17 +80,17 @@
     - maintainer, nobody: 1 commits
   - full commits list
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - 0061277ac9a2 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+      - 627df28acae8 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - 16584e51dbc0 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - 0212a3c946f7 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
-      - 264521699897 "mm/swap, PM: hibernate: atomically replace hibernation pin" (2/8)
+      - 326b9f7de3ef "mm/swap, PM: hibernate: atomically replace hibernation pin" (2/8)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
-      - d65c7e8987fa "mm-swap-pm-hibernate-atomically-replace-hibernation-pin-checkpatch-fixes" (3/8)
+      - 4b9e0e1f8c4b "mm-swap-pm-hibernate-atomically-replace-hibernation-pin-checkpatch-fixes" (3/8)
         - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

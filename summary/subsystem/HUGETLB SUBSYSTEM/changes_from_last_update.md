@@ -1,16 +1,15 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 83f9efcce93f "Revert "mm/hugetlbfs: update hugetlbfs to use mmap_prepare""
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260512160643.266960-1-ljs@kernel.org
-- mm-hotfixes-unstable: 4 -> 3 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 3 -> 4 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 2 commits
+    - no role, maintainer: 2 -> 3 commits
+  - new commits
+    - 5cf697132e29 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 4 -> 4 commits (no change)

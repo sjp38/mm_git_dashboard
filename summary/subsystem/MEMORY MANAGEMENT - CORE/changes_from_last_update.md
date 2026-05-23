@@ -1,24 +1,15 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 0 -> 2 commits
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 09e7827e7857 "kernel/fork: validate exit_signal in kernel_clone()"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
-      - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com
-      - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
-      - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
-    - 54cf41c969da "Revert "mm: introduce a new page type for page pool in page type""
+  - new commits
+    - 5cf697132e29 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
       - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260515034701.17027-1-byungchul@sk.com
-- mm-hotfixes-unstable: 2 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+      - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 26 -> 26 commits (no change)
@@ -29,8 +20,21 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 3 commits
+  - series: 0 (0) -> 1 (3)
+    - reviewer, nobody: 0 -> 3 commits
+  - new commits
+    - series "remove mmap_action success, error hooks", v2. (3)
+      - ffe1a6ec5412 "drivers/char/mem: eliminate unnecessary use of success_hook (0/3)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org
+        - Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org
+      - 6418070398a3 "mm/vma: remove mmap_action->success_hook (1/3)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org
+      - 75f6a1d62dad "mm/vma: eliminate mmap_action->error_hook, introduce error_filter (2/3)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/e770b28427937057fa953ac380a134b24acd8bb4.1779462249.git.ljs@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

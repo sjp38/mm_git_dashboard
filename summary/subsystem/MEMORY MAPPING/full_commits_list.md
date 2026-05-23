@@ -8,18 +8,32 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "fix MAP_DROPPABLE not supported errno", v4. (3 commits)
-      - 704349b8be70 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
+      - e986774677fc "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
     - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3 commits)
-      - fa784dd86d48 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
+      - c9d05fed8ca5 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
         - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
-    - a77196086834 "mm/mseal: use min/max in mseal_apply"
+    - 7b470ff97f67 "mm/mseal: use min/max in mseal_apply"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503115915.18680-3-thorsten.blum@linux.dev
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 3 total, 1 (3) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, nobody: 3 commits
+  - full commits list
+    - series "remove mmap_action success, error hooks", v2. (3 commits)
+      - ffe1a6ec5412 "drivers/char/mem: eliminate unnecessary use of success_hook" (0/3)
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org
+        - Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org
+      - 6418070398a3 "mm/vma: remove mmap_action->success_hook" (1/3)
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org
+      - 75f6a1d62dad "mm/vma: eliminate mmap_action->error_hook, introduce error_filter" (2/3)
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/e770b28427937057fa953ac380a134b24acd8bb4.1779462249.git.ljs@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

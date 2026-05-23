@@ -1,21 +1,32 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+    - maintainer, nobody: 1 commits
+  - full commits list
+    - 5cf697132e29 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
+    - 00810a538e89 "mm-memory-failure-fix-hugetlb_lock-aa-deadlock-in-get_huge_page_for_hwpoison-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://sashiko.dev/#/patchset/20260522010305.4099834-1-mawupeng1@huawei.com
+      - Link: https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 4 total, 0 (0) series, 4 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 4 commits
   - full commits list
-    - 184c2348ebdd "mm/memory-failure: use bool for forcekill state"
+    - 59a0fad17108 "mm/memory-failure: use bool for forcekill state"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260410074740.2524718-1-ye.liu@linux.dev
-    - cf0587d44867 "mm/memory-failure: replace magic number 3 with GET_PAGE_MAX_RETRY_NUM"
+    - 6a5bfa319bc3 "mm/memory-failure: replace magic number 3 with GET_PAGE_MAX_RETRY_NUM"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260402064946.1124250-1-18810879172@163.com
-    - d17c2868228e "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
+    - b06e6dea75fd "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260515020144.164941-1-ye.liu@linux.dev
-    - cc70809c8644 "mm/memory-failure: use zone_pcp_disable() for poison handling"
+    - 54375a7670da "mm/memory-failure: use zone_pcp_disable() for poison handling"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260514085754.84097-1-kaitao.cheng@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

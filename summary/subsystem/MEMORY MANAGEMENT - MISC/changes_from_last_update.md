@@ -1,9 +1,17 @@
 - baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 2 commits
+  - new commits
+    - 63f959341a24 "mm/cma: fix reserved page leak on activation failure"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260522062658.4095405-1-songmuchun@bytedance.com
+    - d45ac7819fcb "mm/cma_sysfs: skip inactive CMA areas in sysfs"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260522131434.78532-1-kaitao.cheng@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 95 -> 95 commits (no change)
@@ -15,11 +23,47 @@
     - reviewer, nobody: 4 -> 4 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - maintainer, nobody: 15 -> 15 commits (no change)
-- mm-new: 15 -> 15 commits (no change)
-  - series: 1 (13) -> 1 (13) (no change)
+  - changed commits
+    - series "khugepaged: add mTHP collapse support", v18. (14)
+      - 7a8eae31d325 "mm/khugepaged: generalize alloc_charge_folio() (1/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260522150009.121603-3-npache@redhat.com"
+        - dropped "Link: https://lore.kernel.org/20260511185817.686831-3-npache@redhat.com"
+        - Link: https://lore.kernel.org/20260522150009.121603-3-npache@redhat.com
+      - ec4a7f9b9684 "mm/khugepaged: add per-order mTHP collapse failure statistics (7/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com"
+        - dropped "Link: https://lore.kernel.org/20260511185817.686831-9-npache@redhat.com"
+        - Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com
+      - e6900495deab "Documentation: mm: update the admin guide for mTHP collapse (13/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260522150009.121603-15-npache@redhat.com"
+        - dropped "Link: https://lore.kernel.org/20260511185817.686831-15-npache@redhat.com"
+        - Link: https://lore.kernel.org/20260522150009.121603-15-npache@redhat.com
+    - ff20760c01c2 "Documentation/admin-guide/mm: fix typos in transhuge.rst"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260520051751.74396-1-leon.hwang@linux.dev
+- mm-new: 15 -> 16 commits
+  - series: 1 (13) -> 1 (14)
     - no role, nobody: 5 -> 5 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm/damon: fix macro arguments and clarify quota goals doc", v2. (2)
+      - deb247c90caf "Docs/admin-guide/mm/damon/usage: clarify current_value of quota goals (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260521202020.126500-3-maksym.shcherba@lnu.edu.ua
+  - changed commits
+    - series "selftests/mm: fix failures and robustness improvements", v7. (13)
+      - 243f839dd6fb "selftests/mm: restore default nr_hugepages value via exit trap in charge_reserved_hugetlb.sh (0/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Fixes: 7d695b1c3695 ("selftests/mm: save and restore nr_hugepages value")"
+        - dropped "Fixes: 7d695b1c3695b ("selftests/mm: save and restore nr_hugepages value")"
+        - Link: https://lore.kernel.org/cover.1779296493.git.sayalip@linux.ibm.com
+        - Link: https://lore.kernel.org/5b8fbb29cd6ceffe6752e0af104f60cec072aa10.1779296493.git.sayalip@linux.ibm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

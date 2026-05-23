@@ -6,15 +6,11 @@
     - e16f17a9c5af "mm: memcontrol: propagate NMI slab stats to memcg vmstats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260518082830.599102-1-alex@ghiti.fr
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - maintainer, no role : 2 commits
+    - maintainer, no role : 1 commits
   - full commits list
-    - f13ef6358a76 "memcg: cache obj_stock by memcg, not by objcg pointer"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260518222827.110696-1-shakeel.butt@linux.dev
-      - Link: https://lore.kernel.org/19693be6-7132-446e-b3fc-b7e9f56e5949@linux.dev/ [1]
-    - d9e44d2314e7 "memcg: use round-robin victim selection in refill_stock"
+    - fec50474cd61 "memcg: use round-robin victim selection in refill_stock"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -25,32 +21,50 @@
     - reviewer, maintainer: 2 commits
     - maintainer, maintainer: 2 commits
   - full commits list
-      - 482fee8e5c0e "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
+      - b6f25a257bbc "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
-    - 784792212ef3 "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
+    - e449edffa5c1 "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
     - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (2 commits)
-      - e66da745bb81 "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
+      - 4db353f5a68a "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
         - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
-      - d6579f10ec7f "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
+      - 434932cc0605 "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
-      - fd986dc12fbc "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
+      - 352fcbdb336f "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - 5b14c6928f0d "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
+      - 239866e3fffe "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - d08767ecf489 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
+      - d35c175d14e8 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-      - 12e8a543de5d "mm/memcg: remove no longer used swap cgroup array" (11/12)
+      - a8d3ea941fe9 "mm/memcg: remove no longer used swap cgroup array" (11/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 4 total, 1 (4) series, 0 non-series commits
+  - author/reviewer role stat
+    - maintainer, nobody: 1 commits
+    - maintainer, reviewer: 3 commits
+  - full commits list
+    - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v2. (4 commits)
+      - e1c81eb99a48 "memcg: store node_id instead of pglist_data pointer" (0/4)
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260522011908.1669332-1-shakeel.butt@linux.dev
+        - Link: https://lore.kernel.org/20260522011908.1669332-2-shakeel.butt@linux.dev
+      - 3a0ff4aa3145 "memcg: uint16_t for nr_bytes in obj_stock_pcp" (1/4)
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260522011908.1669332-3-shakeel.butt@linux.dev
+      - 31f7b184e1f6 "memcg: int16_t for cached slab stats" (2/4)
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260522011908.1669332-4-shakeel.butt@linux.dev
+      - 3599c5ee90e8 "memcg: multi objcg charge support" (3/4)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260522011908.1669332-5-shakeel.butt@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
