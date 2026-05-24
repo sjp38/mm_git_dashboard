@@ -2,14 +2,10 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 3 -> 4 commits
+- mm-hotfixes-unstable: 4 -> 4 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 3 commits
-  - new commits
-    - 5cf697132e29 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
+    - no role, maintainer: 3 -> 3 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 4 -> 4 commits (no change)

@@ -11,12 +11,12 @@
     - reviewer, reviewer: 14 commits
     - reviewer, maintainer: 2 commits
   - full commits list
-    - de0b3fff5a3f "mm/vmscan: add balance_pgdat begin/end tracepoints"
+    - 69b4637408b9 "mm/vmscan: add balance_pgdat begin/end tracepoints"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260424031418.174597-1-b.suvonov@sjtu.edu.cn
       - Link: https://lore.kernel.org/20260423103753.546582-1-b.suvonov@sjtu.edu.cn
     - series "mm/mglru: improve reclaim loop and dirty folio", v7. (15 commits)
-      - 964ec532e148 "mm/mglru: consolidate common code for retrieving evictable size" (0/15)
+      - 65520382f1eb "mm/mglru: consolidate common code for retrieving evictable size" (0/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-1-02fabb92dc43@tencent.com
@@ -26,75 +26,75 @@
         - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [4]
         - Link: https://lore.kernel.org/linux-mm/acgNCzRDVmSbXrOE@KASONG-MC4/ [5]
         - Link: https://lore.kernel.org/linux-mm/20260417025123.2971253-1-wxy2009nrrr@163.com/ [6]
-      - 47319e2f2d8d "mm/mglru: rename variables related to aging and rotation" (1/15)
+      - 8fc76f068127 "mm/mglru: rename variables related to aging and rotation" (1/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-2-02fabb92dc43@tencent.com
-      - 19d077714db9 "mm/mglru: relocate the LRU scan batch limit to callers" (2/15)
+      - 00463e02ae6f "mm/mglru: relocate the LRU scan batch limit to callers" (2/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-3-02fabb92dc43@tencent.com
-      - e9e0383d174b "mm/mglru: restructure the reclaim loop" (3/15)
+      - 95f81a6a9742 "mm/mglru: restructure the reclaim loop" (3/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-4-02fabb92dc43@tencent.com
-      - 2c4cc2da9318 "mm/mglru: scan and count the exact number of folios" (4/15)
+      - b787f33d6ba1 "mm/mglru: scan and count the exact number of folios" (4/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-5-02fabb92dc43@tencent.com
-      - e6a1b5e1c1ab "mm/mglru: avoid reclaim type fall back when isolation makes no progress" (5/15)
+      - 524738baa624 "mm/mglru: avoid reclaim type fall back when isolation makes no progress" (5/15)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/linux-mm/CAGsJ_4zjdOYEtuO6gNjABm7NDxW0skzBFNRNee-k2D6VwsYEQA@mail.gmail.com/ [1]
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-6-02fabb92dc43@tencent.com
-      - 532c72e5f3c6 "mm/mglru: use a smaller batch for reclaim" (6/15)
+      - 7e761983b36d "mm/mglru: use a smaller batch for reclaim" (6/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-7-02fabb92dc43@tencent.com
-      - 948a2cb5881b "mm/mglru: don't abort scan immediately right after aging" (7/15)
+      - 6387bcb4c29d "mm/mglru: don't abort scan immediately right after aging" (7/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-8-02fabb92dc43@tencent.com
-      - e4dcad6e7bd4 "mm/mglru: remove redundant swap constrained check upon isolation" (8/15)
+      - 7924db5d01c6 "mm/mglru: remove redundant swap constrained check upon isolation" (8/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-9-02fabb92dc43@tencent.com
-      - 6d329d9a9f84 "mm/mglru: use the common routine for dirty/writeback reactivation" (9/15)
+      - 46c2767df4f7 "mm/mglru: use the common routine for dirty/writeback reactivation" (9/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-10-02fabb92dc43@tencent.com
-      - c0940ec98489 "mm/mglru: simplify and improve dirty writeback handling" (10/15)
+      - 05731f1a43ce "mm/mglru: simplify and improve dirty writeback handling" (10/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-11-02fabb92dc43@tencent.com
         - Link: https://lore.kernel.org/linux-mm/20241026115714.1437435-1-jingxiangzeng.cas@gmail.com/ [1]
-      - 984372a9e7a3 "mm/mglru: remove no longer used reclaim argument for folio protection" (11/15)
+      - f86d9780738b "mm/mglru: remove no longer used reclaim argument for folio protection" (11/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-12-02fabb92dc43@tencent.com
-      - 5a7138e6a752 "mm/vmscan: remove sc->file_taken" (12/15)
+      - 5e95e9db6dcc "mm/vmscan: remove sc->file_taken" (12/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-13-02fabb92dc43@tencent.com
-      - 372f6ace5a28 "mm/vmscan: remove sc->unqueued_dirty" (13/15)
+      - 0851adef10bd "mm/vmscan: remove sc->unqueued_dirty" (13/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-14-02fabb92dc43@tencent.com
-      - c9ce128da3c5 "mm/vmscan: unify writeback reclaim statistic and throttling" (14/15)
+      - 8e8cbd98dcd1 "mm/vmscan: unify writeback reclaim statistic and throttling" (14/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-15-02fabb92dc43@tencent.com
-    - cefdb2ec21a9 "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
+    - afadb7f77733 "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260418120233.7162-1-baohua@kernel.org
       - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
       - Link: https://lore.kernel.org/lkml/20160606022724.GA26227@yexl-desktop/ [2]
       - Link: https://lore.kernel.org/lkml/20210120173612.20913-1-will@kernel.org/ [3]
-    - 8f8e8a816380 "mm/vmscan: fix typos in comments"
+    - 793eee43959a "mm/vmscan: fix typos in comments"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260416062302.727468-1-gxxa03070307@gmail.com
-    - c7de8ecda5a0 "mm/vmpressure: skip socket pressure for costly order reclaim"
+    - 4cee46fafc85 "mm/vmpressure: skip socket pressure for costly order reclaim"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260406195014.112521-1-jp.kobryn@linux.dev
-    - cb501feae19c "mm/lruvec: preemptively free dead folios during lru_add drain"
+    - 58daa9b95d3c "mm/lruvec: preemptively free dead folios during lru_add drain"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260425053417.351146-1-jp.kobryn@linux.dev
     - series "mm: misc cleanups from __GFP_UNMAPPED series". (4 commits)
-      - 6b112da54e7e "mm: introduce for_each_free_list()" (0/4)
+      - f209bf0bdaba "mm: introduce for_each_free_list()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
         - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
-      - 352fcbdb336f "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
+      - d4207443a65a "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - d35c175d14e8 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
+      - 97d7efe7c086 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

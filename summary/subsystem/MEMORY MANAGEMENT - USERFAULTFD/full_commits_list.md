@@ -4,18 +4,22 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - b8540f4938f8 "userfaultfd: snapshot VMA state across UFFDIO_COPY retry"
+    - 262a952556fd "userfaultfd: snapshot VMA state across UFFDIO_COPY retry"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260519052516.3315196-1-rppt@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, nobody: 2 commits
   - full commits list
-    - 21bf879cb50d "userfaultfd: ensure mremap_userfaultfd_fail() releases mmap_changing"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://sashiko.dev/#/patchset/20260430113512.115938-1-rppt@kernel.org
-      - Link: https://lore.kernel.org/20260513081416.495963-1-rppt@kernel.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+    - series "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c", v3. (2 commits)
+      - 9ce3fe034a74 "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c" (0/2)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260523173759.3964908-1-rppt@kernel.org
+        - Link: https://lore.kernel.org/20260523173759.3964908-2-rppt@kernel.org
+      - 305b2c73219d "userfaultfd: make functions that are not used outside uffd static" (1/2)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260523173759.3964908-3-rppt@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

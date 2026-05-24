@@ -7,10 +7,10 @@
     - no role, nobody: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 18677cce00e0 "mm/percpu-internal.h: optimise pcpu_chunk struct to save memory"
+    - bfac87005821 "mm/percpu-internal.h: optimise pcpu_chunk struct to save memory"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260511070309.44044-1-zenghongling@kylinos.cn
-    - 056965c2fc1f "percpu: introduce struct pcpu_region"
+    - 30773173af8e "percpu: introduce struct pcpu_region"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/all/aegQgyf3KuIZMK9x@palisades.local/
       - Link: https://lore.kernel.org/20260513085117.1024175-3-joonwonkang@google.com

@@ -4,32 +4,19 @@
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 8 -> 11 commits
+- mm-hotfixes-unstable: 11 -> 11 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 3 -> 4 commits
-    - no role, no role : 1 -> 2 commits
-    - no role, maintainer: 2 -> 3 commits
-    - maintainer, nobody: 0 -> 1 commits
-    - maintainer, no role : 2 -> 1 commits
-  - new commits
-    - 63f959341a24 "mm/cma: fix reserved page leak on activation failure"
+    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - 72989685dd3d "mm/cma: fix reserved page leak on activation failure"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260522062658.4095405-1-songmuchun@bytedance.com
-    - d45ac7819fcb "mm/cma_sysfs: skip inactive CMA areas in sysfs"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260522131434.78532-1-kaitao.cheng@linux.dev
-    - 5cf697132e29 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
-    - 00810a538e89 "mm-memory-failure-fix-hugetlb_lock-aa-deadlock-in-get_huge_page_for_hwpoison-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://sashiko.dev/#/patchset/20260522010305.4099834-1-mawupeng1@huawei.com
-      - Link: https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com
-  - dropped commits
-    - f13ef6358a76 "memcg: cache obj_stock by memcg, not by objcg pointer"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260518222827.110696-1-shakeel.butt@linux.dev
-      - Link: https://lore.kernel.org/19693be6-7132-446e-b3fc-b7e9f56e5949@linux.dev/ [1]
+      - added "Link: https://lore.kernel.org/20260523060123.2207992-1-songmuchun@bytedance.com"
+      - dropped "Link: https://lore.kernel.org/20260522062658.4095405-1-songmuchun@bytedance.com"
+      - Link: https://lore.kernel.org/20260523060123.2207992-1-songmuchun@bytedance.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 204 -> 204 commits (no change)
@@ -44,182 +31,23 @@
     - reviewer, maintainer: 8 -> 8 commits (no change)
     - maintainer, nobody: 44 -> 44 commits (no change)
     - maintainer, maintainer: 7 -> 7 commits (no change)
-  - new commits
-    - series "khugepaged: add mTHP collapse support", v18. (14)
-      - c6c3ca98db0b "mm/khugepaged: Introduce mTHP collapse support (10/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522150009.121603-12-npache@redhat.com
-  - changed commits
-    - series "khugepaged: add mTHP collapse support", v18. (14)
-      - 5e90b2bee238 "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support (0/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260522150009.121603-1-npache@redhat.com"
-        - added "Link: https://lore.kernel.org/20260522150009.121603-2-npache@redhat.com"
-        - added "Link: https://lore.kernel.org/lkml/20250515033857.132535-1-npache@redhat.com/ [2]"
-        - added "Link: https://gitlab.com/npache/khugepaged_mthp_test [1]"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-1-npache@redhat.com"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-2-npache@redhat.com"
-        - Link: https://lore.kernel.org/20260522150009.121603-1-npache@redhat.com
-        - Link: https://lore.kernel.org/20260522150009.121603-2-npache@redhat.com
-        - Link: https://gitlab.com/npache/khugepaged_mthp_test [1]
-        - Link: https://lore.kernel.org/lkml/20250515033857.132535-1-npache@redhat.com/ [2]
-      - 7a8eae31d325 "mm/khugepaged: generalize alloc_charge_folio() (1/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260522150009.121603-3-npache@redhat.com"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-3-npache@redhat.com"
-        - Link: https://lore.kernel.org/20260522150009.121603-3-npache@redhat.com
-      - 5c290071cfb0 "mm/khugepaged: rework max_ptes_* handling with helper functions (2/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260522150009.121603-4-npache@redhat.com"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-4-npache@redhat.com"
-        - Link: https://lore.kernel.org/20260522150009.121603-4-npache@redhat.com
-      - 642b7f4c26b7 "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support (3/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260522150009.121603-5-npache@redhat.com"
-        - added "Acked-by: David Hildenbrand (arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-5-npache@redhat.com"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260522150009.121603-5-npache@redhat.com
-        - Link: https://lore.kernel.org/all/e46ab3ab-a3d7-4fb7-9970-d0704bd5d05a@arm.com [1]
-        - Link: https://lore.kernel.org/all/37375ace-5601-4d6c-9dac-d1c8268698e9@redhat.com [2]
-      - 0a6e4019c8d4 "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped (4/14)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260522150009.121603-6-npache@redhat.com"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-6-npache@redhat.com"
-        - Link: https://lore.kernel.org/20260522150009.121603-6-npache@redhat.com
-      - 812037b54344 "mm/khugepaged: generalize collapse_huge_page for mTHP collapse (5/14)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260522150009.121603-7-npache@redhat.com"
-        - added "Acked-by: David Hildenbrand (arm) <david@kernel.org>"
-        - added "Cc: Usama Arif <usamaarif642@gmail.com>"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-7-npache@redhat.com"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260522150009.121603-7-npache@redhat.com
-      - 45b0317911b8 "mm/khugepaged: skip collapsing mTHP to smaller orders (6/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260522150009.121603-8-npache@redhat.com"
-        - added "Acked-by: David Hildenbrand (arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-8-npache@redhat.com"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260522150009.121603-8-npache@redhat.com
-        - Link: https://lore.kernel.org/lkml/20241216165105.56185-11-dev.jain@arm.com/ [1]
-      - ec4a7f9b9684 "mm/khugepaged: add per-order mTHP collapse failure statistics (7/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-9-npache@redhat.com"
-        - Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com
-      - 8178be4c9ffc "mm/khugepaged: improve tracepoints for mTHP orders (8/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260522150009.121603-10-npache@redhat.com"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-10-npache@redhat.com"
-        - Link: https://lore.kernel.org/20260522150009.121603-10-npache@redhat.com
-      - 8b03ae042256 "mm/khugepaged: introduce collapse_allowable_orders helper function (9/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260522150009.121603-11-npache@redhat.com"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-11-npache@redhat.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260522150009.121603-11-npache@redhat.com
-      - a4388a8925ef "mm/khugepaged: avoid unnecessary mTHP collapse attempts (11/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260522150009.121603-13-npache@redhat.com"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-13-npache@redhat.com"
-        - Link: https://lore.kernel.org/20260522150009.121603-13-npache@redhat.com
-      - 8a39b77b48bf "mm/khugepaged: run khugepaged for all orders (12/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260522150009.121603-14-npache@redhat.com"
-        - dropped "Link: https://lore.kernel.org/20260511185817.686831-14-npache@redhat.com"
-        - Link: https://lore.kernel.org/20260522150009.121603-14-npache@redhat.com
-    - 135dd3234452 "mm/page_alloc: drop a misleading __always_inline"
-      - Authored by a reviewer, reviewed by a reviewer
-      - added "Reviewed-by: Vishal Moola <vishal.moola@gmail.com>"
-      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - Link: https://lore.kernel.org/all/20260517-b4-drop-always-inline-v1-1-97b90930e8b8@google.com/
-      - Link: https://lore.kernel.org/all/016c8bef-57ef-44ef-bf60-86dbfd368dcd@kernel.org/
-    - series "refactors thpsize_shmem_enabled_store() and thpsize_shmem_enabled_show()", v3. (2)
-      - 61bdbfafdec2 "mm: shmem: refactor thpsize_shmem_enabled_store() with sysfs_match_string() (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
-        - Link: https://lore.kernel.org/20260518123238.56344-1-ranxiaokai627@163.com
-        - Link: https://lore.kernel.org/20260518123238.56344-2-ranxiaokai627@163.com
-      - 731c8c98dad8 "mm: shmem: refactor thpsize_shmem_enabled_show() with helper arrays (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
-        - Link: https://lore.kernel.org/20260518123238.56344-3-ranxiaokai627@163.com
-  - dropped commits
-    - series "khugepaged: mTHP support", v17. (14)
-      - 74a177a16c0e "mm/khugepaged: introduce mTHP collapse support (10/14)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260511185817.686831-12-npache@redhat.com
-- mm-new: 4 -> 21 commits
-  - series: 1 (3) -> 4 (19)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-new: 21 -> 23 commits
+  - series: 4 (19) -> 5 (21)
+    - no role, nobody: 1 -> 3 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 0 -> 3 commits
+    - reviewer, nobody: 3 -> 3 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 0 -> 11 commits
-    - maintainer, reviewer: 0 -> 3 commits
+    - maintainer, nobody: 11 -> 11 commits (no change)
+    - maintainer, reviewer: 3 -> 3 commits (no change)
   - new commits
-    - series "remove mmap_action success, error hooks", v2. (3)
-      - ffe1a6ec5412 "drivers/char/mem: eliminate unnecessary use of success_hook (0/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org
-        - Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org
-      - 6418070398a3 "mm/vma: remove mmap_action->success_hook (1/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org
-      - 75f6a1d62dad "mm/vma: eliminate mmap_action->error_hook, introduce error_filter (2/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/e770b28427937057fa953ac380a134b24acd8bb4.1779462249.git.ljs@kernel.org
-    - series "mm/damon: minor improvements for code readability and tests". (14)
-      - c2c42875fb7f "mm/damon/core: safely handle no region case in damon_set_regions() (0/14)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522154026.80546-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260522154026.80546-2-sj@kernel.org
-      - aef0e6167c5b "mm/damon/core: do not use region out of a loop in damon_set_regions() (1/14)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522154026.80546-3-sj@kernel.org
-      - 2e0da24d8d9e "mm/damon/tests/vaddr-kunit: replace damon_add_region() with damon_set_regions() (3/14)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522154026.80546-5-sj@kernel.org
-      - 17834da7eb3a "mm/damon/core: hide damon_add_region() (4/14)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522154026.80546-6-sj@kernel.org
-      - b00eb5679116 "mm/damon/core: hide damon_insert_region() (5/14)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522154026.80546-7-sj@kernel.org
-      - b98724759ab6 "mm/damon/core: hide damon_destroy_region() (6/14)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522154026.80546-8-sj@kernel.org
-      - b97305041eaf "mm/damon/core: add kdamond_call() debug_sanity check (7/14)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522154026.80546-9-sj@kernel.org
-      - 3ef47e324982 "mm/damon/core: remove damon_verify_nr_regions() (8/14)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522154026.80546-10-sj@kernel.org
-      - 2255e0ab5f35 "mm/damon/tests/core-kunit: add damon_set_regions() test cases (9/14)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522154026.80546-11-sj@kernel.org
-    - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v2. (4)
-      - e1c81eb99a48 "memcg: store node_id instead of pglist_data pointer (0/4)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260522011908.1669332-1-shakeel.butt@linux.dev
-        - Link: https://lore.kernel.org/20260522011908.1669332-2-shakeel.butt@linux.dev
-      - 3a0ff4aa3145 "memcg: uint16_t for nr_bytes in obj_stock_pcp (1/4)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260522011908.1669332-3-shakeel.butt@linux.dev
-      - 31f7b184e1f6 "memcg: int16_t for cached slab stats (2/4)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260522011908.1669332-4-shakeel.butt@linux.dev
-      - 3599c5ee90e8 "memcg: multi objcg charge support (3/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522011908.1669332-5-shakeel.butt@linux.dev
-    - c9323a9bf619 "mm/damon/core: trace esz at first setup"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260520150311.80925-1-sj@kernel.org
+    - series "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c", v3. (2)
+      - 9ce3fe034a74 "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260523173759.3964908-1-rppt@kernel.org
+        - Link: https://lore.kernel.org/20260523173759.3964908-2-rppt@kernel.org
+      - 305b2c73219d "userfaultfd: make functions that are not used outside uffd static (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260523173759.3964908-3-rppt@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)
