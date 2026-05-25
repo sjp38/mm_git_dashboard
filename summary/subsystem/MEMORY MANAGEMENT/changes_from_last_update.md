@@ -4,50 +4,185 @@
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 11 -> 11 commits (no change)
+- mm-hotfixes-unstable: 11 -> 13 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, nobody: 4 -> 3 commits
+    - no role, no role : 2 -> 4 commits
     - no role, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 2 commits
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 0184b0254774 "mm/damon/ops-common: call folio_test_lru() after folio_get()"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260525162256.8317-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260517234112.89245-1-sj@kernel.org [1]
+    - 4ca7110ba067 "mm/hugetlb_vmemmap: fix incorrect vmemmap restore in rollback"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260525025213.2229628-1-songmuchun@bytedance.com
   - changed commits
-    - 72989685dd3d "mm/cma: fix reserved page leak on activation failure"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260523060123.2207992-1-songmuchun@bytedance.com"
-      - dropped "Link: https://lore.kernel.org/20260522062658.4095405-1-songmuchun@bytedance.com"
+    - 7044fdf8d9c3 "memcg: use round-robin victim selection in refill_stock"
+      - Authored by a maintainer, reviewed by no role player
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
+      - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
+    - 754f7bab79ca "mm/cma_sysfs: skip inactive CMA areas in sysfs"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260524140420.61864-1-kaitao.cheng@linux.dev"
+      - added "Suggested-by: Muchun Song <songmuchun@bytedance.com>"
+      - added "Suggested-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260524140420.61864-1-kaitao.cheng@linux.dev
+      - Link: https://lore.kernel.org/20260522131434.78532-1-kaitao.cheng@linux.dev
+    - b705c6f4ebd4 "mm/cma: fix reserved page leak on activation failure"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
       - Link: https://lore.kernel.org/20260523060123.2207992-1-songmuchun@bytedance.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 204 -> 204 commits (no change)
-  - series: 27 (142) -> 27 (142) (no change)
+- mm-unstable: 204 -> 218 commits
+  - series: 27 (142) -> 28 (154)
     - no role, nobody: 9 -> 9 commits (no change)
     - no role, no role : 29 -> 29 commits (no change)
     - no role, reviewer: 37 -> 37 commits (no change)
     - no role, maintainer: 34 -> 34 commits (no change)
-    - reviewer, nobody: 2 -> 2 commits (no change)
+    - reviewer, nobody: 2 -> 6 commits
     - reviewer, no role : 7 -> 7 commits (no change)
     - reviewer, reviewer: 27 -> 27 commits (no change)
     - reviewer, maintainer: 8 -> 8 commits (no change)
-    - maintainer, nobody: 44 -> 44 commits (no change)
+    - maintainer, nobody: 44 -> 54 commits
     - maintainer, maintainer: 7 -> 7 commits (no change)
-- mm-new: 21 -> 23 commits
-  - series: 4 (19) -> 5 (21)
-    - no role, nobody: 1 -> 3 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 3 -> 3 commits (no change)
-    - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 11 -> 11 commits (no change)
-    - maintainer, reviewer: 3 -> 3 commits (no change)
   - new commits
-    - series "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c", v3. (2)
-      - 9ce3fe034a74 "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c (0/2)"
+    - series "khugepaged: add mTHP collapse support", v18. (14)
+      - ac8c6073bf5d "mm/khugepaged: introduce mTHP collapse support (10/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260522150009.121603-12-npache@redhat.com
+      - e69aa42e5fd0 "fix potential use-after-free of vma in mthp_collapse() (11/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/2b2cda8c-358a-4a5c-989c-ae42593ef2ea@redhat.com
+    - series "mm/vmalloc: free unused pages on vrealloc() shrink", v14. (5)
+      - 411ba8589009 "mm-vmalloc-use-physical-page-count-in-vread_iter-for-vm_alloc-areas-fix (3/5)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260523173759.3964908-1-rppt@kernel.org
-        - Link: https://lore.kernel.org/20260523173759.3964908-2-rppt@kernel.org
-      - 305b2c73219d "userfaultfd: make functions that are not used outside uffd static (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260523173759.3964908-3-rppt@kernel.org
+        - Link: https://lore.kernel.org/aff47da5-4fd5-481d-be18-e1eb99639490@zohomail.in
+  - changed commits
+    - 890d1fe19bee "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260520122228.201550-1-d@ilvokhin.com
+    - series "remove mmap_action success, error hooks", v2. (3)
+      - dc9dbeaea348 "drivers/char/mem: eliminate unnecessary use of success_hook (0/3)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org
+        - Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org
+      - dd09969a4cf2 "mm/vma: remove mmap_action->success_hook (1/3)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org
+      - ac6d15504e75 "mm/vma: eliminate mmap_action->error_hook, introduce error_filter (2/3)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/e770b28427937057fa953ac380a134b24acd8bb4.1779462249.git.ljs@kernel.org
+    - series "mm/damon: minor improvements for code readability and tests". (14)
+      - 2ecc5346d6eb "mm/damon/core: safely handle no region case in damon_set_regions() (0/14)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260522154026.80546-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260522154026.80546-2-sj@kernel.org
+      - 4521be775a9b "mm/damon/core: do not use region out of a loop in damon_set_regions() (1/14)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260522154026.80546-3-sj@kernel.org
+      - d7d5f045f500 "mm/damon/tests/vaddr-kunit: replace damon_add_region() with damon_set_regions() (3/14)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260522154026.80546-5-sj@kernel.org
+      - 157b4d3e0a2d "mm/damon/core: hide damon_add_region() (4/14)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260522154026.80546-6-sj@kernel.org
+      - 404e0c8b27e9 "mm/damon/core: hide damon_insert_region() (5/14)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260522154026.80546-7-sj@kernel.org
+      - 58f171689f53 "mm/damon/core: hide damon_destroy_region() (6/14)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260522154026.80546-8-sj@kernel.org
+      - 6cef502a595d "mm/damon/core: add kdamond_call() debug_sanity check (7/14)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260522154026.80546-9-sj@kernel.org
+      - 2cd279bfc6dc "mm/damon/core: remove damon_verify_nr_regions() (8/14)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260522154026.80546-10-sj@kernel.org
+      - 22376855a486 "mm/damon/tests/core-kunit: add damon_set_regions() test cases (9/14)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260522154026.80546-11-sj@kernel.org
+    - 40c3face4ce1 "mm/damon/core: trace esz at first setup"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260520150311.80925-1-sj@kernel.org
+    - 4aedd91eef75 "kasan/test: only do kmalloc_double_kzfree for generic mode"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260524031053.381776-1-wsw9603@163.com"
+      - added "Reviewed-by: Andrey Konovalov <andreyknvl@gmail.com>"
+      - dropped "Link: https://lore.kernel.org/20260517071713.353579-1-wsw9603@163.com"
+      - dropped "Cc: Andrey Konovalov <andreyknvl@gmail.com>"
+      - Link: https://lore.kernel.org/20260524031053.381776-1-wsw9603@163.com
+  - dropped commits
+    - series "khugepaged: add mTHP collapse support", v18. (14)
+      - 6da00aa6643c "mm/khugepaged: Introduce mTHP collapse support (10/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260522150009.121603-12-npache@redhat.com
+- mm-new: 23 -> 9 commits
+  - series: 5 (21) -> 3 (7)
+    - no role, nobody: 3 -> 5 commits
+    - no role, reviewer: 1 -> 2 commits
+    - reviewer, nobody: 3 -> 0 commits
+    - reviewer, maintainer: 2 -> 2 commits (no change)
+    - maintainer, nobody: 11 -> 0 commits
+    - maintainer, reviewer: 3 -> 0 commits
+  - new commits
+    - 796dce21a62d "mm: make mmap_miss accounting symmetric for VM_SEQ_READ"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260525145751.2671248-1-usama.arif@linux.dev
+    - c06c9ec79108 "mm/dmapool: use static key for boot-time debug enablement"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260524034015.1830-1-lirongqing@baidu.com
+  - changed commits
+    - series "refactors thpsize_shmem_enabled_store() and thpsize_shmem_enabled_show()", v4. (2)
+      - cde2455eecdd "mm: shmem: refactor thpsize_shmem_enabled_store() with sysfs_match_string() (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-new
+        - added "Link: https://lore.kernel.org/20260525102700.68707-2-ranxiaokai627@163.com"
+        - added "Link: https://lore.kernel.org/20260525102700.68707-1-ranxiaokai627@163.com"
+        - added "Cc: Ran Xiaokai <ran.xiaokai@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260518123238.56344-2-ranxiaokai627@163.com"
+        - dropped "Link: https://lore.kernel.org/20260518123238.56344-1-ranxiaokai627@163.com"
+        - Link: https://lore.kernel.org/20260525102700.68707-1-ranxiaokai627@163.com
+        - Link: https://lore.kernel.org/20260525102700.68707-2-ranxiaokai627@163.com
+      - 186ee5ec079e "mm: shmem: refactor thpsize_shmem_enabled_show() with helper arrays (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-new
+        - added "Link: https://lore.kernel.org/20260525102700.68707-3-ranxiaokai627@163.com"
+        - dropped "Link: https://lore.kernel.org/20260518123238.56344-3-ranxiaokai627@163.com"
+        - Link: https://lore.kernel.org/20260525102700.68707-3-ranxiaokai627@163.com
+  - dropped commits
+    - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v2. (4)
+      - 785f1781e1f3 "memcg: store node_id instead of pglist_data pointer (0/4)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260522011908.1669332-1-shakeel.butt@linux.dev
+        - Link: https://lore.kernel.org/20260522011908.1669332-2-shakeel.butt@linux.dev
+      - 56c4af09d3b5 "memcg: uint16_t for nr_bytes in obj_stock_pcp (1/4)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260522011908.1669332-3-shakeel.butt@linux.dev
+      - 2fde71b632b3 "memcg: int16_t for cached slab stats (2/4)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260522011908.1669332-4-shakeel.butt@linux.dev
+      - b7772aa5ddab "memcg: multi objcg charge support (3/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260522011908.1669332-5-shakeel.butt@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)

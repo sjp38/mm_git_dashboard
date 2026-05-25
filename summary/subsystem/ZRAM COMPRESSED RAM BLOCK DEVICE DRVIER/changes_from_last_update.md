@@ -8,8 +8,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 1 (2)
+    - maintainer, nobody: 0 -> 2 commits
+  - new commits
+    - series "zram: writeback fixes". (2)
+      - db9045fc5175 "zram: do not leak blk idx at the end of writeback (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260525044639.1888561-1-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/20260525044639.1888561-2-senozhatsky@chromium.org
+      - f2490ce36352 "zram: clear trailing bytes of compressed writeback pages (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260525044639.1888561-3-senozhatsky@chromium.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

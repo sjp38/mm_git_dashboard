@@ -10,7 +10,7 @@
   - author/reviewer role stat
     - maintainer, no role : 1 commits
   - full commits list
-    - 1cc18d5c3a2f "memcg: use round-robin victim selection in refill_stock"
+    - 7044fdf8d9c3 "memcg: use round-robin victim selection in refill_stock"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -21,50 +21,32 @@
     - reviewer, maintainer: 2 commits
     - maintainer, maintainer: 2 commits
   - full commits list
-      - fb3a9fdab966 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
+      - f382a536dd5f "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
-    - 12632b2480f3 "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
+    - 4a40384648dd "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
     - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (2 commits)
-      - 4726c0b07a34 "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
+      - 1c380ebb022d "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
         - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
-      - b5149c78bd78 "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
+      - 22b14aa279ef "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
-      - d4207443a65a "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
+      - e108f8a8d64c "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - 2f4c4efec542 "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
+      - 753e09a3c912 "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - 97d7efe7c086 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
+      - 59251f61e139 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-      - b08c13ca5e90 "mm/memcg: remove no longer used swap cgroup array" (11/12)
+      - 72f2db17252e "mm/memcg: remove no longer used swap cgroup array" (11/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
-- mm-new: 4 total, 1 (4) series, 0 non-series commits
-  - author/reviewer role stat
-    - maintainer, nobody: 1 commits
-    - maintainer, reviewer: 3 commits
-  - full commits list
-    - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v2. (4 commits)
-      - 785f1781e1f3 "memcg: store node_id instead of pglist_data pointer" (0/4)
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260522011908.1669332-1-shakeel.butt@linux.dev
-        - Link: https://lore.kernel.org/20260522011908.1669332-2-shakeel.butt@linux.dev
-      - 56c4af09d3b5 "memcg: uint16_t for nr_bytes in obj_stock_pcp" (1/4)
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260522011908.1669332-3-shakeel.butt@linux.dev
-      - 2fde71b632b3 "memcg: int16_t for cached slab stats" (2/4)
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260522011908.1669332-4-shakeel.butt@linux.dev
-      - b7772aa5ddab "memcg: multi objcg charge support" (3/4)
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522011908.1669332-5-shakeel.butt@linux.dev
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -8,37 +8,41 @@
       - Link: https://lore.kernel.org/20260515153009.2296191-1-urezki@gmail.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 7 total, 2 (7) series, 0 non-series commits
+- mm-unstable: 8 total, 2 (7) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 6 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 45f1e831458b "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
+      - 41142b261d69 "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
     - series "kasan: hw_tags: Disable tagging for stack and page-tables", v4. (3 commits)
-      - aa5ebaddac7b "vmalloc: add __GFP_SKIP_KASAN support" (0/3)
+      - 958122d073e8 "vmalloc: add __GFP_SKIP_KASAN support" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260429102704.680174-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260429102704.680174-2-dev.jain@arm.com
     - series "mm/vmalloc: free unused pages on vrealloc() shrink", v14. (5 commits)
-      - ae7c6c5c0a66 "mm/vmalloc: extract vm_area_free_pages() helper from vfree()" (0/5)
+      - f3f013c76d29 "mm/vmalloc: extract vm_area_free_pages() helper from vfree()" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-0-70b96ee3e9c9@zohomail.in
         - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-1-70b96ee3e9c9@zohomail.in
         - Link: https://lore.kernel.org/all/20260216-binder-shrink-vec-v3-v6-0-ece8e8593e53@zohomail.in/ [1]
-      - 5c10003fcf45 "mm/vmalloc: use physical page count for vrealloc() grow-in-place check" (1/5)
+      - 24b825dffa55 "mm/vmalloc: use physical page count for vrealloc() grow-in-place check" (1/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-2-70b96ee3e9c9@zohomail.in
-      - ad3f9a78215d "mm/vmalloc: use physical page count in vread_iter() for VM_ALLOC areas" (2/5)
+      - cb5cd6ee5839 "mm/vmalloc: use physical page count in vread_iter() for VM_ALLOC areas" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-3-70b96ee3e9c9@zohomail.in
-      - 675bd1624e84 "mm/vmalloc: free unused pages on vrealloc() shrink" (3/5)
+      - 411ba8589009 "mm-vmalloc-use-physical-page-count-in-vread_iter-for-vm_alloc-areas-fix" (3/5)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/aff47da5-4fd5-481d-be18-e1eb99639490@zohomail.in
+      - e640e8248548 "mm/vmalloc: free unused pages on vrealloc() shrink" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-4-70b96ee3e9c9@zohomail.in
-      - 49985ac1fe81 "lib/test_vmalloc: add vrealloc test case" (4/5)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-5-70b96ee3e9c9@zohomail.in
+    - 3c538815e147 "lib/test_vmalloc: add vrealloc test case"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-5-70b96ee3e9c9@zohomail.in
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -12,10 +12,10 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - 5a5ed50c84c0 "mm/migrate_device: cleanup up PMD Checks and warnings"
+    - 88a6e844d11a "mm/migrate_device: cleanup up PMD Checks and warnings"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260419174747.10701-1-nueralspacetech@gmail.com
-    - d8b081e5829f "mm/migrate: rename PAGE_ migration flags to FOLIO_"
+    - e46f0086c4cd "mm/migrate: rename PAGE_ migration flags to FOLIO_"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260324190706.964555-4-shivankg@amd.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -6,10 +6,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 7 commits (no change)
+- mm-unstable: 7 -> 8 commits
   - series: 2 (7) -> 2 (7) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm/vmalloc: free unused pages on vrealloc() shrink", v14. (5)
+      - 411ba8589009 "mm-vmalloc-use-physical-page-count-in-vread_iter-for-vm_alloc-areas-fix (3/5)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/aff47da5-4fd5-481d-be18-e1eb99639490@zohomail.in
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

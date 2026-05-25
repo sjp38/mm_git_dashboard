@@ -5,20 +5,47 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 42 -> 42 commits (no change)
-  - series: 3 (33) -> 3 (33) (no change)
+- mm-unstable: 42 -> 46 commits
+  - series: 3 (33) -> 3 (35)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, reviewer: 5 -> 8 commits
     - no role, maintainer: 5 -> 5 commits (no change)
-    - reviewer, nobody: 5 -> 5 commits (no change)
+    - reviewer, nobody: 5 -> 6 commits
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 12 -> 12 commits (no change)
     - reviewer, maintainer: 7 -> 7 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+  - new commits
+    - series "khugepaged: add mTHP collapse support", v18. (14)
+      - ac8c6073bf5d "mm/khugepaged: introduce mTHP collapse support (10/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260522150009.121603-12-npache@redhat.com
+      - e69aa42e5fd0 "fix potential use-after-free of vma in mthp_collapse() (11/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/2b2cda8c-358a-4a5c-989c-ae42593ef2ea@redhat.com
+  - changed commits
+    - series "selftests/mm: fix failures and robustness improvements", v7. (13)
+      - da2b05f2fc1c "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test (5/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/33e1bc10753fe82d1217613d8cd496020778cf2b.1779296493.git.sayalip@linux.ibm.com
+      - 36db091925ea "selftests/mm: free dynamically allocated PMD-sized buffers in split_huge_page_test (6/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/060c673b376bbeeed2b1fb1d48a825e846654191.1779296493.git.sayalip@linux.ibm.com
+    - 8d5ce0fc4bc5 "selftests/mm/split_huge_page_test.c: close fd on write error"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260520020336.28914-1-richard.weiyang@gmail.com
+  - dropped commits
+    - series "khugepaged: add mTHP collapse support", v18. (14)
+      - 6da00aa6643c "mm/khugepaged: Introduce mTHP collapse support (10/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260522150009.121603-12-npache@redhat.com
+- mm-new: 3 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, reviewer: 3 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -3,31 +3,109 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 2 -> 3 commits
   - changed commits
-    - 72989685dd3d "mm/cma: fix reserved page leak on activation failure"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260523060123.2207992-1-songmuchun@bytedance.com"
-      - dropped "Link: https://lore.kernel.org/20260522062658.4095405-1-songmuchun@bytedance.com"
+    - 754f7bab79ca "mm/cma_sysfs: skip inactive CMA areas in sysfs"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260524140420.61864-1-kaitao.cheng@linux.dev"
+      - added "Suggested-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Suggested-by: Muchun Song <songmuchun@bytedance.com>"
+      - Link: https://lore.kernel.org/20260524140420.61864-1-kaitao.cheng@linux.dev
+      - Link: https://lore.kernel.org/20260522131434.78532-1-kaitao.cheng@linux.dev
+    - b705c6f4ebd4 "mm/cma: fix reserved page leak on activation failure"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
       - Link: https://lore.kernel.org/20260523060123.2207992-1-songmuchun@bytedance.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 95 -> 95 commits (no change)
-  - series: 3 (83) -> 3 (83) (no change)
-    - no role, nobody: 34 -> 34 commits (no change)
-    - no role, no role : 31 -> 31 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
+- mm-unstable: 95 -> 111 commits
+  - series: 3 (83) -> 4 (96)
+    - no role, nobody: 34 -> 39 commits
+    - no role, no role : 31 -> 38 commits
+    - no role, reviewer: 4 -> 7 commits
+    - no role, maintainer: 5 -> 6 commits
     - reviewer, nobody: 4 -> 4 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - maintainer, nobody: 15 -> 15 commits (no change)
-- mm-new: 16 -> 16 commits (no change)
-  - series: 1 (14) -> 1 (14) (no change)
-    - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 7 -> 7 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "selftests/mm: fix failures and robustness improvements", v7. (13)
+      - 90b7256050b0 "selftests/mm: restore default nr_hugepages value via exit trap in charge_reserved_hugetlb.sh (0/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/cover.1779296493.git.sayalip@linux.ibm.com
+        - Link: https://lore.kernel.org/5b8fbb29cd6ceffe6752e0af104f60cec072aa10.1779296493.git.sayalip@linux.ibm.com
+      - 8b148214e0fc "selftests/mm: fix hugetlb pathname construction in charge_reserved_hugetlb.sh (1/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/04b6b49e4a2acf46319f627caf82b09e6dc1ad7f.1779296493.git.sayalip@linux.ibm.com
+      - 77793ca0b955 "selftests/mm: restore default nr_hugepages value via exit trap in hugetlb_reparenting_test.sh (2/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/29db637c3c6ba6c168f6b33f59f059a0b39c35c8.1779296493.git.sayalip@linux.ibm.com
+      - 6a01c3a3211f "selftests/mm: fix hugetlb pathname construction in hugetlb_reparenting_test.sh (3/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/837ce751965c93f74c95d89587debf1e93281364.1779296493.git.sayalip@linux.ibm.com
+      - d97dbb6da05b "selftests/mm: fix cgroup task placement and drop memory.current checks in hugetlb_reparenting_test.sh (4/13)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/fb57491ba83cb0a499c72922e1579b61bee514db.1779296493.git.sayalip@linux.ibm.com
+      - da2b05f2fc1c "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test (5/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/33e1bc10753fe82d1217613d8cd496020778cf2b.1779296493.git.sayalip@linux.ibm.com
+      - 36db091925ea "selftests/mm: free dynamically allocated PMD-sized buffers in split_huge_page_test (6/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/060c673b376bbeeed2b1fb1d48a825e846654191.1779296493.git.sayalip@linux.ibm.com
+      - bae5cc220dc1 "selftest/mm: register existing mapping with userfaultfd in hugetlb-mremap (7/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/13845da872ed174316173e8996dbb5f181994017.1779296493.git.sayalip@linux.ibm.com
+      - 8e86150414f6 "selftests/mm: ensure destination is hugetlb-backed in hugetlb-mremap (8/13)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/367644df45c65098f23e3945c6a80f4b8a8964a6.1779296493.git.sayalip@linux.ibm.com
+      - 2d432091c770 "selftests/mm: skip uffd-wp-mremap if UFFD write-protect is unsupported (9/13)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/c3c5af76d71d5f4446f773f4de94882efc33ebe4.1779296493.git.sayalip@linux.ibm.com
+      - 0156cdb069fe "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero (10/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/0707e9a0f1b3dd904c4a069b91db317f9c160faa.1779296493.git.sayalip@linux.ibm.com
+      - cb18377ab3c5 "selftests/mm: use ksft_exit_skip() instead of KSFT_SKIP in uffd-stress (11/13)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com
+      - 2e4184c46ef3 "selftests/mm: move hwpoison setup into run_test() and silence modprobe output for memory-failure category (12/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/93441f34f7ef5add47d1a130d03daa79e21b5050.1779296493.git.sayalip@linux.ibm.com
+    - 5d04bca4353b "selftests/mm: clarify alternate unmapping in compaction_test"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/da5e0a8d5152e54152c0d2f456aac2fac35af291.1779296493.git.sayalip@linux.ibm.com
+    - 8d5ce0fc4bc5 "selftests/mm/split_huge_page_test.c: close fd on write error"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260520020336.28914-1-richard.weiyang@gmail.com
+    - series "mm/damon: fix macro arguments and clarify quota goals doc", v2. (2)
+      - 47c8411a5db9 "Docs/admin-guide/mm/damon/usage: clarify current_value of quota goals (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260521202020.126500-3-maksym.shcherba@lnu.edu.ua
+- mm-new: 16 -> 1 commits
+  - series: 1 (14) -> 0 (0)
+    - no role, nobody: 5 -> 1 commits
+    - no role, no role : 7 -> 0 commits
+    - no role, reviewer: 3 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - c06c9ec79108 "mm/dmapool: use static key for boot-time debug enablement"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260524034015.1830-1-lirongqing@baidu.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

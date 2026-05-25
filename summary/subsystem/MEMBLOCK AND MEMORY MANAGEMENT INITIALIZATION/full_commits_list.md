@@ -6,29 +6,29 @@
   - author/reviewer role stat
     - no role, no role : 8 commits
   - full commits list
-      - ffd33a8d4963 "mm/mm_init: fix pageblock migratetype for ZONE_DEVICE compound pages" (4/6)
+      - 442b29d21e11 "mm/mm_init: fix pageblock migratetype for ZONE_DEVICE compound pages" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260428081855.1249045-6-songmuchun@bytedance.com
-      - 61fa4eb1ebfd "mm/mm_init: fix uninitialized struct pages for ZONE_DEVICE" (5/6)
+      - 3d668c3c8540 "mm/mm_init: fix uninitialized struct pages for ZONE_DEVICE" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260428081855.1249045-7-songmuchun@bytedance.com
-      - 6ef32ca751b6 "mm/bootmem_info: drop initialization of page->lru" (1/8)
+      - aa32a09d49a6 "mm/bootmem_info: drop initialization of page->lru" (1/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-2-3fb0be6fc688@kernel.org
-      - 9d6699291566 "mm/bootmem_info: stop using PG_private" (2/8)
+      - 4ac45962f4b1 "mm/bootmem_info: stop using PG_private" (2/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-3-3fb0be6fc688@kernel.org
-      - 75e5c49e3e02 "mm/bootmem_info: remove call to kmemleak_free_part_phys()" (3/8)
+      - 181edca2c798 "mm/bootmem_info: remove call to kmemleak_free_part_phys()" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-4-3fb0be6fc688@kernel.org
-      - 83d7c0e2c772 "mm/bootmem_info: stop marking the pgdat as NODE_INFO" (4/8)
+      - 80f4cad524b9 "mm/bootmem_info: stop marking the pgdat as NODE_INFO" (4/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-5-3fb0be6fc688@kernel.org
-      - 05ba63202838 "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO" (5/8)
+      - 5b12d2adf9ee "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO" (5/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-6-3fb0be6fc688@kernel.org
     - series "mm: misc cleanups from __GFP_UNMAPPED series". (4 commits)
-      - f209bf0bdaba "mm: introduce for_each_free_list()" (0/4)
+      - 2cbd25ed5440 "mm: introduce for_each_free_list()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com

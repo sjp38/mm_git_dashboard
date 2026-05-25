@@ -7,7 +7,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - 4aedd91eef75 "kasan/test: only do kmalloc_double_kzfree for generic mode"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260524031053.381776-1-wsw9603@163.com"
+      - added "Reviewed-by: Andrey Konovalov <andreyknvl@gmail.com>"
+      - dropped "Link: https://lore.kernel.org/20260517071713.353579-1-wsw9603@163.com"
+      - dropped "Cc: Andrey Konovalov <andreyknvl@gmail.com>"
+      - Link: https://lore.kernel.org/20260524031053.381776-1-wsw9603@163.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

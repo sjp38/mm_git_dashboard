@@ -6,21 +6,11 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, nobody: 0 -> 2 commits
-  - new commits
-    - series "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c", v3. (2)
-      - 9ce3fe034a74 "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260523173759.3964908-1-rppt@kernel.org
-        - Link: https://lore.kernel.org/20260523173759.3964908-2-rppt@kernel.org
-      - 305b2c73219d "userfaultfd: make functions that are not used outside uffd static (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260523173759.3964908-3-rppt@kernel.org
+- mm-new: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -5,6 +5,12 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - 7044fdf8d9c3 "memcg: use round-robin victim selection in refill_stock"
+      - Authored by a maintainer, reviewed by no role player
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
+      - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)
@@ -13,10 +19,25 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 4 -> 4 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 3 -> 3 commits (no change)
+- mm-new: 4 -> 0 commits
+  - series: 1 (4) -> 0 (0)
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, reviewer: 3 -> 0 commits
+  - dropped commits
+    - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v2. (4)
+      - 785f1781e1f3 "memcg: store node_id instead of pglist_data pointer (0/4)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260522011908.1669332-1-shakeel.butt@linux.dev
+        - Link: https://lore.kernel.org/20260522011908.1669332-2-shakeel.butt@linux.dev
+      - 56c4af09d3b5 "memcg: uint16_t for nr_bytes in obj_stock_pcp (1/4)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260522011908.1669332-3-shakeel.butt@linux.dev
+      - 2fde71b632b3 "memcg: int16_t for cached slab stats (2/4)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260522011908.1669332-4-shakeel.butt@linux.dev
+      - b7772aa5ddab "memcg: multi objcg charge support (3/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260522011908.1669332-5-shakeel.butt@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -6,17 +6,26 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 22 -> 22 commits (no change)
+- mm-unstable: 22 -> 24 commits
   - series: 2 (14) -> 2 (14) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 14 -> 14 commits (no change)
+    - no role, reviewer: 14 -> 15 commits
     - reviewer, no role : 4 -> 4 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
+  - changed commits
+    - 890d1fe19bee "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260520122228.201550-1-d@ilvokhin.com
+    - 4054b48fa39f "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260519200851.141955-1-jp.kobryn@linux.dev
+- mm-new: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
