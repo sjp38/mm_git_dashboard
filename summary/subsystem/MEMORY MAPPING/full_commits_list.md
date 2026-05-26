@@ -1,4 +1,4 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa
+- baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -9,27 +9,27 @@
     - reviewer, nobody: 3 commits
   - full commits list
     - series "fix MAP_DROPPABLE not supported errno", v4. (3 commits)
-      - 39f2eaaa2e05 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
+      - fa0462b06b10 "mm: fix mmap errno value when MAP_DROPPABLE is not supported" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
         - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
     - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3 commits)
-      - 9b68ecfe7992 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
+      - 7313d785f81b "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
         - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
-    - a33336c23ab6 "mm/mseal: use min/max in mseal_apply"
+    - 5f71da117b0b "mm/mseal: use min/max in mseal_apply"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503115915.18680-3-thorsten.blum@linux.dev
     - series "remove mmap_action success, error hooks", v2. (3 commits)
-      - dc9dbeaea348 "drivers/char/mem: eliminate unnecessary use of success_hook" (0/3)
+      - 44666448d4c1 "drivers/char/mem: eliminate unnecessary use of success_hook" (0/3)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org
         - Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org
-      - dd09969a4cf2 "mm/vma: remove mmap_action->success_hook" (1/3)
+      - a2c8c7dfff34 "mm/vma: remove mmap_action->success_hook" (1/3)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org
-      - ac6d15504e75 "mm/vma: eliminate mmap_action->error_hook, introduce error_filter" (2/3)
+      - c66806895a74 "mm/vma: eliminate mmap_action->error_hook, introduce error_filter" (2/3)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/e770b28427937057fa953ac380a134b24acd8bb4.1779462249.git.ljs@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,31 +1,46 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 54cf41c969da "Revert "mm: introduce a new page type for page pool in page type""
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260515034701.17027-1-byungchul@sk.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 22 -> 24 commits
+- mm-unstable: 24 -> 25 commits
   - series: 2 (14) -> 2 (14) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 14 -> 15 commits
-    - reviewer, no role : 4 -> 4 commits (no change)
+    - no role, reviewer: 15 -> 15 commits (no change)
+    - reviewer, no role : 4 -> 5 commits
     - reviewer, reviewer: 2 -> 2 commits (no change)
+  - new commits
+    - a945efe1da0c "mm/page_alloc: remove VM_BUG_ON()s from pindex helpers"
+      - Authored by a reviewer, reviewed by no role player
+      - Link: https://lore.kernel.org/20260526-page_alloc-unmapped-prep-v2-1-412f4d486115@google.com
+      - Link: https://lore.kernel.org/all/4074a816-9e75-45a6-8141-25459bcc106b@kernel.org/
   - changed commits
-    - 890d1fe19bee "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
+    - b34efad239fe "mm/page_alloc: document that alloc_pages_nolock() uses RCU"
+      - Authored by a reviewer, reviewed by no role player
+      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - Link: https://lore.kernel.org/20260519-nolock-rcu-comment-v1-1-4a630c8794e5@google.com
+    - bb87d65f98de "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
       - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
       - Link: https://lore.kernel.org/20260520122228.201550-1-d@ilvokhin.com
-    - 4054b48fa39f "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260519200851.141955-1-jp.kobryn@linux.dev
-- mm-new: 2 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - series "zram: writeback fixes", v2. (2)
+      - 8fbe7e7069f0 "mm: remove mentions of PageWriteback (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

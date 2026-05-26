@@ -1,18 +1,12 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 3f8968e9cbf9 "mm/rmap: initialize nr_pages to 1 at loop start in try_to_unmap_one"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260518063656.3721056-1-dev.jain@arm.com
+- baseline: v7.1-rc5-20-gd60ec36cab338
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - 8bdebac533d2 "mm: remove page_mapped()" (2/3)
+      - f6014ac12a2c "mm: remove page_mapped()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260427-page_mapped-v1-3-e89c3592c74c@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

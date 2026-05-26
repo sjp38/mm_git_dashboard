@@ -1,4 +1,4 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -8,21 +8,11 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-new: 0 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - a02ed2d24199 "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260525072117.112779-1-hao.ge@linux.dev
-  - changed commits
-    - 0c8f4875b5f8 "lib: split codetag_lock_module_list()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-new
-      - Link: https://lore.kernel.org/20260324214226.3684605-1-bvanassche@acm.org
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 1 -> 0 commits
+- mm-nonmm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits

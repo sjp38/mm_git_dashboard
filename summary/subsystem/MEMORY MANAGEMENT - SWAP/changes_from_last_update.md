@@ -1,4 +1,4 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -13,6 +13,18 @@
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 7 -> 7 commits (no change)
     - maintainer, maintainer: 7 -> 7 commits (no change)
+  - new commits
+    - 9f6e08e70e56 "mm/mglru: use folio_mark_accessed to replace folio_set_active"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260526130938.66253-1-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
+  - dropped commits
+    - 9f085e22304d "mm/mglru: use folio_mark_accessed to replace folio_set_active in PF"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260418120233.7162-1-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
+      - Link: https://lore.kernel.org/lkml/20160606022724.GA26227@yexl-desktop/ [2]
+      - Link: https://lore.kernel.org/lkml/20210120173612.20913-1-will@kernel.org/ [3]
 - mm-new: 4 -> 4 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

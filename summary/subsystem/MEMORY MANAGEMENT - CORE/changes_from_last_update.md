@@ -1,40 +1,40 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 2 -> 2 commits (no change)
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
+- mm-hotfixes-stable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 09e7827e7857 "kernel/fork: validate exit_signal in kernel_clone()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
+      - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com
+      - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
+      - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
+    - 54cf41c969da "Revert "mm: introduce a new page type for page pool in page type""
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260515034701.17027-1-byungchul@sk.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 26 -> 29 commits
-  - series: 4 (15) -> 5 (18)
+- mm-unstable: 29 -> 29 commits (no change)
+  - series: 5 (18) -> 5 (18) (no change)
     - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, nobody: 0 -> 3 commits
+    - reviewer, nobody: 3 -> 3 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "remove mmap_action success, error hooks", v2. (3)
-      - dc9dbeaea348 "drivers/char/mem: eliminate unnecessary use of success_hook (0/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org
-        - Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org
-      - dd09969a4cf2 "mm/vma: remove mmap_action->success_hook (1/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org
-      - ac6d15504e75 "mm/vma: eliminate mmap_action->error_hook, introduce error_filter (2/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/e770b28427937057fa953ac380a134b24acd8bb4.1779462249.git.ljs@kernel.org
-- mm-new: 3 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - reviewer, nobody: 3 -> 0 commits
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - series "zram: writeback fixes", v2. (2)
+      - 8fbe7e7069f0 "mm: remove mentions of PageWriteback (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

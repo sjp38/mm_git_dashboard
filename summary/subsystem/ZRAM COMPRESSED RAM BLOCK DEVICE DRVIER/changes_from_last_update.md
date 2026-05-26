@@ -1,25 +1,37 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - bf62f69574b1 "zram: fix use-after-free in zram_writeback_endio"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260512074918.2606208-1-richardycc@google.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - maintainer, nobody: 0 -> 2 commits
-  - new commits
-    - series "zram: writeback fixes". (2)
-      - db9045fc5175 "zram: do not leak blk idx at the end of writeback (0/2)"
+- mm-new: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (1)
+    - maintainer, nobody: 2 -> 2 commits (no change)
+  - changed commits
+    - a83acca6ef72 "zram: do not leak blk idx at the end of writeback"
+      - Authored by a maintainer, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20260526022754.2377730-2-senozhatsky@chromium.org"
+      - added "Fixes: f405066a1f0db ("zram: introduce writeback bio batching")"
+      - dropped "Link: https://lore.kernel.org/20260525044639.1888561-2-senozhatsky@chromium.org"
+      - dropped "Link: https://lore.kernel.org/20260525044639.1888561-1-senozhatsky@chromium.org"
+      - Link: https://lore.kernel.org/20260526022754.2377730-2-senozhatsky@chromium.org
+    - series "zram: writeback fixes", v2. (2)
+      - a81b1dc6ad71 "zram: clear trailing bytes of compressed writeback pages (0/2)"
         - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260525044639.1888561-1-senozhatsky@chromium.org
-        - Link: https://lore.kernel.org/20260525044639.1888561-2-senozhatsky@chromium.org
-      - f2490ce36352 "zram: clear trailing bytes of compressed writeback pages (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260525044639.1888561-3-senozhatsky@chromium.org
+        - added "Link: https://lore.kernel.org/20260526022754.2377730-1-senozhatsky@chromium.org"
+        - added "Link: https://lore.kernel.org/20260526022754.2377730-3-senozhatsky@chromium.org"
+        - added "Fixes: d38fab605c66 ("zram: introduce compressed data writeback")"
+        - dropped "Link: https://lore.kernel.org/20260525044639.1888561-3-senozhatsky@chromium.org"
+        - Link: https://lore.kernel.org/20260526022754.2377730-1-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/20260526022754.2377730-3-senozhatsky@chromium.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

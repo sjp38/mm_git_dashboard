@@ -1,4 +1,4 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -7,16 +7,7 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - 4aedd91eef75 "kasan/test: only do kmalloc_double_kzfree for generic mode"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/20260524031053.381776-1-wsw9603@163.com"
-      - added "Reviewed-by: Andrey Konovalov <andreyknvl@gmail.com>"
-      - dropped "Link: https://lore.kernel.org/20260517071713.353579-1-wsw9603@163.com"
-      - dropped "Cc: Andrey Konovalov <andreyknvl@gmail.com>"
-      - Link: https://lore.kernel.org/20260524031053.381776-1-wsw9603@163.com
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

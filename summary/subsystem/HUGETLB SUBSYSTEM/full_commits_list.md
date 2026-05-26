@@ -1,30 +1,24 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 83f9efcce93f "Revert "mm/hugetlbfs: update hugetlbfs to use mmap_prepare""
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260512160643.266960-1-ljs@kernel.org
+- baseline: v7.1-rc5-20-gd60ec36cab338
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 5 total, 0 (0) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
     - no role, maintainer: 3 commits
   - full commits list
-    - 6a4872dc01dc "mm/hugetlb: avoid false positive lockdep assertion"
+    - 3f0a117771a0 "mm/hugetlb: avoid false positive lockdep assertion"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260513085658.45264-1-ljs@kernel.org
-    - 63ea17c0b107 "mm-hugetlb-avoid-false-positive-lockdep-assertion-fix"
+    - af13b52eaf52 "mm-hugetlb-avoid-false-positive-lockdep-assertion-fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/agWZsPGYid08uU6O@lucifer
-    - 86e35b581a6d "mm/hugetlb: restore reservation on error in hugetlb folio copy paths"
+    - bd5e4f643413 "mm/hugetlb: restore reservation on error in hugetlb folio copy paths"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260520044912.6751-1-devnexen@gmail.com
-    - 746e7d337242 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
+    - d493fc538788 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
-    - 4ca7110ba067 "mm/hugetlb_vmemmap: fix incorrect vmemmap restore in rollback"
+    - fae82fcd3953 "mm/hugetlb_vmemmap: fix incorrect vmemmap restore in rollback"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260525025213.2229628-1-songmuchun@bytedance.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -33,16 +27,16 @@
     - no role, no role : 2 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 986bcd7ca3b9 "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
+    - 4eb7ac65d216 "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
-      - 8334da5a020f "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
+      - d172f3732547 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - a73d61ff1081 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
+      - 9c4a9e89afc0 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
-    - d6821512f119 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
+    - 18394684c2ca "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,16 +1,14 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - e16f17a9c5af "mm: memcontrol: propagate NMI slab stats to memcg vmstats"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260518082830.599102-1-alex@ghiti.fr
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 7044fdf8d9c3 "memcg: use round-robin victim selection in refill_stock"
-      - Authored by a maintainer, reviewed by no role player
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-      - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)
@@ -19,25 +17,25 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 4 -> 0 commits
-  - series: 1 (4) -> 0 (0)
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, reviewer: 3 -> 0 commits
-  - dropped commits
-    - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v2. (4)
-      - 785f1781e1f3 "memcg: store node_id instead of pglist_data pointer (0/4)"
+- mm-new: 0 -> 4 commits
+  - series: 0 (0) -> 1 (4)
+    - maintainer, no role : 0 -> 1 commits
+    - maintainer, reviewer: 0 -> 3 commits
+  - new commits
+    - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v3. (4)
+      - 5b1161053d8e "memcg: store node_id instead of pglist_data pointer (0/4)"
         - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260522011908.1669332-1-shakeel.butt@linux.dev
-        - Link: https://lore.kernel.org/20260522011908.1669332-2-shakeel.butt@linux.dev
-      - 56c4af09d3b5 "memcg: uint16_t for nr_bytes in obj_stock_pcp (1/4)"
+        - Link: https://lore.kernel.org/20260526033931.1760588-1-shakeel.butt@linux.dev
+        - Link: https://lore.kernel.org/20260526033931.1760588-2-shakeel.butt@linux.dev
+      - 4c4d98ce0171 "memcg: uint16_t for nr_bytes in obj_stock_pcp (1/4)"
         - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260522011908.1669332-3-shakeel.butt@linux.dev
-      - 2fde71b632b3 "memcg: int16_t for cached slab stats (2/4)"
+        - Link: https://lore.kernel.org/20260526033931.1760588-3-shakeel.butt@linux.dev
+      - ccd8bce7c2fe "memcg: int16_t for cached slab stats (2/4)"
         - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260522011908.1669332-4-shakeel.butt@linux.dev
-      - b7772aa5ddab "memcg: multi objcg charge support (3/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260522011908.1669332-5-shakeel.butt@linux.dev
+        - Link: https://lore.kernel.org/20260526033931.1760588-4-shakeel.butt@linux.dev
+      - 0cb89420f473 "memcg: multi objcg charge support (3/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260526033931.1760588-5-shakeel.butt@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

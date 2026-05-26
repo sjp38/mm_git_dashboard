@@ -1,16 +1,16 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 4 -> 5 commits
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 83f9efcce93f "Revert "mm/hugetlbfs: update hugetlbfs to use mmap_prepare""
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260512160643.266960-1-ljs@kernel.org
+- mm-hotfixes-unstable: 5 -> 5 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-  - new commits
-    - 4ca7110ba067 "mm/hugetlb_vmemmap: fix incorrect vmemmap restore in rollback"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260525025213.2229628-1-songmuchun@bytedance.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 4 -> 4 commits (no change)

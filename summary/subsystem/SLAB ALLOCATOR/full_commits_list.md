@@ -1,4 +1,4 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa
+- baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,14 +7,14 @@
     - no role, maintainer: 3 commits
   - full commits list
     - series "Cleanup and fix tools/mm/slabinfo utility", v2. (3 commits)
-      - fbf43622b229 "tools/mm/slabinfo: fix trace disable logic inversion" (0/3)
+      - a438501f68ca "tools/mm/slabinfo: fix trace disable logic inversion" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260518062159.80664-1-wangxuewen@kylinos.cn
         - Link: https://lore.kernel.org/20260518062159.80664-2-wangxuewen@kylinos.cn
-      - 89304f7ae980 "tools/mm/slabinfo: remove dead assignment in get_obj_and_str()" (1/3)
+      - 9357be6fa76e "tools/mm/slabinfo: remove dead assignment in get_obj_and_str()" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260518062159.80664-3-wangxuewen@kylinos.cn
-      - 2a6881368122 "tools/mm/slabinfo: remove redundant slab->partial assignment" (2/3)
+      - ef1760807e3f "tools/mm/slabinfo: remove redundant slab->partial assignment" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260518062159.80664-4-wangxuewen@kylinos.cn
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

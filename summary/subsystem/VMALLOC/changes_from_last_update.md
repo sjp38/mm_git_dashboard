@@ -1,21 +1,20 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc4-93-g27fa82620cbaa (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
+    - 04aa71da5f35 "mm/vmalloc: do not trigger BUG() on BH disabled context"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260515153009.2296191-1-urezki@gmail.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 8 commits
+- mm-unstable: 8 -> 8 commits (no change)
   - series: 2 (7) -> 2 (7) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/vmalloc: free unused pages on vrealloc() shrink", v14. (5)
-      - 411ba8589009 "mm-vmalloc-use-physical-page-count-in-vread_iter-for-vm_alloc-areas-fix (3/5)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/aff47da5-4fd5-481d-be18-e1eb99639490@zohomail.in
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
