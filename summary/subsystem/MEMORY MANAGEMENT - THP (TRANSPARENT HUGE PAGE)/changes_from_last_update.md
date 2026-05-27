@@ -1,40 +1,22 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 2 commits
-  - new commits
-    - 777f6ed08a6b "mm/huge_memory: update file PUD counter before folio_put()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260526101355.1984244-1-yintirui@huawei.com
-    - 01316b49d0fb "mm/huge_memory: update file PMD counter before folio_put()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260526101337.1984081-1-yintirui@huawei.com
+    - no role, maintainer: 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 46 -> 49 commits
+- mm-unstable: 49 -> 49 commits (no change)
   - series: 3 (35) -> 3 (35) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 8 -> 8 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-    - reviewer, nobody: 6 -> 7 commits
-    - reviewer, no role : 2 -> 4 commits
+    - reviewer, nobody: 7 -> 7 commits (no change)
+    - reviewer, no role : 4 -> 4 commits (no change)
     - reviewer, reviewer: 12 -> 12 commits (no change)
     - reviewer, maintainer: 7 -> 7 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - series "khugepaged: add mTHP collapse support", v18. (14)
-      - a8f569b13ba4 "cleanup collapse_max_ptes_none (4/14)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/b5fa19c5-4b3e-40b8-8e78-fc31169a7a79@redhat.com
-      - 222883946022 "add a clarifying comment and change warn_on (7/14)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/a48032dd-7881-43c0-b439-5cda6124ea58@redhat.com
-    - 27de521b8303 "add back note and edit doc about khugepaged limits"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/b457f6e9-ae12-4e1f-8484-f3043ca62276@redhat.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

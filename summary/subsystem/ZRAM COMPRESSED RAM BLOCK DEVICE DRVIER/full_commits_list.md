@@ -7,11 +7,11 @@
   - author/reviewer role stat
     - maintainer, nobody: 2 commits
   - full commits list
-    - a83acca6ef72 "zram: do not leak blk idx at the end of writeback"
+    - 44a31a93ed2f "zram: do not leak blk idx at the end of writeback"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260526022754.2377730-2-senozhatsky@chromium.org
     - series "zram: writeback fixes", v2. (2 commits)
-      - a81b1dc6ad71 "zram: clear trailing bytes of compressed writeback pages" (0/2)
+      - 9e17e1fb2bce "zram: clear trailing bytes of compressed writeback pages" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260526022754.2377730-1-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/20260526022754.2377730-3-senozhatsky@chromium.org

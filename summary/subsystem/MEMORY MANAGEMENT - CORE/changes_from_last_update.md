@@ -1,18 +1,6 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
-- mm-hotfixes-stable: 2 -> 0 commits
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 09e7827e7857 "kernel/fork: validate exit_signal in kernel_clone()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: : https://lore.kernel.org/abwvgU17W8wuW2-J@redhat.com
-      - Link: https://lore.kernel.org/20260316151956.563558-1-kartikey406@gmail.com
-      - Link: https://lore.kernel.org/all/20260307064202.353405-1-kartikey406@gmail.com/T/ [v1]
-      - Link: https://lore.kernel.org/all/20260316104536.558108-1-kartikey406@gmail.com/T/ [v2]
-    - 54cf41c969da "Revert "mm: introduce a new page type for page pool in page type""
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260515034701.17027-1-byungchul@sk.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
@@ -27,14 +15,9 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - series "zram: writeback fixes", v2. (2)
-      - 8fbe7e7069f0 "mm: remove mentions of PageWriteback (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

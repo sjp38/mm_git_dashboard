@@ -9,34 +9,34 @@
     - maintainer, maintainer: 1 commits
   - full commits list
     - series "selftests/cgroup: improve zswap tests robustness and support large page sizes", v7. (8 commits)
-      - 4a70fa7e9921 "selftests/cgroup: skip test_zswap if zswap is globally disabled" (0/8)
+      - e8e24116ef58 "selftests/cgroup: skip test_zswap if zswap is globally disabled" (0/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-1-li.wang@linux.dev
         - Link: https://lore.kernel.org/20260424040059.12940-2-li.wang@linux.dev
-      - e12042fa39a9 "selftests/cgroup: avoid OOM in test_swapin_nozswap" (1/8)
+      - 438f15f21917 "selftests/cgroup: avoid OOM in test_swapin_nozswap" (1/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-3-li.wang@linux.dev
-      - b3bb00afc51b "selftests/cgroup: use runtime page size for zswpin check" (2/8)
+      - 018413653338 "selftests/cgroup: use runtime page size for zswpin check" (2/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-4-li.wang@linux.dev
-      - dee47f44c1b8 "selftests/cgroup: replace hardcoded page size values in test_zswap" (4/8)
+      - 07db59c193ea "selftests/cgroup: replace hardcoded page size values in test_zswap" (4/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-6-li.wang@linux.dev
-      - b60e420d06a7 "selftest/cgroup: fix zswap test_no_invasive_cgroup_shrink on large pagesize system" (5/8)
+      - cb3e8d934a1a "selftest/cgroup: fix zswap test_no_invasive_cgroup_shrink on large pagesize system" (5/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-7-li.wang@linux.dev
-      - 9489db3b47cf "selftest/cgroup: fix zswap attempt_writeback() on 64K pagesize system" (6/8)
+      - 33cf8bd71deb "selftest/cgroup: fix zswap attempt_writeback() on 64K pagesize system" (6/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-8-li.wang@linux.dev
-      - 3695a2c9544e "selftests/cgroup: test_zswap: wait for asynchronous writeback" (7/8)
+      - 12172f8f416b "selftests/cgroup: test_zswap: wait for asynchronous writeback" (7/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-9-li.wang@linux.dev
     - series "mm, swap: swap table phase IV: unify allocation", v5. (12 commits)
-      - 762d39bacbf2 "mm, swap: simplify swap cache allocation helper" (0/12)
+      - 2c8d70dcc723 "mm, swap: simplify swap cache allocation helper" (0/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-0-88ae43e064c7@tencent.com
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-1-88ae43e064c7@tencent.com
-      - 37e080dea956 "mm, swap: add support for stable large allocation in swap cache directly" (3/12)
+      - e2c0c75fb57d "mm, swap: add support for stable large allocation in swap cache directly" (3/12)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-4-88ae43e064c7@tencent.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

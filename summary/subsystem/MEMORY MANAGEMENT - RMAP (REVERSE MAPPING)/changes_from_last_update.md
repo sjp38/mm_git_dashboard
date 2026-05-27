@@ -1,11 +1,6 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 3f8968e9cbf9 "mm/rmap: initialize nr_pages to 1 at loop start in try_to_unmap_one"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260518063656.3721056-1-dev.jain@arm.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)

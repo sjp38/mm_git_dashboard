@@ -6,20 +6,20 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - 588516e8c71c "mm/migrate_device: cleanup up PMD Checks and warnings"
+    - 48c9d966c988 "mm/migrate_device: cleanup up PMD Checks and warnings"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260419174747.10701-1-nueralspacetech@gmail.com
-    - 9f4e6430e975 "mm/migrate: rename PAGE_ migration flags to FOLIO_"
+    - ffaf46c45aa1 "mm/migrate: rename PAGE_ migration flags to FOLIO_"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260324190706.964555-4-shivankg@amd.com
 - mm-new: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
   - full commits list
-      - 8fbe7e7069f0 "mm: remove mentions of PageWriteback" (1/2)
+      - 9329f05ed03b "mm: remove mentions of PageWriteback" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-    - 81870b0040d3 "mm/migrate: find_mm_struct: fix race between security checks and suid exec"
+    - 6be631caeb55 "mm/migrate: find_mm_struct: fix race between security checks and suid exec"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/ahWxQ3JxdR5ff2qf@redhat.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

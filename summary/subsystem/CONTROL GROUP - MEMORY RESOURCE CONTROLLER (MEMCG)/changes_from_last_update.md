@@ -1,11 +1,6 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - e16f17a9c5af "mm: memcontrol: propagate NMI slab stats to memcg vmstats"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260518082830.599102-1-alex@ghiti.fr
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
@@ -17,25 +12,10 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 4 commits
-  - series: 0 (0) -> 1 (4)
-    - maintainer, no role : 0 -> 1 commits
-    - maintainer, reviewer: 0 -> 3 commits
-  - new commits
-    - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v3. (4)
-      - 5b1161053d8e "memcg: store node_id instead of pglist_data pointer (0/4)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260526033931.1760588-1-shakeel.butt@linux.dev
-        - Link: https://lore.kernel.org/20260526033931.1760588-2-shakeel.butt@linux.dev
-      - 4c4d98ce0171 "memcg: uint16_t for nr_bytes in obj_stock_pcp (1/4)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260526033931.1760588-3-shakeel.butt@linux.dev
-      - ccd8bce7c2fe "memcg: int16_t for cached slab stats (2/4)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260526033931.1760588-4-shakeel.butt@linux.dev
-      - 0cb89420f473 "memcg: multi objcg charge support (3/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260526033931.1760588-5-shakeel.butt@linux.dev
+- mm-new: 4 -> 4 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, reviewer: 3 -> 3 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

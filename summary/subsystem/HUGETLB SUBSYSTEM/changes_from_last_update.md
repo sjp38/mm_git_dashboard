@@ -1,11 +1,6 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 83f9efcce93f "Revert "mm/hugetlbfs: update hugetlbfs to use mmap_prepare""
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260512160643.266960-1-ljs@kernel.org
 - mm-hotfixes-unstable: 5 -> 5 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

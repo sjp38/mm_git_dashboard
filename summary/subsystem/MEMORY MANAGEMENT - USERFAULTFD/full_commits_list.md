@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 7ba88b5e3ebe "userfaultfd: snapshot VMA state across UFFDIO_COPY retry"
+    - f4928ff93839 "userfaultfd: snapshot VMA state across UFFDIO_COPY retry"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260519052516.3315196-1-rppt@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -13,11 +13,11 @@
     - no role, nobody: 2 commits
   - full commits list
     - series "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c", v3. (2 commits)
-      - 65e25c42e14c "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c" (0/2)
+      - 28e91ca5c0c7 "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260523173759.3964908-1-rppt@kernel.org
         - Link: https://lore.kernel.org/20260523173759.3964908-2-rppt@kernel.org
-      - 7ee53380e730 "userfaultfd: make functions that are not used outside uffd static" (1/2)
+      - 43eedcbb989c "userfaultfd: make functions that are not used outside uffd static" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260523173759.3964908-3-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

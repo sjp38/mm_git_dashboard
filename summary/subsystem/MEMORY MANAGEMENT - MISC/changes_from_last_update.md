@@ -1,29 +1,20 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-  - changed commits
-    - 81e84c76f320 "mm/cma: fix reserved page leak on activation failure"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
-      - Link: https://lore.kernel.org/20260523060123.2207992-1-songmuchun@bytedance.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 111 -> 112 commits
+- mm-unstable: 112 -> 112 commits (no change)
   - series: 4 (96) -> 4 (96) (no change)
     - no role, nobody: 39 -> 39 commits (no change)
     - no role, no role : 38 -> 38 commits (no change)
     - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
-    - reviewer, nobody: 4 -> 5 commits
+    - reviewer, nobody: 5 -> 5 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - maintainer, nobody: 15 -> 15 commits (no change)
-  - new commits
-    - 27de521b8303 "add back note and edit doc about khugepaged limits"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/b457f6e9-ae12-4e1f-8484-f3043ca62276@redhat.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - b8ca1877b4f6 "docs/mm: fix typo in process_addrs.rst"
+    - 900a9fd777b0 "docs/mm: fix typo in process_addrs.rst"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260517103640.45444-1-ssh1326@icloud.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

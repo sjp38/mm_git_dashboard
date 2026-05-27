@@ -1,4 +1,4 @@
-- baseline: v7.1-rc4-93-g27fa82620cbaa -> v7.1-rc5-20-gd60ec36cab338
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -6,23 +6,11 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, nobody: 0 -> 2 commits
-  - changed commits
-    - series "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c", v3. (2)
-      - 65e25c42e14c "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260523173759.3964908-1-rppt@kernel.org
-        - Link: https://lore.kernel.org/20260523173759.3964908-2-rppt@kernel.org
-      - 7ee53380e730 "userfaultfd: make functions that are not used outside uffd static (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260523173759.3964908-3-rppt@kernel.org
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
