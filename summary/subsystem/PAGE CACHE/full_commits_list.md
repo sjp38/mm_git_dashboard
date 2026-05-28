@@ -2,58 +2,56 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 10 total, 3 (7) series, 3 non-series commits
+- mm-unstable: 11 total, 3 (7) series, 4 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
+    - no role, no role : 1 commits
     - no role, reviewer: 5 commits
     - reviewer, reviewer: 2 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-    - 3052f4d8a667 "mm: limit filemap_fault readahead to VMA boundaries"
+    - a6b70150145a "mm: limit filemap_fault readahead to VMA boundaries"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260427030148.653228-1-fmayle@google.com
       - Link: https://lore.kernel.org/all/ivnv2crd3et76p2nx7oszuqhzzah756oecn5yuykzqfkqzoygw@yvnlkhjjssoz/ [1]
     - series "mm/filemap: tighten mmap_miss hit accounting", v3. (2 commits)
-      - c61684f8e58a "mm/filemap: count only the faulting address as a mmap hit" (0/2)
+      - 5c4eba4a8d85 "mm/filemap: count only the faulting address as a mmap hit" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/tencent_AA501E9A238337BD167E5C2ACF948A1AF308@qq.com
         - Link: https://lore.kernel.org/tencent_756F151FE66F3D80479A6F982C0AB8569F09@qq.com
-      - 4dba13e018bf "mm/filemap: do not count FAULT_FLAG_TRIED retries as mmap hits" (1/2)
+      - c23df770fc64 "mm/filemap: do not count FAULT_FLAG_TRIED retries as mmap hits" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/tencent_22E6B8849EC1141FE7773C64467E6F1E2C09@qq.com
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14 commits)
-      - 33126f36503e "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
-        - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
-      - 6398810386c2 "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
-      - afc7582c022d "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
     - series "mm: document read_pages and simplify usage". (2 commits)
-      - 5b532ac25056 "mm/readahead: add kerneldoc for read_pages" (0/2)
+      - 6c46603c925e "mm/readahead: add kerneldoc for read_pages" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/all/20260501061146.6e61392d125cf1847d7cc181@linux-foundation.org/ [1]
         - Link: https://lore.kernel.org/20260512203154.754075-2-fmayle@google.com
-      - 5dbc949f33ae "mm/readahead: simplify page_cache_ra_unbounded loop counter reset" (1/2)
+      - fdf2d4a7c91e "mm/readahead: simplify page_cache_ra_unbounded loop counter reset" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260512203154.754075-3-fmayle@google.com
-    - 6897218e13c9 "mm/readahead: no PG_readahead on EOF"
+    - bb56c56da682 "mm/readahead: no PG_readahead on EOF"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3921-L3939 [2]
       - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3721-L3722 [3]
       - Link: https://lore.kernel.org/20260508181237.670645-1-fmayle@google.com
-    - 22cbe1df3f87 "mm/filemap: fix page_cache_prev_miss() when no hole is found"
+    - 0fcfbc90a0bb "mm/filemap: fix page_cache_prev_miss() when no hole is found"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260512-prev_miss_fix-v2-1-4af8e5c1ae62@columbia.edu
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-    - 386b2122b655 "mm: make mmap_miss accounting symmetric for VM_SEQ_READ"
+    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14 commits)
+      - b6cfdf72a139 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
+        - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
+      - 51705bbc29c5 "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
+      - dfabbf0783e0 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
+    - f26c5a14731c "mm: make mmap_miss accounting symmetric for VM_SEQ_READ"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260525145751.2671248-1-usama.arif@linux.dev
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

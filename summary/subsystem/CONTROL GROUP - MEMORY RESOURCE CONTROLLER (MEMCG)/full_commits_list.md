@@ -4,61 +4,65 @@
   - author/reviewer role stat
     - maintainer, no role : 1 commits
   - full commits list
-    - 9ab15ff4b4b1 "memcg: use round-robin victim selection in refill_stock"
+    - 469f7162ad7f "memcg: use round-robin victim selection in refill_stock"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 8 total, 1 (7) series, 1 non-series commits
+- mm-unstable: 12 total, 2 (11) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
     - no role, maintainer: 1 commits
     - reviewer, maintainer: 2 commits
+    - maintainer, no role : 1 commits
+    - maintainer, reviewer: 3 commits
     - maintainer, maintainer: 2 commits
   - full commits list
-      - 8f99b0d5c04a "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
+      - 964faf9f3da6 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
-    - 3a241df51ffd "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
+    - 56f96582a830 "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
     - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (2 commits)
-      - 1b9045b3c357 "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
+      - 0c0010843990 "selftests/cgroup: fix hardcoded page size in test_percpu_basic" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
         - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
-      - 519f63b3568e "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
+      - 0228c7876f0f "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
-      - 2c7bfb4b6025 "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
+      - 91a338f2a918 "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - add929aa9e82 "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
+      - af22c344138a "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - a677f8bdde47 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
+      - 93680c2b51fa "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-      - c5c01605ccd7 "mm/memcg: remove no longer used swap cgroup array" (11/12)
+      - 638f76d9ac0d "mm/memcg: remove no longer used swap cgroup array" (10/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
-- mm-new: 4 total, 1 (4) series, 0 non-series commits
-  - author/reviewer role stat
-    - maintainer, no role : 1 commits
-    - maintainer, reviewer: 3 commits
-  - full commits list
     - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v3. (4 commits)
-      - 9f586d1663da "memcg: store node_id instead of pglist_data pointer" (0/4)
+      - fc3324ad450f "memcg: store node_id instead of pglist_data pointer" (0/4)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260526033931.1760588-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260526033931.1760588-2-shakeel.butt@linux.dev
-      - 639b05c460cf "memcg: uint16_t for nr_bytes in obj_stock_pcp" (1/4)
+      - 3f8fe8235970 "memcg: uint16_t for nr_bytes in obj_stock_pcp" (1/4)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260526033931.1760588-3-shakeel.butt@linux.dev
-      - 908c817581aa "memcg: int16_t for cached slab stats" (2/4)
+      - 43005c976f24 "memcg: int16_t for cached slab stats" (2/4)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260526033931.1760588-4-shakeel.butt@linux.dev
-      - 0dfe3f06482e "memcg: multi objcg charge support" (3/4)
+      - ec16b15b21f5 "memcg: multi objcg charge support" (3/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260526033931.1760588-5-shakeel.butt@linux.dev
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - maintainer, maintainer: 1 commits
+  - full commits list
+      - a5e62d9e00da "mm: switch deferred split shrinker to list_lru" (8/9)
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

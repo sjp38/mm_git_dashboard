@@ -1,9 +1,25 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 3 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, nobody: 1 -> 3 commits
+  - new commits
+    - series "userfaultfd: verify VMA state across UFFDIO_COPY retry", v2. (3)
+      - 2d5d8c9a4306 "userfaultfd: verify VMA state across UFFDIO_COPY retry (0/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260527184751.4147364-1-rppt@kernel.org
+        - Link: https://lore.kernel.org/20260527184751.4147364-2-rppt@kernel.org
+      - 896b76f4300a "userfaultfd: refuse to __mfill_atomic_pte() for unsupported VMAs (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260527184751.4147364-3-rppt@kernel.org
+      - 06a249fed25a "userfaultfd: remove redundant check in vm_uffd_ops() (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260527184751.4147364-4-rppt@kernel.org
+  - dropped commits
+    - f4928ff93839 "userfaultfd: snapshot VMA state across UFFDIO_COPY retry"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260519052516.3315196-1-rppt@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)

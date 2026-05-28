@@ -2,23 +2,20 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-    - 56fef9173309 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 19e332639973 "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
+    - 1154251c9c77 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
+    - 4274ea9a99d3 "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260525072117.112779-1-hao.ge@linux.dev
-    - 7a9e8dff2239 "lib: split codetag_lock_module_list()"
+    - dfbf7833e461 "lib: split codetag_lock_module_list()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260324214226.3684605-1-bvanassche@acm.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

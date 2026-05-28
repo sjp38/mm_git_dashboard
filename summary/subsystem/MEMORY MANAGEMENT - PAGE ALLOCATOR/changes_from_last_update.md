@@ -6,15 +6,31 @@
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 25 -> 25 commits (no change)
-  - series: 2 (14) -> 2 (14) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+  - series: 2 (14) -> 2 (15)
+    - no role, nobody: 2 -> 3 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 15 -> 15 commits (no change)
+    - no role, reviewer: 15 -> 14 commits
     - reviewer, no role : 5 -> 5 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - f72ac3c4f95c "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+      - Authored by no role player, reviewed by a reviewer
+      - added "[hsalunke@amd.com: move clear_highpages_kasan_tagged() to page_alloc.c]"
+      - added "Link: : https://lore.kernel.org/20260504063942.553438-1-hsalunke@amd.com"
+      - Link: : https://lore.kernel.org/20260504063942.553438-1-hsalunke@amd.com
+      - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
+    - series "zram: writeback fixes", v2. (2)
+      - 4ecf236301a7 "mm: remove mentions of PageWriteback (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
+  - dropped commits
+    - db3461bd34f0 "mm-page_alloc-replace-kernel_init_pages-with-batch-page-clearing-v4"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260504063942.553438-1-hsalunke@amd.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

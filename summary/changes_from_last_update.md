@@ -1,43 +1,278 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 20 -> 20 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
+- mm-hotfixes-unstable: 20 -> 22 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, nobody: 6 -> 9 commits
+    - no role, no role : 6 -> 5 commits
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - series "userfaultfd: verify VMA state across UFFDIO_COPY retry", v2. (3)
+      - 2d5d8c9a4306 "userfaultfd: verify VMA state across UFFDIO_COPY retry (0/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260527184751.4147364-1-rppt@kernel.org
+        - Link: https://lore.kernel.org/20260527184751.4147364-2-rppt@kernel.org
+      - 896b76f4300a "userfaultfd: refuse to __mfill_atomic_pte() for unsupported VMAs (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260527184751.4147364-3-rppt@kernel.org
+      - 06a249fed25a "userfaultfd: remove redundant check in vm_uffd_ops() (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260527184751.4147364-4-rppt@kernel.org
+    - 19ac2c5612e8 "tools headers UAPI: sync linux/taskstats.h for procacct.c"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260527213558929EhiHHy9EDTMjmg3uuDOMi@zte.com.cn
+  - changed commits
+    - a4ef88343f70 "mm/huge_memory: update file PUD counter before folio_put()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
+      - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+      - Link: https://lore.kernel.org/20260526101355.1984244-1-yintirui@huawei.com
+    - e14c8a1299ed "mm/huge_memory: update file PMD counter before folio_put()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
+      - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+      - Link: https://lore.kernel.org/20260526101337.1984081-1-yintirui@huawei.com
+  - dropped commits
+    - f4928ff93839 "userfaultfd: snapshot VMA state across UFFDIO_COPY retry"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260519052516.3315196-1-rppt@kernel.org
+    - 60d78b3ce99c "x86/mm: fix freeing of PMD-sized vmemmap pages"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260429-vmemmap-v2-1-8dfcacffd877@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 388 -> 388 commits (no change)
-  - series: 41 (292) -> 41 (292) (no change)
-    - no role, nobody: 54 -> 54 commits (no change)
+- mm-unstable: 388 -> 398 commits
+  - series: 41 (292) -> 44 (300)
+    - no role, nobody: 54 -> 59 commits
     - no role, no role : 87 -> 87 commits (no change)
-    - no role, reviewer: 45 -> 45 commits (no change)
-    - no role, maintainer: 52 -> 52 commits (no change)
+    - no role, reviewer: 45 -> 47 commits
+    - no role, maintainer: 52 -> 53 commits
     - reviewer, nobody: 10 -> 10 commits (no change)
     - reviewer, no role : 10 -> 10 commits (no change)
     - reviewer, reviewer: 28 -> 28 commits (no change)
     - reviewer, maintainer: 8 -> 8 commits (no change)
-    - maintainer, nobody: 87 -> 87 commits (no change)
+    - maintainer, nobody: 87 -> 85 commits
+    - maintainer, no role : 0 -> 1 commits
+    - maintainer, reviewer: 0 -> 3 commits
     - maintainer, maintainer: 7 -> 7 commits (no change)
-- mm-new: 21 -> 21 commits (no change)
-  - series: 5 (14) -> 5 (14) (no change)
-    - no role, nobody: 8 -> 8 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - f72ac3c4f95c "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+      - Authored by no role player, reviewed by a reviewer
+      - added "[hsalunke@amd.com: move clear_highpages_kasan_tagged() to page_alloc.c]"
+      - added "Link: : https://lore.kernel.org/20260504063942.553438-1-hsalunke@amd.com"
+      - Link: : https://lore.kernel.org/20260504063942.553438-1-hsalunke@amd.com
+      - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
+    - 0a7fc979235b "selftests/mm: check file initialization writes in split_huge_page_test"
+      - Authored by no role player, reviewed by no role player
+      - added "[akpm@linux-foundation.org: remove unneeded local, per David]"
+      - added "Link: : https://lore.kernel.org/da82de92-29d8-457c-9f65-40fc4900b922@kernel.org"
+      - added "Cc: Vineet Agarwal <agarwal.vineet2006@gmail.com>"
+      - Link: : https://lore.kernel.org/da82de92-29d8-457c-9f65-40fc4900b922@kernel.org
+      - Link: https://lore.kernel.org/20260512074924.27721-1-agarwal.vineet2006@gmail.com
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - 93680c2b51fa "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "[akpm@linux-foundation.org: fix CONFIG_SWAP=n build]"
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
+      - 6f9d9edb2860 "mm, swap: merge zeromap into swap table (11/12)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "[akpm@linux-foundation.org: swap_cluster_alloc_table(): remove unused local `ret]"
+        - added "[akpm@linux-foundation.org: fix unused label `err_free']"
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-12-88ae43e064c7@tencent.com
+    - series "mm/mglru: improve reclaim loop and dirty folio", v7. (15)
+      - 03ca3a6a9ee7 "mm/mglru: consolidate common code for retrieving evictable size (0/15)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/linux-mm/CAMgjq7D+4QmiWe73OPFuH0s+ZKCUJoo+MfcWOdJcV+VO-T2Wmg@mail.gmail.com/ [9]Signed-off-by: Kairui Song <kasong@tencent.com>"
+        - added "Link: https://lore.kernel.org/linux-mm/CAMgjq7BzQAPp8u_3-9e3ueXmRCoW=2sydok0hFM=MYL7VC1YYg@mail.gmail.com/ [8]"
+        - added "Link: https://lore.kernel.org/linux-mm/20260502-mglru-fg-v1-0-913619b014d9@tencent.com/ [7]"
+        - dropped "Signed-off-by: Kairui Song <kasong@tencent.com>"
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-1-02fabb92dc43@tencent.com
+        - Link: https://lore.kernel.org/linux-mm/CAMgjq7BoekNjg-Ra3C8M7=8=75su38w=HD782T5E_cxyeCeH_g@mail.gmail.com/ [1]
+        - Link: https://github.com/brianfrankcooper/YCSB/blob/master/workloads/workloadb [2]
+        - Link: https://lore.kernel.org/all/20221220214923.1229538-1-yuzhao@google.com/ [3]
+        - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [4]
+        - Link: https://lore.kernel.org/linux-mm/acgNCzRDVmSbXrOE@KASONG-MC4/ [5]
+        - Link: https://lore.kernel.org/linux-mm/20260417025123.2971253-1-wxy2009nrrr@163.com/ [6]
+        - Link: https://lore.kernel.org/linux-mm/20260502-mglru-fg-v1-0-913619b014d9@tencent.com/ [7]
+        - Link: https://lore.kernel.org/linux-mm/CAMgjq7BzQAPp8u_3-9e3ueXmRCoW=2sydok0hFM=MYL7VC1YYg@mail.gmail.com/ [8]
+        - Link: https://lore.kernel.org/linux-mm/CAMgjq7D+4QmiWe73OPFuH0s+ZKCUJoo+MfcWOdJcV+VO-T2Wmg@mail.gmail.com/ [9]Signed-off-by: Kairui Song <kasong@tencent.com>
+    - f26c5a14731c "mm: make mmap_miss accounting symmetric for VM_SEQ_READ"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260525145751.2671248-1-usama.arif@linux.dev
+    - series "refactors thpsize_shmem_enabled_store() and thpsize_shmem_enabled_show()", v4. (2)
+      - eaa643842643 "mm: shmem: refactor thpsize_shmem_enabled_store() with sysfs_match_string() (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260525102700.68707-1-ranxiaokai627@163.com
+        - Link: https://lore.kernel.org/20260525102700.68707-2-ranxiaokai627@163.com
+      - 85b534e54188 "mm: shmem: refactor thpsize_shmem_enabled_show() with helper arrays (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260525102700.68707-3-ranxiaokai627@163.com
+    - 4274ea9a99d3 "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260525072117.112779-1-hao.ge@linux.dev
+    - series "selftests/memfd: fix compilation warnings". (2)
+      - 53bae57fd25e "selftests/memfd: fix -Wmaybe-uninitialized warning in memfd_test (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260524193732.48853-1-eva.kurchatova@virtuozzo.com
+        - Link: https://lore.kernel.org/20260524193732.48853-2-eva.kurchatova@virtuozzo.com
+      - c73a86a95a95 "selftests/memfd: remove unused variable 'sig' in fuse_test (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260524193732.48853-3-eva.kurchatova@virtuozzo.com
+    - 5f571824b1f7 "mm/dmapool: use static key for boot-time debug enablement"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260524034015.1830-1-lirongqing@baidu.com
+    - dfbf7833e461 "lib: split codetag_lock_module_list()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260324214226.3684605-1-bvanassche@acm.org
+    - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v3. (4)
+      - fc3324ad450f "memcg: store node_id instead of pglist_data pointer (0/4)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260526033931.1760588-1-shakeel.butt@linux.dev
+        - Link: https://lore.kernel.org/20260526033931.1760588-2-shakeel.butt@linux.dev
+      - 3f8fe8235970 "memcg: uint16_t for nr_bytes in obj_stock_pcp (1/4)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260526033931.1760588-3-shakeel.butt@linux.dev
+      - 43005c976f24 "memcg: int16_t for cached slab stats (2/4)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260526033931.1760588-4-shakeel.butt@linux.dev
+      - ec16b15b21f5 "memcg: multi objcg charge support (3/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260526033931.1760588-5-shakeel.butt@linux.dev
+    - dc41bb739393 "zram: do not leak blk idx at the end of writeback"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260526022754.2377730-2-senozhatsky@chromium.org
+    - series "zram: writeback fixes", v2. (2)
+      - 3db6ebf19ade "zram: clear trailing bytes of compressed writeback pages (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260526022754.2377730-1-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/20260526022754.2377730-3-senozhatsky@chromium.org
+      - 4ecf236301a7 "mm: remove mentions of PageWriteback (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
+    - 53078f98b00c "mm: document the folio refcount a little better"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260526200032.353868-1-willy@infradead.org
+    - 8a74e2264318 "mm/migrate: find_mm_struct: fix race between security checks and suid exec"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Gregory Price <gourry@gourry.net>"
+      - dropped "Cc: Gregory Price <gourry@gourry.net>"
+      - Link: https://lore.kernel.org/ahWxQ3JxdR5ff2qf@redhat.com
+  - dropped commits
+    - db3461bd34f0 "mm-page_alloc-replace-kernel_init_pages-with-batch-page-clearing-v4"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260504063942.553438-1-hsalunke@amd.com
+    - series "skip redundant sync IPIs when TLB flush sent them", v10. (2)
+      - f9068d0538dd "mm/mmu_gather: prepare to skip redundant sync IPIs (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260424062528.71951-1-lance.yang@linux.dev
+        - Link: https://lore.kernel.org/20260424062528.71951-2-lance.yang@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [1]
+        - Link: https://lore.kernel.org/linux-mm/6a364356-5fea-4a6c-b959-ba3b22ce9c88@kernel.org/ [2]
+        - Link: https://lore.kernel.org/linux-mm/2cb4503d-3a3f-4f6c-8038-7b3d1c74b3c2@kernel.org/ [3]
+        - Link: https://lore.kernel.org/linux-mm/bbfdf226-4660-4949-b17b-0d209ee4ef8c@kernel.org/ [4]
+        - Link: https://lore.kernel.org/linux-mm/1b27a3fa-359a-43d0-bdeb-c31341749367@kernel.org/ [5]
+        - Link: https://lore.kernel.org/linux-mm/6a364356-5fea-4a6c-b959-ba3b22ce9c88@kernel.org/ [6]
+        - Link: https://lore.kernel.org/linux-mm/2cb4503d-3a3f-4f6c-8038-7b3d1c74b3c2@kernel.org/ [7]
+      - 2e3ae457ddbf "x86/tlb: skip redundant sync IPIs for native TLB flush (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260424062528.71951-3-lance.yang@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/20260302145652.GH1395266@noisy.programming.kicks-ass.net/ [1]
+        - Link: https://lore.kernel.org/linux-mm/f856051b-10c7-4d65-9dbe-6b1677af74bd@intel.com/ [2]
+        - Link: https://lore.kernel.org/linux-mm/bbfdf226-4660-4949-b17b-0d209ee4ef8c@kernel.org/ [3]
+    - 3e5b419a9d75 "selftests-mm-check-file-initialization-writes-in-split_huge_page_test-fix"
+      - Authored by a maintainer, reviewed by nobody
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - b3e1f09b2645 "mm-memcg-swap-store-cgroup-id-in-cluster-table-directly-fix (10/12)"
+        - Authored by a maintainer, reviewed by nobody
+    - 69fb9b3c0aa9 "mm-swap-merge-zeromap-into-swap-table-fix"
+      - Authored by a maintainer, reviewed by nobody
+    - 641e58162f08 "mm-swap-merge-zeromap-into-swap-table-fix-2"
+      - Authored by a maintainer, reviewed by nobody
+- mm-new: 21 -> 13 commits
+  - series: 5 (14) -> 2 (13)
+    - no role, nobody: 8 -> 2 commits
+    - no role, no role : 1 -> 7 commits
+    - no role, reviewer: 2 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
     - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 3 -> 3 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
-    - maintainer, reviewer: 3 -> 3 commits (no change)
+    - maintainer, nobody: 3 -> 1 commits
+    - maintainer, no role : 1 -> 0 commits
+    - maintainer, reviewer: 3 -> 0 commits
+    - maintainer, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 8537843e8fe6 "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion (0/9)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260527204757.2544958-1-hannes@cmpxchg.org
+        - Link: https://lore.kernel.org/20260527204757.2544958-2-hannes@cmpxchg.org
+      - 550ef747fda8 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty (1/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-3-hannes@cmpxchg.org
+      - 17dcc2bed85c "mm: list_lru: deduplicate unlock_list_lru() (2/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-4-hannes@cmpxchg.org
+      - 74c02ab5065d "mm: list_lru: move list dead check to lock_list_lru_of_memcg() (3/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-5-hannes@cmpxchg.org
+      - 74481dd7e0cd "mm: list_lru: deduplicate lock_list_lru() (4/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-6-hannes@cmpxchg.org
+      - 809c58040b64 "mm: list_lru: introduce caller locking for additions and deletions (5/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-7-hannes@cmpxchg.org
+      - 72aa328c9009 "mm: list_lru: introduce folio_memcg_list_lru_alloc() (6/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-8-hannes@cmpxchg.org
+      - 7d5925eeb2de "mm: memory: flatten alloc_anon_folio() retry loop (7/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
+      - a5e62d9e00da "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 96 -> 96 commits (no change)
-  - series: 10 (48) -> 10 (48) (no change)
+- mm-nonmm-unstable: 96 -> 97 commits
+  - series: 10 (48) -> 9 (46)
     - no role, nobody: 32 -> 32 commits (no change)
-    - no role, no role : 36 -> 36 commits (no change)
+    - no role, no role : 36 -> 37 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 23 -> 23 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
+  - new commits
+    - series "cleanup the RAID6 P/Q library", v3. (18)
+      - 9f9fb8d177f1 "raid6: remove duplicate ccflags-y line (9/18)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260527074539.2292913-2-hch@lst.de
+      - b44bf257a8d6 "raid6/x86: register avx512 after avx2 (11/18)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260527074539.2292913-3-hch@lst.de
+  - changed commits
+    - 935e59f3f9d8 "drivers/media/v4l2-core/v4l2-vp9.c: reduce inlining"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Daniel Almeida <daniel.almeida@collabora.com>"
+  - dropped commits
+    - series "lib/raid: replace __get_free_pages() call with kvmalloc()", v2. (2)
+      - 24f61331a2bf "lib/raid6: use kvmalloc() in raid6_select_algo() (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/all/635405e4-9423-4a25-a6e7-e03c8ea0bcbe@redhat.com
+        - Link: https://lore.kernel.org/20260526-lib-v2-2-ca3f0fc24b14@kernel.org
