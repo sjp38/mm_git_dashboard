@@ -1,42 +1,44 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 9 total, 2 (9) series, 0 non-series commits
+- mm-stable: 7 total, 1 (7) series, 0 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 7 commits
-    - maintainer, nobody: 1 commits
-    - maintainer, maintainer: 1 commits
   - full commits list
     - series "selftests/cgroup: improve zswap tests robustness and support large page sizes", v7. (8 commits)
-      - 3c8e345291d6 "selftests/cgroup: skip test_zswap if zswap is globally disabled" (0/8)
+      - 9f40c3cdf0fa "selftests/cgroup: skip test_zswap if zswap is globally disabled" (0/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-1-li.wang@linux.dev
         - Link: https://lore.kernel.org/20260424040059.12940-2-li.wang@linux.dev
-      - 56d37b89e235 "selftests/cgroup: avoid OOM in test_swapin_nozswap" (1/8)
+      - 0d38cded3c62 "selftests/cgroup: avoid OOM in test_swapin_nozswap" (1/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-3-li.wang@linux.dev
-      - e9ec1d821092 "selftests/cgroup: use runtime page size for zswpin check" (2/8)
+      - b19ee588e159 "selftests/cgroup: use runtime page size for zswpin check" (2/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-4-li.wang@linux.dev
-      - f6245270a996 "selftests/cgroup: replace hardcoded page size values in test_zswap" (4/8)
+      - 43743cc51668 "selftests/cgroup: replace hardcoded page size values in test_zswap" (4/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-6-li.wang@linux.dev
-      - e74236a82d30 "selftest/cgroup: fix zswap test_no_invasive_cgroup_shrink on large pagesize system" (5/8)
+      - a19b47492751 "selftest/cgroup: fix zswap test_no_invasive_cgroup_shrink on large pagesize system" (5/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-7-li.wang@linux.dev
-      - 0dcf844e6182 "selftest/cgroup: fix zswap attempt_writeback() on 64K pagesize system" (6/8)
+      - 883015a9c328 "selftest/cgroup: fix zswap attempt_writeback() on 64K pagesize system" (6/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-8-li.wang@linux.dev
-      - 82fbb234f40b "selftests/cgroup: test_zswap: wait for asynchronous writeback" (7/8)
+      - e5ab892d05ca "selftests/cgroup: test_zswap: wait for asynchronous writeback" (7/8)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260424040059.12940-9-li.wang@linux.dev
+- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - maintainer, nobody: 1 commits
+    - maintainer, maintainer: 1 commits
+  - full commits list
     - series "mm, swap: swap table phase IV: unify allocation", v5. (12 commits)
-      - f0995e8b5381 "mm, swap: simplify swap cache allocation helper" (0/12)
+      - bc5fb8e3a81b "mm, swap: simplify swap cache allocation helper" (0/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-0-88ae43e064c7@tencent.com
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-1-88ae43e064c7@tencent.com
-      - 7f2aacf8b6e4 "mm, swap: add support for stable large allocation in swap cache directly" (3/12)
+      - 6af8fccd62cc "mm, swap: add support for stable large allocation in swap cache directly" (3/12)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-4-88ae43e064c7@tencent.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

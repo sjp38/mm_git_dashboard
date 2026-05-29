@@ -3,21 +3,21 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 3 (5) -> 3 (5) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-stable: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - series "fix MAP_DROPPABLE not supported errno", v4. (3)
+      - d86c9e971af2 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
+        - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
+- mm-unstable: 6 -> 5 commits
+  - series: 3 (5) -> 2 (4)
+    - no role, reviewer: 1 -> 0 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 3 -> 3 commits (no change)
-  - changed commits
-    - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3)
-      - 4c2516fb75b0 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

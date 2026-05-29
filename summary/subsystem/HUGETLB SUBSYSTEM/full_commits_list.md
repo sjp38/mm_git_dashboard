@@ -1,42 +1,46 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 5 total, 0 (0) series, 5 non-series commits
+- mm-hotfixes-stable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 1 commits
     - no role, maintainer: 3 commits
   - full commits list
-    - a1fb92b0f6bf "mm/hugetlb: avoid false positive lockdep assertion"
+    - b4aea43cd37a "mm/hugetlb: avoid false positive lockdep assertion"
       - Authored by no role player, reviewed by a maintainer
+      - Link: : https://lore.kernel.org/agWZsPGYid08uU6O@lucifer
       - Link: https://lore.kernel.org/20260513085658.45264-1-ljs@kernel.org
-    - 816f53c69233 "mm-hugetlb-avoid-false-positive-lockdep-assertion-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/agWZsPGYid08uU6O@lucifer
-    - d8f387b733ce "mm/hugetlb: restore reservation on error in hugetlb folio copy paths"
+    - 40c81856e622 "mm/hugetlb: restore reservation on error in hugetlb folio copy paths"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260520044912.6751-1-devnexen@gmail.com
-    - 5f7ae8c571aa "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
+    - 3c2d42b8ee34 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
       - Authored by no role player, reviewed by a maintainer
+      - Link: : https://sashiko.dev/#/patchset/20260522010305.4099834-1-mawupeng1@huawei.com
+      - Link: : https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com
       - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
-    - d71273f95220 "mm/hugetlb_vmemmap: fix incorrect vmemmap restore in rollback"
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 80fa8892d7ff "mm/hugetlb_vmemmap: fix incorrect vmemmap restore in rollback"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260525025213.2229628-1-songmuchun@bytedance.com
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 4 total, 0 (2) series, 2 non-series commits
+- mm-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 3f1a7f830577 "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
+    - 15807d0ddde3 "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
-    - 4c324c84683f "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
+- mm-unstable: 3 total, 0 (2) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+    - ca8a95145288 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
-      - 15582b1cc7d5 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
+      - 9eb70cfbf9b2 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - 45bd42889aa1 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
+      - 384761f3484f "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

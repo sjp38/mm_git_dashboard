@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 1bc67af16786 "zram: fix use-after-free in zram_bvec_write_partial()"
+    - b53f4ac1d830 "zram: fix use-after-free in zram_bvec_write_partial()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260528-zram-v3-1-cab86eef8764@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -12,11 +12,11 @@
   - author/reviewer role stat
     - maintainer, nobody: 2 commits
   - full commits list
-    - ec5b40692306 "zram: do not leak blk idx at the end of writeback"
+    - 8375d1c4ac94 "zram: do not leak blk idx at the end of writeback"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260526022754.2377730-2-senozhatsky@chromium.org
     - series "zram: writeback fixes", v2. (2 commits)
-      - 97e0d5246d13 "zram: clear trailing bytes of compressed writeback pages" (0/2)
+      - e29473907ba0 "zram: clear trailing bytes of compressed writeback pages" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260526022754.2377730-1-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/20260526022754.2377730-3-senozhatsky@chromium.org
@@ -24,7 +24,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 3c2765c03e32 "zram: drop unused bio parameter from write helpers"
+    - 8be5905b60a3 "zram: drop unused bio parameter from write helpers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260528-zram-v3-2-cab86eef8764@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

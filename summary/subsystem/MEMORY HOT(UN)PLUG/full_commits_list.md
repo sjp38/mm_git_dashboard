@@ -1,26 +1,30 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 5 total, 0 (2) series, 3 non-series commits
+- mm-stable: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, maintainer: 3 commits
+    - no role, no role : 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-      - f39467ef7c8d "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
+      - 2fac4afa0e2e "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com
-      - d02d694d41fd "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
+      - 3bbc54dd1b62 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
-    - 2f7d98cb89ba "mm/memory_hotplug: factor out altmap freeing checks"
+- mm-unstable: 3 total, 0 (0) series, 3 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - no role, maintainer: 2 commits
+  - full commits list
+    - 917288900148 "mm/memory_hotplug: factor out altmap freeing checks"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260511084307.1827127-1-songmuchun@bytedance.com
-    - ad7f2ada83a1 "drivers/base/memory: make memory block get/put explicit"
+    - e942f710f78d "drivers/base/memory: make memory block get/put explicit"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
       - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
-    - fff33cdfe98e "drivers/base/memory: set mem->altmap after successful device registration"
+    - dfc528020988 "drivers/base/memory: set mem->altmap after successful device registration"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260514092657.3057141-1-georgi.djakov@oss.qualcomm.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

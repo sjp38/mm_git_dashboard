@@ -10,15 +10,7 @@
     - no role, reviewer: 2 -> 2 commits (no change)
 - mm-new: 7 -> 7 commits (no change)
   - series: 1 (7) -> 1 (7) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 6 -> 7 commits
-  - changed commits
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 9a29e56abd08 "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion (0/9)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
-        - Link: https://lore.kernel.org/20260527204757.2544958-1-hannes@cmpxchg.org
-        - Link: https://lore.kernel.org/20260527204757.2544958-2-hannes@cmpxchg.org
+    - no role, no role : 7 -> 7 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
