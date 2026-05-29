@@ -6,47 +6,29 @@
     - maintainer, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 12 commits
-  - series: 1 (7) -> 2 (11)
+- mm-unstable: 12 -> 13 commits
+  - series: 2 (11) -> 2 (12)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, no role : 0 -> 1 commits
-    - maintainer, reviewer: 0 -> 3 commits
+    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 93680c2b51fa "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "[akpm@linux-foundation.org: fix CONFIG_SWAP=n build]"
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-    - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v3. (4)
-      - fc3324ad450f "memcg: store node_id instead of pglist_data pointer (0/4)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260526033931.1760588-1-shakeel.butt@linux.dev
-        - Link: https://lore.kernel.org/20260526033931.1760588-2-shakeel.butt@linux.dev
-      - 3f8fe8235970 "memcg: uint16_t for nr_bytes in obj_stock_pcp (1/4)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260526033931.1760588-3-shakeel.butt@linux.dev
-      - 43005c976f24 "memcg: int16_t for cached slab stats (2/4)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260526033931.1760588-4-shakeel.butt@linux.dev
-      - ec16b15b21f5 "memcg: multi objcg charge support (3/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260526033931.1760588-5-shakeel.butt@linux.dev
-- mm-new: 4 -> 1 commits
-  - series: 1 (4) -> 0 (1)
-    - maintainer, no role : 1 -> 0 commits
-    - maintainer, reviewer: 3 -> 0 commits
-    - maintainer, maintainer: 0 -> 1 commits
   - new commits
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - e957c6b314d1 "memcgv1: don't compile swap functions when CONFIG_SWAP=n (10/12)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
     - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - a5e62d9e00da "mm: switch deferred split shrinker to list_lru (8/9)"
+      - 15023c6cb3fb "mm: switch deferred split shrinker to list_lru (8/9)"
         - Authored by a maintainer, reviewed by a maintainer
+        - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
+        - dropped "Cc: Usama Arif <usama.arif@linux.dev>"
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

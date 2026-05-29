@@ -5,21 +5,26 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 11 commits
+- mm-unstable: 11 -> 11 commits (no change)
   - series: 3 (7) -> 3 (7) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - f26c5a14731c "mm: make mmap_miss accounting symmetric for VM_SEQ_READ"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260525145751.2671248-1-usama.arif@linux.dev
-- mm-new: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, nobody: 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm: improve large folio readahead for exec memory", v6. (2)
+      - 6eb0ccc540ec "mm: bypass mmap_miss heuristic for VM_EXEC readahead (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260528165635.2068012-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260528165635.2068012-2-usama.arif@linux.dev
+      - 8af03cd6fe69 "mm: use mapping_max_folio_order() for force_thp_readahead order (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260528165635.2068012-3-usama.arif@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

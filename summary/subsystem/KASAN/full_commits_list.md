@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 5446ed6781c0 "kasan/test: only do kmalloc_double_kzfree for generic mode"
+    - ec4547c3a89d "kasan/test: only do kmalloc_double_kzfree for generic mode"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260524031053.381776-1-wsw9603@163.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

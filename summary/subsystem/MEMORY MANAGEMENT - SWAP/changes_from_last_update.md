@@ -5,43 +5,26 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 20 -> 17 commits
-  - series: 1 (11) -> 1 (11) (no change)
+- mm-unstable: 17 -> 17 commits (no change)
+  - series: 1 (11) -> 1 (10)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 7 -> 4 commits
+    - maintainer, nobody: 4 -> 4 commits (no change)
     - maintainer, maintainer: 7 -> 7 commits (no change)
-  - changed commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 93680c2b51fa "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "[akpm@linux-foundation.org: fix CONFIG_SWAP=n build]"
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-      - 6f9d9edb2860 "mm, swap: merge zeromap into swap table (11/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "[akpm@linux-foundation.org: swap_cluster_alloc_table(): remove unused local `ret]"
-        - added "[akpm@linux-foundation.org: fix unused label `err_free']"
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-12-88ae43e064c7@tencent.com
-  - dropped commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - b3e1f09b2645 "mm-memcg-swap-store-cgroup-id-in-cluster-table-directly-fix (10/12)"
-        - Authored by a maintainer, reviewed by nobody
-    - 69fb9b3c0aa9 "mm-swap-merge-zeromap-into-swap-table-fix"
-      - Authored by a maintainer, reviewed by nobody
-    - 641e58162f08 "mm-swap-merge-zeromap-into-swap-table-fix-2"
-      - Authored by a maintainer, reviewed by nobody
-- mm-new: 4 -> 5 commits
-  - series: 1 (4) -> 1 (5)
+- mm-new: 5 -> 5 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 0 -> 1 commits
-  - new commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
     - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - a5e62d9e00da "mm: switch deferred split shrinker to list_lru (8/9)"
+      - 15023c6cb3fb "mm: switch deferred split shrinker to list_lru (8/9)"
         - Authored by a maintainer, reviewed by a maintainer
+        - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
+        - dropped "Cc: Usama Arif <usama.arif@linux.dev>"
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

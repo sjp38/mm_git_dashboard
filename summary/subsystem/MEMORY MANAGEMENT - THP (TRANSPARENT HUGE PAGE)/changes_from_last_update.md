@@ -4,20 +4,9 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - a4ef88343f70 "mm/huge_memory: update file PUD counter before folio_put()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
-      - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-      - Link: https://lore.kernel.org/20260526101355.1984244-1-yintirui@huawei.com
-    - e14c8a1299ed "mm/huge_memory: update file PMD counter before folio_put()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
-      - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-      - Link: https://lore.kernel.org/20260526101337.1984081-1-yintirui@huawei.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 49 -> 48 commits
+- mm-unstable: 48 -> 48 commits (no change)
   - series: 3 (35) -> 3 (35) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
@@ -27,25 +16,20 @@
     - reviewer, no role : 4 -> 4 commits (no change)
     - reviewer, reviewer: 12 -> 12 commits (no change)
     - reviewer, maintainer: 7 -> 7 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-  - changed commits
-    - 0a7fc979235b "selftests/mm: check file initialization writes in split_huge_page_test"
-      - Authored by no role player, reviewed by no role player
-      - added "[akpm@linux-foundation.org: remove unneeded local, per David]"
-      - added "Link: : https://lore.kernel.org/da82de92-29d8-457c-9f65-40fc4900b922@kernel.org"
-      - added "Cc: Vineet Agarwal <agarwal.vineet2006@gmail.com>"
-      - Link: : https://lore.kernel.org/da82de92-29d8-457c-9f65-40fc4900b922@kernel.org
-      - Link: https://lore.kernel.org/20260512074924.27721-1-agarwal.vineet2006@gmail.com
-  - dropped commits
-    - 3e5b419a9d75 "selftests-mm-check-file-initialization-writes-in-split_huge_page_test-fix"
-      - Authored by a maintainer, reviewed by nobody
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - maintainer, maintainer: 0 -> 1 commits
+- mm-new: 1 -> 2 commits
+  - series: 0 (1) -> 0 (1) (no change)
+    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
+    - a77fdae682f5 "mm-switch-deferred-split-shrinker-to-list_lru-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+  - changed commits
     - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - a5e62d9e00da "mm: switch deferred split shrinker to list_lru (8/9)"
+      - 15023c6cb3fb "mm: switch deferred split shrinker to list_lru (8/9)"
         - Authored by a maintainer, reviewed by a maintainer
+        - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
+        - dropped "Cc: Usama Arif <usama.arif@linux.dev>"
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

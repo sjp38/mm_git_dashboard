@@ -8,31 +8,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 112 -> 112 commits (no change)
   - series: 4 (96) -> 4 (96) (no change)
-    - no role, nobody: 39 -> 40 commits
+    - no role, nobody: 40 -> 40 commits (no change)
     - no role, no role : 38 -> 38 commits (no change)
     - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
     - reviewer, nobody: 5 -> 5 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 15 -> 14 commits
-  - changed commits
-    - 0a7fc979235b "selftests/mm: check file initialization writes in split_huge_page_test"
-      - Authored by no role player, reviewed by no role player
-      - added "[akpm@linux-foundation.org: remove unneeded local, per David]"
-      - added "Link: : https://lore.kernel.org/da82de92-29d8-457c-9f65-40fc4900b922@kernel.org"
-      - added "Cc: Vineet Agarwal <agarwal.vineet2006@gmail.com>"
-      - Link: : https://lore.kernel.org/da82de92-29d8-457c-9f65-40fc4900b922@kernel.org
-      - Link: https://lore.kernel.org/20260512074924.27721-1-agarwal.vineet2006@gmail.com
-    - 5f571824b1f7 "mm/dmapool: use static key for boot-time debug enablement"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260524034015.1830-1-lirongqing@baidu.com
-  - dropped commits
-    - 3e5b419a9d75 "selftests-mm-check-file-initialization-writes-in-split_huge_page_test-fix"
-      - Authored by a maintainer, reviewed by nobody
-- mm-new: 1 -> 0 commits
+    - maintainer, nobody: 14 -> 14 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

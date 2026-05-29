@@ -6,44 +6,30 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 29 -> 28 commits
-  - series: 5 (18) -> 5 (20)
-    - no role, nobody: 0 -> 1 commits
+- mm-unstable: 28 -> 29 commits
+  - series: 5 (20) -> 5 (19)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 9 -> 9 commits (no change)
-    - no role, reviewer: 9 -> 7 commits
+    - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 3 -> 3 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 6f9d9edb2860 "mm, swap: merge zeromap into swap table (11/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "[akpm@linux-foundation.org: swap_cluster_alloc_table(): remove unused local `ret]"
-        - added "[akpm@linux-foundation.org: fix unused label `err_free']"
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-12-88ae43e064c7@tencent.com
-    - series "zram: writeback fixes", v2. (2)
-      - 4ecf236301a7 "mm: remove mentions of PageWriteback (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-  - dropped commits
-    - db3461bd34f0 "mm-page_alloc-replace-kernel_init_pages-with-batch-page-clearing-v4"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260504063942.553438-1-hsalunke@amd.com
-- mm-new: 1 -> 2 commits
-  - series: 0 (1) -> 0 (2)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 1 commits
   - new commits
+    - 2a1daa177de3 "docs: mm: clarify that user_reserve_kbytes has no effect when overcommit_memory is set to 0 or 1"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260528-mm-clarify-docs-v1-1-aa88e83b4bfd@redhat.com
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
     - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 7d5925eeb2de "mm: memory: flatten alloc_anon_folio() retry loop (7/9)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
-      - a5e62d9e00da "mm: switch deferred split shrinker to list_lru (8/9)"
+      - 15023c6cb3fb "mm: switch deferred split shrinker to list_lru (8/9)"
         - Authored by a maintainer, reviewed by a maintainer
+        - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
+        - dropped "Cc: Usama Arif <usama.arif@linux.dev>"
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

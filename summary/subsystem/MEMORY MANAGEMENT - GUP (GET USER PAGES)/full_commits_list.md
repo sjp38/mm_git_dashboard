@@ -7,22 +7,22 @@
     - no role, nobody: 4 commits
     - no role, no role : 2 commits
   - full commits list
-    - 8cede520824a "mm/gup: cleanup pgtable entry accessors"
+    - e0906a918612 "mm/gup: cleanup pgtable entry accessors"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260421051754.1691221-1-agordeev@linux.ibm.com
-    - bd6f617b4742 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 011b15219fa7 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
-      - 2671009a9f9e "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
+      - ce55751a0d82 "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-25-rppt@kernel.org
-      - 0c5b67e49b69 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
+      - e6f4e9f76e64 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-26-rppt@kernel.org
-      - 5e7bd4782cbb "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
+      - e0d04f0998e7 "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-34-rppt@kernel.org
-      - 62f18fb6c9df "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
+      - 6bdafa298b62 "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-35-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
