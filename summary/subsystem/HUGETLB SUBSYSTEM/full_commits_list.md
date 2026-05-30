@@ -19,7 +19,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 80fa8892d7ff "mm/hugetlb_vmemmap: fix incorrect vmemmap restore in rollback"
+    - 4149880b97c1 "mm/hugetlb_vmemmap: fix incorrect vmemmap restore in rollback"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260525025213.2229628-1-songmuchun@bytedance.com
 - mm-stable: 1 total, 0 (0) series, 1 non-series commits
@@ -34,13 +34,13 @@
     - no role, no role : 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - ca8a95145288 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
+    - 3519714855fc "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
-      - 9eb70cfbf9b2 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
+      - 6b8a09b4c23e "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - 384761f3484f "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
+      - 2285d2937ead "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

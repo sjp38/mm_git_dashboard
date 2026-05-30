@@ -1,43 +1,15 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, no role : 0 -> 1 commits
-  - changed commits
-    - c0cafe24d3f6 "memcg: use round-robin victim selection in refill_stock"
-      - Authored by a maintainer, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - maintainer, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, no role : 1 -> 0 commits
-- mm-stable: 0 -> 4 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, no role : 0 -> 3 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "selftests/cgroup: improve zswap tests robustness and support large page sizes", v7. (8)
-      - 6e9f5c2eecd1 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util (3/8)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260424040059.12940-5-li.wang@linux.dev
-    - 838376c60df0 "mm/memcontrol: hoist pstatc_pcpu assignment out of CPU loop"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260429084216.186238-1-hui.zhu@linux.dev
-    - series "selftests/cgroup: Fix false positive failures in test_percpu_basic", v2. (2)
-      - ca9caa098f70 "selftests/cgroup: fix hardcoded page size in test_percpu_basic (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260501022058.18024-1-li.wang@linux.dev
-        - Link: https://lore.kernel.org/20260501022058.18024-2-li.wang@linux.dev
-      - 5de852b6e7cd "selftests/cgroup: include slab in test_percpu_basic memory check (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
-- mm-unstable: 13 -> 9 commits
-  - series: 2 (12) -> 1 (9)
-    - no role, no role : 3 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+- mm-stable: 4 -> 4 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 9 -> 9 commits (no change)
+  - series: 1 (9) -> 1 (9) (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
@@ -46,6 +18,13 @@
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 318b652423b6 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+        - dropped "Cc: Kairui Song <ryncsn@gmail.com>"
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

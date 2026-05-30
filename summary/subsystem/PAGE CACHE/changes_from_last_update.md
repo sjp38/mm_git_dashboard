@@ -3,36 +3,35 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 3 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, reviewer: 0 -> 3 commits
-  - changed commits
-    - 7b32f64bc512 "mm: limit filemap_fault readahead to VMA boundaries"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260427030148.653228-1-fmayle@google.com
-      - Link: https://lore.kernel.org/all/ivnv2crd3et76p2nx7oszuqhzzah756oecn5yuykzqfkqzoygw@yvnlkhjjssoz/ [1]
-    - series "mm/filemap: tighten mmap_miss hit accounting", v3. (2)
-      - 0b9c0aeba938 "mm/filemap: count only the faulting address as a mmap hit (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/tencent_AA501E9A238337BD167E5C2ACF948A1AF308@qq.com
-        - Link: https://lore.kernel.org/tencent_756F151FE66F3D80479A6F982C0AB8569F09@qq.com
-      - 9b0fcac3cfe7 "mm/filemap: do not count FAULT_FLAG_TRIED retries as mmap hits (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/tencent_22E6B8849EC1141FE7773C64467E6F1E2C09@qq.com
-- mm-unstable: 11 -> 8 commits
-  - series: 3 (7) -> 2 (5)
+- mm-stable: 3 -> 3 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
+- mm-unstable: 8 -> 8 commits (no change)
+  - series: 2 (5) -> 2 (5) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 5 -> 2 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
+- mm-new: 2 -> 3 commits
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - 380c38979f9b "add comment explaining design decision"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/fb47629e-6533-4c87-ac0b-e3a48a890ef4@linux.dev
+  - changed commits
+    - series "mm: improve large folio readahead for exec memory", v6. (2)
+      - e4d5cfe0c746 "mm: bypass mmap_miss heuristic for VM_EXEC readahead (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260528165635.2068012-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260528165635.2068012-2-usama.arif@linux.dev
+      - 2594a90abb84 "mm: use mapping_max_folio_order() for force_thp_readahead order (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260528165635.2068012-3-usama.arif@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

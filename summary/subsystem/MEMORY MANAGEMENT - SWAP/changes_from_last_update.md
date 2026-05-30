@@ -3,48 +3,29 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 3 commits
+- mm-stable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 2 commits
-  - changed commits
-    - d590df11be0f "mm/page_io: rename swap_iocb fields for clarity"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260402072650.48811-1-devnexen@gmail.com
-    - 9669b87065a6 "mm/lruvec: preemptively free dead folios during lru_add drain"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260425053417.351146-1-jp.kobryn@linux.dev
-    - 66366d291f66 "mm/swap: add cond_resched() in swap_reclaim_full_clusters to prevent softlockup"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260506130919.2298807-1-kerayhuang@tencent.com
-- mm-unstable: 17 -> 13 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-unstable: 13 -> 13 commits (no change)
   - series: 1 (10) -> 1 (10) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
     - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 4 -> 3 commits
+    - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, maintainer: 7 -> 7 commits (no change)
-  - changed commits
-    - 6fac788d7b88 "mm, swap: avoid leaving unused extend table after alloc race"
-      - Authored by a maintainer, reviewed by nobody
-      - added "[kasong@tencent.com: v2]"
-      - added "Link: : https://lore.kernel.org/20260515-swap-extend-table-fix-v2-1-833d72ad53e5@tencent.com"
-      - Link: : https://lore.kernel.org/20260515-swap-extend-table-fix-v2-1-833d72ad53e5@tencent.com
-      - Link: https://lore.kernel.org/20260513-swap-extend-table-fix-v1-1-a71dea851fb3@tencent.com
-  - dropped commits
-    - 0779afa1c522 "mm-swap-avoid-leaving-unused-extend-table-after-alloc-race-v2"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260515-swap-extend-table-fix-v2-1-833d72ad53e5@tencent.com
 - mm-new: 5 -> 5 commits (no change)
   - series: 1 (5) -> 1 (5) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 318b652423b6 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+        - dropped "Cc: Kairui Song <ryncsn@gmail.com>"
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

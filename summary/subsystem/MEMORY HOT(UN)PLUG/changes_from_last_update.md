@@ -3,24 +3,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 2 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "mm: Fix vmemmap optimization accounting and initialization", v8. (6)
-      - 2fac4afa0e2e "mm/memory_hotplug: fix incorrect altmap passing in error path (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428081855.1249045-3-songmuchun@bytedance.com
-      - 3bbc54dd1b62 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths (2/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
-- mm-unstable: 5 -> 3 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, no role : 2 -> 1 commits
-    - no role, maintainer: 3 -> 2 commits
+- mm-stable: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 3 -> 3 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

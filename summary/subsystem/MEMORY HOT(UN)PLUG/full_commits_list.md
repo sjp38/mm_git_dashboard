@@ -17,14 +17,14 @@
     - no role, no role : 1 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 917288900148 "mm/memory_hotplug: factor out altmap freeing checks"
+    - c0d9b523c45d "mm/memory_hotplug: factor out altmap freeing checks"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260511084307.1827127-1-songmuchun@bytedance.com
-    - e942f710f78d "drivers/base/memory: make memory block get/put explicit"
+    - cfa17b91dc2e "drivers/base/memory: make memory block get/put explicit"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
       - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
-    - dfc528020988 "drivers/base/memory: set mem->altmap after successful device registration"
+    - 4c0d13845fd3 "drivers/base/memory: set mem->altmap after successful device registration"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260514092657.3057141-1-georgi.djakov@oss.qualcomm.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

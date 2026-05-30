@@ -34,40 +34,40 @@
     - maintainer, reviewer: 3 commits
     - maintainer, maintainer: 2 commits
   - full commits list
-      - c42326c0563c "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
+      - a7e46b80ab65 "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - 476e5c5b61f0 "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
+      - a7113646c360 "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - 9b1395104a06 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
+      - d3287757f297 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-      - 3efa15243a5f "memcgv1: don't compile swap functions when CONFIG_SWAP=n" (10/12)
+      - 4a8b803445f5 "memcgv1: don't compile swap functions when CONFIG_SWAP=n" (10/12)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
-      - e5424e22f895 "mm/memcg: remove no longer used swap cgroup array" (11/12)
+      - d644982d5520 "mm/memcg: remove no longer used swap cgroup array" (11/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
     - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v3. (4 commits)
-      - a48a944f102d "memcg: store node_id instead of pglist_data pointer" (0/4)
+      - fae8cfd5908a "memcg: store node_id instead of pglist_data pointer" (0/4)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260526033931.1760588-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260526033931.1760588-2-shakeel.butt@linux.dev
-      - c9a1aa3aeef3 "memcg: uint16_t for nr_bytes in obj_stock_pcp" (1/4)
+      - 8d0f8c789588 "memcg: uint16_t for nr_bytes in obj_stock_pcp" (1/4)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260526033931.1760588-3-shakeel.butt@linux.dev
-      - 4c4a18bfa9a4 "memcg: int16_t for cached slab stats" (2/4)
+      - 7e7ce38299d8 "memcg: int16_t for cached slab stats" (2/4)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260526033931.1760588-4-shakeel.butt@linux.dev
-      - dcc7a600136c "memcg: multi objcg charge support" (3/4)
+      - a1cc14025871 "memcg: multi objcg charge support" (3/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260526033931.1760588-5-shakeel.butt@linux.dev
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - maintainer, maintainer: 1 commits
   - full commits list
-      - ba15d429aac1 "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 318b652423b6 "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

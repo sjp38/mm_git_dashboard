@@ -34,11 +34,11 @@
     - maintainer, maintainer: 1 commits
   - full commits list
     - series "mm, swap: swap table phase IV: unify allocation", v5. (12 commits)
-      - bc5fb8e3a81b "mm, swap: simplify swap cache allocation helper" (0/12)
+      - 97e9a286e846 "mm, swap: simplify swap cache allocation helper" (0/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-0-88ae43e064c7@tencent.com
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-1-88ae43e064c7@tencent.com
-      - 6af8fccd62cc "mm, swap: add support for stable large allocation in swap cache directly" (3/12)
+      - 85ae635bd6d1 "mm, swap: add support for stable large allocation in swap cache directly" (3/12)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-4-88ae43e064c7@tencent.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -3,40 +3,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "mm: Free contiguous order-0 pages efficiently", v6. (3)
-      - 60ced5818f64 "vmalloc: optimize vfree with free_pages_bulk() (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
-    - series "kasan: hw_tags: Disable tagging for stack and page-tables", v4. (3)
-      - b56ca146a2b2 "vmalloc: add __GFP_SKIP_KASAN support (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260429102704.680174-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260429102704.680174-2-dev.jain@arm.com
-- mm-unstable: 8 -> 5 commits
-  - series: 2 (7) -> 1 (5)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 6 -> 5 commits
-    - no role, reviewer: 1 -> 0 commits
-  - changed commits
-    - series "mm/vmalloc: free unused pages on vrealloc() shrink", v14. (5)
-      - 0f43060051bc "mm/vmalloc: use physical page count in vread_iter() for VM_ALLOC areas (2/5)"
-        - Authored by no role player, reviewed by no role player
-        - added "[shivamkalra98@zohomail.in: add an nr_pages check]"
-        - added "Link: : https://lore.kernel.org/aff47da5-4fd5-481d-be18-e1eb99639490@zohomail.in"
-        - Link: : https://lore.kernel.org/aff47da5-4fd5-481d-be18-e1eb99639490@zohomail.in
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-3-70b96ee3e9c9@zohomail.in
-  - dropped commits
-    - series "mm/vmalloc: free unused pages on vrealloc() shrink", v14. (5)
-      - b118515e5824 "mm-vmalloc-use-physical-page-count-in-vread_iter-for-vm_alloc-areas-fix (3/5)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/aff47da5-4fd5-481d-be18-e1eb99639490@zohomail.in
+- mm-stable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
+    - no role, no role : 5 -> 5 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

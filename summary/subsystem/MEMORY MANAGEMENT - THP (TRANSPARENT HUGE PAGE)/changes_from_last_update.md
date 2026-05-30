@@ -4,51 +4,37 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-stable: 0 -> 6 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, reviewer: 0 -> 3 commits
-    - no role, maintainer: 0 -> 3 commits
-  - changed commits
-    - 085a7acf732f "mm/huge_memory: fix outdated comment about freeing subpages in __folio_split"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260423034917.8234-1-baohua@kernel.org
-    - 98e09ce7bb67 "mm/khugepaged: use ALIGN helpers for PMD alignment"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260409014323.2385982-1-ye.liu@linux.dev
-    - series "mm: huge_memory: clean up defrag sysfs with shared", v2. (2)
-      - b0f3d00e15e8 "mm: huge_memory: use sysfs_match_string() in defrag_store() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260408-thp_defrag-v2-0-bc544c1bde4e@debian.org
-        - Link: https://lore.kernel.org/20260408-thp_defrag-v2-1-bc544c1bde4e@debian.org
-      - 1d8274b82cd1 "mm: huge_memory: refactor defrag_show() to use defrag_flags[] (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260408-thp_defrag-v2-2-bc544c1bde4e@debian.org
-    - 9f7ff45e99d3 "selftests/mm: khugepaged: initialize file contents via mmap"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260429115816.98824-1-agarwal.vineet2006@gmail.com
-    - ab3fad1b1cdc "mm/khugepaged: return -EAGAIN for SCAN_PAGE_HAS_PRIVATE in MADV_COLLAPSE"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260429140434.439456-1-agarwal.vineet2006@gmail.com
-- mm-unstable: 48 -> 42 commits
-  - series: 3 (35) -> 2 (33)
+- mm-stable: 6 -> 6 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-unstable: 42 -> 42 commits (no change)
+  - series: 2 (33) -> 2 (33) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 8 -> 5 commits
-    - no role, maintainer: 5 -> 2 commits
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 7 -> 7 commits (no change)
     - reviewer, no role : 4 -> 4 commits (no change)
     - reviewer, reviewer: 12 -> 12 commits (no change)
     - reviewer, maintainer: 7 -> 7 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
+- mm-new: 2 -> 3 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, nobody: 0 -> 1 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - series "userfaultfd/pagemap: pre-existing fixes". (6)
+      - 4cafbf902523 "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade (3/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 318b652423b6 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+        - dropped "Cc: Kairui Song <ryncsn@gmail.com>"
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

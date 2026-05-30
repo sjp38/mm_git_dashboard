@@ -3,28 +3,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-  - changed commits
-    - series "treewide: fixup gfp_t printks", v2. (3)
-      - d36102a5f553 "mm/kfence: use special gfp_t format specifier (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260326-gfp64-v2-3-d916021cecdf@google.com
-- mm-unstable: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
+- mm-stable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-stable: 0 -> 1 commits
+- mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - changed commits
-    - e4f5f6f3c199 "kfence: fix KASAN HW tags bypass via runtime sample_interval change"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260507095237.741017-1-glider@google.com
-- mm-nonmm-unstable: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
+- mm-nonmm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 1 -> 0 commits

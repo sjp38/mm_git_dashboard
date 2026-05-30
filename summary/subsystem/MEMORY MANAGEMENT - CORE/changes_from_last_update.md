@@ -1,112 +1,43 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 3c2d42b8ee34 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - added "[akpm@linux-foundation.org: fix race, rename label per Miaohe]"
-      - added "Link: : https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com"
-      - added "Link: : https://sashiko.dev/#/patchset/20260522010305.4099834-1-mawupeng1@huawei.com"
-      - Link: : https://sashiko.dev/#/patchset/20260522010305.4099834-1-mawupeng1@huawei.com
-      - Link: : https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com
-      - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-- mm-stable: 0 -> 14 commits
-  - series: 0 (0) -> 3 (8)
-    - no role, no role : 0 -> 7 commits
-    - no role, reviewer: 0 -> 5 commits
-    - no role, maintainer: 0 -> 2 commits
-  - changed commits
-    - 8613803cf5d5 "mm: convert vmemmap_p?d_populate() to static functions"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260423101441.7089-1-kaitao.cheng@linux.dev
-    - series "mm: Free contiguous order-0 pages efficiently", v6. (3)
-      - 4aa4abf1f14b "mm/page_alloc: optimize free_contig_range() (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
-      - 60ced5818f64 "vmalloc: optimize vfree with free_pages_bulk() (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
-    - 214f9ab72ce6 "mm/memory: update stale locking comments for fault handlers"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260424092217.263648-1-adi.sharma@zohomail.in
-    - e0974347f5bb "mm/sparse: remove unnecessary NULL check before allocating mem_section"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260419144225.2875654-1-ekffu200098@gmail.com
-    - ffe55393137c "mm/sparse: remove sparse buffer pre-allocation mechanism"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260410092419.2446420-1-songmuchun@bytedance.com
-    - f2a950170f7a "mm/vmpressure: skip socket pressure for costly order reclaim"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260406195014.112521-1-jp.kobryn@linux.dev
-    - b9fe373e7d3c "mm/thp: dead code cleanup in Kconfig"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260331070730.33915-1-julianbraha@gmail.com
-    - series "mm: Fix vmemmap optimization accounting and initialization", v8. (6)
-      - c373f7f98e6a "mm/sparse-vmemmap: fix vmemmap accounting underflow (0/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428081855.1249045-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260428081855.1249045-2-songmuchun@bytedance.com
-      - 3bbc54dd1b62 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths (2/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
-      - 721a73e30c9e "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization (3/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428081855.1249045-5-songmuchun@bytedance.com
-    - series "mm: remove page_mapped()". (3)
-      - 90f01f5d6ba5 "mm: remove page_mapped() (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260427-page_mapped-v1-3-e89c3592c74c@kernel.org
-    - series "kasan: hw_tags: Disable tagging for stack and page-tables", v4. (3)
-      - b56ca146a2b2 "vmalloc: add __GFP_SKIP_KASAN support (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260429102704.680174-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260429102704.680174-2-dev.jain@arm.com
-      - 6ae51adb084a "kasan: skip HW tagging for all kernel thread stacks (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260429102704.680174-3-dev.jain@arm.com
-- mm-unstable: 29 -> 15 commits
-  - series: 5 (19) -> 2 (11)
+- mm-stable: 14 -> 14 commits (no change)
+  - series: 3 (8) -> 3 (8) (no change)
+    - no role, no role : 7 -> 7 commits (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-unstable: 15 -> 15 commits (no change)
+  - series: 2 (11) -> 2 (11) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 9 -> 2 commits
-    - no role, reviewer: 7 -> 2 commits
-    - no role, maintainer: 3 -> 1 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, nobody: 3 -> 3 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
+- mm-new: 2 -> 3 commits
+  - series: 0 (2) -> 0 (3)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-nonmm-stable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "userfaultfd/pagemap: pre-existing fixes". (6)
+      - 6d0b3e2ab6a1 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
   - changed commits
-    - 97bd80a91858 "treewide: fix indentation and whitespace in Kconfig files"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260407053945.14116-1-linux.amoon@gmail.com
-- mm-nonmm-unstable: 1 -> 0 commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 318b652423b6 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+        - dropped "Cc: Kairui Song <ryncsn@gmail.com>"
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+- mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-nonmm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)

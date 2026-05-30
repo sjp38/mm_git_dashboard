@@ -1,49 +1,17 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 0 -> 3 commits
+- mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 3 commits
-  - changed commits
-    - b4aea43cd37a "mm/hugetlb: avoid false positive lockdep assertion"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - added "[ljs@kernel.org: account for the !CONFIG_HUGETLB_PMD_PAGE_TABLE_SHARING case]"
-      - added "Link: : https://lore.kernel.org/agWZsPGYid08uU6O@lucifer"
-      - Link: : https://lore.kernel.org/agWZsPGYid08uU6O@lucifer
-      - Link: https://lore.kernel.org/20260513085658.45264-1-ljs@kernel.org
-    - 40c81856e622 "mm/hugetlb: restore reservation on error in hugetlb folio copy paths"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260520044912.6751-1-devnexen@gmail.com
-    - 3c2d42b8ee34 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - added "[akpm@linux-foundation.org: fix race, rename label per Miaohe]"
-      - added "Link: : https://sashiko.dev/#/patchset/20260522010305.4099834-1-mawupeng1@huawei.com"
-      - added "Link: : https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com"
-      - Link: : https://sashiko.dev/#/patchset/20260522010305.4099834-1-mawupeng1@huawei.com
-      - Link: : https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com
-      - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
-- mm-hotfixes-unstable: 5 -> 1 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 0 commits
-  - dropped commits
-    - 816f53c69233 "mm-hugetlb-avoid-false-positive-lockdep-assertion-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/agWZsPGYid08uU6O@lucifer
-- mm-stable: 0 -> 1 commits
+- mm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 15807d0ddde3 "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
-- mm-unstable: 4 -> 3 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 3 -> 3 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 2 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

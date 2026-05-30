@@ -3,25 +3,22 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 2 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 2 commits
-  - changed commits
-    - series "mm: Fix vmemmap optimization accounting and initialization", v8. (6)
-      - 94405c613683 "mm/mm_init: fix pageblock migratetype for ZONE_DEVICE compound pages (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428081855.1249045-6-songmuchun@bytedance.com
-      - cd681403a870 "mm/mm_init: fix uninitialized struct pages for ZONE_DEVICE (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428081855.1249045-7-songmuchun@bytedance.com
-- mm-unstable: 8 -> 6 commits
-  - series: 1 (8) -> 1 (6)
-    - no role, no role : 8 -> 6 commits
+- mm-stable: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 1 (6) -> 1 (6) (no change)
+    - no role, no role : 6 -> 6 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 318b652423b6 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+        - dropped "Cc: Kairui Song <ryncsn@gmail.com>"
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

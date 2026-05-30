@@ -15,25 +15,40 @@
     - no role, maintainer: 2 commits
     - reviewer, nobody: 3 commits
   - full commits list
-    - da7b82037a01 "mm/mseal: use min/max in mseal_apply"
+    - 994f2dfb3035 "mm/mseal: use min/max in mseal_apply"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503115915.18680-3-thorsten.blum@linux.dev
     - series "remove mmap_action success, error hooks", v2. (3 commits)
-      - a5fec4790465 "drivers/char/mem: eliminate unnecessary use of success_hook" (0/3)
+      - fa638f42ac69 "drivers/char/mem: eliminate unnecessary use of success_hook" (0/3)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org
         - Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org
-      - f9c8525ca8fe "mm/vma: remove mmap_action->success_hook" (1/3)
+      - dd0fbeadddd6 "mm/vma: remove mmap_action->success_hook" (1/3)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org
-      - 7bf8b6eee04c "mm/vma: eliminate mmap_action->error_hook, introduce error_filter" (2/3)
+      - 8b0076542126 "mm/vma: eliminate mmap_action->error_hook, introduce error_filter" (2/3)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/e770b28427937057fa953ac380a134b24acd8bb4.1779462249.git.ljs@kernel.org
     - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3 commits)
-      - 66003bc8b384 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
+      - 86ef73d85063 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
         - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 3 total, 1 (3) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 3 commits
+  - full commits list
+    - series "userfaultfd/pagemap: pre-existing fixes". (6 commits)
+      - 550d7f835284 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race" (0/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260529172331.356655-1-kas@kernel.org
+        - Link: https://lore.kernel.org/20260529172331.356655-2-kas@kernel.org
+        - Link: https://lore.kernel.org/all/20260526130509.2748441-1-kirill@shutemov.name/ [1]
+      - a3783f0e09b4 "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry()" (1/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260529172331.356655-3-kas@kernel.org
+      - 060c08490317 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole()" (2/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260529172331.356655-4-kas@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

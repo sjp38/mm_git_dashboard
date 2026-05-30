@@ -1,131 +1,26 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 0 -> 2 commits
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 2 commits
-  - changed commits
-    - c0ca59beb525 "mm/cma_debug: fix invalid accesses for inactive CMA areas"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260520061025.3971821-1-songmuchun@bytedance.com
-    - 00739e4dd46d "mm/cma: fix reserved page leak on activation failure"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260523060123.2207992-1-songmuchun@bytedance.com
-- mm-hotfixes-unstable: 3 -> 1 commits
+    - no role, no role : 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 3 -> 1 commits
-- mm-stable: 0 -> 20 commits
-  - series: 0 (0) -> 2 (15)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 6 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 2 commits
-    - maintainer, nobody: 0 -> 10 commits
-  - changed commits
-    - series "selftests/mm: clean up build output and verbosity", v3. (2)
-      - 1d224e7cbeac "selftests/mm: respect build verbosity settings for 32/64-bit targets (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260422080446.26020-1-wangli.ahau@gmail.com
-        - Link: https://lore.kernel.org/20260422080446.26020-2-wangli.ahau@gmail.com
-    - 04cf82a741e0 "selftests/mm: suppress compiler error in liburing check"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260422080446.26020-3-wangli.ahau@gmail.com
-    - series "mm/damon: introduce DAMOS failed region quota charge ratio". (11)
-      - 776270536d9d "Docs/mm/damon/design: document fail_charge_{num,denom} (4/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428013402.115171-6-sj@kernel.org
-      - 59ebdeedb595 "Docs/admin-guide/mm/damon/usage: document fail_charge_{num,denom} files (5/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428013402.115171-7-sj@kernel.org
-    - series "fix MAP_DROPPABLE not supported errno", v4. (3)
-      - c02dd57c57a6 "selftests/mm: verify droppable mappings cannot be locked (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260416033939.49981-3-anthony.yznaga@oracle.com
-      - 303c6bdfe7cb "selftests/mm: run the MAP_DROPPABLE selftest (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260416033939.49981-4-anthony.yznaga@oracle.com
-    - 8c2c7df58b54 "Docs/mm/damon/maintainer-profile: add AI review usage guideline"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260412211932.89038-1-sj@kernel.org
-      - Link: https://github.com/sashiko-dev/sashiko/commit/ad9f4a98f958 [1]
-      - Link: https://github.com/sashiko-dev/sashiko/commit/b554c7b6e733 [2]
-    - 7e8983f317ab "selftests/mm: simplify byte pattern checking in mremap_test"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260415044509.579428-1-dev.jain@arm.com
-    - series "mm/damon: repost non-hotfix reviewed patches in damon/next tree", v2. (4)
-      - abdca14655fe "Docs/admin-guide/mm/damon: fix 'parametrs' typo (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260426231619.107231-3-sj@kernel.org
-      - 58996503b631 "mm/damon: support MADV_COLLAPSE via DAMOS_COLLAPSE scheme action (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260426231619.107231-5-sj@kernel.org
-        - Link: https://lore.kernel.org/damon/20260313000816.79933-1-sj@kernel.org/ [1]
-    - 0b20c36c118d "mm/madvise: reject invalid process_madvise() advice for zero-length vectors"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/tencent_C3AEB0E769C5F4F9370F9411B69B7F8B2907@qq.com
-    - series "mm/damon: let DAMON be paused and resumed", v2. (10)
-      - 60bee40e30d0 "Docs/mm/damon/design: update for context pause/resume feature (2/10)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260427151231.113429-4-sj@kernel.org
-      - ade1a22a8bf6 "Docs/admin-guide/mm/damon/usage: update for pause file (3/10)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260427151231.113429-5-sj@kernel.org
-    - series "mm/damon/reclaim,lru_sort: monitor all system rams by default". (7)
-      - 2262a915615b "Docs/admin-guide/mm/damon/reclaim: update for entire memory monitoring (5/7)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260429041232.90257-7-sj@kernel.org
-      - 77289dcfa973 "Docs/admin-guide/mm/damon/lru_sort: update for entire memory monitoring (6/7)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260429041232.90257-8-sj@kernel.org
-    - 9f7ff45e99d3 "selftests/mm: khugepaged: initialize file contents via mmap"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260429115816.98824-1-agarwal.vineet2006@gmail.com
-    - series "mm/damon/sysfs: document filters/ directory as deprecated". (2)
-      - 7e6cc9f954aa "Docs/admin-guide/mm/damon/usage: mark scheme filters sysfs dir as deprecated (0/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260429150309.82282-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260429150309.82282-2-sj@kernel.org
-    - series "mm/damon/reclaim: support monitoring intervals auto-tuning". (2)
-      - 1794454a3bf6 "Docs/admin-guide/mm/damon/reclaim: update for autotune_monitoring_intervals (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260501011740.81988-3-sj@kernel.org
-    - series "mm/damon/stat: add kdamond_pid parameter". (2)
-      - f27d56b4f2aa "Docs/admin-guide/mm/damon/stat: document kdamond_pid parameter (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260502020505.80822-3-sj@kernel.org
-    - series "mm/kmemleak: dedupe verbose scan output", v3. (2)
-      - cfaef29c20e8 "selftests/mm: add kmemleak verbose dedup test (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260506-kmemleak_dedup-v3-2-2d36aafc34da@debian.org
-- mm-unstable: 112 -> 92 commits
-  - series: 4 (96) -> 2 (80)
-    - no role, nobody: 40 -> 39 commits
-    - no role, no role : 38 -> 32 commits
-    - no role, reviewer: 7 -> 6 commits
-    - no role, maintainer: 6 -> 4 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-stable: 20 -> 20 commits (no change)
+  - series: 2 (15) -> 2 (15) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 6 -> 6 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - maintainer, nobody: 10 -> 10 commits (no change)
+- mm-unstable: 92 -> 92 commits (no change)
+  - series: 2 (80) -> 2 (80) (no change)
+    - no role, nobody: 39 -> 39 commits (no change)
+    - no role, no role : 32 -> 32 commits (no change)
+    - no role, reviewer: 6 -> 6 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, nobody: 5 -> 5 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 14 -> 4 commits
+    - maintainer, nobody: 4 -> 4 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

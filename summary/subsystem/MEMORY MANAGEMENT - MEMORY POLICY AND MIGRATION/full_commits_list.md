@@ -11,17 +11,21 @@
     - d94d0f9c153f "mm/migrate: rename PAGE_ migration flags to FOLIO_"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260324190706.964555-4-shivankg@amd.com
-- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, reviewer: 1 commits
+    - reviewer, no role : 1 commits
   - full commits list
-      - 4d7ce6ea58f1 "mm: remove mentions of PageWriteback" (1/2)
+      - dc7097ab2bf6 "mm: remove mentions of PageWriteback" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-    - f6d90277bc97 "mm/migrate: find_mm_struct: fix race between security checks and suid exec"
+    - a92724a83698 "mm/migrate: find_mm_struct: fix race between security checks and suid exec"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/ahWxQ3JxdR5ff2qf@redhat.com
+    - e1af79f3291a "mm/nodemask: correctly describe nodemask operation return types"
+      - Authored by a reviewer, reviewed by no role player
+      - Link: https://lore.kernel.org/20260529202755.1846800-1-joshua.hahnjy@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

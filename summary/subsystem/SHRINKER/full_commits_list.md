@@ -6,10 +6,10 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - e9ce6e79bd6b "mm/shrinker: avoid out-of-bounds read in set_shrinker_bit()"
+    - 17f6643e8aa8 "mm/shrinker: avoid out-of-bounds read in set_shrinker_bit()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260510183700.102475-1-devnexen@gmail.com
-    - b4be1eb859f2 "mm/shrinker: simplify shrinker_memcg_alloc() using guard()"
+    - 0bd7a92ba152 "mm/shrinker: simplify shrinker_memcg_alloc() using guard()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260513075214.2655710-1-18810879172@163.com
 - mm-new: 7 total, 1 (7) series, 0 non-series commits
@@ -17,26 +17,26 @@
     - no role, no role : 7 commits
   - full commits list
     - series "mm: switch THP shrinker to list_lru", v5. (9 commits)
-      - 58fb958c027e "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion" (0/9)
+      - 8ab58fa84398 "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion" (0/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-1-hannes@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-2-hannes@cmpxchg.org
-      - e081d9c18200 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (1/9)
+      - 203cfce5a37d "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (1/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-3-hannes@cmpxchg.org
-      - def05d27d446 "mm: list_lru: deduplicate unlock_list_lru()" (2/9)
+      - f3c70882207c "mm: list_lru: deduplicate unlock_list_lru()" (2/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-4-hannes@cmpxchg.org
-      - 816a5165153f "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (3/9)
+      - a46ad3a94ca3 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (3/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-5-hannes@cmpxchg.org
-      - 35cdac63b723 "mm: list_lru: deduplicate lock_list_lru()" (4/9)
+      - 42078a840380 "mm: list_lru: deduplicate lock_list_lru()" (4/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-6-hannes@cmpxchg.org
-      - 6c78e8c5cdee "mm: list_lru: introduce caller locking for additions and deletions" (5/9)
+      - c164536cce48 "mm: list_lru: introduce caller locking for additions and deletions" (5/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-7-hannes@cmpxchg.org
-      - 1eeb2ec26707 "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
+      - cf0463b844c0 "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-8-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
