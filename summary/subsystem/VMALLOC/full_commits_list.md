@@ -19,22 +19,22 @@
     - no role, no role : 5 commits
   - full commits list
     - series "mm/vmalloc: free unused pages on vrealloc() shrink", v14. (5 commits)
-      - ca6369df4c4c "mm/vmalloc: extract vm_area_free_pages() helper from vfree()" (0/5)
+      - 95331ae6f58a "mm/vmalloc: extract vm_area_free_pages() helper from vfree()" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-0-70b96ee3e9c9@zohomail.in
         - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-1-70b96ee3e9c9@zohomail.in
         - Link: https://lore.kernel.org/all/20260216-binder-shrink-vec-v3-v6-0-ece8e8593e53@zohomail.in/ [1]
-      - f1dfb22b2edc "mm/vmalloc: use physical page count for vrealloc() grow-in-place check" (1/5)
+      - 15251e1f0df2 "mm/vmalloc: use physical page count for vrealloc() grow-in-place check" (1/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-2-70b96ee3e9c9@zohomail.in
-      - 80e0f09cfb2b "mm/vmalloc: use physical page count in vread_iter() for VM_ALLOC areas" (2/5)
+      - f236eae3fd4e "mm/vmalloc: use physical page count in vread_iter() for VM_ALLOC areas" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: : https://lore.kernel.org/aff47da5-4fd5-481d-be18-e1eb99639490@zohomail.in
         - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-3-70b96ee3e9c9@zohomail.in
-      - f2dcc66e1b63 "mm/vmalloc: free unused pages on vrealloc() shrink" (3/5)
+      - 555b8abc94dc "mm/vmalloc: free unused pages on vrealloc() shrink" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-4-70b96ee3e9c9@zohomail.in
-      - ce49f35a22ac "lib/test_vmalloc: add vrealloc test case" (4/5)
+      - 2a15db5b33e7 "lib/test_vmalloc: add vrealloc test case" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-5-70b96ee3e9c9@zohomail.in
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

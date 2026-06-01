@@ -10,7 +10,7 @@
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
 - mm-unstable: 15 -> 15 commits (no change)
-  - series: 2 (11) -> 2 (11) (no change)
+  - series: 2 (11) -> 2 (12)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
@@ -19,23 +19,23 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 2 -> 3 commits
-  - series: 0 (2) -> 0 (3)
-    - no role, nobody: 0 -> 1 commits
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - 6d0b3e2ab6a1 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
   - changed commits
     - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 318b652423b6 "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Kairui Song <ryncsn@gmail.com>"
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+      - e51c83ae2922 "mm: memory: flatten alloc_anon_folio() retry loop (7/9)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
+    - series "userfaultfd/pagemap: pre-existing fixes". (6)
+      - 28c27b828a9b "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
+        - Authored by no role player, reviewed by nobody
+        - added "Cc: Balbir Singh <balbirs@nvidia.com>"
+        - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)

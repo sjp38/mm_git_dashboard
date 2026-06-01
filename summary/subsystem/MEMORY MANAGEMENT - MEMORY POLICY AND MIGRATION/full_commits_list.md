@@ -17,13 +17,13 @@
     - no role, reviewer: 1 commits
     - reviewer, no role : 1 commits
   - full commits list
-      - dc7097ab2bf6 "mm: remove mentions of PageWriteback" (1/2)
+      - 7e320c5a37b8 "mm: remove mentions of PageWriteback" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-    - a92724a83698 "mm/migrate: find_mm_struct: fix race between security checks and suid exec"
+    - 7d3dff02c91f "mm/migrate: find_mm_struct: fix race between security checks and suid exec"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/ahWxQ3JxdR5ff2qf@redhat.com
-    - e1af79f3291a "mm/nodemask: correctly describe nodemask operation return types"
+    - 6bb9014e347a "mm/nodemask: correctly describe nodemask operation return types"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260529202755.1846800-1-joshua.hahnjy@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

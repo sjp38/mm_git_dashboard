@@ -6,15 +6,11 @@
 - mm-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 2 -> 3 commits
+- mm-unstable: 3 -> 3 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, no role : 0 -> 1 commits
-  - new commits
-    - e1af79f3291a "mm/nodemask: correctly describe nodemask operation return types"
-      - Authored by a reviewer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260529202755.1846800-1-joshua.hahnjy@gmail.com
+    - reviewer, no role : 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

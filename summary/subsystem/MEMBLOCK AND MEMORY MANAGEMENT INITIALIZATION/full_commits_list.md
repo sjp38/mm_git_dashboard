@@ -15,23 +15,23 @@
   - author/reviewer role stat
     - no role, no role : 6 commits
   - full commits list
-      - d92267764cc7 "mm/bootmem_info: drop initialization of page->lru" (1/8)
+      - 0bbfcaaefd91 "mm/bootmem_info: drop initialization of page->lru" (1/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-2-3fb0be6fc688@kernel.org
-      - 9a836252d6a6 "mm/bootmem_info: stop using PG_private" (2/8)
+      - 958b523242e5 "mm/bootmem_info: stop using PG_private" (2/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-3-3fb0be6fc688@kernel.org
-      - 6bb778f02703 "mm/bootmem_info: remove call to kmemleak_free_part_phys()" (3/8)
+      - 732a2ab05fd9 "mm/bootmem_info: remove call to kmemleak_free_part_phys()" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-4-3fb0be6fc688@kernel.org
-      - f7c2ccf881ee "mm/bootmem_info: stop marking the pgdat as NODE_INFO" (4/8)
+      - 11b2e9a38e17 "mm/bootmem_info: stop marking the pgdat as NODE_INFO" (4/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-5-3fb0be6fc688@kernel.org
-      - 1687eccfec7c "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO" (5/8)
+      - f2007c79dec5 "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO" (5/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-6-3fb0be6fc688@kernel.org
     - series "mm: misc cleanups from __GFP_UNMAPPED series". (4 commits)
-      - 8ed1af7483a5 "mm: introduce for_each_free_list()" (0/4)
+      - 7544659ee021 "mm: introduce for_each_free_list()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
@@ -40,7 +40,7 @@
   - author/reviewer role stat
     - maintainer, maintainer: 1 commits
   - full commits list
-      - 318b652423b6 "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 939f28866de4 "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

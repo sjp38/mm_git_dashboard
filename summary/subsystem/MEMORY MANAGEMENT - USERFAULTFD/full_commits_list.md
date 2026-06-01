@@ -1,20 +1,20 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 3 total, 1 (3) series, 0 non-series commits
+- mm-hotfixes-stable: 3 total, 1 (3) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
   - full commits list
     - series "userfaultfd: verify VMA state across UFFDIO_COPY retry", v2. (3 commits)
-      - 6b6e6c8fa4cc "userfaultfd: verify VMA state across UFFDIO_COPY retry" (0/3)
+      - 85668fda932a "userfaultfd: verify VMA state across UFFDIO_COPY retry" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527184751.4147364-1-rppt@kernel.org
         - Link: https://lore.kernel.org/20260527184751.4147364-2-rppt@kernel.org
-      - a08fa116dbc5 "userfaultfd: refuse to __mfill_atomic_pte() for unsupported VMAs" (1/3)
+      - df3ee3b3bbc3 "userfaultfd: refuse to __mfill_atomic_pte() for unsupported VMAs" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527184751.4147364-3-rppt@kernel.org
-      - dde3f30b50a2 "userfaultfd: remove redundant check in vm_uffd_ops()" (2/3)
+      - 9d7bea186ba5 "userfaultfd: remove redundant check in vm_uffd_ops()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527184751.4147364-4-rppt@kernel.org
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
@@ -22,21 +22,21 @@
     - no role, no role : 1 commits
   - full commits list
     - series "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c", v3. (2 commits)
-      - 83516c6ac6af "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c" (0/2)
+      - 64ff8b532b68 "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260523173759.3964908-1-rppt@kernel.org
         - Link: https://lore.kernel.org/20260523173759.3964908-2-rppt@kernel.org
-      - 8d6e9bb31509 "userfaultfd: make functions that are not used outside uffd static" (1/2)
+      - 73630c69d70d "userfaultfd: make functions that are not used outside uffd static" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260523173759.3964908-3-rppt@kernel.org
 - mm-new: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
   - full commits list
-      - a1e7d9313c40 "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
+      - a67e7b51e42e "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260529172331.356655-6-kas@kernel.org
-      - 6d0b3e2ab6a1 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
+      - 28c27b828a9b "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,21 +1,48 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 6 -> 6 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-hotfixes-stable: 6 -> 13 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, no role : 2 -> 6 commits
+    - no role, maintainer: 3 -> 5 commits
+    - maintainer, nobody: 0 -> 1 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 17 -> 17 commits (no change)
-  - series: 2 (5) -> 2 (5) (no change)
-    - no role, nobody: 6 -> 5 commits
-    - no role, no role : 5 -> 6 commits
-    - no role, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 3 -> 3 commits (no change)
   - changed commits
-    - 7e037ed0de21 "tools headers UAPI: sync linux/taskstats.h for procacct.c"
+    - d6b8b02a27b3 "mm/damon/ops-common: call folio_test_lru() after folio_get()"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260525162256.8317-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260517234112.89245-1-sj@kernel.org [1]
+    - c7bde43f6daf "mm/hugetlb_vmemmap: fix incorrect vmemmap restore in rollback"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Thomas Weißschuh <linux@weissschuh.net>"
-      - dropped "Cc: Thomas Weißschuh <linux@weissschuh.net>"
-      - Link: https://lore.kernel.org/20260527213558929EhiHHy9EDTMjmg3uuDOMi@zte.com.cn
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260525025213.2229628-1-songmuchun@bytedance.com
+    - 40990c87a26e "mm/huge_memory: update file PUD counter before folio_put()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260526101355.1984244-1-yintirui@huawei.com
+    - 8d878059924f "mm/huge_memory: update file PMD counter before folio_put()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260526101337.1984081-1-yintirui@huawei.com
+    - series "userfaultfd: verify VMA state across UFFDIO_COPY retry", v2. (3)
+      - 85668fda932a "userfaultfd: verify VMA state across UFFDIO_COPY retry (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20260527184751.4147364-1-rppt@kernel.org
+        - Link: https://lore.kernel.org/20260527184751.4147364-2-rppt@kernel.org
+      - df3ee3b3bbc3 "userfaultfd: refuse to __mfill_atomic_pte() for unsupported VMAs (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20260527184751.4147364-3-rppt@kernel.org
+      - 9d7bea186ba5 "userfaultfd: remove redundant check in vm_uffd_ops() (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20260527184751.4147364-4-rppt@kernel.org
+- mm-hotfixes-unstable: 17 -> 9 commits
+  - series: 2 (5) -> 1 (2)
+    - no role, nobody: 5 -> 4 commits
+    - no role, no role : 6 -> 2 commits
+    - no role, maintainer: 3 -> 1 commits
+    - maintainer, nobody: 3 -> 2 commits
 - mm-stable: 120 -> 120 commits (no change)
   - series: 20 (84) -> 20 (84) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
@@ -25,125 +52,129 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 36 -> 36 commits (no change)
-- mm-unstable: 276 -> 273 commits
+- mm-unstable: 273 -> 273 commits (no change)
   - series: 23 (212) -> 23 (212) (no change)
-    - no role, nobody: 55 -> 53 commits
-    - no role, no role : 63 -> 61 commits
+    - no role, nobody: 53 -> 54 commits
+    - no role, no role : 61 -> 61 commits (no change)
     - no role, reviewer: 19 -> 19 commits (no change)
     - no role, maintainer: 25 -> 25 commits (no change)
-    - reviewer, nobody: 10 -> 10 commits (no change)
-    - reviewer, no role : 9 -> 10 commits
+    - reviewer, nobody: 10 -> 9 commits
+    - reviewer, no role : 10 -> 11 commits
     - reviewer, reviewer: 27 -> 27 commits (no change)
     - reviewer, maintainer: 8 -> 8 commits (no change)
-    - maintainer, nobody: 49 -> 49 commits (no change)
+    - maintainer, nobody: 49 -> 48 commits
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 7 -> 7 commits (no change)
-  - new commits
-    - e1af79f3291a "mm/nodemask: correctly describe nodemask operation return types"
-      - Authored by a reviewer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260529202755.1846800-1-joshua.hahnjy@gmail.com
   - changed commits
+    - 58d60e6253f4 "mm: swap_cgroup: fix NULL deref in lookup_swap_cgroup_id on swapless host"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-unstable
+      - Link: https://lore.kernel.org/20260504-swap-cgroup-fix-7-0-v1-1-f53ff41ee553@linux.dev
+      - Link: https://lore.kernel.org/r/69859728.050a0220.3b3015.0033.GAE@google.com
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - cbad7e20f186 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "[akpm@linux-foundation.org: memcgv1: don't compile swap functions when CONFIG_SWAP=n]"
+        - added "Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com"
+        - Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
     - series "mm/mglru: improve reclaim loop and dirty folio", v7. (15)
-      - 5d0620aac643 "mm/mglru: consolidate common code for retrieving evictable size (0/15)"
+      - aacd200aa1ad "mm/mglru: restructure the reclaim loop (3/15)"
         - Authored by a reviewer, reviewed by a reviewer
         - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
         - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-1-02fabb92dc43@tencent.com
-        - Link: https://lore.kernel.org/linux-mm/CAMgjq7BoekNjg-Ra3C8M7=8=75su38w=HD782T5E_cxyeCeH_g@mail.gmail.com/ [1]
-        - Link: https://github.com/brianfrankcooper/YCSB/blob/master/workloads/workloadb [2]
-        - Link: https://lore.kernel.org/all/20221220214923.1229538-1-yuzhao@google.com/ [3]
-        - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [4]
-        - Link: https://lore.kernel.org/linux-mm/acgNCzRDVmSbXrOE@KASONG-MC4/ [5]
-        - Link: https://lore.kernel.org/linux-mm/20260417025123.2971253-1-wxy2009nrrr@163.com/ [6]
-        - Link: https://lore.kernel.org/linux-mm/20260502-mglru-fg-v1-0-913619b014d9@tencent.com/ [7]
-        - Link: https://lore.kernel.org/linux-mm/CAMgjq7BzQAPp8u_3-9e3ueXmRCoW=2sydok0hFM=MYL7VC1YYg@mail.gmail.com/ [8]
-        - Link: https://lore.kernel.org/linux-mm/CAMgjq7D+4QmiWe73OPFuH0s+ZKCUJoo+MfcWOdJcV+VO-T2Wmg@mail.gmail.com/ [9]
-      - c2855c44a057 "mm/mglru: rename variables related to aging and rotation (1/15)"
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-4-02fabb92dc43@tencent.com
+    - a3de0eec8a31 "MAINTAINERS: add vm.rst to memory management core"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260528-mm-vm-rst-maintainers-file-v1-1-306631c0a610@redhat.com
+    - series "khugepaged: add mTHP collapse support", v18. (14)
+      - 984f2b28da0d "mm/khugepaged: add per-order mTHP collapse failure statistics (9/14)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com
+      - 89247205f84b "mm/khugepaged: introduce collapse_allowable_orders helper function (11/14)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-2-02fabb92dc43@tencent.com
-      - fdae85081d73 "mm/mglru: relocate the LRU scan batch limit to callers (2/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-3-02fabb92dc43@tencent.com
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260522150009.121603-11-npache@redhat.com
   - dropped commits
-    - 7a7ef76062e1 "percpu: fix wrong chunk hints update"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260513085117.1024175-1-joonwonkang@google.com
-    - e52d5d6727f5 "percpu: do not trust hint starts when they are not set"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260513085117.1024175-2-joonwonkang@google.com
-    - f1b39de04bf2 "percpu: introduce struct pcpu_region"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/all/aegQgyf3KuIZMK9x@palisades.local/
-      - Link: https://lore.kernel.org/20260513085117.1024175-3-joonwonkang@google.com
-    - 6da68942eaff "percpu: fix hint invariant breakage"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260513085117.1024175-4-joonwonkang@google.com
-- mm-new: 21 -> 29 commits
-  - series: 3 (15) -> 4 (21)
-    - no role, nobody: 3 -> 10 commits
-    - no role, no role : 11 -> 11 commits (no change)
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - 4a8b803445f5 "memcgv1: don't compile swap functions when CONFIG_SWAP=n (10/12)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
+- mm-new: 29 -> 31 commits
+  - series: 4 (21) -> 5 (23)
+    - no role, nobody: 10 -> 9 commits
+    - no role, no role : 11 -> 14 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 2 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - 380c38979f9b "add comment explaining design decision"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/fb47629e-6533-4c87-ac0b-e3a48a890ef4@linux.dev
-    - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - 550d7f835284 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race (0/6)"
+    - series "mm/hmm: A fix and a selftest", v2. (2)
+      - 05147ea61c49 "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260530085413.1270139-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260530085413.1270139-2-dev.jain@arm.com
+      - 909f847291d7 "selftests/mm/hmm-tests: test pagemap reads of PMD device-private entries (1/2)"
         - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260530085413.1270139-3-dev.jain@arm.com
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - e51c83ae2922 "mm: memory: flatten alloc_anon_folio() retry loop (7/9)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
+    - 030f97ee59d2 "mm/page_vma_mapped_walk: use ptep_get_lockless() for lockless access"
+      - Authored by no role player, reviewed by no role player
+      - added "[osalvador@suse.de: changelog addition]"
+      - added "Link: https://lore.kernel.org/20260528075507.1821939-1-agordeev@linux.ibm.com"
+      - added "Link: : https://lore.kernel.org/ahhNq0pFKvSKZQbR@localhost.localdomain"
+      - added "Signed-off-by: Alexander Gordeev <agordeev@linux.ibm.com>"
+      - added "Reviewed-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
+      - added "Cc: Anshuman Khandual <anshuman.khandual@arm.com>"
+      - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
+      - added "Cc: David Hildenbrand <david@kernel.org>"
+      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - added "Cc: Harry Yoo <harry@kernel.org>"
+      - added "Cc: Jann Horn <jannh@google.com>"
+      - added "Cc: Rik van Riel <riel@surriel.com>"
+      - added "Cc: Liam Howlett <liam@infradead.org>"
+      - Link: : https://lore.kernel.org/ahhNq0pFKvSKZQbR@localhost.localdomain
+      - Link: https://lore.kernel.org/20260528075507.1821939-1-agordeev@linux.ibm.com
+    - series "userfaultfd/pagemap: pre-existing fixes". (6)
+      - b0c79351856e "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race (0/6)"
+        - Authored by no role player, reviewed by nobody
+        - added "Cc: Balbir Singh <balbirs@nvidia.com>"
         - Link: https://lore.kernel.org/20260529172331.356655-1-kas@kernel.org
         - Link: https://lore.kernel.org/20260529172331.356655-2-kas@kernel.org
         - Link: https://lore.kernel.org/all/20260526130509.2748441-1-kirill@shutemov.name/ [1]
-      - a3783f0e09b4 "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry() (1/6)"
+      - f711366252f8 "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry() (1/6)"
         - Authored by no role player, reviewed by nobody
+        - added "Cc: Balbir Singh <balbirs@nvidia.com>"
         - Link: https://lore.kernel.org/20260529172331.356655-3-kas@kernel.org
-      - 060c08490317 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole() (2/6)"
+      - 459bd394d969 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole() (2/6)"
         - Authored by no role player, reviewed by nobody
+        - added "Cc: Balbir Singh <balbirs@nvidia.com>"
         - Link: https://lore.kernel.org/20260529172331.356655-4-kas@kernel.org
-      - 4cafbf902523 "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade (3/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
-      - a1e7d9313c40 "userfaultfd: gate must_wait writability check on pte_present() (4/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260529172331.356655-6-kas@kernel.org
-      - 6d0b3e2ab6a1 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
-    - ec9a7d1fa266 "rust: page: mark Page::nid as inline"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://github.com/Rust-for-Linux/linux/issues/1145
-      - Link: https://lore.kernel.org/20260529085316.27432-1-nakamura.shuta@gmail.com
-  - changed commits
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 8ab58fa84398 "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion (0/9)"
+      - 53cadde510b1 "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade (3/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
-        - Link: https://lore.kernel.org/20260527204757.2544958-1-hannes@cmpxchg.org
-        - Link: https://lore.kernel.org/20260527204757.2544958-2-hannes@cmpxchg.org
-      - 318b652423b6 "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Kairui Song <ryncsn@gmail.com>"
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - series "mm: improve large folio readahead for exec memory", v6. (2)
-      - e4d5cfe0c746 "mm: bypass mmap_miss heuristic for VM_EXEC readahead (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260528165635.2068012-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260528165635.2068012-2-usama.arif@linux.dev
-      - 2594a90abb84 "mm: use mapping_max_folio_order() for force_thp_readahead order (1/2)"
+        - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
+        - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
+      - a67e7b51e42e "userfaultfd: gate must_wait writability check on pte_present() (4/6)"
         - Authored by no role player, reviewed by nobody
-        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260528165635.2068012-3-usama.arif@linux.dev
+        - added "Cc: Balbir Singh <balbirs@nvidia.com>"
+        - Link: https://lore.kernel.org/20260529172331.356655-6-kas@kernel.org
+      - 28c27b828a9b "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
+        - Authored by no role player, reviewed by nobody
+        - added "Cc: Balbir Singh <balbirs@nvidia.com>"
+        - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
 - mm-nonmm-stable: 80 -> 80 commits (no change)
   - series: 9 (46) -> 9 (46) (no change)
     - no role, nobody: 21 -> 21 commits (no change)
@@ -151,12 +182,19 @@
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 21 -> 21 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-nonmm-unstable: 12 -> 13 commits
+- mm-nonmm-unstable: 13 -> 16 commits
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, maintainer: 2 -> 3 commits
+    - no role, maintainer: 3 -> 5 commits
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - 48bb567228a9 "ocfs2: fix buffer head management in ocfs2_read_blocks()"
+    - cd3d56c90101 "ocfs2: add journal NULL check in ocfs2_checkpoint_inode()"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260531131645.3650299-1-joseph.qi@linux.alibaba.com
+    - 4ac207aa3c90 "ocfs2: validate fast symlink target during inode read"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260529094128.494293-1-dmantipov@yandex.ru
+      - Link: https://lore.kernel.org/20260528151230.361127-1-rollkingzzc@gmail.com
+    - a32f1fdef293 "ocfs2: reject FITRIM ranges shorter than a cluster"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260528151247.361854-1-rollkingzzc@gmail.com

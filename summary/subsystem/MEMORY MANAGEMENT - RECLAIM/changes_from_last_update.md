@@ -14,32 +14,19 @@
     - reviewer, reviewer: 14 -> 14 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
   - changed commits
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - cbad7e20f186 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "[akpm@linux-foundation.org: memcgv1: don't compile swap functions when CONFIG_SWAP=n]"
+        - added "Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com"
+        - Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
     - series "mm/mglru: improve reclaim loop and dirty folio", v7. (15)
-      - 5d0620aac643 "mm/mglru: consolidate common code for retrieving evictable size (0/15)"
+      - aacd200aa1ad "mm/mglru: restructure the reclaim loop (3/15)"
         - Authored by a reviewer, reviewed by a reviewer
         - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
         - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-1-02fabb92dc43@tencent.com
-        - Link: https://lore.kernel.org/linux-mm/CAMgjq7BoekNjg-Ra3C8M7=8=75su38w=HD782T5E_cxyeCeH_g@mail.gmail.com/ [1]
-        - Link: https://github.com/brianfrankcooper/YCSB/blob/master/workloads/workloadb [2]
-        - Link: https://lore.kernel.org/all/20221220214923.1229538-1-yuzhao@google.com/ [3]
-        - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [4]
-        - Link: https://lore.kernel.org/linux-mm/acgNCzRDVmSbXrOE@KASONG-MC4/ [5]
-        - Link: https://lore.kernel.org/linux-mm/20260417025123.2971253-1-wxy2009nrrr@163.com/ [6]
-        - Link: https://lore.kernel.org/linux-mm/20260502-mglru-fg-v1-0-913619b014d9@tencent.com/ [7]
-        - Link: https://lore.kernel.org/linux-mm/CAMgjq7BzQAPp8u_3-9e3ueXmRCoW=2sydok0hFM=MYL7VC1YYg@mail.gmail.com/ [8]
-        - Link: https://lore.kernel.org/linux-mm/CAMgjq7D+4QmiWe73OPFuH0s+ZKCUJoo+MfcWOdJcV+VO-T2Wmg@mail.gmail.com/ [9]
-      - c2855c44a057 "mm/mglru: rename variables related to aging and rotation (1/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-2-02fabb92dc43@tencent.com
-      - fdae85081d73 "mm/mglru: relocate the LRU scan batch limit to callers (2/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-3-02fabb92dc43@tencent.com
+        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-4-02fabb92dc43@tencent.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

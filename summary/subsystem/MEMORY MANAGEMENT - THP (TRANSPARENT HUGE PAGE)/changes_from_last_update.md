@@ -1,9 +1,19 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+    - no role, maintainer: 0 -> 2 commits
+  - changed commits
+    - 40990c87a26e "mm/huge_memory: update file PUD counter before folio_put()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260526101355.1984244-1-yintirui@huawei.com
+    - 8d878059924f "mm/huge_memory: update file PMD counter before folio_put()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260526101337.1984081-1-yintirui@huawei.com
+- mm-hotfixes-unstable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 0 commits
 - mm-stable: 6 -> 6 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
@@ -14,27 +24,34 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 7 -> 7 commits (no change)
-    - reviewer, no role : 4 -> 4 commits (no change)
+    - reviewer, nobody: 7 -> 6 commits
+    - reviewer, no role : 4 -> 5 commits
     - reviewer, reviewer: 12 -> 12 commits (no change)
     - reviewer, maintainer: 7 -> 7 commits (no change)
-- mm-new: 2 -> 3 commits
-  - series: 0 (1) -> 0 (2)
-    - no role, nobody: 0 -> 1 commits
+  - changed commits
+    - series "khugepaged: add mTHP collapse support", v18. (14)
+      - 984f2b28da0d "mm/khugepaged: add per-order mTHP collapse failure statistics (9/14)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com
+      - 89247205f84b "mm/khugepaged: introduce collapse_allowable_orders helper function (11/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260522150009.121603-11-npache@redhat.com
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - 4cafbf902523 "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade (3/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
   - changed commits
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 318b652423b6 "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Kairui Song <ryncsn@gmail.com>"
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+    - series "userfaultfd/pagemap: pre-existing fixes". (6)
+      - 53cadde510b1 "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
+        - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

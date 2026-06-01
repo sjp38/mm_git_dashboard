@@ -13,25 +13,10 @@
     - no role, reviewer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 3 commits
+- mm-new: 3 -> 3 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - 380c38979f9b "add comment explaining design decision"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/fb47629e-6533-4c87-ac0b-e3a48a890ef4@linux.dev
-  - changed commits
-    - series "mm: improve large folio readahead for exec memory", v6. (2)
-      - e4d5cfe0c746 "mm: bypass mmap_miss heuristic for VM_EXEC readahead (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260528165635.2068012-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260528165635.2068012-2-usama.arif@linux.dev
-      - 2594a90abb84 "mm: use mapping_max_folio_order() for force_thp_readahead order (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260528165635.2068012-3-usama.arif@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

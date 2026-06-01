@@ -68,46 +68,46 @@
     - reviewer, no role : 5 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-      - 1e66891d8f0d "mm/page_alloc: don't overload migratetype in find_suitable_fallback()" (1/4)
+      - 5466958816a3 "mm/page_alloc: don't overload migratetype in find_suitable_fallback()" (1/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-2-dacdf5402be8@google.com
-      - 1a08164473d2 "mm: rejig pageblock mask definitions" (2/4)
+      - b58b07965663 "mm: rejig pageblock mask definitions" (2/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-3-dacdf5402be8@google.com
-      - 9e26b9c4bbd4 "mm/page_alloc: remove ifdefs from pindex helpers" (3/4)
+      - 32670a228aa6 "mm/page_alloc: remove ifdefs from pindex helpers" (3/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-4-dacdf5402be8@google.com
-    - 1e6ae94b907e "mm/page_alloc: drop a misleading __always_inline"
+    - db0b8d1a4fb1 "mm/page_alloc: drop a misleading __always_inline"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/all/20260517-b4-drop-always-inline-v1-1-97b90930e8b8@google.com/
       - Link: https://lore.kernel.org/all/016c8bef-57ef-44ef-bf60-86dbfd368dcd@kernel.org/
-    - 89c4955fd566 "mm/page_alloc: document that alloc_pages_nolock() uses RCU"
+    - b7a37e095f3f "mm/page_alloc: document that alloc_pages_nolock() uses RCU"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260519-nolock-rcu-comment-v1-1-4a630c8794e5@google.com
-    - f61d01d6fcc6 "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
+    - 3eddb3bfbea3 "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260520122228.201550-1-d@ilvokhin.com
-    - a2247db2452d "mm/page_alloc: remove VM_BUG_ON()s from pindex helpers"
+    - b018afc8743d "mm/page_alloc: remove VM_BUG_ON()s from pindex helpers"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260526-page_alloc-unmapped-prep-v2-1-412f4d486115@google.com
       - Link: https://lore.kernel.org/all/4074a816-9e75-45a6-8141-25459bcc106b@kernel.org/
-      - dc7097ab2bf6 "mm: remove mentions of PageWriteback" (1/2)
+      - 7e320c5a37b8 "mm: remove mentions of PageWriteback" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-    - f07a16c9822b "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+    - 9a68db9c9053 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
-    - fe7017c6b02c "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+    - 714ea197b156 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260519200851.141955-1-jp.kobryn@linux.dev
 - mm-new: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-    - 819beb29b65c "mm/compaction: respect cpusets when checking retry suitability"
+    - d5fb1b00952b "mm/compaction: respect cpusets when checking retry suitability"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_F59F2BA2CC5779308E10DF54593C736D3E0A@qq.com
-    - ce09aa1818ad "mm/page_alloc: fix deferred compaction accounting"
+    - e544782aeeb8 "mm/page_alloc: fix deferred compaction accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_368AF1F3821E46232637BE16D65C45CF3308@qq.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

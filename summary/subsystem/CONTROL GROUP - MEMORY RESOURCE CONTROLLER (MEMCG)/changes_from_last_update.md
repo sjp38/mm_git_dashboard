@@ -8,23 +8,29 @@
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 9 -> 9 commits (no change)
-  - series: 1 (9) -> 1 (9) (no change)
+- mm-unstable: 9 -> 8 commits
+  - series: 1 (9) -> 1 (8)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - cbad7e20f186 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "[akpm@linux-foundation.org: memcgv1: don't compile swap functions when CONFIG_SWAP=n]"
+        - added "Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com"
+        - Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
+  - dropped commits
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - 4a8b803445f5 "memcgv1: don't compile swap functions when CONFIG_SWAP=n (10/12)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 318b652423b6 "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Kairui Song <ryncsn@gmail.com>"
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -23,10 +23,10 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - d4a26e8aa77c "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
+    - 151bf7d9c78a "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260515020144.164941-1-ye.liu@linux.dev
-    - 12b8e604138f "mm/memory-failure: use zone_pcp_disable() for poison handling"
+    - b9baa6bb436b "mm/memory-failure: use zone_pcp_disable() for poison handling"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260514085754.84097-1-kaitao.cheng@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
