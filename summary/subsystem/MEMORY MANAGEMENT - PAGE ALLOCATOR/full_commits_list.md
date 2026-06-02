@@ -1,11 +1,13 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 15 total, 2 (11) series, 4 non-series commits
+- mm-stable: 23 total, 2 (15) series, 8 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 1 commits
-    - no role, reviewer: 13 commits
-    - reviewer, reviewer: 1 commits
+    - no role, reviewer: 14 commits
+    - reviewer, no role : 5 commits
+    - reviewer, reviewer: 2 commits
   - full commits list
     - b001cf7d16dd "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
       - Authored by no role player, reviewed by a reviewer
@@ -61,52 +63,55 @@
       - 95b8e432265f "mm: use zone lock guard in __offline_isolated_pages()" (7/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/13149be4f8151e18eb5f1eb4f3241ab3cffb373e.1777462630.git.d@ilvokhin.com
-- mm-unstable: 12 total, 0 (4) series, 8 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, no role : 2 commits
-    - no role, reviewer: 1 commits
-    - reviewer, no role : 5 commits
-    - reviewer, reviewer: 1 commits
-  - full commits list
-      - f7bafdb577c9 "mm/page_alloc: don't overload migratetype in find_suitable_fallback()" (1/4)
+      - 23378be820a3 "mm/page_alloc: don't overload migratetype in find_suitable_fallback()" (1/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-2-dacdf5402be8@google.com
-      - a4810b0b84ca "mm: rejig pageblock mask definitions" (2/4)
+      - 3687c0fd6724 "mm: rejig pageblock mask definitions" (2/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-3-dacdf5402be8@google.com
-      - 5162dcd7ad91 "mm/page_alloc: remove ifdefs from pindex helpers" (3/4)
+      - 248b144a8a6d "mm/page_alloc: remove ifdefs from pindex helpers" (3/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-4-dacdf5402be8@google.com
-    - 0aa7ef783a19 "mm/page_alloc: drop a misleading __always_inline"
+    - d231522bf072 "mm/page_alloc: drop a misleading __always_inline"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/all/20260517-b4-drop-always-inline-v1-1-97b90930e8b8@google.com/
       - Link: https://lore.kernel.org/all/016c8bef-57ef-44ef-bf60-86dbfd368dcd@kernel.org/
-    - 02c60b95afa8 "mm/page_alloc: document that alloc_pages_nolock() uses RCU"
+    - 47166f219955 "mm/page_alloc: document that alloc_pages_nolock() uses RCU"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260519-nolock-rcu-comment-v1-1-4a630c8794e5@google.com
-    - ee54f9867918 "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
+    - 8e27ea18254e "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260520122228.201550-1-d@ilvokhin.com
-    - 0e3b614beea1 "mm/page_alloc: remove VM_BUG_ON()s from pindex helpers"
+    - 2cec42c65863 "mm/page_alloc: remove VM_BUG_ON()s from pindex helpers"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260526-page_alloc-unmapped-prep-v2-1-412f4d486115@google.com
       - Link: https://lore.kernel.org/all/4074a816-9e75-45a6-8141-25459bcc106b@kernel.org/
-      - a47501af6b7b "mm: remove mentions of PageWriteback" (1/2)
+      - 901658a75daf "mm: remove mentions of PageWriteback" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-    - 1d0e0cb5470a "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
-    - d725676d9605 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+- mm-unstable: 4 total, 0 (0) series, 4 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 2 commits
+  - full commits list
+    - 59026d69a4ae "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260519200851.141955-1-jp.kobryn@linux.dev
-    - 8aefe31372b0 "mm/compaction: respect cpusets when checking retry suitability"
+    - 1a79159e3af2 "mm/compaction: respect cpusets when checking retry suitability"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_F59F2BA2CC5779308E10DF54593C736D3E0A@qq.com
-    - 02ca551ee7c3 "mm/page_alloc: fix deferred compaction accounting"
+    - d4e578379400 "mm/page_alloc: fix deferred compaction accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_368AF1F3821E46232637BE16D65C45CF3308@qq.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+    - 53ec7095e352 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+      - fc377d16533a "mm: page_isolation: avoid unsafe folio reads while scanning compound pages" (4/8)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

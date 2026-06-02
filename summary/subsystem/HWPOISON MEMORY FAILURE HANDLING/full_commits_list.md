@@ -9,9 +9,9 @@
       - Link: : https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com
       - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 2 total, 0 (0) series, 2 non-series commits
+- mm-stable: 4 total, 0 (0) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 4 commits
   - full commits list
     - db5e2c01ca3a "mm/memory-failure: use bool for forcekill state"
       - Authored by no role player, reviewed by a maintainer
@@ -19,16 +19,13 @@
     - c70a9f639bfd "mm/memory-failure: replace magic number 3 with GET_PAGE_MAX_RETRY_NUM"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260402064946.1124250-1-18810879172@163.com
-- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 2 commits
-  - full commits list
-    - ed341a7f799a "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
+    - 5ee5ff9dbce0 "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260515020144.164941-1-ye.liu@linux.dev
-    - b855d0985e0e "mm/memory-failure: use zone_pcp_disable() for poison handling"
+    - a10848d98ec9 "mm/memory-failure: use zone_pcp_disable() for poison handling"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260514085754.84097-1-kaitao.cheng@linux.dev
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

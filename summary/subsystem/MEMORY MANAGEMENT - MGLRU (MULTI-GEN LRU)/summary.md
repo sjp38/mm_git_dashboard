@@ -1,17 +1,17 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 4 total, 0 (0) series, 4 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 3 commits
-    - no role, maintainer: 1 commits
-- mm-unstable: 21 total, 2 (19) series, 2 non-series commits
+- mm-stable: 23 total, 2 (18) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
-    - no role, reviewer: 2 commits
+    - no role, reviewer: 4 commits
+    - no role, maintainer: 1 commits
     - reviewer, reviewer: 14 commits
     - reviewer, maintainer: 2 commits
+- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
     - maintainer, maintainer: 1 commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

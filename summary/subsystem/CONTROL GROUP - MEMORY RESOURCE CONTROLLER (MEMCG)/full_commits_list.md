@@ -7,10 +7,14 @@
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 4 total, 1 (3) series, 1 non-series commits
+- mm-stable: 12 total, 2 (11) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
     - no role, maintainer: 1 commits
+    - reviewer, maintainer: 2 commits
+    - maintainer, no role : 1 commits
+    - maintainer, reviewer: 3 commits
+    - maintainer, maintainer: 2 commits
   - full commits list
       - 6e9f5c2eecd1 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
         - Authored by no role player, reviewed by no role player
@@ -26,41 +30,38 @@
       - 5de852b6e7cd "selftests/cgroup: include slab in test_percpu_basic memory check" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260501022058.18024-3-li.wang@linux.dev
-- mm-unstable: 9 total, 1 (9) series, 0 non-series commits
-  - author/reviewer role stat
-    - reviewer, maintainer: 2 commits
-    - maintainer, no role : 1 commits
-    - maintainer, reviewer: 3 commits
-    - maintainer, maintainer: 3 commits
-  - full commits list
-      - b5959c27562c "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
+      - 945578fee2ec "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers" (5/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - d6481fcdd876 "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
+      - bc34e87a51d9 "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - 2fe7a6f5024b "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
+      - b197d41462c2 "mm/memcg, swap: store cgroup id in cluster table directly" (9/12)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-      - 517997af9147 "mm/memcg: remove no longer used swap cgroup array" (10/12)
+      - 4e8e1c498de9 "mm/memcg: remove no longer used swap cgroup array" (10/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
     - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v3. (4 commits)
-      - 7222f61c8e32 "memcg: store node_id instead of pglist_data pointer" (0/4)
+      - 2ba09ff4cd1e "memcg: store node_id instead of pglist_data pointer" (0/4)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260526033931.1760588-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260526033931.1760588-2-shakeel.butt@linux.dev
-      - e2d93958fb4a "memcg: uint16_t for nr_bytes in obj_stock_pcp" (1/4)
+      - 9f82e2700ae1 "memcg: uint16_t for nr_bytes in obj_stock_pcp" (1/4)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260526033931.1760588-3-shakeel.butt@linux.dev
-      - c6e41e3c3a63 "memcg: int16_t for cached slab stats" (2/4)
+      - 7e3452a5d370 "memcg: int16_t for cached slab stats" (2/4)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260526033931.1760588-4-shakeel.butt@linux.dev
-      - 2c6298ce7bda "memcg: multi objcg charge support" (3/4)
+      - 504b5bebd807 "memcg: multi objcg charge support" (3/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260526033931.1760588-5-shakeel.butt@linux.dev
-      - 067bb0247312 "mm: switch deferred split shrinker to list_lru" (8/9)
+- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - maintainer, maintainer: 1 commits
+  - full commits list
+      - 80cff0105aa7 "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

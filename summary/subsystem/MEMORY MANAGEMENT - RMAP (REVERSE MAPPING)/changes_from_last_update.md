@@ -6,22 +6,11 @@
 - mm-stable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-unstable: 0 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 0079866334b3 "mm/page_vma_mapped_walk: use ptep_get_lockless() for lockless access"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: : https://lore.kernel.org/ahhNq0pFKvSKZQbR@localhost.localdomain
-      - Link: https://lore.kernel.org/20260528075507.1821939-1-agordeev@linux.ibm.com
-- mm-new: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

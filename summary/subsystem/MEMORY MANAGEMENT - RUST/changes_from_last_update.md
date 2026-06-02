@@ -5,11 +5,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 768d55b263d0 "rust: page: mark Page::nid as inline"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://github.com/Rust-for-Linux/linux/issues/1145
+      - Link: https://lore.kernel.org/20260529085316.27432-1-nakamura.shuta@gmail.com
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -4,28 +4,40 @@
     - no role, no role : 3 -> 3 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 2 -> 0 commits
+- mm-stable: 0 -> 2 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 0 -> 1 commits
+  - changed commits
+    - series "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c", v3. (2)
+      - bef94be7395e "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260523173759.3964908-1-rppt@kernel.org
+        - Link: https://lore.kernel.org/20260523173759.3964908-2-rppt@kernel.org
+      - 2c5509d3952d "userfaultfd: make functions that are not used outside uffd static (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260523173759.3964908-3-rppt@kernel.org
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 0 (2)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 0 -> 1 commits
   - changed commits
     - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - ca4ab33684ba "userfaultfd: gate must_wait writability check on pte_present() (4/6)"
+      - f4232649a997 "userfaultfd: gate must_wait writability check on pte_present() (4/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260529172331.356655-6-kas@kernel.org
-      - 7f928a67051e "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
+      - 8f21cbbcf444 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
+- mm-new: 2 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

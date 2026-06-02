@@ -6,12 +6,18 @@
 - mm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-unstable: 5 -> 5 commits (no change)
+- mm-unstable: 5 -> 4 commits
   - series: 0 (4) -> 0 (4) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+    - no role, no role : 1 -> 0 commits
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 82a1b73c8b73 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-new
+      - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

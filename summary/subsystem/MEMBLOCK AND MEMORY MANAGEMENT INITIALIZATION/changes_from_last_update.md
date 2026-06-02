@@ -3,22 +3,44 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-- mm-unstable: 6 -> 7 commits
-  - series: 1 (6) -> 1 (7)
-    - no role, no role : 6 -> 6 commits (no change)
-    - maintainer, maintainer: 0 -> 1 commits
+- mm-stable: 2 -> 8 commits
+  - series: 0 (2) -> 1 (8)
+    - no role, no role : 2 -> 8 commits
   - changed commits
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 067bb0247312 "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - maintainer, maintainer: 1 -> 0 commits
+    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
+      - bf45fe08b068 "mm/bootmem_info: drop initialization of page->lru (1/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-2-3fb0be6fc688@kernel.org
+      - 7cb87e71e55b "mm/bootmem_info: stop using PG_private (2/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-3-3fb0be6fc688@kernel.org
+      - cf49b4ebd2ae "mm/bootmem_info: remove call to kmemleak_free_part_phys() (3/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-4-3fb0be6fc688@kernel.org
+      - 0928e9050da3 "mm/bootmem_info: stop marking the pgdat as NODE_INFO (4/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-5-3fb0be6fc688@kernel.org
+      - ae751d567baa "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO (5/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-6-3fb0be6fc688@kernel.org
+    - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
+      - 9c860d1d5d69 "mm: introduce for_each_free_list() (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
+        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
+        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
+- mm-unstable: 7 -> 1 commits
+  - series: 1 (7) -> 0 (1)
+    - no role, no role : 6 -> 0 commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

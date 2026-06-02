@@ -1,14 +1,14 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - d5bac8408844 "kasan/test: only do kmalloc_double_kzfree for generic mode"
+    - 5f6dde4ff912 "kasan/test: only do kmalloc_double_kzfree for generic mode"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260524031053.381776-1-wsw9603@163.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

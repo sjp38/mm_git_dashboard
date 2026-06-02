@@ -20,25 +20,24 @@
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260525025213.2229628-1-songmuchun@bytedance.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 1 total, 0 (0) series, 1 non-series commits
+- mm-stable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 2 commits
   - full commits list
     - 15807d0ddde3 "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
-- mm-unstable: 3 total, 0 (2) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 47d0e0d1564e "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
+    - fb95c50921f0 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
-      - 7995e4948f07 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
+- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+  - full commits list
+      - 332db5deb12a "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - ba40d736dfc9 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
+      - 8624a463b148 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

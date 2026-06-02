@@ -2,67 +2,79 @@
 - mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, reviewer: 0 -> 1 commits
-  - new commits
-    - 9262aaa78f83 "mm/huge_memory: use correct flags for device private PMD entry"
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 84511a9dc9ea "mm/huge_memory: use correct flags for device private PMD entry"
       - Authored by a maintainer, reviewed by a reviewer
+      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+      - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - added "Reviewed-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
+      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Barry Song <baohua@kernel.org>"
+      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
       - Link: https://lore.kernel.org/20260601083044.57132-1-ljs@kernel.org
-- mm-stable: 6 -> 6 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-- mm-unstable: 42 -> 44 commits
-  - series: 2 (33) -> 2 (34)
+- mm-stable: 6 -> 12 commits
+  - series: 1 (2) -> 1 (4)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 3 -> 6 commits
+    - no role, maintainer: 3 -> 4 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - changed commits
+    - 6d544529f971 "selftests/mm: check file initialization writes in split_huge_page_test"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: : https://lore.kernel.org/da82de92-29d8-457c-9f65-40fc4900b922@kernel.org
+      - Link: https://lore.kernel.org/20260512074924.27721-1-agarwal.vineet2006@gmail.com
+    - a9920428f194 "mm/khugepaged: fix inconsistent MMF_VM_HUGEPAGE flag due to allocation failure order"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260511025408.54035-1-ye.liu@linux.dev
+    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
+      - 1dfbe92e7026 "mm/huge_memory: move THP gfp limit helper into header (2/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-3-88ae43e064c7@tencent.com
+      - 945578fee2ec "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers (5/12)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
+    - c33afe6f972d "Documentation/admin-guide/mm: fix typos in transhuge.rst"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260520051751.74396-1-leon.hwang@linux.dev
+    - 9f52d51ab7cc "selftests/mm/split_huge_page_test.c: close fd on write error"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260520020336.28914-1-richard.weiyang@gmail.com
+- mm-unstable: 44 -> 40 commits
+  - series: 2 (34) -> 2 (33)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, reviewer: 5 -> 2 commits
+    - no role, maintainer: 2 -> 1 commits
     - reviewer, nobody: 6 -> 6 commits (no change)
-    - reviewer, no role : 5 -> 3 commits
-    - reviewer, reviewer: 12 -> 11 commits
-    - reviewer, maintainer: 7 -> 10 commits
-    - maintainer, nobody: 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 1 commits
+    - reviewer, no role : 3 -> 4 commits
+    - reviewer, reviewer: 11 -> 11 commits (no change)
+    - reviewer, maintainer: 10 -> 9 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 18007afa5d55 "mm/thp: clear deferred split shrinker bits when queues drain"
+      - Authored by a reviewer, reviewed by no role player
+      - Link: https://lore.kernel.org/20260602043453.67597-1-lance.yang@linux.dev
   - changed commits
-    - series "khugepaged: add mTHP collapse support", v18. (14)
-      - 11c56feb2833 "mm/khugepaged: rework max_ptes_* handling with helper functions (2/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260522150009.121603-4-npache@redhat.com
-      - f87a153a6933 "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support (3/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260522150009.121603-5-npache@redhat.com
-        - Link: https://lore.kernel.org/all/e46ab3ab-a3d7-4fb7-9970-d0704bd5d05a@arm.com [1]
-        - Link: https://lore.kernel.org/all/37375ace-5601-4d6c-9dac-d1c8268698e9@redhat.com [2]
-      - e91dfcb0b572 "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped (5/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260522150009.121603-6-npache@redhat.com
-      - 7ded46218338 "mm/khugepaged: add per-order mTHP collapse failure statistics (9/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 067bb0247312 "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
+    - series "userfaultfd/pagemap: pre-existing fixes". (6)
+      - 7a5ca2dcbbbd "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade (3/6)"
+        - Authored by no role player, reviewed by no role player
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - e08e473f97d4 "mm-switch-deferred-split-shrinker-to-list_lru-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
-- mm-new: 3 -> 1 commits
-  - series: 0 (2) -> 0 (1)
-    - no role, no role : 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
+        - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

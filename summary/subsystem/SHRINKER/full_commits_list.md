@@ -2,44 +2,46 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
   - full commits list
-    - 367d0b42cd4c "mm/list_lru: drain before clearing xarray entry on reparent"
-      - Authored by no role player, reviewed by no role player
+    - a90a1ed25c6b "mm/list_lru: drain before clearing xarray entry on reparent"
+      - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260601161501.1444829-1-shakeel.butt@linux.dev
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 9 total, 1 (7) series, 2 non-series commits
+- mm-stable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 7 commits
     - no role, reviewer: 2 commits
   - full commits list
-    - 5e0c752609b4 "mm/shrinker: avoid out-of-bounds read in set_shrinker_bit()"
+    - 62b21c6f1d88 "mm/shrinker: avoid out-of-bounds read in set_shrinker_bit()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260510183700.102475-1-devnexen@gmail.com
-    - 1402a876b07d "mm/shrinker: simplify shrinker_memcg_alloc() using guard()"
+    - 12ccf2bef35c "mm/shrinker: simplify shrinker_memcg_alloc() using guard()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260513075214.2655710-1-18810879172@163.com
+- mm-unstable: 7 total, 1 (7) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 7 commits
+  - full commits list
     - series "mm: switch THP shrinker to list_lru", v5. (9 commits)
-      - ba4efe868390 "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion" (0/9)
+      - ef263a4f1f7b "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion" (0/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-1-hannes@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-2-hannes@cmpxchg.org
-      - fa002fa51dca "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (1/9)
+      - 9c865ab0eb77 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (1/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-3-hannes@cmpxchg.org
-      - b9cb8065c94e "mm: list_lru: deduplicate unlock_list_lru()" (2/9)
+      - ab76144959fb "mm: list_lru: deduplicate unlock_list_lru()" (2/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-4-hannes@cmpxchg.org
-      - b852be3b77ac "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (3/9)
+      - e99be111ae94 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (3/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-5-hannes@cmpxchg.org
-      - bebe5e163ba7 "mm: list_lru: deduplicate lock_list_lru()" (4/9)
+      - 3dbb5632a62a "mm: list_lru: deduplicate lock_list_lru()" (4/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-6-hannes@cmpxchg.org
-      - bd0325999030 "mm: list_lru: introduce caller locking for additions and deletions" (5/9)
+      - 63cdef0fd8e2 "mm: list_lru: introduce caller locking for additions and deletions" (5/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-7-hannes@cmpxchg.org
-      - 1508cfd264a1 "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
+      - e6bc5152357d "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-8-hannes@cmpxchg.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

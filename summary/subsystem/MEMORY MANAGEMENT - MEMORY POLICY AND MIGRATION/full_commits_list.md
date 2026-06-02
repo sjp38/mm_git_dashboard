@@ -1,9 +1,10 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 2 total, 0 (0) series, 2 non-series commits
+- mm-stable: 4 total, 0 (1) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 2 commits
+    - no role, nobody: 1 commits
+    - no role, reviewer: 3 commits
   - full commits list
     - 13fe5736560d "mm/migrate_device: cleanup up PMD Checks and warnings"
       - Authored by no role player, reviewed by a reviewer
@@ -11,19 +12,17 @@
     - d94d0f9c153f "mm/migrate: rename PAGE_ migration flags to FOLIO_"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260324190706.964555-4-shivankg@amd.com
-- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, reviewer: 1 commits
-    - reviewer, no role : 1 commits
-  - full commits list
-      - a47501af6b7b "mm: remove mentions of PageWriteback" (1/2)
+      - 901658a75daf "mm: remove mentions of PageWriteback" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-    - 04d59aed2a8c "mm/migrate: find_mm_struct: fix race between security checks and suid exec"
+    - 4b8b76bf9004 "mm/migrate: find_mm_struct: fix race between security checks and suid exec"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/ahWxQ3JxdR5ff2qf@redhat.com
-    - 36f6ccd8aa04 "mm/nodemask: correctly describe nodemask operation return types"
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - reviewer, no role : 1 commits
+  - full commits list
+    - 879082b58cbf "mm/nodemask: correctly describe nodemask operation return types"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260529202755.1846800-1-joshua.hahnjy@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

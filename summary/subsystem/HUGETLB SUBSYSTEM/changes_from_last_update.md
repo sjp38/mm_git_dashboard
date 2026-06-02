@@ -5,13 +5,18 @@
     - no role, maintainer: 3 -> 3 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 1 commits (no change)
+- mm-stable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 3 -> 3 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
+  - changed commits
+    - fb95c50921f0 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
+- mm-unstable: 3 -> 2 commits
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

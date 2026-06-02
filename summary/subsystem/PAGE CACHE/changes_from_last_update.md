@@ -3,50 +3,63 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 3 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-- mm-unstable: 8 -> 10 commits
-  - series: 2 (5) -> 3 (7)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 4 commits
+- mm-stable: 3 -> 8 commits
+  - series: 1 (2) -> 2 (4)
+    - no role, nobody: 0 -> 2 commits
+    - no role, reviewer: 3 -> 6 commits
+  - changed commits
+    - series "mm: document read_pages and simplify usage". (2)
+      - c516c365d991 "mm/readahead: add kerneldoc for read_pages (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/all/20260501061146.6e61392d125cf1847d7cc181@linux-foundation.org/ [1]
+        - Link: https://lore.kernel.org/20260512203154.754075-2-fmayle@google.com
+      - 418bffb6ba24 "mm/readahead: simplify page_cache_ra_unbounded loop counter reset (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260512203154.754075-3-fmayle@google.com
+    - de97ae6222c1 "mm/readahead: no PG_readahead on EOF"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3921-L3939 [2]
+      - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3721-L3722 [3]
+      - Link: https://lore.kernel.org/20260508181237.670645-1-fmayle@google.com
+    - 88e09fffeef5 "mm/filemap: fix page_cache_prev_miss() when no hole is found"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260512-prev_miss_fix-v2-1-4af8e5c1ae62@columbia.edu
+    - 7ab2d20165a5 "mm: make mmap_miss accounting symmetric for VM_SEQ_READ"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+      - dropped "Cc: Jan Kara <jack@suse.cz>"
+      - Link: https://lore.kernel.org/20260525145751.2671248-1-usama.arif@linux.dev
+- mm-unstable: 10 -> 6 commits
+  - series: 3 (7) -> 2 (5)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 4 -> 2 commits
+    - no role, maintainer: 0 -> 1 commits
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
   - changed commits
     - series "mm: improve large folio readahead for exec memory", v7. (2)
-      - 1edee77c8575 "mm: bypass mmap_miss heuristic for VM_EXEC readahead (0/2)"
+      - 5205f128b4f0 "mm: bypass mmap_miss heuristic for VM_EXEC readahead (0/2)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev"
-        - added "Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev"
-        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - dropped "Link: https://lore.kernel.org/20260528165635.2068012-2-usama.arif@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260528165635.2068012-1-usama.arif@linux.dev"
-        - dropped "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - added "Reviewed-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
         - Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev
-      - 27be183a24cd "mm: use mapping_max_folio_order() for force_thp_readahead order (1/2)"
+      - 8022e0f67694 "mm: use mapping_max_folio_order() for force_thp_readahead order (1/2)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev"
-        - added "Reviewed-by: Jan Kara <jack@suse.cz>"
-        - dropped "Link: https://lore.kernel.org/20260528165635.2068012-3-usama.arif@linux.dev"
-        - dropped "Cc: Jan Kara <jack@suse.cz>"
+        - added "Cc: Oscar Salvador (SUSE) <osalvador@kernel.org>"
         - Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev
-- mm-new: 3 -> 1 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - adce636b0d5c "mm/filemap: use folio_next_index() for start"
+    - 07083ae542d9 "mm/filemap: use folio_next_index() for start"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260601110425.44784-1-tanze@kylinos.cn
-  - dropped commits
-    - d3175274e4f6 "add comment explaining design decision"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/fb47629e-6533-4c87-ac0b-e3a48a890ef4@linux.dev
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

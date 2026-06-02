@@ -15,30 +15,30 @@
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527184751.4147364-4-rppt@kernel.org
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
+- mm-stable: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
     - series "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c", v3. (2 commits)
-      - d6c27b69ba77 "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c" (0/2)
+      - bef94be7395e "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260523173759.3964908-1-rppt@kernel.org
         - Link: https://lore.kernel.org/20260523173759.3964908-2-rppt@kernel.org
-      - 57a9d3dd4538 "userfaultfd: make functions that are not used outside uffd static" (1/2)
+      - 2c5509d3952d "userfaultfd: make functions that are not used outside uffd static" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260523173759.3964908-3-rppt@kernel.org
-- mm-new: 2 total, 0 (2) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - ca4ab33684ba "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
+      - f4232649a997 "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260529172331.356655-6-kas@kernel.org
-      - 7f928a67051e "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
+      - 8f21cbbcf444 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

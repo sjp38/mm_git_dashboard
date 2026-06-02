@@ -1,10 +1,10 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 2 total, 0 (2) series, 0 non-series commits
+- mm-stable: 5 total, 0 (2) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
+    - no role, no role : 2 commits
+    - no role, maintainer: 3 commits
   - full commits list
       - 2fac4afa0e2e "mm/memory_hotplug: fix incorrect altmap passing in error path" (1/6)
         - Authored by no role player, reviewed by no role player
@@ -12,21 +12,17 @@
       - 3bbc54dd1b62 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths" (2/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
-- mm-unstable: 3 total, 0 (0) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, maintainer: 2 commits
-  - full commits list
-    - ea9878ebb1e7 "mm/memory_hotplug: factor out altmap freeing checks"
+    - ce872d5a5955 "mm/memory_hotplug: factor out altmap freeing checks"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260511084307.1827127-1-songmuchun@bytedance.com
-    - 86f0a46fa97d "drivers/base/memory: make memory block get/put explicit"
+    - 9b1b295e9fd3 "drivers/base/memory: make memory block get/put explicit"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
       - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
-    - ac212293512b "drivers/base/memory: set mem->altmap after successful device registration"
+    - a2b8d7827f48 "drivers/base/memory: set mem->altmap after successful device registration"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260514092657.3057141-1-georgi.djakov@oss.qualcomm.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

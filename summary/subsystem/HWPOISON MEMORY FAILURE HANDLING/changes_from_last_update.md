@@ -4,12 +4,21 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 2 commits (no change)
+- mm-stable: 2 -> 4 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 4 commits
+  - changed commits
+    - 5ee5ff9dbce0 "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260515020144.164941-1-ye.liu@linux.dev
+    - a10848d98ec9 "mm/memory-failure: use zone_pcp_disable() for poison handling"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260514085754.84097-1-kaitao.cheng@linux.dev
+- mm-unstable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

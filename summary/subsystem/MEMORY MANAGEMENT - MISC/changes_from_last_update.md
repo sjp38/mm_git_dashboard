@@ -5,33 +5,93 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-stable: 20 -> 20 commits (no change)
-  - series: 2 (15) -> 2 (15) (no change)
+- mm-stable: 20 -> 33 commits
+  - series: 2 (15) -> 2 (23)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 10 -> 10 commits (no change)
-- mm-unstable: 92 -> 92 commits (no change)
-  - series: 2 (80) -> 2 (80) (no change)
-    - no role, nobody: 39 -> 39 commits (no change)
-    - no role, no role : 32 -> 32 commits (no change)
-    - no role, reviewer: 6 -> 6 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, nobody: 4 -> 4 commits (no change)
-    - reviewer, no role : 1 -> 0 commits
-    - reviewer, reviewer: 2 -> 3 commits
-    - maintainer, nobody: 4 -> 4 commits (no change)
+    - no role, no role : 6 -> 8 commits
+    - no role, reviewer: 1 -> 4 commits
+    - no role, maintainer: 2 -> 6 commits
+    - maintainer, nobody: 10 -> 14 commits
   - changed commits
-    - series "khugepaged: add mTHP collapse support", v18. (14)
-      - 7ded46218338 "mm/khugepaged: add per-order mTHP collapse failure statistics (9/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - 2b117897d5c7 "selftests/mm: fix mmap() return value check in run_migration_benchmark"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260512101305.139509-1-lihongfu@kylinos.cn
+    - 6d544529f971 "selftests/mm: check file initialization writes in split_huge_page_test"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: : https://lore.kernel.org/da82de92-29d8-457c-9f65-40fc4900b922@kernel.org
+      - Link: https://lore.kernel.org/20260512074924.27721-1-agarwal.vineet2006@gmail.com
+    - 13f263b60fee "selftests/mm: ksm-functional-tests: fix partial write handling"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260504081638.683223-1-agarwal.vineet2006@gmail.com
+    - 0c946c54a701 "docs/mm: fix typo in process_addrs.rst"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260517103640.45444-1-ssh1326@icloud.com
+    - series "mm/damon: introduce data attributes monitoring". (28)
+      - f4e98954234b "Docs/mm/damon/design: document data attributes monitoring (19/28)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260518234119.97569-21-sj@kernel.org
+      - 69a743520114 "Docs/admin-guide/mm/damon/usage: document data attributes monitoring (20/28)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260518234119.97569-22-sj@kernel.org
+      - 2fd777ebdfaa "Docs/mm/damon/design: update for memcg damon filter (26/28)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260518234119.97569-28-sj@kernel.org
+      - 9d3678808a3e "Docs/admin-guide/mm/damon/usage: update for memcg damon filter (27/28)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260518234119.97569-29-sj@kernel.org
+    - c33afe6f972d "Documentation/admin-guide/mm: fix typos in transhuge.rst"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260520051751.74396-1-leon.hwang@linux.dev
+    - series "mm/damon: documentation and comment fixes". (3)
+      - de5480aeffc5 "Docs/mm/damon/design: fix three typos (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260520012104.93602-3-sj@kernel.org
+      - 12e4d4bb6e5a "Docs/{ABI,admin-guide}/damon: fix various typoes (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260520012104.93602-4-sj@kernel.org
+    - 9f52d51ab7cc "selftests/mm/split_huge_page_test.c: close fd on write error"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260520020336.28914-1-richard.weiyang@gmail.com
+    - series "mm/damon: fix macro arguments and clarify quota goals doc", v2. (2)
+      - 3d751387a672 "Docs/admin-guide/mm/damon/usage: clarify current_value of quota goals (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260521202020.126500-3-maksym.shcherba@lnu.edu.ua
+- mm-unstable: 92 -> 79 commits
+  - series: 2 (80) -> 2 (74)
+    - no role, nobody: 39 -> 39 commits (no change)
+    - no role, no role : 32 -> 30 commits
+    - no role, reviewer: 6 -> 3 commits
+    - no role, maintainer: 4 -> 0 commits
+    - reviewer, nobody: 4 -> 4 commits (no change)
+    - reviewer, reviewer: 3 -> 3 commits (no change)
+    - maintainer, nobody: 4 -> 0 commits
+  - changed commits
+    - series "mm/hmm: A fix and a selftest", v2. (2)
+      - d04c84d7a1ae "selftests/mm/hmm-tests: test pagemap reads of PMD device-private entries (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - added "Cc: Oscar Salvador (SUSE) <osalvador@kernel.org>"
+        - Link: https://lore.kernel.org/20260530085413.1270139-3-dev.jain@arm.com
+  - dropped commits
+    - 22ca126a4050 "mm/dmapool: use static key for boot-time debug enablement"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260524034015.1830-1-lirongqing@baidu.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

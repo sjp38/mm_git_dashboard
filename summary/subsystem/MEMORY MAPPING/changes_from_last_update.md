@@ -1,56 +1,90 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 1 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - d37c0bf7dabf "mm/mincore: handle non-swap entries before !CONFIG_SWAP guard"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260602172247.279421-1-usama.arif@linux.dev
+- mm-stable: 1 -> 6 commits
+  - series: 1 (1) -> 3 (5)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 2 (4) -> 2 (4) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 3 -> 1 commits
-    - reviewer, no role : 0 -> 2 commits
+    - no role, maintainer: 0 -> 2 commits
+    - reviewer, no role : 0 -> 3 commits
+  - new commits
+    - series "remove mmap_action success, error hooks", v3. (3)
+      - 4c5e4e398d6c "mm/vma: eliminate mmap_action->error_hook, introduce error_override (2/3)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/55d13f7d016b827c459946d46a56105635be111c.1780397980.git.ljs@kernel.org
   - changed commits
-    - series "remove mmap_action success, error hooks", v2. (3)
-      - 3814718c49ae "drivers/char/mem: eliminate unnecessary use of success_hook (0/3)"
+    - 7d40e6b66d97 "mm/mseal: use min/max in mseal_apply"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260503115915.18680-3-thorsten.blum@linux.dev
+    - series "remove mmap_action success, error hooks", v3. (3)
+      - a7d086b51637 "drivers/char/mem: eliminate unnecessary use of success_hook (0/3)"
         - Authored by a reviewer, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org
-        - Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org
-      - 8dab52fc24ef "mm/vma: remove mmap_action->success_hook (1/3)"
+        - branch: mm-unstable -> mm-stable
+        - added "Link: https://lore.kernel.org/010579cca6787cf7bb057ab1f7228978b10601c8.1780397980.git.ljs@kernel.org"
+        - added "Link: https://lore.kernel.org/cover.1780397980.git.ljs@kernel.org"
+        - dropped "Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org"
+        - dropped "Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org"
+        - Link: https://lore.kernel.org/cover.1780397980.git.ljs@kernel.org
+        - Link: https://lore.kernel.org/010579cca6787cf7bb057ab1f7228978b10601c8.1780397980.git.ljs@kernel.org
+      - f82ff2375264 "mm/vma: remove mmap_action->success_hook (1/3)"
         - Authored by a reviewer, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org
-- mm-new: 4 -> 4 commits (no change)
+        - branch: mm-unstable -> mm-stable
+        - added "Link: https://lore.kernel.org/f79434e6d30af6d92999be6b76e197f1847105fa.1780397980.git.ljs@kernel.org"
+        - dropped "Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org"
+        - Link: https://lore.kernel.org/f79434e6d30af6d92999be6b76e197f1847105fa.1780397980.git.ljs@kernel.org
+    - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3)
+      - 85a9b8c06888 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
+- mm-unstable: 5 -> 4 commits
   - series: 2 (4) -> 2 (4) (no change)
-    - no role, nobody: 3 -> 1 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 0 -> 3 commits
+    - no role, nobody: 0 -> 1 commits
+    - no role, maintainer: 2 -> 3 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, no role : 2 -> 0 commits
   - changed commits
     - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - 81ece46eca23 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race (0/6)"
+      - ac2145b75f52 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race (0/6)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
         - Link: https://lore.kernel.org/20260529172331.356655-1-kas@kernel.org
         - Link: https://lore.kernel.org/20260529172331.356655-2-kas@kernel.org
         - Link: https://lore.kernel.org/all/20260526130509.2748441-1-kirill@shutemov.name/ [1]
-      - 4f8a30000d6e "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry() (1/6)"
+      - 54f22130fc7b "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry() (1/6)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
         - Link: https://lore.kernel.org/20260529172331.356655-3-kas@kernel.org
+      - 1edc4216694c "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole() (2/6)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260529172331.356655-4-kas@kernel.org
     - series "mm/hmm: A fix and a selftest", v2. (2)
-      - 416fe7035fc4 "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry (0/2)"
+      - 2f31c7183828 "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry (0/2)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - added "Tested-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
         - Link: https://lore.kernel.org/20260530085413.1270139-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260530085413.1270139-2-dev.jain@arm.com
+  - dropped commits
+    - series "remove mmap_action success, error hooks", v2. (3)
+      - b79b1145e8f2 "mm/vma: eliminate mmap_action->error_hook, introduce error_filter (2/3)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/e770b28427937057fa953ac380a134b24acd8bb4.1779462249.git.ljs@kernel.org
+- mm-new: 4 -> 0 commits
+  - series: 2 (4) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 3 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
