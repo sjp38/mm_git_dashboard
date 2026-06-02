@@ -1,57 +1,68 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 0 -> 2 commits
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 2 commits
-  - changed commits
-    - 40990c87a26e "mm/huge_memory: update file PUD counter before folio_put()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260526101355.1984244-1-yintirui@huawei.com
-    - 8d878059924f "mm/huge_memory: update file PMD counter before folio_put()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260526101337.1984081-1-yintirui@huawei.com
-- mm-hotfixes-unstable: 2 -> 0 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 2 -> 0 commits
+    - maintainer, reviewer: 0 -> 1 commits
+  - new commits
+    - 9262aaa78f83 "mm/huge_memory: use correct flags for device private PMD entry"
+      - Authored by a maintainer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260601083044.57132-1-ljs@kernel.org
 - mm-stable: 6 -> 6 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-- mm-unstable: 42 -> 42 commits (no change)
-  - series: 2 (33) -> 2 (33) (no change)
+- mm-unstable: 42 -> 44 commits
+  - series: 2 (33) -> 2 (34)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 7 -> 6 commits
-    - reviewer, no role : 4 -> 5 commits
-    - reviewer, reviewer: 12 -> 12 commits (no change)
-    - reviewer, maintainer: 7 -> 7 commits (no change)
+    - reviewer, nobody: 6 -> 6 commits (no change)
+    - reviewer, no role : 5 -> 3 commits
+    - reviewer, reviewer: 12 -> 11 commits
+    - reviewer, maintainer: 7 -> 10 commits
+    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, maintainer: 0 -> 1 commits
   - changed commits
     - series "khugepaged: add mTHP collapse support", v18. (14)
-      - 984f2b28da0d "mm/khugepaged: add per-order mTHP collapse failure statistics (9/14)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com
-      - 89247205f84b "mm/khugepaged: introduce collapse_allowable_orders helper function (11/14)"
+      - 11c56feb2833 "mm/khugepaged: rework max_ptes_* handling with helper functions (2/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260522150009.121603-4-npache@redhat.com
+      - f87a153a6933 "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support (3/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260522150009.121603-5-npache@redhat.com
+        - Link: https://lore.kernel.org/all/e46ab3ab-a3d7-4fb7-9970-d0704bd5d05a@arm.com [1]
+        - Link: https://lore.kernel.org/all/37375ace-5601-4d6c-9dac-d1c8268698e9@redhat.com [2]
+      - e91dfcb0b572 "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped (5/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260522150009.121603-6-npache@redhat.com
+      - 7ded46218338 "mm/khugepaged: add per-order mTHP collapse failure statistics (9/14)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260522150009.121603-11-npache@redhat.com
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-    - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - 53cadde510b1 "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
-        - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 067bb0247312 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+    - e08e473f97d4 "mm-switch-deferred-split-shrinker-to-list_lru-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+- mm-new: 3 -> 1 commits
+  - series: 0 (2) -> 0 (1)
+    - no role, no role : 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

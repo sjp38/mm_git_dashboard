@@ -7,30 +7,27 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 19 -> 19 commits (no change)
-  - series: 2 (18) -> 2 (18) (no change)
+- mm-unstable: 19 -> 21 commits
+  - series: 2 (18) -> 2 (19)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 2 commits
     - reviewer, reviewer: 14 -> 14 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
+    - maintainer, maintainer: 0 -> 1 commits
+  - new commits
+    - 4dfed62a2fbe "mm: delete stale comment about cachelines"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
   - changed commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - cbad7e20f186 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "[akpm@linux-foundation.org: memcgv1: don't compile swap functions when CONFIG_SWAP=n]"
-        - added "Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com"
-        - Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-    - series "mm/mglru: improve reclaim loop and dirty folio", v7. (15)
-      - aacd200aa1ad "mm/mglru: restructure the reclaim loop (3/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-4-02fabb92dc43@tencent.com
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 067bb0247312 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - maintainer, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

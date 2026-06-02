@@ -18,25 +18,20 @@
     - no role, no role : 32 -> 32 commits (no change)
     - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, nobody: 5 -> 4 commits
-    - reviewer, no role : 0 -> 1 commits
-    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - reviewer, nobody: 4 -> 4 commits (no change)
+    - reviewer, no role : 1 -> 0 commits
+    - reviewer, reviewer: 2 -> 3 commits
     - maintainer, nobody: 4 -> 4 commits (no change)
   - changed commits
     - series "khugepaged: add mTHP collapse support", v18. (14)
-      - 984f2b28da0d "mm/khugepaged: add per-order mTHP collapse failure statistics (9/14)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+      - 7ded46218338 "mm/khugepaged: add per-order mTHP collapse failure statistics (9/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
         - Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - series "mm/hmm: A fix and a selftest", v2. (2)
-      - 909f847291d7 "selftests/mm/hmm-tests: test pagemap reads of PMD device-private entries (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260530085413.1270139-3-dev.jain@arm.com
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

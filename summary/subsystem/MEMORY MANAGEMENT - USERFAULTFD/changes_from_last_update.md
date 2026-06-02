@@ -1,25 +1,9 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 0 -> 3 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, no role : 0 -> 3 commits
-  - changed commits
-    - series "userfaultfd: verify VMA state across UFFDIO_COPY retry", v2. (3)
-      - 85668fda932a "userfaultfd: verify VMA state across UFFDIO_COPY retry (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260527184751.4147364-1-rppt@kernel.org
-        - Link: https://lore.kernel.org/20260527184751.4147364-2-rppt@kernel.org
-      - df3ee3b3bbc3 "userfaultfd: refuse to __mfill_atomic_pte() for unsupported VMAs (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260527184751.4147364-3-rppt@kernel.org
-      - 9d7bea186ba5 "userfaultfd: remove redundant check in vm_uffd_ops() (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260527184751.4147364-4-rppt@kernel.org
-- mm-hotfixes-unstable: 3 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, no role : 3 -> 0 commits
+- mm-hotfixes-stable: 3 -> 3 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)
@@ -28,16 +12,19 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
   - changed commits
     - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - a67e7b51e42e "userfaultfd: gate must_wait writability check on pte_present() (4/6)"
-        - Authored by no role player, reviewed by nobody
-        - added "Cc: Balbir Singh <balbirs@nvidia.com>"
+      - ca4ab33684ba "userfaultfd: gate must_wait writability check on pte_present() (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
         - Link: https://lore.kernel.org/20260529172331.356655-6-kas@kernel.org
-      - 28c27b828a9b "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
-        - Authored by no role player, reviewed by nobody
-        - added "Cc: Balbir Singh <balbirs@nvidia.com>"
+      - 7f928a67051e "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

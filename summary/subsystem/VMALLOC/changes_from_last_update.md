@@ -10,8 +10,13 @@
 - mm-unstable: 5 -> 5 commits (no change)
   - series: 1 (5) -> 1 (5) (no change)
     - no role, no role : 5 -> 5 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 20174af1f40a "vmalloc: fix NULL pointer dereference in is_vm_area_hugepages()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260529014130.671291-1-hui.zhu@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

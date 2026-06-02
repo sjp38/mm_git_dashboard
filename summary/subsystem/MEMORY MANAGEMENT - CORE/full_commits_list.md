@@ -64,83 +64,88 @@
       - 6ae51adb084a "kasan: skip HW tagging for all kernel thread stacks" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260429102704.680174-3-dev.jain@arm.com
-- mm-unstable: 15 total, 2 (12) series, 3 non-series commits
+- mm-unstable: 18 total, 2 (14) series, 4 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, no role : 2 commits
-    - no role, reviewer: 2 commits
+    - no role, no role : 3 commits
+    - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
-    - reviewer, nobody: 3 commits
-    - reviewer, no role : 1 commits
+    - reviewer, nobody: 1 commits
+    - reviewer, no role : 3 commits
     - maintainer, nobody: 1 commits
-    - maintainer, maintainer: 3 commits
+    - maintainer, maintainer: 4 commits
   - full commits list
-      - 44c0f801f718 "powerpc/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE" (7/8)
+      - c29b340774a0 "powerpc/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE" (7/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-8-3fb0be6fc688@kernel.org
-    - 55f5f4d7836d "drivers/base/memory: make memory block get/put explicit"
+    - 86f0a46fa97d "drivers/base/memory: make memory block get/put explicit"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
       - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
-    - 2ee89fe2bd09 "mm/mmu_notifier: fix a begin vs. start typo in the invalidate range comment"
+    - 81ea8d6927e4 "mm/mmu_notifier: fix a begin vs. start typo in the invalidate range comment"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260513163546.1176742-1-seanjc@google.com
     - series "mm: misc cleanups from __GFP_UNMAPPED series". (4 commits)
-      - 7544659ee021 "mm: introduce for_each_free_list()" (0/4)
+      - df8d58d4fba7 "mm: introduce for_each_free_list()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
         - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
-      - 5466958816a3 "mm/page_alloc: don't overload migratetype in find_suitable_fallback()" (1/4)
+      - f7bafdb577c9 "mm/page_alloc: don't overload migratetype in find_suitable_fallback()" (1/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-2-dacdf5402be8@google.com
-      - e894e2f3226c "mm, swap: unify large folio allocation" (4/12)
+      - 5fd223cf17c6 "mm, swap: unify large folio allocation" (4/12)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-5-88ae43e064c7@tencent.com
-      - a0b55d93688c "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
+      - d6481fcdd876 "mm, swap: delay and unify memcg lookup and charging for swapin" (7/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - cc3b62e2d2ff "mm/memcg: remove no longer used swap cgroup array" (10/12)
+      - 517997af9147 "mm/memcg: remove no longer used swap cgroup array" (10/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
-      - b24f6178fc34 "mm, swap: merge zeromap into swap table" (11/12)
+      - e6c20c4e1f2a "mm, swap: merge zeromap into swap table" (11/12)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-12-88ae43e064c7@tencent.com
     - series "remove mmap_action success, error hooks", v2. (3 commits)
-      - fe193e58f749 "drivers/char/mem: eliminate unnecessary use of success_hook" (0/3)
-        - Authored by a reviewer, reviewed by nobody
+      - 3814718c49ae "drivers/char/mem: eliminate unnecessary use of success_hook" (0/3)
+        - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org
         - Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org
-      - 18b0e83273b3 "mm/vma: remove mmap_action->success_hook" (1/3)
-        - Authored by a reviewer, reviewed by nobody
+      - 8dab52fc24ef "mm/vma: remove mmap_action->success_hook" (1/3)
+        - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org
-      - 5dba240aed81 "mm/vma: eliminate mmap_action->error_hook, introduce error_filter" (2/3)
+      - b79b1145e8f2 "mm/vma: eliminate mmap_action->error_hook, introduce error_filter" (2/3)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/e770b28427937057fa953ac380a134b24acd8bb4.1779462249.git.ljs@kernel.org
-      - 7e320c5a37b8 "mm: remove mentions of PageWriteback" (1/2)
+      - a47501af6b7b "mm: remove mentions of PageWriteback" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-    - ae00cf575594 "docs: mm: clarify that user_reserve_kbytes has no effect when overcommit_memory is set to 0 or 1"
+    - e119c33c7f15 "docs: mm: clarify that user_reserve_kbytes has no effect when overcommit_memory is set to 0 or 1"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260528-mm-clarify-docs-v1-1-aa88e83b4bfd@redhat.com
-      - 59019e45c469 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
+      - db1c2636b4d6 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com
-- mm-new: 3 total, 0 (3) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 1 commits
-    - maintainer, maintainer: 1 commits
-  - full commits list
-      - e51c83ae2922 "mm: memory: flatten alloc_anon_folio() retry loop" (7/9)
+      - 1a6397d7314c "mm: memory: flatten alloc_anon_folio() retry loop" (7/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
-      - 939f28866de4 "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 067bb0247312 "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-      - 28c27b828a9b "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
-        - Authored by no role player, reviewed by nobody
+    - 4dfed62a2fbe "mm: delete stale comment about cachelines"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
+- mm-new: 2 total, 1 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+      - 7f928a67051e "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
+        - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
+    - series "mm/sparse-vmemmap: Provide generic vmemmap_set_pmd() and vmemmap_check_pmd()", v3. (5 commits)
+      - f768c803ce99 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd()" (0/5)
+        - Authored by no role player, reviewed by nobody
 - mm-nonmm-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits

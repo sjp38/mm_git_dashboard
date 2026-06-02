@@ -1,43 +1,47 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 2 commits
+    - no role, no role : 1 commits
   - full commits list
-    - 1eb7e764c094 "mm/shrinker: avoid out-of-bounds read in set_shrinker_bit()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260510183700.102475-1-devnexen@gmail.com
-    - f8cbf43fa1ac "mm/shrinker: simplify shrinker_memcg_alloc() using guard()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260513075214.2655710-1-18810879172@163.com
-- mm-new: 7 total, 1 (7) series, 0 non-series commits
+    - 367d0b42cd4c "mm/list_lru: drain before clearing xarray entry on reparent"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260601161501.1444829-1-shakeel.butt@linux.dev
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 9 total, 1 (7) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 7 commits
+    - no role, reviewer: 2 commits
   - full commits list
+    - 5e0c752609b4 "mm/shrinker: avoid out-of-bounds read in set_shrinker_bit()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260510183700.102475-1-devnexen@gmail.com
+    - 1402a876b07d "mm/shrinker: simplify shrinker_memcg_alloc() using guard()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260513075214.2655710-1-18810879172@163.com
     - series "mm: switch THP shrinker to list_lru", v5. (9 commits)
-      - 02863537e466 "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion" (0/9)
+      - ba4efe868390 "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion" (0/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-1-hannes@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-2-hannes@cmpxchg.org
-      - c03c2123981a "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (1/9)
+      - fa002fa51dca "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (1/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-3-hannes@cmpxchg.org
-      - 249997da7e2f "mm: list_lru: deduplicate unlock_list_lru()" (2/9)
+      - b9cb8065c94e "mm: list_lru: deduplicate unlock_list_lru()" (2/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-4-hannes@cmpxchg.org
-      - 4b2a111743b7 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (3/9)
+      - b852be3b77ac "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (3/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-5-hannes@cmpxchg.org
-      - 07a257e7c574 "mm: list_lru: deduplicate lock_list_lru()" (4/9)
+      - bebe5e163ba7 "mm: list_lru: deduplicate lock_list_lru()" (4/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-6-hannes@cmpxchg.org
-      - 462174c1fd38 "mm: list_lru: introduce caller locking for additions and deletions" (5/9)
+      - bd0325999030 "mm: list_lru: introduce caller locking for additions and deletions" (5/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-7-hannes@cmpxchg.org
-      - 3edc7a211d00 "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
+      - 1508cfd264a1 "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-8-hannes@cmpxchg.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

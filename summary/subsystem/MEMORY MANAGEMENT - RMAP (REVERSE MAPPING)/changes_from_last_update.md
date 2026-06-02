@@ -6,31 +6,22 @@
 - mm-stable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - 030f97ee59d2 "mm/page_vma_mapped_walk: use ptep_get_lockless() for lockless access"
-      - Authored by no role player, reviewed by no role player
-      - added "[osalvador@suse.de: changelog addition]"
-      - added "Link: : https://lore.kernel.org/ahhNq0pFKvSKZQbR@localhost.localdomain"
-      - added "Link: https://lore.kernel.org/20260528075507.1821939-1-agordeev@linux.ibm.com"
-      - added "Signed-off-by: Alexander Gordeev <agordeev@linux.ibm.com>"
-      - added "Reviewed-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
-      - added "Cc: Liam Howlett <liam@infradead.org>"
-      - added "Cc: Jann Horn <jannh@google.com>"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - added "Cc: Wei Yang <richard.weiyang@gmail.com>"
-      - added "Cc: Rik van Riel <riel@surriel.com>"
-      - added "Cc: Harry Yoo <harry@kernel.org>"
-      - added "Cc: Anshuman Khandual <anshuman.khandual@arm.com>"
-      - added "Cc: David Hildenbrand <david@kernel.org>"
-      - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+    - 0079866334b3 "mm/page_vma_mapped_walk: use ptep_get_lockless() for lockless access"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
       - Link: : https://lore.kernel.org/ahhNq0pFKvSKZQbR@localhost.localdomain
       - Link: https://lore.kernel.org/20260528075507.1821939-1-agordeev@linux.ibm.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

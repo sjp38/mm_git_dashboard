@@ -9,32 +9,57 @@
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 15 -> 15 commits (no change)
-  - series: 2 (11) -> 2 (12)
+- mm-unstable: 15 -> 18 commits
+  - series: 2 (12) -> 2 (14)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 3 commits
+    - no role, reviewer: 2 -> 3 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 3 -> 3 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, nobody: 3 -> 1 commits
+    - reviewer, no role : 1 -> 3 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 3 -> 3 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 3 -> 4 commits
+  - new commits
+    - 4dfed62a2fbe "mm: delete stale comment about cachelines"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
   - changed commits
+    - series "remove mmap_action success, error hooks", v2. (3)
+      - 3814718c49ae "drivers/char/mem: eliminate unnecessary use of success_hook (0/3)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org
+        - Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org
+      - 8dab52fc24ef "mm/vma: remove mmap_action->success_hook (1/3)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org
     - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - e51c83ae2922 "mm: memory: flatten alloc_anon_folio() retry loop (7/9)"
+      - 1a6397d7314c "mm: memory: flatten alloc_anon_folio() retry loop (7/9)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
-        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
-    - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - 28c27b828a9b "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
+      - 067bb0247312 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+- mm-new: 3 -> 2 commits
+  - series: 0 (3) -> 1 (2)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - new commits
+    - series "mm/sparse-vmemmap: Provide generic vmemmap_set_pmd() and vmemmap_check_pmd()", v3. (5)
+      - f768c803ce99 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd() (0/5)"
         - Authored by no role player, reviewed by nobody
-        - added "Cc: Balbir Singh <balbirs@nvidia.com>"
+  - changed commits
+    - series "userfaultfd/pagemap: pre-existing fixes". (6)
+      - 7f928a67051e "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

@@ -7,26 +7,24 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 13 -> 13 commits (no change)
-  - series: 1 (10) -> 1 (11)
+- mm-unstable: 13 -> 14 commits
+  - series: 1 (11) -> 1 (12)
     - no role, nobody: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-    - maintainer, maintainer: 7 -> 7 commits (no change)
+    - maintainer, maintainer: 7 -> 8 commits
   - changed commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - cbad7e20f186 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "[akpm@linux-foundation.org: memcgv1: don't compile swap functions when CONFIG_SWAP=n]"
-        - added "Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com"
-        - Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-- mm-new: 5 -> 5 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 067bb0247312 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+- mm-new: 5 -> 4 commits
+  - series: 1 (5) -> 1 (4)
     - no role, nobody: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

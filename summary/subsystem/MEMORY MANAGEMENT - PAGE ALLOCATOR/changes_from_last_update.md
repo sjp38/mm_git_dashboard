@@ -8,15 +8,25 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 13 -> 13 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 10 -> 10 commits (no change)
+- mm-unstable: 10 -> 12 commits
   - series: 0 (4) -> 0 (4) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 0 -> 2 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, no role : 5 -> 5 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
+  - changed commits
+    - 8aefe31372b0 "mm/compaction: respect cpusets when checking retry suitability"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/tencent_F59F2BA2CC5779308E10DF54593C736D3E0A@qq.com
+    - 02ca551ee7c3 "mm/page_alloc: fix deferred compaction accounting"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/tencent_368AF1F3821E46232637BE16D65C45CF3308@qq.com
+- mm-new: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

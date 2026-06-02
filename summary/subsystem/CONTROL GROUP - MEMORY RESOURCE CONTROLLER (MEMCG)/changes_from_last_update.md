@@ -8,29 +8,21 @@
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 9 -> 8 commits
-  - series: 1 (9) -> 1 (8)
+- mm-unstable: 8 -> 9 commits
+  - series: 1 (8) -> 1 (9)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
-    - maintainer, maintainer: 2 -> 2 commits (no change)
+    - maintainer, maintainer: 2 -> 3 commits
   - changed commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - cbad7e20f186 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "[akpm@linux-foundation.org: memcgv1: don't compile swap functions when CONFIG_SWAP=n]"
-        - added "Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com"
-        - Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-  - dropped commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 4a8b803445f5 "memcgv1: don't compile swap functions when CONFIG_SWAP=n (10/12)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 067bb0247312 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - maintainer, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -17,59 +17,58 @@
       - 9b0fcac3cfe7 "mm/filemap: do not count FAULT_FLAG_TRIED retries as mmap hits" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/tencent_22E6B8849EC1141FE7773C64467E6F1E2C09@qq.com
-- mm-unstable: 8 total, 2 (5) series, 3 non-series commits
+- mm-unstable: 10 total, 3 (7) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
-    - no role, reviewer: 2 commits
+    - no role, reviewer: 4 commits
     - reviewer, reviewer: 2 commits
     - reviewer, maintainer: 1 commits
   - full commits list
     - series "mm: document read_pages and simplify usage". (2 commits)
-      - 7cb91cc9e9c1 "mm/readahead: add kerneldoc for read_pages" (0/2)
+      - 475bdd6a86f2 "mm/readahead: add kerneldoc for read_pages" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/all/20260501061146.6e61392d125cf1847d7cc181@linux-foundation.org/ [1]
         - Link: https://lore.kernel.org/20260512203154.754075-2-fmayle@google.com
-      - fec64dc529e0 "mm/readahead: simplify page_cache_ra_unbounded loop counter reset" (1/2)
+      - bf19ceaa6cc8 "mm/readahead: simplify page_cache_ra_unbounded loop counter reset" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260512203154.754075-3-fmayle@google.com
-    - 167244dfed9e "mm/readahead: no PG_readahead on EOF"
+    - 587a3ff9331a "mm/readahead: no PG_readahead on EOF"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3921-L3939 [2]
       - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3721-L3722 [3]
       - Link: https://lore.kernel.org/20260508181237.670645-1-fmayle@google.com
-    - 57985dfdc0a5 "mm/filemap: fix page_cache_prev_miss() when no hole is found"
+    - 140dcbd04093 "mm/filemap: fix page_cache_prev_miss() when no hole is found"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260512-prev_miss_fix-v2-1-4af8e5c1ae62@columbia.edu
-    - 34e03b3a8396 "mm: make mmap_miss accounting symmetric for VM_SEQ_READ"
+    - b6dbb7ac217c "mm: make mmap_miss accounting symmetric for VM_SEQ_READ"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260525145751.2671248-1-usama.arif@linux.dev
     - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14 commits)
-      - 2a660349f42a "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
+      - 4fe6419d4ba6 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
         - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
-      - b70193115906 "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
+      - 0fa3b9ab7498 "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
-      - 91a7768c290b "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
+      - 8a4b146bfb35 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
-- mm-new: 3 total, 1 (2) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, reviewer: 1 commits
-  - full commits list
-    - series "mm: improve large folio readahead for exec memory", v6. (2 commits)
-      - 0ccd8adc8201 "mm: bypass mmap_miss heuristic for VM_EXEC readahead" (0/2)
+    - series "mm: improve large folio readahead for exec memory", v7. (2 commits)
+      - 1edee77c8575 "mm: bypass mmap_miss heuristic for VM_EXEC readahead" (0/2)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260528165635.2068012-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260528165635.2068012-2-usama.arif@linux.dev
-      - ca8921cf591f "mm: use mapping_max_folio_order() for force_thp_readahead order" (1/2)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260528165635.2068012-3-usama.arif@linux.dev
-    - d3175274e4f6 "add comment explaining design decision"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/fb47629e-6533-4c87-ac0b-e3a48a890ef4@linux.dev
+        - Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev
+      - 27be183a24cd "mm: use mapping_max_folio_order() for force_thp_readahead order" (1/2)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - adce636b0d5c "mm/filemap: use folio_next_index() for start"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260601110425.44784-1-tanze@kylinos.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

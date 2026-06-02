@@ -7,13 +7,13 @@
     - no role, nobody: 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 9a68db9c9053 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+    - 1d0e0cb5470a "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
-    - 90c0d73e28be "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
+    - 3b1851c5dd7f "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260525072117.112779-1-hao.ge@linux.dev
-    - 157198b6b787 "lib: split codetag_lock_module_list()"
+    - 78ab5ddf858f "lib: split codetag_lock_module_list()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260324214226.3684605-1-bvanassche@acm.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

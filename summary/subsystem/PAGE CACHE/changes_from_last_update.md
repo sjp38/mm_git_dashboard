@@ -6,17 +6,47 @@
 - mm-stable: 3 -> 3 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 2 (5) -> 2 (5) (no change)
+- mm-unstable: 8 -> 10 commits
+  - series: 2 (5) -> 3 (7)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, reviewer: 2 -> 4 commits
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: improve large folio readahead for exec memory", v7. (2)
+      - 1edee77c8575 "mm: bypass mmap_miss heuristic for VM_EXEC readahead (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev"
+        - added "Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev"
+        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Link: https://lore.kernel.org/20260528165635.2068012-2-usama.arif@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260528165635.2068012-1-usama.arif@linux.dev"
+        - dropped "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev
+      - 27be183a24cd "mm: use mapping_max_folio_order() for force_thp_readahead order (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev"
+        - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+        - dropped "Link: https://lore.kernel.org/20260528165635.2068012-3-usama.arif@linux.dev"
+        - dropped "Cc: Jan Kara <jack@suse.cz>"
+        - Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev
+- mm-new: 3 -> 1 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - adce636b0d5c "mm/filemap: use folio_next_index() for start"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260601110425.44784-1-tanze@kylinos.cn
+  - dropped commits
+    - d3175274e4f6 "add comment explaining design decision"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/fb47629e-6533-4c87-ac0b-e3a48a890ef4@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

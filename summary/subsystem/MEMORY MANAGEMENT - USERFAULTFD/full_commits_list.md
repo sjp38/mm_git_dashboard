@@ -22,22 +22,23 @@
     - no role, no role : 1 commits
   - full commits list
     - series "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c", v3. (2 commits)
-      - 64ff8b532b68 "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c" (0/2)
+      - d6c27b69ba77 "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260523173759.3964908-1-rppt@kernel.org
         - Link: https://lore.kernel.org/20260523173759.3964908-2-rppt@kernel.org
-      - 73630c69d70d "userfaultfd: make functions that are not used outside uffd static" (1/2)
+      - 57a9d3dd4538 "userfaultfd: make functions that are not used outside uffd static" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260523173759.3964908-3-rppt@kernel.org
 - mm-new: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
   - full commits list
-      - a67e7b51e42e "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
-        - Authored by no role player, reviewed by nobody
+      - ca4ab33684ba "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260529172331.356655-6-kas@kernel.org
-      - 28c27b828a9b "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
-        - Authored by no role player, reviewed by nobody
+      - 7f928a67051e "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
+        - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

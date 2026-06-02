@@ -9,33 +9,48 @@
 - mm-unstable: 5 -> 5 commits (no change)
   - series: 2 (4) -> 2 (4) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 3 -> 3 commits (no change)
-- mm-new: 3 -> 4 commits
-  - series: 1 (3) -> 2 (4)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - series "mm/hmm: A fix and a selftest", v2. (2)
-      - 05147ea61c49 "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260530085413.1270139-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260530085413.1270139-2-dev.jain@arm.com
+    - reviewer, nobody: 3 -> 1 commits
+    - reviewer, no role : 0 -> 2 commits
+  - changed commits
+    - series "remove mmap_action success, error hooks", v2. (3)
+      - 3814718c49ae "drivers/char/mem: eliminate unnecessary use of success_hook (0/3)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org
+        - Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org
+      - 8dab52fc24ef "mm/vma: remove mmap_action->success_hook (1/3)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org
+- mm-new: 4 -> 4 commits (no change)
+  - series: 2 (4) -> 2 (4) (no change)
+    - no role, nobody: 3 -> 1 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 0 -> 3 commits
   - changed commits
     - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - b0c79351856e "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race (0/6)"
-        - Authored by no role player, reviewed by nobody
-        - added "Cc: Balbir Singh <balbirs@nvidia.com>"
+      - 81ece46eca23 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race (0/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
         - Link: https://lore.kernel.org/20260529172331.356655-1-kas@kernel.org
         - Link: https://lore.kernel.org/20260529172331.356655-2-kas@kernel.org
         - Link: https://lore.kernel.org/all/20260526130509.2748441-1-kirill@shutemov.name/ [1]
-      - f711366252f8 "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry() (1/6)"
-        - Authored by no role player, reviewed by nobody
-        - added "Cc: Balbir Singh <balbirs@nvidia.com>"
+      - 4f8a30000d6e "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
         - Link: https://lore.kernel.org/20260529172331.356655-3-kas@kernel.org
-      - 459bd394d969 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole() (2/6)"
-        - Authored by no role player, reviewed by nobody
-        - added "Cc: Balbir Singh <balbirs@nvidia.com>"
-        - Link: https://lore.kernel.org/20260529172331.356655-4-kas@kernel.org
+    - series "mm/hmm: A fix and a selftest", v2. (2)
+      - 416fe7035fc4 "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - added "Tested-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260530085413.1270139-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260530085413.1270139-2-dev.jain@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

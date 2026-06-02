@@ -13,47 +13,48 @@
 - mm-unstable: 5 total, 2 (4) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 2 commits
-    - reviewer, nobody: 3 commits
+    - reviewer, nobody: 1 commits
+    - reviewer, no role : 2 commits
   - full commits list
-    - 5b9d3dfa38b1 "mm/mseal: use min/max in mseal_apply"
+    - 81c2cc2ac910 "mm/mseal: use min/max in mseal_apply"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503115915.18680-3-thorsten.blum@linux.dev
     - series "remove mmap_action success, error hooks", v2. (3 commits)
-      - fe193e58f749 "drivers/char/mem: eliminate unnecessary use of success_hook" (0/3)
-        - Authored by a reviewer, reviewed by nobody
+      - 3814718c49ae "drivers/char/mem: eliminate unnecessary use of success_hook" (0/3)
+        - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org
         - Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org
-      - 18b0e83273b3 "mm/vma: remove mmap_action->success_hook" (1/3)
-        - Authored by a reviewer, reviewed by nobody
+      - 8dab52fc24ef "mm/vma: remove mmap_action->success_hook" (1/3)
+        - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org
-      - 5dba240aed81 "mm/vma: eliminate mmap_action->error_hook, introduce error_filter" (2/3)
+      - b79b1145e8f2 "mm/vma: eliminate mmap_action->error_hook, introduce error_filter" (2/3)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/e770b28427937057fa953ac380a134b24acd8bb4.1779462249.git.ljs@kernel.org
     - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3 commits)
-      - 5fdf9d61c18a "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
+      - b5de632bb0a6 "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
         - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
 - mm-new: 4 total, 2 (4) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, no role : 1 commits
+    - no role, nobody: 1 commits
+    - no role, maintainer: 3 commits
   - full commits list
     - series "userfaultfd/pagemap: pre-existing fixes". (6 commits)
-      - b0c79351856e "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race" (0/6)
-        - Authored by no role player, reviewed by nobody
+      - 81ece46eca23 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race" (0/6)
+        - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260529172331.356655-1-kas@kernel.org
         - Link: https://lore.kernel.org/20260529172331.356655-2-kas@kernel.org
         - Link: https://lore.kernel.org/all/20260526130509.2748441-1-kirill@shutemov.name/ [1]
-      - f711366252f8 "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry()" (1/6)
-        - Authored by no role player, reviewed by nobody
+      - 4f8a30000d6e "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry()" (1/6)
+        - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260529172331.356655-3-kas@kernel.org
-      - 459bd394d969 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole()" (2/6)
+      - bf42bc46a9cc "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole()" (2/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260529172331.356655-4-kas@kernel.org
     - series "mm/hmm: A fix and a selftest", v2. (2 commits)
-      - 05147ea61c49 "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry" (0/2)
-        - Authored by no role player, reviewed by no role player
+      - 416fe7035fc4 "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry" (0/2)
+        - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260530085413.1270139-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260530085413.1270139-2-dev.jain@arm.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

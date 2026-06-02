@@ -13,19 +13,19 @@
     - no role, nobody: 4 commits
     - no role, no role : 1 commits
   - full commits list
-    - e53d496764a6 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 7f1ac5cfa686 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
-      - 672bfce2f9ca "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
+      - 72bcf5ce328e "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-25-rppt@kernel.org
-      - ad9d1dc82904 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
+      - 4eab1f850e40 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-26-rppt@kernel.org
-      - f20eab2254e5 "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
+      - a1ed7b6cfc2d "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-34-rppt@kernel.org
-      - fe31914c1c7b "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
+      - 18d0b4379d8a "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-35-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

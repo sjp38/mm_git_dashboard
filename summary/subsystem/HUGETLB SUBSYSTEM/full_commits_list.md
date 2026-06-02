@@ -32,13 +32,13 @@
     - no role, no role : 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 452b68044f87 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
+    - 47d0e0d1564e "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
-      - 5e639decfc6f "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
+      - 7995e4948f07 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - 6dc7adaba4c4 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
+      - ba40d736dfc9 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
