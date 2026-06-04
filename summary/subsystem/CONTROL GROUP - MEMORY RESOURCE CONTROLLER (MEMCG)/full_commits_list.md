@@ -61,7 +61,7 @@
   - author/reviewer role stat
     - maintainer, maintainer: 1 commits
   - full commits list
-      - 80cff0105aa7 "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

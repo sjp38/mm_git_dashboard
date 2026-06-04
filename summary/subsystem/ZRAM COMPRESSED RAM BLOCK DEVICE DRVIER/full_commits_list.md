@@ -1,12 +1,12 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 86405483b171 "zram: fix use-after-free in zram_bvec_write_partial()"
+    - 732fd9f0b9c1 "zram: fix use-after-free in zram_bvec_write_partial()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260528-zram-v3-1-cab86eef8764@gmail.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 2 total, 1 (1) series, 1 non-series commits
   - author/reviewer role stat
     - maintainer, nobody: 2 commits
@@ -23,7 +23,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - f7441848402d "zram: drop unused bio parameter from write helpers"
+    - 3f24251d12f0 "zram: drop unused bio parameter from write helpers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260528-zram-v3-2-cab86eef8764@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

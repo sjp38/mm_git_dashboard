@@ -63,31 +63,28 @@
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260526130938.66253-1-baohua@kernel.org
       - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
   - author/reviewer role stat
+    - reviewer, maintainer: 2 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-      - 80cff0105aa7 "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-- mm-new: 4 total, 1 (4) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - reviewer, maintainer: 2 commits
-    - maintainer, nobody: 1 commits
-  - full commits list
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8 commits)
-      - 1fa760193c91 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/8)
+    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (2 commits)
+      - 95027cf59bd8 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/2)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - 2be2918b3700 "mm/swap: remove redundant swap device reference in alloc/free" (1/8)
+      - e64314bd9a00 "mm/swap: remove redundant swap device reference in alloc/free" (1/2)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
-      - a6eed42b92e7 "mm/swap, PM: hibernate: atomically replace hibernation pin" (2/8)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
-      - d52e683915d6 "mm-swap-pm-hibernate-atomically-replace-hibernation-pin-checkpatch-fixes" (3/8)
-        - Authored by a maintainer, reviewed by nobody
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - ef1eb5145927 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

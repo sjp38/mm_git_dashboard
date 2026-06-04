@@ -91,27 +91,27 @@
         - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
 - mm-unstable: 4 total, 0 (0) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 2 commits
+    - no role, no role : 3 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 59026d69a4ae "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260519200851.141955-1-jp.kobryn@linux.dev
-    - 1a79159e3af2 "mm/compaction: respect cpusets when checking retry suitability"
+    - 6f167373fb8f "mm/compaction: respect cpusets when checking retry suitability"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_F59F2BA2CC5779308E10DF54593C736D3E0A@qq.com
-    - d4e578379400 "mm/page_alloc: fix deferred compaction accounting"
+    - 3060479c5a59 "mm/page_alloc: fix deferred compaction accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_368AF1F3821E46232637BE16D65C45CF3308@qq.com
-    - 53ec7095e352 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by no role player, reviewed by nobody
+    - a48e5e3c4cbf "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260519200851.141955-1-jp.kobryn@linux.dev
+    - 7e8452fd46fb "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - fc377d16533a "mm: page_isolation: avoid unsafe folio reads while scanning compound pages" (4/8)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
+    - ec383fff98f3 "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

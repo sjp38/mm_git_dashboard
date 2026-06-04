@@ -33,10 +33,10 @@
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - f4232649a997 "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
+      - aa17f44b3854 "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260529172331.356655-6-kas@kernel.org
-      - 8f21cbbcf444 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
+      - a2a5032ae812 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

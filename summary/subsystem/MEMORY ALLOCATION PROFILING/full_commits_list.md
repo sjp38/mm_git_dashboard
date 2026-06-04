@@ -4,18 +4,18 @@
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, maintainer: 1 commits
+    - no role, nobody: 1 commits
+    - no role, maintainer: 2 commits
   - full commits list
-    - 4d6246b6f0fa "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
+    - 43b36bcef37b "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260525072117.112779-1-hao.ge@linux.dev
-    - 06aa7f6693b0 "lib: split codetag_lock_module_list()"
+    - 7e8452fd46fb "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
+    - 7f981ca4cef2 "lib: split codetag_lock_module_list()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260324214226.3684605-1-bvanassche@acm.org
-    - 53ec7095e352 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

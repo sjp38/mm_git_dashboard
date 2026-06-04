@@ -3,28 +3,12 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 5 commits
+- mm-stable: 5 -> 5 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 1 -> 2 commits
-    - no role, maintainer: 1 -> 3 commits
-  - changed commits
-    - ce872d5a5955 "mm/memory_hotplug: factor out altmap freeing checks"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260511084307.1827127-1-songmuchun@bytedance.com
-    - 9b1b295e9fd3 "drivers/base/memory: make memory block get/put explicit"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
-      - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
-    - a2b8d7827f48 "drivers/base/memory: set mem->altmap after successful device registration"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260514092657.3057141-1-georgi.djakov@oss.qualcomm.com
-- mm-unstable: 3 -> 0 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

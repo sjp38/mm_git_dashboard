@@ -1,32 +1,21 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 0 -> 1 commits
   - changed commits
-    - a90a1ed25c6b "mm/list_lru: drain before clearing xarray entry on reparent"
+    - 98733f3f0bec "mm/list_lru: drain before clearing xarray entry on reparent"
       - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
       - Link: https://lore.kernel.org/20260601161501.1444829-1-shakeel.butt@linux.dev
-- mm-stable: 0 -> 2 commits
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 2 commits
-  - changed commits
-    - 62b21c6f1d88 "mm/shrinker: avoid out-of-bounds read in set_shrinker_bit()"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260510183700.102475-1-devnexen@gmail.com
-    - 12ccf2bef35c "mm/shrinker: simplify shrinker_memcg_alloc() using guard()"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260513075214.2655710-1-18810879172@163.com
-- mm-unstable: 9 -> 7 commits
+    - no role, reviewer: 1 -> 0 commits
+- mm-stable: 2 -> 2 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+- mm-unstable: 7 -> 7 commits (no change)
   - series: 1 (7) -> 1 (7) (no change)
     - no role, no role : 7 -> 7 commits (no change)
-    - no role, reviewer: 2 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

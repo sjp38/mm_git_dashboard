@@ -1,16 +1,13 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
-- mm-hotfixes-stable: 13 total, 1 (3) series, 10 non-series commits
+- mm-hotfixes-stable: 19 total, 2 (5) series, 14 non-series commits
   - author/reviewer role stat
-    - no role, no role : 6 commits
-    - no role, maintainer: 5 commits
-    - maintainer, nobody: 1 commits
+    - no role, no role : 7 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 6 commits
+    - maintainer, nobody: 3 commits
     - maintainer, no role : 1 commits
-- mm-hotfixes-unstable: 6 total, 1 (2) series, 4 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 2 commits
-    - maintainer, nobody: 2 commits
     - maintainer, reviewer: 1 commits
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 191 total, 27 (135) series, 56 non-series commits
   - author/reviewer role stat
     - no role, nobody: 7 commits
@@ -24,23 +21,22 @@
     - maintainer, no role : 1 commits
     - maintainer, reviewer: 3 commits
     - maintainer, maintainer: 7 commits
-- mm-unstable: 47 total, 5 (37) series, 10 non-series commits
+- mm-unstable: 50 total, 6 (39) series, 11 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 14 commits
     - no role, reviewer: 2 commits
-    - no role, maintainer: 3 commits
+    - no role, maintainer: 4 commits
     - reviewer, nobody: 2 commits
     - reviewer, no role : 5 commits
     - reviewer, reviewer: 10 commits
-    - reviewer, maintainer: 9 commits
+    - reviewer, maintainer: 11 commits
     - maintainer, maintainer: 1 commits
-- mm-new: 5 total, 1 (4) series, 1 non-series commits
+- mm-new: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
-    - reviewer, maintainer: 2 commits
 - mm-nonmm-stable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits

@@ -3,118 +3,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 23 commits
-  - series: 0 (0) -> 2 (18)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 3 -> 4 commits
+- mm-stable: 23 -> 23 commits (no change)
+  - series: 2 (18) -> 2 (18) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 0 -> 14 commits
-    - reviewer, maintainer: 0 -> 2 commits
-  - changed commits
-    - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
-      - 9c860d1d5d69 "mm: introduce for_each_free_list() (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
-        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 945578fee2ec "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers (5/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - b197d41462c2 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-    - b3a2b9355710 "mm/mglru: use folio_mark_accessed to replace folio_set_active"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260526130938.66253-1-baohua@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
-    - series "mm/mglru: improve reclaim loop and dirty folio", v7. (15)
-      - 63030c1b3295 "mm/mglru: consolidate common code for retrieving evictable size (0/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-0-02fabb92dc43@tencent.com
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-1-02fabb92dc43@tencent.com
-        - Link: https://lore.kernel.org/linux-mm/CAMgjq7BoekNjg-Ra3C8M7=8=75su38w=HD782T5E_cxyeCeH_g@mail.gmail.com/ [1]
-        - Link: https://github.com/brianfrankcooper/YCSB/blob/master/workloads/workloadb [2]
-        - Link: https://lore.kernel.org/all/20221220214923.1229538-1-yuzhao@google.com/ [3]
-        - Link: https://github.com/ryncsn/emm-test-project/tree/master/file-anon-mix-pressure [4]
-        - Link: https://lore.kernel.org/linux-mm/acgNCzRDVmSbXrOE@KASONG-MC4/ [5]
-        - Link: https://lore.kernel.org/linux-mm/20260417025123.2971253-1-wxy2009nrrr@163.com/ [6]
-        - Link: https://lore.kernel.org/linux-mm/20260502-mglru-fg-v1-0-913619b014d9@tencent.com/ [7]
-        - Link: https://lore.kernel.org/linux-mm/CAMgjq7BzQAPp8u_3-9e3ueXmRCoW=2sydok0hFM=MYL7VC1YYg@mail.gmail.com/ [8]
-        - Link: https://lore.kernel.org/linux-mm/CAMgjq7D+4QmiWe73OPFuH0s+ZKCUJoo+MfcWOdJcV+VO-T2Wmg@mail.gmail.com/ [9]
-      - 0d896aa9c751 "mm/mglru: rename variables related to aging and rotation (1/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-2-02fabb92dc43@tencent.com
-      - c447371fa7b7 "mm/mglru: relocate the LRU scan batch limit to callers (2/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-3-02fabb92dc43@tencent.com
-      - 57125e99b690 "mm/mglru: restructure the reclaim loop (3/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-4-02fabb92dc43@tencent.com
-      - bfce49ec372c "mm/mglru: scan and count the exact number of folios (4/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-5-02fabb92dc43@tencent.com
-      - 6c3d78a67966 "mm/mglru: avoid reclaim type fall back when isolation makes no progress (5/15)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/linux-mm/CAGsJ_4zjdOYEtuO6gNjABm7NDxW0skzBFNRNee-k2D6VwsYEQA@mail.gmail.com/ [1]
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-6-02fabb92dc43@tencent.com
-      - b5051a6efccb "mm/mglru: use a smaller batch for reclaim (6/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-7-02fabb92dc43@tencent.com
-      - bf4e53abfd6f "mm/mglru: don't abort scan immediately right after aging (7/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-8-02fabb92dc43@tencent.com
-      - b571ddb572bd "mm/mglru: remove redundant swap constrained check upon isolation (8/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-9-02fabb92dc43@tencent.com
-      - f6f74fc8be0e "mm/mglru: use the common routine for dirty/writeback reactivation (9/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-10-02fabb92dc43@tencent.com
-      - aff753d784a9 "mm/mglru: simplify and improve dirty writeback handling (10/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-11-02fabb92dc43@tencent.com
-        - Link: https://lore.kernel.org/linux-mm/20241026115714.1437435-1-jingxiangzeng.cas@gmail.com/ [1]
-      - 00a6f655302f "mm/mglru: remove no longer used reclaim argument for folio protection (11/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-12-02fabb92dc43@tencent.com
-      - cbcaad350665 "mm/vmscan: remove sc->file_taken (12/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-13-02fabb92dc43@tencent.com
-      - a6912e68957d "mm/vmscan: remove sc->unqueued_dirty (13/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-14-02fabb92dc43@tencent.com
-      - b9260dc7e05d "mm/vmscan: unify writeback reclaim statistic and throttling (14/15)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-15-02fabb92dc43@tencent.com
-- mm-unstable: 21 -> 2 commits
-  - series: 2 (19) -> 0 (1)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 2 -> 1 commits
-    - reviewer, reviewer: 14 -> 0 commits
-    - reviewer, maintainer: 2 -> 0 commits
+    - reviewer, reviewer: 14 -> 14 commits (no change)
+    - reviewer, maintainer: 2 -> 2 commits (no change)
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Cc: kernel test robot <lkp@intel.com>"
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

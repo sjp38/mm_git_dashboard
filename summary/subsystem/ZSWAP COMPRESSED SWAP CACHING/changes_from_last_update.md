@@ -3,26 +3,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 7 -> 9 commits
-  - series: 1 (7) -> 2 (9)
+- mm-stable: 9 -> 9 commits (no change)
+  - series: 2 (9) -> 2 (9) (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - a2e61ffb4749 "mm, swap: simplify swap cache allocation helper (0/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-0-88ae43e064c7@tencent.com
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-1-88ae43e064c7@tencent.com
-      - e1e6750df3b4 "mm, swap: add support for stable large allocation in swap cache directly (3/12)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-4-88ae43e064c7@tencent.com
-- mm-unstable: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

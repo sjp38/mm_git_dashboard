@@ -3,46 +3,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 7 commits
-  - series: 1 (2) -> 2 (7)
-    - no role, no role : 1 -> 6 commits
+- mm-stable: 7 -> 7 commits (no change)
+  - series: 2 (7) -> 2 (7) (no change)
+    - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/vmalloc: free unused pages on vrealloc() shrink", v14. (5)
-      - 4f1839e22527 "mm/vmalloc: extract vm_area_free_pages() helper from vfree() (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-0-70b96ee3e9c9@zohomail.in
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-1-70b96ee3e9c9@zohomail.in
-        - Link: https://lore.kernel.org/all/20260216-binder-shrink-vec-v3-v6-0-ece8e8593e53@zohomail.in/ [1]
-      - d57ac904ffdc "mm/vmalloc: use physical page count for vrealloc() grow-in-place check (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-2-70b96ee3e9c9@zohomail.in
-      - 0bca23804632 "mm/vmalloc: use physical page count in vread_iter() for VM_ALLOC areas (2/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: : https://lore.kernel.org/aff47da5-4fd5-481d-be18-e1eb99639490@zohomail.in
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-3-70b96ee3e9c9@zohomail.in
-      - 5ea8ec74c57c "mm/vmalloc: free unused pages on vrealloc() shrink (3/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-4-70b96ee3e9c9@zohomail.in
-      - 3c3daeafcdb6 "lib/test_vmalloc: add vrealloc test case (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-5-70b96ee3e9c9@zohomail.in
-- mm-unstable: 5 -> 1 commits
-  - series: 1 (5) -> 0 (0)
-    - no role, no role : 5 -> 1 commits
-  - changed commits
-    - 58a46dcc22c4 "vmalloc: fix NULL pointer dereference in is_vm_area_hugepages()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260529014130.671291-1-hui.zhu@linux.dev
-- mm-new: 1 -> 0 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

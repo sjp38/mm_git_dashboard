@@ -4,57 +4,23 @@
     - maintainer, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 12 commits
-  - series: 1 (3) -> 2 (11)
+- mm-stable: 12 -> 12 commits (no change)
+  - series: 2 (11) -> 2 (11) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 0 -> 2 commits
-    - maintainer, no role : 0 -> 1 commits
-    - maintainer, reviewer: 0 -> 3 commits
-    - maintainer, maintainer: 0 -> 2 commits
+    - reviewer, maintainer: 2 -> 2 commits (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, reviewer: 3 -> 3 commits (no change)
+    - maintainer, maintainer: 2 -> 2 commits (no change)
+- mm-unstable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 945578fee2ec "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers (5/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-      - bc34e87a51d9 "mm, swap: delay and unify memcg lookup and charging for swapin (7/12)"
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru (8/9)"
         - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - b197d41462c2 "mm/memcg, swap: store cgroup id in cluster table directly (9/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: : https://lore.kernel.org/202605281711.bSeZlErK-lkp@intel.com
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-10-88ae43e064c7@tencent.com
-      - 4e8e1c498de9 "mm/memcg: remove no longer used swap cgroup array (10/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
-    - series "memcg: shrink obj_stock_pcp and cache multiple objcgs", v3. (4)
-      - 2ba09ff4cd1e "memcg: store node_id instead of pglist_data pointer (0/4)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260526033931.1760588-1-shakeel.butt@linux.dev
-        - Link: https://lore.kernel.org/20260526033931.1760588-2-shakeel.butt@linux.dev
-      - 9f82e2700ae1 "memcg: uint16_t for nr_bytes in obj_stock_pcp (1/4)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260526033931.1760588-3-shakeel.butt@linux.dev
-      - 7e3452a5d370 "memcg: int16_t for cached slab stats (2/4)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260526033931.1760588-4-shakeel.butt@linux.dev
-      - 504b5bebd807 "memcg: multi objcg charge support (3/4)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260526033931.1760588-5-shakeel.butt@linux.dev
-- mm-unstable: 9 -> 1 commits
-  - series: 1 (9) -> 0 (1)
-    - reviewer, maintainer: 2 -> 0 commits
-    - maintainer, no role : 1 -> 0 commits
-    - maintainer, reviewer: 3 -> 0 commits
-    - maintainer, maintainer: 3 -> 1 commits
+        - added "Cc: kernel test robot <lkp@intel.com>"
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

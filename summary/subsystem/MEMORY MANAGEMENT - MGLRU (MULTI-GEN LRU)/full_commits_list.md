@@ -103,10 +103,10 @@
     - no role, reviewer: 1 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-      - 80cff0105aa7 "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - ae1ae97b3b97 "mm: delete stale comment about cachelines"
+    - 1e33f83edf4d "mm: delete stale comment about cachelines"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

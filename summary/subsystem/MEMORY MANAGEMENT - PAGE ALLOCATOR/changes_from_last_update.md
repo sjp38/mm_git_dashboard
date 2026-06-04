@@ -3,65 +3,37 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 15 -> 23 commits
-  - series: 2 (11) -> 2 (15)
-    - no role, nobody: 0 -> 1 commits
+- mm-stable: 23 -> 23 commits (no change)
+  - series: 2 (15) -> 2 (15) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 13 -> 14 commits
-    - reviewer, no role : 0 -> 5 commits
-    - reviewer, reviewer: 1 -> 2 commits
+    - no role, reviewer: 14 -> 14 commits (no change)
+    - reviewer, no role : 5 -> 5 commits (no change)
+    - reviewer, reviewer: 2 -> 2 commits (no change)
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 2 -> 3 commits
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
-      - 23378be820a3 "mm/page_alloc: don't overload migratetype in find_suitable_fallback() (1/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-2-dacdf5402be8@google.com
-      - 3687c0fd6724 "mm: rejig pageblock mask definitions (2/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-3-dacdf5402be8@google.com
-      - 248b144a8a6d "mm/page_alloc: remove ifdefs from pindex helpers (3/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-4-dacdf5402be8@google.com
-    - d231522bf072 "mm/page_alloc: drop a misleading __always_inline"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/all/20260517-b4-drop-always-inline-v1-1-97b90930e8b8@google.com/
-      - Link: https://lore.kernel.org/all/016c8bef-57ef-44ef-bf60-86dbfd368dcd@kernel.org/
-    - 47166f219955 "mm/page_alloc: document that alloc_pages_nolock() uses RCU"
-      - Authored by a reviewer, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260519-nolock-rcu-comment-v1-1-4a630c8794e5@google.com
-    - 8e27ea18254e "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
+    - a48e5e3c4cbf "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - Link: https://lore.kernel.org/20260519200851.141955-1-jp.kobryn@linux.dev
+    - 7e8452fd46fb "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Suren Baghdasaryan <surenb@google.com>"
+      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (0)
+    - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - ec383fff98f3 "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
       - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260520122228.201550-1-d@ilvokhin.com
-    - 2cec42c65863 "mm/page_alloc: remove VM_BUG_ON()s from pindex helpers"
-      - Authored by a reviewer, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260526-page_alloc-unmapped-prep-v2-1-412f4d486115@google.com
-      - Link: https://lore.kernel.org/all/4074a816-9e75-45a6-8141-25459bcc106b@kernel.org/
-    - series "zram: writeback fixes", v2. (2)
-      - 901658a75daf "mm: remove mentions of PageWriteback (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-- mm-unstable: 12 -> 4 commits
-  - series: 0 (4) -> 0 (0)
-    - no role, nobody: 3 -> 2 commits
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - reviewer, no role : 5 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - fc377d16533a "mm: page_isolation: avoid unsafe folio reads while scanning compound pages (4/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
+      - added "Acked-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
+      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
+      - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

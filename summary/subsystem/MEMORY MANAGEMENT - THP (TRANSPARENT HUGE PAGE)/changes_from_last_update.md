@@ -1,80 +1,69 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 2 -> 2 commits (no change)
+- mm-hotfixes-stable: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+    - maintainer, reviewer: 0 -> 1 commits
   - changed commits
-    - 84511a9dc9ea "mm/huge_memory: use correct flags for device private PMD entry"
+    - 43e7f189769c "mm/huge_memory: use correct flags for device private PMD entry"
       - Authored by a maintainer, reviewed by a reviewer
-      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-      - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - added "Reviewed-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
-      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
       - Link: https://lore.kernel.org/20260601083044.57132-1-ljs@kernel.org
-- mm-stable: 6 -> 12 commits
-  - series: 1 (2) -> 1 (4)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 3 -> 6 commits
-    - no role, maintainer: 3 -> 4 commits
-    - reviewer, maintainer: 0 -> 1 commits
-  - changed commits
-    - 6d544529f971 "selftests/mm: check file initialization writes in split_huge_page_test"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: : https://lore.kernel.org/da82de92-29d8-457c-9f65-40fc4900b922@kernel.org
-      - Link: https://lore.kernel.org/20260512074924.27721-1-agarwal.vineet2006@gmail.com
-    - a9920428f194 "mm/khugepaged: fix inconsistent MMF_VM_HUGEPAGE flag due to allocation failure order"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260511025408.54035-1-ye.liu@linux.dev
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 1dfbe92e7026 "mm/huge_memory: move THP gfp limit helper into header (2/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-3-88ae43e064c7@tencent.com
-      - 945578fee2ec "mm/memcg, swap: tidy up cgroup v1 memsw swap helpers (5/12)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-6-88ae43e064c7@tencent.com
-    - c33afe6f972d "Documentation/admin-guide/mm: fix typos in transhuge.rst"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260520051751.74396-1-leon.hwang@linux.dev
-    - 9f52d51ab7cc "selftests/mm/split_huge_page_test.c: close fd on write error"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260520020336.28914-1-richard.weiyang@gmail.com
-- mm-unstable: 44 -> 40 commits
-  - series: 2 (34) -> 2 (33)
-    - no role, nobody: 4 -> 4 commits (no change)
+- mm-hotfixes-unstable: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - maintainer, reviewer: 1 -> 0 commits
+- mm-stable: 12 -> 12 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 5 -> 2 commits
-    - no role, maintainer: 2 -> 1 commits
+    - no role, reviewer: 6 -> 6 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 40 -> 41 commits
+  - series: 2 (33) -> 2 (33) (no change)
+    - no role, nobody: 4 -> 5 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, nobody: 6 -> 6 commits (no change)
-    - reviewer, no role : 3 -> 4 commits
+    - reviewer, no role : 4 -> 4 commits (no change)
     - reviewer, reviewer: 11 -> 11 commits (no change)
-    - reviewer, maintainer: 10 -> 9 commits
+    - reviewer, maintainer: 9 -> 9 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - 18007afa5d55 "mm/thp: clear deferred split shrinker bits when queues drain"
-      - Authored by a reviewer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260602043453.67597-1-lance.yang@linux.dev
+    - 08d165d88bde "switch deferred split shrinker to list_lru fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
   - changed commits
-    - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - 7a5ca2dcbbbd "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Cc: kernel test robot <lkp@intel.com>"
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+    - dac240944628 "mm-switch-deferred-split-shrinker-to-list_lru-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - added "Cc: Usama Arif <usama.arif@linux.dev>"
+      - added "Cc: Muchun Song <muchun.song@linux.dev>"
+      - added "Cc: Barry Song <baohua@kernel.org>"
+      - added "Cc: Dev Jain <dev.jain@arm.com>"
+      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - added "Cc: Lance Yang <lance.yang@linux.dev>"
+      - added "Cc: Vasily Gorbik <gor@linux.ibm.com>"
+      - added "Cc: Zi Yan <ziy@nvidia.com>"
+      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+      - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Cc: Mikhail Zaslonko <zaslonko@linux.ibm.com>"
+      - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
+      - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - added "Cc: Nico Pache <npache@redhat.com>"
+      - added "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+      - added "Cc: Kairui Song <kasong@tencent.com>"
+      - added "Cc: Dave Chinner <david@fromorbit.com>"
+      - added "Cc: Michal Hocko <mhocko@kernel.org>"
+      - added "Cc: Liam R. Howlett <liam@infradead.org>"
+      - added "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+      - Link: https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

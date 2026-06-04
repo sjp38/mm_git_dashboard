@@ -4,139 +4,28 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 14 -> 28 commits
-  - series: 3 (8) -> 5 (19)
-    - no role, nobody: 0 -> 2 commits
-    - no role, no role : 7 -> 8 commits
-    - no role, reviewer: 5 -> 7 commits
-    - no role, maintainer: 2 -> 3 commits
-    - reviewer, no role : 0 -> 4 commits
-    - maintainer, nobody: 0 -> 1 commits
-    - maintainer, maintainer: 0 -> 3 commits
-  - new commits
-    - series "remove mmap_action success, error hooks", v3. (3)
-      - 4c5e4e398d6c "mm/vma: eliminate mmap_action->error_hook, introduce error_override (2/3)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/55d13f7d016b827c459946d46a56105635be111c.1780397980.git.ljs@kernel.org
-  - changed commits
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
-      - 14d1948fa238 "powerpc/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (7/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-8-3fb0be6fc688@kernel.org
-    - 9b1b295e9fd3 "drivers/base/memory: make memory block get/put explicit"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
-      - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
-    - 80eacd489a50 "mm/mmu_notifier: fix a begin vs. start typo in the invalidate range comment"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260513163546.1176742-1-seanjc@google.com
-    - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
-      - 9c860d1d5d69 "mm: introduce for_each_free_list() (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
-        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
-      - 23378be820a3 "mm/page_alloc: don't overload migratetype in find_suitable_fallback() (1/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-2-dacdf5402be8@google.com
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 02d733a7ec1d "mm, swap: unify large folio allocation (4/12)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-5-88ae43e064c7@tencent.com
-      - bc34e87a51d9 "mm, swap: delay and unify memcg lookup and charging for swapin (7/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - 4e8e1c498de9 "mm/memcg: remove no longer used swap cgroup array (10/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
-      - d9ceded101a1 "mm, swap: merge zeromap into swap table (11/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-12-88ae43e064c7@tencent.com
-    - series "remove mmap_action success, error hooks", v3. (3)
-      - a7d086b51637 "drivers/char/mem: eliminate unnecessary use of success_hook (0/3)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - added "Link: https://lore.kernel.org/cover.1780397980.git.ljs@kernel.org"
-        - added "Link: https://lore.kernel.org/010579cca6787cf7bb057ab1f7228978b10601c8.1780397980.git.ljs@kernel.org"
-        - dropped "Link: https://lore.kernel.org/cover.1779462249.git.ljs@kernel.org"
-        - dropped "Link: https://lore.kernel.org/5d1e8bd29d6e070218ba7a03461df562e372b91e.1779462249.git.ljs@kernel.org"
-        - Link: https://lore.kernel.org/cover.1780397980.git.ljs@kernel.org
-        - Link: https://lore.kernel.org/010579cca6787cf7bb057ab1f7228978b10601c8.1780397980.git.ljs@kernel.org
-      - f82ff2375264 "mm/vma: remove mmap_action->success_hook (1/3)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - added "Link: https://lore.kernel.org/f79434e6d30af6d92999be6b76e197f1847105fa.1780397980.git.ljs@kernel.org"
-        - dropped "Link: https://lore.kernel.org/2521c19866f3f10f9085d094cc4f06769042be71.1779462249.git.ljs@kernel.org"
-        - Link: https://lore.kernel.org/f79434e6d30af6d92999be6b76e197f1847105fa.1780397980.git.ljs@kernel.org
-    - series "zram: writeback fixes", v2. (2)
-      - 901658a75daf "mm: remove mentions of PageWriteback (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-    - a2fbb0260ce1 "docs: mm: clarify that user_reserve_kbytes has no effect when overcommit_memory is set to 0 or 1"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260528-mm-clarify-docs-v1-1-aa88e83b4bfd@redhat.com
-- mm-unstable: 18 -> 6 commits
-  - series: 2 (14) -> 1 (5)
-    - no role, nobody: 2 -> 0 commits
+- mm-stable: 28 -> 28 commits (no change)
+  - series: 5 (19) -> 5 (19) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 8 -> 8 commits (no change)
+    - no role, reviewer: 7 -> 7 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - reviewer, no role : 4 -> 4 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 3 -> 3 commits (no change)
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 3 -> 2 commits
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, no role : 3 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, maintainer: 4 -> 1 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - 8f21cbbcf444 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
-    - series "mm/sparse-vmemmap: Provide generic vmemmap_set_pmd() and vmemmap_check_pmd()", v3. (5)
-      - 1165d5fa4445 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd() (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260601084845.3792171-1-songmuchun@bytedance.com"
-        - added "Link: https://lore.kernel.org/20260601084845.3792171-2-songmuchun@bytedance.com"
-        - added "Signed-off-by: Muchun Song <songmuchun@bytedance.com>"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Acked-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
-        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: Huacai Chen <chenhuacai@kernel.org>"
-        - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - added "Cc: Andreas Larsson <andreas@gaisler.com>"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Will Deacon <will@kernel.org>"
-        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
-        - added "Cc: David S. Miller <davem@davemloft.net>"
-        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - added "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: WANG Xuerui <kernel@xen0n.name>"
-        - Link: https://lore.kernel.org/20260601084845.3792171-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260601084845.3792171-2-songmuchun@bytedance.com
-  - dropped commits
-    - series "remove mmap_action success, error hooks", v2. (3)
-      - b79b1145e8f2 "mm/vma: eliminate mmap_action->error_hook, introduce error_filter (2/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/e770b28427937057fa953ac380a134b24acd8bb4.1779462249.git.ljs@kernel.org
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Cc: kernel test robot <lkp@intel.com>"
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
