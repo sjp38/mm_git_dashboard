@@ -1,21 +1,9 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 0c25b8734367 "mm/mincore: handle non-swap entries before !CONFIG_SWAP guard"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Kairui Song <kasong@tencent.com>"
-      - Link: https://lore.kernel.org/20260602172247.279421-1-usama.arif@linux.dev
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-stable: 6 -> 6 commits (no change)
   - series: 3 (5) -> 3 (5) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
@@ -25,6 +13,28 @@
   - series: 2 (4) -> 2 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
+  - changed commits
+    - series "mm/hmm: A fix and a selftest", v3. (2)
+      - 5e58348990bb "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260604055308.1947679-2-dev.jain@arm.com"
+        - added "Link: https://lore.kernel.org/20260604055308.1947679-1-dev.jain@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260530085413.1270139-1-dev.jain@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260530085413.1270139-2-dev.jain@arm.com"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Cc: Leon Romanovsky <leon@kernel.org>"
+        - dropped "Cc: Anshuman Khandual <anshuman.khandual@arm.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: Jann Horn <jannh@google.com>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260604055308.1947679-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260604055308.1947679-2-dev.jain@arm.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

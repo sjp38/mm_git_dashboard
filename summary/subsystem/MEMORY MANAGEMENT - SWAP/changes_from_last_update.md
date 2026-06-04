@@ -11,40 +11,24 @@
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 1 -> 3 commits
-  - series: 0 (1) -> 1 (3)
-    - reviewer, maintainer: 0 -> 2 commits
+- mm-unstable: 3 -> 3 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - changed commits
     - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru (8/9)"
+      - 589bd6a732d1 "mm: switch deferred split shrinker to list_lru (8/9)"
         - Authored by a maintainer, reviewed by a maintainer
-        - added "Cc: kernel test robot <lkp@intel.com>"
+        - added "[akpm@linux-foundation.org: fix build with CONFIG_TRANSPARENT_HUGEPAGE=n]"
+        - added "Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org"
+        - added "Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com"
+        - added "[hannes@cmpxchg.org: fix cgroup.memory=nokmem handling]"
+        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (2)
-      - 95027cf59bd8 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device (0/2)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
-        - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - e64314bd9a00 "mm/swap: remove redundant swap device reference in alloc/free (1/2)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
-- mm-new: 4 -> 1 commits
-  - series: 1 (4) -> 0 (0)
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 2 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - changed commits
-    - ef1eb5145927 "mm/swap, PM: hibernate: atomically replace hibernation pin"
-      - Authored by no role player, reviewed by nobody
-      - added "[akpm@linux-foundation.org: coding-style cleanups]"
-      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
-  - dropped commits
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - d52e683915d6 "mm-swap-pm-hibernate-atomically-replace-hibernation-pin-checkpatch-fixes (3/8)"
-        - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

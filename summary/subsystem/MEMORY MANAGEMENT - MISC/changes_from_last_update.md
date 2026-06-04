@@ -1,16 +1,9 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 2 -> 3 commits
+- mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 3 commits
-  - changed commits
-    - 0ade3a8d83a8 "mm/cma_sysfs: skip inactive CMA areas in sysfs"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260524140420.61864-1-kaitao.cheng@linux.dev
-      - Link: https://lore.kernel.org/20260522131434.78532-1-kaitao.cheng@linux.dev
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, no role : 3 -> 3 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-stable: 33 -> 33 commits (no change)
   - series: 2 (23) -> 2 (23) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
@@ -25,6 +18,27 @@
     - no role, reviewer: 3 -> 3 commits (no change)
     - reviewer, nobody: 4 -> 4 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
+  - changed commits
+    - series "mm/hmm: A fix and a selftest", v3. (2)
+      - b76e3d53677d "selftests/mm/hmm-tests: test pagemap reads of PMD device-private entries (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260604055308.1947679-3-dev.jain@arm.com"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260530085413.1270139-3-dev.jain@arm.com"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - dropped "Cc: Leon Romanovsky <leon@kernel.org>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
+        - dropped "Cc: Jann Horn <jannh@google.com>"
+        - dropped "Cc: Anshuman Khandual <anshuman.khandual@arm.com>"
+        - Link: https://lore.kernel.org/20260604055308.1947679-3-dev.jain@arm.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

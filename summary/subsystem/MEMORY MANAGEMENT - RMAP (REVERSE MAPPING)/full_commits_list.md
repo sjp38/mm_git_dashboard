@@ -12,7 +12,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - b3034b53dd4c "mm/page_vma_mapped_walk: use ptep_get_lockless() for lockless access"
+    - 35b39664f2ae "mm/page_vma_mapped_walk: use ptep_get_lockless() for lockless access"
       - Authored by no role player, reviewed by a maintainer
       - Link: : https://lore.kernel.org/ahhNq0pFKvSKZQbR@localhost.localdomain
       - Link: https://lore.kernel.org/20260528075507.1821939-1-agordeev@linux.ibm.com

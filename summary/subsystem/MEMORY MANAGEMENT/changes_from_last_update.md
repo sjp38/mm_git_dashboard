@@ -1,52 +1,14 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 13 -> 19 commits
-  - series: 1 (3) -> 2 (5)
-    - no role, no role : 6 -> 7 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 5 -> 6 commits
-    - maintainer, nobody: 1 -> 3 commits
+- mm-hotfixes-stable: 19 -> 19 commits (no change)
+  - series: 2 (5) -> 2 (5) (no change)
+    - no role, no role : 7 -> 7 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 6 -> 6 commits (no change)
+    - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-    - maintainer, reviewer: 0 -> 1 commits
-  - changed commits
-    - 0ade3a8d83a8 "mm/cma_sysfs: skip inactive CMA areas in sysfs"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260524140420.61864-1-kaitao.cheng@linux.dev
-      - Link: https://lore.kernel.org/20260522131434.78532-1-kaitao.cheng@linux.dev
-    - series "mm/damon/{reclaim,lru_sort}: handle ctx allocation failures". (2)
-      - 7e2ed8a29427 "mm/damon/reclaim: handle ctx allocation failure (0/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260529000104.7006-2-sj@kernel.org
-        - Link: https://lore.kernel.org/20260419014800.877-1-sj@kernel.org [1]
-      - ab04340b5ae5 "mm/damon/lru_sort: handle ctx allocation failure (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260529000104.7006-3-sj@kernel.org
-    - 43e7f189769c "mm/huge_memory: use correct flags for device private PMD entry"
-      - Authored by a maintainer, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260601083044.57132-1-ljs@kernel.org
-    - 98733f3f0bec "mm/list_lru: drain before clearing xarray entry on reparent"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260601161501.1444829-1-shakeel.butt@linux.dev
-    - 0c25b8734367 "mm/mincore: handle non-swap entries before !CONFIG_SWAP guard"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Kairui Song <kasong@tencent.com>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - Link: https://lore.kernel.org/20260602172247.279421-1-usama.arif@linux.dev
-- mm-hotfixes-unstable: 6 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
-    - maintainer, nobody: 2 -> 0 commits
-    - maintainer, reviewer: 1 -> 0 commits
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 191 -> 191 commits (no change)
   - series: 27 (135) -> 27 (135) (no change)
     - no role, nobody: 7 -> 7 commits (no change)
@@ -60,57 +22,74 @@
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 47 -> 50 commits
-  - series: 5 (37) -> 6 (39)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 14 -> 14 commits (no change)
+- mm-unstable: 50 -> 53 commits
+  - series: 6 (39) -> 6 (39) (no change)
+    - no role, nobody: 1 -> 3 commits
+    - no role, no role : 14 -> 15 commits
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 4 commits
+    - no role, maintainer: 4 -> 3 commits
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 5 -> 5 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
-    - reviewer, maintainer: 9 -> 11 commits
+    - reviewer, maintainer: 11 -> 11 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
+    - 0f5e32a82170 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
+    - series "khugepaged: add mTHP collapse support", v18. (14)
+      - 0786d7e43d14 "mm-khugepaged-generalize-collapse_huge_page-for-mthp-collapse-fix-2 (8/14)"
+        - Authored by a maintainer, reviewed by nobody
+    - cc00fb98052e "zsmalloc: simplify data output in zs_stats_size_show()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/126a924b-6f68-43bf-ae5a-449fb93e527b@web.de
+    - 2a819f966464 "mm/page_alloc: only update NUMA min ratios on sysctl write"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 589bd6a732d1 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "[akpm@linux-foundation.org: fix build with CONFIG_TRANSPARENT_HUGEPAGE=n]"
+        - added "Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com"
+        - added "Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org"
+        - added "[hannes@cmpxchg.org: fix cgroup.memory=nokmem handling]"
+        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+    - series "mm: improve large folio readahead for exec memory", v7. (2)
+      - 5707bd43bf60 "mm: bypass mmap_miss heuristic for VM_EXEC readahead (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev
+      - 3263b7d89fa8 "mm: use mapping_max_folio_order() for force_thp_readahead order (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev
+    - acbc683ed3c5 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev"
+      - dropped "Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - dropped "Cc: Brendan Jackman <jackmanb@google.com>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - dropped "Acked-by: Suren Baghdasaryan <surenb@google.com>"
+      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
+  - dropped commits
     - 08d165d88bde "switch deferred split shrinker to list_lru fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
-  - changed commits
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Cc: kernel test robot <lkp@intel.com>"
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (2)
-      - 95027cf59bd8 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device (0/2)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
-        - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - e64314bd9a00 "mm/swap: remove redundant swap device reference in alloc/free (1/2)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
-    - 7e8452fd46fb "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Suren Baghdasaryan <surenb@google.com>"
-      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
-- mm-new: 5 -> 3 commits
-  - series: 1 (4) -> 0 (0)
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 2 -> 0 commits
-  - changed commits
-    - ec383fff98f3 "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
-      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
-      - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
-    - ef1eb5145927 "mm/swap, PM: hibernate: atomically replace hibernation pin"
-      - Authored by no role player, reviewed by nobody
-      - added "[akpm@linux-foundation.org: coding-style cleanups]"
-      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)

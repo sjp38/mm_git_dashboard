@@ -11,15 +11,25 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 14 -> 14 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 2 -> 2 commits (no change)
+- mm-unstable: 2 -> 3 commits
   - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 0f5e32a82170 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
   - changed commits
     - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru (8/9)"
+      - 589bd6a732d1 "mm: switch deferred split shrinker to list_lru (8/9)"
         - Authored by a maintainer, reviewed by a maintainer
-        - added "Cc: kernel test robot <lkp@intel.com>"
+        - added "[akpm@linux-foundation.org: fix build with CONFIG_TRANSPARENT_HUGEPAGE=n]"
+        - added "Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com"
+        - added "Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org"
+        - added "[hannes@cmpxchg.org: fix cgroup.memory=nokmem handling]"
+        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

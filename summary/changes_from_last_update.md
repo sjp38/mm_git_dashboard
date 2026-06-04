@@ -1,187 +1,246 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 13 -> 24 commits
-  - series: 1 (3) -> 2 (5)
-    - no role, nobody: 0 -> 3 commits
-    - no role, no role : 6 -> 8 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 5 -> 7 commits
-    - maintainer, nobody: 1 -> 3 commits
+- mm-hotfixes-stable: 24 -> 24 commits (no change)
+  - series: 2 (5) -> 2 (5) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 8 -> 8 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 7 -> 7 commits (no change)
+    - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-    - maintainer, reviewer: 0 -> 1 commits
-  - changed commits
-    - 2e5c6f4fd400 "ipc/shm: serialize orphan cleanup with shm_nattch updates"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/9d97cc1031de2d0bace0edf3a668818aa2f4eca6.1777410234.git.zylzyl2333@gmail.com
-    - 0ade3a8d83a8 "mm/cma_sysfs: skip inactive CMA areas in sysfs"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260524140420.61864-1-kaitao.cheng@linux.dev
-      - Link: https://lore.kernel.org/20260522131434.78532-1-kaitao.cheng@linux.dev
-    - 5921629dd625 "tools headers UAPI: sync linux/taskstats.h for procacct.c"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260527213558929EhiHHy9EDTMjmg3uuDOMi@zte.com.cn
-    - 8ad974459aef "MAINTAINERS: update Baoquan He's email address"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260528131454.1996752-1-baoquan.he@linux.dev
-    - 732fd9f0b9c1 "zram: fix use-after-free in zram_bvec_write_partial()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260528-zram-v3-1-cab86eef8764@gmail.com
-    - series "mm/damon/{reclaim,lru_sort}: handle ctx allocation failures". (2)
-      - 7e2ed8a29427 "mm/damon/reclaim: handle ctx allocation failure (0/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260529000104.7006-2-sj@kernel.org
-        - Link: https://lore.kernel.org/20260419014800.877-1-sj@kernel.org [1]
-      - ab04340b5ae5 "mm/damon/lru_sort: handle ctx allocation failure (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260529000104.7006-3-sj@kernel.org
-    - 43e7f189769c "mm/huge_memory: use correct flags for device private PMD entry"
-      - Authored by a maintainer, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260601083044.57132-1-ljs@kernel.org
-    - 98733f3f0bec "mm/list_lru: drain before clearing xarray entry on reparent"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260601161501.1444829-1-shakeel.butt@linux.dev
-    - c594b83457cc "arm64: mm: call pagetable dtor when freeing hot-removed page tables"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260521032730.2104017-1-apopple@nvidia.com
-    - 0c25b8734367 "mm/mincore: handle non-swap entries before !CONFIG_SWAP guard"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Kairui Song <kasong@tencent.com>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20260602172247.279421-1-usama.arif@linux.dev
-- mm-hotfixes-unstable: 13 -> 2 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 5 -> 2 commits
-    - no role, no role : 2 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, nobody: 2 -> 0 commits
-    - maintainer, reviewer: 1 -> 0 commits
-- mm-stable: 283 -> 283 commits (no change)
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+- mm-stable: 283 -> 281 commits
   - series: 39 (201) -> 39 (201) (no change)
-    - no role, nobody: 15 -> 15 commits (no change)
+    - no role, nobody: 15 -> 14 commits
     - no role, no role : 53 -> 53 commits (no change)
     - no role, reviewer: 45 -> 45 commits (no change)
     - no role, maintainer: 47 -> 47 commits (no change)
     - reviewer, no role : 9 -> 9 commits (no change)
     - reviewer, reviewer: 16 -> 16 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 85 -> 85 commits (no change)
+    - maintainer, nobody: 85 -> 84 commits
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 145 -> 148 commits
-  - series: 9 (120) -> 10 (122)
-    - no role, nobody: 43 -> 42 commits
-    - no role, no role : 51 -> 52 commits
+  - dropped commits
+    - 10ac0bddff8c "lib-test_hmm-check-alloc_page_vma-return-value-and-handle-oom-fix"
+      - Authored by a maintainer, reviewed by nobody
+- mm-unstable: 148 -> 150 commits
+  - series: 10 (122) -> 10 (122) (no change)
+    - no role, nobody: 42 -> 44 commits
+    - no role, no role : 52 -> 52 commits (no change)
     - no role, reviewer: 7 -> 7 commits (no change)
-    - no role, maintainer: 11 -> 12 commits
+    - no role, maintainer: 12 -> 12 commits (no change)
     - reviewer, nobody: 6 -> 6 commits (no change)
     - reviewer, no role : 5 -> 5 commits (no change)
     - reviewer, reviewer: 11 -> 11 commits (no change)
-    - reviewer, maintainer: 9 -> 11 commits
+    - reviewer, maintainer: 11 -> 11 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
+    - 0f5e32a82170 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
+    - series "khugepaged: add mTHP collapse support", v18. (14)
+      - 0786d7e43d14 "mm-khugepaged-generalize-collapse_huge_page-for-mthp-collapse-fix-2 (8/14)"
+        - Authored by a maintainer, reviewed by nobody
+    - cc00fb98052e "zsmalloc: simplify data output in zs_stats_size_show()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/126a924b-6f68-43bf-ae5a-449fb93e527b@web.de
+    - 2a819f966464 "mm/page_alloc: only update NUMA min ratios on sysctl write"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 589bd6a732d1 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "[akpm@linux-foundation.org: fix build with CONFIG_TRANSPARENT_HUGEPAGE=n]"
+        - added "Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com"
+        - added "Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org"
+        - added "[hannes@cmpxchg.org: fix cgroup.memory=nokmem handling]"
+        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+    - series "mm: improve large folio readahead for exec memory", v7. (2)
+      - 5707bd43bf60 "mm: bypass mmap_miss heuristic for VM_EXEC readahead (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev
+      - 3263b7d89fa8 "mm: use mapping_max_folio_order() for force_thp_readahead order (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev
+    - 767a8152b869 "lib/test_hmm: check alloc_page_vma() return value and handle OOM"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-stable -> mm-unstable
+      - added "Link: : https://lore.kernel.org/oe-kbuild-all/202606011329.zWs2BKy4-lkp@intel.com/"
+      - added "[akpm@linux-foundation.org: fix dmirror_devmem_fault_alloc_and_copy() retval handling]"
+      - Link: https://lore.kernel.org/20260521021858.21511-1-liuqiangneo@163.com
+      - Link: : https://lore.kernel.org/oe-kbuild-all/202606011329.zWs2BKy4-lkp@intel.com/
+    - series "mm/hmm: A fix and a selftest", v3. (2)
+      - 5e58348990bb "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260604055308.1947679-2-dev.jain@arm.com"
+        - added "Link: https://lore.kernel.org/20260604055308.1947679-1-dev.jain@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260530085413.1270139-1-dev.jain@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260530085413.1270139-2-dev.jain@arm.com"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Jann Horn <jannh@google.com>"
+        - dropped "Cc: Anshuman Khandual <anshuman.khandual@arm.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - dropped "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: Leon Romanovsky <leon@kernel.org>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260604055308.1947679-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260604055308.1947679-2-dev.jain@arm.com
+      - b76e3d53677d "selftests/mm/hmm-tests: test pagemap reads of PMD device-private entries (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260604055308.1947679-3-dev.jain@arm.com"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260530085413.1270139-3-dev.jain@arm.com"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Jann Horn <jannh@google.com>"
+        - dropped "Cc: Anshuman Khandual <anshuman.khandual@arm.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: Leon Romanovsky <leon@kernel.org>"
+        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260604055308.1947679-3-dev.jain@arm.com
+    - acbc683ed3c5 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev"
+      - dropped "Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Brendan Jackman <jackmanb@google.com>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Acked-by: Suren Baghdasaryan <surenb@google.com>"
+      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
+    - d950b3b5a3c9 "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://lore.kernel.org/20260604065938.105991-1-hao.ge@linux.dev"
+      - added "Suggested-by: Suren Baghdasaryan <surenb@google.com>"
+      - added "Acked-by: Suren Baghdasaryan <surenb@google.com>"
+      - dropped "Link: https://lore.kernel.org/20260525072117.112779-1-hao.ge@linux.dev"
+      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+      - Link: https://lore.kernel.org/20260604065938.105991-1-hao.ge@linux.dev
+  - dropped commits
+    - dac240944628 "mm-switch-deferred-split-shrinker-to-list_lru-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
     - 08d165d88bde "switch deferred split shrinker to list_lru fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
-  - changed commits
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Cc: kernel test robot <lkp@intel.com>"
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - dac240944628 "mm-switch-deferred-split-shrinker-to-list_lru-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - added "Cc: Zi Yan <ziy@nvidia.com>"
-      - added "Cc: Dave Chinner <david@fromorbit.com>"
-      - added "Cc: Barry Song <baohua@kernel.org>"
-      - added "Cc: Kairui Song <kasong@tencent.com>"
-      - added "Cc: Liam R. Howlett <liam@infradead.org>"
-      - added "Cc: Usama Arif <usama.arif@linux.dev>"
-      - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - added "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - added "Cc: Michal Hocko <mhocko@kernel.org>"
-      - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - added "Cc: Dev Jain <dev.jain@arm.com>"
-      - added "Cc: Vasily Gorbik <gor@linux.ibm.com>"
-      - added "Cc: Muchun Song <muchun.song@linux.dev>"
-      - added "Cc: Mikhail Zaslonko <zaslonko@linux.ibm.com>"
-      - added "Cc: Lance Yang <lance.yang@linux.dev>"
-      - added "Cc: Ryan Roberts <ryan.roberts@arm.com>"
-      - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Cc: Nico Pache <npache@redhat.com>"
-      - Link: https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (2)
-      - 95027cf59bd8 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device (0/2)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
-        - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - e64314bd9a00 "mm/swap: remove redundant swap device reference in alloc/free (1/2)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
     - a48e5e3c4cbf "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
       - Link: https://lore.kernel.org/20260519200851.141955-1-jp.kobryn@linux.dev
-    - 7e8452fd46fb "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Suren Baghdasaryan <surenb@google.com>"
-      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
-- mm-new: 6 -> 3 commits
-  - series: 1 (5) -> 0 (0)
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 2 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - changed commits
-    - ec383fff98f3 "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Oscar Salvador (SUSE) <osalvador@kernel.org>"
-      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
-      - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
-    - ef1eb5145927 "mm/swap, PM: hibernate: atomically replace hibernation pin"
-      - Authored by no role player, reviewed by nobody
-      - added "[akpm@linux-foundation.org: coding-style cleanups]"
-      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
-  - dropped commits
-    - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (8)
-      - d52e683915d6 "mm-swap-pm-hibernate-atomically-replace-hibernation-pin-checkpatch-fixes (3/8)"
-        - Authored by a maintainer, reviewed by nobody
-- mm-nonmm-stable: 80 -> 80 commits (no change)
-  - series: 9 (46) -> 9 (46) (no change)
+- mm-nonmm-stable: 80 -> 94 commits
+  - series: 9 (46) -> 10 (48)
     - no role, nobody: 21 -> 21 commits (no change)
-    - no role, no role : 34 -> 34 commits (no change)
+    - no role, no role : 34 -> 39 commits
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 21 -> 21 commits (no change)
-    - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-nonmm-unstable: 19 -> 20 commits
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 4 -> 5 commits
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, maintainer: 7 -> 7 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 21 -> 28 commits
+    - maintainer, nobody: 2 -> 3 commits
+    - maintainer, no role : 0 -> 1 commits
+  - changed commits
+    - 93612d48fa42 "ocfs2: rebase copied fsdlm LVB pointers in locking_state"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260525041726.4112882-1-rollkingzzc@gmail.com
+    - 9a79524d1420 "kcov: use WRITE_ONCE() for selftest mode stores"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260526114715.38280-1-kmehltretter@gmail.com
+    - 94bfc7f3b0c7 "err.h: use __always_inline on all error pointer helpers"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260526101851.2495110-1-arnd@kernel.org
+    - 9ac9a08e4ac4 "lib: kunit_iov_iter: repeatedly call alloc_pages_bulk()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260526-kunit_iov_iter-alloc_bulk-v2-1-24fbcd995c61@weissschuh.net
+    - 9bd541e09dff "ocfs2: reject oversized group bitmap descriptors"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260524111248.1429884-1-rollkingzzc@gmail.com
+    - series "lib/raid: replace __get_free_pages() call with kmalloc()", v4. (2)
+      - d280a26a983f "xor: use kmalloc() in calibrate_xor_blocks() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260528-lib-v4-0-4e3ad1277279@kernel.org
+        - Link: https://lore.kernel.org/all/635405e4-9423-4a25-a6e7-e03c8ea0bcbe@redhat.com
+        - Link: https://lore.kernel.org/all/635405e4-9423-4a25-a6e7-e03c8ea0bcbe@redhat.com
+        - Link: https://lore.kernel.org/20260528-lib-v4-1-4e3ad1277279@kernel.org
+      - 19c000ba93d6 "raid6: use kmalloc() in raid6_select_algo() (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/all/635405e4-9423-4a25-a6e7-e03c8ea0bcbe@redhat.com
+        - Link: https://lore.kernel.org/20260528-lib-v4-2-4e3ad1277279@kernel.org
+    - 6371a07148ee "ocfs2: fix buffer head management in ocfs2_read_blocks()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260529094128.494293-1-dmantipov@yandex.ru
+    - a291c77c034b "ocfs2: add journal NULL check in ocfs2_checkpoint_inode()"
+      - Authored by a maintainer, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260531131645.3650299-1-joseph.qi@linux.alibaba.com
+    - e234973f286e "ocfs2: validate fast symlink target during inode read"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260528151230.361127-1-rollkingzzc@gmail.com
+    - ca1afd88f5ea "ocfs2: reject FITRIM ranges shorter than a cluster"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260528151247.361854-1-rollkingzzc@gmail.com
+    - 03ad858ce806 "ocfs2/dlm: require a ref for locking_state debugfs open"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260531044714.1640172-1-rollkingzzc@gmail.com
+    - 57dcfd9049d4 "ocfs2: fix race between ocfs2_control_install_private() and ocfs2_control_release()"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260601121618.1263346-1-joseph.qi@linux.alibaba.com
+    - 1ec3cca2d8b6 "ocfs2: fix out-of-bounds write in ocfs2_remove_refcount_extent"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/ah3TESOsEO9j_JLU@dev
+- mm-nonmm-unstable: 20 -> 7 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 5 -> 5 commits (no change)
+    - no role, no role : 6 -> 1 commits
+    - no role, maintainer: 7 -> 1 commits
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, no role : 1 -> 0 commits
   - new commits
-    - b923c2ef1c16 "security/apparmor/apparmorfs.c: conditionally compile get_loaddata_common_ref()"
+    - bd9ac20661f4 "fs: fat: inode: replace sprintf() with scnprintf()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260603145222.59012-1-m32285159@gmail.com
+    - 6862314a7354 "mailmap: update Alexander Sverdlin's Email addresses"
       - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260603225847.1849399-1-asv@kernel.org
+  - dropped commits
+    - 3ba07338fe5a "lib: free pagelist on error in iov_iter_extract_pages()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260508111329.329943-1-dmantipov@yandex.ru

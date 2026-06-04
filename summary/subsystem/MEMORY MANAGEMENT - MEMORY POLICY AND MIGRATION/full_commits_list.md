@@ -12,17 +12,17 @@
     - d94d0f9c153f "mm/migrate: rename PAGE_ migration flags to FOLIO_"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260324190706.964555-4-shivankg@amd.com
-      - 901658a75daf "mm: remove mentions of PageWriteback" (1/2)
+      - 088a2353d714 "mm: remove mentions of PageWriteback" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-    - 4b8b76bf9004 "mm/migrate: find_mm_struct: fix race between security checks and suid exec"
+    - 13f77972b94c "mm/migrate: find_mm_struct: fix race between security checks and suid exec"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/ahWxQ3JxdR5ff2qf@redhat.com
 - mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - reviewer, no role : 1 commits
   - full commits list
-    - d0dcae43b35c "mm/nodemask: correctly describe nodemask operation return types"
+    - af9593ada08d "mm/nodemask: correctly describe nodemask operation return types"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260529202755.1846800-1-joshua.hahnjy@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

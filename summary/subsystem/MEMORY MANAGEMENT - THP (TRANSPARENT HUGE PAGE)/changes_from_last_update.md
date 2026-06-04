@@ -1,25 +1,19 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 2 -> 3 commits
+- mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, reviewer: 0 -> 1 commits
-  - changed commits
-    - 43e7f189769c "mm/huge_memory: use correct flags for device private PMD entry"
-      - Authored by a maintainer, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260601083044.57132-1-ljs@kernel.org
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, reviewer: 1 -> 0 commits
 - mm-stable: 12 -> 12 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 40 -> 41 commits
+- mm-unstable: 41 -> 40 commits
   - series: 2 (33) -> 2 (33) (no change)
-    - no role, nobody: 4 -> 5 commits
+    - no role, nobody: 5 -> 4 commits
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
@@ -30,38 +24,27 @@
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
+    - series "khugepaged: add mTHP collapse support", v18. (14)
+      - 0786d7e43d14 "mm-khugepaged-generalize-collapse_huge_page-for-mthp-collapse-fix-2 (8/14)"
+        - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 589bd6a732d1 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "[akpm@linux-foundation.org: fix build with CONFIG_TRANSPARENT_HUGEPAGE=n]"
+        - added "Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org"
+        - added "Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com"
+        - added "[hannes@cmpxchg.org: fix cgroup.memory=nokmem handling]"
+        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+  - dropped commits
+    - dac240944628 "mm-switch-deferred-split-shrinker-to-list_lru-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
     - 08d165d88bde "switch deferred split shrinker to list_lru fix"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
-  - changed commits
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "Cc: kernel test robot <lkp@intel.com>"
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - dac240944628 "mm-switch-deferred-split-shrinker-to-list_lru-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - added "Cc: Usama Arif <usama.arif@linux.dev>"
-      - added "Cc: Muchun Song <muchun.song@linux.dev>"
-      - added "Cc: Barry Song <baohua@kernel.org>"
-      - added "Cc: Dev Jain <dev.jain@arm.com>"
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - added "Cc: Lance Yang <lance.yang@linux.dev>"
-      - added "Cc: Vasily Gorbik <gor@linux.ibm.com>"
-      - added "Cc: Zi Yan <ziy@nvidia.com>"
-      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Cc: Mikhail Zaslonko <zaslonko@linux.ibm.com>"
-      - added "Cc: Lorenzo Stoakes (Oracle) <ljs@kernel.org>"
-      - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - added "Cc: Nico Pache <npache@redhat.com>"
-      - added "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Cc: Kairui Song <kasong@tencent.com>"
-      - added "Cc: Dave Chinner <david@fromorbit.com>"
-      - added "Cc: Michal Hocko <mhocko@kernel.org>"
-      - added "Cc: Liam R. Howlett <liam@infradead.org>"
-      - added "Cc: Ryan Roberts <ryan.roberts@arm.com>"
-      - Link: https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

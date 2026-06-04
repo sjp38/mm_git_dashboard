@@ -79,38 +79,41 @@
     - 47166f219955 "mm/page_alloc: document that alloc_pages_nolock() uses RCU"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260519-nolock-rcu-comment-v1-1-4a630c8794e5@google.com
-    - 8e27ea18254e "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
+    - 4c0ed883e051 "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260520122228.201550-1-d@ilvokhin.com
-    - 2cec42c65863 "mm/page_alloc: remove VM_BUG_ON()s from pindex helpers"
+    - 62f272d2fbff "mm/page_alloc: remove VM_BUG_ON()s from pindex helpers"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260526-page_alloc-unmapped-prep-v2-1-412f4d486115@google.com
       - Link: https://lore.kernel.org/all/4074a816-9e75-45a6-8141-25459bcc106b@kernel.org/
-      - 901658a75daf "mm: remove mentions of PageWriteback" (1/2)
+      - 088a2353d714 "mm: remove mentions of PageWriteback" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-- mm-unstable: 4 total, 0 (0) series, 4 non-series commits
+- mm-unstable: 5 total, 0 (0) series, 5 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 2 commits
     - no role, no role : 3 commits
-    - no role, maintainer: 1 commits
   - full commits list
-    - 6f167373fb8f "mm/compaction: respect cpusets when checking retry suitability"
+    - c63cdada7b64 "mm/compaction: respect cpusets when checking retry suitability"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_F59F2BA2CC5779308E10DF54593C736D3E0A@qq.com
-    - 3060479c5a59 "mm/page_alloc: fix deferred compaction accounting"
+    - 661d5b64915b "mm/page_alloc: fix deferred compaction accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_368AF1F3821E46232637BE16D65C45CF3308@qq.com
-    - a48e5e3c4cbf "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+    - 0f5e32a82170 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260519200851.141955-1-jp.kobryn@linux.dev
-    - 7e8452fd46fb "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
+      - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
+    - acbc683ed3c5 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
+    - 2a819f966464 "mm/page_alloc: only update NUMA min ratios on sysctl write"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - ec383fff98f3 "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
+    - 890153ef07a1 "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

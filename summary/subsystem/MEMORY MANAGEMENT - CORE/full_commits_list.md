@@ -100,20 +100,20 @@
         - Authored by a maintainer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-12-88ae43e064c7@tencent.com
     - series "remove mmap_action success, error hooks", v3. (3 commits)
-      - a7d086b51637 "drivers/char/mem: eliminate unnecessary use of success_hook" (0/3)
+      - 17986198a7b9 "drivers/char/mem: eliminate unnecessary use of success_hook" (0/3)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/cover.1780397980.git.ljs@kernel.org
         - Link: https://lore.kernel.org/010579cca6787cf7bb057ab1f7228978b10601c8.1780397980.git.ljs@kernel.org
-      - f82ff2375264 "mm/vma: remove mmap_action->success_hook" (1/3)
+      - 8876dc0780f2 "mm/vma: remove mmap_action->success_hook" (1/3)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/f79434e6d30af6d92999be6b76e197f1847105fa.1780397980.git.ljs@kernel.org
-      - 4c5e4e398d6c "mm/vma: eliminate mmap_action->error_hook, introduce error_override" (2/3)
+      - 4f5b8759262e "mm/vma: eliminate mmap_action->error_hook, introduce error_override" (2/3)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/55d13f7d016b827c459946d46a56105635be111c.1780397980.git.ljs@kernel.org
-      - 901658a75daf "mm: remove mentions of PageWriteback" (1/2)
+      - 088a2353d714 "mm: remove mentions of PageWriteback" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-    - a2fbb0260ce1 "docs: mm: clarify that user_reserve_kbytes has no effect when overcommit_memory is set to 0 or 1"
+    - a195cf013e98 "docs: mm: clarify that user_reserve_kbytes has no effect when overcommit_memory is set to 0 or 1"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260528-mm-clarify-docs-v1-1-aa88e83b4bfd@redhat.com
 - mm-unstable: 6 total, 1 (5) series, 1 non-series commits
@@ -122,24 +122,26 @@
     - no role, reviewer: 2 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-      - 47adf1a8873a "mm: memory: flatten alloc_anon_folio() retry loop" (7/9)
+      - caa9f5d51d8a "mm: memory: flatten alloc_anon_folio() retry loop" (7/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
-      - 2af6e291c97b "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 589bd6a732d1 "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
+        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - 1e33f83edf4d "mm: delete stale comment about cachelines"
+    - e008c7b2f81a "mm: delete stale comment about cachelines"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
-      - a2a5032ae812 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
+      - ee4dd8c544b9 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
     - series "mm/sparse-vmemmap: Provide generic vmemmap_set_pmd() and vmemmap_check_pmd()", v3. (5 commits)
-      - 530328129f7c "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd()" (0/5)
+      - 13eb9e229f17 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd()" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260601084845.3792171-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260601084845.3792171-2-songmuchun@bytedance.com
-      - b203d092fcff "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
+      - ff72e313fcaf "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

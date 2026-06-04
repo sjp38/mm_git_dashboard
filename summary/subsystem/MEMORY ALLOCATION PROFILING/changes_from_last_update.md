@@ -7,13 +7,28 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, maintainer: 1 -> 2 commits
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
   - changed commits
-    - 7e8452fd46fb "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+    - acbc683ed3c5 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev"
+      - dropped "Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Brendan Jackman <jackmanb@google.com>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - dropped "Acked-by: Suren Baghdasaryan <surenb@google.com>"
+      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
+    - d950b3b5a3c9 "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
       - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://lore.kernel.org/20260604065938.105991-1-hao.ge@linux.dev"
+      - added "Suggested-by: Suren Baghdasaryan <surenb@google.com>"
       - added "Acked-by: Suren Baghdasaryan <surenb@google.com>"
-      - Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev
+      - dropped "Link: https://lore.kernel.org/20260525072117.112779-1-hao.ge@linux.dev"
+      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+      - Link: https://lore.kernel.org/20260604065938.105991-1-hao.ge@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
