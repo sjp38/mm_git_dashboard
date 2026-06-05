@@ -22,26 +22,26 @@
     - no role, no role : 7 commits
   - full commits list
     - series "mm: switch THP shrinker to list_lru", v5. (9 commits)
-      - d70dd15ed8ec "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion" (0/9)
+      - 9e230218f491 "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion" (0/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-1-hannes@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-2-hannes@cmpxchg.org
-      - 02ada25ec489 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (1/9)
+      - 33957c0670da "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (1/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-3-hannes@cmpxchg.org
-      - 1dd1348a02c5 "mm: list_lru: deduplicate unlock_list_lru()" (2/9)
+      - 884d5e85eb23 "mm: list_lru: deduplicate unlock_list_lru()" (2/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-4-hannes@cmpxchg.org
-      - cf740ff907b5 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (3/9)
+      - a2434edc5c93 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (3/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-5-hannes@cmpxchg.org
-      - 613495a88066 "mm: list_lru: deduplicate lock_list_lru()" (4/9)
+      - 8a53478198ec "mm: list_lru: deduplicate lock_list_lru()" (4/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-6-hannes@cmpxchg.org
-      - 27be3de7bf85 "mm: list_lru: introduce caller locking for additions and deletions" (5/9)
+      - cc84e2e5d507 "mm: list_lru: introduce caller locking for additions and deletions" (5/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-7-hannes@cmpxchg.org
-      - 74261bcf208c "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
+      - 2652e3e6ec39 "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-8-hannes@cmpxchg.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

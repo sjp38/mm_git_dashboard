@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - cc00fb98052e "zsmalloc: simplify data output in zs_stats_size_show()"
+    - 9642158f7fb0 "zsmalloc: simplify data output in zs_stats_size_show()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/126a924b-6f68-43bf-ae5a-449fb93e527b@web.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

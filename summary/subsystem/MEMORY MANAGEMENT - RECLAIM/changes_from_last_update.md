@@ -10,13 +10,9 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 14 -> 14 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 0 -> 1 commits
+- mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 0f5e32a82170 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

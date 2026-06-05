@@ -94,10 +94,10 @@
   - author/reviewer role stat
     - no role, nobody: 2 commits
   - full commits list
-    - 7f7de45b6752 "arch,x86: skip setting align_offset for hugetlb mappings"
+    - 7a3aeb271668 "arch,x86: skip setting align_offset for hugetlb mappings"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260601125015.216110-1-osalvador@suse.de
-    - c852b53a94e9 "device-dax: fix refcount leak in __devm_create_dev_dax() error path"
+    - 00e185aa09c0 "device-dax: fix refcount leak in __devm_create_dev_dax() error path"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260412070010.2402830-1-lgs201920130244@gmail.com
 - mm-stable: 281 total, 39 (201) series, 80 non-series commits
@@ -1083,10 +1083,10 @@
       - Link: https://lore.kernel.org/20260528-mm-clarify-docs-v1-1-aa88e83b4bfd@redhat.com
 - mm-unstable: 150 total, 10 (122) series, 28 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 44 commits
+    - no role, nobody: 43 commits
     - no role, no role : 52 commits
     - no role, reviewer: 7 commits
-    - no role, maintainer: 12 commits
+    - no role, maintainer: 13 commits
     - reviewer, nobody: 6 commits
     - reviewer, no role : 5 commits
     - reviewer, reviewer: 11 commits
@@ -1094,498 +1094,498 @@
     - maintainer, nobody: 1 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - af9593ada08d "mm/nodemask: correctly describe nodemask operation return types"
+    - e8ed62830aa5 "mm/nodemask: correctly describe nodemask operation return types"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260529202755.1846800-1-joshua.hahnjy@gmail.com
     - series "mm: switch THP shrinker to list_lru", v5. (9 commits)
-      - d70dd15ed8ec "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion" (0/9)
+      - 9e230218f491 "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion" (0/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-1-hannes@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-2-hannes@cmpxchg.org
-      - 02ada25ec489 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (1/9)
+      - 33957c0670da "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (1/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-3-hannes@cmpxchg.org
-      - 1dd1348a02c5 "mm: list_lru: deduplicate unlock_list_lru()" (2/9)
+      - 884d5e85eb23 "mm: list_lru: deduplicate unlock_list_lru()" (2/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-4-hannes@cmpxchg.org
-      - cf740ff907b5 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (3/9)
+      - a2434edc5c93 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (3/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-5-hannes@cmpxchg.org
-      - 613495a88066 "mm: list_lru: deduplicate lock_list_lru()" (4/9)
+      - 8a53478198ec "mm: list_lru: deduplicate lock_list_lru()" (4/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-6-hannes@cmpxchg.org
-      - 27be3de7bf85 "mm: list_lru: introduce caller locking for additions and deletions" (5/9)
+      - cc84e2e5d507 "mm: list_lru: introduce caller locking for additions and deletions" (5/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-7-hannes@cmpxchg.org
-      - 74261bcf208c "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
+      - 2652e3e6ec39 "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-8-hannes@cmpxchg.org
-      - caa9f5d51d8a "mm: memory: flatten alloc_anon_folio() retry loop" (7/9)
+      - 364a7168202d "mm: memory: flatten alloc_anon_folio() retry loop" (7/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
-      - 589bd6a732d1 "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 36bc44e5759f "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
         - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - 6b7ed2a7f094 "mm/thp: clear deferred split shrinker bits when queues drain"
+    - e760ce3f15dd "mm/thp: clear deferred split shrinker bits when queues drain"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260602043453.67597-1-lance.yang@linux.dev
-    - c63cdada7b64 "mm/compaction: respect cpusets when checking retry suitability"
+    - 01edb191993a "mm/compaction: respect cpusets when checking retry suitability"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_F59F2BA2CC5779308E10DF54593C736D3E0A@qq.com
     - series "mm: improve large folio readahead for exec memory", v7. (2 commits)
-      - 5707bd43bf60 "mm: bypass mmap_miss heuristic for VM_EXEC readahead" (0/2)
+      - 3be2dbe0c1b6 "mm: bypass mmap_miss heuristic for VM_EXEC readahead" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev
-      - 3263b7d89fa8 "mm: use mapping_max_folio_order() for force_thp_readahead order" (1/2)
+      - 9e91598b2e8f "mm: use mapping_max_folio_order() for force_thp_readahead order" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev
-    - 661d5b64915b "mm/page_alloc: fix deferred compaction accounting"
+    - 6d8346619c86 "mm/page_alloc: fix deferred compaction accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_368AF1F3821E46232637BE16D65C45CF3308@qq.com
-    - 35b39664f2ae "mm/page_vma_mapped_walk: use ptep_get_lockless() for lockless access"
+    - cc43bfacc470 "mm/page_vma_mapped_walk: use ptep_get_lockless() for lockless access"
       - Authored by no role player, reviewed by a maintainer
       - Link: : https://lore.kernel.org/ahhNq0pFKvSKZQbR@localhost.localdomain
       - Link: https://lore.kernel.org/20260528075507.1821939-1-agordeev@linux.ibm.com
-    - 91862dbb229d "zram: drop unused bio parameter from write helpers"
+    - 1dff0c2d50b6 "zram: drop unused bio parameter from write helpers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260528-zram-v3-2-cab86eef8764@gmail.com
-    - e0ff28cb95e1 "lib/test_hmm: fix memory leak in dmirror_migrate_to_system()"
+    - 75c93012de8c "lib/test_hmm: fix memory leak in dmirror_migrate_to_system()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260528011336.20797-1-hao.ge@linux.dev
-    - e008c7b2f81a "mm: delete stale comment about cachelines"
+    - ad543b00b5d2 "mm: delete stale comment about cachelines"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
-    - 5b9164ec36be "MAINTAINERS: add testing ABI documents for mm"
+    - 3908dba9d045 "MAINTAINERS: add testing ABI documents for mm"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260601235506.85123-1-sj@kernel.org
     - series "userfaultfd/pagemap: pre-existing fixes". (6 commits)
-      - ce3578875b74 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race" (0/6)
+      - b2484ddc0d24 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race" (0/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260529172331.356655-1-kas@kernel.org
         - Link: https://lore.kernel.org/20260529172331.356655-2-kas@kernel.org
         - Link: https://lore.kernel.org/all/20260526130509.2748441-1-kirill@shutemov.name/ [1]
-      - 05c6c98130c5 "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry()" (1/6)
+      - 57bd826ac0c3 "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry()" (1/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260529172331.356655-3-kas@kernel.org
-      - 2c6618e62891 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole()" (2/6)
+      - a86907b79ae9 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole()" (2/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260529172331.356655-4-kas@kernel.org
-      - 5ad5eab3f30e "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade" (3/6)
+      - 33d17c48cdbf "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
-      - 2c5643045a75 "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
+      - 9ec091dd9ec6 "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260529172331.356655-6-kas@kernel.org
-      - ee4dd8c544b9 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
+      - 001b3b82518a "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
-    - 4570f199cfc9 "rust: page: mark Page::nid as inline"
+    - c2054b35e533 "rust: page: mark Page::nid as inline"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://github.com/Rust-for-Linux/linux/issues/1145
       - Link: https://lore.kernel.org/20260529085316.27432-1-nakamura.shuta@gmail.com
     - series "mm/sparse-vmemmap: Provide generic vmemmap_set_pmd() and vmemmap_check_pmd()", v3. (5 commits)
-      - 13eb9e229f17 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd()" (0/5)
+      - f9d0a6cc6168 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd()" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260601084845.3792171-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260601084845.3792171-2-songmuchun@bytedance.com
-      - 245a1ea92d21 "arm64/mm: drop vmemmap_pmd helpers and use generic code" (1/5)
+      - f2376039aedd "arm64/mm: drop vmemmap_pmd helpers and use generic code" (1/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260601084845.3792171-3-songmuchun@bytedance.com
-      - 95596e7f7113 "riscv/mm: drop vmemmap_pmd helpers and use generic code" (2/5)
+      - 2b5423bb766a "riscv/mm: drop vmemmap_pmd helpers and use generic code" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260601084845.3792171-4-songmuchun@bytedance.com
-      - 905f4e0d98db "loongarch/mm: drop vmemmap_check_pmd helper and use generic code" (3/5)
+      - 97339823305f "loongarch/mm: drop vmemmap_check_pmd helper and use generic code" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260601084845.3792171-5-songmuchun@bytedance.com
-      - 9414a22d366c "sparc/mm: drop vmemmap_check_pmd helper and use generic code" (4/5)
+      - 659902900cb7 "sparc/mm: drop vmemmap_check_pmd helper and use generic code" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260601084845.3792171-6-songmuchun@bytedance.com
-    - 6e441ececd8c "vmalloc: fix NULL pointer dereference in is_vm_area_hugepages()"
+    - b74fdd3027d1 "vmalloc: fix NULL pointer dereference in is_vm_area_hugepages()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260529014130.671291-1-hui.zhu@linux.dev
-    - 45bf3ecf90f6 "mm/filemap: use folio_next_index() for start"
+    - d4df3d121cac "mm/filemap: use folio_next_index() for start"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260601110425.44784-1-tanze@kylinos.cn
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (2 commits)
-      - ace649cbcc12 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/2)
+      - 3bddf39925b6 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/2)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - 4be11eb3bfcf "mm/swap: remove redundant swap device reference in alloc/free" (1/2)
+      - bd176bb8d69c "mm/swap: remove redundant swap device reference in alloc/free" (1/2)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
-    - 0f5e32a82170 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+    - 62b2eebe164b "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
-    - 767a8152b869 "lib/test_hmm: check alloc_page_vma() return value and handle OOM"
+    - 14e24a55169a "lib/test_hmm: check alloc_page_vma() return value and handle OOM"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260521021858.21511-1-liuqiangneo@163.com
       - Link: : https://lore.kernel.org/oe-kbuild-all/202606011329.zWs2BKy4-lkp@intel.com/
     - series "mm/hmm: A fix and a selftest", v3. (2 commits)
-      - 5e58348990bb "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry" (0/2)
+      - 32326a5516ec "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260604055308.1947679-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260604055308.1947679-2-dev.jain@arm.com
-      - b76e3d53677d "selftests/mm/hmm-tests: test pagemap reads of PMD device-private entries" (1/2)
+      - 734679f9c595 "selftests/mm/hmm-tests: test pagemap reads of PMD device-private entries" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260604055308.1947679-3-dev.jain@arm.com
+    - 417ceab483a4 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
+    - cdee4cb6f4f5 "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260604065938.105991-1-hao.ge@linux.dev
+    - f07955908849 "lib: split codetag_lock_module_list()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260324214226.3684605-1-bvanassche@acm.org
+    - 9642158f7fb0 "zsmalloc: simplify data output in zs_stats_size_show()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/126a924b-6f68-43bf-ae5a-449fb93e527b@web.de
+    - 0befc662b2b2 "mm/page_alloc: only update NUMA min ratios on sysctl write"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
     - series "khugepaged: add mTHP collapse support", v18. (14 commits)
-      - f1699177054d "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support" (0/14)
+      - 3e75fc3d64e7 "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support" (0/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260522150009.121603-1-npache@redhat.com
         - Link: https://lore.kernel.org/20260522150009.121603-2-npache@redhat.com
         - Link: https://gitlab.com/npache/khugepaged_mthp_test [1]
         - Link: https://lore.kernel.org/lkml/20250515033857.132535-1-npache@redhat.com/ [2]
-      - b16bd30c7f9b "mm/khugepaged: generalize alloc_charge_folio()" (1/14)
+      - 9150f430dd42 "mm/khugepaged: generalize alloc_charge_folio()" (1/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260522150009.121603-3-npache@redhat.com
-      - bae42b3bef93 "mm/khugepaged: rework max_ptes_* handling with helper functions" (2/14)
+      - dd42ba9b8f15 "mm/khugepaged: rework max_ptes_* handling with helper functions" (2/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260522150009.121603-4-npache@redhat.com
-      - b7a74ead7c0d "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support" (3/14)
+      - 33c61d2665fb "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support" (3/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260522150009.121603-5-npache@redhat.com
         - Link: https://lore.kernel.org/all/e46ab3ab-a3d7-4fb7-9970-d0704bd5d05a@arm.com [1]
         - Link: https://lore.kernel.org/all/37375ace-5601-4d6c-9dac-d1c8268698e9@redhat.com [2]
-      - 067b553bf30d "cleanup collapse_max_ptes_none" (4/14)
+      - 32b498edef99 "cleanup collapse_max_ptes_none" (4/14)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/b5fa19c5-4b3e-40b8-8e78-fc31169a7a79@redhat.com
-      - 7740b083baa5 "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped" (5/14)
+      - 68ed2d5a90bf "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped" (5/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260522150009.121603-6-npache@redhat.com
-      - b4d37f8c2a78 "mm/khugepaged: generalize collapse_huge_page for mTHP collapse" (6/14)
+      - 52daa572d519 "mm/khugepaged: generalize collapse_huge_page for mTHP collapse" (6/14)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260522150009.121603-7-npache@redhat.com
-      - f7213b033a8a "add a clarifying comment and change warn_on" (7/14)
+      - 0ff24c3cc26b "add a clarifying comment and change warn_on" (7/14)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/a48032dd-7881-43c0-b439-5cda6124ea58@redhat.com
-      - 0786d7e43d14 "mm-khugepaged-generalize-collapse_huge_page-for-mthp-collapse-fix-2" (8/14)
+      - f6b4d8899fee "mm-khugepaged-generalize-collapse_huge_page-for-mthp-collapse-fix-2" (8/14)
         - Authored by a maintainer, reviewed by nobody
-      - 0493a92f2d82 "mm/khugepaged: skip collapsing mTHP to smaller orders" (9/14)
+      - bc33fc69d8d3 "mm/khugepaged: skip collapsing mTHP to smaller orders" (9/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260522150009.121603-8-npache@redhat.com
         - Link: https://lore.kernel.org/lkml/20241216165105.56185-11-dev.jain@arm.com/ [1]
-      - 7b404c45f12d "mm/khugepaged: add per-order mTHP collapse failure statistics" (10/14)
+      - 040311b83f64 "mm/khugepaged: add per-order mTHP collapse failure statistics" (10/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com
-      - 0aeaf984533f "mm/khugepaged: improve tracepoints for mTHP orders" (11/14)
+      - 5ad0858e6697 "mm/khugepaged: improve tracepoints for mTHP orders" (11/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260522150009.121603-10-npache@redhat.com
-      - e6e3e4a101ef "mm/khugepaged: introduce collapse_allowable_orders helper function" (12/14)
+      - 48b17d22ea72 "mm/khugepaged: introduce collapse_allowable_orders helper function" (12/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260522150009.121603-11-npache@redhat.com
-      - ae5de4613472 "mm/khugepaged: introduce mTHP collapse support" (13/14)
+      - e2cc22d66838 "mm/khugepaged: introduce mTHP collapse support" (13/14)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260522150009.121603-12-npache@redhat.com
-    - fe7451e5c445 "fix potential use-after-free of vma in mthp_collapse()"
+    - c7e5bbcc42a3 "fix potential use-after-free of vma in mthp_collapse()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/2b2cda8c-358a-4a5c-989c-ae42593ef2ea@redhat.com
-    - 44124f28c625 "mm/khugepaged: avoid unnecessary mTHP collapse attempts"
+    - c646837d9c00 "mm/khugepaged: avoid unnecessary mTHP collapse attempts"
       - Authored by a reviewer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260522150009.121603-13-npache@redhat.com
-    - 2137ed5c2fcc "mm/khugepaged: run khugepaged for all orders"
+    - 73d89ce9e82a "mm/khugepaged: run khugepaged for all orders"
       - Authored by a reviewer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260522150009.121603-14-npache@redhat.com
-    - 84fe6c6a00a5 "Documentation: mm: update the admin guide for mTHP collapse"
+    - ea3a884b54df "Documentation: mm: update the admin guide for mTHP collapse"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260522150009.121603-15-npache@redhat.com
-    - 0bc5bb24aaab "add back note and edit doc about khugepaged limits"
+    - 125ebafc4bb7 "add back note and edit doc about khugepaged limits"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/b457f6e9-ae12-4e1f-8484-f3043ca62276@redhat.com
     - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14 commits)
-      - 0066cbf8bf61 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
+      - 52abc2c2a250 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
         - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
-      - ada4b174d487 "mm/khugepaged: add folio dirty check after try_to_unmap()" (1/14)
+      - 2647412bd7cd "mm/khugepaged: add folio dirty check after try_to_unmap()" (1/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-3-ziy@nvidia.com
-      - 8cd9ee32c35f "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled()" (2/14)
+      - 8f28fd6aed19 "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled()" (2/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-4-ziy@nvidia.com
-      - 8492d1b2ecd7 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled()" (3/14)
+      - e70faf4986cb "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled()" (3/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-5-ziy@nvidia.com
-      - ff72e313fcaf "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
+      - 6aa6c3d3cca4 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com
-      - 03ffc4be7501 "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
+      - 2032b30b6c03 "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
-      - 1256c9f3c734 "fs: remove nr_thps from struct address_space" (6/14)
+      - 50b895d4eb42 "fs: remove nr_thps from struct address_space" (6/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260517135416.1434539-8-ziy@nvidia.com
-      - 57ec4cd06020 "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS" (7/14)
+      - 768169d0bcf2 "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS" (7/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-9-ziy@nvidia.com
-      - 84f69cb8c472 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
+      - 0666a423610c "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
-      - 1dfdd3fbd538 "fs/btrfs: remove a comment referring to READ_ONLY_THP_FOR_FS" (9/14)
+      - 4e0e679ce09f "fs/btrfs: remove a comment referring to READ_ONLY_THP_FOR_FS" (9/14)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517135416.1434539-11-ziy@nvidia.com
-      - 6efe408e00da "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged" (10/14)
+      - d8d2da114503 "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged" (10/14)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260517135416.1434539-12-ziy@nvidia.com
-      - b72a438fb516 "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions" (11/14)
+      - 57d11bc8c76a "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions" (11/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260517135416.1434539-13-ziy@nvidia.com
-      - 9a600e04e94e "mm/khugepaged: enable clean pagecache folio collapse for writable files" (12/14)
+      - b865264bd1fb "mm/khugepaged: enable clean pagecache folio collapse for writable files" (12/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-14-ziy@nvidia.com
-      - 793b790f7f2c "selftests/mm: add writable-file collapse tests for khugepaged" (13/14)
+      - 144820766fd2 "selftests/mm: add writable-file collapse tests for khugepaged" (13/14)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260517135416.1434539-15-ziy@nvidia.com
     - series "make MM selftests more CI friendly", v4. (55 commits)
-      - 6f40a17a54d6 "selftests/mm: hugetlb-read-hwpoison: add SIGBUS handler" (0/55)
+      - b988c675e14e "selftests/mm: hugetlb-read-hwpoison: add SIGBUS handler" (0/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-1-rppt@kernel.org
         - Link: https://lore.kernel.org/20260511162840.375890-2-rppt@kernel.org
-      - 91a02b626cb4 "selftests/mm: migration: don't assume huge page is TWOMEG" (1/55)
+      - 3edcc60069da "selftests/mm: migration: don't assume huge page is TWOMEG" (1/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-3-rppt@kernel.org
-      - 7796d79b7d6f "selftests/mm: migration: make nthreads represent number of working threads" (2/55)
+      - 8cfa85a677d7 "selftests/mm: migration: make nthreads represent number of working threads" (2/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-4-rppt@kernel.org
-      - 1d2c57e1ca83 "selftests/mm: migration: properly cleanup fork()ed processes" (3/55)
+      - 39d1503ef85d "selftests/mm: migration: properly cleanup fork()ed processes" (3/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-5-rppt@kernel.org
-      - f790df71cdfb "selftests/mm: run_vmtests.sh: don't gate THP and KSM tests on HAVE_HUGEPAGES" (4/55)
+      - b07de33ca21b "selftests/mm: run_vmtests.sh: don't gate THP and KSM tests on HAVE_HUGEPAGES" (4/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-6-rppt@kernel.org
-      - deab3417ffb6 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
+      - ccc51078884d "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - 4091880a6758 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
+      - 15ec80db2aee "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
-      - a2a7ead5d738 "selftests/mm: hugetlb-shm: use kselftest framework" (7/55)
+      - 902d9c4ec298 "selftests/mm: hugetlb-shm: use kselftest framework" (7/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-9-rppt@kernel.org
-      - df340783cb4a "selftests/mm: hugetlb-vmemmap: use kselftest framework" (8/55)
+      - 4e54560547e9 "selftests/mm: hugetlb-vmemmap: use kselftest framework" (8/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-10-rppt@kernel.org
-      - 4bc0339baa59 "selftests/mm: hugetlb-madvise: use kselftest framework" (9/55)
+      - 05449b99c655 "selftests/mm: hugetlb-madvise: use kselftest framework" (9/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-11-rppt@kernel.org
-      - ad74edaf39e6 "selftests/mm: hugetlb_madv_vs_map: use kselftest framework" (10/55)
+      - 301ee54b3c23 "selftests/mm: hugetlb_madv_vs_map: use kselftest framework" (10/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-12-rppt@kernel.org
-      - c4fc0388cf91 "selftests/mm: hugetlb-read-hwpoison: use kselftest framework" (11/55)
+      - 1fa2e5696911 "selftests/mm: hugetlb-read-hwpoison: use kselftest framework" (11/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-13-rppt@kernel.org
-      - 47556fbbc8e8 "selftests/mm: khugepaged: group tests in an array" (12/55)
+      - 895a999feadd "selftests/mm: khugepaged: group tests in an array" (12/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-14-rppt@kernel.org
-      - 518179693034 "selftests/mm: khugepaged: use kselftest framework" (13/55)
+      - df286f9cb441 "selftests/mm: khugepaged: use kselftest framework" (13/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-15-rppt@kernel.org
-      - d2f41e11a6f5 "selftests-mm-khugepaged-use-ksefltest-framework-fix" (14/55)
+      - 1f0667802057 "selftests-mm-khugepaged-use-ksefltest-framework-fix" (14/55)
         - Authored by a reviewer, reviewed by nobody
-      - e7ed7561b561 "selftests/mm: ksm_tests: use kselftest framework" (15/55)
+      - ca10cb296646 "selftests/mm: ksm_tests: use kselftest framework" (15/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-16-rppt@kernel.org
-      - 3e23ebb29f19 "selftests/mm: protection_keys: use descriptive test names in the output" (16/55)
+      - f3f6fe269937 "selftests/mm: protection_keys: use descriptive test names in the output" (16/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-17-rppt@kernel.org
-      - 2e61bc3fb575 "selftests/mm: protection_keys: use kselftest framework" (17/55)
+      - eb27fdce5bfb "selftests/mm: protection_keys: use kselftest framework" (17/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-18-rppt@kernel.org
-      - f5fbe33b8d17 "selftests/mm: uffd-common: use kselftest framework" (18/55)
+      - 8137a3f4ac8b "selftests/mm: uffd-common: use kselftest framework" (18/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-19-rppt@kernel.org
-      - 2b2c0a5dd7a6 "selftests/mm: uffd-stress: use kselftest framework" (19/55)
+      - f9d6ad9aee06 "selftests/mm: uffd-stress: use kselftest framework" (19/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-20-rppt@kernel.org
-      - fd217b7998ea "selftests/mm: uffd-unit-tests: use kselftest framework" (20/55)
+      - 7c072cdbc84b "selftests/mm: uffd-unit-tests: use kselftest framework" (20/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-21-rppt@kernel.org
-      - f3e3fb7a925e "selftests/mm: va_high_addr_switch: use kselftest framework" (21/55)
+      - 4987101b4a89 "selftests/mm: va_high_addr_switch: use kselftest framework" (21/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-22-rppt@kernel.org
-      - be53ea529436 "selftests/mm: add atexit() and signal handlers to thp_settings" (22/55)
+      - ddecb143ed13 "selftests/mm: add atexit() and signal handlers to thp_settings" (22/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-23-rppt@kernel.org
-      - 34d1a3cc6899 "selftests/mm: rename thp_settings.[ch] to hugepage_settings.[ch]" (23/55)
+      - 719bed0cc6b2 "selftests/mm: rename thp_settings.[ch] to hugepage_settings.[ch]" (23/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-24-rppt@kernel.org
-      - 30c8014007b4 "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
+      - c0ce30754246 "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-25-rppt@kernel.org
-      - b670e0b11a6a "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
+      - b1d469036e72 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-26-rppt@kernel.org
-      - 700eaed654a8 "selftests/mm: hugepage_settings: add APIs to get and set nr_hugepages" (26/55)
+      - a2558d4bc81e "selftests/mm: hugepage_settings: add APIs to get and set nr_hugepages" (26/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-27-rppt@kernel.org
-      - 5c62412e51aa "selftests/mm: hugepage_settings: rename and rework get_free_hugepages()" (27/55)
+      - 14fc58922a38 "selftests/mm: hugepage_settings: rename and rework get_free_hugepages()" (27/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-28-rppt@kernel.org
-      - c135f3d98ac5 "selftests/mm: hugepage_settings: add APIs for HugeTLB setup and teardown" (28/55)
+      - 1f4b65a56945 "selftests/mm: hugepage_settings: add APIs for HugeTLB setup and teardown" (28/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-29-rppt@kernel.org
-      - 77e1a35ea76c "selftests/mm: move read_file(), read_num() and write_num() to vm_util" (29/55)
+      - 135fed3f75de "selftests/mm: move read_file(), read_num() and write_num() to vm_util" (29/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-30-rppt@kernel.org
-      - 156d61d86873 "selftests/mm: vm_util: add helpers to set and restore shm limits" (30/55)
+      - ee1287e69de6 "selftests/mm: vm_util: add helpers to set and restore shm limits" (30/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-31-rppt@kernel.org
-      - 2741153fa0da "selftests/mm: compaction_test: use HugeTLB helpers ..." (31/55)
+      - ea9e68273c2c "selftests/mm: compaction_test: use HugeTLB helpers ..." (31/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-32-rppt@kernel.org
-      - 9f8f972cba44 "selftests/mm: cow: add setup of HugeTLB pages" (32/55)
+      - 132883481988 "selftests/mm: cow: add setup of HugeTLB pages" (32/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-33-rppt@kernel.org
-      - e6ee7941adb2 "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
+      - 6b7cabce32fc "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-34-rppt@kernel.org
-      - 291977b8a07d "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
+      - 6412fd92bd1b "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-35-rppt@kernel.org
-      - 20579365e51e "selftests/mm: hmm-tests: add setup of HugeTLB pages" (35/55)
+      - 5ddf37cdc77d "selftests/mm: hmm-tests: add setup of HugeTLB pages" (35/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-36-rppt@kernel.org
-      - 3932694dd79b "selftests/mm: hugepage_dio: add setup of HugeTLB pages" (36/55)
+      - ac99663e4b31 "selftests/mm: hugepage_dio: add setup of HugeTLB pages" (36/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-37-rppt@kernel.org
-      - 40328f4d98a3 "selftests/mm: hugetlb_fault_after_madv: add setup of HugeTLB pages" (37/55)
+      - 788a26fd4404 "selftests/mm: hugetlb_fault_after_madv: add setup of HugeTLB pages" (37/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-38-rppt@kernel.org
-      - 3b88a89037b8 "selftests/mm: hugetlb-madvise: add setup of HugeTLB pages" (38/55)
+      - 59c4c60b2b72 "selftests/mm: hugetlb-madvise: add setup of HugeTLB pages" (38/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-39-rppt@kernel.org
-      - 18ec11186991 "selftests/mm: hugetlb_madv_vs_map: add setup of HugeTLB pages" (39/55)
+      - 3feb2bbb685c "selftests/mm: hugetlb_madv_vs_map: add setup of HugeTLB pages" (39/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-40-rppt@kernel.org
-      - f0b8f01ddaef "selftests/mm: hugetlb-mmap: add setup of HugeTLB pages" (40/55)
+      - e3ab3eabf4a8 "selftests/mm: hugetlb-mmap: add setup of HugeTLB pages" (40/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-41-rppt@kernel.org
-      - feff2a9e2618 "selftests/mm: hugetlb-mremap: add setup of HugeTLB pages" (41/55)
+      - 46b21399ed39 "selftests/mm: hugetlb-mremap: add setup of HugeTLB pages" (41/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-42-rppt@kernel.org
-      - 03d987937cd7 "selftests/mm: hugetlb-shm: add setup of HugeTLB pages" (42/55)
+      - d0e9ba73d804 "selftests/mm: hugetlb-shm: add setup of HugeTLB pages" (42/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-43-rppt@kernel.org
-      - 9b21071abb92 "selftests/mm: hugetlb-soft-offline: add setup of HugeTLB pages" (43/55)
+      - 2c7e6bd5db7d "selftests/mm: hugetlb-soft-offline: add setup of HugeTLB pages" (43/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-44-rppt@kernel.org
-      - d3bedcb491e9 "selftests/mm: hugetlb-vmemmap: add setup of HugeTLB pages" (44/55)
+      - e4a7b084aba8 "selftests/mm: hugetlb-vmemmap: add setup of HugeTLB pages" (44/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-45-rppt@kernel.org
-      - 64cbec8a0850 "selftests/mm: migration: add setup of HugeTLB pages" (45/55)
+      - 6f8df91be306 "selftests/mm: migration: add setup of HugeTLB pages" (45/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-46-rppt@kernel.org
-      - a0c4685fe1c7 "selftests/mm: pagemap_ioctl: add setup of HugeTLB pages" (46/55)
+      - a83aa5ce3291 "selftests/mm: pagemap_ioctl: add setup of HugeTLB pages" (46/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-47-rppt@kernel.org
-      - cdb6896cc65a "selftests/mm: protection_keys: use library code for HugeTLB setup" (47/55)
+      - 96b763ada121 "selftests/mm: protection_keys: use library code for HugeTLB setup" (47/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-48-rppt@kernel.org
-      - 19b03d1b6472 "selftests/mm: thuge-gen: add setup of HugeTLB pages" (48/55)
+      - 463531588cd5 "selftests/mm: thuge-gen: add setup of HugeTLB pages" (48/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-49-rppt@kernel.org
-      - 4b388c2ba769 "selftests/mm: uffd-stress: use hugetlb_save and alloc huge pages" (49/55)
+      - 8373601cc16c "selftests/mm: uffd-stress: use hugetlb_save and alloc huge pages" (49/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-50-rppt@kernel.org
-      - ff371ba3b719 "selftests/mm: uffd-unit-tests: add setup of HugeTLB pages" (50/55)
+      - 045b7ee30113 "selftests/mm: uffd-unit-tests: add setup of HugeTLB pages" (50/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-51-rppt@kernel.org
-      - 1d7a5e29bcc1 "selftests/mm: uffd-wp-mremap: add setup of HugeTLB pages" (51/55)
+      - 0312643df9d1 "selftests/mm: uffd-wp-mremap: add setup of HugeTLB pages" (51/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-52-rppt@kernel.org
-      - 50ce90a14056 "selftests/mm: va_high_addr_switch: add setup of HugeTLB pages" (52/55)
+      - 62044a221d83 "selftests/mm: va_high_addr_switch: add setup of HugeTLB pages" (52/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-53-rppt@kernel.org
-      - 9163798c0e20 "selftests/mm: va_high_addr_switch.sh: drop huge pages setup" (53/55)
+      - 2aed7542f777 "selftests/mm: va_high_addr_switch.sh: drop huge pages setup" (53/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-54-rppt@kernel.org
-      - 7519b8548afd "selftests/mm: run_vmtests.sh: free memory if available memory is low" (54/55)
+      - aa2eaa603e69 "selftests/mm: run_vmtests.sh: free memory if available memory is low" (54/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-55-rppt@kernel.org
-    - e4a69e15e2f8 "selftests/mm: run_vmtests.sh: drop detection and setup of HugeTLB"
+    - ca0ed5694db1 "selftests/mm: run_vmtests.sh: drop detection and setup of HugeTLB"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260511162840.375890-56-rppt@kernel.org
-    - 494a639aa673 "mm/khugepaged: avoid underflow in madvise_collapse for sub-PMD MADV_COLLAPSE"
+    - e6ef6fec8c81 "mm/khugepaged: avoid underflow in madvise_collapse for sub-PMD MADV_COLLAPSE"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260513055428.1664898-1-chenwandun@lixiang.com
-    - 3d53a6a90160 "selftests/mm: fix incorrect mmap() error handling with NULL instead of MAP_FAILED"
+    - 803c98ebf5db "selftests/mm: fix incorrect mmap() error handling with NULL instead of MAP_FAILED"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260513025223.592766-1-lihongfu@kylinos.cn
     - series "selftests/mm: fix failures and robustness improvements", v7. (13 commits)
-      - cf7183845292 "selftests/mm: restore default nr_hugepages value via exit trap in charge_reserved_hugetlb.sh" (0/13)
+      - 4989912f0ee7 "selftests/mm: restore default nr_hugepages value via exit trap in charge_reserved_hugetlb.sh" (0/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/cover.1779296493.git.sayalip@linux.ibm.com
         - Link: https://lore.kernel.org/5b8fbb29cd6ceffe6752e0af104f60cec072aa10.1779296493.git.sayalip@linux.ibm.com
-      - 33e61e1e2179 "selftests/mm: fix hugetlb pathname construction in charge_reserved_hugetlb.sh" (1/13)
+      - ed0e0d6cf51d "selftests/mm: fix hugetlb pathname construction in charge_reserved_hugetlb.sh" (1/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/04b6b49e4a2acf46319f627caf82b09e6dc1ad7f.1779296493.git.sayalip@linux.ibm.com
-      - c21ec00aae79 "selftests/mm: restore default nr_hugepages value via exit trap in hugetlb_reparenting_test.sh" (2/13)
+      - 6a3a4473e71d "selftests/mm: restore default nr_hugepages value via exit trap in hugetlb_reparenting_test.sh" (2/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/29db637c3c6ba6c168f6b33f59f059a0b39c35c8.1779296493.git.sayalip@linux.ibm.com
-      - 2b2399efc3f6 "selftests/mm: fix hugetlb pathname construction in hugetlb_reparenting_test.sh" (3/13)
+      - 431c512b06f2 "selftests/mm: fix hugetlb pathname construction in hugetlb_reparenting_test.sh" (3/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/837ce751965c93f74c95d89587debf1e93281364.1779296493.git.sayalip@linux.ibm.com
-      - 5d2947518308 "selftests/mm: fix cgroup task placement and drop memory.current checks in hugetlb_reparenting_test.sh" (4/13)
+      - 2d117b4705c1 "selftests/mm: fix cgroup task placement and drop memory.current checks in hugetlb_reparenting_test.sh" (4/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/fb57491ba83cb0a499c72922e1579b61bee514db.1779296493.git.sayalip@linux.ibm.com
-      - b1db5d5abe63 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (5/13)
+      - d7b118e9beb2 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (5/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/33e1bc10753fe82d1217613d8cd496020778cf2b.1779296493.git.sayalip@linux.ibm.com
-      - fd145ea24233 "selftests/mm: free dynamically allocated PMD-sized buffers in split_huge_page_test" (6/13)
+      - bf650dedc7b7 "selftests/mm: free dynamically allocated PMD-sized buffers in split_huge_page_test" (6/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/060c673b376bbeeed2b1fb1d48a825e846654191.1779296493.git.sayalip@linux.ibm.com
-      - 4dd3030122d7 "selftest/mm: register existing mapping with userfaultfd in hugetlb-mremap" (7/13)
+      - b163ff0c9390 "selftest/mm: register existing mapping with userfaultfd in hugetlb-mremap" (7/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/13845da872ed174316173e8996dbb5f181994017.1779296493.git.sayalip@linux.ibm.com
-      - 525b90713cfc "selftests/mm: ensure destination is hugetlb-backed in hugetlb-mremap" (8/13)
+      - 6071a32362b7 "selftests/mm: ensure destination is hugetlb-backed in hugetlb-mremap" (8/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/367644df45c65098f23e3945c6a80f4b8a8964a6.1779296493.git.sayalip@linux.ibm.com
-      - 6cb9512fc769 "selftests/mm: skip uffd-wp-mremap if UFFD write-protect is unsupported" (9/13)
+      - b41c2569c733 "selftests/mm: skip uffd-wp-mremap if UFFD write-protect is unsupported" (9/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/c3c5af76d71d5f4446f773f4de94882efc33ebe4.1779296493.git.sayalip@linux.ibm.com
-      - a0001ba50d75 "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero" (10/13)
+      - 9a3a19792172 "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero" (10/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/0707e9a0f1b3dd904c4a069b91db317f9c160faa.1779296493.git.sayalip@linux.ibm.com
-      - 6271a81b4557 "selftests/mm: use ksft_exit_skip() instead of KSFT_SKIP in uffd-stress" (11/13)
+      - ab65ed9f40c9 "selftests/mm: use ksft_exit_skip() instead of KSFT_SKIP in uffd-stress" (11/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com
-      - 8fe9c790b967 "selftests/mm: move hwpoison setup into run_test() and silence modprobe output for memory-failure category" (12/13)
+      - 3f2f94909a7b "selftests/mm: move hwpoison setup into run_test() and silence modprobe output for memory-failure category" (12/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/93441f34f7ef5add47d1a130d03daa79e21b5050.1779296493.git.sayalip@linux.ibm.com
-    - 5f6759c4e93f "selftests/mm: clarify alternate unmapping in compaction_test"
+    - e178a530a816 "selftests/mm: clarify alternate unmapping in compaction_test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/da5e0a8d5152e54152c0d2f456aac2fac35af291.1779296493.git.sayalip@linux.ibm.com
-    - acbc683ed3c5 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
-    - d950b3b5a3c9 "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260604065938.105991-1-hao.ge@linux.dev
-    - 488cf185e8c2 "lib: split codetag_lock_module_list()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260324214226.3684605-1-bvanassche@acm.org
-    - cc00fb98052e "zsmalloc: simplify data output in zs_stats_size_show()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/126a924b-6f68-43bf-ae5a-449fb93e527b@web.de
-    - 2a819f966464 "mm/page_alloc: only update NUMA min ratios on sysctl write"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
 - mm-new: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 890153ef07a1 "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
+    - 6fcbbf228f5a "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
-    - c82b75cab108 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - cb9c3b8f1467 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
-    - 1b44fc526761 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - 02481b693306 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 94 total, 10 (48) series, 46 non-series commits
@@ -1921,21 +1921,21 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 5bc443ac0888 "resource: downgrade "resource sanity check" warning to debug level"
+    - 3b50a297a783 "resource: downgrade "resource sanity check" warning to debug level"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260523000131.7086-1-sakunix@yahoo.com
-    - 6c398fd81c1d "drivers/media/v4l2-core/v4l2-vp9.c: reduce inlining"
+    - 8733bf4b7e90 "drivers/media/v4l2-core/v4l2-vp9.c: reduce inlining"
       - Authored by no role player, reviewed by no role player
-    - 05c3bb3fa720 "lib/idr: fix ida_find_first_range() missing IDs across chunk boundaries"
+    - e60d096910ae "lib/idr: fix ida_find_first_range() missing IDs across chunk boundaries"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260306203047.2821852-1-objecting@objecting.org
-    - 0d71e927cf94 "security/apparmor/apparmorfs.c: conditionally compile get_loaddata_common_ref()"
+    - 5dce0676fa51 "security/apparmor/apparmorfs.c: conditionally compile get_loaddata_common_ref()"
       - Authored by no role player, reviewed by nobody
-    - bd9ac20661f4 "fs: fat: inode: replace sprintf() with scnprintf()"
+    - f76a3c8bcfc8 "fs: fat: inode: replace sprintf() with scnprintf()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260603145222.59012-1-m32285159@gmail.com
-    - 6862314a7354 "mailmap: update Alexander Sverdlin's Email addresses"
+    - 619bfedffda7 "mailmap: update Alexander Sverdlin's Email addresses"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260603225847.1849399-1-asv@kernel.org
-    - d93caeeb1f4d "sparc: add _mcount() prototype"
+    - 0db76daf9f03 "sparc: add _mcount() prototype"
       - Authored by no role player, reviewed by nobody

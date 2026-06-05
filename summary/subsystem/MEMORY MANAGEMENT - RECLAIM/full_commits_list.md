@@ -92,7 +92,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 0f5e32a82170 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+    - 62b2eebe164b "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

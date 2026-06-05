@@ -68,24 +68,24 @@
     - reviewer, maintainer: 2 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-      - 589bd6a732d1 "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 36bc44e5759f "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
         - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (2 commits)
-      - ace649cbcc12 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/2)
+      - 3bddf39925b6 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/2)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - 4be11eb3bfcf "mm/swap: remove redundant swap device reference in alloc/free" (1/2)
+      - bd176bb8d69c "mm/swap: remove redundant swap device reference in alloc/free" (1/2)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 1b44fc526761 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - 02481b693306 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

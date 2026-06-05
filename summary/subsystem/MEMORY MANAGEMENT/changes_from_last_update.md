@@ -22,69 +22,23 @@
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 50 -> 53 commits
+- mm-unstable: 53 -> 53 commits (no change)
   - series: 6 (39) -> 6 (39) (no change)
-    - no role, nobody: 1 -> 3 commits
-    - no role, no role : 14 -> 15 commits
+    - no role, nobody: 3 -> 2 commits
+    - no role, no role : 15 -> 15 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 4 -> 3 commits
+    - no role, maintainer: 3 -> 4 commits
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 5 -> 5 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 11 -> 11 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 0f5e32a82170 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
-    - series "khugepaged: add mTHP collapse support", v18. (14)
-      - 0786d7e43d14 "mm-khugepaged-generalize-collapse_huge_page-for-mthp-collapse-fix-2 (8/14)"
-        - Authored by a maintainer, reviewed by nobody
-    - cc00fb98052e "zsmalloc: simplify data output in zs_stats_size_show()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/126a924b-6f68-43bf-ae5a-449fb93e527b@web.de
-    - 2a819f966464 "mm/page_alloc: only update NUMA min ratios on sysctl write"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
   - changed commits
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 589bd6a732d1 "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - added "[akpm@linux-foundation.org: fix build with CONFIG_TRANSPARENT_HUGEPAGE=n]"
-        - added "Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com"
-        - added "Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org"
-        - added "[hannes@cmpxchg.org: fix cgroup.memory=nokmem handling]"
-        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
-        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - series "mm: improve large folio readahead for exec memory", v7. (2)
-      - 5707bd43bf60 "mm: bypass mmap_miss heuristic for VM_EXEC readahead (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev
-      - 3263b7d89fa8 "mm: use mapping_max_folio_order() for force_thp_readahead order (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev
-    - acbc683ed3c5 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev"
-      - dropped "Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Cc: Brendan Jackman <jackmanb@google.com>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - dropped "Acked-by: Suren Baghdasaryan <surenb@google.com>"
+    - 417ceab483a4 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Suren Baghdasaryan <surenb@google.com>"
       - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
-  - dropped commits
-    - 08d165d88bde "switch deferred split shrinker to list_lru fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
 - mm-new: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

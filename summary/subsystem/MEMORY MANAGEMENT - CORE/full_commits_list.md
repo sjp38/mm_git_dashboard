@@ -122,26 +122,26 @@
     - no role, reviewer: 2 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-      - caa9f5d51d8a "mm: memory: flatten alloc_anon_folio() retry loop" (7/9)
+      - 364a7168202d "mm: memory: flatten alloc_anon_folio() retry loop" (7/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
-      - 589bd6a732d1 "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 36bc44e5759f "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
         - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - e008c7b2f81a "mm: delete stale comment about cachelines"
+    - ad543b00b5d2 "mm: delete stale comment about cachelines"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
-      - ee4dd8c544b9 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
+      - 001b3b82518a "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
     - series "mm/sparse-vmemmap: Provide generic vmemmap_set_pmd() and vmemmap_check_pmd()", v3. (5 commits)
-      - 13eb9e229f17 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd()" (0/5)
+      - f9d0a6cc6168 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd()" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260601084845.3792171-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260601084845.3792171-2-songmuchun@bytedance.com
-      - ff72e313fcaf "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
+      - 6aa6c3d3cca4 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

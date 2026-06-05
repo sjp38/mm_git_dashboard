@@ -756,10 +756,10 @@
       - Link: https://lore.kernel.org/ahWxQ3JxdR5ff2qf@redhat.com
 - mm-unstable: 53 total, 6 (39) series, 14 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
+    - no role, nobody: 2 commits
     - no role, no role : 15 commits
     - no role, reviewer: 2 commits
-    - no role, maintainer: 3 commits
+    - no role, maintainer: 4 commits
     - reviewer, nobody: 2 commits
     - reviewer, no role : 5 commits
     - reviewer, reviewer: 10 commits
@@ -767,197 +767,197 @@
     - maintainer, nobody: 1 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - af9593ada08d "mm/nodemask: correctly describe nodemask operation return types"
+    - e8ed62830aa5 "mm/nodemask: correctly describe nodemask operation return types"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260529202755.1846800-1-joshua.hahnjy@gmail.com
     - series "mm: switch THP shrinker to list_lru", v5. (9 commits)
-      - d70dd15ed8ec "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion" (0/9)
+      - 9e230218f491 "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion" (0/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-1-hannes@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-2-hannes@cmpxchg.org
-      - 02ada25ec489 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (1/9)
+      - 33957c0670da "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty" (1/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-3-hannes@cmpxchg.org
-      - 1dd1348a02c5 "mm: list_lru: deduplicate unlock_list_lru()" (2/9)
+      - 884d5e85eb23 "mm: list_lru: deduplicate unlock_list_lru()" (2/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-4-hannes@cmpxchg.org
-      - cf740ff907b5 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (3/9)
+      - a2434edc5c93 "mm: list_lru: move list dead check to lock_list_lru_of_memcg()" (3/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-5-hannes@cmpxchg.org
-      - 613495a88066 "mm: list_lru: deduplicate lock_list_lru()" (4/9)
+      - 8a53478198ec "mm: list_lru: deduplicate lock_list_lru()" (4/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-6-hannes@cmpxchg.org
-      - 27be3de7bf85 "mm: list_lru: introduce caller locking for additions and deletions" (5/9)
+      - cc84e2e5d507 "mm: list_lru: introduce caller locking for additions and deletions" (5/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-7-hannes@cmpxchg.org
-      - 74261bcf208c "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
+      - 2652e3e6ec39 "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-8-hannes@cmpxchg.org
-      - caa9f5d51d8a "mm: memory: flatten alloc_anon_folio() retry loop" (7/9)
+      - 364a7168202d "mm: memory: flatten alloc_anon_folio() retry loop" (7/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
-      - 589bd6a732d1 "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 36bc44e5759f "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
         - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - 6b7ed2a7f094 "mm/thp: clear deferred split shrinker bits when queues drain"
+    - e760ce3f15dd "mm/thp: clear deferred split shrinker bits when queues drain"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260602043453.67597-1-lance.yang@linux.dev
-    - c63cdada7b64 "mm/compaction: respect cpusets when checking retry suitability"
+    - 01edb191993a "mm/compaction: respect cpusets when checking retry suitability"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_F59F2BA2CC5779308E10DF54593C736D3E0A@qq.com
     - series "mm: improve large folio readahead for exec memory", v7. (2 commits)
-      - 5707bd43bf60 "mm: bypass mmap_miss heuristic for VM_EXEC readahead" (0/2)
+      - 3be2dbe0c1b6 "mm: bypass mmap_miss heuristic for VM_EXEC readahead" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev
-      - 3263b7d89fa8 "mm: use mapping_max_folio_order() for force_thp_readahead order" (1/2)
+      - 9e91598b2e8f "mm: use mapping_max_folio_order() for force_thp_readahead order" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev
-    - 661d5b64915b "mm/page_alloc: fix deferred compaction accounting"
+    - 6d8346619c86 "mm/page_alloc: fix deferred compaction accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_368AF1F3821E46232637BE16D65C45CF3308@qq.com
-    - 35b39664f2ae "mm/page_vma_mapped_walk: use ptep_get_lockless() for lockless access"
+    - cc43bfacc470 "mm/page_vma_mapped_walk: use ptep_get_lockless() for lockless access"
       - Authored by no role player, reviewed by a maintainer
       - Link: : https://lore.kernel.org/ahhNq0pFKvSKZQbR@localhost.localdomain
       - Link: https://lore.kernel.org/20260528075507.1821939-1-agordeev@linux.ibm.com
-      - 5ad5eab3f30e "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade" (3/6)
+      - 33d17c48cdbf "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
-      - 2c5643045a75 "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
+      - 9ec091dd9ec6 "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260529172331.356655-6-kas@kernel.org
     - series "mm/sparse-vmemmap: Provide generic vmemmap_set_pmd() and vmemmap_check_pmd()", v3. (5 commits)
-      - 13eb9e229f17 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd()" (0/5)
+      - f9d0a6cc6168 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd()" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260601084845.3792171-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260601084845.3792171-2-songmuchun@bytedance.com
-    - 45bf3ecf90f6 "mm/filemap: use folio_next_index() for start"
+    - d4df3d121cac "mm/filemap: use folio_next_index() for start"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260601110425.44784-1-tanze@kylinos.cn
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (2 commits)
-      - ace649cbcc12 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/2)
+      - 3bddf39925b6 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/2)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - 4be11eb3bfcf "mm/swap: remove redundant swap device reference in alloc/free" (1/2)
+      - bd176bb8d69c "mm/swap: remove redundant swap device reference in alloc/free" (1/2)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
-    - 0f5e32a82170 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+    - 62b2eebe164b "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
+    - 417ceab483a4 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
+    - 9642158f7fb0 "zsmalloc: simplify data output in zs_stats_size_show()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/126a924b-6f68-43bf-ae5a-449fb93e527b@web.de
+    - 0befc662b2b2 "mm/page_alloc: only update NUMA min ratios on sysctl write"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
     - series "khugepaged: add mTHP collapse support", v18. (14 commits)
-      - f1699177054d "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support" (0/14)
+      - 3e75fc3d64e7 "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support" (0/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260522150009.121603-1-npache@redhat.com
         - Link: https://lore.kernel.org/20260522150009.121603-2-npache@redhat.com
         - Link: https://gitlab.com/npache/khugepaged_mthp_test [1]
         - Link: https://lore.kernel.org/lkml/20250515033857.132535-1-npache@redhat.com/ [2]
-      - b16bd30c7f9b "mm/khugepaged: generalize alloc_charge_folio()" (1/14)
+      - 9150f430dd42 "mm/khugepaged: generalize alloc_charge_folio()" (1/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260522150009.121603-3-npache@redhat.com
-      - bae42b3bef93 "mm/khugepaged: rework max_ptes_* handling with helper functions" (2/14)
+      - dd42ba9b8f15 "mm/khugepaged: rework max_ptes_* handling with helper functions" (2/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260522150009.121603-4-npache@redhat.com
-      - b7a74ead7c0d "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support" (3/14)
+      - 33c61d2665fb "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support" (3/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260522150009.121603-5-npache@redhat.com
         - Link: https://lore.kernel.org/all/e46ab3ab-a3d7-4fb7-9970-d0704bd5d05a@arm.com [1]
         - Link: https://lore.kernel.org/all/37375ace-5601-4d6c-9dac-d1c8268698e9@redhat.com [2]
-      - 067b553bf30d "cleanup collapse_max_ptes_none" (4/14)
+      - 32b498edef99 "cleanup collapse_max_ptes_none" (4/14)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/b5fa19c5-4b3e-40b8-8e78-fc31169a7a79@redhat.com
-      - 7740b083baa5 "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped" (5/14)
+      - 68ed2d5a90bf "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped" (5/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260522150009.121603-6-npache@redhat.com
-      - b4d37f8c2a78 "mm/khugepaged: generalize collapse_huge_page for mTHP collapse" (6/14)
+      - 52daa572d519 "mm/khugepaged: generalize collapse_huge_page for mTHP collapse" (6/14)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260522150009.121603-7-npache@redhat.com
-      - f7213b033a8a "add a clarifying comment and change warn_on" (7/14)
+      - 0ff24c3cc26b "add a clarifying comment and change warn_on" (7/14)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/a48032dd-7881-43c0-b439-5cda6124ea58@redhat.com
-      - 0786d7e43d14 "mm-khugepaged-generalize-collapse_huge_page-for-mthp-collapse-fix-2" (8/14)
+      - f6b4d8899fee "mm-khugepaged-generalize-collapse_huge_page-for-mthp-collapse-fix-2" (8/14)
         - Authored by a maintainer, reviewed by nobody
-      - 0493a92f2d82 "mm/khugepaged: skip collapsing mTHP to smaller orders" (9/14)
+      - bc33fc69d8d3 "mm/khugepaged: skip collapsing mTHP to smaller orders" (9/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260522150009.121603-8-npache@redhat.com
         - Link: https://lore.kernel.org/lkml/20241216165105.56185-11-dev.jain@arm.com/ [1]
-      - 7b404c45f12d "mm/khugepaged: add per-order mTHP collapse failure statistics" (10/14)
+      - 040311b83f64 "mm/khugepaged: add per-order mTHP collapse failure statistics" (10/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com
-      - 0aeaf984533f "mm/khugepaged: improve tracepoints for mTHP orders" (11/14)
+      - 5ad0858e6697 "mm/khugepaged: improve tracepoints for mTHP orders" (11/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260522150009.121603-10-npache@redhat.com
-      - e6e3e4a101ef "mm/khugepaged: introduce collapse_allowable_orders helper function" (12/14)
+      - 48b17d22ea72 "mm/khugepaged: introduce collapse_allowable_orders helper function" (12/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260522150009.121603-11-npache@redhat.com
-      - ae5de4613472 "mm/khugepaged: introduce mTHP collapse support" (13/14)
+      - e2cc22d66838 "mm/khugepaged: introduce mTHP collapse support" (13/14)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260522150009.121603-12-npache@redhat.com
-    - fe7451e5c445 "fix potential use-after-free of vma in mthp_collapse()"
+    - c7e5bbcc42a3 "fix potential use-after-free of vma in mthp_collapse()"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/2b2cda8c-358a-4a5c-989c-ae42593ef2ea@redhat.com
-    - 44124f28c625 "mm/khugepaged: avoid unnecessary mTHP collapse attempts"
+    - c646837d9c00 "mm/khugepaged: avoid unnecessary mTHP collapse attempts"
       - Authored by a reviewer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260522150009.121603-13-npache@redhat.com
-    - 2137ed5c2fcc "mm/khugepaged: run khugepaged for all orders"
+    - 73d89ce9e82a "mm/khugepaged: run khugepaged for all orders"
       - Authored by a reviewer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260522150009.121603-14-npache@redhat.com
     - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14 commits)
-      - 0066cbf8bf61 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
+      - 52abc2c2a250 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
         - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
-      - ada4b174d487 "mm/khugepaged: add folio dirty check after try_to_unmap()" (1/14)
+      - 2647412bd7cd "mm/khugepaged: add folio dirty check after try_to_unmap()" (1/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-3-ziy@nvidia.com
-      - 8cd9ee32c35f "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled()" (2/14)
+      - 8f28fd6aed19 "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled()" (2/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-4-ziy@nvidia.com
-      - 8492d1b2ecd7 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled()" (3/14)
+      - e70faf4986cb "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled()" (3/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-5-ziy@nvidia.com
-      - ff72e313fcaf "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
+      - 6aa6c3d3cca4 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com
-      - 03ffc4be7501 "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
+      - 2032b30b6c03 "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
-      - 57ec4cd06020 "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS" (7/14)
+      - 768169d0bcf2 "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS" (7/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-9-ziy@nvidia.com
-      - 84f69cb8c472 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
+      - 0666a423610c "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
-      - 9a600e04e94e "mm/khugepaged: enable clean pagecache folio collapse for writable files" (12/14)
+      - b865264bd1fb "mm/khugepaged: enable clean pagecache folio collapse for writable files" (12/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-14-ziy@nvidia.com
-    - 494a639aa673 "mm/khugepaged: avoid underflow in madvise_collapse for sub-PMD MADV_COLLAPSE"
+    - e6ef6fec8c81 "mm/khugepaged: avoid underflow in madvise_collapse for sub-PMD MADV_COLLAPSE"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260513055428.1664898-1-chenwandun@lixiang.com
-    - acbc683ed3c5 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
-    - cc00fb98052e "zsmalloc: simplify data output in zs_stats_size_show()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/126a924b-6f68-43bf-ae5a-449fb93e527b@web.de
-    - 2a819f966464 "mm/page_alloc: only update NUMA min ratios on sysctl write"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
 - mm-new: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 890153ef07a1 "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
+    - 6fcbbf228f5a "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
-    - c82b75cab108 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - cb9c3b8f1467 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
-    - 1b44fc526761 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - 02481b693306 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 2 total, 0 (0) series, 2 non-series commits

@@ -10,34 +10,16 @@
     - no role, reviewer: 14 -> 14 commits (no change)
     - reviewer, no role : 5 -> 5 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 4 -> 5 commits
+- mm-unstable: 5 -> 5 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 2 commits
+    - no role, nobody: 2 -> 1 commits
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - new commits
-    - 0f5e32a82170 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
-    - 2a819f966464 "mm/page_alloc: only update NUMA min ratios on sysctl write"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - acbc683ed3c5 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev"
-      - dropped "Link: https://lore.kernel.org/20260506022256.32664-1-hao.ge@linux.dev"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Brendan Jackman <jackmanb@google.com>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Acked-by: Suren Baghdasaryan <surenb@google.com>"
+    - 417ceab483a4 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Suren Baghdasaryan <surenb@google.com>"
       - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
-  - dropped commits
-    - a48e5e3c4cbf "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260519200851.141955-1-jp.kobryn@linux.dev
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

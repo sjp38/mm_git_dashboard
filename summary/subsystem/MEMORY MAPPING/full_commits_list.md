@@ -43,19 +43,19 @@
     - no role, maintainer: 3 commits
   - full commits list
     - series "userfaultfd/pagemap: pre-existing fixes". (6 commits)
-      - ce3578875b74 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race" (0/6)
+      - b2484ddc0d24 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race" (0/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260529172331.356655-1-kas@kernel.org
         - Link: https://lore.kernel.org/20260529172331.356655-2-kas@kernel.org
         - Link: https://lore.kernel.org/all/20260526130509.2748441-1-kirill@shutemov.name/ [1]
-      - 05c6c98130c5 "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry()" (1/6)
+      - 57bd826ac0c3 "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry()" (1/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260529172331.356655-3-kas@kernel.org
-      - 2c6618e62891 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole()" (2/6)
+      - a86907b79ae9 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole()" (2/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260529172331.356655-4-kas@kernel.org
     - series "mm/hmm: A fix and a selftest", v3. (2 commits)
-      - 5e58348990bb "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry" (0/2)
+      - 32326a5516ec "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260604055308.1947679-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260604055308.1947679-2-dev.jain@arm.com
