@@ -7,13 +7,8 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 2 -> 3 commits
-  - changed commits
-    - 417ceab483a4 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Suren Baghdasaryan <surenb@google.com>"
-      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
+    - no role, maintainer: 3 -> 1 commits
+    - reviewer, maintainer: 0 -> 2 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

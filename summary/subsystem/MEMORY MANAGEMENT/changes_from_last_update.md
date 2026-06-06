@@ -22,28 +22,139 @@
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 53 -> 53 commits (no change)
-  - series: 6 (39) -> 6 (39) (no change)
-    - no role, nobody: 3 -> 2 commits
+- mm-unstable: 53 -> 49 commits
+  - series: 6 (39) -> 6 (38)
+    - no role, nobody: 2 -> 1 commits
     - no role, no role : 15 -> 15 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 4 commits
-    - reviewer, nobody: 2 -> 2 commits (no change)
-    - reviewer, no role : 5 -> 5 commits (no change)
-    - reviewer, reviewer: 10 -> 10 commits (no change)
-    - reviewer, maintainer: 11 -> 11 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - reviewer, nobody: 2 -> 0 commits
+    - reviewer, no role : 5 -> 2 commits
+    - reviewer, reviewer: 10 -> 9 commits
+    - reviewer, maintainer: 11 -> 15 commits
+    - maintainer, nobody: 1 -> 0 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - series "khugepaged: add mTHP collapse support", v19. (14)
+      - 977a9c463094 "mm/khugepaged: introduce collapse_possible_orders helper functions (9/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260605161422.213817-11-npache@redhat.com
+      - 5445d2d4bf8c "mm/khugepaged: Introduce mTHP collapse support (10/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260605161422.213817-12-npache@redhat.com
   - changed commits
-    - 417ceab483a4 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+    - 25090b25da70 "zsmalloc: simplify data output in zs_stats_size_show()"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Suren Baghdasaryan <surenb@google.com>"
-      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
-- mm-new: 3 -> 3 commits (no change)
+      - added "Reviewed-by: Sergey Senozhatsky <senozhatsky@chromium.org>"
+      - dropped "Cc: Sergey Senozhatsky <senozhatsky@chromium.org>"
+      - Link: https://lore.kernel.org/126a924b-6f68-43bf-ae5a-449fb93e527b@web.de
+    - series "khugepaged: add mTHP collapse support", v19. (14)
+      - df28389ca2bf "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support (0/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260605161422.213817-2-npache@redhat.com"
+        - added "Link: https://lore.kernel.org/20260605161422.213817-1-npache@redhat.com"
+        - dropped "Link: https://lore.kernel.org/20260522150009.121603-1-npache@redhat.com"
+        - dropped "Link: https://lore.kernel.org/20260522150009.121603-2-npache@redhat.com"
+        - Link: https://lore.kernel.org/20260605161422.213817-1-npache@redhat.com
+        - Link: https://lore.kernel.org/20260605161422.213817-2-npache@redhat.com
+        - Link: https://gitlab.com/npache/khugepaged_mthp_test [1]
+        - Link: https://lore.kernel.org/lkml/20250515033857.132535-1-npache@redhat.com/ [2]
+      - a85880cc156d "mm/khugepaged: generalize alloc_charge_folio() (1/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260605161422.213817-3-npache@redhat.com"
+        - dropped "Link: https://lore.kernel.org/20260522150009.121603-3-npache@redhat.com"
+        - Link: https://lore.kernel.org/20260605161422.213817-3-npache@redhat.com
+      - 4a00d5ae7fd6 "mm/khugepaged: rework max_ptes_* handling with helper functions (2/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260605161422.213817-4-npache@redhat.com"
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Link: https://lore.kernel.org/20260522150009.121603-4-npache@redhat.com"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260605161422.213817-4-npache@redhat.com
+      - f52fd465b68b "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support (3/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260605161422.213817-5-npache@redhat.com"
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Link: https://lore.kernel.org/20260522150009.121603-5-npache@redhat.com"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260605161422.213817-5-npache@redhat.com
+        - Link: https://lore.kernel.org/all/e46ab3ab-a3d7-4fb7-9970-d0704bd5d05a@arm.com [1]
+        - Link: https://lore.kernel.org/all/37375ace-5601-4d6c-9dac-d1c8268698e9@redhat.com [2]
+      - 9a9acc2f99a1 "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped (4/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260605161422.213817-6-npache@redhat.com"
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Link: https://lore.kernel.org/20260522150009.121603-6-npache@redhat.com"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260605161422.213817-6-npache@redhat.com
+      - d3e715d9646a "mm/khugepaged: generalize collapse_huge_page for mTHP collapse (5/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260605161422.213817-7-npache@redhat.com"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260522150009.121603-7-npache@redhat.com"
+        - dropped "Acked-by: Usama Arif <usama.arif@linux.dev>"
+        - dropped "Acked-by: David Hildenbrand (arm) <david@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260605161422.213817-7-npache@redhat.com
+      - 0ae5dedb2306 "mm/khugepaged: skip collapsing mTHP to smaller orders (6/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260605161422.213817-8-npache@redhat.com"
+        - dropped "Link: https://lore.kernel.org/20260522150009.121603-8-npache@redhat.com"
+        - Link: https://lore.kernel.org/20260605161422.213817-8-npache@redhat.com
+        - Link: https://lore.kernel.org/lkml/20241216165105.56185-11-dev.jain@arm.com/ [1]
+      - f8cf02a50543 "mm/khugepaged: add per-order mTHP collapse failure statistics (7/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260605161422.213817-9-npache@redhat.com"
+        - dropped "Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com"
+        - Link: https://lore.kernel.org/20260605161422.213817-9-npache@redhat.com
+      - 26f9286286b2 "mm/khugepaged: improve tracepoints for mTHP orders (8/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260605161422.213817-10-npache@redhat.com"
+        - dropped "Link: https://lore.kernel.org/20260522150009.121603-10-npache@redhat.com"
+        - Link: https://lore.kernel.org/20260605161422.213817-10-npache@redhat.com
+      - 94153fddb391 "mm/khugepaged: avoid unnecessary mTHP collapse attempts (11/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260605161422.213817-13-npache@redhat.com"
+        - dropped "Link: https://lore.kernel.org/20260522150009.121603-13-npache@redhat.com"
+        - Link: https://lore.kernel.org/20260605161422.213817-13-npache@redhat.com
+      - 02c256a02b61 "mm/khugepaged: run khugepaged for all orders (12/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260605161422.213817-14-npache@redhat.com"
+        - dropped "Link: https://lore.kernel.org/20260522150009.121603-14-npache@redhat.com"
+        - Link: https://lore.kernel.org/20260605161422.213817-14-npache@redhat.com
+  - dropped commits
+    - series "khugepaged: add mTHP collapse support", v18. (14)
+      - 32b498edef99 "cleanup collapse_max_ptes_none (4/14)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/b5fa19c5-4b3e-40b8-8e78-fc31169a7a79@redhat.com
+      - 0ff24c3cc26b "add a clarifying comment and change warn_on (7/14)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/a48032dd-7881-43c0-b439-5cda6124ea58@redhat.com
+      - f6b4d8899fee "mm-khugepaged-generalize-collapse_huge_page-for-mthp-collapse-fix-2 (8/14)"
+        - Authored by a maintainer, reviewed by nobody
+      - 48b17d22ea72 "mm/khugepaged: introduce collapse_allowable_orders helper function (12/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260522150009.121603-11-npache@redhat.com
+      - e2cc22d66838 "mm/khugepaged: introduce mTHP collapse support (13/14)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260522150009.121603-12-npache@redhat.com
+    - c7e5bbcc42a3 "fix potential use-after-free of vma in mthp_collapse()"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/2b2cda8c-358a-4a5c-989c-ae42593ef2ea@redhat.com
+- mm-new: 3 -> 4 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 81a2720de2da "mm/damon/core: always put unsuccessfully committed target pids"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260605013849.83750-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260603112306.58490-1-akinobu.mita@gmail.com [1]
+      - Link: https://lore.kernel.org/20260320020056.835-1-sj@kernel.org [2]
 - mm-nonmm-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)

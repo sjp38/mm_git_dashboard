@@ -37,7 +37,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - b74fdd3027d1 "vmalloc: fix NULL pointer dereference in is_vm_area_hugepages()"
+    - 7e30e5cae8ab "vmalloc: fix NULL pointer dereference in is_vm_area_hugepages()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260529014130.671291-1-hui.zhu@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

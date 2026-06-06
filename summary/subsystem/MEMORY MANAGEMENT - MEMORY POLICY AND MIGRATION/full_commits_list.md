@@ -22,7 +22,7 @@
   - author/reviewer role stat
     - reviewer, no role : 1 commits
   - full commits list
-    - e8ed62830aa5 "mm/nodemask: correctly describe nodemask operation return types"
+    - 4f30654aa490 "mm/nodemask: correctly describe nodemask operation return types"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260529202755.1846800-1-joshua.hahnjy@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
