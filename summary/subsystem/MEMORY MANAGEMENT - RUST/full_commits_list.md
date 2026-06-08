@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - c7a2b29206e5 "rust: page: mark Page::nid as inline"
+    - d142f7395e68 "rust: page: mark Page::nid as inline"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://github.com/Rust-for-Linux/linux/issues/1145
       - Link: https://lore.kernel.org/20260529085316.27432-1-nakamura.shuta@gmail.com

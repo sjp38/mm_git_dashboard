@@ -7,8 +7,8 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 3 -> 1 commits
-    - reviewer, maintainer: 0 -> 2 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

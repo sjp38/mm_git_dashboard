@@ -34,10 +34,10 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-      - 0bedd160ff31 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
+      - 1ebbe3c9ad0a "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - 5bde2fb7aaae "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
+      - 2c8861f609bf "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

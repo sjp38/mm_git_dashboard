@@ -2,13 +2,9 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 3a586252b434 "mm/memory-failure: trace: change memory_failure_event to ras subsystem"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260605081213.154660-1-xieyuanbin1@huawei.com
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 4 -> 4 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 4 -> 4 commits (no change)

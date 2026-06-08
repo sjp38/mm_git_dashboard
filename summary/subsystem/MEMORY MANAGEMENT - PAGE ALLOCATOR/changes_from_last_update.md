@@ -14,8 +14,7 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, maintainer: 0 -> 1 commits
+    - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

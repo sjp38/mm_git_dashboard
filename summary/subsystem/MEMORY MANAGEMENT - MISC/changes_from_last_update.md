@@ -2,8 +2,13 @@
 - mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 5de2b26bbd65 "selftests/mm: fix ksft_process_madv.sh test category"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260608103224.344101-1-sarthak.sharma@arm.com
 - mm-stable: 33 -> 33 commits (no change)
   - series: 2 (23) -> 2 (23) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
@@ -11,49 +16,28 @@
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, nobody: 14 -> 14 commits (no change)
-- mm-unstable: 79 -> 78 commits
-  - series: 2 (74) -> 2 (75)
-    - no role, nobody: 39 -> 38 commits
+- mm-unstable: 78 -> 78 commits (no change)
+  - series: 2 (75) -> 2 (75) (no change)
+    - no role, nobody: 38 -> 38 commits (no change)
     - no role, no role : 30 -> 30 commits (no change)
-    - no role, reviewer: 3 -> 4 commits
-    - reviewer, nobody: 4 -> 3 commits
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - reviewer, nobody: 3 -> 3 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
   - changed commits
-    - series "mm/hmm: A fix and a selftest", v3. (2)
-      - 6fb99eade236 "selftests/mm/hmm-tests: test pagemap reads of PMD device-private entries (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260604055308.1947679-3-dev.jain@arm.com
     - series "khugepaged: add mTHP collapse support", v19. (14)
-      - a85880cc156d "mm/khugepaged: generalize alloc_charge_folio() (1/14)"
+      - 17ebf20b3291 "mm/khugepaged: add per-order mTHP collapse failure statistics (7/14)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260605161422.213817-3-npache@redhat.com"
-        - dropped "Link: https://lore.kernel.org/20260522150009.121603-3-npache@redhat.com"
-        - Link: https://lore.kernel.org/20260605161422.213817-3-npache@redhat.com
-      - f8cf02a50543 "mm/khugepaged: add per-order mTHP collapse failure statistics (7/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260605161422.213817-9-npache@redhat.com"
-        - dropped "Link: https://lore.kernel.org/20260522150009.121603-9-npache@redhat.com"
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20260605161422.213817-9-npache@redhat.com
-      - 57ae6f8a56d0 "Documentation: mm: update the admin guide for mTHP collapse (13/14)"
+      - 0cbac1d256de "Documentation: mm: update the admin guide for mTHP collapse (13/14)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260605161422.213817-15-npache@redhat.com"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260522150009.121603-15-npache@redhat.com"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20260605161422.213817-15-npache@redhat.com
-  - dropped commits
-    - 125ebafc4bb7 "add back note and edit doc about khugepaged limits"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/b457f6e9-ae12-4e1f-8484-f3043ca62276@redhat.com
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - 011f09a11f43 "mm/page_frag: reject invalid CPUs in page_frag_test"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260605184157.2490353-1-sam.moelius@trailofbits.com
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

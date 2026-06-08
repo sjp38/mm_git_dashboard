@@ -23,7 +23,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 295c94f79942 "zram: drop unused bio parameter from write helpers"
+    - cc1c6b70bd3f "zram: drop unused bio parameter from write helpers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260528-zram-v3-2-cab86eef8764@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

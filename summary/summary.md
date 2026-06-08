@@ -8,10 +8,10 @@
     - maintainer, nobody: 3 commits
     - maintainer, no role : 1 commits
     - maintainer, reviewer: 1 commits
-- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
+- mm-hotfixes-unstable: 4 total, 0 (0) series, 4 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, no role : 1 commits
+    - no role, no role : 2 commits
 - mm-stable: 281 total, 39 (201) series, 80 non-series commits
   - author/reviewer role stat
     - no role, nobody: 14 commits

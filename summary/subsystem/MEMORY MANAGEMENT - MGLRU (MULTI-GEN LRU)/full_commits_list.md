@@ -104,15 +104,15 @@
     - no role, reviewer: 1 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-      - de5a3f0781ee "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 68f2d20ce9de "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
         - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - c2cf36b7b1d6 "mm: delete stale comment about cachelines"
+    - 3c08a2217f98 "mm: delete stale comment about cachelines"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
-    - 547fed955b1a "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+    - 74c71969460f "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

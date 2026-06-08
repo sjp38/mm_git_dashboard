@@ -45,25 +45,25 @@
     - reviewer, maintainer: 1 commits
   - full commits list
     - series "mm: improve large folio readahead for exec memory", v7. (2 commits)
-      - 803fb96ad988 "mm: bypass mmap_miss heuristic for VM_EXEC readahead" (0/2)
+      - 46869a1b15b8 "mm: bypass mmap_miss heuristic for VM_EXEC readahead" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev
-      - 6e3d34c55ab2 "mm: use mapping_max_folio_order() for force_thp_readahead order" (1/2)
+      - a6a70ff8d952 "mm: use mapping_max_folio_order() for force_thp_readahead order" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev
-    - 6f2aa230b12f "mm/filemap: use folio_next_index() for start"
+    - 2f944cea8b02 "mm/filemap: use folio_next_index() for start"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260601110425.44784-1-tanze@kylinos.cn
     - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14 commits)
-      - 9237e5016c3d "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
+      - 648a3b1ab7c2 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
         - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
-      - 90747964d8d8 "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
+      - a6d35337a87e "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
-      - 40fa72f95b9c "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
+      - d0022e0c26d4 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

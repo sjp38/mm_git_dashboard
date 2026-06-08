@@ -61,7 +61,7 @@
   - author/reviewer role stat
     - maintainer, maintainer: 1 commits
   - full commits list
-      - de5a3f0781ee "mm: switch deferred split shrinker to list_lru" (8/9)
+      - 68f2d20ce9de "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
         - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org

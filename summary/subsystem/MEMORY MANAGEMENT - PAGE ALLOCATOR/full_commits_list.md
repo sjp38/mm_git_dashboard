@@ -95,26 +95,26 @@
     - no role, no role : 3 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-    - 16133b2d6258 "mm/compaction: respect cpusets when checking retry suitability"
+    - 3fce04eb8f06 "mm/compaction: respect cpusets when checking retry suitability"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_F59F2BA2CC5779308E10DF54593C736D3E0A@qq.com
-    - 9099ce760675 "mm/page_alloc: fix deferred compaction accounting"
+    - 523ab96ed904 "mm/page_alloc: fix deferred compaction accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_368AF1F3821E46232637BE16D65C45CF3308@qq.com
-    - 547fed955b1a "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+    - 74c71969460f "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
-    - 2f91bbf3e4cf "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+    - 9605cd7a3c21 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
       - Authored by a reviewer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
-    - 7c5984e342ba "mm/page_alloc: only update NUMA min ratios on sysctl write"
+    - 7d2f475d5f3f "mm/page_alloc: only update NUMA min ratios on sysctl write"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 88bf7fa8f9cb "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
+    - 14caaf747d0b "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
