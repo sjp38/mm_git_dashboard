@@ -7,14 +7,14 @@
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260521223751.3794625-1-shakeel.butt@linux.dev
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 12 total, 2 (11) series, 1 non-series commits
+- mm-stable: 13 total, 2 (12) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
     - no role, maintainer: 1 commits
     - reviewer, maintainer: 2 commits
     - maintainer, no role : 1 commits
     - maintainer, reviewer: 3 commits
-    - maintainer, maintainer: 2 commits
+    - maintainer, maintainer: 3 commits
   - full commits list
       - 6e9f5c2eecd1 "selftests/cgroup: rename PAGE_SIZE to BUF_SIZE in cgroup_util" (3/8)
         - Authored by no role player, reviewed by no role player
@@ -57,15 +57,12 @@
       - 29a1ea41456b "memcg: multi objcg charge support" (3/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260526033931.1760588-5-shakeel.butt@linux.dev
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - maintainer, maintainer: 1 commits
-  - full commits list
-      - 68f2d20ce9de "mm: switch deferred split shrinker to list_lru" (8/9)
+      - fafaeceb89a5 "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
         - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

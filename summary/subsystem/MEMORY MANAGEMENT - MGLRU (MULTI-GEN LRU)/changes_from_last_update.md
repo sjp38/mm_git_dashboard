@@ -3,19 +3,36 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 23 -> 23 commits (no change)
-  - series: 2 (18) -> 2 (18) (no change)
+- mm-stable: 23 -> 26 commits
+  - series: 2 (18) -> 2 (19)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, no role : 1 -> 2 commits
+    - no role, reviewer: 4 -> 5 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 14 -> 14 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 3 -> 3 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - fafaeceb89a5 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+    - cdea4acce026 "mm: delete stale comment about cachelines"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
+    - 32a2b73ec232 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
+- mm-unstable: 3 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

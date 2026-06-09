@@ -15,10 +15,11 @@
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527184751.4147364-4-rppt@kernel.org
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 2 total, 1 (2) series, 0 non-series commits
+- mm-stable: 4 total, 1 (4) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 1 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 1 commits
   - full commits list
     - series "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c", v3. (2 commits)
       - 7bc5e747bba2 "userfaultfd: merge fs/userfaultfd.c into mm/userfaultfd.c" (0/2)
@@ -28,17 +29,13 @@
       - b182633f8ce5 "userfaultfd: make functions that are not used outside uffd static" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260523173759.3964908-3-rppt@kernel.org
-- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
-  - full commits list
-      - 2285a9ad4eb4 "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
+      - 8e80af52db65 "userfaultfd: gate must_wait writability check on pte_present()" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260529172331.356655-6-kas@kernel.org
-      - 6712c3087b7c "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
+      - cc7a9f6e57c4 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

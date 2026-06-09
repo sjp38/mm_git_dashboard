@@ -14,12 +14,14 @@
       - Authored by a maintainer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260601083044.57132-1-ljs@kernel.org
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 12 total, 1 (4) series, 8 non-series commits
+- mm-stable: 15 total, 1 (6) series, 9 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, no role : 2 commits
     - no role, reviewer: 6 commits
     - no role, maintainer: 4 commits
+    - reviewer, no role : 1 commits
     - reviewer, maintainer: 1 commits
+    - maintainer, maintainer: 1 commits
   - full commits list
     - 085a7acf732f "mm/huge_memory: fix outdated comment about freeing subpages in __folio_split"
       - Authored by no role player, reviewed by a reviewer
@@ -60,131 +62,128 @@
     - df0d6a6d4b33 "selftests/mm/split_huge_page_test.c: close fd on write error"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260520020336.28914-1-richard.weiyang@gmail.com
-- mm-unstable: 35 total, 2 (33) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 4 commits
-    - no role, no role : 1 commits
-    - no role, reviewer: 2 commits
-    - no role, maintainer: 1 commits
-    - reviewer, nobody: 3 commits
-    - reviewer, no role : 1 commits
-    - reviewer, reviewer: 10 commits
-    - reviewer, maintainer: 12 commits
-    - maintainer, maintainer: 1 commits
-  - full commits list
-      - 68f2d20ce9de "mm: switch deferred split shrinker to list_lru" (8/9)
+      - fafaeceb89a5 "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
         - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - d83fb912eac8 "mm/thp: clear deferred split shrinker bits when queues drain"
+    - 25fcea213022 "mm/thp: clear deferred split shrinker bits when queues drain"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260602043453.67597-1-lance.yang@linux.dev
-      - b2c6ae7ba370 "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade" (3/6)
+      - f7e2c21bd1f5 "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
+- mm-unstable: 32 total, 2 (31) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 4 commits
+    - no role, reviewer: 2 commits
+    - no role, maintainer: 1 commits
+    - reviewer, nobody: 3 commits
+    - reviewer, reviewer: 10 commits
+    - reviewer, maintainer: 12 commits
+  - full commits list
     - series "khugepaged: add mTHP collapse support", v19. (14 commits)
-      - d60242983ab3 "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support" (0/14)
+      - a2c4fa983120 "mm/khugepaged: generalize hugepage_vma_revalidate for mTHP support" (0/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260605161422.213817-1-npache@redhat.com
         - Link: https://lore.kernel.org/20260605161422.213817-2-npache@redhat.com
         - Link: https://gitlab.com/npache/khugepaged_mthp_test [1]
         - Link: https://lore.kernel.org/lkml/20250515033857.132535-1-npache@redhat.com/ [2]
-      - de764e1f2580 "mm/khugepaged: generalize alloc_charge_folio()" (1/14)
+      - 69459907ab17 "mm/khugepaged: generalize alloc_charge_folio()" (1/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260605161422.213817-3-npache@redhat.com
-      - 11abe9c9e229 "mm/khugepaged: rework max_ptes_* handling with helper functions" (2/14)
+      - 510d00140c8d "mm/khugepaged: rework max_ptes_* handling with helper functions" (2/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260605161422.213817-4-npache@redhat.com
-      - 9e57de76d0e8 "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support" (3/14)
+      - e4f3417a67a8 "mm/khugepaged: generalize __collapse_huge_page_* for mTHP support" (3/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260605161422.213817-5-npache@redhat.com
         - Link: https://lore.kernel.org/all/e46ab3ab-a3d7-4fb7-9970-d0704bd5d05a@arm.com [1]
         - Link: https://lore.kernel.org/all/37375ace-5601-4d6c-9dac-d1c8268698e9@redhat.com [2]
-      - 6ae1aa7fb159 "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped" (4/14)
+      - 69972fd5944b "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped" (4/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260605161422.213817-6-npache@redhat.com
-      - 4a1acab2d9bf "mm/khugepaged: generalize collapse_huge_page for mTHP collapse" (5/14)
+      - 600ef3d4d298 "mm/khugepaged: generalize collapse_huge_page for mTHP collapse" (5/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260605161422.213817-7-npache@redhat.com
-      - ea2d47a977f2 "mm/khugepaged: skip collapsing mTHP to smaller orders" (6/14)
+      - 7688c0f13456 "mm/khugepaged: skip collapsing mTHP to smaller orders" (6/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260605161422.213817-8-npache@redhat.com
         - Link: https://lore.kernel.org/lkml/20241216165105.56185-11-dev.jain@arm.com/ [1]
-      - 17ebf20b3291 "mm/khugepaged: add per-order mTHP collapse failure statistics" (7/14)
+      - 2e82fe9c57b8 "mm/khugepaged: add per-order mTHP collapse failure statistics" (7/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260605161422.213817-9-npache@redhat.com
-      - 2217b4916458 "mm/khugepaged: improve tracepoints for mTHP orders" (8/14)
+      - a8dd6e724380 "mm/khugepaged: improve tracepoints for mTHP orders" (8/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260605161422.213817-10-npache@redhat.com
-      - 406ad76aea49 "mm/khugepaged: introduce collapse_possible_orders helper functions" (9/14)
+      - 18342914da7f "mm/khugepaged: introduce collapse_possible_orders helper functions" (9/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260605161422.213817-11-npache@redhat.com
-      - 0afdcfee51e9 "mm/khugepaged: introduce mTHP collapse support" (10/14)
+      - 54e7532ab478 "mm/khugepaged: introduce mTHP collapse support" (10/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260605161422.213817-12-npache@redhat.com
-      - 8eaf5a7818ea "mm/khugepaged: avoid unnecessary mTHP collapse attempts" (11/14)
+      - acc93febe081 "mm/khugepaged: avoid unnecessary mTHP collapse attempts" (11/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260605161422.213817-13-npache@redhat.com
-      - f7df43efafae "mm/khugepaged: run khugepaged for all orders" (12/14)
+      - d2b1c9713427 "mm/khugepaged: run khugepaged for all orders" (12/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260605161422.213817-14-npache@redhat.com
-      - 0cbac1d256de "Documentation: mm: update the admin guide for mTHP collapse" (13/14)
+      - e1c16aa060b5 "Documentation: mm: update the admin guide for mTHP collapse" (13/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260605161422.213817-15-npache@redhat.com
     - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14 commits)
-      - 648a3b1ab7c2 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
+      - f9c246808a76 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
         - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
-      - 8bfed6062098 "mm/khugepaged: add folio dirty check after try_to_unmap()" (1/14)
+      - 486e0f95b318 "mm/khugepaged: add folio dirty check after try_to_unmap()" (1/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-3-ziy@nvidia.com
-      - c955b5f4e52b "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled()" (2/14)
+      - 0e050e3442e9 "mm/huge_memory: remove READ_ONLY_THP_FOR_FS from file_thp_enabled()" (2/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-4-ziy@nvidia.com
-      - a8fdf9371d1a "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled()" (3/14)
+      - faaab77a7d93 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check in hugepage_enabled()" (3/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-5-ziy@nvidia.com
-      - a6d35337a87e "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
+      - 42b97aad110a "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
-      - f4743a5b2376 "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS" (7/14)
+      - f3d8e5ba5e03 "mm/huge_memory: remove folio split check for READ_ONLY_THP_FOR_FS" (7/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-9-ziy@nvidia.com
-      - d0022e0c26d4 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
+      - 1bc3e26788c4 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
-      - 3ee3bfb9dec4 "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged" (10/14)
+      - 4ff5c2929a83 "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged" (10/14)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260517135416.1434539-12-ziy@nvidia.com
-      - 9b4e0ed6144c "mm/khugepaged: enable clean pagecache folio collapse for writable files" (12/14)
+      - 852fcaadea5e "mm/khugepaged: enable clean pagecache folio collapse for writable files" (12/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-14-ziy@nvidia.com
-      - 8c8392b49772 "selftests/mm: add writable-file collapse tests for khugepaged" (13/14)
+      - a60e4550aa01 "selftests/mm: add writable-file collapse tests for khugepaged" (13/14)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260517135416.1434539-15-ziy@nvidia.com
-      - 9f0e2813d0af "selftests/mm: khugepaged: group tests in an array" (12/55)
+      - 69300bad0efe "selftests/mm: khugepaged: group tests in an array" (12/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-14-rppt@kernel.org
-      - f26ff9c8a803 "selftests/mm: khugepaged: use kselftest framework" (13/55)
+      - 9779d98fb71f "selftests/mm: khugepaged: use kselftest framework" (13/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-15-rppt@kernel.org
-      - 2a3933d85024 "selftests-mm-khugepaged-use-ksefltest-framework-fix" (14/55)
+      - 60eacbc457ac "selftests-mm-khugepaged-use-ksefltest-framework-fix" (14/55)
         - Authored by a reviewer, reviewed by nobody
-      - b2b1a2c9b9e3 "selftests/mm: add atexit() and signal handlers to thp_settings" (22/55)
+      - 8accdf877655 "selftests/mm: add atexit() and signal handlers to thp_settings" (22/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-23-rppt@kernel.org
-      - d629645dc106 "selftests/mm: rename thp_settings.[ch] to hugepage_settings.[ch]" (23/55)
+      - f8e3b659f846 "selftests/mm: rename thp_settings.[ch] to hugepage_settings.[ch]" (23/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-24-rppt@kernel.org
-    - d404f0ec9d07 "mm/khugepaged: avoid underflow in madvise_collapse for sub-PMD MADV_COLLAPSE"
+    - 5528f2008be8 "mm/khugepaged: avoid underflow in madvise_collapse for sub-PMD MADV_COLLAPSE"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260513055428.1664898-1-chenwandun@lixiang.com
-      - 2606574fe1c6 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (5/13)
+      - db9d3f93eeaf "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (5/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/33e1bc10753fe82d1217613d8cd496020778cf2b.1779296493.git.sayalip@linux.ibm.com
-      - d184f7277cd8 "selftests/mm: free dynamically allocated PMD-sized buffers in split_huge_page_test" (6/13)
+      - 798d8b244e9a "selftests/mm: free dynamically allocated PMD-sized buffers in split_huge_page_test" (6/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/060c673b376bbeeed2b1fb1d48a825e846654191.1779296493.git.sayalip@linux.ibm.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

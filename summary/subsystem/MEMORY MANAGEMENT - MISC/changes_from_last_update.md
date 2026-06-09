@@ -2,39 +2,29 @@
 - mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 5de2b26bbd65 "selftests/mm: fix ksft_process_madv.sh test category"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260608103224.344101-1-sarthak.sharma@arm.com
-- mm-stable: 33 -> 33 commits (no change)
-  - series: 2 (23) -> 2 (23) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-stable: 33 -> 34 commits
+  - series: 2 (23) -> 2 (24)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 8 -> 8 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, reviewer: 4 -> 5 commits
     - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, nobody: 14 -> 14 commits (no change)
-- mm-unstable: 78 -> 78 commits (no change)
-  - series: 2 (75) -> 2 (75) (no change)
+  - changed commits
+    - series "mm/hmm: A fix and a selftest", v3. (2)
+      - e3d8707358ea "selftests/mm/hmm-tests: test pagemap reads of PMD device-private entries (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260604055308.1947679-3-dev.jain@arm.com
+- mm-unstable: 78 -> 77 commits
+  - series: 2 (75) -> 2 (74)
     - no role, nobody: 38 -> 38 commits (no change)
     - no role, no role : 30 -> 30 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, reviewer: 4 -> 3 commits
     - reviewer, nobody: 3 -> 3 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "khugepaged: add mTHP collapse support", v19. (14)
-      - 17ebf20b3291 "mm/khugepaged: add per-order mTHP collapse failure statistics (7/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260605161422.213817-9-npache@redhat.com
-      - 0cbac1d256de "Documentation: mm: update the admin guide for mTHP collapse (13/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260605161422.213817-15-npache@redhat.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

@@ -1,9 +1,9 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 7 total, 2 (7) series, 0 non-series commits
+- mm-stable: 8 total, 2 (7) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 6 commits
+    - no role, no role : 7 commits
     - no role, reviewer: 1 commits
   - full commits list
       - 60ced5818f64 "vmalloc: optimize vfree with free_pages_bulk()" (1/3)
@@ -33,13 +33,10 @@
       - 3c3daeafcdb6 "lib/test_vmalloc: add vrealloc test case" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-5-70b96ee3e9c9@zohomail.in
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-    - 7e3ade9e8477 "vmalloc: fix NULL pointer dereference in is_vm_area_hugepages()"
+    - c55dd3b46c12 "vmalloc: fix NULL pointer dereference in is_vm_area_hugepages()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260529014130.671291-1-hui.zhu@linux.dev
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -4,15 +4,38 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 6 -> 6 commits (no change)
-  - series: 3 (5) -> 3 (5) (no change)
+- mm-stable: 6 -> 10 commits
+  - series: 3 (5) -> 5 (9)
+    - no role, nobody: 0 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 5 commits
     - reviewer, no role : 3 -> 3 commits (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 2 (4) -> 2 (4) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+  - changed commits
+    - series "userfaultfd/pagemap: pre-existing fixes". (6)
+      - 04718f7c9290 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race (0/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260529172331.356655-1-kas@kernel.org
+        - Link: https://lore.kernel.org/20260529172331.356655-2-kas@kernel.org
+        - Link: https://lore.kernel.org/all/20260526130509.2748441-1-kirill@shutemov.name/ [1]
+      - 1b074e3270e1 "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260529172331.356655-3-kas@kernel.org
+      - e92d92bbafb2 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole() (2/6)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260529172331.356655-4-kas@kernel.org
+    - series "mm/hmm: A fix and a selftest", v3. (2)
+      - cd1fc0e3c1f6 "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260604055308.1947679-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260604055308.1947679-2-dev.jain@arm.com
+- mm-unstable: 4 -> 0 commits
+  - series: 2 (4) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 3 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

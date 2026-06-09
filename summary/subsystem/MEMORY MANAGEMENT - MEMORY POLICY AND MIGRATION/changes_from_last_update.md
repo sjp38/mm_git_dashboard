@@ -3,13 +3,19 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 4 commits (no change)
+- mm-stable: 4 -> 5 commits
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-- mm-unstable: 1 -> 1 commits (no change)
+    - reviewer, no role : 0 -> 1 commits
+  - changed commits
+    - f5cf8c92a2b9 "mm/nodemask: correctly describe nodemask operation return types"
+      - Authored by a reviewer, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260529202755.1846800-1-joshua.hahnjy@gmail.com
+- mm-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

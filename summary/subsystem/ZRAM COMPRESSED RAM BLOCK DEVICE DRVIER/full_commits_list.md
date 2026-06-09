@@ -7,8 +7,9 @@
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260528-zram-v3-1-cab86eef8764@gmail.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 2 total, 1 (1) series, 1 non-series commits
+- mm-stable: 3 total, 1 (1) series, 2 non-series commits
   - author/reviewer role stat
+    - no role, maintainer: 1 commits
     - maintainer, nobody: 2 commits
   - full commits list
     - 3e8d8eb8d7f5 "zram: do not leak blk idx at the end of writeback"
@@ -19,13 +20,10 @@
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260526022754.2377730-1-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/20260526022754.2377730-3-senozhatsky@chromium.org
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - cc1c6b70bd3f "zram: drop unused bio parameter from write helpers"
+    - d1aba9859847 "zram: drop unused bio parameter from write helpers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260528-zram-v3-2-cab86eef8764@gmail.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

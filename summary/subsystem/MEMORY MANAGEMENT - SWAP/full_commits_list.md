@@ -1,14 +1,14 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 16 total, 1 (11) series, 5 non-series commits
+- mm-stable: 19 total, 2 (14) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 2 commits
-    - reviewer, maintainer: 2 commits
+    - reviewer, maintainer: 4 commits
     - maintainer, nobody: 3 commits
-    - maintainer, maintainer: 7 commits
+    - maintainer, maintainer: 8 commits
   - full commits list
     - d590df11be0f "mm/page_io: rename swap_iocb fields for clarity"
       - Authored by no role player, reviewed by a maintainer
@@ -63,29 +63,25 @@
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260526130938.66253-1-baohua@kernel.org
       - Link: https://lore.kernel.org/linux-mm/20250916072226.220426-1-liulei.rjpt@vivo.com/ [1]
-- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
-  - author/reviewer role stat
-    - reviewer, maintainer: 2 commits
-    - maintainer, maintainer: 1 commits
-  - full commits list
-      - 68f2d20ce9de "mm: switch deferred split shrinker to list_lru" (8/9)
+      - fafaeceb89a5 "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
         - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
     - series "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device", v8. (2 commits)
-      - 6d689770c6c4 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/2)
+      - c13a0316aef5 "mm/swap, PM: hibernate: fix swapoff race in uswsusp by pinning swap device" (0/2)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-1-youngjun.park@lge.com
         - Link: https://lore.kernel.org/20260323160822.1409904-2-youngjun.park@lge.com
-      - 424e3f4aef82 "mm/swap: remove redundant swap device reference in alloc/free" (1/2)
+      - 0d97349679c5 "mm/swap: remove redundant swap device reference in alloc/free" (1/2)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260323160822.1409904-3-youngjun.park@lge.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 6574db9af698 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - 5a7141c42216 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

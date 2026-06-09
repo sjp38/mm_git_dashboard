@@ -1,14 +1,15 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 23 total, 2 (18) series, 5 non-series commits
+- mm-stable: 26 total, 2 (19) series, 7 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 1 commits
-    - no role, reviewer: 4 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 5 commits
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 14 commits
     - reviewer, maintainer: 2 commits
+    - maintainer, maintainer: 1 commits
   - full commits list
     - 4221aadd720b "mm/vmscan: add balance_pgdat begin/end tracepoints"
       - Authored by no role player, reviewed by a reviewer
@@ -98,23 +99,18 @@
       - 39376b9cac1c "mm/vmscan: unify writeback reclaim statistic and throttling" (14/15)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260428-mglru-reclaim-v7-15-02fabb92dc43@tencent.com
-- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
-    - maintainer, maintainer: 1 commits
-  - full commits list
-      - 68f2d20ce9de "mm: switch deferred split shrinker to list_lru" (8/9)
+      - fafaeceb89a5 "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
         - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - 3c08a2217f98 "mm: delete stale comment about cachelines"
+    - cdea4acce026 "mm: delete stale comment about cachelines"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
-    - 74c71969460f "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+    - 32a2b73ec232 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

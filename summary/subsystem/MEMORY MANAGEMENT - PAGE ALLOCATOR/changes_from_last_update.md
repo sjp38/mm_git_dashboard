@@ -3,17 +3,30 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 23 -> 23 commits (no change)
+- mm-stable: 23 -> 26 commits
   - series: 2 (15) -> 2 (15) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 4 commits
     - no role, reviewer: 14 -> 14 commits (no change)
     - reviewer, no role : 5 -> 5 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 5 -> 5 commits (no change)
+  - changed commits
+    - ed384eb3a3e1 "mm/compaction: respect cpusets when checking retry suitability"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/tencent_F59F2BA2CC5779308E10DF54593C736D3E0A@qq.com
+    - 3d4f1a541600 "mm/page_alloc: fix deferred compaction accounting"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/tencent_368AF1F3821E46232637BE16D65C45CF3308@qq.com
+    - 32a2b73ec232 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
+- mm-unstable: 5 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+    - no role, no role : 3 -> 0 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

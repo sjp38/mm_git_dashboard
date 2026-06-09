@@ -3,12 +3,21 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 8 -> 8 commits (no change)
-  - series: 1 (8) -> 1 (8) (no change)
+- mm-stable: 8 -> 9 commits
+  - series: 1 (8) -> 1 (9)
     - no role, no role : 8 -> 8 commits (no change)
-- mm-unstable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - fafaeceb89a5 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+- mm-unstable: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - maintainer, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

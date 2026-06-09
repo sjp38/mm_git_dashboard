@@ -10,10 +10,10 @@
       - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - ad59d63d9392 "mm/memory-failure: trace: change memory_failure_event to ras subsystem"
-      - Authored by no role player, reviewed by no role player
+    - 23dff3926e8c "mm/memory-failure: trace: change memory_failure_event to ras subsystem"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260605081213.154660-1-xieyuanbin1@huawei.com
 - mm-stable: 4 total, 0 (0) series, 4 non-series commits
   - author/reviewer role stat

@@ -9,15 +9,15 @@
       - Link: : https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com
       - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 28 total, 5 (19) series, 9 non-series commits
+- mm-stable: 33 total, 6 (23) series, 10 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, no role : 8 commits
-    - no role, reviewer: 7 commits
+    - no role, no role : 10 commits
+    - no role, reviewer: 9 commits
     - no role, maintainer: 3 commits
     - reviewer, no role : 4 commits
     - maintainer, nobody: 1 commits
-    - maintainer, maintainer: 3 commits
+    - maintainer, maintainer: 4 commits
   - full commits list
     - 8613803cf5d5 "mm: convert vmemmap_p?d_populate() to static functions"
       - Authored by no role player, reviewed by no role player
@@ -116,32 +116,30 @@
     - a195cf013e98 "docs: mm: clarify that user_reserve_kbytes has no effect when overcommit_memory is set to 0 or 1"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260528-mm-clarify-docs-v1-1-aa88e83b4bfd@redhat.com
-- mm-unstable: 6 total, 1 (5) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 3 commits
-    - no role, reviewer: 2 commits
-    - maintainer, maintainer: 1 commits
-  - full commits list
-      - 7d69e9eaf0b0 "mm: memory: flatten alloc_anon_folio() retry loop" (7/9)
+      - 65180e9663c7 "mm: memory: flatten alloc_anon_folio() retry loop" (7/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
-      - 68f2d20ce9de "mm: switch deferred split shrinker to list_lru" (8/9)
+      - fafaeceb89a5 "mm: switch deferred split shrinker to list_lru" (8/9)
         - Authored by a maintainer, reviewed by a maintainer
         - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
         - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
         - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - 3c08a2217f98 "mm: delete stale comment about cachelines"
+    - cdea4acce026 "mm: delete stale comment about cachelines"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
-      - 6712c3087b7c "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
+      - cc7a9f6e57c4 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
     - series "mm/sparse-vmemmap: Provide generic vmemmap_set_pmd() and vmemmap_check_pmd()", v3. (5 commits)
-      - a1985adca354 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd()" (0/5)
+      - 0b6073ff1574 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd()" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260601084845.3792171-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260601084845.3792171-2-songmuchun@bytedance.com
-      - 82433d3214c9 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
+- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+      - 26b5b977d917 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -12,23 +12,23 @@
   - author/reviewer role stat
     - no role, nobody: 4 commits
   - full commits list
-      - 6d048ff86fb9 "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
+      - aca64f7f9dd4 "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-25-rppt@kernel.org
-      - d5fb8ae0495b "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
+      - b9a7de45de80 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-26-rppt@kernel.org
-      - d20efc340eca "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
+      - ed907d1ec487 "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-34-rppt@kernel.org
-      - 7b5bdc02ade1 "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
+      - 816737105a1a "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-35-rppt@kernel.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 356edd348852 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 21c054932d55 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

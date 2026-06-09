@@ -5,71 +5,49 @@
     - maintainer, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 12 -> 12 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-stable: 12 -> 15 commits
+  - series: 1 (4) -> 1 (6)
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
+    - reviewer, no role : 0 -> 1 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 35 -> 35 commits (no change)
-  - series: 2 (33) -> 2 (33) (no change)
+    - maintainer, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - fafaeceb89a5 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
+    - 25fcea213022 "mm/thp: clear deferred split shrinker bits when queues drain"
+      - Authored by a reviewer, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260602043453.67597-1-lance.yang@linux.dev
+    - series "userfaultfd/pagemap: pre-existing fixes". (6)
+      - f7e2c21bd1f5 "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
+- mm-unstable: 35 -> 32 commits
+  - series: 2 (33) -> 2 (31)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, nobody: 3 -> 3 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 0 commits
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 12 -> 12 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "khugepaged: add mTHP collapse support", v19. (14)
-      - 0afdcfee51e9 "mm/khugepaged: introduce mTHP collapse support (10/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260605161422.213817-12-npache@redhat.com
+    - maintainer, maintainer: 1 -> 0 commits
   - changed commits
     - series "khugepaged: add mTHP collapse support", v19. (14)
-      - 6ae1aa7fb159 "mm/khugepaged: require collapse_huge_page to enter/exit with the lock dropped (4/14)"
+      - 18342914da7f "mm/khugepaged: introduce collapse_possible_orders helper functions (9/14)"
         - Authored by a reviewer, reviewed by a maintainer
         - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
         - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260605161422.213817-6-npache@redhat.com
-      - 4a1acab2d9bf "mm/khugepaged: generalize collapse_huge_page for mTHP collapse (5/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260605161422.213817-7-npache@redhat.com
-      - ea2d47a977f2 "mm/khugepaged: skip collapsing mTHP to smaller orders (6/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260605161422.213817-8-npache@redhat.com
-        - Link: https://lore.kernel.org/lkml/20241216165105.56185-11-dev.jain@arm.com/ [1]
-      - 17ebf20b3291 "mm/khugepaged: add per-order mTHP collapse failure statistics (7/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260605161422.213817-9-npache@redhat.com
-      - 2217b4916458 "mm/khugepaged: improve tracepoints for mTHP orders (8/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260605161422.213817-10-npache@redhat.com
-      - 8eaf5a7818ea "mm/khugepaged: avoid unnecessary mTHP collapse attempts (11/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260605161422.213817-13-npache@redhat.com
-      - 0cbac1d256de "Documentation: mm: update the admin guide for mTHP collapse (13/14)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260605161422.213817-15-npache@redhat.com
-  - dropped commits
-    - series "khugepaged: add mTHP collapse support", v19. (14)
-      - 5445d2d4bf8c "mm/khugepaged: Introduce mTHP collapse support (10/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260605161422.213817-12-npache@redhat.com
+        - Link: https://lore.kernel.org/20260605161422.213817-11-npache@redhat.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

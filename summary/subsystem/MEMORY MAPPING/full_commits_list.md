@@ -7,10 +7,11 @@
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260602172247.279421-1-usama.arif@linux.dev
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 6 total, 3 (5) series, 1 non-series commits
+- mm-stable: 10 total, 5 (9) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 5 commits
     - reviewer, no role : 3 commits
   - full commits list
     - series "fix MAP_DROPPABLE not supported errno", v4. (3 commits)
@@ -37,28 +38,24 @@
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
         - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
-- mm-unstable: 4 total, 2 (4) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, maintainer: 3 commits
-  - full commits list
     - series "userfaultfd/pagemap: pre-existing fixes". (6 commits)
-      - bc62b31b0e76 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race" (0/6)
+      - 04718f7c9290 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race" (0/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260529172331.356655-1-kas@kernel.org
         - Link: https://lore.kernel.org/20260529172331.356655-2-kas@kernel.org
         - Link: https://lore.kernel.org/all/20260526130509.2748441-1-kirill@shutemov.name/ [1]
-      - 032e37936aaa "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry()" (1/6)
+      - 1b074e3270e1 "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry()" (1/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260529172331.356655-3-kas@kernel.org
-      - c3bff8789c36 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole()" (2/6)
+      - e92d92bbafb2 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole()" (2/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260529172331.356655-4-kas@kernel.org
     - series "mm/hmm: A fix and a selftest", v3. (2 commits)
-      - 91fcb6890c5d "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry" (0/2)
+      - cd1fc0e3c1f6 "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260604055308.1947679-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260604055308.1947679-2-dev.jain@arm.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

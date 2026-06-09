@@ -1,10 +1,10 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 23 total, 2 (15) series, 8 non-series commits
+- mm-stable: 26 total, 2 (15) series, 11 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 1 commits
+    - no role, no role : 4 commits
     - no role, reviewer: 14 commits
     - reviewer, no role : 5 commits
     - reviewer, reviewer: 2 commits
@@ -89,32 +89,31 @@
       - 088a2353d714 "mm: remove mentions of PageWriteback" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-- mm-unstable: 5 total, 0 (0) series, 5 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 3 commits
-    - reviewer, maintainer: 1 commits
-  - full commits list
-    - 3fce04eb8f06 "mm/compaction: respect cpusets when checking retry suitability"
+    - ed384eb3a3e1 "mm/compaction: respect cpusets when checking retry suitability"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_F59F2BA2CC5779308E10DF54593C736D3E0A@qq.com
-    - 523ab96ed904 "mm/page_alloc: fix deferred compaction accounting"
+    - 3d4f1a541600 "mm/page_alloc: fix deferred compaction accounting"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/tencent_368AF1F3821E46232637BE16D65C45CF3308@qq.com
-    - 74c71969460f "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
+    - 32a2b73ec232 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
-    - 9605cd7a3c21 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - reviewer, maintainer: 1 commits
+  - full commits list
+    - 7f890d93e35f "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
       - Authored by a reviewer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
-    - 7d2f475d5f3f "mm/page_alloc: only update NUMA min ratios on sysctl write"
+    - 387d72035c26 "mm/page_alloc: only update NUMA min ratios on sysctl write"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 14caaf747d0b "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
+    - d832ec1a69e8 "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

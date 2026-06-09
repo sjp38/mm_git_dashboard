@@ -1,10 +1,11 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 8 total, 2 (4) series, 4 non-series commits
+- mm-stable: 11 total, 3 (6) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, reviewer: 6 commits
+    - no role, reviewer: 8 commits
+    - no role, maintainer: 1 commits
   - full commits list
     - 7b32f64bc512 "mm: limit filemap_fault readahead to VMA boundaries"
       - Authored by no role player, reviewed by a reviewer
@@ -37,33 +38,31 @@
     - eb4c458a9803 "mm: make mmap_miss accounting symmetric for VM_SEQ_READ"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260525145751.2671248-1-usama.arif@linux.dev
-- mm-unstable: 6 total, 2 (5) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 2 commits
-    - no role, maintainer: 1 commits
-    - reviewer, reviewer: 2 commits
-    - reviewer, maintainer: 1 commits
-  - full commits list
     - series "mm: improve large folio readahead for exec memory", v7. (2 commits)
-      - 46869a1b15b8 "mm: bypass mmap_miss heuristic for VM_EXEC readahead" (0/2)
+      - 2f5e0477276b "mm: bypass mmap_miss heuristic for VM_EXEC readahead" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev
-      - a6a70ff8d952 "mm: use mapping_max_folio_order() for force_thp_readahead order" (1/2)
+      - 8732e14b7191 "mm: use mapping_max_folio_order() for force_thp_readahead order" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev
-    - 2f944cea8b02 "mm/filemap: use folio_next_index() for start"
+    - a51cbdf02aec "mm/filemap: use folio_next_index() for start"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260601110425.44784-1-tanze@kylinos.cn
+- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, reviewer: 2 commits
+    - reviewer, maintainer: 1 commits
+  - full commits list
     - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14 commits)
-      - 648a3b1ab7c2 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
+      - f9c246808a76 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
         - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
-      - a6d35337a87e "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
+      - 42b97aad110a "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
-      - d0022e0c26d4 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
+      - 1bc3e26788c4 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
