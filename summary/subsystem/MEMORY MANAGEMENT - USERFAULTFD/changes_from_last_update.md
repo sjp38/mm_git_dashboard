@@ -4,25 +4,13 @@
     - no role, no role : 3 -> 3 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 4 commits
-  - series: 1 (2) -> 1 (4)
+- mm-stable: 4 -> 4 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - 8e80af52db65 "userfaultfd: gate must_wait writability check on pte_present() (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260529172331.356655-6-kas@kernel.org
-      - cc7a9f6e57c4 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
-- mm-unstable: 2 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -4,44 +4,12 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 9 commits
-  - series: 0 (0) -> 1 (7)
-    - no role, no role : 0 -> 7 commits
+- mm-stable: 9 -> 9 commits (no change)
+  - series: 1 (7) -> 1 (7) (no change)
+    - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 79a031583ca5 "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion (0/9)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260527204757.2544958-1-hannes@cmpxchg.org
-        - Link: https://lore.kernel.org/20260527204757.2544958-2-hannes@cmpxchg.org
-      - 1923b1d76b96 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty (1/9)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260527204757.2544958-3-hannes@cmpxchg.org
-      - 82d8bca1c715 "mm: list_lru: deduplicate unlock_list_lru() (2/9)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260527204757.2544958-4-hannes@cmpxchg.org
-      - 8b98cfe2c52d "mm: list_lru: move list dead check to lock_list_lru_of_memcg() (3/9)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260527204757.2544958-5-hannes@cmpxchg.org
-      - bc7adb3b3f6a "mm: list_lru: deduplicate lock_list_lru() (4/9)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260527204757.2544958-6-hannes@cmpxchg.org
-      - 1479b44c7203 "mm: list_lru: introduce caller locking for additions and deletions (5/9)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260527204757.2544958-7-hannes@cmpxchg.org
-      - ae64f07a6a40 "mm: list_lru: introduce folio_memcg_list_lru_alloc() (6/9)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260527204757.2544958-8-hannes@cmpxchg.org
-- mm-unstable: 7 -> 0 commits
-  - series: 1 (7) -> 0 (0)
-    - no role, no role : 7 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

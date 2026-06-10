@@ -3,30 +3,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 8 -> 11 commits
-  - series: 2 (4) -> 3 (6)
+- mm-stable: 11 -> 11 commits (no change)
+  - series: 3 (6) -> 3 (6) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, reviewer: 6 -> 8 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "mm: improve large folio readahead for exec memory", v7. (2)
-      - 2f5e0477276b "mm: bypass mmap_miss heuristic for VM_EXEC readahead (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev
-      - 8732e14b7191 "mm: use mapping_max_folio_order() for force_thp_readahead order (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev
-    - a51cbdf02aec "mm/filemap: use folio_next_index() for start"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260601110425.44784-1-tanze@kylinos.cn
-- mm-unstable: 6 -> 3 commits
-  - series: 2 (5) -> 1 (3)
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+    - no role, reviewer: 8 -> 8 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 3 -> 3 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)

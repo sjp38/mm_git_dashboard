@@ -5,49 +5,26 @@
     - maintainer, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 12 -> 15 commits
-  - series: 1 (4) -> 1 (6)
-    - no role, no role : 1 -> 2 commits
+- mm-stable: 15 -> 15 commits (no change)
+  - series: 1 (6) -> 1 (6) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, no role : 0 -> 1 commits
+    - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - fafaeceb89a5 "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
-        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - 25fcea213022 "mm/thp: clear deferred split shrinker bits when queues drain"
-      - Authored by a reviewer, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260602043453.67597-1-lance.yang@linux.dev
-    - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - f7e2c21bd1f5 "mm/huge_memory: preserve pmd_swp_uffd_wp on device-private PMD downgrade (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260529172331.356655-5-kas@kernel.org
-- mm-unstable: 35 -> 32 commits
-  - series: 2 (33) -> 2 (31)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 32 -> 33 commits
+  - series: 2 (31) -> 2 (31) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, nobody: 3 -> 3 commits (no change)
-    - reviewer, no role : 1 -> 0 commits
     - reviewer, reviewer: 10 -> 10 commits (no change)
-    - reviewer, maintainer: 12 -> 12 commits (no change)
-    - maintainer, maintainer: 1 -> 0 commits
-  - changed commits
-    - series "khugepaged: add mTHP collapse support", v19. (14)
-      - 18342914da7f "mm/khugepaged: introduce collapse_possible_orders helper functions (9/14)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260605161422.213817-11-npache@redhat.com
+    - reviewer, maintainer: 12 -> 13 commits
+  - new commits
+    - 5f2b4d9db693 "mm/khugepaged: fix PMD collapse swap PTE accounting"
+      - Authored by a reviewer, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260609120443.71864-1-lance.yang@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

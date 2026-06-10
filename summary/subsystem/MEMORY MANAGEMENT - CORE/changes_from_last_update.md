@@ -4,47 +4,18 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 28 -> 33 commits
-  - series: 5 (19) -> 6 (23)
+- mm-stable: 33 -> 33 commits (no change)
+  - series: 6 (23) -> 6 (23) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 8 -> 10 commits
-    - no role, reviewer: 7 -> 9 commits
+    - no role, no role : 10 -> 10 commits (no change)
+    - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, no role : 4 -> 4 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, maintainer: 3 -> 4 commits
-  - changed commits
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 65180e9663c7 "mm: memory: flatten alloc_anon_folio() retry loop (7/9)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
-      - fafaeceb89a5 "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
-        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - cdea4acce026 "mm: delete stale comment about cachelines"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
-    - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - cc7a9f6e57c4 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
-    - series "mm/sparse-vmemmap: Provide generic vmemmap_set_pmd() and vmemmap_check_pmd()", v3. (5)
-      - 0b6073ff1574 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd() (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260601084845.3792171-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260601084845.3792171-2-songmuchun@bytedance.com
-- mm-unstable: 6 -> 1 commits
-  - series: 1 (5) -> 0 (1)
-    - no role, no role : 3 -> 1 commits
-    - no role, reviewer: 2 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
+    - maintainer, maintainer: 4 -> 4 commits (no change)
+- mm-unstable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)

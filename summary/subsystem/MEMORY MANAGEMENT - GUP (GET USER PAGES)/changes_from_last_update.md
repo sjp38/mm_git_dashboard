@@ -9,9 +9,17 @@
 - mm-unstable: 4 -> 4 commits (no change)
   - series: 0 (4) -> 0 (4) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+- mm-new: 1 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 2 commits
     - no role, no role : 1 -> 1 commits (no change)
+  - new commits
+    - b4fb7681b2e3 "mm/gup_test: reject wrapped user ranges"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260609004814.1240586.6294d614ac80.gup-test-range-end-wrap@trailofbits.com
+    - 593ef9363580 "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

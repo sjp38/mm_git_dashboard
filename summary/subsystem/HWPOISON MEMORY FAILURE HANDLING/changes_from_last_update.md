@@ -4,15 +4,7 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 23dff3926e8c "mm/memory-failure: trace: change memory_failure_event to ras subsystem"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-      - added "Reviewed-by: Miaohe Lin <linmiaohe@huawei.com>"
-      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-      - Link: https://lore.kernel.org/20260605081213.154660-1-xieyuanbin1@huawei.com
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 4 -> 4 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 4 -> 4 commits (no change)

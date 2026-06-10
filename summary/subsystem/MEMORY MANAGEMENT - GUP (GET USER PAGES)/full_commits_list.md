@@ -12,23 +12,30 @@
   - author/reviewer role stat
     - no role, nobody: 4 commits
   - full commits list
-      - aca64f7f9dd4 "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
+      - 99a6ec338a61 "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-25-rppt@kernel.org
-      - b9a7de45de80 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
+      - 022b780cb745 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-26-rppt@kernel.org
-      - ed907d1ec487 "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
+      - f654b17e2ae3 "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-34-rppt@kernel.org
-      - 816737105a1a "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
+      - 50be1b7e39f3 "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-35-rppt@kernel.org
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-    - 21c054932d55 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - b4fb7681b2e3 "mm/gup_test: reject wrapped user ranges"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260609004814.1240586.6294d614ac80.gup-test-range-end-wrap@trailofbits.com
+    - 593ef9363580 "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
+    - db730fe9f2d5 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

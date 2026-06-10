@@ -139,7 +139,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - 26b5b977d917 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
+      - 9f83f8380531 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

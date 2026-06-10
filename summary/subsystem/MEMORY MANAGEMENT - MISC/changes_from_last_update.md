@@ -5,24 +5,18 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-stable: 33 -> 34 commits
-  - series: 2 (23) -> 2 (24)
+- mm-stable: 34 -> 34 commits (no change)
+  - series: 2 (24) -> 2 (24) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 8 -> 8 commits (no change)
-    - no role, reviewer: 4 -> 5 commits
+    - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, nobody: 14 -> 14 commits (no change)
-  - changed commits
-    - series "mm/hmm: A fix and a selftest", v3. (2)
-      - e3d8707358ea "selftests/mm/hmm-tests: test pagemap reads of PMD device-private entries (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260604055308.1947679-3-dev.jain@arm.com
-- mm-unstable: 78 -> 77 commits
-  - series: 2 (75) -> 2 (74)
+- mm-unstable: 77 -> 77 commits (no change)
+  - series: 2 (74) -> 2 (74) (no change)
     - no role, nobody: 38 -> 38 commits (no change)
     - no role, no role : 30 -> 30 commits (no change)
-    - no role, reviewer: 4 -> 3 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
     - reviewer, nobody: 3 -> 3 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
