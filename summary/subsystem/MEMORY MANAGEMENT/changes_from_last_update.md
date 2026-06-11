@@ -22,33 +22,31 @@
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 8 -> 8 commits (no change)
-- mm-unstable: 26 -> 28 commits
+- mm-unstable: 28 -> 28 commits (no change)
   - series: 2 (22) -> 2 (22) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 9 -> 9 commits (no change)
-    - reviewer, maintainer: 13 -> 14 commits
-  - new commits
-    - 5f2b4d9db693 "mm/khugepaged: fix PMD collapse swap PTE accounting"
+    - reviewer, maintainer: 14 -> 14 commits (no change)
+  - changed commits
+    - cc164f462157 "mm/khugepaged: fix PMD collapse swap PTE accounting"
       - Authored by a reviewer, reviewed by a maintainer
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
       - Link: https://lore.kernel.org/20260609120443.71864-1-lance.yang@linux.dev
-    - d401506a8ee8 "mm: merge writeout into pageout"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260601113449.3464734-3-hch@lst.de
-- mm-new: 4 -> 6 commits
+- mm-new: 6 -> 6 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 3 commits
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 3 -> 2 commits
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - b4fb7681b2e3 "mm/gup_test: reject wrapped user ranges"
-      - Authored by no role player, reviewed by nobody
+  - changed commits
+    - 454267df3cc9 "mm/gup_test: reject wrapped user ranges"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lore.kernel.org/20260609004814.1240586.6294d614ac80.gup-test-range-end-wrap@trailofbits.com
-    - 593ef9363580 "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
 - mm-nonmm-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)

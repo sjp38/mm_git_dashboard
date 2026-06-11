@@ -26,35 +26,33 @@
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 8 -> 8 commits (no change)
-- mm-unstable: 106 -> 108 commits
+- mm-unstable: 108 -> 108 commits (no change)
   - series: 4 (96) -> 4 (96) (no change)
     - no role, nobody: 39 -> 39 commits (no change)
-    - no role, no role : 33 -> 34 commits
+    - no role, no role : 34 -> 34 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, nobody: 3 -> 3 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
-    - reviewer, maintainer: 14 -> 15 commits
-  - new commits
-    - 5f2b4d9db693 "mm/khugepaged: fix PMD collapse swap PTE accounting"
+    - reviewer, maintainer: 15 -> 15 commits (no change)
+  - changed commits
+    - cc164f462157 "mm/khugepaged: fix PMD collapse swap PTE accounting"
       - Authored by a reviewer, reviewed by a maintainer
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
       - Link: https://lore.kernel.org/20260609120443.71864-1-lance.yang@linux.dev
-    - d401506a8ee8 "mm: merge writeout into pageout"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260601113449.3464734-3-hch@lst.de
-- mm-new: 5 -> 7 commits
+- mm-new: 7 -> 7 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 4 commits
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 4 -> 3 commits
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - b4fb7681b2e3 "mm/gup_test: reject wrapped user ranges"
-      - Authored by no role player, reviewed by nobody
+  - changed commits
+    - 454267df3cc9 "mm/gup_test: reject wrapped user ranges"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lore.kernel.org/20260609004814.1240586.6294d614ac80.gup-test-range-end-wrap@trailofbits.com
-    - 593ef9363580 "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
 - mm-nonmm-stable: 94 -> 94 commits (no change)
   - series: 10 (48) -> 10 (48) (no change)
     - no role, nobody: 21 -> 21 commits (no change)
@@ -63,18 +61,12 @@
     - no role, maintainer: 28 -> 28 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 11 -> 14 commits
+- mm-nonmm-unstable: 14 -> 15 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 6 -> 7 commits
+    - no role, nobody: 7 -> 7 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 2 -> 4 commits
+    - no role, maintainer: 4 -> 5 commits
   - new commits
-    - 1003161e12ac "lib/xz: replace min_t with min"
+    - f5bca8c63040 "fat: reject BPB volumes whose data area starts beyond total sectors"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260609150030.634570-1-lasse.collin@tukaani.org
-    - e1190c0ddd77 "lib: interval_tree_test: validate benchmark parameters"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260609005446.1241288.1525a5964698.interval-tree-test-small-max-endpoint-div0@trailofbits.com
-    - 162631b8205d "selftests/uevent: increase __UEVENT_BUFFER_SIZE to avoid ENOBUFS on busy systems"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260608053934.4059533-1-kanie@linux.alibaba.com
+      - Link: https://lore.kernel.org/20260605155216.2126545-1-sam.moelius@trailofbits.com

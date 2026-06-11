@@ -55,14 +55,14 @@
     - reviewer, maintainer: 1 commits
   - full commits list
     - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14 commits)
-      - 9e81984a7167 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
+      - f9e64909cd62 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
         - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
-      - f93a6cf5e6aa "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
+      - 578e9930e1fc "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
-      - e1c0e5919e96 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
+      - 998b0aaffb2c "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

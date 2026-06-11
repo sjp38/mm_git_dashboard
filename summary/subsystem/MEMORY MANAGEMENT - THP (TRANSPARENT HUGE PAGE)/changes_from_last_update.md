@@ -13,17 +13,19 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 32 -> 33 commits
+- mm-unstable: 33 -> 33 commits (no change)
   - series: 2 (31) -> 2 (31) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, nobody: 3 -> 3 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
-    - reviewer, maintainer: 12 -> 13 commits
-  - new commits
-    - 5f2b4d9db693 "mm/khugepaged: fix PMD collapse swap PTE accounting"
+    - reviewer, maintainer: 13 -> 13 commits (no change)
+  - changed commits
+    - cc164f462157 "mm/khugepaged: fix PMD collapse swap PTE accounting"
       - Authored by a reviewer, reviewed by a maintainer
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
       - Link: https://lore.kernel.org/20260609120443.71864-1-lance.yang@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
