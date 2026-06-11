@@ -15,13 +15,54 @@
 - mm-unstable: 77 -> 77 commits (no change)
   - series: 2 (74) -> 2 (74) (no change)
     - no role, nobody: 38 -> 38 commits (no change)
-    - no role, no role : 30 -> 30 commits (no change)
+    - no role, no role : 30 -> 31 commits
     - no role, reviewer: 3 -> 3 commits (no change)
-    - reviewer, nobody: 3 -> 3 commits (no change)
+    - reviewer, nobody: 3 -> 2 commits
     - reviewer, reviewer: 3 -> 3 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+  - new commits
+    - 83f9ba489999 "selftests: mm: fix and speedup "droppable" test"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260611-droppable_test-v1-1-b6a73d99f658@kernel.org
+  - changed commits
+    - series "make MM selftests more CI friendly", v4. (55)
+      - ccb23222a7b5 "selftests/mm: khugepaged: use kselftest framework (13/55)"
+        - Authored by no role player, reviewed by nobody
+        - added "[rppt@kernel.org: make the output TAP-compatible]"
+        - Link: https://lore.kernel.org/20260511162840.375890-15-rppt@kernel.org
+    - series "selftests/mm: fix failures and robustness improvements", v7. (13)
+      - 02144a1cc448 "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero (10/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "[sayalip@linux.ibm.com: use ksft_exit_skip() instead of KSFT_SKIP]"
+        - added "Link: : https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com"
+        - Link: : https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com
+        - Link: https://lore.kernel.org/0707e9a0f1b3dd904c4a069b91db317f9c160faa.1779296493.git.sayalip@linux.ibm.com
+    - f5dbe5ffaaa7 "mm/page_frag: reject invalid CPUs in page_frag_test"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260605184157.2490353-1-sam.moelius@trailofbits.com
+  - dropped commits
+    - series "make MM selftests more CI friendly", v4. (55)
+      - daa92c7d628c "selftests-mm-khugepaged-use-ksefltest-framework-fix (14/55)"
+        - Authored by a reviewer, reviewed by nobody
+    - series "selftests/mm: fix failures and robustness improvements", v7. (13)
+      - 950fc61e6799 "selftests/mm: use ksft_exit_skip() instead of KSFT_SKIP in uffd-stress (11/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com
+- mm-new: 1 -> 3 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, nobody: 1 -> 3 commits
+  - new commits
+    - series "selftests/mm: assorted fixes for hmm-tests", v3. (3)
+      - 4cbce56357ef "selftests/mm: allow PUD-level entries in compound testcase of hmm tests (0/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260611034102.1030738-1-aboorvad@linux.ibm.com
+        - Link: https://lore.kernel.org/20260611034102.1030738-2-aboorvad@linux.ibm.com
+      - f36f495910e0 "selftests/mm: remove hardcoded THP sizing assumptions in hmm tests (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260611034102.1030738-3-aboorvad@linux.ibm.com
+      - 8e39931308a1 "selftests/mm: fix exclusive_cow test fork() handling (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260611034102.1030738-4-aboorvad@linux.ibm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

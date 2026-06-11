@@ -13,20 +13,24 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 33 -> 33 commits (no change)
-  - series: 2 (31) -> 2 (31) (no change)
+- mm-unstable: 33 -> 32 commits
+  - series: 2 (31) -> 2 (30)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 3 -> 3 commits (no change)
+    - reviewer, nobody: 3 -> 2 commits
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 13 -> 13 commits (no change)
   - changed commits
-    - cc164f462157 "mm/khugepaged: fix PMD collapse swap PTE accounting"
-      - Authored by a reviewer, reviewed by a maintainer
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - Link: https://lore.kernel.org/20260609120443.71864-1-lance.yang@linux.dev
+    - series "make MM selftests more CI friendly", v4. (55)
+      - ccb23222a7b5 "selftests/mm: khugepaged: use kselftest framework (13/55)"
+        - Authored by no role player, reviewed by nobody
+        - added "[rppt@kernel.org: make the output TAP-compatible]"
+        - Link: https://lore.kernel.org/20260511162840.375890-15-rppt@kernel.org
+  - dropped commits
+    - series "make MM selftests more CI friendly", v4. (55)
+      - daa92c7d628c "selftests-mm-khugepaged-use-ksefltest-framework-fix (14/55)"
+        - Authored by a reviewer, reviewed by nobody
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -26,47 +26,122 @@
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 8 -> 8 commits (no change)
-- mm-unstable: 108 -> 108 commits (no change)
+- mm-unstable: 108 -> 114 commits
   - series: 4 (96) -> 4 (96) (no change)
-    - no role, nobody: 39 -> 39 commits (no change)
-    - no role, no role : 34 -> 34 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, nobody: 39 -> 41 commits
+    - no role, no role : 34 -> 36 commits
+    - no role, reviewer: 3 -> 5 commits
     - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, nobody: 3 -> 3 commits (no change)
+    - reviewer, nobody: 3 -> 2 commits
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 15 -> 15 commits (no change)
-  - changed commits
-    - cc164f462157 "mm/khugepaged: fix PMD collapse swap PTE accounting"
-      - Authored by a reviewer, reviewed by a maintainer
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - Link: https://lore.kernel.org/20260609120443.71864-1-lance.yang@linux.dev
-- mm-new: 7 -> 7 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 4 -> 3 commits
-    - no role, no role : 1 -> 2 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - 454267df3cc9 "mm/gup_test: reject wrapped user ranges"
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 83f9ba489999 "selftests: mm: fix and speedup "droppable" test"
       - Authored by no role player, reviewed by no role player
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260611-droppable_test-v1-1-b6a73d99f658@kernel.org
+    - 819b97a5d886 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260610232048.62930-1-shakeel.butt@linux.dev
+    - ca2351ac6da2 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
+  - changed commits
+    - series "make MM selftests more CI friendly", v4. (55)
+      - ccb23222a7b5 "selftests/mm: khugepaged: use kselftest framework (13/55)"
+        - Authored by no role player, reviewed by nobody
+        - added "[rppt@kernel.org: make the output TAP-compatible]"
+        - Link: https://lore.kernel.org/20260511162840.375890-15-rppt@kernel.org
+    - series "selftests/mm: fix failures and robustness improvements", v7. (13)
+      - 02144a1cc448 "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero (10/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "[sayalip@linux.ibm.com: use ksft_exit_skip() instead of KSFT_SKIP]"
+        - added "Link: : https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com"
+        - Link: : https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com
+        - Link: https://lore.kernel.org/0707e9a0f1b3dd904c4a069b91db317f9c160faa.1779296493.git.sayalip@linux.ibm.com
+    - 8e5f40991a2a "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
+    - 938598913a1a "mm/damon/core: always put unsuccessfully committed target pids"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260605013849.83750-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260603112306.58490-1-akinobu.mita@gmail.com [1]
+      - Link: https://lore.kernel.org/20260320020056.835-1-sj@kernel.org [2]
+    - f5dbe5ffaaa7 "mm/page_frag: reject invalid CPUs in page_frag_test"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260605184157.2490353-1-sam.moelius@trailofbits.com
+    - abe25d95bc0d "mm/gup_test: reject wrapped user ranges"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260609004814.1240586.6294d614ac80.gup-test-range-end-wrap@trailofbits.com
-- mm-nonmm-stable: 94 -> 94 commits (no change)
+    - 5f651cf4293e "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
+  - dropped commits
+    - series "make MM selftests more CI friendly", v4. (55)
+      - daa92c7d628c "selftests-mm-khugepaged-use-ksefltest-framework-fix (14/55)"
+        - Authored by a reviewer, reviewed by nobody
+    - series "selftests/mm: fix failures and robustness improvements", v7. (13)
+      - 950fc61e6799 "selftests/mm: use ksft_exit_skip() instead of KSFT_SKIP in uffd-stress (11/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com
+- mm-new: 7 -> 5 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, nobody: 3 -> 4 commits
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
+  - new commits
+    - series "selftests/mm: assorted fixes for hmm-tests", v3. (3)
+      - 4cbce56357ef "selftests/mm: allow PUD-level entries in compound testcase of hmm tests (0/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260611034102.1030738-1-aboorvad@linux.ibm.com
+        - Link: https://lore.kernel.org/20260611034102.1030738-2-aboorvad@linux.ibm.com
+      - f36f495910e0 "selftests/mm: remove hardcoded THP sizing assumptions in hmm tests (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260611034102.1030738-3-aboorvad@linux.ibm.com
+      - 8e39931308a1 "selftests/mm: fix exclusive_cow test fork() handling (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260611034102.1030738-4-aboorvad@linux.ibm.com
+- mm-nonmm-stable: 94 -> 100 commits
   - series: 10 (48) -> 10 (48) (no change)
-    - no role, nobody: 21 -> 21 commits (no change)
-    - no role, no role : 39 -> 39 commits (no change)
+    - no role, nobody: 21 -> 23 commits
+    - no role, no role : 39 -> 41 commits
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 28 -> 28 commits (no change)
+    - no role, maintainer: 28 -> 30 commits
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 14 -> 15 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 7 -> 7 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 4 -> 5 commits
-  - new commits
-    - f5bca8c63040 "fat: reject BPB volumes whose data area starts beyond total sectors"
+  - changed commits
+    - aae636b5463d "fs: fat: inode: replace sprintf() with scnprintf()"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260605155216.2126545-1-sam.moelius@trailofbits.com
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260603145222.59012-1-m32285159@gmail.com
+    - 0f1f777b309b "mailmap: update Alexander Sverdlin's Email addresses"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260603225847.1849399-1-asv@kernel.org
+    - 5ef8a1c7aa7f "MAINTAINERS: add Alexander as a kcov reviewer"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260605085423.1962700-1-glider@google.com
+    - 66cbd504306b "checkpatch: cuppress warnings when Reported-by: is followed by Link:"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260605-checkpatch-v1-1-8c68ae618513@linux.dev
+    - 89009392c80d "fs: efs: remove unneeded debug prints"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260605035251.89305-2-m32285159@gmail.com
+    - f2737dc40d2e "lib/test_firmware: allocate the configured into_buf size"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260605003038.2005840-1-sam.moelius@trailofbits.com
+- mm-nonmm-unstable: 15 -> 9 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 7 -> 5 commits
+    - no role, no role : 3 -> 1 commits
+    - no role, maintainer: 5 -> 3 commits

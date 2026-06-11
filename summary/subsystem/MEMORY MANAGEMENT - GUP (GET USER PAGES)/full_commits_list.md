@@ -8,34 +8,34 @@
     - 5c5bc5e326fe "mm/gup: cleanup pgtable entry accessors"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260421051754.1691221-1-agordeev@linux.ibm.com
-- mm-unstable: 4 total, 0 (4) series, 0 non-series commits
+- mm-unstable: 6 total, 0 (4) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 4 commits
+    - no role, nobody: 5 commits
+    - no role, no role : 1 commits
   - full commits list
-      - 0e41554123b8 "selftests/mm: move HugeTLB helpers to hugepage_settings" (24/55)
+      - 071e5070c349 "selftests/mm: move HugeTLB helpers to hugepage_settings" (23/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-25-rppt@kernel.org
-      - 08be068c53a4 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (25/55)
+      - 7a1954518bda "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (24/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-26-rppt@kernel.org
-      - e4609df01722 "selftests/mm: gup_longterm: add setup of HugeTLB pages" (33/55)
+      - 86ef37329f50 "selftests/mm: gup_longterm: add setup of HugeTLB pages" (32/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-34-rppt@kernel.org
-      - dde101701e4d "selftests/mm: gup_test: add setup of HugeTLB pages" (34/55)
+      - 0749fc987dfb "selftests/mm: gup_test: add setup of HugeTLB pages" (33/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-35-rppt@kernel.org
-- mm-new: 3 total, 0 (0) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 2 commits
-  - full commits list
-    - 454267df3cc9 "mm/gup_test: reject wrapped user ranges"
+    - abe25d95bc0d "mm/gup_test: reject wrapped user ranges"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260609004814.1240586.6294d614ac80.gup-test-range-end-wrap@trailofbits.com
-    - c764d32c253b "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+    - 5f651cf4293e "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
-    - e084758f8e2f "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 81cc9ee5d3a3 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

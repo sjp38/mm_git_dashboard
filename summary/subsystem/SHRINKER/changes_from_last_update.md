@@ -8,8 +8,13 @@
   - series: 1 (7) -> 1 (7) (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 819b97a5d886 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260610232048.62930-1-shakeel.butt@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
