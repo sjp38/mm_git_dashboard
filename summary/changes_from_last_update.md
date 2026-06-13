@@ -26,122 +26,101 @@
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 8 -> 8 commits (no change)
-- mm-unstable: 108 -> 114 commits
-  - series: 4 (96) -> 4 (96) (no change)
-    - no role, nobody: 39 -> 41 commits
-    - no role, no role : 34 -> 36 commits
-    - no role, reviewer: 3 -> 5 commits
-    - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, nobody: 3 -> 2 commits
+- mm-unstable: 114 -> 117 commits
+  - series: 4 (96) -> 5 (99)
+    - no role, nobody: 41 -> 42 commits
+    - no role, no role : 36 -> 36 commits (no change)
+    - no role, reviewer: 5 -> 6 commits
+    - no role, maintainer: 4 -> 5 commits
+    - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 15 -> 15 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
   - new commits
-    - 83f9ba489999 "selftests: mm: fix and speedup "droppable" test"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260611-droppable_test-v1-1-b6a73d99f658@kernel.org
-    - 819b97a5d886 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260610232048.62930-1-shakeel.butt@linux.dev
-    - ca2351ac6da2 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
+    - d888de4f85bc "mm: use mapping_mapped to simplify the code"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260612073032.33228-1-huangsj@hygon.cn
   - changed commits
-    - series "make MM selftests more CI friendly", v4. (55)
-      - ccb23222a7b5 "selftests/mm: khugepaged: use kselftest framework (13/55)"
-        - Authored by no role player, reviewed by nobody
-        - added "[rppt@kernel.org: make the output TAP-compatible]"
-        - Link: https://lore.kernel.org/20260511162840.375890-15-rppt@kernel.org
-    - series "selftests/mm: fix failures and robustness improvements", v7. (13)
-      - 02144a1cc448 "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero (10/13)"
-        - Authored by no role player, reviewed by no role player
-        - added "[sayalip@linux.ibm.com: use ksft_exit_skip() instead of KSFT_SKIP]"
-        - added "Link: : https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com"
-        - Link: : https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com
-        - Link: https://lore.kernel.org/0707e9a0f1b3dd904c4a069b91db317f9c160faa.1779296493.git.sayalip@linux.ibm.com
-    - 8e5f40991a2a "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
+    - 4ecb62c05e1f "mm/khugepaged: fix PMD collapse swap PTE accounting"
+      - Authored by a reviewer, reviewed by a maintainer
+      - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
+      - Link: https://lore.kernel.org/20260609120443.71864-1-lance.yang@linux.dev
+    - 79b32ee064c6 "selftests: mm: fix and speedup "droppable" test"
       - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
-    - 938598913a1a "mm/damon/core: always put unsuccessfully committed target pids"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260605013849.83750-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260603112306.58490-1-akinobu.mita@gmail.com [1]
-      - Link: https://lore.kernel.org/20260320020056.835-1-sj@kernel.org [2]
-    - f5dbe5ffaaa7 "mm/page_frag: reject invalid CPUs in page_frag_test"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260605184157.2490353-1-sam.moelius@trailofbits.com
-    - abe25d95bc0d "mm/gup_test: reject wrapped user ranges"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260609004814.1240586.6294d614ac80.gup-test-range-end-wrap@trailofbits.com
-    - 5f651cf4293e "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
-  - dropped commits
-    - series "make MM selftests more CI friendly", v4. (55)
-      - daa92c7d628c "selftests-mm-khugepaged-use-ksefltest-framework-fix (14/55)"
-        - Authored by a reviewer, reviewed by nobody
-    - series "selftests/mm: fix failures and robustness improvements", v7. (13)
-      - 950fc61e6799 "selftests/mm: use ksft_exit_skip() instead of KSFT_SKIP in uffd-stress (11/13)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com
-- mm-new: 7 -> 5 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, nobody: 3 -> 4 commits
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
+      - added "Tested-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
+      - added "Reviewed-by: Jason A. Donenfeld <Jason@zx2c4.com>"
+      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Jason A. Donenfeld <jason@zx2c4.com>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260611-droppable_test-v1-1-b6a73d99f658@kernel.org
+    - 2d01884c9ee0 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
+      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+      - Link: https://lore.kernel.org/20260610232048.62930-1-shakeel.butt@linux.dev
     - series "selftests/mm: assorted fixes for hmm-tests", v3. (3)
-      - 4cbce56357ef "selftests/mm: allow PUD-level entries in compound testcase of hmm tests (0/3)"
+      - ac8f8129d011 "selftests/mm: allow PUD-level entries in compound testcase of hmm tests (0/3)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260611034102.1030738-1-aboorvad@linux.ibm.com
         - Link: https://lore.kernel.org/20260611034102.1030738-2-aboorvad@linux.ibm.com
-      - f36f495910e0 "selftests/mm: remove hardcoded THP sizing assumptions in hmm tests (1/3)"
-        - Authored by no role player, reviewed by nobody
+      - b7e3e5ed0ed4 "selftests/mm: remove hardcoded THP sizing assumptions in hmm tests (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Acked-by: Balbir Singh <balbirs@nvidia.com>"
+        - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
         - Link: https://lore.kernel.org/20260611034102.1030738-3-aboorvad@linux.ibm.com
-      - 8e39931308a1 "selftests/mm: fix exclusive_cow test fork() handling (2/3)"
+      - 2d73919acf12 "selftests/mm: fix exclusive_cow test fork() handling (2/3)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260611034102.1030738-4-aboorvad@linux.ibm.com
-- mm-nonmm-stable: 94 -> 100 commits
+- mm-new: 5 -> 3 commits
+  - series: 1 (3) -> 0 (0)
+    - no role, nobody: 4 -> 2 commits
+    - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - 32e6e66e25bc "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-new
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
+- mm-nonmm-stable: 100 -> 100 commits (no change)
   - series: 10 (48) -> 10 (48) (no change)
-    - no role, nobody: 21 -> 23 commits
-    - no role, no role : 39 -> 41 commits
+    - no role, nobody: 23 -> 23 commits (no change)
+    - no role, no role : 41 -> 41 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 28 -> 30 commits
+    - no role, maintainer: 30 -> 30 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - aae636b5463d "fs: fat: inode: replace sprintf() with scnprintf()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260603145222.59012-1-m32285159@gmail.com
-    - 0f1f777b309b "mailmap: update Alexander Sverdlin's Email addresses"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260603225847.1849399-1-asv@kernel.org
-    - 5ef8a1c7aa7f "MAINTAINERS: add Alexander as a kcov reviewer"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260605085423.1962700-1-glider@google.com
-    - 66cbd504306b "checkpatch: cuppress warnings when Reported-by: is followed by Link:"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260605-checkpatch-v1-1-8c68ae618513@linux.dev
-    - 89009392c80d "fs: efs: remove unneeded debug prints"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260605035251.89305-2-m32285159@gmail.com
-    - f2737dc40d2e "lib/test_firmware: allocate the configured into_buf size"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260605003038.2005840-1-sam.moelius@trailofbits.com
-- mm-nonmm-unstable: 15 -> 9 commits
+- mm-nonmm-unstable: 9 -> 13 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 7 -> 5 commits
-    - no role, no role : 3 -> 1 commits
-    - no role, maintainer: 5 -> 3 commits
+    - no role, nobody: 5 -> 4 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 3 -> 7 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - af12eac923b6 "ocfs2: fix UBSAN array-index-out-of-bounds in ocfs2_sum_rightmost_rec"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/ain_780qc0P4ypNd@dev
+    - 783628536145 "treewide: fix transposed "sign" typos and update spelling.txt"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260612181633.734458-1-iamsharduld@gmail.com
+    - 7d2bd33875c6 "ocfs2: avoid moving extents to occupied clusters"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260611213510.16956-1-kylebot@openai.com
+    - 668b4f201693 "lib-interval_tree_test-validate-benchmark-parameters-fix"
+      - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - 4fc4802c9d56 "sparc: add _mcount() prototype"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Andreas Larsson <andreas@gaisler.com>"
+      - added "Tested-by: Andreas Larsson <andreas@gaisler.com>"
+      - dropped "Cc: Andreas Larsson <andreas@gaisler.com>"
+    - de7d0714e758 "security/apparmor/apparmorfs.c: conditionally compile get_loaddata_common_ref()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: John Johansen <john.johansen@canonical.com>"
+      - dropped "Cc: John Johansen <john.johansen@canonical.com>"

@@ -8,9 +8,14 @@
 - mm-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 2 -> 2 commits (no change)
+- mm-unstable: 2 -> 3 commits
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - d888de4f85bc "mm: use mapping_mapped to simplify the code"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260612073032.33228-1-huangsj@hygon.cn
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -17,7 +17,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 3627cbe6e62f "selftests/mm: fix ksft_process_madv.sh test category"
+    - 077955bc5063 "selftests/mm: fix ksft_process_madv.sh test category"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260608103224.344101-1-sarthak.sharma@arm.com
 - mm-stable: 34 total, 2 (24) series, 10 non-series commits
@@ -138,264 +138,261 @@
       - e3d8707358ea "selftests/mm/hmm-tests: test pagemap reads of PMD device-private entries" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260604055308.1947679-3-dev.jain@arm.com
-- mm-unstable: 77 total, 2 (74) series, 3 non-series commits
+- mm-unstable: 80 total, 3 (77) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 38 commits
+    - no role, nobody: 40 commits
     - no role, no role : 31 commits
-    - no role, reviewer: 3 commits
+    - no role, reviewer: 4 commits
     - reviewer, nobody: 2 commits
     - reviewer, reviewer: 3 commits
   - full commits list
-      - 69eb1dd12fc6 "mm/khugepaged: generalize alloc_charge_folio()" (1/14)
+      - 07750ea36c03 "mm/khugepaged: generalize alloc_charge_folio()" (1/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260605161422.213817-3-npache@redhat.com
-      - 751800f0b4ae "mm/khugepaged: add per-order mTHP collapse failure statistics" (7/14)
+      - 7f50aaf01daf "mm/khugepaged: add per-order mTHP collapse failure statistics" (7/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260605161422.213817-9-npache@redhat.com
-      - a0a4d511a73c "Documentation: mm: update the admin guide for mTHP collapse" (13/14)
+      - c13b62ccc263 "Documentation: mm: update the admin guide for mTHP collapse" (13/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260605161422.213817-15-npache@redhat.com
-      - eac296ec426b "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged" (10/14)
+      - def1d5acee26 "selftests/mm: remove READ_ONLY_THP_FOR_FS in khugepaged" (10/14)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260517135416.1434539-12-ziy@nvidia.com
-      - 6c1e7a1128b8 "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions" (11/14)
+      - 23569e304af3 "selftests/mm: remove READ_ONLY_THP_FOR_FS code from guard-regions" (11/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260517135416.1434539-13-ziy@nvidia.com
-      - 68db46c9c261 "selftests/mm: add writable-file collapse tests for khugepaged" (13/14)
+      - fe54bd10d0d5 "selftests/mm: add writable-file collapse tests for khugepaged" (13/14)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260517135416.1434539-15-ziy@nvidia.com
     - series "make MM selftests more CI friendly", v4. (55 commits)
-      - a7588138960c "selftests/mm: hugetlb-read-hwpoison: add SIGBUS handler" (0/55)
+      - 5ed9f7d2ceac "selftests/mm: hugetlb-read-hwpoison: add SIGBUS handler" (0/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-1-rppt@kernel.org
         - Link: https://lore.kernel.org/20260511162840.375890-2-rppt@kernel.org
-      - 607457034f56 "selftests/mm: migration: don't assume huge page is TWOMEG" (1/55)
+      - aab2c0c52f25 "selftests/mm: migration: don't assume huge page is TWOMEG" (1/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-3-rppt@kernel.org
-      - 82ed72337a88 "selftests/mm: migration: make nthreads represent number of working threads" (2/55)
+      - b1906c496f0d "selftests/mm: migration: make nthreads represent number of working threads" (2/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-4-rppt@kernel.org
-      - f48918f78726 "selftests/mm: migration: properly cleanup fork()ed processes" (3/55)
+      - e3cfbbce2688 "selftests/mm: migration: properly cleanup fork()ed processes" (3/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-5-rppt@kernel.org
-      - e493f46c30dc "selftests/mm: run_vmtests.sh: don't gate THP and KSM tests on HAVE_HUGEPAGES" (4/55)
+      - 576ad23e4333 "selftests/mm: run_vmtests.sh: don't gate THP and KSM tests on HAVE_HUGEPAGES" (4/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-6-rppt@kernel.org
-      - 95aa493f1501 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
+      - bcc7a5e41cd6 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - d14106dd9f35 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
+      - 04c18380651d "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
-      - 62fd8dc0bc47 "selftests/mm: hugetlb-shm: use kselftest framework" (7/55)
+      - 591a38163989 "selftests/mm: hugetlb-shm: use kselftest framework" (7/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-9-rppt@kernel.org
-      - 8794186e074a "selftests/mm: hugetlb-vmemmap: use kselftest framework" (8/55)
+      - 61412ec801e4 "selftests/mm: hugetlb-vmemmap: use kselftest framework" (8/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-10-rppt@kernel.org
-      - c986c985d63a "selftests/mm: hugetlb-madvise: use kselftest framework" (9/55)
+      - 689986e82e3a "selftests/mm: hugetlb-madvise: use kselftest framework" (9/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-11-rppt@kernel.org
-      - c6c78db5fb36 "selftests/mm: hugetlb_madv_vs_map: use kselftest framework" (10/55)
+      - bf9acf31b548 "selftests/mm: hugetlb_madv_vs_map: use kselftest framework" (10/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-12-rppt@kernel.org
-      - 7724b6cddb59 "selftests/mm: hugetlb-read-hwpoison: use kselftest framework" (11/55)
+      - b3f5c970ed58 "selftests/mm: hugetlb-read-hwpoison: use kselftest framework" (11/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-13-rppt@kernel.org
-      - 04daf6fe8ead "selftests/mm: khugepaged: group tests in an array" (12/55)
+      - 3e78c552a5ce "selftests/mm: khugepaged: group tests in an array" (12/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-14-rppt@kernel.org
-      - ccb23222a7b5 "selftests/mm: khugepaged: use kselftest framework" (13/55)
+      - 7bbb1e076dee "selftests/mm: khugepaged: use kselftest framework" (13/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-15-rppt@kernel.org
-      - f729e6ca6565 "selftests/mm: ksm_tests: use kselftest framework" (14/55)
+      - 32c08ffc4ed6 "selftests/mm: ksm_tests: use kselftest framework" (14/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-16-rppt@kernel.org
-      - 54c21ebb726e "selftests/mm: protection_keys: use descriptive test names in the output" (15/55)
+      - fa37054cc93f "selftests/mm: protection_keys: use descriptive test names in the output" (15/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-17-rppt@kernel.org
-      - 638b7e461d46 "selftests/mm: protection_keys: use kselftest framework" (16/55)
+      - efbf42287104 "selftests/mm: protection_keys: use kselftest framework" (16/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-18-rppt@kernel.org
-      - 2f41c07a8acf "selftests/mm: uffd-common: use kselftest framework" (17/55)
+      - 3003d7194b06 "selftests/mm: uffd-common: use kselftest framework" (17/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-19-rppt@kernel.org
-      - 87d42e1e20ff "selftests/mm: uffd-stress: use kselftest framework" (18/55)
+      - 9c9844ba3c42 "selftests/mm: uffd-stress: use kselftest framework" (18/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-20-rppt@kernel.org
-      - a2322f507d67 "selftests/mm: uffd-unit-tests: use kselftest framework" (19/55)
+      - 84637b1d7dc2 "selftests/mm: uffd-unit-tests: use kselftest framework" (19/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-21-rppt@kernel.org
-      - 94b5b47db216 "selftests/mm: va_high_addr_switch: use kselftest framework" (20/55)
+      - b21d609039c1 "selftests/mm: va_high_addr_switch: use kselftest framework" (20/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-22-rppt@kernel.org
-      - fa377ec4d2ab "selftests/mm: add atexit() and signal handlers to thp_settings" (21/55)
+      - 9de8ae54a81e "selftests/mm: add atexit() and signal handlers to thp_settings" (21/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-23-rppt@kernel.org
-      - f83aa75dba30 "selftests/mm: rename thp_settings.[ch] to hugepage_settings.[ch]" (22/55)
+      - d33486b6762c "selftests/mm: rename thp_settings.[ch] to hugepage_settings.[ch]" (22/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-24-rppt@kernel.org
-      - 071e5070c349 "selftests/mm: move HugeTLB helpers to hugepage_settings" (23/55)
+      - da071c9cd0f6 "selftests/mm: move HugeTLB helpers to hugepage_settings" (23/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-25-rppt@kernel.org
-      - 7a1954518bda "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (24/55)
+      - 78b54bee9892 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size" (24/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-26-rppt@kernel.org
-      - 6a2a55a797d2 "selftests/mm: hugepage_settings: add APIs to get and set nr_hugepages" (25/55)
+      - 3e59987b10c1 "selftests/mm: hugepage_settings: add APIs to get and set nr_hugepages" (25/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-27-rppt@kernel.org
-      - 6e259146fc93 "selftests/mm: hugepage_settings: rename and rework get_free_hugepages()" (26/55)
+      - 2477265eb280 "selftests/mm: hugepage_settings: rename and rework get_free_hugepages()" (26/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-28-rppt@kernel.org
-      - a2a083d6a02d "selftests/mm: hugepage_settings: add APIs for HugeTLB setup and teardown" (27/55)
+      - 587a63bdc200 "selftests/mm: hugepage_settings: add APIs for HugeTLB setup and teardown" (27/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-29-rppt@kernel.org
-      - ab3c5642a975 "selftests/mm: move read_file(), read_num() and write_num() to vm_util" (28/55)
+      - 6736cef6c3f1 "selftests/mm: move read_file(), read_num() and write_num() to vm_util" (28/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-30-rppt@kernel.org
-      - 03df1f247e24 "selftests/mm: vm_util: add helpers to set and restore shm limits" (29/55)
+      - d8a093dae9c4 "selftests/mm: vm_util: add helpers to set and restore shm limits" (29/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-31-rppt@kernel.org
-      - c2552e1a7544 "selftests/mm: compaction_test: use HugeTLB helpers ..." (30/55)
+      - 39b38c933666 "selftests/mm: compaction_test: use HugeTLB helpers ..." (30/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-32-rppt@kernel.org
-      - 5bc56fcaebac "selftests/mm: cow: add setup of HugeTLB pages" (31/55)
+      - cd2c0467f45a "selftests/mm: cow: add setup of HugeTLB pages" (31/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-33-rppt@kernel.org
-      - 86ef37329f50 "selftests/mm: gup_longterm: add setup of HugeTLB pages" (32/55)
+      - 95347450b256 "selftests/mm: gup_longterm: add setup of HugeTLB pages" (32/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-34-rppt@kernel.org
-      - 0749fc987dfb "selftests/mm: gup_test: add setup of HugeTLB pages" (33/55)
+      - 32f2a808f9a1 "selftests/mm: gup_test: add setup of HugeTLB pages" (33/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-35-rppt@kernel.org
-      - 65bcbb44a0e8 "selftests/mm: hmm-tests: add setup of HugeTLB pages" (34/55)
+      - be67c286f432 "selftests/mm: hmm-tests: add setup of HugeTLB pages" (34/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-36-rppt@kernel.org
-      - 1d109cd099f8 "selftests/mm: hugepage_dio: add setup of HugeTLB pages" (35/55)
+      - 11daa33ef0d9 "selftests/mm: hugepage_dio: add setup of HugeTLB pages" (35/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-37-rppt@kernel.org
-      - 23b42c5fa9f0 "selftests/mm: hugetlb_fault_after_madv: add setup of HugeTLB pages" (36/55)
+      - db13aff31fb7 "selftests/mm: hugetlb_fault_after_madv: add setup of HugeTLB pages" (36/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-38-rppt@kernel.org
-      - 806582680af5 "selftests/mm: hugetlb-madvise: add setup of HugeTLB pages" (37/55)
+      - baed92f12cbb "selftests/mm: hugetlb-madvise: add setup of HugeTLB pages" (37/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-39-rppt@kernel.org
-      - 6fe546880bfc "selftests/mm: hugetlb_madv_vs_map: add setup of HugeTLB pages" (38/55)
+      - 23fa30ae00f3 "selftests/mm: hugetlb_madv_vs_map: add setup of HugeTLB pages" (38/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-40-rppt@kernel.org
-      - 0cf667271eb0 "selftests/mm: hugetlb-mmap: add setup of HugeTLB pages" (39/55)
+      - 9c4ad81390e4 "selftests/mm: hugetlb-mmap: add setup of HugeTLB pages" (39/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-41-rppt@kernel.org
-      - 3b33993d2a04 "selftests/mm: hugetlb-mremap: add setup of HugeTLB pages" (40/55)
+      - d793c9a02d00 "selftests/mm: hugetlb-mremap: add setup of HugeTLB pages" (40/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-42-rppt@kernel.org
-      - 4a79571976f1 "selftests/mm: hugetlb-shm: add setup of HugeTLB pages" (41/55)
+      - 9f4817b3dc0f "selftests/mm: hugetlb-shm: add setup of HugeTLB pages" (41/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-43-rppt@kernel.org
-      - e1a1013e9357 "selftests/mm: hugetlb-soft-offline: add setup of HugeTLB pages" (42/55)
+      - 32366e7d63fc "selftests/mm: hugetlb-soft-offline: add setup of HugeTLB pages" (42/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-44-rppt@kernel.org
-      - 3982859bd980 "selftests/mm: hugetlb-vmemmap: add setup of HugeTLB pages" (43/55)
+      - 392f748befaf "selftests/mm: hugetlb-vmemmap: add setup of HugeTLB pages" (43/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-45-rppt@kernel.org
-      - 83bb98bb3d9e "selftests/mm: migration: add setup of HugeTLB pages" (44/55)
+      - f86f7fa11e64 "selftests/mm: migration: add setup of HugeTLB pages" (44/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-46-rppt@kernel.org
-      - 4b8d537a7145 "selftests/mm: pagemap_ioctl: add setup of HugeTLB pages" (45/55)
+      - a68bf63f1935 "selftests/mm: pagemap_ioctl: add setup of HugeTLB pages" (45/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-47-rppt@kernel.org
-      - 0baa337e1fc8 "selftests/mm: protection_keys: use library code for HugeTLB setup" (46/55)
+      - 6b41e56a818b "selftests/mm: protection_keys: use library code for HugeTLB setup" (46/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-48-rppt@kernel.org
-      - 534230912da9 "selftests/mm: thuge-gen: add setup of HugeTLB pages" (47/55)
+      - 84c07bb5bd17 "selftests/mm: thuge-gen: add setup of HugeTLB pages" (47/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-49-rppt@kernel.org
-      - f659f2c921a5 "selftests/mm: uffd-stress: use hugetlb_save and alloc huge pages" (48/55)
+      - 171d280aeba0 "selftests/mm: uffd-stress: use hugetlb_save and alloc huge pages" (48/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-50-rppt@kernel.org
-      - 6fdcf584d077 "selftests/mm: uffd-unit-tests: add setup of HugeTLB pages" (49/55)
+      - 859209f2f69e "selftests/mm: uffd-unit-tests: add setup of HugeTLB pages" (49/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-51-rppt@kernel.org
-      - 86089b4da2c8 "selftests/mm: uffd-wp-mremap: add setup of HugeTLB pages" (50/55)
+      - de7a6e2a7d60 "selftests/mm: uffd-wp-mremap: add setup of HugeTLB pages" (50/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-52-rppt@kernel.org
-      - 184d6dd7dcbb "selftests/mm: va_high_addr_switch: add setup of HugeTLB pages" (51/55)
+      - 96ad32ac706f "selftests/mm: va_high_addr_switch: add setup of HugeTLB pages" (51/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-53-rppt@kernel.org
-      - 40cfdd3fec45 "selftests/mm: va_high_addr_switch.sh: drop huge pages setup" (52/55)
+      - 789fee472a16 "selftests/mm: va_high_addr_switch.sh: drop huge pages setup" (52/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-54-rppt@kernel.org
-      - 357703a1a76e "selftests/mm: run_vmtests.sh: free memory if available memory is low" (53/55)
+      - b51917a86081 "selftests/mm: run_vmtests.sh: free memory if available memory is low" (53/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-55-rppt@kernel.org
-      - 2a0bd73f36a5 "selftests/mm: run_vmtests.sh: drop detection and setup of HugeTLB" (54/55)
+      - e2324770e86b "selftests/mm: run_vmtests.sh: drop detection and setup of HugeTLB" (54/55)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260511162840.375890-56-rppt@kernel.org
-    - c77ef6aa6661 "selftests/mm: fix incorrect mmap() error handling with NULL instead of MAP_FAILED"
+    - 135c435d7caf "selftests/mm: fix incorrect mmap() error handling with NULL instead of MAP_FAILED"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260513025223.592766-1-lihongfu@kylinos.cn
     - series "selftests/mm: fix failures and robustness improvements", v7. (13 commits)
-      - 8564d1373223 "selftests/mm: restore default nr_hugepages value via exit trap in charge_reserved_hugetlb.sh" (0/13)
+      - bc90a10f5ae4 "selftests/mm: restore default nr_hugepages value via exit trap in charge_reserved_hugetlb.sh" (0/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/cover.1779296493.git.sayalip@linux.ibm.com
         - Link: https://lore.kernel.org/5b8fbb29cd6ceffe6752e0af104f60cec072aa10.1779296493.git.sayalip@linux.ibm.com
-      - 6fade7c32c37 "selftests/mm: fix hugetlb pathname construction in charge_reserved_hugetlb.sh" (1/13)
+      - 7a9cd7bedf4b "selftests/mm: fix hugetlb pathname construction in charge_reserved_hugetlb.sh" (1/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/04b6b49e4a2acf46319f627caf82b09e6dc1ad7f.1779296493.git.sayalip@linux.ibm.com
-      - b3fc6fe44e4a "selftests/mm: restore default nr_hugepages value via exit trap in hugetlb_reparenting_test.sh" (2/13)
+      - 18f740a3ca82 "selftests/mm: restore default nr_hugepages value via exit trap in hugetlb_reparenting_test.sh" (2/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/29db637c3c6ba6c168f6b33f59f059a0b39c35c8.1779296493.git.sayalip@linux.ibm.com
-      - bf69a885c48d "selftests/mm: fix hugetlb pathname construction in hugetlb_reparenting_test.sh" (3/13)
+      - 53597c574f59 "selftests/mm: fix hugetlb pathname construction in hugetlb_reparenting_test.sh" (3/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/837ce751965c93f74c95d89587debf1e93281364.1779296493.git.sayalip@linux.ibm.com
-      - c6d9b774c2cb "selftests/mm: fix cgroup task placement and drop memory.current checks in hugetlb_reparenting_test.sh" (4/13)
+      - c6a710f5a44f "selftests/mm: fix cgroup task placement and drop memory.current checks in hugetlb_reparenting_test.sh" (4/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/fb57491ba83cb0a499c72922e1579b61bee514db.1779296493.git.sayalip@linux.ibm.com
-      - e966a4f8a673 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (5/13)
+      - 140347a86ff2 "selftests/mm: size tmpfs according to PMD page size in split_huge_page_test" (5/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/33e1bc10753fe82d1217613d8cd496020778cf2b.1779296493.git.sayalip@linux.ibm.com
-      - af72506a9d2b "selftests/mm: free dynamically allocated PMD-sized buffers in split_huge_page_test" (6/13)
+      - 2d2db65aa67e "selftests/mm: free dynamically allocated PMD-sized buffers in split_huge_page_test" (6/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/060c673b376bbeeed2b1fb1d48a825e846654191.1779296493.git.sayalip@linux.ibm.com
-      - 910358c667a1 "selftest/mm: register existing mapping with userfaultfd in hugetlb-mremap" (7/13)
+      - 4da01bf8aaba "selftest/mm: register existing mapping with userfaultfd in hugetlb-mremap" (7/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/13845da872ed174316173e8996dbb5f181994017.1779296493.git.sayalip@linux.ibm.com
-      - 16199a6350bb "selftests/mm: ensure destination is hugetlb-backed in hugetlb-mremap" (8/13)
+      - 27aed19930ae "selftests/mm: ensure destination is hugetlb-backed in hugetlb-mremap" (8/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/367644df45c65098f23e3945c6a80f4b8a8964a6.1779296493.git.sayalip@linux.ibm.com
-      - 2afe54cc8fe1 "selftests/mm: skip uffd-wp-mremap if UFFD write-protect is unsupported" (9/13)
+      - c06a61ed8acd "selftests/mm: skip uffd-wp-mremap if UFFD write-protect is unsupported" (9/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/c3c5af76d71d5f4446f773f4de94882efc33ebe4.1779296493.git.sayalip@linux.ibm.com
-      - 02144a1cc448 "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero" (10/13)
+      - 156bb84ee032 "selftests/mm: skip uffd-stress test when nr_pages_per_cpu is zero" (10/13)
         - Authored by no role player, reviewed by no role player
         - Link: : https://lore.kernel.org/88202b56-1dc5-43e2-9d1f-a0823a9531f0@linux.ibm.com
         - Link: https://lore.kernel.org/0707e9a0f1b3dd904c4a069b91db317f9c160faa.1779296493.git.sayalip@linux.ibm.com
-      - 86ae410cb8d3 "selftests/mm: move hwpoison setup into run_test() and silence modprobe output for memory-failure category" (11/13)
+      - 820d8ba73744 "selftests/mm: move hwpoison setup into run_test() and silence modprobe output for memory-failure category" (11/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/93441f34f7ef5add47d1a130d03daa79e21b5050.1779296493.git.sayalip@linux.ibm.com
-      - fbd3a5f0f88b "selftests/mm: clarify alternate unmapping in compaction_test" (12/13)
+      - ba5faaa5b958 "selftests/mm: clarify alternate unmapping in compaction_test" (12/13)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/da5e0a8d5152e54152c0d2f456aac2fac35af291.1779296493.git.sayalip@linux.ibm.com
-    - 83f9ba489999 "selftests: mm: fix and speedup "droppable" test"
-      - Authored by no role player, reviewed by no role player
+    - 79b32ee064c6 "selftests: mm: fix and speedup "droppable" test"
+      - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260611-droppable_test-v1-1-b6a73d99f658@kernel.org
-    - f5dbe5ffaaa7 "mm/page_frag: reject invalid CPUs in page_frag_test"
+    - 0a201d69f554 "mm/page_frag: reject invalid CPUs in page_frag_test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260605184157.2490353-1-sam.moelius@trailofbits.com
-- mm-new: 3 total, 1 (3) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 3 commits
-  - full commits list
     - series "selftests/mm: assorted fixes for hmm-tests", v3. (3 commits)
-      - 4cbce56357ef "selftests/mm: allow PUD-level entries in compound testcase of hmm tests" (0/3)
+      - ac8f8129d011 "selftests/mm: allow PUD-level entries in compound testcase of hmm tests" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260611034102.1030738-1-aboorvad@linux.ibm.com
         - Link: https://lore.kernel.org/20260611034102.1030738-2-aboorvad@linux.ibm.com
-      - f36f495910e0 "selftests/mm: remove hardcoded THP sizing assumptions in hmm tests" (1/3)
-        - Authored by no role player, reviewed by nobody
+      - b7e3e5ed0ed4 "selftests/mm: remove hardcoded THP sizing assumptions in hmm tests" (1/3)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260611034102.1030738-3-aboorvad@linux.ibm.com
-      - 8e39931308a1 "selftests/mm: fix exclusive_cow test fork() handling" (2/3)
+      - 2d73919acf12 "selftests/mm: fix exclusive_cow test fork() handling" (2/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260611034102.1030738-4-aboorvad@linux.ibm.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

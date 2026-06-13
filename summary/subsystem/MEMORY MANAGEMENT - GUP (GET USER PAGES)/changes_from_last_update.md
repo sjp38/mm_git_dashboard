@@ -6,23 +6,20 @@
 - mm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-unstable: 4 -> 6 commits
+- mm-unstable: 6 -> 5 commits
   - series: 0 (4) -> 0 (4) (no change)
-    - no role, nobody: 4 -> 5 commits
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - abe25d95bc0d "mm/gup_test: reject wrapped user ranges"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260609004814.1240586.6294d614ac80.gup-test-range-end-wrap@trailofbits.com
-    - 5f651cf4293e "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
-- mm-new: 3 -> 1 commits
+    - no role, nobody: 5 -> 4 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 2 -> 1 commits
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - 32e6e66e25bc "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-new
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

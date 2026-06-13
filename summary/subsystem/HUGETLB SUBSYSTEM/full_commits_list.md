@@ -30,16 +30,20 @@
     - fb95c50921f0 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
-- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
+- mm-unstable: 3 total, 0 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
+    - no role, maintainer: 1 commits
   - full commits list
-      - 95aa493f1501 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
+      - bcc7a5e41cd6 "selftests/mm: merge map_hugetlb into hugepage-mmap" (5/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - d14106dd9f35 "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
+      - 04c18380651d "selftests/mm: rename hugepage-* tests to hugetlb-*" (6/55)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
+    - d888de4f85bc "mm: use mapping_mapped to simplify the code"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260612073032.33228-1-huangsj@hygon.cn
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

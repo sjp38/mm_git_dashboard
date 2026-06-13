@@ -22,44 +22,41 @@
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 8 -> 8 commits (no change)
-- mm-unstable: 28 -> 33 commits
+- mm-unstable: 33 -> 33 commits (no change)
   - series: 2 (22) -> 2 (22) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 2 -> 3 commits
-    - no role, reviewer: 0 -> 2 commits
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 3 commits
     - reviewer, reviewer: 9 -> 9 commits (no change)
     - reviewer, maintainer: 14 -> 14 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
   - new commits
-    - 819b97a5d886 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260610232048.62930-1-shakeel.butt@linux.dev
+    - d888de4f85bc "mm: use mapping_mapped to simplify the code"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260612073032.33228-1-huangsj@hygon.cn
   - changed commits
-    - 8e5f40991a2a "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
+    - 4ecb62c05e1f "mm/khugepaged: fix PMD collapse swap PTE accounting"
+      - Authored by a reviewer, reviewed by a maintainer
+      - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
+      - Link: https://lore.kernel.org/20260609120443.71864-1-lance.yang@linux.dev
+    - 2d01884c9ee0 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
       - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
-    - 938598913a1a "mm/damon/core: always put unsuccessfully committed target pids"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260605013849.83750-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260603112306.58490-1-akinobu.mita@gmail.com [1]
-      - Link: https://lore.kernel.org/20260320020056.835-1-sj@kernel.org [2]
-    - abe25d95bc0d "mm/gup_test: reject wrapped user ranges"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260609004814.1240586.6294d614ac80.gup-test-range-end-wrap@trailofbits.com
-    - 5f651cf4293e "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
-- mm-new: 6 -> 2 commits
+      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
+      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+      - Link: https://lore.kernel.org/20260610232048.62930-1-shakeel.butt@linux.dev
+- mm-new: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - 32e6e66e25bc "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-new
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
 - mm-nonmm-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)

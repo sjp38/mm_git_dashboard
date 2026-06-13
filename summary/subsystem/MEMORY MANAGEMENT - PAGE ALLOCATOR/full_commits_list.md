@@ -104,13 +104,13 @@
     - no role, reviewer: 1 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-    - 959382d64a98 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+    - 71a22bfe5b86 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
       - Authored by a reviewer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
-    - 87005ef3bb51 "mm/page_alloc: only update NUMA min ratios on sysctl write"
+    - 8b5a0a4d6686 "mm/page_alloc: only update NUMA min ratios on sysctl write"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
-    - 8e5f40991a2a "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
+    - f16ef503287e "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
