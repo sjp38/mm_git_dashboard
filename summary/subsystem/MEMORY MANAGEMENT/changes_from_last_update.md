@@ -7,8 +7,20 @@
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, reviewer: 0 -> 2 commits
+  - new commits
+    - 37a40aef0f43 "mm: shrinker: fix shrinker_info teardown race with expansion"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260617085658.27096-1-qi.zheng@linux.dev
+    - ba022dbec70b "mm: shrinker: fix NULL pointer dereference in debugfs"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260617090052.27325-1-qi.zheng@linux.dev
+    - 5942d38296dc "userfaultfd: prevent registration of special VMAs"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260617194059.2529406-1-rppt@kernel.org
 - mm-stable: 214 -> 214 commits (no change)
   - series: 31 (151) -> 31 (151) (no change)
     - no role, nobody: 7 -> 7 commits (no change)
@@ -22,41 +34,23 @@
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 8 -> 8 commits (no change)
-- mm-unstable: 33 -> 33 commits (no change)
+- mm-unstable: 33 -> 34 commits
   - series: 2 (22) -> 2 (22) (no change)
-    - no role, nobody: 2 -> 1 commits
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 2 -> 3 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, reviewer: 9 -> 9 commits (no change)
     - reviewer, maintainer: 14 -> 14 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
   - new commits
-    - d888de4f85bc "mm: use mapping_mapped to simplify the code"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260612073032.33228-1-huangsj@hygon.cn
-  - changed commits
-    - 4ecb62c05e1f "mm/khugepaged: fix PMD collapse swap PTE accounting"
-      - Authored by a reviewer, reviewed by a maintainer
-      - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
-      - Link: https://lore.kernel.org/20260609120443.71864-1-lance.yang@linux.dev
-    - 2d01884c9ee0 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - Link: https://lore.kernel.org/20260610232048.62930-1-shakeel.butt@linux.dev
-- mm-new: 2 -> 3 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 32e6e66e25bc "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+    - f91d6e8a9e41 "mm/vmscan: pass NULL to trace vmscan node reclaim"
       - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-new
-      - dropped "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
+      - Link: https://lore.kernel.org/20260616095906.210016-1-ben.dooks@codethink.co.uk
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)

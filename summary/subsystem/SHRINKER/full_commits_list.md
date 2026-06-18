@@ -6,7 +6,16 @@
     - 98733f3f0bec "mm/list_lru: drain before clearing xarray entry on reparent"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260601161501.1444829-1-shakeel.butt@linux.dev
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 2 commits
+  - full commits list
+    - 37a40aef0f43 "mm: shrinker: fix shrinker_info teardown race with expansion"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260617085658.27096-1-qi.zheng@linux.dev
+    - ba022dbec70b "mm: shrinker: fix NULL pointer dereference in debugfs"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260617090052.27325-1-qi.zheng@linux.dev
 - mm-stable: 9 total, 1 (7) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 7 commits
@@ -45,7 +54,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 2d01884c9ee0 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
+    - 485f03aeb834 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260610232048.62930-1-shakeel.butt@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

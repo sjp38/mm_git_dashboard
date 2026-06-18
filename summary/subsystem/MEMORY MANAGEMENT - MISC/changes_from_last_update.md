@@ -12,43 +12,23 @@
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, nobody: 14 -> 14 commits (no change)
-- mm-unstable: 77 -> 80 commits
-  - series: 2 (74) -> 3 (77)
-    - no role, nobody: 38 -> 40 commits
+- mm-unstable: 80 -> 80 commits (no change)
+  - series: 3 (77) -> 3 (77) (no change)
+    - no role, nobody: 40 -> 40 commits (no change)
     - no role, no role : 31 -> 31 commits (no change)
-    - no role, reviewer: 3 -> 4 commits
-    - reviewer, nobody: 2 -> 2 commits (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - reviewer, nobody: 2 -> 1 commits
+    - reviewer, no role : 0 -> 1 commits
     - reviewer, reviewer: 3 -> 3 commits (no change)
   - changed commits
-    - 79b32ee064c6 "selftests: mm: fix and speedup "droppable" test"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Tested-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Reviewed-by: Jason A. Donenfeld <Jason@zx2c4.com>"
-      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-      - added "Cc: <stable@vger.kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Jason A. Donenfeld <jason@zx2c4.com>"
-      - Link: https://lore.kernel.org/20260611-droppable_test-v1-1-b6a73d99f658@kernel.org
-    - series "selftests/mm: assorted fixes for hmm-tests", v3. (3)
-      - ac8f8129d011 "selftests/mm: allow PUD-level entries in compound testcase of hmm tests (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260611034102.1030738-1-aboorvad@linux.ibm.com
-        - Link: https://lore.kernel.org/20260611034102.1030738-2-aboorvad@linux.ibm.com
-      - b7e3e5ed0ed4 "selftests/mm: remove hardcoded THP sizing assumptions in hmm tests (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Acked-by: Balbir Singh <balbirs@nvidia.com>"
-        - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
-        - Link: https://lore.kernel.org/20260611034102.1030738-3-aboorvad@linux.ibm.com
-      - 2d73919acf12 "selftests/mm: fix exclusive_cow test fork() handling (2/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260611034102.1030738-4-aboorvad@linux.ibm.com
-- mm-new: 3 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, nobody: 3 -> 0 commits
+    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14)
+      - 1492a3d2b7b0 "selftests/mm: add writable-file collapse tests for khugepaged (13/14)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260517135416.1434539-15-ziy@nvidia.com
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

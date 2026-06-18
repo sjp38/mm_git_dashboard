@@ -8,10 +8,11 @@
     - maintainer, nobody: 3 commits
     - maintainer, no role : 1 commits
     - maintainer, reviewer: 1 commits
-- mm-hotfixes-unstable: 4 total, 0 (0) series, 4 non-series commits
+- mm-hotfixes-unstable: 7 total, 0 (0) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 3 commits
     - no role, no role : 1 commits
+    - no role, reviewer: 2 commits
     - no role, maintainer: 1 commits
 - mm-stable: 321 total, 45 (227) series, 94 non-series commits
   - author/reviewer role stat
@@ -26,13 +27,14 @@
     - maintainer, no role : 1 commits
     - maintainer, reviewer: 3 commits
     - maintainer, maintainer: 8 commits
-- mm-unstable: 117 total, 5 (99) series, 18 non-series commits
+- mm-unstable: 118 total, 5 (99) series, 19 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 42 commits
+    - no role, nobody: 43 commits
     - no role, no role : 36 commits
     - no role, reviewer: 6 commits
     - no role, maintainer: 5 commits
-    - reviewer, nobody: 2 commits
+    - reviewer, nobody: 1 commits
+    - reviewer, no role : 1 commits
     - reviewer, reviewer: 10 commits
     - reviewer, maintainer: 15 commits
     - maintainer, nobody: 1 commits
@@ -40,17 +42,16 @@
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
-- mm-nonmm-stable: 100 total, 10 (48) series, 52 non-series commits
+- mm-nonmm-stable: 108 total, 10 (48) series, 60 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 23 commits
-    - no role, no role : 41 commits
+    - no role, nobody: 24 commits
+    - no role, no role : 43 commits
     - no role, reviewer: 2 commits
-    - no role, maintainer: 30 commits
+    - no role, maintainer: 35 commits
     - maintainer, nobody: 3 commits
     - maintainer, no role : 1 commits
-- mm-nonmm-unstable: 13 total, 0 (0) series, 13 non-series commits
+- mm-nonmm-unstable: 5 total, 0 (0) series, 5 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 4 commits
+    - no role, nobody: 2 commits
     - no role, no role : 1 commits
-    - no role, maintainer: 7 commits
-    - maintainer, nobody: 1 commits
+    - no role, maintainer: 2 commits

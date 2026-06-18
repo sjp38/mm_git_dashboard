@@ -2,8 +2,13 @@
 - mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 5942d38296dc "userfaultfd: prevent registration of special VMAs"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260617194059.2529406-1-rppt@kernel.org
 - mm-stable: 4 -> 4 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

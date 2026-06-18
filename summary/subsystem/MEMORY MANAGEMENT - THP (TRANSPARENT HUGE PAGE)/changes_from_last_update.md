@@ -18,14 +18,17 @@
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 2 -> 2 commits (no change)
+    - reviewer, nobody: 2 -> 1 commits
+    - reviewer, no role : 0 -> 1 commits
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 13 -> 13 commits (no change)
   - changed commits
-    - 4ecb62c05e1f "mm/khugepaged: fix PMD collapse swap PTE accounting"
-      - Authored by a reviewer, reviewed by a maintainer
-      - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
-      - Link: https://lore.kernel.org/20260609120443.71864-1-lance.yang@linux.dev
+    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14)
+      - 1492a3d2b7b0 "selftests/mm: add writable-file collapse tests for khugepaged (13/14)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260517135416.1434539-15-ziy@nvidia.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

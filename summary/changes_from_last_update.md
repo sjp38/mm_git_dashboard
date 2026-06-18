@@ -8,11 +8,22 @@
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 4 -> 4 commits (no change)
+- mm-hotfixes-unstable: 4 -> 7 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 3 commits
     - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 2 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 37a40aef0f43 "mm: shrinker: fix shrinker_info teardown race with expansion"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260617085658.27096-1-qi.zheng@linux.dev
+    - ba022dbec70b "mm: shrinker: fix NULL pointer dereference in debugfs"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260617090052.27325-1-qi.zheng@linux.dev
+    - 5942d38296dc "userfaultfd: prevent registration of special VMAs"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260617194059.2529406-1-rppt@kernel.org
 - mm-stable: 321 -> 321 commits (no change)
   - series: 45 (227) -> 45 (227) (no change)
     - no role, nobody: 16 -> 16 commits (no change)
@@ -26,101 +37,84 @@
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 3 -> 3 commits (no change)
     - maintainer, maintainer: 8 -> 8 commits (no change)
-- mm-unstable: 114 -> 117 commits
-  - series: 4 (96) -> 5 (99)
-    - no role, nobody: 41 -> 42 commits
+- mm-unstable: 117 -> 118 commits
+  - series: 5 (99) -> 5 (99) (no change)
+    - no role, nobody: 42 -> 43 commits
     - no role, no role : 36 -> 36 commits (no change)
-    - no role, reviewer: 5 -> 6 commits
-    - no role, maintainer: 4 -> 5 commits
-    - reviewer, nobody: 2 -> 2 commits (no change)
+    - no role, reviewer: 6 -> 6 commits (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
+    - reviewer, nobody: 2 -> 1 commits
+    - reviewer, no role : 0 -> 1 commits
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 15 -> 15 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
   - new commits
-    - d888de4f85bc "mm: use mapping_mapped to simplify the code"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260612073032.33228-1-huangsj@hygon.cn
-  - changed commits
-    - 4ecb62c05e1f "mm/khugepaged: fix PMD collapse swap PTE accounting"
-      - Authored by a reviewer, reviewed by a maintainer
-      - added "Reviewed-by: Wei Yang <richard.weiyang@gmail.com>"
-      - Link: https://lore.kernel.org/20260609120443.71864-1-lance.yang@linux.dev
-    - 79b32ee064c6 "selftests: mm: fix and speedup "droppable" test"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Tested-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
-      - added "Reviewed-by: Jason A. Donenfeld <Jason@zx2c4.com>"
-      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Cc: <stable@vger.kernel.org>"
-      - dropped "Cc: Jason A. Donenfeld <jason@zx2c4.com>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20260611-droppable_test-v1-1-b6a73d99f658@kernel.org
-    - 2d01884c9ee0 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - Link: https://lore.kernel.org/20260610232048.62930-1-shakeel.butt@linux.dev
-    - series "selftests/mm: assorted fixes for hmm-tests", v3. (3)
-      - ac8f8129d011 "selftests/mm: allow PUD-level entries in compound testcase of hmm tests (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260611034102.1030738-1-aboorvad@linux.ibm.com
-        - Link: https://lore.kernel.org/20260611034102.1030738-2-aboorvad@linux.ibm.com
-      - b7e3e5ed0ed4 "selftests/mm: remove hardcoded THP sizing assumptions in hmm tests (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Acked-by: Balbir Singh <balbirs@nvidia.com>"
-        - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
-        - Link: https://lore.kernel.org/20260611034102.1030738-3-aboorvad@linux.ibm.com
-      - 2d73919acf12 "selftests/mm: fix exclusive_cow test fork() handling (2/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260611034102.1030738-4-aboorvad@linux.ibm.com
-- mm-new: 5 -> 3 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, nobody: 4 -> 2 commits
-    - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 32e6e66e25bc "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+    - f91d6e8a9e41 "mm/vmscan: pass NULL to trace vmscan node reclaim"
       - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-new
-      - dropped "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
-- mm-nonmm-stable: 100 -> 100 commits (no change)
+      - Link: https://lore.kernel.org/20260616095906.210016-1-ben.dooks@codethink.co.uk
+  - changed commits
+    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14)
+      - 1492a3d2b7b0 "selftests/mm: add writable-file collapse tests for khugepaged (13/14)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260517135416.1434539-15-ziy@nvidia.com
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-nonmm-stable: 100 -> 108 commits
   - series: 10 (48) -> 10 (48) (no change)
-    - no role, nobody: 23 -> 23 commits (no change)
-    - no role, no role : 41 -> 41 commits (no change)
+    - no role, nobody: 23 -> 24 commits
+    - no role, no role : 41 -> 43 commits
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 30 -> 30 commits (no change)
+    - no role, maintainer: 30 -> 35 commits
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 9 -> 13 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 5 -> 4 commits
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 7 commits
-    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - af12eac923b6 "ocfs2: fix UBSAN array-index-out-of-bounds in ocfs2_sum_rightmost_rec"
+    - f9ab30c96b0f "ocfs2: fix NULL h_transaction deref in ocfs2_assure_trans_credits"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/ain_780qc0P4ypNd@dev
-    - 783628536145 "treewide: fix transposed "sign" typos and update spelling.txt"
+      - Link: https://lore.kernel.org/airKTsM1fRVN-Wj7@dev
+    - ff6f26c58421 "ocfs2: fix circular locking dependency in ocfs2_dio_end_io_write"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/97c902a6-3bcf-43ea-9b70-f1f136a6c3f2@mail.kernel.org
+      - Link: https://syzkaller.appspot.com/ai_job?id=0b53ce1e-2972-4192-aa85-8097a702762c
+  - changed commits
+    - c7fdbc2c2f26 "selftests/uevent: increase __UEVENT_BUFFER_SIZE to avoid ENOBUFS on busy systems"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260612181633.734458-1-iamsharduld@gmail.com
-    - 7d2bd33875c6 "ocfs2: avoid moving extents to occupied clusters"
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260608053934.4059533-1-kanie@linux.alibaba.com
+    - 5108f4765637 "fat: reject BPB volumes whose data area starts beyond total sectors"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260605155216.2126545-1-sam.moelius@trailofbits.com
+    - 452a8467be81 "ocfs2: fix UBSAN array-index-out-of-bounds in ocfs2_sum_rightmost_rec"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/ain_780qc0P4ypNd@dev
+    - 07669b0abe4c "treewide: fix transposed "sign" typos and update spelling.txt"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - added "Reviewed-by: SeongJae Park <sj@kernel.org>"
+      - dropped "Cc: SeongJae Park <sj@kernel.org>"
+      - Link: https://lore.kernel.org/20260612181633.734458-1-iamsharduld@gmail.com
+    - 22920541c35a "ocfs2: avoid moving extents to occupied clusters"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
       - Link: https://lore.kernel.org/20260611213510.16956-1-kylebot@openai.com
+    - c1fff9794a16 "lib: interval_tree_test: validate benchmark parameters"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - added "[akpm@linux-foundation.org: include printk.h for pr_warn()]"
+      - Link: https://lore.kernel.org/20260609005446.1241288.1525a5964698.interval-tree-test-small-max-endpoint-div0@trailofbits.com
+- mm-nonmm-unstable: 13 -> 5 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 4 -> 2 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 7 -> 2 commits
+    - maintainer, nobody: 1 -> 0 commits
+  - dropped commits
     - 668b4f201693 "lib-interval_tree_test-validate-benchmark-parameters-fix"
       - Authored by a maintainer, reviewed by nobody
-  - changed commits
     - 4fc4802c9d56 "sparc: add _mcount() prototype"
       - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Andreas Larsson <andreas@gaisler.com>"
-      - added "Tested-by: Andreas Larsson <andreas@gaisler.com>"
-      - dropped "Cc: Andreas Larsson <andreas@gaisler.com>"
-    - de7d0714e758 "security/apparmor/apparmorfs.c: conditionally compile get_loaddata_common_ref()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: John Johansen <john.johansen@canonical.com>"
-      - dropped "Cc: John Johansen <john.johansen@canonical.com>"

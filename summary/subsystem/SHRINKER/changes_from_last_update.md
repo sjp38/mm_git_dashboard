@@ -2,8 +2,16 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 2 commits
+  - new commits
+    - 37a40aef0f43 "mm: shrinker: fix shrinker_info teardown race with expansion"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260617085658.27096-1-qi.zheng@linux.dev
+    - ba022dbec70b "mm: shrinker: fix NULL pointer dereference in debugfs"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260617090052.27325-1-qi.zheng@linux.dev
 - mm-stable: 9 -> 9 commits (no change)
   - series: 1 (7) -> 1 (7) (no change)
     - no role, no role : 7 -> 7 commits (no change)
@@ -11,14 +19,6 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 2d01884c9ee0 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - Link: https://lore.kernel.org/20260610232048.62930-1-shakeel.butt@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

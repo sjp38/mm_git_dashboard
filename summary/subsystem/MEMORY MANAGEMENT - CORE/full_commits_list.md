@@ -140,10 +140,10 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 52f19521211d "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
+      - 3a66ef2921fc "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com
-    - d888de4f85bc "mm: use mapping_mapped to simplify the code"
+    - 227f7d3a2863 "mm: use mapping_mapped to simplify the code"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260612073032.33228-1-huangsj@hygon.cn
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

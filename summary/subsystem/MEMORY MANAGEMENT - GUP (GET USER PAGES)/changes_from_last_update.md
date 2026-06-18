@@ -6,20 +6,14 @@
 - mm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-unstable: 6 -> 5 commits
+- mm-unstable: 5 -> 5 commits (no change)
   - series: 0 (4) -> 0 (4) (no change)
-    - no role, nobody: 5 -> 4 commits
+    - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-new: 1 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 32e6e66e25bc "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-new
-      - dropped "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

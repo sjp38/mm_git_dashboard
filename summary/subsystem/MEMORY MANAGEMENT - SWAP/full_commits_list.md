@@ -81,7 +81,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 9d335aed8840 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - cdad4d4e4fc2 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
