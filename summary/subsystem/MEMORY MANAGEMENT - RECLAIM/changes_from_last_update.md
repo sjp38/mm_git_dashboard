@@ -3,22 +3,27 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 22 -> 22 commits (no change)
+- mm-stable: 22 -> 24 commits
   - series: 1 (17) -> 1 (17) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 14 -> 14 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 1 -> 2 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 1 -> 1 commits (no change)
-  - new commits
-    - f91d6e8a9e41 "mm/vmscan: pass NULL to trace vmscan node reclaim"
+  - changed commits
+    - 6f64c06f4309 "mm: merge writeout into pageout"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260601113449.3464734-3-hch@lst.de
+    - 44238b122ae8 "mm/vmscan: pass NULL to trace vmscan node reclaim"
       - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
       - Link: https://lore.kernel.org/20260616095906.210016-1-ben.dooks@codethink.co.uk
+- mm-unstable: 2 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

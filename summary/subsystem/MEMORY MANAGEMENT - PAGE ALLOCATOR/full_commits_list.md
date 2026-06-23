@@ -1,13 +1,20 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 26 total, 2 (15) series, 11 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - reviewer, reviewer: 1 commits
+  - full commits list
+    - 56acc1410032 "mm/compaction: handle free_pages_prepare() properly in compaction_free()"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260622-handle_free_pages_prepare_in_compaction_free-v1-1-fcf3b14abcf7@nvidia.com
+- mm-stable: 29 total, 2 (15) series, 14 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
     - no role, no role : 4 commits
-    - no role, reviewer: 14 commits
+    - no role, reviewer: 15 commits
     - reviewer, no role : 5 commits
     - reviewer, reviewer: 2 commits
+    - reviewer, maintainer: 1 commits
   - full commits list
     - b001cf7d16dd "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
       - Authored by no role player, reviewed by a reviewer
@@ -98,21 +105,16 @@
     - 32a2b73ec232 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
-- mm-unstable: 3 total, 0 (0) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, reviewer: 1 commits
-    - reviewer, maintainer: 1 commits
-  - full commits list
-    - 217bf59b9c62 "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+    - 0c3a350d13ce "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
       - Authored by a reviewer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
-    - 91725ce590a5 "mm/page_alloc: only update NUMA min ratios on sysctl write"
+    - 874611d193f2 "mm/page_alloc: only update NUMA min ratios on sysctl write"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
-    - 09c1f27f0808 "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
+    - 878f41243c0d "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

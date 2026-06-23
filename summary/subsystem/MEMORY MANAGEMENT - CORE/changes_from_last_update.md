@@ -4,19 +4,29 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 33 -> 33 commits (no change)
-  - series: 6 (23) -> 6 (23) (no change)
+- mm-stable: 33 -> 35 commits
+  - series: 6 (23) -> 6 (24)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 10 -> 10 commits (no change)
+    - no role, no role : 10 -> 11 commits
     - no role, reviewer: 9 -> 9 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+    - no role, maintainer: 3 -> 4 commits
     - reviewer, no role : 4 -> 4 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 4 -> 4 commits (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14)
+      - e4df0f37bd95 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option (4/14)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com
+    - c565c009d0c0 "mm: use mapping_mapped to simplify the code"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260612073032.33228-1-huangsj@hygon.cn
+- mm-unstable: 2 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)

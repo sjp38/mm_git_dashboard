@@ -3,15 +3,36 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 11 -> 11 commits (no change)
-  - series: 3 (6) -> 3 (6) (no change)
+- mm-stable: 11 -> 15 commits
+  - series: 3 (6) -> 4 (9)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, reviewer: 8 -> 8 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 3 -> 3 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
+    - reviewer, reviewer: 0 -> 2 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - new commits
+    - 13a1e1a61885 "Revert "mm: limit filemap_fault readahead to VMA boundaries""
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260619112852.104213-1-ljs@kernel.org
+  - changed commits
+    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14)
+      - cd2d3d1f26c2 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
+        - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
+      - 044925f9b565 "mm: fs: remove filemap_nr_thps*() functions and their users (5/14)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
+      - 15e2258e2555 "mm/truncate: use folio_split() in truncate_inode_partial_folio() (8/14)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
+- mm-unstable: 3 -> 0 commits
+  - series: 1 (3) -> 0 (0)
+    - reviewer, reviewer: 2 -> 0 commits
+    - reviewer, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

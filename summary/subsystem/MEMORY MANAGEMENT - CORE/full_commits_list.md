@@ -9,12 +9,12 @@
       - Link: : https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com
       - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 33 total, 6 (23) series, 10 non-series commits
+- mm-stable: 35 total, 6 (24) series, 11 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, no role : 10 commits
+    - no role, no role : 11 commits
     - no role, reviewer: 9 commits
-    - no role, maintainer: 3 commits
+    - no role, maintainer: 4 commits
     - reviewer, no role : 4 commits
     - maintainer, nobody: 1 commits
     - maintainer, maintainer: 4 commits
@@ -135,17 +135,13 @@
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260601084845.3792171-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260601084845.3792171-2-songmuchun@bytedance.com
-- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-      - 3a66ef2921fc "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
+      - e4df0f37bd95 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option" (4/14)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com
-    - 227f7d3a2863 "mm: use mapping_mapped to simplify the code"
+    - c565c009d0c0 "mm: use mapping_mapped to simplify the code"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260612073032.33228-1-huangsj@hygon.cn
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat

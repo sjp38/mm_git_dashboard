@@ -1,10 +1,10 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 26 total, 2 (19) series, 7 non-series commits
+- mm-stable: 28 total, 2 (19) series, 9 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 2 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 3 commits
     - no role, reviewer: 5 commits
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 14 commits
@@ -110,17 +110,13 @@
     - 32a2b73ec232 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
-- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 1 commits
-  - full commits list
-    - fc709ca8a46a "mm: merge writeout into pageout"
+    - 6f64c06f4309 "mm: merge writeout into pageout"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260601113449.3464734-3-hch@lst.de
-    - f91d6e8a9e41 "mm/vmscan: pass NULL to trace vmscan node reclaim"
+    - 44238b122ae8 "mm/vmscan: pass NULL to trace vmscan node reclaim"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260616095906.210016-1-ben.dooks@codethink.co.uk
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

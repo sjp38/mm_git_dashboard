@@ -10,16 +10,16 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - 37a40aef0f43 "mm: shrinker: fix shrinker_info teardown race with expansion"
+    - 2c5f390b20ea "mm: shrinker: fix shrinker_info teardown race with expansion"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260617085658.27096-1-qi.zheng@linux.dev
-    - ba022dbec70b "mm: shrinker: fix NULL pointer dereference in debugfs"
+    - 44aa96cff30d "mm: shrinker: fix NULL pointer dereference in debugfs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260617090052.27325-1-qi.zheng@linux.dev
-- mm-stable: 9 total, 1 (7) series, 2 non-series commits
+- mm-stable: 10 total, 1 (7) series, 3 non-series commits
   - author/reviewer role stat
     - no role, no role : 7 commits
-    - no role, reviewer: 2 commits
+    - no role, reviewer: 3 commits
   - full commits list
     - 62b21c6f1d88 "mm/shrinker: avoid out-of-bounds read in set_shrinker_bit()"
       - Authored by no role player, reviewed by a reviewer
@@ -50,13 +50,10 @@
       - ae64f07a6a40 "mm: list_lru: introduce folio_memcg_list_lru_alloc()" (6/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527204757.2544958-8-hannes@cmpxchg.org
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-  - full commits list
-    - 485f03aeb834 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
+    - b902890c62d2 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260610232048.62930-1-shakeel.butt@linux.dev
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

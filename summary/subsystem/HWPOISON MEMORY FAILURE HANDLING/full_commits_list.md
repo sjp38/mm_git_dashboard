@@ -12,7 +12,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - c0a8a0b0ea2a "mm/memory-failure: trace: change memory_failure_event to ras subsystem"
+    - 19a45b706c2f "mm/memory-failure: trace: change memory_failure_event to ras subsystem"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260605081213.154660-1-xieyuanbin1@huawei.com
 - mm-stable: 4 total, 0 (0) series, 4 non-series commits

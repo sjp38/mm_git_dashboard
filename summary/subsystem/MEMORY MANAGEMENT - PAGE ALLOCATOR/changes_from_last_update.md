@@ -1,20 +1,39 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 26 -> 26 commits (no change)
+    - reviewer, reviewer: 0 -> 1 commits
+  - new commits
+    - 56acc1410032 "mm/compaction: handle free_pages_prepare() properly in compaction_free()"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260622-handle_free_pages_prepare_in_compaction_free-v1-1-fcf3b14abcf7@nvidia.com
+- mm-stable: 26 -> 29 commits
   - series: 2 (15) -> 2 (15) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 14 -> 14 commits (no change)
+    - no role, reviewer: 14 -> 15 commits
     - reviewer, no role : 5 -> 5 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 3 -> 3 commits (no change)
+    - reviewer, maintainer: 0 -> 1 commits
+  - changed commits
+    - 0c3a350d13ce "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by a reviewer, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
+    - 874611d193f2 "mm/page_alloc: only update NUMA min ratios on sysctl write"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
+    - 878f41243c0d "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
+- mm-unstable: 3 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

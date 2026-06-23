@@ -14,13 +14,7 @@
       - 9d7bea186ba5 "userfaultfd: remove redundant check in vm_uffd_ops()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260527184751.4147364-4-rppt@kernel.org
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-    - 5942d38296dc "userfaultfd: prevent registration of special VMAs"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260617194059.2529406-1-rppt@kernel.org
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 4 total, 1 (4) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits

@@ -1,11 +1,13 @@
 - baseline: v7.1-rc5-20-gd60ec36cab338
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 11 total, 3 (6) series, 5 non-series commits
+- mm-stable: 15 total, 4 (9) series, 6 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, reviewer: 8 commits
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 2 commits
+    - reviewer, reviewer: 2 commits
+    - reviewer, maintainer: 1 commits
   - full commits list
     - 7b32f64bc512 "mm: limit filemap_fault readahead to VMA boundaries"
       - Authored by no role player, reviewed by a reviewer
@@ -49,22 +51,21 @@
     - a51cbdf02aec "mm/filemap: use folio_next_index() for start"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260601110425.44784-1-tanze@kylinos.cn
-- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
-  - author/reviewer role stat
-    - reviewer, reviewer: 2 commits
-    - reviewer, maintainer: 1 commits
-  - full commits list
     - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14 commits)
-      - 0aea8aff9bd8 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
+      - cd2d3d1f26c2 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check" (0/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
         - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
-      - 6a58cc05be9f "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
+      - 044925f9b565 "mm: fs: remove filemap_nr_thps*() functions and their users" (5/14)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
-      - bbd2d7ba723b "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
+      - 15e2258e2555 "mm/truncate: use folio_split() in truncate_inode_partial_folio()" (8/14)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
+    - 13a1e1a61885 "Revert "mm: limit filemap_fault readahead to VMA boundaries""
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260619112852.104213-1-ljs@kernel.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
