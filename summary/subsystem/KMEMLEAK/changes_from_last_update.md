@@ -1,11 +1,17 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 1 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 1 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - series "mm/kmemleak: dedupe verbose scan output", v3. (2)
+      - 77d100d11c87 "mm/kmemleak: dedupe verbose scan output by allocation backtrace (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260506-kmemleak_dedup-v3-0-2d36aafc34da@debian.org
+        - Link: https://lore.kernel.org/20260506-kmemleak_dedup-v3-1-2d36aafc34da@debian.org
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

@@ -1,20 +1,7 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338
+- baseline: v7.1-13176-g840ef6c78e6a2
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 3 total, 0 (0) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-    - reviewer, maintainer: 2 commits
-  - full commits list
-    - 0c3a350d13ce "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by a reviewer, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
-    - 2956268efc45 "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
-      - Authored by a reviewer, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260604065938.105991-1-hao.ge@linux.dev
-    - 67c2696cf76a "lib: split codetag_lock_module_list()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260324214226.3684605-1-bvanassche@acm.org
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

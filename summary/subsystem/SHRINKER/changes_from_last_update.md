@@ -1,22 +1,53 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+  - dropped commits
+    - 98733f3f0bec "mm/list_lru: drain before clearing xarray entry on reparent"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260601161501.1444829-1-shakeel.butt@linux.dev
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-- mm-stable: 9 -> 10 commits
-  - series: 1 (7) -> 1 (7) (no change)
-    - no role, no role : 7 -> 7 commits (no change)
-    - no role, reviewer: 2 -> 3 commits
-  - changed commits
+- mm-stable: 10 -> 0 commits
+  - series: 1 (7) -> 0 (0)
+    - no role, no role : 7 -> 0 commits
+    - no role, reviewer: 3 -> 0 commits
+  - dropped commits
+    - 62b21c6f1d88 "mm/shrinker: avoid out-of-bounds read in set_shrinker_bit()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260510183700.102475-1-devnexen@gmail.com
+    - 12ccf2bef35c "mm/shrinker: simplify shrinker_memcg_alloc() using guard()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260513075214.2655710-1-18810879172@163.com
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - 79a031583ca5 "mm: list_lru: fix set_shrinker_bit() call during race with cgroup deletion (0/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-1-hannes@cmpxchg.org
+        - Link: https://lore.kernel.org/20260527204757.2544958-2-hannes@cmpxchg.org
+      - 1923b1d76b96 "mm: list_lru: lock_list_lru_of_memcg() cannot return NULL if !skip_empty (1/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-3-hannes@cmpxchg.org
+      - 82d8bca1c715 "mm: list_lru: deduplicate unlock_list_lru() (2/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-4-hannes@cmpxchg.org
+      - 8b98cfe2c52d "mm: list_lru: move list dead check to lock_list_lru_of_memcg() (3/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-5-hannes@cmpxchg.org
+      - bc7adb3b3f6a "mm: list_lru: deduplicate lock_list_lru() (4/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-6-hannes@cmpxchg.org
+      - 1479b44c7203 "mm: list_lru: introduce caller locking for additions and deletions (5/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-7-hannes@cmpxchg.org
+      - ae64f07a6a40 "mm: list_lru: introduce folio_memcg_list_lru_alloc() (6/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260527204757.2544958-8-hannes@cmpxchg.org
     - b902890c62d2 "mm/shrinker: do not hold RCU lock in shrinker_debugfs_count_show()"
       - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
       - Link: https://lore.kernel.org/20260610232048.62930-1-shakeel.butt@linux.dev
-- mm-unstable: 1 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

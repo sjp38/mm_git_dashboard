@@ -1,13 +1,7 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338
+- baseline: v7.1-13176-g840ef6c78e6a2
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - b35a8205a3cc "zsmalloc: simplify data output in zs_stats_size_show()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/126a924b-6f68-43bf-ae5a-449fb93e527b@web.de
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

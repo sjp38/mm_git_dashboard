@@ -1,38 +1,74 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 11 -> 15 commits
-  - series: 3 (6) -> 4 (9)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, reviewer: 8 -> 8 commits (no change)
-    - no role, maintainer: 1 -> 2 commits
-    - reviewer, reviewer: 0 -> 2 commits
-    - reviewer, maintainer: 0 -> 1 commits
-  - new commits
-    - 13a1e1a61885 "Revert "mm: limit filemap_fault readahead to VMA boundaries""
+- mm-stable: 15 -> 0 commits
+  - series: 4 (9) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, reviewer: 8 -> 0 commits
+    - no role, maintainer: 2 -> 0 commits
+    - reviewer, reviewer: 2 -> 0 commits
+    - reviewer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 7b32f64bc512 "mm: limit filemap_fault readahead to VMA boundaries"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260427030148.653228-1-fmayle@google.com
+      - Link: https://lore.kernel.org/all/ivnv2crd3et76p2nx7oszuqhzzah756oecn5yuykzqfkqzoygw@yvnlkhjjssoz/ [1]
+    - series "mm/filemap: tighten mmap_miss hit accounting", v3. (2)
+      - 0b9c0aeba938 "mm/filemap: count only the faulting address as a mmap hit (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/tencent_AA501E9A238337BD167E5C2ACF948A1AF308@qq.com
+        - Link: https://lore.kernel.org/tencent_756F151FE66F3D80479A6F982C0AB8569F09@qq.com
+      - 9b0fcac3cfe7 "mm/filemap: do not count FAULT_FLAG_TRIED retries as mmap hits (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/tencent_22E6B8849EC1141FE7773C64467E6F1E2C09@qq.com
+    - series "mm: document read_pages and simplify usage". (2)
+      - c516c365d991 "mm/readahead: add kerneldoc for read_pages (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/all/20260501061146.6e61392d125cf1847d7cc181@linux-foundation.org/ [1]
+        - Link: https://lore.kernel.org/20260512203154.754075-2-fmayle@google.com
+      - 418bffb6ba24 "mm/readahead: simplify page_cache_ra_unbounded loop counter reset (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260512203154.754075-3-fmayle@google.com
+    - de97ae6222c1 "mm/readahead: no PG_readahead on EOF"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3921-L3939 [2]
+      - Link: https://github.com/torvalds/linux/blob/v7.0/mm/filemap.c#L3721-L3722 [3]
+      - Link: https://lore.kernel.org/20260508181237.670645-1-fmayle@google.com
+    - 88e09fffeef5 "mm/filemap: fix page_cache_prev_miss() when no hole is found"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260512-prev_miss_fix-v2-1-4af8e5c1ae62@columbia.edu
+    - eb4c458a9803 "mm: make mmap_miss accounting symmetric for VM_SEQ_READ"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260525145751.2671248-1-usama.arif@linux.dev
+    - series "mm: improve large folio readahead for exec memory", v7. (2)
+      - 2f5e0477276b "mm: bypass mmap_miss heuristic for VM_EXEC readahead (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260601102205.3985788-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260601102205.3985788-2-usama.arif@linux.dev
+      - 8732e14b7191 "mm: use mapping_max_folio_order() for force_thp_readahead order (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260601102205.3985788-3-usama.arif@linux.dev
+    - a51cbdf02aec "mm/filemap: use folio_next_index() for start"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260619112852.104213-1-ljs@kernel.org
-  - changed commits
+      - Link: https://lore.kernel.org/20260601110425.44784-1-tanze@kylinos.cn
     - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14)
       - cd2d3d1f26c2 "mm/khugepaged: remove READ_ONLY_THP_FOR_FS check (0/14)"
         - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/20260517135416.1434539-1-ziy@nvidia.com
         - Link: https://lore.kernel.org/20260517135416.1434539-2-ziy@nvidia.com
       - 044925f9b565 "mm: fs: remove filemap_nr_thps*() functions and their users (5/14)"
         - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/20260517135416.1434539-7-ziy@nvidia.com
       - 15e2258e2555 "mm/truncate: use folio_split() in truncate_inode_partial_folio() (8/14)"
         - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/20260517135416.1434539-10-ziy@nvidia.com
-- mm-unstable: 3 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - reviewer, reviewer: 2 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
+    - 13a1e1a61885 "Revert "mm: limit filemap_fault readahead to VMA boundaries""
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260619112852.104213-1-ljs@kernel.org
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

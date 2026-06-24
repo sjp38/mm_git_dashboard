@@ -1,29 +1,24 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 3 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, maintainer: 0 -> 2 commits
-  - changed commits
-    - 0c3a350d13ce "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by a reviewer, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
-    - 2956268efc45 "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
-      - Authored by a reviewer, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260604065938.105991-1-hao.ge@linux.dev
-    - 67c2696cf76a "lib: split codetag_lock_module_list()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260324214226.3684605-1-bvanassche@acm.org
-- mm-unstable: 3 -> 0 commits
+- mm-stable: 3 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 0 commits
     - reviewer, maintainer: 2 -> 0 commits
+  - dropped commits
+    - 0c3a350d13ce "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
+      - Authored by a reviewer, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
+    - 2956268efc45 "alloc_tag: fix use-after-free in /proc/allocinfo after module unload"
+      - Authored by a reviewer, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260604065938.105991-1-hao.ge@linux.dev
+    - 67c2696cf76a "lib: split codetag_lock_module_list()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260324214226.3684605-1-bvanassche@acm.org
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

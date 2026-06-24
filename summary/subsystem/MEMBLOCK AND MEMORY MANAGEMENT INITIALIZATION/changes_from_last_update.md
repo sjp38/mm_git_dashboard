@@ -1,12 +1,48 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 9 -> 9 commits (no change)
-  - series: 1 (9) -> 1 (9) (no change)
-    - no role, no role : 8 -> 8 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 9 -> 0 commits
+  - series: 1 (9) -> 0 (0)
+    - no role, no role : 8 -> 0 commits
+    - maintainer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - series "mm: Fix vmemmap optimization accounting and initialization", v8. (6)
+      - 94405c613683 "mm/mm_init: fix pageblock migratetype for ZONE_DEVICE compound pages (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260428081855.1249045-6-songmuchun@bytedance.com
+      - cd681403a870 "mm/mm_init: fix uninitialized struct pages for ZONE_DEVICE (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260428081855.1249045-7-songmuchun@bytedance.com
+    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
+      - bf45fe08b068 "mm/bootmem_info: drop initialization of page->lru (1/8)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-2-3fb0be6fc688@kernel.org
+      - 7cb87e71e55b "mm/bootmem_info: stop using PG_private (2/8)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-3-3fb0be6fc688@kernel.org
+      - cf49b4ebd2ae "mm/bootmem_info: remove call to kmemleak_free_part_phys() (3/8)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-4-3fb0be6fc688@kernel.org
+      - 0928e9050da3 "mm/bootmem_info: stop marking the pgdat as NODE_INFO (4/8)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-5-3fb0be6fc688@kernel.org
+      - ae751d567baa "mm/bootmem_info: stop marking mem_section_usage as MIX_SECTION_INFO (5/8)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-6-3fb0be6fc688@kernel.org
+    - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
+      - 9c860d1d5d69 "mm: introduce for_each_free_list() (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
+        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
+        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
+    - series "mm: switch THP shrinker to list_lru", v5. (9)
+      - fafaeceb89a5 "mm: switch deferred split shrinker to list_lru (8/9)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
+        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
+        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

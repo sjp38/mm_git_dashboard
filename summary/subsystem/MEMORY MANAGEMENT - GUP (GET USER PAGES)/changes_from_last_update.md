@@ -1,38 +1,34 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 6 commits
-  - series: 0 (0) -> 0 (4)
-    - no role, nobody: 0 -> 4 commits
-    - no role, no role : 1 -> 2 commits
-  - changed commits
+- mm-stable: 6 -> 0 commits
+  - series: 0 (4) -> 0 (0)
+    - no role, nobody: 4 -> 0 commits
+    - no role, no role : 2 -> 0 commits
+  - dropped commits
+    - 5c5bc5e326fe "mm/gup: cleanup pgtable entry accessors"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260421051754.1691221-1-agordeev@linux.ibm.com
     - series "make MM selftests more CI friendly", v4. (55)
       - 1bdc1698e605 "selftests/mm: move HugeTLB helpers to hugepage_settings (23/55)"
         - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/20260511162840.375890-25-rppt@kernel.org
       - 0020a1f5ca36 "selftests/mm: hugepage_settings: use unsigned long in detect_hugetlb_page_size (24/55)"
         - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/20260511162840.375890-26-rppt@kernel.org
       - fa84e69570cd "selftests/mm: gup_longterm: add setup of HugeTLB pages (32/55)"
         - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/20260511162840.375890-34-rppt@kernel.org
       - ff47c6008775 "selftests/mm: gup_test: add setup of HugeTLB pages (33/55)"
         - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/20260511162840.375890-35-rppt@kernel.org
     - e8ae6fd67021 "mm/gup_test: reject wrapped user ranges"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
       - Link: https://lore.kernel.org/20260609004814.1240586.6294d614ac80.gup-test-range-end-wrap@trailofbits.com
-- mm-unstable: 5 -> 0 commits
-  - series: 0 (4) -> 0 (0)
-    - no role, nobody: 4 -> 0 commits
-    - no role, no role : 1 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

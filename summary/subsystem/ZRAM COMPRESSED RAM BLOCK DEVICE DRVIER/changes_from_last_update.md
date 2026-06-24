@@ -1,13 +1,29 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 732fd9f0b9c1 "zram: fix use-after-free in zram_bvec_write_partial()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260528-zram-v3-1-cab86eef8764@gmail.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 3 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 2 -> 2 commits (no change)
+- mm-stable: 3 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, nobody: 2 -> 0 commits
+  - dropped commits
+    - 3e8d8eb8d7f5 "zram: do not leak blk idx at the end of writeback"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260526022754.2377730-2-senozhatsky@chromium.org
+    - series "zram: writeback fixes", v2. (2)
+      - 3bf1c285dc40 "zram: clear trailing bytes of compressed writeback pages (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260526022754.2377730-1-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/20260526022754.2377730-3-senozhatsky@chromium.org
+    - d1aba9859847 "zram: drop unused bio parameter from write helpers"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260528-zram-v3-2-cab86eef8764@gmail.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

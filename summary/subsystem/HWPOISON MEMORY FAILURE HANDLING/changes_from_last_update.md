@@ -1,13 +1,32 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-rc5-20-gd60ec36cab338 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 3c2d42b8ee34 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: : https://sashiko.dev/#/patchset/20260522010305.4099834-1-mawupeng1@huawei.com
+      - Link: : https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com
+      - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 4 -> 4 commits (no change)
+- mm-stable: 4 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
+    - no role, maintainer: 4 -> 0 commits
+  - dropped commits
+    - db5e2c01ca3a "mm/memory-failure: use bool for forcekill state"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260410074740.2524718-1-ye.liu@linux.dev
+    - c70a9f639bfd "mm/memory-failure: replace magic number 3 with GET_PAGE_MAX_RETRY_NUM"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260402064946.1124250-1-18810879172@163.com
+    - 5ee5ff9dbce0 "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260515020144.164941-1-ye.liu@linux.dev
+    - a10848d98ec9 "mm/memory-failure: use zone_pcp_disable() for poison handling"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260514085754.84097-1-kaitao.cheng@linux.dev
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
