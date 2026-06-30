@@ -1,36 +1,38 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 3c2d42b8ee34 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: : https://sashiko.dev/#/patchset/20260522010305.4099834-1-mawupeng1@huawei.com
-      - Link: : https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com
-      - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 4 -> 0 commits
+- mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 4 -> 0 commits
-  - dropped commits
-    - db5e2c01ca3a "mm/memory-failure: use bool for forcekill state"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260410074740.2524718-1-ye.liu@linux.dev
-    - c70a9f639bfd "mm/memory-failure: replace magic number 3 with GET_PAGE_MAX_RETRY_NUM"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260402064946.1124250-1-18810879172@163.com
-    - 5ee5ff9dbce0 "mm/memory-failure: remove hugetlb output parameter from try_memory_failure_hugetlb()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260515020144.164941-1-ye.liu@linux.dev
-    - a10848d98ec9 "mm/memory-failure: use zone_pcp_disable() for poison handling"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260514085754.84097-1-kaitao.cheng@linux.dev
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: remove redundant static variable initializations". (2)
+      - d9f2b885f98b "mm/memory-failure: remove redundant initialization for hw_memory_failure (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260623114743.4565-3-igorpetindev@gmail.com
+- mm-new: 0 -> 4 commits
+  - series: 0 (0) -> 1 (4)
+    - no role, nobody: 0 -> 1 commits
+    - no role, maintainer: 0 -> 3 commits
+  - new commits
+    - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (6)
+      - bf6b178aba60 "mm/memory-failure: drop dead error_states[] entry for reserved pages (0/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-0-6dacb8ad024d@debian.org
+        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-1-6dacb8ad024d@debian.org
+      - 61e5ed0a2f0e "mm/memory-failure: surface unhandlable kernel pages as -ENOTRECOVERABLE (1/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-2-6dacb8ad024d@debian.org
+      - 95f837327ba8 "mm/memory-failure: report MF_MSG_KERNEL for unrecoverable kernel pages (2/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-3-6dacb8ad024d@debian.org
+      - cd09d445cd16 "mm/memory-failure: add panic option for unrecoverable pages (3/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-4-6dacb8ad024d@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

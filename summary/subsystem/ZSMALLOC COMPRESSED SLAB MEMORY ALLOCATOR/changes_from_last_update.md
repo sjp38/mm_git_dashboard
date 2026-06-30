@@ -1,19 +1,30 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
+- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 0 commits
+- mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - b35a8205a3cc "zsmalloc: simplify data output in zs_stats_size_show()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/126a924b-6f68-43bf-ae5a-449fb93e527b@web.de
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 4 commits
+  - series: 0 (0) -> 1 (4)
+    - no role, no role : 0 -> 4 commits
+  - new commits
+    - series "mm/zsmalloc: reduce lock contention in zs_free()", v6. (4)
+      - 2682a98ead8b "mm/zsmalloc: encode class index in obj value for lockless class lookup (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260626015003.2965881-1-haowenchao22@gmail.com
+        - Link: https://lore.kernel.org/20260626015003.2965881-2-haowenchao22@gmail.com
+      - 34323beedf05 "mm/zsmalloc: drop pool->lock from zs_free on 64-bit systems (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260626015003.2965881-3-haowenchao22@gmail.com
+      - 81c593912a65 "mm/zsmalloc: drop class lock before freeing zspage (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260626015003.2965881-4-haowenchao22@gmail.com
+      - d156c929068f "mm/zsmalloc: document free_zspage helper variants (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260626015003.2965881-5-haowenchao22@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,64 +1,43 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 0c25b8734367 "mm/mincore: handle non-swap entries before !CONFIG_SWAP guard"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260602172247.279421-1-usama.arif@linux.dev
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 10 -> 0 commits
-  - series: 5 (9) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 5 -> 0 commits
-    - reviewer, no role : 3 -> 0 commits
-  - dropped commits
-    - series "fix MAP_DROPPABLE not supported errno", v4. (3)
-      - d86c9e971af2 "mm: fix mmap errno value when MAP_DROPPABLE is not supported (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260416033939.49981-1-anthony.yznaga@oracle.com
-        - Link: https://lore.kernel.org/20260416033939.49981-2-anthony.yznaga@oracle.com
-    - 7d40e6b66d97 "mm/mseal: use min/max in mseal_apply"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260503115915.18680-3-thorsten.blum@linux.dev
-    - series "remove mmap_action success, error hooks", v3. (3)
-      - 17986198a7b9 "drivers/char/mem: eliminate unnecessary use of success_hook (0/3)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/cover.1780397980.git.ljs@kernel.org
-        - Link: https://lore.kernel.org/010579cca6787cf7bb057ab1f7228978b10601c8.1780397980.git.ljs@kernel.org
-      - 8876dc0780f2 "mm/vma: remove mmap_action->success_hook (1/3)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/f79434e6d30af6d92999be6b76e197f1847105fa.1780397980.git.ljs@kernel.org
-      - 4f5b8759262e "mm/vma: eliminate mmap_action->error_hook, introduce error_override (2/3)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/55d13f7d016b827c459946d46a56105635be111c.1780397980.git.ljs@kernel.org
-    - series "use vma locks for proc/pid/{smaps|numa_maps} reads", v2. (3)
-      - ea3085dd7a4e "fs/proc/task_mmu: read proc/pid/{smaps|numa_maps} under per-vma lock (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260426062718.1238437-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260426062718.1238437-2-surenb@google.com
-    - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - 04718f7c9290 "fs/proc/task_mmu: fix make_uffd_wp_huge_pte() prot-update race (0/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260529172331.356655-1-kas@kernel.org
-        - Link: https://lore.kernel.org/20260529172331.356655-2-kas@kernel.org
-        - Link: https://lore.kernel.org/all/20260526130509.2748441-1-kirill@shutemov.name/ [1]
-      - 1b074e3270e1 "fs/proc/task_mmu: use huge_page_size() in pagemap_scan_hugetlb_entry() (1/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260529172331.356655-3-kas@kernel.org
-      - e92d92bbafb2 "fs/proc/task_mmu: fix hugetlb self-deadlock in pagemap_scan_pte_hole() (2/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260529172331.356655-4-kas@kernel.org
-    - series "mm/hmm: A fix and a selftest", v3. (2)
-      - cd1fc0e3c1f6 "fs/proc/task_mmu: do not warn on seeing non-migration pmd entry (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260604055308.1947679-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260604055308.1947679-2-dev.jain@arm.com
-- mm-unstable: 1 -> 1 commits (no change)
+- mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 6 commits
+  - series: 0 (0) -> 1 (5)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 0 -> 3 commits
+    - no role, maintainer: 0 -> 2 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm: drop "sub" prefix from various places". (2)
+      - fd9740e2d922 "mm/mprotect: drop 'sub' from batching context (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260623125723.2503832-3-dev.jain@arm.com
+    - series "mm: convert to walk_page_range_vma() to eliminate find_vma()", v2. (4)
+      - 9f792c5f9c92 "mm: mincore: use walk_page_range_vma() in do_mincore() (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260618092845.3905740-1-wangkefeng.wang@huawei.com
+        - Link: https://lore.kernel.org/20260618092845.3905740-2-wangkefeng.wang@huawei.com
+      - 73da31fac72e "mm-mincore-use-walk_page_range_vma-in-do_mincore-fix (1/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/ajP9bQhmvR9OX0VE@pedro-suse
+      - 56ca881bdd6e "mm: mprotect: use walk_page_range_vma() in mprotect_fixup() (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260618092845.3905740-3-wangkefeng.wang@huawei.com
+      - 60fd05421567 "mm: mlock: use walk_page_range_vma() in mlock_vma_pages_range() (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260618092845.3905740-4-wangkefeng.wang@huawei.com
+  - changed commits
+    - fe61612214b6 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Fixes: 2b6a3f061f11 ("mm: declare VMA flags by bit")"
+      - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

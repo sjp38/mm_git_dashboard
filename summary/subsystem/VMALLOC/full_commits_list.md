@@ -1,8 +1,32 @@
-- baseline: v7.1-13176-g840ef6c78e6a2
+- baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 6 total, 1 (5) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 4 commits
+    - no role, no role : 2 commits
+  - full commits list
+    - series "mm/percpu: Fix possible NOFS/NOIO reclaim recursion", v4. (4 commits)
+      - 81b7fe8637a9 "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260618130414.96383-1-kaitao.cheng@linux.dev
+        - Link: https://lore.kernel.org/20260618130414.96383-2-kaitao.cheng@linux.dev
+      - 7512829a3e73 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260618084726.1070022-4-jiangwen6@xiaomi.com
+      - 93092982ef33 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260618084726.1070022-5-jiangwen6@xiaomi.com
+      - e247acea7fd0 "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (4/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260618084726.1070022-6-jiangwen6@xiaomi.com
+      - f86c6d232c96 "mm/vmalloc: align vm_area so vmap() can batch mappings" (5/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260618084726.1070022-7-jiangwen6@xiaomi.com
+    - 4f790cd79360 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/453375c4-c3ca-4e6f-8880-0e6ff3c74ee3@web.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

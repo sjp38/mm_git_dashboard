@@ -1,8 +1,18 @@
-- baseline: v7.1-13176-g840ef6c78e6a2
+- baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+    - 0984bb35636d "mm/memcontrol: remove unused for_each_mem_cgroup macro and cleanup"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260624183700.1152742-1-joshua.hahnjy@gmail.com
+    - d44f26d0a4b8 "mm: memcg: remove stray text from obj_stock_pcp comment"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260623082614.81621-1-guopeng.zhang@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

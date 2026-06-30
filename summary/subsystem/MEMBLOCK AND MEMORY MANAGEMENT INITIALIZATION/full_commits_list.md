@@ -1,8 +1,36 @@
-- baseline: v7.1-13176-g840ef6c78e6a2
+- baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 8 total, 0 (8) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 7 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+      - d59afe101905 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
+      - 47fe59665adc "mm/mm_init: simplify deferred_free_pages() migratetype init" (4/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-6-songmuchun@bytedance.com
+      - cb3102d24319 "mm/sparse: move subsection_map_init() into sparse_init()" (6/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-8-songmuchun@bytedance.com
+      - 0179e1a07484 "mm/mm_init: defer sparse_init() until after zone initialization" (7/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-9-songmuchun@bytedance.com
+      - 1b3d8dbf57ac "mm/mm_init: defer hugetlb reservation until after zone initialization" (8/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-10-songmuchun@bytedance.com
+      - 0b7848e8db0a "mm/mm_init: remove set_pageblock_order() call from sparse_init()" (9/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-11-songmuchun@bytedance.com
+      - 603393e924fe "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid()" (10/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-12-songmuchun@bytedance.com
+      - ed133850d9b6 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-20-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

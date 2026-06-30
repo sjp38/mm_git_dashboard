@@ -1,13 +1,40 @@
-- baseline: v7.1-13176-g840ef6c78e6a2
+- baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-unstable: 2 total, 1 (1) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+    - series "mm: drop "sub" prefix from various places". (2 commits)
+      - fba98fd43ff4 "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260623125723.2503832-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260623125723.2503832-2-dev.jain@arm.com
+    - ca59eaab5610 "mm/lruvec: trace LRU add drains and drain-all requests"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260622185127.24579-1-jp.kobryn@linux.dev
+- mm-new: 5 total, 0 (0) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+    - no role, maintainer: 3 commits
   - full commits list
-    - 189ce3c81f81 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - 6bb32aefa495 "mm: annotate data-race in cpu_needs_drain()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260626053700.2036899-1-wangxuewen@kylinos.cn
+    - 019ee523e8a7 "include/linux/swap.h: remove unused leftovers"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/68591daf0d679e5a0072d63751f187d14613e2b0.1781146877.git.ritesh.list@gmail.com
+    - 7a43cd6cab61 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
+    - e0cf228fd211 "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260608143242.2869392-1-usama.arif@linux.dev
+      - Link: https://lore.kernel.org/all/dca2824e8e88e826c6b260a831d79089b5b9c79d.camel@surriel.com/T/#u [1]
+    - 88cefc306c43 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

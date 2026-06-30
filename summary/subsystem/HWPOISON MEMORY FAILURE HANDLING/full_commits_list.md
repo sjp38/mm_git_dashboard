@@ -1,14 +1,38 @@
-- baseline: v7.1-13176-g840ef6c78e6a2
+- baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 19a45b706c2f "mm/memory-failure: trace: change memory_failure_event to ras subsystem"
+    - 9218fbd7b894 "mm/memory-failure: trace: change memory_failure_event to ras subsystem"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260605081213.154660-1-xieyuanbin1@huawei.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+      - d9f2b885f98b "mm/memory-failure: remove redundant initialization for hw_memory_failure" (1/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260623114743.4565-3-igorpetindev@gmail.com
+- mm-new: 4 total, 1 (4) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, maintainer: 3 commits
+  - full commits list
+    - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (6 commits)
+      - bf6b178aba60 "mm/memory-failure: drop dead error_states[] entry for reserved pages" (0/6)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-0-6dacb8ad024d@debian.org
+        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-1-6dacb8ad024d@debian.org
+      - 61e5ed0a2f0e "mm/memory-failure: surface unhandlable kernel pages as -ENOTRECOVERABLE" (1/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-2-6dacb8ad024d@debian.org
+      - 95f837327ba8 "mm/memory-failure: report MF_MSG_KERNEL for unrecoverable kernel pages" (2/6)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-3-6dacb8ad024d@debian.org
+      - cd09d445cd16 "mm/memory-failure: add panic option for unrecoverable pages" (3/6)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-4-6dacb8ad024d@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

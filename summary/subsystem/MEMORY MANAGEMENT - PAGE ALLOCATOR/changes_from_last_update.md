@@ -1,122 +1,86 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
+- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-stable: 29 -> 0 commits
-  - series: 2 (15) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 4 -> 0 commits
-    - no role, reviewer: 15 -> 0 commits
-    - reviewer, no role : 5 -> 0 commits
-    - reviewer, reviewer: 2 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
-  - dropped commits
-    - b001cf7d16dd "mm/page_alloc: replace kernel_init_pages() with batch page clearing"
+  - new commits
+    - e1c3e45784ed "mm/page_alloc: use existing highatomic reserves on the buddy fastpath"
       - Authored by no role player, reviewed by a reviewer
-      - Link: : https://lore.kernel.org/20260504063942.553438-1-hsalunke@amd.com
-      - Link: https://lore.kernel.org/20260422102729.166599-1-hsalunke@amd.com
-    - series "mm: Free contiguous order-0 pages efficiently", v6. (3)
-      - 4aa4abf1f14b "mm/page_alloc: optimize free_contig_range() (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
-      - 60ced5818f64 "vmalloc: optimize vfree with free_pages_bulk() (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
-      - b971e47fd98f "mm/page_alloc: optimize __free_contig_frozen_range() (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260401101634.2868165-4-usama.anjum@arm.com
-    - 781b0e74748f "mm/page_owner: fix %pGp format specifier argument type"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260414075813.3425968-1-zhen.ni@easystack.cn
-    - 1d05e1f6ac26 "mm/page_alloc: cleanup flag vars in alloc_pages_bulk_noprof()"
+      - Link: https://lore.kernel.org/20260623004600.113347-1-jp.kobryn@linux.dev
+  - changed commits
+    - 217c7ca26f11 "mm/compaction: handle free_pages_prepare() properly in compaction_free()"
       - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260331-b4-prepare_alloc_pages-flags-v1-1-ea2416def698@google.com
-    - 94e0bcde055e "mm, page_alloc: reintroduce page allocation stall warning"
+      - added "Fixes: 733aea0b3a7b ("mm/compaction: add support for >0 order folio memory compaction.")"
+      - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Fixes: 733aea0b3a7bb ("mm/compaction: add support for >0 order folio memory compaction.")"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - Link: https://lore.kernel.org/20260622-handle_free_pages_prepare_in_compaction_free-v1-1-fcf3b14abcf7@nvidia.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 0 -> 12 commits
+  - series: 0 (0) -> 3 (11)
+    - no role, nobody: 0 -> 3 commits
+    - no role, reviewer: 0 -> 8 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 512d0dce2c2e "mm/page_alloc: don't build vm_numa_stat_key if CONFIG_NUMA=n"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/371c86c8-1d47-bd70-b74c-769842718b1f@google.com
-    - series "mm: use spinlock guards for zone lock", v3. (8)
-      - 5ebb2064da36 "mm: use zone lock guard in reserve_highatomic_pageblock() (0/8)"
+      - Link: https://lore.kernel.org/20260618100614.1321950-1-ben.dooks@codethink.co.uk
+    - series "mm/page_owner: misc cleanups", v2. (6)
+      - 7b01f677a45c "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping (0/6)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/cover.1777462630.git.d@ilvokhin.com
-        - Link: https://lore.kernel.org/3657e1144e2ffc1ca0eb57d57d89bfec4073d8c6.1777462630.git.d@ilvokhin.com
-        - Link: https://lore.kernel.org/all/20260309164516.GE606826@noisy.programming.kicks-ass.net/ [1]
-        - Link: https://lore.kernel.org/all/afC5C6fylF4AsITV@shell.ilvokhin.com/ [2]
-        - Link: https://lore.kernel.org/all/20260427165037.205337-1-d@ilvokhin.com/ [3]
-      - 3a92b4e99b74 "mm: use zone lock guard in unset_migratetype_isolate() (1/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/815c0905ea77828ed32bf56ff0a6d3c6548eb3a2.1777462630.git.d@ilvokhin.com
-      - 055526c21e2d "mm: use zone lock guard in unreserve_highatomic_pageblock() (2/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/69db814cd178915cb5615334a29304678f960963.1777462630.git.d@ilvokhin.com
-      - feb0df835fde "mm: use zone lock guard in set_migratetype_isolate() (3/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/6883351ad7f74d20875fff30e0e3214a089cea97.1777462630.git.d@ilvokhin.com
-      - ee8a0c15c26f "mm: use zone lock guard in take_page_off_buddy() (4/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/a981721632a981f148c63e3f7df3d1116a0c3f6d.1777462630.git.d@ilvokhin.com
-      - 5e22451096cd "mm: use zone lock guard in put_page_back_buddy() (5/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/b0fceedca37139da36aa626ac72eb9840b641021.1777462630.git.d@ilvokhin.com
-      - 5ad64655dde8 "mm: use zone lock guard in free_pcppages_bulk() (6/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/aafc2d660057a91eb40417f8ff4645b0a8c525e2.1777462630.git.d@ilvokhin.com
-      - 95b8e432265f "mm: use zone lock guard in __offline_isolated_pages() (7/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/13149be4f8151e18eb5f1eb4f3241ab3cffb373e.1777462630.git.d@ilvokhin.com
-    - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
-      - 23378be820a3 "mm/page_alloc: don't overload migratetype in find_suitable_fallback() (1/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-2-dacdf5402be8@google.com
-      - 3687c0fd6724 "mm: rejig pageblock mask definitions (2/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-3-dacdf5402be8@google.com
-      - 248b144a8a6d "mm/page_alloc: remove ifdefs from pindex helpers (3/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-4-dacdf5402be8@google.com
-    - d231522bf072 "mm/page_alloc: drop a misleading __always_inline"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/all/20260517-b4-drop-always-inline-v1-1-97b90930e8b8@google.com/
-      - Link: https://lore.kernel.org/all/016c8bef-57ef-44ef-bf60-86dbfd368dcd@kernel.org/
-    - 47166f219955 "mm/page_alloc: document that alloc_pages_nolock() uses RCU"
-      - Authored by a reviewer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260519-nolock-rcu-comment-v1-1-4a630c8794e5@google.com
-    - 4c0ed883e051 "mm/page_alloc: fix defrag_mode for non-reclaimable allocations"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260520122228.201550-1-d@ilvokhin.com
-    - 62f272d2fbff "mm/page_alloc: remove VM_BUG_ON()s from pindex helpers"
-      - Authored by a reviewer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260526-page_alloc-unmapped-prep-v2-1-412f4d486115@google.com
-      - Link: https://lore.kernel.org/all/4074a816-9e75-45a6-8141-25459bcc106b@kernel.org/
-    - series "zram: writeback fixes", v2. (2)
-      - 088a2353d714 "mm: remove mentions of PageWriteback (1/2)"
+        - Link: https://lore.kernel.org/20260626024550.25677-1-ye.liu@linux.dev
+        - Link: https://lore.kernel.org/20260626024550.25677-2-ye.liu@linux.dev
+      - feb2f8e9a1cf "mm/page_owner: use MIGRATE_REASON_NONE instead of -1 for last_migrate_reason (1/6)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-    - ed384eb3a3e1 "mm/compaction: respect cpusets when checking retry suitability"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/tencent_F59F2BA2CC5779308E10DF54593C736D3E0A@qq.com
-    - 3d4f1a541600 "mm/page_alloc: fix deferred compaction accounting"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/tencent_368AF1F3821E46232637BE16D65C45CF3308@qq.com
-    - 32a2b73ec232 "mm/compaction: cap compact_gap() at COMPACT_CLUSTER_MAX"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260604061725.13800-1-jp.kobryn@linux.dev
-    - 0c3a350d13ce "mm/alloc_tag: replace fixed-size early PFN array with dynamic linked list"
-      - Authored by a reviewer, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260604024008.46592-1-hao.ge@linux.dev
-    - 874611d193f2 "mm/page_alloc: only update NUMA min ratios on sysctl write"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/tencent_5891052AF9A4C2D490A62F478D446F74AB09@qq.com
-    - 878f41243c0d "mm: page_isolation: avoid unsafe folio reads while scanning compound pages"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260602130755.38794-1-kaitao.cheng@linux.dev
-- mm-unstable: 0 -> 0 commits (no change)
+        - Link: https://lore.kernel.org/20260626024550.25677-3-ye.liu@linux.dev
+      - 46ab9f9e719c "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg() (2/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260626024550.25677-4-ye.liu@linux.dev
+      - a7d2c2d1e1a2 "mm/page_owner: add missing newline to count_threshold format string (3/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260626024550.25677-5-ye.liu@linux.dev
+      - 8e82ef64d082 "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner() (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260626024550.25677-6-ye.liu@linux.dev
+      - bb47793a08b8 "mm/page_owner: drop redundant page_owner prefix from static symbols (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260626024550.25677-7-ye.liu@linux.dev
+    - series "mm/page_owner: fix TOCTOU races in lockless page state reading". (2)
+      - 7c19ca9c706e "mm/page_owner: clamp skip_buddy_pages() PFN advance at MAX_ORDER_NR_PAGES boundary (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260625014708.87386-1-ye.liu@linux.dev
+        - Link: https://lore.kernel.org/20260625014708.87386-2-ye.liu@linux.dev
+        - Link: https://lore.kernel.org/all/20260623065234.31866-2-ye.liu@linux.dev/ [1]
+        - Link: https://sashiko.dev/#/patchset/20260623065234.31866-2-ye.liu@linux.dev
+      - a1ec54e1c9fb "mm/page_owner: use memcg_data snapshot instead of PageMemcgKmem() to avoid TOCTOU VM_BUG_ON (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260625014708.87386-3-ye.liu@linux.dev
+    - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v11. (4)
+      - 94e3854cbe1e "mm/page_owner: add print_mode filter (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260625043101.338794-1-zhen.ni@easystack.cn
+        - Link: https://lore.kernel.org/20260625043101.338794-2-zhen.ni@easystack.cn
+      - 6d60466dfe5d "mm-page_owner-add-print_mode-filter-fix (1/4)"
+        - Authored by a maintainer, reviewed by nobody
+      - 6fe0954156b7 "mm/page_owner: add NUMA node filter (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260625043101.338794-3-zhen.ni@easystack.cn
+- mm-new: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 1 commits
+  - new commits
+    - 972593039303 "mm/page_alloc: drop flag-conversion "optimisation""
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260615-gfp-pessimisation-v2-1-65f1319e6818@google.com
+      - Link: https://github.com/bjackman/aethelred/blob/2ccdc84ef087c2a631914f58e106e99e19bd3b98/page-alloc-test/page-alloc-test.c [1]
+    - 7a43cd6cab61 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

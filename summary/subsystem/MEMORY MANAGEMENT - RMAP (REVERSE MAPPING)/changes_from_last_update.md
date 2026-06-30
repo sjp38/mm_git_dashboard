@@ -1,21 +1,15 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
+- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - series "mm: remove page_mapped()". (3)
-      - 90f01f5d6ba5 "mm: remove page_mapped() (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260427-page_mapped-v1-3-e89c3592c74c@kernel.org
-    - 3f08b20eb12f "mm/page_vma_mapped_walk: use ptep_get_lockless() for lockless access"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: : https://lore.kernel.org/ahhNq0pFKvSKZQbR@localhost.localdomain
-      - Link: https://lore.kernel.org/20260528075507.1821939-1-agordeev@linux.ibm.com
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 844530e7b644 "mm/page_vma_mapped: fix device-private PMD handling"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260624065353.1622-1-richard.weiyang@gmail.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

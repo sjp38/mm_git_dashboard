@@ -1,8 +1,65 @@
-- baseline: v7.1-13176-g840ef6c78e6a2
+- baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+  - full commits list
+    - 612aac1ed602 "mm: avoid KCSAN false positive in memdesc_nid()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260623084432.701120-1-hui.zhu@linux.dev
+    - 4817fe063048 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
+- mm-new: 13 total, 1 (11) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 7 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 3 commits
+  - full commits list
+    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19 commits)
+      - 3bc739a947cf "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages" (0/19)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260612035903.2468601-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260612035903.2468601-2-songmuchun@bytedance.com
+      - d59afe101905 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
+      - 05dd6c413d10 "mm/sparse: panic on memmap and usemap allocation failure" (5/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-7-songmuchun@bytedance.com
+      - cb3102d24319 "mm/sparse: move subsection_map_init() into sparse_init()" (6/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-8-songmuchun@bytedance.com
+      - 0b7848e8db0a "mm/mm_init: remove set_pageblock_order() call from sparse_init()" (9/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-11-songmuchun@bytedance.com
+      - 603393e924fe "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid()" (10/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-12-songmuchun@bytedance.com
+      - d07fb5c7542f "mm/hugetlb: refactor early boot gigantic hugepage allocation" (12/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-14-songmuchun@bytedance.com
+      - ce9b0bd7139e "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
+      - 92a44b122757 "mm/hugetlb: remove unused bootmem cma field" (17/19)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260612035903.2468601-19-songmuchun@bytedance.com
+      - ed133850d9b6 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-20-songmuchun@bytedance.com
+      - df97a56c7801 "Documentation: document panic_on_unrecoverable_memory_failure sysctl" (4/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-5-6dacb8ad024d@debian.org
+    - 7a43cd6cab61 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
+    - be4a498dacfb "mm/vmstat: avoid taking zone lock in /proc/buddyinfo reads"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260604134245.1580287-1-imran.f.khan@oracle.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

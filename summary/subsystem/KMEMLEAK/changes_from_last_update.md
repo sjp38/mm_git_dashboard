@@ -1,21 +1,32 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
+- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - series "mm/kmemleak: dedupe verbose scan output", v3. (2)
-      - 77d100d11c87 "mm/kmemleak: dedupe verbose scan output by allocation backtrace (0/2)"
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 0 -> 3 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, maintainer: 0 -> 3 commits
+  - new commits
+    - series "mm/kmemleak: avoid soft lockup when scanning task", v3. (3)
+      - b7102babb99c "mm/kmemleak: avoid soft lockup when scanning task stacks (0/3)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260506-kmemleak_dedup-v3-0-2d36aafc34da@debian.org
-        - Link: https://lore.kernel.org/20260506-kmemleak_dedup-v3-1-2d36aafc34da@debian.org
-- mm-unstable: 0 -> 0 commits (no change)
+        - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-0-acecd7d7fd92@debian.org
+        - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-1-acecd7d7fd92@debian.org
+      - c5e35d57c5e2 "mm/kmemleak: stop the task stack scan early when interrupted (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-2-acecd7d7fd92@debian.org
+      - 8855db36432f "mm/kmemleak: stop the per-cpu and struct page scans early too (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-3-acecd7d7fd92@debian.org
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 2180266b7724 "mm/kmemleak: skip the remaining scan phases when interrupted"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260626-kmemleak_improve-v1-1-d40c7616f64f@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

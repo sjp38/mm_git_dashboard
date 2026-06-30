@@ -1,20 +1,104 @@
-- baseline: v7.1-13176-g840ef6c78e6a2
+- baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 1 (2) series, 0 non-series commits
+- mm-hotfixes-unstable: 6 total, 1 (2) series, 4 non-series commits
   - author/reviewer role stat
-    - maintainer, nobody: 2 commits
+    - no role, nobody: 3 commits
+    - maintainer, nobody: 3 commits
   - full commits list
     - series "mm/damon/sysfs-schemes: fix wrong directories put orders in error paths". (2 commits)
-      - 94e4f0681c30 "mm/damon/sysfs-schemes: fix dir put orders in access_pattern_add_dirs()" (0/2)
-        - Authored by a maintainer, reviewed by nobody
+      - b7ba45001a2e "mm/damon/sysfs-schemes: fix dir put orders in access_pattern_add_dirs()" (0/2)
+        - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260618005650.83868-2-sj@kernel.org
         - Link: https://lore.kernel.org/20260617060005.86852-1-sj@kernel.org [1]
-      - 046968d607bf "mm/damon/sysfs-schemes: put stats for scheme_add_dirs() internal error" (1/2)
-        - Authored by a maintainer, reviewed by nobody
+      - b7bdc3c10f2b "mm/damon/sysfs-schemes: put stats for scheme_add_dirs() internal error" (1/2)
+        - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260618005650.83868-3-sj@kernel.org
         - Link: https://lore.kernel.org/20260617005223.96813-1-sj@kernel.org [1]
+    - 4644847969a6 "mm/damon/ops-common: handle extreme intervals in damon_hot_score()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260623135834.67189-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260619202459.145010-1-sj@kernel.org [1]
+    - b0fd5ccef6f7 "MAINTAINERS: s/SeongJae/SJ/"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260627195630.24519-1-sj@kernel.org
+    - e01f4fb2ac74 "mm/damon: add a kernel-doc comment for damon_ctx->probes"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260628220808.98931-1-sj@kernel.org
+      - Link: https://lore.kernel.org/20260628220808.98931-2-sj@kernel.org
+    - c234b8947146 "mm/damon: add a kernel-doc comment for damon_ctx->rnd_state"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260628220808.98931-3-sj@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 18 total, 2 (17) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - maintainer, nobody: 11 commits
+    - maintainer, no role : 6 commits
+  - full commits list
+    - 4cab9994b97a "mm/damon/core: reduce kernel stack usage"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260611125704.3386176-1-arnd@kernel.org
+    - series "samples/damon: handle damon_{start,stop}() failures". (6 commits)
+      - efaf215193f1 "samples/damon/wsse: handle damon_start() failure" (0/6)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260628215447.96166-2-sj@kernel.org
+        - Link: https://lore.kernel.org/20260609145814.70163-1-sj@kernel.org [1]
+      - 787bb83ccf94 "samples/damon/prcl: handle damon_start() failure" (1/6)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260628215447.96166-3-sj@kernel.org
+        - Link: https://lore.kernel.org/20260609145814.70163-1-sj@kernel.org [1]
+      - 897da531c526 "samples/damon/mtier: handle damon_start() failure" (2/6)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260628215447.96166-4-sj@kernel.org
+        - Link: https://lore.kernel.org/20260608112455.274231F00893@smtp.kernel.org [1]
+      - ebb15af168b9 "samples/damon/mtier: handle damon_stop() failure" (3/6)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260628215447.96166-5-sj@kernel.org
+        - Link: https://lore.kernel.org/20260609014219.3013-1-sj@kernel.org [1]
+      - a3841ceece2e "samples/damon/wsse: stop and free damon ctx when damon_call() fails" (4/6)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260628215447.96166-6-sj@kernel.org
+        - Link: https://lore.kernel.org/20260610034828.4632-1-sj@kernel.org [1]
+      - 47f8646dafa6 "samples/damon/prcl: stop and free damon ctx when damon_call() fails" (5/6)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260628215447.96166-7-sj@kernel.org
+        - Link: https://lore.kernel.org/20260610035214.4850-1-sj@kernel.org [1]
+    - series "mm/damon/sysfs: kobject_del() directories that users can create/remove". (11 commits)
+      - aac50f7d1fe3 "mm/damon/sysfs: kobject_del() target (normal), context and kdamond dirs" (0/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260628220121.97360-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260628220121.97360-2-sj@kernel.org
+      - 4f2396587a12 "mm/damon/sysfs: kobject_del() region and target (error) dirs" (1/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260628220121.97360-3-sj@kernel.org
+      - 4644dc8bc1ce "mm/damon/sysfs-schemes: kobject_del() scheme dirs" (2/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260628220121.97360-4-sj@kernel.org
+      - 74aea223c16d "mm/damon/sysfs-schemes: kobject_del() scheme region dirs" (3/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260628220121.97360-5-sj@kernel.org
+        - Link: https://lore.kernel.org/20260517205828.6204-1-sj@kernel.org [1]
+      - c0079a0034cb "mm/damon/sysfs-schemes: kobject_del() scheme filter dirs" (4/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260628220121.97360-6-sj@kernel.org
+      - ce862960b967 "mm/damon/sysfs-schemes: kobject_del() scheme quota goal dirs" (5/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260628220121.97360-7-sj@kernel.org
+      - 15cebda6ac3b "mm/damon/sysfs-schemes: kobject_del() scheme action destination dirs" (6/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260628220121.97360-8-sj@kernel.org
+      - cac9a61985ec "mm/damon/sysfs: kobject_del() probe dirs" (7/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260628220121.97360-9-sj@kernel.org
+      - 3b0ef976e8d7 "mm/damon/sysfs: kobject_del() probe filter dirs" (8/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260628220121.97360-10-sj@kernel.org
+      - 49f3ca670964 "mm/damon/sysfs: kobject_del() probe dirs in probes_addd_dir error path" (9/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260628220121.97360-11-sj@kernel.org
+      - 16ca2275a820 "mm/damon/sysfs-schemes: kobject_del() region for populate_region error" (10/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260628220121.97360-12-sj@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

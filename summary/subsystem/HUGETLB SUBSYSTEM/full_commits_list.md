@@ -1,8 +1,48 @@
-- baseline: v7.1-13176-g840ef6c78e6a2
+- baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 11 total, 1 (10) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 6 commits
+    - no role, maintainer: 3 commits
+  - full commits list
+    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19 commits)
+      - 3bc739a947cf "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages" (0/19)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260612035903.2468601-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260612035903.2468601-2-songmuchun@bytedance.com
+      - efec5a891152 "mm/hugetlb_vmemmap: fix __hugetlb_vmemmap_optimize_folios()" (1/19)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260612035903.2468601-3-songmuchun@bytedance.com
+      - d59afe101905 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
+      - 92480c8ab981 "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time" (11/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-13-songmuchun@bytedance.com
+      - d07fb5c7542f "mm/hugetlb: refactor early boot gigantic hugepage allocation" (12/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-14-songmuchun@bytedance.com
+      - ca689caafc22 "mm/hugetlb: free cross-zone bootmem gigantic pages after allocation" (13/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-15-songmuchun@bytedance.com
+      - b49165b272d0 "mm/hugetlb_vmemmap: move bootmem HVO setup to early init" (14/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-16-songmuchun@bytedance.com
+      - 1e31b8acc670 "mm/hugetlb: remove obsolete bootmem cross-zone checks" (15/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-17-songmuchun@bytedance.com
+      - ce9b0bd7139e "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
+      - 92a44b122757 "mm/hugetlb: remove unused bootmem cma field" (17/19)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260612035903.2468601-19-songmuchun@bytedance.com
+    - 534913900bb3 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260628190155.3655895-1-souravpanda@google.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

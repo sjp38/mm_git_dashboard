@@ -1,17 +1,19 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
+- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 0 commits
+- mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
-  - dropped commits
-    - 7c2ebe0fe06e "kasan/test: only do kmalloc_double_kzfree for generic mode"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260524031053.381776-1-wsw9603@163.com
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - series "mm: remove redundant static variable initializations". (2)
+      - 33c6aa109a56 "mm/kasan: remove redundant initialization for kasan_flag_write_only (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260623114743.4565-1-igorpetindev@gmail.com
+        - Link: https://lore.kernel.org/20260623114743.4565-2-igorpetindev@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

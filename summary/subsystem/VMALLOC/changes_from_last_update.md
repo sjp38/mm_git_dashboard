@@ -1,46 +1,36 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
+- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 8 -> 0 commits
-  - series: 2 (7) -> 0 (0)
-    - no role, no role : 7 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-  - dropped commits
-    - series "mm: Free contiguous order-0 pages efficiently", v6. (3)
-      - 60ced5818f64 "vmalloc: optimize vfree with free_pages_bulk() (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
-    - series "kasan: hw_tags: Disable tagging for stack and page-tables", v4. (3)
-      - b56ca146a2b2 "vmalloc: add __GFP_SKIP_KASAN support (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260429102704.680174-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260429102704.680174-2-dev.jain@arm.com
-    - series "mm/vmalloc: free unused pages on vrealloc() shrink", v14. (5)
-      - 4f1839e22527 "mm/vmalloc: extract vm_area_free_pages() helper from vfree() (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-0-70b96ee3e9c9@zohomail.in
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-1-70b96ee3e9c9@zohomail.in
-        - Link: https://lore.kernel.org/all/20260216-binder-shrink-vec-v3-v6-0-ece8e8593e53@zohomail.in/ [1]
-      - d57ac904ffdc "mm/vmalloc: use physical page count for vrealloc() grow-in-place check (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-2-70b96ee3e9c9@zohomail.in
-      - 0bca23804632 "mm/vmalloc: use physical page count in vread_iter() for VM_ALLOC areas (2/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: : https://lore.kernel.org/aff47da5-4fd5-481d-be18-e1eb99639490@zohomail.in
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-3-70b96ee3e9c9@zohomail.in
-      - 5ea8ec74c57c "mm/vmalloc: free unused pages on vrealloc() shrink (3/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-4-70b96ee3e9c9@zohomail.in
-      - 3c3daeafcdb6 "lib/test_vmalloc: add vrealloc test case (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260519-vmalloc-shrink-v14-5-70b96ee3e9c9@zohomail.in
-    - c55dd3b46c12 "vmalloc: fix NULL pointer dereference in is_vm_area_hugepages()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260529014130.671291-1-hui.zhu@linux.dev
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 0 -> 6 commits
+  - series: 0 (0) -> 1 (5)
+    - no role, nobody: 0 -> 4 commits
+    - no role, no role : 0 -> 2 commits
+  - new commits
+    - series "mm/percpu: Fix possible NOFS/NOIO reclaim recursion", v4. (4)
+      - 81b7fe8637a9 "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas() (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260618130414.96383-1-kaitao.cheng@linux.dev
+        - Link: https://lore.kernel.org/20260618130414.96383-2-kaitao.cheng@linux.dev
+    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v4. (6)
+      - 7512829a3e73 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic (2/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260618084726.1070022-4-jiangwen6@xiaomi.com
+      - 93092982ef33 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk (3/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260618084726.1070022-5-jiangwen6@xiaomi.com
+      - e247acea7fd0 "mm/vmalloc: map contiguous pages in batches for vmap() if possible (4/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260618084726.1070022-6-jiangwen6@xiaomi.com
+      - f86c6d232c96 "mm/vmalloc: align vm_area so vmap() can batch mappings (5/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260618084726.1070022-7-jiangwen6@xiaomi.com
+    - 4f790cd79360 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/453375c4-c3ca-4e6f-8880-0e6ff3c74ee3@web.de
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -1,13 +1,32 @@
-- baseline: v7.1-13176-g840ef6c78e6a2
+- baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-unstable: 6 total, 1 (5) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 2 commits
+    - maintainer, nobody: 1 commits
   - full commits list
-    - 81652c5a65d4 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
-      - Authored by no role player, reviewed by nobody
+      - fd9740e2d922 "mm/mprotect: drop 'sub' from batching context" (1/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260623125723.2503832-3-dev.jain@arm.com
+    - series "mm: convert to walk_page_range_vma() to eliminate find_vma()", v2. (4 commits)
+      - 9f792c5f9c92 "mm: mincore: use walk_page_range_vma() in do_mincore()" (0/4)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260618092845.3905740-1-wangkefeng.wang@huawei.com
+        - Link: https://lore.kernel.org/20260618092845.3905740-2-wangkefeng.wang@huawei.com
+      - 73da31fac72e "mm-mincore-use-walk_page_range_vma-in-do_mincore-fix" (1/4)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/ajP9bQhmvR9OX0VE@pedro-suse
+      - 56ca881bdd6e "mm: mprotect: use walk_page_range_vma() in mprotect_fixup()" (2/4)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260618092845.3905740-3-wangkefeng.wang@huawei.com
+      - 60fd05421567 "mm: mlock: use walk_page_range_vma() in mlock_vma_pages_range()" (3/4)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260618092845.3905740-4-wangkefeng.wang@huawei.com
+    - fe61612214b6 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,164 +1,71 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 3c2d42b8ee34 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: : https://sashiko.dev/#/patchset/20260522010305.4099834-1-mawupeng1@huawei.com
-      - Link: : https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com
-      - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 35 -> 0 commits
-  - series: 6 (24) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 11 -> 0 commits
-    - no role, reviewer: 9 -> 0 commits
-    - no role, maintainer: 4 -> 0 commits
-    - reviewer, no role : 4 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, maintainer: 4 -> 0 commits
-  - dropped commits
-    - 8613803cf5d5 "mm: convert vmemmap_p?d_populate() to static functions"
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 0 -> 2 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 612aac1ed602 "mm: avoid KCSAN false positive in memdesc_nid()"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260423101441.7089-1-kaitao.cheng@linux.dev
-    - series "mm: Free contiguous order-0 pages efficiently", v6. (3)
-      - 4aa4abf1f14b "mm/page_alloc: optimize free_contig_range() (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260401101634.2868165-1-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/20260401101634.2868165-2-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/all/66919a28-bc81-49c9-b68f-dd7c73395a0d@arm.com [1]
-      - 60ced5818f64 "vmalloc: optimize vfree with free_pages_bulk() (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260401101634.2868165-3-usama.anjum@arm.com
-    - 214f9ab72ce6 "mm/memory: update stale locking comments for fault handlers"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260424092217.263648-1-adi.sharma@zohomail.in
-    - e0974347f5bb "mm/sparse: remove unnecessary NULL check before allocating mem_section"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260419144225.2875654-1-ekffu200098@gmail.com
-    - ffe55393137c "mm/sparse: remove sparse buffer pre-allocation mechanism"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260410092419.2446420-1-songmuchun@bytedance.com
-    - f2a950170f7a "mm/vmpressure: skip socket pressure for costly order reclaim"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260406195014.112521-1-jp.kobryn@linux.dev
-    - b9fe373e7d3c "mm/thp: dead code cleanup in Kconfig"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260331070730.33915-1-julianbraha@gmail.com
-    - series "mm: Fix vmemmap optimization accounting and initialization", v8. (6)
-      - c373f7f98e6a "mm/sparse-vmemmap: fix vmemmap accounting underflow (0/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260428081855.1249045-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260428081855.1249045-2-songmuchun@bytedance.com
-      - 3bbc54dd1b62 "mm/sparse-vmemmap: pass @pgmap argument to memory deactivation paths (2/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260428081855.1249045-4-songmuchun@bytedance.com
-      - 721a73e30c9e "mm/sparse-vmemmap: fix DAX vmemmap accounting with optimization (3/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260428081855.1249045-5-songmuchun@bytedance.com
-    - series "mm: remove page_mapped()". (3)
-      - 90f01f5d6ba5 "mm: remove page_mapped() (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260427-page_mapped-v1-3-e89c3592c74c@kernel.org
-    - series "kasan: hw_tags: Disable tagging for stack and page-tables", v4. (3)
-      - b56ca146a2b2 "vmalloc: add __GFP_SKIP_KASAN support (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260429102704.680174-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260429102704.680174-2-dev.jain@arm.com
-      - 6ae51adb084a "kasan: skip HW tagging for all kernel thread stacks (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260429102704.680174-3-dev.jain@arm.com
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 1)". (8)
-      - 14d1948fa238 "powerpc/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (7/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260511-bootmem_info_prep-v1-8-3fb0be6fc688@kernel.org
-    - 9b1b295e9fd3 "drivers/base/memory: make memory block get/put explicit"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/linux-mm/7887915D-E598-42B3-9AFE-BFFBACE8DE2D@linux.dev/#t
-      - Link: https://lore.kernel.org/20260512072635.3969576-1-songmuchun@bytedance.com
-    - 80eacd489a50 "mm/mmu_notifier: fix a begin vs. start typo in the invalidate range comment"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260513163546.1176742-1-seanjc@google.com
-    - series "mm: misc cleanups from __GFP_UNMAPPED series". (4)
-      - 9c860d1d5d69 "mm: introduce for_each_free_list() (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-0-dacdf5402be8@google.com
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-1-dacdf5402be8@google.com
-        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [0]
-      - 23378be820a3 "mm/page_alloc: don't overload migratetype in find_suitable_fallback() (1/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260513-page_alloc-unmapped-prep-v1-2-dacdf5402be8@google.com
-    - series "mm, swap: swap table phase IV: unify allocation", v5. (12)
-      - 02d733a7ec1d "mm, swap: unify large folio allocation (4/12)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-5-88ae43e064c7@tencent.com
-      - bc34e87a51d9 "mm, swap: delay and unify memcg lookup and charging for swapin (7/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-8-88ae43e064c7@tencent.com
-      - 4e8e1c498de9 "mm/memcg: remove no longer used swap cgroup array (10/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-11-88ae43e064c7@tencent.com
-      - d9ceded101a1 "mm, swap: merge zeromap into swap table (11/12)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260517-swap-table-p4-v5-12-88ae43e064c7@tencent.com
-    - series "remove mmap_action success, error hooks", v3. (3)
-      - 17986198a7b9 "drivers/char/mem: eliminate unnecessary use of success_hook (0/3)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/cover.1780397980.git.ljs@kernel.org
-        - Link: https://lore.kernel.org/010579cca6787cf7bb057ab1f7228978b10601c8.1780397980.git.ljs@kernel.org
-      - 8876dc0780f2 "mm/vma: remove mmap_action->success_hook (1/3)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/f79434e6d30af6d92999be6b76e197f1847105fa.1780397980.git.ljs@kernel.org
-      - 4f5b8759262e "mm/vma: eliminate mmap_action->error_hook, introduce error_override (2/3)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/55d13f7d016b827c459946d46a56105635be111c.1780397980.git.ljs@kernel.org
-    - series "zram: writeback fixes", v2. (2)
-      - 088a2353d714 "mm: remove mentions of PageWriteback (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260526195650.353196-1-willy@infradead.org
-    - a195cf013e98 "docs: mm: clarify that user_reserve_kbytes has no effect when overcommit_memory is set to 0 or 1"
+      - Link: https://lore.kernel.org/20260623084432.701120-1-hui.zhu@linux.dev
+    - 4817fe063048 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260528-mm-clarify-docs-v1-1-aa88e83b4bfd@redhat.com
-    - series "mm: switch THP shrinker to list_lru", v5. (9)
-      - 65180e9663c7 "mm: memory: flatten alloc_anon_folio() retry loop (7/9)"
+      - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
+- mm-new: 0 -> 13 commits
+  - series: 0 (0) -> 1 (11)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 0 -> 7 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 3 commits
+  - new commits
+    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
+      - 3bc739a947cf "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages (0/19)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260612035903.2468601-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260612035903.2468601-2-songmuchun@bytedance.com
+      - d59afe101905 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier (3/19)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
+      - 05dd6c413d10 "mm/sparse: panic on memmap and usemap allocation failure (5/19)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260527204757.2544958-9-hannes@cmpxchg.org
-      - fafaeceb89a5 "mm: switch deferred split shrinker to list_lru (8/9)"
-        - Authored by a maintainer, reviewed by a maintainer
-        - Link: : https://lore.kernel.org/202605281620.lc3rtkBm-lkp@intel.com
-        - Link: : https://lore.kernel.org/ah9PGv12mqai84ES@cmpxchg.org
-        - Link: https://lore.kernel.org/20260527204757.2544958-10-hannes@cmpxchg.org
-    - cdea4acce026 "mm: delete stale comment about cachelines"
+        - Link: https://lore.kernel.org/20260612035903.2468601-7-songmuchun@bytedance.com
+      - cb3102d24319 "mm/sparse: move subsection_map_init() into sparse_init() (6/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-8-songmuchun@bytedance.com
+      - 0b7848e8db0a "mm/mm_init: remove set_pageblock_order() call from sparse_init() (9/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-11-songmuchun@bytedance.com
+      - 603393e924fe "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid() (10/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-12-songmuchun@bytedance.com
+      - d07fb5c7542f "mm/hugetlb: refactor early boot gigantic hugepage allocation (12/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-14-songmuchun@bytedance.com
+      - ce9b0bd7139e "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late() (16/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
+      - 92a44b122757 "mm/hugetlb: remove unused bootmem cma field (17/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260612035903.2468601-19-songmuchun@bytedance.com
+      - ed133850d9b6 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page() (18/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-20-songmuchun@bytedance.com
+    - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (6)
+      - df97a56c7801 "Documentation: document panic_on_unrecoverable_memory_failure sysctl (4/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-5-6dacb8ad024d@debian.org
+    - 7a43cd6cab61 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
+    - be4a498dacfb "mm/vmstat: avoid taking zone lock in /proc/buddyinfo reads"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260601-zone_stat_item-comment-v1-1-f452dd91d5eb@google.com
-    - series "userfaultfd/pagemap: pre-existing fixes". (6)
-      - cc7a9f6e57c4 "userfaultfd: build __VMA_UFFD_FLAGS from config-gated masks (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260529172331.356655-7-kas@kernel.org
-    - series "mm/sparse-vmemmap: Provide generic vmemmap_set_pmd() and vmemmap_check_pmd()", v3. (5)
-      - 0b6073ff1574 "mm/sparse-vmemmap: provide generic vmemmap_set_pmd() and vmemmap_check_pmd() (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260601084845.3792171-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260601084845.3792171-2-songmuchun@bytedance.com
-    - series "Remove CONFIG_READ_ONLY_THP_FOR_FS and enable file THP for writable files", v6. (14)
-      - e4df0f37bd95 "mm: remove READ_ONLY_THP_FOR_FS Kconfig option (4/14)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260517135416.1434539-6-ziy@nvidia.com
-    - c565c009d0c0 "mm: use mapping_mapped to simplify the code"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260612073032.33228-1-huangsj@hygon.cn
-- mm-unstable: 0 -> 0 commits (no change)
+      - Link: https://lore.kernel.org/20260604134245.1580287-1-imran.f.khan@oracle.com
+- mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-stable: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 97bd80a91858 "treewide: fix indentation and whitespace in Kconfig files"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260407053945.14116-1-linux.amoon@gmail.com
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

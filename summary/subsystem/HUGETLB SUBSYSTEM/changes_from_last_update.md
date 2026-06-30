@@ -1,51 +1,53 @@
-- baseline: v7.1-rc5-20-gd60ec36cab338 -> v7.1-13176-g840ef6c78e6a2
-- mm-hotfixes-stable: 4 -> 0 commits
+- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 3 -> 0 commits
-  - dropped commits
-    - b4aea43cd37a "mm/hugetlb: avoid false positive lockdep assertion"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: : https://lore.kernel.org/agWZsPGYid08uU6O@lucifer
-      - Link: https://lore.kernel.org/20260513085658.45264-1-ljs@kernel.org
-    - 40c81856e622 "mm/hugetlb: restore reservation on error in hugetlb folio copy paths"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260520044912.6751-1-devnexen@gmail.com
-    - 3c2d42b8ee34 "mm/memory-failure: fix hugetlb_lock AA deadlock in get_huge_page_for_hwpoison"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: : https://sashiko.dev/#/patchset/20260522010305.4099834-1-mawupeng1@huawei.com
-      - Link: : https://lore.kernel.org/f39f405e-4b4b-8f79-70fe-a2b5b62114eb@huawei.com
-      - Link: https://lore.kernel.org/20260522010305.4099834-1-mawupeng1@huawei.com
-    - c7bde43f6daf "mm/hugetlb_vmemmap: fix incorrect vmemmap restore in rollback"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260525025213.2229628-1-songmuchun@bytedance.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
-    - no role, maintainer: 3 -> 0 commits
-  - dropped commits
-    - 15807d0ddde3 "mm/hugetlb: fix hugetlb cgroup rsvd charge/uncharge mismatch"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260328065534.346053-1-kartikey406@gmail.com
-    - fb95c50921f0 "mm/hugetlb_cma: restrict hugetlb_cma parameter to gigantic-page alignment"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260503084225.415980-1-ekffu200098@gmail.com
-    - series "make MM selftests more CI friendly", v4. (55)
-      - 9c5a65f374f8 "selftests/mm: merge map_hugetlb into hugepage-mmap (5/55)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260511162840.375890-7-rppt@kernel.org
-      - a93cbee52751 "selftests/mm: rename hugepage-* tests to hugetlb-* (6/55)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260511162840.375890-8-rppt@kernel.org
-    - c565c009d0c0 "mm: use mapping_mapped to simplify the code"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260612073032.33228-1-huangsj@hygon.cn
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 11 commits
+  - series: 0 (0) -> 1 (10)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 0 -> 6 commits
+    - no role, maintainer: 0 -> 3 commits
+  - new commits
+    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
+      - 3bc739a947cf "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages (0/19)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260612035903.2468601-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260612035903.2468601-2-songmuchun@bytedance.com
+      - efec5a891152 "mm/hugetlb_vmemmap: fix __hugetlb_vmemmap_optimize_folios() (1/19)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260612035903.2468601-3-songmuchun@bytedance.com
+      - d59afe101905 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier (3/19)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
+      - 92480c8ab981 "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time (11/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-13-songmuchun@bytedance.com
+      - d07fb5c7542f "mm/hugetlb: refactor early boot gigantic hugepage allocation (12/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-14-songmuchun@bytedance.com
+      - ca689caafc22 "mm/hugetlb: free cross-zone bootmem gigantic pages after allocation (13/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-15-songmuchun@bytedance.com
+      - b49165b272d0 "mm/hugetlb_vmemmap: move bootmem HVO setup to early init (14/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-16-songmuchun@bytedance.com
+      - 1e31b8acc670 "mm/hugetlb: remove obsolete bootmem cross-zone checks (15/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-17-songmuchun@bytedance.com
+      - ce9b0bd7139e "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late() (16/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
+      - 92a44b122757 "mm/hugetlb: remove unused bootmem cma field (17/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260612035903.2468601-19-songmuchun@bytedance.com
+    - 534913900bb3 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260628190155.3655895-1-souravpanda@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

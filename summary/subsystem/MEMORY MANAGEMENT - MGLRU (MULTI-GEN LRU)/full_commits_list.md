@@ -1,8 +1,31 @@
-- baseline: v7.1-13176-g840ef6c78e6a2
+- baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+    - ca59eaab5610 "mm/lruvec: trace LRU add drains and drain-all requests"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260622185127.24579-1-jp.kobryn@linux.dev
+    - 4817fe063048 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
+- mm-new: 3 total, 0 (1) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+      - ce9b0bd7139e "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
+    - 6bb32aefa495 "mm: annotate data-race in cpu_needs_drain()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260626053700.2036899-1-wangxuewen@kylinos.cn
+    - 7a43cd6cab61 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
