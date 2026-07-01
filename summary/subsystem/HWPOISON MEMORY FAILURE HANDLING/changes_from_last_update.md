@@ -1,4 +1,4 @@
-- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
+- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -6,33 +6,43 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - series "mm: remove redundant static variable initializations". (2)
-      - d9f2b885f98b "mm/memory-failure: remove redundant initialization for hw_memory_failure (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260623114743.4565-3-igorpetindev@gmail.com
-- mm-new: 0 -> 4 commits
-  - series: 0 (0) -> 1 (4)
+- mm-unstable: 1 -> 5 commits
+  - series: 0 (1) -> 1 (5)
     - no role, nobody: 0 -> 1 commits
-    - no role, maintainer: 0 -> 3 commits
-  - new commits
+    - no role, maintainer: 1 -> 4 commits
+  - changed commits
     - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (6)
-      - bf6b178aba60 "mm/memory-failure: drop dead error_states[] entry for reserved pages (0/6)"
+      - 66021ccdd5d5 "mm/memory-failure: drop dead error_states[] entry for reserved pages (0/6)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-0-6dacb8ad024d@debian.org
-        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-1-6dacb8ad024d@debian.org
-      - 61e5ed0a2f0e "mm/memory-failure: surface unhandlable kernel pages as -ENOTRECOVERABLE (1/6)"
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260630-ecc_panic-v10-1-c6ed5b62eea2@debian.org"
+        - added "Link: https://lore.kernel.org/20260630-ecc_panic-v10-0-c6ed5b62eea2@debian.org"
+        - dropped "Link: https://lore.kernel.org/20260626-ecc_panic-v10-1-6dacb8ad024d@debian.org"
+        - dropped "Link: https://lore.kernel.org/20260626-ecc_panic-v10-0-6dacb8ad024d@debian.org"
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-0-c6ed5b62eea2@debian.org
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-1-c6ed5b62eea2@debian.org
+      - 65e8f070825c "mm/memory-failure: surface unhandlable kernel pages as -ENOTRECOVERABLE (1/6)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-2-6dacb8ad024d@debian.org
-      - 95f837327ba8 "mm/memory-failure: report MF_MSG_KERNEL for unrecoverable kernel pages (2/6)"
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260630-ecc_panic-v10-2-c6ed5b62eea2@debian.org"
+        - dropped "Link: https://lore.kernel.org/20260626-ecc_panic-v10-2-6dacb8ad024d@debian.org"
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-2-c6ed5b62eea2@debian.org
+      - 890468f8389d "mm/memory-failure: report MF_MSG_KERNEL for unrecoverable kernel pages (2/6)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-3-6dacb8ad024d@debian.org
-      - cd09d445cd16 "mm/memory-failure: add panic option for unrecoverable pages (3/6)"
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260630-ecc_panic-v10-3-c6ed5b62eea2@debian.org"
+        - dropped "Link: https://lore.kernel.org/20260626-ecc_panic-v10-3-6dacb8ad024d@debian.org"
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-3-c6ed5b62eea2@debian.org
+      - f0f4c0bb4a9f "mm/memory-failure: add panic option for unrecoverable pages (3/6)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-4-6dacb8ad024d@debian.org
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260630-ecc_panic-v10-4-c6ed5b62eea2@debian.org"
+        - dropped "Link: https://lore.kernel.org/20260626-ecc_panic-v10-4-6dacb8ad024d@debian.org"
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-4-c6ed5b62eea2@debian.org
+- mm-new: 4 -> 0 commits
+  - series: 1 (4) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 3 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,19 +1,40 @@
-- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
+- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - 844530e7b644 "mm/page_vma_mapped: fix device-private PMD handling"
+    - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 6a13c4661ece "mm/page_vma_mapped: fix device-private PMD handling"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260624065353.1622-1-richard.weiyang@gmail.com
+      - added "Link: https://lore.kernel.org/20260630021540.17297-1-richard.weiyang@gmail.com"
+      - added "Cc: Zi Yan <ziy@nvidia.com>"
+      - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260624065353.1622-1-richard.weiyang@gmail.com"
+      - dropped "Suggested-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - dropped "Cc: Jann Horn <jannh@google.com>"
+      - dropped "Cc: Rik van Riel <riel@surriel.com>"
+      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+      - dropped "Cc: Harry Yoo <harry@kernel.org>"
+      - dropped "Acked-by: Zi Yan <ziy@nvidia.com>"
+      - Link: https://lore.kernel.org/20260630021540.17297-1-richard.weiyang@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm: preparatory patches for PMD level swap entries". (6)
+      - 108513c1f804 "mm: extract mm_prepare_for_swap_entries() helper (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260630164143.1595669-3-usama.arif@linux.dev
+      - d39499090fa3 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

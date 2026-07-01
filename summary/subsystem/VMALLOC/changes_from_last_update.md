@@ -1,36 +1,31 @@
-- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
+- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 6 commits
-  - series: 0 (0) -> 1 (5)
-    - no role, nobody: 0 -> 4 commits
-    - no role, no role : 0 -> 2 commits
+- mm-unstable: 6 -> 7 commits
+  - series: 1 (5) -> 1 (5) (no change)
+    - no role, nobody: 4 -> 2 commits
+    - no role, no role : 2 -> 4 commits
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - series "mm/percpu: Fix possible NOFS/NOIO reclaim recursion", v4. (4)
-      - 81b7fe8637a9 "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas() (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260618130414.96383-1-kaitao.cheng@linux.dev
-        - Link: https://lore.kernel.org/20260618130414.96383-2-kaitao.cheng@linux.dev
     - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v4. (6)
-      - 7512829a3e73 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic (2/6)"
-        - Authored by no role player, reviewed by nobody
+      - f67e79dcda2f "mm-vmalloc-map-contiguous-pages-in-batches-for-vmap-if-possible-fix (5/6)"
+        - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v4. (6)
+      - 34a23e8b8ab7 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
         - Link: https://lore.kernel.org/20260618084726.1070022-4-jiangwen6@xiaomi.com
-      - 93092982ef33 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk (3/6)"
-        - Authored by no role player, reviewed by nobody
+      - 1ac8e71e7fd3 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
         - Link: https://lore.kernel.org/20260618084726.1070022-5-jiangwen6@xiaomi.com
-      - e247acea7fd0 "mm/vmalloc: map contiguous pages in batches for vmap() if possible (4/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260618084726.1070022-6-jiangwen6@xiaomi.com
-      - f86c6d232c96 "mm/vmalloc: align vm_area so vmap() can batch mappings (5/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260618084726.1070022-7-jiangwen6@xiaomi.com
-    - 4f790cd79360 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/453375c4-c3ca-4e6f-8880-0e6ff3c74ee3@web.de
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -1,42 +1,52 @@
-- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
+- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - series "mm: drop "sub" prefix from various places". (2)
-      - fba98fd43ff4 "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260623125723.2503832-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260623125723.2503832-2-dev.jain@arm.com
-    - ca59eaab5610 "mm/lruvec: trace LRU add drains and drain-all requests"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260622185127.24579-1-jp.kobryn@linux.dev
-- mm-new: 1 -> 5 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 2 -> 7 commits
+  - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 3 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 4 commits
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - 6bb32aefa495 "mm: annotate data-race in cpu_needs_drain()"
+    - b3b2333faa59 "mm-annotate-data-race-in-cpu_needs_drain-fix"
+      - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - 51d96f24df41 "mm: annotate data-race in cpu_needs_drain()"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
       - Link: https://lore.kernel.org/20260626053700.2036899-1-wangxuewen@kylinos.cn
-    - 019ee523e8a7 "include/linux/swap.h: remove unused leftovers"
+    - f0b66903cc6d "include/linux/swap.h: remove unused leftovers"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/68591daf0d679e5a0072d63751f187d14613e2b0.1781146877.git.ritesh.list@gmail.com
-    - 7a43cd6cab61 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 32595b9c0574 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - e0cf228fd211 "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
+    - 94526bf03d25 "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260608143242.2869392-1-usama.arif@linux.dev
       - Link: https://lore.kernel.org/all/dca2824e8e88e826c6b260a831d79089b5b9c79d.camel@surriel.com/T/#u [1]
+- mm-new: 5 -> 2 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 3 -> 0 commits
+  - new commits
+    - series "mm: preparatory patches for PMD level swap entries". (6)
+      - d39499090fa3 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

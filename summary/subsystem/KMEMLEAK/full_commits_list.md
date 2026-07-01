@@ -2,27 +2,24 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
+- mm-unstable: 4 total, 1 (3) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 3 commits
+    - no role, maintainer: 4 commits
   - full commits list
     - series "mm/kmemleak: avoid soft lockup when scanning task", v3. (3 commits)
-      - b7102babb99c "mm/kmemleak: avoid soft lockup when scanning task stacks" (0/3)
+      - 1eac8528bc10 "mm/kmemleak: avoid soft lockup when scanning task stacks" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-0-acecd7d7fd92@debian.org
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-1-acecd7d7fd92@debian.org
-      - c5e35d57c5e2 "mm/kmemleak: stop the task stack scan early when interrupted" (1/3)
+      - 9ebcd23e567c "mm/kmemleak: stop the task stack scan early when interrupted" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-2-acecd7d7fd92@debian.org
-      - 8855db36432f "mm/kmemleak: stop the per-cpu and struct page scans early too" (2/3)
+      - 13105b584a18 "mm/kmemleak: stop the per-cpu and struct page scans early too" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-3-acecd7d7fd92@debian.org
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 2180266b7724 "mm/kmemleak: skip the remaining scan phases when interrupted"
+    - e455d24a464b "mm/kmemleak: skip the remaining scan phases when interrupted"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260626-kmemleak_improve-v1-1-d40c7616f64f@debian.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

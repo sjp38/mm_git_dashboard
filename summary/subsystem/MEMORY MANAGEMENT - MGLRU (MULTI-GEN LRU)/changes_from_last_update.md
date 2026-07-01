@@ -1,36 +1,50 @@
-- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
+- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 2 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - ca59eaab5610 "mm/lruvec: trace LRU add drains and drain-all requests"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260622185127.24579-1-jp.kobryn@linux.dev
-    - 4817fe063048 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
-- mm-new: 0 -> 3 commits
+- mm-unstable: 2 -> 6 commits
   - series: 0 (0) -> 0 (1)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 0 -> 2 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
+    - b3b2333faa59 "mm-annotate-data-race-in-cpu_needs_drain-fix"
+      - Authored by a maintainer, reviewed by nobody
+  - changed commits
     - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
-      - ce9b0bd7139e "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late() (16/19)"
+      - bd8776cb121f "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late() (16/19)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
-    - 6bb32aefa495 "mm: annotate data-race in cpu_needs_drain()"
+    - 51d96f24df41 "mm: annotate data-race in cpu_needs_drain()"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
       - Link: https://lore.kernel.org/20260626053700.2036899-1-wangxuewen@kylinos.cn
-    - 7a43cd6cab61 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 32595b9c0574 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
+- mm-new: 3 -> 2 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 2 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - d4a956cc7bd0 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
+    - a260b9f6fed6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

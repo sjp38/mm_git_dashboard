@@ -2,64 +2,108 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-unstable: 16 total, 1 (13) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 1 commits
-  - full commits list
-    - 612aac1ed602 "mm: avoid KCSAN false positive in memdesc_nid()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260623084432.701120-1-hui.zhu@linux.dev
-    - 4817fe063048 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
-- mm-new: 13 total, 1 (11) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 7 commits
+    - no role, nobody: 3 commits
+    - no role, no role : 9 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 3 commits
   - full commits list
+    - e271018c220c "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
     - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19 commits)
-      - 3bc739a947cf "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages" (0/19)
+      - 3fdb5f942c5d "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages" (0/19)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260612035903.2468601-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260612035903.2468601-2-songmuchun@bytedance.com
-      - d59afe101905 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
+      - 1a6aa400d874 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
-      - 05dd6c413d10 "mm/sparse: panic on memmap and usemap allocation failure" (5/19)
+      - 4281eb42d9aa "mm/sparse: panic on memmap and usemap allocation failure" (5/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-7-songmuchun@bytedance.com
-      - cb3102d24319 "mm/sparse: move subsection_map_init() into sparse_init()" (6/19)
+      - f2743abb2369 "mm/sparse: move subsection_map_init() into sparse_init()" (6/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-8-songmuchun@bytedance.com
-      - 0b7848e8db0a "mm/mm_init: remove set_pageblock_order() call from sparse_init()" (9/19)
+      - e744ff020f9f "mm/mm_init: remove set_pageblock_order() call from sparse_init()" (9/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-11-songmuchun@bytedance.com
-      - 603393e924fe "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid()" (10/19)
+      - f2f1b979e630 "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid()" (10/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-12-songmuchun@bytedance.com
-      - d07fb5c7542f "mm/hugetlb: refactor early boot gigantic hugepage allocation" (12/19)
+      - 03be596a18e6 "mm/hugetlb: refactor early boot gigantic hugepage allocation" (12/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-14-songmuchun@bytedance.com
-      - ce9b0bd7139e "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
+      - bd8776cb121f "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
-      - 92a44b122757 "mm/hugetlb: remove unused bootmem cma field" (17/19)
+      - 1ace5a494102 "mm/hugetlb: remove unused bootmem cma field" (17/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260612035903.2468601-19-songmuchun@bytedance.com
-      - ed133850d9b6 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
+      - 448aa6f2c31b "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-20-songmuchun@bytedance.com
-      - df97a56c7801 "Documentation: document panic_on_unrecoverable_memory_failure sysctl" (4/6)
+      - 53372a1675d4 "Documentation: document panic_on_unrecoverable_memory_failure sysctl" (4/6)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-5-6dacb8ad024d@debian.org
-    - 7a43cd6cab61 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-5-c6ed5b62eea2@debian.org
+    - 32595b9c0574 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - be4a498dacfb "mm/vmstat: avoid taking zone lock in /proc/buddyinfo reads"
+    - 2b996f136d3d "mm/vmstat: avoid taking zone lock in /proc/buddyinfo reads"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260604134245.1580287-1-imran.f.khan@oracle.com
+      - 867a5167a8d3 "mm: drop pte_clear_not_present_full()" (1/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260629-clear_not_present_full_ptes-v2-2-96089871a1e7@kernel.org
+      - 6522cad0a57e "mm: cleanup clear_not_present_full_ptes() and rename to clear_non_present_ptes()" (2/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260629-clear_not_present_full_ptes-v2-3-96089871a1e7@kernel.org
+- mm-new: 8 total, 2 (5) series, 3 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 2 commits
+    - no role, maintainer: 1 commits
+    - reviewer, no role : 1 commits
+  - full commits list
+    - 595893e78396 "mm/page_alloc: free allocated PFNs if the range does not match"
+      - Authored by a reviewer, reviewed by no role player
+      - Link: https://lore.kernel.org/20260629-free-pfn-on-alloc-contig-range-error-path-v1-1-496ff9ca22db@nvidia.com
+      - Link: https://sashiko.dev/#/patchset/20260628-keep-subpage-private-zero-at-free-v1-0-f4ce3930d10f@nvidia.com [1]
+    - series "mm: preparatory patches for PMD level swap entries". (6 commits)
+      - 6c284098c8fe "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]
+        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
+      - 108513c1f804 "mm: extract mm_prepare_for_swap_entries() helper" (1/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260630164143.1595669-3-usama.arif@linux.dev
+      - d39499090fa3 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
+    - series "mm/vmpressure: reduce CPU, memory and code overhead on cgroup v2", v3. (2 commits)
+      - 387a0b9dc43c "mm/vmpressure: skip tree=true accounting on cgroup v2" (0/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260630112617.1198623-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260630112617.1198623-2-usama.arif@linux.dev
+      - f2551377cde5 "mm-vmpressure-skip-tree=true-accounting-on-cgroup-v2-fix" (1/2)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/e8e1a409-48d8-4fa7-ae98-49485a1607f6@linux.dev
+    - 79c30b15a1e3 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260630112617.1198623-3-usama.arif@linux.dev
+    - a260b9f6fed6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - f544cae44deb "riscv: mm: avoid spurious fault after hotplugging vmemmap"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260630-mark-after-vmemmap-populate-v4-1-febbc15da028@iscas.ac.cn

@@ -2,42 +2,64 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+    - b5cfbf79d858 "selftests/mm: fix ksft_process_madv.sh test category"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260608103224.344101-1-sarthak.sharma@arm.com
+    - 1cdab69454cb "selftests/mm: pagemap_ioctl: use the correct page size for transact_test()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260628101118.35861-1-zenghui.yu@linux.dev
+    - 6b75ab7cacf9 "selftests/mm: hmm-tests: include linux/mman.h to access MADV_COLLAPSE"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260628143111.36863-1-zenghui.yu@linux.dev
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 3 total, 0 (2) series, 1 non-series commits
+  - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-    - 52b8c7881125 "selftests/mm: fix ksft_process_madv.sh test category"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260608103224.344101-1-sarthak.sharma@arm.com
-    - dc3602f9b001 "selftests/mm: pagemap_ioctl: use the correct page size for transact_test()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260628101118.35861-1-zenghui.yu@linux.dev
-    - 7d53d6bb142c "selftests/mm: hmm-tests: include linux/mman.h to access MADV_COLLAPSE"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260628143111.36863-1-zenghui.yu@linux.dev
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-    - 8d8a36ada4cb "mm/page_owner: document page_owner filter"
+    - 9330c537b547 "mm/page_owner: document page_owner filter"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260625043101.338794-5-zhen.ni@easystack.cn
-- mm-new: 4 total, 0 (2) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 3 commits
-  - full commits list
-      - 92480c8ab981 "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time" (11/19)
+      - c9a833e5281c "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time" (11/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-13-songmuchun@bytedance.com
-      - 6e948f2a6a9f "selftests/mm: add hwpoison-panic destructive test" (5/6)
+      - b2d88a695da7 "selftests/mm: add hwpoison-panic destructive test" (5/6)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260626-ecc_panic-v10-6-6dacb8ad024d@debian.org
-    - 9393eb90af0c "docs/mm: fix brackets"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260627093258.31265-2-manuelebner@mailbox.org
-    - ef81d3a3f1e9 "docs: pagemap: fix flags location, member name and sample code"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260626162710.25844-1-zenghui.yu@linux.dev
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-6-c6ed5b62eea2@debian.org
+- mm-new: 7 total, 2 (7) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 5 commits
+    - no role, maintainer: 1 commits
+    - maintainer, nobody: 1 commits
+  - full commits list
+      - 96ccc23c15c6 "Docs/{admin-guide,mm}/damon: fix DAMON documentation details" (2/5)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260629145538.134832-4-sj@kernel.org
+    - series "mm/damon: update, optimize, and clean up doc, tests, and code". (11 commits)
+      - 34bb10610852 "Docs/mm/damon/design: update for DAMOS_QUOTA_NODE_ELIGIBLE_MEM_BP" (0/11)
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260630141726.92246-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260630141726.92246-2-sj@kernel.org
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v8. (5 commits)
+      - db27c55b7638 "selftests/mm: move pkey selftest helpers to pkey_util.c" (0/5)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260630073235.3802271-1-lihongfu@kylinos.cn
+        - Link: https://lore.kernel.org/20260630073235.3802271-2-lihongfu@kylinos.cn
+      - 1444c02fc1c8 "selftests/mm: unify pkey sighandler selftest assertions and tracing" (1/5)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260630073235.3802271-3-lihongfu@kylinos.cn
+      - 734fb772c755 "selftests/mm: use pkey_assert on clone_raw failure in pkey test" (2/5)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260630073235.3802271-4-lihongfu@kylinos.cn
+      - 9c6ac3c567ee "selftests/mm: add missing mmap() return checks in pkey tests" (3/5)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260630073235.3802271-5-lihongfu@kylinos.cn
+      - 21a82ced7001 "selftests/mm: add missing pthread_create() return checks in pkey tests" (4/5)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260630073235.3802271-6-lihongfu@kylinos.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

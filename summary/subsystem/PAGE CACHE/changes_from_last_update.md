@@ -1,25 +1,20 @@
-- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
+- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - reviewer, reviewer: 0 -> 1 commits
+  - new commits
+    - 0a76e3af5b14 "mm: do file ownership checks with the proper mount idmap"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260625153853.913949-1-pfalcato@suse.de
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 3 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 0 -> 2 commits
-  - new commits
-    - series "mm/filemap: reduce unnecessary xarray lookups". (2)
-      - 9db0535e842a "mm/filemap: reduce unnecessary xarray lookups when read cached pages (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260620062446.351475-2-chizhiling@163.com
-      - 98d6f1d99377 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig() (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260620062446.351475-3-chizhiling@163.com
-    - 02d0c210ebd8 "writeback.h: fix a typo in the wbc_init_bio() description"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260615162244.2170866-2-willy@infradead.org
+- mm-unstable: 3 -> 3 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 2 -> 0 commits
+    - no role, maintainer: 0 -> 2 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

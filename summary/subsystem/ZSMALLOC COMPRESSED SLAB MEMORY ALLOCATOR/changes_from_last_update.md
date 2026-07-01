@@ -1,30 +1,42 @@
-- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
+- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 4 commits
+- mm-unstable: 0 -> 6 commits
   - series: 0 (0) -> 1 (4)
     - no role, no role : 0 -> 4 commits
+    - maintainer, nobody: 0 -> 2 commits
   - new commits
     - series "mm/zsmalloc: reduce lock contention in zs_free()", v6. (4)
-      - 2682a98ead8b "mm/zsmalloc: encode class index in obj value for lockless class lookup (0/4)"
+      - 63af081b7918 "mm-zsmalloc-encode-class-index-in-obj-value-for-lockless-class-lookup-fix (1/4)"
+        - Authored by a maintainer, reviewed by nobody
+      - c94fc3a58037 "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix (3/4)"
+        - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - series "mm/zsmalloc: reduce lock contention in zs_free()", v6. (4)
+      - 465badca3ed6 "mm/zsmalloc: encode class index in obj value for lockless class lookup (0/4)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260626015003.2965881-1-haowenchao22@gmail.com
         - Link: https://lore.kernel.org/20260626015003.2965881-2-haowenchao22@gmail.com
-      - 34323beedf05 "mm/zsmalloc: drop pool->lock from zs_free on 64-bit systems (1/4)"
+      - cc57a3259fb5 "mm/zsmalloc: drop pool->lock from zs_free on 64-bit systems (2/4)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260626015003.2965881-3-haowenchao22@gmail.com
-      - 81c593912a65 "mm/zsmalloc: drop class lock before freeing zspage (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260626015003.2965881-4-haowenchao22@gmail.com
-      - d156c929068f "mm/zsmalloc: document free_zspage helper variants (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260626015003.2965881-5-haowenchao22@gmail.com
+    - 3d8d34ba4993 "mm/zsmalloc: drop class lock before freeing zspage"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260626015003.2965881-4-haowenchao22@gmail.com
+    - f4d2395700a0 "mm/zsmalloc: document free_zspage helper variants"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260626015003.2965881-5-haowenchao22@gmail.com
+- mm-new: 4 -> 0 commits
+  - series: 1 (4) -> 0 (0)
+    - no role, no role : 4 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

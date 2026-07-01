@@ -1,19 +1,42 @@
-- baseline: v7.1-13176-g840ef6c78e6a2 -> v7.2-rc1
+- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
+- mm-unstable: 1 -> 3 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, reviewer: 1 -> 3 commits
   - new commits
-    - 472b37ffc935 "mm: migrate_device: use walk_page_range_vma() in migrate_vma_collect()"
+    - series "mm/page_owner: misc cleanups", v4. (7)
+      - 465d7ece5d63 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason (1/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260701012239.315262-3-ye.liu@linux.dev
+      - 93e59e43c191 "mm: use enum migrate_reason instead of int for migration reason parameters (2/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260701012239.315262-4-ye.liu@linux.dev
+- mm-new: 0 -> 4 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, reviewer: 0 -> 4 commits
+  - new commits
+    - e59dd955695c "mm: mempolicy: fix automatic numa balancing for shmem"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260618092845.3905740-5-wangkefeng.wang@huawei.com
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+      - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
+    - series "mm: preparatory patches for PMD level swap entries". (6)
+      - 6c284098c8fe "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]
+        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
+      - ff1cd4bfdfeb "mm/migrate_device: move softleaf_to_folio() inside device-private branch (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260630164143.1595669-6-usama.arif@linux.dev
+      - d39499090fa3 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

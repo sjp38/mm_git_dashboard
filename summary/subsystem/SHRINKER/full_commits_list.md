@@ -4,10 +4,10 @@
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - 9bc15de10eb5 "mm: shrinker: fix shrinker_info teardown race with expansion"
+    - 14ceea0445e9 "mm: shrinker: fix shrinker_info teardown race with expansion"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260617085658.27096-1-qi.zheng@linux.dev
-    - a555da49a096 "mm: shrinker: fix NULL pointer dereference in debugfs"
+    - bd759e46b2ff "mm: shrinker: fix NULL pointer dereference in debugfs"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260617090052.27325-1-qi.zheng@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits

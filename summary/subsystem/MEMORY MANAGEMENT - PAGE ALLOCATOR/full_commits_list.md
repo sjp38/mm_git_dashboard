@@ -5,73 +5,78 @@
     - no role, reviewer: 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 217c7ca26f11 "mm/compaction: handle free_pages_prepare() properly in compaction_free()"
+    - 04f0ae8fd1b2 "mm/compaction: handle free_pages_prepare() properly in compaction_free()"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260622-handle_free_pages_prepare_in_compaction_free-v1-1-fcf3b14abcf7@nvidia.com
-    - e1c3e45784ed "mm/page_alloc: use existing highatomic reserves on the buddy fastpath"
+    - e879a86043cd "mm/page_alloc: use existing highatomic reserves on the buddy fastpath"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260623004600.113347-1-jp.kobryn@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 12 total, 3 (11) series, 1 non-series commits
+- mm-unstable: 13 total, 2 (10) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, reviewer: 8 commits
+    - no role, reviewer: 10 commits
+    - no role, maintainer: 1 commits
+    - reviewer, reviewer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 512d0dce2c2e "mm/page_alloc: don't build vm_numa_stat_key if CONFIG_NUMA=n"
+    - 868c385ba4b6 "mm/page_alloc: don't build vm_numa_stat_key if CONFIG_NUMA=n"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260618100614.1321950-1-ben.dooks@codethink.co.uk
-    - series "mm/page_owner: misc cleanups", v2. (6 commits)
-      - 7b01f677a45c "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping" (0/6)
+    - series "mm/page_owner: misc cleanups", v4. (7 commits)
+      - 5ec4d3f2e152 "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping" (0/7)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260626024550.25677-1-ye.liu@linux.dev
-        - Link: https://lore.kernel.org/20260626024550.25677-2-ye.liu@linux.dev
-      - feb2f8e9a1cf "mm/page_owner: use MIGRATE_REASON_NONE instead of -1 for last_migrate_reason" (1/6)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260626024550.25677-3-ye.liu@linux.dev
-      - 46ab9f9e719c "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg()" (2/6)
+        - Link: https://lore.kernel.org/20260701012239.315262-1-ye.liu@linux.dev
+        - Link: https://lore.kernel.org/20260701012239.315262-2-ye.liu@linux.dev
+      - 465d7ece5d63 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason" (1/7)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260626024550.25677-4-ye.liu@linux.dev
-      - a7d2c2d1e1a2 "mm/page_owner: add missing newline to count_threshold format string" (3/6)
+        - Link: https://lore.kernel.org/20260701012239.315262-3-ye.liu@linux.dev
+      - 93e59e43c191 "mm: use enum migrate_reason instead of int for migration reason parameters" (2/7)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260626024550.25677-5-ye.liu@linux.dev
-      - 8e82ef64d082 "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner()" (4/6)
+        - Link: https://lore.kernel.org/20260701012239.315262-4-ye.liu@linux.dev
+      - f19464b05f68 "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg()" (3/7)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260626024550.25677-6-ye.liu@linux.dev
-      - bb47793a08b8 "mm/page_owner: drop redundant page_owner prefix from static symbols" (5/6)
+        - Link: https://lore.kernel.org/20260701012239.315262-5-ye.liu@linux.dev
+      - cfd37fb0033a "mm/page_owner: add missing newline to count_threshold format string" (4/7)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260626024550.25677-7-ye.liu@linux.dev
-    - series "mm/page_owner: fix TOCTOU races in lockless page state reading". (2 commits)
-      - 7c19ca9c706e "mm/page_owner: clamp skip_buddy_pages() PFN advance at MAX_ORDER_NR_PAGES boundary" (0/2)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260625014708.87386-1-ye.liu@linux.dev
-        - Link: https://lore.kernel.org/20260625014708.87386-2-ye.liu@linux.dev
-        - Link: https://lore.kernel.org/all/20260623065234.31866-2-ye.liu@linux.dev/ [1]
-        - Link: https://sashiko.dev/#/patchset/20260623065234.31866-2-ye.liu@linux.dev
-      - a1ec54e1c9fb "mm/page_owner: use memcg_data snapshot instead of PageMemcgKmem() to avoid TOCTOU VM_BUG_ON" (1/2)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260625014708.87386-3-ye.liu@linux.dev
+        - Link: https://lore.kernel.org/20260701012239.315262-6-ye.liu@linux.dev
+      - d7b243a0901e "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner()" (5/7)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260701012239.315262-7-ye.liu@linux.dev
+      - 06548c298feb "mm/page_owner: drop redundant page_owner prefix from static symbols" (6/7)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260701012239.315262-8-ye.liu@linux.dev
     - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v11. (4 commits)
-      - 94e3854cbe1e "mm/page_owner: add print_mode filter" (0/4)
+      - 2d4773b3c000 "mm/page_owner: add print_mode filter" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260625043101.338794-1-zhen.ni@easystack.cn
         - Link: https://lore.kernel.org/20260625043101.338794-2-zhen.ni@easystack.cn
-      - 6d60466dfe5d "mm-page_owner-add-print_mode-filter-fix" (1/4)
+      - 2c2469a19169 "mm-page_owner-add-print_mode-filter-fix" (1/4)
         - Authored by a maintainer, reviewed by nobody
-      - 6fe0954156b7 "mm/page_owner: add NUMA node filter" (2/4)
+      - b81463b348fc "mm/page_owner: add NUMA node filter" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260625043101.338794-3-zhen.ni@easystack.cn
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-    - reviewer, reviewer: 1 commits
-  - full commits list
-    - 972593039303 "mm/page_alloc: drop flag-conversion "optimisation""
+    - ea74090cc953 "mm/page_alloc: drop flag-conversion "optimisation""
       - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260629-gfp-pessimisation-v2-1-311ece6a8637@google.com
       - Link: https://lore.kernel.org/20260615-gfp-pessimisation-v2-1-65f1319e6818@google.com
       - Link: https://github.com/bjackman/aethelred/blob/2ccdc84ef087c2a631914f58e106e99e19bd3b98/page-alloc-test/page-alloc-test.c [1]
-    - 7a43cd6cab61 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 32595b9c0574 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
+- mm-new: 3 total, 0 (0) series, 3 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - reviewer, no role : 1 commits
+    - maintainer, nobody: 1 commits
+  - full commits list
+    - 595893e78396 "mm/page_alloc: free allocated PFNs if the range does not match"
+      - Authored by a reviewer, reviewed by no role player
+      - Link: https://lore.kernel.org/20260629-free-pfn-on-alloc-contig-range-error-path-v1-1-496ff9ca22db@nvidia.com
+      - Link: https://sashiko.dev/#/patchset/20260628-keep-subpage-private-zero-at-free-v1-0-f4ce3930d10f@nvidia.com [1]
+    - a260b9f6fed6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+    - 81ab86cf2ae3 "mm-fix-assert_exclusive_bits-by-passing-memdesc_flags_t-by-pointer-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

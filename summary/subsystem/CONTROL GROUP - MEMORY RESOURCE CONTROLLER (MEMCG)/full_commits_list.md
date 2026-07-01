@@ -7,12 +7,18 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 0984bb35636d "mm/memcontrol: remove unused for_each_mem_cgroup macro and cleanup"
+    - 737086159929 "mm/memcontrol: remove unused for_each_mem_cgroup macro and cleanup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260624183700.1152742-1-joshua.hahnjy@gmail.com
-    - d44f26d0a4b8 "mm: memcg: remove stray text from obj_stock_pcp comment"
+    - 0082dee7e6df "mm: memcg: remove stray text from obj_stock_pcp comment"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260623082614.81621-1-guopeng.zhang@linux.dev
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - 79c30b15a1e3 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260630112617.1198623-3-usama.arif@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

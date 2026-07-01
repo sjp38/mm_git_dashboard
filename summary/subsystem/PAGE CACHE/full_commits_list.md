@@ -1,20 +1,26 @@
 - baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - reviewer, reviewer: 1 commits
+  - full commits list
+    - 0a76e3af5b14 "mm: do file ownership checks with the proper mount idmap"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260625153853.913949-1-pfalcato@suse.de
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 3 total, 1 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, reviewer: 2 commits
+    - no role, maintainer: 2 commits
   - full commits list
     - series "mm/filemap: reduce unnecessary xarray lookups". (2 commits)
-      - 9db0535e842a "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
-        - Authored by no role player, reviewed by a reviewer
+      - 1422d58929b8 "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
+        - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-2-chizhiling@163.com
-      - 98d6f1d99377 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
-        - Authored by no role player, reviewed by a reviewer
+      - 978b4ee037b6 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
+        - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-3-chizhiling@163.com
-    - 02d0c210ebd8 "writeback.h: fix a typo in the wbc_init_bio() description"
+    - 1b503fdef947 "writeback.h: fix a typo in the wbc_init_bio() description"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260615162244.2170866-2-willy@infradead.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
