@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - a260b9f6fed6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
+    - 8c8c0655816d "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

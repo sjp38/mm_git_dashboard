@@ -2,45 +2,44 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 7 total, 1 (1) series, 6 non-series commits
+- mm-unstable: 8 total, 1 (2) series, 6 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
+    - no role, reviewer: 2 commits
     - no role, maintainer: 4 commits
     - maintainer, nobody: 1 commits
   - full commits list
     - series "mm: drop "sub" prefix from various places". (2 commits)
-      - 2d297fd530a7 "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
+      - 54c40e1d2449 "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260623125723.2503832-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260623125723.2503832-2-dev.jain@arm.com
-    - bd3c310e80ef "mm/lruvec: trace LRU add drains and drain-all requests"
+    - d33b102b26de "mm/lruvec: trace LRU add drains and drain-all requests"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260622185127.24579-1-jp.kobryn@linux.dev
-    - 51d96f24df41 "mm: annotate data-race in cpu_needs_drain()"
+    - 3b88f4c552cb "mm: annotate data-race in cpu_needs_drain()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260626053700.2036899-1-wangxuewen@kylinos.cn
-    - b3b2333faa59 "mm-annotate-data-race-in-cpu_needs_drain-fix"
+    - 0b0f62e1f535 "mm-annotate-data-race-in-cpu_needs_drain-fix"
       - Authored by a maintainer, reviewed by nobody
-    - f0b66903cc6d "include/linux/swap.h: remove unused leftovers"
+    - ebfbba20d21c "include/linux/swap.h: remove unused leftovers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/68591daf0d679e5a0072d63751f187d14613e2b0.1781146877.git.ritesh.list@gmail.com
-    - 32595b9c0574 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 63040448cf04 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - 94526bf03d25 "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
+    - 8667b96c5064 "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260608143242.2869392-1-usama.arif@linux.dev
       - Link: https://lore.kernel.org/all/dca2824e8e88e826c6b260a831d79089b5b9c79d.camel@surriel.com/T/#u [1]
-- mm-new: 2 total, 0 (1) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, reviewer: 1 commits
-  - full commits list
-      - d39499090fa3 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
+      - ea4350d660e6 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
-    - f5ea2fbe68e0 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - cec76a629915 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -5,27 +5,11 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 7 commits
+- mm-unstable: 7 -> 7 commits (no change)
   - series: 1 (5) -> 1 (5) (no change)
-    - no role, nobody: 4 -> 2 commits
-    - no role, no role : 2 -> 4 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v4. (6)
-      - f67e79dcda2f "mm-vmalloc-map-contiguous-pages-in-batches-for-vmap-if-possible-fix (5/6)"
-        - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v4. (6)
-      - 34a23e8b8ab7 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
-        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-        - Link: https://lore.kernel.org/20260618084726.1070022-4-jiangwen6@xiaomi.com
-      - 1ac8e71e7fd3 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
-        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-        - Link: https://lore.kernel.org/20260618084726.1070022-5-jiangwen6@xiaomi.com
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 4 -> 4 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

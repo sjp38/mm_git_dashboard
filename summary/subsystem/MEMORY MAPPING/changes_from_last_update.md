@@ -1,28 +1,26 @@
 - baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-  - new commits
-    - 0a76e3af5b14 "mm: do file ownership checks with the proper mount idmap"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260625153853.913949-1-pfalcato@suse.de
+    - reviewer, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
+- mm-unstable: 6 -> 7 commits
+  - series: 1 (5) -> 1 (6)
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, no role : 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "mm: preparatory patches for PMD level swap entries". (6)
-      - 53c45b92cc5d "fs/proc: use softleaf_has_pfn() in pagemap PMD walker (2/6)"
+      - c4f5fbd0cb6c "fs/proc: use softleaf_has_pfn() in pagemap PMD walker (2/6)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260630164143.1595669-4-usama.arif@linux.dev
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

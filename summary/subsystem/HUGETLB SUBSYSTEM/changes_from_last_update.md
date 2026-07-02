@@ -5,73 +5,23 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 12 commits
-  - series: 0 (0) -> 1 (11)
-    - no role, nobody: 0 -> 2 commits
-    - no role, no role : 0 -> 6 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 3 commits
-  - new commits
-    - series "mm/page_owner: misc cleanups", v4. (7)
-      - 93e59e43c191 "mm: use enum migrate_reason instead of int for migration reason parameters (2/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260701012239.315262-4-ye.liu@linux.dev
+- mm-unstable: 12 -> 12 commits (no change)
+  - series: 1 (11) -> 1 (11) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 6 -> 6 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
   - changed commits
-    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
-      - 3fdb5f942c5d "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages (0/19)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260612035903.2468601-2-songmuchun@bytedance.com
-      - a974ea6e4885 "mm/hugetlb_vmemmap: fix __hugetlb_vmemmap_optimize_folios() (1/19)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-3-songmuchun@bytedance.com
-      - 1a6aa400d874 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier (3/19)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
-      - c9a833e5281c "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time (11/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-13-songmuchun@bytedance.com
-      - 03be596a18e6 "mm/hugetlb: refactor early boot gigantic hugepage allocation (12/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-14-songmuchun@bytedance.com
-      - 10f62a8eb79b "mm/hugetlb: free cross-zone bootmem gigantic pages after allocation (13/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-15-songmuchun@bytedance.com
-      - 819ad396d8b0 "mm/hugetlb_vmemmap: move bootmem HVO setup to early init (14/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-16-songmuchun@bytedance.com
-      - a47230294339 "mm/hugetlb: remove obsolete bootmem cross-zone checks (15/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-17-songmuchun@bytedance.com
-      - bd8776cb121f "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late() (16/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
-      - 1ace5a494102 "mm/hugetlb: remove unused bootmem cma field (17/19)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-19-songmuchun@bytedance.com
-    - d9e6706c615f "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260628190155.3655895-1-souravpanda@google.com
-- mm-new: 11 -> 1 commits
-  - series: 1 (10) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 6 -> 0 commits
-    - no role, maintainer: 3 -> 1 commits
-  - new commits
-    - 00e3b97b3826 "mm/hugetlb: avoid unnecessary TLB flush for empty folio list in vmemmap optimize"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260630113857.3319612-1-guanwentao@uniontech.com
+    - series "mm/page_owner: misc cleanups", v5. (9)
+      - 01e5783b4f26 "mm: use enum migrate_reason instead of int for migration reason parameters (2/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev"
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260701012239.315262-4-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

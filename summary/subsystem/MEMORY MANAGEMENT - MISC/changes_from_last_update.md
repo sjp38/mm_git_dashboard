@@ -3,78 +3,71 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - 6b75ab7cacf9 "selftests/mm: hmm-tests: include linux/mman.h to access MADV_COLLAPSE"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-      - Link: https://lore.kernel.org/20260628143111.36863-1-zenghui.yu@linux.dev
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 3 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
-      - c9a833e5281c "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time (11/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-13-songmuchun@bytedance.com
-    - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (6)
-      - b2d88a695da7 "selftests/mm: add hwpoison-panic destructive test (5/6)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260630-ecc_panic-v10-6-c6ed5b62eea2@debian.org"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260626-ecc_panic-v10-6-6dacb8ad024d@debian.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-6-c6ed5b62eea2@debian.org
-- mm-new: 4 -> 7 commits
-  - series: 0 (2) -> 2 (7)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 3 -> 5 commits
+- mm-unstable: 3 -> 5 commits
+  - series: 0 (2) -> 1 (4)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 0 -> 1 commits
     - maintainer, nobody: 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "mm/damon: five misc fixups" (5)
-      - 96ccc23c15c6 "Docs/{admin-guide,mm}/damon: fix DAMON documentation details (2/5)"
+      - ded7c690c4e2 "Docs/{admin-guide,mm}/damon: fix DAMON documentation details (2/5)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260629145538.134832-4-sj@kernel.org
     - series "mm/damon: update, optimize, and clean up doc, tests, and code". (11)
-      - 34bb10610852 "Docs/mm/damon/design: update for DAMOS_QUOTA_NODE_ELIGIBLE_MEM_BP (0/11)"
+      - c41d51b313d4 "Docs/mm/damon/design: update for DAMOS_QUOTA_NODE_ELIGIBLE_MEM_BP (0/11)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260630141726.92246-1-sj@kernel.org
         - Link: https://lore.kernel.org/20260630141726.92246-2-sj@kernel.org
+- mm-new: 7 -> 6 commits
+  - series: 2 (7) -> 1 (5)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
+  - new commits
+    - 81605acb0f92 "selftests/mm/uffd: don't treat UFFDIO_COPY -ENOENT as a failure"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260701200932.1470525-1-rppt@kernel.org
+  - changed commits
     - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v8. (5)
-      - db27c55b7638 "selftests/mm: move pkey selftest helpers to pkey_util.c (0/5)"
+      - af0286436c44 "selftests/mm: move pkey selftest helpers to pkey_util.c (0/5)"
         - Authored by no role player, reviewed by no role player
+        - added "Tested-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
         - Link: https://lore.kernel.org/20260630073235.3802271-1-lihongfu@kylinos.cn
         - Link: https://lore.kernel.org/20260630073235.3802271-2-lihongfu@kylinos.cn
-      - 1444c02fc1c8 "selftests/mm: unify pkey sighandler selftest assertions and tracing (1/5)"
+      - c61aaa5786a4 "selftests/mm: unify pkey sighandler selftest assertions and tracing (1/5)"
         - Authored by no role player, reviewed by no role player
+        - added "Tested-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
         - Link: https://lore.kernel.org/20260630073235.3802271-3-lihongfu@kylinos.cn
-      - 734fb772c755 "selftests/mm: use pkey_assert on clone_raw failure in pkey test (2/5)"
+      - 0a7a8b4ce7f2 "selftests/mm: use pkey_assert on clone_raw failure in pkey test (2/5)"
         - Authored by no role player, reviewed by no role player
+        - added "Tested-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
         - Link: https://lore.kernel.org/20260630073235.3802271-4-lihongfu@kylinos.cn
-      - 9c6ac3c567ee "selftests/mm: add missing mmap() return checks in pkey tests (3/5)"
+      - 03d5dd5667c1 "selftests/mm: add missing mmap() return checks in pkey tests (3/5)"
         - Authored by no role player, reviewed by no role player
+        - added "Tested-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
         - Link: https://lore.kernel.org/20260630073235.3802271-5-lihongfu@kylinos.cn
-      - 21a82ced7001 "selftests/mm: add missing pthread_create() return checks in pkey tests (4/5)"
+      - 683e3adb7a6f "selftests/mm: add missing pthread_create() return checks in pkey tests (4/5)"
         - Authored by no role player, reviewed by no role player
+        - added "Tested-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
         - Link: https://lore.kernel.org/20260630073235.3802271-6-lihongfu@kylinos.cn
-  - dropped commits
-    - 9393eb90af0c "docs/mm: fix brackets"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260627093258.31265-2-manuelebner@mailbox.org
-    - ef81d3a3f1e9 "docs: pagemap: fix flags location, member name and sample code"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260626162710.25844-1-zenghui.yu@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

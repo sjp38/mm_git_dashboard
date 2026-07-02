@@ -6,43 +6,12 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 5 commits
-  - series: 0 (1) -> 1 (5)
-    - no role, nobody: 0 -> 1 commits
-    - no role, maintainer: 1 -> 4 commits
-  - changed commits
-    - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (6)
-      - 66021ccdd5d5 "mm/memory-failure: drop dead error_states[] entry for reserved pages (0/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260630-ecc_panic-v10-1-c6ed5b62eea2@debian.org"
-        - added "Link: https://lore.kernel.org/20260630-ecc_panic-v10-0-c6ed5b62eea2@debian.org"
-        - dropped "Link: https://lore.kernel.org/20260626-ecc_panic-v10-1-6dacb8ad024d@debian.org"
-        - dropped "Link: https://lore.kernel.org/20260626-ecc_panic-v10-0-6dacb8ad024d@debian.org"
-        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-0-c6ed5b62eea2@debian.org
-        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-1-c6ed5b62eea2@debian.org
-      - 65e8f070825c "mm/memory-failure: surface unhandlable kernel pages as -ENOTRECOVERABLE (1/6)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260630-ecc_panic-v10-2-c6ed5b62eea2@debian.org"
-        - dropped "Link: https://lore.kernel.org/20260626-ecc_panic-v10-2-6dacb8ad024d@debian.org"
-        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-2-c6ed5b62eea2@debian.org
-      - 890468f8389d "mm/memory-failure: report MF_MSG_KERNEL for unrecoverable kernel pages (2/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260630-ecc_panic-v10-3-c6ed5b62eea2@debian.org"
-        - dropped "Link: https://lore.kernel.org/20260626-ecc_panic-v10-3-6dacb8ad024d@debian.org"
-        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-3-c6ed5b62eea2@debian.org
-      - f0f4c0bb4a9f "mm/memory-failure: add panic option for unrecoverable pages (3/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260630-ecc_panic-v10-4-c6ed5b62eea2@debian.org"
-        - dropped "Link: https://lore.kernel.org/20260626-ecc_panic-v10-4-6dacb8ad024d@debian.org"
-        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-4-c6ed5b62eea2@debian.org
-- mm-new: 4 -> 0 commits
-  - series: 1 (4) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 3 -> 0 commits
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

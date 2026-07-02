@@ -5,17 +5,11 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 4 commits
+- mm-unstable: 4 -> 4 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
-    - no role, maintainer: 3 -> 4 commits
-  - changed commits
-    - e455d24a464b "mm/kmemleak: skip the remaining scan phases when interrupted"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260626-kmemleak_improve-v1-1-d40c7616f64f@debian.org
-- mm-new: 1 -> 0 commits
+    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

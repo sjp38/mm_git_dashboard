@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - a4729444ebb5 "mm: remove PageTransCompound()"
+    - c1e3b65758b5 "mm: remove PageTransCompound()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260618113523.3913307-1-wangkefeng.wang@huawei.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

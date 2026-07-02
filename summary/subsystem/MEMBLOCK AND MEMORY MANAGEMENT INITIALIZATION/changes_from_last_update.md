@@ -1,61 +1,49 @@
 - baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - e77036bd1077 "mm/vmstat: fold stranded per-cpu node stats when a node comes online"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260627202243.758289-1-gourry@gourry.net
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 8 commits
-  - series: 0 (0) -> 0 (8)
-    - no role, no role : 0 -> 7 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
-      - 1a6aa400d874 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier (3/19)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
-      - 707dc0f448ae "mm/mm_init: simplify deferred_free_pages() migratetype init (4/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-6-songmuchun@bytedance.com
-      - f2743abb2369 "mm/sparse: move subsection_map_init() into sparse_init() (6/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-8-songmuchun@bytedance.com
-      - 7dfe015b93f0 "mm/mm_init: defer sparse_init() until after zone initialization (7/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-9-songmuchun@bytedance.com
-      - 706ad2db6da8 "mm/mm_init: defer hugetlb reservation until after zone initialization (8/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-10-songmuchun@bytedance.com
-      - e744ff020f9f "mm/mm_init: remove set_pageblock_order() call from sparse_init() (9/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-11-songmuchun@bytedance.com
-      - f2f1b979e630 "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid() (10/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-12-songmuchun@bytedance.com
-      - 448aa6f2c31b "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page() (18/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260612035903.2468601-20-songmuchun@bytedance.com
-- mm-new: 8 -> 1 commits
-  - series: 0 (8) -> 0 (0)
-    - no role, no role : 7 -> 0 commits
+- mm-unstable: 8 -> 8 commits (no change)
+  - series: 0 (8) -> 0 (8) (no change)
+    - no role, no role : 7 -> 7 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+- mm-new: 1 -> 6 commits
+  - series: 0 (0) -> 1 (5)
+    - no role, nobody: 0 -> 5 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 1 -> 0 commits
   - new commits
-    - e82cf963d533 "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260630214039.2263562-1-gourry@gourry.net
+    - series "mm: optimize zone-device memmap initialization", v5. (8)
+      - 040ad560e4f9 "mm: fix stale ZONE_DEVICE refcount comment (0/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260701090553.62691-2-lizhe.67@bytedance.com
+        - Link: https://lore.kernel.org/all/aiEoByaQdRR3xtM5@nvdebian.thelocal/ [1]
+      - b89c08d655b1 "mm: factor zone-device page init helpers out of __init_zone_device_page (1/8)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260701090553.62691-3-lizhe.67@bytedance.com
+      - ea425f4bbd8b "mm: add a template-based fast path for zone-device page init (3/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260701090553.62691-5-lizhe.67@bytedance.com
+      - 77955dc061fa "mm: extend the template fast path to zone-device compound tails (4/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260701090553.62691-6-lizhe.67@bytedance.com
+      - e08d3906752b "mm: use memcpy_nt() in zone-device template copies (7/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260701090553.62691-9-lizhe.67@bytedance.com
+  - changed commits
+    - d54b4cd791bc "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net"
+      - added "Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net"
+      - added "Reported-by: Sashiko <sashiko-bot@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260630214039.2263562-1-gourry@gourry.net"
+      - dropped "Assisted-by: Sashiko:unknown-model"
+      - dropped "Reviewed-by: Andrew Morton <akpm@linux-foundation.org>"
+      - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
+      - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

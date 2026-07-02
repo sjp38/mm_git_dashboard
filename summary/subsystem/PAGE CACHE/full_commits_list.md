@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 0a76e3af5b14 "mm: do file ownership checks with the proper mount idmap"
+    - 91a3fccfff7a "mm: do file ownership checks with the proper mount idmap"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260625153853.913949-1-pfalcato@suse.de
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -14,15 +14,21 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm/filemap: reduce unnecessary xarray lookups". (2 commits)
-      - 1422d58929b8 "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
+      - 9c64b15e57ed "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-2-chizhiling@163.com
-      - 978b4ee037b6 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
+      - 3b905d538d71 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-3-chizhiling@163.com
-    - 1b503fdef947 "writeback.h: fix a typo in the wbc_init_bio() description"
+    - 508e17bae71c "writeback.h: fix a typo in the wbc_init_bio() description"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260615162244.2170866-2-willy@infradead.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - a3fe601c04c5 "mm: fix mapping_seek_hole_data() overflow on last page"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260630125047.703170-1-yanzhen20011121@163.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -4,42 +4,40 @@
   - author/reviewer role stat
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 0a76e3af5b14 "mm: do file ownership checks with the proper mount idmap"
+    - 91a3fccfff7a "mm: do file ownership checks with the proper mount idmap"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260625153853.913949-1-pfalcato@suse.de
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 6 total, 1 (5) series, 1 non-series commits
+- mm-unstable: 7 total, 1 (6) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, no role : 1 commits
     - no role, reviewer: 3 commits
     - no role, maintainer: 2 commits
     - maintainer, nobody: 1 commits
   - full commits list
-      - 77515159193e "mm/mprotect: drop 'sub' from batching context" (1/2)
+      - ea8d9c4f7957 "mm/mprotect: drop 'sub' from batching context" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260623125723.2503832-3-dev.jain@arm.com
     - series "mm: convert to walk_page_range_vma() to eliminate find_vma()", v2. (4 commits)
-      - ec91dc5e0ce9 "mm: mincore: use walk_page_range_vma() in do_mincore()" (0/4)
+      - 3e15b2f1c083 "mm: mincore: use walk_page_range_vma() in do_mincore()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260618092845.3905740-1-wangkefeng.wang@huawei.com
         - Link: https://lore.kernel.org/20260618092845.3905740-2-wangkefeng.wang@huawei.com
-      - 73faeef5a438 "mm-mincore-use-walk_page_range_vma-in-do_mincore-fix" (1/4)
+      - 669789dadc9f "mm-mincore-use-walk_page_range_vma-in-do_mincore-fix" (1/4)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/ajP9bQhmvR9OX0VE@pedro-suse
-      - 118888606fd0 "mm: mprotect: use walk_page_range_vma() in mprotect_fixup()" (2/4)
+      - 991b5c2a5605 "mm: mprotect: use walk_page_range_vma() in mprotect_fixup()" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260618092845.3905740-3-wangkefeng.wang@huawei.com
-      - e009dd863285 "mm: mlock: use walk_page_range_vma() in mlock_vma_pages_range()" (3/4)
+      - 0286d969a5ac "mm: mlock: use walk_page_range_vma() in mlock_vma_pages_range()" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260618092845.3905740-4-wangkefeng.wang@huawei.com
-    - efdb12fd586d "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-      - 53c45b92cc5d "fs/proc: use softleaf_has_pfn() in pagemap PMD walker" (2/6)
+      - c4f5fbd0cb6c "fs/proc: use softleaf_has_pfn() in pagemap PMD walker" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630164143.1595669-4-usama.arif@linux.dev
+    - 24262889c691 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

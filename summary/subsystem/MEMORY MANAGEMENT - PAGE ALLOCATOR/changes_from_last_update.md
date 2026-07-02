@@ -7,116 +7,79 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 13 commits
-  - series: 3 (11) -> 2 (10)
-    - no role, nobody: 3 -> 0 commits
-    - no role, reviewer: 8 -> 10 commits
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 1 commits
+- mm-unstable: 13 -> 15 commits
+  - series: 2 (10) -> 2 (12)
+    - no role, no role : 0 -> 2 commits
+    - no role, reviewer: 10 -> 10 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
   - new commits
-    - series "mm/page_owner: misc cleanups", v4. (7)
-      - 465d7ece5d63 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260701012239.315262-3-ye.liu@linux.dev
-      - 93e59e43c191 "mm: use enum migrate_reason instead of int for migration reason parameters (2/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260701012239.315262-4-ye.liu@linux.dev
+    - series "mm/page_owner: misc cleanups", v5. (9)
+      - e0c592e3f0f1 "mm/page_owner: clamp skip_buddy_pages() PFN advance at MAX_ORDER_NR_PAGES boundary (7/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260701061101.344679-9-ye.liu@linux.dev
+      - 4cd11ebe8a2a "mm/page_owner: use memcg_data snapshot instead of PageMemcgKmem() to avoid TOCTOU VM_BUG_ON (8/9)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260701061101.344679-10-ye.liu@linux.dev
   - changed commits
-    - series "mm/page_owner: misc cleanups", v4. (7)
-      - 5ec4d3f2e152 "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping (0/7)"
+    - series "mm/page_owner: misc cleanups", v5. (9)
+      - 8d6737a14b4b "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping (0/9)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701012239.315262-1-ye.liu@linux.dev"
-        - added "Link: https://lore.kernel.org/20260701012239.315262-2-ye.liu@linux.dev"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260626024550.25677-2-ye.liu@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260626024550.25677-1-ye.liu@linux.dev"
-        - Link: https://lore.kernel.org/20260701012239.315262-1-ye.liu@linux.dev
-        - Link: https://lore.kernel.org/20260701012239.315262-2-ye.liu@linux.dev
-      - f19464b05f68 "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg() (3/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701012239.315262-5-ye.liu@linux.dev"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260626024550.25677-4-ye.liu@linux.dev"
+        - added "Link: https://lore.kernel.org/20260701061101.344679-2-ye.liu@linux.dev"
+        - added "Link: https://lore.kernel.org/20260701061101.344679-1-ye.liu@linux.dev"
+        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260701012239.315262-2-ye.liu@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260701012239.315262-1-ye.liu@linux.dev"
         - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260701012239.315262-5-ye.liu@linux.dev
-      - cfd37fb0033a "mm/page_owner: add missing newline to count_threshold format string (4/7)"
+        - Link: https://lore.kernel.org/20260701061101.344679-1-ye.liu@linux.dev
+        - Link: https://lore.kernel.org/20260701061101.344679-2-ye.liu@linux.dev
+      - 208db2310098 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason (1/9)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701012239.315262-6-ye.liu@linux.dev"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260626024550.25677-5-ye.liu@linux.dev"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260701012239.315262-6-ye.liu@linux.dev
-      - d7b243a0901e "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner() (5/7)"
+        - added "Link: https://lore.kernel.org/20260701061101.344679-3-ye.liu@linux.dev"
+        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260701012239.315262-3-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260701061101.344679-3-ye.liu@linux.dev
+      - 01e5783b4f26 "mm: use enum migrate_reason instead of int for migration reason parameters (2/9)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701012239.315262-7-ye.liu@linux.dev"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260626024550.25677-6-ye.liu@linux.dev"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260701012239.315262-7-ye.liu@linux.dev
-      - 06548c298feb "mm/page_owner: drop redundant page_owner prefix from static symbols (6/7)"
+        - added "Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev"
+        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260701012239.315262-4-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev
+      - fb229508f05f "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg() (3/9)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701012239.315262-8-ye.liu@linux.dev"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260626024550.25677-7-ye.liu@linux.dev"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260701012239.315262-8-ye.liu@linux.dev
-    - ea74090cc953 "mm/page_alloc: drop flag-conversion "optimisation""
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Link: https://lore.kernel.org/20260629-gfp-pessimisation-v2-1-311ece6a8637@google.com"
-      - added "Reviewed-by: Gregory Price <gourry@gourry.net>"
-      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - added "Acked-by: Harry Yoo (Oracle) <harry@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Cc: Gregory Price <gourry@gourry.net>"
-      - dropped "Cc: Harry Yoo <harry@kernel.org>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - Link: https://lore.kernel.org/20260629-gfp-pessimisation-v2-1-311ece6a8637@google.com
-      - Link: https://lore.kernel.org/20260615-gfp-pessimisation-v2-1-65f1319e6818@google.com
-      - Link: https://github.com/bjackman/aethelred/blob/2ccdc84ef087c2a631914f58e106e99e19bd3b98/page-alloc-test/page-alloc-test.c [1]
-    - 32595b9c0574 "mm: constify oom_control, scan_control, and alloc_context nodemask"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-  - dropped commits
-    - series "mm/page_owner: misc cleanups", v2. (6)
-      - feb2f8e9a1cf "mm/page_owner: use MIGRATE_REASON_NONE instead of -1 for last_migrate_reason (1/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260626024550.25677-3-ye.liu@linux.dev
-    - series "mm/page_owner: fix TOCTOU races in lockless page state reading". (2)
-      - 7c19ca9c706e "mm/page_owner: clamp skip_buddy_pages() PFN advance at MAX_ORDER_NR_PAGES boundary (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260625014708.87386-1-ye.liu@linux.dev
-        - Link: https://lore.kernel.org/20260625014708.87386-2-ye.liu@linux.dev
-        - Link: https://lore.kernel.org/all/20260623065234.31866-2-ye.liu@linux.dev/ [1]
-        - Link: https://sashiko.dev/#/patchset/20260623065234.31866-2-ye.liu@linux.dev
-      - a1ec54e1c9fb "mm/page_owner: use memcg_data snapshot instead of PageMemcgKmem() to avoid TOCTOU VM_BUG_ON (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260625014708.87386-3-ye.liu@linux.dev
-- mm-new: 2 -> 3 commits
+        - added "Link: https://lore.kernel.org/20260701061101.344679-5-ye.liu@linux.dev"
+        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260701012239.315262-5-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260701061101.344679-5-ye.liu@linux.dev
+      - 0bc86e11724d "mm/page_owner: add missing newline to count_threshold format string (4/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260701061101.344679-6-ye.liu@linux.dev"
+        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260701012239.315262-6-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260701061101.344679-6-ye.liu@linux.dev
+      - 4b67d41ca0a5 "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner() (5/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260701061101.344679-7-ye.liu@linux.dev"
+        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260701012239.315262-7-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260701061101.344679-7-ye.liu@linux.dev
+      - b3cf03a1f402 "mm/page_owner: drop redundant page_owner prefix from static symbols (6/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260701061101.344679-8-ye.liu@linux.dev"
+        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260701012239.315262-8-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260701061101.344679-8-ye.liu@linux.dev
+- mm-new: 3 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, no role : 0 -> 1 commits
-    - reviewer, reviewer: 1 -> 0 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
+    - no role, nobody: 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 0 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
+  - dropped commits
     - 595893e78396 "mm/page_alloc: free allocated PFNs if the range does not match"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260629-free-pfn-on-alloc-contig-range-error-path-v1-1-496ff9ca22db@nvidia.com
       - Link: https://sashiko.dev/#/patchset/20260628-keep-subpage-private-zero-at-free-v1-0-f4ce3930d10f@nvidia.com [1]
-    - a260b9f6fed6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
-    - 81ab86cf2ae3 "mm-fix-assert_exclusive_bits-by-passing-memdesc_flags_t-by-pointer-fix"
-      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

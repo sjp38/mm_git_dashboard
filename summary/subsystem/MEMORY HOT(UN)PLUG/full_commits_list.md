@@ -5,10 +5,11 @@
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 1 commits
+    - no role, nobody: 1 commits
   - full commits list
-    - e82cf963d533 "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260630214039.2263562-1-gourry@gourry.net
+    - d54b4cd791bc "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
+      - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

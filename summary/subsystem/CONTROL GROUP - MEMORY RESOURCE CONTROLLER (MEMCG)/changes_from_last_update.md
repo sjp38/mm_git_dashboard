@@ -9,13 +9,9 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 79c30b15a1e3 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260630112617.1198623-3-usama.arif@linux.dev
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
