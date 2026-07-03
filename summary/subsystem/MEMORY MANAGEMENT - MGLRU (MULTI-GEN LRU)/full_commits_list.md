@@ -2,40 +2,43 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 7 total, 0 (1) series, 6 non-series commits
+- mm-unstable: 8 total, 0 (1) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 2 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 2 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - d33b102b26de "mm/lruvec: trace LRU add drains and drain-all requests"
+    - b01d8d7e01d4 "mm/lruvec: trace LRU add drains and drain-all requests"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260622185127.24579-1-jp.kobryn@linux.dev
-    - 0988f67f2153 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
+    - dc28b5421474 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
-      - 0b5723fb28db "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
+      - 821dde97a85f "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
-    - 3b88f4c552cb "mm: annotate data-race in cpu_needs_drain()"
+    - dec8319b05d7 "mm: annotate data-race in cpu_needs_drain()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260626053700.2036899-1-wangxuewen@kylinos.cn
-    - 0b0f62e1f535 "mm-annotate-data-race-in-cpu_needs_drain-fix"
+    - fd80ef687326 "mm-annotate-data-race-in-cpu_needs_drain-fix"
       - Authored by a maintainer, reviewed by nobody
-    - 63040448cf04 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - ca05089afc7a "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - 88f841471ae5 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
+    - 9700b55035f6 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-    - 8c8c0655816d "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
+    - a245183249c6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+      - 1d0f0f1159cd "memcg: bail out proactive reclaim when memcg is dying" (2/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

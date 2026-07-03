@@ -1,84 +1,80 @@
 - baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - fae812aa347a "mm/compaction: handle free_pages_prepare() properly in compaction_free()"
+    - 7da7d599b8a8 "mm/compaction: handle free_pages_prepare() properly in compaction_free()"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260622-handle_free_pages_prepare_in_compaction_free-v1-1-fcf3b14abcf7@nvidia.com
-    - 397a4ceb7f49 "mm/page_alloc: use existing highatomic reserves on the buddy fastpath"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260623004600.113347-1-jp.kobryn@linux.dev
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 15 total, 2 (12) series, 3 non-series commits
+- mm-unstable: 18 total, 2 (12) series, 6 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 2 commits
-    - no role, reviewer: 10 commits
+    - no role, reviewer: 11 commits
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 1 commits
-    - maintainer, nobody: 1 commits
+    - maintainer, nobody: 2 commits
   - full commits list
-    - b1ce88110937 "mm/page_alloc: don't build vm_numa_stat_key if CONFIG_NUMA=n"
+    - 26e80dd79cc6 "mm/page_alloc: don't build vm_numa_stat_key if CONFIG_NUMA=n"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260618100614.1321950-1-ben.dooks@codethink.co.uk
     - series "mm/page_owner: misc cleanups", v5. (9 commits)
-      - 8d6737a14b4b "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping" (0/9)
+      - 5b6dd40bd434 "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping" (0/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701061101.344679-1-ye.liu@linux.dev
         - Link: https://lore.kernel.org/20260701061101.344679-2-ye.liu@linux.dev
-      - 208db2310098 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason" (1/9)
+      - eddcdb2c8168 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason" (1/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701061101.344679-3-ye.liu@linux.dev
-      - 01e5783b4f26 "mm: use enum migrate_reason instead of int for migration reason parameters" (2/9)
+      - fb74f63cd212 "mm: use enum migrate_reason instead of int for migration reason parameters" (2/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev
-      - fb229508f05f "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg()" (3/9)
+      - d9e3066297cc "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg()" (3/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701061101.344679-5-ye.liu@linux.dev
-      - 0bc86e11724d "mm/page_owner: add missing newline to count_threshold format string" (4/9)
+      - 630ab333cd4a "mm/page_owner: add missing newline to count_threshold format string" (4/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701061101.344679-6-ye.liu@linux.dev
-      - 4b67d41ca0a5 "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner()" (5/9)
+      - a84a4d998468 "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner()" (5/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701061101.344679-7-ye.liu@linux.dev
-      - b3cf03a1f402 "mm/page_owner: drop redundant page_owner prefix from static symbols" (6/9)
+      - 50e75718b960 "mm/page_owner: drop redundant page_owner prefix from static symbols" (6/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701061101.344679-8-ye.liu@linux.dev
-      - e0c592e3f0f1 "mm/page_owner: clamp skip_buddy_pages() PFN advance at MAX_ORDER_NR_PAGES boundary" (7/9)
+      - 4dda4653888a "mm/page_owner: clamp skip_buddy_pages() PFN advance at MAX_ORDER_NR_PAGES boundary" (7/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260701061101.344679-9-ye.liu@linux.dev
-      - 4cd11ebe8a2a "mm/page_owner: use memcg_data snapshot instead of PageMemcgKmem() to avoid TOCTOU VM_BUG_ON" (8/9)
+      - 3efb3d07ca46 "mm/page_owner: use memcg_data snapshot instead of PageMemcgKmem() to avoid TOCTOU VM_BUG_ON" (8/9)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260701061101.344679-10-ye.liu@linux.dev
     - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v11. (4 commits)
-      - 26ae9e42dbba "mm/page_owner: add print_mode filter" (0/4)
+      - 37e55dd56a15 "mm/page_owner: add print_mode filter" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260625043101.338794-1-zhen.ni@easystack.cn
         - Link: https://lore.kernel.org/20260625043101.338794-2-zhen.ni@easystack.cn
-      - 7006cc0eeabf "mm-page_owner-add-print_mode-filter-fix" (1/4)
+      - e2b00323dbc7 "mm-page_owner-add-print_mode-filter-fix" (1/4)
         - Authored by a maintainer, reviewed by nobody
-      - 263ae59152b2 "mm/page_owner: add NUMA node filter" (2/4)
+      - a80b5a4f6b2a "mm/page_owner: add NUMA node filter" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260625043101.338794-3-zhen.ni@easystack.cn
-    - c92fba585c58 "mm/page_alloc: drop flag-conversion "optimisation""
+    - 8b046e3396c9 "mm/page_alloc: drop flag-conversion "optimisation""
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629-gfp-pessimisation-v2-1-311ece6a8637@google.com
       - Link: https://lore.kernel.org/20260615-gfp-pessimisation-v2-1-65f1319e6818@google.com
       - Link: https://github.com/bjackman/aethelred/blob/2ccdc84ef087c2a631914f58e106e99e19bd3b98/page-alloc-test/page-alloc-test.c [1]
-    - 63040448cf04 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - ca05089afc7a "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - maintainer, nobody: 1 commits
-  - full commits list
-    - 8c8c0655816d "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
+    - 0921d785d75a "mm/page_alloc: use existing highatomic reserves on the buddy fastpath"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260623004600.113347-1-jp.kobryn@linux.dev
+    - a245183249c6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
-    - e800b0d79f20 "mm-fix-assert_exclusive_bits-by-passing-memdesc_flags_t-by-pointer-fix"
+    - 72d9325c72de "mm-fix-assert_exclusive_bits-by-passing-memdesc_flags_t-by-pointer-fix"
       - Authored by a maintainer, reviewed by nobody
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

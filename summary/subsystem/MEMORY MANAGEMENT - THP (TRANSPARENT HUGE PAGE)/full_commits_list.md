@@ -2,29 +2,29 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 487ba7e125b9 "mm/huge_memory: set PG_has_hwpoisoned only after new folio head is established"
-      - Authored by no role player, reviewed by a reviewer
+    - 5e713f5787a2 "mm/huge_memory: set PG_has_hwpoisoned only after new folio head is established"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260701174235.3173401-1-riel@surriel.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 3 total, 1 (3) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 3 commits
+    - reviewer, reviewer: 3 commits
   - full commits list
     - series "mm: preparatory patches for PMD level swap entries". (6 commits)
-      - b18115c540f2 "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
-        - Authored by no role player, reviewed by a reviewer
+      - 42857eea6806 "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
+        - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
         - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]
         - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
-      - b386efb5d02b "mm/huge_memory: move softleaf_to_folio() inside migration branch" (3/6)
-        - Authored by no role player, reviewed by a reviewer
+      - 800f9eab454d "mm/huge_memory: move softleaf_to_folio() inside migration branch" (3/6)
+        - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260630164143.1595669-5-usama.arif@linux.dev
-      - ea4350d660e6 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
-        - Authored by no role player, reviewed by a reviewer
+      - 4fc4e00d26e2 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
+        - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

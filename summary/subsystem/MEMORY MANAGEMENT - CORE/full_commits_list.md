@@ -2,108 +2,101 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 19 total, 2 (16) series, 3 non-series commits
+- mm-unstable: 24 total, 3 (18) series, 6 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, no role : 10 commits
-    - no role, reviewer: 3 commits
-    - no role, maintainer: 3 commits
+    - no role, nobody: 5 commits
+    - no role, no role : 12 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 4 commits
+    - reviewer, reviewer: 2 commits
   - full commits list
-    - 0988f67f2153 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
+    - dc28b5421474 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
     - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19 commits)
-      - 8f1deca0731d "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages" (0/19)
+      - 6e8084f760f2 "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages" (0/19)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260612035903.2468601-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260612035903.2468601-2-songmuchun@bytedance.com
-      - ae4079a60928 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
+      - d5dbc61ea46f "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
-      - cd7c9d49c831 "mm/sparse: panic on memmap and usemap allocation failure" (5/19)
+      - 07585df53e15 "mm/sparse: panic on memmap and usemap allocation failure" (5/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-7-songmuchun@bytedance.com
-      - 3317df8dbcab "mm/sparse: move subsection_map_init() into sparse_init()" (6/19)
+      - 0ad1a6b153d8 "mm/sparse: move subsection_map_init() into sparse_init()" (6/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-8-songmuchun@bytedance.com
-      - ca4ea0834a46 "mm/mm_init: remove set_pageblock_order() call from sparse_init()" (9/19)
+      - 7ae15f74dd18 "mm/mm_init: remove set_pageblock_order() call from sparse_init()" (9/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-11-songmuchun@bytedance.com
-      - 800edc0540b0 "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid()" (10/19)
+      - f0574fb8c5b5 "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid()" (10/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-12-songmuchun@bytedance.com
-      - 0bdd323e5933 "mm/hugetlb: refactor early boot gigantic hugepage allocation" (12/19)
+      - 7b9e5d50a1a3 "mm/hugetlb: refactor early boot gigantic hugepage allocation" (12/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-14-songmuchun@bytedance.com
-      - 0b5723fb28db "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
+      - 821dde97a85f "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
-      - 8eac6ddc3b16 "mm/hugetlb: remove unused bootmem cma field" (17/19)
+      - 84a68ea4a2a9 "mm/hugetlb: remove unused bootmem cma field" (17/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260612035903.2468601-19-songmuchun@bytedance.com
-      - 3696d519f301 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
+      - b36b6ed8a566 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-20-songmuchun@bytedance.com
-      - a78e20551d86 "Documentation: document panic_on_unrecoverable_memory_failure sysctl" (4/6)
+      - 253564c3bf9f "Documentation: document panic_on_unrecoverable_memory_failure sysctl" (4/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-5-c6ed5b62eea2@debian.org
-    - 63040448cf04 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - ca05089afc7a "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - 909363c4b023 "mm/vmstat: avoid taking zone lock in /proc/buddyinfo reads"
+    - 3559c02ffc17 "mm/vmstat: avoid taking zone lock in /proc/buddyinfo reads"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260604134245.1580287-1-imran.f.khan@oracle.com
-      - a9844124c1f3 "mm: drop pte_clear_not_present_full()" (1/3)
+      - 080835051a0c "mm: drop pte_clear_not_present_full()" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260629-clear_not_present_full_ptes-v2-2-96089871a1e7@kernel.org
-      - 27a35f74ded7 "mm: cleanup clear_not_present_full_ptes() and rename to clear_non_present_ptes()" (2/3)
+      - 0bdc91cb0c4c "mm: cleanup clear_not_present_full_ptes() and rename to clear_non_present_ptes()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260629-clear_not_present_full_ptes-v2-3-96089871a1e7@kernel.org
     - series "mm: preparatory patches for PMD level swap entries". (6 commits)
-      - b18115c540f2 "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
-        - Authored by no role player, reviewed by a reviewer
+      - 42857eea6806 "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
+        - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
         - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]
         - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
-      - 9809e967704a "mm: extract mm_prepare_for_swap_entries() helper" (1/6)
+      - 7ce7c00c6759 "mm: extract mm_prepare_for_swap_entries() helper" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630164143.1595669-3-usama.arif@linux.dev
-      - ea4350d660e6 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
-        - Authored by no role player, reviewed by a reviewer
+      - 4fc4e00d26e2 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
+        - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
-- mm-new: 6 total, 1 (3) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 3 commits
-    - no role, maintainer: 1 commits
-  - full commits list
     - series "mm/vmpressure: reduce CPU, memory and code overhead on cgroup v2", v3. (2 commits)
-      - 8615f926cc74 "mm/vmpressure: skip tree=true accounting on cgroup v2" (0/2)
+      - b5d5a4d2be29 "mm/vmpressure: skip tree=true accounting on cgroup v2" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630112617.1198623-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260630112617.1198623-2-usama.arif@linux.dev
-      - c4f88f218f28 "mm-vmpressure-skip-tree=true-accounting-on-cgroup-v2-fix" (1/2)
+      - c433ad3a38ff "mm-vmpressure-skip-tree=true-accounting-on-cgroup-v2-fix" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/e8e1a409-48d8-4fa7-ae98-49485a1607f6@linux.dev
-    - d9a59df9da00 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
+    - 0eac7bd91b95 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260630112617.1198623-3-usama.arif@linux.dev
-    - 8c8c0655816d "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
+    - a245183249c6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
-    - fe0405054192 "mm: gfp_types: fix __GFP_ACCOUNT, GFP_KERNEL_ACCOUNT documentation"
+    - cacb66e2e2bf "mm: gfp_types: fix __GFP_ACCOUNT, GFP_KERNEL_ACCOUNT documentation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260701182102.1586784-1-hannes@cmpxchg.org
-      - cd20d6a448c2 "mm: add a set_page_section_from_pfn() helper" (2/8)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260701090553.62691-4-lizhe.67@bytedance.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 42539eb4b575 "riscv: mm: avoid spurious fault after hotplugging vmemmap"
+    - f88fbe30bd90 "riscv: mm: avoid spurious fault after hotplugging vmemmap"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260630-mark-after-vmemmap-populate-v4-1-febbc15da028@iscas.ac.cn

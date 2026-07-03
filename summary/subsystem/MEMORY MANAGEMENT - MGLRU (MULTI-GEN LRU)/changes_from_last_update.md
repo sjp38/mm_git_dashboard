@@ -5,22 +5,27 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 7 commits
+- mm-unstable: 7 -> 8 commits
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 2 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - 88f841471ae5 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
-      - Authored by no role player, reviewed by a maintainer
+    - a245183249c6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
+      - Authored by no role player, reviewed by nobody
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
-- mm-new: 2 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
+      - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "memcg: bail out reclaim when memcg is dying", v3. (4)
+      - 1d0f0f1159cd "memcg: bail out proactive reclaim when memcg is dying (2/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

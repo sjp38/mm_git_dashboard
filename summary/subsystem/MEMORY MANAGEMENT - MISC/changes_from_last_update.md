@@ -1,73 +1,66 @@
 - baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 3 commits (no change)
+- mm-hotfixes-unstable: 3 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 0 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+- mm-stable: 0 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 5 commits
-  - series: 0 (2) -> 1 (4)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - changed commits
-    - series "mm/damon: five misc fixups" (5)
-      - ded7c690c4e2 "Docs/{admin-guide,mm}/damon: fix DAMON documentation details (2/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260629145538.134832-4-sj@kernel.org
-    - series "mm/damon: update, optimize, and clean up doc, tests, and code". (11)
-      - c41d51b313d4 "Docs/mm/damon/design: update for DAMOS_QUOTA_NODE_ELIGIBLE_MEM_BP (0/11)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260630141726.92246-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260630141726.92246-2-sj@kernel.org
-- mm-new: 7 -> 6 commits
-  - series: 2 (7) -> 1 (5)
     - no role, nobody: 0 -> 1 commits
-    - no role, no role : 5 -> 5 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
-    - 81605acb0f92 "selftests/mm/uffd: don't treat UFFDIO_COPY -ENOENT as a failure"
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - 4b0363cb1f3e "selftests/mm: fix ksft_process_madv.sh test category"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260608103224.344101-1-sarthak.sharma@arm.com
+    - dccf636bf1e6 "selftests/mm: pagemap_ioctl: use the correct page size for transact_test()"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260701200932.1470525-1-rppt@kernel.org
+      - branch: mm-hotfixes-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260628101118.35861-1-zenghui.yu@linux.dev
+    - fd5295afae91 "selftests/mm: hmm-tests: include linux/mman.h to access MADV_COLLAPSE"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260628143111.36863-1-zenghui.yu@linux.dev
+- mm-unstable: 5 -> 11 commits
+  - series: 1 (4) -> 2 (9)
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 1 -> 6 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
   - changed commits
     - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v8. (5)
-      - af0286436c44 "selftests/mm: move pkey selftest helpers to pkey_util.c (0/5)"
+      - 82f5ca18837e "selftests/mm: move pkey selftest helpers to pkey_util.c (0/5)"
         - Authored by no role player, reviewed by no role player
-        - added "Tested-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-        - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260630073235.3802271-1-lihongfu@kylinos.cn
         - Link: https://lore.kernel.org/20260630073235.3802271-2-lihongfu@kylinos.cn
-      - c61aaa5786a4 "selftests/mm: unify pkey sighandler selftest assertions and tracing (1/5)"
+      - 01db30dd39e3 "selftests/mm: unify pkey sighandler selftest assertions and tracing (1/5)"
         - Authored by no role player, reviewed by no role player
-        - added "Tested-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-        - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260630073235.3802271-3-lihongfu@kylinos.cn
-      - 0a7a8b4ce7f2 "selftests/mm: use pkey_assert on clone_raw failure in pkey test (2/5)"
+      - b925b4c5b55c "selftests/mm: use pkey_assert on clone_raw failure in pkey test (2/5)"
         - Authored by no role player, reviewed by no role player
-        - added "Tested-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-        - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260630073235.3802271-4-lihongfu@kylinos.cn
-      - 03d5dd5667c1 "selftests/mm: add missing mmap() return checks in pkey tests (3/5)"
+      - d84371cb9082 "selftests/mm: add missing mmap() return checks in pkey tests (3/5)"
         - Authored by no role player, reviewed by no role player
-        - added "Tested-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-        - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260630073235.3802271-5-lihongfu@kylinos.cn
-      - 683e3adb7a6f "selftests/mm: add missing pthread_create() return checks in pkey tests (4/5)"
+      - 918cadb7928a "selftests/mm: add missing pthread_create() return checks in pkey tests (4/5)"
         - Authored by no role player, reviewed by no role player
-        - added "Tested-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-        - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260630073235.3802271-6-lihongfu@kylinos.cn
+    - 4e5c392b79b1 "selftests/mm/uffd: don't treat UFFDIO_COPY -ENOENT as a failure"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260701200932.1470525-1-rppt@kernel.org
+- mm-new: 6 -> 0 commits
+  - series: 1 (5) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 5 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

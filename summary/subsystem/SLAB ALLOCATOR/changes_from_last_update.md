@@ -5,11 +5,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
+    - no role, nobody: 0 -> 1 commits
+  - changed commits
+    - a245183249c6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

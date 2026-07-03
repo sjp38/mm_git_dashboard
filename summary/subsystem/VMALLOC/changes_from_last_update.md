@@ -10,8 +10,13 @@
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - e2fc856b5998 "mm/vmalloc: add alignment info in warning print as possible failure reason"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260702112610.21589-1-feng.tang@linux.alibaba.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

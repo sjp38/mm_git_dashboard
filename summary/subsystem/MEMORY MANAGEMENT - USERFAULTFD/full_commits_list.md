@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 7d6bf454011f "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
+    - e2b80357632c "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260601082609.170076-1-jianhuizzzzz@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

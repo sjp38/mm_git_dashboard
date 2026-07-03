@@ -1,85 +1,42 @@
 - baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 0 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+- mm-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 15 commits
-  - series: 2 (10) -> 2 (12)
-    - no role, no role : 0 -> 2 commits
-    - no role, reviewer: 10 -> 10 commits (no change)
+    - reviewer, reviewer: 0 -> 1 commits
+  - changed commits
+    - 7da7d599b8a8 "mm/compaction: handle free_pages_prepare() properly in compaction_free()"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260622-handle_free_pages_prepare_in_compaction_free-v1-1-fcf3b14abcf7@nvidia.com
+- mm-unstable: 15 -> 18 commits
+  - series: 2 (12) -> 2 (12) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 10 -> 11 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/page_owner: misc cleanups", v5. (9)
-      - e0c592e3f0f1 "mm/page_owner: clamp skip_buddy_pages() PFN advance at MAX_ORDER_NR_PAGES boundary (7/9)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260701061101.344679-9-ye.liu@linux.dev
-      - 4cd11ebe8a2a "mm/page_owner: use memcg_data snapshot instead of PageMemcgKmem() to avoid TOCTOU VM_BUG_ON (8/9)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260701061101.344679-10-ye.liu@linux.dev
+    - maintainer, nobody: 1 -> 2 commits
   - changed commits
-    - series "mm/page_owner: misc cleanups", v5. (9)
-      - 8d6737a14b4b "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping (0/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701061101.344679-2-ye.liu@linux.dev"
-        - added "Link: https://lore.kernel.org/20260701061101.344679-1-ye.liu@linux.dev"
-        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260701012239.315262-2-ye.liu@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260701012239.315262-1-ye.liu@linux.dev"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260701061101.344679-1-ye.liu@linux.dev
-        - Link: https://lore.kernel.org/20260701061101.344679-2-ye.liu@linux.dev
-      - 208db2310098 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason (1/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701061101.344679-3-ye.liu@linux.dev"
-        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260701012239.315262-3-ye.liu@linux.dev"
-        - Link: https://lore.kernel.org/20260701061101.344679-3-ye.liu@linux.dev
-      - 01e5783b4f26 "mm: use enum migrate_reason instead of int for migration reason parameters (2/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev"
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260701012239.315262-4-ye.liu@linux.dev"
-        - Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev
-      - fb229508f05f "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg() (3/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701061101.344679-5-ye.liu@linux.dev"
-        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260701012239.315262-5-ye.liu@linux.dev"
-        - Link: https://lore.kernel.org/20260701061101.344679-5-ye.liu@linux.dev
-      - 0bc86e11724d "mm/page_owner: add missing newline to count_threshold format string (4/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701061101.344679-6-ye.liu@linux.dev"
-        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260701012239.315262-6-ye.liu@linux.dev"
-        - Link: https://lore.kernel.org/20260701061101.344679-6-ye.liu@linux.dev
-      - 4b67d41ca0a5 "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner() (5/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701061101.344679-7-ye.liu@linux.dev"
-        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260701012239.315262-7-ye.liu@linux.dev"
-        - Link: https://lore.kernel.org/20260701061101.344679-7-ye.liu@linux.dev
-      - b3cf03a1f402 "mm/page_owner: drop redundant page_owner prefix from static symbols (6/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701061101.344679-8-ye.liu@linux.dev"
-        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260701012239.315262-8-ye.liu@linux.dev"
-        - Link: https://lore.kernel.org/20260701061101.344679-8-ye.liu@linux.dev
-- mm-new: 3 -> 2 commits
+    - 0921d785d75a "mm/page_alloc: use existing highatomic reserves on the buddy fastpath"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-unstable
+      - Link: https://lore.kernel.org/20260623004600.113347-1-jp.kobryn@linux.dev
+    - a245183249c6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+    - 72d9325c72de "mm-fix-assert_exclusive_bits-by-passing-memdesc_flags_t-by-pointer-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+- mm-new: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 0 commits
-    - maintainer, nobody: 1 -> 1 commits (no change)
-  - dropped commits
-    - 595893e78396 "mm/page_alloc: free allocated PFNs if the range does not match"
-      - Authored by a reviewer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260629-free-pfn-on-alloc-contig-range-error-path-v1-1-496ff9ca22db@nvidia.com
-      - Link: https://sashiko.dev/#/patchset/20260628-keep-subpage-private-zero-at-free-v1-0-f4ce3930d10f@nvidia.com [1]
+    - no role, nobody: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

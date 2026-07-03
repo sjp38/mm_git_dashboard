@@ -1,56 +1,70 @@
 - baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 10 total, 2 (8) series, 2 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 10 commits
+    - no role, reviewer: 1 commits
   - full commits list
-    - e0e60d55ff45 "mm: migrate_device: use walk_page_range_vma() in migrate_vma_collect()"
+      - 31ee3397f850 "mm/migrate: exclude hugetlb folios from MTHP_STAT_NR_ANON accounting" (1/2)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260702172548.37075-3-npache@redhat.com
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 12 total, 2 (8) series, 4 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, reviewer: 9 commits
+    - reviewer, reviewer: 2 commits
+  - full commits list
+    - f4d10bd1b006 "mm: migrate_device: use walk_page_range_vma() in migrate_vma_collect()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260618092845.3905740-5-wangkefeng.wang@huawei.com
-      - 208db2310098 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason" (1/9)
+      - eddcdb2c8168 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason" (1/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701061101.344679-3-ye.liu@linux.dev
-      - 01e5783b4f26 "mm: use enum migrate_reason instead of int for migration reason parameters" (2/9)
+      - fb74f63cd212 "mm: use enum migrate_reason instead of int for migration reason parameters" (2/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev
     - series "mm/migrate: preparatory cleanups for batch copy and offload", v2. (3 commits)
-      - 60743fcc6970 "mm/migrate: rename page to folio leftovers" (0/3)
+      - 3c46782fbbca "mm/migrate: rename page to folio leftovers" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-0-d9e8f17130b1@amd.com
         - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-1-d9e8f17130b1@amd.com
         - Link: https://lore.kernel.org/all/20260428155043.39251-2-shivankg@amd.com [1]
-      - 2c9e4d0d02e1 "mm/migrate: fix stale list name in migrate_folios_move() comment" (1/3)
+      - 6db41a906f15 "mm/migrate: fix stale list name in migrate_folios_move() comment" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-2-d9e8f17130b1@amd.com
-      - d5eb2f6bacbf "mm/migrate: use migrate_info field instead of private" (2/3)
+      - 2b39b8472b2c "mm/migrate: use migrate_info field instead of private" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-3-d9e8f17130b1@amd.com
-    - d2f52956d6fa "mm: mempolicy: fix automatic numa balancing for shmem"
+    - eb8b03201655 "mm: mempolicy: fix automatic numa balancing for shmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
     - series "mm: preparatory patches for PMD level swap entries". (6 commits)
-      - b18115c540f2 "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
-        - Authored by no role player, reviewed by a reviewer
+      - 42857eea6806 "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
+        - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
         - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]
         - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
-      - a43f9a7fd91d "mm/migrate_device: move softleaf_to_folio() inside device-private branch" (4/6)
+      - dcb14ba55e89 "mm/migrate_device: move softleaf_to_folio() inside device-private branch" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260630164143.1595669-6-usama.arif@linux.dev
-      - ea4350d660e6 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
-        - Authored by no role player, reviewed by a reviewer
+      - 4fc4e00d26e2 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
+        - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-  - full commits list
-    - dbbe4412ca47 "mm/migrate_device: pin large folios before splitting"
+    - 23aee344d0df "mm/migrate_device: pin large folios before splitting"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260701140638.840773-1-usama.arif@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260630164143.1595669-1-usama.arif%40linux.dev
+    - 3a262aeb8be4 "condense comment about folio reference"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/87bbf335-648f-4065-abc8-3eaab5a3beeb@linux.dev
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+      - fc15db25ceb0 "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol()" (1/6)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

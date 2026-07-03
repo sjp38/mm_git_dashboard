@@ -1,15 +1,23 @@
 - baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 1 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - series "mm: fix PMD level mTHP accounting bugs". (2 commits)
+      - e166cd990def "mm: decrement MTHP_STAT_NR_ANON in free_zone_device_folio()" (0/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260702172548.37075-1-npache@redhat.com
+        - Link: https://lore.kernel.org/20260702172548.37075-2-npache@redhat.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - d54b4cd791bc "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
+    - 6e4b05e4429e "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
       - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

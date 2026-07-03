@@ -4,64 +4,44 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 2360de02c859 "mm/vmstat: fold stranded per-cpu node stats when a node comes online"
+    - beac1ab88f1a "mm/vmstat: fold stranded per-cpu node stats when a node comes online"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260627202243.758289-1-gourry@gourry.net
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 8 total, 0 (8) series, 0 non-series commits
+- mm-unstable: 9 total, 0 (8) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 7 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - ae4079a60928 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
+      - d5dbc61ea46f "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
-      - fa8c7c868456 "mm/mm_init: simplify deferred_free_pages() migratetype init" (4/19)
+      - 76b2f94a5170 "mm/mm_init: simplify deferred_free_pages() migratetype init" (4/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-6-songmuchun@bytedance.com
-      - 3317df8dbcab "mm/sparse: move subsection_map_init() into sparse_init()" (6/19)
+      - 0ad1a6b153d8 "mm/sparse: move subsection_map_init() into sparse_init()" (6/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-8-songmuchun@bytedance.com
-      - 288151db6ff0 "mm/mm_init: defer sparse_init() until after zone initialization" (7/19)
+      - ba4e66e21eee "mm/mm_init: defer sparse_init() until after zone initialization" (7/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-9-songmuchun@bytedance.com
-      - 376a0bbe384b "mm/mm_init: defer hugetlb reservation until after zone initialization" (8/19)
+      - 42a58b5a0b3d "mm/mm_init: defer hugetlb reservation until after zone initialization" (8/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-10-songmuchun@bytedance.com
-      - ca4ea0834a46 "mm/mm_init: remove set_pageblock_order() call from sparse_init()" (9/19)
+      - 7ae15f74dd18 "mm/mm_init: remove set_pageblock_order() call from sparse_init()" (9/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-11-songmuchun@bytedance.com
-      - 800edc0540b0 "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid()" (10/19)
+      - f0574fb8c5b5 "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid()" (10/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-12-songmuchun@bytedance.com
-      - 3696d519f301 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
+      - b36b6ed8a566 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-20-songmuchun@bytedance.com
-- mm-new: 6 total, 1 (5) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 5 commits
-    - no role, no role : 1 commits
-  - full commits list
-    - d54b4cd791bc "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
+    - 6e4b05e4429e "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
       - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
-    - series "mm: optimize zone-device memmap initialization", v5. (8 commits)
-      - 040ad560e4f9 "mm: fix stale ZONE_DEVICE refcount comment" (0/8)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260701090553.62691-2-lizhe.67@bytedance.com
-        - Link: https://lore.kernel.org/all/aiEoByaQdRR3xtM5@nvdebian.thelocal/ [1]
-      - b89c08d655b1 "mm: factor zone-device page init helpers out of __init_zone_device_page" (1/8)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260701090553.62691-3-lizhe.67@bytedance.com
-      - ea425f4bbd8b "mm: add a template-based fast path for zone-device page init" (3/8)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260701090553.62691-5-lizhe.67@bytedance.com
-      - 77955dc061fa "mm: extend the template fast path to zone-device compound tails" (4/8)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260701090553.62691-6-lizhe.67@bytedance.com
-      - e08d3906752b "mm: use memcpy_nt() in zone-device template copies" (7/8)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260701090553.62691-9-lizhe.67@bytedance.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

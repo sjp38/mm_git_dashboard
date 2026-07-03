@@ -5,23 +5,47 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 12 commits (no change)
+- mm-unstable: 12 -> 13 commits
   - series: 1 (11) -> 1 (11) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+    - no role, maintainer: 3 -> 4 commits
   - changed commits
-    - series "mm/page_owner: misc cleanups", v5. (9)
-      - 01e5783b4f26 "mm: use enum migrate_reason instead of int for migration reason parameters (2/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev"
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260701012239.315262-4-ye.liu@linux.dev"
-        - Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - 20f47420708e "mm/hugetlb: avoid unnecessary TLB flush for empty folio list in vmemmap optimize"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260630113857.3319612-1-guanwentao@uniontech.com
+- mm-new: 1 -> 6 commits
+  - series: 0 (0) -> 1 (6)
+    - no role, nobody: 0 -> 3 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 1 -> 2 commits
+  - new commits
+    - series "Open HugeTLB allocation routine for more generic use", v4. (6)
+      - 998fa6003d94 "mm: hugetlb: consolidate interpretation of gbl_chg within alloc_hugetlb_folio() (0/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-0-d53cefcccf34@google.com
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-1-d53cefcccf34@google.com
+        - Link: https://lore.kernel.org/all/cover.1747264138.git.ackerleytng@google.com/T/ [1]
+        - Link: https://github.com/googleprodkernel/linux-cc/tree/wip-gmem-conversions-hugetlb-restructuring-12-08-25 [2]
+        - Link: https://lore.kernel.org/all/agqaUcVp_hwH-VXr@localhost.localdomain/ [3]
+        - Link: https://sashiko.dev/#/patchset/20260518-hugetlb-open-up-v3-0-e14b302477f8@google.com [4]
+      - fc15db25ceb0 "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
+      - 21b0a837c4f7 "mm: hugetlb: move mpol interpretation out of dequeue_hugetlb_folio_vma() (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-3-d53cefcccf34@google.com
+      - bb24ae793e1f "mm: hugetlb: use error variable in alloc_hugetlb_folio (3/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-4-d53cefcccf34@google.com
+      - f3098fad2a93 "mm: hugetlb: move mem_cgroup_charge_hugetlb() earlier in allocation (4/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-5-d53cefcccf34@google.com
+      - 78cfd3dda93d "mm: hugetlb: refactor out hugetlb_alloc_folio() (5/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-6-d53cefcccf34@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

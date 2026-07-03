@@ -5,14 +5,10 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 7 commits
+- mm-unstable: 7 -> 7 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, no role : 4 -> 4 commits (no change)
-    - maintainer, nobody: 2 -> 3 commits
-  - new commits
-    - 973d43d22b44 "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/202607020359.FMDmPwjF-lkp@intel.com
+    - maintainer, nobody: 3 -> 3 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

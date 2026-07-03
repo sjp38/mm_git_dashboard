@@ -6,16 +6,22 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 8 commits (no change)
+- mm-unstable: 8 -> 9 commits
   - series: 0 (8) -> 0 (8) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 7 -> 7 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 6 commits
-  - series: 0 (0) -> 1 (5)
-    - no role, nobody: 0 -> 5 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 1 -> 0 commits
-  - new commits
+  - changed commits
+    - 6e4b05e4429e "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
+      - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
+- mm-new: 6 -> 0 commits
+  - series: 1 (5) -> 0 (0)
+    - no role, nobody: 5 -> 0 commits
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
     - series "mm: optimize zone-device memmap initialization", v5. (8)
       - 040ad560e4f9 "mm: fix stale ZONE_DEVICE refcount comment (0/8)"
         - Authored by no role player, reviewed by nobody
@@ -33,17 +39,6 @@
       - e08d3906752b "mm: use memcpy_nt() in zone-device template copies (7/8)"
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260701090553.62691-9-lizhe.67@bytedance.com
-  - changed commits
-    - d54b4cd791bc "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net"
-      - added "Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net"
-      - added "Reported-by: Sashiko <sashiko-bot@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260630214039.2263562-1-gourry@gourry.net"
-      - dropped "Assisted-by: Sashiko:unknown-model"
-      - dropped "Reviewed-by: Andrew Morton <akpm@linux-foundation.org>"
-      - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
-      - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

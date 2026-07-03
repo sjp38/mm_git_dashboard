@@ -1,21 +1,28 @@
 - baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 0 commits (no change)
+    - reviewer, reviewer: 1 -> 0 commits
+- mm-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - reviewer, reviewer: 0 -> 1 commits
+  - changed commits
+    - e187bc02f8fa "mm: do file ownership checks with the proper mount idmap"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260625153853.913949-1-pfalcato@suse.de
 - mm-unstable: 3 -> 3 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - a3fe601c04c5 "mm: fix mapping_seek_hole_data() overflow on last page"
+    - no role, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - 5238b706cc5f "mm: fix mapping_seek_hole_data() overflow on last page"
       - Authored by no role player, reviewed by nobody
+      - dropped "Cc: <stable@vger.kernel.org>"
       - Link: https://lore.kernel.org/20260630125047.703170-1-yanzhen20011121@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

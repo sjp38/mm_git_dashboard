@@ -6,12 +6,18 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - 63040448cf04 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - ca05089afc7a "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - 88f841471ae5 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
+    - 9700b55035f6 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+      - 1d0f0f1159cd "memcg: bail out proactive reclaim when memcg is dying" (2/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

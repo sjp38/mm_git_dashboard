@@ -5,22 +5,22 @@
     - no role, reviewer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 5d491bcb5291 "mm/page_vma_mapped: fix device-private PMD handling"
+    - a273a62de9e7 "mm/page_vma_mapped: fix device-private PMD handling"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260630021540.17297-1-richard.weiyang@gmail.com
-    - e7728895e28c "mm-page_vma_mapped-fix-device-private-pmd-handling-fix"
+    - 159d3a8d68e8 "mm-page_vma_mapped-fix-device-private-pmd-handling-fix"
       - Authored by a maintainer, reviewed by nobody
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
+    - reviewer, reviewer: 1 commits
   - full commits list
-      - 9809e967704a "mm: extract mm_prepare_for_swap_entries() helper" (1/6)
+      - 7ce7c00c6759 "mm: extract mm_prepare_for_swap_entries() helper" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630164143.1595669-3-usama.arif@linux.dev
-      - ea4350d660e6 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
-        - Authored by no role player, reviewed by a reviewer
+      - 4fc4e00d26e2 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
+        - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

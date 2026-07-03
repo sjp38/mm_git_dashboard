@@ -5,17 +5,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 2 commits
+- mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 2 commits
-  - changed commits
-    - 88f841471ae5 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
-- mm-new: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "memcg: bail out reclaim when memcg is dying", v3. (4)
+      - 1d0f0f1159cd "memcg: bail out proactive reclaim when memcg is dying (2/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

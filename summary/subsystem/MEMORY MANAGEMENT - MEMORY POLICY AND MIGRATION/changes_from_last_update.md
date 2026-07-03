@@ -1,71 +1,40 @@
 - baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm: fix PMD level mTHP accounting bugs". (2)
+      - 31ee3397f850 "mm/migrate: exclude hugetlb folios from MTHP_STAT_NR_ANON accounting (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260702172548.37075-3-npache@redhat.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 10 commits
-  - series: 0 (2) -> 2 (8)
-    - no role, reviewer: 3 -> 10 commits
+- mm-unstable: 10 -> 12 commits
+  - series: 2 (8) -> 2 (8) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, reviewer: 10 -> 9 commits
+    - reviewer, reviewer: 0 -> 2 commits
   - new commits
-    - series "mm/migrate: preparatory cleanups for batch copy and offload", v2. (3)
-      - 60743fcc6970 "mm/migrate: rename page to folio leftovers (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-0-d9e8f17130b1@amd.com
-        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-1-d9e8f17130b1@amd.com
-        - Link: https://lore.kernel.org/all/20260428155043.39251-2-shivankg@amd.com [1]
-      - 2c9e4d0d02e1 "mm/migrate: fix stale list name in migrate_folios_move() comment (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-2-d9e8f17130b1@amd.com
-      - d5eb2f6bacbf "mm/migrate: use migrate_info field instead of private (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-3-d9e8f17130b1@amd.com
+    - 3a262aeb8be4 "condense comment about folio reference"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/87bbf335-648f-4065-abc8-3eaab5a3beeb@linux.dev
   - changed commits
-    - series "mm/page_owner: misc cleanups", v5. (9)
-      - 208db2310098 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason (1/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701061101.344679-3-ye.liu@linux.dev"
-        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260701012239.315262-3-ye.liu@linux.dev"
-        - Link: https://lore.kernel.org/20260701061101.344679-3-ye.liu@linux.dev
-      - 01e5783b4f26 "mm: use enum migrate_reason instead of int for migration reason parameters (2/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev"
-        - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260701012239.315262-4-ye.liu@linux.dev"
-        - Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev
-    - d2f52956d6fa "mm: mempolicy: fix automatic numa balancing for shmem"
+    - 23aee344d0df "mm/migrate_device: pin large folios before splitting"
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
-    - series "mm: preparatory patches for PMD level swap entries". (6)
-      - b18115c540f2 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
-        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]
-        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
-      - a43f9a7fd91d "mm/migrate_device: move softleaf_to_folio() inside device-private branch (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260630164143.1595669-6-usama.arif@linux.dev
-      - ea4350d660e6 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
-- mm-new: 4 -> 1 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, reviewer: 4 -> 1 commits
-  - new commits
-    - dbbe4412ca47 "mm/migrate_device: pin large folios before splitting"
-      - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260701140638.840773-1-usama.arif@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260630164143.1595669-1-usama.arif%40linux.dev
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (1)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "Open HugeTLB allocation routine for more generic use", v4. (6)
+      - fc15db25ceb0 "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

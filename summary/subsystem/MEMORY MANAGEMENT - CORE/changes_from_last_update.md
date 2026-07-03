@@ -5,52 +5,46 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 16 -> 19 commits
-  - series: 1 (13) -> 2 (16)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 9 -> 10 commits
-    - no role, reviewer: 1 -> 3 commits
-    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-unstable: 19 -> 24 commits
+  - series: 2 (16) -> 3 (18)
+    - no role, nobody: 3 -> 5 commits
+    - no role, no role : 10 -> 12 commits
+    - no role, reviewer: 3 -> 1 commits
+    - no role, maintainer: 3 -> 4 commits
+    - reviewer, reviewer: 0 -> 2 commits
   - changed commits
-    - series "mm: preparatory patches for PMD level swap entries". (6)
-      - b18115c540f2 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
-        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]
-        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
-      - 9809e967704a "mm: extract mm_prepare_for_swap_entries() helper (1/6)"
+    - series "mm/vmpressure: reduce CPU, memory and code overhead on cgroup v2", v3. (2)
+      - b5d5a4d2be29 "mm/vmpressure: skip tree=true accounting on cgroup v2 (0/2)"
         - Authored by no role player, reviewed by no role player
         - branch: mm-new -> mm-unstable
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260630164143.1595669-3-usama.arif@linux.dev
-      - ea4350d660e6 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF (5/6)"
-        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260630112617.1198623-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260630112617.1198623-2-usama.arif@linux.dev
+      - c433ad3a38ff "mm-vmpressure-skip-tree=true-accounting-on-cgroup-v2-fix (1/2)"
+        - Authored by no role player, reviewed by nobody
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
-- mm-new: 8 -> 6 commits
-  - series: 2 (5) -> 1 (3)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 2 -> 3 commits
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 0 commits
-  - new commits
-    - fe0405054192 "mm: gfp_types: fix __GFP_ACCOUNT, GFP_KERNEL_ACCOUNT documentation"
+        - Link: https://lore.kernel.org/e8e1a409-48d8-4fa7-ae98-49485a1607f6@linux.dev
+    - 0eac7bd91b95 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260630112617.1198623-3-usama.arif@linux.dev
+    - a245183249c6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+    - cacb66e2e2bf "mm: gfp_types: fix __GFP_ACCOUNT, GFP_KERNEL_ACCOUNT documentation"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260701182102.1586784-1-hannes@cmpxchg.org
+- mm-new: 6 -> 0 commits
+  - series: 1 (3) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 3 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
     - series "mm: optimize zone-device memmap initialization", v5. (8)
       - cd20d6a448c2 "mm: add a set_page_section_from_pfn() helper (2/8)"
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260701090553.62691-4-lizhe.67@bytedance.com
-  - dropped commits
-    - 595893e78396 "mm/page_alloc: free allocated PFNs if the range does not match"
-      - Authored by a reviewer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260629-free-pfn-on-alloc-contig-range-error-path-v1-1-496ff9ca22db@nvidia.com
-      - Link: https://sashiko.dev/#/patchset/20260628-keep-subpage-private-zero-at-free-v1-0-f4ce3930d10f@nvidia.com [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)
