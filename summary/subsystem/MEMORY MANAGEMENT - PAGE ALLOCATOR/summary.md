@@ -9,8 +9,7 @@
 - mm-unstable: 18 total, 2 (12) series, 6 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 2 commits
-    - no role, reviewer: 11 commits
+    - no role, reviewer: 13 commits
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 1 commits
     - maintainer, nobody: 2 commits

@@ -5,28 +5,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 6 commits
-  - series: 0 (0) -> 1 (3)
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 5 commits
-  - changed commits
-    - series "memcg: bail out reclaim when memcg is dying", v3. (4)
-      - fcdfca35e159 "memcg: bail out memory.high when memcg is dying (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260702120235.376752-1-jiayuan.chen@linux.dev
-        - Link: https://lore.kernel.org/20260702120235.376752-2-jiayuan.chen@linux.dev
-      - 9943987d2ccd "memcg: bail out memory.max when memcg is dying (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260702120235.376752-3-jiayuan.chen@linux.dev
-      - 02d67669357f "memcg-v1: bail out reclaim when memcg is dying (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260702120235.376752-5-jiayuan.chen@linux.dev
-- mm-new: 3 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, maintainer: 3 -> 0 commits
+    - no role, maintainer: 5 -> 5 commits (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - e4f92355279e "mm: memcg: reset zswap settings in css_reset"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260702024827.353185-1-jiayuan.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

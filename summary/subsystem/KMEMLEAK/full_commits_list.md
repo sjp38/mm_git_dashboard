@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - d2baca605a1b "mm/kmemleak: fix checksum computation for per-cpu objects"
+    - 64408e63bc10 "mm/kmemleak: fix checksum computation for per-cpu objects"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/all/akfYImSNDh3OjIfR@gmail.com [0]
       - Link: https://lore.kernel.org/20260703-kmemleak_checksum-v1-1-5e0ab7d6966f@debian.org
@@ -14,17 +14,17 @@
     - no role, maintainer: 4 commits
   - full commits list
     - series "mm/kmemleak: avoid soft lockup when scanning task", v3. (3 commits)
-      - 0ec607de6cc0 "mm/kmemleak: avoid soft lockup when scanning task stacks" (0/3)
+      - 0fc18625b957 "mm/kmemleak: avoid soft lockup when scanning task stacks" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-0-acecd7d7fd92@debian.org
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-1-acecd7d7fd92@debian.org
-      - 2cf5ac964021 "mm/kmemleak: stop the task stack scan early when interrupted" (1/3)
+      - 95ed6d78ea35 "mm/kmemleak: stop the task stack scan early when interrupted" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-2-acecd7d7fd92@debian.org
-      - 41a806473d54 "mm/kmemleak: stop the per-cpu and struct page scans early too" (2/3)
+      - 6b218df63a52 "mm/kmemleak: stop the per-cpu and struct page scans early too" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-3-acecd7d7fd92@debian.org
-    - 72c08852ea9d "mm/kmemleak: skip the remaining scan phases when interrupted"
+    - 21031ca04390 "mm/kmemleak: skip the remaining scan phases when interrupted"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260626-kmemleak_improve-v1-1-d40c7616f64f@debian.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

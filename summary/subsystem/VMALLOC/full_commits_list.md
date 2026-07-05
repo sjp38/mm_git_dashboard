@@ -2,35 +2,19 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 8 total, 1 (5) series, 3 non-series commits
+- mm-unstable: 3 total, 1 (1) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 5 commits
-    - maintainer, nobody: 1 commits
+    - no role, no role : 3 commits
   - full commits list
     - series "mm/percpu: Fix possible NOFS/NOIO reclaim recursion", v4. (4 commits)
-      - 1c0e1ac6024c "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
+      - 0882168d0531 "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260618130414.96383-1-kaitao.cheng@linux.dev
         - Link: https://lore.kernel.org/20260618130414.96383-2-kaitao.cheng@linux.dev
-      - 810c0d1da6b7 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260618084726.1070022-4-jiangwen6@xiaomi.com
-      - eee61876b612 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260618084726.1070022-5-jiangwen6@xiaomi.com
-      - 01c898a24871 "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (4/6)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260618084726.1070022-6-jiangwen6@xiaomi.com
-      - 048f1c9060ae "mm-vmalloc-map-contiguous-pages-in-batches-for-vmap-if-possible-fix" (5/6)
-        - Authored by a maintainer, reviewed by nobody
-    - 59a501a6b89f "mm/vmalloc: align vm_area so vmap() can batch mappings"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260618084726.1070022-7-jiangwen6@xiaomi.com
-    - a1d6270b6beb "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
+    - 4c03043920f9 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/453375c4-c3ca-4e6f-8880-0e6ff3c74ee3@web.de
-    - 11a2a89c3aba "mm/vmalloc: add alignment info in warning print as possible failure reason"
+    - 2ddd1ad9674c "mm/vmalloc: add alignment info in warning print as possible failure reason"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260702112610.21589-1-feng.tang@linux.alibaba.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

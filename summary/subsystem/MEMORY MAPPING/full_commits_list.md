@@ -15,38 +15,47 @@
     - no role, maintainer: 2 commits
     - maintainer, nobody: 1 commits
   - full commits list
-      - e3de443947bd "mm/mprotect: drop 'sub' from batching context" (1/2)
+      - 1340c9077df8 "mm/mprotect: drop 'sub' from batching context" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260623125723.2503832-3-dev.jain@arm.com
     - series "mm: convert to walk_page_range_vma() to eliminate find_vma()", v2. (4 commits)
-      - 6f07849a09e8 "mm: mincore: use walk_page_range_vma() in do_mincore()" (0/4)
+      - 56059b6a172a "mm: mincore: use walk_page_range_vma() in do_mincore()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260618092845.3905740-1-wangkefeng.wang@huawei.com
         - Link: https://lore.kernel.org/20260618092845.3905740-2-wangkefeng.wang@huawei.com
-      - 4bf0218c01be "mm-mincore-use-walk_page_range_vma-in-do_mincore-fix" (1/4)
+      - 319037551a87 "mm-mincore-use-walk_page_range_vma-in-do_mincore-fix" (1/4)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/ajP9bQhmvR9OX0VE@pedro-suse
-      - d4fb2d880ac7 "mm: mprotect: use walk_page_range_vma() in mprotect_fixup()" (2/4)
+      - e040f4e175a8 "mm: mprotect: use walk_page_range_vma() in mprotect_fixup()" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260618092845.3905740-3-wangkefeng.wang@huawei.com
-      - d60f18c64048 "mm: mlock: use walk_page_range_vma() in mlock_vma_pages_range()" (3/4)
+      - 0bea61c1cc4a "mm: mlock: use walk_page_range_vma() in mlock_vma_pages_range()" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260618092845.3905740-4-wangkefeng.wang@huawei.com
-      - 13efae9dee11 "fs/proc: use softleaf_has_pfn() in pagemap PMD walker" (2/6)
+      - cd462d1b91bc "fs/proc: use softleaf_has_pfn() in pagemap PMD walker" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630164143.1595669-4-usama.arif@linux.dev
-    - e86dc26360e7 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
+    - d148260a31fd "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
+- mm-new: 4 total, 0 (0) series, 4 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 2 commits
     - no role, no role : 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 37f7942c265e "mm/mprotect: use huge_ptep_get() for hugetlb"
+    - 5c16fa8d8bc8 "mm/mprotect: use huge_ptep_get() for hugetlb"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260703114202.365553-7-dev.jain@arm.com
-    - c9059442e502 "mm-mprotect-use-huge_ptep_get-for-hugetlb-fix"
+    - beb07ed718ba "mm-mprotect-use-huge_ptep_get-for-hugetlb-fix"
       - Authored by a maintainer, reviewed by nobody
+    - 903daf3bc2bf "mm: nommu: add sysctl_max_map_count() check for do_mmap()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/munmap/munmap04.c
+      - Link: https://lore.kernel.org/20260702012830.667205-1-thehajime@gmail.com
+    - 59a9e356e270 "mm: nommu: point to the write iterator upon split_vma"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/mseal/mseal02.c
+      - Link: https://lore.kernel.org/20260702012546.665383-1-thehajime@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

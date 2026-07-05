@@ -6,46 +6,34 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 13 commits
-  - series: 2 (8) -> 2 (9)
+- mm-unstable: 13 -> 13 commits (no change)
+  - series: 2 (9) -> 2 (9) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 9 -> 9 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
   - changed commits
-    - series "mm: preparatory patches for PMD level swap entries". (6)
-      - 8554f4464cd5 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
-        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]
-        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
-    - series "Open HugeTLB allocation routine for more generic use", v4. (6)
-      - deea2942d5ea "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol() (1/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
-- mm-new: 1 -> 3 commits
-  - series: 0 (1) -> 0 (3)
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, reviewer: 0 -> 2 commits
-  - new commits
-    - series "mm: Some cleanups for page allocator APIs", v5. (18)
-      - 2863271bd3e4 "mm: split out internal page_alloc.h (3/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-      - 8ffbdfc5274a "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof() (4/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
-    - series "Fix incorrect access of hugetlb pte entries", v3. (6)
-      - fe4edda6b7fc "mm/migrate: use huge_ptep_get() in remove_migration_pte() (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260703114202.365553-5-dev.jain@arm.com
+    - series "mm/migrate: preparatory cleanups for batch copy and offload", v2. (3)
+      - 48cfb01579e4 "mm/migrate: rename page to folio leftovers (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: SJ Park <sj@kernel.org>"
+        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-0-d9e8f17130b1@amd.com
+        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-1-d9e8f17130b1@amd.com
+        - Link: https://lore.kernel.org/all/20260428155043.39251-2-shivankg@amd.com [1]
+      - c6232f640ac7 "mm/migrate: use migrate_info field instead of private (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: SJ Park <sj@kernel.org>"
+        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-3-d9e8f17130b1@amd.com
+    - 047bc491257f "mm/migrate_device: pin large folios before splitting"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - Link: https://lore.kernel.org/20260701140638.840773-1-usama.arif@linux.dev
+      - Link: https://sashiko.dev/#/patchset/20260630164143.1595669-1-usama.arif%40linux.dev
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - reviewer, reviewer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,26 +7,32 @@
     - no role, no role : 1 commits
     - no role, maintainer: 5 commits
   - full commits list
-    - 52757fa3216a "mm/memcontrol: remove unused for_each_mem_cgroup macro and cleanup"
+    - 9efed4fcd871 "mm/memcontrol: remove unused for_each_mem_cgroup macro and cleanup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260624183700.1152742-1-joshua.hahnjy@gmail.com
-    - 96dcee3280e8 "mm: memcg: remove stray text from obj_stock_pcp comment"
+    - fcd4642bfd2d "mm: memcg: remove stray text from obj_stock_pcp comment"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260623082614.81621-1-guopeng.zhang@linux.dev
-    - b953e00b5160 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
+    - c8eb3bf5e5b9 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260630112617.1198623-3-usama.arif@linux.dev
     - series "memcg: bail out reclaim when memcg is dying", v3. (4 commits)
-      - fcdfca35e159 "memcg: bail out memory.high when memcg is dying" (0/4)
+      - 16f8de0b876b "memcg: bail out memory.high when memcg is dying" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-1-jiayuan.chen@linux.dev
         - Link: https://lore.kernel.org/20260702120235.376752-2-jiayuan.chen@linux.dev
-      - 9943987d2ccd "memcg: bail out memory.max when memcg is dying" (1/4)
+      - b1a035248b4e "memcg: bail out memory.max when memcg is dying" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-3-jiayuan.chen@linux.dev
-      - 02d67669357f "memcg-v1: bail out reclaim when memcg is dying" (3/4)
+      - ae4735a8d562 "memcg-v1: bail out reclaim when memcg is dying" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-5-jiayuan.chen@linux.dev
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - e4f92355279e "mm: memcg: reset zswap settings in css_reset"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260702024827.353185-1-jiayuan.chen@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

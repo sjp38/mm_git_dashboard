@@ -5,29 +5,27 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 9 commits
-  - series: 0 (1) -> 0 (2)
+- mm-unstable: 9 -> 6 commits
+  - series: 0 (2) -> 0 (2) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 3 commits
-    - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - series "memcg: bail out reclaim when memcg is dying", v3. (4)
-      - d9539a2d0882 "memcg: bail out proactive reclaim when memcg is dying (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, reviewer: 0 -> 1 commits
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+- mm-new: 1 -> 3 commits
+  - series: 0 (1) -> 1 (3)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
   - new commits
-    - series "mm: Some cleanups for page allocator APIs", v5. (18)
-      - 2863271bd3e4 "mm: split out internal page_alloc.h (3/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+    - series "mm: clean up folio LRU and swap declarations", v7. (3)
+      - e12e092d6bb2 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-0-a028e8b5fc3d@gmail.com
+        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-1-a028e8b5fc3d@gmail.com
+      - 306b219c4679 "mm: rename swap.c to folio.c (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-2-a028e8b5fc3d@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
