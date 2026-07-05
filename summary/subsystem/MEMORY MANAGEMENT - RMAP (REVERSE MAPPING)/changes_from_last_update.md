@@ -10,10 +10,25 @@
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - reviewer, reviewer: 0 -> 1 commits
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 4 commits
+  - series: 0 (0) -> 0 (4)
+    - no role, no role : 0 -> 2 commits
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "Fix incorrect access of hugetlb pte entries", v3. (6)
+      - cc15629cca99 "mm/rmap: use huge_ptep_get() in try_to_unmap_one() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
+      - 39d01a86ae83 "mm/rmap: use huge_ptep_get() in try_to_migrate_one() (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260703114202.365553-4-dev.jain@arm.com
+      - d76a1ef5803c "mm-rmap-use-huge_ptep_get-in-try_to_migrate_one-checkpatch-fixes (3/6)"
+        - Authored by a maintainer, reviewed by nobody
+      - efc32dd89545 "mm/page_vma_mapped: use huge_ptep_get() for hugetlb (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260703114202.365553-6-dev.jain@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

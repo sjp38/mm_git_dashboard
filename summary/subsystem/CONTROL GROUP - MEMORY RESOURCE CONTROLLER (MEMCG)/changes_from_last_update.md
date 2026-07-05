@@ -5,30 +5,28 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 3 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 2 commits
-  - changed commits
-    - 0eac7bd91b95 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260630112617.1198623-3-usama.arif@linux.dev
-- mm-new: 1 -> 3 commits
+- mm-unstable: 3 -> 6 commits
   - series: 0 (0) -> 1 (3)
-    - no role, maintainer: 1 -> 3 commits
-  - new commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 2 -> 5 commits
+  - changed commits
     - series "memcg: bail out reclaim when memcg is dying", v3. (4)
-      - 81d0832ad63b "memcg: bail out memory.high when memcg is dying (0/4)"
+      - fcdfca35e159 "memcg: bail out memory.high when memcg is dying (0/4)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260702120235.376752-1-jiayuan.chen@linux.dev
         - Link: https://lore.kernel.org/20260702120235.376752-2-jiayuan.chen@linux.dev
-      - f6e6615c9e07 "memcg: bail out memory.max when memcg is dying (1/4)"
+      - 9943987d2ccd "memcg: bail out memory.max when memcg is dying (1/4)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260702120235.376752-3-jiayuan.chen@linux.dev
-      - 0833b87d1238 "memcg-v1: bail out reclaim when memcg is dying (3/4)"
+      - 02d67669357f "memcg-v1: bail out reclaim when memcg is dying (3/4)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260702120235.376752-5-jiayuan.chen@linux.dev
+- mm-new: 3 -> 0 commits
+  - series: 1 (3) -> 0 (0)
+    - no role, maintainer: 3 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

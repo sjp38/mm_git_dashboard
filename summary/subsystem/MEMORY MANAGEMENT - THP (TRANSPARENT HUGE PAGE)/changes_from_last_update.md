@@ -3,22 +3,35 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 5e713f5787a2 "mm/huge_memory: set PG_has_hwpoisoned only after new folio head is established"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20260701174235.3173401-1-riel@surriel.com
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 3 -> 3 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
-    - no role, reviewer: 3 -> 0 commits
-    - reviewer, reviewer: 0 -> 3 commits
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+    - reviewer, reviewer: 3 -> 3 commits (no change)
+  - changed commits
+    - series "mm: preparatory patches for PMD level swap entries". (6)
+      - 8554f4464cd5 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]
+        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - reviewer, reviewer: 0 -> 2 commits
+  - new commits
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - 2863271bd3e4 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+      - c4edf6b86198 "mm: move __alloc_pages() to mm/page_alloc.h (13/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -5,7 +5,7 @@
     - no role, no role : 1 commits
   - full commits list
     - series "mm: fix PMD level mTHP accounting bugs". (2 commits)
-      - e166cd990def "mm: decrement MTHP_STAT_NR_ANON in free_zone_device_folio()" (0/2)
+      - 117444dac9b8 "mm: decrement MTHP_STAT_NR_ANON in free_zone_device_folio()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260702172548.37075-1-npache@redhat.com
         - Link: https://lore.kernel.org/20260702172548.37075-2-npache@redhat.com
@@ -14,10 +14,17 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 6e4b05e4429e "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
+    - c323c2999d52 "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
       - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, reviewer: 1 commits
+  - full commits list
+      - 2863271bd3e4 "mm: split out internal page_alloc.h" (3/18)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

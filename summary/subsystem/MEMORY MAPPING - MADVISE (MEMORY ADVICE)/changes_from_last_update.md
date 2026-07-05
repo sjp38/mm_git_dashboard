@@ -1,17 +1,17 @@
 - baseline: v7.2-rc1 -> v7.2-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 1 -> 0 commits
-- mm-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, reviewer: 0 -> 1 commits
   - changed commits
     - e187bc02f8fa "mm: do file ownership checks with the proper mount idmap"
       - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-stable
+      - branch: mm-stable -> mm-hotfixes-stable
       - Link: https://lore.kernel.org/20260625153853.913949-1-pfalcato@suse.de
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-stable: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)

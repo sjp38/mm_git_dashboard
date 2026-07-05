@@ -1,40 +1,51 @@
 - baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - series "mm: fix PMD level mTHP accounting bugs". (2)
-      - 31ee3397f850 "mm/migrate: exclude hugetlb folios from MTHP_STAT_NR_ANON accounting (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260702172548.37075-3-npache@redhat.com
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 12 commits
-  - series: 2 (8) -> 2 (8) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 10 -> 9 commits
+- mm-unstable: 12 -> 13 commits
+  - series: 2 (8) -> 2 (9)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 9 -> 9 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, reviewer: 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm: preparatory patches for PMD level swap entries". (6)
+      - 8554f4464cd5 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]
+        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
+    - series "Open HugeTLB allocation routine for more generic use", v4. (6)
+      - deea2942d5ea "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
+- mm-new: 1 -> 3 commits
+  - series: 0 (1) -> 0 (3)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 1 -> 0 commits
     - reviewer, reviewer: 0 -> 2 commits
   - new commits
-    - 3a262aeb8be4 "condense comment about folio reference"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/87bbf335-648f-4065-abc8-3eaab5a3beeb@linux.dev
-  - changed commits
-    - 23aee344d0df "mm/migrate_device: pin large folios before splitting"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260701140638.840773-1-usama.arif@linux.dev
-      - Link: https://sashiko.dev/#/patchset/20260630164143.1595669-1-usama.arif%40linux.dev
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - series "Open HugeTLB allocation routine for more generic use", v4. (6)
-      - fc15db25ceb0 "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol() (1/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - 2863271bd3e4 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+      - 8ffbdfc5274a "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof() (4/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
+    - series "Fix incorrect access of hugetlb pte entries", v3. (6)
+      - fe4edda6b7fc "mm/migrate: use huge_ptep_get() in remove_migration_pte() (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260703114202.365553-5-dev.jain@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -6,39 +6,20 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 9 commits
+- mm-unstable: 9 -> 9 commits (no change)
   - series: 0 (8) -> 0 (8) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 6e4b05e4429e "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
-      - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
-- mm-new: 6 -> 0 commits
-  - series: 1 (5) -> 0 (0)
-    - no role, nobody: 5 -> 0 commits
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - series "mm: optimize zone-device memmap initialization", v5. (8)
-      - 040ad560e4f9 "mm: fix stale ZONE_DEVICE refcount comment (0/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260701090553.62691-2-lizhe.67@bytedance.com
-        - Link: https://lore.kernel.org/all/aiEoByaQdRR3xtM5@nvdebian.thelocal/ [1]
-      - b89c08d655b1 "mm: factor zone-device page init helpers out of __init_zone_device_page (1/8)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260701090553.62691-3-lizhe.67@bytedance.com
-      - ea425f4bbd8b "mm: add a template-based fast path for zone-device page init (3/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260701090553.62691-5-lizhe.67@bytedance.com
-      - 77955dc061fa "mm: extend the template fast path to zone-device compound tails (4/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260701090553.62691-6-lizhe.67@bytedance.com
-      - e08d3906752b "mm: use memcpy_nt() in zone-device template copies (7/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260701090553.62691-9-lizhe.67@bytedance.com
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - reviewer, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - 2863271bd3e4 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

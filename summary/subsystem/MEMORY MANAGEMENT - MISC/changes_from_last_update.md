@@ -1,12 +1,5 @@
 - baseline: v7.2-rc1 -> v7.2-rc1 (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-- mm-stable: 0 -> 3 commits
+- mm-hotfixes-stable: 0 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 0 -> 1 commits
     - no role, no role : 0 -> 1 commits
@@ -14,53 +7,37 @@
   - changed commits
     - 4b0363cb1f3e "selftests/mm: fix ksft_process_madv.sh test category"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-stable
+      - branch: mm-stable -> mm-hotfixes-stable
       - Link: https://lore.kernel.org/20260608103224.344101-1-sarthak.sharma@arm.com
     - dccf636bf1e6 "selftests/mm: pagemap_ioctl: use the correct page size for transact_test()"
       - Authored by no role player, reviewed by nobody
-      - branch: mm-hotfixes-unstable -> mm-stable
+      - branch: mm-stable -> mm-hotfixes-stable
       - Link: https://lore.kernel.org/20260628101118.35861-1-zenghui.yu@linux.dev
     - fd5295afae91 "selftests/mm: hmm-tests: include linux/mman.h to access MADV_COLLAPSE"
       - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-stable
+      - branch: mm-stable -> mm-hotfixes-stable
       - Link: https://lore.kernel.org/20260628143111.36863-1-zenghui.yu@linux.dev
-- mm-unstable: 5 -> 11 commits
-  - series: 1 (4) -> 2 (9)
-    - no role, nobody: 2 -> 3 commits
-    - no role, no role : 1 -> 6 commits
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-stable: 3 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+- mm-unstable: 11 -> 11 commits (no change)
+  - series: 2 (9) -> 2 (9) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v8. (5)
-      - 82f5ca18837e "selftests/mm: move pkey selftest helpers to pkey_util.c (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260630073235.3802271-1-lihongfu@kylinos.cn
-        - Link: https://lore.kernel.org/20260630073235.3802271-2-lihongfu@kylinos.cn
-      - 01db30dd39e3 "selftests/mm: unify pkey sighandler selftest assertions and tracing (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260630073235.3802271-3-lihongfu@kylinos.cn
-      - b925b4c5b55c "selftests/mm: use pkey_assert on clone_raw failure in pkey test (2/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260630073235.3802271-4-lihongfu@kylinos.cn
-      - d84371cb9082 "selftests/mm: add missing mmap() return checks in pkey tests (3/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260630073235.3802271-5-lihongfu@kylinos.cn
-      - 918cadb7928a "selftests/mm: add missing pthread_create() return checks in pkey tests (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260630073235.3802271-6-lihongfu@kylinos.cn
-    - 4e5c392b79b1 "selftests/mm/uffd: don't treat UFFDIO_COPY -ENOENT as a failure"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260701200932.1470525-1-rppt@kernel.org
-- mm-new: 6 -> 0 commits
-  - series: 1 (5) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 5 -> 0 commits
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - reviewer, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - c4edf6b86198 "mm: move __alloc_pages() to mm/page_alloc.h (13/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

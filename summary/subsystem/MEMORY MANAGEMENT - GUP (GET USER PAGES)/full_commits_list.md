@@ -8,10 +8,10 @@
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
   - full commits list
-    - e6cc4d19078d "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+    - 61d6321de62c "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
-    - c4db4897da65 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - cb526e3a9de1 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

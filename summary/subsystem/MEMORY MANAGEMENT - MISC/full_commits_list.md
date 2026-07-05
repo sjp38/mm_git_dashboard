@@ -1,7 +1,5 @@
 - baseline: v7.2-rc1
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 3 total, 0 (0) series, 3 non-series commits
+- mm-hotfixes-stable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 1 commits
@@ -16,6 +14,8 @@
     - fd5295afae91 "selftests/mm: hmm-tests: include linux/mman.h to access MADV_COLLAPSE"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260628143111.36863-1-zenghui.yu@linux.dev
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 11 total, 2 (9) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 3 commits
@@ -23,43 +23,49 @@
     - no role, maintainer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 97913230b50b "mm/page_owner: document page_owner filter"
+    - 0d523da41deb "mm/page_owner: document page_owner filter"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260625043101.338794-5-zhen.ni@easystack.cn
-      - ef184841c348 "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time" (11/19)
+      - 2267c5295dcd "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time" (11/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-13-songmuchun@bytedance.com
-      - c4e185ffb701 "selftests/mm: add hwpoison-panic destructive test" (5/6)
+      - f716dffcc435 "selftests/mm: add hwpoison-panic destructive test" (5/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-6-c6ed5b62eea2@debian.org
-      - 6b5d4345ca6f "Docs/{admin-guide,mm}/damon: fix DAMON documentation details" (2/5)
+      - 803a2ed833ef "Docs/{admin-guide,mm}/damon: fix DAMON documentation details" (2/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260629145538.134832-4-sj@kernel.org
     - series "mm/damon: update, optimize, and clean up doc, tests, and code". (11 commits)
-      - 12faa32f68e3 "Docs/mm/damon/design: update for DAMOS_QUOTA_NODE_ELIGIBLE_MEM_BP" (0/11)
+      - f4d2f3e257a5 "Docs/mm/damon/design: update for DAMOS_QUOTA_NODE_ELIGIBLE_MEM_BP" (0/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260630141726.92246-1-sj@kernel.org
         - Link: https://lore.kernel.org/20260630141726.92246-2-sj@kernel.org
     - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v8. (5 commits)
-      - 82f5ca18837e "selftests/mm: move pkey selftest helpers to pkey_util.c" (0/5)
+      - 762c3d256713 "selftests/mm: move pkey selftest helpers to pkey_util.c" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630073235.3802271-1-lihongfu@kylinos.cn
         - Link: https://lore.kernel.org/20260630073235.3802271-2-lihongfu@kylinos.cn
-      - 01db30dd39e3 "selftests/mm: unify pkey sighandler selftest assertions and tracing" (1/5)
+      - 1c0446a57d57 "selftests/mm: unify pkey sighandler selftest assertions and tracing" (1/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630073235.3802271-3-lihongfu@kylinos.cn
-      - b925b4c5b55c "selftests/mm: use pkey_assert on clone_raw failure in pkey test" (2/5)
+      - d4f2c16f87df "selftests/mm: use pkey_assert on clone_raw failure in pkey test" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630073235.3802271-4-lihongfu@kylinos.cn
-      - d84371cb9082 "selftests/mm: add missing mmap() return checks in pkey tests" (3/5)
+      - 5549655dbd73 "selftests/mm: add missing mmap() return checks in pkey tests" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630073235.3802271-5-lihongfu@kylinos.cn
-      - 918cadb7928a "selftests/mm: add missing pthread_create() return checks in pkey tests" (4/5)
+      - 428bea23c835 "selftests/mm: add missing pthread_create() return checks in pkey tests" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630073235.3802271-6-lihongfu@kylinos.cn
-    - 4e5c392b79b1 "selftests/mm/uffd: don't treat UFFDIO_COPY -ENOENT as a failure"
+    - 7ea615955ef5 "selftests/mm/uffd: don't treat UFFDIO_COPY -ENOENT as a failure"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260701200932.1470525-1-rppt@kernel.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, reviewer: 1 commits
+  - full commits list
+      - c4edf6b86198 "mm: move __alloc_pages() to mm/page_alloc.h" (13/18)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,51 +1,71 @@
 - baseline: v7.2-rc1 -> v7.2-rc1 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 6b3fbd5275a1 "mm/hugetlb: fix swap entry corruption when clearing uffd-wp at fork()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260703161833.57416-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 13 commits
-  - series: 1 (11) -> 1 (11) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
+- mm-unstable: 13 -> 19 commits
+  - series: 1 (11) -> 2 (17)
+    - no role, nobody: 2 -> 5 commits
+    - no role, no role : 6 -> 7 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 4 commits
+    - no role, maintainer: 4 -> 6 commits
   - changed commits
-    - 20f47420708e "mm/hugetlb: avoid unnecessary TLB flush for empty folio list in vmemmap optimize"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260630113857.3319612-1-guanwentao@uniontech.com
-- mm-new: 1 -> 6 commits
-  - series: 0 (0) -> 1 (6)
-    - no role, nobody: 0 -> 3 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 1 -> 2 commits
-  - new commits
     - series "Open HugeTLB allocation routine for more generic use", v4. (6)
-      - 998fa6003d94 "mm: hugetlb: consolidate interpretation of gbl_chg within alloc_hugetlb_folio() (0/6)"
+      - f067adc3ed4f "mm: hugetlb: consolidate interpretation of gbl_chg within alloc_hugetlb_folio() (0/6)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-0-d53cefcccf34@google.com
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-1-d53cefcccf34@google.com
         - Link: https://lore.kernel.org/all/cover.1747264138.git.ackerleytng@google.com/T/ [1]
         - Link: https://github.com/googleprodkernel/linux-cc/tree/wip-gmem-conversions-hugetlb-restructuring-12-08-25 [2]
         - Link: https://lore.kernel.org/all/agqaUcVp_hwH-VXr@localhost.localdomain/ [3]
         - Link: https://sashiko.dev/#/patchset/20260518-hugetlb-open-up-v3-0-e14b302477f8@google.com [4]
-      - fc15db25ceb0 "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol() (1/6)"
+      - deea2942d5ea "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol() (1/6)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
-      - 21b0a837c4f7 "mm: hugetlb: move mpol interpretation out of dequeue_hugetlb_folio_vma() (2/6)"
+      - 64e767180ec2 "mm: hugetlb: move mpol interpretation out of dequeue_hugetlb_folio_vma() (2/6)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-3-d53cefcccf34@google.com
-      - bb24ae793e1f "mm: hugetlb: use error variable in alloc_hugetlb_folio (3/6)"
+      - b3eaedf69477 "mm: hugetlb: use error variable in alloc_hugetlb_folio (3/6)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-4-d53cefcccf34@google.com
-      - f3098fad2a93 "mm: hugetlb: move mem_cgroup_charge_hugetlb() earlier in allocation (4/6)"
+      - 6ad30e2bedb2 "mm: hugetlb: move mem_cgroup_charge_hugetlb() earlier in allocation (4/6)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-5-d53cefcccf34@google.com
-      - 78cfd3dda93d "mm: hugetlb: refactor out hugetlb_alloc_folio() (5/6)"
+      - 8860269383f6 "mm: hugetlb: refactor out hugetlb_alloc_folio() (5/6)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-6-d53cefcccf34@google.com
+- mm-new: 6 -> 3 commits
+  - series: 1 (6) -> 0 (3)
+    - no role, nobody: 3 -> 0 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 2 -> 1 commits
+    - reviewer, reviewer: 0 -> 2 commits
+  - new commits
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - 2863271bd3e4 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+      - 8ffbdfc5274a "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof() (4/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
+    - series "Fix incorrect access of hugetlb pte entries", v3. (6)
+      - cc15629cca99 "mm/rmap: use huge_ptep_get() in try_to_unmap_one() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

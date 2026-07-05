@@ -1,13 +1,13 @@
 - baseline: v7.2-rc1
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - reviewer, reviewer: 1 commits
   - full commits list
     - e187bc02f8fa "mm: do file ownership checks with the proper mount idmap"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260625153853.913949-1-pfalcato@suse.de
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 7 total, 1 (6) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
@@ -15,29 +15,38 @@
     - no role, maintainer: 2 commits
     - maintainer, nobody: 1 commits
   - full commits list
-      - a430093c96fa "mm/mprotect: drop 'sub' from batching context" (1/2)
+      - e3de443947bd "mm/mprotect: drop 'sub' from batching context" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260623125723.2503832-3-dev.jain@arm.com
     - series "mm: convert to walk_page_range_vma() to eliminate find_vma()", v2. (4 commits)
-      - 0939f358cf39 "mm: mincore: use walk_page_range_vma() in do_mincore()" (0/4)
+      - 6f07849a09e8 "mm: mincore: use walk_page_range_vma() in do_mincore()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260618092845.3905740-1-wangkefeng.wang@huawei.com
         - Link: https://lore.kernel.org/20260618092845.3905740-2-wangkefeng.wang@huawei.com
-      - c03af46513e7 "mm-mincore-use-walk_page_range_vma-in-do_mincore-fix" (1/4)
+      - 4bf0218c01be "mm-mincore-use-walk_page_range_vma-in-do_mincore-fix" (1/4)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/ajP9bQhmvR9OX0VE@pedro-suse
-      - dd3b0edbbb8a "mm: mprotect: use walk_page_range_vma() in mprotect_fixup()" (2/4)
+      - d4fb2d880ac7 "mm: mprotect: use walk_page_range_vma() in mprotect_fixup()" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260618092845.3905740-3-wangkefeng.wang@huawei.com
-      - a91435963935 "mm: mlock: use walk_page_range_vma() in mlock_vma_pages_range()" (3/4)
+      - d60f18c64048 "mm: mlock: use walk_page_range_vma() in mlock_vma_pages_range()" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260618092845.3905740-4-wangkefeng.wang@huawei.com
-      - a825392a5b46 "fs/proc: use softleaf_has_pfn() in pagemap PMD walker" (2/6)
+      - 13efae9dee11 "fs/proc: use softleaf_has_pfn() in pagemap PMD walker" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630164143.1595669-4-usama.arif@linux.dev
-    - cfb8731f5396 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
+    - e86dc26360e7 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - maintainer, nobody: 1 commits
+  - full commits list
+    - 37f7942c265e "mm/mprotect: use huge_ptep_get() for hugetlb"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260703114202.365553-7-dev.jain@arm.com
+    - c9059442e502 "mm-mprotect-use-huge_ptep_get-for-hugetlb-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

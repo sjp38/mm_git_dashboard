@@ -5,46 +5,64 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 19 -> 24 commits
-  - series: 2 (16) -> 3 (18)
-    - no role, nobody: 3 -> 5 commits
-    - no role, no role : 10 -> 12 commits
-    - no role, reviewer: 3 -> 1 commits
-    - no role, maintainer: 3 -> 4 commits
-    - reviewer, reviewer: 0 -> 2 commits
+- mm-unstable: 24 -> 24 commits (no change)
+  - series: 3 (18) -> 3 (18) (no change)
+    - no role, nobody: 5 -> 5 commits (no change)
+    - no role, no role : 12 -> 12 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - reviewer, reviewer: 2 -> 2 commits (no change)
   - changed commits
-    - series "mm/vmpressure: reduce CPU, memory and code overhead on cgroup v2", v3. (2)
-      - b5d5a4d2be29 "mm/vmpressure: skip tree=true accounting on cgroup v2 (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260630112617.1198623-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260630112617.1198623-2-usama.arif@linux.dev
-      - c433ad3a38ff "mm-vmpressure-skip-tree=true-accounting-on-cgroup-v2-fix (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/e8e1a409-48d8-4fa7-ae98-49485a1607f6@linux.dev
-    - 0eac7bd91b95 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260630112617.1198623-3-usama.arif@linux.dev
-    - a245183249c6 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
-    - cacb66e2e2bf "mm: gfp_types: fix __GFP_ACCOUNT, GFP_KERNEL_ACCOUNT documentation"
+    - series "mm: preparatory patches for PMD level swap entries". (6)
+      - 8554f4464cd5 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]
+        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
+- mm-new: 0 -> 9 commits
+  - series: 0 (0) -> 1 (8)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 2 commits
+    - reviewer, reviewer: 0 -> 6 commits
+  - new commits
+    - 844352111faa "mm/secretmem: disable under HIGHMEM"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260701182102.1586784-1-hannes@cmpxchg.org
-- mm-new: 6 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 3 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - series "mm: optimize zone-device memmap initialization", v5. (8)
-      - cd20d6a448c2 "mm: add a set_page_section_from_pfn() helper (2/8)"
+      - Link: https://github.com/bjackman/limmat-kernel-nix/commit/7b2acba2d3a5ef01400d493a155beb1d135b6bb5
+      - Link: https://lore.kernel.org/20260703-secretmem-highmem-v1-1-30d5ff944664@google.com
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - 0330cd1a2ff6 "mm/page_alloc: rename ALLOC_TRYLOCK -> ALLOC_NOLOCK (0/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-0-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/linux-mm/2399b3ad-4eac-4a14-94c3-27e9f07972a1@kernel.org/
+        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [1]
+      - 07b77fbc70b9 "mm: name some args in a function declaration (2/18)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260701090553.62691-4-lizhe.67@bytedance.com
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-3-c87b714e19d3@google.com
+      - 2863271bd3e4 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+      - a44573cff35a "mm: move some stuff to mm/page_alloc.h (6/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-7-c87b714e19d3@google.com
+      - d5ad4d171472 "mm: remove __alloc_pages_node() (12/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-13-c87b714e19d3@google.com
+      - c4edf6b86198 "mm: move __alloc_pages() to mm/page_alloc.h (13/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
+      - ad3d1af81d95 "mm: remove the __GFP_NO_OBJ_EXT flag (15/18)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-16-c87b714e19d3@google.com
+      - cd3216dc2862 "mm: factor out can_spin_trylock() (17/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-18-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/397859cb-b127-4cc6-9c71-044afc99bf0c@kernel.org/
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)
