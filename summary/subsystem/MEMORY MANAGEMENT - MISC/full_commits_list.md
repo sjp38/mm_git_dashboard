@@ -1,84 +1,70 @@
-- baseline: v7.2-rc1
-- mm-hotfixes-stable: 3 total, 0 (0) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
-  - full commits list
-    - 4b0363cb1f3e "selftests/mm: fix ksft_process_madv.sh test category"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260608103224.344101-1-sarthak.sharma@arm.com
-    - dccf636bf1e6 "selftests/mm: pagemap_ioctl: use the correct page size for transact_test()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260628101118.35861-1-zenghui.yu@linux.dev
-    - fd5295afae91 "selftests/mm: hmm-tests: include linux/mman.h to access MADV_COLLAPSE"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260628143111.36863-1-zenghui.yu@linux.dev
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 4b6f944a4eec "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
+    - a9d35f9e5e14 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260706104308.34741-1-kirill@shutemov.name
+      - Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 13 total, 2 (11) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, no role : 6 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 7 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 49c1be9150ca "mm/page_owner: document page_owner filter"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260625043101.338794-5-zhen.ni@easystack.cn
-      - 454877672b5d "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time" (11/19)
+    - c34eea8cecca "mm/page_owner: document page_owner filter"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260707115411.1714314-5-zhen.ni@easystack.cn
+      - 8cb615811c46 "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time" (11/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-13-songmuchun@bytedance.com
-      - af53762a971c "selftests/mm: add hwpoison-panic destructive test" (5/6)
+      - adafc85779e2 "selftests/mm: add hwpoison-panic destructive test" (5/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-6-c6ed5b62eea2@debian.org
-      - c9380cdd949d "Docs/{admin-guide,mm}/damon: fix DAMON documentation details" (2/5)
+      - c3c5f1a31231 "Docs/{admin-guide,mm}/damon: fix DAMON documentation details" (2/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260629145538.134832-4-sj@kernel.org
     - series "mm/damon: update, optimize, and clean up doc, tests, and code". (11 commits)
-      - c24a7f497cb5 "Docs/mm/damon/design: update for DAMOS_QUOTA_NODE_ELIGIBLE_MEM_BP" (0/11)
+      - 1d1e5b6ab2b3 "Docs/mm/damon/design: update for DAMOS_QUOTA_NODE_ELIGIBLE_MEM_BP" (0/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260630141726.92246-1-sj@kernel.org
         - Link: https://lore.kernel.org/20260630141726.92246-2-sj@kernel.org
     - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10 commits)
-      - cf0306f75be5 "selftests/mm: move pkey selftest helpers to pkey_util.c" (0/10)
+      - ef4c22a98197 "selftests/mm: move pkey selftest helpers to pkey_util.c" (0/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260706081600.3570203-1-lihongfu@kylinos.cn
         - Link: https://lore.kernel.org/20260706081600.3570203-2-lihongfu@kylinos.cn
-      - 02770f5668c4 "selftests/mm: unify pkey sighandler selftest assertions and tracing" (1/10)
+      - 501537c34f51 "selftests/mm: unify pkey sighandler selftest assertions and tracing" (1/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260706081600.3570203-3-lihongfu@kylinos.cn
-      - dc2938654a1e "selftests/mm: use pkey_assert on clone_raw failure in pkey test" (2/10)
+      - 7cfe9cb94510 "selftests/mm: use pkey_assert on clone_raw failure in pkey test" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260706081600.3570203-4-lihongfu@kylinos.cn
-      - e53f30e3c934 "selftests/mm: add missing mmap() return checks in pkey tests" (3/10)
+      - ce9252844081 "selftests/mm: add missing mmap() return checks in pkey tests" (3/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260706081600.3570203-5-lihongfu@kylinos.cn
-      - 1ef85f3d56d1 "selftests/mm: add missing pthread_create() return checks in pkey tests" (4/10)
+      - 0c3e7a4b49df "selftests/mm: add missing pthread_create() return checks in pkey tests" (4/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260706081600.3570203-6-lihongfu@kylinos.cn
-      - 0c02e6512fc7 "selftests/mm: fix clone cleartid race in pkey sighandler tests" (5/10)
+      - 76767b8f4597 "selftests/mm: fix clone cleartid race in pkey sighandler tests" (5/10)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260706081600.3570203-7-lihongfu@kylinos.cn
-    - b91ea8a052ab "selftests/mm/uffd: don't treat UFFDIO_COPY -ENOENT as a failure"
+    - 329224aa61f1 "selftests/mm/uffd: don't treat UFFDIO_COPY -ENOENT as a failure"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260701200932.1470525-1-rppt@kernel.org
-      - d81014af5ef5 "mm: move __alloc_pages() to mm/page_alloc.h" (13/18)
+      - 0aeb99b12abe "mm: move __alloc_pages() to mm/page_alloc.h" (13/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - 171fa1dfde66 "ksm: add mremap selftests for ksm_rmap_walk" (2/3)
+      - 367baa14a203 "ksm: add mremap selftests for ksm_rmap_walk" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703162637070FU4ekl58Hw_Z7OSuJryZB@zte.com.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

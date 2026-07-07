@@ -1,86 +1,75 @@
-- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 0 commits
+  - dropped commits
+    - 7da7d599b8a8 "mm/compaction: handle free_pages_prepare() properly in compaction_free()"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260622-handle_free_pages_prepare_in_compaction_free-v1-1-fcf3b14abcf7@nvidia.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 18 -> 29 commits
-  - series: 2 (12) -> 3 (25)
+- mm-unstable: 29 -> 28 commits
+  - series: 3 (25) -> 3 (24)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 13 -> 13 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 12 commits
-    - maintainer, nobody: 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm: Some cleanups for page allocator APIs", v5. (18)
-      - 19199f091567 "mm/page_alloc: rename ALLOC_TRYLOCK -> ALLOC_NOLOCK (0/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-0-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/linux-mm/2399b3ad-4eac-4a14-94c3-27e9f07972a1@kernel.org/
-        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [1]
-      - da1d219d39cd "mm/page_alloc: some renames to clarify alloc_flags scopes (1/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-2-c87b714e19d3@google.com
-      - c3187d49539d "mm: split out internal page_alloc.h (3/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-      - b07cf8db8948 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof() (4/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
-      - 599fa7df892d "mm/page_alloc: relax GFP WARN in nolock allocs (5/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-6-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/linux-mm/ajS96fWbG4dzP3u3@casper.infradead.org/
-      - 3f56cf08e41b "mm: move some stuff to mm/page_alloc.h (6/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-7-c87b714e19d3@google.com
-      - 0303b21c4329 "mm: remove __alloc_pages_node() (12/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-13-c87b714e19d3@google.com
-      - d81014af5ef5 "mm: move __alloc_pages() to mm/page_alloc.h (13/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
-      - ec4cfb4de4fa "mm: replace __GFP_NO_CODETAG with ALLOC_NO_CODETAG (14/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/all/b4916118-3537-4e19-8bc8-1d103dd0d225@linux.dev/
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-15-c87b714e19d3@google.com
-      - 093451c5a5dd "mm/page_alloc: drop alloc_flags arg from alloc_flags_cma() (16/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-17-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/all/5dcdd1ef-21ad-4ed0-9e8a-0e5cf96b4392@kernel.org/
-      - 465c5eab00ca "mm: factor out can_spin_trylock() (17/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-18-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/all/397859cb-b127-4cc6-9c71-044afc99bf0c@kernel.org/
-- mm-new: 11 -> 2 commits
-  - series: 1 (11) -> 0 (2)
     - reviewer, nobody: 0 -> 1 commits
-    - reviewer, no role : 0 -> 1 commits
-    - reviewer, reviewer: 11 -> 0 commits
+    - reviewer, reviewer: 12 -> 12 commits (no change)
+    - maintainer, nobody: 2 -> 0 commits
   - new commits
-    - series "Keep tail page private zero at free and folio split", v2. (5)
-      - 661bd038f175 "mm/compaction: stop recording free page order in page->private (1/5)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260703-keep-subpage-private-zero-at-free-v2-2-2970fe777dd6@nvidia.com
-      - ff06f6603914 "mm/page_alloc: make sure tail_page->private is zero at page free time (3/5)"
+    - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v12. (4)
+      - 6b2491553158 "mm-page_owner-add-numa-node-filter-fix (2/4)"
         - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260703-keep-subpage-private-zero-at-free-v2-4-2970fe777dd6@nvidia.com
+        - Link: https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com
+  - changed commits
+    - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v12. (4)
+      - f06d40f4ac3c "mm/page_owner: add print_mode filter (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260707115411.1714314-1-zhen.ni@easystack.cn"
+        - added "Link: https://lore.kernel.org/20260707115411.1714314-2-zhen.ni@easystack.cn"
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260625043101.338794-1-zhen.ni@easystack.cn"
+        - dropped "Link: https://lore.kernel.org/20260625043101.338794-2-zhen.ni@easystack.cn"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
+        - dropped "Cc: Yichong Chen <chenyichong@uniontech.com>"
+        - dropped "Cc: Ye Liu <ye.liu@linux.dev>"
+        - dropped "Cc: Shuah Khan <skhan@linuxfoundation.org>"
+        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260707115411.1714314-1-zhen.ni@easystack.cn
+        - Link: https://lore.kernel.org/20260707115411.1714314-2-zhen.ni@easystack.cn
+      - a0bc48bed7d1 "mm/page_owner: add NUMA node filter (1/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260707115411.1714314-3-zhen.ni@easystack.cn"
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260625043101.338794-3-zhen.ni@easystack.cn"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
+        - dropped "Cc: Ye Liu <ye.liu@linux.dev>"
+        - dropped "Cc: Yichong Chen <chenyichong@uniontech.com>"
+        - dropped "Cc: Shuah Khan <skhan@linuxfoundation.org>"
+        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260707115411.1714314-3-zhen.ni@easystack.cn
+  - dropped commits
+    - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v11. (4)
+      - e95f00169694 "mm-page_owner-add-print_mode-filter-fix (1/4)"
+        - Authored by a maintainer, reviewed by nobody
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - abc6aebc79b5 "mm-fix-assert_exclusive_bits-by-passing-memdesc_flags_t-by-pointer-fix (7/10)"
+        - Authored by a maintainer, reviewed by nobody
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

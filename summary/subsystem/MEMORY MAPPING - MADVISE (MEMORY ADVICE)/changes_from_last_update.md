@@ -1,7 +1,11 @@
-- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 0 commits
+  - dropped commits
+    - e187bc02f8fa "mm: do file ownership checks with the proper mount idmap"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260625153853.913949-1-pfalcato@suse.de
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)

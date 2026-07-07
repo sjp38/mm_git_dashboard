@@ -1,73 +1,20 @@
-- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
+- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-  - changed commits
-    - 3fc1f04d47c3 "mm/page_vma_mapped: fix device-private PMD handling"
-      - Authored by no role player, reviewed by a reviewer
-      - added "[akpm@linux-foundation.org: fix Raspberry Pi 1 build, per David]"
-      - added "Tested-by: Klara Modin <klarasmodin@gmail.com>"
-      - Link: https://lore.kernel.org/20260630021540.17297-1-richard.weiyang@gmail.com
-  - dropped commits
-    - 49d0d996e4d4 "mm-page_vma_mapped-fix-device-private-pmd-handling-fix"
-      - Authored by a maintainer, reviewed by nobody
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 6 commits
-  - series: 0 (2) -> 0 (6)
-    - no role, no role : 1 -> 3 commits
-    - no role, maintainer: 0 -> 1 commits
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 0 (6) -> 0 (6) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
-      - 4cc0dab993a8 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES (5/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
-  - changed commits
-    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
-      - 75fc02180942 "mm: extract mm_prepare_for_swap_entries() helper (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260706114320.1643046-3-usama.arif@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260630164143.1595669-3-usama.arif@linux.dev"
-        - Link: https://lore.kernel.org/20260706114320.1643046-3-usama.arif@linux.dev
-    - series "Fix incorrect access of hugetlb pte entries", v3. (6)
-      - aaa2e1f10d05 "mm/rmap: use huge_ptep_get() in try_to_unmap_one() (1/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
-      - 959edcf6861e "mm/rmap: use huge_ptep_get() in try_to_migrate_one() (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260703114202.365553-4-dev.jain@arm.com
-      - 87ffd0a046ee "mm-rmap-use-huge_ptep_get-in-try_to_migrate_one-checkpatch-fixes (3/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-      - 69b69da18afb "mm/page_vma_mapped: use huge_ptep_get() for hugetlb (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703114202.365553-6-dev.jain@arm.com
-  - dropped commits
-    - series "mm: preparatory patches for PMD level swap entries". (6)
-      - aca1a23c124f "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF (5/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
-- mm-new: 4 -> 1 commits
-  - series: 0 (4) -> 0 (1)
-    - no role, no role : 2 -> 1 commits
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
-    - series "KSM: performance optimizations for rmap_walk_ksm", v11. (3)
-      - 171fa1dfde66 "ksm: add mremap selftests for ksm_rmap_walk (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260703162637070FU4ekl58Hw_Z7OSuJryZB@zte.com.cn
+    - maintainer, nobody: 1 -> 1 commits (no change)
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

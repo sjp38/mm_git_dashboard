@@ -1,42 +1,30 @@
-- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
+- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
+- mm-unstable: 5 -> 9 commits
+  - series: 1 (2) -> 1 (3)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
-      - 4cc0dab993a8 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES (5/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
-  - dropped commits
-    - series "mm: preparatory patches for PMD level swap entries". (6)
-      - aca1a23c124f "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF (5/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
-- mm-new: 3 -> 3 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
+    - reviewer, reviewer: 1 -> 2 commits
+    - maintainer, nobody: 0 -> 1 commits
+- mm-new: 3 -> 1 commits
+  - series: 1 (2) -> 0 (0)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
     - series "mm: clean up folio LRU and swap declarations", v7. (3)
       - 72dd004511c7 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-        - dropped "Cc: Kairui Song <kasong@tencent.com>"
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-0-a028e8b5fc3d@gmail.com
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-1-a028e8b5fc3d@gmail.com
       - 5eec9afb12c2 "mm: move reclaim-internal declarations out of swap.h (2/3)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-3-a028e8b5fc3d@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

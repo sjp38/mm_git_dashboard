@@ -1,32 +1,21 @@
-- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
+- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 4 commits
-  - series: 0 (1) -> 0 (2)
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "mm: Some cleanups for page allocator APIs", v5. (18)
-      - c3187d49539d "mm: split out internal page_alloc.h (3/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-- mm-new: 2 -> 1 commits
-  - series: 1 (2) -> 1 (1)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 0 commits
-  - changed commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-new: 1 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
     - series "mm: clean up folio LRU and swap declarations", v7. (3)
       - 72dd004511c7 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-0-a028e8b5fc3d@gmail.com
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-1-a028e8b5fc3d@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)

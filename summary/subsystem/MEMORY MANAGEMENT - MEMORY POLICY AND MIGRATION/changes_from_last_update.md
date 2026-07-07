@@ -1,72 +1,28 @@
-- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
+- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 88cd7a8a84a6 "mm: migrate_device: fix pte_pfn/pte_dirty called on non-present PTE"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-hotfixes-unstable
+      - added "Cc: <stable@vger.kernel.org>"
+      - Link: https://lore.kernel.org/20260706111958.3649651-1-wangkefeng.wang@huawei.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 16 commits
-  - series: 2 (9) -> 2 (14)
+- mm-unstable: 16 -> 16 commits (no change)
+  - series: 2 (14) -> 2 (14) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 2 -> 4 commits
-  - new commits
-    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
-      - 4cc0dab993a8 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES (5/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
-  - changed commits
-    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
-      - e747d47b0138 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260706114320.1643046-1-usama.arif@linux.dev"
-        - added "Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t [2]"
-        - added "Link: https://lore.kernel.org/20260706114320.1643046-2-usama.arif@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev"
-        - dropped "Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]"
-        - dropped "Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev"
-        - Link: https://lore.kernel.org/20260706114320.1643046-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260706114320.1643046-2-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
-        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t [2]
-        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
-      - 836fa0de4c70 "mm/migrate_device: move softleaf_to_folio() inside device-private branch (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260706114320.1643046-6-usama.arif@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260630164143.1595669-6-usama.arif@linux.dev"
-        - Link: https://lore.kernel.org/20260706114320.1643046-6-usama.arif@linux.dev
-    - series "mm: Some cleanups for page allocator APIs", v5. (18)
-      - c3187d49539d "mm: split out internal page_alloc.h (3/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-      - b07cf8db8948 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof() (4/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
-    - series "Fix incorrect access of hugetlb pte entries", v3. (6)
-      - 57de3ab196f4 "mm/migrate: use huge_ptep_get() in remove_migration_pte() (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703114202.365553-5-dev.jain@arm.com
-  - dropped commits
-    - series "mm: preparatory patches for PMD level swap entries". (6)
-      - aca1a23c124f "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF (5/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
-- mm-new: 3 -> 1 commits
-  - series: 0 (3) -> 0 (0)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 1 -> 0 commits
-    - reviewer, reviewer: 2 -> 0 commits
-  - new commits
-    - dbace6d12dba "mm: migrate_device: fix pte_pfn/pte_dirty called on non-present PTE"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260706111958.3649651-1-wangkefeng.wang@huawei.com
+    - reviewer, reviewer: 4 -> 4 commits (no change)
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

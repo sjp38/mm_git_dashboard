@@ -1,43 +1,43 @@
-- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+    - reviewer, reviewer: 1 -> 0 commits
+  - dropped commits
+    - e187bc02f8fa "mm: do file ownership checks with the proper mount idmap"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260625153853.913949-1-pfalcato@suse.de
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - 4b6f944a4eec "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
+    - no role, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - a9d35f9e5e14 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260706104308.34741-1-kirill@shutemov.name
+      - added "Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name"
+      - dropped "Link: https://lore.kernel.org/20260706104308.34741-1-kirill@shutemov.name"
+      - Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 9 commits
+- mm-unstable: 9 -> 11 commits
   - series: 1 (6) -> 1 (6) (no change)
-    - no role, no role : 1 -> 2 commits
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 2 commits
+    - maintainer, nobody: 2 -> 2 commits (no change)
   - changed commits
-    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
-      - 93d31327b596 "fs/proc: use softleaf_has_pfn() in pagemap PMD walker (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260706114320.1643046-4-usama.arif@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260630164143.1595669-4-usama.arif@linux.dev"
-        - Link: https://lore.kernel.org/20260706114320.1643046-4-usama.arif@linux.dev
-    - 3070e81cb4ef "mm/mprotect: use huge_ptep_get() for hugetlb"
-      - Authored by no role player, reviewed by no role player
+    - bd3bb1a26c0b "mm: nommu: add sysctl_max_map_count() check for do_mmap()"
+      - Authored by no role player, reviewed by nobody
       - branch: mm-new -> mm-unstable
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260703114202.365553-7-dev.jain@arm.com
-    - 4235eb7e1843 "mm-mprotect-use-huge_ptep_get-for-hugetlb-fix"
-      - Authored by a maintainer, reviewed by nobody
+      - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/munmap/munmap04.c
+      - Link: https://lore.kernel.org/20260702012830.667205-1-thehajime@gmail.com
+    - e6bd09c50d2a "mm: nommu: point to the write iterator upon split_vma"
+      - Authored by no role player, reviewed by nobody
       - branch: mm-new -> mm-unstable
-- mm-new: 4 -> 2 commits
+      - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/mseal/mseal02.c
+      - Link: https://lore.kernel.org/20260702012546.665383-1-thehajime@gmail.com
+- mm-new: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
+    - no role, nobody: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

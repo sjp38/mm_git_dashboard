@@ -1,11 +1,5 @@
-- baseline: v7.2-rc1
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - reviewer, reviewer: 1 commits
-  - full commits list
-    - e187bc02f8fa "mm: do file ownership checks with the proper mount idmap"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260625153853.913949-1-pfalcato@suse.de
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 4 total, 1 (2) series, 2 non-series commits
@@ -14,16 +8,16 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm/filemap: reduce unnecessary xarray lookups". (2 commits)
-      - 380cd7edf08a "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
+      - 180597bce957 "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-2-chizhiling@163.com
-      - b280bdb3b766 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
+      - 54ca5dd0a0ba "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-3-chizhiling@163.com
-    - f93d56da066d "writeback.h: fix a typo in the wbc_init_bio() description"
+    - d6aa4a27f2dc "writeback.h: fix a typo in the wbc_init_bio() description"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260615162244.2170866-2-willy@infradead.org
-    - 01bc0932614c "mm: fix mapping_seek_hole_data() overflow on last page"
+    - 62e15482576a "mm: fix mapping_seek_hole_data() overflow on last page"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260630125047.703170-1-yanzhen20011121@163.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

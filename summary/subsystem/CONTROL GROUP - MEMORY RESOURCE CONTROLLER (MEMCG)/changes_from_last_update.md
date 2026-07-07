@@ -1,32 +1,31 @@
-- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
+- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
+- mm-unstable: 6 -> 8 commits
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
-- mm-new: 1 -> 2 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
     - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 420d3f774039 "mm: memcg: reset oom_group in css_reset"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260703063826.306878-2-jiayuan.chen@linux.dev
+    - no role, maintainer: 5 -> 6 commits
   - changed commits
-    - ca7fd688c9c9 "mm: memcg: reset zswap settings in css_reset"
+    - 02e18054d045 "mm: memcg: reset zswap settings in css_reset"
       - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/20260703063826.306878-1-jiayuan.chen@linux.dev"
-      - added "Reviewed-by: Muchun Song <muchun.song@linux.dev>"
-      - added "Reviewed-by: Tao Cui <cuitao@kylinos.cn>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260703063826.306878-1-jiayuan.chen@linux.dev
       - Link: https://lore.kernel.org/20260702024827.353185-1-jiayuan.chen@linux.dev
+    - 558fcb8ae87e "mm: memcg: reset oom_group in css_reset"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+      - Link: https://lore.kernel.org/20260703063826.306878-2-jiayuan.chen@linux.dev
+- mm-new: 2 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

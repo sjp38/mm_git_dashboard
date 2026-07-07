@@ -1,37 +1,17 @@
-- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
+- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - f5e14dc25402 "mm/memory-failure: trace: change memory_failure_event to ras subsystem"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Tested-by: Qiuxu Zhuo <qiuxu.zhuo@intel.com>"
-      - Link: https://lore.kernel.org/20260605081213.154660-1-xieyuanbin1@huawei.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 6 commits
-  - series: 1 (5) -> 1 (6)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 4 -> 5 commits
-    - reviewer, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (6)
-      - 63186806c0f9 "mm/memory-failure: surface unhandlable kernel pages as -ENOTRECOVERABLE (1/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Miaohe Lin <linmiaohe@huawei.com>"
-        - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-2-c6ed5b62eea2@debian.org
-    - series "mm: Some cleanups for page allocator APIs", v5. (18)
-      - c3187d49539d "mm: split out internal page_alloc.h (3/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - reviewer, reviewer: 1 -> 0 commits
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 1 (6) -> 1 (6) (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

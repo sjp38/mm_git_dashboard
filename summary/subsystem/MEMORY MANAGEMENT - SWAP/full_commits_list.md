@@ -1,45 +1,50 @@
-- baseline: v7.2-rc1
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 5 total, 1 (2) series, 3 non-series commits
+- mm-unstable: 9 total, 1 (3) series, 6 non-series commits
   - author/reviewer role stat
+    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
     - no role, maintainer: 4 commits
-    - reviewer, reviewer: 1 commits
+    - reviewer, reviewer: 2 commits
+    - maintainer, nobody: 1 commits
   - full commits list
     - series "mm: drop "sub" prefix from various places". (2 commits)
-      - 8034f3b32f28 "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
+      - 09d5491a2f03 "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260623125723.2503832-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260623125723.2503832-2-dev.jain@arm.com
-    - 22ef426aeca5 "include/linux/swap.h: remove unused leftovers"
+    - 1e55e20d49b8 "mm/lruvec: trace LRU add drains and drain-all requests"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260622185127.24579-1-jp.kobryn@linux.dev
+    - a0bd951b9be1 "mm: annotate data-race in cpu_needs_drain()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260626053700.2036899-1-wangxuewen@kylinos.cn
+    - 6226c4414dd5 "mm-annotate-data-race-in-cpu_needs_drain-fix"
+      - Authored by a maintainer, reviewed by nobody
+    - a75f7569554c "include/linux/swap.h: remove unused leftovers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/68591daf0d679e5a0072d63751f187d14613e2b0.1781146877.git.ritesh.list@gmail.com
-    - b79b6a6544ee "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - c51fe96fbf13 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - 1ad812e1de27 "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
+    - 5946508a2b75 "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260608143242.2869392-1-usama.arif@linux.dev
       - Link: https://lore.kernel.org/all/dca2824e8e88e826c6b260a831d79089b5b9c79d.camel@surriel.com/T/#u [1]
-      - 4cc0dab993a8 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
+      - 915f9d40c63b "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
-- mm-new: 3 total, 1 (2) series, 1 non-series commits
+      - be53acf87ae1 "mm: split out internal page_alloc.h" (3/18)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
   - full commits list
-    - series "mm: clean up folio LRU and swap declarations", v7. (3 commits)
-      - 72dd004511c7 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-0-a028e8b5fc3d@gmail.com
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-1-a028e8b5fc3d@gmail.com
-      - 5eec9afb12c2 "mm: move reclaim-internal declarations out of swap.h" (2/3)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-3-a028e8b5fc3d@gmail.com
-    - db6ed2a3d310 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - 302dfbff3e73 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

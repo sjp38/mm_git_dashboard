@@ -1,4 +1,4 @@
-- baseline: v7.2-rc1 -> v7.2-rc1 (no change)
+- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
@@ -6,42 +6,20 @@
     - no role, nobody: 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 19 -> 22 commits
-  - series: 2 (17) -> 2 (20)
+- mm-unstable: 22 -> 22 commits (no change)
+  - series: 2 (20) -> 2 (20) (no change)
     - no role, nobody: 5 -> 5 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 6 -> 7 commits
-    - reviewer, reviewer: 0 -> 2 commits
-  - changed commits
-    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
-      - da335a8c7280 "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages (0/19)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Tested-by: Michal Clapinski <mclapinski@google.com>"
-        - added "Reviewed-by: Michal Clapinski <mclapinski@google.com>"
-        - dropped "Cc: Michal Clapinski <mclapinski@google.com>"
-        - Link: https://lore.kernel.org/20260612035903.2468601-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260612035903.2468601-2-songmuchun@bytedance.com
-    - series "mm: Some cleanups for page allocator APIs", v5. (18)
-      - c3187d49539d "mm: split out internal page_alloc.h (3/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-      - b07cf8db8948 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof() (4/18)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
-    - series "Fix incorrect access of hugetlb pte entries", v3. (6)
-      - aaa2e1f10d05 "mm/rmap: use huge_ptep_get() in try_to_unmap_one() (1/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
-- mm-new: 3 -> 0 commits
-  - series: 0 (3) -> 0 (0)
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, reviewer: 2 -> 0 commits
+    - no role, maintainer: 7 -> 7 commits (no change)
+    - reviewer, reviewer: 2 -> 2 commits (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 78faf9e9a924 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
