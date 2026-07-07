@@ -2,46 +2,46 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 6 total, 0 (2) series, 4 non-series commits
+- mm-unstable: 7 total, 0 (4) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
     - no role, maintainer: 3 commits
-  - full commits list
-    - f5ddd9166be1 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
-      - 762a69bd2d2b "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
-    - 7a0cfedc71ab "mm: constify oom_control, scan_control, and alloc_context nodemask"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - a8754c9b38cf "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
-    - 5c291c49dd37 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
-      - 68beb6bfe544 "memcg: bail out proactive reclaim when memcg is dying" (2/4)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
-- mm-new: 3 total, 1 (3) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-      - 3872c867e053 "mm: split out internal page_alloc.h" (3/18)
+    - 77bcc7b8c57f "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
+      - 83c91baf8304 "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
+    - b79b6a6544ee "mm: constify oom_control, scan_control, and alloc_context nodemask"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
+    - 666935112c36 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
+      - b888152e6051 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer" (6/10)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+      - e809bd35bdcb "memcg: bail out proactive reclaim when memcg is dying" (2/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
+      - c3187d49539d "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+- mm-new: 2 total, 1 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
+  - full commits list
     - series "mm: clean up folio LRU and swap declarations", v7. (3 commits)
-      - e12e092d6bb2 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - 72dd004511c7 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-0-a028e8b5fc3d@gmail.com
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-1-a028e8b5fc3d@gmail.com
-      - 306b219c4679 "mm: rename swap.c to folio.c" (1/3)
+      - 950ba0411e25 "mm: rename swap.c to folio.c" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-2-a028e8b5fc3d@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

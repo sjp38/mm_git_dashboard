@@ -3,44 +3,48 @@
 - mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
-    - reviewer, no role : 1 commits
+    - reviewer, reviewer: 1 commits
   - full commits list
-    - a985794cfba7 "mm/huge_memory: set PG_has_hwpoisoned only after new folio head is established"
+    - 1fbf4b530bf8 "mm/huge_memory: set PG_has_hwpoisoned only after new folio head is established"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260701174235.3173401-1-riel@surriel.com
-    - 79973aa4f4d1 "userfaultfd: wait on source PMD during UFFDIO_MOVE"
-      - Authored by a reviewer, reviewed by no role player
+    - 6c95d039d170 "userfaultfd: wait on source PMD during UFFDIO_MOVE"
+      - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260705131231.1499198-1-usama.arif@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=8
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
+- mm-unstable: 5 total, 1 (5) series, 0 non-series commits
   - author/reviewer role stat
-    - reviewer, reviewer: 3 commits
+    - reviewer, reviewer: 5 commits
   - full commits list
-    - series "mm: preparatory patches for PMD level swap entries". (6 commits)
-      - ebbca13b1a6e "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
+    - series "mm: preparatory patches for PMD level swap entries", v2. (6 commits)
+      - e747d47b0138 "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260706114320.1643046-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260706114320.1643046-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
-        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]
+        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t [2]
         - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
-      - 47172f3e3372 "mm/huge_memory: move softleaf_to_folio() inside migration branch" (3/6)
+      - 7dd181eccb47 "mm/huge_memory: move softleaf_to_folio() inside migration branch" (3/6)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260630164143.1595669-5-usama.arif@linux.dev
-      - aca1a23c124f "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
+        - Link: https://lore.kernel.org/20260706114320.1643046-5-usama.arif@linux.dev
+      - 4cc0dab993a8 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
-- mm-new: 2 total, 0 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - reviewer, reviewer: 2 commits
-  - full commits list
-      - 3872c867e053 "mm: split out internal page_alloc.h" (3/18)
+        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
+      - c3187d49539d "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-      - ea26d12103c4 "mm: move __alloc_pages() to mm/page_alloc.h" (13/18)
+      - d81014af5ef5 "mm: move __alloc_pages() to mm/page_alloc.h" (13/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, reviewer: 1 commits
+  - full commits list
+      - e762058edf9f "mm/huge_memory: add page->private check back in __split_folio_to_order()" (2/5)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/all/13f3fcda-7328-4aa5-afc6-75a294a82b2a@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/20260703-keep-subpage-private-zero-at-free-v2-3-2970fe777dd6@nvidia.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

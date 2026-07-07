@@ -2,30 +2,30 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
+- mm-unstable: 4 total, 0 (2) series, 2 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 3 commits
-  - full commits list
-    - 7a0cfedc71ab "mm: constify oom_control, scan_control, and alloc_context nodemask"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - a8754c9b38cf "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
-      - 68beb6bfe544 "memcg: bail out proactive reclaim when memcg is dying" (2/4)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
-- mm-new: 2 total, 1 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-      - 3872c867e053 "mm: split out internal page_alloc.h" (3/18)
+    - b79b6a6544ee "mm: constify oom_control, scan_control, and alloc_context nodemask"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
+    - 666935112c36 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
+      - e809bd35bdcb "memcg: bail out proactive reclaim when memcg is dying" (2/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
+      - c3187d49539d "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+- mm-new: 1 total, 1 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
     - series "mm: clean up folio LRU and swap declarations", v7. (3 commits)
-      - e12e092d6bb2 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - 72dd004511c7 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-0-a028e8b5fc3d@gmail.com
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-1-a028e8b5fc3d@gmail.com

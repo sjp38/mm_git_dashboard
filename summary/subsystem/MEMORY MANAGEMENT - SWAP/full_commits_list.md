@@ -8,23 +8,23 @@
     - reviewer, reviewer: 1 commits
   - full commits list
     - series "mm: drop "sub" prefix from various places". (2 commits)
-      - bc1826b411a3 "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
+      - 8034f3b32f28 "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260623125723.2503832-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260623125723.2503832-2-dev.jain@arm.com
-    - c6b0b9701fce "include/linux/swap.h: remove unused leftovers"
+    - 22ef426aeca5 "include/linux/swap.h: remove unused leftovers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/68591daf0d679e5a0072d63751f187d14613e2b0.1781146877.git.ritesh.list@gmail.com
-    - 7a0cfedc71ab "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - b79b6a6544ee "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - 9bdee249b2bc "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
+    - 1ad812e1de27 "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260608143242.2869392-1-usama.arif@linux.dev
       - Link: https://lore.kernel.org/all/dca2824e8e88e826c6b260a831d79089b5b9c79d.camel@surriel.com/T/#u [1]
-      - aca1a23c124f "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
+      - 4cc0dab993a8 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
 - mm-new: 3 total, 1 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
@@ -32,14 +32,14 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm: clean up folio LRU and swap declarations", v7. (3 commits)
-      - e12e092d6bb2 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - 72dd004511c7 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-0-a028e8b5fc3d@gmail.com
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-1-a028e8b5fc3d@gmail.com
-      - 35ab65e8fb19 "mm: move reclaim-internal declarations out of swap.h" (2/3)
+      - 5eec9afb12c2 "mm: move reclaim-internal declarations out of swap.h" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-3-a028e8b5fc3d@gmail.com
-    - 820d5dfede0c "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - db6ed2a3d310 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

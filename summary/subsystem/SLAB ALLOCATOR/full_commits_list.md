@@ -2,27 +2,25 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-unstable: 4 total, 0 (4) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-  - full commits list
-    - 5c291c49dd37 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
-- mm-new: 3 total, 0 (3) series, 0 non-series commits
-  - author/reviewer role stat
     - reviewer, reviewer: 3 commits
   - full commits list
-      - 3872c867e053 "mm: split out internal page_alloc.h" (3/18)
+      - b888152e6051 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer" (6/10)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+      - c3187d49539d "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-      - 1ca7010a78ed "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof()" (4/18)
+      - b07cf8db8948 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof()" (4/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
-      - 74586183cede "mm: factor out can_spin_trylock()" (17/18)
+      - 465c5eab00ca "mm: factor out can_spin_trylock()" (17/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-18-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/397859cb-b127-4cc6-9c71-044afc99bf0c@kernel.org/
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

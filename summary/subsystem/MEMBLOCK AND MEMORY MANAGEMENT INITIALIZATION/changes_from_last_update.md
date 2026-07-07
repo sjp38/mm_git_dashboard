@@ -6,21 +6,21 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 9 -> 9 commits (no change)
-  - series: 0 (8) -> 0 (8) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 7 -> 8 commits
+- mm-unstable: 9 -> 10 commits
+  - series: 0 (8) -> 0 (9)
+    - no role, no role : 8 -> 8 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 0 -> 1 commits
   - changed commits
-    - a9f756ecd57f "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
-      - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - c3187d49539d "mm: split out internal page_alloc.h (3/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

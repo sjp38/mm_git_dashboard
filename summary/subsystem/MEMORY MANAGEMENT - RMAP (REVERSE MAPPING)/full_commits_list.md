@@ -1,43 +1,43 @@
 - baseline: v7.2-rc1
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
-    - maintainer, nobody: 1 commits
   - full commits list
-    - 4fcbfdaf4b76 "mm/page_vma_mapped: fix device-private PMD handling"
+    - 3fc1f04d47c3 "mm/page_vma_mapped: fix device-private PMD handling"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260630021540.17297-1-richard.weiyang@gmail.com
-    - 49d0d996e4d4 "mm-page_vma_mapped-fix-device-private-pmd-handling-fix"
-      - Authored by a maintainer, reviewed by nobody
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
+- mm-unstable: 6 total, 0 (6) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-    - reviewer, reviewer: 1 commits
-  - full commits list
-      - 413e3b3ebdea "mm: extract mm_prepare_for_swap_entries() helper" (1/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260630164143.1595669-3-usama.arif@linux.dev
-      - aca1a23c124f "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF" (5/6)
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
-- mm-new: 4 total, 0 (4) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
+    - no role, no role : 3 commits
     - no role, maintainer: 1 commits
+    - reviewer, reviewer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-      - 34b5d621a756 "mm/rmap: use huge_ptep_get() in try_to_unmap_one()" (1/6)
+      - 75fc02180942 "mm: extract mm_prepare_for_swap_entries() helper" (1/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260706114320.1643046-3-usama.arif@linux.dev
+      - 4cc0dab993a8 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
+      - aaa2e1f10d05 "mm/rmap: use huge_ptep_get() in try_to_unmap_one()" (1/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
-      - 72aff2cbd2f9 "mm/rmap: use huge_ptep_get() in try_to_migrate_one()" (2/6)
+      - 959edcf6861e "mm/rmap: use huge_ptep_get() in try_to_migrate_one()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703114202.365553-4-dev.jain@arm.com
-      - 75a1ff85686b "mm-rmap-use-huge_ptep_get-in-try_to_migrate_one-checkpatch-fixes" (3/6)
+      - 87ffd0a046ee "mm-rmap-use-huge_ptep_get-in-try_to_migrate_one-checkpatch-fixes" (3/6)
         - Authored by a maintainer, reviewed by nobody
-      - 7c031b4d67fb "mm/page_vma_mapped: use huge_ptep_get() for hugetlb" (5/6)
+      - 69b69da18afb "mm/page_vma_mapped: use huge_ptep_get() for hugetlb" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703114202.365553-6-dev.jain@arm.com
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+      - 171fa1dfde66 "ksm: add mremap selftests for ksm_rmap_walk" (2/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260703162637070FU4ekl58Hw_Z7OSuJryZB@zte.com.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

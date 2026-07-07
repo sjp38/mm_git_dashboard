@@ -2,30 +2,42 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 4b6f944a4eec "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260706104308.34741-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 7 commits (no change)
+- mm-unstable: 7 -> 9 commits
   - series: 1 (6) -> 1 (6) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-new: 2 -> 4 commits
+    - maintainer, nobody: 1 -> 2 commits
+  - changed commits
+    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
+      - 93d31327b596 "fs/proc: use softleaf_has_pfn() in pagemap PMD walker (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260706114320.1643046-4-usama.arif@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260630164143.1595669-4-usama.arif@linux.dev"
+        - Link: https://lore.kernel.org/20260706114320.1643046-4-usama.arif@linux.dev
+    - 3070e81cb4ef "mm/mprotect: use huge_ptep_get() for hugetlb"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260703114202.365553-7-dev.jain@arm.com
+    - 4235eb7e1843 "mm-mprotect-use-huge_ptep_get-for-hugetlb-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+- mm-new: 4 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 2 commits
-    - no role, no role : 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - 903daf3bc2bf "mm: nommu: add sysctl_max_map_count() check for do_mmap()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/munmap/munmap04.c
-      - Link: https://lore.kernel.org/20260702012830.667205-1-thehajime@gmail.com
-    - 59a9e356e270 "mm: nommu: point to the write iterator upon split_vma"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/mseal/mseal02.c
-      - Link: https://lore.kernel.org/20260702012546.665383-1-thehajime@gmail.com
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

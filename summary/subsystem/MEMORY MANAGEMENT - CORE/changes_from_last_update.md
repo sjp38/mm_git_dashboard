@@ -5,39 +5,131 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 24 -> 24 commits (no change)
-  - series: 3 (18) -> 3 (18) (no change)
-    - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 12 -> 12 commits (no change)
+- mm-unstable: 24 -> 33 commits
+  - series: 3 (18) -> 4 (27)
+    - no role, nobody: 5 -> 6 commits
+    - no role, no role : 12 -> 14 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
-  - changed commits
-    - 7f6aea01ed99 "mm: gfp_types: fix __GFP_ACCOUNT, GFP_KERNEL_ACCOUNT documentation"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: SJ Park <sj@kernel.org>"
-      - Link: https://lore.kernel.org/20260701182102.1586784-1-hannes@cmpxchg.org
-- mm-new: 9 -> 11 commits
-  - series: 1 (8) -> 1 (10)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 3 commits
-    - no role, reviewer: 0 -> 1 commits
-    - reviewer, reviewer: 6 -> 6 commits (no change)
+    - reviewer, reviewer: 2 -> 8 commits
   - new commits
-    - series "mm: clean up folio LRU and swap declarations", v7. (3)
-      - 306b219c4679 "mm: rename swap.c to folio.c (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-2-a028e8b5fc3d@gmail.com
-      - 35ab65e8fb19 "mm: move reclaim-internal declarations out of swap.h (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-3-a028e8b5fc3d@gmail.com
+    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
+      - 4cc0dab993a8 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES (5/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
   - changed commits
-    - a13cbbc4e06a "mm/secretmem: disable under HIGHMEM"
+    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
+      - da335a8c7280 "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages (0/19)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Tested-by: Michal Clapinski <mclapinski@google.com>"
+        - added "Reviewed-by: Michal Clapinski <mclapinski@google.com>"
+        - dropped "Cc: Michal Clapinski <mclapinski@google.com>"
+        - Link: https://lore.kernel.org/20260612035903.2468601-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260612035903.2468601-2-songmuchun@bytedance.com
+    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
+      - e747d47b0138 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260706114320.1643046-2-usama.arif@linux.dev"
+        - added "Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t [2]"
+        - added "Link: https://lore.kernel.org/20260706114320.1643046-1-usama.arif@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260630164143.1595669-1-usama.arif@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260630164143.1595669-2-usama.arif@linux.dev"
+        - dropped "Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t  [2]"
+        - Link: https://lore.kernel.org/20260706114320.1643046-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260706114320.1643046-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t [2]
+        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
+      - 75fc02180942 "mm: extract mm_prepare_for_swap_entries() helper (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260706114320.1643046-3-usama.arif@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260630164143.1595669-3-usama.arif@linux.dev"
+        - Link: https://lore.kernel.org/20260706114320.1643046-3-usama.arif@linux.dev
+    - 0b9c4812529e "mm/secretmem: disable under HIGHMEM"
       - Authored by no role player, reviewed by no role player
-      - added "Fixes: 1507f51255c9 ("mm: introduce memfd_secret system call to create "secret" memory areas")"
-      - dropped "Fixes: 1507f51255c9f ("mm: introduce memfd_secret system call to create "secret" memory areas")"
+      - branch: mm-new -> mm-unstable
       - Link: https://github.com/bjackman/limmat-kernel-nix/commit/7b2acba2d3a5ef01400d493a155beb1d135b6bb5
       - Link: https://lore.kernel.org/20260703-secretmem-highmem-v1-1-30d5ff944664@google.com
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - 19199f091567 "mm/page_alloc: rename ALLOC_TRYLOCK -> ALLOC_NOLOCK (0/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-0-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/linux-mm/2399b3ad-4eac-4a14-94c3-27e9f07972a1@kernel.org/
+        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [1]
+      - a2bc7713ad34 "mm: name some args in a function declaration (2/18)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-3-c87b714e19d3@google.com
+      - c3187d49539d "mm: split out internal page_alloc.h (3/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+      - 3f56cf08e41b "mm: move some stuff to mm/page_alloc.h (6/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-7-c87b714e19d3@google.com
+      - 0303b21c4329 "mm: remove __alloc_pages_node() (12/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-13-c87b714e19d3@google.com
+      - d81014af5ef5 "mm: move __alloc_pages() to mm/page_alloc.h (13/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
+      - 612784cdd9ec "mm: remove the __GFP_NO_OBJ_EXT flag (15/18)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-16-c87b714e19d3@google.com
+      - 465c5eab00ca "mm: factor out can_spin_trylock() (17/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-18-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/397859cb-b127-4cc6-9c71-044afc99bf0c@kernel.org/
+  - dropped commits
+    - series "mm: preparatory patches for PMD level swap entries". (6)
+      - aca1a23c124f "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_SUPPORTS_PMD_SOFTLEAF (5/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260630164143.1595669-7-usama.arif@linux.dev
+- mm-new: 11 -> 8 commits
+  - series: 1 (10) -> 1 (7)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 3 -> 6 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 6 -> 0 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "Keep tail page private zero at free and folio split", v2. (5)
+      - 55b933eae1c9 "mm/page_alloc: remove set_page_private() in prep_compound_tail() (4/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260703-keep-subpage-private-zero-at-free-v2-5-2970fe777dd6@nvidia.com
+    - series "mm: drop redundant lru_add_drain in anon folio reuse paths", v3. (4)
+      - 7d97a641158b "mm: avoid unnecessary lru drain for wp_can_reuse_anon_folio() (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260701235955.36126-1-baohua@kernel.org
+        - Link: https://lore.kernel.org/20260701235955.36126-2-baohua@kernel.org
+      - c519eeae17aa "mm: drop stale folio_ref_count()==1 check in do_swap_page reuse logic (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260701235955.36126-3-baohua@kernel.org
+        - Link: https://lore.kernel.org/all/20251220-swap-table-p2-v5-0-8862a265a033@tencent.com/ [1]
+      - f7ead083f26c "mm-drop-stale-folio_ref_count==1-check-in-do_swap_page-reuse-logic-fix (2/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/3a185a5d-2f2c-4e9d-9cd9-8bdb236dfc5c@kernel.org
+      - a0760a7a78a4 "mm: entirely remove lru_add_drain in do_swap_page (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260701235955.36126-4-baohua@kernel.org
+    - 0b0d57a1b8d0 "mm: clarify the folio_free_swap() for do_swap_page()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260701235955.36126-5-baohua@kernel.org
+  - changed commits
+    - series "mm: clean up folio LRU and swap declarations", v7. (3)
+      - 5eec9afb12c2 "mm: move reclaim-internal declarations out of swap.h (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-3-a028e8b5fc3d@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

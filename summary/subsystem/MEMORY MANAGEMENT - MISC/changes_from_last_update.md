@@ -4,63 +4,72 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 4b6f944a4eec "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260706104308.34741-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 11 commits (no change)
-  - series: 2 (9) -> 2 (9) (no change)
-    - no role, nobody: 3 -> 2 commits
+- mm-unstable: 11 -> 13 commits
+  - series: 2 (9) -> 2 (11)
+    - no role, nobody: 2 -> 3 commits
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 0 -> 1 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
+  - new commits
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - 0c02e6512fc7 "selftests/mm: fix clone cleartid race in pkey sighandler tests (5/10)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260706081600.3570203-7-lihongfu@kylinos.cn
   - changed commits
-    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v9. (5)
-      - ca4ce998d1a1 "selftests/mm: move pkey selftest helpers to pkey_util.c (0/5)"
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - cf0306f75be5 "selftests/mm: move pkey selftest helpers to pkey_util.c (0/10)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260702062332.911786-2-lihongfu@kylinos.cn"
-        - added "Link: https://lore.kernel.org/20260702062332.911786-1-lihongfu@kylinos.cn"
-        - dropped "Link: https://lore.kernel.org/20260630073235.3802271-1-lihongfu@kylinos.cn"
-        - dropped "Link: https://lore.kernel.org/20260630073235.3802271-2-lihongfu@kylinos.cn"
-        - dropped "Cc: Madhavan Srinivasan <maddy@linux.ibm.com>"
-        - Link: https://lore.kernel.org/20260702062332.911786-1-lihongfu@kylinos.cn
-        - Link: https://lore.kernel.org/20260702062332.911786-2-lihongfu@kylinos.cn
-      - 01b63679170f "selftests/mm: unify pkey sighandler selftest assertions and tracing (1/5)"
+        - added "Link: https://lore.kernel.org/20260706081600.3570203-2-lihongfu@kylinos.cn"
+        - added "Link: https://lore.kernel.org/20260706081600.3570203-1-lihongfu@kylinos.cn"
+        - dropped "Link: https://lore.kernel.org/20260702062332.911786-1-lihongfu@kylinos.cn"
+        - dropped "Link: https://lore.kernel.org/20260702062332.911786-2-lihongfu@kylinos.cn"
+        - Link: https://lore.kernel.org/20260706081600.3570203-1-lihongfu@kylinos.cn
+        - Link: https://lore.kernel.org/20260706081600.3570203-2-lihongfu@kylinos.cn
+      - 02770f5668c4 "selftests/mm: unify pkey sighandler selftest assertions and tracing (1/10)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260702062332.911786-3-lihongfu@kylinos.cn"
-        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-        - dropped "Link: https://lore.kernel.org/20260630073235.3802271-3-lihongfu@kylinos.cn"
-        - dropped "Cc: Madhavan Srinivasan <maddy@linux.ibm.com>"
-        - Link: https://lore.kernel.org/20260702062332.911786-3-lihongfu@kylinos.cn
-      - 0c277a8d8d2e "selftests/mm: use pkey_assert on clone_raw failure in pkey test (2/5)"
+        - added "Link: https://lore.kernel.org/20260706081600.3570203-3-lihongfu@kylinos.cn"
+        - dropped "Link: https://lore.kernel.org/20260702062332.911786-3-lihongfu@kylinos.cn"
+        - Link: https://lore.kernel.org/20260706081600.3570203-3-lihongfu@kylinos.cn
+      - dc2938654a1e "selftests/mm: use pkey_assert on clone_raw failure in pkey test (2/10)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260702062332.911786-4-lihongfu@kylinos.cn"
-        - dropped "Link: https://lore.kernel.org/20260630073235.3802271-4-lihongfu@kylinos.cn"
-        - dropped "Cc: Madhavan Srinivasan <maddy@linux.ibm.com>"
-        - Link: https://lore.kernel.org/20260702062332.911786-4-lihongfu@kylinos.cn
-      - 00156ddfcd0e "selftests/mm: add missing mmap() return checks in pkey tests (3/5)"
+        - added "Link: https://lore.kernel.org/20260706081600.3570203-4-lihongfu@kylinos.cn"
+        - dropped "Link: https://lore.kernel.org/20260702062332.911786-4-lihongfu@kylinos.cn"
+        - Link: https://lore.kernel.org/20260706081600.3570203-4-lihongfu@kylinos.cn
+      - e53f30e3c934 "selftests/mm: add missing mmap() return checks in pkey tests (3/10)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260702062332.911786-5-lihongfu@kylinos.cn"
-        - dropped "Link: https://lore.kernel.org/20260630073235.3802271-5-lihongfu@kylinos.cn"
-        - dropped "Cc: Madhavan Srinivasan <maddy@linux.ibm.com>"
-        - Link: https://lore.kernel.org/20260702062332.911786-5-lihongfu@kylinos.cn
-      - 01777c94d98c "selftests/mm: add missing pthread_create() return checks in pkey tests (4/5)"
+        - added "Link: https://lore.kernel.org/20260706081600.3570203-5-lihongfu@kylinos.cn"
+        - dropped "Link: https://lore.kernel.org/20260702062332.911786-5-lihongfu@kylinos.cn"
+        - Link: https://lore.kernel.org/20260706081600.3570203-5-lihongfu@kylinos.cn
+      - 1ef85f3d56d1 "selftests/mm: add missing pthread_create() return checks in pkey tests (4/10)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260702062332.911786-6-lihongfu@kylinos.cn"
-        - dropped "Link: https://lore.kernel.org/20260630073235.3802271-6-lihongfu@kylinos.cn"
-        - dropped "Cc: Madhavan Srinivasan <maddy@linux.ibm.com>"
-        - Link: https://lore.kernel.org/20260702062332.911786-6-lihongfu@kylinos.cn
-    - 5c0f75a404f1 "selftests/mm/uffd: don't treat UFFDIO_COPY -ENOENT as a failure"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260701200932.1470525-1-rppt@kernel.org
+        - added "Link: https://lore.kernel.org/20260706081600.3570203-6-lihongfu@kylinos.cn"
+        - dropped "Link: https://lore.kernel.org/20260702062332.911786-6-lihongfu@kylinos.cn"
+        - Link: https://lore.kernel.org/20260706081600.3570203-6-lihongfu@kylinos.cn
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - d81014af5ef5 "mm: move __alloc_pages() to mm/page_alloc.h (13/18)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+    - reviewer, reviewer: 1 -> 0 commits
+  - new commits
+    - series "KSM: performance optimizations for rmap_walk_ksm", v11. (3)
+      - 171fa1dfde66 "ksm: add mremap selftests for ksm_rmap_walk (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260703162637070FU4ekl58Hw_Z7OSuJryZB@zte.com.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
