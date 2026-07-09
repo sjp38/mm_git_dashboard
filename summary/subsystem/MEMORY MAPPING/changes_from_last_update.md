@@ -1,43 +1,56 @@
-- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 1 -> 0 commits
-  - dropped commits
-    - e187bc02f8fa "mm: do file ownership checks with the proper mount idmap"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260625153853.913949-1-pfalcato@suse.de
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - a9d35f9e5e14 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
+    - no role, nobody: 1 -> 2 commits
+  - new commits
+    - 85c78ab0af51 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
       - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name"
-      - dropped "Link: https://lore.kernel.org/20260706104308.34741-1-kirill@shutemov.name"
-      - Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name
+      - Link: https://lore.kernel.org/20260708103429.150655-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 9 -> 11 commits
+- mm-unstable: 11 -> 10 commits
   - series: 1 (6) -> 1 (6) (no change)
-    - no role, nobody: 0 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 1 commits
     - maintainer, nobody: 2 -> 2 commits (no change)
+- mm-new: 0 -> 7 commits
+  - series: 0 (0) -> 0 (6)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 4 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - a23b1d788eac "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - 6176711d7be0 "mm: add VM_UFFD_RWP VMA flag (4/15)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260708111417.173443-6-kirill@shutemov.name
+      - f0a0242ff4b1 "mm: add MM_CP_UFFD_RWP change_protection() flag (5/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
+      - bdbd84232e4e "mm: preserve RWP marker across PTE rewrites (6/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
+      - e81660aee3c5 "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking (10/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-12-kirill@shutemov.name
+      - 131fba044cb7 "mm: nommu: fix the error path when vma_iter_prealloc() fails (14/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://sashiko.dev/#/patchset/20260702012830.667205-1-thehajime%40gmail.com
+        - Link: https://sashiko.dev/#/patchset/c8513ee5aa8444ec9bf6c276043c9f833016a2fa.1783304131.git.thehajime%40gmail.com
+        - Link: https://sashiko.dev/#/patchset/20260707235137.498738-1-thehajime%40gmail.com
+        - Link: https://lore.kernel.org/20260708083829.576036-1-thehajime@gmail.com
   - changed commits
-    - bd3bb1a26c0b "mm: nommu: add sysctl_max_map_count() check for do_mmap()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/munmap/munmap04.c
-      - Link: https://lore.kernel.org/20260702012830.667205-1-thehajime@gmail.com
-    - e6bd09c50d2a "mm: nommu: point to the write iterator upon split_vma"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/mseal/mseal02.c
-      - Link: https://lore.kernel.org/20260702012546.665383-1-thehajime@gmail.com
-- mm-new: 2 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 0 commits
+    - 1cfb259b2408 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-new
+      - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

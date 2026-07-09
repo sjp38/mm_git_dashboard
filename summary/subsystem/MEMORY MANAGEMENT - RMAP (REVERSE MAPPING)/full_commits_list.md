@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 99dea6e42c52 "mm/page_vma_mapped: fix device-private PMD handling"
+    - 6763d3f95456 "mm/page_vma_mapped: fix device-private PMD handling"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260630021540.17297-1-richard.weiyang@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -15,29 +15,36 @@
     - reviewer, reviewer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-      - f3764112c90c "mm: extract mm_prepare_for_swap_entries() helper" (1/6)
+      - 8e7a5ac5f91d "mm: extract mm_prepare_for_swap_entries() helper" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260706114320.1643046-3-usama.arif@linux.dev
-      - 915f9d40c63b "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
+      - 04174fee14df "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
-      - 55a877d83fe7 "mm/rmap: use huge_ptep_get() in try_to_unmap_one()" (1/6)
+      - 25c917f950fc "mm/rmap: use huge_ptep_get() in try_to_unmap_one()" (1/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
-      - f23d07b8e0bf "mm/rmap: use huge_ptep_get() in try_to_migrate_one()" (2/6)
+      - 16dc9a6976c0 "mm/rmap: use huge_ptep_get() in try_to_migrate_one()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703114202.365553-4-dev.jain@arm.com
-      - 92d3de09cd4a "mm-rmap-use-huge_ptep_get-in-try_to_migrate_one-checkpatch-fixes" (3/6)
+      - 81babfa08105 "mm-rmap-use-huge_ptep_get-in-try_to_migrate_one-checkpatch-fixes" (3/6)
         - Authored by a maintainer, reviewed by nobody
-      - f4ba650a19a6 "mm/page_vma_mapped: use huge_ptep_get() for hugetlb" (5/6)
+      - 47f3ecd1f317 "mm/page_vma_mapped: use huge_ptep_get() for hugetlb" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703114202.365553-6-dev.jain@arm.com
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
+- mm-new: 3 total, 0 (3) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 1 commits
   - full commits list
-      - 367baa14a203 "ksm: add mremap selftests for ksm_rmap_walk" (2/3)
+      - 4288bbed92b1 "ksm: add mremap selftests for ksm_rmap_walk" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703162637070FU4ekl58Hw_Z7OSuJryZB@zte.com.cn
+      - a23b1d788eac "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - 8f821554e1ff "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP" (7/15)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260708111417.173443-9-kirill@shutemov.name
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

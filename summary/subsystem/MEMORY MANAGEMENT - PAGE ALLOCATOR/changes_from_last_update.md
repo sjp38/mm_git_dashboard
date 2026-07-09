@@ -1,75 +1,45 @@
-- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 1 -> 0 commits
-  - dropped commits
-    - 7da7d599b8a8 "mm/compaction: handle free_pages_prepare() properly in compaction_free()"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260622-handle_free_pages_prepare_in_compaction_free-v1-1-fcf3b14abcf7@nvidia.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 29 -> 28 commits
-  - series: 3 (25) -> 3 (24)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 28 -> 30 commits
+  - series: 3 (24) -> 3 (26)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 13 -> 13 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 2 commits
+    - reviewer, no role : 0 -> 1 commits
     - reviewer, reviewer: 12 -> 12 commits (no change)
-    - maintainer, nobody: 2 -> 0 commits
-  - new commits
-    - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v12. (4)
-      - 6b2491553158 "mm-page_owner-add-numa-node-filter-fix (2/4)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com
   - changed commits
-    - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v12. (4)
-      - f06d40f4ac3c "mm/page_owner: add print_mode filter (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260707115411.1714314-1-zhen.ni@easystack.cn"
-        - added "Link: https://lore.kernel.org/20260707115411.1714314-2-zhen.ni@easystack.cn"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260625043101.338794-1-zhen.ni@easystack.cn"
-        - dropped "Link: https://lore.kernel.org/20260625043101.338794-2-zhen.ni@easystack.cn"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
-        - dropped "Cc: Yichong Chen <chenyichong@uniontech.com>"
-        - dropped "Cc: Ye Liu <ye.liu@linux.dev>"
-        - dropped "Cc: Shuah Khan <skhan@linuxfoundation.org>"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260707115411.1714314-1-zhen.ni@easystack.cn
-        - Link: https://lore.kernel.org/20260707115411.1714314-2-zhen.ni@easystack.cn
-      - a0bc48bed7d1 "mm/page_owner: add NUMA node filter (1/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260707115411.1714314-3-zhen.ni@easystack.cn"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260625043101.338794-3-zhen.ni@easystack.cn"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
-        - dropped "Cc: Ye Liu <ye.liu@linux.dev>"
-        - dropped "Cc: Yichong Chen <chenyichong@uniontech.com>"
-        - dropped "Cc: Shuah Khan <skhan@linuxfoundation.org>"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260707115411.1714314-3-zhen.ni@easystack.cn
-  - dropped commits
-    - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v11. (4)
-      - e95f00169694 "mm-page_owner-add-print_mode-filter-fix (1/4)"
-        - Authored by a maintainer, reviewed by nobody
     - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
-      - abc6aebc79b5 "mm-fix-assert_exclusive_bits-by-passing-memdesc_flags_t-by-pointer-fix (7/10)"
-        - Authored by a maintainer, reviewed by nobody
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
+      - 78dcdee94f2c "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+    - series "Keep tail page private zero at free and folio split", v2. (5)
+      - 0f4c6c02eb56 "mm/compaction: stop recording free page order in page->private (1/5)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-keep-subpage-private-zero-at-free-v2-2-2970fe777dd6@nvidia.com
+      - aede92580401 "mm/page_alloc: make sure tail_page->private is zero at page free time (3/5)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-keep-subpage-private-zero-at-free-v2-4-2970fe777dd6@nvidia.com
+- mm-new: 2 -> 1 commits
+  - series: 0 (2) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, no role : 1 -> 0 commits
+  - new commits
+    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)". (10)
+      - 292bf8110db9 "mm: provide free_reserved_pages(), removing x86 variant (1/10)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-2-156ce4986598@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

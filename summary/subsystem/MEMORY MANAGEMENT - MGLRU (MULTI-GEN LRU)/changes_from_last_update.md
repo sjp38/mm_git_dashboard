@@ -1,31 +1,42 @@
-- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 10 commits
+- mm-unstable: 10 -> 7 commits
   - series: 0 (4) -> 0 (4) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - series "mm: clean up folio LRU and swap declarations", v7. (3)
-      - 72dd004511c7 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
+    - maintainer, nobody: 1 -> 0 commits
+  - changed commits
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - 78dcdee94f2c "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+- mm-new: 0 -> 3 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: clean up folio LRU and swap declarations", v9. (3)
+      - 061b68bd2ca5 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-0-a028e8b5fc3d@gmail.com
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-1-a028e8b5fc3d@gmail.com
-      - 950ba0411e25 "mm: rename swap.c to folio.c (1/3)"
+        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
+        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
+      - 018f76f79e21 "mm: rename swap.c to folio.c (1/3)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-2-a028e8b5fc3d@gmail.com
+        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-2-2bc72b4f8730@gmail.com
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - a23b1d788eac "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

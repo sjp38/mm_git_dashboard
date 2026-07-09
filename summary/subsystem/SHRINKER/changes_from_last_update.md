@@ -1,14 +1,6 @@
-- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
-- mm-hotfixes-stable: 2 -> 0 commits
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 2 -> 0 commits
-  - dropped commits
-    - 65476d31d805 "mm: shrinker: fix shrinker_info teardown race with expansion"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260617085658.27096-1-qi.zheng@linux.dev
-    - e30453c61e18 "mm: shrinker: fix NULL pointer dereference in debugfs"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260617090052.27325-1-qi.zheng@linux.dev
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)

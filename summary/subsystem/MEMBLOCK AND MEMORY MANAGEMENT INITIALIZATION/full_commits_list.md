@@ -4,45 +4,45 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 5c0e47087e38 "mm/vmstat: fold stranded per-cpu node stats when a node comes online"
+    - c4e4812dc079 "mm/vmstat: fold stranded per-cpu node stats when a node comes online"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260627202243.758289-1-gourry@gourry.net
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 10 total, 0 (10) series, 0 non-series commits
+- mm-unstable: 10 total, 0 (9) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 8 commits
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-      - 16644d533c1a "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
+      - a5f14d57aabf "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
-      - 131a7d9f5665 "mm/mm_init: simplify deferred_free_pages() migratetype init" (4/19)
+      - cf5a795ec5fb "mm/mm_init: simplify deferred_free_pages() migratetype init" (4/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-6-songmuchun@bytedance.com
-      - 7e00926fe8a8 "mm/sparse: move subsection_map_init() into sparse_init()" (6/19)
+      - a4e156a0fa6e "mm/sparse: move subsection_map_init() into sparse_init()" (6/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-8-songmuchun@bytedance.com
-      - 9eabd6c25f20 "mm/mm_init: defer sparse_init() until after zone initialization" (7/19)
+      - 361a166e8e28 "mm/mm_init: defer sparse_init() until after zone initialization" (7/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-9-songmuchun@bytedance.com
-      - c1d72e6c305a "mm/mm_init: defer hugetlb reservation until after zone initialization" (8/19)
+      - 9dab23404c22 "mm/mm_init: defer hugetlb reservation until after zone initialization" (8/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-10-songmuchun@bytedance.com
-      - 1d107e0d0402 "mm/mm_init: remove set_pageblock_order() call from sparse_init()" (9/19)
+      - c5db88b8faab "mm/mm_init: remove set_pageblock_order() call from sparse_init()" (9/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-11-songmuchun@bytedance.com
-      - e17722a0896a "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid()" (10/19)
+      - c8e7fc71fc7e "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid()" (10/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-12-songmuchun@bytedance.com
-      - 38f48d88cd7e "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
+      - 1b3d4def1e2e "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-20-songmuchun@bytedance.com
-      - 6b2a01d1a1c7 "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug" (9/10)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
-        - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
-      - be53acf87ae1 "mm: split out internal page_alloc.h" (3/18)
+    - 75f8c0ab8968 "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
+      - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
+      - d09635f847e8 "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/

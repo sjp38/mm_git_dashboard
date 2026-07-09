@@ -1,59 +1,48 @@
-- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
-- mm-hotfixes-stable: 3 -> 0 commits
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-  - dropped commits
-    - 4b0363cb1f3e "selftests/mm: fix ksft_process_madv.sh test category"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260608103224.344101-1-sarthak.sharma@arm.com
-    - dccf636bf1e6 "selftests/mm: pagemap_ioctl: use the correct page size for transact_test()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260628101118.35861-1-zenghui.yu@linux.dev
-    - fd5295afae91 "selftests/mm: hmm-tests: include linux/mman.h to access MADV_COLLAPSE"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260628143111.36863-1-zenghui.yu@linux.dev
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - a9d35f9e5e14 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
+    - no role, nobody: 1 -> 2 commits
+  - new commits
+    - 85c78ab0af51 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
       - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name"
-      - dropped "Link: https://lore.kernel.org/20260706104308.34741-1-kirill@shutemov.name"
-      - Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name
+      - Link: https://lore.kernel.org/20260708103429.150655-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 13 commits (no change)
+- mm-unstable: 13 -> 14 commits
   - series: 2 (11) -> 2 (11) (no change)
-    - no role, nobody: 3 -> 2 commits
-    - no role, no role : 6 -> 7 commits
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - c34eea8cecca "mm/page_owner: document page_owner filter"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260707115411.1714314-5-zhen.ni@easystack.cn"
-      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260625043101.338794-5-zhen.ni@easystack.cn"
-      - dropped "Cc: Ye Liu <ye.liu@linux.dev>"
-      - dropped "Cc: Liam Howlett <liam@infradead.org>"
-      - dropped "Cc: Shuah Khan <skhan@linuxfoundation.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Cc: Yichong Chen <chenyichong@uniontech.com>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Tested-by: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/20260707115411.1714314-5-zhen.ni@easystack.cn
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 46868450a52b "mm/page_owner: avoid docs build warning"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260708213548.469155-1-rdunlap@infradead.org
+- mm-new: 1 -> 5 commits
+  - series: 0 (1) -> 1 (5)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 3 commits
+    - maintainer, reviewer: 0 -> 1 commits
+  - new commits
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - 2d5f8be678b6 "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing (8/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-10-kirill@shutemov.name
+      - e81660aee3c5 "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking (10/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-12-kirill@shutemov.name
+      - b98ea84bf7c3 "Documentation/userfaultfd: document RWP working set tracking (13/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260708111417.173443-16-kirill@shutemov.name
+    - series "alloc_tag: introduce IOCTL-based filtering for MAP", v8. (6)
+      - 27ace96bf819 "alloc_tag: add ioctl to /proc/allocinfo (0/6)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/cover.1783532853.git.abhishekbapat@google.com
+        - Link: https://lore.kernel.org/15596de2607ef13e7c77c6d74763f4ae992ec475.1783532853.git.abhishekbapat@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

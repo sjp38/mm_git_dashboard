@@ -7,14 +7,14 @@
     - no role, no role : 3 commits
   - full commits list
     - series "mm/percpu: Fix possible NOFS/NOIO reclaim recursion", v4. (4 commits)
-      - d0845291ece2 "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
+      - e69c70b9cda5 "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260618130414.96383-1-kaitao.cheng@linux.dev
         - Link: https://lore.kernel.org/20260618130414.96383-2-kaitao.cheng@linux.dev
-    - d701b3f6e766 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
+    - bd78d466e5c7 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/453375c4-c3ca-4e6f-8880-0e6ff3c74ee3@web.de
-    - ce04d9e28e7a "mm/vmalloc: add alignment info in warning print as possible failure reason"
+    - bba62dfbdf83 "mm/vmalloc: add alignment info in warning print as possible failure reason"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260702112610.21589-1-feng.tang@linux.alibaba.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

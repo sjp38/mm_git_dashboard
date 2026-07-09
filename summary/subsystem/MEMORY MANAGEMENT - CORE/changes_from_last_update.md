@@ -1,48 +1,130 @@
-- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 622c8a7e5c37 "mm/util: don't read __page_2 for order-1 folios in snapshot_page()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260708201954.686111-1-aboorvad@linux.ibm.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 33 -> 33 commits (no change)
-  - series: 4 (27) -> 4 (27) (no change)
-    - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 14 -> 14 commits (no change)
+- mm-unstable: 33 -> 41 commits
+  - series: 4 (27) -> 5 (33)
+    - no role, nobody: 6 -> 5 commits
+    - no role, no role : 14 -> 22 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 8 -> 8 commits (no change)
-- mm-new: 8 -> 7 commits
-  - series: 1 (7) -> 1 (5)
-    - no role, no role : 6 -> 5 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - 9b8557f4dcf4 "mm/kconfig: drop redundant memory hotplug dependencies"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260707090331.52971-1-kaitao.cheng@linux.dev
-  - changed commits
-    - series "mm: drop redundant lru_add_drain in anon folio reuse paths", v3. (4)
-      - b3b9ad27b106 "mm: avoid unnecessary lru drain for wp_can_reuse_anon_folio() (0/4)"
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - 1c504439c6e5 "mm-fix-assert_exclusive_bits-by-passing-memdesc_flags_t-by-pointer-fix (7/10)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Baoquan He <baoquan.he@linux.dev>"
-        - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
+        - Link: https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev
+    - series "mm: drop redundant lru_add_drain in anon folio reuse paths", v3. (4)
+      - 0c049269496c "mm: rename in_lru_cache to maybe_in_lru_cache (1/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260708145718.82690-1-baohua@kernel.org
+  - changed commits
+    - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (6)
+      - 65ad74e64e12 "Documentation: document panic_on_unrecoverable_memory_failure sysctl (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Miaohe Lin <linmiaohe@huawei.com>"
+        - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-5-c6ed5b62eea2@debian.org
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - 78dcdee94f2c "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+    - series "Keep tail page private zero at free and folio split", v2. (5)
+      - ba2a97d37257 "mm/page_alloc: remove set_page_private() in prep_compound_tail() (4/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260703-keep-subpage-private-zero-at-free-v2-5-2970fe777dd6@nvidia.com
+    - series "mm: drop redundant lru_add_drain in anon folio reuse paths", v3. (4)
+      - 74c15533463a "mm: avoid unnecessary lru drain for wp_can_reuse_anon_folio() (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260701235955.36126-1-baohua@kernel.org
         - Link: https://lore.kernel.org/20260701235955.36126-2-baohua@kernel.org
-  - dropped commits
-    - series "mm: clean up folio LRU and swap declarations", v7. (3)
-      - 950ba0411e25 "mm: rename swap.c to folio.c (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-2-a028e8b5fc3d@gmail.com
-      - 5eec9afb12c2 "mm: move reclaim-internal declarations out of swap.h (2/3)"
+      - 7ac185f04fb7 "mm: drop stale folio_ref_count()==1 check in do_swap_page reuse logic (2/4)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-3-a028e8b5fc3d@gmail.com
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260701235955.36126-3-baohua@kernel.org
+        - Link: https://lore.kernel.org/all/20251220-swap-table-p2-v5-0-8862a265a033@tencent.com/ [1]
+      - a65c19f5ac52 "mm-drop-stale-folio_ref_count==1-check-in-do_swap_page-reuse-logic-fix (3/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/3a185a5d-2f2c-4e9d-9cd9-8bdb236dfc5c@kernel.org
+    - 0411151ca800 "mm: entirely remove lru_add_drain in do_swap_page"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260701235955.36126-4-baohua@kernel.org
+    - 3153587ed707 "mm: clarify the folio_free_swap() for do_swap_page()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260701235955.36126-5-baohua@kernel.org
+- mm-new: 7 -> 16 commits
+  - series: 1 (5) -> 1 (15)
+    - no role, nobody: 0 -> 4 commits
+    - no role, no role : 5 -> 8 commits
+    - no role, reviewer: 1 -> 4 commits
+    - maintainer, nobody: 1 -> 0 commits
+  - new commits
+    - series "mm: clean up folio LRU and swap declarations", v9. (3)
+      - 018f76f79e21 "mm: rename swap.c to folio.c (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-2-2bc72b4f8730@gmail.com
+      - 39cd26c7b41e "mm: move reclaim-internal declarations out of swap.h (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-3-2bc72b4f8730@gmail.com
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - aa4041d7fba3 "mm: decouple protnone helpers from CONFIG_NUMA_BALANCING (0/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260708111417.173443-2-kirill@shutemov.name
+      - a23b1d788eac "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - 6176711d7be0 "mm: add VM_UFFD_RWP VMA flag (4/15)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260708111417.173443-6-kirill@shutemov.name
+      - f0a0242ff4b1 "mm: add MM_CP_UFFD_RWP change_protection() flag (5/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
+      - bdbd84232e4e "mm: preserve RWP marker across PTE rewrites (6/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
+      - 8f821554e1ff "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP (7/15)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260708111417.173443-9-kirill@shutemov.name
+      - 2d5f8be678b6 "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing (8/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-10-kirill@shutemov.name
+      - 5cd6eed7b007 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP (9/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
+      - e1da89ce86ce "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution (11/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
+    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)". (10)
+      - 292bf8110db9 "mm: provide free_reserved_pages(), removing x86 variant (1/10)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-2-156ce4986598@kernel.org
+      - c157fd3dd0c9 "x86/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (6/10)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-7-156ce4986598@kernel.org
+      - fc506ea2ad33 "mm/sparse: remove bootmem_info.h include (8/10)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-9-156ce4986598@kernel.org
+      - 2c6f04504a1f "mm/bootmem_info: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (9/10)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-10-156ce4986598@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 1 -> 2 commits
+- mm-nonmm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
-  - new commits
-    - d95bf79a4baa "kernel/fork: declare max_threads __read_mostly"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260707092354.465847-1-jansef.jian@hj-micro.com
+    - no role, nobody: 2 -> 2 commits (no change)

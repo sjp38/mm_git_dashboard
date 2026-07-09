@@ -1,31 +1,38 @@
-- baseline: v7.2-rc1 -> v7.2-rc2-22-g0e35b9b6ec0ff
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 9 commits
-  - series: 1 (2) -> 1 (3)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, reviewer: 1 -> 2 commits
-    - maintainer, nobody: 0 -> 1 commits
-- mm-new: 3 -> 1 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 9 -> 5 commits
+  - series: 1 (3) -> 1 (2)
     - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - series "mm: clean up folio LRU and swap declarations", v7. (3)
-      - 72dd004511c7 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - reviewer, reviewer: 2 -> 1 commits
+    - maintainer, nobody: 1 -> 0 commits
+- mm-new: 1 -> 5 commits
+  - series: 0 (0) -> 1 (4)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 3 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: clean up folio LRU and swap declarations", v9. (3)
+      - 061b68bd2ca5 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-0-a028e8b5fc3d@gmail.com
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-1-a028e8b5fc3d@gmail.com
-      - 5eec9afb12c2 "mm: move reclaim-internal declarations out of swap.h (2/3)"
+        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
+        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
+      - 39cd26c7b41e "mm: move reclaim-internal declarations out of swap.h (2/3)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260705-ch-swap-series-plus-folio-lru-cleanup-v7-3-a028e8b5fc3d@gmail.com
+        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-3-2bc72b4f8730@gmail.com
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - a23b1d788eac "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - bdbd84232e4e "mm: preserve RWP marker across PTE rewrites (6/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
