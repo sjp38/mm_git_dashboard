@@ -3,6 +3,12 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+      - 444559520350 "mm: split out vmalloc declarations from internal.h" (2/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

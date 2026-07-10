@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - ff80b05335a0 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 5b14c0bed080 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

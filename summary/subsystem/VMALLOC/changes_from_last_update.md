@@ -8,8 +8,29 @@
 - mm-unstable: 3 -> 3 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 5 commits
+  - series: 0 (0) -> 0 (5)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 3 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: split a couple of headers from internal.h", v2. (3)
+      - 444559520350 "mm: split out vmalloc declarations from internal.h (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
+    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v6. (6)
+      - 69e992749b54 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260709073823.6643-4-jiangwen6@xiaomi.com
+      - b6b06d993f9f "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260709073823.6643-5-jiangwen6@xiaomi.com
+      - 242c72cb6e52 "mm/vmalloc: map contiguous pages in batches for vmap() if possible (4/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260709073823.6643-6-jiangwen6@xiaomi.com
+      - e0a1ef352d4a "mm/vmalloc: align vm_area so vmap() can batch mappings (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260709073823.6643-7-jiangwen6@xiaomi.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

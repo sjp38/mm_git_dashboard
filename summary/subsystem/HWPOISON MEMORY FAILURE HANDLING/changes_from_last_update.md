@@ -1,9 +1,15 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - e57d6e9e20b5 "mm/memory-failure: trace: change memory_failure_event to ras subsystem"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260605081213.154660-1-xieyuanbin1@huawei.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 6 -> 6 commits (no change)

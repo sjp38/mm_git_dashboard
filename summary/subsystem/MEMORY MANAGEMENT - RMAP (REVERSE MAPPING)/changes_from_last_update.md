@@ -1,29 +1,40 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - f84ca9b1888d "mm/page_vma_mapped: fix device-private PMD handling"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - added "Cc: <stable@vger.kernel.org>q"
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - Link: https://lore.kernel.org/20260630021540.17297-1-richard.weiyang@gmail.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 0 (6) -> 0 (6) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+- mm-unstable: 6 -> 8 commits
+  - series: 0 (6) -> 0 (8)
+    - no role, no role : 3 -> 4 commits
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-new: 1 -> 3 commits
-  - series: 0 (1) -> 0 (3)
-    - no role, no role : 1 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - a23b1d788eac "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+      - 1984722882e8 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 8f821554e1ff "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP (7/15)"
+      - 34787cf85a10 "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP (7/15)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260708111417.173443-9-kirill@shutemov.name
+- mm-new: 3 -> 1 commits
+  - series: 0 (3) -> 0 (1)
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

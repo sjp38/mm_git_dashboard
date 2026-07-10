@@ -8,9 +8,18 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+- mm-new: 2 -> 4 commits
+  - series: 1 (2) -> 2 (4)
+    - no role, no role : 2 -> 4 commits
+  - new commits
+    - series "KSM: use linear_page_index in collect_procs_ksm()", v2. (2)
+      - af9f0159ed86 "mm/ksm: Initialize the addr only once in collect_procs_ksm (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260709173212190rZdwynySRyLr9EtPuXBRU@zte.com.cn
+        - Link: https://lore.kernel.org/all/20260703162253688u8Str9eFLR8TGCmo7nIOF@zte.com.cn/ [1]
+      - 6bd3b21850fc "ksm: Use precise linear_page_index instead of the whole address space (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260709173312403qgj1Af6pRkFMDSsmc19sM@zte.com.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

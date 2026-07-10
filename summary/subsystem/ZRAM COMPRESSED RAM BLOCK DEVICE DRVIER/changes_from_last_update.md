@@ -7,14 +7,7 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - b28208038e98 "docs: ABI: zram: fix spelling mistakes"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Sergey Senozhatsky <senozhatsky@chromium.org>"
-      - dropped "Cc: Sergey Senozhatsky <senozhatsky@chromium.org>"
-      - Link: https://lore.kernel.org/20260707165131.4408-1-rahularukonda2@gmail.com
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

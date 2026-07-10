@@ -6,24 +6,32 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 8b298ecc9f8c "mm: remove PageTransCompound()"
+    - d8ac1f6cd556 "mm: remove PageTransCompound()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260618113523.3913307-1-wangkefeng.wang@huawei.com
-- mm-new: 2 total, 1 (2) series, 0 non-series commits
+- mm-new: 4 total, 2 (4) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
+    - no role, no role : 4 commits
   - full commits list
     - series "KSM: performance optimizations for rmap_walk_ksm", v11. (3 commits)
-      - 39aa87c27cdb "ksm: add linear_page_index into ksm_rmap_item" (0/3)
+      - 1e047a3fb85c "ksm: add linear_page_index into ksm_rmap_item" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703162253688u8Str9eFLR8TGCmo7nIOF@zte.com.cn
         - Link: https://lore.kernel.org/20260703162357853iIa-RP7if9hRlAIuTh5La@zte.com.cn
         - Link: https://lore.kernel.org/all/adTPQSb-qSSHviJN@lucifer/ [1]
         - Link: https://lore.kernel.org/all/202604091806051535BJWZ_FTtdIm3Snk24ei_@zte.com.cn/ [2]
-      - 946bac519ef7 "ksm: optimize rmap_walk_ksm by passing a suitablepage index" (1/3)
+      - e87136601f82 "ksm: optimize rmap_walk_ksm by passing a suitablepage index" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703162510242nxmjbcLy5ccp1dbZSK3EU@zte.com.cn
         - Link: https://lore.kernel.org/all/202605301703094695zmVgcSC27BNR0rH0N8_x@zte.com.cn [1]
         - Link: https://lore.kernel.org/all/20260530170404509QpJmBtpSjn3uQHeVKA2iA@zte.com.cn/ [2]
+    - series "KSM: use linear_page_index in collect_procs_ksm()", v2. (2 commits)
+      - af9f0159ed86 "mm/ksm: Initialize the addr only once in collect_procs_ksm" (0/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260709173212190rZdwynySRyLr9EtPuXBRU@zte.com.cn
+        - Link: https://lore.kernel.org/all/20260703162253688u8Str9eFLR8TGCmo7nIOF@zte.com.cn/ [1]
+      - 6bd3b21850fc "ksm: Use precise linear_page_index instead of the whole address space" (1/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260709173312403qgj1Af6pRkFMDSsmc19sM@zte.com.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

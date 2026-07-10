@@ -7,10 +7,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 2 commits (no change)
+- mm-new: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
+    - reviewer, no role : 0 -> 1 commits
+  - new commits
+    - 1e46e858250c "mm/gup: fix GUP-fast fallback for NULL-mapping order-0 folios"
+      - Authored by a reviewer, reviewed by no role player
+      - Link: https://lore.kernel.org/20260708005745.164928-1-jhubbard@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

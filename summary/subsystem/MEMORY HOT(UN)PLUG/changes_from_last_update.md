@@ -7,11 +7,18 @@
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (1)
+  - series: 0 (1) -> 0 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: split a couple of headers from internal.h", v2. (3)
+      - ffc5c58b07dd "mm: split out mm_init and memblock declarations from internal.h (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

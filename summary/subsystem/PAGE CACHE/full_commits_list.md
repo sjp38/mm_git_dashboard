@@ -8,16 +8,16 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm/filemap: reduce unnecessary xarray lookups". (2 commits)
-      - 45cb53cfbb16 "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
+      - b26225c66fff "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-2-chizhiling@163.com
-      - 5fec2a824efc "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
+      - 0eb2a6bfd7f3 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-3-chizhiling@163.com
-    - e873f8174dd7 "writeback.h: fix a typo in the wbc_init_bio() description"
+    - 53be7ec90cfe "writeback.h: fix a typo in the wbc_init_bio() description"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260615162244.2170866-2-willy@infradead.org
-    - f98ffd46eaa9 "mm: fix mapping_seek_hole_data() overflow on last page"
+    - 41b9b3965266 "mm: fix mapping_seek_hole_data() overflow on last page"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260630125047.703170-1-yanzhen20011121@163.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,9 +1,16 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 79c37ae3733e "mm/kmemleak: fix checksum computation for per-cpu objects"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/all/akfYImSNDh3OjIfR@gmail.com [0]
+      - Link: https://lore.kernel.org/20260703-kmemleak_checksum-v1-1-5e0ab7d6966f@debian.org
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 4 -> 4 commits (no change)

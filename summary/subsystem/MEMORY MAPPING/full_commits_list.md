@@ -4,84 +4,80 @@
   - author/reviewer role stat
     - no role, nobody: 2 commits
   - full commits list
-    - a0be93b713d7 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
+    - 8bf7d9b5972a "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name
-    - 85c78ab0af51 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
+    - b0ddd5656d80 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260708103429.150655-1-kirill@shutemov.name
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 10 total, 1 (6) series, 4 non-series commits
+- mm-unstable: 16 total, 1 (11) series, 5 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 2 commits
-    - no role, reviewer: 3 commits
+    - no role, nobody: 3 commits
+    - no role, no role : 6 commits
+    - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
     - maintainer, nobody: 2 commits
   - full commits list
-      - efff9bf71eb6 "mm/mprotect: drop 'sub' from batching context" (1/2)
+      - bdaf120a3df1 "mm/mprotect: drop 'sub' from batching context" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260623125723.2503832-3-dev.jain@arm.com
     - series "mm: convert to walk_page_range_vma() to eliminate find_vma()", v2. (4 commits)
-      - a89e95bf1722 "mm: mincore: use walk_page_range_vma() in do_mincore()" (0/4)
+      - c068b7404ede "mm: mincore: use walk_page_range_vma() in do_mincore()" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260618092845.3905740-1-wangkefeng.wang@huawei.com
         - Link: https://lore.kernel.org/20260618092845.3905740-2-wangkefeng.wang@huawei.com
-      - 6a69bc488a86 "mm-mincore-use-walk_page_range_vma-in-do_mincore-fix" (1/4)
+      - 4743a05d63f3 "mm-mincore-use-walk_page_range_vma-in-do_mincore-fix" (1/4)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/ajP9bQhmvR9OX0VE@pedro-suse
-      - b4fd1a317174 "mm: mprotect: use walk_page_range_vma() in mprotect_fixup()" (2/4)
+      - 2fdfcc2cb060 "mm: mprotect: use walk_page_range_vma() in mprotect_fixup()" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260618092845.3905740-3-wangkefeng.wang@huawei.com
-      - e49a7a4c0c3c "mm: mlock: use walk_page_range_vma() in mlock_vma_pages_range()" (3/4)
+      - c0adcf244280 "mm: mlock: use walk_page_range_vma() in mlock_vma_pages_range()" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260618092845.3905740-4-wangkefeng.wang@huawei.com
-      - 4cbdd7118f98 "fs/proc: use softleaf_has_pfn() in pagemap PMD walker" (2/6)
+      - eceb4e827544 "fs/proc: use softleaf_has_pfn() in pagemap PMD walker" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260706114320.1643046-4-usama.arif@linux.dev
-    - 2b237537dab0 "mm/mprotect: use huge_ptep_get() for hugetlb"
+    - fb5ba85057e9 "mm/mprotect: use huge_ptep_get() for hugetlb"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260703114202.365553-7-dev.jain@arm.com
-    - 893f0b93a9bc "mm-mprotect-use-huge_ptep_get-for-hugetlb-fix"
+    - 11aa92e60ae5 "mm-mprotect-use-huge_ptep_get-for-hugetlb-fix"
       - Authored by a maintainer, reviewed by nobody
-    - 5e24753fe92a "mm: nommu: add sysctl_max_map_count() check for do_mmap()"
+    - a335b94cf5a9 "mm: nommu: add sysctl_max_map_count() check for do_mmap()"
       - Authored by no role player, reviewed by nobody
       - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/munmap/munmap04.c
       - Link: https://lore.kernel.org/20260702012830.667205-1-thehajime@gmail.com
-    - 27aed18fa0fc "mm: nommu: point to the write iterator upon split_vma"
+    - e39874082047 "mm: nommu: point to the write iterator upon split_vma"
       - Authored by no role player, reviewed by nobody
       - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/mseal/mseal02.c
       - Link: https://lore.kernel.org/20260702012546.665383-1-thehajime@gmail.com
-- mm-new: 7 total, 0 (6) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 4 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 1cfb259b2408 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
-      - a23b1d788eac "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 1984722882e8 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 6176711d7be0 "mm: add VM_UFFD_RWP VMA flag" (4/15)
+      - b0226b6018a1 "mm: add VM_UFFD_RWP VMA flag" (4/15)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260708111417.173443-6-kirill@shutemov.name
-      - f0a0242ff4b1 "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
+      - 319abdf1fc8f "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
-      - bdbd84232e4e "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - 282eabedf828 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - e81660aee3c5 "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking" (10/15)
+      - 7158e095bf78 "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking" (10/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-12-kirill@shutemov.name
-      - 131fba044cb7 "mm: nommu: fix the error path when vma_iter_prealloc() fails" (14/15)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://sashiko.dev/#/patchset/20260702012830.667205-1-thehajime%40gmail.com
-        - Link: https://sashiko.dev/#/patchset/c8513ee5aa8444ec9bf6c276043c9f833016a2fa.1783304131.git.thehajime%40gmail.com
-        - Link: https://sashiko.dev/#/patchset/20260707235137.498738-1-thehajime%40gmail.com
-        - Link: https://lore.kernel.org/20260708083829.576036-1-thehajime@gmail.com
+    - 4a6c88e10a07 "mm: nommu: fix the error path when vma_iter_prealloc() fails"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260708083829.576036-1-thehajime@gmail.com
+      - Link: https://sashiko.dev/#/patchset/20260702012830.667205-1-thehajime%40gmail.com
+      - Link: https://sashiko.dev/#/patchset/c8513ee5aa8444ec9bf6c276043c9f833016a2fa.1783304131.git.thehajime%40gmail.com
+      - Link: https://sashiko.dev/#/patchset/20260707235137.498738-1-thehajime%40gmail.com
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - d0d3d08cf05a "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

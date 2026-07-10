@@ -7,15 +7,8 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 4 -> 4 commits (no change)
   - series: 0 (4) -> 0 (4) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
-      - 78dcdee94f2c "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer (6/10)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

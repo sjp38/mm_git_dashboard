@@ -1,56 +1,74 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
-  - new commits
-    - 85c78ab0af51 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
+    - no role, nobody: 2 -> 2 commits (no change)
+  - changed commits
+    - b0ddd5656d80 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260708103429.150655-1-kirill@shutemov.name
+      - dropped "Signed-off-by: Kiryl Shutsemau <kas@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260708103429.150655-1-kirill@shutemov.name"
+      - dropped "Fixes: 2bad466cc9d9 ("mm/uffd: UFFD_FEATURE_WP_UNPOPULATED")"
+      - dropped "Cc: Muhammad Usama Anjum <usama.anjum@collabora.com>"
+      - dropped "Cc: Peter Xu <peterx@redhat.com>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Cc: Jann Horn <jannh@google.com>"
+      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+      - dropped "Cc: Peter Xu <peterx@redhat.com>"
+      - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - dropped "Assisted-by: Claude:claude-fable-5"
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 10 commits
-  - series: 1 (6) -> 1 (6) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 2 -> 1 commits
+- mm-unstable: 10 -> 16 commits
+  - series: 1 (6) -> 1 (11)
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 2 -> 6 commits
+    - no role, reviewer: 3 -> 4 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-new: 0 -> 7 commits
-  - series: 0 (0) -> 0 (6)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 4 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - a23b1d788eac "mm: rename uffd-wp PTE accessors to uffd (2/15)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 6176711d7be0 "mm: add VM_UFFD_RWP VMA flag (4/15)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260708111417.173443-6-kirill@shutemov.name
-      - f0a0242ff4b1 "mm: add MM_CP_UFFD_RWP change_protection() flag (5/15)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
-      - bdbd84232e4e "mm: preserve RWP marker across PTE rewrites (6/15)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - e81660aee3c5 "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking (10/15)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260708111417.173443-12-kirill@shutemov.name
-      - 131fba044cb7 "mm: nommu: fix the error path when vma_iter_prealloc() fails (14/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://sashiko.dev/#/patchset/20260702012830.667205-1-thehajime%40gmail.com
-        - Link: https://sashiko.dev/#/patchset/c8513ee5aa8444ec9bf6c276043c9f833016a2fa.1783304131.git.thehajime%40gmail.com
-        - Link: https://sashiko.dev/#/patchset/20260707235137.498738-1-thehajime%40gmail.com
-        - Link: https://lore.kernel.org/20260708083829.576036-1-thehajime@gmail.com
   - changed commits
-    - 1cfb259b2408 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-new
-      - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - 1984722882e8 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - b0226b6018a1 "mm: add VM_UFFD_RWP VMA flag (4/15)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260708111417.173443-6-kirill@shutemov.name
+      - 319abdf1fc8f "mm: add MM_CP_UFFD_RWP change_protection() flag (5/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
+      - 282eabedf828 "mm: preserve RWP marker across PTE rewrites (6/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
+      - 7158e095bf78 "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking (10/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260708111417.173443-12-kirill@shutemov.name
+    - 4a6c88e10a07 "mm: nommu: fix the error path when vma_iter_prealloc() fails"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260708083829.576036-1-thehajime@gmail.com
+      - Link: https://sashiko.dev/#/patchset/20260702012830.667205-1-thehajime%40gmail.com
+      - Link: https://sashiko.dev/#/patchset/c8513ee5aa8444ec9bf6c276043c9f833016a2fa.1783304131.git.thehajime%40gmail.com
+      - Link: https://sashiko.dev/#/patchset/20260707235137.498738-1-thehajime%40gmail.com
+- mm-new: 7 -> 1 commits
+  - series: 0 (6) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 4 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

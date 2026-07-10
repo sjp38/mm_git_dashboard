@@ -7,16 +7,36 @@
     - no role, no role : 3 commits
   - full commits list
     - series "mm/percpu: Fix possible NOFS/NOIO reclaim recursion", v4. (4 commits)
-      - e69c70b9cda5 "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
+      - 6a7c919c5b3e "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260618130414.96383-1-kaitao.cheng@linux.dev
         - Link: https://lore.kernel.org/20260618130414.96383-2-kaitao.cheng@linux.dev
-    - bd78d466e5c7 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
+    - f2210b03d887 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/453375c4-c3ca-4e6f-8880-0e6ff3c74ee3@web.de
-    - bba62dfbdf83 "mm/vmalloc: add alignment info in warning print as possible failure reason"
+    - 23ca3af434e4 "mm/vmalloc: add alignment info in warning print as possible failure reason"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260702112610.21589-1-feng.tang@linux.alibaba.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 5 total, 0 (5) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 3 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+      - 444559520350 "mm: split out vmalloc declarations from internal.h" (2/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
+      - 69e992749b54 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260709073823.6643-4-jiangwen6@xiaomi.com
+      - b6b06d993f9f "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260709073823.6643-5-jiangwen6@xiaomi.com
+      - 242c72cb6e52 "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (4/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260709073823.6643-6-jiangwen6@xiaomi.com
+      - e0a1ef352d4a "mm/vmalloc: align vm_area so vmap() can batch mappings" (5/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260709073823.6643-7-jiangwen6@xiaomi.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

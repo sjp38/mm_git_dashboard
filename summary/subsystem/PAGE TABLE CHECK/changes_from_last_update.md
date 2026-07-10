@@ -5,16 +5,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (1)
     - no role, no role : 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - a23b1d788eac "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+      - 1984722882e8 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
