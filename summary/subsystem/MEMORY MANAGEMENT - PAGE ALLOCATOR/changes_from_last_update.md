@@ -1,59 +1,35 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - 47c81dadb704 "mm: page_reporting: allow driver to set batch capacity"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/444c24cf39f3f3620fc90ef4695bd6b0979f4c4b.1783232420.git.mst@redhat.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 30 -> 30 commits (no change)
-  - series: 3 (26) -> 3 (26) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-unstable: 30 -> 31 commits
+  - series: 3 (26) -> 3 (27)
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 13 -> 13 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 2 -> 1 commits
-    - reviewer, no role : 1 -> 2 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 12 -> 12 commits (no change)
   - changed commits
     - series "Keep tail page private zero at free and folio split", v3. (5)
-      - dc8ab655c153 "mm/compaction: stop recording free page order in page->private (1/5)"
+      - 660b258191f5 "mm/page_alloc: make sure tail_page->private is zero at page free time (3/5)"
         - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-2-7e4fe155f5b9@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260703-keep-subpage-private-zero-at-free-v2-2-2970fe777dd6@nvidia.com"
-        - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-2-7e4fe155f5b9@nvidia.com
-      - 479edfabe31e "mm/page_alloc: make sure tail_page->private is zero at page free time (3/5)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-4-7e4fe155f5b9@nvidia.com"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260703-keep-subpage-private-zero-at-free-v2-4-2970fe777dd6@nvidia.com"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
         - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-4-7e4fe155f5b9@nvidia.com
-- mm-new: 1 -> 2 commits
-  - series: 0 (1) -> 1 (2)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - series "mm: split a couple of headers from internal.h", v2. (3)
-      - ffc5c58b07dd "mm: split out mm_init and memblock declarations from internal.h (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-  - changed commits
     - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)". (10)
-      - bf1744fb3649 "mm: provide free_reserved_pages(), removing x86 variant (1/10)"
+      - a3fe1b83430f "mm: provide free_reserved_pages(), removing x86 variant (1/10)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Muchun Song <muchun.song@linux.dev>"
-        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-2-156ce4986598@kernel.org
+- mm-new: 2 -> 1 commits
+  - series: 1 (2) -> 1 (1)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

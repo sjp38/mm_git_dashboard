@@ -4,30 +4,30 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 198e0efeba02 "mm: mglru: fix stale batch updates after memcg reparenting"
+    - eac685ad0526 "mm: mglru: fix stale batch updates after memcg reparenting"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260701075251.56413-1-qi.zheng@linux.dev
+      - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 5 total, 1 (3) series, 2 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 4 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 5b14c0bed080 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 8e21c35662e8 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - c2b2abfab7aa "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
+    - 285300d167a5 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
-      - 8b10392bdf8a "memcg: bail out proactive reclaim when memcg is dying" (2/4)
+      - 0083419454da "memcg: bail out proactive reclaim when memcg is dying" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
-      - 573e4d658a62 "mm: split out internal page_alloc.h" (3/18)
+      - e01127b698de "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
     - series "mm: clean up folio LRU and swap declarations", v9. (3 commits)
-      - 05fdbcc07574 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - 7eb07cf7d515 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com

@@ -1,40 +1,51 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - f84ca9b1888d "mm/page_vma_mapped: fix device-private PMD handling"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - added "Cc: <stable@vger.kernel.org>q"
-      - dropped "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/20260630021540.17297-1-richard.weiyang@gmail.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 8 commits
-  - series: 0 (6) -> 0 (8)
-    - no role, no role : 3 -> 4 commits
-    - no role, reviewer: 0 -> 1 commits
+- mm-unstable: 8 -> 8 commits (no change)
+  - series: 0 (8) -> 0 (8) (no change)
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - 1984722882e8 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 34787cf85a10 "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP (7/15)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708111417.173443-9-kirill@shutemov.name
-- mm-new: 3 -> 1 commits
-  - series: 0 (3) -> 0 (1)
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 1 -> 0 commits
+- mm-new: 1 -> 9 commits
+  - series: 0 (1) -> 1 (9)
+    - no role, no role : 1 -> 1 commits (no change)
+    - reviewer, no role : 0 -> 3 commits
+    - reviewer, reviewer: 0 -> 3 commits
+    - maintainer, no role : 0 -> 2 commits
+  - new commits
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 11b2e6d8953a "mm: move vma_start_pgoff() into mm.h and clean up (0/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-0-2a5aa403d977@kernel.org
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-1-2a5aa403d977@kernel.org
+      - cd62f71468f0 "mm/rmap: update mm/interval_tree.c comments (4/33)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-5-2a5aa403d977@kernel.org
+      - 7f0c2e30e6f1 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
+      - c996c6175bb9 "mm/rmap: elide unnecessary static inline's in interval_tree.c (6/33)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-7-2a5aa403d977@kernel.org
+      - dc645a508c3e "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
+      - 50006a73d27d "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
+      - 6becec942651 "mm/rmap: rename anon_vma_interval_tree_*() params and use pgoff_t (9/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-10-2a5aa403d977@kernel.org
+      - c8bfa1c7eca2 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

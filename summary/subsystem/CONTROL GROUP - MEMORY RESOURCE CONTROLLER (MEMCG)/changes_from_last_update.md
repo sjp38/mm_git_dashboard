@@ -1,8 +1,15 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - eac685ad0526 "mm: mglru: fix stale batch updates after memcg reparenting"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev"
+      - dropped "Link: https://lore.kernel.org/20260701075251.56413-1-qi.zheng@linux.dev"
+      - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)
@@ -10,8 +17,13 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 4e79d39c1ad4 "memcg: move mem_cgroup_swappiness to memcontrol.h"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260710111224.2355668-1-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

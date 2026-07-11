@@ -7,36 +7,46 @@
     - no role, no role : 3 commits
   - full commits list
     - series "mm/percpu: Fix possible NOFS/NOIO reclaim recursion", v4. (4 commits)
-      - 6a7c919c5b3e "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
+      - 26d3891b6ae1 "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260618130414.96383-1-kaitao.cheng@linux.dev
         - Link: https://lore.kernel.org/20260618130414.96383-2-kaitao.cheng@linux.dev
-    - f2210b03d887 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
+    - e30bab78a67a "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/453375c4-c3ca-4e6f-8880-0e6ff3c74ee3@web.de
-    - 23ca3af434e4 "mm/vmalloc: add alignment info in warning print as possible failure reason"
+    - db229d9d2c73 "mm/vmalloc: add alignment info in warning print as possible failure reason"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260702112610.21589-1-feng.tang@linux.alibaba.com
-- mm-new: 5 total, 0 (5) series, 0 non-series commits
+- mm-new: 7 total, 1 (7) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 3 commits
     - no role, maintainer: 1 commits
+    - reviewer, nobody: 1 commits
   - full commits list
-      - 444559520350 "mm: split out vmalloc declarations from internal.h" (2/3)
+      - 91de6a7ffddc "mm: split out vmalloc declarations from internal.h" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-      - 69e992749b54 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/6)
+      - 23de7da65462 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260709073823.6643-4-jiangwen6@xiaomi.com
-      - b6b06d993f9f "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/6)
+      - 090c7f299bfd "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260709073823.6643-5-jiangwen6@xiaomi.com
-      - 242c72cb6e52 "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (4/6)
+      - 2f030899bfaa "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (4/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260709073823.6643-6-jiangwen6@xiaomi.com
-      - e0a1ef352d4a "mm/vmalloc: align vm_area so vmap() can batch mappings" (5/6)
+      - 242857db4cd1 "mm/vmalloc: align vm_area so vmap() can batch mappings" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260709073823.6643-7-jiangwen6@xiaomi.com
+    - series "mm: fix UAF caused by race between ptdump and vmap". (2 commits)
+      - 50eab481d14c "mm/vmalloc: acquire init_mm read lock on huge vmap promotion" (0/2)
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260710-series-vmap-race-fix-v1-0-5b3794c113fe@kernel.org
+        - Link: https://lore.kernel.org/20260710-series-vmap-race-fix-v1-1-5b3794c113fe@kernel.org
+        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
+      - fcba32f37615 "Revert "arm64: Enable vmalloc-huge with ptdump"" (1/2)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260710-series-vmap-race-fix-v1-2-5b3794c113fe@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

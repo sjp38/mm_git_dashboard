@@ -11,22 +11,10 @@
     - no role, no role : 8 -> 8 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 3 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 2 commits
-  - new commits
-    - series "mm: split a couple of headers from internal.h", v2. (3)
-      - ffc5c58b07dd "mm: split out mm_init and memblock declarations from internal.h (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - 6cb5db509ab5 "mm: split out sparse declarations from internal.h (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-2-695631425968@kernel.org
-      - 444559520350 "mm: split out vmalloc declarations from internal.h (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
+- mm-new: 3 -> 3 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

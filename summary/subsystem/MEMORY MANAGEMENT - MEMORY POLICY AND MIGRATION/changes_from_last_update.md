@@ -3,41 +3,31 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, reviewer: 1 -> 2 commits
-  - changed commits
-    - 06b98ded252a "mm: migrate_device: fix pte_pfn/pte_dirty called on non-present PTE"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/20260708003955.4024340-1-wangkefeng.wang@huawei.com"
-      - added "Fixes: 6c287605fd56 ("mm: remember exclusively mapped anonymous pages with PG_anon_exclusive")"
-      - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
-      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Fixes: a3589e1d5fe3 ("mm/migrate_device.c: add missing flush_cache_page()")"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/20260708003955.4024340-1-wangkefeng.wang@huawei.com
-      - Link: https://lore.kernel.org/20260706111958.3649651-1-wangkefeng.wang@huawei.com
+    - no role, reviewer: 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 16 -> 18 commits
-  - series: 2 (14) -> 2 (16)
+- mm-unstable: 18 -> 18 commits (no change)
+  - series: 2 (16) -> 2 (16) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 3 commits
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
-  - changed commits
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - 1984722882e8 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 282eabedf828 "mm: preserve RWP marker across PTE rewrites (6/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-- mm-new: 2 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - cee9092b80c1 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+    - series "mm: handle device-private PMDs in walk callbacks", v3. (3)
+      - 0c018d9f054a "mm/mempolicy: skip non-present PMDs when queueing folios (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260710105557.1987433-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260710105557.1987433-2-usama.arif@linux.dev
+        - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

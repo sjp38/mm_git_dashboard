@@ -11,8 +11,13 @@
     - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
     - maintainer, nobody: 2 commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 27 total, 1 (26) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
+    - reviewer, no role : 2 commits
+    - reviewer, reviewer: 6 commits
+    - reviewer, maintainer: 1 commits
+    - maintainer, no role : 5 commits
+    - maintainer, reviewer: 12 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

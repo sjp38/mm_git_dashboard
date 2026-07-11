@@ -8,6 +8,16 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - ad6f0b118651 "mm/zswap: use ratelimited stats flush in zswap_shrinker_count()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Nhat Pham <nphamcs@gmail.com>"
+      - dropped "Cc: Nhat Pham <nphamcs@gmail.com>"
+      - Link: https://lore.kernel.org/20260702180908.150136-1-yunzhao@cloudflare.com
+      - Link: https://lore.kernel.org/linux-mm/20231206103935.3440502-1-zhouchengming@bytedance.com/ [1]
+      - Link: https://lore.kernel.org/linux-mm/CALvZod7LFxLCxVpOFH8b2Ppm8T40HPGMKQwX_=NPCWB_mFW+oQ@mail.gmail.com/ [2]
+      - Link: https://lore.kernel.org/linux-mm/CAJD7tkYvFyOSX+rP_FKGBhxvZiCDxtpsNp-c5CGOA-4Bq9oXSg@mail.gmail.com/ [3]
+      - Link: https://lore.kernel.org/linux-mm/172616070094.2055617.17676042522679701515.stgit@firesoul/ [4]
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

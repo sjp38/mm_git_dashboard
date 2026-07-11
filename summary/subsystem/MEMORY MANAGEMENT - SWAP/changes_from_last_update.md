@@ -5,36 +5,19 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 9 commits
-  - series: 1 (2) -> 2 (6)
-    - no role, no role : 0 -> 3 commits
-    - no role, maintainer: 4 -> 5 commits
+- mm-unstable: 9 -> 9 commits (no change)
+  - series: 2 (6) -> 2 (6) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: clean up folio LRU and swap declarations", v9. (3)
-      - 05fdbcc07574 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-      - 548aec8171a2 "mm: move reclaim-internal declarations out of swap.h (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-3-2bc72b4f8730@gmail.com
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - 1984722882e8 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 282eabedf828 "mm: preserve RWP marker across PTE rewrites (6/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-- mm-new: 5 -> 1 commits
-  - series: 1 (4) -> 0 (0)
+- mm-new: 1 -> 2 commits
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 4e79d39c1ad4 "memcg: move mem_cgroup_swappiness to memcontrol.h"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260710111224.2355668-1-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

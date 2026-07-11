@@ -5,7 +5,7 @@
     - no role, no role : 1 commits
   - full commits list
     - series "mm: fix PMD level mTHP accounting bugs". (2 commits)
-      - 9dbc48455f0d "mm: decrement MTHP_STAT_NR_ANON in free_zone_device_folio()" (0/2)
+      - 70147b10b06f "mm: decrement MTHP_STAT_NR_ANON in free_zone_device_folio()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260702172548.37075-1-npache@redhat.com
         - Link: https://lore.kernel.org/20260702172548.37075-2-npache@redhat.com
@@ -15,11 +15,11 @@
     - no role, no role : 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 854fb5793cfe "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
+    - eb639de23341 "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
       - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
-      - 573e4d658a62 "mm: split out internal page_alloc.h" (3/18)
+      - e01127b698de "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
@@ -28,7 +28,7 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - ffc5c58b07dd "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - c15fdea4ca98 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org

@@ -9,42 +9,46 @@
     - reviewer, reviewer: 1 commits
   - full commits list
     - series "mm: drop "sub" prefix from various places". (2 commits)
-      - 6ad6f69616a2 "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
+      - 568ada1a1470 "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260623125723.2503832-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260623125723.2503832-2-dev.jain@arm.com
-    - 2e64dfc7809a "include/linux/swap.h: remove unused leftovers"
+    - bd15e1106f25 "include/linux/swap.h: remove unused leftovers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/68591daf0d679e5a0072d63751f187d14613e2b0.1781146877.git.ritesh.list@gmail.com
-    - 5b14c0bed080 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 8e21c35662e8 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - 35af7f573545 "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
+    - 15e8c84415ea "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260608143242.2869392-1-usama.arif@linux.dev
       - Link: https://lore.kernel.org/all/dca2824e8e88e826c6b260a831d79089b5b9c79d.camel@surriel.com/T/#u [1]
-      - 91cbdf42d679 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
+      - 7a73d5e02e58 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
     - series "mm: clean up folio LRU and swap declarations", v9. (3 commits)
-      - 05fdbcc07574 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - 7eb07cf7d515 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-      - 548aec8171a2 "mm: move reclaim-internal declarations out of swap.h" (2/3)
+      - 7d9450c83c23 "mm: move reclaim-internal declarations out of swap.h" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-3-2bc72b4f8730@gmail.com
-      - 1984722882e8 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 30c83145c5b3 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 282eabedf828 "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - 5e6b5ae96f17 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 1e692e85500f "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - 4e79d39c1ad4 "memcg: move mem_cgroup_swappiness to memcontrol.h"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260710111224.2355668-1-ridong.chen@linux.dev
+    - 61cccb8363fc "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

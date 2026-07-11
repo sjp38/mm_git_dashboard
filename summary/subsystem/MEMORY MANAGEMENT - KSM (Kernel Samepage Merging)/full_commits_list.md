@@ -6,32 +6,40 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - d8ac1f6cd556 "mm: remove PageTransCompound()"
+    - 8b080b22c62f "mm: remove PageTransCompound()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260618113523.3913307-1-wangkefeng.wang@huawei.com
-- mm-new: 4 total, 2 (4) series, 0 non-series commits
+- mm-new: 6 total, 2 (6) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 4 commits
+    - reviewer, no role : 1 commits
+    - reviewer, reviewer: 1 commits
   - full commits list
     - series "KSM: performance optimizations for rmap_walk_ksm", v11. (3 commits)
-      - 1e047a3fb85c "ksm: add linear_page_index into ksm_rmap_item" (0/3)
+      - e296f3f0bd6e "ksm: add linear_page_index into ksm_rmap_item" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703162253688u8Str9eFLR8TGCmo7nIOF@zte.com.cn
         - Link: https://lore.kernel.org/20260703162357853iIa-RP7if9hRlAIuTh5La@zte.com.cn
         - Link: https://lore.kernel.org/all/adTPQSb-qSSHviJN@lucifer/ [1]
         - Link: https://lore.kernel.org/all/202604091806051535BJWZ_FTtdIm3Snk24ei_@zte.com.cn/ [2]
-      - e87136601f82 "ksm: optimize rmap_walk_ksm by passing a suitablepage index" (1/3)
+      - a20085dc3702 "ksm: optimize rmap_walk_ksm by passing a suitable page index" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703162510242nxmjbcLy5ccp1dbZSK3EU@zte.com.cn
         - Link: https://lore.kernel.org/all/202605301703094695zmVgcSC27BNR0rH0N8_x@zte.com.cn [1]
         - Link: https://lore.kernel.org/all/20260530170404509QpJmBtpSjn3uQHeVKA2iA@zte.com.cn/ [2]
     - series "KSM: use linear_page_index in collect_procs_ksm()", v2. (2 commits)
-      - af9f0159ed86 "mm/ksm: Initialize the addr only once in collect_procs_ksm" (0/2)
+      - 791c1f33795f "mm/ksm: initialize the addr only once in collect_procs_ksm" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260709173212190rZdwynySRyLr9EtPuXBRU@zte.com.cn
         - Link: https://lore.kernel.org/all/20260703162253688u8Str9eFLR8TGCmo7nIOF@zte.com.cn/ [1]
-      - 6bd3b21850fc "ksm: Use precise linear_page_index instead of the whole address space" (1/2)
+      - 2c2442572238 "ksm: Use precise linear_page_index instead of the whole address space" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260709173312403qgj1Af6pRkFMDSsmc19sM@zte.com.cn
+      - 50006a73d27d "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma" (8/33)
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
+      - c8bfa1c7eca2 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

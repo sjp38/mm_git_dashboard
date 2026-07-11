@@ -5,87 +5,77 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
   - changed commits
-    - b0ddd5656d80 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
+    - 9aaab459e3be "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
       - Authored by no role player, reviewed by nobody
-      - dropped "Signed-off-by: Kiryl Shutsemau <kas@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260708103429.150655-1-kirill@shutemov.name"
-      - dropped "Fixes: 2bad466cc9d9 ("mm/uffd: UFFD_FEATURE_WP_UNPOPULATED")"
-      - dropped "Cc: Muhammad Usama Anjum <usama.anjum@collabora.com>"
-      - dropped "Cc: Peter Xu <peterx@redhat.com>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Cc: Jann Horn <jannh@google.com>"
-      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-      - dropped "Cc: Peter Xu <peterx@redhat.com>"
-      - dropped "Cc: Shuah Khan <shuah@kernel.org>"
-      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Cc: <stable@vger.kernel.org>"
-      - dropped "Assisted-by: Claude:claude-fable-5"
+      - added "Link: https://lore.kernel.org/20260709121629.205562-1-kirill@shutemov.name"
+      - added "Fixes: 2bad466cc9d9 ("mm/uffd: UFFD_FEATURE_WP_UNPOPULATED")"
+      - added "Signed-off-by: Kiryl Shutsemau <kas@kernel.org>"
+      - added "Reported-by: Sashiko AI review <sashiko-bot@kernel.org>"
+      - added "Closes: https://sashiko.dev/#/patchset/20260707151349.92143-1-kirill@shutemov.name"
+      - added "Cc: Liam R. Howlett <liam@infradead.org>"
+      - added "Cc: Muhammad Usama Anjum <usama.anjum@collabora.com>"
+      - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+      - added "Cc: Michal Hocko <mhocko@suse.com>"
+      - added "Cc: David Hildenbrand <david@kernel.org>"
+      - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - added "Cc: Peter Xu <peterx@redhat.com>"
+      - added "Cc: Jann Horn <jannh@google.com>"
+      - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - added "Cc: Shuah Khan <shuah@kernel.org>"
+      - added "Assisted-by: Claude:claude-fable-5"
+      - Link: https://lore.kernel.org/20260709121629.205562-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 18 commits
-  - series: 2 (11) -> 2 (15)
+- mm-unstable: 18 -> 19 commits
+  - series: 2 (15) -> 3 (16)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 7 -> 11 commits
+    - no role, no role : 11 -> 11 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - c06573440854 "selftests/mm: add userfaultfd RWP tests (13/15)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/ak-Z9KO2mP9HMOPW@thinkstation
+    - maintainer, reviewer: 0 -> 1 commits
   - changed commits
-    - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (6)
-      - 139d69e40655 "selftests/mm: add hwpoison-panic destructive test (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Miaohe Lin <linmiaohe@huawei.com>"
-        - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-6-c6ed5b62eea2@debian.org
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - d35a6b0f461d "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing (8/15)"
-        - Authored by no role player, reviewed by no role player
+    - series "alloc_tag: introduce IOCTL-based filtering for MAP", v8. (6)
+      - 8df02872f6b3 "alloc_tag: add ioctl to /proc/allocinfo (0/6)"
+        - Authored by a maintainer, reviewed by a reviewer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708111417.173443-10-kirill@shutemov.name
-      - 7158e095bf78 "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking (10/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708111417.173443-12-kirill@shutemov.name
-      - d20bb2fc95a9 "Documentation/userfaultfd: document RWP working set tracking (14/15)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708111417.173443-16-kirill@shutemov.name
-- mm-new: 5 -> 7 commits
-  - series: 1 (5) -> 3 (6)
-    - no role, nobody: 1 -> 2 commits
+        - Link: https://lore.kernel.org/cover.1783532853.git.abhishekbapat@google.com
+        - Link: https://lore.kernel.org/15596de2607ef13e7c77c6d74763f4ae992ec475.1783532853.git.abhishekbapat@google.com
+- mm-new: 7 -> 12 commits
+  - series: 3 (6) -> 2 (10)
+    - no role, nobody: 2 -> 4 commits
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 2 commits
+    - maintainer, reviewer: 1 -> 0 commits
   - new commits
-    - series "mm: split a couple of headers from internal.h", v2. (3)
-      - ffc5c58b07dd "mm: split out mm_init and memblock declarations from internal.h (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-    - d36215530d04 "selftests/mm: fix memleak in migration benchmark"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260709081843.1451202-1-lihongfu@kylinos.cn
-    - series "selftests/mm: avoid false failures in hugetlb and KSM tests", v3. (3)
-      - a5e852b98f2a "selftests/mm: handle EINVAL when configuring gigantic hugepages (0/3)"
+    - series "mm/damon: introduce data attributes only monitoring". (19)
+      - 5e5d1d4aedf6 "Docs/mm/damon/design: document attrs-only monitoring (16/19)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260710134651.18084-18-sj@kernel.org
+      - e74c138b79f8 "Docs/admin-guide/mm/damon/usage: document weight sysfs file (17/19)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260710134651.18084-19-sj@kernel.org
+    - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v8. (8)
+      - cf5190133132 "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support (1/8)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/cover.1783446924.git.sayalip@linux.ibm.com
-        - Link: https://lore.kernel.org/2e3b585cbb30b2fc495dcd49d75de6f6da61861c.1783446924.git.sayalip@linux.ibm.com
-      - d886e4c63ad5 "selftests/mm: fix ksm NUMA merge test for systems with memoryless NUMA nodes (1/3)"
+        - Link: https://lore.kernel.org/178371879503.900500.7148019929226548795.stgit@skinsburskii
+      - 24575629fafd "selftests/mm: add HMM test for mmap lock-dropping faults (2/8)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/78a3b0e3fb94004c0710872c5bab6f7381b7d63c.1783446924.git.sayalip@linux.ibm.com
-      - 609df4a8b155 "selftests/mm: fix ternary operator precedence in ksm_tests (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/ce859430287ed2642848c933a90eb9a69da361f0.1783446924.git.sayalip@linux.ibm.com
+        - Link: https://lore.kernel.org/178371880218.900500.12093463712908415421.stgit@skinsburskii
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - cee9092b80c1 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+    - bc1709bbe87e "selftests/mm: remove obsolete hugetlb vmemmap test"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260710092427.3459121-1-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

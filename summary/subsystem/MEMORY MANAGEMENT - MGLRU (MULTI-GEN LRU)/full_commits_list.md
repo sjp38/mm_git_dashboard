@@ -4,9 +4,9 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 198e0efeba02 "mm: mglru: fix stale batch updates after memcg reparenting"
+    - eac685ad0526 "mm: mglru: fix stale batch updates after memcg reparenting"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260701075251.56413-1-qi.zheng@linux.dev
+      - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 10 total, 1 (7) series, 3 non-series commits
   - author/reviewer role stat
@@ -16,37 +16,37 @@
     - no role, maintainer: 4 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 74f6a9afbbef "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
+    - b068edb3b69c "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
-      - edde76df4566 "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
+      - 7e2bb0bbca36 "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
-    - 5b14c0bed080 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 8e21c35662e8 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - c2b2abfab7aa "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
+    - 285300d167a5 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
-      - b55f9d926ab9 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer" (6/10)
+      - 5b44759de9ba "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer" (6/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
-      - 8b10392bdf8a "memcg: bail out proactive reclaim when memcg is dying" (2/4)
+      - 0083419454da "memcg: bail out proactive reclaim when memcg is dying" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
-      - 573e4d658a62 "mm: split out internal page_alloc.h" (3/18)
+      - e01127b698de "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
     - series "mm: clean up folio LRU and swap declarations", v9. (3 commits)
-      - 05fdbcc07574 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - 7eb07cf7d515 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-      - e89d1f12c977 "mm: rename swap.c to folio.c" (1/3)
+      - 9a32a1f9d0e3 "mm: rename swap.c to folio.c" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-2-2bc72b4f8730@gmail.com
-      - 1984722882e8 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 30c83145c5b3 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

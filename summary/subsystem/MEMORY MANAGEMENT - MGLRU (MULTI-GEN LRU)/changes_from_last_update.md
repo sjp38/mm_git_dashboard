@@ -1,43 +1,26 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 198e0efeba02 "mm: mglru: fix stale batch updates after memcg reparenting"
+    - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - eac685ad0526 "mm: mglru: fix stale batch updates after memcg reparenting"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260701075251.56413-1-qi.zheng@linux.dev
+      - added "Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev"
+      - dropped "Link: https://lore.kernel.org/20260701075251.56413-1-qi.zheng@linux.dev"
+      - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 10 commits
-  - series: 0 (4) -> 1 (7)
+- mm-unstable: 10 -> 10 commits (no change)
+  - series: 1 (7) -> 1 (7) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 3 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 3 -> 4 commits
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: clean up folio LRU and swap declarations", v9. (3)
-      - 05fdbcc07574 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-      - e89d1f12c977 "mm: rename swap.c to folio.c (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-2-2bc72b4f8730@gmail.com
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - 1984722882e8 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-- mm-new: 3 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

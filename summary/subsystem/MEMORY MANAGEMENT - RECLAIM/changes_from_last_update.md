@@ -1,29 +1,23 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 198e0efeba02 "mm: mglru: fix stale batch updates after memcg reparenting"
+    - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - eac685ad0526 "mm: mglru: fix stale batch updates after memcg reparenting"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260701075251.56413-1-qi.zheng@linux.dev
+      - added "Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev"
+      - dropped "Link: https://lore.kernel.org/20260701075251.56413-1-qi.zheng@linux.dev"
+      - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 5 commits
-  - series: 0 (2) -> 1 (3)
-    - no role, maintainer: 3 -> 4 commits
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: clean up folio LRU and swap declarations", v9. (3)
-      - 05fdbcc07574 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-- mm-new: 1 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, maintainer: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

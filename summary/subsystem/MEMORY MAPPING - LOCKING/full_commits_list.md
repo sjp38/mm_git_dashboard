@@ -3,6 +3,19 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 2 total, 1 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, nobody: 1 commits
+    - maintainer, no role : 1 commits
+  - full commits list
+    - series "mm: fix UAF caused by race between ptdump and vmap". (2 commits)
+      - 50eab481d14c "mm/vmalloc: acquire init_mm read lock on huge vmap promotion" (0/2)
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260710-series-vmap-race-fix-v1-0-5b3794c113fe@kernel.org
+        - Link: https://lore.kernel.org/20260710-series-vmap-race-fix-v1-1-5b3794c113fe@kernel.org
+        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
+      - bbf27e0aea13 "mm/vma: introduce vma_assert_can_modify()" (21/33)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-22-2a5aa403d977@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

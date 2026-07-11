@@ -9,8 +9,22 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 3 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - new commits
+    - 95b4f54f93b0 "mm: remove wb_writeout_inc"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260710051052.1839523-1-hch@lst.de
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 0fbeeca3fe30 "mm: introduce and use linear_page_delta() (16/33)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-17-2a5aa403d977@kernel.org
+      - cee9092b80c1 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

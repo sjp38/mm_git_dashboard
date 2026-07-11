@@ -8,18 +8,32 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm/filemap: reduce unnecessary xarray lookups". (2 commits)
-      - b26225c66fff "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
+      - 343a9e8a6df6 "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-2-chizhiling@163.com
-      - 0eb2a6bfd7f3 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
+      - 5b80b2a1e71f "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-3-chizhiling@163.com
-    - 53be7ec90cfe "writeback.h: fix a typo in the wbc_init_bio() description"
+    - dae4bf48b3f0 "writeback.h: fix a typo in the wbc_init_bio() description"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260615162244.2170866-2-willy@infradead.org
-    - 41b9b3965266 "mm: fix mapping_seek_hole_data() overflow on last page"
+    - db1e30c934b3 "mm: fix mapping_seek_hole_data() overflow on last page"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260630125047.703170-1-yanzhen20011121@163.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 3 total, 0 (2) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - no role, maintainer: 1 commits
+    - reviewer, maintainer: 1 commits
+  - full commits list
+    - 95b4f54f93b0 "mm: remove wb_writeout_inc"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260710051052.1839523-1-hch@lst.de
+      - 0fbeeca3fe30 "mm: introduce and use linear_page_delta()" (16/33)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-17-2a5aa403d977@kernel.org
+      - cee9092b80c1 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -8,8 +8,20 @@
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, no role : 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - cee9092b80c1 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+    - series "mm: handle device-private PMDs in walk callbacks", v3. (3)
+      - 0ccf0bade151 "mm/madvise: skip device-private PMDs in cold and pageout walks (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710105557.1987433-3-usama.arif@linux.dev
+        - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
