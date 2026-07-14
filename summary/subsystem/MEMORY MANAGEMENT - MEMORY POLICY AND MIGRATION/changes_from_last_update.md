@@ -6,28 +6,46 @@
     - no role, reviewer: 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 18 -> 18 commits (no change)
-  - series: 2 (16) -> 2 (16) (no change)
+- mm-unstable: 18 -> 20 commits
+  - series: 2 (16) -> 3 (18)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 9 -> 9 commits (no change)
+    - no role, reviewer: 9 -> 10 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, reviewer: 0 -> 1 commits
     - reviewer, maintainer: 0 -> 1 commits
-  - new commits
+  - changed commits
+    - series "mm/page_owner: misc cleanups", v6. (6)
+      - 63f048e2c000 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason (1/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260714015117.78351-3-ye.liu@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260701061101.344679-3-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260714015117.78351-3-ye.liu@linux.dev
+      - 228d56fa082c "mm: use enum migrate_reason instead of int for migration reason parameters (2/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
     - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - cee9092b80c1 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+      - 45b4f55b973e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
         - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
     - series "mm: handle device-private PMDs in walk callbacks", v3. (3)
-      - 0c018d9f054a "mm/mempolicy: skip non-present PMDs when queueing folios (0/3)"
+      - 700a7d9bc6f0 "mm/mempolicy: skip non-present PMDs when queueing folios (0/3)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
+        - added "Reviewed-by: Gregory Price <gourry@gourry.net>"
+        - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
         - Link: https://lore.kernel.org/20260710105557.1987433-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260710105557.1987433-2-usama.arif@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
+- mm-new: 2 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

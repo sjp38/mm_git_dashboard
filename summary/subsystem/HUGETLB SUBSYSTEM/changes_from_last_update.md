@@ -1,42 +1,71 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 1 -> 1 commits (no change)
+  - new commits
+    - b42b8e870d0a "mm/hugetlb: fix list corruption in allocate_file_region_entries()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260713171456.300518-2-caixiangfeng@bytedance.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 28 -> 29 commits
-  - series: 2 (25) -> 2 (26)
+- mm-unstable: 29 -> 33 commits
+  - series: 2 (26) -> 3 (30)
     - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 7 -> 8 commits
-    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 8 -> 9 commits
+    - reviewer, no role : 0 -> 1 commits
+    - reviewer, reviewer: 2 -> 3 commits
+    - reviewer, maintainer: 0 -> 1 commits
   - changed commits
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)". (10)
-      - 8881d76f726b "mm/hugetlb_vmemmap: remove bootmem_info leftovers (7/10)"
+    - series "mm/page_owner: misc cleanups", v6. (6)
+      - 228d56fa082c "mm: use enum migrate_reason instead of int for migration reason parameters (2/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
+    - series "mm: split a couple of headers from internal.h", v2. (3)
+      - 142ff4ca1c67 "mm: split out mm_init and memblock declarations from internal.h (0/3)"
         - Authored by no role player, reviewed by a maintainer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-8-156ce4986598@kernel.org
-- mm-new: 2 -> 4 commits
-  - series: 1 (2) -> 1 (4)
-    - no role, maintainer: 2 -> 1 commits
-    - reviewer, no role : 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 1 commits
-    - reviewer, maintainer: 0 -> 1 commits
-  - new commits
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
     - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 7f0c2e30e6f1 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+      - 66ee83608c9f "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - dc645a508c3e "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+      - cd572e286492 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
         - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - cee9092b80c1 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+      - 45b4f55b973e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
         - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+- mm-new: 4 -> 2 commits
+  - series: 1 (4) -> 0 (2)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, no role : 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 1 -> 0 commits
+  - new commits
+    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
+      - 10fcc91ebf84 "mm/rmap: Add try_to_unmap_hugetlb_one (1/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260713050050.1017741-3-dev.jain@arm.com
+    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
+      - 456aedb3fa6e "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

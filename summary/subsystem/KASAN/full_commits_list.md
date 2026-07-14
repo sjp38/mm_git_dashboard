@@ -7,7 +7,7 @@
     - no role, no role : 1 commits
   - full commits list
     - series "mm: remove redundant static variable initializations". (2 commits)
-      - d4d1ecc92903 "mm/kasan: remove redundant initialization for kasan_flag_write_only" (0/2)
+      - 40959979c9bb "mm/kasan: remove redundant initialization for kasan_flag_write_only" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260623114743.4565-1-igorpetindev@gmail.com
         - Link: https://lore.kernel.org/20260623114743.4565-2-igorpetindev@gmail.com

@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - 30c83145c5b3 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 29a7a60180ce "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

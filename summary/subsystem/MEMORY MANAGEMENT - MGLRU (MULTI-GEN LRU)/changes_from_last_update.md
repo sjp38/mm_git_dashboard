@@ -3,12 +3,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - eac685ad0526 "mm: mglru: fix stale batch updates after memcg reparenting"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev"
-      - dropped "Link: https://lore.kernel.org/20260701075251.56413-1-qi.zheng@linux.dev"
+    - f7cfeb4a95ee "mm: mglru: fix stale batch updates after memcg reparenting"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
       - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
@@ -19,8 +20,18 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, nobody: 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - series "better block swap batching and a different take on swap_ops v5". (7)
+      - 0a3c690346b1 "mm/swap: introduce struct swap_io_ctx (1/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
+      - 19ab9e8d0844 "mm/swap: remove SWP_FS_OPS (5/7)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

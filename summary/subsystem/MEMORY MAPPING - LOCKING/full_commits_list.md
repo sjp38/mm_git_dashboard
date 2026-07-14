@@ -1,21 +1,23 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 2 total, 1 (2) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 1 (1) series, 0 non-series commits
   - author/reviewer role stat
-    - reviewer, nobody: 1 commits
+    - reviewer, no role : 1 commits
+  - full commits list
+    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v2. (4 commits)
+      - 2792dea8de06 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/4)
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-0-ad134cc3a12a@kernel.org
+        - Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-1-ad134cc3a12a@kernel.org
+        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
     - maintainer, no role : 1 commits
   - full commits list
-    - series "mm: fix UAF caused by race between ptdump and vmap". (2 commits)
-      - 50eab481d14c "mm/vmalloc: acquire init_mm read lock on huge vmap promotion" (0/2)
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260710-series-vmap-race-fix-v1-0-5b3794c113fe@kernel.org
-        - Link: https://lore.kernel.org/20260710-series-vmap-race-fix-v1-1-5b3794c113fe@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - bbf27e0aea13 "mm/vma: introduce vma_assert_can_modify()" (21/33)
+      - cbc2da5c2805 "mm/vma: introduce vma_assert_can_modify()" (21/33)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-22-2a5aa403d977@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

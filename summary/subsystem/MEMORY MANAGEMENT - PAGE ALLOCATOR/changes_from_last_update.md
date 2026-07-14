@@ -6,30 +6,77 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 30 -> 31 commits
-  - series: 3 (26) -> 3 (27)
-    - no role, no role : 1 -> 2 commits
+- mm-unstable: 31 -> 32 commits
+  - series: 3 (27) -> 4 (25)
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 13 -> 13 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 12 -> 12 commits (no change)
+  - new commits
+    - e6d6d2ee5986 "mm/page_owner: use memcg_data snapshot to avoid TOCTOU in print_page_owner_memcg()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260714015117.78351-10-ye.liu@linux.dev
   - changed commits
-    - series "Keep tail page private zero at free and folio split", v3. (5)
-      - 660b258191f5 "mm/page_alloc: make sure tail_page->private is zero at page free time (3/5)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-4-7e4fe155f5b9@nvidia.com
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)". (10)
-      - a3fe1b83430f "mm: provide free_reserved_pages(), removing x86 variant (1/10)"
-        - Authored by no role player, reviewed by no role player
+    - series "mm/page_owner: misc cleanups", v6. (6)
+      - 840422a758b6 "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping (0/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260714015117.78351-2-ye.liu@linux.dev"
+        - added "Link: https://lore.kernel.org/20260714015117.78351-1-ye.liu@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260701061101.344679-2-ye.liu@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260701061101.344679-1-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260714015117.78351-1-ye.liu@linux.dev
+        - Link: https://lore.kernel.org/20260714015117.78351-2-ye.liu@linux.dev
+      - 63f048e2c000 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason (1/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260714015117.78351-3-ye.liu@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260701061101.344679-3-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260714015117.78351-3-ye.liu@linux.dev
+      - 228d56fa082c "mm: use enum migrate_reason instead of int for migration reason parameters (2/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260701061101.344679-4-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
+      - e1126ec6ad8a "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg() (3/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260714015117.78351-5-ye.liu@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260701061101.344679-5-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260714015117.78351-5-ye.liu@linux.dev
+      - afb0381164a1 "mm/page_owner: add missing newline to count_threshold format string (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260714015117.78351-6-ye.liu@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260701061101.344679-6-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260714015117.78351-6-ye.liu@linux.dev
+      - 07255704abc5 "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner() (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260714015117.78351-7-ye.liu@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260701061101.344679-7-ye.liu@linux.dev"
+        - Link: https://lore.kernel.org/20260714015117.78351-7-ye.liu@linux.dev
+    - ff10da553b22 "mm/page_owner: drop redundant page_owner prefix from static symbols"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260714015117.78351-8-ye.liu@linux.dev"
+      - dropped "Link: https://lore.kernel.org/20260701061101.344679-8-ye.liu@linux.dev"
+      - Link: https://lore.kernel.org/20260714015117.78351-8-ye.liu@linux.dev
+    - 04c8217a4517 "mm/page_owner: clamp skip_buddy_pages() PFN advance at MAX_ORDER_NR_PAGES boundary"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260714015117.78351-9-ye.liu@linux.dev"
+      - dropped "Link: https://lore.kernel.org/20260701061101.344679-9-ye.liu@linux.dev"
+      - Link: https://lore.kernel.org/20260714015117.78351-9-ye.liu@linux.dev
+    - series "mm: split a couple of headers from internal.h", v2. (3)
+      - 142ff4ca1c67 "mm: split out mm_init and memblock declarations from internal.h (0/3)"
+        - Authored by no role player, reviewed by a maintainer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-2-156ce4986598@kernel.org
-- mm-new: 2 -> 1 commits
-  - series: 1 (2) -> 1 (1)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
+  - dropped commits
+    - series "mm/page_owner: misc cleanups", v5. (9)
+      - 53afd371e97d "mm/page_owner: use memcg_data snapshot instead of PageMemcgKmem() to avoid TOCTOU VM_BUG_ON (8/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260701061101.344679-10-ye.liu@linux.dev
+- mm-new: 1 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

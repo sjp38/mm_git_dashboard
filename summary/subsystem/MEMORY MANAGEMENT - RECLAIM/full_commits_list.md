@@ -2,10 +2,10 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - eac685ad0526 "mm: mglru: fix stale batch updates after memcg reparenting"
-      - Authored by no role player, reviewed by no role player
+    - f7cfeb4a95ee "mm: mglru: fix stale batch updates after memcg reparenting"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 5 total, 1 (3) series, 2 non-series commits
@@ -13,24 +13,34 @@
     - no role, maintainer: 4 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 8e21c35662e8 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 9d8cbc409fe4 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - 285300d167a5 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
+    - c27b0e8321e0 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
-      - 0083419454da "memcg: bail out proactive reclaim when memcg is dying" (2/4)
+      - 759fe29d9964 "memcg: bail out proactive reclaim when memcg is dying" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
-      - e01127b698de "mm: split out internal page_alloc.h" (3/18)
+      - 170ac4f27506 "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
     - series "mm: clean up folio LRU and swap declarations", v9. (3 commits)
-      - 7eb07cf7d515 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - c5c37ce83e4a "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 2 total, 0 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+      - 0a3c690346b1 "mm/swap: introduce struct swap_io_ctx" (1/7)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
+      - 19ab9e8d0844 "mm/swap: remove SWP_FS_OPS" (5/7)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

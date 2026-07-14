@@ -2,36 +2,79 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 12 commits (no change)
-  - series: 1 (12) -> 1 (12) (no change)
-    - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 6 -> 6 commits (no change)
-- mm-new: 0 -> 4 commits
-  - series: 0 (0) -> 0 (4)
-    - reviewer, no role : 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 2 commits
+    - no role, reviewer: 0 -> 1 commits
+    - reviewer, reviewer: 1 -> 0 commits
     - reviewer, maintainer: 0 -> 1 commits
   - new commits
+    - 026477f1897b "mm: thp: pin the inode across a file folio split"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260713170915.239819-1-kirill@shutemov.name
+  - changed commits
+    - b0d47fe3a3fd "userfaultfd: wait on source PMD during UFFDIO_MOVE"
+      - Authored by a reviewer, reviewed by a maintainer
+      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260705131231.1499198-1-usama.arif@linux.dev
+      - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=8
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 12 -> 16 commits
+  - series: 1 (12) -> 1 (16)
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - reviewer, no role : 0 -> 1 commits
+    - reviewer, reviewer: 6 -> 8 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - changed commits
     - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 7f0c2e30e6f1 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+      - 66ee83608c9f "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - dc645a508c3e "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+      - cd572e286492 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
         - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - cee9092b80c1 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+      - 45b4f55b973e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
         - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
     - series "mm: handle device-private PMDs in walk callbacks", v3. (3)
-      - 257254dfeb93 "mm/huge_memory: skip device-private PMDs in madvise_free_huge_pmd (2/3)"
+      - a531f0cf705a "mm/huge_memory: skip device-private PMDs in madvise_free_huge_pmd (2/3)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Gregory Price <gourry@gourry.net>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
         - Link: https://lore.kernel.org/20260710105557.1987433-4-usama.arif@linux.dev
+- mm-new: 4 -> 4 commits (no change)
+  - series: 0 (4) -> 1 (3)
+    - no role, nobody: 0 -> 1 commits
+    - no role, reviewer: 0 -> 2 commits
+    - reviewer, no role : 1 -> 0 commits
+    - reviewer, reviewer: 2 -> 1 commits
+    - reviewer, maintainer: 1 -> 0 commits
+  - new commits
+    - b409bb7af931 "mm: huge_memory: fix kobject cleanup in thpsize_create error"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260713054154.120915-1-zenghongling@kylinos.cn
+    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
+      - 456aedb3fa6e "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
+    - series "Two small patches to clean up mm/mm_slot.h", v3. (2)
+      - b048917f4faf "mm/mm_slot.h: add a helper function mm_slot_remove (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
+        - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
+      - 75ff86dcd599 "mm/mm_slot.h: add comments for mm_slot_lookup/insert (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

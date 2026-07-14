@@ -5,23 +5,34 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 1 commits
+- mm-unstable: 2 -> 4 commits
+  - series: 0 (2) -> 0 (4)
+    - no role, no role : 2 -> 3 commits
     - reviewer, maintainer: 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - cee9092b80c1 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+      - 45b4f55b973e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
         - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
     - series "mm: handle device-private PMDs in walk callbacks", v3. (3)
-      - 0ccf0bade151 "mm/madvise: skip device-private PMDs in cold and pageout walks (1/3)"
+      - 61f1ba962529 "mm/madvise: skip device-private PMDs in cold and pageout walks (1/3)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Gregory Price <gourry@gourry.net>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
         - Link: https://lore.kernel.org/20260710105557.1987433-3-usama.arif@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
+- mm-new: 2 -> 1 commits
+  - series: 0 (2) -> 0 (1)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 1 -> 0 commits
+  - new commits
+    - series "better block swap batching and a different take on swap_ops v5". (7)
+      - 0a3c690346b1 "mm/swap: introduce struct swap_io_ctx (1/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

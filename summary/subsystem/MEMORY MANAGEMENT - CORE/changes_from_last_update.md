@@ -1,94 +1,182 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-hotfixes-unstable: 1 -> 3 commits
+  - series: 0 (0) -> 1 (2)
     - no role, reviewer: 1 -> 1 commits (no change)
+    - reviewer, no role : 0 -> 2 commits
+  - new commits
+    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v2. (4)
+      - 2792dea8de06 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/4)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-0-ad134cc3a12a@kernel.org
+        - Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-1-ad134cc3a12a@kernel.org
+        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
+  - changed commits
+    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v2. (4)
+      - bc774444dffb "mm/ptdump: always stabilise against page table freeing using init_mm (2/4)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-hotfixes-unstable
+        - added "Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-3-ad134cc3a12a@kernel.org"
+        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - added "Cc: "Uladzislau Rezki (Sony)" <urezki@gmail.com>"
+        - added "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
+        - added "Cc: "H. Peter Anvin" <hpa@zytor.com>"
+        - added "Cc: Andy Lutomirski <luto@kernel.org>"
+        - added "Cc: Peter Zijlstra <peterz@infradead.org>"
+        - added "Cc: Ingo Molnar <mingo@redhat.com>"
+        - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260710-b4-fix-non-init_mm-ptdump-v1-1-2d40982c98ec@kernel.org"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-3-ad134cc3a12a@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 53 -> 57 commits
-  - series: 6 (44) -> 6 (48)
-    - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 30 -> 34 commits
-    - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, reviewer: 8 -> 8 commits (no change)
+- mm-unstable: 57 -> 72 commits
+  - series: 6 (48) -> 8 (61)
+    - no role, nobody: 5 -> 6 commits
+    - no role, no role : 34 -> 34 commits (no change)
+    - no role, reviewer: 5 -> 6 commits
+    - no role, maintainer: 4 -> 6 commits
+    - reviewer, no role : 0 -> 4 commits
+    - reviewer, reviewer: 8 -> 14 commits
+    - reviewer, maintainer: 0 -> 1 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)". (10)
-      - a3fe1b83430f "mm: provide free_reserved_pages(), removing x86 variant (1/10)"
-        - Authored by no role player, reviewed by no role player
+    - series "mm: split a couple of headers from internal.h", v2. (3)
+      - 142ff4ca1c67 "mm: split out mm_init and memblock declarations from internal.h (0/3)"
+        - Authored by no role player, reviewed by a maintainer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-2-156ce4986598@kernel.org
-      - b64d1d7f4ed7 "x86/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (6/10)"
-        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
+      - adc52d8616b3 "mm: split out sparse declarations from internal.h (2/3)"
+        - Authored by no role player, reviewed by a reviewer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-7-156ce4986598@kernel.org
-      - 39e132d984e9 "mm/sparse: remove bootmem_info.h include (8/10)"
-        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-2-695631425968@kernel.org
+    - 0137c321d59f "mm: split out vmalloc declarations from internal.h"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
+    - 525e887c1946 "mm: standardize printing for pgtable entries"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260709044334.1741263-1-anshuman.khandual@arm.com
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 55804fa11f39 "mm: move vma_start_pgoff() into mm.h and clean up (0/33)"
+        - Authored by a reviewer, reviewed by a reviewer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-9-156ce4986598@kernel.org
-      - 31cf305afdad "mm/bootmem_info: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (9/10)"
-        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-0-2a5aa403d977@kernel.org
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-1-2a5aa403d977@kernel.org
+      - 97434858089d "mm: add kdoc comments for vma_start/last_pgoff() (1/33)"
+        - Authored by a reviewer, reviewed by no role player
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-10-156ce4986598@kernel.org
-- mm-new: 8 -> 17 commits
-  - series: 1 (7) -> 3 (15)
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-2-2a5aa403d977@kernel.org
+      - 024e7ce7c220 "mm: introduce and use vma_end_pgoff() (3/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-4-2a5aa403d977@kernel.org
+      - 66ee83608c9f "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
+      - cd572e286492 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
+      - 34c0efe809f5 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
+      - 697990d301f1 "mm/rmap: rename anon_vma_interval_tree_*() params and use pgoff_t (9/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-10-2a5aa403d977@kernel.org
+      - 9d6ac3dca2e9 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
+      - 45b4f55b973e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+      - 418d1f9c6e15 "mm/vma: make vma_set_range() static, drop insert_vm_struct() decl (24/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-25-2a5aa403d977@kernel.org
+      - 3f6baa6b725d "mm/vma: correct incorrect vma.h inclusion (29/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-30-2a5aa403d977@kernel.org
+- mm-new: 17 -> 10 commits
+  - series: 3 (15) -> 2 (9)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 0 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 0 -> 2 commits
-    - reviewer, no role : 0 -> 4 commits
-    - reviewer, reviewer: 0 -> 6 commits
-    - reviewer, maintainer: 0 -> 1 commits
+    - no role, maintainer: 2 -> 1 commits
+    - reviewer, nobody: 2 -> 0 commits
+    - reviewer, no role : 4 -> 6 commits
+    - reviewer, reviewer: 6 -> 1 commits
+    - reviewer, maintainer: 1 -> 0 commits
   - new commits
-    - da887ffd9f77 "mm/ptdump: always stabilise against page table freeing using init_mm"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260710-b4-fix-non-init_mm-ptdump-v1-1-2d40982c98ec@kernel.org
+    - series "better block swap batching and a different take on swap_ops v5". (7)
+      - 650a4a706ece "mm/vmstat: add NRSWP{IN,OUT} counters (6/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260713093350.2154226-8-hch@lst.de
+    - series "dax/kmem: atomic whole-device hotplug via sysfs", v7. (10)
+      - a2fce34049a7 "mm/memory: add memory_block_aligned_range() helper (0/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260712154505.3564379-1-gourry@gourry.net
+        - Link: https://lore.kernel.org/20260712154505.3564379-2-gourry@gourry.net
+    - c7db51bc50d9 "mm/kconfig: drop redundant dependency wrappers"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260712093326.8313-1-kaitao.cheng@linux.dev
+    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
+      - cace56297603 "mm: introduce vma_flags_can_grow() and vma_can_grow() (0/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-0-0fa2357d5431@kernel.org
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-1-0fa2357d5431@kernel.org
+      - 985dbb062e78 "mm/vma: update do_mmap() to use vma_flags_t (1/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-2-0fa2357d5431@kernel.org
+      - 456aedb3fa6e "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
+      - 08f3847bb2e6 "mm: prefer mm->def_vma_flags in mm logic (4/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-5-0fa2357d5431@kernel.org
+      - 02e0c3d1e680 "mm/vma: rename vma_get_page_prot to vma_flags_to_page_prot (6/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-7-0fa2357d5431@kernel.org
+      - fbd077d037ea "mm: introduce vma_get_page_prot() and use it (7/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-8-0fa2357d5431@kernel.org
+      - 7e873e26e345 "mm/vma: update create_init_stack_vma() to use vma_flags_t (8/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-9-0fa2357d5431@kernel.org
+  - dropped commits
     - series "mm: fix UAF caused by race between ptdump and vmap". (2)
       - 50eab481d14c "mm/vmalloc: acquire init_mm read lock on huge vmap promotion (0/2)"
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260710-series-vmap-race-fix-v1-0-5b3794c113fe@kernel.org
         - Link: https://lore.kernel.org/20260710-series-vmap-race-fix-v1-1-5b3794c113fe@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 11b2e6d8953a "mm: move vma_start_pgoff() into mm.h and clean up (0/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-0-2a5aa403d977@kernel.org
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-1-2a5aa403d977@kernel.org
-      - c93550469a44 "mm: add kdoc comments for vma_start/last_pgoff() (1/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-2-2a5aa403d977@kernel.org
-      - 584ca6fa0c78 "mm: introduce and use vma_end_pgoff() (3/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-4-2a5aa403d977@kernel.org
-      - 7f0c2e30e6f1 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - dc645a508c3e "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - 50006a73d27d "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
-      - 6becec942651 "mm/rmap: rename anon_vma_interval_tree_*() params and use pgoff_t (9/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-10-2a5aa403d977@kernel.org
-      - c8bfa1c7eca2 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
-      - cee9092b80c1 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-      - b4e88249d3f2 "mm/vma: make vma_set_range() static, drop insert_vm_struct() decl (24/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-25-2a5aa403d977@kernel.org
-      - 7d4deb312d27 "mm/vma: correct incorrect vma.h inclusion (29/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-30-2a5aa403d977@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - d9441bfccfe6 "kernel/fork: declare max_threads __read_mostly"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260707092354.465847-1-jansef.jian@hj-micro.com
