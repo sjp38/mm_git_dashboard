@@ -14,54 +14,34 @@
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 12 -> 12 commits (no change)
-  - changed commits
-    - series "mm/page_owner: misc cleanups", v6. (6)
-      - 47d6c9c5e0c2 "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping (0/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260714015117.78351-1-ye.liu@linux.dev
-        - Link: https://lore.kernel.org/20260714015117.78351-2-ye.liu@linux.dev
-      - 2c04fa08c48e "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason (1/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260714015117.78351-3-ye.liu@linux.dev
-      - b587a133724e "mm: use enum migrate_reason instead of int for migration reason parameters (2/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
-      - 0bcf819a619d "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg() (3/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260714015117.78351-5-ye.liu@linux.dev
-      - d56a8811ef17 "mm/page_owner: add missing newline to count_threshold format string (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260714015117.78351-6-ye.liu@linux.dev
-      - 57f19b491736 "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner() (5/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260714015117.78351-7-ye.liu@linux.dev
-    - d9258814971e "mm/page_owner: drop redundant page_owner prefix from static symbols"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260714015117.78351-8-ye.liu@linux.dev
-    - cea590d089db "mm/page_owner: clamp skip_buddy_pages() PFN advance at MAX_ORDER_NR_PAGES boundary"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260714015117.78351-9-ye.liu@linux.dev
-    - 95d75057773a "mm/page_owner: use memcg_data snapshot to avoid TOCTOU in print_page_owner_memcg()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - Link: https://lore.kernel.org/20260714015117.78351-10-ye.liu@linux.dev
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
+- mm-new: 1 -> 6 commits
+  - series: 0 (0) -> 2 (5)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - reviewer, no role : 0 -> 2 commits
+    - reviewer, reviewer: 0 -> 3 commits
   - new commits
-    - 3e0e1dc551eb "mm: let node_reclaim() return the number of pages reclaimed"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
+    - series "mm/page_alloc: fixes for free_pages_nolock() on RT/UP". (2)
+      - a8f112e5fb68 "mm/page_alloc: don't spin_trylock() in NMI on UP (0/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-0-fadc49952dda@google.com
+        - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-1-fadc49952dda@google.com
+      - f9436cb61cd3 "mm/page_alloc: don't spin_trylock() when disallowed in free_one_page() (1/2)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-2-fadc49952dda@google.com
+    - series "mm/page_alloc: couple of followups for recent cleanups", v3. (4)
+      - fe0aaaa4b7cc "mm/page_alloc: rename FPI_TRYLOCK -> FPI_NOLOCK (0/4)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-0-fc4d246f705d@google.com
+        - Link: https://lore.kernel.org/all/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com/
+        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-1-fc4d246f705d@google.com
+      - a2d274ac26d2 "mm/page_alloc: fixup alloc_pages_nolock_noprof() comment (2/4)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-3-fc4d246f705d@google.com
+        - Link: https://sashiko.dev/#/patchset/20260703-alloc-trylock-v5-0-c87b714e19d3%40google.com?part=6
+      - 5899c95f4411 "mm/page_alloc: remove a couple of VM_BUG_ON()st (3/4)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-4-fc4d246f705d@google.com
+        - Link: https://lore.kernel.org/all/7F866265-3F2E-4765-B9D4-9AB898A9C4AC@nvidia.com/
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

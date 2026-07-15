@@ -6,74 +6,130 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
   - changed commits
-    - 548f90e3b517 "mm/util: don't read __page_2 for order-1 folios in snapshot_page()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Luiz Capitulino <luizcap@redhat.com>"
-      - dropped "Cc: Luiz Capitulino <luizcap@redhat.com>"
-      - Link: https://lore.kernel.org/20260708201954.686111-1-aboorvad@linux.ibm.com
     - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v3. (4)
-      - 05188169170f "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/4)"
+      - 7997aa876218 "mm/ptdump: always stabilise against page table freeing using init_mm (3/4)"
         - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-0-b812eccfa0f9@kernel.org"
-        - added "Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-1-b812eccfa0f9@kernel.org"
-        - added "Cc: Dave Hansen <dave.hansen@linux.intel.com>"
-        - dropped "Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-0-ad134cc3a12a@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-1-ad134cc3a12a@kernel.org"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-0-b812eccfa0f9@kernel.org
-        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-1-b812eccfa0f9@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 538797bc0e9a "mm/ptdump: always stabilise against page table freeing using init_mm (2/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-3-b812eccfa0f9@kernel.org"
-        - added "Cc: Dave Hansen <dave.hansen@linux.intel.com>"
-        - dropped "Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-3-ad134cc3a12a@kernel.org"
+        - added "Reviewed-by: Kiryl Shutsemau <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
         - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-3-b812eccfa0f9@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 72 -> 73 commits
-  - series: 8 (61) -> 8 (62)
+- mm-unstable: 73 -> 82 commits
+  - series: 8 (62) -> 10 (70)
     - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 34 -> 34 commits (no change)
-    - no role, reviewer: 6 -> 7 commits
-    - no role, maintainer: 6 -> 6 commits (no change)
-    - reviewer, no role : 4 -> 4 commits (no change)
-    - reviewer, reviewer: 14 -> 14 commits (no change)
+    - no role, no role : 34 -> 35 commits
+    - no role, reviewer: 7 -> 7 commits (no change)
+    - no role, maintainer: 6 -> 7 commits
+    - reviewer, no role : 4 -> 10 commits
+    - reviewer, reviewer: 14 -> 15 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - series "better block swap batching and a different take on swap_ops v5". (7)
-      - f8e81127aa8c "mm/vmstat: add NRSWP{IN,OUT} counters (6/7)"
-        - Authored by no role player, reviewed by a reviewer
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 21d46f61cde2 "mm: move vma_start_pgoff() into mm.h and clean up (0/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-0-2a5aa403d977@kernel.org
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-1-2a5aa403d977@kernel.org
+      - 156426f075de "mm: add kdoc comments for vma_start/last_pgoff() (1/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Reviewed-by: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-2-2a5aa403d977@kernel.org
+      - 8ab25aef7f4c "mm: introduce and use vma_end_pgoff() (3/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-4-2a5aa403d977@kernel.org
+      - 0be69dcb83b8 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
+      - 038da94cd50e "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
+      - fd3bb6d1527c "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
+      - 59b99b2589af "mm/rmap: rename anon_vma_interval_tree_*() params and use pgoff_t (9/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-10-2a5aa403d977@kernel.org
+      - f6d6f8f2932e "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
+      - 8fe7717600ae "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+      - 14549d21486a "mm/vma: make vma_set_range() static, drop insert_vm_struct() decl (24/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-25-2a5aa403d977@kernel.org
+      - 15af752ec4e0 "mm/vma: correct incorrect vma.h inclusion (29/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-30-2a5aa403d977@kernel.org
+    - series "dax/kmem: atomic whole-device hotplug via sysfs", v7. (10)
+      - ed6ad692cc04 "mm/memory: add memory_block_aligned_range() helper (0/10)"
+        - Authored by no role player, reviewed by a maintainer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713093350.2154226-8-hch@lst.de
-- mm-new: 10 -> 10 commits (no change)
-  - series: 2 (9) -> 2 (8)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
+        - Link: https://lore.kernel.org/20260712154505.3564379-1-gourry@gourry.net
+        - Link: https://lore.kernel.org/20260712154505.3564379-2-gourry@gourry.net
+    - 61e7fc8b6fe2 "mm/kconfig: drop redundant dependency wrappers"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260712093326.8313-1-kaitao.cheng@linux.dev
+    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
+      - fb0cc19ecf22 "mm: introduce vma_flags_can_grow() and vma_can_grow() (0/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-0-0fa2357d5431@kernel.org
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-1-0fa2357d5431@kernel.org
+      - deb687eb1561 "mm/vma: update do_mmap() to use vma_flags_t (1/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-2-0fa2357d5431@kernel.org
+      - 7d9d7dd49dd1 "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
+      - 3219871ea1e0 "mm: prefer mm->def_vma_flags in mm logic (4/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-5-0fa2357d5431@kernel.org
+      - 8e74b9072c00 "mm/vma: rename vma_get_page_prot to vma_flags_to_page_prot (6/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-7-0fa2357d5431@kernel.org
+      - 846a34886dee "mm: introduce vma_get_page_prot() and use it (7/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-8-0fa2357d5431@kernel.org
+      - 6ac1cb053cb1 "mm/vma: update create_init_stack_vma() to use vma_flags_t (8/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-9-0fa2357d5431@kernel.org
+- mm-new: 10 -> 2 commits
+  - series: 2 (8) -> 0 (1)
+    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 6 -> 6 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, no role : 6 -> 0 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
   - new commits
-    - 3e0e1dc551eb "mm: let node_reclaim() return the number of pages reclaimed"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
-  - changed commits
-    - 47e6b616736e "mm/kconfig: drop redundant dependency wrappers"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260712093326.8313-1-kaitao.cheng@linux.dev
+    - series "mm/page_alloc: couple of followups for recent cleanups", v3. (4)
+      - 5899c95f4411 "mm/page_alloc: remove a couple of VM_BUG_ON()st (3/4)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-4-fc4d246f705d@google.com
+        - Link: https://lore.kernel.org/all/7F866265-3F2E-4765-B9D4-9AB898A9C4AC@nvidia.com/
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 2 -> 1 commits
+- mm-nonmm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-  - dropped commits
-    - 7605044cea4d "riscv: mm: avoid spurious fault after hotplugging vmemmap"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260630-mark-after-vmemmap-populate-v4-1-febbc15da028@iscas.ac.cn

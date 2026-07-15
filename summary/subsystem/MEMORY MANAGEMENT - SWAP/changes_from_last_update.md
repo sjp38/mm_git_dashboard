@@ -5,62 +5,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 17 commits
-  - series: 2 (6) -> 3 (13)
-    - no role, nobody: 0 -> 2 commits
+- mm-unstable: 17 -> 17 commits (no change)
+  - series: 3 (13) -> 3 (13) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 0 -> 4 commits
+    - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "better block swap batching and a different take on swap_ops v5". (7)
-      - 5d585ac7d4fc "shmem: provide a shmem_write_folio wrapper (0/7)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Kairui Song <kasong@tencent.com>"
-        - Link: https://lore.kernel.org/20260713093350.2154226-1-hch@lst.de
-        - Link: https://lore.kernel.org/20260713093350.2154226-2-hch@lst.de
-      - 069a2f5228dd "mm/swap: introduce struct swap_io_ctx (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - 2d324acead27 "mm/swap: also use struct swap_iocb for block I/O (2/7)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713093350.2154226-4-hch@lst.de
-      - 3c770e67a65f "mm/swap: remove count_swpout_vm_event (3/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713093350.2154226-5-hch@lst.de
-      - a198e971cb07 "mm/swap: use swap_ops to register swap device's methods (4/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713093350.2154226-6-hch@lst.de
-      - ba9939a9cff7 "mm/swap: remove SWP_FS_OPS (5/7)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-      - f8e81127aa8c "mm/vmstat: add NRSWP{IN,OUT} counters (6/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713093350.2154226-8-hch@lst.de
-    - 2d31f2d65bbc "mm/swap: clarify unreachable cond_resched() in swap_reclaim_full_clusters"
-      - Authored by a reviewer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://sashiko.dev/#/patchset/20260713025644.170839-1-youngjun.park@lge.com?part=4
-      - Link: https://lore.kernel.org/20260713045014.219653-1-youngjun.park@lge.com
-  - dropped commits
-    - a4271215228d "memcg: move mem_cgroup_swappiness to memcontrol.h"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260710111224.2355668-1-ridong.chen@linux.dev
-- mm-new: 9 -> 1 commits
-  - series: 1 (7) -> 0 (0)
-    - no role, nobody: 3 -> 1 commits
-    - no role, reviewer: 4 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, nobody: 1 -> 0 commits
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -11,28 +11,19 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - fd3bb6d1527c "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
+      - f6d6f8f2932e "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
 - mm-new: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-  - changed commits
-    - series "Two small patches to clean up mm/mm_slot.h", v3. (2)
-      - 6d3829b2b8c0 "mm/mm_slot.h: add a helper function mm_slot_remove (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
-        - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
-        - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
-      - 4f26efa29497 "mm/mm_slot.h: add comments for mm_slot_lookup/insert (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - added "Reviewed-by: SJ Park <sj@kernel.org>"
-        - added "Reviewed-by: Qi Zheng <qi.zheng@linux.dev>"
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: SJ Park <sj@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

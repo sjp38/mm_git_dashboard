@@ -10,28 +10,28 @@
     - reviewer, maintainer: 1 commits
   - full commits list
     - series "mm/filemap: reduce unnecessary xarray lookups". (2 commits)
-      - 7767a47aa988 "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
+      - d5454bde72ce "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-2-chizhiling@163.com
-      - b8e68a89527c "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
+      - 1a3e7c3b2f58 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-3-chizhiling@163.com
-    - f4c1b0799510 "writeback.h: fix a typo in the wbc_init_bio() description"
+    - 03cfa737e5da "writeback.h: fix a typo in the wbc_init_bio() description"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260615162244.2170866-2-willy@infradead.org
-    - 2dd77afa0c14 "mm: fix mapping_seek_hole_data() overflow on last page"
+    - cf93a31222c5 "mm: fix mapping_seek_hole_data() overflow on last page"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260630125047.703170-1-yanzhen20011121@163.com
-    - 0b9cf2bae6c1 "mm: remove wb_writeout_inc"
+    - d6baf0d4a35a "mm: remove wb_writeout_inc"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260710051052.1839523-1-hch@lst.de
-      - f224f944ff7a "mm: introduce and use linear_page_delta()" (16/33)
+      - 2b427f490ec0 "mm: introduce and use linear_page_delta()" (16/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-17-2a5aa403d977@kernel.org
-      - 3b8e0c3fb40e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 8fe7717600ae "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-      - ba9939a9cff7 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - 79c2d242679f "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

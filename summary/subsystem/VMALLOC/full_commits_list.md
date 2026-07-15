@@ -1,51 +1,58 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 1 (2) series, 0 non-series commits
+- mm-hotfixes-unstable: 3 total, 1 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
     - reviewer, no role : 1 commits
+    - maintainer, nobody: 1 commits
   - full commits list
     - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v3. (4 commits)
-      - 05188169170f "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/4)
+      - 36cb926d154f "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-0-b812eccfa0f9@kernel.org
         - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-1-b812eccfa0f9@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 8e28ffcd3d47 "arm64: remove redundant concurrent ptdump UAF mitigation" (3/4)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-4-b812eccfa0f9@kernel.org
+      - 1e0473a9b047 "mm-vmalloc-acquire-init_mm-lock-on-huge-vmap-to-avoid-ptdump-uaf-fix" (1/4)
+        - Authored by a maintainer, reviewed by nobody
+    - 68fc7b1176c5 "arm64: remove redundant concurrent ptdump UAF mitigation"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-4-b812eccfa0f9@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 8 total, 1 (5) series, 3 non-series commits
+- mm-unstable: 9 total, 1 (6) series, 3 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 7 commits
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm/percpu: Fix possible NOFS/NOIO reclaim recursion", v4. (4 commits)
-      - 64c1625db2c5 "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
+      - a32984b0cd37 "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260618130414.96383-1-kaitao.cheng@linux.dev
         - Link: https://lore.kernel.org/20260618130414.96383-2-kaitao.cheng@linux.dev
-    - 2392992b4d55 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
+    - 6fd0d1ec313f "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/453375c4-c3ca-4e6f-8880-0e6ff3c74ee3@web.de
-    - 3244ad77c9f4 "mm/vmalloc: add alignment info in warning print as possible failure reason"
+    - 2db188cfc25c "mm/vmalloc: add alignment info in warning print as possible failure reason"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260702112610.21589-1-feng.tang@linux.alibaba.com
-    - 10661cadb187 "mm: split out vmalloc declarations from internal.h"
+    - 303e8df9ed8b "mm: split out vmalloc declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-      - 45d8ccb1df1f "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/6)
+      - 54423b7c535a "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/7)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260709073823.6643-4-jiangwen6@xiaomi.com
-      - bd7990ed5fcb "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/6)
+        - Link: https://lore.kernel.org/20260715120813.3609949-4-jiangwen6@xiaomi.com
+      - 855a5a4e0ea9 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/7)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260709073823.6643-5-jiangwen6@xiaomi.com
-      - cb41027931b3 "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (4/6)
+        - Link: https://lore.kernel.org/20260715120813.3609949-5-jiangwen6@xiaomi.com
+      - 7dc3c2042482 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (4/7)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260715120813.3609949-6-jiangwen6@xiaomi.com
+      - c6bc0519577c "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (5/7)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260709073823.6643-6-jiangwen6@xiaomi.com
-      - 098b39c2ab53 "mm/vmalloc: align vm_area so vmap() can batch mappings" (5/6)
+        - Link: https://lore.kernel.org/20260715120813.3609949-7-jiangwen6@xiaomi.com
+      - 47390b63a137 "mm/vmalloc: align vm_area so vmap() can batch mappings" (6/7)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260709073823.6643-7-jiangwen6@xiaomi.com
+        - Link: https://lore.kernel.org/20260715120813.3609949-8-jiangwen6@xiaomi.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -5,20 +5,21 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 5 commits
-  - series: 0 (4) -> 0 (5)
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 0 (5) -> 0 (5) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "better block swap batching and a different take on swap_ops v5". (7)
-      - 069a2f5228dd "mm/swap: introduce struct swap_io_ctx (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 8fe7717600ae "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

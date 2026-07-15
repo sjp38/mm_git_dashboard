@@ -2,56 +2,47 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 2 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - dropped commits
-    - 026477f1897b "mm: thp: pin the inode across a file folio split"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260713170915.239819-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 16 -> 17 commits
-  - series: 1 (16) -> 1 (16) (no change)
+- mm-unstable: 17 -> 18 commits
+  - series: 1 (16) -> 1 (17)
     - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 1 -> 2 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 8 -> 8 commits (no change)
+    - reviewer, reviewer: 8 -> 9 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - 02663cf3f712 "mm: huge_memory: fix kobject cleanup in thpsize_create error"
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 0be69dcb83b8 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
+      - 038da94cd50e "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
+      - 8fe7717600ae "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+    - b487e8d51d87 "mm: huge_memory: fix kobject cleanup in thpsize_create error"
       - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
       - Link: https://lore.kernel.org/20260713054154.120915-1-zenghongling@kylinos.cn
-- mm-new: 4 -> 3 commits
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, nobody: 1 -> 0 commits
+    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
+      - 7d9d7dd49dd1 "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
+- mm-new: 3 -> 2 commits
+  - series: 1 (3) -> 1 (2)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "Two small patches to clean up mm/mm_slot.h", v3. (2)
-      - 6d3829b2b8c0 "mm/mm_slot.h: add a helper function mm_slot_remove (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
-        - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
-        - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
-      - 4f26efa29497 "mm/mm_slot.h: add comments for mm_slot_lookup/insert (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Qi Zheng <qi.zheng@linux.dev>"
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - added "Reviewed-by: SJ Park <sj@kernel.org>"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: SJ Park <sj@kernel.org>"
-        - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

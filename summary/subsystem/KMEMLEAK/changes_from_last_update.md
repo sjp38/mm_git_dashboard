@@ -6,31 +6,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 7 commits
-  - series: 1 (3) -> 2 (6)
-    - no role, nobody: 0 -> 1 commits
-    - no role, maintainer: 4 -> 5 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - changed commits
-    - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4)
-      - 2ed07dfdf31b "mm: kmemleak: confirm suspected leaks with a second scan (0/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-0-5b93b1131089@debian.org
-        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-1-5b93b1131089@debian.org
-      - 0a8aa1deac79 "mm: kmemleak: report leaks only after N consecutive unreferenced scans (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-2-5b93b1131089@debian.org
-      - 23d1e738e70c "mm: kmemleak: factor leak confirmation into a helper (2/4)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-3-5b93b1131089@debian.org
-- mm-new: 3 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
+- mm-unstable: 7 -> 7 commits (no change)
+  - series: 2 (6) -> 2 (6) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -4,38 +4,17 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 5c09e32513d7 "mm: mglru: fix stale batch updates after memcg reparenting"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 7 commits
-  - series: 1 (3) -> 1 (5)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
+- mm-unstable: 7 -> 7 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "better block swap batching and a different take on swap_ops v5". (7)
-      - 069a2f5228dd "mm/swap: introduce struct swap_io_ctx (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - ba9939a9cff7 "mm/swap: remove SWP_FS_OPS (5/7)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-- mm-new: 2 -> 1 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - 3e0e1dc551eb "mm: let node_reclaim() return the number of pages reclaimed"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

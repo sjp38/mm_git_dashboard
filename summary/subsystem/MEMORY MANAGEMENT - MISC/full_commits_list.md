@@ -1,19 +1,16 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 1 commits
   - full commits list
-    - 511fb55b535d "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
+    - eee3bb891396 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name
-    - 32bfe6d6b85e "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260713091710.206548-1-kirill@shutemov.name
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 35 total, 5 (28) series, 7 non-series commits
+- mm-unstable: 34 total, 5 (27) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 11 commits
+    - no role, nobody: 10 commits
     - no role, no role : 13 commits
     - no role, reviewer: 3 commits
     - no role, maintainer: 2 commits
@@ -22,122 +19,129 @@
     - maintainer, nobody: 3 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-    - 2daeab572758 "mm/page_owner: document page_owner filter"
+    - c0ecde5ae6cc "mm/page_owner: document page_owner filter"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260707115411.1714314-5-zhen.ni@easystack.cn
-    - 364863a4354d "mm/page_owner: avoid docs build warning"
+    - c909f2243a0d "mm/page_owner: avoid docs build warning"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260708213548.469155-1-rdunlap@infradead.org
-      - 9bc5365e482f "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time" (11/19)
+      - 63eafe78c3ee "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time" (11/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-13-songmuchun@bytedance.com
-      - 35286f78a006 "selftests/mm: add hwpoison-panic destructive test" (5/6)
+      - cd26c6e710c0 "selftests/mm: add hwpoison-panic destructive test" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-6-c6ed5b62eea2@debian.org
-      - 0a49467bcc35 "Docs/{admin-guide,mm}/damon: fix DAMON documentation details" (2/5)
+      - 76aad8207fee "Docs/{admin-guide,mm}/damon: fix DAMON documentation details" (2/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260629145538.134832-4-sj@kernel.org
     - series "mm/damon: update, optimize, and clean up doc, tests, and code". (11 commits)
-      - efc7ce0e14f2 "Docs/mm/damon/design: update for DAMOS_QUOTA_NODE_ELIGIBLE_MEM_BP" (0/11)
+      - 1f4e8b4ab370 "Docs/mm/damon/design: update for DAMOS_QUOTA_NODE_ELIGIBLE_MEM_BP" (0/11)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260630141726.92246-1-sj@kernel.org
         - Link: https://lore.kernel.org/20260630141726.92246-2-sj@kernel.org
     - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10 commits)
-      - ff10a6ac6631 "selftests/mm: move pkey selftest helpers to pkey_util.c" (0/10)
+      - a25bc469fcc6 "selftests/mm: move pkey selftest helpers to pkey_util.c" (0/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260706081600.3570203-1-lihongfu@kylinos.cn
         - Link: https://lore.kernel.org/20260706081600.3570203-2-lihongfu@kylinos.cn
-      - 3e4a774d7180 "selftests/mm: unify pkey sighandler selftest assertions and tracing" (1/10)
+      - 459138425d30 "selftests/mm: unify pkey sighandler selftest assertions and tracing" (1/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260706081600.3570203-3-lihongfu@kylinos.cn
-      - ccc5feb5a3b0 "selftests/mm: use pkey_assert on clone_raw failure in pkey test" (2/10)
+      - ee58847da553 "selftests/mm: use pkey_assert on clone_raw failure in pkey test" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260706081600.3570203-4-lihongfu@kylinos.cn
-      - e4c94fd575a7 "selftests/mm: add missing mmap() return checks in pkey tests" (3/10)
+      - 12301ab6fbce "selftests/mm: add missing mmap() return checks in pkey tests" (3/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260706081600.3570203-5-lihongfu@kylinos.cn
-      - b7926acbe9c3 "selftests/mm: add missing pthread_create() return checks in pkey tests" (4/10)
+      - 6ee8eed9a05c "selftests/mm: add missing pthread_create() return checks in pkey tests" (4/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260706081600.3570203-6-lihongfu@kylinos.cn
-      - 8cd21737dc39 "selftests/mm: fix clone cleartid race in pkey sighandler tests" (5/10)
+      - 306db32c3212 "selftests/mm: fix clone cleartid race in pkey sighandler tests" (5/10)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260706081600.3570203-7-lihongfu@kylinos.cn
-    - b1f5bd377ebc "selftests/mm/uffd: don't treat UFFDIO_COPY -ENOENT as a failure"
+    - bd9632c9f1a8 "selftests/mm/uffd: don't treat UFFDIO_COPY -ENOENT as a failure"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260701200932.1470525-1-rppt@kernel.org
-      - de13b7b79fe6 "mm: move __alloc_pages() to mm/page_alloc.h" (13/18)
+      - ca2aa8f48941 "mm: move __alloc_pages() to mm/page_alloc.h" (13/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
-      - 4f5049e20a6d "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing" (8/15)
+      - 1ecfd7629acd "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing" (8/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-10-kirill@shutemov.name
-      - 1ffdd7331698 "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking" (10/15)
+      - a1dbe36ac3bd "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking" (10/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-12-kirill@shutemov.name
-      - 3d731fba76cc "selftests/mm: add userfaultfd RWP tests" (13/15)
+      - 1b37d8775663 "selftests/mm: add userfaultfd RWP tests" (13/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/ak-Z9KO2mP9HMOPW@thinkstation
-      - 8598b2d0a981 "Documentation/userfaultfd: document RWP working set tracking" (14/15)
+      - 451bc7a3ba1d "Documentation/userfaultfd: document RWP working set tracking" (14/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260708111417.173443-16-kirill@shutemov.name
     - series "alloc_tag: introduce IOCTL-based filtering for MAP", v8. (6 commits)
-      - 5241b8e176bc "alloc_tag: add ioctl to /proc/allocinfo" (0/6)
+      - a86778b76c58 "alloc_tag: add ioctl to /proc/allocinfo" (0/6)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/cover.1783532853.git.abhishekbapat@google.com
         - Link: https://lore.kernel.org/15596de2607ef13e7c77c6d74763f4ae992ec475.1783532853.git.abhishekbapat@google.com
-      - 5356d7ac4a9a "ksm: add mremap selftests for ksm_rmap_walk" (2/3)
+      - fbcaf314da15 "ksm: add mremap selftests for ksm_rmap_walk" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703162637070FU4ekl58Hw_Z7OSuJryZB@zte.com.cn
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - 7d774d8d871d "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - 8390b8160444 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-    - 6c4e3ce046f7 "selftests/mm: fix memleak in migration benchmark"
+    - 4b81ec7166fb "selftests/mm: fix memleak in migration benchmark"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260709081843.1451202-1-lihongfu@kylinos.cn
     - series "selftests/mm: avoid false failures in hugetlb and KSM tests", v3. (3 commits)
-      - cc1ff8128138 "selftests/mm: handle EINVAL when configuring gigantic hugepages" (0/3)
+      - 60f86a46b9cf "selftests/mm: handle EINVAL when configuring gigantic hugepages" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/cover.1783446924.git.sayalip@linux.ibm.com
         - Link: https://lore.kernel.org/2e3b585cbb30b2fc495dcd49d75de6f6da61861c.1783446924.git.sayalip@linux.ibm.com
-      - d86d542ff4bd "selftests/mm: fix ksm NUMA merge test for systems with memoryless NUMA nodes" (1/3)
+      - 3f0d591058aa "selftests/mm: fix ksm NUMA merge test for systems with memoryless NUMA nodes" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/78a3b0e3fb94004c0710872c5bab6f7381b7d63c.1783446924.git.sayalip@linux.ibm.com
-      - c3a6b7ba7bcf "selftests/mm: fix ternary operator precedence in ksm_tests" (2/3)
+      - e532f863455e "selftests/mm: fix ternary operator precedence in ksm_tests" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/ce859430287ed2642848c933a90eb9a69da361f0.1783446924.git.sayalip@linux.ibm.com
-      - 0d43e61df5d8 "Docs/mm/damon/design: document attrs-only monitoring" (16/19)
+      - a5f4a4c58173 "Docs/mm/damon/design: document attrs-only monitoring" (16/19)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260710134651.18084-18-sj@kernel.org
-      - 87abb37b2514 "Docs/admin-guide/mm/damon/usage: document weight sysfs file" (17/19)
+      - 247108505e0f "Docs/admin-guide/mm/damon/usage: document weight sysfs file" (17/19)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260710134651.18084-19-sj@kernel.org
-      - 3862d3b51eb1 "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support" (1/8)
+      - 315a94a49e98 "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support" (1/8)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/178371879503.900500.7148019929226548795.stgit@skinsburskii
-      - 94e4afa33bac "mm-hmm-add-hmm_range_fault_unlocked_timeout-for-mmap-lock-drop-support-fix" (2/8)
+        - Link: https://lore.kernel.org/178413936536.1155966.8918127042760531802.stgit@skinsburskii
+      - 1e3a11d3297e "selftests/mm: add HMM test for mmap lock-dropping faults" (2/8)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/178406768885.1106335.9955379956617151440.stgit@skinsburskii
-      - 711ad10eeb68 "selftests/mm: add HMM test for mmap lock-dropping faults" (3/8)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/178371880218.900500.12093463712908415421.stgit@skinsburskii
-      - 3b8e0c3fb40e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+        - Link: https://lore.kernel.org/178413937354.1155966.16649896548407894107.stgit@skinsburskii
+      - 8fe7717600ae "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-    - a12c32877559 "selftests/mm: remove obsolete hugetlb vmemmap test"
+    - e54a39f3fa79 "selftests/mm: remove obsolete hugetlb vmemmap test"
       - Authored by no role player, reviewed by a reviewer
       - Link: : https://lore.kernel.org/CAHk-=wiHK5_oBUdUiNAaevmN9f-ORe+QBqbRefAZaw-RbgEn3w@mail.gmail.com
       - Link: https://lore.kernel.org/20260710092427.3459121-1-songmuchun@bytedance.com
-      - 9372ad44850a "selftests: mm: test kmemleak's N-consecutive-scan leak confirmation" (3/4)
+      - 043b92f76d17 "selftests: mm: test kmemleak's N-consecutive-scan leak confirmation" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-4-5b93b1131089@debian.org
-    - a55313d23d53 "selftests/mm: fix on-fault-limit false failure under sudo-rs"
+    - 144617e09dea "selftests/mm: fix on-fault-limit false failure under sudo-rs"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260713092700.464376-1-injaeryou@gmail.com
-    - d71c3b3bc5b1 "selftests/mm: factor out hmm_buffer_alloc() to consolidate buffer setup"
+    - 8d70e2623a68 "selftests/mm: factor out hmm_buffer_alloc() to consolidate buffer setup"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260713033209.280435-1-lihongfu@kylinos.cn
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+    - 69935776f917 "docs/mm: fix braces"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
+    - 1ac7e35ac0c9 "selftests/mm: add PAGEMAP_SCAN test for THP PMD holes"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260715144234.442721-3-kirill@shutemov.name
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

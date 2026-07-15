@@ -6,49 +6,53 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 17 -> 22 commits
-  - series: 1 (17) -> 2 (22)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 5 -> 9 commits
+- mm-unstable: 22 -> 22 commits (no change)
+  - series: 2 (22) -> 2 (22) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
-  - new commits
-    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
-      - 4f01a217ecb7 "mm/rmap: add try_to_unmap_hugetlb_one (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260713050050.1017741-3-dev.jain@arm.com
   - changed commits
-    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
-      - a7083a3ccdf2 "mm/rmap: convert page -> folio for hwpoison checks (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713050050.1017741-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260713050050.1017741-2-dev.jain@arm.com
-      - b753948749d8 "mm/rmap: refactor some code around lazyfree folio unmapping (2/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713050050.1017741-4-dev.jain@arm.com
-      - 2360700361b1 "mm/rmap: refactor anon folio unmap in try_to_unmap_one (3/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713050050.1017741-5-dev.jain@arm.com
-      - c3593872c568 "mm/rmap: add anon folio unmap dispatcher (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713050050.1017741-6-dev.jain@arm.com
-- mm-new: 5 -> 0 commits
-  - series: 1 (5) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 4 -> 0 commits
-  - dropped commits
-    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
-      - 10fcc91ebf84 "mm/rmap: Add try_to_unmap_hugetlb_one (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260713050050.1017741-3-dev.jain@arm.com
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 21d46f61cde2 "mm: move vma_start_pgoff() into mm.h and clean up (0/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-0-2a5aa403d977@kernel.org
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-1-2a5aa403d977@kernel.org
+      - 6f2da8dadcfc "mm/rmap: update mm/interval_tree.c comments (4/33)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-5-2a5aa403d977@kernel.org
+      - 0be69dcb83b8 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
+      - 82507588a99b "mm/rmap: elide unnecessary static inline's in interval_tree.c (6/33)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-7-2a5aa403d977@kernel.org
+      - 038da94cd50e "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
+      - fd3bb6d1527c "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
+      - 59b99b2589af "mm/rmap: rename anon_vma_interval_tree_*() params and use pgoff_t (9/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-10-2a5aa403d977@kernel.org
+      - f6d6f8f2932e "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

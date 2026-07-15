@@ -5,21 +5,28 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 8 commits
-  - series: 1 (4) -> 1 (5)
-    - no role, nobody: 2 -> 3 commits
+- mm-unstable: 8 -> 8 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "better block swap batching and a different take on swap_ops v5". (7)
-      - ba9939a9cff7 "mm/swap: remove SWP_FS_OPS (5/7)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 2b427f490ec0 "mm: introduce and use linear_page_delta() (16/33)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-17-2a5aa403d977@kernel.org
+      - 8fe7717600ae "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

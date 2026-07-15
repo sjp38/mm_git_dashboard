@@ -3,46 +3,44 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 176d46821733 "mm/hugetlb: fix list corruption in allocate_file_region_entries()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - Link: https://lore.kernel.org/20260713171456.300518-2-caixiangfeng@bytedance.com
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 33 -> 34 commits
-  - series: 3 (30) -> 3 (31)
+- mm-unstable: 34 -> 35 commits
+  - series: 3 (31) -> 3 (32)
     - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 12 -> 13 commits
+    - no role, no role : 13 -> 13 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 3 -> 3 commits (no change)
+    - reviewer, reviewer: 3 -> 4 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
-      - 4f01a217ecb7 "mm/rmap: add try_to_unmap_hugetlb_one (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260713050050.1017741-3-dev.jain@arm.com
   - changed commits
-    - series "mm/page_owner: misc cleanups", v6. (6)
-      - b587a133724e "mm: use enum migrate_reason instead of int for migration reason parameters (2/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
-- mm-new: 2 -> 1 commits
-  - series: 0 (2) -> 0 (1)
-    - no role, no role : 1 -> 0 commits
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-  - dropped commits
-    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
-      - 10fcc91ebf84 "mm/rmap: Add try_to_unmap_hugetlb_one (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260713050050.1017741-3-dev.jain@arm.com
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 0be69dcb83b8 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
+      - 038da94cd50e "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
+      - 8fe7717600ae "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
+      - 7d9d7dd49dd1 "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

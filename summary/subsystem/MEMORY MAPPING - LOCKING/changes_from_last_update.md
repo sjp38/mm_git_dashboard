@@ -4,26 +4,26 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v3. (4)
-      - 05188169170f "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-0-b812eccfa0f9@kernel.org"
-        - added "Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-1-b812eccfa0f9@kernel.org"
-        - added "Cc: Dave Hansen <dave.hansen@linux.intel.com>"
-        - dropped "Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-1-ad134cc3a12a@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-0-ad134cc3a12a@kernel.org"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-0-b812eccfa0f9@kernel.org
-        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-1-b812eccfa0f9@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+  - changed commits
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 457b92705e12 "mm/vma: introduce vma_assert_can_modify() (21/33)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-22-2a5aa403d977@kernel.org
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 69935776f917 "docs/mm: fix braces"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

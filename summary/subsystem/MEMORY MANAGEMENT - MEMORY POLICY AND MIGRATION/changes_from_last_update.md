@@ -15,15 +15,13 @@
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/page_owner: misc cleanups", v6. (6)
-      - 2c04fa08c48e "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason (1/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260714015117.78351-3-ye.liu@linux.dev
-      - b587a133724e "mm: use enum migrate_reason instead of int for migration reason parameters (2/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 8fe7717600ae "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

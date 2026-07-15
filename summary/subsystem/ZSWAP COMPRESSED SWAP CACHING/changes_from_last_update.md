@@ -5,19 +5,12 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 2 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 0 -> 1 commits
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "better block swap batching and a different take on swap_ops v5". (7)
-      - 069a2f5228dd "mm/swap: introduce struct swap_io_ctx (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -15,40 +15,40 @@
     - no role, reviewer: 1 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-    - bf0eb560ec3e "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
+    - 2ec64343384b "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260601082609.170076-1-jianhuizzzzz@gmail.com
-      - bfb2c7ba1208 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - de3661331649 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 85cdb29233fd "userfaultfd: test uffd VMA flags through the vma_flags_t API" (3/15)
+      - cac9eec604ed "userfaultfd: test uffd VMA flags through the vma_flags_t API" (3/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-5-kirill@shutemov.name
-      - 73725128ef78 "mm: add VM_UFFD_RWP VMA flag" (4/15)
+      - 363bf46e3a90 "mm: add VM_UFFD_RWP VMA flag" (4/15)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260708111417.173443-6-kirill@shutemov.name
-      - 6e09eac1a777 "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
+      - dfee88f3a226 "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
-      - b38f658c7734 "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - bb9bf5899159 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - 4f5049e20a6d "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing" (8/15)
+      - 1ecfd7629acd "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing" (8/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-10-kirill@shutemov.name
-      - 0c4bc4efdf8c "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
+      - b85fab7b37a0 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
-      - 78a4e8add859 "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
+      - 36dd7632bd02 "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
-      - 8a0220165d91 "userfaultfd: add UFFDIO_SET_MODE for runtime sync/async toggle" (12/15)
+      - 264e71511037 "userfaultfd: add UFFDIO_SET_MODE for runtime sync/async toggle" (12/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-14-kirill@shutemov.name
-      - 8598b2d0a981 "Documentation/userfaultfd: document RWP working set tracking" (14/15)
+      - 451bc7a3ba1d "Documentation/userfaultfd: document RWP working set tracking" (14/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260708111417.173443-16-kirill@shutemov.name
-      - 3b8e0c3fb40e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 8fe7717600ae "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

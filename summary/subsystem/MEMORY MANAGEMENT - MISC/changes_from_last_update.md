@@ -1,64 +1,56 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 1 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 30 -> 35 commits
-  - series: 5 (26) -> 5 (28)
-    - no role, nobody: 7 -> 11 commits
+- mm-unstable: 35 -> 34 commits
+  - series: 5 (28) -> 5 (27)
+    - no role, nobody: 11 -> 10 commits
     - no role, no role : 13 -> 13 commits (no change)
-    - no role, reviewer: 2 -> 3 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - new commits
+  - changed commits
+    - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v9. (8)
+      - 315a94a49e98 "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support (1/8)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/178413936536.1155966.8918127042760531802.stgit@skinsburskii"
+        - dropped "Link: https://lore.kernel.org/178371879503.900500.7148019929226548795.stgit@skinsburskii"
+        - Link: https://lore.kernel.org/178413936536.1155966.8918127042760531802.stgit@skinsburskii
+      - 1e3a11d3297e "selftests/mm: add HMM test for mmap lock-dropping faults (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/178413937354.1155966.16649896548407894107.stgit@skinsburskii"
+        - dropped "Link: https://lore.kernel.org/178371880218.900500.12093463712908415421.stgit@skinsburskii"
+        - Link: https://lore.kernel.org/178413937354.1155966.16649896548407894107.stgit@skinsburskii
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 8fe7717600ae "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+  - dropped commits
     - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v8. (8)
       - 94e4afa33bac "mm-hmm-add-hmm_range_fault_unlocked_timeout-for-mmap-lock-drop-support-fix (2/8)"
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/178406768885.1106335.9955379956617151440.stgit@skinsburskii
-  - changed commits
-    - 6c4e3ce046f7 "selftests/mm: fix memleak in migration benchmark"
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 69935776f917 "docs/mm: fix braces"
       - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
-      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20260709081843.1451202-1-lihongfu@kylinos.cn
-    - a12c32877559 "selftests/mm: remove obsolete hugetlb vmemmap test"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "[akpm@linux-foundation.org: don't clean old executables out of .gitignore]"
-      - added "Link: : https://lore.kernel.org/CAHk-=wiHK5_oBUdUiNAaevmN9f-ORe+QBqbRefAZaw-RbgEn3w@mail.gmail.com"
-      - Link: : https://lore.kernel.org/CAHk-=wiHK5_oBUdUiNAaevmN9f-ORe+QBqbRefAZaw-RbgEn3w@mail.gmail.com
-      - Link: https://lore.kernel.org/20260710092427.3459121-1-songmuchun@bytedance.com
-    - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4)
-      - 9372ad44850a "selftests: mm: test kmemleak's N-consecutive-scan leak confirmation (3/4)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-4-5b93b1131089@debian.org
-    - a55313d23d53 "selftests/mm: fix on-fault-limit false failure under sudo-rs"
+      - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
+    - 1ac7e35ac0c9 "selftests/mm: add PAGEMAP_SCAN test for THP PMD holes"
       - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260713092700.464376-1-injaeryou@gmail.com
-    - d71c3b3bc5b1 "selftests/mm: factor out hmm_buffer_alloc() to consolidate buffer setup"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260713033209.280435-1-lihongfu@kylinos.cn
-- mm-new: 6 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 4 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - dropped commits
-    - a4eb7bd5f07e "selftests-mm-remove-obsolete-hugetlb-vmemmap-test-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/CAHk-=wiHK5_oBUdUiNAaevmN9f-ORe+QBqbRefAZaw-RbgEn3w@mail.gmail.com
-    - d81ca660a275 "selftests/mm: add hugetlb_region_cache_race regression test"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260713171456.300518-3-caixiangfeng@bytedance.com
+      - Link: https://lore.kernel.org/20260715144234.442721-3-kirill@shutemov.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
