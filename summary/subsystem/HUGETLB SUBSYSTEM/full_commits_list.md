@@ -2,73 +2,74 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 1 commits
     - no role, no role : 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 8b8ed546410a "mm/hugetlb: fix null nodemask in alloc_fresh_hugetlb_folio"
+    - cc5429a9c663 "mm/hugetlb: fix null nodemask in alloc_fresh_hugetlb_folio"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260705175119.440599-1-souravpanda@google.com
-    - f58290d01091 "mm/hugetlb: fix swap entry corruption when clearing uffd-wp at fork()"
+    - 558a5cd7003a "mm/hugetlb: fix swap entry corruption when clearing uffd-wp at fork()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260708090110.136162-1-kirill@shutemov.name
-    - b42b8e870d0a "mm/hugetlb: fix list corruption in allocate_file_region_entries()"
-      - Authored by no role player, reviewed by nobody
+    - 176d46821733 "mm/hugetlb: fix list corruption in allocate_file_region_entries()"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713171456.300518-2-caixiangfeng@bytedance.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 33 total, 3 (30) series, 3 non-series commits
+- mm-unstable: 34 total, 3 (31) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 6 commits
-    - no role, no role : 12 commits
+    - no role, no role : 13 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 9 commits
     - reviewer, no role : 1 commits
     - reviewer, reviewer: 3 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-      - 228d56fa082c "mm: use enum migrate_reason instead of int for migration reason parameters" (2/6)
+      - b587a133724e "mm: use enum migrate_reason instead of int for migration reason parameters" (2/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
     - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19 commits)
-      - 99c2c28468a9 "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages" (0/19)
+      - e9cbf70113e8 "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages" (0/19)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260612035903.2468601-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260612035903.2468601-2-songmuchun@bytedance.com
-      - 386961893f36 "mm/hugetlb_vmemmap: fix __hugetlb_vmemmap_optimize_folios()" (1/19)
+      - 65891335c181 "mm/hugetlb_vmemmap: fix __hugetlb_vmemmap_optimize_folios()" (1/19)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260612035903.2468601-3-songmuchun@bytedance.com
-      - 2ba8ae10217b "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
+      - 5f8d4f3a7361 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
-      - d35c55b0590d "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time" (11/19)
+      - 9bc5365e482f "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time" (11/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-13-songmuchun@bytedance.com
-      - a6d52e8be93c "mm/hugetlb: refactor early boot gigantic hugepage allocation" (12/19)
+      - 1e9973718f9e "mm/hugetlb: refactor early boot gigantic hugepage allocation" (12/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-14-songmuchun@bytedance.com
-      - ce8353913214 "mm/hugetlb: free cross-zone bootmem gigantic pages after allocation" (13/19)
+      - bc55011ba91a "mm/hugetlb: free cross-zone bootmem gigantic pages after allocation" (13/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-15-songmuchun@bytedance.com
-      - a4db70da8b08 "mm/hugetlb_vmemmap: move bootmem HVO setup to early init" (14/19)
+      - ad87bd90bb46 "mm/hugetlb_vmemmap: move bootmem HVO setup to early init" (14/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-16-songmuchun@bytedance.com
-      - 3603899abac8 "mm/hugetlb: remove obsolete bootmem cross-zone checks" (15/19)
+      - f09d3ec1925c "mm/hugetlb: remove obsolete bootmem cross-zone checks" (15/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-17-songmuchun@bytedance.com
-      - 97d2787e3175 "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
+      - a04086163a86 "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
-      - e631b94a3005 "mm/hugetlb: remove unused bootmem cma field" (17/19)
+      - 9d9a77fd47a9 "mm/hugetlb: remove unused bootmem cma field" (17/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260612035903.2468601-19-songmuchun@bytedance.com
-    - 171043a860a1 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
+    - fde85e3cb118 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260628190155.3655895-1-souravpanda@google.com
-    - c2cdbc7e309b "mm/hugetlb: avoid unnecessary TLB flush for empty folio list in vmemmap optimize"
+    - 2e968bb36065 "mm/hugetlb: avoid unnecessary TLB flush for empty folio list in vmemmap optimize"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260701053422.3664813-1-guanwentao@uniontech.com
       - Link: https://lore.kernel.org/20260630113857.3319612-1-guanwentao@uniontech.com
     - series "Open HugeTLB allocation routine for more generic use", v4. (6 commits)
-      - fae765d612a8 "mm: hugetlb: consolidate interpretation of gbl_chg within alloc_hugetlb_folio()" (0/6)
+      - 32385d6fe0a6 "mm: hugetlb: consolidate interpretation of gbl_chg within alloc_hugetlb_folio()" (0/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-0-d53cefcccf34@google.com
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-1-d53cefcccf34@google.com
@@ -76,75 +77,74 @@
         - Link: https://github.com/googleprodkernel/linux-cc/tree/wip-gmem-conversions-hugetlb-restructuring-12-08-25 [2]
         - Link: https://lore.kernel.org/all/agqaUcVp_hwH-VXr@localhost.localdomain/ [3]
         - Link: https://sashiko.dev/#/patchset/20260518-hugetlb-open-up-v3-0-e14b302477f8@google.com [4]
-      - 53c156d302f4 "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol()" (1/6)
+      - 12eb90bda8ad "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol()" (1/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
-      - c84471d0ad6b "mm: hugetlb: move mpol interpretation out of dequeue_hugetlb_folio_vma()" (2/6)
+      - c8c4bd088a99 "mm: hugetlb: move mpol interpretation out of dequeue_hugetlb_folio_vma()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-3-d53cefcccf34@google.com
-      - dc7756850403 "mm: hugetlb: use error variable in alloc_hugetlb_folio" (3/6)
+      - f4f39f8907e1 "mm: hugetlb: use error variable in alloc_hugetlb_folio" (3/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-4-d53cefcccf34@google.com
-      - 4237d87f13eb "mm: hugetlb: move mem_cgroup_charge_hugetlb() earlier in allocation" (4/6)
+      - df3243185c8e "mm: hugetlb: move mem_cgroup_charge_hugetlb() earlier in allocation" (4/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-5-d53cefcccf34@google.com
-      - caa6c74656f1 "mm: hugetlb: refactor out hugetlb_alloc_folio()" (5/6)
+      - 6196f4af1cd4 "mm: hugetlb: refactor out hugetlb_alloc_folio()" (5/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-6-d53cefcccf34@google.com
-      - 170ac4f27506 "mm: split out internal page_alloc.h" (3/18)
+      - 50cf23975103 "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-      - 4fe2fd3c85c0 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof()" (4/18)
+      - f8b8c2539694 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof()" (4/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
-      - 18b209f051c6 "mm/rmap: use huge_ptep_get() in try_to_unmap_one()" (1/6)
+      - 289a831ea133 "mm/rmap: use huge_ptep_get() in try_to_unmap_one()" (1/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
-    - 727944339eb0 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+    - c57ef2930be2 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
-      - 29a7a60180ce "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - bfb2c7ba1208 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 715de75968ea "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
+      - 6e09eac1a777 "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
-      - 6dc2c65463ae "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - b38f658c7734 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - e4a52deb44cd "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
+      - 0c4bc4efdf8c "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
-      - c7d281ffeb85 "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
+      - 78a4e8add859 "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
-      - 5aeb06d34a4b "mm/hugetlb_vmemmap: remove bootmem_info leftovers" (7/10)
+      - 272e0ca1d992 "mm/hugetlb_vmemmap: remove bootmem_info leftovers" (7/10)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-8-156ce4986598@kernel.org
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - 142ff4ca1c67 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - 7d774d8d871d "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - 66ee83608c9f "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
+      - cc3ca9063f72 "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - cd572e286492 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
+      - f96e788cd7fb "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - 45b4f55b973e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 3b8e0c3fb40e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-- mm-new: 2 total, 0 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - reviewer, reviewer: 1 commits
-  - full commits list
-      - 10fcc91ebf84 "mm/rmap: Add try_to_unmap_hugetlb_one" (1/5)
+      - 4f01a217ecb7 "mm/rmap: add try_to_unmap_hugetlb_one" (1/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260713050050.1017741-3-dev.jain@arm.com
-      - 456aedb3fa6e "mm: convert __get_unmapped_area() to use vma_flags_t" (2/13)
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - reviewer, reviewer: 1 commits
+  - full commits list
+      - ac3e57389384 "mm: convert __get_unmapped_area() to use vma_flags_t" (2/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

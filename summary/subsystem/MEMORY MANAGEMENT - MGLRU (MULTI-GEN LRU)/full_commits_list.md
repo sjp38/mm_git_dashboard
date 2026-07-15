@@ -4,61 +4,63 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - f7cfeb4a95ee "mm: mglru: fix stale batch updates after memcg reparenting"
+    - 5c09e32513d7 "mm: mglru: fix stale batch updates after memcg reparenting"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 10 total, 1 (7) series, 3 non-series commits
+- mm-unstable: 12 total, 1 (9) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 3 commits
-    - no role, reviewer: 1 commits
+    - no role, reviewer: 2 commits
     - no role, maintainer: 4 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 9b87ff871e53 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
+    - db8251067375 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
-      - 97d2787e3175 "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
+      - a04086163a86 "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
-    - 9d8cbc409fe4 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 6e5784116536 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - c27b0e8321e0 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
+    - 715fa09938cc "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
-      - f17bfb9525f0 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer" (6/10)
+      - 45b9948a3d4d "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer" (6/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
-      - 759fe29d9964 "memcg: bail out proactive reclaim when memcg is dying" (2/4)
+      - e7003d572642 "memcg: bail out proactive reclaim when memcg is dying" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
-      - 170ac4f27506 "mm: split out internal page_alloc.h" (3/18)
+      - 50cf23975103 "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
     - series "mm: clean up folio LRU and swap declarations", v9. (3 commits)
-      - c5c37ce83e4a "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - 905d0873e614 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-      - b57def7ce8f8 "mm: rename swap.c to folio.c" (1/3)
+      - 934e439ebb30 "mm: rename swap.c to folio.c" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-2-2bc72b4f8730@gmail.com
-      - 29a7a60180ce "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - bfb2c7ba1208 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-- mm-new: 2 total, 0 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, reviewer: 1 commits
-  - full commits list
-      - 0a3c690346b1 "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - 069a2f5228dd "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - 19ab9e8d0844 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - ba9939a9cff7 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - 3e0e1dc551eb "mm: let node_reclaim() return the number of pages reclaimed"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

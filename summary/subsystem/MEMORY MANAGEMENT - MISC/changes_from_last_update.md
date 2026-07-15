@@ -4,106 +4,61 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-  - changed commits
-    - 7d3e8ca83624 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260713091710.206548-1-kirill@shutemov.name"
-      - dropped "Link: https://lore.kernel.org/20260709121629.205562-1-kirill@shutemov.name"
-      - Link: https://lore.kernel.org/20260713091710.206548-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 19 -> 30 commits
-  - series: 3 (16) -> 5 (26)
-    - no role, nobody: 3 -> 7 commits
-    - no role, no role : 11 -> 13 commits
-    - no role, reviewer: 1 -> 2 commits
-    - no role, maintainer: 1 -> 2 commits
+- mm-unstable: 30 -> 35 commits
+  - series: 5 (26) -> 5 (28)
+    - no role, nobody: 7 -> 11 commits
+    - no role, no role : 13 -> 13 commits (no change)
+    - no role, reviewer: 2 -> 3 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 0 -> 1 commits
-    - maintainer, nobody: 1 -> 3 commits
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v8. (8)
+      - 94e4afa33bac "mm-hmm-add-hmm_range_fault_unlocked_timeout-for-mmap-lock-drop-support-fix (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/178406768885.1106335.9955379956617151440.stgit@skinsburskii
   - changed commits
-    - series "KSM: performance optimizations for rmap_walk_ksm", v11. (3)
-      - 281cd54c5379 "ksm: add mremap selftests for ksm_rmap_walk (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260703162637070FU4ekl58Hw_Z7OSuJryZB@zte.com.cn
-    - series "mm: split a couple of headers from internal.h", v2. (3)
-      - 142ff4ca1c67 "mm: split out mm_init and memblock declarations from internal.h (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-    - 2dd5d89f0c3e "selftests/mm: fix memleak in migration benchmark"
+    - 6c4e3ce046f7 "selftests/mm: fix memleak in migration benchmark"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Balbir Singh <balbirs@nvidia.com>"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260709081843.1451202-1-lihongfu@kylinos.cn
+    - a12c32877559 "selftests/mm: remove obsolete hugetlb vmemmap test"
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Acked-by: Balbir Singh <balbirs@nvidia.com>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
-      - Link: https://lore.kernel.org/20260709081843.1451202-1-lihongfu@kylinos.cn
-    - series "selftests/mm: avoid false failures in hugetlb and KSM tests", v3. (3)
-      - c462e78892db "selftests/mm: handle EINVAL when configuring gigantic hugepages (0/3)"
+      - added "[akpm@linux-foundation.org: don't clean old executables out of .gitignore]"
+      - added "Link: : https://lore.kernel.org/CAHk-=wiHK5_oBUdUiNAaevmN9f-ORe+QBqbRefAZaw-RbgEn3w@mail.gmail.com"
+      - Link: : https://lore.kernel.org/CAHk-=wiHK5_oBUdUiNAaevmN9f-ORe+QBqbRefAZaw-RbgEn3w@mail.gmail.com
+      - Link: https://lore.kernel.org/20260710092427.3459121-1-songmuchun@bytedance.com
+    - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4)
+      - 9372ad44850a "selftests: mm: test kmemleak's N-consecutive-scan leak confirmation (3/4)"
         - Authored by no role player, reviewed by nobody
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/cover.1783446924.git.sayalip@linux.ibm.com
-        - Link: https://lore.kernel.org/2e3b585cbb30b2fc495dcd49d75de6f6da61861c.1783446924.git.sayalip@linux.ibm.com
-      - b3c4b34d73c1 "selftests/mm: fix ksm NUMA merge test for systems with memoryless NUMA nodes (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/78a3b0e3fb94004c0710872c5bab6f7381b7d63c.1783446924.git.sayalip@linux.ibm.com
-      - f5b658139911 "selftests/mm: fix ternary operator precedence in ksm_tests (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/ce859430287ed2642848c933a90eb9a69da361f0.1783446924.git.sayalip@linux.ibm.com
-    - series "mm/damon: introduce data attributes only monitoring". (19)
-      - c90ceb74b971 "Docs/mm/damon/design: document attrs-only monitoring (16/19)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260710134651.18084-18-sj@kernel.org
-      - 5110a92720fa "Docs/admin-guide/mm/damon/usage: document weight sysfs file (17/19)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260710134651.18084-19-sj@kernel.org
-    - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v8. (8)
-      - d68817e9c319 "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support (1/8)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/178371879503.900500.7148019929226548795.stgit@skinsburskii
-      - b9228f4d0f62 "selftests/mm: add HMM test for mmap lock-dropping faults (2/8)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/178371880218.900500.12093463712908415421.stgit@skinsburskii
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 45b4f55b973e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-- mm-new: 12 -> 6 commits
-  - series: 2 (10) -> 0 (1)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 3 -> 0 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
-    - maintainer, nobody: 2 -> 1 commits
-  - new commits
+        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-4-5b93b1131089@debian.org
+    - a55313d23d53 "selftests/mm: fix on-fault-limit false failure under sudo-rs"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260713092700.464376-1-injaeryou@gmail.com
+    - d71c3b3bc5b1 "selftests/mm: factor out hmm_buffer_alloc() to consolidate buffer setup"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260713033209.280435-1-lihongfu@kylinos.cn
+- mm-new: 6 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 4 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
+  - dropped commits
     - a4eb7bd5f07e "selftests-mm-remove-obsolete-hugetlb-vmemmap-test-fix"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/CAHk-=wiHK5_oBUdUiNAaevmN9f-ORe+QBqbRefAZaw-RbgEn3w@mail.gmail.com
     - d81ca660a275 "selftests/mm: add hugetlb_region_cache_race regression test"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260713171456.300518-3-caixiangfeng@bytedance.com
-    - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4)
-      - 37ffdf155d35 "selftests: mm: test kmemleak's N-consecutive-scan leak confirmation (3/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-4-5b93b1131089@debian.org
-    - 53f0cd99b4f4 "selftests/mm: fix on-fault-limit false failure under sudo-rs"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260713092700.464376-1-injaeryou@gmail.com
-    - d34e5bb85015 "selftests/mm: factor out hmm_buffer_alloc() to consolidate buffer setup"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260713033209.280435-1-lihongfu@kylinos.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

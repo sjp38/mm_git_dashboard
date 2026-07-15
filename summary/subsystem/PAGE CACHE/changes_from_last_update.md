@@ -5,37 +5,21 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 7 commits
-  - series: 1 (2) -> 1 (4)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 2 -> 3 commits
-    - reviewer, maintainer: 0 -> 1 commits
+- mm-unstable: 7 -> 8 commits
+  - series: 1 (4) -> 1 (5)
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - b66c19355653 "mm: remove wb_writeout_inc"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260710051052.1839523-1-hch@lst.de
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - d7538891f7e8 "mm: introduce and use linear_page_delta() (16/33)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-17-2a5aa403d977@kernel.org
-      - 45b4f55b973e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-- mm-new: 3 -> 1 commits
-  - series: 0 (2) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
-  - new commits
     - series "better block swap batching and a different take on swap_ops v5". (7)
-      - 19ab9e8d0844 "mm/swap: remove SWP_FS_OPS (5/7)"
+      - ba9939a9cff7 "mm/swap: remove SWP_FS_OPS (5/7)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

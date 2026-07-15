@@ -6,21 +6,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 12 commits
-  - series: 0 (10) -> 0 (11)
+- mm-unstable: 12 -> 12 commits (no change)
+  - series: 0 (11) -> 0 (11) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 45b4f55b973e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - reviewer, maintainer: 1 -> 0 commits
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

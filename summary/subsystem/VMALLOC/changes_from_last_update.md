@@ -1,65 +1,49 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, no role : 0 -> 1 commits
-  - new commits
-    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v2. (4)
-      - 2792dea8de06 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/4)"
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v3. (4)
+      - 05188169170f "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/4)"
         - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-0-ad134cc3a12a@kernel.org
-        - Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-1-ad134cc3a12a@kernel.org
+        - added "Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-1-b812eccfa0f9@kernel.org"
+        - added "Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-0-b812eccfa0f9@kernel.org"
+        - added "Cc: Dave Hansen <dave.hansen@linux.intel.com>"
+        - dropped "Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-0-ad134cc3a12a@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-1-ad134cc3a12a@kernel.org"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-0-b812eccfa0f9@kernel.org
+        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-1-b812eccfa0f9@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 495d87b56c11 "arm64: remove redundant concurrent ptdump UAF mitigation (3/4)"
+      - 8e28ffcd3d47 "arm64: remove redundant concurrent ptdump UAF mitigation (3/4)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-4-ad134cc3a12a@kernel.org
+        - added "Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-4-b812eccfa0f9@kernel.org"
+        - added "Cc: Dave Hansen <dave.hansen@linux.intel.com>"
+        - dropped "Link: https://lore.kernel.org/20260712-series-vmap-race-fix-v2-4-ad134cc3a12a@kernel.org"
+        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-4-b812eccfa0f9@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 8 commits
-  - series: 1 (1) -> 1 (5)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 3 -> 6 commits
-    - no role, maintainer: 0 -> 1 commits
+- mm-unstable: 8 -> 8 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 6 -> 7 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - 0137c321d59f "mm: split out vmalloc declarations from internal.h"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
     - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v6. (6)
-      - 9c2e27802372 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic (2/6)"
+      - cb41027931b3 "mm/vmalloc: map contiguous pages in batches for vmap() if possible (4/6)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260709073823.6643-4-jiangwen6@xiaomi.com
-      - fdafce6d440c "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260709073823.6643-5-jiangwen6@xiaomi.com
-      - c46377cd2335 "mm/vmalloc: map contiguous pages in batches for vmap() if possible (4/6)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
         - Link: https://lore.kernel.org/20260709073823.6643-6-jiangwen6@xiaomi.com
-      - 64e7cacd7e4f "mm/vmalloc: align vm_area so vmap() can batch mappings (5/6)"
+      - 098b39c2ab53 "mm/vmalloc: align vm_area so vmap() can batch mappings (5/6)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
         - Link: https://lore.kernel.org/20260709073823.6643-7-jiangwen6@xiaomi.com
-- mm-new: 7 -> 0 commits
-  - series: 1 (7) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 3 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, nobody: 1 -> 0 commits
-  - dropped commits
-    - series "mm: fix UAF caused by race between ptdump and vmap". (2)
-      - 50eab481d14c "mm/vmalloc: acquire init_mm read lock on huge vmap promotion (0/2)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260710-series-vmap-race-fix-v1-0-5b3794c113fe@kernel.org
-        - Link: https://lore.kernel.org/20260710-series-vmap-race-fix-v1-1-5b3794c113fe@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - fcba32f37615 "Revert "arm64: Enable vmalloc-huge with ptdump" (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260710-series-vmap-race-fix-v1-2-5b3794c113fe@kernel.org
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

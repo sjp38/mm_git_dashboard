@@ -2,82 +2,79 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 10 total, 2 (6) series, 4 non-series commits
+- mm-unstable: 17 total, 3 (13) series, 4 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 2 commits
     - no role, no role : 3 commits
+    - no role, reviewer: 4 commits
     - no role, maintainer: 6 commits
+    - reviewer, nobody: 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
     - series "mm: drop "sub" prefix from various places". (2 commits)
-      - 822b88d2ad8b "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
+      - d71f1a2f0291 "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260623125723.2503832-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260623125723.2503832-2-dev.jain@arm.com
-    - 8519636424ae "include/linux/swap.h: remove unused leftovers"
+    - 45a2d1129e45 "include/linux/swap.h: remove unused leftovers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/68591daf0d679e5a0072d63751f187d14613e2b0.1781146877.git.ritesh.list@gmail.com
-    - 9d8cbc409fe4 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 6e5784116536 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - a69132e9d500 "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
+    - 84821d314495 "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260608143242.2869392-1-usama.arif@linux.dev
       - Link: https://lore.kernel.org/all/dca2824e8e88e826c6b260a831d79089b5b9c79d.camel@surriel.com/T/#u [1]
-      - 034a1859d8ba "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
+      - 42a2ac2b41c7 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
     - series "mm: clean up folio LRU and swap declarations", v9. (3 commits)
-      - c5c37ce83e4a "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - 905d0873e614 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-      - 1ad6dbf7afd1 "mm: move reclaim-internal declarations out of swap.h" (2/3)
+      - 0b30bfa68740 "mm: move reclaim-internal declarations out of swap.h" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-3-2bc72b4f8730@gmail.com
-      - 29a7a60180ce "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - bfb2c7ba1208 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 6dc2c65463ae "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - b38f658c7734 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-    - a4271215228d "memcg: move mem_cgroup_swappiness to memcontrol.h"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260710111224.2355668-1-ridong.chen@linux.dev
-- mm-new: 9 total, 1 (7) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, reviewer: 4 commits
-    - no role, maintainer: 1 commits
-    - reviewer, nobody: 1 commits
-  - full commits list
     - series "better block swap batching and a different take on swap_ops v5". (7 commits)
-      - ea47574b61de "shmem: provide a shmem_write_folio wrapper" (0/7)
+      - 5d585ac7d4fc "shmem: provide a shmem_write_folio wrapper" (0/7)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260713093350.2154226-1-hch@lst.de
         - Link: https://lore.kernel.org/20260713093350.2154226-2-hch@lst.de
-      - 0a3c690346b1 "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - 069a2f5228dd "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - aef925d2f8e6 "mm/swap: also use struct swap_iocb for block I/O" (2/7)
+      - 2d324acead27 "mm/swap: also use struct swap_iocb for block I/O" (2/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-4-hch@lst.de
-      - e6324d6ec64c "mm/swap: remove count_swpout_vm_event" (3/7)
+      - 3c770e67a65f "mm/swap: remove count_swpout_vm_event" (3/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-5-hch@lst.de
-      - a5a6263090ed "mm/swap: use swap_ops to register swap device's methods" (4/7)
+      - a198e971cb07 "mm/swap: use swap_ops to register swap device's methods" (4/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-6-hch@lst.de
-      - 19ab9e8d0844 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - ba9939a9cff7 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-      - 650a4a706ece "mm/vmstat: add NRSWP{IN,OUT} counters" (6/7)
+      - f8e81127aa8c "mm/vmstat: add NRSWP{IN,OUT} counters" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-8-hch@lst.de
-    - 05e247f9fb08 "mm/swap: clarify unreachable cond_resched() in swap_reclaim_full_clusters"
+    - 2d31f2d65bbc "mm/swap: clarify unreachable cond_resched() in swap_reclaim_full_clusters"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://sashiko.dev/#/patchset/20260713025644.170839-1-youngjun.park@lge.com?part=4
       - Link: https://lore.kernel.org/20260713045014.219653-1-youngjun.park@lge.com
-    - 2fc4daf5c477 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - 59c684a9908d "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

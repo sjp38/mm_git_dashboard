@@ -6,41 +6,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 10 commits
-  - series: 1 (6) -> 1 (10)
+- mm-unstable: 10 -> 10 commits (no change)
+  - series: 1 (10) -> 1 (10) (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-    - reviewer, no role : 0 -> 2 commits
-    - reviewer, reviewer: 1 -> 3 commits
-  - changed commits
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 66ee83608c9f "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - cd572e286492 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - 34c0efe809f5 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
-      - 9d6ac3dca2e9 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
-- mm-new: 4 -> 0 commits
-  - series: 0 (4) -> 0 (0)
-    - reviewer, no role : 2 -> 0 commits
-    - reviewer, reviewer: 2 -> 0 commits
+    - reviewer, no role : 2 -> 2 commits (no change)
+    - reviewer, reviewer: 3 -> 3 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

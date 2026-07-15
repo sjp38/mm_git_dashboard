@@ -3,48 +3,64 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - f7cfeb4a95ee "mm: mglru: fix stale batch updates after memcg reparenting"
+    - 5c09e32513d7 "mm: mglru: fix stale batch updates after memcg reparenting"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
       - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 9 commits
+- mm-unstable: 9 -> 14 commits
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 6 -> 7 commits
+    - no role, maintainer: 7 -> 12 commits
   - changed commits
-    - a4271215228d "memcg: move mem_cgroup_swappiness to memcontrol.h"
+    - 8a304ab45d45 "mm: memcontrol: update state_local when flushing NMI stats"
       - Authored by no role player, reviewed by a maintainer
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260710111224.2355668-1-ridong.chen@linux.dev
-- mm-new: 1 -> 6 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 6 commits
-  - new commits
-    - 12124e87f311 "mm: memcontrol: update state_local when flushing NMI stats"
-      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
       - Link: https://lore.kernel.org/20260713085053.2916813-1-guopeng.zhang@linux.dev
-    - 9232ac924b84 "mm: memcg-v1: account vmpressure event allocations"
+    - 5d5b868811dc "mm: memcg-v1: account vmpressure event allocations"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
       - Link: https://lore.kernel.org/20260713085520.2953121-1-guopeng.zhang@linux.dev
-    - a5e34d689248 "mm: memcg-v1: fix wrong linux-mm list address in deprecation warnings"
+    - 136eda729e1c "mm: memcg-v1: fix wrong linux-mm list address in deprecation warnings"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
       - Link: https://lore.kernel.org/20260713085756.2973549-1-guopeng.zhang@linux.dev
-    - 5630512fa107 "mm: memcontrol: drop unused cpu argument from flush_nmi_stats"
+    - 279a701b8ad0 "mm: memcontrol: drop unused cpu argument from flush_nmi_stats"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
       - Link: https://lore.kernel.org/20260713090010.2991906-1-guopeng.zhang@linux.dev
-    - 2ee1d0893173 "mm: memcontrol: factor out memcg kmem uncharge sequence"
+    - b42f56bb1981 "mm: memcontrol: factor out memcg kmem uncharge sequence"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
       - Link: https://lore.kernel.org/20260713090304.3015329-1-guopeng.zhang@linux.dev
-    - 829000708573 "mm: memcg-v1: make mem_cgroup_oom_notify_cb() return void"
+    - e296033cee24 "mm: memcg-v1: make mem_cgroup_oom_notify_cb() return void"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
       - Link: https://lore.kernel.org/20260713093737.3299646-1-guopeng.zhang@linux.dev
+  - dropped commits
+    - a4271215228d "memcg: move mem_cgroup_swappiness to memcontrol.h"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260710111224.2355668-1-ridong.chen@linux.dev
+- mm-new: 6 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 6 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

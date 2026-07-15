@@ -6,37 +6,15 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 14 commits
-  - series: 0 (9) -> 1 (12)
-    - no role, nobody: 0 -> 1 commits
+- mm-unstable: 14 -> 14 commits (no change)
+  - series: 1 (12) -> 1 (12) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 8 -> 8 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 1 -> 3 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm: split a couple of headers from internal.h", v2. (3)
-      - 8f22a4e51e13 "memblock tests: split stubfs from internal.h to mm_init.h (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
-  - changed commits
-    - series "mm: split a couple of headers from internal.h", v2. (3)
-      - 142ff4ca1c67 "mm: split out mm_init and memblock declarations from internal.h (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - adc52d8616b3 "mm: split out sparse declarations from internal.h (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-2-695631425968@kernel.org
-    - 0137c321d59f "mm: split out vmalloc declarations from internal.h"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-- mm-new: 3 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

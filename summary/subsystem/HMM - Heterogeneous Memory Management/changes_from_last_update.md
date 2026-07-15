@@ -5,18 +5,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-  - changed commits
+- mm-unstable: 1 -> 2 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, nobody: 1 -> 2 commits
+  - new commits
     - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v8. (8)
-      - d68817e9c319 "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support (1/8)"
+      - 94e4afa33bac "mm-hmm-add-hmm_range_fault_unlocked_timeout-for-mmap-lock-drop-support-fix (2/8)"
         - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/178371879503.900500.7148019929226548795.stgit@skinsburskii
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
+        - Link: https://lore.kernel.org/178406768885.1106335.9955379956617151440.stgit@skinsburskii
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
