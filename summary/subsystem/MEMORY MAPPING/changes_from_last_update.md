@@ -5,217 +5,75 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
   - changed commits
-    - 23c7082c55e2 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
+    - 2d171a9f5561 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
       - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260715144234.442721-2-kirill@shutemov.name"
-      - added "Cc: Muhammad Usama Anjum <usama.anjum@arm.com>"
-      - added "Cc: Zenghui Yu <zenghui.yu@linux.dev>"
-      - dropped "Link: https://lore.kernel.org/20260713091710.206548-1-kirill@shutemov.name"
-      - dropped "Cc: Muhammad Usama Anjum <usama.anjum@collabora.com>"
+      - added "Tested-by: Muhammad Usama Anjum <usama.anjum@arm.com>"
+      - dropped "Cc: Muhammad Usama Anjum <usama.anjum@arm.com>"
       - Link: https://lore.kernel.org/20260715144234.442721-2-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 42 -> 54 commits
-  - series: 2 (37) -> 2 (49)
+- mm-unstable: 54 -> 54 commits (no change)
+  - series: 2 (49) -> 2 (49) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 2 -> 7 commits
-    - reviewer, reviewer: 6 -> 7 commits
+    - reviewer, no role : 7 -> 7 commits (no change)
+    - reviewer, reviewer: 7 -> 7 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-    - maintainer, no role : 5 -> 11 commits
+    - maintainer, no role : 11 -> 11 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
   - changed commits
     - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 21d46f61cde2 "mm: move vma_start_pgoff() into mm.h and clean up (0/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Reviewed-by: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-0-2a5aa403d977@kernel.org
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-1-2a5aa403d977@kernel.org
-      - a4f4a410b8af "tools/testing/vma: use vma_start_pgoff() in merge tests (2/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Reviewed-by: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-3-2a5aa403d977@kernel.org
-      - 8ab25aef7f4c "mm: introduce and use vma_end_pgoff() (3/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-4-2a5aa403d977@kernel.org
-      - 0be69dcb83b8 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - 038da94cd50e "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - fd3bb6d1527c "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
-      - f6d6f8f2932e "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
-      - 95bfd2779628 "mm/vma: introduce and use vmg_pages(), vmg_[start, end]_pgoff() (12/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-13-2a5aa403d977@kernel.org
-      - d21d373ac981 "mm/vma: clean up anon_vma_compatible() (13/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-14-2a5aa403d977@kernel.org
-      - 296a1ef8e3d5 "mm/vma: refactor vmg_adjust_set_range() for clarity (14/33)"
+      - 5d1cbd2b838f "mm/vma: update vma_shrink() to not pass start, pgoff parameters (25/33)"
         - Authored by a maintainer, reviewed by a reviewer
         - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
         - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-15-2a5aa403d977@kernel.org
-      - 57515e914341 "mm/vma: minor cleanup of expand_[upwards, downwards]() (15/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-16-2a5aa403d977@kernel.org
-      - 8fe7717600ae "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-      - ad760506a340 "mm/vma: remove duplicative vma_pgoff_offset() helper (19/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-20-2a5aa403d977@kernel.org
-      - 2ac8b0b78cb7 "mm: use linear_page_[index, delta]() consistently (20/33)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Thomas Zimmermann <tzimmermann@suse.de>	[DRM]"
-        - added "Reviewed-by: Ackerley Tng <ackerleytng@google.com>	[guest_memfd]"
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - dropped "Reviewed-by: Ackerley Tng <ackerleytng@google.com> # for guest_memfd"
-        - dropped "Reviewed-by: Thomas Zimmermann <tzimmermann@suse.de> # for DRM"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-21-2a5aa403d977@kernel.org
-      - 457b92705e12 "mm/vma: introduce vma_assert_can_modify() (21/33)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-22-2a5aa403d977@kernel.org
-      - a2d503217236 "mm/vma: add and use vma_[add/sub]_pgoff() (22/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-23-2a5aa403d977@kernel.org
-      - e3ce6cb37c02 "mm/vma: move __install_special_mapping() to vma.c (23/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-24-2a5aa403d977@kernel.org
-      - 14549d21486a "mm/vma: make vma_set_range() static, drop insert_vm_struct() decl (24/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-25-2a5aa403d977@kernel.org
-      - f68aa3b82032 "mm/vma: update vma_shrink() to not pass start, pgoff parameters (25/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-26-2a5aa403d977@kernel.org
-      - ad8a521d9ca5 "mm/vma: update vmg_adjust_set_range() to offset pgoff instead (26/33)"
+      - 83b7fb850273 "mm/vma: update vmg_adjust_set_range() to offset pgoff instead (26/33)"
         - Authored by a maintainer, reviewed by a reviewer
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-27-2a5aa403d977@kernel.org
-      - 1aab55867283 "mm/vma: slightly rework the anonymous check in __mmap_new_vma() (27/33)"
+      - ec45f58c6048 "mm/vma: slightly rework the anonymous check in __mmap_new_vma() (27/33)"
         - Authored by a maintainer, reviewed by no role player
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-28-2a5aa403d977@kernel.org
-      - 6e1ac19697ed "mm/vma: introduce and use vma_set_pgoff() (28/33)"
+      - 77768ee28c68 "mm/vma: introduce and use vma_set_pgoff() (28/33)"
         - Authored by a maintainer, reviewed by a reviewer
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-29-2a5aa403d977@kernel.org
-      - 15af752ec4e0 "mm/vma: correct incorrect vma.h inclusion (29/33)"
+      - 560e5c1412c7 "mm/vma: correct incorrect vma.h inclusion (29/33)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-30-2a5aa403d977@kernel.org
-      - 5959afb527a7 "mm/vma: use guard clauses in can_vma_merge_[before, after]() (30/33)"
+      - 16624ac161a4 "mm/vma: use guard clauses in can_vma_merge_[before, after]() (30/33)"
         - Authored by a maintainer, reviewed by a reviewer
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-31-2a5aa403d977@kernel.org
-      - d1cdb148edb6 "tools/testing/vma: default VMA, mm flag bits to 64-bit (31/33)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-32-2a5aa403d977@kernel.org
-      - 86b0f636b4de "tools/testing/vma: output compared expression on ASSERT_[EQ, NE]() (32/33)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Cc: Liam R. Howlett (Oracle) <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-33-2a5aa403d977@kernel.org
-    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
-      - deb687eb1561 "mm/vma: update do_mmap() to use vma_flags_t (1/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-2-0fa2357d5431@kernel.org
-      - 7d9d7dd49dd1 "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
-      - 0255449f1e83 "mm: update generic_get_unmapped_area[_topdown]() to use vma_flags_t (3/13)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-4-0fa2357d5431@kernel.org
-      - 3219871ea1e0 "mm: prefer mm->def_vma_flags in mm logic (4/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-5-0fa2357d5431@kernel.org
-      - 90b85a40d3e8 "mm/vma: convert vm_pgprot_modify() to use vma_flags_t and rename (5/13)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-6-0fa2357d5431@kernel.org
-      - 8e74b9072c00 "mm/vma: rename vma_get_page_prot to vma_flags_to_page_prot (6/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-7-0fa2357d5431@kernel.org
-      - 846a34886dee "mm: introduce vma_get_page_prot() and use it (7/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-8-0fa2357d5431@kernel.org
-      - 6ac1cb053cb1 "mm/vma: update create_init_stack_vma() to use vma_flags_t (8/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-9-0fa2357d5431@kernel.org
-      - 3a6e6a324a9a "mm/vma: convert miscellaneous uses of VMA flags in core mm (9/13)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-10-0fa2357d5431@kernel.org
-      - c63dad4dc669 "mm/mlock: convert mlock code to use vma_flags_t (10/13)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-11-0fa2357d5431@kernel.org
-      - 82f8e4888c41 "mm/mprotect: convert mprotect code to use vma_flags_t (11/13)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-12-0fa2357d5431@kernel.org
-      - 199d42783981 "mm/mremap: convert mremap code to use vma_flags_t (12/13)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-13-0fa2357d5431@kernel.org
-- mm-new: 13 -> 2 commits
-  - series: 0 (12) -> 0 (0)
-    - no role, no role : 0 -> 1 commits
+- mm-new: 2 -> 4 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 5 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
-    - maintainer, no role : 6 -> 0 commits
   - new commits
-    - 9245d693d282 "mm/mseal: fix mseal documentation for 32-bit kernels"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260715131258.55499-1-leon.hwang@linux.dev
+    - series "mm/mseal: further cleanups", v3. (3)
+      - faf739445e44 "mm/mseal: remove superfluous comments, fix confusion around mm (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260716-mseal-fixups-v1-0-3a9609bf041b@kernel.org
+        - Link: https://lore.kernel.org/20260716-mseal-fixups-v1-1-3a9609bf041b@kernel.org
+      - ad5a0008a30d "mm/mseal: limit scope of mseal address zero to address zero (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260716-mseal-fixups-v1-2-3a9609bf041b@kernel.org
+      - 25369576798c "mm/mseal: remove further superfluous comments, do_mseal() (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260716-mseal-fixups-v1-3-3a9609bf041b@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

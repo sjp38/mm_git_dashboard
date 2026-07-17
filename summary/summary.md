@@ -9,40 +9,37 @@
 - mm-hotfixes-unstable: 22 total, 2 (6) series, 16 non-series commits
   - author/reviewer role stat
     - no role, nobody: 6 commits
-    - no role, no role : 4 commits
+    - no role, no role : 6 commits
     - no role, reviewer: 3 commits
-    - no role, maintainer: 4 commits
-    - reviewer, no role : 2 commits
+    - no role, maintainer: 5 commits
     - reviewer, maintainer: 1 commits
-    - maintainer, nobody: 1 commits
     - maintainer, no role : 1 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 484 total, 57 (394) series, 90 non-series commits
+- mm-unstable: 504 total, 60 (412) series, 92 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 63 commits
-    - no role, no role : 130 commits
-    - no role, reviewer: 45 commits
-    - no role, maintainer: 75 commits
+    - no role, nobody: 64 commits
+    - no role, no role : 124 commits
+    - no role, reviewer: 48 commits
+    - no role, maintainer: 81 commits
     - reviewer, nobody: 2 commits
     - reviewer, no role : 13 commits
     - reviewer, reviewer: 24 commits
     - reviewer, maintainer: 1 commits
-    - maintainer, nobody: 99 commits
+    - maintainer, nobody: 115 commits
     - maintainer, no role : 19 commits
     - maintainer, reviewer: 13 commits
-- mm-new: 32 total, 5 (24) series, 8 non-series commits
+- mm-new: 16 total, 3 (9) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, no role : 3 commits
-    - no role, reviewer: 4 commits
+    - no role, nobody: 4 commits
+    - no role, no role : 4 commits
+    - no role, reviewer: 2 commits
     - no role, maintainer: 1 commits
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 3 commits
-    - maintainer, nobody: 16 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 63 total, 5 (17) series, 46 non-series commits
+- mm-nonmm-unstable: 64 total, 5 (17) series, 47 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 25 commits
+    - no role, nobody: 26 commits
     - no role, no role : 13 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 17 commits
