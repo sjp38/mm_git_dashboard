@@ -12,31 +12,20 @@
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 5 commits
-  - series: 0 (0) -> 2 (5)
-    - no role, nobody: 0 -> 1 commits
-    - no role, maintainer: 0 -> 4 commits
-  - new commits
-    - series "mm/vmscan: fix swappiness=max and clean up per-node proactive reclaim". (3)
-      - 40827da8da6d "mm/vmscan: fix anon-only reclaim evicting file pages when swappiness=max (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260717113300.214717-1-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/20260717113300.214717-2-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/cgroups/7ddf3eee-5fe2-45f7-8614-c8936a039e04@linux.dev/ [1]
-      - 241cbafedbc5 "mm: vmscan: propagate real error code from per-node proactive reclaim (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260717113300.214717-3-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/all/20250717235604.2atyx2aobwowpge3@offworld/T/#m3514718be82a31b05726a49da9b61fbfc69a589e [1]
-      - fb16ab605c48 "mm: vmscan: drop unused gfp_mask parameter from __node_reclaim() (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260717113300.214717-4-ridong.chen@linux.dev
+- mm-new: 5 -> 5 commits (no change)
+  - series: 2 (5) -> 2 (5) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+  - changed commits
     - series "promote mapped executable folios after first usage for MGLRU", v3. (2)
-      - b704eaee99c9 "mm: vmscan: convert folio_referenced() to use vma_flags_t (0/2)"
+      - 6716e21d9bbd "mm: vmscan: convert folio_referenced() to use vma_flags_t (0/2)"
         - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Kairui Song <kasong@tencent.com>"
         - Link: https://lore.kernel.org/cover.1784268206.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/b9ef058305d1b5d6b811114830d17dd05980cef2.1784268206.git.baolin.wang@linux.alibaba.com
-      - 791923503071 "mm: mglru: promote mapped executable folios after first usage (1/2)"
-        - Authored by no role player, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

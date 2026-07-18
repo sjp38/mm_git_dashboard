@@ -6,14 +6,14 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-      - 479660723fad "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support" (1/8)
+      - 57bf8b7fe01d "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support" (1/8)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/178413936536.1155966.8918127042760531802.stgit@skinsburskii
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 69dd79cecf86 "docs/mm: fix braces"
+    - 11c2533f45c0 "docs/mm: fix braces"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

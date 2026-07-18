@@ -16,27 +16,19 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 1af51f10712b "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - added "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-- mm-new: 2 -> 3 commits
+- mm-new: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
   - new commits
+    - b1630a40b9b7 "selftests/mm: fix BUG_ON checking wrong variable in mremap_dontunmap"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260717070251.73212-1-hongfu.li@linux.dev
+  - dropped commits
     - 4d4e1f5e5d1e "selftests/mm: Fix BUG_ON checking wrong variable in mremap_dontunmap"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260717070251.73212-1-hongfu.li@linux.dev
-  - changed commits
-    - 91174f2d6daa "selftests/mm: add PAGEMAP_SCAN test for THP PMD holes"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/aljWYfPRCVc6IB2b@thinkstation"
-      - Link: https://lore.kernel.org/aljWYfPRCVc6IB2b@thinkstation
-      - Link: https://lore.kernel.org/20260715144234.442721-3-kirill@shutemov.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

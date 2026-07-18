@@ -14,28 +14,15 @@
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 12 -> 12 commits (no change)
-- mm-new: 5 -> 6 commits
+- mm-new: 6 -> 5 commits
   - series: 2 (5) -> 2 (5) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 0 commits
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
-  - new commits
+  - dropped commits
     - b96987588439 "mm/page_reporting: use system_freezable_wq to fix UAF during suspend"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260717002311.681748-2-linkl@google.com
-  - changed commits
-    - series "mm/page_alloc: fixes for free_pages_nolock() on RT/UP". (2)
-      - c615faca1b1d "mm/page_alloc: don't spin_trylock() in NMI on UP (0/2)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
-        - dropped "Cc: Harry Yoo <harry@kernel.org>"
-        - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-0-fadc49952dda@google.com
-        - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-1-fadc49952dda@google.com
-      - b24548714f80 "mm/page_alloc: don't spin_trylock() when disallowed in free_one_page() (1/2)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
-        - dropped "Cc: Harry Yoo <harry@kernel.org>"
-        - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-2-fadc49952dda@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

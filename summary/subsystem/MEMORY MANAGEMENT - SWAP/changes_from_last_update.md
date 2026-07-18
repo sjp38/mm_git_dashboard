@@ -13,14 +13,10 @@
     - no role, maintainer: 6 -> 6 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - d827f66386ba "mm/swap: fix swap_cluster_lock() !CONFIG_SWAP stub signature mismatch"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260717071104.73467-1-hongfu.li@linux.dev
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
