@@ -2,32 +2,57 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 9fbd0aec083e "mm/huge_memory: unlock i_mmap_rwsem before releasing after-split folios"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260716095424.471052-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 18 -> 20 commits
-  - series: 1 (17) -> 2 (19)
+- mm-unstable: 20 -> 20 commits (no change)
+  - series: 2 (19) -> 2 (19) (no change)
     - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 2 -> 4 commits
-    - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 9 -> 9 commits (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - reviewer, no role : 1 -> 0 commits
+    - reviewer, reviewer: 9 -> 10 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "Two small patches to clean up mm/mm_slot.h", v3. (2)
-      - ec5139f1802f "mm/mm_slot.h: add a helper function mm_slot_remove (0/2)"
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 07ad70452389 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
+      - 7e7ac7b49133 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
+      - 1af51f10712b "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+- mm-new: 0 -> 3 commits
+  - series: 0 (0) -> 2 (3)
+    - no role, nobody: 0 -> 1 commits
+    - no role, reviewer: 0 -> 2 commits
+  - new commits
+    - series "mm: mincore: misc cleanups", v3. (6)
+      - 7f4619a616c2 "mm: introduce pud_is_huge() helper (0/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260717091347.1144789-1-wangkefeng.wang@huawei.com
+        - Link: https://lore.kernel.org/20260717091347.1144789-2-wangkefeng.wang@huawei.com
+    - series "mm/huge_memory: drop dead split helper variants". (2)
+      - 8c6aacaeed04 "mm/huge_memory: remove unused can_split_folio() (0/2)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
-        - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
-      - d9ce5bade8a8 "mm/mm_slot.h: add comments for mm_slot_lookup/insert (1/2)"
+        - Link: https://lore.kernel.org/20260716100345.473473-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260716100345.473473-2-kirill@shutemov.name
+        - Link: https://lore.kernel.org/linux-mm/aldjhtfVByHDQXe6@thinkstation [1]
+        - Link: https://lore.kernel.org/linux-mm/20260714122344.351895-1-kirill@shutemov.name [2]
+      - 2eb7cf1166ce "mm/huge_memory: fold split_folio_to_list_to_order() into split_folio_to_order() (1/2)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, reviewer: 2 -> 0 commits
+        - Link: https://lore.kernel.org/20260716100345.473473-3-kirill@shutemov.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

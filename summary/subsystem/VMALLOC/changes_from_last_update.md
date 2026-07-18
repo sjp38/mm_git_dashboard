@@ -1,41 +1,43 @@
 - baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
-    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v4. (4)
-      - 12f1840ce771 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/4)"
+  - changed commits
+    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v5. (5)
+      - c7a18694cb36 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/5)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-0-8c108c4317df@kernel.org
-        - Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-1-8c108c4317df@kernel.org
+        - added "Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-0-606a0ac6d3e5@kernel.org"
+        - added "Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-1-606a0ac6d3e5@kernel.org"
+        - added "Cc: David Carlier <devnexen@gmail.com>"
+        - added "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-1-8c108c4317df@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-0-8c108c4317df@kernel.org"
+        - Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-0-606a0ac6d3e5@kernel.org
+        - Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-1-606a0ac6d3e5@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 6bb72dc45cf6 "arm64: remove redundant concurrent ptdump UAF mitigation (3/4)"
+      - c2ece700ef54 "arm64: remove redundant concurrent ptdump UAF mitigation (4/5)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-4-8c108c4317df@kernel.org
-  - dropped commits
-    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v3. (4)
-      - 36cb926d154f "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-0-b812eccfa0f9@kernel.org
-        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-1-b812eccfa0f9@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 1e0473a9b047 "mm-vmalloc-acquire-init_mm-lock-on-huge-vmap-to-avoid-ptdump-uaf-fix (1/4)"
-        - Authored by a maintainer, reviewed by nobody
-    - 68fc7b1176c5 "arm64: remove redundant concurrent ptdump UAF mitigation"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-4-b812eccfa0f9@kernel.org
+        - added "Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-5-606a0ac6d3e5@kernel.org"
+        - added "Cc: David Carlier <devnexen@gmail.com>"
+        - dropped "Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-4-8c108c4317df@kernel.org"
+        - Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-5-606a0ac6d3e5@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 9 -> 9 commits (no change)
   - series: 1 (6) -> 1 (6) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 7 -> 7 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 7 -> 8 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v7. (7)
+      - d56a8cc8f525 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260715120813.3609949-6-jiangwen6@xiaomi.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

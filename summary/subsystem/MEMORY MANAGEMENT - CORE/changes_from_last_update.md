@@ -3,89 +3,105 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 0 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, no role : 2 -> 0 commits
-  - new commits
-    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v4. (4)
-      - 12f1840ce771 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/4)"
+  - changed commits
+    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v5. (5)
+      - c7a18694cb36 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/5)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-0-8c108c4317df@kernel.org
-        - Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-1-8c108c4317df@kernel.org
+        - added "Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-1-606a0ac6d3e5@kernel.org"
+        - added "Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-0-606a0ac6d3e5@kernel.org"
+        - added "Cc: David Carlier <devnexen@gmail.com>"
+        - added "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-1-8c108c4317df@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-0-8c108c4317df@kernel.org"
+        - Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-0-606a0ac6d3e5@kernel.org
+        - Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-1-606a0ac6d3e5@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 7c39838c870d "mm/ptdump: always stabilise against page table freeing using init_mm (2/4)"
+      - cc379d92dc41 "mm/ptdump: always stabilise against page table freeing using init_mm (3/5)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-3-8c108c4317df@kernel.org
-  - dropped commits
-    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v3. (4)
-      - 36cb926d154f "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-0-b812eccfa0f9@kernel.org
-        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-1-b812eccfa0f9@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 7997aa876218 "mm/ptdump: always stabilise against page table freeing using init_mm (3/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260714-series-vmap-race-fix-v3-3-b812eccfa0f9@kernel.org
+        - added "Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-4-606a0ac6d3e5@kernel.org"
+        - added "Cc: David Carlier <devnexen@gmail.com>"
+        - dropped "Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-3-8c108c4317df@kernel.org"
+        - Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-4-606a0ac6d3e5@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 82 -> 83 commits
+- mm-unstable: 83 -> 82 commits
   - series: 10 (70) -> 10 (70) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 35 -> 33 commits
-    - no role, reviewer: 7 -> 8 commits
-    - no role, maintainer: 7 -> 9 commits
-    - reviewer, no role : 10 -> 10 commits (no change)
-    - reviewer, reviewer: 15 -> 15 commits (no change)
+    - no role, no role : 33 -> 32 commits
+    - no role, reviewer: 8 -> 8 commits (no change)
+    - no role, maintainer: 9 -> 9 commits (no change)
+    - reviewer, no role : 10 -> 9 commits
+    - reviewer, reviewer: 15 -> 16 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)", v2. (10)
-      - 4be6a59d0bce "mm: provide free_reserved_pages(), removing x86 variant (1/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-2-4afc76c73d61@kernel.org"
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - added "Reviewed-by: Dave Hansen <dave.hansen@linux.intel.com>"
-        - dropped "Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-2-156ce4986598@kernel.org"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-2-4afc76c73d61@kernel.org
-      - 23aa5cc7e4d1 "x86/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (6/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-7-4afc76c73d61@kernel.org"
-        - added "Reviewed-by: Dave Hansen <dave.hansen@linux.intel.com>"
-        - dropped "Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-7-156ce4986598@kernel.org"
-        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-7-4afc76c73d61@kernel.org
-      - c2c50b44fc41 "mm/sparse: remove bootmem_info.h include (8/10)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-9-4afc76c73d61@kernel.org"
-        - added "Reviewed-by: Dave Hansen <dave.hansen@linux.intel.com>"
-        - dropped "Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-9-156ce4986598@kernel.org"
-        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-9-4afc76c73d61@kernel.org
-      - aa8355f03f09 "mm/bootmem_info: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (9/10)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-10-4afc76c73d61@kernel.org"
-        - added "Reviewed-by: Dave Hansen <dave.hansen@linux.intel.com>"
-        - dropped "Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-10-156ce4986598@kernel.org"
-        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-10-4afc76c73d61@kernel.org
     - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 560e5c1412c7 "mm/vma: correct incorrect vma.h inclusion (29/33)"
+      - c271e2e00ebb "mm: move vma_start_pgoff() into mm.h and clean up (0/33)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-0-2a5aa403d977@kernel.org
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-1-2a5aa403d977@kernel.org
+      - 8bfad9b8e114 "mm: add kdoc comments for vma_start/last_pgoff() (1/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-2-2a5aa403d977@kernel.org
+      - 6ef62add0ca5 "mm: introduce and use vma_end_pgoff() (3/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-4-2a5aa403d977@kernel.org
+      - 07ad70452389 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
+      - 7e7ac7b49133 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
+      - bc9d22f2c894 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
+      - cd7d9e3ccfa7 "mm/rmap: rename anon_vma_interval_tree_*() params and use pgoff_t (9/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-10-2a5aa403d977@kernel.org
+      - d7edda97abec "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
+      - 1af51f10712b "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+      - f89b579840a7 "mm/vma: make vma_set_range() static, drop insert_vm_struct() decl (25/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-25-2a5aa403d977@kernel.org
+      - 9cb9d03144d4 "mm/vma: correct incorrect vma.h inclusion (30/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-30-2a5aa403d977@kernel.org
-    - 7704bbe2092d "mm: let node_reclaim() return the number of pages reclaimed"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
+  - dropped commits
+    - c2da825ba239 "mm/secretmem: disable under HIGHMEM"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://github.com/bjackman/limmat-kernel-nix/commit/7b2acba2d3a5ef01400d493a155beb1d135b6bb5
+      - Link: https://lore.kernel.org/20260703-secretmem-highmem-v1-1-30d5ff944664@google.com
 - mm-new: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (2)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 1 -> 0 commits
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/mseal: further cleanups", v3. (3)
-      - ad5a0008a30d "mm/mseal: limit scope of mseal address zero to address zero (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260716-mseal-fixups-v1-2-3a9609bf041b@kernel.org
+  - changed commits
+    - series "mm/mseal: further cleanups", v2. (3)
+      - e973fa53e473 "mm/mseal: limit scope of mseal address zero to address zero (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260717-mseal-fixups-v2-2-0daa0014b813@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260716-mseal-fixups-v1-2-3a9609bf041b@kernel.org"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-2-0daa0014b813@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

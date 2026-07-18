@@ -6,45 +6,35 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 32 -> 33 commits
+- mm-unstable: 33 -> 33 commits (no change)
   - series: 4 (25) -> 4 (25) (no change)
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 13 -> 14 commits
-    - no role, maintainer: 2 -> 3 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 14 -> 14 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 12 -> 12 commits (no change)
-  - changed commits
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)", v2. (10)
-      - 4be6a59d0bce "mm: provide free_reserved_pages(), removing x86 variant (1/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-2-4afc76c73d61@kernel.org"
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - added "Reviewed-by: Dave Hansen <dave.hansen@linux.intel.com>"
-        - dropped "Link: https://lore.kernel.org/20260708-bootmem_info_part2-v1-2-156ce4986598@kernel.org"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-2-4afc76c73d61@kernel.org
-    - 7704bbe2092d "mm: let node_reclaim() return the number of pages reclaimed"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
-- mm-new: 6 -> 5 commits
+- mm-new: 5 -> 6 commits
   - series: 2 (5) -> 2 (5) (no change)
-    - no role, reviewer: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
+  - new commits
+    - b96987588439 "mm/page_reporting: use system_freezable_wq to fix UAF during suspend"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260717002311.681748-2-linkl@google.com
   - changed commits
     - series "mm/page_alloc: fixes for free_pages_nolock() on RT/UP". (2)
-      - 2ba646f402e9 "mm/page_alloc: don't spin_trylock() in NMI on UP (0/2)"
+      - c615faca1b1d "mm/page_alloc: don't spin_trylock() in NMI on UP (0/2)"
         - Authored by a reviewer, reviewed by no role player
-        - added "Fixes: 8c57b687e833 ("mm, bpf: Introduce free_pages_nolock()")"
-        - dropped "Fixes: 8c57b687e8331 ("mm, bpf: Introduce free_pages_nolock()")"
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - dropped "Cc: Harry Yoo <harry@kernel.org>"
         - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-0-fadc49952dda@google.com
         - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-1-fadc49952dda@google.com
-      - 271047e602eb "mm/page_alloc: don't spin_trylock() when disallowed in free_one_page() (1/2)"
+      - b24548714f80 "mm/page_alloc: don't spin_trylock() when disallowed in free_one_page() (1/2)"
         - Authored by a reviewer, reviewed by no role player
-        - added "Fixes: 8c57b687e833 ("mm, bpf: Introduce free_pages_nolock()")"
-        - dropped "Fixes: 8c57b687e8331 ("mm, bpf: Introduce free_pages_nolock()")"
+        - added "Reviewed-by: Harry Yoo (Oracle) <harry@kernel.org>"
+        - dropped "Cc: Harry Yoo <harry@kernel.org>"
         - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-2-fadc49952dda@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

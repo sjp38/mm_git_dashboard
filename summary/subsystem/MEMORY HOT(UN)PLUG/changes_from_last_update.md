@@ -4,6 +4,18 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: fix PMD level mTHP accounting bugs", v2. (2)
+      - d681c0690233 "mm: decrement MTHP_STAT_NR_ANON in free_zone_device_folio() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260717064502.1980173-1-npache@redhat.com"
+        - added "Link: https://lore.kernel.org/20260717064502.1980173-2-npache@redhat.com"
+        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Link: https://lore.kernel.org/20260702172548.37075-1-npache@redhat.com"
+        - dropped "Link: https://lore.kernel.org/20260702172548.37075-2-npache@redhat.com"
+        - dropped "Cc: <stable@vger.kernel.org>"
+        - Link: https://lore.kernel.org/20260717064502.1980173-1-npache@redhat.com
+        - Link: https://lore.kernel.org/20260717064502.1980173-2-npache@redhat.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)

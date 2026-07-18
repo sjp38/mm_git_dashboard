@@ -11,6 +11,16 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - c8b414012d59 "mm: introduce and use linear_page_delta() (16/33)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-17-2a5aa403d977@kernel.org
+      - 1af51f10712b "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

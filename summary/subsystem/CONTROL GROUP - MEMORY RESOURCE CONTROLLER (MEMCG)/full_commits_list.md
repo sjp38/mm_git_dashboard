@@ -4,10 +4,10 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - b35cf11b9b01 "mm: mglru: fix stale batch updates after memcg reparenting"
+    - be0cb9e9f08c "mm: mglru: fix stale batch updates after memcg reparenting"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
-    - 3566356c5b2e "mm: memcg: initialize *locked in memcg1_oom_prepare() stub"
+    - c1092251f87c "mm: memcg: initialize *locked in memcg1_oom_prepare() stub"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260716-memcg-oom-uninit-locked-v2-1-63631d878eb4@debian.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -17,49 +17,49 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 12 commits
   - full commits list
-    - 94af4279526f "mm/memcontrol: remove unused for_each_mem_cgroup macro and cleanup"
+    - 16b6d0a6d2fc "mm/memcontrol: remove unused for_each_mem_cgroup macro and cleanup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260624183700.1152742-1-joshua.hahnjy@gmail.com
-    - ec763ced8c56 "mm: memcg: remove stray text from obj_stock_pcp comment"
+    - 0bce5e986113 "mm: memcg: remove stray text from obj_stock_pcp comment"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260623082614.81621-1-guopeng.zhang@linux.dev
-    - 7abda5bb1d88 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
+    - 711aac288726 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260630112617.1198623-3-usama.arif@linux.dev
     - series "memcg: bail out reclaim when memcg is dying", v3. (4 commits)
-      - 2694c7e29a54 "memcg: bail out memory.high when memcg is dying" (0/4)
+      - 600c55646c78 "memcg: bail out memory.high when memcg is dying" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-1-jiayuan.chen@linux.dev
         - Link: https://lore.kernel.org/20260702120235.376752-2-jiayuan.chen@linux.dev
-      - 26e775ad11e7 "memcg: bail out memory.max when memcg is dying" (1/4)
+      - 4b9f42e0ff5a "memcg: bail out memory.max when memcg is dying" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-3-jiayuan.chen@linux.dev
-      - 4c79237e3e33 "memcg-v1: bail out reclaim when memcg is dying" (3/4)
+      - e6610c562055 "memcg-v1: bail out reclaim when memcg is dying" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-5-jiayuan.chen@linux.dev
-    - 95887dc84634 "mm: memcg: reset zswap settings in css_reset"
+    - 4b971fa91742 "mm: memcg: reset zswap settings in css_reset"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260703063826.306878-1-jiayuan.chen@linux.dev
       - Link: https://lore.kernel.org/20260702024827.353185-1-jiayuan.chen@linux.dev
-    - cc173ab76043 "mm: memcg: reset oom_group in css_reset"
+    - 65dd2bf19556 "mm: memcg: reset oom_group in css_reset"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260703063826.306878-2-jiayuan.chen@linux.dev
-    - 8b83ce8ee760 "mm: memcontrol: update state_local when flushing NMI stats"
+    - 284253494e2d "mm: memcontrol: update state_local when flushing NMI stats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713085053.2916813-1-guopeng.zhang@linux.dev
-    - 2da504a41012 "mm: memcg-v1: account vmpressure event allocations"
+    - ff447c51590b "mm: memcg-v1: account vmpressure event allocations"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713085520.2953121-1-guopeng.zhang@linux.dev
-    - a92202382d3c "mm: memcg-v1: fix wrong linux-mm list address in deprecation warnings"
+    - 4ba286922686 "mm: memcg-v1: fix wrong linux-mm list address in deprecation warnings"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713085756.2973549-1-guopeng.zhang@linux.dev
-    - 502641b38449 "mm: memcontrol: drop unused cpu argument from flush_nmi_stats"
+    - 1e4b0475ba8f "mm: memcontrol: drop unused cpu argument from flush_nmi_stats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713090010.2991906-1-guopeng.zhang@linux.dev
-    - 4e78c0ea6a23 "mm: memcontrol: factor out memcg kmem uncharge sequence"
+    - 7f0612fea125 "mm: memcontrol: factor out memcg kmem uncharge sequence"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713090304.3015329-1-guopeng.zhang@linux.dev
-    - a7ca8a8d2bc3 "mm: memcg-v1: make mem_cgroup_oom_notify_cb() return void"
+    - 5c27c9bcfd4d "mm: memcg-v1: make mem_cgroup_oom_notify_cb() return void"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713093737.3299646-1-guopeng.zhang@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

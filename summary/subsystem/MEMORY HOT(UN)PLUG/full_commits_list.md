@@ -4,11 +4,11 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - series "mm: fix PMD level mTHP accounting bugs". (2 commits)
-      - 8b3301a6f5e3 "mm: decrement MTHP_STAT_NR_ANON in free_zone_device_folio()" (0/2)
+    - series "mm: fix PMD level mTHP accounting bugs", v2. (2 commits)
+      - d681c0690233 "mm: decrement MTHP_STAT_NR_ANON in free_zone_device_folio()" (0/2)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260702172548.37075-1-npache@redhat.com
-        - Link: https://lore.kernel.org/20260702172548.37075-2-npache@redhat.com
+        - Link: https://lore.kernel.org/20260717064502.1980173-1-npache@redhat.com
+        - Link: https://lore.kernel.org/20260717064502.1980173-2-npache@redhat.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 8 total, 1 (7) series, 1 non-series commits
   - author/reviewer role stat
@@ -16,32 +16,32 @@
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 28a5d16195e4 "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
+    - fd96c3321751 "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
       - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
-      - f83a1ce5d8f6 "mm: split out internal page_alloc.h" (3/18)
+      - ea63d057cbea "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - 0827f6ffe902 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - 3fca7634af8a "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - 6f1ed2b2e3d3 "mm/memory_hotplug: add mhp_online_type_to_str() and export string helpers" (1/10)
+      - 7b3bbf98963a "mm/memory_hotplug: add mhp_online_type_to_str() and export string helpers" (1/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-3-gourry@gourry.net
-      - 656acac33886 "mm/memory_hotplug: pass online_type to online_memory_block() via arg" (2/10)
+      - b6533e5b4066 "mm/memory_hotplug: pass online_type to online_memory_block() via arg" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-4-gourry@gourry.net
-      - bdd2be6934cc "mm/memory_hotplug: export mhp_get_default_online_type" (3/10)
+      - 7f4aa2154cc9 "mm/memory_hotplug: export mhp_get_default_online_type" (3/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-5-gourry@gourry.net
-      - e7067155e847 "mm/memory_hotplug: add __add_memory_driver_managed() with online_type arg" (4/10)
+      - 2e4cc427b00b "mm/memory_hotplug: add __add_memory_driver_managed() with online_type arg" (4/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-6-gourry@gourry.net
-      - 47c1a9989513 "mm/memory_hotplug: add offline_and_remove_memory_ranges()" (5/10)
+      - 66ab0cbaedb5 "mm/memory_hotplug: add offline_and_remove_memory_ranges()" (5/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-7-gourry@gourry.net
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

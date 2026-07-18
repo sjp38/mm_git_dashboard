@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 334584a02e57 "docs: ABI: zram: fix spelling mistakes"
+    - 37f1419d97ec "docs: ABI: zram: fix spelling mistakes"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260707165131.4408-1-rahularukonda2@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

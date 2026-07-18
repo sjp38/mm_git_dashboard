@@ -4,6 +4,15 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm: fix PMD level mTHP accounting bugs", v2. (2)
+      - 8168a3371041 "mm/migrate: exclude hugetlb folios from MTHP_STAT_NR_ANON accounting (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260717064502.1980173-3-npache@redhat.com"
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Link: https://lore.kernel.org/20260702172548.37075-3-npache@redhat.com"
+        - dropped "Cc: <stable@vger.kernel.org>"
+        - Link: https://lore.kernel.org/20260717064502.1980173-3-npache@redhat.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 20 -> 20 commits (no change)
@@ -14,6 +23,12 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 1af51f10712b "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

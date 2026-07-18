@@ -5,49 +5,48 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v4. (4 commits)
-      - 12f1840ce771 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/4)
+    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v5. (5 commits)
+      - c7a18694cb36 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/5)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-0-8c108c4317df@kernel.org
-        - Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-1-8c108c4317df@kernel.org
+        - Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-0-606a0ac6d3e5@kernel.org
+        - Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-1-606a0ac6d3e5@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 6bb72dc45cf6 "arm64: remove redundant concurrent ptdump UAF mitigation" (3/4)
+      - c2ece700ef54 "arm64: remove redundant concurrent ptdump UAF mitigation" (4/5)
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260716-series-vmap-race-fix-v4-4-8c108c4317df@kernel.org
+        - Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-5-606a0ac6d3e5@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 9 total, 1 (6) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 7 commits
+    - no role, no role : 8 commits
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm/percpu: Fix possible NOFS/NOIO reclaim recursion", v4. (4 commits)
-      - e4ec2c06b33d "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
+      - bbdfcc5aa042 "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260618130414.96383-1-kaitao.cheng@linux.dev
         - Link: https://lore.kernel.org/20260618130414.96383-2-kaitao.cheng@linux.dev
-    - b425556e86b6 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
+    - 8667847bb340 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/453375c4-c3ca-4e6f-8880-0e6ff3c74ee3@web.de
-    - a1ef395b846d "mm/vmalloc: add alignment info in warning print as possible failure reason"
+    - 2133db2f32d2 "mm/vmalloc: add alignment info in warning print as possible failure reason"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260702112610.21589-1-feng.tang@linux.alibaba.com
-    - ed3d657a3920 "mm: split out vmalloc declarations from internal.h"
+    - c7e395ef1917 "mm: split out vmalloc declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-      - 3ef0e8cd3061 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/7)
+      - 5882fbb35d7a "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-4-jiangwen6@xiaomi.com
-      - de4df176b54e "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/7)
+      - fe4edb751c39 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-5-jiangwen6@xiaomi.com
-      - 02c6f28c00e4 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (4/7)
-        - Authored by no role player, reviewed by nobody
+      - d56a8cc8f525 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (4/7)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-6-jiangwen6@xiaomi.com
-      - 52b7702ba15f "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (5/7)
+      - 136273f78ecc "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-7-jiangwen6@xiaomi.com
-      - 37163c509ef6 "mm/vmalloc: align vm_area so vmap() can batch mappings" (6/7)
+      - cebdcab80def "mm/vmalloc: align vm_area so vmap() can batch mappings" (6/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-8-jiangwen6@xiaomi.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

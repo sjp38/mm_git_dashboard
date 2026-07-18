@@ -3,77 +3,191 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 0 -> 1 commits
   - changed commits
-    - 2d171a9f5561 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
-      - Authored by no role player, reviewed by nobody
-      - added "Tested-by: Muhammad Usama Anjum <usama.anjum@arm.com>"
-      - dropped "Cc: Muhammad Usama Anjum <usama.anjum@arm.com>"
+    - 75353a33297a "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lore.kernel.org/20260715144234.442721-2-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 54 -> 54 commits (no change)
+- mm-unstable: 54 -> 55 commits
   - series: 2 (49) -> 2 (49) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 7 -> 7 commits (no change)
-    - reviewer, reviewer: 7 -> 7 commits (no change)
+    - reviewer, no role : 7 -> 6 commits
+    - reviewer, reviewer: 7 -> 8 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 2 -> 2 commits (no change)
+    - maintainer, nobody: 2 -> 3 commits
     - maintainer, no role : 11 -> 11 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
+  - new commits
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - fdae55d11486 "mm-vma-add-and-use-vma__pgoff-fix (23/33)"
+        - Authored by a maintainer, reviewed by nobody
   - changed commits
     - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 5d1cbd2b838f "mm/vma: update vma_shrink() to not pass start, pgoff parameters (25/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-26-2a5aa403d977@kernel.org
-      - 83b7fb850273 "mm/vma: update vmg_adjust_set_range() to offset pgoff instead (26/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-27-2a5aa403d977@kernel.org
-      - ec45f58c6048 "mm/vma: slightly rework the anonymous check in __mmap_new_vma() (27/33)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-28-2a5aa403d977@kernel.org
-      - 77768ee28c68 "mm/vma: introduce and use vma_set_pgoff() (28/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-29-2a5aa403d977@kernel.org
-      - 560e5c1412c7 "mm/vma: correct incorrect vma.h inclusion (29/33)"
+      - c271e2e00ebb "mm: move vma_start_pgoff() into mm.h and clean up (0/33)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-30-2a5aa403d977@kernel.org
-      - 16624ac161a4 "mm/vma: use guard clauses in can_vma_merge_[before, after]() (30/33)"
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-0-2a5aa403d977@kernel.org
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-1-2a5aa403d977@kernel.org
+      - d4ab23e9abed "tools/testing/vma: use vma_start_pgoff() in merge tests (2/33)"
         - Authored by a maintainer, reviewed by a reviewer
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-3-2a5aa403d977@kernel.org
+      - 6ef62add0ca5 "mm: introduce and use vma_end_pgoff() (3/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-4-2a5aa403d977@kernel.org
+      - 07ad70452389 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
+      - 7e7ac7b49133 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
+      - bc9d22f2c894 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
+      - d7edda97abec "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
+      - f06f0204e6ca "mm/vma: introduce and use vmg_pages(), vmg_[start, end]_pgoff() (12/33)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-13-2a5aa403d977@kernel.org
+      - 373637bdc432 "mm/vma: clean up anon_vma_compatible() (13/33)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-14-2a5aa403d977@kernel.org
+      - 409976dfc441 "mm/vma: refactor vmg_adjust_set_range() for clarity (14/33)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-15-2a5aa403d977@kernel.org
+      - ff16f41f3f53 "mm/vma: minor cleanup of expand_[upwards, downwards]() (15/33)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-16-2a5aa403d977@kernel.org
+      - 1af51f10712b "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+      - 7082683bad80 "mm/vma: remove duplicative vma_pgoff_offset() helper (19/33)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-20-2a5aa403d977@kernel.org
+      - faac84d86cc5 "mm: use linear_page_[index, delta]() consistently (20/33)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-21-2a5aa403d977@kernel.org
+      - d7d5b7c55ccd "mm/vma: introduce vma_assert_can_modify() (21/33)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-22-2a5aa403d977@kernel.org
+      - 4bac87ecc533 "mm/vma: add and use vma_[add/sub]_pgoff() (22/33)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-23-2a5aa403d977@kernel.org
+      - 7e5498077525 "mm/vma: move __install_special_mapping() to vma.c (24/33)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-24-2a5aa403d977@kernel.org
+      - f89b579840a7 "mm/vma: make vma_set_range() static, drop insert_vm_struct() decl (25/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-25-2a5aa403d977@kernel.org
+      - f9be00b1cc86 "mm/vma: update vma_shrink() to not pass start, pgoff parameters (26/33)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-26-2a5aa403d977@kernel.org
+      - eabfeee9ad05 "mm/vma: update vmg_adjust_set_range() to offset pgoff instead (27/33)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-27-2a5aa403d977@kernel.org
+      - 178c31b40d76 "mm/vma: slightly rework the anonymous check in __mmap_new_vma() (28/33)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-28-2a5aa403d977@kernel.org
+      - 458674fdc660 "mm/vma: introduce and use vma_set_pgoff() (29/33)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-29-2a5aa403d977@kernel.org
+      - 9cb9d03144d4 "mm/vma: correct incorrect vma.h inclusion (30/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-30-2a5aa403d977@kernel.org
+      - 0d53edda7706 "mm/vma: use guard clauses in can_vma_merge_[before, after]() (31/33)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-31-2a5aa403d977@kernel.org
-- mm-new: 2 -> 4 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
+      - 6e70e3b32c9e "tools/testing/vma: default VMA, mm flag bits to 64-bit (32/33)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-32-2a5aa403d977@kernel.org
+    - 6502bafe1b48 "tools/testing/vma: output compared expression on ASSERT_[EQ, NE]()"
+      - Authored by a maintainer, reviewed by no role player
+      - added "Cc: Zi Yan <ziy@nvidia.com>"
+      - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-33-2a5aa403d977@kernel.org
+- mm-new: 4 -> 9 commits
+  - series: 1 (3) -> 1 (8)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
+    - no role, reviewer: 1 -> 5 commits
     - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - series "mm/mseal: further cleanups", v3. (3)
-      - faf739445e44 "mm/mseal: remove superfluous comments, fix confusion around mm (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260716-mseal-fixups-v1-0-3a9609bf041b@kernel.org
-        - Link: https://lore.kernel.org/20260716-mseal-fixups-v1-1-3a9609bf041b@kernel.org
-      - ad5a0008a30d "mm/mseal: limit scope of mseal address zero to address zero (1/3)"
+    - series "mm: mincore: misc cleanups", v3. (6)
+      - 25d93bbe533b "mm: mincore: remove special handling for VM_PFNMAP (1/6)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260716-mseal-fixups-v1-2-3a9609bf041b@kernel.org
-      - 25369576798c "mm/mseal: remove further superfluous comments, do_mseal() (2/3)"
+        - Link: https://lore.kernel.org/linux-mm/0e619d71-1c3d-4534-8376-2982c7348c31@kernel.org/
+        - Link: https://lore.kernel.org/20260717091347.1144789-3-wangkefeng.wang@huawei.com
+      - f8ed8b92ab49 "mm: mincore: replace __get_free_page() with kmalloc() (2/6)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260716-mseal-fixups-v1-3-3a9609bf041b@kernel.org
+        - Link: https://lore.kernel.org/20260717091347.1144789-4-wangkefeng.wang@huawei.com
+      - bf46e35ebb08 "mm: mincore: remove xa_is_value() in mincore_swap() (3/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260717091347.1144789-5-wangkefeng.wang@huawei.com
+      - 3fbd53751f35 "mm: mincore: improve mincore_hugetlb() (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260717091347.1144789-6-wangkefeng.wang@huawei.com
+      - 3cc207f6b656 "mm: mincore: refactor mincore_page() (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260717091347.1144789-7-wangkefeng.wang@huawei.com
+  - changed commits
+    - series "mm/mseal: further cleanups", v2. (3)
+      - f3995f4d00bf "mm/mseal: remove superfluous comments, fix confusion around mm (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260717-mseal-fixups-v2-1-0daa0014b813@kernel.org"
+        - added "Link: https://lore.kernel.org/20260717-mseal-fixups-v2-0-0daa0014b813@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Link: https://lore.kernel.org/20260716-mseal-fixups-v1-1-3a9609bf041b@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260716-mseal-fixups-v1-0-3a9609bf041b@kernel.org"
+        - dropped "Reviewed-by: Pedro Falcato <pfalcato@suse.de> "
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-0-0daa0014b813@kernel.org
+        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-1-0daa0014b813@kernel.org
+      - e973fa53e473 "mm/mseal: limit scope of mseal address zero to address zero (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260717-mseal-fixups-v2-2-0daa0014b813@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260716-mseal-fixups-v1-2-3a9609bf041b@kernel.org"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-2-0daa0014b813@kernel.org
+      - 6ed7132a4352 "mm/mseal: remove further superfluous comments, do_mseal() (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260717-mseal-fixups-v2-3-0daa0014b813@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260716-mseal-fixups-v1-3-3a9609bf041b@kernel.org"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-3-0daa0014b813@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
