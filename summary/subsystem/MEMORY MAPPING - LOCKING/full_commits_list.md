@@ -1,4 +1,4 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff
+- baseline: v7.2-rc4-15-gb95f03f04d475
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
@@ -6,28 +6,26 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v5. (5 commits)
-      - 9104b1b8469a "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/5)
+      - 61450085d070 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-0-606a0ac6d3e5@kernel.org
         - Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-1-606a0ac6d3e5@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 8854ddd33025 "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF" (1/5)
+      - d9f7908fcfe7 "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF" (1/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-2-606a0ac6d3e5@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - maintainer, no role : 1 commits
-  - full commits list
-      - c9805a6d00d5 "mm/vma: introduce vma_assert_can_modify()" (21/33)
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-22-2a5aa403d977@kernel.org
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
+    - maintainer, no role : 1 commits
   - full commits list
-    - 11c2533f45c0 "docs/mm: fix braces"
+      - 7d432866cd2f "mm/vma: introduce vma_assert_can_modify()" (21/33)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-22-2a5aa403d977@kernel.org
+    - 4decfbd8d3c0 "docs/mm: fix braces"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,11 +1,22 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
+- mm-hotfixes-stable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 3 commits (no change)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 83abe2fd5b3a "mm/hugetlb: fix swap entry corruption when clearing uffd-wp at fork()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260708090110.136162-1-kirill@shutemov.name
+    - dd9623f58ec7 "mm/hugetlb: fix list corruption in allocate_file_region_entries()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260713171456.300518-2-caixiangfeng@bytedance.com
+- mm-hotfixes-unstable: 3 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 35 -> 35 commits (no change)
@@ -16,8 +27,16 @@
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 2 commits
+  - new commits
+    - 81827f67d89c "hugetlbfs: release subpool on fill_super failure"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260720021900.1376309-1-chenyichong@uniontech.com
+    - 782a432374c3 "hugetlb: make hugepage_put_subpool() tolerate NULL"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260720073841.1389354-1-chenyichong@uniontech.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

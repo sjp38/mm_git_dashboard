@@ -1,9 +1,16 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - 63867c82d0c0 "mm: migrate_device: fix pte_pfn/pte_dirty called on non-present PTE"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260708003955.4024340-1-wangkefeng.wang@huawei.com
+      - Link: https://lore.kernel.org/20260706111958.3649651-1-wangkefeng.wang@huawei.com
+- mm-hotfixes-unstable: 2 -> 1 commits
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, reviewer: 2 -> 1 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 20 -> 20 commits (no change)
@@ -14,8 +21,14 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - 78bc56f5c5ad "mm: introduce and use linear_folio_page_index() (7/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

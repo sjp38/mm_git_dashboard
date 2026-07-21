@@ -1,4 +1,4 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff
+- baseline: v7.2-rc4-15-gb95f03f04d475
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - feb8ce484f37 "mm: split out vmalloc declarations from internal.h"
+    - d934449e72d2 "mm: split out vmalloc declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,4 +1,4 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
@@ -7,12 +7,18 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 2 commits
   - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 0 -> 1 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+  - changed commits
+    - 4decfbd8d3c0 "docs/mm: fix braces"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,23 +1,69 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - changed commits
+    - 4165b7d1c45c "userfaultfd: wait on source PMD during UFFDIO_MOVE"
+      - Authored by a reviewer, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260705131231.1499198-1-usama.arif@linux.dev
+      - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=8
+  - dropped commits
+    - e1cd30eceb69 "mm/huge_memory: set PG_has_hwpoisoned only after new folio head is established"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260701174235.3173401-1-riel@surriel.com
+- mm-hotfixes-unstable: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 1 -> 0 commits
+  - changed commits
+    - e4400bc0c5d1 "mm/huge_memory: unlock i_mmap_rwsem before releasing after-split folios"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Miaohe Lin <linmiaohe@huawei.com>"
+      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
+      - Link: https://lore.kernel.org/20260716095424.471052-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 20 -> 20 commits (no change)
-  - series: 2 (19) -> 2 (19) (no change)
-    - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
+- mm-unstable: 20 -> 23 commits
+  - series: 2 (19) -> 4 (22)
+    - no role, no role : 5 -> 6 commits
+    - no role, reviewer: 4 -> 6 commits
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 2 (3) -> 2 (3) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm: mincore: misc cleanups", v3. (6)
+      - 4a13d969cd21 "mm: introduce pud_is_huge() helper (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260717091347.1144789-1-wangkefeng.wang@huawei.com
+        - Link: https://lore.kernel.org/20260717091347.1144789-2-wangkefeng.wang@huawei.com
+    - series "mm/huge_memory: drop dead split helper variants". (2)
+      - 40a80d0bfd17 "mm/huge_memory: remove unused can_split_folio() (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260716100345.473473-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260716100345.473473-2-kirill@shutemov.name
+        - Link: https://lore.kernel.org/linux-mm/aldjhtfVByHDQXe6@thinkstation [1]
+        - Link: https://lore.kernel.org/linux-mm/20260714122344.351895-1-kirill@shutemov.name [2]
+      - b0b3be4c0fd7 "mm/huge_memory: fold split_folio_to_list_to_order() into split_folio_to_order() (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260716100345.473473-3-kirill@shutemov.name
+- mm-new: 3 -> 2 commits
+  - series: 2 (3) -> 0 (1)
+    - no role, nobody: 1 -> 2 commits
+    - no role, reviewer: 2 -> 0 commits
+  - new commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - 78bc56f5c5ad "mm: introduce and use linear_folio_page_index() (7/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
+    - 0b8f2f4306fb "selftests/mm: transhuge-stress: check duration inside page loop"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260720103105.169955-1-sarthak.sharma@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

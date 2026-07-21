@@ -1,4 +1,4 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -11,8 +11,23 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 4 commits
+  - series: 0 (0) -> 0 (4)
+    - no role, nobody: 0 -> 4 commits
+  - new commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - c84db87bf32c "mm: introduce linear_virt_page_index() (1/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-2-2d549757a76f@kernel.org
+      - 78bc56f5c5ad "mm: introduce and use linear_folio_page_index() (7/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
+      - ce1c454cccab "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios (8/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
+      - a0a18e0bdf9d "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (12/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-13-2d549757a76f@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

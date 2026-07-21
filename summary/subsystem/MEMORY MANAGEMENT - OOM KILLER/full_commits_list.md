@@ -1,4 +1,4 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff
+- baseline: v7.2-rc4-15-gb95f03f04d475
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - f46367f3081e "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 0c0c3bbbd101 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

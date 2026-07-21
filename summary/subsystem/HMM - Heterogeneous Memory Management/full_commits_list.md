@@ -1,20 +1,18 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff
+- baseline: v7.2-rc4-15-gb95f03f04d475
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-  - full commits list
-      - 57bf8b7fe01d "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support" (1/8)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/178413936536.1155966.8918127042760531802.stgit@skinsburskii
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 11c2533f45c0 "docs/mm: fix braces"
+      - 894505eb4506 "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support" (1/8)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/178413936536.1155966.8918127042760531802.stgit@skinsburskii
+    - 4decfbd8d3c0 "docs/mm: fix braces"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

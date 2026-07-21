@@ -1,17 +1,28 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
+- mm-hotfixes-stable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 07b4377bdbe7 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name
+    - 40de8160ca7f "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260715144234.442721-2-kirill@shutemov.name
+- mm-hotfixes-unstable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 55 -> 55 commits (no change)
-  - series: 2 (49) -> 2 (49) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
+- mm-unstable: 55 -> 65 commits
+  - series: 2 (49) -> 3 (57)
+    - no role, nobody: 3 -> 5 commits
+    - no role, no role : 6 -> 9 commits
+    - no role, reviewer: 4 -> 9 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 6 -> 6 commits (no change)
     - reviewer, reviewer: 8 -> 8 commits (no change)
@@ -19,12 +30,93 @@
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 11 -> 11 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-new: 9 -> 9 commits (no change)
-  - series: 1 (8) -> 1 (8) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
+  - new commits
+    - series "mm: mincore: misc cleanups", v3. (6)
+      - 2188fdbd5c35 "mm: mincore: fixup for remove special handling for VM_PFNMAP (2/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720124151.1483820-1-wangkefeng.wang@huawei.com
+    - dbeb26fb7f8c "mm: mincore: fixup improve mincore_hugetlb()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260720124252.1483984-1-wangkefeng.wang@huawei.com
+  - changed commits
+    - series "mm/mseal: further cleanups", v2. (3)
+      - 7aa7559e4232 "mm/mseal: remove superfluous comments, fix confusion around mm (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-0-0daa0014b813@kernel.org
+        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-1-0daa0014b813@kernel.org
+      - 9f244bc5dcea "mm/mseal: limit scope of mseal address zero to address zero (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-2-0daa0014b813@kernel.org
+      - e71c8cdc7de1 "mm/mseal: remove further superfluous comments, do_mseal() (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-3-0daa0014b813@kernel.org
+    - series "mm: mincore: misc cleanups", v3. (6)
+      - 17587fb56589 "mm: mincore: remove special handling for VM_PFNMAP (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/linux-mm/0e619d71-1c3d-4534-8376-2982c7348c31@kernel.org/
+        - Link: https://lore.kernel.org/20260717091347.1144789-3-wangkefeng.wang@huawei.com
+      - 99b0bef8fc38 "mm: mincore: replace __get_free_page() with kmalloc() (3/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260717091347.1144789-4-wangkefeng.wang@huawei.com
+      - 200408df02dd "mm: mincore: remove xa_is_value() in mincore_swap() (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260717091347.1144789-5-wangkefeng.wang@huawei.com
+      - f8306d934b90 "mm: mincore: improve mincore_hugetlb() (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260717091347.1144789-6-wangkefeng.wang@huawei.com
+    - e004c61782f0 "mm: mincore: refactor mincore_page()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260717091347.1144789-7-wangkefeng.wang@huawei.com
+- mm-new: 9 -> 11 commits
+  - series: 1 (8) -> 1 (10)
+    - no role, nobody: 1 -> 10 commits
+    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 5 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - f815a96522ec "mm/vma: introduce VMA virtual page offset field and add helpers (0/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-0-2d549757a76f@kernel.org
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-1-2d549757a76f@kernel.org
+      - c84db87bf32c "mm: introduce linear_virt_page_index() (1/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-2-2d549757a76f@kernel.org
+      - f0e305a71f21 "mm: propagate VMA virtual page offset on map, remap, split + merge (5/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-6-2d549757a76f@kernel.org
+      - ce1c454cccab "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios (8/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
+      - 3047051ad7ac "tools/testing/vma: expand VMA merge tests to assert virt pgoff (9/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-10-2d549757a76f@kernel.org
+      - 7d2df85055f5 "tools/testing/selftests/mm: test virtual page offset merge behaviour (10/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-11-2d549757a76f@kernel.org
+      - eaf4438de092 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (11/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-12-2d549757a76f@kernel.org
+      - a0a18e0bdf9d "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (12/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-13-2d549757a76f@kernel.org
+      - 056c64d489f8 "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon (13/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-14-2d549757a76f@kernel.org
+      - 7c5c5dcc35c7 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests (14/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-15-2d549757a76f@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

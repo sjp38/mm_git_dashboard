@@ -1,12 +1,5 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-    - 79c37ae3733e "mm/kmemleak: fix checksum computation for per-cpu objects"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/all/akfYImSNDh3OjIfR@gmail.com [0]
-      - Link: https://lore.kernel.org/20260703-kmemleak_checksum-v1-1-5e0ab7d6966f@debian.org
+- baseline: v7.2-rc4-15-gb95f03f04d475
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 7 total, 2 (6) series, 1 non-series commits
@@ -16,30 +9,36 @@
     - maintainer, nobody: 1 commits
   - full commits list
     - series "mm/kmemleak: avoid soft lockup when scanning task", v3. (3 commits)
-      - d2ddefbb6213 "mm/kmemleak: avoid soft lockup when scanning task stacks" (0/3)
+      - 7e6614222c38 "mm/kmemleak: avoid soft lockup when scanning task stacks" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-0-acecd7d7fd92@debian.org
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-1-acecd7d7fd92@debian.org
-      - 63b8832c43be "mm/kmemleak: stop the task stack scan early when interrupted" (1/3)
+      - b38d52260ada "mm/kmemleak: stop the task stack scan early when interrupted" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-2-acecd7d7fd92@debian.org
-      - 4f3ae9fc3fe3 "mm/kmemleak: stop the per-cpu and struct page scans early too" (2/3)
+      - 0d96dab40229 "mm/kmemleak: stop the per-cpu and struct page scans early too" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-3-acecd7d7fd92@debian.org
-    - 01cb78cf4966 "mm/kmemleak: skip the remaining scan phases when interrupted"
+    - 505dced7b267 "mm/kmemleak: skip the remaining scan phases when interrupted"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260626-kmemleak_improve-v1-1-d40c7616f64f@debian.org
     - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4 commits)
-      - c2a89e75d8a3 "mm: kmemleak: confirm suspected leaks with a second scan" (0/4)
+      - 78bdde42439a "mm: kmemleak: confirm suspected leaks with a second scan" (0/4)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-0-5b93b1131089@debian.org
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-1-5b93b1131089@debian.org
-      - e101436d5f17 "mm: kmemleak: report leaks only after N consecutive unreferenced scans" (1/4)
+      - b852cfa9476f "mm: kmemleak: report leaks only after N consecutive unreferenced scans" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-2-5b93b1131089@debian.org
-      - b35e55d2b26a "mm: kmemleak: factor leak confirmation into a helper" (2/4)
+      - 363e26aee7f5 "mm: kmemleak: factor leak confirmation into a helper" (2/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-3-5b93b1131089@debian.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - faddd690681e "mm/kmemleak: report RCU-tasks quiescent states during the scan"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260720-kmemleak_rcu_task-v1-1-5b460ade777d@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

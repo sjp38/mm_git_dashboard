@@ -1,4 +1,4 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff
+- baseline: v7.2-rc4-15-gb95f03f04d475
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -10,30 +10,45 @@
     - reviewer, maintainer: 1 commits
   - full commits list
     - series "mm/filemap: reduce unnecessary xarray lookups". (2 commits)
-      - 29de9b3a381a "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
+      - f62317a20bbf "mm/filemap: reduce unnecessary xarray lookups when read cached pages" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-2-chizhiling@163.com
-      - 68a98529dbe2 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
+      - 2ccac4fc14c8 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260620062446.351475-3-chizhiling@163.com
-    - e861e9a95fd9 "writeback.h: fix a typo in the wbc_init_bio() description"
+    - 60ec6829e982 "writeback.h: fix a typo in the wbc_init_bio() description"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260615162244.2170866-2-willy@infradead.org
-    - ba8bdbfb5577 "mm: fix mapping_seek_hole_data() overflow on last page"
+    - e4c4e2b68837 "mm: fix mapping_seek_hole_data() overflow on last page"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260630125047.703170-1-yanzhen20011121@163.com
-    - b4a149d9e44f "mm: remove wb_writeout_inc"
+    - ed2a9f8c4fad "mm: remove wb_writeout_inc"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260710051052.1839523-1-hch@lst.de
-      - fab5e5bc90b3 "mm: introduce and use linear_page_delta()" (16/33)
+      - 863ffc62521d "mm: introduce and use linear_page_delta()" (16/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-17-2a5aa403d977@kernel.org
-      - e782c8505eb6 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 72adcbedf082 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-      - 16570440f540 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - d3b99b2d8397 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 4 total, 0 (4) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 4 commits
+  - full commits list
+      - c84db87bf32c "mm: introduce linear_virt_page_index()" (1/15)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-2-2d549757a76f@kernel.org
+      - 78bc56f5c5ad "mm: introduce and use linear_folio_page_index()" (7/15)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
+      - ce1c454cccab "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
+      - a0a18e0bdf9d "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (12/15)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-13-2d549757a76f@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

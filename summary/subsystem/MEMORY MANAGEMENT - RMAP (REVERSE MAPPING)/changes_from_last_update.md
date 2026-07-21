@@ -1,7 +1,11 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+  - dropped commits
+    - f84ca9b1888d "mm/page_vma_mapped: fix device-private PMD handling"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260630021540.17297-1-richard.weiyang@gmail.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
@@ -16,19 +20,39 @@
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
+- mm-new: 1 -> 6 commits
+  - series: 1 (1) -> 1 (6)
+    - no role, nobody: 0 -> 3 commits
+    - no role, no role : 0 -> 2 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - 9c6ca9624603 "mm: introduce and use vma_filebacked_address() (4/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org
+      - 1fd4b024a855 "mm/rmap: track whether the page VMA mapped walk is anonymous (6/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-7-2d549757a76f@kernel.org
+      - ce1c454cccab "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios (8/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
+    - series "Batch unmap of uffd-wp file folios", v2. (3)
+      - 1449007a9c77 "mm/memory: batch set uffd-wp markers during zapping (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260720065508.2695106-3-dev.jain@arm.com
+      - 4b5d685676c7 "mm/rmap: batch unmap file folios belonging to uffd-wp VMAs (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260720065508.2695106-4-dev.jain@arm.com
   - changed commits
-    - series "promote mapped executable folios after first usage for MGLRU", v3. (2)
-      - 6716e21d9bbd "mm: vmscan: convert folio_referenced() to use vma_flags_t (0/2)"
+    - series "promote mapped executable folios after first usage for MGLRU", v4. (3)
+      - dc61a734ceee "mm: vmscan: convert folio_referenced() to use vma_flags_t (0/3)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
-        - dropped "Cc: Kairui Song <kasong@tencent.com>"
-        - Link: https://lore.kernel.org/cover.1784268206.git.baolin.wang@linux.alibaba.com
-        - Link: https://lore.kernel.org/b9ef058305d1b5d6b811114830d17dd05980cef2.1784268206.git.baolin.wang@linux.alibaba.com
+        - added "Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com"
+        - added "Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com"
+        - dropped "Link: https://lore.kernel.org/cover.1784268206.git.baolin.wang@linux.alibaba.com"
+        - dropped "Link: https://lore.kernel.org/b9ef058305d1b5d6b811114830d17dd05980cef2.1784268206.git.baolin.wang@linux.alibaba.com"
+        - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
+        - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

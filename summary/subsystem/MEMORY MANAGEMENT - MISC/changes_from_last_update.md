@@ -1,34 +1,60 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc2-22-g0e35b9b6ec0ff (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, nobody: 0 -> 1 commits
+  - changed commits
+    - 07b4377bdbe7 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 34 -> 34 commits (no change)
+- mm-unstable: 34 -> 37 commits
   - series: 5 (27) -> 5 (27) (no change)
-    - no role, nobody: 10 -> 10 commits (no change)
-    - no role, no role : 13 -> 13 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, nobody: 10 -> 11 commits
+    - no role, no role : 13 -> 14 commits
+    - no role, reviewer: 3 -> 4 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - 4decfbd8d3c0 "docs/mm: fix braces"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
+    - 39a3ffe26aa6 "selftests/mm: add PAGEMAP_SCAN test for THP PMD holes"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/aljWYfPRCVc6IB2b@thinkstation
+      - Link: https://lore.kernel.org/20260715144234.442721-3-kirill@shutemov.name
+    - e534ce165a4b "selftests/mm: fix BUG_ON checking wrong variable in mremap_dontunmap"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260717070251.73212-1-hongfu.li@linux.dev
+- mm-new: 3 -> 4 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, nobody: 1 -> 3 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
   - new commits
-    - b1630a40b9b7 "selftests/mm: fix BUG_ON checking wrong variable in mremap_dontunmap"
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - 7d2df85055f5 "tools/testing/selftests/mm: test virtual page offset merge behaviour (10/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-11-2d549757a76f@kernel.org
+      - 7c5c5dcc35c7 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests (14/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-15-2d549757a76f@kernel.org
+    - 0b8f2f4306fb "selftests/mm: transhuge-stress: check duration inside page loop"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260720103105.169955-1-sarthak.sharma@arm.com
+    - 8e6678fc78e6 "selftests/mm: use MAP_FAILED for mmap error check"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260717070251.73212-1-hongfu.li@linux.dev
-  - dropped commits
-    - 4d4e1f5e5d1e "selftests/mm: Fix BUG_ON checking wrong variable in mremap_dontunmap"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260717070251.73212-1-hongfu.li@linux.dev
+      - Link: https://lore.kernel.org/20260720063439.522-1-yanlonglong@kylinos.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
