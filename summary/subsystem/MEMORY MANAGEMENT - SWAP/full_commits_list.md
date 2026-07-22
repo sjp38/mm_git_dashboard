@@ -12,72 +12,72 @@
     - reviewer, reviewer: 1 commits
   - full commits list
     - series "mm: drop "sub" prefix from various places". (2 commits)
-      - b139f5e90a0b "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
+      - 54d57bd4487f "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260623125723.2503832-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260623125723.2503832-2-dev.jain@arm.com
-    - 283611e23783 "include/linux/swap.h: remove unused leftovers"
+    - 8338c4c90746 "include/linux/swap.h: remove unused leftovers"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/68591daf0d679e5a0072d63751f187d14613e2b0.1781146877.git.ritesh.list@gmail.com
-    - 0c0c3bbbd101 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 53e1e9288d7e "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - 5fccefbf2f74 "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
+    - 72daac6ea30f "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260608143242.2869392-1-usama.arif@linux.dev
       - Link: https://lore.kernel.org/all/dca2824e8e88e826c6b260a831d79089b5b9c79d.camel@surriel.com/T/#u [1]
-      - 648381ef04ae "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
+      - 0b6b1bb28482 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
     - series "mm: clean up folio LRU and swap declarations", v9. (3 commits)
-      - 7b3f42023f18 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - f21843ce20e7 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-      - 7d7591dc47d4 "mm: move reclaim-internal declarations out of swap.h" (2/3)
+      - 907dac1671cb "mm: move reclaim-internal declarations out of swap.h" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-3-2bc72b4f8730@gmail.com
-      - b5ca5f2391c0 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - f8557f45ed40 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 73976457d5fa "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - b66b5d425559 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
     - series "better block swap batching and a different take on swap_ops v5". (7 commits)
-      - a9de2aa09566 "shmem: provide a shmem_write_folio wrapper" (0/7)
+      - b52e2396339d "shmem: provide a shmem_write_folio wrapper" (0/7)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260713093350.2154226-1-hch@lst.de
         - Link: https://lore.kernel.org/20260713093350.2154226-2-hch@lst.de
-      - 215fbe95e12f "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - 0cfb9bf1ea32 "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - 518ab95542af "mm/swap: also use struct swap_iocb for block I/O" (2/7)
+      - 8418f32cdb40 "mm/swap: also use struct swap_iocb for block I/O" (2/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-4-hch@lst.de
-      - 1684735b50e2 "mm/swap: remove count_swpout_vm_event" (3/7)
+      - 8d4edce56e54 "mm/swap: remove count_swpout_vm_event" (3/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-5-hch@lst.de
-      - a7d6858c35ce "mm/swap: use swap_ops to register swap device's methods" (4/7)
+      - 5f5e7a00fe63 "mm/swap: use swap_ops to register swap device's methods" (4/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-6-hch@lst.de
-      - d3b99b2d8397 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - 7c3410bc1810 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-      - 14f2016dc4e4 "mm/vmstat: add NRSWP{IN,OUT} counters" (6/7)
+      - 212278e88997 "mm/vmstat: add NRSWP{IN,OUT} counters" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-8-hch@lst.de
-    - 2fea29fc4115 "mm/swap: clarify unreachable cond_resched() in swap_reclaim_full_clusters"
+    - 30b804328ae6 "mm/swap: clarify unreachable cond_resched() in swap_reclaim_full_clusters"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://sashiko.dev/#/patchset/20260713025644.170839-1-youngjun.park@lge.com?part=4
       - Link: https://lore.kernel.org/20260713045014.219653-1-youngjun.park@lge.com
-    - 63749957395b "mm/swap: fix swap_cluster_lock() !CONFIG_SWAP stub signature mismatch"
+    - 87940f7f8d98 "mm/swap: fix swap_cluster_lock() !CONFIG_SWAP stub signature mismatch"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260717071104.73467-1-hongfu.li@linux.dev
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 3d18f3499c48 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - 5e0603ba185a "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

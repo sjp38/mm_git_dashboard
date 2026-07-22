@@ -1,65 +1,21 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc4-15-gb95f03f04d475 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
-  - dropped commits
-    - 47c81dadb704 "mm: page_reporting: allow driver to set batch capacity"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/444c24cf39f3f3620fc90ef4695bd6b0979f4c4b.1783232420.git.mst@redhat.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 33 -> 38 commits
-  - series: 4 (25) -> 6 (30)
+- mm-unstable: 38 -> 38 commits (no change)
+  - series: 6 (30) -> 6 (30) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 14 -> 14 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 2 -> 4 commits
-    - reviewer, reviewer: 12 -> 15 commits
-  - changed commits
-    - bf7929210bd2 "mm/page_owner: use memcg_data snapshot to avoid TOCTOU in print_page_owner_memcg()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Fixes: fcf8935832b8 ("mm/page_owner: print memcg information")"
-      - added "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/20260714015117.78351-10-ye.liu@linux.dev
-    - series "mm/page_alloc: fixes for free_pages_nolock() on RT/UP". (2)
-      - a5fe65ae162d "mm/page_alloc: don't spin_trylock() in NMI on UP (0/2)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-0-fadc49952dda@google.com
-        - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-1-fadc49952dda@google.com
-      - d5801e0ee947 "mm/page_alloc: don't spin_trylock() when disallowed in free_one_page() (1/2)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-2-fadc49952dda@google.com
-    - series "mm/page_alloc: couple of followups for recent cleanups", v3. (4)
-      - a033489ae3ab "mm/page_alloc: rename FPI_TRYLOCK -> FPI_NOLOCK (0/4)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-0-fc4d246f705d@google.com
-        - Link: https://lore.kernel.org/all/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com/
-        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-1-fc4d246f705d@google.com
-      - c30ceddbccc6 "mm/page_alloc: fixup alloc_pages_nolock_noprof() comment (2/4)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-3-fc4d246f705d@google.com
-        - Link: https://sashiko.dev/#/patchset/20260703-alloc-trylock-v5-0-c87b714e19d3%40google.com?part=6
-      - 3479b54057c7 "mm/page_alloc: remove a couple of VM_BUG_ON()st (3/4)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-4-fc4d246f705d@google.com
-        - Link: https://lore.kernel.org/all/7F866265-3F2E-4765-B9D4-9AB898A9C4AC@nvidia.com/
-- mm-new: 5 -> 1 commits
-  - series: 2 (5) -> 0 (0)
-    - no role, no role : 0 -> 1 commits
-    - reviewer, no role : 2 -> 0 commits
-    - reviewer, reviewer: 3 -> 0 commits
-  - new commits
-    - 970a0c39dea0 "mm/page_alloc: boost watermarks on atomic allocation failure"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
+    - reviewer, no role : 4 -> 4 commits (no change)
+    - reviewer, reviewer: 15 -> 15 commits (no change)
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,86 +1,26 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
-- mm-hotfixes-stable: 0 -> 1 commits
+- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc4-15-gb95f03f04d475 (no change)
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - 7441d6348c70 "mm/util: don't read __page_2 for order-1 folios in snapshot_page()"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260708201954.686111-1-aboorvad@linux.ibm.com
-- mm-hotfixes-unstable: 3 -> 2 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 82 -> 84 commits
-  - series: 10 (70) -> 10 (72)
+- mm-unstable: 84 -> 84 commits (no change)
+  - series: 10 (72) -> 10 (72) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 32 -> 33 commits
+    - no role, no role : 33 -> 33 commits (no change)
     - no role, reviewer: 8 -> 8 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, no role : 9 -> 9 commits (no change)
-    - reviewer, reviewer: 16 -> 17 commits
+    - reviewer, reviewer: 17 -> 17 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/page_alloc: couple of followups for recent cleanups", v3. (4)
-      - 3479b54057c7 "mm/page_alloc: remove a couple of VM_BUG_ON()st (3/4)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-4-fc4d246f705d@google.com
-        - Link: https://lore.kernel.org/all/7F866265-3F2E-4765-B9D4-9AB898A9C4AC@nvidia.com/
-    - series "mm/mseal: further cleanups", v2. (3)
-      - 9f244bc5dcea "mm/mseal: limit scope of mseal address zero to address zero (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-2-0daa0014b813@kernel.org
-- mm-new: 2 -> 12 commits
-  - series: 0 (2) -> 2 (11)
-    - no role, nobody: 0 -> 9 commits
-    - no role, no role : 1 -> 3 commits
-    - reviewer, reviewer: 1 -> 0 commits
-  - new commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
-      - f815a96522ec "mm/vma: introduce VMA virtual page offset field and add helpers (0/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-0-2d549757a76f@kernel.org
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-1-2d549757a76f@kernel.org
-      - c84db87bf32c "mm: introduce linear_virt_page_index() (1/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-2-2d549757a76f@kernel.org
-      - 597df0d1ea0e "mm: abstract vma_address() and introduce vma_anon_address() (2/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-3-2d549757a76f@kernel.org
-      - 8b4f615f5a58 "mm: update print_bad_page_map() to show virtual page index (3/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-4-2d549757a76f@kernel.org
-      - 9c6ca9624603 "mm: introduce and use vma_filebacked_address() (4/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org
-      - 1fd4b024a855 "mm/rmap: track whether the page VMA mapped walk is anonymous (6/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-7-2d549757a76f@kernel.org
-      - ce1c454cccab "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios (8/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
-      - eaf4438de092 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (11/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-12-2d549757a76f@kernel.org
-      - a0a18e0bdf9d "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (12/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-13-2d549757a76f@kernel.org
-    - 970a0c39dea0 "mm/page_alloc: boost watermarks on atomic allocation failure"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
-    - series "Batch unmap of uffd-wp file folios", v2. (3)
-      - 8e8399d7436a "mm/memory: move pte_install_uffd_wp_if_needed() into memory.c (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260720065508.2695106-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260720065508.2695106-2-dev.jain@arm.com
-      - 1449007a9c77 "mm/memory: batch set uffd-wp markers during zapping (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260720065508.2695106-3-dev.jain@arm.com
+- mm-new: 12 -> 12 commits (no change)
+  - series: 2 (11) -> 2 (11) (no change)
+    - no role, nobody: 9 -> 9 commits (no change)
+    - no role, no role : 3 -> 3 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

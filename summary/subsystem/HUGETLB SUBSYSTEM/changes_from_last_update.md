@@ -1,41 +1,40 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
-- mm-hotfixes-stable: 0 -> 2 commits
+- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc4-15-gb95f03f04d475 (no change)
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 83abe2fd5b3a "mm/hugetlb: fix swap entry corruption when clearing uffd-wp at fork()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260708090110.136162-1-kirill@shutemov.name
-    - dd9623f58ec7 "mm/hugetlb: fix list corruption in allocate_file_region_entries()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260713171456.300518-2-caixiangfeng@bytedance.com
-- mm-hotfixes-unstable: 3 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 35 -> 35 commits (no change)
+- mm-unstable: 35 -> 36 commits
   - series: 3 (32) -> 3 (32) (no change)
-    - no role, nobody: 6 -> 6 commits (no change)
+    - no role, nobody: 6 -> 7 commits
     - no role, no role : 13 -> 13 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 2 commits
-  - new commits
-    - 81827f67d89c "hugetlbfs: release subpool on fill_super failure"
+  - changed commits
+    - b949a2789073 "hugetlbfs: release subpool on fill_super failure"
       - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260720021900.1376309-1-chenyichong@uniontech.com
-    - 782a432374c3 "hugetlb: make hugepage_put_subpool() tolerate NULL"
-      - Authored by no role player, reviewed by nobody
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - e92b76648f58 "hugetlb: evaluate subpool free state while locked"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260721035207.1437935-1-chenyichong@uniontech.com
+  - changed commits
+    - 113b9ee572eb "hugetlb: make hugepage_put_subpool() tolerate NULL"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
       - Link: https://lore.kernel.org/20260720073841.1389354-1-chenyichong@uniontech.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

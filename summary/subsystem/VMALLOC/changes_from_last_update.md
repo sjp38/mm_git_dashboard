@@ -1,4 +1,4 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
+- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc4-15-gb95f03f04d475 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
@@ -11,12 +11,6 @@
   - series: 1 (6) -> 1 (6) (no change)
     - no role, no role : 8 -> 8 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v7. (7)
-      - b1c0dbc11cd6 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection (4/7)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
-        - Link: https://lore.kernel.org/20260715120813.3609949-6-jiangwen6@xiaomi.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

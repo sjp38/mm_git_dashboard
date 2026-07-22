@@ -16,50 +16,50 @@
     - no role, maintainer: 3 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-      - e8dcd216fa14 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
+      - ce77f76f9add "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
-      - 929bd1a6e613 "mm/mm_init: simplify deferred_free_pages() migratetype init" (4/19)
+      - 882a293ba352 "mm/mm_init: simplify deferred_free_pages() migratetype init" (4/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-6-songmuchun@bytedance.com
-      - 8d66201f971c "mm/sparse: move subsection_map_init() into sparse_init()" (6/19)
+      - a5b3b4b8a1dd "mm/sparse: move subsection_map_init() into sparse_init()" (6/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-8-songmuchun@bytedance.com
-      - 216c8a0ec7c3 "mm/mm_init: defer sparse_init() until after zone initialization" (7/19)
+      - aa86b1b6453d "mm/mm_init: defer sparse_init() until after zone initialization" (7/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-9-songmuchun@bytedance.com
-      - 6820e23c2515 "mm/mm_init: defer hugetlb reservation until after zone initialization" (8/19)
+      - 1383a4938f21 "mm/mm_init: defer hugetlb reservation until after zone initialization" (8/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-10-songmuchun@bytedance.com
-      - 9c2e18b21083 "mm/mm_init: remove set_pageblock_order() call from sparse_init()" (9/19)
+      - 18a39e10aa0b "mm/mm_init: remove set_pageblock_order() call from sparse_init()" (9/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-11-songmuchun@bytedance.com
-      - f1118e5087c1 "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid()" (10/19)
+      - f7a333821261 "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid()" (10/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-12-songmuchun@bytedance.com
-      - 62112690e806 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
+      - e9e6ba1d8a03 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-20-songmuchun@bytedance.com
-    - bfe2b965066c "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
+    - 129731ec8f3a "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
       - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
-      - 0a17c487ddc9 "mm: split out internal page_alloc.h" (3/18)
+      - f3b3457a300f "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - d6d1277b7f73 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - 4042f3e1b7e8 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - 8c13e4eef1b8 "memblock tests: split stubfs from internal.h to mm_init.h" (1/3)
+      - 86f894ecd683 "memblock tests: split stubfs from internal.h to mm_init.h" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
-      - d1ec323541f8 "mm: split out sparse declarations from internal.h" (2/3)
+      - 8bef23cb9b7c "mm: split out sparse declarations from internal.h" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-2-695631425968@kernel.org
-    - d934449e72d2 "mm: split out vmalloc declarations from internal.h"
+    - b10bc9200139 "mm: split out vmalloc declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

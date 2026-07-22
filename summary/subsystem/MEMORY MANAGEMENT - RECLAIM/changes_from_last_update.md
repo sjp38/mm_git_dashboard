@@ -1,85 +1,40 @@
-- baseline: v7.2-rc2-22-g0e35b9b6ec0ff -> v7.2-rc4-15-gb95f03f04d475
-- mm-hotfixes-stable: 0 -> 1 commits
+- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc4-15-gb95f03f04d475 (no change)
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - de4660898b7a "mm: mglru: fix stale batch updates after memcg reparenting"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - aee4408a2737 "mm: vmscan: abort proactive reclaim early when freezing for suspend"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260720044103.905191-1-richardycc@google.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 11 commits
-  - series: 1 (5) -> 2 (8)
+- mm-unstable: 11 -> 11 commits (no change)
+  - series: 2 (8) -> 2 (8) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 4 -> 7 commits
+    - no role, maintainer: 7 -> 7 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
   - changed commits
     - series "mm/vmscan: fix swappiness=max and clean up per-node proactive reclaim". (3)
-      - 828d083549cd "mm/vmscan: fix anon-only reclaim evicting file pages when swappiness=max (0/3)"
+      - a72e0cf98245 "mm: vmscan: propagate real error code from per-node proactive reclaim (1/3)"
         - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Qi Zheng <qi.zheng@linux.dev>"
-        - Link: https://lore.kernel.org/20260717113300.214717-1-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/20260717113300.214717-2-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/cgroups/7ddf3eee-5fe2-45f7-8614-c8936a039e04@linux.dev/ [1]
-      - 73cda4d5a33a "mm: vmscan: propagate real error code from per-node proactive reclaim (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Qi Zheng <qi.zheng@linux.dev>"
-        - dropped "Cc: Qi Zheng <qi.zheng@linux.dev>"
+        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
         - Link: https://lore.kernel.org/20260717113300.214717-3-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/all/20250717235604.2atyx2aobwowpge3@offworld/T/#m3514718be82a31b05726a49da9b61fbfc69a589e [1]
-      - b2ad888902b9 "mm: vmscan: drop unused gfp_mask parameter from __node_reclaim() (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Qi Zheng <qi.zheng@linux.dev>"
-        - dropped "Cc: Qi Zheng <qi.zheng@linux.dev>"
-        - Link: https://lore.kernel.org/20260717113300.214717-4-ridong.chen@linux.dev
-- mm-new: 5 -> 3 commits
-  - series: 2 (5) -> 1 (3)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 4 -> 3 commits
-  - new commits
-    - series "promote mapped executable folios after first usage for MGLRU", v4. (3)
-      - ad4e91c04973 "mm: vmscan: add a helper to identify file-backed executable folios (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/2ee74f9f98ac45a2f0db0ceb018e086bdb671d17.1784509721.git.baolin.wang@linux.alibaba.com
+- mm-new: 3 -> 3 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
   - changed commits
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3)
-      - dc61a734ceee "mm: vmscan: convert folio_referenced() to use vma_flags_t (0/3)"
+      - e9b57ab3f5a6 "mm: vmscan: add a helper to identify file-backed executable folios (1/3)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com"
-        - added "Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com"
-        - dropped "Link: https://lore.kernel.org/b9ef058305d1b5d6b811114830d17dd05980cef2.1784268206.git.baolin.wang@linux.alibaba.com"
-        - dropped "Link: https://lore.kernel.org/cover.1784268206.git.baolin.wang@linux.alibaba.com"
-        - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
-        - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
-      - 025796002694 "mm: mglru: promote mapped executable folios after first usage (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/f57d94b1d85bb3d620d89bb739128f0d929bf9c6.1784509721.git.baolin.wang@linux.alibaba.com"
-        - added "Signed-off-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
-        - added "Reviewed-by: Axel Rasmussen <axelrasmussen@google.com>"
-        - added "Cc: Jann Horn <jannh@google.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Lance Yang <lance.yang@linux.dev>"
-        - added "Cc: Barry Song <baohua@kernel.org>"
-        - added "Cc: Kairui Song <kasong@tencent.com>"
-        - added "Cc: Wei Xu <weixugc@google.com>"
-        - added "Cc: Harry Yoo <harry@kernel.org>"
-        - added "Cc: Rik van Riel <riel@surriel.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - added "Cc: Yuanchu Xie <yuanchu@google.com>"
-        - added "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/f57d94b1d85bb3d620d89bb739128f0d929bf9c6.1784509721.git.baolin.wang@linux.alibaba.com
+        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - Link: https://lore.kernel.org/2ee74f9f98ac45a2f0db0ceb018e086bdb671d17.1784509721.git.baolin.wang@linux.alibaba.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
