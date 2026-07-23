@@ -8,34 +8,25 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 35 -> 36 commits
+- mm-unstable: 36 -> 36 commits (no change)
   - series: 3 (32) -> 3 (32) (no change)
-    - no role, nobody: 6 -> 7 commits
+    - no role, nobody: 7 -> 7 commits (no change)
     - no role, no role : 13 -> 13 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - b949a2789073 "hugetlbfs: release subpool on fill_super failure"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260720021900.1376309-1-chenyichong@uniontech.com
+    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
+      - 1edec256adbc "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - e92b76648f58 "hugetlb: evaluate subpool free state while locked"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260721035207.1437935-1-chenyichong@uniontech.com
-  - changed commits
-    - 113b9ee572eb "hugetlb: make hugepage_put_subpool() tolerate NULL"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - Link: https://lore.kernel.org/20260720073841.1389354-1-chenyichong@uniontech.com
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

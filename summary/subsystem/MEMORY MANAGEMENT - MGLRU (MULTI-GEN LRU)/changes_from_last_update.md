@@ -2,41 +2,42 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - aee4408a2737 "mm: vmscan: abort proactive reclaim early when freezing for suspend"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260720044103.905191-1-richardycc@google.com
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 16 -> 16 commits (no change)
-  - series: 2 (12) -> 2 (12) (no change)
+- mm-unstable: 16 -> 19 commits
+  - series: 2 (12) -> 3 (15)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 7 -> 7 commits (no change)
+    - no role, maintainer: 7 -> 10 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/vmscan: fix swappiness=max and clean up per-node proactive reclaim". (3)
-      - a72e0cf98245 "mm: vmscan: propagate real error code from per-node proactive reclaim (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
-        - Link: https://lore.kernel.org/20260717113300.214717-3-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/all/20250717235604.2atyx2aobwowpge3@offworld/T/#m3514718be82a31b05726a49da9b61fbfc69a589e [1]
-- mm-new: 5 -> 5 commits (no change)
-  - series: 2 (4) -> 2 (4) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-  - changed commits
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3)
-      - e9b57ab3f5a6 "mm: vmscan: add a helper to identify file-backed executable folios (1/3)"
+      - ec4e4860af47 "mm: vmscan: convert folio_referenced() to use vma_flags_t (0/3)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
+        - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
+      - 7e3541e78967 "mm: vmscan: add a helper to identify file-backed executable folios (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/2ee74f9f98ac45a2f0db0ceb018e086bdb671d17.1784509721.git.baolin.wang@linux.alibaba.com
+      - 89437b3e72bb "mm: mglru: promote mapped executable folios after first usage (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/f57d94b1d85bb3d620d89bb739128f0d929bf9c6.1784509721.git.baolin.wang@linux.alibaba.com
+- mm-new: 5 -> 3 commits
+  - series: 2 (4) -> 1 (2)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 3 -> 1 commits
+  - new commits
+    - series "mm: fix node reclaim swappiness handling", v2. (2)
+      - 9091af8aa1bd "mm: vmscan: fix node reclaim ignoring swappiness parameter (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260716031729.1064007-3-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,17 +7,23 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 20 -> 20 commits (no change)
-  - series: 3 (18) -> 3 (17)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 20 -> 21 commits
+  - series: 3 (17) -> 3 (18)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 10 -> 10 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - f6a6335c36ea "mm: introduce and use linear_folio_page_index() (7/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

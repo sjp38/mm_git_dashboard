@@ -5,21 +5,41 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 22 -> 22 commits (no change)
-  - series: 2 (22) -> 2 (22) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 22 -> 26 commits
+  - series: 2 (22) -> 3 (26)
+    - no role, nobody: 1 -> 4 commits
     - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
-- mm-new: 6 -> 6 commits (no change)
-  - series: 1 (6) -> 1 (6) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
+  - changed commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - 091d2ca7904f "mm: introduce and use vma_filebacked_address() (4/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org
+      - 5da49a5732f1 "mm/rmap: track whether the page VMA mapped walk is anonymous (6/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-7-2d549757a76f@kernel.org
+      - 9353a068f0c5 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios (8/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
+    - series "promote mapped executable folios after first usage for MGLRU", v4. (3)
+      - ec4e4860af47 "mm: vmscan: convert folio_referenced() to use vma_flags_t (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
+        - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
+- mm-new: 6 -> 2 commits
+  - series: 1 (6) -> 0 (2)
+    - no role, nobody: 3 -> 0 commits
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

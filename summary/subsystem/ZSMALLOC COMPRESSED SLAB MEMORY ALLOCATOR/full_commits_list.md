@@ -8,24 +8,24 @@
     - maintainer, nobody: 3 commits
   - full commits list
     - series "mm/zsmalloc: reduce lock contention in zs_free()", v6. (4 commits)
-      - 5e5433b3a3f6 "mm/zsmalloc: encode class index in obj value for lockless class lookup" (0/4)
+      - 0df5f5f24237 "mm/zsmalloc: encode class index in obj value for lockless class lookup" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260626015003.2965881-1-haowenchao22@gmail.com
         - Link: https://lore.kernel.org/20260626015003.2965881-2-haowenchao22@gmail.com
-      - 5fb59f0b617f "mm-zsmalloc-encode-class-index-in-obj-value-for-lockless-class-lookup-fix" (1/4)
+      - 9e5a2c8e876e "mm-zsmalloc-encode-class-index-in-obj-value-for-lockless-class-lookup-fix" (1/4)
         - Authored by a maintainer, reviewed by nobody
-      - c92c354aab32 "mm/zsmalloc: drop pool->lock from zs_free on 64-bit systems" (2/4)
+      - 6ebb02f42da7 "mm/zsmalloc: drop pool->lock from zs_free on 64-bit systems" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260626015003.2965881-3-haowenchao22@gmail.com
-      - 7060491eaaea "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix" (3/4)
+      - a3c30d536b84 "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix" (3/4)
         - Authored by a maintainer, reviewed by nobody
-    - ff55f32652d9 "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix-fix"
+    - 95d1a09fff11 "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix-fix"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/202607020359.FMDmPwjF-lkp@intel.com
-    - c8d006a77f38 "mm/zsmalloc: drop class lock before freeing zspage"
+    - a86dc9a80eaa "mm/zsmalloc: drop class lock before freeing zspage"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260626015003.2965881-4-haowenchao22@gmail.com
-    - e3036e9f1ef3 "mm/zsmalloc: document free_zspage helper variants"
+    - 3d9a04b3a92e "mm/zsmalloc: document free_zspage helper variants"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260626015003.2965881-5-haowenchao22@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -12,8 +12,15 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 12 -> 12 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: fix node reclaim swappiness handling", v2. (2)
+      - 6a1516c57150 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260716031729.1064007-1-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/20260716031729.1064007-2-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

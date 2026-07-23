@@ -10,96 +10,99 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - aee4408a2737 "mm: vmscan: abort proactive reclaim early when freezing for suspend"
+    - 169e9d56c3e2 "mm: vmscan: abort proactive reclaim early when freezing for suspend"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260720044103.905191-1-richardycc@google.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 16 total, 2 (12) series, 4 non-series commits
+- mm-unstable: 19 total, 3 (15) series, 4 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 3 commits
     - no role, reviewer: 3 commits
-    - no role, maintainer: 7 commits
+    - no role, maintainer: 10 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 77c4e90c2e05 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
+    - 5b94cafdd6c6 "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
-      - 6b1fdf83e56e "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
+      - 6572b1ee222a "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late()" (16/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
-    - 53e1e9288d7e "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 1ac967d1de61 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - 9b00a8fc4b72 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
+    - 552a9b25b863 "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
-      - 0a5cd3b09573 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer" (6/10)
+      - 3c01f6fcb504 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer" (6/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
-      - cb09f4e7043b "memcg: bail out proactive reclaim when memcg is dying" (2/4)
+      - ca9fbda820de "memcg: bail out proactive reclaim when memcg is dying" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
-      - f3b3457a300f "mm: split out internal page_alloc.h" (3/18)
+      - 35c57972469d "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
     - series "mm: clean up folio LRU and swap declarations", v9. (3 commits)
-      - f21843ce20e7 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - b53d69d6657e "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-      - 95c912373230 "mm: rename swap.c to folio.c" (1/3)
+      - f65428776fa4 "mm: rename swap.c to folio.c" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-2-2bc72b4f8730@gmail.com
-      - f8557f45ed40 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 9a285f4af074 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 0cfb9bf1ea32 "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - bba599ce23fe "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - 7c3410bc1810 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - a96f43c4c1c7 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-    - d09df97d42d6 "mm: let node_reclaim() return the number of pages reclaimed"
+    - 1f57713fcaa2 "mm: let node_reclaim() return the number of pages reclaimed"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
     - series "mm/vmscan: fix swappiness=max and clean up per-node proactive reclaim". (3 commits)
-      - 4ebf7834cfad "mm/vmscan: fix anon-only reclaim evicting file pages when swappiness=max" (0/3)
+      - 77b72839dd3d "mm/vmscan: fix anon-only reclaim evicting file pages when swappiness=max" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260717113300.214717-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260717113300.214717-2-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/cgroups/7ddf3eee-5fe2-45f7-8614-c8936a039e04@linux.dev/ [1]
-      - a72e0cf98245 "mm: vmscan: propagate real error code from per-node proactive reclaim" (1/3)
+      - 7ae7c2cb0f8d "mm: vmscan: propagate real error code from per-node proactive reclaim" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260717113300.214717-3-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/all/20250717235604.2atyx2aobwowpge3@offworld/T/#m3514718be82a31b05726a49da9b61fbfc69a589e [1]
-      - b269f833ec71 "mm: vmscan: drop unused gfp_mask parameter from __node_reclaim()" (2/3)
+      - 495eeec70e9f "mm: vmscan: drop unused gfp_mask parameter from __node_reclaim()" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260717113300.214717-4-ridong.chen@linux.dev
-- mm-new: 5 total, 2 (4) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, maintainer: 3 commits
-  - full commits list
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
-      - e41c1279fa35 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
+      - ec4e4860af47 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
-      - e9b57ab3f5a6 "mm: vmscan: add a helper to identify file-backed executable folios" (1/3)
+      - 7e3541e78967 "mm: vmscan: add a helper to identify file-backed executable folios" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/2ee74f9f98ac45a2f0db0ceb018e086bdb671d17.1784509721.git.baolin.wang@linux.alibaba.com
-      - a80528f9a710 "mm: mglru: promote mapped executable folios after first usage" (2/3)
+      - 89437b3e72bb "mm: mglru: promote mapped executable folios after first usage" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/f57d94b1d85bb3d620d89bb739128f0d929bf9c6.1784509721.git.baolin.wang@linux.alibaba.com
-    - e7e7481a5861 "mm/page_alloc: boost watermarks on atomic allocation failure"
+- mm-new: 3 total, 1 (2) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+    - b0aecfb0d909 "mm/page_alloc: boost watermarks on atomic allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
     - series "Batch unmap of uffd-wp file folios", v2. (3 commits)
-      - 0ed83ee4d2c7 "mm/memory: move pte_install_uffd_wp_if_needed() into memory.c" (0/3)
+      - 3c4ab594ab50 "mm/memory: move pte_install_uffd_wp_if_needed() into memory.c" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720065508.2695106-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260720065508.2695106-2-dev.jain@arm.com
+      - 9091af8aa1bd "mm: vmscan: fix node reclaim ignoring swappiness parameter" (1/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260716031729.1064007-3-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -5,14 +5,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 7 commits (no change)
+- mm-unstable: 7 -> 8 commits
   - series: 2 (6) -> 2 (6) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+  - changed commits
+    - 8026da5cb0d3 "mm/kmemleak: report RCU-tasks quiescent states during the scan"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260720-kmemleak_rcu_task-v1-1-5b460ade777d@debian.org
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

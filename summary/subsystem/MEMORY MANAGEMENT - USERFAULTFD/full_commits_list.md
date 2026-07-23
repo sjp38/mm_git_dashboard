@@ -2,55 +2,52 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 12 total, 0 (11) series, 1 non-series commits
+- mm-unstable: 13 total, 0 (12) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 3 commits
     - no role, no role : 8 commits
     - no role, reviewer: 1 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-    - c3cf524781da "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
+    - ca550da4c034 "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260601082609.170076-1-jianhuizzzzz@gmail.com
-      - f8557f45ed40 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 9a285f4af074 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 7eb47ab04729 "userfaultfd: test uffd VMA flags through the vma_flags_t API" (3/15)
+      - 2ec71513d3e8 "userfaultfd: test uffd VMA flags through the vma_flags_t API" (3/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-5-kirill@shutemov.name
-      - bec66c672a66 "mm: add VM_UFFD_RWP VMA flag" (4/15)
+      - 1f7400add4d0 "mm: add VM_UFFD_RWP VMA flag" (4/15)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260708111417.173443-6-kirill@shutemov.name
-      - 824e4cba2ad8 "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
+      - 75d3ce378a1c "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
-      - b66b5d425559 "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - 42f6583aa5ff "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - 7c23eb4bdac8 "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing" (8/15)
+      - 789cbfc051d5 "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing" (8/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-10-kirill@shutemov.name
-      - c6f901202b39 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
+      - 0e97265b9f19 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
-      - 859fa159cb79 "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
+      - 782686ddb95c "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
-      - 629664398305 "userfaultfd: add UFFDIO_SET_MODE for runtime sync/async toggle" (12/15)
+      - 5bf9d92670ed "userfaultfd: add UFFDIO_SET_MODE for runtime sync/async toggle" (12/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-14-kirill@shutemov.name
-      - 9934ea2a4b98 "Documentation/userfaultfd: document RWP working set tracking" (14/15)
+      - c0df27dcbc07 "Documentation/userfaultfd: document RWP working set tracking" (14/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260708111417.173443-16-kirill@shutemov.name
-      - 607483fed73e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - dafee3ab606e "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-      - cf90eabf298b "mm: introduce and use linear_folio_page_index()" (7/15)
+      - f6a6335c36ea "mm: introduce and use linear_folio_page_index()" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

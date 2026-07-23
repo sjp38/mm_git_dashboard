@@ -7,10 +7,16 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 9 -> 9 commits (no change)
+- mm-unstable: 9 -> 10 commits
   - series: 1 (6) -> 1 (6) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 8 -> 8 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v7. (7)
+      - 015151663774 "mm/vmalloc: simplify vmap batching helper and limit scan by PFN alignment (6/7)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260722085841.3047673-1-jiangwen6@xiaomi.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

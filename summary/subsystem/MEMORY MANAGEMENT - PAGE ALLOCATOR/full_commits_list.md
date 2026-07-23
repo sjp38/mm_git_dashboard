@@ -1,6 +1,12 @@
 - baseline: v7.2-rc4-15-gb95f03f04d475
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 0feb7ae5f6ba "mm/page_reporting: use system_freezable_wq to fix UAF during suspend"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260721005603.1710551-1-linkl@google.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 38 total, 6 (30) series, 8 non-series commits
   - author/reviewer role stat
@@ -11,150 +17,166 @@
     - reviewer, no role : 4 commits
     - reviewer, reviewer: 15 commits
   - full commits list
-    - c53d4c100093 "mm/page_alloc: don't build vm_numa_stat_key if CONFIG_NUMA=n"
+    - 4f658061c3b1 "mm/page_alloc: don't build vm_numa_stat_key if CONFIG_NUMA=n"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260618100614.1321950-1-ben.dooks@codethink.co.uk
     - series "mm/page_owner: misc cleanups", v6. (6 commits)
-      - 640ba7501040 "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping" (0/6)
+      - 794d9861d51b "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping" (0/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714015117.78351-1-ye.liu@linux.dev
         - Link: https://lore.kernel.org/20260714015117.78351-2-ye.liu@linux.dev
-      - b989a4970e59 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason" (1/6)
+      - e49dcfe6da39 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason" (1/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714015117.78351-3-ye.liu@linux.dev
-      - b316abc6ce6b "mm: use enum migrate_reason instead of int for migration reason parameters" (2/6)
+      - 38910e4031e7 "mm: use enum migrate_reason instead of int for migration reason parameters" (2/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
-      - 1b9f61b747f3 "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg()" (3/6)
+      - 9b34450f8f85 "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg()" (3/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714015117.78351-5-ye.liu@linux.dev
-      - d9cdb35ffd46 "mm/page_owner: add missing newline to count_threshold format string" (4/6)
+      - 68fc548c419b "mm/page_owner: add missing newline to count_threshold format string" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714015117.78351-6-ye.liu@linux.dev
-      - 830b93d7f3c5 "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner()" (5/6)
+      - 05cac7ae8495 "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner()" (5/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714015117.78351-7-ye.liu@linux.dev
-    - 218dda742684 "mm/page_owner: drop redundant page_owner prefix from static symbols"
+    - 6d31fe8f4351 "mm/page_owner: drop redundant page_owner prefix from static symbols"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260714015117.78351-8-ye.liu@linux.dev
-    - d9fff7fee0e6 "mm/page_owner: clamp skip_buddy_pages() PFN advance at MAX_ORDER_NR_PAGES boundary"
+    - 7ec8d35a3f4a "mm/page_owner: clamp skip_buddy_pages() PFN advance at MAX_ORDER_NR_PAGES boundary"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260714015117.78351-9-ye.liu@linux.dev
-    - 304720756936 "mm/page_owner: use memcg_data snapshot to avoid TOCTOU in print_page_owner_memcg()"
+    - d7faaca4ca7a "mm/page_owner: use memcg_data snapshot to avoid TOCTOU in print_page_owner_memcg()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260714015117.78351-10-ye.liu@linux.dev
     - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v12. (4 commits)
-      - 5f10ffd6b8bf "mm/page_owner: add print_mode filter" (0/4)
+      - d870d8613b5c "mm/page_owner: add print_mode filter" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260707115411.1714314-1-zhen.ni@easystack.cn
         - Link: https://lore.kernel.org/20260707115411.1714314-2-zhen.ni@easystack.cn
-      - fc6810b78252 "mm/page_owner: add NUMA node filter" (1/4)
+      - b992eac3ae57 "mm/page_owner: add NUMA node filter" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260707115411.1714314-3-zhen.ni@easystack.cn
-    - 075f666d5f8e "mm/page_alloc: drop flag-conversion "optimisation""
+    - 31f72db1a658 "mm/page_alloc: drop flag-conversion "optimisation""
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629-gfp-pessimisation-v2-1-311ece6a8637@google.com
       - Link: https://lore.kernel.org/20260615-gfp-pessimisation-v2-1-65f1319e6818@google.com
       - Link: https://github.com/bjackman/aethelred/blob/2ccdc84ef087c2a631914f58e106e99e19bd3b98/page-alloc-test/page-alloc-test.c [1]
-    - 53e1e9288d7e "mm: constify oom_control, scan_control, and alloc_context nodemask"
+    - 1ac967d1de61 "mm: constify oom_control, scan_control, and alloc_context nodemask"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - 0c9b2e0d02c9 "mm/page_alloc: use existing highatomic reserves on the buddy fastpath"
+    - 82421fb45491 "mm/page_alloc: use existing highatomic reserves on the buddy fastpath"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260623004600.113347-1-jp.kobryn@linux.dev
-      - 0a5cd3b09573 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer" (6/10)
+      - 3c01f6fcb504 "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer" (6/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
-      - 634e3edafdb3 "mm-page_owner-add-numa-node-filter-fix" (8/10)
+      - 57f5125e89c8 "mm-page_owner-add-numa-node-filter-fix" (8/10)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com
     - series "mm: Some cleanups for page allocator APIs", v5. (18 commits)
-      - 0f45c5f41bb3 "mm/page_alloc: rename ALLOC_TRYLOCK -> ALLOC_NOLOCK" (0/18)
+      - 24b8ad567c8a "mm/page_alloc: rename ALLOC_TRYLOCK -> ALLOC_NOLOCK" (0/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-0-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/linux-mm/2399b3ad-4eac-4a14-94c3-27e9f07972a1@kernel.org/
         - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [1]
-      - bcf0b948616a "mm/page_alloc: some renames to clarify alloc_flags scopes" (1/18)
+      - 0225bb0a9ada "mm/page_alloc: some renames to clarify alloc_flags scopes" (1/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-2-c87b714e19d3@google.com
-      - f3b3457a300f "mm: split out internal page_alloc.h" (3/18)
+      - 35c57972469d "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-      - 4927dfd61213 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof()" (4/18)
+      - 76d97576f7b7 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof()" (4/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
-      - 00ac08dc1a2b "mm/page_alloc: relax GFP WARN in nolock allocs" (5/18)
+      - c4809d0f96b9 "mm/page_alloc: relax GFP WARN in nolock allocs" (5/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-6-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/linux-mm/ajS96fWbG4dzP3u3@casper.infradead.org/
-      - 490df66cadda "mm: move some stuff to mm/page_alloc.h" (6/18)
+      - c9849b9a1bdb "mm: move some stuff to mm/page_alloc.h" (6/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-7-c87b714e19d3@google.com
-      - 10c604f88186 "mm: remove __alloc_pages_node()" (12/18)
+      - 4a170fdb77fd "mm: remove __alloc_pages_node()" (12/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-13-c87b714e19d3@google.com
-      - e1c3b48225e7 "mm: move __alloc_pages() to mm/page_alloc.h" (13/18)
+      - 65e8259833fe "mm: move __alloc_pages() to mm/page_alloc.h" (13/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
-      - 2aa79dd2904b "mm: replace __GFP_NO_CODETAG with ALLOC_NO_CODETAG" (14/18)
+      - 05bf948f129c "mm: replace __GFP_NO_CODETAG with ALLOC_NO_CODETAG" (14/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/all/b4916118-3537-4e19-8bc8-1d103dd0d225@linux.dev/
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-15-c87b714e19d3@google.com
-      - 4d323dbb93a4 "mm/page_alloc: drop alloc_flags arg from alloc_flags_cma()" (16/18)
+      - bf41d1a4f761 "mm/page_alloc: drop alloc_flags arg from alloc_flags_cma()" (16/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-17-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/5dcdd1ef-21ad-4ed0-9e8a-0e5cf96b4392@kernel.org/
-      - 741bdfe07ba0 "mm: factor out can_spin_trylock()" (17/18)
+      - 956a6158bb8c "mm: factor out can_spin_trylock()" (17/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-18-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/397859cb-b127-4cc6-9c71-044afc99bf0c@kernel.org/
-      - e11c49ecddbd "mm/compaction: stop recording free page order in page->private" (1/5)
+      - fb99964f6062 "mm/compaction: stop recording free page order in page->private" (1/5)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-2-7e4fe155f5b9@nvidia.com
-      - 3bc0f53efb61 "mm/page_alloc: make sure tail_page->private is zero at page free time" (3/5)
+      - a36a9cf27035 "mm/page_alloc: make sure tail_page->private is zero at page free time" (3/5)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-4-7e4fe155f5b9@nvidia.com
-      - 5e77df6502a9 "mm: provide free_reserved_pages(), removing x86 variant" (1/10)
+      - 23a70892ab39 "mm: provide free_reserved_pages(), removing x86 variant" (1/10)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-2-4afc76c73d61@kernel.org
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - 4042f3e1b7e8 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - 6e91f6779258 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-    - d09df97d42d6 "mm: let node_reclaim() return the number of pages reclaimed"
+    - 1f57713fcaa2 "mm: let node_reclaim() return the number of pages reclaimed"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
     - series "mm/page_alloc: fixes for free_pages_nolock() on RT/UP". (2 commits)
-      - fa3fb5a9882b "mm/page_alloc: don't spin_trylock() in NMI on UP" (0/2)
+      - 9db38a0c0ec4 "mm/page_alloc: don't spin_trylock() in NMI on UP" (0/2)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-0-fadc49952dda@google.com
         - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-1-fadc49952dda@google.com
-      - 286c054bd354 "mm/page_alloc: don't spin_trylock() when disallowed in free_one_page()" (1/2)
+      - f6d1ebfb2ddb "mm/page_alloc: don't spin_trylock() when disallowed in free_one_page()" (1/2)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-2-fadc49952dda@google.com
     - series "mm/page_alloc: couple of followups for recent cleanups", v3. (4 commits)
-      - 3a9597460b0c "mm/page_alloc: rename FPI_TRYLOCK -> FPI_NOLOCK" (0/4)
+      - bfbf96523a62 "mm/page_alloc: rename FPI_TRYLOCK -> FPI_NOLOCK" (0/4)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-0-fc4d246f705d@google.com
         - Link: https://lore.kernel.org/all/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com/
         - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-1-fc4d246f705d@google.com
-      - 0999c63c67c1 "mm/page_alloc: fixup alloc_pages_nolock_noprof() comment" (2/4)
+      - e933a23604b3 "mm/page_alloc: fixup alloc_pages_nolock_noprof() comment" (2/4)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-3-fc4d246f705d@google.com
         - Link: https://sashiko.dev/#/patchset/20260703-alloc-trylock-v5-0-c87b714e19d3%40google.com?part=6
-      - 2be40368fd4d "mm/page_alloc: remove a couple of VM_BUG_ON()st" (3/4)
+      - 7a7a0405d0bc "mm/page_alloc: remove a couple of VM_BUG_ON()st" (3/4)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-4-fc4d246f705d@google.com
         - Link: https://lore.kernel.org/all/7F866265-3F2E-4765-B9D4-9AB898A9C4AC@nvidia.com/
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 5 total, 1 (4) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, no role : 2 commits
+    - reviewer, nobody: 1 commits
+    - reviewer, no role : 2 commits
   - full commits list
-    - e7e7481a5861 "mm/page_alloc: boost watermarks on atomic allocation failure"
+    - b0aecfb0d909 "mm/page_alloc: boost watermarks on atomic allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
+    - series "mm: fix reclaim storms in defrag_mode", v2. (4 commits)
+      - 9978b5acf6b3 "mm: page_alloc: __GFP_FS lockdep annotation for direct compaction" (0/4)
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260722150006.3848560-1-hannes@cmpxchg.org
+        - Link: https://lore.kernel.org/20260722150006.3848560-2-hannes@cmpxchg.org
+      - e3b882da42fc "mm: compaction: support non-movable compaction for pageblock requests" (1/4)
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260722150006.3848560-3-hannes@cmpxchg.org
+      - 26648610af6b "mm: page_alloc: move capture_control to the page allocator" (2/4)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260722150006.3848560-4-hannes@cmpxchg.org
+      - 9f44c03e9208 "mm: page_alloc: fix non-movable reclaim storm in defrag_mode" (3/4)
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260722150006.3848560-5-hannes@cmpxchg.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

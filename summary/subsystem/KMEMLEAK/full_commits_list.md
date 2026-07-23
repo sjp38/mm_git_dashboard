@@ -2,43 +2,41 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 7 total, 2 (6) series, 1 non-series commits
+- mm-unstable: 8 total, 2 (6) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, no role : 1 commits
     - no role, maintainer: 5 commits
     - maintainer, nobody: 1 commits
   - full commits list
     - series "mm/kmemleak: avoid soft lockup when scanning task", v3. (3 commits)
-      - 34d3f2aea467 "mm/kmemleak: avoid soft lockup when scanning task stacks" (0/3)
+      - 45b1204ecf04 "mm/kmemleak: avoid soft lockup when scanning task stacks" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-0-acecd7d7fd92@debian.org
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-1-acecd7d7fd92@debian.org
-      - e2802d48d2d8 "mm/kmemleak: stop the task stack scan early when interrupted" (1/3)
+      - 87f5f76b4ab5 "mm/kmemleak: stop the task stack scan early when interrupted" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-2-acecd7d7fd92@debian.org
-      - a32f98e5ec46 "mm/kmemleak: stop the per-cpu and struct page scans early too" (2/3)
+      - 25c444e9d243 "mm/kmemleak: stop the per-cpu and struct page scans early too" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-3-acecd7d7fd92@debian.org
-    - 3f0495f2915b "mm/kmemleak: skip the remaining scan phases when interrupted"
+    - f064431184b6 "mm/kmemleak: skip the remaining scan phases when interrupted"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260626-kmemleak_improve-v1-1-d40c7616f64f@debian.org
     - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4 commits)
-      - 708263468357 "mm: kmemleak: confirm suspected leaks with a second scan" (0/4)
+      - 04a3663a777e "mm: kmemleak: confirm suspected leaks with a second scan" (0/4)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-0-5b93b1131089@debian.org
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-1-5b93b1131089@debian.org
-      - 73b84a1111e5 "mm: kmemleak: report leaks only after N consecutive unreferenced scans" (1/4)
+      - 119b2818f251 "mm: kmemleak: report leaks only after N consecutive unreferenced scans" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-2-5b93b1131089@debian.org
-      - 8deac5047c2a "mm: kmemleak: factor leak confirmation into a helper" (2/4)
+      - 8389476ad88c "mm: kmemleak: factor leak confirmation into a helper" (2/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-3-5b93b1131089@debian.org
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-    - 539af691db43 "mm/kmemleak: report RCU-tasks quiescent states during the scan"
+    - 8026da5cb0d3 "mm/kmemleak: report RCU-tasks quiescent states during the scan"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260720-kmemleak_rcu_task-v1-1-5b460ade777d@debian.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -6,88 +6,214 @@
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 8 -> 9 commits
+- mm-hotfixes-unstable: 9 -> 11 commits
   - series: 2 (5) -> 2 (5) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 4 commits
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 4 -> 5 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
   - new commits
-    - aee4408a2737 "mm: vmscan: abort proactive reclaim early when freezing for suspend"
+    - 4dff174670f1 "mm/page_table_check: skip special zero mappings"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/cover.1784717203.git.zhilinz@nebusec.ai
+      - Link: https://lore.kernel.org/e94478e4fb7912fb7e8ebebed5ce85d00dc9a69d.1784717203.git.zhilinz@nebusec.ai
+    - 0feb7ae5f6ba "mm/page_reporting: use system_freezable_wq to fix UAF during suspend"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260720044103.905191-1-richardycc@google.com
+      - Link: https://lore.kernel.org/20260721005603.1710551-1-linkl@google.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 379 -> 381 commits
-  - series: 48 (311) -> 48 (310)
-    - no role, nobody: 26 -> 26 commits (no change)
-    - no role, no role : 85 -> 85 commits (no change)
+- mm-unstable: 381 -> 396 commits
+  - series: 48 (310) -> 50 (323)
+    - no role, nobody: 26 -> 37 commits
+    - no role, no role : 85 -> 86 commits
     - no role, reviewer: 46 -> 46 commits (no change)
-    - no role, maintainer: 60 -> 60 commits (no change)
+    - no role, maintainer: 60 -> 63 commits
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 12 -> 12 commits (no change)
     - reviewer, reviewer: 26 -> 26 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 99 -> 101 commits
+    - maintainer, nobody: 101 -> 101 commits (no change)
     - maintainer, no role : 10 -> 10 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-  - changed commits
-    - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v9. (8)
-      - e80226e0aa04 "mm/hmm: move page fault handling out of walk callbacks (0/8)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/178413903133.1155966.3904063656020521607.stgit@skinsburskii
-        - Link: https://lore.kernel.org/178413935809.1155966.6398279131483632373.stgit@skinsburskii
-    - series "mm/vmscan: fix swappiness=max and clean up per-node proactive reclaim". (3)
-      - a72e0cf98245 "mm: vmscan: propagate real error code from per-node proactive reclaim (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
-        - Link: https://lore.kernel.org/20260717113300.214717-3-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/all/20250717235604.2atyx2aobwowpge3@offworld/T/#m3514718be82a31b05726a49da9b61fbfc69a589e [1]
-    - 921fc2b7fe81 "mm/damon/ops-common: use nr_accesses moving sum for quota score"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260719161136.90191-1-sj@kernel.org
-    - f30d5e351144 "mm/damon/core: handle region split failure in apply_min_nr_regions()"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260719155442.88794-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260717011834.120715-1-sj@kernel.org [1]
-- mm-new: 24 -> 26 commits
-  - series: 3 (16) -> 4 (17)
-    - no role, nobody: 13 -> 13 commits (no change)
-    - no role, no role : 6 -> 7 commits
-    - no role, maintainer: 3 -> 6 commits
-    - maintainer, nobody: 2 -> 0 commits
   - new commits
-    - series "mm/early_ioremap: clarify and clean up early_ioremap_reset()". (3)
-      - dcef0a35dbff "mm/early_ioremap: clarify early_ioremap_reset() semantics (0/3)"
+    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v7. (7)
+      - 015151663774 "mm/vmalloc: simplify vmap batching helper and limit scan by PFN alignment (6/7)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260708170647.362562-1-ekffu200098@gmail.com
-        - Link: https://lore.kernel.org/20260708170647.362562-2-ekffu200098@gmail.com
-    - 5de3e12ea935 "mm/damon/ops-common: prevent migration fallback to non-target nodes"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260721135607.251869-1-sj@kernel.org
-    - 27edb38b837a "mm/damon: remove trailing semicolons after function definitions"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260721135333.241106-1-sj@kernel.org
-    - e92b76648f58 "hugetlb: evaluate subpool free state while locked"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260721035207.1437935-1-chenyichong@uniontech.com
+        - Link: https://lore.kernel.org/20260722085841.3047673-1-jiangwen6@xiaomi.com
   - changed commits
+    - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v10. (8)
+      - cb1e4c8a1069 "mm/hmm: move page fault handling out of walk callbacks (0/8)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260722-hmm-v10-v1-1-606464dd601a@gmail.com"
+        - added "Link: https://lore.kernel.org/20260722-hmm-v10-v1-0-606464dd601a@gmail.com"
+        - added "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/178413903133.1155966.3904063656020521607.stgit@skinsburskii"
+        - dropped "Link: https://lore.kernel.org/178413935809.1155966.6398279131483632373.stgit@skinsburskii"
+        - dropped "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: Oleg Nesterov <oleg@redhat.com>"
+        - dropped "Cc: Kees Cook <kees@kernel.org>"
+        - Link: https://lore.kernel.org/20260722-hmm-v10-v1-0-606464dd601a@gmail.com
+        - Link: https://lore.kernel.org/20260722-hmm-v10-v1-1-606464dd601a@gmail.com
+      - 100a4e36da3d "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support (1/8)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260722-hmm-v10-v1-2-606464dd601a@gmail.com"
+        - dropped "Link: https://lore.kernel.org/178413936536.1155966.8918127042760531802.stgit@skinsburskii"
+        - dropped "Cc: Oleg Nesterov <oleg@redhat.com>"
+        - dropped "Cc: Kees Cook <kees@kernel.org>"
+        - Link: https://lore.kernel.org/20260722-hmm-v10-v1-2-606464dd601a@gmail.com
+    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
+      - 1b63d019ceb0 "mm/vma: update do_mmap() to use vma_flags_t (1/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-2-0fa2357d5431@kernel.org
+      - 1edec256adbc "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
+      - fb55b5765246 "mm: update generic_get_unmapped_area[_topdown]() to use vma_flags_t (3/13)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-4-0fa2357d5431@kernel.org
+      - b9eb70ab86be "mm: prefer mm->def_vma_flags in mm logic (4/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-5-0fa2357d5431@kernel.org
+      - f5904261c9aa "mm/vma: convert vm_pgprot_modify() to use vma_flags_t and rename (5/13)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-6-0fa2357d5431@kernel.org
+      - 42024a0556df "mm/vma: rename vma_get_page_prot to vma_flags_to_page_prot (6/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-7-0fa2357d5431@kernel.org
+      - 355901f517e5 "mm: introduce vma_get_page_prot() and use it (7/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Reviewed-by: Thomas Zimmermann <tzimmermann@suse.de>	[DRM]"
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Reviewed-by: Thomas Zimmermann <tzimmermann@suse.de> # DRM"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-8-0fa2357d5431@kernel.org
+      - fcac89f31fa6 "mm/vma: update create_init_stack_vma() to use vma_flags_t (8/13)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-9-0fa2357d5431@kernel.org
+      - 4b0dc62287fd "mm/vma: convert miscellaneous uses of VMA flags in core mm (9/13)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-10-0fa2357d5431@kernel.org
+      - 7b5661fe6e63 "mm/mlock: convert mlock code to use vma_flags_t (10/13)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-11-0fa2357d5431@kernel.org
+      - e7353e90ef67 "mm/mprotect: convert mprotect code to use vma_flags_t (11/13)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-12-0fa2357d5431@kernel.org
+      - 1e488833ff27 "mm/mremap: convert mremap code to use vma_flags_t (12/13)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-13-0fa2357d5431@kernel.org
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - 7f2b1362afd3 "mm/vma: introduce VMA virtual page offset field and add helpers (0/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-0-2d549757a76f@kernel.org
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-1-2d549757a76f@kernel.org
+      - 34ce64d8a6eb "mm: abstract vma_address() and introduce vma_anon_address() (2/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-3-2d549757a76f@kernel.org
+      - e4189c3ddadb "mm: update print_bad_page_map() to show virtual page index (3/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-4-2d549757a76f@kernel.org
+      - 091d2ca7904f "mm: introduce and use vma_filebacked_address() (4/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org
+      - adbe87d821f9 "mm: propagate VMA virtual page offset on map, remap, split + merge (5/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-6-2d549757a76f@kernel.org
+      - 5da49a5732f1 "mm/rmap: track whether the page VMA mapped walk is anonymous (6/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-7-2d549757a76f@kernel.org
+      - f6a6335c36ea "mm: introduce and use linear_folio_page_index() (7/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
+      - 9353a068f0c5 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios (8/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
+      - d99b48dfe7dc "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (11/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-12-2d549757a76f@kernel.org
+      - 56bdc7c21052 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (12/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-13-2d549757a76f@kernel.org
+    - 8026da5cb0d3 "mm/kmemleak: report RCU-tasks quiescent states during the scan"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260720-kmemleak_rcu_task-v1-1-5b460ade777d@debian.org
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3)
-      - e9b57ab3f5a6 "mm: vmscan: add a helper to identify file-backed executable folios (1/3)"
+      - ec4e4860af47 "mm: vmscan: convert folio_referenced() to use vma_flags_t (0/3)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
+        - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
+      - 7e3541e78967 "mm: vmscan: add a helper to identify file-backed executable folios (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/2ee74f9f98ac45a2f0db0ceb018e086bdb671d17.1784509721.git.baolin.wang@linux.alibaba.com
-    - 113b9ee572eb "hugetlb: make hugepage_put_subpool() tolerate NULL"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - Link: https://lore.kernel.org/20260720073841.1389354-1-chenyichong@uniontech.com
+      - 89437b3e72bb "mm: mglru: promote mapped executable folios after first usage (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/f57d94b1d85bb3d620d89bb739128f0d929bf9c6.1784509721.git.baolin.wang@linux.alibaba.com
+- mm-new: 26 -> 18 commits
+  - series: 4 (17) -> 4 (10)
+    - no role, nobody: 13 -> 3 commits
+    - no role, no role : 7 -> 7 commits (no change)
+    - no role, maintainer: 6 -> 5 commits
+    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, no role : 0 -> 2 commits
+  - new commits
+    - series "mm: fix reclaim storms in defrag_mode", v2. (4)
+      - 9978b5acf6b3 "mm: page_alloc: __GFP_FS lockdep annotation for direct compaction (0/4)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260722150006.3848560-1-hannes@cmpxchg.org
+        - Link: https://lore.kernel.org/20260722150006.3848560-2-hannes@cmpxchg.org
+      - e3b882da42fc "mm: compaction: support non-movable compaction for pageblock requests (1/4)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260722150006.3848560-3-hannes@cmpxchg.org
+      - 26648610af6b "mm: page_alloc: move capture_control to the page allocator (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260722150006.3848560-4-hannes@cmpxchg.org
+      - 9f44c03e9208 "mm: page_alloc: fix non-movable reclaim storm in defrag_mode (3/4)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260722150006.3848560-5-hannes@cmpxchg.org
+    - series "mm: fix node reclaim swappiness handling", v2. (2)
+      - 6a1516c57150 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260716031729.1064007-1-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/20260716031729.1064007-2-ridong.chen@linux.dev
+      - 9091af8aa1bd "mm: vmscan: fix node reclaim ignoring swappiness parameter (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260716031729.1064007-3-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,15 +7,32 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 23 -> 23 commits (no change)
-  - series: 4 (22) -> 4 (22) (no change)
+- mm-unstable: 23 -> 25 commits
+  - series: 4 (22) -> 4 (23)
+    - no role, nobody: 0 -> 2 commits
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 6 -> 6 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
+      - 1edec256adbc "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - f6a6335c36ea "mm: introduce and use linear_folio_page_index() (7/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
+    - 90719139ffc7 "selftests/mm: transhuge-stress: check duration inside page loop"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260720103105.169955-1-sarthak.sharma@arm.com
+- mm-new: 2 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
