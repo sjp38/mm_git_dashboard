@@ -2,20 +2,14 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - series "selftests: Add missing initalization of pointer passed to getline", v2. (2)
-      - f9d7d8d05aa8 "selftests/mm: fix potential wild pointer access of getline due to missing init (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260722130246.2135563-3-christian.gellermann@codasip.com
-        - Link: https://pubs.opengroup.org/onlinepubs/9799919799/functions/getline.html [1]
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 38 -> 41 commits
-  - series: 5 (28) -> 5 (30)
-    - no role, nobody: 11 -> 14 commits
+- mm-unstable: 41 -> 41 commits (no change)
+  - series: 5 (30) -> 5 (30) (no change)
+    - no role, nobody: 14 -> 14 commits (no change)
     - no role, no role : 15 -> 15 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
@@ -24,37 +18,20 @@
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v10. (8)
-      - 100a4e36da3d "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support (1/8)"
+    - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v11. (8)
+      - 49ec6b2623af "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support (1/8)"
         - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260722-hmm-v10-v1-2-606464dd601a@gmail.com"
-        - dropped "Link: https://lore.kernel.org/178413936536.1155966.8918127042760531802.stgit@skinsburskii"
-        - dropped "Cc: Oleg Nesterov <oleg@redhat.com>"
-        - dropped "Cc: Kees Cook <kees@kernel.org>"
-        - Link: https://lore.kernel.org/20260722-hmm-v10-v1-2-606464dd601a@gmail.com
-      - 53fea62f89b3 "selftests/mm: add HMM test for mmap lock-dropping faults (2/8)"
+        - added "Link: https://lore.kernel.org/20260723-hmm-v10-v11-2-c55b003a4b61@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20260722-hmm-v10-v1-2-606464dd601a@gmail.com"
+        - Link: https://lore.kernel.org/20260723-hmm-v10-v11-2-c55b003a4b61@gmail.com
+      - 759eb1f447f7 "selftests/mm: add HMM test for mmap lock-dropping faults (2/8)"
         - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260722-hmm-v10-v1-3-606464dd601a@gmail.com"
-        - dropped "Link: https://lore.kernel.org/178413937354.1155966.16649896548407894107.stgit@skinsburskii"
-        - dropped "Cc: Oleg Nesterov <oleg@redhat.com>"
-        - dropped "Cc: Kees Cook <kees@kernel.org>"
-        - Link: https://lore.kernel.org/20260722-hmm-v10-v1-3-606464dd601a@gmail.com
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
-      - e686f564bb59 "tools/testing/selftests/mm: test virtual page offset merge behaviour (10/15)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-11-2d549757a76f@kernel.org
-      - 5d09f4f11e9f "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests (14/15)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-15-2d549757a76f@kernel.org
-    - 90719139ffc7 "selftests/mm: transhuge-stress: check duration inside page loop"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260720103105.169955-1-sarthak.sharma@arm.com
-- mm-new: 6 -> 3 commits
-  - series: 1 (3) -> 1 (1)
-    - no role, nobody: 4 -> 1 commits
+        - added "Link: https://lore.kernel.org/20260723-hmm-v10-v11-3-c55b003a4b61@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20260722-hmm-v10-v1-3-606464dd601a@gmail.com"
+        - Link: https://lore.kernel.org/20260723-hmm-v10-v11-3-c55b003a4b61@gmail.com
+- mm-new: 3 -> 3 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

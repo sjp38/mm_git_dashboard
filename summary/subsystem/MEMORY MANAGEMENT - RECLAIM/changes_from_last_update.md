@@ -7,35 +7,27 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 14 commits
-  - series: 2 (8) -> 3 (11)
+- mm-unstable: 14 -> 14 commits (no change)
+  - series: 3 (11) -> 3 (11) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 7 -> 10 commits
+    - no role, maintainer: 10 -> 10 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "promote mapped executable folios after first usage for MGLRU", v4. (3)
-      - ec4e4860af47 "mm: vmscan: convert folio_referenced() to use vma_flags_t (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
-        - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
-      - 7e3541e78967 "mm: vmscan: add a helper to identify file-backed executable folios (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/2ee74f9f98ac45a2f0db0ceb018e086bdb671d17.1784509721.git.baolin.wang@linux.alibaba.com
-      - 89437b3e72bb "mm: mglru: promote mapped executable folios after first usage (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/f57d94b1d85bb3d620d89bb739128f0d929bf9c6.1784509721.git.baolin.wang@linux.alibaba.com
-- mm-new: 3 -> 1 commits
-  - series: 1 (3) -> 0 (1)
-    - no role, maintainer: 3 -> 1 commits
+- mm-new: 1 -> 2 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, maintainer: 1 -> 2 commits
   - new commits
-    - series "mm: fix node reclaim swappiness handling", v2. (2)
-      - 9091af8aa1bd "mm: vmscan: fix node reclaim ignoring swappiness parameter (1/2)"
+    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v4. (2)
+      - 66d260a877a6 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (1/2)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260716031729.1064007-3-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev
+  - changed commits
+    - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2)
+      - 6e4496ff47b5 "mm: vmscan: fix node reclaim ignoring swappiness parameter (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260723032434.2016749-3-ridong.chen@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260716031729.1064007-3-ridong.chen@linux.dev"
+        - Link: https://lore.kernel.org/20260723032434.2016749-3-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

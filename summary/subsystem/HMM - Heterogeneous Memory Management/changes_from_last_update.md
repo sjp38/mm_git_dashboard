@@ -10,14 +10,12 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v10. (8)
-      - 100a4e36da3d "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support (1/8)"
+    - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v11. (8)
+      - 49ec6b2623af "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support (1/8)"
         - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260722-hmm-v10-v1-2-606464dd601a@gmail.com"
-        - dropped "Link: https://lore.kernel.org/178413936536.1155966.8918127042760531802.stgit@skinsburskii"
-        - dropped "Cc: Kees Cook <kees@kernel.org>"
-        - dropped "Cc: Oleg Nesterov <oleg@redhat.com>"
-        - Link: https://lore.kernel.org/20260722-hmm-v10-v1-2-606464dd601a@gmail.com
+        - added "Link: https://lore.kernel.org/20260723-hmm-v10-v11-2-c55b003a4b61@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20260722-hmm-v10-v1-2-606464dd601a@gmail.com"
+        - Link: https://lore.kernel.org/20260723-hmm-v10-v11-2-c55b003a4b61@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -12,15 +12,28 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 12 -> 12 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, maintainer: 0 -> 1 commits
+- mm-new: 1 -> 3 commits
+  - series: 1 (1) -> 2 (3)
+    - no role, maintainer: 1 -> 3 commits
   - new commits
-    - series "mm: fix node reclaim swappiness handling", v2. (2)
-      - 6a1516c57150 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h (0/2)"
+    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v4. (2)
+      - a5d77e68934f "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers (0/2)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260716031729.1064007-1-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/20260716031729.1064007-2-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/20260720164207.450685-2-usama.arif@linux.dev
+        - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
+      - 66d260a877a6 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev
+  - changed commits
+    - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2)
+      - 652806eb2312 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev"
+        - added "Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260716031729.1064007-1-ridong.chen@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260716031729.1064007-2-ridong.chen@linux.dev"
+        - Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
