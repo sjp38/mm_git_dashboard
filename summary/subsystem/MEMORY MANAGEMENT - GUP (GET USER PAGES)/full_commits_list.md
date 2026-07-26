@@ -6,18 +6,21 @@
   - author/reviewer role stat
     - reviewer, no role : 1 commits
   - full commits list
-    - 3d10ecdf8613 "mm/gup: fix GUP-fast fallback for NULL-mapping order-0 folios"
+    - 6d657112416c "mm/gup: fix GUP-fast fallback for NULL-mapping order-0 folios"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260708005745.164928-1-jhubbard@nvidia.com
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
+- mm-new: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 1 commits
+    - no role, no role : 2 commits
   - full commits list
-    - 2ffbf1bc87b1 "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+    - 4588f220070a "selftests/mm: fix gup_longterm EINVAL error message"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/23557F4CB8CF36FF+20260724074603.1479243-1-zhaozhengzhuo@uniontech.com
+    - ae05ee7a05a6 "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
-    - c7cf30c99073 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 523771058aa5 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

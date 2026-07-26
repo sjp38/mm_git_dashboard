@@ -2,30 +2,34 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 7 total, 1 (4) series, 3 non-series commits
+- mm-unstable: 8 total, 1 (4) series, 4 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 4 commits
     - maintainer, nobody: 3 commits
   - full commits list
     - series "mm/zsmalloc: reduce lock contention in zs_free()", v6. (4 commits)
-      - 2beb45899604 "mm/zsmalloc: encode class index in obj value for lockless class lookup" (0/4)
+      - 83f796efcfc2 "mm/zsmalloc: encode class index in obj value for lockless class lookup" (0/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260626015003.2965881-1-haowenchao22@gmail.com
         - Link: https://lore.kernel.org/20260626015003.2965881-2-haowenchao22@gmail.com
-      - 945ccba033a5 "mm-zsmalloc-encode-class-index-in-obj-value-for-lockless-class-lookup-fix" (1/4)
+      - f9529c08f743 "mm-zsmalloc-encode-class-index-in-obj-value-for-lockless-class-lookup-fix" (1/4)
         - Authored by a maintainer, reviewed by nobody
-      - ccf8da9f69ea "mm/zsmalloc: drop pool->lock from zs_free on 64-bit systems" (2/4)
+      - 4d46fc8c1a48 "mm/zsmalloc: drop pool->lock from zs_free on 64-bit systems" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260626015003.2965881-3-haowenchao22@gmail.com
-      - e7cb7a8046c4 "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix" (3/4)
+      - 335640842f8f "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix" (3/4)
         - Authored by a maintainer, reviewed by nobody
-    - 883a0b57bc2d "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix-fix"
+    - 1d9406cf3622 "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix-fix"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/202607020359.FMDmPwjF-lkp@intel.com
-    - 76da1ccf8ac9 "mm/zsmalloc: drop class lock before freeing zspage"
+    - 625828a116d1 "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix-2"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260725035733.53241-1-baohua@kernel.org
+    - 689ddad1ed44 "mm/zsmalloc: drop class lock before freeing zspage"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260626015003.2965881-4-haowenchao22@gmail.com
-    - 4ea26e8982ad "mm/zsmalloc: document free_zspage helper variants"
+    - 366038b3ac1d "mm/zsmalloc: document free_zspage helper variants"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260626015003.2965881-5-haowenchao22@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

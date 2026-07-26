@@ -5,10 +5,10 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 26 -> 26 commits (no change)
-  - series: 3 (26) -> 3 (26) (no change)
+- mm-unstable: 26 -> 28 commits
+  - series: 3 (26) -> 3 (28)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
+    - no role, no role : 9 -> 11 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
@@ -17,15 +17,23 @@
     - maintainer, no role : 2 -> 2 commits (no change)
   - changed commits
     - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
-      - bb2f8a7eb126 "mm/rmap: convert page -> folio for hwpoison checks (0/5)"
+      - 07952bc99c63 "mm/rmap: add try_to_unmap_hugetlb_one (1/5)"
         - Authored by no role player, reviewed by no role player
         - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
         - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260713050050.1017741-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260713050050.1017741-2-dev.jain@arm.com
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+        - Link: https://lore.kernel.org/20260713050050.1017741-3-dev.jain@arm.com
+    - series "Batch unmap of uffd-wp file folios", v2. (3)
+      - cd1f6e5e9862 "mm/memory: batch set uffd-wp markers during zapping (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720065508.2695106-3-dev.jain@arm.com
+      - f28ef3a1bae1 "mm/rmap: batch unmap file folios belonging to uffd-wp VMAs (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720065508.2695106-4-dev.jain@arm.com
+- mm-new: 2 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

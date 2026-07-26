@@ -8,18 +8,33 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 36 -> 36 commits (no change)
+- mm-unstable: 36 -> 38 commits
   - series: 3 (32) -> 3 (32) (no change)
     - no role, nobody: 7 -> 7 commits (no change)
-    - no role, no role : 13 -> 13 commits (no change)
+    - no role, no role : 13 -> 14 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 9 -> 9 commits (no change)
+    - no role, maintainer: 9 -> 10 commits
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
+      - 07952bc99c63 "mm/rmap: add try_to_unmap_hugetlb_one (1/5)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260713050050.1017741-3-dev.jain@arm.com
+    - 9bac68f7dd93 "hugetlb: make hugepage_put_subpool() tolerate NULL"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260720073841.1389354-1-chenyichong@uniontech.com
+    - d165f491eeb0 "hugetlb: evaluate subpool free state while locked"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260721035207.1437935-1-chenyichong@uniontech.com
+- mm-new: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

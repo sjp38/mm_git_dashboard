@@ -5,75 +5,54 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v6. (5)
-      - baba9550fe5d "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-1-8cc77dcc0018@kernel.org"
-        - added "Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-0-8cc77dcc0018@kernel.org"
-        - added "Cc: "Borah, Chaitanya Kumar" <chaitanya.kumar.borah@intel.com>"
-        - dropped "Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-1-606a0ac6d3e5@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-0-606a0ac6d3e5@kernel.org"
-        - dropped "Cc: David Carlier <devnexen@gmail.com>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-0-8cc77dcc0018@kernel.org
-        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-1-8cc77dcc0018@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - e9e917b8d8a2 "mm/ptdump: always stabilise against page table freeing using init_mm (3/5)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-4-8cc77dcc0018@kernel.org"
-        - added "Cc: "Borah, Chaitanya Kumar" <chaitanya.kumar.borah@intel.com>"
-        - dropped "Link: https://lore.kernel.org/20260717-series-vmap-race-fix-v5-4-606a0ac6d3e5@kernel.org"
-        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-4-8cc77dcc0018@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 93 -> 93 commits (no change)
-  - series: 11 (81) -> 11 (81) (no change)
-    - no role, nobody: 14 -> 14 commits (no change)
-    - no role, no role : 34 -> 34 commits (no change)
+- mm-unstable: 93 -> 98 commits
+  - series: 11 (81) -> 12 (85)
+    - no role, nobody: 14 -> 13 commits
+    - no role, no role : 34 -> 38 commits
     - no role, reviewer: 8 -> 8 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
-    - reviewer, no role : 9 -> 9 commits (no change)
+    - reviewer, no role : 9 -> 10 commits
     - reviewer, reviewer: 17 -> 17 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-new: 5 -> 9 commits
-  - series: 1 (4) -> 3 (8)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 4 -> 5 commits
-    - no role, maintainer: 0 -> 2 commits
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, no role : 0 -> 1 commits
+    - maintainer, nobody: 1 -> 2 commits
   - new commits
-    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v4. (2)
-      - a5d77e68934f "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260720164207.450685-2-usama.arif@linux.dev
-        - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
-      - 66d260a877a6 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev
-    - series "mm: folio conversion and refactoring in do_swap_page()", v2. (2)
-      - 8a5e7cfeaf70 "mm: use a folio in the softleaf_is_device_private path (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260723030752.16979-1-hongfu.li@linux.dev
-        - Link: https://lore.kernel.org/20260723030752.16979-2-hongfu.li@linux.dev
-      - 6702f22a5b95 "mm: extract non-swap page handling to do_non_swap_page() (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260723030752.16979-3-hongfu.li@linux.dev
+    - fcb526c9d376 "mm/hmm.c: fix build with CONFIG_MMU_NOTIFIER=n"
+      - Authored by a maintainer, reviewed by nobody
   - changed commits
-    - series "mm: fix reclaim storms in defrag_mode", v2. (4)
-      - 17f165092b40 "mm: page_alloc: move capture_control to the page allocator (2/4)"
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - a4beb459e21a "mm/vma: introduce VMA virtual page offset field and add helpers (0/15)"
         - Authored by no role player, reviewed by no role player
-        - added "Fixes: e3aa7df331bc ("mm: page_alloc: defrag_mode")"
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Signed-off-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Reviewed-by: Xu Xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-0-2d549757a76f@kernel.org
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-1-2d549757a76f@kernel.org
+    - series "Batch unmap of uffd-wp file folios", v2. (3)
+      - e07cc9fa904e "mm/memory: move pte_install_uffd_wp_if_needed() into memory.c (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720065508.2695106-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260720065508.2695106-2-dev.jain@arm.com
+      - cd1f6e5e9862 "mm/memory: batch set uffd-wp markers during zapping (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720065508.2695106-3-dev.jain@arm.com
+    - series "mm: fix reclaim storms in defrag_mode", v2. (4)
+      - 6955eebb93dc "mm: page_alloc: move capture_control to the page allocator (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260722150006.3848560-4-hannes@cmpxchg.org
-      - 40685a0b21bb "mm: page_alloc: fix non-movable reclaim storm in defrag_mode (3/4)"
+      - c68210527d23 "mm: page_alloc: fix non-movable reclaim storm in defrag_mode (3/4)"
         - Authored by a reviewer, reviewed by no role player
-        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Cc: "Vlastimil Babka (SUSE)" <vbabka@kernel.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260722150006.3848560-5-hannes@cmpxchg.org
+- mm-new: 9 -> 5 commits
+  - series: 3 (8) -> 2 (4)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 5 -> 2 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - reviewer, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

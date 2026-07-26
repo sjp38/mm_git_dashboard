@@ -10,7 +10,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - f6264c3ca30b "mm: memcg: initialize *locked in memcg1_oom_prepare() stub"
+    - 5459f83844c5 "mm: memcg: initialize *locked in memcg1_oom_prepare() stub"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260716-memcg-oom-uninit-locked-v2-1-63631d878eb4@debian.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -20,67 +20,71 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 12 commits
   - full commits list
-    - 7899852998a5 "mm/memcontrol: remove unused for_each_mem_cgroup macro and cleanup"
+    - e5d9fa20da77 "mm/memcontrol: remove unused for_each_mem_cgroup macro and cleanup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260624183700.1152742-1-joshua.hahnjy@gmail.com
-    - 9bf02c4d4f9b "mm: memcg: remove stray text from obj_stock_pcp comment"
+    - f35e51a6b73e "mm: memcg: remove stray text from obj_stock_pcp comment"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260623082614.81621-1-guopeng.zhang@linux.dev
-    - 53708512b7a5 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
+    - 48b543facae2 "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260630112617.1198623-3-usama.arif@linux.dev
     - series "memcg: bail out reclaim when memcg is dying", v3. (4 commits)
-      - 18f60aa987fe "memcg: bail out memory.high when memcg is dying" (0/4)
+      - d4321b23b614 "memcg: bail out memory.high when memcg is dying" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-1-jiayuan.chen@linux.dev
         - Link: https://lore.kernel.org/20260702120235.376752-2-jiayuan.chen@linux.dev
-      - bd0f79fb6cf3 "memcg: bail out memory.max when memcg is dying" (1/4)
+      - cde907a16e5d "memcg: bail out memory.max when memcg is dying" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-3-jiayuan.chen@linux.dev
-      - cc051a6609d6 "memcg-v1: bail out reclaim when memcg is dying" (3/4)
+      - cc167054e9b7 "memcg-v1: bail out reclaim when memcg is dying" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-5-jiayuan.chen@linux.dev
-    - 3faa96547b2a "mm: memcg: reset zswap settings in css_reset"
+    - 7573575862da "mm: memcg: reset zswap settings in css_reset"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260703063826.306878-1-jiayuan.chen@linux.dev
       - Link: https://lore.kernel.org/20260702024827.353185-1-jiayuan.chen@linux.dev
-    - 29260798ab13 "mm: memcg: reset oom_group in css_reset"
+    - fefe9a3f7b69 "mm: memcg: reset oom_group in css_reset"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260703063826.306878-2-jiayuan.chen@linux.dev
-    - 7d4ba330d913 "mm: memcontrol: update state_local when flushing NMI stats"
+    - 203521e6f6f5 "mm: memcontrol: update state_local when flushing NMI stats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713085053.2916813-1-guopeng.zhang@linux.dev
-    - 85a665c4bb66 "mm: memcg-v1: account vmpressure event allocations"
+    - e61432676de9 "mm: memcg-v1: account vmpressure event allocations"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713085520.2953121-1-guopeng.zhang@linux.dev
-    - 3fac8802d93d "mm: memcg-v1: fix wrong linux-mm list address in deprecation warnings"
+    - 46acc6a6e970 "mm: memcg-v1: fix wrong linux-mm list address in deprecation warnings"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713085756.2973549-1-guopeng.zhang@linux.dev
-    - c10a809bb6b8 "mm: memcontrol: drop unused cpu argument from flush_nmi_stats"
+    - b1d6ecdfbd1e "mm: memcontrol: drop unused cpu argument from flush_nmi_stats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713090010.2991906-1-guopeng.zhang@linux.dev
-    - 0601f29bd834 "mm: memcontrol: factor out memcg kmem uncharge sequence"
+    - dbfb405ce1b7 "mm: memcontrol: factor out memcg kmem uncharge sequence"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713090304.3015329-1-guopeng.zhang@linux.dev
-    - f37ac344e55f "mm: memcg-v1: make mem_cgroup_oom_notify_cb() return void"
+    - efb7ca886e7a "mm: memcg-v1: make mem_cgroup_oom_notify_cb() return void"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713093737.3299646-1-guopeng.zhang@linux.dev
-- mm-new: 3 total, 2 (3) series, 0 non-series commits
+- mm-new: 4 total, 2 (3) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, no role : 1 commits
     - no role, maintainer: 3 commits
   - full commits list
     - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2 commits)
-      - 652806eb2312 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
+      - 52c594677e0c "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev
     - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v4. (2 commits)
-      - a5d77e68934f "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/2)
+      - 5d655064127c "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260720164207.450685-2-usama.arif@linux.dev
         - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
-      - 66d260a877a6 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (1/2)
+      - 6f5ae14b0a1b "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev
+    - 19af90113b0c "mm: memcg: stop reclaim when a limit update is superseded"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260724021805.1234583-1-guopeng.zhang@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

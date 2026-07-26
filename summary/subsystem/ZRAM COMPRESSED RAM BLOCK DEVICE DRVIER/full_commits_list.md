@@ -6,9 +6,20 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 2080bf3e5b13 "docs: ABI: zram: fix spelling mistakes"
+    - 60613c1d4469 "docs: ABI: zram: fix spelling mistakes"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260707165131.4408-1-rahularukonda2@gmail.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 2 total, 1 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 2 commits
+  - full commits list
+    - series "zram: lockmap tweaks". (2 commits)
+      - 2b6831916d11 "zram: move lockmap to be per-zram instead per table" (0/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260714141300.3945672-1-bigeasy@linutronix.de
+        - Link: https://lore.kernel.org/20260714141300.3945672-2-bigeasy@linutronix.de
+      - 7463ca97dd37 "zram: use a custom key for each zram object" (1/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260714141300.3945672-3-bigeasy@linutronix.de
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

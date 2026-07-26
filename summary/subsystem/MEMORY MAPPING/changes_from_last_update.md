@@ -9,8 +9,8 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 75 -> 75 commits (no change)
   - series: 4 (67) -> 4 (67) (no change)
-    - no role, nobody: 15 -> 15 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
+    - no role, nobody: 15 -> 14 commits
+    - no role, no role : 9 -> 10 commits
     - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 6 -> 6 commits (no change)
@@ -20,17 +20,13 @@
     - maintainer, no role : 11 -> 11 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
   - changed commits
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 5fc0db634f91 "mm/vma: introduce and use vmg_pages(), vmg_[start, end]_pgoff() (12/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-13-2a5aa403d977@kernel.org
-      - b1e5a5cbab50 "mm/vma: clean up anon_vma_compatible() (13/33)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-14-2a5aa403d977@kernel.org
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - a4beb459e21a "mm/vma: introduce VMA virtual page offset field and add helpers (0/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Xu Xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-0-2d549757a76f@kernel.org
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-1-2d549757a76f@kernel.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)

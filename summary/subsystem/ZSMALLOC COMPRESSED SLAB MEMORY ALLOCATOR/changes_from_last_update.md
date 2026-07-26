@@ -5,10 +5,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 7 commits (no change)
+- mm-unstable: 7 -> 8 commits
   - series: 1 (4) -> 1 (4) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 4 -> 4 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
+  - new commits
+    - 625828a116d1 "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix-2"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260725035733.53241-1-baohua@kernel.org
+  - changed commits
+    - series "mm/zsmalloc: reduce lock contention in zs_free()", v6. (4)
+      - 4d46fc8c1a48 "mm/zsmalloc: drop pool->lock from zs_free on 64-bit systems (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: kernel test robot <lkp@intel.com>"
+        - Link: https://lore.kernel.org/20260626015003.2965881-3-haowenchao22@gmail.com
+      - 335640842f8f "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix (3/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - added "Cc: kernel test robot <lkp@intel.com>"
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

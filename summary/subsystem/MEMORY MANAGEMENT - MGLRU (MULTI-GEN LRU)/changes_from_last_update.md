@@ -7,28 +7,61 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 19 -> 19 commits (no change)
-  - series: 3 (15) -> 3 (15) (no change)
+- mm-unstable: 19 -> 21 commits
+  - series: 3 (15) -> 4 (17)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, no role : 3 -> 4 commits
+    - no role, reviewer: 3 -> 4 commits
     - no role, maintainer: 10 -> 10 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 3 -> 4 commits
-  - series: 1 (2) -> 1 (3)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 2 commits
   - new commits
-    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v4. (2)
-      - 66d260a877a6 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (1/2)"
+    - series "mm/vmscan: fix swappiness=max and clean up per-node proactive reclaim", v4. (4)
+      - d5a8670f3aed "mm/mglru: fix anon-only reclaim evicting file pages when swappiness=max (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260724033435.2573323-5-ridong.chen@linux.dev
+        - Link: https://sashiko.dev/#/patchset/20260717113300.214717-1-ridong.chen@linux.dev [1]
+  - changed commits
+    - series "mm/vmscan: fix swappiness=max and clean up per-node proactive reclaim", v4. (4)
+      - c1c33f2d7993 "mm/vmscan: fix anon-only reclaim evicting file pages when swappiness=max (0/4)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev
+        - added "Link: https://lore.kernel.org/20260724033435.2573323-1-ridong.chen@linux.dev"
+        - added "Link: https://lore.kernel.org/20260724033435.2573323-2-ridong.chen@linux.dev"
+        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260717113300.214717-1-ridong.chen@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260717113300.214717-2-ridong.chen@linux.dev"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - Link: https://lore.kernel.org/20260724033435.2573323-1-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/20260724033435.2573323-2-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/cgroups/7ddf3eee-5fe2-45f7-8614-c8936a039e04@linux.dev/ [1]
+      - b3fe5a4ef518 "mm: vmscan: propagate real error code from per-node proactive reclaim (1/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260724033435.2573323-3-ridong.chen@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260717113300.214717-3-ridong.chen@linux.dev"
+        - Link: https://lore.kernel.org/20260724033435.2573323-3-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/all/20250717235604.2atyx2aobwowpge3@offworld/T/#m3514718be82a31b05726a49da9b61fbfc69a589e [1]
+      - 2812cd15235d "mm: vmscan: drop unused gfp_mask parameter from __node_reclaim() (2/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260724033435.2573323-4-ridong.chen@linux.dev"
+        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260717113300.214717-4-ridong.chen@linux.dev"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - Link: https://lore.kernel.org/20260724033435.2573323-4-ridong.chen@linux.dev
+    - series "Batch unmap of uffd-wp file folios", v2. (3)
+      - e07cc9fa904e "mm/memory: move pte_install_uffd_wp_if_needed() into memory.c (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720065508.2695106-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260720065508.2695106-2-dev.jain@arm.com
+- mm-new: 4 -> 3 commits
+  - series: 1 (3) -> 0 (2)
+    - no role, no role : 2 -> 1 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
   - changed commits
     - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2)
-      - 6e4496ff47b5 "mm: vmscan: fix node reclaim ignoring swappiness parameter (1/2)"
+      - e9ac2c4dcb71 "mm: vmscan: fix node reclaim ignoring swappiness parameter (1/2)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260723032434.2016749-3-ridong.chen@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260716031729.1064007-3-ridong.chen@linux.dev"
+        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
         - Link: https://lore.kernel.org/20260723032434.2016749-3-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
