@@ -12,22 +12,10 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 12 -> 12 commits (no change)
-- mm-new: 3 -> 4 commits
+- mm-new: 4 -> 4 commits (no change)
   - series: 2 (3) -> 2 (3) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-  - new commits
-    - 19af90113b0c "mm: memcg: stop reclaim when a limit update is superseded"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260724021805.1234583-1-guopeng.zhang@linux.dev
-  - changed commits
-    - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2)
-      - 52c594677e0c "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

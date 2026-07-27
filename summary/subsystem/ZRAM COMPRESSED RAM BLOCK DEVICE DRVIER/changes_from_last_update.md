@@ -8,18 +8,9 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, maintainer: 0 -> 2 commits
-  - new commits
-    - series "zram: lockmap tweaks". (2)
-      - 2b6831916d11 "zram: move lockmap to be per-zram instead per table (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260714141300.3945672-1-bigeasy@linutronix.de
-        - Link: https://lore.kernel.org/20260714141300.3945672-2-bigeasy@linutronix.de
-      - 7463ca97dd37 "zram: use a custom key for each zram object (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260714141300.3945672-3-bigeasy@linutronix.de
+- mm-new: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,39 +7,19 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 41 -> 44 commits
-  - series: 5 (30) -> 6 (31)
-    - no role, nobody: 14 -> 15 commits
-    - no role, no role : 15 -> 17 commits
+- mm-unstable: 44 -> 44 commits (no change)
+  - series: 6 (31) -> 6 (31) (no change)
+    - no role, nobody: 15 -> 15 commits (no change)
+    - no role, no role : 17 -> 17 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 58fd58b98d1a "selftests/mm: use MAP_FAILED for mmap error check"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260720063439.522-1-yanlonglong@kylinos.cn
-    - 48c0fa50e797 "selftests/mm/pagemap_ioctl: fix missing NULL checks after calloc()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260721063611.342-1-yanlonglong@kylinos.cn
-    - series "mm/early_ioremap: clarify and clean up early_ioremap_reset()". (3)
-      - 0c569c729898 "mm/early_ioremap: clarify early_ioremap_reset() semantics (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260708170647.362562-1-ekffu200098@gmail.com
-        - Link: https://lore.kernel.org/20260708170647.362562-2-ekffu200098@gmail.com
-- mm-new: 3 -> 1 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 2 -> 1 commits
-  - new commits
-    - 4588f220070a "selftests/mm: fix gup_longterm EINVAL error message"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/23557F4CB8CF36FF+20260724074603.1479243-1-zhaozhengzhuo@uniontech.com
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -6,37 +6,23 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 38 -> 42 commits
-  - series: 6 (30) -> 7 (34)
-    - no role, no role : 1 -> 2 commits
+- mm-unstable: 42 -> 42 commits (no change)
+  - series: 7 (34) -> 7 (34) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 14 -> 14 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 4 -> 7 commits
+    - reviewer, no role : 7 -> 7 commits (no change)
     - reviewer, reviewer: 15 -> 15 commits (no change)
   - changed commits
     - series "mm: fix reclaim storms in defrag_mode", v2. (4)
-      - 1e09566e1b66 "mm: page_alloc: __GFP_FS lockdep annotation for direct compaction (0/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260722150006.3848560-1-hannes@cmpxchg.org
-        - Link: https://lore.kernel.org/20260722150006.3848560-2-hannes@cmpxchg.org
-      - e76303e61199 "mm: compaction: support non-movable compaction for pageblock requests (1/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260722150006.3848560-3-hannes@cmpxchg.org
-      - 6955eebb93dc "mm: page_alloc: move capture_control to the page allocator (2/4)"
+      - 74c368ebaff3 "mm: page_alloc: move capture_control to the page allocator (2/4)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Signed-off-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - Link: https://lore.kernel.org/20260722150006.3848560-4-hannes@cmpxchg.org
-      - c68210527d23 "mm: page_alloc: fix non-movable reclaim storm in defrag_mode (3/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260722150006.3848560-5-hannes@cmpxchg.org
-- mm-new: 5 -> 1 commits
-  - series: 1 (4) -> 0 (0)
-    - no role, no role : 2 -> 1 commits
-    - reviewer, no role : 3 -> 0 commits
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

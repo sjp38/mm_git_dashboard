@@ -7,52 +7,27 @@
     - no role, no role : 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 93 -> 98 commits
-  - series: 11 (81) -> 12 (85)
-    - no role, nobody: 14 -> 13 commits
-    - no role, no role : 34 -> 38 commits
+- mm-unstable: 98 -> 98 commits (no change)
+  - series: 12 (85) -> 12 (85) (no change)
+    - no role, nobody: 13 -> 13 commits (no change)
+    - no role, no role : 38 -> 38 commits (no change)
     - no role, reviewer: 8 -> 8 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
-    - reviewer, no role : 9 -> 10 commits
+    - reviewer, no role : 10 -> 10 commits (no change)
     - reviewer, reviewer: 17 -> 17 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 2 commits
-  - new commits
-    - fcb526c9d376 "mm/hmm.c: fix build with CONFIG_MMU_NOTIFIER=n"
-      - Authored by a maintainer, reviewed by nobody
+    - maintainer, nobody: 2 -> 2 commits (no change)
   - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
-      - a4beb459e21a "mm/vma: introduce VMA virtual page offset field and add helpers (0/15)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-0-2d549757a76f@kernel.org
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-1-2d549757a76f@kernel.org
-    - series "Batch unmap of uffd-wp file folios", v2. (3)
-      - e07cc9fa904e "mm/memory: move pte_install_uffd_wp_if_needed() into memory.c (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260720065508.2695106-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260720065508.2695106-2-dev.jain@arm.com
-      - cd1f6e5e9862 "mm/memory: batch set uffd-wp markers during zapping (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260720065508.2695106-3-dev.jain@arm.com
     - series "mm: fix reclaim storms in defrag_mode", v2. (4)
-      - 6955eebb93dc "mm: page_alloc: move capture_control to the page allocator (2/4)"
+      - 74c368ebaff3 "mm: page_alloc: move capture_control to the page allocator (2/4)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Signed-off-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
         - Link: https://lore.kernel.org/20260722150006.3848560-4-hannes@cmpxchg.org
-      - c68210527d23 "mm: page_alloc: fix non-movable reclaim storm in defrag_mode (3/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260722150006.3848560-5-hannes@cmpxchg.org
-- mm-new: 9 -> 5 commits
-  - series: 3 (8) -> 2 (4)
+- mm-new: 5 -> 5 commits (no change)
+  - series: 2 (4) -> 2 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 5 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)
