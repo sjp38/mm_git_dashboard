@@ -1,7 +1,11 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc4-15-gb95f03f04d475 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+  - dropped commits
+    - 7441d6348c70 "mm/util: don't read __page_2 for order-1 folios in snapshot_page()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260708201954.686111-1-aboorvad@linux.ibm.com
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
@@ -17,17 +21,26 @@
     - reviewer, reviewer: 17 -> 17 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm: fix reclaim storms in defrag_mode", v2. (4)
-      - 74c368ebaff3 "mm: page_alloc: move capture_control to the page allocator (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Signed-off-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260722150006.3848560-4-hannes@cmpxchg.org
-- mm-new: 5 -> 5 commits (no change)
-  - series: 2 (4) -> 2 (4) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+  - new commits
+    - a3142e55ebb4 "mm/hmm: make CONFIG_HMM_MIRROR select CONFIG_MMU_NOTIFIER"
+      - Authored by a maintainer, reviewed by nobody
+  - dropped commits
+    - 8e36442b75ee "mm/hmm.c: fix build with CONFIG_MMU_NOTIFIER=n"
+      - Authored by a maintainer, reviewed by nobody
+- mm-new: 5 -> 3 commits
+  - series: 2 (4) -> 1 (2)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 2 -> 1 commits
     - no role, maintainer: 2 -> 2 commits (no change)
+  - dropped commits
+    - series "mm: folio conversion and refactoring in do_swap_page()", v2. (2)
+      - 1bde0edfb361 "mm: use a folio in the softleaf_is_device_private path (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260723030752.16979-1-hongfu.li@linux.dev
+        - Link: https://lore.kernel.org/20260723030752.16979-2-hongfu.li@linux.dev
+      - 923f3cb6e52a "mm: extract non-swap page handling to do_non_swap_page() (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260723030752.16979-3-hongfu.li@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

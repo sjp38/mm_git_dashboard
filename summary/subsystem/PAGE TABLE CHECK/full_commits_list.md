@@ -1,10 +1,10 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475
+- baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - d4c29b58e33a "mm/page_table_check: skip special zero mappings"
+    - cdc96c967f91 "mm/page_table_check: skip special zero mappings"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/cover.1784717203.git.zhilinz@nebusec.ai
       - Link: https://lore.kernel.org/e94478e4fb7912fb7e8ebebed5ce85d00dc9a69d.1784717203.git.zhilinz@nebusec.ai
@@ -13,7 +13,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - bc965ee22ee9 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 1be922b4d2a5 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

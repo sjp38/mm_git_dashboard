@@ -1,4 +1,4 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc4-15-gb95f03f04d475 (no change)
+- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -6,23 +6,26 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 42 -> 42 commits (no change)
+- mm-unstable: 42 -> 43 commits
   - series: 7 (34) -> 7 (34) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 14 -> 14 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 7 -> 7 commits (no change)
     - reviewer, reviewer: 15 -> 15 commits (no change)
-  - changed commits
-    - series "mm: fix reclaim storms in defrag_mode", v2. (4)
-      - 74c368ebaff3 "mm: page_alloc: move capture_control to the page allocator (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Signed-off-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260722150006.3848560-4-hannes@cmpxchg.org
-- mm-new: 1 -> 1 commits (no change)
+  - new commits
+    - aedb150e27b7 "mm-page_alloc-fix-non-movable-reclaim-storm-in-defrag_mode-fix"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/DK7NM9RPUJOD.11PNJJ5N2OBED@linux.dev
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
+  - new commits
+    - e505f6ea3c66 "mm/page_reporting: Add page_reporting_delay_ms module parameter"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260727230545.262579-1-pratmal@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
