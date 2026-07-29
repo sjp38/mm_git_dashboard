@@ -1,27 +1,17 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-  - dropped commits
-    - ea3034b2b00f "mm/vmstat: fold stranded per-cpu node stats when a node comes online"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260627202243.758289-1-gourry@gourry.net
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 14 commits
-  - series: 1 (11) -> 1 (12)
+- mm-unstable: 14 -> 14 commits (no change)
+  - series: 1 (12) -> 1 (12) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 7 -> 8 commits
+    - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
-      - 6b090c86cffe "mm/mm_init: simplify deferred_free_pages() migratetype init (4/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260612035903.2468601-6-songmuchun@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

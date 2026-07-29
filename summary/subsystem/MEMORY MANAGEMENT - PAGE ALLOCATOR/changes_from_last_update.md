@@ -1,28 +1,39 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 0b45f6927a14 "mm/page_reporting: use system_freezable_wq to fix UAF during suspend"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260721005603.1710551-1-linkl@google.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 42 -> 43 commits
+- mm-unstable: 43 -> 43 commits (no change)
   - series: 7 (34) -> 7 (34) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 14 -> 14 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 7 -> 7 commits (no change)
     - reviewer, reviewer: 15 -> 15 commits (no change)
-  - new commits
-    - aedb150e27b7 "mm-page_alloc-fix-non-movable-reclaim-storm-in-defrag_mode-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/DK7NM9RPUJOD.11PNJJ5N2OBED@linux.dev
-- mm-new: 1 -> 2 commits
+  - changed commits
+    - 3301f59f0011 "mm/page_owner: use memcg_data snapshot to avoid TOCTOU in print_page_owner_memcg()"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reported-by: Sashiko <sashiko-bot@kernel.org>"
+      - Link: https://lore.kernel.org/20260714015117.78351-10-ye.liu@linux.dev
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
   - new commits
+    - fd2019599430 "mm/page_reporting: add page_reporting_delay_ms module parameter"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260727230545.262579-1-pratmal@google.com
+  - dropped commits
     - e505f6ea3c66 "mm/page_reporting: Add page_reporting_delay_ms module parameter"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260727230545.262579-1-pratmal@google.com

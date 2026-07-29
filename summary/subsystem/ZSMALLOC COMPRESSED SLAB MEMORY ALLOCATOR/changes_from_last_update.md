@@ -1,4 +1,4 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -10,8 +10,13 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 898e50e29003 "mm/zsmalloc: fix release order of locks in zs_page_migrate()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260728055333.421080-1-richardycc@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,4 +1,4 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -12,13 +12,9 @@
     - no role, reviewer: 3 -> 3 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - 5f30a1b90e58 "ksm: stop iterating VMAs when ksm_test_exit returns true"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260726133501.504048-1-wsw9603@163.com
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

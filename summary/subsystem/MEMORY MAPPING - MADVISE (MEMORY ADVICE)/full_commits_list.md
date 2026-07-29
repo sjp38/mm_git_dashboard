@@ -8,20 +8,20 @@
     - no role, reviewer: 1 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-      - 2e58ad155332 "mm: drop pte_clear_not_present_full()" (1/3)
+      - cdeef0fe8f41 "mm: drop pte_clear_not_present_full()" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260629-clear_not_present_full_ptes-v2-2-96089871a1e7@kernel.org
-      - c89a50a39b2b "mm: cleanup clear_not_present_full_ptes() and rename to clear_non_present_ptes()" (2/3)
+      - 778c0ef769bd "mm: cleanup clear_not_present_full_ptes() and rename to clear_non_present_ptes()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260629-clear_not_present_full_ptes-v2-3-96089871a1e7@kernel.org
-      - 9ac3096e56c2 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - cfc28b76ae6a "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-      - b4c8f66aa769 "mm/madvise: skip device-private PMDs in cold and pageout walks" (1/3)
+      - 0c7a005dcd51 "mm/madvise: skip device-private PMDs in cold and pageout walks" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260710105557.1987433-3-usama.arif@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
-      - 3ecf3cb6b7b1 "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - 48e73e4dab6c "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

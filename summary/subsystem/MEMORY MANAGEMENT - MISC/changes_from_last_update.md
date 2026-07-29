@@ -1,32 +1,34 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
-- mm-hotfixes-stable: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-  - dropped commits
-    - 07b4377bdbe7 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - series "selftests: Add missing initalization of pointer passed to getline", v2. (2)
+      - 9f1d75a4ce04 "selftests/mm: fix potential wild pointer access of getline due to missing init (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20260722130246.2135563-3-christian.gellermann@codasip.com
+        - Link: https://pubs.opengroup.org/onlinepubs/9799919799/functions/getline.html [1]
+- mm-hotfixes-unstable: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, reviewer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 44 -> 44 commits (no change)
-  - series: 6 (31) -> 6 (31) (no change)
+- mm-unstable: 44 -> 43 commits
+  - series: 6 (31) -> 6 (30)
     - no role, nobody: 15 -> 15 commits (no change)
-    - no role, no role : 17 -> 17 commits (no change)
+    - no role, no role : 17 -> 16 commits
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - 5610f13c1bbc "Documentation/userfaultfd: document RWP working set tracking (14/15)"
-        - Authored by no role player, reviewed by nobody
-        - added "Cc: kernel test robot <lkp@intel.com>"
-        - Link: https://lore.kernel.org/20260708111417.173443-16-kirill@shutemov.name
+  - dropped commits
+    - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (6)
+      - 94114ef6e9a8 "selftests/mm: add hwpoison-panic destructive test (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-6-c6ed5b62eea2@debian.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)

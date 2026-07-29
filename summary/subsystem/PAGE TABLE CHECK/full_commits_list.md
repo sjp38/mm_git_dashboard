@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - cdc96c967f91 "mm/page_table_check: skip special zero mappings"
+    - b51152220caa "mm/page_table_check: skip special zero mappings"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/cover.1784717203.git.zhilinz@nebusec.ai
       - Link: https://lore.kernel.org/e94478e4fb7912fb7e8ebebed5ce85d00dc9a69d.1784717203.git.zhilinz@nebusec.ai
@@ -13,7 +13,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - 1be922b4d2a5 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 52951ce18ecf "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

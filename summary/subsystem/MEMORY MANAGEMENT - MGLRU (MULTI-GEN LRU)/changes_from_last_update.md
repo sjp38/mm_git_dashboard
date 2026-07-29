@@ -1,14 +1,15 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - de4660898b7a "mm: mglru: fix stale batch updates after memcg reparenting"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - dc37771a43d4 "mm: vmscan: abort proactive reclaim early when freezing for suspend"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260720044103.905191-1-richardycc@google.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 21 -> 21 commits (no change)
@@ -18,28 +19,6 @@
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 10 -> 10 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/vmscan: fix swappiness=max and clean up per-node proactive reclaim", v4. (4)
-      - 2fe2ea900b21 "mm/vmscan: fix anon-only reclaim evicting file pages when swappiness=max (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260724033435.2573323-1-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/20260724033435.2573323-2-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/cgroups/7ddf3eee-5fe2-45f7-8614-c8936a039e04@linux.dev/ [1]
-      - b358a6ccf14f "mm: vmscan: propagate real error code from per-node proactive reclaim (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260724033435.2573323-3-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/all/20250717235604.2atyx2aobwowpge3@offworld/T/#m3514718be82a31b05726a49da9b61fbfc69a589e [1]
-      - 9d017f561c5e "mm: vmscan: drop unused gfp_mask parameter from __node_reclaim() (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260724033435.2573323-4-ridong.chen@linux.dev
-      - a009505a4ab8 "mm/mglru: fix anon-only reclaim evicting file pages when swappiness=max (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260724033435.2573323-5-ridong.chen@linux.dev
-        - Link: https://sashiko.dev/#/patchset/20260717113300.214717-1-ridong.chen@linux.dev [1]
 - mm-new: 3 -> 3 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 1 -> 1 commits (no change)

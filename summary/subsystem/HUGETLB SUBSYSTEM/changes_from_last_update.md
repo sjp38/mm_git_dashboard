@@ -1,36 +1,26 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
-- mm-hotfixes-stable: 2 -> 0 commits
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 83abe2fd5b3a "mm/hugetlb: fix swap entry corruption when clearing uffd-wp at fork()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260708090110.136162-1-kirill@shutemov.name
-    - dd9623f58ec7 "mm/hugetlb: fix list corruption in allocate_file_region_entries()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260713171456.300518-2-caixiangfeng@bytedance.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - 480f5ce8129a "mm/hugetlb_cma: dix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260726072935.3513996-1-souravpanda@google.com
-  - dropped commits
-    - f8ec70550afb "mm/hugetlb: fix null nodemask in alloc_fresh_hugetlb_folio"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260705175119.440599-1-souravpanda@google.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 38 -> 38 commits (no change)
-  - series: 3 (32) -> 3 (31)
+  - series: 3 (31) -> 4 (32)
     - no role, nobody: 7 -> 7 commits (no change)
     - no role, no role : 14 -> 14 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 10 -> 10 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "Fix incorrect access of hugetlb pte entries", v3. (5)
+      - 11a2d6c56086 "mm/rmap: use huge_ptep_get() in try_to_unmap_one() (0/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260703114202.365553-1-dev.jain@arm.com"
+        - Link: https://lore.kernel.org/20260703114202.365553-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -1,14 +1,14 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (1) series, 0 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 19077856f916 "mm/migrate: exclude hugetlb folios from MTHP_STAT_NR_ANON accounting" (1/2)
+      - d09a8fd52147 "mm/migrate: exclude hugetlb folios from MTHP_STAT_NR_ANON accounting" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260717064502.1980173-3-npache@redhat.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 21 total, 3 (17) series, 4 non-series commits
+- mm-unstable: 21 total, 3 (18) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 3 commits
@@ -17,87 +17,87 @@
     - reviewer, reviewer: 4 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-    - 9e5039f3d7c6 "mm: migrate_device: use walk_page_range_vma() in migrate_vma_collect()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260618092845.3905740-5-wangkefeng.wang@huawei.com
-      - 398989eeca97 "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason" (1/6)
+      - eed279585eab "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason" (1/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714015117.78351-3-ye.liu@linux.dev
-      - 3e9e82d5f91c "mm: use enum migrate_reason instead of int for migration reason parameters" (2/6)
+      - f49d814c2b6a "mm: use enum migrate_reason instead of int for migration reason parameters" (2/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
+    - b3d0e01e1bf6 "mm: migrate_device: use walk_page_range_vma() in migrate_vma_collect()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260618092845.3905740-5-wangkefeng.wang@huawei.com
     - series "mm/migrate: preparatory cleanups for batch copy and offload", v2. (3 commits)
-      - c259656ca6a4 "mm/migrate: rename page to folio leftovers" (0/3)
+      - 61fc6873744a "mm/migrate: rename page to folio leftovers" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-0-d9e8f17130b1@amd.com
         - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-1-d9e8f17130b1@amd.com
         - Link: https://lore.kernel.org/all/20260428155043.39251-2-shivankg@amd.com [1]
-      - af2a88c40cd9 "mm/migrate: fix stale list name in migrate_folios_move() comment" (1/3)
+      - f3766988f1cc "mm/migrate: fix stale list name in migrate_folios_move() comment" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-2-d9e8f17130b1@amd.com
-      - 5f5666563564 "mm/migrate: use migrate_info field instead of private" (2/3)
+      - 1c4fcf0dbe4f "mm/migrate: use migrate_info field instead of private" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-3-d9e8f17130b1@amd.com
-    - 3d6287a77130 "mm: mempolicy: fix automatic numa balancing for shmem"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
     - series "mm: preparatory patches for PMD level swap entries", v2. (6 commits)
-      - cd2eb8f2aba6 "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
+      - a1cadf17ab23 "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260706114320.1643046-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260706114320.1643046-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
         - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t [2]
         - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
-      - eec8cd84800c "mm/migrate_device: move softleaf_to_folio() inside device-private branch" (4/6)
+      - 440429b66367 "mm/migrate_device: move softleaf_to_folio() inside device-private branch" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260706114320.1643046-6-usama.arif@linux.dev
-      - 9f9541a9b189 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
+      - fdbdf2e796af "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
-      - 1136d9c6cc0b "mm/migrate_device: pin large folios before splitting" (9/10)
+      - 1ce081137eb0 "mm/migrate_device: pin large folios before splitting" (9/10)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260701140638.840773-1-usama.arif@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260630164143.1595669-1-usama.arif%40linux.dev
-    - 38336a57e335 "condense comment about folio reference"
+    - fbbe1ff42cc2 "condense comment about folio reference"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/87bbf335-648f-4065-abc8-3eaab5a3beeb@linux.dev
-      - 5efdb76bb749 "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol()" (1/6)
+      - 52e91af5d7ff "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol()" (1/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
-      - c698c99575b0 "mm: split out internal page_alloc.h" (3/18)
+      - 0a5d41dfc44e "mm: split out internal page_alloc.h" (3/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-      - 0ad327684f51 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof()" (4/18)
+      - 5b1429cd8a01 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof()" (4/18)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
-    - ee942d0d3d19 "mm/migrate: use huge_ptep_get() in remove_migration_pte()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260703114202.365553-5-dev.jain@arm.com
-      - 1be922b4d2a5 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 708e3a1c2d8f "mm/migrate: use huge_ptep_get() in remove_migration_pte()" (3/5)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260703114202.365553-5-dev.jain@arm.com
+    - bc56b3275501 "mm: mempolicy: fix automatic numa balancing for shmem"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
+      - 52951ce18ecf "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 37777ea6bf96 "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - 14f8c7fd9e9d "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - 9ac3096e56c2 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - cfc28b76ae6a "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
     - series "mm: handle device-private PMDs in walk callbacks", v3. (3 commits)
-      - d64d8628609b "mm/mempolicy: skip non-present PMDs when queueing folios" (0/3)
+      - ffd223df95d5 "mm/mempolicy: skip non-present PMDs when queueing folios" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710105557.1987433-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260710105557.1987433-2-usama.arif@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
-      - b53142520b46 "mm: introduce and use linear_folio_page_index()" (7/15)
+      - 1a216b462f57 "mm: introduce and use linear_folio_page_index()" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 6c82e4654028 "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
+    - e2dbd8fe9ffa "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260727-kcompact-v1-1-bdfefddd6874@debian.org
       - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]

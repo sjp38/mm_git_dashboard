@@ -1,4 +1,4 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -6,15 +6,28 @@
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 28 -> 28 commits (no change)
-  - series: 3 (28) -> 3 (24)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 11 -> 11 commits (no change)
+  - series: 3 (24) -> 4 (28)
+    - no role, nobody: 4 -> 3 commits
+    - no role, no role : 11 -> 12 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - series "Fix incorrect access of hugetlb pte entries", v3. (5)
+      - 11a2d6c56086 "mm/rmap: use huge_ptep_get() in try_to_unmap_one() (0/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260703114202.365553-1-dev.jain@arm.com"
+        - Link: https://lore.kernel.org/20260703114202.365553-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
+    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
+      - ba0b306f63ba "mm/rmap: refactor anon folio unmap in try_to_unmap_one (3/5)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260713050050.1017741-5-dev.jain@arm.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

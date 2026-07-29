@@ -1,20 +1,22 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 4165b7d1c45c "userfaultfd: wait on source PMD during UFFDIO_MOVE"
-      - Authored by a reviewer, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260705131231.1499198-1-usama.arif@linux.dev
-      - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=8
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
   - changed commits
+    - e923bd21058e "mm/huge_memory: unlock i_mmap_rwsem before releasing after-split folios"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260716095424.471052-1-kirill@shutemov.name
+- mm-hotfixes-unstable: 2 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 2 -> 1 commits
+  - new commits
+    - b1c7f6d71943 "mm/huge_memory: initialise workingset state before folio split"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260725101419.3938406-1-matt@readmodwrite.com
+  - dropped commits
     - 71a0746c4a00 "mm/huge_memory: Initialise workingset state before folio split"
       - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lore.kernel.org/20260725101419.3938406-1-matt@readmodwrite.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
@@ -25,8 +27,13 @@
     - no role, reviewer: 6 -> 6 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - d732aa4e159c "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260728204636.20998-2-jakovnovak30@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

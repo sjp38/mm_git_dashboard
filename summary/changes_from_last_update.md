@@ -1,88 +1,97 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
-- mm-hotfixes-stable: 13 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 3 -> 0 commits
-    - no role, no role : 4 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
-    - maintainer, no role : 1 -> 0 commits
-  - dropped commits
-    - ea3034b2b00f "mm/vmstat: fold stranded per-cpu node stats when a node comes online"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260627202243.758289-1-gourry@gourry.net
-    - 4fc089235378 "lib: test_hmm: use device devt for coherent device range selection"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/178277581197.172200.16265155329935822153.stgit@skinsburskii
-    - 4165b7d1c45c "userfaultfd: wait on source PMD during UFFDIO_MOVE"
-      - Authored by a reviewer, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260705131231.1499198-1-usama.arif@linux.dev
-      - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=8
-    - 07b4377bdbe7 "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for unpopulated ptes"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260707151349.92143-1-kirill@shutemov.name
-    - 63867c82d0c0 "mm: migrate_device: fix pte_pfn/pte_dirty called on non-present PTE"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260708003955.4024340-1-wangkefeng.wang@huawei.com
-      - Link: https://lore.kernel.org/20260706111958.3649651-1-wangkefeng.wang@huawei.com
-    - 83abe2fd5b3a "mm/hugetlb: fix swap entry corruption when clearing uffd-wp at fork()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260708090110.136162-1-kirill@shutemov.name
-    - 7441d6348c70 "mm/util: don't read __page_2 for order-1 folios in snapshot_page()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260708201954.686111-1-aboorvad@linux.ibm.com
-    - 89b1b79c3088 "mm/percpu-km: fix bitmap overflow and accounting in pcpu_create_chunk()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260709-fix-pcpu_create_chunk-in-percpu-km-v1-1-1f64745a84cc@nvidia.com
-    - df8ce7ab48d0 "ocfs2: fix boundary check in ocfs2_check_dir_entry() to use buffer offset"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260710040512.3310736-1-joseph.qi@linux.alibaba.com
-    - e3a0127eee04 "selftest: fix headers in fclog.c"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260710171741.837308-1-jkoolstra@xs4all.nl
-    - de4660898b7a "mm: mglru: fix stale batch updates after memcg reparenting"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260710154318.75388-1-qi.zheng@linux.dev
-    - dd9623f58ec7 "mm/hugetlb: fix list corruption in allocate_file_region_entries()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260713171456.300518-2-caixiangfeng@bytedance.com
-    - 40de8160ca7f "fs/proc/task_mmu: fix PAGEMAP_SCAN written state for PMD holes"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260715144234.442721-2-kirill@shutemov.name
-- mm-hotfixes-unstable: 21 -> 23 commits
-  - series: 3 (9) -> 3 (9) (no change)
-    - no role, nobody: 5 -> 6 commits
-    - no role, no role : 9 -> 9 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 3 -> 4 commits
-  - new commits
-    - a0e378ee1dd6 "mm/damon/ops-common: putback folios on invalid migrate nid"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260726014815.1280757-1-dayou5941@163.com
-    - 480f5ce8129a "mm/hugetlb_cma: dix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260726072935.3513996-1-souravpanda@google.com
-    - 2e8979bc74ac "microblaze: restore the page alignment of swapper_pg_dir"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260727215823.1422701-1-ramin.moussavi@yacoub.de
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
+- mm-hotfixes-stable: 0 -> 12 commits
+  - series: 0 (0) -> 2 (4)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 0 -> 6 commits
+    - no role, reviewer: 0 -> 3 commits
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
+    - 1833ce36b354 "mm: memcg: initialize *locked in memcg1_oom_prepare() stub"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260716-memcg-oom-uninit-locked-v2-1-63631d878eb4@debian.org
+    - series "mm: fix PMD level mTHP accounting bugs", v2. (2)
+      - 4bd0c3515a04 "mm: decrement MTHP_STAT_NR_ANON in free_zone_device_folio() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20260717064502.1980173-1-npache@redhat.com
+        - Link: https://lore.kernel.org/20260717064502.1980173-2-npache@redhat.com
+      - d09a8fd52147 "mm/migrate: exclude hugetlb folios from MTHP_STAT_NR_ANON accounting (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20260717064502.1980173-3-npache@redhat.com
+    - 45ebe4540817 "riscv/mm: use physical alignment for vmemmap_start_pfn"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260716115326.3466926-1-xujiakai2025@iscas.ac.cn
+    - e923bd21058e "mm/huge_memory: unlock i_mmap_rwsem before releasing after-split folios"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260716095424.471052-1-kirill@shutemov.name
+    - 598356522b3a "MAINTAINERS: update address for Burak Emir"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260718151303.2649-1-burak.emir@gmail.com
+    - 1fcac7355142 "arm64, mailmap: update email address for Peter Collingbourne"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260718172923.8297-1-peter@pcc.me.uk
+    - 8c7372c5b155 "MAINTAINERS: update Nico Pache's email address"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260721101811.115954-1-nico.pache@linux.dev
+    - dc37771a43d4 "mm: vmscan: abort proactive reclaim early when freezing for suspend"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260720044103.905191-1-richardycc@google.com
+    - 0b45f6927a14 "mm/page_reporting: use system_freezable_wq to fix UAF during suspend"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260721005603.1710551-1-linkl@google.com
+    - series "selftests: Add missing initalization of pointer passed to getline", v2. (2)
+      - 8f6f9fd93cd7 "selftests/clone3: fix wild pointer access of getline due to missing init (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20260722130246.2135563-1-christian.gellermann@codasip.com
+        - Link: https://lore.kernel.org/20260722130246.2135563-2-christian.gellermann@codasip.com
+        - Link: https://pubs.opengroup.org/onlinepubs/9799919799/functions/getline.html [1]
+        - Link: https://git.musl-libc.org/cgit/musl/tree/src/stdio/getdelim.c#n38 [2]
+      - 9f1d75a4ce04 "selftests/mm: fix potential wild pointer access of getline due to missing init (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20260722130246.2135563-3-christian.gellermann@codasip.com
+        - Link: https://pubs.opengroup.org/onlinepubs/9799919799/functions/getline.html [1]
+- mm-hotfixes-unstable: 23 -> 13 commits
+  - series: 3 (9) -> 1 (3)
+    - no role, nobody: 6 -> 4 commits
+    - no role, no role : 9 -> 3 commits
+    - no role, reviewer: 4 -> 1 commits
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - b1c7f6d71943 "mm/huge_memory: initialise workingset state before folio split"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260725101419.3938406-1-matt@readmodwrite.com
+    - 5d5d46140139 "mm/filemap: __filemap_add_folio() restore index before retrying"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/562fbfa6-dd6d-0b6a-2461-ed2ff1173bc8@google.com
+    - d6ce242ab111 "mm/damon: adjust isolated pages stat for DAMOS_MIGRATE_{HOT,COLD}"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260728140404.94476-1-sj@kernel.org
+      - Link: https://github.com/damonitor/damo [1]
+      - Link: https://lore.kernel.org/20260726164356.87940-1-sj@kernel.org [2]
+  - dropped commits
     - 71a0746c4a00 "mm/huge_memory: Initialise workingset state before folio split"
       - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lore.kernel.org/20260725101419.3938406-1-matt@readmodwrite.com
-  - dropped commits
-    - f8ec70550afb "mm/hugetlb: fix null nodemask in alloc_fresh_hugetlb_folio"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260705175119.440599-1-souravpanda@google.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 587 -> 588 commits
-  - series: 73 (470) -> 72 (465)
-    - no role, nobody: 84 -> 85 commits
+- mm-unstable: 588 -> 588 commits (no change)
+  - series: 72 (465) -> 73 (469)
+    - no role, nobody: 85 -> 84 commits
     - no role, no role : 146 -> 146 commits (no change)
     - no role, reviewer: 57 -> 57 commits (no change)
-    - no role, maintainer: 94 -> 94 commits (no change)
+    - no role, maintainer: 94 -> 95 commits
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 17 -> 17 commits (no change)
     - reviewer, reviewer: 28 -> 28 commits (no change)
@@ -91,123 +100,90 @@
     - maintainer, no role : 19 -> 19 commits (no change)
     - maintainer, reviewer: 13 -> 13 commits (no change)
   - new commits
-    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
-      - 6b090c86cffe "mm/mm_init: simplify deferred_free_pages() migratetype init (4/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260612035903.2468601-6-songmuchun@bytedance.com
-    - a3142e55ebb4 "mm/hmm: make CONFIG_HMM_MIRROR select CONFIG_MMU_NOTIFIER"
-      - Authored by a maintainer, reviewed by nobody
-    - aedb150e27b7 "mm-page_alloc-fix-non-movable-reclaim-storm-in-defrag_mode-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/DK7NM9RPUJOD.11PNJJ5N2OBED@linux.dev
-  - changed commits
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - 5610f13c1bbc "Documentation/userfaultfd: document RWP working set tracking (14/15)"
+    - series "maple_tree: lock checking and clean ups", v2. (19)
+      - e5bacfdc709d "maple_tree-stop-flooding-logs-when-debug_locks-is-set-to-zero-fix (3/19)"
         - Authored by no role player, reviewed by nobody
-        - added "Cc: kernel test robot <lkp@intel.com>"
-        - Link: https://lore.kernel.org/20260708111417.173443-16-kirill@shutemov.name
-    - series "mm/vmscan: fix swappiness=max and clean up per-node proactive reclaim", v4. (4)
-      - 2fe2ea900b21 "mm/vmscan: fix anon-only reclaim evicting file pages when swappiness=max (0/4)"
+        - Link: https://lore.kernel.org/fo5r2xl3fql6gyvjasfvfu4ftugjti2vxg7zskdw7hjeo3xvqm@kk66qmsf762s
+  - changed commits
+    - 3301f59f0011 "mm/page_owner: use memcg_data snapshot to avoid TOCTOU in print_page_owner_memcg()"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reported-by: Sashiko <sashiko-bot@kernel.org>"
+      - Link: https://lore.kernel.org/20260714015117.78351-10-ye.liu@linux.dev
+    - f94d79e45e5b "mm/shmem: fix data-race in shmem_fault"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Andrew Morton <akpm@linux-foundation.org>"
+      - Link: https://lore.kernel.org/20260630120222.11562-1-yahia.a.abdrabou@gmail.com
+    - series "Fix incorrect access of hugetlb pte entries", v3. (5)
+      - 11a2d6c56086 "mm/rmap: use huge_ptep_get() in try_to_unmap_one() (0/5)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260724033435.2573323-1-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/20260724033435.2573323-2-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/cgroups/7ddf3eee-5fe2-45f7-8614-c8936a039e04@linux.dev/ [1]
-      - b358a6ccf14f "mm: vmscan: propagate real error code from per-node proactive reclaim (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260724033435.2573323-3-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/all/20250717235604.2atyx2aobwowpge3@offworld/T/#m3514718be82a31b05726a49da9b61fbfc69a589e [1]
-      - 9d017f561c5e "mm: vmscan: drop unused gfp_mask parameter from __node_reclaim() (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260724033435.2573323-4-ridong.chen@linux.dev
-      - a009505a4ab8 "mm/mglru: fix anon-only reclaim evicting file pages when swappiness=max (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260724033435.2573323-5-ridong.chen@linux.dev
-        - Link: https://sashiko.dev/#/patchset/20260717113300.214717-1-ridong.chen@linux.dev [1]
-  - dropped commits
-    - series "Fix incorrect access of hugetlb pte entries", v3. (6)
-      - d1e4da4ebee8 "arm64: make huge_ptep_get handled unaligned addresses (0/6)"
-        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260703114202.365553-1-dev.jain@arm.com"
         - Link: https://lore.kernel.org/20260703114202.365553-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260703114202.365553-2-dev.jain@arm.com
-    - 8e36442b75ee "mm/hmm.c: fix build with CONFIG_MMU_NOTIFIER=n"
-      - Authored by a maintainer, reviewed by nobody
-- mm-new: 15 -> 17 commits
-  - series: 4 (8) -> 3 (6)
-    - no role, nobody: 3 -> 3 commits (no change)
+        - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
+    - series "maple_tree: lock checking and clean ups", v2. (19)
+      - a270cee2d337 "maple_tree: add write lock checking with lockdep sequence numbers (2/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - Link: https://lore.kernel.org/20260630190843.3563858-4-liam@infradead.org
+    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
+      - ba0b306f63ba "mm/rmap: refactor anon folio unmap in try_to_unmap_one (3/5)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260713050050.1017741-5-dev.jain@arm.com
+  - dropped commits
+    - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (6)
+      - 94114ef6e9a8 "selftests/mm: add hwpoison-panic destructive test (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-6-c6ed5b62eea2@debian.org
+- mm-new: 17 -> 21 commits
+  - series: 3 (6) -> 3 (6) (no change)
+    - no role, nobody: 3 -> 4 commits
     - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 0 -> 2 commits
-    - no role, maintainer: 7 -> 7 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 7 -> 9 commits
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - 6c82e4654028 "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260727-kcompact-v1-1-bdfefddd6874@debian.org
-      - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
-    - 1dd5c9872836 "mm: fold userfaultfd_rwp() to false without CONFIG_ARCH_HAS_PTE_PROTNONE"
+    - fd2019599430 "mm/page_reporting: add page_reporting_delay_ms module parameter"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260727230545.262579-1-pratmal@google.com
+    - b94e83f3ae2d "Documentation: zram: remove sections numbering"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260728021229.181627-1-senozhatsky@chromium.org
+    - 898e50e29003 "mm/zsmalloc: fix release order of locks in zs_page_migrate()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260728055333.421080-1-richardycc@google.com
+    - f569ccae03b2 "mm/shmem: downgrade final i_blocks check in shmem_evict_inode() to pr_warn()"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/amcitKvUvFYr8W38@thinkstation
-    - 5f30a1b90e58 "ksm: stop iterating VMAs when ksm_test_exit returns true"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260726133501.504048-1-wsw9603@163.com
+      - Link: https://lore.kernel.org/20260728091014.3876715-1-yujiacheng3@huawei.com
+    - d732aa4e159c "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260728204636.20998-2-jakovnovak30@gmail.com
+  - dropped commits
     - e505f6ea3c66 "mm/page_reporting: Add page_reporting_delay_ms module parameter"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260727230545.262579-1-pratmal@google.com
-  - dropped commits
-    - series "mm: folio conversion and refactoring in do_swap_page()", v2. (2)
-      - 1bde0edfb361 "mm: use a folio in the softleaf_is_device_private path (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260723030752.16979-1-hongfu.li@linux.dev
-        - Link: https://lore.kernel.org/20260723030752.16979-2-hongfu.li@linux.dev
-      - 923f3cb6e52a "mm: extract non-swap page handling to do_non_swap_page() (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260723030752.16979-3-hongfu.li@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 84 -> 85 commits
-  - series: 8 (24) -> 8 (24) (no change)
-    - no role, nobody: 35 -> 34 commits
-    - no role, no role : 15 -> 17 commits
+- mm-nonmm-unstable: 85 -> 87 commits
+  - series: 8 (24) -> 9 (26)
+    - no role, nobody: 34 -> 36 commits
+    - no role, no role : 17 -> 17 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 22 -> 22 commits (no change)
     - maintainer, nobody: 9 -> 9 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - 842912dea6d5 "sysctl: remove CONFIG_PROC_SYSCTL, it just mirrors CONFIG_SYSCTL"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/amdveg1m4E4uQlGv@redhat.com
+    - series "taskstats: tidy up the cpumask command path". (2)
+      - ee168116cec6 "taskstats: drop the dead NULL attribute check in parse() (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260728202104.17839-1-include@grrlz.net
+        - Link: https://lore.kernel.org/20260728202104.17839-2-include@grrlz.net
+      - 18a479935ee9 "taskstats: fold the two cpumask handlers into one (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260728202104.17839-3-include@grrlz.net
   - changed commits
-    - series "taskstats: fix cgroupstats invalid fd handling and add selftests". (2)
-      - ab90b5cdc7ef "taskstats: return -EBADF when cgroupstats receives an invalid fd (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Balbir Singh <balbirs@nvidia.com>"
-        - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
-        - Link: https://lore.kernel.org/cover.1783713230.git.cyyzero16@gmail.com
-        - Link: https://lore.kernel.org/b4fd9e288e4a48efebaf41b4ffcdb204b06675c4.1783713230.git.cyyzero16@gmail.com
-    - 1d51a4417e09 "kcov: fix data corruption and race conditions on PREEMPT_RT"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/43552d09-2ce2-4b19-b0d3-a2d1ab952145@I-love.SAKURA.ne.jp
-    - 794b7392b171 "powerpc/xive: add error return value to xive_smp_probe()"
+    - 3397fc916af8 "sysctl: move the "cad_pid" entry from pid_table[] to kern_reboot_table[]"
       - Authored by no role player, reviewed by no role player
-      - added "Cc: Alistair Popple <apopple@nvidia.com>"
-      - Link: https://lore.kernel.org/20260724022851.466017-3-gouhao@uniontech.com
-    - 2f7b17faeab8 "drm: remove dead WARN_ON NULL check after GFP_NOFAIL allocation"
-      - Authored by no role player, reviewed by nobody
-      - added "Cc: Alistair Popple <apopple@nvidia.com>"
-      - Link: https://lore.kernel.org/20260724022851.466017-5-gouhao@uniontech.com
-    - 5ce5896323ad "lib/test_hmm: remove dead NULL checks after GFP_NOFAIL allocations"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Alistair Popple <apopple@nvidia.com>"
-      - Link: https://lore.kernel.org/20260724022851.466017-6-gouhao@uniontech.com
-    - df0812b1f6a6 "RDMA/cxgb4: remove dead NULL checks after GFP_NOFAIL allocations"
-      - Authored by no role player, reviewed by nobody
-      - added "Cc: Alistair Popple <apopple@nvidia.com>"
-      - Link: https://lore.kernel.org/20260724022851.466017-7-gouhao@uniontech.com
-    - 1db65b387f11 "rapidio: mport_cdev: fix use-after-free in dma_req_free()"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260723235220.588424-1-james010kim@gmail.com"
-      - dropped "Link: https://lore.kernel.org/20260615070530.371640-1-james010kim@gmail.com"
-      - Link: https://lore.kernel.org/20260723235220.588424-1-james010kim@gmail.com
+      - added "Cc: "Cen Zhang (Microsoft)" <blbllhy@gmail.com>"
+      - dropped ""Cen Zhang (Microsoft)" <blbllhy@gmail.com>"
+      - Link: https://lore.kernel.org/al4C572uhLdBvyzH@redhat.com

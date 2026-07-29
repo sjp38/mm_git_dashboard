@@ -1,4 +1,4 @@
-- baseline: v7.2-rc4-15-gb95f03f04d475 -> v7.2-rc5-31-g62cc90241548d
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -8,9 +8,14 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
+- mm-new: 2 -> 3 commits
   - series: 1 (2) -> 1 (2) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - b94e83f3ae2d "Documentation: zram: remove sections numbering"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260728021229.181627-1-senozhatsky@chromium.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
