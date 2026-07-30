@@ -3,16 +3,29 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 11 commits (no change)
-  - series: 1 (11) -> 1 (11) (no change)
+- mm-stable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "mm: remove redundant static variable initializations". (2)
+      - 253ed912fe65 "mm/memory-failure: remove redundant initialization for hw_memory_failure (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260623114743.4565-3-igorpetindev@gmail.com
+- mm-unstable: 11 -> 10 commits
+  - series: 1 (11) -> 1 (10)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 5 -> 4 commits
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 4 -> 4 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+    - reviewer, reviewer: 4 -> 3 commits
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 36b919a45e7e "selftests/mm: unpoison pages in memory-failure teardown"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

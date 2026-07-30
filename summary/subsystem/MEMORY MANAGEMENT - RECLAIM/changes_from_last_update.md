@@ -1,26 +1,37 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-stable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - dc37771a43d4 "mm: vmscan: abort proactive reclaim early when freezing for suspend"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260720044103.905191-1-richardycc@google.com
-- mm-hotfixes-unstable: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 15 -> 15 commits (no change)
-  - series: 3 (12) -> 3 (12) (no change)
+    - baff6d2d2708 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
+- mm-unstable: 15 -> 16 commits
+  - series: 3 (12) -> 3 (14)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 10 -> 10 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, reviewer: 3 -> 4 commits
+    - no role, maintainer: 10 -> 11 commits
+    - reviewer, reviewer: 1 -> 0 commits
+  - changed commits
+    - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2)
+      - 6a17afd8239d "mm: vmscan: fix node reclaim ignoring swappiness parameter (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260723032434.2016749-3-ridong.chen@linux.dev
+    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v4. (2)
+      - 0e959217c40b "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev
+- mm-new: 2 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, maintainer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

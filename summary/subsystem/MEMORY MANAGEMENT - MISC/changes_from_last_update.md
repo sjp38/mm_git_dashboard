@@ -1,37 +1,58 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "selftests: Add missing initalization of pointer passed to getline", v2. (2)
-      - 9f1d75a4ce04 "selftests/mm: fix potential wild pointer access of getline due to missing init (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260722130246.2135563-3-christian.gellermann@codasip.com
-        - Link: https://pubs.opengroup.org/onlinepubs/9799919799/functions/getline.html [1]
-- mm-hotfixes-unstable: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
-- mm-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 44 -> 43 commits
-  - series: 6 (31) -> 6 (30)
-    - no role, nobody: 15 -> 15 commits (no change)
-    - no role, no role : 17 -> 16 commits
-    - no role, reviewer: 4 -> 4 commits (no change)
+- mm-stable: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, no role : 0 -> 2 commits
+  - changed commits
+    - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v12. (4)
+      - e2c75342c24f "mm/page_owner: document page_owner filter (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - added "[rdunlap@infradead.org: avoid docs build warning]"
+        - added "Link: : https://lore.kernel.org/20260708213548.469155-1-rdunlap@infradead.org"
+        - added "Signed-off-by: Randy Dunlap <rdunlap@infradead.org>"
+        - Link: : https://lore.kernel.org/20260708213548.469155-1-rdunlap@infradead.org
+        - Link: https://lore.kernel.org/20260707115411.1714314-5-zhen.ni@easystack.cn
+    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
+      - 7e250334158d "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time (11/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-13-songmuchun@bytedance.com
+- mm-unstable: 43 -> 41 commits
+  - series: 6 (30) -> 6 (28)
+    - no role, nobody: 15 -> 14 commits
+    - no role, no role : 16 -> 15 commits
+    - no role, reviewer: 4 -> 5 commits
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 0 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm/damon: five misc fixups" (5)
+      - 87269f4ed257 "Docs/{admin-guide,mm}/damon: fix DAMON documentation details (2/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - dropped "Cc: SJ Park <sj@kkernel.org>"
+        - Link: https://lore.kernel.org/20260629145538.134832-4-sj@kernel.org
+    - 2e0c36e540a1 "selftests/mm: fix gup_longterm EINVAL error message"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/23557F4CB8CF36FF+20260724074603.1479243-1-zhaozhengzhuo@uniontech.com
   - dropped commits
-    - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (6)
-      - 94114ef6e9a8 "selftests/mm: add hwpoison-panic destructive test (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-6-c6ed5b62eea2@debian.org
+    - 0ce7e18795bf "mm/page_owner: avoid docs build warning"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260708213548.469155-1-rdunlap@infradead.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 36b919a45e7e "selftests/mm: unpoison pages in memory-failure teardown"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

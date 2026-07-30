@@ -3,15 +3,51 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 14 commits (no change)
-  - series: 1 (12) -> 1 (12) (no change)
+- mm-stable: 0 -> 8 commits
+  - series: 0 (0) -> 0 (8)
+    - no role, no role : 0 -> 7 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
+      - b1b7c045e808 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier (3/19)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
+      - 9c29f83d88d7 "mm/mm_init: simplify deferred_free_pages() migratetype init (4/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-6-songmuchun@bytedance.com
+      - 8e4ee7b1bdaf "mm/sparse: move subsection_map_init() into sparse_init() (6/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-8-songmuchun@bytedance.com
+      - ee6192a2c432 "mm/mm_init: defer sparse_init() until after zone initialization (7/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-9-songmuchun@bytedance.com
+      - 1221a19f2b03 "mm/mm_init: defer hugetlb reservation until after zone initialization (8/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-10-songmuchun@bytedance.com
+      - 37424eab6da3 "mm/mm_init: remove set_pageblock_order() call from sparse_init() (9/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-11-songmuchun@bytedance.com
+      - 133b57fee93f "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid() (10/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-12-songmuchun@bytedance.com
+      - 6d098029de09 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page() (18/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-20-songmuchun@bytedance.com
+- mm-unstable: 14 -> 6 commits
+  - series: 1 (12) -> 1 (5)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 8 -> 8 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - no role, no role : 8 -> 1 commits
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 3 -> 2 commits
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -5,29 +5,26 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 28 -> 28 commits (no change)
-  - series: 3 (24) -> 4 (28)
-    - no role, nobody: 4 -> 3 commits
-    - no role, no role : 11 -> 12 commits
+- mm-unstable: 28 -> 27 commits
+  - series: 4 (28) -> 4 (27)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
     - maintainer, no role : 2 -> 2 commits (no change)
   - changed commits
     - series "Fix incorrect access of hugetlb pte entries", v3. (5)
-      - 11a2d6c56086 "mm/rmap: use huge_ptep_get() in try_to_unmap_one() (0/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260703114202.365553-1-dev.jain@arm.com"
-        - Link: https://lore.kernel.org/20260703114202.365553-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
-    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
-      - ba0b306f63ba "mm/rmap: refactor anon folio unmap in try_to_unmap_one (3/5)"
+      - e59e3c9349a8 "mm/rmap: use huge_ptep_get() in try_to_migrate_one() (1/5)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260713050050.1017741-5-dev.jain@arm.com
+        - added "[akpm@linux-foundation.org: coding-style cleanups]"
+        - Link: https://lore.kernel.org/20260703114202.365553-4-dev.jain@arm.com
+  - dropped commits
+    - series "Fix incorrect access of hugetlb pte entries", v3. (5)
+      - fe2307e17045 "mm-rmap-use-huge_ptep_get-in-try_to_migrate_one-checkpatch-fixes (2/5)"
+        - Authored by a maintainer, reviewed by nobody
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

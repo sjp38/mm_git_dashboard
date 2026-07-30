@@ -1,42 +1,108 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-stable: 0 -> 14 commits
+  - series: 0 (0) -> 2 (8)
+    - no role, reviewer: 0 -> 13 commits
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - 0b45f6927a14 "mm/page_reporting: use system_freezable_wq to fix UAF during suspend"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260721005603.1710551-1-linkl@google.com
-- mm-hotfixes-unstable: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 43 -> 43 commits (no change)
-  - series: 7 (34) -> 7 (34) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 14 -> 14 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 7 -> 7 commits (no change)
-    - reviewer, reviewer: 15 -> 15 commits (no change)
-  - changed commits
-    - 3301f59f0011 "mm/page_owner: use memcg_data snapshot to avoid TOCTOU in print_page_owner_memcg()"
+    - cdea9364e477 "mm/page_alloc: don't build vm_numa_stat_key if CONFIG_NUMA=n"
       - Authored by no role player, reviewed by a reviewer
-      - added "Reported-by: Sashiko <sashiko-bot@kernel.org>"
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260618100614.1321950-1-ben.dooks@codethink.co.uk
+    - series "mm/page_owner: misc cleanups", v6. (6)
+      - 53472eb26291 "mm/page_owner: extract skip_buddy_pages() helper to unify buddy page skipping (0/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260714015117.78351-1-ye.liu@linux.dev
+        - Link: https://lore.kernel.org/20260714015117.78351-2-ye.liu@linux.dev
+      - 7eeed888c99a "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason (1/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260714015117.78351-3-ye.liu@linux.dev
+      - c95dc0a84b4c "mm: use enum migrate_reason instead of int for migration reason parameters (2/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
+      - e90ed519087d "mm/page_owner: hoist CONFIG_MEMCG to function level for print_page_owner_memcg() (3/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260714015117.78351-5-ye.liu@linux.dev
+      - c1c94cf65863 "mm/page_owner: add missing newline to count_threshold format string (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260714015117.78351-6-ye.liu@linux.dev
+      - 1f5af031ffb7 "mm/page_owner: move free_ts_nsec output to free section in __dump_page_owner() (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260714015117.78351-7-ye.liu@linux.dev
+    - f0bb69130e14 "mm/page_owner: drop redundant page_owner prefix from static symbols"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260714015117.78351-8-ye.liu@linux.dev
+    - 4fd1c85cc031 "mm/page_owner: clamp skip_buddy_pages() PFN advance at MAX_ORDER_NR_PAGES boundary"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260714015117.78351-9-ye.liu@linux.dev
+    - 90f095b816e2 "mm/page_owner: use memcg_data snapshot to avoid TOCTOU in print_page_owner_memcg()"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
       - Link: https://lore.kernel.org/20260714015117.78351-10-ye.liu@linux.dev
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-  - new commits
-    - fd2019599430 "mm/page_reporting: add page_reporting_delay_ms module parameter"
+    - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v12. (4)
+      - 8570b65220e8 "mm/page_owner: add print_mode filter (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260707115411.1714314-1-zhen.ni@easystack.cn
+        - Link: https://lore.kernel.org/20260707115411.1714314-2-zhen.ni@easystack.cn
+      - bed80036125a "mm/page_owner: add NUMA node filter (1/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260707115411.1714314-3-zhen.ni@easystack.cn
+    - 52b71fe00058 "mm/page_alloc: drop flag-conversion "optimisation""
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260629-gfp-pessimisation-v2-1-311ece6a8637@google.com
+      - Link: https://lore.kernel.org/20260615-gfp-pessimisation-v2-1-65f1319e6818@google.com
+      - Link: https://github.com/bjackman/aethelred/blob/2ccdc84ef087c2a631914f58e106e99e19bd3b98/page-alloc-test/page-alloc-test.c [1]
+    - baff6d2d2708 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
+- mm-unstable: 43 -> 29 commits
+  - series: 7 (34) -> 5 (25)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 2 -> 5 commits
+    - no role, reviewer: 14 -> 16 commits
+    - no role, maintainer: 3 -> 2 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, no role : 7 -> 5 commits
+    - reviewer, reviewer: 15 -> 0 commits
+  - changed commits
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - f0541bf53fef "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "[zhuhui@kylinos.cn: v11]"
+        - added "Link: : https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev"
+        - added "Link: : https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com"
+        - added "[ziy@nvidia.com: build fix]"
+        - Link: : https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev
+        - Link: : https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com
+        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+    - adf8d17f3609 "mm/page_reporting: add page_reporting_delay_ms module parameter"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260727230545.262579-1-pratmal@google.com
   - dropped commits
-    - e505f6ea3c66 "mm/page_reporting: Add page_reporting_delay_ms module parameter"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260727230545.262579-1-pratmal@google.com
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - 317d9174e4b0 "mm-page_owner-add-numa-node-filter-fix (8/10)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com
+- mm-new: 2 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 2 -> 1 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

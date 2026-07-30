@@ -1,20 +1,32 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 5d5d46140139 "mm/filemap: __filemap_add_folio() restore index before retrying"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/562fbfa6-dd6d-0b6a-2461-ed2ff1173bc8@google.com
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 12 commits (no change)
-  - series: 1 (9) -> 1 (9) (no change)
-    - no role, nobody: 7 -> 7 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 0 -> 3 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, nobody: 0 -> 1 commits
+    - no role, maintainer: 0 -> 2 commits
+  - changed commits
+    - series "mm/filemap: reduce unnecessary xarray lookups". (2)
+      - e1c345582c97 "mm/filemap: reduce unnecessary xarray lookups when read cached pages (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260620062446.351475-2-chizhiling@163.com
+      - 32cd1afeca96 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig() (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260620062446.351475-3-chizhiling@163.com
+    - 375c63b64958 "writeback.h: fix a typo in the wbc_init_bio() description"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260615162244.2170866-2-willy@infradead.org
+- mm-unstable: 12 -> 9 commits
+  - series: 1 (9) -> 0 (7)
+    - no role, nobody: 7 -> 6 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+    - no role, maintainer: 3 -> 1 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

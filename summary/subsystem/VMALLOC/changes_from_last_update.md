@@ -5,12 +5,24 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 10 commits (no change)
-  - series: 1 (6) -> 1 (6) (no change)
+- mm-stable: 0 -> 2 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, no role : 0 -> 2 commits
+  - changed commits
+    - series "mm/percpu: Fix possible NOFS/NOIO reclaim recursion", v4. (4)
+      - dec068de6dec "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas() (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260618130414.96383-1-kaitao.cheng@linux.dev
+        - Link: https://lore.kernel.org/20260618130414.96383-2-kaitao.cheng@linux.dev
+    - 24e9b62985d8 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/453375c4-c3ca-4e6f-8880-0e6ff3c74ee3@web.de
+- mm-unstable: 10 -> 8 commits
+  - series: 1 (6) -> 0 (5)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 8 -> 8 commits (no change)
+    - no role, no role : 8 -> 6 commits
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

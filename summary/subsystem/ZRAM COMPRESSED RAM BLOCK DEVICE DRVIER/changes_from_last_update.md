@@ -5,17 +5,40 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 3 commits
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - b94e83f3ae2d "Documentation: zram: remove sections numbering"
-      - Authored by a maintainer, reviewed by nobody
+- mm-unstable: 1 -> 4 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, maintainer: 1 -> 3 commits
+    - maintainer, no role : 0 -> 1 commits
+  - changed commits
+    - series "zram: lockmap tweaks". (2)
+      - a6f979ab8e86 "zram: move lockmap to be per-zram instead per table (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260714141300.3945672-1-bigeasy@linutronix.de
+        - Link: https://lore.kernel.org/20260714141300.3945672-2-bigeasy@linutronix.de
+      - 6c6dc26d8195 "zram: use a custom key for each zram object (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260714141300.3945672-3-bigeasy@linutronix.de
+    - 2ed26e8a624f "Documentation: zram: remove sections numbering"
+      - Authored by a maintainer, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
       - Link: https://lore.kernel.org/20260728021229.181627-1-senozhatsky@chromium.org
+- mm-new: 3 -> 2 commits
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, maintainer: 2 -> 0 commits
+    - maintainer, nobody: 1 -> 2 commits
+  - new commits
+    - series "zram: fix zram issues reported by sashiko". (2)
+      - fd81f48a3b47 "zram: set default primary compressor in zram_destroy_comps() (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260729045745.775973-2-senozhatsky@chromium.org
+        - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com [1]
+      - 14e97a706c2e "zram: validate deflate params (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260729045745.775973-3-senozhatsky@chromium.org
+        - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

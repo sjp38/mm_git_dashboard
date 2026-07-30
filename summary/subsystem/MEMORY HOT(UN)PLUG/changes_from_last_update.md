@@ -1,24 +1,17 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - series "mm: fix PMD level mTHP accounting bugs", v2. (2)
-      - 4bd0c3515a04 "mm: decrement MTHP_STAT_NR_ANON in free_zone_device_folio() (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260717064502.1980173-1-npache@redhat.com
-        - Link: https://lore.kernel.org/20260717064502.1980173-2-npache@redhat.com
-- mm-hotfixes-unstable: 1 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)
-  - series: 1 (7) -> 1 (7) (no change)
+  - series: 1 (7) -> 1 (8)
     - no role, no role : 6 -> 6 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

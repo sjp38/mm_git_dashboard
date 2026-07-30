@@ -1,38 +1,36 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - e923bd21058e "mm/huge_memory: unlock i_mmap_rwsem before releasing after-split folios"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260716095424.471052-1-kirill@shutemov.name
-- mm-hotfixes-unstable: 2 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 2 -> 1 commits
-  - new commits
-    - b1c7f6d71943 "mm/huge_memory: initialise workingset state before folio split"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260725101419.3938406-1-matt@readmodwrite.com
-  - dropped commits
-    - 71a0746c4a00 "mm/huge_memory: Initialise workingset state before folio split"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260725101419.3938406-1-matt@readmodwrite.com
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 25 -> 25 commits (no change)
   - series: 4 (23) -> 4 (23) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 6 -> 6 commits (no change)
-    - reviewer, reviewer: 10 -> 10 commits (no change)
+    - no role, reviewer: 6 -> 8 commits
+    - reviewer, reviewer: 10 -> 8 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+- mm-new: 1 -> 3 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, nobody: 0 -> 2 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - d732aa4e159c "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
+    - series "mm/huge_memory: fix huge_zero_pfn race". (2)
+      - 68f322ac7d50 "mm/huge_memory: separate out CONFIG_PERSISTENT_HUGE_ZERO_FOLIO logic (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260728-fix-refcounted-huge-zero-v1-1-3f261f5447b4@kernel.org
+      - 3214c520c907 "mm/huge_memory: fix huge_zero_pfn race (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260728-fix-refcounted-huge-zero-v1-2-3f261f5447b4@kernel.org
+  - changed commits
+    - 9cd4999a7ef2 "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
       - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
       - Link: https://lore.kernel.org/20260728204636.20998-2-jakovnovak30@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

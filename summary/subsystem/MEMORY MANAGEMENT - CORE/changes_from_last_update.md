@@ -4,22 +4,128 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 98 -> 98 commits (no change)
-  - series: 12 (85) -> 12 (85) (no change)
-    - no role, nobody: 13 -> 13 commits (no change)
-    - no role, no role : 38 -> 38 commits (no change)
-    - no role, reviewer: 8 -> 8 commits (no change)
-    - no role, maintainer: 9 -> 9 commits (no change)
+- mm-stable: 0 -> 15 commits
+  - series: 0 (0) -> 1 (12)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 0 -> 9 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 3 commits
+  - changed commits
+    - 5339ec29f9be "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
+    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
+      - c0caeceb0c38 "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages (0/19)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260612035903.2468601-2-songmuchun@bytedance.com
+      - b1b7c045e808 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier (3/19)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
+      - b3ef85526292 "mm/sparse: panic on memmap and usemap allocation failure (5/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-7-songmuchun@bytedance.com
+      - 8e4ee7b1bdaf "mm/sparse: move subsection_map_init() into sparse_init() (6/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-8-songmuchun@bytedance.com
+      - 37424eab6da3 "mm/mm_init: remove set_pageblock_order() call from sparse_init() (9/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-11-songmuchun@bytedance.com
+      - 133b57fee93f "mm/sparse: move sparse_vmemmap_init_nid_late() into sparse_init_nid() (10/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-12-songmuchun@bytedance.com
+      - 27ca02e689b2 "mm/hugetlb: refactor early boot gigantic hugepage allocation (12/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-14-songmuchun@bytedance.com
+      - ec1adc14c174 "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late() (16/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
+      - 86693837593d "mm/hugetlb: remove unused bootmem cma field (17/19)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-19-songmuchun@bytedance.com
+      - 6d098029de09 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page() (18/19)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260612035903.2468601-20-songmuchun@bytedance.com
+    - baff6d2d2708 "mm: constify oom_control, scan_control, and alloc_context nodemask"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
+    - aaa98b100ea8 "mm/vmstat: avoid taking zone lock in /proc/buddyinfo reads"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260604134245.1580287-1-imran.f.khan@oracle.com
+    - series "mm: cleanup clear_not_present_full_ptes()", v2. (3)
+      - ef68364cd776 "mm: drop pte_clear_not_present_full() (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260629-clear_not_present_full_ptes-v2-2-96089871a1e7@kernel.org
+      - d045e8a05d30 "mm: cleanup clear_not_present_full_ptes() and rename to clear_non_present_ptes() (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260629-clear_not_present_full_ptes-v2-3-96089871a1e7@kernel.org
+- mm-unstable: 98 -> 83 commits
+  - series: 12 (85) -> 12 (74)
+    - no role, nobody: 13 -> 10 commits
+    - no role, no role : 38 -> 28 commits
+    - no role, reviewer: 8 -> 14 commits
+    - no role, maintainer: 9 -> 8 commits
     - reviewer, no role : 10 -> 10 commits (no change)
-    - reviewer, reviewer: 17 -> 17 commits (no change)
+    - reviewer, reviewer: 17 -> 10 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
+  - changed commits
+    - series "mm/vmpressure: reduce CPU, memory and code overhead on cgroup v2", v3. (2)
+      - 9dc24c2763fb "mm/vmpressure: skip tree=true accounting on cgroup v2 (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "[usama.arif@linux.dev: simplify the guard]"
+        - added "Link: : https://lore.kernel.org/e8e1a409-48d8-4fa7-ae98-49485a1607f6@linux.dev"
+        - Link: : https://lore.kernel.org/e8e1a409-48d8-4fa7-ae98-49485a1607f6@linux.dev
+        - Link: https://lore.kernel.org/20260630112617.1198623-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260630112617.1198623-2-usama.arif@linux.dev
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - f0541bf53fef "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "[zhuhui@kylinos.cn: v11]"
+        - added "Link: : https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev"
+        - added "Link: : https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com"
+        - added "[ziy@nvidia.com: build fix]"
+        - Link: : https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev
+        - Link: : https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com
+        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v4. (2)
+      - 03a2f74ef18f "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720164207.450685-2-usama.arif@linux.dev
+        - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
+      - 0e959217c40b "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev
+  - dropped commits
+    - series "mm/vmpressure: reduce CPU, memory and code overhead on cgroup v2", v3. (2)
+      - 6083eecc0e8f "mm-vmpressure-skip-tree=true-accounting-on-cgroup-v2-fix (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/e8e1a409-48d8-4fa7-ae98-49485a1607f6@linux.dev
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - 7e9d7b485794 "mm-fix-assert_exclusive_bits-by-passing-memdesc_flags_t-by-pointer-fix (7/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev
+- mm-new: 3 -> 1 commits
+  - series: 1 (2) -> 0 (0)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

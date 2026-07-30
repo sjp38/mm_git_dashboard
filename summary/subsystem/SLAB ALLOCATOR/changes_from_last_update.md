@@ -8,7 +8,19 @@
 - mm-unstable: 4 -> 4 commits (no change)
   - series: 0 (4) -> 0 (4) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 3 -> 3 commits (no change)
+    - no role, reviewer: 0 -> 3 commits
+    - reviewer, reviewer: 3 -> 0 commits
+  - changed commits
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - f0541bf53fef "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "[zhuhui@kylinos.cn: v11]"
+        - added "Link: : https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev"
+        - added "Link: : https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com"
+        - added "[ziy@nvidia.com: build fix]"
+        - Link: : https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev
+        - Link: : https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com
+        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

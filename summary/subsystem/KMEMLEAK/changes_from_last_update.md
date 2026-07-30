@@ -3,13 +3,33 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 2 (6) -> 2 (6) (no change)
+- mm-stable: 0 -> 4 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, maintainer: 0 -> 4 commits
+  - changed commits
+    - series "mm/kmemleak: avoid soft lockup when scanning task", v3. (3)
+      - 5d10d4e19e6d "mm/kmemleak: avoid soft lockup when scanning task stacks (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-0-acecd7d7fd92@debian.org
+        - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-1-acecd7d7fd92@debian.org
+      - eb11f56eeca5 "mm/kmemleak: stop the task stack scan early when interrupted (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-2-acecd7d7fd92@debian.org
+      - cdf95d6b3387 "mm/kmemleak: stop the per-cpu and struct page scans early too (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260615-kmemleak-stack-resched-v3-3-acecd7d7fd92@debian.org
+    - efcf17453c7c "mm/kmemleak: skip the remaining scan phases when interrupted"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260626-kmemleak_improve-v1-1-d40c7616f64f@debian.org
+- mm-unstable: 8 -> 4 commits
+  - series: 2 (6) -> 1 (3)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
+    - no role, maintainer: 5 -> 1 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
