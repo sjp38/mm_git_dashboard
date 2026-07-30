@@ -7,11 +7,11 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 9ac4e4a2ab4e "mm: split out internal page_alloc.h" (3/18)
+      - 4aaab27d835f "mm: split out internal page_alloc.h" (3/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-    - 6af3067f7ff6 "mm: split out vmalloc declarations from internal.h"
+    - ade1fdf42a55 "mm: split out vmalloc declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -4,55 +4,28 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 2 commits
+- mm-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - ac0f3be693be "mm/memcontrol: remove unused for_each_mem_cgroup macro and cleanup"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260624183700.1152742-1-joshua.hahnjy@gmail.com
-    - 4ac732c3705c "mm: memcg: remove stray text from obj_stock_pcp comment"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260623082614.81621-1-guopeng.zhang@linux.dev
-- mm-unstable: 14 -> 15 commits
-  - series: 1 (3) -> 3 (7)
-    - no role, no role : 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 15 -> 16 commits
+  - series: 3 (7) -> 3 (7) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 12 -> 14 commits
-  - changed commits
-    - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2)
-      - 57ac4a8bfab3 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev
-    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v4. (2)
-      - 03a2f74ef18f "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260720164207.450685-2-usama.arif@linux.dev
-        - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
-      - 0e959217c40b "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev
-- mm-new: 4 -> 1 commits
-  - series: 2 (3) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 3 -> 0 commits
-    - maintainer, maintainer: 0 -> 1 commits
+    - no role, maintainer: 14 -> 15 commits
   - new commits
-    - dcb21495bf72 "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
+    - ad4c71e5f5d3 "mm: memcg: stop reclaim when a limit update is superseded"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260724021805.1234583-1-guopeng.zhang@linux.dev
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - 8be806c9b5b5 "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
       - Authored by a maintainer, reviewed by a maintainer
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
       - Link: https://lore.kernel.org/20260729024612.3369005-1-shakeel.butt@linux.dev
       - Link: https://lore.kernel.org/7a4e5591f45df455e6a485fc5400989569d3d22d.camel@surriel.com/ [1]
-  - dropped commits
-    - 22627cf954e9 "mm: memcg: stop reclaim when a limit update is superseded"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260724021805.1234583-1-guopeng.zhang@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -4,57 +4,20 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 3 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 5339ec29f9be "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260619131830.229804-1-thuth@redhat.com
-    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
-      - ec1adc14c174 "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late() (16/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
-    - baff6d2d2708 "mm: constify oom_control, scan_control, and alloc_context nodemask"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-- mm-unstable: 21 -> 20 commits
-  - series: 4 (17) -> 4 (18)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 4 -> 3 commits
-    - no role, reviewer: 4 -> 5 commits
-    - no role, maintainer: 10 -> 11 commits
-    - reviewer, reviewer: 1 -> 0 commits
-  - changed commits
-    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
-      - f0541bf53fef "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer (6/10)"
-        - Authored by no role player, reviewed by no role player
-        - added "[zhuhui@kylinos.cn: v11]"
-        - added "Link: : https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev"
-        - added "Link: : https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com"
-        - added "[ziy@nvidia.com: build fix]"
-        - Link: : https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev
-        - Link: : https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com
-        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
-    - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2)
-      - 6a17afd8239d "mm: vmscan: fix node reclaim ignoring swappiness parameter (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723032434.2016749-3-ridong.chen@linux.dev
-    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v4. (2)
-      - 0e959217c40b "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev
-- mm-new: 3 -> 1 commits
-  - series: 0 (2) -> 0 (0)
+- mm-stable: 3 -> 3 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 20 -> 20 commits (no change)
+  - series: 4 (18) -> 4 (18) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, maintainer: 11 -> 11 commits (no change)
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

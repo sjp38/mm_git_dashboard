@@ -5,26 +5,57 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 28 -> 27 commits
-  - series: 4 (28) -> 4 (27)
+- mm-unstable: 27 -> 27 commits (no change)
+  - series: 4 (27) -> 4 (27) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
     - maintainer, no role : 2 -> 2 commits (no change)
-  - changed commits
-    - series "Fix incorrect access of hugetlb pte entries", v3. (5)
-      - e59e3c9349a8 "mm/rmap: use huge_ptep_get() in try_to_migrate_one() (1/5)"
+  - new commits
+    - series "mm/rmap: Refactor try_to_unmap_one", v4. (5)
+      - 9bd1a3c935e4 "mm/rmap: add try_to_unmap_poisoned_hugetlb_one (1/5)"
         - Authored by no role player, reviewed by no role player
-        - added "[akpm@linux-foundation.org: coding-style cleanups]"
-        - Link: https://lore.kernel.org/20260703114202.365553-4-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260730094559.418003-3-dev.jain@arm.com
+  - changed commits
+    - series "mm/rmap: Refactor try_to_unmap_one", v4. (5)
+      - c32fbf22e7aa "mm/rmap: convert page -> folio for hwpoison checks (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260730094559.418003-1-dev.jain@arm.com"
+        - added "Link: https://lore.kernel.org/20260730094559.418003-2-dev.jain@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260713050050.1017741-2-dev.jain@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260713050050.1017741-1-dev.jain@arm.com"
+        - Link: https://lore.kernel.org/20260730094559.418003-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260730094559.418003-2-dev.jain@arm.com
+      - ed0dbd96bbd8 "mm/rmap: refactor some code around lazyfree folio unmapping (2/5)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260730094559.418003-4-dev.jain@arm.com"
+        - added "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260713050050.1017741-4-dev.jain@arm.com"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260730094559.418003-4-dev.jain@arm.com
+      - d89a4c3b3642 "mm/rmap: refactor anon folio unmap in try_to_unmap_one (3/5)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260730094559.418003-5-dev.jain@arm.com"
+        - added "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260713050050.1017741-5-dev.jain@arm.com"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260730094559.418003-5-dev.jain@arm.com
+      - 43e7946773b7 "mm/rmap: add anon folio unmap dispatcher (4/5)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260730094559.418003-6-dev.jain@arm.com"
+        - added "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260713050050.1017741-6-dev.jain@arm.com"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - Link: https://lore.kernel.org/20260730094559.418003-6-dev.jain@arm.com
   - dropped commits
-    - series "Fix incorrect access of hugetlb pte entries", v3. (5)
-      - fe2307e17045 "mm-rmap-use-huge_ptep_get-in-try_to_migrate_one-checkpatch-fixes (2/5)"
-        - Authored by a maintainer, reviewed by nobody
+    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
+      - cdb16a4c5083 "mm/rmap: add try_to_unmap_hugetlb_one (1/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260713050050.1017741-3-dev.jain@arm.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

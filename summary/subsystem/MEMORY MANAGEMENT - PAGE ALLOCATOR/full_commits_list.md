@@ -68,120 +68,120 @@
     - reviewer, nobody: 1 commits
     - reviewer, no role : 5 commits
   - full commits list
-    - 56d783458987 "mm/page_alloc: use existing highatomic reserves on the buddy fastpath"
+    - 659db7c3ee3c "mm/page_alloc: use existing highatomic reserves on the buddy fastpath"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260623004600.113347-1-jp.kobryn@linux.dev
-      - f0541bf53fef "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer" (6/10)
+      - 15788c4df00e "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer" (6/10)
         - Authored by no role player, reviewed by no role player
         - Link: : https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev
         - Link: : https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com
         - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
     - series "mm: Some cleanups for page allocator APIs", v5. (18 commits)
-      - c0c0b0d91e94 "mm/page_alloc: rename ALLOC_TRYLOCK -> ALLOC_NOLOCK" (0/18)
+      - 9038f6ddbe7f "mm/page_alloc: rename ALLOC_TRYLOCK -> ALLOC_NOLOCK" (0/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-0-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/linux-mm/2399b3ad-4eac-4a14-94c3-27e9f07972a1@kernel.org/
         - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [1]
-      - 8395a2156c0a "mm/page_alloc: some renames to clarify alloc_flags scopes" (1/18)
+      - 5e4ce2929426 "mm/page_alloc: some renames to clarify alloc_flags scopes" (1/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-2-c87b714e19d3@google.com
-      - 9ac4e4a2ab4e "mm: split out internal page_alloc.h" (3/18)
+      - 4aaab27d835f "mm: split out internal page_alloc.h" (3/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-      - 8a6037232cc8 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof()" (4/18)
+      - 4f7d8ab341b6 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof()" (4/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
-      - 77931cbbb424 "mm/page_alloc: relax GFP WARN in nolock allocs" (5/18)
+      - 3725c98c6f37 "mm/page_alloc: relax GFP WARN in nolock allocs" (5/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-6-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/linux-mm/ajS96fWbG4dzP3u3@casper.infradead.org/
-      - e591ba2a9e16 "mm: move some stuff to mm/page_alloc.h" (6/18)
+      - 1bf9fca69a53 "mm: move some stuff to mm/page_alloc.h" (6/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-7-c87b714e19d3@google.com
-      - ba610b4a410d "mm: remove __alloc_pages_node()" (12/18)
+      - b9c872354797 "mm: remove __alloc_pages_node()" (12/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-13-c87b714e19d3@google.com
-      - 3182678adc60 "mm: move __alloc_pages() to mm/page_alloc.h" (13/18)
+      - 21c0e8ba0f3b "mm: move __alloc_pages() to mm/page_alloc.h" (13/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
-      - fd727c0d2e3d "mm: replace __GFP_NO_CODETAG with ALLOC_NO_CODETAG" (14/18)
+      - fc2acb2cfb3d "mm: replace __GFP_NO_CODETAG with ALLOC_NO_CODETAG" (14/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/all/b4916118-3537-4e19-8bc8-1d103dd0d225@linux.dev/
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-15-c87b714e19d3@google.com
-      - 194b819318cb "mm/page_alloc: drop alloc_flags arg from alloc_flags_cma()" (16/18)
+      - e4d39e28006a "mm/page_alloc: drop alloc_flags arg from alloc_flags_cma()" (16/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-17-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/5dcdd1ef-21ad-4ed0-9e8a-0e5cf96b4392@kernel.org/
-      - 4a5d1ba7aa0f "mm: factor out can_spin_trylock()" (17/18)
+      - b48cf8d73444 "mm: factor out can_spin_trylock()" (17/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-18-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/397859cb-b127-4cc6-9c71-044afc99bf0c@kernel.org/
-      - a9ace2ba41ed "mm/compaction: stop recording free page order in page->private" (1/5)
+      - 46a6be1c8677 "mm/compaction: stop recording free page order in page->private" (1/5)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-2-7e4fe155f5b9@nvidia.com
-      - 99c1bf5945b2 "mm/page_alloc: make sure tail_page->private is zero at page free time" (3/5)
+      - ff51cccfad3e "mm/page_alloc: make sure tail_page->private is zero at page free time" (3/5)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-4-7e4fe155f5b9@nvidia.com
-      - fca4d71cc008 "mm: provide free_reserved_pages(), removing x86 variant" (1/10)
+      - dad20eea94c9 "mm: provide free_reserved_pages(), removing x86 variant" (1/10)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-2-4afc76c73d61@kernel.org
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - e9348e8df14e "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - a576db5358cd "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-    - ea2d112f10b0 "mm: let node_reclaim() return the number of pages reclaimed"
+    - fc14d1d9f630 "mm: let node_reclaim() return the number of pages reclaimed"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
     - series "mm/page_alloc: fixes for free_pages_nolock() on RT/UP". (2 commits)
-      - 8d4c44bae4e4 "mm/page_alloc: don't spin_trylock() in NMI on UP" (0/2)
+      - 70b2b4146d0f "mm/page_alloc: don't spin_trylock() in NMI on UP" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-0-fadc49952dda@google.com
         - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-1-fadc49952dda@google.com
-      - 91aedee91e9c "mm/page_alloc: don't spin_trylock() when disallowed in free_one_page()" (1/2)
+      - 1dcb0bcb11f1 "mm/page_alloc: don't spin_trylock() when disallowed in free_one_page()" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-2-fadc49952dda@google.com
     - series "mm/page_alloc: couple of followups for recent cleanups", v3. (4 commits)
-      - 55e804eb00a6 "mm/page_alloc: rename FPI_TRYLOCK -> FPI_NOLOCK" (0/4)
+      - 54b916e57b3b "mm/page_alloc: rename FPI_TRYLOCK -> FPI_NOLOCK" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-0-fc4d246f705d@google.com
         - Link: https://lore.kernel.org/all/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com/
         - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-1-fc4d246f705d@google.com
-      - b498def0e405 "mm/page_alloc: fixup alloc_pages_nolock_noprof() comment" (2/4)
+      - 3130afb8dc1b "mm/page_alloc: fixup alloc_pages_nolock_noprof() comment" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-3-fc4d246f705d@google.com
         - Link: https://sashiko.dev/#/patchset/20260703-alloc-trylock-v5-0-c87b714e19d3%40google.com?part=6
-      - 7c2470de9874 "mm/page_alloc: remove a couple of VM_BUG_ON()st" (3/4)
+      - 9bbf59446ffb "mm/page_alloc: remove a couple of VM_BUG_ON()st" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-4-fc4d246f705d@google.com
         - Link: https://lore.kernel.org/all/7F866265-3F2E-4765-B9D4-9AB898A9C4AC@nvidia.com/
     - series "mm: fix reclaim storms in defrag_mode", v2. (4 commits)
-      - c8b6a5438db1 "mm: page_alloc: __GFP_FS lockdep annotation for direct compaction" (0/4)
+      - aa9908706a10 "mm: page_alloc: __GFP_FS lockdep annotation for direct compaction" (0/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260722150006.3848560-1-hannes@cmpxchg.org
         - Link: https://lore.kernel.org/20260722150006.3848560-2-hannes@cmpxchg.org
-      - ab479b8eb371 "mm: compaction: support non-movable compaction for pageblock requests" (1/4)
+      - d2648038106a "mm: compaction: support non-movable compaction for pageblock requests" (1/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260722150006.3848560-3-hannes@cmpxchg.org
-      - 5f08ba9cb626 "mm: page_alloc: move capture_control to the page allocator" (2/4)
+      - 5877a372d21c "mm: page_alloc: move capture_control to the page allocator" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260722150006.3848560-4-hannes@cmpxchg.org
-      - 8a547bda60e7 "mm: page_alloc: fix non-movable reclaim storm in defrag_mode" (3/4)
+      - 55a53960cfd7 "mm: page_alloc: fix non-movable reclaim storm in defrag_mode" (3/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260722150006.3848560-5-hannes@cmpxchg.org
-    - ce84eab58029 "mm-page_alloc-fix-non-movable-reclaim-storm-in-defrag_mode-fix"
+    - 429f2d179f03 "mm-page_alloc-fix-non-movable-reclaim-storm-in-defrag_mode-fix"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/DK7NM9RPUJOD.11PNJJ5N2OBED@linux.dev
-    - adf8d17f3609 "mm/page_reporting: add page_reporting_delay_ms module parameter"
+    - 93d3b55d9374 "mm/page_reporting: add page_reporting_delay_ms module parameter"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260727230545.262579-1-pratmal@google.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 1f6059bd0537 "mm/page_alloc: boost watermarks on atomic allocation failure"
+    - fb4bdac02ce8 "mm/page_alloc: boost watermarks on atomic allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

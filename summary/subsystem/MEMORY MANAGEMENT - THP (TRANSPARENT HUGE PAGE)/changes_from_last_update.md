@@ -2,36 +2,57 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-hotfixes-unstable: 1 -> 3 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm/huge_memory: fix huge_zero_pfn race", v2. (2)
+      - 1cabd4b5c2b9 "mm/huge_memory: fix huge_zero_pfn race (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-hotfixes-unstable
+        - added "Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-1-c5d8a41b317f@kernel.org"
+        - added "Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-0-c5d8a41b317f@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: <stable@vger.kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260728-fix-refcounted-huge-zero-v1-2-3f261f5447b4@kernel.org"
+        - dropped "Cc: <stable@vger.kernel.org> # 6.18.x: dependent on prior commit"
+        - dropped "Cc: Xueyuan Chen <xueyuan.chen@vivo.com>"
+        - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-0-c5d8a41b317f@kernel.org
+        - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-1-c5d8a41b317f@kernel.org
+      - 40771facd25a "mm/huge_memory: separate out CONFIG_PERSISTENT_HUGE_ZERO_FOLIO logic (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-hotfixes-unstable
+        - added "Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-2-c5d8a41b317f@kernel.org"
+        - added "Cc: <stable@vger.kernel.org>"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260728-fix-refcounted-huge-zero-v1-1-3f261f5447b4@kernel.org"
+        - dropped "Cc: Xueyuan Chen <xueyuan.chen@vivo.com>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: <stable@vger.kernel.org> # 6.18.x: dependency of subsequent fix"
+        - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-2-c5d8a41b317f@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 25 -> 25 commits (no change)
+- mm-unstable: 25 -> 26 commits
   - series: 4 (23) -> 4 (23) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 6 -> 8 commits
-    - reviewer, reviewer: 10 -> 8 commits
+    - no role, reviewer: 8 -> 8 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, reviewer: 8 -> 8 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 3 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, nobody: 0 -> 2 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/huge_memory: fix huge_zero_pfn race". (2)
-      - 68f322ac7d50 "mm/huge_memory: separate out CONFIG_PERSISTENT_HUGE_ZERO_FOLIO logic (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260728-fix-refcounted-huge-zero-v1-1-3f261f5447b4@kernel.org
-      - 3214c520c907 "mm/huge_memory: fix huge_zero_pfn race (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260728-fix-refcounted-huge-zero-v1-2-3f261f5447b4@kernel.org
   - changed commits
-    - 9cd4999a7ef2 "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
+    - 882e3cd657aa "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
       - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/20260728204636.20998-2-jakovnovak30@gmail.com
+      - branch: mm-new -> mm-unstable
+      - added "Link: https://lore.kernel.org/20260730204724.16912-1-jakovnovak30@gmail.com"
+      - dropped "Link: https://lore.kernel.org/20260728204636.20998-2-jakovnovak30@gmail.com"
+      - Link: https://lore.kernel.org/20260730204724.16912-1-jakovnovak30@gmail.com
+- mm-new: 3 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

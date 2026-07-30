@@ -4,55 +4,30 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 2 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 2 commits
-  - changed commits
-    - series "mm/page_owner: add per-fd filter infrastructure for print_mode and NUMA filtering", v12. (4)
-      - e2c75342c24f "mm/page_owner: document page_owner filter (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - added "[rdunlap@infradead.org: avoid docs build warning]"
-        - added "Link: : https://lore.kernel.org/20260708213548.469155-1-rdunlap@infradead.org"
-        - added "Signed-off-by: Randy Dunlap <rdunlap@infradead.org>"
-        - Link: : https://lore.kernel.org/20260708213548.469155-1-rdunlap@infradead.org
-        - Link: https://lore.kernel.org/20260707115411.1714314-5-zhen.ni@easystack.cn
-    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
-      - 7e250334158d "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time (11/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260612035903.2468601-13-songmuchun@bytedance.com
-- mm-unstable: 43 -> 41 commits
-  - series: 6 (30) -> 6 (28)
-    - no role, nobody: 15 -> 14 commits
-    - no role, no role : 16 -> 15 commits
-    - no role, reviewer: 4 -> 5 commits
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, reviewer: 1 -> 0 commits
+- mm-stable: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+- mm-unstable: 41 -> 42 commits
+  - series: 6 (28) -> 6 (28) (no change)
+    - no role, nobody: 14 -> 14 commits (no change)
+    - no role, no role : 15 -> 15 commits (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, maintainer: 2 -> 3 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/damon: five misc fixups" (5)
-      - 87269f4ed257 "Docs/{admin-guide,mm}/damon: fix DAMON documentation details (2/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - dropped "Cc: SJ Park <sj@kkernel.org>"
-        - Link: https://lore.kernel.org/20260629145538.134832-4-sj@kernel.org
-    - 2e0c36e540a1 "selftests/mm: fix gup_longterm EINVAL error message"
-      - Authored by no role player, reviewed by no role player
+    - aee5d1494f39 "selftests/mm: unpoison pages in memory-failure teardown"
+      - Authored by no role player, reviewed by a maintainer
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/23557F4CB8CF36FF+20260724074603.1479243-1-zhaozhengzhuo@uniontech.com
-  - dropped commits
-    - 0ce7e18795bf "mm/page_owner: avoid docs build warning"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260708213548.469155-1-rdunlap@infradead.org
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-  - new commits
-    - 36b919a45e7e "selftests/mm: unpoison pages in memory-failure teardown"
-      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Acked-by: Miaohe Lin <linmiaohe@huawei.com>"
+      - dropped "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
       - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

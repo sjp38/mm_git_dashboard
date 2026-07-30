@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 541d45f91555 "mm/filemap: __filemap_add_folio() restore index before retrying"
+    - 00e90ad22f50 "mm/filemap: __filemap_add_folio() restore index before retrying"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/562fbfa6-dd6d-0b6a-2461-ed2ff1173bc8@google.com
 - mm-stable: 3 total, 1 (2) series, 1 non-series commits
@@ -29,31 +29,31 @@
     - no role, maintainer: 1 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-    - f9b5ec9ed2ca "mm: fix mapping_seek_hole_data() overflow on last page"
+    - 2b43152a5666 "mm: fix mapping_seek_hole_data() overflow on last page"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260630125047.703170-1-yanzhen20011121@163.com
-    - 766c12b5b0eb "mm: remove wb_writeout_inc"
+    - 67a57bd369ce "mm: remove wb_writeout_inc"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260710051052.1839523-1-hch@lst.de
-      - c890a219cef3 "mm: introduce and use linear_page_delta()" (16/33)
+      - cd7445eeacab "mm: introduce and use linear_page_delta()" (16/33)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-17-2a5aa403d977@kernel.org
-      - 9c2f35ad1538 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 0c7273ecb664 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-      - 3dc45258b917 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - 544442714e67 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-      - 1f7b75827f7e "mm: introduce linear_virt_page_index()" (1/15)
+      - 113dfaf25e3f "mm: introduce linear_virt_page_index()" (1/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-2-2d549757a76f@kernel.org
-      - 5d2476033de4 "mm: introduce and use linear_folio_page_index()" (7/15)
+      - 12b0cb263dc1 "mm: introduce and use linear_folio_page_index()" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
-      - 8c519739e363 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
+      - ab15b83139ae "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
-      - c418e17ce6f1 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (12/15)
+      - 1ef78e7e6539 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (12/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-13-2d549757a76f@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

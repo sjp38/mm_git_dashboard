@@ -3,54 +3,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 4 commits
-  - series: 0 (0) -> 1 (4)
-    - no role, no role : 0 -> 4 commits
-  - changed commits
-    - series "mm/zsmalloc: reduce lock contention in zs_free()", v6. (4)
-      - 9909b088b1f0 "mm/zsmalloc: encode class index in obj value for lockless class lookup (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - added "[akpm@linux-foundation.org: fix obj_to_class_idx() defined but not used, remove duplicated #ifdef]"
-        - Link: https://lore.kernel.org/20260626015003.2965881-1-haowenchao22@gmail.com
-        - Link: https://lore.kernel.org/20260626015003.2965881-2-haowenchao22@gmail.com
-      - 59e88952a827 "mm/zsmalloc: drop pool->lock from zs_free on 64-bit systems (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - added "[akpm@linux-foundation.org: fix obj_to_class_idx() warning yet again]"
-        - added "[akpm@linux-foundation.org: build fix]"
-        - added "[baohua@kernel.org: update the comment about pool lock]"
-        - added "Link: : https://lore.kernel.org/20260725035733.53241-1-baohua@kernel.org"
-        - Link: : https://lore.kernel.org/20260725035733.53241-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/20260626015003.2965881-3-haowenchao22@gmail.com
-      - 7ef28e8b8142 "mm/zsmalloc: drop class lock before freeing zspage (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260626015003.2965881-4-haowenchao22@gmail.com
-      - 0abea609f37e "mm/zsmalloc: document free_zspage helper variants (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260626015003.2965881-5-haowenchao22@gmail.com
-- mm-unstable: 8 -> 0 commits
-  - series: 1 (4) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 4 -> 0 commits
-    - maintainer, nobody: 3 -> 0 commits
-  - dropped commits
-    - series "mm/zsmalloc: reduce lock contention in zs_free()", v6. (4)
-      - 908021081243 "mm-zsmalloc-encode-class-index-in-obj-value-for-lockless-class-lookup-fix (1/4)"
-        - Authored by a maintainer, reviewed by nobody
-      - b1aeb2e699e5 "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix (3/4)"
-        - Authored by a maintainer, reviewed by nobody
-    - 1e3556811b88 "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/202607020359.FMDmPwjF-lkp@intel.com
-    - 6d18dbf8e90f "mm-zsmalloc-drop-pool-lock-from-zs_free-on-64-bit-systems-fix-2"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260725035733.53241-1-baohua@kernel.org
-- mm-new: 1 -> 1 commits (no change)
+- mm-stable: 4 -> 4 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, no role : 4 -> 4 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 6dab28cb17d6 "mm/zsmalloc: fix release order of locks in zs_page_migrate()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260728055333.421080-1-richardycc@google.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

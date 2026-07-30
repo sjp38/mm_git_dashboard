@@ -3,48 +3,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 4 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, maintainer: 0 -> 4 commits
-  - changed commits
-    - series "mm: drop "sub" prefix from various places". (2)
-      - 3ade88423958 "mm/swap: rename subpage->page in folio_dup_swap/folio_put_swap (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260623125723.2503832-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260623125723.2503832-2-dev.jain@arm.com
-    - 567c26a13257 "include/linux/swap.h: remove unused leftovers"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/68591daf0d679e5a0072d63751f187d14613e2b0.1781146877.git.ritesh.list@gmail.com
-    - baff6d2d2708 "mm: constify oom_control, scan_control, and alloc_context nodemask"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-    - a4519e5b648a "mm/swap_state: remove unnecessary lru_add_drain() from readahead"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260608143242.2869392-1-usama.arif@linux.dev
-      - Link: https://lore.kernel.org/all/dca2824e8e88e826c6b260a831d79089b5b9c79d.camel@surriel.com/T/#u [1]
-- mm-unstable: 18 -> 15 commits
+- mm-stable: 4 -> 4 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-unstable: 15 -> 15 commits (no change)
   - series: 3 (13) -> 3 (13) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 7 -> 4 commits
+    - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2)
-      - 57ac4a8bfab3 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev
-- mm-new: 2 -> 1 commits
-  - series: 1 (1) -> 0 (0)
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

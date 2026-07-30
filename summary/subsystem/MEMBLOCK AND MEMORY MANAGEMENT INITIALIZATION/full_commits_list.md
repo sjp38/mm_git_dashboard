@@ -37,26 +37,26 @@
     - no role, reviewer: 2 commits
     - no role, maintainer: 2 commits
   - full commits list
-      - dfd2a2144554 "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug" (8/10)
+      - d31ae259e65f "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug" (8/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
         - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
-      - 9ac4e4a2ab4e "mm: split out internal page_alloc.h" (3/18)
+      - 4aaab27d835f "mm: split out internal page_alloc.h" (3/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - e9348e8df14e "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - a576db5358cd "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - 7ce35b34b8c8 "memblock tests: split stubfs from internal.h to mm_init.h" (1/3)
+      - d0be5cafb9ee "memblock tests: split stubfs from internal.h to mm_init.h" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
-      - 0f0dfdeed81d "mm: split out sparse declarations from internal.h" (2/3)
+      - b38f5bd4cc39 "mm: split out sparse declarations from internal.h" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-2-695631425968@kernel.org
-    - 6af3067f7ff6 "mm: split out vmalloc declarations from internal.h"
+    - ade1fdf42a55 "mm: split out vmalloc declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

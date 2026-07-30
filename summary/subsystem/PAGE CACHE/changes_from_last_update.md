@@ -4,29 +4,15 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 3 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, nobody: 0 -> 1 commits
-    - no role, maintainer: 0 -> 2 commits
-  - changed commits
-    - series "mm/filemap: reduce unnecessary xarray lookups". (2)
-      - e1c345582c97 "mm/filemap: reduce unnecessary xarray lookups when read cached pages (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260620062446.351475-2-chizhiling@163.com
-      - 32cd1afeca96 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig() (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260620062446.351475-3-chizhiling@163.com
-    - 375c63b64958 "writeback.h: fix a typo in the wbc_init_bio() description"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260615162244.2170866-2-willy@infradead.org
-- mm-unstable: 12 -> 9 commits
-  - series: 1 (9) -> 0 (7)
-    - no role, nobody: 7 -> 6 commits
+- mm-stable: 3 -> 3 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+- mm-unstable: 9 -> 9 commits (no change)
+  - series: 0 (7) -> 0 (7) (no change)
+    - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

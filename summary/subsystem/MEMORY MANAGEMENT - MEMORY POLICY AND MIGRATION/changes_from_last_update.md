@@ -4,74 +4,19 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 6 commits
-  - series: 0 (0) -> 1 (6)
-    - no role, reviewer: 0 -> 6 commits
-  - changed commits
-    - series "mm/page_owner: misc cleanups", v6. (6)
-      - 7eeed888c99a "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason (1/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260714015117.78351-3-ye.liu@linux.dev
-      - c95dc0a84b4c "mm: use enum migrate_reason instead of int for migration reason parameters (2/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
-    - series "mm: convert to walk_page_range_vma() to eliminate find_vma()", v2. (4)
-      - 9bde2240ec35 "mm: migrate_device: use walk_page_range_vma() in migrate_vma_collect() (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260618092845.3905740-5-wangkefeng.wang@huawei.com
-    - series "mm/migrate: preparatory cleanups for batch copy and offload", v2. (3)
-      - 9aaf5aa2444f "mm/migrate: rename page to folio leftovers (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-0-d9e8f17130b1@amd.com
-        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-1-d9e8f17130b1@amd.com
-        - Link: https://lore.kernel.org/all/20260428155043.39251-2-shivankg@amd.com [1]
-      - 8d7625771506 "mm/migrate: fix stale list name in migrate_folios_move() comment (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-2-d9e8f17130b1@amd.com
-      - 3dd5a633a094 "mm/migrate: use migrate_info field instead of private (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - added "[rdunlap@infradead.org: add missing kernel-doc for @migrate_info]"
-        - added "Link: : https://lore.kernel.org/20260717022146.1290242-1-rdunlap@infradead.org"
-        - added "Signed-off-by: Randy Dunlap <rdunlap@infradead.org>"
-        - Link: : https://lore.kernel.org/20260717022146.1290242-1-rdunlap@infradead.org
-        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-3-d9e8f17130b1@amd.com
-- mm-unstable: 21 -> 15 commits
-  - series: 3 (18) -> 2 (13)
-    - no role, nobody: 2 -> 1 commits
+- mm-stable: 6 -> 6 commits (no change)
+  - series: 1 (6) -> 1 (6) (no change)
+    - no role, reviewer: 6 -> 6 commits (no change)
+- mm-unstable: 15 -> 15 commits (no change)
+  - series: 2 (13) -> 2 (13) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 10 -> 7 commits
+    - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 4 -> 2 commits
+    - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
-      - 237f2c587d84 "mm/migrate_device: pin large folios before splitting (7/10)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "[usama.arif@linux.dev: condense comment about folio reference]"
-        - added "Link: : https://lore.kernel.org/87bbf335-648f-4065-abc8-3eaab5a3beeb@linux.dev"
-        - Link: : https://lore.kernel.org/87bbf335-648f-4065-abc8-3eaab5a3beeb@linux.dev
-        - Link: https://lore.kernel.org/20260701140638.840773-1-usama.arif@linux.dev
-        - Link: https://sashiko.dev/#/patchset/20260630164143.1595669-1-usama.arif%40linux.dev
-    - ed30541bb815 "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260727-kcompact-v1-1-bdfefddd6874@debian.org
-      - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
-  - dropped commits
-    - fbbe1ff42cc2 "condense comment about folio reference"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/87bbf335-648f-4065-abc8-3eaab5a3beeb@linux.dev
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

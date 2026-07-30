@@ -3,61 +3,29 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 4 commits
-  - series: 0 (0) -> 1 (4)
-    - no role, reviewer: 0 -> 3 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "mm: drop "sub" prefix from various places". (2)
-      - 8a28b50d6fbf "mm/mprotect: drop 'sub' from batching context (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260623125723.2503832-3-dev.jain@arm.com
-    - series "mm: convert to walk_page_range_vma() to eliminate find_vma()", v2. (4)
-      - 8fb1ad47dced "mm: mincore: use walk_page_range_vma() in do_mincore() (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - added "[akpm@linux-foundation.org: simplify comment, per Pedro]"
-        - added "Link: : https://lore.kernel.org/ajP9bQhmvR9OX0VE@pedro-suse"
-        - Link: : https://lore.kernel.org/ajP9bQhmvR9OX0VE@pedro-suse
-        - Link: https://lore.kernel.org/20260618092845.3905740-1-wangkefeng.wang@huawei.com
-        - Link: https://lore.kernel.org/20260618092845.3905740-2-wangkefeng.wang@huawei.com
-      - 334509572d01 "mm: mprotect: use walk_page_range_vma() in mprotect_fixup() (1/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260618092845.3905740-3-wangkefeng.wang@huawei.com
-      - d4c63a378b01 "mm: mlock: use walk_page_range_vma() in mlock_vma_pages_range() (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260618092845.3905740-4-wangkefeng.wang@huawei.com
-- mm-unstable: 75 -> 69 commits
-  - series: 4 (67) -> 3 (63)
+- mm-stable: 4 -> 4 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 69 -> 69 commits (no change)
+  - series: 3 (63) -> 3 (63) (no change)
     - no role, nobody: 14 -> 14 commits (no change)
     - no role, no role : 10 -> 10 commits (no change)
-    - no role, reviewer: 9 -> 6 commits
-    - no role, maintainer: 1 -> 0 commits
+    - no role, reviewer: 6 -> 6 commits (no change)
     - reviewer, no role : 6 -> 6 commits (no change)
     - reviewer, reviewer: 8 -> 8 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 3 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 11 -> 11 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-  - changed commits
-    - series "Fix incorrect access of hugetlb pte entries", v3. (5)
-      - 4f4a10b0c0ba "mm/mprotect: use huge_ptep_get() for hugetlb (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - added "[akpm@linux-foundation.org: s/EACCESS/EACCES/]"
-        - Link: https://lore.kernel.org/20260703114202.365553-7-dev.jain@arm.com
-  - dropped commits
-    - series "mm: convert to walk_page_range_vma() to eliminate find_vma()", v2. (4)
-      - 409c496613b6 "mm-mincore-use-walk_page_range_vma-in-do_mincore-fix (1/4)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/ajP9bQhmvR9OX0VE@pedro-suse
-    - 71ce83fd8ca2 "mm-mprotect-use-huge_ptep_get-for-hugetlb-fix"
-      - Authored by a maintainer, reviewed by nobody
-- mm-new: 1 -> 1 commits (no change)
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 19446452376d "mm: use proper PTE accessor in move_ptes()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260720141633.501799-1-agordeev@linux.ibm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

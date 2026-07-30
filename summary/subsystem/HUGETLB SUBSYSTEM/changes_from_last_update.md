@@ -4,80 +4,38 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 11 commits
-  - series: 0 (0) -> 1 (11)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 6 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 3 commits
-  - changed commits
-    - series "mm/page_owner: misc cleanups", v6. (6)
-      - c95dc0a84b4c "mm: use enum migrate_reason instead of int for migration reason parameters (2/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
-    - series "mm: Refactor bootmem gigantic hugepage allocation", v4. (19)
-      - c0caeceb0c38 "mm/hugetlb: fix boot panic with CONFIG_DEBUG_VM and HVO bootmem pages (0/19)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260612035903.2468601-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260612035903.2468601-2-songmuchun@bytedance.com
-      - 6e25c6a9c7ef "mm/hugetlb_vmemmap: fix __hugetlb_vmemmap_optimize_folios() (1/19)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260612035903.2468601-3-songmuchun@bytedance.com
-      - b1b7c045e808 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier (3/19)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260612035903.2468601-5-songmuchun@bytedance.com
-      - 7e250334158d "mm/hugetlb_cma: validate hugetlb CMA range by zone at reserve time (11/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260612035903.2468601-13-songmuchun@bytedance.com
-      - 27ca02e689b2 "mm/hugetlb: refactor early boot gigantic hugepage allocation (12/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260612035903.2468601-14-songmuchun@bytedance.com
-      - 20549ccf4da4 "mm/hugetlb: free cross-zone bootmem gigantic pages after allocation (13/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260612035903.2468601-15-songmuchun@bytedance.com
-      - 51d73513dddd "mm/hugetlb_vmemmap: move bootmem HVO setup to early init (14/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260612035903.2468601-16-songmuchun@bytedance.com
-      - 4753a8220a80 "mm/hugetlb: remove obsolete bootmem cross-zone checks (15/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260612035903.2468601-17-songmuchun@bytedance.com
-      - ec1adc14c174 "mm/sparse-vmemmap: remove sparse_vmemmap_init_nid_late() (16/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260612035903.2468601-18-songmuchun@bytedance.com
-      - 86693837593d "mm/hugetlb: remove unused bootmem cma field (17/19)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260612035903.2468601-19-songmuchun@bytedance.com
-- mm-unstable: 38 -> 26 commits
-  - series: 4 (32) -> 3 (21)
-    - no role, nobody: 7 -> 5 commits
-    - no role, no role : 14 -> 8 commits
-    - no role, reviewer: 1 -> 2 commits
-    - no role, maintainer: 10 -> 7 commits
-    - reviewer, reviewer: 5 -> 3 commits
+- mm-stable: 11 -> 11 commits (no change)
+  - series: 1 (11) -> 1 (11) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 6 -> 6 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-unstable: 26 -> 27 commits
+  - series: 3 (21) -> 3 (21) (no change)
+    - no role, nobody: 5 -> 6 commits
+    - no role, no role : 8 -> 8 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 7 -> 7 commits (no change)
+    - reviewer, reviewer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm/rmap: Refactor try_to_unmap_one", v4. (5)
+      - 9bd1a3c935e4 "mm/rmap: add try_to_unmap_poisoned_hugetlb_one (1/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260730094559.418003-3-dev.jain@arm.com
   - changed commits
-    - 497382129fe8 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
+    - 5260fb02670d "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
       - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-new
-      - added "Link: https://lore.kernel.org/20260729163148.3271755-1-souravpanda@google.com"
-      - dropped "Link: https://lore.kernel.org/20260628190155.3655895-1-souravpanda@google.com"
-      - dropped "Reported-by: kernel test robot <lkp@intel.com>"
-      - dropped "Closes: https://lore.kernel.org/oe-kbuild-all/202606262023.IKUrn01I-lkp@intel.com/"
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260729163148.3271755-1-souravpanda@google.com
+  - dropped commits
+    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
+      - cdb16a4c5083 "mm/rmap: add try_to_unmap_hugetlb_one (1/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260713050050.1017741-3-dev.jain@arm.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

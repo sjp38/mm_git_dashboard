@@ -4,34 +4,16 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 1 commits
+- mm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - baff6d2d2708 "mm: constify oom_control, scan_control, and alloc_context nodemask"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260609002919.3967782-1-gourry@gourry.net
-- mm-unstable: 15 -> 16 commits
-  - series: 3 (12) -> 3 (14)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 16 -> 16 commits (no change)
+  - series: 3 (14) -> 3 (14) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 3 -> 4 commits
-    - no role, maintainer: 10 -> 11 commits
-    - reviewer, reviewer: 1 -> 0 commits
-  - changed commits
-    - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2)
-      - 6a17afd8239d "mm: vmscan: fix node reclaim ignoring swappiness parameter (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723032434.2016749-3-ridong.chen@linux.dev
-    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v4. (2)
-      - 0e959217c40b "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev
-- mm-new: 2 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, maintainer: 2 -> 0 commits
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, maintainer: 11 -> 11 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
