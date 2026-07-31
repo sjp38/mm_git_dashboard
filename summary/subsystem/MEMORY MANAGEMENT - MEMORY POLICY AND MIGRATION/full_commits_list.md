@@ -7,9 +7,12 @@
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260717064502.1980173-3-npache@redhat.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 6 total, 1 (6) series, 0 non-series commits
+- mm-stable: 14 total, 2 (14) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 6 commits
+    - no role, no role : 1 commits
+    - no role, reviewer: 10 commits
+    - no role, maintainer: 1 commits
+    - reviewer, reviewer: 2 commits
   - full commits list
       - 7eeed888c99a "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason" (1/6)
         - Authored by no role player, reviewed by a reviewer
@@ -33,69 +36,67 @@
         - Authored by no role player, reviewed by a reviewer
         - Link: : https://lore.kernel.org/20260717022146.1290242-1-rdunlap@infradead.org
         - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-3-d9e8f17130b1@amd.com
-- mm-unstable: 15 total, 2 (13) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 3 commits
-    - no role, reviewer: 7 commits
-    - no role, maintainer: 1 commits
-    - reviewer, reviewer: 2 commits
-    - reviewer, maintainer: 1 commits
-  - full commits list
     - series "mm: preparatory patches for PMD level swap entries", v2. (6 commits)
-      - f11ac559ffbd "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
+      - 608c74559718 "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260706114320.1643046-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260706114320.1643046-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
         - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t [2]
         - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
-      - 8eed3ed94333 "mm/migrate_device: move softleaf_to_folio() inside device-private branch" (4/6)
+      - 1f5a3d1afa5d "mm/migrate_device: move softleaf_to_folio() inside device-private branch" (4/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260706114320.1643046-6-usama.arif@linux.dev
-      - 84fb1067b296 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
+      - d547b1001755 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
-      - 14f46f0c6a24 "mm/migrate_device: pin large folios before splitting" (7/10)
+      - 78b0ca26d00d "mm/migrate_device: pin large folios before splitting" (7/10)
         - Authored by no role player, reviewed by a reviewer
         - Link: : https://lore.kernel.org/87bbf335-648f-4065-abc8-3eaab5a3beeb@linux.dev
         - Link: https://lore.kernel.org/20260701140638.840773-1-usama.arif@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260630164143.1595669-1-usama.arif%40linux.dev
-      - bd65e0104c8e "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol()" (1/6)
+      - 66a4e9e11e43 "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol()" (1/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
-      - 4aaab27d835f "mm: split out internal page_alloc.h" (3/18)
+      - d0850de699b0 "mm: split out internal page_alloc.h" (3/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-      - 4f7d8ab341b6 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof()" (4/18)
+      - 2fc4c1d51d87 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof()" (4/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
-      - bb2d0877f643 "mm/migrate: use huge_ptep_get() in remove_migration_pte()" (2/5)
+      - ac1ec50d71b9 "mm/migrate: use huge_ptep_get() in remove_migration_pte()" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703114202.365553-5-dev.jain@arm.com
-    - c5233fb9ade4 "mm: mempolicy: fix automatic numa balancing for shmem"
+- mm-unstable: 7 total, 1 (5) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 3 commits
+    - reviewer, maintainer: 1 commits
+  - full commits list
+    - d63ae4f1c42d "mm: mempolicy: fix automatic numa balancing for shmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
-      - 3fa9c5aaee0a "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 51502332657e "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 4254b9b3f0b7 "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - aaa874015354 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - 0c7273ecb664 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 5f9446081e48 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
     - series "mm: handle device-private PMDs in walk callbacks", v3. (3 commits)
-      - 75a1a86cdad5 "mm/mempolicy: skip non-present PMDs when queueing folios" (0/3)
+      - a0e09f7ffb3e "mm/mempolicy: skip non-present PMDs when queueing folios" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710105557.1987433-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260710105557.1987433-2-usama.arif@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
-      - 12b0cb263dc1 "mm: introduce and use linear_folio_page_index()" (7/15)
+      - c363c806a0f9 "mm: introduce and use linear_folio_page_index()" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
-    - c9cdad933ec8 "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
+    - 8e2fc40e44a0 "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260727-kcompact-v1-1-bdfefddd6874@debian.org
       - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]

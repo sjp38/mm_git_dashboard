@@ -4,38 +4,74 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 11 -> 11 commits (no change)
-  - series: 1 (11) -> 1 (11) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-- mm-unstable: 26 -> 27 commits
-  - series: 3 (21) -> 3 (21) (no change)
-    - no role, nobody: 5 -> 6 commits
-    - no role, no role : 8 -> 8 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 7 -> 7 commits (no change)
+- mm-stable: 11 -> 21 commits
+  - series: 1 (11) -> 3 (20)
+    - no role, nobody: 1 -> 4 commits
+    - no role, no role : 6 -> 7 commits
+    - no role, reviewer: 1 -> 3 commits
+    - no role, maintainer: 3 -> 7 commits
+  - changed commits
+    - bd1e4c4aa469 "mm/hugetlb: avoid unnecessary TLB flush for empty folio list in vmemmap optimize"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260701053422.3664813-1-guanwentao@uniontech.com
+      - Link: https://lore.kernel.org/20260630113857.3319612-1-guanwentao@uniontech.com
+    - series "Open HugeTLB allocation routine for more generic use", v4. (6)
+      - 88819619688c "mm: hugetlb: consolidate interpretation of gbl_chg within alloc_hugetlb_folio() (0/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-0-d53cefcccf34@google.com
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-1-d53cefcccf34@google.com
+        - Link: https://lore.kernel.org/all/cover.1747264138.git.ackerleytng@google.com/T/ [1]
+        - Link: https://github.com/googleprodkernel/linux-cc/tree/wip-gmem-conversions-hugetlb-restructuring-12-08-25 [2]
+        - Link: https://lore.kernel.org/all/agqaUcVp_hwH-VXr@localhost.localdomain/ [3]
+        - Link: https://sashiko.dev/#/patchset/20260518-hugetlb-open-up-v3-0-e14b302477f8@google.com [4]
+      - 66a4e9e11e43 "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
+      - a492abe28bec "mm: hugetlb: move mpol interpretation out of dequeue_hugetlb_folio_vma() (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-3-d53cefcccf34@google.com
+      - 564b2eeeb9ad "mm: hugetlb: use error variable in alloc_hugetlb_folio (3/6)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-4-d53cefcccf34@google.com
+      - 177e1cbbb581 "mm: hugetlb: move mem_cgroup_charge_hugetlb() earlier in allocation (4/6)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-5-d53cefcccf34@google.com
+      - 5737df3826de "mm: hugetlb: refactor out hugetlb_alloc_folio() (5/6)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-6-d53cefcccf34@google.com
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - d0850de699b0 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+      - 2fc4c1d51d87 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof() (4/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
+    - series "Fix incorrect access of hugetlb pte entries", v3. (5)
+      - f5407e9b697c "mm/rmap: use huge_ptep_get() in try_to_unmap_one() (0/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703114202.365553-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
+- mm-unstable: 27 -> 17 commits
+  - series: 3 (21) -> 1 (12)
+    - no role, nobody: 6 -> 3 commits
+    - no role, no role : 8 -> 7 commits
+    - no role, reviewer: 2 -> 0 commits
+    - no role, maintainer: 7 -> 3 commits
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/rmap: Refactor try_to_unmap_one", v4. (5)
-      - 9bd1a3c935e4 "mm/rmap: add try_to_unmap_poisoned_hugetlb_one (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260730094559.418003-3-dev.jain@arm.com
-  - changed commits
-    - 5260fb02670d "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260729163148.3271755-1-souravpanda@google.com
-  - dropped commits
-    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
-      - cdb16a4c5083 "mm/rmap: add try_to_unmap_hugetlb_one (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260713050050.1017741-3-dev.jain@arm.com
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

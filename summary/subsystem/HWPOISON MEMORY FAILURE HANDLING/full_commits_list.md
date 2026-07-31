@@ -1,55 +1,55 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 1 total, 0 (1) series, 0 non-series commits
+- mm-stable: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
+    - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
       - 253ed912fe65 "mm/memory-failure: remove redundant initialization for hw_memory_failure" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260623114743.4565-3-igorpetindev@gmail.com
-- mm-unstable: 11 total, 1 (10) series, 1 non-series commits
+      - d0850de699b0 "mm: split out internal page_alloc.h" (3/18)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+- mm-unstable: 10 total, 1 (9) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, reviewer: 1 commits
     - no role, maintainer: 5 commits
     - reviewer, no role : 1 commits
     - reviewer, reviewer: 3 commits
   - full commits list
-      - 4aaab27d835f "mm: split out internal page_alloc.h" (3/18)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
     - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (5 commits)
-      - f93258c454b9 "mm/memory-failure: drop dead error_states[] entry for reserved pages" (0/5)
+      - 263934574960 "mm/memory-failure: drop dead error_states[] entry for reserved pages" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-0-c6ed5b62eea2@debian.org
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-1-c6ed5b62eea2@debian.org
-      - 5509efbaf538 "mm/memory-failure: surface unhandlable kernel pages as -ENOTRECOVERABLE" (1/5)
+      - df49027ff58d "mm/memory-failure: surface unhandlable kernel pages as -ENOTRECOVERABLE" (1/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-2-c6ed5b62eea2@debian.org
-      - 38c78f1cbfcc "mm/memory-failure: report MF_MSG_KERNEL for unrecoverable kernel pages" (2/5)
+      - c7f34608f279 "mm/memory-failure: report MF_MSG_KERNEL for unrecoverable kernel pages" (2/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-3-c6ed5b62eea2@debian.org
-      - 3da3f98d5469 "mm/memory-failure: add panic option for unrecoverable pages" (3/5)
+      - 0e64470e60c3 "mm/memory-failure: add panic option for unrecoverable pages" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-4-c6ed5b62eea2@debian.org
-      - 46d0edf465c1 "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
+      - 30ce5078c4ae "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - 5b8e5429a688 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
+      - 797a8fc22a31 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - 4ca4a3202028 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma" (8/33)
+      - 024490ff8327 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma" (8/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
-      - 082a78cfb23b "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
+      - 1658d818a8dc "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
-      - ae7a2fdcdcf2 "mm: introduce and use vma_filebacked_address()" (4/15)
+      - be1648952b65 "mm: introduce and use vma_filebacked_address()" (4/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org
-    - aee5d1494f39 "selftests/mm: unpoison pages in memory-failure teardown"
+    - 81049d74b189 "selftests/mm: unpoison pages in memory-failure teardown"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

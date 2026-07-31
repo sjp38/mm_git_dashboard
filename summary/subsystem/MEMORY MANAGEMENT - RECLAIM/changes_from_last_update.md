@@ -4,14 +4,26 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 16 -> 16 commits (no change)
-  - series: 3 (14) -> 3 (14) (no change)
+- mm-stable: 1 -> 3 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 2 commits
+  - changed commits
+    - afa433c327fa "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - d0850de699b0 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+- mm-unstable: 16 -> 14 commits
+  - series: 3 (14) -> 3 (13)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 11 -> 11 commits (no change)
+    - no role, reviewer: 4 -> 3 commits
+    - no role, maintainer: 11 -> 10 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

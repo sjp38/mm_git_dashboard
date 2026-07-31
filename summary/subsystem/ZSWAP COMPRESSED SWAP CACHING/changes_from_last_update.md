@@ -5,24 +5,12 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 4 commits
-  - series: 0 (1) -> 1 (3)
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 3 commits
-  - changed commits
-    - series "mm/zswap: Fixes and improves the zswap shrink", v3. (2)
-      - cc816d85b3cb "mm/zswap: fix global shrinker when memory cgroup is disabled (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260729084206.77793-1-jiahao.kernel@gmail.com
-        - Link: https://lore.kernel.org/20260729084206.77793-2-jiahao.kernel@gmail.com
-      - e418bf7f4307 "mm/zswap: support batch writeback in shrink_memcg() (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260729084206.77793-3-jiahao.kernel@gmail.com
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, maintainer: 2 -> 0 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

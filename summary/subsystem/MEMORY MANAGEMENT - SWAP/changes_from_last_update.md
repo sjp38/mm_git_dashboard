@@ -3,17 +3,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 4 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
+- mm-stable: 4 -> 5 commits
+  - series: 1 (1) -> 1 (2)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-unstable: 15 -> 15 commits (no change)
-  - series: 3 (13) -> 3 (13) (no change)
+    - reviewer, reviewer: 0 -> 1 commits
+  - changed commits
+    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
+      - d547b1001755 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES (5/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
+- mm-unstable: 15 -> 14 commits
+  - series: 3 (13) -> 3 (12)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

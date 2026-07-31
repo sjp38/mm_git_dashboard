@@ -4,17 +4,36 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 3 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
+- mm-stable: 3 -> 6 commits
+  - series: 0 (1) -> 0 (3)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 20 -> 20 commits (no change)
-  - series: 4 (18) -> 4 (18) (no change)
+    - no role, no role : 1 -> 2 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 2 commits
+  - changed commits
+    - afa433c327fa "mm: vmscan: remove the redundant FOLIOREF_RECLAIM_CLEAN logic"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/def70a713e10bcbdf3b9fccc2139ecc07b64f2cb.1782715791.git.baolin.wang@linux.alibaba.com
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - 67a06fdfbf6f "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: : https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev
+        - Link: : https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com
+        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - d0850de699b0 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+- mm-unstable: 20 -> 17 commits
+  - series: 4 (18) -> 4 (16)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 11 -> 11 commits (no change)
+    - no role, no role : 3 -> 2 commits
+    - no role, reviewer: 5 -> 4 commits
+    - no role, maintainer: 11 -> 10 commits
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)

@@ -2,57 +2,53 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 3 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 1 commits
+- mm-hotfixes-unstable: 3 -> 3 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+- mm-stable: 0 -> 5 commits
+  - series: 0 (0) -> 1 (5)
+    - no role, reviewer: 0 -> 2 commits
+    - reviewer, reviewer: 0 -> 3 commits
   - changed commits
-    - series "mm/huge_memory: fix huge_zero_pfn race", v2. (2)
-      - 1cabd4b5c2b9 "mm/huge_memory: fix huge_zero_pfn race (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-hotfixes-unstable
-        - added "Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-1-c5d8a41b317f@kernel.org"
-        - added "Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-0-c5d8a41b317f@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: <stable@vger.kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260728-fix-refcounted-huge-zero-v1-2-3f261f5447b4@kernel.org"
-        - dropped "Cc: <stable@vger.kernel.org> # 6.18.x: dependent on prior commit"
-        - dropped "Cc: Xueyuan Chen <xueyuan.chen@vivo.com>"
-        - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-0-c5d8a41b317f@kernel.org
-        - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-1-c5d8a41b317f@kernel.org
-      - 40771facd25a "mm/huge_memory: separate out CONFIG_PERSISTENT_HUGE_ZERO_FOLIO logic (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-hotfixes-unstable
-        - added "Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-2-c5d8a41b317f@kernel.org"
-        - added "Cc: <stable@vger.kernel.org>"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260728-fix-refcounted-huge-zero-v1-1-3f261f5447b4@kernel.org"
-        - dropped "Cc: Xueyuan Chen <xueyuan.chen@vivo.com>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: <stable@vger.kernel.org> # 6.18.x: dependency of subsequent fix"
-        - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-2-c5d8a41b317f@kernel.org
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 25 -> 26 commits
-  - series: 4 (23) -> 4 (23) (no change)
+    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
+      - 608c74559718 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260706114320.1643046-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t [2]
+        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
+      - a6c30b073f75 "mm/huge_memory: move softleaf_to_folio() inside migration branch (3/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-5-usama.arif@linux.dev
+      - d547b1001755 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES (5/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - d0850de699b0 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+      - a4f6c0f83d91 "mm: move __alloc_pages() to mm/page_alloc.h (13/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
+- mm-unstable: 26 -> 21 commits
+  - series: 4 (23) -> 3 (18)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 8 -> 8 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, reviewer: 8 -> 8 commits (no change)
+    - no role, reviewer: 8 -> 6 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 8 -> 5 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 882e3cd657aa "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - added "Link: https://lore.kernel.org/20260730204724.16912-1-jakovnovak30@gmail.com"
-      - dropped "Link: https://lore.kernel.org/20260728204636.20998-2-jakovnovak30@gmail.com"
-      - Link: https://lore.kernel.org/20260730204724.16912-1-jakovnovak30@gmail.com
-- mm-new: 3 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -4,28 +4,33 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-stable: 2 -> 5 commits
+  - series: 0 (0) -> 0 (1)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 15 -> 16 commits
-  - series: 3 (7) -> 3 (7) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 14 -> 15 commits
-  - new commits
-    - ad4c71e5f5d3 "mm: memcg: stop reclaim when a limit update is superseded"
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 3 commits
+  - changed commits
+    - series "mm/vmpressure: reduce CPU, memory and code overhead on cgroup v2", v3. (2)
+      - ea928e9e18da "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260630112617.1198623-3-usama.arif@linux.dev
+    - f11ff47ee9b0 "mm: memcg: reset zswap settings in css_reset"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260703063826.306878-1-jiayuan.chen@linux.dev
+      - Link: https://lore.kernel.org/20260702024827.353185-1-jiayuan.chen@linux.dev
+    - 74183a956dec "mm: memcg: reset oom_group in css_reset"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260724021805.1234583-1-guopeng.zhang@linux.dev
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260703063826.306878-2-jiayuan.chen@linux.dev
+- mm-unstable: 16 -> 13 commits
+  - series: 3 (7) -> 3 (6)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 15 -> 13 commits
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 8be806c9b5b5 "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
-      - Authored by a maintainer, reviewed by a maintainer
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - Link: https://lore.kernel.org/20260729024612.3369005-1-shakeel.butt@linux.dev
-      - Link: https://lore.kernel.org/7a4e5591f45df455e6a485fc5400989569d3d22d.camel@surriel.com/ [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

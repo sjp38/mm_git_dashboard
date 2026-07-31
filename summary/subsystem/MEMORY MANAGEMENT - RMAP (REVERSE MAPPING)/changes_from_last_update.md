@@ -3,59 +3,44 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 27 -> 27 commits (no change)
-  - series: 4 (27) -> 4 (27) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 12 -> 12 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, no role : 2 -> 2 commits (no change)
-    - reviewer, reviewer: 5 -> 5 commits (no change)
-    - maintainer, no role : 2 -> 2 commits (no change)
-  - new commits
-    - series "mm/rmap: Refactor try_to_unmap_one", v4. (5)
-      - 9bd1a3c935e4 "mm/rmap: add try_to_unmap_poisoned_hugetlb_one (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260730094559.418003-3-dev.jain@arm.com
+- mm-stable: 0 -> 5 commits
+  - series: 0 (0) -> 1 (5)
+    - no role, no role : 0 -> 3 commits
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 1 commits
   - changed commits
-    - series "mm/rmap: Refactor try_to_unmap_one", v4. (5)
-      - c32fbf22e7aa "mm/rmap: convert page -> folio for hwpoison checks (0/5)"
+    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
+      - b70705744370 "mm: extract mm_prepare_for_swap_entries() helper (1/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260730094559.418003-1-dev.jain@arm.com"
-        - added "Link: https://lore.kernel.org/20260730094559.418003-2-dev.jain@arm.com"
-        - dropped "Link: https://lore.kernel.org/20260713050050.1017741-2-dev.jain@arm.com"
-        - dropped "Link: https://lore.kernel.org/20260713050050.1017741-1-dev.jain@arm.com"
-        - Link: https://lore.kernel.org/20260730094559.418003-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260730094559.418003-2-dev.jain@arm.com
-      - ed0dbd96bbd8 "mm/rmap: refactor some code around lazyfree folio unmapping (2/5)"
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-3-usama.arif@linux.dev
+      - d547b1001755 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES (5/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
+    - series "Fix incorrect access of hugetlb pte entries", v3. (5)
+      - f5407e9b697c "mm/rmap: use huge_ptep_get() in try_to_unmap_one() (0/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703114202.365553-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
+      - 9be12ffa78cd "mm/rmap: use huge_ptep_get() in try_to_migrate_one() (1/5)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260730094559.418003-4-dev.jain@arm.com"
-        - added "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260713050050.1017741-4-dev.jain@arm.com"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260730094559.418003-4-dev.jain@arm.com
-      - d89a4c3b3642 "mm/rmap: refactor anon folio unmap in try_to_unmap_one (3/5)"
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703114202.365553-4-dev.jain@arm.com
+      - e87df0d5d696 "mm/page_vma_mapped: use huge_ptep_get() for hugetlb (3/5)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260730094559.418003-5-dev.jain@arm.com"
-        - added "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260713050050.1017741-5-dev.jain@arm.com"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260730094559.418003-5-dev.jain@arm.com
-      - 43e7946773b7 "mm/rmap: add anon folio unmap dispatcher (4/5)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260730094559.418003-6-dev.jain@arm.com"
-        - added "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260713050050.1017741-6-dev.jain@arm.com"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-        - Link: https://lore.kernel.org/20260730094559.418003-6-dev.jain@arm.com
-  - dropped commits
-    - series "mm/rmap: Refactor try_to_unmap_one", v3. (5)
-      - cdb16a4c5083 "mm/rmap: add try_to_unmap_hugetlb_one (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260713050050.1017741-3-dev.jain@arm.com
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703114202.365553-6-dev.jain@arm.com
+- mm-unstable: 27 -> 22 commits
+  - series: 4 (27) -> 3 (22)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 12 -> 9 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 2 -> 1 commits
+    - reviewer, no role : 2 -> 2 commits (no change)
+    - reviewer, reviewer: 5 -> 4 commits
+    - maintainer, no role : 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

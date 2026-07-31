@@ -4,30 +4,71 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-- mm-unstable: 41 -> 42 commits
-  - series: 6 (28) -> 6 (28) (no change)
-    - no role, nobody: 14 -> 14 commits (no change)
-    - no role, no role : 15 -> 15 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 2 -> 3 commits
-    - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 3 -> 3 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-stable: 2 -> 12 commits
+  - series: 0 (2) -> 2 (11)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 2 -> 7 commits
+    - no role, reviewer: 0 -> 2 commits
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 1 commits
   - changed commits
-    - aee5d1494f39 "selftests/mm: unpoison pages in memory-failure teardown"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Acked-by: Miaohe Lin <linmiaohe@huawei.com>"
-      - dropped "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-      - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
-- mm-new: 1 -> 0 commits
+    - series "mm/damon: five misc fixups" (5)
+      - 914a45827798 "Docs/{admin-guide,mm}/damon: fix DAMON documentation details (2/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260629145538.134832-4-sj@kernel.org
+    - series "mm/damon: update, optimize, and clean up doc, tests, and code". (11)
+      - 6eceb61256cc "Docs/mm/damon/design: update for DAMOS_QUOTA_NODE_ELIGIBLE_MEM_BP (0/11)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260630141726.92246-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260630141726.92246-2-sj@kernel.org
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - e453129b4c6d "selftests/mm: move pkey selftest helpers to pkey_util.c (0/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706081600.3570203-1-lihongfu@kylinos.cn
+        - Link: https://lore.kernel.org/20260706081600.3570203-2-lihongfu@kylinos.cn
+      - 9ee05ad72b84 "selftests/mm: unify pkey sighandler selftest assertions and tracing (1/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706081600.3570203-3-lihongfu@kylinos.cn
+      - 4b87c918add0 "selftests/mm: use pkey_assert on clone_raw failure in pkey test (2/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706081600.3570203-4-lihongfu@kylinos.cn
+      - 654b88fe7dfe "selftests/mm: add missing mmap() return checks in pkey tests (3/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706081600.3570203-5-lihongfu@kylinos.cn
+      - 5a8e06833919 "selftests/mm: add missing pthread_create() return checks in pkey tests (4/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706081600.3570203-6-lihongfu@kylinos.cn
+      - c5efd0bded49 "selftests/mm: fix clone cleartid race in pkey sighandler tests (5/10)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706081600.3570203-7-lihongfu@kylinos.cn
+    - 5491b25d4ae9 "selftests/mm/uffd: don't treat UFFDIO_COPY -ENOENT as a failure"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260701200932.1470525-1-rppt@kernel.org
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - a4f6c0f83d91 "mm: move __alloc_pages() to mm/page_alloc.h (13/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
+- mm-unstable: 42 -> 32 commits
+  - series: 6 (28) -> 4 (19)
+    - no role, nobody: 14 -> 13 commits
+    - no role, no role : 15 -> 10 commits
+    - no role, reviewer: 5 -> 3 commits
+    - no role, maintainer: 3 -> 2 commits
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 3 -> 2 commits
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

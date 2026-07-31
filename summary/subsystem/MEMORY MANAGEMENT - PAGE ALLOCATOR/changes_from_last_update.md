@@ -4,14 +4,80 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 14 -> 14 commits (no change)
-  - series: 2 (8) -> 2 (8) (no change)
-    - no role, reviewer: 13 -> 13 commits (no change)
+- mm-stable: 14 -> 27 commits
+  - series: 2 (8) -> 3 (20)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 13 -> 25 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 29 -> 29 commits (no change)
-  - series: 5 (25) -> 5 (25) (no change)
-    - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 16 -> 16 commits (no change)
+  - changed commits
+    - 9f2fd03c9bde "mm/page_alloc: use existing highatomic reserves on the buddy fastpath"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260623004600.113347-1-jp.kobryn@linux.dev
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - 67a06fdfbf6f "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: : https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev
+        - Link: : https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com
+        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - 03eaf4c44512 "mm/page_alloc: rename ALLOC_TRYLOCK -> ALLOC_NOLOCK (0/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-0-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/linux-mm/2399b3ad-4eac-4a14-94c3-27e9f07972a1@kernel.org/
+        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [1]
+      - 4b2b50a9f899 "mm/page_alloc: some renames to clarify alloc_flags scopes (1/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-2-c87b714e19d3@google.com
+      - d0850de699b0 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+      - 2fc4c1d51d87 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof() (4/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
+      - ba26999e7c2e "mm/page_alloc: relax GFP WARN in nolock allocs (5/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-6-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/linux-mm/ajS96fWbG4dzP3u3@casper.infradead.org/
+      - 6f414dbf2178 "mm: move some stuff to mm/page_alloc.h (6/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-7-c87b714e19d3@google.com
+      - bcdd8d43a7ca "mm: remove __alloc_pages_node() (12/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-13-c87b714e19d3@google.com
+      - a4f6c0f83d91 "mm: move __alloc_pages() to mm/page_alloc.h (13/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
+      - 6372aac4d41f "mm: replace __GFP_NO_CODETAG with ALLOC_NO_CODETAG (14/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/all/b4916118-3537-4e19-8bc8-1d103dd0d225@linux.dev/
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-15-c87b714e19d3@google.com
+      - 5df11ba0eb5a "mm/page_alloc: drop alloc_flags arg from alloc_flags_cma() (16/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-17-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/5dcdd1ef-21ad-4ed0-9e8a-0e5cf96b4392@kernel.org/
+      - 3a01af828138 "mm: factor out can_spin_trylock() (17/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-18-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/397859cb-b127-4cc6-9c71-044afc99bf0c@kernel.org/
+- mm-unstable: 29 -> 16 commits
+  - series: 5 (25) -> 4 (13)
+    - no role, no role : 5 -> 4 commits
+    - no role, reviewer: 16 -> 4 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 5 -> 5 commits (no change)

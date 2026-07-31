@@ -1,37 +1,40 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 7 total, 2 (4) series, 3 non-series commits
+- mm-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 3 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+    - a39826530146 "docs: ABI: zram: fix spelling mistakes"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260707165131.4408-1-rahularukonda2@gmail.com
+- mm-unstable: 6 total, 2 (4) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 2 commits
     - maintainer, nobody: 3 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - 8c1d009eddaf "docs: ABI: zram: fix spelling mistakes"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260707165131.4408-1-rahularukonda2@gmail.com
     - series "zram: lockmap tweaks". (2 commits)
-      - 0d07367f3266 "zram: move lockmap to be per-zram instead per table" (0/2)
+      - 2e3ab3c8c7cf "zram: move lockmap to be per-zram instead per table" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260714141300.3945672-1-bigeasy@linutronix.de
         - Link: https://lore.kernel.org/20260714141300.3945672-2-bigeasy@linutronix.de
-      - 1033db95834f "zram: use a custom key for each zram object" (1/2)
+      - be1a5af792eb "zram: use a custom key for each zram object" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260714141300.3945672-3-bigeasy@linutronix.de
-    - 2e6d086c930d "Documentation: zram: remove sections numbering"
+    - 8ad372d63e49 "Documentation: zram: remove sections numbering"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260728021229.181627-1-senozhatsky@chromium.org
     - series "zram: fix zram issues reported by sashiko". (2 commits)
-      - 733040eb9892 "zram: set default primary compressor in zram_destroy_comps()" (0/2)
+      - 8fbb1a0629b4 "zram: set default primary compressor in zram_destroy_comps()" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260729045745.775973-2-senozhatsky@chromium.org
         - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com [1]
-      - 7b9a8b65a4cd "zram: validate deflate params" (1/2)
+      - 8331ac9dad36 "zram: validate deflate params" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260729045745.775973-3-senozhatsky@chromium.org
         - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com
-    - 7ac819a245c1 "Documentation: zram: correct algo parameters configuration documentation"
+    - e0722b3da834 "Documentation: zram: correct algo parameters configuration documentation"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260730075158.1339787-1-senozhatsky@chromium.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

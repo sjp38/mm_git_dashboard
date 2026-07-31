@@ -6,17 +6,17 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v6. (3 commits)
-      - 2226bff5d58a "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/3)
+      - d3c87ab2ea5d "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-0-8cc77dcc0018@kernel.org
         - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-1-8cc77dcc0018@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 0d1cf96baae1 "arm64: remove redundant concurrent ptdump UAF mitigation" (2/3)
+      - 0f9c62f23a6f "arm64: remove redundant concurrent ptdump UAF mitigation" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-5-8cc77dcc0018@kernel.org
-- mm-stable: 2 total, 1 (1) series, 1 non-series commits
+- mm-stable: 3 total, 1 (1) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
+    - no role, no role : 3 commits
   - full commits list
     - series "mm/percpu: Fix possible NOFS/NOIO reclaim recursion", v4. (4 commits)
       - dec068de6dec "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
@@ -26,34 +26,34 @@
     - 24e9b62985d8 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/453375c4-c3ca-4e6f-8880-0e6ff3c74ee3@web.de
-- mm-unstable: 8 total, 0 (5) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 6 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 79dbf787251a "mm/vmalloc: add alignment info in warning print as possible failure reason"
+    - 923a89a91a7e "mm/vmalloc: add alignment info in warning print as possible failure reason"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260702112610.21589-1-feng.tang@linux.alibaba.com
-    - ade1fdf42a55 "mm: split out vmalloc declarations from internal.h"
+- mm-unstable: 7 total, 0 (5) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 5 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+    - 0eab351f8830 "mm: split out vmalloc declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-      - 110c0726e86e "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/7)
+      - d9f43dd927d5 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-4-jiangwen6@xiaomi.com
-      - 1eff63325dd1 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/7)
+      - 5fbb8e58e72a "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-5-jiangwen6@xiaomi.com
-      - 8b6803b93e44 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (4/7)
+      - 4f7c6f4b006f "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-6-jiangwen6@xiaomi.com
-      - 5d84f932e5d5 "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (5/7)
+      - 38d8b2c10dce "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-7-jiangwen6@xiaomi.com
-      - 5a65f40c50c1 "mm/vmalloc: simplify vmap batching helper and limit scan by PFN alignment" (6/7)
+      - 65eb6ee19216 "mm/vmalloc: simplify vmap batching helper and limit scan by PFN alignment" (6/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260722085841.3047673-1-jiangwen6@xiaomi.com
-    - c49d40d73805 "mm/vmalloc: align vm_area so vmap() can batch mappings"
+    - 6223e0110141 "mm/vmalloc: align vm_area so vmap() can batch mappings"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260715120813.3609949-8-jiangwen6@xiaomi.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

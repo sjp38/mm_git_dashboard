@@ -4,16 +4,64 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 6 -> 6 commits (no change)
-  - series: 1 (6) -> 1 (6) (no change)
-    - no role, reviewer: 6 -> 6 commits (no change)
-- mm-unstable: 15 -> 15 commits (no change)
-  - series: 2 (13) -> 2 (13) (no change)
+- mm-stable: 6 -> 14 commits
+  - series: 1 (6) -> 2 (14)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 6 -> 10 commits
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 2 commits
+  - changed commits
+    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
+      - 608c74559718 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260706114320.1643046-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t [2]
+        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
+      - 1f5a3d1afa5d "mm/migrate_device: move softleaf_to_folio() inside device-private branch (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-6-usama.arif@linux.dev
+      - d547b1001755 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES (5/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - 78b0ca26d00d "mm/migrate_device: pin large folios before splitting (7/10)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: : https://lore.kernel.org/87bbf335-648f-4065-abc8-3eaab5a3beeb@linux.dev
+        - Link: https://lore.kernel.org/20260701140638.840773-1-usama.arif@linux.dev
+        - Link: https://sashiko.dev/#/patchset/20260630164143.1595669-1-usama.arif%40linux.dev
+    - series "Open HugeTLB allocation routine for more generic use", v4. (6)
+      - 66a4e9e11e43 "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - d0850de699b0 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+      - 2fc4c1d51d87 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof() (4/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
+    - series "Fix incorrect access of hugetlb pte entries", v3. (5)
+      - ac1ec50d71b9 "mm/migrate: use huge_ptep_get() in remove_migration_pte() (2/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703114202.365553-5-dev.jain@arm.com
+- mm-unstable: 15 -> 7 commits
+  - series: 2 (13) -> 1 (5)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 7 -> 7 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - no role, no role : 3 -> 2 commits
+    - no role, reviewer: 7 -> 3 commits
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, reviewer: 2 -> 0 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

@@ -4,20 +4,99 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-- mm-stable: 15 -> 15 commits (no change)
-  - series: 1 (12) -> 1 (12) (no change)
+- mm-stable: 15 -> 30 commits
+  - series: 1 (12) -> 4 (26)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-- mm-unstable: 83 -> 83 commits (no change)
-  - series: 12 (74) -> 12 (74) (no change)
+    - no role, no role : 9 -> 15 commits
+    - no role, reviewer: 1 -> 7 commits
+    - no role, maintainer: 3 -> 4 commits
+    - reviewer, reviewer: 0 -> 2 commits
+  - changed commits
+    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
+      - 608c74559718 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260706114320.1643046-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t [2]
+        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
+      - b70705744370 "mm: extract mm_prepare_for_swap_entries() helper (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-3-usama.arif@linux.dev
+      - d547b1001755 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES (5/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
+    - series "mm/vmpressure: reduce CPU, memory and code overhead on cgroup v2", v3. (2)
+      - a33b5c911655 "mm/vmpressure: skip tree=true accounting on cgroup v2 (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: : https://lore.kernel.org/e8e1a409-48d8-4fa7-ae98-49485a1607f6@linux.dev
+        - Link: https://lore.kernel.org/20260630112617.1198623-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260630112617.1198623-2-usama.arif@linux.dev
+      - ea928e9e18da "mm/vmpressure: move v1 userspace eventfd code into memcontrol-v1.c (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260630112617.1198623-3-usama.arif@linux.dev
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - 67a06fdfbf6f "mm: fix ASSERT_EXCLUSIVE_BITS by passing memdesc_flags_t by pointer (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: : https://lore.kernel.org/20260708083308.747930-1-hui.zhu@linux.dev
+        - Link: : https://lore.kernel.org/DJSGLP9VFLRI.355AAWR2VHIEL@nvidia.com
+        - Link: https://lore.kernel.org/20260630070810.470763-1-hui.zhu@linux.dev
+    - f6c786a95e95 "mm: gfp_types: fix __GFP_ACCOUNT, GFP_KERNEL_ACCOUNT documentation"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260701182102.1586784-1-hannes@cmpxchg.org
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - 03eaf4c44512 "mm/page_alloc: rename ALLOC_TRYLOCK -> ALLOC_NOLOCK (0/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-0-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/linux-mm/2399b3ad-4eac-4a14-94c3-27e9f07972a1@kernel.org/
+        - Link: https://lore.kernel.org/all/20260320-page_alloc-unmapped-v2-0-28bf1bd54f41@google.com/ [1]
+      - 2666382a4f07 "mm: name some args in a function declaration (2/18)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-3-c87b714e19d3@google.com
+      - d0850de699b0 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+      - 6f414dbf2178 "mm: move some stuff to mm/page_alloc.h (6/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-7-c87b714e19d3@google.com
+      - bcdd8d43a7ca "mm: remove __alloc_pages_node() (12/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-13-c87b714e19d3@google.com
+      - a4f6c0f83d91 "mm: move __alloc_pages() to mm/page_alloc.h (13/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
+      - 01c69ef56dfa "mm: remove the __GFP_NO_OBJ_EXT flag (15/18)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-16-c87b714e19d3@google.com
+      - 3a01af828138 "mm: factor out can_spin_trylock() (17/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-18-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/397859cb-b127-4cc6-9c71-044afc99bf0c@kernel.org/
+- mm-unstable: 83 -> 68 commits
+  - series: 12 (74) -> 9 (60)
     - no role, nobody: 10 -> 10 commits (no change)
-    - no role, no role : 28 -> 28 commits (no change)
-    - no role, reviewer: 14 -> 14 commits (no change)
-    - no role, maintainer: 8 -> 8 commits (no change)
+    - no role, no role : 28 -> 22 commits
+    - no role, reviewer: 14 -> 8 commits
+    - no role, maintainer: 8 -> 7 commits
     - reviewer, no role : 10 -> 10 commits (no change)
-    - reviewer, reviewer: 10 -> 10 commits (no change)
+    - reviewer, reviewer: 10 -> 8 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
 - mm-new: 1 -> 1 commits (no change)

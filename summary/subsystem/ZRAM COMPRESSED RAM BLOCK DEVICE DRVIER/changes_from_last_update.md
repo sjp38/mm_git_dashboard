@@ -3,32 +3,21 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
+- mm-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 7 commits
-  - series: 1 (2) -> 2 (4)
-    - no role, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 0 -> 3 commits
-    - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - 7ac819a245c1 "Documentation: zram: correct algo parameters configuration documentation"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260730075158.1339787-1-senozhatsky@chromium.org
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - series "zram: fix zram issues reported by sashiko". (2)
-      - 733040eb9892 "zram: set default primary compressor in zram_destroy_comps() (0/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260729045745.775973-2-senozhatsky@chromium.org
-        - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com [1]
-      - 7b9a8b65a4cd "zram: validate deflate params (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260729045745.775973-3-senozhatsky@chromium.org
-        - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - maintainer, nobody: 2 -> 0 commits
+    - a39826530146 "docs: ABI: zram: fix spelling mistakes"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260707165131.4408-1-rahularukonda2@gmail.com
+- mm-unstable: 7 -> 6 commits
+  - series: 2 (4) -> 2 (4) (no change)
+    - no role, maintainer: 3 -> 2 commits
+    - maintainer, nobody: 3 -> 3 commits (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

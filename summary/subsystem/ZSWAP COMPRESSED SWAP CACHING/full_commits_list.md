@@ -7,22 +7,22 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 3 commits
   - full commits list
-    - 777c2c45d54a "mm/zswap: use ratelimited stats flush in zswap_shrinker_count()"
+    - 6c25d8a04b77 "mm/zswap: use ratelimited stats flush in zswap_shrinker_count()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260702180908.150136-1-yunzhao@cloudflare.com
       - Link: https://lore.kernel.org/linux-mm/20231206103935.3440502-1-zhouchengming@bytedance.com/ [1]
       - Link: https://lore.kernel.org/linux-mm/CALvZod7LFxLCxVpOFH8b2Ppm8T40HPGMKQwX_=NPCWB_mFW+oQ@mail.gmail.com/ [2]
       - Link: https://lore.kernel.org/linux-mm/CAJD7tkYvFyOSX+rP_FKGBhxvZiCDxtpsNp-c5CGOA-4Bq9oXSg@mail.gmail.com/ [3]
       - Link: https://lore.kernel.org/linux-mm/172616070094.2055617.17676042522679701515.stgit@firesoul/ [4]
-      - bde335662584 "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - 1375eda0d725 "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
     - series "mm/zswap: Fixes and improves the zswap shrink", v3. (2 commits)
-      - cc816d85b3cb "mm/zswap: fix global shrinker when memory cgroup is disabled" (0/2)
+      - 189ffe758e05 "mm/zswap: fix global shrinker when memory cgroup is disabled" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260729084206.77793-1-jiahao.kernel@gmail.com
         - Link: https://lore.kernel.org/20260729084206.77793-2-jiahao.kernel@gmail.com
-      - e418bf7f4307 "mm/zswap: support batch writeback in shrink_memcg()" (1/2)
+      - de947ea99602 "mm/zswap: support batch writeback in shrink_memcg()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260729084206.77793-3-jiahao.kernel@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

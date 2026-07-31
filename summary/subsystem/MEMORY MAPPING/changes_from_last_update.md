@@ -3,14 +3,32 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 4 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
+- mm-stable: 4 -> 7 commits
+  - series: 1 (4) -> 1 (6)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 2 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 69 -> 69 commits (no change)
-  - series: 3 (63) -> 3 (63) (no change)
-    - no role, nobody: 14 -> 14 commits (no change)
-    - no role, no role : 10 -> 10 commits (no change)
+  - changed commits
+    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
+      - eecd06034bf4 "fs/proc: use softleaf_has_pfn() in pagemap PMD walker (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260706114320.1643046-4-usama.arif@linux.dev
+    - series "Fix incorrect access of hugetlb pte entries", v3. (5)
+      - 399cfd133f88 "mm/mprotect: use huge_ptep_get() for hugetlb (4/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703114202.365553-7-dev.jain@arm.com
+    - 6251d650f4e7 "mm: nommu: add sysctl_max_map_count() check for do_mmap()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/munmap/munmap04.c
+      - Link: https://lore.kernel.org/20260702012830.667205-1-thehajime@gmail.com
+- mm-unstable: 69 -> 66 commits
+  - series: 3 (63) -> 3 (61)
+    - no role, nobody: 14 -> 13 commits
+    - no role, no role : 10 -> 8 commits
     - no role, reviewer: 6 -> 6 commits (no change)
     - reviewer, no role : 6 -> 6 commits (no change)
     - reviewer, reviewer: 8 -> 8 commits (no change)
@@ -18,14 +36,10 @@
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 11 -> 11 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-new: 1 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 19446452376d "mm: use proper PTE accessor in move_ptes()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260720141633.501799-1-agordeev@linux.ibm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

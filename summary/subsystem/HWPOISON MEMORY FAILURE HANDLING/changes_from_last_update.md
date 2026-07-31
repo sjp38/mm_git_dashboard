@@ -3,28 +3,26 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
+- mm-stable: 1 -> 2 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 10 -> 11 commits
-  - series: 1 (10) -> 1 (10) (no change)
+  - changed commits
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - d0850de699b0 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+- mm-unstable: 11 -> 10 commits
+  - series: 1 (10) -> 1 (9)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 4 -> 5 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
-  - changed commits
-    - aee5d1494f39 "selftests/mm: unpoison pages in memory-failure teardown"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Acked-by: Miaohe Lin <linmiaohe@huawei.com>"
-      - dropped "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-      - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

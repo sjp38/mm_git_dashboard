@@ -3,15 +3,29 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 8 -> 8 commits (no change)
-  - series: 0 (8) -> 0 (8) (no change)
-    - no role, no role : 7 -> 7 commits (no change)
+- mm-stable: 8 -> 10 commits
+  - series: 0 (8) -> 0 (10)
+    - no role, no role : 7 -> 8 commits
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
+  - changed commits
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - 9eed9653a35f "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
+        - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - d0850de699b0 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+- mm-unstable: 6 -> 4 commits
+  - series: 1 (5) -> 1 (3)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 2 -> 1 commits
     - no role, maintainer: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

@@ -1,9 +1,10 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 8 total, 0 (8) series, 0 non-series commits
+- mm-stable: 10 total, 0 (10) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 7 commits
+    - no role, no role : 8 commits
+    - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
       - b1b7c045e808 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
@@ -30,33 +31,32 @@
       - 6d098029de09 "mm/mm_init: fold __init_page_from_nid() into __init_deferred_page()" (18/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260612035903.2468601-20-songmuchun@bytedance.com
-- mm-unstable: 6 total, 1 (5) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 1 commits
-    - no role, reviewer: 2 commits
-    - no role, maintainer: 2 commits
-  - full commits list
-      - d31ae259e65f "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug" (8/10)
+      - 9eed9653a35f "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug" (8/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
         - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
-      - 4aaab27d835f "mm: split out internal page_alloc.h" (3/18)
+      - d0850de699b0 "mm: split out internal page_alloc.h" (3/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+- mm-unstable: 4 total, 1 (3) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 2 commits
+  - full commits list
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - a576db5358cd "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - 156e8e1a1419 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - d0be5cafb9ee "memblock tests: split stubfs from internal.h to mm_init.h" (1/3)
+      - f6a84e18a98b "memblock tests: split stubfs from internal.h to mm_init.h" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
-      - b38f5bd4cc39 "mm: split out sparse declarations from internal.h" (2/3)
+      - 79b2127b1590 "mm: split out sparse declarations from internal.h" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-2-695631425968@kernel.org
-    - ade1fdf42a55 "mm: split out vmalloc declarations from internal.h"
+    - 0eab351f8830 "mm: split out vmalloc declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
