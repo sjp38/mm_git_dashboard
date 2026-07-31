@@ -4,18 +4,13 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 3 -> 4 commits
+- mm-stable: 4 -> 4 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - d7a8934c078c "mm: fix mapping_seek_hole_data() overflow on last page"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260630125047.703170-1-yanzhen20011121@163.com
-- mm-unstable: 9 -> 8 commits
+- mm-unstable: 8 -> 8 commits (no change)
   - series: 0 (7) -> 0 (7) (no change)
-    - no role, nobody: 6 -> 5 commits
+    - no role, nobody: 5 -> 5 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)

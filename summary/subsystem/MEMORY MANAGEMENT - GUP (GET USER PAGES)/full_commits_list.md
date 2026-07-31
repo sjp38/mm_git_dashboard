@@ -7,21 +7,24 @@
     - no role, no role : 1 commits
     - reviewer, no role : 1 commits
   - full commits list
-    - f2b9aa5c2e77 "mm/gup: fix GUP-fast fallback for NULL-mapping order-0 folios"
+    - bfdca11016a0 "mm/gup: fix GUP-fast fallback for NULL-mapping order-0 folios"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260708005745.164928-1-jhubbard@nvidia.com
-    - d48656c2eb3b "selftests/mm: fix gup_longterm EINVAL error message"
+    - 3c0f69b62e5c "selftests/mm: fix gup_longterm EINVAL error message"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/23557F4CB8CF36FF+20260724074603.1479243-1-zhaozhengzhuo@uniontech.com
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
+- mm-new: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-    - 16821063c370 "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+    - cdcb5092513b "mm/gup: fix always draining LRU caches in collect_longterm_unpinnable_folios()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260731-check_and_migrate_movable_folios-v1-1-e0002d7b791e@kernel.org
+    - f5681bb90d52 "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
-    - 82b2638f3b96 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 4ae13e499c29 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

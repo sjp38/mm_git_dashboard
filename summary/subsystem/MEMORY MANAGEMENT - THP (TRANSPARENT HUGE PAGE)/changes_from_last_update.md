@@ -7,48 +7,35 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 5 commits
-  - series: 0 (0) -> 1 (5)
-    - no role, reviewer: 0 -> 2 commits
-    - reviewer, reviewer: 0 -> 3 commits
-  - changed commits
-    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
-      - 608c74559718 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260706114320.1643046-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260706114320.1643046-2-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
-        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t [2]
-        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
-      - a6c30b073f75 "mm/huge_memory: move softleaf_to_folio() inside migration branch (3/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260706114320.1643046-5-usama.arif@linux.dev
-      - d547b1001755 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES (5/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
-    - series "mm: Some cleanups for page allocator APIs", v5. (18)
-      - d0850de699b0 "mm: split out internal page_alloc.h (3/18)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-      - a4f6c0f83d91 "mm: move __alloc_pages() to mm/page_alloc.h (13/18)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
-- mm-unstable: 26 -> 21 commits
-  - series: 4 (23) -> 3 (18)
+- mm-stable: 5 -> 5 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - reviewer, reviewer: 3 -> 3 commits (no change)
+- mm-unstable: 21 -> 21 commits (no change)
+  - series: 3 (18) -> 3 (18) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 8 -> 6 commits
+    - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 8 -> 5 commits
+    - reviewer, reviewer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+  - changed commits
+    - f2bdc2a5d2fa "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260730204724.16912-1-jakovnovak30@gmail.com
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - reviewer, nobody: 0 -> 1 commits
+  - new commits
+    - series "Honor XA_FLAGS_ACCOUNT in xas_split_alloc() and charge to folio's memcg", v2. (None)
+      - 1bc6767e153f "mm/huge_memory: use folio's memcg inside __folio_split() (None/None)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260730-add-gfp_account-to-xas_split_alloc-v2-0-5a56c2361d85@nvidia.com
+        - Link: https://lore.kernel.org/20260730-add-gfp_account-to-xas_split_alloc-v2-1-5a56c2361d85@nvidia.com
+        - Link: https://sashiko.dev/#/patchset/20260727-add-gfp_account-to-xas_split_alloc-v1-1-9fae6bf64838%40nvidia.com?part=1 [1]
+        - Link: https://lore.kernel.org/all/amtcBZ-_QVRgCd6b@cmpxchg.org/ [2]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

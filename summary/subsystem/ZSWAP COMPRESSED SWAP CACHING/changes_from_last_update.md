@@ -5,12 +5,26 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
+- mm-unstable: 4 -> 2 commits
+  - series: 1 (3) -> 0 (1)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+    - no role, maintainer: 3 -> 1 commits
+  - dropped commits
+    - series "mm/zswap: Fixes and improves the zswap shrink", v3. (2)
+      - 189ffe758e05 "mm/zswap: fix global shrinker when memory cgroup is disabled (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260729084206.77793-1-jiahao.kernel@gmail.com
+        - Link: https://lore.kernel.org/20260729084206.77793-2-jiahao.kernel@gmail.com
+      - de947ea99602 "mm/zswap: support batch writeback in shrink_memcg() (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260729084206.77793-3-jiahao.kernel@gmail.com
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - d2a5c980f0bb "mm: zswap: drop list_lru param from zswap_lru_add() and _del()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260731053721.1412304-1-wfelipe@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

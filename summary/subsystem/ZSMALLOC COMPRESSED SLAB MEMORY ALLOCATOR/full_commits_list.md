@@ -24,7 +24,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 3db19d7850f2 "mm/zsmalloc: fix release order of locks in zs_page_migrate()"
+    - 5f8248afa6cd "mm/zsmalloc: fix release order of locks in zs_page_migrate()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260728055333.421080-1-richardycc@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

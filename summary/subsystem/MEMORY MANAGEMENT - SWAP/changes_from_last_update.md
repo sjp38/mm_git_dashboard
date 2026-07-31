@@ -3,27 +3,25 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 5 commits
-  - series: 1 (1) -> 1 (2)
+- mm-stable: 5 -> 5 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
-      - d547b1001755 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES (5/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
-- mm-unstable: 15 -> 14 commits
-  - series: 3 (13) -> 3 (12)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 14 -> 14 commits (no change)
+  - series: 3 (12) -> 3 (12) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 0 commits
-- mm-new: 1 -> 1 commits (no change)
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
+    - maintainer, reviewer: 0 -> 1 commits
+  - new commits
+    - 540859cb2769 "mm/swap: reject swapon() on filesystem-level encrypted files"
+      - Authored by a maintainer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260730184853.48347-1-ebiggers@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
