@@ -8,6 +8,11 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - d705622c45b4 "mm: split out vmalloc declarations from internal.h"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+      - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

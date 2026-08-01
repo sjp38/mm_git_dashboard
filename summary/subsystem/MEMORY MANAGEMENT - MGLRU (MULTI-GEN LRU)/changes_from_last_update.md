@@ -10,20 +10,23 @@
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 17 -> 18 commits
+- mm-unstable: 18 -> 18 commits (no change)
   - series: 4 (16) -> 4 (16) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 3 commits
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 10 -> 10 commits (no change)
   - changed commits
-    - d301c6b43d75 "mm/page_alloc: boost watermarks on atomic allocation failure"
+    - ca23f6c0fb76 "mm: let node_reclaim() return the number of pages reclaimed"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
+    - 3af57bc5795c "mm/page_alloc: boost watermarks on atomic allocation failure"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
+      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
       - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

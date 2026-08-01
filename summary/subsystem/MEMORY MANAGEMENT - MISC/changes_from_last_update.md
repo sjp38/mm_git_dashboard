@@ -20,6 +20,17 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: split a couple of headers from internal.h", v2. (3)
+      - caf731ffe399 "mm: split out mm_init and memblock declarations from internal.h (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
+    - 2deb76e02ebf "selftests/mm: fix on-fault-limit false failure under sudo-rs"
+      - Authored by no role player, reviewed by nobody
+      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+      - Link: https://lore.kernel.org/20260713092700.464376-1-injaeryou@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

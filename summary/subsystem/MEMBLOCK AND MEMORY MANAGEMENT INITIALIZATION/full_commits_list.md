@@ -46,17 +46,17 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - 8d5433001594 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - caf731ffe399 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - b8ad90c5a97a "memblock tests: split stubfs from internal.h to mm_init.h" (1/3)
+      - a6301771b9fa "memblock tests: split stubfs from internal.h to mm_init.h" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
-      - 51844c55c44e "mm: split out sparse declarations from internal.h" (2/3)
+      - f5c69594bce4 "mm: split out sparse declarations from internal.h" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-2-695631425968@kernel.org
-    - fdee14cf8f2e "mm: split out vmalloc declarations from internal.h"
+    - d705622c45b4 "mm: split out vmalloc declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -11,10 +11,10 @@
     - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 68 -> 69 commits
+- mm-unstable: 69 -> 69 commits (no change)
   - series: 9 (60) -> 9 (60) (no change)
     - no role, nobody: 10 -> 10 commits (no change)
-    - no role, no role : 22 -> 23 commits
+    - no role, no role : 23 -> 23 commits (no change)
     - no role, reviewer: 8 -> 8 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
     - reviewer, no role : 10 -> 10 commits (no change)
@@ -22,18 +22,59 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
   - changed commits
-    - d301c6b43d75 "mm/page_alloc: boost watermarks on atomic allocation failure"
+    - series "Keep tail page private zero at free and folio split", v3. (5)
+      - 6d30de195c67 "mm/page_alloc: remove set_page_private() in prep_compound_tail() (4/5)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+        - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-5-7e4fe155f5b9@nvidia.com
+    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)", v2. (10)
+      - c449f77d6e58 "mm: provide free_reserved_pages(), removing x86 variant (1/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-2-4afc76c73d61@kernel.org
+      - b2333d05c0a9 "x86/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (6/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-7-4afc76c73d61@kernel.org
+      - 1172e6832bcf "mm/sparse: remove bootmem_info.h include (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-9-4afc76c73d61@kernel.org
+      - cd1313dfca53 "mm/bootmem_info: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (9/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-10-4afc76c73d61@kernel.org
+    - series "mm: split a couple of headers from internal.h", v2. (3)
+      - caf731ffe399 "mm: split out mm_init and memblock declarations from internal.h (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
+      - f5c69594bce4 "mm: split out sparse declarations from internal.h (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-2-695631425968@kernel.org
+    - d705622c45b4 "mm: split out vmalloc declarations from internal.h"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+      - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
+    - ca23f6c0fb76 "mm: let node_reclaim() return the number of pages reclaimed"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
+    - series "mm/page_alloc: couple of followups for recent cleanups", v3. (4)
+      - ad05ba3c9e49 "mm/page_alloc: remove a couple of VM_BUG_ON()st (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-4-fc4d246f705d@google.com
+        - Link: https://lore.kernel.org/all/7F866265-3F2E-4765-B9D4-9AB898A9C4AC@nvidia.com/
+    - 3af57bc5795c "mm/page_alloc: boost watermarks on atomic allocation failure"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
+      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
       - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - f0681c353d41 "mm/sparse: correct init section annotations"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260731164758.1210668-1-ekffu200098@gmail.com
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

@@ -6,12 +6,12 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v6. (3 commits)
-      - 675b756fd8af "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/3)
+      - 9876ffe70fa3 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-0-8cc77dcc0018@kernel.org
         - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-1-8cc77dcc0018@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-    - ba27281302b7 "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF"
+    - c1f6c5170a6b "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-2-8cc77dcc0018@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -20,10 +20,10 @@
     - no role, reviewer: 1 commits
     - maintainer, no role : 1 commits
   - full commits list
-      - 5174bdab8d56 "mm/vma: introduce vma_assert_can_modify()" (21/33)
+      - df46f8934b64 "mm/vma: introduce vma_assert_can_modify()" (21/33)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-22-2a5aa403d977@kernel.org
-    - 6d216d0331dd "docs/mm: fix braces"
+    - f94e9b7c6cef "docs/mm: fix braces"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

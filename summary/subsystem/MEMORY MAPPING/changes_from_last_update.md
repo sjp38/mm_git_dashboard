@@ -9,10 +9,10 @@
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 66 -> 67 commits
+- mm-unstable: 67 -> 67 commits (no change)
   - series: 3 (61) -> 3 (61) (no change)
     - no role, nobody: 13 -> 13 commits (no change)
-    - no role, no role : 8 -> 9 commits
+    - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 6 -> 6 commits (no change)
     - reviewer, no role : 6 -> 6 commits (no change)
     - reviewer, reviewer: 8 -> 8 commits (no change)
@@ -20,14 +20,8 @@
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 11 -> 11 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-  - changed commits
-    - 0455301cc36f "mm: use proper PTE accessor in move_ptes()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260720141633.501799-1-agordeev@linux.ibm.com
-- mm-new: 2 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

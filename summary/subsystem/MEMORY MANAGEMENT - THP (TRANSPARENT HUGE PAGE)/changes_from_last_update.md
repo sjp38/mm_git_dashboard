@@ -20,22 +20,15 @@
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - f2bdc2a5d2fa "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260730204724.16912-1-jakovnovak30@gmail.com
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 1 (1)
-    - reviewer, nobody: 0 -> 1 commits
-  - new commits
-    - series "Honor XA_FLAGS_ACCOUNT in xas_split_alloc() and charge to folio's memcg", v2. (None)
-      - 1bc6767e153f "mm/huge_memory: use folio's memcg inside __folio_split() (None/None)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260730-add-gfp_account-to-xas_split_alloc-v2-0-5a56c2361d85@nvidia.com
-        - Link: https://lore.kernel.org/20260730-add-gfp_account-to-xas_split_alloc-v2-1-5a56c2361d85@nvidia.com
-        - Link: https://sashiko.dev/#/patchset/20260727-add-gfp_account-to-xas_split_alloc-v1-1-9fae6bf64838%40nvidia.com?part=1 [1]
-        - Link: https://lore.kernel.org/all/amtcBZ-_QVRgCd6b@cmpxchg.org/ [2]
+    - series "Keep tail page private zero at free and folio split", v3. (5)
+      - 73c856cbca9b "mm/huge_memory: add page->private check back in __split_folio_to_order() (2/5)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+        - Link: https://lore.kernel.org/all/13f3fcda-7328-4aa5-afc6-75a294a82b2a@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-3-7e4fe155f5b9@nvidia.com
+- mm-new: 1 -> 1 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - reviewer, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

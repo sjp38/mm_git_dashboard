@@ -42,69 +42,69 @@
     - no role, reviewer: 4 commits
     - no role, maintainer: 10 commits
   - full commits list
-      - 1bf884e67a21 "memcg: bail out proactive reclaim when memcg is dying" (2/4)
+      - 74f71849927f "memcg: bail out proactive reclaim when memcg is dying" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
     - series "mm: clean up folio LRU and swap declarations", v9. (3 commits)
-      - aa7ec046a190 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - 183c50a9cd1c "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-      - a22cfcc5269a "mm: rename swap.c to folio.c" (1/3)
+      - 5dbf66efda01 "mm: rename swap.c to folio.c" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-2-2bc72b4f8730@gmail.com
-      - d86e3dc4b668 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 8b76b591b96b "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - c5219d289e78 "mm/swap: introduce struct swap_io_ctx" (1/7)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - a68b7447d80d "mm/swap: remove SWP_FS_OPS" (5/7)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-    - a277a2968e97 "mm: let node_reclaim() return the number of pages reclaimed"
+    - ca23f6c0fb76 "mm: let node_reclaim() return the number of pages reclaimed"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
     - series "mm/vmscan: fix swappiness=max and clean up per-node proactive reclaim", v4. (4 commits)
-      - 9c388672839c "mm/vmscan: fix anon-only reclaim evicting file pages when swappiness=max" (0/4)
+      - 94f68bd628b4 "mm/vmscan: fix anon-only reclaim evicting file pages when swappiness=max" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260724033435.2573323-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260724033435.2573323-2-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/cgroups/7ddf3eee-5fe2-45f7-8614-c8936a039e04@linux.dev/ [1]
-      - 5da346a7835e "mm: vmscan: propagate real error code from per-node proactive reclaim" (1/4)
+      - 00d7aa512c21 "mm: vmscan: propagate real error code from per-node proactive reclaim" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260724033435.2573323-3-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/all/20250717235604.2atyx2aobwowpge3@offworld/T/#m3514718be82a31b05726a49da9b61fbfc69a589e [1]
-      - b37161c0941f "mm: vmscan: drop unused gfp_mask parameter from __node_reclaim()" (2/4)
+      - 47892455e78b "mm: vmscan: drop unused gfp_mask parameter from __node_reclaim()" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260724033435.2573323-4-ridong.chen@linux.dev
-      - 774fcff6f7d1 "mm/mglru: fix anon-only reclaim evicting file pages when swappiness=max" (3/4)
+      - 1f66dafdecac "mm/mglru: fix anon-only reclaim evicting file pages when swappiness=max" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260724033435.2573323-5-ridong.chen@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260717113300.214717-1-ridong.chen@linux.dev [1]
-    - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
-      - 3f8cc3b44d5e "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
-        - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
-      - 7f6942395095 "mm: vmscan: add a helper to identify file-backed executable folios" (1/3)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/2ee74f9f98ac45a2f0db0ceb018e086bdb671d17.1784509721.git.baolin.wang@linux.alibaba.com
-      - 76bff90f2d1c "mm: mglru: promote mapped executable folios after first usage" (2/3)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/f57d94b1d85bb3d620d89bb739128f0d929bf9c6.1784509721.git.baolin.wang@linux.alibaba.com
     - series "Batch unmap of uffd-wp file folios", v2. (3 commits)
-      - a3146e119e7f "mm/memory: move pte_install_uffd_wp_if_needed() into memory.c" (0/3)
+      - c437df1aa2b6 "mm/memory: move pte_install_uffd_wp_if_needed() into memory.c" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720065508.2695106-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260720065508.2695106-2-dev.jain@arm.com
-      - a7cbe51b4510 "mm: vmscan: fix node reclaim ignoring swappiness parameter" (1/2)
+      - 042a0bc38026 "mm/swap: introduce struct swap_io_ctx" (1/7)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
+      - 27b8c0293d6a "mm/swap: remove SWP_FS_OPS" (5/7)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
+    - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
+      - 28b1a4400968 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
+        - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
+      - a74065608c3a "mm: vmscan: add a helper to identify file-backed executable folios" (1/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/2ee74f9f98ac45a2f0db0ceb018e086bdb671d17.1784509721.git.baolin.wang@linux.alibaba.com
+      - 524086e9ec3f "mm: mglru: promote mapped executable folios after first usage" (2/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/f57d94b1d85bb3d620d89bb739128f0d929bf9c6.1784509721.git.baolin.wang@linux.alibaba.com
+      - 48a93dc7c743 "mm: vmscan: fix node reclaim ignoring swappiness parameter" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723032434.2016749-3-ridong.chen@linux.dev
-      - f15071dd7ace "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (1/2)
+      - 8ad1862ef1f0 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev
-    - d301c6b43d75 "mm/page_alloc: boost watermarks on atomic allocation failure"
+    - 3af57bc5795c "mm/page_alloc: boost watermarks on atomic allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

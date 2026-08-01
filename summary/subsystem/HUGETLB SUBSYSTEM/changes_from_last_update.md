@@ -10,18 +10,25 @@
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 17 -> 18 commits
+- mm-unstable: 18 -> 18 commits (no change)
   - series: 1 (12) -> 1 (12) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 7 -> 8 commits
+    - no role, no role : 8 -> 8 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 80ce3e35601e "hugetlb: only adjust reservation during unmapping if mapcount is 0"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
-      - Link: https://lore.kernel.org/amkC_1Ya6OiUoiLZ@bender.morinfr.org
+  - changed commits
+    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)", v2. (10)
+      - 08bb5ed4f410 "mm/hugetlb_vmemmap: remove bootmem_info leftovers (7/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-8-4afc76c73d61@kernel.org
+    - series "mm: split a couple of headers from internal.h", v2. (3)
+      - caf731ffe399 "mm: split out mm_init and memblock declarations from internal.h (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

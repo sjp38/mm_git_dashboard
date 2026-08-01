@@ -14,14 +14,10 @@
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-- mm-new: 1 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 0 -> 1 commits
-  - new commits
-    - 540859cb2769 "mm/swap: reject swapon() on filesystem-level encrypted files"
-      - Authored by a maintainer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260730184853.48347-1-ebiggers@kernel.org
+    - maintainer, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

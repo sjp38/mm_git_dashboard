@@ -9,19 +9,12 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-- mm-unstable: 13 -> 14 commits
+- mm-unstable: 14 -> 14 commits (no change)
   - series: 3 (6) -> 3 (6) (no change)
     - no role, maintainer: 13 -> 13 commits (no change)
-    - maintainer, maintainer: 0 -> 1 commits
-  - changed commits
-    - f5daee7e60b7 "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
-      - Authored by a maintainer, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260729024612.3369005-1-shakeel.butt@linux.dev
-      - Link: https://lore.kernel.org/7a4e5591f45df455e6a485fc5400989569d3d22d.camel@surriel.com/ [1]
-- mm-new: 1 -> 0 commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
