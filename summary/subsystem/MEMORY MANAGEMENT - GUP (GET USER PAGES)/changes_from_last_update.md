@@ -5,28 +5,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 3 commits
+- mm-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - ecb96f80aa4f "mm/gup: fix always draining LRU caches in collect_longterm_unpinnable_folios()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: Hugh Dickins <hughd@google.com>"
-      - dropped "Cc: Hugh Dickins <hughd@google.com>"
-      - Link: https://lore.kernel.org/20260731-check_and_migrate_movable_folios-v1-1-e0002d7b791e@kernel.org
 - mm-new: 3 -> 3 commits (no change)
-  - series: 0 (0) -> 1 (1)
-    - no role, nobody: 2 -> 1 commits
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - series "selftests/mm: use pattern matching in .gitignore", v4. (2)
-      - 631b869737e2 "selftests/mm: rename local_config.h to local_config.h_gen (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260803221732.3651981-1-pratmal@google.com
-        - Link: https://lore.kernel.org/20260803221732.3651981-2-pratmal@google.com
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

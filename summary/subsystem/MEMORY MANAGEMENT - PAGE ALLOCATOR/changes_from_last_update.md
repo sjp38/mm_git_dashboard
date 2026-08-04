@@ -9,35 +9,15 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 25 -> 25 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 17 -> 19 commits
+- mm-unstable: 19 -> 19 commits (no change)
   - series: 4 (13) -> 4 (13) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 5 -> 5 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - d1d78232fb08 "mm/page_reporting: add page_reporting_delay_ms module parameter"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260731193705.2902728-1-pratmal@google.com
-    - 5cef47167e03 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/tencent_B9556590D4B65ACF74C06897689A6E39F206@qq.com
-      - Link: https://lore.kernel.org/linux-mm/tencent_FFD4F4D728AAE8A8AE0AF277A59854A29A06@qq.com/
-    - 9d9e4891d82f "mm-page_alloc-only-update-lowmem_reserve_ratio-on-sysctl-write-fix"
-      - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - eb113deedb6b "mm/page_alloc: boost watermarks on atomic allocation failure"
-      - Authored by no role player, reviewed by no role player
-      - added "Cc: Liam Howlett <liam@infradead.org>"
-      - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
-      - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
-  - dropped commits
-    - 94f9b3980dd4 "mm/page_reporting: Add page_reporting_delay_ms module parameter"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260731193705.2902728-1-pratmal@google.com
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

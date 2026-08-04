@@ -8,22 +8,14 @@
 - mm-stable: 3 -> 3 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-- mm-unstable: 7 -> 8 commits
+- mm-unstable: 8 -> 8 commits (no change)
   - series: 0 (5) -> 0 (5) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 5 -> 6 commits
+    - no role, no role : 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 4304dcb0c4c0 "mm/vmalloc: make vm_struct.nr_pages an unsigned long"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260801114915.115224-1-iprintercanon@gmail.com
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 2887615ef743 "mm/vmalloc: do not warn on -ENOMEM from va_alloc()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260802104627.63892-1-urezki@gmail.com
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
