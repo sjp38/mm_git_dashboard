@@ -13,8 +13,13 @@
     - no role, reviewer: 3 -> 3 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 325db28cf0eb "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260803152115.3479919-1-xialonglong2025@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

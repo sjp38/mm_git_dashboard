@@ -7,17 +7,39 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 14 -> 14 commits (no change)
+- mm-unstable: 14 -> 15 commits
   - series: 3 (12) -> 3 (12) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
+    - maintainer, reviewer: 0 -> 1 commits
+  - changed commits
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - 239cc2be7430 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - 770f9964536f "mm: preserve RWP marker across PTE rewrites (6/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
+    - 563ba5f5f019 "mm/swap: reject swapon() on filesystem-level encrypted files"
+      - Authored by a maintainer, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Link: https://lore.kernel.org/20260803180426.3123-1-ebiggers@kernel.org"
+      - added "Reviewed-by: "Darrick J. Wong" <djwong@kernel.org>"
+      - added "Reviewed-by: Muhammad Usama Anjum <usama.anjum@arm.com>"
+      - dropped "Link: https://lore.kernel.org/20260730184853.48347-1-ebiggers@kernel.org"
+      - dropped "Cc: "Darrick J. Wong" <djwong@kernel.org>"
+      - Link: https://lore.kernel.org/20260803180426.3123-1-ebiggers@kernel.org
+- mm-new: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+    - maintainer, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

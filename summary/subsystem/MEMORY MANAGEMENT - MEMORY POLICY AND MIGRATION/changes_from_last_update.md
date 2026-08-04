@@ -10,15 +10,31 @@
     - no role, reviewer: 10 -> 10 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 7 -> 7 commits (no change)
+- mm-unstable: 7 -> 8 commits
   - series: 1 (5) -> 1 (5) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, reviewer: 3 -> 4 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+  - changed commits
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - 239cc2be7430 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - 770f9964536f "mm: preserve RWP marker across PTE rewrites (6/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
+    - 1a5f3d158048 "mm/migrate_device: clear stale mapping after freeing swapcache"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260728062832.1107127-1-arvind.yadav@intel.com
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

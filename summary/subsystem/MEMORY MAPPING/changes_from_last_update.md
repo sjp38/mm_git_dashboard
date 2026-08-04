@@ -20,6 +20,33 @@
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 11 -> 11 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
+  - changed commits
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - 239cc2be7430 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - 39b3eb900595 "mm: add VM_UFFD_RWP VMA flag (4/15)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-6-kirill@shutemov.name
+      - 179639f2df43 "mm: add MM_CP_UFFD_RWP change_protection() flag (5/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
+      - 770f9964536f "mm: preserve RWP marker across PTE rewrites (6/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
+      - 08a5f5c11b0a "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking (10/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-12-kirill@shutemov.name
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)

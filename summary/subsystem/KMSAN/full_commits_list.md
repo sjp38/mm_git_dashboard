@@ -13,7 +13,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - d705622c45b4 "mm: split out vmalloc declarations from internal.h"
+    - 26b3c019a58f "mm: split out vmalloc declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

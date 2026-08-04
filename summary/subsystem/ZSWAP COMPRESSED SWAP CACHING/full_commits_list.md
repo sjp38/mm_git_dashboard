@@ -2,27 +2,30 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 2 commits
   - full commits list
-    - 290790c114b3 "mm/zswap: use ratelimited stats flush in zswap_shrinker_count()"
+    - 407bfc562c47 "mm/zswap: use ratelimited stats flush in zswap_shrinker_count()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260702180908.150136-1-yunzhao@cloudflare.com
       - Link: https://lore.kernel.org/linux-mm/20231206103935.3440502-1-zhouchengming@bytedance.com/ [1]
       - Link: https://lore.kernel.org/linux-mm/CALvZod7LFxLCxVpOFH8b2Ppm8T40HPGMKQwX_=NPCWB_mFW+oQ@mail.gmail.com/ [2]
       - Link: https://lore.kernel.org/linux-mm/CAJD7tkYvFyOSX+rP_FKGBhxvZiCDxtpsNp-c5CGOA-4Bq9oXSg@mail.gmail.com/ [3]
       - Link: https://lore.kernel.org/linux-mm/172616070094.2055617.17676042522679701515.stgit@firesoul/ [4]
-      - 042a0bc38026 "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - d792902fd6f9 "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - fb5f5ffdda56 "mm: zswap: drop list_lru param from zswap_lru_add() and _del()"
+    - 7f198875bb7b "mm: zswap: drop list_lru param from zswap_lru_add() and _del()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260731053721.1412304-1-wfelipe@google.com
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 2c9bbae87da7 "selftests/cgroup: test_zswap: skip test_no_kmem_bypass if debugfs is unavailable"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260801041255.752039-1-wfelipe@google.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

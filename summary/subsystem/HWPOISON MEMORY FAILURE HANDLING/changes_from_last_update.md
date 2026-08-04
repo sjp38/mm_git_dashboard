@@ -9,12 +9,25 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-unstable: 10 -> 10 commits (no change)
   - series: 1 (9) -> 1 (9) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
     - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+  - changed commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - c7586093896f "mm: introduce and use vma_filebacked_address() (4/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 86a4410bc1af "mm/memory-failure: fix refcount leak on soft-offline LBS folio"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260803060001.800638-1-dayou5941@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,9 +1,17 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 3 commits
   - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 2 -> 2 commits (no change)
+  - new commits
+    - dcc24ed0c702 "mm: fix incorrect flush address in direct page table reclaim"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260804003708.49830-1-luto@kernel.org
+      - Link: https://lore.kernel.org/all/CA+55aFzBggoXtNXQeng5d_mRoDnaMBE5Y+URs+PHR67nUpMtaw@mail.gmail.com/T/#u [0]
+      - Link: https://github.com/BurntSushi/ripgrep/issues/3494 [1]
+      - Link: https://github.com/dfoxfranke/ripgrep-3494-analysis
 - mm-stable: 30 -> 30 commits (no change)
   - series: 4 (26) -> 4 (26) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
@@ -11,70 +19,90 @@
     - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 69 -> 69 commits (no change)
+- mm-unstable: 69 -> 70 commits
   - series: 9 (60) -> 9 (60) (no change)
-    - no role, nobody: 10 -> 10 commits (no change)
-    - no role, no role : 23 -> 23 commits (no change)
+    - no role, nobody: 10 -> 9 commits
+    - no role, no role : 23 -> 24 commits
     - no role, reviewer: 8 -> 8 commits (no change)
-    - no role, maintainer: 7 -> 7 commits (no change)
+    - no role, maintainer: 7 -> 8 commits
     - reviewer, no role : 10 -> 10 commits (no change)
     - reviewer, reviewer: 8 -> 8 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
   - changed commits
-    - series "Keep tail page private zero at free and folio split", v3. (5)
-      - 6d30de195c67 "mm/page_alloc: remove set_page_private() in prep_compound_tail() (4/5)"
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - 97c09ea5b8e1 "mm: decouple protnone helpers from CONFIG_NUMA_BALANCING (0/15)"
         - Authored by no role player, reviewed by no role player
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-5-7e4fe155f5b9@nvidia.com
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)", v2. (10)
-      - c449f77d6e58 "mm: provide free_reserved_pages(), removing x86 variant (1/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-2-4afc76c73d61@kernel.org
-      - b2333d05c0a9 "x86/mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (6/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-7-4afc76c73d61@kernel.org
-      - 1172e6832bcf "mm/sparse: remove bootmem_info.h include (8/10)"
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260708111417.173443-2-kirill@shutemov.name
+      - 239cc2be7430 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
         - Authored by no role player, reviewed by no role player
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-9-4afc76c73d61@kernel.org
-      - cd1313dfca53 "mm/bootmem_info: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (9/10)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-10-4afc76c73d61@kernel.org
-    - series "mm: split a couple of headers from internal.h", v2. (3)
-      - caf731ffe399 "mm: split out mm_init and memblock declarations from internal.h (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - f5c69594bce4 "mm: split out sparse declarations from internal.h (2/3)"
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - 39b3eb900595 "mm: add VM_UFFD_RWP VMA flag (4/15)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-2-695631425968@kernel.org
-    - d705622c45b4 "mm: split out vmalloc declarations from internal.h"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-      - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-    - ca23f6c0fb76 "mm: let node_reclaim() return the number of pages reclaimed"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
-    - series "mm/page_alloc: couple of followups for recent cleanups", v3. (4)
-      - ad05ba3c9e49 "mm/page_alloc: remove a couple of VM_BUG_ON()st (3/4)"
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-6-kirill@shutemov.name
+      - 179639f2df43 "mm: add MM_CP_UFFD_RWP change_protection() flag (5/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
+      - 770f9964536f "mm: preserve RWP marker across PTE rewrites (6/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
+      - ac432baf7c3c "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP (7/15)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-4-fc4d246f705d@google.com
-        - Link: https://lore.kernel.org/all/7F866265-3F2E-4765-B9D4-9AB898A9C4AC@nvidia.com/
-    - 3af57bc5795c "mm/page_alloc: boost watermarks on atomic allocation failure"
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-9-kirill@shutemov.name
+      - 48629cbceeb6 "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing (8/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-10-kirill@shutemov.name
+      - 4e6e93595249 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP (9/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
+      - 0f297f36a30f "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution (11/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - c7586093896f "mm: introduce and use vma_filebacked_address() (4/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org
+    - eb113deedb6b "mm/page_alloc: boost watermarks on atomic allocation failure"
       - Authored by no role player, reviewed by no role player
-      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+      - added "Cc: Liam Howlett <liam@infradead.org>"
+      - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
       - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
+    - 8ebfce1967ce "mm/sparse: correct init section annotations"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
+      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260731164758.1210668-1-ekffu200098@gmail.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - 072a7158092f "mm: use a folio in the softleaf_is_device_private path"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260803031554.30421-1-hongfu.li@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

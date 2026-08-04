@@ -17,13 +17,16 @@
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 10 -> 10 commits (no change)
   - changed commits
-    - ca23f6c0fb76 "mm: let node_reclaim() return the number of pages reclaimed"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
-    - 3af57bc5795c "mm/page_alloc: boost watermarks on atomic allocation failure"
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - 239cc2be7430 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+    - eb113deedb6b "mm/page_alloc: boost watermarks on atomic allocation failure"
       - Authored by no role player, reviewed by no role player
-      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+      - added "Cc: Liam Howlett <liam@infradead.org>"
+      - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
       - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

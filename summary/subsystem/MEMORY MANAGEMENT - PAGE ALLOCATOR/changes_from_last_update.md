@@ -9,73 +9,34 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 25 -> 25 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 17 -> 17 commits (no change)
+- mm-unstable: 17 -> 19 commits
   - series: 4 (13) -> 4 (13) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 4 -> 5 commits
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 5 -> 5 commits (no change)
-  - changed commits
-    - series "Keep tail page private zero at free and folio split", v3. (5)
-      - df6dbd626d53 "mm/compaction: stop recording free page order in page->private (1/5)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-2-7e4fe155f5b9@nvidia.com
-      - 8f2f7393ec81 "mm/page_alloc: make sure tail_page->private is zero at page free time (3/5)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-4-7e4fe155f5b9@nvidia.com
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)", v2. (10)
-      - c449f77d6e58 "mm: provide free_reserved_pages(), removing x86 variant (1/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-2-4afc76c73d61@kernel.org
-    - series "mm: split a couple of headers from internal.h", v2. (3)
-      - caf731ffe399 "mm: split out mm_init and memblock declarations from internal.h (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-    - ca23f6c0fb76 "mm: let node_reclaim() return the number of pages reclaimed"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
-    - series "mm/page_alloc: fixes for free_pages_nolock() on RT/UP". (2)
-      - ce2d71df0e03 "mm/page_alloc: don't spin_trylock() in NMI on UP (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-0-fadc49952dda@google.com
-        - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-1-fadc49952dda@google.com
-      - de6469740c72 "mm/page_alloc: don't spin_trylock() when disallowed in free_one_page() (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-2-fadc49952dda@google.com
-    - series "mm/page_alloc: couple of followups for recent cleanups", v3. (4)
-      - f23b6b05684b "mm/page_alloc: rename FPI_TRYLOCK -> FPI_NOLOCK (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-0-fc4d246f705d@google.com
-        - Link: https://lore.kernel.org/all/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com/
-        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-1-fc4d246f705d@google.com
-      - 6b84918a37aa "mm/page_alloc: fixup alloc_pages_nolock_noprof() comment (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-3-fc4d246f705d@google.com
-        - Link: https://sashiko.dev/#/patchset/20260703-alloc-trylock-v5-0-c87b714e19d3%40google.com?part=6
-      - ad05ba3c9e49 "mm/page_alloc: remove a couple of VM_BUG_ON()st (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
-        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-4-fc4d246f705d@google.com
-        - Link: https://lore.kernel.org/all/7F866265-3F2E-4765-B9D4-9AB898A9C4AC@nvidia.com/
-    - 3af57bc5795c "mm/page_alloc: boost watermarks on atomic allocation failure"
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - d1d78232fb08 "mm/page_reporting: add page_reporting_delay_ms module parameter"
       - Authored by no role player, reviewed by no role player
-      - added "Cc: Brendan Jackman <brendan.jackman@linux.dev>"
+      - Link: https://lore.kernel.org/20260731193705.2902728-1-pratmal@google.com
+    - 5cef47167e03 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/tencent_B9556590D4B65ACF74C06897689A6E39F206@qq.com
+      - Link: https://lore.kernel.org/linux-mm/tencent_FFD4F4D728AAE8A8AE0AF277A59854A29A06@qq.com/
+    - 9d9e4891d82f "mm-page_alloc-only-update-lowmem_reserve_ratio-on-sysctl-write-fix"
+      - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - eb113deedb6b "mm/page_alloc: boost watermarks on atomic allocation failure"
+      - Authored by no role player, reviewed by no role player
+      - added "Cc: Liam Howlett <liam@infradead.org>"
+      - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
       - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
+  - dropped commits
     - 94f9b3980dd4 "mm/page_reporting: Add page_reporting_delay_ms module parameter"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
       - Link: https://lore.kernel.org/20260731193705.2902728-1-pratmal@google.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

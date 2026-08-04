@@ -10,13 +10,31 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
 - mm-unstable: 22 -> 22 commits (no change)
   - series: 3 (22) -> 3 (22) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
+    - no role, nobody: 3 -> 2 commits
+    - no role, no role : 9 -> 10 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - 239cc2be7430 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - ac432baf7c3c "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP (7/15)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam Howlett <liam.howlett@oracle.com>"
+        - Link: https://lore.kernel.org/20260708111417.173443-9-kirill@shutemov.name
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - c7586093896f "mm: introduce and use vma_filebacked_address() (4/15)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

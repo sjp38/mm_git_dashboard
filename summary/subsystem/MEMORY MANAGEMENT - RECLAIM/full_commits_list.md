@@ -28,55 +28,55 @@
     - no role, reviewer: 3 commits
     - no role, maintainer: 10 commits
   - full commits list
-      - 74f71849927f "memcg: bail out proactive reclaim when memcg is dying" (2/4)
+      - 5682cdddb38e "memcg: bail out proactive reclaim when memcg is dying" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
     - series "mm: clean up folio LRU and swap declarations", v9. (3 commits)
-      - 183c50a9cd1c "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
+      - 3839a44dd577 "mm/swap: colocate page-cluster sysctl with swap readahead" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
         - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-    - ca23f6c0fb76 "mm: let node_reclaim() return the number of pages reclaimed"
+    - a8fac8cc860e "mm: let node_reclaim() return the number of pages reclaimed"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
     - series "mm/vmscan: fix swappiness=max and clean up per-node proactive reclaim", v4. (4 commits)
-      - 94f68bd628b4 "mm/vmscan: fix anon-only reclaim evicting file pages when swappiness=max" (0/4)
+      - dfaf8b2cdee5 "mm/vmscan: fix anon-only reclaim evicting file pages when swappiness=max" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260724033435.2573323-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260724033435.2573323-2-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/cgroups/7ddf3eee-5fe2-45f7-8614-c8936a039e04@linux.dev/ [1]
-      - 00d7aa512c21 "mm: vmscan: propagate real error code from per-node proactive reclaim" (1/4)
+      - 46a6e336bbff "mm: vmscan: propagate real error code from per-node proactive reclaim" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260724033435.2573323-3-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/all/20250717235604.2atyx2aobwowpge3@offworld/T/#m3514718be82a31b05726a49da9b61fbfc69a589e [1]
-      - 47892455e78b "mm: vmscan: drop unused gfp_mask parameter from __node_reclaim()" (2/4)
+      - acfc2dd9c09e "mm: vmscan: drop unused gfp_mask parameter from __node_reclaim()" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260724033435.2573323-4-ridong.chen@linux.dev
-      - 1f66dafdecac "mm/mglru: fix anon-only reclaim evicting file pages when swappiness=max" (3/4)
+      - a8b580b3119b "mm/mglru: fix anon-only reclaim evicting file pages when swappiness=max" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260724033435.2573323-5-ridong.chen@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260717113300.214717-1-ridong.chen@linux.dev [1]
-      - 042a0bc38026 "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - d792902fd6f9 "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - 27b8c0293d6a "mm/swap: remove SWP_FS_OPS" (5/7)
+      - debd41f1f708 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
-      - 28b1a4400968 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
+      - 936afd0023fc "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
-      - a74065608c3a "mm: vmscan: add a helper to identify file-backed executable folios" (1/3)
+      - a9e3bcdfdd6c "mm: vmscan: add a helper to identify file-backed executable folios" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/2ee74f9f98ac45a2f0db0ceb018e086bdb671d17.1784509721.git.baolin.wang@linux.alibaba.com
-      - 524086e9ec3f "mm: mglru: promote mapped executable folios after first usage" (2/3)
+      - 8ec1f5461533 "mm: mglru: promote mapped executable folios after first usage" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/f57d94b1d85bb3d620d89bb739128f0d929bf9c6.1784509721.git.baolin.wang@linux.alibaba.com
-      - 48a93dc7c743 "mm: vmscan: fix node reclaim ignoring swappiness parameter" (1/2)
+      - 9ac88a6396ec "mm: vmscan: fix node reclaim ignoring swappiness parameter" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723032434.2016749-3-ridong.chen@linux.dev
-      - 8ad1862ef1f0 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (1/2)
+      - c7444cef5bce "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

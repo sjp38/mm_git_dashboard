@@ -26,83 +26,83 @@
         - Link: https://lore.kernel.org/20260703114202.365553-6-dev.jain@arm.com
 - mm-unstable: 22 total, 3 (22) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, no role : 9 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 10 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 4 commits
     - maintainer, no role : 2 commits
   - full commits list
-      - 8b76b591b96b "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 239cc2be7430 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - bb2deed8bffe "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP" (7/15)
+      - ac432baf7c3c "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP" (7/15)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260708111417.173443-9-kirill@shutemov.name
-      - 926c0a8e95b0 "ksm: add mremap selftests for ksm_rmap_walk" (2/3)
+      - ad0a1be65177 "ksm: add mremap selftests for ksm_rmap_walk" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703162637070FU4ekl58Hw_Z7OSuJryZB@zte.com.cn
     - series "mm: make VMA page offset handling more consistent", v2. (33 commits)
-      - d16fecc49d1d "mm: move vma_start_pgoff() into mm.h and clean up" (0/33)
+      - 907c723ff612 "mm: move vma_start_pgoff() into mm.h and clean up" (0/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-0-2a5aa403d977@kernel.org
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-1-2a5aa403d977@kernel.org
-      - ffd42be29b85 "mm/rmap: update mm/interval_tree.c comments" (4/33)
+      - 061a9d064c64 "mm/rmap: update mm/interval_tree.c comments" (4/33)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-5-2a5aa403d977@kernel.org
-      - 5d744658bcbf "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
+      - 8d8ee70ee87c "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - aeec4fd398b5 "mm/rmap: elide unnecessary static inline's in interval_tree.c" (6/33)
+      - fc4b874ef762 "mm/rmap: elide unnecessary static inline's in interval_tree.c" (6/33)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-7-2a5aa403d977@kernel.org
-      - a8d30294aa05 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
+      - 5a1a7448695b "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - e6a882c3caa6 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma" (8/33)
+      - 15083d45682e "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma" (8/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
-      - b796bf55b28e "mm/rmap: rename anon_vma_interval_tree_*() params and use pgoff_t" (9/33)
+      - b56523a85b40 "mm/rmap: rename anon_vma_interval_tree_*() params and use pgoff_t" (9/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-10-2a5aa403d977@kernel.org
-      - c9cc4a1aaf2e "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
+      - 3e7010d98c8c "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
     - series "mm/rmap: Refactor try_to_unmap_one", v4. (5 commits)
-      - ad99533046c9 "mm/rmap: convert page -> folio for hwpoison checks" (0/5)
+      - 1c66be7bbca1 "mm/rmap: convert page -> folio for hwpoison checks" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260730094559.418003-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260730094559.418003-2-dev.jain@arm.com
-      - a992e02a2fa3 "mm/rmap: add try_to_unmap_poisoned_hugetlb_one" (1/5)
+      - b05fc2f638e0 "mm/rmap: add try_to_unmap_poisoned_hugetlb_one" (1/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260730094559.418003-3-dev.jain@arm.com
-      - 488853756749 "mm/rmap: refactor some code around lazyfree folio unmapping" (2/5)
+      - 18f67c34d5d9 "mm/rmap: refactor some code around lazyfree folio unmapping" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260730094559.418003-4-dev.jain@arm.com
-      - f0bb28f62601 "mm/rmap: refactor anon folio unmap in try_to_unmap_one" (3/5)
+      - 81ecacf69b7b "mm/rmap: refactor anon folio unmap in try_to_unmap_one" (3/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260730094559.418003-5-dev.jain@arm.com
-      - db7570494404 "mm/rmap: add anon folio unmap dispatcher" (4/5)
+      - e21d68eb7a4f "mm/rmap: add anon folio unmap dispatcher" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260730094559.418003-6-dev.jain@arm.com
-      - 293a08712240 "mm/memory: batch set uffd-wp markers during zapping" (1/3)
+      - caf4cf258a06 "mm/memory: batch set uffd-wp markers during zapping" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720065508.2695106-3-dev.jain@arm.com
-      - 05f53f4ff7c6 "mm/rmap: batch unmap file folios belonging to uffd-wp VMAs" (2/3)
+      - 4570afa74dc7 "mm/rmap: batch unmap file folios belonging to uffd-wp VMAs" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720065508.2695106-4-dev.jain@arm.com
-      - b0908747fab1 "mm: introduce and use vma_filebacked_address()" (4/15)
-        - Authored by no role player, reviewed by nobody
+      - c7586093896f "mm: introduce and use vma_filebacked_address()" (4/15)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org
-      - 856ea5eb947d "mm/rmap: track whether the page VMA mapped walk is anonymous" (6/15)
+      - 4c6cd2fc2277 "mm/rmap: track whether the page VMA mapped walk is anonymous" (6/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-7-2d549757a76f@kernel.org
-      - 2315b49a34a3 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
+      - 015ecc5fd69d "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
-      - 28b1a4400968 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
+      - 936afd0023fc "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com

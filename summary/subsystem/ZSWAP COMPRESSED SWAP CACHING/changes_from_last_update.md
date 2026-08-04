@@ -5,18 +5,25 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
+- mm-unstable: 2 -> 3 commits
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
+  - changed commits
+    - 7f198875bb7b "mm: zswap: drop list_lru param from zswap_lru_add() and _del()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Nhat Pham <nphamcs@gmail.com>"
+      - dropped "Cc: Nhat Pham <nphamcs@gmail.com>"
+      - Link: https://lore.kernel.org/20260731053721.1412304-1-wfelipe@google.com
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - fb5f5ffdda56 "mm: zswap: drop list_lru param from zswap_lru_add() and _del()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - Link: https://lore.kernel.org/20260731053721.1412304-1-wfelipe@google.com
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - 2c9bbae87da7 "selftests/cgroup: test_zswap: skip test_no_kmem_bypass if debugfs is unavailable"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260801041255.752039-1-wfelipe@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
