@@ -6,12 +6,12 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v6. (3 commits)
-      - 7d0ceaf66560 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/3)
+      - 10d8ba097e2e "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-0-8cc77dcc0018@kernel.org
         - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-1-8cc77dcc0018@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - f2f7641e2550 "arm64: remove redundant concurrent ptdump UAF mitigation" (2/3)
+      - bcc4f4acd313 "arm64: remove redundant concurrent ptdump UAF mitigation" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-5-8cc77dcc0018@kernel.org
 - mm-stable: 3 total, 1 (1) series, 2 non-series commits
@@ -35,35 +35,35 @@
     - no role, no role : 6 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 7db5a9348278 "mm: split out vmalloc declarations from internal.h"
+    - 176c7e692fdb "mm: split out vmalloc declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-      - 4c3db8cbe219 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/7)
+      - 5bb41ac4c85a "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-4-jiangwen6@xiaomi.com
-      - 0e55f2c7c99b "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/7)
+      - 5312e7d47427 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-5-jiangwen6@xiaomi.com
-      - b9b566303353 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (4/7)
+      - 5b1ae68f52f5 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-6-jiangwen6@xiaomi.com
-      - 7be81f4755c6 "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (5/7)
+      - 0fbf88ab3fae "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-7-jiangwen6@xiaomi.com
-      - f9949c8b8132 "mm/vmalloc: simplify vmap batching helper and limit scan by PFN alignment" (6/7)
+      - be1ce6e2f3f6 "mm/vmalloc: simplify vmap batching helper and limit scan by PFN alignment" (6/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260722085841.3047673-1-jiangwen6@xiaomi.com
-    - f736d5ec35b3 "mm/vmalloc: align vm_area so vmap() can batch mappings"
+    - f47eb7b20e6f "mm/vmalloc: align vm_area so vmap() can batch mappings"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260715120813.3609949-8-jiangwen6@xiaomi.com
-    - f6dffab9622d "mm/vmalloc: make vm_struct.nr_pages an unsigned long"
+    - 58b9dd0eb990 "mm/vmalloc: make vm_struct.nr_pages an unsigned long"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260801114915.115224-1-iprintercanon@gmail.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 850cc2fc132f "mm/vmalloc: do not warn on -ENOMEM from va_alloc()"
+    - 7f7d0f7ce836 "mm/vmalloc: do not warn on -ENOMEM from va_alloc()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260802104627.63892-1-urezki@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

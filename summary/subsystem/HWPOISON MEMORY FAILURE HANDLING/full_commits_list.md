@@ -21,42 +21,42 @@
     - reviewer, reviewer: 3 commits
   - full commits list
     - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (5 commits)
-      - fb53daa61232 "mm/memory-failure: drop dead error_states[] entry for reserved pages" (0/5)
+      - f1eec68786f5 "mm/memory-failure: drop dead error_states[] entry for reserved pages" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-0-c6ed5b62eea2@debian.org
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-1-c6ed5b62eea2@debian.org
-      - 3b935fd1114c "mm/memory-failure: surface unhandlable kernel pages as -ENOTRECOVERABLE" (1/5)
+      - d2f1e2a606fa "mm/memory-failure: surface unhandlable kernel pages as -ENOTRECOVERABLE" (1/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-2-c6ed5b62eea2@debian.org
-      - 042a8d84a4c7 "mm/memory-failure: report MF_MSG_KERNEL for unrecoverable kernel pages" (2/5)
+      - 21ece6096037 "mm/memory-failure: report MF_MSG_KERNEL for unrecoverable kernel pages" (2/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-3-c6ed5b62eea2@debian.org
-      - 793b469d363c "mm/memory-failure: add panic option for unrecoverable pages" (3/5)
+      - 4a4c1bf97571 "mm/memory-failure: add panic option for unrecoverable pages" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260630-ecc_panic-v10-4-c6ed5b62eea2@debian.org
-      - 6f79935dda90 "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
+      - 465f326305f0 "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - fff07619887e "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
+      - c8c1182af8c2 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - bb3dc88bffb3 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma" (8/33)
+      - 3e6d3d8cbd15 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma" (8/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
-      - 66e03459947d "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
+      - 2496b7bdb2a9 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
-    - 322b73414a39 "selftests/mm: unpoison pages in memory-failure teardown"
+    - 8b0be09af8a5 "selftests/mm: unpoison pages in memory-failure teardown"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
-      - e6f448e5227f "mm: introduce and use vma_filebacked_address()" (4/15)
+      - b9910d74e735 "mm: introduce and use vma_filebacked_address()" (4/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 66eb2dc77c8a "mm/memory-failure: fix refcount leak on soft-offline LBS folio"
+    - 3418d78585b8 "mm/memory-failure: fix refcount leak on soft-offline LBS folio"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260803060001.800638-1-dayou5941@163.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

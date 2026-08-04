@@ -25,8 +25,14 @@
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-nonmm-stable: 0 -> 0 commits (no change)
+- mm-nonmm-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - 1db1573bc59f "kernel/fork: declare max_threads __read_mostly"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260707092354.465847-1-jansef.jian@hj-micro.com
+- mm-nonmm-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits

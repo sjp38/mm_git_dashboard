@@ -75,32 +75,32 @@
     - no role, reviewer: 4 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-      - ed19b4f0e1f2 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 5b79ede1d41a "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - fbf85edd5455 "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - 2e77877ee6e6 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - d9f5de48fdda "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 6cabe6e6e286 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
     - series "mm: handle device-private PMDs in walk callbacks", v3. (3 commits)
-      - a0ebc6843ca6 "mm/mempolicy: skip non-present PMDs when queueing folios" (0/3)
+      - 22a32d8aa6af "mm/mempolicy: skip non-present PMDs when queueing folios" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710105557.1987433-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260710105557.1987433-2-usama.arif@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
-    - d3fa34857fe4 "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
+    - 6f2fec66651e "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260727-kcompact-v1-1-bdfefddd6874@debian.org
       - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
-    - e2839097518e "mm: mempolicy: fix automatic numa balancing for shmem"
+    - ea5ef8cc711e "mm: mempolicy: fix automatic numa balancing for shmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
-      - b1c5e38f9291 "mm: introduce and use linear_folio_page_index()" (7/15)
+      - 30786243303c "mm: introduce and use linear_folio_page_index()" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
-    - 19490e9e2eb2 "mm/migrate_device: clear stale mapping after freeing swapcache"
+    - ef7e672a0288 "mm/migrate_device: clear stale mapping after freeing swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260728062832.1107127-1-arvind.yadav@intel.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -15,26 +15,26 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "zram: lockmap tweaks". (2 commits)
-      - 4c59f45176ff "zram: move lockmap to be per-zram instead per table" (0/2)
+      - 3eba8f549925 "zram: move lockmap to be per-zram instead per table" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260714141300.3945672-1-bigeasy@linutronix.de
         - Link: https://lore.kernel.org/20260714141300.3945672-2-bigeasy@linutronix.de
-      - 906cdd49e30f "zram: use a custom key for each zram object" (1/2)
+      - a535392e59f2 "zram: use a custom key for each zram object" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260714141300.3945672-3-bigeasy@linutronix.de
-    - 38235d49c976 "Documentation: zram: remove sections numbering"
+    - ef79db5e6d2f "Documentation: zram: remove sections numbering"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260728021229.181627-1-senozhatsky@chromium.org
     - series "zram: fix zram issues reported by sashiko". (2 commits)
-      - 8772bdbe4356 "zram: set default primary compressor in zram_destroy_comps()" (0/2)
+      - b5acd8b4ac0a "zram: set default primary compressor in zram_destroy_comps()" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260729045745.775973-2-senozhatsky@chromium.org
         - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com [1]
-      - d6022ca521a7 "zram: validate deflate params" (1/2)
+      - e0ff52d6581f "zram: validate deflate params" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260729045745.775973-3-senozhatsky@chromium.org
         - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com
-    - 0b13a573b8d9 "Documentation: zram: correct algo parameters configuration documentation"
+    - d07020e5ee6e "Documentation: zram: correct algo parameters configuration documentation"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260730075158.1339787-1-senozhatsky@chromium.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

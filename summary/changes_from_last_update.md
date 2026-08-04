@@ -21,10 +21,10 @@
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, nobody: 51 -> 51 commits (no change)
     - maintainer, no role : 6 -> 6 commits (no change)
-- mm-unstable: 401 -> 404 commits
+- mm-unstable: 404 -> 404 commits (no change)
   - series: 48 (310) -> 48 (310) (no change)
-    - no role, nobody: 68 -> 70 commits
-    - no role, no role : 101 -> 102 commits
+    - no role, nobody: 70 -> 70 commits (no change)
+    - no role, no role : 102 -> 102 commits (no change)
     - no role, reviewer: 36 -> 36 commits (no change)
     - no role, maintainer: 66 -> 66 commits (no change)
     - reviewer, nobody: 2 -> 2 commits (no change)
@@ -35,51 +35,329 @@
     - maintainer, no role : 14 -> 14 commits (no change)
     - maintainer, reviewer: 14 -> 14 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - a9655c706d8f "tmpfs/ramfs: let memfd_create() work on nommu"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-nonmm-unstable -> mm-unstable
-      - Link: https://lore.kernel.org/20260523130445.1101818-1-daniel@thingy.jp
-    - eccb43222fbb "riscv: mm: exclude invalid THP PMDs from page table check"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-unstable
-      - Link: https://lore.kernel.org/20260523042052.35476-1-cuiyunhui@bytedance.com
-    - 0909169a8ce8 "riscv: mm: fix concurrency in mark_new_valid_map()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-unstable
-      - Link: https://lore.kernel.org/20260629-riscv-mm-new-valid-map-ordering-v1-1-60d8c10c6292@iscas.ac.cn
-      - Link: https://lore.kernel.org/linux-riscv/da19ffcf-8042-4f96-9c2d-649468dc6a0a@kernel.org/ # [1]
 - mm-new: 15 -> 15 commits (no change)
   - series: 2 (5) -> 2 (5) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-- mm-nonmm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 92 -> 84 commits
-  - series: 9 (26) -> 8 (23)
-    - no role, nobody: 36 -> 33 commits
-    - no role, no role : 21 -> 20 commits
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 23 -> 22 commits
-    - maintainer, nobody: 9 -> 6 commits
-    - maintainer, no role : 1 -> 1 commits (no change)
-  - dropped commits
-    - d12928cf3f35 "lib/xz: replace min_t with min"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260609150030.634570-1-lasse.collin@tukaani.org
-    - series "delaytop: add delay max, timestamp and sorting for top latency analysis". (3)
-      - a0ac9286c88c "delaytop: add delay max for delaytop (0/3)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260702205704180NZ3cu_QF04KfBIL6vjTHL@zte.com.cn
-        - Link: https://lore.kernel.org/202607022058152607Y25X-YgssuvncpVNHljz@zte.com.cn
-      - 94ad0a427868 "delaytop: add timestamp of delay max (1/3)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260702205854461V25Py2xQvLesD8HF_2Rh8@zte.com.cn
-      - c6248d91914d "delaytop: sort by max delay to highlight top latency processes (2/3)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260702210000676TkC9mShguDS_34k8M6AtP@zte.com.cn
-    - 20bdbad4a10f "delaytop: fix a bunch of docs build problems"
+- mm-nonmm-stable: 0 -> 72 commits
+  - series: 0 (0) -> 7 (21)
+    - no role, nobody: 0 -> 29 commits
+    - no role, no role : 0 -> 15 commits
+    - no role, reviewer: 0 -> 2 commits
+    - no role, maintainer: 0 -> 21 commits
+    - maintainer, nobody: 0 -> 5 commits
+  - changed commits
+    - d179ee76aba9 "resource: downgrade "resource sanity check" warning to debug level"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260709005104.501556-1-rdunlap@infradead.org
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260523000131.7086-1-sakunix@yahoo.com
+    - 688bc88e2046 "ocfs2/cluster: keep heartbeat local node stable"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260616074931.3774929-1-zzzccc427@gmail.com
+    - 2fdf181afd43 "ocfs2: use inode_lock_nested() for orphan dir locking"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260620231223.46588-1-kartikey406@gmail.com
+    - c04cffb8c516 "lib/string: fix memchr_inv() for large ranges"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260621121133.16460-1-include@grrlz.net
+    - b4e28b4db72c "kernel/params: fix a pr_debug(" %p ") in parse_one()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260618190715.3563047-1-jim.cromie@gmail.com
+    - 5fc2358263e9 "watchdog/softlockup: fix softlockup typos"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260615174557.1836562-1-edcr1790@gmail.com
+    - d19cdc167e69 "signal: avoid shared siginfo namespace rewrites"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/86a8857d58d43ee26a8b365b837fd24830343494.1782159692.git.include@grrlz.net
+    - 306d71b09190 "signal: change sys_kill() to use SEND_SIG_NOINFO"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/aj6btAZqYuv59a8w@redhat.com
+      - Link: https://lore.kernel.org/all/20260622164029.11474-1-include@grrlz.net/ [1]
+    - 571999ccd122 "signal: avoid unconditional siginfo copy in send_signal_locked()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/akkaAgNfUby5_3nM@redhat.com
+    - a0275efa65ca "lib/math: add KUnit test suite for polynomial_calc()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260606030319.316752-1-adinata.softwareengineer@gmail.com
+    - 64d9183203ee "fat: restore original value when fat_ent_write failed"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260525085649.781643-1-n05ec@lzu.edu.cn
+    - b7a8d7589a63 "kernel: refactor: shorten has_pending_signals"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260520062849.183621-2-andrea.calabrese@amarulasolutions.com
+    - 997b3de37c26 "tools/accounting/delaytop.c: fix typo in PSI header string"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260701011153.93426-1-sarasena.adr@gmail.com
+    - 8700a4761beb "tools/compiler: match glibc 2.42 definition of __attribute_const__"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260701200635.3992767-1-rkr0k0r@gmail.com
+    - series "ocfs2/dlm: bound peer-controlled lengths in the o2dlm". (2)
+      - ea5b5609305a "ocfs2: bound namelen in dlm_migrate_request_handler (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260629-b4-disp-94fb6521-v1-0-6953bcc0421f@proton.me
+        - Link: https://lore.kernel.org/20260629-b4-disp-94fb6521-v1-1-6953bcc0421f@proton.me
+      - b54e03d9b369 "ocfs2: validate lengths in dlm_mig_lockres_handler (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260629-b4-disp-94fb6521-v1-2-6953bcc0421f@proton.me
+    - 8fdcbb5b3744 "ocfs2: fix hung task in orphan recovery"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260702090507.446517-1-r772577952@gmail.com
+    - 93781560b2fd "pps: pps-gpio: split IRQ handler into hardirq timestamper + threaded handler"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/2e32729029fbf6977ecf04665eb00f2efd3e2c17.1780359378.git.calvin@wbinvd.org
+    - 108646f7d9ac "lib/random32: convert selftest to KUnit"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260703050100.23944-1-note351@hotmail.com
+    - 45217e98987a "pps: don't try to wait for negative timeouts in PPS_FETCH"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/c5c97c3b3c9d66010382094fd538e59a38f4aacf.1781289959.git.calvin@wbinvd.org
+    - 3649f9a6b897 "pps: don't allow PPS_KC_BIND on removed devices"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/672778c177ac9b6fdcb445e35c97ac4ca7d1149f.1780506611.git.calvin@wbinvd.org
+    - b899e0279f90 "pps-gpio: remove dead capture_clear code"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/f70196bafcf75d9782dd36ed784e42345b6e8a1b.1783355507.git.calvin@wbinvd.org
+    - series "ocfs2: validate xattr entry bounds", v7. (2)
+      - 8914a3330b72 "ocfs2: validate inline xattrs during inode block validation (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260705025311.3429854-1-zzzccc427@gmail.com
+        - Link: https://lore.kernel.org/20260705025311.3429854-2-zzzccc427@gmail.com
+      - 2cf82b46d5e4 "ocfs2: validate external xattr entries when reading metadata (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260705025311.3429854-3-zzzccc427@gmail.com
+    - 99f62c484208 "taskstats: remove dead taskstats_exit_mutex declaration"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/98948e69094b73d6dfa63dcf0770067b57f3becf.1783435695.git.cyyzero16@gmail.com
+    - dc334b36ede1 "Revert "printf: Compile the kunit test with DISABLE_BRANCH_PROFILING DISABLE_BRANCH_PROFILING""
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260707135522.120447-1-pmladek@suse.com
+    - 1db1573bc59f "kernel/fork: declare max_threads __read_mostly"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260707092354.465847-1-jansef.jian@hj-micro.com
+    - f9632fe34999 ".get_maintainer.ignore: add Nathan Chancellor"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260707-add-nathan-to-get_maintainers-ignore-v1-1-810926e8eea3@kernel.org
+    - d66bf04b9904 "checkpatch: don't emit warnings for ID-base USB & PCI DT compatibles"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260707074629.3132930-1-wenst@chromium.org
+    - 03d0a3bebcb6 "mailmap: add entry for Charlie Jenkins"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260709-mailmap-v1-1-74d98b8149d6@gmail.com
+    - d48ace653220 "ocfs2: do not use make_bad_inode() in ocfs2_read_inode_block_full()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260709060101.207262-1-dmantipov@yandex.ru
+    - b74030fbf187 "rapidio: clear mport->net when rio_add_net() fails"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260708070628.721010-1-lgs201920130244@gmail.com
+    - 4ca62df6bc07 "ocfs2: validate rl_used against rl_count in refcount block validator"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260709132609.44233-1-security@auditcode.ai
+    - series "taskstats: fix cgroupstats invalid fd handling and add selftests". (2)
+      - b0860c1df2dc "taskstats: return -EBADF when cgroupstats receives an invalid fd (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/cover.1783713230.git.cyyzero16@gmail.com
+        - Link: https://lore.kernel.org/b4fd9e288e4a48efebaf41b4ffcdb204b06675c4.1783713230.git.cyyzero16@gmail.com
+      - e31d33fc331a "selftests/acct: add cgroupstats functional test (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/2a56921276f0962f97f00863e8c7d3c3f6893d5a.1783713230.git.cyyzero16@gmail.com
+    - 609d45af8310 "ocfs2: cluster: use GFP_NOFS for heartbeat bio allocation"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260710071756.3586797-1-joseph.qi@linux.alibaba.com
+    - 041c9d0ab53b "ocfs2: cluster: use an on-stack bio for the heartbeat write"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260710071756.3586797-2-joseph.qi@linux.alibaba.com
+    - 0a2418c32734 "selftests/acct: share netlink helpers"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/a2adf27308b5cd90d50b59e8519b87da49486bee.1783876192.git.cyyzero16@gmail.com
+    - bc96ad381f05 "FAT: allow 0xE9 near jump in fat_read_static_bpb()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260412070109.5197-1-zhangcoder@yeah.net
+    - series "misc lib/raid/ improvements v2". (8)
+      - b6a1359bbe27 "xor: enable lock context analysis (0/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260715144825.95432-1-hch@lst.de
+        - Link: https://lore.kernel.org/20260715144825.95432-2-hch@lst.de
+      - 2bfd85fd81cb "xor: improve the runtime selection benchmark (1/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260715144825.95432-3-hch@lst.de
+      - 75182f8d5732 "xor/kunit: fix a spelling error (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260715144825.95432-4-hch@lst.de
+      - 874d2edd07db "xor/kunit: add a benchmark (3/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260715144825.95432-5-hch@lst.de
+      - 2083d99bd831 "raid6: enable lock context analysis (4/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260715144825.95432-6-hch@lst.de
+      - d999af2192ef "raid6: defer implementation selection when built-in (5/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260715144825.95432-7-hch@lst.de
+      - cfbdbecb29e6 "raid6: improve the runtime selection benchmark (6/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260715144825.95432-8-hch@lst.de
+      - 10dab13117fa "raid6/kunit: add a benchmark (7/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260715144825.95432-9-hch@lst.de
+    - 83e98dbf19ab "fat: release buffer head after rebuilding parent"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260715020957.1096309-1-chenyichong@uniontech.com
+    - 31288373f626 "tools/accounting: fix macro typos in getdelays"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260716141545.1292951-1-shivanksharma2376543@gmail.com
+    - bc70726ddad5 "ocfs2: validate directory-index entry counts when reading metadata"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260713205625.92391-1-doruk@0sec.ai
+    - fd3c1fd8baf4 "selftests: ipc: change operation not supported error number"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260720204001.1663473-1-paul.white.kernel@gmail.com
+    - 2980cb4df319 "sysctl: move the "cad_pid" entry from pid_table[] to kern_reboot_table[]"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/al4C572uhLdBvyzH@redhat.com
+    - 9e10208005eb "sysctl: remove CONFIG_PROC_SYSCTL, it just mirrors CONFIG_SYSCTL"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/amdveg1m4E4uQlGv@redhat.com
+    - 9cbbd81241e6 "ocfs2: always run deallocs on copy-on-write completion"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260721102840.387663-1-dmantipov@yandex.ru
+      - Link: https://lore.kernel.org/ocfs2-devel/f1d7e266-4b44-41b9-98c0-5b3868a8d9c3@yandex.ru [1]
+    - series "ocfs2: cluster: o2hb_region_pin() fixes", v2. (3)
+      - 33741e6108ba "ocfs2: cluster: don't sleep while holding o2hb_live_lock in o2hb_region_pin() (0/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260722124933.430554-1-joseph.qi@linux.alibaba.com
+        - Link: https://lore.kernel.org/20260722124933.430554-2-joseph.qi@linux.alibaba.com
+      - 784f6a5f6e47 "ocfs2: cluster: avoid lock order inversion in o2hb_region_pin() from drop_item (1/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260722124933.430554-3-joseph.qi@linux.alibaba.com
+      - ed0df55cbc2b "ocfs2: cluster: fix o2hb_dependent_users leak on pin failure (2/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260722124933.430554-4-joseph.qi@linux.alibaba.com
+    - 4fc68ac9990b "rbtree: fixup kernel-doc names"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260722050759.3892887-1-rdunlap@infradead.org
+    - series "lib/ucs2_string.c: fix out-of-bounds read in ucs2_strnlen()", v2. (2)
+      - d223a552967a "lib/ucs2_string.c: fix out-of-bounds read in ucs2_strnlen() (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260723-fix-ucs2_strnlen-v2-0-9ea94e32a358@kernel.org
+        - Link: https://lore.kernel.org/20260723-fix-ucs2_strnlen-v2-1-9ea94e32a358@kernel.org
+      - d8af61fb25e7 "lib/ucs2_string.c: fix indentation (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260723-fix-ucs2_strnlen-v2-2-9ea94e32a358@kernel.org
+    - 1a85ff30377e "taskstats: fix cpumask parsing cutting off the last character"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/EC49FE41-7F5F-41E0-A07A-ABEB8ECA514D@grrlz.net
+    - 5c39996fc8a5 "llist: use correct function parameter name"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260723165113.225098-1-rdunlap@infradead.org
+    - 278c54766efc "stacktrace: header: repair kernel-doc comments"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260723161831.138237-1-rdunlap@infradead.org
+    - fb004e60b7ba "ocfs2: fix missing metadata reservation for large xattrs"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/amLwn3i9tET8yhG7@dev
+    - cde1c43f9466 "kcov: fix data corruption and race conditions on PREEMPT_RT"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/43552d09-2ce2-4b19-b0d3-a2d1ab952145@I-love.SAKURA.ne.jp
+    - 3e1cc2a2495c "powerpc/xive: add error return value to xive_smp_probe()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260724022851.466017-3-gouhao@uniontech.com
+    - 52d2b2544cd9 "drm: remove dead WARN_ON NULL check after GFP_NOFAIL allocation"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260724022851.466017-5-gouhao@uniontech.com
+    - 2eacd370732e "lib/test_hmm: remove dead NULL checks after GFP_NOFAIL allocations"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260724022851.466017-6-gouhao@uniontech.com
+    - 118ee8623eda "RDMA/cxgb4: remove dead NULL checks after GFP_NOFAIL allocations"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260724022851.466017-7-gouhao@uniontech.com
+    - series "ocfs2: harden heartbeat teardown races". (2)
+      - 38941e02ed04 "ocfs2: synchronize heartbeat callbacks with o2net teardown (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260624095310.763763-1-zzzccc427@gmail.com
+        - Link: https://lore.kernel.org/20260624095310.763763-2-zzzccc427@gmail.com
+      - 160a7ec492d7 "ocfs2: o2hb: quiesce negotiate handlers and timeout work (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260624095310.763763-3-zzzccc427@gmail.com
+    - 020b0430683d "rapidio: mport_cdev: fix use-after-free in dma_req_free()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260723235220.588424-1-james010kim@gmail.com
+- mm-nonmm-unstable: 84 -> 12 commits
+  - series: 8 (23) -> 1 (2)
+    - no role, nobody: 33 -> 4 commits
+    - no role, no role : 20 -> 5 commits
+    - no role, reviewer: 2 -> 0 commits
+    - no role, maintainer: 22 -> 1 commits
+    - maintainer, nobody: 6 -> 1 commits
+    - maintainer, no role : 1 -> 1 commits (no change)

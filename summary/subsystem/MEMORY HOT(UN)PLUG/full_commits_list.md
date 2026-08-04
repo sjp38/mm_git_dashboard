@@ -28,23 +28,23 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - 7e2b6c5c75bd "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - 2a0b6d4ff7e4 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - ffa1608c9a84 "mm/memory_hotplug: add mhp_online_type_to_str() and export string helpers" (1/10)
+      - 107832c6390d "mm/memory_hotplug: add mhp_online_type_to_str() and export string helpers" (1/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-3-gourry@gourry.net
-      - 6681256ce158 "mm/memory_hotplug: pass online_type to online_memory_block() via arg" (2/10)
+      - 628a91eb5469 "mm/memory_hotplug: pass online_type to online_memory_block() via arg" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-4-gourry@gourry.net
-      - 62ad0e6d6c86 "mm/memory_hotplug: export mhp_get_default_online_type" (3/10)
+      - 7ad8f5f58602 "mm/memory_hotplug: export mhp_get_default_online_type" (3/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-5-gourry@gourry.net
-      - 62fafcf5b6cb "mm/memory_hotplug: add __add_memory_driver_managed() with online_type arg" (4/10)
+      - c6b6a216f9dc "mm/memory_hotplug: add __add_memory_driver_managed() with online_type arg" (4/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-6-gourry@gourry.net
-      - 5d41a78b6106 "mm/memory_hotplug: add offline_and_remove_memory_ranges()" (5/10)
+      - 44e236d08d05 "mm/memory_hotplug: add offline_and_remove_memory_ranges()" (5/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-7-gourry@gourry.net
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

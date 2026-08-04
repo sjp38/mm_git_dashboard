@@ -27,17 +27,17 @@
     - maintainer, nobody: 1 commits
   - full commits list
     - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4 commits)
-      - ffdc649eb9ce "mm: kmemleak: confirm suspected leaks with a second scan" (0/4)
+      - d8369d0bbdcf "mm: kmemleak: confirm suspected leaks with a second scan" (0/4)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-0-5b93b1131089@debian.org
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-1-5b93b1131089@debian.org
-      - 3ae0157ebd78 "mm: kmemleak: report leaks only after N consecutive unreferenced scans" (1/4)
+      - 4df6b2ef5d14 "mm: kmemleak: report leaks only after N consecutive unreferenced scans" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-2-5b93b1131089@debian.org
-      - 1203bdd1fc2e "mm: kmemleak: factor leak confirmation into a helper" (2/4)
+      - 971de748c8a6 "mm: kmemleak: factor leak confirmation into a helper" (2/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-3-5b93b1131089@debian.org
-    - d2fcad98980d "mm/kmemleak: report RCU-tasks quiescent states during the scan"
+    - b7f7ebc7e1ac "mm/kmemleak: report RCU-tasks quiescent states during the scan"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260720-kmemleak_rcu_task-v1-1-5b460ade777d@debian.org
 - mm-new: 2 total, 1 (2) series, 0 non-series commits
@@ -45,11 +45,11 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm: kmemleak: default min_unref_scans to 2 for verbose kernels", v2. (3 commits)
-      - 9f9f97209813 "mm: kmemleak: default min_unref_scans to 2 for verbose auto-scan" (0/3)
+      - 27fa850fe465 "mm: kmemleak: default min_unref_scans to 2 for verbose auto-scan" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-0-7b9689ac77cb@debian.org
         - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-1-7b9689ac77cb@debian.org
-      - fdbf0fbc4d99 "Documentation: kmemleak: document the conditional min_unref_scans default" (1/3)
+      - 10fae132fac8 "Documentation: kmemleak: document the conditional min_unref_scans default" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-2-7b9689ac77cb@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

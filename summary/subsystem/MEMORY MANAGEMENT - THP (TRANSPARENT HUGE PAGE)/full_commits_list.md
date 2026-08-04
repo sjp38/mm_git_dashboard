@@ -12,15 +12,15 @@
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - fb0d41f96e92 "mm/huge_memory: initialise workingset state before folio split"
+    - 73125a2cb069 "mm/huge_memory: initialise workingset state before folio split"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260725101419.3938406-1-matt@readmodwrite.com
     - series "mm/huge_memory: fix huge_zero_pfn race", v2. (2 commits)
-      - f57fd23ca330 "mm/huge_memory: fix huge_zero_pfn race" (0/2)
+      - b41f6948348b "mm/huge_memory: fix huge_zero_pfn race" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-0-c5d8a41b317f@kernel.org
         - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-1-c5d8a41b317f@kernel.org
-      - 66e3e6cde9c5 "mm/huge_memory: separate out CONFIG_PERSISTENT_HUGE_ZERO_FOLIO logic" (1/2)
+      - 559e9d16bc3f "mm/huge_memory: separate out CONFIG_PERSISTENT_HUGE_ZERO_FOLIO logic" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-2-c5d8a41b317f@kernel.org
 - mm-stable: 5 total, 1 (5) series, 0 non-series commits
@@ -58,80 +58,80 @@
     - reviewer, reviewer: 6 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-      - eb670219ed9c "mm/huge_memory: add page->private check back in __split_folio_to_order()" (2/5)
+      - 5921133a461c "mm/huge_memory: add page->private check back in __split_folio_to_order()" (2/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/all/13f3fcda-7328-4aa5-afc6-75a294a82b2a@nvidia.com/ [1]
         - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-3-7e4fe155f5b9@nvidia.com
-      - ed19b4f0e1f2 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - 5b79ede1d41a "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - f98bb75fec08 "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
+      - fbb414a54319 "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
-      - fbf85edd5455 "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - 2e77877ee6e6 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - d1b14920192f "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP" (7/15)
+      - f661bd829ae1 "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP" (7/15)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260708111417.173443-9-kirill@shutemov.name
-      - 466ad805c68f "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
+      - 69e571f6b8b6 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
-      - e2004fcbea2a "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
+      - 0e3e8b8a467f "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
-      - 6f79935dda90 "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
+      - 465f326305f0 "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - fff07619887e "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
+      - c8c1182af8c2 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - d9f5de48fdda "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 6cabe6e6e286 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-      - 9c70224d7dba "mm/huge_memory: skip device-private PMDs in madvise_free_huge_pmd" (2/3)
+      - 6feb5ba760e2 "mm/huge_memory: skip device-private PMDs in madvise_free_huge_pmd" (2/3)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710105557.1987433-4-usama.arif@linux.dev
-    - 1cd3bb6183e1 "mm: huge_memory: fix kobject cleanup in thpsize_create error"
+    - f88448378ae6 "mm: huge_memory: fix kobject cleanup in thpsize_create error"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260713054154.120915-1-zenghongling@kylinos.cn
-      - 2203217c25cd "mm: convert __get_unmapped_area() to use vma_flags_t" (2/13)
+      - 0f8b8f1bd635 "mm: convert __get_unmapped_area() to use vma_flags_t" (2/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
     - series "Two small patches to clean up mm/mm_slot.h", v3. (2 commits)
-      - e54e865e2983 "mm/mm_slot.h: add a helper function mm_slot_remove" (0/2)
+      - b054ff7f9512 "mm/mm_slot.h: add a helper function mm_slot_remove" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
         - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
-      - 8aa799325db3 "mm/mm_slot.h: add comments for mm_slot_lookup/insert" (1/2)
+      - 59889ed75025 "mm/mm_slot.h: add comments for mm_slot_lookup/insert" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
     - series "mm: mincore: misc cleanups", v3. (6 commits)
-      - d3d2b98bd5d2 "mm: introduce pud_is_huge() helper" (0/6)
+      - 6eb0ee7d8465 "mm: introduce pud_is_huge() helper" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260717091347.1144789-1-wangkefeng.wang@huawei.com
         - Link: https://lore.kernel.org/20260717091347.1144789-2-wangkefeng.wang@huawei.com
     - series "mm/huge_memory: drop dead split helper variants". (2 commits)
-      - 3ced8cc5efb7 "mm/huge_memory: remove unused can_split_folio()" (0/2)
+      - a7522f236709 "mm/huge_memory: remove unused can_split_folio()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260716100345.473473-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260716100345.473473-2-kirill@shutemov.name
         - Link: https://lore.kernel.org/linux-mm/aldjhtfVByHDQXe6@thinkstation [1]
         - Link: https://lore.kernel.org/linux-mm/20260714122344.351895-1-kirill@shutemov.name [2]
-      - 3d58665f9938 "mm/huge_memory: fold split_folio_to_list_to_order() into split_folio_to_order()" (1/2)
+      - baa7c0ba882e "mm/huge_memory: fold split_folio_to_list_to_order() into split_folio_to_order()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260716100345.473473-3-kirill@shutemov.name
-    - c87a3a71b8f9 "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
+    - 45bd089d8e21 "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260730204724.16912-1-jakovnovak30@gmail.com
-      - b1c5e38f9291 "mm: introduce and use linear_folio_page_index()" (7/15)
+      - 30786243303c "mm: introduce and use linear_folio_page_index()" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
-    - 3bbbeab7d38e "selftests/mm: transhuge-stress: check duration inside page loop"
+    - 907156c25c31 "selftests/mm: transhuge-stress: check duration inside page loop"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260720103105.169955-1-sarthak.sharma@arm.com
     - series "Honor XA_FLAGS_ACCOUNT in xas_split_alloc() and charge to folio's memcg", v2. (2 commits)
-      - 37531a032399 "mm/huge_memory: use folio's memcg inside __folio_split()" (0/2)
+      - c79d41d56b20 "mm/huge_memory: use folio's memcg inside __folio_split()" (0/2)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260730-add-gfp_account-to-xas_split_alloc-v2-0-5a56c2361d85@nvidia.com
         - Link: https://lore.kernel.org/20260730-add-gfp_account-to-xas_split_alloc-v2-1-5a56c2361d85@nvidia.com
