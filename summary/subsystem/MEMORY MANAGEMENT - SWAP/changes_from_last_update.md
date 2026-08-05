@@ -8,16 +8,21 @@
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
 - mm-unstable: 15 -> 15 commits (no change)
-  - series: 3 (12) -> 3 (12) (no change)
+  - series: 3 (12) -> 3 (11)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 774fb4f48013 "mm: add some missing includes to mm-local headers"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

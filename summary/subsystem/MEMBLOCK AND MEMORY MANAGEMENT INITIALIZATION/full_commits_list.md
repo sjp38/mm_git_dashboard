@@ -46,19 +46,25 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - 2a0b6d4ff7e4 "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - c08f9340301a "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - a8cd53f9290c "memblock tests: split stubfs from internal.h to mm_init.h" (1/3)
+      - 434fc6bc239d "memblock tests: split stubfs from internal.h to mm_init.h" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
-      - 84817984ffc0 "mm: split out sparse declarations from internal.h" (2/3)
+      - 4383906c1c4e "mm: split out sparse declarations from internal.h" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-2-695631425968@kernel.org
-    - 176c7e692fdb "mm: split out vmalloc declarations from internal.h"
+    - a47e492ad809 "mm: split out vmalloc declarations from internal.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+      - 6fcae4168d62 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

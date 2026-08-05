@@ -6,11 +6,26 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 15 -> 15 commits (no change)
   - series: 3 (8) -> 3 (8) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, nobody: 4 -> 3 commits
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 2 commits
     - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
+  - changed commits
+    - c1b80a3c88a5 "mm: fix incorrect flush address in direct page table reclaim"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - added "Acked-by: Qi Zheng <qi.zheng@linux.dev>"
+      - dropped "Cc: Qi Zheng <zhengqi.arch@bytedance.com>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+      - dropped "Cc: David Hildenbrand (Red Hat) <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260804003708.49830-1-luto@kernel.org
+      - Link: https://lore.kernel.org/all/CA+55aFzBggoXtNXQeng5d_mRoDnaMBE5Y+URs+PHR67nUpMtaw@mail.gmail.com/T/#u [0]
+      - Link: https://github.com/BurntSushi/ripgrep/issues/3494 [1]
+      - Link: https://github.com/dfoxfranke/ripgrep-3494-analysis
 - mm-stable: 164 -> 164 commits (no change)
   - series: 23 (137) -> 23 (137) (no change)
     - no role, nobody: 8 -> 8 commits (no change)
@@ -19,25 +34,128 @@
     - no role, maintainer: 28 -> 28 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, nobody: 43 -> 43 commits (no change)
-- mm-unstable: 263 -> 263 commits (no change)
-  - series: 34 (200) -> 34 (200) (no change)
-    - no role, nobody: 27 -> 27 commits (no change)
+- mm-unstable: 263 -> 267 commits
+  - series: 34 (200) -> 35 (202)
+    - no role, nobody: 27 -> 28 commits
     - no role, no role : 58 -> 58 commits (no change)
     - no role, reviewer: 27 -> 27 commits (no change)
-    - no role, maintainer: 48 -> 48 commits (no change)
+    - no role, maintainer: 48 -> 51 commits
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 13 -> 13 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 53 -> 53 commits (no change)
+    - maintainer, nobody: 53 -> 52 commits
     - maintainer, no role : 10 -> 10 commits (no change)
     - maintainer, reviewer: 13 -> 13 commits (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 8 -> 8 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - maintainer, maintainer: 1 -> 2 commits
+  - new commits
+    - series "alloc_tag: introduce IOCTL-based filtering for MAP", v8. (6)
+      - 1b52cd6d5bc3 "alloc_tag-add-accuracy-based-filtering-to-ioctl-fix (5/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/e4e49ec4a5960292aeeb9e196526c18dc95228a2.1785867739.git.abhishekbapat@google.com
+    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3)
+      - 39e44ec79584 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
+  - changed commits
+    - series "alloc_tag: introduce IOCTL-based filtering for MAP", v8. (6)
+      - 4d34ab4bd6f2 "alloc_tag-add-ioctl-to-proc-allocinfo-fix (1/6)"
+        - Authored by a maintainer, reviewed by a maintainer
+        - added "Acked-by: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3)
+      - 15ade01e8d39 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev"
+        - added "Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev"
+        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260720164207.450685-2-usama.arif@linux.dev"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev
+        - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
+      - b2d6569d21bc "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev"
+        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev"
+        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
+    - series "Honor XA_FLAGS_ACCOUNT in xas_split_alloc() and charge to folio's memcg", v3. (2)
+      - bcd92e777060 "mm/huge_memory: use folio's memcg inside __folio_split() (0/2)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-0-38cb3ff325c5@nvidia.com"
+        - added "Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-1-38cb3ff325c5@nvidia.com"
+        - added "Fixes: 6b24ca4a1a8d4 ("mm: Use multi-index entries in the page cache")"
+        - dropped "Link: https://lore.kernel.org/20260730-add-gfp_account-to-xas_split_alloc-v2-0-5a56c2361d85@nvidia.com"
+        - dropped "Link: https://lore.kernel.org/20260730-add-gfp_account-to-xas_split_alloc-v2-1-5a56c2361d85@nvidia.com"
+        - dropped "Fixes: 6b24ca4a1a8d ("mm: Use multi-index entries in the page cache")"
+        - Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-0-38cb3ff325c5@nvidia.com
+        - Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-1-38cb3ff325c5@nvidia.com
+        - Link: https://sashiko.dev/#/patchset/20260727-add-gfp_account-to-xas_split_alloc-v1-1-9fae6bf64838%40nvidia.com?part=1 [1]
+        - Link: https://lore.kernel.org/all/amtcBZ-_QVRgCd6b@cmpxchg.org/ [2]
+    - 23aa737e37f7 "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260803152115.3479919-1-xialonglong2025@163.com
+    - series "mm: kmemleak: default min_unref_scans to 2 for verbose kernels", v2. (3)
+      - 218881eee253 "mm: kmemleak: default min_unref_scans to 2 for verbose auto-scan (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-0-7b9689ac77cb@debian.org
+        - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-1-7b9689ac77cb@debian.org
+- mm-new: 8 -> 16 commits
+  - series: 1 (1) -> 2 (8)
+    - no role, nobody: 3 -> 4 commits
+    - no role, no role : 3 -> 5 commits
+    - no role, reviewer: 0 -> 6 commits
+    - no role, maintainer: 2 -> 0 commits
+    - reviewer, nobody: 0 -> 1 commits
+  - new commits
+    - 774fb4f48013 "mm: add some missing includes to mm-local headers"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
+    - series "mm/page_ext: remove pgdat_page_ext_init()", v2. (2)
+      - 4b4fedf8e8da "mm/Kconfig: make FLATMEM depend on !NUMA (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260804151145.3419768-1-ekffu200098@gmail.com
+        - Link: https://lore.kernel.org/20260804151145.3419768-2-ekffu200098@gmail.com
+      - 6fcae4168d62 "mm/page_ext: remove pgdat_page_ext_init() (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
+    - series "mm/khugepaged: several cleanups", v3. (7)
+      - 18e55712ba25 "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan() (0/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-1-0364cad642a0@linux.dev
+        - Link: https://lore.kernel.org/all/20260605161422.213817-1-npache@redhat.com/ [1]
+        - Link: https://lore.kernel.org/all/20251008043748.45554-1-lance.yang@linux.dev/ [2]
+      - 2216da4884dd "mm/khugepaged: extract young page check into pte_is_referenced() helper (1/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-2-0364cad642a0@linux.dev
+      - e286d72d1bf6 "mm/khugepaged: introduce a count_collapse_event() helper (2/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-3-0364cad642a0@linux.dev
+      - 11f3108a0aef "mm/khugepaged: fix outdated comments (3/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-4-0364cad642a0@linux.dev
+      - 80848bfa1b1d "mm/khugepaged: refactor the PTE state checks into a helper (4/7)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-5-0364cad642a0@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/20251008043748.45554-1-lance.yang@linux.dev/ [1]
+      - 17932802eb33 "mm/khugepaged: unmap pte before releasing vma write lock (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-6-0364cad642a0@linux.dev
+    - 48fdbd2dc7ca "alloc_tag: fix undetected compressed tag overflow when profiling is disabled"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260804064408.105033-1-hao.ge@linux.dev
+  - changed commits
+    - 3c0d3699a1d2 "mm/memory-failure: fix refcount leak on soft-offline LBS folio"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20260804035356.2615408-1-dayou5941@163.com"
+      - dropped "Link: https://lore.kernel.org/20260803060001.800638-1-dayou5941@163.com"
+      - Link: https://lore.kernel.org/20260804035356.2615408-1-dayou5941@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

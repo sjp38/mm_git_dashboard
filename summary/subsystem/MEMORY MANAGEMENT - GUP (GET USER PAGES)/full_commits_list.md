@@ -2,35 +2,35 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 3 total, 0 (0) series, 3 non-series commits
+- mm-unstable: 4 total, 1 (1) series, 3 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
+    - no role, reviewer: 1 commits
     - reviewer, no role : 1 commits
   - full commits list
-    - ae75e88d8c25 "mm/gup: fix GUP-fast fallback for NULL-mapping order-0 folios"
+    - 3f9478451e50 "mm/gup: fix GUP-fast fallback for NULL-mapping order-0 folios"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260708005745.164928-1-jhubbard@nvidia.com
-    - 9a060e40cb40 "selftests/mm: fix gup_longterm EINVAL error message"
+    - f8182d08ebbd "selftests/mm: fix gup_longterm EINVAL error message"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/23557F4CB8CF36FF+20260724074603.1479243-1-zhaozhengzhuo@uniontech.com
-    - 2d345a8f66d7 "mm/gup: fix always draining LRU caches in collect_longterm_unpinnable_folios()"
+    - cb77915dbc1d "mm/gup: fix always draining LRU caches in collect_longterm_unpinnable_folios()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260731-check_and_migrate_movable_folios-v1-1-e0002d7b791e@kernel.org
-- mm-new: 3 total, 1 (1) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
-  - full commits list
     - series "selftests/mm: use pattern matching in .gitignore", v4. (2 commits)
-      - 48bcab0cd6ac "selftests/mm: rename local_config.h to local_config.h_gen" (0/2)
+      - 1da547cee780 "selftests/mm: rename local_config.h to local_config.h_gen" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260803221732.3651981-1-pratmal@google.com
         - Link: https://lore.kernel.org/20260803221732.3651981-2-pratmal@google.com
-    - 39048ef975b8 "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+  - full commits list
+    - 33fd52194949 "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
-    - 881e58a70e5f "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 8e5a12c0bc34 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

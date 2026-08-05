@@ -19,8 +19,55 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 6 -> 6 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+  - changed commits
+    - series "Honor XA_FLAGS_ACCOUNT in xas_split_alloc() and charge to folio's memcg", v3. (2)
+      - bcd92e777060 "mm/huge_memory: use folio's memcg inside __folio_split() (0/2)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-0-38cb3ff325c5@nvidia.com"
+        - added "Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-1-38cb3ff325c5@nvidia.com"
+        - added "Fixes: 6b24ca4a1a8d4 ("mm: Use multi-index entries in the page cache")"
+        - dropped "Link: https://lore.kernel.org/20260730-add-gfp_account-to-xas_split_alloc-v2-1-5a56c2361d85@nvidia.com"
+        - dropped "Link: https://lore.kernel.org/20260730-add-gfp_account-to-xas_split_alloc-v2-0-5a56c2361d85@nvidia.com"
+        - dropped "Fixes: 6b24ca4a1a8d ("mm: Use multi-index entries in the page cache")"
+        - Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-0-38cb3ff325c5@nvidia.com
+        - Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-1-38cb3ff325c5@nvidia.com
+        - Link: https://sashiko.dev/#/patchset/20260727-add-gfp_account-to-xas_split_alloc-v1-1-9fae6bf64838%40nvidia.com?part=1 [1]
+        - Link: https://lore.kernel.org/all/amtcBZ-_QVRgCd6b@cmpxchg.org/ [2]
+- mm-new: 0 -> 8 commits
+  - series: 0 (0) -> 1 (7)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 5 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - a9ac072fcf8b "selftests/mm: khugepaged: skip swap tests when no swap available"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
+    - series "mm/khugepaged: several cleanups", v3. (7)
+      - 18e55712ba25 "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan() (0/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-1-0364cad642a0@linux.dev
+        - Link: https://lore.kernel.org/all/20260605161422.213817-1-npache@redhat.com/ [1]
+        - Link: https://lore.kernel.org/all/20251008043748.45554-1-lance.yang@linux.dev/ [2]
+      - 2216da4884dd "mm/khugepaged: extract young page check into pte_is_referenced() helper (1/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-2-0364cad642a0@linux.dev
+      - e286d72d1bf6 "mm/khugepaged: introduce a count_collapse_event() helper (2/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-3-0364cad642a0@linux.dev
+      - 11f3108a0aef "mm/khugepaged: fix outdated comments (3/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-4-0364cad642a0@linux.dev
+      - 80848bfa1b1d "mm/khugepaged: refactor the PTE state checks into a helper (4/7)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-5-0364cad642a0@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/20251008043748.45554-1-lance.yang@linux.dev/ [1]
+      - 17932802eb33 "mm/khugepaged: unmap pte before releasing vma write lock (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-6-0364cad642a0@linux.dev
+      - 40b8e11535cf "mm: Documentation: clarify where the mTHP stats live (6/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-7-0364cad642a0@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

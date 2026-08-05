@@ -8,11 +8,27 @@
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 14 -> 14 commits (no change)
-  - series: 3 (13) -> 3 (13) (no change)
+- mm-unstable: 14 -> 15 commits
+  - series: 3 (13) -> 3 (14)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 10 -> 10 commits (no change)
+    - no role, maintainer: 10 -> 11 commits
+  - new commits
+    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3)
+      - 39e44ec79584 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
+  - changed commits
+    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3)
+      - b2d6569d21bc "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev"
+        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev"
+        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

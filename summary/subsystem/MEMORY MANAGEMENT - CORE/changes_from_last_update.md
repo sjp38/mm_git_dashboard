@@ -3,8 +3,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
     - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - c1b80a3c88a5 "mm: fix incorrect flush address in direct page table reclaim"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - added "Acked-by: Qi Zheng <qi.zheng@linux.dev>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - dropped "Cc: David Hildenbrand (Red Hat) <david@kernel.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Qi Zheng <zhengqi.arch@bytedance.com>"
+      - Link: https://lore.kernel.org/20260804003708.49830-1-luto@kernel.org
+      - Link: https://lore.kernel.org/all/CA+55aFzBggoXtNXQeng5d_mRoDnaMBE5Y+URs+PHR67nUpMtaw@mail.gmail.com/T/#u [0]
+      - Link: https://github.com/BurntSushi/ripgrep/issues/3494 [1]
+      - Link: https://github.com/dfoxfranke/ripgrep-3494-analysis
 - mm-stable: 30 -> 30 commits (no change)
   - series: 4 (26) -> 4 (26) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
@@ -12,27 +28,53 @@
     - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 70 -> 70 commits (no change)
+- mm-unstable: 70 -> 71 commits
   - series: 9 (60) -> 9 (60) (no change)
     - no role, nobody: 9 -> 9 commits (no change)
     - no role, no role : 24 -> 24 commits (no change)
     - no role, reviewer: 8 -> 8 commits (no change)
-    - no role, maintainer: 8 -> 8 commits (no change)
+    - no role, maintainer: 8 -> 9 commits
     - reviewer, no role : 10 -> 10 commits (no change)
     - reviewer, reviewer: 8 -> 8 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-- mm-nonmm-stable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3)
+      - 39e44ec79584 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
   - changed commits
-    - 1db1573bc59f "kernel/fork: declare max_threads __read_mostly"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260707092354.465847-1-jansef.jian@hj-micro.com
-- mm-nonmm-unstable: 1 -> 0 commits
+    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3)
+      - 15ade01e8d39 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev"
+        - added "Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev"
+        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260720164207.450685-2-usama.arif@linux.dev"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev
+        - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
+      - b2d6569d21bc "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev"
+        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev"
+        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
+- mm-new: 1 -> 2 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, no role : 1 -> 2 commits
+  - new commits
+    - series "mm/page_ext: remove pgdat_page_ext_init()", v2. (2)
+      - 4b4fedf8e8da "mm/Kconfig: make FLATMEM depend on !NUMA (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260804151145.3419768-1-ekffu200098@gmail.com
+        - Link: https://lore.kernel.org/20260804151145.3419768-2-ekffu200098@gmail.com
+- mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-nonmm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)

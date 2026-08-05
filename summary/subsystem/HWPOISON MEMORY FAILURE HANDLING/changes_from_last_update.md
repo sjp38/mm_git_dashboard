@@ -16,6 +16,12 @@
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - 3c0d3699a1d2 "mm/memory-failure: fix refcount leak on soft-offline LBS folio"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20260804035356.2615408-1-dayou5941@163.com"
+      - dropped "Link: https://lore.kernel.org/20260803060001.800638-1-dayou5941@163.com"
+      - Link: https://lore.kernel.org/20260804035356.2615408-1-dayou5941@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

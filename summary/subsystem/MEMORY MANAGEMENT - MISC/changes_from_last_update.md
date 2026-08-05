@@ -11,20 +11,63 @@
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-unstable: 32 -> 32 commits (no change)
-  - series: 4 (19) -> 4 (19) (no change)
-    - no role, nobody: 13 -> 13 commits (no change)
-    - no role, no role : 10 -> 10 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+- mm-unstable: 32 -> 36 commits
+  - series: 4 (19) -> 5 (22)
+    - no role, nobody: 13 -> 14 commits
+    - no role, no role : 10 -> 11 commits
+    - no role, reviewer: 3 -> 5 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 4 -> 4 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: kmemleak: default min_unref_scans to 2 for verbose kernels", v2. (3)
+      - ba2f4a3e7fbb "selftests/mm: kmemleak: drop stale min_unref_scans default from comments (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-3-7b9689ac77cb@debian.org
+    - series "selftests/mm: use pattern matching in .gitignore", v4. (2)
+      - 1da547cee780 "selftests/mm: rename local_config.h to local_config.h_gen (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260803221732.3651981-1-pratmal@google.com
+        - Link: https://lore.kernel.org/20260803221732.3651981-2-pratmal@google.com
+      - dfd1f3bd5499 "selftests/mm: read memory information without popen (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - dropped "Signed-off-by: Warren Xiong <warren.xiong@ugreen.com>"
+        - dropped "Link: https://lore.kernel.org/1785720615-5826-1-git-send-email-warren.xiong@ugreen.com"
+        - dropped "Reviewed-by: Andrew Morton <akpm@linux-foundation.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+    - 3395a7f292a0 "selftests/mm: use pattern matching in .gitignore"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260803221732.3651981-3-pratmal@google.com
+- mm-new: 4 -> 3 commits
+  - series: 1 (3) -> 0 (1)
+    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 774fb4f48013 "mm: add some missing includes to mm-local headers"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
+    - a9ac072fcf8b "selftests/mm: khugepaged: skip swap tests when no swap available"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
+    - series "mm/khugepaged: several cleanups", v3. (7)
+      - 40b8e11535cf "mm: Documentation: clarify where the mTHP stats live (6/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-7-0364cad642a0@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

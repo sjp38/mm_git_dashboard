@@ -5,15 +5,23 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 3 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 3 -> 4 commits
+  - series: 0 (0) -> 1 (1)
     - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
     - reviewer, no role : 1 -> 1 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
+  - changed commits
+    - series "selftests/mm: use pattern matching in .gitignore", v4. (2)
+      - 1da547cee780 "selftests/mm: rename local_config.h to local_config.h_gen (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260803221732.3651981-1-pratmal@google.com
+        - Link: https://lore.kernel.org/20260803221732.3651981-2-pratmal@google.com
+- mm-new: 3 -> 2 commits
+  - series: 1 (1) -> 0 (0)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
