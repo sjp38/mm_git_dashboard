@@ -3,14 +3,65 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 14 commits (no change)
-  - series: 0 (12) -> 0 (12) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 8 -> 8 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 0 -> 11 commits
+  - series: 0 (0) -> 0 (11)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 8 commits
+    - no role, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - 2730ee209f95 "userfaultfd: test uffd VMA flags through the vma_flags_t API (3/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-5-kirill@shutemov.name
+      - 134c1d031a2e "mm: add VM_UFFD_RWP VMA flag (4/15)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-6-kirill@shutemov.name
+      - 9cf3c554acbd "mm: add MM_CP_UFFD_RWP change_protection() flag (5/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
+      - 763f43865fc4 "mm: preserve RWP marker across PTE rewrites (6/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
+      - 6eab8f2cc646 "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing (8/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-10-kirill@shutemov.name
+      - 2d427bb01639 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP (9/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
+      - 45347e3d32c1 "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution (11/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
+      - 39a7c34ea508 "userfaultfd: add UFFDIO_SET_MODE for runtime sync/async toggle (12/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-14-kirill@shutemov.name
+      - a137d9f8f514 "Documentation/userfaultfd: document RWP working set tracking (14/15)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-16-kirill@shutemov.name
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+- mm-unstable: 14 -> 3 commits
+  - series: 0 (12) -> 0 (1)
+    - no role, nobody: 4 -> 3 commits
+    - no role, no role : 8 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

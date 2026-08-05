@@ -1,63 +1,63 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 1 total, 0 (0) series, 1 non-series commits
+- mm-stable: 7 total, 2 (6) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, no role : 4 commits
     - no role, reviewer: 1 commits
+    - reviewer, no role : 1 commits
+    - reviewer, reviewer: 1 commits
   - full commits list
     - a35d8872dae7 "mm: remove PageTransCompound()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260618113523.3913307-1-wangkefeng.wang@huawei.com
-- mm-unstable: 11 total, 3 (9) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 4 commits
-    - no role, reviewer: 3 commits
-    - no role, maintainer: 1 commits
-    - reviewer, no role : 1 commits
-    - reviewer, reviewer: 1 commits
-  - full commits list
     - series "KSM: performance optimizations for rmap_walk_ksm", v11. (3 commits)
-      - d76f95a1cfbc "ksm: add linear_page_index into ksm_rmap_item" (0/3)
+      - a5650de0413f "ksm: add linear_page_index into ksm_rmap_item" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703162253688u8Str9eFLR8TGCmo7nIOF@zte.com.cn
         - Link: https://lore.kernel.org/20260703162357853iIa-RP7if9hRlAIuTh5La@zte.com.cn
         - Link: https://lore.kernel.org/all/adTPQSb-qSSHviJN@lucifer/ [1]
         - Link: https://lore.kernel.org/all/202604091806051535BJWZ_FTtdIm3Snk24ei_@zte.com.cn/ [2]
-      - c041d967799d "ksm: optimize rmap_walk_ksm by passing a suitable page index" (1/3)
+      - 96d2d9acef49 "ksm: optimize rmap_walk_ksm by passing a suitable page index" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703162510242nxmjbcLy5ccp1dbZSK3EU@zte.com.cn
         - Link: https://lore.kernel.org/all/202605301703094695zmVgcSC27BNR0rH0N8_x@zte.com.cn [1]
         - Link: https://lore.kernel.org/all/20260530170404509QpJmBtpSjn3uQHeVKA2iA@zte.com.cn/ [2]
     - series "KSM: use linear_page_index in collect_procs_ksm()", v2. (2 commits)
-      - c36f650ae2c2 "mm/ksm: initialize the addr only once in collect_procs_ksm" (0/2)
+      - 887311e5cd67 "mm/ksm: initialize the addr only once in collect_procs_ksm" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260709173212190rZdwynySRyLr9EtPuXBRU@zte.com.cn
         - Link: https://lore.kernel.org/all/20260703162253688u8Str9eFLR8TGCmo7nIOF@zte.com.cn/ [1]
-      - 9f03b99f3b31 "ksm: use precise linear_page_index instead of the whole address space" (1/2)
+      - 0471cade0a27 "ksm: use precise linear_page_index instead of the whole address space" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260709173312403qgj1Af6pRkFMDSsmc19sM@zte.com.cn
-      - 6c729e9c1d21 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma" (8/33)
+      - 68364437ec78 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma" (8/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
-      - 76410948cafc "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
+      - b1e71c05fa37 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
+- mm-unstable: 5 total, 1 (3) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 1 commits
+  - full commits list
     - series "Two small patches to clean up mm/mm_slot.h", v3. (2 commits)
-      - 04bef5075256 "mm/mm_slot.h: add a helper function mm_slot_remove" (0/2)
+      - a347e41940fd "mm/mm_slot.h: add a helper function mm_slot_remove" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
         - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
-      - 0b39efc37430 "mm/mm_slot.h: add comments for mm_slot_lookup/insert" (1/2)
+      - 191bad5c2468 "mm/mm_slot.h: add comments for mm_slot_lookup/insert" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
-    - 8fb41ce9c140 "ksm: stop iterating VMAs when ksm_test_exit returns true"
+    - aa725f8fdb24 "ksm: stop iterating VMAs when ksm_test_exit returns true"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260726133501.504048-1-wsw9603@163.com
-      - 29193c330412 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
+      - c913befddb4e "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
-    - 23aa737e37f7 "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
+    - 4dd0f199f080 "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260803152115.3479919-1-xialonglong2025@163.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

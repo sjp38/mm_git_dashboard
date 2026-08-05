@@ -1,11 +1,11 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 10 total, 0 (10) series, 0 non-series commits
+- mm-stable: 13 total, 1 (13) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 8 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
+    - no role, reviewer: 2 commits
+    - no role, maintainer: 3 commits
   - full commits list
       - b1b7c045e808 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
         - Authored by no role player, reviewed by a maintainer
@@ -39,31 +39,24 @@
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-- mm-unstable: 4 total, 1 (3) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 2 commits
-  - full commits list
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - c08f9340301a "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - 55ed40abb2cd "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
+        - Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - 434fc6bc239d "memblock tests: split stubfs from internal.h to mm_init.h" (1/3)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
-      - 4383906c1c4e "mm: split out sparse declarations from internal.h" (2/3)
+      - 2b65a42a0883 "mm: split out sparse declarations from internal.h" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-2-695631425968@kernel.org
-    - a47e492ad809 "mm: split out vmalloc declarations from internal.h"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
+      - ef79e0f5e31b "mm: split out vmalloc declarations from internal.h" (2/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 6fcae4168d62 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
+      - ec27a6c1e520 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

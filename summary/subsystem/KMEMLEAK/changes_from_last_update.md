@@ -6,26 +6,14 @@
 - mm-stable: 4 -> 4 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-unstable: 4 -> 6 commits
-  - series: 1 (3) -> 2 (5)
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 2 (5) -> 2 (5) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 3 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: kmemleak: default min_unref_scans to 2 for verbose kernels", v2. (3)
-      - 218881eee253 "mm: kmemleak: default min_unref_scans to 2 for verbose auto-scan (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-0-7b9689ac77cb@debian.org
-        - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-1-7b9689ac77cb@debian.org
-      - 8d20867a7b36 "Documentation: kmemleak: document the conditional min_unref_scans default (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-2-7b9689ac77cb@debian.org
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, maintainer: 2 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

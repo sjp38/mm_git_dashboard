@@ -11,35 +11,9 @@
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 0 -> 7 commits
-  - series: 0 (0) -> 2 (7)
-    - no role, maintainer: 0 -> 7 commits
-  - new commits
-    - series "zram: fix zstd error paths and add parameter validation", v6, (5)
-      - 41aaa3fe10ac "zram: do not release zstd global params from error paths (0/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260804093841.67920-1-haoqinhuang7@gmail.com
-        - Link: https://lore.kernel.org/20260804093841.67920-2-haoqinhuang7@gmail.com
-      - 10c11fb247a3 "zram: reject zero-size dictionary (1/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260804093841.67920-3-haoqinhuang7@gmail.com
-      - 38decf553ee6 "zram: add pr_fmt to backend files (2/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260804093841.67920-4-haoqinhuang7@gmail.com
-      - d0fce4648509 "zram: validate parameters in each backend's setup_params (3/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260804093841.67920-5-haoqinhuang7@gmail.com
-      - 8735f74da154 "zram: reset per-priority params when changing algorithm before init (4/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260804093841.67920-6-haoqinhuang7@gmail.com
-    - series "zram: fix stale scan bounds after reinitialization". (2)
-      - d39af09335b6 "zram: fix out-of-bounds access in writeback_store() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260804065919.3970386-1-xialonglong2025@163.com
-        - Link: https://lore.kernel.org/20260804065919.3970386-2-xialonglong2025@163.com
-      - e842d6ba04fd "zram: fix out-of-bounds access in read_block_state() (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260804065919.3970386-3-xialonglong2025@163.com
+- mm-new: 7 -> 7 commits (no change)
+  - series: 2 (7) -> 2 (7) (no change)
+    - no role, maintainer: 7 -> 7 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

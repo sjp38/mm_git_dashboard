@@ -3,24 +3,42 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 10 -> 10 commits (no change)
-  - series: 0 (10) -> 0 (10) (no change)
+- mm-stable: 10 -> 13 commits
+  - series: 0 (10) -> 1 (13)
     - no role, no role : 8 -> 8 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - series "mm/page_ext: remove pgdat_page_ext_init()", v2. (2)
-      - 6fcae4168d62 "mm/page_ext: remove pgdat_page_ext_init() (1/2)"
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 1 -> 3 commits
+  - changed commits
+    - series "mm: split a couple of headers from internal.h", v2. (3)
+      - 55ed40abb2cd "mm: split out mm_init and memblock declarations from internal.h (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - added "[rppt@kernel.org: split stubfs from internal.h to mm_init.h]"
+        - added "Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org"
+        - Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
+      - 2b65a42a0883 "mm: split out sparse declarations from internal.h (1/3)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-2-695631425968@kernel.org
+      - ef79e0f5e31b "mm: split out vmalloc declarations from internal.h (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
+- mm-unstable: 4 -> 0 commits
+  - series: 1 (3) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 2 -> 0 commits
+  - dropped commits
+    - series "mm: split a couple of headers from internal.h", v2. (3)
+      - 434fc6bc239d "memblock tests: split stubfs from internal.h to mm_init.h (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

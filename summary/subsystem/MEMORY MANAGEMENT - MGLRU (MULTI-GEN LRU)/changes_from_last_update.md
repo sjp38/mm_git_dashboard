@@ -4,34 +4,35 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 6 -> 6 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
+- mm-stable: 6 -> 9 commits
+  - series: 0 (3) -> 1 (6)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 3 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 18 -> 18 commits (no change)
-  - series: 4 (16) -> 4 (16) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 4 -> 3 commits
-    - no role, maintainer: 10 -> 11 commits
-  - new commits
-    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3)
-      - 39e44ec79584 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
+    - no role, maintainer: 2 -> 4 commits
   - changed commits
-    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3)
-      - b2d6569d21bc "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (2/3)"
+    - series "memcg: bail out reclaim when memcg is dying", v3. (4)
+      - 757dd8193f6c "memcg: bail out proactive reclaim when memcg is dying (2/4)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev"
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
+    - series "mm: clean up folio LRU and swap declarations", v9. (3)
+      - 2253208bec87 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
+        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+- mm-unstable: 18 -> 15 commits
+  - series: 4 (16) -> 3 (13)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 3 -> 2 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 11 -> 9 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

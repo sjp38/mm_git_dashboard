@@ -3,20 +3,94 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 5 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+- mm-stable: 5 -> 21 commits
+  - series: 1 (5) -> 3 (21)
+    - no role, no role : 3 -> 10 commits
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 22 -> 22 commits (no change)
-  - series: 3 (22) -> 3 (22) (no change)
+    - reviewer, no role : 0 -> 2 commits
+    - reviewer, reviewer: 1 -> 5 commits
+    - maintainer, no role : 0 -> 2 commits
+  - changed commits
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - 7974c238531b "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP (7/15)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-9-kirill@shutemov.name
+    - series "KSM: performance optimizations for rmap_walk_ksm", v11. (3)
+      - 1695841621d7 "ksm: add mremap selftests for ksm_rmap_walk (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703162637070FU4ekl58Hw_Z7OSuJryZB@zte.com.cn
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 995f0eed5e1e "mm: move vma_start_pgoff() into mm.h and clean up (0/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-0-2a5aa403d977@kernel.org
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-1-2a5aa403d977@kernel.org
+      - dbde17041cbf "mm/rmap: update mm/interval_tree.c comments (4/33)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-5-2a5aa403d977@kernel.org
+      - 7a67b96af069 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
+      - 5ec02309d774 "mm/rmap: elide unnecessary static inline's in interval_tree.c (6/33)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-7-2a5aa403d977@kernel.org
+      - 4b7a90a48b99 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
+      - 68364437ec78 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
+      - 0b099cc22967 "mm/rmap: rename anon_vma_interval_tree_*() params and use pgoff_t (9/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-10-2a5aa403d977@kernel.org
+      - b1e71c05fa37 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
+    - series "mm/rmap: Refactor try_to_unmap_one", v4. (5)
+      - af56d6acf494 "mm/rmap: convert page -> folio for hwpoison checks (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260730094559.418003-1-dev.jain@arm.com
+        - Link: https://lore.kernel.org/20260730094559.418003-2-dev.jain@arm.com
+      - d4ec5572825a "mm/rmap: add try_to_unmap_poisoned_hugetlb_one (1/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260730094559.418003-3-dev.jain@arm.com
+      - 0955037b980e "mm/rmap: refactor some code around lazyfree folio unmapping (2/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260730094559.418003-4-dev.jain@arm.com
+      - 0caf74274d85 "mm/rmap: refactor anon folio unmap in try_to_unmap_one (3/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260730094559.418003-5-dev.jain@arm.com
+      - 04b09ca57d48 "mm/rmap: add anon folio unmap dispatcher (4/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260730094559.418003-6-dev.jain@arm.com
+- mm-unstable: 22 -> 6 commits
+  - series: 3 (22) -> 1 (6)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 10 -> 10 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, no role : 10 -> 3 commits
+    - no role, reviewer: 1 -> 0 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 2 -> 2 commits (no change)
-    - reviewer, reviewer: 4 -> 4 commits (no change)
-    - maintainer, no role : 2 -> 2 commits (no change)
+    - reviewer, no role : 2 -> 0 commits
+    - reviewer, reviewer: 4 -> 0 commits
+    - maintainer, no role : 2 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

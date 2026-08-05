@@ -9,10 +9,11 @@
         - Link: https://lore.kernel.org/20260717064502.1980173-1-npache@redhat.com
         - Link: https://lore.kernel.org/20260717064502.1980173-2-npache@redhat.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 2 total, 0 (2) series, 0 non-series commits
+- mm-stable: 3 total, 1 (3) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
       - 9eed9653a35f "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug" (8/10)
         - Authored by no role player, reviewed by no role player
@@ -22,29 +23,29 @@
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
         - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-- mm-unstable: 6 total, 1 (6) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 5 commits
-    - no role, maintainer: 1 commits
-  - full commits list
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - c08f9340301a "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - 55ed40abb2cd "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
+        - Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - ae67693f67fe "mm/memory_hotplug: add mhp_online_type_to_str() and export string helpers" (1/10)
+- mm-unstable: 5 total, 0 (5) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 5 commits
+  - full commits list
+      - a34cd58d8abd "mm/memory_hotplug: add mhp_online_type_to_str() and export string helpers" (1/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-3-gourry@gourry.net
-      - 7b4d399aa21e "mm/memory_hotplug: pass online_type to online_memory_block() via arg" (2/10)
+      - 7df4d8a1728f "mm/memory_hotplug: pass online_type to online_memory_block() via arg" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-4-gourry@gourry.net
-      - 9685a9a54bad "mm/memory_hotplug: export mhp_get_default_online_type" (3/10)
+      - 2f481681d76f "mm/memory_hotplug: export mhp_get_default_online_type" (3/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-5-gourry@gourry.net
-      - 79088ed2312a "mm/memory_hotplug: add __add_memory_driver_managed() with online_type arg" (4/10)
+      - e3de1bfb7715 "mm/memory_hotplug: add __add_memory_driver_managed() with online_type arg" (4/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-6-gourry@gourry.net
-      - f417c0a254dd "mm/memory_hotplug: add offline_and_remove_memory_ranges()" (5/10)
+      - e45a6c7a2b6b "mm/memory_hotplug: add offline_and_remove_memory_ranges()" (5/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-7-gourry@gourry.net
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

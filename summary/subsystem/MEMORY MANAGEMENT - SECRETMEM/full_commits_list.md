@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 6e347c3af166 "mm/secretmem: don't allow highmem folios"
+    - 591449cfb2ed "mm/secretmem: don't allow highmem folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://github.com/bjackman/limmat-kernel-nix/commit/7b2acba2d3a5ef01400d493a155beb1d135b6bb5
       - Link: https://lore.kernel.org/20260717-secretmem-highmem-v2-1-1f1a961ca91e@google.com

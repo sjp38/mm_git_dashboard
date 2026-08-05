@@ -4,18 +4,41 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 14 -> 14 commits (no change)
-  - series: 2 (14) -> 2 (14) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 10 -> 10 commits (no change)
+- mm-stable: 14 -> 18 commits
+  - series: 2 (14) -> 3 (18)
+    - no role, no role : 1 -> 3 commits
+    - no role, reviewer: 10 -> 11 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
+    - reviewer, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - 763f43865fc4 "mm: preserve RWP marker across PTE rewrites (6/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+    - series "mm: handle device-private PMDs in walk callbacks", v3. (3)
+      - 2858b4027f49 "mm/mempolicy: skip non-present PMDs when queueing folios (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710105557.1987433-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260710105557.1987433-2-usama.arif@linux.dev
+        - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
+- mm-unstable: 8 -> 4 commits
+  - series: 1 (5) -> 0 (1)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 4 -> 3 commits
+    - reviewer, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

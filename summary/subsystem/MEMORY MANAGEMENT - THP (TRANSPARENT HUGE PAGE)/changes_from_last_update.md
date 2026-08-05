@@ -7,67 +7,76 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-stable: 5 -> 5 commits (no change)
-  - series: 1 (5) -> 1 (5) (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - reviewer, reviewer: 3 -> 3 commits (no change)
-- mm-unstable: 22 -> 22 commits (no change)
-  - series: 4 (19) -> 4 (19) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 6 -> 6 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 6 -> 6 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 5 -> 16 commits
+  - series: 1 (5) -> 1 (16)
+    - no role, no role : 0 -> 5 commits
+    - no role, reviewer: 2 -> 3 commits
+    - reviewer, reviewer: 3 -> 7 commits
+    - reviewer, maintainer: 0 -> 1 commits
   - changed commits
-    - series "Honor XA_FLAGS_ACCOUNT in xas_split_alloc() and charge to folio's memcg", v3. (2)
-      - bcd92e777060 "mm/huge_memory: use folio's memcg inside __folio_split() (0/2)"
+    - series "Keep tail page private zero at free and folio split", v3. (5)
+      - d00765803297 "mm/huge_memory: add page->private check back in __split_folio_to_order() (2/5)"
         - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-0-38cb3ff325c5@nvidia.com"
-        - added "Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-1-38cb3ff325c5@nvidia.com"
-        - added "Fixes: 6b24ca4a1a8d4 ("mm: Use multi-index entries in the page cache")"
-        - dropped "Link: https://lore.kernel.org/20260730-add-gfp_account-to-xas_split_alloc-v2-1-5a56c2361d85@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260730-add-gfp_account-to-xas_split_alloc-v2-0-5a56c2361d85@nvidia.com"
-        - dropped "Fixes: 6b24ca4a1a8d ("mm: Use multi-index entries in the page cache")"
-        - Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-0-38cb3ff325c5@nvidia.com
-        - Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-1-38cb3ff325c5@nvidia.com
-        - Link: https://sashiko.dev/#/patchset/20260727-add-gfp_account-to-xas_split_alloc-v1-1-9fae6bf64838%40nvidia.com?part=1 [1]
-        - Link: https://lore.kernel.org/all/amtcBZ-_QVRgCd6b@cmpxchg.org/ [2]
-- mm-new: 0 -> 8 commits
-  - series: 0 (0) -> 1 (7)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 0 -> 5 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - a9ac072fcf8b "selftests/mm: khugepaged: skip swap tests when no swap available"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
-    - series "mm/khugepaged: several cleanups", v3. (7)
-      - 18e55712ba25 "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan() (0/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-1-0364cad642a0@linux.dev
-        - Link: https://lore.kernel.org/all/20260605161422.213817-1-npache@redhat.com/ [1]
-        - Link: https://lore.kernel.org/all/20251008043748.45554-1-lance.yang@linux.dev/ [2]
-      - 2216da4884dd "mm/khugepaged: extract young page check into pte_is_referenced() helper (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-2-0364cad642a0@linux.dev
-      - e286d72d1bf6 "mm/khugepaged: introduce a count_collapse_event() helper (2/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-3-0364cad642a0@linux.dev
-      - 11f3108a0aef "mm/khugepaged: fix outdated comments (3/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-4-0364cad642a0@linux.dev
-      - 80848bfa1b1d "mm/khugepaged: refactor the PTE state checks into a helper (4/7)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-5-0364cad642a0@linux.dev
-        - Link: https://lore.kernel.org/linux-mm/20251008043748.45554-1-lance.yang@linux.dev/ [1]
-      - 17932802eb33 "mm/khugepaged: unmap pte before releasing vma write lock (5/7)"
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/all/13f3fcda-7328-4aa5-afc6-75a294a82b2a@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-3-7e4fe155f5b9@nvidia.com
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-6-0364cad642a0@linux.dev
-      - 40b8e11535cf "mm: Documentation: clarify where the mTHP stats live (6/7)"
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - 9cf3c554acbd "mm: add MM_CP_UFFD_RWP change_protection() flag (5/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
+      - 763f43865fc4 "mm: preserve RWP marker across PTE rewrites (6/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
+      - 7974c238531b "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP (7/15)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-7-0364cad642a0@linux.dev
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-9-kirill@shutemov.name
+      - 2d427bb01639 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP (9/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
+      - 45347e3d32c1 "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution (11/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 7a67b96af069 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
+      - 4b7a90a48b99 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
+      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+    - series "mm: handle device-private PMDs in walk callbacks", v3. (3)
+      - ce579dcf730c "mm/huge_memory: skip device-private PMDs in madvise_free_huge_pmd (2/3)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710105557.1987433-4-usama.arif@linux.dev
+- mm-unstable: 22 -> 11 commits
+  - series: 4 (19) -> 4 (8)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 6 -> 1 commits
+    - no role, reviewer: 6 -> 5 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 6 -> 2 commits
+    - reviewer, maintainer: 1 -> 0 commits
+- mm-new: 8 -> 8 commits (no change)
+  - series: 1 (7) -> 1 (7) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

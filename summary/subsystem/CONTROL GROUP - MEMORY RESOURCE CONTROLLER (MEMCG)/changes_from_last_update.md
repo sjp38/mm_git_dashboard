@@ -4,48 +4,37 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 5 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
+- mm-stable: 5 -> 9 commits
+  - series: 0 (1) -> 1 (4)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-- mm-unstable: 14 -> 15 commits
-  - series: 3 (6) -> 3 (7)
-    - no role, maintainer: 13 -> 14 commits
-    - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3)
-      - 39e44ec79584 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
+    - no role, maintainer: 3 -> 7 commits
   - changed commits
-    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3)
-      - 15ade01e8d39 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers (0/3)"
+    - series "memcg: bail out reclaim when memcg is dying", v3. (4)
+      - 0beeaf14e7b9 "memcg: bail out memory.high when memcg is dying (0/4)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev"
-        - added "Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev"
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260720164207.450685-2-usama.arif@linux.dev"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev
-        - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
-      - b2d6569d21bc "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (2/3)"
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260702120235.376752-1-jiayuan.chen@linux.dev
+        - Link: https://lore.kernel.org/20260702120235.376752-2-jiayuan.chen@linux.dev
+      - e13f634f50d5 "memcg: bail out memory.max when memcg is dying (1/4)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev"
-        - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-        - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20260720164207.450685-3-usama.arif@linux.dev"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
-- mm-new: 0 -> 1 commits
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260702120235.376752-3-jiayuan.chen@linux.dev
+      - 10228e0a5123 "memcg-v1: bail out reclaim when memcg is dying (3/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260702120235.376752-5-jiayuan.chen@linux.dev
+    - 72f522bbf473 "mm: memcontrol: update state_local when flushing NMI stats"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260713085053.2916813-1-guopeng.zhang@linux.dev
+- mm-unstable: 15 -> 11 commits
+  - series: 3 (7) -> 2 (4)
+    - no role, maintainer: 14 -> 10 commits
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - 774fb4f48013 "mm: add some missing includes to mm-local headers"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

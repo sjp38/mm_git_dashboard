@@ -5,12 +5,19 @@
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
+- mm-stable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - maintainer, no role : 0 -> 1 commits
+  - changed commits
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - e65f4dfac104 "mm/vma: introduce vma_assert_can_modify() (21/33)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-22-2a5aa403d977@kernel.org
+- mm-unstable: 2 -> 1 commits
+  - series: 0 (1) -> 0 (0)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, no role : 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

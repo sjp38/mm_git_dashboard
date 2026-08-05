@@ -4,16 +4,32 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 4 -> 4 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
+- mm-stable: 4 -> 7 commits
+  - series: 1 (2) -> 1 (4)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 0 (7) -> 0 (7) (no change)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 2 -> 3 commits
+    - reviewer, maintainer: 0 -> 1 commits
+  - changed commits
+    - 747beac67911 "mm: remove wb_writeout_inc"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260710051052.1839523-1-hch@lst.de
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 1268e1572ba5 "mm: introduce and use linear_page_delta() (16/33)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-17-2a5aa403d977@kernel.org
+      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+- mm-unstable: 8 -> 5 commits
+  - series: 0 (7) -> 0 (5)
     - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

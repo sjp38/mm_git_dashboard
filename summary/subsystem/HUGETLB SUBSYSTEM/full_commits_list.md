@@ -4,15 +4,17 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 39ff06943396 "mm/hugetlb_cma: dix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+    - 195cc78eba7d "mm/hugetlb_cma: dix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260726072935.3513996-1-souravpanda@google.com
-- mm-stable: 21 total, 3 (20) series, 1 non-series commits
+- mm-stable: 32 total, 4 (31) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 4 commits
-    - no role, no role : 7 commits
+    - no role, no role : 13 commits
     - no role, reviewer: 3 commits
-    - no role, maintainer: 7 commits
+    - no role, maintainer: 9 commits
+    - reviewer, reviewer: 2 commits
+    - reviewer, maintainer: 1 commits
   - full commits list
       - c95dc0a84b4c "mm: use enum migrate_reason instead of int for migration reason parameters" (2/6)
         - Authored by no role player, reviewed by a reviewer
@@ -89,68 +91,68 @@
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260703114202.365553-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260703114202.365553-3-dev.jain@arm.com
-- mm-unstable: 18 total, 1 (12) series, 6 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, no role : 8 commits
-    - no role, maintainer: 3 commits
-    - reviewer, reviewer: 3 commits
-    - reviewer, maintainer: 1 commits
-  - full commits list
-      - a5eb266e7ab8 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 393107fd517f "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
+      - 9cf3c554acbd "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
-      - 715fb43d64ec "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - 763f43865fc4 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - e28e0b47b4f2 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
+      - 2d427bb01639 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
-      - 65242cf4366f "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
+      - 45347e3d32c1 "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
-      - 3229d85561f7 "mm/hugetlb_vmemmap: remove bootmem_info leftovers" (7/10)
+      - 788a0efb959d "mm/hugetlb_vmemmap: remove bootmem_info leftovers" (7/10)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-8-4afc76c73d61@kernel.org
     - series "mm: split a couple of headers from internal.h", v2. (3 commits)
-      - c08f9340301a "mm: split out mm_init and memblock declarations from internal.h" (0/3)
+      - 55ed40abb2cd "mm: split out mm_init and memblock declarations from internal.h" (0/3)
         - Authored by no role player, reviewed by a maintainer
+        - Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-      - d9d1b7ededb1 "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
+      - 7a67b96af069 "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - 45557ee7d635 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
+      - 4b7a90a48b99 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - 86913d9bb5d8 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-      - 9988ce67dd79 "mm/rmap: add try_to_unmap_poisoned_hugetlb_one" (1/5)
+      - d4ec5572825a "mm/rmap: add try_to_unmap_poisoned_hugetlb_one" (1/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260730094559.418003-3-dev.jain@arm.com
-      - 19d106de7e44 "mm: convert __get_unmapped_area() to use vma_flags_t" (2/13)
+- mm-unstable: 7 total, 0 (1) series, 6 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 3 commits
+    - no role, no role : 2 commits
+    - no role, maintainer: 1 commits
+    - reviewer, reviewer: 1 commits
+  - full commits list
+      - b54d3ec8628a "mm: convert __get_unmapped_area() to use vma_flags_t" (2/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
-    - 701b181bb657 "hugetlbfs: release subpool on fill_super failure"
+    - 6cb609d698df "hugetlbfs: release subpool on fill_super failure"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260720021900.1376309-1-chenyichong@uniontech.com
-    - 3bbccb8c1764 "hugetlb: make hugepage_put_subpool() tolerate NULL"
+    - 0bfb5e7a62da "hugetlb: make hugepage_put_subpool() tolerate NULL"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260720073841.1389354-1-chenyichong@uniontech.com
-    - 6a4800e0295c "hugetlb: evaluate subpool free state while locked"
+    - d465e91d5c61 "hugetlb: evaluate subpool free state while locked"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260721035207.1437935-1-chenyichong@uniontech.com
-    - 6e2debd1b7fb "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+    - 13e9d4da97f3 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
-    - 6c51fce2dcb2 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
+    - 68838ccc7eff "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260729163148.3271755-1-souravpanda@google.com
-    - 78c362119897 "hugetlb: only adjust reservation during unmapping if mapcount is 0"
+    - d886cfc33306 "hugetlb: only adjust reservation during unmapping if mapcount is 0"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
       - Link: https://lore.kernel.org/amkC_1Ya6OiUoiLZ@bender.morinfr.org
@@ -158,7 +160,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 774fb4f48013 "mm: add some missing includes to mm-local headers"
+    - 938e833173e6 "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

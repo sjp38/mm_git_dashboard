@@ -3,11 +3,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-stable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
+  - changed commits
+    - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v11. (8)
+      - 121170831228 "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support (1/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260723-hmm-v10-v11-2-c55b003a4b61@gmail.com
+- mm-unstable: 2 -> 1 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

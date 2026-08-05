@@ -4,70 +4,105 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 12 -> 12 commits (no change)
-  - series: 2 (11) -> 2 (11) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 7 -> 7 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-unstable: 32 -> 36 commits
-  - series: 4 (19) -> 5 (22)
-    - no role, nobody: 13 -> 14 commits
-    - no role, no role : 10 -> 11 commits
-    - no role, reviewer: 3 -> 5 commits
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 2 -> 2 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-stable: 12 -> 28 commits
+  - series: 2 (11) -> 4 (25)
+    - no role, nobody: 1 -> 6 commits
+    - no role, no role : 7 -> 12 commits
+    - no role, reviewer: 2 -> 4 commits
+    - no role, maintainer: 1 -> 2 commits
+    - reviewer, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 3 commits
   - changed commits
-    - series "mm: kmemleak: default min_unref_scans to 2 for verbose kernels", v2. (3)
-      - ba2f4a3e7fbb "selftests/mm: kmemleak: drop stale min_unref_scans default from comments (2/3)"
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - 6eab8f2cc646 "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing (8/15)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-3-7b9689ac77cb@debian.org
-    - series "selftests/mm: use pattern matching in .gitignore", v4. (2)
-      - 1da547cee780 "selftests/mm: rename local_config.h to local_config.h_gen (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260803221732.3651981-1-pratmal@google.com
-        - Link: https://lore.kernel.org/20260803221732.3651981-2-pratmal@google.com
-      - dfd1f3bd5499 "selftests/mm: read memory information without popen (1/2)"
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-10-kirill@shutemov.name
+      - 338964881982 "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking (10/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-12-kirill@shutemov.name
+      - 3628215f7fc6 "selftests/mm: add userfaultfd RWP tests (13/15)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/ak-Z9KO2mP9HMOPW@thinkstation
+      - a137d9f8f514 "Documentation/userfaultfd: document RWP working set tracking (14/15)"
         - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - dropped "Signed-off-by: Warren Xiong <warren.xiong@ugreen.com>"
-        - dropped "Link: https://lore.kernel.org/1785720615-5826-1-git-send-email-warren.xiong@ugreen.com"
-        - dropped "Reviewed-by: Andrew Morton <akpm@linux-foundation.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - dropped "Cc: Shuah Khan <shuah@kernel.org>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-    - 3395a7f292a0 "selftests/mm: use pattern matching in .gitignore"
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260708111417.173443-16-kirill@shutemov.name
+    - series "KSM: performance optimizations for rmap_walk_ksm", v11. (3)
+      - 1695841621d7 "ksm: add mremap selftests for ksm_rmap_walk (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260703162637070FU4ekl58Hw_Z7OSuJryZB@zte.com.cn
+    - series "mm: split a couple of headers from internal.h", v2. (3)
+      - 55ed40abb2cd "mm: split out mm_init and memblock declarations from internal.h (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - added "[rppt@kernel.org: split stubfs from internal.h to mm_init.h]"
+        - added "Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org"
+        - Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
+    - f421d67d2c23 "selftests/mm: fix memleak in migration benchmark"
       - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260803221732.3651981-3-pratmal@google.com
-- mm-new: 4 -> 3 commits
-  - series: 1 (3) -> 0 (1)
-    - no role, no role : 1 -> 0 commits
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260709081843.1451202-1-lihongfu@kylinos.cn
+    - series "selftests/mm: avoid false failures in hugetlb and KSM tests", v3. (3)
+      - 5c4c48ff5aa1 "selftests/mm: handle EINVAL when configuring gigantic hugepages (0/3)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/cover.1783446924.git.sayalip@linux.ibm.com
+        - Link: https://lore.kernel.org/2e3b585cbb30b2fc495dcd49d75de6f6da61861c.1783446924.git.sayalip@linux.ibm.com
+      - 15828a150c58 "selftests/mm: fix ksm NUMA merge test for systems with memoryless NUMA nodes (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/78a3b0e3fb94004c0710872c5bab6f7381b7d63c.1783446924.git.sayalip@linux.ibm.com
+      - 4e1fbffb3333 "selftests/mm: fix ternary operator precedence in ksm_tests (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/ce859430287ed2642848c933a90eb9a69da361f0.1783446924.git.sayalip@linux.ibm.com
+    - series "mm/damon: introduce data attributes only monitoring". (19)
+      - f10489d2ef8e "Docs/mm/damon/design: document attrs-only monitoring (16/19)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710134651.18084-18-sj@kernel.org
+      - 3baf78e04b0b "Docs/admin-guide/mm/damon/usage: document weight sysfs file (17/19)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710134651.18084-19-sj@kernel.org
+    - series "mm/hmm: Add mmap lock-drop support for userfaultfd-backed mappings", v11. (8)
+      - 121170831228 "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support (1/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260723-hmm-v10-v11-2-c55b003a4b61@gmail.com
+      - 9365813cadfb "selftests/mm: add HMM test for mmap lock-dropping faults (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260723-hmm-v10-v11-3-c55b003a4b61@gmail.com
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+    - 1edcd9d7e52f "selftests/mm: remove obsolete hugetlb vmemmap test"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: : https://lore.kernel.org/CAHk-=wiHK5_oBUdUiNAaevmN9f-ORe+QBqbRefAZaw-RbgEn3w@mail.gmail.com
+      - Link: https://lore.kernel.org/20260710092427.3459121-1-songmuchun@bytedance.com
+- mm-unstable: 36 -> 20 commits
+  - series: 5 (22) -> 3 (8)
+    - no role, nobody: 14 -> 9 commits
+    - no role, no role : 11 -> 6 commits
+    - no role, reviewer: 5 -> 3 commits
+    - no role, maintainer: 2 -> 1 commits
+    - reviewer, maintainer: 1 -> 0 commits
+    - maintainer, nobody: 2 -> 0 commits
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 774fb4f48013 "mm: add some missing includes to mm-local headers"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-    - a9ac072fcf8b "selftests/mm: khugepaged: skip swap tests when no swap available"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
-    - series "mm/khugepaged: several cleanups", v3. (7)
-      - 40b8e11535cf "mm: Documentation: clarify where the mTHP stats live (6/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-7-0364cad642a0@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

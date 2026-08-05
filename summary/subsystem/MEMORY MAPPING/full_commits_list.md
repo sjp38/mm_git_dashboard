@@ -1,12 +1,17 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 7 total, 1 (6) series, 1 non-series commits
+- mm-stable: 39 total, 2 (37) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 2 commits
-    - no role, reviewer: 3 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 6 commits
+    - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
+    - reviewer, no role : 1 commits
+    - reviewer, reviewer: 7 commits
+    - reviewer, maintainer: 1 commits
+    - maintainer, no role : 5 commits
+    - maintainer, reviewer: 12 commits
   - full commits list
       - 8a28b50d6fbf "mm/mprotect: drop 'sub' from batching context" (1/2)
         - Authored by no role player, reviewed by a maintainer
@@ -33,234 +38,225 @@
       - Authored by no role player, reviewed by nobody
       - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/munmap/munmap04.c
       - Link: https://lore.kernel.org/20260702012830.667205-1-thehajime@gmail.com
-- mm-unstable: 67 total, 3 (61) series, 6 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 13 commits
-    - no role, no role : 9 commits
-    - no role, reviewer: 6 commits
-    - reviewer, no role : 6 commits
-    - reviewer, reviewer: 8 commits
-    - reviewer, maintainer: 1 commits
-    - maintainer, nobody: 1 commits
-    - maintainer, no role : 11 commits
-    - maintainer, reviewer: 12 commits
-  - full commits list
-      - a5eb266e7ab8 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 6f666828a15b "mm: add VM_UFFD_RWP VMA flag" (4/15)
+      - 134c1d031a2e "mm: add VM_UFFD_RWP VMA flag" (4/15)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260708111417.173443-6-kirill@shutemov.name
-      - 393107fd517f "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
+      - 9cf3c554acbd "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
-      - 715fb43d64ec "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - 763f43865fc4 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - e611e8917d1f "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking" (10/15)
+      - 338964881982 "mm/pagemap: add PAGE_IS_ACCESSED for RWP tracking" (10/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-12-kirill@shutemov.name
-    - 07f36ca9d544 "mm: nommu: fix the error path when vma_iter_prealloc() fails"
+    - 324853ce8d4f "mm: nommu: fix the error path when vma_iter_prealloc() fails"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260708083829.576036-1-thehajime@gmail.com
       - Link: https://sashiko.dev/#/patchset/20260702012830.667205-1-thehajime%40gmail.com
       - Link: https://sashiko.dev/#/patchset/c8513ee5aa8444ec9bf6c276043c9f833016a2fa.1783304131.git.thehajime%40gmail.com
       - Link: https://sashiko.dev/#/patchset/20260707235137.498738-1-thehajime%40gmail.com
     - series "mm: make VMA page offset handling more consistent", v2. (33 commits)
-      - 594d4ba35dd4 "mm: move vma_start_pgoff() into mm.h and clean up" (0/33)
+      - 995f0eed5e1e "mm: move vma_start_pgoff() into mm.h and clean up" (0/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-0-2a5aa403d977@kernel.org
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-1-2a5aa403d977@kernel.org
-      - dff163f37874 "tools/testing/vma: use vma_start_pgoff() in merge tests" (2/33)
+      - 3542bc07f44f "tools/testing/vma: use vma_start_pgoff() in merge tests" (2/33)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-3-2a5aa403d977@kernel.org
-      - 2204f2896042 "mm: introduce and use vma_end_pgoff()" (3/33)
+      - 1219731c49e5 "mm: introduce and use vma_end_pgoff()" (3/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-4-2a5aa403d977@kernel.org
-      - d9d1b7ededb1 "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
+      - 7a67b96af069 "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - 45557ee7d635 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
+      - 4b7a90a48b99 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - 6c729e9c1d21 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma" (8/33)
+      - 68364437ec78 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma" (8/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
-      - 76410948cafc "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
+      - b1e71c05fa37 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
-      - f5d5814bd8b3 "mm/vma: introduce and use vmg_pages(), vmg_[start, end]_pgoff()" (12/33)
+      - 8802c4069ee9 "mm/vma: introduce and use vmg_pages(), vmg_[start, end]_pgoff()" (12/33)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-13-2a5aa403d977@kernel.org
-      - 8230f3922077 "mm/vma: clean up anon_vma_compatible()" (13/33)
+      - dfe2b9abf65d "mm/vma: clean up anon_vma_compatible()" (13/33)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-14-2a5aa403d977@kernel.org
-      - 27d9dacd1707 "mm/vma: refactor vmg_adjust_set_range() for clarity" (14/33)
+      - a30574d073c4 "mm/vma: refactor vmg_adjust_set_range() for clarity" (14/33)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-15-2a5aa403d977@kernel.org
-      - bda80fd4f62d "mm/vma: minor cleanup of expand_[upwards, downwards]()" (15/33)
+      - 68d307442ba4 "mm/vma: minor cleanup of expand_[upwards, downwards]()" (15/33)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-16-2a5aa403d977@kernel.org
-      - 86913d9bb5d8 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-      - b540eaf9e4dd "mm/vma: remove duplicative vma_pgoff_offset() helper" (19/33)
+      - ff8fbc9e0873 "mm/vma: remove duplicative vma_pgoff_offset() helper" (19/33)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-20-2a5aa403d977@kernel.org
-      - 63c631123b13 "mm: use linear_page_[index, delta]() consistently" (20/33)
+      - 93d23dff8eb5 "mm: use linear_page_[index, delta]() consistently" (20/33)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-21-2a5aa403d977@kernel.org
-      - cc58786b682d "mm/vma: introduce vma_assert_can_modify()" (21/33)
+      - e65f4dfac104 "mm/vma: introduce vma_assert_can_modify()" (21/33)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-22-2a5aa403d977@kernel.org
-      - 01a5390d349b "mm/vma: add and use vma_[add/sub]_pgoff()" (22/33)
+      - 4ea24922ae3a "mm/vma: add and use vma_[add/sub]_pgoff()" (22/33)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-23-2a5aa403d977@kernel.org
-      - b8bbf2698d90 "mm-vma-add-and-use-vma__pgoff-fix" (23/33)
-        - Authored by a maintainer, reviewed by nobody
-      - 41e0cad2317b "mm/vma: move __install_special_mapping() to vma.c" (24/33)
+      - 7578fc092a25 "mm/vma: move __install_special_mapping() to vma.c" (23/33)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-24-2a5aa403d977@kernel.org
-      - f3d295833dc8 "mm/vma: make vma_set_range() static, drop insert_vm_struct() decl" (25/33)
+      - 775659f8fc14 "mm/vma: make vma_set_range() static, drop insert_vm_struct() decl" (24/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-25-2a5aa403d977@kernel.org
-      - 2818c85a05a6 "mm/vma: update vma_shrink() to not pass start, pgoff parameters" (26/33)
+      - 6387563e6ecd "mm/vma: update vma_shrink() to not pass start, pgoff parameters" (25/33)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-26-2a5aa403d977@kernel.org
-      - c462e1fb35f4 "mm/vma: update vmg_adjust_set_range() to offset pgoff instead" (27/33)
+      - ce4ec991da01 "mm/vma: update vmg_adjust_set_range() to offset pgoff instead" (26/33)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-27-2a5aa403d977@kernel.org
-      - a3a4e00eca9a "mm/vma: slightly rework the anonymous check in __mmap_new_vma()" (28/33)
+      - bcb52fc56ee6 "mm/vma: slightly rework the anonymous check in __mmap_new_vma()" (27/33)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-28-2a5aa403d977@kernel.org
-      - 77d6ef53e857 "mm/vma: introduce and use vma_set_pgoff()" (29/33)
+      - 613562c29fa6 "mm/vma: introduce and use vma_set_pgoff()" (28/33)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-29-2a5aa403d977@kernel.org
-      - 445981cef883 "mm/vma: correct incorrect vma.h inclusion" (30/33)
+      - dd7d7d00c073 "mm/vma: correct incorrect vma.h inclusion" (29/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-30-2a5aa403d977@kernel.org
-      - b669ce68ad31 "mm/vma: use guard clauses in can_vma_merge_[before, after]()" (31/33)
+      - 9e98b6dd46f5 "mm/vma: use guard clauses in can_vma_merge_[before, after]()" (30/33)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-31-2a5aa403d977@kernel.org
-      - 280fd1f49b37 "tools/testing/vma: default VMA, mm flag bits to 64-bit" (32/33)
+      - fe95ccb1ba7c "tools/testing/vma: default VMA, mm flag bits to 64-bit" (31/33)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-32-2a5aa403d977@kernel.org
-    - 1f5a0037a2d3 "tools/testing/vma: output compared expression on ASSERT_[EQ, NE]()"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-33-2a5aa403d977@kernel.org
-      - afeaa9b71b42 "mm/vma: update do_mmap() to use vma_flags_t" (1/13)
+      - f1966d954bc5 "tools/testing/vma: output compared expression on ASSERT_[EQ, NE]()" (32/33)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-33-2a5aa403d977@kernel.org
+- mm-unstable: 32 total, 2 (30) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 10 commits
+    - no role, no role : 5 commits
+    - no role, reviewer: 5 commits
+    - reviewer, no role : 5 commits
+    - reviewer, reviewer: 1 commits
+    - maintainer, no role : 6 commits
+  - full commits list
+      - aeba509fec16 "mm/vma: update do_mmap() to use vma_flags_t" (1/13)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-2-0fa2357d5431@kernel.org
-      - 19d106de7e44 "mm: convert __get_unmapped_area() to use vma_flags_t" (2/13)
+      - b54d3ec8628a "mm: convert __get_unmapped_area() to use vma_flags_t" (2/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
-      - 8032e31a00fd "mm: update generic_get_unmapped_area[_topdown]() to use vma_flags_t" (3/13)
+      - 26061132f4fb "mm: update generic_get_unmapped_area[_topdown]() to use vma_flags_t" (3/13)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-4-0fa2357d5431@kernel.org
-      - 99395d80d06c "mm: prefer mm->def_vma_flags in mm logic" (4/13)
+      - e4b6a523edb1 "mm: prefer mm->def_vma_flags in mm logic" (4/13)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-5-0fa2357d5431@kernel.org
-      - 1de15c9cf98f "mm/vma: convert vm_pgprot_modify() to use vma_flags_t and rename" (5/13)
+      - 068a36f9e621 "mm/vma: convert vm_pgprot_modify() to use vma_flags_t and rename" (5/13)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-6-0fa2357d5431@kernel.org
-      - e77d155bd7b8 "mm/vma: rename vma_get_page_prot to vma_flags_to_page_prot" (6/13)
+      - e10b967e9761 "mm/vma: rename vma_get_page_prot to vma_flags_to_page_prot" (6/13)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-7-0fa2357d5431@kernel.org
-      - c26550d6c13b "mm: introduce vma_get_page_prot() and use it" (7/13)
+      - 42449164d938 "mm: introduce vma_get_page_prot() and use it" (7/13)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-8-0fa2357d5431@kernel.org
-      - e195412bf0cd "mm/vma: update create_init_stack_vma() to use vma_flags_t" (8/13)
+      - 95e5ac51e776 "mm/vma: update create_init_stack_vma() to use vma_flags_t" (8/13)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-9-0fa2357d5431@kernel.org
-      - 03de9a8fc474 "mm/vma: convert miscellaneous uses of VMA flags in core mm" (9/13)
+      - 2ccfeaf97925 "mm/vma: convert miscellaneous uses of VMA flags in core mm" (9/13)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-10-0fa2357d5431@kernel.org
-      - aac84675a7af "mm/mlock: convert mlock code to use vma_flags_t" (10/13)
+      - 71a00bd273e4 "mm/mlock: convert mlock code to use vma_flags_t" (10/13)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-11-0fa2357d5431@kernel.org
-      - 405f1bdc9e07 "mm/mprotect: convert mprotect code to use vma_flags_t" (11/13)
+      - e4d2632a0d86 "mm/mprotect: convert mprotect code to use vma_flags_t" (11/13)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-12-0fa2357d5431@kernel.org
-      - 679efa4f5143 "mm/mremap: convert mremap code to use vma_flags_t" (12/13)
+      - 4ed657d1485d "mm/mremap: convert mremap code to use vma_flags_t" (12/13)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-13-0fa2357d5431@kernel.org
     - series "mm/mseal: further cleanups", v2. (3 commits)
-      - 6d3b36a95711 "mm/mseal: remove superfluous comments, fix confusion around mm" (0/3)
+      - 524373416854 "mm/mseal: remove superfluous comments, fix confusion around mm" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-0-0daa0014b813@kernel.org
         - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-1-0daa0014b813@kernel.org
-      - d34d8f7bffa6 "mm/mseal: limit scope of mseal address zero to address zero" (1/3)
+      - d6f4085ed7e0 "mm/mseal: limit scope of mseal address zero to address zero" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-2-0daa0014b813@kernel.org
-      - 5615051fbe1c "mm/mseal: remove further superfluous comments, do_mseal()" (2/3)
+      - ab93e564766f "mm/mseal: remove further superfluous comments, do_mseal()" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-3-0daa0014b813@kernel.org
-      - 90d86c02efc9 "mm: mincore: remove special handling for VM_PFNMAP" (1/6)
+      - 9b0e10f0cf62 "mm: mincore: remove special handling for VM_PFNMAP" (1/6)
         - Authored by no role player, reviewed by no role player
+        - Link: : https://lore.kernel.org/20260720124151.1483820-1-wangkefeng.wang@huawei.com
         - Link: https://lore.kernel.org/linux-mm/0e619d71-1c3d-4534-8376-2982c7348c31@kernel.org/
         - Link: https://lore.kernel.org/20260717091347.1144789-3-wangkefeng.wang@huawei.com
-      - 2b5d9921a722 "mm: mincore: fixup for remove special handling for VM_PFNMAP" (2/6)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720124151.1483820-1-wangkefeng.wang@huawei.com
-      - 481abfd25cc7 "mm: mincore: replace __get_free_page() with kmalloc()" (3/6)
+      - e865732c1c3c "mm: mincore: replace __get_free_page() with kmalloc()" (2/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260717091347.1144789-4-wangkefeng.wang@huawei.com
-      - 07eb5e1d0b05 "mm: mincore: remove xa_is_value() in mincore_swap()" (4/6)
+      - 606fc5b0ee8c "mm: mincore: remove xa_is_value() in mincore_swap()" (3/6)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260717091347.1144789-5-wangkefeng.wang@huawei.com
-      - 0cbf1fdc25ea "mm: mincore: improve mincore_hugetlb()" (5/6)
+      - d723c31bc5a2 "mm: mincore: improve mincore_hugetlb()" (4/6)
         - Authored by no role player, reviewed by a reviewer
+        - Link: : https://lore.kernel.org/20260720124252.1483984-1-wangkefeng.wang@huawei.com
         - Link: https://lore.kernel.org/20260717091347.1144789-6-wangkefeng.wang@huawei.com
-    - 9cab79fce851 "mm: mincore: fixup improve mincore_hugetlb()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260720124252.1483984-1-wangkefeng.wang@huawei.com
-    - ddd654b44672 "mm: mincore: refactor mincore_page()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260717091347.1144789-7-wangkefeng.wang@huawei.com
-    - e6301a73f523 "mm: nommu: point to the write iterator upon split_vma"
+      - 31883191745a "mm: mincore: refactor mincore_page()" (5/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260717091347.1144789-7-wangkefeng.wang@huawei.com
+    - 9fc901afb4bf "mm: nommu: point to the write iterator upon split_vma"
       - Authored by no role player, reviewed by nobody
       - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/mseal/mseal02.c
       - Link: https://lore.kernel.org/20260702012546.665383-1-thehajime@gmail.com
     - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15 commits)
-      - a606b6c6dcc1 "mm/vma: introduce VMA virtual page offset field and add helpers" (0/15)
+      - 2851ddf79174 "mm/vma: introduce VMA virtual page offset field and add helpers" (0/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-0-2d549757a76f@kernel.org
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-1-2d549757a76f@kernel.org
-      - e612f511ee95 "mm: introduce linear_virt_page_index()" (1/15)
+      - 883f9258f964 "mm: introduce linear_virt_page_index()" (1/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-2-2d549757a76f@kernel.org
-      - 650f49bd8114 "mm: propagate VMA virtual page offset on map, remap, split + merge" (5/15)
+      - 32075c5f6f92 "mm: propagate VMA virtual page offset on map, remap, split + merge" (5/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-6-2d549757a76f@kernel.org
-      - 29193c330412 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
+      - c913befddb4e "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
-      - 0432970ec0ce "tools/testing/vma: expand VMA merge tests to assert virt pgoff" (9/15)
+      - fd128d652f44 "tools/testing/vma: expand VMA merge tests to assert virt pgoff" (9/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-10-2d549757a76f@kernel.org
-      - 3d22dbf93702 "tools/testing/selftests/mm: test virtual page offset merge behaviour" (10/15)
+      - dd869f2b0fbc "tools/testing/selftests/mm: test virtual page offset merge behaviour" (10/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-11-2d549757a76f@kernel.org
-      - 9b3945b062ee "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous" (11/15)
+      - 3b0543eaf488 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous" (11/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-12-2d549757a76f@kernel.org
-      - 98fb0e8398d1 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (12/15)
+      - 1881b75fe4ce "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (12/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-13-2d549757a76f@kernel.org
-      - 408d91b0ed75 "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon" (13/15)
+      - c972904e0710 "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon" (13/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-14-2d549757a76f@kernel.org
-      - 634ace815d36 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests" (14/15)
+      - d7281fa8057a "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests" (14/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-15-2d549757a76f@kernel.org
-    - be9012e407a3 "mm: use proper PTE accessor in move_ptes()"
+    - b5fe124b7226 "mm: use proper PTE accessor in move_ptes()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260720141633.501799-1-agordeev@linux.ibm.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 8c4fe0713c97 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
+    - 07660619b020 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

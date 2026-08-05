@@ -1,54 +1,57 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 14 total, 0 (12) series, 2 non-series commits
+- mm-stable: 11 total, 0 (11) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 4 commits
+    - no role, nobody: 1 commits
     - no role, no role : 8 commits
     - no role, reviewer: 1 commits
     - reviewer, maintainer: 1 commits
   - full commits list
-      - a5eb266e7ab8 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - e409587ab21a "userfaultfd: test uffd VMA flags through the vma_flags_t API" (3/15)
+      - 2730ee209f95 "userfaultfd: test uffd VMA flags through the vma_flags_t API" (3/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-5-kirill@shutemov.name
-      - 6f666828a15b "mm: add VM_UFFD_RWP VMA flag" (4/15)
+      - 134c1d031a2e "mm: add VM_UFFD_RWP VMA flag" (4/15)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260708111417.173443-6-kirill@shutemov.name
-      - 393107fd517f "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
+      - 9cf3c554acbd "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
-      - 715fb43d64ec "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - 763f43865fc4 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - 9a8231cc3e22 "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing" (8/15)
+      - 6eab8f2cc646 "userfaultfd: add UFFDIO_REGISTER_MODE_RWP and UFFDIO_RWPROTECT plumbing" (8/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-10-kirill@shutemov.name
-      - e28e0b47b4f2 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
+      - 2d427bb01639 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
-      - 65242cf4366f "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
+      - 45347e3d32c1 "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
-      - 87575cd012aa "userfaultfd: add UFFDIO_SET_MODE for runtime sync/async toggle" (12/15)
+      - 39a7c34ea508 "userfaultfd: add UFFDIO_SET_MODE for runtime sync/async toggle" (12/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-14-kirill@shutemov.name
-      - 89f5f1ffb31f "Documentation/userfaultfd: document RWP working set tracking" (14/15)
+      - a137d9f8f514 "Documentation/userfaultfd: document RWP working set tracking" (14/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260708111417.173443-16-kirill@shutemov.name
-      - 86913d9bb5d8 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-    - af736edc59d6 "mm: fold userfaultfd_rwp() to false without CONFIG_ARCH_HAS_PTE_PROTNONE"
+- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 3 commits
+  - full commits list
+    - ccea9ef02e0c "mm: fold userfaultfd_rwp() to false without CONFIG_ARCH_HAS_PTE_PROTNONE"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/amcitKvUvFYr8W38@thinkstation
-    - ca4f97a11a6e "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
+    - e67828313c02 "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260601082609.170076-1-jianhuizzzzz@gmail.com
-      - f32204b435b0 "mm: introduce and use linear_folio_page_index()" (7/15)
+      - 44483f6a7363 "mm: introduce and use linear_folio_page_index()" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

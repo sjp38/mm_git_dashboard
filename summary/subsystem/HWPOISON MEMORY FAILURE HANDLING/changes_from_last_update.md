@@ -3,25 +3,57 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
+- mm-stable: 2 -> 10 commits
+  - series: 0 (2) -> 1 (10)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 10 -> 10 commits (no change)
-  - series: 1 (9) -> 1 (9) (no change)
+    - no role, maintainer: 1 -> 5 commits
+    - reviewer, no role : 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 3 commits
+  - changed commits
+    - series "mm/memory-failure: add panic option for unrecoverable pages", v10. (5)
+      - 8d7483174458 "mm/memory-failure: drop dead error_states[] entry for reserved pages (0/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-0-c6ed5b62eea2@debian.org
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-1-c6ed5b62eea2@debian.org
+      - 8a276c0086cf "mm/memory-failure: surface unhandlable kernel pages as -ENOTRECOVERABLE (1/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-2-c6ed5b62eea2@debian.org
+      - 737a97548c4a "mm/memory-failure: report MF_MSG_KERNEL for unrecoverable kernel pages (2/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-3-c6ed5b62eea2@debian.org
+      - 3e0659f93bae "mm/memory-failure: add panic option for unrecoverable pages (3/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260630-ecc_panic-v10-4-c6ed5b62eea2@debian.org
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 7a67b96af069 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
+      - 4b7a90a48b99 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
+      - 68364437ec78 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
+      - b1e71c05fa37 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
+- mm-unstable: 10 -> 2 commits
+  - series: 1 (9) -> 0 (1)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 5 -> 1 commits
+    - reviewer, no role : 1 -> 0 commits
+    - reviewer, reviewer: 3 -> 0 commits
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - 3c0d3699a1d2 "mm/memory-failure: fix refcount leak on soft-offline LBS folio"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260804035356.2615408-1-dayou5941@163.com"
-      - dropped "Link: https://lore.kernel.org/20260803060001.800638-1-dayou5941@163.com"
-      - Link: https://lore.kernel.org/20260804035356.2615408-1-dayou5941@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

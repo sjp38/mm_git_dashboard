@@ -7,12 +7,13 @@
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260717064502.1980173-3-npache@redhat.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 14 total, 2 (14) series, 0 non-series commits
+- mm-stable: 18 total, 3 (18) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 10 commits
+    - no role, no role : 3 commits
+    - no role, reviewer: 11 commits
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 2 commits
+    - reviewer, maintainer: 1 commits
   - full commits list
       - 7eeed888c99a "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason" (1/6)
         - Authored by no role player, reviewed by a reviewer
@@ -68,39 +69,37 @@
       - ac1ec50d71b9 "mm/migrate: use huge_ptep_get() in remove_migration_pte()" (2/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260703114202.365553-5-dev.jain@arm.com
-- mm-unstable: 8 total, 1 (5) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 2 commits
-    - no role, reviewer: 4 commits
-    - reviewer, maintainer: 1 commits
-  - full commits list
-      - a5eb266e7ab8 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 715fb43d64ec "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - 763f43865fc4 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - 86913d9bb5d8 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
     - series "mm: handle device-private PMDs in walk callbacks", v3. (3 commits)
-      - c881efd578d7 "mm/mempolicy: skip non-present PMDs when queueing folios" (0/3)
+      - 2858b4027f49 "mm/mempolicy: skip non-present PMDs when queueing folios" (0/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710105557.1987433-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260710105557.1987433-2-usama.arif@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
-    - 62cf5c8877cd "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
+- mm-unstable: 4 total, 0 (1) series, 3 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, reviewer: 3 commits
+  - full commits list
+    - 812fa9f5533a "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260727-kcompact-v1-1-bdfefddd6874@debian.org
       - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
-    - 37961ef0bf72 "mm: mempolicy: fix automatic numa balancing for shmem"
+    - b36a46cb93f8 "mm: mempolicy: fix automatic numa balancing for shmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
-      - f32204b435b0 "mm: introduce and use linear_folio_page_index()" (7/15)
+      - 44483f6a7363 "mm: introduce and use linear_folio_page_index()" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
-    - f84737ec2866 "mm/migrate_device: clear stale mapping after freeing swapcache"
+    - dc24b1c47d6d "mm/migrate_device: clear stale mapping after freeing swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260728062832.1107127-1-arvind.yadav@intel.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

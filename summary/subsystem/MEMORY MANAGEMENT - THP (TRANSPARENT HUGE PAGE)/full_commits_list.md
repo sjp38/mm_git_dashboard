@@ -12,21 +12,23 @@
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - b7efbf410ab3 "mm/huge_memory: initialise workingset state before folio split"
+    - 8f41c89a85d1 "mm/huge_memory: initialise workingset state before folio split"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260725101419.3938406-1-matt@readmodwrite.com
     - series "mm/huge_memory: fix huge_zero_pfn race", v2. (2 commits)
-      - 0a93130544bb "mm/huge_memory: fix huge_zero_pfn race" (0/2)
+      - c2ef66c4eca9 "mm/huge_memory: fix huge_zero_pfn race" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-0-c5d8a41b317f@kernel.org
         - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-1-c5d8a41b317f@kernel.org
-      - 4056a31ba6df "mm/huge_memory: separate out CONFIG_PERSISTENT_HUGE_ZERO_FOLIO logic" (1/2)
+      - 566e821fb622 "mm/huge_memory: separate out CONFIG_PERSISTENT_HUGE_ZERO_FOLIO logic" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-2-c5d8a41b317f@kernel.org
-- mm-stable: 5 total, 1 (5) series, 0 non-series commits
+- mm-stable: 16 total, 1 (16) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 2 commits
-    - reviewer, reviewer: 3 commits
+    - no role, no role : 5 commits
+    - no role, reviewer: 3 commits
+    - reviewer, reviewer: 7 commits
+    - reviewer, maintainer: 1 commits
   - full commits list
     - series "mm: preparatory patches for PMD level swap entries", v2. (6 commits)
       - 608c74559718 "mm: add softleaf_to_pmd() and convert existing callers" (0/6)
@@ -49,89 +51,88 @@
       - a4f6c0f83d91 "mm: move __alloc_pages() to mm/page_alloc.h" (13/18)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-14-c87b714e19d3@google.com
-- mm-unstable: 22 total, 4 (19) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 6 commits
-    - no role, reviewer: 6 commits
-    - no role, maintainer: 1 commits
-    - reviewer, reviewer: 6 commits
-    - reviewer, maintainer: 1 commits
-  - full commits list
-      - 8444a571fe7b "mm/huge_memory: add page->private check back in __split_folio_to_order()" (2/5)
+      - d00765803297 "mm/huge_memory: add page->private check back in __split_folio_to_order()" (2/5)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/all/13f3fcda-7328-4aa5-afc6-75a294a82b2a@nvidia.com/ [1]
         - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-3-7e4fe155f5b9@nvidia.com
-      - a5eb266e7ab8 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
+      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd" (2/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 393107fd517f "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
+      - 9cf3c554acbd "mm: add MM_CP_UFFD_RWP change_protection() flag" (5/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
-      - 715fb43d64ec "mm: preserve RWP marker across PTE rewrites" (6/15)
+      - 763f43865fc4 "mm: preserve RWP marker across PTE rewrites" (6/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - a7d60fb29c15 "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP" (7/15)
+      - 7974c238531b "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP" (7/15)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260708111417.173443-9-kirill@shutemov.name
-      - e28e0b47b4f2 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
+      - 2d427bb01639 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP" (9/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
-      - 65242cf4366f "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
+      - 45347e3d32c1 "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution" (11/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
-      - d9d1b7ededb1 "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
+      - 7a67b96af069 "mm/rmap: parameterise vma_interval_tree_*() by address_space" (5/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - 45557ee7d635 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
+      - 4b7a90a48b99 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*()" (7/33)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - 86913d9bb5d8 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
+      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-      - 80b420c40cf8 "mm/huge_memory: skip device-private PMDs in madvise_free_huge_pmd" (2/3)
+      - ce579dcf730c "mm/huge_memory: skip device-private PMDs in madvise_free_huge_pmd" (2/3)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260710105557.1987433-4-usama.arif@linux.dev
-    - bfddc8556fb0 "mm: huge_memory: fix kobject cleanup in thpsize_create error"
+- mm-unstable: 11 total, 4 (8) series, 3 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 1 commits
+    - no role, reviewer: 5 commits
+    - no role, maintainer: 1 commits
+    - reviewer, reviewer: 2 commits
+  - full commits list
+    - 433ba9c36a1f "mm: huge_memory: fix kobject cleanup in thpsize_create error"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260713054154.120915-1-zenghongling@kylinos.cn
-      - 19d106de7e44 "mm: convert __get_unmapped_area() to use vma_flags_t" (2/13)
+      - b54d3ec8628a "mm: convert __get_unmapped_area() to use vma_flags_t" (2/13)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
     - series "Two small patches to clean up mm/mm_slot.h", v3. (2 commits)
-      - 04bef5075256 "mm/mm_slot.h: add a helper function mm_slot_remove" (0/2)
+      - a347e41940fd "mm/mm_slot.h: add a helper function mm_slot_remove" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
         - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
-      - 0b39efc37430 "mm/mm_slot.h: add comments for mm_slot_lookup/insert" (1/2)
+      - 191bad5c2468 "mm/mm_slot.h: add comments for mm_slot_lookup/insert" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
     - series "mm: mincore: misc cleanups", v3. (6 commits)
-      - 2ced4ce247ff "mm: introduce pud_is_huge() helper" (0/6)
+      - 0dee22e8a98b "mm: introduce pud_is_huge() helper" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260717091347.1144789-1-wangkefeng.wang@huawei.com
         - Link: https://lore.kernel.org/20260717091347.1144789-2-wangkefeng.wang@huawei.com
     - series "mm/huge_memory: drop dead split helper variants". (2 commits)
-      - f0418c657dfe "mm/huge_memory: remove unused can_split_folio()" (0/2)
+      - ad6e134561c1 "mm/huge_memory: remove unused can_split_folio()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260716100345.473473-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260716100345.473473-2-kirill@shutemov.name
         - Link: https://lore.kernel.org/linux-mm/aldjhtfVByHDQXe6@thinkstation [1]
         - Link: https://lore.kernel.org/linux-mm/20260714122344.351895-1-kirill@shutemov.name [2]
-      - b95a4dd361c2 "mm/huge_memory: fold split_folio_to_list_to_order() into split_folio_to_order()" (1/2)
+      - 933997c99d62 "mm/huge_memory: fold split_folio_to_list_to_order() into split_folio_to_order()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260716100345.473473-3-kirill@shutemov.name
-    - 36e0710c6f44 "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
+    - 46b94304dc66 "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260730204724.16912-1-jakovnovak30@gmail.com
-      - f32204b435b0 "mm: introduce and use linear_folio_page_index()" (7/15)
+      - 44483f6a7363 "mm: introduce and use linear_folio_page_index()" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
-    - b96e665631cf "selftests/mm: transhuge-stress: check duration inside page loop"
+    - b9084ce39441 "selftests/mm: transhuge-stress: check duration inside page loop"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260720103105.169955-1-sarthak.sharma@arm.com
     - series "Honor XA_FLAGS_ACCOUNT in xas_split_alloc() and charge to folio's memcg", v3. (2 commits)
-      - bcd92e777060 "mm/huge_memory: use folio's memcg inside __folio_split()" (0/2)
+      - 9ecabbac7c30 "mm/huge_memory: use folio's memcg inside __folio_split()" (0/2)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-0-38cb3ff325c5@nvidia.com
         - Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-1-38cb3ff325c5@nvidia.com
@@ -144,32 +145,32 @@
     - no role, reviewer: 5 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - a9ac072fcf8b "selftests/mm: khugepaged: skip swap tests when no swap available"
+    - 4799977a6703 "selftests/mm: khugepaged: skip swap tests when no swap available"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
     - series "mm/khugepaged: several cleanups", v3. (7 commits)
-      - 18e55712ba25 "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan()" (0/7)
+      - a7e63baddd84 "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan()" (0/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-1-0364cad642a0@linux.dev
         - Link: https://lore.kernel.org/all/20260605161422.213817-1-npache@redhat.com/ [1]
         - Link: https://lore.kernel.org/all/20251008043748.45554-1-lance.yang@linux.dev/ [2]
-      - 2216da4884dd "mm/khugepaged: extract young page check into pte_is_referenced() helper" (1/7)
+      - 319580f63e22 "mm/khugepaged: extract young page check into pte_is_referenced() helper" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-2-0364cad642a0@linux.dev
-      - e286d72d1bf6 "mm/khugepaged: introduce a count_collapse_event() helper" (2/7)
+      - b8404d23f4f2 "mm/khugepaged: introduce a count_collapse_event() helper" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-3-0364cad642a0@linux.dev
-      - 11f3108a0aef "mm/khugepaged: fix outdated comments" (3/7)
+      - 9603cab5dc8e "mm/khugepaged: fix outdated comments" (3/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-4-0364cad642a0@linux.dev
-      - 80848bfa1b1d "mm/khugepaged: refactor the PTE state checks into a helper" (4/7)
+      - d6a2a55aab9b "mm/khugepaged: refactor the PTE state checks into a helper" (4/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-5-0364cad642a0@linux.dev
         - Link: https://lore.kernel.org/linux-mm/20251008043748.45554-1-lance.yang@linux.dev/ [1]
-      - 17932802eb33 "mm/khugepaged: unmap pte before releasing vma write lock" (5/7)
+      - d5075a07942a "mm/khugepaged: unmap pte before releasing vma write lock" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-6-0364cad642a0@linux.dev
-      - 40b8e11535cf "mm: Documentation: clarify where the mTHP stats live" (6/7)
+      - 7e22983e2fa4 "mm: Documentation: clarify where the mTHP stats live" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-7-0364cad642a0@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -5,22 +5,25 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 3 -> 3 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
+- mm-stable: 3 -> 4 commits
+  - series: 1 (1) -> 1 (2)
     - no role, no role : 3 -> 3 commits (no change)
-- mm-unstable: 8 -> 8 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "mm: split a couple of headers from internal.h", v2. (3)
+      - ef79e0f5e31b "mm: split out vmalloc declarations from internal.h (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
+- mm-unstable: 8 -> 7 commits
   - series: 0 (5) -> 0 (5) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 2 commits
+    - no role, maintainer: 1 -> 0 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - 774fb4f48013 "mm: add some missing includes to mm-local headers"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
