@@ -85,23 +85,23 @@
     - no role, no role : 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 0feb0e95d34c "mm/memory: batch set uffd-wp markers during zapping" (1/3)
+      - 00ec5f3eb2e3 "mm/memory: batch set uffd-wp markers during zapping" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720065508.2695106-3-dev.jain@arm.com
-      - 736d91be77d8 "mm/rmap: batch unmap file folios belonging to uffd-wp VMAs" (2/3)
+      - a242b32cfa5b "mm/rmap: batch unmap file folios belonging to uffd-wp VMAs" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720065508.2695106-4-dev.jain@arm.com
-      - 2315a48cc70d "mm: introduce and use vma_filebacked_address()" (4/15)
+      - 81aea868e2df "mm: introduce and use vma_filebacked_address()" (4/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org
-      - 6cee131075a2 "mm/rmap: track whether the page VMA mapped walk is anonymous" (6/15)
+      - 76bee7bf777b "mm/rmap: track whether the page VMA mapped walk is anonymous" (6/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-7-2d549757a76f@kernel.org
-      - c913befddb4e "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
+      - cbd8dcee1ed2 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
-      - cc08869fc9b3 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
+      - 21be25e1da47 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com

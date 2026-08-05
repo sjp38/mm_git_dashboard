@@ -3,43 +3,29 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 9 commits
-  - series: 1 (2) -> 2 (6)
-    - no role, no role : 0 -> 3 commits
-    - no role, maintainer: 4 -> 5 commits
+- mm-stable: 9 -> 9 commits (no change)
+  - series: 2 (6) -> 2 (6) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: clean up folio LRU and swap declarations", v9. (3)
-      - 2253208bec87 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-      - 3fe0620fae7c "mm: move reclaim-internal declarations out of swap.h (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-3-2bc72b4f8730@gmail.com
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 763f43865fc4 "mm: preserve RWP marker across PTE rewrites (6/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-- mm-unstable: 15 -> 11 commits
-  - series: 3 (11) -> 2 (8)
+- mm-unstable: 11 -> 12 commits
+  - series: 2 (8) -> 2 (8) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 3 -> 0 commits
-    - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 4 -> 3 commits
+    - no role, reviewer: 4 -> 5 commits
+    - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
+  - changed commits
+    - a51ace8b025d "mm: add some missing includes to mm-local headers"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Baoquan He <baoquan.he@linux.dev>"
+      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
+      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
+- mm-new: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

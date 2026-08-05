@@ -46,17 +46,17 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 0e2d3a08fbae "selftests/mm: unpoison pages in memory-failure teardown"
+    - 40b7683de82f "selftests/mm: unpoison pages in memory-failure teardown"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
-      - 2315a48cc70d "mm: introduce and use vma_filebacked_address()" (4/15)
+      - 81aea868e2df "mm: introduce and use vma_filebacked_address()" (4/15)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - cf78935f4242 "mm/memory-failure: fix refcount leak on soft-offline LBS folio"
+    - f3f0ea08a6ba "mm/memory-failure: fix refcount leak on soft-offline LBS folio"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260804035356.2615408-1-dayou5941@163.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

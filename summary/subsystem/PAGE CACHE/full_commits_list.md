@@ -1,12 +1,12 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 9cc45a7f75bd "mm/filemap: __filemap_add_folio() restore index before retrying"
+    - 86da3f7e1e60 "mm/filemap: __filemap_add_folio() restore index before retrying"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/562fbfa6-dd6d-0b6a-2461-ed2ff1173bc8@google.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 7 total, 1 (4) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
@@ -40,19 +40,19 @@
   - author/reviewer role stat
     - no role, nobody: 5 commits
   - full commits list
-      - b318fc221830 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - c3c14386db6c "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-      - 883f9258f964 "mm: introduce linear_virt_page_index()" (1/15)
+      - 3eecc0e2905c "mm: introduce linear_virt_page_index()" (1/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-2-2d549757a76f@kernel.org
-      - 44483f6a7363 "mm: introduce and use linear_folio_page_index()" (7/15)
+      - ae5e1475be1a "mm: introduce and use linear_folio_page_index()" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
-      - c913befddb4e "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
+      - cbd8dcee1ed2 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
-      - 1881b75fe4ce "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (12/15)
+      - c2abe46a6650 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (12/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-13-2d549757a76f@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

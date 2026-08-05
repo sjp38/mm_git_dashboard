@@ -1,21 +1,21 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, no role : 0 -> 1 commits
+    - no role, nobody: 0 -> 1 commits
   - changed commits
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-- mm-unstable: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
+    - 8db4bab826cc "mm/page_table_check: skip special zero mappings"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/cover.1784717203.git.zhilinz@nebusec.ai
+      - Link: https://lore.kernel.org/e94478e4fb7912fb7e8ebebed5ce85d00dc9a69d.1784717203.git.zhilinz@nebusec.ai
+- mm-hotfixes-unstable: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 0 commits
+- mm-stable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

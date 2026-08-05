@@ -43,56 +43,54 @@
     - 72f522bbf473 "mm: memcontrol: update state_local when flushing NMI stats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713085053.2916813-1-guopeng.zhang@linux.dev
-- mm-unstable: 11 total, 2 (4) series, 7 non-series commits
+- mm-unstable: 12 total, 2 (4) series, 8 non-series commits
   - author/reviewer role stat
+    - no role, reviewer: 1 commits
     - no role, maintainer: 10 commits
     - maintainer, maintainer: 1 commits
   - full commits list
-    - 36d426e547ba "mm: memcg-v1: account vmpressure event allocations"
+    - c9ba9691e506 "mm: memcg-v1: account vmpressure event allocations"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713085520.2953121-1-guopeng.zhang@linux.dev
-    - b2c2fbeae4c1 "mm: memcg-v1: fix wrong linux-mm list address in deprecation warnings"
+    - 3bb53d441533 "mm: memcg-v1: fix wrong linux-mm list address in deprecation warnings"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713085756.2973549-1-guopeng.zhang@linux.dev
-    - ed4931da4a28 "mm: memcontrol: drop unused cpu argument from flush_nmi_stats"
+    - be79c8e8a17b "mm: memcontrol: drop unused cpu argument from flush_nmi_stats"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713090010.2991906-1-guopeng.zhang@linux.dev
-    - 7f74af1649b0 "mm: memcontrol: factor out memcg kmem uncharge sequence"
+    - f4c96c9e7aad "mm: memcontrol: factor out memcg kmem uncharge sequence"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713090304.3015329-1-guopeng.zhang@linux.dev
-    - b45c51a8f159 "mm: memcg-v1: make mem_cgroup_oom_notify_cb() return void"
+    - 4c254b5b6d6d "mm: memcg-v1: make mem_cgroup_oom_notify_cb() return void"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713093737.3299646-1-guopeng.zhang@linux.dev
     - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2 commits)
-      - d5f55f241910 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
+      - 4d223cd1a1bb "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev
     - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3 commits)
-      - b9bf6a666a1a "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/3)
+      - f1f0a61e367e "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev
         - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
-      - f8eb4f5d0800 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
+      - 2e12a8e07c83 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
-      - c993583dd2b8 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
+      - 98fc47888ba4 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
-    - dd7ed6c4ea5e "mm: memcg: stop reclaim when a limit update is superseded"
+    - 9b955e93a65f "mm: memcg: stop reclaim when a limit update is superseded"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260724021805.1234583-1-guopeng.zhang@linux.dev
-    - 3f1dd350eac6 "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
+    - 1cee5c665484 "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260729024612.3369005-1-shakeel.butt@linux.dev
       - Link: https://lore.kernel.org/7a4e5591f45df455e6a485fc5400989569d3d22d.camel@surriel.com/ [1]
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-  - full commits list
-    - 938e833173e6 "mm: add some missing includes to mm-local headers"
+    - a51ace8b025d "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

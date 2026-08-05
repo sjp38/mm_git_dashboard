@@ -1,13 +1,13 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 67e5772eb269 "mm/page_table_check: skip special zero mappings"
+    - 8db4bab826cc "mm/page_table_check: skip special zero mappings"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/cover.1784717203.git.zhilinz@nebusec.ai
       - Link: https://lore.kernel.org/e94478e4fb7912fb7e8ebebed5ce85d00dc9a69d.1784717203.git.zhilinz@nebusec.ai
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits

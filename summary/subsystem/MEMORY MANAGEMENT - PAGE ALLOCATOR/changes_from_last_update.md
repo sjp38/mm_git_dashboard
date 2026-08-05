@@ -4,62 +4,50 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 27 -> 31 commits
-  - series: 3 (20) -> 4 (24)
+- mm-stable: 31 -> 31 commits (no change)
+  - series: 4 (24) -> 4 (24) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 25 -> 25 commits (no change)
-    - no role, maintainer: 1 -> 3 commits
-    - reviewer, no role : 0 -> 2 commits
-  - changed commits
-    - series "Keep tail page private zero at free and folio split", v3. (5)
-      - 7ae5a5d8eca5 "mm/compaction: stop recording free page order in page->private (1/5)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-2-7e4fe155f5b9@nvidia.com
-      - 04ad9908b031 "mm/page_alloc: make sure tail_page->private is zero at page free time (3/5)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-4-7e4fe155f5b9@nvidia.com
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)", v2. (10)
-      - d79db3f39684 "mm: provide free_reserved_pages(), removing x86 variant (1/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-2-4afc76c73d61@kernel.org
-    - series "mm: split a couple of headers from internal.h", v2. (3)
-      - 55ed40abb2cd "mm: split out mm_init and memblock declarations from internal.h (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - added "[rppt@kernel.org: split stubfs from internal.h to mm_init.h]"
-        - added "Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org"
-        - Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-- mm-unstable: 19 -> 14 commits
-  - series: 4 (13) -> 3 (9)
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - reviewer, no role : 2 -> 2 commits (no change)
+- mm-unstable: 14 -> 16 commits
+  - series: 3 (9) -> 3 (10)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 2 -> 0 commits
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, no role : 5 -> 3 commits
+    - no role, reviewer: 4 -> 6 commits
+    - reviewer, no role : 3 -> 3 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: fix reclaim storms in defrag_mode", v2. (4)
-      - de45d4612679 "mm: page_alloc: fix non-movable reclaim storm in defrag_mode (3/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "[brendan.jackman@linux.dev: fix try_to_compact_pages() kerneldoc]"
-        - added "Link: : https://lore.kernel.org/DK7NM9RPUJOD.11PNJJ5N2OBED@linux.dev"
-        - added "Signed-off-by: "Brendan Jackman" <brendan.jackman@linux.dev>"
-        - dropped "Cc: Brendan Jackman <jackmanb@google.com>"
-        - Link: : https://lore.kernel.org/DK7NM9RPUJOD.11PNJJ5N2OBED@linux.dev
-        - Link: https://lore.kernel.org/20260722150006.3848560-5-hannes@cmpxchg.org
-  - dropped commits
-    - 176cf9e999c2 "mm-page_alloc-fix-non-movable-reclaim-storm-in-defrag_mode-fix"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/DK7NM9RPUJOD.11PNJJ5N2OBED@linux.dev
+    - afa78de0047c "mm/page_reporting: add page_reporting_delay_ms module parameter"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260731193705.2902728-1-pratmal@google.com
+    - a51ace8b025d "mm: add some missing includes to mm-local headers"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Baoquan He <baoquan.he@linux.dev>"
+      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
+      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
+    - series "mm/page_ext: remove pgdat_page_ext_init()", v2. (2)
+      - 38ba4d2fd697 "mm/page_ext: remove pgdat_page_ext_init() (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
 - mm-new: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 2 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 7acf7d305c63 "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260805093108.2352900-1-ye.liu@linux.dev
+    - def32aea692f "mm/show_mem: fix format string inconsistencies and type mismatches"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260805021556.1908807-1-ye.liu@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

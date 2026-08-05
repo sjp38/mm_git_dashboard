@@ -37,29 +37,32 @@
       - b1e71c05fa37 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
-- mm-unstable: 5 total, 1 (3) series, 2 non-series commits
+- mm-unstable: 6 total, 1 (3) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, reviewer: 3 commits
+    - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
   - full commits list
     - series "Two small patches to clean up mm/mm_slot.h", v3. (2 commits)
-      - a347e41940fd "mm/mm_slot.h: add a helper function mm_slot_remove" (0/2)
+      - ece6850b34ff "mm/mm_slot.h: add a helper function mm_slot_remove" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
         - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
-      - 191bad5c2468 "mm/mm_slot.h: add comments for mm_slot_lookup/insert" (1/2)
+      - 74e9d83419f1 "mm/mm_slot.h: add comments for mm_slot_lookup/insert" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
-    - aa725f8fdb24 "ksm: stop iterating VMAs when ksm_test_exit returns true"
+    - 0ac6a6897eff "ksm: stop iterating VMAs when ksm_test_exit returns true"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260726133501.504048-1-wsw9603@163.com
-      - c913befddb4e "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
+      - cbd8dcee1ed2 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
-    - 4dd0f199f080 "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
+    - 301411f92a16 "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260803152115.3479919-1-xialonglong2025@163.com
+      - Link: https://lore.kernel.org/20260805132736.1063408-1-xialonglong2025@163.com
+    - 52811fd69775 "ksm: update comments and docs to reference folio->mapping"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260805105927.41987-1-hongfu.li@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

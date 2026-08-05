@@ -4,27 +4,15 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 5 commits
-  - series: 0 (1) -> 1 (3)
+- mm-stable: 5 -> 5 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 4 commits
-  - changed commits
-    - series "memcg: bail out reclaim when memcg is dying", v3. (4)
-      - 757dd8193f6c "memcg: bail out proactive reclaim when memcg is dying (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260702120235.376752-4-jiayuan.chen@linux.dev
-    - series "mm: clean up folio LRU and swap declarations", v9. (3)
-      - 2253208bec87 "mm/swap: colocate page-cluster sysctl with swap readahead (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-0-2bc72b4f8730@gmail.com
-        - Link: https://lore.kernel.org/20260708-ch-swap-series-plus-folio-lru-cleanup-v9-1-2bc72b4f8730@gmail.com
-- mm-unstable: 15 -> 13 commits
-  - series: 3 (14) -> 2 (12)
+    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-unstable: 13 -> 13 commits (no change)
+  - series: 2 (12) -> 2 (12) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 11 -> 9 commits
+    - no role, maintainer: 9 -> 9 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -1,82 +1,53 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 3 -> 3 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-- mm-stable: 5 -> 16 commits
-  - series: 1 (5) -> 1 (16)
-    - no role, no role : 0 -> 5 commits
-    - no role, reviewer: 2 -> 3 commits
-    - reviewer, reviewer: 3 -> 7 commits
-    - reviewer, maintainer: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 4 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 1 -> 2 commits
   - changed commits
-    - series "Keep tail page private zero at free and folio split", v3. (5)
-      - d00765803297 "mm/huge_memory: add page->private check back in __split_folio_to_order() (2/5)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/all/13f3fcda-7328-4aa5-afc6-75a294a82b2a@nvidia.com/ [1]
-        - Link: https://lore.kernel.org/20260709-keep-subpage-private-zero-at-free-v3-3-7e4fe155f5b9@nvidia.com
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+    - series "mm/huge_memory: fix huge_zero_pfn race", v2. (2)
+      - 33192a26cdde "mm/huge_memory: fix huge_zero_pfn race (0/2)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 9cf3c554acbd "mm: add MM_CP_UFFD_RWP change_protection() flag (5/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
-      - 763f43865fc4 "mm: preserve RWP marker across PTE rewrites (6/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - 7974c238531b "mm: handle VM_UFFD_RWP in khugepaged, rmap, and GUP (7/15)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-9-kirill@shutemov.name
-      - 2d427bb01639 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP (9/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
-      - 45347e3d32c1 "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution (11/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 7a67b96af069 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - 4b7a90a48b99 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-    - series "mm: handle device-private PMDs in walk callbacks", v3. (3)
-      - ce579dcf730c "mm/huge_memory: skip device-private PMDs in madvise_free_huge_pmd (2/3)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260710105557.1987433-4-usama.arif@linux.dev
-- mm-unstable: 22 -> 11 commits
-  - series: 4 (19) -> 4 (8)
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-0-c5d8a41b317f@kernel.org
+        - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-1-c5d8a41b317f@kernel.org
+      - 98bd3af0bb6b "mm/huge_memory: separate out CONFIG_PERSISTENT_HUGE_ZERO_FOLIO logic (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-2-c5d8a41b317f@kernel.org
+    - aca1f2d5de17 "mm/huge_memory: initialise workingset state before folio split"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260725101419.3938406-1-matt@readmodwrite.com
+- mm-hotfixes-unstable: 3 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+- mm-stable: 16 -> 16 commits (no change)
+  - series: 1 (16) -> 1 (16) (no change)
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - reviewer, reviewer: 7 -> 7 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 11 -> 12 commits
+  - series: 4 (8) -> 4 (8) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 6 -> 1 commits
-    - no role, reviewer: 6 -> 5 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 6 -> 2 commits
-    - reviewer, maintainer: 1 -> 0 commits
-- mm-new: 8 -> 8 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
+    - reviewer, reviewer: 2 -> 2 commits (no change)
+  - changed commits
+    - d7df95d29a3d "selftests/mm: khugepaged: skip swap tests when no swap available"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
+- mm-new: 8 -> 7 commits
   - series: 1 (7) -> 1 (7) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

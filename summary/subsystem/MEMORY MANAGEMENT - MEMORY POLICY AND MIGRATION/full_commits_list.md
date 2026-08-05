@@ -89,17 +89,17 @@
     - no role, nobody: 1 commits
     - no role, reviewer: 3 commits
   - full commits list
-    - 812fa9f5533a "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
+    - 08644e051592 "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260727-kcompact-v1-1-bdfefddd6874@debian.org
       - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
-    - b36a46cb93f8 "mm: mempolicy: fix automatic numa balancing for shmem"
+    - 78901734d378 "mm: mempolicy: fix automatic numa balancing for shmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
-      - 44483f6a7363 "mm: introduce and use linear_folio_page_index()" (7/15)
+      - ae5e1475be1a "mm: introduce and use linear_folio_page_index()" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
-    - dc24b1c47d6d "mm/migrate_device: clear stale mapping after freeing swapcache"
+    - d4f7a30d86ae "mm/migrate_device: clear stale mapping after freeing swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260728062832.1107127-1-arvind.yadav@intel.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

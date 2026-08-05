@@ -4,78 +4,36 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 21 -> 32 commits
-  - series: 3 (20) -> 4 (31)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 7 -> 13 commits
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 7 -> 9 commits
-    - reviewer, reviewer: 0 -> 2 commits
-    - reviewer, maintainer: 0 -> 1 commits
   - changed commits
-    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
-      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
-      - 9cf3c554acbd "mm: add MM_CP_UFFD_RWP change_protection() flag (5/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-7-kirill@shutemov.name
-      - 763f43865fc4 "mm: preserve RWP marker across PTE rewrites (6/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
-      - 2d427bb01639 "mm/userfaultfd: add RWP fault delivery and expose UFFDIO_REGISTER_MODE_RWP (9/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-11-kirill@shutemov.name
-      - 45347e3d32c1 "userfaultfd: add UFFD_FEATURE_RWP_ASYNC for async fault resolution (11/15)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708111417.173443-13-kirill@shutemov.name
-    - series "mm: remove CONFIG_HAVE_BOOTMEM_INFO_NODE (Part 2)", v2. (10)
-      - 788a0efb959d "mm/hugetlb_vmemmap: remove bootmem_info leftovers (7/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260716-bootmem_info_part2-v2-8-4afc76c73d61@kernel.org
-    - series "mm: split a couple of headers from internal.h", v2. (3)
-      - 55ed40abb2cd "mm: split out mm_init and memblock declarations from internal.h (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - added "[rppt@kernel.org: split stubfs from internal.h to mm_init.h]"
-        - added "Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org"
-        - Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 7a67b96af069 "mm/rmap: parameterise vma_interval_tree_*() by address_space (5/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-6-2a5aa403d977@kernel.org
-      - 4b7a90a48b99 "mm/rmap: rename vma_interval_tree_*() to mapping_rmap_tree_*() (7/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-8-2a5aa403d977@kernel.org
-      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-    - series "mm/rmap: Refactor try_to_unmap_one", v4. (5)
-      - d4ec5572825a "mm/rmap: add try_to_unmap_poisoned_hugetlb_one (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260730094559.418003-3-dev.jain@arm.com
-- mm-unstable: 18 -> 7 commits
-  - series: 1 (12) -> 0 (1)
+    - ab9b43d39ed0 "mm/hugetlb_cma: dix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+      - Authored by no role player, reviewed by nobody
+      - added "Cc: Anshuman Khandual <anshuman.khandual@arm.com>"
+      - Link: https://lore.kernel.org/20260726072935.3513996-1-souravpanda@google.com
+- mm-stable: 32 -> 32 commits (no change)
+  - series: 4 (31) -> 4 (31) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, no role : 13 -> 13 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 9 -> 9 commits (no change)
+    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 7 -> 8 commits
+  - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 8 -> 2 commits
-    - no role, maintainer: 3 -> 1 commits
-    - reviewer, reviewer: 3 -> 1 commits
-    - reviewer, maintainer: 1 -> 0 commits
-- mm-new: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - a51ace8b025d "mm: add some missing includes to mm-local headers"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Baoquan He <baoquan.he@linux.dev>"
+      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
+      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

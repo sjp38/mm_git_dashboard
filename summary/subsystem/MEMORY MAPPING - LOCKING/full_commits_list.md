@@ -1,17 +1,19 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 1 (1) series, 1 non-series commits
+- mm-hotfixes-stable: 1 total, 1 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
   - full commits list
     - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v6. (3 commits)
-      - 3ff4782cb76a "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/3)
+      - 26444eb71465 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-0-8cc77dcc0018@kernel.org
         - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-1-8cc77dcc0018@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-    - 3876a6a6ee02 "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF"
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - b7f76669c314 "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-2-8cc77dcc0018@kernel.org
 - mm-stable: 1 total, 0 (1) series, 0 non-series commits
@@ -25,7 +27,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 55de5bd244a0 "docs/mm: fix braces"
+    - 281715e83319 "docs/mm: fix braces"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

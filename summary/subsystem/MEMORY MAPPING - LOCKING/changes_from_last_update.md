@@ -1,23 +1,25 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - maintainer, no role : 0 -> 1 commits
+- mm-hotfixes-stable: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, no role : 0 -> 1 commits
   - changed commits
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - e65f4dfac104 "mm/vma: introduce vma_assert_can_modify() (21/33)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-22-2a5aa403d977@kernel.org
-- mm-unstable: 2 -> 1 commits
-  - series: 0 (1) -> 0 (0)
+    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v6. (3)
+      - 26444eb71465 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-0-8cc77dcc0018@kernel.org
+        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-1-8cc77dcc0018@kernel.org
+        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
+- mm-hotfixes-unstable: 2 -> 1 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

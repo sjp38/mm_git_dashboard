@@ -4,37 +4,26 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 9 commits
-  - series: 0 (1) -> 1 (4)
+- mm-stable: 9 -> 9 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 7 commits
-  - changed commits
-    - series "memcg: bail out reclaim when memcg is dying", v3. (4)
-      - 0beeaf14e7b9 "memcg: bail out memory.high when memcg is dying (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260702120235.376752-1-jiayuan.chen@linux.dev
-        - Link: https://lore.kernel.org/20260702120235.376752-2-jiayuan.chen@linux.dev
-      - e13f634f50d5 "memcg: bail out memory.max when memcg is dying (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260702120235.376752-3-jiayuan.chen@linux.dev
-      - 10228e0a5123 "memcg-v1: bail out reclaim when memcg is dying (3/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260702120235.376752-5-jiayuan.chen@linux.dev
-    - 72f522bbf473 "mm: memcontrol: update state_local when flushing NMI stats"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260713085053.2916813-1-guopeng.zhang@linux.dev
-- mm-unstable: 15 -> 11 commits
-  - series: 3 (7) -> 2 (4)
-    - no role, maintainer: 14 -> 10 commits
+    - no role, maintainer: 7 -> 7 commits (no change)
+- mm-unstable: 11 -> 12 commits
+  - series: 2 (4) -> 2 (4) (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 10 -> 10 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+  - changed commits
+    - a51ace8b025d "mm: add some missing includes to mm-local headers"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Baoquan He <baoquan.he@linux.dev>"
+      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
+      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -45,13 +45,13 @@
   - author/reviewer role stat
     - no role, nobody: 3 commits
   - full commits list
-    - ccea9ef02e0c "mm: fold userfaultfd_rwp() to false without CONFIG_ARCH_HAS_PTE_PROTNONE"
+    - eb88ce25cf42 "mm: fold userfaultfd_rwp() to false without CONFIG_ARCH_HAS_PTE_PROTNONE"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/amcitKvUvFYr8W38@thinkstation
-    - e67828313c02 "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
+    - fb4b4f1e8a99 "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260601082609.170076-1-jianhuizzzzz@gmail.com
-      - 44483f6a7363 "mm: introduce and use linear_folio_page_index()" (7/15)
+      - ae5e1475be1a "mm: introduce and use linear_folio_page_index()" (7/15)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

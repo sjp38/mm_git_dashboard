@@ -3,19 +3,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 1 commits
+- mm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, no role : 0 -> 1 commits
-  - changed commits
-    - c494788faffe "mm/gup: fix GUP-fast fallback for NULL-mapping order-0 folios"
-      - Authored by a reviewer, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260708005745.164928-1-jhubbard@nvidia.com
-- mm-unstable: 4 -> 3 commits
+    - reviewer, no role : 1 -> 1 commits (no change)
+- mm-unstable: 3 -> 3 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 0 commits
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

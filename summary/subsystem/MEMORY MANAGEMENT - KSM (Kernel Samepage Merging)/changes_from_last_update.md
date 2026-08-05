@@ -3,54 +3,31 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 7 commits
-  - series: 0 (0) -> 2 (6)
-    - no role, no role : 0 -> 4 commits
+- mm-stable: 7 -> 7 commits (no change)
+  - series: 2 (6) -> 2 (6) (no change)
+    - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, no role : 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "KSM: performance optimizations for rmap_walk_ksm", v11. (3)
-      - a5650de0413f "ksm: add linear_page_index into ksm_rmap_item (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260703162253688u8Str9eFLR8TGCmo7nIOF@zte.com.cn
-        - Link: https://lore.kernel.org/20260703162357853iIa-RP7if9hRlAIuTh5La@zte.com.cn
-        - Link: https://lore.kernel.org/all/adTPQSb-qSSHviJN@lucifer/ [1]
-        - Link: https://lore.kernel.org/all/202604091806051535BJWZ_FTtdIm3Snk24ei_@zte.com.cn/ [2]
-      - 96d2d9acef49 "ksm: optimize rmap_walk_ksm by passing a suitable page index (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260703162510242nxmjbcLy5ccp1dbZSK3EU@zte.com.cn
-        - Link: https://lore.kernel.org/all/202605301703094695zmVgcSC27BNR0rH0N8_x@zte.com.cn [1]
-        - Link: https://lore.kernel.org/all/20260530170404509QpJmBtpSjn3uQHeVKA2iA@zte.com.cn/ [2]
-    - series "KSM: use linear_page_index in collect_procs_ksm()", v2. (2)
-      - 887311e5cd67 "mm/ksm: initialize the addr only once in collect_procs_ksm (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260709173212190rZdwynySRyLr9EtPuXBRU@zte.com.cn
-        - Link: https://lore.kernel.org/all/20260703162253688u8Str9eFLR8TGCmo7nIOF@zte.com.cn/ [1]
-      - 0471cade0a27 "ksm: use precise linear_page_index instead of the whole address space (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260709173312403qgj1Af6pRkFMDSsmc19sM@zte.com.cn
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 68364437ec78 "mm/rmap: parameterise anon_vma_interval_tree_*() by anon_vma (8/33)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-9-2a5aa403d977@kernel.org
-      - b1e71c05fa37 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*() (10/33)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
-- mm-unstable: 11 -> 5 commits
-  - series: 3 (9) -> 1 (3)
+    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 5 -> 6 commits
+  - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 0 commits
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, reviewer: 3 -> 4 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
+  - new commits
+    - 52811fd69775 "ksm: update comments and docs to reference folio->mapping"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260805105927.41987-1-hongfu.li@linux.dev
+  - changed commits
+    - 301411f92a16 "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://lore.kernel.org/20260805132736.1063408-1-xialonglong2025@163.com"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+      - dropped "Link: https://lore.kernel.org/20260803152115.3479919-1-xialonglong2025@163.com"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+      - Link: https://lore.kernel.org/20260805132736.1063408-1-xialonglong2025@163.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

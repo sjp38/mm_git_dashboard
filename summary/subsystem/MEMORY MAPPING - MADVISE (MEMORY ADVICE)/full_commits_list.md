@@ -23,7 +23,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - 2a554df32276 "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - 4103ec161691 "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,35 +1,24 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 4 -> 7 commits
-  - series: 1 (2) -> 1 (4)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 2 -> 3 commits
-    - reviewer, maintainer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - 747beac67911 "mm: remove wb_writeout_inc"
+    - 86da3f7e1e60 "mm/filemap: __filemap_add_folio() restore index before retrying"
       - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260710051052.1839523-1-hch@lst.de
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 1268e1572ba5 "mm: introduce and use linear_page_delta() (16/33)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-17-2a5aa403d977@kernel.org
-      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-- mm-unstable: 8 -> 5 commits
-  - series: 0 (7) -> 0 (5)
-    - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 1 -> 0 commits
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/562fbfa6-dd6d-0b6a-2461-ed2ff1173bc8@google.com
+- mm-hotfixes-unstable: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
+- mm-stable: 7 -> 7 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 0 (5) -> 0 (5) (no change)
+    - no role, nobody: 5 -> 5 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
