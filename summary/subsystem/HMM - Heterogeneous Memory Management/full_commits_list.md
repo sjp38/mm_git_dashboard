@@ -12,7 +12,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 281715e83319 "docs/mm: fix braces"
+    - ba82d4193df0 "docs/mm: fix braces"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

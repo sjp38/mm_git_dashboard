@@ -1,30 +1,9 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, no role : 0 -> 2 commits
-  - changed commits
-    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v6. (3)
-      - 26444eb71465 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-0-8cc77dcc0018@kernel.org
-        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-1-8cc77dcc0018@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 27c32e553834 "mm/ptdump: always stabilise against page table freeing using init_mm (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-4-8cc77dcc0018@kernel.org
-- mm-hotfixes-unstable: 3 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-  - dropped commits
-    - 4903184e92ac "mm: fix incorrect flush address in direct page table reclaim"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260804003708.49830-1-luto@kernel.org
-      - Link: https://lore.kernel.org/all/CA+55aFzBggoXtNXQeng5d_mRoDnaMBE5Y+URs+PHR67nUpMtaw@mail.gmail.com/T/#u [0]
-      - Link: https://github.com/BurntSushi/ripgrep/issues/3494 [1]
-      - Link: https://github.com/dfoxfranke/ripgrep-3494-analysis
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 66 -> 66 commits (no change)
   - series: 8 (61) -> 8 (61) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
@@ -35,36 +14,284 @@
     - reviewer, reviewer: 9 -> 9 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-unstable: 33 -> 35 commits
-  - series: 5 (27) -> 6 (28)
-    - no role, nobody: 8 -> 8 commits (no change)
-    - no role, no role : 8 -> 10 commits
+- mm-unstable: 35 -> 38 commits
+  - series: 6 (28) -> 6 (29)
+    - no role, nobody: 8 -> 7 commits
+    - no role, no role : 10 -> 14 commits
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, no role : 7 -> 7 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - e6300c9604ac "mm/vma: introduce VMA anon page offset field and add helpers (0/20)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-0-ab318a350404@kernel.org
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-1-ab318a350404@kernel.org
+      - 805173f10b34 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
+      - 76200958db5c "mm: introduce linear_anon_page_index() (2/20)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org
+      - d88b13e0bd44 "mm: update print_bad_page_map() to show anon index if appropriate (4/20)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-5-ab318a350404@kernel.org
+      - 346a8d7a49ab "mm: clean up vma_address_end() (10/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-11-ab318a350404@kernel.org
+      - 564a9f8855ab "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (13/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
+    - 7399aec45ad8 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
   - changed commits
-    - 085ad2a3f48e "mm: use a folio in the softleaf_is_device_private path"
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - e9082333eb4d "mm: abstract vma_address() and introduce vma_anon_address() (3/20)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-4-ab318a350404@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Boris Brezillon <boris.brezillon@collabora.com>"
+        - added "Cc: Maxime Ripard <mripard@kernel.org>"
+        - added "Cc: Steven Price <steven.price@arm.com>"
+        - added "Cc: Claudio Imbrenda <imbrenda@linux.ibm.com>"
+        - added "Cc: Dave Airlie <airlied@gmail.com>"
+        - added "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
+        - added "Cc: Gregory Price (Meta) <gourry@gourry.net>"
+        - added "Cc: Oleg Nesterov <oleg@redhat.com>"
+        - added "Cc: Alexander Shishkin <alexander.shishkin@linux.intel.com>"
+        - added "Cc: Namhyung kim <namhyung@kernel.org>"
+        - added "Cc: James Clark <james.clark@linaro.org>"
+        - added "Cc: Oscar Salvador <osalvador@suse.de>"
+        - added "Cc: John Hubbard <jhubbard@nvidia.com>"
+        - added "Cc: Alexander Gordeev <agordeev@linux.ibm.com>"
+        - added "Cc: Nhat Pham <nphamcs@gmail.com>"
+        - added "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
+        - added "Cc: Gerald Schaefer <gerald.schaefer@linux.ibm.com>"
+        - added "Cc: Chris Li <chrisl@kernel.org>"
+        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
+        - added "Cc: Christian Borntraeger <borntraeger@linux.ibm.com>"
+        - added "Cc: Huang Ray <Ray.Huang@amd.com>"
+        - added "Cc: Peter Zijlstra <peterz@infradead.org>"
+        - added "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - added "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - added "Cc: Sven Schnelle <svens@linux.ibm.com>"
+        - added "Cc: Ian Rogers <irogers@google.com>"
+        - added "Cc: Thomas Hellström <thomas.hellstrom@linux.intel.com>"
+        - added "Cc: Liviu Dudau <liviu.dudau@arm.com>"
+        - added "Cc: Vasily Gorbik <gor@linux.ibm.com>"
+        - added "Cc: Christan König <christian.koenig@amd.com>"
+        - added "Cc: Heiko Carstens <hca@linux.ibm.com>"
+        - added "Cc: Matthew Auld <matthew.auld@intel.com>"
+        - added "Cc: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>"
+        - added "Cc: Arnaldo Carvalho de Melo <acme@kernel.org>"
+        - added "Cc: Jiri Olsa <jolsa@kernel.org>"
+        - added "Cc: Muchun Song <muchun.song@linux.dev>"
+        - added "Cc: Kairui Song <kasong@tencent.com>"
+        - added "Cc: Rodrigo Vivi <rodrigo.vivi@intel.com>"
+        - added "Cc: Ingo Molnar <mingo@redhat.com>"
+        - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
+        - added "Cc: Marc Rutland <mark.rutland@arm.com>"
+        - added "Cc: Alexander Deucher <alexander.deucher@amd.com>"
+        - added "Cc: Adrian Hunter <adrian.hunter@intel.com>"
+        - added "Cc: Janosch Frank <frankja@linux.ibm.com>"
+        - added "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
+        - dropped "Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-3-2d549757a76f@kernel.org"
+        - dropped "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-4-ab318a350404@kernel.org
+      - 484ab103e28a "mm: introduce and use vma_filebacked_address() (5/20)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org"
+        - added "Tested-by: syzbot@syzkaller.appspotmail.com"
+        - added "Cc: Boris Brezillon <boris.brezillon@collabora.com>"
+        - added "Cc: Maxime Ripard <mripard@kernel.org>"
+        - added "Cc: Steven Price <steven.price@arm.com>"
+        - added "Cc: Claudio Imbrenda <imbrenda@linux.ibm.com>"
+        - added "Cc: Dave Airlie <airlied@gmail.com>"
+        - added "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
+        - added "Cc: Gregory Price (Meta) <gourry@gourry.net>"
+        - added "Cc: Oleg Nesterov <oleg@redhat.com>"
+        - added "Cc: Alexander Shishkin <alexander.shishkin@linux.intel.com>"
+        - added "Cc: Namhyung kim <namhyung@kernel.org>"
+        - added "Cc: James Clark <james.clark@linaro.org>"
+        - added "Cc: Oscar Salvador <osalvador@suse.de>"
+        - added "Cc: John Hubbard <jhubbard@nvidia.com>"
+        - added "Cc: Alexander Gordeev <agordeev@linux.ibm.com>"
+        - added "Cc: Nhat Pham <nphamcs@gmail.com>"
+        - added "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
+        - added "Cc: Gerald Schaefer <gerald.schaefer@linux.ibm.com>"
+        - added "Cc: Chris Li <chrisl@kernel.org>"
+        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
+        - added "Cc: Christian Borntraeger <borntraeger@linux.ibm.com>"
+        - added "Cc: Huang Ray <Ray.Huang@amd.com>"
+        - added "Cc: Peter Zijlstra <peterz@infradead.org>"
+        - added "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - added "Cc: Sven Schnelle <svens@linux.ibm.com>"
+        - added "Cc: Ian Rogers <irogers@google.com>"
+        - added "Cc: Thomas Hellström <thomas.hellstrom@linux.intel.com>"
+        - added "Cc: Liviu Dudau <liviu.dudau@arm.com>"
+        - added "Cc: Vasily Gorbik <gor@linux.ibm.com>"
+        - added "Cc: Christan König <christian.koenig@amd.com>"
+        - added "Cc: Heiko Carstens <hca@linux.ibm.com>"
+        - added "Cc: Matthew Auld <matthew.auld@intel.com>"
+        - added "Cc: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>"
+        - added "Cc: Arnaldo Carvalho de Melo <acme@kernel.org>"
+        - added "Cc: Jiri Olsa <jolsa@kernel.org>"
+        - added "Cc: Muchun Song <muchun.song@linux.dev>"
+        - added "Cc: Kairui Song <kasong@tencent.com>"
+        - added "Cc: Rodrigo Vivi <rodrigo.vivi@intel.com>"
+        - added "Cc: Ingo Molnar <mingo@redhat.com>"
+        - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
+        - added "Cc: Marc Rutland <mark.rutland@arm.com>"
+        - added "Cc: Alexander Deucher <alexander.deucher@amd.com>"
+        - added "Cc: Adrian Hunter <adrian.hunter@intel.com>"
+        - added "Cc: Janosch Frank <frankja@linux.ibm.com>"
+        - added "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
+        - dropped "Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org"
+        - dropped "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org
+      - 7b0cf16935cf "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (16/20)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-17-ab318a350404@kernel.org"
+        - added "Cc: Boris Brezillon <boris.brezillon@collabora.com>"
+        - added "Cc: Maxime Ripard <mripard@kernel.org>"
+        - added "Cc: Steven Price <steven.price@arm.com>"
+        - added "Cc: Claudio Imbrenda <imbrenda@linux.ibm.com>"
+        - added "Cc: Dave Airlie <airlied@gmail.com>"
+        - added "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
+        - added "Cc: Gregory Price (Meta) <gourry@gourry.net>"
+        - added "Cc: Oleg Nesterov <oleg@redhat.com>"
+        - added "Cc: Alexander Shishkin <alexander.shishkin@linux.intel.com>"
+        - added "Cc: Namhyung kim <namhyung@kernel.org>"
+        - added "Cc: James Clark <james.clark@linaro.org>"
+        - added "Cc: Oscar Salvador <osalvador@suse.de>"
+        - added "Cc: John Hubbard <jhubbard@nvidia.com>"
+        - added "Cc: Alexander Gordeev <agordeev@linux.ibm.com>"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Nhat Pham <nphamcs@gmail.com>"
+        - added "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
+        - added "Cc: Chris Li <chrisl@kernel.org>"
+        - added "Cc: Gerald Schaefer <gerald.schaefer@linux.ibm.com>"
+        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
+        - added "Cc: Christian Borntraeger <borntraeger@linux.ibm.com>"
+        - added "Cc: Huang Ray <Ray.Huang@amd.com>"
+        - added "Cc: Peter Zijlstra <peterz@infradead.org>"
+        - added "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - added "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - added "Cc: Sven Schnelle <svens@linux.ibm.com>"
+        - added "Cc: Ian Rogers <irogers@google.com>"
+        - added "Cc: Vasily Gorbik <gor@linux.ibm.com>"
+        - added "Cc: Liviu Dudau <liviu.dudau@arm.com>"
+        - added "Cc: Thomas Hellström <thomas.hellstrom@linux.intel.com>"
+        - added "Cc: Heiko Carstens <hca@linux.ibm.com>"
+        - added "Cc: Christan König <christian.koenig@amd.com>"
+        - added "Cc: Matthew Auld <matthew.auld@intel.com>"
+        - added "Cc: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>"
+        - added "Cc: Arnaldo Carvalho de Melo <acme@kernel.org>"
+        - added "Cc: Muchun Song <muchun.song@linux.dev>"
+        - added "Cc: Jiri Olsa <jolsa@kernel.org>"
+        - added "Cc: Kairui Song <kasong@tencent.com>"
+        - added "Cc: Rodrigo Vivi <rodrigo.vivi@intel.com>"
+        - added "Cc: Ingo Molnar <mingo@redhat.com>"
+        - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
+        - added "Cc: Marc Rutland <mark.rutland@arm.com>"
+        - added "Cc: Alexander Deucher <alexander.deucher@amd.com>"
+        - added "Cc: Adrian Hunter <adrian.hunter@intel.com>"
+        - added "Cc: Janosch Frank <frankja@linux.ibm.com>"
+        - added "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
+        - dropped "Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-12-2d549757a76f@kernel.org"
+        - dropped "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-17-ab318a350404@kernel.org
+      - 01238629cc1b "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (17/20)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org"
+        - added "Cc: Boris Brezillon <boris.brezillon@collabora.com>"
+        - added "Cc: Maxime Ripard <mripard@kernel.org>"
+        - added "Cc: Steven Price <steven.price@arm.com>"
+        - added "Cc: Claudio Imbrenda <imbrenda@linux.ibm.com>"
+        - added "Cc: Dave Airlie <airlied@gmail.com>"
+        - added "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
+        - added "Cc: Gregory Price (Meta) <gourry@gourry.net>"
+        - added "Cc: Oleg Nesterov <oleg@redhat.com>"
+        - added "Cc: Alexander Shishkin <alexander.shishkin@linux.intel.com>"
+        - added "Cc: Namhyung kim <namhyung@kernel.org>"
+        - added "Cc: James Clark <james.clark@linaro.org>"
+        - added "Cc: Oscar Salvador <osalvador@suse.de>"
+        - added "Cc: John Hubbard <jhubbard@nvidia.com>"
+        - added "Cc: Alexander Gordeev <agordeev@linux.ibm.com>"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Nhat Pham <nphamcs@gmail.com>"
+        - added "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
+        - added "Cc: Chris Li <chrisl@kernel.org>"
+        - added "Cc: Gerald Schaefer <gerald.schaefer@linux.ibm.com>"
+        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
+        - added "Cc: Christian Borntraeger <borntraeger@linux.ibm.com>"
+        - added "Cc: Huang Ray <Ray.Huang@amd.com>"
+        - added "Cc: Peter Zijlstra <peterz@infradead.org>"
+        - added "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - added "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - added "Cc: Sven Schnelle <svens@linux.ibm.com>"
+        - added "Cc: Ian Rogers <irogers@google.com>"
+        - added "Cc: Vasily Gorbik <gor@linux.ibm.com>"
+        - added "Cc: Liviu Dudau <liviu.dudau@arm.com>"
+        - added "Cc: Thomas Hellström <thomas.hellstrom@linux.intel.com>"
+        - added "Cc: Heiko Carstens <hca@linux.ibm.com>"
+        - added "Cc: Christan König <christian.koenig@amd.com>"
+        - added "Cc: Matthew Auld <matthew.auld@intel.com>"
+        - added "Cc: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>"
+        - added "Cc: Arnaldo Carvalho de Melo <acme@kernel.org>"
+        - added "Cc: Muchun Song <muchun.song@linux.dev>"
+        - added "Cc: Jiri Olsa <jolsa@kernel.org>"
+        - added "Cc: Kairui Song <kasong@tencent.com>"
+        - added "Cc: Rodrigo Vivi <rodrigo.vivi@intel.com>"
+        - added "Cc: Ingo Molnar <mingo@redhat.com>"
+        - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
+        - added "Cc: Marc Rutland <mark.rutland@arm.com>"
+        - added "Cc: Alexander Deucher <alexander.deucher@amd.com>"
+        - added "Cc: Adrian Hunter <adrian.hunter@intel.com>"
+        - added "Cc: Janosch Frank <frankja@linux.ibm.com>"
+        - added "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
+        - dropped "Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-13-2d549757a76f@kernel.org"
+        - dropped "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
+    - 85ff80946c22 "mm/sparse: keep mem_section_usage_size() internal"
       - Authored by no role player, reviewed by no role player
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260803031554.30421-1-hongfu.li@linux.dev
-    - series "mm/page_ext: remove pgdat_page_ext_init()", v2. (2)
-      - 18046852edd8 "mm/Kconfig: make FLATMEM depend on !NUMA (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260804151145.3419768-1-ekffu200098@gmail.com
-        - Link: https://lore.kernel.org/20260804151145.3419768-2-ekffu200098@gmail.com
-- mm-new: 2 -> 1 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, no role : 2 -> 1 commits
-  - new commits
-    - 5dd53b050f7c "mm/sparse: keep mem_section_usage_size() internal"
-      - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260805022536.1206575-1-songmuchun@bytedance.com
+  - dropped commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - d510df9416f1 "mm/vma: introduce VMA virtual page offset field and add helpers (0/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-0-2d549757a76f@kernel.org
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-1-2d549757a76f@kernel.org
+      - 3eecc0e2905c "mm: introduce linear_virt_page_index() (1/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-2-2d549757a76f@kernel.org
+      - c0422d46acad "mm: update print_bad_page_map() to show virtual page index (3/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-4-2d549757a76f@kernel.org
+      - 76bee7bf777b "mm/rmap: track whether the page VMA mapped walk is anonymous (6/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-7-2d549757a76f@kernel.org
+      - cbd8dcee1ed2 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios (8/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 07c3fbc6a05b "drivers/base, mm: move arch_numa.c to mm/"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

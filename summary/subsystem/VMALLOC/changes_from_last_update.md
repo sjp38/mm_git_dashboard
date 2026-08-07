@@ -1,48 +1,21 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v6. (3)
-      - 26444eb71465 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-0-8cc77dcc0018@kernel.org
-        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-1-8cc77dcc0018@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 9d3277b2c07c "arm64: remove redundant concurrent ptdump UAF mitigation (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-5-8cc77dcc0018@kernel.org
-- mm-hotfixes-unstable: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 4 -> 4 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 7 -> 9 commits
+- mm-unstable: 9 -> 9 commits (no change)
   - series: 0 (5) -> 0 (5) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 6 -> 7 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - f0e6d4bc1689 "mm/vmalloc: do not warn on -ENOMEM from va_alloc()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260802104627.63892-1-urezki@gmail.com
-    - a51ace8b025d "mm: add some missing includes to mm-local headers"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Baoquan He <baoquan.he@linux.dev>"
-      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
-      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-- mm-new: 2 -> 0 commits
+    - no role, no role : 7 -> 7 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

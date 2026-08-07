@@ -13,7 +13,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - b7f76669c314 "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF"
+    - 721eb8bf6c15 "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-2-8cc77dcc0018@kernel.org
 - mm-stable: 1 total, 0 (1) series, 0 non-series commits
@@ -27,7 +27,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 281715e83319 "docs/mm: fix braces"
+    - ba82d4193df0 "docs/mm: fix braces"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

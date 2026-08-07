@@ -33,19 +33,19 @@
   - author/reviewer role stat
     - no role, no role : 5 commits
   - full commits list
-      - 965152570270 "mm/memory_hotplug: add mhp_online_type_to_str() and export string helpers" (1/10)
+      - 36933bf9fc0a "mm/memory_hotplug: add mhp_online_type_to_str() and export string helpers" (1/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-3-gourry@gourry.net
-      - 99f04c87c233 "mm/memory_hotplug: pass online_type to online_memory_block() via arg" (2/10)
+      - a114f920037c "mm/memory_hotplug: pass online_type to online_memory_block() via arg" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-4-gourry@gourry.net
-      - baf21d3bea58 "mm/memory_hotplug: export mhp_get_default_online_type" (3/10)
+      - 7f71a800145a "mm/memory_hotplug: export mhp_get_default_online_type" (3/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-5-gourry@gourry.net
-      - f5dc1a777787 "mm/memory_hotplug: add __add_memory_driver_managed() with online_type arg" (4/10)
+      - 18fc0dcca6a8 "mm/memory_hotplug: add __add_memory_driver_managed() with online_type arg" (4/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-6-gourry@gourry.net
-      - 5372260ca7da "mm/memory_hotplug: add offline_and_remove_memory_ranges()" (5/10)
+      - 0e1af36b7b33 "mm/memory_hotplug: add offline_and_remove_memory_ranges()" (5/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-7-gourry@gourry.net
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -39,31 +39,31 @@
     - no role, no role : 7 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - a9674ac989e7 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/7)
+      - e818b42842a1 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-4-jiangwen6@xiaomi.com
-      - 3fcb16a2d100 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/7)
+      - b6a17088383b "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-5-jiangwen6@xiaomi.com
-      - fd9f41cc938d "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (4/7)
+      - 65b384da7e65 "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-6-jiangwen6@xiaomi.com
-      - ec36096f61bb "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (5/7)
+      - d7ba5d092fd3 "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715120813.3609949-7-jiangwen6@xiaomi.com
-      - a3860144ffeb "mm/vmalloc: simplify vmap batching helper and limit scan by PFN alignment" (6/7)
+      - e810bafe5bf5 "mm/vmalloc: simplify vmap batching helper and limit scan by PFN alignment" (6/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260722085841.3047673-1-jiangwen6@xiaomi.com
-    - 9aa0cfd35e15 "mm/vmalloc: align vm_area so vmap() can batch mappings"
+    - e660f5f21c9b "mm/vmalloc: align vm_area so vmap() can batch mappings"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260715120813.3609949-8-jiangwen6@xiaomi.com
-    - 78567d872451 "mm/vmalloc: make vm_struct.nr_pages an unsigned long"
+    - a51c92bd0e5a "mm/vmalloc: make vm_struct.nr_pages an unsigned long"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260801114915.115224-1-iprintercanon@gmail.com
-    - f0e6d4bc1689 "mm/vmalloc: do not warn on -ENOMEM from va_alloc()"
+    - 32c654cdb3f9 "mm/vmalloc: do not warn on -ENOMEM from va_alloc()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260802104627.63892-1-urezki@gmail.com
-    - a51ace8b025d "mm: add some missing includes to mm-local headers"
+    - 4523cf68ed12 "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

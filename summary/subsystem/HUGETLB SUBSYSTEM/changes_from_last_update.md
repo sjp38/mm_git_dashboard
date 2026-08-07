@@ -4,10 +4,13 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-  - changed commits
+  - new commits
+    - 4949916db619 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260726072935.3513996-1-souravpanda@google.com
+  - dropped commits
     - ab9b43d39ed0 "mm/hugetlb_cma: dix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
       - Authored by no role player, reviewed by nobody
-      - added "Cc: Anshuman Khandual <anshuman.khandual@arm.com>"
       - Link: https://lore.kernel.org/20260726072935.3513996-1-souravpanda@google.com
 - mm-stable: 32 -> 32 commits (no change)
   - series: 4 (31) -> 4 (31) (no change)
@@ -17,23 +20,20 @@
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 7 -> 8 commits
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
+- mm-unstable: 8 -> 9 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, nobody: 3 -> 4 commits
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - a51ace8b025d "mm: add some missing includes to mm-local headers"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Baoquan He <baoquan.he@linux.dev>"
-      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
-      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-- mm-new: 1 -> 0 commits
+  - new commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 805173f10b34 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

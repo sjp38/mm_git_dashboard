@@ -10,19 +10,20 @@
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-unstable: 15 -> 15 commits (no change)
+- mm-unstable: 15 -> 16 commits
   - series: 3 (13) -> 3 (13) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 3 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 5dd53b050f7c "mm/sparse: keep mem_section_usage_size() internal"
+  - changed commits
+    - 85ff80946c22 "mm/sparse: keep mem_section_usage_size() internal"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260805022536.1206575-1-songmuchun@bytedance.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

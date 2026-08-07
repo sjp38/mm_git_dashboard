@@ -1,53 +1,109 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 1 -> 4 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 1 -> 2 commits
-  - changed commits
-    - series "mm/huge_memory: fix huge_zero_pfn race", v2. (2)
-      - 33192a26cdde "mm/huge_memory: fix huge_zero_pfn race (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-0-c5d8a41b317f@kernel.org
-        - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-1-c5d8a41b317f@kernel.org
-      - 98bd3af0bb6b "mm/huge_memory: separate out CONFIG_PERSISTENT_HUGE_ZERO_FOLIO logic (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260730-fix-refcounted-huge-zero-v2-2-c5d8a41b317f@kernel.org
-    - aca1f2d5de17 "mm/huge_memory: initialise workingset state before folio split"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260725101419.3938406-1-matt@readmodwrite.com
-- mm-hotfixes-unstable: 3 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
+- mm-hotfixes-stable: 4 -> 4 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 16 -> 16 commits (no change)
   - series: 1 (16) -> 1 (16) (no change)
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - reviewer, reviewer: 7 -> 7 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 11 -> 12 commits
-  - series: 4 (8) -> 4 (8) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 1 -> 2 commits
-    - reviewer, reviewer: 2 -> 2 commits (no change)
+- mm-unstable: 12 -> 24 commits
+  - series: 4 (8) -> 6 (20)
+    - no role, nobody: 2 -> 5 commits
+    - no role, no role : 1 -> 2 commits
+    - no role, reviewer: 5 -> 10 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - reviewer, reviewer: 2 -> 5 commits
+  - new commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 805173f10b34 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
+      - 68fd33540326 "mm/huge_memory: update remove_migration_pmd() to accept a folio (11/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org
+      - 564a9f8855ab "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (13/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
+    - series "add anon mTHP collapse test cases", v3. (4)
+      - e40a2c9f61d7 "selftests: mm: extend the check_huge() to support mTHP check (0/4)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/cover.1785985999.git.baolin.wang@linux.alibaba.com
+        - Link: https://lore.kernel.org/e5039cbc70f8de853e6c21048d65803a5fe41042.1785985999.git.baolin.wang@linux.alibaba.com
+      - c9526bcac0e2 "selftests: mm: move gather_after_split_folio_orders() into vm_util.c file (1/4)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/30a0a99556adf11c2bf97aa08d6da4830bb43f6f.1785985999.git.baolin.wang@linux.alibaba.com
+      - 9739a17dc16c "selftests: mm: add mTHP collapse test cases (3/4)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/f260058520214a9611922a96326bc54ba282fb73.1785985999.git.baolin.wang@linux.alibaba.com
   - changed commits
-    - d7df95d29a3d "selftests/mm: khugepaged: skip swap tests when no swap available"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
-- mm-new: 8 -> 7 commits
-  - series: 1 (7) -> 1 (7) (no change)
+    - series "Honor XA_FLAGS_ACCOUNT in xas_split_alloc() and charge to folio's memcg", v3. (2)
+      - 34325ed5e7b8 "mm/huge_memory: use folio's memcg inside __folio_split() (0/2)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Fixes: 6b24ca4a1a8d ("mm: Use multi-index entries in the page cache")"
+        - dropped "Fixes: 6b24ca4a1a8d4 ("mm: Use multi-index entries in the page cache")"
+        - Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-0-38cb3ff325c5@nvidia.com
+        - Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-1-38cb3ff325c5@nvidia.com
+        - Link: https://sashiko.dev/#/patchset/20260727-add-gfp_account-to-xas_split_alloc-v1-1-9fae6bf64838%40nvidia.com?part=1 [1]
+        - Link: https://lore.kernel.org/all/amtcBZ-_QVRgCd6b@cmpxchg.org/ [2]
+    - series "mm/khugepaged: several cleanups", v3. (7)
+      - c981de2b7cda "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan() (0/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-1-0364cad642a0@linux.dev
+        - Link: https://lore.kernel.org/all/20260605161422.213817-1-npache@redhat.com/ [1]
+        - Link: https://lore.kernel.org/all/20251008043748.45554-1-lance.yang@linux.dev/ [2]
+      - d23e34341153 "mm/khugepaged: extract young page check into pte_is_referenced() helper (1/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-2-0364cad642a0@linux.dev
+      - 5d47650abc7c "mm/khugepaged: introduce a count_collapse_event() helper (2/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-3-0364cad642a0@linux.dev
+      - 033c036237de "mm/khugepaged: fix outdated comments (3/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-4-0364cad642a0@linux.dev
+      - b7174654afaf "mm/khugepaged: refactor the PTE state checks into a helper (4/7)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-5-0364cad642a0@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/20251008043748.45554-1-lance.yang@linux.dev/ [1]
+      - 6fd090cbc21a "mm/khugepaged: unmap pte before releasing vma write lock (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-6-0364cad642a0@linux.dev
+      - 2fd4fb0dac00 "mm: Documentation: clarify where the mTHP stats live (6/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-7-0364cad642a0@linux.dev
+  - dropped commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - ae5e1475be1a "mm: introduce and use linear_folio_page_index() (7/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
+- mm-new: 7 -> 1 commits
+  - series: 1 (7) -> 0 (1)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 5 -> 0 commits
+  - new commits
+    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5)
+      - 09170290e028 "selftests/mm: skip khugepaged swap tests without swap (2/5)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260727095225.372655-4-usama.anjum@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

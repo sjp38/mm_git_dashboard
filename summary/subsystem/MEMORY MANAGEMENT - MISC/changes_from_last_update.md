@@ -12,41 +12,162 @@
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-unstable: 20 -> 22 commits
-  - series: 3 (8) -> 3 (8) (no change)
-    - no role, nobody: 9 -> 9 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 3 -> 4 commits
-    - no role, maintainer: 1 -> 2 commits
+- mm-unstable: 22 -> 31 commits
+  - series: 3 (8) -> 4 (13)
+    - no role, nobody: 9 -> 8 commits
+    - no role, no role : 6 -> 9 commits
+    - no role, reviewer: 4 -> 6 commits
+    - no role, maintainer: 2 -> 3 commits
+    - reviewer, reviewer: 0 -> 3 commits
+    - maintainer, nobody: 0 -> 1 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - new commits
-    - 52811fd69775 "ksm: update comments and docs to reference folio->mapping"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260805105927.41987-1-hongfu.li@linux.dev
-  - changed commits
-    - a51ace8b025d "mm: add some missing includes to mm-local headers"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Baoquan He <baoquan.he@linux.dev>"
-      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
-      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-    - d7df95d29a3d "selftests/mm: khugepaged: skip swap tests when no swap available"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
-  - dropped commits
-    - a946fa1d9664 "selftests/mm: use pattern matching in .gitignore"
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - d81fd2576ee4 "tools/testing/selftests/mm: test anonymous page offset merge behaviour (15/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-16-ab318a350404@kernel.org
+    - 3cb9dabc228c "selftests/mm: use pattern matching in .gitignore"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260803221732.3651981-3-pratmal@google.com
-- mm-new: 3 -> 2 commits
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 2 -> 1 commits
-    - no role, maintainer: 1 -> 0 commits
-  - new commits
-    - 0f6ba8c2480f "alloc_tag: expose boot-time compression configuration"
-      - Authored by no role player, reviewed by nobody
+    - c23e9a250091 "selftests-mm-use-pattern-matching-in-gitignore-fix"
+      - Authored by a maintainer, reviewed by nobody
+    - series "add anon mTHP collapse test cases", v3. (4)
+      - e40a2c9f61d7 "selftests: mm: extend the check_huge() to support mTHP check (0/4)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/cover.1785985999.git.baolin.wang@linux.alibaba.com
+        - Link: https://lore.kernel.org/e5039cbc70f8de853e6c21048d65803a5fe41042.1785985999.git.baolin.wang@linux.alibaba.com
+      - c9526bcac0e2 "selftests: mm: move gather_after_split_folio_orders() into vm_util.c file (1/4)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/30a0a99556adf11c2bf97aa08d6da4830bb43f6f.1785985999.git.baolin.wang@linux.alibaba.com
+      - 4602409dbcd5 "selftests: mm: implement the mTHP-sized hugepage check helpers (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/56b16691f605426b33b5cf47319233de6127a6b3.1785985999.git.baolin.wang@linux.alibaba.com
+      - 9739a17dc16c "selftests: mm: add mTHP collapse test cases (3/4)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/f260058520214a9611922a96326bc54ba282fb73.1785985999.git.baolin.wang@linux.alibaba.com
+    - b782fecdfe44 "selftests/mm: drop duplicate test_seal_mprotect_two_vma_with_gap() call"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260806030850.76077-1-hongfu.li@linux.dev
+  - changed commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 78206ddcd464 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests (19/20)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-20-ab318a350404@kernel.org"
+        - added "Tested-by: <syzbot@syzkaller.appspotmail.com>"
+        - added "Cc: Christian Borntraeger <borntraeger@linux.ibm.com>"
+        - added "Cc: Jiri Olsa <jolsa@kernel.org>"
+        - added "Cc: Peter Zijlstra <peterz@infradead.org>"
+        - added "Cc: Chris Li <chrisl@kernel.org>"
+        - added "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
+        - added "Cc: John Hubbard <jhubbard@nvidia.com>"
+        - added "Cc: Alexander Gordeev <agordeev@linux.ibm.com>"
+        - added "Cc: Ingo Molnar <mingo@redhat.com>"
+        - added "Cc: Christan König <christian.koenig@amd.com>"
+        - added "Cc: Dave Airlie <airlied@gmail.com>"
+        - added "Cc: Heiko Carstens <hca@linux.ibm.com>"
+        - added "Cc: Muchun Song <muchun.song@linux.dev>"
+        - added "Cc: Gregory Price (Meta) <gourry@gourry.net>"
+        - added "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
+        - added "Cc: Janosch Frank <frankja@linux.ibm.com>"
+        - added "Cc: Thomas Hellström <thomas.hellstrom@linux.intel.com>"
+        - added "Cc: Gerald Schaefer <gerald.schaefer@linux.ibm.com>"
+        - added "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - added "Cc: Marc Rutland <mark.rutland@arm.com>"
+        - added "Cc: Oscar Salvador <osalvador@suse.de>"
+        - added "Cc: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>"
+        - added "Cc: Alexander Deucher <alexander.deucher@amd.com>"
+        - added "Cc: Alexander Shishkin <alexander.shishkin@linux.intel.com>"
+        - added "Cc: Boris Brezillon <boris.brezillon@collabora.com>"
+        - added "Cc: Claudio Imbrenda <imbrenda@linux.ibm.com>"
+        - added "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
+        - added "Cc: Namhyung kim <namhyung@kernel.org>"
+        - added "Cc: Ian Rogers <irogers@google.com>"
+        - added "Cc: James Clark <james.clark@linaro.org>"
+        - added "Cc: Steven Price <steven.price@arm.com>"
+        - added "Cc: Huang Ray <Ray.Huang@amd.com>"
+        - added "Cc: Nhat Pham <nphamcs@gmail.com>"
+        - added "Cc: Vasily Gorbik <gor@linux.ibm.com>"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Arnaldo Carvalho de Melo <acme@kernel.org>"
+        - added "Cc: Maxime Ripard <mripard@kernel.org>"
+        - added "Cc: Oleg Nesterov <oleg@redhat.com>"
+        - added "Cc: Rodrigo Vivi <rodrigo.vivi@intel.com>"
+        - added "Cc: Kairui Song <kasong@tencent.com>"
+        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
+        - added "Cc: Matthew Auld <matthew.auld@intel.com>"
+        - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
+        - added "Cc: Sven Schnelle <svens@linux.ibm.com>"
+        - added "Cc: Adrian Hunter <adrian.hunter@intel.com>"
+        - added "Cc: Liviu Dudau <liviu.dudau@arm.com>"
+        - dropped "Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-15-2d549757a76f@kernel.org"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-20-ab318a350404@kernel.org
+    - series "selftests/mm: use pattern matching in .gitignore", v4. (2)
+      - 224a60221614 "selftests/mm: read memory information without popen (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/1785845818-3131-1-git-send-email-warren.xiong@ugreen.com"
+        - added "Signed-off-by: Warren Xiong <warren.xiong@ugreen.com>"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - added "Cc: Shuah Khan <shuah@kernel.org>"
+        - added "Cc: Liam R. Howlett <liam@infradead.org>"
+        - added "Cc: Michal Hocko <mhocko@suse.com>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/1785845818-3131-1-git-send-email-warren.xiong@ugreen.com
+    - series "mm/khugepaged: several cleanups", v3. (7)
+      - 2fd4fb0dac00 "mm: Documentation: clarify where the mTHP stats live (6/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-7-0364cad642a0@linux.dev
+    - cf0bdfa34c6e "alloc_tag: expose boot-time compression configuration"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Suren Baghdasaryan <surenb@google.com>"
+      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
       - Link: https://lore.kernel.org/c795f8089f82841e8a6e00d7ca286da2b23aeb7b.1785950530.git.abhishekbapat@google.com
+  - dropped commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - 8bb170c7c073 "tools/testing/selftests/mm: test virtual page offset merge behaviour (10/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-11-2d549757a76f@kernel.org
+- mm-new: 2 -> 8 commits
+  - series: 0 (1) -> 1 (5)
+    - no role, nobody: 1 -> 3 commits
+    - no role, no role : 0 -> 3 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 576c49cec7f5 "selftests/mm/vm_util.c: correct __pagemap_scan_get_categories return value"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260806150339.1824251-2-audra@redhat.com
+    - b22f113d9201 "selftests/mm: fix soft-dirty kselftest supported check"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
+    - b33fddc87f4d "selftests-mm-fix-soft-dirty-kselftest-supported-check-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
+    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5)
+      - 5e0ec9494d8b "selftests/mm: skip COW tmpfile cases when fallocate() is unsupported (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260727095225.372655-1-usama.anjum@arm.com
+        - Link: https://lore.kernel.org/20260727095225.372655-2-usama.anjum@arm.com
+      - 3b3ee05b9998 "selftests/mm: skip guard hole-punch test if MADV_REMOVE is unsupported (1/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260727095225.372655-3-usama.anjum@arm.com
+      - 09170290e028 "selftests/mm: skip khugepaged swap tests without swap (2/5)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260727095225.372655-4-usama.anjum@arm.com
+      - 7164cc9576e0 "selftests/mm: skip hard dirty page-cache test on NFS (3/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260727095225.372655-5-usama.anjum@arm.com
+      - da02331cd8d2 "selftests/mm: retry migration failures for the full runtime (4/5)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260727095225.372655-6-usama.anjum@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -2,28 +2,25 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 45864c144d4d "memcg: keep folio's objcg same as its node"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260806061830.3294679-1-shakeel.butt@linux.dev
 - mm-stable: 9 -> 9 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 11 -> 12 commits
+- mm-unstable: 12 -> 12 commits (no change)
   - series: 2 (4) -> 2 (4) (no change)
-    - no role, reviewer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 10 -> 10 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - a51ace8b025d "mm: add some missing includes to mm-local headers"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Baoquan He <baoquan.he@linux.dev>"
-      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
-      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

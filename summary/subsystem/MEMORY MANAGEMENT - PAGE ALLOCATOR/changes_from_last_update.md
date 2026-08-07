@@ -10,44 +10,45 @@
     - no role, reviewer: 25 -> 25 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
-- mm-unstable: 14 -> 16 commits
-  - series: 3 (9) -> 3 (10)
+- mm-unstable: 16 -> 19 commits
+  - series: 3 (10) -> 3 (10) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 4 -> 6 commits
+    - no role, reviewer: 6 -> 7 commits
+    - no role, maintainer: 0 -> 2 commits
     - reviewer, no role : 3 -> 3 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
+  - new commits
+    - 7e4ead2558f2 "mm: debug_page_alloc: fix NULL buf in debug_guardpage_minorder_setup"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260806004556.2633049-1-ye.liu@linux.dev
   - changed commits
-    - afa78de0047c "mm/page_reporting: add page_reporting_delay_ms module parameter"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260731193705.2902728-1-pratmal@google.com
-    - a51ace8b025d "mm: add some missing includes to mm-local headers"
+    - cfd999e61421 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lore.kernel.org/tencent_A860C873956A52E26AD8D309A308A241BA08@qq.com"
+      - added "Cc: Joel Granados <joel.granados@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/tencent_B9556590D4B65ACF74C06897689A6E39F206@qq.com"
+      - Link: https://lore.kernel.org/linux-mm/tencent_FFD4F4D728AAE8A8AE0AF277A59854A29A06@qq.com/
+      - Link: https://lore.kernel.org/tencent_A860C873956A52E26AD8D309A308A241BA08@qq.com
+    - b1775b32b5b4 "mm-page_alloc-only-update-lowmem_reserve_ratio-on-sysctl-write-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - added "Link: https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org"
+      - added "Cc: Joel Granados <joel.granados@kernel.org>"
+      - Link: https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org
+    - 7fb387608451 "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260805093108.2352900-1-ye.liu@linux.dev
+    - 690173f39bb5 "mm/show_mem: fix format string inconsistencies and type mismatches"
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Baoquan He <baoquan.he@linux.dev>"
-      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
-      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-    - series "mm/page_ext: remove pgdat_page_ext_init()", v2. (2)
-      - 38ba4d2fd697 "mm/page_ext: remove pgdat_page_ext_init() (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 7acf7d305c63 "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260805093108.2352900-1-ye.liu@linux.dev
-    - def32aea692f "mm/show_mem: fix format string inconsistencies and type mismatches"
-      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
       - Link: https://lore.kernel.org/20260805021556.1908807-1-ye.liu@linux.dev
+- mm-new: 2 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

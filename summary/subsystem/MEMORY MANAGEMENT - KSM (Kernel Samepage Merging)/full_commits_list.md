@@ -44,23 +44,23 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "Two small patches to clean up mm/mm_slot.h", v3. (2 commits)
-      - ece6850b34ff "mm/mm_slot.h: add a helper function mm_slot_remove" (0/2)
+      - ec036a1c4a01 "mm/mm_slot.h: add a helper function mm_slot_remove" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
         - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
-      - 74e9d83419f1 "mm/mm_slot.h: add comments for mm_slot_lookup/insert" (1/2)
+      - 16f13a49ee7b "mm/mm_slot.h: add comments for mm_slot_lookup/insert" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
-    - 0ac6a6897eff "ksm: stop iterating VMAs when ksm_test_exit returns true"
+    - 0a46c39b1d53 "ksm: stop iterating VMAs when ksm_test_exit returns true"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260726133501.504048-1-wsw9603@163.com
-      - cbd8dcee1ed2 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios" (8/15)
+      - 564a9f8855ab "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
-    - 301411f92a16 "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
+    - fdf01301b8e8 "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260805132736.1063408-1-xialonglong2025@163.com
-    - 52811fd69775 "ksm: update comments and docs to reference folio->mapping"
+    - 17bee2cccab1 "ksm: update comments and docs to reference folio->mapping"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260805105927.41987-1-hongfu.li@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

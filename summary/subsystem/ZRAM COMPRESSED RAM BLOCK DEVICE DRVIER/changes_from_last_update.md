@@ -6,48 +6,19 @@
 - mm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 6 -> 13 commits
-  - series: 2 (4) -> 4 (11)
-    - no role, maintainer: 2 -> 9 commits
-    - maintainer, nobody: 3 -> 3 commits (no change)
+- mm-unstable: 13 -> 14 commits
+  - series: 4 (11) -> 4 (11) (no change)
+    - no role, maintainer: 9 -> 9 commits (no change)
+    - maintainer, nobody: 3 -> 4 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "zram: fix zstd error paths and add parameter validation", v6, (5)
-      - 176c6e1db36d "zram: do not release zstd global params from error paths (0/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260804093841.67920-1-haoqinhuang7@gmail.com
-        - Link: https://lore.kernel.org/20260804093841.67920-2-haoqinhuang7@gmail.com
-      - 8cb3e9cd1e57 "zram: reject zero-size dictionary (1/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260804093841.67920-3-haoqinhuang7@gmail.com
-      - 0ecc84a2383c "zram: add pr_fmt to backend files (2/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260804093841.67920-4-haoqinhuang7@gmail.com
-      - f9d3073dd287 "zram: validate parameters in each backend's setup_params (3/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260804093841.67920-5-haoqinhuang7@gmail.com
-      - 98a7867ce234 "zram: reset per-priority params when changing algorithm before init (4/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260804093841.67920-6-haoqinhuang7@gmail.com
-    - series "zram: fix stale scan bounds after reinitialization". (2)
-      - 80e28adb5106 "zram: fix out-of-bounds access in writeback_store() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260804065919.3970386-1-xialonglong2025@163.com
-        - Link: https://lore.kernel.org/20260804065919.3970386-2-xialonglong2025@163.com
-      - bacc32cc7de6 "zram: fix out-of-bounds access in read_block_state() (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260804065919.3970386-3-xialonglong2025@163.com
-- mm-new: 7 -> 1 commits
-  - series: 2 (7) -> 0 (0)
-    - no role, maintainer: 7 -> 1 commits
   - new commits
+    - ff52e47bc91f "zram: switch to unsigned long indexing"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260806031640.536615-1-senozhatsky@chromium.org
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
     - 4ee4b02a8fb9 "zram: reject disksizes that exceed slot index range"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260804143832.146129-1-xialonglong2025@163.com

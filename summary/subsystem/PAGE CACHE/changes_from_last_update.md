@@ -1,24 +1,91 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 86da3f7e1e60 "mm/filemap: __filemap_add_folio() restore index before retrying"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/562fbfa6-dd6d-0b6a-2461-ed2ff1173bc8@google.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 7 -> 7 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 0 (5) -> 0 (5) (no change)
-    - no role, nobody: 5 -> 5 commits (no change)
+- mm-unstable: 5 -> 3 commits
+  - series: 0 (5) -> 0 (3)
+    - no role, nobody: 5 -> 2 commits
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 76200958db5c "mm: introduce linear_anon_page_index() (2/20)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org
+  - changed commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 01238629cc1b "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (17/20)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org"
+        - added "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - added "Cc: Kairui Song <kasong@tencent.com>"
+        - added "Cc: Gregory Price (Meta) <gourry@gourry.net>"
+        - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
+        - added "Cc: Liviu Dudau <liviu.dudau@arm.com>"
+        - added "Cc: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>"
+        - added "Cc: Muchun Song <muchun.song@linux.dev>"
+        - added "Cc: Christan König <christian.koenig@amd.com>"
+        - added "Cc: Adrian Hunter <adrian.hunter@intel.com>"
+        - added "Cc: Arnaldo Carvalho de Melo <acme@kernel.org>"
+        - added "Cc: Boris Brezillon <boris.brezillon@collabora.com>"
+        - added "Cc: Janosch Frank <frankja@linux.ibm.com>"
+        - added "Cc: Maxime Ripard <mripard@kernel.org>"
+        - added "Cc: John Hubbard <jhubbard@nvidia.com>"
+        - added "Cc: Steven Price <steven.price@arm.com>"
+        - added "Cc: Namhyung kim <namhyung@kernel.org>"
+        - added "Cc: Ingo Molnar <mingo@redhat.com>"
+        - added "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
+        - added "Cc: Oscar Salvador <osalvador@suse.de>"
+        - added "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
+        - added "Cc: Claudio Imbrenda <imbrenda@linux.ibm.com>"
+        - added "Cc: Nhat Pham <nphamcs@gmail.com>"
+        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
+        - added "Cc: Oleg Nesterov <oleg@redhat.com>"
+        - added "Cc: Alexander Deucher <alexander.deucher@amd.com>"
+        - added "Cc: Alexander Shishkin <alexander.shishkin@linux.intel.com>"
+        - added "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - added "Cc: Rodrigo Vivi <rodrigo.vivi@intel.com>"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Sven Schnelle <svens@linux.ibm.com>"
+        - added "Cc: Ian Rogers <irogers@google.com>"
+        - added "Cc: Heiko Carstens <hca@linux.ibm.com>"
+        - added "Cc: James Clark <james.clark@linaro.org>"
+        - added "Cc: Jiri Olsa <jolsa@kernel.org>"
+        - added "Cc: Thomas Hellström <thomas.hellstrom@linux.intel.com>"
+        - added "Cc: Huang Ray <Ray.Huang@amd.com>"
+        - added "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
+        - added "Cc: Vasily Gorbik <gor@linux.ibm.com>"
+        - added "Cc: Christian Borntraeger <borntraeger@linux.ibm.com>"
+        - added "Cc: Peter Zijlstra <peterz@infradead.org>"
+        - added "Cc: Chris Li <chrisl@kernel.org>"
+        - added "Cc: Marc Rutland <mark.rutland@arm.com>"
+        - added "Cc: Matthew Auld <matthew.auld@intel.com>"
+        - added "Cc: Gerald Schaefer <gerald.schaefer@linux.ibm.com>"
+        - added "Cc: Alexander Gordeev <agordeev@linux.ibm.com>"
+        - added "Cc: Dave Airlie <airlied@gmail.com>"
+        - dropped "Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-13-2d549757a76f@kernel.org"
+        - dropped "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
+  - dropped commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - 3eecc0e2905c "mm: introduce linear_virt_page_index() (1/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-2-2d549757a76f@kernel.org
+      - ae5e1475be1a "mm: introduce and use linear_folio_page_index() (7/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
+      - cbd8dcee1ed2 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios (8/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

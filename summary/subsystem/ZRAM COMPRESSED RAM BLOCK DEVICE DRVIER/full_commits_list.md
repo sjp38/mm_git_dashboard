@@ -8,66 +8,63 @@
     - a39826530146 "docs: ABI: zram: fix spelling mistakes"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260707165131.4408-1-rahularukonda2@gmail.com
-- mm-unstable: 13 total, 4 (11) series, 2 non-series commits
+- mm-unstable: 14 total, 4 (11) series, 3 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 9 commits
-    - maintainer, nobody: 3 commits
+    - maintainer, nobody: 4 commits
     - maintainer, no role : 1 commits
   - full commits list
     - series "zram: lockmap tweaks". (2 commits)
-      - 10901d0e55f0 "zram: move lockmap to be per-zram instead per table" (0/2)
+      - 9d7a48d3a880 "zram: move lockmap to be per-zram instead per table" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260714141300.3945672-1-bigeasy@linutronix.de
         - Link: https://lore.kernel.org/20260714141300.3945672-2-bigeasy@linutronix.de
-      - 024ce6dd3c42 "zram: use a custom key for each zram object" (1/2)
+      - bdfb48ef1100 "zram: use a custom key for each zram object" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260714141300.3945672-3-bigeasy@linutronix.de
-    - 17185d006a0a "Documentation: zram: remove sections numbering"
+    - 26b2a6eca3ec "Documentation: zram: remove sections numbering"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260728021229.181627-1-senozhatsky@chromium.org
     - series "zram: fix zram issues reported by sashiko". (2 commits)
-      - bc05e4a489a2 "zram: set default primary compressor in zram_destroy_comps()" (0/2)
+      - bcc5a67d8847 "zram: set default primary compressor in zram_destroy_comps()" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260729045745.775973-2-senozhatsky@chromium.org
         - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com [1]
-      - 80b66de1237c "zram: validate deflate params" (1/2)
+      - 6755b2c90ca8 "zram: validate deflate params" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260729045745.775973-3-senozhatsky@chromium.org
         - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com
-    - 543586250aea "Documentation: zram: correct algo parameters configuration documentation"
+    - 9c37ac92041b "Documentation: zram: correct algo parameters configuration documentation"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260730075158.1339787-1-senozhatsky@chromium.org
     - series "zram: fix zstd error paths and add parameter validation", v6, (5 commits)
-      - 176c6e1db36d "zram: do not release zstd global params from error paths" (0/5)
+      - b75a1c987f93 "zram: do not release zstd global params from error paths" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-1-haoqinhuang7@gmail.com
         - Link: https://lore.kernel.org/20260804093841.67920-2-haoqinhuang7@gmail.com
-      - 8cb3e9cd1e57 "zram: reject zero-size dictionary" (1/5)
+      - ca7221be145b "zram: reject zero-size dictionary" (1/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-3-haoqinhuang7@gmail.com
-      - 0ecc84a2383c "zram: add pr_fmt to backend files" (2/5)
+      - 04ecc27aaef5 "zram: add pr_fmt to backend files" (2/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-4-haoqinhuang7@gmail.com
-      - f9d3073dd287 "zram: validate parameters in each backend's setup_params" (3/5)
+      - 69dc5695c3a3 "zram: validate parameters in each backend's setup_params" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-5-haoqinhuang7@gmail.com
-      - 98a7867ce234 "zram: reset per-priority params when changing algorithm before init" (4/5)
+      - 82cd0a7e5b55 "zram: reset per-priority params when changing algorithm before init" (4/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-6-haoqinhuang7@gmail.com
     - series "zram: fix stale scan bounds after reinitialization". (2 commits)
-      - 80e28adb5106 "zram: fix out-of-bounds access in writeback_store()" (0/2)
+      - ec97897710c9 "zram: fix out-of-bounds access in writeback_store()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804065919.3970386-1-xialonglong2025@163.com
         - Link: https://lore.kernel.org/20260804065919.3970386-2-xialonglong2025@163.com
-      - bacc32cc7de6 "zram: fix out-of-bounds access in read_block_state()" (1/2)
+      - 389351aace44 "zram: fix out-of-bounds access in read_block_state()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804065919.3970386-3-xialonglong2025@163.com
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 4ee4b02a8fb9 "zram: reject disksizes that exceed slot index range"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260804143832.146129-1-xialonglong2025@163.com
+    - ff52e47bc91f "zram: switch to unsigned long indexing"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260806031640.536615-1-senozhatsky@chromium.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

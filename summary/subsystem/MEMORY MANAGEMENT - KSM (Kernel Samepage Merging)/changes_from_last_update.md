@@ -9,25 +9,21 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 5 -> 6 commits
+- mm-unstable: 6 -> 6 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 3 -> 4 commits
+    - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - 52811fd69775 "ksm: update comments and docs to reference folio->mapping"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260805105927.41987-1-hongfu.li@linux.dev
-  - changed commits
-    - 301411f92a16 "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://lore.kernel.org/20260805132736.1063408-1-xialonglong2025@163.com"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-      - dropped "Link: https://lore.kernel.org/20260803152115.3479919-1-xialonglong2025@163.com"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-      - Link: https://lore.kernel.org/20260805132736.1063408-1-xialonglong2025@163.com
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 564a9f8855ab "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (13/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
+  - dropped commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
+      - cbd8dcee1ed2 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios (8/15)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
