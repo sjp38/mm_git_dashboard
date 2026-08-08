@@ -3,24 +3,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 9 -> 10 commits
+- mm-stable: 10 -> 10 commits (no change)
   - series: 2 (6) -> 2 (6) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 4f93f0956f44 "mm/swap: clarify unreachable cond_resched() in swap_reclaim_full_clusters"
-      - Authored by a reviewer, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://sashiko.dev/#/patchset/20260713025644.170839-1-youngjun.park@lge.com?part=4
-      - Link: https://lore.kernel.org/20260713045014.219653-1-youngjun.park@lge.com
-- mm-unstable: 14 -> 13 commits
+- mm-unstable: 13 -> 13 commits (no change)
   - series: 2 (9) -> 2 (9) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

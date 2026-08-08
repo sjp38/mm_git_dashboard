@@ -3,20 +3,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 11 -> 12 commits
+- mm-stable: 12 -> 12 commits (no change)
   - series: 0 (11) -> 0 (11) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 41f2c0f716e1 "mm: fold userfaultfd_rwp() to false without CONFIG_ARCH_HAS_PTE_PROTNONE"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/amcitKvUvFYr8W38@thinkstation
-- mm-unstable: 3 -> 2 commits
+- mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 3 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -4,99 +4,62 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 28 -> 39 commits
-  - series: 4 (25) -> 5 (26)
-    - no role, nobody: 6 -> 10 commits
-    - no role, no role : 12 -> 17 commits
-    - no role, reviewer: 4 -> 5 commits
-    - no role, maintainer: 2 -> 3 commits
+- mm-stable: 39 -> 39 commits (no change)
+  - series: 5 (26) -> 5 (26) (no change)
+    - no role, nobody: 10 -> 10 commits (no change)
+    - no role, no role : 17 -> 17 commits (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-  - changed commits
-    - 98df164036be "selftests/mm: fix on-fault-limit false failure under sudo-rs"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260713092700.464376-1-injaeryou@gmail.com
-    - 824d80962cf2 "selftests/mm: factor out hmm_buffer_alloc() to consolidate buffer setup"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260713033209.280435-1-lihongfu@kylinos.cn
-    - e105f1aa2711 "docs/mm: fix braces"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
-    - fb0493ad1ad4 "selftests/mm: add PAGEMAP_SCAN test for THP PMD holes"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/aljWYfPRCVc6IB2b@thinkstation
-      - Link: https://lore.kernel.org/20260715144234.442721-3-kirill@shutemov.name
-    - 1605ce99afac "selftests/mm: fix BUG_ON checking wrong variable in mremap_dontunmap"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260717070251.73212-1-hongfu.li@linux.dev
-    - c2875056e15a "docs/mm: Physical Memory: remove deferred_split_queue"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260721111919.22923-1-zenghui.yu@linux.dev
-    - 63b420948250 "selftests/mm: use MAP_FAILED for mmap error check"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260720063439.522-1-yanlonglong@kylinos.cn
-    - 9922d4ced6c0 "selftests/mm/pagemap_ioctl: fix missing NULL checks after calloc()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260721063611.342-1-yanlonglong@kylinos.cn
-    - series "mm/early_ioremap: clarify and clean up early_ioremap_reset()". (3)
-      - 6fa0d03840d0 "mm/early_ioremap: clarify early_ioremap_reset() semantics (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260708170647.362562-1-ekffu200098@gmail.com
-        - Link: https://lore.kernel.org/20260708170647.362562-2-ekffu200098@gmail.com
-    - 5716a333c983 "selftests/mm: fix gup_longterm EINVAL error message"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/23557F4CB8CF36FF+20260724074603.1479243-1-zhaozhengzhuo@uniontech.com
-    - 288058d8db5d "selftests/mm: unpoison pages in memory-failure teardown"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
-- mm-unstable: 31 -> 23 commits
-  - series: 4 (13) -> 3 (12)
-    - no role, nobody: 8 -> 5 commits
-    - no role, no role : 9 -> 5 commits
-    - no role, reviewer: 6 -> 5 commits
-    - no role, maintainer: 3 -> 2 commits
+- mm-unstable: 23 -> 27 commits
+  - series: 3 (12) -> 4 (17)
+    - no role, nobody: 5 -> 6 commits
+    - no role, no role : 5 -> 8 commits
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 1 -> 2 commits
+    - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - c65b9ab62ed2 "selftests/mm: drop duplicate test_seal_mprotect_two_vma_with_gap() call"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
-      - Link: https://lore.kernel.org/20260806030850.76077-1-hongfu.li@linux.dev
-    - 974185c27d1e "selftests/mm/vm_util.c: correct __pagemap_scan_get_categories return value"
+    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5)
+      - 4cef75e60b05 "selftests/mm: skip COW tmpfile cases when fallocate() is unsupported (0/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260727095225.372655-1-usama.anjum@arm.com
+        - Link: https://lore.kernel.org/20260727095225.372655-2-usama.anjum@arm.com
+      - 71f4f1ecac16 "selftests/mm: skip guard hole-punch test if MADV_REMOVE is unsupported (1/5)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260727095225.372655-3-usama.anjum@arm.com
+      - 9bc3cb7357a7 "selftests/mm: skip khugepaged swap tests without swap (2/5)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260727095225.372655-4-usama.anjum@arm.com
+      - d3df05ccc792 "selftests/mm: skip hard dirty page-cache test on NFS (3/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260727095225.372655-5-usama.anjum@arm.com
+      - e31424b0145a "selftests/mm: retry migration failures for the full runtime (4/5)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260727095225.372655-6-usama.anjum@arm.com
+    - 3199b0c09efa "selftests/mm: fix read_file() return value check"
       - Authored by no role player, reviewed by no role player
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260806150339.1824251-2-audra@redhat.com
-    - 19879f1fb3d3 "selftests/mm: fix soft-dirty kselftest supported check"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
-    - 9080b9d12798 "selftests-mm-fix-soft-dirty-kselftest-supported-check-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
-- mm-new: 8 -> 6 commits
-  - series: 1 (5) -> 1 (5) (no change)
-    - no role, nobody: 3 -> 2 commits
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
-    - 6fc0f33a6ca5 "selftests/mm: fix read_file() return value check"
-      - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260807013555.36525-1-hongfu.li@linux.dev
+  - dropped commits
+    - 443b1123064f "selftests/mm: transhuge-stress: check duration inside page loop"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260720103105.169955-1-sarthak.sharma@arm.com
+    - 91db8f341c32 "selftests/mm: khugepaged: skip swap tests when no swap available"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
+- mm-new: 6 -> 0 commits
+  - series: 1 (5) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 3 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

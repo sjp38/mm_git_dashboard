@@ -4,99 +4,34 @@
     - no role, no role : 2 -> 2 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 66 -> 81 commits
-  - series: 8 (61) -> 11 (75)
+- mm-stable: 81 -> 81 commits (no change)
+  - series: 11 (75) -> 11 (75) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 31 -> 35 commits
-    - no role, reviewer: 11 -> 13 commits
-    - no role, maintainer: 8 -> 9 commits
-    - reviewer, no role : 3 -> 10 commits
-    - reviewer, reviewer: 9 -> 10 commits
+    - no role, no role : 35 -> 35 commits (no change)
+    - no role, reviewer: 13 -> 13 commits (no change)
+    - no role, maintainer: 9 -> 9 commits (no change)
+    - reviewer, no role : 10 -> 10 commits (no change)
+    - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - series "dax/kmem: atomic whole-device hotplug via sysfs", v7. (10)
-      - 463bd5b83b5d "mm/memory: add memory_block_aligned_range() helper (0/10)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260712154505.3564379-1-gourry@gourry.net
-        - Link: https://lore.kernel.org/20260712154505.3564379-2-gourry@gourry.net
-    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
-      - 3a50308b3926 "mm: introduce vma_flags_can_grow() and vma_can_grow() (0/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-0-0fa2357d5431@kernel.org
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-1-0fa2357d5431@kernel.org
-      - 1944a0183c83 "mm/vma: update do_mmap() to use vma_flags_t (1/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-2-0fa2357d5431@kernel.org
-      - 2ec748152df7 "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
-      - 96c09ae60b59 "mm: prefer mm->def_vma_flags in mm logic (4/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-5-0fa2357d5431@kernel.org
-      - e28266b033c3 "mm/vma: rename vma_get_page_prot to vma_flags_to_page_prot (6/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-7-0fa2357d5431@kernel.org
-      - a2fdfd0080a3 "mm: introduce vma_get_page_prot() and use it (7/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-8-0fa2357d5431@kernel.org
-      - 8e7501a361d3 "mm/vma: update create_init_stack_vma() to use vma_flags_t (8/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-9-0fa2357d5431@kernel.org
-    - ff3d40545f95 "mm: let node_reclaim() return the number of pages reclaimed"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
-    - series "mm/page_alloc: couple of followups for recent cleanups", v3. (4)
-      - e47b037e4208 "mm/page_alloc: remove a couple of VM_BUG_ON()st (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-4-fc4d246f705d@google.com
-        - Link: https://lore.kernel.org/all/7F866265-3F2E-4765-B9D4-9AB898A9C4AC@nvidia.com/
-    - series "mm/mseal: further cleanups", v2. (3)
-      - 4c1c2d2418c5 "mm/mseal: limit scope of mseal address zero to address zero (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-2-0daa0014b813@kernel.org
-    - series "Batch unmap of uffd-wp file folios", v2. (3)
-      - 5d72b5d76de3 "mm/memory: move pte_install_uffd_wp_if_needed() into memory.c (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260720065508.2695106-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260720065508.2695106-2-dev.jain@arm.com
-      - 4259767463b3 "mm/memory: batch set uffd-wp markers during zapping (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260720065508.2695106-3-dev.jain@arm.com
-    - series "mm: fix reclaim storms in defrag_mode", v2. (4)
-      - aee220f565cc "mm: page_alloc: move capture_control to the page allocator (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260722150006.3848560-4-hannes@cmpxchg.org
-      - 7e8756d7ad22 "mm: page_alloc: fix non-movable reclaim storm in defrag_mode (3/4)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: : https://lore.kernel.org/DK7NM9RPUJOD.11PNJJ5N2OBED@linux.dev
-        - Link: https://lore.kernel.org/20260722150006.3848560-5-hannes@cmpxchg.org
-- mm-unstable: 38 -> 23 commits
-  - series: 6 (29) -> 3 (15)
+- mm-unstable: 23 -> 23 commits (no change)
+  - series: 3 (15) -> 3 (15) (no change)
     - no role, nobody: 7 -> 7 commits (no change)
-    - no role, no role : 14 -> 10 commits
-    - no role, reviewer: 4 -> 2 commits
-    - no role, maintainer: 5 -> 4 commits
-    - reviewer, no role : 7 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
-- mm-new: 1 -> 1 commits (no change)
+    - no role, no role : 10 -> 9 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 4 -> 5 commits
+  - changed commits
+    - 53773dd308e7 "drivers/base, mm: move arch_numa.c to mm/"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
+  - dropped commits
+    - a05c36f1af43 "mm/page_alloc: boost watermarks on atomic allocation failure"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

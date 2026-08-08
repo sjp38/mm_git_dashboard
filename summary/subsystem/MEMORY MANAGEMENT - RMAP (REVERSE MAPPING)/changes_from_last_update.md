@@ -3,28 +3,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 21 -> 23 commits
-  - series: 3 (21) -> 3 (23)
-    - no role, no role : 10 -> 12 commits
+- mm-stable: 23 -> 23 commits (no change)
+  - series: 3 (23) -> 3 (23) (no change)
+    - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
-  - changed commits
-    - series "Batch unmap of uffd-wp file folios", v2. (3)
-      - 4259767463b3 "mm/memory: batch set uffd-wp markers during zapping (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260720065508.2695106-3-dev.jain@arm.com
-      - 4fe4ea4cbe75 "mm/rmap: batch unmap file folios belonging to uffd-wp VMAs (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260720065508.2695106-4-dev.jain@arm.com
-- mm-unstable: 6 -> 4 commits
-  - series: 1 (6) -> 1 (4)
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 3 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

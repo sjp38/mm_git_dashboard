@@ -4,50 +4,22 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 9 -> 15 commits
-  - series: 1 (6) -> 3 (11)
+- mm-stable: 15 -> 15 commits (no change)
+  - series: 3 (11) -> 3 (11) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 4 commits
-    - no role, reviewer: 1 -> 3 commits
-    - no role, maintainer: 4 -> 7 commits
-  - changed commits
-    - ff3d40545f95 "mm: let node_reclaim() return the number of pages reclaimed"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
-    - series "mm/vmscan: fix swappiness=max and clean up per-node proactive reclaim", v4. (4)
-      - e26f7a91de5c "mm/vmscan: fix anon-only reclaim evicting file pages when swappiness=max (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260724033435.2573323-1-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/20260724033435.2573323-2-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/cgroups/7ddf3eee-5fe2-45f7-8614-c8936a039e04@linux.dev/ [1]
-      - b27caeb46c9a "mm: vmscan: propagate real error code from per-node proactive reclaim (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260724033435.2573323-3-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/all/20250717235604.2atyx2aobwowpge3@offworld/T/#m3514718be82a31b05726a49da9b61fbfc69a589e [1]
-      - b33f6e98b36b "mm: vmscan: drop unused gfp_mask parameter from __node_reclaim() (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260724033435.2573323-4-ridong.chen@linux.dev
-      - 430e4cdcc600 "mm/mglru: fix anon-only reclaim evicting file pages when swappiness=max (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260724033435.2573323-5-ridong.chen@linux.dev
-        - Link: https://sashiko.dev/#/patchset/20260717113300.214717-1-ridong.chen@linux.dev [1]
-    - series "Batch unmap of uffd-wp file folios", v2. (3)
-      - 5d72b5d76de3 "mm/memory: move pte_install_uffd_wp_if_needed() into memory.c (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260720065508.2695106-1-dev.jain@arm.com
-        - Link: https://lore.kernel.org/20260720065508.2695106-2-dev.jain@arm.com
-- mm-unstable: 16 -> 10 commits
-  - series: 3 (13) -> 1 (8)
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 7 -> 7 commits (no change)
+- mm-unstable: 10 -> 9 commits
+  - series: 1 (8) -> 1 (8) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 2 commits
-    - no role, reviewer: 3 -> 1 commits
-    - no role, maintainer: 9 -> 6 commits
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 6 -> 6 commits (no change)
+  - dropped commits
+    - a05c36f1af43 "mm/page_alloc: boost watermarks on atomic allocation failure"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

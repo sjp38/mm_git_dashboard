@@ -26,43 +26,43 @@
     - maintainer, nobody: 4 commits
   - full commits list
     - series "zram: fix zram issues reported by sashiko". (2 commits)
-      - 18d8e0c690ff "zram: set default primary compressor in zram_destroy_comps()" (0/2)
+      - 495b33fe576d "zram: set default primary compressor in zram_destroy_comps()" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260729045745.775973-2-senozhatsky@chromium.org
         - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com [1]
-      - 250d9e8573f6 "zram: validate deflate params" (1/2)
+      - e0bd3c4b9e0a "zram: validate deflate params" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260729045745.775973-3-senozhatsky@chromium.org
         - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com
-    - 048af4cfcd5e "Documentation: zram: correct algo parameters configuration documentation"
+    - 2b875731fd48 "Documentation: zram: correct algo parameters configuration documentation"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260730075158.1339787-1-senozhatsky@chromium.org
     - series "zram: fix zstd error paths and add parameter validation", v6, (5 commits)
-      - 834309a0fa74 "zram: do not release zstd global params from error paths" (0/5)
+      - 6245ec86d517 "zram: do not release zstd global params from error paths" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-1-haoqinhuang7@gmail.com
         - Link: https://lore.kernel.org/20260804093841.67920-2-haoqinhuang7@gmail.com
-      - e609b08754b6 "zram: reject zero-size dictionary" (1/5)
+      - ea2ad4c53d22 "zram: reject zero-size dictionary" (1/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-3-haoqinhuang7@gmail.com
-      - 8fdabb9fa4e8 "zram: add pr_fmt to backend files" (2/5)
+      - 2b61a50eb05d "zram: add pr_fmt to backend files" (2/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-4-haoqinhuang7@gmail.com
-      - 6ca489bd62e9 "zram: validate parameters in each backend's setup_params" (3/5)
+      - 296cd9bddb42 "zram: validate parameters in each backend's setup_params" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-5-haoqinhuang7@gmail.com
-      - 915d0fed973e "zram: reset per-priority params when changing algorithm before init" (4/5)
+      - c320849b7586 "zram: reset per-priority params when changing algorithm before init" (4/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-6-haoqinhuang7@gmail.com
     - series "zram: fix stale scan bounds after reinitialization". (2 commits)
-      - 155b6ff9177a "zram: fix out-of-bounds access in writeback_store()" (0/2)
+      - 86edcc90f44e "zram: fix out-of-bounds access in writeback_store()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804065919.3970386-1-xialonglong2025@163.com
         - Link: https://lore.kernel.org/20260804065919.3970386-2-xialonglong2025@163.com
-      - 3055ac4fa292 "zram: fix out-of-bounds access in read_block_state()" (1/2)
+      - c057a30fb76f "zram: fix out-of-bounds access in read_block_state()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804065919.3970386-3-xialonglong2025@163.com
-    - e6daf5de49ee "zram: switch to unsigned long indexing"
+    - 85c34be789bb "zram: switch to unsigned long indexing"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260806031640.536615-1-senozhatsky@chromium.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

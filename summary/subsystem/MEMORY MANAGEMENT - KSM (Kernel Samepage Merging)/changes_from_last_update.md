@@ -3,31 +3,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 7 -> 10 commits
-  - series: 2 (6) -> 3 (8)
+- mm-stable: 10 -> 10 commits (no change)
+  - series: 3 (8) -> 3 (8) (no change)
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 1 -> 4 commits
+    - no role, reviewer: 4 -> 4 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "Two small patches to clean up mm/mm_slot.h", v3. (2)
-      - eed8da1ff61d "mm/mm_slot.h: add a helper function mm_slot_remove (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
-        - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
-      - 5c3746a0fe38 "mm/mm_slot.h: add comments for mm_slot_lookup/insert (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
-    - 6be12ddb52f9 "ksm: stop iterating VMAs when ksm_test_exit returns true"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260726133501.504048-1-wsw9603@163.com
-- mm-unstable: 6 -> 3 commits
-  - series: 1 (3) -> 0 (1)
+- mm-unstable: 3 -> 3 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 4 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

@@ -148,115 +148,104 @@
     - 288058d8db5d "selftests/mm: unpoison pages in memory-failure teardown"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
-- mm-unstable: 23 total, 3 (12) series, 11 non-series commits
+- mm-unstable: 27 total, 4 (17) series, 10 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 5 commits
-    - no role, no role : 5 commits
+    - no role, nobody: 6 commits
+    - no role, no role : 8 commits
     - no role, reviewer: 5 commits
     - no role, maintainer: 2 commits
     - reviewer, reviewer: 3 commits
     - maintainer, nobody: 2 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-      - 35ce7a5ce704 "selftests: mm: test kmemleak's N-consecutive-scan leak confirmation" (3/4)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-4-5b93b1131089@debian.org
-    - series "alloc_tag: introduce IOCTL-based filtering for MAP", v8. (6 commits)
-      - d27d6939a24e "alloc_tag: add ioctl to /proc/allocinfo" (0/6)
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/cover.1783532853.git.abhishekbapat@google.com
-        - Link: https://lore.kernel.org/15596de2607ef13e7c77c6d74763f4ae992ec475.1783532853.git.abhishekbapat@google.com
-      - 5ada612d5f91 "tools/testing/selftests/mm: test anonymous page offset merge behaviour" (15/20)
+      - ba957cf03954 "tools/testing/selftests/mm: test anonymous page offset merge behaviour" (15/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-16-ab318a350404@kernel.org
-      - cdbaa42fa166 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests" (19/20)
+      - 4835c944b6c5 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests" (19/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-20-ab318a350404@kernel.org
-    - 443b1123064f "selftests/mm: transhuge-stress: check duration inside page loop"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260720103105.169955-1-sarthak.sharma@arm.com
-      - 8b4dd807c4e3 "selftests/mm: kmemleak: drop stale min_unref_scans default from comments" (2/3)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-3-7b9689ac77cb@debian.org
     - series "selftests/mm: use pattern matching in .gitignore", v4. (2 commits)
-      - bb1be2a4b455 "selftests/mm: rename local_config.h to local_config.h_gen" (0/2)
+      - 8c7f30ff632d "selftests/mm: rename local_config.h to local_config.h_gen" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260803221732.3651981-1-pratmal@google.com
         - Link: https://lore.kernel.org/20260803221732.3651981-2-pratmal@google.com
-      - 54a964b1c1eb "selftests/mm: read memory information without popen" (1/2)
+      - 48f398823df0 "selftests/mm: read memory information without popen" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/1785845818-3131-1-git-send-email-warren.xiong@ugreen.com
-    - 09b86eb127be "selftests/mm: use pattern matching in .gitignore"
+    - 801778d59108 "selftests/mm: use pattern matching in .gitignore"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260803221732.3651981-3-pratmal@google.com
-    - b85392160ccf "selftests-mm-use-pattern-matching-in-gitignore-fix"
+    - ac61817d750c "selftests-mm-use-pattern-matching-in-gitignore-fix"
       - Authored by a maintainer, reviewed by nobody
-    - c912b8323e42 "ksm: update comments and docs to reference folio->mapping"
+    - c0d0b012afb1 "ksm: update comments and docs to reference folio->mapping"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260805105927.41987-1-hongfu.li@linux.dev
-    - 9287fd25d6fe "mm: add some missing includes to mm-local headers"
+    - 7e50cac257c3 "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-    - 91db8f341c32 "selftests/mm: khugepaged: skip swap tests when no swap available"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
-      - c9ca002f8cc4 "mm: Documentation: clarify where the mTHP stats live" (6/7)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-7-0364cad642a0@linux.dev
-    - 60c78df69650 "alloc_tag: expose boot-time compression configuration"
+    - 52abbaf7765c "alloc_tag: expose boot-time compression configuration"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/c795f8089f82841e8a6e00d7ca286da2b23aeb7b.1785950530.git.abhishekbapat@google.com
     - series "add anon mTHP collapse test cases", v3. (4 commits)
-      - cbefe0cefb39 "selftests: mm: extend the check_huge() to support mTHP check" (0/4)
+      - 3bd3e3fcc3cb "selftests: mm: extend the check_huge() to support mTHP check" (0/4)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/cover.1785985999.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/e5039cbc70f8de853e6c21048d65803a5fe41042.1785985999.git.baolin.wang@linux.alibaba.com
-      - 5fed38e5c1c7 "selftests: mm: move gather_after_split_folio_orders() into vm_util.c file" (1/4)
+      - 2d0f60f809b0 "selftests: mm: move gather_after_split_folio_orders() into vm_util.c file" (1/4)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/30a0a99556adf11c2bf97aa08d6da4830bb43f6f.1785985999.git.baolin.wang@linux.alibaba.com
-      - 72a5914ea843 "selftests: mm: implement the mTHP-sized hugepage check helpers" (2/4)
+      - eec84681abf5 "selftests: mm: implement the mTHP-sized hugepage check helpers" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/56b16691f605426b33b5cf47319233de6127a6b3.1785985999.git.baolin.wang@linux.alibaba.com
-      - 413d9899fd29 "selftests: mm: add mTHP collapse test cases" (3/4)
+      - 2e9701801cf4 "selftests: mm: add mTHP collapse test cases" (3/4)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/f260058520214a9611922a96326bc54ba282fb73.1785985999.git.baolin.wang@linux.alibaba.com
-    - c65b9ab62ed2 "selftests/mm: drop duplicate test_seal_mprotect_two_vma_with_gap() call"
+    - 7978700b5e92 "selftests/mm: drop duplicate test_seal_mprotect_two_vma_with_gap() call"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260806030850.76077-1-hongfu.li@linux.dev
-    - 974185c27d1e "selftests/mm/vm_util.c: correct __pagemap_scan_get_categories return value"
+    - e89b89ada074 "selftests/mm/vm_util.c: correct __pagemap_scan_get_categories return value"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260806150339.1824251-2-audra@redhat.com
-    - 19879f1fb3d3 "selftests/mm: fix soft-dirty kselftest supported check"
+    - b81706cf36d4 "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
-    - 9080b9d12798 "selftests-mm-fix-soft-dirty-kselftest-supported-check-fix"
+    - 137e69fcad69 "selftests-mm-fix-soft-dirty-kselftest-supported-check-fix"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
-- mm-new: 6 total, 1 (5) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 3 commits
-    - no role, maintainer: 1 commits
-  - full commits list
     - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5 commits)
-      - ea0301e9a36d "selftests/mm: skip COW tmpfile cases when fallocate() is unsupported" (0/5)
+      - 4cef75e60b05 "selftests/mm: skip COW tmpfile cases when fallocate() is unsupported" (0/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260727095225.372655-1-usama.anjum@arm.com
         - Link: https://lore.kernel.org/20260727095225.372655-2-usama.anjum@arm.com
-      - cdab395b6c6d "selftests/mm: skip guard hole-punch test if MADV_REMOVE is unsupported" (1/5)
+      - 71f4f1ecac16 "selftests/mm: skip guard hole-punch test if MADV_REMOVE is unsupported" (1/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260727095225.372655-3-usama.anjum@arm.com
-      - 039f6fe1174b "selftests/mm: skip khugepaged swap tests without swap" (2/5)
+      - 9bc3cb7357a7 "selftests/mm: skip khugepaged swap tests without swap" (2/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260727095225.372655-4-usama.anjum@arm.com
-      - a6ca62497e3c "selftests/mm: skip hard dirty page-cache test on NFS" (3/5)
+      - d3df05ccc792 "selftests/mm: skip hard dirty page-cache test on NFS" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727095225.372655-5-usama.anjum@arm.com
-      - bd9ef1b3a6a0 "selftests/mm: retry migration failures for the full runtime" (4/5)
+      - e31424b0145a "selftests/mm: retry migration failures for the full runtime" (4/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260727095225.372655-6-usama.anjum@arm.com
-    - 6fc0f33a6ca5 "selftests/mm: fix read_file() return value check"
+    - 3199b0c09efa "selftests/mm: fix read_file() return value check"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260807013555.36525-1-hongfu.li@linux.dev
+      - 4343cbcab02c "selftests: mm: test kmemleak's N-consecutive-scan leak confirmation" (3/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-4-5b93b1131089@debian.org
+      - a0b4bc2560e4 "selftests/mm: kmemleak: drop stale min_unref_scans default from comments" (2/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-3-7b9689ac77cb@debian.org
+    - series "alloc_tag: introduce IOCTL-based filtering for MAP", v8. (6 commits)
+      - eb11dd8dbf43 "alloc_tag: add ioctl to /proc/allocinfo" (0/6)
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/cover.1783532853.git.abhishekbapat@google.com
+        - Link: https://lore.kernel.org/15596de2607ef13e7c77c6d74763f4ae992ec475.1783532853.git.abhishekbapat@google.com
+      - 15738786d127 "mm: Documentation: clarify where the mTHP stats live" (6/7)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804-khugepaged_pte_refactor-v3-7-0364cad642a0@linux.dev
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

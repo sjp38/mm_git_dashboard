@@ -51,19 +51,17 @@
       - ef79e0f5e31b "mm: split out vmalloc declarations from internal.h" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
-  - full commits list
-      - 461ef249cbdc "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 37d6979734b6 "drivers/base, mm: move arch_numa.c to mm/"
+      - 40b03eed3547 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
+    - 53773dd308e7 "drivers/base, mm: move arch_numa.c to mm/"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

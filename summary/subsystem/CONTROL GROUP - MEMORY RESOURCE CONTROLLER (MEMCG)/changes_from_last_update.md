@@ -4,47 +4,30 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, reviewer: 0 -> 1 commits
   - changed commits
-    - 18fb9d7b9944 "memcg: keep folio's objcg same as its node"
-      - Authored by a maintainer, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260807142406.443516-1-shakeel.butt@linux.dev"
-      - added "Signed-off-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - added "Co-developed-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Link: https://lore.kernel.org/20260806061830.3294679-1-shakeel.butt@linux.dev"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+    - 1674223bf754 "memcg: keep folio's objcg same as its node"
+      - Authored by a maintainer, reviewed by a reviewer
+      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
       - Link: https://lore.kernel.org/20260807142406.443516-1-shakeel.butt@linux.dev
-- mm-stable: 9 -> 14 commits
+- mm-stable: 14 -> 14 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 7 -> 12 commits
-  - changed commits
-    - 466dd08cdc93 "mm: memcg-v1: account vmpressure event allocations"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260713085520.2953121-1-guopeng.zhang@linux.dev
-    - 45b1ec4887bd "mm: memcg-v1: fix wrong linux-mm list address in deprecation warnings"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260713085756.2973549-1-guopeng.zhang@linux.dev
-    - 219a53f6c84b "mm: memcontrol: drop unused cpu argument from flush_nmi_stats"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260713090010.2991906-1-guopeng.zhang@linux.dev
-    - afe9ae3fda96 "mm: memcontrol: factor out memcg kmem uncharge sequence"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260713090304.3015329-1-guopeng.zhang@linux.dev
-    - 08d36b191f33 "mm: memcg-v1: make mem_cgroup_oom_notify_cb() return void"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260713093737.3299646-1-guopeng.zhang@linux.dev
-- mm-unstable: 12 -> 7 commits
+    - no role, maintainer: 12 -> 12 commits (no change)
+- mm-unstable: 7 -> 7 commits (no change)
   - series: 2 (4) -> 2 (4) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 10 -> 5 commits
+    - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - bff7030e89b7 "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
+      - Authored by a maintainer, reviewed by a maintainer
+      - added "Cc: <stable@vger.kernel.org>"
+      - Link: https://lore.kernel.org/20260729024612.3369005-1-shakeel.butt@linux.dev
+      - Link: https://lore.kernel.org/7a4e5591f45df455e6a485fc5400989569d3d22d.camel@surriel.com/ [1]
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

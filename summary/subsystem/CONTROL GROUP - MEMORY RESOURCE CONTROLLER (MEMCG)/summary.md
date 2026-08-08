@@ -4,7 +4,7 @@
     - no role, maintainer: 1 commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - maintainer, nobody: 1 commits
+    - maintainer, reviewer: 1 commits
 - mm-stable: 14 total, 1 (4) series, 10 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits

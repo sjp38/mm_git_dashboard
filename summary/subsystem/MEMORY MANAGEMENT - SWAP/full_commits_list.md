@@ -51,54 +51,54 @@
     - no role, maintainer: 3 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-    - series "better block swap batching and a different take on swap_ops v5". (7 commits)
-      - 34e2d8e72e9e "shmem: provide a shmem_write_folio wrapper" (0/7)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260713093350.2154226-1-hch@lst.de
-        - Link: https://lore.kernel.org/20260713093350.2154226-2-hch@lst.de
-      - 0ced7cc79761 "mm/swap: introduce struct swap_io_ctx" (1/7)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - 3682e5ace016 "mm/swap: also use struct swap_iocb for block I/O" (2/7)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260713093350.2154226-4-hch@lst.de
-      - 73e4195890b3 "mm/swap: remove count_swpout_vm_event" (3/7)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260713093350.2154226-5-hch@lst.de
-      - 2d44f628213f "mm/swap: use swap_ops to register swap device's methods" (4/7)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260713093350.2154226-6-hch@lst.de
-      - ba16622d11f6 "mm/swap: remove SWP_FS_OPS" (5/7)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-      - 74444c63f527 "mm/vmstat: add NRSWP{IN,OUT} counters" (6/7)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260713093350.2154226-8-hch@lst.de
-    - 20986cb8982f "mm/swap: fix swap_cluster_lock() !CONFIG_SWAP stub signature mismatch"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260717071104.73467-1-hongfu.li@linux.dev
-      - c13cf666f12a "mm/huge_memory: update remove_migration_pmd() to accept a folio" (11/20)
+      - 7ecc3324d38a "mm/huge_memory: update remove_migration_pmd() to accept a folio" (11/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org
     - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2 commits)
-      - 75b16b826518 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
+      - 544e8cb70fd5 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev
-    - 842b30051182 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
+    - 61969a613a3c "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
-    - 42fd7e348a55 "mm/swap: reject swapon() on filesystem-level encrypted files"
+    - ec2359367727 "mm/swap: reject swapon() on filesystem-level encrypted files"
       - Authored by a maintainer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260803180426.3123-1-ebiggers@kernel.org
-    - 9287fd25d6fe "mm: add some missing includes to mm-local headers"
+    - 7e50cac257c3 "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
+    - series "better block swap batching and a different take on swap_ops v5". (7 commits)
+      - e734db21156b "shmem: provide a shmem_write_folio wrapper" (0/7)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260713093350.2154226-1-hch@lst.de
+        - Link: https://lore.kernel.org/20260713093350.2154226-2-hch@lst.de
+      - de476701cae4 "mm/swap: introduce struct swap_io_ctx" (1/7)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
+      - cedfabee8e72 "mm/swap: also use struct swap_iocb for block I/O" (2/7)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260713093350.2154226-4-hch@lst.de
+      - e49263008a38 "mm/swap: remove count_swpout_vm_event" (3/7)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260713093350.2154226-5-hch@lst.de
+      - 564dff1b73c2 "mm/swap: use swap_ops to register swap device's methods" (4/7)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260713093350.2154226-6-hch@lst.de
+      - 7afd36bfaa0b "mm/swap: remove SWP_FS_OPS" (5/7)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
+      - affa6d9eb2b8 "mm/vmstat: add NRSWP{IN,OUT} counters" (6/7)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260713093350.2154226-8-hch@lst.de
+    - 19f2391a1075 "mm/swap: fix swap_cluster_lock() !CONFIG_SWAP stub signature mismatch"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260717071104.73467-1-hongfu.li@linux.dev
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - c25f32cd69a7 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - e0ffd277b09a "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

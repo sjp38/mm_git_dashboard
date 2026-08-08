@@ -48,12 +48,12 @@
   - author/reviewer role stat
     - no role, nobody: 2 commits
   - full commits list
-    - 9f546b10f30a "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260601082609.170076-1-jianhuizzzzz@gmail.com
-      - b155d5e1293c "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
+      - 92d123faac02 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
+    - a5055e5d3170 "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260601082609.170076-1-jianhuizzzzz@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

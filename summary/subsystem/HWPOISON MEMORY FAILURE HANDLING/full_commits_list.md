@@ -44,19 +44,17 @@
     - 288058d8db5d "selftests/mm: unpoison pages in memory-failure teardown"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
-  - full commits list
-      - 9f0536351982 "mm: introduce and use vma_filebacked_address()" (5/20)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-      - a6ca62497e3c "selftests/mm: skip hard dirty page-cache test on NFS" (3/5)
+      - 3f4ec44e90a9 "mm: introduce and use vma_filebacked_address()" (5/20)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org
+      - d3df05ccc792 "selftests/mm: skip hard dirty page-cache test on NFS" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727095225.372655-5-usama.anjum@arm.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

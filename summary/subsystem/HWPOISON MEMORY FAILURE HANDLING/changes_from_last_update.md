@@ -3,24 +3,25 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 10 -> 11 commits
+- mm-stable: 11 -> 11 commits (no change)
   - series: 1 (10) -> 1 (10) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 5 -> 6 commits
+    - no role, maintainer: 6 -> 6 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
-  - changed commits
-    - 288058d8db5d "selftests/mm: unpoison pages in memory-failure teardown"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
-- mm-unstable: 2 -> 1 commits
-  - series: 0 (1) -> 0 (1) (no change)
+- mm-unstable: 1 -> 2 commits
+  - series: 0 (1) -> 0 (2)
     - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5)
+      - d3df05ccc792 "selftests/mm: skip hard dirty page-cache test on NFS (3/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260727095225.372655-5-usama.anjum@arm.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
     - no role, maintainer: 1 -> 0 commits
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -3,113 +3,26 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 39 -> 59 commits
-  - series: 2 (37) -> 3 (57)
+- mm-stable: 59 -> 59 commits (no change)
+  - series: 3 (57) -> 3 (57) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 6 -> 9 commits
-    - no role, reviewer: 4 -> 9 commits
+    - no role, no role : 9 -> 9 commits (no change)
+    - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 6 commits
-    - reviewer, reviewer: 7 -> 8 commits
+    - reviewer, no role : 6 -> 6 commits (no change)
+    - reviewer, reviewer: 8 -> 8 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, no role : 5 -> 11 commits
+    - maintainer, no role : 11 -> 11 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-  - changed commits
-    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
-      - 1944a0183c83 "mm/vma: update do_mmap() to use vma_flags_t (1/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-2-0fa2357d5431@kernel.org
-      - 2ec748152df7 "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
-      - 8d800431319c "mm: update generic_get_unmapped_area[_topdown]() to use vma_flags_t (3/13)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-4-0fa2357d5431@kernel.org
-      - 96c09ae60b59 "mm: prefer mm->def_vma_flags in mm logic (4/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-5-0fa2357d5431@kernel.org
-      - cc593403b146 "mm/vma: convert vm_pgprot_modify() to use vma_flags_t and rename (5/13)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-6-0fa2357d5431@kernel.org
-      - e28266b033c3 "mm/vma: rename vma_get_page_prot to vma_flags_to_page_prot (6/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-7-0fa2357d5431@kernel.org
-      - a2fdfd0080a3 "mm: introduce vma_get_page_prot() and use it (7/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-8-0fa2357d5431@kernel.org
-      - 8e7501a361d3 "mm/vma: update create_init_stack_vma() to use vma_flags_t (8/13)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-9-0fa2357d5431@kernel.org
-      - df751fe672c8 "mm/vma: convert miscellaneous uses of VMA flags in core mm (9/13)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-10-0fa2357d5431@kernel.org
-      - 2fa484226b18 "mm/mlock: convert mlock code to use vma_flags_t (10/13)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-11-0fa2357d5431@kernel.org
-      - 31b50515a737 "mm/mprotect: convert mprotect code to use vma_flags_t (11/13)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-12-0fa2357d5431@kernel.org
-      - f4a31afd9647 "mm/mremap: convert mremap code to use vma_flags_t (12/13)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-13-0fa2357d5431@kernel.org
-    - series "mm/mseal: further cleanups", v2. (3)
-      - 14dad135d68b "mm/mseal: remove superfluous comments, fix confusion around mm (0/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-0-0daa0014b813@kernel.org
-        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-1-0daa0014b813@kernel.org
-      - 4c1c2d2418c5 "mm/mseal: limit scope of mseal address zero to address zero (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-2-0daa0014b813@kernel.org
-      - 1b300f679a4c "mm/mseal: remove further superfluous comments, do_mseal() (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260717-mseal-fixups-v2-3-0daa0014b813@kernel.org
-    - series "mm: mincore: misc cleanups", v3. (6)
-      - 006943a9b437 "mm: mincore: remove special handling for VM_PFNMAP (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: : https://lore.kernel.org/20260720124151.1483820-1-wangkefeng.wang@huawei.com
-        - Link: https://lore.kernel.org/linux-mm/0e619d71-1c3d-4534-8376-2982c7348c31@kernel.org/
-        - Link: https://lore.kernel.org/20260717091347.1144789-3-wangkefeng.wang@huawei.com
-      - 7625cb56733b "mm: mincore: replace __get_free_page() with kmalloc() (2/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260717091347.1144789-4-wangkefeng.wang@huawei.com
-      - 9218800076ec "mm: mincore: remove xa_is_value() in mincore_swap() (3/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260717091347.1144789-5-wangkefeng.wang@huawei.com
-      - 751a1f061a7c "mm: mincore: improve mincore_hugetlb() (4/6)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: : https://lore.kernel.org/20260720124252.1483984-1-wangkefeng.wang@huawei.com
-        - Link: https://lore.kernel.org/20260717091347.1144789-6-wangkefeng.wang@huawei.com
-      - 557f842e25a9 "mm: mincore: refactor mincore_page() (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260717091347.1144789-7-wangkefeng.wang@huawei.com
-- mm-unstable: 35 -> 15 commits
-  - series: 2 (33) -> 1 (13)
+- mm-unstable: 15 -> 16 commits
+  - series: 1 (13) -> 1 (13) (no change)
     - no role, nobody: 11 -> 11 commits (no change)
-    - no role, no role : 7 -> 4 commits
-    - no role, reviewer: 5 -> 0 commits
-    - reviewer, no role : 5 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
-    - maintainer, no role : 6 -> 0 commits
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 6951b6ca07f6 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

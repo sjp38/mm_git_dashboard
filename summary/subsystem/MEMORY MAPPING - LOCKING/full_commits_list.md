@@ -13,7 +13,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 27202db5ac4b "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF"
+    - 70c9c4180cb4 "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-2-8cc77dcc0018@kernel.org
 - mm-stable: 2 total, 0 (1) series, 1 non-series commits

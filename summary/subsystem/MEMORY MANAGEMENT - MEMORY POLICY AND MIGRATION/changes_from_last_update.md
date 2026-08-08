@@ -4,23 +4,17 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 18 -> 19 commits
+- mm-stable: 19 -> 19 commits (no change)
   - series: 3 (18) -> 3 (18) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 11 -> 12 commits
+    - no role, reviewer: 12 -> 12 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - efe8f86c0916 "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260727-kcompact-v1-1-bdfefddd6874@debian.org
-      - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
-- mm-unstable: 6 -> 5 commits
+- mm-unstable: 5 -> 5 commits (no change)
   - series: 0 (3) -> 0 (3) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, reviewer: 3 -> 2 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

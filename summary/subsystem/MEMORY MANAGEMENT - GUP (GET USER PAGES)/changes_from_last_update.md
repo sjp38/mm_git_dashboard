@@ -3,19 +3,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 2 commits
+- mm-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 5716a333c983 "selftests/mm: fix gup_longterm EINVAL error message"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/23557F4CB8CF36FF+20260724074603.1479243-1-zhaozhengzhuo@uniontech.com
-- mm-unstable: 5 -> 4 commits
+- mm-unstable: 4 -> 4 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 2 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

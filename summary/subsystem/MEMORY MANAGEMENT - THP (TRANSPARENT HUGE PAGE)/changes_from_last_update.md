@@ -6,70 +6,41 @@
     - no role, reviewer: 2 -> 2 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 16 -> 24 commits
-  - series: 1 (16) -> 4 (22)
-    - no role, no role : 5 -> 6 commits
-    - no role, reviewer: 3 -> 8 commits
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, reviewer: 7 -> 8 commits
+- mm-stable: 24 -> 24 commits (no change)
+  - series: 4 (22) -> 4 (22) (no change)
+    - no role, no role : 6 -> 6 commits (no change)
+    - no role, reviewer: 8 -> 8 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 8 -> 8 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 20dab9d72acd "mm: huge_memory: fix kobject cleanup in thpsize_create error"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260713054154.120915-1-zenghongling@kylinos.cn
-    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
-      - 2ec748152df7 "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
-    - series "Two small patches to clean up mm/mm_slot.h", v3. (2)
-      - eed8da1ff61d "mm/mm_slot.h: add a helper function mm_slot_remove (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
-        - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
-      - 5c3746a0fe38 "mm/mm_slot.h: add comments for mm_slot_lookup/insert (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
-    - series "mm: mincore: misc cleanups", v3. (6)
-      - 8a2081d845ac "mm: introduce pud_is_huge() helper (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260717091347.1144789-1-wangkefeng.wang@huawei.com
-        - Link: https://lore.kernel.org/20260717091347.1144789-2-wangkefeng.wang@huawei.com
-    - series "mm/huge_memory: drop dead split helper variants". (2)
-      - d6f1586aa95e "mm/huge_memory: remove unused can_split_folio() (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260716100345.473473-1-kirill@shutemov.name
-        - Link: https://lore.kernel.org/20260716100345.473473-2-kirill@shutemov.name
-        - Link: https://lore.kernel.org/linux-mm/aldjhtfVByHDQXe6@thinkstation [1]
-        - Link: https://lore.kernel.org/linux-mm/20260714122344.351895-1-kirill@shutemov.name [2]
-      - 2549ebcaa836 "mm/huge_memory: fold split_folio_to_list_to_order() into split_folio_to_order() (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260716100345.473473-3-kirill@shutemov.name
-    - 0ec282155c84 "mm/khugepaged: replace mutex_lock/mutex_unlock usage with guard macro"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260730204724.16912-1-jakovnovak30@gmail.com
-- mm-unstable: 24 -> 16 commits
-  - series: 6 (20) -> 3 (14)
+- mm-unstable: 16 -> 16 commits (no change)
+  - series: 3 (14) -> 3 (15)
     - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 10 -> 5 commits
-    - no role, maintainer: 2 -> 1 commits
-    - reviewer, reviewer: 5 -> 4 commits
-- mm-new: 1 -> 2 commits
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 6fc0f33a6ca5 "selftests/mm: fix read_file() return value check"
+    - no role, no role : 1 -> 2 commits
+    - no role, reviewer: 5 -> 5 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, reviewer: 4 -> 4 commits (no change)
+  - changed commits
+    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5)
+      - 9bc3cb7357a7 "selftests/mm: skip khugepaged swap tests without swap (2/5)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260727095225.372655-4-usama.anjum@arm.com
+    - 3199b0c09efa "selftests/mm: fix read_file() return value check"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260807013555.36525-1-hongfu.li@linux.dev
+  - dropped commits
+    - 443b1123064f "selftests/mm: transhuge-stress: check duration inside page loop"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260720103105.169955-1-sarthak.sharma@arm.com
+    - 91db8f341c32 "selftests/mm: khugepaged: skip swap tests when no swap available"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
+- mm-new: 2 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
