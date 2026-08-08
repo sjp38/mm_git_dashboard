@@ -1,9 +1,9 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 21 total, 3 (21) series, 0 non-series commits
+- mm-stable: 23 total, 3 (23) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 10 commits
+    - no role, no role : 12 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
     - reviewer, no role : 2 commits
@@ -79,29 +79,29 @@
       - 04b09ca57d48 "mm/rmap: add anon folio unmap dispatcher" (4/5)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260730094559.418003-6-dev.jain@arm.com
-- mm-unstable: 6 total, 1 (6) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 3 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-      - 6fc1290cb0c6 "mm/memory: batch set uffd-wp markers during zapping" (1/3)
+      - 4259767463b3 "mm/memory: batch set uffd-wp markers during zapping" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720065508.2695106-3-dev.jain@arm.com
-      - 3756c57b4dc3 "mm/rmap: batch unmap file folios belonging to uffd-wp VMAs" (2/3)
+      - 4fe4ea4cbe75 "mm/rmap: batch unmap file folios belonging to uffd-wp VMAs" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720065508.2695106-4-dev.jain@arm.com
-      - 484ab103e28a "mm: introduce and use vma_filebacked_address()" (5/20)
+- mm-unstable: 4 total, 1 (4) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 1 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+      - 9f0536351982 "mm: introduce and use vma_filebacked_address()" (5/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org
-      - d3ea1329ae2b "mm/rmap: track whether the page VMA mapped pgoff is anonymous" (9/20)
+      - 18627592e00c "mm/rmap: track whether the page VMA mapped pgoff is anonymous" (9/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-10-ab318a350404@kernel.org
-      - 564a9f8855ab "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
+      - b155d5e1293c "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
-      - 2dc0abfc54e0 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
+      - f457523b7ce0 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com

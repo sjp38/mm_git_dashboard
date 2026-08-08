@@ -3,12 +3,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 4 commits (no change)
+- mm-stable: 4 -> 5 commits
   - series: 1 (4) -> 1 (4) (no change)
     - no role, no role : 4 -> 4 commits (no change)
-- mm-unstable: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - f276408a8167 "mm/zsmalloc: fix release order of locks in zs_page_migrate()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260728055333.421080-1-richardycc@google.com
+- mm-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

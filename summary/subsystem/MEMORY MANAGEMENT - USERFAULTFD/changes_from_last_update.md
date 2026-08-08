@@ -3,25 +3,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 11 -> 11 commits (no change)
+- mm-stable: 11 -> 12 commits
   - series: 0 (11) -> 0 (11) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 3 -> 3 commits (no change)
+  - changed commits
+    - 41f2c0f716e1 "mm: fold userfaultfd_rwp() to false without CONFIG_ARCH_HAS_PTE_PROTNONE"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/amcitKvUvFYr8W38@thinkstation
+- mm-unstable: 3 -> 2 commits
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-  - new commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 564a9f8855ab "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (13/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
-  - dropped commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
-      - ae5e1475be1a "mm: introduce and use linear_folio_page_index() (7/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
+    - no role, nobody: 3 -> 2 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

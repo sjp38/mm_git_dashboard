@@ -1,9 +1,10 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 4 total, 1 (4) series, 0 non-series commits
+- mm-stable: 5 total, 1 (4) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 4 commits
+    - no role, maintainer: 1 commits
   - full commits list
     - series "mm/zsmalloc: reduce lock contention in zs_free()", v6. (4 commits)
       - 9909b088b1f0 "mm/zsmalloc: encode class index in obj value for lockless class lookup" (0/4)
@@ -20,13 +21,10 @@
       - 0abea609f37e "mm/zsmalloc: document free_zspage helper variants" (3/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260626015003.2965881-5-haowenchao22@gmail.com
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - db632b3cc4fa "mm/zsmalloc: fix release order of locks in zs_page_migrate()"
+    - f276408a8167 "mm/zsmalloc: fix release order of locks in zs_page_migrate()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260728055333.421080-1-richardycc@google.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

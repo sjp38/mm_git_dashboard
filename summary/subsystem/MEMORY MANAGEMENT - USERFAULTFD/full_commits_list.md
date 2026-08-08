@@ -1,9 +1,9 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 11 total, 0 (11) series, 0 non-series commits
+- mm-stable: 12 total, 0 (11) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 8 commits
     - no role, reviewer: 1 commits
     - reviewer, maintainer: 1 commits
@@ -41,17 +41,17 @@
       - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 3 commits
-  - full commits list
-    - dbd39c9adda4 "mm: fold userfaultfd_rwp() to false without CONFIG_ARCH_HAS_PTE_PROTNONE"
+    - 41f2c0f716e1 "mm: fold userfaultfd_rwp() to false without CONFIG_ARCH_HAS_PTE_PROTNONE"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/amcitKvUvFYr8W38@thinkstation
-    - cdc84cda3964 "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
+- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+  - full commits list
+    - 9f546b10f30a "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260601082609.170076-1-jianhuizzzzz@gmail.com
-      - 564a9f8855ab "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
+      - b155d5e1293c "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

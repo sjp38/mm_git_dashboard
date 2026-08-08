@@ -41,13 +41,13 @@
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-      - bd7c87388707 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - ba16622d11f6 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-      - 76200958db5c "mm: introduce linear_anon_page_index()" (2/20)
+      - ec5557a09328 "mm: introduce linear_anon_page_index()" (2/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org
-      - 01238629cc1b "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (17/20)
+      - b90d78de4b9d "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (17/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

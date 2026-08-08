@@ -9,9 +9,9 @@
         - Link: https://lore.kernel.org/20260717064502.1980173-1-npache@redhat.com
         - Link: https://lore.kernel.org/20260717064502.1980173-2-npache@redhat.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 3 total, 1 (3) series, 0 non-series commits
+- mm-stable: 8 total, 1 (8) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, no role : 6 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
@@ -29,25 +29,22 @@
         - Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-- mm-unstable: 5 total, 0 (5) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 5 commits
-  - full commits list
-      - 36933bf9fc0a "mm/memory_hotplug: add mhp_online_type_to_str() and export string helpers" (1/10)
+      - 5459c5be28c2 "mm/memory_hotplug: add mhp_online_type_to_str() and export string helpers" (1/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-3-gourry@gourry.net
-      - a114f920037c "mm/memory_hotplug: pass online_type to online_memory_block() via arg" (2/10)
+      - 65c1a93e438e "mm/memory_hotplug: pass online_type to online_memory_block() via arg" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-4-gourry@gourry.net
-      - 7f71a800145a "mm/memory_hotplug: export mhp_get_default_online_type" (3/10)
+      - 7e00a85f783e "mm/memory_hotplug: export mhp_get_default_online_type" (3/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-5-gourry@gourry.net
-      - 18fc0dcca6a8 "mm/memory_hotplug: add __add_memory_driver_managed() with online_type arg" (4/10)
+      - 2b047c8a8c27 "mm/memory_hotplug: add __add_memory_driver_managed() with online_type arg" (4/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-6-gourry@gourry.net
-      - 0e1af36b7b33 "mm/memory_hotplug: add offline_and_remove_memory_ranges()" (5/10)
+      - c17ba40c37e8 "mm/memory_hotplug: add offline_and_remove_memory_ranges()" (5/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260712154505.3564379-7-gourry@gourry.net
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,20 +1,18 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 1 total, 0 (1) series, 0 non-series commits
+- mm-stable: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
   - full commits list
       - 121170831228 "mm/hmm: add hmm_range_fault_unlocked_timeout() for mmap lock-drop support" (1/8)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260723-hmm-v10-v11-2-c55b003a4b61@gmail.com
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-  - full commits list
-    - ba82d4193df0 "docs/mm: fix braces"
+    - e105f1aa2711 "docs/mm: fix braces"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

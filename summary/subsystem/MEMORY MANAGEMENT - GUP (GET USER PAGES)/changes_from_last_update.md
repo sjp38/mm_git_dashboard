@@ -3,22 +3,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 1 commits (no change)
+- mm-stable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
     - reviewer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 3 -> 5 commits
-  - series: 1 (1) -> 1 (2)
-    - no role, nobody: 0 -> 2 commits
-    - no role, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - 5716a333c983 "selftests/mm: fix gup_longterm EINVAL error message"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/23557F4CB8CF36FF+20260724074603.1479243-1-zhaozhengzhuo@uniontech.com
+- mm-unstable: 5 -> 4 commits
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 805173f10b34 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-    - 7399aec45ad8 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

@@ -4,36 +4,50 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - 4949916db619 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260726072935.3513996-1-souravpanda@google.com
-  - dropped commits
-    - ab9b43d39ed0 "mm/hugetlb_cma: dix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260726072935.3513996-1-souravpanda@google.com
-- mm-stable: 32 -> 32 commits (no change)
-  - series: 4 (31) -> 4 (31) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 13 -> 13 commits (no change)
+- mm-stable: 32 -> 36 commits
+  - series: 4 (31) -> 4 (32)
+    - no role, nobody: 4 -> 5 commits
+    - no role, no role : 13 -> 14 commits
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 9 -> 9 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 9 -> 10 commits
+    - reviewer, reviewer: 2 -> 3 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 8 -> 9 commits
-  - series: 0 (1) -> 0 (2)
-    - no role, nobody: 3 -> 4 commits
-    - no role, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm: convert more vm_flags_t users to vma_flags_t", v2. (13)
+      - 2ec748152df7 "mm: convert __get_unmapped_area() to use vma_flags_t (2/13)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260711-b4-vma-flags-mm-v2-3-0fa2357d5431@kernel.org
+    - 308ab73e97c8 "hugetlbfs: release subpool on fill_super failure"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260720021900.1376309-1-chenyichong@uniontech.com
+    - 60191388cad9 "hugetlb: make hugepage_put_subpool() tolerate NULL"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260720073841.1389354-1-chenyichong@uniontech.com
+    - 47f3cecd720f "hugetlb: evaluate subpool free state while locked"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260721035207.1437935-1-chenyichong@uniontech.com
+- mm-unstable: 9 -> 4 commits
+  - series: 0 (2) -> 0 (1)
+    - no role, nobody: 4 -> 2 commits
+    - no role, no role : 2 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 805173f10b34 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-- mm-new: 0 -> 0 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 2e13cfe2ffe6 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-new
+      - added "Link: https://lore.kernel.org/20260807040003.2156630-1-souravpanda@google.com"
+      - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
+      - dropped "Link: https://lore.kernel.org/20260729163148.3271755-1-souravpanda@google.com"
+      - Link: https://lore.kernel.org/20260807040003.2156630-1-souravpanda@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

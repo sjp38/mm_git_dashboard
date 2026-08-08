@@ -13,23 +13,21 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 721eb8bf6c15 "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF"
+    - 27202db5ac4b "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-2-8cc77dcc0018@kernel.org
-- mm-stable: 1 total, 0 (1) series, 0 non-series commits
+- mm-stable: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, reviewer: 1 commits
     - maintainer, no role : 1 commits
   - full commits list
       - e65f4dfac104 "mm/vma: introduce vma_assert_can_modify()" (21/33)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-22-2a5aa403d977@kernel.org
-- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-  - full commits list
-    - ba82d4193df0 "docs/mm: fix braces"
+    - e105f1aa2711 "docs/mm: fix braces"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629161156.90213-2-manuelebner@mailbox.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

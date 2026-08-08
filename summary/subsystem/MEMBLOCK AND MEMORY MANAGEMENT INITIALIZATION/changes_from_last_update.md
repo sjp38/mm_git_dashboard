@@ -11,13 +11,9 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 07c3fbc6a05b "drivers/base, mm: move arch_numa.c to mm/"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

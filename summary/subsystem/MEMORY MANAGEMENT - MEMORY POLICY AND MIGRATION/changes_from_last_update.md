@@ -4,33 +4,23 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 18 -> 18 commits (no change)
+- mm-stable: 18 -> 19 commits
   - series: 3 (18) -> 3 (18) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 11 -> 11 commits (no change)
+    - no role, reviewer: 11 -> 12 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 4 -> 6 commits
-  - series: 0 (1) -> 0 (3)
-    - no role, nobody: 1 -> 3 commits
-    - no role, reviewer: 3 -> 3 commits (no change)
-  - new commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 805173f10b34 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-      - 68fd33540326 "mm/huge_memory: update remove_migration_pmd() to accept a folio (11/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org
-      - d5193feee557 "mm/migrate: calculate large folio page index using PFN (12/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-13-ab318a350404@kernel.org
-  - dropped commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
-      - ae5e1475be1a "mm: introduce and use linear_folio_page_index() (7/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-8-2d549757a76f@kernel.org
+  - changed commits
+    - efe8f86c0916 "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260727-kcompact-v1-1-bdfefddd6874@debian.org
+      - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
+- mm-unstable: 6 -> 5 commits
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, reviewer: 3 -> 2 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

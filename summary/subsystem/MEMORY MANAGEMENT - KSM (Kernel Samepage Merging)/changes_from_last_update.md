@@ -3,27 +3,32 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 7 -> 7 commits (no change)
-  - series: 2 (6) -> 2 (6) (no change)
+- mm-stable: 7 -> 10 commits
+  - series: 2 (6) -> 3 (8)
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 4 commits
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
+  - changed commits
+    - series "Two small patches to clean up mm/mm_slot.h", v3. (2)
+      - eed8da1ff61d "mm/mm_slot.h: add a helper function mm_slot_remove (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
+        - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
+      - 5c3746a0fe38 "mm/mm_slot.h: add comments for mm_slot_lookup/insert (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
+    - 6be12ddb52f9 "ksm: stop iterating VMAs when ksm_test_exit returns true"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260726133501.504048-1-wsw9603@163.com
+- mm-unstable: 6 -> 3 commits
+  - series: 1 (3) -> 0 (1)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, reviewer: 4 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 564a9f8855ab "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (13/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
-  - dropped commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by virt pgoff", v2. (15)
-      - cbd8dcee1ed2 "mm/rmap: use virt pgoff for MAP_PRIVATE file-backed anon folios (8/15)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-9-2d549757a76f@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

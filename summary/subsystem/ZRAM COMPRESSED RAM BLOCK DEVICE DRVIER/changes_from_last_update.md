@@ -3,25 +3,32 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 1 commits (no change)
+- mm-stable: 1 -> 4 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, maintainer: 1 -> 3 commits
+    - maintainer, no role : 0 -> 1 commits
+  - changed commits
+    - series "zram: lockmap tweaks". (2)
+      - dbb7ba9c7fa8 "zram: move lockmap to be per-zram instead per table (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260714141300.3945672-1-bigeasy@linutronix.de
+        - Link: https://lore.kernel.org/20260714141300.3945672-2-bigeasy@linutronix.de
+      - d56a82aa87ee "zram: use a custom key for each zram object (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260714141300.3945672-3-bigeasy@linutronix.de
+    - 2f99b6fe0b85 "Documentation: zram: remove sections numbering"
+      - Authored by a maintainer, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260728021229.181627-1-senozhatsky@chromium.org
+- mm-unstable: 14 -> 11 commits
+  - series: 4 (11) -> 3 (9)
+    - no role, maintainer: 9 -> 7 commits
+    - maintainer, nobody: 4 -> 4 commits (no change)
+    - maintainer, no role : 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 13 -> 14 commits
-  - series: 4 (11) -> 4 (11) (no change)
-    - no role, maintainer: 9 -> 9 commits (no change)
-    - maintainer, nobody: 3 -> 4 commits
-    - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - ff52e47bc91f "zram: switch to unsigned long indexing"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260806031640.536615-1-senozhatsky@chromium.org
-- mm-new: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 4ee4b02a8fb9 "zram: reject disksizes that exceed slot index range"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260804143832.146129-1-xialonglong2025@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

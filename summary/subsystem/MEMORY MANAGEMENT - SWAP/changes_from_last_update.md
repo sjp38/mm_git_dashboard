@@ -3,26 +3,25 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 9 -> 9 commits (no change)
+- mm-stable: 9 -> 10 commits
   - series: 2 (6) -> 2 (6) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
+    - reviewer, nobody: 0 -> 1 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 12 -> 14 commits
-  - series: 2 (8) -> 2 (9)
-    - no role, nobody: 2 -> 4 commits
+  - changed commits
+    - 4f93f0956f44 "mm/swap: clarify unreachable cond_resched() in swap_reclaim_full_clusters"
+      - Authored by a reviewer, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://sashiko.dev/#/patchset/20260713025644.170839-1-youngjun.park@lge.com?part=4
+      - Link: https://lore.kernel.org/20260713045014.219653-1-youngjun.park@lge.com
+- mm-unstable: 14 -> 13 commits
+  - series: 2 (9) -> 2 (9) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 68fd33540326 "mm/huge_memory: update remove_migration_pmd() to accept a folio (11/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org
-    - 7399aec45ad8 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

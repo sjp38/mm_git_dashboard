@@ -7,10 +7,10 @@
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260717064502.1980173-3-npache@redhat.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 18 total, 3 (18) series, 0 non-series commits
+- mm-stable: 19 total, 3 (18) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
-    - no role, reviewer: 11 commits
+    - no role, reviewer: 12 commits
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 2 commits
     - reviewer, maintainer: 1 commits
@@ -84,28 +84,28 @@
         - Link: https://lore.kernel.org/20260710105557.1987433-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260710105557.1987433-2-usama.arif@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
-- mm-unstable: 6 total, 0 (3) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, reviewer: 3 commits
-  - full commits list
-    - 61325912406e "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
+    - efe8f86c0916 "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260727-kcompact-v1-1-bdfefddd6874@debian.org
       - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
-    - 0c5b58e712e2 "mm: mempolicy: fix automatic numa balancing for shmem"
+- mm-unstable: 5 total, 0 (3) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 3 commits
+    - no role, reviewer: 2 commits
+  - full commits list
+    - f821b86a4aa1 "mm: mempolicy: fix automatic numa balancing for shmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
-      - 805173f10b34 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
+      - ad24b648b41f "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-      - 68fd33540326 "mm/huge_memory: update remove_migration_pmd() to accept a folio" (11/20)
+      - c13cf666f12a "mm/huge_memory: update remove_migration_pmd() to accept a folio" (11/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org
-      - d5193feee557 "mm/migrate: calculate large folio page index using PFN" (12/20)
+      - 36aa45f878d6 "mm/migrate: calculate large folio page index using PFN" (12/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-13-ab318a350404@kernel.org
-    - d57b9c4cdd60 "mm/migrate_device: clear stale mapping after freeing swapcache"
+    - c2c6d6d47837 "mm/migrate_device: clear stale mapping after freeing swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260728062832.1107127-1-arvind.yadav@intel.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

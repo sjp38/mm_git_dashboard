@@ -7,12 +7,12 @@
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260721005603.1710551-1-linkl@google.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 31 total, 4 (24) series, 7 non-series commits
+- mm-stable: 41 total, 7 (33) series, 8 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 25 commits
+    - no role, no role : 4 commits
+    - no role, reviewer: 29 commits
     - no role, maintainer: 3 commits
-    - reviewer, no role : 2 commits
+    - reviewer, no role : 5 commits
   - full commits list
     - cdea9364e477 "mm/page_alloc: don't build vm_numa_stat_key if CONFIG_NUMA=n"
       - Authored by no role player, reviewed by a reviewer
@@ -127,81 +127,79 @@
         - Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
         - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-- mm-unstable: 19 total, 3 (10) series, 9 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 5 commits
-    - no role, reviewer: 7 commits
-    - no role, maintainer: 2 commits
-    - reviewer, no role : 3 commits
-    - maintainer, nobody: 1 commits
-  - full commits list
-    - a31e61578541 "mm: let node_reclaim() return the number of pages reclaimed"
+    - ff3d40545f95 "mm: let node_reclaim() return the number of pages reclaimed"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260714132300.2136018-1-ptesarik@suse.com
     - series "mm/page_alloc: fixes for free_pages_nolock() on RT/UP". (2 commits)
-      - 5b86197c14fe "mm/page_alloc: don't spin_trylock() in NMI on UP" (0/2)
+      - 3105ae628fb7 "mm/page_alloc: don't spin_trylock() in NMI on UP" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-0-fadc49952dda@google.com
         - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-1-fadc49952dda@google.com
-      - 9d18b84e8c7a "mm/page_alloc: don't spin_trylock() when disallowed in free_one_page()" (1/2)
+      - 52dcc33881e5 "mm/page_alloc: don't spin_trylock() when disallowed in free_one_page()" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260715-alloc-nolock-fixes-v1-2-fadc49952dda@google.com
     - series "mm/page_alloc: couple of followups for recent cleanups", v3. (4 commits)
-      - 72fe3f329dc8 "mm/page_alloc: rename FPI_TRYLOCK -> FPI_NOLOCK" (0/4)
+      - 21be908d39e3 "mm/page_alloc: rename FPI_TRYLOCK -> FPI_NOLOCK" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-0-fc4d246f705d@google.com
         - Link: https://lore.kernel.org/all/20260703-alloc-trylock-v5-1-c87b714e19d3@google.com/
         - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-1-fc4d246f705d@google.com
-      - 37bbb22a7814 "mm/page_alloc: fixup alloc_pages_nolock_noprof() comment" (2/4)
+      - d413d243c3dc "mm/page_alloc: fixup alloc_pages_nolock_noprof() comment" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-3-fc4d246f705d@google.com
         - Link: https://sashiko.dev/#/patchset/20260703-alloc-trylock-v5-0-c87b714e19d3%40google.com?part=6
-      - fe47ae426bad "mm/page_alloc: remove a couple of VM_BUG_ON()st" (3/4)
+      - e47b037e4208 "mm/page_alloc: remove a couple of VM_BUG_ON()st" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260715-spin-trylock-followup-v3-4-fc4d246f705d@google.com
         - Link: https://lore.kernel.org/all/7F866265-3F2E-4765-B9D4-9AB898A9C4AC@nvidia.com/
     - series "mm: fix reclaim storms in defrag_mode", v2. (4 commits)
-      - 01ecf6cb97fd "mm: page_alloc: __GFP_FS lockdep annotation for direct compaction" (0/4)
+      - 37864d0bf5a4 "mm: page_alloc: __GFP_FS lockdep annotation for direct compaction" (0/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260722150006.3848560-1-hannes@cmpxchg.org
         - Link: https://lore.kernel.org/20260722150006.3848560-2-hannes@cmpxchg.org
-      - abf2e9abed24 "mm: compaction: support non-movable compaction for pageblock requests" (1/4)
+      - 1b4b697a5743 "mm: compaction: support non-movable compaction for pageblock requests" (1/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260722150006.3848560-3-hannes@cmpxchg.org
-      - 8f5cce3ba718 "mm: page_alloc: move capture_control to the page allocator" (2/4)
+      - aee220f565cc "mm: page_alloc: move capture_control to the page allocator" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260722150006.3848560-4-hannes@cmpxchg.org
-      - e6ca1770c1ec "mm: page_alloc: fix non-movable reclaim storm in defrag_mode" (3/4)
+      - 7e8756d7ad22 "mm: page_alloc: fix non-movable reclaim storm in defrag_mode" (3/4)
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lore.kernel.org/DK7NM9RPUJOD.11PNJJ5N2OBED@linux.dev
         - Link: https://lore.kernel.org/20260722150006.3848560-5-hannes@cmpxchg.org
-    - 9f72d441a0a7 "mm/page_alloc: boost watermarks on atomic allocation failure"
+- mm-unstable: 9 total, 0 (1) series, 8 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 3 commits
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 2 commits
+    - maintainer, nobody: 1 commits
+  - full commits list
+    - a05c36f1af43 "mm/page_alloc: boost watermarks on atomic allocation failure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
-    - 20e6224823cc "mm/page_reporting: add page_reporting_delay_ms module parameter"
+    - 0195905dcf21 "mm/page_reporting: add page_reporting_delay_ms module parameter"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260731193705.2902728-1-pratmal@google.com
-    - cfd999e61421 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
-      - Authored by no role player, reviewed by nobody
+    - 5c6e0f33db71 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/tencent_FFD4F4D728AAE8A8AE0AF277A59854A29A06@qq.com/
       - Link: https://lore.kernel.org/tencent_A860C873956A52E26AD8D309A308A241BA08@qq.com
-    - b1775b32b5b4 "mm-page_alloc-only-update-lowmem_reserve_ratio-on-sysctl-write-fix"
+    - 50d969e8427f "mm-page_alloc-only-update-lowmem_reserve_ratio-on-sysctl-write-fix"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org
-    - 4523cf68ed12 "mm: add some missing includes to mm-local headers"
+    - 9287fd25d6fe "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-      - f11886d91924 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
+      - 461ef249cbdc "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
-    - 7fb387608451 "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder"
+    - d7dcca44e860 "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260805093108.2352900-1-ye.liu@linux.dev
-    - 690173f39bb5 "mm/show_mem: fix format string inconsistencies and type mismatches"
+    - 3d3adc300698 "mm/show_mem: fix format string inconsistencies and type mismatches"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260805021556.1908807-1-ye.liu@linux.dev
-    - 7e4ead2558f2 "mm: debug_page_alloc: fix NULL buf in debug_guardpage_minorder_setup"
+    - 5c0ad1a6b521 "mm: debug_page_alloc: fix NULL buf in debug_guardpage_minorder_setup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260806004556.2633049-1-ye.liu@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

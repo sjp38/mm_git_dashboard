@@ -1,10 +1,10 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 7 total, 2 (6) series, 1 non-series commits
+- mm-stable: 10 total, 3 (8) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 4 commits
-    - no role, reviewer: 1 commits
+    - no role, reviewer: 4 commits
     - reviewer, no role : 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
@@ -37,30 +37,30 @@
       - b1e71c05fa37 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
-- mm-unstable: 6 total, 1 (3) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, reviewer: 4 commits
-    - no role, maintainer: 1 commits
-  - full commits list
     - series "Two small patches to clean up mm/mm_slot.h", v3. (2 commits)
-      - ec036a1c4a01 "mm/mm_slot.h: add a helper function mm_slot_remove" (0/2)
+      - eed8da1ff61d "mm/mm_slot.h: add a helper function mm_slot_remove" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/202607140924549782dUh3YBPmy8g1NDMK2zIW@zte.com.cn
         - Link: https://lore.kernel.org/20260714092622583ayzGzGYSjAareKKHt_T91@zte.com.cn
-      - 16f13a49ee7b "mm/mm_slot.h: add comments for mm_slot_lookup/insert" (1/2)
+      - 5c3746a0fe38 "mm/mm_slot.h: add comments for mm_slot_lookup/insert" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260714092815120Wv-CFDlLKtsTmda--97Qw@zte.com.cn
-    - 0a46c39b1d53 "ksm: stop iterating VMAs when ksm_test_exit returns true"
+    - 6be12ddb52f9 "ksm: stop iterating VMAs when ksm_test_exit returns true"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260726133501.504048-1-wsw9603@163.com
-      - 564a9f8855ab "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
+- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+      - b155d5e1293c "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
-    - fdf01301b8e8 "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
+    - 6d9866e788e5 "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260805132736.1063408-1-xialonglong2025@163.com
-    - 17bee2cccab1 "ksm: update comments and docs to reference folio->mapping"
+    - c912b8323e42 "ksm: update comments and docs to reference folio->mapping"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260805105927.41987-1-hongfu.li@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

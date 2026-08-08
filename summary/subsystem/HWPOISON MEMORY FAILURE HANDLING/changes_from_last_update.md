@@ -3,83 +3,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 10 -> 10 commits (no change)
+- mm-stable: 10 -> 11 commits
   - series: 1 (10) -> 1 (10) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
+    - no role, maintainer: 5 -> 6 commits
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
-- mm-unstable: 2 -> 2 commits (no change)
+  - changed commits
+    - 288058d8db5d "selftests/mm: unpoison pages in memory-failure teardown"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
+- mm-unstable: 2 -> 1 commits
   - series: 0 (1) -> 0 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 484ab103e28a "mm: introduce and use vma_filebacked_address() (5/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org"
-        - added "Tested-by: syzbot@syzkaller.appspotmail.com"
-        - added "Cc: Oscar Salvador <osalvador@suse.de>"
-        - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
-        - added "Cc: James Clark <james.clark@linaro.org>"
-        - added "Cc: Jiri Olsa <jolsa@kernel.org>"
-        - added "Cc: Thomas Hellström <thomas.hellstrom@linux.intel.com>"
-        - added "Cc: Claudio Imbrenda <imbrenda@linux.ibm.com>"
-        - added "Cc: Kairui Song <kasong@tencent.com>"
-        - added "Cc: Namhyung kim <namhyung@kernel.org>"
-        - added "Cc: Janosch Frank <frankja@linux.ibm.com>"
-        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
-        - added "Cc: Christan König <christian.koenig@amd.com>"
-        - added "Cc: Vasily Gorbik <gor@linux.ibm.com>"
-        - added "Cc: Heiko Carstens <hca@linux.ibm.com>"
-        - added "Cc: Boris Brezillon <boris.brezillon@collabora.com>"
-        - added "Cc: Alexander Gordeev <agordeev@linux.ibm.com>"
-        - added "Cc: Huang Ray <Ray.Huang@amd.com>"
-        - added "Cc: Muchun Song <muchun.song@linux.dev>"
-        - added "Cc: Adrian Hunter <adrian.hunter@intel.com>"
-        - added "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
-        - added "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
-        - added "Cc: John Hubbard <jhubbard@nvidia.com>"
-        - added "Cc: Liviu Dudau <liviu.dudau@arm.com>"
-        - added "Cc: Ian Rogers <irogers@google.com>"
-        - added "Cc: Matthew Auld <matthew.auld@intel.com>"
-        - added "Cc: Gregory Price (Meta) <gourry@gourry.net>"
-        - added "Cc: Marc Rutland <mark.rutland@arm.com>"
-        - added "Cc: Nhat Pham <nphamcs@gmail.com>"
-        - added "Cc: Rodrigo Vivi <rodrigo.vivi@intel.com>"
-        - added "Cc: Gerald Schaefer <gerald.schaefer@linux.ibm.com>"
-        - added "Cc: Sven Schnelle <svens@linux.ibm.com>"
-        - added "Cc: Peter Zijlstra <peterz@infradead.org>"
-        - added "Cc: Ingo Molnar <mingo@redhat.com>"
-        - added "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
-        - added "Cc: Christian Borntraeger <borntraeger@linux.ibm.com>"
-        - added "Cc: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>"
-        - added "Cc: Dave Airlie <airlied@gmail.com>"
-        - added "Cc: Alexander Deucher <alexander.deucher@amd.com>"
-        - added "Cc: Arnaldo Carvalho de Melo <acme@kernel.org>"
-        - added "Cc: Maxime Ripard <mripard@kernel.org>"
-        - added "Cc: Chris Li <chrisl@kernel.org>"
-        - added "Cc: Steven Price <steven.price@arm.com>"
-        - added "Cc: Alexander Shishkin <alexander.shishkin@linux.intel.com>"
-        - added "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - added "Cc: Oleg Nesterov <oleg@redhat.com>"
-        - dropped "Link: https://lore.kernel.org/20260720-b4-scalable-cow-virt-pgoff-v2-5-2d549757a76f@kernel.org"
-        - dropped "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: Gregory Price <gourry@gourry.net>"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org
+    - no role, maintainer: 1 -> 0 commits
 - mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5)
-      - 7164cc9576e0 "selftests/mm: skip hard dirty page-cache test on NFS (3/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260727095225.372655-5-usama.anjum@arm.com
-  - dropped commits
-    - f3f0ea08a6ba "mm/memory-failure: fix refcount leak on soft-offline LBS folio"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260804035356.2615408-1-dayou5941@163.com
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

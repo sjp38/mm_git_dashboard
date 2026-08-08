@@ -1,10 +1,10 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 10 total, 1 (10) series, 0 non-series commits
+- mm-stable: 11 total, 1 (10) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
-    - no role, maintainer: 5 commits
+    - no role, maintainer: 6 commits
     - reviewer, no role : 1 commits
     - reviewer, reviewer: 3 commits
   - full commits list
@@ -41,22 +41,21 @@
       - b1e71c05fa37 "mm/rmap: rename anon_vma_interval_tree_*() to anon_rmap_tree_*()" (10/33)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-11-2a5aa403d977@kernel.org
-- mm-unstable: 2 total, 0 (1) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 1738993bb60d "selftests/mm: unpoison pages in memory-failure teardown"
+    - 288058d8db5d "selftests/mm: unpoison pages in memory-failure teardown"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
-      - 484ab103e28a "mm: introduce and use vma_filebacked_address()" (5/20)
+- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+      - 9f0536351982 "mm: introduce and use vma_filebacked_address()" (5/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org
 - mm-new: 1 total, 0 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-      - 7164cc9576e0 "selftests/mm: skip hard dirty page-cache test on NFS" (3/5)
+      - a6ca62497e3c "selftests/mm: skip hard dirty page-cache test on NFS" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727095225.372655-5-usama.anjum@arm.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

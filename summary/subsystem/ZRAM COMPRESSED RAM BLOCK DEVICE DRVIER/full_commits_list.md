@@ -1,68 +1,68 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 1 total, 0 (0) series, 1 non-series commits
+- mm-stable: 4 total, 1 (2) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 3 commits
+    - maintainer, no role : 1 commits
   - full commits list
     - a39826530146 "docs: ABI: zram: fix spelling mistakes"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260707165131.4408-1-rahularukonda2@gmail.com
-- mm-unstable: 14 total, 4 (11) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 9 commits
-    - maintainer, nobody: 4 commits
-    - maintainer, no role : 1 commits
-  - full commits list
     - series "zram: lockmap tweaks". (2 commits)
-      - 9d7a48d3a880 "zram: move lockmap to be per-zram instead per table" (0/2)
+      - dbb7ba9c7fa8 "zram: move lockmap to be per-zram instead per table" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260714141300.3945672-1-bigeasy@linutronix.de
         - Link: https://lore.kernel.org/20260714141300.3945672-2-bigeasy@linutronix.de
-      - bdfb48ef1100 "zram: use a custom key for each zram object" (1/2)
+      - d56a82aa87ee "zram: use a custom key for each zram object" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260714141300.3945672-3-bigeasy@linutronix.de
-    - 26b2a6eca3ec "Documentation: zram: remove sections numbering"
+    - 2f99b6fe0b85 "Documentation: zram: remove sections numbering"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260728021229.181627-1-senozhatsky@chromium.org
+- mm-unstable: 11 total, 3 (9) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 7 commits
+    - maintainer, nobody: 4 commits
+  - full commits list
     - series "zram: fix zram issues reported by sashiko". (2 commits)
-      - bcc5a67d8847 "zram: set default primary compressor in zram_destroy_comps()" (0/2)
+      - 18d8e0c690ff "zram: set default primary compressor in zram_destroy_comps()" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260729045745.775973-2-senozhatsky@chromium.org
         - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com [1]
-      - 6755b2c90ca8 "zram: validate deflate params" (1/2)
+      - 250d9e8573f6 "zram: validate deflate params" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260729045745.775973-3-senozhatsky@chromium.org
         - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com
-    - 9c37ac92041b "Documentation: zram: correct algo parameters configuration documentation"
+    - 048af4cfcd5e "Documentation: zram: correct algo parameters configuration documentation"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260730075158.1339787-1-senozhatsky@chromium.org
     - series "zram: fix zstd error paths and add parameter validation", v6, (5 commits)
-      - b75a1c987f93 "zram: do not release zstd global params from error paths" (0/5)
+      - 834309a0fa74 "zram: do not release zstd global params from error paths" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-1-haoqinhuang7@gmail.com
         - Link: https://lore.kernel.org/20260804093841.67920-2-haoqinhuang7@gmail.com
-      - ca7221be145b "zram: reject zero-size dictionary" (1/5)
+      - e609b08754b6 "zram: reject zero-size dictionary" (1/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-3-haoqinhuang7@gmail.com
-      - 04ecc27aaef5 "zram: add pr_fmt to backend files" (2/5)
+      - 8fdabb9fa4e8 "zram: add pr_fmt to backend files" (2/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-4-haoqinhuang7@gmail.com
-      - 69dc5695c3a3 "zram: validate parameters in each backend's setup_params" (3/5)
+      - 6ca489bd62e9 "zram: validate parameters in each backend's setup_params" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-5-haoqinhuang7@gmail.com
-      - 82cd0a7e5b55 "zram: reset per-priority params when changing algorithm before init" (4/5)
+      - 915d0fed973e "zram: reset per-priority params when changing algorithm before init" (4/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-6-haoqinhuang7@gmail.com
     - series "zram: fix stale scan bounds after reinitialization". (2 commits)
-      - ec97897710c9 "zram: fix out-of-bounds access in writeback_store()" (0/2)
+      - 155b6ff9177a "zram: fix out-of-bounds access in writeback_store()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804065919.3970386-1-xialonglong2025@163.com
         - Link: https://lore.kernel.org/20260804065919.3970386-2-xialonglong2025@163.com
-      - 389351aace44 "zram: fix out-of-bounds access in read_block_state()" (1/2)
+      - 3055ac4fa292 "zram: fix out-of-bounds access in read_block_state()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804065919.3970386-3-xialonglong2025@163.com
-    - ff52e47bc91f "zram: switch to unsigned long indexing"
+    - e6daf5de49ee "zram: switch to unsigned long indexing"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260806031640.536615-1-senozhatsky@chromium.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -8,7 +8,13 @@
       - ef79e0f5e31b "mm: split out vmalloc declarations from internal.h" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - ac89da2dbba7 "mm/execmem: fix fallback_end description in kernel-doc"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260807091958.4735-1-henry.elderman.edu+linux@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
