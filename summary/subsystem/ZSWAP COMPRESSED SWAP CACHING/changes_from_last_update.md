@@ -5,29 +5,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 5 commits
-  - series: 0 (1) -> 1 (3)
-    - no role, no role : 1 -> 0 commits
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 4 commits
-  - changed commits
-    - series "mm/zswap: Fixes and improves the zswap shrink", v4. (2)
-      - 5c6c94973cfd "mm/zswap: fix global shrinker when memory cgroup is disabled (0/2)"
+    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "swap_ops updates", v2. (3)
+      - 97e5a14c705e "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
         - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260806070943.95542-1-jiahao.kernel@gmail.com
-        - Link: https://lore.kernel.org/20260806070943.95542-2-jiahao.kernel@gmail.com
-      - b7c9174ec353 "mm/zswap: support batch writeback in shrink_memcg() (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260806070943.95542-3-jiahao.kernel@gmail.com
-  - dropped commits
-    - e32eaa66629c "selftests/cgroup: test_zswap: skip test_no_kmem_bypass if debugfs is unavailable"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260801041255.752039-1-wfelipe@google.com
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, maintainer: 2 -> 0 commits
+        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

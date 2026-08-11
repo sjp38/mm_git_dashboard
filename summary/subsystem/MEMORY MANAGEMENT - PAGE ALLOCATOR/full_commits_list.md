@@ -174,29 +174,29 @@
     - no role, maintainer: 2 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 9dcfd3eba122 "mm/page_reporting: add page_reporting_delay_ms module parameter"
+    - 3ba4f91d0f49 "mm/page_reporting: add page_reporting_delay_ms module parameter"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260731193705.2902728-1-pratmal@google.com
-    - fa080f7d408b "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
+    - 9b68e50c6300 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/linux-mm/tencent_FFD4F4D728AAE8A8AE0AF277A59854A29A06@qq.com/
       - Link: https://lore.kernel.org/tencent_A860C873956A52E26AD8D309A308A241BA08@qq.com
-    - ba5270840f37 "mm-page_alloc-only-update-lowmem_reserve_ratio-on-sysctl-write-fix"
+    - 91783f1ca903 "mm-page_alloc-only-update-lowmem_reserve_ratio-on-sysctl-write-fix"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org
-    - 7e50cac257c3 "mm: add some missing includes to mm-local headers"
+    - 037499244ef8 "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-      - 40b03eed3547 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
+      - 3773fafeb4c2 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
-    - 23cdee58ba3f "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder"
+    - 856d67fe9d03 "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260805093108.2352900-1-ye.liu@linux.dev
-    - 9d131dd5c5df "mm/show_mem: fix format string inconsistencies and type mismatches"
+    - b3cbb3fda1ec "mm/show_mem: fix format string inconsistencies and type mismatches"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260805021556.1908807-1-ye.liu@linux.dev
-    - 3b5715dd3cc7 "mm: debug_page_alloc: fix NULL buf in debug_guardpage_minorder_setup"
+    - bbc75082c86c "mm: debug_page_alloc: fix NULL buf in debug_guardpage_minorder_setup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260806004556.2633049-1-ye.liu@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

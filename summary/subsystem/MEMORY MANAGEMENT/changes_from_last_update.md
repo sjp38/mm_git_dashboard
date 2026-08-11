@@ -6,17 +6,22 @@
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 5 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, reviewer: 0 -> 1 commits
-  - changed commits
-    - 1674223bf754 "memcg: keep folio's objcg same as its node"
-      - Authored by a maintainer, reviewed by a reviewer
-      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - Link: https://lore.kernel.org/20260807142406.443516-1-shakeel.butt@linux.dev
+    - no role, nobody: 1 -> 2 commits
+    - no role, maintainer: 0 -> 2 commits
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - 630b3dbd8071 "mm-hugetlb_cma-fix-null-nodemask-dereference-in-hugetlb_cma_alloc_frozen_folio-v5"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260809043250.2917406-1-souravpanda@google.com
+    - 215eac572fd0 "mm/vmscan: report RCU-tasks quiescent states in shrink_lruvec()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
+      - Link: https://lore.kernel.org/20260810-rcu_task_shrink_lruvec-v1-1-4d9f7d5251cb@debian.org
+    - 1169f6fdf759 "mm: memcg-v1: fix memory.memsw.failcnt accounting"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260810074247.52747-1-guopeng.zhang@linux.dev
 - mm-stable: 355 -> 355 commits (no change)
   - series: 49 (299) -> 49 (299) (no change)
     - no role, nobody: 13 -> 13 commits (no change)
@@ -30,50 +35,83 @@
     - maintainer, nobody: 91 -> 91 commits (no change)
     - maintainer, no role : 10 -> 10 commits (no change)
     - maintainer, reviewer: 11 -> 11 commits (no change)
-- mm-unstable: 91 -> 94 commits
-  - series: 11 (53) -> 12 (55)
+- mm-unstable: 94 -> 90 commits
+  - series: 12 (55) -> 12 (50)
     - no role, nobody: 20 -> 20 commits (no change)
-    - no role, no role : 24 -> 24 commits (no change)
+    - no role, no role : 24 -> 20 commits
     - no role, reviewer: 16 -> 16 commits (no change)
-    - no role, maintainer: 23 -> 26 commits
+    - no role, maintainer: 26 -> 26 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - bff7030e89b7 "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
-      - Authored by a maintainer, reviewed by a maintainer
-      - added "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/20260729024612.3369005-1-shakeel.butt@linux.dev
-      - Link: https://lore.kernel.org/7a4e5591f45df455e6a485fc5400989569d3d22d.camel@surriel.com/ [1]
-    - series "mm/zswap: Fixes and improves the zswap shrink", v4. (2)
-      - 5c6c94973cfd "mm/zswap: fix global shrinker when memory cgroup is disabled (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260806070943.95542-1-jiahao.kernel@gmail.com
-        - Link: https://lore.kernel.org/20260806070943.95542-2-jiahao.kernel@gmail.com
-      - b7c9174ec353 "mm/zswap: support batch writeback in shrink_memcg() (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260806070943.95542-3-jiahao.kernel@gmail.com
-    - 53773dd308e7 "drivers/base, mm: move arch_numa.c to mm/"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
-    - 9880aefc5d65 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
+  - new commits
+    - 9fec09e5dbaa "mm/cma: remove stray newline from auto-generated CMA area name"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260807040003.2156630-1-souravpanda@google.com
+      - Link: https://lore.kernel.org/20260810093215.91419-1-hongfu.li@linux.dev
+    - 4c7e58e0af1d "kasan: fix cache shrink race with CPU hotplug"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260808031459.3032812-1-sh_def@163.com
+    - 9d52b9ce71a3 "mm/gup_test: keep longterm pin state per file"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260810-gup_test_data-v1-1-fb1d41be5bb4@kernel.org
   - dropped commits
-    - a05c36f1af43 "mm/page_alloc: boost watermarks on atomic allocation failure"
+    - a5055e5d3170 "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260601082609.170076-1-jianhuizzzzz@gmail.com
+    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v7. (7)
+      - 93e7674a7505 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic (2/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-4-jiangwen6@xiaomi.com
+      - 808653e6e569 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-5-jiangwen6@xiaomi.com
+      - 9a7a9ff05f3f "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-6-jiangwen6@xiaomi.com
+      - 01bddf7cda69 "mm/vmalloc: map contiguous pages in batches for vmap() if possible (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-7-jiangwen6@xiaomi.com
+      - 36e4f471846e "mm/vmalloc: simplify vmap batching helper and limit scan by PFN alignment (6/7)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260722085841.3047673-1-jiangwen6@xiaomi.com
+    - ef503f463085 "mm/vmalloc: align vm_area so vmap() can batch mappings"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
-- mm-new: 7 -> 3 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 2 -> 1 commits
-    - no role, maintainer: 3 -> 0 commits
+      - Link: https://lore.kernel.org/20260715120813.3609949-8-jiangwen6@xiaomi.com
+- mm-new: 3 -> 9 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 4 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 849663ec787d "mm/hmm.c:hmm_do_fault(): suppress sparse warning"
+      - Authored by a maintainer, reviewed by nobody
+    - 50a1ec300ff7 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
+    - a961c243187c "zsmalloc: account for handle size in class lookup"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260809115518.3791787-1-xialonglong2025@163.com
+    - 8271fc3df939 "kasan: avoid unnecessary quarantine lock cycling"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260808191230.3345930-2-sh_def@163.com
+    - series "swap_ops updates", v2. (3)
+      - 6bb26b8ecc2b "mm/swap: revert to single-folio writes for synchronous swap devices (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260723054622.3460249-1-hch@lst.de
+        - Link: https://lore.kernel.org/20260723054622.3460249-2-hch@lst.de
+      - 97e5a14c705e "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
+      - 4b0da58217a0 "mm/swap: move swap_ops into file systems for file system-based swap (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
+  - dropped commits
+    - 45009f1b60f4 "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

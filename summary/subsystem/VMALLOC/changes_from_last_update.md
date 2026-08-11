@@ -9,11 +9,31 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 9 -> 9 commits (no change)
-  - series: 0 (5) -> 0 (5) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 7 -> 7 commits (no change)
+- mm-unstable: 9 -> 3 commits
+  - series: 0 (5) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 7 -> 2 commits
     - no role, reviewer: 1 -> 1 commits (no change)
+  - dropped commits
+    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v7. (7)
+      - 93e7674a7505 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic (2/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-4-jiangwen6@xiaomi.com
+      - 808653e6e569 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-5-jiangwen6@xiaomi.com
+      - 9a7a9ff05f3f "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-6-jiangwen6@xiaomi.com
+      - 01bddf7cda69 "mm/vmalloc: map contiguous pages in batches for vmap() if possible (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-7-jiangwen6@xiaomi.com
+      - 36e4f471846e "mm/vmalloc: simplify vmap batching helper and limit scan by PFN alignment (6/7)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260722085841.3047673-1-jiangwen6@xiaomi.com
+    - ef503f463085 "mm/vmalloc: align vm_area so vmap() can batch mappings"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260715120813.3609949-8-jiangwen6@xiaomi.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

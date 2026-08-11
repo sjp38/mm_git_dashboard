@@ -23,9 +23,15 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - de476701cae4 "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - 7b782f71f04c "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+      - 97e5a14c705e "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -14,15 +14,11 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 11 -> 11 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-unstable: 15 -> 16 commits
-  - series: 1 (13) -> 1 (13) (no change)
+- mm-unstable: 16 -> 16 commits (no change)
+  - series: 1 (13) -> 1 (12)
     - no role, nobody: 11 -> 11 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 6951b6ca07f6 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

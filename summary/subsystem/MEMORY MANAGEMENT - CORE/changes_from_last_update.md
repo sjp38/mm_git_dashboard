@@ -14,24 +14,25 @@
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-unstable: 23 -> 23 commits (no change)
-  - series: 3 (15) -> 3 (15) (no change)
+- mm-unstable: 23 -> 24 commits
+  - series: 3 (15) -> 3 (16)
     - no role, nobody: 7 -> 7 commits (no change)
-    - no role, no role : 10 -> 9 commits
+    - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 4 -> 5 commits
-  - changed commits
-    - 53773dd308e7 "drivers/base, mm: move arch_numa.c to mm/"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
-  - dropped commits
-    - a05c36f1af43 "mm/page_alloc: boost watermarks on atomic allocation failure"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
-- mm-new: 1 -> 0 commits
+    - no role, maintainer: 5 -> 5 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 46a5c37c63a5 "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix (2/20)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 50a1ec300ff7 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

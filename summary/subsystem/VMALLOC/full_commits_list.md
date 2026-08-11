@@ -33,39 +33,20 @@
       - ef79e0f5e31b "mm: split out vmalloc declarations from internal.h" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-- mm-unstable: 9 total, 0 (5) series, 4 non-series commits
+- mm-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 7 commits
+    - no role, no role : 2 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 9e18ffd520dd "mm/vmalloc: make vm_struct.nr_pages an unsigned long"
+    - 01cbb3cb492f "mm/vmalloc: make vm_struct.nr_pages an unsigned long"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260801114915.115224-1-iprintercanon@gmail.com
-    - b2f19c23ad27 "mm/vmalloc: do not warn on -ENOMEM from va_alloc()"
+    - 08abfebcc92e "mm/vmalloc: do not warn on -ENOMEM from va_alloc()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260802104627.63892-1-urezki@gmail.com
-    - 7e50cac257c3 "mm: add some missing includes to mm-local headers"
+    - 037499244ef8 "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-      - 93e7674a7505 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic" (2/7)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260715120813.3609949-4-jiangwen6@xiaomi.com
-      - 808653e6e569 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk" (3/7)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260715120813.3609949-5-jiangwen6@xiaomi.com
-      - 9a7a9ff05f3f "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection" (4/7)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260715120813.3609949-6-jiangwen6@xiaomi.com
-      - 01bddf7cda69 "mm/vmalloc: map contiguous pages in batches for vmap() if possible" (5/7)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260715120813.3609949-7-jiangwen6@xiaomi.com
-      - 36e4f471846e "mm/vmalloc: simplify vmap batching helper and limit scan by PFN alignment" (6/7)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260722085841.3047673-1-jiangwen6@xiaomi.com
-    - ef503f463085 "mm/vmalloc: align vm_area so vmap() can batch mappings"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260715120813.3609949-8-jiangwen6@xiaomi.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

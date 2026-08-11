@@ -10,10 +10,10 @@
         - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
 - mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
   - full commits list
-    - bffd8ec9884f "mm/execmem: fix fallback_end description in kernel-doc"
-      - Authored by no role player, reviewed by nobody
+    - 36347af22345 "mm/execmem: fix fallback_end description in kernel-doc"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260807091958.4735-1-henry.elderman.edu+linux@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

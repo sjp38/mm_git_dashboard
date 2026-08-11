@@ -6,19 +6,26 @@
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
-- mm-hotfixes-unstable: 7 -> 7 commits (no change)
+- mm-hotfixes-unstable: 7 -> 11 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, nobody: 3 -> 5 commits
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, reviewer: 0 -> 1 commits
-  - changed commits
-    - 1674223bf754 "memcg: keep folio's objcg same as its node"
-      - Authored by a maintainer, reviewed by a reviewer
-      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - Link: https://lore.kernel.org/20260807142406.443516-1-shakeel.butt@linux.dev
+    - no role, maintainer: 1 -> 3 commits
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - 630b3dbd8071 "mm-hugetlb_cma-fix-null-nodemask-dereference-in-hugetlb_cma_alloc_frozen_folio-v5"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260809043250.2917406-1-souravpanda@google.com
+    - 35b90a5dd67c "mailmap: add entries for Guodong Xu"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260807-b4-mailmap-guodong-xu-v2-1-f7c71bc6bd9f@gmail.com
+    - 215eac572fd0 "mm/vmscan: report RCU-tasks quiescent states in shrink_lruvec()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
+      - Link: https://lore.kernel.org/20260810-rcu_task_shrink_lruvec-v1-1-4d9f7d5251cb@debian.org
+    - 1169f6fdf759 "mm: memcg-v1: fix memory.memsw.failcnt accounting"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260810074247.52747-1-guopeng.zhang@linux.dev
 - mm-stable: 500 -> 500 commits (no change)
   - series: 67 (410) -> 67 (410) (no change)
     - no role, nobody: 33 -> 33 commits (no change)
@@ -32,96 +39,109 @@
     - maintainer, nobody: 115 -> 115 commits (no change)
     - maintainer, no role : 20 -> 20 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-unstable: 170 -> 178 commits
-  - series: 19 (110) -> 21 (117)
-    - no role, nobody: 51 -> 52 commits
-    - no role, no role : 48 -> 51 commits
+- mm-unstable: 178 -> 174 commits
+  - series: 21 (117) -> 20 (110)
+    - no role, nobody: 52 -> 52 commits (no change)
+    - no role, no role : 51 -> 46 commits
     - no role, reviewer: 22 -> 22 commits (no change)
-    - no role, maintainer: 32 -> 36 commits
+    - no role, maintainer: 36 -> 36 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 8 -> 8 commits (no change)
+    - maintainer, nobody: 8 -> 9 commits
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 2 -> 2 commits (no change)
   - new commits
-    - 22baae8b6a02 "mm: make VM_FAULT_RESULT_TRACE compatible with sparse"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/e56c9e2aead04f79192c3110de80d846e41e3791.1786122711.git.bvanassche@acm.org
-    - 6951b6ca07f6 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
-  - changed commits
-    - bff7030e89b7 "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
-      - Authored by a maintainer, reviewed by a maintainer
-      - added "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/20260729024612.3369005-1-shakeel.butt@linux.dev
-      - Link: https://lore.kernel.org/7a4e5591f45df455e6a485fc5400989569d3d22d.camel@surriel.com/ [1]
-    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5)
-      - 4cef75e60b05 "selftests/mm: skip COW tmpfile cases when fallocate() is unsupported (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260727095225.372655-1-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/20260727095225.372655-2-usama.anjum@arm.com
-      - 71f4f1ecac16 "selftests/mm: skip guard hole-punch test if MADV_REMOVE is unsupported (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260727095225.372655-3-usama.anjum@arm.com
-      - 9bc3cb7357a7 "selftests/mm: skip khugepaged swap tests without swap (2/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260727095225.372655-4-usama.anjum@arm.com
-      - d3df05ccc792 "selftests/mm: skip hard dirty page-cache test on NFS (3/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260727095225.372655-5-usama.anjum@arm.com
-      - e31424b0145a "selftests/mm: retry migration failures for the full runtime (4/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260727095225.372655-6-usama.anjum@arm.com
-    - series "mm/zswap: Fixes and improves the zswap shrink", v4. (2)
-      - 5c6c94973cfd "mm/zswap: fix global shrinker when memory cgroup is disabled (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260806070943.95542-1-jiahao.kernel@gmail.com
-        - Link: https://lore.kernel.org/20260806070943.95542-2-jiahao.kernel@gmail.com
-      - b7c9174ec353 "mm/zswap: support batch writeback in shrink_memcg() (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260806070943.95542-3-jiahao.kernel@gmail.com
-    - 53773dd308e7 "drivers/base, mm: move arch_numa.c to mm/"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
-    - 9880aefc5d65 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260807040003.2156630-1-souravpanda@google.com
-    - 3199b0c09efa "selftests/mm: fix read_file() return value check"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260807013555.36525-1-hongfu.li@linux.dev
-  - dropped commits
-    - 443b1123064f "selftests/mm: transhuge-stress: check duration inside page loop"
+    - c4c3f9cec850 "selftests/mm: thuge-gen: fix test_shmget() for PAGE_SIZE check"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260720103105.169955-1-sarthak.sharma@arm.com
-    - a05c36f1af43 "mm/page_alloc: boost watermarks on atomic allocation failure"
+      - Link: https://lore.kernel.org/20260809-selftests-thuge-gen-fix-v1-1-1919f4b3d12f@kernel.org
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 46a5c37c63a5 "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix (2/20)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
+    - 9fec09e5dbaa "mm/cma: remove stray newline from auto-generated CMA area name"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260720-feat-mm-page_alloc-v11-v11-1-7376b02c27b3@gmail.com
-    - e32eaa66629c "selftests/cgroup: test_zswap: skip test_no_kmem_bypass if debugfs is unavailable"
+      - Link: https://lore.kernel.org/20260810093215.91419-1-hongfu.li@linux.dev
+    - 4c7e58e0af1d "kasan: fix cache shrink race with CPU hotplug"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260808031459.3032812-1-sh_def@163.com
+    - 9d52b9ce71a3 "mm/gup_test: keep longterm pin state per file"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260810-gup_test_data-v1-1-fb1d41be5bb4@kernel.org
+  - changed commits
+    - 36347af22345 "mm/execmem: fix fallback_end description in kernel-doc"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260801041255.752039-1-wfelipe@google.com
-    - 91db8f341c32 "selftests/mm: khugepaged: skip swap tests when no swap available"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
-- mm-new: 14 -> 3 commits
-  - series: 2 (7) -> 0 (0)
-    - no role, nobody: 4 -> 2 commits
-    - no role, no role : 6 -> 1 commits
-    - no role, maintainer: 4 -> 0 commits
+      - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260807091958.4735-1-henry.elderman.edu+linux@gmail.com
   - dropped commits
-    - 0890bbf25745 "mm: Make VM_FAULT_RESULT_TRACE compatible with sparse"
+    - a5055e5d3170 "mm/userfaultfd: clear uffd-wp PTE state when re-registering without WP"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260601082609.170076-1-jianhuizzzzz@gmail.com
+    - series "mm/vmalloc: Speed up ioremap, vmalloc and vmap with contiguous memory", v7. (7)
+      - 17f26d19c659 "arm64/hugetlb: extend batching of multiple CONT_PTE in a single PTE setup (0/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-1-jiangwen6@xiaomi.com
+        - Link: https://lore.kernel.org/20260715120813.3609949-2-jiangwen6@xiaomi.com
+      - 278336571f4e "arm64/vmalloc: allow arch_vmap_pte_range_map_size to batch multiple CONT_PTE (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-3-jiangwen6@xiaomi.com
+      - 93e7674a7505 "mm/vmalloc: extract vmap_set_ptes() to consolidate PTE mapping logic (2/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-4-jiangwen6@xiaomi.com
+      - 808653e6e569 "mm/vmalloc: extend page table walk to support larger page_shift sizes and eliminate page table rewalk (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-5-jiangwen6@xiaomi.com
+      - 9a7a9ff05f3f "mm/vmalloc: extract vm_shift() to consolidate mapping shift selection (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-6-jiangwen6@xiaomi.com
+      - 01bddf7cda69 "mm/vmalloc: map contiguous pages in batches for vmap() if possible (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260715120813.3609949-7-jiangwen6@xiaomi.com
+      - 36e4f471846e "mm/vmalloc: simplify vmap batching helper and limit scan by PFN alignment (6/7)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260722085841.3047673-1-jiangwen6@xiaomi.com
+    - ef503f463085 "mm/vmalloc: align vm_area so vmap() can batch mappings"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/e56c9e2aead04f79192c3110de80d846e41e3791.1786122711.git.bvanassche@acm.org
+      - Link: https://lore.kernel.org/20260715120813.3609949-8-jiangwen6@xiaomi.com
+- mm-new: 3 -> 11 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, nobody: 2 -> 5 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 4 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 849663ec787d "mm/hmm.c:hmm_do_fault(): suppress sparse warning"
+      - Authored by a maintainer, reviewed by nobody
+    - 8f771e2601d2 "zram: fix slot lock bit position on big-endian 64-bit"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260810202241.2436603-1-devnexen@gmail.com
+    - 50a1ec300ff7 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
+    - a961c243187c "zsmalloc: account for handle size in class lookup"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260809115518.3791787-1-xialonglong2025@163.com
+    - 0f8e5c584db3 "selftests/proc: make proc-maps-race work with READ_IMPLIES_EXEC"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260808200312.6326-1-kmehltretter@gmail.com
+    - 8271fc3df939 "kasan: avoid unnecessary quarantine lock cycling"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260808191230.3345930-2-sh_def@163.com
+    - series "swap_ops updates", v2. (3)
+      - 6bb26b8ecc2b "mm/swap: revert to single-folio writes for synchronous swap devices (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260723054622.3460249-1-hch@lst.de
+        - Link: https://lore.kernel.org/20260723054622.3460249-2-hch@lst.de
+      - 97e5a14c705e "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
+      - 4b0da58217a0 "mm/swap: move swap_ops into file systems for file system-based swap (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
+  - dropped commits
+    - 45009f1b60f4 "mm/gup_test: fix race with PIN_LONGTERM_TEST ioctls"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260608025043.88087-1-cuiyunhui@bytedance.com
 - mm-nonmm-stable: 69 -> 69 commits (no change)
   - series: 7 (21) -> 7 (21) (no change)
     - no role, nobody: 28 -> 28 commits (no change)
@@ -129,10 +149,30 @@
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 21 -> 21 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
-- mm-nonmm-unstable: 23 -> 23 commits (no change)
+- mm-nonmm-unstable: 23 -> 27 commits
   - series: 2 (4) -> 2 (4) (no change)
-    - no role, nobody: 5 -> 5 commits (no change)
+    - no role, nobody: 5 -> 7 commits
     - no role, no role : 7 -> 7 commits (no change)
-    - no role, maintainer: 8 -> 8 commits (no change)
+    - no role, maintainer: 8 -> 10 commits
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 105bea6ec287 "lib/interval_tree: fix allocation warning messages"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260808123608.73613-1-kmehltretter@gmail.com
+    - 04199809cfd5 "checkpatch: skip CamelCase cache for --no-tree without root"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260810161159.1044160-1-pvorel@suse.cz
+    - 7b20900867b9 "mailmap: update email address for Linfeng Sun"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260810073235.22980-1-linfeng.sun.dev@gmail.com
+    - 89e7f4b09629 "prctl: fix PR_SET_MM_AUXV losing the forced AT_NULL terminator"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260809002901.32591-1-include@grrlz.net
+    - b6550fded2e2 "squashfs: avoid thundering-herd cache wakeups"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260807172421.3875982-1-usama.arif@linux.dev
+  - dropped commits
+    - b881cb756b98 "lib/idr: fix ida_find_first_range() missing IDs across chunk boundaries"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260306203047.2821852-1-objecting@objecting.org

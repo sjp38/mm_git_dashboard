@@ -14,33 +14,13 @@
     - reviewer, reviewer: 8 -> 8 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-unstable: 16 -> 16 commits (no change)
-  - series: 3 (14) -> 3 (15)
+  - series: 3 (15) -> 3 (15) (no change)
     - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 1 -> 2 commits
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 1 -> 0 commits
     - reviewer, reviewer: 4 -> 4 commits (no change)
-  - changed commits
-    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5)
-      - 9bc3cb7357a7 "selftests/mm: skip khugepaged swap tests without swap (2/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260727095225.372655-4-usama.anjum@arm.com
-    - 3199b0c09efa "selftests/mm: fix read_file() return value check"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260807013555.36525-1-hongfu.li@linux.dev
-  - dropped commits
-    - 443b1123064f "selftests/mm: transhuge-stress: check duration inside page loop"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260720103105.169955-1-sarthak.sharma@arm.com
-    - 91db8f341c32 "selftests/mm: khugepaged: skip swap tests when no swap available"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
-- mm-new: 2 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -6,10 +6,20 @@
 - mm-stable: 1 -> 1 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - 4c7e58e0af1d "kasan: fix cache shrink race with CPU hotplug"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260808031459.3032812-1-sh_def@163.com
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 8271fc3df939 "kasan: avoid unnecessary quarantine lock cycling"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260808191230.3345930-2-sh_def@163.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

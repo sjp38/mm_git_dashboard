@@ -12,54 +12,24 @@
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-unstable: 23 -> 27 commits
-  - series: 3 (12) -> 4 (17)
-    - no role, nobody: 5 -> 6 commits
-    - no role, no role : 5 -> 8 commits
+- mm-unstable: 27 -> 29 commits
+  - series: 4 (17) -> 4 (16)
+    - no role, nobody: 6 -> 7 commits
+    - no role, no role : 8 -> 9 commits
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5)
-      - 4cef75e60b05 "selftests/mm: skip COW tmpfile cases when fallocate() is unsupported (0/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260727095225.372655-1-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/20260727095225.372655-2-usama.anjum@arm.com
-      - 71f4f1ecac16 "selftests/mm: skip guard hole-punch test if MADV_REMOVE is unsupported (1/5)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260727095225.372655-3-usama.anjum@arm.com
-      - 9bc3cb7357a7 "selftests/mm: skip khugepaged swap tests without swap (2/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260727095225.372655-4-usama.anjum@arm.com
-      - d3df05ccc792 "selftests/mm: skip hard dirty page-cache test on NFS (3/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260727095225.372655-5-usama.anjum@arm.com
-      - e31424b0145a "selftests/mm: retry migration failures for the full runtime (4/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260727095225.372655-6-usama.anjum@arm.com
-    - 3199b0c09efa "selftests/mm: fix read_file() return value check"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260807013555.36525-1-hongfu.li@linux.dev
-  - dropped commits
-    - 443b1123064f "selftests/mm: transhuge-stress: check duration inside page loop"
+  - new commits
+    - c4c3f9cec850 "selftests/mm: thuge-gen: fix test_shmget() for PAGE_SIZE check"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260720103105.169955-1-sarthak.sharma@arm.com
-    - 91db8f341c32 "selftests/mm: khugepaged: skip swap tests when no swap available"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260804125351.1715708-1-agordeev@linux.ibm.com
-- mm-new: 6 -> 0 commits
-  - series: 1 (5) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 3 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+      - Link: https://lore.kernel.org/20260809-selftests-thuge-gen-fix-v1-1-1919f4b3d12f@kernel.org
+    - 9fec09e5dbaa "mm/cma: remove stray newline from auto-generated CMA area name"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260810093215.91419-1-hongfu.li@linux.dev
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
