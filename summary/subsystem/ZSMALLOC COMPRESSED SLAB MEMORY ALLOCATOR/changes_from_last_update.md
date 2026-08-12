@@ -7,18 +7,17 @@
   - series: 1 (4) -> 1 (4) (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
     - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - b8449732528f "zsmalloc: account for handle size in class lookup"
+    - 63d76961f3bf "zsmalloc: account for handle size in class lookup"
       - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Sergey Senozhatsky <senozhatsky@chromium.org>"
-      - dropped "Cc: Sergey Senozhatsky <senozhatsky@chromium.org>"
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260809115518.3791787-1-xialonglong2025@163.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

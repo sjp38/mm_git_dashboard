@@ -10,21 +10,25 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 3 -> 3 commits (no change)
-  - series: 0 (3) -> 0 (2)
-    - no role, nobody: 2 -> 2 commits (no change)
+- mm-unstable: 3 -> 5 commits
+  - series: 0 (2) -> 0 (4)
+    - no role, nobody: 2 -> 3 commits
     - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 0d29569aa554 "mm: introduce linear_anon_page_index() (4/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - e2dbe6f19306 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
+    - series "swap_ops updates", v2. (3)
+      - e780acd19d82 "mm/swap: move swap_ops into file systems for file system-based swap (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
+- mm-new: 2 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

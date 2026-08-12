@@ -122,63 +122,64 @@
     - no role, reviewer: 7 commits
     - reviewer, reviewer: 4 commits
   - full commits list
-      - f6c59d4872e2 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
+      - 806a99d4e0f3 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
         - Authored by no role player, reviewed by no role player
+        - Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-      - 45fe327c2924 "mm/huge_memory: update remove_migration_pmd() to accept a folio" (13/20)
+      - e2f6d68336d3 "mm/huge_memory: update remove_migration_pmd() to accept a folio" (11/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org
-      - 944002c00e95 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (15/20)
+      - 67c1a77ac10c "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
     - series "Honor XA_FLAGS_ACCOUNT in xas_split_alloc() and charge to folio's memcg", v3. (2 commits)
-      - ba655525d3d2 "mm/huge_memory: use folio's memcg inside __folio_split()" (0/2)
+      - 24f9d07dc8ed "mm/huge_memory: use folio's memcg inside __folio_split()" (0/2)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-0-38cb3ff325c5@nvidia.com
         - Link: https://lore.kernel.org/20260804-add-gfp_account-to-xas_split_alloc-v3-1-38cb3ff325c5@nvidia.com
         - Link: https://sashiko.dev/#/patchset/20260727-add-gfp_account-to-xas_split_alloc-v1-1-9fae6bf64838%40nvidia.com?part=1 [1]
         - Link: https://lore.kernel.org/all/amtcBZ-_QVRgCd6b@cmpxchg.org/ [2]
     - series "add anon mTHP collapse test cases", v3. (4 commits)
-      - 9e7b5ea88c55 "selftests: mm: extend the check_huge() to support mTHP check" (0/4)
+      - a5180cedc145 "selftests: mm: extend the check_huge() to support mTHP check" (0/4)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/cover.1785985999.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/e5039cbc70f8de853e6c21048d65803a5fe41042.1785985999.git.baolin.wang@linux.alibaba.com
-      - e3d0db985ac1 "selftests: mm: move gather_after_split_folio_orders() into vm_util.c file" (1/4)
+      - d3ca248a9547 "selftests: mm: move gather_after_split_folio_orders() into vm_util.c file" (1/4)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/30a0a99556adf11c2bf97aa08d6da4830bb43f6f.1785985999.git.baolin.wang@linux.alibaba.com
-      - 4c411d550805 "selftests: mm: add mTHP collapse test cases" (3/4)
+      - 0fc3b697c52e "selftests: mm: add mTHP collapse test cases" (3/4)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/f260058520214a9611922a96326bc54ba282fb73.1785985999.git.baolin.wang@linux.alibaba.com
-      - 2b29171bdeda "selftests/mm: skip khugepaged swap tests without swap" (2/5)
+      - f23f1cb85d1b "selftests/mm: skip khugepaged swap tests without swap" (2/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260727095225.372655-4-usama.anjum@arm.com
-    - 85c3fcdcc0c0 "selftests/mm: fix read_file() return value check"
+    - f8fcd9e93c55 "selftests/mm: fix read_file() return value check"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260807013555.36525-1-hongfu.li@linux.dev
     - series "mm/khugepaged: several cleanups", v4. (7 commits)
-      - 91da5f978683 "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan()" (0/7)
+      - 7f221399e0b9 "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan()" (0/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-0-ddac39d61c4a@linux.dev
         - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-1-ddac39d61c4a@linux.dev
         - Link: https://lore.kernel.org/all/20260605161422.213817-1-npache@redhat.com/ [1]
         - Link: https://lore.kernel.org/all/20251008043748.45554-1-lance.yang@linux.dev/ [2]
-      - 7389ea476b24 "mm/khugepaged: extract reference check into folio_pte_referenced() helper" (1/7)
+      - c7d4c20b873c "mm/khugepaged: extract reference check into folio_pte_referenced() helper" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-2-ddac39d61c4a@linux.dev
-      - 6a1c6e3ef8ee "mm/khugepaged: introduce a count_collapse_event() helper" (2/7)
+      - aad226ef1901 "mm/khugepaged: introduce a count_collapse_event() helper" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-3-ddac39d61c4a@linux.dev
-      - 14a09d633d39 "mm/khugepaged: fix outdated comments" (3/7)
+      - 309a4e73dd0b "mm/khugepaged: fix outdated comments" (3/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-4-ddac39d61c4a@linux.dev
-      - e91607c38de4 "mm/khugepaged: refactor the PTE state checks into a helper" (4/7)
+      - 270c7e11f20c "mm/khugepaged: refactor the PTE state checks into a helper" (4/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-5-ddac39d61c4a@linux.dev
         - Link: https://lore.kernel.org/linux-mm/20251008043748.45554-1-lance.yang@linux.dev/ [1]
-      - 8220175b02b9 "mm/khugepaged: unmap pte before releasing vma write lock" (5/7)
+      - f9c88df68270 "mm/khugepaged: unmap pte before releasing vma write lock" (5/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-6-ddac39d61c4a@linux.dev
-      - 343ad23c8cc0 "mm: Documentation: clarify where the mTHP stats live" (6/7)
+      - 82d08caad168 "mm: Documentation: clarify where the mTHP stats live" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-7-ddac39d61c4a@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

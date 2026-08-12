@@ -6,27 +6,17 @@
 - mm-stable: 1 -> 1 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-unstable: 1 -> 1 commits (no change)
+- mm-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 2 commits
   - changed commits
-    - 75991802e2c7 "kasan: fix cache shrink race with CPU hotplug"
+    - ed929b678357 "kasan: fix quarantine_size accounting during cache removal"
       - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Andrey Ryabinin <ryabinin.a.a@gmail.com>"
-      - dropped "Cc: Andrey Ryabinin <ryabinin.a.a@gmail.com>"
-      - Link: https://lore.kernel.org/20260808031459.3032812-1-sh_def@163.com
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 81542d867042 "kasan: fix quarantine_size accounting during cache removal"
-      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260811073332.1351893-1-sh_def@163.com
-  - dropped commits
-    - 8271fc3df939 "kasan: avoid unnecessary quarantine lock cycling"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260808191230.3345930-2-sh_def@163.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

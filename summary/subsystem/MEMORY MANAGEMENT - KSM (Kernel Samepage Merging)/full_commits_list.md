@@ -54,13 +54,13 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 944002c00e95 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (15/20)
+      - 67c1a77ac10c "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
-    - 172178b4ff8a "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
+    - 8608f2f723ff "mm/ksm: avoid missing ksmd wakeups in ksm_enter"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260805132736.1063408-1-xialonglong2025@163.com
-    - 58072af49b8d "ksm: update comments and docs to reference folio->mapping"
+    - 023d01e66dab "ksm: update comments and docs to reference folio->mapping"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260805105927.41987-1-hongfu.li@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

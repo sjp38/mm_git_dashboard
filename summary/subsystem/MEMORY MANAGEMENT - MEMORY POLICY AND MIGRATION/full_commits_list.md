@@ -93,19 +93,20 @@
     - no role, no role : 3 commits
     - no role, reviewer: 2 commits
   - full commits list
-    - 0179e2bd60ab "mm: mempolicy: fix automatic numa balancing for shmem"
+    - 1d71f6ca8b59 "mm: mempolicy: fix automatic numa balancing for shmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
-      - f6c59d4872e2 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
+      - 806a99d4e0f3 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
         - Authored by no role player, reviewed by no role player
+        - Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-      - 45fe327c2924 "mm/huge_memory: update remove_migration_pmd() to accept a folio" (13/20)
+      - e2f6d68336d3 "mm/huge_memory: update remove_migration_pmd() to accept a folio" (11/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org
-      - 46e81a4ff02f "mm/migrate: calculate large folio page index using PFN" (14/20)
+      - 49d1e9480669 "mm/migrate: calculate large folio page index using PFN" (12/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-13-ab318a350404@kernel.org
-    - d7f9c4be8e12 "mm/migrate_device: clear stale mapping after freeing swapcache"
+    - e6663141678b "mm/migrate_device: clear stale mapping after freeing swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260728062832.1107127-1-arvind.yadav@intel.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

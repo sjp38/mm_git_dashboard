@@ -10,12 +10,24 @@
     - no role, reviewer: 29 -> 29 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, no role : 5 -> 5 commits (no change)
-- mm-unstable: 8 -> 8 commits (no change)
+- mm-unstable: 8 -> 7 commits
   - series: 0 (1) -> 0 (1) (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+  - changed commits
+    - c0f8e574daa8 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
+      - Authored by no role player, reviewed by no role player
+      - added "[akpm@linux-foundation.org: add comment, per hannes]"
+      - added "Link: : https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org"
+      - Link: : https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org
+      - Link: https://lore.kernel.org/linux-mm/tencent_FFD4F4D728AAE8A8AE0AF277A59854A29A06@qq.com/
+      - Link: https://lore.kernel.org/tencent_A860C873956A52E26AD8D309A308A241BA08@qq.com
+  - dropped commits
+    - 727d1c68732d "mm-page_alloc-only-update-lowmem_reserve_ratio-on-sysctl-write-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

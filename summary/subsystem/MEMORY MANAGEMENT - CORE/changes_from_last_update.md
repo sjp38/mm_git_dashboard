@@ -2,13 +2,9 @@
 - mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 085c6197b501 "mm/pagewalk: fix stale walk->action escaping walk_pmd_range()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260811161949.3879321-2-imv4bel@gmail.com
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 81 -> 81 commits (no change)
   - series: 11 (75) -> 11 (75) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
@@ -19,43 +15,39 @@
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-unstable: 24 -> 25 commits
-  - series: 3 (16) -> 3 (16) (no change)
-    - no role, nobody: 7 -> 4 commits
-    - no role, no role : 9 -> 12 commits
+- mm-unstable: 25 -> 24 commits
+  - series: 3 (16) -> 3 (15)
+    - no role, nobody: 4 -> 5 commits
+    - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, no role : 0 -> 1 commits
-  - new commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - e3d480b62a5e "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix-fix (3/20)"
-        - Authored by a maintainer, reviewed by no role player
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, no role : 1 -> 0 commits
   - changed commits
     - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - f6c59d4872e2 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
+      - 806a99d4e0f3 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "[akpm@linux-foundation.org: add comments, per Lorenzo]"
+        - added "[akpm@linux-foundation.org: fix kerneldoc]"
+        - added "Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer"
+        - added "Closes: : https://lore.kernel.org/e7911812-9b99-4f94-be6b-597bf202ffeb@infradead.org"
+        - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
+        - Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-      - 0d29569aa554 "mm: introduce linear_anon_page_index() (4/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org
-      - 196f7b649250 "mm: clean up vma_address_end() (12/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-11-ab318a350404@kernel.org
-      - 944002c00e95 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (15/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
-- mm-new: 1 -> 1 commits (no change)
+    - e2dbe6f19306 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
+  - dropped commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 9d6a345b90a3 "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix (2/20)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
+      - e3d480b62a5e "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix-fix (3/20)"
+        - Authored by a maintainer, reviewed by no role player
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

@@ -56,10 +56,10 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 17ee24f6b33f "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
+      - 7c4d68b23f82 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
-    - 75a3df9112f9 "drivers/base, mm: move arch_numa.c to mm/"
+    - 0a13f8e8bb1c "drivers/base, mm: move arch_numa.c to mm/"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

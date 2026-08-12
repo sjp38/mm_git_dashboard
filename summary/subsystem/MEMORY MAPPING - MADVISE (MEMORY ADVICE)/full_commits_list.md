@@ -19,19 +19,17 @@
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260710105557.1987433-3-usama.arif@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
-  - full commits list
-      - 130deadaffa2 "mm/swap: introduce struct swap_io_ctx" (1/7)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-      - cc822db33494 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
+      - 5e38bbdb3b1b "mm/swap: introduce struct swap_io_ctx" (1/7)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
+      - 34345e3dc0b8 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

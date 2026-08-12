@@ -5,25 +5,24 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - adbd8cc99947 "mm/vmscan: report RCU-tasks quiescent states in shrink_lruvec()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
-      - Link: https://lore.kernel.org/20260810-rcu_task_shrink_lruvec-v1-1-4d9f7d5251cb@debian.org
 - mm-stable: 10 -> 10 commits (no change)
   - series: 2 (7) -> 2 (7) (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 1 (8) -> 1 (8) (no change)
+- mm-unstable: 8 -> 9 commits
+  - series: 1 (8) -> 1 (9)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 6 -> 6 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 6 -> 7 commits
+  - changed commits
+    - series "swap_ops updates", v2. (3)
+      - 34345e3dc0b8 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

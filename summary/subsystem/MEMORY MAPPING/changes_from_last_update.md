@@ -14,53 +14,31 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 11 -> 11 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-unstable: 16 -> 17 commits
-  - series: 1 (12) -> 1 (11)
-    - no role, nobody: 11 -> 5 commits
-    - no role, no role : 4 -> 10 commits
+- mm-unstable: 17 -> 16 commits
+  - series: 1 (11) -> 1 (13)
+    - no role, nobody: 5 -> 5 commits (no change)
+    - no role, no role : 10 -> 10 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
+    - maintainer, nobody: 1 -> 0 commits
+  - changed commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 806a99d4e0f3 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
+        - Authored by no role player, reviewed by no role player
+        - added "[akpm@linux-foundation.org: fix kerneldoc]"
+        - added "[akpm@linux-foundation.org: add comments, per Lorenzo]"
+        - added "Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer"
+        - added "Closes: : https://lore.kernel.org/e7911812-9b99-4f94-be6b-597bf202ffeb@infradead.org"
+        - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
+        - Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
+      - e5276bf10ead "tools/testing/selftests/mm: test anonymous page offset merge behaviour (15/20)"
+        - Authored by no role player, reviewed by no role player
+        - added "[akpm@linux-foundation.org: tweak comment, per David]"
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-16-ab318a350404@kernel.org
+  - dropped commits
     - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
       - 1c0ee005235e "tools-testing-selftests-mm-test-anonymous-page-offset-merge-behaviour-fix (18/20)"
         - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - f6c59d4872e2 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-      - 0d29569aa554 "mm: introduce linear_anon_page_index() (4/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org
-      - ac3975202f7e "mm/vma: fix self-merge check in copy_vma() (8/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-7-ab318a350404@kernel.org
-      - b3c43b5dfd00 "tools/testing/vma: add tests for copy_vma() self-merge (9/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-8-ab318a350404@kernel.org
-      - 944002c00e95 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (15/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
-      - 81a47b74bfe8 "tools/testing/vma: expand VMA merge tests to assert anon pgoff (16/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-15-ab318a350404@kernel.org
-      - 0bfa35709a1a "tools/testing/selftests/mm: test anonymous page offset merge behaviour (17/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-16-ab318a350404@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

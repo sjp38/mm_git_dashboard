@@ -24,13 +24,13 @@
     - f276408a8167 "mm/zsmalloc: fix release order of locks in zs_page_migrate()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260728055333.421080-1-richardycc@google.com
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - b8449732528f "zsmalloc: account for handle size in class lookup"
+    - 63d76961f3bf "zsmalloc: account for handle size in class lookup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260809115518.3791787-1-xialonglong2025@163.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
