@@ -36,18 +36,18 @@
       - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-- mm-unstable: 3 total, 0 (3) series, 0 non-series commits
+- mm-unstable: 3 total, 0 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-      - f8681dc38ad3 "mm: introduce linear_anon_page_index()" (3/20)
+      - 0d29569aa554 "mm: introduce linear_anon_page_index()" (4/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org
-      - efb6d903a8eb "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (18/20)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
-      - 970a99b22034 "mm/swap: remove SWP_FS_OPS" (5/7)
+    - b1d184e0de2b "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
+      - a5fd1a91db1d "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
 - mm-new: 2 total, 0 (1) series, 1 non-series commits
@@ -55,10 +55,10 @@
     - no role, nobody: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 50a1ec300ff7 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+    - cb2012ccd63e "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
-      - 4b0da58217a0 "mm/swap: move swap_ops into file systems for file system-based swap" (2/3)
+      - f40f367f0741 "mm/swap: move swap_ops into file systems for file system-based swap" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

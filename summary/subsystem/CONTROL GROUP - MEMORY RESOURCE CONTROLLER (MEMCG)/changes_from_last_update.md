@@ -2,11 +2,20 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - new commits
+    - 3d528591c587 "mm: memcg-v1: fix memsw and TCP failcnt accounting"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260811030843.109104-1-guopeng.zhang@linux.dev
+  - changed commits
+    - f33f3b940a44 "memcg: keep folio's objcg same as its node"
+      - Authored by a maintainer, reviewed by a reviewer
+      - added "Acked-by: Qi Zheng <qi.zheng@linux.dev>"
+      - Link: https://lore.kernel.org/20260807142406.443516-1-shakeel.butt@linux.dev
+  - dropped commits
     - 1169f6fdf759 "mm: memcg-v1: fix memory.memsw.failcnt accounting"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260810074247.52747-1-guopeng.zhang@linux.dev

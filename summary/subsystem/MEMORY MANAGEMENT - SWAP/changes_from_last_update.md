@@ -1,8 +1,13 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - reviewer, maintainer: 0 -> 1 commits
+  - new commits
+    - 7211aeb8e88a "mm, swap: don't free a hibernation slot that is in the swap cache"
+      - Authored by a reviewer, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260811132209.2862708-2-youngjun.park@lge.com
 - mm-stable: 10 -> 10 commits (no change)
   - series: 2 (6) -> 2 (6) (no change)
     - no role, no role : 3 -> 3 commits (no change)
@@ -11,26 +16,22 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
 - mm-unstable: 13 -> 13 commits (no change)
   - series: 2 (9) -> 2 (9) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, nobody: 4 -> 3 commits
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 4 commits
-  - series: 0 (0) -> 1 (3)
+  - changed commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 45fe327c2924 "mm/huge_memory: update remove_migration_pmd() to accept a folio (13/20)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org
+- mm-new: 4 -> 4 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 3 commits
-  - new commits
-    - series "swap_ops updates", v2. (3)
-      - 6bb26b8ecc2b "mm/swap: revert to single-folio writes for synchronous swap devices (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260723054622.3460249-1-hch@lst.de
-        - Link: https://lore.kernel.org/20260723054622.3460249-2-hch@lst.de
-      - 97e5a14c705e "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
-      - 4b0da58217a0 "mm/swap: move swap_ops into file systems for file system-based swap (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
+    - no role, maintainer: 3 -> 3 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -11,12 +11,15 @@
   - series: 3 (9) -> 3 (9) (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - 8f771e2601d2 "zram: fix slot lock bit position on big-endian 64-bit"
-      - Authored by no role player, reviewed by nobody
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 7bb358a0087c "zram: fix slot lock bit position on big-endian 64-bit"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Sergey Senozhatsky <senozhatsky@chromium.org>"
+      - dropped "Cc: Sergey Senozhatsky <senozhatsky@chromium.org>"
       - Link: https://lore.kernel.org/20260810202241.2436603-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

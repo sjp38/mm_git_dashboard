@@ -9,14 +9,16 @@
   - series: 1 (3) -> 1 (3) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, maintainer: 0 -> 1 commits
+- mm-new: 1 -> 3 commits
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 0 -> 2 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - series "swap_ops updates", v2. (3)
-      - 97e5a14c705e "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
+    - 4e228e45a134 "selftests/cgroup: test_zswap: skip test_no_kmem_bypass if debugfs is unavailable"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260811051434.3805648-1-wfelipe@google.com
+    - 79bec91e8dde "selftests-cgroup-test_zswap-skip-test_no_kmem_bypass-if-debugfs-is-unavailable-fix"
+      - Authored by no role player, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

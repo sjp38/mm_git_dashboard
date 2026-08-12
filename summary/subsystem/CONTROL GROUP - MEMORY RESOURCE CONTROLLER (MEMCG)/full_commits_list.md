@@ -11,12 +11,12 @@
     - no role, maintainer: 1 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-    - eb870e1f9cfd "memcg: keep folio's objcg same as its node"
+    - f33f3b940a44 "memcg: keep folio's objcg same as its node"
       - Authored by a maintainer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260807142406.443516-1-shakeel.butt@linux.dev
-    - 1169f6fdf759 "mm: memcg-v1: fix memory.memsw.failcnt accounting"
+    - 3d528591c587 "mm: memcg-v1: fix memsw and TCP failcnt accounting"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260810074247.52747-1-guopeng.zhang@linux.dev
+      - Link: https://lore.kernel.org/20260811030843.109104-1-guopeng.zhang@linux.dev
 - mm-stable: 14 total, 1 (4) series, 10 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
@@ -75,30 +75,30 @@
     - maintainer, maintainer: 1 commits
   - full commits list
     - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2 commits)
-      - 2c59bca35148 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
+      - 2a36f8eaca36 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev
     - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3 commits)
-      - eed6d53be0a3 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/3)
+      - 83f839ae92b1 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev
         - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
-      - f8d8c7f6691f "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
+      - 79baaa2d4679 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
-      - 62604a69b75a "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
+      - 9a7ea3e069b3 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
-    - 73cec1c2ab7e "mm: memcg: stop reclaim when a limit update is superseded"
+    - 01555e3f7259 "mm: memcg: stop reclaim when a limit update is superseded"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260724021805.1234583-1-guopeng.zhang@linux.dev
-    - 6499f993fe07 "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
+    - 0b9d5af5234a "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260729024612.3369005-1-shakeel.butt@linux.dev
       - Link: https://lore.kernel.org/7a4e5591f45df455e6a485fc5400989569d3d22d.camel@surriel.com/ [1]
-    - 037499244ef8 "mm: add some missing includes to mm-local headers"
+    - bc154f66c48c "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,10 +1,27 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
-  - new commits
+    - no role, nobody: 2 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 83920a2a181e "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com"
+      - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
+      - added "Reviewed-by: Muchun Song <muchun.song@linux.dev>"
+      - added "Cc: Rik van Riel <riel@surriel.com>"
+      - added "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - added "Cc: SeongJae Park <sj@kernel.org>"
+      - added "Cc: Michal Hocko <mhocko@suse.com>"
+      - added "Cc: Vlastimil Babka <vbabka@suse.cz>"
+      - dropped "Link: https://lore.kernel.org/20260726072935.3513996-1-souravpanda@google.com"
+      - dropped "Cc: Usama Arif <usamaarif642@gmail.com>"
+      - dropped "Cc: Anshuman Khandual <anshuman.khandual@arm.com>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+      - Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com
+  - dropped commits
     - 630b3dbd8071 "mm-hugetlb_cma-fix-null-nodemask-dereference-in-hugetlb_cma_alloc_frozen_folio-v5"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260809043250.2917406-1-souravpanda@google.com
@@ -18,9 +35,16 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-unstable: 5 -> 5 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 2 -> 3 commits
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - f6c59d4872e2 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

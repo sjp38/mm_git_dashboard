@@ -12,7 +12,13 @@
       - 27c32e553834 "mm/ptdump: always stabilise against page table freeing using init_mm" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-4-8cc77dcc0018@kernel.org
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 085c6197b501 "mm/pagewalk: fix stale walk->action escaping walk_pmd_range()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260811161949.3879321-2-imv4bel@gmail.com
 - mm-stable: 81 total, 11 (75) series, 6 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
@@ -305,98 +311,101 @@
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lore.kernel.org/DK7NM9RPUJOD.11PNJJ5N2OBED@linux.dev
         - Link: https://lore.kernel.org/20260722150006.3848560-5-hannes@cmpxchg.org
-- mm-unstable: 24 total, 3 (16) series, 8 non-series commits
+- mm-unstable: 25 total, 3 (16) series, 9 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 7 commits
-    - no role, no role : 9 commits
+    - no role, nobody: 4 commits
+    - no role, no role : 12 commits
     - no role, reviewer: 2 commits
     - no role, maintainer: 5 commits
     - maintainer, nobody: 1 commits
+    - maintainer, no role : 1 commits
   - full commits list
-    - 2d2974ac22d7 "mm/kconfig: drop redundant memory hotplug dependencies"
+    - 82b2c135ba42 "mm/kconfig: drop redundant memory hotplug dependencies"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260707090331.52971-1-kaitao.cheng@linux.dev
-    - 50eb2201e6c6 "mm: standardize printing for pgtable entries"
+    - 847baab729de "mm: standardize printing for pgtable entries"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260709044334.1741263-1-anshuman.khandual@arm.com
-    - ca1482f1851c "mm/kconfig: drop redundant dependency wrappers"
+    - 6197f68f160f "mm/kconfig: drop redundant dependency wrappers"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260712093326.8313-1-kaitao.cheng@linux.dev
     - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20 commits)
-      - 6d890a59c567 "mm/vma: introduce VMA anon page offset field and add helpers" (0/20)
+      - 4ffb7c79e977 "mm/vma: introduce VMA anon page offset field and add helpers" (0/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-0-ab318a350404@kernel.org
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-1-ab318a350404@kernel.org
-      - 119ad06da5de "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
-        - Authored by no role player, reviewed by nobody
+      - f6c59d4872e2 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-      - 46a5c37c63a5 "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix" (2/20)
+      - 9d6a345b90a3 "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix" (2/20)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
-      - f8681dc38ad3 "mm: introduce linear_anon_page_index()" (3/20)
+      - e3d480b62a5e "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix-fix" (3/20)
+        - Authored by a maintainer, reviewed by no role player
+      - 0d29569aa554 "mm: introduce linear_anon_page_index()" (4/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org
-      - b82c32586aa0 "mm: abstract vma_address() and introduce vma_anon_address()" (4/20)
+      - 67479eda0e87 "mm: abstract vma_address() and introduce vma_anon_address()" (5/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-4-ab318a350404@kernel.org
-      - de5f9c714a04 "mm: update print_bad_page_map() to show anon index if appropriate" (5/20)
+      - 4c1cc15091f0 "mm: update print_bad_page_map() to show anon index if appropriate" (6/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-5-ab318a350404@kernel.org
-      - 338146f7b89e "mm: introduce and use vma_filebacked_address()" (6/20)
+      - a419bd7a7926 "mm: introduce and use vma_filebacked_address()" (7/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org
-      - 44b583e888f3 "mm: clean up vma_address_end()" (11/20)
-        - Authored by no role player, reviewed by nobody
+      - 196f7b649250 "mm: clean up vma_address_end()" (12/20)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-11-ab318a350404@kernel.org
-      - 57ccc473bf73 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (14/20)
-        - Authored by no role player, reviewed by nobody
+      - 944002c00e95 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (15/20)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
-      - 131fdd4befbe "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous" (17/20)
+      - 5e7ad30b6d94 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous" (19/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-17-ab318a350404@kernel.org
-      - efb6d903a8eb "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (18/20)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
+    - b1d184e0de2b "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
     - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3 commits)
-      - eed6d53be0a3 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/3)
+      - 83f839ae92b1 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev
         - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
-      - f8d8c7f6691f "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
+      - 79baaa2d4679 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
-      - 62604a69b75a "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
+      - 9a7ea3e069b3 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
-    - 470b93d2363b "mm/sparse: correct init section annotations"
+    - 917d2b69bfa8 "mm/sparse: correct init section annotations"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260731164758.1210668-1-ekffu200098@gmail.com
-    - 2019f1e4adf5 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
+    - 2ef568c09614 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
-    - a4a574afa6a7 "mm: use a folio in the softleaf_is_device_private path"
+    - 01492d8ca886 "mm: use a folio in the softleaf_is_device_private path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260803031554.30421-1-hongfu.li@linux.dev
     - series "mm/page_ext: remove pgdat_page_ext_init()", v2. (2 commits)
-      - 512c0dfed4e0 "mm/Kconfig: make FLATMEM depend on !NUMA" (0/2)
+      - 0665170f45fa "mm/Kconfig: make FLATMEM depend on !NUMA" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260804151145.3419768-1-ekffu200098@gmail.com
         - Link: https://lore.kernel.org/20260804151145.3419768-2-ekffu200098@gmail.com
-    - 062f178eaea7 "mm/sparse: keep mem_section_usage_size() internal"
+    - a24c8903d514 "mm/sparse: keep mem_section_usage_size() internal"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260805022536.1206575-1-songmuchun@bytedance.com
-    - e2c0919aa49a "drivers/base, mm: move arch_numa.c to mm/"
+    - 75a3df9112f9 "drivers/base, mm: move arch_numa.c to mm/"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
-      - 3adee2580455 "mm/vmstat: add NRSWP{IN,OUT} counters" (6/7)
+      - 77bbb2788068 "mm/vmstat: add NRSWP{IN,OUT} counters" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-8-hch@lst.de
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 50a1ec300ff7 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+    - cb2012ccd63e "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
 - mm-nonmm-stable: 1 total, 0 (0) series, 1 non-series commits

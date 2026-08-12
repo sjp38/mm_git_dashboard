@@ -90,22 +90,22 @@
       - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
 - mm-unstable: 5 total, 0 (3) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
+    - no role, no role : 3 commits
     - no role, reviewer: 2 commits
   - full commits list
-    - bcc2088310f3 "mm: mempolicy: fix automatic numa balancing for shmem"
+    - 0179e2bd60ab "mm: mempolicy: fix automatic numa balancing for shmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
-      - 119ad06da5de "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
-        - Authored by no role player, reviewed by nobody
+      - f6c59d4872e2 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-      - 315b420fdb97 "mm/huge_memory: update remove_migration_pmd() to accept a folio" (12/20)
-        - Authored by no role player, reviewed by nobody
+      - 45fe327c2924 "mm/huge_memory: update remove_migration_pmd() to accept a folio" (13/20)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org
-      - f535162d7629 "mm/migrate: calculate large folio page index using PFN" (13/20)
-        - Authored by no role player, reviewed by nobody
+      - 46e81a4ff02f "mm/migrate: calculate large folio page index using PFN" (14/20)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-13-ab318a350404@kernel.org
-    - 082d3ba43522 "mm/migrate_device: clear stale mapping after freeing swapcache"
+    - d7f9c4be8e12 "mm/migrate_device: clear stale mapping after freeing swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260728062832.1107127-1-arvind.yadav@intel.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

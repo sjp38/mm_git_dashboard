@@ -12,17 +12,17 @@
         - Link: https://lore.kernel.org/20260623114743.4565-2-igorpetindev@gmail.com
 - mm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 4c7e58e0af1d "kasan: fix cache shrink race with CPU hotplug"
-      - Authored by no role player, reviewed by nobody
+    - 75991802e2c7 "kasan: fix cache shrink race with CPU hotplug"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260808031459.3032812-1-sh_def@163.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 8271fc3df939 "kasan: avoid unnecessary quarantine lock cycling"
+    - 81542d867042 "kasan: fix quarantine_size accounting during cache removal"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260808191230.3345930-2-sh_def@163.com
+      - Link: https://lore.kernel.org/20260811073332.1351893-1-sh_def@163.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
