@@ -7,18 +7,12 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 11 -> 12 commits
+- mm-unstable: 12 -> 12 commits (no change)
   - series: 3 (9) -> 3 (9) (no change)
-    - no role, maintainer: 7 -> 8 commits
+    - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
-  - changed commits
-    - 0fe58be3c08e "zram: fix slot lock bit position on big-endian 64-bit"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260810202241.2436603-1-devnexen@gmail.com
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

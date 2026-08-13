@@ -90,17 +90,17 @@
     - no role, no role : 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - a5fa6abf9540 "mm: introduce and use vma_filebacked_address()" (5/20)
+      - 549154bf186f "mm: introduce and use vma_filebacked_address()" (5/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org
-      - 054959f3cd9e "mm/rmap: track whether the page VMA mapped pgoff is anonymous" (9/20)
+      - 449e4cc8de3e "mm/rmap: track whether the page VMA mapped pgoff is anonymous" (9/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-10-ab318a350404@kernel.org
-      - 67c1a77ac10c "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
+      - e492a337a90e "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
-      - b29e847aad2f "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
+      - 2df7f5b3c7c6 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com

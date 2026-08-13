@@ -20,16 +20,43 @@
     - no role, reviewer: 7 -> 7 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
   - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 806a99d4e0f3 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "[akpm@linux-foundation.org: add comments, per Lorenzo]"
-        - added "[akpm@linux-foundation.org: fix kerneldoc]"
-        - added "Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer"
-        - added "Closes: : https://lore.kernel.org/e7911812-9b99-4f94-be6b-597bf202ffeb@infradead.org"
-        - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
-        - Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
+    - series "mm/khugepaged: several cleanups", v4. (7)
+      - ff7f47939719 "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan() (0/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-0-ddac39d61c4a@linux.dev
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-1-ddac39d61c4a@linux.dev
+        - Link: https://lore.kernel.org/all/20260605161422.213817-1-npache@redhat.com/ [1]
+        - Link: https://lore.kernel.org/all/20251008043748.45554-1-lance.yang@linux.dev/ [2]
+      - 9d403ff00d79 "mm/khugepaged: extract reference check into folio_pte_referenced() helper (1/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-2-ddac39d61c4a@linux.dev
+      - edbe980d50b8 "mm/khugepaged: introduce a count_collapse_event() helper (2/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-3-ddac39d61c4a@linux.dev
+      - f21a0d22201d "mm/khugepaged: fix outdated comments (3/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-4-ddac39d61c4a@linux.dev
+      - 7eecaf8520ec "mm/khugepaged: refactor the PTE state checks into a helper (4/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-5-ddac39d61c4a@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/20251008043748.45554-1-lance.yang@linux.dev/ [1]
+      - be4b063fba41 "mm/khugepaged: unmap pte before releasing vma write lock (5/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-6-ddac39d61c4a@linux.dev
+      - 76c35665d157 "mm: Documentation: clarify where the mTHP stats live (6/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Pedro Falcato <pfalcato@suse.de> "
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-7-ddac39d61c4a@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

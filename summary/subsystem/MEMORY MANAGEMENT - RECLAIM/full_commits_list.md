@@ -10,7 +10,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 826f00bd724d "mm/vmscan: report RCU-tasks quiescent states in shrink_lruvec()"
+    - 92ad4e777a66 "mm/vmscan: report RCU-tasks quiescent states in shrink_lruvec()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
       - Link: https://lore.kernel.org/20260810-rcu_task_shrink_lruvec-v1-1-4d9f7d5251cb@debian.org
@@ -57,41 +57,51 @@
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260724033435.2573323-5-ridong.chen@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260717113300.214717-1-ridong.chen@linux.dev [1]
-- mm-unstable: 9 total, 1 (9) series, 0 non-series commits
+- mm-unstable: 10 total, 1 (9) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, no role : 1 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 7 commits
   - full commits list
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
-      - b29e847aad2f "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
+      - 2df7f5b3c7c6 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
-      - b6bb6dda6e26 "mm: vmscan: add a helper to identify file-backed executable folios" (1/3)
+      - 6807d692ad57 "mm: vmscan: add a helper to identify file-backed executable folios" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/2ee74f9f98ac45a2f0db0ceb018e086bdb671d17.1784509721.git.baolin.wang@linux.alibaba.com
-      - 73bee92fec95 "mm: mglru: promote mapped executable folios after first usage" (2/3)
+      - 02540a8cec65 "mm: mglru: promote mapped executable folios after first usage" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/f57d94b1d85bb3d620d89bb739128f0d929bf9c6.1784509721.git.baolin.wang@linux.alibaba.com
-      - 2bfba5fe0339 "mm: vmscan: fix node reclaim ignoring swappiness parameter" (1/2)
+      - 34f1020471f2 "mm: vmscan: fix node reclaim ignoring swappiness parameter" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723032434.2016749-3-ridong.chen@linux.dev
-      - 75a9740988c1 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
+      - 955854a2c4f2 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
-      - 822f30fe9687 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
+      - ade83dd37cd4 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
-      - 5e38bbdb3b1b "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - eabf592d49ec "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - 728a4ead02a2 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - 3f855354c085 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-      - 34345e3dc0b8 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
+      - 8c4a140600ac "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+    - 279f564814cc "mm/mglru: Fix young counter undercount for large folios"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - reviewer, nobody: 1 commits
+  - full commits list
+    - 043569d81227 "mm/mglru: fix and remove redundant unevictable folio handling"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260812-mglru-mlock-fix-v2-1-a3fec5853c08@tencent.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

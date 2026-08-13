@@ -11,21 +11,23 @@
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 9 -> 10 commits
-  - series: 1 (8) -> 1 (9)
+- mm-unstable: 10 -> 11 commits
+  - series: 1 (9) -> 1 (9) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 6 -> 7 commits
-  - changed commits
-    - series "swap_ops updates", v2. (3)
-      - 34345e3dc0b8 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, maintainer: 1 -> 0 commits
+    - no role, maintainer: 7 -> 7 commits (no change)
+  - new commits
+    - 279f564814cc "mm/mglru: Fix young counter undercount for large folios"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - reviewer, nobody: 0 -> 1 commits
+  - new commits
+    - 043569d81227 "mm/mglru: fix and remove redundant unevictable folio handling"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260812-mglru-mlock-fix-v2-1-a3fec5853c08@tencent.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -9,20 +9,14 @@
     - reviewer, no role : 1 -> 1 commits (no change)
 - mm-unstable: 5 -> 5 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 2 -> 3 commits
     - no role, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 806a99d4e0f3 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "[akpm@linux-foundation.org: fix kerneldoc]"
-        - added "[akpm@linux-foundation.org: add comments, per Lorenzo]"
-        - added "Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer"
-        - added "Closes: : https://lore.kernel.org/e7911812-9b99-4f94-be6b-597bf202ffeb@infradead.org"
-        - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
-        - Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
+    - 8050d3cd7261 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Fuad Tabba <fuad.tabba@linux.dev>"
+      - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)

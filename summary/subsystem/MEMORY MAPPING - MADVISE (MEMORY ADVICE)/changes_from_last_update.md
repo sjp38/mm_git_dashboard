@@ -7,19 +7,12 @@
   - series: 0 (4) -> 0 (4) (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 1 -> 2 commits
-  - series: 0 (1) -> 0 (2)
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "swap_ops updates", v2. (3)
-      - 34345e3dc0b8 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, maintainer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

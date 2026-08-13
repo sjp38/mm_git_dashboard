@@ -14,33 +14,33 @@
       - Link: https://lore.kernel.org/23557F4CB8CF36FF+20260724074603.1479243-1-zhaozhengzhuo@uniontech.com
 - mm-unstable: 5 total, 1 (2) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 2 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 3 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 806a99d4e0f3 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
+      - 67fc9105b79d "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
         - Authored by no role player, reviewed by no role player
         - Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-    - 6a4e00919d1d "mm/gup: fix always draining LRU caches in collect_longterm_unpinnable_folios()"
+    - 819b7beac106 "mm/gup: fix always draining LRU caches in collect_longterm_unpinnable_folios()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260731-check_and_migrate_movable_folios-v1-1-e0002d7b791e@kernel.org
-    - 0129ba2a39bf "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
-      - Authored by no role player, reviewed by nobody
+    - 8050d3cd7261 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
     - series "selftests/mm: use pattern matching in .gitignore", v4. (2 commits)
-      - c147af60c27c "selftests/mm: rename local_config.h to local_config.h_gen" (0/2)
+      - 50c701991a98 "selftests/mm: rename local_config.h to local_config.h_gen" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260803221732.3651981-1-pratmal@google.com
         - Link: https://lore.kernel.org/20260803221732.3651981-2-pratmal@google.com
-    - 08a3e2778c97 "mm/gup_test: keep longterm pin state per file"
+    - 4cd609dc485f "mm/gup_test: keep longterm pin state per file"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260810-gup_test_data-v1-1-fb1d41be5bb4@kernel.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - cd9bcdd26e5f "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 6a15526397ad "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

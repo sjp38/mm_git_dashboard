@@ -5,31 +5,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 8 commits
-  - series: 1 (3) -> 1 (4)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 1 commits
+- mm-unstable: 8 -> 8 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 4 -> 5 commits
+    - no role, maintainer: 5 -> 5 commits (no change)
   - changed commits
-    - series "swap_ops updates", v2. (3)
-      - 34345e3dc0b8 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
-    - 23a1b92948fa "selftests/cgroup: test_zswap: skip test_no_kmem_bypass if debugfs is unavailable"
+    - 92c560e396ad "selftests/cgroup: test_zswap: skip test_no_kmem_bypass if debugfs is unavailable"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
-      - dropped "Cc: Anshuman Khandual <anshuman.khandual@arm.com>"
+      - added "Link: https://lore.kernel.org/20260812050848.848882-1-wfelipe@google.com"
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - Link: https://lore.kernel.org/20260812050848.848882-1-wfelipe@google.com
       - Link: https://lore.kernel.org/20260811051434.3805648-1-wfelipe@google.com
-    - 102d38f88828 "selftests-cgroup-test_zswap-skip-test_no_kmem_bypass-if-debugfs-is-unavailable-fix"
+    - 250ee0a38972 "selftests-cgroup-test_zswap-skip-test_no_kmem_bypass-if-debugfs-is-unavailable-fix"
       - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-- mm-new: 3 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+      - added "Cc: SJ Park <sj@kernel.org>"
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

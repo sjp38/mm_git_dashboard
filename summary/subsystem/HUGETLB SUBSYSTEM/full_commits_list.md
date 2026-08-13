@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - af69cead015a "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+    - 264073cff1af "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com
 - mm-stable: 36 total, 4 (32) series, 4 non-series commits
@@ -145,21 +145,21 @@
     - no role, no role : 3 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 8db7f437b888 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+    - 5f2dbcc1834b "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
-      - 806a99d4e0f3 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
+      - 67fc9105b79d "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/20)
         - Authored by no role player, reviewed by no role player
         - Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-    - 7f2476a7985e "hugetlb: only adjust reservation during unmapping if mapcount is 0"
+    - 29403105e0db "hugetlb: only adjust reservation during unmapping if mapcount is 0"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
       - Link: https://lore.kernel.org/amkC_1Ya6OiUoiLZ@bender.morinfr.org
-    - 2cf53db7ef8e "mm: add some missing includes to mm-local headers"
+    - d9b833e24764 "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-    - 0bca41561c49 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
+    - f0d20771a24b "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260807040003.2156630-1-souravpanda@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

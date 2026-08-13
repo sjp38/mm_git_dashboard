@@ -12,47 +12,38 @@
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-unstable: 30 -> 27 commits
-  - series: 4 (17) -> 4 (17) (no change)
-    - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 11 -> 11 commits (no change)
+- mm-unstable: 27 -> 29 commits
+  - series: 4 (17) -> 4 (18)
+    - no role, nobody: 5 -> 6 commits
+    - no role, no role : 11 -> 12 commits
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 3 -> 0 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - e5276bf10ead "tools/testing/selftests/mm: test anonymous page offset merge behaviour (15/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "[akpm@linux-foundation.org: tweak comment, per David]"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-16-ab318a350404@kernel.org
-    - 028329a24fe0 "selftests/mm: use pattern matching in .gitignore"
-      - Authored by no role player, reviewed by a reviewer
-      - added "[akpm@linux-foundation.org: fix botched merge resolution]"
-      - Link: https://lore.kernel.org/20260803221732.3651981-3-pratmal@google.com
-    - series "alloc_tag: introduce IOCTL-based filtering for MAP", v8. (6)
-      - efd66f190521 "alloc_tag: add ioctl to /proc/allocinfo (0/6)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "[akpm@linux-foundation.org: include compat.h, per Suren]"
-        - added "Closes: : https://lore.kernel.org/oe-kbuild-all/202607091820.qbjlGhKK-lkp@intel.com/"
-        - Link: https://lore.kernel.org/cover.1783532853.git.abhishekbapat@google.com
-        - Link: https://lore.kernel.org/15596de2607ef13e7c77c6d74763f4ae992ec475.1783532853.git.abhishekbapat@google.com
-    - 137d98a99ac2 "selftests/mm: fix soft-dirty kselftest supported check"
+  - new commits
+    - f9ca2fa9ef7e "Docs/mm: fix outdated "radix tree" in page_migration"
       - Authored by no role player, reviewed by nobody
-      - added "[akpm@linux-foundation.org: remove comment, per Sashiko]"
-      - added "Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com"
-      - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
-      - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
-  - dropped commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 1c0ee005235e "tools-testing-selftests-mm-test-anonymous-page-offset-merge-behaviour-fix (18/20)"
-        - Authored by a maintainer, reviewed by nobody
-    - 4542070da7d4 "selftests-mm-use-pattern-matching-in-gitignore-fix"
-      - Authored by a maintainer, reviewed by nobody
-    - 1d3d79d5dae0 "selftests-mm-fix-soft-dirty-kselftest-supported-check-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
+      - Link: https://lore.kernel.org/20260812075739.325441-1-husong@kylinos.cn
+  - changed commits
+    - 90c6ea0d6498 "selftests/mm: thuge-gen: fix test_shmget() for PAGE_SIZE check"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260812-selftests-thuge-gen-fix-v2-1-9adaa693e73b@kernel.org"
+      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
+      - dropped "Link: https://lore.kernel.org/20260809-selftests-thuge-gen-fix-v1-1-1919f4b3d12f@kernel.org"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260812-selftests-thuge-gen-fix-v2-1-9adaa693e73b@kernel.org
+    - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4)
+      - 0edabad981fe "selftests: mm: test kmemleak's N-consecutive-scan leak confirmation (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
+        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
+        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-4-5b93b1131089@debian.org
+    - series "mm/khugepaged: several cleanups", v4. (7)
+      - 76c35665d157 "mm: Documentation: clarify where the mTHP stats live (6/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Pedro Falcato <pfalcato@suse.de> "
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-7-ddac39d61c4a@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

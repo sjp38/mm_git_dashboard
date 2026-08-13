@@ -42,19 +42,19 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 2f6b486aa336 "mm: introduce linear_anon_page_index()" (2/20)
+      - 1d666edaac6f "mm: introduce linear_anon_page_index()" (2/20)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org
-      - 7a6fac5a73a0 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (17/20)
+      - 0ab148800027 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (17/20)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
-      - 728a4ead02a2 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - 3f855354c085 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-    - e2dbe6f19306 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+    - b15ad487e6f5 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
-      - e780acd19d82 "mm/swap: move swap_ops into file systems for file system-based swap" (2/3)
+      - 630ab233d8d9 "mm/swap: move swap_ops into file systems for file system-based swap" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

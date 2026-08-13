@@ -6,12 +6,17 @@
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
-- mm-hotfixes-unstable: 6 -> 6 commits (no change)
+- mm-hotfixes-unstable: 6 -> 7 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - ce147763995b "memcg: make the v1 soft limit knob inert"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
 - mm-stable: 355 -> 355 commits (no change)
   - series: 49 (299) -> 49 (299) (no change)
     - no role, nobody: 13 -> 13 commits (no change)
@@ -25,89 +30,82 @@
     - maintainer, nobody: 91 -> 91 commits (no change)
     - maintainer, no role : 10 -> 10 commits (no change)
     - maintainer, reviewer: 11 -> 11 commits (no change)
-- mm-unstable: 89 -> 92 commits
-  - series: 12 (49) -> 13 (51)
-    - no role, nobody: 11 -> 11 commits (no change)
-    - no role, no role : 26 -> 26 commits (no change)
+- mm-unstable: 92 -> 93 commits
+  - series: 13 (51) -> 13 (51) (no change)
+    - no role, nobody: 11 -> 9 commits
+    - no role, no role : 26 -> 27 commits
     - no role, reviewer: 18 -> 18 commits (no change)
-    - no role, maintainer: 27 -> 32 commits
+    - no role, maintainer: 32 -> 34 commits
     - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 2 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
-    - maintainer, maintainer: 2 -> 1 commits
-  - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 806a99d4e0f3 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "[akpm@linux-foundation.org: fix kerneldoc]"
-        - added "[akpm@linux-foundation.org: add comments, per Lorenzo]"
-        - added "Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer"
-        - added "Closes: : https://lore.kernel.org/e7911812-9b99-4f94-be6b-597bf202ffeb@infradead.org"
-        - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
-        - Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-    - c0f8e574daa8 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 279f564814cc "mm/mglru: Fix young counter undercount for large folios"
       - Authored by no role player, reviewed by no role player
-      - added "[akpm@linux-foundation.org: add comment, per hannes]"
-      - added "Link: : https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org"
-      - Link: : https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org
-      - Link: https://lore.kernel.org/linux-mm/tencent_FFD4F4D728AAE8A8AE0AF277A59854A29A06@qq.com/
-      - Link: https://lore.kernel.org/tencent_A860C873956A52E26AD8D309A308A241BA08@qq.com
-    - series "alloc_tag: introduce IOCTL-based filtering for MAP", v8. (6)
-      - efd66f190521 "alloc_tag: add ioctl to /proc/allocinfo (0/6)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "[akpm@linux-foundation.org: include compat.h, per Suren]"
-        - added "Closes: : https://lore.kernel.org/oe-kbuild-all/202607091820.qbjlGhKK-lkp@intel.com/"
-        - Link: https://lore.kernel.org/cover.1783532853.git.abhishekbapat@google.com
-        - Link: https://lore.kernel.org/15596de2607ef13e7c77c6d74763f4ae992ec475.1783532853.git.abhishekbapat@google.com
-      - 73dd90075ccb "alloc_tag: add accuracy based filtering to ioctl (3/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "[abhishekbapat@google.com: move `inaccurate` filtering criteria from `struct allocinfo_tag` to `struct allocinfo_filter`]"
-        - added "Link: : https://lore.kernel.org/e4e49ec4a5960292aeeb9e196526c18dc95228a2.1785867739.git.abhishekbapat@google.com"
-        - Link: : https://lore.kernel.org/e4e49ec4a5960292aeeb9e196526c18dc95228a2.1785867739.git.abhishekbapat@google.com
-        - Link: https://lore.kernel.org/396a5e4bc3b2990223ab355f2cd3ceb6aa15499e.1783532853.git.abhishekbapat@google.com
-    - e2dbe6f19306 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
-    - 63d76961f3bf "zsmalloc: account for handle size in class lookup"
+      - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
+  - changed commits
+    - 741a6458a7e1 "mm/kmemleak: report RCU-tasks quiescent states during the scan"
       - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260809115518.3791787-1-xialonglong2025@163.com
-    - series "swap_ops updates", v2. (3)
-      - 281ed2c49606 "mm/swap: revert to single-folio writes for synchronous swap devices (0/3)"
+      - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
+      - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
+      - Link: https://lore.kernel.org/20260720-kmemleak_rcu_task-v1-1-5b460ade777d@debian.org
+    - 8050d3cd7261 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Fuad Tabba <fuad.tabba@linux.dev>"
+      - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
+    - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4)
+      - b20da26a220f "mm: kmemleak: factor leak confirmation into a helper (2/4)"
         - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723054622.3460249-1-hch@lst.de
-        - Link: https://lore.kernel.org/20260723054622.3460249-2-hch@lst.de
-      - 34345e3dc0b8 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
-      - e780acd19d82 "mm/swap: move swap_ops into file systems for file system-based swap (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
-    - ed929b678357 "kasan: fix quarantine_size accounting during cache removal"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260811073332.1351893-1-sh_def@163.com
-  - dropped commits
-    - 727d1c68732d "mm-page_alloc-only-update-lowmem_reserve_ratio-on-sysctl-write-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org
-    - series "alloc_tag: introduce IOCTL-based filtering for MAP", v8. (6)
-      - bfeb02d2b329 "alloc_tag-add-ioctl-to-proc-allocinfo-fix (1/6)"
-        - Authored by a maintainer, reviewed by a maintainer
-      - dc978951a39d "alloc_tag-add-accuracy-based-filtering-to-ioctl-fix (5/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/e4e49ec4a5960292aeeb9e196526c18dc95228a2.1785867739.git.abhishekbapat@google.com
-- mm-new: 10 -> 4 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, nobody: 2 -> 1 commits
+        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
+        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
+        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-3-5b93b1131089@debian.org
+    - series "mm/khugepaged: several cleanups", v4. (7)
+      - ff7f47939719 "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan() (0/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-0-ddac39d61c4a@linux.dev
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-1-ddac39d61c4a@linux.dev
+        - Link: https://lore.kernel.org/all/20260605161422.213817-1-npache@redhat.com/ [1]
+        - Link: https://lore.kernel.org/all/20251008043748.45554-1-lance.yang@linux.dev/ [2]
+      - 9d403ff00d79 "mm/khugepaged: extract reference check into folio_pte_referenced() helper (1/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-2-ddac39d61c4a@linux.dev
+      - edbe980d50b8 "mm/khugepaged: introduce a count_collapse_event() helper (2/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-3-ddac39d61c4a@linux.dev
+      - f21a0d22201d "mm/khugepaged: fix outdated comments (3/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-4-ddac39d61c4a@linux.dev
+      - 7eecaf8520ec "mm/khugepaged: refactor the PTE state checks into a helper (4/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-5-ddac39d61c4a@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/20251008043748.45554-1-lance.yang@linux.dev/ [1]
+      - be4b063fba41 "mm/khugepaged: unmap pte before releasing vma write lock (5/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-6-ddac39d61c4a@linux.dev
+- mm-new: 4 -> 6 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 5 -> 0 commits
+    - reviewer, nobody: 0 -> 1 commits
     - maintainer, nobody: 2 -> 2 commits (no change)
+  - new commits
+    - 043569d81227 "mm/mglru: fix and remove redundant unevictable folio handling"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260812-mglru-mlock-fix-v2-1-a3fec5853c08@tencent.com
+    - a190ad17a1b1 "percpu: drop CONFIG_DEBUG_FORCE_WEAK_PER_CPU"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/178656406317.2437052.7257990869957704195@slm.duckdns.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

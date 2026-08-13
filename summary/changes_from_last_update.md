@@ -6,13 +6,18 @@
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
-- mm-hotfixes-unstable: 12 -> 12 commits (no change)
+- mm-hotfixes-unstable: 12 -> 13 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - ce147763995b "memcg: make the v1 soft limit knob inert"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
 - mm-stable: 500 -> 500 commits (no change)
   - series: 67 (410) -> 67 (410) (no change)
     - no role, nobody: 33 -> 33 commits (no change)
@@ -26,147 +31,126 @@
     - maintainer, nobody: 115 -> 115 commits (no change)
     - maintainer, no role : 20 -> 20 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-unstable: 174 -> 176 commits
-  - series: 20 (110) -> 21 (113)
-    - no role, nobody: 38 -> 39 commits
-    - no role, no role : 56 -> 57 commits
+- mm-unstable: 176 -> 178 commits
+  - series: 21 (113) -> 21 (113) (no change)
+    - no role, nobody: 39 -> 36 commits
+    - no role, no role : 57 -> 61 commits
     - no role, reviewer: 24 -> 24 commits (no change)
-    - no role, maintainer: 37 -> 43 commits
+    - no role, maintainer: 43 -> 45 commits
     - reviewer, reviewer: 4 -> 4 commits (no change)
-    - maintainer, nobody: 10 -> 6 commits
-    - maintainer, no role : 1 -> 0 commits
+    - maintainer, nobody: 6 -> 5 commits
     - maintainer, reviewer: 2 -> 2 commits (no change)
-    - maintainer, maintainer: 2 -> 1 commits
-  - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 806a99d4e0f3 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "[akpm@linux-foundation.org: fix kerneldoc]"
-        - added "[akpm@linux-foundation.org: add comments, per Lorenzo]"
-        - added "Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer"
-        - added "Closes: : https://lore.kernel.org/e7911812-9b99-4f94-be6b-597bf202ffeb@infradead.org"
-        - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
-        - Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org
-      - e5276bf10ead "tools/testing/selftests/mm: test anonymous page offset merge behaviour (15/20)"
-        - Authored by no role player, reviewed by no role player
-        - added "[akpm@linux-foundation.org: tweak comment, per David]"
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-16-ab318a350404@kernel.org
-    - c0f8e574daa8 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 279f564814cc "mm/mglru: Fix young counter undercount for large folios"
       - Authored by no role player, reviewed by no role player
-      - added "[akpm@linux-foundation.org: add comment, per hannes]"
-      - added "Link: : https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org"
-      - Link: : https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org
-      - Link: https://lore.kernel.org/linux-mm/tencent_FFD4F4D728AAE8A8AE0AF277A59854A29A06@qq.com/
-      - Link: https://lore.kernel.org/tencent_A860C873956A52E26AD8D309A308A241BA08@qq.com
-    - 028329a24fe0 "selftests/mm: use pattern matching in .gitignore"
-      - Authored by no role player, reviewed by a reviewer
-      - added "[akpm@linux-foundation.org: fix botched merge resolution]"
-      - Link: https://lore.kernel.org/20260803221732.3651981-3-pratmal@google.com
-    - series "alloc_tag: introduce IOCTL-based filtering for MAP", v8. (6)
-      - efd66f190521 "alloc_tag: add ioctl to /proc/allocinfo (0/6)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "[akpm@linux-foundation.org: include compat.h, per Suren]"
-        - added "Closes: : https://lore.kernel.org/oe-kbuild-all/202607091820.qbjlGhKK-lkp@intel.com/"
-        - Link: https://lore.kernel.org/cover.1783532853.git.abhishekbapat@google.com
-        - Link: https://lore.kernel.org/15596de2607ef13e7c77c6d74763f4ae992ec475.1783532853.git.abhishekbapat@google.com
-      - 73dd90075ccb "alloc_tag: add accuracy based filtering to ioctl (3/6)"
+      - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
+    - 7d226ced24e5 "MAINTAINERS: add drivers/char/mem.c to mm misc, memory mapping sections"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260812-add-drivers-mem-to-mm-maintainers-v1-1-6218b861f4c8@kernel.org
+    - f9ca2fa9ef7e "Docs/mm: fix outdated "radix tree" in page_migration"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260812075739.325441-1-husong@kylinos.cn
+  - changed commits
+    - 90c6ea0d6498 "selftests/mm: thuge-gen: fix test_shmget() for PAGE_SIZE check"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260812-selftests-thuge-gen-fix-v2-1-9adaa693e73b@kernel.org"
+      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
+      - dropped "Link: https://lore.kernel.org/20260809-selftests-thuge-gen-fix-v1-1-1919f4b3d12f@kernel.org"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260812-selftests-thuge-gen-fix-v2-1-9adaa693e73b@kernel.org
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 0854582117fc "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon (18/20)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-19-ab318a350404@kernel.org
+    - 741a6458a7e1 "mm/kmemleak: report RCU-tasks quiescent states during the scan"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
+      - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
+      - Link: https://lore.kernel.org/20260720-kmemleak_rcu_task-v1-1-5b460ade777d@debian.org
+    - 8050d3cd7261 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Fuad Tabba <fuad.tabba@linux.dev>"
+      - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
+    - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4)
+      - b20da26a220f "mm: kmemleak: factor leak confirmation into a helper (2/4)"
         - Authored by no role player, reviewed by a maintainer
-        - added "[abhishekbapat@google.com: move `inaccurate` filtering criteria from `struct allocinfo_tag` to `struct allocinfo_filter`]"
-        - added "Link: : https://lore.kernel.org/e4e49ec4a5960292aeeb9e196526c18dc95228a2.1785867739.git.abhishekbapat@google.com"
-        - Link: : https://lore.kernel.org/e4e49ec4a5960292aeeb9e196526c18dc95228a2.1785867739.git.abhishekbapat@google.com
-        - Link: https://lore.kernel.org/396a5e4bc3b2990223ab355f2cd3ceb6aa15499e.1783532853.git.abhishekbapat@google.com
-      - e4a4473d8f4d "kselftest: alloc_tag: add kselftest for ioctl interface (4/6)"
+        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
+        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
+        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-3-5b93b1131089@debian.org
+      - 0edabad981fe "selftests: mm: test kmemleak's N-consecutive-scan leak confirmation (3/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
+        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
+        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-4-5b93b1131089@debian.org
+    - 92c560e396ad "selftests/cgroup: test_zswap: skip test_no_kmem_bypass if debugfs is unavailable"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260812050848.848882-1-wfelipe@google.com"
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - Link: https://lore.kernel.org/20260812050848.848882-1-wfelipe@google.com
+      - Link: https://lore.kernel.org/20260811051434.3805648-1-wfelipe@google.com
+    - 250ee0a38972 "selftests-cgroup-test_zswap-skip-test_no_kmem_bypass-if-debugfs-is-unavailable-fix"
+      - Authored by no role player, reviewed by nobody
+      - added "Cc: SJ Park <sj@kernel.org>"
+    - series "mm/khugepaged: several cleanups", v4. (7)
+      - ff7f47939719 "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan() (0/7)"
         - Authored by no role player, reviewed by a reviewer
-        - added "[abhishekbapat@google.com: fix a typo in the selftest]"
-        - added "Link: : https://lore.kernel.org/e4e49ec4a5960292aeeb9e196526c18dc95228a2.1785867739.git.abhishekbapat@google.com"
-        - added "Closes: : https://sashiko.dev/#/patchset/cover.1783532853.git.abhishekbapat@google.com"
-        - Link: : https://lore.kernel.org/e4e49ec4a5960292aeeb9e196526c18dc95228a2.1785867739.git.abhishekbapat@google.com
-        - Link: https://lore.kernel.org/e2a3795677a14aeab249758ba570cd5e98402032.1783532853.git.abhishekbapat@google.com
-    - 137d98a99ac2 "selftests/mm: fix soft-dirty kselftest supported check"
-      - Authored by no role player, reviewed by nobody
-      - added "[akpm@linux-foundation.org: remove comment, per Sashiko]"
-      - added "Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com"
-      - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
-      - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
-    - 0fe58be3c08e "zram: fix slot lock bit position on big-endian 64-bit"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260810202241.2436603-1-devnexen@gmail.com
-    - e2dbe6f19306 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
-    - 63d76961f3bf "zsmalloc: account for handle size in class lookup"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260809115518.3791787-1-xialonglong2025@163.com
-    - 42368762f55d "selftests/proc: make proc-maps-race work with READ_IMPLIES_EXEC"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260808200312.6326-1-kmehltretter@gmail.com
-    - series "swap_ops updates", v2. (3)
-      - 281ed2c49606 "mm/swap: revert to single-folio writes for synchronous swap devices (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723054622.3460249-1-hch@lst.de
-        - Link: https://lore.kernel.org/20260723054622.3460249-2-hch@lst.de
-      - 34345e3dc0b8 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
-      - e780acd19d82 "mm/swap: move swap_ops into file systems for file system-based swap (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-0-ddac39d61c4a@linux.dev
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-1-ddac39d61c4a@linux.dev
+        - Link: https://lore.kernel.org/all/20260605161422.213817-1-npache@redhat.com/ [1]
+        - Link: https://lore.kernel.org/all/20251008043748.45554-1-lance.yang@linux.dev/ [2]
+      - 9d403ff00d79 "mm/khugepaged: extract reference check into folio_pte_referenced() helper (1/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-2-ddac39d61c4a@linux.dev
+      - edbe980d50b8 "mm/khugepaged: introduce a count_collapse_event() helper (2/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-3-ddac39d61c4a@linux.dev
+      - f21a0d22201d "mm/khugepaged: fix outdated comments (3/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-4-ddac39d61c4a@linux.dev
+      - 7eecaf8520ec "mm/khugepaged: refactor the PTE state checks into a helper (4/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-5-ddac39d61c4a@linux.dev
+        - Link: https://lore.kernel.org/linux-mm/20251008043748.45554-1-lance.yang@linux.dev/ [1]
+      - be4b063fba41 "mm/khugepaged: unmap pte before releasing vma write lock (5/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-6-ddac39d61c4a@linux.dev
+      - 76c35665d157 "mm: Documentation: clarify where the mTHP stats live (6/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Pedro Falcato <pfalcato@suse.de> "
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-7-ddac39d61c4a@linux.dev
+  - dropped commits
     - fbb292dfcd37 "lib/Kconfig.debug: make DEBUG_FORCE_WEAK_PER_CPU depend on S390||ALPHA"
       - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - ed929b678357 "kasan: fix quarantine_size accounting during cache removal"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260811073332.1351893-1-sh_def@163.com
-    - 23a1b92948fa "selftests/cgroup: test_zswap: skip test_no_kmem_bypass if debugfs is unavailable"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
-      - dropped "Cc: Anshuman Khandual <anshuman.khandual@arm.com>"
-      - Link: https://lore.kernel.org/20260811051434.3805648-1-wfelipe@google.com
-    - 102d38f88828 "selftests-cgroup-test_zswap-skip-test_no_kmem_bypass-if-debugfs-is-unavailable-fix"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-  - dropped commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 9d6a345b90a3 "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix (2/20)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer
-      - e3d480b62a5e "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix-fix (3/20)"
-        - Authored by a maintainer, reviewed by no role player
-      - 1c0ee005235e "tools-testing-selftests-mm-test-anonymous-page-offset-merge-behaviour-fix (18/20)"
-        - Authored by a maintainer, reviewed by nobody
-    - 727d1c68732d "mm-page_alloc-only-update-lowmem_reserve_ratio-on-sysctl-write-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org
-    - 4542070da7d4 "selftests-mm-use-pattern-matching-in-gitignore-fix"
-      - Authored by a maintainer, reviewed by nobody
-    - series "alloc_tag: introduce IOCTL-based filtering for MAP", v8. (6)
-      - bfeb02d2b329 "alloc_tag-add-ioctl-to-proc-allocinfo-fix (1/6)"
-        - Authored by a maintainer, reviewed by a maintainer
-      - dc978951a39d "alloc_tag-add-accuracy-based-filtering-to-ioctl-fix (5/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/e4e49ec4a5960292aeeb9e196526c18dc95228a2.1785867739.git.abhishekbapat@google.com
-    - f4c3b46196ef "kselftest-alloc_tag-add-kselftest-for-ioctl-interface-fix"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/e4e49ec4a5960292aeeb9e196526c18dc95228a2.1785867739.git.abhishekbapat@google.com
-    - 1d3d79d5dae0 "selftests-mm-fix-soft-dirty-kselftest-supported-check-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
-- mm-new: 15 -> 4 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, nobody: 5 -> 1 commits
+- mm-new: 4 -> 7 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 3 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 6 -> 0 commits
-    - maintainer, nobody: 3 -> 2 commits
+    - reviewer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 2 -> 2 commits (no change)
+  - new commits
+    - 043569d81227 "mm/mglru: fix and remove redundant unevictable folio handling"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260812-mglru-mlock-fix-v2-1-a3fec5853c08@tencent.com
+    - a190ad17a1b1 "percpu: drop CONFIG_DEBUG_FORCE_WEAK_PER_CPU"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/178656406317.2437052.7257990869957704195@slm.duckdns.org
+    - 85a93363b0f3 "lib/test_hmm: fix garbage pfn and wrong direction in devmem fault debug"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260812092856.55296-1-liuqiangneo@163.com
 - mm-nonmm-stable: 69 -> 69 commits (no change)
   - series: 7 (21) -> 7 (21) (no change)
     - no role, nobody: 28 -> 28 commits (no change)
@@ -181,23 +165,3 @@
     - no role, maintainer: 12 -> 12 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - series "ocfs2: bound-check both readdir re-validation scans", v2. (2)
-      - a63dd812b46c "ocfs2: bound-check dir entries in the readdir re-validation scan (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260811024337.3972976-1-zhanxusheng@xiaomi.com
-        - Link: https://sashiko.dev/#/patchset/20260806022044.167962-1-zhanxusheng@xiaomi.com
-        - Link: https://lore.kernel.org/20260811024337.3972976-2-zhanxusheng@xiaomi.com
-      - 0e3e559bdb83 "ocfs2: bound-check dir entries in the inline-data re-validation scan (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260811024337.3972976-3-zhanxusheng@xiaomi.com
-  - dropped commits
-    - series "ocfs2: bound-check both readdir re-validation scans", v2. (2)
-      - 258cd039cbc7 "ocfs2: bound-check dir entries in the readdir re-validation scan (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260811024337.3972976-1-zhanxusheng@xiaomi.com
-        - Link: https://sashiko.dev/#/patchset/20260806022044.167962-1-zhanxusheng@xiaomi.com
-        - Link: https://lore.kernel.org/20260811024337.3972976-2-zhanxusheng@xiaomi.com
-      - 922ac8c7e8cb "ocfs2: bound-check dir entries in the inline-data re-validation scan (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260811024337.3972976-3-zhanxusheng@xiaomi.com

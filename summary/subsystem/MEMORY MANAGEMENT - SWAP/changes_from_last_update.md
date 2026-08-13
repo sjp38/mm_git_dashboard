@@ -10,32 +10,21 @@
     - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 13 -> 16 commits
-  - series: 2 (9) -> 3 (12)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-unstable: 16 -> 16 commits (no change)
+  - series: 3 (12) -> 3 (12) (no change)
+    - no role, nobody: 3 -> 2 commits
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 3 -> 6 commits
+    - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "swap_ops updates", v2. (3)
-      - 281ed2c49606 "mm/swap: revert to single-folio writes for synchronous swap devices (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723054622.3460249-1-hch@lst.de
-        - Link: https://lore.kernel.org/20260723054622.3460249-2-hch@lst.de
-      - 34345e3dc0b8 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
-      - e780acd19d82 "mm/swap: move swap_ops into file systems for file system-based swap (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
-- mm-new: 4 -> 1 commits
-  - series: 1 (3) -> 0 (0)
+    - 8050d3cd7261 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Fuad Tabba <fuad.tabba@linux.dev>"
+      - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
