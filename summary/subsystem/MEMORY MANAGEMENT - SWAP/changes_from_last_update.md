@@ -12,16 +12,21 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
 - mm-unstable: 16 -> 16 commits (no change)
   - series: 3 (12) -> 3 (12) (no change)
-    - no role, nobody: 3 -> 2 commits
-    - no role, no role : 1 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - 8050d3cd7261 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Fuad Tabba <fuad.tabba@linux.dev>"
-      - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
+      - 1f61c6e45d55 "mm/huge_memory: update remove_migration_pmd() to accept a folio (11/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

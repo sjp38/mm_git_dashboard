@@ -13,50 +13,53 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 8 -> 8 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 16 -> 16 commits (no change)
-  - series: 3 (15) -> 3 (15) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 16 -> 14 commits
+  - series: 3 (15) -> 3 (13)
+    - no role, nobody: 1 -> 0 commits
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 7 -> 7 commits (no change)
+    - no role, reviewer: 7 -> 6 commits
     - reviewer, reviewer: 4 -> 4 commits (no change)
   - changed commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
+      - 1050f28d3e6a "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org"
+        - dropped "Cc: Randy Dunlap <rdunlap@infradead.org>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "[akpm@linux-foundation.org: add comments, per Lorenzo]"
+        - dropped "[akpm@linux-foundation.org: fix kerneldoc]"
+        - dropped "Closes: : https://lore.kernel.org/e7911812-9b99-4f94-be6b-597bf202ffeb@infradead.org"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
+      - 1f61c6e45d55 "mm/huge_memory: update remove_migration_pmd() to accept a folio (11/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org
+      - 6d8979d84a12 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (13/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org
+  - dropped commits
+    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5)
+      - 56b20f64a039 "selftests/mm: skip khugepaged swap tests without swap (2/5)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260727095225.372655-4-usama.anjum@arm.com
     - series "mm/khugepaged: several cleanups", v4. (7)
-      - ff7f47939719 "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan() (0/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-0-ddac39d61c4a@linux.dev
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-1-ddac39d61c4a@linux.dev
-        - Link: https://lore.kernel.org/all/20260605161422.213817-1-npache@redhat.com/ [1]
-        - Link: https://lore.kernel.org/all/20251008043748.45554-1-lance.yang@linux.dev/ [2]
-      - 9d403ff00d79 "mm/khugepaged: extract reference check into folio_pte_referenced() helper (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-2-ddac39d61c4a@linux.dev
-      - edbe980d50b8 "mm/khugepaged: introduce a count_collapse_event() helper (2/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-3-ddac39d61c4a@linux.dev
-      - f21a0d22201d "mm/khugepaged: fix outdated comments (3/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-4-ddac39d61c4a@linux.dev
       - 7eecaf8520ec "mm/khugepaged: refactor the PTE state checks into a helper (4/7)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
         - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-5-ddac39d61c4a@linux.dev
         - Link: https://lore.kernel.org/linux-mm/20251008043748.45554-1-lance.yang@linux.dev/ [1]
-      - be4b063fba41 "mm/khugepaged: unmap pte before releasing vma write lock (5/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-6-ddac39d61c4a@linux.dev
-      - 76c35665d157 "mm: Documentation: clarify where the mTHP stats live (6/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: Pedro Falcato <pfalcato@suse.de> "
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-7-ddac39d61c4a@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

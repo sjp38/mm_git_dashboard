@@ -6,16 +6,20 @@
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
-- mm-hotfixes-unstable: 6 -> 7 commits
+- mm-hotfixes-unstable: 7 -> 7 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, no role : 0 -> 1 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - ce147763995b "memcg: make the v1 soft limit knob inert"
-      - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - 6a5755f73ff1 "memcg: make the v1 soft limit knob inert"
+      - Authored by a maintainer, reviewed by no role player
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
       - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
 - mm-stable: 355 -> 355 commits (no change)
   - series: 49 (299) -> 49 (299) (no change)
@@ -30,84 +34,172 @@
     - maintainer, nobody: 91 -> 91 commits (no change)
     - maintainer, no role : 10 -> 10 commits (no change)
     - maintainer, reviewer: 11 -> 11 commits (no change)
-- mm-unstable: 92 -> 93 commits
-  - series: 13 (51) -> 13 (51) (no change)
-    - no role, nobody: 11 -> 9 commits
-    - no role, no role : 26 -> 27 commits
+- mm-unstable: 93 -> 93 commits (no change)
+  - series: 13 (51) -> 13 (48)
+    - no role, nobody: 9 -> 7 commits
+    - no role, no role : 27 -> 28 commits
     - no role, reviewer: 18 -> 18 commits (no change)
-    - no role, maintainer: 32 -> 34 commits
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 34 -> 34 commits (no change)
+    - reviewer, reviewer: 1 -> 2 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
+    - 75a2b06f3c92 "mm/mglru: fix young counter undercount for large folios"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260813061019.49806-1-hui.zhu@linux.dev
+      - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
+    - e737cebb8de0 "mm/Kconfig: make MEMORY_FAILURE select MIGRATION"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260813134916.292733-1-xieyuanbin1@huawei.com
+  - changed commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
+      - c05ca2d80234 "mm/vma: introduce VMA anon page offset field and add helpers (0/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-0-c21581c0c3c8@kernel.org"
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-1-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-0-ab318a350404@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-1-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-0-c21581c0c3c8@kernel.org
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-1-c21581c0c3c8@kernel.org
+      - 1050f28d3e6a "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org"
+        - dropped "Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Randy Dunlap <rdunlap@infradead.org>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - dropped "[akpm@linux-foundation.org: add comments, per Lorenzo]"
+        - dropped "[akpm@linux-foundation.org: fix kerneldoc]"
+        - dropped "Closes: : https://lore.kernel.org/e7911812-9b99-4f94-be6b-597bf202ffeb@infradead.org"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
+      - 1c7ab042ca1c "mm: abstract vma_address() and introduce vma_anon_address() (3/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-4-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-4-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-4-c21581c0c3c8@kernel.org
+      - 943b46b6d7e9 "mm: update print_bad_page_map() to show anon index if appropriate (4/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-5-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-5-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-5-c21581c0c3c8@kernel.org
+      - b7e014bb55de "mm: introduce and use vma_filebacked_address() (5/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org
+      - c874b081c464 "mm/vma: fix self-merge check in copy_vma() (6/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-7-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-7-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-7-c21581c0c3c8@kernel.org
+      - bd99d5d8e295 "mm: propagate VMA anonymous page offset on map, remap, split + merge (8/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-9-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-9-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-9-c21581c0c3c8@kernel.org
+      - 5a382e864f23 "mm/rmap: track whether the page VMA mapped pgoff is anonymous (9/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-10-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-10-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-10-c21581c0c3c8@kernel.org
+      - c108dac9220b "mm: clean up vma_address_end() (10/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-11-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-11-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-11-c21581c0c3c8@kernel.org
+      - 1f61c6e45d55 "mm/huge_memory: update remove_migration_pmd() to accept a folio (11/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org
+      - cbbb09b81202 "mm/migrate: calculate large folio page index using PFN (12/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-13-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-13-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-13-c21581c0c3c8@kernel.org
+      - 6d8979d84a12 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (13/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org
+    - f715b7e785b9 "mm/mglru: fix and remove redundant unevictable folio handling"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Barry Song <baohua@kernel.org>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - Link: https://lore.kernel.org/20260812-mglru-mlock-fix-v2-1-a3fec5853c08@tencent.com
+    - 355b16817f48 "percpu: drop CONFIG_DEBUG_FORCE_WEAK_PER_CPU"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+      - Link: https://lore.kernel.org/178656406317.2437052.7257990869957704195@slm.duckdns.org
+  - dropped commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 44735c8429f9 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (16/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-17-ab318a350404@kernel.org
+      - 0ab148800027 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (17/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
     - 279f564814cc "mm/mglru: Fix young counter undercount for large folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
-  - changed commits
-    - 741a6458a7e1 "mm/kmemleak: report RCU-tasks quiescent states during the scan"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
-      - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-      - Link: https://lore.kernel.org/20260720-kmemleak_rcu_task-v1-1-5b460ade777d@debian.org
-    - 8050d3cd7261 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Fuad Tabba <fuad.tabba@linux.dev>"
-      - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
-    - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4)
-      - b20da26a220f "mm: kmemleak: factor leak confirmation into a helper (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
-        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-3-5b93b1131089@debian.org
     - series "mm/khugepaged: several cleanups", v4. (7)
-      - ff7f47939719 "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan() (0/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-0-ddac39d61c4a@linux.dev
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-1-ddac39d61c4a@linux.dev
-        - Link: https://lore.kernel.org/all/20260605161422.213817-1-npache@redhat.com/ [1]
-        - Link: https://lore.kernel.org/all/20251008043748.45554-1-lance.yang@linux.dev/ [2]
-      - 9d403ff00d79 "mm/khugepaged: extract reference check into folio_pte_referenced() helper (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-2-ddac39d61c4a@linux.dev
-      - edbe980d50b8 "mm/khugepaged: introduce a count_collapse_event() helper (2/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-3-ddac39d61c4a@linux.dev
-      - f21a0d22201d "mm/khugepaged: fix outdated comments (3/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-4-ddac39d61c4a@linux.dev
       - 7eecaf8520ec "mm/khugepaged: refactor the PTE state checks into a helper (4/7)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
         - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-5-ddac39d61c4a@linux.dev
         - Link: https://lore.kernel.org/linux-mm/20251008043748.45554-1-lance.yang@linux.dev/ [1]
-      - be4b063fba41 "mm/khugepaged: unmap pte before releasing vma write lock (5/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-6-ddac39d61c4a@linux.dev
-- mm-new: 4 -> 6 commits
+- mm-new: 6 -> 4 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 1 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 0 commits
     - maintainer, nobody: 2 -> 2 commits (no change)
-  - new commits
-    - 043569d81227 "mm/mglru: fix and remove redundant unevictable folio handling"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260812-mglru-mlock-fix-v2-1-a3fec5853c08@tencent.com
-    - a190ad17a1b1 "percpu: drop CONFIG_DEBUG_FORCE_WEAK_PER_CPU"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/178656406317.2437052.7257990869957704195@slm.duckdns.org
-- mm-nonmm-stable: 0 -> 0 commits (no change)
+- mm-nonmm-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 825cef942cd5 "tools/mm: prevent page_owner_sort from truncating input"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260730015809.3819606-1-warren.xiong@ugreen.com
+- mm-nonmm-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits

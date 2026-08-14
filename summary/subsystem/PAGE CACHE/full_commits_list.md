@@ -36,25 +36,22 @@
       - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code" (17/33)
         - Authored by a reviewer, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-- mm-unstable: 5 total, 0 (4) series, 1 non-series commits
+- mm-unstable: 4 total, 0 (3) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 3 commits
+    - no role, nobody: 2 commits
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 1d666edaac6f "mm: introduce linear_anon_page_index()" (2/20)
+      - b821e85a2ac7 "mm: introduce linear_anon_page_index()" (2/16)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org
-      - 0ab148800027 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (17/20)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
-      - 3f855354c085 "mm/swap: remove SWP_FS_OPS" (5/7)
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
+      - 85299848874a "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-    - b15ad487e6f5 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+    - 7e40450fa763 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
-      - 630ab233d8d9 "mm/swap: move swap_ops into file systems for file system-based swap" (2/3)
+      - eddbfab36b04 "mm/swap: move swap_ops into file systems for file system-based swap" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

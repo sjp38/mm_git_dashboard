@@ -2,14 +2,18 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 2 -> 3 commits
+- mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, no role : 0 -> 1 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - ce147763995b "memcg: make the v1 soft limit knob inert"
-      - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - 6a5755f73ff1 "memcg: make the v1 soft limit knob inert"
+      - Authored by a maintainer, reviewed by no role player
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
       - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
 - mm-stable: 14 -> 14 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)

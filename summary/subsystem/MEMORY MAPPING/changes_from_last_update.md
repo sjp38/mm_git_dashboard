@@ -14,18 +14,107 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 11 -> 11 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-unstable: 16 -> 16 commits (no change)
-  - series: 1 (13) -> 1 (13) (no change)
-    - no role, nobody: 5 -> 4 commits
-    - no role, no role : 10 -> 11 commits
+- mm-unstable: 16 -> 12 commits
+  - series: 1 (13) -> 1 (9)
+    - no role, nobody: 4 -> 1 commits
+    - no role, no role : 11 -> 10 commits
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
+      - c05ca2d80234 "mm/vma: introduce VMA anon page offset field and add helpers (0/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-0-c21581c0c3c8@kernel.org"
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-1-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-1-ab318a350404@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-0-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-0-c21581c0c3c8@kernel.org
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-1-c21581c0c3c8@kernel.org
+      - 1050f28d3e6a "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Randy Dunlap <rdunlap@infradead.org>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - dropped "[akpm@linux-foundation.org: add comments, per Lorenzo]"
+        - dropped "[akpm@linux-foundation.org: fix kerneldoc]"
+        - dropped "Closes: : https://lore.kernel.org/e7911812-9b99-4f94-be6b-597bf202ffeb@infradead.org"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
+      - b821e85a2ac7 "mm: introduce linear_anon_page_index() (2/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
+      - c874b081c464 "mm/vma: fix self-merge check in copy_vma() (6/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-7-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-7-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-7-c21581c0c3c8@kernel.org
+      - 4d3ab056de86 "tools/testing/vma: add tests for copy_vma() self-merge (7/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-8-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-8-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-8-c21581c0c3c8@kernel.org
+      - bd99d5d8e295 "mm: propagate VMA anonymous page offset on map, remap, split + merge (8/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-9-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-9-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-9-c21581c0c3c8@kernel.org
+      - 6d8979d84a12 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (13/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org
+      - 308844ba4e59 "tools/testing/vma: expand VMA merge tests to assert anon pgoff (14/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-15-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-15-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-15-c21581c0c3c8@kernel.org
+      - c47cfb397c5f "tools/testing/selftests/mm: test anonymous page offset merge behaviour (15/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-16-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-16-ab318a350404@kernel.org"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - dropped "[akpm@linux-foundation.org: tweak comment, per David]"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-16-c21581c0c3c8@kernel.org
+  - dropped commits
     - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 44735c8429f9 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (16/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-17-ab318a350404@kernel.org
+      - 0ab148800027 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (17/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
       - 0854582117fc "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon (18/20)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
         - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-19-ab318a350404@kernel.org
+      - 9605b0eb72e4 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests (19/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-20-ab318a350404@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -11,23 +11,34 @@
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 10 -> 11 commits
+- mm-unstable: 11 -> 12 commits
   - series: 1 (9) -> 1 (9) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 2 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 1 -> 2 commits
     - no role, maintainer: 7 -> 7 commits (no change)
+    - reviewer, reviewer: 0 -> 1 commits
   - new commits
+    - 75a2b06f3c92 "mm/mglru: fix young counter undercount for large folios"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260813061019.49806-1-hui.zhu@linux.dev
+      - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
+  - changed commits
+    - f715b7e785b9 "mm/mglru: fix and remove redundant unevictable folio handling"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Barry Song <baohua@kernel.org>"
+      - Link: https://lore.kernel.org/20260812-mglru-mlock-fix-v2-1-a3fec5853c08@tencent.com
+  - dropped commits
     - 279f564814cc "mm/mglru: Fix young counter undercount for large folios"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, nobody: 0 -> 1 commits
-  - new commits
-    - 043569d81227 "mm/mglru: fix and remove redundant unevictable folio handling"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260812-mglru-mlock-fix-v2-1-a3fec5853c08@tencent.com
+    - reviewer, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -12,38 +12,50 @@
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-unstable: 27 -> 29 commits
-  - series: 4 (17) -> 4 (18)
-    - no role, nobody: 5 -> 6 commits
-    - no role, no role : 11 -> 12 commits
+- mm-unstable: 29 -> 26 commits
+  - series: 4 (18) -> 4 (15)
+    - no role, nobody: 6 -> 3 commits
+    - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - f9ca2fa9ef7e "Docs/mm: fix outdated "radix tree" in page_migration"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260812075739.325441-1-husong@kylinos.cn
   - changed commits
-    - 90c6ea0d6498 "selftests/mm: thuge-gen: fix test_shmget() for PAGE_SIZE check"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260812-selftests-thuge-gen-fix-v2-1-9adaa693e73b@kernel.org"
-      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
-      - dropped "Link: https://lore.kernel.org/20260809-selftests-thuge-gen-fix-v1-1-1919f4b3d12f@kernel.org"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20260812-selftests-thuge-gen-fix-v2-1-9adaa693e73b@kernel.org
-    - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4)
-      - 0edabad981fe "selftests: mm: test kmemleak's N-consecutive-scan leak confirmation (3/4)"
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
+      - c47cfb397c5f "tools/testing/selftests/mm: test anonymous page offset merge behaviour (15/16)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
-        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-4-5b93b1131089@debian.org
-    - series "mm/khugepaged: several cleanups", v4. (7)
-      - 76c35665d157 "mm: Documentation: clarify where the mTHP stats live (6/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: Pedro Falcato <pfalcato@suse.de> "
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-7-ddac39d61c4a@linux.dev
+        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-16-c21581c0c3c8@kernel.org"
+        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
+        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-16-ab318a350404@kernel.org"
+        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
+        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
+        - dropped "[akpm@linux-foundation.org: tweak comment, per David]"
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-16-c21581c0c3c8@kernel.org
+    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (4)
+      - 375e0c87ee29 "selftests/mm: skip COW tmpfile cases when fallocate() is unsupported (0/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Fixes: f8664f3c4a08 ("selftests/vm: cow: basic COW tests for non-anonymous pages")"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260727095225.372655-1-usama.anjum@arm.com
+        - Link: https://lore.kernel.org/20260727095225.372655-2-usama.anjum@arm.com
+      - 37fda34bde67 "selftests/mm: skip guard hole-punch test if MADV_REMOVE is unsupported (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260727095225.372655-3-usama.anjum@arm.com
+  - dropped commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
+      - 44735c8429f9 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (16/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-17-ab318a350404@kernel.org
+      - 9605b0eb72e4 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests (19/20)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-20-ab318a350404@kernel.org
+    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5)
+      - 56b20f64a039 "selftests/mm: skip khugepaged swap tests without swap (2/5)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260727095225.372655-4-usama.anjum@arm.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
