@@ -1,10 +1,15 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 2 -> 2 commits (no change)
+- mm-hotfixes-stable: 2 -> 3 commits
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 3 commits
+  - changed commits
+    - aedf2efd1897 "mm/pagewalk: fix stale walk->action escaping walk_pmd_range()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260811161949.3879321-2-imv4bel@gmail.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 81 -> 81 commits (no change)
   - series: 11 (75) -> 11 (75) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
@@ -15,96 +20,18 @@
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-unstable: 24 -> 23 commits
-  - series: 3 (15) -> 3 (13)
-    - no role, nobody: 4 -> 2 commits
-    - no role, no role : 13 -> 14 commits
+- mm-unstable: 23 -> 23 commits (no change)
+  - series: 3 (13) -> 3 (13) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 14 -> 14 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-  - new commits
-    - e737cebb8de0 "mm/Kconfig: make MEMORY_FAILURE select MIGRATION"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260813134916.292733-1-xieyuanbin1@huawei.com
   - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
-      - c05ca2d80234 "mm/vma: introduce VMA anon page offset field and add helpers (0/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-1-c21581c0c3c8@kernel.org"
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-0-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-1-ab318a350404@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-0-ab318a350404@kernel.org"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-0-c21581c0c3c8@kernel.org
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-1-c21581c0c3c8@kernel.org
-      - 1050f28d3e6a "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - dropped "Cc: Randy Dunlap <rdunlap@infradead.org>"
-        - dropped "[akpm@linux-foundation.org: add comments, per Lorenzo]"
-        - dropped "[akpm@linux-foundation.org: fix kerneldoc]"
-        - dropped "Closes: : https://lore.kernel.org/e7911812-9b99-4f94-be6b-597bf202ffeb@infradead.org"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-      - b821e85a2ac7 "mm: introduce linear_anon_page_index() (2/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
-      - 1c7ab042ca1c "mm: abstract vma_address() and introduce vma_anon_address() (3/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-4-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-4-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-4-c21581c0c3c8@kernel.org
-      - 943b46b6d7e9 "mm: update print_bad_page_map() to show anon index if appropriate (4/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-5-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-5-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-5-c21581c0c3c8@kernel.org
-      - b7e014bb55de "mm: introduce and use vma_filebacked_address() (5/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org
-      - c108dac9220b "mm: clean up vma_address_end() (10/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-11-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-11-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-11-c21581c0c3c8@kernel.org
-      - 6d8979d84a12 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (13/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org
-  - dropped commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 44735c8429f9 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (16/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-17-ab318a350404@kernel.org
-      - 0ab148800027 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (17/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
+    - 7a4fe921ad33 "mm/Kconfig: make MEMORY_FAILURE select MIGRATION"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Miaohe Lin <linmiaohe@huawei.com>"
+      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
+      - Link: https://lore.kernel.org/20260813134916.292733-1-xieyuanbin1@huawei.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)

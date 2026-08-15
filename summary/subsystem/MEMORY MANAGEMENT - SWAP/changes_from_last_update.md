@@ -1,9 +1,15 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 0 -> 1 commits
+  - changed commits
+    - 10d9012e83ef "mm, swap: don't free a hibernation slot that is in the swap cache"
+      - Authored by a reviewer, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260811132209.2862708-2-youngjun.park@lge.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 1 -> 0 commits
 - mm-stable: 10 -> 10 commits (no change)
   - series: 2 (6) -> 2 (6) (no change)
     - no role, no role : 3 -> 3 commits (no change)
@@ -17,16 +23,6 @@
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
-      - 1f61c6e45d55 "mm/huge_memory: update remove_migration_pmd() to accept a folio (11/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

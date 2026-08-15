@@ -1,42 +1,29 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- mm-hotfixes-stable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 25f52e812168 "mm/vmscan: report RCU-tasks quiescent states in shrink_lruvec()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260810-rcu_task_shrink_lruvec-v1-1-4d9f7d5251cb@debian.org
+      - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 10 -> 10 commits (no change)
   - series: 2 (7) -> 2 (7) (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 10 -> 11 commits
+- mm-unstable: 11 -> 11 commits (no change)
   - series: 1 (9) -> 1 (9) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 2 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-  - new commits
-    - 75a2b06f3c92 "mm/mglru: fix young counter undercount for large folios"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260813061019.49806-1-hui.zhu@linux.dev
-      - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
-  - changed commits
-    - f715b7e785b9 "mm/mglru: fix and remove redundant unevictable folio handling"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - Link: https://lore.kernel.org/20260812-mglru-mlock-fix-v2-1-a3fec5853c08@tencent.com
-  - dropped commits
-    - 279f564814cc "mm/mglru: Fix young counter undercount for large folios"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
-- mm-new: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

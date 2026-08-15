@@ -10,26 +10,11 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 5 -> 4 commits
-  - series: 0 (4) -> 0 (3)
-    - no role, nobody: 3 -> 2 commits
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
-      - b821e85a2ac7 "mm: introduce linear_anon_page_index() (2/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
-  - dropped commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 0ab148800027 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (17/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

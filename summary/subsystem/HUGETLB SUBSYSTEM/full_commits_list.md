@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 79a5f037a89c "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+    - a8786fdf30f2 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com
 - mm-stable: 36 total, 4 (32) series, 4 non-series commits
@@ -145,20 +145,20 @@
     - no role, no role : 3 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - f94929d23d53 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+    - d024a32e1164 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
-      - 1050f28d3e6a "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
+      - 756cad002dd0 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-    - c5aae4982c63 "hugetlb: only adjust reservation during unmapping if mapcount is 0"
+    - 42909f2feeb7 "hugetlb: only adjust reservation during unmapping if mapcount is 0"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
       - Link: https://lore.kernel.org/amkC_1Ya6OiUoiLZ@bender.morinfr.org
-    - 5cd9b6f17faa "mm: add some missing includes to mm-local headers"
+    - c3f1af95c2ae "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-    - 95dc503d0c01 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
+    - 5896bc81c182 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260807040003.2156630-1-souravpanda@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

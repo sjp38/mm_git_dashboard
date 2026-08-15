@@ -1,38 +1,55 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 29 -> 29 commits (no change)
+- mm-hotfixes-stable: 29 -> 37 commits
   - series: 6 (13) -> 6 (13) (no change)
-    - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 10 -> 10 commits (no change)
+    - no role, nobody: 6 -> 8 commits
+    - no role, no role : 10 -> 12 commits
     - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
+    - no role, maintainer: 4 -> 6 commits
+    - reviewer, maintainer: 0 -> 1 commits
     - maintainer, nobody: 5 -> 5 commits (no change)
-- mm-hotfixes-unstable: 13 -> 10 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 3 -> 2 commits
-    - no role, no role : 3 -> 2 commits
-    - no role, maintainer: 4 -> 3 commits
-    - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-    - maintainer, no role : 0 -> 1 commits
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+    - maintainer, reviewer: 0 -> 1 commits
   - changed commits
-    - 6a5755f73ff1 "memcg: make the v1 soft limit knob inert"
-      - Authored by a maintainer, reviewed by no role player
-      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
-      - added "Cc: <stable@vger.kernel.org>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
-  - dropped commits
-    - eb947ca44a9e "x86/mm/pat: acquire init_mm write lock on collapse to avoid UAF"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-2-8cc77dcc0018@kernel.org
-    - abb64b1e856c "x86/mm/pat: acquire init_mm read lock on attribute change to avoid UAF"
+    - bf4ade7dbd76 "memcg: keep folio's objcg same as its node"
+      - Authored by a maintainer, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260807142406.443516-1-shakeel.butt@linux.dev
+    - 3366ddf30eda "MAINTAINERS: remove git URL for Squashfs"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/all/20260626163213.2284080-1-den@openvz.org/
-      - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-3-8cc77dcc0018@kernel.org
-    - 39baeb4bbecc "x86/mm/pat: allocate split page tables as kernel page tables"
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260806181916.617881-1-phillip@squashfs.org.uk
+    - bd24ce159b0e "MAINTAINERS, mailmap: update email address for JP Kobryn"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260721-fix-cpa-kernel-pagetables-v2-1-2b255deed710@kernel.org
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260807010226.8995-1-jp.kobryn@linux.dev
+    - 2100f04bc635 "mailmap: add entries for Guodong Xu"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260807-b4-mailmap-guodong-xu-v2-1-f7c71bc6bd9f@gmail.com
+    - 25f52e812168 "mm/vmscan: report RCU-tasks quiescent states in shrink_lruvec()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260810-rcu_task_shrink_lruvec-v1-1-4d9f7d5251cb@debian.org
+      - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
+    - 92192e9c5ee0 "mm: memcg-v1: fix memsw and TCP failcnt accounting"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260811030843.109104-1-guopeng.zhang@linux.dev
+    - 10d9012e83ef "mm, swap: don't free a hibernation slot that is in the swap cache"
+      - Authored by a reviewer, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260811132209.2862708-2-youngjun.park@lge.com
+    - aedf2efd1897 "mm/pagewalk: fix stale walk->action escaping walk_pmd_range()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260811161949.3879321-2-imv4bel@gmail.com
+- mm-hotfixes-unstable: 10 -> 2 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 2 -> 0 commits
+    - no role, maintainer: 3 -> 1 commits
+    - reviewer, maintainer: 1 -> 0 commits
+    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, reviewer: 1 -> 0 commits
 - mm-stable: 500 -> 500 commits (no change)
   - series: 67 (410) -> 67 (410) (no change)
     - no role, nobody: 33 -> 33 commits (no change)
@@ -46,330 +63,67 @@
     - maintainer, nobody: 115 -> 115 commits (no change)
     - maintainer, no role : 20 -> 20 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-unstable: 178 -> 177 commits
-  - series: 21 (113) -> 21 (107)
-    - no role, nobody: 36 -> 33 commits
-    - no role, no role : 61 -> 61 commits (no change)
+- mm-unstable: 177 -> 181 commits
+  - series: 21 (107) -> 21 (107) (no change)
+    - no role, nobody: 33 -> 34 commits
+    - no role, no role : 61 -> 62 commits
     - no role, reviewer: 24 -> 24 commits (no change)
-    - no role, maintainer: 45 -> 46 commits
-    - reviewer, reviewer: 4 -> 5 commits
-    - maintainer, nobody: 5 -> 5 commits (no change)
+    - no role, maintainer: 46 -> 46 commits (no change)
+    - reviewer, reviewer: 5 -> 5 commits (no change)
+    - maintainer, nobody: 5 -> 7 commits
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - 5b08627f8c35 "maple_tree: fix comment typo"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260813183847.474357-1-sercombe.joel.mark@gmail.com
-    - 75a2b06f3c92 "mm/mglru: fix young counter undercount for large folios"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260813061019.49806-1-hui.zhu@linux.dev
-      - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
-    - e737cebb8de0 "mm/Kconfig: make MEMORY_FAILURE select MIGRATION"
+    - 22b672695a20 "mm/rmap: synchronize lock and unlock target in anon_vma_clone"
       - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/OS7PR01MB139142FE16EC63B892559D40496DA2@OS7PR01MB13914.jpnprd01.prod.outlook.com
+    - c971f65a6e2f "arch_numa: avoid false positive fortify warning in setup_node_to_cpumask_map()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260813-arch_numa-avoid-fortify-warning-v2-1-093ad97a78df@kernel.org
+  - changed commits
+    - 7a4fe921ad33 "mm/Kconfig: make MEMORY_FAILURE select MIGRATION"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Miaohe Lin <linmiaohe@huawei.com>"
+      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
       - Link: https://lore.kernel.org/20260813134916.292733-1-xieyuanbin1@huawei.com
-  - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
-      - c05ca2d80234 "mm/vma: introduce VMA anon page offset field and add helpers (0/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-1-c21581c0c3c8@kernel.org"
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-0-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-0-ab318a350404@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-1-ab318a350404@kernel.org"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-0-c21581c0c3c8@kernel.org
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-1-c21581c0c3c8@kernel.org
-      - 1050f28d3e6a "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-2-ab318a350404@kernel.org"
-        - dropped "Link: : https://lore.kernel.org/ann-vS6MYT9kuXqu@lucifer"
-        - dropped "Cc: Randy Dunlap <rdunlap@infradead.org>"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - dropped "[akpm@linux-foundation.org: add comments, per Lorenzo]"
-        - dropped "[akpm@linux-foundation.org: fix kerneldoc]"
-        - dropped "Closes: : https://lore.kernel.org/e7911812-9b99-4f94-be6b-597bf202ffeb@infradead.org"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-      - b821e85a2ac7 "mm: introduce linear_anon_page_index() (2/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-3-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
-      - 1c7ab042ca1c "mm: abstract vma_address() and introduce vma_anon_address() (3/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-4-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-4-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-4-c21581c0c3c8@kernel.org
-      - 943b46b6d7e9 "mm: update print_bad_page_map() to show anon index if appropriate (4/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-5-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-5-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-5-c21581c0c3c8@kernel.org
-      - b7e014bb55de "mm: introduce and use vma_filebacked_address() (5/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-6-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org
-      - c874b081c464 "mm/vma: fix self-merge check in copy_vma() (6/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-7-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-7-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-7-c21581c0c3c8@kernel.org
-      - 4d3ab056de86 "tools/testing/vma: add tests for copy_vma() self-merge (7/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-8-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-8-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-8-c21581c0c3c8@kernel.org
-      - bd99d5d8e295 "mm: propagate VMA anonymous page offset on map, remap, split + merge (8/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-9-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-9-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-9-c21581c0c3c8@kernel.org
-      - 5a382e864f23 "mm/rmap: track whether the page VMA mapped pgoff is anonymous (9/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-10-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-10-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-10-c21581c0c3c8@kernel.org
-      - c108dac9220b "mm: clean up vma_address_end() (10/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-11-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-11-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-11-c21581c0c3c8@kernel.org
-      - 1f61c6e45d55 "mm/huge_memory: update remove_migration_pmd() to accept a folio (11/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-12-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org
-      - cbbb09b81202 "mm/migrate: calculate large folio page index using PFN (12/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-13-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-13-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-13-c21581c0c3c8@kernel.org
-      - 6d8979d84a12 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (13/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-14-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org
-      - 308844ba4e59 "tools/testing/vma: expand VMA merge tests to assert anon pgoff (14/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-15-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-15-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-15-c21581c0c3c8@kernel.org
-      - c47cfb397c5f "tools/testing/selftests/mm: test anonymous page offset merge behaviour (15/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-16-c21581c0c3c8@kernel.org"
-        - added "Cc: xu xin <xu.xin16@zte.com.cn>"
-        - dropped "Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-16-ab318a350404@kernel.org"
-        - dropped "Cc: Xu Xin <xu.xin16@zte.com.cn>"
-        - dropped "Cc: <syzbot@syzkaller.appspotmail.com>"
-        - dropped "[akpm@linux-foundation.org: tweak comment, per David]"
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-16-c21581c0c3c8@kernel.org
-    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (4)
-      - 375e0c87ee29 "selftests/mm: skip COW tmpfile cases when fallocate() is unsupported (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Fixes: f8664f3c4a08 ("selftests/vm: cow: basic COW tests for non-anonymous pages")"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260727095225.372655-1-usama.anjum@arm.com
-        - Link: https://lore.kernel.org/20260727095225.372655-2-usama.anjum@arm.com
-      - 37fda34bde67 "selftests/mm: skip guard hole-punch test if MADV_REMOVE is unsupported (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260727095225.372655-3-usama.anjum@arm.com
-    - 1978501912fc "MAINTAINERS: add drivers/char/mem.c to mm misc, memory mapping sections"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: SJ Park <sj@kernel.org>"
-      - added "Reviewed-by: Anshuman Khandual<anshuman.khandual@arm.com>"
-      - Link: https://lore.kernel.org/20260812-add-drivers-mem-to-mm-maintainers-v1-1-6218b861f4c8@kernel.org
-    - f715b7e785b9 "mm/mglru: fix and remove redundant unevictable folio handling"
-      - Authored by a reviewer, reviewed by a reviewer
+    - 40b2f72eff9a "mm/hmm.c:hmm_do_fault(): suppress sparse warning"
+      - Authored by a maintainer, reviewed by nobody
       - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - Link: https://lore.kernel.org/20260812-mglru-mlock-fix-v2-1-a3fec5853c08@tencent.com
-    - 355b16817f48 "percpu: drop CONFIG_DEBUG_FORCE_WEAK_PER_CPU"
-      - Authored by no role player, reviewed by no role player
+    - 43b127ae334b "mm-hmmc-hmm_do_fault-suppress-sparse-warning-fix"
+      - Authored by a maintainer, reviewed by nobody
       - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-      - Link: https://lore.kernel.org/178656406317.2437052.7257990869957704195@slm.duckdns.org
-    - e69ff444d65e "lib/test_hmm: fix garbage pfn and wrong direction in devmem fault debug"
+      - Link: https://lore.kernel.org/anu1N-DOnQwxO1kF@skinsburskii
+    - f811fe23ea49 "riscv: mm: fix concurrency in mark_new_valid_map()"
       - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260812092856.55296-1-liuqiangneo@163.com
-  - dropped commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v4. (20)
-      - 44735c8429f9 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (16/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-17-ab318a350404@kernel.org
-      - 0ab148800027 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (17/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-18-ab318a350404@kernel.org
-      - 0854582117fc "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon (18/20)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-19-ab318a350404@kernel.org
-      - 9605b0eb72e4 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests (19/20)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260806-b4-scalable-cow-virt-pgoff-v4-20-ab318a350404@kernel.org
-    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (5)
-      - 56b20f64a039 "selftests/mm: skip khugepaged swap tests without swap (2/5)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260727095225.372655-4-usama.anjum@arm.com
-    - 279f564814cc "mm/mglru: Fix young counter undercount for large folios"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
-    - series "mm/khugepaged: several cleanups", v4. (7)
-      - 7eecaf8520ec "mm/khugepaged: refactor the PTE state checks into a helper (4/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-5-ddac39d61c4a@linux.dev
-        - Link: https://lore.kernel.org/linux-mm/20251008043748.45554-1-lance.yang@linux.dev/ [1]
-- mm-new: 7 -> 4 commits
+      - added "Cc: Pasha Tatashin <pasha.tatashin@soleen.com>"
+      - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
+      - added "Cc: Paul Walmsley <paul.walmsley@sifive.com>"
+      - added "Cc: Yunhui Cui <cuiyunhui@bytedance.com>"
+      - added "Cc: tongtiangen <tongtiangen@huawei.com>"
+      - Link: https://lore.kernel.org/20260629-riscv-mm-new-valid-map-ordering-v1-1-60d8c10c6292@iscas.ac.cn
+      - Link: https://lore.kernel.org/linux-riscv/da19ffcf-8042-4f96-9c2d-649468dc6a0a@kernel.org/ # [1]
+    - fd686a822281 "riscv: mm: exclude invalid THP PMDs from page table check"
+      - Authored by no role player, reviewed by nobody
+      - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Cc: Vivian Wang <wangruikang@iscas.ac.cn>"
+      - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
+      - added "Cc: Yaxing Guo <guoyaxing@bosc.ac.cn>"
+      - Link: https://lore.kernel.org/20260523042052.35476-1-cuiyunhui@bytedance.com
+- mm-new: 4 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 3 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
-    - maintainer, nobody: 2 -> 2 commits (no change)
-- mm-nonmm-stable: 69 -> 88 commits
-  - series: 7 (21) -> 9 (25)
-    - no role, nobody: 28 -> 31 commits
-    - no role, no role : 13 -> 18 commits
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 21 -> 29 commits
-    - maintainer, nobody: 5 -> 7 commits
-    - maintainer, no role : 0 -> 1 commits
-  - changed commits
-    - 9f121705503a "lib/xz: replace min_t with min"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260609150030.634570-1-lasse.collin@tukaani.org
-    - 36969d97fea8 "ipc: only destroy orphaned shm segments on sysctl write"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/all/?q=only+destroy+orphaned+shm+segments+on+sysctl+write
-      - Link: https://lore.kernel.org/tencent_738A8BC6E9EA205F555E4B0DAA154D4F8E0A@qq.com
-    - f7f824e54b84 "lib/xz: use size_t instead of uint32_t in a few places"
-      - Authored by a maintainer, reviewed by no role player
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260614160521.924710-1-lasse.collin@tukaani.org
-    - 1a1b9b027049 "lib/xz: fix comments"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260614160521.924710-2-lasse.collin@tukaani.org
-    - series "taskstats: tidy up the cpumask command path". (2)
-      - 36ffbe1d5e99 "taskstats: drop the dead NULL attribute check in parse() (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20260728202104.17839-1-include@grrlz.net
-        - Link: https://lore.kernel.org/20260728202104.17839-2-include@grrlz.net
-      - c4904c4ae33c "taskstats: fold the two cpumask handlers into one (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20260728202104.17839-3-include@grrlz.net
-    - aa27e55f2440 "hung_task: update DETECT_HUNG_TASK_BLOCKER Kconfig help"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260730061854.176547-1-wangxb12@chinatelecom.cn
-    - 825cef942cd5 "tools/mm: prevent page_owner_sort from truncating input"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260730015809.3819606-1-warren.xiong@ugreen.com
-    - 2780860eddec "include/linux/list.h: mark list_add and __list_add as __always_inline"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260731-always-inline-list-add-v1-1-d29f54ce5477@google.com
-      - Link: https://lore.kernel.org/all/CANn89iJVQe=wedLheJmjZjOTJsWHijT0jZs=iRxKssJZbjAxHw@mail.gmail.com/
-    - 809f455a75fd "MAINTAINERS: add IRC and patchwork for LTP"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://github.com/linux-test-project/ltp/commit/3590f66120d1c875bef5d573c66c4c0d340c1612
-      - Link: https://lore.kernel.org/ltp/20260731054548.133241-1-pvorel@suse.cz/
-      - Link: https://lore.kernel.org/20260803115821.238704-1-pvorel@suse.cz
-    - 8f1d96a16c63 "selftests/prctl: fix non-anonymous VMA mapping in set-anon-vma-name test"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260803103046.14324-1-hongfu.li@linux.dev
-    - series "ocfs2: validate active orphan slots during inode read". (2)
-      - b2d31acbd3b1 "ocfs2: validate orphan slot during inode read (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20260803030007.3993199-1-gality369@gmail.com
-        - Link: https://lore.kernel.org/20260803030007.3993199-2-gality369@gmail.com
-      - bb88131c9831 "ocfs2: validate DIO orphan slot during inode read (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20260803030007.3993199-3-gality369@gmail.com
-    - bd7c05fb4a47 "ocfs2: fix circular locking dependency in ocfs2_init_acl()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/4094de06-9b69-4174-b2ee-08126dffc693@mail.kernel.org
-      - Link: https://syzkaller.appspot.com/ai_job?id=cc75363d-c672-499e-8fc5-44bcdc1cee39
-    - 621c2bcb8754 "ocfs2: fix cached cluster count after suballocator reclaim"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260805113920.385959-1-matthias.goergens@gmail.com
-    - a63308ab426f "ocfs2: fix readdir position truncation on 32-bit kernels"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260806022044.167962-3-zhanxusheng@xiaomi.com
-    - 9b836cd56681 "signal: factor out the kernel reserved si_code check"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260806133013.4341-1-include@grrlz.net
-    - e300eb500292 "Squashfs: check block offset is not negative"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260807162951.672510-1-phillip@squashfs.org.uk
-    - 5779e0f30fa4 "checkpatch: add NOKPROBE_SYMBOL to the whitelist of lines that can occur immediately after functions"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/130be7db-6098-86a4-60fe-0c1a5d9e30ba@kernel.org
-- mm-nonmm-unstable: 28 -> 9 commits
-  - series: 3 (6) -> 1 (2)
-    - no role, nobody: 6 -> 3 commits
-    - no role, no role : 7 -> 2 commits
-    - no role, maintainer: 12 -> 4 commits
     - maintainer, nobody: 2 -> 0 commits
-    - maintainer, no role : 1 -> 0 commits
+- mm-nonmm-stable: 88 -> 88 commits (no change)
+  - series: 9 (25) -> 9 (25) (no change)
+    - no role, nobody: 31 -> 31 commits (no change)
+    - no role, no role : 18 -> 18 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 29 -> 29 commits (no change)
+    - maintainer, nobody: 7 -> 7 commits (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
+- mm-nonmm-unstable: 9 -> 9 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
