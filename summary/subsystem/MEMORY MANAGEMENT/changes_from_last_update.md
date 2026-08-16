@@ -1,42 +1,17 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 19 -> 24 commits
+- mm-hotfixes-stable: 24 -> 24 commits (no change)
   - series: 4 (10) -> 4 (10) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 6 -> 7 commits
+    - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 4 -> 6 commits
-    - reviewer, maintainer: 0 -> 1 commits
+    - no role, maintainer: 6 -> 6 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
-    - maintainer, reviewer: 0 -> 1 commits
-  - changed commits
-    - bf4ade7dbd76 "memcg: keep folio's objcg same as its node"
-      - Authored by a maintainer, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260807142406.443516-1-shakeel.butt@linux.dev
-    - 25f52e812168 "mm/vmscan: report RCU-tasks quiescent states in shrink_lruvec()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260810-rcu_task_shrink_lruvec-v1-1-4d9f7d5251cb@debian.org
-      - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
-    - 92192e9c5ee0 "mm: memcg-v1: fix memsw and TCP failcnt accounting"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260811030843.109104-1-guopeng.zhang@linux.dev
-    - 10d9012e83ef "mm, swap: don't free a hibernation slot that is in the swap cache"
-      - Authored by a reviewer, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260811132209.2862708-2-youngjun.park@lge.com
-    - aedf2efd1897 "mm/pagewalk: fix stale walk->action escaping walk_pmd_range()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260811161949.3879321-2-imv4bel@gmail.com
-- mm-hotfixes-unstable: 7 -> 2 commits
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 3 -> 1 commits
-    - reviewer, maintainer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-    - maintainer, reviewer: 1 -> 0 commits
 - mm-stable: 355 -> 355 commits (no change)
   - series: 49 (299) -> 49 (299) (no change)
     - no role, nobody: 13 -> 13 commits (no change)
@@ -50,41 +25,26 @@
     - maintainer, nobody: 91 -> 91 commits (no change)
     - maintainer, no role : 10 -> 10 commits (no change)
     - maintainer, reviewer: 11 -> 11 commits (no change)
-- mm-unstable: 93 -> 97 commits
+- mm-unstable: 97 -> 97 commits (no change)
   - series: 13 (48) -> 13 (48) (no change)
-    - no role, nobody: 7 -> 8 commits
-    - no role, no role : 28 -> 29 commits
-    - no role, reviewer: 18 -> 18 commits (no change)
+    - no role, nobody: 8 -> 8 commits (no change)
+    - no role, no role : 29 -> 28 commits
+    - no role, reviewer: 18 -> 19 commits
     - no role, maintainer: 34 -> 34 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 3 commits
+    - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 22b672695a20 "mm/rmap: synchronize lock and unlock target in anon_vma_clone"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/OS7PR01MB139142FE16EC63B892559D40496DA2@OS7PR01MB13914.jpnprd01.prod.outlook.com
-    - c971f65a6e2f "arch_numa: avoid false positive fortify warning in setup_node_to_cpumask_map()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260813-arch_numa-avoid-fortify-warning-v2-1-093ad97a78df@kernel.org
   - changed commits
-    - 7a4fe921ad33 "mm/Kconfig: make MEMORY_FAILURE select MIGRATION"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Miaohe Lin <linmiaohe@huawei.com>"
-      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-      - Link: https://lore.kernel.org/20260813134916.292733-1-xieyuanbin1@huawei.com
-    - 40b2f72eff9a "mm/hmm.c:hmm_do_fault(): suppress sparse warning"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 43b127ae334b "mm-hmmc-hmm_do_fault-suppress-sparse-warning-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/anu1N-DOnQwxO1kF@skinsburskii
-- mm-new: 4 -> 2 commits
+    - 0ec7412d400e "mm/rmap: synchronize lock and unlock target in anon_vma_clone"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+      - Link: https://lore.kernel.org/OS7PR01MB139142FE16EC63B892559D40496DA2@OS7PR01MB13914.jpnprd01.prod.outlook.com
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - maintainer, nobody: 2 -> 0 commits
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)

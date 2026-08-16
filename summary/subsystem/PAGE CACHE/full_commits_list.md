@@ -42,16 +42,16 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 767637b31f99 "mm: introduce linear_anon_page_index()" (2/16)
+      - fccb3b8233af "mm: introduce linear_anon_page_index()" (2/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
-      - d8ce49fb1faa "mm/swap: remove SWP_FS_OPS" (5/7)
+      - 5a4306808d5e "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-    - ddf70bc765bf "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+    - 1859ac5f128f "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
-      - 3a29dade1708 "mm/swap: move swap_ops into file systems for file system-based swap" (2/3)
+      - f59fb2434f5c "mm/swap: move swap_ops into file systems for file system-based swap" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

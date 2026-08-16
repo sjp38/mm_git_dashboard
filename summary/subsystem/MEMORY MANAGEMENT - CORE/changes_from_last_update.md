@@ -1,15 +1,9 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 2 -> 3 commits
+- mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 2 -> 3 commits
-  - changed commits
-    - aedf2efd1897 "mm/pagewalk: fix stale walk->action escaping walk_pmd_range()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260811161949.3879321-2-imv4bel@gmail.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, no role : 3 -> 3 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-stable: 81 -> 81 commits (no change)
   - series: 11 (75) -> 11 (75) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
@@ -26,12 +20,6 @@
     - no role, no role : 14 -> 14 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-  - changed commits
-    - 7a4fe921ad33 "mm/Kconfig: make MEMORY_FAILURE select MIGRATION"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Miaohe Lin <linmiaohe@huawei.com>"
-      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-      - Link: https://lore.kernel.org/20260813134916.292733-1-xieyuanbin1@huawei.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)

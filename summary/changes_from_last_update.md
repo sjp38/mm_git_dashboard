@@ -1,59 +1,21 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 29 -> 37 commits
+- mm-hotfixes-stable: 37 -> 37 commits (no change)
   - series: 6 (13) -> 6 (13) (no change)
-    - no role, nobody: 6 -> 8 commits
-    - no role, no role : 10 -> 12 commits
+    - no role, nobody: 8 -> 8 commits (no change)
+    - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 4 -> 6 commits
-    - reviewer, maintainer: 0 -> 1 commits
+    - no role, maintainer: 6 -> 6 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
-    - maintainer, reviewer: 0 -> 1 commits
-  - changed commits
-    - bf4ade7dbd76 "memcg: keep folio's objcg same as its node"
-      - Authored by a maintainer, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260807142406.443516-1-shakeel.butt@linux.dev
-    - 3366ddf30eda "MAINTAINERS: remove git URL for Squashfs"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260806181916.617881-1-phillip@squashfs.org.uk
-    - bd24ce159b0e "MAINTAINERS, mailmap: update email address for JP Kobryn"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260807010226.8995-1-jp.kobryn@linux.dev
-    - 2100f04bc635 "mailmap: add entries for Guodong Xu"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260807-b4-mailmap-guodong-xu-v2-1-f7c71bc6bd9f@gmail.com
-    - 25f52e812168 "mm/vmscan: report RCU-tasks quiescent states in shrink_lruvec()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260810-rcu_task_shrink_lruvec-v1-1-4d9f7d5251cb@debian.org
-      - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
-    - 92192e9c5ee0 "mm: memcg-v1: fix memsw and TCP failcnt accounting"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260811030843.109104-1-guopeng.zhang@linux.dev
-    - 10d9012e83ef "mm, swap: don't free a hibernation slot that is in the swap cache"
-      - Authored by a reviewer, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260811132209.2862708-2-youngjun.park@lge.com
-    - aedf2efd1897 "mm/pagewalk: fix stale walk->action escaping walk_pmd_range()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260811161949.3879321-2-imv4bel@gmail.com
-- mm-hotfixes-unstable: 10 -> 2 commits
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 2 -> 0 commits
-    - no role, maintainer: 3 -> 1 commits
-    - reviewer, maintainer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-    - maintainer, reviewer: 1 -> 0 commits
-- mm-stable: 500 -> 500 commits (no change)
+- mm-stable: 500 -> 501 commits
   - series: 67 (410) -> 67 (410) (no change)
     - no role, nobody: 33 -> 33 commits (no change)
-    - no role, no role : 134 -> 134 commits (no change)
+    - no role, no role : 134 -> 135 commits
     - no role, reviewer: 65 -> 65 commits (no change)
     - no role, maintainer: 91 -> 91 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
@@ -63,57 +25,31 @@
     - maintainer, nobody: 115 -> 115 commits (no change)
     - maintainer, no role : 20 -> 20 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-unstable: 177 -> 181 commits
+  - changed commits
+    - 08745c623501 "selftests/mm: thuge-gen: fix test_shmget() for PAGE_SIZE check"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260812-selftests-thuge-gen-fix-v2-1-9adaa693e73b@kernel.org
+- mm-unstable: 181 -> 180 commits
   - series: 21 (107) -> 21 (107) (no change)
-    - no role, nobody: 33 -> 34 commits
-    - no role, no role : 61 -> 62 commits
-    - no role, reviewer: 24 -> 24 commits (no change)
+    - no role, nobody: 34 -> 34 commits (no change)
+    - no role, no role : 62 -> 60 commits
+    - no role, reviewer: 24 -> 25 commits
     - no role, maintainer: 46 -> 46 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 5 -> 7 commits
+    - maintainer, nobody: 7 -> 7 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 22b672695a20 "mm/rmap: synchronize lock and unlock target in anon_vma_clone"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/OS7PR01MB139142FE16EC63B892559D40496DA2@OS7PR01MB13914.jpnprd01.prod.outlook.com
-    - c971f65a6e2f "arch_numa: avoid false positive fortify warning in setup_node_to_cpumask_map()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260813-arch_numa-avoid-fortify-warning-v2-1-093ad97a78df@kernel.org
   - changed commits
-    - 7a4fe921ad33 "mm/Kconfig: make MEMORY_FAILURE select MIGRATION"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Miaohe Lin <linmiaohe@huawei.com>"
-      - dropped "Cc: Miaohe Lin <linmiaohe@huawei.com>"
-      - Link: https://lore.kernel.org/20260813134916.292733-1-xieyuanbin1@huawei.com
-    - 40b2f72eff9a "mm/hmm.c:hmm_do_fault(): suppress sparse warning"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 43b127ae334b "mm-hmmc-hmm_do_fault-suppress-sparse-warning-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/anu1N-DOnQwxO1kF@skinsburskii
-    - f811fe23ea49 "riscv: mm: fix concurrency in mark_new_valid_map()"
-      - Authored by no role player, reviewed by nobody
-      - added "Cc: Pasha Tatashin <pasha.tatashin@soleen.com>"
-      - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
-      - added "Cc: Paul Walmsley <paul.walmsley@sifive.com>"
-      - added "Cc: Yunhui Cui <cuiyunhui@bytedance.com>"
-      - added "Cc: tongtiangen <tongtiangen@huawei.com>"
-      - Link: https://lore.kernel.org/20260629-riscv-mm-new-valid-map-ordering-v1-1-60d8c10c6292@iscas.ac.cn
-      - Link: https://lore.kernel.org/linux-riscv/da19ffcf-8042-4f96-9c2d-649468dc6a0a@kernel.org/ # [1]
-    - fd686a822281 "riscv: mm: exclude invalid THP PMDs from page table check"
-      - Authored by no role player, reviewed by nobody
-      - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Cc: Vivian Wang <wangruikang@iscas.ac.cn>"
-      - added "Cc: Alexandre Ghiti <alex@ghiti.fr>"
-      - added "Cc: Yaxing Guo <guoyaxing@bosc.ac.cn>"
-      - Link: https://lore.kernel.org/20260523042052.35476-1-cuiyunhui@bytedance.com
-- mm-new: 4 -> 2 commits
+    - 0ec7412d400e "mm/rmap: synchronize lock and unlock target in anon_vma_clone"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+      - Link: https://lore.kernel.org/OS7PR01MB139142FE16EC63B892559D40496DA2@OS7PR01MB13914.jpnprd01.prod.outlook.com
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - maintainer, nobody: 2 -> 0 commits
 - mm-nonmm-stable: 88 -> 88 commits (no change)
   - series: 9 (25) -> 9 (25) (no change)
     - no role, nobody: 31 -> 31 commits (no change)

@@ -49,10 +49,10 @@
     - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - caff77d56ec2 "mm: introduce and use vma_filebacked_address()" (5/16)
+      - 552c21c133aa "mm: introduce and use vma_filebacked_address()" (5/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org
-      - 9c78ea230d4e "selftests/mm: skip hard dirty page-cache test on NFS" (2/4)
+      - 7a3faf8a72d4 "selftests/mm: skip hard dirty page-cache test on NFS" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727095225.372655-5-usama.anjum@arm.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -1,22 +1,11 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 1 -> 3 commits
+- mm-hotfixes-stable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 2 commits
-    - maintainer, reviewer: 0 -> 1 commits
-  - changed commits
-    - bf4ade7dbd76 "memcg: keep folio's objcg same as its node"
-      - Authored by a maintainer, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260807142406.443516-1-shakeel.butt@linux.dev
-    - 92192e9c5ee0 "mm: memcg-v1: fix memsw and TCP failcnt accounting"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260811030843.109104-1-guopeng.zhang@linux.dev
-- mm-hotfixes-unstable: 3 -> 1 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 0 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-    - maintainer, reviewer: 1 -> 0 commits
 - mm-stable: 14 -> 14 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, no role : 1 -> 1 commits (no change)

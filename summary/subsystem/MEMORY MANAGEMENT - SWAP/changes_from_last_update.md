@@ -1,15 +1,9 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, maintainer: 0 -> 1 commits
-  - changed commits
-    - 10d9012e83ef "mm, swap: don't free a hibernation slot that is in the swap cache"
-      - Authored by a reviewer, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260811132209.2862708-2-youngjun.park@lge.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, maintainer: 1 -> 0 commits
 - mm-stable: 10 -> 10 commits (no change)
   - series: 2 (6) -> 2 (6) (no change)
     - no role, no role : 3 -> 3 commits (no change)

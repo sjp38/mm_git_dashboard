@@ -4,18 +4,23 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 39 -> 39 commits (no change)
+- mm-stable: 39 -> 40 commits
   - series: 5 (26) -> 5 (26) (no change)
     - no role, nobody: 10 -> 10 commits (no change)
-    - no role, no role : 17 -> 17 commits (no change)
+    - no role, no role : 17 -> 18 commits
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-unstable: 26 -> 26 commits (no change)
+  - changed commits
+    - 08745c623501 "selftests/mm: thuge-gen: fix test_shmget() for PAGE_SIZE check"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260812-selftests-thuge-gen-fix-v2-1-9adaa693e73b@kernel.org
+- mm-unstable: 26 -> 25 commits
   - series: 4 (15) -> 4 (15) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 12 -> 12 commits (no change)
+    - no role, no role : 12 -> 11 commits
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
