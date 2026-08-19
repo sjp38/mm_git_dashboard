@@ -308,87 +308,84 @@
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lore.kernel.org/DK7NM9RPUJOD.11PNJJ5N2OBED@linux.dev
         - Link: https://lore.kernel.org/20260722150006.3848560-5-hannes@cmpxchg.org
-- mm-unstable: 23 total, 3 (13) series, 10 non-series commits
+- mm-unstable: 22 total, 3 (13) series, 9 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 14 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 13 commits
     - no role, reviewer: 2 commits
-    - no role, maintainer: 5 commits
+    - no role, maintainer: 6 commits
   - full commits list
-    - 6386b62b328e "mm/kconfig: drop redundant memory hotplug dependencies"
+    - e06063019849 "mm/kconfig: drop redundant memory hotplug dependencies"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260707090331.52971-1-kaitao.cheng@linux.dev
-    - c1e52f929cc5 "mm: standardize printing for pgtable entries"
+    - a5a4b884a2b1 "mm: standardize printing for pgtable entries"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260709044334.1741263-1-anshuman.khandual@arm.com
-    - 472fbeace4ff "mm/kconfig: drop redundant dependency wrappers"
+    - 53c5e0028b5d "mm/kconfig: drop redundant dependency wrappers"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260712093326.8313-1-kaitao.cheng@linux.dev
     - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16 commits)
-      - 6a5cbe2c3d28 "mm/vma: introduce VMA anon page offset field and add helpers" (0/16)
+      - e97997d6fc07 "mm/vma: introduce VMA anon page offset field and add helpers" (0/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-0-c21581c0c3c8@kernel.org
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-1-c21581c0c3c8@kernel.org
-      - a7e146699e43 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
+      - 16eb1909d19d "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-      - fccb3b8233af "mm: introduce linear_anon_page_index()" (2/16)
+      - 84b2f5c18288 "mm: introduce linear_anon_page_index()" (2/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
-      - 4e24e0793a79 "mm: abstract vma_address() and introduce vma_anon_address()" (3/16)
+      - 8645df89ccc8 "mm: abstract vma_address() and introduce vma_anon_address()" (3/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-4-c21581c0c3c8@kernel.org
-      - e1c51474b794 "mm: update print_bad_page_map() to show anon index if appropriate" (4/16)
+      - 883b10877ae5 "mm: update print_bad_page_map() to show anon index if appropriate" (4/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-5-c21581c0c3c8@kernel.org
-      - 552c21c133aa "mm: introduce and use vma_filebacked_address()" (5/16)
+      - 07a8d459bb07 "mm: introduce and use vma_filebacked_address()" (5/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org
-      - 9360b5d398b6 "mm: clean up vma_address_end()" (10/16)
+      - 71f53afeb2bd "mm: clean up vma_address_end()" (10/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-11-c21581c0c3c8@kernel.org
-      - 8d5786b7fbbd "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/16)
+      - 6969bfd3718c "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org
     - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3 commits)
-      - e0aaf1d8cc61 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/3)
+      - ad05c4f0873f "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev
         - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
-      - c017b1639aa3 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
+      - 935c8ebd4477 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
-      - e5bec6bceb1b "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
+      - 0e7e604e6779 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
-    - ad2391c94eba "mm/sparse: correct init section annotations"
+    - c10f2c449bce "mm/sparse: correct init section annotations"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260731164758.1210668-1-ekffu200098@gmail.com
-    - 46d077780066 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
+    - 9deb64df7be7 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
-    - 514afb4d18ea "mm: use a folio in the softleaf_is_device_private path"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260803031554.30421-1-hongfu.li@linux.dev
     - series "mm/page_ext: remove pgdat_page_ext_init()", v2. (2 commits)
-      - af31d7ede36d "mm/Kconfig: make FLATMEM depend on !NUMA" (0/2)
+      - a7ef7b41267a "mm/Kconfig: make FLATMEM depend on !NUMA" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260804151145.3419768-1-ekffu200098@gmail.com
         - Link: https://lore.kernel.org/20260804151145.3419768-2-ekffu200098@gmail.com
-    - 91fcc0fc12fe "mm/sparse: keep mem_section_usage_size() internal"
+    - 1a5340c6818b "mm/sparse: keep mem_section_usage_size() internal"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260805022536.1206575-1-songmuchun@bytedance.com
-    - f2b1d1cc0862 "drivers/base, mm: move arch_numa.c to mm/"
+    - f18d431ea118 "drivers/base, mm: move arch_numa.c to mm/"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
-      - 1a48b9a31d92 "mm/vmstat: add NRSWP{IN,OUT} counters" (6/7)
+      - a5442531508c "mm/vmstat: add NRSWP{IN,OUT} counters" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-8-hch@lst.de
-    - 1859ac5f128f "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
-      - Authored by no role player, reviewed by nobody
+    - 92dd50d99738 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
-    - 81b11fab11b4 "mm/Kconfig: make MEMORY_FAILURE select MIGRATION"
+    - 8d6ac7cddaff "mm/Kconfig: make MEMORY_FAILURE select MIGRATION"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260813134916.292733-1-xieyuanbin1@huawei.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

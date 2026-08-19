@@ -14,12 +14,22 @@
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-unstable: 23 -> 23 commits (no change)
+- mm-unstable: 23 -> 22 commits
   - series: 3 (13) -> 3 (13) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 14 -> 14 commits (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 14 -> 13 commits
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
+    - no role, maintainer: 5 -> 6 commits
+  - changed commits
+    - 92dd50d99738 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+      - dropped "Cc: Jan Kara <jack@suse.cz>"
+      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
+  - dropped commits
+    - 514afb4d18ea "mm: use a folio in the softleaf_is_device_private path"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260803031554.30421-1-hongfu.li@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)

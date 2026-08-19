@@ -13,15 +13,9 @@
     - maintainer, no role : 2 -> 2 commits (no change)
 - mm-unstable: 5 -> 5 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
-    - no role, no role : 4 -> 3 commits
-    - no role, reviewer: 0 -> 1 commits
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 0ec7412d400e "mm/rmap: synchronize lock and unlock target in anon_vma_clone"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-      - Link: https://lore.kernel.org/OS7PR01MB139142FE16EC63B892559D40496DA2@OS7PR01MB13914.jpnprd01.prod.outlook.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

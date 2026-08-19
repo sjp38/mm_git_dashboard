@@ -53,18 +53,18 @@
         - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
 - mm-unstable: 3 total, 0 (1) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 2c4848e1f8ee "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
+      - a7c799bdfc2b "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
-    - f2b1d1cc0862 "drivers/base, mm: move arch_numa.c to mm/"
+    - f18d431ea118 "drivers/base, mm: move arch_numa.c to mm/"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
-    - 3b1d6bd7bb11 "arch_numa: avoid false positive fortify warning in setup_node_to_cpumask_map()"
-      - Authored by no role player, reviewed by nobody
+    - 992bbcdd8bab "arch_numa: avoid false positive fortify warning in setup_node_to_cpumask_map()"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260813-arch_numa-avoid-fortify-warning-v2-1-093ad97a78df@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

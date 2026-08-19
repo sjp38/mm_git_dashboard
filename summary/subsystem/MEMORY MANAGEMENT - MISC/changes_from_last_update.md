@@ -4,27 +4,37 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 39 -> 40 commits
+- mm-stable: 40 -> 40 commits (no change)
   - series: 5 (26) -> 5 (26) (no change)
     - no role, nobody: 10 -> 10 commits (no change)
-    - no role, no role : 17 -> 18 commits
+    - no role, no role : 18 -> 18 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-  - changed commits
-    - 08745c623501 "selftests/mm: thuge-gen: fix test_shmget() for PAGE_SIZE check"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260812-selftests-thuge-gen-fix-v2-1-9adaa693e73b@kernel.org
-- mm-unstable: 26 -> 25 commits
+- mm-unstable: 25 -> 27 commits
   - series: 4 (15) -> 4 (15) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 12 -> 11 commits
+    - no role, no role : 11 -> 12 commits
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 3 commits
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - 3469e40016a5 "selftests/mm: drop redundant open() in mprotect_tests()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260817080616.52946-1-hongfu.li@linux.dev
+    - 166b4f892c8b "selftests/mm: fix unchecked ftruncate return value in soft-dirty test"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260818133206.39503-1-anshumantewari123@gmail.com
+  - changed commits
+    - series "mm/khugepaged: several cleanups", v4. (6)
+      - c63806534580 "mm: Documentation: clarify where the mTHP stats live (5/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260811-khugepaged_pte_refactor-v4-7-ddac39d61c4a@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

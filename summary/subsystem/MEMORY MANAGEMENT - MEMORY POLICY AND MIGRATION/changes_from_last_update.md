@@ -2,8 +2,13 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - bb0a41288aaa "mm/migrate_device: avoid out-of-bounds writes for compound folios"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260817120758.669807-3-sh_def@163.com
 - mm-stable: 19 -> 19 commits (no change)
   - series: 3 (18) -> 3 (18) (no change)
     - no role, no role : 3 -> 3 commits (no change)
@@ -11,10 +16,14 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 5 -> 5 commits (no change)
+- mm-unstable: 5 -> 6 commits
   - series: 0 (3) -> 0 (3) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, reviewer: 2 -> 3 commits
+  - new commits
+    - 8a1111edf023 "mm/migrate_device: fix cache flush when replacing huge zero PMD"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260817060845.377800-2-sh_def@163.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

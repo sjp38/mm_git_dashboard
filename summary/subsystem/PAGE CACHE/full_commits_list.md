@@ -38,20 +38,20 @@
         - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
 - mm-unstable: 4 total, 0 (3) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 1 commits
     - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 2 commits
   - full commits list
-      - fccb3b8233af "mm: introduce linear_anon_page_index()" (2/16)
+      - 84b2f5c18288 "mm: introduce linear_anon_page_index()" (2/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
-      - 5a4306808d5e "mm/swap: remove SWP_FS_OPS" (5/7)
+      - 604c1372ced9 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-    - 1859ac5f128f "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
-      - Authored by no role player, reviewed by nobody
+    - 92dd50d99738 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
-      - f59fb2434f5c "mm/swap: move swap_ops into file systems for file system-based swap" (2/3)
+      - 350f471c7672 "mm/swap: move swap_ops into file systems for file system-based swap" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

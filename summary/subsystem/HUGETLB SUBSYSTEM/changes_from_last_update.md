@@ -1,9 +1,16 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 3 commits
+  - new commits
+    - 5439dfde66ab "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260817103433.191266-1-njilav@gmail.com
+    - 583ad8eb326a "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260814083027.1419487-1-xialonglong2025@163.com
 - mm-stable: 36 -> 36 commits (no change)
   - series: 4 (32) -> 4 (32) (no change)
     - no role, nobody: 5 -> 5 commits (no change)
@@ -12,11 +19,15 @@
     - no role, maintainer: 10 -> 10 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 5 -> 5 commits (no change)
+- mm-unstable: 5 -> 6 commits
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - da12d8fa9119 "hugetlb: add cond_resched() to __unmap_hugepage_range()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260818135029.93288-1-leon.hwang@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

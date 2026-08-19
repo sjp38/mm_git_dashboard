@@ -10,13 +10,20 @@
     - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 16 -> 16 commits (no change)
+- mm-unstable: 16 -> 18 commits
   - series: 3 (12) -> 3 (12) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 3 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 6 -> 6 commits (no change)
+    - no role, maintainer: 6 -> 7 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - 503d841a7a4d "mm: include swap.h in swapops.h"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260818115026.656406-1-kirill@shutemov.name
+    - 854d30b1c4e8 "mm, swap: ratelimit bad swap entry reports"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260818-swap_part_one-v1-1-a4fc58119fc0@debian.org
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
