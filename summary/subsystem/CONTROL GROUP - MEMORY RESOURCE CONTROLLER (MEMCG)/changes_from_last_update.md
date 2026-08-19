@@ -11,19 +11,11 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 12 -> 12 commits (no change)
-- mm-unstable: 7 -> 9 commits
+- mm-unstable: 9 -> 9 commits (no change)
   - series: 2 (4) -> 2 (4) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 5 -> 7 commits
+    - no role, maintainer: 7 -> 7 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 45243a9576d4 "mm/memcontrol: avoid false sharing between vmstats and events"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260817103835.2937733-1-usama.arif@linux.dev
-      - Link: : http://lore.kernel.org/aoAABX59IzUXz/Rv@ly-workstation
-    - 1d67f4c15011 "mm: memcg: release the css reference when a stock slot empties"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260818130135.154315-1-husong@kylinos.cn
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

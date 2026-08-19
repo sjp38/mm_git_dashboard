@@ -8,9 +8,9 @@
     - reviewer, maintainer: 1 commits
     - maintainer, nobody: 4 commits
     - maintainer, reviewer: 1 commits
-- mm-hotfixes-unstable: 6 total, 0 (0) series, 6 non-series commits
+- mm-hotfixes-unstable: 7 total, 0 (0) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, maintainer: 3 commits
     - reviewer, reviewer: 1 commits
     - maintainer, no role : 1 commits

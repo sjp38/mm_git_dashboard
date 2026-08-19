@@ -38,13 +38,13 @@
     - no role, no role : 2 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - a15f3bb2b581 "mm/vmalloc: make vm_struct.nr_pages an unsigned long"
+    - 9080b5bac480 "mm/vmalloc: make vm_struct.nr_pages an unsigned long"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260801114915.115224-1-iprintercanon@gmail.com
-    - 371734d0041d "mm/vmalloc: do not warn on -ENOMEM from va_alloc()"
+    - 04295e796139 "mm/vmalloc: do not warn on -ENOMEM from va_alloc()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260802104627.63892-1-urezki@gmail.com
-    - 25ba34951daf "mm: add some missing includes to mm-local headers"
+    - 2b7db30dc285 "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -10,16 +10,9 @@
     - no role, maintainer: 3 -> 3 commits (no change)
 - mm-unstable: 3 -> 3 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 992bbcdd8bab "arch_numa: avoid false positive fortify warning in setup_node_to_cpumask_map()"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20260813-arch_numa-avoid-fortify-warning-v2-1-093ad97a78df@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

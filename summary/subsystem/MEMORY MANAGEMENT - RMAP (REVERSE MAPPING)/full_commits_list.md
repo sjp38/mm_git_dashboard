@@ -91,21 +91,21 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 07a8d459bb07 "mm: introduce and use vma_filebacked_address()" (5/16)
+      - 918d7e56c46e "mm: introduce and use vma_filebacked_address()" (5/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org
-      - acb4e46b6055 "mm/rmap: track whether the page VMA mapped pgoff is anonymous" (9/16)
+      - 4b20b441e154 "mm/rmap: track whether the page VMA mapped pgoff is anonymous" (9/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-10-c21581c0c3c8@kernel.org
-      - 6969bfd3718c "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/16)
+      - f97c6d1fe596 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
-      - f66521e51a87 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
+      - 9f9e3b5c3929 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
-    - b650ae5ce994 "mm/rmap: synchronize lock and unlock target in anon_vma_clone"
+    - 8bd65da7a332 "mm/rmap: synchronize lock and unlock target in anon_vma_clone"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/OS7PR01MB139142FE16EC63B892559D40496DA2@OS7PR01MB13914.jpnprd01.prod.outlook.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

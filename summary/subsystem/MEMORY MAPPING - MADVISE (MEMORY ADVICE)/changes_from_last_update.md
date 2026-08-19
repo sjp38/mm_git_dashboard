@@ -1,13 +1,9 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-  - new commits
-    - d98aa14a03ea "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
+    - reviewer, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 4 -> 4 commits (no change)
   - series: 0 (4) -> 0 (4) (no change)
     - no role, no role : 3 -> 3 commits (no change)
