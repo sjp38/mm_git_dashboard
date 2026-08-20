@@ -12,13 +12,19 @@
     - no role, maintainer: 10 -> 10 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 6 -> 6 commits (no change)
+- mm-unstable: 6 -> 5 commits
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 1 commits
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - changed commits
+    - 92dcffebb8d4 "hugetlb: add cond_resched() to __unmap_hugepage_range()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-new
+      - Link: https://lore.kernel.org/20260818135029.93288-1-leon.hwang@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

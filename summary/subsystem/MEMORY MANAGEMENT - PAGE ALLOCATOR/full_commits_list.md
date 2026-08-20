@@ -173,27 +173,27 @@
     - no role, reviewer: 3 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 680f3fd1258d "mm/page_reporting: add page_reporting_delay_ms module parameter"
+    - 7d3e13c17ab3 "mm/page_reporting: add page_reporting_delay_ms module parameter"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260731193705.2902728-1-pratmal@google.com
-    - 9b74c1c9b2b6 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
+    - f7ef7bc226af "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
       - Authored by no role player, reviewed by no role player
       - Link: : https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org
       - Link: https://lore.kernel.org/linux-mm/tencent_FFD4F4D728AAE8A8AE0AF277A59854A29A06@qq.com/
       - Link: https://lore.kernel.org/tencent_A860C873956A52E26AD8D309A308A241BA08@qq.com
-    - f2559f188bb7 "mm: add some missing includes to mm-local headers"
+    - 4470fdf6ab07 "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-      - 31aabe68e371 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
+      - c59a908b83c8 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
-    - 3b501a274533 "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder"
+    - 099f51cc317b "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260805093108.2352900-1-ye.liu@linux.dev
-    - 53517ac8c943 "mm/show_mem: fix format string inconsistencies and type mismatches"
+    - 987b7a90e13b "mm/show_mem: fix format string inconsistencies and type mismatches"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260805021556.1908807-1-ye.liu@linux.dev
-    - 8ab03be274d4 "mm: debug_page_alloc: fix NULL buf in debug_guardpage_minorder_setup"
+    - aa3f012b4302 "mm: debug_page_alloc: fix NULL buf in debug_guardpage_minorder_setup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260806004556.2633049-1-ye.liu@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

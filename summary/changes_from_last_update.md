@@ -8,24 +8,19 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 7 -> 8 commits
+- mm-hotfixes-unstable: 8 -> 8 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 1 -> 2 commits
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - 90c4f67f851f "MAINTAINERS: add Lance Yang as a hung task detector co-maintainer"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260820014535.79105-1-lance.yang@linux.dev
   - changed commits
-    - 66e76f8e5440 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+    - 689c1f1f669a "MAINTAINERS: add Lance Yang as a hung task detector co-maintainer"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-      - added "Cc: <stable@vger.kernel.org>"
-      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-      - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
+      - added "Acked-by: Petr Mladek <pmladek@suse.com>"
+      - dropped "Cc: Petr Mladek <pmladek@suse.com>"
+      - Link: https://lore.kernel.org/20260820014535.79105-1-lance.yang@linux.dev
 - mm-stable: 501 -> 501 commits (no change)
   - series: 67 (410) -> 67 (410) (no change)
     - no role, nobody: 33 -> 33 commits (no change)
@@ -39,81 +34,100 @@
     - maintainer, nobody: 115 -> 115 commits (no change)
     - maintainer, no role : 20 -> 20 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-unstable: 187 -> 188 commits
-  - series: 21 (107) -> 21 (107) (no change)
-    - no role, nobody: 34 -> 33 commits
-    - no role, no role : 61 -> 62 commits
+- mm-unstable: 188 -> 175 commits
+  - series: 21 (107) -> 20 (97)
+    - no role, nobody: 33 -> 29 commits
+    - no role, no role : 62 -> 52 commits
     - no role, reviewer: 26 -> 26 commits (no change)
-    - no role, maintainer: 51 -> 52 commits
+    - no role, maintainer: 52 -> 52 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 7 -> 7 commits (no change)
+    - maintainer, nobody: 7 -> 8 commits
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - 4b2ae13f3393 "selftests/mm: check stat() return value in khugepaged get_finfo()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260819121426.49500-1-anshumantewari123@gmail.com
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
+      - f72997223632 "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix (2/16)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin
   - changed commits
-    - ee121d831b89 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Christoph Hellwig <hch@lst.de>"
-      - dropped "Cc: Christoph Hellwig <hch@infradead.org>"
-      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
-    - f13c52ab5d0f "mm: include swap.h in swapops.h"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20260818115026.656406-1-kirill@shutemov.name
-    - 9bf0797d351f "selftests/mm: fix unchecked ftruncate return value in soft-dirty test"
+    - 8910b125f035 "selftests/mm: check stat() return value in khugepaged get_finfo()"
       - Authored by no role player, reviewed by a maintainer
       - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
-      - Link: https://lore.kernel.org/20260818133206.39503-1-anshumantewari123@gmail.com
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-- mm-nonmm-stable: 88 -> 95 commits
-  - series: 9 (25) -> 10 (27)
-    - no role, nobody: 31 -> 34 commits
+      - Link: https://lore.kernel.org/20260819121426.49500-1-anshumantewari123@gmail.com
+- mm-new: 2 -> 16 commits
+  - series: 0 (0) -> 1 (10)
+    - no role, nobody: 1 -> 5 commits
+    - no role, no role : 1 -> 11 commits
+  - changed commits
+    - 9e1f9d89c749 "selftests/mm: fix soft-dirty kselftest supported check"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-new
+      - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
+      - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
+    - 6786740ad738 "riscv: mm: fix concurrency in mark_new_valid_map()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-new
+      - Link: https://lore.kernel.org/20260629-riscv-mm-new-valid-map-ordering-v1-1-60d8c10c6292@iscas.ac.cn
+      - Link: https://lore.kernel.org/linux-riscv/da19ffcf-8042-4f96-9c2d-649468dc6a0a@kernel.org/ # [1]
+    - caefed13ff27 "riscv: mm: exclude invalid THP PMDs from page table check"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-new
+      - Link: https://lore.kernel.org/20260523042052.35476-1-cuiyunhui@bytedance.com
+    - series "sh: remove NUMA and SPARSEMEM support", v2. (10)
+      - 6f8a7bc5a4f8 "sh: remove CONFIG_NUMA and related configuration options (0/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260510135546.13554-1-rppt@kernel.org
+        - Link: https://lore.kernel.org/20260510135546.13554-2-rppt@kernel.org
+      - b2c42f1b2f1c "sh: mm: remove numa.c (1/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260510135546.13554-3-rppt@kernel.org
+      - 7ebde8939b94 "sh: mm: drop allocate_pgdat() (2/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260510135546.13554-4-rppt@kernel.org
+      - bbfc90dcbd82 "sh: remove setup_bootmem_node() and plat_mem_setup() (3/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260510135546.13554-5-rppt@kernel.org
+      - 2931209d1927 "sh: drop dead code guarded by #ifdef CONFIG_NUMA (4/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260510135546.13554-6-rppt@kernel.org
+      - 21bc2c64e198 "sh: drop include/asm/mmzone.h (5/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260510135546.13554-7-rppt@kernel.org
+      - 945139db6eb4 "init/Kconfig: drop ARCH_WANT_NUMA_VARIABLE_LOCALITY (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260510135546.13554-8-rppt@kernel.org
+      - 8991e0f6e4d1 "sh: init: remove call the memblock_set_node() (7/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260510135546.13554-9-rppt@kernel.org
+      - 466db33afe53 "sh: remove SPARSEMEM related entries from Kconfig (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260510135546.13554-10-rppt@kernel.org
+      - 3b104add8a3b "sh: drop include/asm/sparsemem.h (9/10)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-new
+        - Link: https://lore.kernel.org/20260510135546.13554-11-rppt@kernel.org
+    - 92dcffebb8d4 "hugetlb: add cond_resched() to __unmap_hugepage_range()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-new
+      - Link: https://lore.kernel.org/20260818135029.93288-1-leon.hwang@linux.dev
+- mm-nonmm-stable: 95 -> 95 commits (no change)
+  - series: 10 (27) -> 10 (27) (no change)
+    - no role, nobody: 34 -> 34 commits (no change)
     - no role, no role : 18 -> 18 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 29 -> 33 commits
+    - no role, maintainer: 33 -> 33 commits (no change)
     - maintainer, nobody: 7 -> 7 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - d9c0fd5533fb "lib/interval_tree: fix allocation warning messages"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260808123608.73613-1-kmehltretter@gmail.com
-    - dfe88f832fe8 "mailmap: update email address for Linfeng Sun"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260810073235.22980-1-linfeng.sun.dev@gmail.com
-    - 5146e0688d86 "prctl: fix PR_SET_MM_AUXV losing the forced AT_NULL terminator"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260809002901.32591-1-include@grrlz.net
-    - f6f47a9ca82b "squashfs: avoid thundering-herd cache wakeups"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260807172421.3875982-1-usama.arif@linux.dev
-    - series "ocfs2: bound-check both readdir re-validation scans", v2. (2)
-      - bec0eed29b41 "ocfs2: bound-check dir entries in the readdir re-validation scan (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20260811024337.3972976-1-zhanxusheng@xiaomi.com
-        - Link: https://sashiko.dev/#/patchset/20260806022044.167962-1-zhanxusheng@xiaomi.com
-        - Link: https://lore.kernel.org/20260811024337.3972976-2-zhanxusheng@xiaomi.com
-      - 763c097f71bc "ocfs2: bound-check dir entries in the inline-data re-validation scan (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-nonmm-unstable -> mm-nonmm-stable
-        - Link: https://lore.kernel.org/20260811024337.3972976-3-zhanxusheng@xiaomi.com
-    - eef628bce8e1 "mailmap: fix bouncing address for Taniya Das"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-nonmm-unstable -> mm-nonmm-stable
-      - Link: https://lore.kernel.org/20260817-topic-taniya_email_bounce-v1-1-d7af1f113d64@oss.qualcomm.com
-- mm-nonmm-unstable: 10 -> 3 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 4 -> 1 commits
+- mm-nonmm-unstable: 3 -> 3 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 4 -> 0 commits

@@ -26,46 +26,46 @@
     - maintainer, nobody: 4 commits
   - full commits list
     - series "zram: fix zram issues reported by sashiko". (2 commits)
-      - c5d3e8d16ac7 "zram: set default primary compressor in zram_destroy_comps()" (0/2)
+      - e224fae7f389 "zram: set default primary compressor in zram_destroy_comps()" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260729045745.775973-2-senozhatsky@chromium.org
         - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com [1]
-      - 971cf48e68bb "zram: validate deflate params" (1/2)
+      - 420cd07d3ee5 "zram: validate deflate params" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260729045745.775973-3-senozhatsky@chromium.org
         - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com
-    - 9fd1cb6c4795 "Documentation: zram: correct algo parameters configuration documentation"
+    - 3516e29a62b2 "Documentation: zram: correct algo parameters configuration documentation"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260730075158.1339787-1-senozhatsky@chromium.org
     - series "zram: fix zstd error paths and add parameter validation", v6, (5 commits)
-      - 7a897263eb83 "zram: do not release zstd global params from error paths" (0/5)
+      - 10a1d5f89f1e "zram: do not release zstd global params from error paths" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-1-haoqinhuang7@gmail.com
         - Link: https://lore.kernel.org/20260804093841.67920-2-haoqinhuang7@gmail.com
-      - 0d9ec3df208e "zram: reject zero-size dictionary" (1/5)
+      - 468e12846bf2 "zram: reject zero-size dictionary" (1/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-3-haoqinhuang7@gmail.com
-      - 19048ab5bba6 "zram: add pr_fmt to backend files" (2/5)
+      - 3845bc21c7ec "zram: add pr_fmt to backend files" (2/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-4-haoqinhuang7@gmail.com
-      - ede71b04692f "zram: validate parameters in each backend's setup_params" (3/5)
+      - 3ec0a1724a98 "zram: validate parameters in each backend's setup_params" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-5-haoqinhuang7@gmail.com
-      - de8ee79c5aac "zram: reset per-priority params when changing algorithm before init" (4/5)
+      - 170083e40d0a "zram: reset per-priority params when changing algorithm before init" (4/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804093841.67920-6-haoqinhuang7@gmail.com
     - series "zram: fix stale scan bounds after reinitialization". (2 commits)
-      - 8846c6475004 "zram: fix out-of-bounds access in writeback_store()" (0/2)
+      - a51dd05ccc7f "zram: fix out-of-bounds access in writeback_store()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804065919.3970386-1-xialonglong2025@163.com
         - Link: https://lore.kernel.org/20260804065919.3970386-2-xialonglong2025@163.com
-      - 538e387edc48 "zram: fix out-of-bounds access in read_block_state()" (1/2)
+      - e2b1a7ee9bea "zram: fix out-of-bounds access in read_block_state()" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260804065919.3970386-3-xialonglong2025@163.com
-    - 124d84a94d62 "zram: switch to unsigned long indexing"
+    - 2f55b24026e8 "zram: switch to unsigned long indexing"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260806031640.536615-1-senozhatsky@chromium.org
-    - 348a776cbc4b "zram: fix slot lock bit position on big-endian 64-bit"
+    - 13d2a26c3331 "zram: fix slot lock bit position on big-endian 64-bit"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260810202241.2436603-1-devnexen@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

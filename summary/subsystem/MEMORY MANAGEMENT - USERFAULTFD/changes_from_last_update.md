@@ -3,15 +3,7 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 66e76f8e5440 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-      - added "Cc: <stable@vger.kernel.org>"
-      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-      - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 12 -> 12 commits (no change)
   - series: 0 (11) -> 0 (11) (no change)
     - no role, nobody: 2 -> 2 commits (no change)

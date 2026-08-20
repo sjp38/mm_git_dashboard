@@ -14,15 +14,16 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 8 -> 8 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 14 -> 15 commits
+- mm-unstable: 15 -> 15 commits (no change)
   - series: 3 (13) -> 3 (13) (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 6 -> 6 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
-  - new commits
-    - 4b2ae13f3393 "selftests/mm: check stat() return value in khugepaged get_finfo()"
+  - changed commits
+    - 8910b125f035 "selftests/mm: check stat() return value in khugepaged get_finfo()"
       - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
       - Link: https://lore.kernel.org/20260819121426.49500-1-anshumantewari123@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

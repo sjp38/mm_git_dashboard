@@ -17,7 +17,7 @@
   - author/reviewer role stat
     - maintainer, no role : 1 commits
   - full commits list
-    - 9c0dcbe06dad "memcg: make the v1 soft limit knob inert"
+    - 8a8208374325 "memcg: make the v1 soft limit knob inert"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
 - mm-stable: 14 total, 1 (4) series, 10 non-series commits
@@ -78,37 +78,37 @@
     - maintainer, maintainer: 1 commits
   - full commits list
     - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2 commits)
-      - 45af85e680e7 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
+      - 3a141eb5f3f7 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev
     - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3 commits)
-      - 051be0d7c210 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/3)
+      - c645a71da4ff "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev
         - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
-      - dd6a5ea1adc5 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
+      - 8ae3342ff8af "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
-      - 1ca75d8e9458 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
+      - 662555331102 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
-    - 1f884e55f436 "mm: memcg: stop reclaim when a limit update is superseded"
+    - 2eb59f701b1f "mm: memcg: stop reclaim when a limit update is superseded"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260724021805.1234583-1-guopeng.zhang@linux.dev
-    - 9bc1899a1f30 "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
+    - ca0c61f61d0d "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260729024612.3369005-1-shakeel.butt@linux.dev
       - Link: https://lore.kernel.org/7a4e5591f45df455e6a485fc5400989569d3d22d.camel@surriel.com/ [1]
-    - f2559f188bb7 "mm: add some missing includes to mm-local headers"
+    - 4470fdf6ab07 "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-    - 2e46f21dc0ba "mm/memcontrol: avoid false sharing between vmstats and events"
+    - 3e1147b86bd8 "mm/memcontrol: avoid false sharing between vmstats and events"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260817103835.2937733-1-usama.arif@linux.dev
       - Link: : http://lore.kernel.org/aoAABX59IzUXz/Rv@ly-workstation
-    - 21efcf3ed0d4 "mm: memcg: release the css reference when a stock slot empties"
+    - 8f2e92031ae8 "mm: memcg: release the css reference when a stock slot empties"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260818130135.154315-1-husong@kylinos.cn
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

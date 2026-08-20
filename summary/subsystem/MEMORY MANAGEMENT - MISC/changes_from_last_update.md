@@ -12,25 +12,28 @@
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-unstable: 27 -> 28 commits
-  - series: 4 (15) -> 4 (15) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
+- mm-unstable: 28 -> 27 commits
+  - series: 4 (15) -> 4 (14)
+    - no role, nobody: 3 -> 2 commits
     - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 3 -> 4 commits
+    - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - 4b2ae13f3393 "selftests/mm: check stat() return value in khugepaged get_finfo()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260819121426.49500-1-anshumantewari123@gmail.com
   - changed commits
-    - 9bf0797d351f "selftests/mm: fix unchecked ftruncate return value in soft-dirty test"
+    - 8910b125f035 "selftests/mm: check stat() return value in khugepaged get_finfo()"
       - Authored by no role player, reviewed by a maintainer
       - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
-      - Link: https://lore.kernel.org/20260818133206.39503-1-anshumantewari123@gmail.com
-- mm-new: 0 -> 0 commits (no change)
+      - Link: https://lore.kernel.org/20260819121426.49500-1-anshumantewari123@gmail.com
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - changed commits
+    - 9e1f9d89c749 "selftests/mm: fix soft-dirty kselftest supported check"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-new
+      - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
+      - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

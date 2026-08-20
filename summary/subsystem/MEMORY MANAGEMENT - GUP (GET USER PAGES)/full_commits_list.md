@@ -18,28 +18,28 @@
     - no role, no role : 3 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 340294d234c7 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
+      - 8f64a838dea1 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-    - 785e9110e1c6 "mm/gup: fix always draining LRU caches in collect_longterm_unpinnable_folios()"
+    - 884be2f39435 "mm/gup: fix always draining LRU caches in collect_longterm_unpinnable_folios()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260731-check_and_migrate_movable_folios-v1-1-e0002d7b791e@kernel.org
-    - 0d9aade829d6 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
+    - 87136bb96d2e "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
     - series "selftests/mm: use pattern matching in .gitignore", v4. (2 commits)
-      - 48a390ff447e "selftests/mm: rename local_config.h to local_config.h_gen" (0/2)
+      - 27671e75bcb2 "selftests/mm: rename local_config.h to local_config.h_gen" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260803221732.3651981-1-pratmal@google.com
         - Link: https://lore.kernel.org/20260803221732.3651981-2-pratmal@google.com
-    - 8ff5b9863ec7 "mm/gup_test: keep longterm pin state per file"
+    - 3e3e0455b040 "mm/gup_test: keep longterm pin state per file"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260810-gup_test_data-v1-1-fb1d41be5bb4@kernel.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 9198188f0480 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - ba9f1bbcfefb "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

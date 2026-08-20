@@ -204,49 +204,49 @@
       - 557f842e25a9 "mm: mincore: refactor mincore_page()" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260717091347.1144789-7-wangkefeng.wang@huawei.com
-- mm-unstable: 12 total, 1 (9) series, 3 non-series commits
+- mm-unstable: 12 total, 1 (8) series, 4 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 10 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 1f8f6c1cacd2 "mm: nommu: point to the write iterator upon split_vma"
+    - 64fb1931b6bb "mm: nommu: point to the write iterator upon split_vma"
       - Authored by no role player, reviewed by nobody
       - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/mseal/mseal02.c
       - Link: https://lore.kernel.org/20260702012546.665383-1-thehajime@gmail.com
     - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16 commits)
-      - 51417b3bb5b1 "mm/vma: introduce VMA anon page offset field and add helpers" (0/16)
+      - 44b2411455ad "mm/vma: introduce VMA anon page offset field and add helpers" (0/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-0-c21581c0c3c8@kernel.org
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-1-c21581c0c3c8@kernel.org
-      - 340294d234c7 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
+      - 8f64a838dea1 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-      - 011bd3983562 "mm: introduce linear_anon_page_index()" (2/16)
+      - a006e9deeef1 "mm: introduce linear_anon_page_index()" (3/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
-      - 618099a9b7c1 "mm/vma: fix self-merge check in copy_vma()" (6/16)
+      - f4b73e39550c "mm/vma: fix self-merge check in copy_vma()" (7/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-7-c21581c0c3c8@kernel.org
-      - 724ff634e4ff "tools/testing/vma: add tests for copy_vma() self-merge" (7/16)
+      - c832f1d05ea3 "tools/testing/vma: add tests for copy_vma() self-merge" (8/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-8-c21581c0c3c8@kernel.org
-      - 341b7b51df9d "mm: propagate VMA anonymous page offset on map, remap, split + merge" (8/16)
+      - 656f0e73a30f "mm: propagate VMA anonymous page offset on map, remap, split + merge" (9/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-9-c21581c0c3c8@kernel.org
-      - c573267986f0 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/16)
+      - 30c9cdc71eac "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (14/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org
-      - 52f8e8cbc3de "tools/testing/vma: expand VMA merge tests to assert anon pgoff" (14/16)
+      - 14895bcd5d6a "tools/testing/vma: expand VMA merge tests to assert anon pgoff" (15/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-15-c21581c0c3c8@kernel.org
-      - 1d08eb984909 "tools/testing/selftests/mm: test anonymous page offset merge behaviour" (15/16)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-16-c21581c0c3c8@kernel.org
-    - 79b2f8506659 "mm: use proper PTE accessor in move_ptes()"
+    - 43981c07aa4d "tools/testing/selftests/mm: test anonymous page offset merge behaviour"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-16-c21581c0c3c8@kernel.org
+    - 607ac1a87e48 "mm: use proper PTE accessor in move_ptes()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260720141633.501799-1-agordeev@linux.ibm.com
-    - c8cb6d9a9bf2 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
+    - 1133e16c68da "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

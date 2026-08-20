@@ -57,13 +57,13 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 31aabe68e371 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
+      - c59a908b83c8 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
-    - b6dcc375bf28 "drivers/base, mm: move arch_numa.c to mm/"
+    - bb0da5052fbd "drivers/base, mm: move arch_numa.c to mm/"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
-    - b86b0e81e2da "arch_numa: avoid false positive fortify warning in setup_node_to_cpumask_map()"
+    - c2d57847a306 "arch_numa: avoid false positive fortify warning in setup_node_to_cpumask_map()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260813-arch_numa-avoid-fortify-warning-v2-1-093ad97a78df@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -14,18 +14,18 @@
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-unstable: 22 -> 22 commits (no change)
-  - series: 3 (13) -> 3 (13) (no change)
+- mm-unstable: 22 -> 23 commits
+  - series: 3 (13) -> 3 (14)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 13 -> 13 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
-  - changed commits
-    - ee121d831b89 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Christoph Hellwig <hch@lst.de>"
-      - dropped "Cc: Christoph Hellwig <hch@infradead.org>"
-      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
+      - f72997223632 "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix (2/16)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)
