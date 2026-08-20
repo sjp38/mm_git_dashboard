@@ -10,7 +10,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 1d7920213259 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
+    - 23ecbde06714 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260817120758.669807-3-sh_def@163.com
 - mm-stable: 19 total, 3 (18) series, 1 non-series commits
@@ -99,22 +99,22 @@
     - no role, no role : 3 commits
     - no role, reviewer: 3 commits
   - full commits list
-    - a9f157a46f20 "mm: mempolicy: fix automatic numa balancing for shmem"
+    - f9226ddd5d43 "mm: mempolicy: fix automatic numa balancing for shmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
-      - 6c42f3780930 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
+      - 340294d234c7 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-      - b58614126d28 "mm/huge_memory: update remove_migration_pmd() to accept a folio" (11/16)
+      - 6f9ecd1a4c18 "mm/huge_memory: update remove_migration_pmd() to accept a folio" (11/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org
-      - 940f5e7ed7e8 "mm/migrate: calculate large folio page index using PFN" (12/16)
+      - e77e5d08eae6 "mm/migrate: calculate large folio page index using PFN" (12/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-13-c21581c0c3c8@kernel.org
-    - 8e2b44e74cae "mm/migrate_device: clear stale mapping after freeing swapcache"
+    - 8fc2e2b83ac3 "mm/migrate_device: clear stale mapping after freeing swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260728062832.1107127-1-arvind.yadav@intel.com
-    - 4502cd0d5f83 "mm/migrate_device: fix cache flush when replacing huge zero PMD"
+    - c4c99fdc227b "mm/migrate_device: fix cache flush when replacing huge zero PMD"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260817060845.377800-2-sh_def@163.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -16,10 +16,10 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/.mailmap b/.mailmap
-index 4c5149ff6d539..b522efd17c9c1 100644
+index d35e65d609d38..6406aa0657999 100644
 --- a/.mailmap
 +++ b/.mailmap
-@@ -873,7 +873,8 @@ Szymon Wilczek <swilczek.lx@gmail.com> <szymonwilczek@gmx.com>
+@@ -864,7 +864,8 @@ Szymon Wilczek <swilczek.lx@gmail.com> <szymonwilczek@gmx.com>
  Takashi YOSHII <takashi.yoshii.zj@renesas.com>
  Tamir Duberstein <tamird@kernel.org> <tamird@gmail.com>
  Tamizh Chelvam Raja <quic_tamizhr@quicinc.com> <tamizhr@codeaurora.org>

@@ -37,7 +37,7 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
  create mode 100644 include/linux/swap_ops.h
 
 diff --git a/MAINTAINERS b/MAINTAINERS
-index 4899b81bd8390..604285d848e62 100644
+index 9eba56a72a666..ebd8741f1357c 100644
 --- a/MAINTAINERS
 +++ b/MAINTAINERS
 @@ -17242,6 +17242,7 @@ S:	Maintained

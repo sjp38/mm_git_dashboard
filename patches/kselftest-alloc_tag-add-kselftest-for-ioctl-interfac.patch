@@ -38,14 +38,14 @@ Signed-off-by: Andrew Morton <akpm@linux-foundation.org>
 ---
  MAINTAINERS                                   |   1 +
  tools/testing/selftests/Makefile              |   1 +
- tools/testing/selftests/alloc_tag/Makefile    |   9 +
+ tools/testing/selftests/alloc_tag/Makefile    |   8 +
  .../alloc_tag/allocinfo_ioctl_test.c          | 334 ++++++++++++++++++
- 4 files changed, 345 insertions(+)
+ 4 files changed, 344 insertions(+)
  create mode 100644 tools/testing/selftests/alloc_tag/Makefile
  create mode 100644 tools/testing/selftests/alloc_tag/allocinfo_ioctl_test.c
 
 diff --git a/MAINTAINERS b/MAINTAINERS
-index 557e5fd320730..4899b81bd8390 100644
+index bf429cd01d308..9eba56a72a666 100644
 --- a/MAINTAINERS
 +++ b/MAINTAINERS
 @@ -16942,6 +16942,7 @@ F:	include/linux/alloc_tag.h
@@ -69,10 +69,10 @@ index 5528682a3a912..2cc63e4134fb1 100644
  TARGETS += arm64
 diff --git a/tools/testing/selftests/alloc_tag/Makefile b/tools/testing/selftests/alloc_tag/Makefile
 new file mode 100644
-index 0000000000000..f41d92d06b184
+index 0000000000000..c4637f69e9c21
 --- /dev/null
 +++ b/tools/testing/selftests/alloc_tag/Makefile
-@@ -0,0 +1,9 @@
+@@ -0,0 +1,8 @@
 +# SPDX-License-Identifier: GPL-2.0
 +
 +TEST_GEN_PROGS := allocinfo_ioctl_test
@@ -81,7 +81,6 @@ index 0000000000000..f41d92d06b184
 +CFLAGS += $(KHDR_INCLUDES)
 +
 +include ../lib.mk
-+
 diff --git a/tools/testing/selftests/alloc_tag/allocinfo_ioctl_test.c b/tools/testing/selftests/alloc_tag/allocinfo_ioctl_test.c
 new file mode 100644
 index 0000000000000..3614ee9b46fb2

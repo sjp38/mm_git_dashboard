@@ -20,6 +20,12 @@
     - no role, no role : 13 -> 13 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
+  - changed commits
+    - ee121d831b89 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Christoph Hellwig <hch@lst.de>"
+      - dropped "Cc: Christoph Hellwig <hch@infradead.org>"
+      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)

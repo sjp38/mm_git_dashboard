@@ -14,10 +14,10 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-    - c22c5bbbbe33 "kasan: fix cache shrink race with CPU hotplug"
+    - 02957cf44282 "kasan: fix cache shrink race with CPU hotplug"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260808031459.3032812-1-sh_def@163.com
-    - ce24305f4a1d "kasan: fix quarantine_size accounting during cache removal"
+    - e22347b14b0d "kasan: fix quarantine_size accounting during cache removal"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260811073332.1351893-1-sh_def@163.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -87,3 +87,10 @@ ocfs2-fix-readdir-position-truncation-on-32-bit-kern.patch
 signal-factor-out-the-kernel-reserved-si_code-check.patch
 Squashfs-check-block-offset-is-not-negative.patch
 checkpatch-add-NOKPROBE_SYMBOL-to-the-whitelist-of-l.patch
+lib-interval_tree-fix-allocation-warning-messages.patch
+mailmap-update-email-address-for-Linfeng-Sun.patch
+prctl-fix-PR_SET_MM_AUXV-losing-the-forced-AT_NULL-t.patch
+squashfs-avoid-thundering-herd-cache-wakeups.patch
+ocfs2-bound-check-dir-entries-in-the-readdir-re-vali.patch
+ocfs2-bound-check-dir-entries-in-the-inline-data-re-.patch
+mailmap-fix-bouncing-address-for-Taniya-Das.patch

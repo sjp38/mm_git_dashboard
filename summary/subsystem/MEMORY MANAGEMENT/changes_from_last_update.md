@@ -8,15 +8,19 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 6 -> 7 commits
+- mm-hotfixes-unstable: 7 -> 7 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 0 -> 1 commits
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - da866321d59d "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
-      - Authored by no role player, reviewed by nobody
+  - changed commits
+    - 66e76f8e5440 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
       - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
 - mm-stable: 355 -> 355 commits (no change)
   - series: 49 (299) -> 49 (299) (no change)
@@ -41,6 +45,12 @@
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - ee121d831b89 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Christoph Hellwig <hch@lst.de>"
+      - dropped "Cc: Christoph Hellwig <hch@infradead.org>"
+      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

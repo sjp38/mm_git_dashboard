@@ -63,39 +63,39 @@
     - reviewer, reviewer: 1 commits
   - full commits list
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
-      - 9f9e3b5c3929 "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
+      - bd3e740a82ff "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
-      - 9ad760807aed "mm: vmscan: add a helper to identify file-backed executable folios" (1/3)
+      - 383b3c405759 "mm: vmscan: add a helper to identify file-backed executable folios" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/2ee74f9f98ac45a2f0db0ceb018e086bdb671d17.1784509721.git.baolin.wang@linux.alibaba.com
-      - bcf8996b69b3 "mm: mglru: promote mapped executable folios after first usage" (2/3)
+      - f619fa7bef2b "mm: mglru: promote mapped executable folios after first usage" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/f57d94b1d85bb3d620d89bb739128f0d929bf9c6.1784509721.git.baolin.wang@linux.alibaba.com
-      - 38bf2101035a "mm: vmscan: fix node reclaim ignoring swappiness parameter" (1/2)
+      - f48d210a5dff "mm: vmscan: fix node reclaim ignoring swappiness parameter" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723032434.2016749-3-ridong.chen@linux.dev
-      - fa5e13418c17 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
+      - dd6a5ea1adc5 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
-      - b841cbcf7178 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
+      - 1ca75d8e9458 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
-      - 9a4ac975e281 "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - 1e3d3983713f "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - 8971fc607aa5 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - bb2363bf68b4 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-      - 804addbf135c "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
+      - afc38453e371 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
-    - b0ab672f8f5f "mm/mglru: fix young counter undercount for large folios"
+    - 712c9e1e40ab "mm/mglru: fix young counter undercount for large folios"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260813061019.49806-1-hui.zhu@linux.dev
       - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
-    - e8a3585add78 "mm/mglru: fix and remove redundant unevictable folio handling"
+    - cc2b32bf600d "mm/mglru: fix and remove redundant unevictable folio handling"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260812-mglru-mlock-fix-v2-1-a3fec5853c08@tencent.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

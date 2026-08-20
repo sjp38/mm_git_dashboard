@@ -8,15 +8,23 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 6 -> 7 commits
+- mm-hotfixes-unstable: 7 -> 8 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 0 -> 1 commits
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - da866321d59d "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+    - 90c4f67f851f "MAINTAINERS: add Lance Yang as a hung task detector co-maintainer"
       - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260820014535.79105-1-lance.yang@linux.dev
+  - changed commits
+    - 66e76f8e5440 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
       - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
 - mm-stable: 501 -> 501 commits (no change)
   - series: 67 (410) -> 67 (410) (no change)
@@ -31,30 +39,81 @@
     - maintainer, nobody: 115 -> 115 commits (no change)
     - maintainer, no role : 20 -> 20 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-unstable: 187 -> 187 commits (no change)
+- mm-unstable: 187 -> 188 commits
   - series: 21 (107) -> 21 (107) (no change)
-    - no role, nobody: 34 -> 34 commits (no change)
-    - no role, no role : 61 -> 61 commits (no change)
+    - no role, nobody: 34 -> 33 commits
+    - no role, no role : 61 -> 62 commits
     - no role, reviewer: 26 -> 26 commits (no change)
-    - no role, maintainer: 51 -> 51 commits (no change)
+    - no role, maintainer: 51 -> 52 commits
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - maintainer, nobody: 7 -> 7 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 4b2ae13f3393 "selftests/mm: check stat() return value in khugepaged get_finfo()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260819121426.49500-1-anshumantewari123@gmail.com
+  - changed commits
+    - ee121d831b89 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Christoph Hellwig <hch@lst.de>"
+      - dropped "Cc: Christoph Hellwig <hch@infradead.org>"
+      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
+    - f13c52ab5d0f "mm: include swap.h in swapops.h"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260818115026.656406-1-kirill@shutemov.name
+    - 9bf0797d351f "selftests/mm: fix unchecked ftruncate return value in soft-dirty test"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
+      - Link: https://lore.kernel.org/20260818133206.39503-1-anshumantewari123@gmail.com
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-nonmm-stable: 88 -> 88 commits (no change)
-  - series: 9 (25) -> 9 (25) (no change)
-    - no role, nobody: 31 -> 31 commits (no change)
+- mm-nonmm-stable: 88 -> 95 commits
+  - series: 9 (25) -> 10 (27)
+    - no role, nobody: 31 -> 34 commits
     - no role, no role : 18 -> 18 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 29 -> 29 commits (no change)
+    - no role, maintainer: 29 -> 33 commits
     - maintainer, nobody: 7 -> 7 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 10 -> 10 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
+  - changed commits
+    - d9c0fd5533fb "lib/interval_tree: fix allocation warning messages"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260808123608.73613-1-kmehltretter@gmail.com
+    - dfe88f832fe8 "mailmap: update email address for Linfeng Sun"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260810073235.22980-1-linfeng.sun.dev@gmail.com
+    - 5146e0688d86 "prctl: fix PR_SET_MM_AUXV losing the forced AT_NULL terminator"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260809002901.32591-1-include@grrlz.net
+    - f6f47a9ca82b "squashfs: avoid thundering-herd cache wakeups"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260807172421.3875982-1-usama.arif@linux.dev
+    - series "ocfs2: bound-check both readdir re-validation scans", v2. (2)
+      - bec0eed29b41 "ocfs2: bound-check dir entries in the readdir re-validation scan (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260811024337.3972976-1-zhanxusheng@xiaomi.com
+        - Link: https://sashiko.dev/#/patchset/20260806022044.167962-1-zhanxusheng@xiaomi.com
+        - Link: https://lore.kernel.org/20260811024337.3972976-2-zhanxusheng@xiaomi.com
+      - 763c097f71bc "ocfs2: bound-check dir entries in the inline-data re-validation scan (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-nonmm-unstable -> mm-nonmm-stable
+        - Link: https://lore.kernel.org/20260811024337.3972976-3-zhanxusheng@xiaomi.com
+    - eef628bce8e1 "mailmap: fix bouncing address for Taniya Das"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260817-topic-taniya_email_bounce-v1-1-d7af1f113d64@oss.qualcomm.com
+- mm-nonmm-unstable: 10 -> 3 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 4 -> 1 commits
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
+    - no role, maintainer: 4 -> 0 commits

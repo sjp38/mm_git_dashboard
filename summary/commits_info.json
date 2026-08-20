@@ -3547,7 +3547,7 @@
         ],
         "mm-hotfixes-unstable": [
             {
-                "hash": "255de1b0ff042116938fea4e31468d89f0ee45e7",
+                "hash": "dc9208cfce3c1fadbe3d93dd11a24519de9307e4",
                 "author": "Sourav Panda <souravpanda@google.com>",
                 "subject": "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio",
                 "tags": {
@@ -3657,7 +3657,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "1e16b64d9704fe6f23074a9825a2dcae62b0bcdd",
+                "hash": "9c0dcbe06dad13a0cb8903d96224b43162a0071b",
                 "author": "Shakeel Butt <shakeel.butt@linux.dev>",
                 "subject": "memcg: make the v1 soft limit knob inert",
                 "tags": {
@@ -3805,7 +3805,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "66d5677430c49962bcc8be3979872aca948ff448",
+                "hash": "9879f62b2df20abaa24910968bab000fc6a37c11",
                 "author": "Narek Jilavyan <njilav@gmail.com>",
                 "subject": "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()",
                 "tags": {
@@ -3905,7 +3905,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "1d79202132590d1e2a51d39cc561b4dd1a412af9",
+                "hash": "23ecbde06714b871c1acd32cdbb14fbea297217f",
                 "author": "Hui Su <sh_def@163.com>",
                 "subject": "mm/migrate_device: avoid out-of-bounds writes for compound folios",
                 "tags": {
@@ -4012,7 +4012,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "397e953879252f61ddf186cc3016067d7b840386",
+                "hash": "060d990c79f2f5a6c57ca5ea62fbb43b9aafc433",
                 "author": "Longlong Xia <xialonglong@kylinos.cn>",
                 "subject": "mm/hugetlb: keep max_huge_pages when dissolving surplus folios",
                 "tags": {
@@ -4116,7 +4116,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "7f84525f904d3030dc4d64369e41312c8de0cbb2",
+                "hash": "50c608b405466aa0d2b8fc68c17675e072ed93b9",
                 "author": "Baolin Wang <baolin.wang@linux.alibaba.com>",
                 "subject": "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs",
                 "tags": {
@@ -4264,7 +4264,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "da866321d59d3dca1f95a68080d36e42dc720618",
+                "hash": "66e76f8e5440e6559c30c644e6343cbfb04b3757",
                 "author": "Bryan Lim <foxieflakey@gmail.com>",
                 "subject": "userfaultfd: reset err to be 0 when move_pages_ptes succeeded",
                 "tags": {
@@ -4281,10 +4281,13 @@
                         "Bryan Lim <foxieflakey@gmail.com>",
                         "Andrew Morton <akpm@linux-foundation.org>"
                     ],
+                    "Reviewed-by:": [
+                        "Suren Baghdasaryan <surenb@google.com>"
+                    ],
                     "Cc:": [
                         "Mike Rapoport <rppt@kernel.org>",
                         "Peter Xu <peterx@redhat.com>",
-                        "Suren Baghdasaryan <surenb@google.com>"
+                        "<stable@vger.kernel.org>"
                     ]
                 },
                 "subsys_info_map": {
@@ -4331,6 +4334,45 @@
                             "tools/testing/selftests/mm/uffd-*.[ch]"
                         ]
                     },
+                    "THE REST": {
+                        "name": "THE REST",
+                        "maintainer": [
+                            "Linus Torvalds <torvalds@linux-foundation.org>"
+                        ],
+                        "list": [
+                            "linux-kernel@vger.kernel.org"
+                        ],
+                        "status": [
+                            "Buried alive in reporters"
+                        ],
+                        "files": [
+                            "*",
+                            "*/"
+                        ]
+                    }
+                },
+                "patch_series": null,
+                "patch_series_sz": null,
+                "patch_series_idx": null
+            },
+            {
+                "hash": "90c4f67f851fd12eeb8eb1111108de90bb44cb3e",
+                "author": "Lance Yang <lance.yang@linux.dev>",
+                "subject": "MAINTAINERS: add Lance Yang as a hung task detector co-maintainer",
+                "tags": {
+                    "Link:": [
+                        "https://lore.kernel.org/20260820014535.79105-1-lance.yang@linux.dev"
+                    ],
+                    "Signed-off-by:": [
+                        "Lance Yang <lance.yang@linux.dev>",
+                        "Andrew Morton <akpm@linux-foundation.org>"
+                    ],
+                    "Cc:": [
+                        "\"Masami Hiramatsu (Google)\" <mhiramat@kernel.org>",
+                        "Petr Mladek <pmladek@suse.com>"
+                    ]
+                },
+                "subsys_info_map": {
                     "THE REST": {
                         "name": "THE REST",
                         "maintainer": [
@@ -64450,7 +64492,7 @@
         ],
         "mm-unstable": [
             {
-                "hash": "a9f157a46f2003a83094baf8687bc142609e722c",
+                "hash": "f9226ddd5d433dadbec9009c11ac2cb9d57237ca",
                 "author": "Johannes Weiner <hannes@cmpxchg.org>",
                 "subject": "mm: mempolicy: fix automatic numa balancing for shmem",
                 "tags": {
@@ -64567,7 +64609,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "99ff2023af4f78d822ef66181a180be4996e09ea",
+                "hash": "1f8f6c1cacd2d309ebb3c9f26da446f3f22da50e",
                 "author": "Hajime Tazaki <thehajime@gmail.com>",
                 "subject": "mm: nommu: point to the write iterator upon split_vma",
                 "tags": {
@@ -64672,7 +64714,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "67aa6ff15c9739b2fcff24a46396bffecc902d91",
+                "hash": "197bce2d7a8035b754419293bfb54839befd39ac",
                 "author": "Ethan Nelson-Moore <enelsonmoore@gmail.com>",
                 "subject": "maple_tree: remove undocumented CONFIG_MAPLE_RCU_DISABLED macro",
                 "tags": {
@@ -64745,7 +64787,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "4a9447b365944af9189e563501ab7de061891bce",
+                "hash": "3538876c345cdecf24f31ca1105d80dda2eaf33a",
                 "author": "Kaitao Cheng <chengkaitao@kylinos.cn>",
                 "subject": "mm/kconfig: drop redundant memory hotplug dependencies",
                 "tags": {
@@ -64879,7 +64921,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "4b69e3b97f0ec92a0b2bf23858b167372c230de2",
+                "hash": "78868ebede2d4397b78e3af7c1a25d778aa619a9",
                 "author": "Wupeng Ma <mawupeng1@huawei.com>",
                 "subject": "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration",
                 "tags": {
@@ -64977,7 +65019,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "57553e8287b94c6af85657947ee5ea344a8d4a89",
+                "hash": "6bebdc951e5d487fdec63141d322c0f878cd231b",
                 "author": "David Hildenbrand (Arm) <david@kernel.org>",
                 "subject": "mm: standardize printing for pgtable entries",
                 "tags": {
@@ -65108,7 +65150,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "ccfe6f5c633cd7819f94c870dd4d5ae2852ee62c",
+                "hash": "e6cad980a06e3c63aa9ff512936b71029603ad3f",
                 "author": "Kaitao Cheng <chengkaitao@kylinos.cn>",
                 "subject": "mm/kconfig: drop redundant dependency wrappers",
                 "tags": {
@@ -65245,7 +65287,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "f4ff5fa81024c886df3a37a50ab37101ae960653",
+                "hash": "51417b3bb5b1aa937ce1ca085cf48b342fc3fea1",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm/vma: introduce VMA anon page offset field and add helpers",
                 "tags": {
@@ -65492,7 +65534,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "6c42f3780930c0a45315f393eec1e63c38860448",
+                "hash": "340294d234c7e17732b54058f8b72d16be28eb94",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()",
                 "tags": {
@@ -66143,7 +66185,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "d1c57296b68f367e20ca3b80497a9ff9110bb963",
+                "hash": "011bd39835622414b73ec7363be9e2cb1fc1dbfe",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm: introduce linear_anon_page_index()",
                 "tags": {
@@ -66396,7 +66438,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "2d8698cd00c9bec03203f36c31dd18e7773b9001",
+                "hash": "697f28c628047c484a1946c3b58d2d600b12bcdf",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm: abstract vma_address() and introduce vma_anon_address()",
                 "tags": {
@@ -66596,7 +66638,7 @@
                 "patch_series_idx": 3
             },
             {
-                "hash": "ff6a5310bd1e10c93a8112cfbdb2295d4b48612a",
+                "hash": "8d85a78dd82ae3eba9dded3489c3ae4a8b67e752",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm: update print_bad_page_map() to show anon index if appropriate",
                 "tags": {
@@ -66798,7 +66840,7 @@
                 "patch_series_idx": 4
             },
             {
-                "hash": "918d7e56c46e3f37ee5d2ddc7946c4d0f48fe23b",
+                "hash": "8461846ef37a63c9e7a5970ce63c63b36ccb79ac",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm: introduce and use vma_filebacked_address()",
                 "tags": {
@@ -67052,7 +67094,7 @@
                 "patch_series_idx": 5
             },
             {
-                "hash": "6f7a108debd6df2cd7991ff754e6eac0cebeed6e",
+                "hash": "618099a9b7c15ce95a3f37f1eab1770f9ea69e63",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm/vma: fix self-merge check in copy_vma()",
                 "tags": {
@@ -67229,7 +67271,7 @@
                 "patch_series_idx": 6
             },
             {
-                "hash": "fcfa9a18d0f86da70149140c9c1d260c67484cf2",
+                "hash": "724ff634e4ffa2a4511a73941d823433f28fe41e",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "tools/testing/vma: add tests for copy_vma() self-merge",
                 "tags": {
@@ -67387,7 +67429,7 @@
                 "patch_series_idx": 7
             },
             {
-                "hash": "0651107bd7a1c4c8275b50b388ba9e171d3a4217",
+                "hash": "341b7b51df9dd5e0e6ff230c9ff2ca1a347bdcbb",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm: propagate VMA anonymous page offset on map, remap, split + merge",
                 "tags": {
@@ -67592,7 +67634,7 @@
                 "patch_series_idx": 8
             },
             {
-                "hash": "4b20b441e1543bd21b08e59433dbbdac1b71e9ee",
+                "hash": "12a0860b3a4156706a238e5be1d83a351f5daa3c",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm/rmap: track whether the page VMA mapped pgoff is anonymous",
                 "tags": {
@@ -67755,7 +67797,7 @@
                 "patch_series_idx": 9
             },
             {
-                "hash": "7f21ddaa8d212a81a45e8bdead327f003daf443f",
+                "hash": "19ca1c830ba657767a175bf51d6060a073999b05",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm: clean up vma_address_end()",
                 "tags": {
@@ -67955,7 +67997,7 @@
                 "patch_series_idx": 10
             },
             {
-                "hash": "b58614126d2882310c92b79214f426914184630c",
+                "hash": "6f9ecd1a4c1802054477e68a356d989e83199e93",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm/huge_memory: update remove_migration_pmd() to accept a folio",
                 "tags": {
@@ -68201,7 +68243,7 @@
                 "patch_series_idx": 11
             },
             {
-                "hash": "940f5e7ed7e8ae7681ad66d8029fe5b7731cf4b9",
+                "hash": "e77e5d08eae671361d596104b7dcae3b60abcfb8",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm/migrate: calculate large folio page index using PFN",
                 "tags": {
@@ -68375,7 +68417,7 @@
                 "patch_series_idx": 12
             },
             {
-                "hash": "f97c6d1fe596de69fc0c6ce05d5c9905b4003927",
+                "hash": "c573267986f07dd103d122d737932f7c05d5ec49",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios",
                 "tags": {
@@ -68741,7 +68783,7 @@
                 "patch_series_idx": 13
             },
             {
-                "hash": "4c5622579fd5d6806025a542ee74bd3972229aaf",
+                "hash": "52f8e8cbc3def7af54af6f890cc9f7885eddc2ed",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "tools/testing/vma: expand VMA merge tests to assert anon pgoff",
                 "tags": {
@@ -68899,7 +68941,7 @@
                 "patch_series_idx": 14
             },
             {
-                "hash": "001d1aa86f650db832fca70bcd23a42219958474",
+                "hash": "1d08eb9849097c1d3d06351980cc79faf26eb5fd",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "tools/testing/selftests/mm: test anonymous page offset merge behaviour",
                 "tags": {
@@ -69127,7 +69169,7 @@
                 "patch_series_idx": 15
             },
             {
-                "hash": "4e3ba26ff1bc52bb7724eb970511e2ef4f6a4792",
+                "hash": "3f12a275e664118dac1ed94751722ab59ddf6287",
                 "author": "Breno Leitao <leitao@debian.org>",
                 "subject": "mm/kmemleak: report RCU-tasks quiescent states during the scan",
                 "tags": {
@@ -69209,7 +69251,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "9f9e3b5c3929e0ea299ecf2df5e1318f02a81ea5",
+                "hash": "bd3e740a82ff6a97140e803698bd9283ce1d0f8a",
                 "author": "Baolin Wang <baolin.wang@linux.alibaba.com>",
                 "subject": "mm: vmscan: convert folio_referenced() to use vma_flags_t",
                 "tags": {
@@ -69371,7 +69413,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "9ad760807aedaaab2aea584bb6da510a88ea67a7",
+                "hash": "383b3c4057594c5778d3a81a47fa5c24276fd959",
                 "author": "Baolin Wang <baolin.wang@linux.alibaba.com>",
                 "subject": "mm: vmscan: add a helper to identify file-backed executable folios",
                 "tags": {
@@ -69503,7 +69545,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "bcf8996b69b3e273bbce44092bb3cbfeca4192ce",
+                "hash": "f619fa7bef2b6289c7cf009aade68bc0990f55f8",
                 "author": "Baolin Wang <baolin.wang@linux.alibaba.com>",
                 "subject": "mm: mglru: promote mapped executable folios after first usage",
                 "tags": {
@@ -69635,7 +69677,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "39ddf5e76e025634478592566d3307bca3fb2f78",
+                "hash": "45af85e680e7516d54db16c6e8888f74ced1a8d6",
                 "author": "Ridong Chen <chenridong@xiaomi.com>",
                 "subject": "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h",
                 "tags": {
@@ -69781,7 +69823,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "38bf2101035a94e41bd9ed019686196e61fa9e89",
+                "hash": "f48d210a5dffc45e6f71a056d0e6cfb92b5248ed",
                 "author": "Ridong Chen <chenridong@xiaomi.com>",
                 "subject": "mm: vmscan: fix node reclaim ignoring swappiness parameter",
                 "tags": {
@@ -69923,7 +69965,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "9efa4f79826087e61dae6fefbe1096a2e5eecb56",
+                "hash": "051be0d7c210e997bac55bb5d003e34dc02fc1b1",
                 "author": "Usama Arif <usama.arif@linux.dev>",
                 "subject": "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers",
                 "tags": {
@@ -70100,7 +70142,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "fa5e13418c1797110164d93748b718d51261975c",
+                "hash": "dd6a5ea1adc5e20c02bc5bd3047e9f867c591403",
                 "author": "Usama Arif <usama.arif@linux.dev>",
                 "subject": "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters",
                 "tags": {
@@ -70333,7 +70375,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "b841cbcf71783a32a68e7bac8aaae7cbf5a30543",
+                "hash": "1ca75d8e9458d42df3e04b82f3830e6d6db0915d",
                 "author": "Usama Arif <usama.arif@linux.dev>",
                 "subject": "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost",
                 "tags": {
@@ -70564,7 +70606,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "b2fe9a16239d62ed70c081b68359542a3544c66c",
+                "hash": "c5d3e8d16ac7137f8d40fd37491e74f097e3f03f",
                 "author": "Sergey Senozhatsky <senozhatsky@chromium.org>",
                 "subject": "zram: set default primary compressor in zram_destroy_comps()",
                 "tags": {
@@ -70652,7 +70694,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "6130a239fcf320cfc34abca24f552848f4550bc7",
+                "hash": "971cf48e68bb33d5971e9e60b1b44d8b0e083a43",
                 "author": "Sergey Senozhatsky <senozhatsky@chromium.org>",
                 "subject": "zram: validate deflate params",
                 "tags": {
@@ -70740,7 +70782,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "b800bfabefca8dc32629d79cf7f5801f0b9a2617",
+                "hash": "1f884e55f4362d8ec95ca2247fbe887e3d3e7f8a",
                 "author": "Guopeng Zhang <zhangguopeng@kylinos.cn>",
                 "subject": "mm: memcg: stop reclaim when a limit update is superseded",
                 "tags": {
@@ -70841,7 +70883,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "659e44d77f227997425cb682312b0236b757514a",
+                "hash": "9fd1cb6c479509842ed44352eb5a43b05747693e",
                 "author": "Sergey Senozhatsky <senozhatsky@chromium.org>",
                 "subject": "Documentation: zram: correct algo parameters configuration documentation",
                 "tags": {
@@ -70944,7 +70986,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "094934fcaa86bbe7c3d11f5fa09a1cf530390b59",
+                "hash": "9bc1899a1f30713d01b5decd6dea456e747f676e",
                 "author": "Shakeel Butt <shakeel.butt@linux.dev>",
                 "subject": "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done",
                 "tags": {
@@ -71044,7 +71086,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "2ae455f0a68ab4ea815058e2bf3b2296c4624563",
+                "hash": "79b2f8506659b3847f1ac05a2923cc24f22f9181",
                 "author": "Alexander Gordeev <agordeev@linux.ibm.com>",
                 "subject": "mm: use proper PTE accessor in move_ptes()",
                 "tags": {
@@ -71150,7 +71192,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "02bf2d76dcad6bfd870339f4692902a963a97a54",
+                "hash": "9c79e86fb449d2099fb9eaae723b018d643a113d",
                 "author": "Guillaume Morin <guillaume@morinfr.org>",
                 "subject": "hugetlb: only adjust reservation during unmapping if mapcount is 0",
                 "tags": {
@@ -71252,7 +71294,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "e03bc14815d7def59203957aac4ff11ef8a541b6",
+                "hash": "680f3fd1258d19e4a287b227f71629040eae8ecb",
                 "author": "Pratyush Mallick <pratmal@google.com>",
                 "subject": "mm/page_reporting: add page_reporting_delay_ms module parameter",
                 "tags": {
@@ -71390,7 +71432,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "99d8e1683db308ed80c154b1a13d8506e8f86794",
+                "hash": "370e24c74d10b0fcd98581d37152432a1de07952",
                 "author": "Sang-Heon Jeon <ekffu200098@gmail.com>",
                 "subject": "mm/sparse: correct init section annotations",
                 "tags": {
@@ -71525,7 +71567,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "0bba16882c804baaa7b17b8c67bee62675814c48",
+                "hash": "0cac2da97f5efb056696a15d6848304c3e90932f",
                 "author": "Wilson Felipe Pereira <wfelipe@google.com>",
                 "subject": "mm: zswap: drop list_lru param from zswap_lru_add() and _del()",
                 "tags": {
@@ -71613,7 +71655,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "8e2b44e74cae440f3c84067ccbda9c5339291dcb",
+                "hash": "8fc2e2b83ac388f88dc456b81b808be44721c675",
                 "author": "Arvind Yadav <arvind.yadav@intel.com>",
                 "subject": "mm/migrate_device: clear stale mapping after freeing swapcache",
                 "tags": {
@@ -71722,7 +71764,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "196ca1a0acc4c24cfeb325aa449bf291a5da918b",
+                "hash": "a706c03244e3836831186aab9280aadfd12d3396",
                 "author": "Zi Yan <ziy@nvidia.com>",
                 "subject": "mm/huge_memory: use folio's memcg inside __folio_split()",
                 "tags": {
@@ -71844,7 +71886,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "02884589c684dcca83f396fb3275345e7258d957",
+                "hash": "3a31545aef9ac788fdda43bc448b377fb2da7e2b",
                 "author": "Zi Yan <ziy@nvidia.com>",
                 "subject": "xarray: honor XA_FLAGS_ACCOUNT in xas_split_alloc()",
                 "tags": {
@@ -71938,7 +71980,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "685616f1a4629720cc33eb482dc0884bc0493cd9",
+                "hash": "785e9110e1c664ee6897ae7adef0f20bd704e5e4",
                 "author": "David Hildenbrand (Arm) <david@kernel.org>",
                 "subject": "mm/gup: fix always draining LRU caches in collect_longterm_unpinnable_folios()",
                 "tags": {
@@ -72035,7 +72077,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "2ab1f1fd09c0042cba6539bbb6b30dc229ba7bb1",
+                "hash": "0d9aade829d691baf8279a8136ff58314d73aebb",
                 "author": "David Hildenbrand (Arm) <david@kernel.org>",
                 "subject": "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()",
                 "tags": {
@@ -72239,7 +72281,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "9080b5bac480b5c8f3eebdc4542ea92bf6074960",
+                "hash": "9a980234ca5e3382805654f72e66321becc1840b",
                 "author": "Artem Lytkin <iprintercanon@gmail.com>",
                 "subject": "mm/vmalloc: make vm_struct.nr_pages an unsigned long",
                 "tags": {
@@ -72333,7 +72375,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "222cebc878d28555c6c3e8a02065688d979bde18",
+                "hash": "70c3891675318b3308a2ef55cf4e7c120c0b5fbd",
                 "author": "Eric Biggers <ebiggers@kernel.org>",
                 "subject": "mm/swap: reject swapon() on filesystem-level encrypted files",
                 "tags": {
@@ -72479,7 +72521,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "9b7d6959cc4137f0c33d7eb54f1e7844a5254de8",
+                "hash": "9b74c1c9b2b6f5d04af9745db55d6de2b3c2ece7",
                 "author": "Jianlin Shi <shijianlin11@foxmail.com>",
                 "subject": "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write",
                 "tags": {
@@ -72591,7 +72633,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "d6ada6f3b648fb91b5402fbb1bc8038135771dec",
+                "hash": "4c24b69db573e5a012fb15dbcae2dfc5f659db09",
                 "author": "Daniel Palmer <daniel@thingy.jp>",
                 "subject": "tmpfs/ramfs: let memfd_create() work on nommu",
                 "tags": {
@@ -72634,7 +72676,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "9fe79515c9fb005ba5e620e642e5c000a4363211",
+                "hash": "48a390ff447e67ff153fd2eb1856a35e9a0871c0",
                 "author": "Pratyush Mallick <pratmal@google.com>",
                 "subject": "selftests/mm: rename local_config.h to local_config.h_gen",
                 "tags": {
@@ -72789,7 +72831,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "2f553081db1efabacdbd5faf100a1eee077b3b8a",
+                "hash": "f6d9132b90b69f96e696359234e80d65b2156731",
                 "author": "Warren Xiong <warren.xiong@ugreen.com>",
                 "subject": "selftests/mm: read memory information without popen",
                 "tags": {
@@ -72906,7 +72948,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "31d452ae93047e9c60270f946f2bd08ad13d044f",
+                "hash": "174e1f6ed4bf134ce80100d55675d2291a585462",
                 "author": "Pratyush Mallick <pratmal@google.com>",
                 "subject": "selftests/mm: use pattern matching in .gitignore",
                 "tags": {
@@ -73035,7 +73077,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "5fb262ef4eec63ebabfd523e0c2d261fcd7daba2",
+                "hash": "4c52da8764d1361ea86f1daf69f2e80a1dfb2efa",
                 "author": "Longlong Xia <xialonglong@kylinos.cn>",
                 "subject": "mm/ksm: avoid missing ksmd wakeups in ksm_enter",
                 "tags": {
@@ -73132,7 +73174,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "3e33082b720169c426dfba58592c68820784de09",
+                "hash": "34129be7237858abe0e46eb35f2da6692d7b1602",
                 "author": "Hongfu Li <lihongfu@kylinos.cn>",
                 "subject": "ksm: update comments and docs to reference folio->mapping",
                 "tags": {
@@ -73325,7 +73367,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "04295e79613992a7c9446f7899182ae2f585c32b",
+                "hash": "bcb2c12a955f678e69d7968f7fb9946e0687c5ad",
                 "author": "Uladzislau Rezki (Sony) <urezki@gmail.com>",
                 "subject": "mm/vmalloc: do not warn on -ENOMEM from va_alloc()",
                 "tags": {
@@ -73411,7 +73453,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "2b7db30dc28558b15c0efcd2f931c64480d7e6f9",
+                "hash": "f2559f188bb7ed5b1e8c08277d49388f75c8e5f0",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "mm: add some missing includes to mm-local headers",
                 "tags": {
@@ -73707,7 +73749,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "5c9f56e2f79db9cdce222d356d6542063c582ed1",
+                "hash": "a603c34cb1113fc6fcffd6cdb496b978f2b4c9e9",
                 "author": "Sang-Heon Jeon <ekffu200098@gmail.com>",
                 "subject": "mm/Kconfig: make FLATMEM depend on !NUMA",
                 "tags": {
@@ -73844,7 +73886,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "212359e7a0296fe9cffa570b51db70bcd3440db8",
+                "hash": "31aabe68e371b8d48cc8cf7b52c2ffd7306e4008",
                 "author": "Sang-Heon Jeon <ekffu200098@gmail.com>",
                 "subject": "mm/page_ext: remove pgdat_page_ext_init()",
                 "tags": {
@@ -73977,7 +74019,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "d86639a40db07457793f4b037ad7ca21679d05c9",
+                "hash": "7a897263eb831403fdbc3fdedcb7a8b6177d1796",
                 "author": "Haoqin Huang <haoqinhuang@tencent.com>",
                 "subject": "zram: do not release zstd global params from error paths",
                 "tags": {
@@ -74070,7 +74112,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "1c21ebc039cf29d7e37d6bce4b49bd7572a5dc57",
+                "hash": "0d9ec3df208e0d81887bb7d977a67b76aceb4796",
                 "author": "Haoqin Huang <haoqinhuang@tencent.com>",
                 "subject": "zram: reject zero-size dictionary",
                 "tags": {
@@ -74162,7 +74204,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "5f69a310cc602dfa0d677c5cd0886ce3e6c3f9fd",
+                "hash": "19048ab5bba6a389f6fef9d33ea68fa97ff4e293",
                 "author": "Haoqin Huang <haoqinhuang@tencent.com>",
                 "subject": "zram: add pr_fmt to backend files",
                 "tags": {
@@ -74254,7 +74296,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "f9843c1ee3f028668ac01ebb398a9edc7ed67f6f",
+                "hash": "ede71b04692fc28a0a44768061f31f6f23c4e787",
                 "author": "Haoqin Huang <haoqinhuang@tencent.com>",
                 "subject": "zram: validate parameters in each backend's setup_params",
                 "tags": {
@@ -74346,7 +74388,7 @@
                 "patch_series_idx": 3
             },
             {
-                "hash": "72f5ea1f8238bffb3d716f0c26bff0945260d8e3",
+                "hash": "de8ee79c5aace8b56709b7242e857c7b9520de1b",
                 "author": "Haoqin Huang <haoqinhuang@tencent.com>",
                 "subject": "zram: reset per-priority params when changing algorithm before init",
                 "tags": {
@@ -74438,7 +74480,7 @@
                 "patch_series_idx": 4
             },
             {
-                "hash": "17eaeccde722cce416ce3119d5c7e80b3139543d",
+                "hash": "8846c6475004056a7bd8c8c209b944ac1e7d5960",
                 "author": "Longlong Xia <xialonglong@kylinos.cn>",
                 "subject": "zram: fix out-of-bounds access in writeback_store()",
                 "tags": {
@@ -74532,7 +74574,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "3f1fb5fe9600eaf2055dd9813e25bc0b277ac3b7",
+                "hash": "538e387edc4885bb978333cd9ce5c17b3ca68b39",
                 "author": "Longlong Xia <xialonglong@kylinos.cn>",
                 "subject": "zram: fix out-of-bounds access in read_block_state()",
                 "tags": {
@@ -74625,7 +74667,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "8a3608a3a7ae20707fbb1612cb69a49f4aad05ce",
+                "hash": "3b501a274533a1ef1195ac9b1a1cfb6903a78da3",
                 "author": "Ye Liu <liuye@kylinos.cn>",
                 "subject": "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder",
                 "tags": {
@@ -74731,7 +74773,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "a1db26d976fb9c79386f5f85626f1a29e99fd293",
+                "hash": "b862d14b309aa068fcba3c0162dd84a13849e4b2",
                 "author": "Abhishek Bapat <abhishekbapat@google.com>",
                 "subject": "alloc_tag: expose boot-time compression configuration",
                 "tags": {
@@ -74888,7 +74930,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "b2a41a0d8ec8a758912f06e7f89386e0fc814e41",
+                "hash": "a2fcd759f470e530df5f128fd1b7465d26bf8198",
                 "author": "Muchun Song <songmuchun@bytedance.com>",
                 "subject": "mm/sparse: keep mem_section_usage_size() internal",
                 "tags": {
@@ -75052,7 +75094,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "24ca796085f065ad9b3d1764a98b8e98713df821",
+                "hash": "53517ac8c94317e5ac898ed20014a1fd53d7aae4",
                 "author": "Ye Liu <liuye@kylinos.cn>",
                 "subject": "mm/show_mem: fix format string inconsistencies and type mismatches",
                 "tags": {
@@ -75157,7 +75199,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "7b655e6d12cb12c96932f0d46c0217e0f335310d",
+                "hash": "124d84a94d62d1bc7e1314a685f4d6386d2d456a",
                 "author": "Sergey Senozhatsky <senozhatsky@chromium.org>",
                 "subject": "zram: switch to unsigned long indexing",
                 "tags": {
@@ -75245,7 +75287,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "52c782809669b78c1b2cd27e9598afef6813164b",
+                "hash": "8093faf6dab80d6f9d779a5066b73715ab09a13d",
                 "author": "Baolin Wang <baolin.wang@linux.alibaba.com>",
                 "subject": "selftests: mm: extend the check_huge() to support mTHP check",
                 "tags": {
@@ -75411,7 +75453,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "df5fcd446513e27f27d5ce5acadcf5080479afec",
+                "hash": "19daac808f026e599399b1d8043bf5fd4d1f4eef",
                 "author": "Baolin Wang <baolin.wang@linux.alibaba.com>",
                 "subject": "selftests: mm: move gather_after_split_folio_orders() into vm_util.c file",
                 "tags": {
@@ -75576,7 +75618,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "0448806c66e8f10b9f53d72f8a2d70590807d0c5",
+                "hash": "16280cd5c330ec59492fd1eb81b65f9b87759896",
                 "author": "Baolin Wang <baolin.wang@linux.alibaba.com>",
                 "subject": "selftests: mm: implement the mTHP-sized hugepage check helpers",
                 "tags": {
@@ -75700,7 +75742,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "f6ac5d0fe87afcee9df760679c93d4086ea46548",
+                "hash": "02f0e5325368ce91006b0b82f9f0d790260d2db2",
                 "author": "Baolin Wang <baolin.wang@linux.alibaba.com>",
                 "subject": "selftests: mm: add mTHP collapse test cases",
                 "tags": {
@@ -75865,7 +75907,7 @@
                 "patch_series_idx": 3
             },
             {
-                "hash": "42afbd71b06ddbf03a111568f17ae2c983eb0e39",
+                "hash": "7f9ee3b8a386d4e0f25a551daaf0fa66e9a250eb",
                 "author": "Hongfu Li <lihongfu@kylinos.cn>",
                 "subject": "selftests/mm: drop duplicate test_seal_mprotect_two_vma_with_gap() call",
                 "tags": {
@@ -75986,7 +76028,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "ba70ac8331085df3bcfe689edaaaec87e4b13384",
+                "hash": "8ab03be274d4bcdf55976c9dacfddc9c0daa08f3",
                 "author": "Ye Liu <liuye@kylinos.cn>",
                 "subject": "mm: debug_page_alloc: fix NULL buf in debug_guardpage_minorder_setup",
                 "tags": {
@@ -76098,7 +76140,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "514bfd23c05c20253856bb8ea55c0afc620f2617",
+                "hash": "d2849215fb1a3c0f9d059b2e65f2eaeaf4e2371f",
                 "author": "Audra Mitchell <audra@redhat.com>",
                 "subject": "selftests/mm/vm_util.c: correct __pagemap_scan_get_categories return value",
                 "tags": {
@@ -76217,7 +76259,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "9889cf12eecea0c9cee12b2d29c25e8bb6d559a5",
+                "hash": "fface4afd3e3cdad8305403a8bd9ce0f686053fe",
                 "author": "Zhan Xusheng <zhanxusheng1024@gmail.com>",
                 "subject": "maple_tree: remove unused mas_is_root_limits()",
                 "tags": {
@@ -76302,7 +76344,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "4908dfc9d4b8be430f5337611a9baf24079c0fe3",
+                "hash": "143591121fb81cb379b7af90c592673a9d1d69b6",
                 "author": "Henry Elderman <henry.elderman.edu@gmail.com>",
                 "subject": "mm/execmem: fix fallback_end description in kernel-doc",
                 "tags": {
@@ -76357,7 +76399,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "19478c52f7eee3881f8e8e098984f5e86607fecf",
+                "hash": "76912c036a29b6ba6fb6284f9f429d99c6923221",
                 "author": "Muhammad Usama Anjum <usama.anjum@arm.com>",
                 "subject": "selftests/mm: skip COW tmpfile cases when fallocate() is unsupported",
                 "tags": {
@@ -76491,7 +76533,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "f63ef0e165663f0be3f2b6e74aa9897341c957dc",
+                "hash": "99f411b7a5cebc8d62f93556a8e59f475385aa9c",
                 "author": "Muhammad Usama Anjum <usama.anjum@arm.com>",
                 "subject": "selftests/mm: skip guard hole-punch test if MADV_REMOVE is unsupported",
                 "tags": {
@@ -76621,7 +76663,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "bba6334d0388da30aa26a7b04807fa9b4adb6bde",
+                "hash": "71a407a307c487e507cad4c51faec9aeb73fe9f4",
                 "author": "Muhammad Usama Anjum <usama.anjum@arm.com>",
                 "subject": "selftests/mm: skip hard dirty page-cache test on NFS",
                 "tags": {
@@ -76771,7 +76813,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "472a11eef502297b19cf8def0b0e8faa24f8db89",
+                "hash": "dce09e683fb0c169a7d6fae41ee4022ce9029220",
                 "author": "Muhammad Usama Anjum <usama.anjum@arm.com>",
                 "subject": "selftests/mm: retry migration failures for the full runtime",
                 "tags": {
@@ -76897,7 +76939,7 @@
                 "patch_series_idx": 3
             },
             {
-                "hash": "b54425472c0e55fc07885638caf08bdca9dcfadc",
+                "hash": "7b2839e7038d6e24cd85971ac01dca5d39a53727",
                 "author": "Hao Jia <jiahao1@lixiang.com>",
                 "subject": "mm/zswap: fix global shrinker when memory cgroup is disabled",
                 "tags": {
@@ -76999,7 +77041,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "762b38e01ad57598d629652df29572f8b825b0e5",
+                "hash": "df1e25ae82f6f7f8af1ac2cc5004ad9a62174906",
                 "author": "Hao Jia <jiahao1@lixiang.com>",
                 "subject": "mm/zswap: support batch writeback in shrink_memcg()",
                 "tags": {
@@ -77093,7 +77135,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "b8f37b5e87774ea59e34723157194c060609bb55",
+                "hash": "b6dcc375bf2843a5d61fb340e9ebf414aedd9ac5",
                 "author": "Mike Rapoport (Microsoft) <rppt@kernel.org>",
                 "subject": "drivers/base, mm: move arch_numa.c to mm/",
                 "tags": {
@@ -77301,7 +77343,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "be0afe0b85dc5a7b9302e40b5b0f630115653a54",
+                "hash": "efc2452807e3939c7d4d622f5d85f5947a908ca9",
                 "author": "Bart Van Assche <bvanassche@acm.org>",
                 "subject": "mm: make VM_FAULT_RESULT_TRACE compatible with sparse",
                 "tags": {
@@ -77343,7 +77385,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "bb1906874cb2684361fcc9ffafe4014d780cbd0a",
+                "hash": "af345f06f402c01d574bcc31f66b0815fb7190cb",
                 "author": "Sourav Panda <souravpanda@google.com>",
                 "subject": "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation",
                 "tags": {
@@ -77464,7 +77506,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "e23b68fa44cb4d07850945f2fa554f716e55f344",
+                "hash": "8bad9d589ed76b29f6c3c18d53d8c5eb47876e02",
                 "author": "Hongfu Li <lihongfu@kylinos.cn>",
                 "subject": "selftests/mm: fix read_file() return value check",
                 "tags": {
@@ -77631,7 +77673,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "256f9c951c15e2688ac3fb0d23f8404cbab4f7ec",
+                "hash": "c8cb6d9a9bf22b7cbda5ddff1c7c01c93e88f0ad",
                 "author": "Ethan Nelson-Moore <enelsonmoore@gmail.com>",
                 "subject": "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h",
                 "tags": {
@@ -77719,7 +77761,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "2d4b73d7a1f443125c509075b58eeccc532fc7b3",
+                "hash": "c41f08ed6f823077821fa460beb23e69911a9a28",
                 "author": "Suren Baghdasaryan <surenb@google.com>",
                 "subject": "alloc_tag: add ioctl to /proc/allocinfo",
                 "tags": {
@@ -77919,7 +77961,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "79414cfab89c7abcf415b3e39571bb95ecf7f89c",
+                "hash": "36db2e1c58f7dbdf9cb5afc68356132fd741af37",
                 "author": "Abhishek Bapat <abhishekbapat@google.com>",
                 "subject": "alloc_tag: add ioctl filters to /proc/allocinfo",
                 "tags": {
@@ -78005,7 +78047,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "6f35109d2a83a13acb55eadbc93fc38e43d54b20",
+                "hash": "75fca80f6a967338a4f5e08fcb05f76cf0c21773",
                 "author": "Abhishek Bapat <abhishekbapat@google.com>",
                 "subject": "alloc_tag: add size-based filtering to ioctl",
                 "tags": {
@@ -78091,7 +78133,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "5749cd521bcb6229258e782bf5fffe681afcc7e5",
+                "hash": "603f8781711b5b9ca48558bd3a525a1ea040c979",
                 "author": "Abhishek Bapat <abhishekbapat@google.com>",
                 "subject": "alloc_tag: add accuracy based filtering to ioctl",
                 "tags": {
@@ -78181,7 +78223,7 @@
                 "patch_series_idx": 3
             },
             {
-                "hash": "79a55558a324e9347ea9be714701871ae5b8fcd1",
+                "hash": "6c9c14fe595c85c1da71936fc7ab2e58f61cf70a",
                 "author": "Abhishek Bapat <abhishekbapat@google.com>",
                 "subject": "kselftest: alloc_tag: add kselftest for ioctl interface",
                 "tags": {
@@ -78275,7 +78317,7 @@
                 "patch_series_idx": 4
             },
             {
-                "hash": "e842b4e61d256d49218880562a71490972aafc0a",
+                "hash": "d15feca161f48528f68d60d11baf727579b13c44",
                 "author": "Abhishek Bapat <abhishekbapat@google.com>",
                 "subject": "kselftest: alloc_tag: extend the allocinfo ioctl kselftest",
                 "tags": {
@@ -78362,7 +78404,7 @@
                 "patch_series_idx": 5
             },
             {
-                "hash": "811f699b7628e9923bd66264b32c431457e9b098",
+                "hash": "b5f2034239ddaf9d30ee11e11e5b09c05db1b9c4",
                 "author": "Zhiling Zou <zhilinz@nebusec.ai>",
                 "subject": "mm: shmem: reject page-aligned fallocate end overflow",
                 "tags": {
@@ -78450,7 +78492,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "6b321c8849453654dc19d2cb2108f4bf54f34300",
+                "hash": "10f895ae02df14fc4edea01c235f09d5e4c1377b",
                 "author": "Christoph Hellwig <hch@lst.de>",
                 "subject": "shmem: provide a shmem_write_folio wrapper",
                 "tags": {
@@ -78669,7 +78711,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "9a4ac975e28180708fb942d71beaa4e69f6b01df",
+                "hash": "1e3d3983713f66f2a5e0c1c33a31e7f14feb8eec",
                 "author": "Christoph Hellwig <hch@lst.de>",
                 "subject": "mm/swap: introduce struct swap_io_ctx",
                 "tags": {
@@ -78896,7 +78938,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "8fc60c2de21954b90a9974470ed935179826331c",
+                "hash": "886f912038b2fc64ecfe7081b0d77609d2455129",
                 "author": "Christoph Hellwig <hch@lst.de>",
                 "subject": "mm/swap: also use struct swap_iocb for block I/O",
                 "tags": {
@@ -78994,7 +79036,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "c42c0036d19acb8fe6d56b4703d79c533b6ff5ec",
+                "hash": "b41a6f7c77c6b9569ce9d14b6569528064e1e90e",
                 "author": "Christoph Hellwig <hch@lst.de>",
                 "subject": "mm/swap: remove count_swpout_vm_event",
                 "tags": {
@@ -79094,7 +79136,7 @@
                 "patch_series_idx": 3
             },
             {
-                "hash": "290a3c7fa18b55f4f888862fe6c42d5854ccb379",
+                "hash": "fcf98f8770ed0cb46396f01427e898c48201930e",
                 "author": "Christoph Hellwig <hch@lst.de>",
                 "subject": "mm/swap: use swap_ops to register swap device's methods",
                 "tags": {
@@ -79199,7 +79241,7 @@
                 "patch_series_idx": 4
             },
             {
-                "hash": "8971fc607aa5904418e40c3394e17f3c675a7404",
+                "hash": "bb2363bf68b4033eab855d454be92b5890fe46aa",
                 "author": "Christoph Hellwig <hch@lst.de>",
                 "subject": "mm/swap: remove SWP_FS_OPS",
                 "tags": {
@@ -79459,7 +79501,7 @@
                 "patch_series_idx": 5
             },
             {
-                "hash": "a24230c2c25bded098835909d0c200f772a09b91",
+                "hash": "90a215154dcf095c28126e4070852d6be878d711",
                 "author": "Christoph Hellwig <hch@lst.de>",
                 "subject": "mm/vmstat: add NRSWP{IN,OUT} counters",
                 "tags": {
@@ -79625,7 +79667,7 @@
                 "patch_series_idx": 6
             },
             {
-                "hash": "ed3aa10ea1132e11d257bc507f961a046bfea354",
+                "hash": "0b4e06bbd55c2420ac0623e01bbf0d89d9805ef1",
                 "author": "Hongfu Li <lihongfu@kylinos.cn>",
                 "subject": "mm/swap: fix swap_cluster_lock() !CONFIG_SWAP stub signature mismatch",
                 "tags": {
@@ -79726,7 +79768,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "bcbaf653d480f3b09e5039281d863f014d0fbaf0",
+                "hash": "2da2935c7cf8bfbd769ef82c771c3e12c457ef73",
                 "author": "Yunzhao Li <yunzhao@cloudflare.com>",
                 "subject": "mm/zswap: use ratelimited stats flush in zswap_shrinker_count()",
                 "tags": {
@@ -79826,7 +79868,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "9ecf88105b7e0e24d02aef30434dab9eb4db32fd",
+                "hash": "c4e20e8abc88c52bd49370f32677e4947d06fea4",
                 "author": "Hongfu Li <lihongfu@kylinos.cn>",
                 "subject": "mm/cma: remove stray newline from auto-generated CMA area name",
                 "tags": {
@@ -79948,7 +79990,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "c22c5bbbbe33243bde5b2fa0eec3b7920c25a90d",
+                "hash": "02957cf44282ef15f0b72257a46485f7d43f7660",
                 "author": "Hui Su <sh_def@163.com>",
                 "subject": "kasan: fix cache shrink race with CPU hotplug",
                 "tags": {
@@ -80043,7 +80085,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "c21082ee70e549490c1f81800f0400d74cc8f15e",
+                "hash": "8ff5b9863ec7fa98bb4cd214eb195ec9baf0a82c",
                 "author": "David Hildenbrand (Arm) <david@kernel.org>",
                 "subject": "mm/gup_test: keep longterm pin state per file",
                 "tags": {
@@ -80144,7 +80186,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "c8476eb0275d14cc9db3ac4ddeed79866b394b30",
+                "hash": "265f5337f22ac8d4516f9b9cf433320bc3ffeaba",
                 "author": "Catalin Marinas <catalin.marinas@arm.com>",
                 "subject": "mm: kmemleak: confirm suspected leaks with a second scan",
                 "tags": {
@@ -80230,7 +80272,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "8553aa7f096ef1835d7a087f0d7b271995068066",
+                "hash": "6e9ffadd8f21396f66e7c2238ef4d1dd21356daf",
                 "author": "Breno Leitao <leitao@debian.org>",
                 "subject": "mm: kmemleak: report leaks only after N consecutive unreferenced scans",
                 "tags": {
@@ -80355,7 +80397,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "c0c2758c91004dc24e0e075cf4c9861e240e53e9",
+                "hash": "2531eb0d0989b3e1f97be89372735303eeff7b3f",
                 "author": "Breno Leitao <leitao@debian.org>",
                 "subject": "mm: kmemleak: factor leak confirmation into a helper",
                 "tags": {
@@ -80439,7 +80481,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "12dfad9104c9c3c6f54723087a597596acace796",
+                "hash": "71ff9be17f153df147e15d8bcfdeced81b855e6a",
                 "author": "Breno Leitao <leitao@debian.org>",
                 "subject": "selftests: mm: test kmemleak's N-consecutive-scan leak confirmation",
                 "tags": {
@@ -80559,7 +80601,7 @@
                 "patch_series_idx": 3
             },
             {
-                "hash": "877fdc92d13ab1c63a795e6a2c526e8e7971e491",
+                "hash": "5e75190f2854369a008445fe674e22edcc89e3c8",
                 "author": "Breno Leitao <leitao@debian.org>",
                 "subject": "mm: kmemleak: default min_unref_scans to 2 for verbose auto-scan",
                 "tags": {
@@ -80643,7 +80685,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "ba6c58af3bf5411402ec6aec597ed382301e85a1",
+                "hash": "6328346995a930f5ec6a07c36119052195107511",
                 "author": "Breno Leitao <leitao@debian.org>",
                 "subject": "Documentation: kmemleak: document the conditional min_unref_scans default",
                 "tags": {
@@ -80748,7 +80790,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "6d4fe07fa1504119635793956ea5f87883fdf8b7",
+                "hash": "d2c8b861e11862ceab1679e1bab756efffe75d1b",
                 "author": "Breno Leitao <leitao@debian.org>",
                 "subject": "selftests/mm: kmemleak: drop stale min_unref_scans default from comments",
                 "tags": {
@@ -80867,7 +80909,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "836a3d1bdf076cf0ed696cb4c66f640bd2a1111d",
+                "hash": "53ee3782f72be7028ac67c892f9712e055a4e8b4",
                 "author": "Mark Sercombe <sercombe.joel.mark@gmail.com>",
                 "subject": "maple_tree: fix comment typo",
                 "tags": {
@@ -80953,7 +80995,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "f2f5e2d33ccdcaa12cb4e5580b0512637951ff3b",
+                "hash": "348a776cbc4bde52a5b3b79962b63969e1eed32e",
                 "author": "David Carlier <devnexen@gmail.com>",
                 "subject": "zram: fix slot lock bit position on big-endian 64-bit",
                 "tags": {
@@ -81042,7 +81084,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "525ab7b24f5c085fbbf21bb819f365d13b98ce14",
+                "hash": "ee121d831b89ec1e91c88b7e3fd92a37c3a2807f",
                 "author": "Jann Horn <jannh@google.com>",
                 "subject": "mm/page-writeback: document folio_mark_dirty() locking more explicitly",
                 "tags": {
@@ -81054,11 +81096,11 @@
                         "Andrew Morton <akpm@linux-foundation.org>"
                     ],
                     "Reviewed-by:": [
-                        "Jan Kara <jack@suse.cz>"
+                        "Jan Kara <jack@suse.cz>",
+                        "Christoph Hellwig <hch@lst.de>"
                     ],
                     "Cc:": [
-                        "Matthew Wilcox (Oracle) <willy@infradead.org>",
-                        "Christoph Hellwig <hch@infradead.org>"
+                        "Matthew Wilcox (Oracle) <willy@infradead.org>"
                     ]
                 },
                 "subsys_info_map": {
@@ -81196,7 +81238,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "d23b14cb66b742c73e816d558e245ffc931cfe35",
+                "hash": "6b3ded977d5e40d1dd0ab0d6904da3cd095a46c0",
                 "author": "Longlong Xia <xialonglong@kylinos.cn>",
                 "subject": "zsmalloc: account for handle size in class lookup",
                 "tags": {
@@ -81282,7 +81324,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "acbd57da0ec8ca323c8def299674036bbb7d9de4",
+                "hash": "6470e03f98663ecc166ed2aa2ce87548308c8a6f",
                 "author": "Karl Mehltretter <kmehltretter@gmail.com>",
                 "subject": "selftests/proc: make proc-maps-race work with READ_IMPLIES_EXEC",
                 "tags": {
@@ -81364,7 +81406,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "1d64ad5d4e019056399797f220ba2413bbefd529",
+                "hash": "f5a5c528b9c74e525e1c80cecdf5fd4c3a26e179",
                 "author": "Christoph Hellwig <hch@lst.de>",
                 "subject": "mm/swap: revert to single-folio writes for synchronous swap devices",
                 "tags": {
@@ -81465,7 +81507,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "804addbf135c49287b5bbea93c908d904e230ba4",
+                "hash": "afc38453e371d81b9ca6c5798cd52077af65535e",
                 "author": "Christoph Hellwig <hch@lst.de>",
                 "subject": "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops",
                 "tags": {
@@ -81692,7 +81734,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "fa2fe1589903f2d5a21bae53bb4ff7ef12f3ae05",
+                "hash": "32b04d1f2b82fb04336b4986e3589cac08be9182",
                 "author": "Christoph Hellwig <hch@lst.de>",
                 "subject": "mm/swap: move swap_ops into file systems for file system-based swap",
                 "tags": {
@@ -81928,7 +81970,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "ce24305f4a1da673592ceafe423808ba5c1f5edb",
+                "hash": "e22347b14b0d683e23c13cd2d3d61e8639653894",
                 "author": "Hui Su <sh_def@163.com>",
                 "subject": "kasan: fix quarantine_size accounting during cache removal",
                 "tags": {
@@ -82027,7 +82069,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "e7db7187a246306255ca018bbf8bcaaaaed15ae0",
+                "hash": "9e51e14f7bac3c6d788f2404bff1200d4d29adf9",
                 "author": "Wilson Felipe Pereira <wfelipe@google.com>",
                 "subject": "selftests/cgroup: test_zswap: skip test_no_kmem_bypass if debugfs is unavailable",
                 "tags": {
@@ -82136,7 +82178,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "f27897acc753ac0e0b319a8fbc79c28ec903185d",
+                "hash": "ec59bedaec0fd1dbb8cec31bae5c4a29bbf0e7a7",
                 "author": "Andrew Morton <akpm@linux-foundation.org>",
                 "subject": "selftests-cgroup-test_zswap-skip-test_no_kmem_bypass-if-debugfs-is-unavailable-fix",
                 "tags": {
@@ -82239,7 +82281,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "b0ab672f8f5f13464a17d5d4e13a2d08747e4af0",
+                "hash": "712c9e1e40abf5ea25bc1c681f93d49e2deb7db3",
                 "author": "Hui Zhu <zhuhui@kylinos.cn>",
                 "subject": "mm/mglru: fix young counter undercount for large folios",
                 "tags": {
@@ -82368,7 +82410,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "999d8276293b8b5f5e4c38e1922d7d232fa3e4dc",
+                "hash": "052ef2d9451556a8e2a7b358b70af26a887c13e8",
                 "author": "Lorenzo Stoakes (ARM) <ljs@kernel.org>",
                 "subject": "MAINTAINERS: add drivers/char/mem.c to mm misc, memory mapping sections",
                 "tags": {
@@ -82421,7 +82463,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "f56450dd943316180f4da054f86276bb59eaec74",
+                "hash": "65678674acc4f4afa19048707fec6e26415afec4",
                 "author": "Nico Pache (Red Hat) <nico.pache@linux.dev>",
                 "subject": "mm/khugepaged: refactor per-scan state clearing into collapse_control_init_scan()",
                 "tags": {
@@ -82541,7 +82583,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "1603928516964d2f38ac3e84100eecf61326ad0b",
+                "hash": "17cfe62b0ae19873a75ff5b9c7d57728b64559d6",
                 "author": "Nico Pache (Red Hat) <nico.pache@linux.dev>",
                 "subject": "mm/khugepaged: extract reference check into folio_pte_referenced() helper",
                 "tags": {
@@ -82658,7 +82700,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "169e87cbfa23b42569c13ebf6984b193b89e1f91",
+                "hash": "c9809ca3d2410a21270d7fb1d4d17dd8ae50c1a3",
                 "author": "Nico Pache (Red Hat) <nico.pache@linux.dev>",
                 "subject": "mm/khugepaged: introduce a count_collapse_event() helper",
                 "tags": {
@@ -82775,7 +82817,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "d0af9a540371c357cf2343e95513c49cb25150d1",
+                "hash": "cdcd2b944fa2968c1dc383cf04ae13a7d4184859",
                 "author": "Nico Pache (Red Hat) <nico.pache@linux.dev>",
                 "subject": "mm/khugepaged: fix outdated comments",
                 "tags": {
@@ -82895,7 +82937,7 @@
                 "patch_series_idx": 3
             },
             {
-                "hash": "855a68e757ae9034c3d35c3a0a263248056b05db",
+                "hash": "0cbdbd3d4b1067683d3be383805a473d8338243d",
                 "author": "Nico Pache (Red Hat) <nico.pache@linux.dev>",
                 "subject": "mm/khugepaged: unmap pte before releasing vma write lock",
                 "tags": {
@@ -83015,7 +83057,7 @@
                 "patch_series_idx": 4
             },
             {
-                "hash": "ed4a303390164a5426a8a05dbd51c848ee1a8f84",
+                "hash": "5e5e044111eb427b4a63411217de8a5e9fe6fda7",
                 "author": "Nico Pache (Red Hat) <nico.pache@linux.dev>",
                 "subject": "mm: Documentation: clarify where the mTHP stats live",
                 "tags": {
@@ -83190,7 +83232,7 @@
                 "patch_series_idx": 5
             },
             {
-                "hash": "181c0db5e956d9658eac31593b38615533936b8f",
+                "hash": "10ec12aac5e51e4e637d140514eab1e144246608",
                 "author": "Song Hu <husong@kylinos.cn>",
                 "subject": "Docs/mm: fix outdated \"radix tree\" in page_migration",
                 "tags": {
@@ -83312,7 +83354,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "e8a3585add78150ad33c455caabd9d87ae39c605",
+                "hash": "cc2b32bf600d2504410df4fcd841a67deb013f4f",
                 "author": "Kairui Song <kasong@tencent.com>",
                 "subject": "mm/mglru: fix and remove redundant unevictable folio handling",
                 "tags": {
@@ -83446,7 +83488,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "77c18a94609eba6b808310b69f87092738f6e480",
+                "hash": "b64fd7fd44d0da830e9a2df56bdf8a38bdd7e5cd",
                 "author": "Tejun Heo <tj@kernel.org>",
                 "subject": "percpu: drop CONFIG_DEBUG_FORCE_WEAK_PER_CPU",
                 "tags": {
@@ -83550,7 +83592,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "9a569b6062fba554bc24cf2375ded911e65bbb3a",
+                "hash": "2453765e011959096e09d1f420be9acd04ef7dd2",
                 "author": "Qiang Liu <liuqiang@kylinos.cn>",
                 "subject": "lib/test_hmm: fix garbage pfn and wrong direction in devmem fault debug",
                 "tags": {
@@ -83607,7 +83649,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "e6b333c7fb6cd265a252800fc9652daa1bacecaf",
+                "hash": "e96bb7b3ee487b44c75e54f20de455105c466d57",
                 "author": "Xie Yuanbin <xieyuanbin1@huawei.com>",
                 "subject": "mm/Kconfig: make MEMORY_FAILURE select MIGRATION",
                 "tags": {
@@ -83758,7 +83800,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "6309afbcd30c6479783a7807dc899e1285b0dc1d",
+                "hash": "011d9d23d650e7d67065bf4b90dea3423aa9fa54",
                 "author": "Andrew Morton <akpm@linux-foundation.org>",
                 "subject": "mm/hmm.c:hmm_do_fault(): suppress sparse warning",
                 "tags": {
@@ -83821,7 +83863,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "08ed9f6ec1ab8079a870d4399d32ab97ab3c51b5",
+                "hash": "6a47272106fb469e981297c4f9ac80a1d83b450c",
                 "author": "Andrew Morton <akpm@linux-foundation.org>",
                 "subject": "mm-hmmc-hmm_do_fault-suppress-sparse-warning-fix",
                 "tags": {
@@ -83879,7 +83921,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "8bd65da7a33291a2de400b1cb800d23c69cfa126",
+                "hash": "17f71b292018d8a19d7966336159a959a41c9f6a",
                 "author": "Eric Kim <seohyun.kim@outlook.kr>",
                 "subject": "mm/rmap: synchronize lock and unlock target in anon_vma_clone",
                 "tags": {
@@ -83974,7 +84016,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "8e0efa3a53708d0ba9e0466a79ef4408f55f80d7",
+                "hash": "af2db75dcbcced5063f39551434099d4d20ee551",
                 "author": "Audra Mitchell <audra@redhat.com>",
                 "subject": "selftests/mm: fix soft-dirty kselftest supported check",
                 "tags": {
@@ -84100,7 +84142,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "6fca2e25d0a286c67068ff14e8c86c2aacda885d",
+                "hash": "d560f4595e6f42a7a513903e56efb5d2d2b5caa5",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: add rcu locking check when LOCKDEP is enabled",
                 "tags": {
@@ -84191,7 +84233,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "aeb693cd9945a862933f970be6be30a04c73ac92",
+                "hash": "e5b4bbb48266871be232bb30658f2e88d8b9d724",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "locking/lockdep: add sequence counter to held_lock",
                 "tags": {
@@ -84309,7 +84351,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "64cb49f84e655da8d06f816a52768276f075d353",
+                "hash": "c59fd676aff251aff50b12708526a44209e14ac7",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: add write lock checking with lockdep sequence numbers",
                 "tags": {
@@ -84400,7 +84442,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "e1ddaa3283a4943d387c83cc4c0773dee778c856",
+                "hash": "1207798d0e913b9e14f4d1a6784cefc686d73e4e",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree-stop-flooding-logs-when-debug_locks-is-set-to-zero-fix",
                 "tags": {
@@ -84493,7 +84535,7 @@
                 "patch_series_idx": 3
             },
             {
-                "hash": "63548ecc59242f72b6acdadd0e2ae6182067a872",
+                "hash": "b635c523c8a29d527246be5cce7e811f18dd8c9e",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: documentation fix",
                 "tags": {
@@ -84589,7 +84631,7 @@
                 "patch_series_idx": 4
             },
             {
-                "hash": "9249e2d2cbb1ed5072e3017bfbd4909e4c9540e3",
+                "hash": "83357f60fe0b1f1cead453c4850f222669dc37a1",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: drop dead code from mas_extend_spanning_null()",
                 "tags": {
@@ -84679,7 +84721,7 @@
                 "patch_series_idx": 5
             },
             {
-                "hash": "3deeae009532aaecc1a2d46b098091a59b369851",
+                "hash": "9a18ee12167a58d5c1adf954543abf5d1d473f10",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: drop MAPLE_ALLOC_SLOTS",
                 "tags": {
@@ -84754,7 +84796,7 @@
                 "patch_series_idx": 6
             },
             {
-                "hash": "7e5174d7dbd74d67b117a4082872d3182cc26573",
+                "hash": "cfcb9e7c76430b89cf2f09a48f18cdd69f727bc2",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: clarify comments on mas_nomem()",
                 "tags": {
@@ -84844,7 +84886,7 @@
                 "patch_series_idx": 7
             },
             {
-                "hash": "1e4f99cd1d37bf226c95cb2e8057f47c7a004027",
+                "hash": "3352d7b5fe13a147ad97a11957bd3060cec59203",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: use prefetched value in mas_wr_store_type()",
                 "tags": {
@@ -84934,7 +84976,7 @@
                 "patch_series_idx": 8
             },
             {
-                "hash": "fe2889ad441cffd7664cb6f88abed693f37a27c7",
+                "hash": "0bbf421f29df76faa22154195b5ac1b210eddf07",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: optimise mas_wr_node_store() when not in rcu mode",
                 "tags": {
@@ -85024,7 +85066,7 @@
                 "patch_series_idx": 9
             },
             {
-                "hash": "c572c899cccf363b7f00c2cbc5773c8a80e6a1d1",
+                "hash": "07511773d6a66fc371b3591b1dba2a4b12c8f28f",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: micro optimisation of mas_wr_store_type()",
                 "tags": {
@@ -85114,7 +85156,7 @@
                 "patch_series_idx": 10
             },
             {
-                "hash": "4add038c3c67b1e5c14539d27692d1700c1ec45d",
+                "hash": "ed1da9d3777a49183385c783dd719eca1907e182",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: add bulk parent set helper",
                 "tags": {
@@ -85204,7 +85246,7 @@
                 "patch_series_idx": 11
             },
             {
-                "hash": "ccb5ec7039c90d595c15918abaa15977378a3818",
+                "hash": "08f84af834d6f9023e37f5aca86d771ba11d3a09",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: catch race in mas_alloc_cyclic()",
                 "tags": {
@@ -85301,7 +85343,7 @@
                 "patch_series_idx": 12
             },
             {
-                "hash": "5df8d63bd0c544c331937f6ae829ffbb05d41892",
+                "hash": "d08b60944135abb01b65bcc32b910511fcebfc5b",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: document that erase may use GFP_KERNEL for allocations",
                 "tags": {
@@ -85393,7 +85435,7 @@
                 "patch_series_idx": 13
             },
             {
-                "hash": "428c5df62991034fc703dbed7cef1582aaba9195",
+                "hash": "025d124bbc93e2dc7e95cd63cebbfae68b28dce0",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: WARN_ON_ONCE when allocations fail",
                 "tags": {
@@ -85483,7 +85525,7 @@
                 "patch_series_idx": 14
             },
             {
-                "hash": "289894da964acb9b3297afb78fdad6c7567a87b6",
+                "hash": "334349ee8ecae9ff9af2cd557834ec6d488468a4",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: document erase and allocations better",
                 "tags": {
@@ -85582,7 +85624,7 @@
                 "patch_series_idx": 15
             },
             {
-                "hash": "a2a0d3981cdfa9c18421138f0a2b9b2cdca2f14a",
+                "hash": "4265e15523d3bb877b4bd70100b91c7dcfb90fb1",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: change two GFP flags in tests",
                 "tags": {
@@ -85660,7 +85702,7 @@
                 "patch_series_idx": 16
             },
             {
-                "hash": "727e1a7206f3bcf3233681c688af576bc51f3b09",
+                "hash": "546565c1003c20841a6e05a4e5d4edd5dd67c0f5",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: fix argument name in header",
                 "tags": {
@@ -85738,7 +85780,7 @@
                 "patch_series_idx": 17
             },
             {
-                "hash": "b567e5ca460d1d21ba8b873fda6e9f7e9ddfcbef",
+                "hash": "699055cd0b1158766e015a245b5799704092cadc",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: avoid extra gap calculation",
                 "tags": {
@@ -85828,7 +85870,7 @@
                 "patch_series_idx": 18
             },
             {
-                "hash": "e54f352b2310c6cba03625ce9e009071fb626fb1",
+                "hash": "f95cb159e39f1ac8ea660b1a1730e6b9e960c7b0",
                 "author": "Liam R. Howlett (Oracle) <liam@infradead.org>",
                 "subject": "maple_tree: add helper mas_make_walkable()",
                 "tags": {
@@ -85918,7 +85960,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "1685e57370566730c5c33c6603a8c986b283e1b4",
+                "hash": "5d8c34e78463ed3907d23d466c3509df167c86fc",
                 "author": "Vivian Wang <wangruikang@iscas.ac.cn>",
                 "subject": "riscv: mm: fix concurrency in mark_new_valid_map()",
                 "tags": {
@@ -85993,7 +86035,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "34485e1cde836f975e8f9037d154e5d322aeb82b",
+                "hash": "4006e73c2600eff0e9b02029128b3ddac9c8b834",
                 "author": "Yunhui Cui <cuiyunhui@bytedance.com>",
                 "subject": "riscv: mm: exclude invalid THP PMDs from page table check",
                 "tags": {
@@ -86063,7 +86105,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "729cb70d908c1302f946d2570dc8b5be40fc6dbc",
+                "hash": "762b014d37bebe2370383ffaa069d197574930f7",
                 "author": "Mike Rapoport (Microsoft) <rppt@kernel.org>",
                 "subject": "sh: remove CONFIG_NUMA and related configuration options",
                 "tags": {
@@ -86126,7 +86168,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "838ecafc891820c0a2c7d407e3ceeb7c5dbaff73",
+                "hash": "add0601d2c441ab9d7b1e59daad1cf4f9a1c1f99",
                 "author": "Mike Rapoport (Microsoft) <rppt@kernel.org>",
                 "subject": "sh: mm: remove numa.c",
                 "tags": {
@@ -86188,7 +86230,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "43ff4e34e69bed889a04d0b1c4466c58ffd51c15",
+                "hash": "f841197d1c13450ee8404fbef755e847581d7256",
                 "author": "Mike Rapoport (Microsoft) <rppt@kernel.org>",
                 "subject": "sh: mm: drop allocate_pgdat()",
                 "tags": {
@@ -86250,7 +86292,7 @@
                 "patch_series_idx": 2
             },
             {
-                "hash": "6802a0a088c40f9c190bf11d2f253bd20e884bf0",
+                "hash": "2e0b6b6ac9445e3af6a43c148cf8d13f39e86afa",
                 "author": "Mike Rapoport (Microsoft) <rppt@kernel.org>",
                 "subject": "sh: remove setup_bootmem_node() and plat_mem_setup()",
                 "tags": {
@@ -86312,7 +86354,7 @@
                 "patch_series_idx": 3
             },
             {
-                "hash": "419b6401d15c679d9e6a4ac337864bfc0b8ac93f",
+                "hash": "4bdc092b2330a282a4e739a3337e9710a8dbce38",
                 "author": "Mike Rapoport (Microsoft) <rppt@kernel.org>",
                 "subject": "sh: drop dead code guarded by #ifdef CONFIG_NUMA",
                 "tags": {
@@ -86374,7 +86416,7 @@
                 "patch_series_idx": 4
             },
             {
-                "hash": "f3275d5145bbbdbbe25acec90050a26dc4b226d8",
+                "hash": "1b36861518c63e0ac7aada983bd541d5b9a92128",
                 "author": "Mike Rapoport (Microsoft) <rppt@kernel.org>",
                 "subject": "sh: drop include/asm/mmzone.h",
                 "tags": {
@@ -86436,7 +86478,7 @@
                 "patch_series_idx": 5
             },
             {
-                "hash": "3e996e5618dad3d1c6882dee664633db01ebd69b",
+                "hash": "0f72758487cb0daa2b86687297e9e1aacfdc369d",
                 "author": "Mike Rapoport (Microsoft) <rppt@kernel.org>",
                 "subject": "init/Kconfig: drop ARCH_WANT_NUMA_VARIABLE_LOCALITY",
                 "tags": {
@@ -86479,7 +86521,7 @@
                 "patch_series_idx": 6
             },
             {
-                "hash": "754e7a6b4f535658c6c71151fac698bb20933d89",
+                "hash": "34c1873be0e3da0da9cdc022b14d02f6012a2f1e",
                 "author": "Mike Rapoport (Microsoft) <rppt@kernel.org>",
                 "subject": "sh: init: remove call the memblock_set_node()",
                 "tags": {
@@ -86541,7 +86583,7 @@
                 "patch_series_idx": 7
             },
             {
-                "hash": "3460577ac69987c6f59958c0879bc669fb4d1922",
+                "hash": "2b9941588e882a63e5dcf7d05f604cdf2d389349",
                 "author": "Mike Rapoport (Microsoft) <rppt@kernel.org>",
                 "subject": "sh: remove SPARSEMEM related entries from Kconfig",
                 "tags": {
@@ -86603,7 +86645,7 @@
                 "patch_series_idx": 8
             },
             {
-                "hash": "e46c6e51f29dfa40952b561fe5fa22a486c26d73",
+                "hash": "ad5235eb5558343cc27eec8e7f483b90072fc369",
                 "author": "Mike Rapoport (Microsoft) <rppt@kernel.org>",
                 "subject": "sh: drop include/asm/sparsemem.h",
                 "tags": {
@@ -86665,7 +86707,7 @@
                 "patch_series_idx": 9
             },
             {
-                "hash": "e42d4e96850b9c114e9c4fb56c6f3f944ac3c2f4",
+                "hash": "b86b0e81e2daf96f16cb2b334950daeadb0eacfa",
                 "author": "Nathan Chancellor <nathan@kernel.org>",
                 "subject": "arch_numa: avoid false positive fortify warning in setup_node_to_cpumask_map()",
                 "tags": {
@@ -86757,7 +86799,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "830363758969586507285ca58f6efcb4ca833980",
+                "hash": "2e46f21dc0ba09a7210c15df10a3ef8b75295f9a",
                 "author": "Usama Arif <usama.arif@linux.dev>",
                 "subject": "mm/memcontrol: avoid false sharing between vmstats and events",
                 "tags": {
@@ -86848,7 +86890,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "44cb83ebdf9a2d545e3dec884d9ee256e82a2fba",
+                "hash": "f740dbc289f3fad099c8209fe524a8e5cec98feb",
                 "author": "Hongfu Li <lihongfu@kylinos.cn>",
                 "subject": "selftests/mm: drop redundant open() in mprotect_tests()",
                 "tags": {
@@ -86970,7 +87012,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "4502cd0d5f83dccc77970646ac63f400f3b7463e",
+                "hash": "c4c99fdc227b64a17e3ceeeef01c84eef87fef1a",
                 "author": "Hui Su <sh_def@163.com>",
                 "subject": "mm/migrate_device: fix cache flush when replacing huge zero PMD",
                 "tags": {
@@ -87080,7 +87122,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "442b4e36a6c2ffd55380326e01f8cf2b008ffd9a",
+                "hash": "f13c52ab5d0fef69a096a0970779d52e11581b5c",
                 "author": "Kiryl Shutsemau (Meta) <kas@kernel.org>",
                 "subject": "mm: include swap.h in swapops.h",
                 "tags": {
@@ -87097,13 +87139,15 @@
                     "Closes:": [
                         "https://lore.kernel.org/oe-kbuild-all/202608181757.mza9RRj7-lkp@intel.com/"
                     ],
+                    "Reviewed-by:": [
+                        "Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+                    ],
                     "Cc:": [
                         "Baoquan He <baoquan.he@linux.dev>",
                         "Barry Song <baohua@kernel.org>",
                         "Chris Li <chrisl@kernel.org>",
                         "Kairui Song <kasong@tencent.com>",
                         "Kemeng Shi <shikemeng@huaweicloud.com>",
-                        "Lorenzo Stoakes <ljs@kernel.org>",
                         "Nhat Pham <nphamcs@gmail.com>"
                     ]
                 },
@@ -87164,7 +87208,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "3bbe49aebb42daba6e5e028caf0b3fa16108ffce",
+                "hash": "21efcf3ed0d4c715b174ef063ff806906be2a632",
                 "author": "Song Hu <husong@kylinos.cn>",
                 "subject": "mm: memcg: release the css reference when a stock slot empties",
                 "tags": {
@@ -87266,7 +87310,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "0cd2fa4cee0c5c0d8d0a2fdf5f3f38fdbd5f9e81",
+                "hash": "9bf0797d351fa229373b3f631a6aa0157ebaa91b",
                 "author": "Anshuman <anshumantewari123@gmail.com>",
                 "subject": "selftests/mm: fix unchecked ftruncate return value in soft-dirty test",
                 "tags": {
@@ -87278,7 +87322,8 @@
                         "Andrew Morton <akpm@linux-foundation.org>"
                     ],
                     "Reviewed-by:": [
-                        "Andrew Morton <akpm@linux-foundation.org>"
+                        "Andrew Morton <akpm@linux-foundation.org>",
+                        "Sarthak Sharma <sarthak.sharma@arm.com>"
                     ],
                     "Cc:": [
                         "David Hildenbrand <david@kernel.org>",
@@ -87378,7 +87423,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "f6cc09def8838519be48bf68f8174a0f8b62a901",
+                "hash": "9004cb6982de9d03a32b7daa3dd6507339eaff30",
                 "author": "Breno Leitao <leitao@debian.org>",
                 "subject": "mm, swap: ratelimit bad swap entry reports",
                 "tags": {
@@ -87485,7 +87530,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "f846a3b344a4bf90197e294658c33bdd18120297",
+                "hash": "8b5cfe698768b413e70290d68eedb242504b7bf0",
                 "author": "Leon Hwang <leon.hwang@linux.dev>",
                 "subject": "hugetlb: add cond_resched() to __unmap_hugepage_range()",
                 "tags": {
@@ -87584,11 +87629,166 @@
                 "patch_series": null,
                 "patch_series_sz": null,
                 "patch_series_idx": null
+            },
+            {
+                "hash": "4b2ae13f3393ef4b4bce0021e8762790354f369f",
+                "author": "Anshuman <anshumantewari123@gmail.com>",
+                "subject": "selftests/mm: check stat() return value in khugepaged get_finfo()",
+                "tags": {
+                    "Link:": [
+                        "https://lore.kernel.org/20260819121426.49500-1-anshumantewari123@gmail.com"
+                    ],
+                    "Signed-off-by:": [
+                        "Anshuman <anshumantewari123@gmail.com>",
+                        "Andrew Morton <akpm@linux-foundation.org>"
+                    ],
+                    "Reviewed-by:": [
+                        "Andrew Morton <akpm@linux-foundation.org>",
+                        "SJ Park <sj@kernel.org>"
+                    ],
+                    "Cc:": [
+                        "David Hildenbrand <david@kernel.org>",
+                        "Lorenzo Stoakes <ljs@kernel.org>",
+                        "Shuah Khan <shuah@kernel.org>"
+                    ]
+                },
+                "subsys_info_map": {
+                    "KERNEL SELFTEST FRAMEWORK": {
+                        "name": "KERNEL SELFTEST FRAMEWORK",
+                        "maintainer": [
+                            "Shuah Khan <shuah@kernel.org>",
+                            "Shuah Khan <skhan@linuxfoundation.org>"
+                        ],
+                        "list": [
+                            "linux-kselftest@vger.kernel.org"
+                        ],
+                        "status": [
+                            "Maintained"
+                        ],
+                        "files": [
+                            "Documentation/dev-tools/kselftest*",
+                            "tools/testing/selftests/"
+                        ]
+                    },
+                    "MEMORY MANAGEMENT - MISC": {
+                        "name": "MEMORY MANAGEMENT - MISC",
+                        "maintainer": [
+                            "Andrew Morton <akpm@linux-foundation.org>",
+                            "David Hildenbrand <david@kernel.org>"
+                        ],
+                        "reviewer": [
+                            "Lorenzo Stoakes <ljs@kernel.org>",
+                            "Liam R. Howlett <liam@infradead.org>",
+                            "Vlastimil Babka <vbabka@kernel.org>",
+                            "Mike Rapoport <rppt@kernel.org>",
+                            "Suren Baghdasaryan <surenb@google.com>",
+                            "Michal Hocko <mhocko@suse.com>"
+                        ],
+                        "list": [
+                            "linux-mm@kvack.org"
+                        ],
+                        "status": [
+                            "Maintained"
+                        ],
+                        "webpage": [
+                            "http://www.linux-mm.org"
+                        ],
+                        "files": [
+                            "Documentation/ABI/testing/sysfs-kernel-mm",
+                            "Documentation/ABI/testing/sysfs-kernel-mm-cma",
+                            "Documentation/ABI/testing/sysfs-kernel-mm-memory-tiers",
+                            "Documentation/ABI/testing/sysfs-kernel-mm-numa",
+                            "Documentation/admin-guide/mm/",
+                            "Documentation/mm/",
+                            "drivers/char/mem.c",
+                            "include/linux/cma.h",
+                            "include/linux/dmapool.h",
+                            "include/linux/ioremap.h",
+                            "include/linux/memory-tiers.h",
+                            "include/linux/page_idle.h",
+                            "mm/backing-dev.c",
+                            "mm/cma.c",
+                            "mm/cma_debug.c",
+                            "mm/cma_sysfs.c",
+                            "mm/dmapool.c",
+                            "mm/dmapool_test.c",
+                            "mm/early_ioremap.c",
+                            "mm/fadvise.c",
+                            "mm/ioremap.c",
+                            "mm/mapping_dirty_helpers.c",
+                            "mm/memory-tiers.c",
+                            "mm/page_idle.c",
+                            "mm/pgalloc-track.h",
+                            "mm/process_vm_access.c",
+                            "tools/testing/selftests/mm/"
+                        ]
+                    },
+                    "MEMORY MANAGEMENT - THP (TRANSPARENT HUGE PAGE)": {
+                        "name": "MEMORY MANAGEMENT - THP (TRANSPARENT HUGE PAGE)",
+                        "maintainer": [
+                            "Andrew Morton <akpm@linux-foundation.org>",
+                            "David Hildenbrand <david@kernel.org>",
+                            "Lorenzo Stoakes <ljs@kernel.org>"
+                        ],
+                        "reviewer": [
+                            "Zi Yan <ziy@nvidia.com>",
+                            "Baolin Wang <baolin.wang@linux.alibaba.com>",
+                            "Liam R. Howlett <liam@infradead.org>",
+                            "Nico Pache <nico.pache@linux.dev>",
+                            "Ryan Roberts <ryan.roberts@arm.com>",
+                            "Dev Jain <dev.jain@arm.com>",
+                            "Barry Song <baohua@kernel.org>",
+                            "Lance Yang <lance.yang@linux.dev>",
+                            "Usama Arif <usama.arif@linux.dev>"
+                        ],
+                        "list": [
+                            "linux-mm@kvack.org"
+                        ],
+                        "status": [
+                            "Maintained"
+                        ],
+                        "webpage": [
+                            "http://www.linux-mm.org"
+                        ],
+                        "files": [
+                            "Documentation/ABI/testing/sysfs-kernel-mm-transparent-hugepage",
+                            "Documentation/admin-guide/mm/transhuge.rst",
+                            "include/linux/huge_mm.h",
+                            "include/linux/khugepaged.h",
+                            "include/trace/events/huge_memory.h",
+                            "mm/huge_memory.c",
+                            "mm/khugepaged.c",
+                            "mm/mm_slot.h",
+                            "tools/testing/selftests/mm/khugepaged.c",
+                            "tools/testing/selftests/mm/split_huge_page_test.c",
+                            "tools/testing/selftests/mm/transhuge-stress.c"
+                        ]
+                    },
+                    "THE REST": {
+                        "name": "THE REST",
+                        "maintainer": [
+                            "Linus Torvalds <torvalds@linux-foundation.org>"
+                        ],
+                        "list": [
+                            "linux-kernel@vger.kernel.org"
+                        ],
+                        "status": [
+                            "Buried alive in reporters"
+                        ],
+                        "files": [
+                            "*",
+                            "*/"
+                        ]
+                    }
+                },
+                "patch_series": null,
+                "patch_series_sz": null,
+                "patch_series_idx": null
             }
         ],
         "mm-new": [
             {
-                "hash": "9426384086f766938dbba5b78127608d8d87f40f",
+                "hash": "9198188f0480391f7349bc5ec0c916f9b9aadc41",
                 "author": "Greg Kroah-Hartman <gregkh@linuxfoundation.org>",
                 "subject": "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()",
                 "tags": {
@@ -87692,7 +87892,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "36f0f67c5c0065f65c0f4ee459cddbfe4045bccb",
+                "hash": "5425e1a8f93c809cf379b0621c499d12701adfce",
                 "author": "David Carlier <devnexen@gmail.com>",
                 "subject": "mm/swap, PM: hibernate: atomically replace hibernation pin",
                 "tags": {
@@ -93455,11 +93655,9 @@
                 "patch_series": null,
                 "patch_series_sz": null,
                 "patch_series_idx": null
-            }
-        ],
-        "mm-nonmm-unstable": [
+            },
             {
-                "hash": "4525a6612e0dde5617279cade2bfeb4886d21b39",
+                "hash": "d9c0fd5533fb23bc445bd581feb140e966195936",
                 "author": "Karl Mehltretter <kmehltretter@gmail.com>",
                 "subject": "lib/interval_tree: fix allocation warning messages",
                 "tags": {
@@ -93519,7 +93717,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "227f698ec4686b513ee355ce35683a88e3f62184",
+                "hash": "dfe88f832fe80f11077cb9d3de39e78f04a158a4",
                 "author": "Linfeng Sun <linfeng.sun.dev@gmail.com>",
                 "subject": "mailmap: update email address for Linfeng Sun",
                 "tags": {
@@ -93554,7 +93752,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "e0624027a348dc098de0ec8dbe2b61b56b34c8ff",
+                "hash": "5146e0688d86f0654263e4b0e4ff1719b4072f16",
                 "author": "Bradley Morgan <include@grrlz.net>",
                 "subject": "prctl: fix PR_SET_MM_AUXV losing the forced AT_NULL terminator",
                 "tags": {
@@ -93596,7 +93794,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "18d337f5fe96530d28a0e859ce9e6f6c38a82ac9",
+                "hash": "f6f47a9ca82b3943c136494143f41366f83a2584",
                 "author": "Usama Arif <usama.arif@linux.dev>",
                 "subject": "squashfs: avoid thundering-herd cache wakeups",
                 "tags": {
@@ -93661,7 +93859,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "aeaad6df4816c77d8a441306a8eb74294a5f2452",
+                "hash": "bec0eed29b41a4e1b922d9ce40a748216496ed6e",
                 "author": "Zhan Xusheng <zhanxusheng@xiaomi.com>",
                 "subject": "ocfs2: bound-check dir entries in the readdir re-validation scan",
                 "tags": {
@@ -93734,7 +93932,7 @@
                 "patch_series_idx": 0
             },
             {
-                "hash": "fc5a5b7882ae615fc2d4646f43bf011cf63557a5",
+                "hash": "763c097f71bc6106e1b1e28a96e9e4e5ced6228c",
                 "author": "Zhan Xusheng <zhanxusheng@xiaomi.com>",
                 "subject": "ocfs2: bound-check dir entries in the inline-data re-validation scan",
                 "tags": {
@@ -93802,7 +94000,7 @@
                 "patch_series_idx": 1
             },
             {
-                "hash": "7612e4dab49fcabaa384fa0ac716f1aa3e63eb24",
+                "hash": "eef628bce8e18ce1eb8531c396bf55e36f86c62c",
                 "author": "Konrad Dybcio <konrad.dybcio@oss.qualcomm.com>",
                 "subject": "mailmap: fix bouncing address for Taniya Das",
                 "tags": {
@@ -93838,9 +94036,11 @@
                 "patch_series": null,
                 "patch_series_sz": null,
                 "patch_series_idx": null
-            },
+            }
+        ],
+        "mm-nonmm-unstable": [
             {
-                "hash": "c79359aa7345cb384d6a3c07832ffdd50a2195a4",
+                "hash": "402fce383bbb1a7b7268451552df088a2c3c0f0f",
                 "author": "Andrew Morton <akpm@linux-foundation.org>",
                 "subject": "drivers/media/v4l2-core/v4l2-vp9.c: reduce inlining",
                 "tags": {
@@ -93909,7 +94109,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "226aa0ca726e23047ee756e84d6bf6353688b1cb",
+                "hash": "5748f1b64e53950fafa6e42307c3ae4d38f02ab4",
                 "author": "Bradley Morgan <include@grrlz.net>",
                 "subject": "taskstats: copy signal->stats under siglock in taskstats_exit",
                 "tags": {
@@ -93967,7 +94167,7 @@
                 "patch_series_idx": null
             },
             {
-                "hash": "ad54c53a1cc887722e67522c7ffa905e47134bae",
+                "hash": "775c0f72566e86f6184ec5264574316b23ccd23a",
                 "author": "Petr Vorel <pvorel@suse.cz>",
                 "subject": "checkpatch: skip CamelCase cache for --no-tree without root",
                 "tags": {

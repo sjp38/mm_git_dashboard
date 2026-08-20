@@ -1,4 +1,4 @@
-mm-stable-2026-08-18-18-39-33-g887decb45d7bb
+mm-stable-2026-08-18-18-39-34-g8f8b0e8ac387f
 mm-mempolicy-fix-automatic-numa-balancing-for-shmem.patch
 mm-nommu-point-to-the-write-iterator-upon-split_vma.patch
 maple_tree-remove-undocumented-CONFIG_MAPLE_RCU_DISA.patch
@@ -186,3 +186,4 @@ mm-memcg-release-the-css-reference-when-a-stock-slot.patch
 selftests-mm-fix-unchecked-ftruncate-return-value-in.patch
 mm-swap-ratelimit-bad-swap-entry-reports.patch
 hugetlb-add-cond_resched-to-__unmap_hugepage_range.patch
+selftests-mm-check-stat-return-value-in-khugepaged-g.patch
