@@ -4,13 +4,13 @@
   - author/reviewer role stat
     - no role, maintainer: 3 commits
   - full commits list
-    - acae0bdc9fc2 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+    - 9de22c063d63 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com
-    - 2aeb0560f924 "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
+    - e756f43bbcb8 "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260817103433.191266-1-njilav@gmail.com
-    - 3fed92be2d94 "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
+    - a615a32f20e5 "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260814083027.1419487-1-xialonglong2025@163.com
 - mm-stable: 36 total, 4 (32) series, 4 non-series commits
@@ -151,27 +151,27 @@
     - no role, no role : 3 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 758e7a1ea28d "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+    - 1fbe76a09ce3 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
-      - 8f64a838dea1 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
+      - 9c2bfbc919e6 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-    - b92d525321fd "hugetlb: only adjust reservation during unmapping if mapcount is 0"
+    - cb98b1b6e6c1 "hugetlb: only adjust reservation during unmapping if mapcount is 0"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
       - Link: https://lore.kernel.org/amkC_1Ya6OiUoiLZ@bender.morinfr.org
-    - 4470fdf6ab07 "mm: add some missing includes to mm-local headers"
+    - 6b26eff39e87 "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-    - 48f46fe0b843 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
+    - 0bf28476e679 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260807040003.2156630-1-souravpanda@google.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 92dcffebb8d4 "hugetlb: add cond_resched() to __unmap_hugepage_range()"
+    - d42c7df5b1c4 "hugetlb: add cond_resched() to __unmap_hugepage_range()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260818135029.93288-1-leon.hwang@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

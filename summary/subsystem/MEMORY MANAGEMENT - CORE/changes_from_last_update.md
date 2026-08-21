@@ -14,20 +14,21 @@
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-unstable: 22 -> 23 commits
-  - series: 3 (13) -> 3 (14)
+- mm-unstable: 23 -> 23 commits (no change)
+  - series: 3 (14) -> 3 (14) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 13 -> 13 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
-      - f72997223632 "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix (2/16)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin
-- mm-new: 0 -> 0 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 644b27a0a5ff "mm: use a folio in the softleaf_is_device_private path"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260819095144.45660-1-hongfu.li@linux.dev
+      - Link: https://lore.kernel.org/all/e20678ed-3fa1-4677-a1d7-e2af481e8302@kernel.org/
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

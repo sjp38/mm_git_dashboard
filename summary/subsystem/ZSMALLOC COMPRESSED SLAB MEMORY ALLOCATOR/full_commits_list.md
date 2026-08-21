@@ -28,7 +28,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 6ae4093201c6 "zsmalloc: account for handle size in class lookup"
+    - 4e92f9bf459b "zsmalloc: account for handle size in class lookup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260809115518.3791787-1-xialonglong2025@163.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

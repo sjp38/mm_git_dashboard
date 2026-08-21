@@ -8,19 +8,25 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 8 -> 8 commits (no change)
+- mm-hotfixes-unstable: 8 -> 9 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 1 -> 2 commits
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 2 commits
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - ff53afcd82de "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
   - changed commits
-    - 689c1f1f669a "MAINTAINERS: add Lance Yang as a hung task detector co-maintainer"
+    - 9cebe8a33e66 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
       - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Petr Mladek <pmladek@suse.com>"
-      - dropped "Cc: Petr Mladek <pmladek@suse.com>"
-      - Link: https://lore.kernel.org/20260820014535.79105-1-lance.yang@linux.dev
+      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - added "Cc: <stable@vger.kernel.org>nx"
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
 - mm-stable: 501 -> 501 commits (no change)
   - series: 67 (410) -> 67 (410) (no change)
     - no role, nobody: 33 -> 33 commits (no change)
@@ -34,91 +40,49 @@
     - maintainer, nobody: 115 -> 115 commits (no change)
     - maintainer, no role : 20 -> 20 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-unstable: 188 -> 175 commits
-  - series: 21 (107) -> 20 (97)
-    - no role, nobody: 33 -> 29 commits
-    - no role, no role : 62 -> 52 commits
-    - no role, reviewer: 26 -> 26 commits (no change)
+- mm-unstable: 175 -> 175 commits (no change)
+  - series: 20 (97) -> 20 (97) (no change)
+    - no role, nobody: 29 -> 29 commits (no change)
+    - no role, no role : 52 -> 51 commits
+    - no role, reviewer: 26 -> 27 commits
     - no role, maintainer: 52 -> 52 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 7 -> 8 commits
+    - maintainer, nobody: 8 -> 8 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
-      - f72997223632 "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix (2/16)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin
   - changed commits
-    - 8910b125f035 "selftests/mm: check stat() return value in khugepaged get_finfo()"
+    - c73f7d5d1cc1 "mm: include swap.h in swapops.h"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+      - dropped "Cc: Barry Song <baohua@kernel.org>"
+      - Link: https://lore.kernel.org/20260818115026.656406-1-kirill@shutemov.name
+    - 7558f051778d "mm: memcg: release the css reference when a stock slot empties"
       - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
+      - added "Reviewed-by: Joshua Hahn <joshua.hahnjy@gmail.com>"
+      - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
+      - Link: https://lore.kernel.org/20260818130135.154315-1-husong@kylinos.cn
+    - 0d43f934146c "selftests/mm: check stat() return value in khugepaged get_finfo()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lore.kernel.org/20260819121426.49500-1-anshumantewari123@gmail.com
-- mm-new: 2 -> 16 commits
-  - series: 0 (0) -> 1 (10)
-    - no role, nobody: 1 -> 5 commits
-    - no role, no role : 1 -> 11 commits
-  - changed commits
-    - 9e1f9d89c749 "selftests/mm: fix soft-dirty kselftest supported check"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-new
-      - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
-      - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
-    - 6786740ad738 "riscv: mm: fix concurrency in mark_new_valid_map()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-new
-      - Link: https://lore.kernel.org/20260629-riscv-mm-new-valid-map-ordering-v1-1-60d8c10c6292@iscas.ac.cn
-      - Link: https://lore.kernel.org/linux-riscv/da19ffcf-8042-4f96-9c2d-649468dc6a0a@kernel.org/ # [1]
-    - caefed13ff27 "riscv: mm: exclude invalid THP PMDs from page table check"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-new
-      - Link: https://lore.kernel.org/20260523042052.35476-1-cuiyunhui@bytedance.com
-    - series "sh: remove NUMA and SPARSEMEM support", v2. (10)
-      - 6f8a7bc5a4f8 "sh: remove CONFIG_NUMA and related configuration options (0/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-new
-        - Link: https://lore.kernel.org/20260510135546.13554-1-rppt@kernel.org
-        - Link: https://lore.kernel.org/20260510135546.13554-2-rppt@kernel.org
-      - b2c42f1b2f1c "sh: mm: remove numa.c (1/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-new
-        - Link: https://lore.kernel.org/20260510135546.13554-3-rppt@kernel.org
-      - 7ebde8939b94 "sh: mm: drop allocate_pgdat() (2/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-new
-        - Link: https://lore.kernel.org/20260510135546.13554-4-rppt@kernel.org
-      - bbfc90dcbd82 "sh: remove setup_bootmem_node() and plat_mem_setup() (3/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-new
-        - Link: https://lore.kernel.org/20260510135546.13554-5-rppt@kernel.org
-      - 2931209d1927 "sh: drop dead code guarded by #ifdef CONFIG_NUMA (4/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-new
-        - Link: https://lore.kernel.org/20260510135546.13554-6-rppt@kernel.org
-      - 21bc2c64e198 "sh: drop include/asm/mmzone.h (5/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-new
-        - Link: https://lore.kernel.org/20260510135546.13554-7-rppt@kernel.org
-      - 945139db6eb4 "init/Kconfig: drop ARCH_WANT_NUMA_VARIABLE_LOCALITY (6/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-new
-        - Link: https://lore.kernel.org/20260510135546.13554-8-rppt@kernel.org
-      - 8991e0f6e4d1 "sh: init: remove call the memblock_set_node() (7/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-new
-        - Link: https://lore.kernel.org/20260510135546.13554-9-rppt@kernel.org
-      - 466db33afe53 "sh: remove SPARSEMEM related entries from Kconfig (8/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-new
-        - Link: https://lore.kernel.org/20260510135546.13554-10-rppt@kernel.org
-      - 3b104add8a3b "sh: drop include/asm/sparsemem.h (9/10)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-new
-        - Link: https://lore.kernel.org/20260510135546.13554-11-rppt@kernel.org
-    - 92dcffebb8d4 "hugetlb: add cond_resched() to __unmap_hugepage_range()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-new
-      - Link: https://lore.kernel.org/20260818135029.93288-1-leon.hwang@linux.dev
+- mm-new: 16 -> 19 commits
+  - series: 1 (10) -> 1 (10) (no change)
+    - no role, nobody: 5 -> 5 commits (no change)
+    - no role, no role : 11 -> 12 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - e578167dec68 "selftests/cgroup: fix cg_run_in_subcgroups ignoring arg parameter"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260820070944.31451-1-hongfu.li@linux.dev
+    - 644b27a0a5ff "mm: use a folio in the softleaf_is_device_private path"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260819095144.45660-1-hongfu.li@linux.dev
+      - Link: https://lore.kernel.org/all/e20678ed-3fa1-4677-a1d7-e2af481e8302@kernel.org/
+    - fbc1136a673f "mm: drop stale MAX_ORDER references"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
 - mm-nonmm-stable: 95 -> 95 commits (no change)
   - series: 10 (27) -> 10 (27) (no change)
     - no role, nobody: 34 -> 34 commits (no change)
@@ -127,7 +91,11 @@
     - no role, maintainer: 33 -> 33 commits (no change)
     - maintainer, nobody: 7 -> 7 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 3 -> 3 commits (no change)
+- mm-nonmm-unstable: 3 -> 4 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 3 commits
+  - new commits
+    - aa060b194613 "USB: gadgetfs: do not WARN about excessively large memory allocations"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/DKTTMAS94IMH.2C6ERY0ZIVWVZ@nvidia.com

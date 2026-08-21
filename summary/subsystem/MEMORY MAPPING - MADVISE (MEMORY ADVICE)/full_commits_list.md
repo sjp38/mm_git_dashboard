@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 067542330b92 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
+    - 56d1a7210eac "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
 - mm-stable: 4 total, 0 (4) series, 0 non-series commits
@@ -30,10 +30,10 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 4bfa40822a2b "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - 1901019e829e "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - 9e2009a120d6 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
+      - 31916052a890 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

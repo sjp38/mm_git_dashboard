@@ -12,28 +12,23 @@
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-unstable: 28 -> 27 commits
-  - series: 4 (15) -> 4 (14)
-    - no role, nobody: 3 -> 2 commits
+- mm-unstable: 27 -> 27 commits (no change)
+  - series: 4 (14) -> 4 (14) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - 8910b125f035 "selftests/mm: check stat() return value in khugepaged get_finfo()"
+    - 0d43f934146c "selftests/mm: check stat() return value in khugepaged get_finfo()"
       - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lore.kernel.org/20260819121426.49500-1-anshumantewari123@gmail.com
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - changed commits
-    - 9e1f9d89c749 "selftests/mm: fix soft-dirty kselftest supported check"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-new
-      - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
-      - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

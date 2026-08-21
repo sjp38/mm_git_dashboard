@@ -8,13 +8,25 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 7 -> 7 commits (no change)
+- mm-hotfixes-unstable: 7 -> 8 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 2 commits
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - ff53afcd82de "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
+  - changed commits
+    - 9cebe8a33e66 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - added "Cc: <stable@vger.kernel.org>nx"
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
 - mm-stable: 355 -> 355 commits (no change)
   - series: 49 (299) -> 49 (299) (no change)
     - no role, nobody: 13 -> 13 commits (no change)
@@ -28,9 +40,9 @@
     - maintainer, nobody: 91 -> 91 commits (no change)
     - maintainer, no role : 10 -> 10 commits (no change)
     - maintainer, reviewer: 11 -> 11 commits (no change)
-- mm-unstable: 100 -> 99 commits
+- mm-unstable: 99 -> 99 commits (no change)
   - series: 13 (48) -> 13 (48) (no change)
-    - no role, nobody: 7 -> 6 commits
+    - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 28 -> 28 commits (no change)
     - no role, reviewer: 20 -> 20 commits (no change)
     - no role, maintainer: 37 -> 37 commits (no change)
@@ -38,15 +50,25 @@
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 3 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 1 -> 1 commits (no change)
   - changed commits
-    - 92dcffebb8d4 "hugetlb: add cond_resched() to __unmap_hugepage_range()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-new
-      - Link: https://lore.kernel.org/20260818135029.93288-1-leon.hwang@linux.dev
+    - 7558f051778d "mm: memcg: release the css reference when a stock slot empties"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Joshua Hahn <joshua.hahnjy@gmail.com>"
+      - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
+      - Link: https://lore.kernel.org/20260818130135.154315-1-husong@kylinos.cn
+- mm-new: 3 -> 5 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 1 -> 2 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 644b27a0a5ff "mm: use a folio in the softleaf_is_device_private path"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260819095144.45660-1-hongfu.li@linux.dev
+      - Link: https://lore.kernel.org/all/e20678ed-3fa1-4677-a1d7-e2af481e8302@kernel.org/
+    - fbc1136a673f "mm: drop stale MAX_ORDER references"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
