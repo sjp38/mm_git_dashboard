@@ -2,9 +2,14 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 02d4c8ea7667 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
 - mm-stable: 19 -> 19 commits (no change)
   - series: 3 (18) -> 3 (18) (no change)
     - no role, no role : 3 -> 3 commits (no change)

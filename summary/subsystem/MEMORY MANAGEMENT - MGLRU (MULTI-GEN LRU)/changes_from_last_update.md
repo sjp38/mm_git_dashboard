@@ -11,13 +11,20 @@
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-- mm-unstable: 12 -> 12 commits (no change)
+- mm-unstable: 12 -> 14 commits
   - series: 1 (9) -> 1 (9) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, reviewer: 2 -> 3 commits
     - no role, maintainer: 7 -> 7 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 2 commits
+  - new commits
+    - 23b3ca192eb4 "mm/vmscan: fix comment logic in balance_pgdat"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260821064057.4081-1-enlin.mu@linux.dev
+    - 55b50d965aee "memcg: move LRU size accounting on reparenting instead of copying it"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260822024707.77192-1-shakeel.butt@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

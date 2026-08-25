@@ -210,43 +210,43 @@
     - no role, no role : 10 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 73cdcd35e966 "mm: nommu: point to the write iterator upon split_vma"
+    - 59c7e04069f1 "mm: nommu: point to the write iterator upon split_vma"
       - Authored by no role player, reviewed by nobody
       - Link: https://github.com/linux-test-project/ltp/blob/master/testcases/kernel/syscalls/mseal/mseal02.c
       - Link: https://lore.kernel.org/20260702012546.665383-1-thehajime@gmail.com
     - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16 commits)
-      - 3bcdbf4eaec1 "mm/vma: introduce VMA anon page offset field and add helpers" (0/16)
+      - 993f4ce7a51b "mm/vma: introduce VMA anon page offset field and add helpers" (0/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-0-c21581c0c3c8@kernel.org
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-1-c21581c0c3c8@kernel.org
-      - 9c2bfbc919e6 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
+      - 01e1744ff37c "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-      - 5249cc4258ff "mm: introduce linear_anon_page_index()" (3/16)
+      - 7f405c9a8215 "mm: introduce linear_anon_page_index()" (3/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
-      - bc34ff34c338 "mm/vma: fix self-merge check in copy_vma()" (7/16)
+      - 7e938c18efa9 "mm/vma: fix self-merge check in copy_vma()" (7/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-7-c21581c0c3c8@kernel.org
-      - 0686b27de130 "tools/testing/vma: add tests for copy_vma() self-merge" (8/16)
+      - 0e6823277056 "tools/testing/vma: add tests for copy_vma() self-merge" (8/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-8-c21581c0c3c8@kernel.org
-      - 744cd865cbc7 "mm: propagate VMA anonymous page offset on map, remap, split + merge" (9/16)
+      - ee12f1134427 "mm: propagate VMA anonymous page offset on map, remap, split + merge" (9/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-9-c21581c0c3c8@kernel.org
-      - 2a57005ff64e "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (14/16)
+      - 0eeb11ab2dc5 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (14/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org
-      - efc04d0caa37 "tools/testing/vma: expand VMA merge tests to assert anon pgoff" (15/16)
+      - 39464baef8aa "tools/testing/vma: expand VMA merge tests to assert anon pgoff" (15/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-15-c21581c0c3c8@kernel.org
-    - 6104ab72003f "tools/testing/selftests/mm: test anonymous page offset merge behaviour"
+    - f7215348acd9 "tools/testing/selftests/mm: test anonymous page offset merge behaviour"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-16-c21581c0c3c8@kernel.org
-    - 5900ef9f6fac "mm: use proper PTE accessor in move_ptes()"
+    - 38d1c0aaf49b "mm: use proper PTE accessor in move_ptes()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260720141633.501799-1-agordeev@linux.ibm.com
-    - 21536e8c7555 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
+    - 8c2e5ad3a6a3 "mm: fix CONFIG_STACK_GROWSUP typo in tools/testing/vma/include/dup.h"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260611012258.432043-1-enelsonmoore@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

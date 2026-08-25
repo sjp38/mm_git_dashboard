@@ -8,24 +8,25 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 5 -> 5 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 8 -> 9 commits
+- mm-hotfixes-unstable: 9 -> 11 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, reviewer: 1 -> 2 commits
+    - no role, no role : 2 -> 3 commits
+    - no role, maintainer: 3 -> 4 commits
+    - reviewer, reviewer: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - ff53afcd82de "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
-  - changed commits
-    - 9cebe8a33e66 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+    - 02d4c8ea7667 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
+    - 4b9762698ce8 "module: fix lost error code from codetag_load_module()"
       - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - added "Cc: <stable@vger.kernel.org>nx"
-      - dropped "Cc: <stable@vger.kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260824014736.35026-1-hao.ge@linux.dev
+  - changed commits
+    - 15274398ce33 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+      - Authored by no role player, reviewed by no role player
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: <stable@vger.kernel.org>nx"
       - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
 - mm-stable: 501 -> 501 commits (no change)
   - series: 67 (410) -> 67 (410) (no change)
@@ -40,49 +41,173 @@
     - maintainer, nobody: 115 -> 115 commits (no change)
     - maintainer, no role : 20 -> 20 commits (no change)
     - maintainer, reviewer: 12 -> 12 commits (no change)
-- mm-unstable: 175 -> 175 commits (no change)
+- mm-unstable: 175 -> 179 commits
   - series: 20 (97) -> 20 (97) (no change)
-    - no role, nobody: 29 -> 29 commits (no change)
-    - no role, no role : 52 -> 51 commits
-    - no role, reviewer: 26 -> 27 commits
+    - no role, nobody: 29 -> 31 commits
+    - no role, no role : 51 -> 51 commits (no change)
+    - no role, reviewer: 27 -> 28 commits
     - no role, maintainer: 52 -> 52 commits (no change)
-    - reviewer, reviewer: 5 -> 5 commits (no change)
+    - reviewer, reviewer: 5 -> 6 commits
     - maintainer, nobody: 8 -> 8 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - c73f7d5d1cc1 "mm: include swap.h in swapops.h"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - Link: https://lore.kernel.org/20260818115026.656406-1-kirill@shutemov.name
-    - 7558f051778d "mm: memcg: release the css reference when a stock slot empties"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Joshua Hahn <joshua.hahnjy@gmail.com>"
-      - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
-      - Link: https://lore.kernel.org/20260818130135.154315-1-husong@kylinos.cn
-    - 0d43f934146c "selftests/mm: check stat() return value in khugepaged get_finfo()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260819121426.49500-1-anshumantewari123@gmail.com
-- mm-new: 16 -> 19 commits
-  - series: 1 (10) -> 1 (10) (no change)
-    - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 11 -> 12 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
   - new commits
+    - series "mm/khugepaged: several cleanups", v4. (6)
+      - df3d6e0948f3 "mm-khugepaged-extract-reference-check-into-folio_pte_referenced-helper-fix (2/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/9038f552-926b-4c4c-b023-69271f45e3d5@linux.dev
+      - ac5b3ab6db18 "mm-khugepaged-fix-outdated-comments-fix (5/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/1c96e2f3-802f-472b-81e6-4af17a721a3c@linux.dev
+    - series "maple_tree: lock checking and clean ups", v3. (19)
+      - 3bb1d6c434d6 "maple_tree: avoid mas_erase() and mtree_erase() failures (13/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260821192627.4085470-15-liam@infradead.org
+      - 64ca9785ed5a "maple_tree-document-erase-and-allocations-better-fix (15/19)"
+        - Authored by no role player, reviewed by nobody
+    - 23b3ca192eb4 "mm/vmscan: fix comment logic in balance_pgdat"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260821064057.4081-1-enlin.mu@linux.dev
+    - 55b50d965aee "memcg: move LRU size accounting on reparenting instead of copying it"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260822024707.77192-1-shakeel.butt@linux.dev
+  - changed commits
+    - series "maple_tree: lock checking and clean ups", v3. (19)
+      - 80c2e5e28450 "maple_tree: add rcu locking check when LOCKDEP is enabled (0/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-1-liam@infradead.org"
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-2-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-1-liam@infradead.org"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-2-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-1-liam@infradead.org
+        - Link: https://lore.kernel.org/20260821192627.4085470-2-liam@infradead.org
+      - 814b317cb713 "locking/lockdep: add sequence counter to held_lock (1/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-3-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-3-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-3-liam@infradead.org
+        - Link: https://lore.kernel.org/all/h3tpnj5kzcrxms5picmimtkpg4aypcpip5wbd6bt2rpdj5k7eb@nhtzs3lefrkq/
+      - 63f386bd169d "maple_tree: add write lock checking with lockdep sequence numbers (2/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-4-liam@infradead.org"
+        - added "Tested-by: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-4-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-4-liam@infradead.org
+      - fabaa2d65934 "maple_tree: documentation fix (3/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-5-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-5-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-5-liam@infradead.org
+      - b1c4ea2095ed "maple_tree: drop dead code from mas_extend_spanning_null() (4/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-6-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-6-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-6-liam@infradead.org
+      - 8dcb718c6659 "maple_tree: drop MAPLE_ALLOC_SLOTS (5/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-7-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-7-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-7-liam@infradead.org
+      - 0b477350b850 "maple_tree: clarify comments on mas_nomem() (6/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-8-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-8-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-8-liam@infradead.org
+      - a4c639fbce37 "maple_tree: use prefetched value in mas_wr_store_type() (7/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-9-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-9-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-9-liam@infradead.org
+      - 01db6f25290e "maple_tree: optimise mas_wr_node_store() when not in rcu mode (8/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-10-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-10-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-10-liam@infradead.org
+      - 1f6637c35174 "maple_tree: micro optimisation of mas_wr_store_type() (9/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-11-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-11-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-11-liam@infradead.org
+      - 8f8879722631 "maple_tree: add bulk parent set helper (10/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-12-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-12-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-12-liam@infradead.org
+      - 5798de83004f "maple_tree: catch race in mas_alloc_cyclic() (11/19)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-13-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-13-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-13-liam@infradead.org
+      - 34ad5907fde1 "maple_tree: document that erase may use GFP_KERNEL for allocations (12/19)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-14-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-14-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-14-liam@infradead.org
+      - 4973675bcb59 "maple_tree: document erase and allocations better (14/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-16-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-16-liam@infradead.org"
+        - Link: https://lore.kernel.org/all/20260617180419.GA231643@ziepe.ca/
+        - Link: https://lore.kernel.org/20260821192627.4085470-16-liam@infradead.org
+      - a87d62c51c35 "maple_tree: change two GFP flags in tests (16/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-17-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-17-liam@infradead.org"
+        - Link: https://lore.kernel.org/all/d9cbb89faa5bdb71d451781d214a51ce8923a83e.camel@perches.com/
+        - Link: https://lore.kernel.org/20260821192627.4085470-17-liam@infradead.org
+      - 33a56e78d8f9 "maple_tree: fix argument name in header (17/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-18-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-18-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-18-liam@infradead.org
+      - 56f1c3943766 "maple_tree: avoid extra gap calculation (18/19)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260821192627.4085470-19-liam@infradead.org"
+        - added "Cc: Breno Leitao <leitao@debian.org>"
+        - dropped "Link: https://lore.kernel.org/20260630190843.3563858-19-liam@infradead.org"
+        - Link: https://lore.kernel.org/20260821192627.4085470-19-liam@infradead.org
+    - 70ff9f9ec393 "maple_tree: add helper mas_make_walkable()"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20260821192627.4085470-20-liam@infradead.org"
+      - added "Cc: Breno Leitao <leitao@debian.org>"
+      - dropped "Link: https://lore.kernel.org/20260630190843.3563858-20-liam@infradead.org"
+      - Link: https://lore.kernel.org/20260821192627.4085470-20-liam@infradead.org
+  - dropped commits
+    - series "maple_tree: lock checking and clean ups", v2. (19)
+      - 7b5bacfcc2cb "maple_tree-stop-flooding-logs-when-debug_locks-is-set-to-zero-fix (3/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/fo5r2xl3fql6gyvjasfvfu4ftugjti2vxg7zskdw7hjeo3xvqm@kk66qmsf762s
+      - 1a2842ea6f8b "maple_tree: WARN_ON_ONCE when allocations fail (14/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260630190843.3563858-15-liam@infradead.org
+- mm-new: 19 -> 17 commits
+  - series: 1 (10) -> 1 (10) (no change)
+    - no role, nobody: 5 -> 4 commits
+    - no role, no role : 12 -> 12 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - d42c7df5b1c4 "hugetlb: add cond_resched() to __unmap_hugepage_range()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260818135029.93288-1-leon.hwang@linux.dev
     - e578167dec68 "selftests/cgroup: fix cg_run_in_subcgroups ignoring arg parameter"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260820070944.31451-1-hongfu.li@linux.dev
-    - 644b27a0a5ff "mm: use a folio in the softleaf_is_device_private path"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260819095144.45660-1-hongfu.li@linux.dev
-      - Link: https://lore.kernel.org/all/e20678ed-3fa1-4677-a1d7-e2af481e8302@kernel.org/
-    - fbc1136a673f "mm: drop stale MAX_ORDER references"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
 - mm-nonmm-stable: 95 -> 95 commits (no change)
   - series: 10 (27) -> 10 (27) (no change)
     - no role, nobody: 34 -> 34 commits (no change)
@@ -91,11 +216,25 @@
     - no role, maintainer: 33 -> 33 commits (no change)
     - maintainer, nobody: 7 -> 7 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-nonmm-unstable: 3 -> 4 commits
+- mm-nonmm-unstable: 4 -> 6 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 3 commits
+    - no role, no role : 3 -> 4 commits
+    - no role, maintainer: 0 -> 1 commits
   - new commits
-    - aa060b194613 "USB: gadgetfs: do not WARN about excessively large memory allocations"
+    - 2f03b2931da9 "resource: fix lost wakeup when waiting for a muxed region"
       - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260821-b4-resource-muxed-lost-wakeup-v1-1-37eb6473a76c@gmail.com
+    - f60fc223d6e6 "fault-inject: fix dentry leak"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260821181527.3271414-1-mliang@purestorage.com
+  - changed commits
+    - a46a544b7f5b "USB: gadgetfs: do not WARN about excessively large memory allocations"
+      - Authored by no role player, reviewed by no role player
+      - added "Fixes: b3c466ce5129 ("page allocator: do not sanity check order in the fast path")"
+      - added "Closes: https://lore.kernel.org/all/6a820ebc.9ebadd4d.20b15e.001b.GAE@google.com/"
+      - dropped "Fixes: b3c466ce5129 ("page allocator: do not sanity check order in the fast="
+      - dropped "Closes: https://lore.kernel.org/all/6a820ebc.9ebadd4d.20b15e.001b.GAE@googl="
+      - dropped "path") "
+      - dropped "e.com/ "
       - Link: https://lore.kernel.org/DKTTMAS94IMH.2C6ERY0ZIVWVZ@nvidia.com

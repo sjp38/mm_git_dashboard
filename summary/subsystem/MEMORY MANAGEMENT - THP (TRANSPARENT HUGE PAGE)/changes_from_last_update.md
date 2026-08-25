@@ -4,13 +4,9 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 1 -> 2 commits
-  - new commits
-    - ff53afcd82de "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
+    - reviewer, reviewer: 2 -> 2 commits (no change)
 - mm-stable: 24 -> 24 commits (no change)
   - series: 4 (22) -> 4 (22) (no change)
     - no role, no role : 6 -> 6 commits (no change)
@@ -18,18 +14,21 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 8 -> 8 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 15 -> 15 commits (no change)
+- mm-unstable: 15 -> 17 commits
   - series: 3 (13) -> 3 (13) (no change)
+    - no role, nobody: 0 -> 2 commits
     - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
-  - changed commits
-    - 0d43f934146c "selftests/mm: check stat() return value in khugepaged get_finfo()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260819121426.49500-1-anshumantewari123@gmail.com
+  - new commits
+    - series "mm/khugepaged: several cleanups", v4. (6)
+      - df3d6e0948f3 "mm-khugepaged-extract-reference-check-into-folio_pte_referenced-helper-fix (2/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/9038f552-926b-4c4c-b023-69271f45e3d5@linux.dev
+      - ac5b3ab6db18 "mm-khugepaged-fix-outdated-comments-fix (5/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/1c96e2f3-802f-472b-81e6-4af17a721a3c@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

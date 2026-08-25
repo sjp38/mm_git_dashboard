@@ -16,16 +16,10 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 7558f051778d "mm: memcg: release the css reference when a stock slot empties"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Joshua Hahn <joshua.hahnjy@gmail.com>"
-      - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
-      - Link: https://lore.kernel.org/20260818130135.154315-1-husong@kylinos.cn
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
     - e578167dec68 "selftests/cgroup: fix cg_run_in_subcgroups ignoring arg parameter"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260820070944.31451-1-hongfu.li@linux.dev

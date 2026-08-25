@@ -12,7 +12,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - c6ad7ec5615a "mm/execmem: fix fallback_end description in kernel-doc"
+    - 427e1d5cbc28 "mm/execmem: fix fallback_end description in kernel-doc"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260807091958.4735-1-henry.elderman.edu+linux@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

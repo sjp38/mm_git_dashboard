@@ -58,71 +58,71 @@
     - no role, maintainer: 7 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-      - 4e1938ab34d2 "mm/huge_memory: update remove_migration_pmd() to accept a folio" (12/16)
+      - 94cee5ff373f "mm/huge_memory: update remove_migration_pmd() to accept a folio" (12/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org
     - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2 commits)
-      - efeea9d56497 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
+      - 9fbb894cf37a "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev
-    - 70f13e3561a2 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
+    - 4c625045a42e "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
-    - d1f05766281b "mm/swap: reject swapon() on filesystem-level encrypted files"
+    - 471841dd48d8 "mm/swap: reject swapon() on filesystem-level encrypted files"
       - Authored by a maintainer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260803180426.3123-1-ebiggers@kernel.org
-    - 6b26eff39e87 "mm: add some missing includes to mm-local headers"
+    - 87e44398fd9c "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
     - series "better block swap batching and a different take on swap_ops v5". (7 commits)
-      - 92f9c4b046d9 "shmem: provide a shmem_write_folio wrapper" (0/7)
+      - 8cd8c75285c2 "shmem: provide a shmem_write_folio wrapper" (0/7)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260713093350.2154226-1-hch@lst.de
         - Link: https://lore.kernel.org/20260713093350.2154226-2-hch@lst.de
-      - 1901019e829e "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - ef87851e43e8 "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - e9a154685635 "mm/swap: also use struct swap_iocb for block I/O" (2/7)
+      - 7b976b578835 "mm/swap: also use struct swap_iocb for block I/O" (2/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-4-hch@lst.de
-      - e08c40d814b3 "mm/swap: remove count_swpout_vm_event" (3/7)
+      - 88e332c8a98d "mm/swap: remove count_swpout_vm_event" (3/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-5-hch@lst.de
-      - db74e94154cd "mm/swap: use swap_ops to register swap device's methods" (4/7)
+      - dae875b11ed6 "mm/swap: use swap_ops to register swap device's methods" (4/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-6-hch@lst.de
-      - ebdf5ba19273 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - 9e59c0735cf8 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-      - 9e2951cb00b3 "mm/vmstat: add NRSWP{IN,OUT} counters" (6/7)
+      - 39929440b33f "mm/vmstat: add NRSWP{IN,OUT} counters" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-8-hch@lst.de
-    - 9d4457d5d079 "mm/swap: fix swap_cluster_lock() !CONFIG_SWAP stub signature mismatch"
+    - b43de9073717 "mm/swap: fix swap_cluster_lock() !CONFIG_SWAP stub signature mismatch"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260717071104.73467-1-hongfu.li@linux.dev
     - series "swap_ops updates", v2. (3 commits)
-      - 7fdb8e03d6a1 "mm/swap: revert to single-folio writes for synchronous swap devices" (0/3)
+      - 4a0954d82eaa "mm/swap: revert to single-folio writes for synchronous swap devices" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-1-hch@lst.de
         - Link: https://lore.kernel.org/20260723054622.3460249-2-hch@lst.de
-      - 31916052a890 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
+      - b7d30cec9035 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
-      - 5146bf026d4c "mm/swap: move swap_ops into file systems for file system-based swap" (2/3)
+      - 8eea55b804e0 "mm/swap: move swap_ops into file systems for file system-based swap" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
-    - c73f7d5d1cc1 "mm: include swap.h in swapops.h"
+    - 671b2854feb1 "mm: include swap.h in swapops.h"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260818115026.656406-1-kirill@shutemov.name
-    - f72e5f9e9887 "mm, swap: ratelimit bad swap entry reports"
+    - d6a089863060 "mm, swap: ratelimit bad swap entry reports"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260818-swap_part_one-v1-1-a4fc58119fc0@debian.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - a032d41a86cb "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - d268963816d3 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

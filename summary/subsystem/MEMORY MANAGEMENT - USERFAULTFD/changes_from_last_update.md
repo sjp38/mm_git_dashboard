@@ -5,12 +5,10 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
   - changed commits
-    - 9cebe8a33e66 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+    - 15274398ce33 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
       - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - added "Cc: <stable@vger.kernel.org>nx"
-      - dropped "Cc: <stable@vger.kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: <stable@vger.kernel.org>nx"
       - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
 - mm-stable: 12 -> 12 commits (no change)
   - series: 0 (11) -> 0 (11) (no change)

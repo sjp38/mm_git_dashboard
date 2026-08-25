@@ -6,13 +6,17 @@
       - d09a8fd52147 "mm/migrate: exclude hugetlb folios from MTHP_STAT_NR_ANON accounting" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260717064502.1980173-3-npache@redhat.com
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 9be9236e9c27 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
+    - 66a282a6960d "mm/migrate_device: avoid out-of-bounds writes for compound folios"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260817120758.669807-3-sh_def@163.com
+    - 02d4c8ea7667 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
 - mm-stable: 19 total, 3 (18) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
@@ -99,22 +103,22 @@
     - no role, no role : 3 commits
     - no role, reviewer: 3 commits
   - full commits list
-    - ff7f8898f46b "mm: mempolicy: fix automatic numa balancing for shmem"
+    - e4ce25e7e4d0 "mm: mempolicy: fix automatic numa balancing for shmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
-      - 9c2bfbc919e6 "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
+      - 01e1744ff37c "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-      - 4e1938ab34d2 "mm/huge_memory: update remove_migration_pmd() to accept a folio" (12/16)
+      - 94cee5ff373f "mm/huge_memory: update remove_migration_pmd() to accept a folio" (12/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org
-      - a2ae01045276 "mm/migrate: calculate large folio page index using PFN" (13/16)
+      - 49da97ac616b "mm/migrate: calculate large folio page index using PFN" (13/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-13-c21581c0c3c8@kernel.org
-    - 0aaa29ce4204 "mm/migrate_device: clear stale mapping after freeing swapcache"
+    - 3071f1db3b36 "mm/migrate_device: clear stale mapping after freeing swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260728062832.1107127-1-arvind.yadav@intel.com
-    - 2110e6794c1b "mm/migrate_device: fix cache flush when replacing huge zero PMD"
+    - 72702e342408 "mm/migrate_device: fix cache flush when replacing huge zero PMD"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260817060845.377800-2-sh_def@163.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

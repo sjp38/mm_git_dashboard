@@ -8,24 +8,22 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 7 -> 8 commits
+- mm-hotfixes-unstable: 8 -> 9 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, reviewer: 1 -> 2 commits
+    - no role, maintainer: 3 -> 4 commits
+    - reviewer, reviewer: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - ff53afcd82de "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
+    - 02d4c8ea7667 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
   - changed commits
-    - 9cebe8a33e66 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+    - 15274398ce33 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
       - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - added "Cc: <stable@vger.kernel.org>nx"
-      - dropped "Cc: <stable@vger.kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: <stable@vger.kernel.org>nx"
       - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
 - mm-stable: 355 -> 355 commits (no change)
   - series: 49 (299) -> 49 (299) (no change)
@@ -40,35 +38,39 @@
     - maintainer, nobody: 91 -> 91 commits (no change)
     - maintainer, no role : 10 -> 10 commits (no change)
     - maintainer, reviewer: 11 -> 11 commits (no change)
-- mm-unstable: 99 -> 99 commits (no change)
-  - series: 13 (48) -> 13 (48) (no change)
-    - no role, nobody: 6 -> 6 commits (no change)
+- mm-unstable: 99 -> 103 commits
+  - series: 13 (48) -> 13 (49)
+    - no role, nobody: 6 -> 8 commits
     - no role, no role : 28 -> 28 commits (no change)
-    - no role, reviewer: 20 -> 20 commits (no change)
+    - no role, reviewer: 20 -> 21 commits
     - no role, maintainer: 37 -> 37 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - reviewer, reviewer: 2 -> 3 commits
     - maintainer, nobody: 3 -> 3 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 7558f051778d "mm: memcg: release the css reference when a stock slot empties"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Joshua Hahn <joshua.hahnjy@gmail.com>"
-      - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
-      - Link: https://lore.kernel.org/20260818130135.154315-1-husong@kylinos.cn
-- mm-new: 3 -> 5 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
   - new commits
-    - 644b27a0a5ff "mm: use a folio in the softleaf_is_device_private path"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260819095144.45660-1-hongfu.li@linux.dev
-      - Link: https://lore.kernel.org/all/e20678ed-3fa1-4677-a1d7-e2af481e8302@kernel.org/
-    - fbc1136a673f "mm: drop stale MAX_ORDER references"
+    - series "mm/khugepaged: several cleanups", v4. (6)
+      - df3d6e0948f3 "mm-khugepaged-extract-reference-check-into-folio_pte_referenced-helper-fix (2/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/9038f552-926b-4c4c-b023-69271f45e3d5@linux.dev
+      - ac5b3ab6db18 "mm-khugepaged-fix-outdated-comments-fix (5/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/1c96e2f3-802f-472b-81e6-4af17a721a3c@linux.dev
+    - 23b3ca192eb4 "mm/vmscan: fix comment logic in balance_pgdat"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
+      - Link: https://lore.kernel.org/20260821064057.4081-1-enlin.mu@linux.dev
+    - 55b50d965aee "memcg: move LRU size accounting on reparenting instead of copying it"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260822024707.77192-1-shakeel.butt@linux.dev
+- mm-new: 5 -> 4 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+  - dropped commits
+    - d42c7df5b1c4 "hugetlb: add cond_resched() to __unmap_hugepage_range()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260818135029.93288-1-leon.hwang@linux.dev
 - mm-nonmm-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)

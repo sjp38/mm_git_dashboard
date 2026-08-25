@@ -13,16 +13,10 @@
 - mm-unstable: 18 -> 18 commits (no change)
   - series: 3 (12) -> 3 (12) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 3 -> 2 commits
-    - no role, reviewer: 5 -> 6 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - c73f7d5d1cc1 "mm: include swap.h in swapops.h"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - Link: https://lore.kernel.org/20260818115026.656406-1-kirill@shutemov.name
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
