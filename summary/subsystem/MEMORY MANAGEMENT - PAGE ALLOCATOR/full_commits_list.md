@@ -7,11 +7,11 @@
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260721005603.1710551-1-linkl@google.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 41 total, 7 (33) series, 8 non-series commits
+- mm-stable: 48 total, 7 (34) series, 14 non-series commits
   - author/reviewer role stat
-    - no role, no role : 4 commits
-    - no role, reviewer: 29 commits
-    - no role, maintainer: 3 commits
+    - no role, no role : 6 commits
+    - no role, reviewer: 32 commits
+    - no role, maintainer: 5 commits
     - reviewer, no role : 5 commits
   - full commits list
     - cdea9364e477 "mm/page_alloc: don't build vm_numa_stat_key if CONFIG_NUMA=n"
@@ -167,40 +167,35 @@
         - Authored by a reviewer, reviewed by no role player
         - Link: : https://lore.kernel.org/DK7NM9RPUJOD.11PNJJ5N2OBED@linux.dev
         - Link: https://lore.kernel.org/20260722150006.3848560-5-hannes@cmpxchg.org
-- mm-unstable: 7 total, 0 (1) series, 6 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, reviewer: 3 commits
-    - no role, maintainer: 2 commits
-  - full commits list
-    - 31dcbb487b0e "mm/page_reporting: add page_reporting_delay_ms module parameter"
+    - 7a39f03bc9da "mm/page_reporting: add page_reporting_delay_ms module parameter"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260731193705.2902728-1-pratmal@google.com
-    - 9846a762d912 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
+    - 8282cb36d021 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
       - Authored by no role player, reviewed by no role player
       - Link: : https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org
       - Link: https://lore.kernel.org/linux-mm/tencent_FFD4F4D728AAE8A8AE0AF277A59854A29A06@qq.com/
       - Link: https://lore.kernel.org/tencent_A860C873956A52E26AD8D309A308A241BA08@qq.com
-    - 87e44398fd9c "mm: add some missing includes to mm-local headers"
+    - 6fd3e592c09d "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-      - c9e0b58010b6 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
+      - 0ddb8bb85b98 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
-    - 7ec875615bd9 "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder"
+    - bb3e3c5c2d63 "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260805093108.2352900-1-ye.liu@linux.dev
-    - 4771a71759bd "mm/show_mem: fix format string inconsistencies and type mismatches"
+    - 8be7c167be57 "mm/show_mem: fix format string inconsistencies and type mismatches"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260805021556.1908807-1-ye.liu@linux.dev
-    - 126f6df6f9cd "mm: debug_page_alloc: fix NULL buf in debug_guardpage_minorder_setup"
+    - 54cc9b384709 "mm: debug_page_alloc: fix NULL buf in debug_guardpage_minorder_setup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260806004556.2633049-1-ye.liu@linux.dev
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - e19df9755a30 "mm: drop stale MAX_ORDER references"
+    - 6b3c494f0dff "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

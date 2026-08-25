@@ -17,14 +17,15 @@
   - author/reviewer role stat
     - maintainer, no role : 1 commits
   - full commits list
-    - 6693912a1335 "memcg: make the v1 soft limit knob inert"
+    - 8bf94f2d1ff7 "memcg: make the v1 soft limit knob inert"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
-- mm-stable: 14 total, 1 (4) series, 10 non-series commits
+- mm-stable: 23 total, 3 (8) series, 15 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 12 commits
+    - no role, reviewer: 2 commits
+    - no role, maintainer: 19 commits
+    - maintainer, maintainer: 1 commits
   - full commits list
     - ac0f3be693be "mm/memcontrol: remove unused for_each_mem_cgroup macro and cleanup"
       - Authored by no role player, reviewed by a maintainer
@@ -71,46 +72,41 @@
     - 08d36b191f33 "mm: memcg-v1: make mem_cgroup_oom_notify_cb() return void"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260713093737.3299646-1-guopeng.zhang@linux.dev
-- mm-unstable: 9 total, 2 (4) series, 5 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 7 commits
-    - maintainer, maintainer: 1 commits
-  - full commits list
     - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2 commits)
-      - 9fbb894cf37a "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
+      - 1b7c8fe294a6 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev
     - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3 commits)
-      - 4c82178cdc13 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/3)
+      - a69797fb3645 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev
         - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
-      - 63ed00fcc980 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
+      - 1b089def0fb8 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
-      - 69a1e1615523 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
+      - 7b9f4e5f8101 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
-    - be61db359803 "mm: memcg: stop reclaim when a limit update is superseded"
+    - 9477820c63cb "mm: memcg: stop reclaim when a limit update is superseded"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260724021805.1234583-1-guopeng.zhang@linux.dev
-    - 6ae97a3565ef "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
+    - 6b0d1083364f "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
       - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260729024612.3369005-1-shakeel.butt@linux.dev
       - Link: https://lore.kernel.org/7a4e5591f45df455e6a485fc5400989569d3d22d.camel@surriel.com/ [1]
-    - 87e44398fd9c "mm: add some missing includes to mm-local headers"
+    - 6fd3e592c09d "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-    - de3cb2557122 "mm/memcontrol: avoid false sharing between vmstats and events"
+    - c1afbd5de131 "mm/memcontrol: avoid false sharing between vmstats and events"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260817103835.2937733-1-usama.arif@linux.dev
       - Link: : http://lore.kernel.org/aoAABX59IzUXz/Rv@ly-workstation
-    - bd40e24b0a90 "mm: memcg: release the css reference when a stock slot empties"
+    - 48863da10ba1 "mm: memcg: release the css reference when a stock slot empties"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260818130135.154315-1-husong@kylinos.cn
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

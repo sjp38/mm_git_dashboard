@@ -1,23 +1,27 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
+- mm-hotfixes-unstable: 4 total, 0 (0) series, 4 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, maintainer: 3 commits
   - full commits list
-    - 580669b0eefc "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+    - b9e0a6a15c39 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com
-    - 210d4dafebbf "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
+    - b355cb3249ad "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260817103433.191266-1-njilav@gmail.com
-    - 82d89ffe1b75 "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
+    - 20deb550d94f "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260814083027.1419487-1-xialonglong2025@163.com
-- mm-stable: 36 total, 4 (32) series, 4 non-series commits
+    - 8a9091052cc8 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
+- mm-stable: 40 total, 4 (33) series, 7 non-series commits
   - author/reviewer role stat
     - no role, nobody: 5 commits
-    - no role, no role : 14 commits
-    - no role, reviewer: 3 commits
+    - no role, no role : 17 commits
+    - no role, reviewer: 4 commits
     - no role, maintainer: 10 commits
     - reviewer, reviewer: 3 commits
     - reviewer, maintainer: 1 commits
@@ -145,28 +149,21 @@
     - 47f3cecd720f "hugetlb: evaluate subpool free state while locked"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260721035207.1437935-1-chenyichong@uniontech.com
-- mm-unstable: 5 total, 0 (1) series, 4 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 3 commits
-    - no role, reviewer: 1 commits
-  - full commits list
-    - 94ad878312bd "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
-      - 01e1744ff37c "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
+      - 51943a18ad4b "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
         - Authored by no role player, reviewed by no role player
+        - Link: : https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-    - 4dd5ed27643e "hugetlb: only adjust reservation during unmapping if mapcount is 0"
+    - 5120b1e048d4 "hugetlb: only adjust reservation during unmapping if mapcount is 0"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
       - Link: https://lore.kernel.org/amkC_1Ya6OiUoiLZ@bender.morinfr.org
-    - 87e44398fd9c "mm: add some missing includes to mm-local headers"
+    - 6fd3e592c09d "mm: add some missing includes to mm-local headers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-    - fcc9d8ed1259 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
+    - 34e0849142c3 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260807040003.2156630-1-souravpanda@google.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

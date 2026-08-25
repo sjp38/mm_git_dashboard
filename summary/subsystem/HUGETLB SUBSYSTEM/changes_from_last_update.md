@@ -1,29 +1,52 @@
 - baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 3 commits (no change)
+- mm-hotfixes-unstable: 3 -> 4 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, maintainer: 3 -> 3 commits (no change)
-- mm-stable: 36 -> 36 commits (no change)
-  - series: 4 (32) -> 4 (32) (no change)
+  - changed commits
+    - 8a9091052cc8 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-hotfixes-unstable
+      - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
+- mm-stable: 36 -> 40 commits
+  - series: 4 (32) -> 4 (33)
     - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 14 -> 14 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, no role : 14 -> 17 commits
+    - no role, reviewer: 3 -> 4 commits
     - no role, maintainer: 10 -> 10 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 0 commits
-  - series: 0 (0) -> 0 (0) (no change)
+  - changed commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
+      - 51943a18ad4b "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - added "[akpm@linux-foundation.org: fix kerneldoc comment typo, per Lorenzo]"
+        - added "Link: : https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin"
+        - Link: : https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
+    - 5120b1e048d4 "hugetlb: only adjust reservation during unmapping if mapcount is 0"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
+      - Link: https://lore.kernel.org/amkC_1Ya6OiUoiLZ@bender.morinfr.org
+    - 6fd3e592c09d "mm: add some missing includes to mm-local headers"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
+    - 34e0849142c3 "mm/hugetlb_cma: support percentage-based hugetlb_cma reservation"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260807040003.2156630-1-souravpanda@google.com
+- mm-unstable: 5 -> 0 commits
+  - series: 0 (1) -> 0 (0)
     - no role, nobody: 1 -> 0 commits
-  - dropped commits
-    - d42c7df5b1c4 "hugetlb: add cond_resched() to __unmap_hugepage_range()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260818135029.93288-1-leon.hwang@linux.dev
+    - no role, no role : 3 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

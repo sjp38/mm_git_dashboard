@@ -1,10 +1,11 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 11 total, 1 (10) series, 1 non-series commits
+- mm-stable: 13 total, 1 (12) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, no role : 1 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 6 commits
+    - no role, maintainer: 7 commits
     - reviewer, no role : 1 commits
     - reviewer, reviewer: 3 commits
   - full commits list
@@ -44,17 +45,13 @@
     - 288058d8db5d "selftests/mm: unpoison pages in memory-failure teardown"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260729091127.1001179-1-usama.anjum@arm.com
-- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-      - a457f00b537c "mm: introduce and use vma_filebacked_address()" (6/16)
+      - dba10745e9b4 "mm: introduce and use vma_filebacked_address()" (5/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org
-      - d4bda3005956 "selftests/mm: skip hard dirty page-cache test on NFS" (2/4)
+      - e14e52a7ce02 "selftests/mm: skip hard dirty page-cache test on NFS" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727095225.372655-5-usama.anjum@arm.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

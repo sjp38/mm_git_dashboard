@@ -4,14 +4,27 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
-- mm-stable: 4 -> 4 commits (no change)
-  - series: 0 (4) -> 0 (4) (no change)
+- mm-stable: 4 -> 6 commits
+  - series: 0 (4) -> 0 (6)
     - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "better block swap batching and a different take on swap_ops v5". (7)
+      - 8f29aa226f82 "mm/swap: introduce struct swap_io_ctx (1/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
+    - series "swap_ops updates", v2. (3)
+      - 52d85ca90c7d "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
+- mm-unstable: 2 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

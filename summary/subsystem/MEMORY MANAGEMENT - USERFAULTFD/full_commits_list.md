@@ -4,13 +4,13 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 15274398ce33 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+    - 532f50107207 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
-- mm-stable: 12 total, 0 (11) series, 1 non-series commits
+- mm-stable: 13 total, 0 (12) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, no role : 8 commits
+    - no role, no role : 9 commits
     - no role, reviewer: 1 commits
     - reviewer, maintainer: 1 commits
   - full commits list
@@ -50,13 +50,10 @@
     - 41f2c0f716e1 "mm: fold userfaultfd_rwp() to false without CONFIG_ARCH_HAS_PTE_PROTNONE"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/amcitKvUvFYr8W38@thinkstation
-- mm-unstable: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-      - 0eeb11ab2dc5 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (14/16)
+      - 93c0c8dc87f6 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,9 +1,10 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 4 total, 1 (3) series, 1 non-series commits
+- mm-stable: 10 total, 3 (8) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 4 commits
+    - no role, maintainer: 9 commits
+    - maintainer, nobody: 1 commits
   - full commits list
     - series "mm/kmemleak: avoid soft lockup when scanning task", v3. (3 commits)
       - 5d10d4e19e6d "mm/kmemleak: avoid soft lockup when scanning task stacks" (0/3)
@@ -19,33 +20,29 @@
     - efcf17453c7c "mm/kmemleak: skip the remaining scan phases when interrupted"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260626-kmemleak_improve-v1-1-d40c7616f64f@debian.org
-- mm-unstable: 6 total, 2 (5) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 5 commits
-    - maintainer, nobody: 1 commits
-  - full commits list
-    - 62af8f6d5a41 "mm/kmemleak: report RCU-tasks quiescent states during the scan"
+    - 3541a2b06ecd "mm/kmemleak: report RCU-tasks quiescent states during the scan"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260720-kmemleak_rcu_task-v1-1-5b460ade777d@debian.org
     - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4 commits)
-      - 638d5e45ee1a "mm: kmemleak: confirm suspected leaks with a second scan" (0/4)
+      - fb496eb06230 "mm: kmemleak: confirm suspected leaks with a second scan" (0/4)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-0-5b93b1131089@debian.org
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-1-5b93b1131089@debian.org
-      - 0b40a6be69c5 "mm: kmemleak: report leaks only after N consecutive unreferenced scans" (1/4)
+      - e776db8e7101 "mm: kmemleak: report leaks only after N consecutive unreferenced scans" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-2-5b93b1131089@debian.org
-      - 8d4cdf337d45 "mm: kmemleak: factor leak confirmation into a helper" (2/4)
+      - 70a964bafe55 "mm: kmemleak: factor leak confirmation into a helper" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260713-catalin_pto-v1-3-5b93b1131089@debian.org
     - series "mm: kmemleak: default min_unref_scans to 2 for verbose kernels", v2. (3 commits)
-      - e70ed74cc5b5 "mm: kmemleak: default min_unref_scans to 2 for verbose auto-scan" (0/3)
+      - dd0dcfe8ef21 "mm: kmemleak: default min_unref_scans to 2 for verbose auto-scan" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-0-7b9689ac77cb@debian.org
         - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-1-7b9689ac77cb@debian.org
-      - f05b15443dc0 "Documentation: kmemleak: document the conditional min_unref_scans default" (1/3)
+      - 09dde5e9bac0 "Documentation: kmemleak: document the conditional min_unref_scans default" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-2-7b9689ac77cb@debian.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

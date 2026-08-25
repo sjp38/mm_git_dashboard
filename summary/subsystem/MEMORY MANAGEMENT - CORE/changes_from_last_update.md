@@ -4,28 +4,133 @@
     - no role, no role : 3 -> 3 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 81 -> 81 commits (no change)
-  - series: 11 (75) -> 11 (75) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 35 -> 35 commits (no change)
-    - no role, reviewer: 13 -> 13 commits (no change)
-    - no role, maintainer: 9 -> 9 commits (no change)
+- mm-stable: 81 -> 104 commits
+  - series: 11 (75) -> 14 (88)
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 35 -> 48 commits
+    - no role, reviewer: 13 -> 15 commits
+    - no role, maintainer: 9 -> 15 commits
     - reviewer, no role : 10 -> 10 commits (no change)
-    - reviewer, reviewer: 10 -> 10 commits (no change)
+    - reviewer, reviewer: 10 -> 11 commits
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-unstable: 23 -> 24 commits
-  - series: 3 (14) -> 3 (14) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 13 -> 13 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 6 -> 6 commits (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-    - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - 55b50d965aee "memcg: move LRU size accounting on reparenting instead of copying it"
+  - changed commits
+    - 1eba458a54d0 "mm/kconfig: drop redundant memory hotplug dependencies"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260707090331.52971-1-kaitao.cheng@linux.dev
+    - 092836fedd82 "mm: standardize printing for pgtable entries"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260709044334.1741263-1-anshuman.khandual@arm.com
+    - 0b4268ac77fa "mm/kconfig: drop redundant dependency wrappers"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260712093326.8313-1-kaitao.cheng@linux.dev
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
+      - 0bd14001eb26 "mm/vma: introduce VMA anon page offset field and add helpers (0/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-0-c21581c0c3c8@kernel.org
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-1-c21581c0c3c8@kernel.org
+      - 51943a18ad4b "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - added "[akpm@linux-foundation.org: fix kerneldoc comment typo, per Lorenzo]"
+        - added "Link: : https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin"
+        - Link: : https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
+      - 7e6543d1f939 "mm: introduce linear_anon_page_index() (2/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
+      - c02fe674feaf "mm: abstract vma_address() and introduce vma_anon_address() (3/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-4-c21581c0c3c8@kernel.org
+      - 2a8de2d1d6a5 "mm: update print_bad_page_map() to show anon index if appropriate (4/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-5-c21581c0c3c8@kernel.org
+      - dba10745e9b4 "mm: introduce and use vma_filebacked_address() (5/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org
+      - e7006fbd608f "mm: clean up vma_address_end() (10/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-11-c21581c0c3c8@kernel.org
+      - 93c0c8dc87f6 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios (13/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org
+    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3)
+      - a69797fb3645 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev
+        - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
+      - 1b089def0fb8 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
+      - 7b9f4e5f8101 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
+    - 8380671909bf "mm/sparse: correct init section annotations"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260731164758.1210668-1-ekffu200098@gmail.com
+    - fc6415a384f0 "mm/gup: factor out LRU cache draining for folio into lru_cache_drain_for_folio()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260806-lru_cache_drain_for_folio-v1-1-c6287d295e99@kernel.org
+    - series "mm/page_ext: remove pgdat_page_ext_init()", v2. (2)
+      - 34568000f3c9 "mm/Kconfig: make FLATMEM depend on !NUMA (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260804151145.3419768-1-ekffu200098@gmail.com
+        - Link: https://lore.kernel.org/20260804151145.3419768-2-ekffu200098@gmail.com
+    - e73aeb8a411e "mm/sparse: keep mem_section_usage_size() internal"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260805022536.1206575-1-songmuchun@bytedance.com
+    - 3774c56cc38b "drivers/base, mm: move arch_numa.c to mm/"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
+    - series "better block swap batching and a different take on swap_ops v5". (7)
+      - c01e6df60e7b "mm/vmstat: add NRSWP{IN,OUT} counters (6/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260713093350.2154226-8-hch@lst.de
+    - 1dea8e081ec3 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
+    - a1b114b4cec1 "mm/Kconfig: make MEMORY_FAILURE select MIGRATION"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260813134916.292733-1-xieyuanbin1@huawei.com
+    - 0e0ac326c511 "memcg: move LRU size accounting on reparenting instead of copying it"
       - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
       - Link: https://lore.kernel.org/20260822024707.77192-1-shakeel.butt@linux.dev
+- mm-unstable: 24 -> 0 commits
+  - series: 3 (14) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 13 -> 0 commits
+    - no role, reviewer: 2 -> 0 commits
+    - no role, maintainer: 6 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
+  - dropped commits
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
+      - 06bfc5fad0f0 "mm-provide-vma_is_cow_mapping-and-remove-is_cow_mapping-fix (2/16)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)

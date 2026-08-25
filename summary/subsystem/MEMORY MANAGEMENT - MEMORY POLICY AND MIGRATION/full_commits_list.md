@@ -11,16 +11,16 @@
     - no role, nobody: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 66a282a6960d "mm/migrate_device: avoid out-of-bounds writes for compound folios"
+    - f20d9bcf3808 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260817120758.669807-3-sh_def@163.com
-    - 02d4c8ea7667 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
+    - 74628a1a93c2 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
-- mm-stable: 19 total, 3 (18) series, 1 non-series commits
+- mm-stable: 25 total, 3 (21) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, no role : 3 commits
-    - no role, reviewer: 12 commits
+    - no role, no role : 6 commits
+    - no role, reviewer: 15 commits
     - no role, maintainer: 1 commits
     - reviewer, reviewer: 2 commits
     - reviewer, maintainer: 1 commits
@@ -98,29 +98,26 @@
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260727-kcompact-v1-1-bdfefddd6874@debian.org
       - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
-- mm-unstable: 6 total, 0 (3) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 3 commits
-    - no role, reviewer: 3 commits
-  - full commits list
-    - e4ce25e7e4d0 "mm: mempolicy: fix automatic numa balancing for shmem"
+    - d230991493b5 "mm: mempolicy: fix automatic numa balancing for shmem"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
-      - 01e1744ff37c "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
+      - 51943a18ad4b "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping()" (1/16)
         - Authored by no role player, reviewed by no role player
+        - Link: : https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-      - 94cee5ff373f "mm/huge_memory: update remove_migration_pmd() to accept a folio" (12/16)
+      - 8e658ecc3be2 "mm/huge_memory: update remove_migration_pmd() to accept a folio" (11/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org
-      - 49da97ac616b "mm/migrate: calculate large folio page index using PFN" (13/16)
+      - 5f653f8b7a34 "mm/migrate: calculate large folio page index using PFN" (12/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-13-c21581c0c3c8@kernel.org
-    - 3071f1db3b36 "mm/migrate_device: clear stale mapping after freeing swapcache"
+    - 34a00895d032 "mm/migrate_device: clear stale mapping after freeing swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260728062832.1107127-1-arvind.yadav@intel.com
-    - 72702e342408 "mm/migrate_device: fix cache flush when replacing huge zero PMD"
+    - 9add2cc22de6 "mm/migrate_device: fix cache flush when replacing huge zero PMD"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260817060845.377800-2-sh_def@163.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

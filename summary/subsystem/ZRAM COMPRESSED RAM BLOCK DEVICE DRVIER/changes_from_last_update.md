@@ -3,14 +3,71 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 4 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-stable: 4 -> 16 commits
+  - series: 1 (2) -> 4 (11)
+    - no role, maintainer: 3 -> 11 commits
+    - maintainer, nobody: 0 -> 4 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 12 -> 12 commits (no change)
-  - series: 3 (9) -> 3 (9) (no change)
-    - no role, maintainer: 8 -> 8 commits (no change)
-    - maintainer, nobody: 4 -> 4 commits (no change)
+  - changed commits
+    - series "zram: fix zram issues reported by sashiko". (2)
+      - dde75313eed0 "zram: set default primary compressor in zram_destroy_comps() (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260729045745.775973-2-senozhatsky@chromium.org
+        - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com [1]
+      - ec7607ac4717 "zram: validate deflate params (1/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260729045745.775973-3-senozhatsky@chromium.org
+        - Link: https://sashiko.dev/#/patchset/20260728092935.31139-1-haoqinhuang7@gmail.com
+    - f74e6dff5440 "Documentation: zram: correct algo parameters configuration documentation"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260730075158.1339787-1-senozhatsky@chromium.org
+    - series "zram: fix zstd error paths and add parameter validation", v6, (5)
+      - 45214458d6b5 "zram: do not release zstd global params from error paths (0/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260804093841.67920-1-haoqinhuang7@gmail.com
+        - Link: https://lore.kernel.org/20260804093841.67920-2-haoqinhuang7@gmail.com
+      - 6dc404d433ad "zram: reject zero-size dictionary (1/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260804093841.67920-3-haoqinhuang7@gmail.com
+      - 70922d5ef84a "zram: add pr_fmt to backend files (2/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260804093841.67920-4-haoqinhuang7@gmail.com
+      - 7b0f677c7bd5 "zram: validate parameters in each backend's setup_params (3/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260804093841.67920-5-haoqinhuang7@gmail.com
+      - 702c5a799db2 "zram: reset per-priority params when changing algorithm before init (4/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260804093841.67920-6-haoqinhuang7@gmail.com
+    - series "zram: fix stale scan bounds after reinitialization". (2)
+      - 894913e2d35c "zram: fix out-of-bounds access in writeback_store() (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260804065919.3970386-1-xialonglong2025@163.com
+        - Link: https://lore.kernel.org/20260804065919.3970386-2-xialonglong2025@163.com
+      - 391f057f44a5 "zram: fix out-of-bounds access in read_block_state() (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260804065919.3970386-3-xialonglong2025@163.com
+    - 184bf187c45b "zram: switch to unsigned long indexing"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260806031640.536615-1-senozhatsky@chromium.org
+    - a8b5875741d4 "zram: fix slot lock bit position on big-endian 64-bit"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260810202241.2436603-1-devnexen@gmail.com
+- mm-unstable: 12 -> 0 commits
+  - series: 3 (9) -> 0 (0)
+    - no role, maintainer: 8 -> 0 commits
+    - maintainer, nobody: 4 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

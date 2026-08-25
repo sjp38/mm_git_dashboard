@@ -3,13 +3,43 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 4 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 2 (5) -> 2 (5) (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+- mm-stable: 4 -> 10 commits
+  - series: 1 (3) -> 3 (8)
+    - no role, maintainer: 4 -> 9 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - changed commits
+    - 3541a2b06ecd "mm/kmemleak: report RCU-tasks quiescent states during the scan"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260720-kmemleak_rcu_task-v1-1-5b460ade777d@debian.org
+    - series "mm: kmemleak: reduce transient false positives by confirming leaks". (4)
+      - fb496eb06230 "mm: kmemleak: confirm suspected leaks with a second scan (0/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-0-5b93b1131089@debian.org
+        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-1-5b93b1131089@debian.org
+      - e776db8e7101 "mm: kmemleak: report leaks only after N consecutive unreferenced scans (1/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-2-5b93b1131089@debian.org
+      - 70a964bafe55 "mm: kmemleak: factor leak confirmation into a helper (2/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260713-catalin_pto-v1-3-5b93b1131089@debian.org
+    - series "mm: kmemleak: default min_unref_scans to 2 for verbose kernels", v2. (3)
+      - dd0dcfe8ef21 "mm: kmemleak: default min_unref_scans to 2 for verbose auto-scan (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-0-7b9689ac77cb@debian.org
+        - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-1-7b9689ac77cb@debian.org
+      - 09dde5e9bac0 "Documentation: kmemleak: document the conditional min_unref_scans default (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260731-kmemleak_hardened-v2-2-7b9689ac77cb@debian.org
+- mm-unstable: 6 -> 0 commits
+  - series: 2 (5) -> 0 (0)
+    - no role, maintainer: 5 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

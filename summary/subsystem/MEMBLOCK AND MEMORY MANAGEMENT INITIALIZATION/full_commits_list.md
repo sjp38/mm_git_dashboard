@@ -1,11 +1,11 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 13 total, 1 (13) series, 0 non-series commits
+- mm-stable: 16 total, 1 (14) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 8 commits
-    - no role, reviewer: 2 commits
-    - no role, maintainer: 3 commits
+    - no role, no role : 9 commits
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 4 commits
   - full commits list
       - b1b7c045e808 "mm/hugetlb: initialize gigantic bootmem hugepage struct pages earlier" (3/19)
         - Authored by no role player, reviewed by a maintainer
@@ -51,21 +51,16 @@
       - ef79e0f5e31b "mm: split out vmalloc declarations from internal.h" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-      - c9e0b58010b6 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
+      - 0ddb8bb85b98 "mm/page_ext: remove pgdat_page_ext_init()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
-    - 91dc553ea6c0 "drivers/base, mm: move arch_numa.c to mm/"
+    - 3774c56cc38b "drivers/base, mm: move arch_numa.c to mm/"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
-    - 768acfc1d304 "arch_numa: avoid false positive fortify warning in setup_node_to_cpumask_map()"
+    - f2b1cb39d5cc "arch_numa: avoid false positive fortify warning in setup_node_to_cpumask_map()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260813-arch_numa-avoid-fortify-warning-v2-1-093ad97a78df@kernel.org
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

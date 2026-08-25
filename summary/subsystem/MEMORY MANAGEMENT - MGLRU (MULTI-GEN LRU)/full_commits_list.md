@@ -12,12 +12,13 @@
       - Link: https://lore.kernel.org/20260810-rcu_task_shrink_lruvec-v1-1-4d9f7d5251cb@debian.org
       - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 15 total, 3 (11) series, 4 non-series commits
+- mm-stable: 29 total, 4 (20) series, 9 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 4 commits
-    - no role, reviewer: 3 commits
-    - no role, maintainer: 7 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 5 commits
+    - no role, reviewer: 5 commits
+    - no role, maintainer: 15 commits
+    - reviewer, reviewer: 2 commits
   - full commits list
     - 5339ec29f9be "mm: replace __ASSEMBLY__ with __ASSEMBLER__ in memory management header files"
       - Authored by no role player, reviewed by nobody
@@ -76,59 +77,52 @@
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720065508.2695106-1-dev.jain@arm.com
         - Link: https://lore.kernel.org/20260720065508.2695106-2-dev.jain@arm.com
-- mm-unstable: 14 total, 1 (9) series, 5 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 1 commits
-    - no role, reviewer: 3 commits
-    - no role, maintainer: 7 commits
-    - reviewer, reviewer: 2 commits
-  - full commits list
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
-      - a5d488edf3fb "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
+      - 3bf07ce8058b "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
-      - 312d162411ec "mm: vmscan: add a helper to identify file-backed executable folios" (1/3)
+      - b64727d26478 "mm: vmscan: add a helper to identify file-backed executable folios" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/2ee74f9f98ac45a2f0db0ceb018e086bdb671d17.1784509721.git.baolin.wang@linux.alibaba.com
-      - 287fc79c1fab "mm: mglru: promote mapped executable folios after first usage" (2/3)
+      - 0ee06ee38aed "mm: mglru: promote mapped executable folios after first usage" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/f57d94b1d85bb3d620d89bb739128f0d929bf9c6.1784509721.git.baolin.wang@linux.alibaba.com
-      - 0650181e03ea "mm: vmscan: fix node reclaim ignoring swappiness parameter" (1/2)
+      - 8a905195850d "mm: vmscan: fix node reclaim ignoring swappiness parameter" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723032434.2016749-3-ridong.chen@linux.dev
-      - 63ed00fcc980 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
+      - 1b089def0fb8 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
-      - 69a1e1615523 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
+      - 7b9f4e5f8101 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
-    - 737631f56b35 "mm/sparse: keep mem_section_usage_size() internal"
+    - e73aeb8a411e "mm/sparse: keep mem_section_usage_size() internal"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260805022536.1206575-1-songmuchun@bytedance.com
-      - ef87851e43e8 "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - 8f29aa226f82 "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - 9e59c0735cf8 "mm/swap: remove SWP_FS_OPS" (5/7)
+      - 0df74c115879 "mm/swap: remove SWP_FS_OPS" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-      - b7d30cec9035 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
+      - 52d85ca90c7d "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
-    - 0a136e3c9cf5 "mm/mglru: fix young counter undercount for large folios"
+    - 508537753b5c "mm/mglru: fix young counter undercount for large folios"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260813061019.49806-1-hui.zhu@linux.dev
       - Link: https://lore.kernel.org/20260812065933.103627-1-hui.zhu@linux.dev
-    - 804084f40549 "mm/mglru: fix and remove redundant unevictable folio handling"
+    - f7e698e326b2 "mm/mglru: fix and remove redundant unevictable folio handling"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260812-mglru-mlock-fix-v2-1-a3fec5853c08@tencent.com
-    - 23b3ca192eb4 "mm/vmscan: fix comment logic in balance_pgdat"
-      - Authored by no role player, reviewed by a reviewer
+    - 5d3fe91b70e7 "mm/vmscan: fix comment logic in balance_pgdat"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260821064057.4081-1-enlin.mu@linux.dev
-    - 55b50d965aee "memcg: move LRU size accounting on reparenting instead of copying it"
+    - 0e0ac326c511 "memcg: move LRU size accounting on reparenting instead of copying it"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260822024707.77192-1-shakeel.butt@linux.dev
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

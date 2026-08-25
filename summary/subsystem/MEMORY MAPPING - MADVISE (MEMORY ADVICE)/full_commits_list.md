@@ -4,12 +4,14 @@
   - author/reviewer role stat
     - reviewer, reviewer: 1 commits
   - full commits list
-    - c3633555c81a "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
+    - e132eaf59589 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
-- mm-stable: 4 total, 0 (4) series, 0 non-series commits
+- mm-stable: 6 total, 0 (6) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
     - reviewer, maintainer: 1 commits
   - full commits list
       - ef68364cd776 "mm: drop pte_clear_not_present_full()" (1/3)
@@ -25,17 +27,13 @@
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260710105557.1987433-3-usama.arif@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
-- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-      - ef87851e43e8 "mm/swap: introduce struct swap_io_ctx" (1/7)
+      - 8f29aa226f82 "mm/swap: introduce struct swap_io_ctx" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-      - b7d30cec9035 "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
+      - 52d85ca90c7d "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

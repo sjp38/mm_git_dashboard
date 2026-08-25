@@ -1,11 +1,11 @@
 - baseline: v7.2-rc5-31-g62cc90241548d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 23 total, 3 (23) series, 0 non-series commits
+- mm-stable: 28 total, 4 (27) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 12 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
+    - no role, no role : 15 commits
+    - no role, reviewer: 2 commits
+    - no role, maintainer: 2 commits
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 5 commits
     - maintainer, no role : 2 commits
@@ -85,29 +85,24 @@
       - 4fe4ea4cbe75 "mm/rmap: batch unmap file folios belonging to uffd-wp VMAs" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260720065508.2695106-4-dev.jain@arm.com
-- mm-unstable: 5 total, 1 (4) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 3 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-      - a457f00b537c "mm: introduce and use vma_filebacked_address()" (6/16)
+      - dba10745e9b4 "mm: introduce and use vma_filebacked_address()" (5/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org
-      - cc79c41c7b5a "mm/rmap: track whether the page VMA mapped pgoff is anonymous" (10/16)
+      - 50c5f35a64aa "mm/rmap: track whether the page VMA mapped pgoff is anonymous" (9/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-10-c21581c0c3c8@kernel.org
-      - 0eeb11ab2dc5 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (14/16)
+      - 93c0c8dc87f6 "mm/rmap: use anon pgoff to track MAP_PRIVATE file-backed anon folios" (13/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-14-c21581c0c3c8@kernel.org
     - series "promote mapped executable folios after first usage for MGLRU", v4. (3 commits)
-      - a5d488edf3fb "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
+      - 3bf07ce8058b "mm: vmscan: convert folio_referenced() to use vma_flags_t" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1784509721.git.baolin.wang@linux.alibaba.com
         - Link: https://lore.kernel.org/2bd39e16ec19e3e3c4716aa9a1a25775c26cac57.1784509721.git.baolin.wang@linux.alibaba.com
-    - ca5878a384bf "mm/rmap: synchronize lock and unlock target in anon_vma_clone"
+    - f52b3b89faba "mm/rmap: synchronize lock and unlock target in anon_vma_clone"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/OS7PR01MB139142FE16EC63B892559D40496DA2@OS7PR01MB13914.jpnprd01.prod.outlook.com
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
