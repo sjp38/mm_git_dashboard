@@ -6,46 +6,15 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 19 -> 25 commits
-  - series: 3 (18) -> 3 (21)
-    - no role, no role : 3 -> 6 commits
-    - no role, reviewer: 12 -> 15 commits
+- mm-stable: 25 -> 25 commits (no change)
+  - series: 3 (21) -> 3 (21) (no change)
+    - no role, no role : 6 -> 6 commits (no change)
+    - no role, reviewer: 15 -> 15 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - d230991493b5 "mm: mempolicy: fix automatic numa balancing for shmem"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
-      - 51943a18ad4b "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/16)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - added "[akpm@linux-foundation.org: fix kerneldoc comment typo, per Lorenzo]"
-        - added "Link: : https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin"
-        - Link: : https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
-      - 8e658ecc3be2 "mm/huge_memory: update remove_migration_pmd() to accept a folio (11/16)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org
-      - 5f653f8b7a34 "mm/migrate: calculate large folio page index using PFN (12/16)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-13-c21581c0c3c8@kernel.org
-    - 34a00895d032 "mm/migrate_device: clear stale mapping after freeing swapcache"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260728062832.1107127-1-arvind.yadav@intel.com
-    - 9add2cc22de6 "mm/migrate_device: fix cache flush when replacing huge zero PMD"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260817060845.377800-2-sh_def@163.com
-- mm-unstable: 6 -> 0 commits
-  - series: 0 (3) -> 0 (0)
-    - no role, no role : 3 -> 0 commits
-    - no role, reviewer: 3 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

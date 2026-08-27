@@ -143,50 +143,60 @@
     - aedf2efd1897 "mm/pagewalk: fix stale walk->action escaping walk_pmd_range()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260811161949.3879321-2-imv4bel@gmail.com
-- mm-hotfixes-unstable: 12 total, 0 (0) series, 12 non-series commits
+- mm-hotfixes-unstable: 15 total, 0 (0) series, 15 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 4 commits
     - no role, no role : 3 commits
+    - no role, reviewer: 1 commits
     - no role, maintainer: 4 commits
     - reviewer, reviewer: 2 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - b9e0a6a15c39 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+    - 9e69c5090526 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com
-    - 8bf94f2d1ff7 "memcg: make the v1 soft limit knob inert"
+    - 9c5bba85734a "memcg: make the v1 soft limit knob inert"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
-    - b355cb3249ad "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
+    - 18ac862b1bd5 "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260817103433.191266-1-njilav@gmail.com
-    - f20d9bcf3808 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
+    - 327a6b143e58 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260817120758.669807-3-sh_def@163.com
-    - 20deb550d94f "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
+    - 3986b77a71e2 "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260814083027.1419487-1-xialonglong2025@163.com
-    - e132eaf59589 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
+    - 4c37acb67b04 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
-    - 532f50107207 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+    - 6bae444da9ff "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
-    - 19e6dbe0cce2 "MAINTAINERS: add Lance Yang as a hung task detector co-maintainer"
+    - d7127ee86bb0 "MAINTAINERS: add Lance Yang as a hung task detector co-maintainer"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260820014535.79105-1-lance.yang@linux.dev
-    - 87cce20be809 "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
+    - 8362027f1dbe "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
-    - 74628a1a93c2 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
+    - 4a5db7170a62 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
-    - b238a2e2bebe "module: fix lost error code from codetag_load_module()"
-      - Authored by no role player, reviewed by no role player
+    - c5e98a6eb742 "module: fix lost error code from codetag_load_module()"
+      - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260824014736.35026-1-hao.ge@linux.dev
-    - 8a9091052cc8 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
-      - Authored by no role player, reviewed by nobody
+    - b88d51f9bab4 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
+    - be5e644df02e "Revert "once: don't use a work queue to reset sleepable static key""
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260825142515.1965654-1-edumazet@google.com
+    - 85ad260e5d6c "MAINTAINERS: remove Lorenzo as THP co-maintainer"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260826-drop-thp-maintainership-v1-1-3d102748fa17@kernel.org
+    - 3c0b4d372777 "MAINTAINERS: mailmap: update entries for Thorsten Blum"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260825164933.105605-2-blum@kernel.org
 - mm-stable: 673 total, 87 (507) series, 166 non-series commits
   - author/reviewer role stat
     - no role, nobody: 58 commits
@@ -2527,60 +2537,60 @@
     - no role, no role : 12 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 1a1bbcf475a9 "selftests/mm: fix soft-dirty kselftest supported check"
+    - 43a7ad711f96 "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
       - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
-    - 0b928a608706 "riscv: mm: fix concurrency in mark_new_valid_map()"
+    - ab4c83334131 "riscv: mm: fix concurrency in mark_new_valid_map()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260629-riscv-mm-new-valid-map-ordering-v1-1-60d8c10c6292@iscas.ac.cn
       - Link: https://lore.kernel.org/linux-riscv/da19ffcf-8042-4f96-9c2d-649468dc6a0a@kernel.org/ # [1]
-    - f26635a8740e "riscv: mm: exclude invalid THP PMDs from page table check"
+    - fe430b106fec "riscv: mm: exclude invalid THP PMDs from page table check"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260523042052.35476-1-cuiyunhui@bytedance.com
     - series "sh: remove NUMA and SPARSEMEM support", v2. (10 commits)
-      - ca98c1962e5e "sh: remove CONFIG_NUMA and related configuration options" (0/10)
+      - 27151421343a "sh: remove CONFIG_NUMA and related configuration options" (0/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260510135546.13554-1-rppt@kernel.org
         - Link: https://lore.kernel.org/20260510135546.13554-2-rppt@kernel.org
-      - b065e13d6ec2 "sh: mm: remove numa.c" (1/10)
+      - 9425ce50f863 "sh: mm: remove numa.c" (1/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260510135546.13554-3-rppt@kernel.org
-      - 65c302db713c "sh: mm: drop allocate_pgdat()" (2/10)
+      - fae774a016f7 "sh: mm: drop allocate_pgdat()" (2/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260510135546.13554-4-rppt@kernel.org
-      - a32b34ce2309 "sh: remove setup_bootmem_node() and plat_mem_setup()" (3/10)
+      - 31eb201ad34e "sh: remove setup_bootmem_node() and plat_mem_setup()" (3/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260510135546.13554-5-rppt@kernel.org
-      - 9ea945583b21 "sh: drop dead code guarded by #ifdef CONFIG_NUMA" (4/10)
+      - d82de41d04e1 "sh: drop dead code guarded by #ifdef CONFIG_NUMA" (4/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260510135546.13554-6-rppt@kernel.org
-      - f8de12af88a5 "sh: drop include/asm/mmzone.h" (5/10)
+      - 241ee0c5edb5 "sh: drop include/asm/mmzone.h" (5/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260510135546.13554-7-rppt@kernel.org
-      - cdbb7a266f03 "init/Kconfig: drop ARCH_WANT_NUMA_VARIABLE_LOCALITY" (6/10)
+      - cceb781908da "init/Kconfig: drop ARCH_WANT_NUMA_VARIABLE_LOCALITY" (6/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260510135546.13554-8-rppt@kernel.org
-      - 59b9f1a4f120 "sh: init: remove call the memblock_set_node()" (7/10)
+      - 8b7365c13ff6 "sh: init: remove call the memblock_set_node()" (7/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260510135546.13554-9-rppt@kernel.org
-      - c5152300f7a1 "sh: remove SPARSEMEM related entries from Kconfig" (8/10)
+      - 3057d5278150 "sh: remove SPARSEMEM related entries from Kconfig" (8/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260510135546.13554-10-rppt@kernel.org
-      - 7b23a9a3a86d "sh: drop include/asm/sparsemem.h" (9/10)
+      - b6a7a2e14dd3 "sh: drop include/asm/sparsemem.h" (9/10)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260510135546.13554-11-rppt@kernel.org
-    - dff3662b4836 "mm: use a folio in the softleaf_is_device_private path"
+    - 1aec8001ec4d "mm: use a folio in the softleaf_is_device_private path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260819095144.45660-1-hongfu.li@linux.dev
       - Link: https://lore.kernel.org/all/e20678ed-3fa1-4677-a1d7-e2af481e8302@kernel.org/
-    - 6b3c494f0dff "mm: drop stale MAX_ORDER references"
+    - 615225d1a727 "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
-    - 6054bd6a80c8 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 55a319af41eb "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
-    - 1a46b1e97bde "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - dde94c26af59 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 95 total, 10 (27) series, 68 non-series commits
@@ -2905,26 +2915,33 @@
     - eef628bce8e1 "mailmap: fix bouncing address for Taniya Das"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260817-topic-taniya_email_bounce-v1-1-d7af1f113d64@oss.qualcomm.com
-- mm-nonmm-unstable: 6 total, 0 (0) series, 6 non-series commits
+- mm-nonmm-unstable: 8 total, 0 (0) series, 8 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 4 commits
     - no role, maintainer: 1 commits
+    - maintainer, nobody: 1 commits
   - full commits list
-    - 7d34bacc4c08 "drivers/media/v4l2-core/v4l2-vp9.c: reduce inlining"
+    - 90f48a5836ac "drivers/media/v4l2-core/v4l2-vp9.c: reduce inlining"
       - Authored by no role player, reviewed by no role player
-    - 299f050bab7b "taskstats: copy signal->stats under siglock in taskstats_exit"
+    - 27733a8f8522 "taskstats: copy signal->stats under siglock in taskstats_exit"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260804093400.3922-1-include@grrlz.net
-    - cd325d9d2101 "checkpatch: skip CamelCase cache for --no-tree without root"
+    - dd69e7eef71a "checkpatch: skip CamelCase cache for --no-tree without root"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260810161159.1044160-1-pvorel@suse.cz
-    - 1e0109e60fa3 "USB: gadgetfs: do not WARN about excessively large memory allocations"
+    - 05cdc661294c "USB: gadgetfs: do not WARN about excessively large memory allocations"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/DKTTMAS94IMH.2C6ERY0ZIVWVZ@nvidia.com
-    - 681f2a7e014a "resource: fix lost wakeup when waiting for a muxed region"
+    - 93daa4285768 "resource: fix lost wakeup when waiting for a muxed region"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260821-b4-resource-muxed-lost-wakeup-v1-1-37eb6473a76c@gmail.com
-    - 05320304663c "fault-inject: fix dentry leak"
+    - f338843826bb "fault-inject: fix dentry leak"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260821181527.3271414-1-mliang@purestorage.com
+    - 3b05e5866084 "mailmap: update email address for Bradley Morgan"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260825151157.4533-1-brads@mainlining.org
+    - c213fe66fe6f "fat: fix fat_ent_write() for reverting the value"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/87ik4yz9fv.fsf_-_@mail.parknet.co.jp

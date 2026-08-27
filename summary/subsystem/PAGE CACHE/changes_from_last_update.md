@@ -4,37 +4,14 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 7 -> 11 commits
-  - series: 1 (4) -> 1 (7)
-    - no role, nobody: 2 -> 3 commits
-    - no role, no role : 1 -> 2 commits
-    - no role, maintainer: 3 -> 5 commits
+- mm-stable: 11 -> 11 commits (no change)
+  - series: 1 (7) -> 1 (7) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
-      - 7e6543d1f939 "mm: introduce linear_anon_page_index() (2/16)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
-    - series "better block swap batching and a different take on swap_ops v5". (7)
-      - 0df74c115879 "mm/swap: remove SWP_FS_OPS (5/7)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
-    - 1dea8e081ec3 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
-    - series "swap_ops updates", v2. (3)
-      - 22779ae8175a "mm/swap: move swap_ops into file systems for file system-based swap (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
-- mm-unstable: 4 -> 0 commits
-  - series: 0 (3) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

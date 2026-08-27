@@ -3,28 +3,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 11 -> 13 commits
-  - series: 1 (10) -> 1 (12)
-    - no role, no role : 0 -> 1 commits
+- mm-stable: 13 -> 13 commits (no change)
+  - series: 1 (12) -> 1 (12) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 6 -> 7 commits
+    - no role, maintainer: 7 -> 7 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
-      - dba10745e9b4 "mm: introduce and use vma_filebacked_address() (5/16)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-6-c21581c0c3c8@kernel.org
-    - series "selftests/mm: Handle unsupported and transient test conditions", v3. (4)
-      - e14e52a7ce02 "selftests/mm: skip hard dirty page-cache test on NFS (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260727095225.372655-5-usama.anjum@arm.com
-- mm-unstable: 2 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

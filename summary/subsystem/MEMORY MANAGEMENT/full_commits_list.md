@@ -98,41 +98,41 @@
       - Link: https://lore.kernel.org/20260811161949.3879321-2-imv4bel@gmail.com
 - mm-hotfixes-unstable: 10 total, 0 (0) series, 10 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 1 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 2 commits
     - no role, maintainer: 4 commits
     - reviewer, reviewer: 2 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - b9e0a6a15c39 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+    - 9e69c5090526 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com
-    - 8bf94f2d1ff7 "memcg: make the v1 soft limit knob inert"
+    - 9c5bba85734a "memcg: make the v1 soft limit knob inert"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
-    - b355cb3249ad "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
+    - 18ac862b1bd5 "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260817103433.191266-1-njilav@gmail.com
-    - f20d9bcf3808 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
+    - 327a6b143e58 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260817120758.669807-3-sh_def@163.com
-    - 20deb550d94f "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
+    - 3986b77a71e2 "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260814083027.1419487-1-xialonglong2025@163.com
-    - e132eaf59589 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
+    - 4c37acb67b04 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
-    - 532f50107207 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+    - 6bae444da9ff "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
-    - 87cce20be809 "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
+    - 8362027f1dbe "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
-    - 74628a1a93c2 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
+    - 4a5db7170a62 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
-    - 8a9091052cc8 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
-      - Authored by no role player, reviewed by nobody
+    - b88d51f9bab4 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
 - mm-stable: 454 total, 62 (347) series, 107 non-series commits
   - author/reviewer role stat
@@ -1744,17 +1744,17 @@
     - no role, no role : 2 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - dff3662b4836 "mm: use a folio in the softleaf_is_device_private path"
+    - 1aec8001ec4d "mm: use a folio in the softleaf_is_device_private path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260819095144.45660-1-hongfu.li@linux.dev
       - Link: https://lore.kernel.org/all/e20678ed-3fa1-4677-a1d7-e2af481e8302@kernel.org/
-    - 6b3c494f0dff "mm: drop stale MAX_ORDER references"
+    - 615225d1a727 "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
-    - 6054bd6a80c8 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 55a319af41eb "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
-    - 1a46b1e97bde "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - dde94c26af59 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 1 total, 0 (0) series, 1 non-series commits

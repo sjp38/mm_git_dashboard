@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 532f50107207 "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+    - 6bae444da9ff "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
 - mm-stable: 13 total, 0 (12) series, 1 non-series commits

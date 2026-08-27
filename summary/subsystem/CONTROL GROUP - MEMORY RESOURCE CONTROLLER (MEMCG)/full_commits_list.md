@@ -17,7 +17,7 @@
   - author/reviewer role stat
     - maintainer, no role : 1 commits
   - full commits list
-    - 8bf94f2d1ff7 "memcg: make the v1 soft limit knob inert"
+    - 9c5bba85734a "memcg: make the v1 soft limit knob inert"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
 - mm-stable: 23 total, 3 (8) series, 15 non-series commits

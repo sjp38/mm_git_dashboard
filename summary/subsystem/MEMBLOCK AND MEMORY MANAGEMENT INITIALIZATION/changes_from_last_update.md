@@ -3,30 +3,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 13 -> 16 commits
-  - series: 1 (13) -> 1 (14)
-    - no role, no role : 8 -> 9 commits
-    - no role, reviewer: 2 -> 3 commits
-    - no role, maintainer: 3 -> 4 commits
-  - changed commits
-    - series "mm/page_ext: remove pgdat_page_ext_init()", v2. (2)
-      - 0ddb8bb85b98 "mm/page_ext: remove pgdat_page_ext_init() (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
-    - 3774c56cc38b "drivers/base, mm: move arch_numa.c to mm/"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260806-arch-numa-v1-1-968ec128121e@kernel.org
-    - f2b1cb39d5cc "arch_numa: avoid false positive fortify warning in setup_node_to_cpumask_map()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260813-arch_numa-avoid-fortify-warning-v2-1-093ad97a78df@kernel.org
-- mm-unstable: 3 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+- mm-stable: 16 -> 16 commits (no change)
+  - series: 1 (14) -> 1 (14) (no change)
+    - no role, no role : 9 -> 9 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

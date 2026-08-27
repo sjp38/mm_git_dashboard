@@ -4,49 +4,14 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 41 -> 48 commits
-  - series: 7 (33) -> 7 (34)
-    - no role, no role : 4 -> 6 commits
-    - no role, reviewer: 29 -> 32 commits
-    - no role, maintainer: 3 -> 5 commits
+- mm-stable: 48 -> 48 commits (no change)
+  - series: 7 (34) -> 7 (34) (no change)
+    - no role, no role : 6 -> 6 commits (no change)
+    - no role, reviewer: 32 -> 32 commits (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, no role : 5 -> 5 commits (no change)
-  - changed commits
-    - 7a39f03bc9da "mm/page_reporting: add page_reporting_delay_ms module parameter"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260731193705.2902728-1-pratmal@google.com
-    - 8282cb36d021 "mm/page_alloc: only update lowmem_reserve_ratio on sysctl write"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: : https://lore.kernel.org/anSRGASe5FIrqwlg@cmpxchg.org
-      - Link: https://lore.kernel.org/linux-mm/tencent_FFD4F4D728AAE8A8AE0AF277A59854A29A06@qq.com/
-      - Link: https://lore.kernel.org/tencent_A860C873956A52E26AD8D309A308A241BA08@qq.com
-    - 6fd3e592c09d "mm: add some missing includes to mm-local headers"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-    - series "mm/page_ext: remove pgdat_page_ext_init()", v2. (2)
-      - 0ddb8bb85b98 "mm/page_ext: remove pgdat_page_ext_init() (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260804151145.3419768-3-ekffu200098@gmail.com
-    - bb3e3c5c2d63 "mm: debug_page_alloc: fix type mismatch for debug_guardpage_minorder"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260805093108.2352900-1-ye.liu@linux.dev
-    - 8be7c167be57 "mm/show_mem: fix format string inconsistencies and type mismatches"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260805021556.1908807-1-ye.liu@linux.dev
-    - 54cc9b384709 "mm: debug_page_alloc: fix NULL buf in debug_guardpage_minorder_setup"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260806004556.2633049-1-ye.liu@linux.dev
-- mm-unstable: 7 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
-    - no role, reviewer: 3 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

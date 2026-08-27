@@ -23,10 +23,10 @@
   - author/reviewer role stat
     - reviewer, reviewer: 2 commits
   - full commits list
-    - e132eaf59589 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
+    - 4c37acb67b04 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
-    - 87cce20be809 "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
+    - 8362027f1dbe "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
 - mm-stable: 39 total, 7 (35) series, 4 non-series commits

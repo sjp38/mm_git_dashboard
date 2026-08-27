@@ -195,7 +195,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 6b3c494f0dff "mm: drop stale MAX_ORDER references"
+    - 615225d1a727 "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

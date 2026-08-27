@@ -6,61 +6,14 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-stable: 14 -> 23 commits
-  - series: 1 (4) -> 3 (8)
+- mm-stable: 23 -> 23 commits (no change)
+  - series: 3 (8) -> 3 (8) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 2 commits
-    - no role, maintainer: 12 -> 19 commits
-    - maintainer, maintainer: 0 -> 1 commits
-  - changed commits
-    - series "mm: vmscan: fix node reclaim ignoring swappiness parameter", v4. (2)
-      - 1b7c8fe294a6 "memcg: move mem_cgroup_swappiness and vm_swappiness to mm/swap.h (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260723032434.2016749-1-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/20260723032434.2016749-2-ridong.chen@linux.dev
-    - series "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost", v5. (3)
-      - a69797fb3645 "mm/vmstat, mm/memcontrol: add _monotonic vmstat readers (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260727162550.2032-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20260727162550.2032-2-usama.arif@linux.dev
-        - Link: https://gist.github.com/uarif1/a4eb33a86c5b2d7bbc55b42f0956e884 [1]
-      - 1b089def0fb8 "mm/vmscan: add pgrotate_anon and pgrotate_file vmstat counters (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260727162550.2032-3-usama.arif@linux.dev
-      - 7b9f4e5f8101 "mm/vmscan: reduce lru_lock contention via vmstat-derived scan-balance cost (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260727162550.2032-4-usama.arif@linux.dev
-    - 9477820c63cb "mm: memcg: stop reclaim when a limit update is superseded"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260724021805.1234583-1-guopeng.zhang@linux.dev
-    - 6b0d1083364f "memcg: bypass the reclaim and oom killer for dying tasks once oom_reaper is done"
-      - Authored by a maintainer, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260729024612.3369005-1-shakeel.butt@linux.dev
-      - Link: https://lore.kernel.org/7a4e5591f45df455e6a485fc5400989569d3d22d.camel@surriel.com/ [1]
-    - 6fd3e592c09d "mm: add some missing includes to mm-local headers"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-    - c1afbd5de131 "mm/memcontrol: avoid false sharing between vmstats and events"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260817103835.2937733-1-usama.arif@linux.dev
-      - Link: : http://lore.kernel.org/aoAABX59IzUXz/Rv@ly-workstation
-    - 48863da10ba1 "mm: memcg: release the css reference when a stock slot empties"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260818130135.154315-1-husong@kylinos.cn
-- mm-unstable: 9 -> 0 commits
-  - series: 2 (4) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 7 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 19 -> 19 commits (no change)
+    - maintainer, maintainer: 1 -> 1 commits (no change)
+- mm-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

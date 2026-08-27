@@ -247,7 +247,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 1a1bbcf475a9 "selftests/mm: fix soft-dirty kselftest supported check"
+    - 43a7ad711f96 "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
       - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
