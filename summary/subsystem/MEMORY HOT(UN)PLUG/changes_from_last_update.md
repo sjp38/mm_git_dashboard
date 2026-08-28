@@ -1,53 +1,10 @@
-- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-15455-g18fbf5151d2c0
-- mm-hotfixes-stable: 1 -> 0 commits
-  - series: 1 (1) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - series "mm: fix PMD level mTHP accounting bugs", v2. (2)
-      - 4bd0c3515a04 "mm: decrement MTHP_STAT_NR_ANON in free_zone_device_folio() (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260717064502.1980173-1-npache@redhat.com
-        - Link: https://lore.kernel.org/20260717064502.1980173-2-npache@redhat.com
+- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 8 -> 0 commits
-  - series: 1 (8) -> 0 (0)
-    - no role, no role : 6 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
-      - 9eed9653a35f "mm/mm_init: handle alloc_percpu failure in free_area_init_core_hotplug (8/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260701221613.2818148-1-gourry@gourry.net
-        - Link: https://sashiko.dev/#/patchset/20260627202243.758289-1-gourry%40gourry.net
-    - series "mm: Some cleanups for page allocator APIs", v5. (18)
-      - d0850de699b0 "mm: split out internal page_alloc.h (3/18)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
-        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
-    - series "mm: split a couple of headers from internal.h", v2. (3)
-      - 55ed40abb2cd "mm: split out mm_init and memblock declarations from internal.h (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: : https://lore.kernel.org/alJd1BLypyK9Mpaw@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-0-695631425968@kernel.org
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-1-695631425968@kernel.org
-    - series "dax/kmem: atomic whole-device hotplug via sysfs", v7. (10)
-      - 5459c5be28c2 "mm/memory_hotplug: add mhp_online_type_to_str() and export string helpers (1/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260712154505.3564379-3-gourry@gourry.net
-      - 65c1a93e438e "mm/memory_hotplug: pass online_type to online_memory_block() via arg (2/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260712154505.3564379-4-gourry@gourry.net
-      - 7e00a85f783e "mm/memory_hotplug: export mhp_get_default_online_type (3/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260712154505.3564379-5-gourry@gourry.net
-      - 2b047c8a8c27 "mm/memory_hotplug: add __add_memory_driver_managed() with online_type arg (4/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260712154505.3564379-6-gourry@gourry.net
-      - c17ba40c37e8 "mm/memory_hotplug: add offline_and_remove_memory_ranges() (5/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260712154505.3564379-7-gourry@gourry.net
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

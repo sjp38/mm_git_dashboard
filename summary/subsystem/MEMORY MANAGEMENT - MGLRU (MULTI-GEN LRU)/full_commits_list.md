@@ -3,17 +3,39 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
+- mm-new: 8 total, 1 (6) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 1 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 5 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - fe66add20862 "mm/vmscan: drop the combined limit gate in __node_reclaim()"
+    - 64e0677d170b "mm/vmscan: drop the combined limit gate in __node_reclaim()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260826124409.35569-1-ridong.chen@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260723045718.2052070-1-ridong.chen@linux.dev [1]
-    - 109566501810 "mm/mglru: preserve inactive placement when enabling MGLRU"
+    - 3270bc1b036d "mm/mglru: preserve inactive placement when enabling MGLRU"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260821021606.877330-1-ridong.chen@linux.dev
+    - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v5. (17 commits)
+      - d07fcfc44847 "mm/sparse: relax struct mem_section size constraints" (0/17)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260825084608.47437-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260825084608.47437-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/linux-mm/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+      - a1a85b0950ba "mm/sparse-vmemmap: rename HVO order macros" (1/17)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260825084608.47437-3-songmuchun@bytedance.com
+      - a9632f69cb73 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260825084608.47437-4-songmuchun@bytedance.com
+      - 3ffadc472a20 "mm/sparse-vmemmap: support section-based vmemmap accounting" (4/17)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260825084608.47437-6-songmuchun@bytedance.com
+      - 8b8ba471e7a0 "mm/sparse-vmemmap: remove SPARSEMEM_VMEMMAP_PREINIT support" (10/17)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260825084608.47437-12-songmuchun@bytedance.com
+      - 873f0dae84f6 "mm/sparse: inline usemap allocation into sparse_init_nid()" (11/17)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260825084608.47437-13-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

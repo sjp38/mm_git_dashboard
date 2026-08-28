@@ -1,46 +1,11 @@
-- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-15455-g18fbf5151d2c0
-- mm-hotfixes-stable: 0 -> 1 commits
+- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-  - changed commits
-    - d30d09a5bab2 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 1 -> 0 commits
-- mm-stable: 6 -> 0 commits
-  - series: 0 (6) -> 0 (0)
-    - no role, no role : 3 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
-  - dropped commits
-    - series "mm: cleanup clear_not_present_full_ptes()", v2. (3)
-      - ef68364cd776 "mm: drop pte_clear_not_present_full() (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260629-clear_not_present_full_ptes-v2-2-96089871a1e7@kernel.org
-      - d045e8a05d30 "mm: cleanup clear_not_present_full_ptes() and rename to clear_non_present_ptes() (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260629-clear_not_present_full_ptes-v2-3-96089871a1e7@kernel.org
-    - series "mm: make VMA page offset handling more consistent", v2. (33)
-      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
-    - series "mm: handle device-private PMDs in walk callbacks", v3. (3)
-      - d4b76d0b03cb "mm/madvise: skip device-private PMDs in cold and pageout walks (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260710105557.1987433-3-usama.arif@linux.dev
-        - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
-    - series "better block swap batching and a different take on swap_ops v5". (7)
-      - 8f29aa226f82 "mm/swap: introduce struct swap_io_ctx (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260713093350.2154226-3-hch@lst.de
-    - series "swap_ops updates", v2. (3)
-      - 52d85ca90c7d "mm/swap: add a new swap_ops.h header to allow for pluggable swap ops (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260723054622.3460249-3-hch@lst.de
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

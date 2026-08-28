@@ -3,12 +3,27 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 5 total, 1 (4) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 3 commits
   - full commits list
-    - 453743a51878 "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - 69b6f0a73184 "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
+    - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v2. (6 commits)
+      - c2cb892ca261 "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-1-b013a37d84b3@kernel.org
+        - Link: https://lore.kernel.org/all/20260611130144.1385343-4-abarnas@google.com [1]
+      - 7bbbd38d20fb "mm/vmalloc: set area's page_order after allocation succeeds" (1/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-2-b013a37d84b3@kernel.org
+      - d30aff7731f4 "mm/vmalloc: constify vm parameter of get_vm_area_page_order()" (2/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-3-b013a37d84b3@kernel.org
+      - 3a02a8f7e997 "mm/vmalloc: make set_area_direct_map HUGE_VMAP friendly" (3/6)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-4-b013a37d84b3@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

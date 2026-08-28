@@ -3,16 +3,23 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
+- mm-new: 4 total, 1 (2) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, reviewer: 1 commits
+    - no role, reviewer: 3 commits
   - full commits list
-    - d46fee73071a "mm: drop stale MAX_ORDER references"
+    - 5ae53391ef96 "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
-    - de3f61b1b824 "mm: remove out-dated document of __GFP_NOFAIL"
+    - bd3e86ece407 "mm: remove out-dated document of __GFP_NOFAIL"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260827030548.16631-1-richard.weiyang@gmail.com
+    - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2 commits)
+      - a921d0b4ae0e "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
+      - 0b0c6d5c5e79 "mm/page_isolation: guard compound_order() against racing" (1/2)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

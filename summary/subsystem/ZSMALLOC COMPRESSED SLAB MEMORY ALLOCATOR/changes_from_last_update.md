@@ -1,34 +1,10 @@
-- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-15455-g18fbf5151d2c0
+- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 6 -> 0 commits
-  - series: 1 (4) -> 0 (0)
-    - no role, no role : 4 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
-  - dropped commits
-    - series "mm/zsmalloc: reduce lock contention in zs_free()", v6. (4)
-      - 9909b088b1f0 "mm/zsmalloc: encode class index in obj value for lockless class lookup (0/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260626015003.2965881-1-haowenchao22@gmail.com
-        - Link: https://lore.kernel.org/20260626015003.2965881-2-haowenchao22@gmail.com
-      - 59e88952a827 "mm/zsmalloc: drop pool->lock from zs_free on 64-bit systems (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: : https://lore.kernel.org/20260725035733.53241-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/20260626015003.2965881-3-haowenchao22@gmail.com
-      - 7ef28e8b8142 "mm/zsmalloc: drop class lock before freeing zspage (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260626015003.2965881-4-haowenchao22@gmail.com
-      - 0abea609f37e "mm/zsmalloc: document free_zspage helper variants (3/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260626015003.2965881-5-haowenchao22@gmail.com
-    - f276408a8167 "mm/zsmalloc: fix release order of locks in zs_page_migrate()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260728055333.421080-1-richardycc@google.com
-    - f7bf5cd5b5f2 "zsmalloc: account for handle size in class lookup"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260809115518.3791787-1-xialonglong2025@163.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

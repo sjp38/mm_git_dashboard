@@ -9,12 +9,15 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 1 commits
+    - no role, maintainer: 2 commits
   - full commits list
-    - 35a3a9a3a368 "mm/memcontrol: fix data-race on reading jiffies_64"
-      - Authored by no role player, reviewed by a reviewer
+    - 05138b4fd4b7 "mm/memcontrol: fix data-race on reading jiffies_64"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260827025457.116191-1-jiayuan.chen@linux.dev
+    - 25be15ea1b38 "mm/memcontrol: remove unused memcg parameter in calculate_high_delay()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260825120153.1405-1-hongfu.li@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

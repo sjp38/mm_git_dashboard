@@ -9,9 +9,22 @@
     - bb287a9d130e "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - 6540596081b4 "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260827-hugepfn-allowable-orders-v1-1-94819c8807c8@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - a91028883b08 "selftests/mm: khugepaged: remove str_dup() usage"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
+      - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

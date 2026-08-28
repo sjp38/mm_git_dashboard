@@ -3,6 +3,23 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 4 total, 0 (3) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+    - f662e89c5384 "mm/mm_init: remove zone_absent_pages_in_node()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260827144151.486192-1-ekffu200098@gmail.com
+      - a9632f69cb73 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260825084608.47437-4-songmuchun@bytedance.com
+      - b3007bbdeeb8 "mm/mm_init: factor out pfn_to_zone()" (5/17)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260825084608.47437-7-songmuchun@bytedance.com
+      - 81c780e47c97 "mm/sparse: initialize memory sections earlier" (8/17)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260825084608.47437-10-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

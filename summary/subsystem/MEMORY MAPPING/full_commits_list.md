@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 2d390cf68791 "mm/mremap: reset unfaulted VMA page offset for MREMAP_DONTUNMAP"
+    - 7ba2a358064b "mm/mremap: reset unfaulted VMA page offset for MREMAP_DONTUNMAP"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825-fix-mremap-dontunmap-pgoff-v1-1-39a40b2c98b3@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
