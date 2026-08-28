@@ -1,18 +1,136 @@
-- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-15455-g18fbf5151d2c0
+- mm-hotfixes-stable: 1 -> 2 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 0 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - f05dc611ac09 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260817120758.669807-3-sh_def@163.com
+    - 61f04edb0170 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
+  - dropped commits
+    - series "mm: fix PMD level mTHP accounting bugs", v2. (2)
+      - d09a8fd52147 "mm/migrate: exclude hugetlb folios from MTHP_STAT_NR_ANON accounting (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260717064502.1980173-3-npache@redhat.com
+- mm-hotfixes-unstable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 25 -> 25 commits (no change)
-  - series: 3 (21) -> 3 (21) (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 15 -> 15 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+- mm-stable: 25 -> 0 commits
+  - series: 3 (21) -> 0 (0)
+    - no role, no role : 6 -> 0 commits
+    - no role, reviewer: 15 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, reviewer: 2 -> 0 commits
+    - reviewer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - series "mm/page_owner: misc cleanups", v6. (6)
+      - 7eeed888c99a "mm/page_owner: add MR_NEVER to enum migrate_reason and use it for last_migrate_reason (1/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260714015117.78351-3-ye.liu@linux.dev
+      - c95dc0a84b4c "mm: use enum migrate_reason instead of int for migration reason parameters (2/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260714015117.78351-4-ye.liu@linux.dev
+    - series "mm: convert to walk_page_range_vma() to eliminate find_vma()", v2. (4)
+      - 9bde2240ec35 "mm: migrate_device: use walk_page_range_vma() in migrate_vma_collect() (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260618092845.3905740-5-wangkefeng.wang@huawei.com
+    - series "mm/migrate: preparatory cleanups for batch copy and offload", v2. (3)
+      - 9aaf5aa2444f "mm/migrate: rename page to folio leftovers (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-0-d9e8f17130b1@amd.com
+        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-1-d9e8f17130b1@amd.com
+        - Link: https://lore.kernel.org/all/20260428155043.39251-2-shivankg@amd.com [1]
+      - 8d7625771506 "mm/migrate: fix stale list name in migrate_folios_move() comment (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-2-d9e8f17130b1@amd.com
+      - 3dd5a633a094 "mm/migrate: use migrate_info field instead of private (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: : https://lore.kernel.org/20260717022146.1290242-1-rdunlap@infradead.org
+        - Link: https://lore.kernel.org/20260701-migrate-cleanups-prep-v2-3-d9e8f17130b1@amd.com
+    - series "mm: preparatory patches for PMD level swap entries", v2. (6)
+      - 608c74559718 "mm: add softleaf_to_pmd() and convert existing callers (0/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260706114320.1643046-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260706114320.1643046-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/all/6E99CC4E-A026-4DE3-8A5A-34216771F521@nvidia.com/ [1]
+        - Link: https://lore.kernel.org/all/b08cafbb-a4b7-4609-84ae-dbb2cfcfc8be@linux.dev/#t [2]
+        - Link: https://lore.kernel.org/all/20260602142537.198755-1-usama.arif@linux.dev/ [3]
+      - 1f5a3d1afa5d "mm/migrate_device: move softleaf_to_folio() inside device-private branch (4/6)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260706114320.1643046-6-usama.arif@linux.dev
+      - d547b1001755 "mm: rename ARCH_ENABLE_THP_MIGRATION to ARCH_HAS_PMD_SOFTLEAVES (5/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260706114320.1643046-7-usama.arif@linux.dev
+    - series "selftests/mm: refactor pkey helpers and fix mmap error handling", v10. (10)
+      - 78b0ca26d00d "mm/migrate_device: pin large folios before splitting (7/10)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: : https://lore.kernel.org/87bbf335-648f-4065-abc8-3eaab5a3beeb@linux.dev
+        - Link: https://lore.kernel.org/20260701140638.840773-1-usama.arif@linux.dev
+        - Link: https://sashiko.dev/#/patchset/20260630164143.1595669-1-usama.arif%40linux.dev
+    - series "Open HugeTLB allocation routine for more generic use", v4. (6)
+      - 66a4e9e11e43 "mm: hugetlb: move mpol interpretation out of alloc_buddy_hugetlb_folio_with_mpol() (1/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260702-hugetlb-open-up-v4-2-d53cefcccf34@google.com
+    - series "mm: Some cleanups for page allocator APIs", v5. (18)
+      - d0850de699b0 "mm: split out internal page_alloc.h (3/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-4-c87b714e19d3@google.com
+        - Link: https://lore.kernel.org/all/41e92bab-6882-401a-8de9-154adbdcfb36@kernel.org/
+      - 2fc4c1d51d87 "mm/page_alloc: unify __alloc_frozen_pages[_nolock]_noprof() (4/18)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260703-alloc-trylock-v5-5-c87b714e19d3@google.com
+    - series "Fix incorrect access of hugetlb pte entries", v3. (5)
+      - ac1ec50d71b9 "mm/migrate: use huge_ptep_get() in remove_migration_pte() (2/5)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260703114202.365553-5-dev.jain@arm.com
+    - series "userfaultfd: working set tracking for VM guest memory", v10. (15)
+      - c0ffe79eedc1 "mm: rename uffd-wp PTE accessors to uffd (2/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-4-kirill@shutemov.name
+      - 763f43865fc4 "mm: preserve RWP marker across PTE rewrites (6/15)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260708111417.173443-8-kirill@shutemov.name
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+    - series "mm: handle device-private PMDs in walk callbacks", v3. (3)
+      - 2858b4027f49 "mm/mempolicy: skip non-present PMDs when queueing folios (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260710105557.1987433-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20260710105557.1987433-2-usama.arif@linux.dev
+        - Link: https://sashiko.dev/#/patchset/20260703173903.3789516-1-usama.arif%40linux.dev?part=6
+    - efe8f86c0916 "mm/migrate: report RCU-tasks quiescent states in migrate_pages_batch()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260727-kcompact-v1-1-bdfefddd6874@debian.org
+      - Link: https://lore.kernel.org/all/amdWVTs0WKOxguxP@gmail.com/ [1]
+    - d230991493b5 "mm: mempolicy: fix automatic numa balancing for shmem"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260629163337.1264881-1-hannes@cmpxchg.org
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
+      - 51943a18ad4b "mm: provide vma_[flags_]is_cow_mapping() and remove is_cow_mapping() (1/16)"
+        - Authored by no role player, reviewed by no role player
+        - Link: : https://lore.kernel.org/aob1goSSPH6sTN9y@gremlin
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-2-c21581c0c3c8@kernel.org
+      - 8e658ecc3be2 "mm/huge_memory: update remove_migration_pmd() to accept a folio (11/16)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-12-c21581c0c3c8@kernel.org
+      - 5f653f8b7a34 "mm/migrate: calculate large folio page index using PFN (12/16)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-13-c21581c0c3c8@kernel.org
+    - 34a00895d032 "mm/migrate_device: clear stale mapping after freeing swapcache"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260728062832.1107127-1-arvind.yadav@intel.com
+    - 9add2cc22de6 "mm/migrate_device: fix cache flush when replacing huge zero PMD"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260817060845.377800-2-sh_def@163.com
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)

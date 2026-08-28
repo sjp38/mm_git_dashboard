@@ -1,49 +1,14 @@
-- baseline: v7.2-rc5-31-g62cc90241548d
-- mm-hotfixes-stable: 2 total, 1 (2) series, 0 non-series commits
+- baseline: v7.2-15455-g18fbf5151d2c0
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
-    - no role, maintainer: 1 commits
   - full commits list
-    - series "mm: fix UAF caused by race between ptdump and vmap pgtable freeing", v6. (3 commits)
-      - 26444eb71465 "mm/vmalloc: acquire init_mm lock on huge vmap to avoid ptdump UAF" (0/3)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-0-8cc77dcc0018@kernel.org
-        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-1-8cc77dcc0018@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260706203128.162335-1-devnexen@gmail.com/
-      - 9d3277b2c07c "arm64: remove redundant concurrent ptdump UAF mitigation" (2/3)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260723-series-vmap-race-fix-v6-5-8cc77dcc0018@kernel.org
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 7 total, 1 (2) series, 5 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 5 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - series "mm/percpu: Fix possible NOFS/NOIO reclaim recursion", v4. (4 commits)
-      - dec068de6dec "mm/vmalloc: honor GFP constraints in pcpu_get_vm_areas()" (0/4)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260618130414.96383-1-kaitao.cheng@linux.dev
-        - Link: https://lore.kernel.org/20260618130414.96383-2-kaitao.cheng@linux.dev
-    - 24e9b62985d8 "mm/vmalloc: use more common error handling code in pcpu_get_vm_areas()"
+    - 453743a51878 "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/453375c4-c3ca-4e6f-8880-0e6ff3c74ee3@web.de
-    - 923a89a91a7e "mm/vmalloc: add alignment info in warning print as possible failure reason"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260702112610.21589-1-feng.tang@linux.alibaba.com
-      - ef79e0f5e31b "mm: split out vmalloc declarations from internal.h" (2/3)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260709-internal-h-v2-3-695631425968@kernel.org
-    - 272b0d84b17f "mm/vmalloc: make vm_struct.nr_pages an unsigned long"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260801114915.115224-1-iprintercanon@gmail.com
-    - b9183788a2de "mm/vmalloc: do not warn on -ENOMEM from va_alloc()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260802104627.63892-1-urezki@gmail.com
-    - 6fd3e592c09d "mm: add some missing includes to mm-local headers"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260804-fix-some-local-headers-v1-1-a7beb173c116@kernel.org
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+      - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

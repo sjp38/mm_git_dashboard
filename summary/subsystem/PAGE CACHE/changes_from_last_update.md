@@ -1,15 +1,58 @@
-- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-rc5-31-g62cc90241548d (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.2-rc5-31-g62cc90241548d -> v7.2-15455-g18fbf5151d2c0
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 86da3f7e1e60 "mm/filemap: __filemap_add_folio() restore index before retrying"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/562fbfa6-dd6d-0b6a-2461-ed2ff1173bc8@google.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 11 -> 11 commits (no change)
-  - series: 1 (7) -> 1 (7) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+- mm-stable: 11 -> 0 commits
+  - series: 1 (7) -> 0 (0)
+    - no role, nobody: 3 -> 0 commits
+    - no role, no role : 2 -> 0 commits
+    - no role, maintainer: 5 -> 0 commits
+    - reviewer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - series "mm/filemap: reduce unnecessary xarray lookups". (2)
+      - e1c345582c97 "mm/filemap: reduce unnecessary xarray lookups when read cached pages (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260620062446.351475-2-chizhiling@163.com
+      - 32cd1afeca96 "mm/filemap: reduce unnecessary xarray lookups in filemap_get_folios_contig() (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260620062446.351475-3-chizhiling@163.com
+    - 375c63b64958 "writeback.h: fix a typo in the wbc_init_bio() description"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260615162244.2170866-2-willy@infradead.org
+    - d7a8934c078c "mm: fix mapping_seek_hole_data() overflow on last page"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260630125047.703170-1-yanzhen20011121@163.com
+    - 747beac67911 "mm: remove wb_writeout_inc"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260710051052.1839523-1-hch@lst.de
+    - series "mm: make VMA page offset handling more consistent", v2. (33)
+      - 1268e1572ba5 "mm: introduce and use linear_page_delta() (16/33)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-17-2a5aa403d977@kernel.org
+      - 5872168de5d5 "mm/vma: use vma_start_pgoff(), linear_page_index() in mm code (17/33)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260710-b4-pre-scalable-cow-v2-18-2a5aa403d977@kernel.org
+    - series "mm/rmap: index MAP_PRIVATE file-backed folios by anonymous pgoff", v5. (16)
+      - 7e6543d1f939 "mm: introduce linear_anon_page_index() (2/16)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260813-b4-scalable-cow-virt-pgoff-v5-3-c21581c0c3c8@kernel.org
+    - series "better block swap batching and a different take on swap_ops v5". (7)
+      - 0df74c115879 "mm/swap: remove SWP_FS_OPS (5/7)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260713093350.2154226-7-hch@lst.de
+    - 1dea8e081ec3 "mm/page-writeback: document folio_mark_dirty() locking more explicitly"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260810-set-page-dirty-warnings-v2-1-1bd40fadfacd@google.com
+    - series "swap_ops updates", v2. (3)
+      - 22779ae8175a "mm/swap: move swap_ops into file systems for file system-based swap (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260723054622.3460249-4-hch@lst.de
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 0 -> 0 commits (no change)
