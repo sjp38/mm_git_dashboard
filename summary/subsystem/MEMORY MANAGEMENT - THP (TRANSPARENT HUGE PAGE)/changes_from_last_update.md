@@ -2,25 +2,60 @@
 - mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+    - reviewer, nobody: 0 -> 1 commits
   - new commits
-    - 6540596081b4 "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
-      - Authored by no role player, reviewed by nobody
+    - df5f736c4a5e "renames for Lorenzo's mm-huge_memory-bypass-thp-tuneables-for-huge-pfnmap-mappings patch"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/DL1HIHWYJ7TB.1CY76SJS0V03L@nvidia.com
+  - changed commits
+    - 911ebd8d14e1 "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+      - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
+      - added "Tested-by: Saravanan D <saravanand@crusoe.ai>"
+      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
       - Link: https://lore.kernel.org/20260827-hugepfn-allowable-orders-v1-1-94819c8807c8@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
+- mm-new: 1 -> 7 commits
+  - series: 0 (0) -> 2 (4)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 0 -> 3 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - a91028883b08 "selftests/mm: khugepaged: remove str_dup() usage"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
-      - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
+    - series "mm: khugepaged: fix tracepoint UAF", v4. (3)
+      - 7c998338f86b "mm: khugepaged: fix swap entry value to folio_pfn() (0/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260828055926.346744-1-vernon2gm@gmail.com
+        - Link: https://lore.kernel.org/20260828055926.346744-2-vernon2gm@gmail.com
+        - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
+      - 76c8900f0683 "mm: khugepaged: fix folio is used after pte_unmap_unlock() (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260828055926.346744-3-vernon2gm@gmail.com
+        - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
+      - 0795af610a3b "mm: khugepaged: fix folio is used after folio_put/unlock() (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260828055926.346744-4-vernon2gm@gmail.com
+    - 142623915d0e "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260828222640.1638457-1-jthoughton@google.com
+    - series "mm: reject zone device folios in more folio walkers", v2. (3)
+      - 22fe58941133 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd() (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260817220810.1175596-1-gourry@gourry.net
+        - Link: https://lore.kernel.org/20260817220810.1175596-2-gourry@gourry.net
+    - fd084ad0ecbf "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

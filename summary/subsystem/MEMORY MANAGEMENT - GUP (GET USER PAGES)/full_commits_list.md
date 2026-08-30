@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - d1a3109bc0a6 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 0c809687e477 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

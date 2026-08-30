@@ -18,49 +18,48 @@
       - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - aeddb4d52acf "mm/hugetlb: do not dissolve gigantic pages without runtime support"
-      - Authored by no role player, reviewed by nobody
+    - 069fc16c2f61 "mm/hugetlb: do not dissolve gigantic pages without runtime support"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260823044118.1097121-2-xialonglong2025@163.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-new: 10 total, 0 (7) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
     - no role, no role : 6 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 2 commits
+    - no role, maintainer: 3 commits
   - full commits list
-    - ebcd2f364d50 "mm/hugetlb: fix resv_huge_pages double decrement in memfd error path"
+    - 1972d006a773 "mm/hugetlb: fix resv_huge_pages double decrement in memfd error path"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260825021013.25672-1-hongfu.li@linux.dev
-    - 0a0f33e61f2b "mm/hugetlb: use hugetlb_vmemmap_optimizable() in boolean contexts"
+    - 2be7f8d491b9 "mm/hugetlb: use hugetlb_vmemmap_optimizable() in boolean contexts"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260824151655.30840-1-kaitao.cheng@linux.dev
-      - a1a85b0950ba "mm/sparse-vmemmap: rename HVO order macros" (1/17)
+      - 5ed112eabe18 "mm/sparse-vmemmap: rename HVO order macros" (1/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825084608.47437-3-songmuchun@bytedance.com
-      - b3007bbdeeb8 "mm/mm_init: factor out pfn_to_zone()" (5/17)
+      - 84bedec7b595 "mm/mm_init: factor out pfn_to_zone()" (5/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-7-songmuchun@bytedance.com
-      - 475c388bc442 "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization" (9/17)
+      - 39ffe8c53020 "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization" (9/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-11-songmuchun@bytedance.com
-      - 1c05ee588ac8 "mm/hugetlb: remove HUGE_BOOTMEM_HVO" (13/17)
+      - 99f9a28f7161 "mm/hugetlb: remove HUGE_BOOTMEM_HVO" (13/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-15-songmuchun@bytedance.com
-      - d529415879d2 "mm/hugetlb: remove HUGE_BOOTMEM_CMA" (14/17)
+      - 463b7a0f7b13 "mm/hugetlb: remove HUGE_BOOTMEM_CMA" (14/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-16-songmuchun@bytedance.com
-      - 695e76a8d6cf "mm/hugetlb: localize struct huge_bootmem_page" (15/17)
+      - ede19c18be7b "mm/hugetlb: localize struct huge_bootmem_page" (15/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-17-songmuchun@bytedance.com
-      - 7cc62cab9181 "mm/hugetlb: localize HUGE_BOOTMEM_ZONES_VALID" (16/17)
+      - 05f1c33fa451 "mm/hugetlb: localize HUGE_BOOTMEM_ZONES_VALID" (16/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-18-songmuchun@bytedance.com
-    - ef50010299e4 "mm/hugetlb: warn instead of silently bailing gigantic pages without runtime support"
-      - Authored by no role player, reviewed by nobody
+    - fce4e28c2478 "mm/hugetlb: warn instead of silently bailing gigantic pages without runtime support"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260823044118.1097121-3-xialonglong2025@163.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

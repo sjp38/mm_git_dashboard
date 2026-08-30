@@ -7,8 +7,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - maintainer, no role : 0 -> 1 commits
+  - new commits
+    - series "mm: Unconditional per-VMA locks and cleanups", v6. (5)
+      - 605c2a7b7cad "mm: make per-VMA locks available universally (0/5)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260813193433.3318288-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260813193433.3318288-2-surenb@google.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

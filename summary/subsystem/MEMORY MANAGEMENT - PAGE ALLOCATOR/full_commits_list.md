@@ -3,23 +3,30 @@
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 4 total, 1 (2) series, 2 non-series commits
+- mm-new: 6 total, 1 (4) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, reviewer: 3 commits
+    - no role, reviewer: 4 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 5ae53391ef96 "mm: drop stale MAX_ORDER references"
+    - 7028061c1c9f "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
-    - bd3e86ece407 "mm: remove out-dated document of __GFP_NOFAIL"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260827030548.16631-1-richard.weiyang@gmail.com
     - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2 commits)
-      - a921d0b4ae0e "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
+      - 6fac783423b4 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
-      - 0b0c6d5c5e79 "mm/page_isolation: guard compound_order() against racing" (1/2)
+      - 697f911d3dad "mm/page_isolation: guard compound_order() against racing" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
+      - c97883ffd8e4 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (1/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
+    - 665163af43a4 "mm: adjust out-dated document of __GFP_NOFAIL"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
+      - 6fb747e321c0 "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260811172156.356053-3-pfalcato@suse.de
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

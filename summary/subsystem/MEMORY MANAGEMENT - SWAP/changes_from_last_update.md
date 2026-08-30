@@ -1,21 +1,45 @@
 - baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - reviewer, maintainer: 0 -> 1 commits
+  - new commits
+    - ba8d93a7c61e "mm, swap: fix SWAP_USAGE_OFFLIST_BIT collision with real usage count"
+      - Authored by a reviewer, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260828191433.3304458-1-nphamcs@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 2 -> 8 commits
+  - series: 0 (0) -> 2 (6)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 8b8bde7f444b "mm/swap: remove unused declaration swapcache_clear()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - Link: https://lore.kernel.org/20260827082722.1809702-1-yuehaibing@huawei.com
+    - no role, no role : 0 -> 5 commits
+    - no role, maintainer: 1 -> 2 commits
+  - new commits
+    - series "mm/page_io: folio conversion cleanups", v2. (6)
+      - 7b15fffdc766 "mm/page_io: convert write completion handlers to folios (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-0-649728091117@columbia.edu
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-1-649728091117@columbia.edu
+      - ab64f7aed159 "mm/page_io: use swap entries directly in zeromap helpers (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-3-649728091117@columbia.edu
+      - 62a39c1ecc6c "mm/page_io: rename bio_associate_blkg_from_page() (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-4-649728091117@columbia.edu
+      - ce6c277b748f "mm/page_io: refer to folios in swap_writeout() comments (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-5-649728091117@columbia.edu
+      - 987683e666fa "mm/swap: rename __swap_writepage() to __swap_writeout() (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-6-649728091117@columbia.edu
+    - series "mm, swap: don't spin on a bad swap entry", v3. (2)
+      - aea73d9ee6bd "mm, swap: distinguish a malformed swap entry from a dying device (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
+        - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

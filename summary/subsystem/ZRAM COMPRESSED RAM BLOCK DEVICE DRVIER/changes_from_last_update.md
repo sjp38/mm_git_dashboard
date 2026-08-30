@@ -1,19 +1,26 @@
 - baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - 94e54ebe565b "zram: fix idle age_sec underflow in idle_store()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260825092316.69658-1-jiahao.kernel@gmail.com
+    - no role, nobody: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - changed commits
+    - a9d79948332f "zram: fix idle age_sec underflow in idle_store()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-new
+      - added "Link: https://lore.kernel.org/20260828083149.45760-1-jiahao.kernel@gmail.com"
+      - added "Suggested-by: Sergey Senozhatsky <senozhatsky@chromium.org>"
+      - added "Cc: Brian Geffon <bgeffon@google.com>"
+      - dropped "Link: https://lore.kernel.org/20260825092316.69658-1-jiahao.kernel@gmail.com"
+      - dropped "Cc: Sergey Senozhatsky <senozhatsky@chromium.org>"
+      - Link: https://lore.kernel.org/20260828083149.45760-1-jiahao.kernel@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,14 +1,14 @@
 - baseline: v7.2-15455-g18fbf5151d2c0
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 94e54ebe565b "zram: fix idle age_sec underflow in idle_store()"
+    - a9d79948332f "zram: fix idle age_sec underflow in idle_store()"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260825092316.69658-1-jiahao.kernel@gmail.com
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+      - Link: https://lore.kernel.org/20260828083149.45760-1-jiahao.kernel@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

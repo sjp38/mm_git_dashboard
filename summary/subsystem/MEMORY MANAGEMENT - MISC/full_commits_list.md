@@ -4,52 +4,58 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 9549574e05b3 "mm/secretmem: properly account locked pages"
+    - 3512cac4aa7a "mm/secretmem: properly account locked pages"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260826-secretmem-accounting-v3-1-94cb04399510@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 10 total, 2 (5) series, 5 non-series commits
+- mm-new: 12 total, 2 (6) series, 6 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 7 commits
-    - no role, reviewer: 1 commits
+    - no role, reviewer: 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 883646b9b292 "selftests/mm: remove the local PKEY_UNRESTRICTED fallback"
+    - be81196d3bfa "selftests/mm: remove the local PKEY_UNRESTRICTED fallback"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825161715.2807297-1-hemanth.selam@gmail.com
     - series "docs/ksm: fix advisor documentation and comment", v3. (2 commits)
-      - fd402fc7fa79 "docs: ksm: fix typos in sysfs knob names" (0/2)
+      - 7ea69c37f9f7 "docs: ksm: fix typos in sysfs knob names" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260824061010.3343959-1-tujinjiang@huawei.com
         - Link: https://lore.kernel.org/20260824061010.3343959-2-tujinjiang@huawei.com
-      - f47e22ec02e0 "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
+      - 830da258bbc0 "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/linux-mm/20231028000945.2428830-2-shr@devkernel.io/ [1]
         - Link: https://lore.kernel.org/20260824061010.3343959-3-tujinjiang@huawei.com
-    - 91011cec8277 "selftests/mm: fix line buffer leak in mremap_test is_range_mapped()"
+    - c3d0bb137db6 "selftests/mm: fix line buffer leak in mremap_test is_range_mapped()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260826061300.14038-1-anshumantewari123@gmail.com
-    - a91028883b08 "selftests/mm: khugepaged: remove str_dup() usage"
+    - a78705baef12 "selftests/mm: khugepaged: remove str_dup() usage"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
       - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
-    - 4df189b9eb33 "selftests/mm: fix incorrect skip output in pkey_sighandler_tests"
+    - 87f76d06eb6d "selftests/mm: fix incorrect skip output in pkey_sighandler_tests"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825123023.64418-1-zenghui.yu@linux.dev
     - series "selftests/mm: TAP output and global-state fixes", v4. (3 commits)
-      - ae527ebd5df6 "selftests/mm: emit TAP header in uffd-wp-mremap" (0/3)
+      - aa81a2a96496 "selftests/mm: emit TAP header in uffd-wp-mremap" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825085756.63030-1-husong@kylinos.cn
         - Link: https://lore.kernel.org/20260825085756.63030-2-husong@kylinos.cn
-      - 3ab50c990c5d "selftests/mm: emit TAP header and use TAP skip in mremap_test" (1/3)
+      - 0bf4db44b56c "selftests/mm: emit TAP header and use TAP skip in mremap_test" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825085756.63030-3-husong@kylinos.cn
-      - 2f68c6754a0e "selftests/mm: restore enable_soft_offline in hugetlb-soft-offline" (2/3)
+      - 026093bcecac "selftests/mm: restore enable_soft_offline in hugetlb-soft-offline" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825085756.63030-4-husong@kylinos.cn
-    - ad02fc07ef49 "selftests/mm: fix soft-dirty kselftest supported check"
+      - 9db338af2d82 "tools/mm/page_owner_sort: add module name sort/cull/filter support" (1/3)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260819021611.2910835-3-ye.liu@linux.dev
+    - fd084ad0ecbf "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
+    - c5a124e1df05 "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
       - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com

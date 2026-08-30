@@ -7,18 +7,27 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 4 commits
-  - series: 0 (0) -> 1 (2)
+- mm-new: 4 -> 6 commits
+  - series: 1 (2) -> 1 (4)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 3 commits
+    - no role, reviewer: 3 -> 4 commits
+    - no role, maintainer: 0 -> 1 commits
   - new commits
-    - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2)
-      - a921d0b4ae0e "mm/page_isolation: fix UBSAN shift-out-of-bounds warning (0/2)"
+    - series "make unused huge shrinker memcg aware", v4. (4)
+      - c97883ffd8e4 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg (1/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
+    - 665163af43a4 "mm: adjust out-dated document of __GFP_NOFAIL"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
+    - series "mm: replace custom ratelimiting logic". (2)
+      - 6fb747e321c0 "mm/page_alloc: replace custom bad page ratelimiting logic (1/2)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
-      - 0b0c6d5c5e79 "mm/page_isolation: guard compound_order() against racing (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
+        - Link: https://lore.kernel.org/20260811172156.356053-3-pfalcato@suse.de
+  - dropped commits
+    - bd3e86ece407 "mm: remove out-dated document of __GFP_NOFAIL"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260827030548.16631-1-richard.weiyang@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

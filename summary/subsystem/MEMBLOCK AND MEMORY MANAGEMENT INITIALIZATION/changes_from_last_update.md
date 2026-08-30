@@ -7,25 +7,11 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 4 commits
-  - series: 0 (0) -> 0 (3)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - f662e89c5384 "mm/mm_init: remove zone_absent_pages_in_node()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260827144151.486192-1-ekffu200098@gmail.com
-    - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v5. (17)
-      - a9632f69cb73 "mm/mm_init: skip initializing shared vmemmap tail pages (2/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260825084608.47437-4-songmuchun@bytedance.com
-      - b3007bbdeeb8 "mm/mm_init: factor out pfn_to_zone() (5/17)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260825084608.47437-7-songmuchun@bytedance.com
-      - 81c780e47c97 "mm/sparse: initialize memory sections earlier (8/17)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260825084608.47437-10-songmuchun@bytedance.com
+- mm-new: 4 -> 4 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

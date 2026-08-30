@@ -6,18 +6,71 @@
     - 58e84116d657 "memcg: make the v1 soft limit knob inert"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - maintainer, reviewer: 1 commits
+  - full commits list
+    - c40a5c94ee42 "memcg: avoid charging the root memcg from obj_cgroup_charge_pages()"
+      - Authored by a maintainer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260829023251.474083-1-shakeel.butt@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
+- mm-new: 14 total, 3 (9) series, 5 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 2 commits
+    - no role, no role : 1 commits
+    - no role, maintainer: 6 commits
+    - maintainer, no role : 7 commits
   - full commits list
-    - 05138b4fd4b7 "mm/memcontrol: fix data-race on reading jiffies_64"
+    - c8b55d93cbd9 "mm/memcontrol: fix data-race on reading jiffies_64"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260827025457.116191-1-jiayuan.chen@linux.dev
-    - 25be15ea1b38 "mm/memcontrol: remove unused memcg parameter in calculate_high_delay()"
+    - 1514beba71bd "mm/memcontrol: remove unused memcg parameter in calculate_high_delay()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260825120153.1405-1-hongfu.li@linux.dev
+      - c97883ffd8e4 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (1/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
+    - 7963000ac77c "mm/memcontrol: fix stuck FLUSHING_CACHED_CHARGE bit on isolated cpus"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260828135036.7d44361f@fangorn
+    - b4b36c36e655 "memcg: clear FLUSHING_CACHED_CHARGE on cpu offline"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lore.kernel.org/20260828192419.3057939-1-shakeel.butt@linux.dev
+      - Link: https://sashiko.dev/#/patchset/20260828135036.7d44361f%40fangorn [1]
+    - series "mm/mglru: clean up folio counters and flag usage", v3. (6 commits)
+      - f785f3ac1466 "mm/memcontrol: make lru_zone_size atomic and simplify sanity check" (0/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-0-d9f1c75549c8@tencent.com
+        - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-1-d9f1c75549c8@tencent.com
+        - Link: https://lore.kernel.org/linux-mm/20260804-mglru-fg-v1-0-4d8dad39dad6@tencent.com/ [1]
+    - e28049489494 "memcg: trim the per-cpu charge stock instead of draining it"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lore.kernel.org/20260820012010.2016086-1-shakeel.butt@linux.dev
+    - series "memcg: remove the v1 soft limit". (8 commits)
+      - dd4606e0420c "memcg: remove v1 soft limit reclaim" (0/8)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260811203203.3456029-1-shakeel.butt@linux.dev
+        - Link: https://lore.kernel.org/20260811203203.3456029-3-shakeel.butt@linux.dev
+      - 60e2f87e47c3 "memcg: remove the soft limit rbtree" (3/8)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260811203203.3456029-6-shakeel.butt@linux.dev
+      - ec2733d0e7cf "memcg: remove the per-node soft limit tree fields" (5/8)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260811203203.3456029-8-shakeel.butt@linux.dev
+      - 677b6cd67580 "memcg: remove mem_cgroup->soft_limit" (6/8)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260811203203.3456029-9-shakeel.butt@linux.dev
+      - 68ba1dbc4e72 "memcg: simplify v1 event ratelimiting" (7/8)
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260811203203.3456029-10-shakeel.butt@linux.dev
+    - series "mm, memcg: fix memory.peak reset clobbering other fds' watermark", v4. (2 commits)
+      - abe9653bb13f "memcg: acquire peaks_lock when reading memory.peak" (0/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260830002044.1938621-1-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/20260830002044.1938621-2-ridong.chen@linux.dev
+        - Link: https://sashiko.dev/#/patchset/20260730115314.1069089-1-ridong.chen@linux.dev?part=1 [1]
+      - e776e5856727 "mm, memcg: fix memory.peak reset clobbering other fds' watermark" (1/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260830002044.1938621-3-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

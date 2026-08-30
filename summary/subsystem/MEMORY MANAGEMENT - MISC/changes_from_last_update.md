@@ -8,31 +8,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 5 -> 10 commits
-  - series: 1 (2) -> 2 (5)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 7 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+- mm-new: 10 -> 12 commits
+  - series: 2 (5) -> 2 (6)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 7 -> 7 commits (no change)
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - a91028883b08 "selftests/mm: khugepaged: remove str_dup() usage"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
-      - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
-    - 4df189b9eb33 "selftests/mm: fix incorrect skip output in pkey_sighandler_tests"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260825123023.64418-1-zenghui.yu@linux.dev
-    - series "selftests/mm: TAP output and global-state fixes", v4. (3)
-      - ae527ebd5df6 "selftests/mm: emit TAP header in uffd-wp-mremap (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260825085756.63030-1-husong@kylinos.cn
-        - Link: https://lore.kernel.org/20260825085756.63030-2-husong@kylinos.cn
-      - 3ab50c990c5d "selftests/mm: emit TAP header and use TAP skip in mremap_test (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260825085756.63030-3-husong@kylinos.cn
-      - 2f68c6754a0e "selftests/mm: restore enable_soft_offline in hugetlb-soft-offline (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260825085756.63030-4-husong@kylinos.cn
+    - series "tools/mm/page_owner_sort: fix --sort, add module filter, improve usage", v3. (3)
+      - 9db338af2d82 "tools/mm/page_owner_sort: add module name sort/cull/filter support (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260819021611.2910835-3-ye.liu@linux.dev
+    - fd084ad0ecbf "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

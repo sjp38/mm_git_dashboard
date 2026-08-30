@@ -9,22 +9,53 @@
     - bb287a9d130e "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
+    - reviewer, nobody: 1 commits
   - full commits list
-    - 6540596081b4 "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
-      - Authored by no role player, reviewed by nobody
+    - 911ebd8d14e1 "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
+      - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260827-hugepfn-allowable-orders-v1-1-94819c8807c8@kernel.org
+    - df5f736c4a5e "renames for Lorenzo's mm-huge_memory-bypass-thp-tuneables-for-huge-pfnmap-mappings patch"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/DL1HIHWYJ7TB.1CY76SJS0V03L@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 7 total, 2 (4) series, 3 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 3 commits
+    - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - a91028883b08 "selftests/mm: khugepaged: remove str_dup() usage"
+    - a78705baef12 "selftests/mm: khugepaged: remove str_dup() usage"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
       - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
+    - series "mm: khugepaged: fix tracepoint UAF", v4. (3 commits)
+      - 7c998338f86b "mm: khugepaged: fix swap entry value to folio_pfn()" (0/3)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260828055926.346744-1-vernon2gm@gmail.com
+        - Link: https://lore.kernel.org/20260828055926.346744-2-vernon2gm@gmail.com
+        - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
+      - 76c8900f0683 "mm: khugepaged: fix folio is used after pte_unmap_unlock()" (1/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260828055926.346744-3-vernon2gm@gmail.com
+        - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
+      - 0795af610a3b "mm: khugepaged: fix folio is used after folio_put/unlock()" (2/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260828055926.346744-4-vernon2gm@gmail.com
+    - 142623915d0e "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260828222640.1638457-1-jthoughton@google.com
+    - series "mm: reject zone device folios in more folio walkers", v2. (3 commits)
+      - 22fe58941133 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd()" (0/3)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260817220810.1175596-1-gourry@gourry.net
+        - Link: https://lore.kernel.org/20260817220810.1175596-2-gourry@gourry.net
+    - fd084ad0ecbf "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
