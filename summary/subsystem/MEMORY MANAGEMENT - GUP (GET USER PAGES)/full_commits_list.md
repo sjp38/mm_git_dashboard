@@ -1,13 +1,28 @@
-- baseline: v7.2-15455-g18fbf5151d2c0
+- baseline: v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 4 total, 1 (2) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 2 commits
   - full commits list
-    - 0c809687e477 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 2a7d69eec949 "mm/gup_test: report actual pinned bytes"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260831101304.162867-1-sarthak.sharma@arm.com
+    - series "mm: gup: cleanup gup_fast call chain", v3. (2 commits)
+      - 6bf8890ff370 "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260828015542.125576330@ruivo.org
+        - Link: https://lore.kernel.org/20260828015542.245315718@ruivo.org
+        - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u [1]
+        - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
+      - 4506db67b836 "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260828015542.334186653@ruivo.org
+        - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
+    - e076b4274ccb "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

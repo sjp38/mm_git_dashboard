@@ -1,61 +1,81 @@
-- baseline: v7.2-15455-g18fbf5151d2c0
+- baseline: v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 3512cac4aa7a "mm/secretmem: properly account locked pages"
+    - 0d171c47f2be "mm/secretmem: properly account locked pages"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260826-secretmem-accounting-v3-1-94cb04399510@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 12 total, 2 (6) series, 6 non-series commits
+- mm-unstable: 16 total, 3 (10) series, 6 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 7 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 8 commits
     - no role, reviewer: 2 commits
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 5 commits
   - full commits list
-    - be81196d3bfa "selftests/mm: remove the local PKEY_UNRESTRICTED fallback"
+    - abde5ad6a9e8 "selftests/mm: remove the local PKEY_UNRESTRICTED fallback"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825161715.2807297-1-hemanth.selam@gmail.com
     - series "docs/ksm: fix advisor documentation and comment", v3. (2 commits)
-      - 7ea69c37f9f7 "docs: ksm: fix typos in sysfs knob names" (0/2)
+      - 91cb1d54c6e1 "docs: ksm: fix typos in sysfs knob names" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260824061010.3343959-1-tujinjiang@huawei.com
         - Link: https://lore.kernel.org/20260824061010.3343959-2-tujinjiang@huawei.com
-      - 830da258bbc0 "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
+      - 5947862a9260 "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/linux-mm/20231028000945.2428830-2-shr@devkernel.io/ [1]
         - Link: https://lore.kernel.org/20260824061010.3343959-3-tujinjiang@huawei.com
-    - c3d0bb137db6 "selftests/mm: fix line buffer leak in mremap_test is_range_mapped()"
+    - 53c7f1dea387 "selftests/mm: fix line buffer leak in mremap_test is_range_mapped()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260826061300.14038-1-anshumantewari123@gmail.com
-    - a78705baef12 "selftests/mm: khugepaged: remove str_dup() usage"
+    - b61887e31a29 "selftests/mm: khugepaged: remove str_dup() usage"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
       - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
-    - 87f76d06eb6d "selftests/mm: fix incorrect skip output in pkey_sighandler_tests"
+    - 198f183cc7c3 "selftests/mm: fix incorrect skip output in pkey_sighandler_tests"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825123023.64418-1-zenghui.yu@linux.dev
     - series "selftests/mm: TAP output and global-state fixes", v4. (3 commits)
-      - aa81a2a96496 "selftests/mm: emit TAP header in uffd-wp-mremap" (0/3)
+      - 6395c98e786a "selftests/mm: emit TAP header in uffd-wp-mremap" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825085756.63030-1-husong@kylinos.cn
         - Link: https://lore.kernel.org/20260825085756.63030-2-husong@kylinos.cn
-      - 0bf4db44b56c "selftests/mm: emit TAP header and use TAP skip in mremap_test" (1/3)
+      - 4a0df66449c6 "selftests/mm: emit TAP header and use TAP skip in mremap_test" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825085756.63030-3-husong@kylinos.cn
-      - 026093bcecac "selftests/mm: restore enable_soft_offline in hugetlb-soft-offline" (2/3)
+      - b53c2e5d255a "selftests/mm: restore enable_soft_offline in hugetlb-soft-offline" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825085756.63030-4-husong@kylinos.cn
-      - 9db338af2d82 "tools/mm/page_owner_sort: add module name sort/cull/filter support" (1/3)
+      - d69c1a45f178 "tools/mm/page_owner_sort: add module name sort/cull/filter support" (1/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260819021611.2910835-3-ye.liu@linux.dev
-    - fd084ad0ecbf "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
+    - 10a632e82312 "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
-    - c5a124e1df05 "selftests/mm: fix soft-dirty kselftest supported check"
+    - 88bdedcbf43e "tools/testing/selftests/mm: add missing .gitignore entries"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260831-fix-mm-selftests-gitignore-v1-1-c984bbd4c5e4@kernel.org
+    - series "docs/mm/damon/design: add explanation of nr_snapshots", v3. (3 commits)
+      - f722f4fedce6 "docs/mm/damon/design: accurate semantics of nr_snapshots" (0/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260831150227.83416-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260831150227.83416-2-sj@kernel.org
+      - b2d8fcb8b36d "docs/mm/damon/design: difference between watermarks and nr_snapshots" (1/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260831150227.83416-3-sj@kernel.org
+      - 9d3d3356faf0 "docs/mm/damon/design: fix typo of max_nr_snapshots" (2/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260831150227.83416-4-sj@kernel.org
+      - cf76fb0e3f19 "Docs/mm/damon/design: cocument hugepage_mem_bp target metric" (2/3)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260831144732.80910-4-sj@kernel.org
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - 5fec54b927bd "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
       - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
       - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com

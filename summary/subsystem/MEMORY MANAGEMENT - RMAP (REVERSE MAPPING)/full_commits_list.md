@@ -1,16 +1,22 @@
-- baseline: v7.2-15455-g18fbf5151d2c0
+- baseline: v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 1 (1) series, 0 non-series commits
+- mm-unstable: 1 total, 1 (1) series, 0 non-series commits
   - author/reviewer role stat
     - maintainer, no role : 1 commits
   - full commits list
-    - series "mm: Unconditional per-VMA locks and cleanups", v6. (5 commits)
-      - 605c2a7b7cad "mm: make per-VMA locks available universally" (0/5)
+    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
+      - 73f1e51be22d "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260813193433.3318288-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260813193433.3318288-2-surenb@google.com
+        - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - c584a45b3d19 "mm/rmap: remove stale hugetlb check in try_to_unmap_one"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260831082849.3573957-1-dev.jain@arm.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

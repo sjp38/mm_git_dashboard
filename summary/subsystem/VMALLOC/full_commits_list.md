@@ -1,32 +1,32 @@
-- baseline: v7.2-15455-g18fbf5151d2c0
+- baseline: v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 6 total, 1 (4) series, 2 non-series commits
+- mm-unstable: 6 total, 1 (4) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 4 commits
   - full commits list
-    - f9a906cb4c1c "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - 89710135f10a "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
     - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v2. (6 commits)
-      - 7b08fbb21909 "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
+      - a31a4988ca3e "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-1-b013a37d84b3@kernel.org
         - Link: https://lore.kernel.org/all/20260611130144.1385343-4-abarnas@google.com [1]
-      - 39802d5a5be7 "mm/vmalloc: set area's page_order after allocation succeeds" (1/6)
+      - 260a842ef77d "mm/vmalloc: set area's page_order after allocation succeeds" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-2-b013a37d84b3@kernel.org
-      - 70190897a71d "mm/vmalloc: constify vm parameter of get_vm_area_page_order()" (2/6)
+      - 9c1d0acfbd76 "mm/vmalloc: constify vm parameter of get_vm_area_page_order()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-3-b013a37d84b3@kernel.org
-      - 9133d84194e3 "mm/vmalloc: make set_area_direct_map HUGE_VMAP friendly" (3/6)
+      - fa14c25bc365 "mm/vmalloc: make set_area_direct_map HUGE_VMAP friendly" (3/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-4-b013a37d84b3@kernel.org
-    - 17924d1f509f "mm: vmalloc: fix vmap_purge_lock livelock under memory pressure"
+    - 727cfcd7a9f3 "mm: vmalloc: fix vmap_purge_lock livelock under memory pressure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260828091753.299295-1-ye.liu@linux.dev
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,4 +1,4 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
+- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
@@ -6,27 +6,45 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 3 commits
+- mm-unstable: 0 -> 3 commits
   - series: 0 (0) -> 2 (3)
     - no role, no role : 0 -> 1 commits
     - no role, maintainer: 0 -> 1 commits
     - maintainer, no role : 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "mm, swap: don't spin on a bad swap entry", v3. (2)
-      - aea73d9ee6bd "mm, swap: distinguish a malformed swap entry from a dying device (0/2)"
+      - 588dbb3427aa "mm, swap: distinguish a malformed swap entry from a dying device (0/2)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
-    - series "mm: Unconditional per-VMA locks and cleanups", v6. (5)
-      - 605c2a7b7cad "mm: make per-VMA locks available universally (0/5)"
+    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
+      - 73f1e51be22d "mm: make per-VMA locks available universally (0/7)"
         - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260813193433.3318288-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260813193433.3318288-2-surenb@google.com
-      - df3fccbcebf9 "mm: add RCU-based VMA lookup helper that waits for writers (2/5)"
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com"
+        - added "Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com"
+        - added "Cc: Liam R. Howlett <Liam.Howlett@oracle.com>"
+        - dropped "Link: https://lore.kernel.org/20260813193433.3318288-1-surenb@google.com"
+        - dropped "Link: https://lore.kernel.org/20260813193433.3318288-2-surenb@google.com"
+        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
+      - b08d0ef5b52f "mm: add RCU-based VMA lookup helper that waits for writers (2/7)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260813193433.3318288-4-surenb@google.com
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com"
+        - added "Cc: Liam R. Howlett <Liam.Howlett@oracle.com>"
+        - dropped "Link: https://lore.kernel.org/20260813193433.3318288-4-surenb@google.com"
+        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com
+- mm-new: 3 -> 0 commits
+  - series: 2 (3) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

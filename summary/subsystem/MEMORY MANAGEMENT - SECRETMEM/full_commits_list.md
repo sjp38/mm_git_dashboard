@@ -1,22 +1,22 @@
-- baseline: v7.2-15455-g18fbf5151d2c0
+- baseline: v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 3512cac4aa7a "mm/secretmem: properly account locked pages"
+    - 0d171c47f2be "mm/secretmem: properly account locked pages"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260826-secretmem-accounting-v3-1-94cb04399510@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 1 (1) series, 0 non-series commits
+- mm-unstable: 1 total, 1 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
     - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v2. (6 commits)
-      - 7b08fbb21909 "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
+      - a31a4988ca3e "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-1-b013a37d84b3@kernel.org
         - Link: https://lore.kernel.org/all/20260611130144.1385343-4-abarnas@google.com [1]
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

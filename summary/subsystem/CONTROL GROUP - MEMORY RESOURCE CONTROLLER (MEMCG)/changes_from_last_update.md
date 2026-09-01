@@ -1,70 +1,111 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
+- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, reviewer: 0 -> 1 commits
-  - new commits
-    - c40a5c94ee42 "memcg: avoid charging the root memcg from obj_cgroup_charge_pages()"
-      - Authored by a maintainer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260829023251.474083-1-shakeel.butt@linux.dev
+    - maintainer, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 2 -> 14 commits
-  - series: 0 (0) -> 3 (9)
+- mm-unstable: 0 -> 15 commits
+  - series: 0 (0) -> 4 (10)
     - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 2 -> 6 commits
+    - no role, maintainer: 0 -> 7 commits
     - maintainer, no role : 0 -> 7 commits
   - new commits
-    - series "make unused huge shrinker memcg aware", v4. (4)
-      - c97883ffd8e4 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg (1/4)"
+    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
+      - c795a25f10a7 "mm: memcontrol: raise MEMCG_MAX for charges that fail without reclaiming (5/7)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - 7963000ac77c "mm/memcontrol: fix stuck FLUSHING_CACHED_CHARGE bit on isolated cpus"
+        - Link: https://lore.kernel.org/20260831174836.3102406-1-joe@dama.to
+  - changed commits
+    - cfb35f9e8f4b "mm/memcontrol: fix data-race on reading jiffies_64"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260827025457.116191-1-jiayuan.chen@linux.dev
+    - 95c36e2772e9 "mm/memcontrol: remove unused memcg parameter in calculate_high_delay()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260825120153.1405-1-hongfu.li@linux.dev
+    - series "make unused huge shrinker memcg aware", v4. (3)
+      - 74f2b17009be "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com"
+        - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
+        - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
+    - 0db377db77ea "mm/memcontrol: fix stuck FLUSHING_CACHED_CHARGE bit on isolated cpus"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
       - Link: https://lore.kernel.org/20260828135036.7d44361f@fangorn
-    - b4b36c36e655 "memcg: clear FLUSHING_CACHED_CHARGE on cpu offline"
+    - 52223d095246 "memcg: clear FLUSHING_CACHED_CHARGE on cpu offline"
       - Authored by a maintainer, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Acked-by: Michal Hocko <mhocko@suse.com>"
       - Link: https://lore.kernel.org/20260828192419.3057939-1-shakeel.butt@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260828135036.7d44361f%40fangorn [1]
     - series "mm/mglru: clean up folio counters and flag usage", v3. (6)
-      - f785f3ac1466 "mm/memcontrol: make lru_zone_size atomic and simplify sanity check (0/6)"
+      - e0701984a588 "mm/memcontrol: make lru_zone_size atomic and simplify sanity check (0/6)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-0-d9f1c75549c8@tencent.com
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-1-d9f1c75549c8@tencent.com
         - Link: https://lore.kernel.org/linux-mm/20260804-mglru-fg-v1-0-4d8dad39dad6@tencent.com/ [1]
-    - e28049489494 "memcg: trim the per-cpu charge stock instead of draining it"
+    - ac4fa637995e "memcg: trim the per-cpu charge stock instead of draining it"
       - Authored by a maintainer, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260820012010.2016086-1-shakeel.butt@linux.dev
     - series "memcg: remove the v1 soft limit". (8)
-      - dd4606e0420c "memcg: remove v1 soft limit reclaim (0/8)"
+      - 7190f758907f "memcg: remove v1 soft limit reclaim (0/8)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260811203203.3456029-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260811203203.3456029-3-shakeel.butt@linux.dev
-      - 60e2f87e47c3 "memcg: remove the soft limit rbtree (3/8)"
+      - bbbc1ffbce86 "memcg: remove the soft limit rbtree (3/8)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260811203203.3456029-6-shakeel.butt@linux.dev
-      - ec2733d0e7cf "memcg: remove the per-node soft limit tree fields (5/8)"
+      - 031ef69a6285 "memcg: remove the per-node soft limit tree fields (5/8)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260811203203.3456029-8-shakeel.butt@linux.dev
-      - 677b6cd67580 "memcg: remove mem_cgroup->soft_limit (6/8)"
+      - c0a1154a0f6d "memcg: remove mem_cgroup->soft_limit (6/8)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260811203203.3456029-9-shakeel.butt@linux.dev
-      - 68ba1dbc4e72 "memcg: simplify v1 event ratelimiting (7/8)"
+      - 78fff7d359d9 "memcg: simplify v1 event ratelimiting (7/8)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260811203203.3456029-10-shakeel.butt@linux.dev
     - series "mm, memcg: fix memory.peak reset clobbering other fds' watermark", v4. (2)
-      - abe9653bb13f "memcg: acquire peaks_lock when reading memory.peak (0/2)"
+      - 39d784021e33 "memcg: acquire peaks_lock when reading memory.peak (0/2)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260830002044.1938621-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260830002044.1938621-2-ridong.chen@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260730115314.1069089-1-ridong.chen@linux.dev?part=1 [1]
-      - e776e5856727 "mm, memcg: fix memory.peak reset clobbering other fds' watermark (1/2)"
+      - f982ad4f57cf "mm, memcg: fix memory.peak reset clobbering other fds' watermark (1/2)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260830002044.1938621-3-ridong.chen@linux.dev
+- mm-new: 14 -> 3 commits
+  - series: 3 (9) -> 1 (2)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 6 -> 0 commits
+    - maintainer, no role : 7 -> 1 commits
+  - new commits
+    - 2eff409e54d7 "memcg: don't call schedule_work when no spinning is allowed"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260831234339.280376-1-stevensd@google.com
+    - series "mm: avoid large folio splits when swap is unavailable", v7. (4)
+      - e20d79bfb9b4 "mm: add page_counter_margin() (0/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260830042920.2280454-1-xueyuan.chen21@gmail.com
+        - Link: https://lore.kernel.org/20260830042920.2280454-2-xueyuan.chen21@gmail.com
+      - 3ae831e0337e "mm: distinguish large folio swap allocation failures (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260830042920.2280454-3-xueyuan.chen21@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

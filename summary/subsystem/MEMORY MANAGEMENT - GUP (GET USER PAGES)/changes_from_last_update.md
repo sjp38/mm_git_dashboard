@@ -1,4 +1,4 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
+- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -7,9 +7,25 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-new: 1 -> 4 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 1 -> 2 commits
+  - new commits
+    - 2a7d69eec949 "mm/gup_test: report actual pinned bytes"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260831101304.162867-1-sarthak.sharma@arm.com
+    - series "mm: gup: cleanup gup_fast call chain", v3. (2)
+      - 6bf8890ff370 "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf() (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260828015542.125576330@ruivo.org
+        - Link: https://lore.kernel.org/20260828015542.245315718@ruivo.org
+        - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u [1]
+        - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
+      - 4506db67b836 "mm: gup: cleanup the gup_fast_*() call chain (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260828015542.334186653@ruivo.org
+        - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,61 +1,76 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
+- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, reviewer: 0 -> 1 commits
-    - reviewer, nobody: 0 -> 1 commits
-  - new commits
-    - df5f736c4a5e "renames for Lorenzo's mm-huge_memory-bypass-thp-tuneables-for-huge-pfnmap-mappings patch"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/DL1HIHWYJ7TB.1CY76SJS0V03L@nvidia.com
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - 911ebd8d14e1 "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
+    - 326139fa5b2c "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
       - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-      - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
-      - added "Tested-by: Saravanan D <saravanand@crusoe.ai>"
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
       - Link: https://lore.kernel.org/20260827-hugepfn-allowable-orders-v1-1-94819c8807c8@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 7 commits
+- mm-unstable: 0 -> 7 commits
   - series: 0 (0) -> 2 (4)
     - no role, nobody: 0 -> 2 commits
     - no role, no role : 0 -> 3 commits
     - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - b61887e31a29 "selftests/mm: khugepaged: remove str_dup() usage"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
+      - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
     - series "mm: khugepaged: fix tracepoint UAF", v4. (3)
-      - 7c998338f86b "mm: khugepaged: fix swap entry value to folio_pfn() (0/3)"
+      - 54d43719e3fc "mm: khugepaged: fix swap entry value to folio_pfn() (0/3)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260828055926.346744-1-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/20260828055926.346744-2-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
-      - 76c8900f0683 "mm: khugepaged: fix folio is used after pte_unmap_unlock() (1/3)"
+      - a469ddfbd4df "mm: khugepaged: fix folio is used after pte_unmap_unlock() (1/3)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260828055926.346744-3-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
-      - 0795af610a3b "mm: khugepaged: fix folio is used after folio_put/unlock() (2/3)"
+      - 4c09c564cf95 "mm: khugepaged: fix folio is used after folio_put/unlock() (2/3)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260828055926.346744-4-vernon2gm@gmail.com
-    - 142623915d0e "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
+    - 0f6b8ac4b481 "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
       - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260828222640.1638457-1-jthoughton@google.com
     - series "mm: reject zone device folios in more folio walkers", v2. (3)
-      - 22fe58941133 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd() (0/3)"
+      - c82f3fcbeddb "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd() (0/3)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260817220810.1175596-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260817220810.1175596-2-gourry@gourry.net
-    - fd084ad0ecbf "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
+    - 10a632e82312 "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
       - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
+- mm-new: 7 -> 2 commits
+  - series: 2 (4) -> 1 (2)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 3 -> 0 commits
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - series "Fix deferred_split_isolate() and drop the split workaround", v2. (2)
+      - ec0bddc19761 "mm/huge_memory: do not touch frozen folios in deferred_split_isolate() (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260831091514.1879786-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260831091514.1879786-2-kirill@shutemov.name
+      - ecee6cc2bac8 "mm/huge_memory: dequeue the deferred split after the split freeze (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260831091514.1879786-3-kirill@shutemov.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

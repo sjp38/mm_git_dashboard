@@ -1,4 +1,4 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
+- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
@@ -6,16 +6,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
+- mm-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (1)
     - no role, no role : 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "mm: reject zone device folios in more folio walkers", v2. (3)
-      - db63bd6f606d "mm/madvise: skip zone device folios in cold/pageout PMD range (1/3)"
+      - 79030e0da49b "mm/madvise: skip zone device folios in cold/pageout PMD range (1/3)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260817220810.1175596-3-gourry@gourry.net
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

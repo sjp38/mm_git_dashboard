@@ -1,22 +1,25 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
+- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 2 commits
+- mm-unstable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 0 -> 2 commits
-  - new commits
-    - 6884a46702ba "mm/oom_kill: remove unreachable __GFP_THISNODE check in constrained_alloc()"
+  - changed commits
+    - 82e20cee9428 "mm/oom_kill: remove unreachable __GFP_THISNODE check in constrained_alloc()"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260813093810.573302-1-ye.liu@linux.dev
-    - 6e626a06cd6f "mm/oom_kill, proc: replace magic number 1000 with OOM_SCORE_ADJ_MAX"
+    - 516f2910d79d "mm/oom_kill, proc: replace magic number 1000 with OOM_SCORE_ADJ_MAX"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260811033609.3992348-1-ye.liu@linux.dev
+- mm-new: 2 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

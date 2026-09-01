@@ -1,12 +1,10 @@
-- baseline: v7.2-15455-g18fbf5151d2c0
+- baseline: v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 18 total, 3 (16) series, 2 non-series commits
+- mm-unstable: 18 total, 3 (16) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 2 commits
+    - no role, no role : 4 commits
     - no role, reviewer: 5 commits
     - no role, maintainer: 1 commits
     - reviewer, nobody: 1 commits
@@ -14,65 +12,74 @@
     - reviewer, reviewer: 4 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - 7b9bb2241b09 "mm/vmscan: drop the combined limit gate in __node_reclaim()"
+    - 671521c4fa0d "mm/vmscan: drop the combined limit gate in __node_reclaim()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260826124409.35569-1-ridong.chen@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260723045718.2052070-1-ridong.chen@linux.dev [1]
-    - 66adf249edc9 "mm/mglru: preserve inactive placement when enabling MGLRU"
+    - 893f78beb047 "mm/mglru: preserve inactive placement when enabling MGLRU"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260821021606.877330-1-ridong.chen@linux.dev
     - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v5. (17 commits)
-      - 9a40d1f17dc4 "mm/sparse: relax struct mem_section size constraints" (0/17)
+      - f0cec22d9d11 "mm/sparse: relax struct mem_section size constraints" (0/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260825084608.47437-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/linux-mm/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - 5ed112eabe18 "mm/sparse-vmemmap: rename HVO order macros" (1/17)
+      - 57c2f1044bb0 "mm/sparse-vmemmap: rename HVO order macros" (1/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825084608.47437-3-songmuchun@bytedance.com
-      - d6a909b08305 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+      - 606534c596e8 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825084608.47437-4-songmuchun@bytedance.com
-      - 9a15cbb59026 "mm/sparse-vmemmap: support section-based vmemmap accounting" (4/17)
+      - 80a21f74970d "mm/sparse-vmemmap: support section-based vmemmap accounting" (4/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825084608.47437-6-songmuchun@bytedance.com
-      - 34b42a3319e8 "mm/sparse-vmemmap: remove SPARSEMEM_VMEMMAP_PREINIT support" (10/17)
+      - 90255107ed7a "mm/sparse-vmemmap: remove SPARSEMEM_VMEMMAP_PREINIT support" (10/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825084608.47437-12-songmuchun@bytedance.com
-      - b6cbcdf74472 "mm/sparse: inline usemap allocation into sparse_init_nid()" (11/17)
+      - 8a9c3f35c2ee "mm/sparse: inline usemap allocation into sparse_init_nid()" (11/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-13-songmuchun@bytedance.com
-      - fad6a5b3c7f9 "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
+      - ef75882b4fd3 "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-2-d9f1c75549c8@tencent.com
-      - dd6815bc174f "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
+      - 688ef52bda68 "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-3-d9f1c75549c8@tencent.com
-      - 2d172e004b2d "mm/mglru: move max_seq read into walk_update_folio" (3/6)
+      - 70f6045d5a3b "mm/mglru: move max_seq read into walk_update_folio" (3/6)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-4-d9f1c75549c8@tencent.com
-      - a81a6a1cb695 "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
+      - bcf9583a78fd "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-5-d9f1c75549c8@tencent.com
-      - 6842e0a418eb "mm/mglru: fix potential generation folio number leak" (5/6)
+      - 961e5fd4df91 "mm/mglru: fix potential generation folio number leak" (5/6)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-6-d9f1c75549c8@tencent.com
     - series "memcg: remove the v1 soft limit". (8 commits)
-      - dd4606e0420c "memcg: remove v1 soft limit reclaim" (0/8)
+      - 7190f758907f "memcg: remove v1 soft limit reclaim" (0/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260811203203.3456029-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260811203203.3456029-3-shakeel.butt@linux.dev
-      - 52e948d30eb0 "memcg: remove mem_cgroup_shrink_node()" (1/8)
+      - 06d706ac6035 "memcg: remove mem_cgroup_shrink_node()" (1/8)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811203203.3456029-4-shakeel.butt@linux.dev
-      - 39fb4170345a "memcg: remove lru_gen_soft_reclaim()" (4/8)
+      - 9110c9427c96 "memcg: remove lru_gen_soft_reclaim()" (4/8)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260811203203.3456029-7-shakeel.butt@linux.dev
     - series "mm/mglru: clean up isolate_folios for readability and clarity", v2. (2 commits)
-      - 732c601249d0 "mm/mglru: make type fallback logic explicit in isolate_folios()" (0/2)
-        - Authored by no role player, reviewed by nobody
-      - 9ec95803c494 "mm/mglru: make retry logic explicit in isolate_folios()" (1/2)
-        - Authored by no role player, reviewed by nobody
+      - 97a451b8cad7 "mm/mglru: make type fallback logic explicit in isolate_folios()" (0/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260829074204.45304-1-baohua@kernel.org
+        - Link: https://lore.kernel.org/20260829074204.45304-2-baohua@kernel.org
+      - 7fd3ca3312cb "mm/mglru: make retry logic explicit in isolate_folios()" (1/2)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829074204.45304-3-baohua@kernel.org
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+      - 8782d00468ed "mm/vmscan: avoid pointless large folio splits without swap" (2/4)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260830042920.2280454-4-xueyuan.chen21@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,25 +1,39 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
+- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 2 commits
+- mm-unstable: 0 -> 2 commits
   - series: 0 (0) -> 1 (2)
     - no role, maintainer: 0 -> 1 commits
     - maintainer, no role : 0 -> 1 commits
-  - new commits
-    - series "mm: Unconditional per-VMA locks and cleanups", v6. (5)
-      - 605c2a7b7cad "mm: make per-VMA locks available universally (0/5)"
+  - changed commits
+    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
+      - 73f1e51be22d "mm: make per-VMA locks available universally (0/7)"
         - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260813193433.3318288-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260813193433.3318288-2-surenb@google.com
-      - f493e1e2a463 "binder: remove mmap_lock fallback (3/5)"
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com"
+        - added "Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com"
+        - added "Cc: Liam R. Howlett <Liam.Howlett@oracle.com>"
+        - dropped "Link: https://lore.kernel.org/20260813193433.3318288-2-surenb@google.com"
+        - dropped "Link: https://lore.kernel.org/20260813193433.3318288-1-surenb@google.com"
+        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
+      - b6073da9824e "binder: remove mmap_lock fallback (3/7)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260813193433.3318288-5-surenb@google.com
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260831203056.838265-5-surenb@google.com"
+        - added "Cc: Liam R. Howlett <Liam.Howlett@oracle.com>"
+        - dropped "Link: https://lore.kernel.org/20260813193433.3318288-5-surenb@google.com"
+        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+        - Link: https://lore.kernel.org/20260831203056.838265-5-surenb@google.com
+- mm-new: 2 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

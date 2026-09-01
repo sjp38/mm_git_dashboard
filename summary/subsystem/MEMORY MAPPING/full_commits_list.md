@@ -1,32 +1,32 @@
-- baseline: v7.2-15455-g18fbf5151d2c0
+- baseline: v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - e80f0b61a71d "mm/mremap: reset unfaulted VMA page offset for MREMAP_DONTUNMAP"
+    - 86775074ca56 "mm/mremap: reset unfaulted VMA page offset for MREMAP_DONTUNMAP"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260825-fix-mremap-dontunmap-pgoff-v1-1-39a40b2c98b3@kernel.org
-    - df4929cda928 "mm/mremap: account mm->locked_vm correctly for MREMAP_DONTUNMAP"
+    - 1092fdc1b999 "mm/mremap: account mm->locked_vm correctly for MREMAP_DONTUNMAP"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260828-mremap-fix-locked-vm-v1-1-c80be7505d1e@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 2 total, 2 (2) series, 0 non-series commits
+- mm-unstable: 2 total, 2 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - aea73d9ee6bd "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - 588dbb3427aa "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
-    - series "mm: Unconditional per-VMA locks and cleanups", v6. (5 commits)
-      - 605c2a7b7cad "mm: make per-VMA locks available universally" (0/5)
+    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
+      - 73f1e51be22d "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260813193433.3318288-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260813193433.3318288-2-surenb@google.com
+        - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

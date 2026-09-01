@@ -1,4 +1,4 @@
-- baseline: v7.2-15455-g18fbf5151d2c0
+- baseline: v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
@@ -12,30 +12,30 @@
       - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 5 total, 1 (4) series, 1 non-series commits
+- mm-unstable: 5 total, 1 (4) series, 1 non-series commits
   - author/reviewer role stat
     - reviewer, nobody: 3 commits
     - reviewer, no role : 1 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - 8852934b3e9b "mm/mempolicy: take a cpuset cookie for the interleave node count"
+    - e5bb83193a8d "mm/mempolicy: take a cpuset cookie for the interleave node count"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/20260828193111.1023497-1-gourry@gourry.net
       - Link: https://lore.kernel.org/all/20250907160829.91628-1-chelsyratnawat2001@gmail.com/
-      - dd6815bc174f "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
+      - 688ef52bda68 "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-3-d9f1c75549c8@tencent.com
     - series "mm/mempolicy: stop copying state in the interleave paths". (2 commits)
-      - 2090921eadad "mm/mempolicy: use SRCU for the weighted interleave state" (0/2)
+      - 5da38ed98808 "mm/mempolicy: use SRCU for the weighted interleave state" (0/2)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260829015943.1258774-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260829015943.1258774-2-gourry@gourry.net
-      - aa3cae5c8049 "mm/mempolicy: stop copying the nodemask in the interleave paths" (1/2)
+      - c8a158af00a7 "mm/mempolicy: stop copying the nodemask in the interleave paths" (1/2)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260829015943.1258774-3-gourry@gourry.net
-      - 54c79af8b2a5 "mm/mempolicy: skip zone device folios when queueing folios" (2/3)
+      - 3f28908b93ba "mm/mempolicy: skip zone device folios when queueing folios" (2/3)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-4-gourry@gourry.net
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

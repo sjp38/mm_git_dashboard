@@ -1,20 +1,20 @@
-- baseline: v7.2-15455-g18fbf5151d2c0
+- baseline: v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 2 total, 1 (2) series, 0 non-series commits
+- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - series "mm: Unconditional per-VMA locks and cleanups", v6. (5 commits)
-      - 605c2a7b7cad "mm: make per-VMA locks available universally" (0/5)
+    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
+      - 73f1e51be22d "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260813193433.3318288-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260813193433.3318288-2-surenb@google.com
-      - df3fccbcebf9 "mm: add RCU-based VMA lookup helper that waits for writers" (2/5)
+        - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
+      - b08d0ef5b52f "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260813193433.3318288-4-surenb@google.com
+        - Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

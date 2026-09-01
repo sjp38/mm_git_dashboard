@@ -1,33 +1,55 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.2-15455-g18fbf5151d2c0 (no change)
+- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 4 -> 6 commits
-  - series: 1 (2) -> 1 (4)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 3 -> 4 commits
+- mm-unstable: 0 -> 6 commits
+  - series: 0 (0) -> 2 (4)
+    - no role, reviewer: 0 -> 5 commits
     - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - series "make unused huge shrinker memcg aware", v4. (4)
-      - c97883ffd8e4 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg (1/4)"
+  - changed commits
+    - 224361f42ae4 "mm: drop stale MAX_ORDER references"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
+    - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2)
+      - fd1d626a8ef1 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
+      - 644c3e9fab98 "mm/page_isolation: guard compound_order() against racing (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
+    - series "make unused huge shrinker memcg aware", v4. (3)
+      - 74f2b17009be "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg (0/3)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com"
+        - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - 665163af43a4 "mm: adjust out-dated document of __GFP_NOFAIL"
-      - Authored by no role player, reviewed by nobody
+    - 881eb813bb59 "mm: adjust out-dated document of __GFP_NOFAIL"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
       - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
     - series "mm: replace custom ratelimiting logic". (2)
-      - 6fb747e321c0 "mm/page_alloc: replace custom bad page ratelimiting logic (1/2)"
+      - 88569f09a6a8 "mm/page_alloc: replace custom bad page ratelimiting logic (1/2)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260811172156.356053-3-pfalcato@suse.de
-  - dropped commits
-    - bd3e86ece407 "mm: remove out-dated document of __GFP_NOFAIL"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260827030548.16631-1-richard.weiyang@gmail.com
+- mm-new: 6 -> 0 commits
+  - series: 1 (4) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 4 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

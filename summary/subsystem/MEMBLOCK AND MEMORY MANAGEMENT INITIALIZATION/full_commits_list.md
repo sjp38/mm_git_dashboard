@@ -1,25 +1,37 @@
-- baseline: v7.2-15455-g18fbf5151d2c0
+- baseline: v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 4 total, 0 (3) series, 1 non-series commits
+- mm-unstable: 7 total, 1 (7) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 2 commits
+    - no role, nobody: 3 commits
+    - no role, no role : 3 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 594f7030cc8f "mm/mm_init: remove zone_absent_pages_in_node()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260827144151.486192-1-ekffu200098@gmail.com
-      - d6a909b08305 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+      - 606534c596e8 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825084608.47437-4-songmuchun@bytedance.com
-      - 84bedec7b595 "mm/mm_init: factor out pfn_to_zone()" (5/17)
+      - a2a5ce19a218 "mm/mm_init: factor out pfn_to_zone()" (5/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-7-songmuchun@bytedance.com
-      - c2127e0eaf7e "mm/sparse: initialize memory sections earlier" (8/17)
+      - 21364a00dfff "mm/sparse: initialize memory sections earlier" (8/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-10-songmuchun@bytedance.com
+    - series "mm: optimize zone-device memmap initialization", v11. (7 commits)
+      - 768b10551138 "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260831111638.76012-1-lizhe.67@bytedance.com
+        - Link: https://lore.kernel.org/20260831111638.76012-2-lizhe.67@bytedance.com
+        - Link: https://lore.kernel.org/all/aiEoByaQdRR3xtM5@nvdebian.thelocal/ [1]
+      - 37ecdabf5c81 "mm: add a template-based fast path for zone-device page init" (2/7)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260831111638.76012-4-lizhe.67@bytedance.com
+      - 1faa297c19fa "mm: extend the template fast path to zone-device compound tails" (3/7)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260831111638.76012-5-lizhe.67@bytedance.com
+      - 62a093d77ca4 "mm: use memcpy_nontemporal() in zone-device template copies" (5/7)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260831111638.76012-7-lizhe.67@bytedance.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
