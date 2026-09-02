@@ -7,10 +7,10 @@
   - author/reviewer role stat
     - no role, nobody: 2 commits
   - full commits list
-    - 41408a46a869 "mm/page_table_check: add explicit pmd_none check in pte_clear_range"
+    - b7cc4ff575a8 "mm/page_table_check: add explicit pmd_none check in pte_clear_range"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260819025516.2967199-1-ye.liu@linux.dev
-    - eac2ff318087 "mm/page_table_check: skip zero pages"
+    - 4b6558c65fdd "mm/page_table_check: skip zero pages"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/1f8848512d2e3ded944f8d595c29faee8fdaeab0.1784645969.git.roxy520tt@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

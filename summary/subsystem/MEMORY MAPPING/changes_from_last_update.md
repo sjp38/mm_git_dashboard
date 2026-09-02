@@ -1,47 +1,30 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 1092fdc1b999 "mm/mremap: account mm->locked_vm correctly for MREMAP_DONTUNMAP"
+  - new commits
+    - 18cd757c73db "mm/mlock: use the IRQ-safe accessor for NR_MLOCK in __munlock_folio()"
       - Authored by no role player, reviewed by no role player
-      - added "Tested-by: Kunwu Chan <kunwu.chan@gmail.com>"
-      - added "Reviewed-by: Kunwu Chan <kunwu.chan@gmail.com>"
-      - dropped "Tested-by:  Kunwu Chan <kunwu.chan@gmail.com>"
-      - dropped "Reviewed-by:  Kunwu Chan <kunwu.chan@gmail.com>"
-      - Link: https://lore.kernel.org/20260828-mremap-fix-locked-vm-v1-1-c80be7505d1e@kernel.org
+      - Link: https://lore.kernel.org/20260901180109.3797944-1-shakeel.butt@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 2 commits
-  - series: 0 (0) -> 2 (2)
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, no role : 0 -> 1 commits
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 2 (2) -> 2 (2) (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - series "mm, swap: don't spin on a bad swap entry", v3. (2)
-      - 588dbb3427aa "mm, swap: distinguish a malformed swap entry from a dying device (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
-        - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
-      - 73f1e51be22d "mm: make per-VMA locks available universally (0/7)"
+      - 2f91ae1c6a63 "mm: make per-VMA locks available universally (0/7)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com"
-        - added "Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com"
-        - added "Cc: Liam R. Howlett <Liam.Howlett@oracle.com>"
-        - dropped "Link: https://lore.kernel.org/20260813193433.3318288-2-surenb@google.com"
-        - dropped "Link: https://lore.kernel.org/20260813193433.3318288-1-surenb@google.com"
-        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+        - added "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam R. Howlett <Liam.Howlett@oracle.com>"
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-- mm-new: 2 -> 0 commits
-  - series: 2 (2) -> 0 (0)
-    - no role, maintainer: 1 -> 0 commits
-    - maintainer, no role : 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

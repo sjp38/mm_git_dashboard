@@ -3,95 +3,85 @@
   - author/reviewer role stat
     - maintainer, no role : 1 commits
   - full commits list
-    - 58e84116d657 "memcg: make the v1 soft limit knob inert"
+    - a3417097fb10 "memcg: make the v1 soft limit knob inert"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - maintainer, reviewer: 1 commits
+    - maintainer, maintainer: 1 commits
   - full commits list
-    - ab426a5cfcc3 "memcg: avoid charging the root memcg from obj_cgroup_charge_pages()"
-      - Authored by a maintainer, reviewed by a reviewer
+    - 8a2368f430b4 "memcg: avoid charging the root memcg from obj_cgroup_charge_pages()"
+      - Authored by a maintainer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260829023251.474083-1-shakeel.butt@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 15 total, 4 (10) series, 5 non-series commits
+- mm-unstable: 17 total, 4 (11) series, 6 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 1 commits
     - no role, maintainer: 7 commits
-    - maintainer, no role : 7 commits
+    - maintainer, no role : 8 commits
   - full commits list
-    - cfb35f9e8f4b "mm/memcontrol: fix data-race on reading jiffies_64"
+    - 8e2760d920ae "mm/memcontrol: fix data-race on reading jiffies_64"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260827025457.116191-1-jiayuan.chen@linux.dev
-    - 95c36e2772e9 "mm/memcontrol: remove unused memcg parameter in calculate_high_delay()"
+    - 24e68577197b "mm/memcontrol: remove unused memcg parameter in calculate_high_delay()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260825120153.1405-1-hongfu.li@linux.dev
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
-      - 74f2b17009be "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
+      - 18bec04be84e "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - 0db377db77ea "mm/memcontrol: fix stuck FLUSHING_CACHED_CHARGE bit on isolated cpus"
+    - bc8373e43307 "mm/memcontrol: fix stuck FLUSHING_CACHED_CHARGE bit on isolated cpus"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260828135036.7d44361f@fangorn
-    - 52223d095246 "memcg: clear FLUSHING_CACHED_CHARGE on cpu offline"
+    - c14d4eb7682f "memcg: clear FLUSHING_CACHED_CHARGE on cpu offline"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260828192419.3057939-1-shakeel.butt@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260828135036.7d44361f%40fangorn [1]
-    - series "mm/mglru: clean up folio counters and flag usage", v3. (6 commits)
-      - e0701984a588 "mm/memcontrol: make lru_zone_size atomic and simplify sanity check" (0/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-0-d9f1c75549c8@tencent.com
-        - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-1-d9f1c75549c8@tencent.com
-        - Link: https://lore.kernel.org/linux-mm/20260804-mglru-fg-v1-0-4d8dad39dad6@tencent.com/ [1]
-    - ac4fa637995e "memcg: trim the per-cpu charge stock instead of draining it"
+    - e99198d3850b "memcg: trim the per-cpu charge stock instead of draining it"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260820012010.2016086-1-shakeel.butt@linux.dev
     - series "memcg: remove the v1 soft limit". (8 commits)
-      - 7190f758907f "memcg: remove v1 soft limit reclaim" (0/8)
+      - e075e163e2e8 "memcg: remove v1 soft limit reclaim" (0/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260811203203.3456029-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260811203203.3456029-3-shakeel.butt@linux.dev
-      - bbbc1ffbce86 "memcg: remove the soft limit rbtree" (3/8)
+      - 8e24464528f4 "memcg: remove the soft limit rbtree" (3/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260811203203.3456029-6-shakeel.butt@linux.dev
-      - 031ef69a6285 "memcg: remove the per-node soft limit tree fields" (5/8)
+      - 8149ec3f5d40 "memcg: remove the per-node soft limit tree fields" (5/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260811203203.3456029-8-shakeel.butt@linux.dev
-      - c0a1154a0f6d "memcg: remove mem_cgroup->soft_limit" (6/8)
+      - 0d11132ac407 "memcg: remove mem_cgroup->soft_limit" (6/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260811203203.3456029-9-shakeel.butt@linux.dev
-      - 78fff7d359d9 "memcg: simplify v1 event ratelimiting" (7/8)
+      - 54aa184b8872 "memcg: simplify v1 event ratelimiting" (7/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260811203203.3456029-10-shakeel.butt@linux.dev
     - series "mm, memcg: fix memory.peak reset clobbering other fds' watermark", v4. (2 commits)
-      - 39d784021e33 "memcg: acquire peaks_lock when reading memory.peak" (0/2)
+      - 293ad761d63f "memcg: acquire peaks_lock when reading memory.peak" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260830002044.1938621-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260830002044.1938621-2-ridong.chen@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260730115314.1069089-1-ridong.chen@linux.dev?part=1 [1]
-      - f982ad4f57cf "mm, memcg: fix memory.peak reset clobbering other fds' watermark" (1/2)
+      - 58b44ba52c41 "mm, memcg: fix memory.peak reset clobbering other fds' watermark" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260830002044.1938621-3-ridong.chen@linux.dev
-      - c795a25f10a7 "mm: memcontrol: raise MEMCG_MAX for charges that fail without reclaiming" (5/7)
+      - 896e272bd3b7 "mm: memcontrol: raise MEMCG_MAX for charges that fail without reclaiming" (5/7)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260831174836.3102406-1-joe@dama.to
-- mm-new: 3 total, 1 (2) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 1 commits
-    - maintainer, no role : 1 commits
-  - full commits list
-    - 2eff409e54d7 "memcg: don't call schedule_work when no spinning is allowed"
+    - 6560f2b1d0b9 "memcg: don't call schedule_work when no spinning is allowed"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260831234339.280376-1-stevensd@google.com
     - series "mm: avoid large folio splits when swap is unavailable", v7. (4 commits)
-      - e20d79bfb9b4 "mm: add page_counter_margin()" (0/4)
+      - 94085a0f4799 "mm: add page_counter_margin()" (0/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260830042920.2280454-1-xueyuan.chen21@gmail.com
         - Link: https://lore.kernel.org/20260830042920.2280454-2-xueyuan.chen21@gmail.com
-      - 3ae831e0337e "mm: distinguish large folio swap allocation failures" (1/4)
+      - c50a9b0b0dac "mm: distinguish large folio swap allocation failures" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260830042920.2280454-3-xueyuan.chen21@gmail.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

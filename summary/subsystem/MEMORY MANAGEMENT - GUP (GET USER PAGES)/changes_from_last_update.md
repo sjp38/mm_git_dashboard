@@ -1,31 +1,36 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 1 -> 4 commits
+- mm-unstable: 0 -> 3 commits
   - series: 0 (0) -> 1 (2)
     - no role, nobody: 0 -> 2 commits
-    - no role, no role : 1 -> 2 commits
-  - new commits
-    - 2a7d69eec949 "mm/gup_test: report actual pinned bytes"
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 3b79cdf2de4d "mm/gup_test: report actual pinned bytes"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260831101304.162867-1-sarthak.sharma@arm.com
     - series "mm: gup: cleanup gup_fast call chain", v3. (2)
-      - 6bf8890ff370 "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf() (0/2)"
+      - e5b55cfe9c8d "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf() (0/2)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260828015542.125576330@ruivo.org
         - Link: https://lore.kernel.org/20260828015542.245315718@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u [1]
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - 4506db67b836 "mm: gup: cleanup the gup_fast_*() call chain (1/2)"
+      - e3b5239afe1b "mm: gup: cleanup the gup_fast_*() call chain (1/2)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260828015542.334186653@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
+- mm-new: 4 -> 1 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 2 -> 1 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

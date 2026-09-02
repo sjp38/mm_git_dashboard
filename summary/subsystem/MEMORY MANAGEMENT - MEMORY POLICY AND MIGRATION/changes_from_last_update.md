@@ -1,4 +1,4 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
 - mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
@@ -7,44 +7,30 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 5 commits
-  - series: 0 (0) -> 1 (4)
-    - reviewer, nobody: 0 -> 3 commits
-    - reviewer, no role : 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 1 commits
+- mm-unstable: 5 -> 4 commits
+  - series: 1 (4) -> 1 (3)
+    - reviewer, nobody: 3 -> 2 commits
+    - reviewer, no role : 1 -> 2 commits
+    - reviewer, reviewer: 1 -> 0 commits
   - changed commits
-    - e5bb83193a8d "mm/mempolicy: take a cpuset cookie for the interleave node count"
-      - Authored by a reviewer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
+    - ee279dff8131 "mm/mempolicy: take a cpuset cookie for the interleave node count"
+      - Authored by a reviewer, reviewed by no role player
+      - added "Reviewed-by: Huang Ying <ying.huang@linux.alibaba.com>"
+      - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
       - Link: https://lore.kernel.org/20260828193111.1023497-1-gourry@gourry.net
       - Link: https://lore.kernel.org/all/20250907160829.91628-1-chelsyratnawat2001@gmail.com/
+  - dropped commits
     - series "mm/mglru: clean up folio counters and flag usage", v3. (6)
       - 688ef52bda68 "mm/migrate: copy all referenced state via folio_migrate_lru_refs (2/6)"
         - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-3-d9f1c75549c8@tencent.com
-    - series "mm/mempolicy: stop copying state in the interleave paths". (2)
-      - 5da38ed98808 "mm/mempolicy: use SRCU for the weighted interleave state (0/2)"
-        - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260829015943.1258774-1-gourry@gourry.net
-        - Link: https://lore.kernel.org/20260829015943.1258774-2-gourry@gourry.net
-      - c8a158af00a7 "mm/mempolicy: stop copying the nodemask in the interleave paths (1/2)"
-        - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260829015943.1258774-3-gourry@gourry.net
-    - series "mm: reject zone device folios in more folio walkers", v2. (3)
-      - 3f28908b93ba "mm/mempolicy: skip zone device folios when queueing folios (2/3)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260817220810.1175596-4-gourry@gourry.net
-- mm-new: 5 -> 0 commits
-  - series: 1 (4) -> 0 (0)
-    - reviewer, nobody: 3 -> 0 commits
-    - reviewer, no role : 1 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - e476204abe31 "mm/migrate_device: fix function name in kernel-doc"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/7D206FC95BDCAA0F+20260901065131.1759298-1-zhaozhengzhuo@uniontech.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

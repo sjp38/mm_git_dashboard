@@ -3,7 +3,7 @@
   - author/reviewer role stat
     - reviewer, reviewer: 1 commits
   - full commits list
-    - d30d09a5bab2 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
+    - 2fd4e7693674 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
@@ -12,7 +12,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - 79030e0da49b "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
+      - 7a47f3b5edb2 "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-3-gourry@gourry.net
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

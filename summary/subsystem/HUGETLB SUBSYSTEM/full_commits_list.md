@@ -4,72 +4,70 @@
     - no role, no role : 1 commits
     - no role, maintainer: 3 commits
   - full commits list
-    - 0c4b1a09f5cc "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+    - 7b8a8ae4dd17 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com
-    - d4d081d524b2 "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
+    - eedc8474d469 "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260817103433.191266-1-njilav@gmail.com
-    - ab97a72b51e0 "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
+    - 267bede12d3b "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260814083027.1419487-1-xialonglong2025@163.com
-    - 8e3de38f4e34 "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+    - 8ee1ef0f2f8c "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - c2622865fbd6 "mm/hugetlb: do not dissolve gigantic pages without runtime support"
+    - 244dc704e380 "mm/hugetlb: do not dissolve gigantic pages without runtime support"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260823044118.1097121-2-xialonglong2025@163.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 10 total, 0 (7) series, 3 non-series commits
+- mm-unstable: 12 total, 1 (9) series, 3 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 2 commits
     - no role, no role : 6 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 3 commits
   - full commits list
-    - 59ae1d9c586e "mm/hugetlb: fix resv_huge_pages double decrement in memfd error path"
+    - 2d5b9343726d "mm/hugetlb: fix resv_huge_pages double decrement in memfd error path"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260825021013.25672-1-hongfu.li@linux.dev
-    - 7796d3b882d3 "mm/hugetlb: use hugetlb_vmemmap_optimizable() in boolean contexts"
+    - a335cdf759db "mm/hugetlb: use hugetlb_vmemmap_optimizable() in boolean contexts"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260824151655.30840-1-kaitao.cheng@linux.dev
-      - 57c2f1044bb0 "mm/sparse-vmemmap: rename HVO order macros" (1/17)
+      - acd728009b67 "mm/sparse-vmemmap: rename HVO order macros" (1/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825084608.47437-3-songmuchun@bytedance.com
-      - a2a5ce19a218 "mm/mm_init: factor out pfn_to_zone()" (5/17)
+      - 0492ac496b8a "mm/mm_init: factor out pfn_to_zone()" (5/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-7-songmuchun@bytedance.com
-      - 2b1c56c068b2 "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization" (9/17)
+      - cd1755a76390 "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization" (9/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-11-songmuchun@bytedance.com
-      - 04b671ecbd2f "mm/hugetlb: remove HUGE_BOOTMEM_HVO" (13/17)
+      - a68896ebd367 "mm/hugetlb: remove HUGE_BOOTMEM_HVO" (13/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-15-songmuchun@bytedance.com
-      - 22c8940772e4 "mm/hugetlb: remove HUGE_BOOTMEM_CMA" (14/17)
+      - 182e07bb37a8 "mm/hugetlb: remove HUGE_BOOTMEM_CMA" (14/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-16-songmuchun@bytedance.com
-      - 7f0c0d44f566 "mm/hugetlb: localize struct huge_bootmem_page" (15/17)
+      - 40f5a3a92ecb "mm/hugetlb: localize struct huge_bootmem_page" (15/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-17-songmuchun@bytedance.com
-      - 2c57a7359a9f "mm/hugetlb: localize HUGE_BOOTMEM_ZONES_VALID" (16/17)
+      - 2f4e490c7459 "mm/hugetlb: localize HUGE_BOOTMEM_ZONES_VALID" (16/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-18-songmuchun@bytedance.com
-    - 5a0b37bf93e0 "mm/hugetlb: warn instead of silently bailing gigantic pages without runtime support"
+    - 8f0ae390f8e4 "mm/hugetlb: warn instead of silently bailing gigantic pages without runtime support"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260823044118.1097121-3-xialonglong2025@163.com
-- mm-new: 2 total, 1 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-  - full commits list
     - series "mm/hugetlb: fix surplus accounting and availability checks during demotion", v2. (2 commits)
-      - f2b546d63c07 "mm/hugetlb: preserve source surplus accounting during demotion" (0/2)
+      - 0cef625c6688 "mm/hugetlb: preserve source surplus accounting during demotion" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831133519.2505020-2-xialonglong2025@163.com
-      - 0fe2bf1436d9 "mm/hugetlb: cap demotion at currently available free pages" (1/2)
+      - e91b32f35289 "mm/hugetlb: cap demotion at currently available free pages" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831133519.2505020-3-xialonglong2025@163.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

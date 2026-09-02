@@ -4,49 +4,48 @@
   - author/reviewer role stat
     - reviewer, maintainer: 1 commits
   - full commits list
-    - 462bd1f1368e "mm, swap: fix SWAP_USAGE_OFFLIST_BIT collision with real usage count"
+    - d62b73ad12a4 "mm, swap: fix SWAP_USAGE_OFFLIST_BIT collision with real usage count"
       - Authored by a reviewer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260828191433.3304458-1-nphamcs@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 7 total, 2 (6) series, 1 non-series commits
+- mm-unstable: 8 total, 2 (7) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, no role : 5 commits
+    - no role, no role : 6 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 1a9232d01a52 "mm/swap: remove unused declaration swapcache_clear()"
+    - fbee862818d8 "mm/swap: remove unused declaration swapcache_clear()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260827082722.1809702-1-yuehaibing@huawei.com
     - series "mm/page_io: folio conversion cleanups", v2. (6 commits)
-      - 5e0816ff5a1c "mm/page_io: convert write completion handlers to folios" (0/6)
+      - 3884705c5bc9 "mm/page_io: convert write completion handlers to folios" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-0-649728091117@columbia.edu
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-1-649728091117@columbia.edu
-      - 7391fb0a2ed4 "mm/page_io: use swap entries directly in zeromap helpers" (2/6)
+      - 7b7077acd55f "mm/page_io: use swap entries directly in zeromap helpers" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-3-649728091117@columbia.edu
-      - 5fb3d11a3120 "mm/page_io: rename bio_associate_blkg_from_page()" (3/6)
+      - d460b6c28a61 "mm/page_io: rename bio_associate_blkg_from_page()" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-4-649728091117@columbia.edu
-      - 4b97cf80fb15 "mm/page_io: refer to folios in swap_writeout() comments" (4/6)
+      - 5fae5f7cddf6 "mm/page_io: refer to folios in swap_writeout() comments" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-5-649728091117@columbia.edu
-      - 908a5096c5d7 "mm/swap: rename __swap_writepage() to __swap_writeout()" (5/6)
+      - 6a123bf86a03 "mm/swap: rename __swap_writepage() to __swap_writeout()" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-6-649728091117@columbia.edu
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - 588dbb3427aa "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - 45f3141405a2 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
-- mm-new: 2 total, 0 (1) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 1 commits
-  - full commits list
-      - 3ae831e0337e "mm: distinguish large folio swap allocation failures" (1/4)
+      - c50a9b0b0dac "mm: distinguish large folio swap allocation failures" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260830042920.2280454-3-xueyuan.chen21@gmail.com
-    - ead700ca770c "mm/swap, PM: hibernate: atomically replace hibernation pin"
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - 178b3d97bf1f "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

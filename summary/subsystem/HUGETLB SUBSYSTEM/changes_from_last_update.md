@@ -1,4 +1,4 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
 - mm-hotfixes-stable: 4 -> 4 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
@@ -8,67 +8,25 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 10 commits
-  - series: 0 (0) -> 0 (7)
-    - no role, no role : 0 -> 6 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 3 commits
-  - changed commits
-    - 59ae1d9c586e "mm/hugetlb: fix resv_huge_pages double decrement in memfd error path"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260825021013.25672-1-hongfu.li@linux.dev
-    - 7796d3b882d3 "mm/hugetlb: use hugetlb_vmemmap_optimizable() in boolean contexts"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260824151655.30840-1-kaitao.cheng@linux.dev
-    - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v5. (17)
-      - 57c2f1044bb0 "mm/sparse-vmemmap: rename HVO order macros (1/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260825084608.47437-3-songmuchun@bytedance.com
-      - a2a5ce19a218 "mm/mm_init: factor out pfn_to_zone() (5/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260825084608.47437-7-songmuchun@bytedance.com
-      - 2b1c56c068b2 "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization (9/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260825084608.47437-11-songmuchun@bytedance.com
-      - 04b671ecbd2f "mm/hugetlb: remove HUGE_BOOTMEM_HVO (13/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260825084608.47437-15-songmuchun@bytedance.com
-      - 22c8940772e4 "mm/hugetlb: remove HUGE_BOOTMEM_CMA (14/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260825084608.47437-16-songmuchun@bytedance.com
-      - 7f0c0d44f566 "mm/hugetlb: localize struct huge_bootmem_page (15/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260825084608.47437-17-songmuchun@bytedance.com
-      - 2c57a7359a9f "mm/hugetlb: localize HUGE_BOOTMEM_ZONES_VALID (16/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260825084608.47437-18-songmuchun@bytedance.com
-    - 5a0b37bf93e0 "mm/hugetlb: warn instead of silently bailing gigantic pages without runtime support"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260823044118.1097121-3-xialonglong2025@163.com
-- mm-new: 10 -> 2 commits
-  - series: 0 (7) -> 1 (2)
+- mm-unstable: 10 -> 12 commits
+  - series: 0 (7) -> 1 (9)
     - no role, nobody: 0 -> 2 commits
-    - no role, no role : 6 -> 0 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 3 -> 0 commits
-  - new commits
+    - no role, no role : 6 -> 6 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+  - changed commits
     - series "mm/hugetlb: fix surplus accounting and availability checks during demotion", v2. (2)
-      - f2b546d63c07 "mm/hugetlb: preserve source surplus accounting during demotion (0/2)"
+      - 0cef625c6688 "mm/hugetlb: preserve source surplus accounting during demotion (0/2)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260831133519.2505020-2-xialonglong2025@163.com
-      - 0fe2bf1436d9 "mm/hugetlb: cap demotion at currently available free pages (1/2)"
+      - e91b32f35289 "mm/hugetlb: cap demotion at currently available free pages (1/2)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260831133519.2505020-3-xialonglong2025@163.com
+- mm-new: 2 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

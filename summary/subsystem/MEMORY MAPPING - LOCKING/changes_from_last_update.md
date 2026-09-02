@@ -1,41 +1,29 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, no role : 0 -> 1 commits
-    - maintainer, no role : 0 -> 1 commits
+- mm-unstable: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
-      - 73f1e51be22d "mm: make per-VMA locks available universally (0/7)"
+      - 2f91ae1c6a63 "mm: make per-VMA locks available universally (0/7)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com"
-        - added "Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com"
-        - added "Cc: Liam R. Howlett <Liam.Howlett@oracle.com>"
-        - dropped "Link: https://lore.kernel.org/20260813193433.3318288-1-surenb@google.com"
-        - dropped "Link: https://lore.kernel.org/20260813193433.3318288-2-surenb@google.com"
-        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+        - added "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam R. Howlett <Liam.Howlett@oracle.com>"
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-      - b08d0ef5b52f "mm: add RCU-based VMA lookup helper that waits for writers (2/7)"
+      - a2e16fc92d17 "mm: add RCU-based VMA lookup helper that waits for writers (2/7)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com"
-        - added "Cc: Liam R. Howlett <Liam.Howlett@oracle.com>"
-        - dropped "Link: https://lore.kernel.org/20260813193433.3318288-4-surenb@google.com"
-        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Cc: Liam R. Howlett <Liam.Howlett@oracle.com>"
         - Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - maintainer, no role : 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,107 +1,69 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 11 commits
-  - series: 0 (0) -> 2 (9)
-    - no role, no role : 0 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, nobody: 0 -> 1 commits
-    - reviewer, no role : 0 -> 2 commits
-    - reviewer, reviewer: 0 -> 3 commits
-    - maintainer, no role : 0 -> 1 commits
+- mm-unstable: 11 -> 8 commits
+  - series: 2 (9) -> 2 (6)
+    - no role, no role : 2 -> 3 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, no role : 2 -> 1 commits
+    - reviewer, reviewer: 3 -> 1 commits
+    - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - 671521c4fa0d "mm/vmscan: drop the combined limit gate in __node_reclaim()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260826124409.35569-1-ridong.chen@linux.dev
-      - Link: https://sashiko.dev/#/patchset/20260723045718.2052070-1-ridong.chen@linux.dev [1]
-    - 893f78beb047 "mm/mglru: preserve inactive placement when enabling MGLRU"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260821021606.877330-1-ridong.chen@linux.dev
+    - series "mm: avoid large folio splits when swap is unavailable", v7. (4)
+      - e53721943ea5 "mm/vmscan: avoid pointless large folio splits without swap (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260830042920.2280454-4-xueyuan.chen21@gmail.com
+  - dropped commits
     - series "mm/mglru: clean up folio counters and flag usage", v3. (6)
       - ef75882b4fd3 "mm/mglru: introduce helpers for manipulating gen and refs flags (1/6)"
         - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-2-d9f1c75549c8@tencent.com
       - 70f6045d5a3b "mm/mglru: move max_seq read into walk_update_folio (3/6)"
         - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-4-d9f1c75549c8@tencent.com
       - bcf9583a78fd "mm/mglru: use explicit tier range in read_ctrl_pos() (4/6)"
         - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Ridong Chen <ridong.chen@linux.dev>"
-        - dropped "Cc: Ridong Chen <ridong.chen@linux.dev>"
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-5-d9f1c75549c8@tencent.com
       - 961e5fd4df91 "mm/mglru: fix potential generation folio number leak (5/6)"
         - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-6-d9f1c75549c8@tencent.com
-    - series "memcg: remove the v1 soft limit". (8)
-      - 7190f758907f "memcg: remove v1 soft limit reclaim (0/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260811203203.3456029-1-shakeel.butt@linux.dev
-        - Link: https://lore.kernel.org/20260811203203.3456029-3-shakeel.butt@linux.dev
-      - 06d706ac6035 "memcg: remove mem_cgroup_shrink_node() (1/8)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260811203203.3456029-4-shakeel.butt@linux.dev
-      - 9110c9427c96 "memcg: remove lru_gen_soft_reclaim() (4/8)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260811203203.3456029-7-shakeel.butt@linux.dev
-    - series "mm/mglru: clean up isolate_folios for readability and clarity", v2. (2)
-      - 97a451b8cad7 "mm/mglru: make type fallback logic explicit in isolate_folios() (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260829074204.45304-2-baohua@kernel.org"
-        - added "Link: https://lore.kernel.org/20260829074204.45304-1-baohua@kernel.org"
-        - added "Signed-off-by: Barry Song (Xiaomi) <baohua@kernel.org>"
-        - added "Signed-off-by: Ridong Chen <chenridong@xiaomi.com>"
-        - added "Co-developed-by: Barry Song (Xiaomi) <baohua@kernel.org>"
-        - added "Reviewed-by: Lian Wang <lianux.mm@gmail.com>"
-        - added "Cc: David Hildenbrand <david@kernel.org>"
-        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
-        - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - added "Cc: Kairui Song <kasong@tencent.com>"
-        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - added "Cc: Wei Xu <weixugc@google.com>"
-        - added "Cc: Yuanchu Xie <yuanchu@google.com>"
-        - added "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-        - added "Cc: Axel Rasmussen <axelrasmussen@google.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - added "Cc: David Stevens <stevensd@chromium.org>"
-        - Link: https://lore.kernel.org/20260829074204.45304-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/20260829074204.45304-2-baohua@kernel.org
-      - 7fd3ca3312cb "mm/mglru: make retry logic explicit in isolate_folios() (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260829074204.45304-3-baohua@kernel.org
-- mm-new: 11 -> 1 commits
-  - series: 2 (9) -> 0 (1)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, no role : 2 -> 0 commits
-    - reviewer, reviewer: 3 -> 0 commits
-    - maintainer, no role : 1 -> 0 commits
+- mm-new: 1 -> 7 commits
+  - series: 0 (1) -> 1 (7)
+    - no role, no role : 1 -> 6 commits
+    - no role, reviewer: 0 -> 1 commits
   - new commits
-    - series "mm: avoid large folio splits when swap is unavailable", v7. (4)
-      - 8782d00468ed "mm/vmscan: avoid pointless large folio splits without swap (2/4)"
+    - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7)
+      - 07811a9be263 "mm/mglru: separate folio generation update from LRU accounting (0/7)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260830042920.2280454-4-xueyuan.chen21@gmail.com
+        - Link: https://lore.kernel.org/20260901232421.40157-1-baohua@kernel.org
+        - Link: https://lore.kernel.org/20260901232421.40157-2-baohua@kernel.org
+        - Link: https://lore.kernel.org/linux-mm/20260812121658.69965-1-baohua@kernel.org/ [1]
+        - Link: https://lore.kernel.org/linux-mm/20260827035416.3012015-1-xueyuan.chen21@gmail.com/ [2]
+      - b9ff28b3a31b "mm/mglru: batch update lrugen->nr_pages in inc_min_seq() (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260901232421.40157-3-baohua@kernel.org
+      - a0c7add40fc0 "mm/mglru: enhance cold/hot inversion handling in inc_min_seq() (2/7)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260901232421.40157-4-baohua@kernel.org
+      - a98e3e63bf82 "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq() (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260901232421.40157-5-baohua@kernel.org
+      - 45dbd274f3d8 "mm/mglru: make LRU folio prefetch helper an inline function (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260901232421.40157-6-baohua@kernel.org
+      - 133c24254f8f "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260901232421.40157-7-baohua@kernel.org
+      - 04df0f128a8b "mm/mglru: batch move folios to the second-oldest gen's LRU (6/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

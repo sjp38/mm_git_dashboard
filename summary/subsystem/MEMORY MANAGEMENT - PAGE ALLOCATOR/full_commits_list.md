@@ -7,25 +7,25 @@
     - no role, reviewer: 5 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 224361f42ae4 "mm: drop stale MAX_ORDER references"
+    - 69a9dc82f30f "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
     - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2 commits)
-      - fd1d626a8ef1 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
+      - 30ee06fbd9af "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
-      - 644c3e9fab98 "mm/page_isolation: guard compound_order() against racing" (1/2)
+      - 5cb9127972c1 "mm/page_isolation: guard compound_order() against racing" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
-      - 74f2b17009be "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
+      - 18bec04be84e "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - 881eb813bb59 "mm: adjust out-dated document of __GFP_NOFAIL"
+    - 113af4f530a7 "mm: adjust out-dated document of __GFP_NOFAIL"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
-      - 88569f09a6a8 "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
+      - a2b65aa61739 "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811172156.356053-3-pfalcato@suse.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

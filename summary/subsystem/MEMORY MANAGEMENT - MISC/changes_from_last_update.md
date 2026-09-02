@@ -1,4 +1,4 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -6,89 +6,35 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 16 commits
-  - series: 0 (0) -> 3 (10)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 8 commits
-    - no role, reviewer: 0 -> 2 commits
-    - no role, maintainer: 0 -> 5 commits
-  - new commits
-    - 88bdedcbf43e "tools/testing/selftests/mm: add missing .gitignore entries"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260831-fix-mm-selftests-gitignore-v1-1-c984bbd4c5e4@kernel.org
-    - series "docs/mm/damon/design: add explanation of nr_snapshots", v3. (3)
-      - f722f4fedce6 "docs/mm/damon/design: accurate semantics of nr_snapshots (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260831150227.83416-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260831150227.83416-2-sj@kernel.org
-      - b2d8fcb8b36d "docs/mm/damon/design: difference between watermarks and nr_snapshots (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260831150227.83416-3-sj@kernel.org
-      - 9d3d3356faf0 "docs/mm/damon/design: fix typo of max_nr_snapshots (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260831150227.83416-4-sj@kernel.org
-    - series "mm/damon: Introduce a huge page collapsing mechanism using auto tuning", v4. (3)
-      - cf76fb0e3f19 "Docs/mm/damon/design: cocument hugepage_mem_bp target metric (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260831144732.80910-4-sj@kernel.org
+- mm-unstable: 16 -> 16 commits (no change)
+  - series: 3 (10) -> 3 (10) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 8 -> 8 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
   - changed commits
-    - abde5ad6a9e8 "selftests/mm: remove the local PKEY_UNRESTRICTED fallback"
+    - cdfa9c49faf9 "tools/testing/selftests/mm: add missing .gitignore entries"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260825161715.2807297-1-hemanth.selam@gmail.com
-    - series "docs/ksm: fix advisor documentation and comment", v3. (2)
-      - 91cb1d54c6e1 "docs: ksm: fix typos in sysfs knob names (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260824061010.3343959-1-tujinjiang@huawei.com
-        - Link: https://lore.kernel.org/20260824061010.3343959-2-tujinjiang@huawei.com
-      - 5947862a9260 "mm/ksm: fix advisor_min_pages_to_scan description (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/linux-mm/20231028000945.2428830-2-shr@devkernel.io/ [1]
-        - Link: https://lore.kernel.org/20260824061010.3343959-3-tujinjiang@huawei.com
-    - 53c7f1dea387 "selftests/mm: fix line buffer leak in mremap_test is_range_mapped()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260826061300.14038-1-anshumantewari123@gmail.com
-    - b61887e31a29 "selftests/mm: khugepaged: remove str_dup() usage"
+      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
+      - Link: https://lore.kernel.org/20260831-fix-mm-selftests-gitignore-v1-1-c984bbd4c5e4@kernel.org
+- mm-new: 1 -> 5 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 3 commits
+  - new commits
+    - 1d9f5124bdd8 "Docs/mm/damon/design: document pgidle_unset probe filter type"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260901132506.99243-5-sj@kernel.org
+    - 24d0e85966e7 "Docs/mm/damon/design: document probe preps"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260901132506.99243-16-sj@kernel.org
+    - 958143fcc80e "Docs/admin-guide/mm/damon/usage: document probe preps sysfs files"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260901132506.99243-17-sj@kernel.org
+    - abf1a78f2b62 "selftests/mm: restore hidden hugetlb reservation scenarios"
       - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
-      - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
-    - 198f183cc7c3 "selftests/mm: fix incorrect skip output in pkey_sighandler_tests"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260825123023.64418-1-zenghui.yu@linux.dev
-    - series "selftests/mm: TAP output and global-state fixes", v4. (3)
-      - 6395c98e786a "selftests/mm: emit TAP header in uffd-wp-mremap (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260825085756.63030-1-husong@kylinos.cn
-        - Link: https://lore.kernel.org/20260825085756.63030-2-husong@kylinos.cn
-      - 4a0df66449c6 "selftests/mm: emit TAP header and use TAP skip in mremap_test (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260825085756.63030-3-husong@kylinos.cn
-      - b53c2e5d255a "selftests/mm: restore enable_soft_offline in hugetlb-soft-offline (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260825085756.63030-4-husong@kylinos.cn
-    - series "tools/mm/page_owner_sort: fix --sort, add module filter, improve usage", v3. (3)
-      - d69c1a45f178 "tools/mm/page_owner_sort: add module name sort/cull/filter support (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260819021611.2910835-3-ye.liu@linux.dev
-    - 10a632e82312 "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
-- mm-new: 12 -> 1 commits
-  - series: 2 (6) -> 0 (0)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 7 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
+      - Link: https://lore.kernel.org/20260714021630.1063823-1-husong@kylinos.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

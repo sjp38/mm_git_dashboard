@@ -1,47 +1,16 @@
-- baseline: v7.2-15455-g18fbf5151d2c0 -> v7.3-rc1-71-g786262be6048d
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 5 commits
-  - series: 0 (0) -> 3 (5)
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 0 -> 4 commits
-  - changed commits
-    - series "make unused huge shrinker memcg aware", v4. (3)
-      - 74f2b17009be "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com"
-        - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
-        - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - series "selftests/cgroup: fixes for test_zswap on single core VM", v4. (2)
-      - 33533dd83e04 "selftests/cgroup: test_zswap: wait for cgroup to unpopulate in test_zswap_writeback (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260828033741.2184560-1-wfelipe@google.com
-        - Link: https://lore.kernel.org/20260828033741.2184560-2-wfelipe@google.com
-      - 997f8b16301c "selftests/cgroup: test_zswap: fix implicit unsigned promotion bug in test_no_kmem_bypass (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260828033741.2184560-3-wfelipe@google.com
-    - series "mm/page_io: folio conversion cleanups", v2. (6)
-      - 908a5096c5d7 "mm/swap: rename __swap_writepage() to __swap_writeout() (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-6-649728091117@columbia.edu
-    - series "mm, swap: don't spin on a bad swap entry", v3. (2)
-      - 588dbb3427aa "mm, swap: distinguish a malformed swap entry from a dying device (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
-        - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
-- mm-new: 5 -> 0 commits
-  - series: 2 (5) -> 0 (0)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 4 -> 0 commits
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 3 (5) -> 3 (5) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
