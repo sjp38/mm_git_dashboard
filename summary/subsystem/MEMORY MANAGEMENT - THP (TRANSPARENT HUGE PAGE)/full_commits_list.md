@@ -14,10 +14,10 @@
     - no role, reviewer: 1 commits
     - reviewer, nobody: 1 commits
   - full commits list
-    - 1b9d911aa396 "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
+    - 73c686fb5f14 "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260827-hugepfn-allowable-orders-v1-1-94819c8807c8@kernel.org
-    - e3ba46e5febd "renames for Lorenzo's mm-huge_memory-bypass-thp-tuneables-for-huge-pfnmap-mappings patch"
+    - ef85840d8131 "renames for Lorenzo's mm-huge_memory-bypass-thp-tuneables-for-huge-pfnmap-mappings patch"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/DL1HIHWYJ7TB.1CY76SJS0V03L@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -28,40 +28,40 @@
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - a78694255ed6 "selftests/mm: khugepaged: remove str_dup() usage"
+    - 62db8b658cd3 "selftests/mm: khugepaged: remove str_dup() usage"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
       - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
     - series "mm: khugepaged: fix tracepoint UAF", v4. (3 commits)
-      - e6b3b2b615ba "mm: khugepaged: fix swap entry value to folio_pfn()" (0/3)
+      - b8aaed6cbb9c "mm: khugepaged: fix swap entry value to folio_pfn()" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260828055926.346744-1-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/20260828055926.346744-2-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
-      - 2fd5215e1198 "mm: khugepaged: fix folio is used after pte_unmap_unlock()" (1/3)
+      - d27996011b7c "mm: khugepaged: fix folio is used after pte_unmap_unlock()" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828055926.346744-3-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
-      - f91c2c5c7ada "mm: khugepaged: fix folio is used after folio_put/unlock()" (2/3)
+      - cea5843ecd7a "mm: khugepaged: fix folio is used after folio_put/unlock()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828055926.346744-4-vernon2gm@gmail.com
-    - 96f3ee163760 "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
+    - 638e43e66e5f "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260828222640.1638457-1-jthoughton@google.com
     - series "mm: reject zone device folios in more folio walkers", v2. (3 commits)
-      - 0c534c98d1b7 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd()" (0/3)
+      - 3bcdc18651f8 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd()" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260817220810.1175596-2-gourry@gourry.net
-    - dfcc5521b678 "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
+    - b84c17412e1e "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
     - series "Fix deferred_split_isolate() and drop the split workaround", v2. (2 commits)
-      - cc6f5a364fdb "mm/huge_memory: do not touch frozen folios in deferred_split_isolate()" (0/2)
+      - 2f00a8974241 "mm/huge_memory: do not touch frozen folios in deferred_split_isolate()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260831091514.1879786-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260831091514.1879786-2-kirill@shutemov.name
-      - e65ce5b45068 "mm/huge_memory: dequeue the deferred split after the split freeze" (1/2)
+      - 9a7162b965b3 "mm/huge_memory: dequeue the deferred split after the split freeze" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260831091514.1879786-3-kirill@shutemov.name
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

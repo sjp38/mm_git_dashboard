@@ -1,66 +1,61 @@
 - baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - e2c9fc9641d2 "mm/folio: EXPORT_SYMBOL_FOR_KVM(lru_cache_drain_for_folio)"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/lkml/bd6c9c74-e374-a9d3-ba1f-8b6f430894fc@google.com/T/#u
+      - Link: https://lore.kernel.org/02876cea-5727-2ca4-bead-73659ea6fec4@google.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 29 -> 29 commits (no change)
-  - series: 5 (24) -> 6 (24)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 17 -> 20 commits
+- mm-unstable: 29 -> 31 commits
+  - series: 6 (24) -> 7 (26)
+    - no role, no role : 20 -> 22 commits
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 3 -> 1 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - 3c22653ff82d "mm/vmpressure: remove window size TODO"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - Link: https://lore.kernel.org/all/20260831130316.448-1-tahasezer.is@gmail.com/
-      - Link: https://lore.kernel.org/linux-mm/20260724054305.516126-1-cui.tao@linux.dev/
-      - Link: https://lore.kernel.org/linux-mm/20260715143646.15828-1-gaikwad.dcg@gmail.com/
-      - Link: https://lore.kernel.org/all/20260227221555.29969-1-mcq@disroot.org/
-      - Link: https://lore.kernel.org/20260831-remove-vmpressure-todo-v1-1-498515e59cdf@kernel.org
-    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
-      - 2f91ae1c6a63 "mm: make per-VMA locks available universally (0/7)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Cc: Liam R. Howlett <Liam.Howlett@oracle.com>"
-        - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-    - series "mm: Drop pxd_ERROR()". (8)
-      - 8fc3011d734c "mm: make ptval_to_str() generally available (0/8)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260831054331.625505-1-anshuman.khandual@arm.com
-        - Link: https://lore.kernel.org/20260831054331.625505-2-anshuman.khandual@arm.com
-      - 5c577ba46118 "mm: stop using pxd_ERROR() (1/8)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260831054331.625505-3-anshuman.khandual@arm.com
-  - dropped commits
-    - series "mm/mglru: clean up folio counters and flag usage", v3. (6)
-      - ef75882b4fd3 "mm/mglru: introduce helpers for manipulating gen and refs flags (1/6)"
+    - series "memcg: remove the v1 soft limit", v2. (8)
+      - b873274d8d78 "memcg: remove mem_cgroup_shrink_node() (1/8)"
         - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-2-d9f1c75549c8@tencent.com
-      - bcf9583a78fd "mm/mglru: use explicit tier range in read_ctrl_pos() (4/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-5-d9f1c75549c8@tencent.com
-- mm-new: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-  - new commits
+        - added "Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-4-shakeel.butt@linux.dev"
+        - Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev
+      - 0e1c768bbfd3 "memcg: remove lru_gen_soft_reclaim() (4/8)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-7-shakeel.butt@linux.dev"
+        - Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev
     - series "mm: remove three unused helpers from mm.h", v2. (2)
-      - 8b473c58cee7 "mm: remove unused mark_page_reserved() (0/2)"
+      - ff9bb4d569cf "mm: remove unused mark_page_reserved() (0/2)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-0-f6474e169c23@columbia.edu
         - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-1-f6474e169c23@columbia.edu
-      - 1367eedad264 "mm: remove unused totalram_pages_inc() and totalram_pages_dec() (1/2)"
+      - 931dc4e7a0d3 "mm: remove unused totalram_pages_inc() and totalram_pages_dec() (1/2)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-2-f6474e169c23@columbia.edu
+- mm-new: 2 -> 3 commits
+  - series: 1 (2) -> 0 (3)
+    - no role, nobody: 0 -> 3 commits
+    - no role, no role : 2 -> 0 commits
+  - new commits
+    - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous". (6)
+      - 5669d4d9ac8f "mm: implement file_is_dev_zero() to uniquely identify /dev/zero (1/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-2-a578c730cec7@kernel.org
+      - 2d0b7af12032 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (2/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-3-a578c730cec7@kernel.org
+      - 01c6d8a48a30 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (3/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-4-a578c730cec7@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

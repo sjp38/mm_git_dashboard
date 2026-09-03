@@ -4,54 +4,49 @@
     - maintainer, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, reviewer: 1 -> 0 commits
-    - maintainer, maintainer: 0 -> 1 commits
-  - changed commits
-    - 8a2368f430b4 "memcg: avoid charging the root memcg from obj_cgroup_charge_pages()"
-      - Authored by a maintainer, reviewed by a maintainer
-      - added "Reviewed-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - Link: https://lore.kernel.org/20260829023251.474083-1-shakeel.butt@linux.dev
+    - maintainer, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 15 -> 17 commits
-  - series: 4 (10) -> 4 (11)
-    - no role, nobody: 0 -> 1 commits
+- mm-unstable: 17 -> 17 commits (no change)
+  - series: 4 (11) -> 4 (11) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-    - maintainer, no role : 7 -> 8 commits
+    - maintainer, no role : 8 -> 8 commits (no change)
   - changed commits
-    - 6560f2b1d0b9 "memcg: don't call schedule_work when no spinning is allowed"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - added "Cc: David Hildenbrand <david@kernel.org>"
-      - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - added "Cc: Liam R. Howlett <liam@infradead.org>"
-      - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-      - Link: https://lore.kernel.org/20260831234339.280376-1-stevensd@google.com
-    - series "mm: avoid large folio splits when swap is unavailable", v7. (4)
-      - 94085a0f4799 "mm: add page_counter_margin() (0/4)"
+    - series "memcg: remove the v1 soft limit", v2. (8)
+      - 43d79f7c7631 "memcg: remove v1 soft limit reclaim (0/8)"
         - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260830042920.2280454-1-xueyuan.chen21@gmail.com
-        - Link: https://lore.kernel.org/20260830042920.2280454-2-xueyuan.chen21@gmail.com
-      - c50a9b0b0dac "mm: distinguish large folio swap allocation failures (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260830042920.2280454-3-xueyuan.chen21@gmail.com
-  - dropped commits
-    - series "mm/mglru: clean up folio counters and flag usage", v3. (6)
-      - e0701984a588 "mm/memcontrol: make lru_zone_size atomic and simplify sanity check (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-0-d9f1c75549c8@tencent.com
-        - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-1-d9f1c75549c8@tencent.com
-        - Link: https://lore.kernel.org/linux-mm/20260804-mglru-fg-v1-0-4d8dad39dad6@tencent.com/ [1]
-- mm-new: 3 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 0 commits
-    - maintainer, no role : 1 -> 0 commits
+        - added "Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev"
+        - added "Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-3-shakeel.butt@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-1-shakeel.butt@linux.dev"
+        - Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev
+        - Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev
+      - 02da79b48446 "memcg: remove the soft limit rbtree (3/8)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260902174311.1772372-5-shakeel.butt@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-6-shakeel.butt@linux.dev"
+        - Link: https://lore.kernel.org/20260902174311.1772372-5-shakeel.butt@linux.dev
+      - b2d728b0df3b "memcg: remove the per-node soft limit tree fields (5/8)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260902174311.1772372-7-shakeel.butt@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-8-shakeel.butt@linux.dev"
+        - Link: https://lore.kernel.org/20260902174311.1772372-7-shakeel.butt@linux.dev
+      - aea4244a9832 "memcg: remove mem_cgroup->soft_limit (6/8)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260902174311.1772372-8-shakeel.butt@linux.dev"
+        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-9-shakeel.butt@linux.dev"
+        - Link: https://lore.kernel.org/20260902174311.1772372-8-shakeel.butt@linux.dev
+      - 488f03e22b5b "memcg: simplify v1 event ratelimiting (7/8)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260902174311.1772372-9-shakeel.butt@linux.dev"
+        - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-10-shakeel.butt@linux.dev"
+        - dropped "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260902174311.1772372-9-shakeel.butt@linux.dev
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

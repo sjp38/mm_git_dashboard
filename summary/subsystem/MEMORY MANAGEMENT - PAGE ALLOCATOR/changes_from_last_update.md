@@ -9,8 +9,14 @@
   - series: 2 (4) -> 2 (4) (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
+      - 7d46a407690e "mm: replace PF_KCOMPACTD flag with kthread_func() check (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

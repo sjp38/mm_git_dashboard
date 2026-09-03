@@ -6,35 +6,58 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 16 -> 16 commits (no change)
-  - series: 3 (10) -> 3 (10) (no change)
+- mm-unstable: 16 -> 19 commits
+  - series: 3 (10) -> 3 (13)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-  - changed commits
-    - cdfa9c49faf9 "tools/testing/selftests/mm: add missing .gitignore entries"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
-      - Link: https://lore.kernel.org/20260831-fix-mm-selftests-gitignore-v1-1-c984bbd4c5e4@kernel.org
-- mm-new: 1 -> 5 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
     - maintainer, nobody: 0 -> 3 commits
+  - changed commits
+    - series "mm/damon: introduce data access-as-a-data attribute", v1.1. (17)
+      - 2f31b32bfddb "Docs/mm/damon/design: document pgidle_unset probe filter type (3/17)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260901132506.99243-5-sj@kernel.org
+      - 287911a86033 "Docs/mm/damon/design: document probe preps (14/17)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260901132506.99243-16-sj@kernel.org
+      - e294c11d788a "Docs/admin-guide/mm/damon/usage: document probe preps sysfs files (15/17)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260901132506.99243-17-sj@kernel.org
+- mm-new: 5 -> 8 commits
+  - series: 0 (0) -> 2 (6)
+    - no role, nobody: 1 -> 5 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 3 -> 1 commits
   - new commits
-    - 1d9f5124bdd8 "Docs/mm/damon/design: document pgidle_unset probe filter type"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260901132506.99243-5-sj@kernel.org
-    - 24d0e85966e7 "Docs/mm/damon/design: document probe preps"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260901132506.99243-16-sj@kernel.org
-    - 958143fcc80e "Docs/admin-guide/mm/damon/usage: document probe preps sysfs files"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260901132506.99243-17-sj@kernel.org
-    - abf1a78f2b62 "selftests/mm: restore hidden hugetlb reservation scenarios"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260714021630.1063823-1-husong@kylinos.cn
+    - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous". (6)
+      - 576fec8b9d4c "mm: move drivers/char/mem.c to mm/char-mem.c (0/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-0-a578c730cec7@kernel.org
+        - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-1-a578c730cec7@kernel.org
+      - 5669d4d9ac8f "mm: implement file_is_dev_zero() to uniquely identify /dev/zero (1/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-2-a578c730cec7@kernel.org
+      - 2d0b7af12032 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (2/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-3-a578c730cec7@kernel.org
+      - 90e90a046626 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests (5/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-6-a578c730cec7@kernel.org
+    - series "docs/core-api: memory-allocation: add k[mz]alloc_obj() and clarify kmalloc", v2. (2)
+      - 1b4377d67b3e "docs/core-api: memory-allocation: add k[mz]alloc_obj() and clarify kmalloc (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260902-docs-memalloc-guide-v2-0-218c1a4dcb80@kernel.org
+        - Link: https://lore.kernel.org/20260902-docs-memalloc-guide-v2-1-218c1a4dcb80@kernel.org
+    - series "mm/damon: cleanup code, add test cases, and update guidances in docs". (12)
+      - eb2adb2d9e57 "Docs/mm/damon/maintainer-profile: update AI review for Sashiko replies (11/12)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260902054747.99370-12-sj@kernel.org
+        - Link: https://github.com/sashiko-dev/sashiko/commit/b554c7b6e733 [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

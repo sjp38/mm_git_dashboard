@@ -7,17 +7,17 @@
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-    - 3b79cdf2de4d "mm/gup_test: report actual pinned bytes"
+    - ea813276f8ab "mm/gup_test: report actual pinned bytes"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260831101304.162867-1-sarthak.sharma@arm.com
     - series "mm: gup: cleanup gup_fast call chain", v3. (2 commits)
-      - e5b55cfe9c8d "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
+      - 0b2b7b3ba8d4 "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260828015542.125576330@ruivo.org
         - Link: https://lore.kernel.org/20260828015542.245315718@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u [1]
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - e3b5239afe1b "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
+      - fd00b018b3b9 "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260828015542.334186653@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
@@ -25,7 +25,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 2be961f8854f "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - f5bf3e50ef11 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -8,26 +8,14 @@
     - reviewer, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 9 commits
-  - series: 2 (4) -> 3 (6)
+- mm-unstable: 9 -> 9 commits (no change)
+  - series: 3 (6) -> 3 (6) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 1 -> 3 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "Fix deferred_split_isolate() and drop the split workaround", v2. (2)
-      - cc6f5a364fdb "mm/huge_memory: do not touch frozen folios in deferred_split_isolate() (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260831091514.1879786-1-kirill@shutemov.name
-        - Link: https://lore.kernel.org/20260831091514.1879786-2-kirill@shutemov.name
-      - e65ce5b45068 "mm/huge_memory: dequeue the deferred split after the split freeze (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260831091514.1879786-3-kirill@shutemov.name
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, reviewer: 2 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

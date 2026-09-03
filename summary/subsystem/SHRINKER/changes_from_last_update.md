@@ -1,19 +1,35 @@
 - baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 8ef8543b6951 "mm/shrinker: fix bogus set_shrinker_bit() with cgroup.memory=nokmem"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260902073800.305481-1-jiayuan.chen@linux.dev
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 0 -> 1 commits
   - new commits
-    - 804d319c9670 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
+    - b1cb889f6162 "mm/list_lru: disable memcg awareness under cgroup_disable=memory"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260902093202.609559-1-qinyuntan@linux.alibaba.com
+  - changed commits
+    - a3208afc5617 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
       - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Fixes: 03375203e1da ("mm: do not allocate shrinker info with cgroup.memory=nokmem")"
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Fixes: 03375203e1da8 ("mm: do not allocate shrinker info with cgroup.memory=nokmem")"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
       - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

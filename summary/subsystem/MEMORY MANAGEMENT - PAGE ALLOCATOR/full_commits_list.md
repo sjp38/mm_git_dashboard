@@ -7,27 +7,33 @@
     - no role, reviewer: 5 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 69a9dc82f30f "mm: drop stale MAX_ORDER references"
+    - b190a5ed2798 "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
     - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2 commits)
-      - 30ee06fbd9af "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
+      - 5094cd253f24 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
-      - 5cb9127972c1 "mm/page_isolation: guard compound_order() against racing" (1/2)
+      - ca49fe8408c6 "mm/page_isolation: guard compound_order() against racing" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
-      - 18bec04be84e "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
+      - 295333e25af9 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - 113af4f530a7 "mm: adjust out-dated document of __GFP_NOFAIL"
+    - 7ed33afbb4ec "mm: adjust out-dated document of __GFP_NOFAIL"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
-      - a2b65aa61739 "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
+      - 29bc0b5d617b "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811172156.356053-3-pfalcato@suse.de
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (1) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+      - 7d46a407690e "mm: replace PF_KCOMPACTD flag with kthread_func() check" (3/4)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

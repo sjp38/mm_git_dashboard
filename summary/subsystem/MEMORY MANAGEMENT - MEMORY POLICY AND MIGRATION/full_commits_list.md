@@ -17,27 +17,27 @@
     - reviewer, nobody: 2 commits
     - reviewer, no role : 2 commits
   - full commits list
-    - ee279dff8131 "mm/mempolicy: take a cpuset cookie for the interleave node count"
+    - 15d9e2dd69c6 "mm/mempolicy: take a cpuset cookie for the interleave node count"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260828193111.1023497-1-gourry@gourry.net
       - Link: https://lore.kernel.org/all/20250907160829.91628-1-chelsyratnawat2001@gmail.com/
     - series "mm/mempolicy: stop copying state in the interleave paths". (2 commits)
-      - 004aa5c22856 "mm/mempolicy: use SRCU for the weighted interleave state" (0/2)
+      - 891a168c2075 "mm/mempolicy: use SRCU for the weighted interleave state" (0/2)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260829015943.1258774-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260829015943.1258774-2-gourry@gourry.net
-      - 598acd8c5620 "mm/mempolicy: stop copying the nodemask in the interleave paths" (1/2)
+      - a77adf1514c1 "mm/mempolicy: stop copying the nodemask in the interleave paths" (1/2)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260829015943.1258774-3-gourry@gourry.net
-      - 108e50480c3a "mm/mempolicy: skip zone device folios when queueing folios" (2/3)
+      - 9ebb788ef079 "mm/mempolicy: skip zone device folios when queueing folios" (2/3)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-4-gourry@gourry.net
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, reviewer: 1 commits
   - full commits list
-    - e476204abe31 "mm/migrate_device: fix function name in kernel-doc"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/7D206FC95BDCAA0F+20260901065131.1759298-1-zhaozhengzhuo@uniontech.com
+    - df2c750fc259 "mm/migrate_device: fix function name in kernel-doc"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/13768B0F4A5FC1F5+20260902031229.1821112-1-zhaozhengzhuo@uniontech.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,14 +1,24 @@
 - baseline: v7.3-rc1-71-g786262be6048d
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 8ef8543b6951 "mm/shrinker: fix bogus set_shrinker_bit() with cgroup.memory=nokmem"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260902073800.305481-1-jiayuan.chen@linux.dev
+- mm-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-unstable: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 804d319c9670 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
+    - b1cb889f6162 "mm/list_lru: disable memcg awareness under cgroup_disable=memory"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260902093202.609559-1-qinyuntan@linux.alibaba.com
+    - a3208afc5617 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

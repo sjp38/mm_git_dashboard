@@ -7,30 +7,22 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 4 commits
-  - series: 1 (4) -> 1 (3)
-    - reviewer, nobody: 3 -> 2 commits
-    - reviewer, no role : 1 -> 2 commits
-    - reviewer, reviewer: 1 -> 0 commits
-  - changed commits
-    - ee279dff8131 "mm/mempolicy: take a cpuset cookie for the interleave node count"
-      - Authored by a reviewer, reviewed by no role player
-      - added "Reviewed-by: Huang Ying <ying.huang@linux.alibaba.com>"
-      - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
-      - Link: https://lore.kernel.org/20260828193111.1023497-1-gourry@gourry.net
-      - Link: https://lore.kernel.org/all/20250907160829.91628-1-chelsyratnawat2001@gmail.com/
-  - dropped commits
-    - series "mm/mglru: clean up folio counters and flag usage", v3. (6)
-      - 688ef52bda68 "mm/migrate: copy all referenced state via folio_migrate_lru_refs (2/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260826-mglru-flags-cleanup-v3-3-d9f1c75549c8@tencent.com
-- mm-new: 0 -> 1 commits
+- mm-unstable: 4 -> 4 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - reviewer, nobody: 2 -> 2 commits (no change)
+    - reviewer, no role : 2 -> 2 commits (no change)
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - e476204abe31 "mm/migrate_device: fix function name in kernel-doc"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/7D206FC95BDCAA0F+20260901065131.1759298-1-zhaozhengzhuo@uniontech.com
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - df2c750fc259 "mm/migrate_device: fix function name in kernel-doc"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/13768B0F4A5FC1F5+20260902031229.1821112-1-zhaozhengzhuo@uniontech.com"
+      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+      - dropped "Link: https://lore.kernel.org/7D206FC95BDCAA0F+20260901065131.1759298-1-zhaozhengzhuo@uniontech.com"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - Link: https://lore.kernel.org/13768B0F4A5FC1F5+20260902031229.1821112-1-zhaozhengzhuo@uniontech.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

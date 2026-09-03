@@ -8,25 +8,26 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 12 commits
-  - series: 0 (7) -> 1 (9)
-    - no role, nobody: 0 -> 2 commits
+- mm-unstable: 12 -> 12 commits (no change)
+  - series: 1 (9) -> 1 (9) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
-  - changed commits
-    - series "mm/hugetlb: fix surplus accounting and availability checks during demotion", v2. (2)
-      - 0cef625c6688 "mm/hugetlb: preserve source surplus accounting during demotion (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260831133519.2505020-2-xialonglong2025@163.com
-      - e91b32f35289 "mm/hugetlb: cap demotion at currently available free pages (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260831133519.2505020-3-xialonglong2025@163.com
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, maintainer: 0 -> 2 commits
+  - new commits
+    - series "Fix bugs in HugeTLB allocation when mem_cgroup_charge_hugetlb() fails". (2)
+      - 56180ee733c7 "mm: hugetlb: return -ENOSPC on memcg charge failure (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-0-e3e8942c141b@google.com
+        - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-1-e3e8942c141b@google.com
+      - b25875717194 "mm: hugetlb: drop refcount before freeing on memcg charge failure (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-2-e3e8942c141b@google.com
+        - Link: https://lore.kernel.org/all/20260722-hugetlb-alloc-failure-fixes-v4-0-88e8b81970dc@google.com/ [1]
+        - Link: https://lore.kernel.org/all/20260708-hugetlb-alloc-failure-fixes-v2-0-c7f27cbb462b@google.com/ [2]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - d2c5e077cbea "mm/secretmem: properly account locked pages"
+    - 9f0ad4da49a2 "mm/secretmem: properly account locked pages"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260826-secretmem-accounting-v3-1-94cb04399510@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -13,7 +13,7 @@
     - no role, nobody: 1 commits
   - full commits list
     - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v2. (6 commits)
-      - 4a1f6913700f "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
+      - a6f3c83b9eec "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-1-b013a37d84b3@kernel.org
         - Link: https://lore.kernel.org/all/20260611130144.1385343-4-abarnas@google.com [1]

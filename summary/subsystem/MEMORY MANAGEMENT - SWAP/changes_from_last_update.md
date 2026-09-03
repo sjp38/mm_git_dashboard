@@ -6,20 +6,19 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 8 commits
-  - series: 2 (6) -> 2 (7)
-    - no role, no role : 5 -> 6 commits
+- mm-unstable: 8 -> 8 commits (no change)
+  - series: 2 (7) -> 2 (7) (no change)
+    - no role, no role : 6 -> 6 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm: avoid large folio splits when swap is unavailable", v7. (4)
-      - c50a9b0b0dac "mm: distinguish large folio swap allocation failures (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260830042920.2280454-3-xueyuan.chen21@gmail.com
-- mm-new: 2 -> 1 commits
-  - series: 0 (1) -> 0 (0)
+- mm-new: 1 -> 2 commits
+  - series: 0 (0) -> 0 (1)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
+      - cc0770c8d4da "mm: replace PF_KSWAPD flag with kthread_func() check (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
