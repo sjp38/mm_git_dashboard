@@ -1,8 +1,13 @@
 - baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - cdfce5054bbb "selftests/cgroup: account for zswap shrinker writeback"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260902194521.3652178-1-joshua.hahnjy@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 5 -> 5 commits (no change)

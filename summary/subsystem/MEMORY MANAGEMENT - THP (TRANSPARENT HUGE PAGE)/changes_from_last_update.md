@@ -14,8 +14,17 @@
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 8bb4b93fc4bd "selftests/mm: remove unreachable returns after ksft exit helpers"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
+    - d2ea7464b69d "mm/huge_memory: fix various coding style warnings"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260903092200.88910-1-christosskarlos.kernel@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

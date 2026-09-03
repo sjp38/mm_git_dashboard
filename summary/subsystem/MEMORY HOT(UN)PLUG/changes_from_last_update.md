@@ -7,8 +7,13 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - a6d453a02f4f "mm/memory_hotplug: factor out node_is_memoryless()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

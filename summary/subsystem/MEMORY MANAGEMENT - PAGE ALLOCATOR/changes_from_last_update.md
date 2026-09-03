@@ -5,18 +5,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 2 (4) -> 2 (4) (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
+- mm-unstable: 6 -> 7 commits
+  - series: 2 (4) -> 2 (5)
+    - no role, reviewer: 5 -> 6 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
+  - changed commits
     - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
-      - 7d46a407690e "mm: replace PF_KCOMPACTD flag with kthread_func() check (3/4)"
+      - 62b3511a92d2 "mm: replace PF_KCOMPACTD flag with kthread_func() check (3/4)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+  - new commits
+    - eb629465475d "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260903092126.24685-1-hongfu.li@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

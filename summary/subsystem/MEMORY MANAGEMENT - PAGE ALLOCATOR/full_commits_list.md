@@ -2,38 +2,41 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 6 total, 2 (4) series, 2 non-series commits
+- mm-unstable: 7 total, 2 (5) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 5 commits
+    - no role, reviewer: 6 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - b190a5ed2798 "mm: drop stale MAX_ORDER references"
+    - 89f971460133 "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
     - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2 commits)
-      - 5094cd253f24 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
+      - fa366ab30453 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
-      - ca49fe8408c6 "mm/page_isolation: guard compound_order() against racing" (1/2)
+      - cff10206a063 "mm/page_isolation: guard compound_order() against racing" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
-      - 295333e25af9 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
+      - e38e1f63f4ad "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - 7ed33afbb4ec "mm: adjust out-dated document of __GFP_NOFAIL"
+    - ee7269399e01 "mm: adjust out-dated document of __GFP_NOFAIL"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
-      - 29bc0b5d617b "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
+      - de19219392f2 "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811172156.356053-3-pfalcato@suse.de
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-  - full commits list
-      - 7d46a407690e "mm: replace PF_KCOMPACTD flag with kthread_func() check" (3/4)
+      - 62b3511a92d2 "mm: replace PF_KCOMPACTD flag with kthread_func() check" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - eb629465475d "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260903092126.24685-1-hongfu.li@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

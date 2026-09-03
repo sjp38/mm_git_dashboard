@@ -1,317 +1,284 @@
 - baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
-- mm-hotfixes-stable: 10 -> 10 commits (no change)
+- mm-hotfixes-stable: 10 -> 12 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, no role : 2 -> 3 commits
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 11 -> 14 commits
+  - changed commits
+    - 35b0fb391b0d "mm/mremap: reset unfaulted VMA page offset for MREMAP_DONTUNMAP"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - added "Tested-by: syzbot+f12658786a4153df5113@syzkaller.appspotmail.com"
+      - Link: https://lore.kernel.org/20260825-fix-mremap-dontunmap-pgoff-v1-1-39a40b2c98b3@kernel.org
+    - 97d34aa65c29 "mm/secretmem: properly account locked pages"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260826-secretmem-accounting-v3-1-94cb04399510@kernel.org
+- mm-hotfixes-unstable: 14 -> 12 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 3 -> 5 commits
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 5 -> 4 commits
+    - no role, reviewer: 2 -> 1 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - a0ae2d452e82 "mm/vma: correctly unaccount on mmap_prepare() failure"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260902-fix-unaccount-mmap_prepare-v1-1-ea070189fdfb@kernel.org
-    - 8ef8543b6951 "mm/shrinker: fix bogus set_shrinker_bit() with cgroup.memory=nokmem"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260902073800.305481-1-jiayuan.chen@linux.dev
-    - e2c9fc9641d2 "mm/folio: EXPORT_SYMBOL_FOR_KVM(lru_cache_drain_for_folio)"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/lkml/bd6c9c74-e374-a9d3-ba1f-8b6f430894fc@google.com/T/#u
-      - Link: https://lore.kernel.org/02876cea-5727-2ca4-bead-73659ea6fec4@google.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 120 -> 147 commits
-  - series: 27 (91) -> 29 (114)
-    - no role, nobody: 16 -> 20 commits
-    - no role, no role : 46 -> 49 commits
-    - no role, reviewer: 17 -> 18 commits
-    - no role, maintainer: 25 -> 25 commits (no change)
+- mm-unstable: 147 -> 180 commits
+  - series: 29 (114) -> 35 (146)
+    - no role, nobody: 20 -> 25 commits
+    - no role, no role : 49 -> 56 commits
+    - no role, reviewer: 18 -> 21 commits
+    - no role, maintainer: 25 -> 27 commits
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 0 -> 19 commits
-    - maintainer, no role : 8 -> 8 commits (no change)
+    - maintainer, nobody: 19 -> 25 commits
+    - maintainer, no role : 8 -> 18 commits
   - new commits
-    - b1cb889f6162 "mm/list_lru: disable memcg awareness under cgroup_disable=memory"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260902093202.609559-1-qinyuntan@linux.alibaba.com
-  - changed commits
-    - series "make unused huge shrinker memcg aware", v4. (3)
-      - e20e510cf72b "mm: shmem: make unused huge shrinker memcg aware (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Cc: Qinyun Tan <qinyuntan@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/94cc7fe1fd645254ae90effc1c0687678438d940.1786955972.git.zhengqi.arch@bytedance.com
-    - series "memcg: remove the v1 soft limit", v2. (8)
-      - 43d79f7c7631 "memcg: remove v1 soft limit reclaim (0/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev"
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-1-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-3-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev
-        - Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev
-      - b873274d8d78 "memcg: remove mem_cgroup_shrink_node() (1/8)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-4-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev
-      - 02da79b48446 "memcg: remove the soft limit rbtree (3/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-5-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-6-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-5-shakeel.butt@linux.dev
-      - 0e1c768bbfd3 "memcg: remove lru_gen_soft_reclaim() (4/8)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-7-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev
-      - aea4244a9832 "memcg: remove mem_cgroup->soft_limit (6/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-8-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-9-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-8-shakeel.butt@linux.dev
-      - 488f03e22b5b "memcg: simplify v1 event ratelimiting (7/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-9-shakeel.butt@linux.dev"
-        - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-10-shakeel.butt@linux.dev"
-        - dropped "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260902174311.1772372-9-shakeel.butt@linux.dev
-    - series "mm/mglru: clean up isolate_folios for readability and clarity", v2. (2)
-      - 896798bd849d "mm/mglru: make type fallback logic explicit in isolate_folios() (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Baoquan He <baoquan.he@linux.dev>"
-        - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
-        - Link: https://lore.kernel.org/20260829074204.45304-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/20260829074204.45304-2-baohua@kernel.org
+    - 6eb1ef9d5fed "mm: revert slight behavior change for swappiness 1-200"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260903070500.76379-1-baohua@kernel.org
     - series "mm: optimize zone-device memmap initialization", v11. (7)
-      - ee90c18d5bbe "mm: add a template-based fast path for zone-device page init (2/7)"
+      - d96c46ac7a11 "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix (3/7)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260903025806.70825-1-lizhe.67@bytedance.com
+  - changed commits
+    - series "mm/damon: fix misc bugs in kunit, quota goals and sysfs refresh_ms". (4)
+      - 23ff85916acf "mm/damon/tests/core-kunit: test committing psi goal to psi goal (0/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lian Wang <lianux.mm@gmail.com>"
+        - added "Reviewed-by: Kunwu Chan <kunwu.chan@gmail.com>"
+        - added "Tested-by: Lian Wang <lianux.mm@gmail.com>"
+        - Link: https://lore.kernel.org/20260902002725.108635-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260902002725.108635-2-sj@kernel.org
+      - f0d856952943 "mm/damon/core: handle uninitialized damos_quota_goal->last_psi_total (1/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lian Wang <lianux.mm@gmail.com>"
+        - added "Reviewed-by: Kunwu Chan <kunwu.chan@gmail.com>"
+        - added "Tested-by: Lian Wang <lianux.mm@gmail.com>"
+        - Link: https://lore.kernel.org/20260902002725.108635-3-sj@kernel.org
+        - Link: https://lore.kernel.org/20260718005316.89585-1-sj@kernel.org [1]
+      - cd367ad4aaf9 "mm/damon/core: copy nid for eligible_mem_bp damos quota goal commit (2/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260827045035.94611-1-sj@kernel.org [1]"
+        - added "Reviewed-by: Lian Wang <lianux.mm@gmail.com>"
+        - added "Reviewed-by: Kunwu Chan <kunwu.chan@gmail.com>"
+        - added "Tested-by: Lian Wang <lianux.mm@gmail.com>"
+        - dropped "Link: https://lore.kkernel.org/20260827045035.94611-1-sj@kernel.org [1]"
+        - Link: https://lore.kernel.org/20260902002725.108635-4-sj@kernel.org
+        - Link: https://lore.kernel.org/20260827045035.94611-1-sj@kernel.org [1]
+      - 5e58a584344b "mm/damon/sysfs: set next refresh jiffies per sysfs context (3/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lian Wang <lianux.mm@gmail.com>"
+        - added "Reviewed-by: Kunwu Chan <kunwu.chan@gmail.com>"
+        - added "Tested-by: Lian Wang <lianux.mm@gmail.com>"
+        - Link: https://lore.kernel.org/20260902002725.108635-5-sj@kernel.org
+    - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7)
+      - 1af40e3e07eb "mm/mglru: separate folio generation update from LRU accounting (0/7)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260831111638.76012-4-lizhe.67@bytedance.com
-      - 67ff3a088bea "mm: extend the template fast path to zone-device compound tails (3/7)"
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260901232421.40157-1-baohua@kernel.org
+        - Link: https://lore.kernel.org/20260901232421.40157-2-baohua@kernel.org
+        - Link: https://lore.kernel.org/linux-mm/20260812121658.69965-1-baohua@kernel.org/ [1]
+        - Link: https://lore.kernel.org/linux-mm/20260827035416.3012015-1-xueyuan.chen21@gmail.com/ [2]
+      - 1bbd849b0c44 "mm/mglru: batch update lrugen->nr_pages in inc_min_seq() (1/7)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260831111638.76012-5-lizhe.67@bytedance.com
-    - 9fe8c5e2546c "mm/page_table_check: add explicit pmd_none check in pte_clear_range"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260819025516.2967199-1-ye.liu@linux.dev
-    - c91e6aab95fb "mm/page_table_check: skip zero pages"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/1f8848512d2e3ded944f8d595c29faee8fdaeab0.1784645969.git.roxy520tt@gmail.com
-    - series "mm/damon: fix DAMOS bugs in core, paddr and vaddr". (8)
-      - 5af97fcf5322 "mm/damon/core: skip applying scheme if region split for quota fails (0/8)"
-        - Authored by a maintainer, reviewed by nobody
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901131850.98037-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260901131850.98037-2-sj@kernel.org
-        - Link: https://lore.kernel.org/20260718171523.87547-1-sj@kernel.org [1]
-      - 92cde011385f "mm/damon/paddr: respect folio end for DAMOS_STAT (1/8)"
-        - Authored by a maintainer, reviewed by nobody
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260901232421.40157-3-baohua@kernel.org
+      - 19b581b7bddb "mm/mglru: enhance cold/hot inversion handling in inc_min_seq() (2/7)"
+        - Authored by no role player, reviewed by a reviewer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901131850.98037-3-sj@kernel.org
-      - c8ad43eb299b "mm/damon/paddr: respect folio end for DAMOS actions except STAT (2/8)"
-        - Authored by a maintainer, reviewed by nobody
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260901232421.40157-4-baohua@kernel.org
+      - da2629c85c3d "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq() (3/7)"
+        - Authored by no role player, reviewed by no role player
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901131850.98037-4-sj@kernel.org
-        - Link: https://lore.kernel.org/20260517234112.89245-1-sj@kernel.org [1]
-      - 6cab68961355 "mm/damon/vaddr: respect folio end for DAMOS_STAT (3/8)"
-        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260901232421.40157-5-baohua@kernel.org
+      - ca1799caf4d2 "mm/mglru: make LRU folio prefetch helper an inline function (4/7)"
+        - Authored by no role player, reviewed by no role player
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901131850.98037-5-sj@kernel.org
-        - Link: https://lore.kernel.org/20260514015053.149396-1-sj@kernel.org [1]
-      - dcb67f7425d5 "mm/damon/vaddr: respect folio end for DAMOS_MIGRATE_{HOT,COLD} (4/8)"
-        - Authored by a maintainer, reviewed by nobody
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260901232421.40157-6-baohua@kernel.org
+      - fc1827a700e9 "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail (5/7)"
+        - Authored by no role player, reviewed by no role player
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901131850.98037-6-sj@kernel.org
-        - Link: https://lore.kernel.org/20260514015053.149396-1-sj@kernel.org [1]
-      - 8255b8536396 "mm/damon/core: handle extreme memory state in damon_get_node_mem_bp() (5/8)"
-        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260901232421.40157-7-baohua@kernel.org
+      - 1d0896f8e139 "mm/mglru: batch move folios to the second-oldest gen's LRU (6/7)"
+        - Authored by no role player, reviewed by no role player
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901131850.98037-7-sj@kernel.org
-        - Link: https://lore.kernel.org/20260328133216.9697-1-sj@kernel.org [1]
-      - f732d8c75b57 "mm/damon/core: handle extreme memory state in get_node_memcg_used_bp() (6/8)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901131850.98037-8-sj@kernel.org
-        - Link: https://lore.kernel.org/20260329154813.47382-1-sj@kernel.org [1]
-      - 17d8da471c43 "mm/damon/core: handle extreme memory state in get_in_active_mem_bp() (7/8)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901131850.98037-9-sj@kernel.org
-        - Link: https://lore.kernel.org/20260721034756.147011-1-sj@kernel.org [1]
-    - series "mm/damon: introduce data access-as-a-data attribute", v1.1. (17)
-      - 13a4ce0edcb6 "mm/damon/paddr: support PGIDLE_UNSET probe filter type (1/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901132506.99243-3-sj@kernel.org
-      - 497090f1b55e "mm/damon/sysfs: support pgidle_unset probe filter type (2/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901132506.99243-4-sj@kernel.org
-      - add4f2614382 "mm/damon/core: introduce damon_prep struct (4/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901132506.99243-6-sj@kernel.org
-      - c8905c79ea48 "mm/damon/core: commit preps (5/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901132506.99243-7-sj@kernel.org
-      - 529a05475571 "mm/damon/core: introduce damon_operations->prep_probes() (6/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901132506.99243-8-sj@kernel.org
-      - 2176209b61c5 "mm/damon/paddr: support damon_prep (7/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901132506.99243-9-sj@kernel.org
-      - 859eccd30a40 "mm/damon/sysfs: implement preps directory (8/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901132506.99243-10-sj@kernel.org
-      - d2ef98d62a1e "mm/damon/sysfs: implement preps/nr_preps file (9/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901132506.99243-11-sj@kernel.org
-      - 0b5b1fd1c5a0 "mm/damon/sysfs: create directories for nr_preps writes (10/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901132506.99243-12-sj@kernel.org
-      - dfb3e4940c0c "mm/damon/sysfs: implement prep_action file (11/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901132506.99243-13-sj@kernel.org
-      - 66483461eb3c "mm/damon/sysfs: pass preps to DAMON core (12/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901132506.99243-14-sj@kernel.org
-    - a3208afc5617 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Fixes: 03375203e1da ("mm: do not allocate shrinker info with cgroup.memory=nokmem")"
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Fixes: 03375203e1da8 ("mm: do not allocate shrinker info with cgroup.memory=nokmem")"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
-    - series "percpu: remove code with no effect". (4)
-      - 9ef0b42b20b2 "percpu: remove redundant assignments to bits (0/4)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901165307.1026248-1-ekffu200098@gmail.com
-        - Link: https://lore.kernel.org/20260901165307.1026248-2-ekffu200098@gmail.com
-      - a9c90f4f4844 "percpu: remove unnecessary initialization in pcpu_build_alloc_info() (1/4)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901165307.1026248-3-ekffu200098@gmail.com
-      - 7e73e7bdefd5 "percpu: remove unnecessary cpumask_clear() in pcpu_build_alloc_info() (2/4)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901165307.1026248-4-ekffu200098@gmail.com
-      - 45c8b710db8f "percpu: remove unnecessary return in pcpu_populate_pte() (3/4)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901165307.1026248-5-ekffu200098@gmail.com
-- mm-new: 40 -> 34 commits
-  - series: 4 (23) -> 6 (31)
-    - no role, nobody: 8 -> 5 commits
-    - no role, no role : 7 -> 7 commits (no change)
-    - no role, reviewer: 2 -> 4 commits
-    - no role, maintainer: 0 -> 2 commits
-    - maintainer, nobody: 23 -> 13 commits
-    - maintainer, no role : 0 -> 3 commits
-  - new commits
+        - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
     - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous". (6)
-      - 576fec8b9d4c "mm: move drivers/char/mem.c to mm/char-mem.c (0/6)"
-        - Authored by no role player, reviewed by nobody
+      - 06efb066cded "mm: move drivers/char/mem.c to mm/char-mem.c (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-0-a578c730cec7@kernel.org
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-1-a578c730cec7@kernel.org
-      - 5669d4d9ac8f "mm: implement file_is_dev_zero() to uniquely identify /dev/zero (1/6)"
+      - f43bdc950da6 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero (1/6)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-2-a578c730cec7@kernel.org
-      - 2d0b7af12032 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (2/6)"
+      - 6c160ba2dd13 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (2/6)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-3-a578c730cec7@kernel.org
-      - 01c6d8a48a30 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (3/6)"
+      - d98c8df750a7 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (3/6)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-4-a578c730cec7@kernel.org
     - series "mm/damon: add kunit and selftests for probes and probe weights". (6)
-      - f28bd28671cb "mm/damon/tests/core-kunit: test damon_commit_filter() (0/6)"
+      - ced7270d3e99 "mm/damon/tests/core-kunit: test damon_commit_filter() (0/6)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902140313.85983-1-sj@kernel.org
         - Link: https://lore.kernel.org/20260902140313.85983-2-sj@kernel.org
-      - a28851494d44 "mm/damon/tests/core-kunit: add damon_commit_probes() test (1/6)"
+      - 75a40f9c2882 "mm/damon/tests/core-kunit: add damon_commit_probes() test (1/6)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902140313.85983-3-sj@kernel.org
     - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
-      - cc0770c8d4da "mm: replace PF_KSWAPD flag with kthread_func() check (2/4)"
+      - fc785ab97298 "mm: replace PF_KSWAPD flag with kthread_func() check (2/4)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
-      - 7d46a407690e "mm: replace PF_KCOMPACTD flag with kthread_func() check (3/4)"
+      - 62b3511a92d2 "mm: replace PF_KCOMPACTD flag with kthread_func() check (3/4)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
     - series "Fix bugs in HugeTLB allocation when mem_cgroup_charge_hugetlb() fails". (2)
-      - 56180ee733c7 "mm: hugetlb: return -ENOSPC on memcg charge failure (0/2)"
+      - c642e742333b "mm: hugetlb: return -ENOSPC on memcg charge failure (0/2)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - added "Fixes: 991135774c0e ("memcg/hugetlb: introduce mem_cgroup_charge_hugetlb")"
+        - dropped "Fixes: 991135774c0e0 ("memcg/hugetlb: introduce mem_cgroup_charge_hugetlb")"
         - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-0-e3e8942c141b@google.com
         - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-1-e3e8942c141b@google.com
-      - b25875717194 "mm: hugetlb: drop refcount before freeing on memcg charge failure (1/2)"
+      - 0c1bfcf09485 "mm: hugetlb: drop refcount before freeing on memcg charge failure (1/2)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - added "Fixes: 991135774c0e ("memcg/hugetlb: introduce mem_cgroup_charge_hugetlb")"
+        - dropped "Fixes: 991135774c0e0 ("memcg/hugetlb: introduce mem_cgroup_charge_hugetlb")"
         - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-2-e3e8942c141b@google.com
         - Link: https://lore.kernel.org/all/20260722-hugetlb-alloc-failure-fixes-v4-0-88e8b81970dc@google.com/ [1]
         - Link: https://lore.kernel.org/all/20260708-hugetlb-alloc-failure-fixes-v2-0-c7f27cbb462b@google.com/ [2]
     - series "mm/damon: cleanup code, add test cases, and update guidances in docs". (12)
-      - ccb0f76eb99e "mm/damon/core: use damon_nr_samples_per_aggr() for max merge threshold (0/12)"
-        - Authored by a maintainer, reviewed by nobody
+      - 5d76f0540645 "mm/damon/core: use damon_nr_samples_per_aggr() for max merge threshold (0/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Kunwu Chan <kunwu.chan@gmail.com>"
+        - dropped "Cc: Kunwu Chan <kunwu.chan@gmail.com>"
         - Link: https://lore.kernel.org/20260902054747.99370-1-sj@kernel.org
         - Link: https://lore.kernel.org/20260902054747.99370-2-sj@kernel.org
-      - 6b56370b4fda "mm/damon/core: remove debug messages (1/12)"
+      - b3b97ce9f6cc "mm/damon/core: remove debug messages (1/12)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902054747.99370-3-sj@kernel.org
-      - f539c68e3347 "mm/damon/core: remove string_choices.h include (2/12)"
+      - db5e8b9b97e6 "mm/damon/core: remove string_choices.h include (2/12)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902061401.104419-1-sj@kernel.org
-      - d76723466812 "mm/damon/vaddr: remove a debug message (3/12)"
-        - Authored by a maintainer, reviewed by nobody
+      - d93c29e84f18 "mm/damon/vaddr: remove a debug message (3/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Kunwu Chan <kunwu.chan@gmail.com>"
+        - dropped "Cc: Kunwu Chan <kunwu.chan@gmail.com>"
         - Link: https://lore.kernel.org/20260902054747.99370-4-sj@kernel.org
-      - 4e7ec870ecfc "mm/damon/core: validate number of probes in valid_probe_params() (4/12)"
+      - 4023eaf35761 "mm/damon/core: validate number of probes in valid_probe_params() (4/12)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902054747.99370-5-sj@kernel.org
-      - b75aca942e2d "mm/damon/sysfs: remove probes number validation (5/12)"
+      - 953fd6e530c5 "mm/damon/sysfs: remove probes number validation (5/12)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902054747.99370-6-sj@kernel.org
-      - e538f8dc134c "mm/damon/tests/core-kunit: extend set_regions() test for error case (6/12)"
+      - aae41d77d9be "mm/damon/tests/core-kunit: extend set_regions() test for error case (6/12)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902054747.99370-7-sj@kernel.org
-      - 932c667f7984 "mm/damon/tests/core-kunit: test <=0 size damon_set_regions() inputs (7/12)"
+      - c0aa7e71f86b "mm/damon/tests/core-kunit: test <=0 size damon_set_regions() inputs (7/12)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902054747.99370-8-sj@kernel.org
-      - d5bdbe48da1f "mm/damon/tests/core-kunit: test overlapping ranges for set_regions() (8/12)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260902054747.99370-9-sj@kernel.org
-      - b382988cb6c7 "mm/damon/tests/core-kunit: test damon_nr_samples_per_aggr() (9/12)"
+      - 3d604f750c5f "mm/damon/tests/core-kunit: test overlapping ranges for set_regions() (8/12)"
         - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Kunwu Chan <kunwu.chan@gmail.com>"
+        - Link: https://lore.kernel.org/20260902054747.99370-9-sj@kernel.org
+      - 6abff542121c "mm/damon/tests/core-kunit: test damon_nr_samples_per_aggr() (9/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902054747.99370-10-sj@kernel.org
-  - changed commits
-    - df2c750fc259 "mm/migrate_device: fix function name in kernel-doc"
+- mm-new: 34 -> 16 commits
+  - series: 6 (31) -> 2 (6)
+    - no role, nobody: 5 -> 4 commits
+    - no role, no role : 7 -> 2 commits
+    - no role, reviewer: 4 -> 3 commits
+    - no role, maintainer: 2 -> 0 commits
+    - maintainer, nobody: 13 -> 7 commits
+    - maintainer, no role : 3 -> 0 commits
+  - new commits
+    - ea1cace7e1dd "mm/page_vma_mapped: guard check_pmd() with CONFIG_TRANSPARENT_HUGEPAGE"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260624082359.2869-1-richard.weiyang@gmail.com
+      - Link: https://download.01.org/0day-ci/archive/20260624/202606240042.ffPsEXVc-lkp@intel.com/config [1]
+    - d2ea7464b69d "mm/huge_memory: fix various coding style warnings"
       - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/13768B0F4A5FC1F5+20260902031229.1821112-1-zhaozhengzhuo@uniontech.com"
-      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Link: https://lore.kernel.org/7D206FC95BDCAA0F+20260901065131.1759298-1-zhaozhengzhuo@uniontech.com"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/13768B0F4A5FC1F5+20260902031229.1821112-1-zhaozhengzhuo@uniontech.com
+      - Link: https://lore.kernel.org/20260903092200.88910-1-christosskarlos.kernel@gmail.com
+    - eb629465475d "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260903092126.24685-1-hongfu.li@linux.dev
+    - c29e8cd54f05 "mm/hugetlb: charge folios to the target mm's memcg"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
+    - 3c95f00f5514 "mm/memfd: fix hugetlb reservation accounting in error paths"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260903030134.7407-1-hongfu.li@linux.dev
+    - series "mm/damon: move zero damos quota target_value handling to the core layer". (3)
+      - 13242b593905 "mm/damon/core: error damos_commit_quota_goal() for zero target_value (0/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260903010722.94244-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260903010722.94244-2-sj@kernel.org
+        - Link: https://lore.kernel.org/20260803134034.15217-1-sj@kernel.org [1]
+      - ab5075e8dbe4 "Revert "mm/damon/lru_sort: error out for >10000 active_mem_bp" (1/3)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260903010722.94244-3-sj@kernel.org
+    - series "mm/damon: allow NULL or unstarted damon_ctx parameter for damon_call()". (4)
+      - 78d88d9956f2 "mm/damon/core: handle NULL ctx parameter in damon_call() (0/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260903010334.93622-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260903010334.93622-2-sj@kernel.org
+      - 96f0f43c54de "mm/damon/core: set ctx->call_controls_obsolete in damon_new_ctx() (1/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260903010334.93622-3-sj@kernel.org
+        - Link: https://lore.kernel.org/20260803134646.16640-1-sj@kernel.org [1]
+      - b64dd0c48b6f "mm/damon/reclaim: remove unnecessary damon_call() param validation (2/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260903010334.93622-4-sj@kernel.org
+      - 8eba281ca1c6 "mm/damon/lru_sort: remove unnecessary damon_call() param validation (3/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260903010334.93622-5-sj@kernel.org
+    - a6d453a02f4f "mm/memory_hotplug: factor out node_is_memoryless()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
+    - f1fc44daf618 "mm/hugetlb: don't lock private resv_map during final unmap"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

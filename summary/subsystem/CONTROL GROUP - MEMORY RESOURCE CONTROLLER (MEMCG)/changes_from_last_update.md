@@ -13,40 +13,13 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
-  - changed commits
-    - series "memcg: remove the v1 soft limit", v2. (8)
-      - 43d79f7c7631 "memcg: remove v1 soft limit reclaim (0/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev"
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-3-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-1-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev
-        - Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev
-      - 02da79b48446 "memcg: remove the soft limit rbtree (3/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-5-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-6-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-5-shakeel.butt@linux.dev
-      - b2d728b0df3b "memcg: remove the per-node soft limit tree fields (5/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-7-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-8-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-7-shakeel.butt@linux.dev
-      - aea4244a9832 "memcg: remove mem_cgroup->soft_limit (6/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-8-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-9-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-8-shakeel.butt@linux.dev
-      - 488f03e22b5b "memcg: simplify v1 event ratelimiting (7/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-9-shakeel.butt@linux.dev"
-        - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-10-shakeel.butt@linux.dev"
-        - dropped "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260902174311.1772372-9-shakeel.butt@linux.dev
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - c29e8cd54f05 "mm/hugetlb: charge folios to the target mm's memcg"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

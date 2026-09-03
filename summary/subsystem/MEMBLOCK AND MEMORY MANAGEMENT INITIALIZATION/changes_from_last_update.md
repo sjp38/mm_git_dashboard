@@ -5,23 +5,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 7 commits (no change)
-  - series: 1 (7) -> 1 (7) (no change)
-    - no role, nobody: 3 -> 1 commits
-    - no role, no role : 3 -> 5 commits
+- mm-unstable: 7 -> 8 commits
+  - series: 1 (7) -> 1 (8)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
+  - new commits
     - series "mm: optimize zone-device memmap initialization", v11. (7)
-      - ee90c18d5bbe "mm: add a template-based fast path for zone-device page init (2/7)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260831111638.76012-4-lizhe.67@bytedance.com
-      - 67ff3a088bea "mm: extend the template fast path to zone-device compound tails (3/7)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260831111638.76012-5-lizhe.67@bytedance.com
+      - d96c46ac7a11 "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix (3/7)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260903025806.70825-1-lizhe.67@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

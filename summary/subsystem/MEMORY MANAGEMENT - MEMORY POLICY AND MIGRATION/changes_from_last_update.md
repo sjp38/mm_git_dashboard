@@ -13,16 +13,7 @@
     - reviewer, no role : 2 -> 2 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - df2c750fc259 "mm/migrate_device: fix function name in kernel-doc"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/13768B0F4A5FC1F5+20260902031229.1821112-1-zhaozhengzhuo@uniontech.com"
-      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Link: https://lore.kernel.org/7D206FC95BDCAA0F+20260901065131.1759298-1-zhaozhengzhuo@uniontech.com"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/13768B0F4A5FC1F5+20260902031229.1821112-1-zhaozhengzhuo@uniontech.com
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

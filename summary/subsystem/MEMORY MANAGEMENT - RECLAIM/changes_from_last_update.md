@@ -5,50 +5,69 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 2 (6) -> 2 (6) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 8 -> 17 commits
+  - series: 2 (6) -> 3 (14)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 3 -> 9 commits
+    - no role, reviewer: 1 -> 3 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "memcg: remove the v1 soft limit", v2. (8)
-      - 43d79f7c7631 "memcg: remove v1 soft limit reclaim (0/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev"
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-3-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-1-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev
-        - Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev
-      - b873274d8d78 "memcg: remove mem_cgroup_shrink_node() (1/8)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-4-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev
-      - 0e1c768bbfd3 "memcg: remove lru_gen_soft_reclaim() (4/8)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-7-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev
-    - series "mm/mglru: clean up isolate_folios for readability and clarity", v2. (2)
-      - 896798bd849d "mm/mglru: make type fallback logic explicit in isolate_folios() (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Baoquan He <baoquan.he@linux.dev>"
-        - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
-        - Link: https://lore.kernel.org/20260829074204.45304-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/20260829074204.45304-2-baohua@kernel.org
-- mm-new: 7 -> 8 commits
-  - series: 1 (7) -> 1 (8)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 1 -> 2 commits
   - new commits
-    - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
-      - cc0770c8d4da "mm: replace PF_KSWAPD flag with kthread_func() check (2/4)"
+    - 6eb1ef9d5fed "mm: revert slight behavior change for swappiness 1-200"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260903070500.76379-1-baohua@kernel.org
+  - changed commits
+    - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7)
+      - 1af40e3e07eb "mm/mglru: separate folio generation update from LRU accounting (0/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260901232421.40157-1-baohua@kernel.org
+        - Link: https://lore.kernel.org/20260901232421.40157-2-baohua@kernel.org
+        - Link: https://lore.kernel.org/linux-mm/20260812121658.69965-1-baohua@kernel.org/ [1]
+        - Link: https://lore.kernel.org/linux-mm/20260827035416.3012015-1-xueyuan.chen21@gmail.com/ [2]
+      - 1bbd849b0c44 "mm/mglru: batch update lrugen->nr_pages in inc_min_seq() (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260901232421.40157-3-baohua@kernel.org
+      - 19b581b7bddb "mm/mglru: enhance cold/hot inversion handling in inc_min_seq() (2/7)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260901232421.40157-4-baohua@kernel.org
+      - da2629c85c3d "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq() (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260901232421.40157-5-baohua@kernel.org
+      - ca1799caf4d2 "mm/mglru: make LRU folio prefetch helper an inline function (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260901232421.40157-6-baohua@kernel.org
+      - fc1827a700e9 "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260901232421.40157-7-baohua@kernel.org
+      - 1d0896f8e139 "mm/mglru: batch move folios to the second-oldest gen's LRU (6/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
+    - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
+      - fc785ab97298 "mm: replace PF_KSWAPD flag with kthread_func() check (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
+- mm-new: 8 -> 0 commits
+  - series: 1 (8) -> 0 (0)
+    - no role, no role : 6 -> 0 commits
+    - no role, reviewer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -8,26 +8,40 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 12 commits (no change)
-  - series: 1 (9) -> 1 (9) (no change)
+- mm-unstable: 12 -> 14 commits
+  - series: 1 (9) -> 2 (11)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, maintainer: 0 -> 2 commits
-  - new commits
+    - no role, maintainer: 3 -> 5 commits
+  - changed commits
     - series "Fix bugs in HugeTLB allocation when mem_cgroup_charge_hugetlb() fails". (2)
-      - 56180ee733c7 "mm: hugetlb: return -ENOSPC on memcg charge failure (0/2)"
+      - c642e742333b "mm: hugetlb: return -ENOSPC on memcg charge failure (0/2)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - added "Fixes: 991135774c0e ("memcg/hugetlb: introduce mem_cgroup_charge_hugetlb")"
+        - dropped "Fixes: 991135774c0e0 ("memcg/hugetlb: introduce mem_cgroup_charge_hugetlb")"
         - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-0-e3e8942c141b@google.com
         - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-1-e3e8942c141b@google.com
-      - b25875717194 "mm: hugetlb: drop refcount before freeing on memcg charge failure (1/2)"
+      - 0c1bfcf09485 "mm: hugetlb: drop refcount before freeing on memcg charge failure (1/2)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - added "Fixes: 991135774c0e ("memcg/hugetlb: introduce mem_cgroup_charge_hugetlb")"
+        - dropped "Fixes: 991135774c0e0 ("memcg/hugetlb: introduce mem_cgroup_charge_hugetlb")"
         - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-2-e3e8942c141b@google.com
         - Link: https://lore.kernel.org/all/20260722-hugetlb-alloc-failure-fixes-v4-0-88e8b81970dc@google.com/ [1]
         - Link: https://lore.kernel.org/all/20260708-hugetlb-alloc-failure-fixes-v2-0-c7f27cbb462b@google.com/ [2]
+- mm-new: 2 -> 2 commits (no change)
+  - series: 1 (2) -> 0 (0)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 2 -> 0 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - c29e8cd54f05 "mm/hugetlb: charge folios to the target mm's memcg"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
+    - f1fc44daf618 "mm/hugetlb: don't lock private resv_map during final unmap"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

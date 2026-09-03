@@ -8,13 +8,20 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - 4b67e50e6297 "mm: make per-VMA locks available universally" (0/7)
+      - 59d4bbde1202 "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-    - 96c8ebc0c539 "mm/rmap: remove stale hugetlb check in try_to_unmap_one"
+    - 91c3d346cd35 "mm/rmap: remove stale hugetlb check in try_to_unmap_one"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260831082849.3573957-1-dev.jain@arm.com
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+  - full commits list
+    - ea1cace7e1dd "mm/page_vma_mapped: guard check_pmd() with CONFIG_TRANSPARENT_HUGEPAGE"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260624082359.2869-1-richard.weiyang@gmail.com
+      - Link: https://download.01.org/0day-ci/archive/20260624/202606240042.ffPsEXVc-lkp@intel.com/config [1]
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

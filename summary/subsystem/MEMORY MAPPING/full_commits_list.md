@@ -1,63 +1,63 @@
 - baseline: v7.3-rc1-71-g786262be6048d
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 4 total, 0 (0) series, 4 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - 35b0fb391b0d "mm/mremap: reset unfaulted VMA page offset for MREMAP_DONTUNMAP"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260825-fix-mremap-dontunmap-pgoff-v1-1-39a40b2c98b3@kernel.org
+- mm-hotfixes-unstable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 2 commits
-    - no role, reviewer: 1 commits
   - full commits list
-    - ad71cfad5966 "mm/mremap: reset unfaulted VMA page offset for MREMAP_DONTUNMAP"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260825-fix-mremap-dontunmap-pgoff-v1-1-39a40b2c98b3@kernel.org
-    - 58a8596d6987 "mm/mremap: account mm->locked_vm correctly for MREMAP_DONTUNMAP"
+    - 6b7e38d28d4f "mm/mremap: account mm->locked_vm correctly for MREMAP_DONTUNMAP"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260828-mremap-fix-locked-vm-v1-1-c80be7505d1e@kernel.org
-    - 76d412c2caf4 "mm/mlock: use the IRQ-safe accessor for NR_MLOCK in __munlock_folio()"
+    - 4d51540488aa "mm/mlock: use the IRQ-safe accessor for NR_MLOCK in __munlock_folio()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260901180109.3797944-1-shakeel.butt@linux.dev
-    - a0ae2d452e82 "mm/vma: correctly unaccount on mmap_prepare() failure"
+    - 20587abb367c "mm/vma: correctly unaccount on mmap_prepare() failure"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260902-fix-unaccount-mmap_prepare-v1-1-ea070189fdfb@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 2 total, 2 (2) series, 0 non-series commits
+- mm-unstable: 8 total, 3 (8) series, 0 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 4 commits
+    - no role, no role : 2 commits
     - no role, maintainer: 1 commits
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - bd61c125c895 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - c2b68356edc6 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - 4b67e50e6297 "mm: make per-VMA locks available universally" (0/7)
+      - 59d4bbde1202 "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-- mm-new: 6 total, 1 (6) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 5 commits
-    - no role, no role : 1 commits
-  - full commits list
     - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous". (6 commits)
-      - 576fec8b9d4c "mm: move drivers/char/mem.c to mm/char-mem.c" (0/6)
-        - Authored by no role player, reviewed by nobody
+      - 06efb066cded "mm: move drivers/char/mem.c to mm/char-mem.c" (0/6)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-0-a578c730cec7@kernel.org
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-1-a578c730cec7@kernel.org
-      - 5669d4d9ac8f "mm: implement file_is_dev_zero() to uniquely identify /dev/zero" (1/6)
+      - f43bdc950da6 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero" (1/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-2-a578c730cec7@kernel.org
-      - 2d0b7af12032 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous" (2/6)
+      - 6c160ba2dd13 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous" (2/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-3-a578c730cec7@kernel.org
-      - 01c6d8a48a30 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
+      - d98c8df750a7 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-4-a578c730cec7@kernel.org
-      - 549fa783d787 "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon" (4/6)
+      - 754c6cd45c70 "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-5-a578c730cec7@kernel.org
-      - 90e90a046626 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests" (5/6)
+      - 142acf172e3d "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests" (5/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-6-a578c730cec7@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

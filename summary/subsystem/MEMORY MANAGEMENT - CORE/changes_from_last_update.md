@@ -1,61 +1,41 @@
 - baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - e2c9fc9641d2 "mm/folio: EXPORT_SYMBOL_FOR_KVM(lru_cache_drain_for_folio)"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/lkml/bd6c9c74-e374-a9d3-ba1f-8b6f430894fc@google.com/T/#u
-      - Link: https://lore.kernel.org/02876cea-5727-2ca4-bead-73659ea6fec4@google.com
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 29 -> 31 commits
-  - series: 6 (24) -> 7 (26)
-    - no role, no role : 20 -> 22 commits
+- mm-unstable: 31 -> 34 commits
+  - series: 7 (26) -> 7 (29)
+    - no role, nobody: 0 -> 3 commits
+    - no role, no role : 22 -> 22 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - series "memcg: remove the v1 soft limit", v2. (8)
-      - b873274d8d78 "memcg: remove mem_cgroup_shrink_node() (1/8)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-4-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev
-      - 0e1c768bbfd3 "memcg: remove lru_gen_soft_reclaim() (4/8)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev"
-        - dropped "Link: https://lore.kernel.org/20260811203203.3456029-7-shakeel.butt@linux.dev"
-        - Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev
-    - series "mm: remove three unused helpers from mm.h", v2. (2)
-      - ff9bb4d569cf "mm: remove unused mark_page_reserved() (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-0-f6474e169c23@columbia.edu
-        - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-1-f6474e169c23@columbia.edu
-      - 931dc4e7a0d3 "mm: remove unused totalram_pages_inc() and totalram_pages_dec() (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-2-f6474e169c23@columbia.edu
-- mm-new: 2 -> 3 commits
-  - series: 1 (2) -> 0 (3)
-    - no role, nobody: 0 -> 3 commits
-    - no role, no role : 2 -> 0 commits
-  - new commits
     - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous". (6)
-      - 5669d4d9ac8f "mm: implement file_is_dev_zero() to uniquely identify /dev/zero (1/6)"
+      - f43bdc950da6 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero (1/6)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-2-a578c730cec7@kernel.org
-      - 2d0b7af12032 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (2/6)"
+      - 6c160ba2dd13 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (2/6)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-3-a578c730cec7@kernel.org
-      - 01c6d8a48a30 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (3/6)"
+      - d98c8df750a7 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (3/6)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-4-a578c730cec7@kernel.org
+- mm-new: 3 -> 1 commits
+  - series: 0 (3) -> 0 (0)
+    - no role, nobody: 3 -> 0 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - f1fc44daf618 "mm/hugetlb: don't lock private resv_map during final unmap"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

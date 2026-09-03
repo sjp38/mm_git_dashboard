@@ -7,15 +7,15 @@
     - no role, no role : 1 commits
     - no role, reviewer: 2 commits
   - full commits list
-    - bb8cc000efb2 "mm/ksm: mark migration stores with WRITE_ONCE()"
+    - ae70191abcbd "mm/ksm: mark migration stores with WRITE_ONCE()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260824112433.191301-1-nicoyip.dev@gmail.com
     - series "docs/ksm: fix advisor documentation and comment", v3. (2 commits)
-      - ed778eaa2788 "docs: ksm: fix typos in sysfs knob names" (0/2)
+      - bfbb05833e51 "docs: ksm: fix typos in sysfs knob names" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260824061010.3343959-1-tujinjiang@huawei.com
         - Link: https://lore.kernel.org/20260824061010.3343959-2-tujinjiang@huawei.com
-      - c513d80c7f1f "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
+      - ff5c260d086b "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/linux-mm/20231028000945.2428830-2-shr@devkernel.io/ [1]
         - Link: https://lore.kernel.org/20260824061010.3343959-3-tujinjiang@huawei.com

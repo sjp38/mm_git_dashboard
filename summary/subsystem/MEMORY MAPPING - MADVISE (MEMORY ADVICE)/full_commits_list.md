@@ -12,7 +12,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - e8acbf6d7348 "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
+      - bcb5adb43320 "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-3-gourry@gourry.net
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

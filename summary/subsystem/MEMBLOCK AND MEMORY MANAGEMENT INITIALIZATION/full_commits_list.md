@@ -2,34 +2,37 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 7 total, 1 (7) series, 0 non-series commits
+- mm-unstable: 8 total, 1 (8) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 5 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - b93077c66d58 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+      - 0a746fdde1e2 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825084608.47437-4-songmuchun@bytedance.com
-      - 51923b156d06 "mm/mm_init: factor out pfn_to_zone()" (5/17)
+      - e8d8457335b4 "mm/mm_init: factor out pfn_to_zone()" (5/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-7-songmuchun@bytedance.com
-      - 20d5f30dca4c "mm/sparse: initialize memory sections earlier" (8/17)
+      - 64bb4c669997 "mm/sparse: initialize memory sections earlier" (8/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-10-songmuchun@bytedance.com
     - series "mm: optimize zone-device memmap initialization", v11. (7 commits)
-      - c6093edf0082 "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
+      - e0fcf7912bd5 "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-1-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/20260831111638.76012-2-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/all/aiEoByaQdRR3xtM5@nvdebian.thelocal/ [1]
-      - ee90c18d5bbe "mm: add a template-based fast path for zone-device page init" (2/7)
+      - c83bf389f8f1 "mm: add a template-based fast path for zone-device page init" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-4-lizhe.67@bytedance.com
-      - 67ff3a088bea "mm: extend the template fast path to zone-device compound tails" (3/7)
+      - d96c46ac7a11 "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260903025806.70825-1-lizhe.67@bytedance.com
+      - 7241d58c596a "mm: extend the template fast path to zone-device compound tails" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-5-lizhe.67@bytedance.com
-      - fe94f568e5ec "mm: use memcpy_nontemporal() in zone-device template copies" (5/7)
+      - ff523f756bc6 "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831111638.76012-7-lizhe.67@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
