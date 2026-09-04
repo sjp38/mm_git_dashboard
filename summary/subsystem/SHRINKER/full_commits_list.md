@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 720a5e1a43e6 "mm/shrinker: fix bogus set_shrinker_bit() with cgroup.memory=nokmem"
+    - 1261ac396b99 "mm/shrinker: fix bogus set_shrinker_bit() with cgroup.memory=nokmem"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260902073800.305481-1-jiayuan.chen@linux.dev
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -13,10 +13,10 @@
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 897b9d1c45e3 "mm/list_lru: disable memcg awareness under cgroup_disable=memory"
+    - e6f92de6aa59 "mm/list_lru: disable memcg awareness under cgroup_disable=memory"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260902093202.609559-1-qinyuntan@linux.alibaba.com
-    - 733de140ff25 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
+    - 606edb0f66af "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

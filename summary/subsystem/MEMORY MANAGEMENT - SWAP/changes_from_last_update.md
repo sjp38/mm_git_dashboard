@@ -6,21 +6,14 @@
     - reviewer, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 9 commits
-  - series: 2 (7) -> 2 (8)
+- mm-unstable: 9 -> 9 commits (no change)
+  - series: 2 (8) -> 2 (8) (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
-      - fc785ab97298 "mm: replace PF_KSWAPD flag with kthread_func() check (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
-- mm-new: 2 -> 1 commits
-  - series: 0 (1) -> 0 (0)
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

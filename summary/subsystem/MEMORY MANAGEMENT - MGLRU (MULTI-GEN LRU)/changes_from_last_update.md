@@ -5,69 +5,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 23 commits
-  - series: 3 (12) -> 4 (20)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 5 -> 11 commits
-    - no role, reviewer: 5 -> 7 commits
+- mm-unstable: 23 -> 23 commits (no change)
+  - series: 4 (20) -> 4 (20) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 11 -> 11 commits (no change)
+    - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - 6eb1ef9d5fed "mm: revert slight behavior change for swappiness 1-200"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260903070500.76379-1-baohua@kernel.org
-  - changed commits
-    - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7)
-      - 1af40e3e07eb "mm/mglru: separate folio generation update from LRU accounting (0/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260901232421.40157-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/20260901232421.40157-2-baohua@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260812121658.69965-1-baohua@kernel.org/ [1]
-        - Link: https://lore.kernel.org/linux-mm/20260827035416.3012015-1-xueyuan.chen21@gmail.com/ [2]
-      - 1bbd849b0c44 "mm/mglru: batch update lrugen->nr_pages in inc_min_seq() (1/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260901232421.40157-3-baohua@kernel.org
-      - 19b581b7bddb "mm/mglru: enhance cold/hot inversion handling in inc_min_seq() (2/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260901232421.40157-4-baohua@kernel.org
-      - da2629c85c3d "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq() (3/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901232421.40157-5-baohua@kernel.org
-      - ca1799caf4d2 "mm/mglru: make LRU folio prefetch helper an inline function (4/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260901232421.40157-6-baohua@kernel.org
-      - fc1827a700e9 "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail (5/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901232421.40157-7-baohua@kernel.org
-      - 1d0896f8e139 "mm/mglru: batch move folios to the second-oldest gen's LRU (6/7)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
-    - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
-      - fc785ab97298 "mm: replace PF_KSWAPD flag with kthread_func() check (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
-- mm-new: 8 -> 0 commits
-  - series: 1 (8) -> 0 (0)
-    - no role, no role : 6 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,7 +7,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - a6d453a02f4f "mm/memory_hotplug: factor out node_is_memoryless()"
+    - 77a622e07892 "mm/memory_hotplug: factor out node_is_memoryless()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

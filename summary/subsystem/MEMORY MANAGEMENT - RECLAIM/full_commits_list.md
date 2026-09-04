@@ -12,64 +12,64 @@
     - reviewer, reviewer: 1 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - 9c02d66b1e67 "mm/vmscan: drop the combined limit gate in __node_reclaim()"
+    - bdc1a66c01b7 "mm/vmscan: drop the combined limit gate in __node_reclaim()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260826124409.35569-1-ridong.chen@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260723045718.2052070-1-ridong.chen@linux.dev [1]
-    - aead7072765f "mm/mglru: preserve inactive placement when enabling MGLRU"
+    - b2abd6b69dcd "mm/mglru: preserve inactive placement when enabling MGLRU"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260821021606.877330-1-ridong.chen@linux.dev
     - series "memcg: remove the v1 soft limit", v2. (8 commits)
-      - 8d0fe1807bdd "memcg: remove v1 soft limit reclaim" (0/8)
+      - 58b13d63f80e "memcg: remove v1 soft limit reclaim" (0/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev
-      - dc9fff89eb70 "memcg: remove mem_cgroup_shrink_node()" (1/8)
+      - 2f359e566b14 "memcg: remove mem_cgroup_shrink_node()" (1/8)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev
-      - b715d738130f "memcg: remove lru_gen_soft_reclaim()" (4/8)
+      - a5b9db4532ff "memcg: remove lru_gen_soft_reclaim()" (4/8)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev
     - series "mm/mglru: clean up isolate_folios for readability and clarity", v2. (2 commits)
-      - c941ad883003 "mm/mglru: make type fallback logic explicit in isolate_folios()" (0/2)
+      - 4b103f3c8628 "mm/mglru: make type fallback logic explicit in isolate_folios()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829074204.45304-1-baohua@kernel.org
         - Link: https://lore.kernel.org/20260829074204.45304-2-baohua@kernel.org
-      - 0673fe0dbff4 "mm/mglru: make retry logic explicit in isolate_folios()" (1/2)
+      - 955267794238 "mm/mglru: make retry logic explicit in isolate_folios()" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829074204.45304-3-baohua@kernel.org
-    - 6eb1ef9d5fed "mm: revert slight behavior change for swappiness 1-200"
+    - fc1c341a323c "mm: revert slight behavior change for swappiness 1-200"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260903070500.76379-1-baohua@kernel.org
-      - 067db2d6ca5b "mm/vmscan: avoid pointless large folio splits without swap" (2/4)
+      - 2aecdf05c97f "mm/vmscan: avoid pointless large folio splits without swap" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260830042920.2280454-4-xueyuan.chen21@gmail.com
     - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7 commits)
-      - 1af40e3e07eb "mm/mglru: separate folio generation update from LRU accounting" (0/7)
+      - 3bc7489baa28 "mm/mglru: separate folio generation update from LRU accounting" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260901232421.40157-1-baohua@kernel.org
         - Link: https://lore.kernel.org/20260901232421.40157-2-baohua@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260812121658.69965-1-baohua@kernel.org/ [1]
         - Link: https://lore.kernel.org/linux-mm/20260827035416.3012015-1-xueyuan.chen21@gmail.com/ [2]
-      - 1bbd849b0c44 "mm/mglru: batch update lrugen->nr_pages in inc_min_seq()" (1/7)
+      - c53bd1e75d94 "mm/mglru: batch update lrugen->nr_pages in inc_min_seq()" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260901232421.40157-3-baohua@kernel.org
-      - 19b581b7bddb "mm/mglru: enhance cold/hot inversion handling in inc_min_seq()" (2/7)
+      - b01e02357abc "mm/mglru: enhance cold/hot inversion handling in inc_min_seq()" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-4-baohua@kernel.org
-      - da2629c85c3d "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq()" (3/7)
+      - 646296e4d5c3 "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq()" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260901232421.40157-5-baohua@kernel.org
-      - ca1799caf4d2 "mm/mglru: make LRU folio prefetch helper an inline function" (4/7)
+      - e48b879ba603 "mm/mglru: make LRU folio prefetch helper an inline function" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260901232421.40157-6-baohua@kernel.org
-      - fc1827a700e9 "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail" (5/7)
+      - 669b200b5f92 "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260901232421.40157-7-baohua@kernel.org
-      - 1d0896f8e139 "mm/mglru: batch move folios to the second-oldest gen's LRU" (6/7)
+      - 5fd2076419d5 "mm/mglru: batch move folios to the second-oldest gen's LRU" (6/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
-      - fc785ab97298 "mm: replace PF_KSWAPD flag with kthread_func() check" (2/4)
+      - 398b28b63990 "mm: replace PF_KSWAPD flag with kthread_func() check" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

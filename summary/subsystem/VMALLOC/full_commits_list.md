@@ -7,24 +7,24 @@
     - no role, nobody: 2 commits
     - no role, no role : 4 commits
   - full commits list
-    - 7807821d0d61 "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - 538248b720cd "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
     - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v2. (6 commits)
-      - 31bc2ff17128 "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
+      - 5c0ee7175906 "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-1-b013a37d84b3@kernel.org
         - Link: https://lore.kernel.org/all/20260611130144.1385343-4-abarnas@google.com [1]
-      - 497862e44753 "mm/vmalloc: set area's page_order after allocation succeeds" (1/6)
+      - 9f3af6c2e89e "mm/vmalloc: set area's page_order after allocation succeeds" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-2-b013a37d84b3@kernel.org
-      - 354baf8ea87e "mm/vmalloc: constify vm parameter of get_vm_area_page_order()" (2/6)
+      - 4e48e47be7a8 "mm/vmalloc: constify vm parameter of get_vm_area_page_order()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-3-b013a37d84b3@kernel.org
-      - de6da4b613ca "mm/vmalloc: make set_area_direct_map HUGE_VMAP friendly" (3/6)
+      - 86925191479d "mm/vmalloc: make set_area_direct_map HUGE_VMAP friendly" (3/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260823-execmem-set-vm-perms-v0-2-v2-4-b013a37d84b3@kernel.org
-    - 11959894d3bc "mm: vmalloc: fix vmap_purge_lock livelock under memory pressure"
+    - 525938246872 "mm: vmalloc: fix vmap_purge_lock livelock under memory pressure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260828091753.299295-1-ye.liu@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

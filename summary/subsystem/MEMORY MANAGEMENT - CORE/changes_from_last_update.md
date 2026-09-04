@@ -6,34 +6,19 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 31 -> 34 commits
-  - series: 7 (26) -> 7 (29)
-    - no role, nobody: 0 -> 3 commits
+- mm-unstable: 34 -> 34 commits (no change)
+  - series: 7 (29) -> 7 (29) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 22 -> 22 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous". (6)
-      - f43bdc950da6 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero (1/6)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-2-a578c730cec7@kernel.org
-      - 6c160ba2dd13 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (2/6)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-3-a578c730cec7@kernel.org
-      - d98c8df750a7 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (3/6)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-4-a578c730cec7@kernel.org
-- mm-new: 3 -> 1 commits
-  - series: 0 (3) -> 0 (0)
-    - no role, nobody: 3 -> 0 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - maintainer, nobody: 1 -> 0 commits
+  - dropped commits
     - f1fc44daf618 "mm/hugetlb: don't lock private resv_map during final unmap"
       - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
