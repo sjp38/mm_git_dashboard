@@ -14,6 +14,13 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7)
+      - b95d65573607 "mm/mglru: batch move folios to the second-oldest gen's LRU (6/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

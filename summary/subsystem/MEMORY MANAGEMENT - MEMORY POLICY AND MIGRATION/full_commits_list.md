@@ -17,26 +17,26 @@
     - reviewer, nobody: 2 commits
     - reviewer, no role : 2 commits
   - full commits list
-    - 7c4ca477670f "mm/mempolicy: take a cpuset cookie for the interleave node count"
+    - f065cdd2d60a "mm/mempolicy: take a cpuset cookie for the interleave node count"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260828193111.1023497-1-gourry@gourry.net
       - Link: https://lore.kernel.org/all/20250907160829.91628-1-chelsyratnawat2001@gmail.com/
     - series "mm/mempolicy: stop copying state in the interleave paths". (2 commits)
-      - 405cff3d1e9f "mm/mempolicy: use SRCU for the weighted interleave state" (0/2)
+      - 91da63e558dc "mm/mempolicy: use SRCU for the weighted interleave state" (0/2)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260829015943.1258774-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260829015943.1258774-2-gourry@gourry.net
-      - eeffcda021ac "mm/mempolicy: stop copying the nodemask in the interleave paths" (1/2)
+      - 0642ee6f5b22 "mm/mempolicy: stop copying the nodemask in the interleave paths" (1/2)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260829015943.1258774-3-gourry@gourry.net
-      - 47f34a6413e7 "mm/mempolicy: skip zone device folios when queueing folios" (2/3)
+      - b298655f3841 "mm/mempolicy: skip zone device folios when queueing folios" (2/3)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-4-gourry@gourry.net
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - ada0d0ed7108 "mm/migrate_device: fix function name in kernel-doc"
+    - 44e7dcce6630 "mm/migrate_device: fix function name in kernel-doc"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/13768B0F4A5FC1F5+20260902031229.1821112-1-zhaozhengzhuo@uniontech.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

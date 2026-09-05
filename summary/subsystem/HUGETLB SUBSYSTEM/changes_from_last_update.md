@@ -14,13 +14,18 @@
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-- mm-new: 2 -> 1 commits
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-  - dropped commits
-    - f1fc44daf618 "mm/hugetlb: don't lock private resv_map during final unmap"
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 62efa0b7951d "mm/hugetlb: don't lock private resv_map during final unmap"
       - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - 49fce1b6ece5 "mm/hugetlb: charge folios to the target mm's memcg"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Hongfu Li <lihongfu@kylinos.cn>"
+      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

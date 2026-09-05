@@ -9,47 +9,94 @@
     - maintainer, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 23 -> 23 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 7 -> 7 commits (no change)
+    - no role, nobody: 7 -> 6 commits
     - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 2 commits
     - maintainer, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - e3469967f1ac "ocfs2: make ocfs2_calc_xattr_init() return void"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260904023751.3703334-1-joseph.qi@linux.alibaba.com
+  - dropped commits
+    - 938cef3bfed3 "xarray: fix index jumping backwards in xas_find()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/2992424b-2120-489e-9010-f45f46ed52c8@mail.kernel.org
+      - Link: https://syzkaller.appspot.com/ai_job?id=a01c56bd-74d0-411c-afb4-ee6f0cb6cb61
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 243 -> 243 commits (no change)
+- mm-unstable: 243 -> 241 commits
   - series: 44 (197) -> 44 (197) (no change)
-    - no role, nobody: 31 -> 31 commits (no change)
+    - no role, nobody: 31 -> 30 commits
     - no role, no role : 81 -> 81 commits (no change)
     - no role, reviewer: 24 -> 24 commits (no change)
-    - no role, maintainer: 41 -> 41 commits (no change)
+    - no role, maintainer: 41 -> 40 commits
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 37 -> 37 commits (no change)
     - maintainer, no role : 21 -> 21 commits (no change)
-- mm-new: 33 -> 32 commits
+  - changed commits
+    - b152d940c5a5 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Fixes: fafaeceb89a5e ("mm: switch deferred split shrinker to list_lru")"
+      - dropped "Fixes: 03375203e1da ("mm: do not allocate shrinker info with cgroup.memory=nokmem")"
+      - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
+    - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7)
+      - b95d65573607 "mm/mglru: batch move folios to the second-oldest gen's LRU (6/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
+  - dropped commits
+    - f222fb9299b9 "memcg: don't call schedule_work when no spinning is allowed"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260831234339.280376-1-stevensd@google.com
+    - b28fbc1e5d20 "selftests/mm: restore hidden hugetlb reservation scenarios"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260714021630.1063823-1-husong@kylinos.cn
+- mm-new: 32 -> 34 commits
   - series: 4 (19) -> 4 (19) (no change)
     - no role, nobody: 8 -> 8 commits (no change)
-    - no role, no role : 14 -> 14 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 8 -> 7 commits
-  - dropped commits
-    - f1fc44daf618 "mm/hugetlb: don't lock private resv_map during final unmap"
+    - no role, no role : 14 -> 13 commits
+    - no role, reviewer: 3 -> 4 commits
+    - maintainer, nobody: 7 -> 9 commits
+  - new commits
+    - 473debdc17f9 "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
       - Authored by a maintainer, reviewed by nobody
+    - 62efa0b7951d "mm/hugetlb: don't lock private resv_map during final unmap"
+      - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - 2576bac3c5f0 "selftests/mm: remove unreachable returns after ksft exit helpers"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+      - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
+    - 49fce1b6ece5 "mm/hugetlb: charge folios to the target mm's memcg"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Hongfu Li <lihongfu@kylinos.cn>"
+      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 60 -> 61 commits
+- mm-nonmm-unstable: 61 -> 60 commits
   - series: 9 (21) -> 9 (21) (no change)
-    - no role, nobody: 27 -> 28 commits
+    - no role, nobody: 28 -> 27 commits
     - no role, no role : 14 -> 14 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
     - maintainer, nobody: 9 -> 9 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-  - new commits
-    - 5a14c13d6ab6 "lib/plist: fix plist_requeue() corrupting order in the last bucket"
+  - changed commits
+    - fa1eca11e75e "ocfs2: skip uninitialized lockres in ocfs2_mark_lockres_freeing()"
+      - Authored by a maintainer, reviewed by nobody
+      - added "Fixes: 550842cc6098 ("ocfs2: fix freeing uninitialized resource on ocfs2_dlm_shutdown")"
+      - dropped "Fixes: 550842cc60987 ("ocfs2: fix freeing uninitialized resource on ocfs2_dlm_shutdown")"
+      - Link: https://lore.kernel.org/20260903104744.2164235-1-joseph.qi@linux.alibaba.com
+  - dropped commits
+    - 1bd14760bb96 "ufs: use u64 for directory size in ufs_last_byte"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260903222456.1881786-1-handyhandyman.adam@gmail.com

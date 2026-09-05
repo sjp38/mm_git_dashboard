@@ -6,17 +6,30 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 26 -> 26 commits (no change)
+- mm-unstable: 26 -> 25 commits
   - series: 5 (19) -> 5 (19) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 6 -> 6 commits (no change)
+    - no role, maintainer: 6 -> 5 commits
     - maintainer, nobody: 4 -> 4 commits (no change)
+  - dropped commits
+    - b28fbc1e5d20 "selftests/mm: restore hidden hugetlb reservation scenarios"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260714021630.1063823-1-husong@kylinos.cn
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - 2576bac3c5f0 "selftests/mm: remove unreachable returns after ksft exit helpers"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+      - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -15,11 +15,11 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, nobody: 1 -> 0 commits
-  - dropped commits
-    - f1fc44daf618 "mm/hugetlb: don't lock private resv_map during final unmap"
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 62efa0b7951d "mm/hugetlb: don't lock private resv_map during final unmap"
       - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

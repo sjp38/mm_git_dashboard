@@ -18,9 +18,9 @@
     - maintainer, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 180 -> 180 commits (no change)
+- mm-unstable: 180 -> 179 commits
   - series: 35 (146) -> 35 (146) (no change)
-    - no role, nobody: 25 -> 25 commits (no change)
+    - no role, nobody: 25 -> 24 commits
     - no role, no role : 56 -> 56 commits (no change)
     - no role, reviewer: 21 -> 21 commits (no change)
     - no role, maintainer: 27 -> 27 commits (no change)
@@ -30,15 +30,38 @@
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 25 -> 25 commits (no change)
     - maintainer, no role : 18 -> 18 commits (no change)
-- mm-new: 16 -> 15 commits
+  - changed commits
+    - b152d940c5a5 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Fixes: fafaeceb89a5e ("mm: switch deferred split shrinker to list_lru")"
+      - dropped "Fixes: 03375203e1da ("mm: do not allocate shrinker info with cgroup.memory=nokmem")"
+      - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
+    - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7)
+      - b95d65573607 "mm/mglru: batch move folios to the second-oldest gen's LRU (6/7)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
+  - dropped commits
+    - f222fb9299b9 "memcg: don't call schedule_work when no spinning is allowed"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260831234339.280376-1-stevensd@google.com
+- mm-new: 15 -> 17 commits
   - series: 2 (6) -> 2 (6) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 7 -> 6 commits
-  - dropped commits
-    - f1fc44daf618 "mm/hugetlb: don't lock private resv_map during final unmap"
+    - maintainer, nobody: 6 -> 8 commits
+  - new commits
+    - 473debdc17f9 "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
       - Authored by a maintainer, reviewed by nobody
+    - 62efa0b7951d "mm/hugetlb: don't lock private resv_map during final unmap"
+      - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - 49fce1b6ece5 "mm/hugetlb: charge folios to the target mm's memcg"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Hongfu Li <lihongfu@kylinos.cn>"
+      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
