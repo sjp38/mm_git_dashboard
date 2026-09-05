@@ -1,12 +1,49 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
-- mm-hotfixes-stable: 12 -> 12 commits (no change)
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
+- mm-hotfixes-stable: 12 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 3 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 4 -> 0 commits
+    - reviewer, reviewer: 2 -> 0 commits
+    - maintainer, no role : 1 -> 0 commits
+  - dropped commits
+    - 7b8a8ae4dd17 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com
+    - a3417097fb10 "memcg: make the v1 soft limit knob inert"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
+    - eedc8474d469 "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260817103433.191266-1-njilav@gmail.com
+    - dc41e961a269 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260817120758.669807-3-sh_def@163.com
+    - 267bede12d3b "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260814083027.1419487-1-xialonglong2025@163.com
+    - 2fd4e7693674 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
+    - f025ca73decd "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
+    - fe6cf984939d "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
+    - 540e583b66d6 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
+    - 8ee1ef0f2f8c "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
+    - 35b0fb391b0d "mm/mremap: reset unfaulted VMA page offset for MREMAP_DONTUNMAP"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260825-fix-mremap-dontunmap-pgoff-v1-1-39a40b2c98b3@kernel.org
+    - 97d34aa65c29 "mm/secretmem: properly account locked pages"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260826-secretmem-accounting-v3-1-94cb04399510@kernel.org
 - mm-hotfixes-unstable: 12 -> 12 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
@@ -18,9 +55,9 @@
     - maintainer, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 180 -> 179 commits
+- mm-unstable: 179 -> 179 commits (no change)
   - series: 35 (146) -> 35 (146) (no change)
-    - no role, nobody: 25 -> 24 commits
+    - no role, nobody: 24 -> 24 commits (no change)
     - no role, no role : 56 -> 56 commits (no change)
     - no role, reviewer: 21 -> 21 commits (no change)
     - no role, maintainer: 27 -> 27 commits (no change)
@@ -30,38 +67,12 @@
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 25 -> 25 commits (no change)
     - maintainer, no role : 18 -> 18 commits (no change)
-  - changed commits
-    - b152d940c5a5 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Fixes: fafaeceb89a5e ("mm: switch deferred split shrinker to list_lru")"
-      - dropped "Fixes: 03375203e1da ("mm: do not allocate shrinker info with cgroup.memory=nokmem")"
-      - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
-    - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7)
-      - b95d65573607 "mm/mglru: batch move folios to the second-oldest gen's LRU (6/7)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
-  - dropped commits
-    - f222fb9299b9 "memcg: don't call schedule_work when no spinning is allowed"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260831234339.280376-1-stevensd@google.com
-- mm-new: 15 -> 17 commits
+- mm-new: 17 -> 17 commits (no change)
   - series: 2 (6) -> 2 (6) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 6 -> 8 commits
-  - new commits
-    - 473debdc17f9 "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
-      - Authored by a maintainer, reviewed by nobody
-    - 62efa0b7951d "mm/hugetlb: don't lock private resv_map during final unmap"
-      - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - 49fce1b6ece5 "mm/hugetlb: charge folios to the target mm's memcg"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Hongfu Li <lihongfu@kylinos.cn>"
-      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
+    - maintainer, nobody: 8 -> 8 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

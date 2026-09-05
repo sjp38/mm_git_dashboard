@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-71-g786262be6048d
+- baseline: v7.3-rc1-475-g0d9ff90a5422c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -8,10 +8,10 @@
     - no role, nobody: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - ebc892c35965 "mm/memory_hotplug: factor out node_is_memoryless()"
+    - 93f1425d2b5b "mm/memory_hotplug: factor out node_is_memoryless()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
-    - 473debdc17f9 "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
+    - cac204e6e24c "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
       - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

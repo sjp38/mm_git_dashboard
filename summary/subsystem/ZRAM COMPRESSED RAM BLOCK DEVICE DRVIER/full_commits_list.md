@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-71-g786262be6048d
+- baseline: v7.3-rc1-475-g0d9ff90a5422c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,10 +7,10 @@
     - no role, nobody: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 601c49904161 "zram: fix idle age_sec underflow in idle_store()"
+    - a2cab0c266a3 "zram: fix idle age_sec underflow in idle_store()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260828083149.45760-1-jiahao.kernel@gmail.com
-    - a2d235a09b85 "zram: remove unreachable kernel_read_file_from_path() return check"
+    - 9021a3a4dd58 "zram: remove unreachable kernel_read_file_from_path() return check"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260901051335.2202390-1-senozhatsky@chromium.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

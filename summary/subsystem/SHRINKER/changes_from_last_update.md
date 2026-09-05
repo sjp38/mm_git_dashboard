@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -10,12 +10,6 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - b152d940c5a5 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Fixes: fafaeceb89a5e ("mm: switch deferred split shrinker to list_lru")"
-      - dropped "Fixes: 03375203e1da ("mm: do not allocate shrinker info with cgroup.memory=nokmem")"
-      - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

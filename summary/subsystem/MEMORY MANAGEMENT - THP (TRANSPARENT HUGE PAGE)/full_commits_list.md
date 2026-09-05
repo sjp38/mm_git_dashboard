@@ -1,23 +1,14 @@
-- baseline: v7.3-rc1-71-g786262be6048d
-- mm-hotfixes-stable: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - reviewer, reviewer: 2 commits
-  - full commits list
-    - 2fd4e7693674 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
-    - fe6cf984939d "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
+- baseline: v7.3-rc1-475-g0d9ff90a5422c
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
     - reviewer, nobody: 1 commits
   - full commits list
-    - 2948ac3e0028 "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
+    - f7533169f9d2 "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260827-hugepfn-allowable-orders-v1-1-94819c8807c8@kernel.org
-    - b0ee04e2d6bf "renames for Lorenzo's mm-huge_memory-bypass-thp-tuneables-for-huge-pfnmap-mappings patch"
+    - c4e453470378 "renames for Lorenzo's mm-huge_memory-bypass-thp-tuneables-for-huge-pfnmap-mappings patch"
       - Authored by a reviewer, reviewed by nobody
       - Link: https://lore.kernel.org/DL1HIHWYJ7TB.1CY76SJS0V03L@nvidia.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -28,50 +19,50 @@
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 7ca57bca1015 "selftests/mm: khugepaged: remove str_dup() usage"
+    - 9854eb528b9d "selftests/mm: khugepaged: remove str_dup() usage"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
       - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
     - series "mm: khugepaged: fix tracepoint UAF", v4. (3 commits)
-      - b72ddf97f5db "mm: khugepaged: fix swap entry value to folio_pfn()" (0/3)
+      - a9aedbb84de8 "mm: khugepaged: fix swap entry value to folio_pfn()" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260828055926.346744-1-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/20260828055926.346744-2-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
-      - 7b9d67f8a9b5 "mm: khugepaged: fix folio is used after pte_unmap_unlock()" (1/3)
+      - 4531023fe07a "mm: khugepaged: fix folio is used after pte_unmap_unlock()" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828055926.346744-3-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
-      - bc258a8305ac "mm: khugepaged: fix folio is used after folio_put/unlock()" (2/3)
+      - 652fde85a364 "mm: khugepaged: fix folio is used after folio_put/unlock()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828055926.346744-4-vernon2gm@gmail.com
-    - fbbdf64ebdb4 "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
+    - 5fc057a5069b "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260828222640.1638457-1-jthoughton@google.com
     - series "mm: reject zone device folios in more folio walkers", v2. (3 commits)
-      - 6d09ad78667d "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd()" (0/3)
+      - 682625aa2c95 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd()" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260817220810.1175596-2-gourry@gourry.net
-    - 273fe66df27f "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
+    - 214a60034821 "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
     - series "Fix deferred_split_isolate() and drop the split workaround", v2. (2 commits)
-      - 356aded97024 "mm/huge_memory: do not touch frozen folios in deferred_split_isolate()" (0/2)
+      - d92a42facfd6 "mm/huge_memory: do not touch frozen folios in deferred_split_isolate()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260831091514.1879786-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260831091514.1879786-2-kirill@shutemov.name
-      - 3f51e3020031 "mm/huge_memory: dequeue the deferred split after the split freeze" (1/2)
+      - 4e934186eccf "mm/huge_memory: dequeue the deferred split after the split freeze" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260831091514.1879786-3-kirill@shutemov.name
 - mm-new: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - 2576bac3c5f0 "selftests/mm: remove unreachable returns after ksft exit helpers"
+    - 9234b08e22d7 "selftests/mm: remove unreachable returns after ksft exit helpers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
-    - 3be42375ff57 "mm/huge_memory: fix various coding style warnings"
+    - 64add10db694 "mm/huge_memory: fix various coding style warnings"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260903092200.88910-1-christosskarlos.kernel@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

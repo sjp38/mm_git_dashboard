@@ -1,7 +1,14 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
-- mm-hotfixes-stable: 2 -> 2 commits (no change)
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
+- mm-hotfixes-stable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - reviewer, reviewer: 2 -> 0 commits
+  - dropped commits
+    - 2fd4e7693674 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
+    - fe6cf984939d "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
@@ -16,16 +23,7 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 2 commits
-  - changed commits
-    - 2576bac3c5f0 "selftests/mm: remove unreachable returns after ksft exit helpers"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
+    - no role, reviewer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

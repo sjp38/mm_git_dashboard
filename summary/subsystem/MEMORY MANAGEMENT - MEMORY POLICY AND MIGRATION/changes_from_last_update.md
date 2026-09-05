@@ -1,8 +1,15 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
-- mm-hotfixes-stable: 2 -> 2 commits (no change)
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
+- mm-hotfixes-stable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - dc41e961a269 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260817120758.669807-3-sh_def@163.com
+    - 540e583b66d6 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)

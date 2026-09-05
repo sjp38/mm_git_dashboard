@@ -1,35 +1,26 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
+    - 97d34aa65c29 "mm/secretmem: properly account locked pages"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260826-secretmem-accounting-v3-1-94cb04399510@kernel.org
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 26 -> 25 commits
+- mm-unstable: 25 -> 25 commits (no change)
   - series: 5 (19) -> 5 (19) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 6 -> 5 commits
+    - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
-  - dropped commits
-    - b28fbc1e5d20 "selftests/mm: restore hidden hugetlb reservation scenarios"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260714021630.1063823-1-husong@kylinos.cn
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - 2576bac3c5f0 "selftests/mm: remove unreachable returns after ksft exit helpers"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-      - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

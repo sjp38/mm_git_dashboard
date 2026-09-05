@@ -1,8 +1,21 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
-- mm-hotfixes-stable: 4 -> 4 commits (no change)
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
+- mm-hotfixes-stable: 4 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 3 -> 0 commits
+  - dropped commits
+    - 7b8a8ae4dd17 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com
+    - eedc8474d469 "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260817103433.191266-1-njilav@gmail.com
+    - 267bede12d3b "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260814083027.1419487-1-xialonglong2025@163.com
+    - 8ee1ef0f2f8c "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
@@ -14,18 +27,10 @@
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-- mm-new: 1 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - 62efa0b7951d "mm/hugetlb: don't lock private resv_map during final unmap"
-      - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - 49fce1b6ece5 "mm/hugetlb: charge folios to the target mm's memcg"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Hongfu Li <lihongfu@kylinos.cn>"
-      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,102 +1,103 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-71-g786262be6048d (no change)
-- mm-hotfixes-stable: 18 -> 18 commits (no change)
+- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
+- mm-hotfixes-stable: 18 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 5 -> 0 commits
+    - no role, no role : 5 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 4 -> 0 commits
+    - reviewer, reviewer: 2 -> 0 commits
+    - maintainer, no role : 1 -> 0 commits
+  - dropped commits
+    - 7b8a8ae4dd17 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com
+    - a3417097fb10 "memcg: make the v1 soft limit knob inert"
+      - Authored by a maintainer, reviewed by no role player
+      - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
+    - eedc8474d469 "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260817103433.191266-1-njilav@gmail.com
+    - dc41e961a269 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260817120758.669807-3-sh_def@163.com
+    - 267bede12d3b "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260814083027.1419487-1-xialonglong2025@163.com
+    - 2fd4e7693674 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
+    - f025ca73decd "userfaultfd: reset err to be 0 when move_pages_ptes succeeded"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/e1e0b5f8-c3c6-0537-670b-4397f822f980@gmail.com
+    - 6e0803a17055 "MAINTAINERS: add Lance Yang as a hung task detector co-maintainer"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260820014535.79105-1-lance.yang@linux.dev
+    - fe6cf984939d "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
+    - 540e583b66d6 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
+    - 8ee1ef0f2f8c "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
+    - 0ba6912f7e97 "Revert "once: don't use a work queue to reset sleepable static key""
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260825142515.1965654-1-edumazet@google.com
+    - 627824f20f23 "MAINTAINERS: remove Lorenzo as THP co-maintainer"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260826-drop-thp-maintainership-v1-1-3d102748fa17@kernel.org
+    - 341b9b4f8f54 "MAINTAINERS: mailmap: update entries for Thorsten Blum"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260825164933.105605-2-blum@kernel.org
+    - 70ded7a57443 "MAINTAINERS: cover all of RAID"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/7a2e5de234cc0286e3fe9bc11b810433775f2280.1787815121.git.geert+renesas@glider.be
+    - ed334880e5e6 "MAINTAINERS: add Kiryl as a THP reviewer"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260827103435.1371882-1-kas@kernel.org
+    - 35b0fb391b0d "mm/mremap: reset unfaulted VMA page offset for MREMAP_DONTUNMAP"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260825-fix-mremap-dontunmap-pgoff-v1-1-39a40b2c98b3@kernel.org
+    - 97d34aa65c29 "mm/secretmem: properly account locked pages"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260826-secretmem-accounting-v3-1-94cb04399510@kernel.org
 - mm-hotfixes-unstable: 23 -> 23 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 7 -> 6 commits
+    - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 2 commits
+    - maintainer, nobody: 2 -> 2 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - e3469967f1ac "ocfs2: make ocfs2_calc_xattr_init() return void"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260904023751.3703334-1-joseph.qi@linux.alibaba.com
-  - dropped commits
-    - 938cef3bfed3 "xarray: fix index jumping backwards in xas_find()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/2992424b-2120-489e-9010-f45f46ed52c8@mail.kernel.org
-      - Link: https://syzkaller.appspot.com/ai_job?id=a01c56bd-74d0-411c-afb4-ee6f0cb6cb61
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 243 -> 241 commits
+- mm-unstable: 241 -> 241 commits (no change)
   - series: 44 (197) -> 44 (197) (no change)
-    - no role, nobody: 31 -> 30 commits
+    - no role, nobody: 30 -> 30 commits (no change)
     - no role, no role : 81 -> 81 commits (no change)
     - no role, reviewer: 24 -> 24 commits (no change)
-    - no role, maintainer: 41 -> 40 commits
+    - no role, maintainer: 40 -> 40 commits (no change)
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 37 -> 37 commits (no change)
     - maintainer, no role : 21 -> 21 commits (no change)
-  - changed commits
-    - b152d940c5a5 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Fixes: fafaeceb89a5e ("mm: switch deferred split shrinker to list_lru")"
-      - dropped "Fixes: 03375203e1da ("mm: do not allocate shrinker info with cgroup.memory=nokmem")"
-      - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
-    - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7)
-      - b95d65573607 "mm/mglru: batch move folios to the second-oldest gen's LRU (6/7)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
-  - dropped commits
-    - f222fb9299b9 "memcg: don't call schedule_work when no spinning is allowed"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260831234339.280376-1-stevensd@google.com
-    - b28fbc1e5d20 "selftests/mm: restore hidden hugetlb reservation scenarios"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260714021630.1063823-1-husong@kylinos.cn
-- mm-new: 32 -> 34 commits
+- mm-new: 34 -> 34 commits (no change)
   - series: 4 (19) -> 4 (19) (no change)
     - no role, nobody: 8 -> 8 commits (no change)
-    - no role, no role : 14 -> 13 commits
-    - no role, reviewer: 3 -> 4 commits
-    - maintainer, nobody: 7 -> 9 commits
-  - new commits
-    - 473debdc17f9 "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
-      - Authored by a maintainer, reviewed by nobody
-    - 62efa0b7951d "mm/hugetlb: don't lock private resv_map during final unmap"
-      - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - 2576bac3c5f0 "selftests/mm: remove unreachable returns after ksft exit helpers"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-      - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
-    - 49fce1b6ece5 "mm/hugetlb: charge folios to the target mm's memcg"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Hongfu Li <lihongfu@kylinos.cn>"
-      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
+    - no role, no role : 13 -> 13 commits (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - maintainer, nobody: 9 -> 9 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 61 -> 60 commits
+- mm-nonmm-unstable: 60 -> 60 commits (no change)
   - series: 9 (21) -> 9 (21) (no change)
-    - no role, nobody: 28 -> 27 commits
+    - no role, nobody: 27 -> 27 commits (no change)
     - no role, no role : 14 -> 14 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
     - maintainer, nobody: 9 -> 9 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
-  - changed commits
-    - fa1eca11e75e "ocfs2: skip uninitialized lockres in ocfs2_mark_lockres_freeing()"
-      - Authored by a maintainer, reviewed by nobody
-      - added "Fixes: 550842cc6098 ("ocfs2: fix freeing uninitialized resource on ocfs2_dlm_shutdown")"
-      - dropped "Fixes: 550842cc60987 ("ocfs2: fix freeing uninitialized resource on ocfs2_dlm_shutdown")"
-      - Link: https://lore.kernel.org/20260903104744.2164235-1-joseph.qi@linux.alibaba.com
-  - dropped commits
-    - 1bd14760bb96 "ufs: use u64 for directory size in ufs_last_byte"
-      - Authored by no role player, reviewed by nobody
