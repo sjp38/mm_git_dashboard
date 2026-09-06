@@ -8,11 +8,11 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - 16d54f174950 "mm: make per-VMA locks available universally" (0/7)
+      - c832acfdfa61 "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-      - 1f4cb4ab972a "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
+      - ccaa035f289c "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

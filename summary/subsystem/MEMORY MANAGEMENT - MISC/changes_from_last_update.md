@@ -1,26 +1,48 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - 97d34aa65c29 "mm/secretmem: properly account locked pages"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260826-secretmem-accounting-v3-1-94cb04399510@kernel.org
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 25 -> 25 commits (no change)
+- mm-unstable: 25 -> 26 commits
   - series: 5 (19) -> 5 (19) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 9 -> 9 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, reviewer: 3 -> 4 commits
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+  - changed commits
+    - 8ba61382ebac "selftests/mm: remove unreachable returns after ksft exit helpers"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
+- mm-new: 2 -> 7 commits
+  - series: 0 (0) -> 1 (5)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 5 commits
     - no role, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - 76ba705bbc76 "docs/mm: ksm: use the renamed ksm structure names"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6)
+      - b2b1c7defaee "selftests/mm: make file helpers return errors (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-1-sarthak.sharma@arm.com
+        - Link: https://lore.kernel.org/20260904123631.198697-2-sarthak.sharma@arm.com
+      - d2e6e6de5df2 "tools/lib/mm: add shared file helpers (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-3-sarthak.sharma@arm.com
+      - 01fc83bf75e2 "tools/lib/mm: move hugepage_settings out of selftests (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-4-sarthak.sharma@arm.com
+      - 3a7ce475ef3e "tools/mm: move gup_test from selftests/mm to tools/mm (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-5-sarthak.sharma@arm.com
+      - 2a5614aa55e4 "selftests/mm: add a GUP selftest (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-7-sarthak.sharma@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

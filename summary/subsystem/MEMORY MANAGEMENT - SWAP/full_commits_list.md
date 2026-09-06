@@ -1,12 +1,12 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - reviewer, maintainer: 1 commits
   - full commits list
-    - fbe92f33a951 "mm, swap: fix SWAP_USAGE_OFFLIST_BIT collision with real usage count"
+    - 12e9ac7bc5b2 "mm, swap: fix SWAP_USAGE_OFFLIST_BIT collision with real usage count"
       - Authored by a reviewer, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260828191433.3304458-1-nphamcs@gmail.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 9 total, 2 (8) series, 1 non-series commits
   - author/reviewer role stat
@@ -14,42 +14,42 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 2 commits
   - full commits list
-    - 4835a16560cd "mm/swap: remove unused declaration swapcache_clear()"
+    - a60f89564aa9 "mm/swap: remove unused declaration swapcache_clear()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260827082722.1809702-1-yuehaibing@huawei.com
     - series "mm/page_io: folio conversion cleanups", v2. (6 commits)
-      - 7f819d9f6522 "mm/page_io: convert write completion handlers to folios" (0/6)
+      - b313b7d69d80 "mm/page_io: convert write completion handlers to folios" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-0-649728091117@columbia.edu
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-1-649728091117@columbia.edu
-      - 53dc4d19d83f "mm/page_io: use swap entries directly in zeromap helpers" (2/6)
+      - 85877f756c48 "mm/page_io: use swap entries directly in zeromap helpers" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-3-649728091117@columbia.edu
-      - 62fca795ad54 "mm/page_io: rename bio_associate_blkg_from_page()" (3/6)
+      - 60e60749e3fd "mm/page_io: rename bio_associate_blkg_from_page()" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-4-649728091117@columbia.edu
-      - cfb49bebcce0 "mm/page_io: refer to folios in swap_writeout() comments" (4/6)
+      - 9d0a555b32d7 "mm/page_io: refer to folios in swap_writeout() comments" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-5-649728091117@columbia.edu
-      - b3abe5cd5b80 "mm/swap: rename __swap_writepage() to __swap_writeout()" (5/6)
+      - 9a5b3b3e7782 "mm/swap: rename __swap_writepage() to __swap_writeout()" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-6-649728091117@columbia.edu
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - 3dec8a57ee27 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - 7f365bbc9045 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
-      - 79ac94ce3df8 "mm: distinguish large folio swap allocation failures" (1/4)
+      - a15d813115f0 "mm: distinguish large folio swap allocation failures" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260830042920.2280454-3-xueyuan.chen21@gmail.com
-      - 325d5b15ed50 "mm: replace PF_KSWAPD flag with kthread_func() check" (2/4)
+      - 7abfb3089309 "mm: replace PF_KSWAPD flag with kthread_func() check" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - b733fe31e781 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - 9d3243fc689f "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -1,9 +1,15 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 0 -> 1 commits
+  - changed commits
+    - 12e9ac7bc5b2 "mm, swap: fix SWAP_USAGE_OFFLIST_BIT collision with real usage count"
+      - Authored by a reviewer, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260828191433.3304458-1-nphamcs@gmail.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 9 -> 9 commits (no change)

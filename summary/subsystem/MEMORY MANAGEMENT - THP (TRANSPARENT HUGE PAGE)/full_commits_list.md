@@ -1,69 +1,81 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c
-- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
-    - reviewer, nobody: 1 commits
   - full commits list
-    - f7533169f9d2 "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
+    - e384abeb559d "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
       - Authored by no role player, reviewed by a reviewer
+      - Link: : https://lore.kernel.org/DL1HIHWYJ7TB.1CY76SJS0V03L@nvidia.com
       - Link: https://lore.kernel.org/20260827-hugepfn-allowable-orders-v1-1-94819c8807c8@kernel.org
-    - c4e453470378 "renames for Lorenzo's mm-huge_memory-bypass-thp-tuneables-for-huge-pfnmap-mappings patch"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/DL1HIHWYJ7TB.1CY76SJS0V03L@nvidia.com
+- mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 9 total, 3 (6) series, 3 non-series commits
+- mm-unstable: 11 total, 3 (6) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 3 commits
-    - no role, reviewer: 3 commits
+    - no role, reviewer: 5 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 9854eb528b9d "selftests/mm: khugepaged: remove str_dup() usage"
+    - 5e74e8875e12 "selftests/mm: khugepaged: remove str_dup() usage"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
       - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
     - series "mm: khugepaged: fix tracepoint UAF", v4. (3 commits)
-      - a9aedbb84de8 "mm: khugepaged: fix swap entry value to folio_pfn()" (0/3)
+      - 6889e034c338 "mm: khugepaged: fix swap entry value to folio_pfn()" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260828055926.346744-1-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/20260828055926.346744-2-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
-      - 4531023fe07a "mm: khugepaged: fix folio is used after pte_unmap_unlock()" (1/3)
+      - e08e89f479b8 "mm: khugepaged: fix folio is used after pte_unmap_unlock()" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828055926.346744-3-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
-      - 652fde85a364 "mm: khugepaged: fix folio is used after folio_put/unlock()" (2/3)
+      - af2f0e97fa2f "mm: khugepaged: fix folio is used after folio_put/unlock()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828055926.346744-4-vernon2gm@gmail.com
-    - 5fc057a5069b "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
+    - 727d45eb36b1 "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260828222640.1638457-1-jthoughton@google.com
     - series "mm: reject zone device folios in more folio walkers", v2. (3 commits)
-      - 682625aa2c95 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd()" (0/3)
+      - 282c8eba07a4 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd()" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260817220810.1175596-2-gourry@gourry.net
-    - 214a60034821 "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
+    - ae591b820504 "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
     - series "Fix deferred_split_isolate() and drop the split workaround", v2. (2 commits)
-      - d92a42facfd6 "mm/huge_memory: do not touch frozen folios in deferred_split_isolate()" (0/2)
+      - 7d64be71395f "mm/huge_memory: do not touch frozen folios in deferred_split_isolate()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260831091514.1879786-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260831091514.1879786-2-kirill@shutemov.name
-      - 4e934186eccf "mm/huge_memory: dequeue the deferred split after the split freeze" (1/2)
+      - b26ae009fb0a "mm/huge_memory: dequeue the deferred split after the split freeze" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260831091514.1879786-3-kirill@shutemov.name
-- mm-new: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 2 commits
-  - full commits list
-    - 9234b08e22d7 "selftests/mm: remove unreachable returns after ksft exit helpers"
+    - 8ba61382ebac "selftests/mm: remove unreachable returns after ksft exit helpers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
-    - 64add10db694 "mm/huge_memory: fix various coding style warnings"
+    - 9492e2f4fe0b "mm/huge_memory: fix various coding style warnings"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260903092200.88910-1-christosskarlos.kernel@gmail.com
+- mm-new: 3 total, 2 (3) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6 commits)
+      - b2b1c7defaee "selftests/mm: make file helpers return errors" (0/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-1-sarthak.sharma@arm.com
+        - Link: https://lore.kernel.org/20260904123631.198697-2-sarthak.sharma@arm.com
+      - 01fc83bf75e2 "tools/lib/mm: move hugepage_settings out of selftests" (2/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-4-sarthak.sharma@arm.com
+    - series "mm: restore SHRINKER_NONSLAB on THP and zswap shrinkers". (2 commits)
+      - fabf606b7a7d "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker" (0/2)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260904033503.4067283-1-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/20260904033503.4067283-2-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

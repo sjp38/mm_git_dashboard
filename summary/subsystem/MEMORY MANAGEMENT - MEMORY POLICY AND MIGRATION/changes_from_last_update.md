@@ -1,26 +1,29 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
-- mm-hotfixes-stable: 2 -> 0 commits
+- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - dc41e961a269 "mm/migrate_device: avoid out-of-bounds writes for compound folios"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260817120758.669807-3-sh_def@163.com
-    - 540e583b66d6 "mm/mempolicy: fix sleeping allocation in alloc_pages_bulk_weighted_interleave()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260821170407.3721004-1-edumazet@google.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
+- mm-unstable: 4 -> 5 commits
   - series: 1 (3) -> 1 (3) (no change)
+    - no role, reviewer: 0 -> 1 commits
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - 501475521942 "mm/migrate_device: fix function name in kernel-doc"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/13768B0F4A5FC1F5+20260902031229.1821112-1-zhaozhengzhuo@uniontech.com
 - mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (1)
+    - no role, reviewer: 1 -> 0 commits
+    - reviewer, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
+      - 9e26e968b4d6 "mm/migrate: copy all referenced state via folio_migrate_lru_refs (2/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-3-9aacbd77d4ca@tencent.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

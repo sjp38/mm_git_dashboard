@@ -1,24 +1,74 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, no role : 1 -> 0 commits
-  - dropped commits
-    - a3417097fb10 "memcg: make the v1 soft limit knob inert"
-      - Authored by a maintainer, reviewed by no role player
-      - Link: https://lore.kernel.org/20260811203203.3456029-2-shakeel.butt@linux.dev
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 0 -> 1 commits
+  - changed commits
+    - 6e673d0879ef "memcg: avoid charging the root memcg from obj_cgroup_charge_pages()"
+      - Authored by a maintainer, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260829023251.474083-1-shakeel.butt@linux.dev
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, maintainer: 1 -> 1 commits (no change)
+    - maintainer, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 16 -> 16 commits (no change)
+- mm-unstable: 16 -> 17 commits
   - series: 4 (11) -> 4 (11) (no change)
     - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 7 -> 7 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 89796b558e37 "mm/hugetlb: charge folios to the target mm's memcg"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
+- mm-new: 1 -> 11 commits
+  - series: 0 (0) -> 3 (9)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 0 -> 5 commits
+    - maintainer, nobody: 0 -> 6 commits
+  - new commits
+    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
+      - 180e97bd5d63 "mm/memcontrol: move the lru_zone_size sanity check to the reader side (0/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-0-9aacbd77d4ca@tencent.com
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-1-9aacbd77d4ca@tencent.com
+        - Link: https://lore.kernel.org/linux-mm/20260804-mglru-fg-v1-0-4d8dad39dad6@tencent.com/ [1]
+    - series "memcg: group struct fields by access pattern". (6)
+      - 8794b56c10b8 "memcg: move per-node objcg to the read-mostly fields (0/6)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260905030522.1887837-1-shakeel.butt@linux.dev
+        - Link: https://lore.kernel.org/20260905030522.1887837-2-shakeel.butt@linux.dev
+      - 48c0256c1ff5 "memcg: split mem_cgroup_private_id into two fields (1/6)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260905030522.1887837-3-shakeel.butt@linux.dev
+      - 60cf38d86c86 "memcg: group the write-hot fields of struct mem_cgroup (2/6)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260905030522.1887837-4-shakeel.butt@linux.dev
+      - fbb6d9981a36 "memcg: group the cold fields of struct mem_cgroup (3/6)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260905030522.1887837-5-shakeel.butt@linux.dev
+      - e0dcb7549d70 "memcg: group the read-mostly fields of struct mem_cgroup (4/6)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260905030522.1887837-6-shakeel.butt@linux.dev
+      - 58046b57ce17 "memcg: group the fields of struct mem_cgroup_per_node (5/6)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260905030522.1887837-7-shakeel.butt@linux.dev
+    - 906d2cfaa5da "memcg: don't call schedule_work when no spinning is allowed"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260904173145.2028377-1-stevensd@google.com
+    - d24dac8ac268 "mm/memcontrol: skip non-hierarchical memcg-wide stats when v1 is unavailable"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260903215616.1456239-1-joannelkoong@gmail.com
+    - series "mm: workingset: fix the shadow node budget under MGLRU", v3. (3)
+      - 28935e4dce64 "mm: memcg: redirect stats updates of dying memcgs for all hierarchies (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/cover.1788514750.git.zhuhui@kylinos.cn
+        - Link: https://lore.kernel.org/8a3fe5e6a076cdd9ac997125cb6c6a0948e1a6b6.1788514750.git.zhuhui@kylinos.cn
+      - 39a1104c6f00 "mm: memcg: skip the RCU lock when the memcg is not dying (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/0db657472c5278b2e2b87fbca7590b47ca520303.1788514750.git.zhuhui@kylinos.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

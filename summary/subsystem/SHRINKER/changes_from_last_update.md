@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
+- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -10,6 +10,13 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 3e8a32f0335f "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reported-by: Wentao Guan <guanwentao@uniontech.com>"
+      - added "Closes: https://lore.kernel.org/linux-mm/20260904190028.21542-1-guanwentao@uniontech.com/"
+      - added "Tested-by: Wentao Guan <guanwentao@uniontech.com>"
+      - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
+- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -15,9 +15,27 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 1 -> 5 commits
+  - series: 0 (0) -> 0 (3)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 2 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
+      - e1da4fbbc2bd "mm/mglru: introduce helpers for manipulating gen and refs flags (1/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
+      - b68e6340c20e "mm/mglru: use explicit tier range in read_ctrl_pos() (4/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
+    - 08d02b8a9f7a "mm/memory: constrain generic_access_phys() to page boundary"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/eaa4de66f9491888e0ffeb2d37ba7ae796ba535e.1788531737.git.rakukuip@gmail.com
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6)
+      - 2a5614aa55e4 "selftests/mm: add a GUP selftest (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-7-sarthak.sharma@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

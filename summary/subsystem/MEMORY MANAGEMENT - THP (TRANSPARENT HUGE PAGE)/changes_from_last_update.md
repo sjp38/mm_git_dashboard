@@ -1,29 +1,60 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
-- mm-hotfixes-stable: 2 -> 0 commits
+- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, reviewer: 2 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - e384abeb559d "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - added "[ziy@nvidia.com: rename some functions]"
+      - added "Link: : https://lore.kernel.org/DL1HIHWYJ7TB.1CY76SJS0V03L@nvidia.com"
+      - added "Signed-off-by: Zi Yan <ziy@nvidia.com>"
+      - Link: : https://lore.kernel.org/DL1HIHWYJ7TB.1CY76SJS0V03L@nvidia.com
+      - Link: https://lore.kernel.org/20260827-hugepfn-allowable-orders-v1-1-94819c8807c8@kernel.org
+- mm-hotfixes-unstable: 2 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - reviewer, nobody: 1 -> 0 commits
   - dropped commits
-    - 2fd4e7693674 "mm: fix incorrect vm_flags usage when checking allowable orders for tmpfs"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/7d5b5eb27be798f89d563b06254c947ff53db0b2.1787020910.git.baolin.wang@linux.alibaba.com
-    - fe6cf984939d "mm/huge_memory: transfer the pmd dirty bit to the folio on zap"
-      - Authored by a reviewer, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260819101222.3732660-1-usama.arif@linux.dev
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
+    - c4e453470378 "renames for Lorenzo's mm-huge_memory-bypass-thp-tuneables-for-huge-pfnmap-mappings patch"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/DL1HIHWYJ7TB.1CY76SJS0V03L@nvidia.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 9 -> 9 commits (no change)
+- mm-unstable: 9 -> 11 commits
   - series: 3 (6) -> 3 (6) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, reviewer: 3 -> 5 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+  - changed commits
+    - 8ba61382ebac "selftests/mm: remove unreachable returns after ksft exit helpers"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
+    - 9492e2f4fe0b "mm/huge_memory: fix various coding style warnings"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260903092200.88910-1-christosskarlos.kernel@gmail.com
+- mm-new: 2 -> 3 commits
+  - series: 0 (0) -> 2 (3)
+    - no role, no role : 0 -> 2 commits
+    - no role, reviewer: 2 -> 1 commits
+  - new commits
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6)
+      - b2b1c7defaee "selftests/mm: make file helpers return errors (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-1-sarthak.sharma@arm.com
+        - Link: https://lore.kernel.org/20260904123631.198697-2-sarthak.sharma@arm.com
+      - 01fc83bf75e2 "tools/lib/mm: move hugepage_settings out of selftests (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-4-sarthak.sharma@arm.com
+    - series "mm: restore SHRINKER_NONSLAB on THP and zswap shrinkers". (2)
+      - fabf606b7a7d "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260904033503.4067283-1-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/20260904033503.4067283-2-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

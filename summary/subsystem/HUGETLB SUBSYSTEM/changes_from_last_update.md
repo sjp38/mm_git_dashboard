@@ -1,35 +1,44 @@
-- baseline: v7.3-rc1-71-g786262be6048d -> v7.3-rc1-475-g0d9ff90a5422c
-- mm-hotfixes-stable: 4 -> 0 commits
+- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 3 -> 0 commits
-  - dropped commits
-    - 7b8a8ae4dd17 "mm/hugetlb_cma: fix null nodemask dereference in hugetlb_cma_alloc_frozen_folio"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260811052909.475635-1-souravpanda@google.com
-    - eedc8474d469 "mm/hugetlb_cgroup: call page_counter_set_max() outside VM_BUG_ON()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260817103433.191266-1-njilav@gmail.com
-    - 267bede12d3b "mm/hugetlb: keep max_huge_pages when dissolving surplus folios"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260814083027.1419487-1-xialonglong2025@163.com
-    - 8ee1ef0f2f8c "mm/hugetlb: fix missing migratable flag on same-node hugetlb migration"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260707110254.3147686-1-mawupeng1@huawei.com
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - cdf1d821e3e4 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 14 commits (no change)
+- mm-unstable: 14 -> 15 commits
   - series: 2 (11) -> 2 (11) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 2 commits
     - no role, maintainer: 5 -> 5 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
+  - changed commits
+    - series "Fix bugs in HugeTLB allocation when mem_cgroup_charge_hugetlb() fails". (2)
+      - 29cef65594b0 "mm: hugetlb: return -ENOSPC on memcg charge failure (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Joshua Hahn <joshua.hahnjy@gmail.com>"
+        - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
+        - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-0-e3e8942c141b@google.com
+        - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-1-e3e8942c141b@google.com
+      - ab82884f5199 "mm: hugetlb: drop refcount before freeing on memcg charge failure (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Joshua Hahn <joshua.hahnjy@gmail.com>"
+        - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
+        - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-2-e3e8942c141b@google.com
+        - Link: https://lore.kernel.org/all/20260722-hugetlb-alloc-failure-fixes-v4-0-88e8b81970dc@google.com/ [1]
+        - Link: https://lore.kernel.org/all/20260708-hugetlb-alloc-failure-fixes-v2-0-c7f27cbb462b@google.com/ [2]
+    - 89796b558e37 "mm/hugetlb: charge folios to the target mm's memcg"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
+- mm-new: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
