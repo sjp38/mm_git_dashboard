@@ -1,25 +1,25 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c
-- mm-hotfixes-stable: 11 total, 0 (0) series, 11 non-series commits
+- mm-hotfixes-stable: 14 total, 0 (0) series, 14 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 3 commits
+    - no role, nobody: 3 commits
+    - no role, no role : 5 commits
     - no role, reviewer: 2 commits
     - no role, maintainer: 1 commits
     - reviewer, maintainer: 1 commits
     - maintainer, nobody: 1 commits
     - maintainer, maintainer: 1 commits
-- mm-hotfixes-unstable: 21 total, 0 (0) series, 21 non-series commits
+- mm-hotfixes-unstable: 18 total, 0 (0) series, 18 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 6 commits
-    - no role, no role : 7 commits
+    - no role, nobody: 5 commits
+    - no role, no role : 5 commits
     - no role, reviewer: 2 commits
     - no role, maintainer: 4 commits
     - maintainer, nobody: 2 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 269 total, 48 (212) series, 57 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 31 commits
-    - no role, no role : 80 commits
+    - no role, nobody: 30 commits
+    - no role, no role : 81 commits
     - no role, reviewer: 38 commits
     - no role, maintainer: 41 commits
     - reviewer, nobody: 2 commits
@@ -28,11 +28,11 @@
     - reviewer, maintainer: 2 commits
     - maintainer, nobody: 45 commits
     - maintainer, no role : 21 commits
-- mm-new: 102 total, 12 (88) series, 14 non-series commits
+- mm-new: 75 total, 10 (63) series, 12 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 47 commits
-    - no role, no role : 32 commits
-    - no role, reviewer: 9 commits
+    - no role, nobody: 34 commits
+    - no role, no role : 19 commits
+    - no role, reviewer: 8 commits
     - no role, maintainer: 8 commits
     - maintainer, nobody: 6 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

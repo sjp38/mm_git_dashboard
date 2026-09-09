@@ -1,252 +1,81 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
-- mm-hotfixes-stable: 11 -> 11 commits (no change)
+- mm-hotfixes-stable: 11 -> 14 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+    - no role, nobody: 2 -> 3 commits
+    - no role, no role : 3 -> 5 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 17 -> 21 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 7 -> 6 commits
-    - no role, no role : 6 -> 7 commits
-    - no role, reviewer: 1 -> 2 commits
-    - no role, maintainer: 2 -> 4 commits
-    - maintainer, nobody: 1 -> 2 commits
-  - new commits
-    - abda8524acd1 "mm/damon/core: allow esz to be set to zero"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260908135413.97570-1-sj@kernel.org
-    - 2472b8bb7887 "mm/damon/vaddr: avoid hw-driven pte updates during damon_hugetlb_mkold()"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260907170358.100168-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260830160545.98969-1-sj@kernel.org [1]
-    - 204a7ed0d3a7 "mm/damon/core: fix unconditionally skip last region"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260908134739.96919-1-sj@kernel.org
-    - 105afbf7344e "MAINTAINERS: add Baoquan and Baolin as MGLRU reviewers"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/06e20ef4f603a4ffeafcdbf623ce2936281457bf.1788831480.git.baolin.wang@linux.alibaba.com
   - changed commits
-    - 7e3b1ca49ac0 "mm/rmap: fix missing barrier between anon_vma init and vma->anon_vma publish"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/20260908122924.554373-1-tujinjiang@huawei.com"
-      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-      - added "Cc: Minchan Kim <minchan@kernel.org>"
-      - added "Cc: Jinjiang Tu <tujinjiang@huawei.com>"
-      - dropped "Link: https://lore.kernel.org/20260905061820.642437-1-tujinjiang@huawei.com"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-      - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
-      - Link: https://lore.kernel.org/20260908122924.554373-1-tujinjiang@huawei.com
+    - 6cc27d821963 "mm/vma: correctly unaccount on mmap_prepare() failure"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260902-fix-unaccount-mmap_prepare-v1-1-ea070189fdfb@kernel.org
+    - 932cfb25e7ce "mm/shrinker: fix bogus set_shrinker_bit() with cgroup.memory=nokmem"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260902073800.305481-1-jiayuan.chen@linux.dev
+    - 7891fbb9512f "mm/folio: EXPORT_SYMBOL_FOR_KVM(lru_cache_drain_for_folio)"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/lkml/bd6c9c74-e374-a9d3-ba1f-8b6f430894fc@google.com/T/#u
+      - Link: https://lore.kernel.org/02876cea-5727-2ca4-bead-73659ea6fec4@google.com
+- mm-hotfixes-unstable: 21 -> 18 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 6 -> 5 commits
+    - no role, no role : 7 -> 5 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - maintainer, nobody: 2 -> 2 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 257 -> 269 commits
-  - series: 47 (206) -> 48 (212)
-    - no role, nobody: 33 -> 31 commits
-    - no role, no role : 83 -> 80 commits
-    - no role, reviewer: 28 -> 38 commits
-    - no role, maintainer: 40 -> 41 commits
+- mm-unstable: 269 -> 269 commits (no change)
+  - series: 48 (212) -> 48 (212) (no change)
+    - no role, nobody: 31 -> 30 commits
+    - no role, no role : 80 -> 81 commits
+    - no role, reviewer: 38 -> 38 commits (no change)
+    - no role, maintainer: 41 -> 41 commits (no change)
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
-    - reviewer, reviewer: 1 -> 6 commits
+    - reviewer, reviewer: 6 -> 6 commits (no change)
     - reviewer, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 44 -> 45 commits
+    - maintainer, nobody: 45 -> 45 commits (no change)
     - maintainer, no role : 21 -> 21 commits (no change)
   - changed commits
-    - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v3. (6)
-      - 3aab117c4996 "set_memory: add number of pages parameter to set_direct_map APIs (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-0-949b64a9f755@kernel.org
-        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-1-949b64a9f755@kernel.org
-        - Link: https://lore.kernel.org/all/20260611130144.1385343-4-abarnas@google.com [1]
-      - e2841688ce4c "mm/vmalloc: constify vm parameter of get_vm_area_page_order() (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-3-949b64a9f755@kernel.org
-      - 95ad20fae1ba "mm/vmalloc: make set_area_direct_map HUGE_VMAP friendly (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
-        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-4-949b64a9f755@kernel.org
-      - 2042241e3fa8 "Revert "arch: introduce set_direct_map_valid_noflush()" (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-6-949b64a9f755@kernel.org
-        - Link: https://lore.kernel.org/all/DJ69RCVRBO0Y.3JCYSW50IC4RC@linux.dev [1]
-    - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous", v2. (6)
-      - aef570cab862 "mm: move drivers/char/mem.c to mm/char-mem.c (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org"
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-1-a578c730cec7@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-0-a578c730cec7@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org
-      - 26f99fd2f26a "mm: implement file_is_dev_zero() to uniquely identify /dev/zero (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-2-a578c730cec7@kernel.org"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org
-      - 7db416766f2f "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-3-a578c730cec7@kernel.org"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org
-      - df68e0f51e44 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-4-a578c730cec7@kernel.org"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org
-      - 6f1c4b812e38 "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-5-acc7b5625305@kernel.org"
-        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-5-a578c730cec7@kernel.org"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-5-acc7b5625305@kernel.org
-      - f4e5bb55b920 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-6-a578c730cec7@kernel.org"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org
-    - c3454e0e8bb0 "mm/memory_hotplug: factor out node_is_memoryless()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
-    - 5940e0981f2a "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-    - 51ab12b55c4a "mm: remove PageWriteback"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
+    - 17be665bf4f7 "mm: remove PageWriteback"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
       - Link: https://lore.kernel.org/20260905-remove-pagewriteback-v1-1-06f41c00db03@columbia.edu
-    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
-      - 22bbbee798f9 "mm/memcontrol: move the lru_zone_size sanity check to the reader side (0/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-0-9aacbd77d4ca@tencent.com
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-1-9aacbd77d4ca@tencent.com
-        - Link: https://lore.kernel.org/linux-mm/20260804-mglru-fg-v1-0-4d8dad39dad6@tencent.com/ [1]
-      - 5417270e94d1 "mm/mglru: introduce helpers for manipulating gen and refs flags (1/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
-      - e8b38eface53 "mm/migrate: copy all referenced state via folio_migrate_lru_refs (2/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-3-9aacbd77d4ca@tencent.com
-      - 4ed5979864af "mm/mglru: move max_seq read into walk_update_folio (3/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-4-9aacbd77d4ca@tencent.com
-      - c36d21312041 "mm/mglru: use explicit tier range in read_ctrl_pos() (4/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
-      - 8dd5b531170e "mm/mglru: fix potential generation folio number leak (5/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-6-9aacbd77d4ca@tencent.com
-    - aa5997993d29 "mm/memory: constrain generic_access_phys() to page boundary"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/eaa4de66f9491888e0ffeb2d37ba7ae796ba535e.1788531737.git.rakukuip@gmail.com
-    - 00ebb111ded1 "mm/zswap: enable static key after runtime pool recovery"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260905125101.2970456-1-xialonglong2025@163.com
-    - ae19eeea5ddd "docs/mm: ksm: use the renamed ksm structure names"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
-- mm-new: 54 -> 102 commits
-  - series: 7 (38) -> 12 (88)
-    - no role, nobody: 15 -> 47 commits
-    - no role, no role : 18 -> 32 commits
-    - no role, reviewer: 3 -> 9 commits
-    - no role, maintainer: 5 -> 8 commits
-    - reviewer, reviewer: 5 -> 0 commits
-    - maintainer, nobody: 8 -> 6 commits
-  - new commits
-    - series "mm: remove page_swap_entry()", v2. (8)
-      - fdb1f2ecc0ed "mm/swap: add folio_swap_entry() and folio_page_swap_entry() (0/8)"
-        - Authored by no role player, reviewed by nobody
-      - e09c3263c6e5 "mm/huge_memory: add a comment to the open-coded swap entry (1/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-2-ee6d01dfa5e1@columbia.edu
-      - 2d61c6002e0f "mm/rmap: use folio_page_swap_entry() in ttu_anon_swapbacked_folio() (2/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-3-ee6d01dfa5e1@columbia.edu
-      - 77c999a77d18 "mm/zswap: use folio_swap_entry() in zswap_store_page() (3/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-4-ee6d01dfa5e1@columbia.edu
-      - eed3d67bfff0 "mm/swapfile: use folio_page_swap_entry() (4/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-5-ee6d01dfa5e1@columbia.edu
-      - 998203069bf1 "arm64: mte: make mte_save_tags() and mte_restore_tags() static (5/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-6-ee6d01dfa5e1@columbia.edu
-      - 6de9647145ab "arm64: mte: pass the swap entry to mte_save_tags() (6/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-7-ee6d01dfa5e1@columbia.edu
-      - 75545fa4fb0c "mm/swap: remove page_swap_entry() (7/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-8-ee6d01dfa5e1@columbia.edu
-    - be8e37b1a7c4 "Docs/mm/damon/design: fix broken :ref: usage and a typo"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260908135257.97523-1-sj@kernel.org
-    - series "mm/damon: support access monitoring of hugetlb-backed memory", v3. (3)
-      - 6be448c1a25a "mm/damon: move damon_hugetlb_mkold() from vaddr to ops-common (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260908135156.97481-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260902025700.17975-2-kiyer@crusoe.ai
-        - Link: https://lore.kernel.org/20260908135156.97481-2-sj@kernel.org
-      - 0f1bcb2f8fc2 "mm/damon/ops-common: handle hugetlb folios in folio mkold/young rmap walkers (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260902025700.17975-3-kiyer@crusoe.ai
-        - Link: https://lore.kernel.org/20260908135156.97481-3-sj@kernel.org
-      - e539caf741ea "mm/damon/paddr: support hugetlb folios in access monitoring (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260902025700.17975-4-kiyer@crusoe.ai
-        - Link: https://lore.kernel.org/20260908135156.97481-4-sj@kernel.org
-    - series "selftests/mm: pagemap_ioctl test fixes and cleanups", v2. (3)
-      - 813b5dfbac15 "selftests/mm: fix size truncation in pagemap_ioctl test (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908134117.84405-1-zenghui.yu@linux.dev
-        - Link: https://lore.kernel.org/20260908134117.84405-2-zenghui.yu@linux.dev
-      - 94cad61834b2 "selftests/mm: mark file-local symbols of pagemap_ioctl.c static (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908134315.84431-1-zenghui.yu@linux.dev
-      - f218fc0e98a3 "selftests/mm: init page sizes early in pagemap_ioctl test (2/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908134405.84448-1-zenghui.yu@linux.dev
-        - Link: : https://lore.kernel.org/20260628111329.9cfcd9c67925869307020aba@linux-foundation.org/
+- mm-new: 102 -> 75 commits
+  - series: 12 (88) -> 10 (63)
+    - no role, nobody: 47 -> 34 commits
+    - no role, no role : 32 -> 19 commits
+    - no role, reviewer: 9 -> 8 commits
+    - no role, maintainer: 8 -> 8 commits (no change)
+    - maintainer, nobody: 6 -> 6 commits (no change)
+  - dropped commits
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6)
+      - e1e008430642 "selftests/mm: make file helpers return errors (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-1-sarthak.sharma@arm.com
+        - Link: https://lore.kernel.org/20260904123631.198697-2-sarthak.sharma@arm.com
+      - 370b3fb4c43c "tools/lib/mm: add shared file helpers (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-3-sarthak.sharma@arm.com
+      - 36d9e9b8854d "tools/lib/mm: move hugepage_settings out of selftests (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-4-sarthak.sharma@arm.com
+      - 57cbc1a16746 "tools/mm: move gup_test from selftests/mm to tools/mm (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-5-sarthak.sharma@arm.com
+      - 60c2077107b0 "tools/mm: make gup_bench a benchmark only tool (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-6-sarthak.sharma@arm.com
+      - 21155e443912 "selftests/mm: add a GUP selftest (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-7-sarthak.sharma@arm.com
     - series "selftests/mm: improve khugepaged coverage", v5. (19)
       - 0e2fcd28598c "selftests/mm: raise the khugepaged test-case cap (0/19)"
         - Authored by no role player, reviewed by a reviewer
@@ -312,113 +141,13 @@
     - 7a1806b97983 "selftests/mm: zap whole PTE tables in the khugepaged race harness"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260908125105.1510704-20-kirill@shutemov.name
-    - 8ea86f571a8a "mm/huge_memory: add folio_reset_partially_mapped()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260908132821.1517475-1-kirill@shutemov.name
-    - series "mm: make userland page table freeing RCU-safe", v2. (12)
-      - 82889c78d81f "mm/huge_memory: zap deposited page tables after an RCU grace period (0/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-0-1f60b64e878e@kernel.org
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-1-1f60b64e878e@kernel.org
-      - 981980b7230d "mm: enable MMU_GATHER_RCU_TABLE_FREE for most 2-level architectures (1/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-2-1f60b64e878e@kernel.org
-      - feea7250693a "mm: enable MMU_GATHER_RCU_TABLE_FREE for MMU riscv (2/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-3-1f60b64e878e@kernel.org
-      - cf42e07d3858 "mm: enable MMU_GATHER_RCU_TABLE_FREE for MMU arm (3/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-4-1f60b64e878e@kernel.org
-      - bcd66d3d71ed "mm: enable MMU_GATHER_RCU_TABLE_FREE for arc, microblaze, xtensa (4/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-5-1f60b64e878e@kernel.org
-      - defebcea7ce3 "mm: enable MMU_GATHER_RCU_TABLE_FREE for sparc64 (5/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-6-1f60b64e878e@kernel.org
-      - 26ee3891e8b1 "mm: enable MMU_GATHER_RCU_TABLE_FREE for m68k-coldfire (6/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-7-1f60b64e878e@kernel.org
-      - 6653cbd2fa7d "mm: enable MMU_GATHER_RCU_TABLE_FREE for sh-X2 (7/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-8-1f60b64e878e@kernel.org
-      - ed0838fee49d "mm: enable MMU_GATHER_RCU_TABLE_FREE for m68k-motorola (8/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-9-1f60b64e878e@kernel.org
-      - c785505e7fb1 "mm: enable MMU_GATHER_RCU_TABLE_FREE for sparc32 (9/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-10-1f60b64e878e@kernel.org
-      - b37fdd0a3ac6 "mm: make userland page table freeing RCU-safe (10/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-11-1f60b64e878e@kernel.org
-      - d094156bbe49 "mm: change the contract for free_pgtables(), update docs (11/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org
-    - 98210bd95daf "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
-      - 6df462b490e0 "mm/sparse-vmemmap: introduce CONFIG_SPARSEMEM_VMEMMAP_OPTIMIZATION (0/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260908030335.96549-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260908030335.96549-2-songmuchun@bytedance.com
-      - 43608d0e9fc2 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: 
-      - 62bf56d09f2f "mm/sparse-vmemmap: open-code init_compound_tail() (2/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - e37d65cd90cf "mm/sparse-vmemmap: prepare DAX vmemmap population for section orders (3/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - 7ecfa2ab5c87 "mm/sparse-vmemmap: set section order for device DAX (4/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - da9f72aacb98 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: 
-      - a2a733263bc6 "mm/sparse-vmemmap: move HVO helpers to a public header (6/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - cf538925f7e5 "powerpc/mm: switch device DAX to shared tail vmemmap pages (7/11)"
-        - Authored by no role player, reviewed by nobody
-        - Link: 
-      - 9b5067a050c8 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (8/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908030335.96549-10-songmuchun@bytedance.com
-      - c664528be135 "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments (9/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908030335.96549-11-songmuchun@bytedance.com
-      - 02c5e9081d85 "Documentation/mm: update DAX vmemmap deduplication docs (10/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908030335.96549-12-songmuchun@bytedance.com
-  - changed commits
-    - 9cb68f98497d "mm/memcontrol: skip non-hierarchical memcg-wide stats when v1 is unavailable"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lore.kernel.org/20260903215616.1456239-1-joannelkoong@gmail.com
-  - dropped commits
-    - 3af6db64f80d "mm/hugetlb: don't lock private resv_map during final unmap"
-      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 67 -> 70 commits
-  - series: 10 (25) -> 11 (28)
+- mm-nonmm-unstable: 70 -> 70 commits (no change)
+  - series: 11 (28) -> 11 (28) (no change)
     - no role, nobody: 32 -> 32 commits (no change)
     - no role, no role : 14 -> 14 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-    - reviewer, nobody: 0 -> 3 commits
+    - reviewer, nobody: 3 -> 3 commits (no change)
     - maintainer, nobody: 9 -> 9 commits (no change)
     - maintainer, no role : 5 -> 5 commits (no change)
-  - new commits
-    - series "module: Extend module_blacklist parameter to built-in modules", v11. (3)
-      - 71616aa36149 "module: treat dashes and underscores interchangeably in module_blacklist (0/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908203230.401020-1-atomlin@atomlin.com
-        - Link: https://lore.kernel.org/20260908203230.401020-2-atomlin@atomlin.com
-      - 030b0caa5e62 "module: extend module_blacklist parameter to built-in modules (1/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908203230.401020-3-atomlin@atomlin.com
-      - 230df5865d92 "module: rename module_blacklist to module_denylist (2/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908203230.401020-4-atomlin@atomlin.com

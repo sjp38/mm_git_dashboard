@@ -6,25 +6,15 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 6 commits
+- mm-unstable: 6 -> 6 commits (no change)
   - series: 3 (5) -> 3 (5) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-  - changed commits
-    - 00ebb111ded1 "mm/zswap: enable static key after runtime pool recovery"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260905125101.2970456-1-xialonglong2025@163.com
 - mm-new: 3 -> 3 commits (no change)
-  - series: 0 (1) -> 0 (2)
+  - series: 0 (2) -> 0 (2) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-  - new commits
-    - series "mm: remove page_swap_entry()", v2. (8)
-      - 77c999a77d18 "mm/zswap: use folio_swap_entry() in zswap_store_page() (3/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-4-ee6d01dfa5e1@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 2e8a053d6fe4 "selftests/cgroup: account for zswap shrinker writeback"
+    - ef3608153027 "selftests/cgroup: account for zswap shrinker writeback"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260902194521.3652178-1-joshua.hahnjy@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -15,27 +15,27 @@
     - no role, maintainer: 4 commits
   - full commits list
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
-      - 8540196b6bf8 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
+      - 0d95aac468d0 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
     - series "selftests/cgroup: fixes for test_zswap on single core VM", v4. (2 commits)
-      - 567fd916e1bb "selftests/cgroup: test_zswap: wait for cgroup to unpopulate in test_zswap_writeback" (0/2)
+      - 4c26a887f440 "selftests/cgroup: test_zswap: wait for cgroup to unpopulate in test_zswap_writeback" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260828033741.2184560-1-wfelipe@google.com
         - Link: https://lore.kernel.org/20260828033741.2184560-2-wfelipe@google.com
-      - 2b6b2de6e2ef "selftests/cgroup: test_zswap: fix implicit unsigned promotion bug in test_no_kmem_bypass" (1/2)
+      - 9937ca9c8d7d "selftests/cgroup: test_zswap: fix implicit unsigned promotion bug in test_no_kmem_bypass" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260828033741.2184560-3-wfelipe@google.com
-      - 8842fc788865 "mm/swap: rename __swap_writepage() to __swap_writeout()" (5/6)
+      - 0cff17f145c8 "mm/swap: rename __swap_writepage() to __swap_writeout()" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-6-649728091117@columbia.edu
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - f0336b43568a "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - 6c6bd752a5eb "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
-    - 00ebb111ded1 "mm/zswap: enable static key after runtime pool recovery"
+    - a2e91a21c79e "mm/zswap: enable static key after runtime pool recovery"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260905125101.2970456-1-xialonglong2025@163.com
 - mm-new: 3 total, 0 (2) series, 1 non-series commits
@@ -43,14 +43,14 @@
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-    - c6d375a1aa1d "mm/zswap: convert zswap_store_page() and zswap_compress() to take a folio"
+    - fb63641f0c07 "mm/zswap: convert zswap_store_page() and zswap_compress() to take a folio"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260904232108.3034333-1-wfelipe@google.com
-      - ce4b828e5431 "mm: zswap: mark the zswap shrinker SHRINKER_NONSLAB" (1/2)
+      - 40325830ab30 "mm: zswap: mark the zswap shrinker SHRINKER_NONSLAB" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260904033503.4067283-3-qinyuntan@linux.alibaba.com
         - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
-      - 77c999a77d18 "mm/zswap: use folio_swap_entry() in zswap_store_page()" (3/8)
+      - 2528bdce0990 "mm/zswap: use folio_swap_entry() in zswap_store_page()" (3/8)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-4-ee6d01dfa5e1@columbia.edu
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

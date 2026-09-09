@@ -12,16 +12,20 @@
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 3 -> 18 commits
-  - series: 2 (3) -> 4 (17)
-    - no role, nobody: 0 -> 6 commits
-    - no role, no role : 2 -> 8 commits
-    - no role, reviewer: 1 -> 4 commits
-  - new commits
-    - series "mm: remove page_swap_entry()", v2. (8)
-      - e09c3263c6e5 "mm/huge_memory: add a comment to the open-coded swap entry (1/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-2-ee6d01dfa5e1@columbia.edu
+- mm-new: 18 -> 4 commits
+  - series: 4 (17) -> 2 (3)
+    - no role, nobody: 6 -> 1 commits
+    - no role, no role : 8 -> 0 commits
+    - no role, reviewer: 4 -> 3 commits
+  - dropped commits
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6)
+      - e1e008430642 "selftests/mm: make file helpers return errors (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-1-sarthak.sharma@arm.com
+        - Link: https://lore.kernel.org/20260904123631.198697-2-sarthak.sharma@arm.com
+      - 36d9e9b8854d "tools/lib/mm: move hugepage_settings out of selftests (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-4-sarthak.sharma@arm.com
     - series "selftests/mm: improve khugepaged coverage", v5. (19)
       - 0e2fcd28598c "selftests/mm: raise the khugepaged test-case cap (0/19)"
         - Authored by no role player, reviewed by a reviewer
@@ -60,14 +64,6 @@
       - 9a506e9990b3 "selftests/mm: run every supported collapse order by default (14/19)"
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260908125105.1510704-15-kirill@shutemov.name
-    - 8ea86f571a8a "mm/huge_memory: add folio_reset_partially_mapped()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260908132821.1517475-1-kirill@shutemov.name
-    - series "mm: make userland page table freeing RCU-safe", v2. (12)
-      - 82889c78d81f "mm/huge_memory: zap deposited page tables after an RCU grace period (0/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-0-1f60b64e878e@kernel.org
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-1-1f60b64e878e@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

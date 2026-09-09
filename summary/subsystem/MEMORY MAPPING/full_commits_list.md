@@ -1,6 +1,7 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c
-- mm-hotfixes-stable: 2 total, 0 (0) series, 2 non-series commits
+- mm-hotfixes-stable: 3 total, 0 (0) series, 3 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 2 commits
   - full commits list
     - 397432cab17b "mm/mremap: account mm->locked_vm correctly for MREMAP_DONTUNMAP"
@@ -9,15 +10,14 @@
     - e14a34548064 "mm/mlock: use the IRQ-safe accessor for NR_MLOCK in __munlock_folio()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260901180109.3797944-1-shakeel.butt@linux.dev
-- mm-hotfixes-unstable: 2 total, 0 (0) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, reviewer: 1 commits
-  - full commits list
-    - e5761bc9bc5b "mm/vma: correctly unaccount on mmap_prepare() failure"
+    - 6cc27d821963 "mm/vma: correctly unaccount on mmap_prepare() failure"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260902-fix-unaccount-mmap_prepare-v1-1-ea070189fdfb@kernel.org
-    - 7e3b1ca49ac0 "mm/rmap: fix missing barrier between anon_vma init and vma->anon_vma publish"
+- mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+  - full commits list
+    - a8fc451118df "mm/rmap: fix missing barrier between anon_vma init and vma->anon_vma publish"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908122924.554373-1-tujinjiang@huawei.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -28,33 +28,33 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - f0336b43568a "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - 6c6bd752a5eb "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - 8beda563c84f "mm: make per-VMA locks available universally" (0/7)
+      - e568fa18db58 "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
     - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous", v2. (6 commits)
-      - aef570cab862 "mm: move drivers/char/mem.c to mm/char-mem.c" (0/6)
+      - a6a868893b81 "mm: move drivers/char/mem.c to mm/char-mem.c" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org
-      - 26f99fd2f26a "mm: implement file_is_dev_zero() to uniquely identify /dev/zero" (1/6)
+      - 0b154ad62fa3 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org
-      - 7db416766f2f "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous" (2/6)
+      - db9805f532e4 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org
-      - df68e0f51e44 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
+      - 87aad0b187a3 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org
-      - 6f1c4b812e38 "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon" (4/6)
+      - 11b741b1d1d3 "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-5-acc7b5625305@kernel.org
-      - f4e5bb55b920 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests" (5/6)
+      - 22124e12936f "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

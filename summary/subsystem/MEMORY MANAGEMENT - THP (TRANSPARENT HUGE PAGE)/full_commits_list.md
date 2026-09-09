@@ -16,114 +16,67 @@
     - no role, reviewer: 5 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - b5c529b46c99 "selftests/mm: khugepaged: remove str_dup() usage"
+    - 4f8cf076a643 "selftests/mm: khugepaged: remove str_dup() usage"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
       - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
     - series "mm: khugepaged: fix tracepoint UAF", v4. (3 commits)
-      - ad64280cbdc1 "mm: khugepaged: fix swap entry value to folio_pfn()" (0/3)
+      - 0d0c158f1779 "mm: khugepaged: fix swap entry value to folio_pfn()" (0/3)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260828055926.346744-1-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/20260828055926.346744-2-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
-      - ce672530d34e "mm: khugepaged: fix folio is used after pte_unmap_unlock()" (1/3)
+      - 227978120bfb "mm: khugepaged: fix folio is used after pte_unmap_unlock()" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828055926.346744-3-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]
-      - 0f2de3578b86 "mm: khugepaged: fix folio is used after folio_put/unlock()" (2/3)
+      - f082520855fe "mm: khugepaged: fix folio is used after folio_put/unlock()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828055926.346744-4-vernon2gm@gmail.com
-    - d9d1d7bb48cb "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
+    - 7aec29117c93 "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260828222640.1638457-1-jthoughton@google.com
     - series "mm: reject zone device folios in more folio walkers", v2. (3 commits)
-      - ac5ba08c0f21 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd()" (0/3)
+      - 47f8550e44a7 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd()" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260817220810.1175596-2-gourry@gourry.net
-    - cec58773f4e5 "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
+    - a78881890fad "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
     - series "Fix deferred_split_isolate() and drop the split workaround", v2. (2 commits)
-      - 9c3cd7802571 "mm/huge_memory: do not touch frozen folios in deferred_split_isolate()" (0/2)
+      - bda9e19fe168 "mm/huge_memory: do not touch frozen folios in deferred_split_isolate()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260831091514.1879786-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260831091514.1879786-2-kirill@shutemov.name
-      - 15120ba8851a "mm/huge_memory: dequeue the deferred split after the split freeze" (1/2)
+      - 6408abd67055 "mm/huge_memory: dequeue the deferred split after the split freeze" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260831091514.1879786-3-kirill@shutemov.name
-    - d155503d3a92 "selftests/mm: remove unreachable returns after ksft exit helpers"
+    - d49dd0293c68 "selftests/mm: remove unreachable returns after ksft exit helpers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
-    - 0fbefeebc3cb "mm/huge_memory: fix various coding style warnings"
+    - e26f4d3dea9f "mm/huge_memory: fix various coding style warnings"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260903092200.88910-1-christosskarlos.kernel@gmail.com
-- mm-new: 18 total, 4 (17) series, 1 non-series commits
+- mm-new: 4 total, 2 (3) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 6 commits
-    - no role, no role : 8 commits
-    - no role, reviewer: 4 commits
+    - no role, nobody: 1 commits
+    - no role, reviewer: 3 commits
   - full commits list
-    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6 commits)
-      - e1e008430642 "selftests/mm: make file helpers return errors" (0/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-1-sarthak.sharma@arm.com
-        - Link: https://lore.kernel.org/20260904123631.198697-2-sarthak.sharma@arm.com
-      - 36d9e9b8854d "tools/lib/mm: move hugepage_settings out of selftests" (2/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-4-sarthak.sharma@arm.com
     - series "mm: restore SHRINKER_NONSLAB on THP and zswap shrinkers". (2 commits)
-      - c749f326543e "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker" (0/2)
+      - 58786463c5c5 "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260904033503.4067283-1-qinyuntan@linux.alibaba.com
         - Link: https://lore.kernel.org/20260904033503.4067283-2-qinyuntan@linux.alibaba.com
         - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
-      - e09c3263c6e5 "mm/huge_memory: add a comment to the open-coded swap entry" (1/8)
+      - 70181b5f1134 "mm/huge_memory: add a comment to the open-coded swap entry" (1/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-2-ee6d01dfa5e1@columbia.edu
-    - series "selftests/mm: improve khugepaged coverage", v5. (19 commits)
-      - 0e2fcd28598c "selftests/mm: raise the khugepaged test-case cap" (0/19)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260908125105.1510704-1-kirill@shutemov.name
-        - Link: https://lore.kernel.org/20260908125105.1510704-2-kirill@shutemov.name
-      - 48ea4049610d "selftests/mm: skip collapse_compound_extreme() where the PMD is too large" (1/19)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-3-kirill@shutemov.name
-      - 3d62e460f952 "selftests/mm: scale khugepaged's collapse wait with the PMD size" (2/19)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-4-kirill@shutemov.name
-      - ed94bbd5ee18 "selftests/mm: skip khugepaged page cache cases without a PMD folio" (3/19)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-5-kirill@shutemov.name
-      - c4856e31b152 "selftests/mm: make the swap cases' swapout reliable" (4/19)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-6-kirill@shutemov.name
-      - 0d15951d03e4 "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases" (5/19)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-7-kirill@shutemov.name
-      - 3ed95815571a "selftests/mm: move is_backed_by_folio() into vm_util" (6/19)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-8-kirill@shutemov.name
-      - b69f03bbcab4 "selftests/mm: add order-parameterized khugepaged collapse cases" (10/19)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-12-kirill@shutemov.name
-      - 9fd01daaeacb "selftests/mm: parameterize the mixed-source collapse case by source order" (11/19)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-13-kirill@shutemov.name
-      - 2c28995673c4 "selftests/mm: cover a shared-source collapse write race" (12/19)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-14-kirill@shutemov.name
-      - 4314d59fb8f1 "selftests-mm-cover-a-shared-source-collapse-write-race-fix" (13/19)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/aqB2ckEupUKnoJt_@thinkstation
-      - 9a506e9990b3 "selftests/mm: run every supported collapse order by default" (14/19)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-15-kirill@shutemov.name
-    - 8ea86f571a8a "mm/huge_memory: add folio_reset_partially_mapped()"
+    - 304d54bb47c2 "mm/huge_memory: add folio_reset_partially_mapped()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908132821.1517475-1-kirill@shutemov.name
     - series "mm: make userland page table freeing RCU-safe", v2. (12 commits)
-      - 82889c78d81f "mm/huge_memory: zap deposited page tables after an RCU grace period" (0/12)
+      - 909c64786631 "mm/huge_memory: zap deposited page tables after an RCU grace period" (0/12)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-0-1f60b64e878e@kernel.org
         - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-1-1f60b64e878e@kernel.org

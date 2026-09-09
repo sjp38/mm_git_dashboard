@@ -11,19 +11,9 @@
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 1 -> 4 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, nobody: 1 -> 4 commits
-  - new commits
-    - series "mm: remove page_swap_entry()", v2. (8)
-      - fdb1f2ecc0ed "mm/swap: add folio_swap_entry() and folio_page_swap_entry() (0/8)"
-        - Authored by no role player, reviewed by nobody
-      - eed3d67bfff0 "mm/swapfile: use folio_page_swap_entry() (4/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-5-ee6d01dfa5e1@columbia.edu
-      - 75545fa4fb0c "mm/swap: remove page_swap_entry() (7/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-8-ee6d01dfa5e1@columbia.edu
+- mm-new: 4 -> 4 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

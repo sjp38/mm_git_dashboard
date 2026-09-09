@@ -5,41 +5,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 17 -> 21 commits
-  - series: 3 (14) -> 3 (18)
+- mm-unstable: 21 -> 21 commits (no change)
+  - series: 3 (18) -> 3 (18) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 9 -> 0 commits
-    - no role, reviewer: 3 -> 12 commits
+    - no role, reviewer: 12 -> 12 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 5 commits
+    - reviewer, reviewer: 5 -> 5 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
-      - 5417270e94d1 "mm/mglru: introduce helpers for manipulating gen and refs flags (1/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
-      - 4ed5979864af "mm/mglru: move max_seq read into walk_update_folio (3/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-4-9aacbd77d4ca@tencent.com
-      - c36d21312041 "mm/mglru: use explicit tier range in read_ctrl_pos() (4/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
-      - 8dd5b531170e "mm/mglru: fix potential generation folio number leak (5/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-6-9aacbd77d4ca@tencent.com
-- mm-new: 5 -> 2 commits
-  - series: 0 (5) -> 0 (1)
-    - no role, reviewer: 1 -> 2 commits
-    - reviewer, reviewer: 4 -> 0 commits
-  - new commits
-    - 98210bd95daf "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

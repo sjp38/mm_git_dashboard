@@ -7,41 +7,29 @@
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-    - 808ebdf46f7f "mm/gup_test: report actual pinned bytes"
+    - 1f6e8d76f34d "mm/gup_test: report actual pinned bytes"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260831101304.162867-1-sarthak.sharma@arm.com
     - series "mm: gup: cleanup gup_fast call chain", v3. (2 commits)
-      - 9497520129ea "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
+      - 6af57d3f7f6f "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260828015542.125576330@ruivo.org
         - Link: https://lore.kernel.org/20260828015542.245315718@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u [1]
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - 1c3d0ec763e1 "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
+      - 13b1aca7c2f4 "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260828015542.334186653@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-- mm-new: 6 total, 0 (5) series, 1 non-series commits
+- mm-new: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 5 commits
+    - no role, no role : 1 commits
   - full commits list
-      - 36d9e9b8854d "tools/lib/mm: move hugepage_settings out of selftests" (2/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-4-sarthak.sharma@arm.com
-      - 57cbc1a16746 "tools/mm: move gup_test from selftests/mm to tools/mm" (3/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-5-sarthak.sharma@arm.com
-      - 60c2077107b0 "tools/mm: make gup_bench a benchmark only tool" (4/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-6-sarthak.sharma@arm.com
-      - 21155e443912 "selftests/mm: add a GUP selftest" (5/6)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-7-sarthak.sharma@arm.com
-      - b37fdd0a3ac6 "mm: make userland page table freeing RCU-safe" (10/12)
+      - 32a847c433a7 "mm: make userland page table freeing RCU-safe" (10/12)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-11-1f60b64e878e@kernel.org
-    - 200b59b19558 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 760da00c9209 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

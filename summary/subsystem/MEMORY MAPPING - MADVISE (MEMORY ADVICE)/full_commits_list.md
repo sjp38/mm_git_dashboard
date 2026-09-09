@@ -6,14 +6,14 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - 8f40e43b2ea6 "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
+      - 1c0494e45820 "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-3-gourry@gourry.net
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 5f58f3b031e9 "mm/madvise: swap in CoW'd MAP_PRIVATE-file mappings on MADV_WILLNEED"
+    - c32d9b2ca005 "mm/madvise: swap in CoW'd MAP_PRIVATE-file mappings on MADV_WILLNEED"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/aprjOxDy3JCPb2oa@gremlin
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

@@ -5,78 +5,37 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 26 -> 27 commits
+- mm-unstable: 27 -> 27 commits (no change)
   - series: 5 (19) -> 5 (19) (no change)
-    - no role, nobody: 4 -> 1 commits
-    - no role, no role : 9 -> 12 commits
-    - no role, reviewer: 4 -> 5 commits
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 12 -> 12 commits (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
-  - changed commits
-    - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous", v2. (6)
-      - aef570cab862 "mm: move drivers/char/mem.c to mm/char-mem.c (0/6)"
+- mm-new: 33 -> 7 commits
+  - series: 3 (29) -> 1 (5)
+    - no role, nobody: 18 -> 5 commits
+    - no role, no role : 13 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - dropped commits
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6)
+      - e1e008430642 "selftests/mm: make file helpers return errors (0/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org"
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-1-a578c730cec7@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-0-a578c730cec7@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org
-      - 26f99fd2f26a "mm: implement file_is_dev_zero() to uniquely identify /dev/zero (1/6)"
+        - Link: https://lore.kernel.org/20260904123631.198697-1-sarthak.sharma@arm.com
+        - Link: https://lore.kernel.org/20260904123631.198697-2-sarthak.sharma@arm.com
+      - 370b3fb4c43c "tools/lib/mm: add shared file helpers (1/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-2-a578c730cec7@kernel.org"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org
-      - 7db416766f2f "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (2/6)"
+        - Link: https://lore.kernel.org/20260904123631.198697-3-sarthak.sharma@arm.com
+      - 36d9e9b8854d "tools/lib/mm: move hugepage_settings out of selftests (2/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-3-a578c730cec7@kernel.org"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org
-      - f4e5bb55b920 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests (5/6)"
+        - Link: https://lore.kernel.org/20260904123631.198697-4-sarthak.sharma@arm.com
+      - 57cbc1a16746 "tools/mm: move gup_test from selftests/mm to tools/mm (3/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-6-a578c730cec7@kernel.org"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org
-    - ae19eeea5ddd "docs/mm: ksm: use the renamed ksm structure names"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
-- mm-new: 7 -> 33 commits
-  - series: 1 (5) -> 3 (29)
-    - no role, nobody: 1 -> 18 commits
-    - no role, no role : 5 -> 13 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - be8e37b1a7c4 "Docs/mm/damon/design: fix broken :ref: usage and a typo"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260908135257.97523-1-sj@kernel.org
-    - series "selftests/mm: pagemap_ioctl test fixes and cleanups", v2. (3)
-      - 813b5dfbac15 "selftests/mm: fix size truncation in pagemap_ioctl test (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908134117.84405-1-zenghui.yu@linux.dev
-        - Link: https://lore.kernel.org/20260908134117.84405-2-zenghui.yu@linux.dev
-      - 94cad61834b2 "selftests/mm: mark file-local symbols of pagemap_ioctl.c static (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908134315.84431-1-zenghui.yu@linux.dev
-      - f218fc0e98a3 "selftests/mm: init page sizes early in pagemap_ioctl test (2/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908134405.84448-1-zenghui.yu@linux.dev
-        - Link: : https://lore.kernel.org/20260628111329.9cfcd9c67925869307020aba@linux-foundation.org/
+        - Link: https://lore.kernel.org/20260904123631.198697-5-sarthak.sharma@arm.com
+      - 21155e443912 "selftests/mm: add a GUP selftest (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-7-sarthak.sharma@arm.com
     - series "selftests/mm: improve khugepaged coverage", v5. (19)
       - 0e2fcd28598c "selftests/mm: raise the khugepaged test-case cap (0/19)"
         - Authored by no role player, reviewed by a reviewer
@@ -142,14 +101,6 @@
     - 7a1806b97983 "selftests/mm: zap whole PTE tables in the khugepaged race harness"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260908125105.1510704-20-kirill@shutemov.name
-    - series "mm: make userland page table freeing RCU-safe", v2. (12)
-      - d094156bbe49 "mm: change the contract for free_pgtables(), update docs (11/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
-      - 02c5e9081d85 "Documentation/mm: update DAX vmemmap deduplication docs (10/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908030335.96549-12-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

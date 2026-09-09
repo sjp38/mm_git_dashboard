@@ -13,25 +13,10 @@
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-- mm-new: 1 -> 3 commits
-  - series: 0 (0) -> 0 (3)
-    - no role, no role : 0 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
-      - 43608d0e9fc2 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: 
-      - a2a733263bc6 "mm/sparse-vmemmap: move HVO helpers to a public header (6/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - 02c5e9081d85 "Documentation/mm: update DAX vmemmap deduplication docs (10/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908030335.96549-12-songmuchun@bytedance.com
-  - dropped commits
-    - 3af6db64f80d "mm/hugetlb: don't lock private resv_map during final unmap"
-      - Authored by a maintainer, reviewed by nobody
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

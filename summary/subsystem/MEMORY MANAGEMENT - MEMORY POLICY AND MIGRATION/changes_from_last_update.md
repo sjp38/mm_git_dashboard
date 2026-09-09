@@ -5,21 +5,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 6 commits
-  - series: 1 (3) -> 1 (4)
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
-      - e8b38eface53 "mm/migrate: copy all referenced state via folio_migrate_lru_refs (2/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-3-9aacbd77d4ca@tencent.com
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - reviewer, reviewer: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

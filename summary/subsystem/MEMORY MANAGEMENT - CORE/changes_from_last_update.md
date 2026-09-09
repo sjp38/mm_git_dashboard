@@ -1,109 +1,37 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 7891fbb9512f "mm/folio: EXPORT_SYMBOL_FOR_KVM(lru_cache_drain_for_folio)"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/lkml/bd6c9c74-e374-a9d3-ba1f-8b6f430894fc@google.com/T/#u
+      - Link: https://lore.kernel.org/02876cea-5727-2ca4-bead-73659ea6fec4@google.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 34 -> 37 commits
-  - series: 7 (29) -> 7 (31)
-    - no role, nobody: 3 -> 1 commits
-    - no role, no role : 22 -> 25 commits
+- mm-unstable: 37 -> 37 commits (no change)
+  - series: 7 (31) -> 7 (31) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 25 -> 25 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 3 commits
+    - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous", v2. (6)
-      - 26f99fd2f26a "mm: implement file_is_dev_zero() to uniquely identify /dev/zero (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-2-a578c730cec7@kernel.org"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org
-      - 7db416766f2f "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-3-a578c730cec7@kernel.org"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org
-      - df68e0f51e44 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-4-a578c730cec7@kernel.org"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org
-    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
-      - 5417270e94d1 "mm/mglru: introduce helpers for manipulating gen and refs flags (1/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
-      - c36d21312041 "mm/mglru: use explicit tier range in read_ctrl_pos() (4/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
-    - aa5997993d29 "mm/memory: constrain generic_access_phys() to page boundary"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/eaa4de66f9491888e0ffeb2d37ba7ae796ba535e.1788531737.git.rakukuip@gmail.com
-- mm-new: 5 -> 12 commits
-  - series: 0 (3) -> 1 (12)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 1 -> 7 commits
-    - no role, reviewer: 0 -> 3 commits
-    - reviewer, reviewer: 2 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
-    - series "mm: make userland page table freeing RCU-safe", v2. (12)
-      - b37fdd0a3ac6 "mm: make userland page table freeing RCU-safe (10/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-11-1f60b64e878e@kernel.org
-      - d094156bbe49 "mm: change the contract for free_pgtables(), update docs (11/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
-      - 6df462b490e0 "mm/sparse-vmemmap: introduce CONFIG_SPARSEMEM_VMEMMAP_OPTIMIZATION (0/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260908030335.96549-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260908030335.96549-2-songmuchun@bytedance.com
-      - 43608d0e9fc2 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: 
-      - 62bf56d09f2f "mm/sparse-vmemmap: open-code init_compound_tail() (2/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - e37d65cd90cf "mm/sparse-vmemmap: prepare DAX vmemmap population for section orders (3/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - 7ecfa2ab5c87 "mm/sparse-vmemmap: set section order for device DAX (4/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - da9f72aacb98 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: 
-      - a2a733263bc6 "mm/sparse-vmemmap: move HVO helpers to a public header (6/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - 9b5067a050c8 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (8/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908030335.96549-10-songmuchun@bytedance.com
-      - c664528be135 "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments (9/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908030335.96549-11-songmuchun@bytedance.com
+- mm-new: 12 -> 11 commits
+  - series: 1 (12) -> 1 (11)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 7 -> 6 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
   - dropped commits
-    - 3af6db64f80d "mm/hugetlb: don't lock private resv_map during final unmap"
-      - Authored by a maintainer, reviewed by nobody
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6)
+      - 21155e443912 "selftests/mm: add a GUP selftest (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260904123631.198697-7-sarthak.sharma@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

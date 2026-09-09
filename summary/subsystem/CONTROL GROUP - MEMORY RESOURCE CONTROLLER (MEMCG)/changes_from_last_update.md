@@ -6,30 +6,16 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 17 -> 18 commits
-  - series: 4 (11) -> 5 (12)
+- mm-unstable: 18 -> 18 commits (no change)
+  - series: 5 (12) -> 5 (12) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 7 -> 8 commits
+    - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
-  - changed commits
-    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
-      - 22bbbee798f9 "mm/memcontrol: move the lru_zone_size sanity check to the reader side (0/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-0-9aacbd77d4ca@tencent.com
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-1-9aacbd77d4ca@tencent.com
-        - Link: https://lore.kernel.org/linux-mm/20260804-mglru-fg-v1-0-4d8dad39dad6@tencent.com/ [1]
-- mm-new: 11 -> 10 commits
-  - series: 3 (9) -> 2 (8)
-    - no role, maintainer: 5 -> 4 commits
+- mm-new: 10 -> 10 commits (no change)
+  - series: 2 (8) -> 2 (8) (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
-  - changed commits
-    - 9cb68f98497d "mm/memcontrol: skip non-hierarchical memcg-wide stats when v1 is unavailable"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - Link: https://lore.kernel.org/20260903215616.1456239-1-joannelkoong@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

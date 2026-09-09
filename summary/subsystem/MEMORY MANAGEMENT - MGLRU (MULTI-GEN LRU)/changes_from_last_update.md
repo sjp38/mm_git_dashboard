@@ -5,56 +5,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 23 -> 28 commits
-  - series: 4 (20) -> 4 (25)
+- mm-unstable: 28 -> 28 commits (no change)
+  - series: 4 (25) -> 4 (25) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 11 -> 2 commits
-    - no role, reviewer: 7 -> 16 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 16 -> 16 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 6 commits
+    - reviewer, reviewer: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
-      - 5417270e94d1 "mm/mglru: introduce helpers for manipulating gen and refs flags (1/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
-      - e8b38eface53 "mm/migrate: copy all referenced state via folio_migrate_lru_refs (2/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-3-9aacbd77d4ca@tencent.com
-      - 4ed5979864af "mm/mglru: move max_seq read into walk_update_folio (3/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-4-9aacbd77d4ca@tencent.com
-      - c36d21312041 "mm/mglru: use explicit tier range in read_ctrl_pos() (4/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
-      - 8dd5b531170e "mm/mglru: fix potential generation folio number leak (5/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-6-9aacbd77d4ca@tencent.com
-- mm-new: 6 -> 5 commits
-  - series: 0 (6) -> 1 (4)
-    - no role, reviewer: 1 -> 5 commits
-    - reviewer, reviewer: 5 -> 0 commits
-  - new commits
-    - 98210bd95daf "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
-      - 6df462b490e0 "mm/sparse-vmemmap: introduce CONFIG_SPARSEMEM_VMEMMAP_OPTIMIZATION (0/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260908030335.96549-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260908030335.96549-2-songmuchun@bytedance.com
-      - 43608d0e9fc2 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: 
-      - da9f72aacb98 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: 
+- mm-new: 5 -> 5 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, reviewer: 5 -> 5 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
