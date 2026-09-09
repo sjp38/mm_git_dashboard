@@ -5,37 +5,41 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 17 -> 17 commits (no change)
-  - series: 3 (14) -> 3 (14) (no change)
+- mm-unstable: 17 -> 21 commits
+  - series: 3 (14) -> 3 (18)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, no role : 9 -> 0 commits
+    - no role, reviewer: 3 -> 12 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 5 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 0 -> 5 commits
-  - series: 0 (0) -> 0 (5)
-    - no role, reviewer: 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 4 commits
-  - new commits
+  - changed commits
     - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
-      - e1da4fbbc2bd "mm/mglru: introduce helpers for manipulating gen and refs flags (1/6)"
+      - 5417270e94d1 "mm/mglru: introduce helpers for manipulating gen and refs flags (1/6)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
-      - be1d5f3a4b27 "mm/mglru: move max_seq read into walk_update_folio (3/6)"
+      - 4ed5979864af "mm/mglru: move max_seq read into walk_update_folio (3/6)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-4-9aacbd77d4ca@tencent.com
-      - b68e6340c20e "mm/mglru: use explicit tier range in read_ctrl_pos() (4/6)"
+      - c36d21312041 "mm/mglru: use explicit tier range in read_ctrl_pos() (4/6)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
-      - fb608d1a4d2f "mm/mglru: fix potential generation folio number leak (5/6)"
+      - 8dd5b531170e "mm/mglru: fix potential generation folio number leak (5/6)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-6-9aacbd77d4ca@tencent.com
-    - series "mm: workingset: fix the shadow node budget under MGLRU", v3. (3)
-      - c128b61ff4c1 "mm: workingset: use lruvec_page_state_local() to count lru pages (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/2ec3a7f73e85ee5f5739c9dc2e58e9a0e2091925.1788514750.git.zhuhui@kylinos.cn
+- mm-new: 5 -> 2 commits
+  - series: 0 (5) -> 0 (1)
+    - no role, reviewer: 1 -> 2 commits
+    - reviewer, reviewer: 4 -> 0 commits
+  - new commits
+    - 98210bd95daf "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

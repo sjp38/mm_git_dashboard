@@ -5,44 +5,151 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 25 -> 26 commits
+- mm-unstable: 26 -> 27 commits
   - series: 5 (19) -> 5 (19) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
-    - no role, reviewer: 3 -> 4 commits
+    - no role, nobody: 4 -> 1 commits
+    - no role, no role : 9 -> 12 commits
+    - no role, reviewer: 4 -> 5 commits
     - no role, maintainer: 5 -> 5 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
   - changed commits
-    - 8ba61382ebac "selftests/mm: remove unreachable returns after ksft exit helpers"
+    - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous", v2. (6)
+      - aef570cab862 "mm: move drivers/char/mem.c to mm/char-mem.c (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org"
+        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-1-a578c730cec7@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-0-a578c730cec7@kernel.org"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org
+        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org
+      - 26f99fd2f26a "mm: implement file_is_dev_zero() to uniquely identify /dev/zero (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-2-a578c730cec7@kernel.org"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org
+      - 7db416766f2f "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-3-a578c730cec7@kernel.org"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org
+      - f4e5bb55b920 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-6-a578c730cec7@kernel.org"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org
+    - ae19eeea5ddd "docs/mm: ksm: use the renamed ksm structure names"
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
-- mm-new: 2 -> 7 commits
-  - series: 0 (0) -> 1 (5)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 5 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - 76ba705bbc76 "docs/mm: ksm: use the renamed ksm structure names"
-      - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
-    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6)
-      - b2b1c7defaee "selftests/mm: make file helpers return errors (0/6)"
+- mm-new: 7 -> 33 commits
+  - series: 1 (5) -> 3 (29)
+    - no role, nobody: 1 -> 18 commits
+    - no role, no role : 5 -> 13 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - be8e37b1a7c4 "Docs/mm/damon/design: fix broken :ref: usage and a typo"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260908135257.97523-1-sj@kernel.org
+    - series "selftests/mm: pagemap_ioctl test fixes and cleanups", v2. (3)
+      - 813b5dfbac15 "selftests/mm: fix size truncation in pagemap_ioctl test (0/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908134117.84405-1-zenghui.yu@linux.dev
+        - Link: https://lore.kernel.org/20260908134117.84405-2-zenghui.yu@linux.dev
+      - 94cad61834b2 "selftests/mm: mark file-local symbols of pagemap_ioctl.c static (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908134315.84431-1-zenghui.yu@linux.dev
+      - f218fc0e98a3 "selftests/mm: init page sizes early in pagemap_ioctl test (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908134405.84448-1-zenghui.yu@linux.dev
+        - Link: : https://lore.kernel.org/20260628111329.9cfcd9c67925869307020aba@linux-foundation.org/
+    - series "selftests/mm: improve khugepaged coverage", v5. (19)
+      - 0e2fcd28598c "selftests/mm: raise the khugepaged test-case cap (0/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260908125105.1510704-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260908125105.1510704-2-kirill@shutemov.name
+      - 48ea4049610d "selftests/mm: skip collapse_compound_extreme() where the PMD is too large (1/19)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-1-sarthak.sharma@arm.com
-        - Link: https://lore.kernel.org/20260904123631.198697-2-sarthak.sharma@arm.com
-      - d2e6e6de5df2 "tools/lib/mm: add shared file helpers (1/6)"
+        - Link: https://lore.kernel.org/20260908125105.1510704-3-kirill@shutemov.name
+      - 3d62e460f952 "selftests/mm: scale khugepaged's collapse wait with the PMD size (2/19)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-3-sarthak.sharma@arm.com
-      - 01fc83bf75e2 "tools/lib/mm: move hugepage_settings out of selftests (2/6)"
+        - Link: https://lore.kernel.org/20260908125105.1510704-4-kirill@shutemov.name
+      - ed94bbd5ee18 "selftests/mm: skip khugepaged page cache cases without a PMD folio (3/19)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-4-sarthak.sharma@arm.com
-      - 3a7ce475ef3e "tools/mm: move gup_test from selftests/mm to tools/mm (3/6)"
+        - Link: https://lore.kernel.org/20260908125105.1510704-5-kirill@shutemov.name
+      - c4856e31b152 "selftests/mm: make the swap cases' swapout reliable (4/19)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-5-sarthak.sharma@arm.com
-      - 2a5614aa55e4 "selftests/mm: add a GUP selftest (5/6)"
+        - Link: https://lore.kernel.org/20260908125105.1510704-6-kirill@shutemov.name
+      - 0d15951d03e4 "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases (5/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908125105.1510704-7-kirill@shutemov.name
+      - 3ed95815571a "selftests/mm: move is_backed_by_folio() into vm_util (6/19)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-7-sarthak.sharma@arm.com
+        - Link: https://lore.kernel.org/20260908125105.1510704-8-kirill@shutemov.name
+      - 12f92d4de598 "selftests/mm: add folio-order check for address ranges (7/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260908125105.1510704-9-kirill@shutemov.name
+      - 3594d6b52c39 "selftests/mm: add folio-order detection self-check (8/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908125105.1510704-10-kirill@shutemov.name
+      - 08e7187c19d8 "selftests/mm: add khugepaged completion barrier helper (9/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908125105.1510704-11-kirill@shutemov.name
+      - b69f03bbcab4 "selftests/mm: add order-parameterized khugepaged collapse cases (10/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908125105.1510704-12-kirill@shutemov.name
+      - 9fd01daaeacb "selftests/mm: parameterize the mixed-source collapse case by source order (11/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260908125105.1510704-13-kirill@shutemov.name
+      - 2c28995673c4 "selftests/mm: cover a shared-source collapse write race (12/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908125105.1510704-14-kirill@shutemov.name
+      - 4314d59fb8f1 "selftests-mm-cover-a-shared-source-collapse-write-race-fix (13/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/aqB2ckEupUKnoJt_@thinkstation
+      - 9a506e9990b3 "selftests/mm: run every supported collapse order by default (14/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908125105.1510704-15-kirill@shutemov.name
+      - c562ae10db89 "selftests/mm: check that one khugepaged pass collapses one window (15/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908125105.1510704-16-kirill@shutemov.name
+      - 078ac2529c43 "selftests/mm: add khugepaged race harness (16/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908125105.1510704-17-kirill@shutemov.name
+      - cac17645fab3 "selftests-mm-add-khugepaged-race-harness-fix (17/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/aqB-ycE8MlVwZJ7I@thinkstation
+      - 838dd51d68c7 "selftests/mm: race the collapse of windows with holes (18/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908125105.1510704-18-kirill@shutemov.name
+    - 128c8fe550f9 "selftests/mm: add memory-pressure threads to the khugepaged race harness"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260908125105.1510704-19-kirill@shutemov.name
+    - 7a1806b97983 "selftests/mm: zap whole PTE tables in the khugepaged race harness"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260908125105.1510704-20-kirill@shutemov.name
+    - series "mm: make userland page table freeing RCU-safe", v2. (12)
+      - d094156bbe49 "mm: change the contract for free_pgtables(), update docs (11/12)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
+      - 02c5e9081d85 "Documentation/mm: update DAX vmemmap deduplication docs (10/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260908030335.96549-12-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

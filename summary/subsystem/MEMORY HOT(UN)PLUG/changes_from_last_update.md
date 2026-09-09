@@ -5,12 +5,32 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
+- mm-unstable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - changed commits
+    - c3454e0e8bb0 "mm/memory_hotplug: factor out node_is_memoryless()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
+    - 5940e0981f2a "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
 - mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (2)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 0 commits
+  - new commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
+      - da9f72aacb98 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: 
+      - a2a733263bc6 "mm/sparse-vmemmap: move HVO helpers to a public header (6/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: 
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

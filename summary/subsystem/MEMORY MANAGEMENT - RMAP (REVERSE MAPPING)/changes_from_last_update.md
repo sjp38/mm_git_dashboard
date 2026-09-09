@@ -1,29 +1,38 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - 734050c6911e "mm/rmap: fix missing barrier between anon_vma init and vma->anon_vma publish"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260905061820.642437-1-tujinjiang@huawei.com
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 3 commits
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 2d5f4f1e0183 "mm/page_vma_mapped: guard check_pmd() with CONFIG_TRANSPARENT_HUGEPAGE"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260624082359.2869-1-richard.weiyang@gmail.com
-      - Link: https://download.01.org/0day-ci/archive/20260624/202606240042.ffPsEXVc-lkp@intel.com/config [1]
-- mm-new: 1 -> 0 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - 7e3b1ca49ac0 "mm/rmap: fix missing barrier between anon_vma init and vma->anon_vma publish"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260908122924.554373-1-tujinjiang@huawei.com"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+      - added "Cc: Jinjiang Tu <tujinjiang@huawei.com>"
+      - added "Cc: Minchan Kim <minchan@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260905061820.642437-1-tujinjiang@huawei.com"
+      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+      - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260908122924.554373-1-tujinjiang@huawei.com
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 3 -> 3 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm: remove page_swap_entry()", v2. (8)
+      - 2d61c6002e0f "mm/rmap: use folio_page_swap_entry() in ttu_anon_swapbacked_folio() (2/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-3-ee6d01dfa5e1@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

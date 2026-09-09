@@ -6,7 +6,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-      - 67f152c7cfba "mm/execmem: use VM_FLUSH_RESET_PERMS for ROX cache allocations" (4/6)
+      - f3b1d515481e "mm/execmem: use VM_FLUSH_RESET_PERMS for ROX cache allocations" (4/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-5-949b64a9f755@kernel.org
 - mm-new: 4 total, 1 (4) series, 0 non-series commits
@@ -14,17 +14,17 @@
     - no role, nobody: 4 commits
   - full commits list
     - series "mm/execmem: fixes and cleanups for the ROX cache". (5 commits)
-      - cb39e60c813e "mm/execmem: free ROX cache chunks only when they span an entire vm area" (0/5)
+      - f7aaf5086296 "mm/execmem: free ROX cache chunks only when they span an entire vm area" (0/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-0-11beb2a3d249@kernel.org
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-1-11beb2a3d249@kernel.org
-      - 373d70321d05 "mm/execmem: handle potential allocation errors in the maple tree" (1/5)
+      - c22bcc3ac5f5 "mm/execmem: handle potential allocation errors in the maple tree" (1/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-2-11beb2a3d249@kernel.org
-      - abe6c1f77322 "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE" (2/5)
+      - 939938b3610d "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE" (2/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-3-11beb2a3d249@kernel.org
-      - a4803d8ba53a "mm/execmem: use cleanup infrastructure in ROX cache functions" (4/5)
+      - bde5a1f392b6 "mm/execmem: use cleanup infrastructure in ROX cache functions" (4/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-5-11beb2a3d249@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

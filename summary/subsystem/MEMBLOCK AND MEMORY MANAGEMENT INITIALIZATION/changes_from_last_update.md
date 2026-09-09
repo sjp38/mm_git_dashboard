@@ -10,8 +10,17 @@
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 0 (2)
+    - no role, no role : 0 -> 2 commits
+  - new commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
+      - 7ecfa2ab5c87 "mm/sparse-vmemmap: set section order for device DAX (4/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: 
+      - 9b5067a050c8 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (8/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260908030335.96549-10-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

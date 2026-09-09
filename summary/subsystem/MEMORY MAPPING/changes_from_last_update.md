@@ -1,28 +1,87 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
-- mm-hotfixes-stable: 0 -> 2 commits
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 2 commits
-  - changed commits
-    - 397432cab17b "mm/mremap: account mm->locked_vm correctly for MREMAP_DONTUNMAP"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260828-mremap-fix-locked-vm-v1-1-c80be7505d1e@kernel.org
-    - e14a34548064 "mm/mlock: use the IRQ-safe accessor for NR_MLOCK in __munlock_folio()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260901180109.3797944-1-shakeel.butt@linux.dev
-- mm-hotfixes-unstable: 3 -> 1 commits
+    - no role, no role : 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - 7e3b1ca49ac0 "mm/rmap: fix missing barrier between anon_vma init and vma->anon_vma publish"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260908122924.554373-1-tujinjiang@huawei.com"
+      - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Cc: Jinjiang Tu <tujinjiang@huawei.com>"
+      - added "Cc: Minchan Kim <minchan@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260905061820.642437-1-tujinjiang@huawei.com"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+      - dropped "Cc: Mel Gorman <mel@csn.ul.ie>"
+      - Link: https://lore.kernel.org/20260908122924.554373-1-tujinjiang@huawei.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)
   - series: 3 (8) -> 3 (8) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+    - no role, nobody: 4 -> 0 commits
+    - no role, no role : 2 -> 6 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous", v2. (6)
+      - aef570cab862 "mm: move drivers/char/mem.c to mm/char-mem.c (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org"
+        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-0-a578c730cec7@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-1-a578c730cec7@kernel.org"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org
+        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org
+      - 26f99fd2f26a "mm: implement file_is_dev_zero() to uniquely identify /dev/zero (1/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-2-a578c730cec7@kernel.org"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org
+      - 7db416766f2f "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-3-a578c730cec7@kernel.org"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org
+      - df68e0f51e44 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-4-a578c730cec7@kernel.org"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org
+      - 6f1c4b812e38 "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-5-acc7b5625305@kernel.org"
+        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-5-a578c730cec7@kernel.org"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-5-acc7b5625305@kernel.org
+      - f4e5bb55b920 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260902-map-private-dev-zero-v1-6-a578c730cec7@kernel.org"
+        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

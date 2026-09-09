@@ -4,50 +4,54 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 5780593fafd3 "selftests/cgroup: account for zswap shrinker writeback"
+    - 2e8a053d6fe4 "selftests/cgroup: account for zswap shrinker writeback"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260902194521.3652178-1-joshua.hahnjy@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 5 total, 3 (5) series, 0 non-series commits
+- mm-unstable: 6 total, 3 (5) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 1 commits
     - no role, maintainer: 4 commits
   - full commits list
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
-      - de56d9c64998 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
+      - 8540196b6bf8 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
     - series "selftests/cgroup: fixes for test_zswap on single core VM", v4. (2 commits)
-      - 53bad34c0663 "selftests/cgroup: test_zswap: wait for cgroup to unpopulate in test_zswap_writeback" (0/2)
+      - 567fd916e1bb "selftests/cgroup: test_zswap: wait for cgroup to unpopulate in test_zswap_writeback" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260828033741.2184560-1-wfelipe@google.com
         - Link: https://lore.kernel.org/20260828033741.2184560-2-wfelipe@google.com
-      - c291f6804796 "selftests/cgroup: test_zswap: fix implicit unsigned promotion bug in test_no_kmem_bypass" (1/2)
+      - 2b6b2de6e2ef "selftests/cgroup: test_zswap: fix implicit unsigned promotion bug in test_no_kmem_bypass" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260828033741.2184560-3-wfelipe@google.com
-      - 9a5b3b3e7782 "mm/swap: rename __swap_writepage() to __swap_writeout()" (5/6)
+      - 8842fc788865 "mm/swap: rename __swap_writepage() to __swap_writeout()" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-6-649728091117@columbia.edu
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - 7f365bbc9045 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - f0336b43568a "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
-- mm-new: 3 total, 0 (1) series, 2 non-series commits
+    - 00ebb111ded1 "mm/zswap: enable static key after runtime pool recovery"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260905125101.2970456-1-xialonglong2025@163.com
+- mm-new: 3 total, 0 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-    - 4fca7a2fdbe6 "mm/zswap: enable static key after runtime pool recovery"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260905125101.2970456-1-xialonglong2025@163.com
-    - 33ce0c491334 "mm/zswap: convert zswap_store_page() and zswap_compress() to take a folio"
+    - c6d375a1aa1d "mm/zswap: convert zswap_store_page() and zswap_compress() to take a folio"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260904232108.3034333-1-wfelipe@google.com
-      - d8a96c6321f4 "mm: zswap: mark the zswap shrinker SHRINKER_NONSLAB" (1/2)
+      - ce4b828e5431 "mm: zswap: mark the zswap shrinker SHRINKER_NONSLAB" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260904033503.4067283-3-qinyuntan@linux.alibaba.com
         - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
+      - 77c999a77d18 "mm/zswap: use folio_swap_entry() in zswap_store_page()" (3/8)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-4-ee6d01dfa5e1@columbia.edu
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -9,23 +9,15 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-new: 1 -> 5 commits
-  - series: 0 (0) -> 0 (4)
-    - no role, no role : 1 -> 5 commits
+- mm-new: 5 -> 6 commits
+  - series: 0 (4) -> 0 (5)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 5 -> 5 commits (no change)
   - new commits
-    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6)
-      - 01fc83bf75e2 "tools/lib/mm: move hugepage_settings out of selftests (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-4-sarthak.sharma@arm.com
-      - 3a7ce475ef3e "tools/mm: move gup_test from selftests/mm to tools/mm (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-5-sarthak.sharma@arm.com
-      - d27e55dafb95 "tools/mm: make gup_bench a benchmark only tool (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-6-sarthak.sharma@arm.com
-      - 2a5614aa55e4 "selftests/mm: add a GUP selftest (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-7-sarthak.sharma@arm.com
+    - series "mm: make userland page table freeing RCU-safe", v2. (12)
+      - b37fdd0a3ac6 "mm: make userland page table freeing RCU-safe (10/12)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-11-1f60b64e878e@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

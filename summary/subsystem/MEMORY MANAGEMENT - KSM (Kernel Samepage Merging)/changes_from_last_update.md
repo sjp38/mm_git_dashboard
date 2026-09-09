@@ -5,17 +5,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 3 commits (no change)
+- mm-unstable: 3 -> 4 commits
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - 76ba705bbc76 "docs/mm: ksm: use the renamed ksm structure names"
+    - no role, reviewer: 2 -> 3 commits
+  - changed commits
+    - ae19eeea5ddd "docs/mm: ksm: use the renamed ksm structure names"
       - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

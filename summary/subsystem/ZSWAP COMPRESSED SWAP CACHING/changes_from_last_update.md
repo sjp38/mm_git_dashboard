@@ -6,26 +6,25 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
+- mm-unstable: 5 -> 6 commits
   - series: 3 (5) -> 3 (5) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-- mm-new: 0 -> 3 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 2 commits
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 4fca7a2fdbe6 "mm/zswap: enable static key after runtime pool recovery"
+  - changed commits
+    - 00ebb111ded1 "mm/zswap: enable static key after runtime pool recovery"
       - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260905125101.2970456-1-xialonglong2025@163.com
-    - 33ce0c491334 "mm/zswap: convert zswap_store_page() and zswap_compress() to take a folio"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260904232108.3034333-1-wfelipe@google.com
-    - series "mm: restore SHRINKER_NONSLAB on THP and zswap shrinkers". (2)
-      - d8a96c6321f4 "mm: zswap: mark the zswap shrinker SHRINKER_NONSLAB (1/2)"
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (1) -> 0 (2)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+  - new commits
+    - series "mm: remove page_swap_entry()", v2. (8)
+      - 77c999a77d18 "mm/zswap: use folio_swap_entry() in zswap_store_page() (3/8)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260904033503.4067283-3-qinyuntan@linux.alibaba.com
-        - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-4-ee6d01dfa5e1@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,10 +7,10 @@
     - no role, nobody: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 59a0c4cf958d "zram: fix idle age_sec underflow in idle_store()"
+    - 4b297f2f41ee "zram: fix idle age_sec underflow in idle_store()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260828083149.45760-1-jiahao.kernel@gmail.com
-    - b049aeb1e359 "zram: remove unreachable kernel_read_file_from_path() return check"
+    - fe6ad68c8f91 "zram: remove unreachable kernel_read_file_from_path() return check"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260901051335.2202390-1-senozhatsky@chromium.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
