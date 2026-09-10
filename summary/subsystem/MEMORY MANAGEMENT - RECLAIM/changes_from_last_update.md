@@ -5,17 +5,28 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 21 -> 21 commits (no change)
-  - series: 3 (18) -> 3 (18) (no change)
+- mm-unstable: 21 -> 22 commits
+  - series: 3 (18) -> 3 (19)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 12 -> 12 commits (no change)
+    - no role, reviewer: 12 -> 13 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: workingset: fix the shadow node budget under MGLRU", v3. (3)
+      - e07cf8094179 "mm: workingset: use lruvec_page_state_local() to count lru pages (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/2ec3a7f73e85ee5f5739c9dc2e58e9a0e2091925.1788514750.git.zhuhui@kylinos.cn
 - mm-new: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (0)
+    - no role, reviewer: 2 -> 1 commits
+    - reviewer, reviewer: 0 -> 1 commits
+  - new commits
+    - 90d79571541e "mm: mglru: clear the reference counter for rejected folios"
+      - Authored by a reviewer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/9214e36bf738fcfba86acc8cea85dff4010f66b0.1788918714.git.baolin.wang@linux.alibaba.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

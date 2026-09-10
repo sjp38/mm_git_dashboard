@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 28620ccf90f3 "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
+    - 0ae672aa4d2d "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
       - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
@@ -17,31 +17,31 @@
     - no role, reviewer: 6 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 8c7ef8ebbc81 "mm: drop stale MAX_ORDER references"
+    - cda4e2f69ccc "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
     - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2 commits)
-      - 63ca6b432a22 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
+      - 5be17303c4e2 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
-      - 52dabbf9ecb4 "mm/page_isolation: guard compound_order() against racing" (1/2)
+      - cb261ca0d5b8 "mm/page_isolation: guard compound_order() against racing" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
-      - 0d95aac468d0 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
+      - c72ca2773fa3 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - c1115e73b64b "mm: adjust out-dated document of __GFP_NOFAIL"
+    - 56bf4fd68e52 "mm: adjust out-dated document of __GFP_NOFAIL"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
-      - 17aa5ce1e651 "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
+      - 67acff9f6a4d "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811172156.356053-3-pfalcato@suse.de
-      - 66ab08c33c2d "mm: replace PF_KCOMPACTD flag with kthread_func() check" (3/4)
+      - cd0677afef88 "mm: replace PF_KCOMPACTD flag with kthread_func() check" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
-    - 268a5e2e4e06 "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
+    - 526b8ff33be0 "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260903092126.24685-1-hongfu.li@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

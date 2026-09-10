@@ -1,16 +1,15 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 7891fbb9512f "mm/folio: EXPORT_SYMBOL_FOR_KVM(lru_cache_drain_for_folio)"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/lkml/bd6c9c74-e374-a9d3-ba1f-8b6f430894fc@google.com/T/#u
-      - Link: https://lore.kernel.org/02876cea-5727-2ca4-bead-73659ea6fec4@google.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - dfa23b49d056 "mm/truncate: fix data loss when truncating straddling large folios"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260909062339.473816-1-yi.zhang@huaweicloud.com
+      - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 37 -> 37 commits (no change)
@@ -22,16 +21,58 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 12 -> 11 commits
-  - series: 1 (12) -> 1 (11)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 7 -> 6 commits
-    - no role, reviewer: 3 -> 3 commits (no change)
-  - dropped commits
-    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6)
-      - 21155e443912 "selftests/mm: add a GUP selftest (5/6)"
+  - changed commits
+    - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v5. (17)
+      - 3b25e2f7836a "mm/sparse: relax struct mem_section size constraints (0/17)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-7-sarthak.sharma@arm.com
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260825084608.47437-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260825084608.47437-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/linux-mm/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+      - 52bf2956ab7a "mm/sparse-vmemmap: remove SPARSEMEM_VMEMMAP_PREINIT support (10/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260825084608.47437-12-songmuchun@bytedance.com
+      - c88dbea89dd1 "mm/sparse: inline usemap allocation into sparse_init_nid() (11/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260825084608.47437-13-songmuchun@bytedance.com
+      - f4c7f6736bc6 "mm/sparse: remove section_map_size() (12/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260825084608.47437-14-songmuchun@bytedance.com
+    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
+      - f33615185701 "mm: make per-VMA locks available universally (0/7)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
+- mm-new: 11 -> 12 commits
+  - series: 1 (11) -> 1 (12)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 6 -> 8 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
+      - dd35ca2f2cac "mm-sparse-vmemmap-switch-device-dax-to-shared-tail-vmemmap-pages-fix (6/11)"
+        - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - series "mm: make userland page table freeing RCU-safe", v2. (12)
+      - 67adc23dc174 "mm: make userland page table freeing RCU-safe (10/12)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-11-1f60b64e878e@kernel.org
+      - 54c1dcd1176a "mm: change the contract for free_pgtables(), update docs (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

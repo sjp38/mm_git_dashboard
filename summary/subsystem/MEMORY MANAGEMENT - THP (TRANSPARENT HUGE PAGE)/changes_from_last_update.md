@@ -6,64 +6,71 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 11 commits (no change)
-  - series: 3 (6) -> 3 (6) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
+- mm-unstable: 11 -> 14 commits
+  - series: 3 (6) -> 4 (8)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 3 -> 4 commits
+    - no role, reviewer: 5 -> 8 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 18 -> 4 commits
-  - series: 4 (17) -> 2 (3)
-    - no role, nobody: 6 -> 1 commits
-    - no role, no role : 8 -> 0 commits
-    - no role, reviewer: 4 -> 3 commits
-  - dropped commits
-    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6)
-      - e1e008430642 "selftests/mm: make file helpers return errors (0/6)"
+  - changed commits
+    - series "mm: khugepaged: fix tracepoint UAF", v5. (3)
+      - f9106b6ec819 "mm: khugepaged: fix swap entry value to folio_pfn() (0/3)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-1-sarthak.sharma@arm.com
-        - Link: https://lore.kernel.org/20260904123631.198697-2-sarthak.sharma@arm.com
-      - 36d9e9b8854d "tools/lib/mm: move hugepage_settings out of selftests (2/6)"
+        - added "Link: https://lore.kernel.org/20260909025804.3233645-2-vernon2gm@gmail.com"
+        - added "Link: https://lore.kernel.org/20260909025804.3233645-1-vernon2gm@gmail.com"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260828055926.346744-1-vernon2gm@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20260828055926.346744-2-vernon2gm@gmail.com"
+        - dropped "Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260909025804.3233645-1-vernon2gm@gmail.com
+        - Link: https://lore.kernel.org/20260909025804.3233645-2-vernon2gm@gmail.com
+      - ead7faa1df43 "mm: khugepaged: fix folio is used after pte_unmap_unlock() (1/3)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-4-sarthak.sharma@arm.com
-    - series "selftests/mm: improve khugepaged coverage", v5. (19)
-      - 0e2fcd28598c "selftests/mm: raise the khugepaged test-case cap (0/19)"
+        - added "Link: https://lore.kernel.org/20260909025804.3233645-3-vernon2gm@gmail.com"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260828055926.346744-3-vernon2gm@gmail.com"
+        - dropped "Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260909025804.3233645-3-vernon2gm@gmail.com
+      - a84fe0f24e64 "mm: khugepaged: fix folio is used after folio_put/unlock() (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260909025804.3233645-4-vernon2gm@gmail.com"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260828055926.346744-4-vernon2gm@gmail.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260909025804.3233645-4-vernon2gm@gmail.com
+    - series "mm: restore SHRINKER_NONSLAB on THP and zswap shrinkers". (2)
+      - 5c1ee3a8d5a3 "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker (0/2)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260908125105.1510704-1-kirill@shutemov.name
-        - Link: https://lore.kernel.org/20260908125105.1510704-2-kirill@shutemov.name
-      - 48ea4049610d "selftests/mm: skip collapse_compound_extreme() where the PMD is too large (1/19)"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260904033503.4067283-1-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/20260904033503.4067283-2-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
+    - series "mm: remove page_swap_entry()", v2. (8)
+      - 587924aaa0bc "mm/huge_memory: add a comment to the open-coded swap entry (1/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-2-ee6d01dfa5e1@columbia.edu
+    - 3628c3df6cd2 "mm/huge_memory: add folio_reset_partially_mapped()"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260908132821.1517475-1-kirill@shutemov.name
+- mm-new: 4 -> 1 commits
+  - series: 2 (3) -> 1 (1)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 3 -> 0 commits
+  - changed commits
+    - series "mm: make userland page table freeing RCU-safe", v2. (12)
+      - b3139f069140 "mm/huge_memory: zap deposited page tables after an RCU grace period (0/12)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-3-kirill@shutemov.name
-      - 3d62e460f952 "selftests/mm: scale khugepaged's collapse wait with the PMD size (2/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-4-kirill@shutemov.name
-      - ed94bbd5ee18 "selftests/mm: skip khugepaged page cache cases without a PMD folio (3/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-5-kirill@shutemov.name
-      - c4856e31b152 "selftests/mm: make the swap cases' swapout reliable (4/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-6-kirill@shutemov.name
-      - 0d15951d03e4 "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases (5/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-7-kirill@shutemov.name
-      - 3ed95815571a "selftests/mm: move is_backed_by_folio() into vm_util (6/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-8-kirill@shutemov.name
-      - b69f03bbcab4 "selftests/mm: add order-parameterized khugepaged collapse cases (10/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-12-kirill@shutemov.name
-      - 9fd01daaeacb "selftests/mm: parameterize the mixed-source collapse case by source order (11/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-13-kirill@shutemov.name
-      - 2c28995673c4 "selftests/mm: cover a shared-source collapse write race (12/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-14-kirill@shutemov.name
-      - 4314d59fb8f1 "selftests-mm-cover-a-shared-source-collapse-write-race-fix (13/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/aqB2ckEupUKnoJt_@thinkstation
-      - 9a506e9990b3 "selftests/mm: run every supported collapse order by default (14/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-15-kirill@shutemov.name
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-0-1f60b64e878e@kernel.org
+        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-1-1f60b64e878e@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

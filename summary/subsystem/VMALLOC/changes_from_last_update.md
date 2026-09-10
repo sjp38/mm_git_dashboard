@@ -6,12 +6,23 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
+- mm-unstable: 6 -> 8 commits
+  - series: 1 (4) -> 1 (6)
+    - no role, nobody: 0 -> 2 commits
     - no role, no role : 6 -> 6 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm/execmem: fixes and cleanups for the ROX cache". (5)
+      - 679c075a1a6a "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE (2/5)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-3-11beb2a3d249@kernel.org
+      - b87b0b21e46e "mm/vmalloc: add DEFINE_FREE() for vfree() (3/5)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-4-11beb2a3d249@kernel.org
+- mm-new: 2 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

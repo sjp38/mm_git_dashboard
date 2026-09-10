@@ -5,102 +5,45 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 27 -> 27 commits (no change)
-  - series: 5 (19) -> 5 (19) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 27 -> 31 commits
+  - series: 5 (19) -> 6 (22)
+    - no role, nobody: 1 -> 4 commits
     - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
+    - no role, maintainer: 5 -> 6 commits
     - maintainer, nobody: 4 -> 4 commits (no change)
-- mm-new: 33 -> 7 commits
-  - series: 3 (29) -> 1 (5)
-    - no role, nobody: 18 -> 5 commits
-    - no role, no role : 13 -> 1 commits
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - dropped commits
-    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v9. (6)
-      - e1e008430642 "selftests/mm: make file helpers return errors (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-1-sarthak.sharma@arm.com
-        - Link: https://lore.kernel.org/20260904123631.198697-2-sarthak.sharma@arm.com
-      - 370b3fb4c43c "tools/lib/mm: add shared file helpers (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-3-sarthak.sharma@arm.com
-      - 36d9e9b8854d "tools/lib/mm: move hugepage_settings out of selftests (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-4-sarthak.sharma@arm.com
-      - 57cbc1a16746 "tools/mm: move gup_test from selftests/mm to tools/mm (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-5-sarthak.sharma@arm.com
-      - 21155e443912 "selftests/mm: add a GUP selftest (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260904123631.198697-7-sarthak.sharma@arm.com
-    - series "selftests/mm: improve khugepaged coverage", v5. (19)
-      - 0e2fcd28598c "selftests/mm: raise the khugepaged test-case cap (0/19)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260908125105.1510704-1-kirill@shutemov.name
-        - Link: https://lore.kernel.org/20260908125105.1510704-2-kirill@shutemov.name
-      - 48ea4049610d "selftests/mm: skip collapse_compound_extreme() where the PMD is too large (1/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-3-kirill@shutemov.name
-      - 3d62e460f952 "selftests/mm: scale khugepaged's collapse wait with the PMD size (2/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-4-kirill@shutemov.name
-      - ed94bbd5ee18 "selftests/mm: skip khugepaged page cache cases without a PMD folio (3/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-5-kirill@shutemov.name
-      - c4856e31b152 "selftests/mm: make the swap cases' swapout reliable (4/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-6-kirill@shutemov.name
-      - 0d15951d03e4 "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases (5/19)"
+  - changed commits
+    - ff51182eccff "Docs/mm/damon/design: fix broken :ref: usage and a typo"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260908135257.97523-1-sj@kernel.org
+    - series "selftests/mm: pagemap_ioctl test fixes and cleanups", v2. (3)
+      - 5f6a673890bb "selftests/mm: fix size truncation in pagemap_ioctl test (0/3)"
         - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-7-kirill@shutemov.name
-      - 3ed95815571a "selftests/mm: move is_backed_by_folio() into vm_util (6/19)"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260908134117.84405-1-zenghui.yu@linux.dev
+        - Link: https://lore.kernel.org/20260908134117.84405-2-zenghui.yu@linux.dev
+      - 4f94ef83e906 "selftests/mm: mark file-local symbols of pagemap_ioctl.c static (1/3)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260908134315.84431-1-zenghui.yu@linux.dev
+      - 7a0eaeaf22c0 "selftests/mm: init page sizes early in pagemap_ioctl test (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260908134405.84448-1-zenghui.yu@linux.dev
+        - Link: : https://lore.kernel.org/20260628111329.9cfcd9c67925869307020aba@linux-foundation.org/
+- mm-new: 7 -> 3 commits
+  - series: 1 (5) -> 0 (1)
+    - no role, nobody: 5 -> 1 commits
+    - no role, no role : 1 -> 2 commits
+    - no role, maintainer: 1 -> 0 commits
+  - changed commits
+    - series "mm: make userland page table freeing RCU-safe", v2. (12)
+      - 54c1dcd1176a "mm: change the contract for free_pgtables(), update docs (11/12)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-8-kirill@shutemov.name
-      - 12f92d4de598 "selftests/mm: add folio-order check for address ranges (7/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-9-kirill@shutemov.name
-      - 3594d6b52c39 "selftests/mm: add folio-order detection self-check (8/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-10-kirill@shutemov.name
-      - 08e7187c19d8 "selftests/mm: add khugepaged completion barrier helper (9/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-11-kirill@shutemov.name
-      - b69f03bbcab4 "selftests/mm: add order-parameterized khugepaged collapse cases (10/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-12-kirill@shutemov.name
-      - 9fd01daaeacb "selftests/mm: parameterize the mixed-source collapse case by source order (11/19)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908125105.1510704-13-kirill@shutemov.name
-      - 2c28995673c4 "selftests/mm: cover a shared-source collapse write race (12/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-14-kirill@shutemov.name
-      - 4314d59fb8f1 "selftests-mm-cover-a-shared-source-collapse-write-race-fix (13/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/aqB2ckEupUKnoJt_@thinkstation
-      - 9a506e9990b3 "selftests/mm: run every supported collapse order by default (14/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-15-kirill@shutemov.name
-      - c562ae10db89 "selftests/mm: check that one khugepaged pass collapses one window (15/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-16-kirill@shutemov.name
-      - 078ac2529c43 "selftests/mm: add khugepaged race harness (16/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-17-kirill@shutemov.name
-      - cac17645fab3 "selftests-mm-add-khugepaged-race-harness-fix (17/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/aqB-ycE8MlVwZJ7I@thinkstation
-      - 838dd51d68c7 "selftests/mm: race the collapse of windows with holes (18/19)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908125105.1510704-18-kirill@shutemov.name
-    - 128c8fe550f9 "selftests/mm: add memory-pressure threads to the khugepaged race harness"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260908125105.1510704-19-kirill@shutemov.name
-    - 7a1806b97983 "selftests/mm: zap whole PTE tables in the khugepaged race harness"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260908125105.1510704-20-kirill@shutemov.name
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

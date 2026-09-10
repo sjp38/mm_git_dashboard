@@ -5,10 +5,10 @@
     - no role, nobody: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 0725b7946601 "mm/hugetlb: do not dissolve gigantic pages without runtime support"
+    - 4b0d3250d013 "mm/hugetlb: do not dissolve gigantic pages without runtime support"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260823044118.1097121-2-xialonglong2025@163.com
-    - ec0ae0b3960e "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
+    - e703333a4ba1 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -19,69 +19,66 @@
     - no role, reviewer: 2 commits
     - no role, maintainer: 5 commits
   - full commits list
-    - b8ae1ee8d2e9 "mm/hugetlb: fix resv_huge_pages double decrement in memfd error path"
+    - d1f330757542 "mm/hugetlb: fix resv_huge_pages double decrement in memfd error path"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260825021013.25672-1-hongfu.li@linux.dev
-    - 9a0ee1885a19 "mm/hugetlb: use hugetlb_vmemmap_optimizable() in boolean contexts"
+    - 245cfad0f659 "mm/hugetlb: use hugetlb_vmemmap_optimizable() in boolean contexts"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260824151655.30840-1-kaitao.cheng@linux.dev
-      - 0d8f649dbddd "mm/sparse-vmemmap: rename HVO order macros" (1/17)
+      - f7b9366f8a26 "mm/sparse-vmemmap: rename HVO order macros" (1/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825084608.47437-3-songmuchun@bytedance.com
-      - 05002c5af245 "mm/mm_init: factor out pfn_to_zone()" (5/17)
+      - c08a864ae7d3 "mm/mm_init: factor out pfn_to_zone()" (5/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-7-songmuchun@bytedance.com
-      - b4a57369ebc3 "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization" (9/17)
+      - 31f0a61079a5 "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization" (9/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-11-songmuchun@bytedance.com
-      - 0c034e3e1e3c "mm/hugetlb: remove HUGE_BOOTMEM_HVO" (13/17)
+      - e4f0cb5caf24 "mm/hugetlb: remove HUGE_BOOTMEM_HVO" (13/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-15-songmuchun@bytedance.com
-      - 31d77cb1397a "mm/hugetlb: remove HUGE_BOOTMEM_CMA" (14/17)
+      - bdd209d14de2 "mm/hugetlb: remove HUGE_BOOTMEM_CMA" (14/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-16-songmuchun@bytedance.com
-      - 87e3bf6d9bd3 "mm/hugetlb: localize struct huge_bootmem_page" (15/17)
+      - 312d1b806208 "mm/hugetlb: localize struct huge_bootmem_page" (15/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-17-songmuchun@bytedance.com
-      - ce10c977e9ba "mm/hugetlb: localize HUGE_BOOTMEM_ZONES_VALID" (16/17)
+      - 7dac8aac975e "mm/hugetlb: localize HUGE_BOOTMEM_ZONES_VALID" (16/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260825084608.47437-18-songmuchun@bytedance.com
-    - ae440a955464 "mm/hugetlb: warn instead of silently bailing gigantic pages without runtime support"
+    - 0e634ae7b951 "mm/hugetlb: warn instead of silently bailing gigantic pages without runtime support"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260823044118.1097121-3-xialonglong2025@163.com
     - series "mm/hugetlb: fix surplus accounting and availability checks during demotion", v2. (2 commits)
-      - 74551611290a "mm/hugetlb: preserve source surplus accounting during demotion" (0/2)
+      - cd3edf4cf502 "mm/hugetlb: preserve source surplus accounting during demotion" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831133519.2505020-2-xialonglong2025@163.com
-      - 6606d7a7a7d2 "mm/hugetlb: cap demotion at currently available free pages" (1/2)
+      - 1569489b29b6 "mm/hugetlb: cap demotion at currently available free pages" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831133519.2505020-3-xialonglong2025@163.com
-    - series "Fix bugs in HugeTLB allocation when mem_cgroup_charge_hugetlb() fails". (2 commits)
-      - 1645012abe24 "mm: hugetlb: return -ENOSPC on memcg charge failure" (0/2)
+    - series "Fix bugs in HugeTLB allocation when mem_cgroup_charge_hugetlb() fails", v2. (2 commits)
+      - bc7dec32dc63 "mm: hugetlb: return -ENOSPC on memcg charge failure" (0/2)
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-0-e3e8942c141b@google.com
-        - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-1-e3e8942c141b@google.com
-      - 564c9269b6eb "mm: hugetlb: drop refcount before freeing on memcg charge failure" (1/2)
+        - Link: https://lore.kernel.org/20260909-hugetlb-alloc-folio-memcg-charge-error-handling-v2-1-4b4a8a19a7f7@google.com
+      - 0441bc751de7 "mm: hugetlb: drop refcount before freeing on memcg charge failure" (1/2)
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260902-hugetlb-alloc-folio-memcg-charge-error-handling-v1-2-e3e8942c141b@google.com
-        - Link: https://lore.kernel.org/all/20260722-hugetlb-alloc-failure-fixes-v4-0-88e8b81970dc@google.com/ [1]
-        - Link: https://lore.kernel.org/all/20260708-hugetlb-alloc-failure-fixes-v2-0-c7f27cbb462b@google.com/ [2]
-    - c63ea5935199 "mm/hugetlb: charge folios to the target mm's memcg"
+        - Link: https://lore.kernel.org/20260909-hugetlb-alloc-folio-memcg-charge-error-handling-v2-2-4b4a8a19a7f7@google.com
+    - fab571583661 "mm/hugetlb: charge folios to the target mm's memcg"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
-- mm-new: 3 total, 0 (3) series, 0 non-series commits
+- mm-new: 3 total, 0 (2) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 32e0372e8ab5 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation" (1/11)
+      - 70b0106943e6 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation" (1/11)
         - Authored by no role player, reviewed by a reviewer
         - Link: 
-      - 4823b3cd859e "mm/sparse-vmemmap: move HVO helpers to a public header" (6/11)
+      - f1a84d178fc6 "mm/sparse-vmemmap: move HVO helpers to a public header" (7/11)
         - Authored by no role player, reviewed by no role player
         - Link: 
-      - 8d54433baed1 "Documentation/mm: update DAX vmemmap deduplication docs" (10/11)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908030335.96549-12-songmuchun@bytedance.com
+    - 7def28f2c8aa "Documentation/mm: update DAX vmemmap deduplication docs"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260908030335.96549-12-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
