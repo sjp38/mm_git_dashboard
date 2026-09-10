@@ -9,25 +9,25 @@
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 1 commits
   - full commits list
-    - a83f5c839e5c "mm/mempolicy: take a cpuset cookie for the interleave node count"
+    - 3926ea99f3b5 "mm/mempolicy: take a cpuset cookie for the interleave node count"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260828193111.1023497-1-gourry@gourry.net
       - Link: https://lore.kernel.org/all/20250907160829.91628-1-chelsyratnawat2001@gmail.com/
     - series "mm/mempolicy: stop copying state in the interleave paths". (2 commits)
-      - 4c745c1595e6 "mm/mempolicy: use SRCU for the weighted interleave state" (0/2)
+      - 39f538afef79 "mm/mempolicy: use SRCU for the weighted interleave state" (0/2)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260829015943.1258774-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260829015943.1258774-2-gourry@gourry.net
-      - 2900ca0f5f8f "mm/mempolicy: stop copying the nodemask in the interleave paths" (1/2)
+      - fb7e4012512d "mm/mempolicy: stop copying the nodemask in the interleave paths" (1/2)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260829015943.1258774-3-gourry@gourry.net
-      - c463ab146415 "mm/mempolicy: skip zone device folios when queueing folios" (2/3)
+      - 7e2741dff1dd "mm/mempolicy: skip zone device folios when queueing folios" (2/3)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-4-gourry@gourry.net
-    - bfe947f0aca6 "mm/migrate_device: fix function name in kernel-doc"
+    - 25027574c1b9 "mm/migrate_device: fix function name in kernel-doc"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/13768B0F4A5FC1F5+20260902031229.1821112-1-zhaozhengzhuo@uniontech.com
-      - fae0a1e4a9c1 "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
+      - 1921df6bb540 "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-3-9aacbd77d4ca@tencent.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -6,71 +6,21 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 9 -> 12 commits
-  - series: 2 (8) -> 3 (11)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 6 -> 8 commits
+- mm-unstable: 12 -> 12 commits (no change)
+  - series: 3 (11) -> 3 (11) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm: remove page_swap_entry()", v2. (8)
-      - 9bdb7944e752 "mm/swap: add folio_swap_entry() and folio_page_swap_entry() (0/8)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-1-ee6d01dfa5e1@columbia.edu"
-        - added "Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-0-ee6d01dfa5e1@columbia.edu"
-        - added "Signed-off-by: Tal Zussman <tz2294@columbia.edu>"
-        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - added "Cc: David Hildenbrand <david@kernel.org>"
-        - added "Cc: Dev Jain <dev.jain@arm.com>"
-        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - added "Cc: Nhat Pham <nphamcs@gmail.com>"
-        - added "Cc: Marc Rutland <mark.rutland@arm.com>"
-        - added "Cc: Harry Yoo <harry@kernel.org>"
-        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
-        - added "Cc: Ryan Roberts <ryan.roberts@arm.com>"
-        - added "Cc: Chris Li <chrisl@kernel.org>"
-        - added "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-        - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - added "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - added "Cc: Chengming Zhou <chengming.zhou@linux.dev>"
-        - added "Cc: Jann Horn <jannh@google.com>"
-        - added "Cc: Lance Yang <lance.yang@linux.dev>"
-        - added "Cc: Barry Song <baohua@kernel.org>"
-        - added "Cc: Rik van Riel <riel@surriel.com>"
-        - added "Cc: Kairui Song <kasong@tencent.com>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Zi Yan <ziy@nvidia.com>"
-        - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
-        - added "Cc: Will Deacon <will@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-0-ee6d01dfa5e1@columbia.edu
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-1-ee6d01dfa5e1@columbia.edu
-      - ab4e712856d4 "mm/swapfile: use folio_page_swap_entry() (4/8)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-5-ee6d01dfa5e1@columbia.edu
-      - 436380bfc87d "mm/swap: remove page_swap_entry() (7/8)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-8-ee6d01dfa5e1@columbia.edu
-- mm-new: 4 -> 3 commits
-  - series: 1 (3) -> 1 (2)
-    - no role, nobody: 4 -> 1 commits
-    - reviewer, maintainer: 0 -> 2 commits
+- mm-new: 3 -> 4 commits
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 2 -> 2 commits (no change)
   - new commits
-    - series "mm/swap: skip empty clusters in the swapoff scan", v4. (2)
-      - 23b113ae330d "mm/swap: fix stale comment on swap_info_struct::cluster_info (0/2)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260909161552.2335971-1-youngjun.park@lge.com
-        - Link: https://lore.kernel.org/20260909161552.2335971-2-youngjun.park@lge.com
-      - ba0a15a07b2c "mm/swap: scan by cluster in find_next_to_unuse() (1/2)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260909161552.2335971-3-youngjun.park@lge.com
+    - 5804bca6f8cd "mm/memcg: clear folio memcg after changing per memcg stats"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

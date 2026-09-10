@@ -5,31 +5,11 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 5 commits
-  - series: 0 (1) -> 1 (5)
-    - no role, nobody: 1 -> 5 commits
-  - changed commits
-    - series "mm/execmem: fixes and cleanups for the ROX cache". (5)
-      - 0bc933a1d79e "mm/execmem: free ROX cache chunks only when they span an entire vm area (0/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-0-11beb2a3d249@kernel.org
-        - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-1-11beb2a3d249@kernel.org
-      - 6e49762948a6 "mm/execmem: handle potential allocation errors in the maple tree (1/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-2-11beb2a3d249@kernel.org
-      - 679c075a1a6a "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE (2/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-3-11beb2a3d249@kernel.org
-      - 619ee20958c4 "mm/execmem: use cleanup infrastructure in ROX cache functions (4/5)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-5-11beb2a3d249@kernel.org
-- mm-new: 4 -> 0 commits
-  - series: 1 (4) -> 0 (0)
-    - no role, nobody: 4 -> 0 commits
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
+    - no role, nobody: 5 -> 5 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

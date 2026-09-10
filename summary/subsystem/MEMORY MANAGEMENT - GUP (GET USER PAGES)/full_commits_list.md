@@ -7,17 +7,17 @@
     - no role, nobody: 2 commits
     - no role, no role : 1 commits
   - full commits list
-    - 00d374d5f8a0 "mm/gup_test: report actual pinned bytes"
+    - ec9d22a1d567 "mm/gup_test: report actual pinned bytes"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260831101304.162867-1-sarthak.sharma@arm.com
     - series "mm: gup: cleanup gup_fast call chain", v3. (2 commits)
-      - b15f9356913a "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
+      - d6647a7fb817 "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260828015542.125576330@ruivo.org
         - Link: https://lore.kernel.org/20260828015542.245315718@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u [1]
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - 869de0d3ac33 "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
+      - 53a38712da4c "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260828015542.334186653@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
@@ -25,10 +25,10 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-      - 67adc23dc174 "mm: make userland page table freeing RCU-safe" (10/12)
+      - 856a9de6838a "mm: make userland page table freeing RCU-safe" (10/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-11-1f60b64e878e@kernel.org
-    - 72e1e9f9013d "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 8b3239a8dcbc "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

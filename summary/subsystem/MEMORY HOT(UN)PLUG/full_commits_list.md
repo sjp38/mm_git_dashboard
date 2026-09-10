@@ -4,23 +4,23 @@
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 7f1d915ea9fb "mm/memory_hotplug: factor out node_is_memoryless()"
-      - Authored by no role player, reviewed by nobody
+    - 325477ab3652 "mm/memory_hotplug: factor out node_is_memoryless()"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
-    - 9f35c3a8a6dc "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
+    - 578127397cb0 "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
       - Authored by a maintainer, reviewed by nobody
 - mm-new: 2 total, 0 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 8fbaacc4a64b "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (5/11)
+      - 3842f5cdeda9 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (5/11)
         - Authored by no role player, reviewed by a reviewer
         - Link: 
-      - f1a84d178fc6 "mm/sparse-vmemmap: move HVO helpers to a public header" (7/11)
+      - 304707b5f35c "mm/sparse-vmemmap: move HVO helpers to a public header" (7/11)
         - Authored by no role player, reviewed by no role player
         - Link: 
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

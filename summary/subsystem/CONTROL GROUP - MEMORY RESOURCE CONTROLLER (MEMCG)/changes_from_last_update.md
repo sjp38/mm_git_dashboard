@@ -6,62 +6,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 18 -> 28 commits
-  - series: 5 (12) -> 7 (20)
+- mm-unstable: 28 -> 28 commits (no change)
+  - series: 7 (20) -> 7 (20) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 8 -> 12 commits
-    - maintainer, nobody: 0 -> 6 commits
+    - no role, maintainer: 12 -> 12 commits (no change)
+    - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
-  - changed commits
-    - series "memcg: group struct fields by access pattern". (6)
-      - 8815550b50be "memcg: move per-node objcg to the read-mostly fields (0/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260905030522.1887837-1-shakeel.butt@linux.dev
-        - Link: https://lore.kernel.org/20260905030522.1887837-2-shakeel.butt@linux.dev
-      - 067608b128c8 "memcg: split mem_cgroup_private_id into two fields (1/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260905030522.1887837-3-shakeel.butt@linux.dev
-      - d80eda75092b "memcg: group the write-hot fields of struct mem_cgroup (2/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260905030522.1887837-4-shakeel.butt@linux.dev
-      - e86f05b0a7fa "memcg: group the cold fields of struct mem_cgroup (3/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260905030522.1887837-5-shakeel.butt@linux.dev
-      - 30a72874fc63 "memcg: group the read-mostly fields of struct mem_cgroup (4/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260905030522.1887837-6-shakeel.butt@linux.dev
-      - 854d79c0984d "memcg: group the fields of struct mem_cgroup_per_node (5/6)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260905030522.1887837-7-shakeel.butt@linux.dev
-    - 889bf75cab4e "memcg: don't call schedule_work when no spinning is allowed"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260904173145.2028377-1-stevensd@google.com
-    - 9115a8fb8d17 "mm/memcontrol: skip non-hierarchical memcg-wide stats when v1 is unavailable"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260903215616.1456239-1-joannelkoong@gmail.com
-    - series "mm: workingset: fix the shadow node budget under MGLRU", v3. (3)
-      - 62b33ca68aa3 "mm: memcg: redirect stats updates of dying memcgs for all hierarchies (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/cover.1788514750.git.zhuhui@kylinos.cn
-        - Link: https://lore.kernel.org/8a3fe5e6a076cdd9ac997125cb6c6a0948e1a6b6.1788514750.git.zhuhui@kylinos.cn
-      - d6599483922e "mm: memcg: skip the RCU lock when the memcg is not dying (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/0db657472c5278b2e2b87fbca7590b47ca520303.1788514750.git.zhuhui@kylinos.cn
-- mm-new: 10 -> 0 commits
-  - series: 2 (8) -> 0 (0)
-    - no role, maintainer: 4 -> 0 commits
-    - maintainer, nobody: 6 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

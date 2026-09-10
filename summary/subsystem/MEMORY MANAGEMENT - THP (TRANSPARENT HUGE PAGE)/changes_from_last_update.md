@@ -6,71 +6,23 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 14 commits
-  - series: 3 (6) -> 4 (8)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 3 -> 4 commits
-    - no role, reviewer: 5 -> 8 commits
+- mm-unstable: 14 -> 14 commits (no change)
+  - series: 4 (8) -> 4 (8) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, reviewer: 8 -> 8 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: khugepaged: fix tracepoint UAF", v5. (3)
-      - f9106b6ec819 "mm: khugepaged: fix swap entry value to folio_pfn() (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260909025804.3233645-2-vernon2gm@gmail.com"
-        - added "Link: https://lore.kernel.org/20260909025804.3233645-1-vernon2gm@gmail.com"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260828055926.346744-1-vernon2gm@gmail.com"
-        - dropped "Link: https://lore.kernel.org/20260828055926.346744-2-vernon2gm@gmail.com"
-        - dropped "Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260909025804.3233645-1-vernon2gm@gmail.com
-        - Link: https://lore.kernel.org/20260909025804.3233645-2-vernon2gm@gmail.com
-      - ead7faa1df43 "mm: khugepaged: fix folio is used after pte_unmap_unlock() (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260909025804.3233645-3-vernon2gm@gmail.com"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260828055926.346744-3-vernon2gm@gmail.com"
-        - dropped "Link: https://lore.kernel.org/linux-mm/ao6jVbVHLUmuY2UA@gremlin/ [1]"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260909025804.3233645-3-vernon2gm@gmail.com
-      - a84fe0f24e64 "mm: khugepaged: fix folio is used after folio_put/unlock() (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260909025804.3233645-4-vernon2gm@gmail.com"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260828055926.346744-4-vernon2gm@gmail.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260909025804.3233645-4-vernon2gm@gmail.com
-    - series "mm: restore SHRINKER_NONSLAB on THP and zswap shrinkers". (2)
-      - 5c1ee3a8d5a3 "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker (0/2)"
+    - series "Fix deferred_split_isolate() and drop the split workaround", v2. (2)
+      - 9dacc7d36390 "mm/huge_memory: do not touch frozen folios in deferred_split_isolate() (0/2)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260904033503.4067283-1-qinyuntan@linux.alibaba.com
-        - Link: https://lore.kernel.org/20260904033503.4067283-2-qinyuntan@linux.alibaba.com
-        - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
-    - series "mm: remove page_swap_entry()", v2. (8)
-      - 587924aaa0bc "mm/huge_memory: add a comment to the open-coded swap entry (1/8)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
         - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
         - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-2-ee6d01dfa5e1@columbia.edu
-    - 3628c3df6cd2 "mm/huge_memory: add folio_reset_partially_mapped()"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260908132821.1517475-1-kirill@shutemov.name
-- mm-new: 4 -> 1 commits
-  - series: 2 (3) -> 1 (1)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 3 -> 0 commits
-  - changed commits
-    - series "mm: make userland page table freeing RCU-safe", v2. (12)
-      - b3139f069140 "mm/huge_memory: zap deposited page tables after an RCU grace period (0/12)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
-        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-0-1f60b64e878e@kernel.org
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-1-1f60b64e878e@kernel.org
+        - Link: https://lore.kernel.org/20260831091514.1879786-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260831091514.1879786-2-kirill@shutemov.name
+- mm-new: 1 -> 1 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

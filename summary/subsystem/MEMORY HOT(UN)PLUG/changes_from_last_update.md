@@ -7,8 +7,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - 325477ab3652 "mm/memory_hotplug: factor out node_is_memoryless()"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 1 -> 1 commits (no change)

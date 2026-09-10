@@ -5,45 +5,23 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 27 -> 31 commits
-  - series: 5 (19) -> 6 (22)
-    - no role, nobody: 1 -> 4 commits
+- mm-unstable: 31 -> 31 commits (no change)
+  - series: 6 (22) -> 6 (22) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 5 -> 6 commits
+    - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
   - changed commits
-    - ff51182eccff "Docs/mm/damon/design: fix broken :ref: usage and a typo"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260908135257.97523-1-sj@kernel.org
-    - series "selftests/mm: pagemap_ioctl test fixes and cleanups", v2. (3)
-      - 5f6a673890bb "selftests/mm: fix size truncation in pagemap_ioctl test (0/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260908134117.84405-1-zenghui.yu@linux.dev
-        - Link: https://lore.kernel.org/20260908134117.84405-2-zenghui.yu@linux.dev
-      - 4f94ef83e906 "selftests/mm: mark file-local symbols of pagemap_ioctl.c static (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260908134315.84431-1-zenghui.yu@linux.dev
-      - 7a0eaeaf22c0 "selftests/mm: init page sizes early in pagemap_ioctl test (2/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260908134405.84448-1-zenghui.yu@linux.dev
-        - Link: : https://lore.kernel.org/20260628111329.9cfcd9c67925869307020aba@linux-foundation.org/
-- mm-new: 7 -> 3 commits
-  - series: 1 (5) -> 0 (1)
-    - no role, nobody: 5 -> 1 commits
-    - no role, no role : 1 -> 2 commits
-    - no role, maintainer: 1 -> 0 commits
-  - changed commits
-    - series "mm: make userland page table freeing RCU-safe", v2. (12)
-      - 54c1dcd1176a "mm: change the contract for free_pgtables(), update docs (11/12)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
-        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org
+    - 1bc84f1fc59c "tools/testing/selftests/mm: add missing .gitignore entries"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260831-fix-mm-selftests-gitignore-v1-1-c984bbd4c5e4@kernel.org
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
