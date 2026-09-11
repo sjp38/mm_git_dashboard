@@ -9,8 +9,15 @@
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "zsmallc: remove old object read API". (2)
+      - 32c444e47df2 "zram: convert to SG-list zsmalloc object read API (0/2)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260907105739.1793316-1-senozhatsky@chromium.org
+        - Link: https://lore.kernel.org/20260907105739.1793316-2-senozhatsky@chromium.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

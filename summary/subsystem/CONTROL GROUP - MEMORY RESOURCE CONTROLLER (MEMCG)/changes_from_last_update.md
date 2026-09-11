@@ -13,8 +13,24 @@
     - no role, maintainer: 12 -> 12 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+  - changed commits
+    - db8596ced661 "mm/memcontrol: skip non-hierarchical memcg-wide stats when v1 is unavailable"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Reviewed-by: Yosry Ahmed <yosry@kernel.org>"
+      - Link: https://lore.kernel.org/20260903215616.1456239-1-joannelkoong@gmail.com
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, maintainer: 0 -> 2 commits
+  - new commits
+    - series "mm/mglru: fix ineffective memory protection for non-kswapd reclaim", v4. (2)
+      - 9f926378d214 "mm/page_counter: avoid integer overflow in effective_protection() (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260907025445.1836238-1-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/20260907025445.1836238-2-ridong.chen@linux.dev
+        - Link: https://sashiko.dev/#/patchset/20260826133054.88529-1-ridong.chen@linux.dev?part=1 [1]
+      - acc3fede24c8 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,18 +7,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 2 commits
-  - changed commits
-    - b35434858da8 "mm/madvise: swap in CoW'd MAP_PRIVATE-file mappings on MADV_WILLNEED"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-      - Link: https://lore.kernel.org/aprjOxDy3JCPb2oa@gremlin
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - series "mm/collapse: separate a collapse from its callers", v2. (12)
+      - ae1a226bbe11 "mm/collapse: implement MADV_COLLAPSE in madvise.c (11/12)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260910120238.2529819-13-kirill@shutemov.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -8,9 +8,16 @@
 - mm-unstable: 6 -> 6 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 2 -> 2 commits (no change)
+    - reviewer, nobody: 2 -> 1 commits
     - reviewer, no role : 2 -> 2 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 2 commits
+  - changed commits
+    - series "mm/mempolicy: stop copying state in the interleave paths". (2)
+      - ff485ccca5f8 "mm/mempolicy: stop copying the nodemask in the interleave paths (1/2)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Reviewed-by: Rakie Kim <rakie.kim@sk.com>"
+        - dropped "Cc: Rakie Kim <rakie.kim@sk.com>"
+        - Link: https://lore.kernel.org/20260829015943.1258774-3-gourry@gourry.net
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

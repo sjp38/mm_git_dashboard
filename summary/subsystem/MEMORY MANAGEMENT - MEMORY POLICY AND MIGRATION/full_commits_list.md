@@ -5,29 +5,29 @@
 - mm-unstable: 6 total, 1 (4) series, 2 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
-    - reviewer, nobody: 2 commits
+    - reviewer, nobody: 1 commits
     - reviewer, no role : 2 commits
-    - reviewer, reviewer: 1 commits
+    - reviewer, reviewer: 2 commits
   - full commits list
-    - 3926ea99f3b5 "mm/mempolicy: take a cpuset cookie for the interleave node count"
+    - ab0a74dd86c1 "mm/mempolicy: take a cpuset cookie for the interleave node count"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260828193111.1023497-1-gourry@gourry.net
       - Link: https://lore.kernel.org/all/20250907160829.91628-1-chelsyratnawat2001@gmail.com/
     - series "mm/mempolicy: stop copying state in the interleave paths". (2 commits)
-      - 39f538afef79 "mm/mempolicy: use SRCU for the weighted interleave state" (0/2)
+      - ce88372d7709 "mm/mempolicy: use SRCU for the weighted interleave state" (0/2)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260829015943.1258774-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260829015943.1258774-2-gourry@gourry.net
-      - fb7e4012512d "mm/mempolicy: stop copying the nodemask in the interleave paths" (1/2)
-        - Authored by a reviewer, reviewed by nobody
+      - ff485ccca5f8 "mm/mempolicy: stop copying the nodemask in the interleave paths" (1/2)
+        - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260829015943.1258774-3-gourry@gourry.net
-      - 7e2741dff1dd "mm/mempolicy: skip zone device folios when queueing folios" (2/3)
+      - 0a0ff16651a3 "mm/mempolicy: skip zone device folios when queueing folios" (2/3)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-4-gourry@gourry.net
-    - 25027574c1b9 "mm/migrate_device: fix function name in kernel-doc"
+    - 1267dcf3929b "mm/migrate_device: fix function name in kernel-doc"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/13768B0F4A5FC1F5+20260902031229.1821112-1-zhaozhengzhuo@uniontech.com
-      - 1921df6bb540 "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
+      - d6a1b2b417dd "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-3-9aacbd77d4ca@tencent.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -7,19 +7,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 0 -> 1 commits
-    - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - 325477ab3652 "mm/memory_hotplug: factor out node_is_memoryless()"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+- mm-new: 2 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+  - dropped commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
+      - 3842f5cdeda9 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: 
+      - 304707b5f35c "mm/sparse-vmemmap: move HVO helpers to a public header (7/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: 
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -2,103 +2,107 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 22 total, 3 (19) series, 3 non-series commits
+- mm-unstable: 23 total, 3 (19) series, 4 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, reviewer: 13 commits
+    - no role, reviewer: 14 commits
     - no role, maintainer: 1 commits
     - reviewer, no role : 1 commits
     - reviewer, reviewer: 5 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - 69889b9cab04 "mm/vmscan: drop the combined limit gate in __node_reclaim()"
+    - ff9812aa32ed "mm/vmscan: drop the combined limit gate in __node_reclaim()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260826124409.35569-1-ridong.chen@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260723045718.2052070-1-ridong.chen@linux.dev [1]
-    - 40c23a3dbc29 "mm/mglru: preserve inactive placement when enabling MGLRU"
+    - c75ddd113564 "mm/mglru: preserve inactive placement when enabling MGLRU"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260821021606.877330-1-ridong.chen@linux.dev
     - series "memcg: remove the v1 soft limit", v2. (8 commits)
-      - a002a15c163c "memcg: remove v1 soft limit reclaim" (0/8)
+      - e0f633f6ecbf "memcg: remove v1 soft limit reclaim" (0/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev
-      - 01c3cc314da9 "memcg: remove mem_cgroup_shrink_node()" (1/8)
+      - 19e3a07f4d26 "memcg: remove mem_cgroup_shrink_node()" (1/8)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev
-      - 07c2d80a8d88 "memcg: remove lru_gen_soft_reclaim()" (4/8)
+      - fa596049ecd1 "memcg: remove lru_gen_soft_reclaim()" (4/8)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev
     - series "mm/mglru: clean up isolate_folios for readability and clarity", v2. (2 commits)
-      - 0c2c31daff57 "mm/mglru: make type fallback logic explicit in isolate_folios()" (0/2)
+      - 82a96d430156 "mm/mglru: make type fallback logic explicit in isolate_folios()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260829074204.45304-1-baohua@kernel.org
         - Link: https://lore.kernel.org/20260829074204.45304-2-baohua@kernel.org
-      - a226042eae13 "mm/mglru: make retry logic explicit in isolate_folios()" (1/2)
+      - d1a6773ca8cf "mm/mglru: make retry logic explicit in isolate_folios()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260829074204.45304-3-baohua@kernel.org
-    - 8d169053de2b "mm: revert slight behavior change for swappiness 1-200"
+    - 7a25f457b137 "mm: revert slight behavior change for swappiness 1-200"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260903070500.76379-1-baohua@kernel.org
-      - 91edc7c5e442 "mm/vmscan: avoid pointless large folio splits without swap" (2/4)
+      - b32dd7404e88 "mm/vmscan: avoid pointless large folio splits without swap" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260830042920.2280454-4-xueyuan.chen21@gmail.com
     - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7 commits)
-      - 8cd0d25e50a6 "mm/mglru: separate folio generation update from LRU accounting" (0/7)
+      - 965e51ddcf7c "mm/mglru: separate folio generation update from LRU accounting" (0/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-1-baohua@kernel.org
         - Link: https://lore.kernel.org/20260901232421.40157-2-baohua@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260812121658.69965-1-baohua@kernel.org/ [1]
         - Link: https://lore.kernel.org/linux-mm/20260827035416.3012015-1-xueyuan.chen21@gmail.com/ [2]
-      - 0f19c0ae22ad "mm/mglru: batch update lrugen->nr_pages in inc_min_seq()" (1/7)
+      - c7c0f9b4646d "mm/mglru: batch update lrugen->nr_pages in inc_min_seq()" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-3-baohua@kernel.org
-      - bb73eafd282b "mm/mglru: enhance cold/hot inversion handling in inc_min_seq()" (2/7)
+      - ab670d506e43 "mm/mglru: enhance cold/hot inversion handling in inc_min_seq()" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-4-baohua@kernel.org
-      - 2e44be7a2fa3 "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq()" (3/7)
+      - bf51a328a9b2 "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq()" (3/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-5-baohua@kernel.org
-      - 92707d4e6fd3 "mm/mglru: make LRU folio prefetch helper an inline function" (4/7)
+      - 3ff4554e6da3 "mm/mglru: make LRU folio prefetch helper an inline function" (4/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-6-baohua@kernel.org
-      - be2aa7367c5d "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail" (5/7)
+      - 1e9d438404e8 "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail" (5/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-7-baohua@kernel.org
-      - 4dfe83a6286e "mm/mglru: batch move folios to the second-oldest gen's LRU" (6/7)
+      - 94948bf95cdb "mm/mglru: batch move folios to the second-oldest gen's LRU" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
-      - cc3d48fee9e0 "mm: replace PF_KSWAPD flag with kthread_func() check" (2/4)
+      - 3783fa1ac3b5 "mm: replace PF_KSWAPD flag with kthread_func() check" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
-      - a5f7220f57af "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
+      - 466965ee792d "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
-      - e4b95fc6018a "mm/mglru: move max_seq read into walk_update_folio" (3/6)
+      - b0de067ad71a "mm/mglru: move max_seq read into walk_update_folio" (3/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-4-9aacbd77d4ca@tencent.com
-      - 23ae26029972 "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
+      - 561cdbe74a54 "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
-      - dedb80d1c8db "mm/mglru: fix potential generation folio number leak" (5/6)
+      - eba91898810e "mm/mglru: fix potential generation folio number leak" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-6-9aacbd77d4ca@tencent.com
-      - 68be03565727 "mm: workingset: use lruvec_page_state_local() to count lru pages" (1/3)
+      - 4f6b972fa866 "mm: workingset: use lruvec_page_state_local() to count lru pages" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/2ec3a7f73e85ee5f5739c9dc2e58e9a0e2091925.1788514750.git.zhuhui@kylinos.cn
-- mm-new: 3 total, 0 (0) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 2 commits
-    - reviewer, reviewer: 1 commits
-  - full commits list
-    - 767cb3874743 "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
+    - 32c05737b160 "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
-    - 0e78fa1c7aa4 "mm: mglru: clear the reference counter for rejected folios"
+- mm-new: 3 total, 0 (1) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
+    - reviewer, reviewer: 1 commits
+  - full commits list
+    - bdc1afc93778 "mm: mglru: clear the reference counter for rejected folios"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/9214e36bf738fcfba86acc8cea85dff4010f66b0.1788918714.git.baolin.wang@linux.alibaba.com
-    - 5804bca6f8cd "mm/memcg: clear folio memcg after changing per memcg stats"
+    - f845d017bda4 "mm/memcg: clear folio memcg after changing per memcg stats"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
+      - acc3fede24c8 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

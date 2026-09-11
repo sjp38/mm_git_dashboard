@@ -2,33 +2,32 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 3 total, 1 (2) series, 1 non-series commits
+- mm-unstable: 4 total, 1 (3) series, 1 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 1 commits
+    - no role, no role : 4 commits
   - full commits list
-    - ec9d22a1d567 "mm/gup_test: report actual pinned bytes"
+    - 1819478c5dbd "mm/gup_test: report actual pinned bytes"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260831101304.162867-1-sarthak.sharma@arm.com
     - series "mm: gup: cleanup gup_fast call chain", v3. (2 commits)
-      - d6647a7fb817 "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
-        - Authored by no role player, reviewed by nobody
+      - 7cea0220ec8b "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828015542.125576330@ruivo.org
         - Link: https://lore.kernel.org/20260828015542.245315718@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u [1]
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - 53a38712da4c "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
-        - Authored by no role player, reviewed by nobody
+      - 211e14bbe300 "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828015542.334186653@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-- mm-new: 2 total, 0 (1) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-  - full commits list
-      - 856a9de6838a "mm: make userland page table freeing RCU-safe" (10/12)
+      - 831a4e1ea486 "mm: make userland page table freeing RCU-safe" (10/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-11-1f60b64e878e@kernel.org
-    - 8b3239a8dcbc "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+  - full commits list
+    - 6dc173b33931 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

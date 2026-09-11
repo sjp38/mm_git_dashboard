@@ -14,26 +14,77 @@
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
   - changed commits
-    - series "Fix bugs in HugeTLB allocation when mem_cgroup_charge_hugetlb() fails", v2. (2)
-      - 3db9de1361a3 "mm: hugetlb: return -ENOSPC on memcg charge failure (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Fixes: 991135774c0e ("memcg/hugetlb: introduce mem_cgroup_charge_hugetlb")"
-        - dropped "Fixes: 991135774c0e0 ("memcg/hugetlb: introduce mem_cgroup_charge_hugetlb")"
-        - Link: https://lore.kernel.org/20260909-hugetlb-alloc-folio-memcg-charge-error-handling-v2-1-4b4a8a19a7f7@google.com
-      - d07a62cf3a67 "mm: hugetlb: drop refcount before freeing on memcg charge failure (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Fixes: 991135774c0e ("memcg/hugetlb: introduce mem_cgroup_charge_hugetlb")"
-        - dropped "Fixes: 991135774c0e0 ("memcg/hugetlb: introduce mem_cgroup_charge_hugetlb")"
-        - Link: https://lore.kernel.org/20260909-hugetlb-alloc-folio-memcg-charge-error-handling-v2-2-4b4a8a19a7f7@google.com
-- mm-new: 3 -> 4 commits
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v6. (17)
+      - 21cae94df66a "mm/sparse-vmemmap: rename HVO order macros (1/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260910063256.64386-3-songmuchun@bytedance.com"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-3-songmuchun@bytedance.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260910063256.64386-3-songmuchun@bytedance.com
+      - b410d1c1e1e0 "mm/mm_init: factor out pfn_to_zone() (5/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260910063256.64386-7-songmuchun@bytedance.com"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-7-songmuchun@bytedance.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260910063256.64386-7-songmuchun@bytedance.com
+      - 2e2debbaa2dd "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization (9/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260910063256.64386-11-songmuchun@bytedance.com"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-11-songmuchun@bytedance.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260910063256.64386-11-songmuchun@bytedance.com
+      - b3de68652092 "mm/hugetlb: remove HUGE_BOOTMEM_HVO (13/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260910063256.64386-15-songmuchun@bytedance.com"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-15-songmuchun@bytedance.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260910063256.64386-15-songmuchun@bytedance.com
+      - 4fb221f184a9 "mm/hugetlb: remove HUGE_BOOTMEM_CMA (14/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260910063256.64386-16-songmuchun@bytedance.com"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-16-songmuchun@bytedance.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260910063256.64386-16-songmuchun@bytedance.com
+      - 86d8329473db "mm/hugetlb: localize struct huge_bootmem_page (15/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260910063256.64386-17-songmuchun@bytedance.com"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-17-songmuchun@bytedance.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260910063256.64386-17-songmuchun@bytedance.com
+      - 7d048c5a4bbb "mm/hugetlb: localize HUGE_BOOTMEM_ZONES_VALID (16/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260910063256.64386-18-songmuchun@bytedance.com"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-18-songmuchun@bytedance.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260910063256.64386-18-songmuchun@bytedance.com
+- mm-new: 4 -> 2 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
   - new commits
-    - 6864f580cb4e "mm/hugetlb: fix subpool minimum reservation rollback"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260907132055.26696-1-zhoujinmeng@bytedance.com
+    - 61fe25be54cc "mm/hugetlb: account for allowed nodes when gathering surplus pages"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260909074642.7308-1-yehuaisheng@open-hieco.net
+  - dropped commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
+      - 0ad870705ce7 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: 
+      - 304707b5f35c "mm/sparse-vmemmap: move HVO helpers to a public header (7/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: 
+    - 4155dcff98ad "Documentation/mm: update DAX vmemmap deduplication docs"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260908030335.96549-12-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

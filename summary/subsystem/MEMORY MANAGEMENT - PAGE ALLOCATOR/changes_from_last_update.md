@@ -4,6 +4,15 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - de2fe6319e25 "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Christoph Hellwig <hch@lst.de>"
+      - dropped "Cc: Christoph Hellwig <hch@lst.de>"
+      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
+      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
+      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
+      - Link: https://lore.kernel.org/20260904115629.3993331-1-dipiets@amazon.it
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)
@@ -11,8 +20,20 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+  - changed commits
+    - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
+      - aa8daa9d2dca "mm: replace PF_KCOMPACTD flag with kthread_func() check (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 2b8d68568d3c "mm: page_alloc: add missing hooks to bulk allocation path"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260908102356.344075-1-liuqiqi@kylinos.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

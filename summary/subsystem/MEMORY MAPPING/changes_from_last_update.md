@@ -6,6 +6,12 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 340719eb59c7 "mm/rmap: fix missing barrier between anon_vma init and vma->anon_vma publish"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - Link: https://lore.kernel.org/20260908122924.554373-1-tujinjiang@huawei.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)
@@ -13,9 +19,14 @@
     - no role, no role : 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 25b153ae2de3 "tools/testing/vma: cover hole filling through __mmap_region()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/178886112560.138404.17741948638665342936.vma-v2@tychen.cc
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -5,33 +5,92 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 29 -> 29 commits (no change)
+- mm-unstable: 29 -> 30 commits
   - series: 4 (26) -> 4 (26) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 17 -> 17 commits (no change)
+    - no role, reviewer: 17 -> 18 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 6 -> 7 commits
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 4 -> 5 commits
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
-  - new commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
-      - 22d4493ee740 "mm-sparse-vmemmap-switch-device-dax-to-shared-tail-vmemmap-pages-fix (6/11)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/AA5FC896-AC1B-4112-BA14-E1F8865358BF@linux.dev
-    - 5804bca6f8cd "mm/memcg: clear folio memcg after changing per memcg stats"
+  - changed commits
+    - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v6. (17)
+      - 568d91cae04e "mm/sparse: relax struct mem_section size constraints (0/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]"
+        - added "Link: https://lore.kernel.org/20260910063256.64386-2-songmuchun@bytedance.com"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-1-songmuchun@bytedance.com"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-2-songmuchun@bytedance.com"
+        - dropped "Link: https://lore.kernel.org/linux-mm/20260513130542.35604-1-songmuchun@bytedance.com/ [1]"
+        - Link: https://lore.kernel.org/20260910063256.64386-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+      - 21cae94df66a "mm/sparse-vmemmap: rename HVO order macros (1/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260910063256.64386-3-songmuchun@bytedance.com"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-3-songmuchun@bytedance.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260910063256.64386-3-songmuchun@bytedance.com
+      - 0f161655affa "mm/mm_init: skip initializing shared vmemmap tail pages (2/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-4-songmuchun@bytedance.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com
+      - 879fa42d0233 "mm/sparse-vmemmap: support section-based vmemmap accounting (4/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260910063256.64386-6-songmuchun@bytedance.com"
+        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-6-songmuchun@bytedance.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260910063256.64386-6-songmuchun@bytedance.com
+      - 8f9c0d18b593 "mm/sparse-vmemmap: remove SPARSEMEM_VMEMMAP_PREINIT support (10/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260910063256.64386-12-songmuchun@bytedance.com"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-12-songmuchun@bytedance.com"
+        - Link: https://lore.kernel.org/20260910063256.64386-12-songmuchun@bytedance.com
+      - 6eed2d501f8a "mm/sparse: inline usemap allocation into sparse_init_nid() (11/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260910063256.64386-13-songmuchun@bytedance.com"
+        - dropped "Link: https://lore.kernel.org/20260825084608.47437-13-songmuchun@bytedance.com"
+        - Link: https://lore.kernel.org/20260910063256.64386-13-songmuchun@bytedance.com
+    - 32c05737b160 "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
       - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
+- mm-new: 7 -> 3 commits
+  - series: 1 (4) -> 0 (1)
+    - no role, nobody: 1 -> 0 commits
+    - no role, reviewer: 5 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm/mglru: fix ineffective memory protection for non-kswapd reclaim", v4. (2)
+      - acc3fede24c8 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
+  - changed commits
+    - f845d017bda4 "mm/memcg: clear folio memcg after changing per memcg stats"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Cc: <stable@vger.kernel.org>"
       - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
   - dropped commits
     - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
-      - dd35ca2f2cac "mm-sparse-vmemmap-switch-device-dax-to-shared-tail-vmemmap-pages-fix (6/11)"
-        - Authored by a maintainer, reviewed by nobody
+      - 0d9afbf3d294 "mm/sparse-vmemmap: introduce CONFIG_SPARSEMEM_VMEMMAP_OPTIMIZATION (0/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260908030335.96549-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260908030335.96549-2-songmuchun@bytedance.com
+      - 0ad870705ce7 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: 
+      - 3842f5cdeda9 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: 
+      - 22d4493ee740 "mm-sparse-vmemmap-switch-device-dax-to-shared-tail-vmemmap-pages-fix (6/11)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/AA5FC896-AC1B-4112-BA14-E1F8865358BF@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

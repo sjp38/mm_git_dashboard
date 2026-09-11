@@ -1,27 +1,76 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - f5e450401669 "writeback: report a Tasks-RCU quiescent state per cgwb drain pass"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260909-cgwb-tasks-rcu-qs-v1-1-967a7754771f@toxicpanda.com
+      - Link: https://lore.kernel.org/bpf/9d444098-7c03-4163-af12-bd0a79a51443@paulmck-laptop/
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 31 -> 31 commits (no change)
-  - series: 6 (22) -> 6 (22) (no change)
+- mm-unstable: 31 -> 32 commits
+  - series: 6 (22) -> 6 (23)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 12 -> 12 commits (no change)
+    - no role, no role : 12 -> 13 commits
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
   - changed commits
-    - 1bc84f1fc59c "tools/testing/selftests/mm: add missing .gitignore entries"
-      - Authored by no role player, reviewed by no role player
+    - series "selftests/mm: TAP output and global-state fixes", v4. (3)
+      - f18f79d51f18 "selftests/mm: emit TAP header in uffd-wp-mremap (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260825085756.63030-1-husong@kylinos.cn
+        - Link: https://lore.kernel.org/20260825085756.63030-2-husong@kylinos.cn
+      - 69b5046aa4be "selftests/mm: restore enable_soft_offline in hugetlb-soft-offline (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260825085756.63030-4-husong@kylinos.cn
+    - 54e04f1850ae "docs/mm: ksm: use the renamed ksm structure names"
+      - Authored by no role player, reviewed by a reviewer
       - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260831-fix-mm-selftests-gitignore-v1-1-c984bbd4c5e4@kernel.org
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+      - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
+    - series "mm: make userland page table freeing RCU-safe", v2. (12)
+      - 68dc53ebf274 "mm: change the contract for free_pgtables(), update docs (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org
+- mm-new: 3 -> 7 commits
+  - series: 0 (1) -> 1 (3)
+    - no role, nobody: 1 -> 3 commits
+    - no role, no role : 2 -> 3 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - series "selftests/mm: Validate selections and scope memfd_secret setup", v3. (2)
+      - 389ab2488c50 "selftests/mm: reject invalid test selections before running tests (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260910125645.285866-1-diannaaav@gmail.com
+        - Link: https://lore.kernel.org/20260910125645.285866-2-diannaaav@gmail.com
+      - eebbbe396d7a "selftests/mm: only prepare ptrace_scope when memfd_secret is selected (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260910125645.285866-3-diannaaav@gmail.com
+    - cdb0952fbd18 "selftests/mm: fix ptrace PEEKDATA check in memfd_secret test"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260910064415.71623-1-hongfu.li@linux.dev
+    - bd3e2a68d4df "mm: selftests: adjust the MADV_COLLAPSE uffd-minor selftests"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260910023411.514987-2-jthoughton@google.com
+    - ff6debd1c143 "docs/core-api: memory-allocation: clarify when to use kzalloc_obj and kzalloc"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260907063654.2248617-1-rppt@kernel.org
+    - series "mm/damon: introduce pgidle_set probe filter type". (5)
+      - 8053c9a12f04 "Docs/mm/damon/design: update for pgidle_set probe filter (4/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260910142234.171562-6-sj@kernel.org
+  - dropped commits
+    - 4155dcff98ad "Documentation/mm: update DAX vmemmap deduplication docs"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260908030335.96549-12-songmuchun@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
