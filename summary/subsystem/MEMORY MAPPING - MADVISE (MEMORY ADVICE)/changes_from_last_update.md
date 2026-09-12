@@ -5,17 +5,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
+- mm-unstable: 2 -> 3 commits
+  - series: 0 (1) -> 0 (2)
     - no role, nobody: 0 -> 1 commits
-  - new commits
+    - no role, no role : 2 -> 2 commits (no change)
+  - changed commits
     - series "mm/collapse: separate a collapse from its callers", v2. (12)
-      - ae1a226bbe11 "mm/collapse: implement MADV_COLLAPSE in madvise.c (11/12)"
+      - 68911e99c4af "mm/collapse: implement MADV_COLLAPSE in madvise.c (11/12)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910120238.2529819-13-kirill@shutemov.name
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm: stop calling pmd_folio() on special PMDs", v2. (2)
+      - 0ac2d28bbdfc "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260912034833.2952750-3-gourry@gourry.net
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

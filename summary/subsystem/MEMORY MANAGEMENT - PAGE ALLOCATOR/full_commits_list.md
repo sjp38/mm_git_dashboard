@@ -4,52 +4,61 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - de2fe6319e25 "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
+    - 60adb47f4fa3 "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260911142102.2294202-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
       - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
       - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
-      - Link: https://lore.kernel.org/20260904115629.3993331-1-dipiets@amazon.it
+      - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 8 total, 2 (5) series, 3 non-series commits
+- mm-unstable: 9 total, 2 (5) series, 4 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
-    - no role, reviewer: 6 commits
+    - no role, reviewer: 7 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 9876ba97d5da "mm: drop stale MAX_ORDER references"
+    - 283753058516 "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
     - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2 commits)
-      - 53ef31e22923 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
+      - bb3263bfc6b8 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
-      - d7228b520355 "mm/page_isolation: guard compound_order() against racing" (1/2)
+      - 2a023d2a1f3f "mm/page_isolation: guard compound_order() against racing" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
-      - 61c2de364510 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
+      - 69fdf22a8bc9 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - e941840c39a3 "mm: adjust out-dated document of __GFP_NOFAIL"
+    - ef6d7191e766 "mm: adjust out-dated document of __GFP_NOFAIL"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
-      - 1e3f74c67430 "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
+      - bf718ae539f8 "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811172156.356053-3-pfalcato@suse.de
-      - aa8daa9d2dca "mm: replace PF_KCOMPACTD flag with kthread_func() check" (3/4)
+      - 23da5c9a50de "mm: replace PF_KCOMPACTD flag with kthread_func() check" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
-    - 3534f1591cb7 "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
+    - a0e50a6b56d7 "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260903092126.24685-1-hongfu.li@linux.dev
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, reviewer: 1 commits
-  - full commits list
-    - 2b8d68568d3c "mm: page_alloc: add missing hooks to bulk allocation path"
+    - 71c6d9228152 "mm: page_alloc: add missing hooks to bulk allocation path"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908102356.344075-1-liuqiqi@kylinos.cn
+- mm-new: 2 total, 1 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+  - full commits list
+    - series "mm: refactor zonelist constructors and iterators", v2. (2 commits)
+      - c5d1f7d6ae4d "mm: refactor find_next_best_node to find_next_best_node_in" (0/2)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net
+      - 1ef2323f6852 "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists()" (1/2)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260912030424.2889731-3-gourry@gourry.net
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

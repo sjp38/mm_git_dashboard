@@ -6,81 +6,75 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 14 commits (no change)
-  - series: 4 (8) -> 5 (9)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 4 -> 5 commits
-    - no role, reviewer: 8 -> 8 commits (no change)
+- mm-unstable: 14 -> 27 commits
+  - series: 5 (9) -> 6 (21)
+    - no role, nobody: 0 -> 5 commits
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 8 -> 16 commits
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: restore SHRINKER_NONSLAB on THP and zswap shrinkers". (2)
-      - f379e543bad3 "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260904033503.4067283-1-qinyuntan@linux.alibaba.com
-        - Link: https://lore.kernel.org/20260904033503.4067283-2-qinyuntan@linux.alibaba.com
-        - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
-    - series "mm: make userland page table freeing RCU-safe", v2. (12)
-      - 064bb23eca95 "mm/huge_memory: zap deposited page tables after an RCU grace period (0/12)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-0-1f60b64e878e@kernel.org
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-1-1f60b64e878e@kernel.org
-  - dropped commits
-    - d019c489d19a "mm/khugepaged: don't install PMDs in uffd-minor-registered VMAs"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260828222640.1638457-1-jthoughton@google.com
-- mm-new: 1 -> 13 commits
-  - series: 1 (1) -> 1 (12)
-    - no role, nobody: 0 -> 7 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 0 -> 6 commits
-  - new commits
     - series "mm/collapse: separate a collapse from its callers", v2. (12)
-      - e60a4aa57ec6 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/12)"
+      - 1ade2ce851c2 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/12)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910120238.2529819-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260910120238.2529819-2-kirill@shutemov.name
-      - 808fcd435d8e "mm/khugepaged: count collapses where khugepaged makes them (1/12)"
+      - 674e824d6a44 "mm/khugepaged: count collapses where khugepaged makes them (1/12)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910120238.2529819-3-kirill@shutemov.name
-      - 866aeb76f737 "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/12)"
+      - 7f01a488b221 "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/12)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910120238.2529819-4-kirill@shutemov.name
-      - a6d3c84d69e1 "mm/collapse: add collapse.h for the collapse interface (3/12)"
+      - c7ff9b5ec8d4 "mm/collapse: add collapse.h for the collapse interface (3/12)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910120238.2529819-5-kirill@shutemov.name
-      - 63bee9826b7b "mm/collapse: state what a collapse may do in the policy (4/12)"
+      - f76998a785fb "mm/collapse: state what a collapse may do in the policy (4/12)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910120238.2529819-6-kirill@shutemov.name
-      - 3e3c2636195a "mm/collapse: drop the collapse_possible() wrapper (5/12)"
+      - d96acb524ff3 "mm/collapse: drop the collapse_possible() wrapper (5/12)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910120238.2529819-7-kirill@shutemov.name
-      - 4e04ea6dd147 "mm/collapse: name the per-table scan reset for what it resets (6/12)"
+      - 2d0646711148 "mm/collapse: name the per-table scan reset for what it resets (6/12)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910120238.2529819-8-kirill@shutemov.name
-      - b93e95ce6d6f "mm/collapse: separate scanning a PTE table from collapsing it (7/12)"
+      - 2a9d8dfd9c4b "mm/collapse: separate scanning a PTE table from collapsing it (7/12)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910120238.2529819-9-kirill@shutemov.name
-      - a910a07667fa "mm/collapse: open-code collapse_single_pmd() in its two callers (8/12)"
-        - Authored by no role player, reviewed by nobody
+      - 0e176df94a00 "mm/collapse: open-code collapse_single_pmd() in its two callers (8/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
         - Link: https://lore.kernel.org/20260910120238.2529819-10-kirill@shutemov.name
-      - 00e2fe46f055 "mm/collapse: work out the orders a VMA allows once per VMA (9/12)"
-        - Authored by no role player, reviewed by nobody
+      - 782c5bdffc66 "mm/collapse: work out the orders a VMA allows once per VMA (9/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
         - Link: https://lore.kernel.org/20260910120238.2529819-11-kirill@shutemov.name
-      - 6c7468adec7e "mm/collapse: declare the collapse interface in collapse.h (10/12)"
+      - 7cdefbe04b06 "mm/collapse: declare the collapse interface in collapse.h (10/12)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910120238.2529819-12-kirill@shutemov.name
-      - ae1a226bbe11 "mm/collapse: implement MADV_COLLAPSE in madvise.c (11/12)"
+      - 68911e99c4af "mm/collapse: implement MADV_COLLAPSE in madvise.c (11/12)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910120238.2529819-13-kirill@shutemov.name
-    - dbc76884631b "mm/khugepaged: never install PMDs in uffd-minor-registered VMAs"
+    - 25b5bb2e2f15 "mm/khugepaged: never install PMDs in uffd-minor-registered VMAs"
       - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260910023411.514987-1-jthoughton@google.com
+- mm-new: 13 -> 0 commits
+  - series: 1 (12) -> 0 (0)
+    - no role, nobody: 7 -> 0 commits
+    - no role, reviewer: 6 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

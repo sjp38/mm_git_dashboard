@@ -4,81 +4,78 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - f8cd7da04757 "selftests/cgroup: account for zswap shrinker writeback"
+    - 93d5b10387c8 "selftests/cgroup: account for zswap shrinker writeback"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260902194521.3652178-1-joshua.hahnjy@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 8 total, 3 (7) series, 1 non-series commits
+- mm-unstable: 17 total, 5 (13) series, 4 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
-    - no role, maintainer: 5 commits
+    - no role, maintainer: 14 commits
   - full commits list
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
-      - 61c2de364510 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
+      - 69fdf22a8bc9 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
     - series "selftests/cgroup: fixes for test_zswap on single core VM", v4. (2 commits)
-      - 5844eaf9d91a "selftests/cgroup: test_zswap: wait for cgroup to unpopulate in test_zswap_writeback" (0/2)
+      - c1d68e166823 "selftests/cgroup: test_zswap: wait for cgroup to unpopulate in test_zswap_writeback" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260828033741.2184560-1-wfelipe@google.com
         - Link: https://lore.kernel.org/20260828033741.2184560-2-wfelipe@google.com
-      - 52d30b0248fb "selftests/cgroup: test_zswap: fix implicit unsigned promotion bug in test_no_kmem_bypass" (1/2)
+      - f1583181b8bc "selftests/cgroup: test_zswap: fix implicit unsigned promotion bug in test_no_kmem_bypass" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260828033741.2184560-3-wfelipe@google.com
-      - 01dbcd33734f "mm/swap: rename __swap_writepage() to __swap_writeout()" (5/6)
+      - 5e3bc40d078e "mm/swap: rename __swap_writepage() to __swap_writeout()" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-6-649728091117@columbia.edu
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - 8d92055e804b "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - 608c51c93d44 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
-    - 61ef3e1d6f0b "mm/zswap: convert zswap_store_page() and zswap_compress() to take a folio"
+    - 5083aea4a709 "mm/zswap: convert zswap_store_page() and zswap_compress() to take a folio"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260904232108.3034333-1-wfelipe@google.com
-      - 377f45e128c5 "mm: zswap: mark the zswap shrinker SHRINKER_NONSLAB" (1/2)
+      - 73acbab07252 "mm: zswap: mark the zswap shrinker SHRINKER_NONSLAB" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260904033503.4067283-3-qinyuntan@linux.alibaba.com
         - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
-      - de7aaa9460f0 "mm/zswap: use folio_swap_entry() in zswap_store_page()" (3/8)
+      - c9dcd3f0c306 "mm/zswap: use folio_swap_entry() in zswap_store_page()" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-4-ee6d01dfa5e1@columbia.edu
-- mm-new: 9 total, 2 (6) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 9 commits
-  - full commits list
-    - ee7d3f707904 "mm: zswap: don't fail a large-folio swapin whose range is not in zswap"
+    - 702a22ccca03 "mm: zswap: don't fail a large-folio swapin whose range is not in zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260907161938.1932355-1-usama.arif@linux.dev
-    - 48076297a0f1 "mm/zswap: publish the initial pool with list_add_rcu()"
+    - a98e8e17f9e9 "mm/zswap: publish the initial pool with list_add_rcu()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260908012801.1864430-1-xialonglong2025@163.com
       - Link: https://sashiko.dev/#/patchset/20260906133601.3563324-1-xialonglong2025%40163.com
     - series "mm: zswap: optimize zswap invalidate and store", v3. (3 commits)
-      - 9cc062ea306b "mm: zswap: convert zswap_invalidate() to take a range" (0/3)
+      - 6d848ea12001 "mm: zswap: convert zswap_invalidate() to take a range" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260910123544.818146-1-wangkefeng.wang@huawei.com
         - Link: https://lore.kernel.org/20260910123544.818146-2-wangkefeng.wang@huawei.com
-      - 5cfb904bd13b "mm: zswap: skip xarray walk in zswap_invalidate() when zswap is unused" (1/3)
+      - bf6c2151b741 "mm: zswap: skip xarray walk in zswap_invalidate() when zswap is unused" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260910123544.818146-3-wangkefeng.wang@huawei.com
-      - 9375bbf0e08f "mm: zswap: reuse zswap_invalidate() in zswap_store()" (2/3)
+      - 1d343d89b1e7 "mm: zswap: reuse zswap_invalidate() in zswap_store()" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260910123544.818146-4-wangkefeng.wang@huawei.com
-    - 0f343b3ebf72 "mm/zswap: enable zswap_ever_enabled in zswap_pool_create()"
+    - da67e295b277 "mm/zswap: enable zswap_ever_enabled in zswap_pool_create()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260906135938.3568108-1-xialonglong2025@163.com
     - series "mm/zswap: shrink zswap_entry via a pool id", v6. (3 commits)
-      - e607299b3214 "mm/zswap: release retired pools via queue_rcu_work() instead of synchronize_rcu()" (0/3)
+      - 4e6213e2367d "mm/zswap: release retired pools via queue_rcu_work() instead of synchronize_rcu()" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260906-shrink_zswap_entry_v6-v6-0-ac4cf61565fb@gmail.com
         - Link: https://lore.kernel.org/20260906-shrink_zswap_entry_v6-v6-1-ac4cf61565fb@gmail.com
-      - 78e1b9cfc50b "mm/zswap: replace the zswap_pools list with an allocating xarray" (1/3)
+      - 513d78185ac2 "mm/zswap: replace the zswap_pools list with an allocating xarray" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260906-shrink_zswap_entry_v6-v6-2-ac4cf61565fb@gmail.com
-      - d063fad4c170 "mm/zswap: reference the pool by id to shrink struct zswap_entry" (2/3)
+      - e2e54005e20f "mm/zswap: reference the pool by id to shrink struct zswap_entry" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260906-shrink_zswap_entry_v6-v6-3-ac4cf61565fb@gmail.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

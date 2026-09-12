@@ -6,28 +6,28 @@
   - author/reviewer role stat
     - no role, no role : 4 commits
   - full commits list
-    - 1819478c5dbd "mm/gup_test: report actual pinned bytes"
+    - 83d6b2898ec5 "mm/gup_test: report actual pinned bytes"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260831101304.162867-1-sarthak.sharma@arm.com
     - series "mm: gup: cleanup gup_fast call chain", v3. (2 commits)
-      - 7cea0220ec8b "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
+      - 47bc46853de2 "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828015542.125576330@ruivo.org
         - Link: https://lore.kernel.org/20260828015542.245315718@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u [1]
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - 211e14bbe300 "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
+      - 5b858c373dab "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828015542.334186653@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - 831a4e1ea486 "mm: make userland page table freeing RCU-safe" (10/12)
+      - 1544327085cc "mm: make userland page table freeing RCU-safe" (10/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-11-1f60b64e878e@kernel.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 6dc173b33931 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+    - 490ca650dfa5 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

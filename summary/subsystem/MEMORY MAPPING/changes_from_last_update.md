@@ -6,27 +6,49 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 340719eb59c7 "mm/rmap: fix missing barrier between anon_vma init and vma->anon_vma publish"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - Link: https://lore.kernel.org/20260908122924.554373-1-tujinjiang@huawei.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 8 commits (no change)
+- mm-unstable: 8 -> 10 commits
   - series: 3 (8) -> 3 (8) (no change)
-    - no role, no role : 6 -> 6 commits (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 6 -> 7 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 1 -> 2 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 25b153ae2de3 "tools/testing/vma: cover hole filling through __mmap_region()"
+  - changed commits
+    - 916e1d2eec80 "mm/nommu: reject wrapping ranges in access_remote_vm()"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260909064231.18693-1-tasos.papagiannnis@gmail.com
+    - c3258a756535 "tools/testing/vma: cover hole filling through __mmap_region()"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/178886112560.138404.17741948638665342936.vma-v2@tychen.cc
+- mm-new: 2 -> 6 commits
+  - series: 0 (0) -> 1 (6)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 6 commits
+  - new commits
+    - series "read proc/pid/smaps_rollup under per-vma lock", v4. (7)
+      - d1f10378e7fa "proc/task_mmu: remove unnecessary helpers (0/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260911194145.1781926-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260911194145.1781926-2-surenb@google.com
+      - 2a61a4b80dc0 "proc/task_mmu: remove unnecessary inlines in function definitions (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260911194145.1781926-3-surenb@google.com
+      - c254af1c8067 "proc/task_mmu: clarify shmem mapping walk conditions in smap_gather_stats() (2/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260911194145.1781926-4-surenb@google.com
+      - 143ffc016ffd "proc/task_mmu: remove special-casing of smap_gather_stats() start parameter (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260911194145.1781926-5-surenb@google.com
+      - 925f8857dfe5 "proc/task_mmu: change proc_get_vma() to stop returning gate VMA at the end (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260911194145.1781926-6-surenb@google.com
+      - 69a7a3a45cf3 "proc/task_mmu: read proc/pid/smaps_rollup under per-vma lock (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260911194145.1781926-7-surenb@google.com
+        - Link: https://github.com/paulmckrcu/proc-mmap_sem-test [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 5169763a6193 "mm/vmalloc: ase dedicated unbound workqueues for vmap drain"
+    - 16853606ce21 "mm/vmalloc: ase dedicated unbound workqueues for vmap drain"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -13,31 +13,31 @@
     - no role, nobody: 2 commits
     - no role, no role : 6 commits
   - full commits list
-    - bf4ba29686c5 "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - b58992627505 "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
     - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v3. (6 commits)
-      - 13c7b240828a "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
+      - c2e6f83ba031 "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-0-949b64a9f755@kernel.org
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-1-949b64a9f755@kernel.org
         - Link: https://lore.kernel.org/all/20260611130144.1385343-4-abarnas@google.com [1]
-      - c2230b19787d "mm/vmalloc: set area's page_order after allocation succeeds" (1/6)
+      - c2eefd19a418 "mm/vmalloc: set area's page_order after allocation succeeds" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-2-949b64a9f755@kernel.org
-      - 17c7e0b97716 "mm/vmalloc: constify vm parameter of get_vm_area_page_order()" (2/6)
+      - 17ecdee5a703 "mm/vmalloc: constify vm parameter of get_vm_area_page_order()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-3-949b64a9f755@kernel.org
-      - fa6b7984bf62 "mm/vmalloc: make set_area_direct_map HUGE_VMAP friendly" (3/6)
+      - d6cb1f8c7824 "mm/vmalloc: make set_area_direct_map HUGE_VMAP friendly" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-4-949b64a9f755@kernel.org
-    - 15338b5b4cd7 "mm: vmalloc: fix vmap_purge_lock livelock under memory pressure"
+    - 32b2f3801ba5 "mm: vmalloc: fix vmap_purge_lock livelock under memory pressure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260828091753.299295-1-ye.liu@linux.dev
-      - fcf2a36b1ff3 "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE" (2/5)
+      - ff08c9904fc3 "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE" (2/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-3-11beb2a3d249@kernel.org
-      - d5d59f0c4d63 "mm/vmalloc: add DEFINE_FREE() for vfree()" (3/5)
+      - db8e796e9594 "mm/vmalloc: add DEFINE_FREE() for vfree()" (3/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-4-11beb2a3d249@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -6,162 +6,53 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 37 -> 39 commits
-  - series: 7 (31) -> 7 (33)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 25 -> 28 commits
+- mm-unstable: 39 -> 39 commits (no change)
+  - series: 7 (33) -> 7 (33) (no change)
+    - no role, no role : 28 -> 28 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v6. (17)
-      - 568d91cae04e "mm/sparse: relax struct mem_section size constraints (0/17)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260910063256.64386-2-songmuchun@bytedance.com"
-        - added "Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-1-songmuchun@bytedance.com"
-        - dropped "Link: https://lore.kernel.org/linux-mm/20260513130542.35604-1-songmuchun@bytedance.com/ [1]"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-2-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260910063256.64386-2-songmuchun@bytedance.com
+- mm-new: 0 -> 10 commits
+  - series: 0 (0) -> 2 (10)
+    - no role, no role : 0 -> 7 commits
+    - no role, reviewer: 0 -> 3 commits
+  - new commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v3. (11)
+      - 65917bceea0f "mm/sparse-vmemmap: introduce CONFIG_SPARSEMEM_VMEMMAP_OPTIMIZATION (0/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260911050228.58884-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260911050228.58884-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - 21cae94df66a "mm/sparse-vmemmap: rename HVO order macros (1/17)"
+      - 9c67a676d52a "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260910063256.64386-3-songmuchun@bytedance.com"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-3-songmuchun@bytedance.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260910063256.64386-3-songmuchun@bytedance.com
-      - 0f161655affa "mm/mm_init: skip initializing shared vmemmap tail pages (2/17)"
+        - Link: https://lore.kernel.org/20260911050228.58884-3-songmuchun@bytedance.com
+      - 03a3deb7b435 "mm/sparse-vmemmap: open-code init_compound_tail() (2/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260911050228.58884-4-songmuchun@bytedance.com
+      - b2c7e2daf592 "mm/sparse-vmemmap: prepare DAX vmemmap population for compound page orders (3/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260911050228.58884-5-songmuchun@bytedance.com
+      - 5bef7eea1e11 "mm/sparse-vmemmap: set compound page order for device DAX (4/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260911050228.58884-6-songmuchun@bytedance.com
+      - 05615a35bc99 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-4-songmuchun@bytedance.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com
-      - 90378a1db989 "mm/sparse-vmemmap: initialize shared tail vmemmap pages on allocation (3/17)"
+        - Link: https://lore.kernel.org/20260911050228.58884-7-songmuchun@bytedance.com
+      - 2f5665b4325a "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (6/11)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260910063256.64386-5-songmuchun@bytedance.com"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-5-songmuchun@bytedance.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260910063256.64386-5-songmuchun@bytedance.com
-      - 879fa42d0233 "mm/sparse-vmemmap: support section-based vmemmap accounting (4/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260910063256.64386-6-songmuchun@bytedance.com"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-6-songmuchun@bytedance.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260910063256.64386-6-songmuchun@bytedance.com
-      - 8631be00c125 "mm/sparse-vmemmap: move helpers ahead of future callers (6/17)"
+        - Link: https://lore.kernel.org/20260911050228.58884-8-songmuchun@bytedance.com
+      - 426120645937 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (8/11)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260910063256.64386-8-songmuchun@bytedance.com"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-8-songmuchun@bytedance.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260910063256.64386-8-songmuchun@bytedance.com
-      - 35a407870d38 "mm/sparse-vmemmap: support section-based vmemmap optimization (7/17)"
+        - Link: https://lore.kernel.org/20260911050228.58884-10-songmuchun@bytedance.com
+      - ae03a337941d "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments (9/11)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260910063256.64386-9-songmuchun@bytedance.com"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-9-songmuchun@bytedance.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260910063256.64386-9-songmuchun@bytedance.com
-      - a0caf6bf9099 "mm/sparse: initialize memory sections earlier (8/17)"
+        - Link: https://lore.kernel.org/20260911050228.58884-11-songmuchun@bytedance.com
+    - series "mm: refactor zonelist constructors and iterators", v2. (2)
+      - c5d1f7d6ae4d "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260910063256.64386-10-songmuchun@bytedance.com"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-10-songmuchun@bytedance.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260910063256.64386-10-songmuchun@bytedance.com
-      - 2e2debbaa2dd "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization (9/17)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260910063256.64386-11-songmuchun@bytedance.com"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-11-songmuchun@bytedance.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260910063256.64386-11-songmuchun@bytedance.com
-      - 8f9c0d18b593 "mm/sparse-vmemmap: remove SPARSEMEM_VMEMMAP_PREINIT support (10/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260910063256.64386-12-songmuchun@bytedance.com"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-12-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260910063256.64386-12-songmuchun@bytedance.com
-      - 6eed2d501f8a "mm/sparse: inline usemap allocation into sparse_init_nid() (11/17)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260910063256.64386-13-songmuchun@bytedance.com"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-13-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260910063256.64386-13-songmuchun@bytedance.com
-      - f0af41e15710 "mm/sparse: remove section_map_size() (12/17)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260910063256.64386-14-songmuchun@bytedance.com"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-14-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260910063256.64386-14-songmuchun@bytedance.com
-      - 86d8329473db "mm/hugetlb: localize struct huge_bootmem_page (15/17)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260910063256.64386-17-songmuchun@bytedance.com"
-        - added "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260825084608.47437-17-songmuchun@bytedance.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260910063256.64386-17-songmuchun@bytedance.com
-    - series "mm/memory: improve insert_pages() error handling", v3. (2)
-      - b1f18c41b858 "mm/memory: simplify error handling in insert_pages() (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/cover.1788022178.git.thnkslprpt@gmail.com
-        - Link: https://lore.kernel.org/dd3a672c858b38c7525541b19a919e120c4e5a0e.1788022178.git.thnkslprpt@gmail.com
-    - 6708c6010a17 "mm/memory: constrain generic_access_phys() to page boundary"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - Link: https://lore.kernel.org/e06e28a46c2a176238f03b5740df0913e57c2861.1788842306.git.rakukuip@gmail.com
-    - series "mm: make userland page table freeing RCU-safe", v2. (12)
-      - 831a4e1ea486 "mm: make userland page table freeing RCU-safe (10/12)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-11-1f60b64e878e@kernel.org
-      - 68dc53ebf274 "mm: change the contract for free_pgtables(), update docs (11/12)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org
-- mm-new: 12 -> 0 commits
-  - series: 1 (12) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 8 -> 0 commits
-    - no role, reviewer: 3 -> 0 commits
-  - dropped commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v2. (11)
-      - 0d9afbf3d294 "mm/sparse-vmemmap: introduce CONFIG_SPARSEMEM_VMEMMAP_OPTIMIZATION (0/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260908030335.96549-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260908030335.96549-2-songmuchun@bytedance.com
-      - 0ad870705ce7 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: 
-      - ef3ce58a077b "mm/sparse-vmemmap: open-code init_compound_tail() (2/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - e739498b1c3f "mm/sparse-vmemmap: prepare DAX vmemmap population for section orders (3/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - 823d3c307cbb "mm/sparse-vmemmap: set section order for device DAX (4/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - 3842f5cdeda9 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: 
-      - 22d4493ee740 "mm-sparse-vmemmap-switch-device-dax-to-shared-tail-vmemmap-pages-fix (6/11)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/AA5FC896-AC1B-4112-BA14-E1F8865358BF@linux.dev
-      - 304707b5f35c "mm/sparse-vmemmap: move HVO helpers to a public header (7/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: 
-      - 7220b4efe70e "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (9/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908030335.96549-10-songmuchun@bytedance.com
-      - b57286ebd578 "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments (10/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908030335.96549-11-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

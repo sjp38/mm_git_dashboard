@@ -6,45 +6,64 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 12 commits (no change)
-  - series: 3 (11) -> 3 (11) (no change)
+- mm-unstable: 12 -> 20 commits
+  - series: 3 (11) -> 6 (18)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 8 -> 8 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-- mm-new: 4 -> 9 commits
-  - series: 1 (2) -> 3 (7)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 2 -> 3 commits
     - reviewer, nobody: 0 -> 1 commits
     - reviewer, reviewer: 0 -> 1 commits
-    - reviewer, maintainer: 2 -> 4 commits
-  - new commits
+    - reviewer, maintainer: 0 -> 4 commits
+  - changed commits
+    - series "mm/swap: skip empty clusters in the swapoff scan", v4. (2)
+      - 12b48edd5f6c "mm/swap: fix stale comment on swap_info_struct::cluster_info (0/2)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260909161552.2335971-1-youngjun.park@lge.com
+        - Link: https://lore.kernel.org/20260909161552.2335971-2-youngjun.park@lge.com
+      - 0e8f97421429 "mm/swap: scan by cluster in find_next_to_unuse() (1/2)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260909161552.2335971-3-youngjun.park@lge.com
+    - f245cf82e158 "mm/memcg: clear folio memcg after changing per memcg stats"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
     - series "mm: zswap: optimize zswap invalidate and store", v3. (3)
-      - 9cc062ea306b "mm: zswap: convert zswap_invalidate() to take a range (0/3)"
+      - 6d848ea12001 "mm: zswap: convert zswap_invalidate() to take a range (0/3)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910123544.818146-1-wangkefeng.wang@huawei.com
         - Link: https://lore.kernel.org/20260910123544.818146-2-wangkefeng.wang@huawei.com
     - series "mm, swap: some random fixes and cleanups", v3. (4)
-      - d7f01ff369e3 "mm, swap: fix potential NULL dereference when trying a sleep table allocation (0/4)"
+      - 752cde282095 "mm, swap: fix potential NULL dereference when trying a sleep table allocation (0/4)"
         - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260907091356.53026-1-shikemeng@huaweicloud.com
         - Link: https://lore.kernel.org/20260907091356.53026-2-shikemeng@huaweicloud.com
-      - bfba2f827cd8 "mm, swap: Move setup_swap_clusters_info() after SWP_SOLIDSTATE initialization (1/4)"
+      - d0ba63617354 "mm, swap: Move setup_swap_clusters_info() after SWP_SOLIDSTATE initialization (1/4)"
         - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - added "Fixes: 451c6326105b ("mm, swap: clean up swapon process and locking")"
+        - dropped "Fixes: 451c6326105b2 ("mm, swap: clean up swapon process and locking")"
         - Link: https://lore.kernel.org/20260907091356.53026-3-shikemeng@huaweicloud.com
-      - d2baac1c6461 "mm, swap: return early from swap_extend_table_try_free() on first non-zero entry (2/4)"
+      - 1a73cc6092a7 "mm, swap: return early from swap_extend_table_try_free() on first non-zero entry (2/4)"
         - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260907091356.53026-4-shikemeng@huaweicloud.com
-      - a39abd685769 "mm, swap: remove unneeded swap_extend_table_try_free() in swap_dup_entries_cluster() (3/4)"
+      - eafff24b2cb3 "mm, swap: remove unneeded swap_extend_table_try_free() in swap_dup_entries_cluster() (3/4)"
         - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260907091356.53026-5-shikemeng@huaweicloud.com
-  - changed commits
-    - f845d017bda4 "mm/memcg: clear folio memcg after changing per memcg stats"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
+- mm-new: 9 -> 1 commits
+  - series: 3 (7) -> 0 (0)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 4 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

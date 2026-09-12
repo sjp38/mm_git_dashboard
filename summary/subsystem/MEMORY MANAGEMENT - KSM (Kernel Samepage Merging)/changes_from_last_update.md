@@ -7,13 +7,8 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 4 -> 4 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 1 -> 2 commits
-    - no role, reviewer: 3 -> 2 commits
-  - changed commits
-    - 54e04f1850ae "docs/mm: ksm: use the renamed ksm structure names"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -5,34 +5,33 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 22 -> 23 commits
-  - series: 3 (19) -> 3 (19) (no change)
+- mm-unstable: 23 -> 26 commits
+  - series: 3 (19) -> 3 (20)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 13 -> 14 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, reviewer: 14 -> 15 commits
+    - no role, maintainer: 1 -> 2 commits
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 5 -> 5 commits (no change)
+    - reviewer, reviewer: 5 -> 6 commits
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - 32c05737b160 "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
+    - 519f7768585e "mm: mglru: clear the reference counter for rejected folios"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/9214e36bf738fcfba86acc8cea85dff4010f66b0.1788918714.git.baolin.wang@linux.alibaba.com
+    - f245cf82e158 "mm/memcg: clear folio memcg after changing per memcg stats"
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 2 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm/mglru: fix ineffective memory protection for non-kswapd reclaim", v4. (2)
-      - acc3fede24c8 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
-  - changed commits
-    - f845d017bda4 "mm/memcg: clear folio memcg after changing per memcg stats"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Cc: <stable@vger.kernel.org>"
       - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
+    - series "mm/mglru: fix ineffective memory protection for non-kswapd reclaim", v4. (2)
+      - 8ee25fb282b2 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
+- mm-new: 3 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
