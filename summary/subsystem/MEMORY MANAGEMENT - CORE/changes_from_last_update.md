@@ -6,53 +6,68 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 39 -> 39 commits (no change)
-  - series: 7 (33) -> 7 (33) (no change)
-    - no role, no role : 28 -> 28 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
+- mm-unstable: 39 -> 48 commits
+  - series: 7 (33) -> 8 (42)
+    - no role, no role : 28 -> 34 commits
+    - no role, reviewer: 5 -> 8 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 0 -> 10 commits
-  - series: 0 (0) -> 2 (10)
-    - no role, no role : 0 -> 7 commits
-    - no role, reviewer: 0 -> 3 commits
-  - new commits
+  - changed commits
     - series "mm: Switch device DAX to section-based vmemmap optimization", v3. (11)
-      - 65917bceea0f "mm/sparse-vmemmap: introduce CONFIG_SPARSEMEM_VMEMMAP_OPTIMIZATION (0/11)"
+      - d553e82f713d "mm/sparse-vmemmap: introduce CONFIG_SPARSEMEM_VMEMMAP_OPTIMIZATION (0/11)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260911050228.58884-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - 9c67a676d52a "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
+      - 83c71ba4895f "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-3-songmuchun@bytedance.com
-      - 03a3deb7b435 "mm/sparse-vmemmap: open-code init_compound_tail() (2/11)"
+      - a600dcd0739c "mm/sparse-vmemmap: open-code init_compound_tail() (2/11)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-4-songmuchun@bytedance.com
-      - b2c7e2daf592 "mm/sparse-vmemmap: prepare DAX vmemmap population for compound page orders (3/11)"
+      - 8a8146b6b05b "mm/sparse-vmemmap: prepare DAX vmemmap population for compound page orders (3/11)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-5-songmuchun@bytedance.com
-      - 5bef7eea1e11 "mm/sparse-vmemmap: set compound page order for device DAX (4/11)"
+      - 1b956eb0d93b "mm/sparse-vmemmap: set compound page order for device DAX (4/11)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-6-songmuchun@bytedance.com
-      - 05615a35bc99 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
+      - f3e36f4e8963 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-7-songmuchun@bytedance.com
-      - 2f5665b4325a "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (6/11)"
+      - 755b5b634908 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (6/11)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-8-songmuchun@bytedance.com
-      - 426120645937 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (8/11)"
+      - c73341d3ff18 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (8/11)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-10-songmuchun@bytedance.com
-      - ae03a337941d "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments (9/11)"
+      - 05c997de1d2c "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments (9/11)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-11-songmuchun@bytedance.com
-    - series "mm: refactor zonelist constructors and iterators", v2. (2)
-      - c5d1f7d6ae4d "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net
+- mm-new: 10 -> 3 commits
+  - series: 2 (10) -> 1 (3)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 7 -> 1 commits
+    - no role, reviewer: 3 -> 0 commits
+    - reviewer, nobody: 0 -> 1 commits
+  - new commits
+    - series "Remove PG_private by using page/folio->private", v4. (16)
+      - bc954d686b89 "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
+      - 37567a2c2724 "treewide: remove PagePrivate() and PG_private from comments and docs (14/16)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-15-848550f7574e@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

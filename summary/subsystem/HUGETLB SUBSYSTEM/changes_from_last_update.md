@@ -7,42 +7,40 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 15 -> 17 commits
-  - series: 2 (11) -> 2 (11) (no change)
-    - no role, nobody: 2 -> 3 commits
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 5 -> 6 commits
+- mm-unstable: 17 -> 21 commits
+  - series: 2 (11) -> 2 (14)
+    - no role, nobody: 3 -> 4 commits
+    - no role, no role : 6 -> 8 commits
+    - no role, reviewer: 2 -> 3 commits
+    - no role, maintainer: 6 -> 6 commits (no change)
   - changed commits
-    - e2ae6fd21028 "mm/hugetlb: fix subpool minimum reservation rollback"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260907132055.26696-1-zhoujinmeng@bytedance.com
-    - 45ad286198ec "mm/hugetlb: account for allowed nodes when gathering surplus pages"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - added "Fixes: e4e574b767ba ("hugetlb: Try to grow hugetlb pool for MAP_SHARED mappings")"
-      - Link: https://lore.kernel.org/20260909074642.7308-1-yehuaisheng@open-hieco.net
-- mm-new: 2 -> 4 commits
-  - series: 0 (0) -> 0 (3)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 2 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 1 -> 0 commits
-  - new commits
     - series "mm: Switch device DAX to section-based vmemmap optimization", v3. (11)
-      - 9c67a676d52a "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
+      - 83c71ba4895f "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-3-songmuchun@bytedance.com
-      - 2f5665b4325a "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (6/11)"
+      - 755b5b634908 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (6/11)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-8-songmuchun@bytedance.com
-      - 0979898b33ed "Documentation/mm: update DAX vmemmap deduplication docs (10/11)"
+      - f669fecad12c "Documentation/mm: update DAX vmemmap deduplication docs (10/11)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-12-songmuchun@bytedance.com
-    - 415b92d1b732 "mm/hugetlb: preserve mremap address delta when skipping page tables"
+    - fc451c02dc6a "mm/hugetlb: preserve mremap address delta when skipping page tables"
       - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260911182408.75821-1-jaewook376@gmail.com
+- mm-new: 4 -> 1 commits
+  - series: 0 (3) -> 0 (1)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+  - new commits
+    - series "Remove PG_private by using page/folio->private", v4. (16)
+      - 2ae54593b9eb "mm/hugetlb: use direct assignment instead of folio_change_private() (4/16)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-5-848550f7574e@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

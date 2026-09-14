@@ -5,33 +5,22 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 23 -> 26 commits
-  - series: 3 (19) -> 3 (20)
+- mm-unstable: 26 -> 26 commits (no change)
+  - series: 3 (20) -> 3 (20) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 14 -> 15 commits
-    - no role, maintainer: 1 -> 2 commits
+    - no role, reviewer: 15 -> 15 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 5 -> 6 commits
+    - reviewer, reviewer: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 519f7768585e "mm: mglru: clear the reference counter for rejected folios"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/9214e36bf738fcfba86acc8cea85dff4010f66b0.1788918714.git.baolin.wang@linux.alibaba.com
-    - f245cf82e158 "mm/memcg: clear folio memcg after changing per memcg stats"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
-    - series "mm/mglru: fix ineffective memory protection for non-kswapd reclaim", v4. (2)
-      - 8ee25fb282b2 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
-- mm-new: 3 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - reviewer, nobody: 0 -> 1 commits
+  - new commits
+    - series "Remove PG_private by using page/folio->private", v4. (16)
+      - bc954d686b89 "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -5,47 +5,40 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 30 -> 33 commits
-  - series: 4 (26) -> 4 (27)
+- mm-unstable: 33 -> 36 commits
+  - series: 4 (27) -> 5 (30)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 18 -> 19 commits
-    - no role, maintainer: 1 -> 2 commits
+    - no role, reviewer: 19 -> 22 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 6 -> 7 commits
+    - reviewer, reviewer: 7 -> 7 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - 519f7768585e "mm: mglru: clear the reference counter for rejected folios"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/9214e36bf738fcfba86acc8cea85dff4010f66b0.1788918714.git.baolin.wang@linux.alibaba.com
-    - f245cf82e158 "mm/memcg: clear folio memcg after changing per memcg stats"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
-    - series "mm/mglru: fix ineffective memory protection for non-kswapd reclaim", v4. (2)
-      - 8ee25fb282b2 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (1) -> 1 (3)
-    - no role, reviewer: 1 -> 3 commits
-    - no role, maintainer: 1 -> 0 commits
-    - reviewer, reviewer: 1 -> 0 commits
-  - new commits
     - series "mm: Switch device DAX to section-based vmemmap optimization", v3. (11)
-      - 65917bceea0f "mm/sparse-vmemmap: introduce CONFIG_SPARSEMEM_VMEMMAP_OPTIMIZATION (0/11)"
+      - d553e82f713d "mm/sparse-vmemmap: introduce CONFIG_SPARSEMEM_VMEMMAP_OPTIMIZATION (0/11)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260911050228.58884-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - 9c67a676d52a "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
+      - 83c71ba4895f "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-3-songmuchun@bytedance.com
-      - 05615a35bc99 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
+      - f3e36f4e8963 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-7-songmuchun@bytedance.com
+- mm-new: 3 -> 1 commits
+  - series: 1 (3) -> 0 (1)
+    - no role, reviewer: 3 -> 0 commits
+    - reviewer, nobody: 0 -> 1 commits
+  - new commits
+    - series "Remove PG_private by using page/folio->private", v4. (16)
+      - bc954d686b89 "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -2,48 +2,45 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 8 total, 1 (8) series, 0 non-series commits
+- mm-unstable: 10 total, 1 (10) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, no role : 5 commits
+    - no role, no role : 7 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - d620b30dda36 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+      - ff9fa1968565 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com
-      - 5d80f19ffa2a "mm/mm_init: factor out pfn_to_zone()" (5/17)
+      - c39c3384b802 "mm/mm_init: factor out pfn_to_zone()" (5/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-7-songmuchun@bytedance.com
-      - 8e223e04465a "mm/sparse: initialize memory sections earlier" (8/17)
+      - 2c1aa3227045 "mm/sparse: initialize memory sections earlier" (8/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-10-songmuchun@bytedance.com
     - series "mm: optimize zone-device memmap initialization", v11. (7 commits)
-      - 473b3b2ff087 "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
+      - 97f51932d11d "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-1-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/20260831111638.76012-2-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/all/aiEoByaQdRR3xtM5@nvdebian.thelocal/ [1]
-      - c55083a88944 "mm: add a template-based fast path for zone-device page init" (2/7)
+      - 8b130000be36 "mm: add a template-based fast path for zone-device page init" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-4-lizhe.67@bytedance.com
-      - 66afd86dda67 "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
+      - 45ba4a5dbfe9 "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903025806.70825-1-lizhe.67@bytedance.com
-      - 79ff4d9711dd "mm: extend the template fast path to zone-device compound tails" (4/7)
+      - f69566476f24 "mm: extend the template fast path to zone-device compound tails" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-5-lizhe.67@bytedance.com
-      - 219b840913c2 "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
+      - 318976db6dd9 "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831111638.76012-7-lizhe.67@bytedance.com
-- mm-new: 2 total, 0 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-  - full commits list
-      - 5bef7eea1e11 "mm/sparse-vmemmap: set compound page order for device DAX" (4/11)
+      - 1b956eb0d93b "mm/sparse-vmemmap: set compound page order for device DAX" (4/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911050228.58884-6-songmuchun@bytedance.com
-      - 426120645937 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (8/11)
+      - c73341d3ff18 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (8/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911050228.58884-10-songmuchun@bytedance.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

@@ -13,9 +13,27 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-      - a70220fb371b "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
+      - 7953086cb35e "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 4 total, 0 (4) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 1 commits
+    - reviewer, nobody: 1 commits
+    - reviewer, no role : 1 commits
+  - full commits list
+      - 8f240c658f8c "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/16)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-8-848550f7574e@nvidia.com
+      - bc954d686b89 "mm/page-flags: check page/folio->private instead of PG_private" (9/16)
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
+      - 4e1f918d8e6d "treewide: remove folio_set/clear_private() usage" (10/16)
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-11-848550f7574e@nvidia.com
+      - 37567a2c2724 "treewide: remove PagePrivate() and PG_private from comments and docs" (14/16)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-15-848550f7574e@nvidia.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

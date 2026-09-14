@@ -5,18 +5,20 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-unstable: 2 -> 3 commits
   - series: 0 (0) -> 0 (1)
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 0 -> 1 commits
-  - new commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
+  - changed commits
     - series "mm: Switch device DAX to section-based vmemmap optimization", v3. (11)
-      - 05615a35bc99 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
+      - f3e36f4e8963 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-7-songmuchun@bytedance.com
+- mm-new: 1 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

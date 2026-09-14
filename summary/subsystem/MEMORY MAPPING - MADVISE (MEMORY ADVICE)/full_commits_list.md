@@ -2,26 +2,23 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 3 total, 0 (2) series, 1 non-series commits
+- mm-unstable: 4 total, 0 (3) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 2 commits
+    - no role, no role : 3 commits
   - full commits list
-      - 30f4848d5a38 "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
+      - ce0568814642 "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-3-gourry@gourry.net
-    - 406337301e86 "mm/madvise: swap in CoW'd MAP_PRIVATE-file mappings on MADV_WILLNEED"
+    - 258614a19d6e "mm/madvise: swap in CoW'd MAP_PRIVATE-file mappings on MADV_WILLNEED"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/aprjOxDy3JCPb2oa@gremlin
-      - 68911e99c4af "mm/collapse: implement MADV_COLLAPSE in madvise.c" (11/12)
+      - eac44fd55ff6 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (11/12)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260910120238.2529819-13-kirill@shutemov.name
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-      - 0ac2d28bbdfc "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range" (1/2)
-        - Authored by no role player, reviewed by nobody
+      - 6b41451631ca "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range" (1/2)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260912034833.2952750-3-gourry@gourry.net
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

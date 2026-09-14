@@ -7,19 +7,19 @@
     - no role, no role : 2 commits
     - no role, reviewer: 2 commits
   - full commits list
-    - 625b99723d61 "mm/ksm: mark migration stores with WRITE_ONCE()"
+    - fd316022e5df "mm/ksm: mark migration stores with WRITE_ONCE()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260824112433.191301-1-nicoyip.dev@gmail.com
     - series "docs/ksm: fix advisor documentation and comment", v3. (2 commits)
-      - 8688bad4e08b "docs: ksm: fix typos in sysfs knob names" (0/2)
+      - 2e9bd3b06b83 "docs: ksm: fix typos in sysfs knob names" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260824061010.3343959-1-tujinjiang@huawei.com
         - Link: https://lore.kernel.org/20260824061010.3343959-2-tujinjiang@huawei.com
-      - 2bffbc0452d8 "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
+      - 05d91d5c55ab "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/linux-mm/20231028000945.2428830-2-shr@devkernel.io/ [1]
         - Link: https://lore.kernel.org/20260824061010.3343959-3-tujinjiang@huawei.com
-    - 62b599a5af6e "docs/mm: ksm: use the renamed ksm structure names"
+    - 57961f32e202 "docs/mm: ksm: use the renamed ksm structure names"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

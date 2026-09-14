@@ -5,18 +5,17 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - maintainer, nobody: 0 -> 1 commits
-  - changed commits
-    - series "zsmallc: remove old object read API". (2)
-      - f2ae543ebcc5 "zsmalloc: remove old object read API (1/2)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260907105739.1793316-3-senozhatsky@chromium.org
-- mm-new: 1 -> 0 commits
-  - series: 0 (1) -> 0 (0)
-    - maintainer, nobody: 1 -> 0 commits
+- mm-unstable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "Remove PG_private by using page/folio->private", v4. (16)
+      - c6f599efbbe2 "mm/zsmalloc: replace PG_private with pointer comparison (0/16)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-1-848550f7574e@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

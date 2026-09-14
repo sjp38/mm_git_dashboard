@@ -6,28 +6,15 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 28 -> 30 commits
-  - series: 7 (20) -> 8 (22)
+- mm-unstable: 30 -> 30 commits (no change)
+  - series: 8 (22) -> 8 (22) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 12 -> 14 commits
+    - no role, maintainer: 14 -> 14 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
-  - changed commits
-    - series "mm/mglru: fix ineffective memory protection for non-kswapd reclaim", v4. (2)
-      - f3c8f7e40579 "mm/page_counter: avoid integer overflow in effective_protection() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260907025445.1836238-1-ridong.chen@linux.dev
-        - Link: https://lore.kernel.org/20260907025445.1836238-2-ridong.chen@linux.dev
-        - Link: https://sashiko.dev/#/patchset/20260826133054.88529-1-ridong.chen@linux.dev?part=1 [1]
-      - 8ee25fb282b2 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, maintainer: 2 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

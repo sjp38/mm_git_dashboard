@@ -4,48 +4,21 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 60adb47f4fa3 "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/20260911142102.2294202-1-dipiets@amazon.it"
-      - added "Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]"
-      - added "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - added "Cc: Vlastimil Babka <vbabka@suse.cz>"
-      - added "Cc: Christoph Hellwig <hch@lst.de>"
-      - dropped "Link: https://lore.kernel.org/20260904115629.3993331-1-dipiets@amazon.it"
-      - dropped "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Reviewed-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Reviewed-by: Christoph Hellwig <hch@lst.de>"
-      - Link: https://lore.kernel.org/20260911142102.2294202-1-dipiets@amazon.it
-      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
-      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
-      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
-      - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 9 commits
+- mm-unstable: 9 -> 9 commits (no change)
   - series: 2 (5) -> 2 (5) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 6 -> 7 commits
+    - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 71c6d9228152 "mm: page_alloc: add missing hooks to bulk allocation path"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260908102356.344075-1-liuqiqi@kylinos.cn
-- mm-new: 1 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 1 -> 0 commits
+- mm-new: 2 -> 3 commits
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 1 -> 1 commits (no change)
   - new commits
-    - series "mm: refactor zonelist constructors and iterators", v2. (2)
-      - c5d1f7d6ae4d "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net
-      - 1ef2323f6852 "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists() (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260912030424.2889731-3-gourry@gourry.net
+    - afd44a6aa48e "mm/page_alloc: apply per-task GFP context in bulk allocator"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260914024555.138125-1-liuqiqi@kylinos.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

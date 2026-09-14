@@ -2,79 +2,34 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+- mm-hotfixes-unstable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - reviewer, nobody: 0 -> 1 commits
+  - new commits
+    - ac63e1b4d2a2 "mm/huge_memory: fix pgtable withdrawal for huge zero PMDs"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260913051942.40889-1-lance.yang@linux.dev
+      - Link: https://lore.kernel.org/linux-mm/cover.1787941780.git.yintirui@gmail.com/ [1]
+    - 1be399d378b7 "khugepaged: hold invalidate_lock across collapse_file() readahead"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260913163644.122133-1-ngocthang2710.1999@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 27 commits
-  - series: 5 (9) -> 6 (21)
-    - no role, nobody: 0 -> 5 commits
+- mm-unstable: 27 -> 27 commits (no change)
+  - series: 6 (21) -> 6 (21) (no change)
+    - no role, nobody: 5 -> 5 commits (no change)
     - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 8 -> 16 commits
+    - no role, reviewer: 16 -> 16 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/collapse: separate a collapse from its callers", v2. (12)
-      - 1ade2ce851c2 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910120238.2529819-1-kirill@shutemov.name
-        - Link: https://lore.kernel.org/20260910120238.2529819-2-kirill@shutemov.name
-      - 674e824d6a44 "mm/khugepaged: count collapses where khugepaged makes them (1/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910120238.2529819-3-kirill@shutemov.name
-      - 7f01a488b221 "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910120238.2529819-4-kirill@shutemov.name
-      - c7ff9b5ec8d4 "mm/collapse: add collapse.h for the collapse interface (3/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910120238.2529819-5-kirill@shutemov.name
-      - f76998a785fb "mm/collapse: state what a collapse may do in the policy (4/12)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910120238.2529819-6-kirill@shutemov.name
-      - d96acb524ff3 "mm/collapse: drop the collapse_possible() wrapper (5/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910120238.2529819-7-kirill@shutemov.name
-      - 2d0646711148 "mm/collapse: name the per-table scan reset for what it resets (6/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910120238.2529819-8-kirill@shutemov.name
-      - 2a9d8dfd9c4b "mm/collapse: separate scanning a PTE table from collapsing it (7/12)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910120238.2529819-9-kirill@shutemov.name
-      - 0e176df94a00 "mm/collapse: open-code collapse_single_pmd() in its two callers (8/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260910120238.2529819-10-kirill@shutemov.name
-      - 782c5bdffc66 "mm/collapse: work out the orders a VMA allows once per VMA (9/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260910120238.2529819-11-kirill@shutemov.name
-      - 7cdefbe04b06 "mm/collapse: declare the collapse interface in collapse.h (10/12)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910120238.2529819-12-kirill@shutemov.name
-      - 68911e99c4af "mm/collapse: implement MADV_COLLAPSE in madvise.c (11/12)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910120238.2529819-13-kirill@shutemov.name
-    - 25b5bb2e2f15 "mm/khugepaged: never install PMDs in uffd-minor-registered VMAs"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260910023411.514987-1-jthoughton@google.com
-- mm-new: 13 -> 0 commits
-  - series: 1 (12) -> 0 (0)
-    - no role, nobody: 7 -> 0 commits
-    - no role, reviewer: 6 -> 0 commits
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - reviewer, nobody: 0 -> 1 commits
+  - new commits
+    - series "Remove PG_private by using page/folio->private", v4. (16)
+      - bc954d686b89 "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

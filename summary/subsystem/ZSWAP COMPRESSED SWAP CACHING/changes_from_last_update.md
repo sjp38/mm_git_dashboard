@@ -6,55 +6,17 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 17 commits
-  - series: 3 (7) -> 5 (13)
+- mm-unstable: 17 -> 17 commits (no change)
+  - series: 5 (13) -> 5 (13) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 5 -> 14 commits
-  - changed commits
-    - 702a22ccca03 "mm: zswap: don't fail a large-folio swapin whose range is not in zswap"
+    - no role, maintainer: 14 -> 14 commits (no change)
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 926e8dd6c5a2 "mm: zswap: return -ENOENT when the swap device is gone"
       - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260907161938.1932355-1-usama.arif@linux.dev
-    - a98e8e17f9e9 "mm/zswap: publish the initial pool with list_add_rcu()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260908012801.1864430-1-xialonglong2025@163.com
-      - Link: https://sashiko.dev/#/patchset/20260906133601.3563324-1-xialonglong2025%40163.com
-    - series "mm: zswap: optimize zswap invalidate and store", v3. (3)
-      - 6d848ea12001 "mm: zswap: convert zswap_invalidate() to take a range (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910123544.818146-1-wangkefeng.wang@huawei.com
-        - Link: https://lore.kernel.org/20260910123544.818146-2-wangkefeng.wang@huawei.com
-      - bf6c2151b741 "mm: zswap: skip xarray walk in zswap_invalidate() when zswap is unused (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910123544.818146-3-wangkefeng.wang@huawei.com
-      - 1d343d89b1e7 "mm: zswap: reuse zswap_invalidate() in zswap_store() (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910123544.818146-4-wangkefeng.wang@huawei.com
-    - da67e295b277 "mm/zswap: enable zswap_ever_enabled in zswap_pool_create()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260906135938.3568108-1-xialonglong2025@163.com
-    - series "mm/zswap: shrink zswap_entry via a pool id", v6. (3)
-      - 4e6213e2367d "mm/zswap: release retired pools via queue_rcu_work() instead of synchronize_rcu() (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-shrink_zswap_entry_v6-v6-0-ac4cf61565fb@gmail.com
-        - Link: https://lore.kernel.org/20260906-shrink_zswap_entry_v6-v6-1-ac4cf61565fb@gmail.com
-      - 513d78185ac2 "mm/zswap: replace the zswap_pools list with an allocating xarray (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-shrink_zswap_entry_v6-v6-2-ac4cf61565fb@gmail.com
-      - e2e54005e20f "mm/zswap: reference the pool by id to shrink struct zswap_entry (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260906-shrink_zswap_entry_v6-v6-3-ac4cf61565fb@gmail.com
-- mm-new: 9 -> 0 commits
-  - series: 2 (6) -> 0 (0)
-    - no role, maintainer: 9 -> 0 commits
+      - Link: https://lore.kernel.org/20260913063031.1689420-1-hebaoquan@kylinos.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

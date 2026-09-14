@@ -4,74 +4,54 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - a24e08e12d87 "writeback: report a Tasks-RCU quiescent state per cgwb drain pass"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20260909-cgwb-tasks-rcu-qs-v1-1-967a7754771f@toxicpanda.com
-      - Link: https://lore.kernel.org/bpf/9d444098-7c03-4163-af12-bd0a79a51443@paulmck-laptop/
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 32 -> 37 commits
-  - series: 6 (23) -> 7 (25)
-    - no role, nobody: 4 -> 6 commits
-    - no role, no role : 13 -> 16 commits
+- mm-unstable: 37 -> 43 commits
+  - series: 7 (25) -> 7 (28)
+    - no role, nobody: 6 -> 6 commits (no change)
+    - no role, no role : 16 -> 19 commits
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
-    - maintainer, nobody: 4 -> 4 commits (no change)
+    - maintainer, nobody: 4 -> 7 commits
   - changed commits
-    - series "selftests/mm: Validate selections and scope memfd_secret setup", v3. (2)
-      - db28ac1e7c84 "selftests/mm: reject invalid test selections before running tests (0/2)"
-        - Authored by no role player, reviewed by nobody
+    - series "mm/damon: introduce pgidle_set probe filter type". (5)
+      - 6f0346e352d1 "Docs/mm/damon/design: update for pgidle_set probe filter (4/5)"
+        - Authored by a maintainer, reviewed by nobody
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910125645.285866-1-diannaaav@gmail.com
-        - Link: https://lore.kernel.org/20260910125645.285866-2-diannaaav@gmail.com
-      - 2f9b2b939f91 "selftests/mm: only prepare ptrace_scope when memfd_secret is selected (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260910125645.285866-3-diannaaav@gmail.com
-    - 76bd4e816399 "selftests/mm: fix ptrace PEEKDATA check in memfd_secret test"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260910064415.71623-1-hongfu.li@linux.dev
-    - 7aa1ffc40930 "mm: selftests: adjust the MADV_COLLAPSE uffd-minor selftests"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260910023411.514987-2-jthoughton@google.com
-    - cc94f289e3a5 "docs/core-api: memory-allocation: clarify when to use kzalloc_obj and kzalloc"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260907063654.2248617-1-rppt@kernel.org
-- mm-new: 7 -> 9 commits
-  - series: 1 (3) -> 1 (4)
-    - no role, nobody: 3 -> 1 commits
-    - no role, no role : 3 -> 5 commits
-    - maintainer, nobody: 1 -> 3 commits
-  - new commits
+        - Link: https://lore.kernel.org/20260910142234.171562-6-sj@kernel.org
     - series "mm: Switch device DAX to section-based vmemmap optimization", v3. (11)
-      - 0979898b33ed "Documentation/mm: update DAX vmemmap deduplication docs (10/11)"
+      - f669fecad12c "Documentation/mm: update DAX vmemmap deduplication docs (10/11)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911050228.58884-12-songmuchun@bytedance.com
-    - d2dd3073fb66 "kselftest: mm: fix potential failure for merged VMA in guard-regions"
+    - 13d82227a83f "kselftest: mm: fix potential failure for merged VMA in guard-regions"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260911142904.1825452-1-yeoreum.yun@arm.com
     - series "mm/damon: introduce probe_hits_wsum DAMOS core filter", v2. (7)
-      - 2ab780b212b3 "Docs/mm/damon/design: update for probe_hits_wsum DAMOS core filter (6/7)"
+      - 41a43d5b9573 "Docs/mm/damon/design: update for probe_hits_wsum DAMOS core filter (6/7)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260911135510.96914-7-sj@kernel.org
-    - 4a594eee5ab6 "Docs/admin-guide/mm/damon/usage: update for probe_hits_wsum DAMOS filter"
+    - 73552638be09 "Docs/admin-guide/mm/damon/usage: update for probe_hits_wsum DAMOS filter"
       - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260911135510.96914-8-sj@kernel.org
-    - 2010ecbf0d69 "selftests/mm: skip khugepaged file tests if mkfs.xfs is unavailable"
+    - 2fd1a9c518c9 "selftests/mm: skip khugepaged file tests if mkfs.xfs is unavailable"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
       - Link: https://lore.kernel.org/20260911124517.63714-1-jaeyeon.lee.dev@gmail.com
-    - series "mm: refactor zonelist constructors and iterators", v2. (2)
-      - c5d1f7d6ae4d "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net
-    - 4095802c657d "kselftest: mm: remove exclusion of building soft-dirty test in arm64"
+- mm-new: 9 -> 3 commits
+  - series: 1 (4) -> 1 (1)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 5 -> 2 commits
+    - maintainer, nobody: 3 -> 0 commits
+  - changed commits
+    - 8a664904dca2 "kselftest: mm: remove exclusion of building soft-dirty test in arm64"
       - Authored by no role player, reviewed by no role player
+      - added "Tested-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
       - Link: https://lore.kernel.org/20260911210611.4001419-1-yeoreum.yun@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

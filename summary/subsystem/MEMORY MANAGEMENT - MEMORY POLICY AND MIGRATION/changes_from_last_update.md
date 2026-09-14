@@ -5,21 +5,33 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
+- mm-unstable: 6 -> 7 commits
+  - series: 1 (4) -> 2 (5)
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 1 (1)
-    - reviewer, no role : 0 -> 1 commits
-  - new commits
+    - reviewer, reviewer: 2 -> 3 commits
+  - changed commits
     - series "mm: stop calling pmd_folio() on special PMDs", v2. (2)
-      - 7ed26dd0629d "mm/mempolicy: use vm_normal_folio_pmd() in queue_folios_pmd() (0/2)"
-        - Authored by a reviewer, reviewed by no role player
+      - 93c24ee6b424 "mm/mempolicy: use vm_normal_folio_pmd() in queue_folios_pmd() (0/2)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
         - Link: https://lore.kernel.org/20260912034833.2952750-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260912034833.2952750-2-gourry@gourry.net
+- mm-new: 1 -> 2 commits
+  - series: 1 (1) -> 0 (2)
+    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - series "Remove PG_private by using page/folio->private", v4. (16)
+      - bc954d686b89 "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
+        - Authored by a reviewer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
+      - 4e1f918d8e6d "treewide: remove folio_set/clear_private() usage (10/16)"
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-11-848550f7574e@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

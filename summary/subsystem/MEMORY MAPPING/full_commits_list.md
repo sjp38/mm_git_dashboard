@@ -17,7 +17,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - d5d0b5ac35b0 "mm/rmap: fix missing barrier between anon_vma init and vma->anon_vma publish"
+    - 58430a09219e "mm/rmap: fix missing barrier between anon_vma init and vma->anon_vma publish"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908122924.554373-1-tujinjiang@huawei.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -29,39 +29,39 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - 608c51c93d44 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - 20f8755eed0e "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - cbd2c88ef290 "mm: make per-VMA locks available universally" (0/7)
+      - 612debdb54b0 "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
     - series "mm: make MAP_PRIVATE-/dev/zero mappings truly anonymous", v2. (6 commits)
-      - 27bfcc1fd9d4 "mm: move drivers/char/mem.c to mm/char-mem.c" (0/6)
+      - 6a2509521d2b "mm: move drivers/char/mem.c to mm/char-mem.c" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org
-      - 17ee3f8d5aba "mm: implement file_is_dev_zero() to uniquely identify /dev/zero" (1/6)
+      - 11afc077ea3e "mm: implement file_is_dev_zero() to uniquely identify /dev/zero" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org
-      - 17f50598beb4 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous" (2/6)
+      - fd5a3ba0ed33 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org
-      - a70220fb371b "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
+      - 7953086cb35e "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org
-      - 7ea21ed6040e "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon" (4/6)
+      - 96d19d422dd1 "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-5-acc7b5625305@kernel.org
-      - 31c22b8f6e94 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests" (5/6)
+      - 355145b1b6dd "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org
-    - 916e1d2eec80 "mm/nommu: reject wrapping ranges in access_remote_vm()"
+    - 5263ad7fc541 "mm/nommu: reject wrapping ranges in access_remote_vm()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260909064231.18693-1-tasos.papagiannnis@gmail.com
-    - c3258a756535 "tools/testing/vma: cover hole filling through __mmap_region()"
+    - 1f76e8cdb520 "tools/testing/vma: cover hole filling through __mmap_region()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/178886112560.138404.17741948638665342936.vma-v2@tychen.cc
 - mm-new: 6 total, 1 (6) series, 0 non-series commits
@@ -69,23 +69,23 @@
     - no role, no role : 6 commits
   - full commits list
     - series "read proc/pid/smaps_rollup under per-vma lock", v4. (7 commits)
-      - d1f10378e7fa "proc/task_mmu: remove unnecessary helpers" (0/7)
+      - 671a565374dd "proc/task_mmu: remove unnecessary helpers" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911194145.1781926-1-surenb@google.com
         - Link: https://lore.kernel.org/20260911194145.1781926-2-surenb@google.com
-      - 2a61a4b80dc0 "proc/task_mmu: remove unnecessary inlines in function definitions" (1/7)
+      - 7edb437cbbfc "proc/task_mmu: remove unnecessary inlines in function definitions" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911194145.1781926-3-surenb@google.com
-      - c254af1c8067 "proc/task_mmu: clarify shmem mapping walk conditions in smap_gather_stats()" (2/7)
+      - 2c50fbc86a6c "proc/task_mmu: clarify shmem mapping walk conditions in smap_gather_stats()" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911194145.1781926-4-surenb@google.com
-      - 143ffc016ffd "proc/task_mmu: remove special-casing of smap_gather_stats() start parameter" (3/7)
+      - be62a6c85892 "proc/task_mmu: remove special-casing of smap_gather_stats() start parameter" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911194145.1781926-5-surenb@google.com
-      - 925f8857dfe5 "proc/task_mmu: change proc_get_vma() to stop returning gate VMA at the end" (4/7)
+      - 5ba626e8987e "proc/task_mmu: change proc_get_vma() to stop returning gate VMA at the end" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911194145.1781926-6-surenb@google.com
-      - 69a7a3a45cf3 "proc/task_mmu: read proc/pid/smaps_rollup under per-vma lock" (5/7)
+      - 6c3ffc247d53 "proc/task_mmu: read proc/pid/smaps_rollup under per-vma lock" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911194145.1781926-7-surenb@google.com
         - Link: https://github.com/paulmckrcu/proc-mmap_sem-test [1]
