@@ -9,42 +9,56 @@
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 3 commits
   - full commits list
-    - 8869d9fc3f4b "mm/mempolicy: take a cpuset cookie for the interleave node count"
+    - 4d669e0cb68f "mm/mempolicy: take a cpuset cookie for the interleave node count"
       - Authored by a reviewer, reviewed by no role player
       - Link: https://lore.kernel.org/20260828193111.1023497-1-gourry@gourry.net
       - Link: https://lore.kernel.org/all/20250907160829.91628-1-chelsyratnawat2001@gmail.com/
     - series "mm/mempolicy: stop copying state in the interleave paths". (2 commits)
-      - 61ef1a998130 "mm/mempolicy: use SRCU for the weighted interleave state" (0/2)
+      - 60390a5af54f "mm/mempolicy: use SRCU for the weighted interleave state" (0/2)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260829015943.1258774-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260829015943.1258774-2-gourry@gourry.net
-      - b8a3b79bc4bc "mm/mempolicy: stop copying the nodemask in the interleave paths" (1/2)
+      - 3d5d3e6d0584 "mm/mempolicy: stop copying the nodemask in the interleave paths" (1/2)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260829015943.1258774-3-gourry@gourry.net
-      - 16a13e7c35e3 "mm/mempolicy: skip zone device folios when queueing folios" (2/3)
+      - 2440d30d0978 "mm/mempolicy: skip zone device folios when queueing folios" (2/3)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-4-gourry@gourry.net
-    - ab979d295cac "mm/migrate_device: fix function name in kernel-doc"
+    - 5c1e80a6d6ec "mm/migrate_device: fix function name in kernel-doc"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/13768B0F4A5FC1F5+20260902031229.1821112-1-zhaozhengzhuo@uniontech.com
-      - 8d6d88252621 "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
+      - aa3db5bbff02 "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-3-9aacbd77d4ca@tencent.com
     - series "mm: stop calling pmd_folio() on special PMDs", v2. (2 commits)
-      - 93c24ee6b424 "mm/mempolicy: use vm_normal_folio_pmd() in queue_folios_pmd()" (0/2)
+      - 82427ab82e25 "mm/mempolicy: use vm_normal_folio_pmd() in queue_folios_pmd()" (0/2)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260912034833.2952750-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260912034833.2952750-2-gourry@gourry.net
-- mm-new: 2 total, 0 (2) series, 0 non-series commits
+- mm-new: 6 total, 0 (6) series, 0 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, maintainer: 2 commits
     - reviewer, nobody: 1 commits
     - reviewer, no role : 1 commits
   - full commits list
-      - bc954d686b89 "mm/page-flags: check page/folio->private instead of PG_private" (9/16)
+      - 0485d0253b28 "mm/page-flags: check page/folio->private instead of PG_private" (9/16)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
-      - 4e1f918d8e6d "treewide: remove folio_set/clear_private() usage" (10/16)
+      - 6e106b354c3a "treewide: remove folio_set/clear_private() usage" (10/16)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-11-848550f7574e@nvidia.com
+      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/40)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+      - 874ca6bf8061 "mm: drop some redundant checks around hugetlb VMAs" (28/40)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-29-7d9781ed5361@kernel.org
+      - 33ccdcca7c66 "mm: avoid use of VMA_SPECIAL_FLAGS in migrate_vma_setup()" (35/40)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-36-7d9781ed5361@kernel.org
+      - 052753eacc8c "mm/vma: introduce and use vma[_flags]_can_gup()" (39/40)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-40-7d9781ed5361@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

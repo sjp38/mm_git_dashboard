@@ -6,21 +6,21 @@
   - author/reviewer role stat
     - no role, nobody: 5 commits
   - full commits list
-      - 92fd845d404b "mm/execmem: use VM_FLUSH_RESET_PERMS for ROX cache allocations" (4/6)
+      - 8d38d11d182a "mm/execmem: use VM_FLUSH_RESET_PERMS for ROX cache allocations" (4/6)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-5-949b64a9f755@kernel.org
     - series "mm/execmem: fixes and cleanups for the ROX cache". (5 commits)
-      - 6c1372f2d2d8 "mm/execmem: free ROX cache chunks only when they span an entire vm area" (0/5)
+      - 6b9b3187bad2 "mm/execmem: free ROX cache chunks only when they span an entire vm area" (0/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-0-11beb2a3d249@kernel.org
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-1-11beb2a3d249@kernel.org
-      - 501649076a26 "mm/execmem: handle potential allocation errors in the maple tree" (1/5)
+      - 7fde604c99d2 "mm/execmem: handle potential allocation errors in the maple tree" (1/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-2-11beb2a3d249@kernel.org
-      - d45e92603705 "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE" (2/5)
+      - a4a279bab69d "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE" (2/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-3-11beb2a3d249@kernel.org
-      - 16b8580285eb "mm/execmem: use cleanup infrastructure in ROX cache functions" (4/5)
+      - 30bd37b94642 "mm/execmem: use cleanup infrastructure in ROX cache functions" (4/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-5-11beb2a3d249@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

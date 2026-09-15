@@ -6,28 +6,39 @@
   - author/reviewer role stat
     - no role, no role : 4 commits
   - full commits list
-    - 9d39ea2d7886 "mm/gup_test: report actual pinned bytes"
+    - 9800dbe2034a "mm/gup_test: report actual pinned bytes"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260831101304.162867-1-sarthak.sharma@arm.com
     - series "mm: gup: cleanup gup_fast call chain", v3. (2 commits)
-      - 6972b3ce822c "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
+      - fbf629130bee "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828015542.125576330@ruivo.org
         - Link: https://lore.kernel.org/20260828015542.245315718@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u [1]
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - e5d653a7fe0b "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
+      - f31567b3ff5d "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828015542.334186653@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - 8f954f64cc6e "mm: make userland page table freeing RCU-safe" (10/12)
+      - bbe2528f212e "mm: make userland page table freeing RCU-safe" (10/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-11-1f60b64e878e@kernel.org
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 4 total, 0 (3) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 2 commits
     - no role, no role : 1 commits
+    - no role, maintainer: 1 commits
   - full commits list
-    - 1f931fcb0c08 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
+      - b75c4a39d224 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs" (20/40)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-21-7d9781ed5361@kernel.org
+      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/40)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+      - 052753eacc8c "mm/vma: introduce and use vma[_flags]_can_gup()" (39/40)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-40-7d9781ed5361@kernel.org
+    - dbc5a6661dae "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

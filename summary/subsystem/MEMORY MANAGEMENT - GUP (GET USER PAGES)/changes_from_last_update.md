@@ -8,9 +8,22 @@
 - mm-unstable: 4 -> 4 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 4 -> 4 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-new: 1 -> 4 commits
+  - series: 0 (0) -> 0 (3)
+    - no role, nobody: 0 -> 2 commits
     - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
+      - b75c4a39d224 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs (20/40)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-21-7d9781ed5361@kernel.org
+      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+      - 052753eacc8c "mm/vma: introduce and use vma[_flags]_can_gup() (39/40)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-40-7d9781ed5361@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

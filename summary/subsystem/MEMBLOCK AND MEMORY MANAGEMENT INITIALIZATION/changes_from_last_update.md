@@ -5,24 +5,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 10 commits
-  - series: 1 (8) -> 1 (10)
+- mm-unstable: 10 -> 10 commits (no change)
+  - series: 1 (10) -> 1 (10) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 5 -> 7 commits
+    - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v3. (11)
-      - 1b956eb0d93b "mm/sparse-vmemmap: set compound page order for device DAX (4/11)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260911050228.58884-6-songmuchun@bytedance.com
-      - c73341d3ff18 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (8/11)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260911050228.58884-10-songmuchun@bytedance.com
-- mm-new: 2 -> 0 commits
-  - series: 0 (2) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
+- mm-new: 0 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 8b2392b822b2 "mm: remove unused exact_nid parameter from memmap_alloc()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260914055130.44543-1-kaitao.cheng@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

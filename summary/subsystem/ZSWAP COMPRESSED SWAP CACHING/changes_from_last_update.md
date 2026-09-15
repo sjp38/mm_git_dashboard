@@ -6,17 +6,18 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 17 -> 17 commits (no change)
+- mm-unstable: 17 -> 18 commits
   - series: 5 (13) -> 5 (13) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 14 -> 14 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 926e8dd6c5a2 "mm: zswap: return -ENOENT when the swap device is gone"
+    - no role, maintainer: 14 -> 15 commits
+  - changed commits
+    - 4ba82e80e904 "mm: zswap: return -ENOENT when the swap device is gone"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260913063031.1689420-1-hebaoquan@kylinos.cn
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

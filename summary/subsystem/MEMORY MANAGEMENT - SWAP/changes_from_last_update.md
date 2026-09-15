@@ -6,32 +6,38 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 20 -> 21 commits
+- mm-unstable: 21 -> 21 commits (no change)
   - series: 6 (18) -> 6 (18) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 8 -> 8 commits (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 8 -> 9 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
-  - new commits
+  - changed commits
     - series "mm: remove page_swap_entry()", v2. (8)
-      - 3399043c22c5 "mm-swap-add-folio_swap_entry-and-folio_page_swap_entry-fix (1/8)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260913-folio_swap_entry-doc-fix-1@columbia.edu
-    - series "mm, swap: some random fixes and cleanups", v3. (4)
-      - a55993b7935f "mm, swap: move setup_swap_clusters_info() after SWP_SOLIDSTATE initialization (1/4)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260907091356.53026-3-shikemeng@huaweicloud.com
-  - dropped commits
-    - series "mm, swap: some random fixes and cleanups", v3. (4)
-      - d0ba63617354 "mm, swap: Move setup_swap_clusters_info() after SWP_SOLIDSTATE initialization (1/4)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260907091356.53026-3-shikemeng@huaweicloud.com
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+      - 36cf6ac782eb "mm/swap: add folio_swap_entry() and folio_page_swap_entry() (0/8)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-0-ee6d01dfa5e1@columbia.edu
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-1-ee6d01dfa5e1@columbia.edu
+- mm-new: 1 -> 3 commits
+  - series: 0 (0) -> 1 (2)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm/huge_memory: clean up and decouple the anon and file split helpers", v5. (17)
+      - 61b5e7a71007 "mm/swap: fix off-by-one in swap cache replace sanity check (0/17)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-0-39878b37dfb0@tencent.com
+        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-1-39878b37dfb0@tencent.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
+      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

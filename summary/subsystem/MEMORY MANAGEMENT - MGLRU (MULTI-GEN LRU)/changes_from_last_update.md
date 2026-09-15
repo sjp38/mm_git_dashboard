@@ -5,40 +5,47 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 33 -> 36 commits
-  - series: 4 (27) -> 5 (30)
+- mm-unstable: 36 -> 36 commits (no change)
+  - series: 5 (30) -> 5 (30) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 19 -> 22 commits
+    - no role, reviewer: 22 -> 22 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 7 -> 7 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
+    - 465738c4b982 "mm: mglru: clear the reference counter for rejected folios"
+      - Authored by a reviewer, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/7384df363c12e4acdaa2e0428420cd8eed320ee7.1789384831.git.baolin.wang@linux.alibaba.com"
+      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+      - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+      - dropped "Link: https://lore.kernel.org/9214e36bf738fcfba86acc8cea85dff4010f66b0.1788918714.git.baolin.wang@linux.alibaba.com"
+      - dropped "Cc: Barry Song <baohua@kernel.org>"
+      - dropped "Cc: Kairui Song <kasong@tencent.com>"
+      - Link: https://lore.kernel.org/7384df363c12e4acdaa2e0428420cd8eed320ee7.1789384831.git.baolin.wang@linux.alibaba.com
     - series "mm: Switch device DAX to section-based vmemmap optimization", v3. (11)
-      - d553e82f713d "mm/sparse-vmemmap: introduce CONFIG_SPARSEMEM_VMEMMAP_OPTIMIZATION (0/11)"
+      - c12cc3631f25 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260911050228.58884-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260911050228.58884-2-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - 83c71ba4895f "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
+        - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
         - Link: https://lore.kernel.org/20260911050228.58884-3-songmuchun@bytedance.com
-      - f3e36f4e8963 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (5/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260911050228.58884-7-songmuchun@bytedance.com
-- mm-new: 3 -> 1 commits
-  - series: 1 (3) -> 0 (1)
-    - no role, reviewer: 3 -> 0 commits
-    - reviewer, nobody: 0 -> 1 commits
+- mm-new: 1 -> 4 commits
+  - series: 0 (1) -> 0 (4)
+    - no role, nobody: 0 -> 2 commits
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
   - new commits
-    - series "Remove PG_private by using page/folio->private", v4. (16)
-      - bc954d686b89 "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
+      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+      - e0ac986194ee "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (33/40)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-34-7d9781ed5361@kernel.org
+      - 58d2fff8cfd7 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around() (34/40)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-35-7d9781ed5361@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

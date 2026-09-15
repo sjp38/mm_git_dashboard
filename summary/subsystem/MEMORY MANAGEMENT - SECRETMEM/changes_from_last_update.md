@@ -8,8 +8,13 @@
 - mm-unstable: 1 -> 1 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 23197ccaddd0 "mm/secretmem: fix the enable parameter description"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260912114859.88957-1-kmehltretter@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

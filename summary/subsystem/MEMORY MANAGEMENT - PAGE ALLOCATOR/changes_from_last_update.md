@@ -6,19 +6,34 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 9 -> 9 commits (no change)
-  - series: 2 (5) -> 2 (5) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 7 -> 7 commits (no change)
+- mm-unstable: 9 -> 12 commits
+  - series: 2 (5) -> 3 (7)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 1 -> 2 commits
+    - no role, reviewer: 7 -> 8 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 3 commits
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 1 -> 1 commits (no change)
-  - new commits
-    - afd44a6aa48e "mm/page_alloc: apply per-task GFP context in bulk allocator"
+  - changed commits
+    - series "mm: refactor zonelist constructors and iterators", v2. (2)
+      - 6871cbc512d6 "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net
+      - 27c28bdad6ac "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists() (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - dropped "Cc: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260912030424.2889731-3-gourry@gourry.net
+    - 700115e44912 "mm/page_alloc: apply per-task GFP context in bulk allocator"
       - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260914024555.138125-1-liuqiqi@kylinos.cn
+- mm-new: 3 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
