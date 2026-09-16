@@ -6,111 +6,57 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 48 -> 49 commits
-  - series: 8 (42) -> 9 (43)
-    - no role, no role : 34 -> 34 commits (no change)
-    - no role, reviewer: 8 -> 9 commits
+- mm-unstable: 49 -> 51 commits
+  - series: 9 (43) -> 9 (45)
+    - no role, no role : 34 -> 35 commits
+    - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, nobody: 0 -> 1 commits
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v3. (11)
-      - c12cc3631f25 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260911050228.58884-3-songmuchun@bytedance.com
-      - 13ba80d86443 "mm/sparse-vmemmap: open-code init_compound_tail() (2/11)"
+    - series "mm: make userland page table freeing RCU-safe", v3. (12)
+      - cda42c646b03 "mm: make userland page table freeing RCU-safe (10/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260911050228.58884-4-songmuchun@bytedance.com
-      - 63a099b990a8 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (6/11)"
+        - added "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-11-7b8c86103821@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-11-1f60b64e878e@kernel.org"
+        - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-11-7b8c86103821@kernel.org
+      - 5e68887103e2 "mm: change the contract for free_pgtables(), update docs (11/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260911050228.58884-8-songmuchun@bytedance.com
+        - added "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org"
+        - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org
     - series "mm: refactor zonelist constructors and iterators", v2. (2)
-      - 6871cbc512d6 "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
+      - 096489127044 "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - added "Reviewed-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
         - Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net
-- mm-new: 3 -> 20 commits
-  - series: 1 (3) -> 1 (19)
-    - no role, nobody: 1 -> 16 commits
-    - no role, no role : 1 -> 2 commits
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
-      - c77f45cd3692 "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get (0/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-0-7d9781ed5361@kernel.org
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-1-7d9781ed5361@kernel.org
-      - 62de377f2483 "mm/vma: introduce and use vma_[flags_]can_merge() (2/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-3-7d9781ed5361@kernel.org
-      - 7027cbcca16a "mm: consistently validate VMA state after mmap[_prepare] hooks (3/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-4-7d9781ed5361@kernel.org
-      - 43b5117fda0b "mm: make map_kernel_pages_[prepare,complete] internal and unexported (5/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-6-7d9781ed5361@kernel.org
-      - f6459da1ba19 "mm/vma: tidy up map kernel pages enum values (6/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-7-7d9781ed5361@kernel.org
-      - bc08f4ac3618 "mm: add mmap action for discontiguous kernel page mapping (7/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-8-7d9781ed5361@kernel.org
-      - 07f8afa29f11 "mm/vma: add vma[_flags]_is_kernel_owned() predicates (14/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-15-7d9781ed5361@kernel.org
-      - 8039a228dbe6 "mm/vma: add and use vma_[flags]_is_fixed_mapping (16/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-17-7d9781ed5361@kernel.org
-      - 982b7a111440 "mm/mlock: clear VMA_LOCKED_MASK over mmap callback (22/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-23-7d9781ed5361@kernel.org
-      - 153dc40a2d62 "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (23/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-24-7d9781ed5361@kernel.org
-      - 91812829fb08 "mm: remove VMA_IO_BIT check in vma[_flags]_is_kernel_owned() (25/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-26-7d9781ed5361@kernel.org
-      - ada9440a1c3d "mm: remove hugetlb_inline.h (26/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-27-7d9781ed5361@kernel.org
-      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
-      - 460454bd84a7 "mm/vma: introduce vma[_flags]_is_persistent() (30/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-31-7d9781ed5361@kernel.org
-      - e0ac986194ee "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (33/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-34-7d9781ed5361@kernel.org
-      - da71f0d2ab3a "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS (36/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-37-7d9781ed5361@kernel.org
-      - 052753eacc8c "mm/vma: introduce and use vma[_flags]_can_gup() (39/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-40-7d9781ed5361@kernel.org
+    - series "Remove PG_private by using page/folio->private", v4. (16)
+      - ff548e5cbc4b "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
+      - feb316983f5d "treewide: remove PagePrivate() and PG_private from comments and docs (14/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-15-848550f7574e@nvidia.com
+- mm-new: 20 -> 17 commits
+  - series: 1 (19) -> 1 (17)
+    - no role, nobody: 16 -> 16 commits (no change)
+    - no role, no role : 2 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
+  - dropped commits
     - 8b2392b822b2 "mm: remove unused exact_nid parameter from memmap_alloc()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260914055130.44543-1-kaitao.cheng@linux.dev
-  - changed commits
-    - series "Remove PG_private by using page/folio->private", v4. (16)
-      - 45c86ba2607d "treewide: remove PagePrivate() and PG_private from comments and docs (14/16)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: Andrew Morton <akpm@linux-foundation.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-15-848550f7574e@nvidia.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 1 -> 1 commits (no change)
+- mm-nonmm-unstable: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
+  - new commits
+    - 147adc88f285 "fork: reset pointer tag of vmapped thread stack before vfree"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260914093300.100495-1-huangshaobo3@xiaomi.com

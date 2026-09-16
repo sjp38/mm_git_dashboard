@@ -6,43 +6,46 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 43 -> 45 commits
-  - series: 7 (28) -> 8 (29)
+- mm-unstable: 45 -> 46 commits
+  - series: 8 (29) -> 8 (29) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 19 -> 20 commits
-    - no role, reviewer: 5 -> 6 commits
+    - no role, no role : 20 -> 20 commits (no change)
+    - no role, reviewer: 6 -> 7 commits
     - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, nobody: 7 -> 7 commits (no change)
   - changed commits
+    - series "mm: make userland page table freeing RCU-safe", v3. (12)
+      - 5e68887103e2 "mm: change the contract for free_pgtables(), update docs (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org"
+        - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org
     - series "mm: refactor zonelist constructors and iterators", v2. (2)
-      - 6871cbc512d6 "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
+      - 096489127044 "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - added "Reviewed-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
         - Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net
-    - db36c524ddb0 "kselftest: mm: remove exclusion of building soft-dirty test in arm64"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260911210611.4001419-1-yeoreum.yun@arm.com
-- mm-new: 3 -> 4 commits
-  - series: 1 (1) -> 0 (2)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 0 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 2 commits
-  - new commits
-    - 1a6c4386e6c7 "selftests/mm: hugetlb_madv_vs_map: add underflow test"
+    - 0820e2e85e8a "selftests/mm: hugetlb_madv_vs_map: add underflow test"
       - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
       - Link: https://lore.kernel.org/aqgUdbtumaO8RiIb@bender.morinfr.org
-    - series "mm/damon: misc improvements in tests and documents". (6)
-      - 44f7188dcdff "Docs/mm/damon/design: clarify when qt_exceeds increases (4/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260914141952.91465-6-sj@kernel.org
-      - 056803fa68fb "Docs/mm/damon/design: fix typos in temporal auto-tuning algorithm section (5/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260914141952.91465-7-sj@kernel.org
+- mm-new: 4 -> 6 commits
+  - series: 0 (2) -> 0 (5)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - maintainer, nobody: 0 -> 3 commits
+  - new commits
+    - series "mm/damon: introduce hugepage_size probe filter". (8)
+      - 992657281e20 "Docs/mm/damon/design: update for hugepage_size probe filter (5/8)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260915143359.91472-7-sj@kernel.org
+      - 3a0921f53062 "Docs/admin-guide/mm/damon/usage: update for hugepage_size (6/8)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260915143359.91472-8-sj@kernel.org
+      - 81c69fbb4128 "docs-admin-guide-mm-damon-usage-update-for-hugepage_size-fix (7/8)"
+        - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -7,7 +7,7 @@
     - no role, no role : 1 commits
   - full commits list
     - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v3. (6 commits)
-      - 45b40456cae4 "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
+      - abe602ce10a8 "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-0-949b64a9f755@kernel.org
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-1-949b64a9f755@kernel.org
@@ -16,7 +16,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 23197ccaddd0 "mm/secretmem: fix the enable parameter description"
+    - 949e0a15597a "mm/secretmem: fix the enable parameter description"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260912114859.88957-1-kmehltretter@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

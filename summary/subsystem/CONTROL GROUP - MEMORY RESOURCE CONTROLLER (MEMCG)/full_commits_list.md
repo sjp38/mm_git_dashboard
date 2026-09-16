@@ -16,114 +16,114 @@
     - maintainer, nobody: 6 commits
     - maintainer, no role : 8 commits
   - full commits list
-    - 7d3218330d1d "mm/memcontrol: fix data-race on reading jiffies_64"
+    - 98b92e094ad5 "mm/memcontrol: fix data-race on reading jiffies_64"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260827025457.116191-1-jiayuan.chen@linux.dev
-    - 6f68fbf78a1c "mm/memcontrol: remove unused memcg parameter in calculate_high_delay()"
+    - a5e6ba1ad7d1 "mm/memcontrol: remove unused memcg parameter in calculate_high_delay()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260825120153.1405-1-hongfu.li@linux.dev
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
-      - 6e41078e21c8 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
+      - d3f3a5cc85da "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - 1ca5bb15626f "mm/memcontrol: fix stuck FLUSHING_CACHED_CHARGE bit on isolated cpus"
+    - 422d8f12c09c "mm/memcontrol: fix stuck FLUSHING_CACHED_CHARGE bit on isolated cpus"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260828135036.7d44361f@fangorn
-    - 5591fbb191e9 "memcg: clear FLUSHING_CACHED_CHARGE on cpu offline"
+    - 3e2f847821dd "memcg: clear FLUSHING_CACHED_CHARGE on cpu offline"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260828192419.3057939-1-shakeel.butt@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260828135036.7d44361f%40fangorn [1]
-    - b24789644b0e "memcg: trim the per-cpu charge stock instead of draining it"
+    - 1e3e888ac224 "memcg: trim the per-cpu charge stock instead of draining it"
       - Authored by a maintainer, reviewed by no role player
       - Link: https://lore.kernel.org/20260820012010.2016086-1-shakeel.butt@linux.dev
     - series "memcg: remove the v1 soft limit", v2. (8 commits)
-      - 4339e22ea6a7 "memcg: remove v1 soft limit reclaim" (0/8)
+      - 604b40dc9a7b "memcg: remove v1 soft limit reclaim" (0/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev
-      - 5fddcbbf3fdb "memcg: remove the soft limit rbtree" (3/8)
+      - 2d426a443d89 "memcg: remove the soft limit rbtree" (3/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-5-shakeel.butt@linux.dev
-      - c9b8b014a038 "memcg: remove the per-node soft limit tree fields" (5/8)
+      - 76bed0c387d5 "memcg: remove the per-node soft limit tree fields" (5/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-7-shakeel.butt@linux.dev
-      - 850a2653b292 "memcg: remove mem_cgroup->soft_limit" (6/8)
+      - 7b267d147c80 "memcg: remove mem_cgroup->soft_limit" (6/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-8-shakeel.butt@linux.dev
-      - f6e315dc6b82 "memcg: simplify v1 event ratelimiting" (7/8)
+      - 5e3e61dcf4ec "memcg: simplify v1 event ratelimiting" (7/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-9-shakeel.butt@linux.dev
     - series "mm, memcg: fix memory.peak reset clobbering other fds' watermark", v4. (2 commits)
-      - e45bdb408450 "memcg: acquire peaks_lock when reading memory.peak" (0/2)
+      - bde74f73e53e "memcg: acquire peaks_lock when reading memory.peak" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260830002044.1938621-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260830002044.1938621-2-ridong.chen@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260730115314.1069089-1-ridong.chen@linux.dev?part=1 [1]
-      - 6a3512dbbf67 "mm, memcg: fix memory.peak reset clobbering other fds' watermark" (1/2)
+      - 59072dc78855 "mm, memcg: fix memory.peak reset clobbering other fds' watermark" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260830002044.1938621-3-ridong.chen@linux.dev
-      - 55d4582c8817 "mm: memcontrol: raise MEMCG_MAX for charges that fail without reclaiming" (5/7)
+      - 49afd36c153c "mm: memcontrol: raise MEMCG_MAX for charges that fail without reclaiming" (5/7)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260831174836.3102406-1-joe@dama.to
     - series "mm: avoid large folio splits when swap is unavailable", v7. (4 commits)
-      - 72483c62830f "mm: add page_counter_margin()" (0/4)
+      - e4f171f1c69e "mm: add page_counter_margin()" (0/4)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260830042920.2280454-1-xueyuan.chen21@gmail.com
         - Link: https://lore.kernel.org/20260830042920.2280454-2-xueyuan.chen21@gmail.com
-      - 9e99c63a9014 "mm: distinguish large folio swap allocation failures" (1/4)
+      - 61a0900cdf69 "mm: distinguish large folio swap allocation failures" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260830042920.2280454-3-xueyuan.chen21@gmail.com
-    - c5767e52282c "mm/hugetlb: charge folios to the target mm's memcg"
+    - adbcadd85e44 "mm/hugetlb: charge folios to the target mm's memcg"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
     - series "mm/mglru: clean up folio counters and flag usage", v6. (6 commits)
-      - 1f17bd052465 "mm/memcontrol: move the lru_zone_size sanity check to the reader side" (0/6)
+      - 38c5234e1a39 "mm/memcontrol: move the lru_zone_size sanity check to the reader side" (0/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-0-9aacbd77d4ca@tencent.com
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-1-9aacbd77d4ca@tencent.com
         - Link: https://lore.kernel.org/linux-mm/20260804-mglru-fg-v1-0-4d8dad39dad6@tencent.com/ [1]
     - series "memcg: group struct fields by access pattern". (6 commits)
-      - 8829ced8e906 "memcg: move per-node objcg to the read-mostly fields" (0/6)
+      - 966e79e14ab6 "memcg: move per-node objcg to the read-mostly fields" (0/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260905030522.1887837-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260905030522.1887837-2-shakeel.butt@linux.dev
-      - 6ccc3962dbdf "memcg: split mem_cgroup_private_id into two fields" (1/6)
+      - 13b1195cd82c "memcg: split mem_cgroup_private_id into two fields" (1/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260905030522.1887837-3-shakeel.butt@linux.dev
-      - e1eb6bb839e8 "memcg: group the write-hot fields of struct mem_cgroup" (2/6)
+      - 5565dd644d0d "memcg: group the write-hot fields of struct mem_cgroup" (2/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260905030522.1887837-4-shakeel.butt@linux.dev
-      - a3c351f196ed "memcg: group the cold fields of struct mem_cgroup" (3/6)
+      - c7119a831462 "memcg: group the cold fields of struct mem_cgroup" (3/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260905030522.1887837-5-shakeel.butt@linux.dev
-      - dd0460b4f045 "memcg: group the read-mostly fields of struct mem_cgroup" (4/6)
+      - a48b991784f9 "memcg: group the read-mostly fields of struct mem_cgroup" (4/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260905030522.1887837-6-shakeel.butt@linux.dev
-      - 77d2b8d8bf93 "memcg: group the fields of struct mem_cgroup_per_node" (5/6)
+      - b820a0939d89 "memcg: group the fields of struct mem_cgroup_per_node" (5/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260905030522.1887837-7-shakeel.butt@linux.dev
-    - c29160c1de0a "memcg: don't call schedule_work when no spinning is allowed"
+    - 811238a2a08c "memcg: don't call schedule_work when no spinning is allowed"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260904173145.2028377-1-stevensd@google.com
-    - c4b78f43f014 "mm/memcontrol: skip non-hierarchical memcg-wide stats when v1 is unavailable"
+    - 75b8b21f3430 "mm/memcontrol: skip non-hierarchical memcg-wide stats when v1 is unavailable"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260903215616.1456239-1-joannelkoong@gmail.com
     - series "mm: workingset: fix the shadow node budget under MGLRU", v3. (3 commits)
-      - 2a06c4fe2a85 "mm: memcg: redirect stats updates of dying memcgs for all hierarchies" (0/3)
+      - 944d93490da7 "mm: memcg: redirect stats updates of dying memcgs for all hierarchies" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1788514750.git.zhuhui@kylinos.cn
         - Link: https://lore.kernel.org/8a3fe5e6a076cdd9ac997125cb6c6a0948e1a6b6.1788514750.git.zhuhui@kylinos.cn
-      - bb36c0508a77 "mm: memcg: skip the RCU lock when the memcg is not dying" (2/3)
+      - b51309213d3a "mm: memcg: skip the RCU lock when the memcg is not dying" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/0db657472c5278b2e2b87fbca7590b47ca520303.1788514750.git.zhuhui@kylinos.cn
     - series "mm/mglru: fix ineffective memory protection for non-kswapd reclaim", v4. (2 commits)
-      - 6bc3aa37e5a3 "mm/page_counter: avoid integer overflow in effective_protection()" (0/2)
+      - 50a131fd720e "mm/page_counter: avoid integer overflow in effective_protection()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260907025445.1836238-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260907025445.1836238-2-ridong.chen@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260826133054.88529-1-ridong.chen@linux.dev?part=1 [1]
-      - bd37c9ffc82c "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
+      - 48b3df92eb07 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

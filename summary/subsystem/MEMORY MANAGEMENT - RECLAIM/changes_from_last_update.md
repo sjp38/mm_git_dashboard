@@ -5,40 +5,30 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 26 -> 26 commits (no change)
-  - series: 3 (20) -> 3 (20) (no change)
+- mm-unstable: 26 -> 27 commits
+  - series: 3 (20) -> 3 (21)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 15 -> 15 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
+    - reviewer, nobody: 0 -> 1 commits
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - 465738c4b982 "mm: mglru: clear the reference counter for rejected folios"
-      - Authored by a reviewer, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/7384df363c12e4acdaa2e0428420cd8eed320ee7.1789384831.git.baolin.wang@linux.alibaba.com"
-      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-      - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-      - dropped "Link: https://lore.kernel.org/9214e36bf738fcfba86acc8cea85dff4010f66b0.1788918714.git.baolin.wang@linux.alibaba.com"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Kairui Song <kasong@tencent.com>"
-      - Link: https://lore.kernel.org/7384df363c12e4acdaa2e0428420cd8eed320ee7.1789384831.git.baolin.wang@linux.alibaba.com
-- mm-new: 1 -> 4 commits
-  - series: 0 (1) -> 0 (4)
-    - no role, nobody: 0 -> 2 commits
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, nobody: 1 -> 1 commits (no change)
+    - series "Remove PG_private by using page/folio->private", v4. (16)
+      - ff548e5cbc4b "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
+- mm-new: 4 -> 4 commits (no change)
+  - series: 0 (4) -> 0 (3)
+    - no role, nobody: 2 -> 3 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
   - new commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
-      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
-      - e0ac986194ee "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (33/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-34-7d9781ed5361@kernel.org
-      - 58d2fff8cfd7 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around() (34/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-35-7d9781ed5361@kernel.org
+    - 83c3e9b49e2e "mm/mglru: restore accidentally removed seq < max_seq check"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260915101556.50467-1-baohua@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -8,45 +8,39 @@
     - no role, no role : 7 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 87d8e119ce4e "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+      - dacbd5df20d9 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com
-      - fd5654021deb "mm/mm_init: factor out pfn_to_zone()" (5/17)
+      - e866479923ec "mm/mm_init: factor out pfn_to_zone()" (5/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-7-songmuchun@bytedance.com
-      - e82d4da2cee7 "mm/sparse: initialize memory sections earlier" (8/17)
+      - c59f2cd0f79a "mm/sparse: initialize memory sections earlier" (8/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-10-songmuchun@bytedance.com
     - series "mm: optimize zone-device memmap initialization", v11. (7 commits)
-      - 2fcf62702548 "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
+      - 540a36c6e138 "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-1-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/20260831111638.76012-2-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/all/aiEoByaQdRR3xtM5@nvdebian.thelocal/ [1]
-      - f5bb31698176 "mm: add a template-based fast path for zone-device page init" (2/7)
+      - a2370b340dc1 "mm: add a template-based fast path for zone-device page init" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-4-lizhe.67@bytedance.com
-      - 80bb61756d7a "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
+      - 7fd3bbd7e22d "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903025806.70825-1-lizhe.67@bytedance.com
-      - c1d0d2fa4bbc "mm: extend the template fast path to zone-device compound tails" (4/7)
+      - 87f7888c80a3 "mm: extend the template fast path to zone-device compound tails" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-5-lizhe.67@bytedance.com
-      - 1af3122ac6c4 "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
+      - d57418a81f6a "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831111638.76012-7-lizhe.67@bytedance.com
-      - afce9f6be686 "mm/sparse-vmemmap: set compound page order for device DAX" (4/11)
+      - 05652f6ad0e1 "mm/sparse-vmemmap: set compound page order for device DAX" (4/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911050228.58884-6-songmuchun@bytedance.com
-      - 4394da7d34d6 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (8/11)
+      - 7f5e8df68ae0 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (8/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911050228.58884-10-songmuchun@bytedance.com
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-    - 8b2392b822b2 "mm: remove unused exact_nid parameter from memmap_alloc()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260914055130.44543-1-kaitao.cheng@linux.dev
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

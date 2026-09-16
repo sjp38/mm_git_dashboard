@@ -9,16 +9,16 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - 4903f2e7b199 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - fa9e7965f11f "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - 0a38714e70e5 "mm: make per-VMA locks available universally" (0/7)
+      - 4168eb44b448 "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-      - 416bade99fb1 "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
+      - 0674bd2da2d2 "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com
 - mm-new: 3 total, 0 (3) series, 0 non-series commits
@@ -26,13 +26,13 @@
     - no role, nobody: 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - ada9440a1c3d "mm: remove hugetlb_inline.h" (26/40)
+      - 5371b03c09ef "mm: remove hugetlb_inline.h" (26/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-27-7d9781ed5361@kernel.org
-      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/40)
+      - 407a24cfcad4 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/40)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
-      - 4a43ffae6e75 "mm/uffd: use predicates for userfaultfd checks" (31/40)
+      - b427d15d2ce2 "mm/uffd: use predicates for userfaultfd checks" (31/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-32-7d9781ed5361@kernel.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

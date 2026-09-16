@@ -6,28 +6,35 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-- mm-new: 4 -> 5 commits
-  - series: 0 (4) -> 0 (5)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 2 commits
-    - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
-      - ada9440a1c3d "mm: remove hugetlb_inline.h (26/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-27-7d9781ed5361@kernel.org
+- mm-unstable: 1 -> 5 commits
+  - series: 0 (1) -> 0 (5)
+    - no role, no role : 1 -> 3 commits
+    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, no role : 0 -> 1 commits
   - changed commits
     - series "Remove PG_private by using page/folio->private", v4. (16)
-      - 45c86ba2607d "treewide: remove PagePrivate() and PG_private from comments and docs (14/16)"
+      - 16951aa4e0fc "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private (7/16)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: Andrew Morton <akpm@linux-foundation.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-8-848550f7574e@nvidia.com
+      - ff548e5cbc4b "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
+      - 5758df5e55d6 "treewide: remove folio_set/clear_private() usage (10/16)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-11-848550f7574e@nvidia.com
+      - feb316983f5d "treewide: remove PagePrivate() and PG_private from comments and docs (14/16)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-15-848550f7574e@nvidia.com
+- mm-new: 5 -> 1 commits
+  - series: 0 (5) -> 0 (1)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 0 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

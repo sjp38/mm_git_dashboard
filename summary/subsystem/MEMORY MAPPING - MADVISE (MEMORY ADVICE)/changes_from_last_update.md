@@ -9,27 +9,15 @@
   - series: 0 (3) -> 0 (3) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-- mm-new: 0 -> 5 commits
-  - series: 0 (0) -> 0 (4)
-    - no role, nobody: 0 -> 4 commits
-    - no role, maintainer: 0 -> 1 commits
+- mm-new: 5 -> 6 commits
+  - series: 0 (4) -> 0 (4) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
-      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
-      - f6afff501547 "mm/madvise: update is_valid_guard_vma() to use vma_can_merge() (29/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-30-7d9781ed5361@kernel.org
-      - 460454bd84a7 "mm/vma: introduce vma[_flags]_is_persistent() (30/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-31-7d9781ed5361@kernel.org
-      - 58759f995143 "mm/madvise: use predicates for madvise(..., MADV_DOFORK) (32/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-33-7d9781ed5361@kernel.org
-    - 07559089c0ad "mm/madvise: reclaim isolated folios if PTE restart fails"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260912110832.3203902-1-gourry@gourry.net
+    - be06d526277b "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260912110540.3203010-1-gourry@gourry.net
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

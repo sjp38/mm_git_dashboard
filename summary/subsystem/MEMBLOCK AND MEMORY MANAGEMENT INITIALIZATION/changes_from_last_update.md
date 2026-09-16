@@ -10,10 +10,10 @@
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
     - 8b2392b822b2 "mm: remove unused exact_nid parameter from memmap_alloc()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260914055130.44543-1-kaitao.cheng@linux.dev

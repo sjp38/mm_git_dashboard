@@ -2,102 +2,107 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 2 -> 0 commits
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - reviewer, nobody: 1 -> 0 commits
-  - dropped commits
-    - 1be399d378b7 "khugepaged: hold invalidate_lock across collapse_file() readahead"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260913163644.122133-1-ngocthang2710.1999@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 27 -> 28 commits
-  - series: 6 (21) -> 6 (21) (no change)
-    - no role, nobody: 5 -> 4 commits
+- mm-unstable: 28 -> 45 commits
+  - series: 6 (21) -> 6 (38)
+    - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 16 -> 17 commits
+    - no role, reviewer: 17 -> 33 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 2 commits
   - changed commits
+    - series "mm: make userland page table freeing RCU-safe", v3. (12)
+      - 4bbc7cd098d0 "mm/huge_memory: zap deposited page tables after an RCU grace period (0/12)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-1-7b8c86103821@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-0-1f60b64e878e@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-1-1f60b64e878e@kernel.org"
+        - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-1-7b8c86103821@kernel.org
     - series "mm/collapse: separate a collapse from its callers", v2. (12)
-      - 4d44fa53c916 "mm/collapse: state what a collapse may do in the policy (4/12)"
+      - 6d0e6ac142ad "mm/collapse: work out the orders a VMA allows once per VMA (9/12)"
         - Authored by no role player, reviewed by a reviewer
         - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
         - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260910120238.2529819-6-kirill@shutemov.name
-    - 44edeb66cf05 "mm/huge_memory: fix pgtable withdrawal for huge zero PMDs"
-      - Authored by a reviewer, reviewed by nobody
-      - branch: mm-hotfixes-unstable -> mm-unstable
-      - dropped "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/20260913051942.40889-1-lance.yang@linux.dev
-      - Link: https://lore.kernel.org/linux-mm/cover.1787941780.git.yintirui@gmail.com/ [1]
-- mm-new: 1 -> 20 commits
-  - series: 0 (1) -> 0 (20)
-    - no role, nobody: 0 -> 2 commits
-    - no role, reviewer: 0 -> 16 commits
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, nobody: 1 -> 1 commits (no change)
-  - new commits
+        - Link: https://lore.kernel.org/20260910120238.2529819-11-kirill@shutemov.name
+    - series "Remove PG_private by using page/folio->private", v4. (16)
+      - ff548e5cbc4b "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
     - series "mm/huge_memory: clean up and decouple the anon and file split helpers", v5. (17)
-      - 0fa203004664 "mm/huge_memory: fix rejection of swap cache folios with a mapping (1/17)"
+      - 3e4981c3e63c "mm/huge_memory: fix rejection of swap cache folios with a mapping (1/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-2-39878b37dfb0@tencent.com
-      - a3561df89cd8 "mm/huge_memory: invert folio_ref_freeze() check to reduce indentation (2/17)"
+      - 97e506a553a1 "mm/huge_memory: invert folio_ref_freeze() check to reduce indentation (2/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-3-39878b37dfb0@tencent.com
-      - 9f6240928fab "mm/huge_memory: split the routine for splitting anon and file folio (3/17)"
+      - cda0f4289753 "mm/huge_memory: split the routine for splitting anon and file folio (3/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-4-39878b37dfb0@tencent.com
-      - 1484702303fb "mm/huge_memory: rename __split_unmapped_folio() to __split_frozen_folio() (4/17)"
+      - 81cf1811a982 "mm/huge_memory: rename __split_unmapped_folio() to __split_frozen_folio() (4/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-5-39878b37dfb0@tencent.com
-      - d28526ea827e "mm/huge_memory: consolidate irq and locking for folio split (5/17)"
+      - 68d4f98c637b "mm/huge_memory: consolidate irq and locking for folio split (5/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-6-39878b37dfb0@tencent.com
-      - 1b0b718e8245 "mm/huge_memory: move EOF trimming into the file split helper (6/17)"
+      - 65a36c5399f5 "mm/huge_memory: move EOF trimming into the file split helper (6/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-7-39878b37dfb0@tencent.com
-      - 76d24c75e0c6 "mm/huge_memory: move unmap and remap into the split helpers (7/17)"
+      - edd030417480 "mm/huge_memory: move unmap and remap into the split helpers (7/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-8-39878b37dfb0@tencent.com
-      - 5350c8e0af93 "mm/huge_memory: rename remap_page() to remap_anon_folio() (8/17)"
+      - 333a741131f3 "mm/huge_memory: rename remap_page() to remap_anon_folio() (8/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-9-39878b37dfb0@tencent.com
-      - d47a013a9601 "mm/huge_memory: move the racy refcount check into unmap_folio() (9/17)"
+      - 50b2c19847af "mm/huge_memory: move the racy refcount check into unmap_folio() (9/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-10-39878b37dfb0@tencent.com
-      - 43815333240f "mm/huge_memory: move filemap management into the file split helper (10/17)"
+      - a426df9f2222 "mm/huge_memory: move filemap management into the file split helper (10/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-11-39878b37dfb0@tencent.com
-      - a36b74f398c1 "mm/huge_memory: move anon_vma handling into the anon split helper (11/17)"
+      - 2e0c8e5afa41 "mm/huge_memory: move anon_vma handling into the anon split helper (11/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-12-39878b37dfb0@tencent.com
-      - d5769ef7a564 "mm/huge_memory: move memcg switch into the file split helper (12/17)"
+      - 2006b4b74649 "mm/huge_memory: move memcg switch into the file split helper (12/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-13-39878b37dfb0@tencent.com
-      - b08b930ec790 "mm/huge_memory: drop the unused do_lru argument of the file split helper (13/17)"
+      - 7d1c262185c9 "mm/huge_memory: drop the unused do_lru argument of the file split helper (13/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-14-39878b37dfb0@tencent.com
-      - 306660633115 "mm/huge_memory: clean up after-split folio freeing in __folio_split (14/17)"
+      - c074a98c1b1f "mm/huge_memory: clean up after-split folio freeing in __folio_split (14/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-15-39878b37dfb0@tencent.com
-      - ec801afda22c "mm/huge_memory: count only swap cache refs in anon folio split (15/17)"
+      - e4f4e7120982 "mm/huge_memory: count only swap cache refs in anon folio split (15/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-16-39878b37dfb0@tencent.com
-      - 8479666bad16 "mm/huge_memory: drop the redundant mapping argument of __split_frozen_folio (16/17)"
+      - 0985245b65f9 "mm/huge_memory: drop the redundant mapping argument of __split_frozen_folio (16/17)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-17-39878b37dfb0@tencent.com
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
-      - 8039a228dbe6 "mm/vma: add and use vma_[flags]_is_fixed_mapping (16/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-17-7d9781ed5361@kernel.org
-      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
-      - b7cce4bce468 "mm/huge_memory: remove vma_is_special_huge() (38/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-39-7d9781ed5361@kernel.org
+- mm-new: 20 -> 3 commits
+  - series: 0 (20) -> 0 (3)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, reviewer: 16 -> 0 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

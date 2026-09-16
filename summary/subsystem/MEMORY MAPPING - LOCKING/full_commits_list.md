@@ -8,16 +8,16 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - 0a38714e70e5 "mm: make per-VMA locks available universally" (0/7)
+      - 4168eb44b448 "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-      - 416bade99fb1 "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
+      - 0674bd2da2d2 "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com
-      - 6bdea357207d "mm: change the contract for free_pgtables(), update docs" (11/12)
+      - 5e68887103e2 "mm: change the contract for free_pgtables(), update docs" (11/12)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org
+        - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

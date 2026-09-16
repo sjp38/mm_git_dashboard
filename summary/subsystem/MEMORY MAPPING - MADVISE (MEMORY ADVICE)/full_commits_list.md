@@ -7,37 +7,41 @@
     - no role, nobody: 1 commits
     - no role, no role : 3 commits
   - full commits list
-      - c4221400961d "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
+      - 263bfdacf44d "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-3-gourry@gourry.net
-    - 674885cc973f "mm/madvise: swap in CoW'd MAP_PRIVATE-file mappings on MADV_WILLNEED"
+    - 28ab90bf4d05 "mm/madvise: swap in CoW'd MAP_PRIVATE-file mappings on MADV_WILLNEED"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/aprjOxDy3JCPb2oa@gremlin
-      - 845b3ee3460c "mm/collapse: implement MADV_COLLAPSE in madvise.c" (11/12)
+      - 58a1938f3149 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (11/12)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260910120238.2529819-13-kirill@shutemov.name
-      - ed894226993c "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range" (1/2)
+      - 546133a2ccaf "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260912034833.2952750-3-gourry@gourry.net
-- mm-new: 5 total, 0 (4) series, 1 non-series commits
+- mm-new: 6 total, 0 (4) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 4 commits
+    - no role, no role : 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/40)
+      - 407a24cfcad4 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/40)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
-      - f6afff501547 "mm/madvise: update is_valid_guard_vma() to use vma_can_merge()" (29/40)
+      - 0ce8f3af9e5a "mm/madvise: update is_valid_guard_vma() to use vma_can_merge()" (29/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-30-7d9781ed5361@kernel.org
-      - 460454bd84a7 "mm/vma: introduce vma[_flags]_is_persistent()" (30/40)
+      - 245f0c0f2814 "mm/vma: introduce vma[_flags]_is_persistent()" (30/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-31-7d9781ed5361@kernel.org
-      - 58759f995143 "mm/madvise: use predicates for madvise(..., MADV_DOFORK)" (32/40)
+      - 1861e649670f "mm/madvise: use predicates for madvise(..., MADV_DOFORK)" (32/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-33-7d9781ed5361@kernel.org
-    - 07559089c0ad "mm/madvise: reclaim isolated folios if PTE restart fails"
+    - 3310e4b7a5be "mm/madvise: reclaim isolated folios if PTE restart fails"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260912110832.3203902-1-gourry@gourry.net
+    - be06d526277b "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260912110540.3203010-1-gourry@gourry.net
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

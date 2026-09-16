@@ -4,27 +4,23 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
+  - new commits
+    - ceb4e9253366 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
+  - dropped commits
+    - 75b41adb019c "mm/vmalloc: ase dedicated unbound workqueues for vmap drain"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)
   - series: 1 (6) -> 1 (6) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
-- mm-new: 0 -> 3 commits
-  - series: 0 (0) -> 1 (3)
-    - no role, no role : 0 -> 3 commits
-  - new commits
-    - series "mm/vmalloc: minor cleanups", v2. (3)
-      - 4175efae33e9 "mm/vmalloc: group xa_init with vbq field initializations (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-0-cc4dfe635e22@linux.dev
-        - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-1-cc4dfe635e22@linux.dev
-      - d44fcc4e07fd "mm/vmalloc: extract vmap_insert_free_area helper (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-2-cc4dfe635e22@linux.dev
-      - f474eae7f157 "mm/vmalloc: extract show_busy_info from vmalloc_info_show (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-3-cc4dfe635e22@linux.dev
+- mm-new: 3 -> 3 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

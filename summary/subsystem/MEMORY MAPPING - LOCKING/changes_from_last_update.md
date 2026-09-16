@@ -9,6 +9,13 @@
   - series: 1 (3) -> 1 (3) (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make userland page table freeing RCU-safe", v3. (12)
+      - 5e68887103e2 "mm: change the contract for free_pgtables(), update docs (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org"
+        - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

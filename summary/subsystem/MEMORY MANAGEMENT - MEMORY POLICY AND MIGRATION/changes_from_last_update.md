@@ -5,32 +5,28 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 7 commits (no change)
-  - series: 2 (5) -> 2 (5) (no change)
+- mm-unstable: 7 -> 9 commits
+  - series: 2 (5) -> 2 (7)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 2 -> 2 commits (no change)
+    - reviewer, nobody: 1 -> 2 commits
+    - reviewer, no role : 2 -> 3 commits
     - reviewer, reviewer: 3 -> 3 commits (no change)
-- mm-new: 2 -> 6 commits
-  - series: 0 (2) -> 0 (6)
-    - no role, nobody: 0 -> 2 commits
-    - no role, maintainer: 0 -> 2 commits
-    - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
-      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
-      - 874ca6bf8061 "mm: drop some redundant checks around hugetlb VMAs (28/40)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-29-7d9781ed5361@kernel.org
-      - 33ccdcca7c66 "mm: avoid use of VMA_SPECIAL_FLAGS in migrate_vma_setup() (35/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-36-7d9781ed5361@kernel.org
-      - 052753eacc8c "mm/vma: introduce and use vma[_flags]_can_gup() (39/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-40-7d9781ed5361@kernel.org
+  - changed commits
+    - series "Remove PG_private by using page/folio->private", v4. (16)
+      - ff548e5cbc4b "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
+      - 5758df5e55d6 "treewide: remove folio_set/clear_private() usage (10/16)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-11-848550f7574e@nvidia.com
+- mm-new: 6 -> 4 commits
+  - series: 0 (6) -> 0 (4)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

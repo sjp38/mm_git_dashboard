@@ -1,60 +1,34 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 3 commits
+- mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 770243d49fe6 "mm/hugetlb: preserve mremap address delta when skipping page tables"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - added "Link: https://lore.kernel.org/20260914132352.472-1-jaewook376@gmail.com"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260911182408.75821-1-jaewook376@gmail.com"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260914132352.472-1-jaewook376@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 21 -> 20 commits
-  - series: 2 (14) -> 2 (14) (no change)
-    - no role, nobody: 4 -> 3 commits
-    - no role, no role : 8 -> 8 commits (no change)
+- mm-unstable: 20 -> 21 commits
+  - series: 2 (14) -> 2 (15)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 8 -> 9 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
   - changed commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v3. (11)
-      - c12cc3631f25 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (1/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260911050228.58884-3-songmuchun@bytedance.com
-      - 63a099b990a8 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (6/11)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260911050228.58884-8-songmuchun@bytedance.com
-- mm-new: 1 -> 3 commits
-  - series: 0 (1) -> 0 (3)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
-      - ada9440a1c3d "mm: remove hugetlb_inline.h (26/40)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-27-7d9781ed5361@kernel.org
-      - 6787d6316a8f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
-  - changed commits
     - series "Remove PG_private by using page/folio->private", v4. (16)
-      - a59e487d1f84 "mm/hugetlb: use direct assignment instead of folio_change_private() (4/16)"
+      - 98c8705efa69 "mm/hugetlb: use direct assignment instead of folio_change_private() (4/16)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-5-848550f7574e@nvidia.com
+- mm-new: 3 -> 3 commits (no change)
+  - series: 0 (3) -> 0 (2)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 2 commits
+  - new commits
+    - fdcf3e85df7a "mm/hugetlb: fix misspelled parameter names in comment"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/tencent_034C6FC23D4817C40657E5F17F64E260A009@qq.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
