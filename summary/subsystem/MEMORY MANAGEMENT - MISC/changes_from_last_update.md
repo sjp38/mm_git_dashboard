@@ -6,46 +6,69 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 45 -> 46 commits
-  - series: 8 (29) -> 8 (29) (no change)
-    - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 20 -> 20 commits (no change)
-    - no role, reviewer: 6 -> 7 commits
-    - no role, maintainer: 6 -> 6 commits (no change)
-    - maintainer, nobody: 7 -> 7 commits (no change)
-  - changed commits
-    - series "mm: make userland page table freeing RCU-safe", v3. (12)
-      - 5e68887103e2 "mm: change the contract for free_pgtables(), update docs (11/12)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-12-1f60b64e878e@kernel.org"
-        - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org
-    - series "mm: refactor zonelist constructors and iterators", v2. (2)
-      - 096489127044 "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
-        - Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net
-    - 0820e2e85e8a "selftests/mm: hugetlb_madv_vs_map: add underflow test"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
-      - Link: https://lore.kernel.org/aqgUdbtumaO8RiIb@bender.morinfr.org
-- mm-new: 4 -> 6 commits
-  - series: 0 (2) -> 0 (5)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 0 -> 3 commits
+- mm-unstable: 46 -> 51 commits
+  - series: 8 (29) -> 8 (33)
+    - no role, nobody: 6 -> 3 commits
+    - no role, no role : 20 -> 22 commits
+    - no role, reviewer: 7 -> 7 commits (no change)
+    - no role, maintainer: 6 -> 8 commits
+    - maintainer, nobody: 7 -> 11 commits
   - new commits
+    - f6ec37ed8d1f "docs-admin-guide-mm-damon-usage-update-for-hugepage_size-fix-fix"
+      - Authored by a maintainer, reviewed by nobody
+  - changed commits
+    - series "selftests/mm: pagemap_ioctl test fixes and cleanups", v2. (3)
+      - dd246ae978ab "selftests/mm: fix size truncation in pagemap_ioctl test (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260908134117.84405-1-zenghui.yu@linux.dev
+        - Link: https://lore.kernel.org/20260908134117.84405-2-zenghui.yu@linux.dev
+      - 3ad316c094df "selftests/mm: mark file-local symbols of pagemap_ioctl.c static (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260908134315.84431-1-zenghui.yu@linux.dev
+    - 61fd0ca0bbdd "Documentation/mm: update DAX vmemmap deduplication docs"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260916064341.1825793-12-songmuchun@bytedance.com"
+      - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260911050228.58884-12-songmuchun@bytedance.com"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260916064341.1825793-12-songmuchun@bytedance.com
+    - 6a599a1c9a42 "selftests/mm: skip khugepaged file tests if mkfs.xfs is unavailable"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260911124517.63714-1-jaeyeon.lee.dev@gmail.com
+    - series "mm/damon: misc improvements in tests and documents". (6)
+      - fe360c22131f "Docs/mm/damon/design: clarify when qt_exceeds increases (4/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914141952.91465-6-sj@kernel.org
+      - 9414ef9fd7de "Docs/mm/damon/design: fix typos in temporal auto-tuning algorithm section (5/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914141952.91465-7-sj@kernel.org
     - series "mm/damon: introduce hugepage_size probe filter". (8)
-      - 992657281e20 "Docs/mm/damon/design: update for hugepage_size probe filter (5/8)"
+      - ece7105d2a4f "Docs/mm/damon/design: update for hugepage_size probe filter (5/8)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915143359.91472-7-sj@kernel.org
-      - 3a0921f53062 "Docs/admin-guide/mm/damon/usage: update for hugepage_size (6/8)"
+      - 5839a3b5587c "Docs/admin-guide/mm/damon/usage: update for hugepage_size (6/8)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260915143359.91472-8-sj@kernel.org
-      - 81c69fbb4128 "docs-admin-guide-mm-damon-usage-update-for-hugepage_size-fix (7/8)"
+      - cfc2cbf28724 "docs-admin-guide-mm-damon-usage-update-for-hugepage_size-fix (7/8)"
         - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+  - dropped commits
+    - baebe8e43763 "mm: selftests: adjust the MADV_COLLAPSE uffd-minor selftests"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260910023411.514987-2-jthoughton@google.com
+- mm-new: 6 -> 1 commits
+  - series: 0 (5) -> 0 (0)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 2 -> 0 commits
+    - maintainer, nobody: 3 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

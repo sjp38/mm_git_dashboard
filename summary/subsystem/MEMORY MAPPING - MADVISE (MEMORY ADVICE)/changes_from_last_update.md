@@ -5,18 +5,59 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-- mm-new: 5 -> 6 commits
-  - series: 0 (4) -> 0 (4) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 0 -> 1 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - be06d526277b "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
+- mm-unstable: 4 -> 9 commits
+  - series: 0 (3) -> 0 (7)
+    - no role, nobody: 1 -> 4 commits
+    - no role, no role : 3 -> 4 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - series "mm/collapse: separate a collapse from its callers", v3. (12)
+      - ffa1bd9d75fd "mm/collapse: implement MADV_COLLAPSE in madvise.c (11/12)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260916093145.4022188-13-kirill@shutemov.name"
+        - dropped "Link: https://lore.kernel.org/20260910120238.2529819-13-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260916093145.4022188-13-kirill@shutemov.name
+    - series "mm: stop calling pmd_folio() on special PMDs", v2. (2)
+      - 6c9df4e45cbb "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260912034833.2952750-3-gourry@gourry.net
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
+      - 85082b509089 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+      - 57d3924d7a47 "mm/madvise: update is_valid_guard_vma() to use vma_can_merge() (29/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-30-7d9781ed5361@kernel.org
+      - a8166195c4c2 "mm/vma: introduce vma[_flags]_is_persistent() (30/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-31-7d9781ed5361@kernel.org
+      - f00830076b61 "mm/madvise: use predicates for madvise(..., MADV_DOFORK) (32/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-33-7d9781ed5361@kernel.org
+    - c5d77eeb84c0 "mm/madvise: reclaim isolated folios if PTE restart fails"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260912110832.3203902-1-gourry@gourry.net
+- mm-new: 6 -> 1 commits
+  - series: 0 (4) -> 0 (0)
+    - no role, nobody: 4 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - changed commits
+    - 624b76bb0114 "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lore.kernel.org/20260912110540.3203010-1-gourry@gourry.net
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

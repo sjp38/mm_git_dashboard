@@ -6,28 +6,47 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 21 -> 22 commits
-  - series: 6 (18) -> 7 (19)
+- mm-unstable: 22 -> 23 commits
+  - series: 7 (19) -> 7 (20)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+    - no role, maintainer: 3 -> 4 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
-    - maintainer, reviewer: 0 -> 1 commits
+    - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/huge_memory: clean up and decouple the anon and file split helpers", v5. (17)
-      - 804a291547a4 "mm/swap: fix off-by-one in swap cache replace sanity check (0/17)"
-        - Authored by a maintainer, reviewed by a reviewer
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
+      - 85082b509089 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
+        - Authored by no role player, reviewed by a maintainer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-0-39878b37dfb0@tencent.com
-        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-1-39878b37dfb0@tencent.com
-- mm-new: 3 -> 2 commits
-  - series: 1 (2) -> 0 (1)
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+- mm-new: 2 -> 6 commits
+  - series: 0 (1) -> 1 (4)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 2 commits
+    - no role, maintainer: 1 -> 2 commits
+  - new commits
+    - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11)
+      - 6c978aa9a557 "mm/page_io: take a const folio in bio_associate_blkg_from_folio() (3/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-4-c239a6010b58@columbia.edu
+      - c63e7135badb "mm: memcontrol: constify the swap accounting helpers (8/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-9-c239a6010b58@columbia.edu
+      - 191ccab2dd8a "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max() (9/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-10-c239a6010b58@columbia.edu
+    - series "mm: zswap: free cold writeback folios promptly", v5. (None)
+      - 1c91fd73e8d9 "mm: swap: move LRU insertion out of the swap cache allocator (None/None)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260911121341.178028-1-alex@ghiti.fr
+        - Link: https://lore.kernel.org/20260911121341.178028-2-alex@ghiti.fr
+    - 99cb68db86f3 "mm: swap: drop dropbehind swap cache folios on writeback completion"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260911121341.178028-3-alex@ghiti.fr
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

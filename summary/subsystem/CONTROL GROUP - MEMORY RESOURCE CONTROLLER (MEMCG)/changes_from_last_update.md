@@ -6,15 +6,75 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 30 -> 30 commits (no change)
-  - series: 8 (22) -> 8 (22) (no change)
+- mm-unstable: 30 -> 31 commits
+  - series: 8 (22) -> 8 (23)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 14 -> 14 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
-- mm-new: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+  - new commits
+    - series "mm: workingset: fix the shadow node budget under MGLRU", v5. (4)
+      - ac98d907e97f "mm: memcg: reparent non-hierarchical lruvec stats on cgroup v2 (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/4a7a64eed2b145ad535fedaea3624f8310c29d5b.1789096175.git.zhuhui@kylinos.cn
+  - changed commits
+    - series "mm: workingset: fix the shadow node budget under MGLRU", v5. (4)
+      - a677bcf7096a "mm: memcg: redirect stats updates of dying memcgs for all hierarchies (0/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/c1ef4ef6a84cac479e573f4423b734dc8176f7d5.1789096175.git.zhuhui@kylinos.cn"
+        - added "Link: https://lore.kernel.org/cover.1789096175.git.zhuhui@kylinos.cn"
+        - added "Link: https://gist.github.com/teawater/32f373ec41d185d840455eb167321a5a [1]"
+        - added "Cc: <stable@vger.kernel.org>"
+        - dropped "Link: https://lore.kernel.org/8a3fe5e6a076cdd9ac997125cb6c6a0948e1a6b6.1788514750.git.zhuhui@kylinos.cn"
+        - dropped "Link: https://lore.kernel.org/cover.1788514750.git.zhuhui@kylinos.cn"
+        - Link: https://lore.kernel.org/cover.1789096175.git.zhuhui@kylinos.cn
+        - Link: https://lore.kernel.org/c1ef4ef6a84cac479e573f4423b734dc8176f7d5.1789096175.git.zhuhui@kylinos.cn
+        - Link: https://gist.github.com/teawater/32f373ec41d185d840455eb167321a5a [1]
+      - b678b45c8aaf "mm: memcg: skip the RCU lock when the memcg is not dying (2/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/9ffdbdfc96312e3e13cb8f056bfe26649492d949.1789096175.git.zhuhui@kylinos.cn"
+        - added "Fixes: 7404bd37cfbe ("mm: workingset: use lruvec_lru_size() to get the number of lru pages")"
+        - added "Cc: <stable@vger.kernel.org>"
+        - dropped "Link: https://lore.kernel.org/0db657472c5278b2e2b87fbca7590b47ca520303.1788514750.git.zhuhui@kylinos.cn"
+        - Link: https://lore.kernel.org/9ffdbdfc96312e3e13cb8f056bfe26649492d949.1789096175.git.zhuhui@kylinos.cn
+- mm-new: 0 -> 10 commits
+  - series: 0 (0) -> 1 (10)
+    - no role, maintainer: 0 -> 10 commits
+  - new commits
+    - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11)
+      - c076a01e1a3c "mm: memcontrol: take a const folio in folio_memcg() and friends (0/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-0-c239a6010b58@columbia.edu
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-1-c239a6010b58@columbia.edu
+      - 703b335603d8 "mm: memcontrol: constify obj_cgroup_memcg() and friends (1/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-2-c239a6010b58@columbia.edu
+      - 258ffeeff282 "mm: memcontrol: constify the lruvec helpers (2/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-3-c239a6010b58@columbia.edu
+      - 9a3b0e9d08ff "mm: memcontrol: constify the mem_cgroup accessors (4/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-5-c239a6010b58@columbia.edu
+      - fb7abfcbdad6 "mm: page_counter: constify page_counter_read() and page_counter_margin() (5/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-6-c239a6010b58@columbia.edu
+      - db253aea9502 "mm: memcontrol: constify the reclaim protection helpers (6/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-7-c239a6010b58@columbia.edu
+      - a9ae38bbd503 "mm: memcontrol: constify the memcg and lruvec stat readers (7/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-8-c239a6010b58@columbia.edu
+      - c63e7135badb "mm: memcontrol: constify the swap accounting helpers (8/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-9-c239a6010b58@columbia.edu
+      - 191ccab2dd8a "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max() (9/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-10-c239a6010b58@columbia.edu
+      - 85eaad271914 "mm: memcontrol: constify the zswap and socket pressure helpers (10/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-11-c239a6010b58@columbia.edu
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

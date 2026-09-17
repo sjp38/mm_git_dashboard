@@ -10,13 +10,24 @@
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 0 commits
+  - changed commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v4. (11)
+      - 50c7eee21e1c "mm/sparse-vmemmap: set compound page order for device DAX (5/11)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260916064341.1825793-6-songmuchun@bytedance.com"
+        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260911050228.58884-6-songmuchun@bytedance.com"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260916064341.1825793-6-songmuchun@bytedance.com
+      - 147545084911 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (9/11)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260916064341.1825793-10-songmuchun@bytedance.com"
+        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260911050228.58884-10-songmuchun@bytedance.com"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260916064341.1825793-10-songmuchun@bytedance.com
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - 8b2392b822b2 "mm: remove unused exact_nid parameter from memmap_alloc()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260914055130.44543-1-kaitao.cheng@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

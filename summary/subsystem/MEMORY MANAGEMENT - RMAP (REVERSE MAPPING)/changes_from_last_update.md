@@ -6,16 +6,27 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 4 -> 6 commits
+  - series: 1 (2) -> 1 (4)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
+      - 081342388896 "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (23/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-24-7d9781ed5361@kernel.org
+      - 85082b509089 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+- mm-new: 2 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

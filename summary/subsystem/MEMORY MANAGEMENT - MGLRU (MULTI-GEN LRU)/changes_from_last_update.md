@@ -5,30 +5,87 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 36 -> 37 commits
-  - series: 5 (30) -> 5 (31)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 37 -> 41 commits
+  - series: 5 (31) -> 5 (34)
+    - no role, nobody: 1 -> 4 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 22 -> 22 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
+    - no role, maintainer: 2 -> 3 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 7 -> 7 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "Remove PG_private by using page/folio->private", v4. (16)
-      - ff548e5cbc4b "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
-        - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
-- mm-new: 4 -> 4 commits (no change)
-  - series: 0 (4) -> 0 (3)
-    - no role, nobody: 2 -> 3 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
   - new commits
-    - 83c3e9b49e2e "mm/mglru: restore accidentally removed seq < max_seq check"
+    - 514314c1b2f1 "mm/vmscan: avoid false-positive -Wuninitialized warning, again"
       - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/all/20260213123902.3466040-1-arnd@kernel.org/
+      - Link: https://lore.kernel.org/20260916083456.4136132-1-arnd@kernel.org
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v4. (11)
+      - d3ee02bb19f5 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION (0/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260916064341.1825793-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260916064341.1825793-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+  - changed commits
+    - series "mm: workingset: fix the shadow node budget under MGLRU", v5. (4)
+      - eb5a77d89a6f "mm: workingset: use lruvec_page_state_local() to count lru pages (1/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/2ed42f96aca124856ea30f774afb55cbe6d8ba58.1789096175.git.zhuhui@kylinos.cn"
+        - added "Cc: <stable@vger.kernel.org>"
+        - dropped "Link: https://lore.kernel.org/2ec3a7f73e85ee5f5739c9dc2e58e9a0e2091925.1788514750.git.zhuhui@kylinos.cn"
+        - Link: https://lore.kernel.org/2ed42f96aca124856ea30f774afb55cbe6d8ba58.1789096175.git.zhuhui@kylinos.cn
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v4. (11)
+      - 063df5f4156b "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (2/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260916064341.1825793-3-songmuchun@bytedance.com"
+        - dropped "Link: https://lore.kernel.org/20260911050228.58884-3-songmuchun@bytedance.com"
+        - Link: https://lore.kernel.org/20260916064341.1825793-3-songmuchun@bytedance.com
+      - 4df701d84fbb "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260916064341.1825793-7-songmuchun@bytedance.com"
+        - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260911050228.58884-7-songmuchun@bytedance.com"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260916064341.1825793-7-songmuchun@bytedance.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
+      - 85082b509089 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+      - 61bd9de44cf1 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (33/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-34-7d9781ed5361@kernel.org
+      - be43d207bf10 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around() (34/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-35-7d9781ed5361@kernel.org
+  - dropped commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v3. (11)
+      - 8def29192e07 "mm/sparse-vmemmap: introduce CONFIG_SPARSEMEM_VMEMMAP_OPTIMIZATION (0/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260911050228.58884-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260911050228.58884-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+- mm-new: 4 -> 3 commits
+  - series: 0 (3) -> 0 (1)
+    - no role, nobody: 3 -> 0 commits
+    - no role, reviewer: 0 -> 2 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11)
+      - 258ffeeff282 "mm: memcontrol: constify the lruvec helpers (2/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-3-c239a6010b58@columbia.edu
+    - 99cb68db86f3 "mm: swap: drop dropbehind swap cache folios on writeback completion"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260911121341.178028-3-alex@ghiti.fr
+  - changed commits
+    - 5c6fed987432 "mm/mglru: restore accidentally removed seq < max_seq check"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Kairui Song <kasong@tencent.com>"
       - Link: https://lore.kernel.org/20260915101556.50467-1-baohua@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

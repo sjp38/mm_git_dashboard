@@ -4,37 +4,37 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 77fae638f3f8 "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260904115629.3993331-1-dipiets@amazon.it"
+      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - added "Reviewed-by: Johannes Weiner <hannes@cmpxchg.org>"
+      - added "Reviewed-by: Christoph Hellwig <hch@lst.de>"
+      - dropped "Link: https://lore.kernel.org/20260911142102.2294202-1-dipiets@amazon.it"
+      - dropped "Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
+      - dropped "Cc: Christoph Hellwig <hch@lst.de>"
+      - Link: https://lore.kernel.org/20260904115629.3993331-1-dipiets@amazon.it
+      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
+      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
+      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 11 commits
+- mm-unstable: 11 -> 11 commits (no change)
   - series: 3 (7) -> 3 (7) (no change)
-    - no role, nobody: 1 -> 0 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 8 -> 8 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: refactor zonelist constructors and iterators", v2. (2)
-      - 096489127044 "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
-        - Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net
-- mm-new: 0 -> 1 commits
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 9108b5662dfe "mm/page_alloc: apply per-task GFP context in bulk allocator"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-new
-      - added "Link: https://lore.kernel.org/all/20260907120949.418450-1-liuqiqi@kylinos.cn/ [1]"
-      - added "Link: https://sashiko.dev/#/patchset/20260907120949.418450-1-liuqiqi%40kylinos.cn"
-      - added "Link: https://lore.kernel.org/20260915074928.327471-1-liuqiqi@kylinos.cn"
-      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260914024555.138125-1-liuqiqi@kylinos.cn"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Cc: <stable@vger.kernel.org>"
-      - Link: https://sashiko.dev/#/patchset/20260907120949.418450-1-liuqiqi%40kylinos.cn
-      - Link: https://lore.kernel.org/all/20260907120949.418450-1-liuqiqi@kylinos.cn/ [1]
-      - Link: https://lore.kernel.org/20260915074928.327471-1-liuqiqi@kylinos.cn
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - 77019448ac65 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

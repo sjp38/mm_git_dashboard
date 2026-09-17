@@ -7,34 +7,34 @@
     - no role, maintainer: 1 commits
     - reviewer, maintainer: 1 commits
     - maintainer, maintainer: 1 commits
-- mm-hotfixes-unstable: 14 total, 0 (0) series, 14 non-series commits
+- mm-hotfixes-unstable: 16 total, 0 (0) series, 16 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
     - no role, no role : 3 commits
     - no role, reviewer: 2 commits
     - no role, maintainer: 4 commits
     - reviewer, no role : 1 commits
-    - maintainer, nobody: 2 commits
+    - maintainer, nobody: 3 commits
+    - maintainer, no role : 1 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 313 total, 54 (254) series, 59 non-series commits
+- mm-unstable: 360 total, 57 (299) series, 61 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 27 commits
-    - no role, no role : 76 commits
-    - no role, reviewer: 68 commits
-    - no role, maintainer: 50 commits
-    - reviewer, nobody: 4 commits
-    - reviewer, no role : 4 commits
+    - no role, nobody: 52 commits
+    - no role, no role : 82 commits
+    - no role, reviewer: 69 commits
+    - no role, maintainer: 53 commits
+    - reviewer, nobody: 3 commits
+    - reviewer, no role : 5 commits
     - reviewer, reviewer: 10 commits
     - reviewer, maintainer: 5 commits
-    - maintainer, nobody: 50 commits
-    - maintainer, no role : 18 commits
+    - maintainer, nobody: 61 commits
+    - maintainer, no role : 19 commits
     - maintainer, reviewer: 1 commits
-- mm-new: 52 total, 3 (43) series, 9 non-series commits
+- mm-new: 22 total, 2 (10) series, 12 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 28 commits
-    - no role, no role : 8 commits
-    - no role, maintainer: 4 commits
-    - maintainer, nobody: 11 commits
-    - maintainer, no role : 1 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 7 commits
+    - no role, reviewer: 5 commits
+    - no role, maintainer: 9 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

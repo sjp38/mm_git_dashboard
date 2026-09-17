@@ -8,27 +8,52 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 20 -> 21 commits
-  - series: 2 (14) -> 2 (15)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 8 -> 9 commits
+- mm-unstable: 21 -> 23 commits
+  - series: 2 (15) -> 2 (16)
+    - no role, nobody: 3 -> 4 commits
+    - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 6 -> 6 commits (no change)
+    - no role, maintainer: 6 -> 7 commits
   - changed commits
-    - series "Remove PG_private by using page/folio->private", v4. (16)
-      - 98c8705efa69 "mm/hugetlb: use direct assignment instead of folio_change_private() (4/16)"
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v4. (11)
+      - 063df5f4156b "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (2/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260916064341.1825793-3-songmuchun@bytedance.com"
+        - dropped "Link: https://lore.kernel.org/20260911050228.58884-3-songmuchun@bytedance.com"
+        - Link: https://lore.kernel.org/20260916064341.1825793-3-songmuchun@bytedance.com
+      - bd79eff5a892 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (7/11)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260916064341.1825793-8-songmuchun@bytedance.com"
+        - dropped "Link: https://lore.kernel.org/20260911050228.58884-8-songmuchun@bytedance.com"
+        - Link: https://lore.kernel.org/20260916064341.1825793-8-songmuchun@bytedance.com
+    - 61fd0ca0bbdd "Documentation/mm: update DAX vmemmap deduplication docs"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260916064341.1825793-12-songmuchun@bytedance.com"
+      - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260911050228.58884-12-songmuchun@bytedance.com"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260916064341.1825793-12-songmuchun@bytedance.com
+    - series "Remove PG_private by using page/folio->private", v4. (16)
+      - b0cf7b984717 "mm/hugetlb: use direct assignment instead of folio_change_private() (4/16)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Muchun Song <muchun.song@linux.dev>"
+        - added "Cc: Oscar Salvador <osalvador@suse.de>"
+        - dropped "To: Muchun Song <muchun.song@linux.dev>"
+        - dropped "To: Oscar Salvador <osalvador@suse.de>"
         - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-5-848550f7574e@nvidia.com
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (3) -> 0 (2)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 2 commits
-  - new commits
-    - fdcf3e85df7a "mm/hugetlb: fix misspelled parameter names in comment"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/tencent_034C6FC23D4817C40657E5F17F64E260A009@qq.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
+      - 6bd19edc320b "mm: remove hugetlb_inline.h (26/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-27-7d9781ed5361@kernel.org
+      - 85082b509089 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+- mm-new: 3 -> 1 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 2 -> 1 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

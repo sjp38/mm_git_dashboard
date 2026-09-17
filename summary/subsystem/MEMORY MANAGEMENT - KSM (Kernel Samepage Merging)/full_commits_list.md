@@ -2,32 +2,30 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 4 total, 1 (2) series, 2 non-series commits
+- mm-unstable: 5 total, 1 (3) series, 2 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 2 commits
     - no role, reviewer: 2 commits
   - full commits list
-    - 608df7c748a5 "mm/ksm: mark migration stores with WRITE_ONCE()"
+    - baecb46289f8 "mm/ksm: mark migration stores with WRITE_ONCE()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260824112433.191301-1-nicoyip.dev@gmail.com
     - series "docs/ksm: fix advisor documentation and comment", v3. (2 commits)
-      - 7c3be0c8da9e "docs: ksm: fix typos in sysfs knob names" (0/2)
+      - 8bee191f3f0c "docs: ksm: fix typos in sysfs knob names" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260824061010.3343959-1-tujinjiang@huawei.com
         - Link: https://lore.kernel.org/20260824061010.3343959-2-tujinjiang@huawei.com
-      - 38b8248d2b42 "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
+      - db48c854176f "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/linux-mm/20231028000945.2428830-2-shr@devkernel.io/ [1]
         - Link: https://lore.kernel.org/20260824061010.3343959-3-tujinjiang@huawei.com
-    - 8e2e00a821e6 "docs/mm: ksm: use the renamed ksm structure names"
+    - 52922d3b0441 "docs/mm: ksm: use the renamed ksm structure names"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-      - 4da7d6a80e4e "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/40)
+      - 61bd9de44cf1 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-34-7d9781ed5361@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

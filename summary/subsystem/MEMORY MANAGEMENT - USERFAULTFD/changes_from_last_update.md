@@ -5,15 +5,30 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 3 commits (no change)
-  - series: 2 (3) -> 2 (3) (no change)
+- mm-unstable: 3 -> 6 commits
+  - series: 2 (3) -> 2 (6)
+    - no role, nobody: 0 -> 2 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
+      - 6bd19edc320b "mm: remove hugetlb_inline.h (26/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-27-7d9781ed5361@kernel.org
+      - 85082b509089 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+      - 086192f5d171 "mm/uffd: use predicates for userfaultfd checks (31/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-32-7d9781ed5361@kernel.org
+- mm-new: 3 -> 0 commits
+  - series: 0 (3) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

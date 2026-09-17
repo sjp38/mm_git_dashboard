@@ -6,17 +6,30 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 18 -> 18 commits (no change)
+- mm-unstable: 18 -> 19 commits
   - series: 5 (13) -> 5 (13) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 15 -> 15 commits (no change)
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 1c723bf182c5 "selftests/cgroup: ignore memory.reclaim -EAGAIN for zswap writeback test"
+    - no role, maintainer: 15 -> 16 commits
+  - changed commits
+    - 25ca6e978275 "selftests/cgroup: ignore memory.reclaim -EAGAIN for zswap writeback test"
       - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260914-test-zswap-wb-ignore-eagain-v1-1-6fb715c22cd8@kernel.org
+- mm-new: 1 -> 2 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - series "mm: zswap: free cold writeback folios promptly", v5. (None)
+      - 1c91fd73e8d9 "mm: swap: move LRU insertion out of the swap cache allocator (None/None)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260911121341.178028-1-alex@ghiti.fr
+        - Link: https://lore.kernel.org/20260911121341.178028-2-alex@ghiti.fr
+    - 4369abc2c212 "mm: zswap: drop cold writeback folios via swap dropbehind"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260911121341.178028-4-alex@ghiti.fr
+      - Link: https://lore.kernel.org/linux-mm/20260911092012.92399-1-alex@ghiti.fr/ [1]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

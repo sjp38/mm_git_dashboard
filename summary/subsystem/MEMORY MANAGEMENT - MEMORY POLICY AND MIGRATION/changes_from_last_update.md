@@ -5,28 +5,48 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 9 commits
-  - series: 2 (5) -> 2 (7)
+- mm-unstable: 9 -> 13 commits
+  - series: 2 (7) -> 2 (11)
+    - no role, nobody: 0 -> 2 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - reviewer, nobody: 1 -> 2 commits
-    - reviewer, no role : 2 -> 3 commits
+    - no role, maintainer: 0 -> 2 commits
+    - reviewer, nobody: 2 -> 1 commits
+    - reviewer, no role : 3 -> 4 commits
     - reviewer, reviewer: 3 -> 3 commits (no change)
   - changed commits
-    - series "Remove PG_private by using page/folio->private", v4. (16)
-      - ff548e5cbc4b "mm/page-flags: check page/folio->private instead of PG_private (9/16)"
-        - Authored by a reviewer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
-      - 5758df5e55d6 "treewide: remove folio_set/clear_private() usage (10/16)"
+    - series "mm/mempolicy: stop copying state in the interleave paths". (2)
+      - 02b9b876c431 "mm/mempolicy: use SRCU for the weighted interleave state (0/2)"
         - Authored by a reviewer, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260829015943.1258774-1-gourry@gourry.net
+        - Link: https://lore.kernel.org/20260829015943.1258774-2-gourry@gourry.net
+      - 1e67d8590c34 "mm/mempolicy: stop copying the nodemask in the interleave paths (1/2)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260829015943.1258774-3-gourry@gourry.net
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
+      - 85082b509089 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
+        - Authored by no role player, reviewed by a maintainer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-11-848550f7574e@nvidia.com
-- mm-new: 6 -> 4 commits
-  - series: 0 (6) -> 0 (4)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, no role : 1 -> 0 commits
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+      - 1cba7838d456 "mm: drop some redundant checks around hugetlb VMAs (28/40)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-29-7d9781ed5361@kernel.org
+      - b81f289908b3 "mm: avoid use of VMA_SPECIAL_FLAGS in migrate_vma_setup() (35/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-36-7d9781ed5361@kernel.org
+      - 0a80aa0fb08f "mm/vma: introduce and use vma[_flags]_can_gup() (39/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-40-7d9781ed5361@kernel.org
+- mm-new: 4 -> 0 commits
+  - series: 0 (4) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, maintainer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

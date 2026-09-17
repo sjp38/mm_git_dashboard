@@ -9,33 +9,41 @@
       - Link: https://lore.kernel.org/076bb01b-6fcf-4691-be8c-0e8507c9fe64@columbia.edu [1]
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 5 total, 0 (5) series, 0 non-series commits
+- mm-unstable: 6 total, 0 (6) series, 0 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 3 commits
     - reviewer, nobody: 1 commits
     - reviewer, no role : 1 commits
   - full commits list
-      - f29bc8c40bd2 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
+      - dfc37f88df75 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org
-      - 16951aa4e0fc "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/16)
+      - f06d2bc25fc7 "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-8-848550f7574e@nvidia.com
-      - ff548e5cbc4b "mm/page-flags: check page/folio->private instead of PG_private" (9/16)
+      - fa7a829b9cc1 "mm/page-flags: check page/folio->private instead of PG_private" (9/16)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
-      - 5758df5e55d6 "treewide: remove folio_set/clear_private() usage" (10/16)
+      - 5b7d802fde5a "treewide: remove folio_set/clear_private() usage" (10/16)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-11-848550f7574e@nvidia.com
-      - feb316983f5d "treewide: remove PagePrivate() and PG_private from comments and docs" (14/16)
+      - 57585afad674 "treewide: remove PagePrivate() and PG_private from comments and docs" (14/16)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-15-848550f7574e@nvidia.com
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-  - full commits list
-      - 5371b03c09ef "mm: remove hugetlb_inline.h" (26/40)
+      - 6bd19edc320b "mm: remove hugetlb_inline.h" (26/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-27-7d9781ed5361@kernel.org
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+    - b8301318322e "mm: filemap: move lruvec accounting outside the xarray lock"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260916125122.2696271-1-usama.arif@linux.dev
+    - 99cb68db86f3 "mm: swap: drop dropbehind swap cache folios on writeback completion"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260911121341.178028-3-alex@ghiti.fr
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

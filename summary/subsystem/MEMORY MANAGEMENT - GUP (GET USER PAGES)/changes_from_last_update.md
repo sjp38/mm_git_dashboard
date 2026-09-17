@@ -5,24 +5,35 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
+- mm-unstable: 4 -> 7 commits
+  - series: 1 (3) -> 1 (6)
+    - no role, nobody: 0 -> 2 commits
     - no role, no role : 4 -> 4 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
   - changed commits
-    - series "mm: make userland page table freeing RCU-safe", v3. (12)
-      - cda42c646b03 "mm: make userland page table freeing RCU-safe (10/12)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-11-7b8c86103821@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20260908-rcu-pagetable-freeing-v2-11-1f60b64e878e@kernel.org"
-        - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-11-7b8c86103821@kernel.org
-- mm-new: 4 -> 5 commits
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 2 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 4371fe6ac2e6 "mm/gup_test: safely calculate GUP batch size"
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
+      - 46ccb2f32717 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs (20/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-21-7d9781ed5361@kernel.org
+      - 85082b509089 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+      - 0a80aa0fb08f "mm/vma: introduce and use vma[_flags]_can_gup() (39/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-40-7d9781ed5361@kernel.org
+- mm-new: 5 -> 2 commits
+  - series: 0 (3) -> 0 (0)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - changed commits
+    - b7b224f9b2af "mm/gup_test: safely calculate GUP batch size"
       - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lore.kernel.org/20260915102524.125758-1-sarthak.sharma@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

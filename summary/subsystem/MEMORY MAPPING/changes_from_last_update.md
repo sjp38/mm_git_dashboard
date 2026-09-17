@@ -8,17 +8,97 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 10 commits (no change)
-  - series: 3 (8) -> 3 (8) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 10 -> 28 commits
+  - series: 3 (8) -> 4 (25)
+    - no role, nobody: 1 -> 18 commits
     - no role, no role : 7 -> 7 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 25 -> 25 commits (no change)
-  - series: 2 (24) -> 2 (24) (no change)
-    - no role, nobody: 18 -> 18 commits (no change)
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v2. (40)
+      - 2a937a04babf "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get (0/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-0-7d9781ed5361@kernel.org
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-1-7d9781ed5361@kernel.org
+      - aa3ffcdaf78e "mm/vma: predicate setting mmap_prepare VMA fields on new vma alloc (1/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-2-7d9781ed5361@kernel.org
+      - ecc377916f0b "mm/vma: introduce and use vma_[flags_]can_merge() (2/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-3-7d9781ed5361@kernel.org
+      - 1903cc222cda "mm: consistently validate VMA state after mmap[_prepare] hooks (3/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-4-7d9781ed5361@kernel.org
+      - 01afc8126c4d "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma (4/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-5-7d9781ed5361@kernel.org
+      - ea6df3adad53 "mm/vma: tidy up map kernel pages enum values (6/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-7-7d9781ed5361@kernel.org
+      - 89e0415c915e "mm: add mmap action for discontiguous kernel page mapping (7/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-8-7d9781ed5361@kernel.org
+      - f0091dfe7f55 "mm/vma: add vma[_flags]_is_kernel_owned() predicates (14/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-15-7d9781ed5361@kernel.org
+      - c33caa887795 "mm/vma: only allow mmap to clear VMA_MAYWRITE_BIT if kernel-owned (15/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-16-7d9781ed5361@kernel.org
+      - 7e1641db72c7 "mm/vma: add and use vma_[flags]_is_fixed_mapping (16/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-17-7d9781ed5361@kernel.org
+      - 1938eab39787 "mm/mlock: clear VMA_LOCKED_MASK over mmap callback (22/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-23-7d9781ed5361@kernel.org
+      - 081342388896 "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (23/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-24-7d9781ed5361@kernel.org
+      - b906439375c7 "mm/vma: enforce that only kernel-owned mappings may set VMA_IO_BIT (24/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-25-7d9781ed5361@kernel.org
+      - 435683e51a44 "mm: remove VMA_IO_BIT check in vma[_flags]_is_kernel_owned() (25/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-26-7d9781ed5361@kernel.org
+      - 6bd19edc320b "mm: remove hugetlb_inline.h (26/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-27-7d9781ed5361@kernel.org
+      - 85082b509089 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org
+      - e238e591a8e1 "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS (36/40)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-37-7d9781ed5361@kernel.org
+    - 081a94aee25d "proc/task_mmu: handle special PMDs in clear_refs and pagemap"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260912122822.3348978-1-gourry@gourry.net
+- mm-new: 25 -> 8 commits
+  - series: 2 (24) -> 1 (7)
+    - no role, nobody: 18 -> 1 commits
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - 53a608444861 "mm: mincore: use per-vma lock during page table walk"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260916043153.2631696-1-wangkefeng.wang@huawei.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
