@@ -4,53 +4,56 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - dfe5b957e32e "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
+    - b27989352dd1 "mm/vmalloc: use dedicated unbound workqueues for vmap drain"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260905152717.11711-1-urezki@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 11 total, 2 (9) series, 2 non-series commits
+- mm-unstable: 12 total, 2 (9) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 3 commits
     - no role, no role : 9 commits
   - full commits list
-    - 7f59e2aeeacc "mm/vmalloc: avoid false sharing with drain_vmap_work"
+    - 229e9374adf8 "mm/vmalloc: avoid false sharing with drain_vmap_work"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
     - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v3. (6 commits)
-      - e8b778357f22 "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
+      - a7963e835c01 "set_memory: add number of pages parameter to set_direct_map APIs" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-0-949b64a9f755@kernel.org
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-1-949b64a9f755@kernel.org
         - Link: https://lore.kernel.org/all/20260611130144.1385343-4-abarnas@google.com [1]
-      - 78818c4d9984 "mm/vmalloc: set area's page_order after allocation succeeds" (1/6)
+      - ca526ace81a5 "mm/vmalloc: set area's page_order after allocation succeeds" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-2-949b64a9f755@kernel.org
-      - 313aca52d58f "mm/vmalloc: constify vm parameter of get_vm_area_page_order()" (2/6)
+      - e2731235d736 "mm/vmalloc: constify vm parameter of get_vm_area_page_order()" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-3-949b64a9f755@kernel.org
-      - 5e5da8ac5be7 "mm/vmalloc: make set_area_direct_map HUGE_VMAP friendly" (3/6)
+      - f0106335efca "mm/vmalloc: make set_area_direct_map HUGE_VMAP friendly" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-4-949b64a9f755@kernel.org
-    - 487a6f571767 "mm: vmalloc: fix vmap_purge_lock livelock under memory pressure"
+    - 769a88270c9e "mm: vmalloc: fix vmap_purge_lock livelock under memory pressure"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260828091753.299295-1-ye.liu@linux.dev
-      - 8ca9c4cc6121 "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE" (2/5)
+      - 9e435a6c5444 "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE" (2/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-3-11beb2a3d249@kernel.org
-      - cb29ac22d9c3 "mm/vmalloc: add DEFINE_FREE() for vfree()" (3/5)
+      - d4efef153449 "mm/vmalloc: add DEFINE_FREE() for vfree()" (3/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-4-11beb2a3d249@kernel.org
     - series "mm/vmalloc: minor cleanups", v2. (3 commits)
-      - 796e4895dbcd "mm/vmalloc: group xa_init with vbq field initializations" (0/3)
+      - 9e4782bafe01 "mm/vmalloc: group xa_init with vbq field initializations" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-0-cc4dfe635e22@linux.dev
         - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-1-cc4dfe635e22@linux.dev
-      - f1956d19b7de "mm/vmalloc: extract vmap_insert_free_area helper" (1/3)
+      - 0852c6d0b186 "mm/vmalloc: extract vmap_insert_free_area helper" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-2-cc4dfe635e22@linux.dev
-      - afa54e7b34e9 "mm/vmalloc: extract show_busy_info from vmalloc_info_show" (2/3)
+      - 0c13283a4ed1 "mm/vmalloc: extract show_busy_info from vmalloc_info_show" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-3-cc4dfe635e22@linux.dev
+    - 3318d6fa6dde "mm/vmalloc: Use %p for pointer formatting"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

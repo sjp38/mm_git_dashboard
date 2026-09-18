@@ -10,17 +10,40 @@
   - series: 10 (63) -> 10 (63) (no change)
     - no role, nobody: 16 -> 16 commits (no change)
     - no role, no role : 36 -> 36 commits (no change)
-    - no role, reviewer: 9 -> 9 commits (no change)
+    - no role, reviewer: 9 -> 8 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 3 -> 3 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
+    - maintainer, reviewer: 0 -> 1 commits
+- mm-new: 3 -> 5 commits
   - series: 0 (3) -> 0 (3) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 2 commits
+    - no role, reviewer: 1 -> 2 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 4b56fa505d91 "selftests/mm: add a GUP selftest"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
+    - 17c4a95d757b "mm: constify arguments in default pxdp_get()"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260918064928.793742-1-anshuman.khandual@arm.com
+  - changed commits
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - 93ad19f14712 "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+      - 142cdb158d5a "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

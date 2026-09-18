@@ -6,10 +6,14 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 11 commits (no change)
+- mm-unstable: 11 -> 12 commits
   - series: 2 (9) -> 2 (9) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 3 commits
     - no role, no role : 9 -> 9 commits (no change)
+  - new commits
+    - 3318d6fa6dde "mm/vmalloc: Use %p for pointer formatting"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

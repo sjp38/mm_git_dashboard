@@ -9,7 +9,26 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-new: 3 -> 3 commits (no change)
   - series: 1 (3) -> 1 (3) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, nobody: 3 -> 0 commits
+    - no role, maintainer: 0 -> 3 commits
+  - changed commits
+    - series "kmemleak: fix stale documentation and raise the verbose default". (3)
+      - 2350b4eec132 "Documentation: kmemleak: describe the metadata pool, not the early log (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
+        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
+        - Link: https://lore.kernel.org/20260917142210.90829-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-1-84fde6d1f749@debian.org
+      - b241c78267e3 "Documentation: kmemleak: fix stale statements about scanning (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
+        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
+        - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-2-84fde6d1f749@debian.org
+      - 0bb26d208a35 "mm: kmemleak: raise min_unref_scans to 3 for verbose auto-scan (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
+        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
+        - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-3-84fde6d1f749@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,17 +1,11 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
-- mm-hotfixes-stable: 3 -> 4 commits
+- mm-hotfixes-stable: 4 -> 4 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - fffe15efdf07 "mm/rmap: fix missing barrier between anon_vma init and vma->anon_vma publish"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260908122924.554373-1-tujinjiang@huawei.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 28 -> 28 commits (no change)
@@ -20,11 +14,57 @@
     - no role, no role : 7 -> 7 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 4 -> 4 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+- mm-new: 4 -> 10 commits
+  - series: 1 (3) -> 2 (9)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 7 commits
+    - no role, reviewer: 2 -> 3 commits
+  - new commits
+    - series "read proc/pid/smaps_rollup under per-vma lock", v5. (7)
+      - 3ea1dbe96b76 "proc/task_mmu: remove unnecessary helpers (0/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260918153318.758387-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260918153318.758387-2-surenb@google.com
+      - 4b0e29f898db "proc/task_mmu: remove unnecessary inlines in function definitions (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260918153318.758387-3-surenb@google.com
+      - 853c175f7e47 "proc/task_mmu: clarify shmem mapping walk conditions in smap_gather_stats() (2/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260918153318.758387-4-surenb@google.com
+      - c60266e33020 "proc/task_mmu: remove special-casing of smap_gather_stats() start parameter (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260918153318.758387-5-surenb@google.com
+      - f741805f3917 "proc/task_mmu: change proc_get_vma() to stop returning gate VMA at the end (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260918153318.758387-6-surenb@google.com
+      - e3a48f3a49f4 "proc/task_mmu: read proc/pid/smaps_rollup under per-vma lock (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260918153318.758387-7-surenb@google.com
+        - Link: https://github.com/paulmckrcu/proc-mmap_sem-test [1]
+  - changed commits
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - ba15d4048ec0 "mm/vma: const-ify vma_assert_stabilised() and associated functions (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de> "
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-0-5c22314a72e7@kernel.org
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-1-5c22314a72e7@kernel.org
+      - 93ad19f14712 "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+      - 142cdb158d5a "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

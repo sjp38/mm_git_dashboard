@@ -16,12 +16,30 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 7 -> 7 commits (no change)
+- mm-new: 7 -> 8 commits
   - series: 1 (6) -> 1 (6) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
+  - new commits
+    - e44538252439 "mm/swapops: remove unused is_hwpoison_entry()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
+  - changed commits
+    - series "mm: zswap: free cold writeback folios promptly", v5. (3)
+      - 739e993e3d1f "mm: swap: move LRU insertion out of the swap cache allocator (0/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - Link: https://lore.kernel.org/20260911121341.178028-1-alex@ghiti.fr
+        - Link: https://lore.kernel.org/20260911121341.178028-2-alex@ghiti.fr
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - 93ad19f14712 "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

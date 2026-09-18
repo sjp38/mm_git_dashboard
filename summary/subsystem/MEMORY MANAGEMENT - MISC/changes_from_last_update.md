@@ -1,31 +1,46 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 4be317b8c26c "writeback: report a Tasks-RCU quiescent state per cgwb drain pass"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260909-cgwb-tasks-rcu-qs-v1-1-967a7754771f@toxicpanda.com
-      - Link: https://lore.kernel.org/bpf/9d444098-7c03-4163-af12-bd0a79a51443@paulmck-laptop/
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 51 -> 51 commits (no change)
-  - series: 8 (33) -> 8 (33) (no change)
+- mm-unstable: 51 -> 50 commits
+  - series: 8 (33) -> 7 (32)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 22 -> 22 commits (no change)
-    - no role, reviewer: 7 -> 7 commits (no change)
+    - no role, reviewer: 7 -> 6 commits
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, nobody: 11 -> 11 commits (no change)
-- mm-new: 4 -> 4 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-new: 4 -> 10 commits
+  - series: 0 (2) -> 1 (7)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 0 -> 5 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6)
+      - 855732161617 "selftests/mm: make file helpers return errors (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260918112234.195857-1-sarthak.sharma@arm.com
+        - Link: https://lore.kernel.org/20260918112234.195857-2-sarthak.sharma@arm.com
+      - a9a31adc6c3a "selftests-mm-make-file-helpers-return-errors-fix (1/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com
+      - 25e517b68def "tools/lib/mm: add shared file helpers (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260918112234.195857-3-sarthak.sharma@arm.com
+      - 478aaddb843e "tools/lib/mm: move hugepage_settings out of selftests (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
+      - c2c92f28d194 "tools/mm: move gup_test from selftests/mm to tools/mm (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260918112234.195857-5-sarthak.sharma@arm.com
+    - 4b56fa505d91 "selftests/mm: add a GUP selftest"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
