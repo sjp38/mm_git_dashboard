@@ -6,28 +6,32 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 11 commits
-  - series: 1 (6) -> 2 (9)
+- mm-unstable: 11 -> 11 commits (no change)
+  - series: 2 (9) -> 2 (9) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 6 -> 9 commits
+    - no role, no role : 9 -> 9 commits (no change)
   - changed commits
-    - series "mm/vmalloc: minor cleanups", v2. (3)
-      - 5c6c0e8307f7 "mm/vmalloc: group xa_init with vbq field initializations (0/3)"
+    - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v3. (6)
+      - 8c316bc2aaf3 "set_memory: add number of pages parameter to set_direct_map APIs (0/6)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-0-cc4dfe635e22@linux.dev
-        - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-1-cc4dfe635e22@linux.dev
-      - e827ef54d9e9 "mm/vmalloc: extract vmap_insert_free_area helper (1/3)"
+        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-0-949b64a9f755@kernel.org
+        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-1-949b64a9f755@kernel.org
+        - Link: https://lore.kernel.org/all/20260611130144.1385343-4-abarnas@google.com [1]
+      - 33caddac2169 "mm/vmalloc: set area's page_order after allocation succeeds (1/6)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-2-cc4dfe635e22@linux.dev
-      - fec6fe8bc29e "mm/vmalloc: extract show_busy_info from vmalloc_info_show (2/3)"
+        - added "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-2-949b64a9f755@kernel.org
+      - 38bc6e4efef5 "mm/vmalloc: constify vm parameter of get_vm_area_page_order() (2/6)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-3-cc4dfe635e22@linux.dev
-- mm-new: 3 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, no role : 3 -> 0 commits
+        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-3-949b64a9f755@kernel.org
+      - 814209ab6778 "mm/vmalloc: make set_area_direct_map HUGE_VMAP friendly (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-4-949b64a9f755@kernel.org
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

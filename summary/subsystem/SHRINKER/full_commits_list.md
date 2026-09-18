@@ -13,10 +13,10 @@
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - 0e4da65943f2 "mm/list_lru: disable memcg awareness under cgroup_disable=memory"
+    - a61f87c9ecad "mm/list_lru: disable memcg awareness under cgroup_disable=memory"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260902093202.609559-1-qinyuntan@linux.alibaba.com
-    - 346487da9e53 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
+    - a13512c33374 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

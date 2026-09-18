@@ -6,69 +6,30 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 46 -> 51 commits
-  - series: 8 (29) -> 8 (33)
-    - no role, nobody: 6 -> 3 commits
-    - no role, no role : 20 -> 22 commits
+- mm-unstable: 51 -> 51 commits (no change)
+  - series: 8 (33) -> 8 (33) (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 22 -> 22 commits (no change)
     - no role, reviewer: 7 -> 7 commits (no change)
-    - no role, maintainer: 6 -> 8 commits
-    - maintainer, nobody: 7 -> 11 commits
-  - new commits
-    - f6ec37ed8d1f "docs-admin-guide-mm-damon-usage-update-for-hugepage_size-fix-fix"
-      - Authored by a maintainer, reviewed by nobody
-  - changed commits
-    - series "selftests/mm: pagemap_ioctl test fixes and cleanups", v2. (3)
-      - dd246ae978ab "selftests/mm: fix size truncation in pagemap_ioctl test (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260908134117.84405-1-zenghui.yu@linux.dev
-        - Link: https://lore.kernel.org/20260908134117.84405-2-zenghui.yu@linux.dev
-      - 3ad316c094df "selftests/mm: mark file-local symbols of pagemap_ioctl.c static (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260908134315.84431-1-zenghui.yu@linux.dev
-    - 61fd0ca0bbdd "Documentation/mm: update DAX vmemmap deduplication docs"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260916064341.1825793-12-songmuchun@bytedance.com"
-      - added "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260911050228.58884-12-songmuchun@bytedance.com"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20260916064341.1825793-12-songmuchun@bytedance.com
-    - 6a599a1c9a42 "selftests/mm: skip khugepaged file tests if mkfs.xfs is unavailable"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260911124517.63714-1-jaeyeon.lee.dev@gmail.com
-    - series "mm/damon: misc improvements in tests and documents". (6)
-      - fe360c22131f "Docs/mm/damon/design: clarify when qt_exceeds increases (4/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260914141952.91465-6-sj@kernel.org
-      - 9414ef9fd7de "Docs/mm/damon/design: fix typos in temporal auto-tuning algorithm section (5/6)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260914141952.91465-7-sj@kernel.org
-    - series "mm/damon: introduce hugepage_size probe filter". (8)
-      - ece7105d2a4f "Docs/mm/damon/design: update for hugepage_size probe filter (5/8)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260915143359.91472-7-sj@kernel.org
-      - 5839a3b5587c "Docs/admin-guide/mm/damon/usage: update for hugepage_size (6/8)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260915143359.91472-8-sj@kernel.org
-      - cfc2cbf28724 "docs-admin-guide-mm-damon-usage-update-for-hugepage_size-fix (7/8)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-  - dropped commits
-    - baebe8e43763 "mm: selftests: adjust the MADV_COLLAPSE uffd-minor selftests"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260910023411.514987-2-jthoughton@google.com
-- mm-new: 6 -> 1 commits
-  - series: 0 (5) -> 0 (0)
+    - no role, maintainer: 8 -> 8 commits (no change)
+    - maintainer, nobody: 11 -> 11 commits (no change)
+- mm-new: 1 -> 4 commits
+  - series: 0 (0) -> 0 (2)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 0 commits
-    - maintainer, nobody: 3 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm/damon: improve readability, clarity and test coverage". (10)
+      - 31831d5fb415 "Docs/mm/damon/design: clarify bp is basis point (9/10)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260917142210.90829-11-sj@kernel.org
+    - series "mm: Fix MF_DELAYED handling on memory failure", v6. (5)
+      - 7ccb46cfb808 "mm: selftests: Add shmem into memory failure test (4/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-5-4b00856b5364@google.com
+    - 19395b40ec3f "mm-selftests-add-shmem-into-memory-failure-test-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

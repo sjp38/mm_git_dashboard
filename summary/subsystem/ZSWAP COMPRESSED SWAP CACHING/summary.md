@@ -8,7 +8,7 @@
   - author/reviewer role stat
     - no role, no role : 3 commits
     - no role, maintainer: 16 commits
-- mm-new: 2 total, 1 (1) series, 1 non-series commits
+- mm-new: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits

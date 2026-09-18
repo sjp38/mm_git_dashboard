@@ -8,12 +8,12 @@
     - no role, reviewer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - c5f05eb8b514 "mm/memory_hotplug: factor out node_is_memoryless()"
+    - 3209b64bbb91 "mm/memory_hotplug: factor out node_is_memoryless()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
-    - ffa2b7c339d0 "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
+    - 66ad95c9ddad "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
       - Authored by a maintainer, reviewed by nobody
-      - 4df701d84fbb "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/11)
+      - 489c4ef0acab "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/11)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260916064341.1825793-7-songmuchun@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

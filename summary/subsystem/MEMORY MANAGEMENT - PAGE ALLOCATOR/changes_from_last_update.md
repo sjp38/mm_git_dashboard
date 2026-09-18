@@ -4,22 +4,6 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 77fae638f3f8 "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/20260904115629.3993331-1-dipiets@amazon.it"
-      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - added "Reviewed-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - added "Reviewed-by: Christoph Hellwig <hch@lst.de>"
-      - dropped "Link: https://lore.kernel.org/20260911142102.2294202-1-dipiets@amazon.it"
-      - dropped "Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@suse.cz>"
-      - dropped "Cc: Christoph Hellwig <hch@lst.de>"
-      - Link: https://lore.kernel.org/20260904115629.3993331-1-dipiets@amazon.it
-      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
-      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
-      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 11 -> 11 commits (no change)
@@ -27,14 +11,10 @@
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 8 -> 8 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - 77019448ac65 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

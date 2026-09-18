@@ -7,7 +7,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 5 -> 5 commits (no change)
   - series: 1 (5) -> 1 (5) (no change)
-    - no role, nobody: 5 -> 5 commits (no change)
+    - no role, nobody: 5 -> 4 commits
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v3. (6)
+      - 906bf87ca577 "mm/execmem: use VM_FLUSH_RESET_PERMS for ROX cache allocations (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
+        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-5-949b64a9f755@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
