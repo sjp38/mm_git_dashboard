@@ -7,27 +7,10 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 0 -> 5 commits
-  - series: 0 (0) -> 1 (4)
-    - no role, maintainer: 0 -> 4 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - series "mm: Fix MF_DELAYED handling on memory failure", v6. (5)
-      - bdaf5fb8af86 "mm: memory_failure: clarify the MF_DELAYED definition (0/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-0-4b00856b5364@google.com
-        - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-1-4b00856b5364@google.com
-      - 3d63e9d7ec0a "mm: memory_failure: Allow truncate_error_folio to return MF_DELAYED (1/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-2-4b00856b5364@google.com
-      - 2c19a04f2606 "mm: memory_failure: Generalize extra_pins handling to all MF_DELAYED cases (3/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-4-4b00856b5364@google.com
-      - 7ccb46cfb808 "mm: selftests: Add shmem into memory failure test (4/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-5-4b00856b5364@google.com
-    - 19395b40ec3f "mm-selftests-add-shmem-into-memory-failure-test-fix"
-      - Authored by a maintainer, reviewed by nobody
+- mm-new: 5 -> 5 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, maintainer: 4 -> 4 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

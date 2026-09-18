@@ -1,9 +1,16 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 4be317b8c26c "writeback: report a Tasks-RCU quiescent state per cgwb drain pass"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260909-cgwb-tasks-rcu-qs-v1-1-967a7754771f@toxicpanda.com
+      - Link: https://lore.kernel.org/bpf/9d444098-7c03-4163-af12-bd0a79a51443@paulmck-laptop/
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 51 -> 51 commits (no change)
@@ -13,23 +20,12 @@
     - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, nobody: 11 -> 11 commits (no change)
-- mm-new: 1 -> 4 commits
-  - series: 0 (0) -> 0 (2)
+- mm-new: 4 -> 4 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, nobody: 0 -> 1 commits
-    - maintainer, reviewer: 0 -> 1 commits
-  - new commits
-    - series "mm/damon: improve readability, clarity and test coverage". (10)
-      - 31831d5fb415 "Docs/mm/damon/design: clarify bp is basis point (9/10)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260917142210.90829-11-sj@kernel.org
-    - series "mm: Fix MF_DELAYED handling on memory failure", v6. (5)
-      - 7ccb46cfb808 "mm: selftests: Add shmem into memory failure test (4/5)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-5-4b00856b5364@google.com
-    - 19395b40ec3f "mm-selftests-add-shmem-into-memory-failure-test-fix"
-      - Authored by a maintainer, reviewed by nobody
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, reviewer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

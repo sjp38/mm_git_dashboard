@@ -12,117 +12,117 @@
     - reviewer, reviewer: 6 commits
     - maintainer, no role : 1 commits
   - full commits list
-    - 0595ba8ac0b1 "mm/vmscan: drop the combined limit gate in __node_reclaim()"
+    - eb22b9f85c4c "mm/vmscan: drop the combined limit gate in __node_reclaim()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260826124409.35569-1-ridong.chen@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260723045718.2052070-1-ridong.chen@linux.dev [1]
-    - 912119ef4b6e "mm/mglru: preserve inactive placement when enabling MGLRU"
+    - 0f59aa7f937d "mm/mglru: preserve inactive placement when enabling MGLRU"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260821021606.877330-1-ridong.chen@linux.dev
     - series "memcg: remove the v1 soft limit", v2. (8 commits)
-      - 4b885525f8a4 "memcg: remove v1 soft limit reclaim" (0/8)
+      - 1588b1a25332 "memcg: remove v1 soft limit reclaim" (0/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev
-      - b69b27140ff0 "memcg: remove mem_cgroup_shrink_node()" (1/8)
+      - cd9ee5398f07 "memcg: remove mem_cgroup_shrink_node()" (1/8)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev
-      - a65d6ae0e906 "memcg: remove lru_gen_soft_reclaim()" (4/8)
+      - a50d490763ec "memcg: remove lru_gen_soft_reclaim()" (4/8)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev
     - series "mm/mglru: clean up isolate_folios for readability and clarity", v2. (2 commits)
-      - b04344ce259d "mm/mglru: make type fallback logic explicit in isolate_folios()" (0/2)
+      - 67feedae9274 "mm/mglru: make type fallback logic explicit in isolate_folios()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260829074204.45304-1-baohua@kernel.org
         - Link: https://lore.kernel.org/20260829074204.45304-2-baohua@kernel.org
-      - 8460b9175691 "mm/mglru: make retry logic explicit in isolate_folios()" (1/2)
+      - 8ffa6eef9c72 "mm/mglru: make retry logic explicit in isolate_folios()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260829074204.45304-3-baohua@kernel.org
-    - 3f493ff86a97 "mm: revert slight behavior change for swappiness 1-200"
+    - ddb07cf9a9a8 "mm: revert slight behavior change for swappiness 1-200"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260903070500.76379-1-baohua@kernel.org
-      - 40550aba3f35 "mm/vmscan: avoid pointless large folio splits without swap" (2/4)
+      - 00bf97dca6ec "mm/vmscan: avoid pointless large folio splits without swap" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260830042920.2280454-4-xueyuan.chen21@gmail.com
     - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7 commits)
-      - c53cd090693a "mm/mglru: separate folio generation update from LRU accounting" (0/7)
+      - 2f6f2663fd81 "mm/mglru: separate folio generation update from LRU accounting" (0/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-1-baohua@kernel.org
         - Link: https://lore.kernel.org/20260901232421.40157-2-baohua@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260812121658.69965-1-baohua@kernel.org/ [1]
         - Link: https://lore.kernel.org/linux-mm/20260827035416.3012015-1-xueyuan.chen21@gmail.com/ [2]
-      - b81ceb2e31e9 "mm/mglru: batch update lrugen->nr_pages in inc_min_seq()" (1/7)
+      - 0aef6c3bf0f6 "mm/mglru: batch update lrugen->nr_pages in inc_min_seq()" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-3-baohua@kernel.org
-      - b9322dc8b87b "mm/mglru: enhance cold/hot inversion handling in inc_min_seq()" (2/7)
+      - a507384abbae "mm/mglru: enhance cold/hot inversion handling in inc_min_seq()" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-4-baohua@kernel.org
-      - 2e92cf9b5d46 "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq()" (3/7)
+      - 3bbb7a37b9e4 "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq()" (3/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-5-baohua@kernel.org
-      - d8f8e2a26af3 "mm/mglru: make LRU folio prefetch helper an inline function" (4/7)
+      - ebe443e97c11 "mm/mglru: make LRU folio prefetch helper an inline function" (4/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-6-baohua@kernel.org
-      - aaa5fd1952b5 "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail" (5/7)
+      - 772dd91f5583 "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail" (5/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-7-baohua@kernel.org
-      - d8f895397c63 "mm/mglru: batch move folios to the second-oldest gen's LRU" (6/7)
+      - b2d41803527c "mm/mglru: batch move folios to the second-oldest gen's LRU" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
-      - aba2726522e7 "mm: replace PF_KSWAPD flag with kthread_func() check" (2/4)
+      - 3f0d7cee16f0 "mm: replace PF_KSWAPD flag with kthread_func() check" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
-      - 09bb9766fa0f "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
+      - 088d4af0c4ff "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
-      - 96f43a65cc8e "mm/mglru: move max_seq read into walk_update_folio" (3/6)
+      - 950cf2765b78 "mm/mglru: move max_seq read into walk_update_folio" (3/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-4-9aacbd77d4ca@tencent.com
-      - 2a5895af1c8e "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
+      - b5a638701d7a "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
-      - b5b0b53ab47a "mm/mglru: fix potential generation folio number leak" (5/6)
+      - ac841aad6beb "mm/mglru: fix potential generation folio number leak" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-6-9aacbd77d4ca@tencent.com
-    - 66faa86ed96b "mm/vmscan: avoid false-positive -Wuninitialized warning, again"
+    - c2d48255bcd6 "mm/vmscan: avoid false-positive -Wuninitialized warning, again"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/all/20260213123902.3466040-1-arnd@kernel.org/
       - Link: https://lore.kernel.org/20260916083456.4136132-1-arnd@kernel.org
-      - 4432bbd9e874 "mm: workingset: use lruvec_page_state_local() to count lru pages" (1/4)
+      - b4d29f5b3148 "mm: workingset: use lruvec_page_state_local() to count lru pages" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/2ed42f96aca124856ea30f774afb55cbe6d8ba58.1789096175.git.zhuhui@kylinos.cn
-    - ab94ccd7fb9b "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
+    - b51412122f43 "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
-    - 6d5a2e5fc3e7 "mm: mglru: clear the reference counter for rejected folios"
+    - 27fac5772edc "mm: mglru: clear the reference counter for rejected folios"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/7384df363c12e4acdaa2e0428420cd8eed320ee7.1789384831.git.baolin.wang@linux.alibaba.com
-    - f6fdbaa986db "mm/memcg: clear folio memcg after changing per memcg stats"
+    - 0e16531bf8f3 "mm/memcg: clear folio memcg after changing per memcg stats"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
-      - 42bc8fd786c1 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
+      - ec3936eef1bd "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
-      - 9190d9a76fbb "mm/page-flags: check page/folio->private instead of PG_private" (9/16)
+      - e0c302f0994d "mm/page-flags: check page/folio->private instead of PG_private" (9/16)
         - Authored by a reviewer, reviewed by nobody
         - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
-      - fe393d647870 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/40)
+      - d036bc21d38f "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/40)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-      - b24aaa5c2f09 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/40)
+      - d0506e9a3291 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-34-4583d8a23bca@kernel.org
-      - 4c6f7355ec6b "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (34/40)
+      - 8db135deed3e "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (34/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-35-4583d8a23bca@kernel.org
 - mm-new: 2 total, 0 (1) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 2 commits
   - full commits list
-    - ad3b16858ba1 "mm/mglru: restore accidentally removed seq < max_seq check"
+    - 4a80e333cd89 "mm/mglru: restore accidentally removed seq < max_seq check"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260915101556.50467-1-baohua@kernel.org
-      - adef8d6aa364 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - 53e69a5f63d0 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260911121341.178028-3-alex@ghiti.fr
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

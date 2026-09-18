@@ -7,21 +7,21 @@
     - no role, nobody: 4 commits
     - no role, no role : 1 commits
   - full commits list
-      - 906bf87ca577 "mm/execmem: use VM_FLUSH_RESET_PERMS for ROX cache allocations" (4/6)
+      - bb1e96d770c6 "mm/execmem: use VM_FLUSH_RESET_PERMS for ROX cache allocations" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-5-949b64a9f755@kernel.org
     - series "mm/execmem: fixes and cleanups for the ROX cache". (5 commits)
-      - 8a4aa534042d "mm/execmem: free ROX cache chunks only when they span an entire vm area" (0/5)
+      - 3d76352b9409 "mm/execmem: free ROX cache chunks only when they span an entire vm area" (0/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-0-11beb2a3d249@kernel.org
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-1-11beb2a3d249@kernel.org
-      - 8f4b1e88a13a "mm/execmem: handle potential allocation errors in the maple tree" (1/5)
+      - 8fd024bf2b61 "mm/execmem: handle potential allocation errors in the maple tree" (1/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-2-11beb2a3d249@kernel.org
-      - add68e7e04c7 "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE" (2/5)
+      - 8ca9c4cc6121 "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE" (2/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-3-11beb2a3d249@kernel.org
-      - c8e7588bf5a5 "mm/execmem: use cleanup infrastructure in ROX cache functions" (4/5)
+      - 851d72676d9d "mm/execmem: use cleanup infrastructure in ROX cache functions" (4/5)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-5-11beb2a3d249@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

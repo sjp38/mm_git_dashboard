@@ -1,11 +1,22 @@
 - baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 3 -> 3 commits (no change)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - a363c62a653c "mm/hugetlb: do not dissolve gigantic pages without runtime support"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260823044118.1097121-2-xialonglong2025@163.com
+    - cf0d29207cd3 "mm/hugetlb: preserve mremap address delta when skipping page tables"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260914132352.472-1-jaewook376@gmail.com
+- mm-hotfixes-unstable: 3 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 23 -> 23 commits (no change)
@@ -14,222 +25,19 @@
     - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 7 -> 7 commits (no change)
-  - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (40)
-      - f1f0a6b6e734 "mm: remove hugetlb_inline.h (26/40)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org"
-        - added "Cc: Dave Airlie <airlied@gmail.com>"
-        - added "Cc: Stephen Smalley <stephen.smalley.work@gmail.com>"
-        - added "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
-        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - added "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
-        - added "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - added "Cc: Zi Yan <ziy@nvidia.com>"
-        - added "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
-        - added "Cc: Doug Gilbert <dgilbert@interlog.com>"
-        - added "Cc: Christian Borntraeger <borntraeger@linux.ibm.com>"
-        - added "Cc: Jann Horn <jannh@google.com>"
-        - added "Cc: Helge Deller <deller@gmx.de>"
-        - added "Cc: Arnd Bergmann <arnd@arndb.de>"
-        - added "Cc: Ryan Roberts <ryan.roberts@arm.com>"
-        - added "Cc: Paul Moore <paul@paul-moore.com>"
-        - added "Cc: Will Deacon <will@kernel.org>"
-        - added "Cc: Wei Xu <weixugc@google.com>"
-        - added "Cc: Dave Hansen <dave.hansen@linux.intel.com>"
-        - added "Cc: Rik van Riel <riel@surriel.com>"
-        - added "Cc: Namhyung kim <namhyung@kernel.org>"
-        - added "Cc: Leon Romanovsky <leon@kernel.org>"
-        - added "Cc: Gregory Price <gourry@gourry.net>"
-        - added "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
-        - added "Cc: Rakie Kim <rakie.kim@sk.com>"
-        - added "Cc: Christian Brauner <brauner@kernel.org>"
-        - added "Cc: Chengming Zhou <chengming.zhou@linux.dev>"
-        - added "Cc: Jonathan Corbet <corbet@lwn.net>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - added "Cc: Marc Rutland <mark.rutland@arm.com>"
-        - added "Cc: Yuanchu Xie <yuanchu@google.com>"
-        - added "Cc: Harry Yoo <harry@kernel.org>"
-        - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
-        - added "Cc: Heiko Carstens <hca@linux.ibm.com>"
-        - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - added "Cc: Sebastian Reichel <sre@kernel.org>"
-        - added "Cc: Al Viro <viro@zeniv.linux.org.uk>"
-        - added "Cc: Axel Rasmussen <axelrasmussen@google.com>"
-        - added "Cc: Matthew Brost <matthew.brost@intel.com>"
-        - added "Cc: Dennis Dalessandro <dennis.dalessandro@cornelisnetworks.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - added "Cc: Kairui Song <kasong@tencent.com>"
-        - added "Cc: Alistair Popple <apopple@nvidia.com>"
-        - added "Cc: Greg Kroah-Hartman <gregkh@linuxfoundation.org>"
-        - added "Cc: Gerald Schaefer <gerald.schaefer@linux.ibm.com>"
-        - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
-        - added "Cc: Madhavan Srinivasan <maddy@linux.ibm.com>"
-        - added "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
-        - added "Cc: Marc Zyngier <maz@kernel.org>"
-        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Ingo Molnar <mingo@redhat.com>"
-        - added "Cc: Kumar Kartikeya Dwivedi <memxor@gmail.com>"
-        - added "Cc: Peter Zijlstra <peterz@infradead.org>"
-        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - added "Cc: Jaroslav Kysela <perex@perex.cz>"
-        - added "Cc: Vincent Guittot <vincent.guittot@linaro.org>"
-        - added "Cc: Muchun Song <muchun.song@linux.dev>"
-        - added "Cc: Maxime Ripard <mripard@kernel.org>"
-        - added "Cc: Alexei Starovoitov <ast@kernel.org>"
-        - added "Cc: David S. Miller <davem@davemloft.net>"
-        - added "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
-        - added "Cc: Nicholas Piggin <npiggin@gmail.com>"
-        - added "Cc: Jan Kara <jack@suse.cz>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Vasily Gorbik <gor@linux.ibm.com>"
-        - added "Cc: Lance Yang <lance.yang@linux.dev>"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Peter Xu <peterx@redhat.com>"
-        - added "Cc: Takashi Iwai (SUSE) <tiwai@suse.de>"
-        - added "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
-        - added "Cc: John Hubbard <jhubbard@nvidia.com>"
-        - added "Cc: Nhat Pham <nphamcs@gmail.com>"
-        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
-        - added "Cc: Janosch Frank <frankja@linux.ibm.com>"
-        - added "Cc: Barry Song <baohua@kernel.org>"
-        - added "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
-        - added "Cc: Miklos Szeredi <miklos@szeredi.hu>"
-        - added "Cc: Jaya Kumar <jayalk@intworks.biz>"
-        - added "Cc: Andreas Larsson <andreas@gaisler.com>"
-        - added "Cc: David Hildenbrand <david@kernel.org>"
-        - added "Cc: Emil Tsalapatis <emil@etsalapatis.com>"
-        - added "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-        - added "Cc: Anup Patel <anup@brainfault.org>"
-        - added "Cc: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>"
-        - added "Cc: Alexander Gordeev <agordeev@linux.ibm.com>"
-        - added "Cc: Oleg Nesterov <oleg@redhat.com>"
-        - added "Cc: Takashi Iwai <tiwai@suse.com>"
-        - added "Cc: Oscar Salvador <osalvador@suse.de>"
-        - added "Cc: Arnaldo Carvalho de Melo <acme@kernel.org>"
-        - added "Cc: Claudio Imbrenda <imbrenda@linux.ibm.com>"
-        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
-        - added "Cc: Juri Lelli <juri.lelli@redhat.com>"
-        - added "Cc: Dev Jain <dev.jain@arm.com>"
-        - added "Cc: Byungchul Park <byungchul@sk.com>"
-        - added "Cc: Andrii Nakryiko <andrii@kernel.org>"
-        - added "Cc: Chris Li <chrisl@kernel.org>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
-        - added "Cc: Eduard Zingerman <eddyz87@gmail.com>"
-        - dropped "Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-27-7d9781ed5361@kernel.org"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
-      - fe393d647870 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/40)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org"
-        - added "Cc: Dave Airlie <airlied@gmail.com>"
-        - added "Cc: Stephen Smalley <stephen.smalley.work@gmail.com>"
-        - added "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
-        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - added "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
-        - added "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - added "Cc: Zi Yan <ziy@nvidia.com>"
-        - added "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
-        - added "Cc: Doug Gilbert <dgilbert@interlog.com>"
-        - added "Cc: Christian Borntraeger <borntraeger@linux.ibm.com>"
-        - added "Cc: Jann Horn <jannh@google.com>"
-        - added "Cc: Helge Deller <deller@gmx.de>"
-        - added "Cc: Arnd Bergmann <arnd@arndb.de>"
-        - added "Cc: Ryan Roberts <ryan.roberts@arm.com>"
-        - added "Cc: Paul Moore <paul@paul-moore.com>"
-        - added "Cc: Will Deacon <will@kernel.org>"
-        - added "Cc: Wei Xu <weixugc@google.com>"
-        - added "Cc: Dave Hansen <dave.hansen@linux.intel.com>"
-        - added "Cc: Rik van Riel <riel@surriel.com>"
-        - added "Cc: Namhyung kim <namhyung@kernel.org>"
-        - added "Cc: Leon Romanovsky <leon@kernel.org>"
-        - added "Cc: Gregory Price <gourry@gourry.net>"
-        - added "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
-        - added "Cc: Rakie Kim <rakie.kim@sk.com>"
-        - added "Cc: Christian Brauner <brauner@kernel.org>"
-        - added "Cc: Chengming Zhou <chengming.zhou@linux.dev>"
-        - added "Cc: Jonathan Corbet <corbet@lwn.net>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - added "Cc: Marc Rutland <mark.rutland@arm.com>"
-        - added "Cc: Yuanchu Xie <yuanchu@google.com>"
-        - added "Cc: Harry Yoo <harry@kernel.org>"
-        - added "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
-        - added "Cc: Heiko Carstens <hca@linux.ibm.com>"
-        - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - added "Cc: Sebastian Reichel <sre@kernel.org>"
-        - added "Cc: Al Viro <viro@zeniv.linux.org.uk>"
-        - added "Cc: Axel Rasmussen <axelrasmussen@google.com>"
-        - added "Cc: Matthew Brost <matthew.brost@intel.com>"
-        - added "Cc: Dennis Dalessandro <dennis.dalessandro@cornelisnetworks.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - added "Cc: Kairui Song <kasong@tencent.com>"
-        - added "Cc: Alistair Popple <apopple@nvidia.com>"
-        - added "Cc: Greg Kroah-Hartman <gregkh@linuxfoundation.org>"
-        - added "Cc: Gerald Schaefer <gerald.schaefer@linux.ibm.com>"
-        - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
-        - added "Cc: Madhavan Srinivasan <maddy@linux.ibm.com>"
-        - added "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
-        - added "Cc: Albert Ou <aou@eecs.berkeley.edu>"
-        - added "Cc: Mike Rapoport <rppt@kernel.org>"
-        - added "Cc: Ingo Molnar <mingo@redhat.com>"
-        - added "Cc: Kumar Kartikeya Dwivedi <memxor@gmail.com>"
-        - added "Cc: Peter Zijlstra <peterz@infradead.org>"
-        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - added "Cc: Jaroslav Kysela <perex@perex.cz>"
-        - added "Cc: Vincent Guittot <vincent.guittot@linaro.org>"
-        - added "Cc: Muchun Song <muchun.song@linux.dev>"
-        - added "Cc: Maxime Ripard <mripard@kernel.org>"
-        - added "Cc: Alexei Starovoitov <ast@kernel.org>"
-        - added "Cc: David S. Miller <davem@davemloft.net>"
-        - added "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
-        - added "Cc: Nicholas Piggin <npiggin@gmail.com>"
-        - added "Cc: Jan Kara <jack@suse.cz>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - added "Cc: Vasily Gorbik <gor@linux.ibm.com>"
-        - added "Cc: Lance Yang <lance.yang@linux.dev>"
-        - added "Cc: Michal Hocko <mhocko@suse.com>"
-        - added "Cc: Peter Xu <peterx@redhat.com>"
-        - added "Cc: Takashi Iwai (SUSE) <tiwai@suse.de>"
-        - added "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
-        - added "Cc: John Hubbard <jhubbard@nvidia.com>"
-        - added "Cc: Nhat Pham <nphamcs@gmail.com>"
-        - added "Cc: Baoquan He <baoquan.he@linux.dev>"
-        - added "Cc: Janosch Frank <frankja@linux.ibm.com>"
-        - added "Cc: Barry Song <baohua@kernel.org>"
-        - added "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
-        - added "Cc: Miklos Szeredi <miklos@szeredi.hu>"
-        - added "Cc: Jaya Kumar <jayalk@intworks.biz>"
-        - added "Cc: Andreas Larsson <andreas@gaisler.com>"
-        - added "Cc: David Hildenbrand <david@kernel.org>"
-        - added "Cc: Emil Tsalapatis <emil@etsalapatis.com>"
-        - added "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-        - added "Cc: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>"
-        - added "Cc: Alexander Gordeev <agordeev@linux.ibm.com>"
-        - added "Cc: Oleg Nesterov <oleg@redhat.com>"
-        - added "Cc: Takashi Iwai <tiwai@suse.com>"
-        - added "Cc: Oscar Salvador <osalvador@suse.de>"
-        - added "Cc: Arnaldo Carvalho de Melo <acme@kernel.org>"
-        - added "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
-        - added "Cc: Juri Lelli <juri.lelli@redhat.com>"
-        - added "Cc: Dev Jain <dev.jain@arm.com>"
-        - added "Cc: Byungchul Park <byungchul@sk.com>"
-        - added "Cc: Andrii Nakryiko <andrii@kernel.org>"
-        - added "Cc: Chris Li <chrisl@kernel.org>"
-        - added "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - added "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
-        - added "Cc: Eduard Zingerman <eddyz87@gmail.com>"
-        - dropped "Link: https://lore.kernel.org/20260914-b4-mmap-prepare-vma-flag-sanify-v2-28-7d9781ed5361@kernel.org"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-- mm-new: 1 -> 2 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
+- mm-new: 2 -> 4 commits
+  - series: 0 (1) -> 1 (3)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 3 commits
   - new commits
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - 9711732e0821 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+    - series "mm/hugetlb_cgroup: move the per-node usage along with the folio", v3. (2)
+      - 918589af02e8 "mm/hugetlb_cgroup: move per-node usage on cross node migration (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-0-2b6d8c2bdc36@kylinos.cn
+        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-1-2b6d8c2bdc36@kylinos.cn
+      - 0162b6607336 "mm/hugetlb_cgroup: move per-node usage on cgroup reparenting (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-2-2b6d8c2bdc36@kylinos.cn
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

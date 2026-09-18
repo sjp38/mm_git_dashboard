@@ -8,11 +8,11 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - 1a90333381a7 "mm: make per-VMA locks available universally" (0/7)
+      - f94f90462c15 "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-      - b649c7080450 "binder: remove mmap_lock fallback" (3/7)
+      - 7b1154437c64 "binder: remove mmap_lock fallback" (3/7)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260831203056.838265-5-surenb@google.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
