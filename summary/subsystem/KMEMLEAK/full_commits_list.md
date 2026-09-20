@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422c
+- baseline: v7.3-rc1-475-g0d9ff90a5422
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -8,14 +8,14 @@
     - no role, maintainer: 3 commits
   - full commits list
     - series "kmemleak: fix stale documentation and raise the verbose default". (3 commits)
-      - 2350b4eec132 "Documentation: kmemleak: describe the metadata pool, not the early log" (0/3)
+      - 0c0386ee7e5f "Documentation: kmemleak: describe the metadata pool, not the early log" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917142210.90829-1-sj@kernel.org
         - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-1-84fde6d1f749@debian.org
-      - b241c78267e3 "Documentation: kmemleak: fix stale statements about scanning" (1/3)
+      - 693037413e52 "Documentation: kmemleak: fix stale statements about scanning" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-2-84fde6d1f749@debian.org
-      - 0bb26d208a35 "mm: kmemleak: raise min_unref_scans to 3 for verbose auto-scan" (2/3)
+      - ce21d1d014a1 "mm: kmemleak: raise min_unref_scans to 3 for verbose auto-scan" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-3-84fde6d1f749@debian.org
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

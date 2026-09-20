@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
+- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -6,11 +6,15 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 12 commits
+- mm-unstable: 12 -> 12 commits (no change)
   - series: 2 (9) -> 2 (9) (no change)
-    - no role, nobody: 2 -> 3 commits
-    - no role, no role : 9 -> 9 commits (no change)
+    - no role, nobody: 3 -> 2 commits
+    - no role, no role : 9 -> 10 commits
   - new commits
+    - a3d0117e02bf "mm/vmalloc: use %p for pointer formatting"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
+  - dropped commits
     - 3318d6fa6dde "mm/vmalloc: Use %p for pointer formatting"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de

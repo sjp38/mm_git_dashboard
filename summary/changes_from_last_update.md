@@ -1,287 +1,101 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
-- mm-hotfixes-stable: 30 -> 28 commits
+- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422
+- mm-hotfixes-stable: 28 -> 28 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 9 -> 8 commits
-    - no role, reviewer: 4 -> 3 commits
+    - no role, no role : 8 -> 8 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
     - maintainer, maintainer: 1 -> 1 commits (no change)
-  - dropped commits
-    - 843cb682d15b "x86/mm: fix pmd_modify() dropping the dirty bit"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260903031608.1194238-1-vernon2gm@gmail.com
-      - Link: https://lore.kernel.org/ap6IYeTM8PMinxo-@pedro-suse.tail5790ac.ts.net [1]
-- mm-hotfixes-unstable: 10 -> 13 commits
-  - series: 0 (0) -> 1 (3)
+- mm-hotfixes-unstable: 13 -> 13 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 2 -> 5 commits
-    - no role, reviewer: 0 -> 1 commits
+    - no role, no role : 5 -> 5 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 0 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - series "MAINTAINERS: rework MEMORY MANAGEMENT - MEMORY POLICY". (3)
-      - 92123d319682 "MAINTAINERS: split up MEMORY MANAGEMENT - MEMORY POLICY AND MIGRATION (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918-maintainers-mempolicy-v1-1-9a94cac6d135@kernel.org
-      - cde07290f9b1 "MAINTAINERS: move memory tiering under MEMORY MANAGEMENT - NUMA PLACEMENT (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918-maintainers-mempolicy-v1-2-9a94cac6d135@kernel.org
-      - 22ec6f02cd92 "MAINTAINERS: make Gregory a co-maintainer of MEMORY MANAGEMENT - NUMA PLACEMENT (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918-maintainers-mempolicy-v1-3-9a94cac6d135@kernel.org
   - changed commits
-    - 872cdc8998bc "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-stable -> mm-hotfixes-unstable
-      - Link: https://lore.kernel.org/20260904115629.3993331-1-dipiets@amazon.it
-      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
-      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
-      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
+    - series "MAINTAINERS: rework MEMORY MANAGEMENT - MEMORY POLICY". (3)
+      - 5ae59a36afe6 "MAINTAINERS: split up MEMORY MANAGEMENT - MEMORY POLICY AND MIGRATION (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: SJ Park <sj@kernel.org>"
+        - Link: https://lore.kernel.org/20260918-maintainers-mempolicy-v1-1-9a94cac6d135@kernel.org
+      - a162ef093994 "MAINTAINERS: move memory tiering under MEMORY MANAGEMENT - NUMA PLACEMENT (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-byt: SJ Park <sj@kernel.org>"
+        - Link: https://lore.kernel.org/20260918-maintainers-mempolicy-v1-2-9a94cac6d135@kernel.org
+      - 183a889e20a4 "MAINTAINERS: make Gregory a co-maintainer of MEMORY MANAGEMENT - NUMA PLACEMENT (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: SJ Park <sj@kernel.org>"
+        - Link: https://lore.kernel.org/20260918-maintainers-mempolicy-v1-3-9a94cac6d135@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 510 -> 512 commits
+- mm-unstable: 512 -> 512 commits (no change)
   - series: 78 (418) -> 78 (418) (no change)
-    - no role, nobody: 76 -> 77 commits
-    - no role, no role : 145 -> 145 commits (no change)
-    - no role, reviewer: 77 -> 76 commits
+    - no role, nobody: 77 -> 76 commits
+    - no role, no role : 145 -> 146 commits
+    - no role, reviewer: 76 -> 76 commits (no change)
     - no role, maintainer: 78 -> 78 commits (no change)
     - reviewer, nobody: 2 -> 2 commits (no change)
-    - reviewer, no role : 5 -> 2 commits
-    - reviewer, reviewer: 10 -> 9 commits
+    - reviewer, no role : 2 -> 2 commits (no change)
+    - reviewer, reviewer: 9 -> 9 commits (no change)
     - reviewer, maintainer: 6 -> 6 commits (no change)
     - maintainer, nobody: 88 -> 88 commits (no change)
-    - maintainer, no role : 22 -> 25 commits
-    - maintainer, reviewer: 1 -> 4 commits
+    - maintainer, no role : 25 -> 25 commits (no change)
+    - maintainer, reviewer: 4 -> 4 commits (no change)
   - new commits
+    - a3d0117e02bf "mm/vmalloc: use %p for pointer formatting"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
+  - dropped commits
     - 3318d6fa6dde "mm/vmalloc: Use %p for pointer formatting"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
-  - changed commits
-    - series "mm/mempolicy: stop copying state in the interleave paths", v2. (2)
-      - 9288aed791d8 "mm/mempolicy: use SRCU for the weighted interleave state (0/2)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260918001203.3389165-1-gourry@gourry.net"
-        - added "Link: https://lore.kernel.org/20260918001203.3389165-2-gourry@gourry.net"
-        - added "Assisted-by: LLM"
-        - added "Cc: Matthew Brost <matthew.brost@intel.com>"
-        - dropped "Link: https://lore.kernel.org/20260829015943.1258774-2-gourry@gourry.net"
-        - dropped "Link: https://lore.kernel.org/20260829015943.1258774-1-gourry@gourry.net"
-        - dropped "Assisted-by: Claude:claude-opus-5"
-        - dropped "Cc: Chenwandun <chenwandun@huawei.com>"
-        - dropped "Cc: "Uladzislau Rezki (Sony)" <urezki@gmail.com>"
-        - Link: https://lore.kernel.org/20260918001203.3389165-1-gourry@gourry.net
-        - Link: https://lore.kernel.org/20260918001203.3389165-2-gourry@gourry.net
-      - 0e722ce312ee "mm/mempolicy: stop copying the nodemask in the interleave paths (1/2)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Assisted-by: LLM"
-        - added "Link: https://lore.kernel.org/20260918001203.3389165-3-gourry@gourry.net"
-        - added "Cc: Matthew Brost <matthew.brost@intel.com>"
-        - dropped "Assisted-by: Claude:claude-opus-5"
-        - dropped "Link: https://lore.kernel.org/20260829015943.1258774-3-gourry@gourry.net"
-        - dropped "Cc: Chenwandun <chenwandun@huawei.com>"
-        - dropped "Cc: "Uladzislau Rezki (Sony)" <urezki@gmail.com>"
-        - Link: https://lore.kernel.org/20260918001203.3389165-3-gourry@gourry.net
-    - series "mm/collapse: separate a collapse from its callers", v3. (12)
-      - 0098fa72938f "mm/collapse: separate scanning a PTE table from collapsing it (7/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260916093145.4022188-9-kirill@shutemov.name
-      - 6afe7f3a82b3 "mm/collapse: open-code collapse_single_pmd() in its two callers (8/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260916093145.4022188-10-kirill@shutemov.name
-    - series "mm/huge_memory: clean up and decouple the anon and file split helpers", v5. (17)
-      - adc3ab6ef618 "mm/huge_memory: move unmap and remap into the split helpers (7/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-8-39878b37dfb0@tencent.com
-      - ad3ef91b7c86 "mm/huge_memory: rename remap_page() to remap_anon_folio() (8/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-9-39878b37dfb0@tencent.com
-      - 4afc191f3ab5 "mm/huge_memory: move the racy refcount check into unmap_folio() (9/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-10-39878b37dfb0@tencent.com
-      - d109e629033c "mm/huge_memory: move filemap management into the file split helper (10/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-11-39878b37dfb0@tencent.com
-      - 63a83efeb20a "mm/huge_memory: move anon_vma handling into the anon split helper (11/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-12-39878b37dfb0@tencent.com
-      - 90c91a5b3c53 "mm/huge_memory: clean up after-split folio freeing in __folio_split (14/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-15-39878b37dfb0@tencent.com
-      - 1653d7dacfd2 "mm/huge_memory: count only swap cache refs in anon folio split (15/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-16-39878b37dfb0@tencent.com
-      - e7559a48211c "mm/huge_memory: drop the redundant mapping argument of __split_frozen_folio (16/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand (Arm) <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-17-39878b37dfb0@tencent.com
-    - 00a66371c747 "mm/huge_memory: simplify pgtable deposit detection"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-unstable
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - Link: https://lore.kernel.org/20260917054015.23553-1-lance.yang@linux.dev
-- mm-new: 63 -> 81 commits
-  - series: 8 (47) -> 10 (60)
-    - no role, nobody: 9 -> 8 commits
-    - no role, no role : 19 -> 33 commits
-    - no role, reviewer: 6 -> 7 commits
-    - no role, maintainer: 17 -> 20 commits
-    - reviewer, maintainer: 0 -> 1 commits
+- mm-new: 81 -> 81 commits (no change)
+  - series: 10 (60) -> 10 (60) (no change)
+    - no role, nobody: 8 -> 6 commits
+    - no role, no role : 33 -> 35 commits
+    - no role, reviewer: 7 -> 7 commits (no change)
+    - no role, maintainer: 20 -> 20 commits (no change)
+    - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 8 -> 8 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - series "read proc/pid/smaps_rollup under per-vma lock", v5. (7)
-      - 3ea1dbe96b76 "proc/task_mmu: remove unnecessary helpers (0/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918153318.758387-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260918153318.758387-2-surenb@google.com
-      - 4b0e29f898db "proc/task_mmu: remove unnecessary inlines in function definitions (1/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918153318.758387-3-surenb@google.com
-      - 853c175f7e47 "proc/task_mmu: clarify shmem mapping walk conditions in smap_gather_stats() (2/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918153318.758387-4-surenb@google.com
-      - c60266e33020 "proc/task_mmu: remove special-casing of smap_gather_stats() start parameter (3/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918153318.758387-5-surenb@google.com
-      - f741805f3917 "proc/task_mmu: change proc_get_vma() to stop returning gate VMA at the end (4/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918153318.758387-6-surenb@google.com
-      - e3a48f3a49f4 "proc/task_mmu: read proc/pid/smaps_rollup under per-vma lock (5/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918153318.758387-7-surenb@google.com
-        - Link: https://github.com/paulmckrcu/proc-mmap_sem-test [1]
-      - 6bb6053540e6 "selftests/proc: add /proc/pid/smaps_rollup tearing tests (6/7)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918153318.758387-8-surenb@google.com
-    - e44538252439 "mm/swapops: remove unused is_hwpoison_entry()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
-    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6)
-      - 855732161617 "selftests/mm: make file helpers return errors (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918112234.195857-1-sarthak.sharma@arm.com
-        - Link: https://lore.kernel.org/20260918112234.195857-2-sarthak.sharma@arm.com
-      - a9a31adc6c3a "selftests-mm-make-file-helpers-return-errors-fix (1/6)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com
-      - 25e517b68def "tools/lib/mm: add shared file helpers (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918112234.195857-3-sarthak.sharma@arm.com
-      - 478aaddb843e "tools/lib/mm: move hugepage_settings out of selftests (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
-      - c2c92f28d194 "tools/mm: move gup_test from selftests/mm to tools/mm (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918112234.195857-5-sarthak.sharma@arm.com
-      - 256786f608dc "tools/mm: make gup_bench a benchmark only tool (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918112234.195857-6-sarthak.sharma@arm.com
-    - 4b56fa505d91 "selftests/mm: add a GUP selftest"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
-    - b02a5b0ce53e "mm/shmem: report RCU-tasks quiescent states while undoing a range"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260918-shmem-tasks-rcu-v1-1-79acf91a2569@debian.org
-    - 17c4a95d757b "mm: constify arguments in default pxdp_get()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260918064928.793742-1-anshuman.khandual@arm.com
-    - 59c4e791726d "mm/alloc_tag: account for reserved tag ids in the kernel tag check"
-      - Authored by a reviewer, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260916075557.121316-1-hao.ge@linux.dev
   - changed commits
     - series "mm: zswap: free cold writeback folios promptly", v5. (3)
-      - 739e993e3d1f "mm: swap: move LRU insertion out of the swap cache allocator (0/3)"
+      - e7d7c8e9b0fa "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
         - Authored by no role player, reviewed by a reviewer
         - added "Reviewed-by: Barry Song <baohua@kernel.org>"
         - dropped "Cc: Barry Song <baohua@kernel.org>"
-        - Link: https://lore.kernel.org/20260911121341.178028-1-alex@ghiti.fr
-        - Link: https://lore.kernel.org/20260911121341.178028-2-alex@ghiti.fr
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - ba15d4048ec0 "mm/vma: const-ify vma_assert_stabilised() and associated functions (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de> "
-        - added "Reviewed-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
-        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-0-5c22314a72e7@kernel.org
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-1-5c22314a72e7@kernel.org
-      - 93ad19f14712 "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 142cdb158d5a "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Acked-by: Pedro Falcato <pfalcato@suse.de>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - series "kmemleak: fix stale documentation and raise the verbose default". (3)
-      - 2350b4eec132 "Documentation: kmemleak: describe the metadata pool, not the early log (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
-        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - Link: https://lore.kernel.org/20260917142210.90829-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-1-84fde6d1f749@debian.org
-      - b241c78267e3 "Documentation: kmemleak: fix stale statements about scanning (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
-        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-2-84fde6d1f749@debian.org
-      - 0bb26d208a35 "mm: kmemleak: raise min_unref_scans to 3 for verbose auto-scan (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
-        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-3-84fde6d1f749@debian.org
-    - series "mm/hugetlb_cgroup: move the per-node usage along with the folio", v2. (2)
-      - e84e75d4665b "mm/hugetlb_cgroup: move per-node usage on cross node migration (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - dropped "Cc: Hongfu Li <lihongfu@kylinos.cn>"
-        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-0-2b6d8c2bdc36@kylinos.cn
-        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-1-2b6d8c2bdc36@kylinos.cn
+        - Link: https://lore.kernel.org/20260911121341.178028-3-alex@ghiti.fr
+    - series "mm/damon: improve readability, clarity and test coverage". (10)
+      - 444fdc3c73c6 "Docs/mm/damon/design: clarify bp is basis point (9/10)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Acked-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
+        - Link: https://lore.kernel.org/20260917142210.90829-11-sj@kernel.org
+    - 6f2975585bb3 "mm/swapops: remove unused is_hwpoison_entry()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
+    - c820d35bc06c "mm/shmem: report RCU-tasks quiescent states while undoing a range"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - Link: https://lore.kernel.org/20260918-shmem-tasks-rcu-v1-1-79acf91a2569@debian.org
+    - 221f1b9c1f78 "mm: constify arguments in default pxdp_get()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - Link: https://lore.kernel.org/20260918064928.793742-1-anshuman.khandual@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 101 -> 101 commits (no change)
   - series: 14 (43) -> 14 (43) (no change)
-    - no role, nobody: 48 -> 47 commits
+    - no role, nobody: 47 -> 47 commits (no change)
     - no role, no role : 25 -> 25 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 10 -> 10 commits (no change)
     - reviewer, nobody: 3 -> 3 commits (no change)
     - maintainer, nobody: 10 -> 10 commits (no change)
     - maintainer, no role : 5 -> 5 commits (no change)
-  - changed commits
-    - dda48b4765c0 "kcov: ignore an out-of-range comparison count in write_comp_data()"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Alexander Potapenko <glider@google.com>"
-      - dropped "Cc: Alexander Potapenko <glider@google.com>"
-      - Link: https://lore.kernel.org/20260917104306.22145-1-fangxy@xiaopeng.com [1]

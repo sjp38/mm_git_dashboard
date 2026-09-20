@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422c (no change)
+- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -10,23 +10,9 @@
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 6 commits
-  - series: 0 (0) -> 0 (3)
-    - no role, no role : 2 -> 6 commits
-  - new commits
-    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6)
-      - 478aaddb843e "tools/lib/mm: move hugepage_settings out of selftests (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
-      - c2c92f28d194 "tools/mm: move gup_test from selftests/mm to tools/mm (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918112234.195857-5-sarthak.sharma@arm.com
-      - 256786f608dc "tools/mm: make gup_bench a benchmark only tool (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260918112234.195857-6-sarthak.sharma@arm.com
-    - 4b56fa505d91 "selftests/mm: add a GUP selftest"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
+- mm-new: 6 -> 6 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
+    - no role, no role : 6 -> 6 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

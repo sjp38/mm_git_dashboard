@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422c
+- baseline: v7.3-rc1-475-g0d9ff90a5422
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,11 +7,11 @@
     - no role, maintainer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-      - 7a3549943df8 "zsmalloc: remove old object read API" (1/2)
+      - b8c186c85e55 "zsmalloc: remove old object read API" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260907105739.1793316-3-senozhatsky@chromium.org
     - series "Remove PG_private by using page/folio->private", v4. (16 commits)
-      - 06b70541847d "mm/zsmalloc: replace PG_private with pointer comparison" (0/16)
+      - 5cef7b2d6537 "mm/zsmalloc: replace PG_private with pointer comparison" (0/16)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-1-848550f7574e@nvidia.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
