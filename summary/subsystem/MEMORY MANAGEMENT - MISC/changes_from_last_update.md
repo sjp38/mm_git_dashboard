@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422
+- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc1-475-g0d9ff90a5422 (no change)
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
@@ -20,12 +20,6 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/damon: improve readability, clarity and test coverage". (10)
-      - 444fdc3c73c6 "Docs/mm/damon/design: clarify bp is basis point (9/10)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Acked-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
-        - Link: https://lore.kernel.org/20260917142210.90829-11-sj@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

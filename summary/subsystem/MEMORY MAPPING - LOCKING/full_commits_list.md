@@ -8,14 +8,14 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - e8b85d9526fd "mm: make per-VMA locks available universally" (0/7)
+      - dc486d9f832c "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-      - 877340c41735 "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
+      - da2bdee1a858 "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com
-      - d02f07bdd9b6 "mm: change the contract for free_pgtables(), update docs" (11/12)
+      - 73ea8e0bd986 "mm: change the contract for free_pgtables(), update docs" (11/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org
 - mm-new: 1 total, 1 (1) series, 0 non-series commits
@@ -23,7 +23,7 @@
     - no role, no role : 1 commits
   - full commits list
     - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3 commits)
-      - 4029f9a27154 "mm/vma: const-ify vma_assert_stabilised() and associated functions" (0/3)
+      - 778527db8450 "mm/vma: const-ify vma_assert_stabilised() and associated functions" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-0-5c22314a72e7@kernel.org
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-1-5c22314a72e7@kernel.org

@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - maintainer, nobody: 1 commits
   - full commits list
-    - 2f3ba8420b21 "kasan: unpoison task stack below watermark only in generic mode"
+    - 011eb3e01d23 "kasan: unpoison task stack below watermark only in generic mode"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260916175113.1327454-1-ryabinin.a.a@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits

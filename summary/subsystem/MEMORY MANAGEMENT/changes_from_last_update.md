@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422
+- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc1-475-g0d9ff90a5422 (no change)
 - mm-hotfixes-stable: 18 -> 18 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
@@ -20,8 +20,8 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 361 -> 361 commits (no change)
   - series: 57 (299) -> 57 (299) (no change)
-    - no role, nobody: 52 -> 51 commits
-    - no role, no role : 83 -> 84 commits
+    - no role, nobody: 51 -> 51 commits (no change)
+    - no role, no role : 84 -> 84 commits (no change)
     - no role, reviewer: 68 -> 68 commits (no change)
     - no role, maintainer: 53 -> 53 commits (no change)
     - reviewer, nobody: 2 -> 2 commits (no change)
@@ -31,34 +31,15 @@
     - maintainer, nobody: 61 -> 61 commits (no change)
     - maintainer, no role : 22 -> 22 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
-  - new commits
-    - a3d0117e02bf "mm/vmalloc: use %p for pointer formatting"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
-  - dropped commits
-    - 3318d6fa6dde "mm/vmalloc: Use %p for pointer formatting"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
 - mm-new: 44 -> 44 commits (no change)
   - series: 4 (30) -> 4 (30) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 11 -> 12 commits
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 15 -> 15 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm: zswap: free cold writeback folios promptly", v5. (3)
-      - e7d7c8e9b0fa "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
-        - Link: https://lore.kernel.org/20260911121341.178028-3-alex@ghiti.fr
-    - c820d35bc06c "mm/shmem: report RCU-tasks quiescent states while undoing a range"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - Link: https://lore.kernel.org/20260918-shmem-tasks-rcu-v1-1-79acf91a2569@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

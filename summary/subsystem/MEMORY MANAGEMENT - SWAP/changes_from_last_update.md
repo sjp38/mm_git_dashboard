@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422
+- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc1-475-g0d9ff90a5422 (no change)
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
@@ -18,21 +18,10 @@
     - maintainer, reviewer: 1 -> 1 commits (no change)
 - mm-new: 8 -> 8 commits (no change)
   - series: 1 (6) -> 1 (6) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 1 -> 2 commits
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-  - changed commits
-    - series "mm: zswap: free cold writeback folios promptly", v5. (3)
-      - e7d7c8e9b0fa "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
-        - Link: https://lore.kernel.org/20260911121341.178028-3-alex@ghiti.fr
-    - 6f2975585bb3 "mm/swapops: remove unused is_hwpoison_entry()"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

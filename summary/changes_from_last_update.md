@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422c -> v7.3-rc1-475-g0d9ff90a5422
+- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc1-475-g0d9ff90a5422 (no change)
 - mm-hotfixes-stable: 28 -> 28 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 6 -> 6 commits (no change)
@@ -17,26 +17,12 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "MAINTAINERS: rework MEMORY MANAGEMENT - MEMORY POLICY". (3)
-      - 5ae59a36afe6 "MAINTAINERS: split up MEMORY MANAGEMENT - MEMORY POLICY AND MIGRATION (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: SJ Park <sj@kernel.org>"
-        - Link: https://lore.kernel.org/20260918-maintainers-mempolicy-v1-1-9a94cac6d135@kernel.org
-      - a162ef093994 "MAINTAINERS: move memory tiering under MEMORY MANAGEMENT - NUMA PLACEMENT (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-byt: SJ Park <sj@kernel.org>"
-        - Link: https://lore.kernel.org/20260918-maintainers-mempolicy-v1-2-9a94cac6d135@kernel.org
-      - 183a889e20a4 "MAINTAINERS: make Gregory a co-maintainer of MEMORY MANAGEMENT - NUMA PLACEMENT (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: SJ Park <sj@kernel.org>"
-        - Link: https://lore.kernel.org/20260918-maintainers-mempolicy-v1-3-9a94cac6d135@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 512 -> 512 commits (no change)
   - series: 78 (418) -> 78 (418) (no change)
-    - no role, nobody: 77 -> 76 commits
-    - no role, no role : 145 -> 146 commits
+    - no role, nobody: 76 -> 76 commits (no change)
+    - no role, no role : 146 -> 146 commits (no change)
     - no role, reviewer: 76 -> 76 commits (no change)
     - no role, maintainer: 78 -> 78 commits (no change)
     - reviewer, nobody: 2 -> 2 commits (no change)
@@ -46,56 +32,28 @@
     - maintainer, nobody: 88 -> 88 commits (no change)
     - maintainer, no role : 25 -> 25 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
-  - new commits
-    - a3d0117e02bf "mm/vmalloc: use %p for pointer formatting"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
-  - dropped commits
-    - 3318d6fa6dde "mm/vmalloc: Use %p for pointer formatting"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
 - mm-new: 81 -> 81 commits (no change)
   - series: 10 (60) -> 10 (60) (no change)
-    - no role, nobody: 8 -> 6 commits
-    - no role, no role : 33 -> 35 commits
+    - no role, nobody: 6 -> 6 commits (no change)
+    - no role, no role : 35 -> 35 commits (no change)
     - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 20 -> 20 commits (no change)
     - reviewer, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 8 -> 8 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: zswap: free cold writeback folios promptly", v5. (3)
-      - e7d7c8e9b0fa "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
-        - Link: https://lore.kernel.org/20260911121341.178028-3-alex@ghiti.fr
-    - series "mm/damon: improve readability, clarity and test coverage". (10)
-      - 444fdc3c73c6 "Docs/mm/damon/design: clarify bp is basis point (9/10)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Acked-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
-        - Link: https://lore.kernel.org/20260917142210.90829-11-sj@kernel.org
-    - 6f2975585bb3 "mm/swapops: remove unused is_hwpoison_entry()"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
-    - c820d35bc06c "mm/shmem: report RCU-tasks quiescent states while undoing a range"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - Link: https://lore.kernel.org/20260918-shmem-tasks-rcu-v1-1-79acf91a2569@debian.org
-    - 221f1b9c1f78 "mm: constify arguments in default pxdp_get()"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - Link: https://lore.kernel.org/20260918064928.793742-1-anshuman.khandual@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 101 -> 101 commits (no change)
+- mm-nonmm-unstable: 101 -> 100 commits
   - series: 14 (43) -> 14 (43) (no change)
     - no role, nobody: 47 -> 47 commits (no change)
     - no role, no role : 25 -> 25 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 10 -> 10 commits (no change)
     - reviewer, nobody: 3 -> 3 commits (no change)
-    - maintainer, nobody: 10 -> 10 commits (no change)
+    - maintainer, nobody: 10 -> 9 commits
     - maintainer, no role : 5 -> 5 commits (no change)
+  - dropped commits
+    - c6f6b3e691f6 "ocfs2: retain all security xattrs during inode creation"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20260917014825.678947-1-joseph.qi@linux.alibaba.com
