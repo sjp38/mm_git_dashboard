@@ -6,16 +6,70 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 6 -> 6 commits (no change)
-  - series: 0 (6) -> 0 (6) (no change)
+- mm-unstable: 6 -> 8 commits
+  - series: 0 (6) -> 0 (7)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, no role : 1 -> 2 commits
+  - changed commits
+    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
+      - 966bc94a1665 "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private (7/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260920-remove-pg_private-v5-8-bb68b6a21869@nvidia.com"
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260913-remove-pg_private-v4-8-848550f7574e@nvidia.com"
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-8-bb68b6a21869@nvidia.com
+      - 960b5b5c1333 "mm/page-flags: check page/folio->private instead of PG_private (9/17)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
+      - c37af67327e8 "treewide: remove folio_set/clear_private() usage (10/17)"
+        - Authored by a reviewer, reviewed by no role player
+        - added "Assisted-by: LLM"
+        - added "Link: https://lore.kernel.org/20260920-remove-pg_private-v5-11-bb68b6a21869@nvidia.com"
+        - dropped "Link: https://lore.kernel.org/20260913-remove-pg_private-v4-11-848550f7574e@nvidia.com"
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-11-bb68b6a21869@nvidia.com
+      - 08edff782d95 "treewide: remove PagePrivate() and PG_private from comments and docs (15/17)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com"
+        - dropped "Link: https://lore.kernel.org/20260913-remove-pg_private-v4-15-848550f7574e@nvidia.com"
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com
+    - e89ff60e6856 "mm: filemap: move lruvec accounting outside the xarray lock"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Jan Kara <jack@suse.cz>"
+      - added "Reviewed-by: Vishal Moola (Fractile) <vishal.moola@gmail.com>"
+      - dropped "Cc: Jan Kara <jack@suse.cz>"
+      - Link: https://lore.kernel.org/20260916125122.2696271-1-usama.arif@linux.dev
+    - series "mm: zswap: free cold writeback folios promptly", v6. (3)
+      - debcef32116f "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr"
+        - added "Cc: Matthew Wilcox <willy@infradead.org>"
+        - added "Cc: Christian Brauner (Amutable) <brauner@kernel.org>"
+        - added "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+        - added "Cc: "David Hildenbrand (arm)" <david@kernel.org>"
+        - added "Cc: Chis Li <chrisl@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260911121341.178028-3-alex@ghiti.fr"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
+        - dropped "Cc: Chris Li <chrisl@kernel.org>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Christian Brauner <brauner@kernel.org>"
+        - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
+- mm-new: 2 -> 0 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

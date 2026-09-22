@@ -5,13 +5,22 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 3 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+- mm-unstable: 3 -> 4 commits
+  - series: 1 (3) -> 2 (4)
+    - no role, no role : 2 -> 3 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
-  - series: 1 (1) -> 1 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - b5ef954283ca "mm/vma: const-ify vma_assert_stabilised() and associated functions (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-0-5c22314a72e7@kernel.org
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-1-5c22314a72e7@kernel.org
+- mm-new: 1 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

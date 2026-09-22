@@ -5,15 +5,35 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 9 -> 9 commits (no change)
-  - series: 0 (7) -> 0 (7) (no change)
+- mm-unstable: 9 -> 12 commits
+  - series: 0 (7) -> 0 (9)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
+    - no role, no role : 4 -> 5 commits
+    - no role, reviewer: 0 -> 2 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+  - changed commits
+    - d5df566f1db2 "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - dropped "Cc: Gregory Price <gourry@gourry.net>"
+      - Link: https://lore.kernel.org/20260912110540.3203010-1-gourry@gourry.net
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - 55f77b17f7af "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+      - 2313dae43c12 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+- mm-new: 3 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

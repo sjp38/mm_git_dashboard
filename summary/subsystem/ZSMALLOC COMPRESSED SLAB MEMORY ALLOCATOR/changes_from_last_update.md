@@ -9,6 +9,17 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
+      - a08e94a1df96 "mm/zsmalloc: replace PG_private with pointer comparison (0/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20260920-remove-pg_private-v5-1-bb68b6a21869@nvidia.com"
+        - added "Link: https://lore.kernel.org/20260920-remove-pg_private-v5-0-bb68b6a21869@nvidia.com"
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260913-remove-pg_private-v4-1-848550f7574e@nvidia.com"
+        - dropped "Cc: Sergey Senozhatsky <senozhatsky@chromium.org>"
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-0-bb68b6a21869@nvidia.com
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-1-bb68b6a21869@nvidia.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

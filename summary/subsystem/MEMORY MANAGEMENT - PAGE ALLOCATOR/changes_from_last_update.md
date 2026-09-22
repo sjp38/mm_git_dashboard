@@ -6,16 +6,44 @@
     - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 11 commits (no change)
+- mm-unstable: 11 -> 13 commits
   - series: 3 (7) -> 3 (7) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 7 -> 7 commits (no change)
+    - no role, reviewer: 7 -> 9 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+  - changed commits
+    - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2)
+      - 32e00533670a "mm/page_isolation: fix UBSAN shift-out-of-bounds warning (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Qi Xi <xiqi2@huawei.com>"
+        - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
+    - series "mm: refactor zonelist constructors and iterators", v2. (2)
+      - 9972684a554b "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists() (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260912030424.2889731-3-gourry@gourry.net
+    - ff3dbd23d652 "mm/page_alloc: apply per-task GFP context in bulk allocator"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://sashiko.dev/#/patchset/20260907120949.418450-1-liuqiqi%40kylinos.cn
+      - Link: https://lore.kernel.org/all/20260907120949.418450-1-liuqiqi@kylinos.cn/ [1]
+      - Link: https://lore.kernel.org/20260915074928.327471-1-liuqiqi@kylinos.cn
+    - f4edf5b30669 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
+- mm-new: 2 -> 1 commits
+  - series: 0 (0) -> 0 (1)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+  - new commits
+    - series "mm/sparse: remove SECTION_MARKED_PRESENT and further cleanups", v2. (13)
+      - 1f0dcb40ae66 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr (5/13)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

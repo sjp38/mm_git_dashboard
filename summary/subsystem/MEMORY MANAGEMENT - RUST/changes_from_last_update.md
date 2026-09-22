@@ -9,6 +9,12 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
+      - b185c91b9894 "binder: remove mmap_lock fallback (3/7)"
+        - Authored by no role player, reviewed by a maintainer
+        - dropped "Cc: Alice Ryhl <aliceryhl@google.com>"
+        - Link: https://lore.kernel.org/20260831203056.838265-5-surenb@google.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

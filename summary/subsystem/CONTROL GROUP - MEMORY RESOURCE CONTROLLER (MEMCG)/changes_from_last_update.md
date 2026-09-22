@@ -6,17 +6,81 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 31 -> 31 commits (no change)
-  - series: 8 (23) -> 8 (23) (no change)
+- mm-unstable: 31 -> 41 commits
+  - series: 8 (23) -> 9 (33)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 14 -> 14 commits (no change)
+    - no role, maintainer: 14 -> 24 commits
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
-- mm-new: 10 -> 10 commits (no change)
-  - series: 1 (10) -> 1 (10) (no change)
-    - no role, maintainer: 10 -> 10 commits (no change)
+  - changed commits
+    - c9ea64b219d8 "memcg: clear FLUSHING_CACHED_CHARGE on cpu offline"
+      - Authored by a maintainer, reviewed by no role player
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - Link: https://lore.kernel.org/20260828192419.3057939-1-shakeel.butt@linux.dev
+      - Link: https://sashiko.dev/#/patchset/20260828135036.7d44361f%40fangorn [1]
+    - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11)
+      - 8e20da13d4c8 "mm: memcontrol: take a const folio in folio_memcg() and friends (0/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-0-c239a6010b58@columbia.edu
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-1-c239a6010b58@columbia.edu
+      - 22eb9ec39d2b "mm: memcontrol: constify obj_cgroup_memcg() and friends (1/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-2-c239a6010b58@columbia.edu
+      - db12e2891f40 "mm: memcontrol: constify the lruvec helpers (2/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-3-c239a6010b58@columbia.edu
+      - 1506178f77f7 "mm: memcontrol: constify the mem_cgroup accessors (4/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-5-c239a6010b58@columbia.edu
+      - 2bb4bb9e0801 "mm: page_counter: constify page_counter_read() and page_counter_margin() (5/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-6-c239a6010b58@columbia.edu
+      - 554201178a47 "mm: memcontrol: constify the reclaim protection helpers (6/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-7-c239a6010b58@columbia.edu
+      - 73bfcd9aa8ba "mm: memcontrol: constify the memcg and lruvec stat readers (7/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-8-c239a6010b58@columbia.edu
+      - 0798f87c752d "mm: memcontrol: constify the swap accounting helpers (8/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-9-c239a6010b58@columbia.edu
+      - af79c9f58423 "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max() (9/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-10-c239a6010b58@columbia.edu
+      - 7e2d0e0a4761 "mm: memcontrol: constify the zswap and socket pressure helpers (10/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-11-c239a6010b58@columbia.edu
+- mm-new: 10 -> 4 commits
+  - series: 1 (10) -> 1 (4)
+    - no role, reviewer: 0 -> 4 commits
+    - no role, maintainer: 10 -> 0 commits
+  - new commits
+    - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4)
+      - d83e59bc6c0e "memcg: keep swap charging under RCU protection (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-0-6c0637dc0edb@tencent.com
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-1-6c0637dc0edb@tencent.com
+      - c82c882690f5 "memcg: base swap charge accounting on memcgid root status (1/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-2-6c0637dc0edb@tencent.com
+      - d0278a1fcd13 "memcg: manipulate memcg private ID references by ID (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-3-6c0637dc0edb@tencent.com
+      - b779bbaed356 "memcg: move memcg private ID refcount to objcg (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

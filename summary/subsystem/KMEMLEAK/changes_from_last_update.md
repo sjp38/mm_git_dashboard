@@ -5,11 +5,36 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-unstable: 0 -> 3 commits
+  - series: 0 (0) -> 1 (3)
+    - no role, maintainer: 0 -> 3 commits
+  - changed commits
+    - series "kmemleak: fix stale documentation and raise the verbose default". (3)
+      - c809a4b49aa0 "Documentation: kmemleak: describe the metadata pool, not the early log (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260917142210.90829-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-1-84fde6d1f749@debian.org
+      - a3621cf70783 "Documentation: kmemleak: fix stale statements about scanning (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-2-84fde6d1f749@debian.org
+      - c43e3819f662 "mm: kmemleak: raise min_unref_scans to 3 for verbose auto-scan (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-3-84fde6d1f749@debian.org
+- mm-new: 3 -> 2 commits
+  - series: 1 (3) -> 1 (2)
+    - no role, nobody: 0 -> 2 commits
+    - no role, maintainer: 3 -> 0 commits
+  - new commits
+    - series "mm: kmemleak: batch the struct page scan". (2)
+      - 07e635b9421c "mm: kmemleak: move the struct page scan into a helper (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260921-b4-kmemleak-page-scan-v1-1-fb97d4801b3a@debian.org
+      - c0e217519e0c "mm: kmemleak: scan the struct page array in MAX_SCAN_SIZE batches (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260921-b4-kmemleak-page-scan-v1-2-fb97d4801b3a@debian.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

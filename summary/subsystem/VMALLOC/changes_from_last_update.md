@@ -10,6 +10,12 @@
   - series: 2 (9) -> 2 (9) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 10 -> 10 commits (no change)
+  - changed commits
+    - d99a8c3ec2a2 "mm/vmalloc: use %p for pointer formatting"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Uladzislau Rezki (Sony) <urezki@gmail.com>"
+      - dropped "Cc: Uladzislau Rezki <urezki@gmail.com>"
+      - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

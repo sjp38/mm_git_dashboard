@@ -6,14 +6,72 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 19 -> 19 commits (no change)
-  - series: 5 (13) -> 5 (13) (no change)
+- mm-unstable: 19 -> 21 commits
+  - series: 5 (13) -> 6 (15)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 16 -> 16 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 16 -> 18 commits
+  - changed commits
+    - cabbf6b3a4f5 "mm/zswap: publish the initial pool with list_add_rcu()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Closes: https://sashiko.dev/#/patchset/20260906133601.3563324-1-xialonglong2025%40163.com"
+      - dropped "Link: https://sashiko.dev/#/patchset/20260906133601.3563324-1-xialonglong2025%40163.com"
+      - dropped "Cc: Longlong Xia <xialonglong@kylinos.cn>"
+      - Link: https://lore.kernel.org/20260908012801.1864430-1-xialonglong2025@163.com
+    - 8cbdd90a659a "mm/zswap: enable zswap_ever_enabled in zswap_pool_create()"
+      - Authored by no role player, reviewed by a maintainer
+      - dropped "Cc: Longlong Xia <xialonglong@kylinos.cn>"
+      - Link: https://lore.kernel.org/20260906135938.3568108-1-xialonglong2025@163.com
+    - abfacab3e2a5 "selftests/cgroup: ignore memory.reclaim -EAGAIN for zswap writeback test"
+      - Authored by no role player, reviewed by a maintainer
+      - dropped "Cc: Harry Yoo <harry@kernel.org>"
+      - Link: https://lore.kernel.org/20260914-test-zswap-wb-ignore-eagain-v1-1-6fb715c22cd8@kernel.org
+    - series "mm: zswap: free cold writeback folios promptly", v6. (3)
+      - 5b0fec7c8786 "mm: swap: move LRU insertion out of the swap cache allocator (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr"
+        - added "Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr"
+        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+        - added "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - added "Cc: Matthew Wilcox <willy@infradead.org>"
+        - added "Cc: Christian Brauner (Amutable) <brauner@kernel.org>"
+        - added "Cc: Chis Li <chrisl@kernel.org> (Google)"
+        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: "David Hildenbrand (arm)" <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260911121341.178028-1-alex@ghiti.fr"
+        - dropped "Link: https://lore.kernel.org/20260911121341.178028-2-alex@ghiti.fr"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Christian Brauner <brauner@kernel.org>"
+        - dropped "Cc: Chris Li <chrisl@kernel.org>"
+        - dropped "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr
+        - Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr
+      - 349d75f4907c "mm: zswap: drop cold writeback folios via swap dropbehind (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - added "Link: https://lore.kernel.org/20260921151306.625134-4-alex@ghiti.fr"
+        - added "Reviewed-by: Nhat Pham <nphamcs@gmail.com>"
+        - added "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - added "Cc: Matthew Wilcox <willy@infradead.org>"
+        - added "Cc: Christian Brauner (Amutable) <brauner@kernel.org>"
+        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: "David Hildenbrand (arm)" <david@kernel.org>"
+        - added "Cc: Chis Li <chrisl@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260911121341.178028-4-alex@ghiti.fr"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Christian Brauner <brauner@kernel.org>"
+        - dropped "Cc: Chris Li <chrisl@kernel.org>"
+        - dropped "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260921151306.625134-4-alex@ghiti.fr
+        - Link: https://lore.kernel.org/linux-mm/20260911092012.92399-1-alex@ghiti.fr/ [1]
+- mm-new: 2 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

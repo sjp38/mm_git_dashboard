@@ -6,20 +6,141 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 50 -> 50 commits (no change)
-  - series: 7 (32) -> 7 (32) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 22 -> 22 commits (no change)
+- mm-unstable: 50 -> 59 commits
+  - series: 7 (32) -> 8 (39)
+    - no role, nobody: 3 -> 4 commits
+    - no role, no role : 22 -> 27 commits
     - no role, reviewer: 6 -> 6 commits (no change)
-    - no role, maintainer: 8 -> 8 commits (no change)
-    - maintainer, nobody: 11 -> 11 commits (no change)
-- mm-new: 10 -> 10 commits (no change)
-  - series: 1 (7) -> 1 (7) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 5 -> 5 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 8 -> 9 commits
+    - maintainer, nobody: 11 -> 12 commits
+    - maintainer, reviewer: 0 -> 1 commits
+  - changed commits
+    - cb3f6ccaa02a "selftests/mm: fix incorrect skip output in pkey_sighandler_tests"
+      - Authored by no role player, reviewed by no role player
+      - dropped "Cc: Zenghui Yu <zenghui.yu@linux.dev>"
+      - Link: https://lore.kernel.org/20260825123023.64418-1-zenghui.yu@linux.dev
+    - f7f988faff2d "selftests/mm: fix ptrace PEEKDATA check in memfd_secret test"
+      - Authored by no role player, reviewed by no role player
+      - dropped "Cc: Hongfu Li <lihongfu@kylinos.cn>"
+      - Link: https://lore.kernel.org/20260910064415.71623-1-hongfu.li@linux.dev
+    - series "mm/damon: improve readability, clarity and test coverage". (10)
+      - ecfb4a732ab0 "Docs/mm/damon/design: clarify bp is basis point (9/10)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260917142210.90829-11-sj@kernel.org
+    - series "mm: Fix MF_DELAYED handling on memory failure", v6. (5)
+      - 1a46c0f42b59 "mm: selftests: Add shmem into memory failure test (4/5)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-5-4b00856b5364@google.com
+    - bfd2c1fbe023 "mm-selftests-add-shmem-into-memory-failure-test-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6)
+      - dd166fb98770 "selftests/mm: make file helpers return errors (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260918112234.195857-1-sarthak.sharma@arm.com
+        - Link: https://lore.kernel.org/20260918112234.195857-2-sarthak.sharma@arm.com
+      - a58c510eea78 "selftests-mm-make-file-helpers-return-errors-fix (1/6)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com
+      - 02650e68231e "tools/lib/mm: add shared file helpers (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260918112234.195857-3-sarthak.sharma@arm.com
+      - 21342972f0f0 "tools/lib/mm: move hugepage_settings out of selftests (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
+      - d6baa9a7d90a "tools/mm: move gup_test from selftests/mm to tools/mm (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260918112234.195857-5-sarthak.sharma@arm.com
+    - c51381a2b519 "selftests/mm: add a GUP selftest"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
+- mm-new: 10 -> 23 commits
+  - series: 1 (7) -> 2 (21)
+    - no role, nobody: 2 -> 12 commits
+    - no role, no role : 5 -> 4 commits
+    - no role, reviewer: 0 -> 7 commits
+    - no role, maintainer: 1 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, reviewer: 1 -> 0 commits
+  - new commits
+    - 43cd4a99cfe6 "docs/mm: describe set_memory() and set_direct_map() APIs"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260919-set-memory-docs-v2-1-a2a4b3657690@kernel.org
+    - series "selftests/mm: improve khugepaged coverage", v6. (19)
+      - 72036c4c2e63 "selftests/mm: raise the khugepaged test-case cap (0/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260919002451.496763-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260919002451.496763-2-kirill@shutemov.name
+      - bb422945c6d1 "selftests/mm: skip collapse_compound_extreme() where the PMD is too large (1/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260919002451.496763-3-kirill@shutemov.name
+      - d2997e78383c "selftests/mm: scale khugepaged's collapse wait with the PMD size (2/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260919002451.496763-4-kirill@shutemov.name
+      - ac1be3cd015b "selftests/mm: skip khugepaged page cache cases without a PMD folio (3/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260919002451.496763-5-kirill@shutemov.name
+      - ed1461da1270 "selftests/mm: make the swap cases' swapout reliable (4/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260919002451.496763-6-kirill@shutemov.name
+      - a62b88a25752 "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases (5/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260919002451.496763-7-kirill@shutemov.name
+      - 2718f097a9ea "selftests/mm: move is_backed_by_folio() into vm_util (6/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260919002451.496763-8-kirill@shutemov.name
+      - 0848bc95968e "selftests/mm: add folio-order check for address ranges (7/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260919002451.496763-9-kirill@shutemov.name
+      - 6b97cc0b0cc3 "selftests/mm: add folio-order detection self-check (8/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260919002451.496763-10-kirill@shutemov.name
+      - c3377c8fb4ef "selftests/mm: add khugepaged completion barrier helper (9/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260919002451.496763-11-kirill@shutemov.name
+      - eea43e5ab927 "selftests/mm: add order-parameterized khugepaged collapse cases (10/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260919002451.496763-12-kirill@shutemov.name
+      - abca8db57163 "selftests/mm: parameterize the mixed-source collapse case by source order (11/19)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260919002451.496763-13-kirill@shutemov.name
+      - 42024368093c "selftests/mm: cover a shared-source collapse write race (12/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260919002451.496763-14-kirill@shutemov.name
+      - ae0713dfba49 "selftests/mm: run every supported collapse order by default (13/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260919002451.496763-15-kirill@shutemov.name
+      - afe3dad832ae "selftests/mm: check that one khugepaged pass collapses one window (14/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260919002451.496763-16-kirill@shutemov.name
+      - 77f1148a3cae "selftests/mm: add khugepaged race harness (15/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260919002451.496763-17-kirill@shutemov.name
+      - d023defd8bce "selftests/mm: race the collapse of windows with holes (16/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260919002451.496763-18-kirill@shutemov.name
+      - e438b65039c4 "selftests/mm: add memory-pressure threads to the khugepaged race harness (17/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260919002451.496763-19-kirill@shutemov.name
+      - ec9ebac9cbaa "selftests/mm: zap whole PTE tables in the khugepaged race harness (18/19)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260919002451.496763-20-kirill@shutemov.name
+    - series "kselftest: mm: fix intermittent failure khugepaged test", v2. (2)
+      - 38e48805a09a "kselftest: mm: return fail when child test result is fail in khugepaged (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260921-fix_khugepagd_fail-v2-0-3c2877beef61@arm.com
+        - Link: https://lore.kernel.org/20260921-fix_khugepagd_fail-v2-1-3c2877beef61@arm.com
+      - bbe530fcc6eb "kselftest: mm: fix intermittent failure khugepaged test (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260921-fix_khugepagd_fail-v2-2-3c2877beef61@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

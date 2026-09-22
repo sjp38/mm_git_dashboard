@@ -5,15 +5,38 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
+- mm-unstable: 5 -> 8 commits
+  - series: 1 (3) -> 1 (5)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-- mm-new: 3 -> 3 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 2 -> 4 commits
+    - maintainer, nobody: 0 -> 1 commits
+  - changed commits
+    - df06df7f0080 "mm/ksm: mark migration stores with WRITE_ONCE()"
+      - Authored by no role player, reviewed by no role player
+      - dropped "Cc: Chengming Zhou <chengming.zhou@linux.dev>"
+      - dropped "Cc: xu xin <xu.xin16@zte.com.cn>"
+      - Link: https://lore.kernel.org/20260824112433.191301-1-nicoyip.dev@gmail.com
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - 55f77b17f7af "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+      - 2313dae43c12 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+    - 3fb55a6ab10a "mm-update-comments-to-refer-to-anon-rmap-rather-than-anon_vma-fix"
+      - Authored by a maintainer, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+- mm-new: 3 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, reviewer: 2 -> 0 commits
+    - maintainer, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

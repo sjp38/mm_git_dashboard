@@ -9,41 +9,38 @@
       - Link: https://lore.kernel.org/076bb01b-6fcf-4691-be8c-0e8507c9fe64@columbia.edu [1]
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 6 total, 0 (6) series, 0 non-series commits
+- mm-unstable: 8 total, 0 (7) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 3 commits
-    - reviewer, nobody: 1 commits
-    - reviewer, no role : 1 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
+    - reviewer, no role : 2 commits
   - full commits list
-      - 60063235e12a "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
+      - 329838ba2e6a "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org
-      - 0a69a7d6cd39 "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/16)
+      - 966bc94a1665 "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/17)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-8-848550f7574e@nvidia.com
-      - 5c74b955ec63 "mm/page-flags: check page/folio->private instead of PG_private" (9/16)
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com
-      - 1ee37601cc3f "treewide: remove folio_set/clear_private() usage" (10/16)
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-8-bb68b6a21869@nvidia.com
+      - 960b5b5c1333 "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
         - Authored by a reviewer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-11-848550f7574e@nvidia.com
-      - c627f19bee9f "treewide: remove PagePrivate() and PG_private from comments and docs" (14/16)
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
+      - c37af67327e8 "treewide: remove folio_set/clear_private() usage" (10/17)
+        - Authored by a reviewer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-11-bb68b6a21869@nvidia.com
+      - 08edff782d95 "treewide: remove PagePrivate() and PG_private from comments and docs" (15/17)
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260913-remove-pg_private-v4-15-848550f7574e@nvidia.com
-      - da2e0d986619 "mm: remove hugetlb_inline.h" (26/40)
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com
+      - 4d499d391b2b "mm: remove hugetlb_inline.h" (26/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
-- mm-new: 2 total, 0 (1) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
-  - full commits list
-    - b73d8960b868 "mm: filemap: move lruvec accounting outside the xarray lock"
-      - Authored by no role player, reviewed by no role player
+    - e89ff60e6856 "mm: filemap: move lruvec accounting outside the xarray lock"
+      - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260916125122.2696271-1-usama.arif@linux.dev
-      - 3a1cb151d1f7 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - debcef32116f "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260911121341.178028-3-alex@ghiti.fr
+        - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

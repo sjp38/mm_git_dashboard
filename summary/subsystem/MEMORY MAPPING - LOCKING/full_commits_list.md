@@ -2,30 +2,27 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
+- mm-unstable: 4 total, 2 (4) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
+    - no role, no role : 3 commits
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - dc486d9f832c "mm: make per-VMA locks available universally" (0/7)
+      - 70d0d2e843d3 "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-      - da2bdee1a858 "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
+      - 935e58b4991f "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com
-      - 73ea8e0bd986 "mm: change the contract for free_pgtables(), update docs" (11/12)
+      - a578199307ea "mm: change the contract for free_pgtables(), update docs" (11/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org
-- mm-new: 1 total, 1 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
     - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3 commits)
-      - 778527db8450 "mm/vma: const-ify vma_assert_stabilised() and associated functions" (0/3)
+      - b5ef954283ca "mm/vma: const-ify vma_assert_stabilised() and associated functions" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-0-5c22314a72e7@kernel.org
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-1-5c22314a72e7@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

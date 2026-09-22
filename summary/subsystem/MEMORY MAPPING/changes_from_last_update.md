@@ -4,20 +4,84 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-hotfixes-unstable: 0 -> 2 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, nobody: 0 -> 2 commits
+  - new commits
+    - series "mm/mremap: fix two issues with MREMAP_DONTUNMAP". (2)
+      - 34de9630448d "mm/mremap: fix locked_vm leak from MREMAP_DONTUNMAP self-merge (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-0-6ffb556f8f8b@kernel.org
+        - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-1-6ffb556f8f8b@kernel.org
+      - ef14e285d39a "mm/mremap: fix locked_vm leak by splitting VMA for MREMAP_DONTUNMAP (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-2-6ffb556f8f8b@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 28 -> 28 commits (no change)
-  - series: 4 (25) -> 4 (25) (no change)
+- mm-unstable: 28 -> 38 commits
+  - series: 4 (25) -> 6 (34)
     - no role, nobody: 18 -> 18 commits (no change)
-    - no role, no role : 7 -> 7 commits (no change)
+    - no role, no role : 7 -> 14 commits
+    - no role, reviewer: 0 -> 3 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 10 -> 10 commits (no change)
-  - series: 2 (9) -> 2 (9) (no change)
-    - no role, no role : 7 -> 7 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+  - changed commits
+    - 754b00d99d18 "mm: mincore: use per-vma lock during page table walk"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - dropped "Cc: Kefeng Wang <wangkefeng.wang@huawei.com>"
+      - Link: https://lore.kernel.org/20260916043153.2631696-1-wangkefeng.wang@huawei.com
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - b5ef954283ca "mm/vma: const-ify vma_assert_stabilised() and associated functions (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-0-5c22314a72e7@kernel.org
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-1-5c22314a72e7@kernel.org
+      - 55f77b17f7af "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+      - 2313dae43c12 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+    - series "read proc/pid/smaps_rollup under per-vma lock", v5. (7)
+      - adad91d06b8b "proc/task_mmu: remove unnecessary helpers (0/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260918153318.758387-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260918153318.758387-2-surenb@google.com
+      - b58393e47de9 "proc/task_mmu: remove unnecessary inlines in function definitions (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260918153318.758387-3-surenb@google.com
+      - c1744b9f6039 "proc/task_mmu: clarify shmem mapping walk conditions in smap_gather_stats() (2/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260918153318.758387-4-surenb@google.com
+      - aa07f7dc0be8 "proc/task_mmu: remove special-casing of smap_gather_stats() start parameter (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260918153318.758387-5-surenb@google.com
+      - 538511230017 "proc/task_mmu: change proc_get_vma() to stop returning gate VMA at the end (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260918153318.758387-6-surenb@google.com
+      - 7eb96915ecfe "proc/task_mmu: read proc/pid/smaps_rollup under per-vma lock (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260918153318.758387-7-surenb@google.com
+        - Link: https://github.com/paulmckrcu/proc-mmap_sem-test [1]
+- mm-new: 10 -> 0 commits
+  - series: 2 (9) -> 0 (0)
+    - no role, no role : 7 -> 0 commits
+    - no role, reviewer: 3 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

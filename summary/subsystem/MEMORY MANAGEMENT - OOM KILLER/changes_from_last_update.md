@@ -8,6 +8,15 @@
 - mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
+  - changed commits
+    - b23a4c5e7209 "mm/oom_kill: remove unreachable __GFP_THISNODE check in constrained_alloc()"
+      - Authored by no role player, reviewed by a maintainer
+      - dropped "Cc: Liu Ye <liuye@kylinos.cn>"
+      - Link: https://lore.kernel.org/20260813093810.573302-1-ye.liu@linux.dev
+    - c94ae2c7f46c "mm/oom_kill, proc: replace magic number 1000 with OOM_SCORE_ADJ_MAX"
+      - Authored by no role player, reviewed by a maintainer
+      - dropped "Cc: Liu Ye <liuye@kylinos.cn>"
+      - Link: https://lore.kernel.org/20260811033609.3992348-1-ye.liu@linux.dev
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
