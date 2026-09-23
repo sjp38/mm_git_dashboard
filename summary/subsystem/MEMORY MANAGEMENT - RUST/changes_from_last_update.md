@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc1-475-g0d9ff90a5422 (no change)
+- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -9,12 +9,6 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
-      - b185c91b9894 "binder: remove mmap_lock fallback (3/7)"
-        - Authored by no role player, reviewed by a maintainer
-        - dropped "Cc: Alice Ryhl <aliceryhl@google.com>"
-        - Link: https://lore.kernel.org/20260831203056.838265-5-surenb@google.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -1,11 +1,5 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-    - 932cfb25e7ce "mm/shrinker: fix bogus set_shrinker_bit() with cgroup.memory=nokmem"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260902073800.305481-1-jiayuan.chen@linux.dev
+- baseline: v7.3-rc4-70-gfe2ec83746e5
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 2 total, 0 (0) series, 2 non-series commits
@@ -13,18 +7,31 @@
     - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-    - cd9fb329b217 "mm/list_lru: disable memcg awareness under cgroup_disable=memory"
+    - 3d4fd4516297 "mm/list_lru: disable memcg awareness under cgroup_disable=memory"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260902093202.609559-1-qinyuntan@linux.alibaba.com
-    - 41a28b3b6705 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
+    - aeb8204312f5 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
+- mm-new: 4 total, 1 (3) series, 1 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 1 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - b779bbaed356 "memcg: move memcg private ID refcount to objcg" (3/4)
+      - 66416a460a10 "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
+    - 6dceb9b83da6 "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+    - series "mm: restore per-memcg reclaim for NONSLAB shrinkers under nokmem", v3. (4 commits)
+      - 1d9806c28a4e "mm: memcontrol: drop kmemcg_id and use mem_cgroup_id() for list_lru indexing" (0/4)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260910080722.3961351-1-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/20260910080722.3961351-2-qinyuntan@linux.alibaba.com
+      - c34f71209395 "mm: list_lru: keep per-memcg lists with nokmem for NONSLAB-backed lrus" (2/4)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260910080722.3961351-3-qinyuntan@linux.alibaba.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

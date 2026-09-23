@@ -1,104 +1,32 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc1-475-g0d9ff90a5422 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - reviewer, maintainer: 1 -> 1 commits (no change)
+    - reviewer, maintainer: 1 -> 0 commits
+  - dropped commits
+    - 12e9ac7bc5b2 "mm, swap: fix SWAP_USAGE_OFFLIST_BIT collision with real usage count"
+      - Authored by a reviewer, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260828191433.3304458-1-nphamcs@gmail.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 23 -> 30 commits
-  - series: 7 (20) -> 8 (26)
+- mm-unstable: 30 -> 30 commits (no change)
+  - series: 8 (26) -> 8 (26) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 9 -> 10 commits
-    - no role, reviewer: 2 -> 4 commits
-    - no role, maintainer: 4 -> 8 commits
+    - no role, no role : 10 -> 10 commits (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/huge_memory: clean up and decouple the anon and file split helpers", v5. (17)
-      - 228151683cfc "mm/swap: fix off-by-one in swap cache replace sanity check (0/17)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
-        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-0-39878b37dfb0@tencent.com
-        - Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-1-39878b37dfb0@tencent.com
-    - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11)
-      - 00671eb3165b "mm/page_io: take a const folio in bio_associate_blkg_from_folio() (3/11)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-4-c239a6010b58@columbia.edu
-      - 0798f87c752d "mm: memcontrol: constify the swap accounting helpers (8/11)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-9-c239a6010b58@columbia.edu
-      - af79c9f58423 "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max() (9/11)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-10-c239a6010b58@columbia.edu
-    - series "mm: zswap: free cold writeback folios promptly", v6. (3)
-      - 5b0fec7c8786 "mm: swap: move LRU insertion out of the swap cache allocator (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr"
-        - added "Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr"
-        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-        - added "Cc: "David Hildenbrand (arm)" <david@kernel.org>"
-        - added "Cc: Chis Li <chrisl@kernel.org> (Google)"
-        - added "Cc: Christian Brauner (Amutable) <brauner@kernel.org>"
-        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
-        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
-        - added "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - added "Cc: Matthew Wilcox <willy@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260911121341.178028-1-alex@ghiti.fr"
-        - dropped "Link: https://lore.kernel.org/20260911121341.178028-2-alex@ghiti.fr"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Chris Li <chrisl@kernel.org>"
-        - dropped "Cc: Christian Brauner <brauner@kernel.org>"
-        - dropped "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr
-        - Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr
-      - debcef32116f "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr"
-        - added "Cc: "David Hildenbrand (arm)" <david@kernel.org>"
-        - added "Cc: Christian Brauner (Amutable) <brauner@kernel.org>"
-        - added "Cc: Chis Li <chrisl@kernel.org>"
-        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
-        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
-        - added "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - added "Cc: Matthew Wilcox <willy@infradead.org>"
-        - dropped "Link: https://lore.kernel.org/20260911121341.178028-3-alex@ghiti.fr"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Chris Li <chrisl@kernel.org>"
-        - dropped "Cc: Christian Brauner <brauner@kernel.org>"
-        - dropped "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - 55f77b17f7af "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-    - 7d25c97e0773 "mm/swapops: remove unused is_hwpoison_entry()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
-      - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-      - added "Acked-by: Chris Li <chrisl@kernel.org>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Chris Li <chrisl@kernel.org>"
-      - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
-- mm-new: 8 -> 1 commits
-  - series: 1 (6) -> 0 (0)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 0 commits
-    - no role, reviewer: 3 -> 0 commits
-    - no role, maintainer: 2 -> 0 commits
+- mm-new: 1 -> 2 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 2 commits
+  - new commits
+    - 6dceb9b83da6 "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

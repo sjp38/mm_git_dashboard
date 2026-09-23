@@ -1,107 +1,100 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-    - 7891fbb9512f "mm/folio: EXPORT_SYMBOL_FOR_KVM(lru_cache_drain_for_folio)"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/lkml/bd6c9c74-e374-a9d3-ba1f-8b6f430894fc@google.com/T/#u
-      - Link: https://lore.kernel.org/02876cea-5727-2ca4-bead-73659ea6fec4@google.com
+- baseline: v7.3-rc4-70-gfe2ec83746e5
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 74 total, 10 (66) series, 8 non-series commits
+- mm-unstable: 75 total, 10 (66) series, 9 non-series commits
   - author/reviewer role stat
     - no role, nobody: 16 commits
     - no role, no role : 38 commits
     - no role, reviewer: 10 commits
     - no role, maintainer: 3 commits
     - reviewer, no role : 2 commits
-    - reviewer, reviewer: 3 commits
+    - reviewer, reviewer: 4 commits
     - maintainer, no role : 1 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-    - 1644f35347b9 "mm: use a folio in the softleaf_is_device_private path"
+    - 255ea70545d5 "mm: use a folio in the softleaf_is_device_private path"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260819095144.45660-1-hongfu.li@linux.dev
       - Link: https://lore.kernel.org/all/e20678ed-3fa1-4677-a1d7-e2af481e8302@kernel.org/
-    - c77d655c0738 "mm/vmstat: annotate data race for per-cpu pageset fields"
+    - 13b39b4c200c "mm/vmstat: annotate data race for per-cpu pageset fields"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260827070546.1336383-1-hui.zhu@linux.dev
-    - d1827b7d7b25 "mm: remove unused anon_vma_trylock_write()"
+    - dd8f2a33da95 "mm: remove unused anon_vma_trylock_write()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260827071845.17636-1-hao.li@linux.dev
     - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v6. (17 commits)
-      - b9a8c3c8bf93 "mm/sparse: relax struct mem_section size constraints" (0/17)
+      - 8407aad7212c "mm/sparse: relax struct mem_section size constraints" (0/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - e065d67b21fd "mm/sparse-vmemmap: rename HVO order macros" (1/17)
+      - 67f90edd5cca "mm/sparse-vmemmap: rename HVO order macros" (1/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-3-songmuchun@bytedance.com
-      - 5544bc68266d "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+      - 710dc6c6ee6c "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com
-      - 763aac878e3a "mm/sparse-vmemmap: initialize shared tail vmemmap pages on allocation" (3/17)
+      - 927dc5d38c7a "mm/sparse-vmemmap: initialize shared tail vmemmap pages on allocation" (3/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-5-songmuchun@bytedance.com
-      - 252a8bf14241 "mm/sparse-vmemmap: support section-based vmemmap accounting" (4/17)
+      - 0836c1cc0fa0 "mm/sparse-vmemmap: support section-based vmemmap accounting" (4/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-6-songmuchun@bytedance.com
-      - bb343d7dbd74 "mm/sparse-vmemmap: move helpers ahead of future callers" (6/17)
+      - cc2c6479ee95 "mm/sparse-vmemmap: move helpers ahead of future callers" (6/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-8-songmuchun@bytedance.com
-      - a8d51a1b1ac2 "mm/sparse-vmemmap: support section-based vmemmap optimization" (7/17)
+      - 86aabaa46017 "mm/sparse-vmemmap: support section-based vmemmap optimization" (7/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-9-songmuchun@bytedance.com
-      - 03b8d99ee82b "mm/sparse: initialize memory sections earlier" (8/17)
+      - 2dd8c26d62ad "mm/sparse: initialize memory sections earlier" (8/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-10-songmuchun@bytedance.com
-      - 90b71616fd74 "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization" (9/17)
+      - 6139182c9c0b "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization" (9/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-11-songmuchun@bytedance.com
-      - 8dfc7e66977d "mm/sparse-vmemmap: remove SPARSEMEM_VMEMMAP_PREINIT support" (10/17)
+      - 78396caac309 "mm/sparse-vmemmap: remove SPARSEMEM_VMEMMAP_PREINIT support" (10/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-12-songmuchun@bytedance.com
-      - d508a21c36fd "mm/sparse: inline usemap allocation into sparse_init_nid()" (11/17)
+      - 6f6a1bb4dfaa "mm/sparse: inline usemap allocation into sparse_init_nid()" (11/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-13-songmuchun@bytedance.com
-      - c9e488511955 "mm/sparse: remove section_map_size()" (12/17)
+      - 18a8bbff83af "mm/sparse: remove section_map_size()" (12/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-14-songmuchun@bytedance.com
-      - e457c5864d01 "mm/hugetlb: localize struct huge_bootmem_page" (15/17)
+      - 31aa9090519a "mm/hugetlb: localize struct huge_bootmem_page" (15/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-17-songmuchun@bytedance.com
-      - 09c521bb7a17 "memcg: remove mem_cgroup_shrink_node()" (1/8)
+      - 6817abf7652e "memcg: remove mem_cgroup_shrink_node()" (1/8)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev
-      - 47157f98f66f "memcg: remove lru_gen_soft_reclaim()" (4/8)
+      - 277fe372e49e "memcg: remove lru_gen_soft_reclaim()" (4/8)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev
     - series "mm/memory: improve insert_pages() error handling", v3. (2 commits)
-      - fbc21d16378c "mm/memory: simplify error handling in insert_pages()" (0/2)
+      - 4dfcee4ba343 "mm/memory: simplify error handling in insert_pages()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/cover.1788022178.git.thnkslprpt@gmail.com
         - Link: https://lore.kernel.org/dd3a672c858b38c7525541b19a919e120c4e5a0e.1788022178.git.thnkslprpt@gmail.com
-      - 43d28c6fab98 "mm/memory: return -ENOMEM for page-table allocation failure in insert_pages()" (1/2)
+      - 737a85aed489 "mm/memory: return -ENOMEM for page-table allocation failure in insert_pages()" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/9d990c3ed43608e674d4b12a8c221a09fd200f49.1788022178.git.thnkslprpt@gmail.com
-    - 82da5fd24556 "mm: adjust out-dated document of __GFP_NOFAIL"
+    - 89ddccf38175 "mm: adjust out-dated document of __GFP_NOFAIL"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - 86dddd16f276 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - 68f18bd5b558 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
-      - fb86e070147b "mm: fail the fault on a malformed swap entry instead of retrying it" (1/2)
+      - e83083316a9d "mm: fail the fault on a malformed swap entry instead of retrying it" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260818-swap-v3-2-d3fa52598a59@debian.org
     - series "mm: replace custom ratelimiting logic". (2 commits)
-      - 296a1e7f0af8 "mm: replace custom bad page map ratelimiting logic" (0/2)
+      - 3999443c39f4 "mm: replace custom bad page map ratelimiting logic" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260811172156.356053-1-pfalcato@suse.de
         - Link: https://lore.kernel.org/20260811172156.356053-2-pfalcato@suse.de
-    - cfbdaba1ee4e "mm/vmpressure: remove window size TODO"
+    - 1e8830a4082a "mm/vmpressure: remove window size TODO"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/all/20260831130316.448-1-tahasezer.is@gmail.com/
       - Link: https://lore.kernel.org/linux-mm/20260724054305.516126-1-cui.tao@linux.dev/
@@ -109,211 +102,215 @@
       - Link: https://lore.kernel.org/all/20260227221555.29969-1-mcq@disroot.org/
       - Link: https://lore.kernel.org/20260831-remove-vmpressure-todo-v1-1-498515e59cdf@kernel.org
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - 70d0d2e843d3 "mm: make per-VMA locks available universally" (0/7)
+      - 51918ee46693 "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-      - 7c7189dca091 "mm: add a set_page_section_from_pfn() helper" (1/7)
+      - 72c6fc7ba031 "mm: add a set_page_section_from_pfn() helper" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-3-lizhe.67@bytedance.com
     - series "mm: Drop pxd_ERROR()". (8 commits)
-      - 1f9a4c1f0caa "mm: make ptval_to_str() generally available" (0/8)
+      - bb29bf4a8f2c "mm: make ptval_to_str() generally available" (0/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831054331.625505-1-anshuman.khandual@arm.com
         - Link: https://lore.kernel.org/20260831054331.625505-2-anshuman.khandual@arm.com
-      - 1f6de7a21546 "mm: stop using pxd_ERROR()" (1/8)
+      - 253489ac996a "mm: stop using pxd_ERROR()" (1/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831054331.625505-3-anshuman.khandual@arm.com
     - series "mm: remove three unused helpers from mm.h", v2. (2 commits)
-      - 644a46ac509b "mm: remove unused mark_page_reserved()" (0/2)
+      - 749411f91226 "mm: remove unused mark_page_reserved()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-0-f6474e169c23@columbia.edu
         - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-1-f6474e169c23@columbia.edu
-      - e67b4a74da93 "mm: remove unused totalram_pages_inc() and totalram_pages_dec()" (1/2)
+      - b0ae354ae536 "mm: remove unused totalram_pages_inc() and totalram_pages_dec()" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-2-f6474e169c23@columbia.edu
-      - 4746e83f7d77 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero" (1/6)
+      - 84f746ad8046 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org
-      - 45c7dc65cfd0 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous" (2/6)
+      - b42516449b19 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org
-      - 329838ba2e6a "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
+      - ca4740cab1b4 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org
-      - aabe90e933d9 "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
+      - 964390fa171c "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
-      - 6ebca1e46b5b "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
+      - 85f2afacbb82 "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
-    - 78f12aa3701d "mm/memory: constrain generic_access_phys() to page boundary"
+    - b6a4b90a4d52 "mm/memory: constrain generic_access_phys() to page boundary"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/e06e28a46c2a176238f03b5740df0913e57c2861.1788842306.git.rakukuip@gmail.com
-      - fe78ee740d25 "mm: make userland page table freeing RCU-safe" (10/12)
+      - 2b6013980452 "mm: make userland page table freeing RCU-safe" (10/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-11-7b8c86103821@kernel.org
-      - a578199307ea "mm: change the contract for free_pgtables(), update docs" (11/12)
+      - ce9cc47115a6 "mm: change the contract for free_pgtables(), update docs" (11/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org
     - series "mm: Switch device DAX to section-based vmemmap optimization", v4. (11 commits)
-      - 87729c15fdef "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION" (0/11)
+      - 3121f064fc99 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION" (0/11)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260916064341.1825793-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260916064341.1825793-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - e0c897e598d4 "mm-sparse-vmemmap-introduce-config_vmemmap_optimization-fix" (1/11)
+      - b5147be343ac "mm-sparse-vmemmap-introduce-config_vmemmap_optimization-fix" (1/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260916083627.2145779-1-songmuchun@bytedance.com
-      - f584e3676602 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation" (2/11)
+      - 0e346d110cfc "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation" (2/11)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260916064341.1825793-3-songmuchun@bytedance.com
-      - dbd81ed4aceb "mm/sparse-vmemmap: open-code init_compound_tail()" (3/11)
+      - b034c349f9bf "mm/sparse-vmemmap: open-code init_compound_tail()" (3/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260916064341.1825793-4-songmuchun@bytedance.com
-      - 29205bf3ef25 "mm/sparse-vmemmap: prepare DAX vmemmap population for compound page orders" (4/11)
+      - 66ef39839fb6 "mm/sparse-vmemmap: prepare DAX vmemmap population for compound page orders" (4/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260916064341.1825793-5-songmuchun@bytedance.com
-      - ee49a1133559 "mm/sparse-vmemmap: set compound page order for device DAX" (5/11)
+      - 8de43b0466e0 "mm/sparse-vmemmap: set compound page order for device DAX" (5/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260916064341.1825793-6-songmuchun@bytedance.com
-      - 90a751b3dbfe "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/11)
+      - 5aade2c38ac4 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/11)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260916064341.1825793-7-songmuchun@bytedance.com
-      - 586eafb79570 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header" (7/11)
+      - fa73d7a34738 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header" (7/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260916064341.1825793-8-songmuchun@bytedance.com
-      - 4e2524b55fe6 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (9/11)
+      - fd72ca2ff4c6 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (9/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260916064341.1825793-10-songmuchun@bytedance.com
-      - 4449a21918d9 "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments" (10/11)
+      - 572fa37bc189 "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments" (10/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260916064341.1825793-11-songmuchun@bytedance.com
-    - series "mm: refactor zonelist constructors and iterators", v2. (2 commits)
-      - 57e25518fe65 "mm: refactor find_next_best_node to find_next_best_node_in" (0/2)
+    - series "mm: refactor zonelist constructors and iterators", v3. (2 commits)
+      - d543ba7af36e "mm: refactor find_next_best_node to find_next_best_node_in" (0/2)
         - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net
-      - 960b5b5c1333 "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
+        - Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net
+        - Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net
+      - bdc31ca0397d "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-      - 08edff782d95 "treewide: remove PagePrivate() and PG_private from comments and docs" (15/17)
+      - 9b44897af7a9 "treewide: remove PagePrivate() and PG_private from comments and docs" (15/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com
     - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (40 commits)
-      - 7c42c07a6177 "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get" (0/40)
+      - 3fe6d31afef7 "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get" (0/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-0-4583d8a23bca@kernel.org
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-1-4583d8a23bca@kernel.org
-      - 350f722a870c "mm/vma: introduce and use vma_[flags_]can_merge()" (2/40)
+      - a17d53533985 "mm/vma: introduce and use vma_[flags_]can_merge()" (2/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-3-4583d8a23bca@kernel.org
-      - 223c69365661 "mm: consistently validate VMA state after mmap[_prepare] hooks" (3/40)
+      - 9c604dfd71b8 "mm: consistently validate VMA state after mmap[_prepare] hooks" (3/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-4-4583d8a23bca@kernel.org
-      - ccfde20d74e6 "mm: make map_kernel_pages_[prepare,complete] internal and unexported" (5/40)
+      - dcca44269f66 "mm: make map_kernel_pages_[prepare,complete] internal and unexported" (5/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-6-4583d8a23bca@kernel.org
-      - 3a0a44e1ea35 "mm/vma: tidy up map kernel pages enum values" (6/40)
+      - 412340066428 "mm/vma: tidy up map kernel pages enum values" (6/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
-      - 7ecf3a4b15be "mm: add mmap action for discontiguous kernel page mapping" (7/40)
+      - c64d6540029c "mm: add mmap action for discontiguous kernel page mapping" (7/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-8-4583d8a23bca@kernel.org
-      - f1f4ae72e28c "mm/vma: add vma[_flags]_is_kernel_owned() predicates" (14/40)
+      - 2556fe01fca3 "mm/vma: add vma[_flags]_is_kernel_owned() predicates" (14/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-15-4583d8a23bca@kernel.org
-      - 3a20708e1a10 "mm/vma: add and use vma_[flags]_is_fixed_mapping" (16/40)
+      - 2466304b33b4 "mm/vma: add and use vma_[flags]_is_fixed_mapping" (16/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-17-4583d8a23bca@kernel.org
-      - b5c1459919f8 "mm/mlock: clear VMA_LOCKED_MASK over mmap callback" (22/40)
+      - 4c2642573f39 "mm/mlock: clear VMA_LOCKED_MASK over mmap callback" (22/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-23-4583d8a23bca@kernel.org
-      - 5d4b2aee49a2 "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (23/40)
+      - 7e2eb1a30fb4 "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (23/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-24-4583d8a23bca@kernel.org
-      - 32d6d471c857 "mm: remove VMA_IO_BIT check in vma[_flags]_is_kernel_owned()" (25/40)
+      - 595f7be1fd71 "mm: remove VMA_IO_BIT check in vma[_flags]_is_kernel_owned()" (25/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-26-4583d8a23bca@kernel.org
-      - 4d499d391b2b "mm: remove hugetlb_inline.h" (26/40)
+      - 8f25b95c12f9 "mm: remove hugetlb_inline.h" (26/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
-      - a79dda19fe43 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/40)
+      - fb7a21a8f214 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/40)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-      - 29e992c01b50 "mm/vma: introduce vma[_flags]_is_persistent()" (30/40)
+      - a72103e99ef6 "mm/vma: introduce vma[_flags]_is_persistent()" (30/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-31-4583d8a23bca@kernel.org
-      - e8265e7ce6b3 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/40)
+      - 7d0aa50034f4 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-34-4583d8a23bca@kernel.org
-      - 839826c283b8 "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS" (36/40)
+      - dcf2a159a3c6 "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS" (36/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-37-4583d8a23bca@kernel.org
-      - 816dbbaae994 "mm/vma: introduce and use vma[_flags]_can_gup()" (39/40)
+      - 7ec2b385d926 "mm/vma: introduce and use vma[_flags]_can_gup()" (39/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-40-4583d8a23bca@kernel.org
-      - db12e2891f40 "mm: memcontrol: constify the lruvec helpers" (2/11)
+      - f6ab076af53c "mm: memcontrol: constify the lruvec helpers" (2/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-3-c239a6010b58@columbia.edu
-      - 55f77b17f7af "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 454d4cc979d8 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 2313dae43c12 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - d9b7a2ed2b72 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - c51381a2b519 "selftests/mm: add a GUP selftest"
+    - 515549c44999 "selftests/mm: add a GUP selftest"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
-    - fa9b2273e7a6 "mm: constify arguments in default pxdp_get()"
+    - 86b5bd59aa9d "mm: constify arguments in default pxdp_get()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260918064928.793742-1-anshuman.khandual@arm.com
-- mm-new: 11 total, 1 (10) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 9 commits
-    - no role, maintainer: 1 commits
-    - reviewer, reviewer: 1 commits
-  - full commits list
-    - 7fd3c49e10e8 "mm: disallow raw PFN mappings of huge/shared zeropage"
+    - 19b46805c485 "mm: disallow raw PFN mappings of huge/shared zeropage"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260921054225.28537-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20260917121010.60966-1-lance.yang@linux.dev/
+- mm-new: 11 total, 1 (10) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 9 commits
+    - no role, maintainer: 1 commits
+  - full commits list
     - series "mm/sparse: remove SECTION_MARKED_PRESENT and further cleanups", v2. (13 commits)
-      - 415b12521126 "mm/sparse: move mem_section init to sparse_extreme_init()" (0/13)
+      - 5cb880bca085 "mm/sparse: move mem_section init to sparse_extreme_init()" (0/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-0-54d81d65e125@kernel.org
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-1-54d81d65e125@kernel.org
-      - af79d865b19c "mm/sparse: refactor sparse_sections_init()" (1/13)
+      - 97e9fe65b292 "mm/sparse: refactor sparse_sections_init()" (1/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-2-54d81d65e125@kernel.org
-      - 9859d1417149 "mm/sparse: move initialization of section metadata to sparse_metadata_init()" (2/13)
+      - 8b24da9c162d "mm/sparse: move initialization of section metadata to sparse_metadata_init()" (2/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-3-54d81d65e125@kernel.org
-      - 5f10f07d6d83 "mm/sparse: rename and cleanup sparse_init_nid()" (3/13)
+      - 73665f631f94 "mm/sparse: rename and cleanup sparse_init_nid()" (3/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-4-54d81d65e125@kernel.org
-      - 9d9d6ed81716 "mm/sparse: cleanup sparse_init_one_section()" (4/13)
+      - bc6ea8c9ab3f "mm/sparse: cleanup sparse_init_one_section()" (4/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-5-54d81d65e125@kernel.org
-      - 1f0dcb40ae66 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - 888d3893f01e "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-      - 198212562972 "mm/sparse: remove pfn_in_present_section()" (6/13)
+      - d52782f946ea "mm/sparse: remove pfn_in_present_section()" (6/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-7-54d81d65e125@kernel.org
-      - 307e6be07e91 "mm/sparse: move __highest_used_section_nr handling" (7/13)
+      - ce52d09b121c "mm/sparse: move __highest_used_section_nr handling" (7/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-8-54d81d65e125@kernel.org
-      - bde59377497a "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
+      - 6d165ea8b0c3 "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-      - 1b0c2313006d "mm/sparse: remove flags parameter from sparse_init_one_section()" (10/13)
+      - ab098051d4a0 "mm/sparse: remove flags parameter from sparse_init_one_section()" (10/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-11-54d81d65e125@kernel.org
+    - 6dceb9b83da6 "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - f2ebdd6befb7 "fork: honor task_struct's declared alignment"
+    - 4cc7f5565968 "fork: honor task_struct's declared alignment"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260710123957.31774-1-kmehltretter@gmail.com

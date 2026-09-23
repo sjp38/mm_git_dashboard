@@ -1,66 +1,32 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc1-475-g0d9ff90a5422 (no change)
+- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 31 -> 33 commits
-  - series: 3 (24) -> 3 (25)
+- mm-unstable: 33 -> 34 commits
+  - series: 3 (25) -> 3 (25) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, reviewer: 15 -> 17 commits
+    - no role, reviewer: 17 -> 18 commits
     - no role, maintainer: 3 -> 3 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, no role : 1 -> 2 commits
+    - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
-      - 960b5b5c1333 "mm/page-flags: check page/folio->private instead of PG_private (9/17)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-    - 1ee64fc22aa4 "mm/mglru: restore accidentally removed seq < max_seq check"
+    - 807d1fe6f91b "mm: vmscan: put rotation-missed folios at the LRU tail"
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260915101556.50467-1-baohua@kernel.org
-    - series "mm: zswap: free cold writeback folios promptly", v6. (3)
-      - debcef32116f "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr"
-        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
-        - added "Cc: Christian Brauner (Amutable) <brauner@kernel.org>"
-        - added "Cc: Matthew Wilcox <willy@infradead.org>"
-        - added "Cc: "David Hildenbrand (arm)" <david@kernel.org>"
-        - added "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - added "Cc: Chis Li <chrisl@kernel.org>"
-        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
-        - dropped "Link: https://lore.kernel.org/20260911121341.178028-3-alex@ghiti.fr"
-        - dropped "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
-        - dropped "Cc: Chris Li <chrisl@kernel.org>"
-        - dropped "Cc: Christian Brauner <brauner@kernel.org>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-  - new commits
-    - 57927c50f5be "mm: vmscan: put rotation-missed folios at the LRU tail"
-      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
       - Link: https://lore.kernel.org/20260920132519.3369946-1-ridong.chen@linux.dev
       - Link: https://lore.kernel.org/linux-kernel/20241010081802.290893-1-chenridong@huaweicloud.com/ [1]
       - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
       - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
       - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
-    - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4)
-      - b779bbaed356 "memcg: move memcg private ID refcount to objcg (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
+- mm-new: 2 -> 1 commits
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 2 -> 1 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

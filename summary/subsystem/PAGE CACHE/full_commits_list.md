@@ -1,12 +1,5 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 848d2ce2fce1 "mm: filemap: retain mapped dropbehind folios"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/4aba05e1a2c3b61cb337d373eb9b7a8db4ddd822.1788024049.git.qiwenjie@xiaomi.com
-      - Link: https://lore.kernel.org/076bb01b-6fcf-4691-be8c-0e8507c9fe64@columbia.edu [1]
+- baseline: v7.3-rc4-70-gfe2ec83746e5
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 8 total, 0 (7) series, 1 non-series commits
@@ -17,28 +10,28 @@
     - no role, maintainer: 1 commits
     - reviewer, no role : 2 commits
   - full commits list
-      - 329838ba2e6a "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
+      - ca4740cab1b4 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org
-      - 966bc94a1665 "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/17)
+      - 0833d599ee40 "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-8-bb68b6a21869@nvidia.com
-      - 960b5b5c1333 "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
+      - bdc31ca0397d "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-      - c37af67327e8 "treewide: remove folio_set/clear_private() usage" (10/17)
+      - 25ea1b6b2ab5 "treewide: remove folio_set/clear_private() usage" (10/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-11-bb68b6a21869@nvidia.com
-      - 08edff782d95 "treewide: remove PagePrivate() and PG_private from comments and docs" (15/17)
+      - 9b44897af7a9 "treewide: remove PagePrivate() and PG_private from comments and docs" (15/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com
-      - 4d499d391b2b "mm: remove hugetlb_inline.h" (26/40)
+      - 8f25b95c12f9 "mm: remove hugetlb_inline.h" (26/40)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
-    - e89ff60e6856 "mm: filemap: move lruvec accounting outside the xarray lock"
+    - 3f23b92f7086 "mm: filemap: move lruvec accounting outside the xarray lock"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260916125122.2696271-1-usama.arif@linux.dev
-      - debcef32116f "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - 5f86574a40e7 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

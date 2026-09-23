@@ -1,32 +1,29 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422
+- baseline: v7.3-rc4-70-gfe2ec83746e5
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 3 total, 1 (3) series, 0 non-series commits
+- mm-unstable: 5 total, 2 (5) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, maintainer: 3 commits
+    - no role, maintainer: 5 commits
   - full commits list
     - series "kmemleak: fix stale documentation and raise the verbose default". (3 commits)
-      - c809a4b49aa0 "Documentation: kmemleak: describe the metadata pool, not the early log" (0/3)
+      - 0517fa01b091 "Documentation: kmemleak: describe the metadata pool, not the early log" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917142210.90829-1-sj@kernel.org
         - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-1-84fde6d1f749@debian.org
-      - a3621cf70783 "Documentation: kmemleak: fix stale statements about scanning" (1/3)
+      - a3bbfa11f46f "Documentation: kmemleak: fix stale statements about scanning" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-2-84fde6d1f749@debian.org
-      - c43e3819f662 "mm: kmemleak: raise min_unref_scans to 3 for verbose auto-scan" (2/3)
+      - 9e57ad9dceb6 "mm: kmemleak: raise min_unref_scans to 3 for verbose auto-scan" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-3-84fde6d1f749@debian.org
-- mm-new: 2 total, 1 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-  - full commits list
     - series "mm: kmemleak: batch the struct page scan". (2 commits)
-      - 07e635b9421c "mm: kmemleak: move the struct page scan into a helper" (0/2)
-        - Authored by no role player, reviewed by nobody
+      - f474fa071065 "mm: kmemleak: move the struct page scan into a helper" (0/2)
+        - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-kmemleak-page-scan-v1-1-fb97d4801b3a@debian.org
-      - c0e217519e0c "mm: kmemleak: scan the struct page array in MAX_SCAN_SIZE batches" (1/2)
-        - Authored by no role player, reviewed by nobody
+      - 685086170033 "mm: kmemleak: scan the struct page array in MAX_SCAN_SIZE batches" (1/2)
+        - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-kmemleak-page-scan-v1-2-fb97d4801b3a@debian.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

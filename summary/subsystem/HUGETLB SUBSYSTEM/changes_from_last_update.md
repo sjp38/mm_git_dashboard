@@ -1,59 +1,48 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc1-475-g0d9ff90a5422 (no change)
-- mm-hotfixes-stable: 2 -> 2 commits (no change)
+- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
+- mm-hotfixes-stable: 2 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, maintainer: 1 -> 0 commits
+  - dropped commits
+    - a363c62a653c "mm/hugetlb: do not dissolve gigantic pages without runtime support"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260823044118.1097121-2-xialonglong2025@163.com
+    - 9bdad082d44b "mm/hugetlb: preserve mremap address delta when skipping page tables"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260914132352.472-1-jaewook376@gmail.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 23 -> 27 commits
-  - series: 2 (16) -> 3 (19)
+- mm-unstable: 27 -> 30 commits
+  - series: 3 (19) -> 4 (21)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 9 -> 8 commits
-    - no role, reviewer: 3 -> 4 commits
-    - no role, maintainer: 7 -> 11 commits
-  - changed commits
-    - series "mm/hugetlb: fix surplus accounting and availability checks during demotion", v2. (2)
-      - 9a414c4c64fc "mm/hugetlb: cap demotion at currently available free pages (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - dropped "Cc: Longlong Xia <xialonglong@kylinos.cn>"
-        - Link: https://lore.kernel.org/20260831133519.2505020-3-xialonglong2025@163.com
-    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
-      - 6f7f5052fe0f "mm/hugetlb: use direct assignment instead of folio_change_private() (4/17)"
+    - no role, no role : 8 -> 8 commits (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, maintainer: 11 -> 14 commits
+  - new commits
+    - series "mm: fix hugetlb NR_HUGETLB accounting on folio migration", v2. (2)
+      - 5292d9a3c6f8 "mm/hugetlb: account migration target folio in per-node NR_HUGETLB vmstat (0/2)"
         - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20260920-remove-pg_private-v5-5-bb68b6a21869@nvidia.com"
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - added "Reviewed-by: Muchun Song <muchun.song@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20260913-remove-pg_private-v4-5-848550f7574e@nvidia.com"
-        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-5-bb68b6a21869@nvidia.com
-    - c95f7888ff91 "mm/hugetlb: fix misspelled parameter names in comment"
+        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-0-e8a36245bfab@kylinos.cn
+        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-1-e8a36245bfab@kylinos.cn
+      - cfe7954b65ee "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
+    - fff9c87241bb "hugetlbfs: fix stale comment in hugetlbfs_file_mmap()"
       - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/tencent_034C6FC23D4817C40657E5F17F64E260A009@qq.com
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - 2313dae43c12 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - series "mm/hugetlb_cgroup: move the per-node usage along with the folio", v2. (2)
-      - 7594beb605f3 "mm/hugetlb_cgroup: move per-node usage on cross node migration (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-0-2b6d8c2bdc36@kylinos.cn
-        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-1-2b6d8c2bdc36@kylinos.cn
-      - 5c9dbfc1965f "mm/hugetlb_cgroup: move per-node usage on cgroup reparenting (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-2-2b6d8c2bdc36@kylinos.cn
-- mm-new: 4 -> 0 commits
-  - series: 1 (3) -> 0 (0)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 3 -> 0 commits
+      - Link: https://lore.kernel.org/tencent_AA61551D1F50E61F46C8542F5C8874512C05@qq.com
+- mm-new: 0 -> 2 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 2 commits
+  - new commits
+    - 6dceb9b83da6 "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+    - bfe8b80eeb1f "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260922090749.24905-1-lizhe.67@bytedance.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

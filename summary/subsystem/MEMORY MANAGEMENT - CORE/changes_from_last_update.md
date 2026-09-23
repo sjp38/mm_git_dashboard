@@ -1,117 +1,62 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc1-475-g0d9ff90a5422 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
+    - 7891fbb9512f "mm/folio: EXPORT_SYMBOL_FOR_KVM(lru_cache_drain_for_folio)"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/lkml/bd6c9c74-e374-a9d3-ba1f-8b6f430894fc@google.com/T/#u
+      - Link: https://lore.kernel.org/02876cea-5727-2ca4-bead-73659ea6fec4@google.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 69 -> 74 commits
-  - series: 10 (63) -> 10 (66)
+- mm-unstable: 74 -> 75 commits
+  - series: 10 (66) -> 10 (66) (no change)
     - no role, nobody: 16 -> 16 commits (no change)
-    - no role, no role : 36 -> 38 commits
-    - no role, reviewer: 8 -> 10 commits
-    - no role, maintainer: 2 -> 3 commits
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, no role : 1 -> 2 commits
-    - reviewer, reviewer: 3 -> 3 commits (no change)
+    - no role, no role : 38 -> 38 commits (no change)
+    - no role, reviewer: 10 -> 10 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - reviewer, no role : 2 -> 2 commits (no change)
+    - reviewer, reviewer: 3 -> 4 commits
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: remove three unused helpers from mm.h", v2. (2)
-      - e67b4a74da93 "mm: remove unused totalram_pages_inc() and totalram_pages_dec() (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-2-f6474e169c23@columbia.edu
-    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
-      - 960b5b5c1333 "mm/page-flags: check page/folio->private instead of PG_private (9/17)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-      - 08edff782d95 "treewide: remove PagePrivate() and PG_private from comments and docs (15/17)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com"
-        - dropped "Link: https://lore.kernel.org/20260913-remove-pg_private-v4-15-848550f7574e@nvidia.com"
-        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com
-    - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11)
-      - db12e2891f40 "mm: memcontrol: constify the lruvec helpers (2/11)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-3-c239a6010b58@columbia.edu
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - 55f77b17f7af "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 2313dae43c12 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - c51381a2b519 "selftests/mm: add a GUP selftest"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
-    - fa9b2273e7a6 "mm: constify arguments in default pxdp_get()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260918064928.793742-1-anshuman.khandual@arm.com
-- mm-new: 5 -> 11 commits
-  - series: 0 (3) -> 1 (10)
-    - no role, no role : 2 -> 9 commits
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 0 -> 1 commits
-  - new commits
-    - 7fd3c49e10e8 "mm: disallow raw PFN mappings of huge/shared zeropage"
+    - series "mm: refactor zonelist constructors and iterators", v3. (2)
+      - d543ba7af36e "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net"
+        - added "Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net"
+        - added "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
+        - added "Cc: Rakie Kim <rakie.kim@sk.com>"
+        - added "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
+        - dropped "Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net"
+        - Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net
+        - Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net
+    - 19b46805c485 "mm: disallow raw PFN mappings of huge/shared zeropage"
       - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260921054225.28537-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20260917121010.60966-1-lance.yang@linux.dev/
+- mm-new: 11 -> 11 commits (no change)
+  - series: 1 (10) -> 1 (10) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 9 -> 9 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 0 commits
+  - new commits
+    - 6dceb9b83da6 "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+  - changed commits
     - series "mm/sparse: remove SECTION_MARKED_PRESENT and further cleanups", v2. (13)
-      - 415b12521126 "mm/sparse: move mem_section init to sparse_extreme_init() (0/13)"
+      - ce52d09b121c "mm/sparse: move __highest_used_section_nr handling (7/13)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-0-54d81d65e125@kernel.org
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-1-54d81d65e125@kernel.org
-      - af79d865b19c "mm/sparse: refactor sparse_sections_init() (1/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-2-54d81d65e125@kernel.org
-      - 9859d1417149 "mm/sparse: move initialization of section metadata to sparse_metadata_init() (2/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-3-54d81d65e125@kernel.org
-      - 5f10f07d6d83 "mm/sparse: rename and cleanup sparse_init_nid() (3/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-4-54d81d65e125@kernel.org
-      - 9d9d6ed81716 "mm/sparse: cleanup sparse_init_one_section() (4/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-5-54d81d65e125@kernel.org
-      - 1f0dcb40ae66 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr (5/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-      - 198212562972 "mm/sparse: remove pfn_in_present_section() (6/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-7-54d81d65e125@kernel.org
-      - 307e6be07e91 "mm/sparse: move __highest_used_section_nr handling (7/13)"
-        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Oscar Salvador <osalvador@suse.de>"
+        - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-8-54d81d65e125@kernel.org
-      - bde59377497a "mm/sparse: remove SECTION_MARKED_PRESENT (9/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-      - 1b0c2313006d "mm/sparse: remove flags parameter from sparse_init_one_section() (10/13)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-11-54d81d65e125@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - f2ebdd6befb7 "fork: honor task_struct's declared alignment"
-      - Authored by no role player, reviewed by no role player
-      - dropped "Cc: Karl Mehltretter <kmehltretter@gmail.com>"
-      - Link: https://lore.kernel.org/20260710123957.31774-1-kmehltretter@gmail.com

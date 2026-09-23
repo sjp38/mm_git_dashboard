@@ -1,44 +1,17 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc1-475-g0d9ff90a5422 (no change)
+- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 7 -> 12 commits
-  - series: 1 (6) -> 1 (9)
+- mm-unstable: 12 -> 12 commits (no change)
+  - series: 1 (9) -> 1 (9) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 4 -> 9 commits
+    - no role, no role : 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 6b064eeaac29 "mm/gup_test: safely calculate GUP batch size"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260915102524.125758-1-sarthak.sharma@arm.com
-    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6)
-      - 21342972f0f0 "tools/lib/mm: move hugepage_settings out of selftests (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
-      - d6baa9a7d90a "tools/mm: move gup_test from selftests/mm to tools/mm (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260918112234.195857-5-sarthak.sharma@arm.com
-      - e1b12e835712 "tools/mm: make gup_bench a benchmark only tool (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260918112234.195857-6-sarthak.sharma@arm.com
-    - c51381a2b519 "selftests/mm: add a GUP selftest"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
-- mm-new: 6 -> 0 commits
-  - series: 0 (3) -> 0 (0)
-    - no role, no role : 6 -> 0 commits
-  - dropped commits
-    - 6521f3c81137 "mm/gup: honour FOLL_PIN in NOMMU __get_user_pages_locked()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/2026042303-vendor-outright-b9d2@gregkh
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

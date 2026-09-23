@@ -1,116 +1,130 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc1-475-g0d9ff90a5422 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+  - dropped commits
+    - e384abeb559d "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: : https://lore.kernel.org/DL1HIHWYJ7TB.1CY76SJS0V03L@nvidia.com
+      - Link: https://lore.kernel.org/20260827-hugepfn-allowable-orders-v1-1-94819c8807c8@kernel.org
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 47 -> 51 commits
-  - series: 6 (41) -> 7 (45)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 5 -> 7 commits
-    - no role, reviewer: 34 -> 36 commits
+- mm-unstable: 51 -> 64 commits
+  - series: 7 (45) -> 8 (57)
+    - no role, nobody: 4 -> 7 commits
+    - no role, no role : 7 -> 8 commits
+    - no role, reviewer: 36 -> 44 commits
     - no role, maintainer: 2 -> 2 commits (no change)
-    - reviewer, nobody: 1 -> 0 commits
-    - reviewer, no role : 0 -> 1 commits
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 2 commits
   - changed commits
-    - series "mm: reject zone device folios in more folio walkers", v2. (3)
-      - fb0ae2d364a2 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd() (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - dropped "Cc: Gregory Price <gourry@gourry.net>"
-        - Link: https://lore.kernel.org/20260817220810.1175596-1-gourry@gourry.net
-        - Link: https://lore.kernel.org/20260817220810.1175596-2-gourry@gourry.net
-    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
-      - 960b5b5c1333 "mm/page-flags: check page/folio->private instead of PG_private (9/17)"
-        - Authored by a reviewer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260913-remove-pg_private-v4-10-848550f7574e@nvidia.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-    - 96f6924bddf7 "mm/huge_memory: simplify pgtable deposit detection"
-      - Authored by a reviewer, reviewed by a reviewer
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-      - Link: https://lore.kernel.org/20260917054015.23553-1-lance.yang@linux.dev
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - 55f77b17f7af "mm: implement and use vma_has_anon_rmap(), silence KCSAN (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 2313dae43c12 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6)
-      - dd166fb98770 "selftests/mm: make file helpers return errors (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260918112234.195857-1-sarthak.sharma@arm.com
-        - Link: https://lore.kernel.org/20260918112234.195857-2-sarthak.sharma@arm.com
-      - 21342972f0f0 "tools/lib/mm: move hugepage_settings out of selftests (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
-- mm-new: 4 -> 14 commits
-  - series: 1 (4) -> 2 (13)
-    - no role, nobody: 0 -> 5 commits
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 2 -> 7 commits
-    - reviewer, reviewer: 0 -> 1 commits
-  - new commits
     - series "selftests/mm: improve khugepaged coverage", v6. (19)
-      - 72036c4c2e63 "selftests/mm: raise the khugepaged test-case cap (0/19)"
+      - 4c387c4fa993 "selftests/mm: raise the khugepaged test-case cap (0/19)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260919002451.496763-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260919002451.496763-2-kirill@shutemov.name
-      - bb422945c6d1 "selftests/mm: skip collapse_compound_extreme() where the PMD is too large (1/19)"
+      - 13df73c36aab "selftests/mm: skip collapse_compound_extreme() where the PMD is too large (1/19)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260919002451.496763-3-kirill@shutemov.name
-      - d2997e78383c "selftests/mm: scale khugepaged's collapse wait with the PMD size (2/19)"
+      - fb98a07dbead "selftests/mm: scale khugepaged's collapse wait with the PMD size (2/19)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260919002451.496763-4-kirill@shutemov.name
-      - ac1be3cd015b "selftests/mm: skip khugepaged page cache cases without a PMD folio (3/19)"
+      - 9bf2feab8a69 "selftests/mm: skip khugepaged page cache cases without a PMD folio (3/19)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260919002451.496763-5-kirill@shutemov.name
-      - ed1461da1270 "selftests/mm: make the swap cases' swapout reliable (4/19)"
+      - 4f2988d0bf68 "selftests/mm: make the swap cases' swapout reliable (4/19)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260919002451.496763-6-kirill@shutemov.name
-      - a62b88a25752 "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases (5/19)"
+      - cd18550af8ac "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases (5/19)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260919002451.496763-7-kirill@shutemov.name
-      - 2718f097a9ea "selftests/mm: move is_backed_by_folio() into vm_util (6/19)"
+      - e1bb92e8ca2e "selftests/mm: move is_backed_by_folio() into vm_util (6/19)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260919002451.496763-8-kirill@shutemov.name
-      - eea43e5ab927 "selftests/mm: add order-parameterized khugepaged collapse cases (10/19)"
+      - 4218be530c2f "selftests/mm: add order-parameterized khugepaged collapse cases (10/19)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260919002451.496763-12-kirill@shutemov.name
-      - abca8db57163 "selftests/mm: parameterize the mixed-source collapse case by source order (11/19)"
+      - b1d21628962f "selftests/mm: parameterize the mixed-source collapse case by source order (11/19)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260919002451.496763-13-kirill@shutemov.name
-      - 42024368093c "selftests/mm: cover a shared-source collapse write race (12/19)"
+      - cf67316611e5 "selftests/mm: cover a shared-source collapse write race (12/19)"
         - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260919002451.496763-14-kirill@shutemov.name
-      - ae0713dfba49 "selftests/mm: run every supported collapse order by default (13/19)"
+      - f90fe52f1cc4 "selftests/mm: run every supported collapse order by default (13/19)"
         - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260919002451.496763-15-kirill@shutemov.name
-    - 7fd3c49e10e8 "mm: disallow raw PFN mappings of huge/shared zeropage"
+    - 19b46805c485 "mm: disallow raw PFN mappings of huge/shared zeropage"
       - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260921054225.28537-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20260917121010.60966-1-lance.yang@linux.dev/
     - series "kselftest: mm: fix intermittent failure khugepaged test", v2. (2)
-      - 38e48805a09a "kselftest: mm: return fail when child test result is fail in khugepaged (0/2)"
-        - Authored by no role player, reviewed by nobody
+      - 0bd574015740 "kselftest: mm: return fail when child test result is fail in khugepaged (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
         - Link: https://lore.kernel.org/20260921-fix_khugepagd_fail-v2-0-3c2877beef61@arm.com
         - Link: https://lore.kernel.org/20260921-fix_khugepagd_fail-v2-1-3c2877beef61@arm.com
-      - bbe530fcc6eb "kselftest: mm: fix intermittent failure khugepaged test (1/2)"
-        - Authored by no role player, reviewed by nobody
+      - 81f28e69ab9e "kselftest: mm: fix intermittent failure khugepaged test (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Tested-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
         - Link: https://lore.kernel.org/20260921-fix_khugepagd_fail-v2-2-3c2877beef61@arm.com
+- mm-new: 14 -> 2 commits
+  - series: 2 (13) -> 0 (1)
+    - no role, nobody: 5 -> 1 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 7 -> 1 commits
+    - reviewer, reviewer: 1 -> 0 commits
+  - new commits
+    - 6dceb9b83da6 "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+  - changed commits
+    - series "mm: restore per-memcg reclaim for NONSLAB shrinkers under nokmem", v3. (4)
+      - 30af1c181fbc "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-new
+        - added "Link: https://lore.kernel.org/20260910080722.3961351-4-qinyuntan@linux.alibaba.com"
+        - added "Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [2]"
+        - added "Link: https://lore.kernel.org/all/ah9PGv12mqai84ES@cmpxchg.org/ [1]"
+        - added "Reviewed-by: Johannes Weiner <hannes@cmpxchg.org>"
+        - added "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
+        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
+        - added "Cc: Michal Hocko <mhocko@kernel.org>"
+        - added "Cc: Muchun Song <muchun.song@linux.dev>"
+        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+        - added "Cc: Dave Chinner <david@fromorbit.com>"
+        - dropped "Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]"
+        - dropped "Link: https://lore.kernel.org/20260904033503.4067283-1-qinyuntan@linux.alibaba.com"
+        - dropped "Link: https://lore.kernel.org/20260904033503.4067283-2-qinyuntan@linux.alibaba.com"
+        - dropped "Cc: Kairui Song <kasong@tencent.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+        - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - Link: https://lore.kernel.org/20260910080722.3961351-4-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/all/ah9PGv12mqai84ES@cmpxchg.org/ [1]
+        - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [2]
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
