@@ -1,132 +1,121 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - 407a5d205179 "writeback: report a Tasks-RCU quiescent state per cgwb drain pass"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260909-cgwb-tasks-rcu-qs-v1-1-967a7754771f@toxicpanda.com
-      - Link: https://lore.kernel.org/bpf/9d444098-7c03-4163-af12-bd0a79a51443@paulmck-laptop/
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 59 -> 82 commits
-  - series: 8 (39) -> 10 (60)
-    - no role, nobody: 4 -> 13 commits
-    - no role, no role : 27 -> 31 commits
-    - no role, reviewer: 6 -> 15 commits
+- mm-unstable: 82 -> 82 commits (no change)
+  - series: 10 (60) -> 10 (59)
+    - no role, nobody: 13 -> 12 commits
+    - no role, no role : 31 -> 30 commits
+    - no role, reviewer: 15 -> 17 commits
     - no role, maintainer: 9 -> 9 commits (no change)
-    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 12 -> 12 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - c03744c7081e "docs-mm-describe-set_memory-and-set_direct_map-apis-fix"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/arJNn2QD_pY6e14R@kernel.org
   - changed commits
-    - 5eda86285249 "docs/mm: describe set_memory() and set_direct_map() APIs"
+    - 381c4392f8c2 "mm: change the contract for free_pgtables(), update docs"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260919-set-memory-docs-v2-1-a2a4b3657690@kernel.org
+      - added "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org"
+      - added "Cc: Brian Cain <bcain@kernel.org>"
+      - added "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
+      - added "Cc: Borislav Petkov <bp@alien8.de>"
+      - added "Cc: James Bottomley <james.bottomley@hansenpartnership.com>"
+      - added "Cc: Jonathan Corbet <corbet@lwn.net>"
+      - added "Cc: Usama Arif <usama.arif@linux.dev>"
+      - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+      - added "Cc: H. Peter Anvin <hpa@zytor.com>"
+      - added "Cc: Chris Zankel <chris@zankel.net>"
+      - added "Cc: Thomas Gleixner <tglx@kernel.org>"
+      - added "Cc: Paul Walmsley <pjw@kernel.org>"
+      - added "Cc: Mark Rutland <mark.rutland@arm.com>"
+      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+      - added "Cc: Nico Pache <nico.pache@linux.dev>"
+      - added "Cc: Christophe Leroy <chleroy@kernel.org>"
+      - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
+      - added "Cc: Simon Schuster <schuster.simon@siemens-energy.com>"
+      - dropped "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org"
+      - dropped "Cc: Christian Zankel <chris@zankel.net>"
+      - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
+      - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
+      - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
+      - dropped "Cc: "H. Peter Anvin" <hpa@zytor.com>"
+      - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
+      - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org
     - series "selftests/mm: improve khugepaged coverage", v6. (19)
-      - 4c387c4fa993 "selftests/mm: raise the khugepaged test-case cap (0/19)"
+      - 162ca64dd746 "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases (5/19)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-1-kirill@shutemov.name
-        - Link: https://lore.kernel.org/20260919002451.496763-2-kirill@shutemov.name
-      - 13df73c36aab "selftests/mm: skip collapse_compound_extreme() where the PMD is too large (1/19)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-3-kirill@shutemov.name
-      - fb98a07dbead "selftests/mm: scale khugepaged's collapse wait with the PMD size (2/19)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-4-kirill@shutemov.name
-      - 9bf2feab8a69 "selftests/mm: skip khugepaged page cache cases without a PMD folio (3/19)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-5-kirill@shutemov.name
-      - 4f2988d0bf68 "selftests/mm: make the swap cases' swapout reliable (4/19)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-6-kirill@shutemov.name
-      - cd18550af8ac "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases (5/19)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-7-kirill@shutemov.name
-      - e1bb92e8ca2e "selftests/mm: move is_backed_by_folio() into vm_util (6/19)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-8-kirill@shutemov.name
-      - 1ca5bc04665b "selftests/mm: add folio-order check for address ranges (7/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-9-kirill@shutemov.name
-      - dba6137c523a "selftests/mm: add folio-order detection self-check (8/19)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-10-kirill@shutemov.name
-      - f04235205909 "selftests/mm: add khugepaged completion barrier helper (9/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-11-kirill@shutemov.name
-      - 4218be530c2f "selftests/mm: add order-parameterized khugepaged collapse cases (10/19)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-12-kirill@shutemov.name
-      - b1d21628962f "selftests/mm: parameterize the mixed-source collapse case by source order (11/19)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-13-kirill@shutemov.name
-      - cf67316611e5 "selftests/mm: cover a shared-source collapse write race (12/19)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-14-kirill@shutemov.name
-      - f90fe52f1cc4 "selftests/mm: run every supported collapse order by default (13/19)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-15-kirill@shutemov.name
-      - 21629135b12f "selftests/mm: check that one khugepaged pass collapses one window (14/19)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-16-kirill@shutemov.name
-      - 21f4243e000b "selftests/mm: add khugepaged race harness (15/19)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-17-kirill@shutemov.name
-      - f759890d18e7 "selftests/mm: race the collapse of windows with holes (16/19)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-18-kirill@shutemov.name
-      - 43cbfff0da23 "selftests/mm: add memory-pressure threads to the khugepaged race harness (17/19)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-19-kirill@shutemov.name
-      - dae9c2248df9 "selftests/mm: zap whole PTE tables in the khugepaged race harness (18/19)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260919002451.496763-20-kirill@shutemov.name
-    - series "kselftest: mm: fix intermittent failure khugepaged test", v2. (2)
-      - 0bd574015740 "kselftest: mm: return fail when child test result is fail in khugepaged (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
         - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
         - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260921-fix_khugepagd_fail-v2-0-3c2877beef61@arm.com
-        - Link: https://lore.kernel.org/20260921-fix_khugepagd_fail-v2-1-3c2877beef61@arm.com
-      - 81f28e69ab9e "kselftest: mm: fix intermittent failure khugepaged test (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260919002451.496763-7-kirill@shutemov.name
+      - 1c8d310f3b66 "selftests/mm: add order-parameterized khugepaged collapse cases (10/19)"
+        - Authored by no role player, reviewed by nobody
         - added "Tested-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
         - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260921-fix_khugepagd_fail-v2-2-3c2877beef61@arm.com
-- mm-new: 23 -> 1 commits
-  - series: 2 (21) -> 0 (0)
-    - no role, nobody: 12 -> 1 commits
-    - no role, no role : 4 -> 0 commits
-    - no role, reviewer: 7 -> 0 commits
+        - Link: https://lore.kernel.org/20260919002451.496763-12-kirill@shutemov.name
+      - ab8754e0dca9 "selftests/mm: parameterize the mixed-source collapse case by source order (11/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Tested-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260919002451.496763-13-kirill@shutemov.name
+    - series "kselftest: mm: fix intermittent failure khugepaged test", v3. (2)
+      - 76b9fa08a307 "kselftest: mm: return fail when child test result is fail in khugepaged (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-fix_khugepagd_fail-v3-1-b387e92fe1a9@arm.com"
+        - added "Link: https://lore.kernel.org/20260923-fix_khugepagd_fail-v3-0-b387e92fe1a9@arm.com"
+        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
+        - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - added "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Shuah Khan <shuah@kernel.org>"
+        - added "Cc: David Hildenbrand <david@kernel.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Link: https://lore.kernel.org/20260921-fix_khugepagd_fail-v2-1-3c2877beef61@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260921-fix_khugepagd_fail-v2-0-3c2877beef61@arm.com"
+        - dropped "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Cc: "Mike Rapoport (IBM)" <rppt@kernel.org>"
+        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: David Hildenbrand (ARM) <david@kernel.org>"
+        - dropped "Cc: Nico Pache (Red Hat) <nico.pache@linux.dev>"
+        - dropped "Cc: Kirill A. Shutemov <kas@kernel.org>"
+        - dropped "Cc: Shuah Khan (Samsung OSG) <shuah@kernel.org>"
+        - dropped "Cc: "Vlastimil Babka (SUSE)" <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260923-fix_khugepagd_fail-v3-0-b387e92fe1a9@arm.com
+        - Link: https://lore.kernel.org/20260923-fix_khugepagd_fail-v3-1-b387e92fe1a9@arm.com
+      - 99d08cb94abb "kselftest: mm: fix intermittent failure khugepaged test (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-fix_khugepagd_fail-v3-2-b387e92fe1a9@arm.com"
+        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
+        - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - added "Cc: Mike Rapoport <rppt@kernel.org>"
+        - added "Cc: Shuah Khan <shuah@kernel.org>"
+        - added "Cc: David Hildenbrand <david@kernel.org>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Link: https://lore.kernel.org/20260921-fix_khugepagd_fail-v2-2-3c2877beef61@arm.com"
+        - dropped "Cc: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Cc: "Mike Rapoport (IBM)" <rppt@kernel.org>"
+        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: David Hildenbrand (ARM) <david@kernel.org>"
+        - dropped "Cc: Nico Pache (Red Hat) <nico.pache@linux.dev>"
+        - dropped "Cc: Kirill A. Shutemov <kas@kernel.org>"
+        - dropped "Cc: Shuah Khan (Samsung OSG) <shuah@kernel.org>"
+        - dropped "Cc: "Vlastimil Babka (SUSE)" <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260923-fix_khugepagd_fail-v3-2-b387e92fe1a9@arm.com
+- mm-new: 1 -> 2 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - 210a607b8f34 "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260923-selftests-mm-mlock2-fix-v1-1-750b627854c6@dgu.ac.kr
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

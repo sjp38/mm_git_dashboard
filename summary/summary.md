@@ -1,20 +1,20 @@
 - baseline: v7.3-rc4-70-gfe2ec83746e5
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 15 total, 2 (5) series, 10 non-series commits
+- mm-hotfixes-unstable: 17 total, 2 (5) series, 12 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 4 commits
-    - no role, no role : 6 commits
+    - no role, nobody: 5 commits
+    - no role, no role : 7 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 1 commits
     - reviewer, no role : 1 commits
     - maintainer, nobody: 1 commits
     - maintainer, no role : 1 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 612 total, 91 (496) series, 116 non-series commits
+- mm-unstable: 612 total, 91 (495) series, 117 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 84 commits
-    - no role, no role : 172 commits
-    - no role, reviewer: 93 commits
+    - no role, nobody: 81 commits
+    - no role, no role : 170 commits
+    - no role, reviewer: 98 commits
     - no role, maintainer: 114 commits
     - reviewer, nobody: 2 commits
     - reviewer, no role : 3 commits
@@ -23,10 +23,10 @@
     - maintainer, nobody: 96 commits
     - maintainer, no role : 28 commits
     - maintainer, reviewer: 5 commits
-- mm-new: 38 total, 4 (31) series, 7 non-series commits
+- mm-new: 39 total, 4 (31) series, 8 non-series commits
   - author/reviewer role stat
     - no role, nobody: 8 commits
-    - no role, no role : 21 commits
+    - no role, no role : 22 commits
     - no role, reviewer: 5 commits
     - no role, maintainer: 3 commits
     - maintainer, nobody: 1 commits
@@ -34,9 +34,9 @@
 - mm-nonmm-unstable: 106 total, 14 (43) series, 63 non-series commits
   - author/reviewer role stat
     - no role, nobody: 45 commits
-    - no role, no role : 27 commits
+    - no role, no role : 26 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 14 commits
+    - no role, maintainer: 15 commits
     - reviewer, nobody: 3 commits
     - maintainer, nobody: 11 commits
     - maintainer, reviewer: 5 commits

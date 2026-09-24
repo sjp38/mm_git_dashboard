@@ -1,45 +1,17 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-  - dropped commits
-    - 8c7fdc0b4c64 "selftests/cgroup: account for zswap shrinker writeback"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260902194521.3652178-1-joshua.hahnjy@gmail.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 21 -> 20 commits
-  - series: 6 (15) -> 6 (14)
+- mm-unstable: 20 -> 20 commits (no change)
+  - series: 6 (14) -> 6 (14) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 18 -> 17 commits
-- mm-new: 0 -> 1 commits
+    - no role, maintainer: 17 -> 17 commits (no change)
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - 5df2e944ee6c "mm: zswap: mark the zswap shrinker SHRINKER_NONSLAB"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-new
-      - added "Link: https://lore.kernel.org/20260910080722.3961351-5-qinyuntan@linux.alibaba.com"
-      - added "Acked-by: Yosry Ahmed <yosry@kernel.org>"
-      - added "Reviewed-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - added "Cc: Michal Hocko <mhocko@kernel.org>"
-      - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
-      - added "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Cc: Muchun Song <muchun.song@linux.dev>"
-      - added "Cc: Dave Chinner <david@fromorbit.com>"
-      - dropped "Link: https://lore.kernel.org/20260904033503.4067283-3-qinyuntan@linux.alibaba.com"
-      - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Kairui Song <kasong@tencent.com>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-      - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
-      - Link: https://lore.kernel.org/20260910080722.3961351-5-qinyuntan@linux.alibaba.com
-      - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

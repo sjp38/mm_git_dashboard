@@ -1,30 +1,15 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 3 -> 5 commits
-  - series: 1 (3) -> 2 (5)
-    - no role, maintainer: 3 -> 5 commits
-  - changed commits
-    - series "mm: kmemleak: batch the struct page scan". (2)
-      - f474fa071065 "mm: kmemleak: move the struct page scan into a helper (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
-        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - Link: https://lore.kernel.org/20260921-b4-kmemleak-page-scan-v1-1-fb97d4801b3a@debian.org
-      - 685086170033 "mm: kmemleak: scan the struct page array in MAX_SCAN_SIZE batches (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
-        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - Link: https://lore.kernel.org/20260921-b4-kmemleak-page-scan-v1-2-fb97d4801b3a@debian.org
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 2 -> 0 commits
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 2 (5) -> 2 (5) (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

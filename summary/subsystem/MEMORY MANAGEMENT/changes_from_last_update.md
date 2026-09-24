@@ -1,289 +1,443 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
-- mm-hotfixes-stable: 18 -> 0 commits
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 6 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
-    - no role, maintainer: 5 -> 0 commits
-    - reviewer, maintainer: 1 -> 0 commits
-    - maintainer, nobody: 2 -> 0 commits
-    - maintainer, maintainer: 1 -> 0 commits
-  - dropped commits
-    - e384abeb559d "mm/huge_memory: bypass THP tuneables for huge pfnmap mappings"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: : https://lore.kernel.org/DL1HIHWYJ7TB.1CY76SJS0V03L@nvidia.com
-      - Link: https://lore.kernel.org/20260827-hugepfn-allowable-orders-v1-1-94819c8807c8@kernel.org
-    - 397432cab17b "mm/mremap: account mm->locked_vm correctly for MREMAP_DONTUNMAP"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260828-mremap-fix-locked-vm-v1-1-c80be7505d1e@kernel.org
-    - 12e9ac7bc5b2 "mm, swap: fix SWAP_USAGE_OFFLIST_BIT collision with real usage count"
-      - Authored by a reviewer, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260828191433.3304458-1-nphamcs@gmail.com
-    - 6e673d0879ef "memcg: avoid charging the root memcg from obj_cgroup_charge_pages()"
-      - Authored by a maintainer, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260829023251.474083-1-shakeel.butt@linux.dev
-    - 848d2ce2fce1 "mm: filemap: retain mapped dropbehind folios"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/4aba05e1a2c3b61cb337d373eb9b7a8db4ddd822.1788024049.git.qiwenjie@xiaomi.com
-      - Link: https://lore.kernel.org/076bb01b-6fcf-4691-be8c-0e8507c9fe64@columbia.edu [1]
-    - e14a34548064 "mm/mlock: use the IRQ-safe accessor for NR_MLOCK in __munlock_folio()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260901180109.3797944-1-shakeel.butt@linux.dev
-    - 6cc27d821963 "mm/vma: correctly unaccount on mmap_prepare() failure"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260902-fix-unaccount-mmap_prepare-v1-1-ea070189fdfb@kernel.org
-    - 932cfb25e7ce "mm/shrinker: fix bogus set_shrinker_bit() with cgroup.memory=nokmem"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260902073800.305481-1-jiayuan.chen@linux.dev
-    - 7891fbb9512f "mm/folio: EXPORT_SYMBOL_FOR_KVM(lru_cache_drain_for_folio)"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/lkml/bd6c9c74-e374-a9d3-ba1f-8b6f430894fc@google.com/T/#u
-      - Link: https://lore.kernel.org/02876cea-5727-2ca4-bead-73659ea6fec4@google.com
-    - a363c62a653c "mm/hugetlb: do not dissolve gigantic pages without runtime support"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260823044118.1097121-2-xialonglong2025@163.com
-    - f166586f74dd "mm/damon/ops-common: use a page-aligned address in damon_ptep_mkold()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260904002829.116381-1-sj@kernel.org
-    - 90179da203ba "mm/damon/core: allow esz to be set to zero"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260908135413.97570-1-sj@kernel.org
-    - 39c0ceedd545 "mm/damon/vaddr: avoid hw-driven pte updates during damon_hugetlb_mkold()"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260907170358.100168-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260830160545.98969-1-sj@kernel.org [1]
-    - b3723b596b54 "mm/damon/core: fix unconditionally skip last region"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260908134739.96919-1-sj@kernel.org
-    - 9bdad082d44b "mm/hugetlb: preserve mremap address delta when skipping page tables"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260914132352.472-1-jaewook376@gmail.com
-    - b6ac0b3f6013 "mm/rmap: fix missing barrier between anon_vma init and vma->anon_vma publish"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260908122924.554373-1-tujinjiang@huawei.com
-    - eb6494824978 "mm/damon/core: reset invalid quota->charge_target_from"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260910142846.172957-1-sj@kernel.org
-      - Link: https://lore.kernel.org/20260830064708.40CA61F000E9@smtp.kernel.org [1]
-    - 407a5d205179 "writeback: report a Tasks-RCU quiescent state per cgwb drain pass"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260909-cgwb-tasks-rcu-qs-v1-1-967a7754771f@toxicpanda.com
-      - Link: https://lore.kernel.org/bpf/9d444098-7c03-4163-af12-bd0a79a51443@paulmck-laptop/
-- mm-hotfixes-unstable: 9 -> 8 commits
+- mm-hotfixes-unstable: 8 -> 9 commits
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 4 -> 3 commits
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - bcb31dfd7b00 "mm/vma: predicate setting mmap_prepare VMA fields on new vma alloc"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-hotfixes-unstable
+      - added "Link: https://lore.kernel.org/20260923-fix-mmap-prepare-overwrite-v1-1-3b3f1bfcdf5e@kernel.org"
+      - added "Fixes: c84bf6dd2b83 ("mm: introduce new .mmap_prepare() file callback")"
+      - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+      - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-2-4583d8a23bca@kernel.org"
+      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
+      - dropped "Cc: Takashi Iwai <tiwai@suse.com>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
+      - dropped "Cc: Will Deacon <will@kernel.org>"
+      - dropped "Cc: Maxime Ripard <mripard@kernel.org>"
+      - dropped "Cc: Al Viro <viro@zeniv.linux.org.uk>"
+      - dropped "Cc: Alexei Starovoitov <ast@kernel.org>"
+      - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
+      - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
+      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
+      - dropped "Cc: Chengming Zhou <chengming.zhou@linux.dev>"
+      - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
+      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+      - dropped "Cc: Madhavan Srinivasan <maddy@linux.ibm.com>"
+      - dropped "Cc: Janosch Frank <frankja@linux.ibm.com>"
+      - dropped "Cc: Barry Song <baohua@kernel.org>"
+      - dropped "Cc: Vasily Gorbik <gor@linux.ibm.com>"
+      - dropped "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
+      - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
+      - dropped "Cc: Sebastian Reichel <sre@kernel.org>"
+      - dropped "Cc: Ingo Molnar <mingo@redhat.com>"
+      - dropped "Cc: Leon Romanovsky <leon@kernel.org>"
+      - dropped "Cc: Doug Gilbert <dgilbert@interlog.com>"
+      - dropped "Cc: Namhyung kim <namhyung@kernel.org>"
+      - dropped "Cc: Takashi Iwai (SUSE) <tiwai@suse.de>"
+      - dropped "Cc: Kumar Kartikeya Dwivedi <memxor@gmail.com>"
+      - dropped "Cc: Dennis Dalessandro <dennis.dalessandro@cornelisnetworks.com>"
+      - dropped "Cc: Claudio Imbrenda <imbrenda@linux.ibm.com>"
+      - dropped "Cc: Kairui Song <kasong@tencent.com>"
+      - dropped "Cc: Byungchul Park <byungchul@sk.com>"
+      - dropped "Cc: Gerald Schaefer <gerald.schaefer@linux.ibm.com>"
+      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
+      - dropped "Cc: Rakie Kim <rakie.kim@sk.com>"
+      - dropped "Cc: Juri Lelli <juri.lelli@redhat.com>"
+      - dropped "Cc: Alistair Popple <apopple@nvidia.com>"
+      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+      - dropped "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
+      - dropped "Cc: Jan Kara <jack@suse.cz>"
+      - dropped "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Cc: Greg Kroah-Hartman <gregkh@linuxfoundation.org>"
+      - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
+      - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
+      - dropped "Cc: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>"
+      - dropped "Cc: Arnd Bergmann <arnd@arndb.de>"
+      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - dropped "Cc: Arnaldo Carvalho de Melo <acme@kernel.org>"
+      - dropped "Cc: John Hubbard <jhubbard@nvidia.com>"
+      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - dropped "Cc: Jaya Kumar <jayalk@intworks.biz>"
+      - dropped "Cc: Jaroslav Kysela <perex@perex.cz>"
+      - dropped "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
+      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+      - dropped "Cc: Emil Tsalapatis <emil@etsalapatis.com>"
+      - dropped "Cc: Christian Borntraeger <borntraeger@linux.ibm.com>"
+      - dropped "Cc: Matthew Brost <matthew.brost@intel.com>"
+      - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
+      - dropped "Cc: Albert Ou <aou@eecs.berkeley.edu>"
+      - dropped "Cc: Christian Brauner <brauner@kernel.org>"
+      - dropped "Cc: Dave Hansen <dave.hansen@linux.intel.com>"
+      - dropped "Cc: Wei Xu <weixugc@google.com>"
+      - dropped "Cc: Dave Airlie <airlied@gmail.com>"
+      - dropped "Cc: Rik van Riel <riel@surriel.com>"
+      - dropped "Cc: Yuanchu Xie <yuanchu@google.com>"
+      - dropped "Cc: Harry Yoo <harry@kernel.org>"
+      - dropped "Cc: Axel Rasmussen <axelrasmussen@google.com>"
+      - dropped "Cc: Andrii Nakryiko <andrii@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Cc: Peter Zijlstra <peterz@infradead.org>"
+      - dropped "Cc: Andreas Larsson <andreas@gaisler.com>"
+      - dropped "Cc: Gregory Price <gourry@gourry.net>"
+      - dropped "Cc: Eduard Zingerman <eddyz87@gmail.com>"
+      - dropped "Cc: Nicholas Piggin <npiggin@gmail.com>"
+      - dropped "Cc: Dev Jain <dev.jain@arm.com>"
+      - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
+      - dropped "Cc: Nhat Pham <nphamcs@gmail.com>"
+      - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
+      - dropped "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
+      - dropped "Cc: Marc Zyngier <maz@kernel.org>"
+      - dropped "Cc: Anup Patel <anup@brainfault.org>"
+      - dropped "Cc: Vincent Guittot <vincent.guittot@linaro.org>"
+      - dropped "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
+      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
+      - dropped "Cc: Miklos Szeredi <miklos@szeredi.hu>"
+      - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
+      - dropped "Cc: Oleg Nesterov <oleg@redhat.com>"
+      - dropped "Cc: Peter Xu <peterx@redhat.com>"
+      - dropped "Cc: Heiko Carstens <hca@linux.ibm.com>"
+      - dropped "Cc: Alexander Gordeev <agordeev@linux.ibm.com>"
+      - dropped "Cc: Chris Li <chrisl@kernel.org>"
+      - dropped "Cc: Helge Deller <deller@gmx.de>"
+      - dropped "Cc: Stephen Smalley <stephen.smalley.work@gmail.com>"
+      - dropped "Cc: Paul Moore <paul@paul-moore.com>"
+      - dropped "Cc: David S. Miller <davem@davemloft.net>"
+      - Link: https://lore.kernel.org/20260923-fix-mmap-prepare-overwrite-v1-1-3b3f1bfcdf5e@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 404 -> 411 commits
-  - series: 61 (329) -> 63 (334)
-    - no role, nobody: 52 -> 51 commits
-    - no role, no role : 91 -> 91 commits (no change)
-    - no role, reviewer: 75 -> 76 commits
-    - no role, maintainer: 72 -> 80 commits
+- mm-unstable: 411 -> 411 commits (no change)
+  - series: 63 (334) -> 63 (333)
+    - no role, nobody: 51 -> 49 commits
+    - no role, no role : 91 -> 90 commits
+    - no role, reviewer: 76 -> 79 commits
+    - no role, maintainer: 80 -> 80 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
-    - reviewer, reviewer: 9 -> 10 commits
-    - reviewer, maintainer: 6 -> 4 commits
+    - reviewer, reviewer: 10 -> 10 commits (no change)
+    - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, nobody: 67 -> 67 commits (no change)
     - maintainer, no role : 24 -> 24 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
   - new commits
-    - series "mm: fix hugetlb NR_HUGETLB accounting on folio migration", v2. (2)
-      - 5292d9a3c6f8 "mm/hugetlb: account migration target folio in per-node NR_HUGETLB vmstat (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-0-e8a36245bfab@kylinos.cn
-        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-1-e8a36245bfab@kylinos.cn
-      - cfe7954b65ee "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
-  - changed commits
-    - series "mm: refactor zonelist constructors and iterators", v3. (2)
-      - d543ba7af36e "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net"
-        - added "Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net"
-        - added "Cc: Rakie Kim <rakie.kim@sk.com>"
-        - added "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
-        - added "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
-        - dropped "Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net"
-        - Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net
-        - Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net
-      - 13d1568ac17a "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists() (1/2)"
+    - series "mm: make userland page table freeing RCU-safe", v4. (12)
+      - 1f3bebd7ac02 "mm/khugepaged: deposit a newly allocated page table on collapse (0/12)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260923022902.2433614-3-gourry@gourry.net"
-        - added "Reviewed-by: Zenghui Yu (Huawei) <zenghui.yu@linux.dev>"
-        - added "Cc: Rakie Kim <rakie.kim@sk.com>"
-        - added "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
-        - added "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
-        - dropped "Link: https://lore.kernel.org/20260912030424.2889731-3-gourry@gourry.net"
-        - dropped "Cc: Balbir Singh <balbirs@nvidia.com>"
-        - Link: https://lore.kernel.org/20260923022902.2433614-3-gourry@gourry.net
-    - edd816397129 "mm/shmem: don't release a swapin-error marker as a swap entry"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - Link: https://lore.kernel.org/20260920155002.1030454-1-devnexen@gmail.com
-    - 19b46805c485 "mm: disallow raw PFN mappings of huge/shared zeropage"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260921054225.28537-1-lance.yang@linux.dev
-      - Link: https://lore.kernel.org/all/20260917121010.60966-1-lance.yang@linux.dev/
-    - series "mm/damon/core: fix the size charged for a filter-trimmed region", v2. (2)
-      - 3124e607d2bc "mm/damon/core: charge only the part of a region the filter left (0/2)"
+        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-0-fe1ad1f1e303@kernel.org
+        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-1-fe1ad1f1e303@kernel.org
+      - 239a8b47ecd3 "mm-khugepaged-deposit-a-newly-allocated-page-table-on-collapse-fix (1/12)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/arN7q5nHz7iebA_e@gremlin
+  - changed commits
+    - series "mm: make userland page table freeing RCU-safe", v4. (12)
+      - c8fb992e8367 "mm: make userland page table freeing RCU-safe (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Brian Cain <bcain@kernel.org>"
+        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+        - added "Cc: H. Peter Anvin <hpa@zytor.com>"
+        - added "Cc: Christophe Leroy <chleroy@kernel.org>"
+        - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
+        - added "Cc: Chris Zankel <chris@zankel.net>"
+        - added "Cc: James Bottomley <james.bottomley@hansenpartnership.com>"
+        - added "Cc: Mark Rutland <mark.rutland@arm.com>"
+        - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+        - added "Cc: Paul Walmsley <pjw@kernel.org>"
+        - added "Cc: Thomas Gleixner <tglx@kernel.org>"
+        - added "Cc: Simon Schuster <schuster.simon@siemens-energy.com>"
+        - added "Cc: Borislav Petkov <bp@alien8.de>"
+        - added "Cc: Jonathan Corbet <corbet@lwn.net>"
+        - added "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-11-7b8c86103821@kernel.org"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
+        - dropped "Cc: Christian Zankel <chris@zankel.net>"
+        - dropped "Cc: "H. Peter Anvin" <hpa@zytor.com>"
+        - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
+        - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
+        - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
+        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org
+    - 381c4392f8c2 "mm: change the contract for free_pgtables(), update docs"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org"
+      - added "Cc: Brian Cain <bcain@kernel.org>"
+      - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+      - added "Cc: H. Peter Anvin <hpa@zytor.com>"
+      - added "Cc: Christophe Leroy <chleroy@kernel.org>"
+      - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
+      - added "Cc: Chris Zankel <chris@zankel.net>"
+      - added "Cc: James Bottomley <james.bottomley@hansenpartnership.com>"
+      - added "Cc: Mark Rutland <mark.rutland@arm.com>"
+      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+      - added "Cc: Paul Walmsley <pjw@kernel.org>"
+      - added "Cc: Thomas Gleixner <tglx@kernel.org>"
+      - added "Cc: Simon Schuster <schuster.simon@siemens-energy.com>"
+      - added "Cc: Borislav Petkov <bp@alien8.de>"
+      - added "Cc: Jonathan Corbet <corbet@lwn.net>"
+      - added "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
+      - added "Cc: Nico Pache <nico.pache@linux.dev>"
+      - added "Cc: Usama Arif <usama.arif@linux.dev>"
+      - dropped "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org"
+      - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
+      - dropped "Cc: Christian Zankel <chris@zankel.net>"
+      - dropped "Cc: "H. Peter Anvin" <hpa@zytor.com>"
+      - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
+      - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
+      - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
+      - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org
+    - series "mm/collapse: separate a collapse from its callers", v3. (12)
+      - a3c20193db14 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260916093145.4022188-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260916093145.4022188-2-kirill@shutemov.name
+      - 20f1429100d8 "mm/khugepaged: count collapses where khugepaged makes them (1/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260916093145.4022188-3-kirill@shutemov.name
+      - cc9e00d1748d "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260916093145.4022188-4-kirill@shutemov.name
+      - e090b717fb61 "mm/collapse: add collapse.h for the collapse interface (3/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260916093145.4022188-5-kirill@shutemov.name
+      - cd63ffb36a3f "mm/collapse: drop the collapse_possible() wrapper (5/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260916093145.4022188-7-kirill@shutemov.name
+      - b0180e51a9e7 "mm/collapse: name the per-table scan reset for what it resets (6/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260916093145.4022188-8-kirill@shutemov.name
+    - series "mm/huge_memory: clean up and decouple the anon and file split helpers", v6. (17)
+      - e52788da1a82 "mm/swap: fix off-by-one in swap cache replace sanity check (0/17)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-0-ba1b4ba72c6f@tencent.com"
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-1-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-1-39878b37dfb0@tencent.com"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-0-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-0-ba1b4ba72c6f@tencent.com
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-1-ba1b4ba72c6f@tencent.com
+      - 8f833e81efb4 "mm/huge_memory: fix rejection of swap cache folios with a mapping (1/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-2-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-2-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-2-ba1b4ba72c6f@tencent.com
+      - a1d367b82824 "mm/huge_memory: invert folio_ref_freeze() check to reduce indentation (2/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-3-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-3-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-3-ba1b4ba72c6f@tencent.com
+      - 36a799bbdb6b "mm/huge_memory: split the routine for splitting anon and file folio (3/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-4-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-4-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-4-ba1b4ba72c6f@tencent.com
+      - 7d4729bcfaba "mm/huge_memory: rename __split_unmapped_folio() to __split_frozen_folio() (4/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-5-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-5-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-5-ba1b4ba72c6f@tencent.com
+      - b777c44cc95b "mm/huge_memory: consolidate irq and locking for folio split (5/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-6-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-6-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-6-ba1b4ba72c6f@tencent.com
+      - 848d24bb26cb "mm/huge_memory: move EOF trimming into the file split helper (6/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-7-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-7-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-7-ba1b4ba72c6f@tencent.com
+      - 8c49eb34c7cb "mm/huge_memory: move unmap and remap into the split helpers (7/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-8-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-8-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-8-ba1b4ba72c6f@tencent.com
+      - 08f39c014a6a "mm/huge_memory: rename remap_page() to remap_anon_folio() (8/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-9-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-9-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-9-ba1b4ba72c6f@tencent.com
+      - 6e619ebfd45c "mm/huge_memory: move the racy refcount check into unmap_folio() (9/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-10-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-10-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-10-ba1b4ba72c6f@tencent.com
+      - 9110c0bc53e0 "mm/huge_memory: move filemap management into the file split helper (10/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-11-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-11-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-11-ba1b4ba72c6f@tencent.com
+      - ed93a337497a "mm/huge_memory: move anon_vma handling into the anon split helper (11/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-12-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kiryl Shutsemau <kas@kernel.org>"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-12-39878b37dfb0@tencent.com"
+        - dropped "Cc: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-12-ba1b4ba72c6f@tencent.com
+      - 1c4e3c193bf1 "mm/huge_memory: move memcg switch into the file split helper (12/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-13-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-13-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-13-ba1b4ba72c6f@tencent.com
+      - 56ce7ce1f7c0 "mm/huge_memory: drop the unused do_lru argument of the file split helper (13/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-14-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-14-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-14-ba1b4ba72c6f@tencent.com
+      - 6068dda8c0de "mm/huge_memory: clean up after-split folio freeing in __folio_split (14/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-15-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-15-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-15-ba1b4ba72c6f@tencent.com
+      - 54c4400ae8f2 "mm/huge_memory: count only swap cache refs in anon folio split (15/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-16-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-16-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-16-ba1b4ba72c6f@tencent.com
+      - ae9733316a13 "mm/huge_memory: drop the redundant mapping argument of __split_frozen_folio (16/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-17-ba1b4ba72c6f@tencent.com"
+        - added "Cc: Kairui Song <ryncsn@gmail.com>"
+        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
+        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-17-39878b37dfb0@tencent.com"
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-17-ba1b4ba72c6f@tencent.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
+      - c2358b4eab6e "mm/vma: introduce and use vma_[flags_]can_merge() (1/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-3-4583d8a23bca@kernel.org
+      - 5b4d8e538252 "mm: consistently validate VMA state after mmap[_prepare] hooks (2/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-4-4583d8a23bca@kernel.org
+    - series "mm: fix hugetlb NR_HUGETLB accounting on folio migration", v2. (2)
+      - e6a859b30ace "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio (1/2)"
         - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921152443.80132-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260921152443.80132-2-sj@kernel.org
-      - 66850bb36eb8 "mm/damon/tests/core-kunit: test the size charged for a filter-trimmed region (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921152443.80132-3-sj@kernel.org
-    - series "mm/damon: improvements in efficiency, error handling, documents". (4)
-      - 2b5146ff3155 "mm/damon/core: skip quota score setup when the quota is full (0/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921151547.78472-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260921151547.78472-2-sj@kernel.org
-      - 7828e221442a "mm/damon/sysfs: propagate damon_call() error in turn_damon_on (1/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921151547.78472-3-sj@kernel.org
-      - 370018505892 "mm/damon: fix typos in comments (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921151547.78472-4-sj@kernel.org
-    - series "mm: kmemleak: batch the struct page scan". (2)
-      - f474fa071065 "mm: kmemleak: move the struct page scan into a helper (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
-        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - Link: https://lore.kernel.org/20260921-b4-kmemleak-page-scan-v1-1-fb97d4801b3a@debian.org
-      - 685086170033 "mm: kmemleak: scan the struct page array in MAX_SCAN_SIZE batches (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Catalin Marinas <catalin.marinas@arm.com>"
-        - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-        - Link: https://lore.kernel.org/20260921-b4-kmemleak-page-scan-v1-2-fb97d4801b3a@debian.org
-    - 807d1fe6f91b "mm: vmscan: put rotation-missed folios at the LRU tail"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - Link: https://lore.kernel.org/20260920132519.3369946-1-ridong.chen@linux.dev
-      - Link: https://lore.kernel.org/linux-kernel/20241010081802.290893-1-chenridong@huaweicloud.com/ [1]
-      - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
-      - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
-      - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
+        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
   - dropped commits
-    - series "alloc_tag: fix a leak and a deadlock around shutdown_mem_profiling()", v2. (2)
-      - cdd26bf54c9f "alloc_tag: skip percpu counter allocation when profiling is disabled (0/2)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260817062726.106511-1-hao.ge@linux.dev
-        - Link: https://lore.kernel.org/20260817062726.106511-2-hao.ge@linux.dev
-      - 0518cbf9527f "alloc_tag: remove /proc/allocinfo outside of mod_lock (1/2)"
-        - Authored by a reviewer, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260817062726.106511-3-hao.ge@linux.dev
-- mm-new: 24 -> 22 commits
-  - series: 5 (21) -> 3 (18)
-    - no role, nobody: 3 -> 4 commits
+    - series "mm: make userland page table freeing RCU-safe", v3. (12)
+      - a85350d8e778 "mm/huge_memory: zap deposited page tables after an RCU grace period (0/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-1-7b8c86103821@kernel.org
+- mm-new: 22 -> 22 commits (no change)
+  - series: 3 (18) -> 3 (18) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 9 -> 9 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 6 -> 3 commits
-    - reviewer, reviewer: 1 -> 0 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - 6dceb9b83da6 "mm: fix typos in various comments"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - series "mm: restore per-memcg reclaim for NONSLAB shrinkers under nokmem", v3. (4)
-      - 1d9806c28a4e "mm: memcontrol: drop kmemcg_id and use mem_cgroup_id() for list_lru indexing (0/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260910080722.3961351-1-qinyuntan@linux.alibaba.com
-        - Link: https://lore.kernel.org/20260910080722.3961351-2-qinyuntan@linux.alibaba.com
-      - d0c642ebb7e1 "mm-memcontrol-drop-kmemcg_id-and-use-mem_cgroup_id-for-list_lru-indexing-fix (1/4)"
-        - Authored by a maintainer, reviewed by nobody
-      - c34f71209395 "mm: list_lru: keep per-memcg lists with nokmem for NONSLAB-backed lrus (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260910080722.3961351-3-qinyuntan@linux.alibaba.com
-    - bfe8b80eeb1f "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260922090749.24905-1-lizhe.67@bytedance.com
-  - changed commits
-    - series "mm/sparse: remove SECTION_MARKED_PRESENT and further cleanups", v2. (13)
-      - ce52d09b121c "mm/sparse: move __highest_used_section_nr handling (7/13)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Oscar Salvador <osalvador@suse.de>"
-        - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-8-54d81d65e125@kernel.org
-      - 0d0170afb4f1 "mm/memory_hotplug: drop CONFIG_HAVE_ARCH_PFN_VALID handling from pfn_to_online_page() (12/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Oscar Salvador <osalvador@suse.de>"
-        - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-13-54d81d65e125@kernel.org
-    - series "mm: restore per-memcg reclaim for NONSLAB shrinkers under nokmem", v3. (4)
-      - 30af1c181fbc "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-new
-        - added "Link: https://lore.kernel.org/all/ah9PGv12mqai84ES@cmpxchg.org/ [1]"
-        - added "Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [2]"
-        - added "Link: https://lore.kernel.org/20260910080722.3961351-4-qinyuntan@linux.alibaba.com"
-        - added "Reviewed-by: Johannes Weiner <hannes@cmpxchg.org>"
-        - added "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-        - added "Cc: Dave Chinner <david@fromorbit.com>"
-        - added "Cc: Michal Hocko <mhocko@kernel.org>"
-        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
-        - added "Cc: Yosry Ahmed <yosry@kernel.org>"
-        - added "Cc: Muchun Song <muchun.song@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20260904033503.4067283-1-qinyuntan@linux.alibaba.com"
-        - dropped "Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]"
-        - dropped "Link: https://lore.kernel.org/20260904033503.4067283-2-qinyuntan@linux.alibaba.com"
-        - dropped "Cc: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-        - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
-        - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
-        - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20260910080722.3961351-4-qinyuntan@linux.alibaba.com
-        - Link: https://lore.kernel.org/all/ah9PGv12mqai84ES@cmpxchg.org/ [1]
-        - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [2]
-    - 5df2e944ee6c "mm: zswap: mark the zswap shrinker SHRINKER_NONSLAB"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-new
-      - added "Link: https://lore.kernel.org/20260910080722.3961351-5-qinyuntan@linux.alibaba.com"
-      - added "Acked-by: Yosry Ahmed <yosry@kernel.org>"
-      - added "Reviewed-by: Johannes Weiner <hannes@cmpxchg.org>"
-      - added "Cc: Roman Gushchin <roman.gushchin@linux.dev>"
-      - added "Cc: Dave Chinner <david@fromorbit.com>"
-      - added "Cc: Michal Hocko <mhocko@kernel.org>"
-      - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
-      - added "Cc: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Link: https://lore.kernel.org/20260904033503.4067283-3-qinyuntan@linux.alibaba.com"
-      - dropped "Cc: Kairui Song <kasong@tencent.com>"
-      - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-      - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Liam R. Howlett <liam@infradead.org>"
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20260910080722.3961351-5-qinyuntan@linux.alibaba.com
-      - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 0 -> 1 commits
+- mm-nonmm-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - changed commits
-    - e0a27d31bfff "tmpfs: fix unicode_map leaks in casefold option handling"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-hotfixes-unstable -> mm-nonmm-unstable
-      - added "Reviewed-by: Andrew Morton <akpm@linux-foundation.org>"
-      - Link: https://lore.kernel.org/20260827152516.805622-1-hnkz.64@gmail.com
+    - no role, maintainer: 1 -> 1 commits (no change)

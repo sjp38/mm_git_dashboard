@@ -1,44 +1,30 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - maintainer, maintainer: 1 -> 0 commits
-  - dropped commits
-    - 6e673d0879ef "memcg: avoid charging the root memcg from obj_cgroup_charge_pages()"
-      - Authored by a maintainer, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260829023251.474083-1-shakeel.butt@linux.dev
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 41 -> 42 commits
-  - series: 9 (33) -> 9 (34)
+- mm-unstable: 42 -> 42 commits (no change)
+  - series: 9 (34) -> 9 (34) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 24 -> 25 commits
+    - no role, maintainer: 25 -> 25 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
-  - new commits
+  - changed commits
     - series "mm: fix hugetlb NR_HUGETLB accounting on folio migration", v2. (2)
-      - cfe7954b65ee "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio (1/2)"
+      - e6a859b30ace "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio (1/2)"
         - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
         - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
-- mm-new: 4 -> 7 commits
-  - series: 1 (4) -> 2 (6)
-    - no role, nobody: 0 -> 2 commits
+- mm-new: 7 -> 7 commits (no change)
+  - series: 2 (6) -> 2 (6) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - 6dceb9b83da6 "mm: fix typos in various comments"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - series "mm: restore per-memcg reclaim for NONSLAB shrinkers under nokmem", v3. (4)
-      - 1d9806c28a4e "mm: memcontrol: drop kmemcg_id and use mem_cgroup_id() for list_lru indexing (0/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260910080722.3961351-1-qinyuntan@linux.alibaba.com
-        - Link: https://lore.kernel.org/20260910080722.3961351-2-qinyuntan@linux.alibaba.com
-      - d0c642ebb7e1 "mm-memcontrol-drop-kmemcg_id-and-use-mem_cgroup_id-for-list_lru-indexing-fix (1/4)"
-        - Authored by a maintainer, reviewed by nobody
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

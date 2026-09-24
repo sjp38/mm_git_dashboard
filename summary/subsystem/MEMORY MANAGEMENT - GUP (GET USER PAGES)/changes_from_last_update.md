@@ -1,4 +1,4 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -10,6 +10,38 @@
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make userland page table freeing RCU-safe", v4. (12)
+      - c8fb992e8367 "mm: make userland page table freeing RCU-safe (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Brian Cain <bcain@kernel.org>"
+        - added "Cc: Simon Schuster <schuster.simon@siemens-energy.com>"
+        - added "Cc: Christophe Leroy <chleroy@kernel.org>"
+        - added "Cc: H. Peter Anvin <hpa@zytor.com>"
+        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Borislav Petkov <bp@alien8.de>"
+        - added "Cc: Chris Zankel <chris@zankel.net>"
+        - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+        - added "Cc: Mark Rutland <mark.rutland@arm.com>"
+        - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
+        - added "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
+        - added "Cc: Paul Walmsley <pjw@kernel.org>"
+        - added "Cc: Jonathan Corbet <corbet@lwn.net>"
+        - added "Cc: James Bottomley <james.bottomley@hansenpartnership.com>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Thomas Gleixner <tglx@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-11-7b8c86103821@kernel.org"
+        - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
+        - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: "H. Peter Anvin" <hpa@zytor.com>"
+        - dropped "Cc: Christian Zankel <chris@zankel.net>"
+        - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
+        - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
+        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

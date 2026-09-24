@@ -1,60 +1,96 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - 7891fbb9512f "mm/folio: EXPORT_SYMBOL_FOR_KVM(lru_cache_drain_for_folio)"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/lkml/bd6c9c74-e374-a9d3-ba1f-8b6f430894fc@google.com/T/#u
-      - Link: https://lore.kernel.org/02876cea-5727-2ca4-bead-73659ea6fec4@google.com
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 74 -> 75 commits
-  - series: 10 (66) -> 10 (66) (no change)
-    - no role, nobody: 16 -> 16 commits (no change)
+- mm-unstable: 75 -> 75 commits (no change)
+  - series: 10 (66) -> 10 (65)
+    - no role, nobody: 16 -> 14 commits
     - no role, no role : 38 -> 38 commits (no change)
-    - no role, reviewer: 10 -> 10 commits (no change)
+    - no role, reviewer: 10 -> 12 commits
     - no role, maintainer: 3 -> 3 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
-    - reviewer, reviewer: 3 -> 4 commits
+    - reviewer, reviewer: 4 -> 4 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: refactor zonelist constructors and iterators", v3. (2)
-      - d543ba7af36e "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net"
-        - added "Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net"
-        - added "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
-        - added "Cc: Rakie Kim <rakie.kim@sk.com>"
-        - added "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
-        - dropped "Link: https://lore.kernel.org/20260912030424.2889731-2-gourry@gourry.net"
-        - Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net
-        - Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net
-    - 19b46805c485 "mm: disallow raw PFN mappings of huge/shared zeropage"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260921054225.28537-1-lance.yang@linux.dev
-      - Link: https://lore.kernel.org/all/20260917121010.60966-1-lance.yang@linux.dev/
+    - series "mm: make userland page table freeing RCU-safe", v4. (12)
+      - c8fb992e8367 "mm: make userland page table freeing RCU-safe (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
+        - added "Cc: H. Peter Anvin <hpa@zytor.com>"
+        - added "Cc: Brian Cain <bcain@kernel.org>"
+        - added "Cc: Jonathan Corbet <corbet@lwn.net>"
+        - added "Cc: James Bottomley <james.bottomley@hansenpartnership.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Christophe Leroy <chleroy@kernel.org>"
+        - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+        - added "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Mark Rutland <mark.rutland@arm.com>"
+        - added "Cc: Paul Walmsley <pjw@kernel.org>"
+        - added "Cc: Chris Zankel <chris@zankel.net>"
+        - added "Cc: Thomas Gleixner <tglx@kernel.org>"
+        - added "Cc: Simon Schuster <schuster.simon@siemens-energy.com>"
+        - added "Cc: Borislav Petkov <bp@alien8.de>"
+        - dropped "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-11-7b8c86103821@kernel.org"
+        - dropped "Cc: "H. Peter Anvin" <hpa@zytor.com>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Cc: Christian Zankel <chris@zankel.net>"
+        - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
+        - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
+        - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
+        - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
+        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org
+    - 381c4392f8c2 "mm: change the contract for free_pgtables(), update docs"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org"
+      - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
+      - added "Cc: H. Peter Anvin <hpa@zytor.com>"
+      - added "Cc: Brian Cain <bcain@kernel.org>"
+      - added "Cc: Jonathan Corbet <corbet@lwn.net>"
+      - added "Cc: James Bottomley <james.bottomley@hansenpartnership.com>"
+      - added "Cc: Usama Arif <usama.arif@linux.dev>"
+      - added "Cc: Christophe Leroy <chleroy@kernel.org>"
+      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
+      - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+      - added "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
+      - added "Cc: Nico Pache <nico.pache@linux.dev>"
+      - added "Cc: Mark Rutland <mark.rutland@arm.com>"
+      - added "Cc: Paul Walmsley <pjw@kernel.org>"
+      - added "Cc: Chris Zankel <chris@zankel.net>"
+      - added "Cc: Thomas Gleixner <tglx@kernel.org>"
+      - added "Cc: Simon Schuster <schuster.simon@siemens-energy.com>"
+      - added "Cc: Borislav Petkov <bp@alien8.de>"
+      - dropped "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org"
+      - dropped "Cc: "H. Peter Anvin" <hpa@zytor.com>"
+      - dropped "Cc: Christian Zankel <chris@zankel.net>"
+      - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
+      - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
+      - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
+      - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
+      - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
+      - c2358b4eab6e "mm/vma: introduce and use vma_[flags_]can_merge() (1/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-3-4583d8a23bca@kernel.org
+      - 5b4d8e538252 "mm: consistently validate VMA state after mmap[_prepare] hooks (2/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-4-4583d8a23bca@kernel.org
 - mm-new: 11 -> 11 commits (no change)
   - series: 1 (10) -> 1 (10) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 0 commits
-  - new commits
-    - 6dceb9b83da6 "mm: fix typos in various comments"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-  - changed commits
-    - series "mm/sparse: remove SECTION_MARKED_PRESENT and further cleanups", v2. (13)
-      - ce52d09b121c "mm/sparse: move __highest_used_section_nr handling (7/13)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Oscar Salvador <osalvador@suse.de>"
-        - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-8-54d81d65e125@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

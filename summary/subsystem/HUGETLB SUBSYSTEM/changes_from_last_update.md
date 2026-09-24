@@ -1,48 +1,27 @@
-- baseline: v7.3-rc1-475-g0d9ff90a5422 -> v7.3-rc4-70-gfe2ec83746e5
-- mm-hotfixes-stable: 2 -> 0 commits
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, maintainer: 1 -> 0 commits
-  - dropped commits
-    - a363c62a653c "mm/hugetlb: do not dissolve gigantic pages without runtime support"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260823044118.1097121-2-xialonglong2025@163.com
-    - 9bdad082d44b "mm/hugetlb: preserve mremap address delta when skipping page tables"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260914132352.472-1-jaewook376@gmail.com
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 27 -> 30 commits
-  - series: 3 (19) -> 4 (21)
+- mm-unstable: 30 -> 30 commits (no change)
+  - series: 4 (21) -> 4 (21) (no change)
     - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 11 -> 14 commits
-  - new commits
+    - no role, maintainer: 14 -> 14 commits (no change)
+  - changed commits
     - series "mm: fix hugetlb NR_HUGETLB accounting on folio migration", v2. (2)
-      - 5292d9a3c6f8 "mm/hugetlb: account migration target folio in per-node NR_HUGETLB vmstat (0/2)"
+      - e6a859b30ace "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio (1/2)"
         - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-0-e8a36245bfab@kylinos.cn
-        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-1-e8a36245bfab@kylinos.cn
-      - cfe7954b65ee "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio (1/2)"
-        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
         - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
-    - fff9c87241bb "hugetlbfs: fix stale comment in hugetlbfs_file_mmap()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/tencent_AA61551D1F50E61F46C8542F5C8874512C05@qq.com
-- mm-new: 0 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 2 commits
-  - new commits
-    - 6dceb9b83da6 "mm: fix typos in various comments"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - bfe8b80eeb1f "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260922090749.24905-1-lizhe.67@bytedance.com
+    - no role, nobody: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
