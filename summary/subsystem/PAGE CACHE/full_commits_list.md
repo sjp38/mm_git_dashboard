@@ -10,28 +10,28 @@
     - no role, maintainer: 1 commits
     - reviewer, no role : 2 commits
   - full commits list
-      - 46827ac1ab22 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
+      - 2b5975c5a782 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org
-      - 3214abe2d949 "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/17)
+      - c8921b61e062 "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-8-bb68b6a21869@nvidia.com
-      - 99a5ab3288a8 "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
+      - 7cb1566d3702 "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-      - d20764b92aec "treewide: remove folio_set/clear_private() usage" (10/17)
+      - 73b6d172dfe4 "treewide: remove folio_set/clear_private() usage" (10/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-11-bb68b6a21869@nvidia.com
-      - 545e49b9e476 "treewide: remove PagePrivate() and PG_private from comments and docs" (15/17)
+      - 62917d66001e "treewide: remove PagePrivate() and PG_private from comments and docs" (15/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com
-      - aa64e30ab4d1 "mm: remove hugetlb_inline.h" (25/39)
+      - c1d95ca15f73 "mm: remove hugetlb_inline.h" (25/39)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
-    - 2ef1d013faa2 "mm: filemap: move lruvec accounting outside the xarray lock"
+    - 07d8ae8385eb "mm: filemap: move lruvec accounting outside the xarray lock"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260916125122.2696271-1-usama.arif@linux.dev
-      - c456b1ab5467 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - 6d026dacbfcc "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

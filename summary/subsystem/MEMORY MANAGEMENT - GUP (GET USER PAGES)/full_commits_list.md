@@ -8,45 +8,45 @@
     - no role, no role : 9 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 9319af358ffe "mm/gup_test: report actual pinned bytes"
+    - b18ba7589192 "mm/gup_test: report actual pinned bytes"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260831101304.162867-1-sarthak.sharma@arm.com
     - series "mm: gup: cleanup gup_fast call chain", v3. (2 commits)
-      - e1ff47356389 "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
+      - 4c7df55748f0 "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828015542.125576330@ruivo.org
         - Link: https://lore.kernel.org/20260828015542.245315718@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u [1]
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - 907f1656e69c "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
+      - 19b4d5a21c95 "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828015542.334186653@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - c8fb992e8367 "mm: make userland page table freeing RCU-safe" (11/12)
+      - f56266a65301 "mm: make userland page table freeing RCU-safe" (11/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org
-      - 305108232c7b "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs" (19/39)
+      - 253ee4a0454d "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs" (19/39)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-21-4583d8a23bca@kernel.org
-      - 2edcef8c3f2b "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
+      - b517cb2e9656 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-      - 5c919ba20c8e "mm/vma: introduce and use vma[_flags]_can_gup()" (38/39)
+      - 311a7556da0c "mm/vma: introduce and use vma[_flags]_can_gup()" (38/39)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-40-4583d8a23bca@kernel.org
-    - 27242cb2b6ed "mm/gup_test: safely calculate GUP batch size"
+    - ed01b3a52818 "mm/gup_test: safely calculate GUP batch size"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260915102524.125758-1-sarthak.sharma@arm.com
-      - 3d8fc54aecb8 "tools/lib/mm: move hugepage_settings out of selftests" (3/6)
+      - 0b6323ab9be2 "tools/lib/mm: move hugepage_settings out of selftests" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
-      - 566e2638c718 "tools/mm: move gup_test from selftests/mm to tools/mm" (4/6)
+      - 89aae12049bc "tools/mm: move gup_test from selftests/mm to tools/mm" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-5-sarthak.sharma@arm.com
-      - bb9785776a22 "tools/mm: make gup_bench a benchmark only tool" (5/6)
+      - b022cfdbc4bf "tools/mm: make gup_bench a benchmark only tool" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-6-sarthak.sharma@arm.com
-    - 0c984e30f4cc "selftests/mm: add a GUP selftest"
+    - 35fd3382b1ed "selftests/mm: add a GUP selftest"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

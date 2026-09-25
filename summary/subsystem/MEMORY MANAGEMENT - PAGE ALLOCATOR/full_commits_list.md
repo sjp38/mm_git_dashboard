@@ -4,72 +4,69 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 727040eaa330 "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
+    - 9157bbab9ac2 "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260904115629.3993331-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
       - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
       - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 13 total, 3 (7) series, 6 non-series commits
+- mm-unstable: 14 total, 3 (8) series, 6 non-series commits
   - author/reviewer role stat
-    - no role, no role : 2 commits
+    - no role, no role : 3 commits
     - no role, reviewer: 9 commits
     - no role, maintainer: 1 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-    - afdb191ae18b "mm: drop stale MAX_ORDER references"
+    - 3614f3a9eaa0 "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
     - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2 commits)
-      - 0585eae7cd35 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
+      - 10e58b498665 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
-      - de84c0c1067d "mm/page_isolation: guard compound_order() against racing" (1/2)
+      - c754bc75ebbc "mm/page_isolation: guard compound_order() against racing" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
-      - ba9cbac282b0 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
+      - b0b85a61bb88 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - ce8872e36fc9 "mm: adjust out-dated document of __GFP_NOFAIL"
+    - d61ac557399d "mm: adjust out-dated document of __GFP_NOFAIL"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
-      - 44c27448c959 "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
+      - f2ecabe8bc7a "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811172156.356053-3-pfalcato@suse.de
-      - 409482893259 "mm: replace PF_KCOMPACTD flag with kthread_func() check" (3/4)
+      - c56eafbdb4d3 "mm: replace PF_KCOMPACTD flag with kthread_func() check" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
-    - 686eb73a4c7c "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
+    - acc200695082 "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260903092126.24685-1-hongfu.li@linux.dev
-    - c9c3ff4cf8d3 "mm: page_alloc: add missing hooks to bulk allocation path"
+    - 0394f0d3f801 "mm: page_alloc: add missing hooks to bulk allocation path"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908102356.344075-1-liuqiqi@kylinos.cn
     - series "mm: refactor zonelist constructors and iterators", v3. (2 commits)
-      - 3fe3ea70c58e "mm: refactor find_next_best_node to find_next_best_node_in" (0/2)
+      - 6ae3662c7dc1 "mm: refactor find_next_best_node to find_next_best_node_in" (0/2)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net
-      - 28f17364f810 "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists()" (1/2)
+      - 2ef6cad853e1 "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923022902.2433614-3-gourry@gourry.net
-    - 28fd248ccd73 "mm/page_alloc: apply per-task GFP context in bulk allocator"
+    - 13cdf739c15e "mm/page_alloc: apply per-task GFP context in bulk allocator"
       - Authored by no role player, reviewed by no role player
       - Link: https://sashiko.dev/#/patchset/20260907120949.418450-1-liuqiqi%40kylinos.cn
       - Link: https://lore.kernel.org/all/20260907120949.418450-1-liuqiqi@kylinos.cn/ [1]
       - Link: https://lore.kernel.org/20260915074928.327471-1-liuqiqi@kylinos.cn
-    - c6b07e425755 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
+    - b4d37e072d62 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
-- mm-new: 1 total, 0 (1) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-  - full commits list
-      - 256af502a8dc "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - f3ee8ef34e98 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

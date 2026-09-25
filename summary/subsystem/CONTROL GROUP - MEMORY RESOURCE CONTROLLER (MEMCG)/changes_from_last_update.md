@@ -5,25 +5,41 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 42 -> 42 commits (no change)
-  - series: 9 (34) -> 9 (34) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-unstable: 42 -> 47 commits
+  - series: 9 (34) -> 10 (38)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 5 commits
     - no role, maintainer: 25 -> 25 commits (no change)
     - maintainer, nobody: 6 -> 6 commits (no change)
     - maintainer, no role : 8 -> 8 commits (no change)
   - changed commits
-    - series "mm: fix hugetlb NR_HUGETLB accounting on folio migration", v2. (2)
-      - e6a859b30ace "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
-- mm-new: 7 -> 7 commits (no change)
-  - series: 2 (6) -> 2 (6) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
+    - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4)
+      - f8d698ff8d2d "memcg: keep swap charging under RCU protection (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-0-6c0637dc0edb@tencent.com
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-1-6c0637dc0edb@tencent.com
+      - 02f7a7a531a6 "memcg: base swap charge accounting on memcgid root status (1/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-2-6c0637dc0edb@tencent.com
+      - 489024b75c3e "memcg: manipulate memcg private ID references by ID (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-3-6c0637dc0edb@tencent.com
+      - 4246871843b3 "memcg: move memcg private ID refcount to objcg (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
+    - e8d0f6a1b2a4 "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+- mm-new: 7 -> 2 commits
+  - series: 2 (6) -> 1 (2)
+    - no role, nobody: 2 -> 1 commits
+    - no role, reviewer: 4 -> 0 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

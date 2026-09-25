@@ -5,92 +5,107 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 75 -> 75 commits (no change)
-  - series: 10 (66) -> 10 (65)
-    - no role, nobody: 16 -> 14 commits
-    - no role, no role : 38 -> 38 commits (no change)
-    - no role, reviewer: 10 -> 12 commits
-    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-unstable: 75 -> 86 commits
+  - series: 10 (65) -> 11 (75)
+    - no role, nobody: 14 -> 12 commits
+    - no role, no role : 38 -> 50 commits
+    - no role, reviewer: 12 -> 12 commits (no change)
+    - no role, maintainer: 3 -> 4 commits
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
     - series "mm: make userland page table freeing RCU-safe", v4. (12)
-      - c8fb992e8367 "mm: make userland page table freeing RCU-safe (11/12)"
+      - f56266a65301 "mm: make userland page table freeing RCU-safe (11/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
-        - added "Cc: H. Peter Anvin <hpa@zytor.com>"
-        - added "Cc: Brian Cain <bcain@kernel.org>"
-        - added "Cc: Jonathan Corbet <corbet@lwn.net>"
-        - added "Cc: James Bottomley <james.bottomley@hansenpartnership.com>"
-        - added "Cc: Usama Arif <usama.arif@linux.dev>"
-        - added "Cc: Christophe Leroy <chleroy@kernel.org>"
-        - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-        - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
-        - added "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
-        - added "Cc: Nico Pache <nico.pache@linux.dev>"
-        - added "Cc: Mark Rutland <mark.rutland@arm.com>"
-        - added "Cc: Paul Walmsley <pjw@kernel.org>"
-        - added "Cc: Chris Zankel <chris@zankel.net>"
-        - added "Cc: Thomas Gleixner <tglx@kernel.org>"
-        - added "Cc: Simon Schuster <schuster.simon@siemens-energy.com>"
-        - added "Cc: Borislav Petkov <bp@alien8.de>"
-        - dropped "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-11-7b8c86103821@kernel.org"
-        - dropped "Cc: "H. Peter Anvin" <hpa@zytor.com>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - dropped "Cc: Christian Zankel <chris@zankel.net>"
-        - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
-        - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
-        - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
-        - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org
-    - 381c4392f8c2 "mm: change the contract for free_pgtables(), update docs"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org"
-      - added "Cc: Randy Dunlap <rdunlap@infradead.org>"
-      - added "Cc: H. Peter Anvin <hpa@zytor.com>"
-      - added "Cc: Brian Cain <bcain@kernel.org>"
-      - added "Cc: Jonathan Corbet <corbet@lwn.net>"
-      - added "Cc: James Bottomley <james.bottomley@hansenpartnership.com>"
-      - added "Cc: Usama Arif <usama.arif@linux.dev>"
-      - added "Cc: Christophe Leroy <chleroy@kernel.org>"
-      - added "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
-      - added "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
-      - added "Cc: Nico Pache <nico.pache@linux.dev>"
-      - added "Cc: Mark Rutland <mark.rutland@arm.com>"
-      - added "Cc: Paul Walmsley <pjw@kernel.org>"
-      - added "Cc: Chris Zankel <chris@zankel.net>"
-      - added "Cc: Thomas Gleixner <tglx@kernel.org>"
-      - added "Cc: Simon Schuster <schuster.simon@siemens-energy.com>"
-      - added "Cc: Borislav Petkov <bp@alien8.de>"
-      - dropped "Link: https://lore.kernel.org/20260911-rcu-pagetable-freeing-v3-12-7b8c86103821@kernel.org"
-      - dropped "Cc: "H. Peter Anvin" <hpa@zytor.com>"
-      - dropped "Cc: Christian Zankel <chris@zankel.net>"
-      - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
-      - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
-      - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
-      - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
-      - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org
     - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - c2358b4eab6e "mm/vma: introduce and use vma_[flags_]can_merge() (1/39)"
+      - 5b33b215668c "mm/vma: introduce and use vma_[flags_]can_merge() (1/39)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-3-4583d8a23bca@kernel.org
-      - 5b4d8e538252 "mm: consistently validate VMA state after mmap[_prepare] hooks (2/39)"
+      - 613b8df26775 "mm: consistently validate VMA state after mmap[_prepare] hooks (2/39)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-4-4583d8a23bca@kernel.org
-- mm-new: 11 -> 11 commits (no change)
-  - series: 1 (10) -> 1 (10) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+      - 4aa37eace1da "mm: make map_kernel_pages_[prepare,complete] internal and unexported (4/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-6-4583d8a23bca@kernel.org
+      - 077f9c247a88 "mm/vma: tidy up map kernel pages enum values (5/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
+      - 03fa4846833c "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (22/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-24-4583d8a23bca@kernel.org
+    - series "mm/sparse: remove SECTION_MARKED_PRESENT and further cleanups", v2. (13)
+      - 2e1f908fc61e "mm/sparse: move mem_section init to sparse_extreme_init() (0/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-0-54d81d65e125@kernel.org
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-1-54d81d65e125@kernel.org
+      - 364d8b862de9 "mm/sparse: refactor sparse_sections_init() (1/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-2-54d81d65e125@kernel.org
+      - 557deb1efa70 "mm/sparse: move initialization of section metadata to sparse_metadata_init() (2/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-3-54d81d65e125@kernel.org
+      - ce67b97e2ce0 "mm/sparse: rename and cleanup sparse_init_nid() (3/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-4-54d81d65e125@kernel.org
+      - 807498445251 "mm/sparse: cleanup sparse_init_one_section() (4/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-5-54d81d65e125@kernel.org
+      - f3ee8ef34e98 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr (5/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
+      - e04be1f3b78a "mm/sparse: remove pfn_in_present_section() (6/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-7-54d81d65e125@kernel.org
+      - 8b8696babbd3 "mm/sparse: move __highest_used_section_nr handling (7/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-8-54d81d65e125@kernel.org
+      - ba1ddbc7ff13 "mm/sparse: remove SECTION_MARKED_PRESENT (9/13)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
+      - 725a2e1bc5b0 "mm/sparse: remove flags parameter from sparse_init_one_section() (10/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-11-54d81d65e125@kernel.org
+    - e8d0f6a1b2a4 "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+- mm-new: 11 -> 1 commits
+  - series: 1 (10) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 9 -> 0 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - b5ea5c53058f "mm: remove the unused zone->unaccepted_cleanup"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

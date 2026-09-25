@@ -5,9 +5,9 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 30 -> 30 commits (no change)
+- mm-unstable: 30 -> 31 commits
   - series: 8 (26) -> 8 (26) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 10 -> 10 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
@@ -16,23 +16,13 @@
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm/huge_memory: clean up and decouple the anon and file split helpers", v6. (17)
-      - e52788da1a82 "mm/swap: fix off-by-one in swap cache replace sanity check (0/17)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-0-ba1b4ba72c6f@tencent.com"
-        - added "Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-1-ba1b4ba72c6f@tencent.com"
-        - added "Cc: Youngjun Park <youngjun.park@lge.com>"
-        - added "Cc: Nico Pache <nico.pache@linux.dev>"
-        - added "Cc: Usama Arif <usama.arif@linux.dev>"
-        - added "Cc: Kairui Song <ryncsn@gmail.com>"
-        - added "Cc: Shivam Kalra <shivamkalra98@zohomail.in>"
-        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-0-39878b37dfb0@tencent.com"
-        - dropped "Link: https://lore.kernel.org/20260915-swap-thp-cleanup-v5-1-39878b37dfb0@tencent.com"
-        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-0-ba1b4ba72c6f@tencent.com
-        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-1-ba1b4ba72c6f@tencent.com
-- mm-new: 2 -> 2 commits (no change)
+    - e8d0f6a1b2a4 "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+- mm-new: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 1 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

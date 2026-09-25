@@ -6,22 +6,20 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 30 -> 30 commits (no change)
+- mm-unstable: 30 -> 31 commits
   - series: 4 (21) -> 4 (21) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, nobody: 4 -> 5 commits
     - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 14 -> 14 commits (no change)
   - changed commits
-    - series "mm: fix hugetlb NR_HUGETLB accounting on folio migration", v2. (2)
-      - e6a859b30ace "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-        - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
-- mm-new: 2 -> 2 commits (no change)
+    - e8d0f6a1b2a4 "mm: fix typos in various comments"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
+- mm-new: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 1 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

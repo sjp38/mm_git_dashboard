@@ -5,20 +5,43 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 45 -> 45 commits (no change)
-  - series: 5 (36) -> 5 (36) (no change)
+- mm-unstable: 45 -> 49 commits
+  - series: 5 (36) -> 5 (40)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 25 -> 25 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
+    - no role, no role : 2 -> 4 commits
+    - no role, reviewer: 25 -> 26 commits
+    - no role, maintainer: 4 -> 5 commits
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 7 -> 7 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-new: 4 -> 4 commits (no change)
-  - series: 0 (4) -> 0 (4) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4)
+      - 4246871843b3 "memcg: move memcg private ID refcount to objcg (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
+    - series "mm/sparse: remove SECTION_MARKED_PRESENT and further cleanups", v2. (13)
+      - f3ee8ef34e98 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr (5/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
+      - e04be1f3b78a "mm/sparse: remove pfn_in_present_section() (6/13)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-7-54d81d65e125@kernel.org
+      - ba1ddbc7ff13 "mm/sparse: remove SECTION_MARKED_PRESENT (9/13)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
+- mm-new: 4 -> 1 commits
+  - series: 0 (4) -> 0 (0)
+    - no role, no role : 2 -> 0 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
+  - new commits
+    - b5ea5c53058f "mm: remove the unused zone->unaccepted_cleanup"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

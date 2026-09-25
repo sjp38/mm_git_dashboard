@@ -1,137 +1,55 @@
 - baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 3 commits
+- mm-hotfixes-unstable: 3 -> 3 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
   - changed commits
-    - bcb31dfd7b00 "mm/vma: predicate setting mmap_prepare VMA fields on new vma alloc"
+    - 650141ecf299 "mm/vma: predicate setting mmap_prepare VMA fields on new vma alloc"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - added "Link: https://lore.kernel.org/20260923-fix-mmap-prepare-overwrite-v1-1-3b3f1bfcdf5e@kernel.org"
-      - added "Fixes: c84bf6dd2b83 ("mm: introduce new .mmap_prepare() file callback")"
-      - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-      - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
-      - added "Cc: <stable@vger.kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-2-4583d8a23bca@kernel.org"
-      - dropped "Cc: Sebastian Reichel <sre@kernel.org>"
-      - dropped "Cc: Takashi Iwai <tiwai@suse.com>"
-      - dropped "Cc: Will Deacon <will@kernel.org>"
-      - dropped "Cc: Alistair Popple <apopple@nvidia.com>"
-      - dropped "Cc: Maarten Lankhorst <maarten.lankhorst@linux.intel.com>"
-      - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
-      - dropped "Cc: Palmer Dabbelt <palmer@dabbelt.com>"
-      - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
-      - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-      - dropped "Cc: Dennis Dalessandro <dennis.dalessandro@cornelisnetworks.com>"
-      - dropped "Cc: Alexei Starovoitov <ast@kernel.org>"
-      - dropped "Cc: Namhyung kim <namhyung@kernel.org>"
-      - dropped "Cc: Kiryl Shutsemau <kas@kernel.org>"
-      - dropped "Cc: Jaya Kumar <jayalk@intworks.biz>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-      - dropped "Cc: Barry Song <baohua@kernel.org>"
-      - dropped "Cc: Andrii Nakryiko <andrii@kernel.org>"
-      - dropped "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Cc: Paul Moore <paul@paul-moore.com>"
-      - dropped "Cc: Dev Jain <dev.jain@arm.com>"
-      - dropped "Cc: Chris Li <chrisl@kernel.org>"
-      - dropped "Cc: Yuanchu Xie <yuanchu@google.com>"
-      - dropped "Cc: Jason Gunthorpe <jgg@ziepe.ca>"
-      - dropped "Cc: Oscar Salvador <osalvador@suse.de>"
-      - dropped "Cc: John Hubbard <jhubbard@nvidia.com>"
-      - dropped "Cc: Greg Kroah-Hartman <gregkh@linuxfoundation.org>"
-      - dropped "Cc: Kairui Song <kasong@tencent.com>"
-      - dropped "Cc: Catalin Marinas <catalin.marinas@arm.com>"
-      - dropped "Cc: Nhat Pham <nphamcs@gmail.com>"
-      - dropped "Cc: Ryan Roberts <ryan.roberts@arm.com>"
-      - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
-      - dropped "Cc: Jan Kara <jack@suse.cz>"
-      - dropped "Cc: Kumar Kartikeya Dwivedi <memxor@gmail.com>"
-      - dropped "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
-      - dropped "Cc: Rakie Kim <rakie.kim@sk.com>"
-      - dropped "Cc: Matthew Brost <matthew.brost@intel.com>"
-      - dropped "Cc: Takashi Iwai (SUSE) <tiwai@suse.de>"
-      - dropped "Cc: David S. Miller <davem@davemloft.net>"
-      - dropped "Cc: Al Viro <viro@zeniv.linux.org.uk>"
-      - dropped "Cc: Christian Borntraeger <borntraeger@linux.ibm.com>"
-      - dropped "Cc: Madhavan Srinivasan <maddy@linux.ibm.com>"
-      - dropped "Cc: Jonathan Corbet <corbet@lwn.net>"
-      - dropped "Cc: Michal Hocko <mhocko@suse.com>"
-      - dropped "Cc: Janosch Frank <frankja@linux.ibm.com>"
-      - dropped "Cc: Dave Airlie <airlied@gmail.com>"
-      - dropped "Cc: Miklos Szeredi <miklos@szeredi.hu>"
-      - dropped "Cc: Baoquan He <baoquan.he@linux.dev>"
-      - dropped "Cc: Oleg Nesterov <oleg@redhat.com>"
-      - dropped "Cc: Rik van Riel <riel@surriel.com>"
-      - dropped "Cc: Stephen Smalley <stephen.smalley.work@gmail.com>"
-      - dropped "Cc: Juri Lelli <juri.lelli@redhat.com>"
-      - dropped "Cc: Vincent Guittot <vincent.guittot@linaro.org>"
-      - dropped "Cc: Gerald Schaefer <gerald.schaefer@linux.ibm.com>"
-      - dropped "Cc: Gregory Price <gourry@gourry.net>"
-      - dropped "Cc: Alexander Gordeev <agordeev@linux.ibm.com>"
-      - dropped "Cc: Axel Rasmussen <axelrasmussen@google.com>"
-      - dropped "Cc: Wei Xu <weixugc@google.com>"
-      - dropped "Cc: Anup Patel <anup@brainfault.org>"
-      - dropped "Cc: Emil Tsalapatis <emil@etsalapatis.com>"
-      - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-      - dropped "Cc: Dave Hansen <dave.hansen@linux.intel.com>"
-      - dropped "Cc: Kemeng Shi <shikemeng@huaweicloud.com>"
-      - dropped "Cc: Leon Romanovsky <leon@kernel.org>"
-      - dropped "Cc: Chengming Zhou <chengming.zhou@linux.dev>"
-      - dropped "Cc: Andreas Larsson <andreas@gaisler.com>"
-      - dropped "Cc: Helge Deller <deller@gmx.de>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Byungchul Park <byungchul@sk.com>"
-      - dropped "Cc: Heiko Carstens <hca@linux.ibm.com>"
-      - dropped "Cc: Michal Hocko <mhocko@kernel.org>"
-      - dropped "Cc: Harry Yoo <harry@kernel.org>"
-      - dropped "Cc: Joshua Hahn <joshua.hahnjy@gmail.com>"
-      - dropped "Cc: Peter Xu <peterx@redhat.com>"
-      - dropped "Cc: Claudio Imbrenda <imbrenda@linux.ibm.com>"
-      - dropped "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
-      - dropped "Cc: Nicholas Piggin <npiggin@gmail.com>"
-      - dropped "Cc: Jaroslav Kysela <perex@perex.cz>"
-      - dropped "Cc: Arnd Bergmann <arnd@arndb.de>"
-      - dropped "Cc: Peter Zijlstra <peterz@infradead.org>"
-      - dropped "Cc: Johannes Weiner <hannes@cmpxchg.org>"
-      - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
-      - dropped "Cc: Marc Zyngier <maz@kernel.org>"
-      - dropped "Cc: Albert Ou <aou@eecs.berkeley.edu>"
-      - dropped "Cc: Arnaldo Carvalho de Melo <acme@kernel.org>"
-      - dropped "Cc: Vasily Gorbik <gor@linux.ibm.com>"
-      - dropped "Cc: Doug Gilbert <dgilbert@interlog.com>"
-      - dropped "Cc: Maxime Ripard <mripard@kernel.org>"
-      - dropped "Cc: Christian Brauner <brauner@kernel.org>"
-      - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
-      - dropped "Cc: Shakeel Butt <shakeel.butt@linux.dev>"
-      - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: Eduard Zingerman <eddyz87@gmail.com>"
-      - dropped "Cc: Ingo Molnar <mingo@redhat.com>"
+      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
       - Link: https://lore.kernel.org/20260923-fix-mmap-prepare-overwrite-v1-1-3b3f1bfcdf5e@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 38 -> 37 commits
-  - series: 6 (34) -> 6 (33)
-    - no role, nobody: 18 -> 15 commits
-    - no role, no role : 14 -> 14 commits (no change)
-    - no role, reviewer: 3 -> 5 commits
+- mm-unstable: 37 -> 37 commits (no change)
+  - series: 6 (33) -> 6 (33) (no change)
+    - no role, nobody: 15 -> 12 commits
+    - no role, no role : 14 -> 17 commits
+    - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
     - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - c2358b4eab6e "mm/vma: introduce and use vma_[flags_]can_merge() (1/39)"
+      - 5b33b215668c "mm/vma: introduce and use vma_[flags_]can_merge() (1/39)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-3-4583d8a23bca@kernel.org
-      - 5b4d8e538252 "mm: consistently validate VMA state after mmap[_prepare] hooks (2/39)"
+      - 613b8df26775 "mm: consistently validate VMA state after mmap[_prepare] hooks (2/39)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-4-4583d8a23bca@kernel.org
+      - 6487fa5c92bb "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma (3/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-5-4583d8a23bca@kernel.org
+      - 077f9c247a88 "mm/vma: tidy up map kernel pages enum values (5/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
+      - 03fa4846833c "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (22/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-24-4583d8a23bca@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
