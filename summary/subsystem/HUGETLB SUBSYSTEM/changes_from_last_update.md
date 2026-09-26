@@ -6,20 +6,20 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 30 -> 31 commits
+- mm-unstable: 31 -> 32 commits
   - series: 4 (21) -> 4 (21) (no change)
-    - no role, nobody: 4 -> 5 commits
+    - no role, nobody: 5 -> 6 commits
     - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 14 -> 14 commits (no change)
   - changed commits
-    - e8d0f6a1b2a4 "mm: fix typos in various comments"
+    - 9b32e5b133c3 "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
       - Authored by no role player, reviewed by nobody
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-- mm-new: 2 -> 1 commits
+      - Link: https://lore.kernel.org/20260922090749.24905-1-lizhe.67@bytedance.com
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 1 commits
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

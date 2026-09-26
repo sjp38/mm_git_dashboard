@@ -1,159 +1,158 @@
 - baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 9 -> 9 commits (no change)
+- mm-hotfixes-unstable: 9 -> 10 commits
   - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 279ad5e21f12 "mm: don't schedule deferred kernel page table freeing while booting"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260925050647.86913-1-mikhail.v.gavrilov@gmail.com
+      - Link: https://lore.kernel.org/20260924064321.23787-1-mikhail.v.gavrilov@gmail.com
   - changed commits
-    - 650141ecf299 "mm/vma: predicate setting mmap_prepare VMA fields on new vma alloc"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - Link: https://lore.kernel.org/20260923-fix-mmap-prepare-overwrite-v1-1-3b3f1bfcdf5e@kernel.org
+    - da9d7b629d74 "mm: shmem: ignore sysfs configs for shmem forced collapse"
+      - Authored by a reviewer, reviewed by no role player
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/063f655b4d6c4234f3aa27ed6ecab10283ecb880.1789351825.git.baolin.wang@linux.alibaba.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 411 -> 427 commits
-  - series: 63 (333) -> 65 (347)
-    - no role, nobody: 49 -> 46 commits
-    - no role, no role : 90 -> 102 commits
-    - no role, reviewer: 79 -> 83 commits
-    - no role, maintainer: 80 -> 83 commits
+- mm-unstable: 427 -> 432 commits
+  - series: 65 (347) -> 66 (351)
+    - no role, nobody: 46 -> 42 commits
+    - no role, no role : 102 -> 105 commits
+    - no role, reviewer: 83 -> 87 commits
+    - no role, maintainer: 83 -> 84 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
-    - maintainer, nobody: 67 -> 67 commits (no change)
+    - maintainer, nobody: 67 -> 68 commits
     - maintainer, no role : 24 -> 24 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
   - new commits
-    - series "mm/damon: fix misc bugs in kunit, quota goals and sysfs refresh_ms". (4)
-      - 14c5a4180087 "mm/damon/core: keep the temporal tuner quota over an unmeasured PSI round (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260923055139.2982-1-sj@kernel.org
-        - Link: https://lore.kernel.org/damon/20260916001311.101024-1-sj@kernel.org/ [1]
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - 9b69d249793c "mm: userland pgtable freeing is RCU-safe now, remove leftover bits (10/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-11-31e91065fea4@kernel.org
   - changed commits
-    - series "mm: make userland page table freeing RCU-safe", v4. (12)
-      - 7a0984a23373 "mm/khugepaged: deposit a newly allocated page table on collapse (0/12)"
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - 9e521d405332 "mm/khugepaged: deposit a newly allocated page table on collapse (0/12)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-0-fe1ad1f1e303@kernel.org
-        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-1-fe1ad1f1e303@kernel.org
-      - f56266a65301 "mm: make userland page table freeing RCU-safe (11/12)"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-1-31e91065fea4@kernel.org"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-0-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-0-fe1ad1f1e303@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-1-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-0-31e91065fea4@kernel.org
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-1-31e91065fea4@kernel.org
+      - 5166c5ef2885 "mm: change the contract for free_pgtables(), update docs (11/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
+    - 7fb4cd6afeda "mm/nommu: reject wrapping ranges in access_remote_vm()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260909064231.18693-1-tasos.papagiannnis@gmail.com
     - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - 5b33b215668c "mm/vma: introduce and use vma_[flags_]can_merge() (1/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Gregory Price <gourry@gourry.net>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-3-4583d8a23bca@kernel.org
-      - 613b8df26775 "mm: consistently validate VMA state after mmap[_prepare] hooks (2/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-4-4583d8a23bca@kernel.org
-      - 6487fa5c92bb "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma (3/39)"
+      - 22327a35e209 "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma (3/39)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-5-4583d8a23bca@kernel.org
-      - 4aa37eace1da "mm: make map_kernel_pages_[prepare,complete] internal and unexported (4/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - f8dad19f16af "mm: make map_kernel_pages_[prepare,complete] internal and unexported (4/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-6-4583d8a23bca@kernel.org
-      - 077f9c247a88 "mm/vma: tidy up map kernel pages enum values (5/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+      - 5428ca598822 "mm/vma: tidy up map kernel pages enum values (5/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
-      - 03fa4846833c "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (22/39)"
+      - 2fbedcdfe404 "mm: add mmap action for discontiguous kernel page mapping (6/39)"
         - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-8-4583d8a23bca@kernel.org
+      - 95445f659b0b "mm/vma: only allow mmap to clear VMA_MAYWRITE_BIT if kernel-owned (14/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-16-4583d8a23bca@kernel.org
+      - 0529b45af032 "mm/vma: add and use vma_[flags]_is_fixed_mapping (15/39)"
+        - Authored by no role player, reviewed by a reviewer
         - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
         - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-24-4583d8a23bca@kernel.org
-    - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4)
-      - f8d698ff8d2d "memcg: keep swap charging under RCU protection (0/4)"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-17-4583d8a23bca@kernel.org
+      - bb81c1162fe3 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs (19/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-21-4583d8a23bca@kernel.org
+    - series "mm: restore per-memcg reclaim for NONSLAB shrinkers under nokmem", v3. (4)
+      - ae1c6129ca7e "mm: memcontrol: drop kmemcg_id and use mem_cgroup_id() for list_lru indexing (0/4)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260910080722.3961351-1-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/20260910080722.3961351-2-qinyuntan@linux.alibaba.com
+      - d531e1524693 "mm-memcontrol-drop-kmemcg_id-and-use-mem_cgroup_id-for-list_lru-indexing-fix (1/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+      - b0fcef8ffc00 "mm: list_lru: keep per-memcg lists with nokmem for NONSLAB-backed lrus (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260910080722.3961351-3-qinyuntan@linux.alibaba.com
+      - 7380c97eb793 "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker (3/4)"
         - Authored by no role player, reviewed by a reviewer
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-0-6c0637dc0edb@tencent.com
-        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-1-6c0637dc0edb@tencent.com
-      - 02f7a7a531a6 "memcg: base swap charge accounting on memcgid root status (1/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-2-6c0637dc0edb@tencent.com
-      - 489024b75c3e "memcg: manipulate memcg private ID references by ID (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-3-6c0637dc0edb@tencent.com
-      - 4246871843b3 "memcg: move memcg private ID refcount to objcg (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-    - series "mm/sparse: remove SECTION_MARKED_PRESENT and further cleanups", v2. (13)
-      - 2e1f908fc61e "mm/sparse: move mem_section init to sparse_extreme_init() (0/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-0-54d81d65e125@kernel.org
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-1-54d81d65e125@kernel.org
-      - 364d8b862de9 "mm/sparse: refactor sparse_sections_init() (1/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-2-54d81d65e125@kernel.org
-      - 557deb1efa70 "mm/sparse: move initialization of section metadata to sparse_metadata_init() (2/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-3-54d81d65e125@kernel.org
-      - ce67b97e2ce0 "mm/sparse: rename and cleanup sparse_init_nid() (3/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-4-54d81d65e125@kernel.org
-      - 807498445251 "mm/sparse: cleanup sparse_init_one_section() (4/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-5-54d81d65e125@kernel.org
-      - f3ee8ef34e98 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr (5/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-      - 8b8696babbd3 "mm/sparse: move __highest_used_section_nr handling (7/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-8-54d81d65e125@kernel.org
-      - ba1ddbc7ff13 "mm/sparse: remove SECTION_MARKED_PRESENT (9/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-      - 725a2e1bc5b0 "mm/sparse: remove flags parameter from sparse_init_one_section() (10/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-11-54d81d65e125@kernel.org
-      - 732d13c05e3e "mm/memory_hotplug: drop CONFIG_HAVE_ARCH_PFN_VALID handling from pfn_to_online_page() (12/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-13-54d81d65e125@kernel.org
-    - e8d0f6a1b2a4 "mm: fix typos in various comments"
+        - Link: https://lore.kernel.org/20260910080722.3961351-4-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/all/ah9PGv12mqai84ES@cmpxchg.org/ [1]
+        - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [2]
+    - 1f25ec907205 "mm: zswap: mark the zswap shrinker SHRINKER_NONSLAB"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260910080722.3961351-5-qinyuntan@linux.alibaba.com
+      - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
+    - 9b32e5b133c3 "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
       - Authored by no role player, reviewed by nobody
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-- mm-new: 22 -> 7 commits
-  - series: 3 (18) -> 1 (4)
-    - no role, nobody: 4 -> 3 commits
-    - no role, no role : 9 -> 1 commits
-    - no role, reviewer: 5 -> 1 commits
-    - no role, maintainer: 3 -> 1 commits
-    - maintainer, nobody: 1 -> 1 commits (no change)
+      - Link: https://lore.kernel.org/20260922090749.24905-1-lizhe.67@bytedance.com
+  - dropped commits
+    - series "mm: make userland page table freeing RCU-safe", v4. (12)
+      - 7aa10fc46deb "mm-khugepaged-deposit-a-newly-allocated-page-table-on-collapse-fix (1/12)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/arN7q5nHz7iebA_e@gremlin
+      - f56266a65301 "mm: make userland page table freeing RCU-safe (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org
+- mm-new: 7 -> 4 commits
+  - series: 1 (4) -> 0 (0)
+    - no role, nobody: 3 -> 1 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+  - new commits
+    - c0f86824339e "arch, mm: promote DEBUG_WX to CHECK_WX"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260925-direct-map-verify-wx-v1-1-7fd2f7d6d23b@kernel.org
+    - fb35c9df7f44 "mm/vmalloc: do not warn on -ENOMEM from va_clip() in pcpu_get_vm_areas()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260925205450.21262-1-raghunathpalla.0209@gmail.com
+    - 9cb22f082fda "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

@@ -7,15 +7,25 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 12 -> 12 commits (no change)
   - series: 1 (9) -> 1 (9) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 9 -> 10 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - 9b69d249793c "mm: userland pgtable freeing is RCU-safe now, remove leftover bits (10/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-11-31e91065fea4@kernel.org
   - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
+      - bb81c1162fe3 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs (19/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-21-4583d8a23bca@kernel.org
+  - dropped commits
     - series "mm: make userland page table freeing RCU-safe", v4. (12)
       - f56266a65301 "mm: make userland page table freeing RCU-safe (11/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

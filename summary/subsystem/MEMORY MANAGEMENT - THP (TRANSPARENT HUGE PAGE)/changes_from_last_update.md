@@ -5,38 +5,55 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 65 -> 66 commits
+- mm-unstable: 66 -> 66 commits (no change)
   - series: 8 (58) -> 8 (58) (no change)
-    - no role, nobody: 7 -> 8 commits
+    - no role, nobody: 8 -> 6 commits
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 47 -> 47 commits (no change)
+    - no role, reviewer: 47 -> 49 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
   - changed commits
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - 9e521d405332 "mm/khugepaged: deposit a newly allocated page table on collapse (0/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-1-31e91065fea4@kernel.org"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-0-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-1-fe1ad1f1e303@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-0-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-0-31e91065fea4@kernel.org
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-1-31e91065fea4@kernel.org
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
+      - 0529b45af032 "mm/vma: add and use vma_[flags]_is_fixed_mapping (15/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-17-4583d8a23bca@kernel.org
+    - series "mm: restore per-memcg reclaim for NONSLAB shrinkers under nokmem", v3. (4)
+      - 7380c97eb793 "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260910080722.3961351-4-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/all/ah9PGv12mqai84ES@cmpxchg.org/ [1]
+        - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [2]
+  - dropped commits
     - series "mm: make userland page table freeing RCU-safe", v4. (12)
-      - 7a0984a23373 "mm/khugepaged: deposit a newly allocated page table on collapse (0/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-0-fe1ad1f1e303@kernel.org
-        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-1-fe1ad1f1e303@kernel.org
-    - e8d0f6a1b2a4 "mm: fix typos in various comments"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-- mm-new: 2 -> 3 commits
-  - series: 0 (1) -> 1 (3)
-    - no role, nobody: 1 -> 0 commits
-    - no role, reviewer: 1 -> 3 commits
-  - new commits
+      - 7aa10fc46deb "mm-khugepaged-deposit-a-newly-allocated-page-table-on-collapse-fix (1/12)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/arN7q5nHz7iebA_e@gremlin
+- mm-new: 3 -> 2 commits
+  - series: 1 (3) -> 1 (2)
+    - no role, reviewer: 3 -> 2 commits
+  - changed commits
     - series "kselftest: mm: fix some failure of split_huge_page_test", v8. (4)
-      - 58f8ff5d3e4b "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
+      - 854f7d363fcb "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
         - Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com
         - Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com
-      - 49e00009a5c2 "kselftest: mm: remove check_huge_shmem() (3/4)"
+      - d805163ea0eb "kselftest: mm: remove check_huge_shmem() (3/4)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
         - Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

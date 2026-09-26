@@ -6,18 +6,17 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 13 commits
+- mm-unstable: 13 -> 13 commits (no change)
   - series: 2 (9) -> 2 (9) (no change)
-    - no role, nobody: 2 -> 3 commits
+    - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 10 -> 10 commits (no change)
-  - changed commits
-    - e8d0f6a1b2a4 "mm: fix typos in various comments"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - fb35c9df7f44 "mm/vmalloc: do not warn on -ENOMEM from va_clip() in pcpu_get_vm_areas()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260925205450.21262-1-raghunathpalla.0209@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

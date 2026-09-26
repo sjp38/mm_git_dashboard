@@ -8,37 +8,37 @@
     - no role, no role : 7 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - aa2393507715 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+      - e565765a34b1 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com
-      - e0df594dca9e "mm/mm_init: factor out pfn_to_zone()" (5/17)
+      - 00bdb45385fb "mm/mm_init: factor out pfn_to_zone()" (5/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-7-songmuchun@bytedance.com
-      - 0ec784c1b0ab "mm/sparse: initialize memory sections earlier" (8/17)
+      - ccea9c8c9980 "mm/sparse: initialize memory sections earlier" (8/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-10-songmuchun@bytedance.com
     - series "mm: optimize zone-device memmap initialization", v11. (7 commits)
-      - 0136fe8a95bb "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
+      - 0d61a863ed53 "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-1-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/20260831111638.76012-2-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/all/aiEoByaQdRR3xtM5@nvdebian.thelocal/ [1]
-      - 77fb6fcbcef2 "mm: add a template-based fast path for zone-device page init" (2/7)
+      - 65c5cdb2a24e "mm: add a template-based fast path for zone-device page init" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-4-lizhe.67@bytedance.com
-      - 482bf4abca8c "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
+      - caa7e097669a "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903025806.70825-1-lizhe.67@bytedance.com
-      - 9296e78c86ee "mm: extend the template fast path to zone-device compound tails" (4/7)
+      - bda59e02f115 "mm: extend the template fast path to zone-device compound tails" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-5-lizhe.67@bytedance.com
-      - bbafc9deb324 "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
+      - 26467bdc3271 "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831111638.76012-7-lizhe.67@bytedance.com
-      - 660b1a0eba8f "mm/sparse-vmemmap: set compound page order for device DAX" (5/11)
+      - 1a03ff68f38b "mm/sparse-vmemmap: set compound page order for device DAX" (5/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260916064341.1825793-6-songmuchun@bytedance.com
-      - 150149262d62 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (9/11)
+      - bdf2cace2ce8 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (9/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260916064341.1825793-10-songmuchun@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

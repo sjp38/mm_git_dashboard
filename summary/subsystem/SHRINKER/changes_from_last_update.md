@@ -5,26 +5,26 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 2 -> 4 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 2 commits
+- mm-unstable: 4 -> 6 commits
+  - series: 0 (1) -> 1 (3)
+    - no role, nobody: 1 -> 2 commits
+    - no role, no role : 1 -> 2 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
   - changed commits
-    - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4)
-      - 4246871843b3 "memcg: move memcg private ID refcount to objcg (3/4)"
-        - Authored by no role player, reviewed by a reviewer
+    - series "mm: restore per-memcg reclaim for NONSLAB shrinkers under nokmem", v3. (4)
+      - ae1c6129ca7e "mm: memcontrol: drop kmemcg_id and use mem_cgroup_id() for list_lru indexing (0/4)"
+        - Authored by no role player, reviewed by nobody
         - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-    - e8d0f6a1b2a4 "mm: fix typos in various comments"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-- mm-new: 4 -> 2 commits
-  - series: 1 (3) -> 1 (2)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
+        - Link: https://lore.kernel.org/20260910080722.3961351-1-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/20260910080722.3961351-2-qinyuntan@linux.alibaba.com
+      - b0fcef8ffc00 "mm: list_lru: keep per-memcg lists with nokmem for NONSLAB-backed lrus (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260910080722.3961351-3-qinyuntan@linux.alibaba.com
+- mm-new: 2 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

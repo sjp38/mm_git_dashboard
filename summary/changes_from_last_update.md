@@ -1,240 +1,252 @@
 - baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 17 -> 17 commits (no change)
+- mm-hotfixes-unstable: 17 -> 18 commits
   - series: 2 (5) -> 2 (5) (no change)
     - no role, nobody: 5 -> 5 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - 279ad5e21f12 "mm: don't schedule deferred kernel page table freeing while booting"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260925050647.86913-1-mikhail.v.gavrilov@gmail.com
+      - Link: https://lore.kernel.org/20260924064321.23787-1-mikhail.v.gavrilov@gmail.com
   - changed commits
-    - 650141ecf299 "mm/vma: predicate setting mmap_prepare VMA fields on new vma alloc"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-      - added "Acked-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - Link: https://lore.kernel.org/20260923-fix-mmap-prepare-overwrite-v1-1-3b3f1bfcdf5e@kernel.org
+    - da9d7b629d74 "mm: shmem: ignore sysfs configs for shmem forced collapse"
+      - Authored by a reviewer, reviewed by no role player
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/063f655b4d6c4234f3aa27ed6ecab10283ecb880.1789351825.git.baolin.wang@linux.alibaba.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 612 -> 631 commits
-  - series: 91 (495) -> 93 (512)
-    - no role, nobody: 81 -> 79 commits
-    - no role, no role : 170 -> 184 commits
-    - no role, reviewer: 98 -> 102 commits
-    - no role, maintainer: 114 -> 117 commits
+- mm-unstable: 631 -> 637 commits
+  - series: 93 (512) -> 94 (516)
+    - no role, nobody: 79 -> 73 commits
+    - no role, no role : 184 -> 190 commits
+    - no role, reviewer: 102 -> 106 commits
+    - no role, maintainer: 117 -> 118 commits
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 96 -> 96 commits (no change)
+    - maintainer, nobody: 96 -> 97 commits
     - maintainer, no role : 28 -> 28 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
   - new commits
-    - series "mm/damon: fix misc bugs in kunit, quota goals and sysfs refresh_ms". (4)
-      - 14c5a4180087 "mm/damon/core: keep the temporal tuner quota over an unmeasured PSI round (2/4)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260923055139.2982-1-sj@kernel.org
-        - Link: https://lore.kernel.org/damon/20260916001311.101024-1-sj@kernel.org/ [1]
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - 9b69d249793c "mm: userland pgtable freeing is RCU-safe now, remove leftover bits (10/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-11-31e91065fea4@kernel.org
   - changed commits
-    - series "mm: make userland page table freeing RCU-safe", v4. (12)
-      - 7a0984a23373 "mm/khugepaged: deposit a newly allocated page table on collapse (0/12)"
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - 9e521d405332 "mm/khugepaged: deposit a newly allocated page table on collapse (0/12)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-0-fe1ad1f1e303@kernel.org
-        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-1-fe1ad1f1e303@kernel.org
-      - e93355045e94 "mm: enable MMU_GATHER_RCU_TABLE_FREE for sparc32 (10/12)"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-0-31e91065fea4@kernel.org"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-1-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-1-fe1ad1f1e303@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-0-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-0-31e91065fea4@kernel.org
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-1-31e91065fea4@kernel.org
+      - e7d99c093c4c "mm: enable MMU_GATHER_RCU_TABLE_FREE for most 2-level architectures (1/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Lance Yang <lance.yang@linux.dev>"
-        - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-10-fe1ad1f1e303@kernel.org
-      - f56266a65301 "mm: make userland page table freeing RCU-safe (11/12)"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-2-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-2-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-2-31e91065fea4@kernel.org
+      - 3821cc3197c5 "mm: enable MMU_GATHER_RCU_TABLE_FREE for MMU riscv (2/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - 5b33b215668c "mm/vma: introduce and use vma_[flags_]can_merge() (1/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Gregory Price <gourry@gourry.net>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-3-4583d8a23bca@kernel.org
-      - 613b8df26775 "mm: consistently validate VMA state after mmap[_prepare] hooks (2/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-4-4583d8a23bca@kernel.org
-      - 6487fa5c92bb "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma (3/39)"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-3-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-3-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-3-31e91065fea4@kernel.org
+      - e938a0f5bf39 "mm: enable MMU_GATHER_RCU_TABLE_FREE for MMU arm (3/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-5-4583d8a23bca@kernel.org
-      - 4aa37eace1da "mm: make map_kernel_pages_[prepare,complete] internal and unexported (4/39)"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-4-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-4-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-4-31e91065fea4@kernel.org
+      - 6617cfe444de "mm: enable MMU_GATHER_RCU_TABLE_FREE for arc, microblaze, xtensa (4/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-6-4583d8a23bca@kernel.org
-      - 077f9c247a88 "mm/vma: tidy up map kernel pages enum values (5/39)"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-5-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-5-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-5-31e91065fea4@kernel.org
+      - 59db4a5b3e79 "mm: enable MMU_GATHER_RCU_TABLE_FREE for sparc64 (5/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
-      - 03fa4846833c "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (22/39)"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-6-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-6-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-6-31e91065fea4@kernel.org
+      - f7413d76ddb1 "mm: enable MMU_GATHER_RCU_TABLE_FREE for m68k-coldfire (6/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-24-4583d8a23bca@kernel.org
-    - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4)
-      - f8d698ff8d2d "memcg: keep swap charging under RCU protection (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-0-6c0637dc0edb@tencent.com
-        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-1-6c0637dc0edb@tencent.com
-      - 02f7a7a531a6 "memcg: base swap charge accounting on memcgid root status (1/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-2-6c0637dc0edb@tencent.com
-      - 489024b75c3e "memcg: manipulate memcg private ID references by ID (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-3-6c0637dc0edb@tencent.com
-      - 4246871843b3 "memcg: move memcg private ID refcount to objcg (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-    - series "mm/sparse: remove SECTION_MARKED_PRESENT and further cleanups", v2. (13)
-      - 2e1f908fc61e "mm/sparse: move mem_section init to sparse_extreme_init() (0/13)"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-7-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-7-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-7-31e91065fea4@kernel.org
+      - 436e20367eae "mm: enable MMU_GATHER_RCU_TABLE_FREE for sh-X2 (7/12)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-0-54d81d65e125@kernel.org
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-1-54d81d65e125@kernel.org
-      - 364d8b862de9 "mm/sparse: refactor sparse_sections_init() (1/13)"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-8-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-8-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-8-31e91065fea4@kernel.org
+      - 521088ca613e "mm: enable MMU_GATHER_RCU_TABLE_FREE for m68k-motorola (8/12)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-2-54d81d65e125@kernel.org
-      - 557deb1efa70 "mm/sparse: move initialization of section metadata to sparse_metadata_init() (2/13)"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-9-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-9-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-9-31e91065fea4@kernel.org
+      - 99bd2eb8fd7a "mm: enable MMU_GATHER_RCU_TABLE_FREE for sparc32 (9/12)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-3-54d81d65e125@kernel.org
-      - ce67b97e2ce0 "mm/sparse: rename and cleanup sparse_init_nid() (3/13)"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-10-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-10-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-10-31e91065fea4@kernel.org
+      - 5166c5ef2885 "mm: change the contract for free_pgtables(), update docs (11/12)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-4-54d81d65e125@kernel.org
-      - 807498445251 "mm/sparse: cleanup sparse_init_one_section() (4/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-5-54d81d65e125@kernel.org
-      - f3ee8ef34e98 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr (5/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-      - e04be1f3b78a "mm/sparse: remove pfn_in_present_section() (6/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-7-54d81d65e125@kernel.org
-      - 8b8696babbd3 "mm/sparse: move __highest_used_section_nr handling (7/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-8-54d81d65e125@kernel.org
-      - f18ae817c4c7 "scripts/gdb: mm.py: remove fallbacks for SECTION_HAS_MEM_MAP and SECTION_IS_EARLY (8/13)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-9-54d81d65e125@kernel.org
-        - Link: https://lore.kernel.org/r/vpz5zqg5nwbpolxbkip45vxxdt3lni7j2haal7q42skc3b57tu@uh4cec4x32dq
-      - ba1ddbc7ff13 "mm/sparse: remove SECTION_MARKED_PRESENT (9/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-      - 725a2e1bc5b0 "mm/sparse: remove flags parameter from sparse_init_one_section() (10/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-11-54d81d65e125@kernel.org
-      - 35326cd11ff3 "fs/proc/page: clarify comment in get_max_dump_pfn() (11/13)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-12-54d81d65e125@kernel.org
-      - 732d13c05e3e "mm/memory_hotplug: drop CONFIG_HAVE_ARCH_PFN_VALID handling from pfn_to_online_page() (12/13)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-13-54d81d65e125@kernel.org
-    - e8d0f6a1b2a4 "mm: fix typos in various comments"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-- mm-new: 39 -> 28 commits
-  - series: 4 (31) -> 4 (20)
-    - no role, nobody: 8 -> 8 commits (no change)
-    - no role, no role : 22 -> 12 commits
-    - no role, reviewer: 5 -> 4 commits
-    - no role, maintainer: 3 -> 3 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - series "kselftest: mm: fix some failure of split_huge_page_test", v8. (4)
-      - 58f8ff5d3e4b "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com
-      - 3ed1dbd29f56 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-2-cba7359d882a@arm.com
-      - 20147ab08dfd "kselftest: mm: integrate huge page checks (2/4)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-3-cba7359d882a@arm.com
-      - 49e00009a5c2 "kselftest: mm: remove check_huge_shmem() (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com
-    - b5ea5c53058f "mm: remove the unused zone->unaccepted_cleanup"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
-    - series "arm64/mm: Standardize printing for pgtable entries", v3. (2)
-      - f0284d9baaf7 "arm64/mm: move __check_safe_pte_update() (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260916044933.2689426-2-anshuman.khandual@arm.com
-        - Link: https://lore.kernel.org/linux-mm/20260729122452.3797443-11-anshuman.khandual@arm.com/ [1]
-      - c92c80a2b8b1 "arm64/mm: standardize printing for pgtable entries (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20260916044933.2689426-3-anshuman.khandual@arm.com
-  - changed commits
-    - 7cdcd89ed321 "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
+    - 7fb4cd6afeda "mm/nommu: reject wrapping ranges in access_remote_vm()"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Muhammad Usama Anjum <usama.anjum@arm.com>"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260909064231.18693-1-tasos.papagiannnis@gmail.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
+      - 22327a35e209 "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma (3/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-5-4583d8a23bca@kernel.org
+      - f8dad19f16af "mm: make map_kernel_pages_[prepare,complete] internal and unexported (4/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-6-4583d8a23bca@kernel.org
+      - 5428ca598822 "mm/vma: tidy up map kernel pages enum values (5/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
+        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
+      - 2fbedcdfe404 "mm: add mmap action for discontiguous kernel page mapping (6/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-8-4583d8a23bca@kernel.org
+      - 017e3735ea99 "mm/vma: add vma[_flags]_is_kernel_owned() predicates (13/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-15-4583d8a23bca@kernel.org
+      - 95445f659b0b "mm/vma: only allow mmap to clear VMA_MAYWRITE_BIT if kernel-owned (14/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-16-4583d8a23bca@kernel.org
+      - 0529b45af032 "mm/vma: add and use vma_[flags]_is_fixed_mapping (15/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-17-4583d8a23bca@kernel.org
+      - bb81c1162fe3 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs (19/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-21-4583d8a23bca@kernel.org
+    - d7b57caffe15 "proc/task_mmu: handle special PMDs in clear_refs and pagemap"
+      - Authored by no role player, reviewed by no role player
       - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
       - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Cc: Muhammad Usama Anjum <usama.anjum@arm.com>"
+      - Link: https://lore.kernel.org/20260912122822.3348978-1-gourry@gourry.net
+    - series "mm: restore per-memcg reclaim for NONSLAB shrinkers under nokmem", v3. (4)
+      - ae1c6129ca7e "mm: memcontrol: drop kmemcg_id and use mem_cgroup_id() for list_lru indexing (0/4)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260910080722.3961351-1-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/20260910080722.3961351-2-qinyuntan@linux.alibaba.com
+      - d531e1524693 "mm-memcontrol-drop-kmemcg_id-and-use-mem_cgroup_id-for-list_lru-indexing-fix (1/4)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+      - b0fcef8ffc00 "mm: list_lru: keep per-memcg lists with nokmem for NONSLAB-backed lrus (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260910080722.3961351-3-qinyuntan@linux.alibaba.com
+      - 7380c97eb793 "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260910080722.3961351-4-qinyuntan@linux.alibaba.com
+        - Link: https://lore.kernel.org/all/ah9PGv12mqai84ES@cmpxchg.org/ [1]
+        - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [2]
+    - 1f25ec907205 "mm: zswap: mark the zswap shrinker SHRINKER_NONSLAB"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260910080722.3961351-5-qinyuntan@linux.alibaba.com
+      - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
+    - 9b32e5b133c3 "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260922090749.24905-1-lizhe.67@bytedance.com
+    - 09d9672a5d4f "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/20260923-selftests-mm-mlock2-fix-v1-1-750b627854c6@dgu.ac.kr
+  - dropped commits
+    - series "mm: make userland page table freeing RCU-safe", v4. (12)
+      - 7aa10fc46deb "mm-khugepaged-deposit-a-newly-allocated-page-table-on-collapse-fix (1/12)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/arN7q5nHz7iebA_e@gremlin
+      - f56266a65301 "mm: make userland page table freeing RCU-safe (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org
+- mm-new: 28 -> 24 commits
+  - series: 4 (20) -> 3 (16)
+    - no role, nobody: 8 -> 5 commits
+    - no role, no role : 12 -> 12 commits (no change)
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, maintainer: 3 -> 3 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+  - new commits
+    - c0f86824339e "arch, mm: promote DEBUG_WX to CHECK_WX"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260925-direct-map-verify-wx-v1-1-7fd2f7d6d23b@kernel.org
+    - fb35c9df7f44 "mm/vmalloc: do not warn on -ENOMEM from va_clip() in pcpu_get_vm_areas()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260925205450.21262-1-raghunathpalla.0209@gmail.com
+    - 9cb22f082fda "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org
+  - changed commits
+    - series "kselftest: mm: fix some failure of split_huge_page_test", v8. (4)
+      - 854f7d363fcb "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com
+      - 172d3b6d934f "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
+        - Authored by no role player, reviewed by nobody
+        - added "Fixes: 642bc52aed9c ("selftests: vm: bring common functions to a new file")"
+        - dropped "Fixes: 642bc52aed9 ("selftests: vm: bring common functions to a new file")"
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-2-cba7359d882a@arm.com
+      - 08c261ef6e7a "kselftest: mm: integrate huge page checks (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-3-cba7359d882a@arm.com
+      - d805163ea0eb "kselftest: mm: remove check_huge_shmem() (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com
+    - 5276a0660d04 "mm: remove the unused zone->unaccepted_cleanup"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Reviewed-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+      - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 106 -> 105 commits
-  - series: 14 (43) -> 13 (40)
-    - no role, nobody: 45 -> 46 commits
+- mm-nonmm-unstable: 105 -> 106 commits
+  - series: 13 (40) -> 13 (40) (no change)
+    - no role, nobody: 46 -> 47 commits
     - no role, no role : 26 -> 26 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 15 -> 16 commits
-    - reviewer, nobody: 3 -> 0 commits
+    - no role, maintainer: 16 -> 16 commits (no change)
     - maintainer, nobody: 11 -> 11 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
   - new commits
-    - a15978c1f0ee "checkpatch: don't flag ACQUIRE_ERR() assignments in if conditions"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260924033923.4140210-1-kanie@linux.alibaba.com
-    - e525dfecb4bc "mailmap: update entry for Andy Yan"
+    - e8d6475e77a7 "kselftest/filelock: plan for the five ofdlocks tests"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20260924105052.768760-1-andyshrk@163.com
-  - dropped commits
-    - series "module: Extend module_blacklist parameter to built-in modules", v11. (3)
-      - 26c2c1e37851 "module: treat dashes and underscores interchangeably in module_blacklist (0/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908203230.401020-1-atomlin@atomlin.com
-        - Link: https://lore.kernel.org/20260908203230.401020-2-atomlin@atomlin.com
-      - 69efc02bccc7 "module: extend module_blacklist parameter to built-in modules (1/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908203230.401020-3-atomlin@atomlin.com
-      - 1ca4515ee4e0 "module: rename module_blacklist to module_denylist (2/3)"
-        - Authored by a reviewer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260908203230.401020-4-atomlin@atomlin.com
+      - Link: https://lore.kernel.org/20260925205502.115327-1-danishkhateeb03@gmail.com

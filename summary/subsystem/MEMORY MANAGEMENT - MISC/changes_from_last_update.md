@@ -5,43 +5,51 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 82 -> 82 commits (no change)
-  - series: 10 (59) -> 10 (59) (no change)
+- mm-unstable: 82 -> 83 commits
+  - series: 10 (59) -> 10 (60)
     - no role, nobody: 12 -> 12 commits (no change)
-    - no role, no role : 30 -> 30 commits (no change)
+    - no role, no role : 30 -> 31 commits
     - no role, reviewer: 17 -> 17 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 12 -> 12 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 6 commits
-  - series: 0 (0) -> 1 (4)
-    - no role, nobody: 1 -> 3 commits
+  - changed commits
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - 5166c5ef2885 "mm: change the contract for free_pgtables(), update docs (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
+    - 09d9672a5d4f "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260923-selftests-mm-mlock2-fix-v1-1-750b627854c6@dgu.ac.kr
+- mm-new: 6 -> 5 commits
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, nobody: 3 -> 2 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 0 -> 2 commits
-  - new commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+  - changed commits
     - series "kselftest: mm: fix some failure of split_huge_page_test", v8. (4)
-      - 58f8ff5d3e4b "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
+      - 854f7d363fcb "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
         - Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com
         - Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com
-      - 3ed1dbd29f56 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
+      - 172d3b6d934f "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
         - Authored by no role player, reviewed by nobody
+        - added "Fixes: 642bc52aed9c ("selftests: vm: bring common functions to a new file")"
+        - dropped "Fixes: 642bc52aed9 ("selftests: vm: bring common functions to a new file")"
         - Link: https://lore.kernel.org/20260924-fix_split-v8-2-cba7359d882a@arm.com
-      - 20147ab08dfd "kselftest: mm: integrate huge page checks (2/4)"
-        - Authored by no role player, reviewed by nobody
+      - 08c261ef6e7a "kselftest: mm: integrate huge page checks (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
         - Link: https://lore.kernel.org/20260924-fix_split-v8-3-cba7359d882a@arm.com
-      - 49e00009a5c2 "kselftest: mm: remove check_huge_shmem() (3/4)"
+      - d805163ea0eb "kselftest: mm: remove check_huge_shmem() (3/4)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
         - Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com
-  - changed commits
-    - 7cdcd89ed321 "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Muhammad Usama Anjum <usama.anjum@arm.com>"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Cc: Muhammad Usama Anjum <usama.anjum@arm.com>"
-      - Link: https://lore.kernel.org/20260923-selftests-mm-mlock2-fix-v1-1-750b627854c6@dgu.ac.kr
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
