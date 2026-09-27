@@ -7,21 +7,21 @@
     - no role, maintainer: 5 commits
   - full commits list
     - series "kmemleak: fix stale documentation and raise the verbose default". (3 commits)
-      - d2fafb3fd2d0 "Documentation: kmemleak: describe the metadata pool, not the early log" (0/3)
+      - 76f4ebb8faed "Documentation: kmemleak: describe the metadata pool, not the early log" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917142210.90829-1-sj@kernel.org
         - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-1-84fde6d1f749@debian.org
-      - a26bccb38450 "Documentation: kmemleak: fix stale statements about scanning" (1/3)
+      - 11c7a4af4566 "Documentation: kmemleak: fix stale statements about scanning" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-2-84fde6d1f749@debian.org
-      - a14ac8b061f6 "mm: kmemleak: raise min_unref_scans to 3 for verbose auto-scan" (2/3)
+      - d0ab4e99271b "mm: kmemleak: raise min_unref_scans to 3 for verbose auto-scan" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-kmemleak-doc-v1-3-84fde6d1f749@debian.org
     - series "mm: kmemleak: batch the struct page scan". (2 commits)
-      - 3aac5366e77e "mm: kmemleak: move the struct page scan into a helper" (0/2)
+      - b649e398e11d "mm: kmemleak: move the struct page scan into a helper" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-kmemleak-page-scan-v1-1-fb97d4801b3a@debian.org
-      - 2c93de10a1e5 "mm: kmemleak: scan the struct page array in MAX_SCAN_SIZE batches" (1/2)
+      - 067b4a8d127c "mm: kmemleak: scan the struct page array in MAX_SCAN_SIZE batches" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-kmemleak-page-scan-v1-2-fb97d4801b3a@debian.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

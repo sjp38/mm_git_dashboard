@@ -5,51 +5,37 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 82 -> 83 commits
-  - series: 10 (59) -> 10 (60)
+- mm-unstable: 83 -> 83 commits (no change)
+  - series: 10 (60) -> 10 (61)
     - no role, nobody: 12 -> 12 commits (no change)
-    - no role, no role : 30 -> 31 commits
+    - no role, no role : 31 -> 30 commits
     - no role, reviewer: 17 -> 17 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 12 -> 12 commits (no change)
+    - maintainer, no role : 0 -> 1 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
+      - 31357776a381 "Documentation/mm: update DAX vmemmap deduplication docs (11/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260927025441.741633-13-songmuchun@bytedance.com
   - changed commits
-    - series "mm: make userland page table freeing RCU-safe", v5. (12)
-      - 5166c5ef2885 "mm: change the contract for free_pgtables(), update docs (11/12)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org"
-        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
-    - 09d9672a5d4f "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
+    - 5df366cd31ff "selftests/mm: skip khugepaged file tests if mkfs.xfs is unavailable"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260923-selftests-mm-mlock2-fix-v1-1-750b627854c6@dgu.ac.kr
-- mm-new: 6 -> 5 commits
+      - added "Link: https://lore.kernel.org/20260912202903.16157-1-jaeyeon.lee.dev@gmail.com"
+      - added "Suggested-by: Zi Yan <ziy@nvidia.com>"
+      - dropped "Link: https://lore.kernel.org/20260911124517.63714-1-jaeyeon.lee.dev@gmail.com"
+      - Link: https://lore.kernel.org/20260912202903.16157-1-jaeyeon.lee.dev@gmail.com
+  - dropped commits
+    - c21c73c1baa3 "Documentation/mm: update DAX vmemmap deduplication docs"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260916064341.1825793-12-songmuchun@bytedance.com
+- mm-new: 5 -> 5 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
-    - no role, nobody: 3 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-  - changed commits
-    - series "kselftest: mm: fix some failure of split_huge_page_test", v8. (4)
-      - 854f7d363fcb "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com
-      - 172d3b6d934f "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
-        - Authored by no role player, reviewed by nobody
-        - added "Fixes: 642bc52aed9c ("selftests: vm: bring common functions to a new file")"
-        - dropped "Fixes: 642bc52aed9 ("selftests: vm: bring common functions to a new file")"
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-2-cba7359d882a@arm.com
-      - 08c261ef6e7a "kselftest: mm: integrate huge page checks (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-3-cba7359d882a@arm.com
-      - d805163ea0eb "kselftest: mm: remove check_huge_shmem() (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

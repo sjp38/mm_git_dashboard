@@ -2,187 +2,188 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 49 total, 5 (40) series, 9 non-series commits
+- mm-unstable: 50 total, 4 (41) series, 9 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 4 commits
+    - no role, nobody: 5 commits
     - no role, no role : 4 commits
-    - no role, reviewer: 26 commits
+    - no role, reviewer: 25 commits
     - no role, maintainer: 5 commits
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 7 commits
     - maintainer, no role : 1 commits
+    - maintainer, reviewer: 1 commits
   - full commits list
-    - 29bb2d379b74 "mm/vmscan: drop the combined limit gate in __node_reclaim()"
+    - 7ea155d109b8 "mm/vmscan: drop the combined limit gate in __node_reclaim()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260826124409.35569-1-ridong.chen@linux.dev
       - Link: https://sashiko.dev/#/patchset/20260723045718.2052070-1-ridong.chen@linux.dev [1]
-    - c97738480185 "mm/mglru: preserve inactive placement when enabling MGLRU"
+    - ed6ad955ed70 "mm/mglru: preserve inactive placement when enabling MGLRU"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260821021606.877330-1-ridong.chen@linux.dev
     - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v6. (17 commits)
-      - 326bcaf44a6a "mm/sparse: relax struct mem_section size constraints" (0/17)
+      - a917d33e76e3 "mm/sparse: relax struct mem_section size constraints" (0/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - 0937afd21d37 "mm/sparse-vmemmap: rename HVO order macros" (1/17)
+      - eb2825b7605f "mm/sparse-vmemmap: rename HVO order macros" (1/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-3-songmuchun@bytedance.com
-      - e565765a34b1 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+      - 8f4e5caf962b "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com
-      - 40325b08a474 "mm/sparse-vmemmap: support section-based vmemmap accounting" (4/17)
+      - a559f7e7f3f0 "mm/sparse-vmemmap: support section-based vmemmap accounting" (4/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-6-songmuchun@bytedance.com
-      - 311dbc57fd93 "mm/sparse-vmemmap: remove SPARSEMEM_VMEMMAP_PREINIT support" (10/17)
+      - 69823f843b57 "mm/sparse-vmemmap: remove SPARSEMEM_VMEMMAP_PREINIT support" (10/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-12-songmuchun@bytedance.com
-      - e5cb2ae13920 "mm/sparse: inline usemap allocation into sparse_init_nid()" (11/17)
+      - 01c7d5a3bf43 "mm/sparse: inline usemap allocation into sparse_init_nid()" (11/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-13-songmuchun@bytedance.com
     - series "memcg: remove the v1 soft limit", v2. (8 commits)
-      - a45d86df150c "memcg: remove v1 soft limit reclaim" (0/8)
+      - 542d28e7e169 "memcg: remove v1 soft limit reclaim" (0/8)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev
-      - c4934183c456 "memcg: remove mem_cgroup_shrink_node()" (1/8)
+      - c54fa62f67a9 "memcg: remove mem_cgroup_shrink_node()" (1/8)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev
-      - 2bcc2bb7ae3f "memcg: remove lru_gen_soft_reclaim()" (4/8)
+      - ec698eb11070 "memcg: remove lru_gen_soft_reclaim()" (4/8)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev
     - series "mm/mglru: clean up isolate_folios for readability and clarity", v2. (2 commits)
-      - 465c2f25c22c "mm/mglru: make type fallback logic explicit in isolate_folios()" (0/2)
+      - d44367cd7c89 "mm/mglru: make type fallback logic explicit in isolate_folios()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260829074204.45304-1-baohua@kernel.org
         - Link: https://lore.kernel.org/20260829074204.45304-2-baohua@kernel.org
-      - 07ddb227edfd "mm/mglru: make retry logic explicit in isolate_folios()" (1/2)
+      - 2c53feead7bb "mm/mglru: make retry logic explicit in isolate_folios()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260829074204.45304-3-baohua@kernel.org
-    - 4218a829df7d "mm: revert slight behavior change for swappiness 1-200"
+    - c11f1365ad86 "mm: revert slight behavior change for swappiness 1-200"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260903070500.76379-1-baohua@kernel.org
-      - cbac376fc805 "mm/vmscan: avoid pointless large folio splits without swap" (2/4)
+      - 732015c66df4 "mm/vmscan: avoid pointless large folio splits without swap" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260830042920.2280454-4-xueyuan.chen21@gmail.com
     - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7 commits)
-      - 9b462843b14a "mm/mglru: separate folio generation update from LRU accounting" (0/7)
+      - de3b01949937 "mm/mglru: separate folio generation update from LRU accounting" (0/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-1-baohua@kernel.org
         - Link: https://lore.kernel.org/20260901232421.40157-2-baohua@kernel.org
         - Link: https://lore.kernel.org/linux-mm/20260812121658.69965-1-baohua@kernel.org/ [1]
         - Link: https://lore.kernel.org/linux-mm/20260827035416.3012015-1-xueyuan.chen21@gmail.com/ [2]
-      - c97422a694c8 "mm/mglru: batch update lrugen->nr_pages in inc_min_seq()" (1/7)
+      - 860bfad01520 "mm/mglru: batch update lrugen->nr_pages in inc_min_seq()" (1/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-3-baohua@kernel.org
-      - a338ec2dfd90 "mm/mglru: enhance cold/hot inversion handling in inc_min_seq()" (2/7)
+      - bf118a9b9c5f "mm/mglru: enhance cold/hot inversion handling in inc_min_seq()" (2/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-4-baohua@kernel.org
-      - 923d50c24ad3 "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq()" (3/7)
+      - 1af146f9bf6b "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq()" (3/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-5-baohua@kernel.org
-      - d2ffa5748639 "mm/mglru: make LRU folio prefetch helper an inline function" (4/7)
+      - 03bcbadbaf06 "mm/mglru: make LRU folio prefetch helper an inline function" (4/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-6-baohua@kernel.org
-      - e46d94e64956 "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail" (5/7)
+      - 6d72a28fc53d "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail" (5/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-7-baohua@kernel.org
-      - ec7ec4e7e5bd "mm/mglru: batch move folios to the second-oldest gen's LRU" (6/7)
+      - 1555f1115cba "mm/mglru: batch move folios to the second-oldest gen's LRU" (6/7)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
-      - 829ec7644b8a "mm: replace PF_KSWAPD flag with kthread_func() check" (2/4)
+      - 8506d56ad2ce "mm: replace PF_KSWAPD flag with kthread_func() check" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
-      - 4aa38eaf35c1 "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
+      - f24e8fc768e8 "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
-      - fcb295a96497 "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
+      - 056458dffa44 "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-3-9aacbd77d4ca@tencent.com
-      - 187c153ff7e4 "mm/mglru: move max_seq read into walk_update_folio" (3/6)
+      - bd7037fc3508 "mm/mglru: move max_seq read into walk_update_folio" (3/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-4-9aacbd77d4ca@tencent.com
-      - 84de1c3c10cb "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
+      - bbe2814e0638 "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
-      - 38107ae2d3a9 "mm/mglru: fix potential generation folio number leak" (5/6)
+      - 31cec944282d "mm/mglru: fix potential generation folio number leak" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-6-9aacbd77d4ca@tencent.com
-    - ec8eca9d14c2 "mm/vmscan: avoid false-positive -Wuninitialized warning, again"
+    - 0884a7859b0f "mm/vmscan: avoid false-positive -Wuninitialized warning, again"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/all/20260213123902.3466040-1-arnd@kernel.org/
       - Link: https://lore.kernel.org/20260916083456.4136132-1-arnd@kernel.org
-      - 092a825a392c "mm: workingset: use lruvec_page_state_local() to count lru pages" (1/4)
+      - 5895d4ddd708 "mm: workingset: use lruvec_page_state_local() to count lru pages" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/2ed42f96aca124856ea30f774afb55cbe6d8ba58.1789096175.git.zhuhui@kylinos.cn
-    - af7389dee7a8 "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
+    - b61d064d58c2 "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
-    - 095416b31077 "mm: mglru: clear the reference counter for rejected folios"
+    - a21bb6dc947a "mm: mglru: clear the reference counter for rejected folios"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/7384df363c12e4acdaa2e0428420cd8eed320ee7.1789384831.git.baolin.wang@linux.alibaba.com
-    - 8f0c9851582b "mm/memcg: clear folio memcg after changing per memcg stats"
+    - 12f2f0a92a53 "mm/memcg: clear folio memcg after changing per memcg stats"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
-      - a6c498b74399 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
+      - 0612b6091df8 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v4. (11 commits)
-      - ba1dbcc05442 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION" (0/11)
+      - a13817fe479d "mm/sparse-vmemmap: allocate shared tail page array dynamically" (1/12)
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260927025441.741633-3-songmuchun@bytedance.com
+      - 638399c072b2 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION" (2/12)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260916064341.1825793-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260916064341.1825793-2-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - 67dc73dc8be8 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation" (2/11)
+        - Link: https://lore.kernel.org/20260927025441.741633-4-songmuchun@bytedance.com
+      - bcf1ff0fe0ba "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/12)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260916064341.1825793-3-songmuchun@bytedance.com
-      - d912eceb3bfe "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/11)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260916064341.1825793-7-songmuchun@bytedance.com
-      - 25bd6aabbcf4 "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
+        - Link: https://lore.kernel.org/20260927025441.741633-8-songmuchun@bytedance.com
+      - 2cb5d8f7dc69 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header" (7/12)
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260927025441.741633-9-songmuchun@bytedance.com
+      - 74555dfc3e63 "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-      - 5d0c78bd6732 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
+      - 0cbb53834c87 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-      - 314c5db0c19b "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (32/39)
+      - 4ebed5e0e97e "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (32/39)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-34-4583d8a23bca@kernel.org
-      - c0a8b5566a7d "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (33/39)
+      - e84ba5dc8eb3 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (33/39)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-35-4583d8a23bca@kernel.org
-    - 583ba8486e2a "mm/mglru: restore accidentally removed seq < max_seq check"
+    - c811a6eeaa34 "mm/mglru: restore accidentally removed seq < max_seq check"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260915101556.50467-1-baohua@kernel.org
-      - 42bb24aee77a "mm: memcontrol: constify the lruvec helpers" (2/11)
+      - 6202e72c874a "mm: memcontrol: constify the lruvec helpers" (2/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-3-c239a6010b58@columbia.edu
-      - 7e0fbf24bc89 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - 9b93b0c65b4f "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-    - 70983e974123 "mm: vmscan: put rotation-missed folios at the LRU tail"
+    - c10c5f964277 "mm: vmscan: put rotation-missed folios at the LRU tail"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260920132519.3369946-1-ridong.chen@linux.dev
       - Link: https://lore.kernel.org/linux-kernel/20241010081802.290893-1-chenridong@huaweicloud.com/ [1]
       - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
       - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
       - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
-      - b9bd41220468 "memcg: move memcg private ID refcount to objcg" (3/4)
+      - 4ab0f4da57ea "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-      - 5b25ff7e56b5 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - 62c0d456ab5a "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-      - 755418711eb5 "mm/sparse: remove pfn_in_present_section()" (6/13)
+      - aff7907530ef "mm/sparse: remove pfn_in_present_section()" (6/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-7-54d81d65e125@kernel.org
-      - bb02012a94fe "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
+      - 4077348e2cb9 "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-    - 5276a0660d04 "mm: remove the unused zone->unaccepted_cleanup"
+    - 93fc0b1eced0 "mm: remove the unused zone->unaccepted_cleanup"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

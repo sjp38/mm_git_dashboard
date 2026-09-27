@@ -6,20 +6,50 @@
     - no role, nobody: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 31 -> 32 commits
-  - series: 4 (21) -> 4 (21) (no change)
-    - no role, nobody: 5 -> 6 commits
-    - no role, no role : 8 -> 8 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 14 -> 14 commits (no change)
+- mm-unstable: 32 -> 33 commits
+  - series: 4 (21) -> 5 (23)
+    - no role, nobody: 6 -> 5 commits
+    - no role, no role : 8 -> 6 commits
+    - no role, reviewer: 4 -> 3 commits
+    - no role, maintainer: 14 -> 15 commits
+    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, no role : 0 -> 2 commits
+    - maintainer, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
+      - 43a9e95c6fb1 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (0/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260927025441.741633-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260927025441.741633-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+      - 2cb5d8f7dc69 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (7/12)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260927025441.741633-9-songmuchun@bytedance.com
+      - 4799c54d6b1c "powerpc/mm: switch device DAX to shared tail vmemmap pages (8/12)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260927025441.741633-10-songmuchun@bytedance.com
+      - 31357776a381 "Documentation/mm: update DAX vmemmap deduplication docs (11/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260927025441.741633-13-songmuchun@bytedance.com
   - changed commits
-    - 9b32e5b133c3 "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260922090749.24905-1-lizhe.67@bytedance.com
-- mm-new: 1 -> 0 commits
+    - c3a796eee124 "mm/hugetlb: fix subpool minimum reservation rollback"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+      - Link: https://lore.kernel.org/20260907132055.26696-1-zhoujinmeng@bytedance.com
+  - dropped commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v4. (11)
+      - 67dc73dc8be8 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (2/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260916064341.1825793-3-songmuchun@bytedance.com
+      - 9942b7df050d "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (7/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260916064341.1825793-8-songmuchun@bytedance.com
+    - c21c73c1baa3 "Documentation/mm: update DAX vmemmap deduplication docs"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260916064341.1825793-12-songmuchun@bytedance.com
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

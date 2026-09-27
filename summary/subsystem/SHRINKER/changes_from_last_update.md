@@ -5,26 +5,22 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 4 -> 6 commits
-  - series: 0 (1) -> 1 (3)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 1 -> 2 commits
+- mm-unstable: 6 -> 4 commits
+  - series: 1 (3) -> 0 (1)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 2 -> 1 commits
     - no role, reviewer: 2 -> 2 commits (no change)
-  - changed commits
+  - dropped commits
     - series "mm: restore per-memcg reclaim for NONSLAB shrinkers under nokmem", v3. (4)
       - ae1c6129ca7e "mm: memcontrol: drop kmemcg_id and use mem_cgroup_id() for list_lru indexing (0/4)"
         - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910080722.3961351-1-qinyuntan@linux.alibaba.com
         - Link: https://lore.kernel.org/20260910080722.3961351-2-qinyuntan@linux.alibaba.com
       - b0fcef8ffc00 "mm: list_lru: keep per-memcg lists with nokmem for NONSLAB-backed lrus (2/4)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910080722.3961351-3-qinyuntan@linux.alibaba.com
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

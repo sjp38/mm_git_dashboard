@@ -1,85 +1,97 @@
 - baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - 279ad5e21f12 "mm: don't schedule deferred kernel page table freeing while booting"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260925050647.86913-1-mikhail.v.gavrilov@gmail.com
-      - Link: https://lore.kernel.org/20260924064321.23787-1-mikhail.v.gavrilov@gmail.com
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 86 -> 86 commits (no change)
-  - series: 11 (75) -> 11 (76)
-    - no role, nobody: 12 -> 9 commits
-    - no role, no role : 50 -> 50 commits (no change)
-    - no role, reviewer: 12 -> 15 commits
+- mm-unstable: 86 -> 87 commits
+  - series: 11 (76) -> 11 (77)
+    - no role, nobody: 9 -> 10 commits
+    - no role, no role : 50 -> 48 commits
+    - no role, reviewer: 15 -> 14 commits
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, no role : 1 -> 2 commits
+    - maintainer, reviewer: 1 -> 2 commits
   - new commits
-    - series "mm: make userland page table freeing RCU-safe", v5. (12)
-      - 9b69d249793c "mm: userland pgtable freeing is RCU-safe now, remove leftover bits (10/12)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-11-31e91065fea4@kernel.org
-  - changed commits
-    - series "mm: make userland page table freeing RCU-safe", v5. (12)
-      - 5166c5ef2885 "mm: change the contract for free_pgtables(), update docs (11/12)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-12-fe1ad1f1e303@kernel.org"
-        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - f8dad19f16af "mm: make map_kernel_pages_[prepare,complete] internal and unexported (4/39)"
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
+      - 43a9e95c6fb1 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (0/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - Link: https://lore.kernel.org/20260927025441.741633-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260927025441.741633-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+      - a13817fe479d "mm/sparse-vmemmap: allocate shared tail page array dynamically (1/12)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260927025441.741633-3-songmuchun@bytedance.com
+      - 638399c072b2 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION (2/12)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-6-4583d8a23bca@kernel.org
-      - 5428ca598822 "mm/vma: tidy up map kernel pages enum values (5/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Suren Baghdasaryan <surenb@google.com>"
-        - dropped "Cc: Suren Baghdasaryan <surenb@google.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
-      - 2fbedcdfe404 "mm: add mmap action for discontiguous kernel page mapping (6/39)"
+        - Link: https://lore.kernel.org/20260927025441.741633-4-songmuchun@bytedance.com
+      - c807e3ad053e "mm/sparse-vmemmap: open-code init_compound_tail() (3/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-8-4583d8a23bca@kernel.org
-      - 017e3735ea99 "mm/vma: add vma[_flags]_is_kernel_owned() predicates (13/39)"
+        - Link: https://lore.kernel.org/20260927025441.741633-5-songmuchun@bytedance.com
+      - f039499eaa48 "mm/sparse-vmemmap: prepare DAX vmemmap population for compound page orders (4/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-15-4583d8a23bca@kernel.org
-      - 0529b45af032 "mm/vma: add and use vma_[flags]_is_fixed_mapping (15/39)"
+        - Link: https://lore.kernel.org/20260927025441.741633-6-songmuchun@bytedance.com
+      - 70dbb004e777 "mm/sparse-vmemmap: set compound page order for device DAX (5/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260927025441.741633-7-songmuchun@bytedance.com
+      - bcf1ff0fe0ba "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/12)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-17-4583d8a23bca@kernel.org
+        - Link: https://lore.kernel.org/20260927025441.741633-8-songmuchun@bytedance.com
+      - 2cb5d8f7dc69 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (7/12)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260927025441.741633-9-songmuchun@bytedance.com
+      - 4799c54d6b1c "powerpc/mm: switch device DAX to shared tail vmemmap pages (8/12)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260927025441.741633-10-songmuchun@bytedance.com
+      - 028871b824fd "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (9/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260927025441.741633-11-songmuchun@bytedance.com
+      - 3d73fc92168b "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments (10/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260927025441.741633-12-songmuchun@bytedance.com
   - dropped commits
-    - series "mm: make userland page table freeing RCU-safe", v4. (12)
-      - f56266a65301 "mm: make userland page table freeing RCU-safe (11/12)"
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v4. (11)
+      - ba1dbcc05442 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION (0/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260916064341.1825793-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260916064341.1825793-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+      - 5f1306b2d073 "mm-sparse-vmemmap-introduce-config_vmemmap_optimization-fix (1/11)"
         - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260922-rcu-pagetable-freeing-v4-11-fe1ad1f1e303@kernel.org
-- mm-new: 1 -> 3 commits
+        - Link: https://lore.kernel.org/20260916083627.2145779-1-songmuchun@bytedance.com
+      - 67dc73dc8be8 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (2/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260916064341.1825793-3-songmuchun@bytedance.com
+      - cf1ce3b7ae6e "mm/sparse-vmemmap: open-code init_compound_tail() (3/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260916064341.1825793-4-songmuchun@bytedance.com
+      - 914a1d7f3af6 "mm/sparse-vmemmap: prepare DAX vmemmap population for compound page orders (4/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260916064341.1825793-5-songmuchun@bytedance.com
+      - 1a03ff68f38b "mm/sparse-vmemmap: set compound page order for device DAX (5/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260916064341.1825793-6-songmuchun@bytedance.com
+      - d912eceb3bfe "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260916064341.1825793-7-songmuchun@bytedance.com
+      - 9942b7df050d "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (7/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260916064341.1825793-8-songmuchun@bytedance.com
+      - bdf2cace2ce8 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (9/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260916064341.1825793-10-songmuchun@bytedance.com
+      - c430c2314ffa "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments (10/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260916064341.1825793-11-songmuchun@bytedance.com
+- mm-new: 3 -> 3 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 1 -> 2 commits
-  - new commits
-    - c0f86824339e "arch, mm: promote DEBUG_WX to CHECK_WX"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260925-direct-map-verify-wx-v1-1-7fd2f7d6d23b@kernel.org
-    - 9cb22f082fda "mm/vma: don't remove VMA from rmap if pgoff unchanged"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org
-  - changed commits
-    - 5276a0660d04 "mm: remove the unused zone->unaccepted_cleanup"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Reviewed-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
-      - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

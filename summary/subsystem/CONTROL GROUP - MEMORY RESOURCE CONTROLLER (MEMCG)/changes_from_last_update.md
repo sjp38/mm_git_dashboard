@@ -5,28 +5,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 47 -> 49 commits
-  - series: 10 (38) -> 11 (40)
-    - no role, nobody: 2 -> 3 commits
+- mm-unstable: 49 -> 47 commits
+  - series: 11 (40) -> 10 (38)
+    - no role, nobody: 3 -> 2 commits
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 5 -> 5 commits (no change)
     - no role, maintainer: 25 -> 25 commits (no change)
-    - maintainer, nobody: 6 -> 7 commits
+    - maintainer, nobody: 7 -> 6 commits
     - maintainer, no role : 8 -> 8 commits (no change)
-  - changed commits
+  - dropped commits
     - series "mm: restore per-memcg reclaim for NONSLAB shrinkers under nokmem", v3. (4)
       - ae1c6129ca7e "mm: memcontrol: drop kmemcg_id and use mem_cgroup_id() for list_lru indexing (0/4)"
         - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260910080722.3961351-1-qinyuntan@linux.alibaba.com
         - Link: https://lore.kernel.org/20260910080722.3961351-2-qinyuntan@linux.alibaba.com
       - d531e1524693 "mm-memcontrol-drop-kmemcg_id-and-use-mem_cgroup_id-for-list_lru-indexing-fix (1/4)"
         - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, nobody: 1 -> 0 commits
-    - maintainer, nobody: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

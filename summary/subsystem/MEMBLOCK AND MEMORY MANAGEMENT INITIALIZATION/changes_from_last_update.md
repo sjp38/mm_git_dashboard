@@ -10,6 +10,22 @@
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
+      - 70dbb004e777 "mm/sparse-vmemmap: set compound page order for device DAX (5/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260927025441.741633-7-songmuchun@bytedance.com
+      - 028871b824fd "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (9/12)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260927025441.741633-11-songmuchun@bytedance.com
+  - dropped commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v4. (11)
+      - 1a03ff68f38b "mm/sparse-vmemmap: set compound page order for device DAX (5/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260916064341.1825793-6-songmuchun@bytedance.com
+      - bdf2cace2ce8 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (9/11)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260916064341.1825793-10-songmuchun@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

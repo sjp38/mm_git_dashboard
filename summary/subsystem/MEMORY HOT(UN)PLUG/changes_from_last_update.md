@@ -11,6 +11,16 @@
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
+  - new commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
+      - bcf1ff0fe0ba "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260927025441.741633-8-songmuchun@bytedance.com
+  - dropped commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v4. (11)
+      - d912eceb3bfe "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/11)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260916064341.1825793-7-songmuchun@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
