@@ -11,6 +11,18 @@
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: stop calling pmd_folio() on special PMDs", v3. (2)
+      - 164b6ebf1442 "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260926105110.2156652-3-gourry@gourry.net"
+        - added "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
+        - dropped "Link: https://lore.kernel.org/20260912034833.2952750-3-gourry@gourry.net"
+        - dropped "Cc: Alistair Popple <apopple@nvidia.com>"
+        - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
+        - dropped "Cc: Matthew Brost <matthew.brost@intel.com>"
+        - dropped "Cc: Byungchul Park <byungchul@sk.com>"
+        - Link: https://lore.kernel.org/20260926105110.2156652-3-gourry@gourry.net
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

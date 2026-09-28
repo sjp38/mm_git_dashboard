@@ -1,41 +1,53 @@
 - baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-hotfixes-unstable: 0 -> 2 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, nobody: 0 -> 2 commits
+  - new commits
+    - f923adfd8923 "selftests/mm: cleanup -Wformat issues in hugetlb-mmap"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260927162419.820609-1-cmllamas@google.com
+    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v3. (2)
+      - 8d2e2b1d8faa "selftests/mm: add tests for UFFDIO_MOVE of a uffd-protected swap entry (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260926124145.2878520-3-donggeunyoo.kernel@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 83 -> 83 commits (no change)
-  - series: 10 (60) -> 10 (61)
-    - no role, nobody: 12 -> 12 commits (no change)
-    - no role, no role : 31 -> 30 commits
-    - no role, reviewer: 17 -> 17 commits (no change)
+- mm-unstable: 83 -> 87 commits
+  - series: 10 (61) -> 11 (65)
+    - no role, nobody: 12 -> 13 commits
+    - no role, no role : 30 -> 31 commits
+    - no role, reviewer: 17 -> 19 commits
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 12 -> 12 commits (no change)
-    - maintainer, no role : 0 -> 1 commits
+    - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
-      - 31357776a381 "Documentation/mm: update DAX vmemmap deduplication docs (11/12)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260927025441.741633-13-songmuchun@bytedance.com
   - changed commits
-    - 5df366cd31ff "selftests/mm: skip khugepaged file tests if mkfs.xfs is unavailable"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260912202903.16157-1-jaeyeon.lee.dev@gmail.com"
-      - added "Suggested-by: Zi Yan <ziy@nvidia.com>"
-      - dropped "Link: https://lore.kernel.org/20260911124517.63714-1-jaeyeon.lee.dev@gmail.com"
-      - Link: https://lore.kernel.org/20260912202903.16157-1-jaeyeon.lee.dev@gmail.com
-  - dropped commits
-    - c21c73c1baa3 "Documentation/mm: update DAX vmemmap deduplication docs"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260916064341.1825793-12-songmuchun@bytedance.com
-- mm-new: 5 -> 5 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - series "kselftest: mm: fix some failure of split_huge_page_test", v8. (4)
+      - 26b2ec7f9395 "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com
+      - 42d58e2baac8 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-2-cba7359d882a@arm.com
+      - 50f4ecc4c387 "kselftest: mm: integrate huge page checks (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-3-cba7359d882a@arm.com
+      - 11f08d78c0fc "kselftest: mm: remove check_huge_shmem() (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com
+- mm-new: 5 -> 1 commits
+  - series: 1 (4) -> 0 (0)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

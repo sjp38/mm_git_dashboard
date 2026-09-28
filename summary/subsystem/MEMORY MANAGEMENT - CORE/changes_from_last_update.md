@@ -6,92 +6,38 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 86 -> 87 commits
-  - series: 11 (76) -> 11 (77)
-    - no role, nobody: 9 -> 10 commits
-    - no role, no role : 50 -> 48 commits
-    - no role, reviewer: 15 -> 14 commits
+- mm-unstable: 87 -> 89 commits
+  - series: 11 (77) -> 11 (77) (no change)
+    - no role, nobody: 10 -> 10 commits (no change)
+    - no role, no role : 48 -> 49 commits
+    - no role, reviewer: 14 -> 15 commits
     - no role, maintainer: 4 -> 4 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
-    - maintainer, no role : 1 -> 2 commits
-    - maintainer, reviewer: 1 -> 2 commits
-  - new commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
-      - 43a9e95c6fb1 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (0/12)"
-        - Authored by a maintainer, reviewed by no role player
-        - Link: https://lore.kernel.org/20260927025441.741633-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260927025441.741633-2-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - a13817fe479d "mm/sparse-vmemmap: allocate shared tail page array dynamically (1/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260927025441.741633-3-songmuchun@bytedance.com
-      - 638399c072b2 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION (2/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260927025441.741633-4-songmuchun@bytedance.com
-      - c807e3ad053e "mm/sparse-vmemmap: open-code init_compound_tail() (3/12)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260927025441.741633-5-songmuchun@bytedance.com
-      - f039499eaa48 "mm/sparse-vmemmap: prepare DAX vmemmap population for compound page orders (4/12)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260927025441.741633-6-songmuchun@bytedance.com
-      - 70dbb004e777 "mm/sparse-vmemmap: set compound page order for device DAX (5/12)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260927025441.741633-7-songmuchun@bytedance.com
-      - bcf1ff0fe0ba "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260927025441.741633-8-songmuchun@bytedance.com
-      - 2cb5d8f7dc69 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (7/12)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260927025441.741633-9-songmuchun@bytedance.com
-      - 4799c54d6b1c "powerpc/mm: switch device DAX to shared tail vmemmap pages (8/12)"
-        - Authored by a maintainer, reviewed by nobody
-        - Link: https://lore.kernel.org/20260927025441.741633-10-songmuchun@bytedance.com
-      - 028871b824fd "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (9/12)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260927025441.741633-11-songmuchun@bytedance.com
-      - 3d73fc92168b "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments (10/12)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260927025441.741633-12-songmuchun@bytedance.com
-  - dropped commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v4. (11)
-      - ba1dbcc05442 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION (0/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260916064341.1825793-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260916064341.1825793-2-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - 5f1306b2d073 "mm-sparse-vmemmap-introduce-config_vmemmap_optimization-fix (1/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260916083627.2145779-1-songmuchun@bytedance.com
-      - 67dc73dc8be8 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (2/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260916064341.1825793-3-songmuchun@bytedance.com
-      - cf1ce3b7ae6e "mm/sparse-vmemmap: open-code init_compound_tail() (3/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260916064341.1825793-4-songmuchun@bytedance.com
-      - 914a1d7f3af6 "mm/sparse-vmemmap: prepare DAX vmemmap population for compound page orders (4/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260916064341.1825793-5-songmuchun@bytedance.com
-      - 1a03ff68f38b "mm/sparse-vmemmap: set compound page order for device DAX (5/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260916064341.1825793-6-songmuchun@bytedance.com
-      - d912eceb3bfe "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260916064341.1825793-7-songmuchun@bytedance.com
-      - 9942b7df050d "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (7/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260916064341.1825793-8-songmuchun@bytedance.com
-      - bdf2cace2ce8 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (9/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260916064341.1825793-10-songmuchun@bytedance.com
-      - c430c2314ffa "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments (10/11)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260916064341.1825793-11-songmuchun@bytedance.com
-- mm-new: 3 -> 3 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, no role : 2 -> 2 commits (no change)
+    - maintainer, reviewer: 2 -> 2 commits (no change)
+  - changed commits
+    - cb485a92f073 "mm: remove the unused zone->unaccepted_cleanup"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
+    - 57e4ac91fc62 "arch, mm: promote DEBUG_WX to CHECK_WX"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Link: https://lore.kernel.org/20260926-direct-map-verify-wx-v2-1-efcd64a6b74a@kernel.org"
+      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Cc: David Hildenbrand <david@kernel.org>"
+      - added "Cc: Heiko Carstens <hca@linux.ibm.com>"
+      - dropped "Link: https://lore.kernel.org/20260925-direct-map-verify-wx-v1-1-7fd2f7d6d23b@kernel.org"
+      - dropped "Acked-by: Heiko Carstens <hca@linux.ibm.com> # s390"
+      - dropped "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-direct-map-verify-wx-v2-1-efcd64a6b74a@kernel.org
+- mm-new: 3 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 2 -> 1 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

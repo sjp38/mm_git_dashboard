@@ -5,15 +5,10 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 21 -> 20 commits
+- mm-unstable: 20 -> 20 commits (no change)
   - series: 6 (14) -> 6 (14) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 18 -> 17 commits
-  - dropped commits
-    - 1f25ec907205 "mm: zswap: mark the zswap shrinker SHRINKER_NONSLAB"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260910080722.3961351-5-qinyuntan@linux.alibaba.com
-      - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [1]
+    - no role, maintainer: 17 -> 17 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -5,46 +5,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 49 -> 50 commits
-  - series: 5 (40) -> 4 (41)
-    - no role, nobody: 4 -> 5 commits
+- mm-unstable: 50 -> 51 commits
+  - series: 4 (41) -> 4 (41) (no change)
+    - no role, nobody: 5 -> 5 commits (no change)
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 26 -> 25 commits
+    - no role, reviewer: 25 -> 26 commits
     - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 7 -> 7 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-    - maintainer, reviewer: 0 -> 1 commits
-  - new commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
-      - a13817fe479d "mm/sparse-vmemmap: allocate shared tail page array dynamically (1/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260927025441.741633-3-songmuchun@bytedance.com
-      - 638399c072b2 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION (2/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260927025441.741633-4-songmuchun@bytedance.com
-      - bcf1ff0fe0ba "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260927025441.741633-8-songmuchun@bytedance.com
-      - 2cb5d8f7dc69 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (7/12)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260927025441.741633-9-songmuchun@bytedance.com
-  - dropped commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v4. (11)
-      - ba1dbcc05442 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION (0/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260916064341.1825793-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260916064341.1825793-2-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - 67dc73dc8be8 "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (2/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260916064341.1825793-3-songmuchun@bytedance.com
-      - d912eceb3bfe "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/11)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260916064341.1825793-7-songmuchun@bytedance.com
-- mm-new: 1 -> 1 commits (no change)
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - cb485a92f073 "mm: remove the unused zone->unaccepted_cleanup"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

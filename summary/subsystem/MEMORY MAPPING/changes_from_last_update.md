@@ -1,25 +1,36 @@
 - baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 976d5e0ddac8 "mm/vma: predicate setting mmap_prepare VMA fields on new vma alloc"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260923-fix-mmap-prepare-overwrite-v1-1-3b3f1bfcdf5e@kernel.org
-- mm-hotfixes-unstable: 3 -> 2 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 0 commits
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 0 -> 2 commits
+  - changed commits
+    - series "mm/mremap: fix two issues with MREMAP_DONTUNMAP". (2)
+      - 9f305ddce17b "mm/mremap: fix locked_vm leak from MREMAP_DONTUNMAP self-merge (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
+        - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-0-6ffb556f8f8b@kernel.org
+        - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-1-6ffb556f8f8b@kernel.org
+      - b54ba4428277 "mm/mremap: fix locked_vm leak by splitting VMA for MREMAP_DONTUNMAP (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
+        - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-2-6ffb556f8f8b@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 37 -> 37 commits (no change)
-  - series: 6 (33) -> 6 (33) (no change)
+- mm-unstable: 37 -> 38 commits
+  - series: 6 (33) -> 6 (34)
     - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 21 -> 21 commits (no change)
     - no role, reviewer: 7 -> 7 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
     - maintainer, no role : 1 -> 1 commits (no change)
+  - new commits
+    - series "read proc/pid/smaps_rollup under per-vma lock", v5. (7)
+      - 8a53cafa074a "proc-task_mmu-remove-unnecessary-inlines-in-function-definitions-fix (2/7)"
+        - Authored by a maintainer, reviewed by nobody
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)

@@ -7,14 +7,14 @@
     - no role, nobody: 1 commits
     - maintainer, nobody: 2 commits
   - full commits list
-    - 24ff0a79c36a "zram: fix idle age_sec underflow in idle_store()"
+    - fadf1e513a6f "zram: fix idle age_sec underflow in idle_store()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260828083149.45760-1-jiahao.kernel@gmail.com
-    - 5b4f5840207e "zram: remove unreachable kernel_read_file_from_path() return check"
+    - a331b9e05cf3 "zram: remove unreachable kernel_read_file_from_path() return check"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260901051335.2202390-1-senozhatsky@chromium.org
     - series "zsmallc: remove old object read API". (2 commits)
-      - c7439be5dde6 "zram: convert to SG-list zsmalloc object read API" (0/2)
+      - 7da4d32367cb "zram: convert to SG-list zsmalloc object read API" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260907105739.1793316-1-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/20260907105739.1793316-2-senozhatsky@chromium.org

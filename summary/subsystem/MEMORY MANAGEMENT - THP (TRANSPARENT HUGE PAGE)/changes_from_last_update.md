@@ -5,24 +5,28 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 66 -> 65 commits
-  - series: 8 (58) -> 8 (57)
+- mm-unstable: 65 -> 67 commits
+  - series: 8 (57) -> 9 (59)
     - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 49 -> 48 commits
+    - no role, reviewer: 48 -> 50 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-  - dropped commits
-    - series "mm: restore per-memcg reclaim for NONSLAB shrinkers under nokmem", v3. (4)
-      - 7380c97eb793 "mm: thp: restore SHRINKER_NONSLAB on the deferred split shrinker (3/4)"
+  - changed commits
+    - series "kselftest: mm: fix some failure of split_huge_page_test", v8. (4)
+      - 26b2ec7f9395 "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260910080722.3961351-4-qinyuntan@linux.alibaba.com
-        - Link: https://lore.kernel.org/all/ah9PGv12mqai84ES@cmpxchg.org/ [1]
-        - Link: https://lore.kernel.org/lkml/697713c4-0857-485b-aba7-c74f37a3c8b4@linux.alibaba.com/ [2]
-- mm-new: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com
+      - 11f08d78c0fc "kselftest: mm: remove check_huge_shmem() (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com
+- mm-new: 2 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, reviewer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

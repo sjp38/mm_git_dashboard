@@ -6,24 +6,13 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 12 commits
+- mm-unstable: 12 -> 12 commits (no change)
   - series: 2 (9) -> 2 (9) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 10 -> 9 commits
-  - dropped commits
-    - 56788983eca6 "mm: vmalloc: fix vmap_purge_lock livelock under memory pressure"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260828091753.299295-1-ye.liu@linux.dev
+    - no role, no role : 9 -> 9 commits (no change)
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - 1ee120ff8423 "mm/vmalloc: do not warn on -ENOMEM from va_clip() in pcpu_get_vm_areas()"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - added "Reviewed-by: Dev Jain <dev.jain@arm.com>"
-      - dropped "Cc: Uladzislau Rezki (Sony) <urezki@gmail.com>"
-      - Link: https://lore.kernel.org/20260925205450.21262-1-raghunathpalla.0209@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
