@@ -4,25 +4,27 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
+  - changed commits
+    - 725636c63430 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
+      - Authored by no role player, reviewed by nobody
+      - added "Tested-by: Ackerley Tng <ackerleytng@google.com>"
+      - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 33 -> 33 commits (no change)
-  - series: 5 (23) -> 5 (23) (no change)
-    - no role, nobody: 5 -> 4 commits
+  - series: 5 (23) -> 5 (22)
+    - no role, nobody: 4 -> 4 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 15 -> 16 commits
+    - no role, maintainer: 16 -> 16 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - 5b64be96c803 "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
+    - 4d7cc2c27f1e "mm/hugetlb: fix subpool minimum reservation rollback"
       - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://lore.kernel.org/20260928024723.87708-1-lizhe.67@bytedance.com"
-      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Link: https://lore.kernel.org/20260922090749.24905-1-lizhe.67@bytedance.com"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - Link: https://lore.kernel.org/20260928024723.87708-1-lizhe.67@bytedance.com
+      - added "Tested-by: Ackerley Tng <ackerleytng@google.com>"
+      - Link: https://lore.kernel.org/20260907132055.26696-1-zhoujinmeng@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -6,38 +6,72 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 87 -> 89 commits
-  - series: 11 (77) -> 11 (77) (no change)
-    - no role, nobody: 10 -> 10 commits (no change)
-    - no role, no role : 48 -> 49 commits
-    - no role, reviewer: 14 -> 15 commits
-    - no role, maintainer: 4 -> 4 commits (no change)
+- mm-unstable: 89 -> 91 commits
+  - series: 11 (77) -> 11 (75)
+    - no role, nobody: 10 -> 11 commits
+    - no role, no role : 49 -> 48 commits
+    - no role, reviewer: 15 -> 16 commits
+    - no role, maintainer: 4 -> 5 commits
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
+  - new commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
+      - 956271d0094c "mm-sparse-vmemmap-switch-device-dax-to-shared-tail-vmemmap-pages-fix (7/12)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260928044148.3300333-1-songmuchun@bytedance.com
   - changed commits
-    - cb485a92f073 "mm: remove the unused zone->unaccepted_cleanup"
+    - d587a3c78de2 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org
+    - 1d58253eb2f6 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org
+    - 7dd8f780b644 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - ddffa8ab4ef7 "mm: change the contract for free_pgtables(), update docs (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
+    - 802891c29c65 "arch, mm: promote DEBUG_WX to CHECK_WX"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Dave Hansen <dave.hansen@linux.intel.com>"
+      - Link: https://lore.kernel.org/20260926-direct-map-verify-wx-v2-1-efcd64a6b74a@kernel.org
+    - 1de6a762a5cc "mm/vma: don't remove VMA from rmap if pgoff unchanged"
       - Authored by no role player, reviewed by a reviewer
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
-    - 57e4ac91fc62 "arch, mm: promote DEBUG_WX to CHECK_WX"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - added "Link: https://lore.kernel.org/20260926-direct-map-verify-wx-v2-1-efcd64a6b74a@kernel.org"
-      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - added "Cc: David Hildenbrand <david@kernel.org>"
-      - added "Cc: Heiko Carstens <hca@linux.ibm.com>"
-      - dropped "Link: https://lore.kernel.org/20260925-direct-map-verify-wx-v1-1-7fd2f7d6d23b@kernel.org"
-      - dropped "Acked-by: Heiko Carstens <hca@linux.ibm.com> # s390"
-      - dropped "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20260926-direct-map-verify-wx-v2-1-efcd64a6b74a@kernel.org
-- mm-new: 3 -> 1 commits
+      - added "Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/"
+      - added "Suggested-by: Pan Deng <pan.deng@intel.com>"
+      - dropped "Reported-by: Pan Deng <pan.deng@intel.com>"
+      - dropped "Closes: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/"
+      - Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 2 -> 1 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 48bb33348b77 "mm/truncate: fix data loss when splitting straddling large folios fails"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
+      - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

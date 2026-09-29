@@ -5,37 +5,48 @@
     - reviewer, no role : 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 6 -> 7 commits
-  - series: 1 (2) -> 2 (3)
-    - no role, nobody: 3 -> 2 commits
-    - no role, no role : 1 -> 3 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 7 -> 7 commits (no change)
+  - series: 2 (3) -> 2 (3) (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 1 -> 2 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v3. (2)
-      - f7abfced3788 "userfaultfd: clear the inherited uffd bit in move_swap_pte() (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260926124145.2878520-1-donggeunyoo.kernel@gmail.com
-        - Link: https://lore.kernel.org/20260926124145.2878520-2-donggeunyoo.kernel@gmail.com
   - changed commits
+    - 725636c63430 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
+      - Authored by no role player, reviewed by nobody
+      - added "Tested-by: Ackerley Tng <ackerleytng@google.com>"
+      - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
     - series "mm/mremap: fix two issues with MREMAP_DONTUNMAP". (2)
-      - 9f305ddce17b "mm/mremap: fix locked_vm leak from MREMAP_DONTUNMAP self-merge (0/2)"
+      - 0458b28568dd "mm/mremap: fix locked_vm leak from MREMAP_DONTUNMAP self-merge (0/2)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de> "
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Kirill A. Shutemov <kas@kernel.org>"
         - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-0-6ffb556f8f8b@kernel.org
         - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-1-6ffb556f8f8b@kernel.org
-      - b54ba4428277 "mm/mremap: fix locked_vm leak by splitting VMA for MREMAP_DONTUNMAP (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
+      - 6e8ef6dd6367 "mm/mremap: fix locked_vm leak by splitting VMA for MREMAP_DONTUNMAP (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Kirill A. Shutemov <kas@kernel.org>"
         - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-2-6ffb556f8f8b@kernel.org
+    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v3. (2)
+      - 9700feb22c89 "userfaultfd: clear the inherited uffd bit in move_swap_pte() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260926124145.2878520-1-donggeunyoo.kernel@gmail.com
+        - Link: https://lore.kernel.org/20260926124145.2878520-2-donggeunyoo.kernel@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 427 -> 428 commits
-  - series: 65 (348) -> 65 (348) (no change)
-    - no role, nobody: 41 -> 40 commits
-    - no role, no role : 101 -> 102 commits
-    - no role, reviewer: 85 -> 85 commits (no change)
-    - no role, maintainer: 84 -> 85 commits
+- mm-unstable: 428 -> 432 commits
+  - series: 65 (348) -> 64 (346)
+    - no role, nobody: 40 -> 43 commits
+    - no role, no role : 102 -> 102 commits (no change)
+    - no role, reviewer: 85 -> 84 commits
+    - no role, maintainer: 85 -> 87 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
@@ -43,61 +54,225 @@
     - maintainer, nobody: 68 -> 68 commits (no change)
     - maintainer, no role : 25 -> 25 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
+  - new commits
+    - series "mm/collapse: separate a collapse from its callers", v4. (13)
+      - cd69248ebbf8 "mm/collapse: call collapse_file() from collapse_single_pmd() (7/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260928100630.21870-9-kirill@shutemov.name
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
+      - 956271d0094c "mm-sparse-vmemmap-switch-device-dax-to-shared-tail-vmemmap-pages-fix (7/12)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260928044148.3300333-1-songmuchun@bytedance.com
   - changed commits
-    - e52be65aa791 "mm/memfd: fix hugetlb reservation accounting in error paths"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/20260927094757.31665-1-hongfu.li@linux.dev"
-      - Link: https://lore.kernel.org/20260927094757.31665-1-hongfu.li@linux.dev
-      - Link: https://lore.kernel.org/20260903030134.7407-1-hongfu.li@linux.dev
-    - series "mm: stop calling pmd_folio() on special PMDs", v3. (2)
-      - 4753162fa8df "mm/mempolicy: use vm_normal_folio_pmd() in queue_folios_pmd() (0/2)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260926105110.2156652-2-gourry@gourry.net"
-        - added "Link: https://lore.kernel.org/20260926105110.2156652-1-gourry@gourry.net"
-        - added "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
-        - dropped "Link: https://lore.kernel.org/20260912034833.2952750-1-gourry@gourry.net"
-        - dropped "Link: https://lore.kernel.org/20260912034833.2952750-2-gourry@gourry.net"
-        - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
-        - dropped "Cc: Byungchul Park <byungchul@sk.com>"
-        - dropped "Cc: Matthew Brost <matthew.brost@intel.com>"
-        - dropped "Cc: Alistair Popple <apopple@nvidia.com>"
-        - Link: https://lore.kernel.org/20260926105110.2156652-1-gourry@gourry.net
-        - Link: https://lore.kernel.org/20260926105110.2156652-2-gourry@gourry.net
-      - 164b6ebf1442 "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260926105110.2156652-3-gourry@gourry.net"
-        - added "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
-        - dropped "Link: https://lore.kernel.org/20260912034833.2952750-3-gourry@gourry.net"
-        - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
-        - dropped "Cc: Byungchul Park <byungchul@sk.com>"
-        - dropped "Cc: Matthew Brost <matthew.brost@intel.com>"
-        - dropped "Cc: Alistair Popple <apopple@nvidia.com>"
-        - Link: https://lore.kernel.org/20260926105110.2156652-3-gourry@gourry.net
-    - 5b64be96c803 "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Link: https://lore.kernel.org/20260928024723.87708-1-lizhe.67@bytedance.com"
-      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Link: https://lore.kernel.org/20260922090749.24905-1-lizhe.67@bytedance.com"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - Link: https://lore.kernel.org/20260928024723.87708-1-lizhe.67@bytedance.com
-    - 57e4ac91fc62 "arch, mm: promote DEBUG_WX to CHECK_WX"
+    - abf2ddb0a425 "mm: move drivers/char/mem.c to mm/char-mem.c"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - added "Link: https://lore.kernel.org/20260926-direct-map-verify-wx-v2-1-efcd64a6b74a@kernel.org"
-      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - added "Cc: Heiko Carstens <hca@linux.ibm.com>"
-      - added "Cc: David Hildenbrand <david@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260925-direct-map-verify-wx-v1-1-7fd2f7d6d23b@kernel.org"
-      - dropped "Acked-by: Heiko Carstens <hca@linux.ibm.com> # s390"
-      - dropped "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org
+    - d587a3c78de2 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org
+    - 1d58253eb2f6 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org
+    - 7dd8f780b644 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - ddffa8ab4ef7 "mm: change the contract for free_pgtables(), update docs (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
+    - 4d7cc2c27f1e "mm/hugetlb: fix subpool minimum reservation rollback"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Tested-by: Ackerley Tng <ackerleytng@google.com>"
+      - Link: https://lore.kernel.org/20260907132055.26696-1-zhoujinmeng@bytedance.com
+    - series "mm/collapse: separate a collapse from its callers", v4. (13)
+      - 5f3479df94c1 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-1-kirill@shutemov.name"
+        - added "Link: https://lore.kernel.org/20260928100630.21870-2-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-2-kirill@shutemov.name"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-1-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260928100630.21870-2-kirill@shutemov.name
+      - c31c9788391f "mm/khugepaged: count collapses where khugepaged makes them (1/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-3-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-3-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-3-kirill@shutemov.name
+      - ae77e56fac37 "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-4-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-4-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-4-kirill@shutemov.name
+      - 615b06e0ff41 "mm/collapse: add collapse.h for the collapse interface (3/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-5-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-5-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-5-kirill@shutemov.name
+      - 5840132acac6 "mm/collapse: state what a collapse may do in the policy (4/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260928100630.21870-6-kirill@shutemov.name"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-6-kirill@shutemov.name"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260928100630.21870-6-kirill@shutemov.name
+      - 31d2071d4566 "mm/collapse: drop the collapse_possible() wrapper (5/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-7-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-7-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-7-kirill@shutemov.name
+      - 8f13933313a9 "mm/collapse: name the per-table scan reset for what it resets (6/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-8-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-8-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-8-kirill@shutemov.name
+      - 7844fcbfe2db "mm/collapse: separate scanning a PTE table from collapsing it (8/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260928100630.21870-10-kirill@shutemov.name"
+        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-9-kirill@shutemov.name"
+        - dropped "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260928100630.21870-10-kirill@shutemov.name
+      - 84414b81e829 "mm/collapse: open-code collapse_single_pmd() in its two callers (9/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-11-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-10-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-11-kirill@shutemov.name
+      - 9da30f4850e1 "mm/collapse: work out the orders a VMA allows once per VMA (10/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-12-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-11-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-12-kirill@shutemov.name
+      - a8fd2ad4a452 "mm/collapse: declare the collapse interface in collapse.h (11/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260928100630.21870-13-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-12-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-13-kirill@shutemov.name
+      - 21662e2d4867 "mm/collapse: implement MADV_COLLAPSE in madvise.c (12/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-13-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
+    - 802891c29c65 "arch, mm: promote DEBUG_WX to CHECK_WX"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Dave Hansen <dave.hansen@linux.intel.com>"
       - Link: https://lore.kernel.org/20260926-direct-map-verify-wx-v2-1-efcd64a6b74a@kernel.org
-- mm-new: 4 -> 3 commits
-  - series: 0 (0) -> 0 (0) (no change)
+    - 994a57cf0b92 "mm/vmalloc: do not warn on -ENOMEM from va_clip() in pcpu_get_vm_areas()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20260925205450.21262-1-raghunathpalla.0209@gmail.com
+    - 1de6a762a5cc "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/"
+      - added "Suggested-by: Pan Deng <pan.deng@intel.com>"
+      - dropped "Reported-by: Pan Deng <pan.deng@intel.com>"
+      - dropped "Closes: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/"
+      - Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/
+- mm-new: 3 -> 13 commits
+  - series: 0 (0) -> 4 (9)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 2 commits
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 1 -> 10 commits
+  - new commits
+    - series "mm/truncate: fix data loss when truncating straddling large folios", v5. (None)
+      - 1a7155569b42 "mm/truncate: align truncation boundaries to mapping minimum folio order (None/None)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260928120833.3440834-2-yi.zhang@huaweicloud.com
+        - Link: https://lore.kernel.org/linux-fsdevel/a638a8fb-c184-4069-ae33-379ec12cd514@huaweicloud.com/ [1]
+        - Link: https://lore.kernel.org/linux-mm/5a454f2a-8ae2-491d-b903-750c945cfb9d@huaweicloud.com/ [2]
+        - Link: https://lore.kernel.org/linux-mm/5pthbyxtn7q6xi4fmkofvksmcjzfnujcw2g4fxmxjzfin5pbgf@zui3vcimb4cv/ [3]
+    - 7cee9bd7046b "mm/truncate: look up the end-edge straddler by index"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260928120833.3440834-3-yi.zhang@huaweicloud.com
+      - Link: https://lore.kernel.org/linux-mm/DLGXT0ERY79Z.3C5DYVJVX6S9Z@nvidia.com/
+    - 48bb33348b77 "mm/truncate: fix data loss when splitting straddling large folios fails"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
+      - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
+    - ead972d3767c "mm/truncate: clarify return value of truncate_inode_partial_folio()"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260928120833.3440834-5-yi.zhang@huaweicloud.com
+    - series "mm/damon/core: preserve quota state when constructing schemes", v3. (2)
+      - 449a1662cfb3 "mm/damon/core: preserve the quota passed to damon_new_scheme() (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260928085835.7675-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260928085835.7675-2-sj@kernel.org
+        - Link: https://lore.kernel.org/r/20260702212143.0CB6D1F00A3D@smtp.kernel.org/ [1]
+      - 33238682f258 "mm/damon/tests/core-kunit: test preservation of quota state (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260928085835.7675-3-sj@kernel.org
+    - series "mm/damon: fix the temporal goal tuner's size quota conversion", v5. (2)
+      - 9db95d760d97 "mm/damon/core: prevent size quota overflow in the temporal goal tuner (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260928084816.5575-1-sj@kernel.org
+        - Link: https://lore.kernel.org/20260928084816.5575-2-sj@kernel.org
+      - ff2aeb4306eb "mm/damon/tests/core-kunit: test the temporal tuner's size quota conversion (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260928084816.5575-3-sj@kernel.org
+    - series "mm/damon/core: cleanup code, reduce stack usage, and add kunit". (3)
+      - 1fc3ffd66c52 "mm/damon/core: reduce stack usage further (1/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260928083959.4030-3-sj@kernel.org
+      - d17344809b73 "mm/damon/tests/core-kunit: test PSI goal values with explicit samples (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260928083959.4030-4-sj@kernel.org
+    - series "mm/vmalloc: fix vmalloc_dump_obj VA lookup", v4. (2)
+      - 01f82f852ca9 "mm/vmalloc: fix vmalloc_dump_obj address alignment for last-page lookups (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-0-6f288a431edc@linux.dev
+        - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-1-6f288a431edc@linux.dev
+      - 4f9f8fe9feac "mm/vmalloc: fix vmalloc_dump_obj cross-zone VA lookup (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-2-6f288a431edc@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

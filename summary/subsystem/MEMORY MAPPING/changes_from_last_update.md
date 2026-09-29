@@ -4,36 +4,89 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 2 -> 0 commits
-    - no role, no role : 0 -> 2 commits
+    - no role, no role : 2 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
   - changed commits
     - series "mm/mremap: fix two issues with MREMAP_DONTUNMAP". (2)
-      - 9f305ddce17b "mm/mremap: fix locked_vm leak from MREMAP_DONTUNMAP self-merge (0/2)"
+      - 0458b28568dd "mm/mremap: fix locked_vm leak from MREMAP_DONTUNMAP self-merge (0/2)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de> "
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Kirill A. Shutemov <kas@kernel.org>"
         - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-0-6ffb556f8f8b@kernel.org
         - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-1-6ffb556f8f8b@kernel.org
-      - b54ba4428277 "mm/mremap: fix locked_vm leak by splitting VMA for MREMAP_DONTUNMAP (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
+      - 6e8ef6dd6367 "mm/mremap: fix locked_vm leak by splitting VMA for MREMAP_DONTUNMAP (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Kirill A. Shutemov <kas@kernel.org>"
         - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-2-6ffb556f8f8b@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 37 -> 38 commits
-  - series: 6 (33) -> 6 (34)
+- mm-unstable: 38 -> 39 commits
+  - series: 6 (34) -> 5 (28)
     - no role, nobody: 6 -> 6 commits (no change)
     - no role, no role : 21 -> 21 commits (no change)
-    - no role, reviewer: 7 -> 7 commits (no change)
+    - no role, reviewer: 7 -> 8 commits
     - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 0 -> 1 commits
+    - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - new commits
-    - series "read proc/pid/smaps_rollup under per-vma lock", v5. (7)
-      - 8a53cafa074a "proc-task_mmu-remove-unnecessary-inlines-in-function-definitions-fix (2/7)"
-        - Authored by a maintainer, reviewed by nobody
-- mm-new: 1 -> 1 commits (no change)
+  - changed commits
+    - abf2ddb0a425 "mm: move drivers/char/mem.c to mm/char-mem.c"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org
+    - d587a3c78de2 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org
+    - 1d58253eb2f6 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org
+    - 7dd8f780b644 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org
+    - 3bd8788a6d5f "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-5-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-5-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-5-d4781e84ccfc@kernel.org
+    - ef7aef4c454e "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-6-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-6-d4781e84ccfc@kernel.org
+    - 1de6a762a5cc "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-new -> mm-unstable
+      - added "Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/"
+      - added "Suggested-by: Pan Deng <pan.deng@intel.com>"
+      - dropped "Reported-by: Pan Deng <pan.deng@intel.com>"
+      - dropped "Closes: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/"
+      - Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,13 +1,16 @@
 - baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+  - changed commits
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v3. (2)
-      - f7abfced3788 "userfaultfd: clear the inherited uffd bit in move_swap_pte() (0/2)"
-        - Authored by no role player, reviewed by nobody
+      - 9700feb22c89 "userfaultfd: clear the inherited uffd bit in move_swap_pte() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
         - Link: https://lore.kernel.org/20260926124145.2878520-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20260926124145.2878520-2-donggeunyoo.kernel@gmail.com
 - mm-stable: 0 -> 0 commits (no change)

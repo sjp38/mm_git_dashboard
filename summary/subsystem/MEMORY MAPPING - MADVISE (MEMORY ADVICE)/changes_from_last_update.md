@@ -12,17 +12,14 @@
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: stop calling pmd_folio() on special PMDs", v3. (2)
-      - 164b6ebf1442 "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260926105110.2156652-3-gourry@gourry.net"
-        - added "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
-        - dropped "Link: https://lore.kernel.org/20260912034833.2952750-3-gourry@gourry.net"
-        - dropped "Cc: Alistair Popple <apopple@nvidia.com>"
-        - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
-        - dropped "Cc: Matthew Brost <matthew.brost@intel.com>"
-        - dropped "Cc: Byungchul Park <byungchul@sk.com>"
-        - Link: https://lore.kernel.org/20260926105110.2156652-3-gourry@gourry.net
+    - series "mm/collapse: separate a collapse from its callers", v4. (13)
+      - 21662e2d4867 "mm/collapse: implement MADV_COLLAPSE in madvise.c (12/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-13-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

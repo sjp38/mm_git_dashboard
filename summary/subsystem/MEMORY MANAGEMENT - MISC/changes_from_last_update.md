@@ -1,53 +1,70 @@
 - baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 2 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, nobody: 0 -> 2 commits
-  - new commits
-    - f923adfd8923 "selftests/mm: cleanup -Wformat issues in hugetlb-mmap"
-      - Authored by no role player, reviewed by nobody
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 32aa89669750 "selftests/mm: cleanup -Wformat issues in hugetlb-mmap"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
       - Link: https://lore.kernel.org/20260927162419.820609-1-cmllamas@google.com
-    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v3. (2)
-      - 8d2e2b1d8faa "selftests/mm: add tests for UFFDIO_MOVE of a uffd-protected swap entry (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260926124145.2878520-3-donggeunyoo.kernel@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 83 -> 87 commits
-  - series: 10 (61) -> 11 (65)
-    - no role, nobody: 12 -> 13 commits
-    - no role, no role : 30 -> 31 commits
-    - no role, reviewer: 17 -> 19 commits
+- mm-unstable: 87 -> 87 commits (no change)
+  - series: 11 (65) -> 10 (60)
+    - no role, nobody: 13 -> 12 commits
+    - no role, no role : 31 -> 32 commits
+    - no role, reviewer: 19 -> 19 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 12 -> 12 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "kselftest: mm: fix some failure of split_huge_page_test", v8. (4)
-      - 26b2ec7f9395 "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com
-      - 42d58e2baac8 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-2-cba7359d882a@arm.com
-      - 50f4ecc4c387 "kselftest: mm: integrate huge page checks (2/4)"
+    - abf2ddb0a425 "mm: move drivers/char/mem.c to mm/char-mem.c"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org
+    - d587a3c78de2 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org
+    - 1d58253eb2f6 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org
+    - ef7aef4c454e "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-6-d4781e84ccfc@kernel.org"
+      - added "Cc: Mike Rapoport <rppt@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org"
+      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-6-d4781e84ccfc@kernel.org
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - ddffa8ab4ef7 "mm: change the contract for free_pgtables(), update docs (11/12)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-3-cba7359d882a@arm.com
-      - 11f08d78c0fc "kselftest: mm: remove check_huge_shmem() (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com
-- mm-new: 5 -> 1 commits
-  - series: 1 (4) -> 0 (0)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 2 -> 0 commits
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
+    - series "kselftest: mm: fix some failure of split_huge_page_test", v8. (4)
+      - 9ce3ee00b404 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-2-cba7359d882a@arm.com
+- mm-new: 1 -> 1 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

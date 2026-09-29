@@ -5,28 +5,120 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 65 -> 67 commits
-  - series: 8 (57) -> 9 (59)
-    - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 48 -> 50 commits
+- mm-unstable: 67 -> 68 commits
+  - series: 9 (59) -> 9 (60)
+    - no role, nobody: 6 -> 8 commits
+    - no role, no role : 6 -> 7 commits
+    - no role, reviewer: 50 -> 48 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
+  - new commits
+    - series "mm/collapse: separate a collapse from its callers", v4. (13)
+      - cd69248ebbf8 "mm/collapse: call collapse_file() from collapse_single_pmd() (7/13)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260928100630.21870-9-kirill@shutemov.name
   - changed commits
-    - series "kselftest: mm: fix some failure of split_huge_page_test", v8. (4)
-      - 26b2ec7f9395 "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
+    - series "mm/collapse: separate a collapse from its callers", v4. (13)
+      - 5f3479df94c1 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/13)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com
-      - 11f08d78c0fc "kselftest: mm: remove check_huge_shmem() (3/4)"
+        - added "Link: https://lore.kernel.org/20260928100630.21870-1-kirill@shutemov.name"
+        - added "Link: https://lore.kernel.org/20260928100630.21870-2-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-1-kirill@shutemov.name"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-2-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260928100630.21870-2-kirill@shutemov.name
+      - c31c9788391f "mm/khugepaged: count collapses where khugepaged makes them (1/13)"
         - Authored by no role player, reviewed by a reviewer
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, reviewer: 2 -> 0 commits
+        - added "Link: https://lore.kernel.org/20260928100630.21870-3-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-3-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-3-kirill@shutemov.name
+      - ae77e56fac37 "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-4-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-4-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-4-kirill@shutemov.name
+      - 615b06e0ff41 "mm/collapse: add collapse.h for the collapse interface (3/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-5-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-5-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-5-kirill@shutemov.name
+      - 5840132acac6 "mm/collapse: state what a collapse may do in the policy (4/13)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260928100630.21870-6-kirill@shutemov.name"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-6-kirill@shutemov.name"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - dropped "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260928100630.21870-6-kirill@shutemov.name
+      - 31d2071d4566 "mm/collapse: drop the collapse_possible() wrapper (5/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-7-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-7-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-7-kirill@shutemov.name
+      - 8f13933313a9 "mm/collapse: name the per-table scan reset for what it resets (6/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-8-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-8-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-8-kirill@shutemov.name
+      - 7844fcbfe2db "mm/collapse: separate scanning a PTE table from collapsing it (8/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260928100630.21870-10-kirill@shutemov.name"
+        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-9-kirill@shutemov.name"
+        - dropped "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260928100630.21870-10-kirill@shutemov.name
+      - 84414b81e829 "mm/collapse: open-code collapse_single_pmd() in its two callers (9/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-11-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-10-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-11-kirill@shutemov.name
+      - 9da30f4850e1 "mm/collapse: work out the orders a VMA allows once per VMA (10/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260928100630.21870-12-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-11-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-12-kirill@shutemov.name
+      - a8fd2ad4a452 "mm/collapse: declare the collapse interface in collapse.h (11/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260928100630.21870-13-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-12-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-13-kirill@shutemov.name
+      - 21662e2d4867 "mm/collapse: implement MADV_COLLAPSE in madvise.c (12/13)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name"
+        - added "Cc: Usama Arif <usama.arif@linux.dev>"
+        - added "Cc: Nico Pache <nico.pache@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-13-kirill@shutemov.name"
+        - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
