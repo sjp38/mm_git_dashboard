@@ -1,47 +1,49 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 0 (7) -> 0 (6)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
+- mm-unstable: 8 -> 12 commits
+  - series: 0 (6) -> 1 (10)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 3 -> 4 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 5 commits
     - reviewer, no role : 2 -> 2 commits (no change)
   - changed commits
-    - 7dd8f780b644 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org"
-      - added "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org"
-      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org
-- mm-new: 0 -> 4 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, maintainer: 0 -> 4 commits
-  - new commits
-    - series "mm/truncate: fix data loss when truncating straddling large folios", v5. (None)
-      - 1a7155569b42 "mm/truncate: align truncation boundaries to mapping minimum folio order (None/None)"
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
+      - 9edf328bee64 "mm: remove hugetlb_inline.h (25/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
+    - series "mm/truncate: fix data loss when truncating straddling large folios", v5. (4)
+      - d516caab6183 "mm/truncate: align truncation boundaries to mapping minimum folio order (0/4)"
         - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260928120833.3440834-2-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/a638a8fb-c184-4069-ae33-379ec12cd514@huaweicloud.com/ [1]
         - Link: https://lore.kernel.org/linux-mm/5a454f2a-8ae2-491d-b903-750c945cfb9d@huaweicloud.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/5pthbyxtn7q6xi4fmkofvksmcjzfnujcw2g4fxmxjzfin5pbgf@zui3vcimb4cv/ [3]
-    - 7cee9bd7046b "mm/truncate: look up the end-edge straddler by index"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260928120833.3440834-3-yi.zhang@huaweicloud.com
-      - Link: https://lore.kernel.org/linux-mm/DLGXT0ERY79Z.3C5DYVJVX6S9Z@nvidia.com/
-    - 48bb33348b77 "mm/truncate: fix data loss when splitting straddling large folios fails"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
-      - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
-    - ead972d3767c "mm/truncate: clarify return value of truncate_inode_partial_folio()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260928120833.3440834-5-yi.zhang@huaweicloud.com
+      - fbdecb775aef "mm/truncate: look up the end-edge straddler by index (1/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260928120833.3440834-3-yi.zhang@huaweicloud.com
+        - Link: https://lore.kernel.org/linux-mm/DLGXT0ERY79Z.3C5DYVJVX6S9Z@nvidia.com/
+      - de6c26012187 "mm/truncate: fix data loss when splitting straddling large folios fails (2/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
+        - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
+      - babcaeecf042 "mm/truncate: clarify return value of truncate_inode_partial_folio() (3/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260928120833.3440834-5-yi.zhang@huaweicloud.com
+- mm-new: 4 -> 0 commits
+  - series: 1 (1) -> 0 (0)
+    - no role, maintainer: 4 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

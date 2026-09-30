@@ -1,4 +1,4 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -6,29 +6,25 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 13 commits
-  - series: 2 (9) -> 2 (9) (no change)
+- mm-unstable: 13 -> 15 commits
+  - series: 2 (9) -> 3 (11)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 9 -> 9 commits (no change)
-    - no role, maintainer: 0 -> 1 commits
+    - no role, no role : 9 -> 11 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - 994a57cf0b92 "mm/vmalloc: do not warn on -ENOMEM from va_clip() in pcpu_get_vm_areas()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260925205450.21262-1-raghunathpalla.0209@gmail.com
-- mm-new: 1 -> 2 commits
-  - series: 0 (0) -> 1 (2)
-    - no role, no role : 0 -> 2 commits
-    - no role, maintainer: 1 -> 0 commits
-  - new commits
     - series "mm/vmalloc: fix vmalloc_dump_obj VA lookup", v4. (2)
-      - 01f82f852ca9 "mm/vmalloc: fix vmalloc_dump_obj address alignment for last-page lookups (0/2)"
+      - f1eb8a4e715f "mm/vmalloc: fix vmalloc_dump_obj address alignment for last-page lookups (0/2)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-0-6f288a431edc@linux.dev
         - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-1-6f288a431edc@linux.dev
-      - 4f9f8fe9feac "mm/vmalloc: fix vmalloc_dump_obj cross-zone VA lookup (1/2)"
+      - e046ae9e9478 "mm/vmalloc: fix vmalloc_dump_obj cross-zone VA lookup (1/2)"
         - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-2-6f288a431edc@linux.dev
+- mm-new: 2 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, no role : 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

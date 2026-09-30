@@ -1,23 +1,18 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5
-- mm-hotfixes-stable: 4 total, 0 (0) series, 4 non-series commits
+- baseline: v7.3-rc5-30-ga243ede718463
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
+- mm-hotfixes-unstable: 8 total, 2 (3) series, 5 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-    - reviewer, no role : 1 commits
-    - maintainer, nobody: 1 commits
-    - maintainer, no role : 1 commits
-- mm-hotfixes-unstable: 7 total, 2 (3) series, 4 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 3 commits
     - no role, reviewer: 2 commits
     - no role, maintainer: 1 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 432 total, 64 (346) series, 86 non-series commits
+- mm-unstable: 444 total, 68 (358) series, 86 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 43 commits
-    - no role, no role : 102 commits
-    - no role, reviewer: 84 commits
-    - no role, maintainer: 87 commits
+    - no role, nobody: 30 commits
+    - no role, no role : 111 commits
+    - no role, reviewer: 90 commits
+    - no role, maintainer: 97 commits
     - reviewer, nobody: 1 commits
     - reviewer, no role : 3 commits
     - reviewer, reviewer: 10 commits
@@ -25,11 +20,12 @@
     - maintainer, nobody: 68 commits
     - maintainer, no role : 25 commits
     - maintainer, reviewer: 5 commits
-- mm-new: 13 total, 4 (9) series, 4 non-series commits
+- mm-new: 13 total, 2 (11) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 2 commits
-    - no role, maintainer: 10 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 6 commits
+    - maintainer, nobody: 4 commits
+    - maintainer, no role : 1 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat

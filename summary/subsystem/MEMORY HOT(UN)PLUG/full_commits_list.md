@@ -1,4 +1,4 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5
+- baseline: v7.3-rc5-30-ga243ede718463
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -9,18 +9,18 @@
     - no role, maintainer: 2 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 9016ee043d8a "mm/memory_hotplug: factor out node_is_memoryless()"
+    - 3cbad7c01589 "mm/memory_hotplug: factor out node_is_memoryless()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
-    - 6bd6d058689b "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
+    - b0a37bea82f0 "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
       - Authored by a maintainer, reviewed by nobody
-      - fd3b2fabfb11 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/12)
+      - 987cc97e1dad "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/12)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260927025441.741633-8-songmuchun@bytedance.com
-      - 3fca6e93593c "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
+      - 51276f26acc1 "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-      - 656ca2f91555 "mm/memory_hotplug: drop CONFIG_HAVE_ARCH_PFN_VALID handling from pfn_to_online_page()" (12/13)
+      - f5bca71043f0 "mm/memory_hotplug: drop CONFIG_HAVE_ARCH_PFN_VALID handling from pfn_to_online_page()" (12/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-13-54d81d65e125@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

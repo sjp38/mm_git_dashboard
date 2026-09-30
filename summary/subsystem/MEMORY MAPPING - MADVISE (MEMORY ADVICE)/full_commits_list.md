@@ -1,51 +1,51 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5
+- baseline: v7.3-rc5-30-ga243ede718463
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 13 total, 0 (9) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 5 commits
-    - no role, no role : 5 commits
-    - no role, reviewer: 2 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 8 commits
+    - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 02791ec222be "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
+      - 46b1108bc85f "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-3-gourry@gourry.net
-    - 93cfc40a0a59 "mm/madvise: swap in CoW'd MAP_PRIVATE-file mappings on MADV_WILLNEED"
+    - 6ed0933bb420 "mm/madvise: swap in CoW'd MAP_PRIVATE-file mappings on MADV_WILLNEED"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/aprjOxDy3JCPb2oa@gremlin
-      - 21662e2d4867 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (12/13)
-        - Authored by no role player, reviewed by nobody
+      - b86ee986de60 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (12/13)
+        - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
-      - a9edf37a3b81 "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range" (1/2)
+      - 1f396d32f63c "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260926105110.2156652-3-gourry@gourry.net
-      - af88249f5e1e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
+      - 6f28fbdc899e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-      - 38688f6ec700 "mm/madvise: update is_valid_guard_vma() to use vma_can_merge()" (28/39)
-        - Authored by no role player, reviewed by nobody
+      - 73b89e1141ed "mm/madvise: update is_valid_guard_vma() to use vma_can_merge()" (28/39)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-30-4583d8a23bca@kernel.org
-      - 0d811cf28b9a "mm/vma: introduce vma[_flags]_is_persistent()" (29/39)
-        - Authored by no role player, reviewed by nobody
+      - e58dd8de8f75 "mm/vma: introduce vma[_flags]_is_persistent()" (29/39)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-31-4583d8a23bca@kernel.org
-      - 64cedfba7a91 "mm/madvise: use predicates for madvise(..., MADV_DOFORK)" (31/39)
-        - Authored by no role player, reviewed by nobody
+      - 7d5600b30ae3 "mm/madvise: use predicates for madvise(..., MADV_DOFORK)" (31/39)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-33-4583d8a23bca@kernel.org
-    - d6dcee0e9661 "mm/madvise: reclaim isolated folios if PTE restart fails"
+    - 1e0bf803be75 "mm/madvise: reclaim isolated folios if PTE restart fails"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260912110832.3203902-1-gourry@gourry.net
-    - ca62682a68eb "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
+    - c780dd3e1dd8 "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260912110540.3203010-1-gourry@gourry.net
-      - dd9c21449ba8 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 99354e29c4f0 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - b51de0aeae5b "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 9f68b9075794 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - 25449dba7c5e "mm: fix typos in various comments"
+    - bdb137caeae0 "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

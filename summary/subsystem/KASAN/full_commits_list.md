@@ -1,11 +1,5 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5
-- mm-hotfixes-stable: 1 total, 0 (0) series, 1 non-series commits
-  - author/reviewer role stat
-    - maintainer, nobody: 1 commits
-  - full commits list
-    - 22ab0647764c "kasan: unpoison task stack below watermark only in generic mode"
-      - Authored by a maintainer, reviewed by nobody
-      - Link: https://lore.kernel.org/20260916175113.1327454-1-ryabinin.a.a@gmail.com
+- baseline: v7.3-rc5-30-ga243ede718463
+- mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 0 total, 0 (0) series, 0 non-series commits

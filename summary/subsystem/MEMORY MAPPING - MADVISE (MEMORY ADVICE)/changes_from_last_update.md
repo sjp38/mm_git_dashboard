@@ -1,4 +1,4 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -7,19 +7,38 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 13 -> 13 commits (no change)
   - series: 0 (9) -> 0 (9) (no change)
-    - no role, nobody: 5 -> 5 commits (no change)
-    - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, nobody: 5 -> 1 commits
+    - no role, no role : 5 -> 8 commits
+    - no role, reviewer: 2 -> 3 commits
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
     - series "mm/collapse: separate a collapse from its callers", v4. (13)
-      - 21662e2d4867 "mm/collapse: implement MADV_COLLAPSE in madvise.c (12/13)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name"
-        - added "Cc: Nico Pache <nico.pache@linux.dev>"
-        - added "Cc: Usama Arif <usama.arif@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20260916093145.4022188-13-kirill@shutemov.name"
+      - b86ee986de60 "mm/collapse: implement MADV_COLLAPSE in madvise.c (12/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
         - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
+      - 6f28fbdc899e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
+      - 73b89e1141ed "mm/madvise: update is_valid_guard_vma() to use vma_can_merge() (28/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-30-4583d8a23bca@kernel.org
+      - e58dd8de8f75 "mm/vma: introduce vma[_flags]_is_persistent() (29/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-31-4583d8a23bca@kernel.org
+      - 7d5600b30ae3 "mm/madvise: use predicates for madvise(..., MADV_DOFORK) (31/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-33-4583d8a23bca@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

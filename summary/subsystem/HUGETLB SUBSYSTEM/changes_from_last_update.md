@@ -1,30 +1,43 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - 725636c63430 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
-      - Authored by no role player, reviewed by nobody
-      - added "Tested-by: Ackerley Tng <ackerleytng@google.com>"
-      - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 33 -> 33 commits (no change)
-  - series: 5 (23) -> 5 (22)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
+  - series: 5 (22) -> 5 (22) (no change)
+    - no role, nobody: 4 -> 3 commits
+    - no role, no role : 6 -> 7 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 16 -> 16 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 2 -> 2 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - 4d7cc2c27f1e "mm/hugetlb: fix subpool minimum reservation rollback"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Tested-by: Ackerley Tng <ackerleytng@google.com>"
-      - Link: https://lore.kernel.org/20260907132055.26696-1-zhoujinmeng@bytedance.com
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
+      - 24ec847db4c6 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (8/12)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260927025441.741633-9-songmuchun@bytedance.com
+    - 66ff9bfda186 "Documentation/mm: update DAX vmemmap deduplication docs"
+      - Authored by a maintainer, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260927025441.741633-13-songmuchun@bytedance.com
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
+      - 9edf328bee64 "mm: remove hugetlb_inline.h (25/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
+      - 6f28fbdc899e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

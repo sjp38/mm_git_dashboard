@@ -1,49 +1,48 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5
+- baseline: v7.3-rc5-30-ga243ede718463
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 1 (1) series, 0 non-series commits
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v3. (2 commits)
-      - 9700feb22c89 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
+      - eb6c69dd890d "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260926124145.2878520-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20260926124145.2878520-2-donggeunyoo.kernel@gmail.com
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 8 total, 2 (8) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 1 commits
+    - no role, no role : 3 commits
     - no role, reviewer: 2 commits
     - no role, maintainer: 2 commits
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - c0a4a040dc64 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - 26d01dedbadd "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - 230e486f4b28 "mm: make per-VMA locks available universally" (0/7)
+      - 44bb6ac73a5c "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-      - 485de206e89d "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
+      - 4da94bd7a8d6 "mm: add RCU-based VMA lookup helper that waits for writers" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-4-surenb@google.com
-      - 19ae9c1aa154 "mm: remove hugetlb_inline.h" (25/39)
-        - Authored by no role player, reviewed by nobody
+      - 9edf328bee64 "mm: remove hugetlb_inline.h" (25/39)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
-      - af88249f5e1e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
+      - 6f28fbdc899e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-      - 69c27f1a322d "mm/uffd: use predicates for userfaultfd checks" (30/39)
-        - Authored by no role player, reviewed by nobody
+      - 94ef9d53bc6d "mm/uffd: use predicates for userfaultfd checks" (30/39)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-32-4583d8a23bca@kernel.org
-      - dd9c21449ba8 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 99354e29c4f0 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - b51de0aeae5b "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 9f68b9075794 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

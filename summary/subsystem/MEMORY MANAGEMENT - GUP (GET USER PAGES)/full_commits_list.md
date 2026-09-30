@@ -1,4 +1,4 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5
+- baseline: v7.3-rc5-30-ga243ede718463
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -8,45 +8,45 @@
     - no role, no role : 10 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 250a10e9fac0 "mm/gup_test: report actual pinned bytes"
+    - 92fcc5afc5d4 "mm/gup_test: report actual pinned bytes"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260831101304.162867-1-sarthak.sharma@arm.com
     - series "mm: gup: cleanup gup_fast call chain", v3. (2 commits)
-      - 330b60bb0761 "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
+      - d93e815ea344 "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828015542.125576330@ruivo.org
         - Link: https://lore.kernel.org/20260828015542.245315718@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u [1]
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - 0dc3f12369ec "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
+      - 55d6966edb4f "mm: gup: cleanup the gup_fast_*() call chain" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260828015542.334186653@ruivo.org
         - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
-      - 2a3c5b98653e "mm: userland pgtable freeing is RCU-safe now, remove leftover bits" (10/12)
+      - 116614e9f2f1 "mm: userland pgtable freeing is RCU-safe now, remove leftover bits" (10/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-11-31e91065fea4@kernel.org
-      - 8494a5aae440 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs" (19/39)
+      - 995db66f5ed8 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs" (19/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-21-4583d8a23bca@kernel.org
-      - af88249f5e1e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
+      - 6f28fbdc899e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-      - 028d92c39195 "mm/vma: introduce and use vma[_flags]_can_gup()" (38/39)
+      - 70fd34de90fb "mm/vma: introduce and use vma[_flags]_can_gup()" (38/39)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-40-4583d8a23bca@kernel.org
-    - 1c8c319b3f52 "mm/gup_test: safely calculate GUP batch size"
+    - 3c0500d983a7 "mm/gup_test: safely calculate GUP batch size"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260915102524.125758-1-sarthak.sharma@arm.com
-      - 94172dfbfbd2 "tools/lib/mm: move hugepage_settings out of selftests" (3/6)
+      - af666ae48e61 "tools/lib/mm: move hugepage_settings out of selftests" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
-      - c2e46e27ad58 "tools/mm: move gup_test from selftests/mm to tools/mm" (4/6)
+      - c784d6dde8a2 "tools/mm: move gup_test from selftests/mm to tools/mm" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-5-sarthak.sharma@arm.com
-      - ad4c0fafb0ab "tools/mm: make gup_bench a benchmark only tool" (5/6)
+      - 9d5bc79fe349 "tools/mm: make gup_bench a benchmark only tool" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-6-sarthak.sharma@arm.com
-    - d1342f690882 "selftests/mm: add a GUP selftest"
+    - 9c5f15d6b14a "selftests/mm: add a GUP selftest"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

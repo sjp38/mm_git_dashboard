@@ -1,4 +1,4 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5
+- baseline: v7.3-rc5-30-ga243ede718463
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,17 +7,23 @@
     - no role, nobody: 1 commits
     - maintainer, nobody: 2 commits
   - full commits list
-    - 1283d7e635ae "zram: fix idle age_sec underflow in idle_store()"
+    - 91b4ebc8b2b8 "zram: fix idle age_sec underflow in idle_store()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260828083149.45760-1-jiahao.kernel@gmail.com
-    - 9df0e7695072 "zram: remove unreachable kernel_read_file_from_path() return check"
+    - 609f0695dff8 "zram: remove unreachable kernel_read_file_from_path() return check"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260901051335.2202390-1-senozhatsky@chromium.org
     - series "zsmallc: remove old object read API". (2 commits)
-      - 5f56326d4ff3 "zram: convert to SG-list zsmalloc object read API" (0/2)
+      - 78123d832ea3 "zram: convert to SG-list zsmalloc object read API" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260907105739.1793316-1-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/20260907105739.1793316-2-senozhatsky@chromium.org
-- mm-new: 0 total, 0 (0) series, 0 non-series commits
+- mm-new: 1 total, 0 (0) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+  - full commits list
+    - a95bfa41aed3 "zram: fix short reads from block_state"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20260929071846.24829-1-pooyan.azadparvar@gmail.com
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

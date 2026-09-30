@@ -1,92 +1,54 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
-- mm-hotfixes-stable: 1 -> 1 commits (no change)
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
+- mm-hotfixes-stable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+  - dropped commits
+    - 976d5e0ddac8 "mm/vma: predicate setting mmap_prepare VMA fields on new vma alloc"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260923-fix-mmap-prepare-overwrite-v1-1-3b3f1bfcdf5e@kernel.org
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - series "mm/mremap: fix two issues with MREMAP_DONTUNMAP". (2)
-      - 0458b28568dd "mm/mremap: fix locked_vm leak from MREMAP_DONTUNMAP self-merge (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de> "
-        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
-        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - dropped "Cc: Kirill A. Shutemov <kas@kernel.org>"
-        - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-0-6ffb556f8f8b@kernel.org
-        - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-1-6ffb556f8f8b@kernel.org
-      - 6e8ef6dd6367 "mm/mremap: fix locked_vm leak by splitting VMA for MREMAP_DONTUNMAP (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - added "Acked-by: Kiryl Shutsemau (Meta) <kas@kernel.org>"
-        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - dropped "Cc: Kirill A. Shutemov <kas@kernel.org>"
-        - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-2-6ffb556f8f8b@kernel.org
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 38 -> 39 commits
-  - series: 6 (34) -> 5 (28)
-    - no role, nobody: 6 -> 6 commits (no change)
-    - no role, no role : 21 -> 21 commits (no change)
-    - no role, reviewer: 7 -> 8 commits
+- mm-unstable: 39 -> 39 commits (no change)
+  - series: 5 (28) -> 5 (28) (no change)
+    - no role, nobody: 6 -> 3 commits
+    - no role, no role : 21 -> 24 commits
+    - no role, reviewer: 8 -> 8 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - abf2ddb0a425 "mm: move drivers/char/mem.c to mm/char-mem.c"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org"
-      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org
-    - d587a3c78de2 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org"
-      - added "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org"
-      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org
-    - 1d58253eb2f6 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org"
-      - added "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org"
-      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org
-    - 7dd8f780b644 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org"
-      - added "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-4-acc7b5625305@kernel.org"
-      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org
-    - 3bd8788a6d5f "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-5-d4781e84ccfc@kernel.org"
-      - added "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-5-acc7b5625305@kernel.org"
-      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-5-d4781e84ccfc@kernel.org
-    - ef7aef4c454e "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-6-d4781e84ccfc@kernel.org"
-      - added "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org"
-      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-6-d4781e84ccfc@kernel.org
-    - 1de6a762a5cc "mm/vma: don't remove VMA from rmap if pgoff unchanged"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-new -> mm-unstable
-      - added "Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/"
-      - added "Suggested-by: Pan Deng <pan.deng@intel.com>"
-      - dropped "Reported-by: Pan Deng <pan.deng@intel.com>"
-      - dropped "Closes: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/"
-      - Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/
-- mm-new: 1 -> 0 commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
+      - de57d7b9bb36 "mm/vma: tidy up map kernel pages enum values (5/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
+      - 4952d3b80554 "mm/vma: enforce that only kernel-owned mappings may set VMA_IO_BIT (23/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-25-4583d8a23bca@kernel.org
+      - 9edf328bee64 "mm: remove hugetlb_inline.h (25/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
+      - 6f28fbdc899e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
+      - 917ce234cbfd "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS (35/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-37-4583d8a23bca@kernel.org
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, reviewer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

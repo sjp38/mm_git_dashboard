@@ -1,22 +1,22 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc4-70-gfe2ec83746e5 (no change)
+- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
   - changed commits
-    - 32aa89669750 "selftests/mm: cleanup -Wformat issues in hugetlb-mmap"
+    - 9d5de5af9713 "selftests/mm: cleanup -Wformat issues in hugetlb-mmap"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
       - Link: https://lore.kernel.org/20260927162419.820609-1-cmllamas@google.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 87 -> 87 commits (no change)
-  - series: 11 (65) -> 10 (60)
-    - no role, nobody: 13 -> 12 commits
-    - no role, no role : 31 -> 32 commits
+  - series: 10 (60) -> 10 (60) (no change)
+    - no role, nobody: 12 -> 12 commits (no change)
+    - no role, no role : 32 -> 32 commits (no change)
     - no role, reviewer: 19 -> 19 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
@@ -24,47 +24,60 @@
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - abf2ddb0a425 "mm: move drivers/char/mem.c to mm/char-mem.c"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-1-acc7b5625305@kernel.org"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-0-acc7b5625305@kernel.org"
-      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org
-    - d587a3c78de2 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org"
-      - added "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-2-acc7b5625305@kernel.org"
-      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org
-    - 1d58253eb2f6 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org"
-      - added "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-3-acc7b5625305@kernel.org"
-      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org
-    - ef7aef4c454e "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-6-d4781e84ccfc@kernel.org"
-      - added "Cc: Mike Rapoport <rppt@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260908-map-private-dev-zero-v2-6-acc7b5625305@kernel.org"
-      - dropped "Cc: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-6-d4781e84ccfc@kernel.org
-    - series "mm: make userland page table freeing RCU-safe", v5. (12)
-      - ddffa8ab4ef7 "mm: change the contract for free_pgtables(), update docs (11/12)"
-        - Authored by no role player, reviewed by no role player
+    - 66ff9bfda186 "Documentation/mm: update DAX vmemmap deduplication docs"
+      - Authored by a maintainer, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20260927025441.741633-13-songmuchun@bytedance.com
+    - series "kselftest: mm: fix intermittent failure khugepaged test", v4. (2)
+      - 9a783a39568e "kselftest: mm: return fail when child test result is fail in khugepaged (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-0-2169c18f2576@arm.com"
+        - added "Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-1-2169c18f2576@arm.com"
+        - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
         - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260923-fix_khugepagd_fail-v3-1-b387e92fe1a9@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260923-fix_khugepagd_fail-v3-0-b387e92fe1a9@arm.com"
         - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-0-2169c18f2576@arm.com
+        - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-1-2169c18f2576@arm.com
+      - d0adc3171880 "kselftest: mm: fix intermittent failure khugepaged test (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-2-2169c18f2576@arm.com"
+        - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20260923-fix_khugepagd_fail-v3-2-b387e92fe1a9@arm.com"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-2-2169c18f2576@arm.com
     - series "kselftest: mm: fix some failure of split_huge_page_test", v8. (4)
-      - 9ce3ee00b404 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
+      - 2ee3b95e0749 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Tested-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
         - Link: https://lore.kernel.org/20260924-fix_split-v8-2-cba7359d882a@arm.com
-- mm-new: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+      - 8cdda6483188 "kselftest: mm: integrate huge page checks (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Tested-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20260924-fix_split-v8-3-cba7359d882a@arm.com
+- mm-new: 1 -> 3 commits
+  - series: 0 (0) -> 0 (2)
     - no role, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 0 -> 2 commits
+  - new commits
+    - series "mm/damon: introduce damos quota goal target metric complement flag". (8)
+      - f81638d54b2b "Docs/mm/damon/design: document damos quota goal complement flag (6/8)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260929080113.41708-7-sj@kernel.org
+      - 2f875b8c38a0 "Docs/admin-guide/mm/damon/usage: update for quota goal complement file (7/8)"
+        - Authored by a maintainer, reviewed by nobody
+        - Link: https://lore.kernel.org/20260929080113.41708-8-sj@kernel.org
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -1,59 +1,56 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5
+- baseline: v7.3-rc5-30-ga243ede718463
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 8 total, 0 (6) series, 2 non-series commits
+- mm-unstable: 12 total, 1 (10) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 3 commits
+    - no role, no role : 4 commits
     - no role, reviewer: 1 commits
-    - no role, maintainer: 1 commits
+    - no role, maintainer: 5 commits
     - reviewer, no role : 2 commits
   - full commits list
-    - 7dd8f780b644 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
+    - b8ba1bdf9907 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org
-      - ef7a598f7d8d "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/17)
+      - 854217dc9fbf "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-8-bb68b6a21869@nvidia.com
-      - 5ce74a5d6201 "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
+      - a615dcf16b3f "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-      - 50bc14d24c0f "treewide: remove folio_set/clear_private() usage" (10/17)
+      - 0367c08e684a "treewide: remove folio_set/clear_private() usage" (10/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-11-bb68b6a21869@nvidia.com
-      - 2f3e9ac827db "treewide: remove PagePrivate() and PG_private from comments and docs" (15/17)
+      - 1216e42c072f "treewide: remove PagePrivate() and PG_private from comments and docs" (15/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com
-      - 19ae9c1aa154 "mm: remove hugetlb_inline.h" (25/39)
-        - Authored by no role player, reviewed by nobody
+      - 9edf328bee64 "mm: remove hugetlb_inline.h" (25/39)
+        - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
-    - dc6b8852cf99 "mm: filemap: move lruvec accounting outside the xarray lock"
+    - 445da827e5e2 "mm: filemap: move lruvec accounting outside the xarray lock"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260916125122.2696271-1-usama.arif@linux.dev
-      - fc0e75e109ad "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - 771da70595ad "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-- mm-new: 4 total, 1 (1) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 4 commits
-  - full commits list
-      - 1a7155569b42 "mm/truncate: align truncation boundaries to mapping minimum folio order" (None/None)
+    - series "mm/truncate: fix data loss when truncating straddling large folios", v5. (4 commits)
+      - d516caab6183 "mm/truncate: align truncation boundaries to mapping minimum folio order" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-2-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/a638a8fb-c184-4069-ae33-379ec12cd514@huaweicloud.com/ [1]
         - Link: https://lore.kernel.org/linux-mm/5a454f2a-8ae2-491d-b903-750c945cfb9d@huaweicloud.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/5pthbyxtn7q6xi4fmkofvksmcjzfnujcw2g4fxmxjzfin5pbgf@zui3vcimb4cv/ [3]
-    - 7cee9bd7046b "mm/truncate: look up the end-edge straddler by index"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260928120833.3440834-3-yi.zhang@huaweicloud.com
-      - Link: https://lore.kernel.org/linux-mm/DLGXT0ERY79Z.3C5DYVJVX6S9Z@nvidia.com/
-    - 48bb33348b77 "mm/truncate: fix data loss when splitting straddling large folios fails"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
-      - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
-    - ead972d3767c "mm/truncate: clarify return value of truncate_inode_partial_folio()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20260928120833.3440834-5-yi.zhang@huaweicloud.com
+      - fbdecb775aef "mm/truncate: look up the end-edge straddler by index" (1/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260928120833.3440834-3-yi.zhang@huaweicloud.com
+        - Link: https://lore.kernel.org/linux-mm/DLGXT0ERY79Z.3C5DYVJVX6S9Z@nvidia.com/
+      - de6c26012187 "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
+        - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
+      - babcaeecf042 "mm/truncate: clarify return value of truncate_inode_partial_folio()" (3/4)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20260928120833.3440834-5-yi.zhang@huaweicloud.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
