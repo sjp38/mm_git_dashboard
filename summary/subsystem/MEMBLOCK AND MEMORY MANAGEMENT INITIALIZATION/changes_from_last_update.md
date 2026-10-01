@@ -1,4 +1,4 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
+- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-30-ga243ede718463 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -11,28 +11,24 @@
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
-      - 6a86e87a6c47 "mm/sparse-vmemmap: set compound page order for device DAX (5/12)"
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
+      - c8efca7cb83f "mm/sparse-vmemmap: set compound page order for device DAX (5/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260927025441.741633-7-songmuchun@bytedance.com
-      - c6da9e9e24d6 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (10/12)"
+        - added "Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com"
+        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
+        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
+        - dropped "Link: https://lore.kernel.org/20260927025441.741633-7-songmuchun@bytedance.com"
+        - Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com
+      - b808ccf3cb55 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (11/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260927025441.741633-11-songmuchun@bytedance.com
-- mm-new: 0 -> 2 commits
-  - series: 0 (0) -> 0 (2)
-    - no role, no role : 0 -> 2 commits
-  - new commits
-    - series "mm: Unify device DAX and HugeTLB vmemmap population paths", v3. (6)
-      - 26b5441ecdfc "mm/sparse-vmemmap: drop Device DAX-specific population path (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260929053231.66085-4-songmuchun@bytedance.com
-      - 1add79552d36 "mm/mm_init: add zone mismatch warning during page init (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
+        - added "Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com"
+        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
+        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
+        - dropped "Link: https://lore.kernel.org/20260927025441.741633-11-songmuchun@bytedance.com"
+        - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
+- mm-new: 2 -> 2 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, no role : 2 -> 2 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

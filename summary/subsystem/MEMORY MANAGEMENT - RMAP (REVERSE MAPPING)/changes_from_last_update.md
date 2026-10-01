@@ -1,4 +1,4 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
+- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-30-ga243ede718463 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -13,12 +13,14 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - 6f28fbdc899e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
+    - bf2b8caff0ce "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org"
+      - added "Signed-off-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org"
+      - dropped "Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/"
+      - dropped "Signed-off-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

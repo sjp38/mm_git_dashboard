@@ -1,4 +1,4 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
+- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-30-ga243ede718463 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -7,17 +7,9 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)
   - series: 1 (5) -> 1 (5) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 2 -> 3 commits
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - 70a8fd31a320 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (32/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-34-4583d8a23bca@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

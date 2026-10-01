@@ -1,4 +1,4 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
+- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-30-ga243ede718463 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -8,36 +8,53 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 33 -> 33 commits (no change)
   - series: 5 (22) -> 5 (22) (no change)
-    - no role, nobody: 4 -> 3 commits
-    - no role, no role : 6 -> 7 commits
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 16 -> 16 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, no role : 2 -> 2 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+    - maintainer, no role : 2 -> 3 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
-      - 24ec847db4c6 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (8/12)"
-        - Authored by a maintainer, reviewed by a reviewer
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
+      - d21f2792f6cb "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (0/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260513130542.35604-1-songmuchun@bytedance.com/ [1]"
+        - added "Link: https://lore.kernel.org/20260930140627.57431-1-songmuchun@bytedance.com"
+        - added "Link: https://lore.kernel.org/20260930140627.57431-2-songmuchun@bytedance.com"
         - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
+        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
+        - dropped "Link: https://lore.kernel.org/20260927025441.741633-1-songmuchun@bytedance.com"
+        - dropped "Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]"
+        - dropped "Link: https://lore.kernel.org/20260927025441.741633-2-songmuchun@bytedance.com"
         - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260927025441.741633-9-songmuchun@bytedance.com
-    - 66ff9bfda186 "Documentation/mm: update DAX vmemmap deduplication docs"
+        - Link: https://lore.kernel.org/20260930140627.57431-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260930140627.57431-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+      - 422162b19765 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (8/12)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260930140627.57431-9-songmuchun@bytedance.com"
+        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
+        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
+        - dropped "Link: https://lore.kernel.org/20260927025441.741633-9-songmuchun@bytedance.com"
+        - Link: https://lore.kernel.org/20260930140627.57431-9-songmuchun@bytedance.com
+      - 38834ff7b960 "powerpc/mm: switch device DAX to shared tail vmemmap pages (9/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20260930140627.57431-10-songmuchun@bytedance.com"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
+        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
+        - dropped "Link: https://lore.kernel.org/20260927025441.741633-10-songmuchun@bytedance.com"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260930140627.57431-10-songmuchun@bytedance.com
+    - be422bb72ed9 "Documentation/mm: update DAX vmemmap deduplication docs"
       - Authored by a maintainer, reviewed by no role player
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20260927025441.741633-13-songmuchun@bytedance.com
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - 9edf328bee64 "mm: remove hugetlb_inline.h (25/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
-      - 6f28fbdc899e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
+      - added "Link: https://lore.kernel.org/20260930140627.57431-13-songmuchun@bytedance.com"
+      - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
+      - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
+      - dropped "Link: https://lore.kernel.org/20260927025441.741633-13-songmuchun@bytedance.com"
+      - Link: https://lore.kernel.org/20260930140627.57431-13-songmuchun@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

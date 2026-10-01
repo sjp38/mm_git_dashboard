@@ -2,17 +2,16 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
+    - no role, reviewer: 2 commits
   - full commits list
-    - series "mm/mremap: fix two issues with MREMAP_DONTUNMAP". (2 commits)
-      - 98a6b57d33e6 "mm/mremap: fix locked_vm leak from MREMAP_DONTUNMAP self-merge" (0/2)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-0-6ffb556f8f8b@kernel.org
-        - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-1-6ffb556f8f8b@kernel.org
-      - 45b45bec90b2 "mm/mremap: fix locked_vm leak by splitting VMA for MREMAP_DONTUNMAP" (1/2)
+    - series "mm/mremap: fix two issues with MREMAP_DONTUNMAP", v2. (2 commits)
+      - 00b2591b9f04 "mm/mremap: fix locked_vm leak from MREMAP_DONTUNMAP self-merge" (0/2)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-2-6ffb556f8f8b@kernel.org
+        - Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-0-f388985a0f0a@kernel.org
+        - Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-1-f388985a0f0a@kernel.org
+      - 863af35b7500 "mm/mremap: fix locked_vm leak by splitting VMA for MREMAP_DONTUNMAP" (1/2)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-2-f388985a0f0a@kernel.org
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 39 total, 5 (28) series, 11 non-series commits
   - author/reviewer role stat
@@ -24,133 +23,132 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm, swap: don't spin on a bad swap entry", v3. (2 commits)
-      - 26d01dedbadd "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
+      - 683209996873 "mm, swap: distinguish a malformed swap entry from a dying device" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
         - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - 44bb6ac73a5c "mm: make per-VMA locks available universally" (0/7)
+      - 28a88d548b96 "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-    - 3cfffab519de "mm: move drivers/char/mem.c to mm/char-mem.c"
+    - 6dd3f2fdd94c "mm: move drivers/char/mem.c to mm/char-mem.c"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org
-    - 2ea88d511d82 "mm: implement file_is_dev_zero() to uniquely identify /dev/zero"
+    - 15b442f81d5d "mm: implement file_is_dev_zero() to uniquely identify /dev/zero"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org
-    - ebc5bba855c1 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous"
+    - 2cdf28a4a2ac "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org
-    - b8ba1bdf9907 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
+    - 3516fe4a9a3d "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org
-    - 5e6d2a1bb3eb "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon"
+    - 6f4b2261e40c "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-5-d4781e84ccfc@kernel.org
-    - b0668cbc1e51 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests"
+    - 015ea1251324 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-6-d4781e84ccfc@kernel.org
-    - a82d3d85c508 "mm/nommu: reject wrapping ranges in access_remote_vm()"
+    - 628b67f70483 "mm/nommu: reject wrapping ranges in access_remote_vm()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260909064231.18693-1-tasos.papagiannnis@gmail.com
-    - 606161fe9df3 "tools/testing/vma: cover hole filling through __mmap_region()"
+    - 2eb86561bfec "tools/testing/vma: cover hole filling through __mmap_region()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/178886112560.138404.17741948638665342936.vma-v2@tychen.cc
     - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39 commits)
-      - b38a7946e752 "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get" (0/39)
+      - 282d545c4b55 "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get" (0/39)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-0-4583d8a23bca@kernel.org
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-1-4583d8a23bca@kernel.org
-      - a4120b8d149b "mm/vma: introduce and use vma_[flags_]can_merge()" (1/39)
+      - 45471ebf10f4 "mm/vma: introduce and use vma_[flags_]can_merge()" (1/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-3-4583d8a23bca@kernel.org
-      - b1c63cd47a31 "mm: consistently validate VMA state after mmap[_prepare] hooks" (2/39)
+      - 04aac64a251e "mm: consistently validate VMA state after mmap[_prepare] hooks" (2/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-4-4583d8a23bca@kernel.org
-      - 7764867fe7bd "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma" (3/39)
+      - 362014e9cb09 "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma" (3/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-5-4583d8a23bca@kernel.org
-      - de57d7b9bb36 "mm/vma: tidy up map kernel pages enum values" (5/39)
+      - 81b7ecaf0d77 "mm/vma: tidy up map kernel pages enum values" (5/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
-      - be16eeb04d3d "mm: add mmap action for discontiguous kernel page mapping" (6/39)
+      - 88040d7ca7e4 "mm: add mmap action for discontiguous kernel page mapping" (6/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-8-4583d8a23bca@kernel.org
-      - 3eb6def8e13f "mm/vma: add vma[_flags]_is_kernel_owned() predicates" (13/39)
+      - 9bc4b5348051 "mm/vma: add vma[_flags]_is_kernel_owned() predicates" (13/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-15-4583d8a23bca@kernel.org
-      - b2a0a6f34d20 "mm/vma: only allow mmap to clear VMA_MAYWRITE_BIT if kernel-owned" (14/39)
+      - 598c1fa9df41 "mm/vma: only allow mmap to clear VMA_MAYWRITE_BIT if kernel-owned" (14/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-16-4583d8a23bca@kernel.org
-      - fe7f1c86c69d "mm/vma: add and use vma_[flags]_is_fixed_mapping" (15/39)
+      - e295a16de32f "mm/vma: add and use vma_[flags]_is_fixed_mapping" (15/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-17-4583d8a23bca@kernel.org
-      - 36f5f40b1444 "mm/mlock: clear VMA_LOCKED_MASK over mmap callback" (21/39)
+      - 52af0638a377 "mm/mlock: clear VMA_LOCKED_MASK over mmap callback" (21/39)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-23-4583d8a23bca@kernel.org
-      - afec1cda909b "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (22/39)
+      - 2d2c034412fa "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (22/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-24-4583d8a23bca@kernel.org
-      - 4952d3b80554 "mm/vma: enforce that only kernel-owned mappings may set VMA_IO_BIT" (23/39)
+      - 10467d619e92 "mm/vma: enforce that only kernel-owned mappings may set VMA_IO_BIT" (23/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-25-4583d8a23bca@kernel.org
-      - 9d3c45f4392b "mm: remove VMA_IO_BIT check in vma[_flags]_is_kernel_owned()" (24/39)
+      - 3f1de480cb55 "mm: remove VMA_IO_BIT check in vma[_flags]_is_kernel_owned()" (24/39)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-26-4583d8a23bca@kernel.org
-      - 9edf328bee64 "mm: remove hugetlb_inline.h" (25/39)
+      - 8452d5aadb2c "mm: remove hugetlb_inline.h" (25/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
-      - 6f28fbdc899e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
+      - 8d9cb659cbf2 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-      - 917ce234cbfd "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS" (35/39)
+      - 8cab8abf01e1 "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS" (35/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-37-4583d8a23bca@kernel.org
-    - 1a6d6fabffb3 "proc/task_mmu: handle special PMDs in clear_refs and pagemap"
+    - 8c110948d310 "proc/task_mmu: handle special PMDs in clear_refs and pagemap"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260912122822.3348978-1-gourry@gourry.net
-    - 36c526d5e657 "mm: mincore: use per-vma lock during page table walk"
+    - e46c0d6686ed "mm: mincore: use per-vma lock during page table walk"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260916043153.2631696-1-wangkefeng.wang@huawei.com
     - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3 commits)
-      - cb99344b7229 "mm/vma: const-ify vma_assert_stabilised() and associated functions" (0/3)
+      - 1d4b9a2baec8 "mm/vma: const-ify vma_assert_stabilised() and associated functions" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-0-5c22314a72e7@kernel.org
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-1-5c22314a72e7@kernel.org
-      - 99354e29c4f0 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - fb999913e57d "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 9f68b9075794 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 779323b34ed1 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
     - series "read proc/pid/smaps_rollup under per-vma lock", v5. (7 commits)
-      - 0887f49a1537 "proc/task_mmu: remove unnecessary helpers" (0/7)
+      - 8dd82df3705b "proc/task_mmu: remove unnecessary helpers" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918153318.758387-1-surenb@google.com
         - Link: https://lore.kernel.org/20260918153318.758387-2-surenb@google.com
-      - 6ca88ac9f6e1 "proc/task_mmu: remove unnecessary inlines in function definitions" (1/7)
+      - 96b9be57deca "proc/task_mmu: remove unnecessary inlines in function definitions" (1/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918153318.758387-3-surenb@google.com
-      - be417124eb81 "proc-task_mmu-remove-unnecessary-inlines-in-function-definitions-fix" (2/7)
+      - 91383ee5f050 "proc-task_mmu-remove-unnecessary-inlines-in-function-definitions-fix" (2/7)
         - Authored by a maintainer, reviewed by nobody
-      - cd01c5ddf0c2 "proc/task_mmu: clarify shmem mapping walk conditions in smap_gather_stats()" (3/7)
+      - 62f0a75f268a "proc/task_mmu: clarify shmem mapping walk conditions in smap_gather_stats()" (3/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918153318.758387-4-surenb@google.com
-      - 9ce74bcebdec "proc/task_mmu: remove special-casing of smap_gather_stats() start parameter" (4/7)
+      - cbb57afc4944 "proc/task_mmu: remove special-casing of smap_gather_stats() start parameter" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918153318.758387-5-surenb@google.com
-      - 03ff35e5f741 "proc/task_mmu: change proc_get_vma() to stop returning gate VMA at the end" (5/7)
+      - de644af116aa "proc/task_mmu: change proc_get_vma() to stop returning gate VMA at the end" (5/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918153318.758387-6-surenb@google.com
-      - 3732c0d2de0f "proc/task_mmu: read proc/pid/smaps_rollup under per-vma lock" (6/7)
+      - b5eec1c421e9 "proc/task_mmu: read proc/pid/smaps_rollup under per-vma lock" (6/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918153318.758387-7-surenb@google.com
         - Link: https://github.com/paulmckrcu/proc-mmap_sem-test [1]
-    - 94f2a977e5aa "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+    - bf2b8caff0ce "mm/vma: don't remove VMA from rmap if pgoff unchanged"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/
+      - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

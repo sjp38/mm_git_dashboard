@@ -11,33 +11,32 @@
     - maintainer, no role : 1 commits
   - full commits list
     - series "mm: Unconditional per-VMA locks and cleanups", v7. (7 commits)
-      - 44bb6ac73a5c "mm: make per-VMA locks available universally" (0/7)
+      - 28a88d548b96 "mm: make per-VMA locks available universally" (0/7)
         - Authored by a maintainer, reviewed by no role player
         - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
         - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-    - f58f4ae5bcda "mm/rmap: remove stale hugetlb check in try_to_unmap_one"
+    - fe9b214e54ba "mm/rmap: remove stale hugetlb check in try_to_unmap_one"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260831082849.3573957-1-dev.jain@arm.com
-    - a322f9617718 "mm/page_vma_mapped: guard check_pmd() with CONFIG_TRANSPARENT_HUGEPAGE"
+    - b42048a8822f "mm/page_vma_mapped: guard check_pmd() with CONFIG_TRANSPARENT_HUGEPAGE"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260624082359.2869-1-richard.weiyang@gmail.com
       - Link: https://download.01.org/0day-ci/archive/20260624/202606240042.ffPsEXVc-lkp@intel.com/config [1]
-      - d22c6f8aaa82 "mm/rmap: use folio_page_swap_entry() in ttu_anon_swapbacked_folio()" (3/8)
+      - 47db3581650a "mm/rmap: use folio_page_swap_entry() in ttu_anon_swapbacked_folio()" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-3-ee6d01dfa5e1@columbia.edu
-      - afec1cda909b "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (22/39)
+      - 2d2c034412fa "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (22/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-24-4583d8a23bca@kernel.org
-      - 6f28fbdc899e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
+      - 8d9cb659cbf2 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-      - 99354e29c4f0 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - fb999913e57d "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-    - 94f2a977e5aa "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+    - bf2b8caff0ce "mm/vma: don't remove VMA from rmap if pgoff unchanged"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org
-      - Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/
+      - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

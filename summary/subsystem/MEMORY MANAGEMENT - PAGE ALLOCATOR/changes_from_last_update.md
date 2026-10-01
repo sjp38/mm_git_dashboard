@@ -1,13 +1,14 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
+- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-30-ga243ede718463 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - d173d2c96f3e "mm: page_alloc: make defrag_mode retries follow the promoted order"
+  - changed commits
+    - b91de17faaff "mm: page_alloc: make defrag_mode retries follow the promoted order"
       - Authored by no role player, reviewed by nobody
+      - added "Cc: <stable@vger.kernel.org>"
       - Link: https://lore.kernel.org/20260929174553.175333-1-kirill@shutemov.name
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

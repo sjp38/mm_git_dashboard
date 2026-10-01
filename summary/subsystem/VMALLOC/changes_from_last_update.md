@@ -1,4 +1,4 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
+- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-30-ga243ede718463 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -6,25 +6,13 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 15 commits
-  - series: 2 (9) -> 3 (11)
+- mm-unstable: 15 -> 15 commits (no change)
+  - series: 3 (11) -> 3 (11) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 9 -> 11 commits
+    - no role, no role : 11 -> 11 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/vmalloc: fix vmalloc_dump_obj VA lookup", v4. (2)
-      - f1eb8a4e715f "mm/vmalloc: fix vmalloc_dump_obj address alignment for last-page lookups (0/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-0-6f288a431edc@linux.dev
-        - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-1-6f288a431edc@linux.dev
-      - e046ae9e9478 "mm/vmalloc: fix vmalloc_dump_obj cross-zone VA lookup (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260928-vmalloc_dump_obj-v4-2-6f288a431edc@linux.dev
-- mm-new: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, no role : 2 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

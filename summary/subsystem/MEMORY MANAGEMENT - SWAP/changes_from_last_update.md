@@ -1,4 +1,4 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
+- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-30-ga243ede718463 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -15,16 +15,13 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - 6f28fbdc899e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-- mm-new: 1 -> 1 commits (no change)
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
+  - new commits
+    - 5b0e8ea931a9 "mm: make swapoff interruptible when unusing mms/shmem"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

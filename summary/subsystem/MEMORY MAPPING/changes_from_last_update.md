@@ -1,52 +1,56 @@
-- baseline: v7.3-rc4-70-gfe2ec83746e5 -> v7.3-rc5-30-ga243ede718463
-- mm-hotfixes-stable: 1 -> 0 commits
+- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-30-ga243ede718463 (no change)
+- mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-  - dropped commits
-    - 976d5e0ddac8 "mm/vma: predicate setting mmap_prepare VMA fields on new vma alloc"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260923-fix-mmap-prepare-overwrite-v1-1-3b3f1bfcdf5e@kernel.org
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 2 commits
+  - changed commits
+    - series "mm/mremap: fix two issues with MREMAP_DONTUNMAP", v2. (2)
+      - 00b2591b9f04 "mm/mremap: fix locked_vm leak from MREMAP_DONTUNMAP self-merge (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-0-f388985a0f0a@kernel.org"
+        - added "Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-1-f388985a0f0a@kernel.org"
+        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+        - added "Tested-by: Anirudh Srinivasan <asrinivasan@oss.tenstorrent.com>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-1-6ffb556f8f8b@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-0-6ffb556f8f8b@kernel.org"
+        - dropped "Reviewed-by: Pedro Falcato <pfalcato@suse.de> "
+        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: "Vlastimil Babka (SUSE)" <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-0-f388985a0f0a@kernel.org
+        - Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-1-f388985a0f0a@kernel.org
+      - 863af35b7500 "mm/mremap: fix locked_vm leak by splitting VMA for MREMAP_DONTUNMAP (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-2-f388985a0f0a@kernel.org"
+        - added "Tested-by: Anirudh Srinivasan <asrinivasan@oss.tenstorrent.com>"
+        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
+        - added "Cc: Liam R. Howlett <liam@infradead.org>"
+        - dropped "Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-2-6ffb556f8f8b@kernel.org"
+        - dropped "Cc: Liam Howlett <liam@infradead.org>"
+        - dropped "Cc: "Vlastimil Babka (SUSE)" <vbabka@kernel.org>"
+        - Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-2-f388985a0f0a@kernel.org
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 39 -> 39 commits (no change)
   - series: 5 (28) -> 5 (28) (no change)
-    - no role, nobody: 6 -> 3 commits
-    - no role, no role : 21 -> 24 commits
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 24 -> 24 commits (no change)
     - no role, reviewer: 8 -> 8 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - de57d7b9bb36 "mm/vma: tidy up map kernel pages enum values (5/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
-        - dropped "Cc: Gregory Price <gourry@gourry.net>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
-      - 4952d3b80554 "mm/vma: enforce that only kernel-owned mappings may set VMA_IO_BIT (23/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-25-4583d8a23bca@kernel.org
-      - 9edf328bee64 "mm: remove hugetlb_inline.h (25/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
-      - 6f28fbdc899e "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-      - 917ce234cbfd "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS (35/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-37-4583d8a23bca@kernel.org
+    - bf2b8caff0ce "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org"
+      - added "Signed-off-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/"
+      - dropped "Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org"
+      - dropped "Signed-off-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
