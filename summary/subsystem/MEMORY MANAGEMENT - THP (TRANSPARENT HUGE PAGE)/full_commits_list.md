@@ -4,237 +4,237 @@
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-unstable: 68 total, 9 (60) series, 8 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 4 commits
+    - no role, nobody: 3 commits
     - no role, no role : 6 commits
-    - no role, reviewer: 53 commits
+    - no role, reviewer: 54 commits
     - no role, maintainer: 2 commits
     - reviewer, no role : 1 commits
     - reviewer, reviewer: 2 commits
   - full commits list
-    - 9b0d79114710 "selftests/mm: khugepaged: remove str_dup() usage"
+    - aaeca9aae94c "selftests/mm: khugepaged: remove str_dup() usage"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
       - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
     - series "mm: khugepaged: fix tracepoint UAF", v5. (3 commits)
-      - 417cfb5a5621 "mm: khugepaged: fix swap entry value to folio_pfn()" (0/3)
+      - a6ed4552e77a "mm: khugepaged: fix swap entry value to folio_pfn()" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260909025804.3233645-1-vernon2gm@gmail.com
         - Link: https://lore.kernel.org/20260909025804.3233645-2-vernon2gm@gmail.com
-      - c114ca146c9f "mm: khugepaged: fix folio is used after pte_unmap_unlock()" (1/3)
+      - c5f29ecac03c "mm: khugepaged: fix folio is used after pte_unmap_unlock()" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260909025804.3233645-3-vernon2gm@gmail.com
-      - 9a9d5ca6916a "mm: khugepaged: fix folio is used after folio_put/unlock()" (2/3)
+      - 1e3d476b89a0 "mm: khugepaged: fix folio is used after folio_put/unlock()" (2/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260909025804.3233645-4-vernon2gm@gmail.com
     - series "mm: reject zone device folios in more folio walkers", v2. (3 commits)
-      - 33ec4fba3e58 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd()" (0/3)
+      - 9a46d797f06c "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd()" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260817220810.1175596-2-gourry@gourry.net
-    - 2f276d4166a6 "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
+    - f4ddef22e483 "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
     - series "Fix deferred_split_isolate() and drop the split workaround", v2. (2 commits)
-      - 5b3a4f3922d7 "mm/huge_memory: do not touch frozen folios in deferred_split_isolate()" (0/2)
+      - dd8332301be0 "mm/huge_memory: do not touch frozen folios in deferred_split_isolate()" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260831091514.1879786-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260831091514.1879786-2-kirill@shutemov.name
-      - d00567dac962 "mm/huge_memory: dequeue the deferred split after the split freeze" (1/2)
+      - 4c6f070bea5a "mm/huge_memory: dequeue the deferred split after the split freeze" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260831091514.1879786-3-kirill@shutemov.name
-    - 341a3881f83d "selftests/mm: remove unreachable returns after ksft exit helpers"
+    - 8cf0cc5fd15f "selftests/mm: remove unreachable returns after ksft exit helpers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
-    - 81fb64ee6c5b "mm/huge_memory: fix various coding style warnings"
+    - 59731e1e59e8 "mm/huge_memory: fix various coding style warnings"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260903092200.88910-1-christosskarlos.kernel@gmail.com
-      - 7259849e901b "mm/huge_memory: add a comment to the open-coded swap entry" (2/8)
+      - 801179fe4bc6 "mm/huge_memory: add a comment to the open-coded swap entry" (2/8)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-2-ee6d01dfa5e1@columbia.edu
-    - 542c1f972351 "mm/huge_memory: add folio_reset_partially_mapped()"
+    - 768c50236fd0 "mm/huge_memory: add folio_reset_partially_mapped()"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908132821.1517475-1-kirill@shutemov.name
     - series "mm: make userland page table freeing RCU-safe", v5. (12 commits)
-      - 1b620bead36f "mm/khugepaged: deposit a newly allocated page table on collapse" (0/12)
+      - c2644c2c9594 "mm/khugepaged: deposit a newly allocated page table on collapse" (0/12)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-0-31e91065fea4@kernel.org
         - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-1-31e91065fea4@kernel.org
     - series "mm/collapse: separate a collapse from its callers", v4. (13 commits)
-      - 5951bed0c3a4 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse()" (0/13)
+      - 662f723acb11 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse()" (0/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260928100630.21870-2-kirill@shutemov.name
-      - 24f139d5733b "mm/khugepaged: count collapses where khugepaged makes them" (1/13)
+      - d8e8de586bde "mm/khugepaged: count collapses where khugepaged makes them" (1/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-3-kirill@shutemov.name
-      - 28ea4168cf19 "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes" (2/13)
+      - c7734acf1c97 "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes" (2/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-4-kirill@shutemov.name
-      - e5ee527527e5 "mm/collapse: add collapse.h for the collapse interface" (3/13)
+      - 3b28f9956d00 "mm/collapse: add collapse.h for the collapse interface" (3/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-5-kirill@shutemov.name
-      - 7b32c0158be7 "mm/collapse: state what a collapse may do in the policy" (4/13)
+      - 3f1613973d5b "mm/collapse: state what a collapse may do in the policy" (4/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-6-kirill@shutemov.name
-      - 3a20dd682dff "mm/collapse: drop the collapse_possible() wrapper" (5/13)
+      - 378e6d915aa4 "mm/collapse: drop the collapse_possible() wrapper" (5/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-7-kirill@shutemov.name
-      - 82168ec0a421 "mm/collapse: name the per-table scan reset for what it resets" (6/13)
+      - 7010a488a77a "mm/collapse: name the per-table scan reset for what it resets" (6/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-8-kirill@shutemov.name
-      - 51addb25e101 "mm/collapse: call collapse_file() from collapse_single_pmd()" (7/13)
+      - e6f88c38691e "mm/collapse: call collapse_file() from collapse_single_pmd()" (7/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-9-kirill@shutemov.name
-      - 56f8026b1e2e "mm/collapse: separate scanning a PTE table from collapsing it" (8/13)
+      - 852a54ed1c5d "mm/collapse: separate scanning a PTE table from collapsing it" (8/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-10-kirill@shutemov.name
-      - d715057ae980 "mm/collapse: open-code collapse_single_pmd() in its two callers" (9/13)
+      - 629bb91745ff "mm/collapse: open-code collapse_single_pmd() in its two callers" (9/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-11-kirill@shutemov.name
-      - b282f9278c6c "mm/collapse: work out the orders a VMA allows once per VMA" (10/13)
+      - 9f49b5e1dc8a "mm/collapse: work out the orders a VMA allows once per VMA" (10/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-12-kirill@shutemov.name
-      - 5a8735d4eee3 "mm/collapse: declare the collapse interface in collapse.h" (11/13)
+      - d61162d14e65 "mm/collapse: declare the collapse interface in collapse.h" (11/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-13-kirill@shutemov.name
-      - ee3950cb06a5 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (12/13)
+      - 461132911db5 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (12/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
-      - cfb421fc6a5d "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
+      - 2a52a508c8f0 "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-      - a0ca12e5c460 "mm/huge_memory: fix rejection of swap cache folios with a mapping" (1/17)
+      - 96b806ad99d3 "mm/huge_memory: fix rejection of swap cache folios with a mapping" (1/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-2-ba1b4ba72c6f@tencent.com
-      - c61eeb18fe2e "mm/huge_memory: invert folio_ref_freeze() check to reduce indentation" (2/17)
+      - 1cb57d5e20ce "mm/huge_memory: invert folio_ref_freeze() check to reduce indentation" (2/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-3-ba1b4ba72c6f@tencent.com
-      - c816e2a30acd "mm/huge_memory: split the routine for splitting anon and file folio" (3/17)
+      - d9c450da2902 "mm/huge_memory: split the routine for splitting anon and file folio" (3/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-4-ba1b4ba72c6f@tencent.com
-      - 72cb569d71c3 "mm/huge_memory: rename __split_unmapped_folio() to __split_frozen_folio()" (4/17)
+      - ab685eb979ce "mm/huge_memory: rename __split_unmapped_folio() to __split_frozen_folio()" (4/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-5-ba1b4ba72c6f@tencent.com
-      - 0ceb71fbd1e2 "mm/huge_memory: consolidate irq and locking for folio split" (5/17)
+      - 002df20df840 "mm/huge_memory: consolidate irq and locking for folio split" (5/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-6-ba1b4ba72c6f@tencent.com
-      - 6a5444188f2a "mm/huge_memory: move EOF trimming into the file split helper" (6/17)
+      - 3b570a3f04a0 "mm/huge_memory: move EOF trimming into the file split helper" (6/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-7-ba1b4ba72c6f@tencent.com
-      - 4bdd8e3bdfd3 "mm/huge_memory: move unmap and remap into the split helpers" (7/17)
+      - 5f9a5463554c "mm/huge_memory: move unmap and remap into the split helpers" (7/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-8-ba1b4ba72c6f@tencent.com
-      - f2feab14695f "mm/huge_memory: rename remap_page() to remap_anon_folio()" (8/17)
+      - e8085a907f78 "mm/huge_memory: rename remap_page() to remap_anon_folio()" (8/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-9-ba1b4ba72c6f@tencent.com
-      - 166ec6befa29 "mm/huge_memory: move the racy refcount check into unmap_folio()" (9/17)
+      - caf99b745195 "mm/huge_memory: move the racy refcount check into unmap_folio()" (9/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-10-ba1b4ba72c6f@tencent.com
-      - 14f1357b4d36 "mm/huge_memory: move filemap management into the file split helper" (10/17)
+      - 79262b74850d "mm/huge_memory: move filemap management into the file split helper" (10/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-11-ba1b4ba72c6f@tencent.com
-      - f9d74de323a3 "mm/huge_memory: move anon_vma handling into the anon split helper" (11/17)
+      - b1002f27eb9f "mm/huge_memory: move anon_vma handling into the anon split helper" (11/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-12-ba1b4ba72c6f@tencent.com
-      - e1bb27533225 "mm/huge_memory: move memcg switch into the file split helper" (12/17)
+      - ef1b8825b72a "mm/huge_memory: move memcg switch into the file split helper" (12/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-13-ba1b4ba72c6f@tencent.com
-      - be713bfc7844 "mm/huge_memory: drop the unused do_lru argument of the file split helper" (13/17)
+      - e142994b3637 "mm/huge_memory: drop the unused do_lru argument of the file split helper" (13/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-14-ba1b4ba72c6f@tencent.com
-      - 2675e7cc60b1 "mm/huge_memory: clean up after-split folio freeing in __folio_split" (14/17)
+      - 7728a7302565 "mm/huge_memory: clean up after-split folio freeing in __folio_split" (14/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-15-ba1b4ba72c6f@tencent.com
-      - c85952e9a3b2 "mm/huge_memory: count only swap cache refs in anon folio split" (15/17)
+      - 966217b4676e "mm/huge_memory: count only swap cache refs in anon folio split" (15/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-16-ba1b4ba72c6f@tencent.com
-      - 4b55980c4648 "mm/huge_memory: drop the redundant mapping argument of __split_frozen_folio" (16/17)
+      - de1dab75d21c "mm/huge_memory: drop the redundant mapping argument of __split_frozen_folio" (16/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-17-ba1b4ba72c6f@tencent.com
-      - e295a16de32f "mm/vma: add and use vma_[flags]_is_fixed_mapping" (15/39)
+      - 630efd07c105 "mm/vma: add and use vma_[flags]_is_fixed_mapping" (15/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-17-4583d8a23bca@kernel.org
-      - 8d9cb659cbf2 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
+      - f09773c2c4d0 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-      - 11c1ce3de78c "mm/huge_memory: remove vma_is_special_huge()" (37/39)
-        - Authored by no role player, reviewed by nobody
+      - 43f67f3fae19 "mm/huge_memory: remove vma_is_special_huge()" (37/39)
+        - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-39-4583d8a23bca@kernel.org
-    - b39dfc548234 "mm/huge_memory: simplify pgtable deposit detection"
+    - aa849ec301e2 "mm/huge_memory: simplify pgtable deposit detection"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260917054015.23553-1-lance.yang@linux.dev
-      - fb999913e57d "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - a81803850594 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 779323b34ed1 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 7147f6e04e0c "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
     - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6 commits)
-      - 994d13fff321 "selftests/mm: make file helpers return errors" (0/6)
+      - ba82a0b13cfe "selftests/mm: make file helpers return errors" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-1-sarthak.sharma@arm.com
         - Link: https://lore.kernel.org/20260918112234.195857-2-sarthak.sharma@arm.com
-      - 9d61f7e3047e "tools/lib/mm: move hugepage_settings out of selftests" (3/6)
+      - 284b582109b3 "tools/lib/mm: move hugepage_settings out of selftests" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
     - series "selftests/mm: improve khugepaged coverage", v6. (19 commits)
-      - e47c38bc4fc6 "selftests/mm: raise the khugepaged test-case cap" (0/19)
+      - 4ee2b2e789f1 "selftests/mm: raise the khugepaged test-case cap" (0/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260919002451.496763-2-kirill@shutemov.name
-      - 2a74d02bceee "selftests/mm: skip collapse_compound_extreme() where the PMD is too large" (1/19)
+      - 93461abd0fd9 "selftests/mm: skip collapse_compound_extreme() where the PMD is too large" (1/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-3-kirill@shutemov.name
-      - ce82c2f02e32 "selftests/mm: scale khugepaged's collapse wait with the PMD size" (2/19)
+      - ea5c69a50633 "selftests/mm: scale khugepaged's collapse wait with the PMD size" (2/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-4-kirill@shutemov.name
-      - 3ea99197426f "selftests/mm: skip khugepaged page cache cases without a PMD folio" (3/19)
+      - 79b457b00a62 "selftests/mm: skip khugepaged page cache cases without a PMD folio" (3/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-5-kirill@shutemov.name
-      - 74207d9d7fd7 "selftests/mm: make the swap cases' swapout reliable" (4/19)
+      - adb116526e52 "selftests/mm: make the swap cases' swapout reliable" (4/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-6-kirill@shutemov.name
-      - d31286c7910e "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases" (5/19)
+      - 8f3e3f71a847 "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases" (5/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-7-kirill@shutemov.name
-      - 04fa4d77c7aa "selftests/mm: move is_backed_by_folio() into vm_util" (6/19)
+      - f7d823263b4c "selftests/mm: move is_backed_by_folio() into vm_util" (6/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-8-kirill@shutemov.name
-      - d82a8ae40e11 "selftests/mm: add order-parameterized khugepaged collapse cases" (10/19)
+      - 7d01ec23e244 "selftests/mm: add order-parameterized khugepaged collapse cases" (10/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-12-kirill@shutemov.name
-      - 378c6ebb30fe "selftests/mm: parameterize the mixed-source collapse case by source order" (11/19)
+      - a609dc5474e3 "selftests/mm: parameterize the mixed-source collapse case by source order" (11/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-13-kirill@shutemov.name
-      - 2a1d19c9c162 "selftests/mm: cover a shared-source collapse write race" (12/19)
+      - 88b11f123227 "selftests/mm: cover a shared-source collapse write race" (12/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-14-kirill@shutemov.name
-      - 6d9d65b9d966 "selftests/mm: run every supported collapse order by default" (13/19)
+      - 7b5e6b89e455 "selftests/mm: run every supported collapse order by default" (13/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-15-kirill@shutemov.name
-    - a1addc4e0c1d "mm: disallow raw PFN mappings of huge/shared zeropage"
+    - deedbd6c6c77 "mm: disallow raw PFN mappings of huge/shared zeropage"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260921054225.28537-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20260917121010.60966-1-lance.yang@linux.dev/
     - series "kselftest: mm: fix intermittent failure khugepaged test", v4. (2 commits)
-      - a641d1ab2f65 "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
+      - b3bcacefb887 "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-0-2169c18f2576@arm.com
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-1-2169c18f2576@arm.com
-      - fcab3bbc254e "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
+      - 961054966ffb "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-2-2169c18f2576@arm.com
-    - bc880ccefb67 "mm: fix typos in various comments"
+    - 16c881a9c95c "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - series "kselftest: mm: fix some failure of split_huge_page_test", v8. (4 commits)
-      - 08af275dc718 "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
+    - series "kselftest: mm: fix some failure of split_huge_page_test", v9. (4 commits)
+      - 89b3d1704882 "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com
-      - 0c09ab240049 "kselftest: mm: remove check_huge_shmem()" (3/4)
+        - Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com
+        - Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com
+      - 608b401b37d2 "kselftest: mm: remove check_huge_shmem()" (3/4)
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com
+        - Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

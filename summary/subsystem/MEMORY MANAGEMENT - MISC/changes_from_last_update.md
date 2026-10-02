@@ -7,37 +7,56 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 87 -> 89 commits
-  - series: 10 (60) -> 10 (62)
-    - no role, nobody: 12 -> 12 commits (no change)
-    - no role, no role : 32 -> 32 commits (no change)
+- mm-unstable: 89 -> 89 commits (no change)
+  - series: 10 (62) -> 10 (62) (no change)
+    - no role, nobody: 12 -> 13 commits
+    - no role, no role : 32 -> 31 commits
     - no role, reviewer: 19 -> 19 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 12 -> 14 commits
+    - maintainer, nobody: 14 -> 14 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - be422bb72ed9 "Documentation/mm: update DAX vmemmap deduplication docs"
-      - Authored by a maintainer, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260930140627.57431-13-songmuchun@bytedance.com"
-      - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-      - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-      - dropped "Link: https://lore.kernel.org/20260927025441.741633-13-songmuchun@bytedance.com"
-      - Link: https://lore.kernel.org/20260930140627.57431-13-songmuchun@bytedance.com
-    - series "mm/damon: introduce damos quota goal target metric complement flag". (8)
-      - 22a0b961fdd6 "Docs/mm/damon/design: document damos quota goal complement flag (6/8)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260929080113.41708-7-sj@kernel.org
-      - 5c29d758d295 "Docs/admin-guide/mm/damon/usage: update for quota goal complement file (7/8)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260929080113.41708-8-sj@kernel.org
-- mm-new: 3 -> 1 commits
-  - series: 0 (2) -> 0 (0)
+    - series "kselftest: mm: fix some failure of split_huge_page_test", v9. (4)
+      - 89b3d1704882 "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com"
+        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com"
+        - Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com
+        - Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com
+      - fbcc0d3dfee8 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-2-0f4ba8bbdbdf@arm.com"
+        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
+        - added "Cc: Zi Yan <ziy@nvidia.com>"
+        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-2-cba7359d882a@arm.com"
+        - dropped "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20261001-fix_split-v9-2-0f4ba8bbdbdf@arm.com
+      - 5d8c4bfd6dd9 "kselftest: mm: integrate huge page checks (2/4)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-3-0f4ba8bbdbdf@arm.com"
+        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-3-cba7359d882a@arm.com"
+        - dropped "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
+        - dropped "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Tested-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20261001-fix_split-v9-3-0f4ba8bbdbdf@arm.com
+      - 608b401b37d2 "kselftest: mm: remove check_huge_shmem() (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com"
+        - Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com
+- mm-new: 1 -> 2 commits
+  - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 2 -> 0 commits
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - bc78946b0fb8 "selftests/mm: mrelease_test: fix retry limit"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/CANOyQmFzsssM_BXHUDrV+UuVD5SZMBmSkg3UQnmw9Ns1PV7GCQ@mail.gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

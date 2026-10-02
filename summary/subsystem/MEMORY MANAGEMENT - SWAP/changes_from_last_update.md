@@ -15,12 +15,19 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 2 commits
+- mm-new: 2 -> 3 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 0 -> 2 commits
   - new commits
-    - 5b0e8ea931a9 "mm: make swapoff interruptible when unusing mms/shmem"
-      - Authored by no role player, reviewed by nobody
+    - bc6147de8cf4 "mm/swap: submit the last readahead batch before unplugging"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
+  - changed commits
+    - c585990c6595 "mm: make swapoff interruptible when unusing mms/shmem"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Vineeth Pillai (Google) <vineeth@bitbyteword.org>"
+      - dropped "Cc: Vineeth Pillai <vineeth@bitbyteword.org>"
       - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

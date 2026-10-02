@@ -4,213 +4,137 @@
 - mm-hotfixes-unstable: 8 -> 8 commits (no change)
   - series: 2 (3) -> 2 (3) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 3 -> 2 commits
-    - no role, reviewer: 2 -> 3 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/mremap: fix two issues with MREMAP_DONTUNMAP", v2. (2)
-      - 00b2591b9f04 "mm/mremap: fix locked_vm leak from MREMAP_DONTUNMAP self-merge (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-1-f388985a0f0a@kernel.org"
-        - added "Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-0-f388985a0f0a@kernel.org"
-        - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-        - added "Tested-by: Anirudh Srinivasan <asrinivasan@oss.tenstorrent.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-0-6ffb556f8f8b@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-1-6ffb556f8f8b@kernel.org"
-        - dropped "Reviewed-by: Pedro Falcato <pfalcato@suse.de> "
-        - dropped "Cc: "Vlastimil Babka (SUSE)" <vbabka@kernel.org>"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-0-f388985a0f0a@kernel.org
-        - Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-1-f388985a0f0a@kernel.org
-      - 863af35b7500 "mm/mremap: fix locked_vm leak by splitting VMA for MREMAP_DONTUNMAP (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-2-f388985a0f0a@kernel.org"
-        - added "Tested-by: Anirudh Srinivasan <asrinivasan@oss.tenstorrent.com>"
-        - added "Cc: Liam R. Howlett <liam@infradead.org>"
-        - added "Cc: Vlastimil Babka <vbabka@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260920-fix-dontunmap-partial-self-merge-v1-2-6ffb556f8f8b@kernel.org"
-        - dropped "Cc: "Vlastimil Babka (SUSE)" <vbabka@kernel.org>"
-        - dropped "Cc: Liam Howlett <liam@infradead.org>"
-        - Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-2-f388985a0f0a@kernel.org
-    - b91de17faaff "mm: page_alloc: make defrag_mode retries follow the promoted order"
-      - Authored by no role player, reviewed by nobody
-      - added "Cc: <stable@vger.kernel.org>"
-      - Link: https://lore.kernel.org/20260929174553.175333-1-kirill@shutemov.name
+  - new commits
+    - 6965760ed9fe "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
+      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
+      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
+      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
+      - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
+      - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
+  - dropped commits
+    - c6ed92a6fcae "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20260904115629.3993331-1-dipiets@amazon.it
+      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
+      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
+      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 444 -> 450 commits
-  - series: 68 (358) -> 69 (362)
-    - no role, nobody: 30 -> 31 commits
-    - no role, no role : 111 -> 111 commits (no change)
-    - no role, reviewer: 90 -> 90 commits (no change)
+- mm-unstable: 450 -> 456 commits
+  - series: 69 (362) -> 70 (368)
+    - no role, nobody: 31 -> 28 commits
+    - no role, no role : 111 -> 118 commits
+    - no role, reviewer: 90 -> 92 commits
     - no role, maintainer: 97 -> 97 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
-    - maintainer, nobody: 68 -> 71 commits
-    - maintainer, no role : 25 -> 27 commits
+    - maintainer, nobody: 71 -> 71 commits (no change)
+    - maintainer, no role : 27 -> 27 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
-  - new commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
-      - bfbbf18d411a "fixup! mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (7/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260930150748.1134516-1-songmuchun@bytedance.com
   - changed commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
-      - d21f2792f6cb "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (0/12)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260930140627.57431-2-songmuchun@bytedance.com"
-        - added "Link: https://lore.kernel.org/20260930140627.57431-1-songmuchun@bytedance.com"
-        - added "Link: https://lore.kernel.org/20260513130542.35604-1-songmuchun@bytedance.com/ [1]"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-1-songmuchun@bytedance.com"
-        - dropped "Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-2-songmuchun@bytedance.com"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260930140627.57431-1-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260930140627.57431-2-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - 32f8b5b8635e "mm/sparse-vmemmap: allocate shared tail page array dynamically (1/12)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20260930140627.57431-3-songmuchun@bytedance.com"
-        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-3-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260930140627.57431-3-songmuchun@bytedance.com
-      - 41f8a2032364 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION (2/12)"
+    - series "mm/collapse: separate a collapse from its callers", v4. (13)
+      - e6f88c38691e "mm/collapse: call collapse_file() from collapse_single_pmd() (7/13)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260930140627.57431-4-songmuchun@bytedance.com"
-        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-4-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260930140627.57431-4-songmuchun@bytedance.com
-      - 66751b0aa860 "mm/sparse-vmemmap: open-code init_compound_tail() (3/12)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260930140627.57431-5-songmuchun@bytedance.com"
-        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-5-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260930140627.57431-5-songmuchun@bytedance.com
-      - 0306276a2f05 "mm/sparse-vmemmap: prepare DAX vmemmap population for compound page orders (4/12)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260930140627.57431-6-songmuchun@bytedance.com"
-        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-6-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260930140627.57431-6-songmuchun@bytedance.com
-      - c8efca7cb83f "mm/sparse-vmemmap: set compound page order for device DAX (5/12)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com"
-        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-7-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com
-      - 61882a64b9ae "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/12)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260930140627.57431-8-songmuchun@bytedance.com"
-        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-8-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260930140627.57431-8-songmuchun@bytedance.com
-      - 422162b19765 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (8/12)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20260930140627.57431-9-songmuchun@bytedance.com"
-        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-9-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260930140627.57431-9-songmuchun@bytedance.com
-      - 38834ff7b960 "powerpc/mm: switch device DAX to shared tail vmemmap pages (9/12)"
-        - Authored by a maintainer, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260930140627.57431-10-songmuchun@bytedance.com"
         - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-10-songmuchun@bytedance.com"
         - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260930140627.57431-10-songmuchun@bytedance.com
-      - b808ccf3cb55 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (11/12)"
+        - Link: https://lore.kernel.org/20260928100630.21870-9-kirill@shutemov.name
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
+      - 39aebf443d39 "mm/vma: introduce and use vma_[flags_]can_merge() (1/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-3-4583d8a23bca@kernel.org
+      - 34f43ddb6c9f "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma (3/39)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com"
-        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-11-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
-    - f59059bb66c0 "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20260930140627.57431-12-songmuchun@bytedance.com"
-      - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-      - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-      - dropped "Link: https://lore.kernel.org/20260927025441.741633-12-songmuchun@bytedance.com"
-      - Link: https://lore.kernel.org/20260930140627.57431-12-songmuchun@bytedance.com
-    - 259f8ff4d35f "arch, mm: promote DEBUG_WX to CHECK_WX"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-5-4583d8a23bca@kernel.org
+      - 4983b0482e0c "mm: make map_kernel_pages_[prepare,complete] internal and unexported (4/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-6-4583d8a23bca@kernel.org
+      - 8b25f518e358 "mm/vma: tidy up map kernel pages enum values (5/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
+      - 97ae92f30d3e "mm/mlock: clear VMA_LOCKED_MASK over mmap callback (21/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-23-4583d8a23bca@kernel.org
+      - 43f67f3fae19 "mm/huge_memory: remove vma_is_special_huge() (37/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-39-4583d8a23bca@kernel.org
+      - c60d5ae3aa38 "mm/vma: introduce and use vma[_flags]_can_gup() (38/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-40-4583d8a23bca@kernel.org
+    - 465d19caee9f "arch, mm: promote DEBUG_WX to CHECK_WX"
       - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
       - Link: https://lore.kernel.org/20260926-direct-map-verify-wx-v2-1-efcd64a6b74a@kernel.org
-    - bf2b8caff0ce "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+    - f0fa1e9609ef "mm/vma: don't remove VMA from rmap if pgoff unchanged"
       - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org"
-      - added "Signed-off-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org"
-      - dropped "Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/"
-      - dropped "Signed-off-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - added "Acked-by: Lance Yang <lance.yang@linux.dev>"
+      - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
+      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
       - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
-    - dab953c5ef53 "mm/memory: remove unused vmf_insert_mixed_mkwrite()"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260929143707.450805-1-ekffu200098@gmail.com
-    - series "mm/damon: introduce damos quota goal target metric complement flag". (8)
-      - 4998efbea5f7 "mm/damon/core: introduce damos_quota_goal->complement (0/8)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260929080113.41708-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260929080113.41708-2-sj@kernel.org
-      - 7ff19b9e4547 "mm-damon-core-introduce-damos_quota_goal-complement-fix (1/8)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-      - dd5578e5ad82 "mm/damon/core: add complement argument to damos_new_quota_goal() (2/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260929080113.41708-3-sj@kernel.org
-      - da228679f6d1 "mm/damon/sysfs-schemes: support quota goal complement flag (3/8)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260929080113.41708-4-sj@kernel.org
-      - 781e2d7b4fcc "mm/damon/tests/core-kunit: test quota_goal->complement commit (4/8)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260929080113.41708-5-sj@kernel.org
-  - dropped commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v5. (12)
-      - 3b6da79e1d9b "mm-sparse-vmemmap-switch-device-dax-to-shared-tail-vmemmap-pages-fix (7/12)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20260928044148.3300333-1-songmuchun@bytedance.com
-- mm-new: 13 -> 8 commits
-  - series: 2 (11) -> 1 (6)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - maintainer, nobody: 4 -> 0 commits
-    - maintainer, no role : 1 -> 0 commits
-  - new commits
-    - 5b0e8ea931a9 "mm: make swapoff interruptible when unusing mms/shmem"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
-  - changed commits
     - series "mm: Unify device DAX and HugeTLB vmemmap population paths", v3. (6)
-      - 308453845e0a "mm/sparse-vmemmap: drop VMEMMAP_POPULATE_DAX (0/6)"
+      - 2f8b0f5824dc "mm/sparse-vmemmap: drop VMEMMAP_POPULATE_DAX (0/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260929053231.66085-2-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - b21ecb7e9b47 "mm/sparse-vmemmap: support device DAX in common vmemmap path (1/6)"
+      - 72a152523ff3 "mm/sparse-vmemmap: support device DAX in common vmemmap path (1/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - branch: mm-new -> mm-unstable
         - Link: https://lore.kernel.org/20260929053231.66085-3-songmuchun@bytedance.com
+      - 3d1fa8849919 "mm/sparse-vmemmap: drop Device DAX-specific population path (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260929053231.66085-4-songmuchun@bytedance.com
+      - 44e62fee2903 "mm/sparse-vmemmap: remove the unused ptpfn argument (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260929053231.66085-5-songmuchun@bytedance.com
+      - 33607100d7e8 "mm/sparse-vmemmap: open-code vmemmap_populate_address() (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260929053231.66085-6-songmuchun@bytedance.com
+      - 89ffc0ff2b1d "mm/mm_init: add zone mismatch warning during page init (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
+- mm-new: 8 -> 3 commits
+  - series: 1 (6) -> 0 (0)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 6 -> 2 commits
+  - new commits
+    - bc6147de8cf4 "mm/swap: submit the last readahead batch before unplugging"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
+  - changed commits
+    - c585990c6595 "mm: make swapoff interruptible when unusing mms/shmem"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Vineeth Pillai (Google) <vineeth@bitbyteword.org>"
+      - dropped "Cc: Vineeth Pillai <vineeth@bitbyteword.org>"
+      - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

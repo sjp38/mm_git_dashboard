@@ -2,54 +2,51 @@
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 10 total, 1 (10) series, 0 non-series commits
+- mm-unstable: 12 total, 1 (12) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, no role : 7 commits
+    - no role, no role : 9 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - bf99a9151c42 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+      - 28f74e96bdf9 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com
-      - 20fcfef9ce50 "mm/mm_init: factor out pfn_to_zone()" (5/17)
+      - d3659eb1489a "mm/mm_init: factor out pfn_to_zone()" (5/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-7-songmuchun@bytedance.com
-      - b27a1720b9c9 "mm/sparse: initialize memory sections earlier" (8/17)
+      - 5770a92b4965 "mm/sparse: initialize memory sections earlier" (8/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-10-songmuchun@bytedance.com
     - series "mm: optimize zone-device memmap initialization", v11. (7 commits)
-      - 8ddf13eb449c "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
+      - f81c859beb09 "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-1-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/20260831111638.76012-2-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/all/aiEoByaQdRR3xtM5@nvdebian.thelocal/ [1]
-      - ae98eb2a94ea "mm: add a template-based fast path for zone-device page init" (2/7)
+      - 42e607855371 "mm: add a template-based fast path for zone-device page init" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-4-lizhe.67@bytedance.com
-      - 02f64694ec74 "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
+      - f3f1d95c7767 "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903025806.70825-1-lizhe.67@bytedance.com
-      - 34d725e51ebf "mm: extend the template fast path to zone-device compound tails" (4/7)
+      - 30b9ad4d4ea6 "mm: extend the template fast path to zone-device compound tails" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-5-lizhe.67@bytedance.com
-      - c036312ad171 "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
+      - d695df591122 "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831111638.76012-7-lizhe.67@bytedance.com
-      - c8efca7cb83f "mm/sparse-vmemmap: set compound page order for device DAX" (5/12)
+      - d3c41859f45d "mm/sparse-vmemmap: set compound page order for device DAX" (5/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com
-      - b808ccf3cb55 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (11/12)
+      - 074aced9cc5d "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (11/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
-- mm-new: 2 total, 0 (2) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-  - full commits list
-      - 6c8bb0c49227 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
+      - 3d1fa8849919 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260929053231.66085-4-songmuchun@bytedance.com
-      - e24ce831914c "mm/mm_init: add zone mismatch warning during page init" (5/6)
+      - 89ffc0ff2b1d "mm/mm_init: add zone mismatch warning during page init" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

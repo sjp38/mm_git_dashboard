@@ -1,18 +1,18 @@
 - baseline: v7.3-rc5-30-ga243ede718463
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-hotfixes-unstable: 14 total, 2 (4) series, 10 non-series commits
+- mm-hotfixes-unstable: 15 total, 2 (4) series, 11 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 5 commits
+    - no role, nobody: 6 commits
     - no role, no role : 5 commits
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 680 total, 100 (546) series, 134 non-series commits
+- mm-unstable: 688 total, 101 (552) series, 136 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 72 commits
-    - no role, no role : 197 commits
-    - no role, reviewer: 112 commits
-    - no role, maintainer: 136 commits
+    - no role, nobody: 71 commits
+    - no role, no role : 203 commits
+    - no role, reviewer: 114 commits
+    - no role, maintainer: 137 commits
     - reviewer, nobody: 2 commits
     - reviewer, no role : 3 commits
     - reviewer, reviewer: 10 commits
@@ -20,16 +20,15 @@
     - maintainer, nobody: 105 commits
     - maintainer, no role : 32 commits
     - maintainer, reviewer: 6 commits
-- mm-new: 25 total, 3 (18) series, 7 non-series commits
+- mm-new: 19 total, 2 (12) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 6 commits
-    - no role, no role : 18 commits
-    - no role, maintainer: 1 commits
+    - no role, nobody: 4 commits
+    - no role, no role : 15 commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-nonmm-unstable: 112 total, 14 (43) series, 69 non-series commits
+- mm-nonmm-unstable: 114 total, 15 (45) series, 69 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 49 commits
-    - no role, no role : 30 commits
+    - no role, nobody: 50 commits
+    - no role, no role : 31 commits
     - no role, reviewer: 1 commits
     - no role, maintainer: 16 commits
     - maintainer, nobody: 11 commits

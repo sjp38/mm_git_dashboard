@@ -7,12 +7,39 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 68 -> 68 commits (no change)
   - series: 9 (60) -> 9 (60) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, nobody: 4 -> 3 commits
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 53 -> 53 commits (no change)
+    - no role, reviewer: 53 -> 54 commits
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm/collapse: separate a collapse from its callers", v4. (13)
+      - e6f88c38691e "mm/collapse: call collapse_file() from collapse_single_pmd() (7/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260928100630.21870-9-kirill@shutemov.name
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
+      - 43f67f3fae19 "mm/huge_memory: remove vma_is_special_huge() (37/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-39-4583d8a23bca@kernel.org
+    - series "kselftest: mm: fix some failure of split_huge_page_test", v9. (4)
+      - 89b3d1704882 "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com"
+        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com"
+        - Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com
+        - Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com
+      - 608b401b37d2 "kselftest: mm: remove check_huge_shmem() (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com"
+        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com"
+        - Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

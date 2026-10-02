@@ -5,30 +5,26 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 10 -> 10 commits (no change)
-  - series: 1 (10) -> 1 (10) (no change)
+- mm-unstable: 10 -> 12 commits
+  - series: 1 (10) -> 1 (12)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 7 -> 7 commits (no change)
+    - no role, no role : 7 -> 9 commits
     - no role, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
-      - c8efca7cb83f "mm/sparse-vmemmap: set compound page order for device DAX (5/12)"
+    - series "mm: Unify device DAX and HugeTLB vmemmap population paths", v3. (6)
+      - 3d1fa8849919 "mm/sparse-vmemmap: drop Device DAX-specific population path (2/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com"
-        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-7-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com
-      - b808ccf3cb55 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (11/12)"
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260929053231.66085-4-songmuchun@bytedance.com
+      - 89ffc0ff2b1d "mm/mm_init: add zone mismatch warning during page init (5/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com"
-        - added "Cc: Ritesh Harjani (IBM) <ritesh.list@gmail.com>"
-        - added "Cc: Shrikanth Hegde <sshegde@linux.ibm.com>"
-        - dropped "Link: https://lore.kernel.org/20260927025441.741633-11-songmuchun@bytedance.com"
-        - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
-- mm-new: 2 -> 2 commits (no change)
-  - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+        - branch: mm-new -> mm-unstable
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
+- mm-new: 2 -> 0 commits
+  - series: 0 (2) -> 0 (0)
+    - no role, no role : 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

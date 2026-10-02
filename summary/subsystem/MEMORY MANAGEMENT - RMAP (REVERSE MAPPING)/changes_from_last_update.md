@@ -13,13 +13,11 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - bf2b8caff0ce "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+    - f0fa1e9609ef "mm/vma: don't remove VMA from rmap if pgoff unchanged"
       - Authored by no role player, reviewed by a reviewer
-      - added "Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org"
-      - added "Signed-off-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20260925-speed-up-inplace-rmap-v1-1-babc48ce7c83@kernel.org"
-      - dropped "Link: https://lore.kernel.org/linux-mm/20260924054301.2330822-1-pan.deng@intel.com/"
-      - dropped "Signed-off-by: Lorenzo Stoakes <ljs@kernel.org>"
+      - added "Acked-by: Lance Yang <lance.yang@linux.dev>"
+      - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
+      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
       - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
