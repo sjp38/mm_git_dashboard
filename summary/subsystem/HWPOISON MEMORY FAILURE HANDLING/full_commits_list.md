@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-30-ga243ede718463
+- baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -9,22 +9,22 @@
     - maintainer, nobody: 1 commits
   - full commits list
     - series "mm: Fix MF_DELAYED handling on memory failure", v6. (5 commits)
-      - f70bcbe359fc "mm: memory_failure: clarify the MF_DELAYED definition" (0/5)
+      - f8223342d468 "mm: memory_failure: clarify the MF_DELAYED definition" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-0-4b00856b5364@google.com
         - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-1-4b00856b5364@google.com
-      - 145e06238477 "mm: memory_failure: Allow truncate_error_folio to return MF_DELAYED" (1/5)
+      - 5048b3b7d1b4 "mm: memory_failure: Allow truncate_error_folio to return MF_DELAYED" (1/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-2-4b00856b5364@google.com
-      - 203b7865d09c "mm: memory_failure: Generalize extra_pins handling to all MF_DELAYED cases" (3/5)
+      - eb2f9bd36258 "mm: memory_failure: Generalize extra_pins handling to all MF_DELAYED cases" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-4-4b00856b5364@google.com
-      - 6724186916c1 "mm: selftests: Add shmem into memory failure test" (4/5)
+      - 1c7792285b02 "mm: selftests: Add shmem into memory failure test" (4/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-5-4b00856b5364@google.com
-    - 09fe37538ba0 "mm-selftests-add-shmem-into-memory-failure-test-fix"
+    - 5295d5058cce "mm-selftests-add-shmem-into-memory-failure-test-fix"
       - Authored by a maintainer, reviewed by nobody
-    - 16c881a9c95c "mm: fix typos in various comments"
+    - 8efb55767f1b "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

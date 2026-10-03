@@ -1,34 +1,29 @@
-- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-30-ga243ede718463 (no change)
+- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 2 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - 6965760ed9fe "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - no role, reviewer: 1 -> 0 commits
+- mm-stable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-unstable: 14 -> 15 commits
+  - series: 3 (8) -> 3 (8) (no change)
+    - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 9 -> 10 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 33eb75fed9ee "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-unstable
+      - dropped "Cc: <stable@vger.kernel.org>"
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
       - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
       - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
       - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
       - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
-  - dropped commits
-    - c6ed92a6fcae "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260904115629.3993331-1-dipiets@amazon.it
-      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
-      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
-      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 14 -> 14 commits (no change)
-  - series: 3 (8) -> 3 (8) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 9 -> 9 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

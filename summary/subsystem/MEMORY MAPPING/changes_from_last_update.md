@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-30-ga243ede718463 (no change)
+- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
@@ -8,39 +8,33 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 39 -> 39 commits (no change)
   - series: 5 (28) -> 5 (28) (no change)
-    - no role, nobody: 3 -> 2 commits
-    - no role, no role : 24 -> 25 commits
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 25 -> 25 commits (no change)
     - no role, reviewer: 8 -> 8 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
     - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - 39aebf443d39 "mm/vma: introduce and use vma_[flags_]can_merge() (1/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-3-4583d8a23bca@kernel.org
-      - 34f43ddb6c9f "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma (3/39)"
+      - 931eb0064e03 "mm: remove hugetlb_inline.h (25/39)"
         - Authored by no role player, reviewed by no role player
         - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
         - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-5-4583d8a23bca@kernel.org
-      - 8b25f518e358 "mm/vma: tidy up map kernel pages enum values (5/39)"
-        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
+      - fd4f9f178e09 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/39)"
+        - Authored by no role player, reviewed by a maintainer
         - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
         - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
-      - 97ae92f30d3e "mm/mlock: clear VMA_LOCKED_MASK over mmap callback (21/39)"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
+      - 7026e9f7d878 "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS (35/39)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-23-4583d8a23bca@kernel.org
-    - f0fa1e9609ef "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-37-4583d8a23bca@kernel.org
+    - b485139aeb79 "mm/vma: don't remove VMA from rmap if pgoff unchanged"
       - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Lance Yang <lance.yang@linux.dev>"
-      - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
       - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

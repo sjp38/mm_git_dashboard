@@ -1,41 +1,39 @@
-- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-30-ga243ede718463 (no change)
+- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 14 -> 15 commits
+- mm-hotfixes-unstable: 15 -> 14 commits
   - series: 2 (4) -> 2 (4) (no change)
-    - no role, nobody: 5 -> 6 commits
-    - no role, no role : 5 -> 5 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, nobody: 6 -> 5 commits
+    - no role, no role : 5 -> 6 commits
+    - no role, reviewer: 3 -> 2 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
+  - changed commits
+    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v3. (2)
+      - 3242d161c264 "userfaultfd: clear the inherited uffd bit in move_swap_pte() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
+        - Link: https://lore.kernel.org/20260926124145.2878520-1-donggeunyoo.kernel@gmail.com
+        - Link: https://lore.kernel.org/20260926124145.2878520-2-donggeunyoo.kernel@gmail.com
+    - d19464790792 "mailmap: update entry for Andy Yan"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-hotfixes-unstable
+      - added "Reviewed-by: Shawn Lin <shawn.lin@rock-chips.com>"
+      - Link: https://lore.kernel.org/20260924105052.768760-1-andyshrk@163.com
+  - dropped commits
     - 127e8ac3d348 "taskstats: restrict exit listener registration to init_net"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261001223721.458667-2-tjdqudcks0424@naver.com
       - Link: https://lore.kernel.org/all/20110630120831.GB7707@albatros/
       - Link: https://lore.kernel.org/all/87v8x678ph.fsf@email.froward.int.ebiederm.org/
-    - 6965760ed9fe "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
-      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
-      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
-      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
-      - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
-      - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
-  - dropped commits
-    - c6ed92a6fcae "mm/page_alloc: avoid direct compaction for costly __GFP_NORETRY allocations"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20260904115629.3993331-1-dipiets@amazon.it
-      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
-      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
-      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 680 -> 688 commits
-  - series: 100 (546) -> 101 (552)
-    - no role, nobody: 72 -> 71 commits
-    - no role, no role : 197 -> 203 commits
-    - no role, reviewer: 112 -> 114 commits
-    - no role, maintainer: 136 -> 137 commits
+- mm-unstable: 688 -> 692 commits
+  - series: 101 (552) -> 102 (554)
+    - no role, nobody: 71 -> 68 commits
+    - no role, no role : 203 -> 209 commits
+    - no role, reviewer: 114 -> 116 commits
+    - no role, maintainer: 137 -> 136 commits
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 3 -> 3 commits (no change)
     - reviewer, reviewer: 10 -> 10 commits (no change)
@@ -44,167 +42,136 @@
     - maintainer, no role : 32 -> 32 commits (no change)
     - maintainer, reviewer: 6 -> 6 commits (no change)
   - changed commits
-    - series "mm/collapse: separate a collapse from its callers", v4. (13)
-      - e6f88c38691e "mm/collapse: call collapse_file() from collapse_single_pmd() (7/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260928100630.21870-9-kirill@shutemov.name
     - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - 39aebf443d39 "mm/vma: introduce and use vma_[flags_]can_merge() (1/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-3-4583d8a23bca@kernel.org
-      - 34f43ddb6c9f "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma (3/39)"
+      - 931eb0064e03 "mm: remove hugetlb_inline.h (25/39)"
         - Authored by no role player, reviewed by no role player
         - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
         - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-5-4583d8a23bca@kernel.org
-      - 4983b0482e0c "mm: make map_kernel_pages_[prepare,complete] internal and unexported (4/39)"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
+      - fd4f9f178e09 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
+      - 40d8d4f3c857 "mm: drop some redundant checks around hugetlb VMAs (27/39)"
         - Authored by no role player, reviewed by a reviewer
         - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
         - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-6-4583d8a23bca@kernel.org
-      - 8b25f518e358 "mm/vma: tidy up map kernel pages enum values (5/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-7-4583d8a23bca@kernel.org
-      - 97ae92f30d3e "mm/mlock: clear VMA_LOCKED_MASK over mmap callback (21/39)"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-29-4583d8a23bca@kernel.org
+      - 25a247e94337 "mm/madvise: update is_valid_guard_vma() to use vma_can_merge() (28/39)"
         - Authored by no role player, reviewed by no role player
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-23-4583d8a23bca@kernel.org
-      - 43f67f3fae19 "mm/huge_memory: remove vma_is_special_huge() (37/39)"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-30-4583d8a23bca@kernel.org
+      - 81976bebd334 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around() (33/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-35-4583d8a23bca@kernel.org
+      - 90ebf86d7125 "mm: avoid use of VMA_SPECIAL_FLAGS in migrate_vma_setup() (34/39)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-39-4583d8a23bca@kernel.org
-      - c60d5ae3aa38 "mm/vma: introduce and use vma[_flags]_can_gup() (38/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-40-4583d8a23bca@kernel.org
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-36-4583d8a23bca@kernel.org
+      - 7026e9f7d878 "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS (35/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-37-4583d8a23bca@kernel.org
+      - 99b328089aa2 "fuse: dax: do not set VM_MIXEDMAP (36/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-38-4583d8a23bca@kernel.org
     - series "kselftest: mm: fix some failure of split_huge_page_test", v9. (4)
-      - 89b3d1704882 "kselftest: mm: prevent random failure of huge page split for khugepaged (0/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com"
-        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com"
-        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-1-cba7359d882a@arm.com"
-        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-0-cba7359d882a@arm.com"
-        - Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com
-        - Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com
-      - fbcc0d3dfee8 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
+      - 29fcbc820d04 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-2-0f4ba8bbdbdf@arm.com"
-        - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
-        - added "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-2-cba7359d882a@arm.com"
-        - dropped "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
         - Link: https://lore.kernel.org/20261001-fix_split-v9-2-0f4ba8bbdbdf@arm.com
-      - 5d8c4bfd6dd9 "kselftest: mm: integrate huge page checks (2/4)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-3-0f4ba8bbdbdf@arm.com"
-        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-3-cba7359d882a@arm.com"
-        - dropped "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
-        - dropped "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Tested-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+      - 87b4f9bf25b2 "kselftest: mm: integrate huge page checks (2/4)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
         - Link: https://lore.kernel.org/20261001-fix_split-v9-3-0f4ba8bbdbdf@arm.com
-      - 608b401b37d2 "kselftest: mm: remove check_huge_shmem() (3/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com"
-        - dropped "Link: https://lore.kernel.org/20260924-fix_split-v8-4-cba7359d882a@arm.com"
-        - Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com
-    - 465d19caee9f "arch, mm: promote DEBUG_WX to CHECK_WX"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Reviewed-by: Anshuman Khandual <anshuman.khandual@arm.com>"
-      - Link: https://lore.kernel.org/20260926-direct-map-verify-wx-v2-1-efcd64a6b74a@kernel.org
-    - f0fa1e9609ef "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+    - b485139aeb79 "mm/vma: don't remove VMA from rmap if pgoff unchanged"
       - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Lance Yang <lance.yang@linux.dev>"
-      - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
-      - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
       - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
-    - c8df7f10e012 "zram: fix short reads from block_state"
-      - Authored by no role player, reviewed by a maintainer
+    - series "support kselftest on nommu platform", v4. (2)
+      - 52eefc176033 "selftests: run tests on nommu architecture (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260929235711.2287931-1-thehajime@gmail.com
+        - Link: https://lore.kernel.org/20260929235711.2287931-2-thehajime@gmail.com
+      - 994def14cf9f "selftests/nommu: add nommu mmap and mremap behavior tests (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20260929235711.2287931-3-thehajime@gmail.com
+    - 17a702fb8e27 "mm: make swapoff interruptible when unusing mms/shmem"
+      - Authored by no role player, reviewed by no role player
       - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20260929071846.24829-1-pooyan.azadparvar@gmail.com
-    - series "mm: Unify device DAX and HugeTLB vmemmap population paths", v3. (6)
-      - 2f8b0f5824dc "mm/sparse-vmemmap: drop VMEMMAP_POPULATE_DAX (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260929053231.66085-2-songmuchun@bytedance.com
-        - Link: https://lore.kernel.org/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
-      - 72a152523ff3 "mm/sparse-vmemmap: support device DAX in common vmemmap path (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - Link: https://lore.kernel.org/20260929053231.66085-3-songmuchun@bytedance.com
-      - 3d1fa8849919 "mm/sparse-vmemmap: drop Device DAX-specific population path (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260929053231.66085-4-songmuchun@bytedance.com
-      - 44e62fee2903 "mm/sparse-vmemmap: remove the unused ptpfn argument (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260929053231.66085-5-songmuchun@bytedance.com
-      - 33607100d7e8 "mm/sparse-vmemmap: open-code vmemmap_populate_address() (4/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260929053231.66085-6-songmuchun@bytedance.com
-      - 89ffc0ff2b1d "mm/mm_init: add zone mismatch warning during page init (5/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-new -> mm-unstable
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
-    - 40cdf2b57d6c "tools/cgroup: sum shrinker object counts across NUMA nodes"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/179074810112.139422.9274126921568167859@gmail.com
-- mm-new: 25 -> 19 commits
-  - series: 3 (18) -> 2 (12)
-    - no role, nobody: 6 -> 4 commits
-    - no role, no role : 18 -> 15 commits
-    - no role, maintainer: 1 -> 0 commits
-  - new commits
-    - bc6147de8cf4 "mm/swap: submit the last readahead batch before unplugging"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
-    - bc78946b0fb8 "selftests/mm: mrelease_test: fix retry limit"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/CANOyQmFzsssM_BXHUDrV+UuVD5SZMBmSkg3UQnmw9Ns1PV7GCQ@mail.gmail.com
-  - changed commits
-    - c585990c6595 "mm: make swapoff interruptible when unusing mms/shmem"
-      - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Vineeth Pillai (Google) <vineeth@bitbyteword.org>"
-      - dropped "Cc: Vineeth Pillai <vineeth@bitbyteword.org>"
       - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
+    - 8b50fb0f096e "mm/swap: submit the last readahead batch before unplugging"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
+    - 33eb75fed9ee "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-hotfixes-unstable -> mm-unstable
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
+      - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
+      - Link: https://lore.kernel.org/linux-mm/20260420161404.642-1-dipiets@amazon.it/T/#u [v2]
+      - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
+      - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
+      - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
+  - dropped commits
+    - 6b37ebfea4db "mm/memory: remove unused vmf_insert_mixed_mkwrite()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20260929143707.450805-1-ekffu200098@gmail.com
+- mm-new: 19 -> 17 commits
+  - series: 2 (12) -> 1 (10)
+    - no role, nobody: 4 -> 5 commits
+    - no role, no role : 15 -> 11 commits
+    - no role, maintainer: 0 -> 1 commits
+  - new commits
+    - 56d7564bbad6 "mm: kmsan: fix iounmap metadata teardown"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261002200508.546-1-dmytrokoziuk68@gmail.com
+      - Link: https://lkml.iu.edu/2609.3/12748.html
+    - 0ca41b73e56a "mm: kmsan: fix ioremap error cleanup"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261002200508.546-2-dmytrokoziuk68@gmail.com
+  - changed commits
+    - 890d2a2d17bc "selftests/mm: mrelease_test: fix retry limit"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - Link: https://lore.kernel.org/CANOyQmFzsssM_BXHUDrV+UuVD5SZMBmSkg3UQnmw9Ns1PV7GCQ@mail.gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 112 -> 114 commits
-  - series: 14 (43) -> 15 (45)
-    - no role, nobody: 49 -> 50 commits
-    - no role, no role : 30 -> 31 commits
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 16 -> 16 commits (no change)
+- mm-nonmm-unstable: 114 -> 115 commits
+  - series: 15 (45) -> 15 (45) (no change)
+    - no role, nobody: 50 -> 51 commits
+    - no role, no role : 31 -> 31 commits (no change)
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 16 -> 15 commits
     - maintainer, nobody: 11 -> 11 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
   - new commits
-    - series "kbuild: GCOV cleanups following the prefer-atomic fix". (2)
-      - 5e76e144b211 "kbuild: use $(CFLAGS_GCOV) in the prefer-atomic try-run test (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261001-b4-prep-gcov-v1-0-794792e06f24@virtuozzo.com
-        - Link: https://lore.kernel.org/20261001-b4-prep-gcov-v1-1-794792e06f24@virtuozzo.com
-      - 20e59dfe656f "kbuild: move GCOV flags to scripts/Makefile.gcov (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/20261001-b4-prep-gcov-v1-2-794792e06f24@virtuozzo.com
+    - 12bdb6b2bdc4 "kcov: report spurious PCs in the interrupt selftest"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261002181357.14293-1-kmehltretter@gmail.com
+    - 8bd52f344a29 "watchdog/perf: reject empty config before the raw event parse"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261002175000.1-brads@mainlining.org
   - changed commits
-    - 1eb2884295de "init: simplify initramfs.o build rule"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Nicolas Schier <nsc@kernel.org>"
-      - dropped "Cc: Nicolas Schier <nsc@kernel.org>"
-      - Link: https://lore.kernel.org/20260930015748.311366-1-yuntao.wang@linux.dev
+    - 9629a291ee66 "tmpfs: fix unicode_map leaks in casefold option handling"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20261002081306.637148-1-hnkz.64@gmail.com"
+      - added "Suggested-by: Gabriel Krisman Bertazi <gabriel@krisman.be>"
+      - dropped "Link: https://lore.kernel.org/20260827152516.805622-1-hnkz.64@gmail.com"
+      - dropped "Reviewed-by: Andrew Morton <akpm@linux-foundation.org>"
+      - Link: https://lore.kernel.org/20261002081306.637148-1-hnkz.64@gmail.com

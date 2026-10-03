@@ -1,34 +1,39 @@
-- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-30-ga243ede718463 (no change)
+- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 31 -> 31 commits (no change)
+- mm-unstable: 31 -> 33 commits
   - series: 8 (26) -> 8 (26) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 10 -> 10 commits (no change)
+    - no role, no role : 10 -> 12 commits
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 3 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 0 -> 2 commits
-  - new commits
-    - bc6147de8cf4 "mm/swap: submit the last readahead batch before unplugging"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
   - changed commits
-    - c585990c6595 "mm: make swapoff interruptible when unusing mms/shmem"
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
+      - fd4f9f178e09 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
+    - 17a702fb8e27 "mm: make swapoff interruptible when unusing mms/shmem"
       - Authored by no role player, reviewed by no role player
-      - added "Acked-by: Vineeth Pillai (Google) <vineeth@bitbyteword.org>"
-      - dropped "Cc: Vineeth Pillai <vineeth@bitbyteword.org>"
+      - branch: mm-new -> mm-unstable
       - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
+    - 8b50fb0f096e "mm/swap: submit the last readahead batch before unplugging"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
+- mm-new: 3 -> 1 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
