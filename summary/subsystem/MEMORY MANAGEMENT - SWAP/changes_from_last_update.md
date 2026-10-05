@@ -1,14 +1,14 @@
-- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 31 -> 33 commits
-  - series: 8 (26) -> 8 (26) (no change)
+- mm-unstable: 33 -> 33 commits (no change)
+  - series: 8 (26) -> 8 (25)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 10 -> 12 commits
+    - no role, no role : 12 -> 12 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 8 -> 8 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
@@ -16,24 +16,46 @@
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - fd4f9f178e09 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
-    - 17a702fb8e27 "mm: make swapoff interruptible when unusing mms/shmem"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
-    - 8b50fb0f096e "mm/swap: submit the last readahead batch before unplugging"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
-- mm-new: 3 -> 1 commits
+    - 247b9b48352a "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org"
+      - added "Cc: Borislav Petkov <bp@alien8.de>"
+      - added "Cc: Oliver Upton <oupton@kernel.org>"
+      - added "Cc: Thomas Zimmermann <tzimmermann@suse.de>"
+      - added "Cc: Mark Rutland <mark.rutland@arm.com>"
+      - added "Cc: Masami Hiramatsu <mhiramat@kernel.org>"
+      - added "Cc: Simona Vetter <simona@ffwll.ch>"
+      - added "Cc: Paul Walmsley <pjw@kernel.org>"
+      - added "Cc: Martin K. Petersen <mkp@kernel.org>"
+      - added "Cc: Daniel Borkmann <daniel@iogearbox.net>"
+      - added "Cc: Usama Arif <usama.arif@linux.dev>"
+      - added "Cc: Nico Pache <nico.pache@linux.dev>"
+      - added "Cc: Thomas Gleixner <tglx@kernel.org>"
+      - added "Cc: David Airlie <airlied@gmail.com>"
+      - added "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
+      - added "Cc: James Bottomley <james.bottomley@hansenpartnership.com>"
+      - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+      - added "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
+      - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+      - added "Cc: Namhyung Kim <namhyung@kernel.org>"
+      - added "Cc: Xu Xin <xu.xin@linux.dev>"
+      - dropped "Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org"
+      - dropped "Cc: Takashi Iwai (SUSE) <tiwai@suse.de>"
+      - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
+      - dropped "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
+      - dropped "Cc: Jaya Kumar <jayalk@intworks.biz>"
+      - dropped "Cc: Namhyung kim <namhyung@kernel.org>"
+      - dropped "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
+      - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
+      - dropped "Cc: Dave Airlie <airlied@gmail.com>"
+      - dropped "Cc: Emil Tsalapatis <emil@etsalapatis.com>"
+      - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
+      - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
+      - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
+      - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

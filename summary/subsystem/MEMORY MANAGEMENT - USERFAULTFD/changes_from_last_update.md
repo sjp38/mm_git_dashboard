@@ -1,37 +1,139 @@
-- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, no role : 1 -> 1 commits (no change)
   - changed commits
-    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v3. (2)
-      - 3242d161c264 "userfaultfd: clear the inherited uffd bit in move_swap_pte() (0/2)"
+    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2)
+      - 3b2caf652919 "userfaultfd: clear the inherited uffd bit in move_swap_pte() (0/2)"
         - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-        - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-        - Link: https://lore.kernel.org/20260926124145.2878520-1-donggeunyoo.kernel@gmail.com
-        - Link: https://lore.kernel.org/20260926124145.2878520-2-donggeunyoo.kernel@gmail.com
+        - added "Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com"
+        - added "Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20260926124145.2878520-1-donggeunyoo.kernel@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20260926124145.2878520-2-donggeunyoo.kernel@gmail.com"
+        - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
+        - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 8 -> 8 commits (no change)
-  - series: 2 (8) -> 2 (8) (no change)
+  - series: 2 (8) -> 2 (5)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v3. (39)
-      - 931eb0064e03 "mm: remove hugetlb_inline.h (25/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org
-      - fd4f9f178e09 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org
+    - 877084d45a16 "mm: remove hugetlb_inline.h"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-26-a1f052500fd7@kernel.org"
+      - added "Cc: Martin K. Petersen <mkp@kernel.org>"
+      - added "Cc: Mark Rutland <mark.rutland@arm.com>"
+      - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+      - added "Cc: Xu Xin <xu.xin@linux.dev>"
+      - added "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
+      - added "Cc: Simona Vetter <simona@ffwll.ch>"
+      - added "Cc: Daniel Borkmann <daniel@iogearbox.net>"
+      - added "Cc: Namhyung Kim <namhyung@kernel.org>"
+      - added "Cc: David Airlie <airlied@gmail.com>"
+      - added "Cc: James Bottomley <james.bottomley@hansenpartnership.com>"
+      - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+      - added "Cc: Borislav Petkov <bp@alien8.de>"
+      - added "Cc: Nico Pache <nico.pache@linux.dev>"
+      - added "Cc: Masami Hiramatsu <mhiramat@kernel.org>"
+      - added "Cc: Paul Walmsley <pjw@kernel.org>"
+      - added "Cc: Usama Arif <usama.arif@linux.dev>"
+      - added "Cc: Thomas Gleixner <tglx@kernel.org>"
+      - added "Cc: Thomas Zimmermann <tzimmermann@suse.de>"
+      - added "Cc: Oliver Upton <oupton@kernel.org>"
+      - added "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-27-4583d8a23bca@kernel.org"
+      - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
+      - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
+      - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
+      - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
+      - dropped "Cc: Emil Tsalapatis <emil@etsalapatis.com>"
+      - dropped "Cc: Jaya Kumar <jayalk@intworks.biz>"
+      - dropped "Cc: Takashi Iwai (SUSE) <tiwai@suse.de>"
+      - dropped "Cc: Dave Airlie <airlied@gmail.com>"
+      - dropped "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
+      - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
+      - dropped "Cc: Namhyung kim <namhyung@kernel.org>"
+      - dropped "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
+      - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-26-a1f052500fd7@kernel.org
+    - 247b9b48352a "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org"
+      - added "Cc: Martin K. Petersen <mkp@kernel.org>"
+      - added "Cc: Mark Rutland <mark.rutland@arm.com>"
+      - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+      - added "Cc: Xu Xin <xu.xin@linux.dev>"
+      - added "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
+      - added "Cc: Simona Vetter <simona@ffwll.ch>"
+      - added "Cc: Daniel Borkmann <daniel@iogearbox.net>"
+      - added "Cc: Namhyung Kim <namhyung@kernel.org>"
+      - added "Cc: David Airlie <airlied@gmail.com>"
+      - added "Cc: James Bottomley <james.bottomley@hansenpartnership.com>"
+      - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+      - added "Cc: Borislav Petkov <bp@alien8.de>"
+      - added "Cc: Nico Pache <nico.pache@linux.dev>"
+      - added "Cc: Masami Hiramatsu <mhiramat@kernel.org>"
+      - added "Cc: Paul Walmsley <pjw@kernel.org>"
+      - added "Cc: Usama Arif <usama.arif@linux.dev>"
+      - added "Cc: Thomas Gleixner <tglx@kernel.org>"
+      - added "Cc: Thomas Zimmermann <tzimmermann@suse.de>"
+      - added "Cc: Oliver Upton <oupton@kernel.org>"
+      - added "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-28-4583d8a23bca@kernel.org"
+      - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
+      - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
+      - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
+      - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
+      - dropped "Cc: Emil Tsalapatis <emil@etsalapatis.com>"
+      - dropped "Cc: Jaya Kumar <jayalk@intworks.biz>"
+      - dropped "Cc: Takashi Iwai (SUSE) <tiwai@suse.de>"
+      - dropped "Cc: Dave Airlie <airlied@gmail.com>"
+      - dropped "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
+      - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
+      - dropped "Cc: Namhyung kim <namhyung@kernel.org>"
+      - dropped "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
+      - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org
+    - fd6a5e1d1a4d "mm/uffd: use predicates for userfaultfd checks"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-31-a1f052500fd7@kernel.org"
+      - added "Cc: Martin K. Petersen <mkp@kernel.org>"
+      - added "Cc: Mark Rutland <mark.rutland@arm.com>"
+      - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+      - added "Cc: Xu Xin <xu.xin@linux.dev>"
+      - added "Cc: Ying Huang <ying.huang@linux.alibaba.com>"
+      - added "Cc: Simona Vetter <simona@ffwll.ch>"
+      - added "Cc: Daniel Borkmann <daniel@iogearbox.net>"
+      - added "Cc: Namhyung Kim <namhyung@kernel.org>"
+      - added "Cc: David Airlie <airlied@gmail.com>"
+      - added "Cc: James Bottomley <james.bottomley@hansenpartnership.com>"
+      - added "Cc: Qi Zheng <qi.zheng@linux.dev>"
+      - added "Cc: Borislav Petkov <bp@alien8.de>"
+      - added "Cc: Nico Pache <nico.pache@linux.dev>"
+      - added "Cc: Masami Hiramatsu <mhiramat@kernel.org>"
+      - added "Cc: Paul Walmsley <pjw@kernel.org>"
+      - added "Cc: Usama Arif <usama.arif@linux.dev>"
+      - added "Cc: Thomas Gleixner <tglx@kernel.org>"
+      - added "Cc: Thomas Zimmermann <tzimmermann@suse.de>"
+      - added "Cc: Oliver Upton <oupton@kernel.org>"
+      - added "Cc: Aneesh Kumar K.V <aneesh.kumar@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20260917-b4-mmap-prepare-vma-flag-sanify-v3-32-4583d8a23bca@kernel.org"
+      - dropped "Cc: "Huang, Ying" <ying.huang@linux.alibaba.com>"
+      - dropped "Cc: James Bottomley <james.bottomley@HansenPartnership.com>"
+      - dropped "Cc: Marc Rutland <mark.rutland@arm.com>"
+      - dropped "Cc: "Aneesh Kumar K.V" <aneesh.kumar@kernel.org>"
+      - dropped "Cc: Emil Tsalapatis <emil@etsalapatis.com>"
+      - dropped "Cc: Jaya Kumar <jayalk@intworks.biz>"
+      - dropped "Cc: Takashi Iwai (SUSE) <tiwai@suse.de>"
+      - dropped "Cc: Dave Airlie <airlied@gmail.com>"
+      - dropped "Cc: "Masami Hiramatsu (Google)" <mhiramat@kernel.org>"
+      - dropped "Cc: "Borislav Petkov (AMD)" <bp@alien8.de>"
+      - dropped "Cc: Namhyung kim <namhyung@kernel.org>"
+      - dropped "Cc: Thomas Zimemrmann <tzimmermann@suse.de>"
+      - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-31-a1f052500fd7@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

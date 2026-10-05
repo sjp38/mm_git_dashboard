@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -8,43 +8,43 @@
     - no role, no role : 9 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - 473e6fd184e7 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+      - f83df84e121f "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com
-      - f97a177163fb "mm/mm_init: factor out pfn_to_zone()" (5/17)
+      - d303a22f5104 "mm/mm_init: factor out pfn_to_zone()" (5/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-7-songmuchun@bytedance.com
-      - 1f9bf59d2972 "mm/sparse: initialize memory sections earlier" (8/17)
+      - 3957514778dd "mm/sparse: initialize memory sections earlier" (8/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-10-songmuchun@bytedance.com
     - series "mm: optimize zone-device memmap initialization", v11. (7 commits)
-      - b0d6fd0eb8f7 "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
+      - 904787198e2b "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-1-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/20260831111638.76012-2-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/all/aiEoByaQdRR3xtM5@nvdebian.thelocal/ [1]
-      - cfb3f192f347 "mm: add a template-based fast path for zone-device page init" (2/7)
+      - aa7a8bd87c23 "mm: add a template-based fast path for zone-device page init" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-4-lizhe.67@bytedance.com
-      - 4cb76e2fbefe "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
+      - 66f0ddb819b2 "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903025806.70825-1-lizhe.67@bytedance.com
-      - dca3fd8baf44 "mm: extend the template fast path to zone-device compound tails" (4/7)
+      - 7665083b1ec5 "mm: extend the template fast path to zone-device compound tails" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-5-lizhe.67@bytedance.com
-      - 2880dba09d45 "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
+      - 6cc9d9c093da "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831111638.76012-7-lizhe.67@bytedance.com
-      - f2bfba0b6dd2 "mm/sparse-vmemmap: set compound page order for device DAX" (5/12)
+      - 21922a5ae4b9 "mm/sparse-vmemmap: set compound page order for device DAX" (5/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com
-      - 30b2dddc5d2c "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (11/12)
+      - b1590aca4803 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (11/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
-      - 5db56e79a849 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
+      - 1b59fa8e1a89 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260929053231.66085-4-songmuchun@bytedance.com
-      - 549f42c2f88a "mm/mm_init: add zone mismatch warning during page init" (5/6)
+      - 13118f5f8953 "mm/mm_init: add zone mismatch warning during page init" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

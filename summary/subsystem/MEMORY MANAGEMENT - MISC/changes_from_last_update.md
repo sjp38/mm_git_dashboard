@@ -1,44 +1,43 @@
-- baseline: v7.3-rc5-30-ga243ede718463 -> v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 1 -> 1 commits (no change)
+  - changed commits
+    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2)
+      - e87de660b101 "selftests/mm: add tests for UFFDIO_MOVE of a uffd-protected swap entry (1/2)"
+        - Authored by no role player, reviewed by nobody
+        - added "Link: https://lore.kernel.org/20261003103030.63380-3-donggeunyoo.kernel@gmail.com"
+        - dropped "Link: https://lore.kernel.org/20260926124145.2878520-3-donggeunyoo.kernel@gmail.com"
+        - Link: https://lore.kernel.org/20261003103030.63380-3-donggeunyoo.kernel@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-unstable: 89 -> 89 commits (no change)
   - series: 10 (62) -> 10 (62) (no change)
-    - no role, nobody: 13 -> 12 commits
-    - no role, no role : 31 -> 32 commits
+    - no role, nobody: 12 -> 12 commits (no change)
+    - no role, no role : 32 -> 32 commits (no change)
     - no role, reviewer: 19 -> 19 commits (no change)
     - no role, maintainer: 9 -> 9 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 14 -> 14 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "kselftest: mm: fix some failure of split_huge_page_test", v9. (4)
-      - 29fcbc820d04 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge() (1/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Zi Yan <ziy@nvidia.com>"
-        - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20261001-fix_split-v9-2-0f4ba8bbdbdf@arm.com
-      - 87b4f9bf25b2 "kselftest: mm: integrate huge page checks (2/4)"
-        - Authored by no role player, reviewed by no role player
-        - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-        - Link: https://lore.kernel.org/20261001-fix_split-v9-3-0f4ba8bbdbdf@arm.com
-- mm-new: 2 -> 2 commits (no change)
+- mm-new: 2 -> 5 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 890d2a2d17bc "selftests/mm: mrelease_test: fix retry limit"
+    - no role, nobody: 1 -> 3 commits
+    - no role, no role : 1 -> 2 commits
+  - new commits
+    - 2abbbf10729b "docs: hugetlbpage.rst: fix typo in per-node attribute description"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
+    - a3e46b375f0f "selftests/mm: hugetlb-read-hwpoison: add setup of HugeTLB pages"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - Link: https://lore.kernel.org/CANOyQmFzsssM_BXHUDrV+UuVD5SZMBmSkg3UQnmw9Ns1PV7GCQ@mail.gmail.com
+      - Link: https://lore.kernel.org/20261004205458.119608-1-jaeyeon.lee.dev@gmail.com
+    - 5a15985b14cc "selftests/mm: hugetlb_madv_vs_map: fix TAP plan mismatches"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261004230018.190880-1-jaeyeon.lee.dev@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

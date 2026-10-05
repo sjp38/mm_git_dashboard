@@ -1,10 +1,10 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - e977433abd8a "mm: page_alloc: make defrag_mode retries follow the promoted order"
+    - 4578161572c1 "mm: page_alloc: make defrag_mode retries follow the promoted order"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260929174553.175333-1-kirill@shutemov.name
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -15,56 +15,56 @@
     - no role, maintainer: 1 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-    - b30ede0a8ceb "mm: drop stale MAX_ORDER references"
+    - 22205892a2bb "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
     - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2 commits)
-      - 3b45b108fefb "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
+      - be04932aa359 "mm/page_isolation: fix UBSAN shift-out-of-bounds warning" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
-      - 1b56d94da343 "mm/page_isolation: guard compound_order() against racing" (1/2)
+      - 634d7fe342c5 "mm/page_isolation: guard compound_order() against racing" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
-      - 708dc6197bda "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
+      - 8b98d8507e31 "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
         - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
-    - c3980e19d56f "mm: adjust out-dated document of __GFP_NOFAIL"
+    - 4acad7b6320f "mm: adjust out-dated document of __GFP_NOFAIL"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
-      - dd2c322c9434 "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
+      - 17b311870d6f "mm/page_alloc: replace custom bad page ratelimiting logic" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260811172156.356053-3-pfalcato@suse.de
-      - dc0884b8ce6b "mm: replace PF_KCOMPACTD flag with kthread_func() check" (3/4)
+      - 356261cefb52 "mm: replace PF_KCOMPACTD flag with kthread_func() check" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
-    - f07ca61237fb "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
+    - db4be8ce9fae "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260903092126.24685-1-hongfu.li@linux.dev
-    - 39a9c209c62a "mm: page_alloc: add missing hooks to bulk allocation path"
+    - 0ed95c0182b9 "mm: page_alloc: add missing hooks to bulk allocation path"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908102356.344075-1-liuqiqi@kylinos.cn
     - series "mm: refactor zonelist constructors and iterators", v3. (2 commits)
-      - 78b90fc612c5 "mm: refactor find_next_best_node to find_next_best_node_in" (0/2)
+      - 2d12559c1946 "mm: refactor find_next_best_node to find_next_best_node_in" (0/2)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net
-      - 91e3fc534f34 "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists()" (1/2)
+      - f28c02262f87 "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923022902.2433614-3-gourry@gourry.net
-    - 6f9bd2a31a26 "mm/page_alloc: apply per-task GFP context in bulk allocator"
+    - 55dc0d86cbde "mm/page_alloc: apply per-task GFP context in bulk allocator"
       - Authored by no role player, reviewed by no role player
       - Link: https://sashiko.dev/#/patchset/20260907120949.418450-1-liuqiqi%40kylinos.cn
       - Link: https://lore.kernel.org/all/20260907120949.418450-1-liuqiqi@kylinos.cn/ [1]
       - Link: https://lore.kernel.org/20260915074928.327471-1-liuqiqi@kylinos.cn
-    - 2e5c0d1776cd "mm/page_alloc: do not boost watermarks in kdump capture kernels"
+    - 43c7ce73c2da "mm/page_alloc: do not boost watermarks in kdump capture kernels"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
-      - ee7d078ad185 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - 4f9b7941209f "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-    - 33eb75fed9ee "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - b0105771014b "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
