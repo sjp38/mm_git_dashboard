@@ -8,31 +8,31 @@
     - no role, reviewer: 4 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 801ea4685199 "mm/ksm: mark migration stores with WRITE_ONCE()"
+    - 4f2d86080e78 "mm/ksm: mark migration stores with WRITE_ONCE()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260824112433.191301-1-nicoyip.dev@gmail.com
     - series "docs/ksm: fix advisor documentation and comment", v3. (2 commits)
-      - 1a8b2ca21d54 "docs: ksm: fix typos in sysfs knob names" (0/2)
+      - f71868035b5a "docs: ksm: fix typos in sysfs knob names" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260824061010.3343959-1-tujinjiang@huawei.com
         - Link: https://lore.kernel.org/20260824061010.3343959-2-tujinjiang@huawei.com
-      - 8dcd662b4c76 "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
+      - 0a3f46918554 "mm/ksm: fix advisor_min_pages_to_scan description" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/linux-mm/20231028000945.2428830-2-shr@devkernel.io/ [1]
         - Link: https://lore.kernel.org/20260824061010.3343959-3-tujinjiang@huawei.com
-    - 21944e0525dd "docs/mm: ksm: use the renamed ksm structure names"
+    - 3d07d92e1245 "docs/mm: ksm: use the renamed ksm structure names"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
-    - 486292637c37 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested"
+    - 3066e3706690 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-33-a1f052500fd7@kernel.org
-      - c28c4e65c713 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 685f3c292e23 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - b94955ea18b9 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - f332921eb834 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - 24cc38482d8a "mm-update-comments-to-refer-to-anon-rmap-rather-than-anon_vma-fix"
+    - e8461fa63401 "mm-update-comments-to-refer-to-anon-rmap-rather-than-anon_vma-fix"
       - Authored by a maintainer, reviewed by nobody
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

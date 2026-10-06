@@ -1,16 +1,14 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66
+- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 2 -> 2 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 2 -> 1 commits
+  - series: 0 (1) -> 0 (0)
+    - no role, nobody: 1 -> 0 commits
     - no role, no role : 1 -> 1 commits (no change)
-  - changed commits
+  - dropped commits
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2)
       - e87de660b101 "selftests/mm: add tests for UFFDIO_MOVE of a uffd-protected swap entry (1/2)"
         - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261003103030.63380-3-donggeunyoo.kernel@gmail.com"
-        - dropped "Link: https://lore.kernel.org/20260926124145.2878520-3-donggeunyoo.kernel@gmail.com"
         - Link: https://lore.kernel.org/20261003103030.63380-3-donggeunyoo.kernel@gmail.com
 - mm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
@@ -24,19 +22,15 @@
     - maintainer, nobody: 14 -> 14 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 5 commits
+- mm-new: 5 -> 5 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 3 commits
-    - no role, no role : 1 -> 2 commits
-  - new commits
-    - 2abbbf10729b "docs: hugetlbpage.rst: fix typo in per-node attribute description"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
-    - a3e46b375f0f "selftests/mm: hugetlb-read-hwpoison: add setup of HugeTLB pages"
+    - no role, nobody: 3 -> 2 commits
+    - no role, no role : 2 -> 3 commits
+  - changed commits
+    - 1127142fabb2 "selftests/mm: hugetlb_madv_vs_map: fix TAP plan mismatches"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261004205458.119608-1-jaeyeon.lee.dev@gmail.com
-    - 5a15985b14cc "selftests/mm: hugetlb_madv_vs_map: fix TAP plan mismatches"
-      - Authored by no role player, reviewed by nobody
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lore.kernel.org/20261004230018.190880-1-jaeyeon.lee.dev@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

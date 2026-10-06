@@ -9,18 +9,18 @@
     - no role, maintainer: 2 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 29e321d47853 "mm/memory_hotplug: factor out node_is_memoryless()"
+    - eb98cc8927fe "mm/memory_hotplug: factor out node_is_memoryless()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
-    - ed6ecf46c90f "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
+    - c00314d057b9 "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
       - Authored by a maintainer, reviewed by nobody
-      - 7eb5870afbc9 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/12)
+      - 3e15f0ba317d "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/12)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260930140627.57431-8-songmuchun@bytedance.com
-      - fa95bd3ad8f2 "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
+      - f810170539d6 "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-      - e772aa6fa9e8 "mm/memory_hotplug: drop CONFIG_HAVE_ARCH_PFN_VALID handling from pfn_to_online_page()" (12/13)
+      - fd225a56c477 "mm/memory_hotplug: drop CONFIG_HAVE_ARCH_PFN_VALID handling from pfn_to_online_page()" (12/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-13-54d81d65e125@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

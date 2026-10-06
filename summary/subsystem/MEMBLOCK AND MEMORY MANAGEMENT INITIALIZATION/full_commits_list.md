@@ -8,43 +8,43 @@
     - no role, no role : 9 commits
     - no role, reviewer: 1 commits
   - full commits list
-      - f83df84e121f "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
+      - db54efa51086 "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com
-      - d303a22f5104 "mm/mm_init: factor out pfn_to_zone()" (5/17)
+      - 2debe68ccb7d "mm/mm_init: factor out pfn_to_zone()" (5/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-7-songmuchun@bytedance.com
-      - 3957514778dd "mm/sparse: initialize memory sections earlier" (8/17)
+      - 4573ba2e2c89 "mm/sparse: initialize memory sections earlier" (8/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260910063256.64386-10-songmuchun@bytedance.com
     - series "mm: optimize zone-device memmap initialization", v11. (7 commits)
-      - 904787198e2b "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
+      - 03dfa9595936 "mm: fix stale ZONE_DEVICE refcount comment" (0/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-1-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/20260831111638.76012-2-lizhe.67@bytedance.com
         - Link: https://lore.kernel.org/all/aiEoByaQdRR3xtM5@nvdebian.thelocal/ [1]
-      - aa7a8bd87c23 "mm: add a template-based fast path for zone-device page init" (2/7)
+      - 02d3064b5eb2 "mm: add a template-based fast path for zone-device page init" (2/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-4-lizhe.67@bytedance.com
-      - 66f0ddb819b2 "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
+      - e61d38a00ed9 "mm-add-a-template-based-fast-path-for-zone-device-page-init-fix" (3/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260903025806.70825-1-lizhe.67@bytedance.com
-      - 7665083b1ec5 "mm: extend the template fast path to zone-device compound tails" (4/7)
+      - 7f5dfaa23a10 "mm: extend the template fast path to zone-device compound tails" (4/7)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260831111638.76012-5-lizhe.67@bytedance.com
-      - 6cc9d9c093da "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
+      - 0e8cbceaa13a "mm: use memcpy_nontemporal() in zone-device template copies" (6/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831111638.76012-7-lizhe.67@bytedance.com
-      - 21922a5ae4b9 "mm/sparse-vmemmap: set compound page order for device DAX" (5/12)
+      - e6234323a31a "mm/sparse-vmemmap: set compound page order for device DAX" (5/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com
-      - b1590aca4803 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (11/12)
+      - 3ac9a1f29c59 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (11/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
-      - 1b59fa8e1a89 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
+      - ecd0913ae9ef "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260929053231.66085-4-songmuchun@bytedance.com
-      - 13118f5f8953 "mm/mm_init: add zone mismatch warning during page init" (5/6)
+      - 90d7eeed5218 "mm/mm_init: add zone mismatch warning during page init" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

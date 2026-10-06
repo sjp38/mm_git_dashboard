@@ -9,43 +9,43 @@
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 31e832d5fba5 "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
+      - 2f9ed5a144d5 "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260817220810.1175596-3-gourry@gourry.net
-    - 8ef6724f4f27 "mm/madvise: swap in CoW'd MAP_PRIVATE-file mappings on MADV_WILLNEED"
+    - a4c2ee301ed8 "mm/madvise: swap in CoW'd MAP_PRIVATE-file mappings on MADV_WILLNEED"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/aprjOxDy3JCPb2oa@gremlin
-      - 6c94e06ea35e "mm/collapse: implement MADV_COLLAPSE in madvise.c" (12/13)
+      - dcfde85f5cc1 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (12/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
-      - 496247d4d425 "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range" (1/2)
+      - 3f9397486f1f "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260926105110.2156652-3-gourry@gourry.net
-    - 247b9b48352a "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
+    - c9d1d87f19a7 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org
-    - eabab150fc47 "mm/madvise: update is_valid_guard_vma() to use vma_can_merge()"
+    - cfff929edcaa "mm/madvise: update is_valid_guard_vma() to use vma_can_merge()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-29-a1f052500fd7@kernel.org
-    - f0308a046a2e "mm/vma: introduce vma[_flags]_is_mm_backed()"
+    - 64c174ac322a "mm/vma: introduce vma[_flags]_is_mm_backed()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-30-a1f052500fd7@kernel.org
-    - e5cd7d6516b3 "mm/madvise: use predicates for madvise(..., MADV_DOFORK)"
+    - aae0e402d9db "mm/madvise: use predicates for madvise(..., MADV_DOFORK)"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-32-a1f052500fd7@kernel.org
-    - affe9769e65f "mm/madvise: reclaim isolated folios if PTE restart fails"
+    - cee0defefbed "mm/madvise: reclaim isolated folios if PTE restart fails"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260912110832.3203902-1-gourry@gourry.net
-    - af656f7515d3 "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
+    - 2375fe97ed7d "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260912110540.3203010-1-gourry@gourry.net
-      - c28c4e65c713 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 685f3c292e23 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - b94955ea18b9 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - f332921eb834 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - 52ad90e39281 "mm: fix typos in various comments"
+    - e262f51b728b "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

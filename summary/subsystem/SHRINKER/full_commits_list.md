@@ -8,16 +8,16 @@
     - no role, no role : 1 commits
     - no role, reviewer: 2 commits
   - full commits list
-    - 2a5b2d783412 "mm/list_lru: disable memcg awareness under cgroup_disable=memory"
+    - ea7720fab952 "mm/list_lru: disable memcg awareness under cgroup_disable=memory"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260902093202.609559-1-qinyuntan@linux.alibaba.com
-    - 542cba396e80 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
+    - 88f22ee37392 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
-      - 6cceab098811 "memcg: move memcg private ID refcount to objcg" (3/4)
+      - 823b32ef4802 "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-    - 52ad90e39281 "mm: fix typos in various comments"
+    - e262f51b728b "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

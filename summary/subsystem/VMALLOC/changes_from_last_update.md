@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66
+- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -11,14 +11,10 @@
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 11 -> 11 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - 5186259db9b5 "mm/vmalloc: bail out early on invalid page_shift in __vmap_pages_range_noflush()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261004071639.119857-1-jiangwenxiaomi@gmail.com
+    - no role, no role : 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
