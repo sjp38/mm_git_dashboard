@@ -3,12 +3,42 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 20 -> 20 commits (no change)
-  - series: 6 (14) -> 6 (14) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 17 -> 17 commits (no change)
+- mm-stable: 0 -> 5 commits
+  - series: 0 (0) -> 3 (5)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 4 commits
+  - changed commits
+    - series "make unused huge shrinker memcg aware", v4. (3)
+      - 877c1d0059ca "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
+        - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
+    - series "selftests/cgroup: fixes for test_zswap on single core VM", v4. (2)
+      - 5547ee3a76b2 "selftests/cgroup: test_zswap: wait for cgroup to unpopulate in test_zswap_writeback (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260828033741.2184560-1-wfelipe@google.com
+        - Link: https://lore.kernel.org/20260828033741.2184560-2-wfelipe@google.com
+      - 0567c7eaefd7 "selftests/cgroup: test_zswap: fix implicit unsigned promotion bug in test_no_kmem_bypass (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260828033741.2184560-3-wfelipe@google.com
+    - series "mm/page_io: folio conversion cleanups", v2. (6)
+      - a6479602b783 "mm/swap: rename __swap_writepage() to __swap_writeout() (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-6-649728091117@columbia.edu
+    - series "mm, swap: don't spin on a bad swap entry", v3. (2)
+      - d5e1dc71ce38 "mm, swap: distinguish a malformed swap entry from a dying device (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
+        - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
+- mm-unstable: 20 -> 15 commits
+  - series: 6 (14) -> 3 (9)
+    - no role, no role : 3 -> 2 commits
+    - no role, maintainer: 17 -> 13 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

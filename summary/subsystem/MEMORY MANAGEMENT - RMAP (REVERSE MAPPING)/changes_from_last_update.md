@@ -3,15 +3,28 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
+- mm-stable: 0 -> 2 commits
+  - series: 0 (0) -> 1 (1)
+    - no role, reviewer: 0 -> 1 commits
+    - maintainer, no role : 0 -> 1 commits
+  - changed commits
+    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
+      - 47e725702b0b "mm: make per-VMA locks available universally (0/7)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
+    - 39580da0aa8d "mm/rmap: remove stale hugetlb check in try_to_unmap_one"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260831082849.3573957-1-dev.jain@arm.com
+- mm-unstable: 8 -> 6 commits
+  - series: 1 (3) -> 0 (2)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, reviewer: 3 -> 2 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, no role : 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

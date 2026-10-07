@@ -3,12 +3,30 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
+- mm-stable: 0 -> 3 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, no role : 0 -> 2 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - d3863210464f "mm/ksm: mark migration stores with WRITE_ONCE()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260824112433.191301-1-nicoyip.dev@gmail.com
+    - series "docs/ksm: fix advisor documentation and comment", v3. (2)
+      - 172c05ebab49 "docs: ksm: fix typos in sysfs knob names (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260824061010.3343959-1-tujinjiang@huawei.com
+        - Link: https://lore.kernel.org/20260824061010.3343959-2-tujinjiang@huawei.com
+      - 585bb36e6ab8 "mm/ksm: fix advisor_min_pages_to_scan description (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/linux-mm/20231028000945.2428830-2-shr@devkernel.io/ [1]
+        - Link: https://lore.kernel.org/20260824061010.3343959-3-tujinjiang@huawei.com
+- mm-unstable: 8 -> 5 commits
+  - series: 1 (4) -> 0 (2)
+    - no role, no role : 3 -> 1 commits
+    - no role, reviewer: 4 -> 3 commits
     - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

@@ -1,25 +1,190 @@
 - baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66 (no change)
-- mm-hotfixes-stable: 0 -> 0 commits (no change)
+- mm-hotfixes-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - 2fb552b0bee7 "mm: don't schedule deferred kernel page table freeing while booting"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
+      - Link: https://lore.kernel.org/20260925050647.86913-1-mikhail.v.gavrilov@gmail.com
+      - Link: https://lore.kernel.org/20260924064321.23787-1-mikhail.v.gavrilov@gmail.com
+- mm-hotfixes-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 96 -> 96 commits (no change)
-  - series: 11 (63) -> 11 (64)
+    - no role, maintainer: 1 -> 0 commits
+- mm-stable: 0 -> 31 commits
+  - series: 0 (0) -> 7 (26)
+    - no role, no role : 0 -> 22 commits
+    - no role, reviewer: 0 -> 5 commits
+    - no role, maintainer: 0 -> 1 commits
+    - reviewer, no role : 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 1 commits
+    - maintainer, no role : 0 -> 1 commits
+  - changed commits
+    - 51216825099e "mm: use a folio in the softleaf_is_device_private path"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260819095144.45660-1-hongfu.li@linux.dev
+      - Link: https://lore.kernel.org/all/e20678ed-3fa1-4677-a1d7-e2af481e8302@kernel.org/
+    - 197654a838c8 "mm/vmstat: annotate data race for per-cpu pageset fields"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260827070546.1336383-1-hui.zhu@linux.dev
+    - b482e72da822 "mm: remove unused anon_vma_trylock_write()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260827071845.17636-1-hao.li@linux.dev
+    - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v6. (17)
+      - 48070b721a60 "mm/sparse: relax struct mem_section size constraints (0/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/all/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+      - 5e72deef11ba "mm/sparse-vmemmap: rename HVO order macros (1/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-3-songmuchun@bytedance.com
+      - 89fb8ed75e3c "mm/mm_init: skip initializing shared vmemmap tail pages (2/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-4-songmuchun@bytedance.com
+      - 057847a7faa3 "mm/sparse-vmemmap: initialize shared tail vmemmap pages on allocation (3/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-5-songmuchun@bytedance.com
+      - ed3a33cd73da "mm/sparse-vmemmap: support section-based vmemmap accounting (4/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-6-songmuchun@bytedance.com
+      - 38fe068a2df0 "mm/sparse-vmemmap: move helpers ahead of future callers (6/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-8-songmuchun@bytedance.com
+      - a64b8c60c6ef "mm/sparse-vmemmap: support section-based vmemmap optimization (7/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-9-songmuchun@bytedance.com
+      - 74d2a4e89f19 "mm/sparse: initialize memory sections earlier (8/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-10-songmuchun@bytedance.com
+      - b8abb1c0c40f "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization (9/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-11-songmuchun@bytedance.com
+      - 328649715319 "mm/sparse-vmemmap: remove SPARSEMEM_VMEMMAP_PREINIT support (10/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-12-songmuchun@bytedance.com
+      - 1269621f9a87 "mm/sparse: inline usemap allocation into sparse_init_nid() (11/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-13-songmuchun@bytedance.com
+      - 7d55d0a1187d "mm/sparse: remove section_map_size() (12/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-14-songmuchun@bytedance.com
+      - a28e0348838f "mm/hugetlb: localize struct huge_bootmem_page (15/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910063256.64386-17-songmuchun@bytedance.com
+    - series "memcg: remove the v1 soft limit", v2. (8)
+      - af88378942d3 "memcg: remove mem_cgroup_shrink_node() (1/8)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev
+      - d5d1712c5928 "memcg: remove lru_gen_soft_reclaim() (4/8)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev
+    - series "mm/memory: improve insert_pages() error handling", v3. (2)
+      - 1cb3621c6e9a "mm/memory: simplify error handling in insert_pages() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/cover.1788022178.git.thnkslprpt@gmail.com
+        - Link: https://lore.kernel.org/dd3a672c858b38c7525541b19a919e120c4e5a0e.1788022178.git.thnkslprpt@gmail.com
+      - 3830ec6477e2 "mm/memory: return -ENOMEM for page-table allocation failure in insert_pages() (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/9d990c3ed43608e674d4b12a8c221a09fd200f49.1788022178.git.thnkslprpt@gmail.com
+    - cbbed3c303f9 "mm: adjust out-dated document of __GFP_NOFAIL"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
+    - series "mm, swap: don't spin on a bad swap entry", v3. (2)
+      - d5e1dc71ce38 "mm, swap: distinguish a malformed swap entry from a dying device (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
+        - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
+      - fbc63fccf46d "mm: fail the fault on a malformed swap entry instead of retrying it (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260818-swap-v3-2-d3fa52598a59@debian.org
+    - series "mm: replace custom ratelimiting logic". (2)
+      - 0c39f49a22bf "mm: replace custom bad page map ratelimiting logic (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260811172156.356053-1-pfalcato@suse.de
+        - Link: https://lore.kernel.org/20260811172156.356053-2-pfalcato@suse.de
+    - 0041eef981cc "mm/vmpressure: remove window size TODO"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/all/20260831130316.448-1-tahasezer.is@gmail.com/
+      - Link: https://lore.kernel.org/linux-mm/20260724054305.516126-1-cui.tao@linux.dev/
+      - Link: https://lore.kernel.org/linux-mm/20260715143646.15828-1-gaikwad.dcg@gmail.com/
+      - Link: https://lore.kernel.org/all/20260227221555.29969-1-mcq@disroot.org/
+      - Link: https://lore.kernel.org/20260831-remove-vmpressure-todo-v1-1-498515e59cdf@kernel.org
+    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
+      - 47e725702b0b "mm: make per-VMA locks available universally (0/7)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
+    - series "mm: optimize zone-device memmap initialization", v11. (7)
+      - a5d43b7cd642 "mm: add a set_page_section_from_pfn() helper (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260831111638.76012-3-lizhe.67@bytedance.com
+    - series "mm: Drop pxd_ERROR()". (8)
+      - fbcdf5b52f3c "mm: make ptval_to_str() generally available (0/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260831054331.625505-1-anshuman.khandual@arm.com
+        - Link: https://lore.kernel.org/20260831054331.625505-2-anshuman.khandual@arm.com
+      - 0666fc9d4432 "mm: stop using pxd_ERROR() (1/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260831054331.625505-3-anshuman.khandual@arm.com
+    - series "mm: remove three unused helpers from mm.h", v2. (2)
+      - 73c77f98e234 "mm: remove unused mark_page_reserved() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-0-f6474e169c23@columbia.edu
+        - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-1-f6474e169c23@columbia.edu
+      - 54c4c04553ce "mm: remove unused totalram_pages_inc() and totalram_pages_dec() (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260901-mm-remove-unused-helpers-v2-2-f6474e169c23@columbia.edu
+- mm-unstable: 96 -> 65 commits
+  - series: 11 (64) -> 4 (37)
     - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 57 -> 57 commits (no change)
-    - no role, reviewer: 18 -> 18 commits (no change)
-    - no role, maintainer: 6 -> 6 commits (no change)
-    - reviewer, no role : 2 -> 2 commits (no change)
-    - reviewer, reviewer: 4 -> 4 commits (no change)
-    - maintainer, no role : 3 -> 3 commits (no change)
+    - no role, no role : 57 -> 35 commits
+    - no role, reviewer: 18 -> 13 commits
+    - no role, maintainer: 6 -> 5 commits
+    - reviewer, no role : 2 -> 1 commits
+    - reviewer, reviewer: 4 -> 3 commits
+    - maintainer, no role : 3 -> 2 commits
     - maintainer, reviewer: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-stable: 0 -> 0 commits (no change)
+- mm-nonmm-stable: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
-- mm-nonmm-unstable: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - 9decb604dc06 "fork: honor task_struct's declared alignment"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-nonmm-unstable -> mm-nonmm-stable
+      - Link: https://lore.kernel.org/20260710123957.31774-1-kmehltretter@gmail.com
+- mm-nonmm-unstable: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits

@@ -3,12 +3,19 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 13 -> 13 commits (no change)
-  - series: 0 (5) -> 0 (5) (no change)
+- mm-stable: 0 -> 1 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, no role : 0 -> 1 commits
+  - changed commits
+    - series "mm: reject zone device folios in more folio walkers", v2. (3)
+      - ab7ace574f3d "mm/madvise: skip zone device folios in cold/pageout PMD range (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260817220810.1175596-3-gourry@gourry.net
+- mm-unstable: 13 -> 12 commits
+  - series: 0 (5) -> 0 (4)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 8 -> 8 commits (no change)
+    - no role, no role : 8 -> 7 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)

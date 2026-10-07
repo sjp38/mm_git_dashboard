@@ -3,11 +3,30 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 11 -> 11 commits (no change)
-  - series: 1 (6) -> 1 (6) (no change)
-    - no role, no role : 10 -> 10 commits (no change)
+- mm-stable: 0 -> 3 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, no role : 0 -> 3 commits
+  - changed commits
+    - 4f7d72267347 "mm/gup_test: report actual pinned bytes"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260831101304.162867-1-sarthak.sharma@arm.com
+    - series "mm: gup: cleanup gup_fast call chain", v3. (2)
+      - fed3c5ac4afb "mm: gup: move pmd_protnone() into gup_fast_pmd_leaf() (0/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260828015542.125576330@ruivo.org
+        - Link: https://lore.kernel.org/20260828015542.245315718@ruivo.org
+        - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u [1]
+        - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
+      - a09bf2253042 "mm: gup: cleanup the gup_fast_*() call chain (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260828015542.334186653@ruivo.org
+        - Link: https://lore.kernel.org/all/85e760cf-b994-40db-8d13-221feee55c60@redhat.com/T/#u
+- mm-unstable: 11 -> 8 commits
+  - series: 1 (6) -> 0 (4)
+    - no role, no role : 10 -> 7 commits
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

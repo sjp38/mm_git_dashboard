@@ -3,24 +3,64 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 33 -> 33 commits (no change)
-  - series: 8 (25) -> 8 (25) (no change)
+- mm-stable: 0 -> 9 commits
+  - series: 0 (0) -> 2 (8)
+    - no role, no role : 0 -> 6 commits
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 2 commits
+  - changed commits
+    - d67aa44be6d9 "mm/swap: remove unused declaration swapcache_clear()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260827082722.1809702-1-yuehaibing@huawei.com
+    - series "mm/page_io: folio conversion cleanups", v2. (6)
+      - 0361b8f820c1 "mm/page_io: convert write completion handlers to folios (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-0-649728091117@columbia.edu
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-1-649728091117@columbia.edu
+      - 43999735491e "mm/page_io: use swap entries directly in zeromap helpers (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-3-649728091117@columbia.edu
+      - 48d54b07157c "mm/page_io: rename bio_associate_blkg_from_page() (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-4-649728091117@columbia.edu
+      - 7be17d6d935c "mm/page_io: refer to folios in swap_writeout() comments (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-5-649728091117@columbia.edu
+      - a6479602b783 "mm/swap: rename __swap_writepage() to __swap_writeout() (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260829-b4-page_io-folios-v2-6-649728091117@columbia.edu
+    - series "mm, swap: don't spin on a bad swap entry", v3. (2)
+      - d5e1dc71ce38 "mm, swap: distinguish a malformed swap entry from a dying device (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
+        - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
+    - series "mm: avoid large folio splits when swap is unavailable", v7. (4)
+      - c50c376e1fd6 "mm: distinguish large folio swap allocation failures (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260830042920.2280454-3-xueyuan.chen21@gmail.com
+    - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
+      - 27517f701ff3 "mm: replace PF_KSWAPD flag with kthread_func() check (2/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
+- mm-unstable: 33 -> 24 commits
+  - series: 8 (25) -> 6 (17)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 12 -> 12 commits (no change)
-    - no role, reviewer: 4 -> 4 commits (no change)
-    - no role, maintainer: 8 -> 8 commits (no change)
+    - no role, no role : 12 -> 6 commits
+    - no role, reviewer: 4 -> 3 commits
+    - no role, maintainer: 8 -> 6 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 51fc74c5854f "mm/swap: submit the last readahead batch before unplugging"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Christoph Hellwig <hch@lst.de>"
-      - dropped "Cc: Christoph Hellwig <hch@lst.de>"
-      - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
 - mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)

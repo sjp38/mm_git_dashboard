@@ -4,13 +4,55 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 15 -> 15 commits (no change)
-  - series: 3 (8) -> 3 (8) (no change)
+  - changed commits
+    - f077f19a3ce0 "mm: page_alloc: make defrag_mode retries follow the promoted order"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lore.kernel.org/20261006091815.897133-1-kirill@shutemov.name"
+      - dropped "Link: https://lore.kernel.org/20260929174553.175333-1-kirill@shutemov.name"
+      - Link: https://lore.kernel.org/20261006091815.897133-1-kirill@shutemov.name
+- mm-stable: 0 -> 7 commits
+  - series: 0 (0) -> 2 (5)
+    - no role, reviewer: 0 -> 6 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - dc954a916d53 "mm: drop stale MAX_ORDER references"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260819082052.3338603-1-xiqi2@huawei.com
+    - series "mm/page_isolation: fix UBSAN shift-out-of-bounds in isolate_single_pageblock", v3. (2)
+      - eba0e6297edd "mm/page_isolation: fix UBSAN shift-out-of-bounds warning (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260825120549.966271-2-xiqi2@huawei.com
+      - 4c767c5dd9bc "mm/page_isolation: guard compound_order() against racing (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260825120549.966271-3-xiqi2@huawei.com
+    - series "make unused huge shrinker memcg aware", v4. (3)
+      - 877c1d0059ca "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
+        - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
+    - cbbed3c303f9 "mm: adjust out-dated document of __GFP_NOFAIL"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260829025847.26779-1-richard.weiyang@gmail.com
+    - series "mm: replace custom ratelimiting logic". (2)
+      - 0685b37a7098 "mm/page_alloc: replace custom bad page ratelimiting logic (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260811172156.356053-3-pfalcato@suse.de
+    - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
+      - 44b74ec3ae5a "mm: replace PF_KCOMPACTD flag with kthread_func() check (3/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
+- mm-unstable: 15 -> 8 commits
+  - series: 3 (8) -> 1 (3)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 10 -> 10 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, reviewer: 10 -> 4 commits
+    - no role, maintainer: 1 -> 0 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

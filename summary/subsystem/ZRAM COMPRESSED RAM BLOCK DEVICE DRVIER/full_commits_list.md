@@ -1,25 +1,28 @@
 - baseline: v7.3-rc5-337-gff47652a4b66
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 0 total, 0 (0) series, 0 non-series commits
-- mm-unstable: 4 total, 1 (1) series, 3 non-series commits
+- mm-stable: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, maintainer: 1 commits
-    - maintainer, nobody: 2 commits
+    - maintainer, nobody: 1 commits
   - full commits list
-    - cf2c35d36d95 "zram: fix idle age_sec underflow in idle_store()"
+    - 59042a88efe1 "zram: fix idle age_sec underflow in idle_store()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260828083149.45760-1-jiahao.kernel@gmail.com
-    - 6d0c068a15c5 "zram: remove unreachable kernel_read_file_from_path() return check"
+    - eb2c18a5f117 "zram: remove unreachable kernel_read_file_from_path() return check"
       - Authored by a maintainer, reviewed by nobody
       - Link: https://lore.kernel.org/20260901051335.2202390-1-senozhatsky@chromium.org
+- mm-unstable: 2 total, 1 (1) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, maintainer: 1 commits
+    - maintainer, nobody: 1 commits
+  - full commits list
     - series "zsmallc: remove old object read API". (2 commits)
-      - b3d0439ccc1b "zram: convert to SG-list zsmalloc object read API" (0/2)
+      - 15ff15144199 "zram: convert to SG-list zsmalloc object read API" (0/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260907105739.1793316-1-senozhatsky@chromium.org
         - Link: https://lore.kernel.org/20260907105739.1793316-2-senozhatsky@chromium.org
-    - b042ba788c9d "zram: fix short reads from block_state"
+    - e661b26af797 "zram: fix short reads from block_state"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260929071846.24829-1-pooyan.azadparvar@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

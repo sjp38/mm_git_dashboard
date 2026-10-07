@@ -3,14 +3,57 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 68 -> 68 commits (no change)
-  - series: 9 (57) -> 9 (57) (no change)
+- mm-stable: 0 -> 8 commits
+  - series: 0 (0) -> 3 (6)
+    - no role, no role : 0 -> 4 commits
+    - no role, reviewer: 0 -> 3 commits
+    - no role, maintainer: 0 -> 1 commits
+  - changed commits
+    - ed2052b119be "selftests/mm: khugepaged: remove str_dup() usage"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
+      - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
+    - series "mm: khugepaged: fix tracepoint UAF", v5. (3)
+      - 942c8ec27aa4 "mm: khugepaged: fix swap entry value to folio_pfn() (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260909025804.3233645-1-vernon2gm@gmail.com
+        - Link: https://lore.kernel.org/20260909025804.3233645-2-vernon2gm@gmail.com
+      - ba2f1f92ddfa "mm: khugepaged: fix folio is used after pte_unmap_unlock() (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260909025804.3233645-3-vernon2gm@gmail.com
+      - 9010383e71e6 "mm: khugepaged: fix folio is used after folio_put/unlock() (2/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260909025804.3233645-4-vernon2gm@gmail.com
+    - series "mm: reject zone device folios in more folio walkers", v2. (3)
+      - 3a09df924fa2 "mm/huge_memory: skip zone device folios in madvise_free_huge_pmd() (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260817220810.1175596-1-gourry@gourry.net
+        - Link: https://lore.kernel.org/20260817220810.1175596-2-gourry@gourry.net
+    - 7ae9c1d82ed7 "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
+    - series "Fix deferred_split_isolate() and drop the split workaround", v2. (2)
+      - 5da8ec3262bb "mm/huge_memory: do not touch frozen folios in deferred_split_isolate() (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260831091514.1879786-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260831091514.1879786-2-kirill@shutemov.name
+      - 81ad3e1d15bc "mm/huge_memory: dequeue the deferred split after the split freeze (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260831091514.1879786-3-kirill@shutemov.name
+- mm-unstable: 68 -> 60 commits
+  - series: 9 (57) -> 6 (51)
     - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 54 -> 54 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, no role : 6 -> 2 commits
+    - no role, reviewer: 54 -> 51 commits
+    - no role, maintainer: 2 -> 1 commits
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)

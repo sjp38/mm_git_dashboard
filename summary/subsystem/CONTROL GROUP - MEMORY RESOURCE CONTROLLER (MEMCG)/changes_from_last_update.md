@@ -3,16 +3,95 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 47 -> 47 commits (no change)
-  - series: 10 (38) -> 10 (38) (no change)
+- mm-stable: 0 -> 16 commits
+  - series: 0 (0) -> 4 (11)
+    - no role, no role : 0 -> 1 commits
+    - no role, maintainer: 0 -> 7 commits
+    - maintainer, no role : 0 -> 8 commits
+  - changed commits
+    - c20cf1c3c8cd "mm/memcontrol: fix data-race on reading jiffies_64"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260827025457.116191-1-jiayuan.chen@linux.dev
+    - c333c6e26ca3 "mm/memcontrol: remove unused memcg parameter in calculate_high_delay()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260825120153.1405-1-hongfu.li@linux.dev
+    - series "make unused huge shrinker memcg aware", v4. (3)
+      - 877c1d0059ca "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/cover.1786955972.git.zhengqi.arch@bytedance.com
+        - Link: https://lore.kernel.org/09bcf74312246a6e4146be8a0cb9787f8beddb28.1786955972.git.zhengqi.arch@bytedance.com
+    - d2f28a1a652e "mm/memcontrol: fix stuck FLUSHING_CACHED_CHARGE bit on isolated cpus"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260828135036.7d44361f@fangorn
+    - c21581cb7599 "memcg: clear FLUSHING_CACHED_CHARGE on cpu offline"
+      - Authored by a maintainer, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260828192419.3057939-1-shakeel.butt@linux.dev
+      - Link: https://sashiko.dev/#/patchset/20260828135036.7d44361f%40fangorn [1]
+    - f2d21fb73df6 "memcg: trim the per-cpu charge stock instead of draining it"
+      - Authored by a maintainer, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260820012010.2016086-1-shakeel.butt@linux.dev
+    - series "memcg: remove the v1 soft limit", v2. (8)
+      - 91163e5fc844 "memcg: remove v1 soft limit reclaim (0/8)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev
+        - Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev
+      - 806ec7ae198d "memcg: remove the soft limit rbtree (3/8)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260902174311.1772372-5-shakeel.butt@linux.dev
+      - fa148fc5e18e "memcg: remove the per-node soft limit tree fields (5/8)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260902174311.1772372-7-shakeel.butt@linux.dev
+      - 06d5d1223b6f "memcg: remove mem_cgroup->soft_limit (6/8)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260902174311.1772372-8-shakeel.butt@linux.dev
+      - 4ddf67d73ea3 "memcg: simplify v1 event ratelimiting (7/8)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260902174311.1772372-9-shakeel.butt@linux.dev
+    - series "mm, memcg: fix memory.peak reset clobbering other fds' watermark", v4. (2)
+      - 3307103acd47 "memcg: acquire peaks_lock when reading memory.peak (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260830002044.1938621-1-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/20260830002044.1938621-2-ridong.chen@linux.dev
+        - Link: https://sashiko.dev/#/patchset/20260730115314.1069089-1-ridong.chen@linux.dev?part=1 [1]
+      - 8e7caac55a6f "mm, memcg: fix memory.peak reset clobbering other fds' watermark (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260830002044.1938621-3-ridong.chen@linux.dev
+    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
+      - 374f65b14819 "mm: memcontrol: raise MEMCG_MAX for charges that fail without reclaiming (5/7)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260831174836.3102406-1-joe@dama.to
+    - series "mm: avoid large folio splits when swap is unavailable", v7. (4)
+      - 56b351d00a82 "mm: add page_counter_margin() (0/4)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260830042920.2280454-1-xueyuan.chen21@gmail.com
+        - Link: https://lore.kernel.org/20260830042920.2280454-2-xueyuan.chen21@gmail.com
+      - c50c376e1fd6 "mm: distinguish large folio swap allocation failures (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260830042920.2280454-3-xueyuan.chen21@gmail.com
+- mm-unstable: 47 -> 31 commits
+  - series: 10 (38) -> 6 (27)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 25 -> 25 commits (no change)
+    - no role, maintainer: 25 -> 18 commits
     - maintainer, nobody: 6 -> 6 commits (no change)
-    - maintainer, no role : 8 -> 8 commits (no change)
+    - maintainer, no role : 8 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
