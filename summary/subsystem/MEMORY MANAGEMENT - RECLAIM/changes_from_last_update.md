@@ -3,103 +3,22 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 17 commits
-  - series: 0 (0) -> 3 (14)
-    - no role, nobody: 0 -> 1 commits
-    - no role, reviewer: 0 -> 12 commits
-    - no role, maintainer: 0 -> 1 commits
-    - reviewer, no role : 0 -> 1 commits
-    - reviewer, reviewer: 0 -> 1 commits
-    - maintainer, no role : 0 -> 1 commits
-  - changed commits
-    - 46fa67175c2e "mm/vmscan: drop the combined limit gate in __node_reclaim()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260826124409.35569-1-ridong.chen@linux.dev
-      - Link: https://sashiko.dev/#/patchset/20260723045718.2052070-1-ridong.chen@linux.dev [1]
-    - fb90e5c2fddf "mm/mglru: preserve inactive placement when enabling MGLRU"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260821021606.877330-1-ridong.chen@linux.dev
-    - series "memcg: remove the v1 soft limit", v2. (8)
-      - 91163e5fc844 "memcg: remove v1 soft limit reclaim (0/8)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260902174311.1772372-1-shakeel.butt@linux.dev
-        - Link: https://lore.kernel.org/20260902174311.1772372-2-shakeel.butt@linux.dev
-      - af88378942d3 "memcg: remove mem_cgroup_shrink_node() (1/8)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260902174311.1772372-3-shakeel.butt@linux.dev
-      - d5d1712c5928 "memcg: remove lru_gen_soft_reclaim() (4/8)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260902174311.1772372-6-shakeel.butt@linux.dev
-    - series "mm/mglru: clean up isolate_folios for readability and clarity", v2. (2)
-      - 715d7fbe4239 "mm/mglru: make type fallback logic explicit in isolate_folios() (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260829074204.45304-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/20260829074204.45304-2-baohua@kernel.org
-      - e006ab5a0f1f "mm/mglru: make retry logic explicit in isolate_folios() (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260829074204.45304-3-baohua@kernel.org
-    - 6c54eb9543b6 "mm: revert slight behavior change for swappiness 1-200"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260903070500.76379-1-baohua@kernel.org
-    - series "mm: avoid large folio splits when swap is unavailable", v7. (4)
-      - 696444530a9b "mm/vmscan: avoid pointless large folio splits without swap (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260830042920.2280454-4-xueyuan.chen21@gmail.com
-    - series "mm/mglru: speed up inc_min_seq() and fix cold/hot inversions", v3. (7)
-      - 798a6ca31cc7 "mm/mglru: separate folio generation update from LRU accounting (0/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260901232421.40157-1-baohua@kernel.org
-        - Link: https://lore.kernel.org/20260901232421.40157-2-baohua@kernel.org
-        - Link: https://lore.kernel.org/linux-mm/20260812121658.69965-1-baohua@kernel.org/ [1]
-        - Link: https://lore.kernel.org/linux-mm/20260827035416.3012015-1-xueyuan.chen21@gmail.com/ [2]
-      - 85dd75276d50 "mm/mglru: batch update lrugen->nr_pages in inc_min_seq() (1/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260901232421.40157-3-baohua@kernel.org
-      - e90113a8e0e8 "mm/mglru: enhance cold/hot inversion handling in inc_min_seq() (2/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260901232421.40157-4-baohua@kernel.org
-      - 8c1731cfd72b "mm/mglru: exclude folios promoted by aging from protected in inc_min_seq() (3/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260901232421.40157-5-baohua@kernel.org
-      - 6897e879c32c "mm/mglru: make LRU folio prefetch helper an inline function (4/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260901232421.40157-6-baohua@kernel.org
-      - 5d3664f070f0 "mm/mglru: move folios from oldest gen to second-oldest gen from head to tail (5/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260901232421.40157-7-baohua@kernel.org
-      - 3d4bbd98b369 "mm/mglru: batch move folios to the second-oldest gen's LRU (6/7)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260901232421.40157-8-baohua@kernel.org
-    - series "mm: replace PF_KCOMPACTD/PF_KSWAPD with kthread_func()". (4)
-      - 27517f701ff3 "mm: replace PF_KSWAPD flag with kthread_func() check (2/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
-- mm-unstable: 35 -> 18 commits
-  - series: 3 (23) -> 0 (9)
-    - no role, nobody: 2 -> 1 commits
+- mm-stable: 17 -> 17 commits (no change)
+  - series: 3 (14) -> 3 (14) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, reviewer: 12 -> 12 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
+- mm-unstable: 18 -> 18 commits (no change)
+  - series: 0 (9) -> 0 (9) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 19 -> 7 commits
-    - no role, maintainer: 3 -> 2 commits
-    - reviewer, no role : 2 -> 1 commits
-    - reviewer, reviewer: 6 -> 5 commits
-    - maintainer, no role : 1 -> 0 commits
+    - no role, reviewer: 7 -> 7 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, reviewer: 5 -> 5 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

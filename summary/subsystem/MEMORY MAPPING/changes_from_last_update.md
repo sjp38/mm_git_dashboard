@@ -1,46 +1,24 @@
 - baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66 (no change)
-- mm-hotfixes-stable: 0 -> 2 commits
-  - series: 0 (0) -> 1 (1)
-    - no role, reviewer: 0 -> 2 commits
-  - changed commits
-    - series "mm/mremap: fix two issues with MREMAP_DONTUNMAP", v2. (2)
-      - 838bb60dc215 "mm/mremap: fix locked_vm leak from MREMAP_DONTUNMAP self-merge (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-        - Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-0-f388985a0f0a@kernel.org
-        - Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-1-f388985a0f0a@kernel.org
-    - 597e4b9ab48a "mm/mremap: fix locked_vm leak by splitting VMA for MREMAP_DONTUNMAP"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260930-fix-dontunmap-partial-self-merge-v2-2-f388985a0f0a@kernel.org
-- mm-hotfixes-unstable: 2 -> 0 commits
-  - series: 1 (2) -> 0 (0)
-    - no role, reviewer: 2 -> 0 commits
-- mm-stable: 0 -> 2 commits
-  - series: 0 (0) -> 2 (2)
-    - no role, maintainer: 0 -> 1 commits
-    - maintainer, no role : 0 -> 1 commits
-  - changed commits
-    - series "mm, swap: don't spin on a bad swap entry", v3. (2)
-      - d5e1dc71ce38 "mm, swap: distinguish a malformed swap entry from a dying device (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260818-swap-v3-0-d3fa52598a59@debian.org
-        - Link: https://lore.kernel.org/20260818-swap-v3-1-d3fa52598a59@debian.org
-    - series "mm: Unconditional per-VMA locks and cleanups", v7. (7)
-      - 47e725702b0b "mm: make per-VMA locks available universally (0/7)"
-        - Authored by a maintainer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260831203056.838265-1-surenb@google.com
-        - Link: https://lore.kernel.org/20260831203056.838265-2-surenb@google.com
-- mm-unstable: 39 -> 37 commits
-  - series: 4 (12) -> 2 (10)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-hotfixes-stable: 2 -> 2 commits (no change)
+  - series: 1 (1) -> 1 (1) (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
+  - series: 0 (0) -> 0 (0) (no change)
+- mm-stable: 2 -> 2 commits (no change)
+  - series: 2 (2) -> 2 (2) (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, no role : 1 -> 1 commits (no change)
+- mm-unstable: 37 -> 38 commits
+  - series: 2 (10) -> 2 (10) (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 24 -> 24 commits (no change)
     - no role, reviewer: 10 -> 10 commits (no change)
-    - no role, maintainer: 2 -> 1 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 0 commits
+  - new commits
+    - c8cb85ceecf4 "mm/vma: keep the unlinked VMA off the file across unmap on mmap hook failure"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261007194708.2009-1-okerixx@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

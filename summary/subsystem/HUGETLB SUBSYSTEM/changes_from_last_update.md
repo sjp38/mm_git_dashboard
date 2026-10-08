@@ -4,88 +4,38 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 0 -> 14 commits
-  - series: 0 (0) -> 2 (11)
-    - no role, nobody: 0 -> 2 commits
-    - no role, no role : 0 -> 6 commits
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 5 commits
   - changed commits
-    - afd20f513ca4 "mm/hugetlb: fix resv_huge_pages double decrement in memfd error path"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260825021013.25672-1-hongfu.li@linux.dev
-    - 40965d4997f4 "mm/hugetlb: use hugetlb_vmemmap_optimizable() in boolean contexts"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260824151655.30840-1-kaitao.cheng@linux.dev
-    - series "mm: Introduce section-based vmemmap optimization for HugeTLB", v6. (17)
-      - 5e72deef11ba "mm/sparse-vmemmap: rename HVO order macros (1/17)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260910063256.64386-3-songmuchun@bytedance.com
-      - 485a1d2d53b7 "mm/mm_init: factor out pfn_to_zone() (5/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260910063256.64386-7-songmuchun@bytedance.com
-      - b8abb1c0c40f "mm/hugetlb: switch HugeTLB to section-based vmemmap optimization (9/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260910063256.64386-11-songmuchun@bytedance.com
-      - 4d012c702c68 "mm/hugetlb: remove HUGE_BOOTMEM_HVO (13/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260910063256.64386-15-songmuchun@bytedance.com
-      - eedb6c38351d "mm/hugetlb: remove HUGE_BOOTMEM_CMA (14/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260910063256.64386-16-songmuchun@bytedance.com
-      - a28e0348838f "mm/hugetlb: localize struct huge_bootmem_page (15/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260910063256.64386-17-songmuchun@bytedance.com
-      - 3de632e08253 "mm/hugetlb: localize HUGE_BOOTMEM_ZONES_VALID (16/17)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260910063256.64386-18-songmuchun@bytedance.com
-    - a9ce28ef2a10 "mm/hugetlb: warn instead of silently bailing gigantic pages without runtime support"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260823044118.1097121-3-xialonglong2025@163.com
-    - series "mm/hugetlb: fix surplus accounting and availability checks during demotion", v2. (2)
-      - 7857e0213aad "mm/hugetlb: preserve source surplus accounting during demotion (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260831133519.2505020-2-xialonglong2025@163.com
-      - 3c2ea15046f8 "mm/hugetlb: cap demotion at currently available free pages (1/2)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260831133519.2505020-3-xialonglong2025@163.com
-    - series "Fix bugs in HugeTLB allocation when mem_cgroup_charge_hugetlb() fails", v2. (2)
-      - 956aeff185e7 "mm: hugetlb: return -ENOSPC on memcg charge failure (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260909-hugetlb-alloc-folio-memcg-charge-error-handling-v2-1-4b4a8a19a7f7@google.com
-      - e95d29c5df84 "mm: hugetlb: drop refcount before freeing on memcg charge failure (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260909-hugetlb-alloc-folio-memcg-charge-error-handling-v2-2-4b4a8a19a7f7@google.com
-- mm-unstable: 32 -> 19 commits
-  - series: 5 (20) -> 3 (9)
-    - no role, nobody: 3 -> 2 commits
-    - no role, no role : 6 -> 0 commits
-    - no role, reviewer: 3 -> 2 commits
-    - no role, maintainer: 16 -> 11 commits
+    - 15f6afdf05c6 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com"
+      - added "Tested-by: Karl Mehltretter <kmehltretter@gmail.com>"
+      - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
+      - Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com
+- mm-stable: 14 -> 14 commits (no change)
+  - series: 2 (11) -> 2 (11) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 6 -> 6 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
+- mm-unstable: 19 -> 20 commits
+  - series: 3 (9) -> 3 (9) (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 11 -> 13 commits
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
+  - new commits
+    - e1fd84f8c449 "mm/hugetlb: use kvmalloc_objs for hugetlb_fault_mutex_table"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261006160128.31447-1-dheerajkumar.srivastava@amd.com
   - changed commits
-    - 9b15003dec5b "docs: hugetlbpage.rst: fix typo in per-node attribute description"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
+    - 3a9114a6ef9c "docs: hugetlbpage.rst: fix typo in per-node attribute description"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
       - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -5,7 +5,7 @@
     - no role, no role : 1 commits
   - full commits list
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2 commits)
-      - ead85d9808d4 "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
+      - 408460c4176e "userfaultfd: clear the inherited uffd bit in move_swap_pte()" (0/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261003103030.63380-1-donggeunyoo.kernel@gmail.com
         - Link: https://lore.kernel.org/20261003103030.63380-2-donggeunyoo.kernel@gmail.com
@@ -34,19 +34,19 @@
     - no role, reviewer: 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 28ae1ad6b3d6 "mm: remove hugetlb_inline.h"
+    - 3baa02f2ccb9 "mm: remove hugetlb_inline.h"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-26-a1f052500fd7@kernel.org
-    - e8434ebb1a43 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
+    - 61a36da51ae6 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org
-    - a7e4b3771cab "mm/uffd: use predicates for userfaultfd checks"
+    - caa4ec3f4ec3 "mm/uffd: use predicates for userfaultfd checks"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-31-a1f052500fd7@kernel.org
-      - f1959a8fa186 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 982f9afc1730 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 1e147499e4ff "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 6704c763ba4a "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

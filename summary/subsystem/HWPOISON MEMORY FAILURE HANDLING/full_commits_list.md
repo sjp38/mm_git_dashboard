@@ -9,22 +9,22 @@
     - maintainer, nobody: 1 commits
   - full commits list
     - series "mm: Fix MF_DELAYED handling on memory failure", v6. (5 commits)
-      - aa9ebfc4fb6d "mm: memory_failure: clarify the MF_DELAYED definition" (0/5)
+      - 7ec5cc63f6df "mm: memory_failure: clarify the MF_DELAYED definition" (0/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-0-4b00856b5364@google.com
         - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-1-4b00856b5364@google.com
-      - 118aa617ffb2 "mm: memory_failure: Allow truncate_error_folio to return MF_DELAYED" (1/5)
+      - b62a06fe31fa "mm: memory_failure: Allow truncate_error_folio to return MF_DELAYED" (1/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-2-4b00856b5364@google.com
-      - 282d5b687b05 "mm: memory_failure: Generalize extra_pins handling to all MF_DELAYED cases" (3/5)
+      - 129f778dd090 "mm: memory_failure: Generalize extra_pins handling to all MF_DELAYED cases" (3/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-4-4b00856b5364@google.com
-      - 6ddd66888b8a "mm: selftests: Add shmem into memory failure test" (4/5)
+      - 792f3d549cbf "mm: selftests: Add shmem into memory failure test" (4/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-5-4b00856b5364@google.com
-    - 23d8b21c4b0e "mm-selftests-add-shmem-into-memory-failure-test-fix"
+    - 156c502e254b "mm-selftests-add-shmem-into-memory-failure-test-fix"
       - Authored by a maintainer, reviewed by nobody
-    - f77f62de1b0e "mm: fix typos in various comments"
+    - f89af5266dd8 "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

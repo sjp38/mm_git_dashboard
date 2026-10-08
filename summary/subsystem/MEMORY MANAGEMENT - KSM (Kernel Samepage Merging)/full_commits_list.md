@@ -24,19 +24,19 @@
     - no role, reviewer: 3 commits
     - maintainer, nobody: 1 commits
   - full commits list
-    - 0ce430f6e6d3 "docs/mm: ksm: use the renamed ksm structure names"
+    - eeb4b8964bac "docs/mm: ksm: use the renamed ksm structure names"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
-    - 5152001c3620 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested"
+    - 9b813d9f8c86 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-33-a1f052500fd7@kernel.org
-      - f1959a8fa186 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 982f9afc1730 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 1e147499e4ff "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - 6704c763ba4a "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - d302fae324c4 "mm-update-comments-to-refer-to-anon-rmap-rather-than-anon_vma-fix"
+    - 268f441e177b "mm-update-comments-to-refer-to-anon-rmap-rather-than-anon_vma-fix"
       - Authored by a maintainer, reviewed by nobody
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

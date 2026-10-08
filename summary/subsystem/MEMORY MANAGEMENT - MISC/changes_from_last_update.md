@@ -1,141 +1,44 @@
 - baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66 (no change)
-- mm-hotfixes-stable: 0 -> 1 commits
+- mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - changed commits
-    - 28eed9906e01 "selftests/mm: cleanup -Wformat issues in hugetlb-mmap"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-hotfixes-unstable -> mm-hotfixes-stable
-      - Link: https://lore.kernel.org/20260927162419.820609-1-cmllamas@google.com
-- mm-hotfixes-unstable: 1 -> 0 commits
+    - no role, no role : 1 -> 1 commits (no change)
+- mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
-- mm-stable: 0 -> 19 commits
-  - series: 0 (0) -> 3 (13)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 8 commits
-    - no role, reviewer: 0 -> 2 commits
-    - no role, maintainer: 0 -> 5 commits
-    - maintainer, nobody: 0 -> 3 commits
-  - changed commits
-    - d3bb6b3e4130 "selftests/mm: remove the local PKEY_UNRESTRICTED fallback"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260825161715.2807297-1-hemanth.selam@gmail.com
-    - series "docs/ksm: fix advisor documentation and comment", v3. (2)
-      - 172c05ebab49 "docs: ksm: fix typos in sysfs knob names (0/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260824061010.3343959-1-tujinjiang@huawei.com
-        - Link: https://lore.kernel.org/20260824061010.3343959-2-tujinjiang@huawei.com
-      - 585bb36e6ab8 "mm/ksm: fix advisor_min_pages_to_scan description (1/2)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/linux-mm/20231028000945.2428830-2-shr@devkernel.io/ [1]
-        - Link: https://lore.kernel.org/20260824061010.3343959-3-tujinjiang@huawei.com
-    - 576446e2dfe4 "selftests/mm: fix line buffer leak in mremap_test is_range_mapped()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260826061300.14038-1-anshumantewari123@gmail.com
-    - ed2052b119be "selftests/mm: khugepaged: remove str_dup() usage"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/r/20260821114416.12255-1-anshumantewari123@gmail.com [1]
-      - Link: https://lore.kernel.org/20260825-remove_str_dup-v1-1-0ba2121a820c@kernel.org
-    - 39da6961b2c9 "selftests/mm: fix incorrect skip output in pkey_sighandler_tests"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260825123023.64418-1-zenghui.yu@linux.dev
-    - series "selftests/mm: TAP output and global-state fixes", v4. (3)
-      - 36b0ee4aac60 "selftests/mm: emit TAP header in uffd-wp-mremap (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260825085756.63030-1-husong@kylinos.cn
-        - Link: https://lore.kernel.org/20260825085756.63030-2-husong@kylinos.cn
-      - fb2f274a79c7 "selftests/mm: emit TAP header and use TAP skip in mremap_test (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260825085756.63030-3-husong@kylinos.cn
-      - c0f106b5183e "selftests/mm: restore enable_soft_offline in hugetlb-soft-offline (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260825085756.63030-4-husong@kylinos.cn
-    - series "tools/mm/page_owner_sort: fix --sort, add module filter, improve usage", v3. (3)
-      - 305a263d89c9 "tools/mm/page_owner_sort: add module name sort/cull/filter support (1/3)"
-        - Authored by no role player, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260819021611.2910835-3-ye.liu@linux.dev
-    - 7ae9c1d82ed7 "selftests/mm: khugepaged: consolidate error exits via kselftest helpers"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260817061955.45454-1-hongfu.li@linux.dev
-    - 5554a09b6635 "tools/testing/selftests/mm: add missing .gitignore entries"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260831-fix-mm-selftests-gitignore-v1-1-c984bbd4c5e4@kernel.org
-    - series "docs/mm/damon/design: add explanation of nr_snapshots", v3. (3)
-      - b9a7f3fe3cc7 "docs/mm/damon/design: accurate semantics of nr_snapshots (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260831150227.83416-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20260831150227.83416-2-sj@kernel.org
-      - 40b16b5d26ec "docs/mm/damon/design: difference between watermarks and nr_snapshots (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260831150227.83416-3-sj@kernel.org
-      - d308767257f5 "docs/mm/damon/design: fix typo of max_nr_snapshots (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260831150227.83416-4-sj@kernel.org
-    - series "mm/damon: Introduce a huge page collapsing mechanism using auto tuning", v4. (3)
-      - 57d89b940a01 "Docs/mm/damon/design: cocument hugepage_mem_bp target metric (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260831144732.80910-4-sj@kernel.org
-    - series "mm/damon: introduce data access-as-a-data attribute", v1.1. (17)
-      - 95ece6b3b352 "Docs/mm/damon/design: document pgidle_unset probe filter type (3/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260901132506.99243-5-sj@kernel.org
-      - fac5fa3517b1 "Docs/mm/damon/design: document probe preps (14/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260901132506.99243-16-sj@kernel.org
-      - 75db6c73c52b "Docs/admin-guide/mm/damon/usage: document probe preps sysfs files (15/17)"
-        - Authored by a maintainer, reviewed by nobody
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260901132506.99243-17-sj@kernel.org
-- mm-unstable: 89 -> 74 commits
-  - series: 10 (62) -> 7 (49)
-    - no role, nobody: 12 -> 12 commits (no change)
-    - no role, no role : 32 -> 27 commits
-    - no role, reviewer: 19 -> 17 commits
-    - no role, maintainer: 9 -> 4 commits
+- mm-stable: 19 -> 19 commits (no change)
+  - series: 3 (13) -> 3 (13) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 8 -> 8 commits (no change)
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 5 -> 5 commits (no change)
+    - maintainer, nobody: 3 -> 3 commits (no change)
+- mm-unstable: 74 -> 74 commits (no change)
+  - series: 7 (49) -> 7 (49) (no change)
+    - no role, nobody: 12 -> 11 commits
+    - no role, no role : 27 -> 27 commits (no change)
+    - no role, reviewer: 17 -> 17 commits (no change)
+    - no role, maintainer: 4 -> 5 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 14 -> 11 commits
+    - maintainer, nobody: 11 -> 11 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - 059b49338aa8 "selftests/mm: mrelease_test: fix retry limit"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/CANOyQmFzsssM_BXHUDrV+UuVD5SZMBmSkg3UQnmw9Ns1PV7GCQ@mail.gmail.com
-    - 9b15003dec5b "docs: hugetlbpage.rst: fix typo in per-node attribute description"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
+    - 383c05494575 "selftests/mm: hugetlb_madv_vs_map: add underflow test"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Tested-by: Breno Leitao <leitao@debian.org>"
+      - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
+      - Link: https://lore.kernel.org/aqgUdbtumaO8RiIb@bender.morinfr.org
+    - 3a9114a6ef9c "docs: hugetlbpage.rst: fix typo in per-node attribute description"
+      - Authored by no role player, reviewed by a maintainer
+      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
       - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
-    - 9ce32bd30049 "selftests/mm: hugetlb-read-hwpoison: add setup of HugeTLB pages"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261004205458.119608-1-jaeyeon.lee.dev@gmail.com
-    - a663a4c75b63 "selftests/mm: hugetlb_madv_vs_map: fix TAP plan mismatches"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261004230018.190880-1-jaeyeon.lee.dev@gmail.com
-- mm-new: 5 -> 1 commits
+- mm-new: 1 -> 2 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 3 -> 0 commits
+    - no role, nobody: 1 -> 2 commits
+  - new commits
+    - 84bcd0dbc50d "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261006064120.6796-1-azpijr@gmail.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

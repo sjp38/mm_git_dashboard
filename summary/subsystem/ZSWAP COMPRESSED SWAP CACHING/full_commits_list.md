@@ -32,55 +32,55 @@
     - no role, no role : 2 commits
     - no role, maintainer: 13 commits
   - full commits list
-    - eab39553ddc2 "mm/zswap: convert zswap_store_page() and zswap_compress() to take a folio"
+    - cac0a5e38ce1 "mm/zswap: convert zswap_store_page() and zswap_compress() to take a folio"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260904232108.3034333-1-wfelipe@google.com
-      - 7aebc328a63b "mm/zswap: use folio_swap_entry() in zswap_store_page()" (4/8)
+      - 35c49a03c343 "mm/zswap: use folio_swap_entry() in zswap_store_page()" (4/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-4-ee6d01dfa5e1@columbia.edu
-    - ba1b3d28aded "mm: zswap: don't fail a large-folio swapin whose range is not in zswap"
+    - a9227232c8d3 "mm: zswap: don't fail a large-folio swapin whose range is not in zswap"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260907161938.1932355-1-usama.arif@linux.dev
-    - 4bd9add035c3 "mm/zswap: publish the initial pool with list_add_rcu()"
+    - c6c8924c197a "mm/zswap: publish the initial pool with list_add_rcu()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260908012801.1864430-1-xialonglong2025@163.com
     - series "mm: zswap: optimize zswap invalidate and store", v3. (3 commits)
-      - b7b3a091efec "mm: zswap: convert zswap_invalidate() to take a range" (0/3)
+      - 520d00c5fc77 "mm: zswap: convert zswap_invalidate() to take a range" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260910123544.818146-1-wangkefeng.wang@huawei.com
         - Link: https://lore.kernel.org/20260910123544.818146-2-wangkefeng.wang@huawei.com
-      - ac640e0ef439 "mm: zswap: skip xarray walk in zswap_invalidate() when zswap is unused" (1/3)
+      - d2bbd6aeec5b "mm: zswap: skip xarray walk in zswap_invalidate() when zswap is unused" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260910123544.818146-3-wangkefeng.wang@huawei.com
-      - d57dda6f1546 "mm: zswap: reuse zswap_invalidate() in zswap_store()" (2/3)
+      - af55576b1afc "mm: zswap: reuse zswap_invalidate() in zswap_store()" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260910123544.818146-4-wangkefeng.wang@huawei.com
-    - 6460fd9b821f "mm/zswap: enable zswap_ever_enabled in zswap_pool_create()"
+    - 2eac6d36edfc "mm/zswap: enable zswap_ever_enabled in zswap_pool_create()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260906135938.3568108-1-xialonglong2025@163.com
     - series "mm/zswap: shrink zswap_entry via a pool id", v6. (3 commits)
-      - ba946afa1d84 "mm/zswap: release retired pools via queue_rcu_work() instead of synchronize_rcu()" (0/3)
+      - 8f3732668e41 "mm/zswap: release retired pools via queue_rcu_work() instead of synchronize_rcu()" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260906-shrink_zswap_entry_v6-v6-0-ac4cf61565fb@gmail.com
         - Link: https://lore.kernel.org/20260906-shrink_zswap_entry_v6-v6-1-ac4cf61565fb@gmail.com
-      - 0238577f5452 "mm/zswap: replace the zswap_pools list with an allocating xarray" (1/3)
+      - 59a4d205647c "mm/zswap: replace the zswap_pools list with an allocating xarray" (1/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260906-shrink_zswap_entry_v6-v6-2-ac4cf61565fb@gmail.com
-      - e42722b1df41 "mm/zswap: reference the pool by id to shrink struct zswap_entry" (2/3)
+      - aee497f44c5d "mm/zswap: reference the pool by id to shrink struct zswap_entry" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260906-shrink_zswap_entry_v6-v6-3-ac4cf61565fb@gmail.com
-    - 5b6997c35cec "mm: zswap: return -ENOENT when the swap device is gone"
+    - fcb38891bcd1 "mm: zswap: return -ENOENT when the swap device is gone"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260913063031.1689420-1-hebaoquan@kylinos.cn
-    - afb2ff237764 "selftests/cgroup: ignore memory.reclaim -EAGAIN for zswap writeback test"
+    - 26f99676736c "selftests/cgroup: ignore memory.reclaim -EAGAIN for zswap writeback test"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260914-test-zswap-wb-ignore-eagain-v1-1-6fb715c22cd8@kernel.org
     - series "mm: zswap: free cold writeback folios promptly", v6. (3 commits)
-      - a84213a54029 "mm: swap: move LRU insertion out of the swap cache allocator" (0/3)
+      - d0ca9e49c67a "mm: swap: move LRU insertion out of the swap cache allocator" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr
         - Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr
-      - c2103002e867 "mm: zswap: drop cold writeback folios via swap dropbehind" (2/3)
+      - 96ccfd51f8d1 "mm: zswap: drop cold writeback folios via swap dropbehind" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921151306.625134-4-alex@ghiti.fr
         - Link: https://lore.kernel.org/linux-mm/20260911092012.92399-1-alex@ghiti.fr/ [1]

@@ -9,46 +9,46 @@
     - no role, maintainer: 5 commits
     - reviewer, no role : 2 commits
   - full commits list
-    - e281a2117490 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
+    - 13201c38d892 "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org
-      - 23a94575485d "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/17)
+      - 358b88e119cf "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private" (7/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-8-bb68b6a21869@nvidia.com
-      - 54a6e9024a80 "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
+      - 808c9a954f1a "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-      - df2cd37146bd "treewide: remove folio_set/clear_private() usage" (10/17)
+      - 671b542ec12a "treewide: remove folio_set/clear_private() usage" (10/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-11-bb68b6a21869@nvidia.com
-      - 0d324539c564 "treewide: remove PagePrivate() and PG_private from comments and docs" (15/17)
+      - 6212c2af29f3 "treewide: remove PagePrivate() and PG_private from comments and docs" (15/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com
-    - 28ae1ad6b3d6 "mm: remove hugetlb_inline.h"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-26-a1f052500fd7@kernel.org
-    - fecc5a1708f9 "mm: filemap: move lruvec accounting outside the xarray lock"
+    - 3f566a3616da "mm: filemap: move lruvec accounting outside the xarray lock"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260916125122.2696271-1-usama.arif@linux.dev
-      - b295caa8c654 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - 9a49d7b99cba "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
+    - 3baa02f2ccb9 "mm: remove hugetlb_inline.h"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-26-a1f052500fd7@kernel.org
     - series "mm/truncate: fix data loss when truncating straddling large folios", v5. (4 commits)
-      - 83361b4c7fb4 "mm/truncate: align truncation boundaries to mapping minimum folio order" (0/4)
+      - ab909c45ba8f "mm/truncate: align truncation boundaries to mapping minimum folio order" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-2-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/a638a8fb-c184-4069-ae33-379ec12cd514@huaweicloud.com/ [1]
         - Link: https://lore.kernel.org/linux-mm/5a454f2a-8ae2-491d-b903-750c945cfb9d@huaweicloud.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/5pthbyxtn7q6xi4fmkofvksmcjzfnujcw2g4fxmxjzfin5pbgf@zui3vcimb4cv/ [3]
-      - b85528b9613b "mm/truncate: look up the end-edge straddler by index" (1/4)
+      - 366c18fa166c "mm/truncate: look up the end-edge straddler by index" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-3-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-mm/DLGXT0ERY79Z.3C5DYVJVX6S9Z@nvidia.com/
-      - b707d616d683 "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
+      - 34190b97d2e2 "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
-      - 0f127e5daac3 "mm/truncate: clarify return value of truncate_inode_partial_folio()" (3/4)
+      - 5ad344425660 "mm/truncate: clarify return value of truncate_inode_partial_folio()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-5-yi.zhang@huaweicloud.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

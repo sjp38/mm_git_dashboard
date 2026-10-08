@@ -1,56 +1,19 @@
 - baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 2 commits
-  - changed commits
-    - c9461a1f2696 "mm/vmalloc: avoid false sharing with drain_vmap_work"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-hotfixes-unstable
-      - Link: https://lore.kernel.org/20260825104659.100134-1-jonaszhou-oc@zhaoxin.com
-- mm-stable: 0 -> 4 commits
-  - series: 0 (0) -> 1 (4)
-    - no role, no role : 0 -> 4 commits
-  - changed commits
-    - series "arch, mm/execmem: resolve confusion about set_direct_map_valid_noflush()", v3. (6)
-      - be7dacb9c1d4 "set_memory: add number of pages parameter to set_direct_map APIs (0/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-0-949b64a9f755@kernel.org
-        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-1-949b64a9f755@kernel.org
-        - Link: https://lore.kernel.org/all/20260611130144.1385343-4-abarnas@google.com [1]
-      - 40702f168a9e "mm/vmalloc: set area's page_order after allocation succeeds (1/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-2-949b64a9f755@kernel.org
-      - 1f73dfdeb9c2 "mm/vmalloc: constify vm parameter of get_vm_area_page_order() (2/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-3-949b64a9f755@kernel.org
-      - 86dc0280b807 "mm/vmalloc: make set_area_direct_map HUGE_VMAP friendly (3/6)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260903-execmem-set-vm-perms-v0-2-v3-4-949b64a9f755@kernel.org
-- mm-unstable: 15 -> 12 commits
-  - series: 3 (11) -> 2 (7)
-    - no role, nobody: 3 -> 4 commits
-    - no role, no role : 11 -> 7 commits
+    - no role, no role : 2 -> 2 commits (no change)
+- mm-stable: 4 -> 4 commits (no change)
+  - series: 1 (4) -> 1 (4) (no change)
+    - no role, no role : 4 -> 4 commits (no change)
+- mm-unstable: 12 -> 12 commits (no change)
+  - series: 2 (7) -> 2 (7) (no change)
+    - no role, nobody: 4 -> 4 commits (no change)
+    - no role, no role : 7 -> 7 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - e4bb51ba5621 "mm: kmsan: fix iounmap metadata teardown"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261002200508.546-1-dmytrokoziuk68@gmail.com
-      - Link: https://lkml.iu.edu/2609.3/12748.html
-    - b53b10306b2c "mm/vmalloc: bail out early on invalid page_shift in __vmap_pages_range_noflush()"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - Link: https://lore.kernel.org/20261004071639.119857-1-jiangwenxiaomi@gmail.com
-- mm-new: 2 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

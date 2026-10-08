@@ -3,24 +3,14 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 2 commits
+- mm-stable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 0 -> 1 commits
-  - changed commits
-    - 4dffce1cc5ab "mm/list_lru: disable memcg awareness under cgroup_disable=memory"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260902093202.609559-1-qinyuntan@linux.alibaba.com
-    - 6a100811c7c5 "mm/list_lru: don't copy stale shrinker id from non-memcg-aware shrinkers"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260901115104.2944996-1-qinyuntan@linux.alibaba.com
-- mm-unstable: 4 -> 2 commits
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 2 -> 2 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 1 -> 0 commits
-    - no role, reviewer: 2 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
