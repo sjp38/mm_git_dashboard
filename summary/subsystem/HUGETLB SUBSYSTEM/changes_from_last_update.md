@@ -4,36 +4,19 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-  - changed commits
-    - 15f6afdf05c6 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com"
-      - added "Tested-by: Karl Mehltretter <kmehltretter@gmail.com>"
-      - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
-      - Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com
 - mm-stable: 14 -> 14 commits (no change)
   - series: 2 (11) -> 2 (11) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-- mm-unstable: 19 -> 20 commits
+- mm-unstable: 20 -> 20 commits (no change)
   - series: 3 (9) -> 3 (9) (no change)
-    - no role, nobody: 2 -> 1 commits
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 11 -> 13 commits
+    - no role, maintainer: 13 -> 13 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - new commits
-    - e1fd84f8c449 "mm/hugetlb: use kvmalloc_objs for hugetlb_fault_mutex_table"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261006160128.31447-1-dheerajkumar.srivastava@amd.com
-  - changed commits
-    - 3a9114a6ef9c "docs: hugetlbpage.rst: fix typo in per-node attribute description"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

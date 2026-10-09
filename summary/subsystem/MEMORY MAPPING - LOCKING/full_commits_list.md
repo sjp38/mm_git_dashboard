@@ -18,11 +18,11 @@
   - author/reviewer role stat
     - no role, no role : 2 commits
   - full commits list
-      - 7847290a4c5d "mm: change the contract for free_pgtables(), update docs" (11/12)
+      - d4234708e72a "mm: change the contract for free_pgtables(), update docs" (11/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
     - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3 commits)
-      - 7a22ace35b6b "mm/vma: const-ify vma_assert_stabilised() and associated functions" (0/3)
+      - ff84d6fe3ec1 "mm/vma: const-ify vma_assert_stabilised() and associated functions" (0/3)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-0-5c22314a72e7@kernel.org
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-1-5c22314a72e7@kernel.org

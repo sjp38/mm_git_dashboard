@@ -1,13 +1,15 @@
 - baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66 (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 0 -> 1 commits
-  - series: 0 (0) -> 0 (1)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
+- mm-hotfixes-unstable: 1 -> 1 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
     - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2)
-      - c1d66b6a05d8 "mm/khugepaged: flush deferred unmaps before dropping a failed folio (1/2)"
+      - 2598de5a23d9 "mm/khugepaged: flush deferred unmaps before dropping a failed folio (1/2)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
         - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
 - mm-stable: 8 -> 8 commits (no change)
   - series: 3 (6) -> 3 (6) (no change)

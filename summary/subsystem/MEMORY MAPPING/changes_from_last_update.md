@@ -8,17 +8,13 @@
   - series: 2 (2) -> 2 (2) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 37 -> 38 commits
+- mm-unstable: 38 -> 38 commits (no change)
   - series: 2 (10) -> 2 (10) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 24 -> 24 commits (no change)
     - no role, reviewer: 10 -> 10 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
-  - new commits
-    - c8cb85ceecf4 "mm/vma: keep the unlinked VMA off the file across unmap on mmap hook failure"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261007194708.2009-1-okerixx@gmail.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

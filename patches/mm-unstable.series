@@ -1,4 +1,4 @@
-mm-hotfixes-stable-2026-10-07-21-48-220-g2cae31c77669
+mm-hotfixes-stable-2026-10-07-21-48-222-g67b02ce7b1d0
 mm-trace-decode-arm64-and-sparc64-VM_ARCH_1-flags.patch
 mm-trace-decode-MTE-and-shadow-stack-VMA-flags.patch
 mm-trace-name-protection-key-encoding-bits.patch
@@ -490,3 +490,4 @@ mm-collapse-open-code-collapse_single_pmd-in-its-two.patch
 mm-collapse-work-out-the-orders-a-VMA-allows-once-pe.patch
 mm-collapse-declare-the-collapse-interface-in-collap.patch
 mm-collapse-implement-MADV_COLLAPSE-in-madvise.c.patch
+mm-swap-PM-hibernate-atomically-replace-hibernation-.patch

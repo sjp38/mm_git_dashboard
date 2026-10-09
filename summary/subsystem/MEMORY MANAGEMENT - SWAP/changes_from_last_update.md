@@ -8,9 +8,9 @@
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 24 -> 24 commits (no change)
+- mm-unstable: 24 -> 25 commits
   - series: 6 (17) -> 6 (17) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, nobody: 2 -> 3 commits
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
@@ -18,9 +18,16 @@
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 1 -> 1 commits (no change)
+  - changed commits
+    - e1f80b32e7ae "mm/swap, PM: hibernate: atomically replace hibernation pin"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+      - added "Cc: DaeMyung Kang <charsyam@gmail.com>"
+      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -19,6 +19,15 @@
     - no role, maintainer: 2 -> 2 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 5 -> 5 commits (no change)
+  - changed commits
+    - series "mm: workingset: fix the shadow node budget under MGLRU", v5. (4)
+      - 0700742d9f1d "mm: workingset: use lruvec_page_state_local() to count lru pages (1/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Kairui Song <kasong@tencent.com>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - Link: https://lore.kernel.org/2ed42f96aca124856ea30f774afb55cbe6d8ba58.1789096175.git.zhuhui@kylinos.cn
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

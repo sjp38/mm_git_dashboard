@@ -36,16 +36,16 @@
   - author/reviewer role stat
     - no role, no role : 4 commits
   - full commits list
-      - efc57070e616 "mm/sparse-vmemmap: set compound page order for device DAX" (5/12)
+      - 046968424467 "mm/sparse-vmemmap: set compound page order for device DAX" (5/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com
-      - b07e1df16f39 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (11/12)
+      - 862e38cd8158 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (11/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
-      - 577378c8b525 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
+      - b0b99a3af589 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260929053231.66085-4-songmuchun@bytedance.com
-      - 78f0abd644a0 "mm/mm_init: add zone mismatch warning during page init" (5/6)
+      - 99ff56db1a31 "mm/mm_init: add zone mismatch warning during page init" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

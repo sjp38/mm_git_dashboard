@@ -5,23 +5,25 @@
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 7 -> 7 commits (no change)
-  - series: 1 (1) -> 1 (2)
-    - no role, nobody: 3 -> 2 commits
+- mm-hotfixes-unstable: 7 -> 8 commits
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 2 -> 3 commits
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
   - new commits
-    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2)
-      - c1d66b6a05d8 "mm/khugepaged: flush deferred unmaps before dropping a failed folio (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
-  - changed commits
-    - 15f6afdf05c6 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
+    - d62e5b98c541 "lib/base64: silence clang-24 -Wconstant-conversion with diag pragmas"
       - Authored by no role player, reviewed by nobody
-      - added "Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com"
-      - added "Tested-by: Karl Mehltretter <kmehltretter@gmail.com>"
-      - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
-      - Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com
+      - Link: https://lore.kernel.org/20261008-base64-silence-clang-24-constant-conversion-v1-1-0858b60b23c8@kernel.org
+      - Link: https://github.com/llvm/llvm-project/commit/a5ef934a8d295dc03be3960f2b3744ec2e53238e [1]
+      - Link: https://github.com/llvm/llvm-project/issues/223923#issuecomment-6056856245 [2]
+      - Link: https://github.com/llvm/llvm-project/pull/226775#pullrequestreview-5454407389 [3]
+  - changed commits
+    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2)
+      - 2598de5a23d9 "mm/khugepaged: flush deferred unmaps before dropping a failed folio (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
 - mm-stable: 212 -> 212 commits (no change)
   - series: 39 (172) -> 39 (172) (no change)
     - no role, nobody: 15 -> 15 commits (no change)
@@ -33,12 +35,12 @@
     - maintainer, nobody: 32 -> 32 commits (no change)
     - maintainer, no role : 16 -> 16 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 485 -> 491 commits
-  - series: 62 (342) -> 63 (345)
-    - no role, nobody: 50 -> 52 commits
-    - no role, no role : 141 -> 140 commits
+- mm-unstable: 491 -> 492 commits
+  - series: 63 (345) -> 63 (345) (no change)
+    - no role, nobody: 52 -> 53 commits
+    - no role, no role : 140 -> 140 commits (no change)
     - no role, reviewer: 86 -> 86 commits (no change)
-    - no role, maintainer: 96 -> 101 commits
+    - no role, maintainer: 101 -> 101 commits (no change)
     - reviewer, nobody: 2 -> 2 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 9 -> 9 commits (no change)
@@ -46,64 +48,45 @@
     - maintainer, nobody: 73 -> 73 commits (no change)
     - maintainer, no role : 16 -> 16 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
-  - new commits
-    - c8cb85ceecf4 "mm/vma: keep the unlinked VMA off the file across unmap on mmap hook failure"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261007194708.2009-1-okerixx@gmail.com
-    - e1fd84f8c449 "mm/hugetlb: use kvmalloc_objs for hugetlb_fault_mutex_table"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261006160128.31447-1-dheerajkumar.srivastava@amd.com
-    - series "mm/damon: fix a minor bug, clean code, and add a test". (3)
-      - aa268acb9aa0 "mm/damon/ops-common: fix age_in_sec overflow on 32-bit (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261006065209.41507-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20261006065209.41507-2-sj@kernel.org
-        - Link: https://lore.kernel.org/20260623011652.1354-1-sj@kernel.org [1]
-      - fd36605f91d1 "mm/damon: use damon_get_monitor_folio() for hugetlb entries (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261006065209.41507-3-sj@kernel.org
-      - 18793c04abe6 "mm/damon/tests/core-kunit: add test for unconditionally skipping the last region (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261006065209.41507-4-sj@kernel.org
   - changed commits
-    - 383c05494575 "selftests/mm: hugetlb_madv_vs_map: add underflow test"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Tested-by: Breno Leitao <leitao@debian.org>"
-      - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
-      - Link: https://lore.kernel.org/aqgUdbtumaO8RiIb@bender.morinfr.org
-    - bfffb8f24842 "mm: page_alloc: make defrag_mode retries follow the promoted order"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-hotfixes-unstable -> mm-unstable
-      - Link: https://lore.kernel.org/20261006091815.897133-1-kirill@shutemov.name
-    - 3a9114a6ef9c "docs: hugetlbpage.rst: fix typo in per-node attribute description"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
-    - series "support kselftest on nommu platform", v5. (2)
-      - 47e339723136 "selftests: run tests on nommu architecture (0/2)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261006085642.3852152-2-thehajime@gmail.com"
-        - added "Link: https://lore.kernel.org/20261006085642.3852152-1-thehajime@gmail.com"
-        - added "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20260929235711.2287931-2-thehajime@gmail.com"
-        - dropped "Link: https://lore.kernel.org/20260929235711.2287931-1-thehajime@gmail.com"
-        - dropped "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-        - Link: https://lore.kernel.org/20261006085642.3852152-1-thehajime@gmail.com
-        - Link: https://lore.kernel.org/20261006085642.3852152-2-thehajime@gmail.com
-      - 6a81ea9e7813 "selftests/nommu: add nommu mmap and mremap behavior tests (1/2)"
+    - series "mm: workingset: fix the shadow node budget under MGLRU", v5. (4)
+      - 0700742d9f1d "mm: workingset: use lruvec_page_state_local() to count lru pages (1/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Kairui Song <kasong@tencent.com>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - Link: https://lore.kernel.org/2ed42f96aca124856ea30f774afb55cbe6d8ba58.1789096175.git.zhuhui@kylinos.cn
+    - series "mm: Unify device DAX and HugeTLB vmemmap population paths", v3. (6)
+      - 99ff56db1a31 "mm/mm_init: add zone mismatch warning during page init (5/6)"
         - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261006085642.3852152-3-thehajime@gmail.com"
-        - dropped "Link: https://lore.kernel.org/20260929235711.2287931-3-thehajime@gmail.com"
-        - Link: https://lore.kernel.org/20261006085642.3852152-3-thehajime@gmail.com
-- mm-new: 14 -> 15 commits
-  - series: 1 (10) -> 1 (10) (no change)
-    - no role, nobody: 4 -> 5 commits
-    - no role, no role : 10 -> 10 commits (no change)
-  - new commits
-    - 84bcd0dbc50d "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
+        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - added "Cc: Hugh Dickins <hughd@google.com>"
+        - added "Cc: Jan Kara <jack@suse.cz>"
+        - added "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
+        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: Gregory Price <gourry@gourry.net>"
+        - added "Cc: Ayush Ranjan <ayushr@modal.com>"
+        - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
+    - e1f80b32e7ae "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261006064120.6796-1-azpijr@gmail.com
+      - branch: mm-new -> mm-unstable
+      - added "Cc: DaeMyung Kang <charsyam@gmail.com>"
+      - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
+- mm-new: 15 -> 14 commits
+  - series: 1 (10) -> 1 (10) (no change)
+    - no role, nobody: 5 -> 3 commits
+    - no role, no role : 10 -> 10 commits (no change)
+    - maintainer, nobody: 0 -> 1 commits
+  - new commits
+    - 1e82a279f7cb "selftests/mm: build the page fragment test with the kernel"
+      - Authored by a maintainer, reviewed by nobody
+  - dropped commits
+    - fa2e4a000aa5 "selftests/mm: fix soft-dirty kselftest supported check"
+      - Authored by no role player, reviewed by nobody
+      - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
+      - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
 - mm-nonmm-stable: 76 -> 76 commits (no change)
   - series: 9 (29) -> 9 (29) (no change)
     - no role, nobody: 29 -> 29 commits (no change)
@@ -111,16 +94,18 @@
     - no role, maintainer: 9 -> 9 commits (no change)
     - maintainer, nobody: 9 -> 9 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
-- mm-nonmm-unstable: 32 -> 34 commits
+- mm-nonmm-unstable: 34 -> 36 commits
   - series: 4 (9) -> 4 (9) (no change)
-    - no role, nobody: 14 -> 15 commits
-    - no role, no role : 7 -> 8 commits
+    - no role, nobody: 15 -> 15 commits (no change)
+    - no role, no role : 8 -> 8 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 6 -> 6 commits (no change)
-    - maintainer, nobody: 3 -> 3 commits (no change)
+    - maintainer, nobody: 3 -> 4 commits
+    - maintainer, reviewer: 0 -> 1 commits
   - new commits
-    - ec756f23a3c9 "lib/cmdline: fix get_options() count and overflow with large ranges"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261005213945.359905-1-armaan.sandhu0504@gmail.com
-    - 50e246672827 "lib-cmdline-fix-get_options-count-and-overflow-with-large-ranges-fix"
-      - Authored by no role player, reviewed by nobody
+    - bdf26c6f9a55 "ocfs2: deal with legacy signed dir index name hash values"
+      - Authored by a maintainer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261008122743.616779-1-joseph.qi@linux.alibaba.com
+    - b2f77a6956e6 "ocfs2: deal with legacy signed xattr name hash values"
+      - Authored by a maintainer, reviewed by nobody
+      - Link: https://lore.kernel.org/20261008122743.616779-2-joseph.qi@linux.alibaba.com

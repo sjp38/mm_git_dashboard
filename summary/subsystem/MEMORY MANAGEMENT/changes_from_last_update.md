@@ -4,22 +4,17 @@
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 5 -> 5 commits (no change)
-  - series: 1 (1) -> 1 (2)
-    - no role, nobody: 2 -> 1 commits
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-  - new commits
-    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2)
-      - c1d66b6a05d8 "mm/khugepaged: flush deferred unmaps before dropping a failed folio (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
+    - no role, reviewer: 1 -> 1 commits (no change)
   - changed commits
-    - 15f6afdf05c6 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com"
-      - added "Tested-by: Karl Mehltretter <kmehltretter@gmail.com>"
-      - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
-      - Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com
+    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2)
+      - 2598de5a23d9 "mm/khugepaged: flush deferred unmaps before dropping a failed folio (1/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
 - mm-stable: 160 -> 160 commits (no change)
   - series: 32 (129) -> 32 (129) (no change)
     - no role, nobody: 13 -> 13 commits (no change)
@@ -31,12 +26,12 @@
     - maintainer, nobody: 21 -> 21 commits (no change)
     - maintainer, no role : 15 -> 15 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 298 -> 304 commits
-  - series: 37 (212) -> 38 (215)
-    - no role, nobody: 13 -> 15 commits
+- mm-unstable: 304 -> 305 commits
+  - series: 38 (215) -> 38 (215) (no change)
+    - no role, nobody: 15 -> 16 commits
     - no role, no role : 69 -> 69 commits (no change)
     - no role, reviewer: 65 -> 65 commits (no change)
-    - no role, maintainer: 69 -> 73 commits
+    - no role, maintainer: 73 -> 73 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 9 -> 9 commits (no change)
@@ -44,33 +39,35 @@
     - maintainer, nobody: 50 -> 50 commits (no change)
     - maintainer, no role : 12 -> 12 commits (no change)
     - maintainer, reviewer: 4 -> 4 commits (no change)
-  - new commits
-    - c8cb85ceecf4 "mm/vma: keep the unlinked VMA off the file across unmap on mmap hook failure"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261007194708.2009-1-okerixx@gmail.com
-    - e1fd84f8c449 "mm/hugetlb: use kvmalloc_objs for hugetlb_fault_mutex_table"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261006160128.31447-1-dheerajkumar.srivastava@amd.com
-    - series "mm/damon: fix a minor bug, clean code, and add a test". (3)
-      - aa268acb9aa0 "mm/damon/ops-common: fix age_in_sec overflow on 32-bit (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261006065209.41507-1-sj@kernel.org
-        - Link: https://lore.kernel.org/20261006065209.41507-2-sj@kernel.org
-        - Link: https://lore.kernel.org/20260623011652.1354-1-sj@kernel.org [1]
-      - fd36605f91d1 "mm/damon: use damon_get_monitor_folio() for hugetlb entries (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261006065209.41507-3-sj@kernel.org
-      - 18793c04abe6 "mm/damon/tests/core-kunit: add test for unconditionally skipping the last region (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261006065209.41507-4-sj@kernel.org
   - changed commits
-    - bfffb8f24842 "mm: page_alloc: make defrag_mode retries follow the promoted order"
+    - series "mm: workingset: fix the shadow node budget under MGLRU", v5. (4)
+      - 0700742d9f1d "mm: workingset: use lruvec_page_state_local() to count lru pages (1/4)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
+        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
+        - dropped "Cc: Kairui Song <kasong@tencent.com>"
+        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - Link: https://lore.kernel.org/2ed42f96aca124856ea30f774afb55cbe6d8ba58.1789096175.git.zhuhui@kylinos.cn
+    - series "mm: Unify device DAX and HugeTLB vmemmap population paths", v3. (6)
+      - 99ff56db1a31 "mm/mm_init: add zone mismatch warning during page init (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Hugh Dickins <hughd@google.com>"
+        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: Ayush Ranjan <ayushr@modal.com>"
+        - added "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
+        - added "Cc: Jan Kara <jack@suse.cz>"
+        - added "Cc: Gregory Price <gourry@gourry.net>"
+        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
+    - e1f80b32e7ae "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
-      - branch: mm-hotfixes-unstable -> mm-unstable
-      - Link: https://lore.kernel.org/20261006091815.897133-1-kirill@shutemov.name
-- mm-new: 1 -> 1 commits (no change)
+      - branch: mm-new -> mm-unstable
+      - added "Cc: Youngjun Park <youngjun.park@lge.com>"
+      - added "Cc: DaeMyung Kang <charsyam@gmail.com>"
+      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 1 -> 1 commits (no change)

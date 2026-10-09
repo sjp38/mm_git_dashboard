@@ -37,35 +37,35 @@
     - no role, reviewer: 4 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-    - 2abea56d8f6b "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
+    - 9cbfdc34f1d8 "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260903092126.24685-1-hongfu.li@linux.dev
-    - cf0314402951 "mm: page_alloc: add missing hooks to bulk allocation path"
+    - 3e2e1930704e "mm: page_alloc: add missing hooks to bulk allocation path"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908102356.344075-1-liuqiqi@kylinos.cn
     - series "mm: refactor zonelist constructors and iterators", v3. (2 commits)
-      - f308ff90e2b5 "mm: refactor find_next_best_node to find_next_best_node_in" (0/2)
+      - 9ad93367628d "mm: refactor find_next_best_node to find_next_best_node_in" (0/2)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net
-      - 40481e335d7b "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists()" (1/2)
+      - cf27ee01b0d8 "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923022902.2433614-3-gourry@gourry.net
-    - 5a5d93d90810 "mm/page_alloc: apply per-task GFP context in bulk allocator"
+    - bf62adf04404 "mm/page_alloc: apply per-task GFP context in bulk allocator"
       - Authored by no role player, reviewed by no role player
       - Link: https://sashiko.dev/#/patchset/20260907120949.418450-1-liuqiqi%40kylinos.cn
       - Link: https://lore.kernel.org/all/20260907120949.418450-1-liuqiqi@kylinos.cn/ [1]
       - Link: https://lore.kernel.org/20260915074928.327471-1-liuqiqi@kylinos.cn
-    - 07614a98bb58 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
+    - fdcc85c1f161 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
-      - 8e5e339f08bc "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - 72d6c1a922cf "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-    - bfffb8f24842 "mm: page_alloc: make defrag_mode retries follow the promoted order"
+    - 22709657c60b "mm: page_alloc: make defrag_mode retries follow the promoted order"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261006091815.897133-1-kirill@shutemov.name
-    - 47979f692a6b "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - 0bad2c8af787 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]

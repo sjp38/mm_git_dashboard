@@ -11,6 +11,18 @@
 - mm-unstable: 4 -> 4 commits (no change)
   - series: 0 (4) -> 0 (4) (no change)
     - no role, no role : 4 -> 4 commits (no change)
+  - changed commits
+    - series "mm: Unify device DAX and HugeTLB vmemmap population paths", v3. (6)
+      - 99ff56db1a31 "mm/mm_init: add zone mismatch warning during page init (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "Cc: Ayush Ranjan <ayushr@modal.com>"
+        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - added "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
+        - added "Cc: Gregory Price <gourry@gourry.net>"
+        - added "Cc: Jan Kara <jack@suse.cz>"
+        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - added "Cc: Hugh Dickins <hughd@google.com>"
+        - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

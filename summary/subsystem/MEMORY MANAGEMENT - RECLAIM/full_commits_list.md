@@ -79,63 +79,63 @@
     - reviewer, no role : 1 commits
     - reviewer, reviewer: 5 commits
   - full commits list
-      - 5d95fed617e3 "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
+      - f6a268445b0c "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
-      - 8d90269e0f56 "mm/mglru: move max_seq read into walk_update_folio" (3/6)
+      - 19d7f47d038d "mm/mglru: move max_seq read into walk_update_folio" (3/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-4-9aacbd77d4ca@tencent.com
-      - 7a60dc0cebae "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
+      - 62461d1075ed "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
-      - 7c5b13b265b9 "mm/mglru: fix potential generation folio number leak" (5/6)
+      - f1e745973332 "mm/mglru: fix potential generation folio number leak" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-6-9aacbd77d4ca@tencent.com
-    - 0e2c0930e279 "mm/vmscan: avoid false-positive -Wuninitialized warning, again"
+    - 90b7453d769e "mm/vmscan: avoid false-positive -Wuninitialized warning, again"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/all/20260213123902.3466040-1-arnd@kernel.org/
       - Link: https://lore.kernel.org/20260916083456.4136132-1-arnd@kernel.org
-      - 162675d5abda "mm: workingset: use lruvec_page_state_local() to count lru pages" (1/4)
+      - 0700742d9f1d "mm: workingset: use lruvec_page_state_local() to count lru pages" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/2ed42f96aca124856ea30f774afb55cbe6d8ba58.1789096175.git.zhuhui@kylinos.cn
-    - 498decc8eaef "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
+    - 734d415ae5ea "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
-    - 2212287463af "mm: mglru: clear the reference counter for rejected folios"
+    - 17b7b3e47b6c "mm: mglru: clear the reference counter for rejected folios"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/7384df363c12e4acdaa2e0428420cd8eed320ee7.1789384831.git.baolin.wang@linux.alibaba.com
-    - 3b1923d0bad2 "mm/memcg: clear folio memcg after changing per memcg stats"
+    - b503fe85a9d9 "mm/memcg: clear folio memcg after changing per memcg stats"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
-      - 8cf7568a9049 "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
+      - 55487c4f32bf "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
-      - 808c9a954f1a "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
+      - aa9a9cf74582 "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-    - ea17a53e58db "mm/mglru: restore accidentally removed seq < max_seq check"
+    - 9ddaab89905f "mm/mglru: restore accidentally removed seq < max_seq check"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260915101556.50467-1-baohua@kernel.org
-      - 9a49d7b99cba "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - 3efae45145c8 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-    - 2950f05b2d04 "mm: vmscan: put rotation-missed folios at the LRU tail"
+    - e75afcac911a "mm: vmscan: put rotation-missed folios at the LRU tail"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260920132519.3369946-1-ridong.chen@linux.dev
       - Link: https://lore.kernel.org/linux-kernel/20241010081802.290893-1-chenridong@huaweicloud.com/ [1]
       - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
       - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
       - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
-    - 61a36da51ae6 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
+    - 7239d6a202d6 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org
-    - 9b813d9f8c86 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested"
+    - aedae9ea4072 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-33-a1f052500fd7@kernel.org
-    - 374adda2d8c6 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()"
+    - d27a52f898f7 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-34-a1f052500fd7@kernel.org
-      - 35445b2fd4a8 "memcg: move memcg private ID refcount to objcg" (3/4)
+      - c6fb7c726dff "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

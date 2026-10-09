@@ -7,11 +7,11 @@
     - no role, maintainer: 1 commits
     - maintainer, nobody: 1 commits
   - full commits list
-      - 5bf84b33830e "zsmalloc: remove old object read API" (1/2)
+      - f3ddc74f02a6 "zsmalloc: remove old object read API" (1/2)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260907105739.1793316-3-senozhatsky@chromium.org
     - series "Remove PG_private by using page/folio->private checks instead", v5. (17 commits)
-      - 5fefc90ca911 "mm/zsmalloc: replace PG_private with pointer comparison" (0/17)
+      - eb96ee85e4c9 "mm/zsmalloc: replace PG_private with pointer comparison" (0/17)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-0-bb68b6a21869@nvidia.com
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-1-bb68b6a21869@nvidia.com

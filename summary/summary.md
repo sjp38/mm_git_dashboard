@@ -5,9 +5,9 @@
     - no role, no role : 3 commits
     - no role, reviewer: 2 commits
     - no role, maintainer: 1 commits
-- mm-hotfixes-unstable: 7 total, 1 (2) series, 5 non-series commits
+- mm-hotfixes-unstable: 8 total, 1 (2) series, 6 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
+    - no role, nobody: 3 commits
     - no role, no role : 4 commits
     - no role, reviewer: 1 commits
 - mm-stable: 212 total, 39 (172) series, 40 non-series commits
@@ -21,9 +21,9 @@
     - maintainer, nobody: 32 commits
     - maintainer, no role : 16 commits
     - maintainer, reviewer: 1 commits
-- mm-unstable: 491 total, 63 (345) series, 146 non-series commits
+- mm-unstable: 492 total, 63 (345) series, 147 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 52 commits
+    - no role, nobody: 53 commits
     - no role, no role : 140 commits
     - no role, reviewer: 86 commits
     - no role, maintainer: 101 commits
@@ -34,10 +34,11 @@
     - maintainer, nobody: 73 commits
     - maintainer, no role : 16 commits
     - maintainer, reviewer: 5 commits
-- mm-new: 15 total, 1 (10) series, 5 non-series commits
+- mm-new: 14 total, 1 (10) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 5 commits
+    - no role, nobody: 3 commits
     - no role, no role : 10 commits
+    - maintainer, nobody: 1 commits
 - mm-nonmm-stable: 76 total, 9 (29) series, 47 non-series commits
   - author/reviewer role stat
     - no role, nobody: 29 commits
@@ -45,10 +46,11 @@
     - no role, maintainer: 9 commits
     - maintainer, nobody: 9 commits
     - maintainer, reviewer: 5 commits
-- mm-nonmm-unstable: 34 total, 4 (9) series, 25 non-series commits
+- mm-nonmm-unstable: 36 total, 4 (9) series, 27 non-series commits
   - author/reviewer role stat
     - no role, nobody: 15 commits
     - no role, no role : 8 commits
     - no role, reviewer: 2 commits
     - no role, maintainer: 6 commits
-    - maintainer, nobody: 3 commits
+    - maintainer, nobody: 4 commits
+    - maintainer, reviewer: 1 commits

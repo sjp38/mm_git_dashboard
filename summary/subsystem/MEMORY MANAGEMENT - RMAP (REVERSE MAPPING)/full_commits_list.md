@@ -21,23 +21,23 @@
     - no role, reviewer: 2 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 7c1af6b73ced "mm/page_vma_mapped: guard check_pmd() with CONFIG_TRANSPARENT_HUGEPAGE"
+    - b0a734895973 "mm/page_vma_mapped: guard check_pmd() with CONFIG_TRANSPARENT_HUGEPAGE"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260624082359.2869-1-richard.weiyang@gmail.com
       - Link: https://download.01.org/0day-ci/archive/20260624/202606240042.ffPsEXVc-lkp@intel.com/config [1]
-      - fc06c18dd54f "mm/rmap: use folio_page_swap_entry() in ttu_anon_swapbacked_folio()" (3/8)
+      - e2b1de086e3c "mm/rmap: use folio_page_swap_entry() in ttu_anon_swapbacked_folio()" (3/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-3-ee6d01dfa5e1@columbia.edu
-    - 5eac8f898f75 "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify"
+    - 26ece8134f4c "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-23-a1f052500fd7@kernel.org
-    - 61a36da51ae6 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
+    - 7239d6a202d6 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org
-      - 982f9afc1730 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - b6b7c15894b6 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-    - 3e781335c965 "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+    - 0ca04ba7bff4 "mm/vma: don't remove VMA from rmap if pgoff unchanged"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

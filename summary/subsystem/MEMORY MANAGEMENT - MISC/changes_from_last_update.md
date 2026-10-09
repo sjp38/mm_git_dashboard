@@ -13,32 +13,26 @@
     - maintainer, nobody: 3 -> 3 commits (no change)
 - mm-unstable: 74 -> 74 commits (no change)
   - series: 7 (49) -> 7 (49) (no change)
-    - no role, nobody: 12 -> 11 commits
+    - no role, nobody: 11 -> 11 commits (no change)
     - no role, no role : 27 -> 27 commits (no change)
     - no role, reviewer: 17 -> 17 commits (no change)
-    - no role, maintainer: 4 -> 5 commits
+    - no role, maintainer: 5 -> 5 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - maintainer, nobody: 11 -> 11 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 383c05494575 "selftests/mm: hugetlb_madv_vs_map: add underflow test"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Tested-by: Breno Leitao <leitao@debian.org>"
-      - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
-      - Link: https://lore.kernel.org/aqgUdbtumaO8RiIb@bender.morinfr.org
-    - 3a9114a6ef9c "docs: hugetlbpage.rst: fix typo in per-node attribute description"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
-- mm-new: 1 -> 2 commits
+- mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 2 commits
+    - no role, nobody: 2 -> 1 commits
+    - maintainer, nobody: 0 -> 1 commits
   - new commits
-    - 84bcd0dbc50d "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
+    - 1e82a279f7cb "selftests/mm: build the page fragment test with the kernel"
+      - Authored by a maintainer, reviewed by nobody
+  - dropped commits
+    - fa2e4a000aa5 "selftests/mm: fix soft-dirty kselftest supported check"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261006064120.6796-1-azpijr@gmail.com
+      - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
+      - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)
