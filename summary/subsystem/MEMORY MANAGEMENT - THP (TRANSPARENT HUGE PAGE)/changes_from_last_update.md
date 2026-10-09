@@ -4,25 +4,113 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2)
-      - 2598de5a23d9 "mm/khugepaged: flush deferred unmaps before dropping a failed folio (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
-- mm-stable: 8 -> 8 commits (no change)
-  - series: 3 (6) -> 3 (6) (no change)
+- mm-stable: 8 -> 30 commits
+  - series: 3 (6) -> 4 (25)
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, reviewer: 3 -> 24 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-unstable: 60 -> 60 commits (no change)
-  - series: 6 (51) -> 6 (51) (no change)
+    - reviewer, no role : 0 -> 1 commits
+  - changed commits
+    - aa4998d62b84 "selftests/mm: remove unreachable returns after ksft exit helpers"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
+    - 600c820b8ee5 "mm/huge_memory: fix various coding style warnings"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260903092200.88910-1-christosskarlos.kernel@gmail.com
+    - series "mm: remove page_swap_entry()", v2. (8)
+      - 140c9dbdf6b2 "mm/huge_memory: add a comment to the open-coded swap entry (1/8)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-2-ee6d01dfa5e1@columbia.edu
+    - 18767a7c475f "mm/huge_memory: add folio_reset_partially_mapped()"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260908132821.1517475-1-kirill@shutemov.name
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - eb823057e092 "mm/khugepaged: deposit a newly allocated page table on collapse (0/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-0-31e91065fea4@kernel.org
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-1-31e91065fea4@kernel.org
+    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
+      - e01f7ddcb18a "mm/page-flags: check page/folio->private instead of PG_private (9/17)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
+    - series "mm/huge_memory: clean up and decouple the anon and file split helpers", v6. (17)
+      - 1bdcfcbeaddd "mm/huge_memory: fix rejection of swap cache folios with a mapping (1/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-2-ba1b4ba72c6f@tencent.com
+      - d4a1754333a0 "mm/huge_memory: invert folio_ref_freeze() check to reduce indentation (2/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-3-ba1b4ba72c6f@tencent.com
+      - 49c33ca3f812 "mm/huge_memory: split the routine for splitting anon and file folio (3/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-4-ba1b4ba72c6f@tencent.com
+      - 60ae71303b0c "mm/huge_memory: rename __split_unmapped_folio() to __split_frozen_folio() (4/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-5-ba1b4ba72c6f@tencent.com
+      - f1140fa0006d "mm/huge_memory: consolidate irq and locking for folio split (5/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-6-ba1b4ba72c6f@tencent.com
+      - 66b7545ba84f "mm/huge_memory: move EOF trimming into the file split helper (6/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-7-ba1b4ba72c6f@tencent.com
+      - ef31409ecb56 "mm/huge_memory: move unmap and remap into the split helpers (7/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-8-ba1b4ba72c6f@tencent.com
+      - 27d3df29ce49 "mm/huge_memory: rename remap_page() to remap_anon_folio() (8/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-9-ba1b4ba72c6f@tencent.com
+      - be2d44befea1 "mm/huge_memory: move the racy refcount check into unmap_folio() (9/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-10-ba1b4ba72c6f@tencent.com
+      - 550a041c774b "mm/huge_memory: move filemap management into the file split helper (10/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-11-ba1b4ba72c6f@tencent.com
+      - fea0f0ed65e8 "mm/huge_memory: move anon_vma handling into the anon split helper (11/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-12-ba1b4ba72c6f@tencent.com
+      - ce97e78f8b12 "mm/huge_memory: move memcg switch into the file split helper (12/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-13-ba1b4ba72c6f@tencent.com
+      - 1643b0b76fd8 "mm/huge_memory: drop the unused do_lru argument of the file split helper (13/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-14-ba1b4ba72c6f@tencent.com
+      - 925ca87557a6 "mm/huge_memory: clean up after-split folio freeing in __folio_split (14/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-15-ba1b4ba72c6f@tencent.com
+      - e294bbe8edbe "mm/huge_memory: count only swap cache refs in anon folio split (15/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-16-ba1b4ba72c6f@tencent.com
+      - 28585128ead0 "mm/huge_memory: drop the redundant mapping argument of __split_frozen_folio (16/17)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-17-ba1b4ba72c6f@tencent.com
+- mm-unstable: 60 -> 38 commits
+  - series: 6 (51) -> 5 (32)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 51 -> 51 commits (no change)
+    - no role, reviewer: 51 -> 30 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
+    - reviewer, no role : 1 -> 0 commits
     - reviewer, reviewer: 2 -> 2 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

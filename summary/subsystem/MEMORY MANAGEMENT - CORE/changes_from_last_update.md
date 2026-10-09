@@ -4,24 +4,134 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 31 -> 31 commits (no change)
-  - series: 7 (26) -> 7 (26) (no change)
-    - no role, no role : 22 -> 22 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
+- mm-stable: 31 -> 53 commits
+  - series: 7 (26) -> 9 (44)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 22 -> 34 commits
+    - no role, reviewer: 5 -> 7 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 65 -> 65 commits (no change)
-  - series: 4 (37) -> 4 (37) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
-    - no role, no role : 35 -> 35 commits (no change)
-    - no role, reviewer: 13 -> 13 commits (no change)
+    - reviewer, no role : 1 -> 2 commits
+    - reviewer, reviewer: 1 -> 3 commits
+    - maintainer, no role : 1 -> 3 commits
+    - maintainer, reviewer: 0 -> 2 commits
+  - changed commits
+    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
+      - 64169ceea5b1 "mm/mglru: introduce helpers for manipulating gen and refs flags (1/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
+      - c1d0e799321c "mm/mglru: use explicit tier range in read_ctrl_pos() (4/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
+    - ae0298a5fbef "mm/memory: constrain generic_access_phys() to page boundary"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/e06e28a46c2a176238f03b5740df0913e57c2861.1788842306.git.rakukuip@gmail.com
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - 35e340a47888 "mm: userland pgtable freeing is RCU-safe now, remove leftover bits (10/12)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-11-31e91065fea4@kernel.org
+      - a5c0a39d0e57 "mm: change the contract for free_pgtables(), update docs (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
+    - 4b019e056f6c "mm: implement file_is_dev_zero() to uniquely identify /dev/zero"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org
+    - fe73aa910ea5 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org
+    - e59c9a971a9f "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
+      - 59cbd435300c "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (0/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260930140627.57431-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+      - 74c32c8ccdea "mm/sparse-vmemmap: allocate shared tail page array dynamically (1/12)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-3-songmuchun@bytedance.com
+      - d8777177dcb9 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION (2/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-4-songmuchun@bytedance.com
+      - 69392d8e9e1d "mm/sparse-vmemmap: open-code init_compound_tail() (3/12)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-5-songmuchun@bytedance.com
+      - 0e13353ec936 "mm/sparse-vmemmap: prepare DAX vmemmap population for compound page orders (4/12)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-6-songmuchun@bytedance.com
+      - 2ef77f4a7d5a "mm/sparse-vmemmap: set compound page order for device DAX (5/12)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com
+      - ba9164f880bf "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - added "[muchun.song@linux.dev: set PG_reserved before preparing the compound tail]"
+        - added "Link: : https://lore.kernel.org/20260930150748.1134516-1-songmuchun@bytedance.com"
+        - Link: : https://lore.kernel.org/20260930150748.1134516-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260930140627.57431-8-songmuchun@bytedance.com
+      - d3a699634c2a "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (7/12)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-9-songmuchun@bytedance.com
+      - a4fabaa14c2d "powerpc/mm: switch device DAX to shared tail vmemmap pages (8/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - added "[muchun.song@linux.dev: use try_get_page()]"
+        - added "Link: : https://lore.kernel.org/20260930152826.76084-1-songmuchun@bytedance.com"
+        - Link: : https://lore.kernel.org/20260930152826.76084-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260930140627.57431-10-songmuchun@bytedance.com
+      - 2f84a6a92724 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (9/12)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
+      - 76df418d2957 "mm/sparse-vmemmap: drop unused section_nr_vmemmap_pages() arguments (10/12)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-12-songmuchun@bytedance.com
+    - series "mm: refactor zonelist constructors and iterators", v3. (2)
+      - 5436132610d9 "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net
+        - Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net
+    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
+      - e01f7ddcb18a "mm/page-flags: check page/folio->private instead of PG_private (9/17)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
+      - bbe5d3b3d402 "treewide: remove PagePrivate() and PG_private from comments and docs (15/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com
+- mm-unstable: 65 -> 42 commits
+  - series: 4 (37) -> 2 (19)
+    - no role, nobody: 4 -> 2 commits
+    - no role, no role : 35 -> 23 commits
+    - no role, reviewer: 13 -> 11 commits
     - no role, maintainer: 5 -> 5 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 3 -> 3 commits (no change)
-    - maintainer, no role : 2 -> 2 commits (no change)
-    - maintainer, reviewer: 2 -> 2 commits (no change)
+    - reviewer, no role : 1 -> 0 commits
+    - reviewer, reviewer: 3 -> 1 commits
+    - maintainer, no role : 2 -> 0 commits
+    - maintainer, reviewer: 2 -> 0 commits
+  - dropped commits
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
+      - 96d9c776c0ed "fixup! mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (7/12)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260930150748.1134516-1-songmuchun@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)

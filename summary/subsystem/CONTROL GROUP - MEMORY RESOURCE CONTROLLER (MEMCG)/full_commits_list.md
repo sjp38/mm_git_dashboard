@@ -1,10 +1,13 @@
 - baseline: v7.3-rc5-337-gff47652a4b66
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 16 total, 4 (11) series, 5 non-series commits
+- mm-stable: 31 total, 8 (23) series, 8 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 1 commits
-    - no role, maintainer: 7 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 14 commits
+    - maintainer, nobody: 6 commits
     - maintainer, no role : 8 commits
   - full commits list
     - c20cf1c3c8cd "mm/memcontrol: fix data-race on reading jiffies_64"
@@ -65,119 +68,118 @@
       - c50c376e1fd6 "mm: distinguish large folio swap allocation failures" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260830042920.2280454-3-xueyuan.chen21@gmail.com
-- mm-unstable: 31 total, 6 (27) series, 4 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, reviewer: 5 commits
-    - no role, maintainer: 18 commits
-    - maintainer, nobody: 6 commits
-  - full commits list
-    - e056b21d464d "mm/hugetlb: charge folios to the target mm's memcg"
+    - c2deb1356d82 "mm/hugetlb: charge folios to the target mm's memcg"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
     - series "mm/mglru: clean up folio counters and flag usage", v6. (6 commits)
-      - 1f213d3326c7 "mm/memcontrol: move the lru_zone_size sanity check to the reader side" (0/6)
+      - 20bf009db40d "mm/memcontrol: move the lru_zone_size sanity check to the reader side" (0/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-0-9aacbd77d4ca@tencent.com
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-1-9aacbd77d4ca@tencent.com
         - Link: https://lore.kernel.org/linux-mm/20260804-mglru-fg-v1-0-4d8dad39dad6@tencent.com/ [1]
     - series "memcg: group struct fields by access pattern". (6 commits)
-      - b50602c41547 "memcg: move per-node objcg to the read-mostly fields" (0/6)
+      - d307e85e4d7d "memcg: move per-node objcg to the read-mostly fields" (0/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260905030522.1887837-1-shakeel.butt@linux.dev
         - Link: https://lore.kernel.org/20260905030522.1887837-2-shakeel.butt@linux.dev
-      - 00734b7d361e "memcg: split mem_cgroup_private_id into two fields" (1/6)
+      - 43eae38b7b29 "memcg: split mem_cgroup_private_id into two fields" (1/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260905030522.1887837-3-shakeel.butt@linux.dev
-      - d8804978f996 "memcg: group the write-hot fields of struct mem_cgroup" (2/6)
+      - 0ceeb2c7c543 "memcg: group the write-hot fields of struct mem_cgroup" (2/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260905030522.1887837-4-shakeel.butt@linux.dev
-      - 020a14cc298d "memcg: group the cold fields of struct mem_cgroup" (3/6)
+      - 538c63bab205 "memcg: group the cold fields of struct mem_cgroup" (3/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260905030522.1887837-5-shakeel.butt@linux.dev
-      - e33fd6a4cc5b "memcg: group the read-mostly fields of struct mem_cgroup" (4/6)
+      - 7580861e1303 "memcg: group the read-mostly fields of struct mem_cgroup" (4/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260905030522.1887837-6-shakeel.butt@linux.dev
-      - edcab9fc7f91 "memcg: group the fields of struct mem_cgroup_per_node" (5/6)
+      - c1b11d76ea9c "memcg: group the fields of struct mem_cgroup_per_node" (5/6)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260905030522.1887837-7-shakeel.butt@linux.dev
-    - 8fd99cb8ee55 "memcg: don't call schedule_work when no spinning is allowed"
+    - bffa47f1ca00 "memcg: don't call schedule_work when no spinning is allowed"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260904173145.2028377-1-stevensd@google.com
-    - cfd97cb9bb5f "mm/memcontrol: skip non-hierarchical memcg-wide stats when v1 is unavailable"
+    - ba99faaf670c "mm/memcontrol: skip non-hierarchical memcg-wide stats when v1 is unavailable"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260903215616.1456239-1-joannelkoong@gmail.com
     - series "mm: workingset: fix the shadow node budget under MGLRU", v5. (4 commits)
-      - 59068214b559 "mm: memcg: redirect stats updates of dying memcgs for all hierarchies" (0/4)
+      - 7ee68fff2ba6 "mm: memcg: redirect stats updates of dying memcgs for all hierarchies" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/cover.1789096175.git.zhuhui@kylinos.cn
         - Link: https://lore.kernel.org/c1ef4ef6a84cac479e573f4423b734dc8176f7d5.1789096175.git.zhuhui@kylinos.cn
         - Link: https://gist.github.com/teawater/32f373ec41d185d840455eb167321a5a [1]
-      - 40311393402e "mm: memcg: skip the RCU lock when the memcg is not dying" (2/4)
+      - 7c0a645068de "mm: memcg: skip the RCU lock when the memcg is not dying" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/9ffdbdfc96312e3e13cb8f056bfe26649492d949.1789096175.git.zhuhui@kylinos.cn
-      - 18252c302a89 "mm: memcg: reparent non-hierarchical lruvec stats on cgroup v2" (3/4)
+      - 154c16a783b7 "mm: memcg: reparent non-hierarchical lruvec stats on cgroup v2" (3/4)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/4a7a64eed2b145ad535fedaea3624f8310c29d5b.1789096175.git.zhuhui@kylinos.cn
     - series "mm/mglru: fix ineffective memory protection for non-kswapd reclaim", v4. (2 commits)
-      - 5f6b99fe1ba8 "mm/page_counter: avoid integer overflow in effective_protection()" (0/2)
+      - 7809ce47b056 "mm/page_counter: avoid integer overflow in effective_protection()" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260907025445.1836238-1-ridong.chen@linux.dev
         - Link: https://lore.kernel.org/20260907025445.1836238-2-ridong.chen@linux.dev
         - Link: https://sashiko.dev/#/patchset/20260826133054.88529-1-ridong.chen@linux.dev?part=1 [1]
-      - 55487c4f32bf "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
+      - 15da1e4978dd "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
+- mm-unstable: 16 total, 2 (15) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, reviewer: 4 commits
+    - no role, maintainer: 11 commits
+  - full commits list
     - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11 commits)
-      - 983140d727cf "mm: memcontrol: take a const folio in folio_memcg() and friends" (0/11)
+      - 2dd84a337211 "mm: memcontrol: take a const folio in folio_memcg() and friends" (0/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-0-c239a6010b58@columbia.edu
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-1-c239a6010b58@columbia.edu
-      - bbb8af10c877 "mm: memcontrol: constify obj_cgroup_memcg() and friends" (1/11)
+      - 0e1ba2866cdc "mm: memcontrol: constify obj_cgroup_memcg() and friends" (1/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-2-c239a6010b58@columbia.edu
-      - 51a6fb343bb0 "mm: memcontrol: constify the lruvec helpers" (2/11)
+      - 34bc27a7b861 "mm: memcontrol: constify the lruvec helpers" (2/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-3-c239a6010b58@columbia.edu
-      - 88893cb07eb9 "mm: memcontrol: constify the mem_cgroup accessors" (4/11)
+      - 60a68ba59db2 "mm: memcontrol: constify the mem_cgroup accessors" (4/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-5-c239a6010b58@columbia.edu
-      - 84f64c761723 "mm: page_counter: constify page_counter_read() and page_counter_margin()" (5/11)
+      - 5bcd38c08171 "mm: page_counter: constify page_counter_read() and page_counter_margin()" (5/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-6-c239a6010b58@columbia.edu
-      - 9c3365ee3089 "mm: memcontrol: constify the reclaim protection helpers" (6/11)
+      - 0eac7ef74467 "mm: memcontrol: constify the reclaim protection helpers" (6/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-7-c239a6010b58@columbia.edu
-      - b5c18602119f "mm: memcontrol: constify the memcg and lruvec stat readers" (7/11)
+      - e6cbc070b019 "mm: memcontrol: constify the memcg and lruvec stat readers" (7/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-8-c239a6010b58@columbia.edu
-      - d69822691305 "mm: memcontrol: constify the swap accounting helpers" (8/11)
+      - 089c15062f5d "mm: memcontrol: constify the swap accounting helpers" (8/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-9-c239a6010b58@columbia.edu
-      - fdd74c899b6d "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max()" (9/11)
+      - 70343a45c641 "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max()" (9/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-10-c239a6010b58@columbia.edu
-      - 905fda5c3211 "mm: memcontrol: constify the zswap and socket pressure helpers" (10/11)
+      - d3e0fa2afacd "mm: memcontrol: constify the zswap and socket pressure helpers" (10/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-11-c239a6010b58@columbia.edu
-      - 82504b692b91 "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio" (1/2)
+      - d1cbb9a4d643 "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
     - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4 commits)
-      - cb14a57aed91 "memcg: keep swap charging under RCU protection" (0/4)
+      - 9c241e443cab "memcg: keep swap charging under RCU protection" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-0-6c0637dc0edb@tencent.com
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-1-6c0637dc0edb@tencent.com
-      - 7593cdf819e8 "memcg: base swap charge accounting on memcgid root status" (1/4)
+      - 9b3e05774a24 "memcg: base swap charge accounting on memcgid root status" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-2-6c0637dc0edb@tencent.com
-      - 2fa7ae430828 "memcg: manipulate memcg private ID references by ID" (2/4)
+      - ec817fecf1b1 "memcg: manipulate memcg private ID references by ID" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-3-6c0637dc0edb@tencent.com
-      - c6fb7c726dff "memcg: move memcg private ID refcount to objcg" (3/4)
+      - fa92c910b8f3 "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-    - 233e4ac1add7 "mm: fix typos in various comments"
+    - aa3c7d3ce96f "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

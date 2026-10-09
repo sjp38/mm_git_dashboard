@@ -1,15 +1,16 @@
 - baseline: v7.3-rc5-337-gff47652a4b66
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 23 total, 4 (20) series, 3 non-series commits
+- mm-stable: 39 total, 4 (32) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 3 commits
     - no role, no role : 2 commits
-    - no role, reviewer: 16 commits
-    - no role, maintainer: 1 commits
-    - reviewer, no role : 1 commits
-    - reviewer, reviewer: 1 commits
+    - no role, reviewer: 21 commits
+    - no role, maintainer: 2 commits
+    - reviewer, no role : 2 commits
+    - reviewer, reviewer: 7 commits
     - maintainer, no role : 1 commits
+    - maintainer, reviewer: 1 commits
   - full commits list
     - 46fa67175c2e "mm/vmscan: drop the combined limit gate in __node_reclaim()"
       - Authored by no role player, reviewed by a maintainer
@@ -91,103 +92,100 @@
       - 27517f701ff3 "mm: replace PF_KSWAPD flag with kthread_func() check" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902131653.1338227-4-wangkefeng.wang@huawei.com
-- mm-unstable: 28 total, 0 (18) series, 10 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 4 commits
-    - no role, reviewer: 10 commits
-    - no role, maintainer: 4 commits
-    - reviewer, no role : 1 commits
-    - reviewer, reviewer: 6 commits
-    - maintainer, reviewer: 1 commits
-  - full commits list
-      - f6a268445b0c "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
+      - 64169ceea5b1 "mm/mglru: introduce helpers for manipulating gen and refs flags" (1/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
-      - e632c3d60242 "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
+      - d982ba0b970e "mm/migrate: copy all referenced state via folio_migrate_lru_refs" (2/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-3-9aacbd77d4ca@tencent.com
-      - 19d7f47d038d "mm/mglru: move max_seq read into walk_update_folio" (3/6)
+      - d896c1a8379b "mm/mglru: move max_seq read into walk_update_folio" (3/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-4-9aacbd77d4ca@tencent.com
-      - 62461d1075ed "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
+      - c1d0e799321c "mm/mglru: use explicit tier range in read_ctrl_pos()" (4/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
-      - f1e745973332 "mm/mglru: fix potential generation folio number leak" (5/6)
+      - 766f584cb627 "mm/mglru: fix potential generation folio number leak" (5/6)
         - Authored by a reviewer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-6-9aacbd77d4ca@tencent.com
-    - 90b7453d769e "mm/vmscan: avoid false-positive -Wuninitialized warning, again"
+    - ca6e32f3f424 "mm/vmscan: avoid false-positive -Wuninitialized warning, again"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/all/20260213123902.3466040-1-arnd@kernel.org/
       - Link: https://lore.kernel.org/20260916083456.4136132-1-arnd@kernel.org
-      - 0700742d9f1d "mm: workingset: use lruvec_page_state_local() to count lru pages" (1/4)
+      - c7a37bac3ccc "mm: workingset: use lruvec_page_state_local() to count lru pages" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/2ed42f96aca124856ea30f774afb55cbe6d8ba58.1789096175.git.zhuhui@kylinos.cn
-    - 734d415ae5ea "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
+    - 74d9aa0d8e98 "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
-    - 17b7b3e47b6c "mm: mglru: clear the reference counter for rejected folios"
+    - 306170e7ea66 "mm: mglru: clear the reference counter for rejected folios"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/7384df363c12e4acdaa2e0428420cd8eed320ee7.1789384831.git.baolin.wang@linux.alibaba.com
-    - b503fe85a9d9 "mm/memcg: clear folio memcg after changing per memcg stats"
+    - 0b1b457ecc4f "mm/memcg: clear folio memcg after changing per memcg stats"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
-      - 55487c4f32bf "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
+      - 15da1e4978dd "mm/mglru: fix ineffective memory protection for non-kswapd reclaim" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
-      - 2d0e88f5078c "mm/sparse-vmemmap: allocate shared tail page array dynamically" (1/12)
+      - 74c32c8ccdea "mm/sparse-vmemmap: allocate shared tail page array dynamically" (1/12)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260930140627.57431-3-songmuchun@bytedance.com
-      - ddce29d4f9d8 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION" (2/12)
+      - d8777177dcb9 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION" (2/12)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260930140627.57431-4-songmuchun@bytedance.com
-      - dad45889e0f1 "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/12)
+      - ba9164f880bf "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages" (6/12)
         - Authored by no role player, reviewed by a reviewer
+        - Link: : https://lore.kernel.org/20260930150748.1134516-1-songmuchun@bytedance.com
         - Link: https://lore.kernel.org/20260930140627.57431-8-songmuchun@bytedance.com
-      - b79c65105760 "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header" (8/12)
+      - d3a699634c2a "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header" (7/12)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260930140627.57431-9-songmuchun@bytedance.com
-      - aa9a9cf74582 "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
+      - e01f7ddcb18a "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-    - 9ddaab89905f "mm/mglru: restore accidentally removed seq < max_seq check"
+- mm-unstable: 12 total, 0 (6) series, 6 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 4 commits
+    - no role, reviewer: 5 commits
+    - no role, maintainer: 3 commits
+  - full commits list
+    - ddbb933abc6c "mm/mglru: restore accidentally removed seq < max_seq check"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260915101556.50467-1-baohua@kernel.org
-      - 51a6fb343bb0 "mm: memcontrol: constify the lruvec helpers" (2/11)
+      - 34bc27a7b861 "mm: memcontrol: constify the lruvec helpers" (2/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-3-c239a6010b58@columbia.edu
-      - 3efae45145c8 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - 12004544c20b "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-    - e75afcac911a "mm: vmscan: put rotation-missed folios at the LRU tail"
+    - 243730714977 "mm: vmscan: put rotation-missed folios at the LRU tail"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260920132519.3369946-1-ridong.chen@linux.dev
       - Link: https://lore.kernel.org/linux-kernel/20241010081802.290893-1-chenridong@huaweicloud.com/ [1]
       - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
       - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
       - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
-    - 7239d6a202d6 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
+    - 27b1fdd144fe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org
-    - aedae9ea4072 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested"
+    - 550d5679a228 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-33-a1f052500fd7@kernel.org
-    - d27a52f898f7 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()"
+    - eabceef9e0d7 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-34-a1f052500fd7@kernel.org
-      - c6fb7c726dff "memcg: move memcg private ID refcount to objcg" (3/4)
+      - fa92c910b8f3 "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-      - 72d6c1a922cf "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - d468de6823eb "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-      - 1a9b1130c15b "mm/sparse: remove pfn_in_present_section()" (6/13)
+      - e7678445aeda "mm/sparse: remove pfn_in_present_section()" (6/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-7-54d81d65e125@kernel.org
-      - 2b4bdc624aa9 "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
+      - c83ed95f461f "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-    - 252dcb9fc7df "mm: remove the unused zone->unaccepted_cleanup"
+    - 158725b25d18 "mm: remove the unused zone->unaccepted_cleanup"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

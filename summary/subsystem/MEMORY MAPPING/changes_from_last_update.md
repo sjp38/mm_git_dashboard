@@ -4,14 +4,48 @@
     - no role, reviewer: 2 -> 2 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 2 commits (no change)
+- mm-stable: 2 -> 10 commits
   - series: 2 (2) -> 2 (2) (no change)
+    - no role, no role : 0 -> 8 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 38 -> 38 commits (no change)
+  - changed commits
+    - 51a8de81fd2e "mm/nommu: reject wrapping ranges in access_remote_vm()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260909064231.18693-1-tasos.papagiannnis@gmail.com
+    - 9ee6e52616a3 "mm: move drivers/char/mem.c to mm/char-mem.c"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org
+    - 4b019e056f6c "mm: implement file_is_dev_zero() to uniquely identify /dev/zero"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org
+    - fe73aa910ea5 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org
+    - e59c9a971a9f "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org
+    - 9a1d31e5a6f3 "tools/testing/vma: add test to assert MAP_PRIVATE-/dev/zero is anon"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-5-d4781e84ccfc@kernel.org
+    - 41938a7834c6 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-6-d4781e84ccfc@kernel.org
+    - c32fddc0a01d "tools/testing/vma: cover hole filling through __mmap_region()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/178886112560.138404.17741948638665342936.vma-v2@tychen.cc
+- mm-unstable: 38 -> 30 commits
   - series: 2 (10) -> 2 (10) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 24 -> 24 commits (no change)
+    - no role, no role : 24 -> 16 commits
     - no role, reviewer: 10 -> 10 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)

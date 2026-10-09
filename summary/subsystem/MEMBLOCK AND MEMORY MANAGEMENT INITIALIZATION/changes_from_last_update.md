@@ -3,26 +3,24 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 7 -> 7 commits (no change)
-  - series: 1 (7) -> 1 (7) (no change)
+- mm-stable: 7 -> 9 commits
+  - series: 1 (7) -> 1 (9)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 5 -> 5 commits (no change)
+    - no role, no role : 5 -> 7 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 0 (4) -> 0 (4) (no change)
-    - no role, no role : 4 -> 4 commits (no change)
   - changed commits
-    - series "mm: Unify device DAX and HugeTLB vmemmap population paths", v3. (6)
-      - 99ff56db1a31 "mm/mm_init: add zone mismatch warning during page init (5/6)"
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
+      - 2ef77f4a7d5a "mm/sparse-vmemmap: set compound page order for device DAX (5/12)"
         - Authored by no role player, reviewed by no role player
-        - added "Cc: Ayush Ranjan <ayushr@modal.com>"
-        - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-        - added "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
-        - added "Cc: Gregory Price <gourry@gourry.net>"
-        - added "Cc: Jan Kara <jack@suse.cz>"
-        - added "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - added "Cc: Hugh Dickins <hughd@google.com>"
-        - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com
+      - 2f84a6a92724 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (9/12)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
+- mm-unstable: 4 -> 2 commits
+  - series: 0 (4) -> 0 (2)
+    - no role, no role : 4 -> 2 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

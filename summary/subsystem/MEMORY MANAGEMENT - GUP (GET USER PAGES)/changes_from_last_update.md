@@ -3,12 +3,18 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 3 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-- mm-unstable: 8 -> 8 commits (no change)
-  - series: 0 (4) -> 0 (4) (no change)
-    - no role, no role : 7 -> 7 commits (no change)
+- mm-stable: 3 -> 4 commits
+  - series: 1 (2) -> 1 (3)
+    - no role, no role : 3 -> 4 commits
+  - changed commits
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - 35e340a47888 "mm: userland pgtable freeing is RCU-safe now, remove leftover bits (10/12)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-11-31e91065fea4@kernel.org
+- mm-unstable: 8 -> 7 commits
+  - series: 0 (4) -> 0 (3)
+    - no role, no role : 7 -> 6 commits
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

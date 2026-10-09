@@ -4,19 +4,61 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 14 -> 14 commits (no change)
-  - series: 2 (11) -> 2 (11) (no change)
+- mm-stable: 14 -> 22 commits
+  - series: 2 (11) -> 3 (16)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
-- mm-unstable: 20 -> 20 commits (no change)
-  - series: 3 (9) -> 3 (9) (no change)
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 5 -> 8 commits
+    - maintainer, no role : 0 -> 3 commits
+    - maintainer, reviewer: 0 -> 1 commits
+  - changed commits
+    - c2deb1356d82 "mm/hugetlb: charge folios to the target mm's memcg"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
+    - e4949a80f3b0 "mm/hugetlb: fix subpool minimum reservation rollback"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260907132055.26696-1-zhoujinmeng@bytedance.com
+    - 21f514ad5204 "mm/hugetlb: account for allowed nodes when gathering surplus pages"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260909074642.7308-1-yehuaisheng@open-hieco.net
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
+      - 59cbd435300c "mm/sparse-vmemmap: factor out shared vmemmap tail page allocation (0/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260930140627.57431-2-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260513130542.35604-1-songmuchun@bytedance.com/ [1]
+      - d3a699634c2a "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (7/12)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-9-songmuchun@bytedance.com
+      - a4fabaa14c2d "powerpc/mm: switch device DAX to shared tail vmemmap pages (8/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - added "[muchun.song@linux.dev: use try_get_page()]"
+        - added "Link: : https://lore.kernel.org/20260930152826.76084-1-songmuchun@bytedance.com"
+        - Link: : https://lore.kernel.org/20260930152826.76084-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260930140627.57431-10-songmuchun@bytedance.com
+      - 27ffeec7b045 "Documentation/mm: update DAX vmemmap deduplication docs (11/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-13-songmuchun@bytedance.com
+    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
+      - 36c9ce320c3c "mm/hugetlb: use direct assignment instead of folio_change_private() (4/17)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-5-bb68b6a21869@nvidia.com
+- mm-unstable: 20 -> 12 commits
+  - series: 3 (9) -> 2 (5)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 13 -> 13 commits (no change)
-    - maintainer, no role : 3 -> 3 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 2 -> 1 commits
+    - no role, maintainer: 13 -> 10 commits
+    - maintainer, no role : 3 -> 0 commits
+    - maintainer, reviewer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

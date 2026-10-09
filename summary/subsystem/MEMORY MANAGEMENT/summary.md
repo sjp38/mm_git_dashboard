@@ -8,30 +8,29 @@
     - no role, nobody: 1 commits
     - no role, no role : 3 commits
     - no role, reviewer: 1 commits
-- mm-stable: 160 total, 32 (129) series, 31 non-series commits
+- mm-stable: 295 total, 50 (236) series, 59 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 13 commits
-    - no role, no role : 51 commits
-    - no role, reviewer: 29 commits
-    - no role, maintainer: 28 commits
-    - reviewer, no role : 1 commits
-    - reviewer, reviewer: 1 commits
-    - maintainer, nobody: 21 commits
-    - maintainer, no role : 15 commits
-    - maintainer, reviewer: 1 commits
-- mm-unstable: 305 total, 38 (215) series, 90 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 16 commits
-    - no role, no role : 69 commits
-    - no role, reviewer: 65 commits
-    - no role, maintainer: 73 commits
+    - no role, nobody: 21 commits
+    - no role, no role : 72 commits
+    - no role, reviewer: 58 commits
+    - no role, maintainer: 52 commits
     - reviewer, nobody: 1 commits
-    - reviewer, no role : 2 commits
-    - reviewer, reviewer: 9 commits
-    - reviewer, maintainer: 4 commits
-    - maintainer, nobody: 50 commits
-    - maintainer, no role : 12 commits
-    - maintainer, reviewer: 4 commits
+    - reviewer, no role : 3 commits
+    - reviewer, reviewer: 8 commits
+    - reviewer, maintainer: 3 commits
+    - maintainer, nobody: 49 commits
+    - maintainer, no role : 23 commits
+    - maintainer, reviewer: 5 commits
+- mm-unstable: 168 total, 20 (108) series, 60 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 7 commits
+    - no role, no role : 48 commits
+    - no role, reviewer: 36 commits
+    - no role, maintainer: 49 commits
+    - reviewer, reviewer: 2 commits
+    - reviewer, maintainer: 1 commits
+    - maintainer, nobody: 21 commits
+    - maintainer, no role : 4 commits
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 1 total, 0 (0) series, 1 non-series commits

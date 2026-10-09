@@ -1,10 +1,12 @@
 - baseline: v7.3-rc5-337-gff47652a4b66
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 7 total, 2 (5) series, 2 non-series commits
+- mm-stable: 11 total, 3 (7) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, reviewer: 6 commits
+    - no role, no role : 1 commits
+    - no role, reviewer: 8 commits
     - no role, maintainer: 1 commits
+    - maintainer, reviewer: 1 commits
   - full commits list
     - dc954a916d53 "mm: drop stale MAX_ORDER references"
       - Authored by no role player, reviewed by a reviewer
@@ -30,42 +32,41 @@
       - 44b74ec3ae5a "mm: replace PF_KCOMPACTD flag with kthread_func() check" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260902131653.1338227-5-wangkefeng.wang@huawei.com
-- mm-unstable: 9 total, 1 (3) series, 6 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 3 commits
-    - no role, reviewer: 4 commits
-    - maintainer, reviewer: 1 commits
-  - full commits list
-    - 9cbfdc34f1d8 "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
+    - e1e86503027a "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260903092126.24685-1-hongfu.li@linux.dev
-    - 3e2e1930704e "mm: page_alloc: add missing hooks to bulk allocation path"
+    - cc500013c86c "mm: page_alloc: add missing hooks to bulk allocation path"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260908102356.344075-1-liuqiqi@kylinos.cn
     - series "mm: refactor zonelist constructors and iterators", v3. (2 commits)
-      - 9ad93367628d "mm: refactor find_next_best_node to find_next_best_node_in" (0/2)
+      - 5436132610d9 "mm: refactor find_next_best_node to find_next_best_node_in" (0/2)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net
         - Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net
-      - cf27ee01b0d8 "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists()" (1/2)
+      - d82701f6266a "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923022902.2433614-3-gourry@gourry.net
-    - bf62adf04404 "mm/page_alloc: apply per-task GFP context in bulk allocator"
+- mm-unstable: 5 total, 0 (1) series, 4 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 2 commits
+  - full commits list
+    - 2247d27a728e "mm/page_alloc: apply per-task GFP context in bulk allocator"
       - Authored by no role player, reviewed by no role player
       - Link: https://sashiko.dev/#/patchset/20260907120949.418450-1-liuqiqi%40kylinos.cn
       - Link: https://lore.kernel.org/all/20260907120949.418450-1-liuqiqi@kylinos.cn/ [1]
       - Link: https://lore.kernel.org/20260915074928.327471-1-liuqiqi@kylinos.cn
-    - fdcc85c1f161 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
+    - 5e86c0abcf25 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
-      - 72d6c1a922cf "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - d468de6823eb "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-    - 22709657c60b "mm: page_alloc: make defrag_mode retries follow the promoted order"
+    - 4b0a0638b455 "mm: page_alloc: make defrag_mode retries follow the promoted order"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261006091815.897133-1-kirill@shutemov.name
-    - 0bad2c8af787 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - 30c8b98f0b6f "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]

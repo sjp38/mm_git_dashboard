@@ -3,14 +3,38 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 12 -> 12 commits (no change)
-  - series: 1 (9) -> 1 (9) (no change)
-    - no role, no role : 4 -> 4 commits (no change)
+- mm-stable: 0 -> 5 commits
+  - series: 0 (0) -> 0 (4)
+    - no role, no role : 0 -> 3 commits
+    - reviewer, no role : 0 -> 2 commits
+  - changed commits
+    - e59c9a971a9f "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-4-d4781e84ccfc@kernel.org
+    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
+      - ffbdf157ec6a "erofs: mm/pagemap: add readahead_folio_last() to avoid folio->private (7/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-8-bb68b6a21869@nvidia.com
+      - e01f7ddcb18a "mm/page-flags: check page/folio->private instead of PG_private (9/17)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
+      - abf8efadeb21 "treewide: remove folio_set/clear_private() usage (10/17)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-11-bb68b6a21869@nvidia.com
+      - bbe5d3b3d402 "treewide: remove PagePrivate() and PG_private from comments and docs (15/17)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com
+- mm-unstable: 12 -> 7 commits
+  - series: 1 (9) -> 1 (5)
+    - no role, no role : 4 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-    - reviewer, no role : 2 -> 2 commits (no change)
+    - reviewer, no role : 2 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

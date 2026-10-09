@@ -3,14 +3,33 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
-- mm-unstable: 5 -> 5 commits (no change)
-  - series: 0 (3) -> 0 (3) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
+- mm-stable: 0 -> 2 commits
+  - series: 0 (0) -> 0 (1)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+  - changed commits
+    - a85a8d03278f "mm/memory_hotplug: factor out node_is_memoryless()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - added "[akpm@linux-foundation.org: move node_is_memoryless() inside CONFIG_MEMORY_HOTREMOVE]"
+      - Link: https://lore.kernel.org/20260902195507.88655-1-gourry@gourry.net
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
+      - ba9164f880bf "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - added "[muchun.song@linux.dev: set PG_reserved before preparing the compound tail]"
+        - added "Link: : https://lore.kernel.org/20260930150748.1134516-1-songmuchun@bytedance.com"
+        - Link: : https://lore.kernel.org/20260930150748.1134516-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260930140627.57431-8-songmuchun@bytedance.com
+- mm-unstable: 5 -> 2 commits
+  - series: 0 (3) -> 0 (2)
+    - no role, no role : 1 -> 0 commits
+    - no role, reviewer: 1 -> 0 commits
     - no role, maintainer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+  - dropped commits
+    - 1e42a448796d "mm-memory_hotplug-factor-out-node_is_memoryless-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

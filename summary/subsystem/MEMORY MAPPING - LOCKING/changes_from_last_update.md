@@ -3,13 +3,19 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+- mm-stable: 2 -> 3 commits
+  - series: 1 (2) -> 1 (3)
+    - no role, no role : 1 -> 2 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, no role : 2 -> 2 commits (no change)
+  - changed commits
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - a5c0a39d0e57 "mm: change the contract for free_pgtables(), update docs (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
+- mm-unstable: 2 -> 1 commits
+  - series: 1 (2) -> 1 (1)
+    - no role, no role : 2 -> 1 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

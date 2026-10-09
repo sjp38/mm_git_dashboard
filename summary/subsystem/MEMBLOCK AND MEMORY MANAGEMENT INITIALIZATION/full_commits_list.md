@@ -1,10 +1,10 @@
 - baseline: v7.3-rc5-337-gff47652a4b66
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 7 total, 1 (7) series, 0 non-series commits
+- mm-stable: 9 total, 1 (9) series, 0 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
-    - no role, no role : 5 commits
+    - no role, no role : 7 commits
     - no role, reviewer: 1 commits
   - full commits list
       - 89fb8ed75e3c "mm/mm_init: skip initializing shared vmemmap tail pages" (2/17)
@@ -32,20 +32,20 @@
       - e52dcd69fbdb "mm: use memcpy_nontemporal() in zone-device template copies" (5/7)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260831111638.76012-7-lizhe.67@bytedance.com
-- mm-unstable: 4 total, 0 (4) series, 0 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 4 commits
-  - full commits list
-      - 046968424467 "mm/sparse-vmemmap: set compound page order for device DAX" (5/12)
+      - 2ef77f4a7d5a "mm/sparse-vmemmap: set compound page order for device DAX" (5/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com
-      - 862e38cd8158 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (11/12)
+      - 2f84a6a92724 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (9/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
-      - b0b99a3af589 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
+- mm-unstable: 2 total, 0 (2) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+  - full commits list
+      - 90e750ca2618 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260929053231.66085-4-songmuchun@bytedance.com
-      - 99ff56db1a31 "mm/mm_init: add zone mismatch warning during page init" (5/6)
+      - 60ae5b599461 "mm/mm_init: add zone mismatch warning during page init" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

@@ -3,33 +3,99 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 23 -> 23 commits (no change)
-  - series: 4 (20) -> 4 (20) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+- mm-stable: 23 -> 39 commits
+  - series: 4 (20) -> 4 (32)
+    - no role, nobody: 1 -> 3 commits
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 16 -> 16 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - no role, reviewer: 16 -> 21 commits
+    - no role, maintainer: 1 -> 2 commits
+    - reviewer, no role : 1 -> 2 commits
+    - reviewer, reviewer: 1 -> 7 commits
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 28 -> 28 commits (no change)
-  - series: 0 (18) -> 0 (18) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 10 -> 10 commits (no change)
-    - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, no role : 1 -> 1 commits (no change)
-    - reviewer, reviewer: 6 -> 6 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+    - maintainer, reviewer: 0 -> 1 commits
   - changed commits
+    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
+      - 64169ceea5b1 "mm/mglru: introduce helpers for manipulating gen and refs flags (1/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
+      - d982ba0b970e "mm/migrate: copy all referenced state via folio_migrate_lru_refs (2/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-3-9aacbd77d4ca@tencent.com
+      - d896c1a8379b "mm/mglru: move max_seq read into walk_update_folio (3/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-4-9aacbd77d4ca@tencent.com
+      - c1d0e799321c "mm/mglru: use explicit tier range in read_ctrl_pos() (4/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
+      - 766f584cb627 "mm/mglru: fix potential generation folio number leak (5/6)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-6-9aacbd77d4ca@tencent.com
+    - ca6e32f3f424 "mm/vmscan: avoid false-positive -Wuninitialized warning, again"
+      - Authored by no role player, reviewed by nobody
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/all/20260213123902.3466040-1-arnd@kernel.org/
+      - Link: https://lore.kernel.org/20260916083456.4136132-1-arnd@kernel.org
     - series "mm: workingset: fix the shadow node budget under MGLRU", v5. (4)
-      - 0700742d9f1d "mm: workingset: use lruvec_page_state_local() to count lru pages (1/4)"
+      - c7a37bac3ccc "mm: workingset: use lruvec_page_state_local() to count lru pages (1/4)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Kairui Song <kasong@tencent.com>"
-        - added "Reviewed-by: Barry Song <baohua@kernel.org>"
-        - dropped "Cc: Kairui Song <kasong@tencent.com>"
-        - dropped "Cc: Barry Song <baohua@kernel.org>"
+        - branch: mm-unstable -> mm-stable
         - Link: https://lore.kernel.org/2ed42f96aca124856ea30f774afb55cbe6d8ba58.1789096175.git.zhuhui@kylinos.cn
+    - 74d9aa0d8e98 "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
+    - 306170e7ea66 "mm: mglru: clear the reference counter for rejected folios"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/7384df363c12e4acdaa2e0428420cd8eed320ee7.1789384831.git.baolin.wang@linux.alibaba.com
+    - 0b1b457ecc4f "mm/memcg: clear folio memcg after changing per memcg stats"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
+    - series "mm/mglru: fix ineffective memory protection for non-kswapd reclaim", v4. (2)
+      - 15da1e4978dd "mm/mglru: fix ineffective memory protection for non-kswapd reclaim (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
+      - 74c32c8ccdea "mm/sparse-vmemmap: allocate shared tail page array dynamically (1/12)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-3-songmuchun@bytedance.com
+      - d8777177dcb9 "mm/sparse-vmemmap: introduce CONFIG_VMEMMAP_OPTIMIZATION (2/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-4-songmuchun@bytedance.com
+      - ba9164f880bf "mm/sparse-vmemmap: switch device DAX to shared tail vmemmap pages (6/12)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - added "[muchun.song@linux.dev: set PG_reserved before preparing the compound tail]"
+        - added "Link: : https://lore.kernel.org/20260930150748.1134516-1-songmuchun@bytedance.com"
+        - Link: : https://lore.kernel.org/20260930150748.1134516-1-songmuchun@bytedance.com
+        - Link: https://lore.kernel.org/20260930140627.57431-8-songmuchun@bytedance.com
+      - d3a699634c2a "mm/sparse-vmemmap: move vmemmap optimization helpers to a public header (7/12)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-9-songmuchun@bytedance.com
+    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
+      - e01f7ddcb18a "mm/page-flags: check page/folio->private instead of PG_private (9/17)"
+        - Authored by a reviewer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
+- mm-unstable: 28 -> 12 commits
+  - series: 0 (18) -> 0 (6)
+    - no role, nobody: 2 -> 0 commits
+    - no role, no role : 4 -> 4 commits (no change)
+    - no role, reviewer: 10 -> 5 commits
+    - no role, maintainer: 4 -> 3 commits
+    - reviewer, no role : 1 -> 0 commits
+    - reviewer, reviewer: 6 -> 0 commits
+    - maintainer, reviewer: 1 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

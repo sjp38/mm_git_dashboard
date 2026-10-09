@@ -3,13 +3,23 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
-- mm-unstable: 12 -> 12 commits (no change)
-  - series: 0 (4) -> 0 (4) (no change)
+- mm-stable: 1 -> 3 commits
+  - series: 0 (1) -> 0 (2)
+    - no role, no role : 1 -> 3 commits
+  - changed commits
+    - 4cac0fd31288 "mm/madvise: swap in CoW'd MAP_PRIVATE-file mappings on MADV_WILLNEED"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/aprjOxDy3JCPb2oa@gremlin
+    - series "mm: stop calling pmd_folio() on special PMDs", v3. (2)
+      - 0bd719cb607e "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260926105110.2156652-3-gourry@gourry.net
+- mm-unstable: 12 -> 10 commits
+  - series: 0 (4) -> 0 (3)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 7 -> 7 commits (no change)
+    - no role, no role : 7 -> 5 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)

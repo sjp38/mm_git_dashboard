@@ -3,31 +3,94 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 9 -> 9 commits (no change)
-  - series: 2 (8) -> 2 (8) (no change)
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
-- mm-unstable: 24 -> 25 commits
-  - series: 6 (17) -> 6 (17) (no change)
-    - no role, nobody: 2 -> 3 commits
-    - no role, no role : 6 -> 6 commits (no change)
-    - no role, reviewer: 3 -> 3 commits (no change)
-    - no role, maintainer: 6 -> 6 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
-    - reviewer, maintainer: 4 -> 4 commits (no change)
-    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-stable: 9 -> 21 commits
+  - series: 2 (8) -> 7 (19)
+    - no role, no role : 6 -> 9 commits
+    - no role, reviewer: 1 -> 2 commits
+    - no role, maintainer: 2 -> 3 commits
+    - reviewer, nobody: 0 -> 1 commits
+    - reviewer, reviewer: 0 -> 1 commits
+    - reviewer, maintainer: 0 -> 4 commits
+    - maintainer, reviewer: 0 -> 1 commits
   - changed commits
-    - e1f80b32e7ae "mm/swap, PM: hibernate: atomically replace hibernation pin"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-new -> mm-unstable
-      - added "Cc: Youngjun Park <youngjun.park@lge.com>"
-      - added "Cc: DaeMyung Kang <charsyam@gmail.com>"
-      - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
-- mm-new: 1 -> 0 commits
+    - series "mm: remove page_swap_entry()", v2. (8)
+      - 434114544b82 "mm/swap: add folio_swap_entry() and folio_page_swap_entry() (0/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - added "[tz2294@columbia.edu: adjust folio_swap_entry() kerneldoc summary, per David]"
+        - added "Link: : https://lore.kernel.org/20260913-folio_swap_entry-doc-fix-1@columbia.edu"
+        - Link: : https://lore.kernel.org/20260913-folio_swap_entry-doc-fix-1@columbia.edu
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-0-ee6d01dfa5e1@columbia.edu
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-1-ee6d01dfa5e1@columbia.edu
+      - 73b44d0e31e3 "mm/swapfile: use folio_page_swap_entry() (4/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-5-ee6d01dfa5e1@columbia.edu
+      - 1bf185edd550 "mm/swap: remove page_swap_entry() (7/8)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-8-ee6d01dfa5e1@columbia.edu
+    - series "mm/swap: skip empty clusters in the swapoff scan", v4. (2)
+      - cb4936da6b37 "mm/swap: fix stale comment on swap_info_struct::cluster_info (0/2)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260909161552.2335971-1-youngjun.park@lge.com
+        - Link: https://lore.kernel.org/20260909161552.2335971-2-youngjun.park@lge.com
+      - 5b3d04dece09 "mm/swap: scan by cluster in find_next_to_unuse() (1/2)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260909161552.2335971-3-youngjun.park@lge.com
+    - 0b1b457ecc4f "mm/memcg: clear folio memcg after changing per memcg stats"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
+    - series "mm: zswap: optimize zswap invalidate and store", v3. (3)
+      - 329808c9cf41 "mm: zswap: convert zswap_invalidate() to take a range (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910123544.818146-1-wangkefeng.wang@huawei.com
+        - Link: https://lore.kernel.org/20260910123544.818146-2-wangkefeng.wang@huawei.com
+    - series "mm, swap: some random fixes and cleanups", v3. (4)
+      - 103e9222968e "mm, swap: fix potential NULL dereference when trying a sleep table allocation (0/4)"
+        - Authored by a reviewer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260907091356.53026-1-shikemeng@huaweicloud.com
+        - Link: https://lore.kernel.org/20260907091356.53026-2-shikemeng@huaweicloud.com
+      - be0291c3c43f "mm, swap: move setup_swap_clusters_info() after SWP_SOLIDSTATE initialization (1/4)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260907091356.53026-3-shikemeng@huaweicloud.com
+      - 868346102067 "mm, swap: return early from swap_extend_table_try_free() on first non-zero entry (2/4)"
+        - Authored by a reviewer, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260907091356.53026-4-shikemeng@huaweicloud.com
+      - 63a08a1124ae "mm, swap: remove unneeded swap_extend_table_try_free() in swap_dup_entries_cluster() (3/4)"
+        - Authored by a reviewer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260907091356.53026-5-shikemeng@huaweicloud.com
+    - series "mm/huge_memory: clean up and decouple the anon and file split helpers", v6. (17)
+      - bb7f5fafc9d0 "mm/swap: fix off-by-one in swap cache replace sanity check (0/17)"
+        - Authored by a maintainer, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-0-ba1b4ba72c6f@tencent.com
+        - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-1-ba1b4ba72c6f@tencent.com
+- mm-unstable: 25 -> 12 commits
+  - series: 6 (17) -> 1 (6)
+    - no role, nobody: 3 -> 2 commits
+    - no role, no role : 6 -> 3 commits
+    - no role, reviewer: 3 -> 2 commits
+    - no role, maintainer: 6 -> 5 commits
+    - reviewer, nobody: 1 -> 0 commits
+    - reviewer, reviewer: 1 -> 0 commits
+    - reviewer, maintainer: 4 -> 0 commits
+    - maintainer, reviewer: 1 -> 0 commits
+  - dropped commits
+    - series "mm: remove page_swap_entry()", v2. (8)
+      - b3c0e2cea685 "mm-swap-add-folio_swap_entry-and-folio_page_swap_entry-fix (1/8)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/20260913-folio_swap_entry-doc-fix-1@columbia.edu
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

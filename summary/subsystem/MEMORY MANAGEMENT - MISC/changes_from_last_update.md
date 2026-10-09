@@ -4,35 +4,143 @@
     - no role, no role : 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 19 -> 19 commits (no change)
-  - series: 3 (13) -> 3 (13) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 8 -> 8 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
-    - maintainer, nobody: 3 -> 3 commits (no change)
-- mm-unstable: 74 -> 74 commits (no change)
-  - series: 7 (49) -> 7 (49) (no change)
-    - no role, nobody: 11 -> 11 commits (no change)
-    - no role, no role : 27 -> 27 commits (no change)
-    - no role, reviewer: 17 -> 17 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
+- mm-stable: 19 -> 44 commits
+  - series: 3 (13) -> 6 (25)
+    - no role, nobody: 1 -> 3 commits
+    - no role, no role : 8 -> 21 commits
+    - no role, reviewer: 2 -> 6 commits
+    - no role, maintainer: 5 -> 6 commits
+    - maintainer, nobody: 3 -> 7 commits
+    - maintainer, no role : 0 -> 1 commits
+  - changed commits
+    - series "mm/damon: cleanup code, add test cases, and update guidances in docs". (12)
+      - 179e31269a15 "Docs/mm/damon/maintainer-profile: update AI review for Sashiko replies (11/12)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260902054747.99370-12-sj@kernel.org
+        - Link: https://github.com/sashiko-dev/sashiko/commit/b554c7b6e733 [1]
+    - aa4998d62b84 "selftests/mm: remove unreachable returns after ksft exit helpers"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260903135251.39593-1-zenghui.yu@linux.dev
+    - 1e1ef39523fc "docs/mm: ksm: use the renamed ksm structure names"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260905084034.39521-1-kmehltretter@gmail.com
+    - d214267cd55d "Docs/mm/damon/design: fix broken :ref: usage and a typo"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260908135257.97523-1-sj@kernel.org
+    - series "selftests/mm: pagemap_ioctl test fixes and cleanups", v2. (3)
+      - 0aec9c957d2a "selftests/mm: fix size truncation in pagemap_ioctl test (0/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260908134117.84405-1-zenghui.yu@linux.dev
+        - Link: https://lore.kernel.org/20260908134117.84405-2-zenghui.yu@linux.dev
+      - c4f08a284fec "selftests/mm: mark file-local symbols of pagemap_ioctl.c static (1/3)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260908134315.84431-1-zenghui.yu@linux.dev
+      - 59350eba9324 "selftests/mm: init page sizes early in pagemap_ioctl test (2/3)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260908134405.84448-1-zenghui.yu@linux.dev
+        - Link: : https://lore.kernel.org/20260628111329.9cfcd9c67925869307020aba@linux-foundation.org/
+    - series "mm: make userland page table freeing RCU-safe", v5. (12)
+      - a5c0a39d0e57 "mm: change the contract for free_pgtables(), update docs (11/12)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-12-31e91065fea4@kernel.org
+    - series "selftests/mm: Validate selections and scope memfd_secret setup", v3. (2)
+      - 4844f5b84a8e "selftests/mm: reject invalid test selections before running tests (0/2)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910125645.285866-1-diannaaav@gmail.com
+        - Link: https://lore.kernel.org/20260910125645.285866-2-diannaaav@gmail.com
+      - 0bbe9b917d96 "selftests/mm: only prepare ptrace_scope when memfd_secret is selected (1/2)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910125645.285866-3-diannaaav@gmail.com
+    - cc598b44a6bc "selftests/mm: fix ptrace PEEKDATA check in memfd_secret test"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260910064415.71623-1-hongfu.li@linux.dev
+    - 9ee6e52616a3 "mm: move drivers/char/mem.c to mm/char-mem.c"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-1-d4781e84ccfc@kernel.org
+    - 4b019e056f6c "mm: implement file_is_dev_zero() to uniquely identify /dev/zero"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-2-d4781e84ccfc@kernel.org
+    - fe73aa910ea5 "mm/vma: only permit MAP_PRIVATE /dev/zero to be mapped anonymous"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-3-d4781e84ccfc@kernel.org
+    - 41938a7834c6 "tools/testing/selftests/mm: add MAP_PRIVATE-/dev/zero merge tests"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260926-map-private-dev-zero-v3-6-d4781e84ccfc@kernel.org
+    - series "docs/core-api: memory-allocation: add k[mz]alloc_obj() and clarify kmalloc", v2. (2)
+      - 9ecb05623cd6 "docs/core-api: memory-allocation: add k[mz]alloc_obj() and clarify kmalloc (0/2)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260902-docs-memalloc-guide-v2-0-218c1a4dcb80@kernel.org
+        - Link: https://lore.kernel.org/20260902-docs-memalloc-guide-v2-1-218c1a4dcb80@kernel.org
+    - 6fc433516140 "docs/core-api: memory-allocation: clarify when to use kzalloc_obj and kzalloc"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260907063654.2248617-1-rppt@kernel.org
+    - series "mm/damon: introduce pgidle_set probe filter type". (5)
+      - 4ae7aac0b29d "Docs/mm/damon/design: update for pgidle_set probe filter (4/5)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260910142234.171562-6-sj@kernel.org
+    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
+      - 27ffeec7b045 "Documentation/mm: update DAX vmemmap deduplication docs (11/12)"
+        - Authored by a maintainer, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260930140627.57431-13-songmuchun@bytedance.com
+    - a0dba61b040a "kselftest: mm: fix potential failure for merged VMA in guard-regions"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260911142904.1825452-1-yeoreum.yun@arm.com
+    - series "mm/damon: introduce probe_hits_wsum DAMOS core filter", v2. (7)
+      - ebb73ca521eb "Docs/mm/damon/design: update for probe_hits_wsum DAMOS core filter (5/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260911135510.96914-7-sj@kernel.org
+      - 8c32a1afe96c "Docs/admin-guide/mm/damon/usage: update for probe_hits_wsum DAMOS filter (6/7)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260911135510.96914-8-sj@kernel.org
+    - 6593a15af108 "selftests/mm: skip khugepaged file tests if mkfs.xfs is unavailable"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260912202903.16157-1-jaeyeon.lee.dev@gmail.com
+    - fcf93a839f80 "kselftest: mm: remove exclusion of building soft-dirty test in arm64"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260911210611.4001419-1-yeoreum.yun@arm.com
+    - 3cada562c2bf "selftests/mm: hugetlb_madv_vs_map: add underflow test"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
+      - Link: https://lore.kernel.org/aqgUdbtumaO8RiIb@bender.morinfr.org
+- mm-unstable: 74 -> 49 commits
+  - series: 7 (49) -> 4 (39)
+    - no role, nobody: 11 -> 9 commits
+    - no role, no role : 27 -> 14 commits
+    - no role, reviewer: 17 -> 13 commits
+    - no role, maintainer: 5 -> 4 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 11 -> 11 commits (no change)
-    - maintainer, no role : 1 -> 1 commits (no change)
+    - maintainer, nobody: 11 -> 7 commits
+    - maintainer, no role : 1 -> 0 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
 - mm-new: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - maintainer, nobody: 0 -> 1 commits
-  - new commits
-    - 1e82a279f7cb "selftests/mm: build the page fragment test with the kernel"
-      - Authored by a maintainer, reviewed by nobody
-  - dropped commits
-    - fa2e4a000aa5 "selftests/mm: fix soft-dirty kselftest supported check"
-      - Authored by no role player, reviewed by nobody
-      - Link: : https://sashiko.dev/#/patchset/20260806181843.1839943-2-audra@redhat.com
-      - Link: https://lore.kernel.org/20260806181843.1839943-3-audra@redhat.com
+    - no role, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

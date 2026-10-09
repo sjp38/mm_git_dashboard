@@ -3,12 +3,32 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 1 -> 1 commits (no change)
-  - series: 0 (1) -> 0 (1) (no change)
+- mm-stable: 1 -> 5 commits
+  - series: 0 (1) -> 1 (5)
+    - no role, nobody: 0 -> 4 commits
     - no role, no role : 1 -> 1 commits (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 1 (4) -> 1 (4) (no change)
-    - no role, nobody: 4 -> 4 commits (no change)
+  - changed commits
+    - series "mm/execmem: fixes and cleanups for the ROX cache". (5)
+      - 52d95a55a011 "mm/execmem: free ROX cache chunks only when they span an entire vm area (0/5)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-0-11beb2a3d249@kernel.org
+        - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-1-11beb2a3d249@kernel.org
+      - d80773cedde2 "mm/execmem: handle potential allocation errors in the maple tree (1/5)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-2-11beb2a3d249@kernel.org
+      - 569db54d8b7a "mm/execmem: make sure ROX cache always contains multiples of PMD_SIZE (2/5)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-3-11beb2a3d249@kernel.org
+      - c188936fc93e "mm/execmem: use cleanup infrastructure in ROX cache functions (4/5)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260903-execmem-rox-cache-pmd-v1-v1-5-11beb2a3d249@kernel.org
+- mm-unstable: 4 -> 0 commits
+  - series: 1 (4) -> 0 (0)
+    - no role, nobody: 4 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

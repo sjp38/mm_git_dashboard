@@ -3,17 +3,92 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 16 -> 16 commits (no change)
-  - series: 4 (11) -> 4 (11) (no change)
+- mm-stable: 16 -> 31 commits
+  - series: 4 (11) -> 8 (23)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, maintainer: 7 -> 7 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 7 -> 14 commits
+    - maintainer, nobody: 0 -> 6 commits
     - maintainer, no role : 8 -> 8 commits (no change)
-- mm-unstable: 31 -> 31 commits (no change)
-  - series: 6 (27) -> 6 (27) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 18 -> 18 commits (no change)
-    - maintainer, nobody: 6 -> 6 commits (no change)
+  - changed commits
+    - c2deb1356d82 "mm/hugetlb: charge folios to the target mm's memcg"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260903075048.3316-1-zhoujinmeng@bytedance.com
+    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
+      - 20bf009db40d "mm/memcontrol: move the lru_zone_size sanity check to the reader side (0/6)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-0-9aacbd77d4ca@tencent.com
+        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-1-9aacbd77d4ca@tencent.com
+        - Link: https://lore.kernel.org/linux-mm/20260804-mglru-fg-v1-0-4d8dad39dad6@tencent.com/ [1]
+    - series "memcg: group struct fields by access pattern". (6)
+      - d307e85e4d7d "memcg: move per-node objcg to the read-mostly fields (0/6)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260905030522.1887837-1-shakeel.butt@linux.dev
+        - Link: https://lore.kernel.org/20260905030522.1887837-2-shakeel.butt@linux.dev
+      - 43eae38b7b29 "memcg: split mem_cgroup_private_id into two fields (1/6)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260905030522.1887837-3-shakeel.butt@linux.dev
+      - 0ceeb2c7c543 "memcg: group the write-hot fields of struct mem_cgroup (2/6)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260905030522.1887837-4-shakeel.butt@linux.dev
+      - 538c63bab205 "memcg: group the cold fields of struct mem_cgroup (3/6)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260905030522.1887837-5-shakeel.butt@linux.dev
+      - 7580861e1303 "memcg: group the read-mostly fields of struct mem_cgroup (4/6)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260905030522.1887837-6-shakeel.butt@linux.dev
+      - c1b11d76ea9c "memcg: group the fields of struct mem_cgroup_per_node (5/6)"
+        - Authored by a maintainer, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260905030522.1887837-7-shakeel.butt@linux.dev
+    - bffa47f1ca00 "memcg: don't call schedule_work when no spinning is allowed"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260904173145.2028377-1-stevensd@google.com
+    - ba99faaf670c "mm/memcontrol: skip non-hierarchical memcg-wide stats when v1 is unavailable"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260903215616.1456239-1-joannelkoong@gmail.com
+    - series "mm: workingset: fix the shadow node budget under MGLRU", v5. (4)
+      - 7ee68fff2ba6 "mm: memcg: redirect stats updates of dying memcgs for all hierarchies (0/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/cover.1789096175.git.zhuhui@kylinos.cn
+        - Link: https://lore.kernel.org/c1ef4ef6a84cac479e573f4423b734dc8176f7d5.1789096175.git.zhuhui@kylinos.cn
+        - Link: https://gist.github.com/teawater/32f373ec41d185d840455eb167321a5a [1]
+      - 7c0a645068de "mm: memcg: skip the RCU lock when the memcg is not dying (2/4)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/9ffdbdfc96312e3e13cb8f056bfe26649492d949.1789096175.git.zhuhui@kylinos.cn
+      - 154c16a783b7 "mm: memcg: reparent non-hierarchical lruvec stats on cgroup v2 (3/4)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/4a7a64eed2b145ad535fedaea3624f8310c29d5b.1789096175.git.zhuhui@kylinos.cn
+    - series "mm/mglru: fix ineffective memory protection for non-kswapd reclaim", v4. (2)
+      - 7809ce47b056 "mm/page_counter: avoid integer overflow in effective_protection() (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260907025445.1836238-1-ridong.chen@linux.dev
+        - Link: https://lore.kernel.org/20260907025445.1836238-2-ridong.chen@linux.dev
+        - Link: https://sashiko.dev/#/patchset/20260826133054.88529-1-ridong.chen@linux.dev?part=1 [1]
+      - 15da1e4978dd "mm/mglru: fix ineffective memory protection for non-kswapd reclaim (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
+- mm-unstable: 31 -> 16 commits
+  - series: 6 (27) -> 2 (15)
+    - no role, nobody: 2 -> 1 commits
+    - no role, reviewer: 5 -> 4 commits
+    - no role, maintainer: 18 -> 11 commits
+    - maintainer, nobody: 6 -> 0 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
