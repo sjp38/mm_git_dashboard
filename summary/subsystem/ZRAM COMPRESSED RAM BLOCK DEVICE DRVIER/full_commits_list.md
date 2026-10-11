@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66
+- baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 3 total, 1 (1) series, 2 non-series commits
@@ -21,7 +21,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - d5207c6d152c "zram: fix short reads from block_state"
+    - 12f3682da878 "zram: fix short reads from block_state"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260929071846.24829-1-pooyan.azadparvar@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

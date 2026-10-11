@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66
+- baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 0 total, 0 (0) series, 0 non-series commits
@@ -7,11 +7,11 @@
     - no role, nobody: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - f407a2401464 "mm: kmsan: fix iounmap metadata teardown"
+    - c1aa5b5a2d57 "mm: kmsan: fix iounmap metadata teardown"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261002200508.546-1-dmytrokoziuk68@gmail.com
       - Link: https://lkml.iu.edu/2609.3/12748.html
-    - b3049e4b2fa1 "mm: kmsan: fix ioremap error cleanup"
+    - 06af75216196 "mm: kmsan: fix ioremap error cleanup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261002200508.546-2-dmytrokoziuk68@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

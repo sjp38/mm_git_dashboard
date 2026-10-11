@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66
+- baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 1 total, 1 (1) series, 0 non-series commits
@@ -15,7 +15,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 3f2bc9c0ca29 "mm/secretmem: fix the enable parameter description"
+    - 15cf7ac60c0d "mm/secretmem: fix the enable parameter description"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260912114859.88957-1-kmehltretter@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

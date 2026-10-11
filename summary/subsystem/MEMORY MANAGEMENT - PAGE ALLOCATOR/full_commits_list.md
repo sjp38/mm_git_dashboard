@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66
+- baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 11 total, 3 (7) series, 4 non-series commits
@@ -48,25 +48,24 @@
         - Link: https://lore.kernel.org/20260923022902.2433614-3-gourry@gourry.net
 - mm-unstable: 5 total, 0 (1) series, 4 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
-    - no role, no role : 2 commits
+    - no role, no role : 3 commits
     - no role, reviewer: 2 commits
   - full commits list
-    - 2247d27a728e "mm/page_alloc: apply per-task GFP context in bulk allocator"
+    - a177626403c4 "mm/page_alloc: apply per-task GFP context in bulk allocator"
       - Authored by no role player, reviewed by no role player
       - Link: https://sashiko.dev/#/patchset/20260907120949.418450-1-liuqiqi%40kylinos.cn
       - Link: https://lore.kernel.org/all/20260907120949.418450-1-liuqiqi@kylinos.cn/ [1]
       - Link: https://lore.kernel.org/20260915074928.327471-1-liuqiqi@kylinos.cn
-    - 5e86c0abcf25 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
+    - d75797583f08 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
-      - d468de6823eb "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - 174cbf863357 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-    - 4b0a0638b455 "mm: page_alloc: make defrag_mode retries follow the promoted order"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261006091815.897133-1-kirill@shutemov.name
-    - 30c8b98f0b6f "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - 0f060f3b56ef "mm: page_alloc: make defrag_mode retries follow the promoted order"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261009125503.126202-1-kas@kernel.org
+    - 02626bf4ffd4 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]

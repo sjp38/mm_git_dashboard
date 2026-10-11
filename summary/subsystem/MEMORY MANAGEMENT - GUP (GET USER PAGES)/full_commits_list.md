@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66
+- baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 4 total, 1 (3) series, 1 non-series commits
@@ -22,32 +22,32 @@
       - 35e340a47888 "mm: userland pgtable freeing is RCU-safe now, remove leftover bits" (10/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-11-31e91065fea4@kernel.org
-- mm-unstable: 7 total, 0 (3) series, 4 non-series commits
+- mm-unstable: 7 total, 0 (5) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 6 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 2fb1a5f56689 "mm/gup_test: safely calculate GUP batch size"
+    - 94ecd3039e4f "mm/gup_test: safely calculate GUP batch size"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260915102524.125758-1-sarthak.sharma@arm.com
-      - 73856d0ef77f "tools/lib/mm: move hugepage_settings out of selftests" (3/6)
+      - dc590eb1f0cb "tools/lib/mm: move hugepage_settings out of selftests" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
-      - aa6fa284d08f "tools/mm: move gup_test from selftests/mm to tools/mm" (4/6)
+      - 7ea18d786436 "tools/mm: move gup_test from selftests/mm to tools/mm" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-5-sarthak.sharma@arm.com
-      - cf59a22055c3 "tools/mm: make gup_bench a benchmark only tool" (5/6)
+      - bf9b36d51f19 "tools/mm: make gup_bench a benchmark only tool" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-6-sarthak.sharma@arm.com
-    - c7ec358e74c9 "selftests/mm: add a GUP selftest"
+    - beb02c9caf63 "selftests/mm: add a GUP selftest"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
-    - a06361e9e908 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-20-a1f052500fd7@kernel.org
-    - 27b1fdd144fe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org
+      - 45f9e29b236d "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs" (19/38)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-20-923b70125b1e@kernel.org
+      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

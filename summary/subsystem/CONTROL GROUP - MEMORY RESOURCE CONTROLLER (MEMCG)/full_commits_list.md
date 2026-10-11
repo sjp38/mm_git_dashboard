@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66
+- baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 31 total, 8 (23) series, 8 non-series commits
@@ -131,55 +131,55 @@
     - no role, maintainer: 11 commits
   - full commits list
     - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11 commits)
-      - 2dd84a337211 "mm: memcontrol: take a const folio in folio_memcg() and friends" (0/11)
+      - 5385147a1248 "mm: memcontrol: take a const folio in folio_memcg() and friends" (0/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-0-c239a6010b58@columbia.edu
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-1-c239a6010b58@columbia.edu
-      - 0e1ba2866cdc "mm: memcontrol: constify obj_cgroup_memcg() and friends" (1/11)
+      - c6c8cd5915ae "mm: memcontrol: constify obj_cgroup_memcg() and friends" (1/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-2-c239a6010b58@columbia.edu
-      - 34bc27a7b861 "mm: memcontrol: constify the lruvec helpers" (2/11)
+      - dae820c2d101 "mm: memcontrol: constify the lruvec helpers" (2/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-3-c239a6010b58@columbia.edu
-      - 60a68ba59db2 "mm: memcontrol: constify the mem_cgroup accessors" (4/11)
+      - 4b030c60bd53 "mm: memcontrol: constify the mem_cgroup accessors" (4/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-5-c239a6010b58@columbia.edu
-      - 5bcd38c08171 "mm: page_counter: constify page_counter_read() and page_counter_margin()" (5/11)
+      - 71377c3d9b2c "mm: page_counter: constify page_counter_read() and page_counter_margin()" (5/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-6-c239a6010b58@columbia.edu
-      - 0eac7ef74467 "mm: memcontrol: constify the reclaim protection helpers" (6/11)
+      - a2bcd3e72ef5 "mm: memcontrol: constify the reclaim protection helpers" (6/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-7-c239a6010b58@columbia.edu
-      - e6cbc070b019 "mm: memcontrol: constify the memcg and lruvec stat readers" (7/11)
+      - 65367a81ef9b "mm: memcontrol: constify the memcg and lruvec stat readers" (7/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-8-c239a6010b58@columbia.edu
-      - 089c15062f5d "mm: memcontrol: constify the swap accounting helpers" (8/11)
+      - e590484fc31b "mm: memcontrol: constify the swap accounting helpers" (8/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-9-c239a6010b58@columbia.edu
-      - 70343a45c641 "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max()" (9/11)
+      - d42041079088 "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max()" (9/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-10-c239a6010b58@columbia.edu
-      - d3e0fa2afacd "mm: memcontrol: constify the zswap and socket pressure helpers" (10/11)
+      - 47dc94dc5ee3 "mm: memcontrol: constify the zswap and socket pressure helpers" (10/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-11-c239a6010b58@columbia.edu
-      - d1cbb9a4d643 "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio" (1/2)
+      - 4236b122047e "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
     - series "memcg: move memcgid refcount to objcg to unpin dying memcgs", v2. (4 commits)
-      - 9c241e443cab "memcg: keep swap charging under RCU protection" (0/4)
+      - 625759693316 "memcg: keep swap charging under RCU protection" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-0-6c0637dc0edb@tencent.com
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-1-6c0637dc0edb@tencent.com
-      - 9b3e05774a24 "memcg: base swap charge accounting on memcgid root status" (1/4)
+      - eebc36f2ebfd "memcg: base swap charge accounting on memcgid root status" (1/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-2-6c0637dc0edb@tencent.com
-      - ec817fecf1b1 "memcg: manipulate memcg private ID references by ID" (2/4)
+      - b6c6e8bccb09 "memcg: manipulate memcg private ID references by ID" (2/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-3-6c0637dc0edb@tencent.com
-      - fa92c910b8f3 "memcg: move memcg private ID refcount to objcg" (3/4)
+      - df685f486e8a "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-    - aa3c7d3ce96f "mm: fix typos in various comments"
+    - 96a558c3bea2 "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

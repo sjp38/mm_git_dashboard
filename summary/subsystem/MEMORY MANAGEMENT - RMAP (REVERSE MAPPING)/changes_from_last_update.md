@@ -1,31 +1,39 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66 (no change)
+- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 2 -> 4 commits
-  - series: 1 (1) -> 1 (2)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 0 -> 1 commits
+- mm-stable: 4 -> 4 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - 908dd0101e46 "mm/page_vma_mapped: guard check_pmd() with CONFIG_TRANSPARENT_HUGEPAGE"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260624082359.2869-1-richard.weiyang@gmail.com
-      - Link: https://download.01.org/0day-ci/archive/20260624/202606240042.ffPsEXVc-lkp@intel.com/config [1]
-    - series "mm: remove page_swap_entry()", v2. (8)
-      - b9b589111ba3 "mm/rmap: use folio_page_swap_entry() in ttu_anon_swapbacked_folio() (2/8)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-3-ee6d01dfa5e1@columbia.edu
-- mm-unstable: 6 -> 4 commits
-  - series: 0 (2) -> 0 (1)
-    - no role, nobody: 1 -> 0 commits
-    - no role, no role : 2 -> 1 commits
-    - no role, reviewer: 2 -> 2 commits (no change)
+- mm-unstable: 4 -> 5 commits
+  - series: 0 (1) -> 0 (3)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 2 -> 3 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - 02e1e7a87a2d "mm/rmap: don't discard lazyfree THPs at PMD level"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261009-lazyfree-stable-fix-v1-1-70997958ef8d@nvidia.com
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
+      - efd3fa00d08d "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (22/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-23-923b70125b1e@kernel.org"
+        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
+        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-23-a1f052500fd7@kernel.org"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-23-923b70125b1e@kernel.org
+      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/38)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
+        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
+        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

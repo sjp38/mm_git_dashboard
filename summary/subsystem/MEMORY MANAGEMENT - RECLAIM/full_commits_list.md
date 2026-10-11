@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66
+- baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
 - mm-stable: 28 total, 3 (21) series, 7 non-series commits
@@ -104,35 +104,35 @@
       - e01f7ddcb18a "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-- mm-unstable: 7 total, 0 (2) series, 5 non-series commits
+- mm-unstable: 7 total, 0 (5) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
     - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - ddbb933abc6c "mm/mglru: restore accidentally removed seq < max_seq check"
+    - bcb9dd9b47e3 "mm/mglru: restore accidentally removed seq < max_seq check"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260915101556.50467-1-baohua@kernel.org
-      - 12004544c20b "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - 06370e14c4e2 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-    - 243730714977 "mm: vmscan: put rotation-missed folios at the LRU tail"
+    - aeb5708881eb "mm: vmscan: put rotation-missed folios at the LRU tail"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260920132519.3369946-1-ridong.chen@linux.dev
       - Link: https://lore.kernel.org/linux-kernel/20241010081802.290893-1-chenridong@huaweicloud.com/ [1]
       - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
       - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
       - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
-    - 27b1fdd144fe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org
-    - 550d5679a228 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-33-a1f052500fd7@kernel.org
-    - eabceef9e0d7 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-34-a1f052500fd7@kernel.org
-      - fa92c910b8f3 "memcg: move memcg private ID refcount to objcg" (3/4)
+      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
+      - d3230084a990 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (32/38)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-33-923b70125b1e@kernel.org
+      - 1c061aa6033c "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (33/38)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-34-923b70125b1e@kernel.org
+      - df685f486e8a "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

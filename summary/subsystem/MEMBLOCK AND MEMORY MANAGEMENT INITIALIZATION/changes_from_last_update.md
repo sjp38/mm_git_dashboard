@@ -1,26 +1,40 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66 (no change)
+- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 7 -> 9 commits
-  - series: 1 (7) -> 1 (9)
+- mm-stable: 9 -> 9 commits (no change)
+  - series: 1 (9) -> 1 (9) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 5 -> 7 commits
+    - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 2 -> 3 commits
+  - series: 0 (2) -> 0 (2) (no change)
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 2 -> 2 commits (no change)
+  - new commits
+    - 022b4bdde5e7 "fixup! mm/mm_init: add zone mismatch warning during page init"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261010115523.4005071-1-songmuchun@bytedance.com
   - changed commits
-    - series "mm: Switch device DAX to section-based vmemmap optimization", v6. (12)
-      - 2ef77f4a7d5a "mm/sparse-vmemmap: set compound page order for device DAX (5/12)"
+    - series "mm: Unify device DAX and HugeTLB vmemmap population paths", v4. (6)
+      - 5f69ff0b26e8 "mm/sparse-vmemmap: drop Device DAX-specific population path (2/6)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260930140627.57431-7-songmuchun@bytedance.com
-      - 2f84a6a92724 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation (9/12)"
+        - added "Link: https://lore.kernel.org/20261010075755.83339-4-songmuchun@bytedance.com"
+        - dropped "Link: https://lore.kernel.org/20260929053231.66085-4-songmuchun@bytedance.com"
+        - Link: https://lore.kernel.org/20261010075755.83339-4-songmuchun@bytedance.com
+      - f6d12523c4af "mm/mm_init: add zone mismatch warning during page init (5/6)"
         - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
-- mm-unstable: 4 -> 2 commits
-  - series: 0 (4) -> 0 (2)
-    - no role, no role : 4 -> 2 commits
+        - added "Link: https://lore.kernel.org/20261010075755.83339-7-songmuchun@bytedance.com"
+        - dropped "Link: https://lore.kernel.org/20260929053231.66085-7-songmuchun@bytedance.com"
+        - dropped "Cc: Hugh Dickins <hughd@google.com>"
+        - dropped "Cc: Matthew Wilcox (Oracle) <willy@infradead.org>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Gregory Price <gourry@gourry.net>"
+        - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+        - dropped "Cc: Jan Kara <jack@suse.cz>"
+        - dropped "Cc: Ayush Ranjan <ayushr@modal.com>"
+        - Link: https://lore.kernel.org/20261010075755.83339-7-songmuchun@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

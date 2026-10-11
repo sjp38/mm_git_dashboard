@@ -1,21 +1,31 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66 (no change)
+- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 4 commits
-  - series: 1 (2) -> 1 (3)
-    - no role, no role : 3 -> 4 commits
-  - changed commits
-    - series "mm: make userland page table freeing RCU-safe", v5. (12)
-      - 35e340a47888 "mm: userland pgtable freeing is RCU-safe now, remove leftover bits (10/12)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-11-31e91065fea4@kernel.org
-- mm-unstable: 8 -> 7 commits
-  - series: 0 (4) -> 0 (3)
-    - no role, no role : 7 -> 6 commits
+- mm-stable: 4 -> 4 commits (no change)
+  - series: 1 (3) -> 1 (3) (no change)
+    - no role, no role : 4 -> 4 commits (no change)
+- mm-unstable: 7 -> 7 commits (no change)
+  - series: 0 (3) -> 0 (5)
+    - no role, no role : 6 -> 6 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
+      - 45f9e29b236d "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs (19/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-20-923b70125b1e@kernel.org"
+        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
+        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-20-a1f052500fd7@kernel.org"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-20-923b70125b1e@kernel.org
+      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/38)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
+        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
+        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -1,39 +1,27 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66 (no change)
+- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 7 -> 11 commits
-  - series: 2 (5) -> 3 (7)
-    - no role, no role : 0 -> 1 commits
-    - no role, reviewer: 6 -> 8 commits
+- mm-stable: 11 -> 11 commits (no change)
+  - series: 3 (7) -> 3 (7) (no change)
+    - no role, no role : 1 -> 1 commits (no change)
+    - no role, reviewer: 8 -> 8 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, reviewer: 0 -> 1 commits
+    - maintainer, reviewer: 1 -> 1 commits (no change)
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 0 (1) -> 0 (1) (no change)
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 2 -> 3 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
   - changed commits
-    - e1e86503027a "mm/page_owner: preserve original free_pid/free_tgid during folio migration"
+    - 0f060f3b56ef "mm: page_alloc: make defrag_mode retries follow the promoted order"
       - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260903092126.24685-1-hongfu.li@linux.dev
-    - cc500013c86c "mm: page_alloc: add missing hooks to bulk allocation path"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260908102356.344075-1-liuqiqi@kylinos.cn
-    - series "mm: refactor zonelist constructors and iterators", v3. (2)
-      - 5436132610d9 "mm: refactor find_next_best_node to find_next_best_node_in (0/2)"
-        - Authored by a maintainer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260923022902.2433614-1-gourry@gourry.net
-        - Link: https://lore.kernel.org/20260923022902.2433614-2-gourry@gourry.net
-      - d82701f6266a "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists() (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260923022902.2433614-3-gourry@gourry.net
-- mm-unstable: 9 -> 5 commits
-  - series: 1 (3) -> 0 (1)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 2 commits
-    - no role, reviewer: 4 -> 2 commits
-    - maintainer, reviewer: 1 -> 0 commits
+      - added "Link: https://lore.kernel.org/20261009125503.126202-1-kas@kernel.org"
+      - added "Acked-by: Usama Arif <usama.arif@linux.dev>"
+      - dropped "Link: https://lore.kernel.org/20261006091815.897133-1-kirill@shutemov.name"
+      - dropped "Cc: Usama Arif <usama.arif@linux.dev>"
+      - Link: https://lore.kernel.org/20261009125503.126202-1-kas@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

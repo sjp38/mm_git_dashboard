@@ -1,74 +1,44 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66 (no change)
+- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 17 -> 28 commits
-  - series: 3 (14) -> 3 (21)
-    - no role, nobody: 1 -> 2 commits
-    - no role, reviewer: 12 -> 15 commits
-    - no role, maintainer: 1 -> 2 commits
-    - reviewer, no role : 1 -> 2 commits
-    - reviewer, reviewer: 1 -> 6 commits
+- mm-stable: 28 -> 28 commits (no change)
+  - series: 3 (21) -> 3 (21) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, reviewer: 15 -> 15 commits (no change)
+    - no role, maintainer: 2 -> 2 commits (no change)
+    - reviewer, no role : 2 -> 2 commits (no change)
+    - reviewer, reviewer: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm/mglru: clean up folio counters and flag usage", v6. (6)
-      - 64169ceea5b1 "mm/mglru: introduce helpers for manipulating gen and refs flags (1/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-2-9aacbd77d4ca@tencent.com
-      - d896c1a8379b "mm/mglru: move max_seq read into walk_update_folio (3/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-4-9aacbd77d4ca@tencent.com
-      - c1d0e799321c "mm/mglru: use explicit tier range in read_ctrl_pos() (4/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-5-9aacbd77d4ca@tencent.com
-      - 766f584cb627 "mm/mglru: fix potential generation folio number leak (5/6)"
-        - Authored by a reviewer, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260906-mglru-flags-cleanup-v6-6-9aacbd77d4ca@tencent.com
-    - ca6e32f3f424 "mm/vmscan: avoid false-positive -Wuninitialized warning, again"
-      - Authored by no role player, reviewed by nobody
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/all/20260213123902.3466040-1-arnd@kernel.org/
-      - Link: https://lore.kernel.org/20260916083456.4136132-1-arnd@kernel.org
-    - series "mm: workingset: fix the shadow node budget under MGLRU", v5. (4)
-      - c7a37bac3ccc "mm: workingset: use lruvec_page_state_local() to count lru pages (1/4)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/2ed42f96aca124856ea30f774afb55cbe6d8ba58.1789096175.git.zhuhui@kylinos.cn
-    - 74d9aa0d8e98 "mm: vmscan: avoid anon scanning for GFP_NOIO with low swapcache"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260908062649.1045883-1-zhangbo56@xiaomi.com
-    - 306170e7ea66 "mm: mglru: clear the reference counter for rejected folios"
-      - Authored by a reviewer, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/7384df363c12e4acdaa2e0428420cd8eed320ee7.1789384831.git.baolin.wang@linux.alibaba.com
-    - 0b1b457ecc4f "mm/memcg: clear folio memcg after changing per memcg stats"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260910-memcg-swapcache-stats-fix-v5-1-033f510ba748@tencent.com
-    - series "mm/mglru: fix ineffective memory protection for non-kswapd reclaim", v4. (2)
-      - 15da1e4978dd "mm/mglru: fix ineffective memory protection for non-kswapd reclaim (1/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260907025445.1836238-3-ridong.chen@linux.dev
-    - series "Remove PG_private by using page/folio->private checks instead", v5. (17)
-      - e01f7ddcb18a "mm/page-flags: check page/folio->private instead of PG_private (9/17)"
-        - Authored by a reviewer, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-- mm-unstable: 18 -> 7 commits
-  - series: 0 (9) -> 0 (2)
-    - no role, nobody: 1 -> 0 commits
+- mm-unstable: 7 -> 7 commits (no change)
+  - series: 0 (2) -> 0 (5)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 7 -> 4 commits
-    - no role, maintainer: 2 -> 1 commits
-    - reviewer, no role : 1 -> 0 commits
-    - reviewer, reviewer: 5 -> 0 commits
+    - no role, reviewer: 4 -> 4 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
+      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/38)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
+        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
+        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
+      - d3230084a990 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (32/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-33-923b70125b1e@kernel.org"
+        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
+        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-33-a1f052500fd7@kernel.org"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-33-923b70125b1e@kernel.org
+      - 1c061aa6033c "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around() (33/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-34-923b70125b1e@kernel.org"
+        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
+        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
+        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-34-a1f052500fd7@kernel.org"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-34-923b70125b1e@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
