@@ -27,31 +27,31 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 5 commits
   - full commits list
-    - e5bd9220046f "mm: filemap: move lruvec accounting outside the xarray lock"
+    - cf7f8cac01b3 "mm: filemap: move lruvec accounting outside the xarray lock"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260916125122.2696271-1-usama.arif@linux.dev
-      - 06370e14c4e2 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - a4b30cb978cb "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-      - 67188b9f42bd "mm: remove hugetlb_inline.h" (25/38)
+      - 3098280a486e "mm: remove hugetlb_inline.h" (25/38)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-26-923b70125b1e@kernel.org
     - series "mm/truncate: fix data loss when truncating straddling large folios", v5. (4 commits)
-      - 11806fb7204d "mm/truncate: align truncation boundaries to mapping minimum folio order" (0/4)
+      - fc82e98b9e74 "mm/truncate: align truncation boundaries to mapping minimum folio order" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-2-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/a638a8fb-c184-4069-ae33-379ec12cd514@huaweicloud.com/ [1]
         - Link: https://lore.kernel.org/linux-mm/5a454f2a-8ae2-491d-b903-750c945cfb9d@huaweicloud.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/5pthbyxtn7q6xi4fmkofvksmcjzfnujcw2g4fxmxjzfin5pbgf@zui3vcimb4cv/ [3]
-      - 523b3d05d796 "mm/truncate: look up the end-edge straddler by index" (1/4)
+      - 608c333185bc "mm/truncate: look up the end-edge straddler by index" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-3-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-mm/DLGXT0ERY79Z.3C5DYVJVX6S9Z@nvidia.com/
-      - cf480fdbb713 "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
+      - 119a7f264de8 "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
-      - c2b4374885c7 "mm/truncate: clarify return value of truncate_inode_partial_folio()" (3/4)
+      - 11f7bea91f22 "mm/truncate: clarify return value of truncate_inode_partial_folio()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-5-yi.zhang@huaweicloud.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

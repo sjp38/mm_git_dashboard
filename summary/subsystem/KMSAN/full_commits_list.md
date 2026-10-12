@@ -7,11 +7,11 @@
     - no role, nobody: 1 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - c1aa5b5a2d57 "mm: kmsan: fix iounmap metadata teardown"
+    - 45ff5d869102 "mm: kmsan: fix iounmap metadata teardown"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261002200508.546-1-dmytrokoziuk68@gmail.com
       - Link: https://lkml.iu.edu/2609.3/12748.html
-    - 06af75216196 "mm: kmsan: fix ioremap error cleanup"
+    - add4c241595f "mm: kmsan: fix ioremap error cleanup"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261002200508.546-2-dmytrokoziuk68@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

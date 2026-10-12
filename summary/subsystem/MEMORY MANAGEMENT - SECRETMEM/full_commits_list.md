@@ -15,7 +15,7 @@
   - author/reviewer role stat
     - no role, no role : 1 commits
   - full commits list
-    - 15cf7ac60c0d "mm/secretmem: fix the enable parameter description"
+    - e1e5ddbb90a8 "mm/secretmem: fix the enable parameter description"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260912114859.88957-1-kmehltretter@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

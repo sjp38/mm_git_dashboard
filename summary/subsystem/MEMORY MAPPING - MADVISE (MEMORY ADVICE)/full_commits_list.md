@@ -21,37 +21,37 @@
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - e00f10101f26 "mm/madvise: reclaim isolated folios if PTE restart fails"
+    - c44fc6377769 "mm/madvise: reclaim isolated folios if PTE restart fails"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260912110832.3203902-1-gourry@gourry.net
-    - 8885a4112ed2 "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
+    - a183fb6b67e2 "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260912110540.3203010-1-gourry@gourry.net
-      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
+      - 8658e9cc38b3 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-      - fa4777eba156 "mm/madvise: update is_valid_guard_vma() to use vma_can_merge()" (28/38)
+      - da24c43f5ca5 "mm/madvise: update is_valid_guard_vma() to use vma_can_merge()" (28/38)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-29-923b70125b1e@kernel.org
-      - a1ea08905257 "mm/vma: introduce vma[_flags]_is_mm_backed()" (29/38)
+      - 66f38c1b4723 "mm/vma: introduce vma[_flags]_is_mm_backed()" (29/38)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-30-923b70125b1e@kernel.org
-      - 0cc27e3ae224 "mm/madvise: use predicates for madvise(..., MADV_DOFORK)" (31/38)
+      - 37b128681151 "mm/madvise: use predicates for madvise(..., MADV_DOFORK)" (31/38)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-32-923b70125b1e@kernel.org
-      - e49decf929bb "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - bcb1177698a1 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - 2b61df0d4ed1 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - 96a558c3bea2 "mm: fix typos in various comments"
+    - 1c5f2e7c95db "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-      - 7b6a144c6df0 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (12/13)
+      - a1ba46fb74e3 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (12/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
-    - 4b7b28c68848 "mm/madvise: add cond_resched() in THP branch of madvise_cold_or_pageout_pte_range()"
+    - 12d72f8dc293 "mm/madvise: add cond_resched() in THP branch of madvise_cold_or_pageout_pte_range()"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261010024042.4070048-1-albin_yang@163.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

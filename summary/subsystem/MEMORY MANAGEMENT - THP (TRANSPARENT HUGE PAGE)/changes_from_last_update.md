@@ -1,16 +1,9 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "userfaultfd: clear the inherited uffd bit in move_swap_pte()", v4. (2)
-      - d3b53abce3e0 "mm/khugepaged: flush deferred unmaps before dropping a failed folio (1/2)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Acked-by: Hugh Dickins <hughd@google.com>"
-        - dropped "Cc: Hugh Dickins <hughd@google.com>"
-        - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
 - mm-stable: 30 -> 30 commits (no change)
   - series: 4 (25) -> 4 (25) (no change)
     - no role, no role : 4 -> 4 commits (no change)
@@ -18,35 +11,26 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
 - mm-unstable: 38 -> 38 commits (no change)
-  - series: 5 (32) -> 5 (35)
+  - series: 5 (35) -> 5 (35) (no change)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 30 -> 30 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
   - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
-      - 5ae5fabc148c "mm/vma: add and use vma_[flags]_is_fixed_mapping (15/38)"
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6)
+      - 3b3d26b38b85 "selftests/mm: make file helpers return errors (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "[sarthak.sharma@arm.com: convert hugetlb_nr_resv_pages()]"
+        - added "Link: : https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com"
+        - Link: : https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com
+        - Link: https://lore.kernel.org/20260918112234.195857-1-sarthak.sharma@arm.com
+        - Link: https://lore.kernel.org/20260918112234.195857-2-sarthak.sharma@arm.com
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-16-923b70125b1e@kernel.org"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-16-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-16-923b70125b1e@kernel.org
-      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/38)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-      - 5b50e53b5532 "mm/huge_memory: remove vma_is_special_huge() (37/38)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-38-923b70125b1e@kernel.org"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-38-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-38-923b70125b1e@kernel.org
+        - added "[akpm@linux-foundation.org: fix comment, per Zi Yan]"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -22,30 +22,30 @@
       - 35e340a47888 "mm: userland pgtable freeing is RCU-safe now, remove leftover bits" (10/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260925-rcu-pagetable-freeing-v5-11-31e91065fea4@kernel.org
-- mm-unstable: 7 total, 0 (5) series, 2 non-series commits
+- mm-unstable: 7 total, 0 (6) series, 1 non-series commits
   - author/reviewer role stat
     - no role, no role : 6 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - 94ecd3039e4f "mm/gup_test: safely calculate GUP batch size"
+    - 33734360031b "mm/gup_test: safely calculate GUP batch size"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260915102524.125758-1-sarthak.sharma@arm.com
-      - dc590eb1f0cb "tools/lib/mm: move hugepage_settings out of selftests" (3/6)
+      - 08a9276a4be9 "tools/lib/mm: move hugepage_settings out of selftests" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
-      - 7ea18d786436 "tools/mm: move gup_test from selftests/mm to tools/mm" (4/6)
+      - 79181ae0a8da "tools/mm: move gup_test from selftests/mm to tools/mm" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-5-sarthak.sharma@arm.com
-      - bf9b36d51f19 "tools/mm: make gup_bench a benchmark only tool" (5/6)
+      - 6fc962c5419d "tools/mm: make gup_bench a benchmark only tool" (4/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-6-sarthak.sharma@arm.com
-    - beb02c9caf63 "selftests/mm: add a GUP selftest"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
-      - 45f9e29b236d "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs" (19/38)
+      - ad967595d037 "selftests/mm: add a GUP selftest" (5/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
+      - 988105a64398 "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs" (19/38)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-20-923b70125b1e@kernel.org
-      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
+      - 8658e9cc38b3 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

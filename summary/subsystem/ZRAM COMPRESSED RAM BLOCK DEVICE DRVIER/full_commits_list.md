@@ -21,7 +21,7 @@
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - 12f3682da878 "zram: fix short reads from block_state"
+    - 3d59bd4683e9 "zram: fix short reads from block_state"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260929071846.24829-1-pooyan.azadparvar@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

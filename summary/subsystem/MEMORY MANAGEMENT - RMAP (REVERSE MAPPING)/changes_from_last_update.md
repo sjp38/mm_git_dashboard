@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -9,31 +9,11 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 4 -> 5 commits
-  - series: 0 (1) -> 0 (3)
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 0 (3) -> 0 (3) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 2 -> 3 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 02e1e7a87a2d "mm/rmap: don't discard lazyfree THPs at PMD level"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261009-lazyfree-stable-fix-v1-1-70997958ef8d@nvidia.com
-  - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
-      - efd3fa00d08d "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (22/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-23-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-23-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-23-923b70125b1e@kernel.org
-      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/38)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

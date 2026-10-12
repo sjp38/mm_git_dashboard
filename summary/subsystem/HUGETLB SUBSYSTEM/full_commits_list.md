@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - 88b35e8197b6 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
+    - bded036c4769 "mm/hugetlb: fix max-only subpool accounting on alloc_hugetlb_folio failure"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260428113037.88766-2-enderaoelyther@gmail.com
       - Link: : https://lore.kernel.org/20260923065714.20781-1-kmehltretter@gmail.com
@@ -95,54 +95,54 @@
     - no role, reviewer: 1 commits
     - no role, maintainer: 11 commits
   - full commits list
-    - 7dd23d292e79 "mm/hugetlb: fix misspelled parameter names in comment"
+    - 1fa4900012fd "mm/hugetlb: fix misspelled parameter names in comment"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/tencent_034C6FC23D4817C40657E5F17F64E260A009@qq.com
     - series "mm/hugetlb_cgroup: move the per-node usage along with the folio", v2. (2 commits)
-      - d0c3db445f77 "mm/hugetlb_cgroup: move per-node usage on cross node migration" (0/2)
+      - 8b038950a35a "mm/hugetlb_cgroup: move per-node usage on cross node migration" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-0-2b6d8c2bdc36@kylinos.cn
         - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-1-2b6d8c2bdc36@kylinos.cn
-      - 42b2af2d148d "mm/hugetlb_cgroup: move per-node usage on cgroup reparenting" (1/2)
+      - 18d92d1947ea "mm/hugetlb_cgroup: move per-node usage on cgroup reparenting" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-2-2b6d8c2bdc36@kylinos.cn
-      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
+      - 8658e9cc38b3 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-      - 2b61df0d4ed1 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
     - series "mm: fix hugetlb NR_HUGETLB accounting on folio migration", v2. (2 commits)
-      - 7f88853baedf "mm/hugetlb: account migration target folio in per-node NR_HUGETLB vmstat" (0/2)
+      - fe58ad57c884 "mm/hugetlb: account migration target folio in per-node NR_HUGETLB vmstat" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-0-e8a36245bfab@kylinos.cn
         - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-1-e8a36245bfab@kylinos.cn
-      - 4236b122047e "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio" (1/2)
+      - 61e976cea04c "mm/memcg: migrate per-node hugetlb lruvec stat together with hugetlb folio" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260923-for-hugetlb_state3-v2-2-e8a36245bfab@kylinos.cn
-    - b8d20b1d3895 "hugetlbfs: fix stale comment in hugetlbfs_file_mmap()"
+    - ab9c909db156 "hugetlbfs: fix stale comment in hugetlbfs_file_mmap()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/tencent_AA61551D1F50E61F46C8542F5C8874512C05@qq.com
-    - 96a558c3bea2 "mm: fix typos in various comments"
+    - 1c5f2e7c95db "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - fc751251fec5 "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
+    - 4ab49064f0bb "mm/hugetlb: fix overbroad MMU notifiers for unshared PMDs"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260928024723.87708-1-lizhe.67@bytedance.com
-    - a1e7075f4c01 "docs: hugetlbpage.rst: fix typo in per-node attribute description"
+    - de2b26b51d55 "docs: hugetlbpage.rst: fix typo in per-node attribute description"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
-    - 6989aa8b0cbf "mm/hugetlb: use kvmalloc_objs for hugetlb_fault_mutex_table"
+    - 661dfdc4a9b8 "mm/hugetlb: use kvmalloc_objs for hugetlb_fault_mutex_table"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261006160128.31447-1-dheerajkumar.srivastava@amd.com
-    - 610e238c9c07 "mm/hugetlb: prefix log messages via pr_fmt"
+    - cc65e13b7a6f "mm/hugetlb: prefix log messages via pr_fmt"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261010092333.137126-1-lienze@kylinos.cn
 - mm-new: 1 total, 0 (0) series, 1 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 1 commits
   - full commits list
-    - a40771c07c40 "mm/hugetlb: move hugetlb_sysfs_initialized into hugetlb_register_all_nodes()"
+    - cd04b7fcffd8 "mm/hugetlb: move hugetlb_sysfs_initialized into hugetlb_register_all_nodes()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261009142010.552614-1-lienze@kylinos.cn
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

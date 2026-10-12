@@ -96,42 +96,42 @@
     - no role, reviewer: 2 commits
     - no role, maintainer: 5 commits
   - full commits list
-      - 07ebb7f029be "mm/page_io: take a const folio in bio_associate_blkg_from_folio()" (3/11)
+      - 328784ac3fae "mm/page_io: take a const folio in bio_associate_blkg_from_folio()" (3/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-4-c239a6010b58@columbia.edu
-      - e590484fc31b "mm: memcontrol: constify the swap accounting helpers" (8/11)
+      - 5a74061ce103 "mm: memcontrol: constify the swap accounting helpers" (8/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-9-c239a6010b58@columbia.edu
-      - d42041079088 "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max()" (9/11)
+      - eade11a32226 "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max()" (9/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-10-c239a6010b58@columbia.edu
     - series "mm: zswap: free cold writeback folios promptly", v6. (3 commits)
-      - 894dd38b8db4 "mm: swap: move LRU insertion out of the swap cache allocator" (0/3)
+      - baa897c07b79 "mm: swap: move LRU insertion out of the swap cache allocator" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr
         - Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr
-      - 06370e14c4e2 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - a4b30cb978cb "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-    - 8baa1cc35f90 "mm/swapops: remove unused is_hwpoison_entry()"
+    - 4cb2a1c4e052 "mm/swapops: remove unused is_hwpoison_entry()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
-      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
+      - 8658e9cc38b3 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-      - e49decf929bb "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - bcb1177698a1 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-    - 96a558c3bea2 "mm: fix typos in various comments"
+    - 1c5f2e7c95db "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - f92a47eff878 "mm: make swapoff interruptible when unusing mms/shmem"
+    - 600238c77ec0 "mm: make swapoff interruptible when unusing mms/shmem"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
-    - db308b5c3fe1 "mm/swap: submit the last readahead batch before unplugging"
+    - 4a530eb9ec49 "mm/swap: submit the last readahead batch before unplugging"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
-    - 8d3e302589ec "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - f414d62873b3 "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

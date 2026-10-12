@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -13,20 +13,11 @@
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
 - mm-unstable: 12 -> 12 commits (no change)
-  - series: 1 (6) -> 1 (7)
+  - series: 1 (7) -> 1 (7) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-  - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
-      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/38)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

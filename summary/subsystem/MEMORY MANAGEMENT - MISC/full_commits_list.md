@@ -165,174 +165,168 @@
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/all/alEJkwn5VlTTH_ZX@bender.morinfr.org/
       - Link: https://lore.kernel.org/aqgUdbtumaO8RiIb@bender.morinfr.org
-- mm-unstable: 49 total, 4 (39) series, 10 non-series commits
+- mm-unstable: 45 total, 4 (38) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 9 commits
+    - no role, nobody: 8 commits
     - no role, no role : 14 commits
     - no role, reviewer: 13 commits
     - no role, maintainer: 4 commits
-    - reviewer, nobody: 1 commits
-    - maintainer, nobody: 7 commits
+    - maintainer, nobody: 5 commits
     - maintainer, reviewer: 1 commits
   - full commits list
-      - ee72ac35d451 "Docs/mm/damon/design: clarify when qt_exceeds increases" (4/6)
+      - dd89a6813bef "Docs/mm/damon/design: clarify when qt_exceeds increases" (4/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260914141952.91465-6-sj@kernel.org
-      - 13b3455ff492 "Docs/mm/damon/design: fix typos in temporal auto-tuning algorithm section" (5/6)
+      - 9845dfa39a0a "Docs/mm/damon/design: fix typos in temporal auto-tuning algorithm section" (5/6)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260914141952.91465-7-sj@kernel.org
-      - 8b88ebe394f5 "Docs/mm/damon/design: update for hugepage_size probe filter" (5/8)
+      - 70cd9c86d1cd "Docs/mm/damon/design: update for hugepage_size probe filter" (5/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260915143359.91472-7-sj@kernel.org
-      - 969c9b36e477 "Docs/admin-guide/mm/damon/usage: update for hugepage_size" (6/8)
+      - 1c0649763006 "Docs/admin-guide/mm/damon/usage: update for hugepage_size" (6/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260915143359.91472-8-sj@kernel.org
-      - bf95b1e6f837 "docs-admin-guide-mm-damon-usage-update-for-hugepage_size-fix" (7/8)
-        - Authored by a maintainer, reviewed by nobody
-    - 707a0b2dc315 "docs-admin-guide-mm-damon-usage-update-for-hugepage_size-fix-fix"
-      - Authored by a maintainer, reviewed by nobody
-      - 738bebbb5087 "Docs/mm/damon/design: clarify bp is basis point" (9/10)
+      - 9314d1b9020f "Docs/mm/damon/design: clarify bp is basis point" (9/10)
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917142210.90829-11-sj@kernel.org
-      - c02f986f862a "mm: selftests: Add shmem into memory failure test" (4/5)
+      - da6193324681 "mm: selftests: Add shmem into memory failure test" (4/5)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260917-memory-failure-mf-delayed-fix-v6-5-4b00856b5364@google.com
-    - dade0667ea10 "mm-selftests-add-shmem-into-memory-failure-test-fix"
+    - 35b8e60dccae "mm-selftests-add-shmem-into-memory-failure-test-fix"
       - Authored by a maintainer, reviewed by nobody
     - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6 commits)
-      - 18a5bed67929 "selftests/mm: make file helpers return errors" (0/6)
+      - 3b3d26b38b85 "selftests/mm: make file helpers return errors" (0/6)
         - Authored by no role player, reviewed by no role player
+        - Link: : https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com
         - Link: https://lore.kernel.org/20260918112234.195857-1-sarthak.sharma@arm.com
         - Link: https://lore.kernel.org/20260918112234.195857-2-sarthak.sharma@arm.com
-      - b1843d418ead "selftests-mm-make-file-helpers-return-errors-fix" (1/6)
-        - Authored by no role player, reviewed by nobody
-        - Link: https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com
-      - 685c510add68 "tools/lib/mm: add shared file helpers" (2/6)
+      - ab8e659cbbae "tools/lib/mm: add shared file helpers" (1/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-3-sarthak.sharma@arm.com
-      - dc590eb1f0cb "tools/lib/mm: move hugepage_settings out of selftests" (3/6)
+      - 08a9276a4be9 "tools/lib/mm: move hugepage_settings out of selftests" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
-      - 7ea18d786436 "tools/mm: move gup_test from selftests/mm to tools/mm" (4/6)
+      - 79181ae0a8da "tools/mm: move gup_test from selftests/mm to tools/mm" (3/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-5-sarthak.sharma@arm.com
-    - beb02c9caf63 "selftests/mm: add a GUP selftest"
+      - ad967595d037 "selftests/mm: add a GUP selftest" (5/6)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
+    - 3806dcf6617a "docs/mm: describe set_memory() and set_direct_map() APIs"
       - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
-    - c519be0bb7ed "docs/mm: describe set_memory() and set_direct_map() APIs"
-      - Authored by no role player, reviewed by no role player
+      - Link: : https://lore.kernel.org/arJNn2QD_pY6e14R@kernel.org
       - Link: https://lore.kernel.org/20260919-set-memory-docs-v2-1-a2a4b3657690@kernel.org
-    - da0fffdef3c4 "docs-mm-describe-set_memory-and-set_direct_map-apis-fix"
-      - Authored by a reviewer, reviewed by nobody
-      - Link: https://lore.kernel.org/arJNn2QD_pY6e14R@kernel.org
     - series "selftests/mm: improve khugepaged coverage", v6. (19 commits)
-      - a6f480ae6f97 "selftests/mm: raise the khugepaged test-case cap" (0/19)
+      - 5039b10c439a "selftests/mm: raise the khugepaged test-case cap" (0/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260919002451.496763-2-kirill@shutemov.name
-      - 36ddf638dbdd "selftests/mm: skip collapse_compound_extreme() where the PMD is too large" (1/19)
+      - 5fd021e67592 "selftests/mm: skip collapse_compound_extreme() where the PMD is too large" (1/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-3-kirill@shutemov.name
-      - e9bad609b41c "selftests/mm: scale khugepaged's collapse wait with the PMD size" (2/19)
+      - 7e406423d670 "selftests/mm: scale khugepaged's collapse wait with the PMD size" (2/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-4-kirill@shutemov.name
-      - deb64bd12da2 "selftests/mm: skip khugepaged page cache cases without a PMD folio" (3/19)
+      - c8962d428855 "selftests/mm: skip khugepaged page cache cases without a PMD folio" (3/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-5-kirill@shutemov.name
-      - 791a1af95b0e "selftests/mm: make the swap cases' swapout reliable" (4/19)
+      - 63e30fa86a66 "selftests/mm: make the swap cases' swapout reliable" (4/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-6-kirill@shutemov.name
-      - 9dc242d3d797 "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases" (5/19)
+      - 0fc870e5bafc "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases" (5/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-7-kirill@shutemov.name
-      - 7e9f84671c6a "selftests/mm: move is_backed_by_folio() into vm_util" (6/19)
+      - d9ac09be0a8c "selftests/mm: move is_backed_by_folio() into vm_util" (6/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-8-kirill@shutemov.name
-      - 8505414ae11f "selftests/mm: add folio-order check for address ranges" (7/19)
+      - acdd121f0fbc "selftests/mm: add folio-order check for address ranges" (7/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260919002451.496763-9-kirill@shutemov.name
-      - baf91230f4d0 "selftests/mm: add folio-order detection self-check" (8/19)
+      - 0adeaf94c9c1 "selftests/mm: add folio-order detection self-check" (8/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-10-kirill@shutemov.name
-      - 917373834de5 "selftests/mm: add khugepaged completion barrier helper" (9/19)
+      - 9b68feb308a4 "selftests/mm: add khugepaged completion barrier helper" (9/19)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260919002451.496763-11-kirill@shutemov.name
-      - 53383d36a602 "selftests/mm: add order-parameterized khugepaged collapse cases" (10/19)
+      - f3f64987ea32 "selftests/mm: add order-parameterized khugepaged collapse cases" (10/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-12-kirill@shutemov.name
-      - fdacf82a544a "selftests/mm: parameterize the mixed-source collapse case by source order" (11/19)
+      - a39fd7e11db7 "selftests/mm: parameterize the mixed-source collapse case by source order" (11/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-13-kirill@shutemov.name
-      - 6cc54dda6e8d "selftests/mm: cover a shared-source collapse write race" (12/19)
+      - 9d9ee2c05912 "selftests/mm: cover a shared-source collapse write race" (12/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-14-kirill@shutemov.name
-      - 6273925417dc "selftests/mm: run every supported collapse order by default" (13/19)
+      - 7b125938a84b "selftests/mm: run every supported collapse order by default" (13/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-15-kirill@shutemov.name
-      - af8e21aa1c4c "selftests/mm: check that one khugepaged pass collapses one window" (14/19)
+      - 27094ccc1b0d "selftests/mm: check that one khugepaged pass collapses one window" (14/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-16-kirill@shutemov.name
-      - 5cac7a87a9bd "selftests/mm: add khugepaged race harness" (15/19)
+      - 0d7193b3eb9a "selftests/mm: add khugepaged race harness" (15/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-17-kirill@shutemov.name
-      - 6dacd09f1e87 "selftests/mm: race the collapse of windows with holes" (16/19)
+      - a65366af2fe6 "selftests/mm: race the collapse of windows with holes" (16/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-18-kirill@shutemov.name
-      - d67835cddb66 "selftests/mm: add memory-pressure threads to the khugepaged race harness" (17/19)
+      - 0f9090bad4eb "selftests/mm: add memory-pressure threads to the khugepaged race harness" (17/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-19-kirill@shutemov.name
-      - 85b2b88f5c5a "selftests/mm: zap whole PTE tables in the khugepaged race harness" (18/19)
+      - d7f46c3b077b "selftests/mm: zap whole PTE tables in the khugepaged race harness" (18/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-20-kirill@shutemov.name
     - series "kselftest: mm: fix intermittent failure khugepaged test", v4. (2 commits)
-      - 122a1889503b "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
+      - 3647bcad2d33 "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-0-2169c18f2576@arm.com
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-1-2169c18f2576@arm.com
-      - c5c67c296dbb "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
+      - a871a6c44df4 "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-2-2169c18f2576@arm.com
-    - 13b31aa2cb0c "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
+    - cc64a7fdb38b "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260923-selftests-mm-mlock2-fix-v1-1-750b627854c6@dgu.ac.kr
     - series "kselftest: mm: fix some failure of split_huge_page_test", v9. (4 commits)
-      - d060f5bade54 "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
+      - 637380d9aa93 "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com
         - Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com
-      - 629aa8e8dc68 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge()" (1/4)
+      - 32abe7a5a8f7 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261001-fix_split-v9-2-0f4ba8bbdbdf@arm.com
-      - e296c78b9579 "kselftest: mm: integrate huge page checks" (2/4)
+      - 24faffc5e8a6 "kselftest: mm: integrate huge page checks" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261001-fix_split-v9-3-0f4ba8bbdbdf@arm.com
-      - fa23e0a6bc6a "kselftest: mm: remove check_huge_shmem()" (3/4)
+      - 072122c07d9e "kselftest: mm: remove check_huge_shmem()" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com
-      - 9a284bc603c8 "Docs/mm/damon/design: document damos quota goal complement flag" (6/8)
+      - f58c1c821968 "Docs/mm/damon/design: document damos quota goal complement flag" (6/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260929080113.41708-7-sj@kernel.org
-      - 64c6d6f0e436 "Docs/admin-guide/mm/damon/usage: update for quota goal complement file" (7/8)
+      - fdbac9eba7b3 "Docs/admin-guide/mm/damon/usage: update for quota goal complement file" (7/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260929080113.41708-8-sj@kernel.org
-    - e8c683186dde "selftests/mm: mrelease_test: fix retry limit"
+    - 4a9df558a391 "selftests/mm: mrelease_test: fix retry limit"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/CANOyQmFzsssM_BXHUDrV+UuVD5SZMBmSkg3UQnmw9Ns1PV7GCQ@mail.gmail.com
-    - a1e7075f4c01 "docs: hugetlbpage.rst: fix typo in per-node attribute description"
+    - de2b26b51d55 "docs: hugetlbpage.rst: fix typo in per-node attribute description"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
-    - 1fdca5cf9fca "selftests/mm: hugetlb-read-hwpoison: add setup of HugeTLB pages"
+    - 9ca44d339cf6 "selftests/mm: hugetlb-read-hwpoison: add setup of HugeTLB pages"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261004205458.119608-1-jaeyeon.lee.dev@gmail.com
-    - 1ffd86d908b8 "selftests/mm: hugetlb_madv_vs_map: fix TAP plan mismatches"
+    - 710cd27f9390 "selftests/mm: hugetlb_madv_vs_map: fix TAP plan mismatches"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261004230018.190880-1-jaeyeon.lee.dev@gmail.com
-- mm-new: 1 total, 0 (0) series, 1 non-series commits
+- mm-new: 2 total, 0 (0) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
   - full commits list
-    - 90e2cdf8c209 "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
+    - eae90912262b "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261006064120.6796-1-azpijr@gmail.com
+    - 7542b44a6134 "selftests/mm: fix uffd move-pmd test crash on 64K base page systems"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261011163527.95988-1-zenghui.yu@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

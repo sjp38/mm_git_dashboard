@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
 - mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
@@ -9,135 +9,26 @@
     - no role, no role : 8 -> 8 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 30 -> 29 commits
-  - series: 2 (10) -> 3 (26)
-    - no role, nobody: 2 -> 1 commits
+- mm-unstable: 29 -> 29 commits (no change)
+  - series: 3 (26) -> 3 (26) (no change)
+    - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 16 -> 16 commits (no change)
     - no role, reviewer: 10 -> 10 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
-      - 3c8b7a6f6e3e "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get (0/38)"
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-0-923b70125b1e@kernel.org"
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-1-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-1-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-0-923b70125b1e@kernel.org
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-1-923b70125b1e@kernel.org
-      - 139e73b168ab "mm/vma: introduce and use vma_[flags_]can_merge() (1/38)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-2-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-2-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-2-923b70125b1e@kernel.org
-      - a4d2e8ce1abb "mm: consistently validate VMA state after mmap[_prepare] hooks (2/38)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-3-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-3-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-3-923b70125b1e@kernel.org
-      - 3863a66b41e6 "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma (3/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-4-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-4-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-4-923b70125b1e@kernel.org
-      - c8eba5cda12c "mm/vma: tidy up map kernel pages enum values (5/38)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-6-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-6-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-6-923b70125b1e@kernel.org
-      - e30be3d44fc6 "mm: add mmap action for discontiguous kernel page mapping (6/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-7-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-7-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-7-923b70125b1e@kernel.org
-      - 23bfe2fac146 "mm/vma: add vma[_flags]_is_mm_managed() predicates (13/38)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-14-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-14-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-14-923b70125b1e@kernel.org
-      - ef0483277064 "mm/vma: only allow mmap to clear VMA_MAYWRITE_BIT if not mm-managed (14/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-15-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-15-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-15-923b70125b1e@kernel.org
-      - 5ae5fabc148c "mm/vma: add and use vma_[flags]_is_fixed_mapping (15/38)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-16-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-16-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-16-923b70125b1e@kernel.org
-      - 248f86d013c3 "mm/mlock: clear VMA_LOCKED_MASK over mmap callback (21/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-22-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-22-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-22-923b70125b1e@kernel.org
-      - efd3fa00d08d "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (22/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-23-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-23-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-23-923b70125b1e@kernel.org
-      - a904c629b914 "mm/vma: enforce that mm-managed mappings may not set VMA_IO_BIT (23/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-24-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-24-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-24-923b70125b1e@kernel.org
-      - 1fc5ff36b07d "mm: remove VMA_IO_BIT check in vma[_flags]_is_mm_managed() (24/38)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-25-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-25-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-25-923b70125b1e@kernel.org
-      - 67188b9f42bd "mm: remove hugetlb_inline.h (25/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-26-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-26-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-26-923b70125b1e@kernel.org
-      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/38)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-      - 9197b0a59ced "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS (35/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-36-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-36-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-36-923b70125b1e@kernel.org
-  - dropped commits
-    - d04fa633821a "mm/vma: keep the unlinked VMA off the file across unmap on mmap hook failure"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261007194708.2009-1-okerixx@gmail.com
-- mm-new: 0 -> 0 commits (no change)
+        - added "[akpm@linux-foundation.org: fix comment, per Zi Yan]"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 0 -> 1 commits
+  - new commits
+    - a1bfd287d706 "fs/proc/task_mmu: fix lost maps entries above 2^63"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261011162019.922436-1-stian@itx.no
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

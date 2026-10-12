@@ -71,15 +71,15 @@
   - author/reviewer role stat
     - no role, maintainer: 3 commits
   - full commits list
-    - 57209817b3b5 "selftests/cgroup: ignore memory.reclaim -EAGAIN for zswap writeback test"
+    - 99cefc7cbdc7 "selftests/cgroup: ignore memory.reclaim -EAGAIN for zswap writeback test"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260914-test-zswap-wb-ignore-eagain-v1-1-6fb715c22cd8@kernel.org
     - series "mm: zswap: free cold writeback folios promptly", v6. (3 commits)
-      - 894dd38b8db4 "mm: swap: move LRU insertion out of the swap cache allocator" (0/3)
+      - baa897c07b79 "mm: swap: move LRU insertion out of the swap cache allocator" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr
         - Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr
-      - 1eee72d21b4a "mm: zswap: drop cold writeback folios via swap dropbehind" (2/3)
+      - b8f366c56e06 "mm: zswap: drop cold writeback folios via swap dropbehind" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921151306.625134-4-alex@ghiti.fr
         - Link: https://lore.kernel.org/linux-mm/20260911092012.92399-1-alex@ghiti.fr/ [1]
@@ -88,12 +88,12 @@
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm: zswap: reduce request contention on loads", v2. (2 commits)
-      - 94feac85b0dc "mm: zswap: use separate compression and decompression requests" (0/2)
+      - 212dfa1f6549 "mm: zswap: use separate compression and decompression requests" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261009163146.83112-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20261009163146.83112-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - a82f735836b0 "mm: zswap: use stack requests for synchronous decompression" (1/2)
+      - fac031677137 "mm: zswap: use stack requests for synchronous decompression" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261009163146.83112-3-usama.arif@linux.dev
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

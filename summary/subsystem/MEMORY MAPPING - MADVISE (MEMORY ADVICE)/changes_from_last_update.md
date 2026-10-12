@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -6,46 +6,18 @@
 - mm-stable: 3 -> 3 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-- mm-unstable: 10 -> 11 commits
-  - series: 0 (3) -> 0 (7)
-    - no role, nobody: 1 -> 2 commits
+- mm-unstable: 11 -> 11 commits (no change)
+  - series: 0 (7) -> 0 (7) (no change)
+    - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 5 -> 5 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - 4b7b28c68848 "mm/madvise: add cond_resched() in THP branch of madvise_cold_or_pageout_pte_range()"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261010024042.4070048-1-albin_yang@163.com
   - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
-      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/38)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-      - fa4777eba156 "mm/madvise: update is_valid_guard_vma() to use vma_can_merge() (28/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-29-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-29-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-29-923b70125b1e@kernel.org
-      - a1ea08905257 "mm/vma: introduce vma[_flags]_is_mm_backed() (29/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-30-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-30-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-30-923b70125b1e@kernel.org
-      - 0cc27e3ae224 "mm/madvise: use predicates for madvise(..., MADV_DOFORK) (31/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-32-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-32-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-32-923b70125b1e@kernel.org
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "[akpm@linux-foundation.org: fix comment, per Zi Yan]"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

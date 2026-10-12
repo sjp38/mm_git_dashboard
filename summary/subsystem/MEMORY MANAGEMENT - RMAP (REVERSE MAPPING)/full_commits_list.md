@@ -29,19 +29,19 @@
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - efd3fa00d08d "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (22/38)
+      - 7beb3c3e1526 "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (22/38)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-23-923b70125b1e@kernel.org
-      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
+      - 8658e9cc38b3 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-      - e49decf929bb "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - bcb1177698a1 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-    - cee9fcd6fae9 "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+    - 60f022610750 "mm/vma: don't remove VMA from rmap if pgoff unchanged"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
-    - 02e1e7a87a2d "mm/rmap: don't discard lazyfree THPs at PMD level"
+    - 4a28cc6bc038 "mm/rmap: don't discard lazyfree THPs at PMD level"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261009-lazyfree-stable-fix-v1-1-70997958ef8d@nvidia.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

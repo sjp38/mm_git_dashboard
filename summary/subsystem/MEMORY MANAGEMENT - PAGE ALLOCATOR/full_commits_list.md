@@ -51,21 +51,21 @@
     - no role, no role : 3 commits
     - no role, reviewer: 2 commits
   - full commits list
-    - a177626403c4 "mm/page_alloc: apply per-task GFP context in bulk allocator"
+    - ae21be674c7e "mm/page_alloc: apply per-task GFP context in bulk allocator"
       - Authored by no role player, reviewed by no role player
       - Link: https://sashiko.dev/#/patchset/20260907120949.418450-1-liuqiqi%40kylinos.cn
       - Link: https://lore.kernel.org/all/20260907120949.418450-1-liuqiqi@kylinos.cn/ [1]
       - Link: https://lore.kernel.org/20260915074928.327471-1-liuqiqi@kylinos.cn
-    - d75797583f08 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
+    - 827000007ec4 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
-      - 174cbf863357 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - e02c2bfa3142 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-    - 0f060f3b56ef "mm: page_alloc: make defrag_mode retries follow the promoted order"
+    - 9f297ab63fc0 "mm: page_alloc: make defrag_mode retries follow the promoted order"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261009125503.126202-1-kas@kernel.org
-    - 02626bf4ffd4 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - b41d35a6d14e "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]

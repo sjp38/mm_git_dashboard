@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 1 -> 1 commits (no change)
@@ -12,22 +12,56 @@
     - no role, maintainer: 6 -> 6 commits (no change)
     - maintainer, nobody: 7 -> 7 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 49 -> 49 commits (no change)
-  - series: 4 (39) -> 4 (39) (no change)
-    - no role, nobody: 9 -> 9 commits (no change)
+- mm-unstable: 49 -> 45 commits
+  - series: 4 (39) -> 4 (38)
+    - no role, nobody: 9 -> 8 commits
     - no role, no role : 14 -> 14 commits (no change)
     - no role, reviewer: 13 -> 13 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
-    - reviewer, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 7 -> 7 commits (no change)
+    - reviewer, nobody: 1 -> 0 commits
+    - maintainer, nobody: 7 -> 5 commits
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-new: 2 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 0 commits
+  - changed commits
+    - series "mm/damon: introduce hugepage_size probe filter". (8)
+      - 1c0649763006 "Docs/admin-guide/mm/damon/usage: update for hugepage_size (6/8)"
+        - Authored by a maintainer, reviewed by nobody
+        - added "[akpm@linux-foundation.org: s/files acts/file acts/, per SJ]"
+        - added "[akpm@linux-foundation.org: fix the fix]"
+        - Link: https://lore.kernel.org/20260915143359.91472-8-sj@kernel.org
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6)
+      - 3b3d26b38b85 "selftests/mm: make file helpers return errors (0/6)"
+        - Authored by no role player, reviewed by no role player
+        - added "[sarthak.sharma@arm.com: convert hugetlb_nr_resv_pages()]"
+        - added "Link: : https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com"
+        - Link: : https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com
+        - Link: https://lore.kernel.org/20260918112234.195857-1-sarthak.sharma@arm.com
+        - Link: https://lore.kernel.org/20260918112234.195857-2-sarthak.sharma@arm.com
+    - 3806dcf6617a "docs/mm: describe set_memory() and set_direct_map() APIs"
+      - Authored by no role player, reviewed by no role player
+      - added "[rppt@kernel.org: fix phrasing, per Kevin]"
+      - added "Link: : https://lore.kernel.org/arJNn2QD_pY6e14R@kernel.org"
+      - Link: : https://lore.kernel.org/arJNn2QD_pY6e14R@kernel.org
+      - Link: https://lore.kernel.org/20260919-set-memory-docs-v2-1-a2a4b3657690@kernel.org
   - dropped commits
-    - 918fc80b5823 "selftests/mm: build the page fragment test with the kernel"
+    - series "mm/damon: introduce hugepage_size probe filter". (8)
+      - bf95b1e6f837 "docs-admin-guide-mm-damon-usage-update-for-hugepage_size-fix (7/8)"
+        - Authored by a maintainer, reviewed by nobody
+    - 707a0b2dc315 "docs-admin-guide-mm-damon-usage-update-for-hugepage_size-fix-fix"
       - Authored by a maintainer, reviewed by nobody
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6)
+      - b1843d418ead "selftests-mm-make-file-helpers-return-errors-fix (1/6)"
+        - Authored by no role player, reviewed by nobody
+        - Link: https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com
+    - da0fffdef3c4 "docs-mm-describe-set_memory-and-set_direct_map-apis-fix"
+      - Authored by a reviewer, reviewed by nobody
+      - Link: https://lore.kernel.org/arJNn2QD_pY6e14R@kernel.org
+- mm-new: 1 -> 2 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 2 commits
+  - new commits
+    - 7542b44a6134 "selftests/mm: fix uffd move-pmd test crash on 64K base page systems"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261011163527.95988-1-zenghui.yu@linux.dev
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

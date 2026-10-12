@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -8,19 +8,10 @@
     - no role, no role : 3 -> 3 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
 - mm-unstable: 7 -> 7 commits (no change)
-  - series: 1 (5) -> 1 (6)
+  - series: 1 (6) -> 1 (6) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 5 -> 5 commits (no change)
-  - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
-      - 67188b9f42bd "mm: remove hugetlb_inline.h (25/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-26-923b70125b1e@kernel.org"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-26-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-26-923b70125b1e@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

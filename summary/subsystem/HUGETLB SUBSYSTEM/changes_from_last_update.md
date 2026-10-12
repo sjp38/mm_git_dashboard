@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
@@ -12,31 +12,20 @@
     - no role, maintainer: 8 -> 8 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 12 -> 13 commits
-  - series: 2 (5) -> 2 (6)
+- mm-unstable: 13 -> 13 commits (no change)
+  - series: 2 (6) -> 2 (6) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 10 -> 11 commits
-  - new commits
-    - 610e238c9c07 "mm/hugetlb: prefix log messages via pr_fmt"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261010092333.137126-1-lienze@kylinos.cn
+    - no role, maintainer: 11 -> 11 commits (no change)
   - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
-      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (26/38)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-27-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-- mm-new: 0 -> 1 commits
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "[akpm@linux-foundation.org: fix comment, per Zi Yan]"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+- mm-new: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 0 -> 1 commits
-  - new commits
-    - a40771c07c40 "mm/hugetlb: move hugetlb_sysfs_initialized into hugetlb_register_all_nodes()"
-      - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261009142010.552614-1-lienze@kylinos.cn
+    - no role, maintainer: 1 -> 1 commits (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

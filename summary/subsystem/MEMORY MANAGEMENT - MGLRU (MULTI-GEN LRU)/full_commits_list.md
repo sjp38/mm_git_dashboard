@@ -148,44 +148,44 @@
     - no role, reviewer: 5 commits
     - no role, maintainer: 3 commits
   - full commits list
-    - bcb9dd9b47e3 "mm/mglru: restore accidentally removed seq < max_seq check"
+    - 88a5ff84fa32 "mm/mglru: restore accidentally removed seq < max_seq check"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260915101556.50467-1-baohua@kernel.org
-      - dae820c2d101 "mm: memcontrol: constify the lruvec helpers" (2/11)
+      - 01b145affcb3 "mm: memcontrol: constify the lruvec helpers" (2/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-3-c239a6010b58@columbia.edu
-      - 06370e14c4e2 "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - a4b30cb978cb "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-    - aeb5708881eb "mm: vmscan: put rotation-missed folios at the LRU tail"
+    - af7b60677d96 "mm: vmscan: put rotation-missed folios at the LRU tail"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260920132519.3369946-1-ridong.chen@linux.dev
       - Link: https://lore.kernel.org/linux-kernel/20241010081802.290893-1-chenridong@huaweicloud.com/ [1]
       - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
       - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
       - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
-      - 85d1765aeefe "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
+      - 8658e9cc38b3 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-      - d3230084a990 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (32/38)
+      - 00ac62523d5d "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (32/38)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-33-923b70125b1e@kernel.org
-      - 1c061aa6033c "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (33/38)
+      - 1215162a8822 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (33/38)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-34-923b70125b1e@kernel.org
-      - df685f486e8a "memcg: move memcg private ID refcount to objcg" (3/4)
+      - da16c47ad83d "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-      - 174cbf863357 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - e02c2bfa3142 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-      - c33a71fea515 "mm/sparse: remove pfn_in_present_section()" (6/13)
+      - 28b29f3842cf "mm/sparse: remove pfn_in_present_section()" (6/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-7-54d81d65e125@kernel.org
-      - ec4b5402049d "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
+      - deaf9a6b291d "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-    - bff9c45e87a9 "mm: remove the unused zone->unaccepted_cleanup"
+    - 0b44a9a1cba6 "mm: remove the unused zone->unaccepted_cleanup"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

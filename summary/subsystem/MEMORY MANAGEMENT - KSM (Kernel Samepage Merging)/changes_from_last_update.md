@@ -1,4 +1,4 @@
-- baseline: v7.3-rc5-337-gff47652a4b66 -> v7.3-rc5-337-gff47652a4b66c
+- baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
@@ -7,20 +7,20 @@
   - series: 1 (2) -> 1 (2) (no change)
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 4 -> 4 commits (no change)
-  - series: 0 (2) -> 0 (3)
+- mm-unstable: 4 -> 3 commits
+  - series: 0 (3) -> 0 (3) (no change)
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
   - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
-      - d3230084a990 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (32/38)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-33-923b70125b1e@kernel.org"
-        - added "Cc: Ihor Solodrai <ihor.solodrai@linux.dev>"
-        - added "Cc: Bert Karwatzki <spasswolf@web.de>"
-        - dropped "Link: https://lore.kernel.org/20261003-b4-mmap-prepare-vma-flag-sanify-v4-33-a1f052500fd7@kernel.org"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-33-923b70125b1e@kernel.org
+    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
+      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "[akpm@linux-foundation.org: fix comment, per Zi Yan]"
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+  - dropped commits
+    - 40cf68b3b2b9 "mm-update-comments-to-refer-to-anon-rmap-rather-than-anon_vma-fix"
+      - Authored by a maintainer, reviewed by nobody
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
