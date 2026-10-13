@@ -5,29 +5,85 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 53 -> 53 commits (no change)
-  - series: 9 (44) -> 9 (44) (no change)
+- mm-stable: 53 -> 57 commits
+  - series: 9 (44) -> 9 (46)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 34 -> 34 commits (no change)
+    - no role, no role : 34 -> 36 commits
     - no role, reviewer: 7 -> 7 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 2 commits
     - reviewer, no role : 2 -> 2 commits (no change)
-    - reviewer, reviewer: 3 -> 3 commits (no change)
+    - reviewer, reviewer: 3 -> 4 commits
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 43 -> 43 commits (no change)
-  - series: 3 (35) -> 3 (36)
-    - no role, nobody: 3 -> 3 commits (no change)
+  - changed commits
+    - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11)
+      - e791754fe99f "mm: memcontrol: constify the lruvec helpers (2/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-3-c239a6010b58@columbia.edu
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6)
+      - d2b82fa39fda "selftests/mm: add a GUP selftest (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
+    - 48bd5dc504cc "mm: constify arguments in default pxdp_get()"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260918064928.793742-1-anshuman.khandual@arm.com
+    - 7b466529307b "mm: disallow raw PFN mappings of huge/shared zeropage"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260921054225.28537-1-lance.yang@linux.dev
+      - Link: https://lore.kernel.org/all/20260917121010.60966-1-lance.yang@linux.dev/
+- mm-unstable: 43 -> 39 commits
+  - series: 3 (36) -> 3 (34)
+    - no role, nobody: 3 -> 1 commits
     - no role, no role : 23 -> 23 commits (no change)
     - no role, reviewer: 11 -> 11 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
-    - reviewer, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 5 -> 4 commits
+    - reviewer, reviewer: 1 -> 0 commits
   - changed commits
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
+      - 84f441d786dc "mm/vma: add vma[_flags]_is_mm_managed() predicates (13/38)"
         - Authored by no role player, reviewed by a reviewer
-        - added "[akpm@linux-foundation.org: fix comment, per Zi Yan]"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-14-923b70125b1e@kernel.org
+      - 99083396a9ba "mm/vma: add and use vma_[flags]_is_fixed_mapping (15/38)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-16-923b70125b1e@kernel.org
+      - de88abc83a56 "mm/mlock: clear VMA_LOCKED_MASK over mmap callback (21/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-22-923b70125b1e@kernel.org
+      - 240d2989ea26 "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (22/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-23-923b70125b1e@kernel.org
+      - 7f29755a3a55 "mm: remove VMA_IO_BIT check in vma[_flags]_is_mm_managed() (24/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-25-923b70125b1e@kernel.org
+      - e8ac55ec7f0a "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (32/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-33-923b70125b1e@kernel.org
+    - 1560b6ea6cda "mm: fix missing page-table destructor in pagetable_free()"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Acked-by: Dave Hansen <dave.hansen@intel.com>"
+      - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
+      - added "Cc: <stable@vger.kernel.org> # 6.16-6.18: bf9e4e30f353: x86/mm: use pagetable_free()"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - dropped "Cc: Dave Hansen <dave.hansen@intel.com>"
+      - Link: https://lore.kernel.org/20261010112457.49485-2-songmuchun@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)

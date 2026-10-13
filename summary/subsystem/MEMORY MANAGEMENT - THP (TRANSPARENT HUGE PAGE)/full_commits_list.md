@@ -4,15 +4,17 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - ca291c665429 "mm/khugepaged: flush deferred unmaps before dropping a failed folio" (1/2)
+      - 1ea24d3f329e "mm/khugepaged: flush deferred unmaps before dropping a failed folio" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
-- mm-stable: 30 total, 4 (25) series, 5 non-series commits
+- mm-stable: 45 total, 6 (38) series, 7 non-series commits
   - author/reviewer role stat
-    - no role, no role : 4 commits
-    - no role, reviewer: 24 commits
+    - no role, nobody: 2 commits
+    - no role, no role : 6 commits
+    - no role, reviewer: 33 commits
     - no role, maintainer: 1 commits
     - reviewer, no role : 1 commits
+    - reviewer, reviewer: 2 commits
   - full commits list
     - ed2052b119be "selftests/mm: khugepaged: remove str_dup() usage"
       - Authored by no role player, reviewed by a maintainer
@@ -113,138 +115,136 @@
       - 28585128ead0 "mm/huge_memory: drop the redundant mapping argument of __split_frozen_folio" (16/17)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-17-ba1b4ba72c6f@tencent.com
-- mm-unstable: 38 total, 5 (35) series, 3 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 3 commits
-    - no role, no role : 2 commits
-    - no role, reviewer: 30 commits
-    - no role, maintainer: 1 commits
-    - reviewer, reviewer: 2 commits
-  - full commits list
-    - 0793646c9264 "mm/huge_memory: simplify pgtable deposit detection"
+    - bcf7b0c3a06f "mm/huge_memory: simplify pgtable deposit detection"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260917054015.23553-1-lance.yang@linux.dev
     - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6 commits)
-      - 3b3d26b38b85 "selftests/mm: make file helpers return errors" (0/6)
+      - 23d0a7444fca "selftests/mm: make file helpers return errors" (0/6)
         - Authored by no role player, reviewed by no role player
         - Link: : https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com
         - Link: https://lore.kernel.org/20260918112234.195857-1-sarthak.sharma@arm.com
         - Link: https://lore.kernel.org/20260918112234.195857-2-sarthak.sharma@arm.com
-      - 08a9276a4be9 "tools/lib/mm: move hugepage_settings out of selftests" (2/6)
+      - 32449ec2cc57 "tools/lib/mm: move hugepage_settings out of selftests" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
     - series "selftests/mm: improve khugepaged coverage", v6. (19 commits)
-      - 5039b10c439a "selftests/mm: raise the khugepaged test-case cap" (0/19)
+      - 59e24520b8f1 "selftests/mm: raise the khugepaged test-case cap" (0/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260919002451.496763-2-kirill@shutemov.name
-      - 5fd021e67592 "selftests/mm: skip collapse_compound_extreme() where the PMD is too large" (1/19)
+      - b36bec6a01b1 "selftests/mm: skip collapse_compound_extreme() where the PMD is too large" (1/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-3-kirill@shutemov.name
-      - 7e406423d670 "selftests/mm: scale khugepaged's collapse wait with the PMD size" (2/19)
+      - e8e83ce6f4a2 "selftests/mm: scale khugepaged's collapse wait with the PMD size" (2/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-4-kirill@shutemov.name
-      - c8962d428855 "selftests/mm: skip khugepaged page cache cases without a PMD folio" (3/19)
+      - ceffb8ff832e "selftests/mm: skip khugepaged page cache cases without a PMD folio" (3/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-5-kirill@shutemov.name
-      - 63e30fa86a66 "selftests/mm: make the swap cases' swapout reliable" (4/19)
+      - 1648a3366def "selftests/mm: make the swap cases' swapout reliable" (4/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-6-kirill@shutemov.name
-      - 0fc870e5bafc "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases" (5/19)
+      - 7af29a132253 "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases" (5/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-7-kirill@shutemov.name
-      - d9ac09be0a8c "selftests/mm: move is_backed_by_folio() into vm_util" (6/19)
+      - 22206a92859e "selftests/mm: move is_backed_by_folio() into vm_util" (6/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-8-kirill@shutemov.name
-      - f3f64987ea32 "selftests/mm: add order-parameterized khugepaged collapse cases" (10/19)
+      - 6e9ed3d8fdd4 "selftests/mm: add order-parameterized khugepaged collapse cases" (10/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-12-kirill@shutemov.name
-      - a39fd7e11db7 "selftests/mm: parameterize the mixed-source collapse case by source order" (11/19)
+      - d2a9d28f5385 "selftests/mm: parameterize the mixed-source collapse case by source order" (11/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-13-kirill@shutemov.name
-      - 9d9ee2c05912 "selftests/mm: cover a shared-source collapse write race" (12/19)
+      - e1fe35d6c847 "selftests/mm: cover a shared-source collapse write race" (12/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-14-kirill@shutemov.name
-      - 7b125938a84b "selftests/mm: run every supported collapse order by default" (13/19)
+      - e5d767fe33c1 "selftests/mm: run every supported collapse order by default" (13/19)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260919002451.496763-15-kirill@shutemov.name
-    - 5d3f91273d42 "mm: disallow raw PFN mappings of huge/shared zeropage"
+    - 7b466529307b "mm: disallow raw PFN mappings of huge/shared zeropage"
       - Authored by a reviewer, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260921054225.28537-1-lance.yang@linux.dev
       - Link: https://lore.kernel.org/all/20260917121010.60966-1-lance.yang@linux.dev/
-      - d6ddfb74ed59 "mm/vma: add and use vma_[flags]_is_fixed_mapping" (15/38)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-16-923b70125b1e@kernel.org
-      - 8658e9cc38b3 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-      - ea590e394e7e "mm/huge_memory: remove vma_is_special_huge()" (37/38)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-38-923b70125b1e@kernel.org
-      - bcb1177698a1 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+- mm-unstable: 23 total, 3 (22) series, 1 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 1 commits
+    - no role, reviewer: 21 commits
+    - no role, maintainer: 1 commits
+  - full commits list
     - series "kselftest: mm: fix intermittent failure khugepaged test", v4. (2 commits)
-      - 3647bcad2d33 "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
+      - 9519fc108c89 "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-0-2169c18f2576@arm.com
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-1-2169c18f2576@arm.com
-      - a871a6c44df4 "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
+      - e88e5e6a2414 "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-2-2169c18f2576@arm.com
-    - 1c5f2e7c95db "mm: fix typos in various comments"
+    - 7f2a7e1c9b3a "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
     - series "kselftest: mm: fix some failure of split_huge_page_test", v9. (4 commits)
-      - 637380d9aa93 "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
+      - 73f8951d33cc "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com
         - Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com
-      - 072122c07d9e "kselftest: mm: remove check_huge_shmem()" (3/4)
+      - fbd29e85d689 "kselftest: mm: remove check_huge_shmem()" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com
+      - 99083396a9ba "mm/vma: add and use vma_[flags]_is_fixed_mapping" (15/38)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-16-923b70125b1e@kernel.org
+      - f4994a1cc80c "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
+      - 8a1ac81e350b "mm/huge_memory: remove vma_is_special_huge()" (37/38)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-38-923b70125b1e@kernel.org
+      - 56fc97d40f65 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+      - eec750d7125d "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
     - series "mm/collapse: separate a collapse from its callers", v4. (13 commits)
-      - 82594218f9a7 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse()" (0/13)
+      - 66d11b78a2fa "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse()" (0/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-1-kirill@shutemov.name
         - Link: https://lore.kernel.org/20260928100630.21870-2-kirill@shutemov.name
-      - 98dead6b1afa "mm/khugepaged: count collapses where khugepaged makes them" (1/13)
+      - 158515a0f2b8 "mm/khugepaged: count collapses where khugepaged makes them" (1/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-3-kirill@shutemov.name
-      - 6f42f19bb61f "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes" (2/13)
+      - 126ab4c6537c "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes" (2/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-4-kirill@shutemov.name
-      - 93ebe6e09a8f "mm/collapse: add collapse.h for the collapse interface" (3/13)
+      - 7df15135e0f5 "mm/collapse: add collapse.h for the collapse interface" (3/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-5-kirill@shutemov.name
-      - 85285afa64ce "mm/collapse: state what a collapse may do in the policy" (4/13)
+      - 0f51c969e7e2 "mm/collapse: state what a collapse may do in the policy" (4/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-6-kirill@shutemov.name
-      - 5f0c31f6c142 "mm/collapse: drop the collapse_possible() wrapper" (5/13)
+      - 425af70e10f7 "mm/collapse: drop the collapse_possible() wrapper" (5/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-7-kirill@shutemov.name
-      - b71aa69f9c3c "mm/collapse: name the per-table scan reset for what it resets" (6/13)
+      - 7fe913b535bf "mm/collapse: name the per-table scan reset for what it resets" (6/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-8-kirill@shutemov.name
-      - 370f2b7a1266 "mm/collapse: call collapse_file() from collapse_single_pmd()" (7/13)
+      - 74f32280e9f3 "mm/collapse: call collapse_file() from collapse_single_pmd()" (7/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-9-kirill@shutemov.name
-      - ed083a54f169 "mm/collapse: separate scanning a PTE table from collapsing it" (8/13)
+      - fe299569366b "mm/collapse: separate scanning a PTE table from collapsing it" (8/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-10-kirill@shutemov.name
-      - f01c08511b08 "mm/collapse: open-code collapse_single_pmd() in its two callers" (9/13)
+      - 8e9b572819ac "mm/collapse: open-code collapse_single_pmd() in its two callers" (9/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-11-kirill@shutemov.name
-      - 86facd42b8c2 "mm/collapse: work out the orders a VMA allows once per VMA" (10/13)
+      - 026b3da93613 "mm/collapse: work out the orders a VMA allows once per VMA" (10/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-12-kirill@shutemov.name
-      - 955bb5497b73 "mm/collapse: declare the collapse interface in collapse.h" (11/13)
+      - cff1023417f5 "mm/collapse: declare the collapse interface in collapse.h" (11/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-13-kirill@shutemov.name
-      - a1ba46fb74e3 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (12/13)
+      - d52bcb18abe5 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (12/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

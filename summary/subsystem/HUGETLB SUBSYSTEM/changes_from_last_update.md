@@ -4,28 +4,42 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-- mm-stable: 22 -> 22 commits (no change)
-  - series: 3 (16) -> 3 (16) (no change)
+- mm-stable: 22 -> 25 commits
+  - series: 3 (16) -> 4 (18)
     - no role, nobody: 2 -> 2 commits (no change)
     - no role, no role : 6 -> 6 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 8 -> 8 commits (no change)
+    - no role, maintainer: 8 -> 11 commits
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 13 -> 13 commits (no change)
-  - series: 2 (6) -> 2 (6) (no change)
+  - changed commits
+    - 1a4a3f756cd7 "mm/hugetlb: fix misspelled parameter names in comment"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/tencent_034C6FC23D4817C40657E5F17F64E260A009@qq.com
+    - series "mm/hugetlb_cgroup: move the per-node usage along with the folio", v2. (2)
+      - fe0ba1909c59 "mm/hugetlb_cgroup: move per-node usage on cross node migration (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-0-2b6d8c2bdc36@kylinos.cn
+        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-1-2b6d8c2bdc36@kylinos.cn
+      - 23fac055c211 "mm/hugetlb_cgroup: move per-node usage on cgroup reparenting (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918-for-hugetlb-charge-v2-2-2b6d8c2bdc36@kylinos.cn
+- mm-unstable: 13 -> 11 commits
+  - series: 2 (6) -> 1 (4)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 11 -> 11 commits (no change)
+    - no role, maintainer: 11 -> 9 commits
   - changed commits
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "[akpm@linux-foundation.org: fix comment, per Zi Yan]"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-- mm-new: 1 -> 1 commits (no change)
+    - 32adc64c4261 "mm/hugetlb: move hugetlb_sysfs_initialized into hugetlb_register_all_nodes()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261009142010.552614-1-lienze@kylinos.cn
+- mm-new: 1 -> 0 commits
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

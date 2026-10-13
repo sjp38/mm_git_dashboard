@@ -15,11 +15,12 @@
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "[akpm@linux-foundation.org: fix comment, per Zi Yan]"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
+      - b9a1fda43907 "mm/uffd: use predicates for userfaultfd checks (30/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-31-923b70125b1e@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

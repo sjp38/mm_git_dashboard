@@ -4,31 +4,101 @@
     - no role, reviewer: 2 -> 2 commits (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 10 -> 10 commits (no change)
-  - series: 2 (2) -> 2 (2) (no change)
-    - no role, no role : 8 -> 8 commits (no change)
+- mm-stable: 10 -> 18 commits
+  - series: 2 (2) -> 3 (8)
+    - no role, no role : 8 -> 15 commits
+    - no role, reviewer: 0 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 29 -> 29 commits (no change)
-  - series: 3 (26) -> 3 (26) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 16 -> 16 commits (no change)
-    - no role, reviewer: 10 -> 10 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - maintainer, nobody: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+    - d350956d829f "proc/task_mmu: handle special PMDs in clear_refs and pagemap"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260912122822.3348978-1-gourry@gourry.net
+    - dba177ad7829 "mm: mincore: use per-vma lock during page table walk"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260916043153.2631696-1-wangkefeng.wang@huawei.com
+    - series "read proc/pid/smaps_rollup under per-vma lock", v5. (7)
+      - 87ee17d24a89 "proc/task_mmu: remove unnecessary helpers (0/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918153318.758387-1-surenb@google.com
+        - Link: https://lore.kernel.org/20260918153318.758387-2-surenb@google.com
+      - e2dfa1f31b03 "proc/task_mmu: remove unnecessary inlines in function definitions (1/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - added "[akpm@linux-foundation.org: fix CONFIG_NUMA=y && CONFIG_PROC_PAGE_MONITOR=n]"
+        - Link: https://lore.kernel.org/20260918153318.758387-3-surenb@google.com
+      - 66757cdd0baa "proc/task_mmu: clarify shmem mapping walk conditions in smap_gather_stats() (2/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918153318.758387-4-surenb@google.com
+      - a2432e2cfea7 "proc/task_mmu: remove special-casing of smap_gather_stats() start parameter (3/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918153318.758387-5-surenb@google.com
+      - 60d21d883f07 "proc/task_mmu: change proc_get_vma() to stop returning gate VMA at the end (4/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918153318.758387-6-surenb@google.com
+      - 0e985559d72a "proc/task_mmu: read proc/pid/smaps_rollup under per-vma lock (5/7)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918153318.758387-7-surenb@google.com
+        - Link: https://github.com/paulmckrcu/proc-mmap_sem-test [1]
+- mm-unstable: 29 -> 21 commits
+  - series: 3 (26) -> 2 (19)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 16 -> 10 commits
+    - no role, reviewer: 10 -> 9 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - maintainer, nobody: 1 -> 0 commits
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
+      - 84f441d786dc "mm/vma: add vma[_flags]_is_mm_managed() predicates (13/38)"
         - Authored by no role player, reviewed by a reviewer
-        - added "[akpm@linux-foundation.org: fix comment, per Zi Yan]"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-  - new commits
-    - a1bfd287d706 "fs/proc/task_mmu: fix lost maps entries above 2^63"
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-14-923b70125b1e@kernel.org
+      - 07f465d49cb1 "mm/vma: only allow mmap to clear VMA_MAYWRITE_BIT if not mm-managed (14/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-15-923b70125b1e@kernel.org
+      - 99083396a9ba "mm/vma: add and use vma_[flags]_is_fixed_mapping (15/38)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-16-923b70125b1e@kernel.org
+      - de88abc83a56 "mm/mlock: clear VMA_LOCKED_MASK over mmap callback (21/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-22-923b70125b1e@kernel.org
+      - 240d2989ea26 "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (22/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-23-923b70125b1e@kernel.org
+      - 7f29755a3a55 "mm: remove VMA_IO_BIT check in vma[_flags]_is_mm_managed() (24/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-25-923b70125b1e@kernel.org
+    - 7186f1bd21b9 "fs/proc/task_mmu: fix lost maps entries above 2^63"
       - Authored by no role player, reviewed by nobody
+      - branch: mm-new -> mm-unstable
+      - added "Fixes: 5631da56c9a8 ("fs/proc/task_mmu: read proc/pid/maps under per-vma lock")"
+      - dropped "Fixes: 5631da56c9a87 ("fs/proc/task_mmu: read proc/pid/maps under per-vma lock")"
       - Link: https://lore.kernel.org/20261011162019.922436-1-stian@itx.no
+  - dropped commits
+    - series "read proc/pid/smaps_rollup under per-vma lock", v5. (7)
+      - eaf9fe9340c2 "proc-task_mmu-remove-unnecessary-inlines-in-function-definitions-fix (2/7)"
+        - Authored by a maintainer, reviewed by nobody
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

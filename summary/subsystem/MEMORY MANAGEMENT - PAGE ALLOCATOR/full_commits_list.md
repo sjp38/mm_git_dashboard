@@ -1,10 +1,10 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 11 total, 3 (7) series, 4 non-series commits
+- mm-stable: 13 total, 3 (7) series, 6 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 8 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 9 commits
     - no role, maintainer: 1 commits
     - maintainer, reviewer: 1 commits
   - full commits list
@@ -46,26 +46,26 @@
       - d82701f6266a "mm/page_alloc: refactor build_node_zonelist() out of build_zonelists()" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923022902.2433614-3-gourry@gourry.net
-- mm-unstable: 5 total, 0 (1) series, 4 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 3 commits
-    - no role, reviewer: 2 commits
-  - full commits list
-    - ae21be674c7e "mm/page_alloc: apply per-task GFP context in bulk allocator"
+    - 1372648980b8 "mm/page_alloc: apply per-task GFP context in bulk allocator"
       - Authored by no role player, reviewed by no role player
       - Link: https://sashiko.dev/#/patchset/20260907120949.418450-1-liuqiqi%40kylinos.cn
       - Link: https://lore.kernel.org/all/20260907120949.418450-1-liuqiqi@kylinos.cn/ [1]
       - Link: https://lore.kernel.org/20260915074928.327471-1-liuqiqi@kylinos.cn
-    - 827000007ec4 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
+    - 331f94007d79 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
-      - e02c2bfa3142 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+- mm-unstable: 3 total, 0 (1) series, 2 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+    - no role, reviewer: 1 commits
+  - full commits list
+      - 1d2ec1e5d179 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-    - 9f297ab63fc0 "mm: page_alloc: make defrag_mode retries follow the promoted order"
+    - 510ebd7c047f "mm: page_alloc: make defrag_mode retries follow the promoted order"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261009125503.126202-1-kas@kernel.org
-    - b41d35a6d14e "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - 0fad5d947ee4 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]

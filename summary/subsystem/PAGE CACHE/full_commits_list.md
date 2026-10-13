@@ -1,9 +1,11 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 5 total, 0 (4) series, 1 non-series commits
+- mm-stable: 7 total, 0 (5) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
     - reviewer, no role : 2 commits
   - full commits list
     - e59c9a971a9f "mm/vma: make MAP_PRIVATE-mapped /dev/zero mappings truly anonymous"
@@ -21,39 +23,38 @@
       - bbe5d3b3d402 "treewide: remove PagePrivate() and PG_private from comments and docs" (15/17)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-16-bb68b6a21869@nvidia.com
-- mm-unstable: 7 total, 1 (6) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 1 commits
-    - no role, reviewer: 1 commits
-    - no role, maintainer: 5 commits
-  - full commits list
-    - cf7f8cac01b3 "mm: filemap: move lruvec accounting outside the xarray lock"
+    - 103142868af5 "mm: filemap: move lruvec accounting outside the xarray lock"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260916125122.2696271-1-usama.arif@linux.dev
-      - a4b30cb978cb "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - 7ccf5a3e5bdb "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-      - 3098280a486e "mm: remove hugetlb_inline.h" (25/38)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-26-923b70125b1e@kernel.org
+- mm-unstable: 5 total, 1 (5) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 1 commits
+    - no role, maintainer: 4 commits
+  - full commits list
     - series "mm/truncate: fix data loss when truncating straddling large folios", v5. (4 commits)
-      - fc82e98b9e74 "mm/truncate: align truncation boundaries to mapping minimum folio order" (0/4)
+      - 18e2b0ed7ccb "mm/truncate: align truncation boundaries to mapping minimum folio order" (0/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-2-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/a638a8fb-c184-4069-ae33-379ec12cd514@huaweicloud.com/ [1]
         - Link: https://lore.kernel.org/linux-mm/5a454f2a-8ae2-491d-b903-750c945cfb9d@huaweicloud.com/ [2]
         - Link: https://lore.kernel.org/linux-mm/5pthbyxtn7q6xi4fmkofvksmcjzfnujcw2g4fxmxjzfin5pbgf@zui3vcimb4cv/ [3]
-      - 608c333185bc "mm/truncate: look up the end-edge straddler by index" (1/4)
+      - 52911ee82074 "mm/truncate: look up the end-edge straddler by index" (1/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-3-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-mm/DLGXT0ERY79Z.3C5DYVJVX6S9Z@nvidia.com/
-      - 119a7f264de8 "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
+      - 79a64dff660c "mm/truncate: fix data loss when splitting straddling large folios fails" (2/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-4-yi.zhang@huaweicloud.com
         - Link: https://lore.kernel.org/linux-fsdevel/anH-WKA1coW6wtfG@bfoster/
-      - 11f7bea91f22 "mm/truncate: clarify return value of truncate_inode_partial_folio()" (3/4)
+      - 519683fe9a28 "mm/truncate: clarify return value of truncate_inode_partial_folio()" (3/4)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260928120833.3440834-5-yi.zhang@huaweicloud.com
+      - b00627a09d02 "mm: remove hugetlb_inline.h" (25/38)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-26-923b70125b1e@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

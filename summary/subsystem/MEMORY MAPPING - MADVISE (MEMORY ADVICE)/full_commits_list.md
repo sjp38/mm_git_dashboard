@@ -1,9 +1,9 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 3 total, 0 (2) series, 1 non-series commits
+- mm-stable: 5 total, 0 (2) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, no role : 3 commits
+    - no role, no role : 5 commits
   - full commits list
       - ab7ace574f3d "mm/madvise: skip zone device folios in cold/pageout PMD range" (1/3)
         - Authored by no role player, reviewed by no role player
@@ -14,45 +14,45 @@
       - 0bd719cb607e "mm/madvise: use vm_normal_folio_pmd() in cold/pageout PMD range" (1/2)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260926105110.2156652-3-gourry@gourry.net
-- mm-unstable: 11 total, 0 (7) series, 4 non-series commits
+    - 5445a6359d71 "mm/madvise: reclaim isolated folios if PTE restart fails"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260912110832.3203902-1-gourry@gourry.net
+    - 5a6c9cf117fc "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20260912110540.3203010-1-gourry@gourry.net
+- mm-unstable: 9 total, 0 (7) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 5 commits
+    - no role, nobody: 1 commits
+    - no role, no role : 4 commits
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-    - c44fc6377769 "mm/madvise: reclaim isolated folios if PTE restart fails"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260912110832.3203902-1-gourry@gourry.net
-    - a183fb6b67e2 "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260912110540.3203010-1-gourry@gourry.net
-      - 8658e9cc38b3 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-      - da24c43f5ca5 "mm/madvise: update is_valid_guard_vma() to use vma_can_merge()" (28/38)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-29-923b70125b1e@kernel.org
-      - 66f38c1b4723 "mm/vma: introduce vma[_flags]_is_mm_backed()" (29/38)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-30-923b70125b1e@kernel.org
-      - 37b128681151 "mm/madvise: use predicates for madvise(..., MADV_DOFORK)" (31/38)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-32-923b70125b1e@kernel.org
-      - bcb1177698a1 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
-    - 1c5f2e7c95db "mm: fix typos in various comments"
+    - 7f2a7e1c9b3a "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-      - a1ba46fb74e3 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (12/13)
+      - f4994a1cc80c "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
+      - 0e42e9b7b58a "mm/madvise: update is_valid_guard_vma() to use vma_can_merge()" (28/38)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-29-923b70125b1e@kernel.org
+      - 87b6ccf04590 "mm/vma: introduce vma[_flags]_is_mm_backed()" (29/38)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-30-923b70125b1e@kernel.org
+      - ee4883426967 "mm/madvise: use predicates for madvise(..., MADV_DOFORK)" (31/38)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-32-923b70125b1e@kernel.org
+      - 56fc97d40f65 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+      - eec750d7125d "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+      - d52bcb18abe5 "mm/collapse: implement MADV_COLLAPSE in madvise.c" (12/13)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
-    - 12d72f8dc293 "mm/madvise: add cond_resched() in THP branch of madvise_cold_or_pageout_pte_range()"
-      - Authored by no role player, reviewed by nobody
+    - df6ed8447b6a "mm/madvise: add cond_resched() in THP branch of madvise_cold_or_pageout_pte_range()"
+      - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261010024042.4070048-1-albin_yang@163.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits

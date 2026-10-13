@@ -1,10 +1,10 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 28 total, 3 (21) series, 7 non-series commits
+- mm-stable: 31 total, 3 (22) series, 9 non-series commits
   - author/reviewer role stat
     - no role, nobody: 2 commits
-    - no role, reviewer: 15 commits
+    - no role, reviewer: 18 commits
     - no role, maintainer: 2 commits
     - reviewer, no role : 2 commits
     - reviewer, reviewer: 6 commits
@@ -104,37 +104,37 @@
       - e01f7ddcb18a "mm/page-flags: check page/folio->private instead of PG_private" (9/17)
         - Authored by a reviewer, reviewed by no role player
         - Link: https://lore.kernel.org/20260920-remove-pg_private-v5-10-bb68b6a21869@nvidia.com
-- mm-unstable: 7 total, 0 (5) series, 2 non-series commits
-  - author/reviewer role stat
-    - no role, no role : 2 commits
-    - no role, reviewer: 4 commits
-    - no role, maintainer: 1 commits
-  - full commits list
-    - 88a5ff84fa32 "mm/mglru: restore accidentally removed seq < max_seq check"
+    - 5b306375a4aa "mm/mglru: restore accidentally removed seq < max_seq check"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260915101556.50467-1-baohua@kernel.org
-      - a4b30cb978cb "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - 7ccf5a3e5bdb "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-    - af7b60677d96 "mm: vmscan: put rotation-missed folios at the LRU tail"
+    - 664208a30604 "mm: vmscan: put rotation-missed folios at the LRU tail"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260920132519.3369946-1-ridong.chen@linux.dev
       - Link: https://lore.kernel.org/linux-kernel/20241010081802.290893-1-chenridong@huaweicloud.com/ [1]
       - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
       - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
       - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
-      - 8658e9cc38b3 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-      - 00ac62523d5d "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (32/38)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-33-923b70125b1e@kernel.org
-      - 1215162a8822 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (33/38)
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-34-923b70125b1e@kernel.org
-      - da16c47ad83d "memcg: move memcg private ID refcount to objcg" (3/4)
+- mm-unstable: 4 total, 0 (4) series, 0 non-series commits
+  - author/reviewer role stat
+    - no role, no role : 2 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+      - 68cad0ecac97 "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
+      - f4994a1cc80c "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
+      - e8ac55ec7f0a "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (32/38)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-33-923b70125b1e@kernel.org
+      - fc0556874980 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (33/38)
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-34-923b70125b1e@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

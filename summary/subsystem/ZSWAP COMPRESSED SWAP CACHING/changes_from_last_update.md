@@ -3,16 +3,44 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 17 -> 17 commits (no change)
-  - series: 5 (12) -> 5 (12) (no change)
+- mm-stable: 17 -> 20 commits
+  - series: 5 (12) -> 6 (14)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, maintainer: 14 -> 14 commits (no change)
-- mm-unstable: 3 -> 3 commits (no change)
+    - no role, maintainer: 14 -> 17 commits
+  - changed commits
+    - adbb0adb434d "selftests/cgroup: ignore memory.reclaim -EAGAIN for zswap writeback test"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260914-test-zswap-wb-ignore-eagain-v1-1-6fb715c22cd8@kernel.org
+    - series "mm: zswap: free cold writeback folios promptly", v6. (3)
+      - 4154a1cf2f70 "mm: swap: move LRU insertion out of the swap cache allocator (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr
+        - Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr
+      - 4fce3f3c696d "mm: zswap: drop cold writeback folios via swap dropbehind (2/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260921151306.625134-4-alex@ghiti.fr
+        - Link: https://lore.kernel.org/linux-mm/20260911092012.92399-1-alex@ghiti.fr/ [1]
+- mm-unstable: 3 -> 2 commits
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
-- mm-new: 2 -> 2 commits (no change)
-  - series: 1 (2) -> 1 (2) (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, maintainer: 3 -> 2 commits
+  - changed commits
+    - series "mm: zswap: reduce request contention on loads", v2. (2)
+      - 2a03c2a43e24 "mm: zswap: use separate compression and decompression requests (0/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261009163146.83112-1-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/20261009163146.83112-2-usama.arif@linux.dev
+        - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
+      - bf3480322a65 "mm: zswap: use stack requests for synchronous decompression (1/2)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-new -> mm-unstable
+        - Link: https://lore.kernel.org/20261009163146.83112-3-usama.arif@linux.dev
+- mm-new: 2 -> 0 commits
+  - series: 1 (2) -> 0 (0)
+    - no role, maintainer: 2 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

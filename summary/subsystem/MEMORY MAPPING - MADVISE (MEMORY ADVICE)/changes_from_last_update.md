@@ -3,21 +3,40 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 3 commits (no change)
+- mm-stable: 3 -> 5 commits
   - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-- mm-unstable: 11 -> 11 commits (no change)
+    - no role, no role : 3 -> 5 commits
+  - changed commits
+    - 5445a6359d71 "mm/madvise: reclaim isolated folios if PTE restart fails"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260912110832.3203902-1-gourry@gourry.net
+    - 5a6c9cf117fc "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260912110540.3203010-1-gourry@gourry.net
+- mm-unstable: 11 -> 9 commits
   - series: 0 (7) -> 0 (7) (no change)
-    - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 5 -> 5 commits (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 5 -> 4 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
   - changed commits
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "[akpm@linux-foundation.org: fix comment, per Zi Yan]"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
+      - ee4883426967 "mm/madvise: use predicates for madvise(..., MADV_DOFORK) (31/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-32-923b70125b1e@kernel.org
+    - df6ed8447b6a "mm/madvise: add cond_resched() in THP branch of madvise_cold_or_pageout_pte_range()"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Gregory Price <gourry@gourry.net>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20261010024042.4070048-1-albin_yang@163.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

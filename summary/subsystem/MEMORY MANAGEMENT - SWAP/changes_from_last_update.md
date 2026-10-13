@@ -3,21 +3,49 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 21 -> 21 commits (no change)
-  - series: 7 (19) -> 7 (19) (no change)
-    - no role, no role : 9 -> 9 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+- mm-stable: 21 -> 27 commits
+  - series: 7 (19) -> 8 (24)
+    - no role, no role : 9 -> 10 commits
+    - no role, reviewer: 2 -> 3 commits
+    - no role, maintainer: 3 -> 7 commits
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 12 -> 12 commits (no change)
-  - series: 1 (7) -> 1 (7) (no change)
+  - changed commits
+    - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11)
+      - 4cb5edd32dfa "mm/page_io: take a const folio in bio_associate_blkg_from_folio() (3/11)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-4-c239a6010b58@columbia.edu
+      - 56c44e678eaf "mm: memcontrol: constify the swap accounting helpers (8/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-9-c239a6010b58@columbia.edu
+      - bc936f771a2d "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max() (9/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-10-c239a6010b58@columbia.edu
+    - series "mm: zswap: free cold writeback folios promptly", v6. (3)
+      - 4154a1cf2f70 "mm: swap: move LRU insertion out of the swap cache allocator (0/3)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr
+        - Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr
+      - 7ccf5a3e5bdb "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
+    - e4ea16e00288 "mm/swapops: remove unused is_hwpoison_entry()"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
+- mm-unstable: 12 -> 6 commits
+  - series: 1 (7) -> 0 (2)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 2 -> 2 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
+    - no role, no role : 3 -> 2 commits
+    - no role, reviewer: 2 -> 1 commits
+    - no role, maintainer: 5 -> 1 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -14,6 +14,22 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
+      - 240d2989ea26 "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (22/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-23-923b70125b1e@kernel.org
+    - 00f587b01fb8 "mm/rmap: don't discard lazyfree THPs at PMD level"
+      - Authored by no role player, reviewed by a reviewer
+      - added "Link: https://lore.kernel.org/20261012-lazyfree-stable-fix-v2-1-6387d6e30063@nvidia.com"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Link: https://lore.kernel.org/20261009-lazyfree-stable-fix-v1-1-70997958ef8d@nvidia.com"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - Link: https://lore.kernel.org/20261012-lazyfree-stable-fix-v2-1-6387d6e30063@nvidia.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

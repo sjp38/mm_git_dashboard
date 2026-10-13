@@ -1,11 +1,11 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 21 total, 7 (19) series, 2 non-series commits
+- mm-stable: 27 total, 8 (24) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, no role : 9 commits
-    - no role, reviewer: 2 commits
-    - no role, maintainer: 3 commits
+    - no role, no role : 10 commits
+    - no role, reviewer: 3 commits
+    - no role, maintainer: 7 commits
     - reviewer, nobody: 1 commits
     - reviewer, reviewer: 1 commits
     - reviewer, maintainer: 4 commits
@@ -89,49 +89,49 @@
         - Authored by a maintainer, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-0-ba1b4ba72c6f@tencent.com
         - Link: https://lore.kernel.org/20260923-swap-thp-cleanup-v6-1-ba1b4ba72c6f@tencent.com
-- mm-unstable: 12 total, 1 (7) series, 5 non-series commits
-  - author/reviewer role stat
-    - no role, nobody: 2 commits
-    - no role, no role : 3 commits
-    - no role, reviewer: 2 commits
-    - no role, maintainer: 5 commits
-  - full commits list
-      - 328784ac3fae "mm/page_io: take a const folio in bio_associate_blkg_from_folio()" (3/11)
+      - 4cb5edd32dfa "mm/page_io: take a const folio in bio_associate_blkg_from_folio()" (3/11)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-4-c239a6010b58@columbia.edu
-      - 5a74061ce103 "mm: memcontrol: constify the swap accounting helpers" (8/11)
+      - 56c44e678eaf "mm: memcontrol: constify the swap accounting helpers" (8/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-9-c239a6010b58@columbia.edu
-      - eade11a32226 "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max()" (9/11)
+      - bc936f771a2d "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max()" (9/11)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-10-c239a6010b58@columbia.edu
     - series "mm: zswap: free cold writeback folios promptly", v6. (3 commits)
-      - baa897c07b79 "mm: swap: move LRU insertion out of the swap cache allocator" (0/3)
+      - 4154a1cf2f70 "mm: swap: move LRU insertion out of the swap cache allocator" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr
         - Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr
-      - a4b30cb978cb "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
+      - 7ccf5a3e5bdb "mm: swap: drop dropbehind swap cache folios on writeback completion" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-    - 4cb2a1c4e052 "mm/swapops: remove unused is_hwpoison_entry()"
+    - e4ea16e00288 "mm/swapops: remove unused is_hwpoison_entry()"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
-      - 8658e9cc38b3 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
-      - bcb1177698a1 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-    - 1c5f2e7c95db "mm: fix typos in various comments"
+- mm-unstable: 6 total, 0 (2) series, 4 non-series commits
+  - author/reviewer role stat
+    - no role, nobody: 2 commits
+    - no role, no role : 2 commits
+    - no role, reviewer: 1 commits
+    - no role, maintainer: 1 commits
+  - full commits list
+    - 7f2a7e1c9b3a "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
-    - 600238c77ec0 "mm: make swapoff interruptible when unusing mms/shmem"
+      - f4994a1cc80c "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (26/38)
+        - Authored by no role player, reviewed by a maintainer
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org
+      - 56fc97d40f65 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
+    - 4d8d2838e8e8 "mm: make swapoff interruptible when unusing mms/shmem"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/ar2YlFYjYUZ49ZA5@chrisdown.name
-    - 4a530eb9ec49 "mm/swap: submit the last readahead batch before unplugging"
+    - 213c3f21bdea "mm/swap: submit the last readahead batch before unplugging"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261001085730.2029773-1-alex@ghiti.fr
-    - f414d62873b3 "mm/swap, PM: hibernate: atomically replace hibernation pin"
+    - 8e43536c610d "mm/swap, PM: hibernate: atomically replace hibernation pin"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260430195651.287659-1-devnexen@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

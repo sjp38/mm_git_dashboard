@@ -3,15 +3,27 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 5 commits (no change)
-  - series: 0 (4) -> 0 (4) (no change)
+- mm-stable: 5 -> 7 commits
+  - series: 0 (4) -> 0 (5)
     - no role, no role : 3 -> 3 commits (no change)
+    - no role, reviewer: 0 -> 1 commits
+    - no role, maintainer: 0 -> 1 commits
     - reviewer, no role : 2 -> 2 commits (no change)
-- mm-unstable: 7 -> 7 commits (no change)
-  - series: 1 (6) -> 1 (6) (no change)
+  - changed commits
+    - 103142868af5 "mm: filemap: move lruvec accounting outside the xarray lock"
+      - Authored by no role player, reviewed by a maintainer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260916125122.2696271-1-usama.arif@linux.dev
+    - series "mm: zswap: free cold writeback folios promptly", v6. (3)
+      - 7ccf5a3e5bdb "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
+- mm-unstable: 7 -> 5 commits
+  - series: 1 (6) -> 1 (5)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 5 -> 5 commits (no change)
+    - no role, reviewer: 1 -> 0 commits
+    - no role, maintainer: 5 -> 4 commits
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

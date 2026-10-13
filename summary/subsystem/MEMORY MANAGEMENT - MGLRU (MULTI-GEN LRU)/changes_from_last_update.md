@@ -3,21 +3,51 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 39 -> 39 commits (no change)
-  - series: 4 (32) -> 4 (32) (no change)
+- mm-stable: 39 -> 43 commits
+  - series: 4 (32) -> 4 (34)
     - no role, nobody: 3 -> 3 commits (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 21 -> 21 commits (no change)
-    - no role, maintainer: 2 -> 2 commits (no change)
+    - no role, reviewer: 21 -> 24 commits
+    - no role, maintainer: 2 -> 3 commits
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 7 -> 7 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 12 -> 12 commits (no change)
-  - series: 0 (9) -> 0 (9) (no change)
+  - changed commits
+    - 5b306375a4aa "mm/mglru: restore accidentally removed seq < max_seq check"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260915101556.50467-1-baohua@kernel.org
+    - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11)
+      - e791754fe99f "mm: memcontrol: constify the lruvec helpers (2/11)"
+        - Authored by no role player, reviewed by a maintainer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-3-c239a6010b58@columbia.edu
+    - series "mm: zswap: free cold writeback folios promptly", v6. (3)
+      - 7ccf5a3e5bdb "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
+    - 664208a30604 "mm: vmscan: put rotation-missed folios at the LRU tail"
+      - Authored by no role player, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260920132519.3369946-1-ridong.chen@linux.dev
+      - Link: https://lore.kernel.org/linux-kernel/20241010081802.290893-1-chenridong@huaweicloud.com/ [1]
+      - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
+      - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
+      - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
+- mm-unstable: 12 -> 8 commits
+  - series: 0 (9) -> 0 (7)
     - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 5 -> 5 commits (no change)
-    - no role, maintainer: 3 -> 3 commits (no change)
+    - no role, reviewer: 5 -> 2 commits
+    - no role, maintainer: 3 -> 2 commits
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
+      - e8ac55ec7f0a "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (32/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-33-923b70125b1e@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

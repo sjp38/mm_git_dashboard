@@ -4,33 +4,100 @@
 - mm-hotfixes-unstable: 1 -> 1 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-stable: 30 -> 30 commits (no change)
-  - series: 4 (25) -> 4 (25) (no change)
-    - no role, no role : 4 -> 4 commits (no change)
-    - no role, reviewer: 24 -> 24 commits (no change)
+- mm-stable: 30 -> 45 commits
+  - series: 4 (25) -> 6 (38)
+    - no role, nobody: 0 -> 2 commits
+    - no role, no role : 4 -> 6 commits
+    - no role, reviewer: 24 -> 33 commits
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 38 -> 38 commits (no change)
-  - series: 5 (35) -> 5 (35) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 30 -> 30 commits (no change)
-    - no role, maintainer: 1 -> 1 commits (no change)
-    - reviewer, reviewer: 2 -> 2 commits (no change)
+    - reviewer, reviewer: 0 -> 2 commits
   - changed commits
+    - bcf7b0c3a06f "mm/huge_memory: simplify pgtable deposit detection"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260917054015.23553-1-lance.yang@linux.dev
     - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6)
-      - 3b3d26b38b85 "selftests/mm: make file helpers return errors (0/6)"
+      - 23d0a7444fca "selftests/mm: make file helpers return errors (0/6)"
         - Authored by no role player, reviewed by no role player
-        - added "[sarthak.sharma@arm.com: convert hugetlb_nr_resv_pages()]"
-        - added "Link: : https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com"
+        - branch: mm-unstable -> mm-stable
         - Link: : https://lore.kernel.org/937939c3-ae9a-4148-a601-0f8876216423@arm.com
         - Link: https://lore.kernel.org/20260918112234.195857-1-sarthak.sharma@arm.com
         - Link: https://lore.kernel.org/20260918112234.195857-2-sarthak.sharma@arm.com
-    - series "mm: implement and use vma_has_anon_rmap(), silence KCSAN". (3)
-      - b7a5fc2f0652 "mm: update comments to refer to anon rmap rather than anon_vma (2/3)"
+      - 32449ec2cc57 "tools/lib/mm: move hugepage_settings out of selftests (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
+    - series "selftests/mm: improve khugepaged coverage", v6. (19)
+      - 59e24520b8f1 "selftests/mm: raise the khugepaged test-case cap (0/19)"
         - Authored by no role player, reviewed by a reviewer
-        - added "[akpm@linux-foundation.org: fix comment, per Zi Yan]"
-        - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260919002451.496763-1-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20260919002451.496763-2-kirill@shutemov.name
+      - b36bec6a01b1 "selftests/mm: skip collapse_compound_extreme() where the PMD is too large (1/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260919002451.496763-3-kirill@shutemov.name
+      - e8e83ce6f4a2 "selftests/mm: scale khugepaged's collapse wait with the PMD size (2/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260919002451.496763-4-kirill@shutemov.name
+      - ceffb8ff832e "selftests/mm: skip khugepaged page cache cases without a PMD folio (3/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260919002451.496763-5-kirill@shutemov.name
+      - 1648a3366def "selftests/mm: make the swap cases' swapout reliable (4/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260919002451.496763-6-kirill@shutemov.name
+      - 7af29a132253 "selftests/mm: stop khugepaged during the MADV_COLLAPSE cases (5/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260919002451.496763-7-kirill@shutemov.name
+      - 22206a92859e "selftests/mm: move is_backed_by_folio() into vm_util (6/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260919002451.496763-8-kirill@shutemov.name
+      - 6e9ed3d8fdd4 "selftests/mm: add order-parameterized khugepaged collapse cases (10/19)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260919002451.496763-12-kirill@shutemov.name
+      - d2a9d28f5385 "selftests/mm: parameterize the mixed-source collapse case by source order (11/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260919002451.496763-13-kirill@shutemov.name
+      - e1fe35d6c847 "selftests/mm: cover a shared-source collapse write race (12/19)"
+        - Authored by no role player, reviewed by nobody
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260919002451.496763-14-kirill@shutemov.name
+      - e5d767fe33c1 "selftests/mm: run every supported collapse order by default (13/19)"
+        - Authored by no role player, reviewed by a reviewer
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260919002451.496763-15-kirill@shutemov.name
+    - 7b466529307b "mm: disallow raw PFN mappings of huge/shared zeropage"
+      - Authored by a reviewer, reviewed by a reviewer
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260921054225.28537-1-lance.yang@linux.dev
+      - Link: https://lore.kernel.org/all/20260917121010.60966-1-lance.yang@linux.dev/
+- mm-unstable: 38 -> 23 commits
+  - series: 5 (35) -> 3 (22)
+    - no role, nobody: 3 -> 1 commits
+    - no role, no role : 2 -> 0 commits
+    - no role, reviewer: 30 -> 21 commits
+    - no role, maintainer: 1 -> 1 commits (no change)
+    - reviewer, reviewer: 2 -> 0 commits
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
+      - 99083396a9ba "mm/vma: add and use vma_[flags]_is_fixed_mapping (15/38)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-16-923b70125b1e@kernel.org
+      - 8a1ac81e350b "mm/huge_memory: remove vma_is_special_huge() (37/38)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-38-923b70125b1e@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

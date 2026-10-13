@@ -1,10 +1,10 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c
 - mm-hotfixes-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-hotfixes-unstable: 0 total, 0 (0) series, 0 non-series commits
-- mm-stable: 17 total, 5 (12) series, 5 non-series commits
+- mm-stable: 20 total, 6 (14) series, 6 non-series commits
   - author/reviewer role stat
     - no role, no role : 3 commits
-    - no role, maintainer: 14 commits
+    - no role, maintainer: 17 commits
   - full commits list
     - series "make unused huge shrinker memcg aware", v4. (3 commits)
       - 877c1d0059ca "mm: memcontrol: make obj_cgroup_memcg() handle NULL objcg" (0/3)
@@ -67,34 +67,31 @@
     - 9b2027128589 "mm: zswap: return -ENOENT when the swap device is gone"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260913063031.1689420-1-hebaoquan@kylinos.cn
-- mm-unstable: 3 total, 1 (2) series, 1 non-series commits
-  - author/reviewer role stat
-    - no role, maintainer: 3 commits
-  - full commits list
-    - 99cefc7cbdc7 "selftests/cgroup: ignore memory.reclaim -EAGAIN for zswap writeback test"
+    - adbb0adb434d "selftests/cgroup: ignore memory.reclaim -EAGAIN for zswap writeback test"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20260914-test-zswap-wb-ignore-eagain-v1-1-6fb715c22cd8@kernel.org
     - series "mm: zswap: free cold writeback folios promptly", v6. (3 commits)
-      - baa897c07b79 "mm: swap: move LRU insertion out of the swap cache allocator" (0/3)
+      - 4154a1cf2f70 "mm: swap: move LRU insertion out of the swap cache allocator" (0/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr
         - Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr
-      - b8f366c56e06 "mm: zswap: drop cold writeback folios via swap dropbehind" (2/3)
+      - 4fce3f3c696d "mm: zswap: drop cold writeback folios via swap dropbehind" (2/3)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921151306.625134-4-alex@ghiti.fr
         - Link: https://lore.kernel.org/linux-mm/20260911092012.92399-1-alex@ghiti.fr/ [1]
-- mm-new: 2 total, 1 (2) series, 0 non-series commits
+- mm-unstable: 2 total, 1 (2) series, 0 non-series commits
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
     - series "mm: zswap: reduce request contention on loads", v2. (2 commits)
-      - 212dfa1f6549 "mm: zswap: use separate compression and decompression requests" (0/2)
+      - 2a03c2a43e24 "mm: zswap: use separate compression and decompression requests" (0/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261009163146.83112-1-usama.arif@linux.dev
         - Link: https://lore.kernel.org/20261009163146.83112-2-usama.arif@linux.dev
         - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-      - fac031677137 "mm: zswap: use stack requests for synchronous decompression" (1/2)
+      - bf3480322a65 "mm: zswap: use stack requests for synchronous decompression" (1/2)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261009163146.83112-3-usama.arif@linux.dev
+- mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

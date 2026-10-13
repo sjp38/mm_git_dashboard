@@ -3,13 +3,42 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 4 -> 4 commits (no change)
-  - series: 1 (3) -> 1 (3) (no change)
-    - no role, no role : 4 -> 4 commits (no change)
-- mm-unstable: 7 -> 7 commits (no change)
-  - series: 0 (5) -> 0 (6)
-    - no role, no role : 6 -> 6 commits (no change)
+- mm-stable: 4 -> 9 commits
+  - series: 1 (3) -> 1 (7)
+    - no role, no role : 4 -> 9 commits
+  - changed commits
+    - 12e828f463f3 "mm/gup_test: safely calculate GUP batch size"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-unstable -> mm-stable
+      - Link: https://lore.kernel.org/20260915102524.125758-1-sarthak.sharma@arm.com
+    - series "selftests/mm: separate GUP microbenchmarking from functional testing", v11. (6)
+      - 32449ec2cc57 "tools/lib/mm: move hugepage_settings out of selftests (2/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918112234.195857-4-sarthak.sharma@arm.com
+      - f1e88f288651 "tools/mm: move gup_test from selftests/mm to tools/mm (3/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918112234.195857-5-sarthak.sharma@arm.com
+      - 84821e767653 "tools/mm: make gup_bench a benchmark only tool (4/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918112234.195857-6-sarthak.sharma@arm.com
+      - d2b82fa39fda "selftests/mm: add a GUP selftest (5/6)"
+        - Authored by no role player, reviewed by no role player
+        - branch: mm-unstable -> mm-stable
+        - Link: https://lore.kernel.org/20260918112234.195857-7-sarthak.sharma@arm.com
+- mm-unstable: 7 -> 2 commits
+  - series: 0 (6) -> 0 (2)
+    - no role, no role : 6 -> 1 commits
     - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
+      - fb3c07af754c "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs (19/38)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Cc: David Hildenbrand <david@kernel.org>"
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-20-923b70125b1e@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
