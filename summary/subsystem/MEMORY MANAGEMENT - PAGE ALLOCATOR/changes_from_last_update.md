@@ -3,27 +3,26 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 11 -> 13 commits
+- mm-stable: 13 -> 13 commits (no change)
   - series: 3 (7) -> 3 (7) (no change)
-    - no role, no role : 1 -> 2 commits
-    - no role, reviewer: 8 -> 9 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 9 -> 9 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - 1372648980b8 "mm/page_alloc: apply per-task GFP context in bulk allocator"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://sashiko.dev/#/patchset/20260907120949.418450-1-liuqiqi%40kylinos.cn
-      - Link: https://lore.kernel.org/all/20260907120949.418450-1-liuqiqi@kylinos.cn/ [1]
-      - Link: https://lore.kernel.org/20260915074928.327471-1-liuqiqi@kylinos.cn
-    - 331f94007d79 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
-      - Authored by no role player, reviewed by a reviewer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
-- mm-unstable: 5 -> 3 commits
+- mm-unstable: 3 -> 3 commits (no change)
   - series: 0 (1) -> 0 (1) (no change)
-    - no role, no role : 3 -> 2 commits
-    - no role, reviewer: 2 -> 1 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+  - changed commits
+    - 1d0b04a60516 "mm: page_alloc: make defrag_mode retries follow the promoted order"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/as5q14OsbK2CmOrh@thinkstation"
+      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
+      - added "Cc: Usama Arif <usama.arif@linux.dev>"
+      - dropped "Link: https://lore.kernel.org/20261009125503.126202-1-kas@kernel.org"
+      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
+      - dropped "Acked-by: Usama Arif <usama.arif@linux.dev>"
+      - Link: https://lore.kernel.org/as5q14OsbK2CmOrh@thinkstation
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

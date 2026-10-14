@@ -3,49 +3,28 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 21 -> 27 commits
-  - series: 7 (19) -> 8 (24)
-    - no role, no role : 9 -> 10 commits
-    - no role, reviewer: 2 -> 3 commits
-    - no role, maintainer: 3 -> 7 commits
+- mm-stable: 27 -> 27 commits (no change)
+  - series: 8 (24) -> 8 (24) (no change)
+    - no role, no role : 10 -> 10 commits (no change)
+    - no role, reviewer: 3 -> 3 commits (no change)
+    - no role, maintainer: 7 -> 7 commits (no change)
     - reviewer, nobody: 1 -> 1 commits (no change)
     - reviewer, reviewer: 1 -> 1 commits (no change)
     - reviewer, maintainer: 4 -> 4 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: memcontrol: constify the read side of the read side of the memcg API", v3. (11)
-      - 4cb5edd32dfa "mm/page_io: take a const folio in bio_associate_blkg_from_folio() (3/11)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-4-c239a6010b58@columbia.edu
-      - 56c44e678eaf "mm: memcontrol: constify the swap accounting helpers (8/11)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-9-c239a6010b58@columbia.edu
-      - bc936f771a2d "mm: memcontrol: constify mem_cgroup_swappiness() and mem_cgroup_get_max() (9/11)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260915-folio_memcg-const-v3-10-c239a6010b58@columbia.edu
-    - series "mm: zswap: free cold writeback folios promptly", v6. (3)
-      - 4154a1cf2f70 "mm: swap: move LRU insertion out of the swap cache allocator (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260921151306.625134-1-alex@ghiti.fr
-        - Link: https://lore.kernel.org/20260921151306.625134-2-alex@ghiti.fr
-      - 7ccf5a3e5bdb "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-    - e4ea16e00288 "mm/swapops: remove unused is_hwpoison_entry()"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260918165642.1014988-1-ekffu200098@gmail.com
-- mm-unstable: 12 -> 6 commits
-  - series: 1 (7) -> 0 (2)
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 0 (2) -> 0 (2) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 3 -> 2 commits
-    - no role, reviewer: 2 -> 1 commits
-    - no role, maintainer: 5 -> 1 commits
+    - no role, no role : 2 -> 2 commits (no change)
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - 413bd2edc825 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -4,33 +4,14 @@
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-- mm-stable: 6 -> 10 commits
-  - series: 1 (6) -> 2 (9)
+- mm-stable: 10 -> 10 commits (no change)
+  - series: 2 (9) -> 2 (9) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 4 -> 8 commits
-  - changed commits
-    - series "mm/vmalloc: minor cleanups", v2. (3)
-      - ebb07f8a8b0a "mm/vmalloc: group xa_init with vbq field initializations (0/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-0-cc4dfe635e22@linux.dev
-        - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-1-cc4dfe635e22@linux.dev
-      - c10ed0f2315a "mm/vmalloc: extract vmap_insert_free_area helper (1/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-2-cc4dfe635e22@linux.dev
-      - 3b2384226404 "mm/vmalloc: extract show_busy_info from vmalloc_info_show (2/3)"
-        - Authored by no role player, reviewed by no role player
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260915-vmalloc_study-v2-3-cc4dfe635e22@linux.dev
-    - 25aa09142ecc "mm/vmalloc: use %p for pointer formatting"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260918105013.UpdykT6j@linutronix.de
-- mm-unstable: 10 -> 6 commits
-  - series: 2 (5) -> 1 (2)
+    - no role, no role : 8 -> 8 commits (no change)
+- mm-unstable: 6 -> 6 commits (no change)
+  - series: 1 (2) -> 1 (2) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
-    - no role, no role : 7 -> 3 commits
+    - no role, no role : 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

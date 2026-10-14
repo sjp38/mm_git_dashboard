@@ -3,42 +3,55 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 3 -> 5 commits
+- mm-stable: 5 -> 5 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
-    - no role, no role : 3 -> 5 commits
-  - changed commits
-    - 5445a6359d71 "mm/madvise: reclaim isolated folios if PTE restart fails"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260912110832.3203902-1-gourry@gourry.net
-    - 5a6c9cf117fc "mm/madvise: use folio_trylock() in the cold/pageout PMD split"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260912110540.3203010-1-gourry@gourry.net
-- mm-unstable: 11 -> 9 commits
-  - series: 0 (7) -> 0 (7) (no change)
-    - no role, nobody: 2 -> 1 commits
-    - no role, no role : 5 -> 4 commits
+    - no role, no role : 5 -> 5 commits (no change)
+- mm-unstable: 9 -> 8 commits
+  - series: 0 (7) -> 0 (6)
+    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 4 -> 3 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
-      - ee4883426967 "mm/madvise: use predicates for madvise(..., MADV_DOFORK) (31/38)"
+  - new commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - bba59995a09d "mm/madvise: update is_valid_guard_vma() to use vma_is_mm_backed() (30/39)"
         - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-31-1aa3c9b139f9@kernel.org
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - 413bd2edc825 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
+      - a8bccc9a7a8d "mm/vma: introduce vma[_flags]_is_mm_backed() (29/39)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org"
         - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-30-923b70125b1e@kernel.org"
         - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-32-923b70125b1e@kernel.org
-    - df6ed8447b6a "mm/madvise: add cond_resched() in THP branch of madvise_cold_or_pageout_pte_range()"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Gregory Price (Meta) <gourry@gourry.net>"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: Gregory Price <gourry@gourry.net>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20261010024042.4070048-1-albin_yang@163.com
-- mm-new: 0 -> 0 commits (no change)
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org
+      - 32f5f8d28720 "mm/madvise: use predicates for madvise(..., MADV_DOFORK) (32/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-33-1aa3c9b139f9@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-32-923b70125b1e@kernel.org"
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-33-1aa3c9b139f9@kernel.org
+  - dropped commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
+      - 0e42e9b7b58a "mm/madvise: update is_valid_guard_vma() to use vma_can_merge() (28/38)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-29-923b70125b1e@kernel.org
+    - series "mm/collapse: separate a collapse from its callers", v4. (13)
+      - d52bcb18abe5 "mm/collapse: implement MADV_COLLAPSE in madvise.c (12/13)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
+- mm-new: 0 -> 1 commits
   - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 0 -> 1 commits
+  - new commits
+    - ab5e8a84ecd3 "mm/madvise: atomically clear the young bit on THP MADV_COLD"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261013191719.95502-1-pfalcato@suse.de
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

@@ -3,27 +3,23 @@
   - series: 0 (0) -> 0 (0) (no change)
 - mm-hotfixes-unstable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-stable: 5 -> 7 commits
-  - series: 0 (4) -> 0 (5)
+- mm-stable: 7 -> 7 commits (no change)
+  - series: 0 (5) -> 0 (5) (no change)
     - no role, no role : 3 -> 3 commits (no change)
-    - no role, reviewer: 0 -> 1 commits
-    - no role, maintainer: 0 -> 1 commits
+    - no role, reviewer: 1 -> 1 commits (no change)
+    - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 2 -> 2 commits (no change)
-  - changed commits
-    - 103142868af5 "mm: filemap: move lruvec accounting outside the xarray lock"
-      - Authored by no role player, reviewed by a maintainer
-      - branch: mm-unstable -> mm-stable
-      - Link: https://lore.kernel.org/20260916125122.2696271-1-usama.arif@linux.dev
-    - series "mm: zswap: free cold writeback folios promptly", v6. (3)
-      - 7ccf5a3e5bdb "mm: swap: drop dropbehind swap cache folios on writeback completion (1/3)"
-        - Authored by no role player, reviewed by a reviewer
-        - branch: mm-unstable -> mm-stable
-        - Link: https://lore.kernel.org/20260921151306.625134-3-alex@ghiti.fr
-- mm-unstable: 7 -> 5 commits
-  - series: 1 (6) -> 1 (5)
+- mm-unstable: 5 -> 5 commits (no change)
+  - series: 1 (5) -> 1 (5) (no change)
     - no role, no role : 1 -> 1 commits (no change)
-    - no role, reviewer: 1 -> 0 commits
-    - no role, maintainer: 5 -> 4 commits
+    - no role, maintainer: 4 -> 4 commits (no change)
+  - changed commits
+    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
+      - 63cb4489e034 "mm: remove hugetlb_inline.h (26/39)"
+        - Authored by no role player, reviewed by no role player
+        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-27-1aa3c9b139f9@kernel.org"
+        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-26-923b70125b1e@kernel.org"
+        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-27-1aa3c9b139f9@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
