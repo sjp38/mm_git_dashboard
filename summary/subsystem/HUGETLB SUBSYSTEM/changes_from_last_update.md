@@ -12,18 +12,19 @@
     - no role, maintainer: 11 -> 11 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 11 -> 11 commits (no change)
+- mm-unstable: 11 -> 13 commits
   - series: 1 (4) -> 1 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 1 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 9 -> 9 commits (no change)
-  - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
-      - 413bd2edc825 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
+    - no role, maintainer: 9 -> 10 commits
+  - new commits
+    - 41361af5013e "mm/hugetlb: use sizeof(buf) in string_get_size() calls"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261014031147.444733-1-lienze@kylinos.cn
+    - b890ec4dbf7c "mm/userfaultfd: only allocate anon_vma in CoW mappings"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261014-copy_hugetlb_page_range-v1-1-5b68e03fe7fe@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

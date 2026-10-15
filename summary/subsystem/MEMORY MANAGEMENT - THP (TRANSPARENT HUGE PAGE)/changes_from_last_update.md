@@ -12,77 +12,41 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 23 -> 11 commits
-  - series: 3 (22) -> 2 (10)
+- mm-unstable: 11 -> 20 commits
+  - series: 2 (10) -> 3 (19)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 21 -> 9 commits
+    - no role, reviewer: 9 -> 18 commits
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
-      - d1bdb3322b5d "mm/vma: add and use vma_[flags]_is_fixed_mapping (16/39)"
+  - new commits
+    - series "mm/collapse: separate a collapse from its callers", v5. (9)
+      - 5babf656d6d4 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/9)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-17-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-16-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-17-1aa3c9b139f9@kernel.org
-      - 413bd2edc825 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - a8bccc9a7a8d "mm/vma: introduce vma[_flags]_is_mm_backed() (29/39)"
+        - Link: https://lore.kernel.org/20261014171145.3292736-1-kas@kernel.org
+        - Link: https://lore.kernel.org/20261014171145.3292736-2-kas@kernel.org
+      - e1afbc1875cf "mm/khugepaged: count collapses where khugepaged makes them (1/9)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-30-923b70125b1e@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org
-      - 09cd49b590ac "mm/huge_memory: remove vma_is_special_huge() (38/39)"
+        - Link: https://lore.kernel.org/20261014171145.3292736-3-kas@kernel.org
+      - e47410a91a3f "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/9)"
         - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-39-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-38-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-39-1aa3c9b139f9@kernel.org
-  - dropped commits
-    - series "mm/collapse: separate a collapse from its callers", v4. (13)
-      - 66d11b78a2fa "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/13)"
+        - Link: https://lore.kernel.org/20261014171145.3292736-4-kas@kernel.org
+      - a56df20e77df "mm/collapse: add collapse.h for the collapse interface (3/9)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-1-kirill@shutemov.name
-        - Link: https://lore.kernel.org/20260928100630.21870-2-kirill@shutemov.name
-      - 158515a0f2b8 "mm/khugepaged: count collapses where khugepaged makes them (1/13)"
+        - Link: https://lore.kernel.org/20261014171145.3292736-5-kas@kernel.org
+      - e637b288e98e "mm/collapse: state what a collapse may do in the policy (4/9)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-3-kirill@shutemov.name
-      - 126ab4c6537c "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/13)"
+        - Link: https://lore.kernel.org/20261014171145.3292736-6-kas@kernel.org
+      - 688c869942b9 "mm/collapse: drop the collapse_possible() wrapper (5/9)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-4-kirill@shutemov.name
-      - 7df15135e0f5 "mm/collapse: add collapse.h for the collapse interface (3/13)"
+        - Link: https://lore.kernel.org/20261014171145.3292736-7-kas@kernel.org
+      - 0d2804e078ee "mm/collapse: name the per-table scan reset for what it resets (6/9)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-5-kirill@shutemov.name
-      - 0f51c969e7e2 "mm/collapse: state what a collapse may do in the policy (4/13)"
+        - Link: https://lore.kernel.org/20261014171145.3292736-8-kas@kernel.org
+      - b7725e40a507 "mm/collapse: call collapse_file() from collapse_single_pmd() (7/9)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-6-kirill@shutemov.name
-      - 425af70e10f7 "mm/collapse: drop the collapse_possible() wrapper (5/13)"
+        - Link: https://lore.kernel.org/20261014171145.3292736-9-kas@kernel.org
+      - 4c529a4f1bf3 "mm/collapse: separate scanning a PTE table from collapsing it (8/9)"
         - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-7-kirill@shutemov.name
-      - 7fe913b535bf "mm/collapse: name the per-table scan reset for what it resets (6/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-8-kirill@shutemov.name
-      - 74f32280e9f3 "mm/collapse: call collapse_file() from collapse_single_pmd() (7/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-9-kirill@shutemov.name
-      - fe299569366b "mm/collapse: separate scanning a PTE table from collapsing it (8/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-10-kirill@shutemov.name
-      - 8e9b572819ac "mm/collapse: open-code collapse_single_pmd() in its two callers (9/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-11-kirill@shutemov.name
-      - 026b3da93613 "mm/collapse: work out the orders a VMA allows once per VMA (10/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-12-kirill@shutemov.name
-      - cff1023417f5 "mm/collapse: declare the collapse interface in collapse.h (11/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-13-kirill@shutemov.name
-      - d52bcb18abe5 "mm/collapse: implement MADV_COLLAPSE in madvise.c (12/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
+        - Link: https://lore.kernel.org/20261014171145.3292736-10-kas@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

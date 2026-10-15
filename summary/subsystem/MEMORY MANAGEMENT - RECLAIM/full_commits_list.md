@@ -117,24 +117,32 @@
       - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
       - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
       - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
-- mm-unstable: 4 total, 0 (4) series, 0 non-series commits
+- mm-unstable: 6 total, 0 (4) series, 2 non-series commits
   - author/reviewer role stat
     - no role, no role : 2 commits
-    - no role, reviewer: 1 commits
+    - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - ebf87cdd4cd0 "memcg: move memcg private ID refcount to objcg" (3/4)
+      - 2d5595c9c5f4 "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-      - 413bd2edc825 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - e2f895dd2f8c "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 6b9baf3b94b8 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
+      - 8615441290df "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
-      - 1e3e6f0959ab "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (34/39)
+      - 1125c79f18fe "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (34/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-35-1aa3c9b139f9@kernel.org
+    - e7fd8a371c3c "mm/vmscan: fix missing NR_ISOLATED counter update in MGLRU reclaim path"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/141901355a7d9e4bbca5c4840ae32ea5c65fe3b6.1791968227.git.zhuhui@kylinos.cn
+      - Link: https://lore.kernel.org/cover.1791968227.git.zhuhui@kylinos.cn
+    - 5ba29027115b "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261012022917.1102467-1-vernon2gm@gmail.com
+      - Link: https://github.com/vernon2gh/app_and_module/tree/main/reclaim_node_psi [1]
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

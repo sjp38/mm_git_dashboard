@@ -5,18 +5,15 @@
     - no role, no role : 3 -> 3 commits (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 9 -> 9 commits (no change)
+- mm-hotfixes-unstable: 9 -> 10 commits
   - series: 1 (2) -> 1 (2) (no change)
-    - no role, nobody: 3 -> 2 commits
-    - no role, no role : 5 -> 6 commits
+    - no role, nobody: 2 -> 2 commits (no change)
+    - no role, no role : 6 -> 7 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-  - changed commits
-    - b6c70680f0c5 "mm: memory: fix truncation removing mapped folios"
+  - new commits
+    - bbbb7a97e8d2 "mm: fix address wraparound when scanning large folio PTEs"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
-      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
-      - Link: https://lore.kernel.org/542c97482eae84f86704bcee56482633d1b32321.1791616645.git.baolin.wang@linux.alibaba.com
-      - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
+      - Link: https://lore.kernel.org/20261014-folio_pte_scan_range-v2-1-00cf9bbaa364@kernel.org
 - mm-stable: 539 -> 539 commits (no change)
   - series: 84 (430) -> 84 (430) (no change)
     - no role, nobody: 41 -> 41 commits (no change)
@@ -30,368 +27,142 @@
     - maintainer, nobody: 90 -> 90 commits (no change)
     - maintainer, no role : 31 -> 31 commits (no change)
     - maintainer, reviewer: 6 -> 6 commits (no change)
-- mm-unstable: 176 -> 165 commits
-  - series: 21 (137) -> 20 (125)
-    - no role, nobody: 21 -> 19 commits
-    - no role, no role : 71 -> 74 commits
-    - no role, reviewer: 39 -> 27 commits
-    - no role, maintainer: 36 -> 36 commits (no change)
+- mm-unstable: 165 -> 186 commits
+  - series: 20 (125) -> 21 (134)
+    - no role, nobody: 19 -> 22 commits
+    - no role, no role : 74 -> 79 commits
+    - no role, reviewer: 27 -> 39 commits
+    - no role, maintainer: 36 -> 37 commits
     - maintainer, nobody: 8 -> 8 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - a99a2f2cd8c9 "vmcoreinfo: export SECTION_HAS_MEM_MAP"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20260928-section_has_mem_map-v1-1-4129f6ba2838@kernel.org
-    - d7a49f091a00 "mm: disallow ioremap'ing ordinary RAM in generic_access_phys()"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261013-generic_access_phys-v1-1-b3963ef76e37@kernel.org
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
-      - e1d803a9053f "mm: assert mmap lock held, use new flags API in vm_insert_page[s] (6/39)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-7-1aa3c9b139f9@kernel.org
-      - bba59995a09d "mm/madvise: update is_valid_guard_vma() to use vma_is_mm_backed() (30/39)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-31-1aa3c9b139f9@kernel.org
-  - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
-      - cb92a8e9afb8 "mm/vma: fix mmap_prepare file handling, remove file_doesnt_need_get (0/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-0-1aa3c9b139f9@kernel.org"
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-1-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-0-923b70125b1e@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-1-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-0-1aa3c9b139f9@kernel.org
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-1-1aa3c9b139f9@kernel.org
-      - 37b85cb15cef "mm/vma: introduce and use vma_[flags_]can_merge() (1/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-2-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-2-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-2-1aa3c9b139f9@kernel.org
-      - 8fbed2ee1e1f "mm: consistently validate VMA state after mmap[_prepare] hooks (2/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-3-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-3-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-3-1aa3c9b139f9@kernel.org
-      - ca693e0ce0e6 "mm/vma: ensure mmap_prepare doesn't set actions on a mergeable vma (3/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-4-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-4-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-4-1aa3c9b139f9@kernel.org
-      - 6e1c93356dab "mm: make map_kernel_pages_[prepare,complete] internal and unexported (4/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-5-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-5-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-5-1aa3c9b139f9@kernel.org
-      - 029ac9c40a11 "mm/vma: tidy up map kernel pages enum values (5/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-6-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-6-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-6-1aa3c9b139f9@kernel.org
-      - 6ee811011965 "mm: add mmap action for discontiguous kernel page mapping (7/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-8-1aa3c9b139f9@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-7-923b70125b1e@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-8-1aa3c9b139f9@kernel.org
-      - b76bfef5a022 "docs: filesystems: update mmap_prepare docs for discontig kernel pgs (8/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-9-1aa3c9b139f9@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-8-923b70125b1e@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-9-1aa3c9b139f9@kernel.org
-      - 1d9daaecac05 "drivers/usb/mon: update to use mmap_prepare + map kernel pages (9/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-10-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-9-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-10-1aa3c9b139f9@kernel.org
-      - 204c5f3d1342 "infiniband: update hfi1 to use remap_vmalloc_range() (10/39)"
-        - Authored by no role player, reviewed by nobody
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-11-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-10-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-11-1aa3c9b139f9@kernel.org
-      - 609784d2a5ee "selinux: reject writable opens of policy file, drop mmap shared/write check (11/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-12-1aa3c9b139f9@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-11-923b70125b1e@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-12-1aa3c9b139f9@kernel.org
-      - d47267ed29aa "ALSA: pcm: use vm_insert_page() to map PCM status page (12/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-13-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-12-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-13-1aa3c9b139f9@kernel.org
-      - e0000d1e5325 "bpf: arena: mark arena_map_mmap() mappings VM_MIXEDMAP (13/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-14-1aa3c9b139f9@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-13-923b70125b1e@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-14-1aa3c9b139f9@kernel.org
-      - 1d5cafffba45 "mm/vma: add vma[_flags]_is_mm_managed() predicates (14/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-15-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-14-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-15-1aa3c9b139f9@kernel.org
-      - c1f6b6e950d6 "mm/vma: only allow mmap to clear VMA_MAYWRITE_BIT if not mm-managed (15/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-16-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-15-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-16-1aa3c9b139f9@kernel.org
-      - d1bdb3322b5d "mm/vma: add and use vma_[flags]_is_fixed_mapping (16/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-17-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-16-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-17-1aa3c9b139f9@kernel.org
-      - 520359edafd6 "scsi: sg: convert mmap hook to mmap_prepare and rework (17/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-18-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-17-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-18-1aa3c9b139f9@kernel.org
-      - c06d015f39a7 "fbdev: defio: assert FBINFO_VIRTFB, drop VM_IO, add VM_MIXEDMAP (18/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-19-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-18-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-19-1aa3c9b139f9@kernel.org
-      - ec25c7430b49 "HSI: cmt_speech: convert mmap hook to mmap_prepare, refactor (19/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-20-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-19-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-20-1aa3c9b139f9@kernel.org
-      - ba4b81ba0fcd "mm/gup: error out early on !VMA_MAYREAD_BIT VMAs (20/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-21-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-20-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-21-1aa3c9b139f9@kernel.org
-      - 38ee80300fe7 "uprobes: remove VM_IO, set VM_MIXEDMAP for mapped kernel pages (21/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-22-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-21-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-22-1aa3c9b139f9@kernel.org
-      - 32c619e40fa0 "mm/mlock: clear VMA_LOCKED_MASK over mmap callback (22/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-23-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-22-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-23-1aa3c9b139f9@kernel.org
-      - 3fc12ab0cc5b "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify (23/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-24-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-23-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-24-1aa3c9b139f9@kernel.org
-      - a5a376ac29fa "mm/vma: enforce that mm-managed mappings may not set VMA_IO_BIT (24/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-25-1aa3c9b139f9@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-24-923b70125b1e@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-25-1aa3c9b139f9@kernel.org
-      - fa8203b3154a "mm: remove VMA_IO_BIT check in vma[_flags]_is_mm_managed() (25/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-26-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-25-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-26-1aa3c9b139f9@kernel.org
-      - 63cb4489e034 "mm: remove hugetlb_inline.h (26/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-27-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-26-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-27-1aa3c9b139f9@kernel.org
-      - 413bd2edc825 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 53124f1abe9f "mm: drop some redundant checks around hugetlb VMAs (28/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-29-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-28-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-29-1aa3c9b139f9@kernel.org
-      - a8bccc9a7a8d "mm/vma: introduce vma[_flags]_is_mm_backed() (29/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-30-923b70125b1e@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org
-      - 9ad1e28b688e "mm/uffd: use predicates for userfaultfd checks (31/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-32-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-31-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-32-1aa3c9b139f9@kernel.org
-      - 32f5f8d28720 "mm/madvise: use predicates for madvise(..., MADV_DOFORK) (32/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-33-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-32-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-33-1aa3c9b139f9@kernel.org
-      - 6b9baf3b94b8 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested (33/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-33-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
-      - 1e3e6f0959ab "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around() (34/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-35-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-34-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-35-1aa3c9b139f9@kernel.org
-      - b9fd41fed7a4 "mm: avoid use of VMA_SPECIAL_FLAGS in migrate_vma_setup() (35/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-36-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-35-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-36-1aa3c9b139f9@kernel.org
-      - 7105b3178dea "mm: eliminate VM_SPECIAL, VMA_SPECIAL_FLAGS (36/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-37-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-36-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-37-1aa3c9b139f9@kernel.org
-      - a41d3437217d "fuse: dax: do not set VM_MIXEDMAP (37/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-38-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-37-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-38-1aa3c9b139f9@kernel.org
-      - 09cd49b590ac "mm/huge_memory: remove vma_is_special_huge() (38/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-39-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-38-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-39-1aa3c9b139f9@kernel.org
-    - 710104d08b9f "mm: fix missing page-table destructor in pagetable_free()"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-      - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
-      - Link: https://lore.kernel.org/20261010112457.49485-2-songmuchun@bytedance.com
-    - e9dfdcf477f7 "arm64/mm: fix destructor for unconstructed hotplug page tables"
-      - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Kevin Brodsky <kevin.brodsky@arm.com>"
-      - dropped "Cc: Kevin Brodsky <kevin.brodsky@arm.com>"
-      - Link: https://lore.kernel.org/20261010112457.49485-5-songmuchun@bytedance.com
-    - series "mm: zswap: reduce request contention on loads", v2. (2)
-      - 8f13112a1596 "mm: zswap: use separate compression and decompression requests (0/2)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Acked-by: Herbert Xu <herbert@gondor.apana.org.au>"
-        - dropped "Cc: Herbert Xu <herbert@gondor.apana.org.au>"
-        - Link: https://lore.kernel.org/20261009163146.83112-1-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/20261009163146.83112-2-usama.arif@linux.dev
-        - Link: https://lore.kernel.org/all/20261005122036.718976-10-senozhatsky@chromium.org/ [1]
-    - 1a0bcbbf9c59 "fs/proc/task_mmu: fix lost maps entries above 2^63"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no"
-      - added "Fixes: 5631da56c9a87 ("fs/proc/task_mmu: read proc/pid/maps under per-vma lock")"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - added "Acked-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - dropped "Link: https://lore.kernel.org/20261011162019.922436-1-stian@itx.no"
-      - dropped "Fixes: 5631da56c9a8 ("fs/proc/task_mmu: read proc/pid/maps under per-vma lock")"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
-    - 1d0b04a60516 "mm: page_alloc: make defrag_mode retries follow the promoted order"
-      - Authored by no role player, reviewed by no role player
-      - added "Link: https://lore.kernel.org/as5q14OsbK2CmOrh@thinkstation"
-      - added "Reviewed-by: Vlastimil Babka (SUSE) <vbabka@kernel.org>"
-      - added "Cc: Usama Arif <usama.arif@linux.dev>"
-      - dropped "Link: https://lore.kernel.org/20261009125503.126202-1-kas@kernel.org"
-      - dropped "Cc: Vlastimil Babka <vbabka@kernel.org>"
-      - dropped "Acked-by: Usama Arif <usama.arif@linux.dev>"
-      - Link: https://lore.kernel.org/as5q14OsbK2CmOrh@thinkstation
-  - dropped commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
-      - 0e42e9b7b58a "mm/madvise: update is_valid_guard_vma() to use vma_can_merge() (28/38)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-29-923b70125b1e@kernel.org
-    - series "mm/collapse: separate a collapse from its callers", v4. (13)
-      - 66d11b78a2fa "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-1-kirill@shutemov.name
-        - Link: https://lore.kernel.org/20260928100630.21870-2-kirill@shutemov.name
-      - 158515a0f2b8 "mm/khugepaged: count collapses where khugepaged makes them (1/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-3-kirill@shutemov.name
-      - 126ab4c6537c "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-4-kirill@shutemov.name
-      - 7df15135e0f5 "mm/collapse: add collapse.h for the collapse interface (3/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-5-kirill@shutemov.name
-      - 0f51c969e7e2 "mm/collapse: state what a collapse may do in the policy (4/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-6-kirill@shutemov.name
-      - 425af70e10f7 "mm/collapse: drop the collapse_possible() wrapper (5/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-7-kirill@shutemov.name
-      - 7fe913b535bf "mm/collapse: name the per-table scan reset for what it resets (6/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-8-kirill@shutemov.name
-      - 74f32280e9f3 "mm/collapse: call collapse_file() from collapse_single_pmd() (7/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-9-kirill@shutemov.name
-      - fe299569366b "mm/collapse: separate scanning a PTE table from collapsing it (8/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-10-kirill@shutemov.name
-      - 8e9b572819ac "mm/collapse: open-code collapse_single_pmd() in its two callers (9/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-11-kirill@shutemov.name
-      - 026b3da93613 "mm/collapse: work out the orders a VMA allows once per VMA (10/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-12-kirill@shutemov.name
-      - cff1023417f5 "mm/collapse: declare the collapse interface in collapse.h (11/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-13-kirill@shutemov.name
-      - d52bcb18abe5 "mm/collapse: implement MADV_COLLAPSE in madvise.c (12/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
-    - cf6402c08573 "riscv/mm: fix missing destructor for hotplug PUD tables"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261010112457.49485-4-songmuchun@bytedance.com
-- mm-new: 2 -> 5 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 2 -> 3 commits
-    - no role, no role : 0 -> 2 commits
-  - new commits
-    - 8bfadf03db72 "userfaultfd: fix UFFDIO_MOVE livelock on large folio with extra references"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261012201514.97015-1-cenzhang@linux.microsoft.com
-    - 2acf92ee46b9 "mm/percpu: account full object size for percpu memory allocations"
+    - 36c4e9b5b589 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261013-fix-alloc-percpu-accounting-v1-1-03e788a1e41f@kernel.org
-    - ab5e8a84ecd3 "mm/madvise: atomically clear the young bit on THP MADV_COLD"
+      - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
+      - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
+    - 41361af5013e "mm/hugetlb: use sizeof(buf) in string_get_size() calls"
+      - Authored by no role player, reviewed by a maintainer
+      - Link: https://lore.kernel.org/20261014031147.444733-1-lienze@kylinos.cn
+    - b890ec4dbf7c "mm/userfaultfd: only allocate anon_vma in CoW mappings"
       - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261014-copy_hugetlb_page_range-v1-1-5b68e03fe7fe@kernel.org
+    - series "mm/collapse: separate a collapse from its callers", v5. (9)
+      - 5babf656d6d4 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261014171145.3292736-1-kas@kernel.org
+        - Link: https://lore.kernel.org/20261014171145.3292736-2-kas@kernel.org
+      - e1afbc1875cf "mm/khugepaged: count collapses where khugepaged makes them (1/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261014171145.3292736-3-kas@kernel.org
+      - e47410a91a3f "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261014171145.3292736-4-kas@kernel.org
+      - a56df20e77df "mm/collapse: add collapse.h for the collapse interface (3/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261014171145.3292736-5-kas@kernel.org
+      - e637b288e98e "mm/collapse: state what a collapse may do in the policy (4/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261014171145.3292736-6-kas@kernel.org
+      - 688c869942b9 "mm/collapse: drop the collapse_possible() wrapper (5/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261014171145.3292736-7-kas@kernel.org
+      - 0d2804e078ee "mm/collapse: name the per-table scan reset for what it resets (6/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261014171145.3292736-8-kas@kernel.org
+      - b7725e40a507 "mm/collapse: call collapse_file() from collapse_single_pmd() (7/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261014171145.3292736-9-kas@kernel.org
+      - 4c529a4f1bf3 "mm/collapse: separate scanning a PTE table from collapsing it (8/9)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261014171145.3292736-10-kas@kernel.org
+    - 28db0c7bf7e5 "selftests/mm: mremap_test: Validate the preamble region before mapping it"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261014-selftests-mm-mremap_preamble-v1-1-2e97f501cb56@marliere.net
+    - d13e24be48c0 "selftests/mm: report the configuration check on stderr"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261014200137.1364121-1-sashal@kernel.org
+    - f105e4fbbdbb "mm/mlock: use a long for the page count in mlock_fixup()"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261014131358.780240-1-nickolai@csail.mit.edu
+    - e7fd8a371c3c "mm/vmscan: fix missing NR_ISOLATED counter update in MGLRU reclaim path"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/141901355a7d9e4bbca5c4840ae32ea5c65fe3b6.1791968227.git.zhuhui@kylinos.cn
+      - Link: https://lore.kernel.org/cover.1791968227.git.zhuhui@kylinos.cn
+    - 366f8946b4f5 "ipc/shm: fix RSS accounting for hugetlb shared memory"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261014082218.2236088-1-tongweilin@linux.alibaba.com
+    - 5ba29027115b "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261012022917.1102467-1-vernon2gm@gmail.com
+      - Link: https://github.com/vernon2gh/app_and_module/tree/main/reclaim_node_psi [1]
+  - changed commits
+    - 477887bbb234 "mm: disallow ioremap'ing ordinary RAM in generic_access_phys()"
+      - Authored by no role player, reviewed by no role player
+      - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
+      - Link: https://lore.kernel.org/20261013-generic_access_phys-v1-1-b3963ef76e37@kernel.org
+    - 5afa22a5b6bf "fs/proc/task_mmu: fix lost maps entries above 2^63"
+      - Authored by no role player, reviewed by no role player
+      - added "Fixes: 5631da56c9a8 ("fs/proc/task_mmu: read proc/pid/maps under per-vma lock")"
+      - dropped "Fixes: 5631da56c9a87 ("fs/proc/task_mmu: read proc/pid/maps under per-vma lock")"
+      - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
+    - b8c04f147206 "userfaultfd: fix UFFDIO_MOVE livelock on large folio with extra references"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - Link: https://lore.kernel.org/20261012201514.97015-1-cenzhang@linux.microsoft.com
+    - 9cc867b5c08a "mm/percpu: account full object size for percpu memory allocations"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Joshua Hahn <joshua.hahnjy@gmail.com>"
+      - added "Cc: <stable@vger.kernel.org>"
+      - Link: https://lore.kernel.org/20261013-fix-alloc-percpu-accounting-v1-1-03e788a1e41f@kernel.org
+    - aecf11e162d9 "mm/madvise: atomically clear the young bit on THP MADV_COLD"
+      - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
       - Link: https://lore.kernel.org/20261013191719.95502-1-pfalcato@suse.de
-- mm-nonmm-stable: 98 -> 98 commits (no change)
+- mm-new: 5 -> 2 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, nobody: 3 -> 2 commits
+    - no role, no role : 2 -> 0 commits
+- mm-nonmm-stable: 98 -> 97 commits
   - series: 10 (31) -> 10 (31) (no change)
     - no role, nobody: 36 -> 36 commits (no change)
-    - no role, no role : 28 -> 28 commits (no change)
+    - no role, no role : 28 -> 27 commits
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 15 -> 15 commits (no change)
     - maintainer, nobody: 12 -> 12 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
-- mm-nonmm-unstable: 22 -> 28 commits
-  - series: 5 (12) -> 6 (15)
-    - no role, nobody: 11 -> 12 commits
+  - dropped commits
+    - series "bootconfig: Reject unexpected data after null character and cleanups", v2. (4)
+      - e732d7c18d4d "tools/bootconfig: consolidate xbc_init() to error message wrapper (1/4)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/178913599508.248794.10388592925402087434.stgit@devnote2
+- mm-nonmm-unstable: 28 -> 31 commits
+  - series: 6 (15) -> 6 (15) (no change)
+    - no role, nobody: 12 -> 11 commits
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, maintainer: 3 -> 8 commits
+    - no role, maintainer: 8 -> 10 commits
     - maintainer, nobody: 3 -> 3 commits (no change)
-    - maintainer, reviewer: 3 -> 3 commits (no change)
+    - maintainer, reviewer: 3 -> 5 commits
   - new commits
-    - 265220f5d118 "lib: kstrtox: use isdigit() in _parse_integer_limit()"
+    - b98d8c0bc039 "ocfs2/dlm: hold a lock reference across grant AST enqueue"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261013072108.4407-3-blum@kernel.org
-    - 851d1abcd3e8 "fat: roll back the new entry when create/mkdir fails to build the inode"
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0043-v5-1ad07df761ff49638789@gmail.com
+    - 0249fe1b741f "ocfs2: cancel quota sync work before freeing quota info"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/tencent_4EDD66523CED299DB0C99498B4D8C939A009@qq.com
-    - 830bf79b9e90 "fat-roll-back-the-new-entry-when-create-mkdir-fails-to-build-the-inode-fix"
+      - Link: https://lore.kernel.org/pm-ocfs2-objects-candidate-0052-v3-b4904bd6c85daf033adf@gmail.com
+    - ffdfc5931cc3 "ocfs2/dlm: hold the lookup reference across convert AST enqueue"
+      - Authored by a maintainer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261014112321.2955584-1-joseph.qi@linux.alibaba.com
+    - 102a4719a67d "ocfs2: validate the xattr tree root of an indexed xattr block"
+      - Authored by a maintainer, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261014105856.2909777-1-joseph.qi@linux.alibaba.com
+  - dropped commits
+    - c00413864ed3 "lib/lz4: add software-pipelined prefetch to decode fast loop"
       - Authored by no role player, reviewed by nobody
-    - series "fat: allocate multiple clusters in fallocate", v2. (3)
-      - a422d0b5987b "fat: remove cluster allocation size limit (0/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261012171106.146243-1-matheus.aalmeida@inf.ufrgs.br
-        - Link: https://lore.kernel.org/20261012171106.146243-2-matheus.aalmeida@inf.ufrgs.br
-      - 8e40d29ec10b "fat: support adding multiple clusters (1/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261012171106.146243-3-matheus.aalmeida@inf.ufrgs.br
-      - ddc1b4197a83 "fat: allocate multiple clusters in fallocate (2/3)"
-        - Authored by no role player, reviewed by a maintainer
-        - Link: https://lore.kernel.org/20261012171106.146243-4-matheus.aalmeida@inf.ufrgs.br
-  - changed commits
-    - 2f0b19e2843d "selftests/proc: proc-pid-vm: fix unused variable warning on non-x86"
-      - Authored by no role player, reviewed by nobody
-      - added "Fixes: 17415606f9d8 ("tools/testing/selftests/proc/proc-pid-vm.c: test with vsyscall in mind")"
-      - dropped "Fixes: 17415606f9d8b ("tools/testing/selftests/proc/proc-pid-vm.c: test with vsyscall in mind")"
-      - Link: https://lore.kernel.org/20261012115330.3777115-1-sashal@kernel.org
+      - Link: https://lore.kernel.org/20261013032010.2453893-1-Biplab.Raut@amd.com

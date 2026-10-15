@@ -6,52 +6,26 @@
 - mm-stable: 5 -> 5 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 5 -> 5 commits (no change)
-- mm-unstable: 9 -> 8 commits
-  - series: 0 (7) -> 0 (6)
+- mm-unstable: 8 -> 9 commits
+  - series: 0 (6) -> 0 (6) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 4 -> 3 commits
+    - no role, no role : 3 -> 4 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
-      - bba59995a09d "mm/madvise: update is_valid_guard_vma() to use vma_is_mm_backed() (30/39)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-31-1aa3c9b139f9@kernel.org
   - changed commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v6. (39)
-      - 413bd2edc825 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb() (27/39)"
-        - Authored by no role player, reviewed by a maintainer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-27-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - a8bccc9a7a8d "mm/vma: introduce vma[_flags]_is_mm_backed() (29/39)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org"
-        - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-30-923b70125b1e@kernel.org"
-        - dropped "Cc: David Hildenbrand <david@kernel.org>"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org
-      - 32f5f8d28720 "mm/madvise: use predicates for madvise(..., MADV_DOFORK) (32/39)"
-        - Authored by no role player, reviewed by no role player
-        - added "Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-33-1aa3c9b139f9@kernel.org"
-        - dropped "Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-32-923b70125b1e@kernel.org"
-        - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-33-1aa3c9b139f9@kernel.org
-  - dropped commits
-    - series "mm: make VMA flag semantics explicit, eliminate VM_SPECIAL", v5. (38)
-      - 0e42e9b7b58a "mm/madvise: update is_valid_guard_vma() to use vma_can_merge() (28/38)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261009-b4-mmap-prepare-vma-flag-sanify-v5-29-923b70125b1e@kernel.org
-    - series "mm/collapse: separate a collapse from its callers", v4. (13)
-      - d52bcb18abe5 "mm/collapse: implement MADV_COLLAPSE in madvise.c (12/13)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20260928100630.21870-14-kirill@shutemov.name
-- mm-new: 0 -> 1 commits
-  - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 0 -> 1 commits
-  - new commits
-    - ab5e8a84ecd3 "mm/madvise: atomically clear the young bit on THP MADV_COLD"
+    - aecf11e162d9 "mm/madvise: atomically clear the young bit on THP MADV_COLD"
       - Authored by no role player, reviewed by no role player
+      - branch: mm-new -> mm-unstable
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Reviewed-by: SJ Park <sj@kernel.org>"
+      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
+      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: David Hildenbrand <david@kernel.org>"
       - Link: https://lore.kernel.org/20261013191719.95502-1-pfalcato@suse.de
+- mm-new: 1 -> 0 commits
+  - series: 0 (0) -> 0 (0) (no change)
+    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

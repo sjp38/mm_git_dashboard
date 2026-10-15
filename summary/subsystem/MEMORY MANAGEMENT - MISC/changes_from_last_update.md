@@ -13,13 +13,20 @@
     - maintainer, nobody: 9 -> 9 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 15 -> 15 commits (no change)
+- mm-unstable: 15 -> 17 commits
   - series: 2 (8) -> 2 (8) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 3 commits
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
+  - new commits
+    - 28db0c7bf7e5 "selftests/mm: mremap_test: Validate the preamble region before mapping it"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261014-selftests-mm-mremap_preamble-v1-1-2e97f501cb56@marliere.net
+    - d13e24be48c0 "selftests/mm: report the configuration check on stderr"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261014200137.1364121-1-sashal@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

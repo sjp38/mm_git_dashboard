@@ -265,63 +265,69 @@
       - 9640bb559a5d "selftests/mm: zap whole PTE tables in the khugepaged race harness" (18/19)
         - Authored by no role player, reviewed by nobody
         - Link: https://lore.kernel.org/20260919002451.496763-20-kirill@shutemov.name
-- mm-unstable: 15 total, 2 (8) series, 7 non-series commits
+- mm-unstable: 17 total, 2 (8) series, 9 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 3 commits
     - no role, no role : 7 commits
     - no role, reviewer: 4 commits
     - no role, maintainer: 1 commits
     - maintainer, nobody: 2 commits
   - full commits list
     - series "kselftest: mm: fix intermittent failure khugepaged test", v4. (2 commits)
-      - f9bf51612317 "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
+      - 769d9b59a670 "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-0-2169c18f2576@arm.com
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-1-2169c18f2576@arm.com
-      - 9b84ff543782 "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
+      - 2e6d12bc4973 "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-2-2169c18f2576@arm.com
-    - d3ab9987d7d9 "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
+    - c8330574febb "selftests/mm: fix mlock2 errno handling and false PASS on ENOSYS"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20260923-selftests-mm-mlock2-fix-v1-1-750b627854c6@dgu.ac.kr
     - series "kselftest: mm: fix some failure of split_huge_page_test", v9. (4 commits)
-      - d43e432691e2 "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
+      - 05ed05d8b79c "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com
         - Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com
-      - 8140dcef7749 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge()" (1/4)
+      - 18f278f5aa47 "kselftest: mm: replace usage of /proc/self/smaps for __check_pmd_huge()" (1/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261001-fix_split-v9-2-0f4ba8bbdbdf@arm.com
-      - d72b40bec06d "kselftest: mm: integrate huge page checks" (2/4)
+      - 7ac09f6438e8 "kselftest: mm: integrate huge page checks" (2/4)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261001-fix_split-v9-3-0f4ba8bbdbdf@arm.com
-      - 2a6f29ee2c9b "kselftest: mm: remove check_huge_shmem()" (3/4)
+      - 18868bbeb168 "kselftest: mm: remove check_huge_shmem()" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com
-      - 12412590982a "Docs/mm/damon/design: document damos quota goal complement flag" (6/8)
+      - 4fb2cfaecb8d "Docs/mm/damon/design: document damos quota goal complement flag" (6/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260929080113.41708-7-sj@kernel.org
-      - 528da8e1e8ba "Docs/admin-guide/mm/damon/usage: update for quota goal complement file" (7/8)
+      - 144378024224 "Docs/admin-guide/mm/damon/usage: update for quota goal complement file" (7/8)
         - Authored by a maintainer, reviewed by nobody
         - Link: https://lore.kernel.org/20260929080113.41708-8-sj@kernel.org
-    - fcaf26121d7e "selftests/mm: mrelease_test: fix retry limit"
+    - c2464255c71f "selftests/mm: mrelease_test: fix retry limit"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/CANOyQmFzsssM_BXHUDrV+UuVD5SZMBmSkg3UQnmw9Ns1PV7GCQ@mail.gmail.com
-    - 0987aefde95d "docs: hugetlbpage.rst: fix typo in per-node attribute description"
+    - 07791e004170 "docs: hugetlbpage.rst: fix typo in per-node attribute description"
       - Authored by no role player, reviewed by a maintainer
       - Link: https://lore.kernel.org/20261003161125.40485-1-lienze@kylinos.cn
-    - 765339e97451 "selftests/mm: hugetlb-read-hwpoison: add setup of HugeTLB pages"
+    - 4847ac558902 "selftests/mm: hugetlb-read-hwpoison: add setup of HugeTLB pages"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261004205458.119608-1-jaeyeon.lee.dev@gmail.com
-    - 62dce4556cb7 "selftests/mm: hugetlb_madv_vs_map: fix TAP plan mismatches"
+    - 2ac00e16125e "selftests/mm: hugetlb_madv_vs_map: fix TAP plan mismatches"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261004230018.190880-1-jaeyeon.lee.dev@gmail.com
-    - 76b68b3ef848 "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
+    - 35524c870053 "selftests/mm: check MREMAP_DONTUNMAP mlock accounting"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261006064120.6796-1-azpijr@gmail.com
-    - cb606e0215db "selftests/mm: fix uffd move-pmd test crash on 64K base page systems"
+    - 01e3c8230c5a "selftests/mm: fix uffd move-pmd test crash on 64K base page systems"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/20261011163527.95988-1-zenghui.yu@linux.dev
+    - 28db0c7bf7e5 "selftests/mm: mremap_test: Validate the preamble region before mapping it"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261014-selftests-mm-mremap_preamble-v1-1-2e97f501cb56@marliere.net
+    - d13e24be48c0 "selftests/mm: report the configuration check on stderr"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261014200137.1364121-1-sashal@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

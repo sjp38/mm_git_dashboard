@@ -43,13 +43,13 @@
     - no role, nobody: 1 commits
     - no role, no role : 2 commits
   - full commits list
-      - c18b0b822fe2 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
+      - ca7f2dd4ea30 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261010075755.83339-4-songmuchun@bytedance.com
-      - 69d8891e5a12 "mm/mm_init: add zone mismatch warning during page init" (5/6)
+      - 9f81139f47d6 "mm/mm_init: add zone mismatch warning during page init" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261010075755.83339-7-songmuchun@bytedance.com
-    - 8595f65de2d2 "fixup! mm/mm_init: add zone mismatch warning during page init"
+    - 2324b72f8b46 "fixup! mm/mm_init: add zone mismatch warning during page init"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261010115523.4005071-1-songmuchun@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
