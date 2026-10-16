@@ -1,9 +1,36 @@
 - baseline: v7.3-rc5-337-gff47652a4b66c -> v7.3-rc5-337-gff47652a4b66c (no change)
 - mm-hotfixes-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-- mm-hotfixes-unstable: 1 -> 1 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-hotfixes-unstable: 1 -> 9 commits
+  - series: 0 (0) -> 0 (8)
     - no role, nobody: 1 -> 1 commits (no change)
+    - no role, no role : 0 -> 8 commits
+  - new commits
+    - series "mm: various (urgent?) fixes", v1. (10)
+      - de5a435b49d5 "mm/hugetlb: fix use-after-free of a new anon folio (1/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-2-42796911043b@kernel.org
+      - 93b028222339 "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte() (2/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-3-42796911043b@kernel.org
+      - 39c3690ec848 "mm/hugetlb: unmap the page where the other VMA maps it (3/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-4-42796911043b@kernel.org
+      - 792207465062 "mm/hugetlb: don't clear the resv_map of a VMA whose lock is held (4/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-5-42796911043b@kernel.org
+      - 8e123639a0d1 "mm/hugetlb: fix endless write fault on a leftover uffd bit (5/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org
+      - 060aa672b996 "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs (6/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-7-42796911043b@kernel.org
+      - d29769bda4c8 "mm/hugetlb: tolerate UFFD_WP markers outside uffd-wp VMAs (7/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-8-42796911043b@kernel.org
+      - ee500dee4764 "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry (8/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-9-42796911043b@kernel.org
 - mm-stable: 25 -> 25 commits (no change)
   - series: 4 (18) -> 4 (18) (no change)
     - no role, nobody: 2 -> 2 commits (no change)
@@ -12,18 +39,20 @@
     - no role, maintainer: 11 -> 11 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 11 -> 13 commits
+- mm-unstable: 13 -> 13 commits (no change)
   - series: 1 (4) -> 1 (4) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 0 -> 1 commits
+    - no role, no role : 1 -> 0 commits
     - no role, reviewer: 1 -> 1 commits (no change)
-    - no role, maintainer: 9 -> 10 commits
-  - new commits
-    - 41361af5013e "mm/hugetlb: use sizeof(buf) in string_get_size() calls"
+    - no role, maintainer: 10 -> 11 commits
+  - changed commits
+    - 30a65a31a4b8 "mm/userfaultfd: only allocate anon_vma in CoW mappings"
       - Authored by no role player, reviewed by a maintainer
-      - Link: https://lore.kernel.org/20261014031147.444733-1-lienze@kylinos.cn
-    - b890ec4dbf7c "mm/userfaultfd: only allocate anon_vma in CoW mappings"
-      - Authored by no role player, reviewed by no role player
+      - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
+      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
+      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
       - Link: https://lore.kernel.org/20261014-copy_hugetlb_page_range-v1-1-5b68e03fe7fe@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

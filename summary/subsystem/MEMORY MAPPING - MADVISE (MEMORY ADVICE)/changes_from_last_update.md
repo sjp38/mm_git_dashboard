@@ -6,26 +6,14 @@
 - mm-stable: 5 -> 5 commits (no change)
   - series: 0 (2) -> 0 (2) (no change)
     - no role, no role : 5 -> 5 commits (no change)
-- mm-unstable: 8 -> 9 commits
+- mm-unstable: 9 -> 9 commits (no change)
   - series: 0 (6) -> 0 (6) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, no role : 3 -> 4 commits
+    - no role, no role : 4 -> 4 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - aecf11e162d9 "mm/madvise: atomically clear the young bit on THP MADV_COLD"
-      - Authored by no role player, reviewed by no role player
-      - branch: mm-new -> mm-unstable
-      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
-      - added "Reviewed-by: SJ Park <sj@kernel.org>"
-      - added "Acked-by: Zi Yan <ziy@nvidia.com>"
-      - added "Acked-by: David Hildenbrand (Arm) <david@kernel.org>"
-      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
-      - dropped "Cc: David Hildenbrand <david@kernel.org>"
-      - Link: https://lore.kernel.org/20261013191719.95502-1-pfalcato@suse.de
-- mm-new: 1 -> 0 commits
+- mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 0 commits
 - mm-nonmm-stable: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-unstable: 0 -> 0 commits (no change)

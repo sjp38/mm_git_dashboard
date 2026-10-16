@@ -12,40 +12,66 @@
     - no role, maintainer: 1 -> 1 commits (no change)
     - reviewer, no role : 1 -> 1 commits (no change)
     - reviewer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 11 -> 20 commits
-  - series: 2 (10) -> 3 (19)
+- mm-unstable: 20 -> 21 commits
+  - series: 3 (19) -> 3 (19) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
-    - no role, reviewer: 9 -> 18 commits
+    - no role, reviewer: 18 -> 19 commits
     - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
+    - 386f8aac5602 "mm: stop recalculating min_free_kbytes once set by userspace"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261014140859.1006967-1-noren@nvidia.com
+      - Link: https://lore.kernel.org/r/20260716173504.760369-1-noren@nvidia.com/ [1]
+      - Link: https://lore.kernel.org/r/d202dcc3-d7d7-4e98-a9a5-3137cfbfd041@kernel.org/
+  - changed commits
     - series "mm/collapse: separate a collapse from its callers", v5. (9)
-      - 5babf656d6d4 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/9)"
+      - d1831a631b73 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/9)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20261014171145.3292736-1-kas@kernel.org
         - Link: https://lore.kernel.org/20261014171145.3292736-2-kas@kernel.org
-      - e1afbc1875cf "mm/khugepaged: count collapses where khugepaged makes them (1/9)"
+      - f3f1830b2917 "mm/khugepaged: count collapses where khugepaged makes them (1/9)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20261014171145.3292736-3-kas@kernel.org
-      - e47410a91a3f "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/9)"
+      - 9aeaacc5156f "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/9)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20261014171145.3292736-4-kas@kernel.org
-      - a56df20e77df "mm/collapse: add collapse.h for the collapse interface (3/9)"
+      - cd62dff417ce "mm/collapse: add collapse.h for the collapse interface (3/9)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20261014171145.3292736-5-kas@kernel.org
-      - e637b288e98e "mm/collapse: state what a collapse may do in the policy (4/9)"
+      - b7a4008e9572 "mm/collapse: state what a collapse may do in the policy (4/9)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20261014171145.3292736-6-kas@kernel.org
-      - 688c869942b9 "mm/collapse: drop the collapse_possible() wrapper (5/9)"
+      - 56faa0c0559b "mm/collapse: drop the collapse_possible() wrapper (5/9)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20261014171145.3292736-7-kas@kernel.org
-      - 0d2804e078ee "mm/collapse: name the per-table scan reset for what it resets (6/9)"
+      - 3ee66680d22b "mm/collapse: name the per-table scan reset for what it resets (6/9)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20261014171145.3292736-8-kas@kernel.org
-      - b7725e40a507 "mm/collapse: call collapse_file() from collapse_single_pmd() (7/9)"
+      - de778b53898f "mm/collapse: call collapse_file() from collapse_single_pmd() (7/9)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
         - Link: https://lore.kernel.org/20261014171145.3292736-9-kas@kernel.org
-      - 4c529a4f1bf3 "mm/collapse: separate scanning a PTE table from collapsing it (8/9)"
+      - 273af160903e "mm/collapse: separate scanning a PTE table from collapsing it (8/9)"
         - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
+        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
         - Link: https://lore.kernel.org/20261014171145.3292736-10-kas@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)

@@ -17,10 +17,10 @@
   - author/reviewer role stat
     - no role, maintainer: 2 commits
   - full commits list
-      - 25e960309dca "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
+      - b78c6d9e5f07 "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-      - 93df6970a614 "mm/memory_hotplug: drop CONFIG_HAVE_ARCH_PFN_VALID handling from pfn_to_online_page()" (12/13)
+      - f0c40bbdff47 "mm/memory_hotplug: drop CONFIG_HAVE_ARCH_PFN_VALID handling from pfn_to_online_page()" (12/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-13-54d81d65e125@kernel.org
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

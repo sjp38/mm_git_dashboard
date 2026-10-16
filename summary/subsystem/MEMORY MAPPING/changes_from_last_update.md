@@ -2,34 +2,35 @@
 - mm-hotfixes-stable: 2 -> 2 commits (no change)
   - series: 1 (1) -> 1 (1) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
-- mm-hotfixes-unstable: 0 -> 0 commits (no change)
-  - series: 0 (0) -> 0 (0) (no change)
+- mm-hotfixes-unstable: 0 -> 2 commits
+  - series: 0 (0) -> 1 (2)
+    - no role, no role : 0 -> 1 commits
+    - no role, reviewer: 0 -> 1 commits
+  - new commits
+    - series "mm: various (urgent?) fixes", v1. (10)
+      - 98e1e82b18d1 "mm/vma: don't leak the commit charge on mmap failure (0/10)"
+        - Authored by no role player, reviewed by a reviewer
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-0-42796911043b@kernel.org
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-1-42796911043b@kernel.org
+      - d494e8ab017b "mm/mremap: fix calling fixup_hugetlb_reservations() on the wrong VMA (9/10)"
+        - Authored by no role player, reviewed by no role player
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-10-42796911043b@kernel.org
 - mm-stable: 18 -> 18 commits (no change)
   - series: 3 (8) -> 3 (8) (no change)
     - no role, no role : 15 -> 15 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 22 -> 24 commits
+- mm-unstable: 24 -> 25 commits
   - series: 2 (20) -> 2 (20) (no change)
-    - no role, nobody: 0 -> 1 commits
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 11 -> 11 commits (no change)
-    - no role, reviewer: 10 -> 11 commits
+    - no role, reviewer: 11 -> 11 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
   - new commits
-    - 36c4e9b5b589 "mm: nommu: set MMF_OOM_SKIP in exit_mmap()"
+    - fea2bcac1ef7 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261013-fix-nommu-exit-mmap-oom-skip-v1-1-cb957cdbfcc3@JohnDeere.com
-      - Link: https://lore.kernel.org/BY3PR05MB82607AF910C023253C48CD26A09D2@BY3PR05MB8260.namprd05.prod.outlook.com
-    - f105e4fbbdbb "mm/mlock: use a long for the page count in mlock_fixup()"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261014131358.780240-1-nickolai@csail.mit.edu
-  - changed commits
-    - 5afa22a5b6bf "fs/proc/task_mmu: fix lost maps entries above 2^63"
-      - Authored by no role player, reviewed by no role player
-      - added "Fixes: 5631da56c9a8 ("fs/proc/task_mmu: read proc/pid/maps under per-vma lock")"
-      - dropped "Fixes: 5631da56c9a87 ("fs/proc/task_mmu: read proc/pid/maps under per-vma lock")"
-      - Link: https://lore.kernel.org/20261013152106.1834364-1-stian@itx.no
+      - Link: https://lore.kernel.org/20261015-fix-vma-lock-overflow-v1-1-01beb245d9da@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

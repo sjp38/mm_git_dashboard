@@ -11,18 +11,16 @@
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 4 -> 6 commits
+- mm-unstable: 6 -> 6 commits (no change)
   - series: 0 (4) -> 0 (4) (no change)
     - no role, no role : 2 -> 2 commits (no change)
-    - no role, reviewer: 1 -> 3 commits
+    - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - new commits
-    - e7fd8a371c3c "mm/vmscan: fix missing NR_ISOLATED counter update in MGLRU reclaim path"
+  - changed commits
+    - f8c5900936b9 "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/141901355a7d9e4bbca5c4840ae32ea5c65fe3b6.1791968227.git.zhuhui@kylinos.cn
-      - Link: https://lore.kernel.org/cover.1791968227.git.zhuhui@kylinos.cn
-    - 5ba29027115b "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
-      - Authored by no role player, reviewed by a reviewer
+      - added "Acked-by: Davidlohr Bueso <dave@stgolabs.net>"
+      - dropped "Cc: Davidlohr Bueso <dave@stgolabs.net>"
       - Link: https://lore.kernel.org/20261012022917.1102467-1-vernon2gm@gmail.com
       - Link: https://github.com/vernon2gh/app_and_module/tree/main/reclaim_node_psi [1]
 - mm-new: 0 -> 0 commits (no change)

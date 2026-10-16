@@ -2,13 +2,19 @@
 - mm-hotfixes-stable: 1 -> 1 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 1 -> 2 commits
+- mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, no role : 1 -> 2 commits
-  - new commits
-    - bbbb7a97e8d2 "mm: fix address wraparound when scanning large folio PTEs"
-      - Authored by no role player, reviewed by no role player
-      - Link: https://lore.kernel.org/20261014-folio_pte_scan_range-v2-1-00cf9bbaa364@kernel.org
+    - no role, nobody: 0 -> 1 commits
+    - no role, no role : 2 -> 1 commits
+  - changed commits
+    - b30a812e68fe "mm: memory: fix truncation removing mapped folios"
+      - Authored by no role player, reviewed by nobody
+      - added "Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com"
+      - added "Cc: Pedro Falcato <pfalcato@suse.de>"
+      - dropped "Link: https://lore.kernel.org/542c97482eae84f86704bcee56482633d1b32321.1791616645.git.baolin.wang@linux.alibaba.com"
+      - dropped "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+      - Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com
+      - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
 - mm-stable: 57 -> 57 commits (no change)
   - series: 9 (46) -> 9 (46) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
@@ -19,17 +25,18 @@
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 41 -> 41 commits (no change)
+- mm-unstable: 41 -> 42 commits
   - series: 3 (35) -> 3 (35) (no change)
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 24 -> 24 commits (no change)
-    - no role, reviewer: 12 -> 12 commits (no change)
+    - no role, reviewer: 12 -> 13 commits
     - no role, maintainer: 4 -> 4 commits (no change)
-  - changed commits
-    - 477887bbb234 "mm: disallow ioremap'ing ordinary RAM in generic_access_phys()"
-      - Authored by no role player, reviewed by no role player
-      - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
-      - Link: https://lore.kernel.org/20261013-generic_access_phys-v1-1-b3963ef76e37@kernel.org
+  - new commits
+    - 386f8aac5602 "mm: stop recalculating min_free_kbytes once set by userspace"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261014140859.1006967-1-noren@nvidia.com
+      - Link: https://lore.kernel.org/r/20260716173504.760369-1-noren@nvidia.com/ [1]
+      - Link: https://lore.kernel.org/r/d202dcc3-d7d7-4e98-a9a5-3137cfbfd041@kernel.org/
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)

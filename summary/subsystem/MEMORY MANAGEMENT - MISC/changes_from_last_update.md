@@ -13,20 +13,22 @@
     - maintainer, nobody: 9 -> 9 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 15 -> 17 commits
+- mm-unstable: 17 -> 18 commits
   - series: 2 (8) -> 2 (8) (no change)
-    - no role, nobody: 1 -> 3 commits
-    - no role, no role : 7 -> 7 commits (no change)
+    - no role, nobody: 3 -> 3 commits (no change)
+    - no role, no role : 7 -> 8 commits
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
   - new commits
-    - 28db0c7bf7e5 "selftests/mm: mremap_test: Validate the preamble region before mapping it"
+    - fea2bcac1ef7 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
       - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261015-fix-vma-lock-overflow-v1-1-01beb245d9da@kernel.org
+  - changed commits
+    - 88050d75848a "selftests/mm: mremap_test: Validate the preamble region before mapping it"
+      - Authored by no role player, reviewed by no role player
+      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
       - Link: https://lore.kernel.org/20261014-selftests-mm-mremap_preamble-v1-1-2e97f501cb56@marliere.net
-    - d13e24be48c0 "selftests/mm: report the configuration check on stderr"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261014200137.1364121-1-sashal@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)
