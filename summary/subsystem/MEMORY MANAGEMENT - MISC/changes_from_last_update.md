@@ -13,22 +13,26 @@
     - maintainer, nobody: 9 -> 9 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
     - maintainer, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 17 -> 18 commits
+- mm-unstable: 18 -> 19 commits
   - series: 2 (8) -> 2 (8) (no change)
-    - no role, nobody: 3 -> 3 commits (no change)
-    - no role, no role : 7 -> 8 commits
+    - no role, nobody: 3 -> 2 commits
+    - no role, no role : 8 -> 10 commits
     - no role, reviewer: 4 -> 4 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
     - maintainer, nobody: 2 -> 2 commits (no change)
   - new commits
-    - fea2bcac1ef7 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261015-fix-vma-lock-overflow-v1-1-01beb245d9da@kernel.org
-  - changed commits
-    - 88050d75848a "selftests/mm: mremap_test: Validate the preamble region before mapping it"
+    - 6b674937955b "selftests/mm: skip hugetlb cgroup v2 tests without the needed controllers"
       - Authored by no role player, reviewed by no role player
-      - added "Reviewed-by: Sarthak Sharma <sarthak.sharma@arm.com>"
-      - Link: https://lore.kernel.org/20261014-selftests-mm-mremap_preamble-v1-1-2e97f501cb56@marliere.net
+      - Link: https://lore.kernel.org/20261016-bug-selftests-mm-hugetlb-cgroup2-skip-v1-1-7c78883a67b4@gmail.com
+  - changed commits
+    - fe7873a285f7 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org"
+      - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
+      - added "Tested-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
+      - dropped "Link: https://lore.kernel.org/20261015-fix-vma-lock-overflow-v1-1-01beb245d9da@kernel.org"
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

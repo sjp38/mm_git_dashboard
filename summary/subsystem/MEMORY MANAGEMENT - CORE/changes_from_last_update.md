@@ -4,15 +4,17 @@
     - no role, maintainer: 1 -> 1 commits (no change)
 - mm-hotfixes-unstable: 2 -> 2 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
-    - no role, nobody: 0 -> 1 commits
-    - no role, no role : 2 -> 1 commits
+    - no role, nobody: 1 -> 0 commits
+    - no role, no role : 1 -> 2 commits
   - changed commits
-    - b30a812e68fe "mm: memory: fix truncation removing mapped folios"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com"
-      - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-      - dropped "Link: https://lore.kernel.org/542c97482eae84f86704bcee56482633d1b32321.1791616645.git.baolin.wang@linux.alibaba.com"
-      - dropped "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+    - 2ae7e7bc0d92 "mm: memory: fix truncation removing mapped folios"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Qi Zheng <qi.zheng@linux.dev>"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Qi Zheng <qi.zheng@linux.dev>"
+      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
       - Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com
       - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
 - mm-stable: 57 -> 57 commits (no change)
@@ -25,18 +27,18 @@
     - reviewer, reviewer: 4 -> 4 commits (no change)
     - maintainer, no role : 3 -> 3 commits (no change)
     - maintainer, reviewer: 2 -> 2 commits (no change)
-- mm-unstable: 41 -> 42 commits
+- mm-unstable: 42 -> 43 commits
   - series: 3 (35) -> 3 (35) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 24 -> 24 commits (no change)
-    - no role, reviewer: 12 -> 13 commits
+    - no role, reviewer: 13 -> 13 commits (no change)
     - no role, maintainer: 4 -> 4 commits (no change)
   - new commits
-    - 386f8aac5602 "mm: stop recalculating min_free_kbytes once set by userspace"
-      - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261014140859.1006967-1-noren@nvidia.com
-      - Link: https://lore.kernel.org/r/20260716173504.760369-1-noren@nvidia.com/ [1]
-      - Link: https://lore.kernel.org/r/d202dcc3-d7d7-4e98-a9a5-3137cfbfd041@kernel.org/
+    - 0e4407eab458 "mm/mglru: fix using folio_mark_accessed to replace folio_set_active"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261016213115.70515-1-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20261003-mglru-fg-v3-0-cbd4546a5bd9@tencent.com/ [1]
+      - Link: https://lore.kernel.org/linux-mm/20260901180704.168106-1-ehab.ababneh@intel.com/ [2]
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)

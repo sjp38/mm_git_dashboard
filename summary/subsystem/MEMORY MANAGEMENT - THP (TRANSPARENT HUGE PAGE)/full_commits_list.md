@@ -4,7 +4,7 @@
   - author/reviewer role stat
     - no role, reviewer: 1 commits
   - full commits list
-      - bace19483cc6 "mm/khugepaged: flush deferred unmaps before dropping a failed folio" (1/2)
+      - b927ff780f6b "mm/khugepaged: flush deferred unmaps before dropping a failed folio" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261007041001.43181-1-kylebot@openai.com
 - mm-stable: 45 total, 6 (38) series, 7 non-series commits
@@ -173,72 +173,72 @@
     - no role, maintainer: 1 commits
   - full commits list
     - series "kselftest: mm: fix intermittent failure khugepaged test", v4. (2 commits)
-      - e84d15017530 "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
+      - e64b0647a32d "kselftest: mm: return fail when child test result is fail in khugepaged" (0/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-0-2169c18f2576@arm.com
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-1-2169c18f2576@arm.com
-      - a9bd1bc3d25a "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
+      - 6580cc5da877 "kselftest: mm: fix intermittent failure khugepaged test" (1/2)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260929-fix_khugepagd_fail-v4-2-2169c18f2576@arm.com
-    - ad5b70812c34 "mm: fix typos in various comments"
+    - de025f67fc18 "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
     - series "kselftest: mm: fix some failure of split_huge_page_test", v9. (4 commits)
-      - 4d3468ca3855 "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
+      - b0ece28ce281 "kselftest: mm: prevent random failure of huge page split for khugepaged" (0/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261001-fix_split-v9-0-0f4ba8bbdbdf@arm.com
         - Link: https://lore.kernel.org/20261001-fix_split-v9-1-0f4ba8bbdbdf@arm.com
-      - ea00c5b1096d "kselftest: mm: remove check_huge_shmem()" (3/4)
+      - 21678b0769f5 "kselftest: mm: remove check_huge_shmem()" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261001-fix_split-v9-4-0f4ba8bbdbdf@arm.com
-      - 794bc93c9559 "mm/vma: add and use vma_[flags]_is_fixed_mapping" (16/39)
+      - 3a391e2fb945 "mm/vma: add and use vma_[flags]_is_fixed_mapping" (16/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-17-1aa3c9b139f9@kernel.org
-      - ed7ed7a6ec6d "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - cbc7368305a5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 5cb7fb8fed63 "mm/vma: introduce vma[_flags]_is_mm_backed()" (29/39)
+      - 89325c97fbda "mm/vma: introduce vma[_flags]_is_mm_backed()" (29/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-30-1aa3c9b139f9@kernel.org
-      - fc915ea0bc35 "mm/huge_memory: remove vma_is_special_huge()" (38/39)
+      - 7bbf462e4692 "mm/huge_memory: remove vma_is_special_huge()" (38/39)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-39-1aa3c9b139f9@kernel.org
-      - 3253900866f2 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 0e6bdcd65d2e "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-      - b1c7c0b3971a "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
+      - be0c8fbb49f0 "mm: update comments to refer to anon rmap rather than anon_vma" (2/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-3-5c22314a72e7@kernel.org
     - series "mm/collapse: separate a collapse from its callers", v5. (9 commits)
-      - d1831a631b73 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse()" (0/9)
+      - 30c57a99d100 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse()" (0/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261014171145.3292736-1-kas@kernel.org
         - Link: https://lore.kernel.org/20261014171145.3292736-2-kas@kernel.org
-      - f3f1830b2917 "mm/khugepaged: count collapses where khugepaged makes them" (1/9)
+      - 88ddcaa653e3 "mm/khugepaged: count collapses where khugepaged makes them" (1/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261014171145.3292736-3-kas@kernel.org
-      - 9aeaacc5156f "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes" (2/9)
+      - 4089a153989e "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes" (2/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261014171145.3292736-4-kas@kernel.org
-      - cd62dff417ce "mm/collapse: add collapse.h for the collapse interface" (3/9)
+      - a478e9a32f63 "mm/collapse: add collapse.h for the collapse interface" (3/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261014171145.3292736-5-kas@kernel.org
-      - b7a4008e9572 "mm/collapse: state what a collapse may do in the policy" (4/9)
+      - 568df3abb61c "mm/collapse: state what a collapse may do in the policy" (4/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261014171145.3292736-6-kas@kernel.org
-      - 56faa0c0559b "mm/collapse: drop the collapse_possible() wrapper" (5/9)
+      - 618fa13a19fc "mm/collapse: drop the collapse_possible() wrapper" (5/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261014171145.3292736-7-kas@kernel.org
-      - 3ee66680d22b "mm/collapse: name the per-table scan reset for what it resets" (6/9)
+      - e3f589547ad4 "mm/collapse: name the per-table scan reset for what it resets" (6/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261014171145.3292736-8-kas@kernel.org
-      - de778b53898f "mm/collapse: call collapse_file() from collapse_single_pmd()" (7/9)
+      - 6bc91992880a "mm/collapse: call collapse_file() from collapse_single_pmd()" (7/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261014171145.3292736-9-kas@kernel.org
-      - 273af160903e "mm/collapse: separate scanning a PTE table from collapsing it" (8/9)
+      - 1e2f9cbe6600 "mm/collapse: separate scanning a PTE table from collapsing it" (8/9)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20261014171145.3292736-10-kas@kernel.org
-    - 386f8aac5602 "mm: stop recalculating min_free_kbytes once set by userspace"
+    - 201adf5a105b "mm: stop recalculating min_free_kbytes once set by userspace"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261014140859.1006967-1-noren@nvidia.com
       - Link: https://lore.kernel.org/r/20260716173504.760369-1-noren@nvidia.com/ [1]

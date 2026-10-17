@@ -8,10 +8,16 @@
     - no role, nobody: 1 -> 1 commits (no change)
     - no role, no role : 7 -> 7 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
-- mm-unstable: 3 -> 3 commits (no change)
+- mm-unstable: 3 -> 4 commits
   - series: 0 (2) -> 0 (2) (no change)
-    - no role, nobody: 1 -> 1 commits (no change)
+    - no role, nobody: 1 -> 2 commits
     - no role, no role : 2 -> 2 commits (no change)
+  - new commits
+    - 33d2389a8868 "mm: warn on unaligned compound zone device ranges"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261016131334.3419393-1-songmuchun@bytedance.com
+      - Link: https://lore.kernel.org/r/20261016053944.2579541-1-songmuchun@bytedance.com
+      - Link: https://lore.kernel.org/r/20261016054914.2601510-1-songmuchun@bytedance.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

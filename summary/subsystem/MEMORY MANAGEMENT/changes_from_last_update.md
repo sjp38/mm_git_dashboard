@@ -3,53 +3,54 @@
   - series: 1 (1) -> 1 (1) (no change)
     - no role, reviewer: 2 -> 2 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-- mm-hotfixes-unstable: 7 -> 17 commits
-  - series: 1 (2) -> 2 (12)
-    - no role, nobody: 1 -> 2 commits
-    - no role, no role : 5 -> 13 commits
-    - no role, reviewer: 1 -> 2 commits
-  - new commits
-    - series "mm: various (urgent?) fixes", v1. (10)
-      - 98e1e82b18d1 "mm/vma: don't leak the commit charge on mmap failure (0/10)"
-        - Authored by no role player, reviewed by a reviewer
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-0-42796911043b@kernel.org
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-1-42796911043b@kernel.org
-      - de5a435b49d5 "mm/hugetlb: fix use-after-free of a new anon folio (1/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-2-42796911043b@kernel.org
-      - 93b028222339 "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte() (2/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-3-42796911043b@kernel.org
-      - 39c3690ec848 "mm/hugetlb: unmap the page where the other VMA maps it (3/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-4-42796911043b@kernel.org
-      - 792207465062 "mm/hugetlb: don't clear the resv_map of a VMA whose lock is held (4/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-5-42796911043b@kernel.org
-      - 8e123639a0d1 "mm/hugetlb: fix endless write fault on a leftover uffd bit (5/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-6-42796911043b@kernel.org
-      - 060aa672b996 "mm/hugetlb: tolerate uffd bits set without uffd for PROT_NONE PTEs (6/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-7-42796911043b@kernel.org
-      - d29769bda4c8 "mm/hugetlb: tolerate UFFD_WP markers outside uffd-wp VMAs (7/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-8-42796911043b@kernel.org
-      - ee500dee4764 "mm/hugetlb: don't leave a uffd-wp marker when zapping an RWP entry (8/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-9-42796911043b@kernel.org
-      - d494e8ab017b "mm/mremap: fix calling fixup_hugetlb_reservations() on the wrong VMA (9/10)"
-        - Authored by no role player, reviewed by no role player
-        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-10-42796911043b@kernel.org
+- mm-hotfixes-unstable: 17 -> 17 commits (no change)
+  - series: 2 (12) -> 2 (12) (no change)
+    - no role, nobody: 2 -> 1 commits
+    - no role, no role : 13 -> 10 commits
+    - no role, reviewer: 2 -> 2 commits (no change)
+    - no role, maintainer: 0 -> 4 commits
   - changed commits
-    - b30a812e68fe "mm: memory: fix truncation removing mapped folios"
-      - Authored by no role player, reviewed by nobody
-      - added "Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com"
-      - added "Cc: Pedro Falcato <pfalcato@suse.de>"
-      - dropped "Link: https://lore.kernel.org/542c97482eae84f86704bcee56482633d1b32321.1791616645.git.baolin.wang@linux.alibaba.com"
-      - dropped "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+    - 2ae7e7bc0d92 "mm: memory: fix truncation removing mapped folios"
+      - Authored by no role player, reviewed by no role player
+      - added "Acked-by: Qi Zheng <qi.zheng@linux.dev>"
+      - added "Reviewed-by: Pedro Falcato <pfalcato@suse.de>"
+      - added "Reviewed-by: Lorenzo Stoakes (ARM) <ljs@kernel.org>"
+      - dropped "Cc: Lorenzo Stoakes <ljs@kernel.org>"
+      - dropped "Cc: Pedro Falcato <pfalcato@suse.de>"
+      - dropped "Cc: Qi Zheng <qi.zheng@linux.dev>"
       - Link: https://lore.kernel.org/e2f76ed117b0c22a26b7688fd46a38c9d035336e.1792114445.git.baolin.wang@linux.alibaba.com
       - Link: https://lore.kernel.org/all/20260925065013.3682431-1-ayushr@modal.com/ [1]
+    - series "mm: various (urgent?) fixes", v1. (10)
+      - b2f831bf347f "mm/vma: don't leak the commit charge on mmap failure (0/10)"
+        - Authored by no role player, reviewed by a reviewer
+        - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-0-42796911043b@kernel.org
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-1-42796911043b@kernel.org
+      - 65c6c71d5197 "mm/hugetlb: fix use-after-free of a new anon folio (1/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-2-42796911043b@kernel.org
+      - 43297682189b "mm/hugetlb: fix use-after-free in hugetlb_mfill_atomic_pte() (2/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-3-42796911043b@kernel.org
+      - 1b3c0f06c703 "mm/hugetlb: unmap the page where the other VMA maps it (3/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-4-42796911043b@kernel.org
+      - 3c8818bb832c "mm/hugetlb: don't clear the resv_map of a VMA whose lock is held (4/10)"
+        - Authored by no role player, reviewed by a maintainer
+        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-5-42796911043b@kernel.org
+      - 67b58031f27d "mm/mremap: fix calling fixup_hugetlb_reservations() on the wrong VMA (9/10)"
+        - Authored by no role player, reviewed by no role player
+        - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
+        - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
+        - Link: https://lore.kernel.org/20261015-urgent_fixes-v1-10-42796911043b@kernel.org
 - mm-stable: 365 -> 365 commits (no change)
   - series: 59 (288) -> 59 (288) (no change)
     - no role, nobody: 22 -> 22 commits (no change)
@@ -63,93 +64,43 @@
     - maintainer, nobody: 65 -> 65 commits (no change)
     - maintainer, no role : 26 -> 26 commits (no change)
     - maintainer, reviewer: 5 -> 5 commits (no change)
-- mm-unstable: 111 -> 115 commits
+- mm-unstable: 115 -> 120 commits
   - series: 13 (81) -> 13 (81) (no change)
-    - no role, nobody: 5 -> 8 commits
-    - no role, no role : 42 -> 41 commits
-    - no role, reviewer: 31 -> 32 commits
-    - no role, maintainer: 28 -> 29 commits
+    - no role, nobody: 8 -> 10 commits
+    - no role, no role : 41 -> 43 commits
+    - no role, reviewer: 32 -> 33 commits
+    - no role, maintainer: 29 -> 29 commits (no change)
     - maintainer, nobody: 4 -> 4 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
   - new commits
-    - c6307cfd9998 "mm: page_alloc: make defrag_mode retries follow the promoted order"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/atDL-nSFP2KVU7cI@thinkstation
-    - fea2bcac1ef7 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
-      - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261015-fix-vma-lock-overflow-v1-1-01beb245d9da@kernel.org
-    - 386f8aac5602 "mm: stop recalculating min_free_kbytes once set by userspace"
+    - dd6075eca81e "mm/page_alloc: count guard pages as free again when their buddy merges"
       - Authored by no role player, reviewed by a reviewer
-      - Link: https://lore.kernel.org/20261014140859.1006967-1-noren@nvidia.com
-      - Link: https://lore.kernel.org/r/20260716173504.760369-1-noren@nvidia.com/ [1]
-      - Link: https://lore.kernel.org/r/d202dcc3-d7d7-4e98-a9a5-3137cfbfd041@kernel.org/
-    - 437a7e839def "mm/swap: fix swap_cache_get_folio() returning a folio that left the swap cache"
+      - Link: https://lore.kernel.org/20261016122304.5b1eba8e@fangorn
+    - 0e4407eab458 "mm/mglru: fix using folio_mark_accessed to replace folio_set_active"
       - Authored by no role player, reviewed by nobody
-      - Link: https://lore.kernel.org/20261015060528.302634-1-jiayuan.chen@linux.dev
+      - Link: https://lore.kernel.org/20261016213115.70515-1-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20261003-mglru-fg-v3-0-cbd4546a5bd9@tencent.com/ [1]
+      - Link: https://lore.kernel.org/linux-mm/20260901180704.168106-1-ehab.ababneh@intel.com/ [2]
+    - f606d7b83c35 "mm/truncate: fix the zeroing end of pagecache_isize_extended()"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261016222721.791785-1-nickolai@csail.mit.edu
+    - 33d2389a8868 "mm: warn on unaligned compound zone device ranges"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261016131334.3419393-1-songmuchun@bytedance.com
+      - Link: https://lore.kernel.org/r/20261016053944.2579541-1-songmuchun@bytedance.com
+      - Link: https://lore.kernel.org/r/20261016054914.2601510-1-songmuchun@bytedance.com
+    - b306deee4cba "mm/page_vma_mapped: continue past nonmatching huge PMDs"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261016011549.61146-1-kylebot@openai.com
   - changed commits
-    - 30a65a31a4b8 "mm/userfaultfd: only allocate anon_vma in CoW mappings"
-      - Authored by no role player, reviewed by a maintainer
-      - added "Tested-by: Lance Yang <lance.yang@linux.dev>"
-      - added "Acked-by: Mike Rapoport (Microsoft) <rppt@kernel.org>"
-      - added "Acked-by: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Muchun Song <muchun.song@linux.dev>"
-      - dropped "Cc: Mike Rapoport <rppt@kernel.org>"
-      - Link: https://lore.kernel.org/20261014-copy_hugetlb_page_range-v1-1-5b68e03fe7fe@kernel.org
-    - series "mm/collapse: separate a collapse from its callers", v5. (9)
-      - d1831a631b73 "mm/khugepaged: drop redundant mm_struct pin in madvise_collapse() (0/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261014171145.3292736-1-kas@kernel.org
-        - Link: https://lore.kernel.org/20261014171145.3292736-2-kas@kernel.org
-      - f3f1830b2917 "mm/khugepaged: count collapses where khugepaged makes them (1/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261014171145.3292736-3-kas@kernel.org
-      - 9aeaacc5156f "mm/khugepaged: rename mthp_present_ptes bitmap to eligible_ptes (2/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261014171145.3292736-4-kas@kernel.org
-      - cd62dff417ce "mm/collapse: add collapse.h for the collapse interface (3/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261014171145.3292736-5-kas@kernel.org
-      - b7a4008e9572 "mm/collapse: state what a collapse may do in the policy (4/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261014171145.3292736-6-kas@kernel.org
-      - 56faa0c0559b "mm/collapse: drop the collapse_possible() wrapper (5/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261014171145.3292736-7-kas@kernel.org
-      - 3ee66680d22b "mm/collapse: name the per-table scan reset for what it resets (6/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261014171145.3292736-8-kas@kernel.org
-      - de778b53898f "mm/collapse: call collapse_file() from collapse_single_pmd() (7/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Baolin Wang <baolin.wang@linux.alibaba.com>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261014171145.3292736-9-kas@kernel.org
-      - 273af160903e "mm/collapse: separate scanning a PTE table from collapsing it (8/9)"
-        - Authored by no role player, reviewed by a reviewer
-        - added "Reviewed-by: Lance Yang <lance.yang@linux.dev>"
-        - dropped "Cc: Lance Yang <lance.yang@linux.dev>"
-        - Link: https://lore.kernel.org/20261014171145.3292736-10-kas@kernel.org
-    - f8c5900936b9 "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Davidlohr Bueso <dave@stgolabs.net>"
-      - dropped "Cc: Davidlohr Bueso <dave@stgolabs.net>"
-      - Link: https://lore.kernel.org/20261012022917.1102467-1-vernon2gm@gmail.com
-      - Link: https://github.com/vernon2gh/app_and_module/tree/main/reclaim_node_psi [1]
+    - fe7873a285f7 "mm/vma: avoid spurious write locks when mm->mm_lock_seq overflows"
+      - Authored by no role player, reviewed by no role player
+      - added "Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org"
+      - added "Reviewed-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
+      - added "Tested-by: Jose A. Perez de Azpillaga <azpijr@gmail.com>"
+      - dropped "Link: https://lore.kernel.org/20261015-fix-vma-lock-overflow-v1-1-01beb245d9da@kernel.org"
+      - dropped "Cc: <stable@vger.kernel.org>"
+      - Link: https://lore.kernel.org/20261016-fix-vma-lock-overflow-v2-1-9eb778b79b58@kernel.org
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 1 -> 1 commits (no change)

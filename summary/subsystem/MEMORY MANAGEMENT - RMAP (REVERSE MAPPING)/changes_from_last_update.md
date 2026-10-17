@@ -9,11 +9,15 @@
     - no role, no role : 1 -> 1 commits (no change)
     - no role, reviewer: 1 -> 1 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 5 -> 5 commits (no change)
+- mm-unstable: 5 -> 6 commits
   - series: 0 (3) -> 0 (3) (no change)
-    - no role, no role : 1 -> 1 commits (no change)
+    - no role, no role : 1 -> 2 commits
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
+  - new commits
+    - b306deee4cba "mm/page_vma_mapped: continue past nonmatching huge PMDs"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261016011549.61146-1-kylebot@openai.com
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

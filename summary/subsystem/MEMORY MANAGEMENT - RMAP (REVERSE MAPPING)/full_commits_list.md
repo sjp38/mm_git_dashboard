@@ -23,27 +23,30 @@
       - b9b589111ba3 "mm/rmap: use folio_page_swap_entry() in ttu_anon_swapbacked_folio()" (2/8)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260908-folio_swap_entry-v2-3-ee6d01dfa5e1@columbia.edu
-- mm-unstable: 5 total, 0 (3) series, 2 non-series commits
+- mm-unstable: 6 total, 0 (3) series, 3 non-series commits
   - author/reviewer role stat
-    - no role, no role : 1 commits
+    - no role, no role : 2 commits
     - no role, reviewer: 3 commits
     - no role, maintainer: 1 commits
   - full commits list
-      - 508281ecb52b "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (23/39)
+      - 1bbceea3deea "mm/mlock: eliminate weird VMA_IO_BIT abuse and simplify" (23/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-24-1aa3c9b139f9@kernel.org
-      - ed7ed7a6ec6d "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - cbc7368305a5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 3253900866f2 "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
+      - 0e6bdcd65d2e "mm: implement and use vma_has_anon_rmap(), silence KCSAN" (1/3)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260917-vma-is-faulted-v3-2-5c22314a72e7@kernel.org
-    - b41cd8eef2cb "mm/vma: don't remove VMA from rmap if pgoff unchanged"
+    - f9e2493f093d "mm/vma: don't remove VMA from rmap if pgoff unchanged"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260930-speed-up-inplace-rmap-v2-1-ac1aa19708aa@kernel.org
-    - 69a9158ce1fd "mm/rmap: don't discard lazyfree THPs at PMD level"
+    - c9129e9adf82 "mm/rmap: don't discard lazyfree THPs at PMD level"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261012-lazyfree-stable-fix-v2-1-6387d6e30063@nvidia.com
+    - b306deee4cba "mm/page_vma_mapped: continue past nonmatching huge PMDs"
+      - Authored by no role player, reviewed by no role player
+      - Link: https://lore.kernel.org/20261016011549.61146-1-kylebot@openai.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

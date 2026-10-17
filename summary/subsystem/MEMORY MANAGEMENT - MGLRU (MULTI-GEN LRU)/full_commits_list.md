@@ -158,44 +158,50 @@
       - Link: https://lore.kernel.org/lkml/46037a37-4cf6-448e-a94b-30a4d16e8814@linux.dev/ [2]
       - Link: https://lore.kernel.org/linux-mm/20260911121341.178028-1-alex@ghiti.fr/ [4]
       - Link: https://lore.kernel.org/lkml/CAGsJ_4zwP3_+EYY5Ug9EJ+yD1UdxsBSGr25u8s1K3u_i7LH3Zg@mail.gmail.com/ [3]
-- mm-unstable: 10 total, 0 (7) series, 3 non-series commits
+- mm-unstable: 11 total, 0 (7) series, 4 non-series commits
   - author/reviewer role stat
+    - no role, nobody: 1 commits
     - no role, no role : 4 commits
     - no role, reviewer: 4 commits
     - no role, maintainer: 2 commits
   - full commits list
-      - 769e19d4bdb7 "memcg: move memcg private ID refcount to objcg" (3/4)
+      - a09156f54afa "memcg: move memcg private ID refcount to objcg" (3/4)
         - Authored by no role player, reviewed by a reviewer
         - Link: https://lore.kernel.org/20260921-bingfangguo-memcgid-rework-v2-4-6c0637dc0edb@tencent.com
-    - 7838c868fa5b "mm: remove the unused zone->unaccepted_cleanup"
+    - b54e8c71a6e0 "mm: remove the unused zone->unaccepted_cleanup"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260924191103.3475117-1-usama.arif@linux.dev
-      - c34ce6d82b74 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - 51bac910694a "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-      - e2fc8f82f802 "mm/sparse: remove pfn_in_present_section()" (6/13)
+      - 39fe499cf7a8 "mm/sparse: remove pfn_in_present_section()" (6/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-7-54d81d65e125@kernel.org
-      - b78c6d9e5f07 "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
+      - a6a34b479ec1 "mm/sparse: remove SECTION_MARKED_PRESENT" (9/13)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-10-54d81d65e125@kernel.org
-      - ed7ed7a6ec6d "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
+      - cbc7368305a5 "mm: rename is_vm_hugetlb_page() to vma_is_hugetlb()" (27/39)
         - Authored by no role player, reviewed by a maintainer
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-28-1aa3c9b139f9@kernel.org
-      - 614081da1c0e "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
+      - 1ab2a5e15a49 "mm: eliminate VMA_SPECIAL_FLAGS usage when hugetlb explicitly tested" (33/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-34-1aa3c9b139f9@kernel.org
-      - 0448920ac728 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (34/39)
+      - 34445c5e5c01 "mm: eliminate VMA_SPECIAL_FLAGS check in lru_gen_look_around()" (34/39)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261013-b4-mmap-prepare-vma-flag-sanify-v6-35-1aa3c9b139f9@kernel.org
-    - abeb035afbd8 "mm/vmscan: fix missing NR_ISOLATED counter update in MGLRU reclaim path"
+    - e85b56cd117c "mm/vmscan: fix missing NR_ISOLATED counter update in MGLRU reclaim path"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/141901355a7d9e4bbca5c4840ae32ea5c65fe3b6.1791968227.git.zhuhui@kylinos.cn
       - Link: https://lore.kernel.org/cover.1791968227.git.zhuhui@kylinos.cn
-    - f8c5900936b9 "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
+    - 635cda96fbe2 "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261012022917.1102467-1-vernon2gm@gmail.com
       - Link: https://github.com/vernon2gh/app_and_module/tree/main/reclaim_node_psi [1]
+    - 0e4407eab458 "mm/mglru: fix using folio_mark_accessed to replace folio_set_active"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261016213115.70515-1-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20261003-mglru-fg-v3-0-cbd4546a5bd9@tencent.com/ [1]
+      - Link: https://lore.kernel.org/linux-mm/20260901180704.168106-1-ehab.ababneh@intel.com/ [2]
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

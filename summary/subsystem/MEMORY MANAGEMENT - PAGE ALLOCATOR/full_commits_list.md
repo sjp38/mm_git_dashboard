@@ -54,16 +54,16 @@
     - 331f94007d79 "mm/page_alloc: do not boost watermarks in kdump capture kernels"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20260916112545.3707893-1-xiangzao@linux.alibaba.com
-- mm-unstable: 5 total, 0 (1) series, 4 non-series commits
+- mm-unstable: 6 total, 0 (1) series, 5 non-series commits
   - author/reviewer role stat
     - no role, nobody: 1 commits
     - no role, no role : 2 commits
-    - no role, reviewer: 2 commits
+    - no role, reviewer: 3 commits
   - full commits list
-      - c34ce6d82b74 "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
+      - 51bac910694a "mm/sparse: rename __highest_present_section_nr to __highest_used_section_nr" (5/13)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260921-b4-sparsemem_cleanups-v2-6-54d81d65e125@kernel.org
-    - 081dbdde1384 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
+    - 923be74ae013 "mm/page_alloc: avoid direct reclaim and compaction for costly __GFP_NORETRY allocations"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261001082152.2879289-1-dipiets@amazon.it
       - Link: https://lore.kernel.org/all/20260403193535.9970-1-dipiets@amazon.it/T/#t [v1]
@@ -71,17 +71,20 @@
       - Link: https://lore.kernel.org/all/20260710143437.12379-1-dipiets@amazon.it/T/#u [v3]
       - Link: https://lore.kernel.org/all/20260904115629.3993331-1-dipiets@amazon.it/T/#u [v4]
       - Link: https://lore.kernel.org/all/20260911142102.2294202-1-dipiets@amazon.it/T/#u [v5]
-    - f4753928a04f "mm: page_alloc: make defrag_mode retries follow the promoted order"
+    - 67acb3c0518c "mm: page_alloc: make defrag_mode retries follow the promoted order"
       - Authored by no role player, reviewed by no role player
       - Link: https://lore.kernel.org/as5q14OsbK2CmOrh@thinkstation
-    - c6307cfd9998 "mm: page_alloc: make defrag_mode retries follow the promoted order"
+    - 0043c8166491 "mm: page_alloc: make defrag_mode retries follow the promoted order"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/atDL-nSFP2KVU7cI@thinkstation
-    - 386f8aac5602 "mm: stop recalculating min_free_kbytes once set by userspace"
+    - 201adf5a105b "mm: stop recalculating min_free_kbytes once set by userspace"
       - Authored by no role player, reviewed by a reviewer
       - Link: https://lore.kernel.org/20261014140859.1006967-1-noren@nvidia.com
       - Link: https://lore.kernel.org/r/20260716173504.760369-1-noren@nvidia.com/ [1]
       - Link: https://lore.kernel.org/r/d202dcc3-d7d7-4e98-a9a5-3137cfbfd041@kernel.org/
+    - dd6075eca81e "mm/page_alloc: count guard pages as free again when their buddy merges"
+      - Authored by no role player, reviewed by a reviewer
+      - Link: https://lore.kernel.org/20261016122304.5b1eba8e@fangorn
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits

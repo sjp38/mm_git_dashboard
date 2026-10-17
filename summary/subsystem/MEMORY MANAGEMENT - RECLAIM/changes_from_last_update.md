@@ -11,18 +11,18 @@
     - reviewer, no role : 2 -> 2 commits (no change)
     - reviewer, reviewer: 6 -> 6 commits (no change)
     - maintainer, no role : 1 -> 1 commits (no change)
-- mm-unstable: 6 -> 6 commits (no change)
+- mm-unstable: 6 -> 7 commits
   - series: 0 (4) -> 0 (4) (no change)
+    - no role, nobody: 0 -> 1 commits
     - no role, no role : 2 -> 2 commits (no change)
     - no role, reviewer: 3 -> 3 commits (no change)
     - no role, maintainer: 1 -> 1 commits (no change)
-  - changed commits
-    - f8c5900936b9 "mm: vmscan: don't count per-node proactive reclaim as memory pressure"
-      - Authored by no role player, reviewed by a reviewer
-      - added "Acked-by: Davidlohr Bueso <dave@stgolabs.net>"
-      - dropped "Cc: Davidlohr Bueso <dave@stgolabs.net>"
-      - Link: https://lore.kernel.org/20261012022917.1102467-1-vernon2gm@gmail.com
-      - Link: https://github.com/vernon2gh/app_and_module/tree/main/reclaim_node_psi [1]
+  - new commits
+    - 0e4407eab458 "mm/mglru: fix using folio_mark_accessed to replace folio_set_active"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261016213115.70515-1-baohua@kernel.org
+      - Link: https://lore.kernel.org/linux-mm/20261003-mglru-fg-v3-0-cbd4546a5bd9@tencent.com/ [1]
+      - Link: https://lore.kernel.org/linux-mm/20260901180704.168106-1-ehab.ababneh@intel.com/ [2]
 - mm-new: 0 -> 0 commits (no change)
   - series: 0 (0) -> 0 (0) (no change)
 - mm-nonmm-stable: 0 -> 0 commits (no change)

@@ -23,7 +23,7 @@
   - author/reviewer role stat
     - no role, nobody: 1 commits
   - full commits list
-    - ad5b70812c34 "mm: fix typos in various comments"
+    - de025f67fc18 "mm: fix typos in various comments"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20260922031843.2857104-1-hanzhijian1991@gmail.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits

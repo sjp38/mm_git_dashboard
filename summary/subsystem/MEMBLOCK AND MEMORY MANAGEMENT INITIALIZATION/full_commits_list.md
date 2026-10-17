@@ -38,20 +38,25 @@
       - 2f84a6a92724 "mm/sparse-vmemmap: drop the extra tail page from device DAX reservation" (9/12)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20260930140627.57431-11-songmuchun@bytedance.com
-- mm-unstable: 3 total, 0 (2) series, 1 non-series commits
+- mm-unstable: 4 total, 0 (2) series, 2 non-series commits
   - author/reviewer role stat
-    - no role, nobody: 1 commits
+    - no role, nobody: 2 commits
     - no role, no role : 2 commits
   - full commits list
-      - 1af99e9e5a1e "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
+      - 5366d4ce2ab1 "mm/sparse-vmemmap: drop Device DAX-specific population path" (2/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261010075755.83339-4-songmuchun@bytedance.com
-      - 1feb4235c707 "mm/mm_init: add zone mismatch warning during page init" (5/6)
+      - 565036b9e65c "mm/mm_init: add zone mismatch warning during page init" (5/6)
         - Authored by no role player, reviewed by no role player
         - Link: https://lore.kernel.org/20261010075755.83339-7-songmuchun@bytedance.com
-    - 5570d4ace60c "fixup! mm/mm_init: add zone mismatch warning during page init"
+    - 077593c72099 "fixup! mm/mm_init: add zone mismatch warning during page init"
       - Authored by no role player, reviewed by nobody
       - Link: https://lore.kernel.org/20261010115523.4005071-1-songmuchun@bytedance.com
+    - 33d2389a8868 "mm: warn on unaligned compound zone device ranges"
+      - Authored by no role player, reviewed by nobody
+      - Link: https://lore.kernel.org/20261016131334.3419393-1-songmuchun@bytedance.com
+      - Link: https://lore.kernel.org/r/20261016053944.2579541-1-songmuchun@bytedance.com
+      - Link: https://lore.kernel.org/r/20261016054914.2601510-1-songmuchun@bytedance.com
 - mm-new: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-stable: 0 total, 0 (0) series, 0 non-series commits
 - mm-nonmm-unstable: 0 total, 0 (0) series, 0 non-series commits
